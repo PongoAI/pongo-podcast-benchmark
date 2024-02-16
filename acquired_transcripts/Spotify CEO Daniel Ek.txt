@@ -1,0 +1,687 @@
+Ben: It is impossible to flawlessly execute a podcast of this style, and that's the beauty of it. You come up with a bunch of stuff you want to talk about, then you end up having a real organic conversation, and then it turns into a product. That product is totally different from what you envisioned in your head, but can still be great.
+
+Daniel: But I think the amazing thing is, unlike you talking to journalists, et cetera, it's truly a conversational one. The second part is, there's enough time to actually elaborate on the thought and the idea. Whereas you have to be so succinct in how you express your idea and truly get it across in 30 seconds, or you lose the moment and the journalist wants to move on.
+
+Brian Chesky is an example. He's the master of it. He just switches it on, and he's so good. For some reason, he and I always end up getting on the same panels, and I'm like, it's game over even where it started. You can have all the great stuff.
+
+Ben: Welcome to this episode of Acquired, the podcast about great technology companies and the stories and playbooks behind them. I'm Ben Gilbert.
+
+David: I'm David Rosenthal.
+
+Ben: And we are your hosts. This episode, we sit down with Daniel Ek, the man who saved the music industry after Napster and the piracy era killed the CD business. Some of the stats are mind-boggling. Spotify has paid $40 billion to artists over their lifetime. They're now the single largest source of revenue for the entire music industry.
+
+David: That's crazy. Spotify also has over 500 million monthly active listeners, over 200 million of which are paid subscribers. Both of those numbers are bonkers.
+
+Ben: In today's conversation, we're talking about (1) how Spotify managed to get to this 500 million number by stacking all these different expansion strategies on top of each other over the years, and (2) we're going to dive into the current moment that Spotify is in. They've entered podcasting in a huge way that has not only changed the experience for consumers, but Spotify as business and their future as a company, which is of course, very interesting to David and I as Acquired’s growth has really exploded on Spotify.
+
+David: Totally. I think we referenced early on in our conversation with Daniel, over 60% of Acquired's audience is now on Spotify, which is up from basically zero years ago.
+
+Ben: It's wild. In fact, we were so interested in having this conversation that when Spotify asked if we wanted to fly to Stockholm and record in person with Daniel in the Spotify studio, we jumped at the chance. Daniel also foreshadowed some of what's to come with the cousin of podcasting, Audiobooks.
+
+We can't wait to hear what you think. Come discuss it after you listen to this episode in the Acquired Slack, acquired.fm/slack. You should subscribe to our interview show, our second show ACQ2. You can find it in any podcast player, and we've had some killer back-to-back discussions with the CEOs of Retool and AngelList both about AI.
+
+Without further ado, this show is not investment advice. David, myself, and our guests may have investments or many shares in the companies that we discuss. This show is for informational and entertainment purposes only. Now on to our conversation with Daniel Ek.
+
+David: We wanted to start with something incredible that has happened in podcasting.
+
+Daniel: If you look at January 1st, 2019, we had less than a thousand listeners on Spotify.
+
+David: Yeah, crazy. Now it's by far the majority of our listeners.
+
+Ben: Unless you're us, and you're looking at the data all the time or other podcasters, I think it's easy to underestimate how seismic of a shift has happened in the podcasting ecosystem since you guys dove in. I just wanted to, Acquired style, go to a moment in time and say, how did that happen? And how did you guys decide to become an audio company instead of a music company?
+
+Daniel: I like to say that there was probably this genius insight at some point in moment, but that's certainly not, in the case of Spotify, true. It is often quite serendipitous. For a long time, I was fighting the urge on this. But we were oftentimes trying to not think of ourselves as the users and customers because once you got through a hundred million users, you're like, well, obviously I shouldn't be the target demo. I need to listen to what the actual users are telling me.
+
+There are some parts that's true with that. But then, more and more, what I've realized is also that actually, internally, we probably have the best sounding board of a quite representative Spotify user and what they might like.
+
+One of my favorite topics is how often people game our platform. For instance, in Germany, unbeknownst to us, one of the crazy things that ended up happening was just people started uploading audiobooks because it turns out that these music labels actually own a bunch of Audiobook rights.
+
+As the platform was taking off, they realized, what else can we put on this platform that gives us a leg up and creates more revenue for us? They realize that they have this catalog of audiobooks sitting on there. I think that was one realization where we realized, hey, this platform doesn't seem to matter all that much what we're putting on it. People just like consuming content.
+
+I and others at Spotify are big podcast listeners ourselves. We love that, but we hate the fact that we had to switch app from our normal one. We hate the fact that we couldn't get the recommendations working. We hate the fact that we couldn't get this to work on my car, speaker or my home speaker, and all these things that we spent literally a decade building for the music industry.
+
+It dawned upon us that podcasters have the same problems that music creators have, and we should be able to play a pretty big role. All the primitives that we built for music should work really well in terms of discoverability, in terms of ubiquity that we call, which is our ability to play on any device. And of course, our freemium model, where the ad-supported and eventually paid models as well should be able to all work together.
+
+The craziest thing in the beginning was probably when we started talking about it as building it in the same app. That was what the biggest resistance was because the common wisdom at the time was obviously, podcasting has to be a distinct own thing.
+
+David: You've talked about this before. The constellation of apps was all the rage, Facebook's got all these different apps, and Apple has all these different apps.
+
+Ben: Unless I'm a person who already defines myself as into podcasting, I'm never going to click a podcast app to try and get into podcasting. You can't expand the TAM if they're all in separate apps.
+
+David: Which was a super nerdy thing.
+
+Daniel: Even merchandising podcasting is a very different problem than music. It is actually one of the things that we're still working on, trying to crack the code on. That was probably the most contrarian both inside and outside. But to us, it was probably the most obvious one because we had already seen the behavior happening in Germany.
+
+Once we had tried unloading it for ourselves so that we could play around with the product, it was obvious that this would be a great experience. It's probably been the most interesting one for me, and what I often tell other entrepreneurs is like, the fact that people doubt you in the beginning, you need to pay attention to that and hear what valid concerns they may have. But a bunch of that is just that they're not used to the concepts, and it's going to change. By the time it changes, it will have already passed over, not that you were right, but actually, of course, this is obvious.
+
+My favorite one, obviously, is streaming music. When we began doing it, I always got this pushback of, why would I want to rent my music? I want to own my music.
+
+Ben: The phrase ‘streaming’ did not exist.
+
+Daniel: Yeah, people were not talking about it. People actually conceptualized more around renting things. Why is that good for me? This is horrible. That means that technically, what happens if you guys don't want to have that song anymore? That song disappears.
+
+David: People care so much about their music. It's their identity like I want to own this, I want my record collection.
+
+Daniel: Exactly. We were fighting against it. It was so obvious to us that because I grew up with piracy that, actually, all you want is access to it. It was such a hard notion for people to get conceptually because we'd been spending 30 years just getting people into that.
+
+I feel like most of the tech industry spent a decade-plus learning about having separate apps. We said, no, it doesn't really matter. We can put it in the same app, and actually, people will love it even more because we're solving the same user needs.
+
+David: Where did that insight come from? Was it you as a user? Was it elsewhere in the company?
+
+Daniel: It was really a lot more of a first principles thinking around it. It didn't really make sense if you looked at, what are we trying to solve for? Was it truly so different in terms of a consumer experience? No, it was the same playing view, slightly different modalities, but totally possible.
+
+If you thought about it as a discovery, okay, well, that's a similar problem. Ubiquity, being able to play it on all the speakers, made a lot of sense of having the same thing, search, all of these things were basically shared infrastructure that we can utilize.
+
+Again, if you're searching for content, you don't really care all that much about it on YouTube. On one end, you're listening to music on one side. You had all these other short form videos, sports, and so on. You don't think that those are distinctly different behaviors, so why do you think about it that way? It is because you really think podcasting is a different format. But actually, it's audio.
+
+David: Let's go back to the radio days. Talk radio, music, and sports, were all on the same device.
+
+Daniel: Yeah. That's the thing with audiobooks, too. What's the difference between an audiobook and a podcast? You would say chaptering and some of those stuff.
+
+David: We think of ourselves as right on that line between an audiobook and a podcast.
+
+Ben: Actually, we'd love your help trying to solve this for ourselves. We have recently realized that Acquired is—the canonical episode of NVIDIA, TSMC, or Taylor Swift—more like conversational audiobooks between David and I than they are podcasts. They're four hours long. They drop infrequently. How does that fit into what you imagine is the job to be done by audio? Is it an audiobook? Is it a podcast?
+
+Daniel: My view (I guess) is the boundaries are from a format side, it's definitely been blurred quite a lot for the right reasons. The better way to think about audiobooks and podcasting is it's really around a business model mostly. One way to frame it instead would be podcasting is ad-supported audio, and audiobooks are paid audio.
+
+For you guys, I also happen to know, you spent so much time and effort on the research of that site. You could imagine that in the future, you have the ad-supported side of your podcast, the certain types of episodes, and you'd have for your subscribers the unlock where they get access to these kinds of deep dives, et cetera. Obviously, this subscription thing could be as simple as, hey, you're part of our other network, and it doesn't cost money, or you could pay gate it's all the way through.
+
+I think it's more of a business model. That's the big format differentiation. As we said, the quality, the mics we're using relative to an audiobook, there's no difference here. You're using high quality camera equipment. Also very similar to more professional styled and do-it-yourself equipment, editing, and all these things. It's getting more and more blurred.
+
+David: Yeah, which is so interesting. To us, we've lived this over the past eight years. What podcasting has unlocked, and how Spotify is bringing so many more people to the medium that weren't consuming before, is a mass audience for niche products.
+
+If we were authors and we wrote a book—and we get pitched all the time on writing a book—the business model for us does not make sense anymore, given the audience size that we have and the particular type of audience. We monetize so much better with the ad-supported content. But to make that unlock happen, it needed to become a mass medium. It's interesting to think about, would that change if audiobooks can access a mass audience in the same way?
+
+Daniel: Yeah. Obviously, our view is, we eventually think audiobooks should be much, much larger than what they are today. Hundreds of millions of people who are actually listening to Audiobooks because the content is great rather than today with tens of millions of people.
+
+David: Is that the market size today of Audiobooks?
+
+Daniel: Yeah, believe it's tens of millions. It's one of the fastest growing categories, which makes it interesting. Again, fundamentally, it's both a business model problem. It's, again, the discovery problem and all those other things.
+
+David: You are going to pay a lot of money for a one-off purchase, or you need to have a pretty expensive subscription to a service that you may or may not use and get value out of.
+
+Ben: It reminds me of music in 2008.
+
+David: Exactly.
+
+Daniel: You guys are exactly right. There probably needs to exist a different business model for all of these things. In your case, you guys have, probably right now, a pretty defined audience (I would guess) and probably a very high value audience, which makes ad-supported monetization probably better than the average creator for you guys, just given the type of audience that people want to get to. But you could even contemplate some of your deep dives. I've heard actual hedge fund investors literally have that as the sole input to their entire process.
+
+Ben: It's just terrifying.
+
+David: Not investment advice.
+
+Daniel: Yeah, exactly. It is one of the areas that I'm the most intrigued about. I think Ben Thompson had this piece very recently. I think he called it the unified content business model piece. I don't necessarily agree with everything he said, but I think his main takeaway is obviously that all media models ought to move to freemium. He's someone who's been saying that for 15 years.
+
+I obviously agree with him there, but I think that's true in all formats. Like, as I said, what's the difference between audiobooks and podcasting? There are definitely differences, but the format's are blurring. The main one is the business model, as I said. It's talk audio but with a paid or an ad-supported business model. I guess my advice to you guys would just be, I think you should explore both and see, to an extent, what's possible.
+
+Ben: Yeah.
+
+David: For our first sponsor of this episode, we have one of our favorite companies on Acquired, Statsig. Statsig is a feature management and experimentation platform that helps product teams ship faster. The founder, Vijaye, was a VP and one of Facebook's most prolific engineers for over a decade. The Statsig platform is based on the world class product tools they built in-house over at Facebook.
+
+It's unique because it combines smart feature flags with automated A/B testing, and accelerates results with advanced statistical methods like sequential testing and cupid. Statsig is also the only player in the market that offers a full stack experimentation platform that's data warehouse–native and agnostic, giving product, data science, and engineering teams a flexible platform that works no matter what your data infrastructure is.
+
+Ben: Like so many of our favorite companies at Acquired, Statsig is the epitome of the Bezos maxim that companies should focus on what makes their beer taste better. They're a core value prop and differentiation, and use best in class third party tools for everything else. Statsig is definitely best in class.
+
+Companies like Notion, Brex, OpenAI, Vanta, Vercel, Cruise, Univision, and more, all use Statsig to increase their product velocity. Plex, for instance, saw over an 8% increase in new user registrations with their very first Statsig experiment. Notion uses it to manage their entire awesome, new generative AI feature set. With Statsig in your modern product stack, you can build a culture of data-driven decision-making with less overhead and focus on what makes your business truly unique.
+
+David: If your company could benefit from increased conversions and engagement by leveling up your product infrastructure and really what company couldn't, Statsig is generously offering Acquired community member companies, five million free user events per month, plus a white glove onboarding experience including migration support.
+
+Ben: Yes. Go on over to statsig.com/acquired, or click the link in the show notes to learn more and 10X your experimentation velocity. Just tell them that Ben and David sent you.
+
+David: Thank you, Statsig.
+
+Ben: Thanks, Statsig.
+
+Speaking of the podcasting business model, there's the potential for podcasting to be a far better business at scale than music streaming. Obviously, with music streaming, you take 30%, and you share 70% with the labels.
+
+With podcasting, there's the potential for real operating leverage, especially if you own the content to build a fantastic ad network or however you want to monetize it, but you actually can take advantage of the scale of your audience in a way that it's hard to outrun your costs in the music world. I'm curious, how early in your dreaming about becoming a podcasting platform did you start thinking about that? Or was it purely product-driven?
+
+Daniel: I think it was a bit of both. You have to contemplate that if you're making moves like certainly of our size because many of these investments that we're making are multi year ones, pretty substantial from a signaling point of view, too, and obviously, public market investors want to know, is this ultimately a good business? And why do you think that is? For me to have said, we've bought a bunch of companies, but I don't really know what kind of business it'll be, it's probably not going to be the right answer.
+
+Obviously, we contemplated that and we thought about that. The reality is, there's a lot of the-grass-is-greener-on-the-other-side when you go to deepen that. Obviously, on the one hand if you deal with a lot of licensed content—this case from some major labels, and obviously a lot of indies as well, but still relatively supply constrained from some big ones—the natural tendency is for you to think, this is much better because all of a sudden, you have this much wider scope of different creators that matters. It's great.
+
+David: And aggregate a fragmented market.
+
+Daniel: Yeah, you can do the aggregation theory. That's all good and great. What we don't really contemplate all that much is obviously there are other challenges for that business model. Moderation all of a sudden becomes a massive thing. You have to build an actual ad network that probably then scales.
+
+In theory, yes, you're right. You may have an opportunity to gain more margin over time in this model. But fundamentally, you have to do many more steps along the way. We don't have to contemplate content moderation as much when it comes to music. We certainly don't have to have these very elaborate systematic processes about what constitutes speech and violence.
+
+We knew that because I'd seen enough of these, obviously, platforms. But it is important because if you think about it from a P&L, on the surface of this, these models are great because of very high gross margins, and so on and so forth.
+
+Ben: Great at scale, expensive at small scale.
+
+Daniel: Yes. But even at scale, if you think about it, is the cost increasing or decreasing? If you think about right now, obviously AI will come in and it will be massive. But I think at one point in time, Facebook (or now Meta) had over 100,000 content moderators actually working for them.
+
+Ben: What, 100,000?
+
+Daniel: I believe so. I don't know, an insane amount of people.
+
+Ben: It's tempting to believe that that's a fixed cost and that they're running this unbelievably high gross margin advertising business, and they can outrun those fixed costs, no problem. But in reality, what you're saying is, actually, they build up a whole bunch of variable costs too that don't fit into this platonic form of ideal social media business model.
+
+Daniel: Yeah, for sure. Even today, if you think about it, maybe that's not 100,000 anymore because they've been able to automate some of that process, but it's a mouse game as well. The other side is now using quite sophisticated AI.
+
+David: They use OpenAI, too.
+
+Daniel: Exactly, to do that. That means that your AI model has to be a lot more sophisticated, and that still adds costs. I think the best case scenario, I was looking at this very old data. What I believe at the time of Facebook's IPO, it was something like the cost for Facebook to onboard a user was a dollar a user or something like that in hardware cost and all that stuff, basically, to have lifetime value of a customer.
+
+At that time, obviously, the monetization wasn't as advanced. That was what was burning cash for quite a while. Eventually, their growth rate probably slowed down enough where their monetization started kicking in and scaled up enough. Those two effects took out each other and they became very profitable.
+
+If you look at it now, I don't know what the cost would be. If I were to start a social media company today, the cost may be an order of magnitude more because of all the other things you now have to do. The ad platforms are way more sophisticated that you have to build. The moderation tools are way more sophisticated.
+
+The good news is, you may then come back to this and say, well, was that a mistake then? We knew a lot about that going in, and we weren't entirely new. It wasn't like we were starting an ad business from scratch.
+
+David: You weren't with Facebook for a long time.
+
+Daniel: Yes, that too. We had a relatively good idea of what type of problems we would encounter.
+
+Ben: To give you some credit for our listeners, I think at the time, you probably had maybe 200 million people on the ad-supported tier who weren't in premium when you launched podcasting, maybe something like 150 million. But you had a gigantic scale advertising business. You just didn't have user-generated content being the content that it was advertising against.
+
+Daniel: Yes, that's accurate. The amount of inventory, obviously, that we were monetizing it against was relatively small. One of the big things right now is obviously, this is a huge thing, perhaps even more so than music for us to offer monetization to a lot of these podcasters that, perhaps unlike yourself, can't sell ads.
+
+David: Unless you're in a niche like ours, if you're subscale, you're never going to be able to access Unilever, P&G, or Coke on your own, or Nike.
+
+Daniel: I want to ask you about that because I saw the episode you guys did with David Senra by the way. He's interesting because in my opinion, he seems to almost dig in more in what made him successful and tries to not at all veer to broadening the base. How do you think about that? You could just go serve your niche even better, or you could try to, let's try to include other forms of content. How do you decide what type of content to go after?
+
+David: We are right in the middle of figuring this out. You always said for a long time, you're like, I would rather not have growth and keep our audience who they are.
+
+Ben: I'm not sure I'd go that far, but I would rather saturate our niche and then at some point, stop growing, than expand the niche, which I think we have 3X–4X headroom on our current.
+
+David: Yes, we still can expand in our niche, but then we did our Taylor Swift episode. We did the NBA, we did the NFL, and then we did LVMH. In LVMH, we got 40,000 new subscribers. We were like, okay. To your point, something is hacked here. There's a new phenomenon or something.
+
+Ben: We have had to redefine what Acquired is basically once a year since we started. It used to be technology acquisitions that actually went well, and then it was acquisition with an IPO. At some point, we expanded beyond just tech founders and engineers that became venture capitalists also, and then it became their LPs. There are a bunch of university endowment folks that listen.
+
+Now we're realizing, as long as we keep making these really deep, really long, really esoteric stories and analysis, you can create smart content for smart people that is not scoped to a particular industry. I think that that's our new definition of the job-to-be-done from Acquired.
+
+Daniel: I think it's brilliant how you're able both to satisfy your own curiosity, I guess. At the same time, it doesn't seem that far-fetched, some of the ideas that you're trying. Obviously, I would probably assume the Taylor Swift one was more out there than something else. The LVMH one actually felt, to me, supernatural. It's funny how well-talked about it. It's been even among what I would have not assumed would have been your crowd.
+
+I had a bunch of really old school value investors that I honestly didn't even realize were listening to podcasts. I've been thinking about it. I'm like, have you listened to this one, which is pretty cool. I think there's a way where there's probably some overlap between the audiences, but also clearly attracts a new one.
+
+David: It's a very, very different scale and different business. It's a little bit like Spotify adding podcasts to music. We have this audience that is traditionally very tech-focused. We have this format that we've refined. Now we're like, okay, if we bring something else into it, is that going to expand it?
+
+Ben: I will say, unlike Spotify, which you can, by virtue of being a tech platform, aggregate a bunch of different audiences, and then let them choose their own adventure on a really broad platform, we create these serial episodes. If we go on a bender and do like we just did, Lockheed Martin, and it hasn't come out yet as we speak, but we could have done eight Lockheed Martin episodes. We chose two particular stories to tell, and we call that the Lockheed Martin episode. If we went on a bender and did eight, then we're underserving a lot of our other niches.
+
+David: We did two-and-a-half episodes on Nintendo, two on Nintendo, one on Sega. We had a blast, and people who love video games had a blast. But by the time the Sega episode came out, the people who don't love video games and video game history had stopped listening.
+
+Daniel: Diving deeper on that, I'm curious then, would it have been that much more effort for you guys to produce eight? Or did you have the content, but it just didn't make sense from an audience point of view?
+
+Ben: I think we had high-level concepts in our head for eight, but it turns out that most of the work is the last 10%. It's like software engineering, where there's the first 90% and then there's the second 90%. I think so much of the work is...
+
+David: The last 10%–20%.
+
+Ben: There's usually one thing on the cutting room floor. We're playing with this idea of shorts, what we did for Sega. In approximately one hour, can we take one thing that we just couldn't squeeze it in and tell one more story?
+
+Daniel: Yeah I was just thinking about touching upon where we were a little while ago about paid versus ad-supported. I bet you that there wouldn't be a very small one, but there would be an audience that would listen to all eight. Whether you want to spend all the time doing the eight is a totally different question. It seems to me like the best creators just pursue whatever they're interested in.
+
+Some of it will work, some of it won't work. They don't really seem to care all that much. Obviously, they'll learn from what seems to be resonating, but that's the cool part. We're living in an internet where, on the one hand, everyone talks about this 15-second clip thing, and everyone's getting down in that rabbit hole. But then at the same time, you can have three-, four-, or five-hour long conversations on super esoteric, very, very deep topics, and people love that too.
+
+Ben: It's funny, us, Joe Rogan, Lex. At the same time that short form is having a breakout moment, extreme long form is also having a breakout moment.
+
+David: We want your views on this. On our very small scale, we're struggling. We have an Acquired Tiktok, we're on YouTube Shorts, we post on Twitter, and none of that drives the needle for us. We've had videos on Tiktok get a couple of million views, and we don't know if it translated to a single new subscriber to the pod.
+
+Ben: In many cases, we do know it translated to a single new subscriber. Like, welcome, both of you.
+
+David: Yeah, thank you for staying with us. At the same time, you are, at least on the podcasting side, the home of long-form content. You just launched the new Wall Street thinks of the TikTokification podcast.
+
+Ben: It's the new home screen.
+
+Daniel: Yeah, both extremes seem to work. I believe one of the biggest problems we have in this new creator economy is the one of attribution. Many creators like you have or try many of these different platforms, and they use it. They can see on each individual platform how well they're doing, but it's very hard for them to understand what actually drives what.
+
+I actually see both. I see some creators who are underinvesting in other platforms and probably too singularly. Just because they have success on one, they ignore all the others, which my advice to all those that is that feels dangerous to do because if there would be an algorithm change or any of the kind, even unanticipated by the platform, because they may I see that something resonates watch time resonates better with some other metric, it doesn't have to be skewed as an evil thing.
+
+It just could be something that actually benefits the user. But if you built your entire livelihood of that one platform, that could be a big problem for you. I see them underinvesting in other platforms.
+
+The other one also can be true, which is they're overinvesting in too many and not realizing that actually, they probably would do better in just focusing more on one or two. I think that there are two different problems. I believe that for us on why we care about this and certainly why we designed the home feed the way we did, is because fundamentally how we merchandise content has to be very different for music than it is for an audiobook or a podcast.
+
+If you think about it, it's logical because in a song, it's a three-minute commitment of your time. You can actually probably tell within the first 10–15 seconds whether this is worth investing your time in or not.
+
+Ben: Unless it's a Radiohead song.
+
+Daniel: That is true. You probably then know the brand, and you know how to give the time and attention to it because you're like, I love Radiohead, so I'm going to give this song a chance. Maybe not just one chance. I'll listen to it a few times before I make up my mind.
+
+Obviously, if you've now think about that with podcasting, if I'm listening to you guys, even if it's a topic I don't necessarily know that I'm interested in, I might give it a shot because it's you guys. I trust you because I built up this rapport with you.
+
+David: It's a much bigger commitment, though.
+
+Daniel: It is a much bigger commitment, for sure, but I may give it 10, 15, 20 minutes because I have that relationship. But if I've never listened to you guys before, that one hook that gets me in. How many people in marketing you usually have? In early Spotify, we had eight people needed to have heard about Spotify before we were able to sign someone up.
+
+We realized that the geographical density in which that happened was actually a key contributor and a timeline. Much of our early marketing efforts were in college cities in the US. You have consumers who are probably more attuned to music being a big part of their life, small geographical areas. We bombarded it. We did a bunch of different things that were hugely successful.
+
+David: In retrospect now—15 years later—was it almost like a benefit that you had to launch geographically specifically because of the label negotiations, that you could really saturate Sweden, the UK, before moving?
+
+Daniel: For sure. We all believe that these internet companies that go global on day one, that's the right approach. I actually think 99.9% that this is just untrue and false. The entrepreneurs have to revise. All are benefited from constraining ourselves to finding what our first audience is.
+
+It could be geographically niched. It could be that it actually is, again, a subset of demographic or whatever. But more often than not, actually geography helps limiting yourself to a city, to a state, to a country, whatever it might be, so that was a huge part.
+
+I can tell you definitively, Spotify would not have been alive today, had it not been that we couldn't launch in the US as our first market. If you asked me at the time, it was a huge step back to say, I can't launch the biggest market in the world. I'm running an internet company like, come on.
+
+David: You tell the stories of you believed, and you told investors, oh, we're going to be live in the US in three months. We're having the conversations. It was three years later that it actually happened. You must have been so stressed.
+
+Daniel: I had many of those episodes. It always followed with enormous weight gains and hair loss.
+
+David: You literally ripped your hair out.
+
+Daniel: Pretty much. When I started, I had hair. Two, three years later, I didn't have hair.
+
+Ben: When you started Spotify, you had hair?
+
+Daniel: Yeah. There are old pictures of me with hair from the first year or something, and then it all disappeared.
+
+David: Was it worth it? Was it worth the trade?
+
+Daniel: Obviously, I think it has been. It is an emotional roller coaster. You guys know this being an entrepreneur. It's not for the faint-hearted. I think every really successful entrepreneur, in my opinion, has had at least three near death experiences with their company, where you just feel like, I'm not sure whether this thing is going to work, not work, whether we're going to be alive tomorrow or not.
+
+I hate how the media portrays this and sometimes how entrepreneurs, we're supposed to be so big, where we understood everything from day one. It's certainly not been my journey. My journey was, I had a lot of luck. I worked insanely hard to get to even half of where we were today. It's been a true emotional roller coaster.
+
+It is true, what you said. But for me, had you told me how hard this would have been, I would have never done it. I'm happy I went through it, but I would have never done it.
+
+David: It's time to talk about another one of our favorite companies in the Acquired universe, Vouch, the insurance of tech. Today, we're talking about Vouch and artificial intelligence. Vouch is by far the best and fastest way to ensure your startup at day one. Because they're the only insurer that really gets tech companies, they're also the right way to stay insured and build your coverages as you scale. They have deep partnerships with and are recommended by Y Combinator, Carta, Brex, Vanta, and of course, Acquired itself.
+
+As you can imagine, there are all sorts of new business risks that accompany the incredible opportunities unlocked by generative AI. Most traditional insurers are nowhere near equipped to cover them, but not Vouch. They are adapting coverages to offer protection for generative AI risks.
+
+Just as one example, Vouch is building solutions to close the gaps in your tech errors and omissions policy for generative AI mistakes, which is something most other insurers not only can't do, but many specifically exclude it, meaning that if a customer or user sues you for a mistake generated by your AI stack, you're out in the cold and responsible not only for the damages but also on your own for the cost and process of litigation. In this brave, new world of AI, legal landscape you do not want to be on your own.
+
+Ben: Yup. Vouch is already, by far, the leading AI company insurer with over 350 companies covered, and they're just getting started. You might say, hey, that's cool, but I'm not a generative AI company. The reality, though, is whether you realize it or not, you probably are because many employees are using ChatGPT and other services to help with their work.
+
+David: Yes. When it comes to insurance, choosing a partner like Vouch that deeply understands AI in this brave new world will ensure that you can get all the benefits of it while still being protected. Head on over to vouch.us/acquired and save 10% on your first policy, or just tell them that Ben and David's AI avatars sent you.
+
+Ben: Thanks, Vouch.
+
+David: Thanks, Vouch.
+
+David: I wonder if you consider this one of those near death moments. But because we did the T Swift episode, and we talked a lot about it on the show, the week that 1989 dropped and Taylor pulled off the platform, do you consider that one of those moments?
+
+Ben: This was 2014.
+
+David: October 2014.
+
+Daniel: We really do not know. That's the crazy part with it. It was one of those where if you'd asked us externally, it felt like this massive event. But if you were inside of Spotify at that moment, there was no one who thought that that was the defining moment. We're certainly worried about, okay, is this the beginning of more artists pulling out, et cetera, for a few days?
+
+I spoke to a lot of artists, but I think there was certainly a lot of skepticism about Spotify at the time. But generally speaking, there had been enough things in Europe where people really saw like, no, actually, this works. Maybe it doesn't work yet in the US. Maybe it's better for her to do this thing. But there were enough people that believed at that time that it was only a matter of time before the US would be majority streaming too.
+
+The way it's been portrayed oftentimes with Spotify, in particular, has been this dogmatic. It has to be all in with me or not. Actually, that's not how I advise artists or creators. It's an unusual thing because everyone wants to build their own platform and so on.
+
+My firm view is that, truly, I believe in open as the model at its core. My view has been, there are some artists that, at that time, I don't believe it's true anymore, but the Adeles of the world, that probably benefited from physical scarcity. That probably didn't need to be on streaming. They probably should have done a windowing type model. The number of those artists were going to be very, very small, but she was certainly one of them.
+
+David: Was that because of the demographics of her audience?
+
+Daniel: I think so. But also, she on her own, can basically control the zeitgeist. She can decide that this is a big cultural moment.
+
+Ben: Taylor Swift.
+
+Daniel: Yes. It is remarkable. Not a lot of people in the world can get hundreds of millions of people around the world to wait for a moment, and she did brilliantly with this album launch, too.
+
+Ben: I stayed up till midnight.
+
+Daniel: I don't know if it was hundreds of millions, but certainly tens of millions of people literally waited. She got them in on the hour. Each hour was another give. She played that to perfection.
+
+She's really remarkable at understanding how to speak to her audience. She does it authentically. She can do that. There are definitely other artists that can do the same. But what's rare is for her to have that kind of zeitgeist and deep connection with that audience. The fan base that she has, how vigorous and how intense they are at that scale. That's the unique thing.
+
+Ben: Was there something that changed between 2014 and when she came back on Spotify, where it may have made sense for her not to be here in 2014, but then in 2017 or whenever that was when she came back, that the world had changed enough where it did make sense? Did you actually talk to her? How did that all go down?
+
+Daniel: I think the predominant thing that changed was streaming just became the majority of the industry in a bigger way. If the option was like, hey, am I on streaming or not on streaming, do I think she could have reached number one at that point without streaming? Probably not would have been the answer. She's super smart, so she understood that.
+
+David: To your point, even in 2014 in Europe, that had already happened, but it hadn't happened in the US.
+
+Daniel: No, it definitely hadn't happened in the US. We were much earlier. Spotify at that time was shy of three years in the US. Streaming penetration was relatively low. Radio was the predominant thing.
+
+At that time, physical sales were still very big. I remember, I think it was Lil Wayne that sold 3 million albums in that year on Costco out of all places. Some demographic connection thing was going on.
+
+David: I love that, the intersection of Charlie Munger, Lil Wayne, and Costco.
+
+Ben: Costco sells more chickens than anyone in the US or in the world, actually. Costco just has an unbelievable distribution channel, if you can get it.
+
+Daniel: We were talking about it before, but Starbucks and Howard Schultz was actually one of the biggest retailer subsidies in the US. That's actually how I met him the first time because they were becoming a partner of ours.
+
+David: That's right. You did a partnership with Starbucks.
+
+Daniel: Exactly at that moment, and got to know and spend some time with them. The world just looked very different back at that time, and I think that changed. Ever since, she has been great with the team. She's super smart.
+
+David: That was our big takeaway from the episode. She is really, really smart.
+
+Ben: David and I were talking before this episode. Are there other artists that you've gotten to interface with where you walk away, and you're better business acumen than any founder I've met, any investor I've met?
+
+David: We became obsessed with people who are top of their game artists and top of their game business people.
+
+Daniel: There are quite a few of them because I actually believe these days, if you consider a mega artist of that stature, they're their own enterprise, and they're the CEO of that enterprise. There certainly are people who help them.
+
+At this level today, there's almost no one of them that's not very active as well on the business side and understands deeply what their audience wants, what's authentic to them by making move X, how does that affect that relationship? What's super cool to me is that you have everything from the Taylor Swift's of the world, and then you have something like BTS, which is insane.
+
+Ben: How are they different? They're the same order of magnitude scale, right?
+
+Daniel: I don't pretend to know all of Taylor Swift's business sides and who's involved in everything, but from what I would guess is she probably runs with a pretty lean team.
+
+David: That's what we heard when we were researching the episode.
+
+Daniel: That's certainly been our interaction with her. It's very tight, very lean. If you think about something like BTS, but actually quite a lot of Korean artists, it is like an industry. It's huge.
+
+Just on the songwriting side, there's the difference between, in Taylor Swift's camp, it's two, three, four maybe at the top. In some Koreans, 200 writers were involved. That's a small part. You have like everything from merchandising, there's another few hundred.
+
+David: The talent development, too. The pipeline to go from, you enter into the K-pop system to become a member of XYZ group is...
+
+Daniel: That could be your next deep dive because honestly, it is fascinating how they do it, and the 360, how they think about it, not just from maximizing the recorded side but actually thinking about fan development. All the digital platforms have their own developers, programmers, building specific platforms. It's pretty cool.
+
+David: One thing I'm really curious about that we hadn't thought about before, we came here yesterday to Stockholm when we were talking with other folks on the Spotify team. I'm curious, in this lens, what the past few years have been with Bad Bunny and reggaeton, and I've heard you talk about that you knew from the data on Spotify that this was going to be huge, and now I think it's the largest genre on Spotify.
+
+Ben: And many of our listeners will not know either of those two terms.
+
+Daniel: I think this is a broader trend. We're now living in a very global world when it comes to culture. At the same time, there are still a lot of local nuances. It's this extremity that we talked about. On the one end, you have this super, super niches that exists. But then once every blue moon, one of these niches develop into something that's actually quite sizable, and you start realizing that maybe this has a global appeal on top of it.
+
+In LatAm as an example, gospel music is quite big. Funk music is also quite big. That's probably not what you associate with popular music, but they are real things. Obviously, they exist in microcosms elsewhere. You could probably guess in the south in the US, gospel might be a larger genre, et cetera.
+
+It's not like it's totally isolated and just happening there, but there's something that creates a cultural resonance with those types of styles. And then you have something like reggaeton. It usually starts pretty small. Actually, in each cluster, it starts developing more broadly. When you really look at it, it has oftentimes a pretty huge diaspora outside of that near region as well. The Hispanic population in the US would be an obvious one.
+
+Many years ago, we started seeing them breaking out their natural clusters and becoming a pretty big thing. For me at that time, it was just pretty obvious that if we invested in that genre on a global basis, we thought that that would have a global appeal.
+
+David: Yeah, because before a platform like that, obviously it could happen, and maybe there are examples where it did. Maybe the Acquired audience, not as many people know Bad Bunny or know the lyrics to his songs, but a large portion of non-Spanish speaking Americans and non-Spanish speaking people around the world know all the lyrics and Spanish to Bad Bunny songs.
+
+Daniel: They may not know what the lyrics are about, though. That would be a very different thing. There are a lot of local cultural things that seem like, what? He's talking about someone cheating with this one and all these relationship stuff. That's the local nuances.
+
+That's the fascinating thing. At the same time, you probably wouldn't have imagined MSG being sold out in 20,000, if not more people singing Korean lyrics that don't look Korean, by the way, and know every word to every lyric. That's the amazing thing. When things catch on, it's music. It makes people feel there's something about the artists, there's something about how they're communicating that resonates with you as an individual.
+
+It is the foundational storytelling. We've always used music. It is so hard to describe art. We can objectively describe, oh, there's art, but how you feel. Why do you feel a certain way when you're looking at a painting? Why do you feel a certain way when you're listening to a song? It's really hard to describe that.
+
+That's the amazing thing about what we're able to do. The really cool thing is, you're able to take artists that otherwise, perhaps, may not even have been able to be professional, and now they have a global audience. I don't know how to express it other than that they have some God-given talent. That's the best way I can describe this. It's genius when they're able to express these things in a way that just resonates with people all over the world instantly. It's like, how do you do that?
+
+Ben: Clearly, they're tapping something innate to humans, independent of culture, which, absent data, if you were to ask me and say, hey, do you think that someone is inventing a brand new genre of music today, do you think it's going to appeal to people similar to them or all humans equally in some way? I would probably tell you, no, it's more about nurture than nature.
+
+David: It's like what we were talking about on the Nintendo episode. There are always only going to be a handful of Shigeru Miyamotos in the world. But until recently, and in the gaming industry, it's still pretty much the case, you need to also have the luck of being the Venn diagram of a Shigeru Miyamoto who happened to be the arcade cabinet designer at Nintendo in order for the possibility of Mario and Zelda to happen.
+
+In music and podcasting, now in this world, everybody has the opportunity. Not everybody is a Shigeru Miyamoto. Not everybody is a Bad Bunny. Most people aren't, but you have the opportunity to be one.
+
+Daniel: I think that's so interesting. I was talking to Ted Sarandos about this. He's on our board. This was a number of months ago. If you think about filmmaking, as you said, one of the things about Nintendo is you have to have the resources enabled to build a game, and that's still not cheap and expensive. Back in the day, maybe you had to build the entire console in order to even have a chance of doing it. But these days, still, a triple A game is...
+
+Ben: A few hundred million dollars.
+
+Daniel: Yeah, very big productions.
+
+David: And five years.
+
+Daniel: Very big productions. Sure, you can build an indie game and so on and so forth, but there's still a very limited number of people that are able to do that. Even in filmmaking or in TV series, the amount of people that used to be able to be showrunners, producing, or directing these things, was a fairly limited group of people.
+
+Ben: Yeah, very socially connected, people hanging out in back lots in LA, part of the studio.
+
+Daniel: It probably mattered a lot not to diminish any of their talents, but it probably mattered who you knew. It was an integral component and having talent, so you had two different things.
+
+In the last few years, as the budgets have expanded and certainly in the Netflix case, it would have been physically impossible to just keep this same set of producers, directors, et cetera, because they're just trying to make so much more content. One of the interesting things is the same thing is happening now where there are LatAm directors and producers, not just doing local productions but actually now coming to Hollywood and doing that as well.
+
+In my case, there's been a bunch of Swedish writers, producers, and actors now that are getting into Hollywood productions. It's been fun to see not just the usual names, but actually some more unknown talent making its way as well. There are more people trying, but there are also more opportunities.
+
+Obviously, as you mentioned on the podcasting side, the same is true there. But it's true on both sides. That's the crazy thing. But there's also more competition. When people are talking about Spotify and criticizing it, that's the part is the biggest misconception because they hear so many, many people who are trying, and it doesn't work where they're not making a lot of money from it. They're naturally drawing the conclusion that, hey, there has to be something wrong with the model that this model can't work. But in reality, both things could be true at the same time.
+
+David: There are a lot more people who are failing, but there are also a lot more people who are succeeding. The total pool is so much bigger.
+
+Daniel: Yeah. I think podcasting is much earlier in its maturity, so we may not hear it. Plus, we don't have this, I'm not sure if a podcaster sees it as it's given that monetization isn't there, and it needs to be there from day one. Whereas I think, obviously, with the professionalization of music, that's a much bigger part of the expectancy.
+
+That's actually a relatively limited part of our human history. It's probably even less than a hundred years that we've had recorded music and it being a form, and yet it's part of the copyright regime, it's part of some pretty important loss. I think it comes with a different expectancy, I'm not saying that's wrong, I'm just saying just the arc of history. I was actually going to latch on to something he talked about being creative, too.
+
+One of the things I often think about when you think about the history of music, going back to the time of Mozart, if I wanted to create music, the reality is I had to be a musical genius because I needed to hear every single tone in my head, every single note. I needed to hear all the different instruments, how they would all play together. I could write them down, but I could never hear them all being played at once.
+
+Many times, the composers of that era were only able to listen to their actual compositions a few days before the actual concert that they were doing, and then making small tweaks. But by that time, it had to be pretty perfect. Sure, they could play a little bit on the piano, but then they needed to visualize but somehow internalize what that ended up being.
+
+Ben: Having a whole orchestra is the triple-A game equivalent.
+
+Daniel: Exactly. Obviously, very few could do that. But also, the creation process was insane because you needed to do so much. You move forward and think about the era of playing instruments and take jazz, which is highly technical. Every single member in a jazz band is excellent at their instruments, like really excellent, and it's really hard. It's really hard to be that good of a musician and play jazz.
+
+Fast forward a little bit more and take someone like a Swedish Avicii as an example, he was a brilliant composer, he truly was, but he didn't really know how to play any instruments.
+
+David: It turns out that technical musical proficiency may or may not be correlated with making great music.
+
+Daniel: Exactly my point. He actually had a different tool. He had software. He was really good at that software. He knew all the knobs, plugins and all that stuff, and how it worked. A lot of musicians are that way today.
+
+If you actually look at the workflow, it's very technical. It's very detailed, it's very nuanced. I have this thing that I do, where I probably shouldn't admit this, but I sit on YouTube in the evenings and look at music producers, their workflows, and when they get into the weeds of decoding how they do stuff.
+
+David: Our faces lit up. We walked in the studio and we're like, we think we are highly technical podcast producers. We think we're top 0.1%.
+
+Ben: Do you think we are? I don't think we are.
+
+David: I think we are. You know, better. We walk into the studio here in Stockholm, and we're like, this is just a skill beyond our imagination.
+
+Daniel: Yeah, we're very fortunate. It's a lot of fun because artists love just hanging out here, too, because we've got everything that they like to use and to do. My point is, if you think about it, it is a very technical workflow that takes a lot of time to get into. Some of the parts of that workflow, you'd have to watch probably hundreds of hours of YouTube videos to even decode or how to do it and start getting into it.
+
+A lot of today's composers are experts in their workflows. They have their plugin sets, they've got these 16 things that they daisy chain together in order to create that one effect that defines them, and so on and so forth.
+
+The barrier still, if you said today, I want to start making music, and I want to make something that sounds pretty good, it's still quite high, that barrier. It's getting lower and lower, and it's getting easier and easier. But I would still argue that the bar, for you to make something that sounds professional would actually be a high quality song, it requires a lot of time and a lot of effort.
+
+Ben: It might be less capex and less equipment. You hear the rise of the apartment music producer on the laptop, but it still takes an enormous amount of self-training, mastery, creativity.
+
+Daniel: My opinion is it takes a little bit too much to get started. It's quite a barrier to entry still. If you just want to make something super simple, it doesn't take a lot. There's this Smule and all these other apps, you can probably make something. From there on to actually composing something, getting into the idea of the workflows, the plugins, all that concept, it's quite a lot to master.
+
+I think that's the potential power with something like AI, obviously, which is we're most likely going to have another order of magnitude of simplicity. On a personal level, if you liken that to coding, I used to code, but I haven't now for about 10 years. It's probably a little bit embarrassing to admit, but the barrier to entry or reentry for me was so high with all Node and all of these different frameworks, even setting up my own workflow for me to be able to do something in the Spotify ecosystem. There are hundreds of hours probably for me to reacquaint myself with all the stuff.
+
+Ben: How do I install the PHP server? No, I got bad news for you.
+
+Daniel: Yeah, it's changed a lot. The amazing thing is, I, just for the fun of it, wanted to start doing stuff. I asked ChatGPT to help me. Pretty much for a few hours on a Sunday afternoon, I was up and running. Because of that starter help, I had my own environment set up. I was contributing code. I was iterating.
+
+Ben: Did you contribute code to the Spotify code base?
+
+Daniel: No, they won't let me do that. I got a little bit more work to do before they allow me to do it.
+
+David: You got to pass the coding test.
+
+Daniel: Yeah. I think out of spite, they probably won't let me into that anyway. They pride themselves on not. I don't have any access to any of the actual systems. It was such a liberating feeling because it made the reentry for me so much easier, and so much more enjoyable. I think about that.
+
+If you think about the world of music now, there are tens of millions of people in the world that probably are recording stuff, but there are 200 million or something like that that's playing some instrument and expressing themselves musically. There's nothing that says that it wouldn't be possible for those 100 million-plus people to make something that actually sounds pretty good.
+
+Again, what is that going to do with the music industry? Is it really going to be that all of a sudden, everything becomes commoditized? I don't believe so because we've seen time and time again, the quality rises to the top and actually becomes even more valuable in our world, photography being the key reference point. When Instagram came, oh, no one's going to want photography, but the price of fine art photography actually increased, not decreased.
+
+My view is, you're going to see both extremes. You're going to see the middle getting wiped out, more people participating, but the very, very top is probably going to increase in value as well. They'll figure out other things to do with this technology.
+
+It is pretty cool for humanity. We talked about being able to relate and express ideas. Every permutation of every cultural idea will finally be able to be expressed. We've never been in a world where that's been possible before. It'll be really fascinating to see what that means for our understanding of other cultures, our ability to relate to other people, and some really cool stuff.
+
+David: This has already happened over the past few years in podcasting, too. There are—you probably know better than me—millions of podcasts out there.
+
+Ben: Two million.
+
+David: Two million-plus, I'm sure, at this point.
+
+Daniel: It's about a little bit more than double that now.
+
+Ben: Really?
+
+Daniel: Yeah.
+
+Ben: Whoa.
+
+David: These numbers, like you're talking about, there are 45 million people out there that are like, I can make a podcast, and yet the very, very top ones are still of a quality bar that is so high and getting higher. I've heard you guys talk about this, that you now can take shows that are in a specific language in a specific region that you can identify based on the data—there's something really cool happening here—and then bring them around the globe to other audiences.
+
+Daniel: Yeah. Right now, obviously, that's a manual process, where we have to hire voice actors that reenact that. We have to tweak the script a little bit to make it culturally relevant.
+
+Obviously, this won't be news to you, but perhaps to some of your listeners. Probably today, it won't be as high quality and the cost would be too expensive to express this, but there's no reason technically why you guys and I, this podcast, couldn't be done right now in Chinese with our voices.
+
+David: I was going to say, you have X now, the AI DJ that speaks many languages?
+
+Daniel: We've had him speak Swedish, for sure. I know, obviously, he doesn't know Swedish. It's only available today because the intonation is a little bit off, so it's really only English language content.
+
+Honestly, that's probably just the training problem. If we were training the models on specific languages and not just X boys, per se, I think that would have been totally possible. Again, the largest problem today as the cost per minute would be too high for most podcasts. I think you guys could actually support it probably with your model, but the average podcaster couldn't.
+
+I don't know if you guys have seen this, but Mr. Beast has a Spanish language. I don't know if he has a French one, et cetera, but he certainly has a Spanish language.
+
+Ben: Computer translated or humans rerecording?
+
+Daniel: I think it's humans rerecording it at the moment, but it's huge. I think it may have 15%–20% additional subscribers of what the English language one has. It's a really big deal. I think that's the next step, where in your case, it's like, why wouldn't you take the LVMH episode and make it all in French or whatever?
+
+David: It should at least be in French.
+
+Daniel: Yeah.
+
+Ben: It's time for another one of our favorite companies here at Acquired, PitchBook, which I used heavily in preparing for this interview. Here's some of the data from the PitchBook page on Spotify itself. You might remember that one of the early breakout moments for Spotify was a 2009-email that Sean Parker sent to Daniel talking about how he loved the idea for Spotify. He wanted to invest. He saw social media, specifically Facebook as the distribution channel.
+
+David: Sean Parker at the time was uniquely qualified to opine on this because he was mostly Sean Parker of Napster fame and also president of Facebook.
+
+Ben: Yes, the best person in the world to offer that opinion. Ironically, while social was the first, Spotify would go on to have concentric circles of growth strategies over time, again, reaching to over 500 million people now, including being the fastest way when they first started, to listen to music by basically inventing modern streaming, then going freemium, then figuring out social distribution, then podcasts, now audiobooks.
+
+Browsing PitchBook jogged my memory about the early Facebook strategy that Sean Parker then at Founders Fund invested in 2009 and 2010, again, found both in PitchBook, which led to a lot of the discussion on this episode about the importance of distribution channels.
+
+PitchBook has all the financing events over the company's history, including pioneering the modern direct listing when Daniel and Barry McCarthy took the company public in 2018 without raising any new capital because they didn't need it.
+
+David: Barry McCarthy rides again.
+
+Ben: Indeed. In addition to the individual company data, PitchBook also has industry data, like financing trends. I went in and generated a graph of financing activity in music tech startups in the US and Europe from 2010 to today. The last four years, just to level set where we are today, has averaged about $400 million of investments in music startups.
+
+David: Wow, that's a lot.
+
+Ben: Yeah, especially compared back in 2010, that number was about a third, 131 million total. If you look just at Europe where Daniel was, it was just 33 million in only 13 companies. This was actually two years after Spotify launched, which really shows how crazy Daniel and the Spotify team were at the time.
+
+PitchBook is awesome. There's an insane amount of data. You can slice it and dice it in every way possible. Basically, every VC and PE firm has it. So if you don't, it's essentially a competitive disadvantage at this point.
+
+If you want to sign up for PitchBook, they are offering a free week trial for Acquired listeners. Go to pitchbook.com/acquired to get all the details. Just tell them that Ben and David at Acquired sent you. Thanks, PitchBook.
+
+I've been uncomfortable until now using any sort of AI for any seconds of audio in our podcast. We always played around with the Descript replacement of certain words, but then we never shipped it to production because I was always like, it doesn't sound quite as good, and everything should be hand-mastered in Acquired.
+
+For the first time on a recent episode, we used an AI tool that our editor found, dramatically increased the sound quality of the episode based on the mic that the guest was using. Once you start doing that, you're like, shouldn't AI do all things to our audio?
+
+Daniel: Yeah. I think we're only in the beginning, obviously. That's hugely exciting for creators like yourself, but it's also scary because it's totally possible for us to make an entire episode where we're seeing totally different things than what we're seeing now. It, at some point in the future, might be virtually indistinguishable from the real thing.
+
+Ben: Yeah, and platforms probably have a role to play in verifying authenticity. That actually raises the value of platforms because platforms like Spotify, YouTube, you actually can point to, we know for a fact that this was created by the creator, and we can stamp it and say that you can trust this.
+
+David: Or approved by the creator.
+
+Daniel: I think you're entirely right. There's been a lot of debate around the Elon Musk subscriber thing. Actually, as usual, when you tease it out, there are many different things in that controversy, but perhaps the most potent and most interesting one has been the one around the notion and idea around staking as a way of reducing the bot thing.
+
+I feel like so much has just ended up being, hey, do I have to pay in order to reach my audience now, that kind of switcheroo? But I think the more interesting one was, well, forget about if it's paid or not, but just increasing the costs of spam, but also increasing the quality of verification and being able to truly understand what's what in the end.
+
+David: Twitter is so interesting. We were talking with a friend who's a creator peer, but his platform is Twitter, and you can't monetize Twitter. There's no rev share. Traditional social platforms like that, you got them on one end of the spectrum.
+
+You've got Spotify, maybe Spotify podcasting and Spotify music at the far end of the spectrum, and then you've got YouTube in the middle. How do you think about what role for monetization, especially on the podcasting side, Spotify should play for creators?
+
+Daniel: Our goal is to be the best partner of creators. Not the only partner, but just the best, and win by basically not forcing the creator to do something, but just offering a really good way for creators to work low friction, but also lots of potential to customize their business the way they would like to.
+
+I think for some creators, the monetization aspect is absolutely critical. They may even be a gatekeeper or a gate between them doing something on that platform or not. Maybe they have switching costs relative to what other stuff they're doing.
+
+Think about a creator that's in a traditional media ecosystem. If they want to take their thing, okay, maybe I will be less valuable on cable or whatever other thing I'm on. That would be one end of the spectrum. And then you have another creator that may have an entirely different business model. I don't know about your other Twitter creator friend, but perhaps that creator either has a different business model somewhere else?
+
+David: You have to. You can't have a business model on Twitter.
+
+Daniel: You can't do that. But the question is, if that's truly a creator, you could argue VCs, a lot of them have Twitter as their marketing platform.
+
+Ben: It's just top of the funnel.
+
+David: And podcasts.
+
+Daniel: Yeah. There are many different ways, and the needs are different, which is why for some of them, they would probably happily forfeit all the monetization because they feel like they have such a strong other business model on the back end.
+
+David: The customization point is really interesting, too. I think that's the really interesting nuance about YouTube. On the one hand, I think YouTube for creators is amazing because you can completely abstract the business. You just make the content, they take care of the business, and you get a check.
+
+On the other hand, I can't even remember if we have ads on YouTube ads on Acquired content. I think we don't because do we want to spray the ad in the middle of this? No, we want creative control. You lose that if the platform is too opinionated about what's happening with monetization.
+
+Daniel: Yeah. Most of us, as platforms go, have to start out very simple with our models. It takes a long time to then change that default setting. I even talked about it in music. It had to be very binary. You had to be on or you had to be off. There was no in between like let's do windowing, let's do this and that, et cetera, because that was the only way. My biggest problem was getting everyone off of piracy into this other model. I needed the consistency of user experience. That was the model.
+
+The next decade or music may look very different. It may look like something where there are going to be a lot more options for what a creator chooses to do. I certainly would hope so, and we're certainly going to work towards that avenue. Any change that we're doing with the scale that we're having, there are going to be winners and losers. It's almost impossible to find a single thing we can do that's just universally going to help. That laterally creates the constraints that it's more of a one way door than a two way door where we can iterate and invest on it.
+
+I'm fairly certain that what you're seeing now in this world of platforms and creator ecosystems is, if you asked YouTube, hey, if you could redesign the platform right now, would you just make all the same decisions you made about discovery and monetization all over again, the answer was probably no.
+
+David: Almost assuredly, no.
+
+Daniel: Right. As evident, actually by shorts, that works a little bit different on their platform. They're all different too because shorts, obviously, you have many more potential impressions over a shorter period of time. An average YouTube video has been X minutes, and that means more interstitial ads. Then we have host-read ads or the equivalent of more native ads or paid promotional ads to both Instagram and YouTube.
+
+We're living in an ecosystem where on the one end, 10–15 years ago, we were very primitive in terms of monetization. Today, it is very, very different. I think about it in a way like this is not too dissimilar from mom and pop shops that are coming up in the US as a cultural norm.
+
+On the one hand, you had physical infrastructure, urbanization, driving these things, where we both created these mega Walmarts of the world as a direct consequence. But actually, the complete opposite was also true. We have this hyper local thing, et cetera.
+
+If you think about it today, these mom and pop stores, the ones that are still around, they're hyper distinct in what they're offering. They're really focused on community in many cases, really knowing your customer, they're offering events around their stores. They're offering, obviously, online things through Shopify and so on and so forth. In a way, I think about it in a very similar way for the creator economy too.
+
+We had to start very simple. It was based on a very simple model, where there were free ad supported platforms and paid platforms. All of that is not merging together. In addition to that, just monetizing the content in itself is probably becoming an auxiliary revenue source around them, 360, very similar again, to mom and pop shops, where we could do live events. You could be doing merchandising. You could build another business like Kylie Jenner or something on the side.
+
+David: What's cool is this is true at scale now, too. Taylor Swift monetizes through everything you're talking about, the same way a mom and pop coffee shop does who just doesn't scale.
+
+Ben: It's necessarily had to be because streaming, while at first, it looked risky, and then turned out to be—I don't think it's blowing smoke to say, you guys save the music industry—it is the thing that while the industry was in dramatic decline, ended up making it so that the music industry now generates more revenue than it ever has before with by far the largest thing being streaming.
+
+At the same time, if you're a Taylor Swift or you're any big artist, you're not making as much money streaming as you would have on CD sales in the CD sales heyday, so you have to figure out what the new business model looks like as a creator. You have to figure out what your unique constellation of revenue streams are because it's not just going to be Walmart or Target is going to cut me the check from selling CDs.
+
+Daniel: Yeah, the music industry is healthier than it's ever been before. Certainly, when you think about it from a singular artist point of view, there was a point in time where the majority of the revenue could be derived from recording music. The challenge to that, what I would say, is that the time in history where that was true was actually very, very short.
+
+David: It was the heyday of the CD era, right?
+
+Daniel: Yes.
+
+David: That wasn't true back in the radio era.
+
+Daniel: The question is, what's the analogy? Was it that that's the right model? Or was it actually that having multiple revenue models was always the answer? There happened to be a moment in time where recorded music was the prevalent revenue source. I don't know. I certainly don't say that to try to shy away from our role.
+
+My goal is, I think these people genuinely, whether you're a podcaster, whether you're musician, are insanely creative people. I love seeing people like yourself, David Senra, Taylor Swift, Joe Rogan, or whoever, that are really deep on whatever they're passionate about. They're able to get across the microphone and have lots of people that can resonate with them.
+
+David: That opens up so much more opportunities. One of the things we learned on the LVMH episode is that Rihanna became the first female recording artist billionaire because of Fenty Beauty. Imagine that in the CD era. That wouldn't have happened.
+
+Daniel: Yeah. That's the insane part too because that fame, in a way, doesn't necessarily, if you think about an Elvis Presley, what time did it take for Elvis Presley to get to a billion people that had heard him? I don't know, but I would venture to say, it probably took a decade at the very least, maybe two for him to do that. Sure, it was worth a lot, that billion then, but it was hard to scale that.
+
+And then you think about, how many artists today get to be heard by a billion people? Actually that number’s way higher, and it's way faster for you to do it. But because it's not scarce anymore, perhaps the societal value/monetary value, whatever you want to put it on, maybe isn't the same because it's not scarce. But as you said, if you're smart in how you do it, and this is the zeitgeist on how you execute it, it doesn't work when it's not authentic.
+
+You take the Rihanna example. It worked because she had a way to do it, which was authentic to her, but also authentic to her audience. If she would have tried to flog something else that she didn't care about, it probably wouldn't have worked. That's the unique thing when you realize and you think about it yourself as an enterprise, and Jay-Z...
+
+Ben: I'm a businessman.
+
+Daniel: Exactly.
+
+David: Which Jay-Z sold his champagne company at LVMH recently at 50% stake.
+
+Daniel: Yeah. Back to that, they're incredibly talented artists, and they're incredibly talented business people as well.
+
+Ben: As we start to wrap up here, there's one question that I've really wanted to ask you, which is, as I've studied Spotify over the last month-and-a-half preparing for this, it seems like you guys have been very intentional about the way that you grow and having a completely different strategy to add each next 100 million users. You guys are now over 500 million users. AI didn't know the scale of that before I started researching. It's pretty unbelievable.
+
+I thought that they just let compounding do its thing. But I think you guys, it's not well understood by the public or certainly wasn't by me, how you changed strategy in order to go get that next group of people each time. I'm curious, as you reflect back, what advice would you have for founders who are scaling to continually stack these S-curves on top of each other and do completely new different business activities while maintaining the cohesiveness of one platform?
+
+Daniel: I think it's a very astute observation that you're making. It's not been being able to just ride on this macro tailwind and just do that, but actually it's been many different things that's driven the success of Spotify. The way I often talk about it is, if you think about an exponential curve, if you really zoom in on that exponential curve, it actually is a lot of different linear curves stacked on top of each other that creates that exponential curve.
+
+This will sound like a little bit of a cliche, but what I really realized, perhaps even in just the last 2–3 years, or more, I knew that I could talk about it, but I hadn't truly internalized it, is to be intentional about the culture you're building. There are many different cultures that can be successful, but there are trade-offs with each cultural expression.
+
+Oftentimes today, what I see with younger entrepreneurs is that they're unintentional about what type of culture they are, so they flip-flop between them. As an example, many years ago, I was certainly enamored with Google, the 20% projects and all these different things. Those are cultural expressions. It's not the culture itself, but it's the cultural expressions.
+
+That's where the early innings of Spotify culture was like, I'm sure, almost every Silicon Valley company of that era. And then we all switched. Maybe it became Facebook for a while, and we all took that of moving fast, breaking things, and so on and so forth. Then you had an Amazon model, where on the one hand, it was incredibly long-term, but also maybe a little bit more bottom-up innovation than top-down. Then you see another cultural expression, like with Tesla, where it's an incredibly top-down, incredibly focused company, actually, for this type of scale that they're doing.
+
+My point is, I think the most important thing is to really, really think through and be really, really diligent about the culture you create. We certainly were victims of that as Spotify because we had taken all these different things.
+
+There were certainly things that were of Spotify, but we kept talking about all these other companies. We're like, we like this thing that Amazon is doing, so we should copy that. Oh, we like this thing that Google is doing, so we should copy that. Actually, what ended up happening was we were, at one point in time, almost like a little bit of a Frankenstein monster because we had some of the stuff from everyone, and we had some of the bad stuff from everyone too, instead of really leaning into that.
+
+Without really being intentional about it, we started iterating and improving on that culture. I often get this question. For instance, when we launch certain things, people are like, well, this thing wasn't very great. They have a mental model of what they expect of Spotify. The mental model may be, hey, your music app is so amazing. How come in 2019, your podcast just sucked? That must mean that podcasting won't work, having a separate app must be the right thing to do, et cetera.
+
+What people didn't realize is we're actually one of these companies that happily will release something out that's not great. It probably has the right strategy, but the execution isn't super crisp and perfect.
+
+Ben: You said this about audiobooks at Stream On. You got onstage to the public and said, we have audiobooks. I don't think it's great right now.
+
+Daniel: Yeah, and it's true. It's not great right now, but we will make it great. That's a different culture. That's one we're iterating on. But then the flip side of that would be something like AI DJ, where, actually, I think it is really high quality. Unlike a lot of other products that are AI where it's really wonky, we've made something that's actually working, and it's working on a very large scale, probably one of the most popular AI products out there now in terms of reach. We don't really tout it all that much, but it's huge in terms of moving our metrics in a pretty substantial way.
+
+Ben: Like Discover Weekly huge?
+
+Daniel: Yes. I think it'll even outdo Discover Weekly. It is really cool, but we had to be super intentional about it because we knew that it was an area where we had to think through the consequences of this because it will be highly scrutinized.
+
+As you can imagine, one of the benefits of choosing to do it for music and not for podcasting was obviously that it would have been horrible if we somehow summarized or said something based on a podcast that wasn't safe or culturally attuned to say. Yet with music, it's the primary candidate, plus it's the one where we have a huge audience listening in the background every day. They really want more context.
+
+My point being is, understanding when to do which and understanding that both of these cultures are perfectly fine, but just being very intentful about when you're choosing to do what, having the right mental models, and not becoming half-assed in everything, but actually becoming really good at what makes you you.
+
+I would say, the probably other thing that's been hugely important and that I wish more people talked about, is there are not many of us, but there are a few companies like Spotify, which, in a way, has been heavily influenced by Silicon Valley, but we are not Silicon Valley first. That notion of being on the side, watching, and iterating in a corner, Spotify is definitely not the overnight success. It's been asleep for many, many years.
+
+Ben: When you started the common wisdom was, anybody who's starting an online music thing, it will die. I think you sought advice from hundreds of people who all told you, don't do this, this category is toxic.
+
+Daniel: You're exactly right. But also, because we were doing this in Europe for the first few years, we started getting some real first learnings. I think this is really key because if you think about the ones we talked about as iconic companies—the Apples, the Amazons of the world—we all tend to forget a few things.
+
+One is that many of them are quite old at this point. They're 20-plus years old, so they've had time to refine their cultures and get that right. The other thing is they almost started in empty ecosystems. Amazon, sure, there was Microsoft, but they started an internet company in Seattle, where there was a software company that was really big, but it's not the same culture. They didn't start it in Silicon Valley.
+
+I like to believe that that culture became very distinct also by having to figure out its own things from first principles and from learning, rather than just being able to gather through osmosis. That might have been going slower in the beginning to then go faster, but I think has been hugely important for Spotify journey. I feel like we're just right now getting into our own of, what is our culture in a very unique way? That is probably the most exciting thing for me at the moment, still, being here at Spotify for 17 years.
+
+David: This is so cool. I love this as a final thought from you. Something that surprised us from the LVMH episode is all of those brands, which are the most iconic things both owned by LVMH, and ones that aren't like Hermes, they are all N of one. You can't copy them. They don't copy anybody else. They are their own thing. If you're going to be around for 400 years, that is by necessity the case. You're not taking from anybody else.
+
+Ben: I have to imagine, it's hard for you internally that it takes a decade or two to figure out what it is that makes you special, too. When you started, you were the company that figured out how to make it, so music felt like it was on your hard drive and played fast when it wasn't through a hybrid of peer-to-peer and client-server solutions. That's not at all what Spotify is.
+
+Daniel: Thank you for summarizing. It's so succinct, by the way.
+
+Ben: It has to be a very methodical, individual journey too to figure that out.
+
+David: I used to talk about culture, but I would honestly say it was probably 2–3 years ago, where it really clicked for me like, oh, that's what it actually means. It's not 20% work time, that's just an expression of a culture.
+
+The more interesting thing is the true culture of what makes Google Google or an Amazon Amazon, et cetera. I don't even know whether that's possible to change going a decade forward. Probably the most exciting thing for me to still contribute to and work on is the culture. I think that's what's driving at the moment pretty much every major decision we're making.
+
+Ben: Daniel, thank you so much.
+
+Daniel: Thank you guys for coming. I really appreciate it.
+
+David: Thank you for hosting us.
+
+Daniel: Of course.
+
+Ben: Listeners, thank you so much for tuning in for this conversation with Daniel. We'd love to hear what you think, of course, in the Slack at acquired.fm/slack, where we're always hanging out discussing episodes after we release them. But there's a new Spotify feature that we've been playing around with, too. David, what is it?
+
+David: Yeah, Spotify just launched this Stream On recently. There is a question on the page in the Spotify app for this episode that says, what did you think of this episode? You can reply and leave your thoughts right there.
+
+Ben: Awesome. Thank you so much, listeners. Check out in any podcast player, ACQ2, with awesome recent interviews and many more to come. I think we have the best interview lineup that we've ever had here on Acquired coming up. Subscribe to ACQ2 to get access to that. I think that's it. Listeners, thank you so much. Thanks to Spotify and Daniel. We'll see you next time.
+
+David: We'll see you next time.

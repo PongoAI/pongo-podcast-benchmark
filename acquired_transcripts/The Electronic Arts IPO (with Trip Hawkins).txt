@@ -1,0 +1,999 @@
+Ben: Welcome to season four, episode seven of Acquired, the podcast about technology acquisitions and IPOs. I’m Ben Gilbert.
+
+David: I’m David Rosenthal.
+
+Ben: And we are your hosts. With all these A+ IPOs going on, we wanted to do a throwback episode to another era, 1989, when an IPO meant something very different. We come to you today from sunny Santa Barbara, birthplace of Logan Green's transportation dream, if you listened to the Lyft episode. Of course, the home of Sonos, if you listened to that episode.
+
+Today, we sit here with Trip Hawkins, the founder of the most legendary gaming company in the world, Electronic Arts. Trip worked as an early employee at Apple computer as the director of strategy and marketing until 1982 before starting EA, taking it public, and later moving on to start other companies in the gaming space such as 3DO and Digital Chocolate. Trip is now a professor of practice in the Technology Management Program at the University of California, Santa Barbara. We are incredibly lucky to have him here with us today. Welcome, Trip.
+
+Trip: Thank you. I’m delighted to be here.
+
+Ben: Yeah, it's great to have you.
+
+For anyone who's new to the show, here's how it works. We walk through the history and facts of a company from founding all the way through an acquisition or IPO. Then we analyze and grade the transaction where we issue judgment on if that was a good idea or not. The show is really one of storytelling followed by one of judgment.
+
+If you are involved in startups and you want to dig in with us on company building topics rather than just the exit, we've got a second show for you. You can become an acquired-limited partner by clicking the link in the show notes or going to glow.fm/acquired and get access to these limited partner episodes featuring interviews with expert operators, investors, and of course, David and I diving deeper on topics like finding product market fit, term sheets, and how venture firms really work.
+
+David: That's pretty cool. We started this as an experiment six months ago. It's like a real show now. We're just so pumped about how many guys are listening and getting value out of it.
+
+Ben: It's been super fun. Lastly, before we dive in, I want to thank the sponsors of all the season four, Perkins Coie—counsel to great companies. We have with us today, Allison Handy, a partner in the corporate securities group and very conveniently, a fan of the show. Allison, we hear about a lot of investment bankers on the show as they prepare a company for IPO. What is counsel's role in getting IPO ready?
+
+Allison: Thanks. I'm really excited that you've got me on here today. Outside counsel's role includes both getting the company ready to be a public reporting company and counseling in the IPO process. Council works first, with the company on preparing to satisfy securities loss and stock exchange listing requirements. Second, council will help the company in responding to investment bank legal due diligence requests, including doing their own diligence so that the council can provide legal opinions to the investment banks. Third, council works with the company and the banks to draft some parts of the S1 like the description of the business, the strategy, risk factors, MD&A. But council also takes the lead on some of the other less exciting disclosures like exec comp and governance matters.
+
+Ben: Great. Thanks, Allison. If you want to learn more about Perkins Coie or reach out to Allison specifically, you can click the link on the show notes or in Slack. Alright, David. It is time.
+
+David: It's time. I'm so excited to dive in with Trip here. Per usual, we like to start wayback at the beginning on this show. You grew up here in Southern California in the 1970s.
+
+Trip: That's right.
+
+David: What did your family do? What brought them to California?
+
+Trip: I have a family who came here about 100 years ago.
+
+David: Oh, wow.
+
+Ben: You didn't start early enough, David.
+
+Trip: They were back East, and a few of them were obviously entrepreneurs. I think that's how pretty much everybody in California got here is, they were willing to leave some other place and head to one of the most remote parts of the planet.
+
+David: Growing up, you loved sports. You were jock, but you also loved games. Games meant something very different back then. There were no video games. Games were, pen and paper, they were dungeons and dragons, they were sports simulations. Those don't seem to me, sitting here, like jocks back then played dungeons and dragons. How did you meld both of those, and come to love them?
+
+Trip: It was the golden age of television. I found that what I enjoyed the most on television was watching football and baseball. I could tell that something really interesting was going on from a strategy standpoint. I can't say that at the time, I realized that I was a strategic thinker. I'm just able to look back on and realize, "Yeah, that's why that spoke to me." I'm seeing these things on television because that's the medium that's available or in some cases, just even listening on the radio because everybody had a radio. Then, of course, I decided, "Hey, I'm going to play these things in real life." Becoming a jock in real life, and I'm watching on a TV, and I just had this craving for more interaction with it.
+
+I found that back in the 1960s, some game designers had invented these cardboard dice games. A lot of people remember the one, it was called All-Star baseball, wherein [...] pieces of paper. You'd have one for Babe Ruth, and you'd have another one for Ty Cobb. If it's Babe Ruth, there was a big pie slice for him to hit a home run whereas Ty Cobb had a much bigger pie slice for hitting a single. You would put the thing on a spinner, and you'd hit the spinner with your finger.
+
+David: I remember this. I had one of these growing up in the ‘80s too.
+
+Trip: Yeah. A lot of people remember that one. They don't remember my favorite one, which is called Strat-O-Matic. Again, it was a game invented in the '60s. You roll dice, and there are all these player cards, and you would look up the result. Heck, I was about 10 when I basically, on my own, figured out Bayesian probability theory from studying the dice. I realized, "Why does this guy have this here, and the other guy has it there?" I realized, "Oh my god, there are more ways to roll the 7 than a 12. How many more ways are there? Why is that? Which guy do I want?" If I'm going to play my friend, and I want to win, I better figure out how this really works.
+
+Again, I just kind of discovered that I found math and statistics fascinating if I can apply it to something strategic where I was competing—I'm a very competitive guy. Ideally, as a kid, you're tuning in to who you are. Part of you are gifts from your ancestors. Hopefully, you can discover what abilities you're already born with. You can figure out what's going on in your environment that really speaks to you and decide then, "What are you passionate about doing about it?" I had the good fortune to have those things happen.
+
+David: On the environment front, was it your senior year in high school you were first exposed to computers?
+
+Trip: Actually, earlier in high school, I think I was maybe a sophomore, I was trying to get my friends to play these games. A few of the nerdiest friends loved the games too. We all loved it, we all kind of saw what the value was, and a whole lot more friends, kids, they would drift back to watching televisions. It was too much work.
+
+David: Too much work, too much overhead.
+
+Trip: Yes. Things like DND are famously geeky in that way. It's just not everybody's cup of tea. I was just thinking about it, realizing, "Man, this is a really special experience to be this mentally engaged." But, not everybody can relate to it. It's just too much work to operate the thing. That's when, as soon as I heard about computers, and I could kind of see it with my own eyes, "This is how you do it. We're going to basically, put all the administrative operating stuff in a box. I'm going to put pretty pictures on the screen like a television." What I didn't realize, at that time is, I was seeing something that was going to be true 40 years later.
+
+If you'd told me, "You know, Trip, that's going to take 40 years." I'll go, "Oh, nevermind." But you don't know that, so next thing you know, you spent 40 years working at it. By the way, I'd just have to say I didn't know I had this accurate forecast about something that would be...
+
+David: You were in high school, right?
+
+Trip: I didn't know it was going to turn out to be a $100 billion industry. I just thought it was a really cool thing that I cared about, and then I want to go help make happen. I have no idea what's going to happen 40 years from now. I don't know about you.
+
+David: We're thinking about it.
+
+Ben: We overly speculate, that's for sure.
+
+David: This is all swirling around here in Southern California. You go to college at Harvard. You were there at the same time as Bill Gates, and Steve Ballmer, did you interact with them at all?
+
+Trip: No. We ended up using some of the same computer labs, but I only knew that later. I think it's entirely possible that Bill and I would have been in the Aiken Computation Center at the same time without having ever actually met. Honestly, those of us who were really serious about it, we would go there at night because it uses timeshare systems. You didn't want to compete with all the students doing their homework during the day. You go at night. There were basically, nerds that you could smell from 10 feet away. There were guys sleeping under the tables. I mean, it was just chaos, but if you were really into it, you were just thrilled to be there on a machine at night when you had more speed.
+
+Ben: You were also doing something that Bill Gates was not doing. That was playing for Harvard, playing football. Talk about how on earth you were balancing being a collegian athlete and being this person that's staying up all night by the computer lab? One of the only people at this time that were dedicated to the craft of learning and mastering the computer.
+
+Trip: Yeah. That was a tough balancing act. I lettered in football as a freshman. Then, I realized, "Wow, this is so time-consuming that I can't do everything I'm doing." I would've loved to have done it all. In fact, in hindsight, if I can go back and do it differently, I probably would've loved to have played varsity football and done that longer. What I found was that they actually had a club football program. No practices, really. It was tackle football, and you will play with different dormitory groups. That was a hella lot of fun when you're doing that. We went undefeated and unscored on. We only played six games. It was really hard to have an elaborate offensive playbook because nobody is spending a lot of time practicing. I was the safety on that team. We never allowed anyone to score. I was the last line of defense. That was for me, probably the highlight of my football life.
+
+David: That's amazing. Was it at this time or was it at Harvard where you realized you wanted to start a company and started laying in motion all the plans?
+
+Trip: I’d actually already done it. I started working on it. I got some help from my best friend, who by the way, ended up becoming a football coach, so we're really into football. You can think of that in today's terminology that would be about prototyping and building a minimum viable product—I did that. Then I thought, "Hey, why don't I actually market this?" My dad was generous enough to loan me $5000. I went and sourced all of the different parts like silkscreen, gameboard, paper parts, and things that you have to have perforations on it so you could punch them out, dice. Had to figure out, "Who am I going to buy dice from?"
+
+Ben: You're building a full tabletop game of your own?
+
+Trip: Yeah, so that all got put together and the customers loved it. I got incredibly positive feedback from customers. I have no idea how to run a company. I didn't have enough money to do any marketing. Obviously, it didn't get very far, so I lost every penny.
+
+Ben: This is during undergrad?
+
+Trip: I'm in high school, basically.
+
+Ben: High school.
+
+Trip: I'm basically learning two things. One, "Wow. Ouch, man. It really hurts." When you have this baby, this thing you've created, it's your baby.
+
+Ben: An extension of yourself.
+
+Trip: And it has been rejected by the business world, and you can't keep going with it. That feeling of failure and disappointment that that dream has died creatively. It's a good experience to go through with that.
+
+The second thing I learned was, "Man, this is so much fun, I've got to do this again, this is so amazing, so stimulating. Maybe I want to learn some more before I do it again, so I have a chance to have at a better outcome." This is again in the 1970s where I'm actively thinking about how computers can come into it, and it wasn't too long after that, it was in 1975, I'm in a summer job in Santa Monica.
+
+David: You went to GSB, to Stanford Business School right after Harvard, right?
+
+Trip: That comes a little bit later.
+
+David: Oh, okay.
+
+Trip: I'm still in college. This is when a colleague comes back and tells me, "Well, I was just in a retail store where you can rent computer terminals, and take them home. You can have them connect through a modem through your mainframe. They only charge you $10 an hour, and you can basically do computer-from-home." I said, "Wow, that's incredible. It's happening. It's finally happening." And then he said, "Oh shoot, Intel just announced the invention of the first microprocessor chip that can combine all these things on a single chip." I think, "Yeah, dang. That's going to get into homes," this is in the summer of 1975, it turns out that is the world's first computer retail store, it's called The Computer Store run by this guy Dick Heiser. He became an Apple dealer later on.
+
+Literally, my colleague walks away. I immediately start sketching it out, saying, "Okay. How long is it going to take for the hardware cost to come down, for the number of stores to grow, and for the number of machines and homes to be big enough that you can make some money selling some games?" That's when I realize that I could probably do that by 1982, seven years later, and that is exactly what I did.
+
+Ben: You bided your time a little bit until that listeners might expect, "Okay, you went and started Electronic Arts, but you did something else in the interim, and that was Apple computer. That was one of the very first employees at Apple computer. How did that happen?
+
+David: Can you tell us the story of how you got the job and the phonecall you got from Steve Jobs?
+
+Trip: Since you guys want to talk about the IPO of Electronic Arts, the company oddly enough, it didn't really even have all that much value until two years after the IPO. If you look at that time frame, creating that value was a 20-year process. Of course, a lot of entrepreneurs think, "Oh, yeah, look at this company. It's an overnight success." It turns out, well, often it's really not even remotely.
+
+Pretty much, there was about a decade before Electronic Arts was founded where I'm planning the whole thing. Then took another decade of actually running the business before it really took off and had a lot of value.
+
+Ben: Long game were in here.
+
+Trip: It really is. It really is a long game. By the way, I thought about this recently when Google announced Stadia, which is their play on the idea of cloud-streaming games. My initial thought was, "They don't have the game catalog, and they're not going to get it because all the guys that have the game catalogs, two of which Sony and Microsoft, had now joined forces."
+
+Ben: And they have no first party titles.
+
+Trip: Right. How can they fix that problem? I realized, "Wait a minute. EA didn't have that in the beginning. Apple didn't have that in the beginning." If you’re in the long game, then you're saying, "Shoot! Nobody knows what games are going to be popular 10 years from now. Nobody even knows where the technology is going to be that the games are going to run. How do we hang around this long enough?”
+
+Frankly, if Google thinks, "Yeah, we just want to be the leader 10 years from now," which young, super talented, data scientist, machine-learning, AI experts are young indie developers now that are going to grow in their careers to the point where five or ten years from now, they're going to make a hit that could be the next League of Legends, or the next Call of Duty, the next Fortnite?" If you're willing to plan ahead like that, most of us generally, are way too impatient for that. We want it to happen now. Of course, Google could maybe even acquire Electronic Arts, and then they could start to have the back catalog. That's going to be a very interesting space to watch.
+
+But getting back to our story, you have this thing unfolding over a 20-year period, and I realized, "Man, I've got to know a lot more about how to run a business, and I also need to go help somebody sell computer systems into homes. How am I going to do that?" I'm not really an engineer, I don't even understand how electricity works, but I love software, so I've always been around software, software runs on hardware, and I was always good at talking to other engineers and understanding the system on how it worked. I thought, "I'm not going to have credibility in Silicon Valley by being an electrical engineer. I'm going to have to build my credibility some other way."
+
+This is something that a lot of people can still do today. You don't have to be the expert on the tech. You have to be able to relate to those people. You have to be able to learn their dialect. You have to learn when they're bullshitting you, you have to go call them on their stuff, and then you have to command their respect and have credibility with that because you have the expertise about something they care about, in my case, the pathway in was being more knowledgeable up with the customer in the applications. I thought, "Okay, how do I get that going?"
+
+Again, there's a lot of good fortune in a lot of these stories. When I first got to the Bay Area, I was finishing school at Stanford, and it turns out, I'm going right by the headquarters of Fairchild Semiconductor. They had actually just come out with one of the first consoles. It was one of the very first consoles, again, this is the mid-‘70s, that [...] the game card cartridges into.
+
+Ben: I never knew they did that.
+
+Trip: Yeah, it was called Channel F.
+
+David: Where they're competing with Atari?
+
+Trip: In effect, it was such a new industry that you were really just competing with yourself, honestly. But all the semiconductor companies in the ‘70s, they're trying to figure out how to drive demand for their chips so they can get more volume. More of them thought, "Let's have a consumer division. We'll make watches. We'll make calculators." Some of them thought, "Let's make arcade-type simple consoles like pawn games." A lot of them made pawn games. Only a few them just said, "Hey, how about a cartridge system where you can change the game?"
+
+Anyway, Fairchild is one of them. It was pretty clueless. They abandoned it before too long. But while they're doing it, I dropped into their lobby, and I said, "I'd like to talk with somebody in marketing." And they go, "What about it?" "Well, I'm a Stanford student. I would like to offer you a free market research project." Free is a fabulous word, it's the most powerful word in the history of marketing, and it opens a lot of doors. This junior marketing guy comes out and says, "What do you want?" I said, "Well, here's the deal, if you just give me the addresses of a couple of hundred customers, I'll design a questionnaire and work with you and making sure your questions get answers. We'll basically try to understand more about who your customers are and what they want." Of course, secretly, I'm thinking, "Do they prefer football or baseball? Is there going to be a [...] because that's what I want to make." He says, "Okay, sure." I continue my drive to Stanford, and I said, "Now, I'm going to get course credit for this." I didn't get paid, but I was able to build it into my curriculum that way.
+
+Then there I am in the library at Stanford not too long after that. I'm in the copier room. This guy just ahead of me on the copier, he pulls out this report, and I see video games on it. He puts it on the copier. He’s making a copy of a couple of pages from this thing. I said, "What is that?" He says, "This is a study I wrote last summer for this market research firm about this simple little pawn machines that the semiconductor companies have been making." He'd done a marketing analysis of it. I go, "Oh, okay." I basically followed the guy as he went and returned this report to the shelf in the library. As soon as he left, I took it off the shelf and read it cover to cover. I realized, "Dang, this is cool. I could do a report like this about personal computers." Nobody had done a report about personal computers. They were too new.
+
+Ben: I've just been thinking about that statement.
+
+David: I know. This would have been like, 1977? 1978?
+
+Trip: This was 1976 probably. It was either fall of ‘76 or early ‘77. Okay. I need a summer job between the two years of business school, and I go talk to that same market research firm, they’re down in San Jose. They were in the habit of hiring MBAs and having them spend the summer writing a study. I said, "I'd like to write a study about personal computers." The head of that firm says to me, "What is a personal computer?"
+
+David: This is in San Jose, the heart of Silicon Valley.
+
+Trip: Yeah. It's a research firm. I explained it to him. He goes, "Yeah, we do business with all these big manufacturers and technology companies. They don't care about that. We have no demand for that."
+
+David: Amazing.
+
+Trip: I'm kind of doing an eyeroll, "Boy, are you out of it?" Then, he said, "But you know what? We do need to get a report done on computer printers?" There's the kind of printers that work with mainframe computers and so on. "I'll tell you what, why don't you do that for us this summer and then if that goes well, we'll talk about this other thing later." That went all really well. By the fall of 1977, he's beginning to hear about it because by then the first west coast computer fair had happened in Spring 1977. That's where the Apple 2 made its debut. I was there.
+
+David: Did you meet Steve and Woz there?
+
+Trip: They were probably there. I didn't meet them. I remember seeing the Apple 2 and thinking, "Wow."
+
+Ben: Did that feel in the moment like, "Oh my god, I'm a part of the world changing right now." Could you feel that it was...?
+
+Trip: You could totally feel that, but the other thing that really jumped out of me was recognizing, "It's that one." It's like, I know all these companies, I look at all their products, the Apple 2 looks like it's something from a sci-fi movie that's going to be happening in 20 years. Everything else in the entire convention hall looks like it's part of the past, like a bunch of buggy whips and carriages before the cars were invented. I just had that feeling.
+
+David: It assume that you're going to get into this but the home computer market at this time, was dominated by Radio Shack.
+
+Trip: Right, the TRS-80 also known as the Trash 80. It was a very convoluted system, among other things. It didn't even have color. In fact, it didn't have a bitmap graphics either. It was a really clunky thing. But it was cheap, RadioShack has thousands of stores, and so they were doing a lot of volumes.
+
+Anyways, they allowed me to do the study. I got entrée to all these companies, that included Apple. I went down a visit with one of the first handfuls of office workers there. The most amusing part of this is, it's really a handful of people there at that time, this was probably late ‘77 or maybe early ‘78. I said, "Are you guys doing any software because I'm a software guy. What are you doing in software?" "Yeah, we're doing software." I said, "Cool. Can I see it?" He said, "Sure." We walk around the corner, and their entire software effort is one guy. Pretty sure this was Randy Wigginton, he was one of the very first engineers. He was working on a Star Wars ripoff where the company didn't have a Star Wars license, but the first Star Wars movie had come out in the summer of ‘77.
+
+David: Wow. It's amazing how all these comes together.
+
+Trip: They thought, “Hey, let's do something...” because we had bitmap graphics and, "We can do something where you're like Luke, and you’re trying to blow up the Death Star, and we're going to do that in really simple graphics."
+
+Ben: Unbelievable that Steve Jobs would later buy Pixar from George Lucas and yet, Apple at this point, didn't have a Star Wars license.
+
+Trip: In fact, I remember after I started Apple, we went to CES, and we're showing that game. This guy comes up and hands me a business card and says, "You're going to have to stop doing that." Unsure if he's from Fox. "You guys can't have a Star Wars game without us having us license it to you. You got to pay for that."
+
+Ben: Like, “Oh, it's a different shaped trench.”
+
+Trip: This is like the cowboy period where you’re not asking for permission, you’re just doing stuff until they stop you.
+
+Ben: Right. Wow.
+
+Trip: So anyway, I haven’t met the leaders of Apple yet. I go back. I’m finishing school, and the study gets finished. I’m doing a little bit of a tour to meet with clients, and talk about it. I produced a one-page flyer. I mailed it out to everybody that I knew and everybody that had been interviewed. Then I’m just at home one day, not too long after that when the phone rings. Then I pick it up, and there’s this guy yelling at me, and saying, “Why the hell are you calling Radio Shack out of the market share leader?”
+
+David: This is incredible.
+
+Trip: And it turns out it’s Steve Jobs. He’s seen this flyer that says, "Radio Shack is a market share leader." He’s really pissed off about it, and I knew why. Because they were running an ad campaign in the Hobby Magazine saying that Apple was the world’s best-selling personal computer, and it wasn’t the truth.
+
+Ben: I know that.
+
+David: Which, of course, was total trash.
+
+Ben: Yeah, exactly.
+
+Trip: Again, this is the cowboy period. The Apple 2 was frankly, a much more legitimate personal computer than the TRS-80 but it just wasn’t accurate for them to say that, and yeah, he thought, “Who is this dude that’s outing us and making us look bad? Making us look like liars.”
+
+Ben: So, he called you up to berate you. But you turn the tables and then...
+
+Trip: Here’s the other thing about how intimate Silicon Valley is that he had to know somebody that knew my home number. So, we knew somebody mutually.
+
+Ben: Did you trace back how that ended up?
+
+Trip: Oh, yeah, but at the time, I didn’t understand a word. He and I are having this conversation, of course, I’m having to hold the phone handset about a foot away from my ear because he’s yelling so loud.
+
+I managed to tell him, “Yeah, the study is finished.” He wants to argue with me, naturally, that's what he does. I said, “I’d be happy to bring this study and show it to you.” This is a study that in today’s dollars would’ve cost about $2500. There's no way Apple can afford it. I know that being able to come in and show it to them, "Look at this. You're getting $2500 of free value."
+
+David: Steve's probably very pleased with himself that his one phone call yielded this.
+
+Trip: Oh, totally. Of course, he's arguing with what I'm saying about the company. I'm saying, “Well, I'll let you read what I said about the company. I think you’d find it very flattering. I think you guys are great.” “Okay.” Then I said, “Oh, by the way, I'm actually looking for a job in the industry." Alright. I go down there, and they offered me a job. It's all based on this idea that I know something about the market. I know something about customers. I'm just a kid.
+
+David: Did Steve offer you a job on the spot when you came down there?
+
+Trip: Not on the spot. Here's what's not really known that well about Apple is that everybody thinks about the two Steves.
+
+Ben: Right.
+
+David: But there was Mike.
+
+Trip: There were really three equal Musketeer co-founders of the real corporation. It was kind of a hobby thing. Then Mike Markkula came in to be the adult supervision. He and the two Steves, each had about a third of the company, that kind of tells you who the real founders are.
+
+Ben: Mike cashed out pre IPO?
+
+Trip: Oh, no, no, no, no, no. Mike, actually hung in there longer than anybody. The thing about Mike is that Don Valentine had been told about the two Steves, and Don was already an elite leading venture guy in the 1970s.
+
+Ben: And he'd come from Fairchild.
+
+Trip: Yes, and Intel. He went met with the two Steves when they're in the garage, and he thought, “Yeah, this is way too early for us.” Then he told Markkula to talk to them.
+
+Ben: No way.
+
+Trip: He was kind of trying to turn Markkula into the angel that would help get it…
+
+David: Legitimized enough…
+
+Trip: A little more legitimized. Okay, so Mike goes and meets with them and they're pretty much unkempt, uncivilized people. Later Markkula would tell me that...
+
+Ben: These are the days when Steve wasn't showering, right?
+
+Trip: Literally my first week at Apple, I figured out what a hazardous person Steve was towards the end of that first week. I'm standing next to Mike and Steve's down at the other end of the hall going by, and I said to Mike, “Mike, we really need to do something about that.” I pointed at Steve, and I called him a "that" like he's a thing. Mike says, “Trip, look, come here.” He pulls me to his office, he closes the door and says, “Trip, you have no idea how much better he is now than a year ago. A year ago, he was like the wild man from Borneo. He was completely uncivilized. I had to teach him where you put the fork, and the knife, at a table setting. He's basically explaining almost as if he’s teaching…”
+
+David: Like a feral child.
+
+Trip: “...what a fork is and how you how you use a fork.” He was just asking me, “Trip, try to be patient.”
+
+David: Look at the progress.
+
+Trip: “This guy can do a lot for us.”
+
+David: Yeah, well.
+
+Trip: So those three guys got together...
+
+David: That’s amazing, by the way. I mean these were the days of the first thing investors and adult supervision did when they came into the company was fire these people, right? It's amazing that Mike saw...
+
+Trip: It’s still true today. That there's a very high turnover rate.
+
+David: ...saw that Steve had the potential to become the greatest of all time.
+
+Trip: Well, and made brilliant technical contributions in the first several years of the company. He recognized the talent in both of them. The other thing about Mike though is that he didn't want to run the company either. He doesn't really want to run it. Mike was smart about setting it up for himself in a good way where brought in Mike Scott or Scotty to be the CEO, and then, Mike was the chairman, so, he's the boss of everybody.
+
+Then his discipline is marketing, so he was in charge of marketing because that was fun for him. He's really the chairman. He's still the big boss. Occasionally, over the next, say 20 years, he would have to be CEO for a while during some interim phase, but he just always remained connected with the company. He was always in some critical role on the board. He kind of outlasted everybody if you look at his total tenure.
+
+Anyway, Mike was my first boss. Then Steve was my boss later, but I collaborate with Steve a lot. Initially, because on my second day at the company, Mike said, “Trip, you know something about business. Can you find a way for us to sell these businesses?” That hadn’t really happened yet.
+
+Ben: Because only consumers were buying the Apple 2 at this point.
+
+Trip: It was really just hobbyist.
+
+Ben:Were you able to sell it to businesses?
+
+Trip: We were. Of course, the invention of the spreadsheet helped a lot.
+
+Ben: Was it VisiCalc?
+
+Trip: Yeah, VisiCalc. I brought the first spreadsheet into Apple. That product line hung around for like 10 years.
+
+The Apple 2 turned out to be a huge business, and it lasted much longer than anyone else thought which is the good things that kept Apple alive because then Steve and I went out to scheme out the next generation. Honestly, we were way overly optimistic about how quickly that would be relevant. Ultimately, there was obviously a lot of failure there, we had the right ideas, but the market was going to need time to develop.
+
+David: This is primarily the Lisa?
+
+Trip: It started with Lisa, and then it going into the first Mac, which also didn't really do very much.
+
+Ben: Yeah, for how much the 1984 Macintosh is heralded today, it was not a bestselling product.
+
+David: It was not market success.
+
+Trip: Well, and ultimately, the financial struggles of Mac is what got Steve kicked out.
+
+Ben: Yeah.
+
+Trip: Anyway, it is very interesting because then you have a decade after he gets booted out where Apple keeps losing share, and it was Steve's fault, actually because he wanted it Microsoft apps for the Mac. He was really careless about the IP license that they needed to do Windows because he didn't take that threat seriously.
+
+Ben: Woah.
+
+Trip: The licensing deal just really came back to haunt them. By the time Apple realized, “Woah, this is really not fair because Windows is copying our stuff.” They're putting it in on all of these PCs that are manufactured by all these different companies and we can't fight with that and Apple's market share just kept getting smaller. Finally, when Apple decided this is wrong and unfair and we're going to have to sue Microsoft, Microsoft said, “Well, here's the license agreement you guys gave us.” Bill had just outsmarted Steve in the legal paperwork.
+
+Ben: Even though the Macintosh was the very first platform for Word, and then Excel, and then even later, in ‘89, PowerPoint, you didn't restrict us from putting in our other plan.
+
+David: That’s true, also.
+
+Trip:Again, it was all Steve thinking, “It's all about us, and we don't have to wait. They're not going to be able to do anything that's going to create a problem.” Oops. It's kind of funny because Steve saved Apple, but he destroyed it first.
+
+David: Oh my goodness.
+
+Trip: Then he goes back, and he cleans up his own mess in a pretty spectacular fashion.
+
+David: The Star Wars analogies are just too good.
+
+Ben: There’s just too many.
+
+David: Too many. While you're at Apple though, it's there that you realize that all of this software is a creative art. Was it at Apple that that's where you kind of started coming to this...
+
+Trip:Well, I think one of the things I had learned from some of the courses I had taken in business school, that you probably don't want to start a company. I mean, the term distinctive competence was already around in those days, so you better be good at something. I had latched onto the notion that you'd better have a big idea and I don't know how that seed first got planted.
+
+There are people like Jim Collins later, they would call it the BHAG, the big hairy audacious goal. I thought, yeah, there's got to be some angle. There's gotta be some unique dimension. In fact, my favorite way to think about it is what's called a hedgehog concept. It's not really about distinctive competence because you can have a lot of competent competitors, but the hedgehog has to compete with the fox. Fox is really big, it's really fast, it's smart, it's got big long teeth, and hedgehogs are not good at being a fox. What it can do is, roll up into a ball in a spiky fur and that's all it needs to do to defend itself from a fox. Fox will eventually get bored and leave it alone. So that's really what it's about. I'm thinking about that while I'm at Apple. I know 1982 is coming and I know that's gonna be the year.
+
+Ben: Wow, so that’s at the back of your head had the whole time.
+
+Trip: The whole time. I'm working with these incredibly creative software people like Bill Atkinson, Larry Tesler, and many others. It just finally occurred to me that these guys are not engineers, they're creative people, they're artists. In fact, their personalities, it's almost like they're divas.
+
+Ben: Well, like you said most of them either I didn't go to college or dropped out or they're like they're like Picasso's.
+
+Trip: Yeah, and boy, you've really got to think about how to manage them differently, organize them differently, give them their creative freedom and figure out, what are the support services you’ll need around to feel like that to enable them to really blossom and be their best selves.
+
+That's when I realized that, "You may think of this as engineering, but this is actually an art form." Hollywood is already turning other art forms into businesses. You get music, and film, and television, and even book publishing fits into this. I thought, “Oh, okay. There's a way to make a new company that really believes in this idea of a software artist and becomes a new kind of Hollywood around that new platform, that new medium.” I definitely saw it as an entirely new medium. Again, I don't think anybody saw that before I did. I mean, I was think about that pretty early on.
+
+David: As you're talking about this, and eventually, talking to Don Valentine, did people think you were crazy? Were they like, "Oh yeah, this is like you're on to something.”
+
+Trip:Oh, plenty of people thought I was crazy, like the head of economics at Harvard. I had a lot of people try to shut me down or tell me not to do it.
+
+David: You get this idea, it's 1982, the time has come, and you're seeing—you’re in the industry—PCs are coming into homes. What was the first step to Electronic Arts?
+
+Trip:Again, that maybe the last year at Apple, it was a difficult year.
+
+David: Apple was public, right?
+
+Trip: Yeah, and after the company had gone public in late 1980, suddenly, there's all this wealth.
+
+Ben: It’s a billion-dollar company at this point, right?
+
+Trip: In terms of revenue, it’s in that range and the market cap is even, I think, more than that. I’ve forgotten.
+
+David: This is 1980.
+
+Trip: Yeah, and again it was a super high growth from the whole time I was there. The year before I got there, the revenue was around $2 million. My first year it was, I think, $14 million, and then it was $60 million, and then it was $350 million. It was just crazy. When I started, there were only about 25 office workers, and then we had about 25 guys on an assembly line in the back assembling a couple of hundred of these hobby machines, and four years later, we have 4000 employees.
+
+David: Steve’s flying the pirate flag on the Mac office, right?
+
+Trip: The thing is, it just kind of got out of control after it went public. When there starts to be the wealth, it attracts everybody, everybody wants to work there. Then there’s a lot of politics, and bureaucracy, and different fiefdoms. The SEC went a little bit crazy after the IPO, and he ended up getting pushed out. There was just chaos, just various ways in which tension was growing. The company’s heading into that malaise that really hit the mid-80s when John Sculley and Steve had their big championship prize fight.
+
+David: An episode for another day.
+
+Ben: Indeed.
+
+Trip: So, those seeds were already getting planted. I was hanging around because I thought, “I’m working on products that haven’t come to market yet. I really should finish that process,” and yet I was not enjoying it. I didn’t love being there. But I really felt like, “Wow, this company has been so good to me. They’ve been so loyal to me. This has been such an insane, fabulous opportunity. I’ve learned so much here.”
+
+That’s actually maybe the best advice I would give anybody starting their career is don’t think the money at all. If necessary, work for free to get into the place you want to get into and then go to the place that isn’t just the place that you’re passionate about in terms of what they do and what their values are, but you basically want to go to the place where you’re going to learn the fastest.
+
+Man, for me, the learning curve of Apple was incredible. Just the sheer talent of a lot of the people, the brilliance, the leadership, and the creativity just to be around that, and then to have the thing organically growing that fast where you’re seeing the outcomes of thousands of decisions—the good, the bad, and the ugly—it was just amazing. I just really felt like there’s a debt of gratitude there that kept me there even one or two years longer than I otherwise might have stayed. But I could see it coming, and I’m thinking about it all the time.
+
+Then one day, a fellow employee dropped off a magazine and said, “Hey, there’s an article here that might be of interest to you,” and I found a different article, one-page article about Don Valentine. I said, “Yeah, Don Valentine. I know who that is.” Because basically, Sequoia had come in after Mike had gotten things going. Around the time that I joined the company, did a very small venture round, it raised $3 million, and Valentine led that deal. The price per share was $3 per share, but if you adjust for splits, it would probably be like a penny, maybe less. About a year later, we did another round at $42 a share, which again would still be pennies if you adjust for splits. That’s when Valentine sold out.
+
+As you can see, it went from $3 to $42. He didn’t do that bad. Then from $42 it went to $100,000. So he missed out on most of the value. I remember sitting with Steve in his office around the time of that funding round and talking about, “What is Valentine thinking? Why is he doing this?” We were just laughing about it because we both knew that $42 was actually still really cheap, where we are headed, it was going to be much much more than that and that he was going to miss the boat. Sure enough, he did miss the boat. But it left me with this curiosity about, “What did Valentine think we were doing wrong that made him want to jump off the bus?” I was always curious about that.
+
+Ben: Has he ever talked about that?
+
+Trip: I’m sure Don would never admit that he ever made any kind of mistake about any investment. Anyway, I had this curiosity about Don. I'm reading this article, and I’m already thinking about starting my own company. It says in the article that a guy had come in to pitch him and Don had intimidated the guy so badly that he passed out in his office. In that moment, I’m thinking, “I want Don Valentine as an investor. I want him on my board.” Because I want someone that tough, that’s willing and able to stand up to me. I’m going to need that.
+
+David: You knew at this point both from your own experience and then from Apple how hard this was, starting a company and going on this journey?
+
+Trip: Yeah and you also realize particularly, you hang around with someone like Steve, it was a real blessing for me to have a really great relationship with him, work closely with him for four years, and get to really know him personally. We all have blind spots, and you got to make sure in your team that there’s complementary people, so everybody sees everything when you add it all up.
+
+Steve was really victimized by his blind spots. It would prove out in my career that I would be victimized by my blind spots, and you're just trying to figure out, to the extent of your ability, at that time, "What kind of collaborative effort can we put together here?" Again, I’m just damn curious about this guy Don Valentine is that I had not actually met him. I contact him. I go over to his office. I’m thinking, “He’s an older guy, he’s traditional, he’s probably going to tell me that I really need to stay at Apple, and finish the products I’ve been working on, to get closure, and to not be a loser that would quit in the middle of my project.”
+
+That’s not all what he says. I was asking, “What do you think I should do?” He said, “You need to quit Apple as soon as possible,” and then literally he’s saying, “We’ve got extra space. Come over. You could start right here.” Because he’s thinking, “Yeah, I want to control this thing and have the inside track on it.” That was obviously a real breakthrough for me because I didn’t expect the hear that.
+
+David: Can you tell us the story of you guys went to lunch before the investment was closed and what he said to you?
+
+Trip: Yeah. This is classic Don Valentine. He takes me to his country club for lunch, and this is before he’s actually wired the money, so it hasn’t quite happened yet. He said, “I just want to make sure that we’re doing the right thing here to make the investment and I just want you to understand that in the boardroom, if I’m telling you what to do, and you always do what I say, then what the hell do I need with you?” He’s basically saying...
+
+David: He wants you to stand up to him.
+
+Trip: “You better be the dude that’s got the vision for this thing and you better know it…”
+
+David: I’m going to bring the fire and you’ve got to bring the fire right back.
+
+Trip: “...and you better have some conviction about what you’re doing because I’m investing in you.” He’s basically saying, “If I’m the smartest guy in the room, then what the hell am I investing in you for?”
+
+Ben: We all know what Electronic Arts is today. It’s the second biggest gaming company in the world, like $30 billion, huge company. What was the vision in that conversation with Don when you said, “I’m thinking about leaving Apple to do this thing.” What was this thing?
+
+Trip: It was to start a new kind of game publisher. If you go back and look at that original business plan—which I still have, it’s probably the only copy that exists—in that original business plan, it says that the company is a system. A lot of times, you think, “Oh, a company’s a product.” Or, “A company is a technology. A company is going to be a brand.” What I wrote in that plan was, “We’re going to build a system.”
+
+David: Modeled after Hollywood.
+
+Trip: Exactly. Basically, the system says, “Okay, we’re going to find these independent, brilliant, creative artists, and we’re going to offer them a whole scheme of services and support. We’re going to build development tools and create the equivalent of a digital art studio, and then we’re going to invent new contracts, new packaging, new marketing methods, and a new channel of distribution.” Because up to that point in time, nobody had sold software of any kind directly to retailers.
+
+Ben: Wow. It really was this notion of publisher-first studio or developer-second. It’s like, “We’re going to go and give the right structure and support to the right developers, but we ourselves who, our core competency is this big umbrella of distribution, services, infrastructure," I mean, it's much more so the way we think about a game publisher today.” They become much more bifurcated but...
+
+Trip: Yeah. Honestly, I believe it was the beginning of professional video game publishing. There were actually some pretty capable people that had gotten started as early as 1980. So, [...] like Broderbund. If you look at Doug Carlston and his brother, those guys did a fabulous job. They were really classy competitors to have.
+
+In fact, we used to regularly play softball against them, and it was a fantastic rivalry. I was always jealous of that company because they always had some big monster hit game that was like half the revenue. We never had that. For the first 10 years, we had all these singles, and they always had a home run with the bases loaded. Great guys, great company. They were a part of this early experimentation of moving something out of the hobby phase, and really making a real business. But pretty much before...
+
+David: But they didn’t know distribution, right?
+
+Trip: Well, here’s all the things that really were not true until Electronic Arts. One of it is nobody had given an advance to a developer at all. Nobody had a really good contract about how this is going to work. Nobody figured out the business model of exactly how do you compensate the developer. For example, what happens if I make a t-shirt about the game? What do I get for that? What happens if you want to make marketing posters? What happens if it gets turned into a movie later? Just thinking all of that through, and figuring out, “Okay. Well, we need to make money, and we want to make sure we make it. But what can we do for them?”
+
+David: Yeah. Of course, the recording industry had figured out all of this.
+
+Trip: Yes, that’s what I did is, I actually, went to Hollywood. I got to know some people and asked one of them, “Can you get me a copy of a recording contract?” I’m studying that. Of course, I’ve already done software contracts at Apple. I went to my lawyer that I had worked with at Apple and I said, “Look, we’re going to take these two things, and we’re going to make a whole new kind of contract.” I directed him on how to knit it together, what stuff it needed to cover. Nobody had really thought about that process until then.
+
+It’s the same thing about the distribution channel. We invented a new kind of packaging. Of course, the funny thing about that...
+
+Ben: Didn’t it look like records or something?
+
+Trip: They were like record albums, and this starts with me just being cheap because I’m looking at the baggies, the first generation of hobby packaging was just like a baggie with a disc in it. I said, “Well, that’s really not even professional, so we’re going to have to do something." I said, “Yeah, but it can’t be very expensive to make it.” I said, “Well, record albums are selling at retail for $9, so they can’t really be spending a lot of money on the album cover. We’ll just go to the guys that manufacture the record albums. We’ll get them to give us albums.”
+
+We went to the largest one of those in the world, and they clued us in on the fact, “Well, actually, it’s about the paper cost. We can give you your own custom design in a smaller size, and you'll save money because it will have less paper." That’s where we were able to design a folding album that had a sleeve where you can put the manual, and a sleeve where you put the disc, and then enough space for all the artwork about the artist and about the game.
+
+Really, we’re the first people that put the artist on the front, have a lot of information about the artist, and really make it say, “Hey, this is like showbiz.” Of course, again ironically, the media love the idea of the software artist and the idea that we’re pioneering this new medium and it’s a new creative art form. They wrote about that all the time. But the gamers didn’t care about it for quite a long time. In fact, they barely even knew who we were.
+
+I remember sitting on the plane next to this guy, and sometimes you’re conversing, what do you do and he found out I had a game company and he didn’t know the name. He didn’t know who Electronic Arts was. I said, “Well, have you ever heard of this game?” “Oh, I have that.” I kept naming games, and he kept saying he had them. I realized after all, “Oh, yeah. You know what? He’s a software pirate.”
+
+So, this guy is getting all these because everybody was pirating games. I realized, “Yeah, the reason he doesn’t know Electronic Arts is because he doesn’t even have the packaging.” Maybe he’s not noticing the logo when it pops up on the screen. It took forever for Electronic Arts to really have brand power and for any of the individual artists to really have brand notoriety themselves.
+
+Ben: Going back to the original financing and starting in Sequoia, you mentioned that Don wanted to start in Sequoia’s office so that he could control it and watch it. When you emailed us, and we've been going back-and-forth mentioned that you had competing offers, how did that whole thing go down and you ended up signing a deal to finance the company with $2 million. What are the terms end up being on that?
+
+Trip: I did accept Don’s offer. I basically, had funded the company, originally myself.
+
+Ben: That’s right. You put $200,000.
+
+Trip: Closer to $300,000. I was basically running it myself. I was the only person. I was running it out of my home office and started having a lot of these conversations and developing the business plan. It was as soon as I started making job offers to other people that I thought, "Well, I don’t want them working in my home, so I’ll take Don up on his offer." The next thing I know, we packed six people. They gave us one office, and we put a few people there.
+
+At that time, there were different venture firms that were making offers. Again, you talk about the intimacy, I’m at home one day, the phone rings, and it’s John Doerr. I didn’t know who John Doerr was and next thing I’ve got a Brook Byers and John Doerr wining and dining me and trying to figure out how to get on the deal.
+
+I already knew Ben Rosen. Ben Rosen was the leading semiconductor analyst at the time when he worked for Morgan Stanley, and he became one of the first VisiCalc spreadsheet users. He was clearly one of the hobbyist innovators that understood the desktop benefit and became one of the influencers that helped Apple get established. He must have been allowed in as an angel investor in one of the early rounds. He and LJ Sevin ended up starting a venture firm.
+
+I had a relation with Ben from my time at Apple, and it ended up that different firms were competing. Dave Marquardt from his firm, he couldn’t get into EA, so he invested in this other company called Microsoft. That worked out really well.
+
+Ben: Woah. Is it August Capital?
+
+Trip: That’s what it’s called now. It was a different name then. I forgot what the other company name was.
+
+Ben: And of course, for listeners, John Doerr from Kleiner Perkins Caufield & Byers, and of course you mentioned, Byers as well from?
+
+Trip: Yeah. I ended up allowing Sequoia to lead because I felt they deserved that. The other half of the deal was divided between Sevin, Rosen, and Kleiner. But Brooke and John from Kleiner, they really wanted more, and so we ended up doing another round six months later at a price four times higher. Again, this is a thing that was happening, that was different than what had happened before. Hardly anybody had raised any money.
+
+So, here’s Electronic Arts, we’re saying, “We’ve just raised more money than any game company ever.” I’ve got the best lawyers and the best PR firm. I’m just making sure we've got the best of everything because there is a belief that I had at that time that we could be number one. This was one of those things where I had to get my ass kicked later many times and realize, “You know? You don’t always have to be number one because it’s actually really hard." If you’re playing for number one, you’re probably going to have to take bigger risks. Sometimes it's okay to be in the top five or the top ten.
+
+Ben: How much of the company did you sell to raise that $2 million?
+
+Trip: I think it’s not that different than it is today. I think after those two rounds that EA did it, they probably owned close to half.
+
+David: And that was all the capital you raised as a private company, correct?
+
+Trip: Actually, many years later when we know we’re pre-IPO and we also know we’re going to the console business and we’re manufacturing our own cartridges and probably fending off a big lawsuit because we’re reverse engineering Sega Genesis, knowing all of that, it’s like, “Okay, let’s do a mezzanine round and then let’s do an IPO.” But yeah, pretty much the company was built on those first two rounds of capital. Even the IPO which only brought in $8 million, which was kind of shocking by today’s standards, that $8 million has been sitting in EA’s bank account ever since. They’ve never had to dip into it.
+
+David: Wow.
+
+Ben: It’s amazing.
+
+David: That is different today.
+
+Ben: David, I know you’re going to take us forward and we need to, one thing that I want to pull out of Trip is, does your business plan have the name of the company on it and what was the name of the company that you incorporated as?
+
+Trip: When I incorporated the company on May 27th, 1982, it was called Amazing Software. It’s funny because some people loved it and others hated it. After I hired some employees, there’s people hanging around the office, people were calling, and anybody answering the phone and say, “Amazing Software.” Some of them just, “No, this is not it. This is not the winning name.”
+
+It rather rapidly boiled down because, of course, I'm pushing for the idea that it's got to be about this idea of software as an art form and there's different words that can come into that. We pretty quickly had it boiled down to either electronic artists, and I had just read a book about the history of United Artists.
+
+Ben: Right, of course.
+
+Trip: United Artists, for me, for a couple of years already at that time, was a great source of inspiration because it was a similar kind of an analogy. What happened there is these four great Hollywood talents had disrupted the system by forming their own studio, and that’s what became the United Artists. That's why electronic artists were on that list.
+
+Steve Hayes, also known as Shays, he said, “Well, we're not the artists, they are.” It was like, “Oh, okay.” This is about two o'clock in the morning, everyone goes, “Oh, yeah. That's true. “Okay, Electronic Arts, then.”
+
+Ben: We, being the developers?
+
+Trip: Yes, we're serving the artists, but we’re Electronic Arts…
+
+Ben: You’re about the arts but you're not the artists.
+
+Trip: We’re their partnered company. Of course, that obviously changed over time. Eventually, we had our own internal studios, etc, but this is what a lot of people don't appreciate about names is that in the beginning, they're completely arbitrary. They don't actually have any meaning. You can get really personally attached to a name and think it really matters, but what really matters is how you go make that name mean something.
+
+Electronic Arts was that kind of a mash-up where, at a minimum, it helped us tell the story to the media and got the media engaged in helping us spread the word. Because at the start of a company, you can't do saturation bombing with advertising, you don't have the capital to do it. If you're pioneering something new, it's going to build slowly, word-of-mouth is going to be really important, your reputation based on the quality of what you're doing, and the creativity at it, that's what's going to have to drive it.
+
+Ben: We're going to dive in here and open up a chapter on E.A. Sports. There's one thing that happens before, that’s in 1983, you recruited Steve Wozniak to join the board of Electronic Arts. How did that go down? At that point, was then the board, you, Steve, and Don­? Did it stay that way through IPO? What was that relationship like?
+
+Trip: Well, actually, I founded the company 1982, and the venture funding happened in December of 1982. From May through December, I own the company, and I'm paying for everything, and then we didn't really have to have a board meeting until December. Now, there's venture investors, Brooke Byers is on the board from Kleiner Perkins, Don Valentine’s on the board—was actually—was on the board from the very beginning.
+
+Ben: Was he the independent board member?
+
+Trip: Yes. We actually then added a couple of other spectacular independent board members to the next year including my all-time favorite board member, Dick Asher.
+
+David: So, the next year, 1983, after you get the venture financing wrapped up one of, I don't believe it was your first title, but one of your first titles– this is where your other thread of sports re-enters the story, Dr. J. and Larry Bird, go one on one.
+
+Ben: Which David and I watched some YouTube videos of last night and it's still an awesome it still was incredible.
+
+David: Still awesome. Incredible.
+
+Trip: If you had a chance to actually play it, you'd even appreciate it more because the design was so simple and elegant that anybody could play it. In fact, I think it might even be the only time in history that retailers, when you're out on a sales call, even you can get the retailers to play it. Honestly, even like John Madden, John Madden has never played Madden football. He would get his sons to play it.
+
+We worked very heavily with his two sons, but most people are intimidated. You hand them a joystick, and they're thinking, “I'm going to screw up. It's going to be embarrassing. I don't want to humiliate myself so no, you do it.” I've been on so many sales calls with some many different kinds of customers where they're saying, “Oh, yeah. Just show it to me.” But with that one-on-one game, basically, if you press the button, the guy would shoot the ball, and it might go in. That's all you have to do. Then you would realize, “Oh, hey. Okay, I can do this.” Then you start to move the stick and realize, “Oh, I can actually run around. I can go get that rebound. I can make this other kind of shot. I can do this.” Pretty soon you're realizing, “I got this.”
+
+David: It’s so funny, last night, in preparation, we played a little bit of the latest NBA Live game, we couldn’t even figure out how to play basketball in it.
+
+Ben: In all fairness, you're playing on the iPad which I'm not sure is intended to be the real thing. Yeah, but it was a nightmare.
+
+Trip: This is an ongoing challenge, not just with games, with technology, in general, is that the people that make it understand it really well because they're the ones making it, and they underestimate the speed at which an average person can figure out what their intentions were, and everything is still too difficult.
+
+Ben: There's that great aphorism in the gaming industry that a truly great game is easy to play but almost impossible to master.
+
+David: It's Tetris.
+
+Ben: But it has this incredibly wide continuum of anybody can start playing but you can't just beat it right away.
+
+Trip: The way I always put that is, “Great games are simple, hot, and deep.” You need to be able to instantly get engaged. Then it's got to take full advantage of the powers of the medium to present itself, but then you've got to be able to keep going deeper. I often would use the analogy of the ocean. You go down to the beach, and there's people of all sizes and shapes and ages, and there's kids playing in the sand—they're little babies that can't get in the water yet, and then there's slightly older children that are playing at the ankle level. Then as you go further out, eventually get all the way out to the dudes that are scuba diving. There's just no limit to how far where they can go. That’s what you want to your game design to do. Everybody can use that water.
+
+David: So, this game comes out, I believe this was the first, certainly, athlete but celebrity endorsement of a video game period ever, right?
+
+Trip: Right. What was new about it was it’s really the birth of E.A. Sports even though we didn't call it E.A Sports at the time. It was the first time that any kind of celebrity had appeared in a video game doing either being themselves or being an actor even, so it was the first of its kind in that way.
+
+David: Back to the idea of records and the packaging and the distribution, I mean, this is just the next step in that process, in that breakthrough of making games mainstream.
+
+Trip: Of course. I really wanted to make games like football and baseball. We did a variety of things from the very beginning. We did a golf game really early that didn't have any licensing that was called World Tour Golf. We, fairly quickly, got to something involving driving, I don’t remember what the first one was. There were a lot of things that we did, but Dr. J and Larry Bird was really the start of E.A Sports. I wanted to do a team game, but with a byte technology, it's kind of limited. I thought, “Well, how about just two guys?”
+
+David: 4k memory.
+
+Trip: Yeah. Hey, Dr. J was a big hero of mine, and this is one of the ways you can learn about yourself is if you notice who your heroes are, they have values, and passions, and abilities that resonate with you because they're deep in you. I was a huge fan of Joe Namath, a huge fan of Dr. J. Those guys broke all the rules. They went to the rebel leagues. They got outrageously paid. They did crazy things with their hair. They were crazy pioneering the use of white shoes and football, and ABA with the multicolored basketball. Obviously, their style of play. It’s just super creative. These guys were the rebels with that pirate swagger. That's pretty much something you see, that's really common with good entrepreneurs. They've got that swagger.
+
+David: [...] example number one.
+
+Trip: Anyway, here I am. I met this guy, I worship, this guy and Dr. Jhappen to be one of the top one or two most popular athletes in the world at that time.
+
+Ben: You see a lot of yourself in his sort of...
+
+Trip: Yes. He’s just a hero to me. I'm just delighted by the concept of what I can do in a business deal with him. We were working with a lawyer that knew his agent, so we had a pathway in. I was able to present to Julius the idea that this is going to be something good for the world. This is a new medium, it's going to have all this educational value, and he had kids already. I was able to help him frame it as, “Your kids are going to grow up through this, and this is going to be a new thing.”
+
+One of the fabulous things about Julius is that he was already basically, an ambassador for basketball. He understood that this was a new medium that was going to allow basketball to happen in a new way that would, in fact, have educational value. By the way, John Madden was attracted to the same thing.
+
+David: It absolutely became true.
+
+Trip: Yeah, we knew that players and coaches are going to use the football game that we're making because...
+
+David: When I was playing football in high school, this would have been ‘90, ‘99 to 2003. My coach, his first year as a coach was my freshman year or my sophomore year, and he would assign, he was like, “Go on Madden, drop the plays. You create the plays on Madden that we're running in our playbook. Input the stats for all of us, who's also I think your stats are, and then go home and learn the plays.”
+
+Trip: Yeah, learn to read defenses.
+
+David: Yeah, it was amazing.
+
+Trip: Anyway, Julius agreed. He was paid $25,000 and got a 2.5% royalty. Then as soon as he was on, we offer Larry Bird the same contract that made it easy to get him on board, and Chris said, "What a perfect rivalry." I mean they were already banging heads, and both of them played on great championship caliber teams. It was a matter of making a design that worked well for what the platforms could do then.
+
+David: Way back to the beginning of the story, football is always your dream. What came next after that?
+
+Trip: The Dr. J game was pretty successful for us, and it made me think, “Yeah, this is really going to work.” I said, “Okay. Well, then, let's do football.” At that time, that’s what I cared about the most.
+
+Ben: Yeah, that's going to be quite validating because well, it seems obvious now that sports video games are, I mean, a huge and ridiculous market. At that time, it wasn't even clear that it could work because no one had really done it before. It had to be incredibly validating that you ship that title, literally ship that title, and people play it, and like it and you get good feedback. I mean, that had to be this like sigh of relief almost.
+
+Trip: You're noticing that there's an audience that wants a more authentic sports experience. Again, you're noticing that there's an audience that wants a more authentic sports experience, a more accurate simulation of the real thing. As compared to say, the other treatment that it was generally getting where it's like a form of amusement. Pong is a great game, it's a great form of amusement. You could say that it has something in common with tennis, but it's not a simulation of the game of tennis.
+
+Anyway, I didn't want to have some simple, action-arcade mechanic that allowed you to swing at a pitch, and hit a baseball or run it around as a football player and have it not be the real thing. Of course, with football, you got 22 guys running around the field. I didn't realize at that moment—and this is like 1984—this 16-bit technology, it's already coming, it turns out it was going to be a while, and in 8-bit, it wasn't really quite good enough now. We thought, "Okay, this will take a year." Of course, it took four.
+
+To make a really effective game, you're going to have to do it literally like a football play where the offense is at the bottom, the defense to the top and you're moving up the screen. Of course, you're going to want to try to present that with a little bit of a 3D view that's a little bit like it's behind the quarterback.
+
+Ben: Two incredible things about this. One, it's still the visual metaphor used to this day in the most popular gaming franchise or one of the most popular gaming franchises in the world and two, they literally fly a camera now on the field. That is that angle.
+
+David: That is that angle.
+
+Trip: That's actually my favorite thing about the evolution of sports games, the way the broadcasters and the game companies keep referencing each other and getting inspired by each other's idea, so they're sort of co-evolving.
+
+David: It was a year or two ago, in a game I wish I had written down who did it, a wide receiver ran parallel to the end zone to run out time on the clock which is a Madden move. This happened in an NFL game.
+
+Ben: Madden 2000. I did that all the time.
+
+David: Absolutely! For the first time, it happened in a real NFL game. It's amazing.
+
+Okay, this is 1984. The technology is not there yet. John Madden, obviously, will get into, but he was not your first choice for the football version, for the football celebrity endorser.
+
+Trip: At that point, I was thinking, “You know? Maybe we don't have to pay a royalty because there isn't any one athlete that can really represent football.” I could work with a coach, and that would actually help me fill in gaps in my own knowledge, but maybe we just pay a coach a consulting fee. We’re just going to make up our own brand and own the brand.
+
+I thought, "If we're going to have a brand name, and we're going to be paying a royalty, who's the biggest brand human being?" I instantly thought of Madden because look, the guy had already won a Super Bowl and proven to be a Hall of Fame caliber coach. He'd been a player also, and then he'd become a multiple Emmy award-winning broadcaster, and he was in the middle of what would be a very long career, that guy was always going to be on TV, he's the Ace Hardware Man, he's in the Miller Lite beer commercials breaking through barriers.
+
+David: I think public most listeners don't remember this, but his Hall of Fame coaching career was with the Raiders and Al Davis, the Just Win Baby era. He checked all the boxes and credibility.
+
+Trip: Yes. I thought, “Okay, well, let's just go to the top of the food chain and talk to them.” By this time, we had enough contact with enough agents, so it was easier to find out, “Okay, who do I talk to?” I had to fly to New York City to meet with his agent. She agreed that it was a good proposition and then she sold John on it, and not too long after that, I got turned over to a more junior agent who really became John's personal agent, this guy's Sandy Montag, who's worked with John for decades and we had signed the deal. At that point, “Okay, we have a signed agreement. We need to start actually doing the work.” That's when a couple of colleagues and I flew to Denver and got on the train.
+
+Ben: Because John, famously, doesn't fly.
+
+Trip: Yeah. He wasn't at the Madden Cruiser yet. He was still taking Amtrak. He eventually got tired of the limited train schedules, but we basically got on a train, and the train went West, and for two days all we did day and night was talk football.
+
+David: Wow. It's so amazing.
+
+Ben: John insisted on something that the technology, arguably, couldn't do yet and that was to put eleven players on the field because his strong feeling was that, “If we had to do a football game, we're going to do an authentic football game.” How did that sort of negotiation go and then how did you guys get to work on that requirement?
+
+Trip: Well, like the Dr. J game, I was the designer. To come in and then meet with John, I had already done a lot of work on a design. I had probably at least a 60-page design document already for an 11-on-11 football team, but we were worried about how it would work on an 8-bit machine. As a player, I was already familiar with skeleton, which is where you take the guards and the tackles off the field, don't worry about the trench warfare and all the blocking. In that kind of 7-on-7 frame, where you're still running the ball, you just don't have as many blockers and tacklers in the equation, and you've got all the pass patterns, and all the passing game stuff, and all the open field stuff.
+
+Ben: It's 80/20 football.
+
+Trip: Yeah. And to go into this two-day meeting with John, I had to prepare a list of questions. It was just page after page of questions. I think the question about, “Hey, what do you think about skeleton?” It was like question number five or something. I wanted to bring it up, so I just said, “This is just an idea.” It wasn't something I was committed to. It's just one of many things I had to ask him about.
+
+David: How violent was his reaction?
+
+Trip: Well, here's the thing about John. You have to understand if you're an NFL coach, there are 60 very large men, who could probably just grab your head and pop it like a grape, and some of them were on steroids, and so they're sometimes really angry.
+
+David: So, you have to control those people?
+
+Trip: How the heck do you actually command and control those kinds of people? What you find with John is, here’s a guy, who's a big guy—he was an offensive lineman—he's got all the dominant traits of a highly masculine human being, and that includes the fact that every third word out of his mouth is the F word. Yet he's an incredibly intelligent guy, and a brilliant strategic thinker, and a brilliant operational thinker. Like, if you were building a giant factory in China, he would be a great guy to go run that factory because he’s that kind of a mastermind thinker.
+
+Ben: Obviously, you approached his agent, the agent said it was going a bit like he became so involved, he could see that this was a project worth doing.
+
+Trip: Oh, totally. That's where I began to realize why he was so good at what he does. The guy is really smart and of course, a great strategic thinker. I'll give you a couple of examples in a moment. But it was very clear that he knew how to function well in football because of this combination of abilities that he had, and he was always very blunt, always very direct. The whole thing comes up about [...], and he just says, “Well, that's not football.” That's all he had to say. It's like, "Okay, next question." It’s funny that the media has blown it up into this big thing.
+
+Ben: Like I said, my research made this like seminal moment of a negotiation.
+
+Trip: It really wasn't because all of us wanted 11-on-11. He just said, “No, we all want the real thing." And we go, "Yeah, We all want the real thing," so we'll just suck it up and figure out a way to make it work. Ultimately, we did. We made that 8-bit Apple version. That was the 8-bit product they also got onto the IBM PC.
+
+David: That came out in 1988.
+
+Trip: Yes, came out in '88, and it won awards. The guys that reviewed that game said, "This is kind of unbelievable that this thing actually works at all.” People were really impressed like, “How did they manage to do this in an IBM machine?" But of course, it took forever.
+
+Ben: As you said, a lot of blood sweat and tears. Do you want to share the story of the nickname of Madden?
+
+Trip: Well, towards the end of that phase, the auditors—they were doing an annual audit of the company financials—they came to me and said, “Hey, I just want to make sure you know that the advance that you paid to Madden, it has no asset value because we've decided that you're never going to recoup it. In your financials, it's going to be written off as a complete waste of money. Basically, it's an expense. It has no asset value.” I'm going, “Uh-huh.” And I'm saying, "Why am I not hearing this from my CFO or some of the other executives?" That’s when I learned that none of them wanted to tell me, that's why the auditors were sent directly to tell me, that's when I learned that, "Yeah, Trip, they actually call this project, Trip's Folly." By the way, Walt Disney had that happen to him. Walt's Folly was the film Snow White.
+
+David: Oh, wow. Which, of course, started it all.
+
+Trip: Snow White was the first full length, full length animated film. Everybody thought, “You can't do that. It's got to be a short.” Walt says, “No, I don't think so.”
+
+Ben: Meanwhile, I think, as of 2013, Madden had done $4 billion in revenue as a franchise and has only continued to grow from there.
+
+Trip: That was a pretty good folly.
+
+David: I mean, even foreshadowing for a future episode, but Snow White had a very large impact on Airbnb. Yes, these things are sometimes worth pursuing.
+
+The game finally comes out for the Apple 2, like you said, it got ported to the IBM PC, but that wasn't the market, and that wasn't what made Madden and frankly, that wasn't what made E.A. It was in 1990, two years later, the game comes out for the Sega Genesis but there was, in our research, it seems like this was the pivotal moment for E.A. as a company. Can you tell us about how you go from PC game publisher to the console market, and then going from at IPO, I think the market cap was $60 million to then $2 billion a couple of years later?
+
+Trip: Yes. So, in the mid-80s, the whole industry is struggling to grow because the console market had imploded with the collapse of Atari, and that acquired a bad image and a bad reputation with the public.
+
+Ben: Was that because of intense competition? Why did Atari collapse?
+
+Trip: Well, they were heavily promoting something that had very limited capacity. It was, at some point, seemed like a hula hoop because it pretty much was and they didn't understand.
+
+Ben: Then the NES came out, what? Like ‘86? ‘87?
+
+Trip: Yeah. The NES had come out in Japan, and they brought it to America in the mid-80s. The problem there was that the guys making the personal computers didn't care that much about graphics and sound which mattered a great deal with games. Of course, that equipment was fairly expensive. Then, Nintendo comes in, and they're offering a pretty good multimedia platform for $100, and yet it's a very different business model where Nintendo controls everything. There's no creative freedom. The manufacturing cost is really high, but you have to make certain [...] ships. It's not the incredible efficiency of, say, an optical desk.
+
+David: Nintendo didn't view, maybe even their own first-parties, but even that, they didn't view game developers as artists.
+
+Trip: That's right. In fact, they do that about Miyamoto-san. They had their own brilliant people that have, in fact, always made great first-party games. They were happy to let some third-parties tag along as long as they got overpaid by them for permission. It never really worked out all that well for anybody to be a third-party Nintendo licensee. That's why pretty much forever, for Nintendo's platforms, it's always more about the first-party games that Nintendo's make. But I was really worried that there was a hardware problem between the business model of Nintendo and the lack of multimedia features, and so I'm already thinking about that.
+
+I was already a really big fan of the Motorola MC68000 processor because Steve and I had picked it for Apple's next-gen machines. Anyway, when we started EA, the first development systems we bought were SUN workstations with that processor. Then coin-op machines started using that processor, and we licensed games like Marble Madness from Atari Coin-Op, and we were able to port it to the Commodore Amiga, the Atari ST, which also came out in the mid-80s with that processor. We were very familiar with that processor.
+
+We find out that the SEGA which had been limited to only 1% market share of 8-bit consoles because Nintendo dominates it [...]. They were going to come to first, with the first 16-bit console using that processor with the sound chip, with the graphics chip and a price under $200. I thought “Well, we’ve built a tremendous arsenal of 16-bit technology, tools and game brands, and they just don’t line up with the right platform. This could be that platform.”
+
+David: This is the iPhone moment, right? For the market.
+
+Trip: And the funny thing about it is that Nintendo was so successful, they had 98% market share. All of the third-party game developers, they either refuse to do Nintendo because the co-structure and the risk, and the controls. They decide, “I don’t like that. I’m just not going to do it. I’ll stick with this little business I have on the IBM PC or whatever.” [...] either did that. Like the guys at Brøderbund.
+
+Ben: Yeah, yeah.
+
+Trip: Or they said, “Well if I’m going to be in the console markets, it’s going to have to be in Nintendo because they have all the market share.” There’s really one company that had a pretty good ride that way which is Acclaim, even they eventually went under because of all the constraints about the console. There are some other big Japanese games like Konami that had a pretty good run even if they faded. It’s just, being a third-party in that business model never really worked out that well. Anyway, so I’m looking for a different kind of answer, and I think “Okay, it could be this machine.” It’s coming out in the Fall of 1988 in Japan, and so, we buy one at retail or buy a few at retail, and bring it back to the United States.
+
+David: SEGA’s ambition was to recreate the Nintendo ecosystem for themselves right?
+
+Trip: Well, I didn’t know that yet.
+
+David: Oh, okay.
+
+Trip: We didn't know what they’re going to do because they had not had a third-party program for their 8-bit machine maybe they’re still going to do that, never just have their own games. We get the machine, and we’re thinking, “Well, yeah. This seems pretty badass. We really like what it can do.” Then I said, “Well, let’s reverse engineer it. Let’s make sure we do that legally correctly, so we don’t infringe copyright law, and then we’ll be able to make our own games for it. We don’t have to be a licensee.”
+
+Ben: Wow.
+
+Trip: And that’s when basically, I decided that it was time to take the company public. I said, “Yeah, you know, they’re going to sue us, and we’re going to probably be tied up in court for a while. We need some more ammo before we go into that battle.”
+
+David: What did your board think about this, by the way?
+
+Trip: It took awhile to get everybody behind it.
+
+David: Were they fired up ? Did they see the potential here too?
+
+Trip: You know, I think, there’s two layers to that. First of all, you got to get the management team in support of it. Once the management believes it’s a good adventure, then you go pitch the board. They’re going to look around the room and going, “Is everybody in on this?” Why would they support it if they can tell there’s factions in the management team that don’t believe it’s a good idea. Thankfully, everybody was in and off we went.
+
+I compare this to what Lawrence of Arabia did by attacking Aqaba from the rear, and this is a turning point, [...] won in the battle with the Turks. They did basically what everybody thought was impossible to do. By the way, that's still my favorite movie. I’ve actually been to several of the locations where Lawrence, the real Lawrence was. I’ve been to several locations where they made the movie, so I’m a complete fanatic about it.
+
+Ben: Wow, cool.
+
+Trip: But to reiterate, we embarked on that adventure and there was a really heroic work done by Jim Nichols and Steve Hayes, and David Maynard to go into a what’s called a ‘clean room’. You can’t even take anything in there with you. You go in there, and you’ve got the equipment, and you can’t bring...
+
+David: This is to reverse engineer the Genesis.
+
+Trip: You can’t bring tools in with you. You’re going to that room and that room is essentially sealed. Then you have to create tools from scratch and figure out a way to unravel the mystery of how that machine, that black box, how does it work, and it took a year.
+
+David: Wow.
+
+Trip: They’re off doing this for a year and they’re doing that heroically knowing that they won’t be able to make games for it. Here’s the cork of the copyright law is that they’re going to need to use a disassembler to take an existing game and look at the code of the game on a screen and, they’re violating the copyright law.
+
+David: They took the game down to assembly code?
+
+Trip: Well, you’re trying to understand, “What is this machine doing?” You’re going to need to look at images of what’s in memory.
+
+David: Yeah, wow.
+
+Trip: You are looking at something that’s being visually represented on the screen. A copy of what’s in memory is being shown on a screen, that is a copyright infringing act. However, in the context of the ‘clean room’ it’s covered under fair use, that if all you’re trying to do is figure out how does this black box works, that’s okay, but if you exploit that information to make a software for that machine, now it’s not a fair use anymore. Steve Hayes, David Maynard, Jim Nichols, these are guys that had made games for Electronic Arts, they know they’re not going to be the ones making games for Sega Genesis.
+
+David: This is like a Star Wars movie.
+
+Ben: Yeah.
+
+Trip: Oh, these guys are the greatest heroes in the history of Electronic Arts. Jim Nitchals, always a serious alcoholic, dead at a very young age.
+
+David: Wow.
+
+Trip: I’ll just treasure this guy forever because he was the one who stuck with that and did the heavy lifting, in the end, that figured it out, and made that sacrifice. It’s still, to this day, that makes me want to start crying.
+
+David: Oh, my goodness.
+
+Trip: Anyway, it was going on for months. We knew that the product was going to come to the US in the Fall of 1989. We’re thinking, “Hey, we’re beginning to figure this thing out and we don’t see a reason why can’t we make our own games for it.” Because it’s not like Nintendo. Nintendo had a little security chip that...
+
+Ben: Yeah, they’ve always been good at DRM.
+
+Trip: There’s a security chip on the cartridge, and it’s handshaking with a security chip that’s in the console saying, “Are you a legitimate Nintendo cartridge? Yes or No?” In order for you to do that, you would have to infringe a patent. We actually did work reverse engineering with Nintendo, but then we realize because of the patent, we’ll get our ass kicked, so let’s not do that. As a result, EA did make a few Nintendo games but we were not able to really put enough attention on Nintendo. There wasn’t a way to make enough money. Meanwhile, we’re kind of all in on the SEGA Genesis. Nintendo had released that console, that family comp in Japan with no security chip. It was the American version...
+
+David: The NES.
+
+Trip: ...that introduced that chip. We were worried, “But what if SEGA does the same thing?” Well, they didn’t.
+
+David: Wow.
+
+Trip: So, okay, the coast is clear...
+
+Ben: Their entire mechanism, just to really make sure I have it, to make sure that their games were the only ones that would run on the platform was to just not to publish any documentation on how anyone could publish for the platform.
+
+Trip: That’s right.
+
+Ben: But since you guys...
+
+Trip: It’s black box and you will only get the information if you sign their license agreement. Apple does that to this day, right?
+
+Ben: Yeah.
+
+Trip: Although the Supreme Court has recently had a few things to say about that.
+
+Ben: And also there’s iPhone jailbreakers, so famously Craig Hockenberry with Twitterrific for the first iPhone, before there was an App Store, figured out, reverse engineered, similar to you guys, what the API structure was to write code for it like you guys in figuring out and reverse engineering the Black Box, were able to write games for it, and then they would just work.
+
+Trip. We got it all figured out, and then we started getting development team started making games.
+
+Ben: Wow.
+
+Trip: That was starting in the Fall of ‘89, and that’s when we went public, and we’re ready for the war which is going to start the next year when we first [...].
+
+Ben: You’ve got fresh $8 million in your pocket.
+
+Trip: Here we go, and then by the Spring of 1990, we got games ready to come to market and this is where some of the first games like Budokan and Populous, and by this time by the way I was talking to third-game party publishers where we handled their distribution and competitors. I’m going around talking to a lot of people saying, “Hey, this is what we’re doing. If you want to be partners with us, there’s various ways we can part with you to have us all operate something.” It’s a little like what Epic is doing now challenging the Steam Store and Google Play. I’m really so delighted to see that by the way. I love what they’re doing.
+
+Ben: Yeah. This seems to be a theme in your career is figuring out how to allow the creators of the game to have that more direct relationship with [...].
+
+Trip: Honestly, it’s really simple, what I’ve always been passionate about is the power of the medium and the freedom of creative people to exploit it in a variety of ways that the public can have access to. Anybody that wants to come along, and choke that to death, and control it, and prevent certain things from being viable, yeah, not a fan.
+
+David: You’re right. In a creative art form like this, it ends up killing it. I mean, look no further than the state of the gaming in the App Store, Fortnite being a notable exception over the last four, five years.
+
+Trip: Yeah, you’re right because if you have a success right now, it’s like, one in a thousand...
+
+David: Yup.
+
+Trip: ...of apps that actually make money.
+
+Ben: Is your offer to all these other game publishers joining your alliance “Hey, we’ve effectively recreated a software development kit.” Or, “We’ve created one and you can have access to this amazing documentations.”
+
+Trip: Here’s the funny part of the story. We’re getting closer and closer to coming to market, and we’re actually out making sales calls, retails, replacing orders, and we’re ready to roll. There’s a CES show in Chicago that’s going to be in June, and that’s going to be the big unveil. About 45 days before that I thought, “You know, I’m really committed to this plan, and at the same time, as the CEO of a public company, and as a competent executive maybe I ought to go talk to Sega and see if we could actually maybe partner.” [...], “I don’t really want to do that.” I say, “Yeah, but you really ought to do that.”
+
+Anyway, so I called up the chairman of Sega, who actually is the founder of Sega. Sega was started by David Rosen. He started it in Japan while he'd been an American Serviceman after the war. He had noticed the soldiers after the war that were signed up to be there. They had a lot of free time with nothing to do, and there was a demand for pinball machines and stuff like that. Sega was actually one of the first makers of mechanical games to go on military bases, so that’s how Sega actually got started.
+
+David: I did not know that. I just thought it was a Japanese company.
+
+Trip: And of course it became a pretty big business globally and eventually, Nakayama san, who was the leading distributor into the channels of Japan, he ended up buying out the company. David Rosen had sold it to an American company before that, and so he was out of it and Nakayama san has brought him back in as chairman.
+
+Ben: Wow.
+
+Trip: I called up David and he was basically saying, “Are you crazy? Are you nuts? You’re running a public company. We’re going to destroy your stock price when the news hits about us suing you and how do you know we can’t just change the machine and make sure all your games don’t work?” He’s just hitting me with every possible threat.
+
+Ben: And you’re sitting there laser focused in the game of chicken being like, “Yeah, I don’t, I just don’t think you can.”
+
+Trip: Pretty much. I’m just saying, “Well, you know, maybe we should get together and talk about it.” Alright, so we end up having this meeting and it starts us down the road of this process of discussing ways that we can actually partner and unbeknownst to me, they are all terrified because they’re planning on having this third-party program. In fact, they’ve been socializing that with me for a year. I’ve been having these rope-a-dope kind of conversations with them where they would come in and try to excel me on becoming a third-party licensee for the Sega Genesis and I would have to pretend that it’s kind of interesting but we’re not ready to do it yet. Meanwhile, I got guys in the next room, you know, reverse engineering a machine and they don’t know.
+
+Ben: What are the terms to become an official licensee?
+
+Trip: Well, there’s a lot of discussion about that as you can imagine. My idea was to pay them very little.
+
+Ben: Shocking.
+
+Trip: I’m basically just willing to pay $2 a unit up to a million units and not pay them anything else.
+
+Ben: And those units are games, per cartridge sold.
+
+Trip: They’re out trying to convince other people to do other third-party deals and they’re all saying, “Trip made me a better offer, so if you really...” but they’re all saying no to me. I mean, none of those people want to do it. They were all too terrified.
+
+Ben: But they’re also saying no to Sega.
+
+Trip: They’re just playing me against Sega, they’re using me to try to help them prove their position with SEGA.
+
+Ben: Yeah.
+
+Trip: Sega is actually worried that I’m going to tank their third party program. I did not know that. I found that out much later. Meanwhile, I’m thinking, “I don’t have to make this deal with Sega.” This is the thing about any kind of negotiation, you need to have leverage, and being able to be committed to a position, helps you get leverage because the other side thinks, “Yeah, okay, that’s what they’re committed to.” In this case, I was fully convinced we didn’t need to have a license. There’s no way they can force me to get a license. I’d be happy to go to court instead. They’re beginning to catch on to that and we get to the end of the point where, “Okay, we’re pretty much in an agreement and everything else.” The only thing that’s an issue is they would like to get $2 per unit forever and I want to cap it at a million units.
+
+Everyone on my management team is saying, “Trip, you’ve done a fabulous job. Take the $2 per unit, forget about the cap.” I’m saying, “You know, I pretty much know that they’re going to sue us and I really am convinced that what we’re doing is pretty legally correct. I don’t mind playing this out. I know that they’ll sue us and we’ll be prepared, and we’ll go to document discovery, and they’ll see us engaged with that and then we’ll maybe moving towards going to court, and they’re going to reach a point where they realize that we’re going to fight it out all the way to the end and that they can’t beat us. Then they’ll drop the $2 per unit thing and settle for the cap and I’m willing to play it out that way even if it takes six months.”
+
+David: Did they realize the power of Madden Football at this point?
+
+Trip: No, we’ll come back to Madden. Anyway, I’m having this conversation with my staff and they’re all rolling their eyes and lo and behold, I get on a plane, I go to CES and David Rosen and our lawyers hunkered down and they agreed to what I wanted so we never had to go to court.
+
+David: Wow.
+
+Trip: Again, I didn’t really understand at the time that I had so much leverage because they were afraid that we’re going to make this news and we’re going to blow up to the third-party programs.
+
+Ben: Right.
+
+David: They are launching soon.
+
+Trip: I already knew I had no program with others. They apparently didn’t know that.
+
+Ben: Oh my god, just flying right in with a bluff the whole time.
+
+Trip: I was just a little lucky there.
+
+Ben: Wow.
+
+Trip: And didn’t have to go through that harangue of six months of the stock price getting in trashed. By the way when EA went to public, the marketing cap was $80 million.
+
+Ben: Okay.
+
+Trip: But then it dropped to $60 million and this persisted. I think we actually hit bottom later that year. Here we are announcing we’re going to do Sega, but the market’s going, “Who the hell is Sega? Sega’s got no position in this business.” We don’t know if we’re going to lose that money or what. You know, nobody’s talking about it and then, we just started cranking out better quarterly results, astronomically better quarterly results for the next several quarters then it took, I don’t know, another year or two and the company was worth $2 billion. I mean, it just really transformed the next year or two.
+
+Ben: And was that Madden for Sega that just created all that revenue?
+
+Trip: Well, we already had Madden almost finished by the time that negotiation wrapped up and it was going to ship, I think in September of 1990. It was not too long after that show that Sega contacted us and said, “You know it turns out that our developers that are making our football game made a deal with Joe Montana to be their platform spokesperson to promote their whole product line and part of their deal with him being their spokesperson included putting his name on the game...”
+
+Ben: Which is hard, like you guys...
+
+David: Also, he was spokesperson for the Genesis console?
+
+Trip: Yes.
+
+David: Wow.
+
+Trip: And their entire business. They had a studio, outside studio developer making that football game and they found that game was going to miss Christmas. They contacted me and said, Nakayama san was on the phone with me and says, “For the good of the platform that we all depend on here, you need to make a sacrifice for the team by taking Madden and changing it into Montana Football. We’ll pay you some money for that and then we’ll all have a successful Christmas.” At least one of my high ranking executives said, “Yeah, that’s a good idea, let’s do that.” I looked at him and said, “What? No way.”
+
+Ben: But we have the goose.
+
+Trip: We’ve already taking this game to our best retail customers, we’ve already got thousands of orders for the thing. This is going to be a key franchise for us. I’ve been waiting years for this, I’m not going to give it to them. Then I thought about and go, “Oh, wait a minute, we can do both.” I go back to Sega and say, “Okay, here’s the deal, in six weeks we’re going to hand you the game that’s going to be Joe Montana Football and you’re going to give us $2 million in cash.” I got my $2,000,000 back and we literally cranked out this different game in six weeks by taking Madden and basically, dumbing it down. Look, I had put the playbook together, so the Sega version had I think 135 plays, Montana had 13. It took out 90% of the plays and then instead of the sort of half 3D camera view. Jim Simmons, the engineer that built us Genesis version, he basically invented this idea of the fake 3D, the angle...
+
+David: The 16-bit 3Ds.
+
+Trip: ...with the scaling of the sprites so it looked like the players looked a little more like 3D objects.
+
+Ben: So he could just remove that scaling factor..
+
+Trip: Well, in Japan by the way, the sports game were known as big head games, where there it was a little cartoony, with the baseball player with a really big head. Okay, we’re going to get into that. I knew that it didn’t sell in America and that we’re going to give them a really plain 2D top down camera view and then we took out some other stuff and it felt, “Okay, now it’s not threatening. It’s not going to an arcade thing.” Of course what we did with Madden was a great marketing compromise is, we had a meeting of the minds in the developers community around Madden where it’s like, “Okay, we want to have the simulation accuracy, but it’s going to be more of an arcade game. The players are going to be younger, they’re going to be more interested in the action side of it, so the design, we had to take that into account. It was really a great design. Again, I think, what Jim Simmons did in building that first version was among the most amazing work I’ve seen done in my career.
+
+Ben: Wow.
+
+Trip: And that engine that he built was so good that we immediately turned it into the Hockey Game and that was the first debut of our Hockey Game.
+
+David: Oh, yeah. I remember that. Wow. Did Madden and Montana ship at the same time?
+
+Trip: Yes, so they both came out for Christmas and they were two of the five best selling games that Christmas.
+
+David: Wow.
+
+Trip: And nobody knew that under the hood, that Montana was 98% of the same codebase.
+
+David: Wow, that’s incredible and that really built E.A into everything that it is today. Right? The console game, Madden just goes year, after year, after year and has the beauty of the sports season that you can release a new version every year and make it better every year.
+
+Trip: That was one thing that I had grown up of playing that game right where every year you got new cards because the players have changed team and have performed differently, their stats are different and you want the real thing. Therefore, you want the current players at their current levels of ability and that was just a given.
+
+David: [...[ hot rookies that have just got drafted out of college.
+
+Trip: Yeah, ever since the first version of Madden had come out, we have started doing a player disc every year. It was a little awkward with consoles because there was no way to do an add-on later, everything had to be on the cartridge. The first version had neither an NFL license nor a player’s license. We’re kind of faking our way through this for awhile, like the very first version of Madden.
+
+Ben: Which now is a very expensive license.
+
+Trip: Indeed. Although, it’s actually a fair deal.
+
+David: Totally.
+
+Trip: Because what E.A was able to do is build a brand and build a market position up to this day, so that they had some leverage in that negotiation.
+
+Ben: Several times you had [....] as David says, “Turns at a knife point,” or as I’ll say, “Pull the e-brake, cut the wheel to the left.” I mean, you guys came out with flying colors, the building blows up behind you, it’s like the end of n action movie.
+
+Trip: You know it’s true. It really was that kind of pivot, but before we even did any of that, the company had been profitable with revenue growth for the prior 5 years and —
+
+Ben: So, you guys have been profitable since you started right?
+
+Trip: Well, you know in the first couple of years you’ve got to invest and spend money and build distribution, and we got fairly close in 1984 where we’re running out of money. It was right around that time that it tilted enough and it was profitable in the fourth quarter of 1984 and then profitable after that.
+
+Ben: Got it.
+
+Trip: It was already a successful business, but yeah, in terms of unlocking an order of magnitude to jump in the value. Yeah.
+
+Ben: This is the part of the show where we ask what would have happen otherwise? Can you talk about a bit of the calculus on why you decided to go public, and did you consider not going public? Because many of the game company, you know, you could have been private for a long time especially if you’re making money and you don’t need to take any further investment?
+
+Trip: I’ve always believed in being egalitarian about my company. Basically, everybody is going to get stock options no matter what they do. We’re going to figure out how to be shared owners of the business and have everybody everybody feel like, “Yeah, there’s something in it for me to have a long term view here and it stick around and go through the tough times and get that reward in addition to the other rewards.” You can’t really do that and stay private because it’s just not going to be a sufficiently liquid marketplace after the shares unless you either sell the company or you go public.
+
+Ben: Yeah.
+
+Trip: I have been there for three IPOs, two of which I’ve lead. It’s not foreign territory for me to think this way, but not everybody in Silicon Valley want to give shares to everybody. In fact, there’s a lot of big tech companies like Oracle, I think maybe 20% of their employees have stock options. Big companies maybe have ESOP, Employees Stock Ownership Plan, but you’re not going to get very much. I’ve always believed in everybody sharing in that and then you’ve got to have some long term plan for how you’re going to get to liquidity.
+
+Ben: Were you facing pressure from shareholders saying, “Hey, we really should, you know it’s been how many years, however many years, 7 years, we really should think about returning capital [...].
+
+Trip: Yeah. With these three IPOs when I was around, Apple went at the time it was perfectly appropriate for Apple to do it. It was a mix blessing because it clearly changed the culture of the company in a negative way, but it really did help put the company on the map, and give it plenty of resources. I think Electronic Arts, it took too long. It was seven years, and it was painful for some employees, there was a lot of frustration and disappointment. A lot of it had to do with the economy not being in the right place in the mid to late ‘80s, and then of course, 3DO later, went to public way too early, but it was almost like to company had no shot, and    even remotely trying it, [...] going to do if it didn’t go out ahead of things.
+
+Ben: This is your gaming hardware business later that you started after EA?
+
+Trip: Yeah. It actually was started at EA when it was kind of a skunk works inside EA.
+
+Ben: That’s right.
+
+Trip: And then it ended up spending out as a separate company and it’s a very sad sorted story because it was a very ambitious idea, and I hadn’t been on such a run of success. That’s where your greatest strength turns out to be your greatest weakness because you think you’re infallible or invincible at that point, and you don’t realize that you're finally pushing over that edge. When I think about that concept, it reminds me of these great drivers like Niki Lauda and Ayrton Senna where they really know how to push a car to that very edge where just a little bit more they’re going to turn it into an airplane, and it’s going to fly off the course and that’s what both of those guys did. They did it on wet tracks when in theory they could have known better, but they knew how good they were, and they knew they’re really good at managing that edge until you don’t.
+
+3DO was that kind experience to me. I really had a genuine interest in getting a platform out there that can solve all these issues that were creating these bottlenecks on the hardware side and holding developers back and holding the public interest back. Of course, all that stuff ended up getting sorted out on its own, some at longer time frame, but probably, the most classic mistake I have made the most in my career is being too early. A lot of us entrepreneurs, we see something and then we envision that product, then we don’t appreciate that it’s going to take a while to educate the audience and have them be willing to pay for it.
+
+Ben: Well, don’t be too hard on yourself. I mean, we wouldn’t be sitting here today if you didn’t have the discipline to go and take a job at Apple for years before 1982.
+
+Trip: Yeah. It’ just it’s an interesting issue for entrepreneurs to figure out what is the right timing of your ideas.
+
+Ben: Last question on the EA IPO, and in sort of thinking about that versus other options, was it beneficial for the company? What did it enable the company to do that you guys couldn’t have otherwise done if you had remained private other than achieve equity for all the shareholders?
+
+Trip: If you knew in hindsight that you’re going to make a deal with Sega, a company would not have needed to go public.
+
+Ben: Right.
+
+David: You could have gone public a year later at a 10x, 20x value.
+
+Trip: Yeah, perhaps. I think in the end it’s still a happy outcome for everybody. I’m sure a whole lot of long term employees were delighted that we went public and none of us delighted with the stock. Flat as a pancake and even trailing down after the first...
+
+Ben: A lot like what we saw with Facebook. We’re potentially seeing it right now with Uber.
+
+David: I understand that as an entrepreneur, startup in play as venture capital, [...]. You can come to look at the IPO as like “The Endgame.”
+
+Trip: It’s really not.
+
+Ben: It’s not.
+
+Trip: It’s the end of the beginning.
+
+David: Right and so the valuation that you achieved and that you pumped up to for that IPO, you just keep the thing higher, and higher, and higher, and higher, and higher, but as we’ve seen with Facebook, the story is still to be written on Uber and Lyft, what happens after the IPO matters, just as much if not more, for your ultimate valuation and liquidity where you decide to catch up.
+
+Trip: Yeah. Again in hindsight, I can clearly see that 3DO, it wasn’t solid a enough business proposition to really deserve to be started in the first place. It definitely was not a good idea to take it public.
+
+David: Yeah.
+
+Trip: I think if you’re going to take something public, you’ve got to have a really concrete idea of what operating business model you have, and then you’re going to be able to continue to systematically move forward and fairly steadily improve upon. Otherwise, you shouldn’t just voice that off in the public. We saw this a couple of years ago with all the crypto stuff, where, “Really? Come on.” I mean, there were so many schemes and I thought it was kind of sad because they were able to secure a lot of the security’s laws by offering to do it in exchange for the cryptocurrency and yeah, a lot of those chickens have come [...] the risk.
+
+Ben: Should we bring him on to grading?
+
+David: I think we should.
+
+Ben: Trip, the way this all started wasn’t an acquisition we grade with all these years of hindsight, was it a good idea for the big company to buy the little company, was that a good use of capital? The way that we have adapted that for IPOs is, “Was that transaction a good idea for the company to do or did they do something interesting with the capital? Did they need the capital for something? Was a change in shareholders beneficial to the business in some particular way?”
+
+Frankly, the gradings are frankly more arbitrary in these IPOs, but the discussion I think is the more important part and the thing that I indexed on, what I lean really positive on grading the transaction and we don’t care as much about on how it went mechanically like, “Yeah, the stock dipped afterwards.” But that’s not we’re here to litigate. The really interesting to me is, what an incredible negotiating position it gave you with Sega and if you sort of didn’t have just raised that cash, have been more of a legitimate public company, you may not have been able to leverage that you needed to know negotiations to ultimately get your $1 million unit cap.
+
+Trip: Yeah, that’s true. I would also add that we already had a pretty good history as a private company making acquisitions. There again, you’re going to end up with shareholders that are going to want some liquidity, but as everybody knows, after Electronic Arts went public, it made it even easier to make acquisitions and the company made a ton of acquisitions in the 1990s.
+
+David: A ton. Too many to even enumerate.
+
+Trip: If you really think about the really big strategical lever that ultimately enabled EA Sports to be a big deal is the distribution channel. It’s having a big pipeline so that the NFL wants to do business with you, and others want to do business with you, and that’s where you get FIFA and Harry Potter and everything else that’s happened. Being public and being able to acquire things, and to be able to flow more goods through that channel as you’re really building the power of that channel.
+
+David: Yeap.
+
+Ben: It’s funny that we hadn’t really talked about that as a benefit of going public yet on the show is when you’re buying companies with all stock and you’re private, it’s harder to do those transactions. When you’re public, whether you’re paying with cash or whether you’re paying with stock, it’s profit is equivalent to [...] since it’s liquid and you can definitely do more.
+
+Trip: One of the way it’s different is, in a private scenario, the acquisitions you’re more likely to be able to make are going to be smaller and they’re likely to be struggling in some way which is why they’re willing to sell it. Whereas after you’re public, and you got the currency, now you can buy a really healthy operating business, you can pay a fair price for a bit of it. It doesn’t cost necessarily it doesn’t have to cost you a lot of cash. Then you just build that on to your operating results.
+
+Ben: Building EA to what it is today.
+
+David: Yeah.
+
+Ben: David, how do you think about it? How would you throw a grade on that?
+
+David: Well, I think, I mean it’s obviously the right thing to do. Yeah, I mean it’s an A for sure. The grading, I think is most interesting on the show for IPOs that just happen. We just did Lyft, we did Pinterest, we did Uber, and there we paint the scenario of what’s going to make this an A in 5 or 10 years, and what’s going to make this a D in 5 or 10 years. This is exactly what you want to paint in the scenario as an [...] we give you leverage to massively expand the business into a new market, make acquisitions which became a huge part of the strategy over the next 20 years. Obviously, there.
+
+Ben: Yeap.
+
+Trip: Right on.
+
+Ben: Yeah, I think that is all we’ve got.
+
+David: It’s all we’ve got. Thank you, Trip.
+
+Ben: Thank you so much for joining us.
+
+Trip: My pleasure. It’s been fun.
+
+Ben: Well, listeners, if you aren’t subscribed and you like what you hear, you totally should. We’ll be gloriously covering all of the upcoming big IPOs and doing more of our classic bread and butter episodes on acquisitions as well. If you want to get deeper on what it’s like to build a startup, get interviews with operators and VCs and explore some of David and my personal thesis, you should be an Acquired limited partner at glo.fm/acquired. Thanks again to our sponsor, Perkins Coie and we will see you next time.
+
+David: See you next time.
+
+‍

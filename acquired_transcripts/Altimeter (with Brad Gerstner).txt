@@ -1,0 +1,821 @@
+Ben: Welcome to Season 10, Episode 4 of Acquired, the podcast about great technology companies and the stories and playbooks behind them. I'm Ben Gilbert and I'm the co-founder and managing director of Seattle-based Pioneer Square Labs and our venture fund, PSL Ventures.
+
+David: I'm David Rosenthal and I'm an angel investor based in San Francisco.
+
+Ben: And we are your hosts. We've done Sequoia. We've done Andreessen Horowitz. But we have not gone deep on one of the biggest stories in venture right now, crossover investing. We are watching hedge funds like Tiger Global and Coatue come all the way down to seed investing. We're simultaneously seeing classically early stage venture capital firms like Sequoia completely reinvent their structure to hold on to their winners longer, even as they become public companies. Today, we wanted to analyze one of the firms that pioneered this dual approach of operating a hedge fund and a venture capital firm simultaneously, Altimeter Capital.
+
+David: There has been so much change in venture in the last few years, more change (I think) in the last few years than in the decade that I was doing venture than watching it before.
+
+Ben: Listeners, to tell the story right, we are joined today by Brad Gerstner, the founder of the firm. Actually, to tell you the truth, he is joined by us. We actually recorded this episode in person even with video, stands, microphones, everything at the Altimeter office on Sand Hill Road.
+
+For those of you who don't know, Brad has had an unbelievable career starting five companies. He's got a very different mentality than your classic hedge fund guy. On the investing side, he led the Series C in Snowflake and still owns a massive stake of the company. He's led large investments and sat on the board of companies you know, like MongoDB, Roblox, Zillow, and Plaid.
+
+He led the SPAC that grabbed the public in Southeast Asia. He is widely known as one of the most knowledgeable people in the world on the business of online travel after his involvement in Expedia, Orbitz, Uber, and many others.
+
+David: You forgot maybe the most important part. I think he's the number one bestie guestie on our friends over at the All-In pod.
+
+Ben: I think that's probably right. Listeners, before we dive in, we want to thank the presenting sponsor for all of Season 10, Vanta, the leader in automated security and compliance. Vanta brings a fascinating approach, truly, to the whole compliance process, SOC 2, HIPAA, GDPR, and more. Back with us today to help analyze her own company, we have CEO and co-founder, Christina Cacioppo.
+
+Christina, I know from our previous conversations that using Vanta to get SOC 2–certified can actually help startups grow faster than they otherwise would have been able to. What do you mean by that? Do you have an example?
+
+Christina: Yeah. One example I really like is looking at smaller, generally, FinTech startups. A canonical example here is, in a company like Modern Treasury, they're moving money. They need deep bank relationships to even launch their product. Again, part of even launching their MVP or building it is going and signing a partnership with a large bank.
+
+Today, a lot of large banks sort of floats, take your email, take your call, unless you are SOC 2–compliant. We actually work with a lot of Modern Treasury, much larger now, but started working with them when we're three founders on a couch. Again, they needed a SOC 2 in order to even build their MVP, let alone get customers. That's on the very early side of the spectrum. But actually, we have a lot of, again, early FinTech customers that just need one of these certifications in order to even build their product.
+
+Ben: Is it fair to say that this journey you're on right now of enabling earlier stage companies to get a SOC 2 certification, actually, is one of the big forces behind the FinTech wave?
+
+Christina: Yeah. I think there is just a leveling of the playing field here. This is a compelling startup investment theme, but I think Vanta is very much a part of taking something—in our case, compliance certifications that had been onerous—and making it accessible for the two or three founders on a couch to go and do, and let them accelerate their business. Also honestly, compete with the larger incumbents who are able to have the 50% compliance team that goes and looks at screenshots every week to make sure everything is in good shape.
+
+Ben: Thank you to Vanta, the leader in automated security and compliance software. If you are looking to join Vanta's 2000+ customers to get compliance–certified in weeks instead of months, you can click the link in the show notes or go to vanta.com/acquired to get that sweet 10% discount.
+
+David: Thank you, Vanta.
+
+Ben: We will cut over to our interview with Brad now. Please do know ahead of time that you can discuss this episode and everything else in the tech world afterwards with us at acquired.fm/slack. Join 11,000 smart, thoughtful people like yourself. We have some awesome new LP Show content out there. You can search the Acquired LP Show in the podcast player of your choice. Lastly, this is not investment advice. Do your own research.
+
+Now over to Brad Gerstner from Altimeter Capital.
+
+David: Tell us about your family and your dad's experience with entrepreneurship.
+
+Brad: I grew up in a small rural town in northern Indiana near Notre Dame, first generation college. My dad had a classic immigrant story. His parents had kind of given up everything in order to help put their only child through college. He started at Northwestern, they couldn't afford to finish there, ended up at Bradley in Illinois, got an engineering degree.
+
+Long story short, I was born in 1971, so in 1977 he became the general manager of the auto parts manufacturer in the small town that employed most of the people in the town.
+
+David: Is it like a GM?
+
+Brad: Yeah, it was a supplier to GM, a supplier to Ford at the time. Remember, our auto industry was under assault by the Japanese auto manufacturers. You had double digit interest rates and inflation, which for the first time in 30 years is all of a sudden a topic of conversation again.
+
+Ben: With the Fed under Volcker.
+
+Brad: Yeah, under Volcker. You remember stagflation in the end of the 70s, which was low growth, high inflation. There was an acquirer that came along to buy this plant. They needed to get my dad and then the workers to go along with the deal. My dad said he could deliver the workers as long as they agreed not to lay anybody off. Of course, they said they would do that.
+
+Three months later, they were going to lay off all these people in this small town. Your word is your bond and my dad just couldn't live with himself with that outcome. In a fit of lunacy, he decided that he was going to start a competitor. He knew nothing about starting a business. There was no such thing in that part of the world as venture capital. All he knew is that he knew how to make these parts and he knew he could inspire these men and women to join his cause.
+
+It was a crusade. I looked at it and I'm sure I looked at it through rose-colored lenses, but it was a valiant crusade. Unfortunately, I had to borrow money from the town bank.
+
+David: In a typical Acquired episode or a typical tech story, it's like, this is the hero's journey and he wins. You grew up in this amazing entrepreneurial journey and you're like, this is awesome. I'm going to go do the same for that. That's not what happened, right?
+
+Brad: I wish the story ended that way. For his sake, he borrowed money from the bank, mortgaged the house, mortgaged the car. The punchline is there are moments in time where the deck is so stacked against you, notwithstanding all your best effort, notwithstanding all the extraordinary sacrifice of the team, or maybe even the brilliance of the idea. It's not meant to be at that moment.
+
+In venture capital, if you fail, the risk is largely on the venture capitalist. In Silicon Valley, failure is on the part of the founder as long as you conduct yourself in a way that's honorable. It's a badge of courage that you gave it a go. We have an institutional structure where the venture capitalist can withstand that loss because they have a portfolio that they can cushion that with.
+
+Often, young founders will come in and say, well, I just don't know if I can take the risk. They just graduated from Stanford, they have no student debt. They're getting money from a venture capitalist if they fail. They don't have to pay the money back. If they win, they get huge upsides.
+
+Ben: If they're at the stage where they're actually taking money from a venture capitalist, they have a term sheet, and that's going to happen for them, the personal risk there is extremely low.
+
+Brad: There's no risk. What risk are you talking about? The risk is have a young family mortgage your house, mortgage your car, double digit interest rates and inflation. The business goes under. My dad loses his health, he loses his house, he loses his marriage. That's risk.
+
+The beautiful thing about this country is we have created a system where we encourage risk takers. Unfortunately, in 1980 in the middle part of the country in a small town, my dad refused to declare bankruptcy. He would work the rest of his life trying to pay back that money because it was his word that he gave to the people who lent him the money.
+
+I think about that when I hear from entrepreneurs or when I even think about the risk associated with starting Altimeter or starting the other companies I started, it's really not a risk relative to the risk he undertook. I grew up around an entrepreneur, but it was not a heroic entrepreneurial story. My grandfather, my father's father, basically forbade us from becoming entrepreneurs.
+
+He said to the four grandchildren, you can become professionals, doctors, lawyers, architects, but please don't become entrepreneurs. I felt like I owed that to him, even though I felt I was always kind of starting little enterprises in high school and thinking that way my brother did in college, but I went to law school.
+
+Ben: And you thought you were going to go into politics and be a leader in government. How far did you get on that path?
+
+Brad: Those programmed pretty early. I studied in 1991–1992 at Oxford. I came back and worked for the US senator from Indiana, Dick Lugar. He was chairman of the Foreign Relations Committee at the time. We're denuclearizing Russia at the time. It was a pretty heady moment in time with a senior statesman, Rhodes Scholar, incredible human being. Honored to work with him. I stayed close with him.
+
+When I graduated from law school and I went to work for a big law firm, I got a call from Senator Lugar asking me—I must have been 26 or 27—if I had to accept an appointment as Deputy Secretary of State in Indiana. Evan Bayh, who went on to become governor and senator from Indiana, started there. It's kind of a known launching pad into Indiana politics.
+
+I became Deputy Secretary of State and faced this fork in the road that I was either going to run for Secretary of State or I was going to go try to make some money. I concluded having grown up around a family that struggled for money. In fact, my grandfather said we don't have money problems, we have lack of money problems.
+
+David: I've heard you talked about this before. Is it fair to say that you didn't want to go raise money to run a political campaign?
+
+Brad: The idea of groveling for the rest of my career for money just didn't sit well with me. Kind of a loon, but somebody I admired was the 1991 campaign of Ross Perot. He spent tens of millions of his own money to go on television in kind of a goofy way with poster boards and rail against the national debt. I thought, nobody owns this guy. Perot—people forget—dropped out of the campaign three weeks before the election. I think he's still got 17% or 19% of the vote.
+
+Ben: He was an entrepreneur himself, right? He started EDS (Electronic Data Systems)?
+
+Brad: I would say there was a lot about Ross Perot I don't know—it's not an endorsement of his politics—but it was a reminder to me. I was like, okay, I can either shake a tin can for the rest of my life. But like others who came before me, I said, hey, I'll go back to business school. Maybe I can make a little bit of money. The plan was to go back to HBS.
+
+David: How did you decide on wanting to go to HBS? Did somebody inspire you or encourage you to do that?
+
+Brad: It's a slightly embarrassing story. I didn't really do much research. I remember taking the entrance exam the last day scrambling to fill out the application. In fact, I didn't even finish the application because I ended up getting an interview. I remember, the person who interviewed me said, this is a unique situation. I can't say that I've ever interviewed somebody who didn't have time to complete the application. He started with, why didn't you have time to complete the application?
+
+David: You're like, well, I'm Deputy Secretary of State.
+
+Brad: I went through it and it's just I decided late. I was working my ass off. But I said, now's the time. We went through it.
+
+David: So you know that's a different outcome to the same story for Warren Buffett. He wanted to go to Harvard Business School. He was so sure he was going to get in. He didn't complete the application. He was sure he was going to get in. Of course, he didn't get in and he had to scramble, and that's how he ended up at Columbia. Of course, the rest is history.
+
+Brad: When I was in high school, one of my first, I worked and was going to school at the same time. This was after this episode with my father. The part of Indiana that I'm from, they make all the RVs and conversion like vans in the country.
+
+I ended up with a job. I was kind of the right hand, chief of staff, go do anything. I asked a guy named Pete Liegl. Pete Liegl was starting an RV company. I worked for two years for Pete. He had me doing everything in the accounting department with the CFO, out on the line helping to run purchasing for the Sierra RV line in 1987.
+
+Here's the interesting thing. Pete went on to build the largest RV company in the world that he sold to Warren Buffett. Warren has written a lot in his annual letters about Pete, who's just a legend of a human being. He was a great inspiration to me. It was funny because, ultimately, I became fond and friendly with Ted Weschler, who works alongside Warren. We worked on some deals together.
+
+David: Are we going to talk about a deal that you worked on together just a little bit here?
+
+Brad: It really came full circle.
+
+Ben: I have the same personality characteristic that you do around an aversion to asking people for money. In fundraising for politics, I can see how that would be especially hard. You've raised, I think, literally billions of dollars over the years for Altimeter. What is it about the way that you fundraise now that hits differently in your psyche?
+
+Brad: I had the feeling at the time, and maybe it's just because at that point in time, I didn't believe in myself (perhaps) the way I believe in myself now, but it felt like a very personal ask, like give me money for my campaign. Now I am a steward, I am a fiduciary on your behalf, and I believe I'm going to make you a lot of money. We have made a lot of money for our LPs.
+
+If you could see the letters we've received from university endowments, from foundations, from family offices, and the transformative things they outline that we allowed them to do—free education, dramatically more scholarships, whether it's the environmental causes, whether it's immigration causes, whether it's inner city schools. To me, I think there are great causes. I think—as somebody else coined the phrase—we can work on behalf of, in a way that's great for entrepreneurs, in a way that's great for our economy, and in a way that helps to really transform some underlying causes. It's an easier ask for me because it doesn't feel quite so personal.
+
+Ben: And even though when you're running for office, it's in public service. It kind of felt to you more like, hey, do this thing for me and I can't totally see the ROI for you as a citizen.
+
+David: It's kind of a problem if you can't see the ROI for you for giving me the money to invest.
+
+Brad: I think that's right. I've gone on to raise a lot of money for people in politics for a lot of other great causes. It's really easy for me to ask for others. It's a more difficult ask when I'm a beneficiary of the ask.
+
+David: And at 26, even with the support of your mentor, it's not like you had the broad network or have so many people go ask on your behalf.
+
+You get to HBS. You get hooked up with two guys at HBS—David and Joel—who are going to start General Catalyst. They themselves weren't people that you were like, oh, it's obvious that you're going to start a venture capital firm, right?
+
+Brad: Quite the opposite, but I love them both dearly. Let me rewind just a little bit before that. In 1989, I really started getting enamored with email networks, working in Prodigy, following AOL in the 90s, really interested in investing. In 1996, I'm graduating from law school.
+
+My grandfather, who I mentioned, left me $25,000 when he passed away. I day traded that $25,000 to put myself through law school and business school. I took the Series 7 because I thought, man, maybe there's something these people know that I don't know. I want to know the dark secrets of investing. Then I realized, wow, none of these people know anything.
+
+Ben: That's the dark secret.
+
+Brad: The dark secret is there is no secret. So 1996, when I'm graduating from law school, I also have this aha moment, like so many people did with the Netscape browser. I said, this changes the game on this thing called the Internet, which was just these computers talking and email networks. It felt wonky and inaccessible. I remember gathering in the law school library, a group of my friends, including the guy sitting in there, who's now my general counsel. I said, you got to see this.
+
+From 1996, I went back to work for this law firm. We started getting litigation claims of people who were doing domain squatting in 1996 while nobody in this 600-person law firm knew anything about the Internet, or domains, or anything else. So I raised my hand and said, I'll take all of that.
+
+I helped them build the firm website. I quickly became known as the internet guy. But I was thinking, if I go back to business school, I've got to find my way to Silicon Valley. When I was graduating from law school, I actually came out here because there was an innovative law firm out here called VLG (the Venture Law Group) that was taking equity stakes at the time for doing work for companies.
+
+I literally got on a plane. I flew out here. The office was right next to the Rosewood across the street. I just walked into their offices and said, hey, I'm looking for a job. They didn't have a job for me, but it started to demystify this place for me. Business school was going to be my pivot, my off-ramp to coming out here.
+
+I go to business school in 1999. This is peak. McKinsey and Goldman couldn't get anybody to show up at their interviews at HBS in 1999.
+
+Ben: Because all your classmates are just so gaga for that.
+
+Brad: Every classmate is going to start a company. Every classmate is going to work for a startup. Consulting firms were being started that were Internet-only. It was really an interesting moment in time.
+
+Again, I'm day trading CMGI out of the back of my finance class, really, knowing that this thing's going to zero, but I'm going to ride it while I can to put myself to business school.
+
+Ben: Is that like E*TRADE? How are you day trading at that point?
+
+Brad: Yeah, we had Bloomberg terminals right outside the classroom. I had a Fidelity account, actually. I would do my research on Bloomberg and then we'd place trades.
+
+I was what's known as a poet. I'm a lawyer from Indiana, never ran a spreadsheet in my life. I show up and I have all these guys who've worked for hedge funds, private equity firms, venture firms, Wall Street guys, investment bankers. All of a sudden, I'm huddled around these machines with folks who knew a lot more than me.
+
+Ben: Is a poet in finance the same thing as a fish in poker?
+
+Brad: Exactly. Let's put it this way. We were transitioning to taking exams on computers. There were two of us who took our finance exam with a calculator and a pen. The rest, we did it with a spreadsheet. I remember myself and a classmate of mine who's a doctor, Chris Gilligan.
+
+David: And look at you now. Look at all those [...] computers back then.
+
+Brad: But I was hell-bent on coming to Silicon Valley. In 1999, I started coming out here. I was enamored with a small little search company that I had started to run all my searches on called Google, a hot startup called Tellme run by Mike McCue that was a voice recognition company.
+
+David: Yeah, and Hadi Partovi.
+
+Brad: Yup, and ultimately sold to Microsoft. I was very focused on coming out here. One of my classmates who would eventually become my wife was very focused on staying in Boston. I'd met David and Joel. I said, okay, maybe I can help start this venture firm stay in Boston and see where it goes.
+
+In 1999–2000, we had a launch idea for the venture firm. It's a launch company, if you will, which was an online travel concept. It was called NLG (National Leisure Group). Basically, what we were trying to build was the infrastructure—think Shopify in some ways—that would power Expedia, Travelocity, Yahoo, and others who were selling travel.
+
+They were selling air tickets. They were plugged into these global distribution systems, but there was no GDS for selling vacation packages, cruises, and all these other things. So we said, let's go build the GDS effectively for that. We partnered with Softbank. We raised $50 million for that business.
+
+We bought a little business to give us kind of the kernel. We build a digital layer on top of it. While the rest of the world was imploding, we found ourselves in a pretty enviable position. We built the business over a billion in gross bookings. I think it had over a thousand employees at the peak.
+
+David: That was all within a year, right?
+
+Brad: That was within 18 months, because again, it worked. People were actually buying this stuff online. We were plugging into existing pools of demand. We weren't going out and having to create demand. Expedia launches a cruise or vacation package booking engine. The next day, a lot of people are actually buying it. We're kind of the Shopify, if you will, inside.
+
+Rich Barton, who ran Expedia said, hey, we want to buy the business. Then we ran into Dara Khosrowshahi, who was running M&A for Barry Diller at the time. He said, you know, I want to buy the business.
+
+Ben: And to be clear, this is pre-IAC buying Expedia. These are two completely different entities bidding against each other for your company.
+
+Brad: Correct. I said to Dara, well, we already have an interested party that we're talking to. He goes, well, let me talk to Barry, so he talked to him. They come back and he said, well, who is it? I said, well, I can't tell you that, but he's one of the big online travel players. He goes, well, I think Barry wants to buy them too.
+
+That's ultimately what went down between October of 2000. In May of 2001, we put together a deal where USA networks would be renamed IAC, bought both NLG and Expedia.
+
+Ben: Oh, those were concurrent?
+
+Brad: Concurrent deals announced together. I remember being in the back of a limousine in Hollywood on my way to Barry Diller's house with Rich Barton. We looked at each other and we were like, strange world, how did we end up here?
+
+David: This was the beginning of Barry transforming from a media guy into a media and technology guy, and building IAC. It was USA networks and it became IAC.
+
+Brad: I would say two things about that real quickly. First, Barry was early to understand transactional commerce through a screen because of Home Shopping Network. He also acquired Ticketmaster. He also acquired an asset called 1-800-HOTELS, and he also acquired some catalogs. What they all had in common was they were all ecommerce-based business models. They were through various mediums, the biggest being Home Shopping Network, which is through television.
+
+For him to squint a little bit and to see how all these transactions were going to move to the Internet was not that difficult. The commerce engine, the commerce flywheel that was flying the fastest forum was 1-800-HOTELS that he would rename hotels.com.
+
+He was doing extraordinarily well in travel, understood that that would be a big category of online commerce. I remember very distinctly, him talking about commerce through all the screens. That was in 1999–2000 before most people saw it.
+
+Ben: I think this is such an important thing to realize about the dot-com bubble, because everyone looks back at it and makes jokes, but the consumer behavior was there. It was an objectively better way to transact in all these different mediums. The bubble burst because it was a speculative asset bubble and capital went away if you didn't have a business model. But for those who did and who could be free cash flow–positive, this is where all the demand was going. That never went away. Could you feel that in the moment of, people still want to do this as long as...
+
+Brad: I can't say that I did. You have to remember, the size of the bubble burst, the change in risk premiums, and then the events of September 11th 2001 were also compressed. It's the fog of war.
+
+I think about all we really knew for sure is this internet thing wasn't going away. There are going to be real businesses built around it. But it was very unclear when you would have the capital required to build the businesses, where the capital was going to come from.
+
+In hindsight, it seems pretty simple. I would say 2001, 2002, 2003, it turned out to be a gift, but that's a slog when you're going through it. I look at business models today that have negative unit economics, negative gross margins, raising money at super high valuations. I have post-traumatic stress from that period because if you are a high-burn business with negative unit economics and you fly into a world where risk premiums change, it doesn't matter how good you are. You cease to exist.
+
+Ben: And they will change eventually. That's the thing.
+
+Brad: Just look at what's happened over the course of the last eight weeks. Growth multiples are down 50%, risk premiums have changed dramatically. There are a lot of businesses that are in the category I just described that aren't going to make it.
+
+David: The natural thing to decide after all this is that you're going to go be a public markets investor. It's a great story. Also, what Altimeter ultimately becomes in this, and you guys (I think) are maybe the peers play examples—certainly one of the first, if not, the first—lifecycle investor, it was just not at all obvious that you should go to join a hedge fund at this point. How did that happen?
+
+Brad: There's a little bit more in between. September 11th happens, which is a really catastrophic event, particularly for our company that was an online travel company. We negotiated the soft landing with IAC. I won't take you through all the trials and tribulations, but it was a good outcome for General Catalyst. I thought I was going to go back and join David and Joe. I knew they were two extraordinarily special human beings and they were going to build something really big, but I had kind of been bitten by the startup bug.
+
+A friend named Bejul Somaia, who now runs Lightspeed in India and Southeast Asia had an idea. Effectively, think of pre-Yelp. Bej and I started this business. We bootstrapped it, had a bunch of venture capital term sheets, for a variety of reasons didn't take them, and we sold that business a couple of years later to a public company in Seattle.
+
+Again, in the first transaction, I'd worked really hard at NLG. I think I walked away after being the CEO and helped me put the deal together with a million dollars, which, for a poor kid from Indiana was game changing, but by Silicon Valley standards today, people would be like, are you clueless? There was a lot of work that went into that.
+
+The second business where I started with Bej, I think I owned 40% of the business when we sold it, that was 4X–5X the outcome. Then when I thought about what I wanted to do, I had two competing ideas. One was another operating business. If you're an entrepreneur, you have these ideas, you have to get them out of your crawl. But what I really thought that I was better suited for was investing.
+
+A person who made this clear to me was Rich Barton. Rich one day sat me down and he said, I don't think you're a great entrepreneur. I said, Rich, that's so insulting, why?
+
+Ben: Especially from Rich, like, the [...] entrepreneur.
+
+Brad: Right.
+
+David: He keeps it real, apparently.
+
+Brad: He said, being an entrepreneur is the art of the possible. You have to will things into existence. He said, you constantly think about what can go wrong. When you're an entrepreneur, oftentimes, you have to suspend disbelief, and just think about what can go right. He said, but as an investor, investors think about distribution of probabilities, not possibilities.
+
+He's like, I've always kind of observed you, your training as a lawyer, how you think as an investor, like, you're going to make a great investor. I was like, you know what, he's right. And the best investment business model is this venture capital hedge fund business model. I thought there was going to be a lot of disruption occur in that business model.
+
+Ben: Also when you say this business model, this venture capital hedge fund business model, until what you and now several others have done, that was not a business model. They were two completely different types of businesses.
+
+Brad: Correct. I'll hit that in just a second. I wanted to start a business and I said, I think I can build a better version of this model. At the time, if you really rewind the clock, Warren Buffett—I don't know what year it was, 1955 when he started his hedge fund—did both publics and privates. He didn't distinguish. He just sought out great investments.
+
+Paul Reeder who started PAR Capital was doing private investments before Brad Gerstner showed up. Seth Klarman at Baupost was doing private investments before we coined the term crossover. David Abram's in Boston. I had a lot of legendary investors I looked up to that never thought of the world in crossover, but there wasn't this artificial constraint that I can only invest if you're pre-IPO or you're post-IPO.
+
+David: What did private investments mean to them? Did it mean what we think of or did it mean something else?
+
+Brad: I would say, for them, private investing was maybe buying auto dealerships, or newspapers, or textile companies, or whatever the case may be. As you know, in value investing, which was really the rage for a couple of decades, is I'm going to find a company with a bunch of free cash flow. I'm going to use that free cash flow to go invest in things that actually have higher returning characteristics.
+
+Paul invested in that first company, NLG. He was on the board. We got to know each other quite well. He saw me day trading and companies like Priceline. And he thought, this is interesting, a CEO who actually is also an investor. I remember him saying to me, you ought to come work with me someday.
+
+After we sold that company open list, I showed up and I said, hey, I want to come work with you. I can run the technology part of the business. You don't have a technology business. I'll build a technology business, both public and VC, which is consistent with historically what you've done. I said, if I like the business, I'm going to start my own so you don't have to pay me. Make me an apprentice. All I ask is that we have lunch together every day and you teach me the hedge fund business.
+
+David: You'd made a couple of million dollars at this point.
+
+Brad: Right. I didn't have a lot of money, but again...
+
+Ben: Did he take you on that deal? He said, oh, great, you can "work" here and I won't pay you?
+
+Brad: The funny thing is, he did say, come apprentice. I think I was too weeks in and he said, this is ridiculous. He said, okay, I'm going to pay you, you're going to do this. I will say it was one of the most extraordinary mentor-mentee journeys over the course of the next 2½ years.
+
+He's a legend. He doesn't get the credit he deserves. He gave me the autonomy to, on the public side, go invest in my entire book in Google, Priceline, a couple of great companies, and then to go make some venture capital investments like leading the Series B and Zillow.
+
+I remember at the time, thinking, this is so easy. I had such deep conviction in Google. I didn't have to have this highly diversified book. If it went down, Paul would come into the office and say, what do you think? I'd say buy more, I'm heading to yoga. We had a really great round together.
+
+Ben: I didn't realize that that was with Paul when you led the Series B in Zillow because you were a Zillow board member from that point on for quite a long time. Did you stay on the board of Zillow as an independent even after leaving Paul's firm and starting Altimeter?
+
+Brad: No, I left the board. I don't know if it was exactly contemporaneous to that about that time. I learned so much from Paul. All kidding aside, the idea of portfolio management and risk management, Paul didn't call it essentialism. But running a simplified, concentrated portfolio around your best ideas was something that I may have been constitutionally predisposed to believe that anyway, but we were just very symbiotic in our thinking about how to manage portfolios.
+
+He couldn't have been more supportive. I learned through some pretty heady times with him. Then at the end of 2007, I said to him, I think I want to do my own thing.
+
+David: You led the Series B in Zillow as a crossover hedge fund. The idea of crossover existed, as you said, not necessarily in tech and other domains, but also in tech with TCV and others. They were not leading Series Bs in companies.
+
+Ben: Because the Series B at that point in time is what, $10–$15 million? It's not $50 or $100 million.
+
+Brad: Yeah, that's right. I think I'm trying to think about the check size, we may have put in $20–$30 million, and if I recall there’s a couple of $100 million valuation. I listened to his credit and another OG, Jay Hoag who started TCV, was already in Zillow by the time I came into Zillow.
+
+David: He came in the A with [...].
+
+Brad: Yeah. Maybe it's the nomenclature. I don't know if one was a seed, an A, and a B, but those were the first three rounds of institutional capital. Jay had a relationship with Rich from his days at Expedia. I obviously had a relationship with Rich. We knew he was a special entrepreneur. I knew Bill as well.
+
+It was a big idea. It was a special collection of people out of Expedia led by Rich and Lloyd. I remember at the time talking to Jay about technology crossover ventures, like you are the guy to do crossover. I remember sitting down saying, this is what I like, that's the winning model. That's really the winning model.
+
+I was coming at it with a more, I think, clearer idea of public pool of capital and venture pool of capital. TCV had evolved into almost more of a later-stage venture firm that held some public positions, but didn't have a hedge fund per se. I think I had a slightly different view. But credit where credit is due, their vision for where the world was going was ahead of their time.
+
+David: Okay, at the end of 2007, beginning 2008, you told Paul you're going to go out on your own.
+
+Ben: You just keep nailing this timing. It's like, the whole world's going go-go and just in case it falls off the edge...
+
+Brad: I wish I was nailing it. I got married at the end of 2007. We had our first child on June 3rd of 2008. Remember, the world cracks were shown in August 2007. Whenever you look at the stock refs, they look like they're generally stable, but man, the number of days of lost sleep.
+
+I remember saying to Michelle, we didn't have that much money. We were living in a few thousand square foot subterranean apartment in Boston. We were having our first child. It's clear the world was getting tougher by the summer of 2008. I said, I think I'm going to start my own firm. I’m going to tell Paul.
+
+Let's just say that when you're nursing a baby in September–October of 2008, I have CNBC on, it's like you just want to find the wastebasket to get sick in. I'm launching with no money.
+
+David: You had a bunch of commitments and they dried up, right?
+
+Brad: Right. At the end of 2007, the track record had been good. I talked to some university endowments and foundations. I didn't know this world at all. I didn't know the world of LPs at all. But I talked to a few people and they're like, hey, we'll give you some money. So I thought I was going to launch with $100–$200 million. But it was clear by September–October of 2008, people thought the financial world might be over forever.
+
+Ben: It's been a good century or two, but...
+
+Brad: It's hard now to put ourselves back in those shoes. People thought Lehman, Morgan Stanley, Goldman Sachs, were all going to collapse. Nobody knew the contagion effects of that, nobody knew the impact on the dollar. The thought was it was going to be a very deeper depression. It's interesting just to put in the mind of the founder. People say to me, oh, you picked a really great time to launch.
+
+Ben: I was saying, no, like, my God, sarcastically.
+
+Brad: In fact, one of my advisors who runs a big hedge fund...
+
+Ben: What's a big hedge fund to you?
+
+Brad: He ran a multi-billion-dollar hedge fund at the time. I just had an informal group of advisors and he said, you've made a huge mistake. Go back to Paul and see if he'll give you your job back and don't do this.
+
+Because I had organized my life in a really humble way—I didn't need money. I had started a few other companies and when I started them, I started them basically from scratch—I knew what it felt like. I knew that founder feeling on day one. It was both exciting and terrifying. And I was like, I got this. The horses left the barn, I'm doing this.
+
+To Paul's credit, Paul was like, you got this. He had started PAR with less than $3 million in the S&L crisis in 1991. I had a roadmap and I had a mentor who believed. I had a clear vision as to where I was going to go and I knew I was going to do it for a really long time.
+
+Ben: And you also had about $3 million if my research is right.
+
+Brad: Yeah. I think on my day one investors—not to out them—Paul was one of them. My brother was one of them. My oldest brother is about 15 years older than me. The side note is, he's an architect. He had saved his entire life a million dollars. He worked I don't know how many years, 15 years to save a million dollars or something.
+
+He invested it all in a hedge fund. I don't know why I laugh. He put it in a hedge fund in LA and the guy stole all $200 million of this money. My brother literally worked 15 years and his life savings went down the drain. He scrambled together another half million dollars and he said, I'm giving it to you to invest.
+
+I was like, I don't know if I can take this. I remember we're on a hike in LA and he said, I know you're going to do great with it. And I said, well, here's the thing I promise you, I may lose it all naturally, but I won't steal it. I can happily say less than a decade later, he was retired and it had worked out fabulous for him.
+
+David: What is it with your family and risk? You've essentially gone bankrupt, not you but your dad, your brother.
+
+Brad: The thing with our family is we're incredibly close. We support each other, even including my father. He was famous. He would have given you the shirt off his back. You know that you have those folks. Again, I don't want to make it seem overly heroic. We launched with very little money. The first trade I placed was on November 1st...
+
+Ben: And this is Altimeter?
+
+Brad: This was Altimeter. We launched on November 1st, 2008. The first trade I made was into Priceline at $42 a share.
+
+Ben: Which, of course, became Booking after it later bought Booking.
+
+Brad: I bought Booking in 2004–2005, but that $42—
+
+David: People probably didn't recognize yet what a monster that was.
+
+Brad: $42 a share, I still owned it when it hit $2000 a share. I teach a class at Columbia Business School on it in Security Analysis class, a Graham and Dodd class on what did people miss and what did we see. But at any rate, that was the start. I will say that when we launched, I wanted to be in Silicon Valley, but I was in Boston because I had no dough.
+
+Remember, by the end of 2007, everybody was starting to put privates in their public vehicles. I remember, for example, Bill Miller of Legg Mason famously invested in Zillow in 2006 or 2007. And then in 2008, sold all those shares back to the company because everybody was unwinding their private positions. When LPs found themselves overly illiquid in 2008...
+
+David: That is how not to do crossover investing.
+
+Brad: By 2008, they were like, we do not want privates in public funds. I had the vision, but it wasn't clear how that was going to be executed. Crossover fund, commingled fund, public-private fund, those were bad phrases in the fall of 2008.
+
+Ben: Why was it by 2007, that people had started adding these private companies to hedge fund portfolios?
+
+Brad: I was a securities lawyer by training. I'd worked around a bunch of IPOs. Maybe that helped, but I was like, the private markets are becoming way deeper, way more liquid. Companies are going to scale faster because the Internet provides a network upon which they can scale. They're going to stay private longer because they're deeper pools of private capital. We've made it more difficult for them to go public post 2000.
+
+Ben: And then certainly post 2008.
+
+Brad: Correct. TCV was there. Chase had started Tiger. Philippe had started Coatue. We started to see examples of hedge funds that were really smartly (I think) starting to do some private investing. And I thought, I want to build the best crossover fund in the world that's based in Silicon Valley, built by a founder. I thought that was my differentiator, that I had a network in Silicon Valley.
+
+Most of the other hedge funds were in New York or Boston. Most of them were stock pickers, not founders. So I thought, I can do this in a way that's really more empathetic and more closely aligned with founders, like true venture but could scale all the way into the public markets.
+
+It was delayed in 2008 because nobody wanted commingled funds. We had a great start in 2008, 2009, 2010. By 2010, people were like, okay, now we'll let you start to undertake your vision. So in 2011, we started putting together the first dedicated pool of capital. In 2012, I moved to Silicon Valley. That first dedicated pool of capital...
+
+Ben: Dedicated for venture investing versus the [...].
+
+Brad: We had a public pool of capital, which was long-short technology effectively. We also became pretty well known for doing a lot of travel-related investments. In that pool of capital, we could also do a certain amount of private investing. But we realized that for the venture and growth opportunities that we saw, we needed a longer duration pool of capital.
+
+David: The strategy makes sense and history has obviously shown that, but how do you trade off? If you're running a public, you probably want to be pretty close to fully invested. For privates, you need dry powder. How did you solve that? Is that by raising these dedicated pools?
+
+Brad: Like any entrepreneur founder, you have to see some market changes that give an opening for a new entrant because the incumbents have advantages. I believed that the very nature, the three things that I mentioned—IPO is harder to do, companies scaling faster, deeper private pools of capital—but I also believed that that was going to lead to the industrialization of venture. The winners were going to look different than the previous generation and this was an industry that was only a generation or two old.
+
+Ben: Venture capital.
+
+Brad: Venture capital. We needed a long duration pool of capital. We needed a product that suited our public market investors, so we raised that first pool of capital. When I raised it, there was a requisite level of skepticism. How do you think you're going to compete with Sequoia? How are you going to compete with Kleiner? How are you going to compete?
+
+I thought that the business building journey that started in that first institutional raise was different than what we intended to do. I raised a lot of money from three different companies as a founder.
+
+Ben: Which if it's two or three raises per company or more and (I think) 30 firms you talk to to get one term sheet, you knew hundreds of venture firms at this point.
+
+Brad: And had deep relationships with people who we had made money together.
+
+David: I assume your answer to that question of how you're going to compete with Sequoia at that moment in time was, we're not.
+
+Brad: We're not. Remember, just these venerable early stage firms—Mike Spicer and Jim White, and the team over at Sutter Hill, and my friends at Benchmark, and friends at Sequoia, interestingly enough, Andreessen. I remember, March of 2009, Allen & Company conference, Arizona.
+
+Ben: They're getting ready for fund one, right?
+
+Brad: The market bottomed. Not in 2008; on March 9th 2009. We were all at the Allen & Company conference.
+
+David: Was this before or after they did Skype?
+
+Brad: This was well before. I remember sitting at a table with my little pitch deck. I looked at a table next to me and it was Mark and Ben with their pitch deck. Let's just say they scaled much, much faster. But yeah, we were both there at the same time. They had a vision, which was a brilliant vision for the industrialization of venture, for how they were going to change venture, and they've done it extraordinarily well.
+
+David: Fast forward today, your two firms are about roughly equal order magnitude.
+
+Brad: The AUM may be in a similar territory, but the firms are very different. We can get to that in a little bit, but they've done an extraordinary job.
+
+Ben: I'm looking around here. I see 30 people. That is a very different...
+
+Brad: Yeah, 30 versus 350.
+
+David: And today's a full company offset, right?
+
+Brad: We raised that first pool in 2012. It was basically passing the hat. We had made good money for our LPs. Passed that around the table, I was the biggest LP in that fund by a long shot because I wanted to get it upwards of $100 million. That first fund (I think) I had six investments. In that fund, I don't think we will possibly have a return profile. That fund definitely is up there in terms of great return in funds.
+
+Ben: When you lead the Snowflake round, do you remember what the share price was?
+
+Brad: I don't remember what the exact share price was. I think the enterprise value at the time was somewhere around $175 million.
+
+David: Okay, so that was 2012.
+
+Brad: The fund was 2000 and vintage, 2012–2013, I think. I'm not sure when that first round of Snowflake. It might have been 2013–2014.
+
+David: That moment in time, did you have some insight that you felt nobody else had at that moment or was it the right time? Like how?
+
+Brad: A few things. Number one, I did have confidence that I was a decent investor. We worked really hard. We're blue collar. There were different ways to prosecute the strategy. I think there are some people who work the cocktail circuit. Were anthropologists about where things were going and what was going to be big.
+
+At the time, there was a lot of pessimism, frankly, about cloud computing. Salesforce had some quarters where they saw more deceleration than people thought. There were really these obstacles. One was the cost of compute in the cloud versus the cost in a data center. But the big one was this perception that I'll never put my customers' data in the cloud. It was really a security issue.
+
+Ben: Which then, like let's just review history. Everyone that decided that was not a tech company, that they needed to maintain an on-prem data center, got hacked and leaked customer data or lots of them. And everyone who shifted to the cloud, do we really trust Microsoft and Amazon? They're pretty good at that. That was a good decision.
+
+Brad: I don't know how many thousands of people working on security versus your data center that had two consultants. But it was really the Sony hack, if you remember that. The Sony board hack where I think it was Colin Powell, if memory serves me correct, his email was hacked. In his email was the target list for Salesforce's M&A activity.
+
+David: There's so much that came out in that hack, all the Snapchat stuff.
+
+Brad: All the stuff that got leaked. If you are a board member or you're a CEO, you immediately said, what if my email was hacked? That was like a game-changing moment.
+
+Ben: For all of cloud?
+
+Brad: For all of cloud. Our view was it was safer and then it was only a matter of time before the cost and efficacy of computing the things you could do in the cloud would be better. We were on the lookout. One of the things that we were focused on at the time—this has been a (I think) theme for us over the last decade—we have this view that not all software is created equal. Not all ARR is created equal.
+
+If you rewind the clock to 2000, the largest sector of software was databases. In 2000, if you aggregate the total enterprise value of companies that were principally driving their revenue from databases, it's about a trillion dollars in market cap in 2000. Then if you fast forward and you say, well, every year we're producing more data than in all years of human history combined. It's got to find a home. We're only going to censor more of it, and build centers to gather more data in the future. Where is that home going to be?
+
+I remember Bill Gates saying, somebody asked him a question. I think Meg Whitman asked him the question, isn't all the interesting stuff done? And he said, Meg, do you realize how barbaric it is the way we make decisions? He said, in the future, we will have all this data stored. Machines will analyze the data and help us make better decisions about how to diagnose an illness, about how to educate a dyslexic child, about how to maintain an aircraft's engine. It will all be decisions made by machines looking at data.
+
+We did have a strong view that the entire database market was going to be remade. It was going to be remade in the cloud, purpose-built for the cloud. For us, that infrastructure layer in the cloud, all the enablement that would be required in order to get enterprise in the cloud was something we focused on (I would say) more than probably anybody else, and that proved to be a rich vein.
+
+Ben: This is an interesting thing to talk about here because it's kind of a second pillar of Altimeter. If I think about where you were first successful, it was really realizing that the internet is an amazing place to transact. People want to transact there and they want to buy stuff. Overwhelmingly, they're originating that journey on Google.
+
+You sort of went down the list and said, okay, what interesting businesses could people buy stuff from when they click through from Google? You've got Expedia, you've got Priceline, and a lot of Travel, Amazon. But then there's this second, I don't know if it's still an emerging thesis since you did Snowflake in mid 2000-teens. When was this?
+
+Brad: 2013-2014.
+
+Ben: It's totally separate. It's this B2B, we're going to need the rising tide to power all these businesses. Are there other core pillars of areas where you look for where you're like, oh, this is a multi-trillion-dollar opportunity where we want to have several bets in the portfolio on that.
+
+Brad: One of the things you correctly identify, which is, I think that unless you have an architecture, unless you deconstruct what's going on in the world and try to understand the theme, the human behavior that's driving these events, then you just have a bunch of data points that are disconnected. As an investor, our job is to look at these complex fact patterns and try to make sense out of them.
+
+One of the things that was very clear to me in the early 2000s is that the internet is the most fabulous thing in the history of the world that connects all these people. It unleashes all this productivity, but it's chaotic. How the hell can you find anything? If you think about that decade, that decade was the decade of search, horizontal and vertical search.
+
+Booking.com was a vertical search company. KAYAK, a vertical search company. Zillow, a vertical search company. Google, horizontal search business. Baidu, horizontal search business. And then there were these ecommerce businesses that were the beneficiaries. They learned how to tuck into the underbelly of the discovery engines. That was an investable theme for a decade.
+
+Google's desktop search, I think, didn't go negative until 2012, maybe the fall of 2012. That's when there were fewer people searching on desktop on a year over year basis because people were switching to their mobile devices.
+
+Ben: Which has a totally different entry point.
+
+Brad: 100%. As an anthropologist, what did we do in 2010? I said, well, this whole search thing is going to get disrupted by this phone thing. I don't know exactly how this is going to go down, but the way that we enter these phones is not through search as our principled metaphor. Then it became, how do I become one of these icons on the front of this iPhone?
+
+As you recall, Facebook famously building an HTML5, not building an app. I remember, Facebook became our largest investment in 2012 when it went on the cover of Barron's at $17 a share post-IPO because everybody said they'll never be able to monetize this. If you did the work, and I remember being at Google Zeitgeist in Arizona at the time talking to all these CMOs and they're like, oh, my God, the sandbox for Facebook, they're crushing it. This is going to monetize better, not worse. Mobile device, the stream on the mobile device, targeting on mobile devices.
+
+If you had a decade of search, you had to understand all the companies that benefited from being in the underbelly of search—the Yelps and Tripadvisors—by 2012 they had to be in your ‘too hard’ bucket. They had it too easy. They acquired millions of customers effectively for free and they monetized them out the back door while the free game was over.
+
+Ben: It's famously hard to start an OTA these days because why? You're going to compete, again, with Expedia betting on the traffic from Google? Good luck.
+
+Brad: Right. Then we started looking at who are going to be the beneficiaries of the switch to mobile. That was an architectural change. I think if you connected the dots, you probably had some things go your way—who are the winners, who are the losers.
+
+Software was similarly situated. We had been investing in and around software for a long time, but it really started getting interesting about that period of time.
+
+Ben: Do you mean like B2S SaaS when you say software? What specifically is interesting to you?
+
+Brad: Today?
+
+Ben: Yeah, or as you were starting to develop this thesis.
+
+Brad: You said there's a trillion-dollar enterprise market, trillion dollars of annual enterprise spend, and it's all going to shift. In investing, you need these market dislocations. You need things changing to create these opportunities for new entrants.
+
+The second thing was, you asked a question. Was it obvious or whatever in 2012, 2013 when Dev Ittycheria took over Mongo? It was famously hard for him to get that last private round of financing done at a billion dollars. It had taken longer, it was moving slower, but we looked at the product pipeline and we understood what the company was doing.
+
+It takes a long time for those companies to spin up, but when those developer communities get going, they're incredibly sticky. As Buffett has said, the best investments, you have to be non-consensus and right. The problem is, being non-consensus is most often wrong. Consensus is consensus for a reason.
+
+Ben: And there are a zillion things in your life telling you, you should be uncomfortable or in pain when you're doing something non-consensus because you got all these smart people telling you you're wrong.
+
+Brad: Correct. If you're a founder of an investment firm, those are oftentimes career-ending decisions. Think about this. This is kind of fun one and we're doing something that's somewhat orthogonal to what the other folks are doing. I won't mention the firm but probably one of the best-known firms in Silicon Valley who passed on that round in Snowflake. The partner said to me, I wouldn't do it and here's why, but we ended up doing it. By the way, his argument was a good one. It was pretty compelling at the time.
+
+One of the things we did in that story was over Christmas that year, we actually were aggregating a lot of data for our own hedge fund. We were crawling web pages. We were buying data. We had a data warehouse.
+
+Kevin, who's my partner and was kind of a young analyst at the time, a computer scientist out of MIT, said, how about if over Christmas, I'll replace our data warehouse with Snowflake? Which was non-GA at the time. It was in beta with a couple companies. We did that and he's like, this is going to win. This is the winning Ark. This is good stuff. But he also wrote a bug report of the 10 bugs he found. He sent this bug bashing report to the founders, Benoit and Thierry.
+
+Ben: This isn't the dictionary under how to win a deal.
+
+Brad: Yeah, and they said no other investors have done that.
+
+David: Certainly no hedge fund.
+
+Brad: Yeah, exactly.
+
+Ben: Just to contextualize this for listeners because people think, oh, Ben and David have great investors on the show, and I'm sure they have some great investments. Just to throw out some numbers, I think that round you mentioned was at a $175 million valuation. They IPO'd somewhere around $4.4 billion. This trading in a window, anybody know what their market cap is ish today?
+
+David: $100-ish billion, I think.
+
+Ben: $100-ish billion. The cool thing about what you're doing is you can hold for a long time, including when these things become public companies. I'll just say it so it’s coming from me. I think Snowflake is still over half, or as at the end of last quarter, was still over half of Altimeter's public position. It is unbelievable, both from a returns perspective but from a conviction perspective to stick with founders with that sort of founder mentality and this longevity this long. I think that's the unique thing about this kind of capital platform.
+
+Brad: I'll say a couple of things. One is, it was an extraordinary investment, but it's also just an extraordinary partnership. As founding CEOs—Mike Spicer, Bob Muglia, Frank Slootman, Mike Scarpelli—these are deep relationships that become really important friends. You work really hard through a lot of tough issues.
+
+When it's all said and done, the incremental dollar isn't going to change the answer. But working side by side and building something that you're extraordinarily proud of, it's what motivates me.
+
+What I would say about that investment is for our venture investors, I don't know what it was at the peak, but I talked about two different pools of capital. On the venture side, those are 10-year funds. Last year, we distributed extraordinary returns and a game-changing return for a lot of our partners.
+
+But at the same time, on the public side, and personally we think this is going to be a multi-year compounder. I think this company can be worth over $500 billion over the course of the next 5–7 years. I think it will be extraordinary. We have one of the best management teams in the business going against one of the biggest TAMs in the business and delivering a really beloved service.
+
+It's kind of a tragedy if you can't continue to participate in that, but you have to match. That's not the bet that the folks who invested in my venture capital firm made, that I'm going to hold this forever. You want to make sure that you match and you align the interest of the LPs in the product that they're buying with the duration and the nature of the investment that you're making.
+
+Sequoia has innovated in a really interesting way around this permanent fund in this regard. We have a structure that allows us to continue to partner, compound, and continue. I think you'll see more and more of this.
+
+Rewind the clock, I started investing in Priceline when it was less than a billion dollar enterprise value. Today, it's upwards of $130 billion. They went public or you could buy them in the public markets for less than a billion.
+
+David: It may never happen today.
+
+Brad: Right. Salesforce went public at $850 million.
+
+David: Amazon, I think, was sub-$500 million.
+
+Brad: So I wouldn't say never say never. In fact, I hope that we start to see a return of earlier IPOs.
+
+Ben: It's great for the public.
+
+Brad: I think it's great for retail investors. I think it's great for companies. They need the discipline. Having companies running around with billions of dollars on their balance sheet, decacorn valuations, and not the discipline of public markets, to me is not a great thing for the company, for the employees, and for the founders. It's not to say that they're undisciplined, but this idea that you can't innovate in the public markets is nonsense.
+
+Jeff Bezos innovated plenty in the public markets, Facebook in the public markets. Look at what Marc Benioff has done in the public markets. I think that the public markets are not only is an important source of capital, but it provides a source of discipline. Scarcity leads to ingenuity.
+
+We'll talk maybe a little bit about our capital markets business, but I hope one of the things that we bring back to the IPO market is that companies don't feel like they have to wait until they get to $100 million, or $200 million, or $500 million of revenue in order to go public. Just look at the crypto market if you want to know the appetite of the investing public to invest in speculative assets.
+
+We used to allow retail investors and others like myself to put myself through business school investing in CMGI while it was still venture risk in terms of its orientation, but we've largely deprived the public markets of that today. We may say that that makes it safer, but it also means that you're not going to see those 100X investments.
+
+Think about this: ByteDance, we invested in it $10 billion. Today, it's marked somewhere between $350–$500 billion depending on which crossover fund you look at. Imagine that. Over $300 billion of value creation that goes to the Sequoias, the Altimeters, the GAs, et cetera, of the world. And no retail investor has access to that.
+
+That's not a level playing field. That's not a great outcome for folks. It's not to say that we should force companies to go public earlier, but we should reduce the friction. Give them access to the capital markets and give retail investors the opportunity to participate in the upside of these companies.
+
+David: All right, for our second sponsor of the episode and all of Season 10, big thank you to Vouch, the insurance of tech. Whether you're bootstrapped, seed stage, growth, public, or anywhere in between, with Vouch, you can go online and get next-day business insurance for your company in as little as 10 minutes.
+
+It's literally the same experience as buying car insurance through GEICO, and that is totally freaking amazing that you can get business insurance for your startup that easy. Vouch has great clients like Pipe, Neighbor, Middes, and of course, Acquired, so you will be in good company.
+
+Ben: Fast forward to the Insurance 101. Lay it on me. What are we learning about?
+
+David: All right, today's Insurance 101 from Vouch, we're going to talk about the first core coverage that most tech companies are likely going to want in addition to general liability protection, which is errors and omissions insurance or E&O. E&O is insurance that protects you from—you guessed it—errors or omissions caused by mistakes in your product or service that result in damage to your users.
+
+A few years ago, you might have said something like, that's impossible, we make free software, it can't cause any damage. Obviously, that is no longer the case these days. Just look at the Robinhood GameStop situation, or Zoom bombing, or anything on Twitter. Humans, it turns out, are pretty good at damaging one another on the Internet. And that's just free platforms. The risk is even higher for paid software.
+
+Say you're a SaaS company. You win a customer by sharing a big new feature on your product roadmap, and then you don't end up shipping it on time. Your great new customer hits you with a lawsuit for misrepresentation. This stuff really happens. And the average settlement for an E&O case is $140,000, not including legal costs. You definitely want insurance for this.
+
+Ben: Yeah. David. Is there a way I could pay someone to take that risk off my books and just smooth that out for me?
+
+David: Indeed, there is. According to them—and they are right about this—the best time to get E&O coverage is right before launching your product. Of course, going with a high quality provider like Vouch ensures not just that they'll pay the bill at the end of the case, but that they'll partner with you along the way to a successful resolution and take what otherwise would have been a huge amount of brain damage off your plate as a founder.
+
+Vouch is the best. We love them. You can learn more at vouched.us/acquired. All Acquired listeners, if you use that link, you'll get an extra 5% off your coverages.
+
+Ben: Thanks, Vouch.
+
+David: I want to get your opinion in a moment. Back to that first fund, 2013–2014. Feel free to argue with me on this. You said in fundraising, I'm not competing with Sequoia, I'm not competing with Excel and the like, and you weren't. That Snowflake round, that Mongo round, those firms weren't leading those rounds. In the intervening years, now of course, they are. They're doing it in their own companies and that part of it is contributing to stay private longer and all this. How did you think about those years?
+
+That first fund, that's amazing. Of course, you knew you had the Publica guys, the Coatues, the Tigers, and the like, but then you saw the venture guys also coming into this space. How did you view the market? How's that happened?
+
+Brad: What's happening is this happens in all markets. The venture market is maturing. I might argue the venture market has over-earned for many years. The market is going to become more efficient. There's going to be more competition. With more competition, that means founders are going to have better access to capital. They're going to have more efficient markets, so that means they're going to presumably get a better price, less dilution for the work that they do, which presumably is an incentive to invent more [...][1]  that's going to make the world a better place. I'm down with being part of the competition that makes venture more efficient.
+
+Listen. I wasn't invited into the venture party. There was a club out here on Sand Hill Road, but this club respects meritocracy. We come out here, we work really hard, and we add value to the companies. And if you do that over a long period of time, then I think you're going to have a shot at being part of this ecosystem.
+
+We collaborate as much as we compete. When we compete, we're going to go at it. We're going to lay out why we think we're the best partner for the company, but we're also going to collaborate. I know that what we're collectively doing makes America the best place on the planet to start a company.
+
+David: Amazing for founders. We talked to a bunch of your founders in preparation and they were like, oh, it's wonderful, this is great, this is the best thing.
+
+Brad: Rewind to my dad's story. What if a venture capitalist had handed my dad $5 million? He wouldn't have lost the house. That's who we should encourage, the risk takers, the bold ones, the ones who get into the arena. I think it's an incredible honor to be able to do that, but at the same time, I don't think I'm entitled to be able to run the table on the crossover business model.
+
+Everybody is going to compete for these different rounds. My job, just like any other founder or entrepreneur's job, is to build the best product. What is it that we do different for entrepreneurs than these other partners might do? Or how do we fit into the system?
+
+Ben: Actually, let's not make that rhetorical. What is it that you do different than other?
+
+Brad: I would say with total respect to all those others, first, I don't want to compete in that first round of institutional capital. You know, why? Because Chetan at Benchmark and Mike Spicer at Sutter Hill or the folks at Sequoia, they do an incredible job.
+
+I started at GC. I've been a day one founder. I know what that first 2–3 years of gestation looks like. And those firms, why does Andreessen have 300+ people? Because they really have built the infrastructure to help those early entrepreneurs win. Same with Benchmark.
+
+David: It makes sense you say, but that is a contrarian view today.
+
+Brad: I would say, the jury's out. Tiger did 70 or 80 seeds in Series A in the back half of last year. I have, again, like Shleifer and Che are great friends. Lots of respect for those guys. Ultimately, entrepreneurs get to make the choice and the story will be told down the line. Are the entrepreneurs that take money from roll-off, or from Chetan, or from Eric Vishria, or from Mike Spicer?
+
+Ultimately, do they have a higher hit rate in terms of building successful and big outcomes? The companies that take money from folks who raise their hand, say, we're probably not going to be as value add. This is more new or more just a source of capital.
+
+I think that Tiger is building an extraordinary business. Maybe I'm of the minority belief that early-stage ventures, those first 2–3 years, are craft building. We like to partner with founders who are wise enough to put around that early board table, people who have been through the trenches. That increases our probability of success and reduces (we think) the risk inherent. So we come in and partner then at that stage.
+
+You asked, what is it that we do that's special? I think that Altimeter has a founder's mentality. We have the empathy of an early stage, founder or venture capitalist, but we have the scalability of capital. Some people I've heard say, hey, they bring the best of Tiger, but also the best of Sequoia. If we ever get that compliment and I think about our NPS among founders all the time, that's the highest compliment. That's what I want to do.
+
+We want to increase their probability of success. When we start moving in that direction, we want them to know that we're side by side with them on the important issues they face—recruiting a CFO, building their board, getting the company public, helping them raise capital—and that will be first in line to write the check.
+
+Ben: You're a reasonably concentrated portfolio. It's the Benchmark mantra, but applied to a later stage. That discernment ends up accruing value to companies because you have such a deep pool of capital.
+
+Take Modern Treasury, for example. It does show up as value to them in the way that they can communicate to their customers. Like, yeah, we're only a four year old startup, but look, we're with Altimeter. It doesn't mean that the capital in your fund is on their balance sheet. But because you do have a reasonably concentrated portfolio, that brand power actually can accrue to the company in a way that shows up to their customers.
+
+Brad: A couple of things. First, I would say that the level of concentration on portfolios, I think it's pretty consistent with the history of venture. The reality is, if you don't have deals in your fund that on their own can return the fund, then you're probably overly diversified. If you're overly diversified, you're going to provide vintage returns, which, I'll just leave my money in the public markets if all I'm going to do is invest in… The top 10%–15% of venture is going to take 80%–90% of the returns.
+
+Yes, I am in the business of finding the best companies in the world and helping them succeed. I'm not in the business of taking the average of vintages and building a big fund around that. That's a different game. That's an asset gathering game. And it's not a game I find particularly fun.
+
+Ben: Not to mention, it's never been a great idea for more than one vintage to just be the median of all venture investing. It's not something you want to index.
+
+Brad: I think it depends what you're promising your LPs. I'm the largest LP in our hedge fund. I'm the largest LP in our venture funds. I'm only going to put my money into a venture if I think I'm going to earn a superior return to having my money in illiquid security.
+
+If I didn't think I could beat the return on Snowflake over the course of the next decade, put all my money in Snowflake and go surf with my kids. But I actually think there's a noble service being provided. I think we can deliver radically superior returns.
+
+I would say it's not the concentration that leads to that value add for those investors, it's because at Modern Treasury, we help Dimitri bring other investors to the table. We help him bring the CEOs of big banks to the table. We help them with recruiting. We're there during the high leverage moments in a company's history that can really help add fuel to the fire.
+
+David: You mentioned earlier, but talk to us about the capital markets. Again, if I'm Dimitri at Modern Treasury, that's something that even as the early-stage guys are adding later-stage operations that you can really bring in a way and have for Roblox, for Plaid, for so many others. How did that start and what is that business?
+
+Brad: I'm talking to a well-known venture capital firm's LP meeting tonight about capital markets, what's going on to the public markets, what does it mean for their venture portfolio, et cetera. That's just fundamentally different.
+
+I'm an IPO lawyer, spent 20 years in the public markets. We've participated in over 100 IPOs. When the equity syndicate desk at Goldman Sachs and Morgan Stanley need to sell an IPO, they call us. They call long only. We've been in and around that market for a long time. Bill Gurley, Rich Barton, and I going back 20 years, we're fascinated with how inefficient that market was with mispricings in that market.
+
+David: It's crazy. It's just like if you step back and look at it, it's nuts.
+
+Brad: Right. Convert and quest. We're innovating with the modified Dutch auction around the Google IPO. I mean, lots of fascinating stuff. If you're a student of this game and you're an IPO lawyer like I was, you pay attention to it.
+
+I helped Bill put on the direct list conference a couple years ago, which we've seen a lot of progress on. Again, just giving choice to entrepreneurs. At the end of the day, great. If there's competition for the bank IPO, the bank IPO will be better. And now there is right.
+
+The direct list is an alternative for some companies, a better fit for some companies. The reason SPACs were interesting to me is if you really just close your eyes, it's just a third door into the public market. We go help you build a book. We help you price the security. We help you sell it to Capital Group, Fidelity, and T. Rowe. All three of these things are the exact same exercise. You're selling 10% of your company, you hope to sell it to great public market investors, and you hope with the least amount of pain and distraction to step into the public markets.
+
+I think this innovation in the public markets is a terrific thing for founders. It's fun to be a part of, but last year we participated. We anchored direct lists like Roblox. We anchored IPOs like Confluent. We anchored our own IPO, like Grab by way of that.
+
+Ben: I saw your website. Yeah, you don't call it a SPAC. You call it the Altimeter...
+
+Brad: Yeah, Altimeter IPO. On the part of what we're trying to do is we're trying to demystify the transition to the public markets for CEOs and boards. Because frankly, I've done it over 100 times, but most founders will do it one time in their life.
+
+Ben: And they just don't want to mess it up. At that point, it's their baby. Why on earth would they do anything about the standard?
+
+Brad: Right. Again, I think Holman, Morgan Stanley, my friend Bill Gurley, and I have slightly different religions on this. At the end of the day, this is really about pricing. If we price these things efficiently, in any three of these doors, then they can be great outcomes for the company.
+
+If you have a bad sponsor, if you have a bad bank in an IPO and it goes poorly, then that's a busted process. If you have a bad sponsor, a SPAC, and you shouldn't be public, that's just a busted process. If you tried to direct list a company and you have a reference pricing round that's too high for where the business at, it's going to be a busted process.
+
+We spend a lot of time. I hired Chris Conforti out of Goldman. He ran to the equity syndicate desk at Goldman. He was the one selling all the IPOs for Goldman for a really long time. What we said we want to do is just as a value add for all the private companies that we talk to, that we look at, is to really be able to give them the inside scoop.
+
+We're not a bank, but we'll tell you all the dirty secrets about a traditional IPO, a direct list, or a SPAC. You can't have credibility telling those secrets unless you've lived them, which we have in each of those doors. Now we can offer what I think is the best insights to these founders. We have no economic finger in the scale because I can partner with you.
+
+If you want to do a traditional IPO? Great. We can anchor it or just participate. Direct list? We can anchor it or participate. You want to partner with us and we'll build the book for you? Great. We'll do a SPAC. There are different prototypes, different archetypes for which each of those fit. I think among the folks who are doing this, we probably might be first among equals in terms of our insights into how to get public.
+
+Ben: That's the old Mungerism, right? You show me the incentive and I'll show you the outcome. In this case, you coming from the perspective of, hey, you realize when the banks are trying to sell an IPO, they come to me to buy the IPO. So having sat on that side of the table and not yet having an incentive, I can talk to you about how this would get marketed to me so you at least have that transparency. Then I can tell you how I want to play in that process, and you can give me feedback, and tell me where I belong in your process.
+
+Brad: Yeah. I see it. Banks are getting more efficient. The competition is leading to more choices and better outcomes.
+
+Ben: Free market's a great thing.
+
+All right, listeners. For our final sponsor of this episode, we are back to tell you about the Softbank Latin America Fund. As you know, they created this fund with a simple thesis that Latin America is overflowing with innovative founders and great opportunities, but is always short or always has been historically on the one essential ingredient of capital.
+
+As you definitely know by now, the Softbank Latin America Fund has invested $8 billion in over 70 companies. They have one big takeaway and that is technology and LatAm isn't so much about disruption. It's really actually about inclusion because the vast majority of the population is underserved in almost every category from banking to transportation to ecommerce. Similarly, most businesses are underserved by just modern software solutions, so there is so much to build for so many people and so many businesses in Latin America.
+
+A great example of this is Softbank portfolio company, Gympass. Gympass helps employers offer gym access and other services like therapy and sleep guidance to employees through a network of over 50,000 gyms and studios around the world. With a unique software platform, Gympass is clocking double digit month over month subscriber growth as companies design hybrid workplaces.
+
+That's just one example of how Softbank is pairing great founders with the capital that they need and great expertise to build amazing companies in Latin America today. To learn more, you can click the link in the show notes or go to latinamericafund.com.
+
+David: That's awesome. We got to get Gympass for Acquired employees.
+
+Ben: You bet.
+
+David: Can we take this up with our bosses?
+
+Ben: Let's get to work on that.
+
+David: As we move into the analysis section here, we (of course) want to do grading and ask you, when you go to bed at night and you dream your best dream, 7A+ scenario for Altimeter in 3–5 years versus a C- of we survived but we miss some stuff. We'll get to that.
+
+Maybe first, if you have thoughts on a bull versus bear case on the lifecycle investor model and that probably leads into grading, what are the risks to what you have pioneered and are doing?
+
+Brad: I think that I certainly appreciate the credit as a pioneer. I don't think of myself as a pioneer. Like I said, in many ways, it's back to the future. Warren Buffett was my hero. If you asked him, why do you do private investments? He'll just say, I do great investments. It's not private versus public. In many ways, it's the LP community who wanted to put people in buckets.
+
+I think in order to generate alpha and above average returns in probably the most competitive market in the world, you have to be extremely passionate. There are big sacrifices and trade-offs to be great in this business. For me, if you said, Brad, you can only do public market investing, that wouldn't scratch my itch. If you said you can only do venture investing, that wouldn't scratch my itch.
+
+For me, it starts from the premise, what do I want to do? What can I be most passionate doing? The reason I think we attract some of the best analysts in the world is because most analysts don't want to leave their thinking cap at the IPO door. They're like, I spent all this time on this company and now you're telling me, I can't make any more money on it? I can't bet on it? I can't invest in it? What's that about?
+
+I think that the maturation of the venture growth business model is here to stay. We saw it in LBO, we saw it in private equity. That was a highly fragmented industry. You now have a handful of global platforms that are prosecuting that strategy. In venture, highly fragmented industry.
+
+We're still in the middle of a lot of creative destruction. You got solo GPs attacking venerable early-stage firms. You have a lot of firms that are vertically integrating upwards. You got hedge funds who all say this venture capital stuff is easy, I'm going to go do it.
+
+At the end of the day, what I love about this business is there's a scoreboard. In a hedge fund, it's a painful scoreboard. It's every day. In the venture business, there's a lag. But at the end of the day, your reputation among founders, I say, a two-sided marketplace. What's my NPS score among founders and what's my NPS score among funders, the people who entrust me with their capital?
+
+I get up every day thinking about how do we build the best product for both of those folks, because if we do and we deliver the returns, then we have a great business that I actually think is serving a really important part of the capital process.
+
+David: I totally agree, but the analogy to the LBO business and market, you're absolutely right. I remember coming up being an investment banking analyst as you were starting Altimeter in those same days. The LBO market was vastly more fragmented than it is now. It has consolidated around some major [...]. There are niche players and there are lots of strategies that can work, but yet, I hadn't quite thought about it. I haven't said the same thing in venture.
+
+Brad: Right. If you think about what's happening in the private equity LBO world, you have some global now public platforms. Their cost of capital goes down. We've seen a compression in terms of returns because the market got more efficient. As the market got more efficient, returns went down.
+
+What do I expect will happen over the full arc of time and venture? We're going to compete away returns. We've already witnessed it over the course of the last couple of years. That just means the returns that go to the premium players, the players who truly see the best stuff, that truly convert the best stuff, are going to be even more unique. The average return is going to be a much worse place to be for both LPS, as well for the people prosecuting those strategies.
+
+David: And for the founders who are backed by those firms too because, as we've been saying often on this show, there is a brand transfer in Halo. In fact, that happens in the venture markets.
+
+Brad: For sure. The signaling effect is profoundly important and I think probably underestimated.
+
+Ben: Which is amazing considering how high it's estimated.
+
+Brad: Right. I think when you have the best partners, not even the best funds. It’s the best partners at the best funds who do things together repeatedly, is because there's a shorthand around trust. There's a shorthand around a business building. The increase is the probability of successful outcomes. The signaling impact of that, like, I underestimated as a founder, I don't underestimate it now.
+
+Folks who bootstrap, take solo GP, take passive capital, it's not to say they can't build big businesses, but I don't think that that makes it easier for them. At the end of the day, I said go public earlier because having that discipline in that scarcity, having some great early business builders that see those different patterns, they create the conditions that I also think drives success.
+
+David: What's different now is you can go public early. You still have Altimeter, or Benchmark, or Sequoia, or whoever as your shareholders. It's not like you have to check your hat at the door.
+
+Brad: Sure. I think we're in the early phases of industrialization. How do I score myself? Our returns for our partners. We got to deliver excellent returns for our partners. I say to my team, is our NPS score with founders higher or lower at the end of the year? That is really important to me. That's the durability of the brand. That's the love for the brand.
+
+Lots of software companies can increase revenue selling a [...][2]  product with an aggressive sales force. But ultimately, that will not be a really valuable software company. You show me a software company where the product is flying off the shelves because the people on the other end really need, want the product, and love the product. That company, even it has lower revenue, deserves a much higher multiple.
+
+I think the same is true when I think about our business and what we intend to deliver. I guess this is a segue as well to a bigger issue, which is, what is this all about? We are all part of one of the most fortunate systems at one of the most fortunate times in the history of modern capitalism. I intend to use this platform to do things that matter. And I think founders care about that.
+
+I think funders care about that because at the end of the day, helping a hedge fund guy make a little bit more money or some venture capitalist make a little bit more money, it's not what gets me up in the morning. I do think that the very essence of what we do, which is increasing the velocity of innovation, allowing Moderna to build an mRNA technology that can help solve a pandemic, to transform the way software works, that is the infrastructure that powers all discovery.
+
+Those things, I think, are intrinsically good. But increasingly, what I see is people who are using these platforms to drive diversity, to use these platforms to tackle things like the wealth divide, which you know I care about with the Invest America initiative that I've talked about. The people who work here, I think if you did a survey, they would say, I work there because it's a great brand, fun, love doing venture, love doing public. But we also care about the impact of what we do, and I'm lucky to be able to lead that.
+
+Ben: I really want to talk to you about Invest America because I think it's a fascinating concept. We chatted about it when we were preparing for this. What is the idea there?
+
+Brad: Rewind the clock. I was definitely on the outside looking in. I was not part of the ownership society. I didn't know what stocks were. But all else being equal, I never really felt deprived.
+
+The industrial revolution, in many ways, was a great equalizer. My grandfather was a welder. He worked on the Manhattan Project. He was a brilliant guy, self-educated, read textbooks, but he could earn a wage and save that allowed him to leave $25,000 for a grandkid who had gone to put himself through law school and business school.
+
+The technology revolution will have an even more positive impact on humanity, but it naturally tends toward concentration. It is not an equalizer in terms of wealth so far as I can see. The data, I think, works to get better.
+
+Ben: It doesn't seem to have played out that way.
+
+Brad: Because if you think about it, it's logical. Mark Zuckerberg can have three or four billion customers for his product. Even Carnegie and Rockefeller couldn't have a billion.
+
+Ben: The software and then the inner on top of that kind of compounds that advantage.
+
+Brad: To me, the social contract that we're going to have to have is going to have to evolve. I think this country is better positioned to evolve that social contract than just about anyone, but part of it is first just making people feel that they're part of the game. The start of Covid really drove this home for me because we had massive government intervention. I went on CNBC on March 26th, the bottom.
+
+David: I remember watching your interview.
+
+Ben: I wish I knew that was going to be the bottom.
+
+Brad: Yeah. It was an extraordinary day. But at the end of that day, I literally had grandmothers, fathers, doctors, lawyers, just email our website. Generic email saying, will you protect me? Will you take my money? Will you do this? There's just extraordinary fear in the world.
+
+I'm from Indiana and most of my friends didn't go to college in the small town. What happened when the government intervened is the stock market's ripped because the Fed went all in, Congress went all in. A lot of my friends working in those RV manufacturing plants were unemployed, lost their jobs. We can't have a system where the owners win because the government intervening, but we only have 30% of people who belong to the ownership society.
+
+Ben: And that's the public stock market. That's not even accredited investors, which is this tiny slice you're talking about earlier, a small percentage of America that owns any equities.
+
+Brad: Right. A very simple idea that I floated, [...] and I were on CNBC. I'd been thinking about it for a long time. I abhorred the accredited investor laws for as long as I can remember because as a securities lawyer, I remember studying securities law in law school and saying to myself, hold on. You mean to tell me that we've rigged the game so only rich people can invest in the best companies.
+
+Ben: They have to be protected, Brad.
+
+Brad: Right? What's this all about? Because the proxy for intelligence was money. Jason Calacanis has talked about having an investor test, but I knew...
+
+David: J. Cal loves that investor test idea.
+
+Brad: By the way, I've seen dumber ideas. I think he's onto something and I appreciate that on principle, he has the same allergic reaction. Maybe it's because he also grew up poor, on the outside looking in. For those of us who did, now that we're on the other side, we say, we got to fix that.
+
+Set aside a credit investor, there are some ways we can attack that, but one way, we get everybody into the game. We have, I think, seven million children born a year in the United States. If you gave every single one of them an Invest America account, think of that as a Robinhood account on their parents phone that would eventually be on their phone.
+
+Ben: That just shows up from the government when they're born.
+
+Brad: It shows up from the government. You get a Social Security number, you get an Invest America account. We fund that account based on means. If your parents make over $200,000 a year, maybe we put $100 into the account, your parents can fund it up to $5000.
+
+Ben: It's like a FAFSA type.
+
+Brad: Right. If you're under a certain threshold, we put $5000 in it. You can't take the money out. It compounds at 6%–7% for 50 years, it's worth $1 million. But much more importantly, the behavioral psychology, the behavioral economists knows, the propensity of somebody who actually has a savings account, an investment account to save goes up dramatically. Because you actually have a little snowball, you understand the law of compounding.
+
+If we want to educate, and include, and make everybody feel like the system isn't rigged against them, then they actually have to be part of the game. We have a way to do this. It doesn't cost a lot of money. In the scheme of things, this is less than $20 billion a year for the federal government.
+
+This is a drop in the bucket relative to trillion dollar stimulus plans, trillion dollars of defense spending, and this is a game changer, psychologically and otherwise, for everybody in the system. Because now, over a period of 20 years, you've effectively gone from 30% of the people being owners to 100% of the people being owners. Again, I'm sure there are other great ideas, but that's one that I really believe in.
+
+David: Do you think it should be a discretionary account like an IRA or a basket of…?
+
+Brad: Again, what I intend to do is to fund people to push this idea forward. There will be a lot of debate. We've debated baby bonds for 30 years and we've never done anything. A bond, so far as I can tell, is spiritually connected, but it's stuck in the old legacy of the war bond. It's safer, therefore, will give you a bond, but it doesn't appreciate. The recipient doesn't learn much.
+
+Hopefully, we can harness the energy, the power, the lessons of that, and make sure that every child in this country owns their tiny little slice of apple, of Walmart, of Tesla, of the future SpaceX. I think if they do, think of how elegant that Robinhood app is, or your Schwab, or Fidelity app, you open it up and they see all of these names. There are tiny little ownership of all of these names and they see that grow over time.
+
+We know how often they'll be looking at those phones. We know how their parents will feel. What I would say is they can't take the money out until a long way down the line. That ensures a retirement program for basically everybody.
+
+But you can add. We could build adjacent accounts. You could stick a 529 side by side with that that they could pull out at college. I don't like the idea of a government program, we'll give you a little of this every year. Give me title and ownership to something. This is mine.
+
+Ben: And then let me benefit from American innovation.
+
+Brad: And let me compound and benefit and be part of the system. I have two sons in fifth and seventh grade. They're both interested in investing. They both want Robinhood accounts. They both want all this.
+
+David: Asking for the Robinhood account is the new I-want-my-driver's-license.
+
+Brad: Think about how privileged that position is. We should have a standard curriculum in this country for sixth graders, where it starts, they walk into their math class or whatever the class is and they say, open your Invest America account. Everybody's on the same page. You teach sixth graders in an inner city school today about stocks, you may as well be teaching them Mandarin. They're not participants in the game.
+
+I talked to Seth Klarman from Baupost. He said, I'll write the curriculum. I talked to David Solomon at Goldman, the folks at Schwab, and Fidelity. Everybody sees this as a challenge. This is a simple, simple idea that we could get behind, and literally in a single term could change over a period of a decade, the trajectory of every child born in this country.
+
+David: What's cool is I think you've basically already seen evidence that this works with Robinhood. People still had to have the means to put money into Robinhood and then decide to do it. But it activated so many people to become investors in America and around the world over the last couple of years. Some of those people will prove to not be good investors. Some of them will prove to be amazing investors.
+
+Brad: Part of the challenge here is everybody says, oh, you're letting people invest in the stock market. What if it goes down? Here's the deal. We have 100 years of history. Owning your slice of America is a good bet, as Warren Buffett likes to say.
+
+I don't know if it's going to go down in the first year or up in the first year. It doesn't particularly matter to me. I know if you give these kids a slice of America over a period of 40 or 50 years, it's going to be worth a hell of a lot more in the future than it is when they get it. But way more important, is every day of their lives, they will feel like they belong to the system. They're not on the outside looking in. The power of that psychologically to that child will dwarf the amount of money that's in that account.
+
+Ben: Brad, before we wrap here, anything that you want to point listeners towards? Or where could they find out more about you or Altimeter on the Internet?
+
+Brad: I would say follow me @altcap on Twitter. I encourage all of our analysts to be on Twitter. I think they're incredible brains and thought leaders. Being online and sharing content.
+
+I don't like to be a cheerleader on Twitter, but I do like encourage our analysts to pressure test their ideas whether it's jamming, talking about what's going on in software, or whether it's [...] talking about what's going on in Internet marketplaces, or crypto, or free to talking about what's going on in China. I always say to people, if they're interested in learning more about Altimeter, just follow this incredible group of analysts on Twitter.
+
+All of this said, we're truly lucky to be doing what we do. You guys are doing this incredible podcast about founders and entrepreneurs. This is a rather new experiment in the history of the world. I think it's yielded.
+
+You read the Bill Gates annual letter at the end of every year. We live in the most peaceful, notwithstanding Ukraine. We live in the most prosperous. We live in the healthiest period of time in the history of humanity. One of the things that scares me is that people, during periods like this, they'll turn against capitalism, or their turn against technology, or they turn against whatever. But it's very clear to me, I'm going to fight for that and fight for those founders.
+
+I think when we look back at this system in 10 years, it's going to be more vibrant, more capital, more access, more ideas. I think the secular curve around creative destruction and innovation has never been steeper. The ideas over the course the next 10 years are going to dwarf the size of the ideas that emerged over the last 10. I'm super optimistic.
+
+David: In a way, Ukraine at least helped remind me of that. Ben and I were talking at dinner last night. The old saying that has become forgotten a little bit in recent years, is that capitalism is terrible. It's the most terrible system except for every other system that has been tried in the history of humankind.
+
+Ben: It's about democracy, but it definitely applies to capitalism, too.
+
+Brad: I don't think it's the only thing. I don't think it's the only thing in life, but I think it's an enabler for everything. Somebody reminded me the other day, Julian Robertson, after an incredible track record. In 1999, obviously, he got hit hard, money redeemed, and they said, are you bummed to no longer be in the public markets?
+
+Ben: And he was the founder of Tiger Management?
+
+Brad: Founder of Tiger. Apparently, he's reported to have said, I didn't want to die looking at a quote on my Bloomberg for the yen anyway. Yes, in this firm and in my life, my friends, my family, my kids, and a lot of things that resonate as more important, but I am a staunch defender of this beautiful system. I tell you, it's a hell of a lot better than having to mortgage your house.
+
+You think about the velocity of money if the risk you run, if you start that, auto parts companies, you'll lose your health and you lose your house, there's not going to be a lot of risk-taking. Risk-taking is the engine that moves humanity forward.
+
+Ben: Business creation and experiments without personal guarantees are an incredible thing. It's amazing that we have a system that actually allocates a big slice of capital to go toward that.
+
+Brad: But think about that. That's a modern experiment. Modern capitalism has been around for 500–600 years. That's a 30-year-old experiment. But you think about the impact that global sovereigns who are trying to effectively take fossil fuel dollars and turn them into technology dollars. We have more dollars moving into this.
+
+You mentioned we have very few people have access to the private markets. I heard this statistic the other day. Endowments and others have reaped the benefit, which makes me happy, but retail investors and the average investing public has not. A 1% increase in penetration of the retail investing public. Alternatives, I heard, is a trillion dollars. I haven't run the math myself, but it's an extraordinary number.
+
+If you look at the accredited investor retail channel through Goldman, through Morgan Stanley, through these other aggregators, as a percentage of the fundraise for Tiger, for Coatue, for Altimeter, it's going up dramatically relative to traditional LPs. We'll do another episode and we'll talk about how we're going to unshackle ourselves from the accredited investor rules.
+
+David: Would you ever consider a future for Altimeter where your LP capital is more directly from people?
+
+Brad: For sure. Our aspiration is not to be the biggest, but our aspiration is to have the scale to have the level of impact that we can to drive the highest NPS among founders and funders. We want to deliver for both of those folks in that network. I think it's inevitable that an increasing percentage of these dollars can, will, and should come from willing retail investors who want exposure to this incredible asset class.
+
+Ben: All right, listeners, hope you enjoyed our interview with Brad. He is unbelievable. What a journey the last 20 years have been for him building Altimeter and really helping to shape this industry.
+
+David: Totally.
+
+Ben: And personally, I'm pretty excited about his sort of idea with Invest America. We'll definitely be watching to see where that goes.
+
+David: Totally.
+
+Ben: Listeners, to round us out, you know the drill. Join us in the Slack, acquired.fm/slack. We're going to be talking about this episode and everything else. We've got the Limited Partner Show, where recently we've had awesome episodes with the folks from NZS capital coming back to talk about the state of the markets. David, Christina Melas-Kyriazi joined us to talk about FinTech.
+
+We've recorded two more episodes that we haven't dropped yet to the general public that are rolling out to paid Acquired limited subscribers. Those folks can join at acquired.fm/lp to get two weeks early access. We have a job board and some really great stuff on there. I just added a couple the other day from Vanta after we got to spend time with them at their office, met their head of engineering, and spent some time with the team. Really cool companies, go check those out.
+
+Lastly, if you enjoyed this episode, share it with a friend. You don't need to shout super loud from social media hilltops. We like that high affinity, one-to-one stuff. Share it with a friend. Think of someone that has talked about some of these concepts with you and see if they'll take a listen. They might enjoy it just as much.
+
+David: Indeed.
+
+Ben: With that, thank you so much to Vanta, Vouch, and our friends at Softbank Latin America Fund. Listeners, we will see you next time.
+
+David: We'll see you next time.

@@ -1,0 +1,623 @@
+Ben: Welcome to Season 7, Episode 5 of Acquired, the podcast about great technology companies and the stories and playbooks behind them. I'm Ben Gilbert and I'm the co-founder of Pioneer Square Labs, a startup studio and venture capital firm in Seattle.
+
+David: I'm David Rosenthal and I am an independent advisor to startups and an angel investor based in San Francisco.
+
+Ben: And we are your hosts. Today, we tell the story of a company that has changed every single one of our lives, Twitter. Whether you use the product all day, every day—like I know many of you out there do, ostensibly as part of your jobs—or you have just seen the occasional discomforting tweet from a world leader. There is no doubt that Twitter impacts us all, especially heading into this historic US presidential election.
+
+But how did these 140 character messages that grew out of the SMS protocol eventually play such an outsized role in our society? Conversely, why is it that despite being the heartbeat of the world, Twitter still pales in comparison both in user numbers and in revenue to its juggernaut, social media cousin, Facebook?
+
+David: A lot of ink has been spilled on Twitter's founding in its early days of musical chairs between various founders and board members. Most of our listeners know all about that. As Ben and I were reflecting on what the Acquired way to do a Twitter episode would be, we realized that there actually was this pretty significant fork in history—you might say it turned on a knifepoint—where starting in about 2010, it could have been Twitter that ended up owning Instagram, not Facebook, and the conversation we'd be having today about mobile, consumer, and social could all look very different.
+
+Ben: Indeed. We have the most authoritative source possible to help us tell that story, especially this period of Twitter. The former CEO who generated the first dollar of revenue, scaled it to a real business, and took it public—Dick Costolo.
+
+Welcome to Acquire, Dick.
+
+Dick: Thanks for having me. Great to be here.
+
+Ben: Pleasure to have you.
+
+Well, listeners as always, if you love Acquired and want to hone your own craft of company building, you should join the community of Acquired Limited Partners. You'll get access to the LP show where we dive deeper into the fundamentals of company building and investing in addition to our monthly LP calls where we talk with all of you directly, and of course, our book club and Zoom calls with the authors.
+
+Recently, we had Emily Chang on to discuss her book Brotopia that is now available in the LP feed, if you miss that. And just awesome to have Emily on. So fun to see so many of you on there with us. Looking forward to the next one
+
+If you aren't already a Limited Partner, you can click the link in the show notes or go to acquired.fm/lp and all new listeners get a 7-day free trial.
+
+Now, on to our presenting sponsor for all of Season 7, Tiny, and its founder Andrew Wilkinson.
+
+Andrew, can you talk about some of the success stories or pick your favorite of a company that Tiny has bought and what you've been able to do with it over time?
+
+Andrew: I would say my favorite business is probably Dribble, which is one of the first businesses that we acquired, and we'd followed it forever. I was a designer originally. I got a lot of my original work for MetaLab on Dribble and it was always a business I’d followed, and so I kept in touch with the founders, Dan and Rich.
+
+Finally one day they said, hey, we're interested in selling the business. And so we got on a plane—me and my business partner, Chris—and we went to Boston. We spent 4 hours, worked out a deal, and essentially at the end of the day, they loved the business. They wanted to stay involved. They wanted to still be shareholders, but they wanted to be able to take vacations. They wanted to be able to buy houses, retire, do whatever they wanted. They didn't want to sell to somebody who is going to wreck the business.
+
+As they looked around at all the buyers, they didn't resonate with private equity, they're not finance guys. The venture was terrifying because it locked them into some crazy billion-dollar deal. There's always startups that wanted to acquire them for stock, but they were going to integrate them into the startup, and so we just said, look, we'll do whatever deal you want. We're able to structure something where they got a ton of cash out. They kept 20% of the business. They stayed tangentially involved and together we chose a new CEO.
+
+Today, the business has grown something like 300% and a lot of the original team is still there. The community is super happy, engagement’s up, and it's just such a positive story. I think that business will still exist in 15, 20 years if all goes right. That's just not something you can say about most acquisitions. It's not normally how it goes.
+
+Ben: Well, don’t we know it on this show? Thanks for illustrating that for us.
+
+Andrew: You bet.
+
+Ben: Thank you to Tiny. If you own a wonderful Internet business that you want to sell or you know someone who does, you should get in touch. You can learn more at tinycapital.com or by clicking the link in the show notes.
+
+Alright, David. Take us into Twitter.
+
+David: Before we go into Twitter, we're actually going to spend a little bit of time in another era—a simpler time, if you will—of Web 2.0 of which Dick and another key Twitter person, another former Twitter CEO, Ev Williams were critical parts.
+
+Dick, lots of people know, I think probably most listeners on our show know, your background. You studied Computer Science at the University of Michigan, which my dad, if he's listening, will be very upset because he went to state, but that's okay. We'll make an exception.
+
+Ben: I'm very upset, Dick. I'm so sorry about the last—what 15 years of football? As a buckeye myself.
+
+David: We don't talk about that anymore.
+
+Ben: What rivalry?
+
+David: Then after Michigan, you made the very natural career choice to throw away your Computer Science Degree and go into stand-up comedy at Second City in Chicago. You have such amazing stories from that with Steve Carell and Tina Fey. I got so many other great places we can do talk about that on the record episodes with KERA. But after that when you came back to tech, you first—this would have been the early 90s—you went to Andersen Consulting?
+
+Dick: Yep, early 90s. That's correct. Way back, dating myself significantly. But yes.
+
+David: Right before it was about to all takeoff. Then after a few years at Andersen, you left. What was it that you set up? You started several companies first. FeedBurner actually came a little later, right?
+
+Dick: Yeah, that's right. We started a company as just basically a web consultancy when Netscape first took off. Netscape was my first exposure to it—the Mozilla browser, and then the Netscape browser—when that really took off, this is before the Netscape IPO. But when that stuff started to happen, it became obvious to me that the web was this really extensible thing and place, and that was where most of the innovation was going to occur in the immediate future, which was true but not universally understood at the time. I started a little web consultancy, a little web design, and technology consultancy called Burning Door Networked Media, and that was the beginning of it. FeedBurner was actually the third or fourth company we created.
+
+David: Was it the first one that was SpyOnIt?
+
+Dick: That was the second one. The idea behind SpyOnIt was just look, there are all these things happening over the web and you got to go check them out to see when they change or see something happen. We just called them spies. You should be able to set little spies on things that come and alert you and find you and something on the internet changes in a way that's interesting to you. Super cool little early alerts idea that worked really well and sold that to a company called 724 Solutions which is a public company in Canada.
+
+David: The reason that I wanted to bring up SpyOnIt was I’m wondering if it was a predecessor to RSS. I remember going and checking, being gadget blogs every day like, oh, has anything changed? Have they posted new stories? People were just starting to think about like, hey, you can push updates to people on the internet. Is that how you were thinking about it?
+
+Dick: Yeah. Both SpyOnIt and FeedBurner were really the brainchild of one of my co-founders, Eric Lunt. He had come up with the ideas for both of those companies, and that's correct. The idea behind FeedBurner was just, look, there's going to be this new world of syndication that's important, as people stop going to all these different websites to see if something's happened and start aggregating it or pushing it to individual places.
+
+The idea behind FeedBurner was it will be important to sit between publication and subscription because there will be all sorts of interesting things that happened. That intersection of publication and subscription, and we should do that. That was the idea behind FeedBurner. Basically managing syndication feeds for publishers, and doing things to them, and manipulating them to make the subscription experience better and then pushing them out.
+
+Long-winded way of saying yes, those two companies were very much related in the way we thought about the future of how content was going to be consumed.
+
+Ben: We have a lot of younger listeners who probably don't really know what RSS is and it's best explained, I think as a podcast player for text. It's an app that you open with all these different feeds.
+
+Dick: That is exactly right.
+
+Ben: When you said and did all sorts of interesting things to it, when you manipulated these feeds, it was the primary monetary value driver, the fact that you could insert ads into feeds.
+
+Dick: That was the primary monetization driver. Publishers obviously make money, most of them did, before there were paywalls on anything by people consuming ads on their sites. If the content starts to be syndicated and there aren’t ads in the feeds, then publishers aren't going to make any money, and that's a problem. That was the monetization idea.
+
+But there was just a bunch of other stuff we did to normalize the way they could show up in these things that are called RSS readers that were basically where all the different content got aggregated, just stuff to make publishers’ lives easier, be able to understand where their subscribers were, how many of them were there, how many of them had actually read articles—all that stuff.
+
+David: And of course, you say reader. Again, for our maybe approaching middle aged listeners, like Ben and me, they’ll think of Google Reader. Your FeedBurner, of course, ends up at Google, as does Ev’s company, Blogger. What was that like?
+
+Dick: I met Ev in Web 1.0. I'll make this super short story. When this company, Miller Freeman, was a conference company, and they had this Web Design Summit Conference in the late 90s. Ev and I actually met through that. I think he was on their advisory board or something, and I taught a couple of sessions at the first one or two of those. We didn't keep in touch much.
+
+When Google started looking at FeedBurner in 2006—it was over a year before they actually acquired it—Evan, Biz, and those guys were at Google, having acquired Blogger a couple of years earlier or a year or so earlier, that's how I got re-acquainted with Ev.
+
+Actually, by the time we got to FeedBurner in 2007, and I was working for Susan Wojcicki who is running ads at the time and is now the CEO of YouTube, most of the content, advertising, and AdSense strategy had been baked, and FeedBurner was a, look, if content syndication becomes important, we're going to need to be a player there on the ads front. That was the logic behind the acquisition.
+
+But by the time we actually got there, Ev was, in mid-2007, Ev was gone and doing obviously Odeo/ turned into Twitter. As 2006—when they started pivoting from Odeo to Twitter—and then 2007 when it started Ashton Kutcher-CNN stuff started happening.
+
+David: The race to 1 million followers.
+
+Ben: Dick, are you keeping in touch with them at this point, or are you heads down on what you're building at Google?
+
+Dick: We're keeping in touch with them at this point. I ended up putting some money into the, I think that was the seed round in Twitter, that Union Square Ventures, Fred Wilson let us put a personal check into the seed round on Twitter. I think that's going to work out for me.
+
+David: So that meant you didn't need an equity grant when you joined as COO because you're already—
+
+Dick: Yeah. I really screwed that up.
+
+David: We’ll come back to all this in a minute. But you end up doing Twitter's first actually, revenue deal is a data deal with Google on this front.
+
+Dick: Yeah, that's right. Google and Microsoft. I think we closed them both on the same day or launched them on the same day or something, too. But yes, that's correct. The first revenue deal at Twitter was a data deal with Google.
+
+David: So in 2009, you finally made the jump from angel investor to executive. You joined Twitter's COO and then in 2010 you became the CEO. We were just talking about acquisitions of FeedBurner and Blogger back at Google. This has been chronicled quite a bit, but there was a lot of acquisition discussion going on at Twitter at the time. The first was before you joined when Facebook tried to buy Twitter for $500 million. This was years before any revenue and then there was a second round right after you joined. What was that discussion like?
+
+Dick: They're always the same acquisition discussions. It's funny. It's like 16-year-olds dating, and what I mean by that is, hey, we would be interested in a strategic discussion. Would you be interested in a strategic discussion? But otherwise, we're not interested in a strategic discussion. It's like that. I'm not really exaggerating it. It really is like 16-year-olds trying to see if they should go out on a date or not and then not want to be embarrassed if the other person says no.
+
+Then, of course, everyone says we're not for sale. You may be surprised, maybe it would be. In most cases, these things are like, they are in movies where there's some sophisticated plan of attack. It's just more informal conversations—we've been doing this, working on this data deal, stuff you're doing is obviously super important, we can see how it fits into our company in all sorts of interesting ways, let's at least have the conversation.
+
+You have the conversation and obviously, it all comes down to, as it always does, look, do we think the probabilistic outcome of us doing this on our own is better than calling it a day here and significantly so, then it'll be worth the work we're going to do over the next few years?
+
+At every step, we thought it was. At least when I was with the company, when we were having those discussions at every time there was an acquisition offer, we felt like the probabilistic outcome of us being able to do something a lot better than that, and with more significant returns over time, we should do it on our own.
+
+David: I don't know if they still do it, but Biz Stone and Peter Fenton used to come guest teach a class at Stanford GSB in Peter Wendell's Venture Capital class, and tell this story of that day. I told my wife afterwards and she was like, this is the epitome of tech, the way Biz told it was. He and Ev drove down and met with Zuck at Menlo Park. By that point in time, I think they'd left Palo Alto campus and the discussion is for between $500 million and $1 billion-ish dollars to sell the company. Which by the way we ran the math on that, and if it were $500 million in Facebook stock back then, in 2008 that Facebook was valued at $15 billion, that would be $27 billion today in Facebook stock.
+
+Twitter made the right decision by not taking that offer. He joked that on the way back they were discussing and Ev said something like, well, if we're worth $1 billion, we're worth $10 billion, and it's so true.
+
+Dick: That's a very Biz Stone thing to say. He's got this sort of very Zen way about him. That doesn't surprise me.
+
+David: The more interesting way to look at this was Zuck was then, and is still incredibly smart as in many things and as an acquirer, and at this point in time, Twitter was growing faster than Facebook.
+
+This was a little later that Twitter hit 50 million MAUs, but the growth was accelerating significantly during these years. When you showed up a little bit after these discussions, there was still no revenue at the company. I'm curious to hear your perspective on what it was like building it, both in terms of how you first did this distribution deals with Google and Microsoft to monetize, but then also building out the ad platform.
+
+We've talked about a bunch on this show whether it's Google or Facebook, there aren't that many people that have built out ad platforms at scale like you set out to do when you arrived. How did you even think about even starting to do that?
+
+Dick: I'll separate the two things, the two data deals with Google and Microsoft. I got in there September maybe August 29th. September 1st was my first day and we had those two data deals done at the very beginning of October and were just the first priority, like, let's get these things done.
+
+There have been discussions going on back and forth for a number of months now, that kind of been dragging on. I'll go get those wrapped up. We went and did those two data deals but at the same time those were a fixed amount for a fixed period of time. Who knows, whether we're going to have the leverage to do those same deals again two years down the road. We knew we needed a more scalable strategy. It was pretty quickly decided to pursue an advertising strategy.
+
+The big challenge with Twitter and building an ad network around Twitter was unlike Facebook for example, the Twitter content went all over the place. It went to Twitter.com. It went to third party clients. It went to SMS alerts. It went to ESPN.com, and the New York Times, and on and on. We realized right away, we need an advertising format that goes everywhere the tweets go. From there, you quickly realize, well, the one thing that can go anywhere, a tweet can go as another tweet.
+
+So we'll make the ads tweets and we'll just inject them into the feed. Whether it's a syndication feed, or a third party feed, or our own site. That was the birth of the native—probably much to the dismay of a bunch of your listeners—it was the birth of the feed-based ad that ended up being what's used in all these products today, Facebook and Pinterest.
+
+Ben: I didn't realize that. Twitter pioneered that before Facebook?
+
+Dick: Yeah, Facebook ads were in the AdSense ads. They were off to the side on facebook.com. They weren't in the feed. Instagram, et cetera. Necessity is the mother of invention. The reason we invented that is because we had to. There was no demilitarized zone of tweets. The sidebar where to put stuff there was just the feed. The beauty of that innovation was, we’ll be able to measure engagement with the ad in those same ways you measure engagement with the tweet.
+
+We had this visiting professor at Stanford, Ashish Goel. Ashish came up with the idea of using the tweet ad engagement as that will be the way we charge instead of cost per impression or cost per click. We’ll charge based on cost per engagement. They click and open the tweet, or they like it, or they retweet it, or they reply to it. Those are great indicators of engagement and he was the father of thinking about the way we built the ad model and the monetization engine behind it and charged for it. That was all him. He was the thinker on that.
+
+Ben: And how do you make that management decision that, we’re pioneering something new here. We have this visiting Professor who's a genius. We are going to sort of—
+
+Dick: Wait, how come he's the genius? I just described to you 90 things that we came up with. Now Ashish is the genius. No, Ashish is—
+
+Ben: I thought you said he was the father of the—
+
+Dick: Ashish is a genius. Ashish just got the awesome characteristic of being a very soft talker. You always feel, I think I just missed something important there that he said, but I already asked him to repeat himself. Now I don't want to look like an idiot. Anyway, I'm joking. He was the founding father of the way we thought about the ad model inside the company and the way we charge for it.
+
+Ben: So interesting to think back to this point. I already exclaimed earlier. I was surprised that this predated Facebook’s, now multi $100 billion cumulative revenue overtime ad format. Twitter pioneered this. It's important to remember Facebook was just garbage on mobile at this time. It was well before the Instagram acquisition. Everyone is basically worried that Facebook's moat wouldn't translate to mobile.
+
+Dick: Well, they were wrong. There is a lot of money to be made. Buying Facebook at 19 when it crashed after the IPO because they thought they wouldn't figure out mobile. Betting against Mark has always proven to be not a very good strategy.
+
+David: There was the mobile product issue of Facebook. I want to get into it in a minute. All the companies you were buying at Twitter and bringing the Twitter native app itself was an acquisition, right?
+
+Dick: Yep.
+
+Ben: Atebits.
+
+Dick: Yep.
+
+Ben:  Loren Brichter’s app.
+
+Dick: That's correct.
+
+David: There were the product issues, but also I think you raise an interesting point. I hadn't thought about it. It's also just the nature of the ad unit itself. Facebook had done that big Microsoft deal. It was essentially still just display advertising on the site at this point, right?
+
+Dick: Yes. I think they probably charged based on clicks. It was AdSense style. The ads were over in the sidebar. The news feed was in the middle and then on the right hand side of facebook.com you’d have those bar of ads.
+
+David: Wow! You tell that to the kids today and they don't believe you. When you made the decision to pursue Ashish's vision of this ad model—
+
+Ben: I think it was Dick’s vision from what I heard.
+
+David: —based on engagement, there's a ton of pieces you got to go build out. It’s like heavy engineering left, there's the product aspect to that, and then the data feed aspect to that with all the third party applications, and then there's also the, now you got to go spin up teams to convince advertisers to do business a different way. What was your Gantt chart of planning all this?
+
+Dick: I can't remember that far back. I knew that I needed someone on the go-to-market side, meaning the sales side to build that whole organization. I didn't know anything about building a sales organization. I didn't know anything about building what sales ops was, what sales were fine. I didn't know anything about that stuff. Before Google had purchased FeedBurner, we had been in discussions with another company and that company was Fox Interactive in Los Angeles. Adam Bain was running Fox Interactive and had built their whole ad stack and ad platform at Fox Interactive.
+
+Adam is president down there. He both understands the technology and is probably one of the best business development networker relationship sales people I've ever met in my life. I'm going to try to convince him to come join us.  I spent about four, five months trying to travel back and forth to LA, trying to convince Adam to come up and be president of global revenue at Twitter. He would say let me think about it. He was super hard to convince, but I finally convinced him to do it.
+
+Of course, now we're partners on the investing side. I remember telling the board I got the perfect person. Keep in mind, it's a very Silicon Valley board. Not all the investors on it were Silicon Valley, there was Fred Wilson from Union Square Ventures in New York. Traditional tech-heavy mindset of these are the kinds of people who do these jobs and these are the kinds of people who are good at those jobs. We should go to Google and get one of their people like Facebook did, and I was like no, I got the guy, he runs Fox Interactive. Everyone else is like, what? We're going to hire someone from Fox to do this? But we did and that was a great decision.
+
+Adam built one of the great go-to-market organizations I would say in the last 20 years. So many of the leaders on that team have gone on to run other organizations and he's developed tons and tons of great leaders. That team was amazing. That was on the go-to-market side. Once he got in I was like, you take the ball and run with it. I don't know how to do this and you do.
+
+David: Just to underscore that, isn't people know about Adam Bain and he’s your partner, but he did an absolutely incredible job. That first year revenue in 2010 was mostly in the Google and Microsoft deals. But then the first year of ad revenue in 2011, Twitter did over $100 million in revenue and then 3X that the next year. It's interesting, the Twitter revenue story, is this incredible story.
+
+Dick: Most people don't realize we went from $0.00 in revenue before I got there, not close to zero but zero, to a run rate of over $2 billion a year when I left in July 2015. Five, six years later, $0-$2 billion. Amazon, Facebook, Google, maybe Spotify, you'd have to go check—but there aren't many that went from $0-$2 billion faster than that. The point being right up there and with the new ad format and from a challenger position, all those other companies were like, you got to buy from me because I'm number one and I'm the biggest, and we did it from the challenger position. Facebook is always being the 900-pound gorilla and us trying to fight for survival. It was super impressive what he was able to do.
+
+The guy is tireless. I remember one time—I'll talk about the product and engineering side in a minute—but I remember one time, in probably 2012, we went to a sales conference in Chicago, we had a sales conference with a bunch of marketers. The next morning, on a Wednesday morning or something, Adam and I are in the hotel lobby at midnight going through the deck that we're going to use the next day. Go up and go to bed, see you at 7:00 AM. Come down at 7:00 AM and he's still sitting in the same chair wearing what he was wearing last night, working on the deck and I was like, dude, you got to speak for an hour, how are you going to do that? He just powered through it. He’s amazing. He's just one of those people that can go and go.
+
+Ben: On product and engineering, today we take this thing for granted, anyone who's bought ads on the Internet. There's a self-serve portal that you can go to and get incredibly granular on who you want to target, and then it all just works and it gets displayed to them in the way that you expect. There's probably only 10, if you include Reddits and the Snapchats, and everybody has different levels of granularity and different formats of what the ads can look like. Twitter was one of the first three. How do you do that when it's a technology that's only been built before by Google and other people who have copied Google and hired Google's team away?
+
+Dick: The same way. That was one where we definitely knew we had to go get people from Google involved, and we did. The person who ended up running ads engineering, Alex Roetter, and built that, we recruited out of Google. And then went and found other people who had done things like yield management and all of the crazy intricacies of auction-based advertising, pricing, and had done that at Google. We went and got some of those people.
+
+It's just hard and the learning curve on it is tough, and especially on some of the yield management stuff. On product and engineering, we went and got engineers who had done some of this stuff before at Google and on the product side, there were a handful of product managers. The first one who is now an investor, early-stage VC, was the PM on the very first ads product that promoted tweets inside Twitter search. That Kevin Weil, who had been on the team. Actually, Kevin Weil was at the company before I got there and had been on the data science team. Kevin Weil then came over to the product side and years later, the vice president of product at Twitter. And then after he left Twitter, he went over to Instagram as VP product there.
+
+David: I'm curious if you're willing to talk about it. What was it like recruiting all those folks? How did those conversations go? I assume Google was paying them extremely well.
+
+Dick: It was hard because Twitter engineering, despite having some extraordinary people on the team, [...] running the data science team was extraordinary when I got there and there are a bunch of people. I couldn’t go through all the specific names. There were just a bunch of extraordinary engineers on the team, some of whom are Evan Weaver, who's CEO of FaunaDB now. There's a bunch of great killer engineers on the team when I got there.
+
+Despite that, Twitter engineering had a horrible reputation. Why? Because of the Fail Whale. We just couldn't keep them site up. Go to try to recruit engineers to come work at Twitter and they're like, what's the matter with you, boneheads? You can't even keep your website up and running. I'm going to come as the most famous HTTP 500 return code in the history of the United States. Then you're like it's all built on Ruby on Rails.
+
+It's just hard, but we did it. Kudos to the people who took the risk and came in and worked on it because it was a slog. Migrating off of Ruby took forever and there were quarters where we couldn't do any new product work. We just had to refactor the back end because it was such a trainwreck. Because it was pieced together, it was cobbled together in the early days just to keep it up and running, and keep up with demand. That's just the way these things go.
+
+David: You've told this story many times before, but it's too good not to share. Can you talk about when the Russian president stopped by the office?
+
+Dick: Medvedev came by the office. He's going to write this historic tweet to Obama. Surprise, the site crashed. So we're like, oh man. One of the engineers fake wrote a back end for the tweet that Medvedev sent from the iPad on stage at the Twitter headquarters and rewrote it, and inserted it into the database. Look, it worked. It was madness. The next morning in the New York Times, there's this big headline: President Medvedev, historic communication with Barack Obama on Twitter. Meanwhile, at the time, you're like oh my God, you've got to be kidding me.
+
+David: We literally hardcoded that.
+
+Dick: Literally hard coding the tweet that he wrote. Stupid stuff like that. Anyway, that stuff happened all the time and there was truckloads of heroic work by engineers who would have much rather been doing other things—refactoring backends and doing all the work to get us off the monorail, we used to call because it’s monolithic back end into a more robust service-based architecture, while still scaling the whole company end-users.  That was real work and it was hard to convince people to come do it, but we did.
+
+David: To my mind at least, there's one other piece, maybe two other pieces, but one other piece in particular I want to cover to all of this as you're building this engine, and that's the third party piece of this. If the advertising model for Twitter is tweets, people consume Twitter all over the place.
+
+Dick: It was obvious to me when I was CEO for a couple reasons, and I'll go into them and they're not well understood but it doesn't matter, that we had to own the user experience. You can't, despite what anyone else wants to say, you can't build an advertising business in which a bunch of other people own the user experience because it doesn't make any sense. You need to be a nonprofit at that point and just decide we're not being serious. I'm not being facetious.
+
+David: Totally. I mean, it makes a ton of having—
+
+Dick: Yeah. You can't do all the work to build the service, run the service, de-spam the feed, do all the user customer service work with the hundreds of people that are responding to user requests—then send out all that content to a third party that takes the content, de-spam the clean, de-spam the real-time feed and puts their own monetization around it. It's stupid. You wouldn't take the New York Times and hand it to, oh, if you're in Chicago, then you want to have the New York Times. You can’t just take it and sell all the ads yourself and keep all the money. The company’s out of business a day later.
+
+It was obvious we had to own the user experience. At the same time, I think it was right before I became CEO, there was a company that started realizing, look, if Twitter is not going to go on their own network, we should.
+
+David: TweetDeck right?
+
+Dick: This is the Idealab guys, Bill Gross. Bill realized smartly, look, if you guys aren't going to own your own network, I'm going to go aggregate it myself. He started going out and buying a bunch of the third party clients, maybe two or three. I don't remember how many bought and then I started realizing, oh, Bill is going to go build the network and then go, great. I now own all the users. I'm going to monetize them however I want and hold us hostage. So I was like, okay, we can't let these third parties do this anymore. And that was the beginning of the thinking of third parties differently. I wanted to have a platform in which third parties built into Twitter instead of taking our stuff and building away from Twitter.
+
+We had prototypes for a number of kinds of platforms in the first couple of years I was CEO around Twitter Cards that never materialized or came to fruition the way I'd wanted them to. Thesis was always, let's have a platform on which people built into what we're doing, not take our stuff and build off of what we're doing. That's a real platform, and that's where you get network effects.
+
+Ben: Is there counterfactual to that? Well, This is why RSS didn't succeed because all those publishers own the content that got plumbed into someone else's experience and they couldn't, in a first party way, control the ads in the engagement and the ads in the data coming back from the ads.
+
+Dick: No, I think the reason RSS didn't succeed is just because Facebook and Twitter displays them. Just became easier for everyone in the world to use these things instead of RSS readers.
+
+Ben: Makes sense.
+
+David: I remember so viscerally when for me personally, that lightbulb went off and I was, oh, I had been a religious Google reader RSS user. But then I was, wait a minute. I don't actually need that anymore. I can just be on Twitter.
+
+Ben: I'm curious, maybe reflecting back on it today, there's an economic opportunity that comes from being a platform that developers can build experiences on, and you can think of that as maybe the 10-cent-type opportunity, and there's an opportunity that comes from being the greatest place to buy ads in the world, which Facebook and Google basically have a duopoly on. Twitter also makes $3 ½ billion in revenue on, but not $70 billion or not $100 billion. How do you think was the right call to build an advertising business versus being a platform company?
+
+Dick: Yes, because the road to being a platform company for Twitter at the time—based on the way the API had been leveraged to date, 95% of which was to build people going and building their own clients and taking the stuff out of Twitter and moving it away from Twitter and doing whatever they wanted with it—the road from that to building a platform where developers could build into Twitter was far. Having gotten the ad network and ads business up and running in the short time we did and having struggled with building out the platform of Twitter Cards the way we had theorized was possible and could be awesome. I would say that in hindsight, that proved to be the right decision.
+
+David: It's hard to imagine going from that to a WeChat-like experience.
+
+Dick: It was just too long a road.
+
+Ben: Yeah, it's also the most common application you could build upon Twitter's platform is a Twitter client. The vast majority of apps that people could conceptualize were that. It wasn't like it was Windows. It was Twitter.
+
+Dick: Yeah. Correct.
+
+David: Twitter Cards. This is the perfect segue to talk about the other thing that was going on at this time. It's so fun talking about all this because so many hugely important, both decisions and events, happen for the Internet and what shapes everything today right around this time. Instagram basically launched on Twitter and I believe was using Twitter cards. Is that right?
+
+Dick: Yes, and they used our API. They used the API to build the network. The graph. Yeah, we were close to Kevin. Probably, he’s annoyed by this. I remember everyone calling him Mikey. I'm sure he’s like, no, I stopped going by Mikey 10 years ago, jerk.
+
+David: Kevin had been at Google with you. Were you there all at the same time?
+
+Dick: Yeah, I think we may have. He was in CorpDev if I remember correctly, and we may have crossed paths once or twice, but not tons. When they started, Jessica Verrilli, who was in CorpDev at Twitter and was there before I was there, and Kevin were close. We were close to them from the get-go, liked what they were doing, knew it was unique, and different.
+
+There were a bunch of things. There was one camp, there were already filter companies. Hipstamatic was doing it. There were a couple other ones. It was pretty clear that these guys, it wasn't just the filter, you don't have to think about the aspect ratio, the this, or the that. It's just a square. It's always going to be a square and we're going to make it look great. Just point and click. We're going to make the photo look awesome. They're all going to be a square. It's all going to show up the same size in the feed. That was a genius innovation and it was just the two of them for a while.
+
+I remember even when we tried to buy the company, probably getting ahead of where you want to be, in March 2012 when I tried to buy Instagram, it was before they had raised the $500 million valuation round from Greylock, just before that. In March 2012, meeting with Kevin, Mike, me, and just a couple members of my board, Jack, and Peter Fenton just couldn't convince them or get it over the finish line. A month later, I was in Tokyo, April. They went and raised the money, instead. They're like, look, we're going to go do it alone. We're going to raise this round from Greylock.
+
+Ben: What was the dollar amount you were talking about with them?
+
+Dick: A lot. It was over 10% of the company. It was well over 10% of the company. Whatever the valuation was at that time of Twitter, it was a lot. Maybe $600 million, something like that.
+
+If I remember correctly, we made it $600 million to the cap table, but Kevin and Mike get a lot more because we're going to throw in a bunch of stuff just for them.
+
+David: The crazy thing is that actually would have been a much better deal than what they did because when you went public the next year, 10% of Twitter would have been probably more than where Facebook stock was trading.
+
+Dick: I think those guys would tell you things worked out just fine for them. Anyway, I remember just trying and trying. They came back and said, we're going to go do this raise instead. I was like, oh, good luck, you're going to crush it.
+
+Then, I was in Tokyo in April. I woke up and had a text message like, hey, Instagram just sold Facebook for a billion dollars. I remember thinking, like, oh, man, that's rough for us. The beauty of Instagram, we had text, but Facebook always had photos. The beauty of Facebook was everybody pours all of their photos into here.
+
+I remember thinking in February and March, I've been working with Ali Rowghani, my CFO, on the acquisition, the numbers, the valuation of the deal, how we're going to structure it, and everything. Ali was also really pushing the board that we got to do this, which was great when we got approval from the board to do it. We just felt like, look, we've got a lock on text and they have a lock on photos. If we can get Instagram, it's going to be a fair playing field.
+
+Yes, they've got this just extraordinary number of users and can crush us in so many ways, but this will really give us a beachhead. Keep in mind at the time, I might be wrong about the numbers. At the time that we're talking about Instagram, it’s like 30 million MAU. It's not 500 million. It's not 200 million. It's like 30 million to 35 million.
+
+Ben: Twitter is 140 million MAU at this point.
+
+Dick: These are big numbers. No one would say this now, but if you go back and read the articles at the time of the Facebook acquisition for a billion dollars, people are like, is Facebook insane? Are they crazy giving them a billion dollars? They've got no revenue and only 30 million users.
+
+We knew we're really in a pinch now. These guys are really going to be able to outflank us and bring real leverage to bear against us. They did. It wasn't too long after that that they stopped allowing Instagram photos to appear inside the feed and Twitter.
+
+The day of the acquisition, we knew, like, oh, man, that's really going to be a problem for us.
+
+Ben: Two things happened. I don't remember the order in which they happened. The first you mentioned, I think to this day still, when you post an Instagram link on Twitter, frustratingly it is just a URL. You're like, come on, guys, can't you get along?
+
+The other thing is that the social graph stopped working. Instagram no longer could use Twitter's API to help you find your friends to follow. How did both of those go down?
+
+Dick: Well, I got a call one day. I think it was from Mark. Mark said, hey, I just want to give you the heads up. The Instagram team has decided that Instagram photos need to be viewed on Instagram. The insert of the Instagram photo into the Twitter feed is no longer going to work and it's just going to be a link.
+
+I think he said something like they're going to shut that off tomorrow. I was like, that's a bummer.. That's really, really bad.
+
+David: I love the phrasing, too. Like, oh, the team has decided.
+
+Dick: It's a bad user experience and I don't think you should do it. More urgently, turned off like four hours from now or five hours from now, the number was just going to break Twitter. We need 36 hours to go make it so that that just doesn't break when you post an Instagram link and at least show the link. We hustled and did that work.
+
+Engineers stayed late that night and we did a bunch of work. People are constantly calling me and emailing me that week like, why did you do this? I didn't do it. Everyone knows that it's a better experience when that photo that you wanted to post actually shows up. Nothing I can do about it. I can't go over there and show them all the mail and say, look at all the people you've made sad.
+
+I think if I remember correctly, we, this whole time don't ever have access to the Facebook API. We were blocked from using it. You can't go use the social graph—fat chance. At this point we're like, well, why are we going to be the schmucks that keep letting everybody use our stuff when we're blocked from using all theirs? Shut that off. Then, it didn't matter because they had the Facebook social graph.
+
+Ben: It is so interesting reflecting back on it. Instagram really has a perfect fit with Twitter—the asymmetric follower model, instead of the friend model.
+
+Dick: The world would have been very different. It would have been fun to see how it sort it out. It would have been, I don't know if the word fair fight is the right way to put it, but we felt like we had a beachhead and an angle to compete if we had that text over here and photos over there with the same follower model and the same way of thinking about the asymmetry.
+
+You could have imagined, in honor of Kevin, he’ll probably want to stab me the next time he sees me if I say this, Instagram still doesn't really have rebroadcast, retweeted, or regram. Jack and I had been talking about it. It’d be great to talk to Kevin. You start to think about interjecting things like that. You really have these services that mirror each other and that would be really, really cool. There are all these ways we would have been able to be a lot more competitive and I would have been fun, but c’est la vie.
+
+David: Well, that's one of the reasons we really wanted to do this episode and focus on this time period, in particular. There is this alternate universe. A couple of people wake up on a different side of the bed one morning or a butterfly flaps its wings in Australia somewhere, and Twitter owns not only Instagram, but also effectively TikTok as well. It was shortly after this, that Vine happened, right?
+
+Dick: That's right. Jack had met Dom Hofmann—one of the three founders of Vine—invested in it. This is a pre launch. Keep in mind, this company hasn't launched yet and Jack shows it to me. Dom comes into the office with the co-founders and immediately was like, I get it, this is genius. The innovations that they made are in so many things now today and are in everything. The Instagram video and everything else of the video is just going to keep playing. It doesn't stop. Then, you have to hit play again if you want to see it. It just sub seven seconds. Remember, Dom’s other genius was it's not exactly this many seconds, even though we say it's this many seconds. It's just short of that because that's the right length. I was like, okay, you're crazy but I love it. He was like, it just replays automatically.
+
+Those guys had come up with a bunch of cool, innovative ideas, like you say, precursor to TikTok. We bought it. It launched. It was number one in the App Store and on iOS for eight weeks in a row.
+
+Ben: Which makes you guys the best venture capitalists of all time. You spotted a product before it launched.
+
+Dick: We spotted a product before it launched, bought the company, and launched it. It goes to number one the App Store. We didn't get the Android client out quickly enough. I think as a result, one of the things that happened was that when Instagram launched a short video, seemingly in reaction to Vine, I didn't think it was going to hurt us as badly as it did.
+
+One of the reasons I think it hurt us as badly as it did is, at the time, if you had Vine and you had an iPhone, the cool kids had Vine and the people had Android, phones were like, this sucks because I got an Android phone.
+
+Then, Instagram comes out with short form videos on both iOS and Android. You also have all the Android Instagram users going Vine sucks, Instagram is way better. That was certainly, certainly helpful to them and hurt us more than we thought it would. Just the ability to bring numbers to bear across that network on multiple products was just as bad as we thought it would be when they first bought Instagram. We knew it would be bad and then it was as bad as or worse than we thought it would be.
+
+Then, we were quick. You can go look at the historical charts. Usage just started dropping off and faster than I would ever would have suspected it.
+
+Ben: Man, that is the best encapsulation of the story of consumer technology over the last decade on the internet. You really can't outrun someone once they have a lead and they have either network effects going among a consumer-user base—look at Netflix. Enough users that are paying, they can amortize the costs of paying for content. It all keeps coming back to the same thing, which is once one of these services hits escape velocity and becomes dominant, it's so hard to ever compete with them on anything close to the same playing field.
+
+Dick: You just said the key point, though. The one place where I always felt—this led into the kind of stuff that we did in 2013 and 2014—that we had an advantage that we didn't leverage significantly enough was syndication.
+
+You can't view Facebook content anywhere but Facebook. You can view Twitter content, billions of tweets per day, all over the web, on espn.com, newyorktimes.com, and in blogs. It's everywhere. You don't have to go to Twitter to see it. It's literally everywhere.
+
+I always felt this was the idea behind Twitter moments. Look, if we can package up things that happen on Twitter into these kind of bundles as they happen, whether it's around predictable things like the Oscars, the Super Bowl, or the 200 of these things a year, whether it's around those or it's around this crazy thing just happened and here are the eight people who are there and their perspective, is on all these crazy other tweets about it.
+
+You can make bundles of those things that then get syndicated. All the other tweets get syndicated. You could start to think about long-term injecting ads into those bundles. That was a place where I felt Facebook can't compete there because they won't let their content be viewed on Facebook.
+
+The comment you just made, Ben, about uneven playing fields always felt like Twitter's advantage or opportunity for a beachhead in competition against Facebook was in syndication. Facebook wouldn't go there. We would have free reign to do that. After I left, that wasn't pursued as aggressively for whatever reason. I know Jack has said, look, the company was doing too many things and had to pair back what they were doing. That's worked out for them, obviously. That was my thinking behind that.
+
+David: Was Periscope part of the thinking around that syndication idea?
+
+Dick: We were constantly looking for beachheads—what are they not doing that we could go do that will be hard for them to do?  Periscope is another company, again, that Kayvon Beykpour had founded. Once again, we bought that before it launched and Kayvon was working on launching it at Twitter.
+
+Meerkat launches and like, oh, boy, Kayvon was a week or two away from launching Periscope when Meerkat launched. It didn't freak me out. It was just like, oh, that's a bummer. My thought was, oh, it's a bummer. Here's something Facebook can go by if they see Periscope and want to compete against it. What was going through my mind? Again, you just constantly have the 900 pound gorilla on your brain and you're trying to think of ways to outflank them, outrun them, or both.
+
+The idea behind Periscope was here's a way we can get a little bit of a flank against them around live content. Twitter is all about live content and those two things together should be awesome. That was the thesis there.
+
+Again, great acquisition. It worked and took off. Then, of course, as you know, Facebook launched Facebook Live. Similar interface where you can just tap on it, get the likes, and see them bubble up. They really ratcheted up the volume of Facebook lives. If you went live on Facebook, the volume of people who would see that was enormous.
+
+When you've got that network, you can just beat the crap out of the new kid on the block. It happened for the second time there with Periscope.
+
+Ben: It's crazy. It's so crazy. There's a food chain here, right? When you look at Twitter launching Periscope after Meerkat, it was obvious two weeks after Meerkat launched, it was the Silicon Valley darling for two weeks. It was all anyone could write about. It was the next Twitter.
+
+Then, suddenly Periscope comes out and you're just like, oh, I feel so sorry for those guys. They're going to get crushed and they did.
+
+Dick: Yeah. Then, Facebook Live comes out and you're like, now I feel sorry for these guys.
+
+David: All these dynamics are true. The Musical.ly story is interesting because they are actually getting it out. They were growing and things were going well. It was a tough slog until the Bytedance acquisition. When Bytedance poured so much advertising dollars into the rebranded TikTok, that's finally when it hit escape velocity, right?
+
+Dick: 100%, yes.
+
+David: Would it have been possible for Twitter to do something like that with one of these products to just say, like, we're going to go raise a boatload of capital? It would have been a very high stakes move. Did that ever cross your guys’ mind?
+
+Dick: No. The things that crossed our minds and that we worked on were big acquisition ideas. To make a long story short, again, this is the kind of thing that became obvious to LinkedIn. They're like, okay, we're subscale. We're just going to be here at subscale unless we do something huge. Then, they went and did the Microsoft deal. We were constantly trying to find that similarly, like, what's the thing to go do that changes the equation?
+
+To make a long story short, there were lots of reasons for all the different ones that we pursued didn't happen or that we thought of didn't happen for lots of different reasons. We just weren't able to find that right fit there. We were constantly thinking about, in addition to how do you outflank these guys or go somewhere they can't go, not sell the company, but what do we go buy, merge with, go borrow a bunch of money from the bankers, and buy this thing? Kind of along the lines you just mentioned that makes this a different playing field. We just were never able to come to the right answer there.
+
+Ben: Did you guys ever think about podcasts? There was Twitter music, but any other audio? That's sort of the obvious. It's not a video. It's not text.
+
+Dick: There were some people inside the company that, of course, would build little things during hack weeks and stuff around that, but I would say no. Generally speaking, no. Obviously, the ultimate irony, since the company was spun out of a podcasting company, Odeo. That would have been amazing and probably the way the movie should have ended.
+
+David: Yeah. I got to imagine a pretty bright spot in all this in the IPO process.
+
+Dick: Yeah, that's a crazy process. Yeah, the IPO is nuts. We put the price of—I'm going to get the specifics wrong...
+
+David: It was $26 a share that you priced at.
+
+Dick: Yeah, I remember that. The S-1 had $13-$16 a share on it. We printed the S-1. Before the roadshow, it was $13-$16 there. Keep in mind, company is seven years old at this point. Started in 2006 is now 2013. The company’s seven years old. It has been around for seven years.
+
+We print $13-$16 share on the S-1. Got on the roadshow, crazy demand, 70 times oversubscribed, or something like that. The night before we're like, okay, we're going to price this at $26. Wow, all right. The price was about $13 a week, seven years to get to $13, two weeks to get to $26.
+
+On the morning of the IPO, you're on the floor of the New York Stock Exchange. I'm actually on CNBC. I'm live on CNBC and I'm being asked questions by Jim Cramer. I hear over my shoulder, I hear one of the market maker guys go, we've got $13 million at $47, meaning it's got demand for $13-$47 or whatever the number was, and Goldman Sachs was the lead left banker.
+
+Goldman guys were going to open the stock and they weren't going to open it until there was a balance of a certain number of shares on both sides of the equation, on both sides of the trade. It took a long time. It was almost 11 o'clock, I think, before it opened, maybe eleven thirty.
+
+Anyway, I hear in my ear. I remember thinking, like, oh, that's funny. I didn't know there were two companies that could go public on the stock exchange the same day. Obviously that wasn't the exact thought I had in my brain. I remember just thinking, like, what could that possibly mean? We're not going to open it. We were, then we did.
+
+I remember that day immediately after it opened. We got on the subway to go up to Midtown—the Twitter New York office in Midtown—to talk to the employees there. I'm on the subway with CFO Mike Gupta, and our banker, two or three other people on my staff, some of my team, and my team we’re on the subway.
+
+This guy looked at me. He’s like aren’t you the Twitter CEO? I was like, yeah. He's like, what are you doing on the subway? New York office, this will be a lot faster. He's like, huh.
+
+I get off. I go to the New York office. I talk to the team there. Then, we were like, we got to go. We got to go back to San Francisco. We're not going to do the traditional stay in New York and party. We got to go back and talk to the team.
+
+I got on stage. I got back to Twitter headquarters. Everyone's freaking out, of course. I got on stage and just said something along the lines of it took us seven years. Seven years. You know how hard it was to build a company that was worth $13 a share. While I was gone the last two weeks, good job whatever you all did because you doubled the value of the company while I was gone. Whatever you were doing, that was amazing.
+
+Even more amazing was that while I was gone this morning on the New York Stock Exchange, you almost, again, doubled the value of the company just sitting here drinking champagne all day. Good job. Everyone's laughing.
+
+I said, listen, the reason I say that is for the first time, we now have a stock that won't just go up once a year. It'll go up when there's financing. It's going to go up and down every day. You all know sitting here, that you didn't do anything today to increase the intrinsic value of the company, the worth of the company, by almost 100%. You know you didn't.
+
+Just remember, when the stock goes up for whatever reason or the stock goes down for whatever reason, that's now disassociated from what happened inside the Twitter offices on these days. Keep your head down, because that's going to happen. They're going to be days when the stock gets hammered, people are going to look around, and go, what happened? It's not going to be what happened. It's just disassociated from the focus and goals we have to have inside the company on a day-to-day basis. You're just going to have to build resilience to that and be mentally tough about it.
+
+I got off stage and I thought, man, I really steal the company for the day. The stock goes down a lot for the first time. Of course, as you might imagine, when the stock went down a lot for the first time, people were like, what's going on? I just had this conversation.
+
+Of course, the people who are starting to multiply their options buy the stock price assuming it's never going to be below that and I'm going to be able to buy this kind of house. When something happens, they get upset and worry about it. Anyway, I thought I was doing this really genius ninja move and it didn't really work.
+
+Ben: Well, we should say it would have been hard for anyone with what the stock was doing to install any sort of measurement.
+
+Dick: It went up to $75 before the end of the year.
+
+Ben: That’s so crazy.
+
+Dick: A multiple on $75 to what we were doing in revenue. Even the EBITDA at the time was bananas.
+
+Ben: You talked about that $40 whisper in your ear while you're on CNBC and then it almost doubles again in the next six weeks. Just wild. Of course, it has a six month crash back down to basically the IPO price or a little bit below from there because there's just so much hype around the company at that point.
+
+Dick: I think one of the interesting things that happened was we're pretty confident about our financials. We were just like, look, the work we got to do is driving MAU growth. It worked. I missed that on CNBC that morning. They were like, oh, congratulations, a really well-run IPO. It's like, man, we got a lot of work to do. I said it during the roadshow over and over again.
+
+I think I said, man, we got a lot of work to do, like four times that morning on TV. Then, we did. I thought we were going to get more credit for our outsized financial results. People would go like, okay, they didn't grow users as much as we wanted to this quarter, but boy, they really crushed it on the financial results. We're going to give them some leeway here. It became clear after the first quarterly call that we were going to be judged almost exclusively on user numbers, quarter to quarter on the big MAU number that was on the S-1 we talked about all the time compared to Facebook's MAUs and all that stuff.
+
+David: Yeah. I can imagine the narrative of people that were buying the stock at those prices, it was, hey, this is the next Facebook story. This is going to get to 2 billion users. That's the only way you would justify that, right?
+
+Dick: We always had a goal. Sure, the company still does value inside the company to reach every person on the planet. Twitter will be at its best when everyone is on it. Certainly something we wanted to have happen was just harder.
+
+Again, people even at all hands meetings at Twitter, people in charge of growth on the product team at Twitter would get up at all hands meetings and type into Google, I don't get how to or I don't get. The first suggestion would be how to use Twitter. It's just hard for people to get until they get it. It's one of those things that once you get it, you get it. Until you get it, you're like, why does anyone use this thing? It's not intuitive for most people.
+
+It's always been more of a slog. It's one of the reasons I was like, well, the beauty of syndication is you don't have to get Twitter, log in, create a follower graph to leverage it, and use it, and get use out of it and get value out of it. Let's go build into that. Let's go build moments, distribute those things, syndicate them far and wide, and make a lot of money that way off the billions of people who see tweets in syndication. It was another sort of rationale behind the desire for syndication to be a more powerful force and monetized force inside the company.
+
+Ben: Yeah. Dick, if we just speak really abstractly for a moment.
+
+Dick: I thought we have been speaking abstractly?
+
+Ben: Well, I'm sorry about the financials, if we want to go the other direction.
+
+Dick: I’m kidding.
+
+Ben: What other reasons are there other than the product, for whatever reason, is hard to use and always has been hard to use? Twitter, when you left, was about 300 million users.
+
+Dick: It was more than that, but yes. Give or take.
+
+Ben: Okay. The last reported MAU numbers a year ago was about 330 million. It's a product that in large part, in terms of MAU numbers, appears to have basically topped out. Now, the mDAU—Monetizable Daily Active Users—continues to climb at a great clip. The team's doing a great job executing on that. Why is it that Twitter doesn't have Facebook's DAU or MAU opportunity?
+
+Dick: The beauty of the Facebook network is that it's your friends and contacts. When they first built Facebook and there's nobody graph to go use, what do they use? They use Gmail.
+
+If you'll remember, when you were not at a university and you started to use Facebook, they said, you want to import your contacts from Gmail? Yeah. Great, type in your Gmail password here. Then, they went, scraped your Gmail contacts, and built your graph.
+
+The Facebook graph is your friends, your family, and the people you talk to every day. The Twitter graph is The Economist and that one dude who's super hilarious, ESPN, that writes about the Milwaukee Bucks. He's not on your phone. He's not someone you email on Gmail.
+
+There is no starter kit for your graph—for the interest graph on Twitter—like there was for Facebook. The beauty of that is every time someone says they built a Twitter killer or Twitter competitor, it was easy for us to shrug it off because the network is super resilient. The nodes in the network, the connections, and network were really unique, hard to build, and took a long, long time. To think you're going to go rehydrate that network in a week, it's not going to happen.
+
+On the other hand, if you've got a network like WhatsApp, you remember shortly after Facebook acquired WhatsApp, it crashed for eight hours. Telegram added 13 million users in that six hours. Why? Because it's just your contacts. You import them from your phone and you've rehydrated the exact same network in a matter of minutes. Those networks are less resilient over time and can be hit the side of the face in a moment because they're so easy to rehydrate.
+
+The beauty of a LinkedIn or a Twitter is there are difficult networks to build. There aren't other network node types like them that are much more resilient to competition.
+
+David: Yeah. Twitter's the only social platform, I think, that exposes bidirectional. You can go to any Twitter account and see what accounts that Twitter account follows. You certainly can't do that on Facebook. You can't do that on LinkedIn. To your point, okay great. You extract that data. It's not going to get you anywhere.
+
+Ben: Yeah. Dick, I have a follow up question. It's sort of a similar question but on a different axis. It's this sort of comparing Twitter to Facebook. We should first acknowledge, oh, my god, Twitter is a company that has 300 something million users. That's amazing. They do $3.5 billion a year in revenue right now. I can't fathom how difficult it is to build an enterprise that does that.
+
+At the same time, when you compare it to Facebook, the amount that Twitter is able to generate in revenue on any given user, and you can look at this number globally, you can look at this number scope specifically to the US, is lower. Is there an intrinsic reason about why that is, will always, or is more naturally the case?
+
+Dick: It's a good question. I'm not sure what the answer to that is, to be honest. I don't know what the upper bound on either one of those is. Obviously, it's the case that on Facebook you can micro target most everything about those users. An advertiser—you know where they live, you know where they went to school, you know what high school they went to, you know relationship statuses, and on and on and on.
+
+On Twitter, you don't. You don't know that. You have an interest graph, but you don't have a detailed demographic understanding of your users. The ability to micro target by demographics gives them extraordinary pricing power. Who knows? It's hard to know where either of those tops out, I guess, is the short answer.
+
+The only reason for the difference that I can think of are interest targeting versus demographic targeting. It's possible that you could come up with a world in which nothing really changes about the way you think about either user base, but the average revenue per user or the value of a user flip flops because of some other innovation. I just don't know what the answer to that is.
+
+Ben: Yeah, it's interesting. It's funny. We don't know any demographic information about our listeners, but we do know what they like. From that, we can extrapolate that they're an incredibly valuable audience.
+
+I don't need to know demographic information to know that everybody who listens to us skews toward founders, skews towards executives, skews towards investors. Knowing that means that there are much more valuable audiences than if I knew the demographics stuff.
+
+I've heard that argument before, that Facebook has more information so you can target more granularity, so you can charge higher amounts. You can guarantee that someone's getting exactly the customer they think they're getting. I always come back to this thing where, gosh, if you can know the things people care about, for certain, used cases are much more valuable about that.
+
+Dick: I'll put you in touch with Matt Derella, the head of Global Revenue at Twitter. He would love to talk to you.
+
+Ben: I'm sure he does not.
+
+David: Ben could be a quote on the Twitter sponsorship kit. It’s so great to dive into all these business aspects of the history of Twitter. I think we'd be remiss, though. We're recording this a week before the 2020 US Presidential Election.
+
+There's also this parallel story at Twitter, mostly while you were there, Dick, of politics. Maybe we can scope it to US politics on Twitter. It must have just been wild, like you did during this time shortly before you joined. Barack Obama got elected in 2008 as President, in large part thanks to Twitter. There is the Twitter town hall.
+
+Donald Trump accuses Barack Obama of not being a US citizen, not having a valid birth certificate on Twitter. This is all happening on the platform. What was that like for you running the company?
+
+Dick: I have to tell you that it's like the Medvedev thing. People are like, wow, you were there when Medvedev tweeted at Barack Obama. You're like, yeah, that's not what we were thinking about that day. We are thinking about the fact that the site was down. It's always like that. You read these company histories or you read people's biographies, there's always this mythology of we knew then that this was exactly where we were headed.
+
+My experience is that that's all nonsense or largely nonsense. It just is. We were always surprised. I'll give you an example. I'm in my Monday morning staff meeting shortly after becoming CEO. It's November 2010.
+
+My assistant comes in the office, the leadership team meeting. You got to meet for 90 minutes and go through all this sort of more strategic topics. It's an expensive meeting because you got the 10 people with the most reports in the company. My assistant comes to the meeting and gets his phone call for you, all by way of saying, like, okay, why are you telling me that? Take a message. I’m not going to interrupt this meeting for a phone call.
+
+She goes, it's the White House. My first thought was like, I didn't do anything. What does the White House call me for? First of all, how do you know it's the White House? Did they call and say it's the White House? How do you really know it's the White House?
+
+It's like, no, it's Valerie Jarrett. She wants to talk to you. Then, my second thought was, I didn't do anything. What does the White House want to talk to me for? It's my Midwestern guilty conscience. They wanted us to come to the White House with some other tech leaders and talk about these kinds of things you guys were just mentioning. I remember thinking, man, I got a computer science degree. What do you want to talk to me about this stuff?
+
+After it happens, you realize and you start to think about it, you're like, oh, I got started actually being more thoughtful about these things, understanding how we think about intellectual property policy, how we were blocked in China, and who we should talk to the US government about that.
+
+As it's happening, you just don't realize whether or not it's a momentous thing or just, well, that was weird. You sort of realize it until later. You look over your shoulder, the impact you had, that the service had, is sort of the wake that's behind the boat. You don't recognize it while you're in it.
+
+Ben: Yeah, that's fascinating. I can only imagine that every day you just wake up and your primary job is I have all these stakeholders to manage. We have all these goals. How do I hit them and avoid all the company killing things that are constantly coming my way, including my own decisions? I might decide something wrong. I might not do something or somebody on my team might not do something well. That could be catastrophic for us. All I'm trying to do is do what we said we were going to do.
+
+Dick: There's my own goals. By own goal, I mean, the soccer metaphor where you're like, what just happened? The Vice-President of HR comes by and she’s like, you're not going to believe what just happened. You're like, you've got to be kidding me.
+
+Ben: Like a snoop dog in your office.
+
+Dick: Yeah. For example, I, fortunately, was never actually there for most of those things. Fortunately or unfortunately. All that stuff trying to balance and manage, I was just always trying to tell myself and it's hard because you want to like, wait a minute, what did just happen? I got to focus on that.
+
+You're just constantly trying to remind yourself, like, what's the highest leverage thing I could be working on right now? Not dive bombing people and getting into the weeds. It's hard because you feel this crazy thing that's super messed up and shouldn't be. I can go show them how to fix it.
+
+You're right. On top of all that stuff, there are these self-inflicted wounds. They are at every company.
+
+Ben: All right. Now, before we get into our exploration of what would have happened otherwise, we'd like to thank Bambu. Bambu is one of the top growth marketing firms in tech. They've supported world class growth programs for companies like AllTrails, Peloton, friends of the show rover.com, and many more.
+
+Whether it's paid search, paid social, creative production, attribution, or product analytics, Bambu's services always have the same objectives in mind. Helping tech companies earn their growth marketing budgets back fast and retain their customers longer.
+
+If you are a startup with multimillion dollar growth targets ahead or you're an already big and successful company looking to invest smarter, our friends at Bambu will make a great extension to your growth team.
+
+You can click the link in the show notes or go to growwithbambu.com to learn more.
+
+What's an example? I don't want to directly ask you what are some self-inflicted wounds. What are some things that you remember deciding or you remember the company deciding to do something? In retrospect, do you wish you had done it differently?
+
+Dick: Just the way we communicate with third party developers. We tried to tiptoe around it. Like, hey, you can't do this anymore, but you can still do this. Communicating by trying to not upset people is stupid. It should've been like, look, we've got to own the user experience. Are we going to get crushed as a business? Get over it.
+
+People that have been mad and hated me, but so what? It would have been clear, simple, and direct. It's what ended up happening anyway and it needed to happen. It was the right decision. We should have just said that instead of, you can still do this, this, and this. Then, everyone's like, this is just nonsense. Stuff like that.
+
+Some of the self-inflicted wounds are HR stuff. I'm not shrugging it off. It's important. That's why I'm saying. You're working on this strategic thing or thinking about this thing. Then, someone comes in with some HR issue and you're like, oh, wow, that's super important. I can't blow that off. I got to go deal with that now. Wow, it would have been great if I could have kept working on this thing I was thinking about and was making progress on.
+
+You’re constantly trying to balance all that stuff and not be the person that says, hey, I don't care about that HR thing. I'm working on this really important thing. Who cares about that? That's just also the wrong way to think about things. You have to balance the forest fires with the forestry management stuff.
+
+Ben: Right. It’s interesting, you’re reflecting on one piece of forestry management. We talked about the growth of the importance of Twitter in the political sphere. Simultaneously, there's also more and more people suffering with personal attacks on Twitter. For the lightest way to put it, probably trolling, or heavier way to put it, probably hate speech, is an extremely difficult problem to solve. Is there anything you can point to along the way where you're like, I wish we had done some policy differently?
+
+Dick: Yeah. The thing that people bring up is, oh, you wrote this note and whatever it was, 2014, to the team that gets overplayed. As early as 2010, I was like this is nonsense, why are we allowing this stuff on the platform?
+
+The defense there was a combination of both the naivety around where the free speech wing and the free speech party. There was also this sort of like, well, because it's a slippery slope. If you suspend Bob, then what are you going to do the next time Janet says something like that? Or, if you're going to suspend Bob for X, what are you going to do about when Janet says X prime? I just kind of said, well, who cares? We'll cross that bridge when we come to it.
+
+This guy's clearly threatening violence against this person, but in a way that doesn't specifically violate our terms of service, which is stupid because our terms of service say, “In addition to all the specific reasons you can be kicked off.” The terms of service say, “We can remove your account for any reason or no reason.” Just tell him we removed you for no reason. Yeah, you're auser. I just always wished we were more aggressive on that front while understanding the other side of the coin. The heavy pushback I got, which was, if we do X then what about X prime?
+
+I just think that all of the platforms have waited too long to say, well, actually we do need to go do X and we'll figure out X prime when it happens.
+
+Ben: I think pundits talk about this a lot where they're like, well, in order to maintain their status as agnostic platform, that's not taking sides and actually being a media company, if they arbit what is said on their platform too much, then they'll be viewed as an arbiter instead of an independent. I think this wades into Section 230 territory.
+
+Dick: Fair enough. However, the problem is the companies already arbit what you can do on the platform. If you post a video of beating your dog, guess what? It gets taken down. Why? Because the company decides that people didn’t need to see that garbage. You're already editing and moderating what happens on the platform. To say, oh, no, we're the phone company. No, you're not. We take stuff down every day. I just have always found that to be a sort of a fourth down time to pun, not the right way to think about it.
+
+Ben: Dick, speaking of content, moderation on Twitter, and taking down tweets, you'd recently taken one down of your own volition. Tell us about that. What were you thinking?
+
+Dick: Boy, did that go sideways. Holy smokes. First of all, I should know better, you'd think, than to use sarcasm on the platform. I was making a sarcastic response to Parker and Jason Calacanis in this whole back and forth about the Brian Armstrong's post about separating the mission of the company from social activism and social causes.
+
+I think Parker made some comments. I'm not going to remember his exact response to Jason, but it was something like, look, if you want to really want to go do that stuff, you go to a nonprofit.
+
+I just fired off this sarcastic response. I was also doing four other things that day and getting ready to entertain a bunch of friends the following day. I fired off this sarcastic response. I was like, I was going to cause an argument. I don't need to deal with this right now. I'm just going to not pay attention to Twitter for a little while. Boy, was that a bad decision.
+
+I should use the pitchfork analogy. Then, the headlines would have been Costolo incites Farmers to revolt. What I was trying to do that went horribly wrong was just make the observation that, look, if you think you can separate the social contract from the economic contract in society, then don't be surprised when the pitchforks come out. That went wrong quickly.
+
+A bunch of people were like, you should explain it. You get back on there, explain. I'm like, how do you explain sarcasm? That seems like a bad idea. I just left it up there and people settled down. I'm laughing because I started getting these violent threats on my Instagram pictures of tomatoes in my house in Napa Valley. People were like, I hope these tomatoes burn in the fire. How about if I line you up in front of those apples and shoot? I was like, wow, wow, this is really bad.
+
+Finally, the next day was all right. I just take the whole thing down. Man, what a mistake that was. Woops.
+
+Ben: I'll bet. Do you feel that there is some sort of reckoning coming in some sense of too much polarization?
+
+Dick: The thing that it obviously reinforced for me, man, people are on edge right now so I get it like people are just on edge. I think it's probably going to get a lot worse before it gets better, which is unfortunate. Hopefully, it does get better after some distance from the election.
+
+Ben: Yeah, well, knock on all sorts of wood there.
+
+Before we get into our grading section, we'd like to thank Perkins Coie, the official legal sponsor of season seven of Acquired. Today, we are lucky to have another Q&A with firm veteran Stewart Landefeld, the past chair of the firm's entire corporate practice.
+
+Stewart, I know that you write a lot about corporate governance and are well respected as a thinker in that field. You also are personally passionate about improving gender equality and that has become a big tenet of the firm. Can you talk a little bit about the things that you've tried there and what those programs have been?
+
+Stewart: Sure. Ben, let me mention one puzzle that just puzzled us about half a dozen years ago, which is that women just are not on boards. Why is that? Why are women not on corporate boards? Women are in the C-suite, their respective executives, and they're not on boards.
+
+We decided to try something to try to address that. The program is called Onboarding Women. We and some others founded it 5+ years ago. The goal is to increase the number of women on corporate boards, particularly the public company boards.
+
+Ben: That's great. How does it work and how is it going so far?
+
+Stewart: It works by identifying about 20 or 24 women per year who are corporate executives. We get this cohort of women together seven times a year. Our goal over the course of those seven two-hour sessions, to provide everything they need to know in order to be on a public company board or a resource.
+
+Obviously, you can't teach everything in 14 hours. How's it working? After about a year and a half, we decided it was a failure. Sometimes you got to just try something. You have to be entrepreneurial and try something. You also have to admit when it's not working.
+
+After about a year and a half, we were about ready to admit that it wasn't working. It’s after about two years, all of a sudden people were getting on board. Now, over the course of five years, we have a pool of little over 100 women and we have 41 board seats.
+
+Now, we have more people asking to come into the program every year. We have wonderful, wonderful board seats. People getting on boards from eBay to big defense contractors. Really a great program.
+
+It's given us hope that this concept of both is not just teaching. It's a combination of teaching and making people understand you do have what it takes. Then, proselytizing that out to the people putting on corporate boards together means that you've got a great, great pool of executives that can help their boards.
+
+Ben: That's awesome. Well, really, really great that you're doing that. Thanks so much for sharing it with us today. Obviously, the Onboarding Women program will only apply to a subset of the audience. I wanted to have them talk about it on the show since I think it really paints the values of the firm.
+
+If you're interested in getting in touch with Stewart or anyone else at Perkins Coie, you can visit perkinscoie.com or click the link in the show notes.
+
+All right, David, now I'm going to take us into grading here. Rather than doing our normal grading thing of either looking at the big company acquiring a small company, which we sort of did already, thinking about what would have happened if they had bought Instagram or perhaps painting what A + C = F looks like in the future.
+
+I think it's actually more interesting on this episode to evaluate how Twitter has managed their impact of the platform on society. For a lot of you out there, this is going to be a squishier way of greeting. Dick, we wanted to ask you first, how would you rate Twitter's ability to manage the impact of the company and on the world?
+
+Dick: While I was CEO, I wish we had done a lot more and been a lot more aggressive. We did some stuff. We removed this, I guess you would call them trolls. He violated the sentiment of a number of our policies than any one specific policy. We removed his account for those reasons. I can't remember his last name, Chuck something. Wished we had been a lot more aggressive, so I give myself a C on that.
+
+I was the CEO of the company and despite pushback, could have said, I hear everybody's opinions, but we're going to do it anyway. I give myself a C.
+
+Since then, I think companies are really leading the charge in a number of ways and on a number of fronts around political ads. They were one of the first to say they weren't going to take certain political ads even when everyone else stood firm and not on moderating nonsense content or fake news or whatever you want to call it, misinformation. I think they've done an increasingly great job in the last little while.
+
+Companies are always going to come under fire for whether they do too much or do too little. I think they've done an increasingly great job on that front. I gave them an A over the course of the last year.
+
+David: It's interesting. Obviously, there's still much work to be done, but over the last year or two years, it does feel like Twitter is the only one that is even doing some of this work. Facebook, not so much.
+
+Ben: Or, at least pushing the envelope. I think Facebook ends up doing things that they need to do for PR reasons.
+
+David: To our earlier conversation, maybe this does open up a seam again to have Twitter be something that Facebook is not going to be like. Facebook is not going to do that because of how their business is run.
+
+Ben: Yeah. Well there's certainly a whole can of worms there. David, I pretty much agree with you, but I only think there has been even a B effort, even recently. The reason I'm not higher is that there's just so much hate speech that comes from what seems to be pretty simple heuristics to catch and manage.
+
+I know that's always easier said than done, but it just feels like Twitter has kind of shied away from that fight. They seem more emboldened now, but still definitely afraid of the perceived business impact that could come from any of that. Maybe rightfully so. Anyway, I'm a B.
+
+Great to dive into this stuff. Listeners, we'd love to hear your thoughts too, especially, how you would grade Twitter on this aspect. Join us at acquired.fm/slack.
+
+David, into our carve-out.
+
+David: On to carve-outs. I think all of us, probably Dick included, have just one carve-out for all of you today and it's a big one. For everybody who is a US citizen, go vote. It's the most important thing you can do and there's never been a more important time to do it.
+
+Ben: Amen. Well, that brings us home. Thanks so much to Dick for coming on.
+
+Dick: You guys are awesome. Thanks for the time. I appreciate it. It was fun.
+
+Ben: Listeners, if you aren't subscribed and you like what you hear, you should. If you liked this episode and you have a friend that you frequently talk with Twitter about, a co-worker, or you're interested in just some business concepts discussed here, you should absolutely share this episode with said friend or co-worker. Share it on social media. I think we may have talked about a few interesting websites upon which you can do so.
+
+As always, if you love Acquired and want to hone your own craft of company building, you should become an Acquired LP. You get access to the LP show with awesome interviews with people talking about the nitty-gritty of company building. Be it raising money, be it figuring out your pricing strategy, hiring, retaining great employees.
+
+David, I'm about to start making stuff up and then hopefully we can do some episodes just so that we can fill it in, in the future. I think there is no better place on the internet to learn about the craft of company building and to join a community of people who are obsessed with just that. If you aren't already a member, you can go to acquire.fm/lp. Get that seven day free trial and you can also join us in the Slack. We're hanging out at acquired.fm/slack.
+
+With that, listeners, we will see you next time.
+
+David: See you next time.
+
+‍

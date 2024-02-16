@@ -1,0 +1,815 @@
+Ben: I will say, David, I would love to have Nvidia’s full production team every episode. It was nice not having to worry about turning the cameras on and off and making sure that nothing bad happened myself while we were recording this.
+
+David: Yeah, just the gear. The drives that came out of the camera.
+
+Ben: All right. Red cameras for the home studio starting next episode.
+
+David: Yeah. Great.
+
+Ben: All right, let’s do it. Welcome to this episode of Acquired, the podcast about great technology companies and the stories and playbooks behind them. I’m Ben Gilbert.
+
+David: I’m David Rosenthal.
+
+Ben: And we are your hosts. Listeners, just so we don’t bury the lead, this episode was insanely cool for David and I. After researching Nvidia for something like 500 hours over the last two years, we flew down to Nvidia headquarters to sit down with Jensen himself.
+
+Jensen is the founder and CEO of Nvidia, the company powering this whole AI explosion. At the time of recording, Nvidia is worth $1.1 trillion and is the sixth most valuable company in the entire world. Right now is a crucible moment for the company. Expectations are set sky high. They have about the most impressive strategic position and lead against their competitors of any company that we’ve ever studied.
+
+But here’s the question that everyone is wondering. Will Nvidia’s insane prosperity continue for years to come? Is AI going to be the next trillion-dollar technology wave? How sure are we of that? And if so, can Nvidia actually maintain their ridiculous dominance as this market comes to take shape?
+
+Jensen takes us down memory lane with stories of how they went from graphics to the data center to AI, how they survived multiple near death experiences. He also has plenty of advice for founders, and he shared an emotional side to the founder journey toward the end of the episode.
+
+David: I got a new perspective on the company and on him as a founder and a leader just from doing this, despite we thought we knew everything before we came in advance, and it turned out we didn’t.
+
+Ben: Turns out the protagonist actually knows more.
+
+All right. Well, listeners join the Slack. There is incredible discussion of everything about this company, AI, the whole ecosystem, and a bunch of other episodes that we’ve done recently going on in there right now. That is acquired.fm/slack. We would love to see you.
+
+Without further ado, this show is not investment advice. David and I may have investments in the companies we discuss, and this show is for informational and entertainment purposes only. Onto Jensen.
+
+Jensen, this is Acquired. We want to start with story time. We want to wind the clock all the way back to, I believe it was 1997. You’re getting ready to ship the RIVA 128, which is one of the largest graphics chips ever created in the history of computing. It is the first fully 3D-accelerated graphics pipeline for a computer. And you guys have about six months of cash left.
+
+You decide to do the entire testing in simulation, rather than ever receiving a physical prototype. You commission the production run site unseen with the rest of the company’s money. You’re betting it all right here on the RIVA 128. It comes back, and of the 32 DirectX blend modes, it supports 8 of them. You have to convince the market to buy it, and you have to convince developers not to use anything but those eight blend modes. Walk us through what that felt like.
+
+Jensen: The other 24 weren’t that important.
+
+David: Okay, so wait. First question. Was that the plan all along? When did you realize that—
+
+Jensen: I realized I didn’t learn about it until it was too late. We should have implemented all 32. But we built what we built, so we had to make the best of it. That was really an extraordinary time.
+
+Remember, RIVA 128 was NV3. NV1 and NV2 were based on forward texture mapping, no triangles but curves, and tessellated the curves. Because we were rendering higher-level objects, we essentially avoided using Z buffers. We thought that that was going to be a good rendering approach, and turns out to have been completely the wrong answer. What RIVA 128 was, was a reset of our company.
+
+Now remember, at the time that we started the company in 1993, we were the only consumer 3D graphics company ever created. We were focused on transforming the PC into an accelerated PC because at the time, Windows was really a software-rendered system.
+
+Anyway, RIVA 128 was a reset of our company because by the time that we realized we had gone down the wrong road, Microsoft had already rolled out DirectX. It was fundamentally incompatible with Nvidia’s architecture. Thirty competitors have already shown up even though we were the first company at the time that we were founded, so the world was a completely different place.
+
+The question about what to do as a company strategy at that point, I would’ve said that we made a whole bunch of wrong decisions. But on that day that mattered, we made a sequence of extraordinarily good decisions.
+
+That time—1997—was probably Nvidia’s best moment. The reason for that was our backs were up against the wall. We were running out of time, we’re running out of money, and for a lot of employees, running out of hope. The question is, what do we do?
+
+Well, the first thing that we did was we decided that look, DirectX is now here. We’re not going to fight it. Let’s go figure out a way to build the best thing in the world for it.
+
+RIVA 128 is the world’s first fully accelerated hardware-accelerated pipeline for rendering 3D. The transform, the projection, every single element, all the way down to the frame buffer was completely hardware-accelerated.
+
+We implemented a texture cache. We took the bus limit, the frame buffer limit to as big as physics could afford at the time. We made the biggest chip that anybody had ever imagined building. We used the fastest memories. Basically, if we built that chip, there could be nothing that could be faster.
+
+We also chose a cost point that is substantially higher than the highest price that we think that any of our competitors would be willing to go. If we built it right, we accelerated everything, we implemented everything in DirectX that we knew of, and we built it as large as we possibly could, then obviously nobody can build something faster than that.
+
+David: Today, in a way you do that here at Nvidia, too. You were a consumer products company back then, right? It was the end consumers who were going to have to pay the money to buy that.
+
+Jensen: That’s right. But we observed that there was a segment of the market. At the time, the PC industry was still coming up and it wasn’t good enough. Everybody was clamoring for the next fastest thing. If your performance was 10 times higher this year than what was available, there’s a whole large market of enthusiasts who we believe would’ve gone after it. And we were absolutely right, that the PC industry had a substantially large enthusiast market that would buy the best of everything.
+
+To this day, it remains true. For certain segments of a market where the technology is never good enough like 3D graphics, and we chose the right technology, 3D graphics is never good enough. We call it back then 3D gives us sustainable technology opportunity because it’s never good enough, so your technology can keep getting better. We chose that.
+
+We also made the decision to use this technology called emulation. There was a company called ICOS. On the day that I called them, they were just shutting the company down because they had no customers. I said, hey, look. I’ll buy what you have inventory. No promises are necessary.
+
+The reason why we needed that emulator is because if you figure out how much money that we have, if we taped out a chip and we got it back from the fab and we started working on our software, by the time that we found all the bugs because we did the software, then we taped out the chip again. We would’ve been out of business already.
+
+David: And your competitors would’ve caught up.
+
+Jensen: Well, not to mention we would’ve been out of business.
+
+David: Who cares?
+
+Jensen: Exactly. If you’re going to be out of business anyway, that plan obviously wasn’t the plan. The plan that companies normally go through—build a chip, write the software, fix the bugs, tape out a new chip, so on and so forth—that method wasn’t going to work. The question is, if we only had six months and you get to tape out just one time, then obviously you’re going to tape out a perfect chip.
+
+I remember having a conversation with our leaders and they said, but Jensen, how do you know it’s going to be perfect? I said, I know it’s going to be perfect, because if it’s not, we’ll be out of business. So let’s make it perfect. We get one shot.
+
+We essentially virtually prototyped the chip by buying this emulator. Dwight and the software team wrote our software, the entire stack, ran it on this emulator, and just sat in the lab waiting for Windows to paint.
+
+David: It was like 60 seconds for a frame or something like that.
+
+Jensen: Oh, easily. I actually think that it was an hour per frame, something like that. We would just sit there and watch it paint. On the day that we decided to tape out, I assumed that the chip was perfect. Everything that we could have tested, we tested in advance, and told everybody this is it. We’re going to tape out the chip. It’s going to be perfect.
+
+Well, if you’re going to tape out a chip and you know it’s perfect, then what else would you do? That’s actually a good question. If you knew that you hit enter, you tape out a chip, and you knew it was going to be perfect, then what else would you do? Well, the answer, obviously, go to production.
+
+Ben: And marketing blitz. And developer relations.
+
+Jensen: Kick everything off because you got a perfect chip. We got in our head that we have a perfect chip.
+
+David: How much of this was you and how much of this was your co-founders, the rest of the company, the board? Was everybody telling you you were crazy?
+
+Jensen: No. Everybody was clear we had no shot. Not doing it would be crazy.
+
+David: Otherwise, you might as well go home.
+
+Jensen: Yeah, you’re going to be out of business anyway, so anything aside from that is crazy. It seemed like a fairly logical thing. Quite frankly, right now as I’m describing it, you’re probably thinking yeah, it’s pretty sensible.
+
+David: Well, it worked.
+
+Jensen: Yeah, so we taped that out and went directly to production.
+
+Ben: So is the lesson for founders out there when you have conviction on something like the RIVA 128 or CUDA, go bet the company on it. This keeps working for you. It seems like your lesson learned from this is yes, keep pushing all the chips in because so far it’s worked every time. How do you think about that?
+
+Jensen: No, no. When you push your chips in I know it’s going to work. Notice we assumed that we taped out a perfect chip. The reason why we taped out a perfect chip is because we emulated the whole chip before we taped it out. We developed the entire software stack. We ran QA on all the drivers and all the software. We ran all the games we had. We ran every VGA application we had.
+
+When you push your chips in, what you’re really doing is, when you bet the farm you’re saying, I’m going to take everything in the future, all the risky things, and I pull in in advance. That is probably the lesson. To this day, everything that we can prefetch, everything in the future that we can simulate today, we prefetch it.
+
+David: We talk about this a lot. We were just talking about this on our Costco episode. You want to push your chips in when you know it’s going to work.
+
+Ben: Every time we see you make that company move, you’ve already simulated it. Do you feel like that was the case with CUDA?
+
+Jensen: Yeah. In fact, before that was CUDA, there was a CG. We were already playing with the concept of how do we create an abstraction layer above our chip that is expressible in a higher level language and a higher level expression? And how can we use our GPU for things like CT reconstruction, image processing? We were already down that path.
+
+There was some positive feedback and some intuitive positive feedback that we think that general-purpose computing could be possible. If you just looked at the pipeline of a programmable shader, it is a processor. It is highly parallel, it is massively threaded, and it is the only processor in the world that does that. There were a lot of characteristics about programmable shading that would suggest that CUDA has a great opportunity to succeed.
+
+Ben: And that is true if there was a large market of machine learning practitioners who would eventually show up and want to do all this great scientific computing and accelerated computing.
+
+But at the time when you were starting to invest what is now something like 10,000 person years in building that platform, did you ever feel like, oh man, we might’ve invested ahead of the demand for machine learning, since we’re a decade before the whole world is realizing it?
+
+Jensen: I guess yes and no. When we saw deep learning, when we saw AlexNet and realized its incredible effectiveness and computer vision, we had the good sense, if you will, to go back to first principles and ask, what is it about this thing that made it so successful?
+
+When a new software technology or a new algorithm comes along and somehow leapfrogs 30 years of computer vision work, you have to take a step back and ask yourself, but why? Fundamentally, is it scalable? And if it’s scalable, what other problems can it solve?
+
+There were several observations that we made. The first observation is that if you have a whole lot of example data, you could teach this function to make predictions.
+
+What we’ve basically done is discovered a universal function approximator, because the dimensionality could be as high as you wanted to be. Because each layer is trained one layer at a time, there’s no reason why you can’t make very, very deep neural networks.
+
+Okay, now you just reason your way through. Now I go back to 12 years ago. You could just imagine the reasoning I’m going through in my head that we’ve discovered a universal function approximator. In fact, we might have discovered with a couple of more technologies, a universal computer that you can—
+
+David: Have you’re paying attention to the ImageNet competition every year leading up to this?
+
+Jensen: Yeah, and the reason for that is because we were already working on computer vision at the time. We were trying to get CUDA to be a good computer vision system, or most of the algorithms that were created for computer vision aren’t a good fit for CUDA.
+
+We were sitting there trying to figure it out. All of a sudden, AlexNet shows up. That was incredibly intriguing. It’s so effective that it makes you take a step back and ask yourself, why is that happening?
+
+By the time that you reason your way through this, you go, well, what are the problems in a world where a universal function approximator can solve? We know that most of our algorithms start from principal sciences. You want to understand the causality. And from the causality, you create a simulation algorithm that allows us to scale.
+
+Well, for a lot of problems, we don’t care about the causality. We just care about the predictability of it. Like do I really care for what reason you prefer this toothpaste over that? I don’t really care the causality. I just want to know that this is the one you would’ve predicted. Do I really care that the fundamental cause of somebody who buys a hot dog buys ketchup and mustard? It doesn’t really matter. It only matters that I can predict it.
+
+It applies to predicting movies, predicting music. It applies to predicting, quite frankly, weather. We understand thermal dynamics, radiation from the sun, cloud effects, oceanic effects. We understand all these different things. We just want to know whether we should wear a sweater or not, isn’t that right? Causality for a lot of problems in the world doesn’t matter. We just want to emulate the system and predict the outcome.
+
+Ben: And it can be an incredibly lucrative market. If you can predict what the next best performing feed item to serve into a social media feed, turns out that’s a hugely valuable market.
+
+David: I love the examples you pulled—toothpaste, ketchup, music, movies.
+
+Jensen: When you realize this, you realize, hang on a second. A universal function approximator, a machine learning system, something that learns from examples could have tremendous opportunities because just the number of applications is quite enormous.
+
+Everything from, obviously, we just are talking about commerce all the way to science. You realize that maybe this could affect a very large part of the world’s industries. Almost every piece of software in the world would eventually be programmed this way. If that’s the case, then how you build a computer and how you build a chip (in fact) can be completely changed. Realizing that, the rest of it just comes with, do you have the courage to put your chips behind it?
+
+David: That’s where we are today. That’s where Nvidia is today. This is a couple of years after AlexNet, and this is when Ben and I were getting into the technology industry and the venture industry ourselves.
+
+Ben: I started at Microsoft in 2012, so right after AlexNet but before anyone was talking about machine learning, even the mainstream engineering community.
+
+David: There were those couple of years there where to a lot of the rest of the world, these looked like science projects. The technology companies here in Silicon Valley, particularly the social media companies, were just realizing huge economic value out of this—the Googles, the Facebooks, the Netflixes, et cetera.
+
+Obviously, that led to lots of things including OpenAI a couple of years later. But during those couple of years, when you saw just that huge economic value unlock here in Silicon Valley, how are you feeling during those times?
+
+Jensen: The first thought was reasoning about how we should change our computing stack. The second thought is where can we find earliest possibilities of use? If we were to go build this computer, what would people use it to do?
+
+We were fortunate that working with the world’s universities and researchers was innate in our company. We were already working on CUDA, and CUDA’s early adopters were researchers because we democratized supercomputing.
+
+CUDA is not just used (as you know) for AI. CUDA is used for almost all fields of science. Everything from molecular dynamics to imaging, CT reconstruction to seismic processing, to weather simulations, quantum chemistry. The list goes on. The number of applications of CUDA in research was very high.
+
+When the time came and we realized that deep learning could be really interestingm it was natural for us to go back to the researchers, find every single AI researcher on the planet, and say how can we help you advance your work?
+
+That included Yann LeCun, Andrew Ng, and Jeff Hinton. That’s how I met all these people. I used to go to all the AI conferences, and that’s where I met Ilya Sutskever there for the first time.
+
+It was really about at that point, what are the systems that we can build and the software stacks that we can build to help you be more successful to advance the research? Because at the time, it looked like a toy. The first time I met Goodfellow, the GAN was like 32 by 32, and it was just a blurry image of a cat. But how far can it go? So we believed in it.
+
+We believed that you could scale deep learning because obviously it’s trained layer by layer. You could make the data sets larger and you could make the models larger. We believe that if you made that larger and larger, we get better and better. Kind of sensible.
+
+I think the discussions and the engagements with the researchers was the exact positive feedback system that we needed. I would go back to research. That’s where it all happened.
+
+David: When OpenAI was founded in 2015, that was such an important moment. That’s obvious today now, but at the time, I think most people, even people in tech were like, what is this? Were you involved in it at all?
+
+Because you were so connected to the researchers, to Ilya, taking that talent out of Google and Facebook, to be blunt, but reseeding the research community and opening it up was such an important moment. Were you involved in it at all?
+
+Jensen: I wasn’t involved in the founding of it, but I knew a lot of the people there. Elon, of course, I knew. Peter Beal was there and Ilya was there. We have some great employees today that were there in the beginning.
+
+I knew that they needed this amazing computer that we were building, and we’re building the first version of the DGX, which today when you see a Hopper, it’s 70 pounds, 35,000 parts, 10,000 amps. But DGX, the first version that we built was used internally and I delivered the first one to OpenAI. That was a fun day.
+
+Most of our success was aligned around in the beginning, just about helping the researchers get to the next level. I knew it wasn’t very useful in its current state, but I also believe that in a few clicks it could be really remarkable. That belief system came from the interactions with all these amazing researchers. It came from just seeing the incremental progress.
+
+At first, the papers were coming out every three months. Then papers today are coming out every day. You could just monitor the archive papers. I took an interest in learning about the progress of deep learning, and to the best of my ability read these papers. You could just see the progress happening exponentially in real time.
+
+Ben: It even seems like within the industry, from some researchers we spoke with, it seemed like no one predicted how useful language models would become when you just increase the size of the models. They thought, oh, there has to be some algorithmic change that needs to happen. But once you cross that 10 billion parameter mark, and certainly once you cross the hundred billion, they just magically got much more accurate, much more useful, much more lifelike. Were you shocked by that the first time you saw a truly large language model? And do you remember that feeling?
+
+Jensen: My first feeling about the language model was how clever it was to just mask out words and make it predict the next word. It’s self supervised learning at its best. We have all this text. I know what the answer is. I’ll just make you guess it. My first impression of BERT was really how clever it was. Now the question is how can you scale that?
+
+The first observation on almost everything is interesting, and then try to understand intuitively why it works. Then the next step is from first principles. How would you extrapolate that? Obviously, we knew that BERT was going to be a lot larger.
+
+Now, one of the things about these language models is it’s encoding information. It’s compressing information. Within the world’s languages and text, there’s a fair amount of reasoning that’s encoded in it. We describe a lot of reasoning things. if you were to say that a few step reasoning is somehow learnable from just reading things, I wouldn’t be surprised.
+
+For a lot of us, we get our common sense and reasoning ability by reading. Why wouldn’t a machine learning model also learn some of the reasoning capabilities from that? From reasoning capabilities, you could have emergent capabilities.
+
+Immersion abilities are consistent with intuitively from reasoning. Some of it could be predictable, but still, it’s still amazing. The fact that it’s sensible doesn’t make it any less amazing. I could visualize literally the entire computer and all the modules in a self-driving car. The fact that it’s still keeping lanes makes me insanely happy.
+
+Ben: I even remember that from my first operating systems class in college, when I finally figured out all the way from programming language to the electrical engineering classes, bridged in the middle by that OS class. I’m like, oh, I think I understand how the Von Neumann computer works soup to nuts, and it’s still a miracle.
+
+Jensen: Exactly. When you put it all together, it’s still a miracle.
+
+Ben: Now is a great time to talk about one of our favorite companies, Statsig, and we have some tech history for you.
+
+David: In our Nvidia part three episode, we talked about how the AI research teams at Google and Facebook drove incredible business outcomes with cutting-edge ML models. These models powered features like the Facebook News feed, Google Ads, and the YouTube next video recommendation, in the process, transforming Google and Facebook into the juggernauts that we know today. While we talked all about the research, we didn’t touch on how these models were actually deployed.
+
+Ben: The most common way to deploy new models was through experimentation, A-B testing. When the research team created a new model, product engineers would deploy the model to a subset of users, and measure the impact of the model on core product metrics.
+
+Great experimentation tools transformed the machine learning development process. They de-risked releases since each model could be released to a small set of users. They sped up release cycles. Researchers could suddenly get quick feedback from real user data.
+
+Most importantly, they created a pragmatic data-driven culture since researchers were rewarded for driving actual product improvements. Over time, these experimentation tools gave Facebook and Google a huge edge because they really became a requirement for leading ML teams.
+
+David: Now you’re probably thinking, well, that’s great for Facebook and Google, but my team can’t build out our own internal experimentation platform. Well, you don’t have to. Thanks to Statsig.
+
+Statsig was literally founded by ex-Facebook engineers who did all this. They’ve built a best-in-class experimentation, feature flagging, and product analytics platform that’s available to anyone. And surprise, surprise, a ton of AI companies are now using Statsig to improve and deploy their models.
+
+Ben: Whether you’re building with AI or not, Statsig can help your team ship faster and make better data-driven product decisions. They have a very generous free tier and a special program for venture-backed companies. Simple pricing for enterprises and no seat-based fees.
+
+If you’re in the Acquired community, there’s a special offer. You get five million free events a month and white glove onboarding support. Visit statsig.com/acquired and get started on your data-driven journey.
+
+We have some questions we want to ask you. Some are cultural about Nvidia, but others are generalizable to company-building broadly. The first one that we wanted to ask is that we’ve heard that you have 40+ direct reports, and that this org chart works a lot differently than a traditional company org chart.
+
+Do you think there’s something special about Nvidia that makes you able to have so many direct reports, not worry about coddling or focusing on career growth of your executives, and you’re like, no, you’re just here to do your fricking best work and the most important thing in the world. Now go. (a) Is that correct? and (b) is there something special about Nvidia that enables that?
+
+Jensen: I don’t think it’s something special in Nvidia. I think that we had the courage to build a system like this. Nvidia’s not built like a military. It’s not built like the armed forces, where you have generals and colonels. We’re not set up like that. We’re not set up in a command and control and information distribution system from the top down.
+
+We’re really built much more like a computing stack. The lowest layer is our architecture, then there’s our chip, then there’s our software, and on top of it there are all these different modules. Each one of these layers of modules are people.
+
+The architecture of the company (to me) is a computer with a computing stack, with people managing different parts of the system. Who reports to whom, your title is not related to anywhere you are in the stack. It just happens to be who is the best at running that module on that function on that layer, is in-charge. That person is the pilot in command. That’s one characteristic.
+
+David: Have you always thought about the company this way, even from the earliest days?
+
+Jensen: Yeah, pretty much. The reason for that is because your organization should be the architecture of the machinery of building the product. That’s what a company is. And yet, everybody’s company looks exactly the same, but they all build different things. How does that make any sense? Do you see what I’m saying?
+
+How you make fried chicken versus how you flip burgers versus how you make Chinese fried rice is different. Why would the machinery, why would the process be exactly the same?
+
+It’s not sensible to me that if you look at the org charts of most companies, it all looks like this. Then you have one group that’s for a business, and you have another for another business, you have another for another business, and they’re all supposedly autonomous.
+
+None of that stuff makes any sense to me. It just depends on what is it that we’re trying to build and what is the architecture of the company that best suits to go build it? That’s number one.
+
+In terms of information systems and how you enable collaboration, we’re wired up like a neural network. The way that we say this is that there’s a phrase in the company called ‘mission is the boss.’ We figure out what is the mission of what is the mission, and we go wire up the best skills, the best teams, and the best resources to achieve that mission. It cuts across the entire organization in a way that doesn’t make any sense, but it looks a little bit like a neural network.
+
+David: And when you say mission, do you mean Nvidia’s mission is…
+
+Jensen: Build Hopper.
+
+David: Okay, so it’s not like further accelerated computing? It’s like we’re shipping DGX Cloud.
+
+Jensen: No. Build Hopper or somebody else’s build a system for Hopper. Somebody has built CUDA for Hopper. Somebody’s job is to build cuDNN for CUDA for Hopper. Somebody’s job is the mission. Your mission is to do something.
+
+Ben: What are the trade-offs associated with that versus the traditional structure?
+
+Jensen: The downside is the pressure on the leaders is fairly high. The reason for that is because in a command and control system, the person who you report to has more power than you. The reason why they have more power than you is because they’re closer to the source of information than you are.
+
+In our company, the information is disseminated fairly quickly to a lot of different people. It’s usually at a team level. For example, just now I was in our robotics meeting. We’re talking about certain things and we’re making some decisions.
+
+There are new college grads in the room. There are three vice-presidents in the room, there are two e-staff in the room. At the moment that we decided together, we reasoned through some stuff, we made a decision, everybody heard it exactly the same time. Nobody has more power than anybody else. Does that make sense? The new college grad learned at exactly the same time as the e-staff.
+
+The executive staff, the leaders that work for me, and myself, you earned the right to have your job based on your ability to reason through problems and help other people succeed. It’s not because you have some privileged information that I knew the answer was 3.7, and only I knew. Everybody knew.
+
+David: When we did our most recent episode, Nvidia part three, that we just released, we did this thought exercise especially over the last couple of years. Your product shipping cycle has been very impressive, especially given the level of technology that you are working with and the difficulty of this all. We said, could you imagine Apple shipping two iPhones a year?
+
+Ben: And we said that for illustrative purposes.
+
+David: For illustrative purposes, not to pick on Apple or whatnot.
+
+Ben: A large tech company shipping two flagship products or their flagship product twice per year.
+
+David: Or two WWDCs a year.
+
+Ben: There seems to be something unique.
+
+David: You can’t really imagine that, whereas that happens here. Are there other companies, either current or historically, that you look up to, admire, maybe took some of this inspiration from?
+
+Jensen: In the last 30 years I’ve read my fair share of business books. As in everything you read, you’re supposed to first of all enjoy it, be inspired by it, but not to adopt it. That’s not the whole point of these books. The whole point of these books is to share their experiences.
+
+You’re supposed to ask, what does it mean to me in my world, and what does it mean to me in the context of what I’m going through? What does this mean to me and the environment that I’m in? What does this mean to me in what I’m trying to achieve? What does this mean to Nvidia and the age of our company and the capability of our company?
+
+You’re supposed to ask yourself, what does it mean to you? From that point, being informed by all these different things that we’re learning, we’re supposed to come up with our own strategies.
+
+What I just described is how I go about everything. You’re supposed to be inspired and learn from everybody else. The education’s free. When somebody talks about a new product, you’re supposed to go listen to it. You’re not supposed to ignore it. You’re supposed to go learn from it.
+
+It could be a competitor, it could be an adjacent industry, it could be nothing to do with us. The more we learn from what’s happening out in the world, the better. But then, you’re supposed to come back and ask yourself, what does this mean to us?
+
+David: You don’t just want to imitate them.
+
+Jensen: That’s right.
+
+David: I love this tee-up of learning but not imitating, and learning from a wide array of sources. There’s this unbelievable third element, I think, to what Nvidia has become today. That’s the data center.
+
+It’s certainly not obvious. I can’t reason from AlexNet and your engagement with the research community, and social media feed [...]. You deciding and the company deciding we’re going to go on a five-year all-in journey on the data center. How did that happen?
+
+Jensen: Our journey to the data center happened, I would say almost 17 years ago. I’m always being asked, what are the challenges that the company could see someday?
+
+I’ve always felt that the fact that Nvidia’s technology is plugged into a computer and that computer has to sit next to you because it has to be connected to a monitor, that will limit our opportunity someday, because there are only so many desktop PCs that plug a GPU into. There are only so many CRTs and (at the time) LCDs that we could possibly drive.
+
+The question is, wouldn’t it be amazing if our computer doesn’t have to be connected to the viewing device? That the separation of it made it possible for us to compute somewhere else.
+
+One of our engineers came and showed it to me one day. It was really capturing the frame buffer, encoding it into video, and streaming it to a receiver device, separating computing from the viewing.
+
+Ben: In many ways, that’s cloud gaming.
+
+Jensen: In fact, that was when we started GFN. We knew that GFN was going to be a journey that would take a long time because you’re fighting all kinds of problems, including the speed of light and—
+
+Ben: Latency everywhere you look.
+
+Jensen: That’s right.
+
+David: To our listeners, GFN GeForce NOW.
+
+Jensen: Yeah. GeForce NOW.
+
+David: It all makes sense. Your first cloud product.
+
+Jensen: That’s right. Look at GeForce NOW. It was Nvidia’s first data center product.
+
+Our second data center product was remote graphics, putting our GPUs in the world’s enterprise data centers. Which then led us to our third product, which combined CUDA plus our GPU, which became a supercomputer. Which then worked towards more and more and more.
+
+The reason why it’s so important is because the disconnection between where Nvidia’s computing is done versus where it’s enjoyed, if you can separate that, your market opportunity explodes.
+
+And it was completely true, so we’re no longer limited by the physical constraints of the desktop PC sitting by your desk. We’re not limited by one GPU per person. It doesn’t matter where it is anymore. That was really the great observation.
+
+Ben: It’s a good reminder. The data center segment of Nvidia’s business (to me) has become synonymous with how is AI going. And that’s a false equivalence. It’s interesting that you were only this ready to explode in AI in the data center because you had three-plus previous products where you learned how to build data center computers. Even though those markets weren’t these gigantic world-changing technology shifts the way that AI is. That’s how you learned.
+
+Jensen: That’s right. You want to pave the way to future opportunities. You can’t wait until the opportunity is sitting in front of you for you to reach out for it, so you have to anticipate.
+
+Our job as CEO is to look around corners and to anticipate where will opportunities be someday. Even if I’m not exactly sure what and when, how do I position the company to be near it, to be just standing near under the tree, and we can do a diving catch when the apple falls. You guys know what I’m saying? But you’ve got to be close enough to do the diving catch.
+
+David: Rewind to 2015 and OpenAI. If you hadn’t been laying this groundwork in the data center, you wouldn’t be powering OpenAI right now.
+
+Jensen: Yeah. But the idea that computing will be mostly done away from the viewing device, that the vast majority of computing will be done away from the computer itself, that insight was good.
+
+In fact, cloud computing, everything about today’s computing is about separation of that. By putting it in a data center, we can overcome this latency problem. You’re not going to overcome the speed of light. Speed of light end-to-end is only 120 milliseconds or something like that. It’s not that long.
+
+Ben: From a data center to—
+
+Jensen: Anywhere on the planet.
+
+Ben: Oh, I see. Literally across the planet.
+
+Jensen: Right. If you could solve that problem, approximately something like—I forget the number—70 milliseconds, 100 milliseconds, but it’s not that long.
+
+My point is, if you could remove the obstacles everywhere else, then the speed of light should be perfectly fine. You could build data centers as large as you like, and you could do amazing things. This little, tiny device that we use as a computer, or your TV as a computer, whatever computer, they can all instantly become amazing. That insight 15 years ago was a good one.
+
+Ben: Speaking of the speed of light—David’s begging me to go here—you totally saw that InfiniBand would be way more useful way sooner than anyone else realized. Acquiring Mellanox, I think you uniquely saw that this was required to train large language models, and you were super aggressive in acquiring that company. Why did you see that when no one else saw that?
+
+Jensen: There were several reasons for that. First, if you want to be a data center company, building the processing chip isn’t the way to do it. A data center is distinguished from a desktop computer versus a cell phone, not by the processor in it.
+
+A desktop computer in a data center uses the same CPUs, uses the same GPUs, apparently. Very close. It’s not the processing chip that describes it, but it’s the networking of it, it’s the infrastructure of it. It’s how the computing is distributed, how security is provided, how networking is done, and so on and so forth. Those characteristics are associated with Melanox, not Nvidia.
+
+The day that I concluded that really Nvidia wants to build computers of the future, and computers of the future are going to be data centers, embodied in data centers, then if we want to be a data center–oriented company, then we really need to get into networking. That was one.
+
+The second thing is observation that, whereas cloud computing started in hyperscale, which is about taking commodity components, a lot of users, and virtualizing many users on top of one computer, AI is really about distributed computing, where one training job is orchestrated across millions of processors.
+
+It’s the inverse of hyperscale, almost. The way that you design a hyperscale computer with off-the-shelf commodity ethernet, which is just fine for Hadoop, it’s just fine for search queries, it’s just fine for all of those things—
+
+Ben: But not when you’re sharding a model across.
+
+Jensen: Not when you’re sharding a model across, right. That observation says that the type of networking you want to do is not exactly ethernet. The way that we do networking for supercomputing is really quite ideal.
+
+The combination of those two ideas convinced me that Mellanox is absolutely the right company, because they’re the world’s leading high-performance networking company. We worked with them in so many different areas in high performance computing already. Plus, I really like the people. The Israel team is world class. We have some 3200 people there now, and it was one of the best strategic decisions I’ve ever made.
+
+David: When we were researching, particularly part three of our Nvidia series, we talked to a lot of people. Many people told us the Mellanox acquisition is one of, if not the best of all time by any technology company.
+
+Jensen: I think so, too. It’s so disconnected from the work that we normally do, it was surprising to everybody.
+
+Ben: But framed this way, you were standing near where the action was, so you could figure out as soon as that apple becomes available to purchase, like, oh, LLMs are about to blow up, I’m going to need that. Everyone’s going to need that. I think I know that before anyone else does.
+
+Jensen: You want to position yourself near opportunities. You don’t have to be that perfect. You want to position yourself near the tree. Even if you don’t catch the apple before it hits the ground, so long as you’re the first one to pick it up. You want to position yourself close to the opportunities.
+
+That’s kind of a lot of my work, is positioning the company near opportunities, and the company having the skills to monetize each one of the steps along the way so that we can be sustainable.
+
+Ben: What you just said reminds me of a great aphorism from Buffett and Munger, which is, it’s better to be approximately right than exactly wrong.
+
+Jensen: There you go. Yeah, that’s a good one.
+
+Ben: It’s a good one to live by.
+
+All right, listeners. We are here to tell you about a company that literally couldn’t be more perfect for this episode, Crusoe.
+
+David: Crusoe, as you know by now, is a cloud provider built specifically for AI workloads and powered by clean energy. Nvidia is a major partner of Crusoe. Their data centers are filled with A100s and H100s. As you probably know, with the rising demand for AI, there’s been a huge surge in the need for high-performing GPUs, leading to a noticeable scarcity of Nvidia GPUs in the market.
+
+Crusoe has been ahead of the curve and is among the first cloud providers to offer Nvidia’s H100s scale. They have a very straightforward strategy: create the best AI cloud solution for customers using the very best GPU hardware on the market that customers ask for like Nvidia, and invest heavily in an optimized cloud software stack.
+
+Ben: To illustrate, they already have several customers already running large-scale generative AI workloads on clusters of Nvidia H100 GPUs, which are interconnected with 3200 gigabit InfiniBand and leveraging Crusoee’s network attached block storage solution. Because their cloud is run on wasted, stranded, or clean energy, they can provide significantly better performance per dollar than traditional cloud providers.
+
+David: Ultimately, this results in a huge win-win. They take what is otherwise a huge amount of energy waste that causes environmental harm, and use it to power massive AI workloads.
+
+It’s worth noting that through their operations, Crusoe is actually reducing more emissions than they would generate. In fact, in 2022, Crusoe captured over four billion cubic feet of gas, which led to the avoidance of approximately 500,000 metric tons of CO2 emissions. That’s equivalent to taking about 160,000 cars off the road.
+
+Ben: Amazing. If you, your company or your portfolio companies could use lower cost and more performant infrastructure for your AI workloads, go to crusoecloud.com/acquired, or click the link in the show notes.
+
+I want to move away from Nvidia if you’re okay with it, and ask you some questions since we have a lot of founders that listen to this show, some advice for company building.
+
+The first one is, when you’re starting a startup in the earliest days, your biggest competitor is you don’t make anything people want. Your company’s likely to die just because people don’t actually care as much as you do about [...].
+
+In the later days, you actually have to be very thoughtful about competitive strategy. I’m curious, what would be your advice to companies that have product/market fit, that are starting to grow, they’re in interesting growing markets. Where should they look for competition and how should they handle it?
+
+Jensen: There are all kinds of ways to think about competition. We prefer to position ourselves in a way that serves a need that usually hasn’t emerged.
+
+David: I’ve heard you or others in Nvidia (I think) used the phrase zero billion dollar—
+
+Jensen: That’s exactly right. It’s our way of saying there’s no market yet, but we believe there will be one. Usually when you’re positioned there, everybody’s trying to figure out why are you here. When we first got into automotive, because we believe that in the future, the car is going to be largely software. If it’s going to be largely software, a really incredible computer is necessary.
+
+When we positioned ourselves there, I still remember one of the CTOs told me, you know what? Cars cannot tolerate the blue screen of death. I said, I don’t think anybody can tolerate that, but that doesn’t change the fact that someday every car will be a software-defined car. I think 15 years later we’re largely right.
+
+Oftentimes there’s non-consumption, and we like to navigate our company there. By doing that, by the time that the market emerges, it’s very likely there aren’t that many competitors shaped that way.
+
+We were early in PC gaming, and today Nvidia’s very large in PC gaming. We reimagined what a design workstation would be like. Today, just about every workstation on the planet uses Nvidia’s technology. We reimagine how supercomputing ought to be done and who should benefit from supercomputing, that we would democratize it. And look today, Nvidia’s in accelerated computing is quite large.
+
+We reimagine how software would be done, and today it’s called machine learning, and how computing would be done, we call it AI. We reimagined these things, try to do that about a decade in advance. We spent about a decade in zero billion dollar markets, and today I spent a lot of time on omniverse. Omniverse is a classic example of a zero billion dollar business.
+
+Ben: There are like 40 customers now? Something like that?
+
+David: Amazon, BMW.
+
+Jensen: Yeah, I know. It’s cool.
+
+Ben: Let’s say you do get this great 10-year lead. But then other people figure it out, and you’ve got people nipping at your heels. What are some structural things that someone who’s building a business can do to stay ahead? You can just keep your pedal to the metal and say, we’re going to outwork them and we’re going to be smarter. That works to some extent, but those are tactics. What strategically can you do to make sure that you can maintain that lead?
+
+Jensen: Oftentimes, if you created the market, you ended up having what people describe as moats, because if you build your product right and it’s enabled an entire ecosystem around you to help serve that end market, you’ve essentially created a platform.
+
+Sometimes it’s a product-based platform. Sometimes it’s a service-based platform. Sometimes it’s a technology-based platform. But if you were early there and you were mindful about helping the ecosystem succeed with you, you ended up having this network of networks, and all these developers and customers who are built around you. That network is essentially your moat.
+
+I don’t love thinking about it in the context of a moat. The reason for that is because you’re now focused on building stuff around your castle. I tend to like thinking about things in the context of building a network. That network is about enabling other people to enjoy the success of the final market. That you’re not the only company that enjoys it, but you’re enjoying it with a whole bunch of other people.
+
+David: I’m so glad you brought this up because I wanted to ask you. In my mind, at least, and it sounds like in yours, too, Nvidia is absolutely a platform company of which there are very few meaningful platform companies in the world.
+
+I think it’s also fair to say that when you started, for the first few years you were a technology company and not a platform company. Every example I can think of, of a company that tried to start as a platform company, fails. You got to start as a technology first.
+
+When did you think about making that transition to being a platform? Your first graphics cards were technology. There was no CUDA, there was no platform.
+
+Jensen: What you observed is not wrong. However, inside our company, we were always a platform company. The reason for that is because from the very first day of our company, we had this architecture called UDA. It’s the UDA of CUDA.
+
+David: CUDA is Compute Unified Device Architecture?
+
+Jensen: That’s right. The reason for that is because what we’ve done, what we essentially did in the beginning, even though RIVA 128 only had computer graphics, the architecture described accelerators of all kinds. We would take that architecture and developers would program to it.
+
+In fact, Nvidia’s first business strategy was we were going to be a game console inside the PC. A game console needs developers, which is the reason why Nvidia, a long time ago, one of our first employees was a developer relations person. It’s the reason why we knew all the game developers and all the 3D developers.
+
+David: Wow. Wait, so was the original business plan to…
+
+Ben: Sort of like to build DirectX.
+
+David: Yeah, compete with Nintendo and Sega as with PCs?
+
+Jensen: In fact, the original Nvidia architecture was called Direct NV (Direct Nvidia). DirectX was an API that made it possible for the operating system to directly connect with the hardware.
+
+David: But DirectX didn’t exist when you started Nvidia, and that’s what made your strategy wrong for the first couple of years.
+
+Jensen: In 1993, we had Direct Nvidia, which in 1995 became DirectX.
+
+Ben: This is an important lesson. You—
+
+Jensen: We were always a developer-oriented company.
+
+Ben: Right. The initial attempt was we will get the developers to build on Direct NV, then they’ll build for our chips, and then we’ll have a platform. What played out is Microsoft already had all these developer relationships, so you learned the lesson the hard way of—
+
+David: [...] did back in the day. They’re like, oh, that could be a developer platform. We’ll take that. Thank you.
+
+Jensen: They did it very differently and did a lot of things right. We did a lot of things wrong.
+
+David: You were competing against Microsoft in the nineties.
+
+Ben: It’s like [...] Nvidia today.
+
+Jensen: It’s a lot different, but I appreciate that. We were nowhere near competing with them. If you look now, when CUDA came along and there was OpenGL, there was DirectX, but there’s still another extension, if you will. That extension is CUDA. That CUDA extension allows a chip that got paid for running DirectX and OpenGL to create an install base for CUDA.
+
+David: That’s why you were so militant. I think from our research, it really was you being militant that every Nvidia chip will run CUDA.
+
+Jensen: Yeah. If you’re a computing platform, everything’s got to be compatible. We are the only accelerator on the planet where every single accelerator is architecturally compatible with the others. None has ever existed.
+
+There are literally a couple of hundred million—250 million, 300 million—installed base of active CUDA GPUs being used in the world today, and they’re all architecturally compatible. How would you have a computing platform if NV30 and NV35 and NV39 and NV40 are all different? At 30 years, it’s all completely compatible. That’s the only unnegotiable rule in our company. Everything else is negotiable.
+
+David: I guess CUDA was a rebirth of UDA, but understanding this now, UDA going all the way back, it really is all the way back to all the chips you’ve ever made.
+
+Jensen: Yeah. In fact, UDA goes all the way back to all of our chips today. For the record, I didn’t help any of the founding CEOs that are listening. I got to tell you while you were asking that question what lessons would I impart? I don’t know.
+
+The characteristics of successful companies and successful CEOs (I think) are fairly well-described. There are a whole bunch of them. I just think starting successful companies is insanely hard. It’s just insanely hard. When I see these amazing companies getting built I have nothing but admiration and respect because I just know that it’s insanely hard.
+
+I think that everybody did many similar things. There are some good, smart things that people do. There are some dumb things that you can do. But you could do all the right smart things and still fail. You could do a whole bunch of dumb things—I did many of them—and still succeed.
+
+Obviously, that’s not exactly right. I think skills are the things that you can learn along the way, but at important moments, certain circumstances have to come together. I do think that the market has to be one of the agents to help you succeed. It’s not enough, obviously, because a lot of people still fail.
+
+Ben: Do you remember any moments in Nvidia’s history where you’re like, oh, we made a bunch of wrong decisions, but somehow we got saved? Because it takes the sum of all the luck and all the skill in order to succeed.
+
+Jensen: I actually thought that you started with RIVA 128 was spot on. RIVA 128, as I mentioned, the number of smart decisions we made, which are smart to this day, how we design chips is exactly the same to this day, because gosh nobody’s ever done it back then. We pulled every trick in the book in a desperation because we had no other choice.
+
+Well, guess what? That’s the way things are ought to be done. And now everybody does it that way. Everybody does it because why should you do things twice if you can do it once? Why tape out a chip seven times if you could tape it out one time?
+
+The most efficient, the most cost effective, the most competitive speed is technology. Speed is performance. Time to market is performance. All of those things apply. So why do things twice if you could do it once?
+
+RIVA 128 made a lot of great decisions in how we spec products, how we think about market needs and lack of, how we judge markets, all of this. Man, we made some amazingly good decisions. Yeah, we were back against the wall. We only had one more shot to do it, but—
+
+Ben: Once you pull out all the stops and you see what you’re capable of, why would you put stops in—
+
+Jensen: Exactly.
+
+Ben: Let’s keep stops out all the time, every time.
+
+Jensen: That’s right.
+
+David: Is it fair to say, though, maybe on the luck side of the equation, thinking back to 1997, that that was the moment where consumers tipped to really, really valuing 3D graphical performance in games?
+
+Jensen: Oh yeah. For example, luck. Let’s talk about luck. If Carmack had decided to use acceleration, because remember, Doom was completely software-rendered.
+
+The Nvidia philosophy was that although general-purpose computing is a fabulous thing and it’s going to enable software and IT and everything, we felt that there were applications that wouldn’t be possible or it would be costly if it wasn’t accelerated. It should be accelerated. 3D graphics was one of them, but it wasn’t the only one. It just happens to be the first one and a really great one.
+
+I still remember the first times we met John. He was quite emphatic about using CPUs and his software render was really good. Quite frankly, if you look at Doom, the performance of Doom was really hard to achieve even with accelerators at the time. If you didn’t have to do bilinear filtering, it did a pretty good job.
+
+David: The problem with Doom, though, was you needed Carmac to program it.
+
+Jensen: Exactly. It was a genius piece of code, but nonetheless, software renders did a really good job. If he hadn’t decided to go to OpenGL and accelerate for Quake, frankly what would be the killer app that put us here? Carmack and Sweeney, both between Unreal and Quake, created the first two killer applications for consumer 3D, so I owe them a great deal.
+
+David: I want to come back real quick to you told these stories and you’re like, well, I don’t know what founders can take from that. I actually do think if you look at all the big tech companies today, perhaps with the exception of Google, they did all start—and understanding this now about you—by addressing developers, planning to build a platform, and tools for developers.
+
+All of them—Apple, not Amazon. [...] That’s how AWS started. I think that actually is a lesson to your point of, that won’t guarantee success by any means, but that’ll get you hanging around a tree if the apple falls.
+
+Jensen: As many good ideas as we have. You don’t have all the world’s good ideas and the benefit of having developers is you get to see a lot of good ideas.
+
+Ben: Well, as we start to drift toward the end here, we spent a lot of time on the past. I want to think about the future a little bit. I’m sure you spend a lot of time on this being on the cutting edge of AI.
+
+We’re moving into an era where the productivity that software can accomplish when a person is using software can massively amplify the impact and the value that they’re creating, which has to be amazing for humanity in the long run. In the short term, it’s going to be inevitably bumpy as we figure out what that means.
+
+What do you think some of the solutions are as AI gets more and more powerful and better at accelerating productivity for all the displaced jobs that are going to come from it?
+
+Jensen: First of all, we have to keep AI safe. There are a couple of different areas of AI safety that’s really important. Obviously, in robotics and self-driving car, there’s a whole field of AI safety. We’ve dedicated ourselves to functional and active safety, and all kinds of different areas of safety. When to apply human in the loop? When is it okay for a human not to be in the loop? How do you get to a point where increasingly human doesn’t have to be in the loop, but human largely in the loop?
+
+In the case of information safety, obviously bias, false information, and appreciating the rights of artists and creators, that whole area deserves a lot of attention.
+
+You’ve seen some of the work that we’ve done, instead of scraping the Internet we, we partnered with Getty and Shutterstock to create commercially fair way of applying artificial intelligence, generative AI.
+
+In the area of large language models in the future of increasingly greater agency AI, clearly the answer is for as long as it’s sensible—and I think it’s going to be sensible for a long time—is human in the loop. The ability for an AI to self-learn, improve, and change out in the wild in a digital form should be avoided. We should collect data. We should carry the data. We should train the model. We should test the model, validate the model before we release it in the wild again. So human is in the loop.
+
+There are a lot of different industries that have already demonstrated how to build systems that are safe and good for humanity. Obviously, the way autopilot works for a plane, two-pilot system, then air traffic control, redundancy and diversity, and all of the basic philosophies of designing safe systems apply as well in self-driving cars, and so on and so forth. I think there are a lot of models of creating safe AI, and I think we need to apply them.
+
+With respect to automation, my feeling is that—and we’ll see—it is more likely that AI is going to create more jobs in the near term. The question is what’s the definition of near term? And the reason for that is the first thing that happens with productivity is prosperity. When the companies get more successful, they hire more people because they want to expand into more areas.
+
+So the question is, if you think about a company and say, okay, if we improve the productivity, then need fewer people. Well, that’s because the company has no more ideas. But that’s not true for most companies. If you become more productive and the company becomes more profitable, usually they hire more people to expand into new areas.
+
+So long as we believe that they’re more areas to expand into, there are more ideas in drugs, there’s drug discovery, there are more ideas in transportation, there are more ideas in retail, there are more ideas in entertainment, that there are more ideas in technology, so long as we believe that there are more ideas, the prosperity of the industry which comes from improved productivity, results in hiring more people, more ideas.
+
+Now you go back in history. We can fairly say that today’s industry is larger than the world’s industry a thousand years ago. The reason for that is because obviously, humans have a lot of ideas. I think that there are plenty of ideas yet for prosperity and plenty of ideas that can be begat from productivity improvements, but my sense is that it’s likely to generate jobs.
+
+Now obviously, net generation of jobs doesn’t guarantee that any one human doesn’t get fired. That’s obviously true. It’s more likely that someone will lose a job to someone else, some other human that uses an AI. Not likely to an AI, but to some other human that uses an AI.
+
+I think the first thing that everybody should do is learn how to use AI, so that they can augment their own productivity. Every company should augment their own productivity to be more productive, so that they can have more prosperity, hire more people.
+
+I think jobs will change. My guess is that we’ll actually have higher employment, we’ll create more jobs. I think industries will be more productive. Many of the industries that are currently suffering from lack of labor, workforce is likely to use AI to get themselves off their feet and get back to growth and prosperity. I see it a little bit differently, but I do think that jobs will be affected, and I’d encourage everybody just to learn AI.
+
+David: This is appropriate. There’s a version of something we talked about a lot on Acquired, we call it the Moritz corollary to Moore’s law, after Mike Moritz from Sequoia.
+
+Jensen: Sequoia was the first investor in our company.
+
+David: Of course, yeah. The great story behind it is that when Mike was taking over for Don Valentine with Doug, he was sitting and looking at Sequoia’s returns. He was looking at fund three or four, I think it was four maybe that had Cisco in it. He was like, how are we ever going to top that? Don’s going to have us beat. We’re never going to beat that.
+
+He thought about it and he realized that, well, as compute gets cheaper, and it can access more areas of the economy because it gets cheaper, and can it get adopted more widely, well then the markets that we can address should get bigger. Your argument is basically AI will do the same thing. The cycle will continue.
+
+Jensen: Exactly. I just gave you exactly the same example that in fact, productivity doesn’t result in us doing less. Productivity usually results in us doing more. Everything we do will be easier, but we’ll end up doing more. Because we have infinite ambition. The world has infinite ambition. If a company is more profitable, they tend to hire more people to do more.
+
+Ben: That’s true. Technology is a lever, and the place where the idea falls down is that we would be satisfied.
+
+David: Humans have a never-ending ambition.
+
+Ben: No. Humans will always expand, consume more energy, and attempt to pursue more ideas. That has always been true of every version of our species over time.
+
+David: Now is a great time to share something new from our friends at Blinkist and Go1 that is very appropriate to this episode.
+
+Ben: Personal story time. A few weeks ago, I was scouring the web to find Jensen’s favorite business books, which was proving to be difficult. I really wanted Blinkist to make blinks of each of those books so you could all access them. I think I found one or two in random articles, but that just wasn’t enough.
+
+Finally, before I gave up, as a last resort, I asked an AI chatbot, specifically Bard, to provide me a list and cite the sources of Jensen’s favorite business books. Miraculously, it worked. Bard found books that Jensen had called out in public forums over the past several decades.
+
+If you click the link in the show notes or go to blinkist.com/jensen, you can get the blinks of all five of those books, plus a few more that Jensen specifically told us about later in the episode.
+
+David: We also have an offer from Blinkist and Go1 that goes beyond personal learning. Blinkist has handpicked a collection of books related to the themes of this episode, so tech innovation, leadership, the dynamics of acquisitions. These books offer the mental models to adapt to a rapidly changing technology environment.
+
+Ben: And just like all other episodes, Blinkist is giving Acquired listeners an exclusive 50% discount on all premium content. This gives you key insights from thousands of books at your fingertips, all condensed into easy-to-digest summaries.
+
+If you’re a founder, a team lead, or an L&D manager, Blinkist also includes curated reading lists and progress tracking features, all overseen by a dedicated customer success manager to help your team flourish as you grow.
+
+David: To claim the whole free collection, unlock the 50% discount, and explore Blinkist enterprise solution, simply visit blinkist.com/jensen and use the promo code Jensen.
+
+Blinkist and their parent company Go1 are truly awesome resources for your company and your teams as they develop from small startup to enterprise. Our thanks to them. Seriously, this offer is pretty awesome. Go take them up on it.
+
+We have a few lightning round questions we want to ask you, and then we have a very fun—
+
+Jensen: Oh dear. I can’t think that fast.
+
+Ben: We’ll open up an easy one based on all these conference rooms we see named around here. Favorite sci-fi book?
+
+Jensen: I’ve never read a sci-fi book before.
+
+Ben: No.
+
+David: Oh, come on.
+
+Jensen: Yeah.
+
+David: You’re missing out.
+
+Ben: What with the obsession with Star Trek and…
+
+Jensen: Well, it’s easy. I just watch the TV show.
+
+Ben: Okay. Favorite sci-fi TV show?
+
+Jensen: Well, Star Trek’s my favorite. Yeah, Star Trek’s my favorite.
+
+Ben: I saw VGER out there on the way in. It’s a good conference room name.
+
+Jensen: VGER’s an excellent one, yeah.
+
+David: What car is your daily driver these days? And related question, do you still have the Supra?
+
+Jensen: Oh, it’s one of my favorite cars, and also favorite memories. You guys might not know this, but Lori and I got engaged Christmas one year, and we drove back in my brand new Supra, and we totaled it. We were this close to the end.
+
+Ben: Thank God you didn’t.
+
+Jensen: Yeah. But nonetheless, it wasn’t my fault. It wasn’t the Supra’s fault, but I love that car.
+
+David: The one time when it wasn’t the Supra’s fault.
+
+Jensen: Yeah. I love that car. For security reasons and others, I’m driven in the Mercedes EQS. It’s a great car.
+
+David: Using Nvidia technology?
+
+Jensen: Yeah, it has. We’re the central computer.
+
+Ben: Sweet. I know we already talked a little bit about business books, but one or two favorites that you’ve taken something from.
+
+Jensen: Clay Christensen, I think the series is the best. There’s just no two ways about it. The reason for that is because it’s so intuitive and so sensible, it’s approachable. But I read a whole bunch of them, and I read just about all of them. I really enjoyed Andrew Grove’s books. They’re all really good.
+
+Ben: Awesome. Favorite characteristic of Don Valentine.
+
+Jensen: Grumpy, but endearing. What he said to me the last time as he decided to invest in our company, he says, if you lose my money, I’ll kill you.
+
+David: Of course he did.
+
+Jensen: And then over the course of the decades, the years that followed, when something is nicely written about us in Mercury News, it seems like he wrote it in a crayon, he’ll say, ‘Good job, Don.’ Just write over the newspaper, just, ‘Good job, Don,’ and he mails it to me. I hope I’ve kept them, but anyway, you could tell he’s a real sweetheart, but he cares about the companies.
+
+David: I bet he’s a special character.
+
+Jensen: Yeah, he’s incredible.
+
+David: What is something that you believe today that 40-year-old Jensen would’ve pushed back on and said, no, I disagree.
+
+Jensen: There’s plenty of time. If you prioritize yourself properly and you make sure that you don’t let Outlook be the controller of your time, there’s plenty of time.
+
+David: Plenty of time in the day? Plenty of time to achieve this thing?
+
+Jensen: To do anything. Just don’t do everything. Prioritize your life. Make sacrifices. Don’t let Outlook control what you do every day.
+
+Notice I was late to our meeting, and the reason for that, by the time I looked up, oh my gosh. Ben and David are waiting.
+
+David: We have time.
+
+Jensen: Exactly.
+
+David: Didn’t stop this from being your day job.
+
+Jensen: No, but you have to prioritize your time really carefully, and don’t let Outlook determine that.
+
+David: Love that. What are you afraid of, if anything?
+
+Jensen: I’m afraid of the same things today that I was in the very beginning of this company, which is letting the employees down. You have a lot of people who joined your company because they believe in your hopes and dreams, and they’ve adopted it as their hopes and dreams.
+
+You want to be right for them. You want to be successful for them. You want them to be able to build a great life as well as help you build a great company, and be able to build a great career. You want them to have to enjoy all of that.
+
+These days, I want them to be able to enjoy the things I’ve had, the benefit of enjoying, and all the great success I’ve enjoyed. I want them to be able to enjoy all of that. So I think the greatest fear is that you let them down.
+
+David: What point did you realize that you weren’t going to have another job, like this was it.
+
+Jensen: I don’t change jobs. If it wasn’t because of Chris and Curtis convincing me to do Nvidia, I would still be at LSI Logic today. I’m certain of it.
+
+Ben: Wow. Really?
+
+Jensen: Yeah, I’m certain of it. I would keep doing what I’m doing. At the time that I was there, I was completely dedicated and focused on helping LSI Logic be the best company it could be. I was LSI Logic’s best ambassador. I’ve got great friends that to this day that I’ve known from LSI Logic. It’s a company I loved then, I love dearly today.
+
+I know exactly the revolutionary impact it had on chip, system, and computer design. In my estimation, one of the most important companies that ever came to Silicon Valley and changed everything about how computers were made. It put me in the epicenter of some of the most important events in computer industry.
+
+It led me to meeting Chris, Curtis, Andy Beckenstein, and John Rubenstein, some of the most important people in the world. Frank, I was with the other day. The list goes on. LSI Logic was really important to me, and I would still be there. Who knows what LSI Logic would’ve become if I were still there. That’s how my mind works.
+
+David: Powering the AI of the world.
+
+Jensen: Exactly. I might be doing the same thing that I’m doing today.
+
+David: I got the sense from remembering back to part one of our series on Nvidia.
+
+Jensen: Until I’m fired, this is my last job. This is it.
+
+David: I got the sense that LSI Logic might have also changed your perspective and philosophy about computing, too. A sense we got from the research was that when right out of school and when you first went to AMD first, you believed a version of Jerry Sanders’ real men have fabs. You need to do the whole stack, you got to do everything, and that LSI Logic changed you.
+
+Jensen: What LSI Logic did was realize that you can express transistors, logic gates, and chip functionality in high-level languages. That by raising the level of abstraction in what is now called high-level design—it was coined by Harvey Jones who’s on Nvidia’s board and I met him way back in the early days of Synopsys—during that time, there was this belief that you can express chip design in high level languages. And by doing so, you could take advantage of optimizing compilers, optimization logic, and tools, and be a lot more productive.
+
+That logic was so sensible to me. I was 21 years old at the time, and I wanted to pursue that vision. Frankly, that idea happened in machine learning. It happened in software programming. I want to see it happen in digital biology, so that we can think about biology in a much higher level language, probably a large language model would be the way to make it representable.
+
+That transition was so revolutionary, I thought that was the best thing ever happened to the industry. I was really happy to be part of it, and I was at ground zero. I saw one industry change revolutionize another industry. If not for LSI Logic doing the work that it did, Synopsys shortly after, then why would the computer industry be where it is today? It’s really, really terrific. I was at the right place at the right time to see all that.
+
+David: That’s super cool. It sounded like the CEO of LSI Logic put a good word in for you with Don Valentine, too.
+
+Jensen: I didn’t know how to write a business plan.
+
+Ben: Which it turns out is not actually important.
+
+Jensen: No. It turns out that making a financial forecast that nobody knows is going to be right or wrong, turns out not to be that important. But the important things that a business plan probably could have teased out, I think that the art of writing a business plan ought to be much, much shorter.
+
+It forces you to condense what is the true problem you’re trying to solve? What is the unmet need that you believe will emerge? And what is it that you’re going to do that is sufficiently hard, that when everybody else finds out is a good idea, they’re not going to swarm it and make you obsolete? It has to be sufficiently hard to do.
+
+There are a whole bunch of other skills that are involved in just product positioning, pricing, go to market and all that stuff. But those are skills, and you can learn those things easily. The stuff that is really, really hard is the essence of what I described.
+
+I did that okay, but I had no idea how to write the business plan. I was fortunate that Wilf Corrigan was so pleased with me in the work that I did when I was at LSI Logic, he called up Don Valentine and told Don, invest in this kid. He’s going to come your way. I was set up for success from that moment and got us off the ground.
+
+David: As long as you don’t lose the money.
+
+Jensen: I think Sequoia did okay. I think we probably are one of the best investments they’ve ever made.
+
+Ben: Have they held through today?
+
+Jensen: The VC partner is still on the board, Mark Stevens. All these years. The two founding VCs are still on the board.
+
+Ben: Sutter Hill and Sequoia?
+
+Jensen: Yeah. Tench Coxe and Mark Stevens. I don’t think that ever happens. We are singular in that circumstance, I believe. They’ve added value this whole time, been inspiring this whole time, gave great wisdom and great support. But they also were so—
+
+David: Haven’t killed you yet?
+
+Jensen: No, not yet. But they’ve been entertained by the company, inspired by the company, and enriched by the company, so they stayed with it and I’m really grateful.
+
+David: Well, and that being our final question for you. It’s 2023, 30 years anniversary of the founding of Nvidia. If you were magically 30 years old again today in 2023, and you were going to Denny’s with your two best friends who are the two smartest people you know, and you’re talking about starting a company, what are you talking about starting?
+
+Jensen: I wouldn’t do it. I know. The reason for that is really quite simple. Ignoring the company that we would start, first of all, I’m not exactly sure. The reason why I wouldn’t do it, and it goes back to why it’s so hard, is building a company and building Nvidia turned out to have been a million times harder than I expected it to be, any of us expected it to be.
+
+At that time, if we realized the pain and suffering, just how vulnerable you’re going to feel, and the challenges that you’re going to endure, the embarrassment and the shame, and the list of all the things that go wrong, I don’t think anybody would start a company. Nobody in their right mind would do it.
+
+I think that that’s the superpower of an entrepreneur. They don’t know how hard it is, and they only ask themselves how hard can it be? To this day, I trick my brain into thinking, how hard can it be? Because you have to.
+
+Ben: Still, when you wake up in the morning.
+
+Jensen: Yup. How hard can it be? Everything that we’re doing, how hard can it be? Omniverse, how hard can it be?
+
+David: I don’t get the sense that you’re planning to retire anytime soon, though. You could choose to say like, whoa, this is too hard.
+
+Ben: The trick is still working.
+
+David: Yeah, the trick is still working.
+
+Jensen: I’m still enjoying myself immensely and I’m adding a little bit of value, but that’s really the trick of an entrepreneur. You have to get yourself to believe that it’s not that hard, because it’s way harder than you think. If I go taking all of my knowledge now and I go back, and I said, I’m going to endure that whole journey again, I think it’s too much. It is just too much.
+
+Ben: Do you have any suggestions on any support system or a way to get through the emotional trauma that comes with building something like this?
+
+Jensen: Family, friends, and all the colleagues we have here. I’m surrounded by people who’ve been here for 30 years. Chris has been here for 30 years. Jeff Fisher’s been here 30 years, Dwight’s been here 30 years. Jonah and Brian have been here 25-some years, and probably longer than that. Joe Greco’s been here 30 years.
+
+I’m surrounded by these people that never one time gave up, and they never one time gave up on me. That’s the entire ball of wax. To be able to go home and have your family be fully committed to everything that you’re trying to do, thick or thin they’re proud of you and proud of the company, you need that. You need the unwavering support of people around you.
+
+Jim Gaithers and the Tench Coxes, the Mark Stevens, the Harvey Jones, and all the early people of our company, the Bill Millers, they not one time gave up on the company and us. You need that. I’m pretty sure that almost every successful company and entrepreneurs that have gone through some difficult challenges, had that support system around them.
+
+David: I know how meaningful that is in any company, but for you, I feel like the Nvidia journey is particularly amplified on these dimensions. You went through two, if not three, 80%-plus drawdowns in the public markets, and to have investors who’ve stuck with you from day one through that, must be just so much support.
+
+Jensen: It is incredible. You hate that any of that stuff happened. Most of it is out of your control, but 80% fall, it’s an extraordinary thing no matter how you look at it.
+
+I forget exactly, but we traded down at about a couple of $2–$3 billion in market value for a while because of the decision we made in going into CUDA and all that work. Your belief system has to be really, really strong. You have to really, really believe it and really, really want it.
+
+Otherwise, it’s just too much to endure because everybody’s questioning you. Employees aren’t questioning you, but employees have questions. People outside are questioning you, and it’s a little embarrassing.
+
+It’s like when your stock price gets hit, it’s embarrassing no matter how you think about it. It’s hard to explain. There are no good answers to any of that stuff. The CEOs are humans and companies are built of humans. These challenges are hard to endure.
+
+David: Ben had an appropriate comment on our most recent episode on you all, where we were talking about the current situation in Nvidia. I think you said, for any other company this would be a precarious spot to be in, but for Nvidia…
+
+Ben: This is kind of an old hat. You guys are familiar with these large swings in amplitude.
+
+Jensen: Yeah. The thing to keep in mind is, at all times what is the market opportunity that you’re engaging in? That informs your size. I was told a long time ago that Nvidia can never be larger than a billion dollars. Obviously, it’s an underestimation, under imagination of the size of the opportunity. It is the case that no chip company can ever be so big. But if you’re not a chip company, then why does that apply to you?
+
+This is the extraordinary thing about technology right now. Technology is a tool and it’s only so large. What’s unique about our current circumstance today is that we’re in the manufacturing of intelligence. We’re in the manufacturing of work world. That’s AI. The world of tasks doing work—productive, generative AI work, generative intelligent work—that market size is enormous. It’s measured in trillions.
+
+One way to think about that is if you built a chip for a car, how many cars are there and how many chips would they consume? That’s one way to think about that. However, if you build a system that, whenever needed, assisted in the driving of the car, what’s the value of an autonomous chauffeur every now and then?
+
+Obviously, the problem becomes much larger, the opportunity becomes larger. What would it be like if we were to magically conjure up a chauffeur for everybody who has a car, and how big is that market? Obviously, that’s a much, much larger market.
+
+The technology industry is that what we discovered, what Nvidia has discovered, and what some of the discovered, is that by separating ourselves from being a chip company but building on top of a chip and you’re now an AI company, the market opportunity has grown by probably a thousand times.
+
+Don’t be surprised if technology companies become much larger in the future because what you produce is something very different. That’s the way to think about how large can your opportunity, how large can you be? It has everything to do with the size of the opportunity.
+
+Ben: Yup. Well, Jensen, thank you so much.
+
+David: Thank you.
+
+Ben: Ooh, David, that was awesome.
+
+David: So fun.
+
+Ben: Listeners, we want to tell you that you should totally sign up for our email list. Of course, it is notifications when we drop a new email, but we’ve added something new. We’re including little tidbits that we learn after releasing the episode, including listener corrections.
+
+We also have been teasing what the next episode will be. If you want to play the little guessing game along with the rest of the Acquired community, sign up at acquired.fm/email.
+
+Our huge thank you to Blinkist, Statsig, and Crusoe. All the links in the show notes are available to learn more, and get the exclusive offers for the Acquired community from each of them. You should check out ACQ2, which is available at any podcast player. As these main Acquired episodes get longer and come out once a month instead of once every couple of weeks, it’s a little bit more of a rarity these days.
+
+David: We’ve been upleveling our production process, and that takes time.
+
+Ben: Yes. ACQ2 has become the place to get more from David and I, and we’ve just got some awesome episodes coming up that we are excited about.
+
+If you want to come deeper into the Acquired kitchen, become an LP, acquired.fm/lp. Once every couple of months or so, we’ll be doing a call with all of you on Zoom just for LPs to get the inside scoop of what’s going on in Acquired land and get to know David and I a little bit better. Once a season, you’ll get to help us pick a future episode. That’s acquired.fm/lp.
+
+Anyone should join the Slack, acquired.fm/slack. God, we’ve got a lot of things now, David.
+
+David: I know. The hamburger bar on our website is expanding.
+
+Ben: That’s how you know we’re becoming enterprise. Wait until we have a mega menu, a menu of menus, if you will.
+
+David: What is the Acquired solution that we can sell?
+
+Ben: That’s true.
+
+David: We got to find that.
+
+Ben: All right. With that, listeners, acquired.fm/slack to join the Slack and discuss this episode, acquired.fm/store to get some of that sweet merch that everyone is talking about. And with that, listeners, we will see you next time.
+
+David: We’ll see you next time.

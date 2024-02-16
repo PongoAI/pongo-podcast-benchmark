@@ -1,0 +1,1267 @@
+Ben: Welcome to season 9, episode 5 of Acquired, the podcast about great technology companies and the stories and playbooks behind them. I'm Ben Gilbert, and I'm the co-founder and managing director of Seattle-based Pioneer Square Labs and our venture fund, PSL Ventures.
+
+David: And I'm David Rosenthal and I am an angel investor based in San Francisco.
+
+Ben: We are your hosts. When we last left, our hero, villain? Unclear.
+
+David: Anti-hero.
+
+Ben: We saw John D. Rockefeller supporting the Sherman Antitrust Act as a piece of dead-on-the-vine legislation with really nothing to fear from it. Today, we will cover Standard Oil from 1890 through their—spoiler alert breakup—in 1911.
+
+David: Ben, you're ruining the punchline.
+
+Ben: We're going to cover Rockefeller’s legacy, philanthropy, and how today's world is a Rockefeller-shaped one in more ways than one. We will also debate the finer points of where Standard Oil crossed the line between using legitimate business practices like operational efficiency and economies of scale into straight-up abuses of power to grow their massive, massive profits.
+
+David: You mean like bribing elected officials?
+
+Ben: David, look, I don't want to spoil anything here other than the breakup. Listeners, we want to say thank you.
+
+David: Yeah. We have had a pretty crazy month here at Acquired. Starting with the TSMC episode, we have just been on, I don't know what it is. You all like semiconductors. But the show has been growing hugely, so much good stuff is going on. We were talking beforehand, we really do want to keep our intro shorter and just start getting right into the stories.
+
+Ben: In particular, thank you to our old listeners for spreading the gospel. We've really enjoyed the slow, methodical, and linear growth. I think it's helped us hone the product of Acquired, but of course, an explosive growth spurt is always a fun thing. Thank you to those of you for spreading the word over the years, and welcome to all the new folks.
+
+David: And then two, unrelated to the episode but a special fun thing to talk about. We are about to have a new addition to the Acquired family.
+
+Ben: Yeah, not an on-air addition though.
+
+David: No, not on-air. This is so crazy, by the time you all hear this, Jenny and I will have had a little baby girl that we are expecting any day now. Honestly, it was like coming down to the wire of recording this is very nerve-wracking.
+
+Ben: This was almost a serious cliffhanger where we just did Part I and then David disappeared.
+
+David: But a bunch of my friends were asking me like hey, so excited for you and the baby and all that, but you're going to get a recording for Part II in before the baby comes out.
+
+Ben: David, congratulations. So excited for you and Jenny.
+
+David: Yeah, we can't wait. The last thing before we dive into Part II here is as always, Pilot our presenting sponsor for all of season 9. Pilot is the backbone of the modern financial stack for startups. As you know, they are backed by all-star investors themselves like Sequoia, Index, Bezos Expeditions, and Stripe. If John D. Rockefeller were starting Standard Oil today, he would not do the books himself. He would have Pilot do it.
+
+Ben: Stop doing your books. It's obvious. Outsource it. You're not a books company.
+
+David: You’re not a books company, that's great.
+
+Ben: You're not. You're not an accounting company. Any of you listening out there, 0.1% run an accounting company, so get Pilot to do it instead.
+
+David: All right, now over to our conversation with co-founders, Waseem Daher and Jessica McKellar. We talked last time about what changed that enabled you all to build Pilot as an actual technology company versus just a professional services provider. What services does Pilot integrate with and what does that look like from your customers’ point of view?
+
+Jessica: One of the great things about Pilot is first, it doesn't matter what institutions you're using. We know how to ingest and take good care of your financial stack. Now on top of that, we do have the expertise for these deep integrations with tools as they evolve quickly. Stripe releases a new invoicing API, we can get on that immediately. If you are taking advantage of these fintech solutions as they continue to evolve, you're really going to want a partner that's able to keep up with that on the finance side.
+
+With that being said, really, it's our problem how do we correctly reflect your business needs in your books. The good thing about Pilot is you're talking to a person who understands you and your business and is taking care of translating that into what happens on the back end. You don't have to worry about how to integrate with these institutions because that's our job.
+
+David: As a startup founder, bookkeeping is not something you want to deal with. You can be sure with you guys that you're not only going to be on top of all the latest API changes from Stripe, Plaid, or whomever, but you're just going to take care of the job.
+
+Jessica: Yup.
+
+David: You can learn more about Pilot by going to pilot.com/acquired, and thanks to Waseem and Jessica. All Acquired listeners, if you use that link, you'll get 20% off your first six months of service. And seriously, as Ben says...
+
+Ben: It's a killer deal and stop doing your books.
+
+David: Gilbert doctrine, Gilbert doctrine. Stop doing your books, have Pilot do them for you.
+
+Ben: David, this one we're going to cover some companies that are newer. We actually need to say this is not investment advice, this is for entertainment and educational purposes. We may hold some of the companies that we're talking about, but they're pretty old companies and they're super merged together at this point.
+
+David: All right, so last we left our plucky anti-heroes. Ben, as you said, the Sherman Antitrust Act had just passed. Everybody's having a good laugh about it. The political money is still flowing around like hotcakes or fine wine, which of course Rockefeller didn't drink.
+
+Ben: What was the language that made everyone feel like the legislation was DOA?
+
+David: Yes, the key modifying clause in the Sherman Antitrust Act was, "in restraint of trade." All accommodations were outlawed if they were, "in restraint of trade."
+
+Ben: Which was not defined.
+
+David: Nobody knows what that means. It’s like Will Ferrell.
+
+Ben: It's provocative.
+
+David: Gets the people going. Speaking of going, Standard Oil is going. We said this at the end of Part I. They've won. They've won capitalism. They've won America.
+
+Ben: Ninety percent market share. The whole kerosene market, 90% belongs to them.
+
+David: It's game over. But we did kind of handwave over a bunch of stuff at the end of last time. One, there was some trouble brewing back in the home front, back in the state of Ohio. We're going to cover that. And then the big thing that we really just spent 15 seconds on last time was the whole, oh yeah, J.D. retires. What was going on with that? Why did he just walk away and ride off into the sunset?
+
+Ben: Because he stayed titularly. His name was still on the door. I think he actually did want to walk away, right?
+
+David: Oh, he did.
+
+Ben: But they thought it would be bad for the shareholders.
+
+David: Maybe, maybe. We'll see. All right. So first let's cover the trouble on the homefront back in Ohio. Right as the Sherman Act was passing, the state legislature members in Ohio, remember, they're pretty pissed at Rockefeller and Standard Oil. This goes all the way back to the Cleveland massacre. He has a lot of enemies back home. The state attorney general, a guy named David Watson, decides that he's going to bring a case. I don't think it was actually an antitrust case, but he argues that it's not.
+
+The case is that Standard Oil is in violation of the state corporation laws and that they are an Ohio Corporation, but they are conducting illegal interstate commerce is what they alleged. Standard Oil created this trust structure that was so brilliant. But this suit is like, hey, this is just a sham and a front. You don't really transfer any assets here and you're actually breaking our laws.
+
+It took a couple of years, but by 1892, the case reached the Ohio Supreme Court—State Supreme Court—which rules against Standard Oil. Which means that the trust has to be dissolved. This is the letter of what this means. This Ohio ruling is like game over, but obviously, that's not what happened. How do they get around this? This seems like a pretty big problem.
+
+Well, it turns out our Standard Oil friends have an escape plan that they've already hatched that they have in their back pocket just for this very occasion. Standard Oil lawyers had figured out that in the state of New Jersey—now they have operations, Standard Oil has operations in New Jersey, but there's no Rockefeller and crew there, 26 Broadway in New York. It started in Ohio. There's no real reason why headquarters, they don't have any special attachment to New Jersey.
+
+But in New Jersey, there actually is a loophole in state corporate law at the time that did allow New Jersey corporations to straight-up hold stock in other out-of-state corporations. No even need for a trust structure. What Ohio is suing them for, New Jersey just allows.
+
+Ben: That was the reason why they needed the trust structure in the first place is because Standard Oil of Ohio couldn't own any other Standard Oil companies that are operating in any other states. They couldn't have operations in other states. It's just this crazy remnant of the fact that we are the United States and every single state to date has basically said, if you have the charter to operate a corporation in our state, that's all the business you can do. Your total addressable market is our state.
+
+David: They've got this loophole in New Jersey. What did they do? Boom, they just reorganized the whole thing and they transferred all the assets into the new Standard Oil of New Jersey, or again, at least they made a public show of this. They tell the courts, they tell everybody like, oh yeah, yeah, yeah, this is what we're doing. Whether they actually do this or not? We’ll maybe see a little later in the episode. It doesn't matter though, problem solved.
+
+As Chernow writes in Titan, "The 1892 overhaul was mostly shadow play, a charade to appease the courts. The executive committee at 26 Broadway," of course Rockefeller, Flagler, and all the cronies, "was formally dissolved, but the members lost only their titles and were soon converted, by the nicest legal cunning, into the presidents of 20 affiliated companies. In Standard parlance, these men were now the "gentleman upstairs" or alternatively the "gentleman in Room 1400." Nobody had to switch seats at the lunch table, and Rockefeller and his coterie ruled as absolutely as before."
+
+Ben: Fascinating. You've got this Standard Oil of New Jersey that, by the letter of the law, owns wholly or nearly all these other, at this point, 20 some companies that are operating in all these other states. The way that that sort of structurally looked is all the people who were the trustees of the Standard Oil trust are now the presidents of all those companies, and they're working remotely from Manhattan.
+
+David: They were ahead of the curve. This is great for Standard Oil. This goes on for a while, but slowly but then noticeably over the years, everybody starts to notice something's a little different about Rockefeller. He's always been aloof. Famously, during meetings, he would lie down on a chaise lounge and have his eyes closed and people would think he's asleep. But then he would jump in.
+
+Ben: These are Standard Oil board meetings.
+
+David: Yeah, yeah, exactly. But he's actually listening intently to everything. He's always been a little weird in how he operates, but super laser-focused and engaged in the business. He kind of starts drifting away slowly and he seems weird. He starts not coming into the office every day. I think first he stops coming in on Saturdays and then he takes a longer time off. He starts missing the sacred executive committee or gentleman upstairs lunch meetings.
+
+There really are two things happening to Rockefeller at this time. One is sort of like short-term good but long-term bad, and the other one is short-term bad but long term good. He doesn't have anything left to prove at this point. He's outwitted everybody. Of course, we talked about the Jay-Z-Rockefeller connection last time, but it's like the black album with Jay-Z where he's like, I'm retiring. I'm done. Literally what more can I say here?
+
+Chernow writes, "In explaining his retirement," which this would lead to, "the Rockefeller literature has always stressed his health and the heavy burden of his charities, though another factor contributed as well: He had perfected the gleaming machinery of Standard Oil and his appointed task done," remember, he felt like this was his divine duty from God, "he felt he should pass the reins on to younger men." As Gates, who will talk about in a minute, put it "the business coat had ceased to amuse him. It lacked the freshness and variety and had become merely irksome and he withdrew."
+
+Ben: What you're saying is, Rockefeller is really only like a 0 to 1 guy, and maybe like a 1 to 10 guy and kind of like a 10 to 100 guy, but maybe not 100 to 1000 guy. Or perhaps he's already at scale. He's not really 1000 to 1100 guy.
+
+David: This might be part of what you're seeing with all these big tech CEOs now. It's like Bezos. What more can I do here, guys?
+
+Ben: Yeah, and you know the public sentiment has to be weighing on Rockefeller too where he's like, look, I believe in my heart of hearts that what I've done here is virtuous. I truly believe this is my calling and what God wants me to do. I do believe that I've brought light to the world in a reliable, cheap way. I believe that I've provided 100,000 jobs—good jobs for people—and everyone hates me.
+
+I don't think he was necessarily overly concerned with other people's view of him. He was not an externally motivated man, but that has to grate on you over time where you're working your ass off and you believe you're in the right, at least the vast majority of the time, and yet the world is either espousing incredible hatred towards you or begging you for your money constantly.
+
+David: It's just kind of not fun anymore. We've alluded to this, he wants and tries to fully actually resign from the company. He talks to John Archbold who he wants to take over and says like, you know, look, my heart's not in it anymore. I'm ready to go have another chapter in my life. But Archbold and some of the other executives, they're like, it really matters. I think it would be bad for the troops, and we've just had these brushes with the government. I think it really would help things if just—in title only—you stay involved, you remain a president titularly of Standard Oil.
+
+Ben: Of course that means you remain an officer of the company and all the liability that comes with that. Just keep the title, man.
+
+David: Yeah, it's really to honor you. I was going to save this little quip for later, but I'll use it now. You swim with the sharks, you sleep with the fishes. Archbold, Flagler, and all these guys, they were something. This was a very, very bad move for Rockefeller and a freaking great move for all of the other execs, especially Archbold, at Standard Oil.
+
+Okay, so you said charity and like everybody asking John D. for his money. This is the other piece of it that long term becomes just one of the greatest things to ever happen to America and the world, I think. But he's really, really struggling with what to do with his wealth, and in particular, all these causes. Remember, he wants to do great works, he feels called by God who wants to make the money to then do great works with the money.
+
+Ben: He's been donating all along the way, kind of in these smaller chunks, but to everyone at church on Sundays, to the church to maintain it. He's been charitable thus far.
+
+David: It's kind of trained people around him who he gives to, organizations who he gives to, and now the general public who knows about this that, oh hey, you can just ask John D. for money and he might give you money. He's super stressed out about this. I would find that very stressful. He's getting thousands of letters a week just asking for money.
+
+Ben: He's not into the cool billionaire stuff ideas. He wants to donate. He's finding it incredibly challenging that what he wants to do is find high return on society ways to give this money away that align with his beliefs, so he's looking for either good Christian values ways to give it away, or at least not anything that's antithetical to his beliefs. The last thing that he wants to do is say ah, there's too much inbound, I'm just going to ignore it. This is his mission in life is to answer these pleas.
+
+David: Yeah. Chernow found this great quote from him in—I don't know if it was something he said to somebody or in his papers or not, but I think this really says a lot about what he was feeling. This is directly from Rockefeller about this time, "I investigated and worked myself almost to a nervous breakdown in groping my way, without sufficient guide or chart, through the ever-widening field of philanthropic endeavor. It was forced upon me to organize and plan this department upon as distinct lines of progress as our other business affairs."
+
+Ben: Important to note here is the notion of philanthropic organization does not yet exist in America. There is no Gates Foundation. There's no playbook for like I'm going to start a 501(c)(3) and employ people that work at this nonprofit that will figure out how to give the money away. It's random and scattershot the way that everyone donates. There's not a playbook of like, cool, I'll spin up this organization to give away my wealth.
+
+David: Yup, and he's doing it all himself. It's all on his shoulders. Folks might know who either were familiar before or have gone and looked up John D. on the internet since our Part I, his appearance radically changes during this time. He was like Devil Bill. You get a lot of Devil Bill in him. A big guy, his personality is understated, but his presence. He starts shriveling up, he's losing weight. He gets...
+
+Ben: Alopecia. He loses his hair.
+
+David: All of his hair on his entire body, not just his head—his eyebrows, his mustache. He always had a big bushy mustache. The rest of his body for the whole rest of his life, his hair is gone. It's all just because of this stress that's weighing on him.
+
+Ben: And frankly, the incredible amount of work that he had done. Standard Oil had some trying times. He's not new to stress.
+
+David: Yup. This is really my interpretation here. Some I think comes from Chernow, but he loved every minute of Standard Oil. I think if it were just Standard Oil, I don't think any of this would have happened. I really think the weight of this wealth and this philanthropy was like this albatross just hanging around his neck.
+
+Ben: Let me give a quick scope for a moment when you say the weight of his wealth. Let's talk about his wealth so far at this point in time and then we can check in later and update the numbers. In 1890, he was generating $10 million in annual income just from Standard Oil dividends, from a variety of sources. Inflation-adjusted, it’s like 30x today.
+
+David: Yeah, it’s just insane.
+
+Ben: The other thing to think about is this is before the federal government enacted the income tax. This is $10 million post-tax.
+
+David: Not even post-tax. This is the concept of tax.
+
+Ben: But it's the notion of a post-tax dollar today.
+
+David: It's just straight money.
+
+Ben: He really just has this self-perpetuating wealth because he owns 257,000 of the 973,000 shares of Standard Oil. He owns a quarter of Standard Oil and he's generating these dividends. At this point in time, I think Rockefeller was trying to keep it pretty modest, these 11% annual dividends. But he himself was receiving $3 million in these annual dividends. He had $24 million invested outside of Standard Oil on things like railroads, real estates, steamships, and a dozen of each of these types of companies.
+
+He was invested in banks. Chase Manhattan, he had a very close relationship there and put a lot of money in there. I think by the time he actually retires, he's worth about $200 million.
+
+David: Gosh, I think this happened after he retired. A roundabout way, he ends up owning a significant iron mining and ore deposit operation that ends up getting rolled up into US steel when JP Morgan rolls up US steel—not the bank, the person—rolls up US Steel.
+
+Ben: Which is of course Carnegie Steel that he's rolling up into.
+
+David: Yup, exactly. He makes $80 million on that transaction.
+
+Ben: Eighty of his $200 million of wealth comes from this US steel roll-up that he was fortunate enough to have made an investment in this iron company is just wild. He's got, at this point, of course, owning a quarter of Standard Oil, generating $10 million a year in annual income, got all these investments across all these industries, and then boom, US steel happens to him too.
+
+David: Man, strength leads to strength.
+
+Ben: For sure.
+
+David: I guess it applies to people too and not just institutions.
+
+Ben: One last comment on this Rockefeller wealth. We're still in this 1890 to 1892 time frame, but I mentioned that point when he's worth $200 million in 1902, the GDP of the United States at that point was $24 billion. Even at that point, there's still a decade before Standard Oil gets broken up and he owns a quarter of it. He already has 1% of the US’s GDP as his personal net worth. Already the richest person that will ever exist in America, including Bezos, like all these people.
+
+David: It'll be interesting to see how things play out in the coming years. But yeah, crazy. He's got all this weighing on him. He's trying to be the best, the greatest of all time. Trying to be the GOAT. The Tom Brady, if you will, in both business and philanthropy.
+
+Finally, in 1891, he not gives up, but said, I got to find a different way to make this work. He convinces a man named Frederick Gates, who he had been working with on the University of Chicago project—which we'll talk about in a second—to come move to New York and help him with the philanthropic endeavors that he's undertaking. This is so novel. This ends up creating what leads to the Rockefeller Foundation, to do a family office. All the stuff about how we think, oh yeah, this is how it's done today. This is where it starts. He starts this whole thing, he and Gates.
+
+He writes a letter to Gates, he says, "I am in trouble, Mr. Gates. The pressure of these appeals for gifts has become too great for endurance. I haven't the time or strength with all my heavy business responsibilities to deal with these demands properly. I am so constituted as to be unable to give away money with any satisfaction until I have made the most careful inquiry as to the worthiness of the cause. These investigations are now taking more of my time and energy than Standard Oil itself. Either I must part with the burden, or stop giving entirely and I cannot do the latter."
+
+Ben: That sums it up right there. It's crazy to me that he's still the same old Rockefeller. He's obsessed with digging into every little detail knowing how the money is going to be used. It's actually very similar to the Buffett comparison that we made earlier. You think about the episode that we did, I think it’s Berkshire Hathaway Part II when he starts donating some of his money. Warren was obsessed with analyzing the return on investment. When he was going to donate, he was obsessed with understanding how can I maximize the impact of that investment, which of course was this large burden for him. That's why he ended up deciding, actually, I'm just going to give it all to the Gates Foundation, they can figure it out, I don’t have to think about it.
+
+Whereas there are no foundations yet. You have Rockefeller here with a similar obsession with making sure that every penny is deployed in the most optimal way he did his whole business career and how frustrating.
+
+David: Yeah. I think there's one key difference though between Rockefeller and Buffett. I think they both have this outlook, but Buffett, I think he doesn't have a genuine want to be involved in it. He has this outlook, this is the way it should be, but I don't have a passion to do it myself. Rockefeller has the passion to do it himself. I want to run Standard Oil and I want to do this myself, but I need help. So he brings in Gates.
+
+Ben: They basically invent philanthropy.
+
+David: Yes, they do. We’re going to have so much fun on this episode still to come, but I think if there's one thing to take away from this Part II, it’s Part I was Rockefeller and Standard Oil invented modern business. The thing to take away here is they invent philanthropy and coming out of that is so many cornerstones of what modern life is for all of us or almost all of us that are listening that we just take for granted.
+
+Ben: Yeah. When we say invent philanthropy, they invent these sort of systematic and organizational giving away of money. They don't invent tithing—that's a biblical concept—but they really do invent modern philanthropy.
+
+David: Yeah. All right, so let's get into it. The first big project. Ben, as you said, he had been giving all his life, even going back to his bookkeeping days. The first significant project that he and the family did was actually Spelman Seminary, what became Spelman College, the HBCU Women's College in Atlanta in the early 1880s. They financed the building of that.
+
+Ben: Cettie Spelman.
+
+David: Spelman is the maiden name of his wife, Cettie Spelman. Pretty amazing that that was the first major project that they did.
+
+Ben: Just to not over credit, I think they already had like a few hundred people enrolled, they were raising money locally, and they just had some debts. Rockefeller came in and just wiped out all the debt, funded it.
+
+David: And then building the campus there too.
+
+Ben: It is the first Liberal Arts College for Black women in America. Also, worth pointing out about Rockefeller’s character, which I find fascinating because a lot of times, you study people from this era, they’re a product of their time. They have a very low opinion of people that aren't white men. Rockefeller does have some less savory parts in reference to comments that he's made about other ethnic groups here and there, but he went from the pre-Civil War being an abolitionist, a big supporter of Lincoln, to really like carrying that through and then putting his money where his mouth is and really advocating for the rights of Black people after the Civil War.
+
+It's almost silly to say this, but like for a rich White guy of the time, he's remarkably not racist.
+
+David: Yeah, so much about him is remarkably modern. He doesn't have a perfect track record on anything, and he doesn't have a perfect track record on women and women's rights. Most glaringly, I think he and Cettie had five children. One died very young, four children survived to adulthood. The three eldest were daughters, and then Junior was the youngest, one son. The daughters are like fine, you can do stuff whatever, but Junior, you're getting all the money and you're going to be my successor.
+
+Ben: Very similar to the New York Times story in that respect where the money flowed through the male lineage.
+
+David: But, as you say, remarkably striking how close to modern he was in his sensibilities. That was Spelman. That was the first big project. And then there's the University of Chicago, which obviously is this amazing institution and achievement. I think this project is really what put him over the edge psychologically though. This was hard. It started in the early 1880s, there was this movement to build a true Baptist University in America. Remember, Rockefeller is Baptist. All the Ivy League schools started as religious or quasi-religious institutions, but they weren't Baptist.
+
+With the exception of Brown. Brown had a lot of Baptist influence, and that’s where Junior, Rockefeller’s son went. But it wasn't strictly Baptist, I don't think. They wanted to build a real Baptist university.
+
+Ben: Ivy Leagues at this point of time are becoming more and more secular. The Baptist educational community is sort of worried about what is about to take off is this secular education movement and all the best and brightest are going to flock to those types of institutions.
+
+David: Remember, what did we say the first time about the Baptist there? It's not about the wealth per se, but they want to recruit. This movement is like you want to put this university in New York City, attract everybody, the big city, America post-war, et cetera. J.D., of course, is the perfect benefactor for this so he gets involved. It becomes a mess.
+
+A guy running the initiative, a guy named Augustus Strong was a Baptist minister. He ends up sort of scheming Rockefeller’s oldest daughter, Bessie ends up marrying his son so they get very involved. Then the project falls apart and Rockefeller withdraws his support, awkward.
+
+It eventually does morph into trying to build this project in Chicago instead. Should we think Chicago's the Midwest? It was the west then, but it was the biggest city on the frontier. I think it was already the second biggest city in America at that point. Here was sort of new ground, we can build this Baptist university, and then it'll be a model and a template and we'll build a bunch more Baptist universities all over the country.
+
+Ben: Two more benefits too. One of which is it's really expensive to build stuff in Manhattan and so it's a lot cheaper to get building materials out there and hire construction crews. And then, of course, you have Rockefeller who really wants to do these good works because he thinks they're the right things to do, not because he thinks he's repenting for some business sins that he's done and he's really really afraid of anything that looks like I'm doing a charitable thing in order to carry public favor so they don't hate me for the business.
+
+Anytime anybody would insinuate, well, this is a good way for you to make up for all the Standard Oil stuff. He would just excommunicate them, and so it was convenient that it was in Chicago because he felt like if it's in New York, then people will sort of view it as me trying to influence the public to like me and I don't want to be seen as attempting to do that.
+
+David: So you're saying the opposite of what Rockefeller wants might be something like Leland Stanford University, Vanderbilt University, or Duke University—all wonderful institutions. I went to one of them, but these are people who want their names on the building, so to speak.
+
+Ben: For most listeners, I bet you're like wait, Rockefeller founded the University of Chicago? That is exactly what he was going for.
+
+David: It wasn't just universities. Obviously, probably some of you are thinking like, well, you're talking about how Rockefeller pioneered philanthropy and all that, but you guys are missing something. There was another wealthy white dude at the time who was pretty dang philanthropic, Andrew Carnegie, of course, and they were big-time rivals. Carnegie did something pretty amazing. He created the American public library system.
+
+Ben: Oh, I didn't know that.
+
+David: Yeah. Do you know how there's a library in every town in America? That's Carnegie. He created those libraries and funded them.
+
+Ben: I assume that was taxes.
+
+David: No.
+
+Ben: I guess it probably is funded by taxes, like public libraries?
+
+David: I think they're government institutions today, but they were created and given to America. He also did it internationally too, created a bunch of library systems. One of the reasons for sure that he did that is, how do you make sure your name goes down in history? Get a plaque or a statue in front of a big building in every town in America with your name on it. That was not Rockefeller’s style.
+
+Ben: Yeah.
+
+David: This is, at the time, sort of a nebulous concept, but he wanted what he was doing to really be like Standard Oil in that what did Standard Oil do? They had all of these different operations, in different states, but also different companies. Remember, they bought up all these other companies, and it wasn't that they absorbed them whole cloth. They kept operating these individual companies on their own with support from the mothership, but they were expected to be profitable, have good tight operation in a decentralized manner.
+
+Ben: They would just have to pass a quality bar for making sure that they had a good reliable product and then they would slap the Standard brand on it.
+
+David: Yup. The Standard brand, what was Standard itself, it was about setting the standard. It was about creating, doing this sort of "research" to create the best processes that would get disseminated out to the decentralized organization. That's what he wants for philanthropy. Once he brings Gates in, they start thinking about this, and they turn their attention to the state of medicine and health in America and in the world. They do something pretty amazing.
+
+In 1901, they decided to set up the Rockefeller Institute for Medical Research in New York City. This is amazing. They bought a farm on the East Side of Manhattan, overlooking the East River in the upper ‘60s. Literally, in the middle of Manhattan, there's this farm and they set up this medical research institution there.
+
+The idea is it's going to be pure basic research and Chernow has this great quote of Rockefeller talking to his son, to Junior. He says, "'John, we have money, but it will have value for mankind only if we can find able men with ideas, imagination, and courage to put it into productive use.'
+
+Rockefeller placed the scientists at this institution, not the trustees, in charge of expenditures, and this was revolutionary. This was the institute's secret formula: gather great minds, liberate them from petty cares, and let them chase intellectual chimeras without pressure or meddling. If the founders created an atmosphere conducive to creativity, things would, presumably, happen." This little research institution goes on to become Rockefeller University. Ben, have you heard of Rockefeller University before we did the research for this?
+
+Ben: I hadn't, and I've been blown away by the amount of medical research that's come out of it.
+
+David: A small sample, I'm just going to read from Wikipedia here. If you go to the Wikipedia entry for Rockefeller University, these are the things that have come out of this.
+
+"First to culture the infectious agent associated with syphilis. Showed that viruses can be oncogenic which enabled the field of tumor biology. Identified the genetic defect associated with arteriosclerosis, the leading cause of heart attacks in the US. Development of the practice of travel vaccination. Identified the phenomenon of autoimmune disease. Developed virology as an independent field. Developed the first peptide antibiotic. Showed that genes are structurally composed of DNA. Discovered blood groups."
+
+Ben: Just casual, all the blood groups that exist.
+
+David: Yeah. "Developed methadone as treatment of heroin addiction, and devised the AIDS drug cocktail."
+
+Ben: Whoa, really?
+
+David: Yes. This institute, it wasn't until the ‘50s that it would become Rockefeller University. During Rockefeller's life, he never intended to create a university with his name on it. Here's much later. This is a quote from Winston Churchill talking about John Rockefeller, "When history passes its final verdict on John D. Rockefeller, it may well be that his endowment of research will be recognized as a milestone in the progress of the race."
+
+Ben: Boom, that is a pretty ringing endorsement—Winston Churchill.
+
+David: Yeah, this is very far from what all these other philanthropic folks had in mind.
+
+Ben: It was diametrically opposed to the University of Chicago project where that was super high overhead, big deal out of the gate, a lot of pomp and circumstance. With Rockefeller University or what would become that, it was almost like the lean startup.
+
+David: Yeah, you've never heard of it.
+
+Ben: They didn't make a big deal at the beginning and they didn't build a special campus. It was very much like, let's get a bunch of really smart people, the brightest in their field together. We'll pay them good money and we'll kind of see.
+
+David: Let them come here and work on what they want to work on. They go even further. The first head of the Institute who they recruited was this guy named Simon Flexner and Flexner was a physician. Remember, we're talking about how modern Rockefeller is, how modern Standard Oil is, and how modern his philanthropy is. Remember, his father, Bill, was a "doctor." He was a witch doctor. That's what medicine in the practical sense looked like in America. We're still really closer to that at this time, still.
+
+Ben: At best, it was homeopathy.
+
+David: At best, which Rockefeller was actually sympathetic to himself for a long time, but Gates, Rockefeller, and the family, they work with Flexner and they say, we've done all this research in this science, how can we change how medicine is practiced?
+
+They go to Hopkins, they take the Johns Hopkins model, which is what we know is medical school today—four years post undergrad and they spread it out. They don't go create another university to teach another medical school. They go create medical schools at all the other universities in America.
+
+Before this, in medical schools, you didn't need a college degree. There was no standardization. They go first to the University of Chicago, then to Yale, then Vanderbilt, and then to all these other institutions and they just give tens of millions of dollars.
+
+Ben: So they just started medical schools?
+
+David: To start medical schools in the model of Johns Hopkins, and this creates the modern practical medicine as we know it today. Then they go even further. They go back to Hopkins and they say, we will fund creating a new school here attached to the medical school, a public health school. They create the first School of Public Health at Hopkins, and then they go to Harvard and they do the same thing there. It's all behind the scenes. This is so Rockefeller and so Standard Oil.
+
+Ben: Is this being managed by Frederick Gates?
+
+David: Yeah. Gates and now the Rockefellers. Junior gets very involved in this and ultimately takes it over. But Senior, Junior, and Gates, the three of them together along with the staff that they're building, they're driving all of this.
+
+Ben: Listeners, as you can tell by now, Standard Oil Part II is really Rockefeller Part II. I mean, we're dancing in and out of Standard Oil here, but the scope of what the early Standard Oil money allowed the Rockefeller family to do is just unbelievable.
+
+David: Yup. To put a bow on all of this here, they're thinking the whole time, they're like, how do we really institutionalize this? Senior's getting older, they built up this office, this is unique. How do we make this something that's going to perpetuate indefinitely?
+
+In 1913, they got a charter from the state of New York. I don't know exactly how this works. I think it was a federal charter granted in the state of New York to create the Rockefeller Foundation, which still exists to this day. They give away hundreds of millions of dollars a year to causes from medicine, to education, to the arts, to all sorts of things.
+
+Ben: Also, because it's been privately held this whole time, we also don't have an exact figure of what the sum of all these different pockets of Rockefeller family wealth is worth. It's kind of astonishing that we don't, but we don't. There have been scholars who have tried to pour into this and there are estimates, but it's tough.
+
+David: Yeah, I think that's probably where we should leave it right, Ben? Rockefeller, Standard Oil in one business. He's one philanthropist. He's one like America. It's kind of nothing more to see here. Everybody lives happily ever after.
+
+Ben: Not quite.
+
+David: Not quite. Ben, you've been on the mafia movie and content kick, The Godfather, and all that in your carve outs. I think it's time to bring in the one good part of Godfather Part III, "Just when I thought I was out, they pull me back in." Yeah, I think there's a little more to the story.
+
+Ben: Yeah, you shouldn’t have stayed President. Should not have left your name on the door.
+
+David: Here we go. The breakup of Standard Oil.
+
+Ben: Let's review a few numbers before diving into the breakup story. Rockefeller had sort of handed over to Archbold the day-to-day running of the company. That modest 11% dividend. Archbold is a pretty big shareholder, all his friends are pretty big shareholders, that ratcheted up to 31% in 1897 and then 33% in 1899. We are cutting big dividend checks to all of these shareholders.
+
+David: Which Rockefeller actually was not happy about, paradoxically.
+
+Ben: No. He liked keeping it super modest, keeping the cash in the business, and reinvesting it. The share price, this is interesting. It's not a publicly-traded company and so we don't get to see the books.
+
+David: But shares do change hands.
+
+Ben: But shares do change hands and so every day in the newspaper, share price is published, at which it's kind of the reference price people are deciding to trade.
+
+David: It's like a direct offering.
+
+Ben: Yes. The share price went from $176 in 1896, to then three years later $458. The stock is running, as they say.
+
+David: It's a nice Tesla-like move there.
+
+Ben: Yes, which not really. The stock movement that we're seeing today in meme stocks is totally different multiple than we're talking about here. But an unbelievable three-year run from $176 to $458. You then sort of look at that dividend policy, how much of that is there in total? From 1893 to 1901, they paid out $250 million to shareholders. Keep in mind, Rockefeller is making 25% of that. He's upset, but he's also making just a crap ton of money and so the thing to sort of land on here is, this is all before the automobile.
+
+This is all still the kerosene business, and there's this seminal point right around 1898 where cars start happening, it starts working. We go from 800 cars in 1898, to then two years later 8000 cars, and so it's starting to happen. Standard Oil is realizing, wait a minute, we finally can use this useless gasoline product. Even in his retirement, Rockefeller’s real wealth ends up getting piled on top of his sort of paltry wealth that we talked about earlier from the mass-market adoption of the internal combustion engine.
+
+David: Yup. Right around that time, when the automobile was taking off, there's two parts to the breakup story that we're going to talk about here and they're both good for everybody. One is the breakup, which is good, very good, and two is the automobile, which is very good, and they happen on the same parallel paths.
+
+In 1897, right as this run-up in the auto industry was starting and right as J.D. had fully tried to walk away from the business, the good old state of Ohio, they brought charges again back to the top of the show here.
+
+They're like, okay, you guys moved to New Jersey, but still, you're still breaking our laws. We still don't like you. What they do is the government official gets a hold of some old trust shares and they try and go redeem the shares of the trust. They're like, oh, well, if you did what you said you were going to do, I should be able to go get shares in Standard Oil in New Jersey, then there's the holding company underlying all these other companies, and they can actually do it.
+
+They like aha, you guys, you defrauded everybody so they bring a case. Rockefeller actually gets called to testify in this case and he puts on this great show. He pretends to be this doddering old man who's senile and can't remember anything. It's amazing.
+
+Ben: Oh, when he's on the stand, it’s like he’s wandering through the mist. Oh, I can't remember. He goes from one of the sharpest brightest people to ever live in American history to seemingly having no recollection of really how anything came together.
+
+David: Yep. Oh, my God, how did that happen? Where are those trust shares? I don't know, Mr. Prosecutor. The state doesn't actually win the case, but it's kind of a distraction and starts to move public opinion, which is what really counts, the court of public opinion against Standard Oil. But they win and everybody's like, okay, fine. We're going to make it.
+
+Also, at the same time, as this case was going on. There's a presidential election happening. It was actually when it started, 1896 was the election. It's a really terrifying figure from Standard Oil’s point of view. Running for president here, William Jennings Bryan, the OG populist. His thing was America was going to get crucified on a cross of gold, right? That was his?
+
+Ben: Yup. Populism and silver. The two things I remember from American History about him.
+
+David: Brotherhood and apple pie.
+
+Ben: That and he was around forever. I was like, how is this guy still alive? He was on the American national political scene for decades and decades and decades.
+
+David: Still alive, which is a striking choice of words there. Bryan loses, of course, and doesn't become president. Who does become president? The best person that standard and all these other trusts JP Morgan, Carnegie, and everybody could imagine—William McKinley, the celebrated conservative.
+
+Ben: Republican from Ohio.
+
+David: Yup, good old boy. Standard contributed a cool quarter-million dollars to his campaign. Everybody is just pumped. McKinley’s campaign manager, a guy named Mark Hanna, actually went to high school with John D. back when he was going to high school before Wild Bill pulled him out. He's like deep in the family with these guys. He sends a telegram when McKinley wins, literally reads, "God is in his heaven. All is right with the world."
+
+Ben: That's a gloating telegram if I ever see one.
+
+David: Oh my God. There's fist-bumping going on all over the place. McKinley is just like, literally sent from God here, from Standard’s perspective. Fast forward a couple of years though, all's good on the federal level, but we started getting some trouble with the states again and this time it's not Ohio. This time it is right close to the new home, the actual home in New York, is in New York when the feisty new governor of New York starts making some noise about coming after the trust, in particular, the oil trust with Standard Oil. None other than Theodore Roosevelt, the new Governor of New York.
+
+Ben: Which I didn't realize what he did before becoming President. I didn't realize he was involved in bringing this suit against Standard Oil.
+
+David: He was very involved.
+
+Ben: If Rockefeller was bad, there's a chance Theodore Roosevelt was badder.
+
+David: He was the ultimate badass. Once again, Andy Sparks on Twitter, the best, reminded me of Theodore Roosevelt. All the glee that we had in Part I for Rockefeller, Standard Oil, Flagler, mafia dons, and everything that they're doing. You're going to have just an equal glee on the other side when he was unsuccessfully running for President later in life. He gets shot before a speech. He literally gets shot in the chest.
+
+Ben: That's right, and he gives the speech anyway, right?
+
+David: He's on the way to deliver the speech. He's being driven. He gets shot by a botched assassination attempt. He's got a bullet in his chest. The driver starts to divert and take him to the hospital, and he's like, oh, no, no, young man. I'm going to give that speech. He goes to the venue and he starts the speech. He's like, I'd like everybody to be as quiet as possible. I don't know if you all realize that I was just shot. He gives the speech, and then he goes to the hospital. Teddy Roosevelt's the best.
+
+Ben: There's a great David McCullough biography about him. Is it Mornings on Horseback?
+
+David: That might be it. That sounds familiar. I've been to his estate in Sagamore Hill I think it is called. It's on Long Island.
+
+Ben: Cool.
+
+David: It's super cool. Teddy also had, by modern standards, a problematic figure in all of his hunting.
+
+Ben: I was going to say, are there pelts everywhere?
+
+David: My favorite is there's a trash can made of an elephant hoof.
+
+Ben: My God. This is the guy that is going to challenge John D.
+
+David: Standard, the business community, and Mark Hanna come up with a brilliant, genius solution to their new problems from Roosevelt in the state of New York. Remember, they control the Republican Party at this point. They got Roosevelt nominated as the Vice-President on the ticket for McKinley's reelection campaign in 1900.
+
+Ben: This will get rid of him.
+
+David: This will get rid of him. Send him to be VP. It'll be great for his political career, but you're going to get him out of New York. Everybody knows VPs do basically nothing.
+
+Ben: Right. Put him in the corner.
+
+David: Put him in the corner. Now, of course, McKinley wins in a landslide again. Problem solved, everybody's high-fiving.
+
+Ben: What year is this?
+
+David: This is the fall of 1900 when the election happens. It's all great. McKinley gets re-inaugurated in 1901, then he gets shot and dies. Unlike Roosevelt, he does not survive.
+
+Ben: Did the Secret Service exist yet? Are they bad at their jobs or are they just not around yet?
+
+David: That's a good question. I don't know. It's such a wild world. Also, this would continue forever. Well, not forever, but Reagan got shot. Was he the last President to actually be shot?
+
+Ben: That's a good question. They seem to catch them early now.
+
+David: Yeah, goodness. I don't mean to make light of McKinley being shot and dying, but this is literally the worst nightmare possible.
+
+Ben: Suddenly, public enemy number one or private enemy number one for Standard Oil is now in the White House.
+
+David: Yes. Now in the White House. I'm sure everybody's upset about the assassination and whatnot, but once he gets done with mourning, he's like, oh, you MFers, I've got you right where I want you now.
+
+He's about to get some serious ammo because right at the same time, literally the same month that TR is inaugurated as President in September 1901, an amazing pioneering woman journalist named Ida Minerva Tarbell, who's a writer for McClure's National Magazine, starts working on a new project that she pitches to the editor of McClure’s, The History of Standard Oil as a book to come out in the serial form in the magazine.
+
+Ben: One might say Ida has an ax to grind from her own past.
+
+David: This is the birth of investigative journalism as we know it today. Daniel Yergin, the great historian who wrote The Prize, which so many people have recommended after Part I that we read. Ben, you read a little bit of it.
+
+Ben: Yeah. I quickly realized, oh, this is mostly about US-Saudi Arabia relations. We are not going to get to that in Part II.
+
+David: We'll have to cover The Prize and the rest of the international oil history another time, but he calls this book—The History of Standard Oil, "maybe the single most influential book on business ever published in the United States." Amazing.
+
+Tarbell and her colleagues at McClure's become known as the muckrakers. We’ve heard the term muckraking journalist. She's them. Do you know who coined the term muckrakers?
+
+Ben: No, I don't.
+
+David: Teddy Roosevelt himself.
+
+Ben: No way.
+
+David: Yes. So great. He gave a speech and he talked about how great they are. She was this amazing character. You said she might have some agenda.
+
+Ben: Yes, a little bit of personal history to color her point of view here.
+
+David: Where is Ida from? She's this international woman. She lives in Paris for a while, but she's based in New York. She's writing for this [...] magazine, but her roots are actually somewhere close to home in this story.
+
+Ben: Western Pennsylvania area.
+
+David: Yeah. The wild east back in the day. She grew up in Titusville.
+
+Ben: Her dad was an oil refiner, right?
+
+David: Not only did she grow up in Titusville while the beginnings of the oil industry were happening, her dad was a producer, a driller who got totally flattened by Standard Oil. He was one of the leaders of the rebellion against the South Improvement Company stuff and everything that was going on at that point in time. I don't know if you knew this. Not only her dad, her brother goes into the oil business. Her brother becomes a senior executive at Pure Oil.
+
+Ben: Which is the most legitimate competitor of Standard.
+
+David: I don't think we talked about this in Part I. Part of the strategy was they got to 90-ish percent market share in refined oil products coming out of the US. They didn't want to get to 100% because they wanted to keep up some charade of competition.
+
+Ben: It's like having Bing out there in the search engines.
+
+David: Exactly. Sorry, Bing. The Bing of Standard Oil was Pure Oil that they allowed to survive. Guess who's a senior executive there.
+
+Ben: Ida's brother.
+
+David: William Walter Tarbell, Ida's brother.
+
+Ben: By the way, I do have the actual stat that we pulled. PitchBook sent us this great tear sheet that Standard Oil controlled 91% of oil refinement in 1904 and 85% of even the final sales.
+
+David: Wow, monopoly. You said it. She's got this agenda, one might say, but she is a very serious journalist. She spends a year just researching. She wants to find the real history. Nobody's uncovered how this actually went down.
+
+Ben: She starts by going to Titusville to rekindle her roots, remember what it was like, and stew up some anti-Rockefeller feelings before embarking on doing this.
+
+David: "From the perspective of nearly a century later, Ida Tarbell's series remains the most impressive thing ever written about Standard Oil." That is high praise. So much ink has been spilled, but for Chernow to say this is the most impressive thing ever written—
+
+Ben: I almost ordered the book, by the way, but I was like, this is going to be way too hard to read.
+
+David: We'll just take Chernow's word for it here. I trust him. He continues, "a tour de force of reportage that dissects the trust's machinations with weathering clarity. She laid down a clear chronology, provided a trenchant account of how the combine had evolved and made the convoluted history of the oil industry comprehensible. In the dispassionate manner associated with McClure's, she sliced open America's most secretive business and showed all the hidden gears and wheels turning inside it. It remains one of the great case studies of what a single journalist, armed with the facts, can do against seemingly invincible powers."
+
+This is like a nuclear bomb going off in Standard Oil and around the country. This captivates America. It was like The Elizabeth Holmes trial going on and Theranos. It was nothing compared to this.
+
+Ben: Right. It's like that trial meets the half-decade-long pitchforks against Facebook in the privacy, plus the anti-Amazon sentiment. There were no equivalent companies to Standard Oil. There were other trusts that rose up and were following their business practices, but no one as big, as bad, or as loathed by America as the Standard Oil Trust.
+
+David: It runs for 19 monthly installments, so for almost two years. I don't have the exact numbers here, but the circulation of McClure's triples or quadruples during this time. It grew by hundreds of thousands of people. Remember, it's national. This is new. In the past, Standard didn't really care about the press because it was all local stuff or whatever. We can crush all this.
+
+Ben: There's a delicious piece of irony in this being a national publication. We do have this unbelievable, unprecedented period in the early 1900s where you have a golden era of media, magazines, and newspapers. When you think about it, what's the media business model that was winning at the time? It was advertising. You got all these corporations and trusts that are making all this profit.
+
+What they're doing is they're advertising to potential consumers in these publications who now have all these consumer eyeballs and are like, we got to get really epic stories to tell. Literally, the profitability of the business model that Standard pioneered that is funding the organizations is now coming after them.
+
+David: I was on the Wirecutter the other day, which is fantastic. Love the Wirecutter, owned by The New York Times. They have affiliate links on The Wirecutter.
+
+Ben: Great acquisition.
+
+David: Great acquisition, though Amazon, Facebook—all the press today is coming after these companies in many ways, rightly so. Although it's not like they don't have their own agendas too. They're taking advertising from them too.
+
+In history, Tarbell uncovers and documents exactly how The Cleveland Massacre went down. If you remember from Part I, we read a fictionalized quote of how Standard approached the independent refiners in Cleveland with, hey, you got two choices here. We can crush you or we can buy you out at a valuation that we ascribe. That quote came from this history.
+
+Ben: All the stuff we said in Part I, we wouldn't know without Ida because the only other real account is Rockefeller talking to his official biographer, William O. Inglis.
+
+David: Which was never published during that time.
+
+Ben: Right. Toward the end of his life, he only breaks character once or twice. It's really not that interesting or not that spicy of a story. Still, he says, you know what, actually, there's too much here you should just store it in the family archives. It doesn't come out and it ends up just being a source for future biographers in the future after they get the family's permission. It really is Ida Tarbell who discovered all the stuff that we've talked about.
+
+David: There’s lots of big stuff that she uncovers. The fact that there were secret subsidiaries that nominally, people thought were competitors of Standard Oil but were actually owned by Standard Oil. She finds out that they're still currently at the time engaging in illegal practices with the railroads.
+
+There's a whole thing about how they sneak papers out of the Cleveland Office of Standard Oil showing that the railroads are sending information about competitor shipments to Standard Oil offices. That comes out in the piece.
+
+The fact that this was a national magazine, Standard and Rockefeller—when all this comes out—even though the antitrust cases are going on, don't do anything. They've never been faced with something like this before and the standard response is silence. They don't respond. They don't mount a counter-campaign, even though there's a lot of stuff in Tarbell's history that's wrong that they very legitimately could have taken issue with.
+
+Ben: Yeah. That strategy works until some boiling over point. It reminds me a lot of Apple. If you think back to Antennagate is a great example where Apple doesn't comment on rumors one way or another because if they'd say that a rumor is not true, then it means that it substantiates all the ones that they don't comment on. But then you have something like Antennagate where it wasn't as big a deal, but it was a deal. Steve Jobs flies back from vacation in Hawaii with his family to hold the next same-week press conference about it. There is some boiling over point where if you don't say something, it is way worse.
+
+David: Up to a certain point, saying something makes you look guilty. But then past a certain point, not saying something makes you look guilty. Standard passed this point. Not saying anything made them look super guilty in the eyes of the public. To be fair, they were guilty of a lot of stuff. That's how they respond to the Tarbell piece.
+
+Then on the Roosevelt pressure front, Roosevelt's first term goes by. Miraculously, they managed to escape by. Nothing major happens in terms of breaking on the antitrust front, even though Roosevelt wants it to.
+
+When he's running for election in the 1904 campaign—which would be the first mandate for him from the people—Standard tries to run the same playbook they've always run. They cozy up to him. They're like, Teddy, let's all be friends here. We've got a lot of money. This is big for you. This is your first election on a national stage. You could really use our support. How about we make some campaign donations? Roosevelt's campaign managers are like, sure, we could use the money. We'll take the money, and they do.
+
+Standard wasn't the only trust to do this. All the other big trusts did this too. This is one of my favorite quotes in all of Titan, which is actually from Henry Frick who was an executive at US Steel about what happens here. Chernow writes that Frick summed up the situation best after the election with, "We bought the son of a bitch, but he wouldn't stay bought."
+
+Ben: Who's Frick?
+
+David: I can't remember if he was running US Steel at that point or if he was a senior executive at US Steel, so not Standard Oil.
+
+Ben: That's right. I think he's the one that got Rockefeller and Rockefeller Jr. on the board of directors of US Steel.
+
+David: Yeah, that's right. They were all buddies. After the election, which Roosevelt won in a landslide because he's got the support of business behind him, now, he's like, all right, I've got the mandate. I'm going to make this happen.
+
+Right after he's reinaugurated in February 1905, Congress passed a unanimous resolution urging individual states to conduct antitrust investigations into Standard Oil. Immediately, a whole bunch of states bring cases, including Missouri, which is where everything eventually ends up going down—Great State of Missouri.
+
+They subpoenaed J.D. to come in and testify in front of a grand jury and this investigation. J.D. obviously doesn't want to do this, so he goes into hiding. He literally goes on the lam. At the same time, the state of Ohio goes a step further. They issue a warrant for Rockefeller's arrest.
+
+Ben: It's so crazy. He's the world's wealthiest man. It's not like he's leaving the country or anything. He's just trying to stay super lowkey about where he is.
+
+David: He disappears. There are process servers trying to serve him with the subpoena and the warrant for his arrest all over the country, trying to track him down.
+
+Ben: They're jumping over the fence of Pocantico Hills, his residence in New York. There's some servant or something who sees this person leap over the fence and fall. They're like, can we help you?
+
+David: He won't even tell his family where he is. The Standard Oil executives don't know where he is. It's amazing. He just disappeared for two years. During this time, he's sending letters with no return address constantly to 26 Broadway, to Archbold, and to all the other directors of Standard Oil being like, guys, I actually want to resign. He's sending his letter of resignation (perpetually) every week.
+
+Ben: It's crazy because, at the same time, he's building all these medical universities and medical schools that are attached to all these other colleges. These thousands of letters are coming in asking for money, and he's dodging the government because they keep trying to get him in court.
+
+David: He's like a Bond villain. It's amazing. It's so great. Archbold refused to let him resign. They're like, I don't know where you are. Sorry, bud.
+
+Ben: At this point, a lot of them are defending themselves and throwing Rockefeller under the bus. They're saying, oh, Standard Oil may have acted in this illegal way, but I certainly didn't. You even have executives at Standard Oil talking and giving first-party accounts to Ida Tarbell to try and shield themselves.
+
+David: Exactly. The primary guy who talked to Tarbell and did this was an executive and a board member named Henry Rogers. Chernow finds this quote. I think he said this to Tarbell.
+
+This quote from Rogers says, "We told him (Rockefeller, J.D.) that he had to keep the title of President. These cases against us were pending in the courts, and we told him if any of us had to go to jail, he would have to go with us." It's the freaking mafia. It's amazing.
+
+This is it. Rockefeller can stay on the run. He can stay on the lam as long as he wants, but the jig is up. This is like the end of The Sopranos, I forget whatever the situation was, but Tony's getting whacked here. Standard Oil is getting whacked.
+
+Ben: We don't know if Tony was whacked.
+
+David: Yeah, right. Okay, we don't know. But didn't the show's producers say it?
+
+Ben: And then they unsaid it. They said, oh, that's not exactly what I was referring to.
+
+David: Interesting. In June of 1906, Roosevelt directly directs the US Attorney. In a secret nighttime meeting, he calls the US Attorney General into his office and he's like, I'm directing you to open a federal antitrust investigation into Standard Oil. Then on November 18th, 1906, that suit was filed in Missouri, the federal antitrust suit against Standard Oil on the grounds, you know what the grounds are? They have violated the Sherman Antitrust Act. They're in restraint of trade.
+
+Ben: Which is really interesting because it was definitely true in 1890, it was true through the 1890s, but their dominance was fading at this point. In the late 19 aughts, you were already getting into a situation where there was a major foreign influence. There was lots of oil found in Russia and in the Middle East. You're starting to get discoveries in Texas.
+
+David: Yup, California.
+
+Ben: Who was it that said that if there was oil found west of the Mississippi, they would drink all of it?
+
+David: Oh, I haven't heard that one.
+
+Ben: There was some Standard Oil crony at one point that was so confident that there was no oil west of the Mississippi that they would drink it if anybody found any. Standard Oil's strong suit was not Texas. Of course, the Permian Basin would become where tons of oil ended up being found.
+
+David: Yeah. Texaco or what became Texaco and Gulf, I think, also came out of Texas.
+
+Ben: Yup.
+
+David: The monopoly was fading anyway, which probably was the other factor that made three things. One, Roosevelt bought the son of a bitch but he didn't stay bought. Two, Tarbell, the muckrakers, and public opinion. Three, legitimately, they're still the most powerful company in the world, but they weren't as powerful.
+
+Ben: I don't want to flash forward too far here, but I do know that in 1911, when the Federal Antitrust Law, when things went down, which I'll just leave there for a second, their market share had eroded to 64%. There were at least 147 other refining companies competing within the United States. At that point, John D. had left the company. You do have this really interesting scenario where, did it need to be broken up at that point? Are we chasing demons of 20 years earlier? We'll hold on that for now, but I think that's the thing to noodle on at this point.
+
+David: A bunch of crazy drama happens between 1906 and 1911, but it's all a sideshow. It just takes that long for all this to get to the Supreme Court. Then judgment day, May 15th, 1911, US Supreme Court Chief Justice Edward White read the decision.
+
+Ben: This is like Standard Oil v. the United States, right?
+
+David: Yes. This is the big one. What's the circuit below the Supreme Court? Federal Court of Appeals, maybe, some appellate court?
+
+Ben: I'm not sure.
+
+David: I should know this as a child of two lawyers. Jenny's two parents are also lawyers. They'll be yelling at me listening to this. Anyway, Standard had lost every step of the way. Then the final appeal, of course, is to the Supreme Court.
+
+The Supreme Court upholds the decision of finding against Standard Oil. They are indeed, in restraint of trade, and orders them—I don't know if it was the Supreme Court that ordered this remedy or if this was what had been ordered at the lower courts and they upheld it—to be irrevocably, cannot undo this, broken up into 34 separate companies, and it has to happen within the next six months.
+
+Ben: It's a fast timeframe to be able to disassemble a company.
+
+David: Seriously, especially because all of the previous changes in corporate structure at Standard Oil may or may not have actually happened. They said it happened, but did it really happen? But they got to do this this time.
+
+Ben: There's some tech debt. There's some legal debt to go and undo here.
+
+David: Did you read about Rockefeller's reaction when he got the news?
+
+Ben: Is this when he's on the golf course and a messenger just brings it on a little piece of paper?
+
+David: This is the best.
+
+Ben: Real quick, before we get to that, I want to thank Pitchbook, our second sponsor for this episode and all episodes in season nine.
+
+David: Speaking of bringing data on the golf course, you can access Pitchbook on the golf course.
+
+Ben: On your mobile phone, they've got this great app, really anywhere that you need private or public company data. It's right there in your hands, in your pocket, on our tear sheet that we've been referencing this episode. Pitchbook was kind enough to prepare some great stats for us about the company. Most of you know this, but they're the leading financial data provider for VC, private equity, M&A. They've got over three million companies, they've got a million and a half deals on that, 96% of clients rate them better than any other data provider for private company coverage.
+
+Obviously, we use it for the show. We've got a very special offer for you today and all other days that you are listening to this. At least before the end of this season, I assume that it expires at some point. But if you go to pitchbook.com/acquired, you can get limited access for two weeks to all of this data. So if you're about to do a fundraise for your company, or maybe you're an investor and you're interested in checking out a market landscape on some companies you're thinking about investing in or something like that, go check it out, pitchbook.com/acquired. Our thanks to the wonderful people that we get to work with at Pitchbook.
+
+David: They're seriously awesome. They're the best.
+
+Ben: They are. Okay, take us back to the golf course, David.
+
+David: Rockefeller, he had come out of hiding at this point. One of the crazy things that happened in the interim between 1906 and 1911 was Roosevelt got really pissed about this. There was a judge in Chicago that almost blew up the whole case. He subpoenaed Rockefeller because he wanted him to come to testify and was willing to grant him criminal immunity if he came to testify. So Rockefeller was like, I'll take that deal.
+
+Ben: He couldn't be trying again for double jeopardy then. This would have been the one...
+
+David: He couldn't be criminally prosecuted after this. Sidebar, but this is ridiculous, what happened. He does the whole doddering old man thing again, I don't know, I don't remember, what, who are you?
+
+Ben: I've lost my way. What's oil?
+
+David: The judge gets nothing out of him, but he's so pissed. At the end of the process (I forget what the exact case was), he levied a $29 million fine on Standard Oil, which by two orders of magnitude, the highest fine ever given to a company ever at this point.
+
+Ben: That's crazy. Is that over a billion dollars today?
+
+David: I don't know. It was a lot of freaking money. Now, companies get fined all the time. I think it was one if not two orders of magnitude higher of an intervention than the government had ever done in private enterprise before.
+
+What does this do? This sends the stock market plummeting because everybody's like, oh, crap, the government's going to start coming after all of these companies. They already knew the government wanted to, but this is the first time. It was like, oh, crap, this has teeth. So there's a panic in the stock market.
+
+Ben: Does Rockefeller buy?
+
+David: He buys the dip. That'd be the easy joke to make here, but even more, he offers to bail out the freaking country because now he's come out of hiding.
+
+Ben: Is this the Panic of 1893?
+
+David: This was in 1909, sometime around then, sometime between ‘06 and ‘11.
+
+Ben: Got it.
+
+David: But there's a huge panic. Everybody's pressuring him like, hey, you're the wealthiest man in America, say something. You know when there's a panic now and Buffett comes out and reassures everybody.
+
+Ben: Never bet against America.
+
+David: Rockefeller does Buffett one better. He comes out and he's like, I'll backstop everything, personally. He restores confidence in everybody, just a great irony here. That's the best sideshow of this whole thing.
+
+Ben: At this point, he can't be tried criminally.
+
+David: Yeah, he's going to get off scot-free for the rest of his life.
+
+Ben: By 1911, he actually had left Standard Oil.
+
+David: When the breakup happens in December, his resignation is accepted at that point in time and then he rides off into the sunset. The great thing, we'll talk about this in a sec, he just becomes the happiest man on earth after this. He's so happy.
+
+Ben: He's golfing, he's vacationing, he's becoming more of a socialite.
+
+David: All of his worries about philanthropy, that albatross is off his shoulders. He's created this institution, he's done these great things for the world. He doesn't have to worry about Standard Oil. Literally, he's got to get out of jail card free for the rest of his life. Messenger comes, he's on the golf course on the fateful May 15th, 1911, not a care in the world. He's golfing, actually, with the local Catholic priest in Tarrytown. They were buds.
+
+Ben: He loved this private golf course that he owned because he could take people out and restrict them from ever talking business. So he got to be jovial and social, exactly on his terms.
+
+David: Yeah, he doesn't talk business anymore. After he gets the get-out-of-jail-free card, literally, he's the happiest man in the world. They're on the golf course, he gets the messenger running up. The Supreme Court ruled against Standard Oil, it's going to be broken up. This is how the legend goes. He gets the news. He turns to the priest smiling and he says, Father Lennon, have you some money?
+
+Everybody in the golfing party is like, geez, John, I know this is bad that Standard's going to get broken, but you're not going to be bankrupt. You don't need the Catholic priest here and Tarrytown. You got some real estate assets at least that you can sell off and support yourself in your old age here. Father Lennon's like, why do you ask, John? Rockefeller says, because if you did, you should buy some Standard Oil stock right now.
+
+He's so right. This is a great irony. This is the best, best thing that ever happened to Standard Oil’s share price, not at that exact moment, of course. At that exact moment, the share price went tumbling. But in the long run, to Rockefeller, the line and it's true is that he made more money in retirement and after Standard Oil was broken up than he did while he was working, Chernow writes here.
+
+This was literally "the luckiest stroke of Rockefeller's career. Precisely because he lost the antitrust suit, Rockefeller was converted from a mere millionaire with an estimated net worth of $300 million in 1911 into something just short of history's first billionaire." Remember, he owned a quarter of the company trust, whatever the thing.
+
+Ben: He basically never sold shares. He was always a buyer from other people. Anytime he had a dispute with a partner or another board member, I'll buy you out.
+
+David: Because his mafia cronies, Archbold and Flagler, I think Flagler was gone at this point, but they kept raising the dividend against his wishes. He was getting this geyser of cash every year, and that was financing all the philanthropy and whatnot, so yeah, he wasn't selling. He still owns a quarter of this dang thing. When the breakup happens, it's broken up into 34 companies, Standard Oil of New Jersey, the main one, but then all the other operations in the various states and refining and whatnot are separated out.
+
+Ben: When they get separated out, I'm pretty sure they become publicly traded companies. The financials, the books get opened and people can see what ludicrously good businesses these are.
+
+David: Yes, you can see the financials, but also not just the financials, the assets. They own all sorts of crap in this thing. It's not just the oil op, but they own God knows what. All these secret assets, all these competitors, operations, and upstream and downstream stuff that people thought were competitors but really weren't.
+
+Ben: Forests to build barrels and everything we talked about in the first one.
+
+David: Railroad cars, all this stuff.
+
+Ben: Ability to take metals and turn them into pipes, and plumbing operations. It's crazy.
+
+David: Yup. December 1st, 1911, the breakup took effect, 34 companies. They all get publicly listed. I don't know if it was on the New York Stock Exchange or what, but on a stock exchange for the first time. I don't think immediately, but over the next year, Standard Oil of New Jersey goes from an initial share price of $360 a share to $595 a share over year one. Standard Oil of New York goes from $260 to $580. Standard Oil of Indiana goes from $3500 to $9500 a share, and so on and so on.
+
+Ben: Whoa, close to tripling.
+
+David: Yeah, all of these companies are literally in the newspapers across America. This is just selling papers here, all this news. They started running daily box scores. I don't know if it's alongside the sports section or whatnot, keeping track of Rockefeller's net worth. I hope that that Catholic priest had some money to go buy the dip.
+
+Ben: I love that that's the stock dip too. He's like, all right, everyone's about to know what a great business this is.
+
+David: Jesus says buy the dip. Another one of just the amazing things here. Of course, they finally have to separate out these assets. Everybody on the executive committee, they met for lunch every day, the famous thing that was titulary the presidents of all the separate companies and now they actually are. They can't meet for lunch anymore, got to separate out, no more lunch meetings at 26 Broadway. Instead, at J.D.'s suggestion, sort of like the voice from the golf course. He's like, how about you all meet for coffee at 10:30 AM instead? They continue meeting every day at 10:30 AM.
+
+Ben: Just giving the finger to the government.
+
+David: It's like the old line when a European monarch dies and they say, the king is dead, long live the king. The monarch is dead, long live the monarch. Standard Oil is dead, long live Standard Oil. That is exactly what happened here.
+
+Ben: It's interesting in thinking about, at least in theory, why the government wanted to break up Standard Oil? It wasn't that they wanted to necessarily—again, in theory—punish the owners of Standard Oil because that they wildly failed at. It was literally like we want to increase competition. Theoretically, it will benefit consumers, but again, I really want to underscore that for the vast majority of cases. Let's take out the weird supermarket stuff they were doing and some of the terrible things they were doing at the railroads, it really all was just a benefit to consumers.
+
+You ended up with consumers generally pretty happy from all this standardization over the years, competitors super pissed, and now the shareholders of Standard are all just wildly rich beyond their wildest dreams. It's actually quite interesting to think about the people that took the deal in the Cleveland Massacre. If they had held, that would have gone really well for them.
+
+David: Chief Justice Edward White, who presided over the verdict and read the decision, he was actually a very conservative figure and very business-friendly. He'd had this pet theory and this was a chance to write this into law. Remember, there was the modifying clause on the Sherman Antitrust Act was "in restraint of trade." It's like, what is that?
+
+Ben: This was an ability to define what restraint of trade is.
+
+David: I think it was called the reasonableness doctrine or the reason, something like that, that he wanted to be like, yeah, in restraint of trade, within reason, and this is what you're talking about here, let's be reasonable about this. It's not actually that bad for customers.
+
+Ben: Yeah, so interesting.
+
+David: Roosevelt was pissed about this because he wasn't the president anymore by the time this happened. Roosevelt, Tarbell, the muckraking crew, and all the progressives, they wanted all the Standard Oil people to go to jail. They wanted to end this practice forever. Of course, that's not what happened.
+
+Ben: They wanted to make it so other people were afraid enough that they would never try it again in the future.
+
+David: Yup, and it ended up being this very middle, not even middle ground, like very business-friendly "conservative" final approach to it.
+
+Ben: The government had a really big investment in this where we talked about how Standard Oil is really the first modern corporation. Roosevelt set the playbook for the modern billionaire. We talked about how he invented modern philanthropy. This is also massively expanding the might of the Justice Department in a way that the US had never seen before. Because in the 1890s, the entire Justice Department staff in Washington was 18 lawyers.
+
+David: Yeah, I remember reading about this.
+
+Ben: In order to go after Standard Oil, they massively, massively staffed up. I assume it just never went down from there.
+
+David: There is another reason too, why the breakup ended up being great for Standard Oil and for his shareholders. I don't think the government was thinking about this, probably at all, as a consequence of the breakup. There's a really important lesson here about the danger of too much centralization and consolidation of power in a single entity. We've alluded all [...] to the fact that it was automobile sales and going from kerosene to gasoline that was really going to take Standard Oil and the whole energy industry to the moon, to the next level here.
+
+That's not what Rockefeller, the cronies, and all the people that were having lunch at 26 Broadway or coffee, that's not what they were built for. They weren't against it, but that wasn't their game. As long as they were in charge and as long as Standard Oil was this singular, monolithic in practice thing, a lot of the Young Turks within the organization that was focused on this new market felt stifled. The breakup allowed these people, the new blood, to rise to the top.
+
+Chernow writes, "While the old guard at 26 Broadway mourned the trust's passage, some Young Turks at the operating companies were overjoyed... One of these extraordinary mavericks, Dr. William M. Burton of Standard Oil of Indiana, thought that Roosevelt had performed an inestimable service.
+
+After the 1911 dismemberment, he said, 'It was felt all along the line—younger men were given a chance.' Burton patented an exceptionally valuable process in 1913 (two years later) for 'cracking' crude oil—that is, for refining it so as to yield a far higher percentage of gasoline. This discovery permitted Standard of Indiana to reap incredible windfall royalties." If you remember, from when we were looking up on the last episode, what did Standard of Indiana become?
+
+Ben: Amoco.
+
+David: Amoco. Innovation was alive and well again within the oil industry here and within all the Standard children. Standard Oil of Indiana becomes Amoco.
+
+Ben: Can I talk about the spin-outs?
+
+David: Yeah, let's talk about him.
+
+Ben: All right, the spin-outs of the 34, many of them you'll know, to say the least.
+
+David: Especially if you grew up in America, but even if you didn't, you'll know.
+
+Ben: Yeah. The first one was Standard Oil of New Jersey, but its name in the spin-out was not Standard Oil of New Jersey. It was the Eastern Seaboard Standard Oil or the acronym, ESSO, which is a little cute wink wink, nudge nudge by Rockefeller and crew to say, and we're still SO.
+
+David: I just love our anti-heroes here. They're just such characters. The whole thing reminded me, I think this was when I was growing up, maybe to the ESSO, which I had no idea what that referred to until recently. The marketing slogan was, "Put a tiger in your tank." Do you remember that?
+
+Ben: Oh, no.
+
+David: Yeah, it was so good. Literally, this breakup and allowing these companies to flourish puts a tiger in everybody's tank here.
+
+Ben: ESSO becomes Exxon. Standard Oil of New York becomes Mobil. Standard Oil of Indiana, as we mentioned, becomes Amoco. Standard Oil of California becomes Chevron. Standard Oil of Ohio, which became Sohio, then got bought by BP to become BP America. The Ohio Oil Company, which became Marathon, and then also the Speedway brand.
+
+The Atlantic Refining Company, which got shortened to ARCO, part of that was spun off and bought by Sunoco, and then the rest of it was acquired by BP. Then ironically, they sold that brand over to Marathon. A lot of internal dealings here still. Continental Oil became Conoco, which of course, is now ConocoPhillips. The South Penn Oil Company became Pennzoil.
+
+David: I didn't know that one. I missed that one. That's cool because there were all these other oil products that they were developing and marketing.
+
+Ben: Yup.
+
+David: I didn't know Pennzoil was a Standard Oil child.
+
+Ben: Here's the craziest thing. If you trace it all the way back and you look at the Standard Oil of New Jersey and Standard Oil of New York, Exxon and Mobil together accounted for more than half of the whole Standard Oil business prior to 1911. So Exxon Mobil really is the primary re-conglomeration of the majority of the original Standard Oil.
+
+David: Yeah, so fascinating.
+
+Ben: There's almost like an evil laugh that I want to have after that line because you're right, it's delicious and it's a century in the making.
+
+David: Yeah. Should it be an evil laugh? We'll debate in a second. All right, let's put a bow on this whole thing, shall we?
+
+Ben: I want to end with just illustrating Standard's wealth here, more in particular Rockefeller's wealth. Because we've talked about a few figures over time, one of them was the 1902 audit that showed he was worth about $200 million, then around 1911 around $300 million. He actually, with all the stock pops in the split up and the move into the gasoline market for internal combustion engines, his personal wealth by 1913, just two years after the breakup, was $900 million.
+
+In 2021 inflation-adjusted dollars, if you literally just do the inflation math, that's about $25 billion. But the more accurate way to look at it would be to say, actually, that's like 3% of GDP, which was still only $40 billion relative, of course, to $21 trillion today. So if you base it on GDP, that figure is about $470 billion.
+
+David: The figures I had in my mind and that I think are on Wikipedia are in that sort of $300–$500 billion adjusted net worth range.
+
+Ben: Yeah. I do think we should think about him like he was a $470 billionaire, not in terms of purchasing capacity, but in terms of societal impact. The analogy doesn't scale all the way back. If you think about when the GDP of America was $1000, if someone had $500 of that, sure, they controlled half the wealth in the nation, but they didn't have the purchasing power that someone who would have $10 trillion today would have. It's an imperfect way of scaling it, but there is no one who controls 2% to 3% of the nation's GDP in their pockets the way that Rockefeller did in 1913. So let's think of him like a $470 billionaire.
+
+David: Here's the thing, he had already given away about half of his wealth at that point.
+
+Ben: Yes. That's the nutty thing. What would become Rockefeller University? You already had the University Chicago, you already had all these medical endowments. It's wild. You look today, like Bezos and Musk are about $190, $200 billion.
+
+You've got Gates at $130 billion, again, from all the philanthropy, about tied with Zuckerberg. Buffett these days has about $100 billion, again, from philanthropy. If you think about Rockefeller, he had the potential to have $700–$800 billion in terms of the amount of influence of the nation's wealth that he controlled.
+
+David: Which probably would be about all of the other moguls today combined, right?
+
+Ben: That is exactly where I'm going.
+
+David: Perfect. That's the perfect analogy. He kind of was that. Yes, there was Carnegie, there was JP Morgan, there was a generation earlier, there was Vanderbilt, there was Stanford out in the west, and all that, for sure. But just the scale, yeah, nobody could touch Rockefeller.
+
+Ben: We should transition into the family generational wealth from here because there are a few interesting things about it. By the time of his death in 1937, his remaining fortune, of course, which is largely tied up in various family trusts, was estimated to be about $1.4 billion in 1937 dollars. That's about 1.5% of GDP. It's about $315 billion of today's dollars.
+
+The Rockefeller family is now seven generations in. There are about 170 heirs. According to Forbes, they have a fortune of about $11 billion in 2016. So obviously, been doing a tremendous amount of philanthropy. I do think that $11 billion, it's kind of an unknown. We can estimate it all we want, but there are multiple Rockefeller family trusts, philanthropies, and wealth management groups. It's amazing.
+
+David: There is literally a business in a business ecosystem around the Rockefeller family, which is crazy. I actually went to college with several of them.
+
+Ben: Rock Co is a wealth management firm for the Rockefeller family.
+
+David: Venrock, the venture capital firm.
+
+Ben: Yes, this is what I wanted to talk about. Obviously, the Rock is Rockefeller. For those not familiar who want a crazy tie from this episode to modern-day, Venrock was one of the earliest investors and none other than Apple Computer.
+
+David: That's right. That’s right, it was.
+
+Ben: It was just amazing how full circle this comes.
+
+David: Alongside Arthur Rock.
+
+Ben: Yup. This really bucks the trend of, have you ever heard the phrase, "shirtsleeves to shirtsleeves in three generations?"
+
+David: I didn't know the three generations part, but I've heard shirtsleeves to shirtsleeves.
+
+Ben: It's like the general idea that because of taxes and the fact that this is when you have errors, they have errors, and they have errors, this is an exponential distribution of wealth. Everything keeps getting cut in smaller and smaller pieces pretty quickly. That has not been the case.
+
+David: Yeah, that's not been the case. I think the other thing, obviously not in every case, but that's pretty hard. Nobody would shed any tears, but maybe you should. It's a hard psychological set of cards to be dealt with.
+
+Ben: Yes, boohoo trust fund of multi-billion.
+
+David: Right, but it wreaks havoc on people's psychology.
+
+Ben: How do you go live a regular life when you know you have that in the bank? I just find it fascinating how the shirtsleeves to shirtsleeves thing hasn't really been true. There's been no real major lawsuits that we know of, feuds, or public scandals. They're out of the news. It's this family with 170 heirs that still wields tens of billions of dollars at the very least, is involved in all these projects, and you really never hear about them.
+
+David: Yeah. Again, because when we're talking about philanthropy, Rockefeller didn't want his name on stuff. All these universities, all this stuff, you don't know that it's Rockefeller money, but then there's the one great exception of Rockefeller Center.
+
+Ben: I got the list. Are you ready?
+
+David: Yup.
+
+Ben: This is what I spent my last hour doing before we recorded. We talked about Spelman College, we talked about the University of Chicago, we talked about Rockefeller University and all the unbelievable medical breakthroughs. We talked about the grant that he made to Johns Hopkins that ended up funding the discovery of a cure for Scarlet fever, which is pretty cool. So this continues.
+
+From 1915 and 1940, Junior financed, designed, and directed the construction of a network of carriage roads through Acadia National Park, and then refinanced the whole restoration of the park in 1947. This is a really interesting thing whereas Senior kind of left his mark in medical research, he decided that that was something that he could do that was not necessarily religious but moral. It aligned well with his religious views and the stamp that he wanted to put on the world.
+
+In fact, Rockefeller was so well-known for being the medical donor that when Carnegie got approached with projects like this, he would go, I do believe you're looking for Mr. Rockefeller. Rockefeller put his stamp there. Junior was a naturalist. He really wanted to endow parks and things like that. Check this out. Junior was a huge part of the donation to restore and recreate Colonial Williamsburg, for anybody that's been there.
+
+David: Yup. That was the main funding of the recreation of Colonial Williamsburg.
+
+Ben: Congress in 1926 authorized the creation of the Great Smoky Mountains National Park, but there was no nucleus of federally owned land to actually develop it. So Junior contributed $5 million in 1926 dollars. The US government then kicked in $2 million and private citizens from Tennessee and North Carolina pitched in to assemble the land for the park piece by piece.
+
+David: Junior led the round, the government participated, basically.
+
+Ben: Yes. Then you've got Abby Aldrich Rockefeller, who I believe is she Junior's wife?
+
+David: Junior's wife, yup. You're going to talk about what I think you're going to talk about here?
+
+Ben: The MoMA. The Museum of Modern Art in New York City was her brainchild.
+
+David: The land that the MoMA is on, the buildings, the space?
+
+Ben: Yeah.
+
+David: Those were the first Rockefeller mansions in New York.
+
+Ben: Oh, no way.
+
+David: I think they tore down the buildings. The MoMA is a new building there. But that land was when the family first moved from Cleveland to New York, they bought two mansions next door to each other—one for Senior and one for Junior. Right there, that land, I think, is now the MoMA.
+
+Ben: Wild. Then nearby, there's obviously Rockefeller Center, which was a Junior project.
+
+David: Rockefeller Center is fascinating because it was a business project. It was Junior's main business project and everybody thought he was crazy, like, who would want to be headquartered? Then he recruited GE and RKO. The Radio City Music Hall, the reason it's called Radio City is he recruited all the media organizations to come headquarter there.
+
+Ben: Now not to mention NBC.
+
+David: Yup, 30 Rock, Rockefeller Center. The ice skating rink, Senior loved ice skating.
+
+Ben: Yeah, that was his winter thing instead of golf. I think ice skating even started earlier in his life.
+
+David: They did back in Ohio.
+
+Ben: Because he was like a big fitness buff, but interestingly, not for vanity purposes, for longevity purposes. He wanted to live to be 100. He came close at 98, but to put it exactly the way that I think he thought about it, afraid of dying. So anything that was for health and longevity was virtuous to him.
+
+David: HBO and the Silicon Valley writers team could have a field day with Rockefeller if they were to go do a retro version of Silicon Valley.
+
+Ben: All right, the party continues. In 1945, Junior donated $8.5 million, which I think is something on the order of $100 million today to just go buy the land for the UN. This is right after World War II, that would become where they built the UN building in New York.
+
+David: That's awesome.
+
+Ben: And just donated it. He continues. The area that is now Grand Teton National Park was privately owned until the 1930s when Junior started buying up the land that he would eventually donate to become much of the park, especially the actual Jackson Hole area. I really could go on to with large areas of the Redwood State Park in California or Embarcadero Center, the buildings in San Francisco
+
+David: No way.
+
+Ben: Yeah. Again, more of a business project, less of philanthropy necessarily, but that was a Rockefeller investment.
+
+David: This family, this man, the company and company and then companies, the foundation, the institutions, and then the family that he begot, every aspect of American life was touched and modernized by the Rockefellers. It's insane.
+
+Ben: Yeah, you're playing right into my, what I tried to say at the top of the show and what I was alluding to when our world is a Rockefeller shaped one, and in more ways than just Standard Oil. All right, there's definitely some playbook and other things that I want to talk about here. But first, let's talk about power.
+
+I think we probably did the seven powers justice in Part I and we don't need to do it again. But I do want to make a point, especially because we teased it in the intro of where did they have legitimate business practices and where did they run afoul? Where the initial power that they had in the business really came from their operating excellence, creating economies of scale, innovating clever production, inventions, and refining.
+
+But then, later on, they clearly leverage their scale position to put competitors out of business, screw over partners like the Railroad, and try and gobble up as much of the value chain in really nefarious ways. Eventually, they just straight-up used racketeering and bribery to ensure that their very profitable business at 90% market share could continue.
+
+David: One fun little sidebar that I missed in the notes on that, literally, was straight-up bribery. I think we've only talked about political campaign donations. Archbold was really somebody. When he took over, he actually put legislators on the payroll, not campaign donations, just like you get $15,000 a year, you get $20,000 a year to do what we want in perpetuity.
+
+Ben: I think the best way to put it is probably, they became unsatisfied with what they had accomplished and they just kept pushing. This is probably the right transition point to what would have happened otherwise. What if the trust hadn't gotten broken up? I think we should examine it from Standard Oil shareholders’ perspective, which I think we're all going to say like, what would have been worse? Consumers’ perspective and then competitors' perspective?
+
+In part, maybe even before what would have happened if they hadn't been broken up, maybe we should examine what would have happened if they hadn't gone into nefarious business practices. What if they just were the leading innovator, they had the best operational excellence, and they were operating at a large scale so they could have legal scale dynamics out at play?
+
+David: Yeah. It's funny. My thoughts on this, we're talking about boiling points earlier in the episode. I think up to a certain point, as we hopefully laid out in Part I, what they were doing was—I don't want to bring morals into it, but it was a chaotic point in both American history and in the industry. There was chaos in the oil industry in the early days.
+
+It's Rockefeller's argument, we would have all beat each other to death. Maybe somebody, maybe we would have emerged the winner eventually, but we accelerated. It's like Foundation. For people who've read Asimov's Foundation, the whole premise is that there will be chaos for 50,000 years or 1000 years if we have the Seldon Plan to get everybody through to the other side, and it'll happen much faster and suffering will be alleviated.
+
+That's what Standard Oil did in the early days. I would say that there's a lot of merit to that. But once that happened, especially after Rockefeller left, Archbold and the other cronies kept using those tactics even after they'd already crossed the point, and that was bad.
+
+Ben: They were insatiable. Even some of the more nefarious tactics, you're right, probably lead to good things for everyone, especially for the people who did end up taking Standard Oil shares rather than being run out of business. But then, at some point, it doesn't accrue benefit to anyone in the ecosystem to keep pressing your advantage.
+
+David: The damning piece of evidence here, I don't have the numbers in front of me, but it's in Titan, Chernow quotes. It's actually just a small part of the book. I wish he'd spent more time on it. Just like Uber and Lyft today are all monopoly or duopoly type businesses, at a certain point, they did start raising prices on consumers. In those early days, it was great for consumers that kept prices artificially low, et cetera.
+
+But once they did wipe out all the competition—and Rockefeller was against this, but the cronies started doing it—they started raising prices and exploiting monopolistic pricing power. At a certain point, I think it did become, at least not as good for consumers.
+
+Ben: Consumer harmful.
+
+David: Yup.
+
+Ben: What if the trust wasn't broken up? It would have eventually become worse for consumers. The competitors thing is interesting. We've already talked about shareholders. It was great for shareholders that they got broken up. For competitors, it's interesting to me that there was already a very legitimate competitive set emerging by 1906.
+
+Certainly by 1911, when they had less than two-thirds market share at that point. I don't think competitors were having a hard time at this point in history because of the maturation of discovery and drilling technology that we realized there was just way more oil out there than we realized. You drill into the Earth's crust under most countries in the world and you're going to find some oil. I think that would have eventually driven down their market share even if the government hadn't broken them up into 34 constituent parts.
+
+David: We were debating like, how do we grade this? What analysis do we do? We've talked a little bit about powers here, but we mostly covered that in the last episode. We're going to end with a grade here in a minute, but we want to add a special section for this episode, which is one of our motivations for doing this series other than it's a really freaking great story and we love telling good stories is like, duh, this is happening again now with tech.
+
+Ben: Or let's at least say it's happening in social networking where they're being rolled up together. Actually, that's the chief offender.
+
+David: Amazon too and ecommerce.
+
+Ben: Yeah, but not in this rolling-up way. Facebook is the most direct comparable thing to Standard Oil. Apple has plenty of offenses in potentially abusing their App Store privilege, but I think that's a little bit of a different thing.
+
+David: Yeah. Certainly on the antitrust sentiment in the public though, I think that expands to all of big tech, the government, and in the public, not just social networking.
+
+Ben: Yup, somehow not Microsoft this time around, but yeah.
+
+David: Right. They already had their day in court. Sorry, we thought this is a really apt thing to do right now. We thought for this section, we would just brainstorm, go through, and catalog like, all right, what are the similarities and differences? Let's enumerate them between the Standard Oil story and the situation with big tech today.
+
+I hadn't thought about this before we recorded it, but as you were saying, the market had already started to change by the time the breakup happened. The competitors were emerging in a way that nobody thought they could before, and that was because of market conditions. I think that's happening now too.
+
+Ben: Are you saying that Collibra is not going to win Web 3.0?
+
+David: I doubt it. I seriously doubt it. If we rewind two to three years ago, talking to LPs about venture capital fundraising, two to three years ago is where this was really cute. There were conversations happening where a legitimate concern was, why should we invest in startups right now? Because...
+
+Ben: Big tech is settling.
+
+David: And they're going to eat everything. Between Facebook, Amazon, Google, and Apple.
+
+Ben: All the returns are accruing to scale in a way that's never happened in this industry before. It's just going to happen indefinitely.
+
+David: Any new market or idea of any import that comes along, the best you're going to be able to hope for is that Facebook buys you for a couple of billion dollars. It seemed dire out there. Fast forward to today, I don't know about you, Ben, but I am wildly excited about investing in startups and not in big tech companies.
+
+Ben: It feels like the same way that it was at the beginning of the mobile era. It feels like this explosion right now, particularly Web 3.0. A lot of crazy wrong stuff out there, but there's so much heat and energy and it's such a new paradigm.
+
+David: Yup. And it's not just crypto and Web 3.0. How many independent multi-billion or tens of billions of dollars public SaaS companies are out there now? Amplitude just went public.
+
+Ben: There's a new $5–$10 billion IPO every other day right now.
+
+David: A few years ago, that would have been unimaginable.
+
+Ben: So true. It's funny you said, a few years ago, the Ben Thompson article, The End of the Beginning, which lays out this hypothesis. He has a really good analysis on it. I think it's probably the best analysis done on, are we done creating new big tech companies forever? That was January of 2020.
+
+David: Wow.
+
+Ben: It hadn't been that long.
+
+David: Wow. It might be time for another Acquired postulate. I don't know what we're going to name this one.
+
+Ben: Lay it on me and I'll decide.
+
+David: All right, new postulate, heard it here first. I'm sure we're not the first people to say this. Anytime somebody declares the end of something, this game is over, this market is over, blah, blah, blah...
+
+Ben: They're wrong.
+
+David: That is the bottom of the market and is all going up from there because it is never the end.
+
+Ben: What was the year that the Inspector General of the USPTO said that everything's already been invented?
+
+David: I don't know that one.
+
+Ben: That's one of these best quotes ever.
+
+David: So good.
+
+Ben: Yeah, it's a really good point.
+
+David: Oh my God, I'm just thinking about this. I love LPs as a class, but 2016, 2017, 2018, when they were nervous, worried about this, and not wanting to invest in venture capital. Oh my God, those were the best years to be investing in venture capital.
+
+Ben: That's a great point. I want to make a little bit of an argument against regulation, or at least the nervousness that regulation gives me. Regulation, by definition, will always limit innovation because it says you can do less stuff in the world.
+
+David: Yup, it's prescriptive.
+
+Ben: Yes. A lot of times that's good. A lot of times that stuff shouldn't be done. People's creativity can lead them to do destructive things. But it does seem to be the case that paradigms break monopolies. We may not need legislation or the courts to do it, and that these things will play themselves out. By the fact that 21 years after the Sherman Antitrust Act, Standard Oil's monopoly position was already unseated by the time the ruling came down.
+
+If there's so much value destruction going on by a monopoly that we can't afford to wait it out, that's one reasonable argument to either have law or courts change this, but paradigm shifts happen. New technologies happen and they will always unseat incumbents. In particular, in this one, it was the advent of electricity that unseated kerosene.
+
+The creation of the internal combustion engine and the massive desire for gasoline, that undid the invention of electricity because suddenly, there was this massive market available. But then, right around the same time again, oil is discovered freaking everywhere and we can drill it very easily everywhere. You have this massive destabilizing force driven by technology in our ability to go find this product elsewhere.
+
+David: Yup, I like that.
+
+Ben: I guess where I'm going with that is, it may not always be necessary to go trust bust, as long as we're willing to wait it out and if there's coincidental timing of a new technology change.
+
+David: Which I think is the argument that is, at least, so far carried the day in terms of what's actually happened with big tech, at least in America—not in China, but in America. These are big hammers. You got to be really careful about wielding them. Maybe it's better to let it play out a little longer before you bring the hammer down.
+
+Ben: Yeah. This is why I was saying that Facebook is the most similar thing to Standard Oil. Just to be extremely blunt about it, Facebook buying Instagram and WhatsApp is a lot like Standard Oil's Cleveland Massacre and the subsequent roll-up of all these other refiners elsewhere.
+
+David: The parallels are exact. Literally, Zuck went to these founders back in the day and was like, I love what you're doing. Here's my competing product that I'm launching next week.
+
+Ben: Yeah, here is the ultimatum. I'm wondering if the internet and software make it so that acquisition is not the only way. Growing horizontally via acquisition is not the only way to play Standard Oil's playbook. Should we be concerned about Apple or about Amazon's anti-trustee stuff that might look like Standard Oil in a different way that is not rolling up?
+
+Those are more like platform concerns, platforms either competing with the vendors on them or perhaps abusing their position in the value chain to take too much of a rake. Whereas Bill Gurley would say a rake too far, obviously, the 30% thing with Apple. Those, I think, are different than what we're talking about here with Standard Oil.
+
+David: If anything, I think, Standard Oil actually was—I don't know what's better, what's worse depends on your perspective, but to my perspective played these aspects better because they could have taken a rake too far on so many things. As we talked about in the first episode, they didn't want to put all their partners out of business. They could have crushed the railroads under their foot at any time, but they didn't want to. They wanted them to profit and thrive.
+
+Ben: Maybe, actually, that's more like Apple. Where Apple's keeping the take rate where it is. They're going to take an insane amount of the profits of the work of these partners, but they want to keep the partners around. Like Apple, they're like, wow, we don't want to go build every app. So it's good to have a developer ecosystem building apps, whereas Standard Oil was like, yeah, I'm not sure we want to actually be the railroads, but it's really nice to extract as much value from them as we can.
+
+David: Yup, and I don't know if I ever even knew the numbers well enough to say in terms of the relationships with the railroads. Apple, maybe this is just sentiment, but that 30% feels really unjustified. Whereas I don't think Standard with the railroads and their other partners wanted the partners to feel like they were taking an unjustified piece of the pie. They wanted them to know that they could at a moment's notice, but I think they really did value warm relations, so to speak.
+
+Ben: Interesting.
+
+David: All right, before we move on to a couple of fun little last tidbits, I know you have, Ben, before we grade. Two more similarities I want to highlight, resonances between Standard Oil and the big tech situation. One is I'm just struck by that quote about Standard Oil of Indiana at the end and that the Young Turks in the ranks thought it was great when the breakup happened. I think part of what was going on there is the old guard became so ossified in their view of how the world worked and wasn’t seeing reality anymore.
+
+I think about not all the big tech companies, but again, to pick on Facebook, this really seems (on the outside) to be the case with Facebook right now, the Facebook files, and everything going on with the Wall Street Journal. It really seems like leadership there. Again, whatever’s right or wrong. When the Tarbell articles came out and Rockefeller and everybody were like, oh, we don't need to say anything here. They're playing this wrong. I bet there are a lot of people deep within the organization that are actually doing the work who are like, we should have a different strategy here, but can't have their voices heard.
+
+Anyway, that's one. The other one, similarly, that I want to highlight is the press. This dual, the angelic and the less angelic side of the press, people, and journalists and their motivations. This is playing out obviously real-time in so many places in tech. Yes, the press is doing great, super-valuable, incredibly important investigative work, and yes, they are also humans.
+
+Ben: And the New York Times hates Facebook.
+
+David: Yes. They're also humans with agendas. That was true then and is true now.
+
+Ben: At the end of the day, all of this is a bunch of humans doing things that they are incentivized to do for whatever biological chemical reasons they're incentivized to do them.
+
+David: Yup.
+
+Ben: The Standard trademark was doled out as a part of the breakup to the 34 child companies. Each owns a different set of states that they can use it in. Many of these states have a use it or lose it clause in their trademark. So in many of these states, including California where Chevron owns the Standard trademark, there are one or two gas stations that will carry the logo of the company you're familiar with but say the word Standard. There's a great one in downtown San Francisco that you can go drive by and be like, wait, I'm sorry, what? Standard? It lives.
+
+David: It lives. It's at a market in Van Ness, right?
+
+Ben: Yup.
+
+David: You drive and you're like, whoa, that should be a Chevron station, but it says Standard on it.
+
+Ben: So weird. It's fun to see a remnant of American history on your commute.
+
+David: Yup.
+
+Ben: The second one is a very interesting harbinger of what's to come. The Rockefeller Foundation's assets, starting all the way back with Standard Oil and then, of course, in what it was broken up into, an enormous holding—as you can imagine—are the oil companies, in particular, Exxon Mobil. In December of 2020, just this last year, the foundation pledged to dump their fossil fuel holdings. So you have the original oil money pledging divestment.
+
+David: Yeah, interesting.
+
+Ben: That will be fascinating to watch how that plays out.
+
+David: Is it that they've pledged to do it, but they haven't?
+
+Ben: I don't know what the timeframe is yet.
+
+David: I assume they're not going to just dump all of it on the market all at once.
+
+Ben: Unload a bunch of Exxon on the market, yeah, probably not. But to hear John D.'s descendants pledging, it's this delicious dichotomy of John D. believing that we should hold on to the Standard shares because they're going to be so valuable forever and hoard them. Now finally, we're at this moment in history where we're realizing how really terrible it is to burn all these fossil fuels. Even the largest holder of the remnant shares of the Standard Oil Company is now saying it is time for us to get rid of these.
+
+David: Yeah, it'd be super fun to find—we meant to do this on this episode, but there's too much other stuff to get in and we're not experts. But maybe find some guests to do a special episode—I’d love to unpack the oil industry.
+
+Ben: I would love to understand just the current ownership structure. What does the cap table look like?
+
+David: Yes, all that too, but also from an environmental standpoint. Yeah, fossil fuels are bad, but fossil fuels and oil upgraded the world technologically to where we are now.
+
+Ben: Quality of life, no doubt, would not be what we have today if not for all the fossil fuels we burned.
+
+David: Right. I don’t know what's the right way to think about this?
+
+Ben: We're not going to change overnight. That's the other thing. Should we all be using clean, safe nuclear? Yes, we should. It's going to be a long time before that is the case.
+
+David: Yup, more fun Acquired energy stuff to come in the future.
+
+Ben: Yup. Before we get to grading, we want to tell you about our last sponsor of this episode, NordVPN. I'm sure by now, you know the story of a friend of the show, listener, Slack member, Tom Oakman, who started this company with his childhood friends in 2012. Now, 1000 employees and 15 million people use it. It's the world's fastest VPN.
+
+The best way I can pitch this to you, Acquired listeners, is if you're going to use a VPN, you should use this one. It's a great one, it's super-fast, and it's made by your fellow Acquired listening compatriot. Awesome story of this being a bootstrapped company from Lithuania. Just an amazing entrepreneurial success. Our special thanks to Tom and the whole Nord team. You can sign up at nordvpn.com/acquired and use the coupon code Acquired at checkout.
+
+David: VPNs are nice and great to have. I'm glad I have Nord here in the US. It lets you do awesome stuff. If you wanted to, maybe watch out-of-market streaming sports events or when you're geographically in a city that you couldn't otherwise, cool, that's awesome, all sorts of great stuff. There are also places in the world where VPNs are...
+
+Ben: Mission-critical.
+
+David: Critically important, the difference between life and death. It's easy to forget that. It is good stuff that they are doing.
+
+Ben: All right, grading. The very classic Acquired episodes, very early on especially, were grading and acquisition. If you were the shareholder of a big company and you used some of the assets of that big company to buy the little company, how good of an investment or use of those proceeds was it to go by that little company?
+
+I thought for this one, it would be fun to say, well, I'm the shareholder or a shareholder of Standard Oil. Let's say the government's not involved, and I as the management team of the company are recommending that we break this up into 34 constituent parts. We're not being forced to do anything, this is just the way that we are choosing to rearrange our corporate structure. Everyone's going to get a share in 34 different companies proportional to your share of ownership in the Standard Oil Company, and that is the transaction that we are electing to make as a corporation.
+
+David: Are you saying it would be if you're a shareholder or a board director at Amazon, and do I want to hold Amazon shares with everything, or do I want AWS shares and Amazon shares?
+
+Ben: Exactly, or SpaceX and you're like, do I want to hold SpaceX shares and Starlink shares? Even going back to our eBay episode with PayPal, how good of an idea was it to do the spin-off for shareholder value? I'm leading the witness here, but I don't think it's an A+ necessarily, but it's definitely an A that they did this from a pure shareholder value perspective in finally being able to open the books and see how good of a business each of these things were.
+
+There's an open question in my mind of, what if you could just open the books of Standard Oil as a whole rather than break it into a bunch of little parts, but there is no arguing that it was a great move. Again, I'll say it and it sounds dirty saying it because it's just such a corporate capitalist phrase, but a great move for shareholder value to break it up.
+
+David: This is the OG value unlock. This is what investment bankers would be just salivating over today.
+
+Ben: Can you imagine the fees on this deal, too? You can make so many slide decks.
+
+David: Funny story. I was talking to a friend earlier today. He'll laugh when he listens to this. No identities or anything revealed here, but he was an investment banker back a few years ago. His group covered Tesla. He was telling me about the 4/20 day, the day that Elon tweeted, funding secured. Just the mass chaos that unleashed on Wall Street.
+
+Ben: They were like, who's doing the deal if it's already secured?
+
+David: Once everybody figured out all the deal was in flux. Just the fee potential that everybody's eyes lit up to like, we got to get in to be the lead advisor on whatever this deal is going to be and signing up different buyers and partners. I can only imagine the situation if you were a banker and you heard that Standard Oil was considering a spinout. It would have been that times 10.
+
+Ben: In reality, you actually had five years of preparation and lighting up the transaction to do. It was probably a little bit more organized, but that actually wasn't covered much in Titan. So I'm curious for a more financial history of the breakup to cover. There's got to be barbarians at the gate of the Standard Oil breakup.
+
+David: That would be so good.
+
+Ben: All right, David, what's your grade for your shareholder in Standard Oil?
+
+David: This is, for sure, an A on every dimension. We've already covered it. There's no dimension where this is bad. It’s probably a borderline A+. For this type of transaction, I can't think of anything better. This is just great.
+
+Ben: The way that you could actually calculate some kind of return on it is you look at the appreciation in the ensuing decades, compute some kind of IRR on all the component parts, and try and look at it versus the previous 15-year IRR on the appreciation of the actual shares of Standard.
+
+David: You get Archbold, Rogers, and all those guys out of there and turn these places into legitimate operations. It's fantastic.
+
+Ben: Young Turks, gasoline centers.
+
+David: All right, what do you think?
+
+Ben: It's an A. These companies went on to become the most valuable companies in the world until big tech.
+
+David: All right, what does this portend for big tech breakups? Should Amazon spinout AWS?
+
+Ben: I'm of the opinion that it's indifferent with Amazon. First of all, we know the size of both businesses. I don't think that it's them both being under one umbrella is creating drag for either one of the organizations. I think Amazon knows how to move pretty fast with both of them. But I also don't buy the, we are our own first and best customer thing in a way that is value creative on the scale of, oh my God, they're so much better together than they would be apart.
+
+David: I think that's always been a myth that Amazon is the first and best customer of AWS. I don't think that's actually true.
+
+Ben: It took a while to move over all the Amazon stuff that was written not on AWS, AWS.
+
+David: They were still using articles until last year.
+
+Ben: Yeah. I actually think, as a potential Amazon shareholder, I don't know if we should disclose or can disclose on the show whether I hold it or not. I'm indifferent, or as a theoretical Amazon shareholder, I'm indifferent to whether it's one company or two.
+
+David: I think we can, at least I have before. I saw Uncle Stewart in our Slack community. He tweeted today with his current evaluated holdings portfolio.
+
+Ben: All bets are off now.
+
+David: All bets are off now.
+
+Ben: We're in [...].
+
+David: We're in uncharted territory. Amazon, I don't know if it's my biggest holding. I think I have more Bitcoin than Amazon, but anyway, top three for sure. I think I'm with you, indifferent. It's a maybe slight preference for a spinoff. I think it would probably unlock some value.
+
+Ben: Get a little Standard Oil in you.
+
+David: This probably just recency bias by just having done this episode here.
+
+Ben: Yup. All right, let's move on to carve outs.
+
+David: Yeah, let's do it. What do you get?
+
+Ben: All right, two for me. The first one is the upcoming MacBook Pro with an M1X, an M2, or whatever. I so desperately need this.
+
+David: This is your white whale.
+
+Ben: Pre-making it my carve out just to will it into existence sooner. I was looking around for like, what should be my carve out? I looked at my computer and I was like, well, not that thing.
+
+David: You're going to end up never upgrading your computer because you're just holding out.
+
+Ben: I need it so bad.
+
+David: I think I told you a year ago that you should have just gotten the Air. I'm on the M1 Air. It's freaking fantastic, then just sell it, and get the—
+
+Ben: I want the super book.
+
+David: You should just get an Air, use it, and then sell it. You will lose $10 on it. These things keep their value so much.
+
+Ben: You're right. If I'm willing to get a new iPhone every year like a degenerate.
+
+David: But we're so close now. If they don't announce this damn thing...
+
+Ben: Right? See, I thought it was three months away forever.
+
+David: Right. I think if this is not out by December, I'm literally going to buy you an Air, I'm going to send it to you, and then I'm going to charge it to Acquired.
+
+Ben: Fair. Count me in. I've said it on air. You have my verbal signature.
+
+David: The Air is really good.
+
+Ben: I bet. I have a second one though. We at PSL Ventures just invested in a great company called Starfish Space alongside our friends at NFX and MaC Venture Capital. This company is so freaking cool. This is my first space investment from PSL.
+
+David: You're even wanting to do this forever.
+
+Ben: This company is so cool. It's effectively an outer space tugboat. It's a tiny little satellite that you launch and it attaches to other satellites and can tweak them a little bit. It can just move them back into orbit gently. It can do things like extend the life of satellites.
+
+It can decommission satellites that are in a dangerous place. I think we've all seen Gravity, you don't want that to happen. Satellites should be where you want them to be. It's autonomous. It uses electric propulsion. It uses this really cool novel technique to dock to other satellites that are a super versatile way to do it. The founders are just top-notch.
+
+I just wanted to talk about them for anyone that's also a space nerd. Obviously, they're hiring, but I think just go to starfishspace.com. Check out what this company is doing. I just love the incredible innovation unlocked by this birth of the private space tech ecosystem these days.
+
+David: So cool. Thank you, SpaceX, Elon.
+
+Ben: Yup.
+
+David: Listeners keep telling us not to do this because we get people's hopes up, but I'll do it anyway. We got to do some more Elon stuff. We got to do a Tesla Part II.
+
+Ben: Elon, if you're listening, we officially accept...
+
+David: You're invited.
+
+Ben: We’ll have you for sure on the show.
+
+David: We'll accept your invitation to come to the show.
+
+Ben: If you're listening and you've emailed with Elon in the last couple of weeks, reply to that email with him and be like, by the way, I think you should do this.
+
+David: Yeah, the next podcast you do, it's criminal that you haven't done it with us.
+
+Ben: Terrible.
+
+David: Literally, I'm not even being facetious here. Nobody's going to tell the story better than us. I truly genuinely believe that. What are we waiting for here?
+
+Ben: Live on air, Rosenthal sales pitch. Give me your carve outs.
+
+David: This is a funny one. It's sort of embarrassing, but I'm not embarrassed anymore. For a long time, I saw all of my friends dropping like flies on this, not just with having babies that we're now doing to last in the party. I'm not talking about that, but I resisted for years. I was like, you did this, Ben, and I was like, no way. That is just too on the nose millennial. I am not going to do this.
+
+Ben: It was my best pandemic purchase.
+
+David: Sometimes the wisdom of the crowds is right for a reason. I finally became a card-carrying millennial. I broke down, I bought a Peloton, and it's great. It's really great. Do you need one? No. Actually, for a couple of months, I used just the app and a cheap spin bike from Amazon. It was fantastic. But I found I was using it so much, which just shocked me. I didn't expect that. It's so efficient.
+
+Ben: You're looking in really good shape.
+
+David: Thank you. I'm thinking now, I've got the baby coming. Things are going to get wild. I'm not going to have time to just go for long leisurely runs anywhere. I want to be efficient or I'm going to start looking like my baby all flabby. Then I broke down and I used Ben's [...]. Thank you.
+
+I got a Peloton. Pro tip, I think this is different for everybody. Initially, I was like, all right, if I'm going to do it, I'm going to go all in and get the Bike+. I got the Bike+ initially and it's really nice for sure. I had used a regular Peloton before, especially with the price drop on the regular Peloton, this is not $1000 more nice.
+
+Ben: I can't believe it's a $1000 difference.
+
+David: There are so many things wrong with Peloton's pricing strategy. I don't mean this to hurt, but I'm actually helping Peloton now.
+
+Ben: John Foley, if you're listening to this, come on the show, we'll talk about the pricing strategy. I actually mean it. We should do a Peloton episode. If you know John, if you're friends with him, tell him he should come join us.
+
+David: I love it. This is great. We're just episode planning here. Anyway, yeah, it's great. It's great. Don't get the Bike+. At least right now it's stupid to spend $1000 more, but the main bike, it's really freaking great. Now I get amazing workouts in 20–40 minutes. I'm just so glad to now have this heading into a crazy parent life.
+
+Ben: Welcome to the party, pal.
+
+David: We'll have to check-in. We’ll have to do some quiet group rides or something.
+
+Ben: That'd be fun.
+
+David: It would be super fun.
+
+Ben: If you want to do that, post in meetups in the Acquired Slack.
+
+David: Great. All right, that's my carve out.
+
+Ben: All right. Speaking of that, there’s an Acquired Slack. It's got a great URL, acquired.fm/slack—nice and memorable. We are launching a thing. I think, maybe, depending on the order of these episodes as they come out, we will have told you about this in a previous episode. If not, then we are announcing today for the first time (or the second time) the existence of the Acquired job board.
+
+So many of you have been posting in the jobs channel for years now in Slack. You have hired each other, you have gotten new jobs through the Acquired community, and it warms our heart to see it because it's really cool to watch so many of you get to go work with each other. Levels, Solana Labs, Vouch, a bunch of different places that are our friends and close to the show have had folks join them. But now, if you go to acquire.fm/jobs, that is in a nice, organized format, where you can browse. There's even a little one-liner next to each job that’s kind of making their Rosenthal sales pitch of why this is a cool job and you should come work here.
+
+We curate them, so there's no one that's allowed to post there that we don't look at, approve, and decide personally that we think they're interesting opportunities. Go check them out, acquired.fm/jobs. Most of you know about the LP program, but I do want to highlight a recent episode that was freaking awesome. We haven't shipped it yet as of recording this, but I bet it'll be out by the time we drop it. It is with Roneil Rumburg, the founder and CEO of Audius.
+
+David: It's so fun.
+
+Ben: I don't think I've had a better Web 3.0 conversation on or off the show than with Roneil.
+
+David: I thought it was so cool that it was like, we range from talking about super technical deep stuff. Roneil was a computer science major at Stanford. We were actually there at the same time. I was at GSP, I was an undergrad. Then we were talking about fun like tech history stuff from that era. Then towards the end, we're like, oh, yeah, by the way, you're in the music industry, so tell us a little bit about that. He's like, oh, yeah.
+
+Ben: Like hanging out with Deadmau5 and 3LAU.
+
+David: Yeah, like Deadmau5. He's really cool. He's a cool dude. Like, what?
+
+Ben: For people who don't know, Audius is crazy. It has six million users. It's a crypto application. I think that Brave and MetaMask are probably the three largest applications by user count in all of crypto right now.
+
+David: Web 3.0 yeah. He's like, oh, yeah, like 3LAU, Deadmau5, they're really fun to hang out with.
+
+Ben: We got into the stuff that I was really curious about, which is like, how does a decentralized application work also with a standard web stack like a Web 2.0 stack where you definitely need web servers and you definitely need to serve an application to people using regular browsers. Really fun. I'm actually going to listen to it because I feel like I've forgotten some of the conversations and want to relisten. Check that out, acquire.fm/lp.
+
+Thanks so much to our friends at Pilot, Pitchbook, and NordVPN. If you want to share this with a friend, you totally, totally should. One-on-ones are our favorite. We like to grow with high affinity rather than a broadcast method. Pick a person that you think would really enjoy this and please send it to them. With that, listeners, we will see you next time.
+
+David: We'll see you next time. Next time, you're going to hear from me because we did build up a little bit of a backlog. We'll actually be in the past. But then the next time I talk to you, my life will have changed. Yeah, it'll be wild.
+
+Ben: Totally wild. All right, listeners, later.
+
+David: We'll see you then.
+
+‍

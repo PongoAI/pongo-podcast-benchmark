@@ -1,0 +1,663 @@
+Ben: Welcome to this special episode of Acquired, the podcast is about great technology companies and the stories and playbooks behind them. I'm Ben Gilbert and I'm the Co-founder and Managing Director of Seattle-based Pioneer Square Labs and our Venture Fund, PSL Ventures.
+
+David: I'm David Rosenthal and I am an angel investor based in San Francisco.
+
+Ben: We are your hosts. Today's episode is a mashup between one of the newest things on the internet and the oldest things on the internet. Our guest today is Brendan Eich, CEO of the Brave browser, an application right at the heart of the rapidly emerging Web3 world. It is arguably the single largest blockchain-based app with over 50 million monthly users.
+
+However, Brendan is no new kid on the block. He holds the credential of inventing JavaScript, a source of much joy and also much pain for many of you out there. Brendan was the Chief Architect of Netscape and eventually became the CEO of Mozilla, the makers of Firefox.
+
+David: You're saying 50 million MAUs is nice, but Brendan wants this to go a lot higher.
+
+Ben: It's crypto nice, but it's not browser nice.
+
+David: Yet.
+
+Ben: Yes, but it is rapidly growing. We had a wide-ranging conversation with Brendan that you'll hear today that bridges this old world and the new in some really fun ways. Speaking of the new, we are so excited to announce our presenting sponsor for all of these special episodes, the Solana Foundation.
+
+David: Yes, so pumped.
+
+Ben: I know. For listeners who have been living under a rock, Solana is a global state machine and the world's most performant blockchain. You'll hear about them in this episode. What does that mean? It means that developers can build applications with super low transaction fees and low latency without compromising composability since it's all on one single chain with a global state. Solana is capable of processing tens of thousands of smart contracts at once. By proof of history, a distributed clock that unlocks low latency sub-second finality. It has a really clever mechanism. It does all this stuff really fast. It's very, very cool.
+
+David: You can hear all about it on our episode with Founder and CEO, Anatoly.
+
+Ben: But we are going to talk in a true decentralized fashion to some of the folks building the protocols and decentralized applications on top of Solana. We have with us today, Jay, a developer at Project Serum. Jay, what is Project Serum?
+
+Jay: Serum is a central limit order book-based exchange on the Solana blockchain. In the past, crypto traders would use centralized exchanges that locked composability and also gave centralized entities unilateral control of their funds. Eventually, traders moved on-chain in the form of decentralized finance using new crypto primitives such as AMMs. These primitives lacked the same capital efficiency that traders were used to on centralized exchanges. Serum now brings the central limit order book on-chain.
+
+It leverages Solana's parallel architecture to offer thousands of markets that operate concurrently, giving traders the low latency experience they're used to in traditional financial markets. This enables things like spot, spot margin, perpetuals, and dated futures to be traded on-chain in a completely composable manner through applications such as Mango Markets, which are protocols built on top of Serum.
+
+Ben: Thanks, Jay. Longtime listeners will remember Serum coming up in the interview with Sam Bankman-Fried and also our interview with Anatoly where they discussed how speed, efficiency, and low transaction cost wouldn't be possible without Solana's innovations. Our thanks to Solana and Serum. If you are considering developing on Solana, head over to solana.com/developers or just click the link in the show notes.
+
+If you want to hang out with us and discuss this episode, you should do that. We will all be there at acquired.fm/slack. If you want to go deeper behind these topics, especially crypto, you should come check out the LP Show. It is deeper, nerdier, and covers a lot of more up-and-coming topics. It includes interviews with people like Roneil Rumburg who have built Audius, Joseph Gordon-Levitt on the startup HITRECORD.
+
+Who else did we do on the LP show recently? We talked with some of Solana and FTX's earlier investors from Raise Capital. That's our newest LP Show episode. You can find that in any podcast player by searching Acquired LP show, and of course, become an LP if you want to get super early access two weeks before everyone else and talk with us on Zoom calls every month or two.
+
+All right, as you know, none of this is investment advice. Do your own research. Now, on to our interview with Brendan Eich. Brendan Eich, welcome to Acquired.
+
+Brendan: Hi, thanks for having me.
+
+Ben: Great to have you here. We've been big fans of your work for a long time. I grew up using Firefox, the Mozilla browser before that, and Netscape before that. God knows I use plenty of JavaScript every day in all facets of my life. My life would not be what it is without your work over the years.
+
+David: Of course, we are talking on Brave right now.
+
+Brendan: That's great. Your JavaScript use keeps me in T-shirts.
+
+Ben: We're going to go back and tell some of the stories of what led to Brave, but I wanted to get it in your words first. What is the Brave browser?
+
+Brendan: Brave is a faster browser because it blocks all the trackers, many of which Google, its publishers, or ad buyers depend on. It's based on Chrome, the Chromium open-source code. If you're using Google Chrome—which kind of swept the market up to 70% or more of market share, 2.65 billion users they say—you should get off Chrome and you should use Brave.
+
+We tried to make something that's easy to switch to but that's much more protective of your privacy. This is an ongoing commitment on our part because it requires a lot of research and development. It requires fighting new kinds of tracking and fingerprinting that emerge.
+
+It also involves something we talked about from the beginning and we prototype in Bitcoin. That's the Basic Attention Token system for users who choose to participate in private ads that are anonymous but that pay them 70% of the revenue and that let them support their creators directly through the Basic Attention Token.
+
+That was something we wanted to do because we saw the privacy protection, which is I think every user's right, good, and necessary as nevertheless, harmful to the current system of ad tech that publishers do depend on. We wanted to get our users an option that wasn't privacy invading, let them participate in funding creators.
+
+If you don't want the private ads, you can still fund creators out of your own wallet, we wanted that feature too. It's kind of a three-sided system, which is why we use the equilateral triangle for the BAT, Basic Attention Token logo. We're trying to connect users, advertisers, and creators flexibly along all three legs of the triangle. Users who don't like ads can turn off the private ads. Users who want to earn from the private ads can then give it all back. Some users just earn and keep it, that's their right too.
+
+The problem that Brave solves is the tracking ads—the privacy invasion—because it has all sorts of bad effects I can get into. Users feel it right away. They feel the clutter, they feel the annoyance, they feel the page load delay, sometimes the mobile pages never load. This correlates to the page load problem which is too much battery use and too much data plan used by all the ad scripts in the waterfall of programmatic advertising that daisy chains from a hidden third party to a hidden third party before an ad can show up.
+
+We block all that with Brave, but once you're in Brave, there's a whole new world of economics that's user-centric. This is the really big idea of Brave. It's a user-first platform and therefore, it's built from your browser on your device out. That's where all your data feeds originate. All of them, not just the ones Google sees through its search engine or its many trackers around the web.
+
+Ben: I think it was an important realization that you had when starting Brave that all or virtually all activity stems from interacting between a user and a browser. That is because of the tremendous rise of web apps, in large part, unfortunately, to the detriment of native apps that run on a desktop operating system. That has enabled because of the ecosystem that was built around JavaScript.
+
+On the other side of things, the entire advertising, ad tracking, and digital advertising ecosystem also is built on JavaScript. I think there's an unbelievable arc to everything that you've built over the years in deciding to approach this problem the way that you have now at this point in your career.
+
+Brendan: I was part of a project at Netscape that made the browser mass market. It made it commercially safe. Before Netscape, there wasn't a way to trust your credit card number flying across the wire. Netscape did the so-called Secure Sockets Layer.
+
+David: Yeah, SSL.
+
+Brendan: Netscape was working on making the web safe for ecommerce and useful for the site you went to. We didn't think about the third-party problem, and that's where even before I joined, there was a way to embed images in the browser that was actually in Mosaic in 1993.
+
+Then in 1994, Netscape won. There was the cookie, which let people associate a bit of storage in the browser with their site. That applied not only to the banker or game site you're visiting, it also applied to every one of those images. That created a tracking vector because the image server could be keeping track of you through a cookie that gets bounced in the browser from each site the image is embedded in. That's why you still hear the term pixel used in ad tech for a tracking element. Even though it can be an invisible script now, it used to be a one-by-one little transparent image.
+
+David: When did you start to realize that this was a problem?
+
+Brendan: I think even in 1996, Lou Montulli at Netscape did the cookie and there was a concern that it was being used for third-party tracking or could be used, but the genie was out of the bottle. The thing about the web is, Marc Andreessen said this to me, even when they were doing Mosaic and there were only like 80 servers hosting content they cared about not breaking, they would just keep backward compatibility in all the quirks of [...] as HTML parser, even precursor progenitor HTML processors, older browsers because the content wouldn't work properly.
+
+This is a strong evolutionary force, this gradient forcing compatibility on the web. This is something a lot of people in computer science, especially programming languages, just hate because it means you really can't make incompatible changes, except very slowly or through new runtimes that you can download. JavaScript was the only bite at the apple for that kind of runtime. Java failed and Flash eventually failed.
+
+In the '90s, we were too busy making the first party experience good and we couldn't break the web. Even though Lou Montulli wanted to do twinkies, somehow I think they were going to solve several problems he wanted to solve.
+
+Ben: That's an evolution of cookies?
+
+Brendan: Bigger, more storage. I think cookies were only 1024 bytes or something teeny in the '90s. I think he wanted to do them only for first-party sites. I don't think this would have killed cookies for third-party tracking. I forget the details because his boss said no more cookies, twinkies, or ding dongs, and we stayed at the cookie. By the late '90s, you can still find them in the web archive. There were sites diagramming the rise of tracking. The company that Google acquired is DoubleClick in 2008 was operating in '99. I think it made the DART ad server.
+
+Ben: I want to go way back to the beginning of your career. Even before Netscape and before JavaScript, you joined Silicon Graphics or SGI as it's called. We've talked on many episodes about the unbelievable, incredible talent nexus that was SGI. Did you know when you were joining that that was the center of talent that would go on to do so many things?
+
+Brendan: Yes. I was a grad student at UIUC, which may still be the top five CS schools in the country, out in the middle of Illinois, and I was not going to do a Ph.D. At some point I realized that our research team had been hijacked by IBM and this was a great disgrace in my view, but the professors couldn't fight back. We became sort of a QA team for IBM's failed attempt to get a little laptop computer, Motorola 68000-based computer they developed, repackaged it as a Unix workstation because Unix workstations were super hot.
+
+Guess who came by UIUC to give a talk? Jim Clark, about Silicon Graphics doing Unix workstations with the OSI 3D graphics, that was the whole company. I almost right away said, I'm going to work for Jim. I interviewed at Sun. I was interested in a programming language, so I interviewed on the compiler team. I wasn't experienced enough for them to hire. I liked the manager, Steven Muchnick. I met Eric Schmidt briefly. He was like the director of software at the time at Sun.
+
+Then I interviewed at SGI, I signed on the bottom line, and it was great. SGI was super hot. It IPO'd after I joined. For a long time, it had the best graphics, but that eventually got shrunk from VLSI to GPU and now the system is on a chip. By '92, it had gotten big and divisionalized. I've got to get some more experience through other things. I left. I was kind of bored. It was political and divisional.
+
+David: Was this before or after Jim left?
+
+Brendan: It was before I think because early on, Jim realized he wasn't CEO. Ed McCracken was running it and Jim was on the board. I think, at some point, Jim had trouble as a founder keeping control as usual due to dilution. By '94, Jim was starting Netscape and paired with Marc Andreessen. I knew about that because of all my SGI friends.
+
+David: SGI did big graphics for Jurassic Park, right?
+
+Brendan: Jurassic Park. I know this, this is a Unix system, and they're not looking at a command line. They were looking at the SGI file system visualizer, but I got bored and I left. SGI got big and kind of boring. I could see why Clark left when I heard he was doing Netscape.
+
+Ben: How did you find your way to Netscape then?
+
+Brendan: A friend from SGI who'd come in from a team at IBM, Jeff Weinstein, had gone ahead of me to a company called MicroUnity. MicroUnity, you probably haven't heard of, but it's got a lot of patents and it successfully litigated them from 20 years ago to maybe 10 years ago. I forget when they ran out of steam. I think it just made a ton of money off suing everybody—IBM, Motorola, Qualcomm, Broadcom, everybody—because MicroUnity wanted to create a software programmable set-top box.
+
+Ben: There's only one thing that I actually knew about MicroUnity coming into this. Wasn't the chief architect at MicroUnity the same person as both MIPS and NeXT with Steve Jobs?
+
+Brendan: Craig Hansen might have been at NeXT. Craig definitely was at MIPS. He did the floating-point unit, the MIPS floating-point unit. He was the full architect at MicroUnity. MicroUnity was like practical grad school for me because it didn't go anywhere. It was way too ambitious. It was doing a new chip, new semiconductor process, new chip through analog and digital—on the same chip, I should say. It was doing basically everything except the radio front end that mixes down the baseband it was doing in software.
+
+All this stuff has come true over time, but trying to do it all at once, you just run into the multiplication principle and your odds of success go to one in a billion or ten billion. They could have used the fab to make SRAMs, but I think it was too boring. I think [...] was really ambitious. He wanted to change the world. He wanted to be the new Howard Hughes in some ways. He did make a lot of money off the patents.
+
+Ben: Okay, did a big crew of those folks leave to go to Netscape or was it you on your own?
+
+Brendan: Jeff Weinstein and I jumped in Netscape within the same week. We're still young and naive. We should have made a company and sold it. We would have gotten four times the options. When we arrived, we saw some other teams doing that, and they weren't as good. I can't complain. It was always the case when you're coming into these systems that you don't know exactly what's going on with the company.
+
+I got there in April 1995, on April 3rd I think, and the IPO was sometime in August. It was a huge rocket and it was to me a little bit scandalous because in the '80s SGI had to have three profitable quarters before it could IPO, whereas Netscape just went on forward speculation, forward multiples, and it was not profitable. That was the '90s and that started it all.
+
+David: But there was real revenue there.
+
+Brendan: The browser was charged for in commercial settings. Netscape used the IPO to buy a bunch of server-side companies and projects. The LDAP Team from the University of Michigan, Tim Howes and company, the Kiva app server, a bunch of Java investments. Even started building a Java [...] runtime to rival HotSpot, which Sun had bought anamorphic to build.
+
+The Netscape version was called ElectricalFire and it was being developed by this super brain from MIT, Waldemar Horwat. But Netscape couldn't pull it off and Sun was going to win with HotSpot. I rescued Waldemar to take over JavaScript in late '97 and I went off to found mozilla.org, afterward standardized JavaScript.
+
+David: A welcome to the new [...] Netscape. All those guys you mentioned, most of them went to LoudCloud. You went in the Mozilla direction?
+
+Brendan: Yeah. My CV is really short and I tend to stick with things. The thing was, the browser was not done yet. Microsoft had simply killed Netscape by bundling IE, which had copied and sort of acquired pieces through SpyGlass.
+
+David: Which bought Mosaic.
+
+Brendan: It sort of kept iterating like it does. The first version was not real, the second version was kind of a joke, and the third version was starting to tell you where it could get to. The fourth version was quite good on Windows, pretty much only on Windows. Meanwhile, they were bundling it with Windows 95 and then 98, and they got convicted in the USU Microsoft case for this because it's not illegal to acquire monopoly through, let's say, merit or a sweetheart deal with IBM to be the OS for the PC. I don't know why IBM gave Microsoft that, it's a little suspect, but whatever.
+
+They had the windows monopoly, but what they did in tying the browser to it and threatening Compaq with revocation of the Windows license if Compaq shipped Netscape as the default browser was illegal and they got convicted for it, but it was too late to save Netscape. Yet a few executives, Marc, Eric Hahn, and others wanted to save something through open source. Commercial open source in the form of Linux was up and Red Hat was up and running.
+
+People were excited about the idea of doing a commercial open source project out of the remains of Netscape, at least in the browser team. Jamie Zawinski kind of led it definitionally and spiritually as the community manager. I did the tech side, and we had a bunch of IT and a couple of tools people who helped us build things that are now taken for granted that are now standard on GitHub.
+
+We realized there was this amazing synergy doing something like a dynamic language on the server to generate HTML that has JavaScript automating it. All that stuff was super slick to do in a full stack way and this was in '96. It prefigured everything that came after in DHTML and AJAX.
+
+David: It was pretty cool that you guys were doing this in open source, right?
+
+Brendan: Initially, Netscape was closed. When we opened it up, we threw this tarball out there. But as we worked on these tools, it got better. We couldn't drag the male news team out. They'd been sort of messing up Netscape for male news and they didn't like open source. Eventually, it all got rewritten and redone. We even created the portable front end stack using XML, which was all the rage then. We call it our XUL, after Ghostbusters.
+
+Ben: Which became the way that you would write the original browser plugins for Firefox and presumably the Mozilla browser before that.
+
+Brendan: Yes, and there was a suite pretty much the [...] Netscape—to use on Google as an analogy—the [...] Netscape version of the code. This actually started winning users because AOL bought Netscape and started festooning Netscape with ICQ buttons, AIM buttons, and things like that.
+
+Ben: Yeah, it's like when I go into make a new meeting now or I'm about to add a Zoom invite, but Google's like, wait, don't you mean Google Meet? That's not why I'm using your tools.
+
+David: No, not what I mean.
+
+Ben: We're now at this point where you're on your own with Mozilla, you've taken the code out of Netscape, it's being developed in the open. Firefox, at some point, became over a quarter of the browser market share. How did it evolve from, hey, we're going to take an open source version of the browser that Microsoft illegally killed and turn into this thing that sort of breathed new life into the browser ecosystem?
+
+Brendan: We had this idea, Eric Hahn and Marc had this idea that there would be an escape pod containing the browser code. It would somehow land on [...], the message would get through, and things would come back later, but no one knew how. The conventional wisdom from 1988 on in the valley was, oh, the browser is done. IE is it forever, give up.
+
+David: Just like today or a couple of years ago with Chrome, right?
+
+Brendan: It goes in cycles. We also had this boat anchor of the Mozilla Suite, because like I said the '90s had a lot of sweets. I think Netscape made a mistake in '96 when they bought a company to go after Lotus Notes because it didn't work. They took the Netscape 2 and 3, a mail reader, a newsreader, which Jamie and Terry Weissman, who I've mentioned, worked on and did a pretty good job in a very short time. They threw it away or threw most of it away and did a Windows-only groupware version that was late and delayed all of Netscape 4. That really hurt, and they were the people who didn't want to do open source either.
+
+That did not help Netscape. It did not take down Lotus Notes. Mozilla had to figure out, are we doing a Suite? Do we want this albatross of '90s suiteware? It took a while because like I said, we were underfunded at first. In fact, as AOL ingested Netscape, which at first didn't involve any digestive enzymes, it was arm's length. They started wondering what they bought and why.
+
+For the first two years, I think 1999 and 2000, the head of the Netscape division was decapitated. Somebody I liked, a nice guy mentioned, took their place, but it didn't go well for Mozilla. It meant Mozilla was considered the enemy because most of the employees initially were the contributors, and it was rare to find outside contributors. Chris Blizzard at Red Hat was a contributor.
+
+We encourage people in open source especially in Linux to work on the code and send patches or get cvs commit rights. We tried to give those away. A lot of the job in the early days was trying to build up the mostly volunteer community to countervail the Netscape employees who were not all top-notch at that point.
+
+After a year, nothing much changed. Jamie said, I give up. I consider it a failure. He wrote an essay you can still find, so he quit, but we kept going. Even though we had to be the basis for this suite, because we stripped out the ICQ and AIM buttons, Mozilla got popular. We were doing releases and binaries because we wanted testers. That was a big change too. A lot of open source projects said, there's the code, build it yourself.
+
+Ben: Right, which of course 99% of people who could use the software are immediately out right away because they're not going to compile on their local machines.
+
+Brendan: Of course, once you build the software and release it, you're getting people who don't know which end of the internet is which. They'd give you good feedback and there's a whole sort of layer of the onion from your lead users or your actual hackers who do know software up to let's say web savvy but less experienced folks, out to the average people who don't know the difference between a search engine and a browser.
+
+We started growing Mozilla even before Firefox in a way that I think kind of shamed and threatened Netscape, but Netscape was also getting these annual decapitations. By 2003, we learned through our IBM friends that there were going to be curtains from Netscape division. Through an enormous stroke of luck, Mitch Kapor, who founded Lotus 1, 2, 3 and has his own experience with Microsoft's tricks, was friends with Ted Leonsis, one of the AOL executives.
+
+Ted is a very nice guy, not technical, owns the Capitals. They ran into each other at the very first D Conference, Walt Mossberg. Ted said, hey, Mitch I've got this thing—Mozilla—that I don't know what to do with. It turns out Mitch was doing something called the Open Source Applications Foundation.
+
+He had hired Mitchell Baker who had been fired under cover of a layoff, I'll say it, in 2000 by Netscape management because they didn't like Mozilla. It was a thorn in their side, maybe Mitchell was, Mitchell was expensive, so they had a layoff. Suddenly Mitchell was gone and I was on the phone saying, did you quit? She said no, this was not my choice, and yet the next week on the Mozilla community call, there was Mitchell doing the governance leadership [...] tech leadership.
+
+The Netscape management that tried to get rid of her were grinding their teeth at this point. They couldn't kill Mozilla, they couldn't decapitate it as Netscape division had its head taken off annually. When we learned AOL was going to shut down Netscape, Ted—to his credit—asked Mitch what to do and Mitch had hired Mitchell Baker, who had been the Mozilla manager for eight months into the founding up until she was laid off.
+
+That was just huge good fortune because Mitch then told Ted what to do. In spite of some sniping by a VP at AOL nobody liked—he really wanted to stick the knife in and then twist it—Ted did the right thing and gave us $2 million over two years to spin out the Mozilla project.
+
+I think Mitchell wanted to do it as a nonprofit. They thought there'd be some good basis for Mitch himself. I didn't want to do VC funding and didn't want to do a commercial thing. I just went along to try to keep the code alive. We knew what to do in 2003 (summer) because Firefox had already started in 2001 if you can believe it, but it became known as Phoenix by 2002.
+
+David: Firefox was completely rebuilt from the ground up, right?
+
+Brendan: It was based on this XUL work that I mentioned that Dave Hyatt and others had done to make a programmable front end stack on what looks like the web. It's XML, JavaScript, and CSS. Custom toolbars, even the native menu bar on the Mac OS at the time, all that could be integrated through XML. It was declarative. It was fast enough with enough work. It allowed all these extensions you mentioned, we call them add ons. That was the first browser extension ecosystem way ahead of Chrome's.
+
+It was the way Firefox got built because once we had the suite unbadged of all the ICQ junk, we still have too many functions like the Swiss Army knife. Do you really need to browse the web while you compose an email, rich text editing, and manage your address book?
+
+We came up with a vision. Dave Hyatt and I wrote the roadmap update for Mozilla in 2003 that said, let's make one app do one thing well. We'll build them all on a common front end toolkit, give them extensions so that we can simplify the UX, but not drive the advanced users away to Opera, which always had too many options built-in.
+
+That roadmap you can still find even on Mozilla. I think it's certainly in the web archive. It was a pretty good roadmap, in my opinion, because it got the project moving toward not only Firefox but Thunderbird, and even the old suite. The volunteers wanted to call it Sea Monkey and carry it on, and they did for a good long time. Firefox was originally Mozilla/browser in 2001. It was just a small pirate ship within Netscape. It was Blake Ross, Dave Hyatt, and a few others.
+
+Ben: Joe Hewitt, right?
+
+Brendan: Joe Hewitt did the autocomplete satchel, and he eventually did FireBug, which was awesome.
+
+Ben: He then got hired by Facebook and built the original Facebook app.
+
+Brendan: Blake Ross and Joe Hewitt founded Parakey and sold that to Facebook. That's how that happened. We lost Blake to Stanford. I had to recruit Ben Goodger out of Netscape to take over for Blake, and that went from Firefox 0.6 on to 1.0. Ben did a lot of the important work on add-ons and search integration, making it really sing on Windows because that's the other thing open source didn't do. Open source, at that point, was still saying, oh, it works on Linux. Well, which flavor of Linux? KDE or GNOME. I've forgotten other ones, but they didn't care about Windows.
+
+Ben: It seems to me that the community always needs, when I say the community it's a very broad community, it's all people who use browsers and maybe even more general than that, but they always need some exciting challenger that's fighting the man. It seemed like Firefox was the right place at the right time with the right group of people who were actually passionate about this. Whereas everyone who was stuck inside of Netscape at AOL had sort of lost the fire.
+
+AOL, at first, thought this was a strategic asset, but now realized it wasn't going anywhere. You had this sort of moment to seize if you had the right team where there was no legitimate challenger anymore to IE and so you could make a real run at it. Is that how you think about it?
+
+Brendan: Yes. The way you described it was almost like fractal structure because the core team was like a pirate ship sassing Netscape management for their foolish bloated suite, and also making great tools and things that Hewitt worked on—FireBug and the autocomplete stuff. That led to early adapters loving that so much more than all the other browsers so that when Firefox was at 0.8—I think it was early 2004—and then 0.9 especially when we could see the rocket ready to launch, the whole lead user cohort of the web was just charged up.
+
+At that point, I made contact with Sergey Brin through somebody he sent my way and then Fritz Schneider. We've gotten the search still going in 0.9, but we'd also gotten Fritz's team, the [...] team at Google helping Firefox. They were working on browsers before Chrome. The browser they worked on was Firefox. Nobody thought it could be done.
+
+The conventional wisdom still was that you're never going to take that market share, even though Firefox already had a few million users and was growing rapidly. This did commit some people who worked with us at that time like [...] to go try a commercial for Firefox. That was a flock. It didn't work. It raised a bunch of VC, got sold to Zynga, and then shut down in 2011.
+
+Ben: There were other forks too. I used Camino on the Mac.
+
+Brendan: That was Dave Hyatt’s other browser. Dave wrote prolifically, he wrote a lot of code. He wrote a Mac OS only browser to learn the Cocoa. I think it was a toolkit. Dave works for Apple. He went there in 2001, I believe. He kind of made Safari because he knew how to make the KHTML engine web compatible. It was from Linux and it wasn't battle-tested in the field against mass-market users so it didn't load websites properly.
+
+Eventually, it led to WebKit being forked from KHTML in 2005, but getting David Apple was quite a coup for Don Melton, the manager at the time at Safari who was also ex-Netscape.
+
+There was just this fractal effect of restarting the market, sassing your boss, showing up IE, showing the world a better tool for something that people used every day, right? People will discount the browser. There were, oh, fat apps are back on the desktop. Windows Longhorn or when the iPhone launched eight months after actually because the initial app model for the iPhone was web apps. Native apps had to be there because of games being ported. Then native apps got privileges and got App Store affordances that the web didn't.
+
+It's the same thing every 10 years. You just get people holding the web back. Usually, it's market power. Then the upstart comes because people still use the web. The value on the web is so great. There are embedded web views in all these apps. There are embedded trackers in all these apps. By the way, we're blocking those too with our partnership with the Guardian iOS firewall, the VPN.
+
+David: It feels similar to me in terms of narrative and market perception to silicon and to semiconductors. A couple of years ago, people were like, semiconductors are so boring. It's not like all the innovations way, way, way up the stack from that. Actually, it turns out, semiconductors are pretty freaking important, and TSMC is a very, very, very important company. One of the top 10 most valuable in the world. The browser feels similar to me. It's so easy to discount it and yet people in the world spend the majority of their days on it.
+
+Brendan: It's an immortal app. It's the universal app. The bigger the screen and the better the input and bandwidth, the more you live in the browser. You don't want to install some—even Slack, we have a lot of our users of Slack. Brave uses the browser to load slack as a web app instead of loading this bloated electron app that Slack has been slowly maintaining.
+
+There's a real trade-off there that I think is part of the browser's immortality, but the web content is also sticky and accretive, and that's important too.
+
+Ben: I'll sum it all up in one sentence. Firefox did really, really well and gained a huge market share. Then when Chrome launched, it's been slowly etched away every year by Chrome now, and it's down around something like 3%. I want to fast forward all the way to the moment where you're starting to think about Brave. Yet, there have been all these attempts to start a new upstart browser that has a different take on things—I'm thinking of Dolphin and RockMelt—that has not worked.
+
+Brendan: RockMelt. The Flock was doing social or web 2.0 and made it the very center of Firefox's growing market. That's not a good growth strategy because you have to get people off Firefox and then somehow beat them on the outer rings of growth. Firefox was already going faster there and you weren't going to get too many defectors from the innermost nerdy hacker Technorati web 2.0 people, so Flock failed.
+
+After Chrome came out and was based on the Chrome fork of WebKit, which wasn't its own thing really then, and tried to add social. I haven't talked to Tim Howes about this. I think it was just aimed to try to sell it to Zuck. Well, Zuck doesn't want a browser. He's got a browser. He's very happy with the Facebook web app on the desktop. Then he was, at that point, already aiming at mobile because the iPhone was out and he wanted full native apps on mobile.
+
+He was never going to buy RockMelt, so RockMelt failed. Dolphin did well because I think they had this—I forgot her name, she was a great marketer. She got all these distribution and growth hack deals going in various Asian countries. They did an incredible job on making it a good mobile browser as mobile came up through Android. Android double started that G1. What was it called? It was the first Android device.
+
+Ben: The T-Mobile G1.
+
+Brendan: Yeah, it was not good. I had to talk to Andy Rubin at Google in 2006. Android took a while to get anywhere near decent and I still can't use it. Even though I've got many complaints about Apple.
+
+David: Am I remembering right that Dolphin, at some point—I don't think originally but maybe later in its life—pivoted to be like, oh, we’re privacy-focused, right? People were starting to think about this.
+
+Brendan: Everyone's doing that now. They're putting perfume on without taking a shower, in some cases. One of the big browsers that succeeded in Asia besides Dolphin was UCWeb. You see what grew against Chrome in Indonesia, Bangladesh, and India. In some Indian states, it had more shares than Chrome.
+
+One of the things we noticed that UCWeb did was it blocked ads. Having done Firefox and been in the situation where we didn't even have the best privacy features. It's kind of embarrassing, but it's true. Mozilla did not lead on privacy as well as Steve Jobs did at Apple. The very first Safari had private windows. It had a third-party cookie blocker. Neither of these things was in Firefox at the time private, private windows came in quickly.
+
+We never shipped a third-party cookie blocker in my time there. There was always a concern about rocking the boat. I have to say, there was probably some implicit concern about the Google Search partnership and what would be the effect on that.
+
+Ben: Because of course, the vast majority of Mozilla's revenue comes from the Google Search deal to use Google as the default and get paid hundreds of millions of dollars from Google.
+
+Brendan: It really was the one big trick for funding Mozilla, and it was good while it lasted. It also foretold Google doing its own browser, right? We could see this coming too. We didn't want to take so much revenue in the deal that it became cheaper for them to do Chrome. We tried to adjust that but all we did was defer Chrome, maybe a few months, a year at most.
+
+It wasn't clearly deferred at all because, by 2005, Dave Hyatt, [...], and others at Apple had said, let's stop patch bombing KHTML, let's make our own little mini Mozilla. It'll be run by Apple but it will be webkit.org, and it will be a proper open source project. Good for them. They did it. That became the basis for not only what they put in Safari, but for Chrome. There was a gleam in Larry Page's eyes when last I saw him in 2005, he was saying, yeah, web gets so clean. I'm like, Larry, go do your own browser. It's fine. Don't worry about Firefox. You should do your own browser.
+
+We knew that in 2006 they were doing it. We knew that they were at that point pulling people off Firefox. Some of the people I've worked with at AOL or at Mozilla were working on the prototype and it took them a while to get it out. Chrome came out on September 1, 2008. It wasn't really, at first, clearly about fast JavaScript or all the stuff that people think of. It was more about isolating the Flash player so that when it crashes in a tab, it doesn't drag your old browser down.
+
+Ben: That comic that they shipped was just freaking brilliant as a marketing strategy for the nerds out there that would really appreciate process isolated tabs.
+
+Brendan: It had everything. It had Lars Bach about VA. It had Darren Fisher, who I had worked with AOL. At some point, I don't know when, I heard this from a friend who was at Google, Larry sat up and said, wait, we're running a search advertising business and Chrome isn't tracking our users? What are we doing wrong?
+
+In 2016, Google's privacy policy changed. This was after I started Brave, but I'll tell the full story of Brave by starting there. At that point, ProPublica noticed, the Guardian republished their piece. They said Google has crossed the Rubicon. They've connected all their data into one big ad exchange and data collection system. With a carve out for Google Analytics. It's not clear how much Google Analytics is private anymore.
+
+Chrome, if you sign into the browser—which was a separate feature in the upper right corner—using your Google account, then you're trapped for ad targeting. It's Google's business. A lot of people didn't know this and some people didn't sign into the browser. In September 2018, Google said, gosh, darn it, people aren't signing into the browser enough. We're going to just do it whenever you sign in to Gmail or YouTube in a tab. We'll just sign you in across all the tabs. It will track you. If you don't like it, you can opt-out in the Google account settings.
+
+David: But nobody's going to do that.
+
+Ben: I do.
+
+David: You'll do that, but—
+
+Brendan: I used to do talks at conferences, I asked how many people were using Chrome, how many people knew this, how many people opted out. The hands were numerous and then they started falling and then there were red faces and consternation. This is not just Google. I picked on them because they became the biggest but—and buying DoubleClick was an earlier sort of Rubicon they crossed because—I think Sergei told a friend of mine in 2003, oh, we would never do like tracking for ads on publisher pages that tied into our search ads. We would never track across the web. That would be evil. Well, it changed.
+
+Ben: The definition of evil shifts depends on how large the incentives are.
+
+Brendan: Going public also, it just puts a feature of duty to your shareholders on you that is hard to resist. This is kind of the animal, the blind, voracious beast of capitalism. When I was thinking about Brave, I realized not only had Mozilla become captured by its search partner, it was probably going to die because it couldn't compete, not just on Chrome intrinsic qualities, but on distribution, which really matters at scale. You have to pay for it, right?
+
+Microsoft had woken up and was doing IE and finally did Edge. This was before they switched Edge to be based on Chromium. They were certainly still distributing on Windows. They were kind of tying it and I would say it's gotten worse. Windows 10 and 11 have gotten even more aggressive though they backed up on one particular thing recently, where it's almost like back to the antitrust case. They're saying, hey, you're not using Edge, we've noticed. Would you like to use Edge, or oops, we reset your default browser to Edge. That happens too.
+
+This is a problem for Google. Google has to pay to distribute chrome. Mozilla doesn't have the resources to do this. Our growth with Firefox when I was there was completely organic, I think. It probably was mostly organic after I left. They might have done a little growth hacking and they never got big on mobile.
+
+David: I'd love to get your explanation. Again, I don't ask this because I don't have thoughts myself, but I want to hear from you. Why is it bad to be tracked?
+
+Brendan: People sometimes that they're savvy they'll remember Richelieu's epigram. I don't know if it really came from him. Give me six sentences from the most honest man, I'll find the way to hang him. Snowden changed things. People realized, wait a minute, there are violations of federal law here. Google engineers who've been using telco dark fiber without encrypting their backbone traffic were outraged, I think.
+
+Data breaches bother people and the third party problem I mentioned, those embedded pixels and all those embedded scripts, you don't know where your data is going. It's not just that it's tracking you to give you a better deal or to make your ads more personalized on a website. That data is flying out the window. It's going into stuff that is available to not only the dark web but just available publicly.
+
+The horrifying story, I won't name names, we have a vendor at Brave that has information on people. It shared it with Experian. We didn't know this was happening. I don't know if there's a privacy law that was breached. We believe their privacy policy was breached by their own action or their setting of this as a default that we didn't know we had to opt-out of. Experian is just breach city. These are jokes.
+
+Ben: It's criminal. I don't know if it's literally criminal but it feels criminal.
+
+Brendan: Right. The consciousness of privacy as something where you're unsafe if your tracked grew. Initially, it was like, I don't care, trap me. I have no privacy. Just make my experience more personal. Then it became, wait a minute, there's some third party or seventh party, seven degrees of Kevin Bacon. There's somebody in Russia who's tracking me, that's no good. There's somebody playing games to trap me around the physical world using geofencing. That's possible with ads.
+
+It's been done probably by malicious actors. There is spy stuff going on. People realized that this was a bigger problem than just, something somewhere has some dossier on me. Because once you have a dossier on a server, it's very likely it's going to get copied or leaked. It's going to be in 100 servers or 1000 servers. You won't know where it is or to what bad uses it will be put. Meanwhile, privacy law was coming up in Europe that in its own abstract ways, sometimes without defining its terms, did use common sense notions about how we interact. Which Steve Jobs himself wants to talk to Mossberg about in very plain terms. Which is, privacy means you don't get my data unless I know I'm giving it to you for a specific purpose that benefits me and there's a quid pro quo.
+
+That's what the GDPR tries to do with purpose limitation or purpose specificity. When you consent to those cookie dialogues, which are all misregulated, mismanaged, and nonsense. I'm not defending them. GDPR, like all regulations, is full of unintended consequences. What they're trying to do is say, do you consent to let a tracking cookie be set, let's say, for some essential or inessential reason?
+
+There are carve outs for essential reasons when you go to a search engine. It's a first party, you're giving it data to get better results. There's an essential purpose there that can justify some kind of data being processed. It isn't necessarily tracking because it's only at that search engine.
+
+When you're dealing with all these sites that throw these cookie consents, click here to learn more and there are 300 vendors. If you want to opt out, you have to go click on them and often there's no page there. There's a 404 HTTP response. There's no phone number, there's no way to opt out. It's a complete fraud that you can opt out of this easily. That's also against the law in many places in the world, not just Europe. A lot of these privacy laws are coming up around the world. This was sort of concurrent with the rise of Brave.
+
+The consciousness about privacy is still growing and that's helping us because we were at the forefront and doing this R&D I mentioned which made us fast and efficient. You're seeing others jump in with DuckDuckGo always had a more private search front end on Bing. It's pretty much Bing still for the keyword search. They had mobile browsers now. They're adding desktop browsers and other products.
+
+Like I mentioned, Apple gets fair credit for privacy concerns that I think came directly from Steve Jobs in Safari private windows and third-party cookie blocking. Apple rests itself in privacy with some justice. Now even Google's trying to claim this event, the privacy sandbox to save its business. I mean, to save the world, sorry, and ram it through standardization and into other browsers.
+
+Ben: Let me ask David's question a little bit more specifically, why is a private computing experience important to you personally?
+
+Brendan: I mentioned this rising consciousness of privacy. How privacy is multi-sided and involves different degrees and kinds of threats. Those mattered to me, no doubt. I also think the user has to have privacy for economic advantage. Otherwise, we have no way of collective bargaining with the network powers. Any network is going to have power centers just because of network effects. Whether they collect much data or just become a successful business, they will have economic power, market power, and the users may just be these sort of sheep to be shorn of their wool. That is the model for ad tech.
+
+If users can guard their data, they can demand a higher price. They can demand better terms. They can use cryptographic protocols to transact without giving up their privacy while still giving authentic attribution or confirmation of ads viewed or purchases. What matters to the marketers if you get them on their best day is not that they track you individually. They wouldn't know what to do with these tracking databases. It's usually vendors that they hire that do it, Google, Facebook, and so on.
+
+They want to know what audience they can address. They want to know how well that audience or cohorts within it convert. They want to segment that audience and see they can do performance and growth marketing with pseudoscience, mostly regression, logistic regression. Mostly very simple statistics to see this campaign is working, this one's not, I'm going to spend more money on this and less on that. I'm going to try this new paid media approach. I'm going to try this new Brave browser private ad system because there are some users there that are off the reservation. They are not reachable, addressable.
+
+They used uBlock Origin on Chrome and now they're using Brave and I can't get to them through my usual media channels and advertising methods. I'm going to put a little money on Brave and that's how we built up the private ad business as part of Brave rewards. It uses the Basic Attention Token. That matters to me too because I always thought about economics. I was interested in it from a young age, but I also at Mozilla thought we're going to get killed by Google.
+
+I think every executive thought this at Mozilla. I'm not breaching any NDAs to say this. It was something that maybe can't be solved without really doing a second browser and marketing it as a companion to Firefox. I actually talked at one point with Dave Hyatt about doing this, but I couldn't recruit him away from Apple. I tried to get Hewitt as well. It would have been a WebKit-based Mozilla browser, but it was too risky. I couldn't get the talent I needed. It would undermine Firefox at some point. It would have been bad for morale.
+
+Maybe Mozilla is trapped, but I didn't want Brave to be trapped, and I certainly didn't want myself or my children to be trapped because these monopolies can last a lot longer than they should. They can really keep shearing those sheep until sheep are starving. That's happened.
+
+I think that's where we're headed with all the censorship and the heavy-handed interference in search results. Demonetization of YouTubers in 2015 started and it wasn't just over atrocious content that should be censored because otherwise you're going to just have people after you and you'll lose viewers. It was over all sorts of things that nobody could understand. They were just losing money as YouTube creators. These were just creators who were talking about their hobbies and they found their ad revenue going down.
+
+David: Totally. Google changes YouTube algorithms, Facebook changes Instagram or Facebook algorithms and it completely wipes the table of whole sectors of creators.
+
+Brendan: In the UK, there were actual regulatory cases involving this search algorithm. SEO changed. Matt Cutts when he was a Google used to blog. He tried to be transparent about it, but it was clear Google had a lot of power. There's sort of a black box that they're operating inside of, and it's a casino, the house always wins.
+
+I wanted to use something that we knew about in the old days of computing where you were the system administrator of your department's minicomputer or your lab's minicomputer, or you or your PC's administrator, you had to get the CD-ROM. You had to install it. That was a total pain. It was a tax, but you could keep your data there. You could make sure that you knew what was going on. Your system had, in many ways, more integrity than our modern-day connected devices do. Where they can be updated behind your back and things can go wrong or sideways and there are all these third-party tracking.
+
+I wanted to get back to the user having power through privacy, shields—it’s what Brave calls them—and the power in your pocket, which is the supercomputer—the MicroUnity superscalar architecture from the '90s, yet it's underutilized. Software is not 10,000 times better even though the processors are that much faster. Something's gone wrong because even in the early '90s, Silicon Graphics operating system was getting bloated.
+
+We're talking about going from 8MB RAM to 16MB RAM. I mean, just a ridiculous small amount of memory and yet the software was getting bloated—X windows, Motif, and all this garbage. Software has not gotten better. It's in some ways gotten worse. I wanted Brave to wave the flag of better software, tighter software, software that defends your privacy because it gives you economic bargaining power. A chance at changing the topology of the network where, again, there's always going to be central powers that come and go and accumulate wealth, but if the users can fight back, they can have, let's say, other options like cryptocurrencies, tokens, and smart contract systems.
+
+David: I was going to say, maybe for the majority of people out there when you were starting Brave, economic power, I get it. Like Google, Facebook, they've got power. How on earth would I ever as an individual have economic power?
+
+Brendan: It wasn’t our pitch. Our pitch was private, fast, and low battery use. In Mobile World Congress 2019, this Greenspector company from the UK came by and said, yeah, we've measured, you're the least power hungry browser on Android. It was awesome because it confirmed our own research team's results. You have to sell what people feel every day. What they feel is that page load lag. They feel that the battery being drained, they feel the data plan. Even though they may be on an unlimited data plan, there are still ways they perceive it.
+
+David: I imagined it feels real to people that like, I can make money with my attention on the internet. It feels very real to people.
+
+Brendan: It's so funny because we have different tiers of ad rate cards around the world because it's easier to get ad buyers in the US and paying the most in the UK and Europe after and so on. We have a lot of fans around the world who are in lower tier regions, and they aren't making as much, but it may go a longer way for them.
+
+It isn't like we're trying to make people rich, we're doing a pump and dump. We're trying to make users get 70% of the revenue of a growing business. If you look at ad, online and digital advertising, it's still $300 billion-plus a year. That's a huge business. If we just get 1% of that and we share 70% of that with our users. That's $2.1 billion, right?
+
+Ben: To be super crisp, to make sure listeners understand it, an ad is displayed to me and this is an ad that's purchased through the Brave ad network. Where the advertiser is willing to say, look, I know that this isn't going to do a bunch of crazy targeting stuff. This is just going on to the Brave ad network. A user views that ad and then 70% of the revenue from that ad shows up in the user's wallet in the form of the Basic Attention Token.
+
+Brendan: Yes. Though when you say network, people think of tracking because networks have lots of ways to track. What we do instead is we put all the ads into a catalog through a link to the creative for the ad, the image, webpage, or video that's in an Edge cache somewhere. We don't consider that an adversary. The link to the ad and some keywords about the ad go into a catalog and the catalog gets updated to a large number of people in each region. It gets updated several times a day the same way for everyone. You are not identified by downloading that catalog.
+
+It's like getting a safe anti-phishing list, a safe browsing list, or an anti-malware site list. That's how we solve the problem of ad networks that today in conventional ad tech will track you on the front side and take all your data even before they've decided what ad to show you. We do the decisioning in the browser-based on this catalog. All the machine learning on the mother of all data feeds I mentioned earlier is in browser. It's only on if you opt into the system, by the way. It's not turned on normally. That's what does the ad matching.
+
+Ben: I see. I was definitely buying some ads on Facebook for startups I was involved with in 2015, 2016 and it was unfreaking real the level of targeting. You could target one person. As an advertiser, you're like, this is magic. I can acquire exactly the customers that I want. Of course, that's at the expense of the users. Facebook has walked back a lot of this and made it more broad. Is there some measure of an advertiser being able to tell you, hey, these are the types of customers I want, or is it like buying a billboard on the highway?
+
+Brendan: We're big enough now. Even when we started, we were big enough that we can do some very core segmentation which does not let people be re-identified. The problem with the targeting systems you mentioned is, they can, like you said, target one person. I think LaTanya Sweeney said in the US if someone's birthdate, gender, and zip code are known, they can be individually re-identified.
+
+Obviously, we're not going to give out any information to advertisers ahead of time, but we do have ways of sampling our audience to very coarsely segment it so you can address those segments. Some of those keywords in the catalog express those segments. They're basically segmented and then fires.
+
+Separately, machine learning in the browser develops an opinion about you from your search queries, your clicking, what pages you visit, and all that stuff about what segments you might fall into, and then the matching occurs. We're using support vector machines and Bayesian, fairly simple stuff. It doesn't burn your battery. We don't need TensorFlow or a cloud supercomputer to do this kind of machine learning. That does a pretty good job.
+
+A lot of ad tech is not as precise as you think. Facebook said they could target that person and they could often but sometimes there were fraud actors. Not so much on their native apps but on publisher pages. There's a ton of fraud in online digital advertising. JavaScript is used on these publisher pages.
+
+I designed JavaScript on purpose—this was very intentional, I think it was the right decision—to be a mutable environment. Its global environment. All the standard objects and the document objects are mutable. You can overwrite them, you can mock up look-alikes, and you can forward load something that looks like the next year's version of a standard object. JavaScript mutability was a huge boon. It probably wouldn't have survived without it, but it also means there's no security property called integrity.
+
+It means that when the publisher is loading all these third-party tags from Google and others, they can fight each other. They can override each other, they cookie stack, they cheat. What's worse, you can take the whole publisher content, scrape it into a fake environment in a bot, and the bot pretends to be a user clicking on the ad. You get paid the ad revenue because the ad buyer didn't cross-check the publisher's ID in Google's Ad Exchange, which is a fraud operator against the true New York Times ad ID. It's bad.
+
+Google still gets the fee when this advertising money is stolen by fraudsters. It makes Google complicit with the fraudsters, to some degree. It misaligns the interests again, it's a conflict of interest.
+
+David: All right. Listeners, for our second sponsor of the episode, we are so excited they are back again. One of our favorite companies of all time in the Acquired community, Modern Treasury, the worldwide leader in payment operations. You know them. We've talked about them many, many times on this show. They've been on the LP show. We've been interviewed by them. Their payment operations platform is legitimately the fastest way to build products that move money, which is basically any type of product you would want to build these days.
+
+Ben: Marketplaces, proptech things, fintech things, a lot of these things involve moving money around.
+
+David: If you want payments in your software product, the Modern Treasury APIs make it super simple to do things like initiate payments, monitor payments, reconcile payments. All the stuff that was done manually by finance teams and software teams before Modern Treasury.
+
+Ben: Imagine all in one place. The finance team sees a version of it, the developers can see a version of it, the PMs see a version of it, payment ops people see a version of it, but it's all in the application. It's all a single source of truth. It's pretty cool.
+
+David: So great. They have direct integrations with just about every major commercial bank out there. They abstract all the complexity of integrating those rails and you can automate the money movement that you want to do with your applications super easily just via their APIs and web app. Because they don't sit in the flow of funds, payments settle literally up to 2x faster than before, which is crazy.
+
+We talked about that on the Bitcoin episode. You just send it off these ACHs and you're like, well, I don't know what happened, but Modern Treasury makes that at least a little bit better. They're used by fast-growing companies in all the economy's most important sectors like Gusto, Marqeta, TripActions, ClassPass, and BlockFi. They all use Modern Treasury for money movement use cases like automatic payouts, direct debits, incoming payment reconciliation, digital wallets, and more.
+
+When you build money movement apps with Modern Treasury, your product engineering and finance teams can focus more on the core product instead of figuring out all of those nuances. You can learn more by going to moderntreasury.com/acquired. Just tell them that Ben and David sent you.
+
+Ben: Thanks, Modern Treasury. Okay, so there's a variety of value propositions here. There's privacy, there's speed, which it sounds like speed was the first one. There's make money from your attention on the internet. You're rolling out a bunch more features in Brave at a compounding rate now that it's turning into much more than everything you've described so far with its own search engine, with its own native wallet capability.
+
+You're at this unbelievable milestone now of having accomplished 50 million monthly active users. What were one or two of the tipping points along the way where you realized, oh, this particular value prop really resonates and accelerated the growth?
+
+Brendan: Some of the stuff was early mistakes you make. When you're a small startup, you choose to use a shortcut. We used the Electron framework when we switched from a private version based on Mozilla's Gecko engine to Chromium Blink.
+
+Using Electron was a mistake. It wasn't designed for a browser. It turned off the sandbox that was horrifying to discover. It's kind of bloated and replaced a lot of middleware files in the Chromium code that Google was breaking through internal API shifts. We finally got on to a proper, well-maintained Chromium fork, including the front end.
+
+The downside of this is we look a lot like Chrome. We have the Brave lion icon for shields, we have the triangle for BAT, we have our own look for the tabs, but it still looks a lot like Chrome. It's tabs on top. It's got Chrome extensions, which can be loaded if they don't use the Google account system I mentioned, that's for tracking that we disabled. But it's still a little bit too Chrome-y, and yet, I think it's worth it because that helped us get users off Chrome.
+
+Until we really did that rebasing on the front end of Chrome, we were paying growing maintenance costs on all this Electron forkage. Our users were suffering because it wasn't fully Chrome. There were extensions that needed to be manually supported or ported and things weren't working right. We switched to a more complete Chrome fork like a lot of browsers use. I think Vivaldi is an exception. They have a React Native front end and they've sunk the cost to stabilize the middleware.
+
+David: Which is so interesting. If any upstart browser team and leader were going to build your own stack, it would be you.
+
+Brendan: It takes a big team.
+
+David: And you've chosen not to.
+
+Brendan: I have 10 people in the first seed round of Brave. What am I going to do? I knew how to do 10 people out of AOL with the Netscape, Mozilla codebase because I'd worked on that code base with hundreds of engineers at Netscape, AOL. Those people were still working on it for a while. AOL did lay off a lot of them but kept some on, others went to IBM. Even though we had to shrink the workforce, it was bigger than the 10 people I had at Mozilla in 2003 when we spun out.
+
+Until we got the search deal in 2004, I couldn't really hire more people. We were burning down the $2 million from AOL. It was a similar situation with founding Brave. I had to take 10 people. I had to use some existing codebase.
+
+We did start with Mozilla Gecko in a multiprocess sandboxed framework called Graphene that was part of Firefox OS, which I'd worked on, but it just lost on this big spreadsheet we did where we just scored it against Chromium Blink and it just lost on too many rows. What are we going to do for DRM? At the time, Firefox has a custom Adobe deal. We can't partake of that even if we use the Gecko source.
+
+We have to go get Google Widevine, which Google made free as in beer, even though DRM is a close source. It was bad, but you have to have it not just Netflix, Amazon Prime, Hulu, et cetera. What are we going to do? Google is giving it out, but they're really only giving it out for Chromium-based browsers and so we did that. There were just 100 other paper cuts or major issues like that.
+
+Gecko was never big on mobile because Mozilla was never big on mobile. We needed all the mobile WebKit lineage that goes into Chromium Blink that's still used on mobile web, stuff that preceded standards. At the end of 2015, we just said, got to switch. That's when we switched to Electron, but that had its own costs. And yet, as a small team, we couldn't do the full Chromium fork.
+
+As we grew, we did. By (I think it was) the end of 2018, we came out with Brave core-based browser, which is our maintainable version of Chromium Blink and our own front end still close to Google's. That was very popular, all the extensions worked, and we started growing faster. We've doubled for five years in a row or more than doubled in some years.
+
+Ben: So 50 million users, that seems like the largest self-custodied crypto wallet application in the world and that's one way to look at it. The other way to look at it is it's this tiny fraction of the overall browser market share.
+
+Brendan: Yes.
+
+Ben: I haven't heard anyone talk about the browser wars and market share in a while. Do you know what that looks like today?
+
+Brendan: I mentioned, Chrome is alleged to have 2.65 billion users. Some of these users have gone away. I uninstalled Chrome. I found that there was a secret installer called Keystone that was messing my system up. Somebody wrote a blog post about this. Google denies it, but just, phenomenologically, life got better when I ripped all that out. It was sort of hiding itself in the OS, it was kind of creepy.
+
+What matters in browsers, and you mentioned it earlier, is that every 10 years there is a change the guard, there's this rapid evolution, and then there's this lead user effect. Eric von Hippel of MIT described this. The lead users invented the plumbing toolkit. They were homemade by machinist plumbers, and they became standardized and big tools companies built them.
+
+Lead users invented fiberglass surfboards, a lot of hot rodding like Tom Wolfe described. Windsurfing, user-generated in some ways, Bill Bowerman, Nike. Lead users, these are people who are not just creating something to go make a buck and seeing a need in the market and making a widget. They are users of their own products. They love the product and they understand what it's doing or what it needs to do.
+
+Having those lead users favor Firefox in its day or Brave now is super important. The lead users I see are very generative, some are controversial are working on crypto projects, blockchain projects. They're working on decentralization.
+
+David: That's not going to be controversial on this podcast.
+
+Brendan: Yeah, I mean, people are exaggerating how much energy Bitcoin uses and also not aware of how Bitcoin can use energy that otherwise goes to waste, but we're not Bitcoin-based anyway and there are new blockchains that are much more efficient. The whole thing is, to me, kind of a needle to the [...] logical.
+
+David: Yes. Not a controversial statement on Acquired that the most interesting founders, technologists, et cetera are, by and large, focusing on Web3 and crypto right now.
+
+Brendan: Chris Dixon of Andreessen Horowitz wrote this essay about Ethereum the other year and talked about how he saw the developer, animal spirits just rallying around it, and it's true. Then Ethereum got slow and the fees are too high, but in some ways, it's like Unix. The Ethereum virtual machine now, the bytecode, and the smart contract system with some transportation cost—if it's not directly portable—is supported on other chains, Polygon obviously.
+
+Avalanche's C-Chain is an EVM compatible, like the Unix system call table being copied into different flavors of Unix. This designed DNA spreads easier than code DNA because code has hard requirements, not all of which are known or tested for, but design can be copied. In this case, even with the EVM compatibles, the code can be tested for interoperation, just like we had different NFS servers that had different code lineages interoperating and different TCP/IP stacks interoperating.
+
+I think Dixon's essay was on point, even though people decry Ethereum's slowness and high gas fees. The new chains are just super exciting to the extent that you can port your code, there are EVM cross compiler and interpreter solutions on Solana, and there's the C-Chain and other direct EVM compatibles on other chains.
+
+Ben: It seems like your strategy with embracing not just the blockchain, but becoming an economic player in the blockchain ecosystem has been initially, there was the Basic Attention Token. I don't think that those were actually deposited on-chain into Ethereum wallets. Is that correct?
+
+Brendan: In our system, because of regulations not just in the US, if we send an ad revenue share to some unknown self custody wallet, we're going to get in trouble including big trouble if it's somebody named Osama bin Laden. There's not just FinCEN, which looks at money laundering carefully. People grumble about KYC, Know Your Customer. Why am I identifying myself with a custodian in order to get my Basic Attention Token? It isn't KYC for its own sake and it's not just a one and done. They have to, sometimes, check again.
+
+In fact, there's a problem right now where they're making some people in Europe fill out a survey to do more diligence. KYC serves as a means to an end. The end is anti-money laundering. It's identifying all these flows. Some of the crypto noobs also think, well, I should just go on-chain and I'm anonymous. No, you're going to get re-identified through blockchain forensics.
+
+Ben: In the same way that it's not hard based on a zip code, gender, birth date, or whatever to singly identify you, at some point, someone will be able to just run your wallet or wallets—it already happens today—through some de-anonymizer and be like, oh, I know who this is.
+
+Brendan: Right. Our system with users getting ad revenue share and publishers then getting creators on YouTube getting tips or recurring donations, just 10 of those or so could fingerprint you as a user. If there are a few bits each, that's enough bits to fingerprint you. It's a unique identifier that can count everybody in the world. If you have enough observation points on side channels, you can put things together.
+
+We realized that we couldn't go on-chain, not just because it was too costly, but because it would fingerprint the user. The answer in the long run is zero knowledge proof. Our next generation ad system, which is aiming at Solana, is called Themis. It uses a blackbox accumulator in the browser to build up an authentic cryptographically secure ad performance set of numbers that can then be put into a zero knowledge proof system directly on-chain, and the ad buyer can verify for themselves from the terms of the proof that the ad performed.
+
+That's the magic of zero knowledge proofs. By verifying it, you can believe the truth claims. We're trying to move on-chain with that very soon with Solana, which is exciting, but we're still burdened by the regulations that require not only the anti-money laundering but also the office of foreign asset controls in the US don't send to a self-custody wallet that's owned by somebody on the FBI's top 10 list. You'll do federal time for that.
+
+People get mad at me like, why must I KYC? They think I'm some kind of a crypto hater. No, I love on-chain direct. I've done it. I've paid one of the auditors for our smart contracts. The Basic Attention Token got paid on-chain and it was great, much better than sending a bank wire. But there are problems if you want privacy right now and you want to comply with these regulations, which have pernicious penalties.
+
+We're working toward a more decentralized future and we'll have to see how it goes. The great thing about crypto is I see a lot of, now, banks. Jamie Dimon did a hill turn from saying Bitcoin is a Ponzi to, oh, my blockchain is great. Family offices and companies are into crypto. The old big tech guard aren't—though Facebook tried with Libra, now Diem, but really got hurt. Politicians didn't like Facebook, and it wasn't really clear why you'd want it instead of another existing crypto.
+
+Ben: The initial thing you did was introduce the Basic Attention Token and you could accumulate that without going through any KYC. But if you were going to then send it to a creator, they would need to have a KYC'ed wallet.
+
+Brendan: But you wouldn't. As a user, you could still be anonymous.
+
+Ben: But it seems like now, you first forked Metamask to make a Brave wallet. Now you're building your own native Brave wallet directly into the browser, which is totally a thing that Safari could do, that Chrome could do, and it doesn't seem like they're going to do that for a long time. You're going to be the first browser with a native secure on-chain hot wallet directly baked into the browser.
+
+Brendan: Let's refrain from the early days of Firefox. Opera had it first. You can say that again because Opera did have a wallet in 2018.
+
+David: No way. Opera has a wallet, that's so cool.
+
+Brendan: We were worried because they came out with a self-custody wallet in the Dapp Store in 2018. Brave's been growing, so I had to get more people to do the wallet or I had to get a co-founder to go lead the wallet effort. But in 2018, it wasn't going to happen. On the other hand, crypto winter happened and I think that took the steam out of Opera a little bit.
+
+Opera still has crypto and they're talking about a Polygon deal they pre-announced. I think Opera will always be there like Brave even though it's now Chinese-owned and a little less trustworthy, just in Western eyes—I'm not saying anything personal here—yet, Opera will be innovative. But Brave is going to go faster and we're going to do things that cut across the self-custody versus custodial usability trade-off space because it took 25 years to train people to use username and password logins. Maybe for real banks, Coinbase, and so on, you have to have a second-factor authenticator app or something like that or a YubiKey.
+
+That's almost as hard as self-custody. It's a little bit safer and then if you lose your private key, your word list, your backup, your Cryptosteel with self-custody, you've lost. Whereas if you forget your password, lose your YubiKey, and lose your authenticator app or the phone it's on, you can probably convince Coinbase you are you and they can reset your password for you.
+
+It's complex enough now though. I think self custody has a shot. Getting things to be useful, getting the Basic Attention Token to be useful, including that virtual kind you earn without KYC-ing because you're going to send it back to your creators who do have to KYC for these AML and OFAC reasons. That we can work on with the wallet.
+
+We're going to make the wallet blend with the Brave reward system. As much as we can, we're going to make it multichain. We don't have any religion about blockchain. We like Solana. We agreed to make it the default for multichain dapps where they don't express a preference for default and the user doesn't.
+
+That choice of default the browser can make, that's important. That's how search deals get done. That's why Google only pays for default because they're king of the hill and they figure they'll get the traffic anyway, that's what they say. Whereas Bing, DuckDuckGo, and Yandex do search deals with browsers. Even if they're not the default, they'll pay for traffic.
+
+David: But even still, a lot of people are going to get wallets for the first time. This is pretty awesome.
+
+Brendan: It is. It's exciting. You've seen what happened with MetaMask. They took off, very cleverly at the time, Uniswap did its V3 (I guess it was) and just started getting a lot of swap action that made them a lot of money. That was from people using MetaMask and self-custody, I guess. I've not got a good figure right now.
+
+Most of those users don't have a hardware private key device like a Ledger or Trezor. They're keeping that wordless safe in some safe place, I hope. I talked to somebody, an anonymous user of Brave in Africa who was a HEX fan, and they were wondering why the HEX founder was feuding with us? Because he's kind of a nut, that all blew over. I said, how do you use it? He said, oh, I've been buying crypto for five years. I use MetaMask, or four years I guess it was. I said, oh, do you have a Ledger or a Trezor? No, I'm really afraid I'm going to lose it all.
+
+Ben: Sure, you can recover access to the wallet, but that still means you're piling up wealth in a browser extension, which is known to be hackable, or at least not as secure as if it was in a browser itself. On top of all this, it's always connected to the internet.
+
+Brendan: The extension is just weaker both in terms of its powers, but also its security model. If it's doing its own secure store for a private key, it's just on a weaker footing than a native app by design. We see this all the time. If you tweet and you mention MetaMask—I joked the mask that is meta because I didn't want to say it, you'll get all these phishing support accounts pretending to be your buddy.
+
+Impersonating my friend, David Walsh, who was at Mozilla now is at MetaMask, and they'll try to say, DM me or go to this Google form and we'll help you get your key recovered. Sometimes the topic wasn't even about lost funds. You go to the Google form and right above the fine print from Google, it says, don't enter any personal private data or passwords in this form, is a field saying, give us your 12 words or 20 words. These fraudsters just swarm on this.
+
+Ben: There are bad actor companies in the ecosystem right now that are trying to tell you, hey, for a nice experience, to have all of your wallets aggregated here, type in your secret phrase from your local self-custodied wallet into our thing. I've seen this on Coinbase, but I know there are others. We are not yet trained on what these secret phrases mean in the way that we're trained about passwords and it took 20 years. It took 20 years to train on credit cards. So we're telling people, hey, this is like a username that you can type in anywhere, and it's completely defeating the purpose of that as security.
+
+Brendan: Same thing for QR codes. QR codes have become short hands for links. I go to my neighborhood pool, I can scan a QR code with my iPhone, and then sign-in on the web form. But QR codes are also used, especially in crypto, for spelling a private key, and you should not be putting them on paper for somebody to scan ever.
+
+You're right. There are, let's say, bad or sketchy actors who will try to collect these things or passwords and email. There were services over the years—there still are—that will say, hey, we'll read your email for you. In fact, DuckDuckGo is building one, but I think they're keeping it clean. It would blow them up if they cheated.
+
+They're just trying to strip trackers from your email and you get a duck address if you want it, but better if it didn't have the clear text of your email messages at all. In Brave, if you use webmail like Gmail, we block those trackers at the endpoint where the secure session, the TLS session terminates. This whole thing about dual models—something's a public key or a public link, something's a private key, and they're both getting forced through the same UX metaphors—is a problem.
+
+Training users, maybe getting to a better state of play with hardware wallets where they aren't just this anxiety-producing dongle that you're worried about. Did it break? Did I forget my pin? Did I send it to the wrong address? You probably want these things to be more like a phone or something that's more useful to you in your digital life. You don't want to have anxiety every time you transact. You want to have a sense of security and that you're winning.
+
+That's the other thing I would say about Brave. We can make your built-in wallet a positive-sum game. It can collect non-pump and dump yield opportunities from DeFi if you want to put some assets in. It can collect [...] revenue share. That's another positive-sum game we already have. We're trying to make crypto be part of your daily life in a way that doesn't provoke anxiety and not being phished—did I lose my PIN or my passphrase?
+
+Ben: You bring up this just ever-present trade-off in computing, which is security versus user experience. I frequently think that when I'm doing something in crypto versus I'm doing something in the regular bank TradFi ecosystem, and my bank, for better or for worse, has taken a lot of the headache away and I have a pretty good user experience. It's not confusing.
+
+I know what I'm doing when I'm wiring money from one place to the other or making a transfer from one account to the other. I lose some of my liberties because they have the option to remove my assets if they determine that I've done something illegal, even though I'm like, well, hey, I didn't do something illegal. If they determine that I did, they can seize my assets, they can make a profit on me. They can arbitrage the cost of capital to their returns when they take my deposits and deploy them elsewhere.
+
+I should be getting all that economic upside, but what I've gotten in exchange for giving up my liberties and my economic opportunity is a pretty good user experience. We're at this place in crypto right now where we've taken a hard left and we've said, I want to own everything. I want to be hyper-secure. I want to have all my privacy. What we're left with is...
+
+Brendan: Be unbanked, yeah.
+
+Ben: Yes, also be a bank. It is a brutal thing to have to manage all this stuff right now.
+
+Brendan: Yes, this calendar year is going to be big because we're not only adding more chains—I think I agree with Vitalik—we're not going to do complex multichain transactional models, so people are working on those using threshold signatures. I think the main thing is we'll have the chains people want to use and the yield farmers go where the returns are good and the users follow. We'll make that all as automatic and convenient, but you'll still have to turn it on and we'll have safeties on it.
+
+That UX will take a lot of work to develop because design is still an art, it absolutely is an art. The space is too large to do A/B testing in any credible timeframe. You have to call some shots, get some users telling you what to do, collaborate with those lead users I mentioned earlier. Then I think at the end of this year, we'll have a wallet that will be super awesome, not only for using crypto, DeFi, and so on, but also, if we do it right, some of our custodial partners can virtualize your plastic from your wallet.
+
+Like privacy.com does like the Apple card does, they can give you a MasterCard number from a block that they allocate from that isn't your number. Your security is better. It's like the generated email addresses that Apple and others are doing. If we virtualize the credit card, then we can actually put ecommerce in the browser. We can deconstruct Amazon. Every site—without having to change its merchant JavaScript, which is not going to happen easily—can have an option where you can use something like a virtual credit card that could even be topped up with crypto or draw on crypto.
+
+Ben: I've got one question for you as it pertains to this decentralization versus user experience topic. Moxie Marlinspike pointed out in his recent post that, "To make these technologies usable, the space is consolidating around… platforms. Again. People who will run servers for you, and iterate on the new functionality that emerges. Infura, OpenSea, Coinbase, and Etherscan."
+
+My question for you is, do you think it is the case that the user experience that users want and the developer experience and ecosystem speed that programmers want necessitate these centralized chokepoints no matter what generation of the web we're on?
+
+Brendan: It's hard to beat a server when you want to do something like index Ethereum's history into a database with [...] ways of querying it. I'm not going to do that on my machines. I'm going to use Etherscan or something like it. If Etherscan has trackers or bad ad tech in it, I'm going to use Brave and block those, but it's hard to beat a server sometimes.
+
+I agree with Moxie. I like Moxie a lot. I met him once at Mozilla in the old days. He and colleagues did this blind context matching system contacts—I should say like your address book contacts—for Signal because they had this problem that your friends are on Signal, Signal uses the phone number as identifier, but how will they help you find your friends without reading your address book which is a privacy problem?
+
+The way they did it used [...] blind signatures, hashing, and so on. It's clever and it runs in a Secure Enclave on the server, which is something we're also using at Brave. I agree with Moxie's essay. There's a larger toolkit from cryptography, the original crypto, which some of my cryptographer friends are still mad. Crypto has been an X factor of the currency.
+
+There's a larger toolkit and it works on servers on centralized systems, as well as in decentralized systems. Decentralized systems, even Solana, there's always a trade-off. If you really want certain guarantees and certain latency, you're going to want a server and you're going to want even the network to that server to be provisioned a certain way. So there's no free lunch and there's a larger universe in which, I think, blockchains and peer-to-peer networks make sense, but also servers will endure.
+
+That's why I get annoyed when people think that Brave is too Web2. Web3 is not going to replace Web2. It's going to extend it in a way that eventually, perhaps, if it's like McLuhan's Laws of Media, it's going to mock and torture Web2, but that's far in the future. In the meantime, it's going to be extending it so that we can get users using it. There are ways that users will want to use it that are going to be like Etherscan, a proxy form like in Infura runs, or Bison Trails. There'll be servers you'll want to go to.
+
+But if you have these cryptographic protocols, if you have strong muscular clients like Brave, if you have that market power as a small user through essentially unionizing with other users of that client, then you should be able to get better privacy, better security properties out of the server. It shouldn't just be raiding your data. It shouldn't be just betraying you in some way wallets are whispering in your ear. It should be a fair deal. That can be done with cryptography broadly construed, so I liked Moxie's essay quite a bit.
+
+Ben: All right, for our final sponsor of the episode, we have a very special company to tell you about that is near and dear to the Acquired community's heart, Mystery. Last we left our plucky heroes at Mystery, you can tell David wrote this copy, ladies and gentlemen.
+
+David: They are the definition of plucky. We first said that about Snapchat. I don't think you can call Snapchat plucky anymore. Mystery are the new plucky heroes.
+
+Ben: Even if Mystery was Snap-sized, I don't think they would shake their pluckiness.
+
+David: Absolutely not.
+
+Ben: All right, last we left Mystery, they had just come on the LP show to talk about pivoting from facilitating these magical nights out for consumers before COVID to magical virtual experiences in the home while everyone was stuck in lockdown. For folks who need even more of a memory jog, this is when David and I had a two-person Acquired Christmas party a few years ago, we used Mystery to have the party and we ended up in a fencing match. We will link to a photo in the show notes. It was a blast. This was Mystery V1.
+
+David: The amazing thing is that pre-presaged everything that was to come for the, now I think, final iteration of Mystery. Ben, do you want to tell everybody what Mystery is now?
+
+Ben: I would love to do that. It turns out, a bunch of consumers who did these virtual in-home experiences in April of 2020, also worked at places like Amazon, Microsoft, Apple, McKinsey, Uber, Twitter, and Autodesk—the list goes on. While virtual experiences with their friends were fine, what really needed upgrading was the virtual experiences for their teams and their happy hours in their workplace.
+
+After 17 times of already logging on to Zoom together that day, everyone was supposed to have fun and not strangle each other in their 18th Zoom. It can be tricky, so enter Mystery. Mystery takes over every aspect of those terrible team happy hours from scheduling, to planning, to executing, to not even tracking the engagement and employee retention that theoretically they're helping afterward, and it makes them—in David Rosenthal's parlance here in the ad copy—100% not suck. Take that to the bank.
+
+Flash forward to today, from April 2020, they've executed literally tens of thousands of events for not just those huge companies mentioned above, but companies of all sizes, including Modern Treasury, Convoy, and other friends of Acquired. We are so excited for them. It's been a crazy ride along their journey.
+
+David: They have gone through three pivots now. They have executed tens of thousands of these, but all those companies we mentioned—Amazon and Microsoft—are major customers. This story is just incredible. We are so happy for these guys.
+
+Ben: You should have more fun at your company and Mystery can help you have that. I don't know if that's their tagline. I'm making that their tagline. If your company could use someone to take all the headache of events off your plates, I know there's somebody at your company who's not supposed to be planning the events but is, you should check it out.
+
+Trymystery.com/acquired, you can click the link in the show notes. Our thanks to Shane and Brennan. Everyone on the team there, a big Acquired thank you, and go check them out.
+
+David: Definitely.
+
+Ben: All right. I want to move on to our grading section here. Even though this isn't a traditional Acquired episode or even necessarily where we've told the whole history and done our tear-down analysis the way we typically do, Brendan, I am curious about your take. What does A+ look like for Brave, let's just say, three years from now? In some ways, it's an epoch away, and other ways, it'll be here as soon as we know it. What does success look like for the company?
+
+Brendan: If we keep doubling or better, 3 years is 8 times 50, so it's 400 million users. Once you get to that scale, you start to get distribution opportunities like being on phones. Pre-installs aren't really happening outside of the apps from the OS superpower like Android, Google, or iOS Apple. But Samsung's out there and there are new phones coming up in the world. There's always a lower end of the market that's getting better and thanks to the hardware getting better and trickling down.
+
+I would like to see us get to that scale because then, I think, distribution could go in directions that right now is harder to do organically and will cost you a lot if you have to pay for it, but that's kind of a mundane business thing. I think if you get anywhere near 400 million monthly users, you have enormous clout, especially if the lead users, still in standards. Standards matter still because a lot of businesses want to not only compete, but cooperate, the coopetition model.
+
+Web standard, in spite of Google's dominance and somewhat strong-arm tactics, you still get standards evolution. Crypto is—for each blockchain—its own set of standards, often run by a core team. But there's, as I said earlier, greater de facto standardization on things like EVM compatible chains, smart contract systems, or things you can do with compilers and interpreters, even if you don't have an EVM worker-like in your node, in your network.
+
+When we get to the scale toward 400 million more users, we will have opportunities to do things—including with Basic Attention Token—that we couldn't have done out of the box earlier and that would look like having something more competitive with Google that's decentralized. We're not just aiming at Google. That's like driving by looking in the rearview mirror. Google is a 100-year company, so was General Electric, but it ended up a tax dodger and a subprime lender. This is not a good ending.
+
+Thomas Edison is spinning in his barrow. Google may end up that way sooner or later, but we're looking at a world where users are sovereign. That's the vision I mentioned earlier. You have these machines. Without being a burden sysadmin, you should have say over them, you should have benefits from them.
+
+It's not just economics in some money-grubbing way. Economics really, the Greek word, means something about home economics, at the home, or the scale of human life where you live most of your life. Things have become very fraught and dehumanized at larger scales. But if we can get people operating better at smaller scales, then I do believe this will be good for the world.
+
+I'm not just talking pie in the sky, Hobbits in The Shire stuff here. I see this with the creator economy. I see this with the YouTubers, the other creators, and with NFTs for all the clowning that goes on with NFTs. Actually, we will be looking into NFT as a basis for further tokenomics for creators in this new year.
+
+We want to see fans and creators directly connect and we want to see them do it without being demonetized or interfered with, censored, and all that stuff. If this can be scaled up, it forms all these little networks that have these logistic curves that have their exponential phases that everyone loves. People should want this for good business reasons, but you can't rate it through ad tech or tracking. You have to have a better platform and better network for it.
+
+You have to have crypto in both senses, Moxie's cryptography and cryptocurrency or blockchain. I think Brave at 400 million, we can actually make this real. We have 1.3 million creators verified. We would have tens of millions of creators.
+
+Ben: And that means people who have KYC'd themselves so that they can receive tokens?
+
+Brendan: Yeah, or if enough people have self-custody, maybe we'll hang self-custody wallets on the creator's side and you can just do an on-chain send on a fast chain with low fees. You don't have to go through KYC at either end. That was always what people told us to do. You should only do direct on-chain.
+
+I looked at it. Even with a Bitcoin prototype, it was too expensive. I talked to people like Balaji of 21.co, which Bitcoin bought. I talked to the OpenBazaar founder who actually DM'd me first. He said, we're thinking about adding BAT, and I said, aren't you Bitcoin without a fee? Why do you need BAT? He said, well, nobody wants to send Bitcoin, they want to hodl it, which is very true and which at the time, it would have been a good strategy. Just sit on it. Don't shave those Bitcoins to send scraps to your favorite YouTuber.
+
+People will send Bitcoin. People are using Lightning or a Jack and so they are all excited about it. There are lots of options for this, but getting people to do direct on-chain sends is still challenging for the UX reasons we mentioned, the usability, the security, the familiarity on both the sender and the creator who receives it. But with Brave at 400 million, we can hang self-custody on all sides of our ecosystem, even the advertiser side, the full triangle. People can go peer-to-peer. They don't have to go through custodians if they don't want to.
+
+Like I said, if you're worried about law enforcement, which you shouldn't be unless the government's gone bad, then blockchain forensics and exiting on a regulated exchange will still let law enforcement do what they need to do. We're not trying to stand in the way of law enforcement doing what it should do. But this idea of getting to a big system of direct on-chain send, by starting there and limiting it to only those cases or limiting it only to Lightning, which I was told to use before it was ready years before it was ready, doesn't make sense. We've gone the other way. We're pragmatists. But as we grow and as we keep the custodial options going, we'll add the self-custody options and see what wins.
+
+Ben: It makes total sense. I'm sure you've thought more about the success case, but what's the failure case? What are the existential risks at this point?
+
+Brendan: There are always risks of some bad macro event or some bad crypto event. Crypto gets banned in the US or something like that. Don't think it's going to happen. One of the reasons is because I do see too many rich people partaking through their family offices and so on.
+
+I do think there's a risk there and I can't quantify too easily, so we'll just try to carry on. It's hard to hedge anyway. I think there are risks with big tech. Big tech could still misbehave and it still has even political power, though it's been getting beaten up more and more by both parties as time goes on, but that's a risk.
+
+David: Do you think that Facebook, Google, or any of the others could ship a wallet in Chrome, for instance, or actually really embrace this?
+
+Brendan: I bet there's somebody at Google who's looked at this. I know Google had a wallet or may even have a wallet team that does some outward bound stuff and they never connected with Chrome, they never put it together. PayPal is going to do their own stable coin or whatever.
+
+You're going to see more wallets and maybe you'll see them in big browsers, but I don't know if they're going to get into the system that we're getting into early, which is the Frontier. That means they may just be stuck in the old world. It's very much like the Age of Discovery.
+
+We're going to be building the Wild West, then the lights will come in, the streets will get better paved, and we'll be there already. We'll be selling pickaxes and shovels. The old world is back there if the Ancien Regime kind of corrupt, unwilling to innovate. Maybe they stole the gold, but their banks then stole it from them through compound interest.
+
+David: I love it. You're the sans-culottes.
+
+Brendan: The Fugger family made out, the Habsburgs did not. Google may have a wallet, but it might just be a me-too and it might be kind of weak when they do.
+
+Ben: Can you imagine the default switching from sign in with your Google account to authenticate with your in-browser wallet? There's just no way.
+
+Brendan: It really is hard for Google to innovate. They're just a big company. These big companies have their own problems, not just the innovator's dilemma, but at least that much. I just don't think they're going to be a huge threat, but they could use strong-arm tactics to hurt us for sure—all the bigs could. Then there's our own execution risk and our own competition with the growing new wave of privacy products where I think we have to just compete.
+
+Competition is good. We learn from each other. There's a marketing component as you grow across the chasm where you're trying to convince people who don't know, again, a search engine from a browser that your product is more private, it is faster, it's more trustworthy, and it's got other good properties.
+
+David: Who do you consider your competitors? Would it be like Square/Block or MetaMask?
+
+Brendan: No. We're trying to get people off of Chrome. That's a matter of getting people to see that it's easy to migrate. You can even co-browse for a while, you don't lose anything, and then you can cut the cord with Chrome. People switched from Firefox, that happens over time because it's going down, people can see, and there are problems there.
+
+We can get people off Safari, but Safari is still privileged and Apple's OS as in kind of tied, so that's hard. Edge is somewhat privileged in Windows, which is a little hard on us. We're competing, I think, for thought leadership with other privacy firms. There's Jumbo Privacy, which isn't really doing a browser, but it's coming up with stuff. It's another venture-funded thing.
+
+DuckDuckGo has been out there a long time. They built up quite a reputation and brand name. You see their signs in airports. They've done a marketing-first approach and gotten to a reasonable annual turnover, from what I understand. That's got to be considered a competitor because they're doing desktop browsers on top of mobile now. But we look at the pie that we're dividing up as very large.
+
+If you're taking users from Chrome, we could both take and not really interfere with each other. The worst-case to me would be Duck and Brave start blooding each other in some mixed martial arts match to claim the privacy mantle prematurely. That seems needlessly destructive, but it is difficult marketing across the chasm. You have to say we are more private, we are better, or you should use us because we're faster or more complete, we block these threats that the other doesn't. Some of that will have to happen. It's just going to have to happen for marketing reasons.
+
+Ben: All right, lightning round of carve outs. David, give us your first one. You and I will go first and we'll kick it to Brendan so he can think on his.
+
+David: I'm going to make it easy. My carve out is a book I'm about halfway through. I started reading because I saw you tweeting about it while you were in Hawaii. Project Hail Mary, Andy Weir. It's so good. Really enjoying it so far.
+
+Ben: It's so good. It makes me think about everything from scientific principles when I look around the world.
+
+Brendan: I don't know that book. What's it about?
+
+Ben: It's Andy Weir who wrote The Martian. This is his newest novel.
+
+Brendan: Okay.
+
+Ben: And it's a story told in such a way that it's really fun to let it surprise you as you read the book, so I don't want to spoil it.
+
+Brendan: Okay. Yeah, The Martian was good. Cool.
+
+David: Ben, what'd you got?
+
+Ben: My quick one is the second book that I read on vacation, which is Open by Andre Agassi. His co-writer or ghostwriter, I don't know the right term, but it's the same Pulitzer Prize-winning writer who helped Phil Knight with Shoe Dog, and it is written on that same page-turning thriller-style. Andre Agassi had an unbelievable career—ups, downs. Shout out to friends of the show, Jeremy over at Tiny and David [...] who at Capital Camp recommended the book to me, but it was just awesome. I highly recommend it.
+
+Brendan: I've not been reading enough and I owe a friend at Apple a read of his new book, which is this first novel. This is kind of negative, but I think it's important. Mike Shellenberger's San Fransicko is worth reading if you're from the Bay Area longtime like I've been because it ain't good. I remember much better decades in San Francisco and help come back somehow, but Mike diagnoses it pretty directly.
+
+I also would recommend an old book that a friend, who only reads old books, recommended to me which you can find a free copy online like LibGen, you can get it, it's called Dynamic Economics by Burton Klein. If you've never heard of Burton Klein, Burton Klein looked at how firms grow and how they start. [...] the skunkworks projects, he actually looked at Kelly Martin's team.
+
+He looked at the traitorous eight at Fairchild. He looked at the China Lake Sidewinder, the first practical heat-seeking missile development. He made some killer observations about structure, sociology, anthropology, hierarchy, about how firms go from innovation, to rent-seeking, to outright vampiric badness. He had four kinds of firms. Anyway, Burton Klein, Dynamic Economics. It's an oldie, but underappreciated and still very much relevant. I wonder if I should give Elon Musk a pointer.
+
+Ben: Brendan, thank you so much for the time. We're going to let you run. Where can listeners find you on the internet and Brave on the internet?
+
+Brendan: So brave.com, five letter English word domain name. We got it in 2015. We got it from the nuclear polka combo, Brave Combo. It's a Texas band, friends of Matt Groening, the Simpsons creator. He's put them in Simpsons season 17. They were honest musicians and we gave them bravecombo.com and paid a reasonable price.
+
+So brave.com is it. I'm on Twitter as @brendaneich. I'm on Reddit as BrendanEichBrave. I'm easy to find, brendaneich.com. I haven't updated in a while. That was a historic blog post, but some of them are still relevant to do with trust but verify, also web assembly, JavaScript stuff.
+
+On Twitter, the Brave handle is called @Brave. It seems to be search banned for some reason. I'm not sure why that is. We have @AttentionToken, that's another Twitter handle. We have @BraveSupport if you need support. You can always tag me, @brendaneich.
+
+Ben: Awesome. Brendan, thank you so much.
+
+Brendan: Thanks. It's fun.
+
+Ben: David, that was super fun. Brendan is such an internet legend.
+
+David: Oh my gosh. What a man for all seasons, literally.
+
+Ben: Yup. Listeners, thanks for being on the journey with us. Another fun episode. As always, if you want to check out more and you're like, I need more Acquired right now and there are not any new episodes yet, and you want to go deeper, go check out the LP Show. Search Acquired LP Show wherever you get your podcasts.
+
+Come discuss this and hang out in the Slack, acquired.fm/slack. We get a job board. If you're looking for your next thing, you're part of the great resignation, maybe you're thinking about being part of the great resignation, and you want to get a float your name for something, but you don't know what that something is yet, we also have that feature on the job board. Go to acquire.fm/jobs to find your next dream job. With that, our thanks to the Solana Foundation, Modern Treasury, and Mystery. We will see you next time.
+
+David: We'll see you next time.
+
+‍

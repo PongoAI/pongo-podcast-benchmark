@@ -1,0 +1,835 @@
+Ben: Welcome to this episode of Acquired, the podcast about great technology companies and the stories and playbooks behind them. I'm Ben Gilbert.
+
+David: I'm David Rosenthal.
+
+Ben: And we are your hosts. Today's episode is an interview with Uber CEO Dara Khosrowshahi, where he joins us from the Acquired home studio in Seattle. It's been a while since we checked in on Uber. They've gone through quite the transformation since our 2019 episode on IPO day. In the past 12 months, they've done over $30 billion dollars in revenue up from just $10 billion two years ago.
+
+David: That's not GMV, that's revenue.
+
+Ben: That is revenue. They have two businesses, as many of you know, that complement each other nicely in Eats and mobility. They've divested anything hardware, international, or that's too far in the future or speculative. They're even doing something we couldn't imagine at IPO time, which is profitability.
+
+Now, it's very modest at this point, but we wouldn't have dreamed Uber could even get to break even back when they burned, David, what was it, $3 billion the year before the IPO?
+
+David: Yeah, I think it was the most capital burned before an IPO by any company in history up to that point.
+
+Ben: Today's discussion, of course, is partly about Uber as we're alluding to here. But as David and I evolved the interview format, we're putting more of a focus on Dara as a person and sharing some of his craziest stories from throughout his whole career.
+
+This is a candid conversation that dives into moments like buying Expedia right when 9/11 happened, how he first met Barry Diller at Allen & Company, and what the financial mechanics are actually like of replacing Uber's entire shareholder base or close to it anyway, almost in its entirety since joining the company.
+
+David: Not to mention the Uber CEO recruitment process, which I don't think Dara has talked about anywhere else before.
+
+Ben: No, I don't think so either. If you are not already in the Slack, you totally should join. So many smart folks commenting on episodes and bringing new information after we record that we didn't find in the research because many of you work in the fields that we're actually covering on episode. You can join at acquired.fm/slack.
+
+Listen to our other episodes on our second show, ACQ2. A great episode we just did with Jake Saper from Emergence on AI moats in B2B SaaS. Without further ado, this show is not investment advice. David and I may have investments in the companies we discuss. This show is for informational and entertainment purposes only. On to our conversation with Dara.
+
+Cheers, Dara, welcome to Acquired.
+
+Dara: Thank you very much. Happy to be here.
+
+Ben: Appreciate you swinging by the home studio on your way home from an Expedia board meeting. Is that right?
+
+Dara: Yes.
+
+Ben: How'd that go?
+
+Dara: I can't tell you.
+
+Ben: Yeah, that's the right answer.
+
+Dara: It was a good board meeting.
+
+Ben: Actually, Expedia is a good place to start. For folks who don't know about your pre Uber background, you were the CEO of Expedia from 2004–2017. Is that right?
+
+Dara: Yeah, 13 years. It's a long time.
+
+Ben: When you became the CEO, your previous role was at IAC with Barry Diller, and you guys had bought a controlling interest in Expedia. You took it private. It was at Microsoft with Rich Barton. He spun it out, it went public. You made a bid to take it private. I think over two tranches, there was a controlling interest and then a full buyout?
+
+Dara: Yeah, we bought Microsoft's stake. Microsoft decided it's non-core. We bought Microsoft controlling stake. Expedia was a public company, but we had a control position. At some point, we decided, hey, let's bring in the whole thing, because we loved what Rich and team were building.
+
+Ben: This being Acquired and us wanting to dive into a story, there's one moment in particular that was pretty insane. The term sheet was signed for IAC to buy Expedia before September 11th, earlier in 2001. The deal hadn't closed yet. I think there was some material adverse change clause.
+
+Dara: Mac clause, they called it. Yes.
+
+Ben: You were allowed to pull out of the deal?
+
+Dara: Yes. What could be more material than September 11th for travel?
+
+Ben: But you guys didn't. Take us through that.
+
+Dara: We didn't, and we knew we had the option to get out. At the time, one of the values of an option is time value. You don't want to exercise an option before the last moment that you can. Rich called (I think) Barry at the time. He said, listen, September 11th happened. Business obviously has fallen off a cliff. We think it'll come back, but I don't know.
+
+He said, the place is pretty unstable now because no one knows whether the deal is going to go through or not go through. There's this MAC clause. If you want to get out, it's fine. Rich is very confident, he's a great entrepreneur. It's fine if you want to get out, but just let us know which way you want to go.
+
+Ben: God, he's good.
+
+Dara: He's really good.
+
+David: Really, to your point about time value, he just wants you to make a decision and say, oh, we'll be fine, but I need to know.
+
+Dara: I can't imagine that if you're at the company, everyone's like, what's happening? There's the future. Companies thrive on certainty, rhythm, et cetera. It was a tough macro position to be in. In the micro position of what's going to happen to Expedia, I can imagine what he was going through.
+
+We got together as a team, the IAC team, and all of us were talking. There's no clear decision to be made there, but Barry respected what Rich asked for. I remember the meeting, we're having all these debates. I think it was Barry who said it. He said, if there isn't travel, there is in life. We looked at each other, we're like, let's go for this, let's do it. Right after that meeting, Barry called Rich and said, game on.
+
+Ben: No changes to deal at all?
+
+Dara: No changes to the deal. It's like, we're going to do this. But Barry, his passion is travel. I think he was right, which is, just when you're in the center of the storm, it looks like, oh, my God, life is going to be over, but things revert to normal.
+
+When you look at the pandemic, and everyone's looking for all these long-term changes, and everything reverts to norm, I think that was the wisdom at the time. Although you're in the middle of craziness, it sure doesn't feel calm. But after that, we said we're in. It got Rich's stability that he wanted. In hindsight, it was a genius decision.
+
+David: Did you ever think you would then live through another moment like that over the last couple of years?
+
+Dara: No. I like this one to be finally the last one. I never want to go through something like that again, but it made us stronger as a company.
+
+David: Ultimately, good for Uber in the past couple of years?
+
+Dara: Yeah. I think the pandemic was incredibly painful in that sitting together as a team, 85% of your mobility volume, which was the profit driver of the company, falls off a cliff. Other CEOs lost a ton of business, but most of these businesses were profitable. We were losing $2½ billion, and then it just got way worse.
+
+It was a very tough situation to be in, and we had to cut a lot of overhead. We had to cut up businesses that we felt were core to the business. You really had to bet on what's core, what's non-core. But it was a huge accelerator as it relates to our Eats delivery business. I think that discipline, in hindsight, has been great. That shouldn't have been the...
+
+David: The precipitating factor.
+
+Dara: Exactly.
+
+Ben: Before I let David bring us to today already, let's go back down memory lane. How did you meet Barry Diller?
+
+Dara: I met Barry Diller when I was an analyst at Allen & Company, which was my first job out of college. It's an investment bank in New York City, specializes in the media and entertainment sector, and now much more tech. They've made a pretty cool transition. I was a lowly analyst. I got assigned to this deal where Barry Diller, who at the time was running QVC. He was the CEO of QVC, which was home shopping.
+
+Ben: And he had run Paramount and Fox Studios before that?
+
+Dara: Correct. Paramount first, then he ran Fox for Murdoch, and then he decided he wants to be his own boss. At some point, John Malone, I think, had control of QVC. Barry got the job to run QVC and have control because he wanted to be his own boss. Who can blame him for that?
+
+Ben: God, to be in the room with those two characters as they are negotiating.
+
+Dara: It was golden for a kid like me. At the time, Sumner Redstone, who was running Viacom, had come to an agreement to buy Paramount Pictures, which was Barry's old home. Barry thought that he was getting a steal, so he decided to go after Paramount in a hostile tender offer to come in as a third-party bidder. It was a huge move because Paramount was bigger than QVC. It was like the minnow...
+
+Ben: Swallowing the whale.
+
+Dara: Yeah, swallowing the whale.
+
+David: It's like Cap Cities.
+
+Dara: Exactly. I was the analyst on the deal. It was a whole bidding process. Barry would bid, and then Redstone would bid up, et cetera. It was multiple steps. There was a big court case that was pretty important in terms of, did Barry have the right to come in and actually bid on this thing and break apart a negotiated deal? The person who I worked for the VP, et cetera, got sick, so I had to step up and work with Barry directly, making these pitches to Barry.
+
+David: Were you a couple of years out of college at this point?
+
+Dara: I was 2–3 years out of college. At some point, there are all these complicated numbers that you put together, and Barry wants to know who is the person running these numbers. He's like, I want to talk to the person running the numbers. Herbert Allen called and he's like, print out your model, Barry wants to talk. I got to print out my whole LBO model, bidding model, et cetera.
+
+David: What are you feeling at this point?
+
+Dara: Like holy shit. The only question in my mind was, when am I going to get fired? This is a disaster. Allen was not supposed to talk to the CEO. In hindsight, I've seen this patterning with Barry, which is that he wants to get the real stuff. He doesn't want an edited version of reality, because then it's just an edit version. He wants to go to the source.
+
+He wants to know, there are these numbers. I'm making, at the time, one of the business decisions of my professional life based on these pieces of paper. Who's responsible for this? I want them to explain it to me.
+
+For me, it was crazy luck, but also it's part of Barry's process, which is to get the unvarnished truth because that helps him make better decisions. But then I met him, and I remember thinking, hey, if there's ever a person that I want to work with, I want to work for that person.
+
+Ben: Do you think there was something about you in the way you presented that made Herb Allen believe that you would be customer ready, and you could go and speak to one of the biggest media moguls of our time?
+
+Dara: Herb was a big believer in betting on people and hierarchies, et cetera. I don't know, honestly. I remember the advice that he gave me is to bet on people, not on companies. That was a patterning that he added through his whole career. He's very loyal, found a good person, and that would bet on that person.
+
+Barry's the same, which is he'll throw a young person off the deep end, and you'll either sink or swim. He's selective in who he throws off, what deep end, et cetera. But both of them were willing to give opportunities outside of regular scope or regular process, et cetera, and it shows. They build incredible loyalty in terms of the people who know them.
+
+Ben: How did you find your way to Allen & Company? I know I'm just pulling threads going backwards here.
+
+Dara: It was a very considered decision, which was I studied engineering at school. I actually had an engineering management job lined up at a paint factory, and then I fell in love with a commodity trader in New York City. At the time, I'm like, I need a job in New York City, what job can I get? And it was investment banking. My brother worked there.
+
+David: He still works there, right?
+
+Dara: Still works there. I got the job, chased the woman of my dreams, and broke up with her six months later, but I got a job at Allen & Company and a good career.
+
+David: Have you written a thank you note because you'd be running a paint factory otherwise?
+
+Dara: I did not. That's a very good point. I owe it all to her.
+
+Ben: Based on observing you, your history, and everyone else in your family, it would become like a paint factory that would then buy all the other paint factories, then expand up and down the stack, then figure out how to add 15 other businesses, and it would become this beautiful conglomeration of something. I don't know.
+
+Dara: You could be right, or I could have just gotten totally lucky by falling into Allen & Company. I really do think it was just things came together. Everyone's career who's successful, it's a combination of luck and opportunity, taking advantage of the opportunity, and I just got lucky.
+
+Ben: That's a nice thing to say. There are a lot of other people that could have lucked their way into an Allen & Company job, and then not turned it into an incredible performance with one of the most important people, where your model needs to hold weight, which is Barry Diller in that exact crucible moment in time. What do you say to young people when they ask you this question about how much luck has to do with it, how should I be the most prepared, and how can I seize opportunities when they come up?
+
+Dara: I think I always tell people that the most common mistake that I see in young people is that they overplan their career. Like, oh, I want to do X, I want to be vice-president, or I want to make so much money by a certain time. When you overplan your career, there's this human bias, which is to look for a signal that agrees with the plan that you have and ignore everything else that doesn't agree with it.
+
+My advice for young people is don't overplan. You never know what opportunities are going to come up. I plan to stay down at a company my whole life, It was my place. My brother wound up being there.
+
+Being open to possibilities, being open to opportunities, and then when you get that opportunity, going all in. It's just, don't hedge. If you're going to be in something, go all in, do what's required of you and then 50% more, like blow people away. Tomorrow, maybe something else comes up and you'll get there. While you're in, you go all in. But at the same time, keep your eyes open because you never know.
+
+David: All right, listeners, for our first sponsor of this episode, we have a new member of the Acquired family that I am very excited about, Common Room. Common Room is the platform that ties community-led growth and product-led growth to revenue.
+
+Ben: Common Room solves a problem that tons of businesses have in this modern era. Let's say you have a free trial or a freemium product. Inevitably, you get a bunch of users posting on LinkedIn, GitHub, Slack, Discord, communities everywhere, for guidance and problem-solving about your product. Of course, on the other side of the house, you also have a CRM to understand interactions that your team actually has with customers, but none of these systems tie together. That's where Common Room comes in.
+
+Common Room captures what is happening across your broader community and marries it with customer data from a HubSpot or a Salesforce and product data in your data warehouse like Snowflakes. You can see it all in one place. Not only that, Common Room unifies customer identity across all these channels. You can see, for instance, that the VP buyer at your highest priority account posted three times in your Slack community last week after your team resolved the GitHub issue for an engineer at the same account, who recently signed up for your free trial. Who wouldn't want to know that?
+
+David: I actually have a very fun personal story, too, to share about Common Room. After I stopped being a full time VC to focus on Acquired, I didn't really think I was ever going to invest again professionally. Then Linda, Common Room's founder and CEO, who's been a longtime friend, called me up and said she was starting a new company. She wanted me to be her first angel investor.
+
+Fast forward, Common Room is now, I think, the single highest returning investment that I've ever made professionally or as an angel. They've now raised over $55 million from top firms like Madrona, Index, Greylock. Honestly, it gave me the confidence and conviction to then go start Kindergarten Ventures, where Nat and I have now raised and deployed almost $30 million. It's been so awesome just watching Common Room take off.
+
+Even in the past year, they went from a beta product to frankly one of the most impressive customer rosters I've ever seen. They have the best product-led growth companies like Airtable, Atlassian, Asana, Figma, Notion, and Webflow. They have developer-led companies like Snowflake, Databricks, Statsig, Replit, GitLab. These are all Common Room customers, as are a ton more companies.
+
+Ben: And it's a great Seattle success story. If your go-to market motion needs greater insight into who is talking about your product and what they are saying, and frankly, as you can tell from Common Room's customer list basically every modern company does, head on over to commonroom.io/acquired for a 20% discount off their team plan for 2023. When you get in touch with them, just tell them that Ben and David sent you.
+
+All right, we're going to catch back up to that Expedia era. Thirteen years, you have pretty wild competition with booking.com. I think you learn a lot of lessons from watching Booking just crushed it. Top line, profit margins, rate of expansion, everything about it, Booking built a hell of a company. When you're on the Expedia side of things, and then you get a fresh start at Uber, how do you take those lessons with you? And what did you learn?
+
+Dara: God, I learned so much. Booking was an execution machine. Their focus when we talked about focus was hotels, hotels, hotels. Expedia started with Air. Hotels was, to some extent, secondary.
+
+I think one of the lessons is like, hey, go off to the larger market. If you're a marketplace business, go after fragmentation of supply, which is if you think about hotels, there are so many more hotels in the world that there are airlines. I think they focused completely in the right area, built a global business first, and just were an absolute execution machine.
+
+The other area was that Expedia was probably more focused on building demand, consumer demand, brand, et cetera. Booking was more supply-led.
+
+David: Especially in the States, nobody knew what Booking was.
+
+Dara: Totally. For them, it was about building up the hotel supply. As you built up the hotel supply, every hotel became another piece of data that you could market through Google or Meta search. If you have 100 hotels in a market, and you expand that to 200 hotels in a market, then market is also going to convert better. Not only do you build a new segment of demand, but then if there's a search for a hotel in Nice, Nice becomes a better product and converts more. If it can convert more, you can get more traffic from Google, et cetera.
+
+They play that optimization game like no one else. For me, the biggest lesson as I came to Uber was that Uber's marketplace business has a very, very fragmented supply base. It's 5.6 million drivers and couriers, who are earning on our platform...
+
+David: At a few million restaurants?
+
+Dara: Yeah, close to a million restaurants. For us, our growth is also supply-led. If you think about post pandemic, one of the reasons why I think, generally, we're doing really well and gain a bunch of category share versus Lyft coming out of the pandemic, was because we really focused on bringing those drivers back to the platform, building our service, et cetera. It was a supply-led way of building the business, which definitely was a learning that I took from booking.com.
+
+David: With Booking, you can build a market of geography for hotels and then use that to build a vertical. You can do the same thing at Uber in a way that your competitors on both sides of the business can't because you can cross market, rides, and Eats.
+
+Dara: Exactly. Especially in the US, there's a much more crossover between couriers who deliver food, and then drivers who drive people, there's a much larger crossover. We can actually use Eats almost as a recruitment tool. At that moment, when someone says, I am interested in earning gig money on demand, et cetera, with all the flexibility, freedom, et cetera, the faster you can get that person earning money, the higher the conversion rate. Because of Eats, you don't need to get your car inspected.
+
+There are a lot of additional steps, background check, et cetera, that's required for driving. Those steps don't necessarily need to be completed to deliver food. You can get people into the food ecosystem, they can start earning on the Uber platform, and then you can upsell them into additional opportunities, driving people, shopping, et cetera.
+
+It's a structural recruitment advantage we have in terms of building up supply. As you build up the supply, the liquidity in the marketplace gets better. Surge comes down, pricing gets better, ETA gets better, your ability to price gets better, and the demand goes up to some extent.
+
+David: Everything you just said, that's always been the story of Uber. It seems like in the past few years, though, especially relative to your competitors, it's actually become more of a reality. I'm curious, maybe you talked about Booking being execution machines. What does the Uber execution machine look like since the pandemic to maybe make that more of a reality?
+
+Dara: I think that there's always a delay between inputs and outputs, which is you can start changing the inputs in terms of how you build a system, et cetera. It takes a while for the outputs to become emergent. We did take a big step post pandemic once Eats got the size to merge all the teams together, the technical teams together, the marketplace teams together, single earner team, et cetera.
+
+When Eats was small, it needed its own dedicated teams because if you had one team doing rides and Eats, all the attention would go to rides. Once we combined the teams, that allowed one technical team to really focus on the demand side, Eats as the recipient. The rides business has most of the audience. Generally, we move more people from rides to Eats. It's an almost free customer acquisition tool for Eats.
+
+Ben: It's your largest customer acquisition channel for Eats, right?
+
+Dara: Yeah, we get more new customers from the rides than we do from Google, Meta, Instagram, all of these other channels combined.
+
+David: It's pretty nice to own your own media.
+
+Dara: It's awesome at a quarter of the cost. It's a proprietary channel and it's cheaper.
+
+David: Do you charge internally for...
+
+Dara: Totally.
+
+Ben: Even advertising business, right? It's an [...] like any other.
+
+Dara: Exactly.
+
+David: We're going to have to start charging each other for plugs on Acquired.
+
+Dara: We can tell you a little about our internal pricing. All of it sounds great. But the fact is that whatever pixel that you put on the rides app to promote Eats, is taking something away from the rides app. There's a bunch of experimentation that had to be done, which is what are the right surfaces? What are the right messages? How do you target it? How often do you target it? Et cetera.
+
+There's a bunch of machinery that you have to build to do this stuff successfully, for the benefit that Eats gets to be significantly larger than the detriment that rides gets, and to not get in the way of the rides experience? You don't want to screw up that experience.
+
+To the question of, why is it happening now, is it looks great on paper, but then to build the machinery to actually do it effectively, takes time. If Eats has this new customer acquisition source, every year, new customers for Eats account for less than 10% of the overall business, because it's a big repeat business.
+
+In year one, hey, is it nice? Yeah, it's nice, but it doesn't really show up to external investors. It's the saying, compounding is the seventh wonder of the world or the eighth wonder of the world. What's happening now is the compounding is happening.
+
+We've had three years of machinery working. One year may not be noticeable, two years may not be noticeable, but three, four years, what we're doing is essentially our margins are growing faster than a competition because we have a bunch of proprietary traffic that's coming over. On the ride side, there's proprietary supply coming over from Eats, again, compounding.
+
+David: Is it still that supply acquisition cost is bigger than demand acquisition cost for you guys?
+
+Dara: It is. We are a supply-led business at this point. Probably two years ago, we could have added 25% more drivers and couriers into the platform that would all be super busy instantly. Right now, our supply generally is growing faster than demand because it's catching up to demand.
+
+The average driver who's on the platform is working more because experience is better, earnings levels are really good. This point probably supplies still trailing demand by 5% or so, but the marketplace is now getting to a point where it's balanced. It's that compounding that really starts working.
+
+Ben: I was reading through the most recent earnings, and you have a chart on average over the last five years or so. Drivers make more money per hour. If we entered some economic environment, where a whole bunch of people were out of work, and they wanted to become Uber drivers, but that would make it so that the average earnings across the whole platform would plunge because you have a whole ton of new drivers coming on, would you guys gate it and be like, hey, we want to make sure that we don't flood the supply side of the marketplace?
+
+Dara: No, because one of our core philosophies is this is an open platform. If your background check comes in okay, et cetera, then you can have access to earnings opportunities. That's a core belief for us. The economics take care of themselves. When you look at mid cycle, long cycle, if earnings come down on the platform, then it becomes a less attractive platform to drivers, and they will do something else.
+
+There is this counter cyclicality about our marketplace, which is during really good times, it becomes harder for us to recruit drivers, so the cost of supply goes up. While revenue and gross bookings are growing, unit volumes are strong, our supply base becomes more expensive.
+
+During softer economic times, you get more drivers coming into the platform, ETAs come down, prices come down, the price becomes cheaper. Actually, our unit volumes accelerate. If you look at our Q1 unit volumes, they grew 24% versus 19% in Q4. We accelerated trip growth, which is not something that you see at our scale, but it's some of this stuff working out.
+
+Ben: Right. It's the invisible hand of the market theory that self-regulates this for you.
+
+Dara: Yeah. It's not a theory, it happens.
+
+Ben: Yeah, I guess.
+
+Dara: It's this very cool experiment.
+
+Ben: Economists like to talk about things in theory, but you actually have one of the largest datasets in human history of people doing work and other people consuming services.
+
+Dara: If you ask our top economist at Uber, he would say that we actually don't control the price to the consumer. That is actually the spot price for this kind of labor the marketplace sets based on the supply of labor coming in and the demand for transportation. People say, Uber setting prices? We'd say, we're not setting prices. The marketplace is setting its own price.
+
+Ben: What do you do then? You have to have some levers at your disposal. You're getting a lot more profitable. Certainly, whenever we did the IPO episode, Uber had lost close to $3 billion the year before going public.
+
+David: You said in the episode that it was the most that a company had ever lost before going public in history.
+
+Ben: Yes.
+
+David: I don't know if that's true, but attributed to Ben Gilbert at the time. Order of magnitude, that's true.
+
+Ben: But now, depending on what profitability metric you look at, you guys are a break-even or slightly positive business, and increasingly getting more profitable and looking like a self-sustaining business. What can you do then if you aren't in the business of deciding what a ride should cost?
+
+Dara: I think we're in the scale business. We centrally wire up every form of transportation whether it's people or things. It's increasingly people, then shared, taxis, et cetera. There are 4½ million taxis in the world. Who would imagine that Uber will be working with taxis? But we're going to wire up every single taxi in the world.
+
+David: The Curbs, the Cabulouses, and the Flywheels.
+
+Dara: By the way, we work with them. A lot of times, we will connect through them as intermediaries, again, to wire up these taxis. We've gone from food, to alcohol, to groceries, et cetera, and then we have our freight business as well.
+
+David: Do you have boats now?
+
+Dara: We have boats in Mykonos, it's pretty cool. We have boats on the Thames too. If it moves, and it carries people and things, we're going to wire it up and make it available on demand. That usually brings in the demand for transportation, et cetera. It's like math. You have to do it in a more and more efficient way.
+
+I think one of the secret sauces that we have is, we have a very large and capable marketplace team. These are ML engineers, who are building out the systems that match price and all of this connectivity. When you're working over an ecosystem of 2 billion transactions a quarter, the datasets that we have, the experimentation that we can do in terms of what's the most optimal match, how do you price, et cetera, it's just the bigger database than anyone else.
+
+I can't speak to how our competitors are matching in pricing, but every year, matching in pricing probably improves by 5% a year. You improve the marketplace throughput by about 5%, everything else being the same. That's free growth. When it's on top of, call it $120 billion, $130 billion run rate, it gets big. Again, it's compounding. Every year, this machinery gets better.
+
+Ben: Just to make sure I'm understanding right, because you talk to anybody and you're like, oh, what should I ask Dara? They're like, ask him why Uber is more expensive than they used to be. I'm like, because it's a good business now. But actually, it sounds like that's not actually the right answer, that the reason rides have gotten more expensive over time is (a) inflation, but (b) just that there is more demand for those rides than there is supply to serve them.
+
+Dara: Correct. The cost of labor has gone up. How much do you have to pay for any kind of blue collar job? Everybody's talking about it. The bunch of retailers were having trouble hiring enough people, restaurateurs, et cetera, and then it did become more expensive to bring drivers into the Uber ecosystem. Earnings expectations have gone up.
+
+By the way, I think that's a healthy thing. If you step back, the increase in salary and wages for blue collar jobs hasn't kept up with the salary of tech workers or capital, et cetera. I think the catch up is a really healthy catch up. That is the reason why Ubers are more expensive now.
+
+In this environment, where we are adding supply faster than demand because supplies are really coming into the marketplace, prices in Uber now, year on year, are down.
+
+David: I heard that the airport in San Francisco this morning was the cheapest it's been in months, so thank you.
+
+Ben: Specifically not thank you, thank the invisible hand.
+
+David: Thank you, Mr. Market.
+
+Dara: Exactly.
+
+David: How has the complexity of Uber relative to Expedia matched up with your expectations coming in?
+
+Dara: There's complexity in terms of all of the stakeholders that you have to think about. It's the difference between chess and four dimensional chess. It is like Expedia, travel agency, you're bringing demand to your supply base, et cetera. You have to think about the travel ecosystem. With Uber, Uber is an incredibly important service to the cities of the world.
+
+David: Also, in Expedia, you weren't providing the service.
+
+Dara: Yes.
+
+David: You were a marketplace layer. You're not operating the airplanes. You're not making up the hotel rooms.
+
+Dara: Exactly. The drivers are providing the service, but we're much more responsible end-to-end. You're responsible for your customers. We have a very, very important responsibility to the driver and courier communities, over 5 million people who are making an earning or making side earnings on Uber. The responsibility in terms of regulators, governments, et cetera, that consideration set is so much bigger. From that standpoint, it's tough, but also really interesting and satisfying in some ways.
+
+David: Were you ready for it?
+
+Dara: No. I had no idea.
+
+David: Is this one of those, if you knew you wouldn't have done it, but now you've done it, so all this value has been created and like, great?
+
+Dara: I'm so glad I did it. A friend of mine said, Dara, are you having fun? I'm like, no, I'm not having fun. I love it. The job is too hard. It's not fun, but it's so cool. It's such an interesting space. You really feel like you're having an impact.
+
+We always talk like, you don't come to Uber for easy. You don't come here for an easy job. It's complicated. It's hardcore. People work their asses off, but you love it. It's not fun. It ain't fun, but people love being at the company. That's something I didn't know.
+
+The dynamic real time nature of the marketplace, how we balance the marketplace, and the pricing, et cetera, is unique. Thursday night, there's a Taylor Swift concert, all hands on deck. We got to figure things out of that operational nature, but how dynamic and fast that is.
+
+David: Does an Uber HQ plan for Taylor concerts ahead of time as they're happening.
+
+Dara: Uber HQ doesn't, but there are ops teams on the ground. They're the heroes. They're on the ground city by city, working their ass off. They are where the rubber meets the road, so to speak, to use a transportation metaphor.
+
+Ben: David asked this interesting question that I want to dig a little bit deeper on the were you ready for it. What diligence did you get to do on the opportunity when this job came on the market in the national news in a very prominent way, in a very short time period?
+
+David: When did you first get contacted about? How do you enter the Uber orbit?
+
+Dara: I was reading around the news just like everyone else was. It was just all over the place. It was crazy.
+
+David: Meg Whitman, Jeff Immelt.
+
+Dara: Yeah. Also, everything going on and what led to it. The battle between Travis and Benchmark and all that stuff, it was fascinating as an observer. I never ever, ever imagined that I would then play a part. A headhunter called me about this role.
+
+Ben: Not a board member directly, a headhunter.
+
+Dara: A headhunter called me. It was a structured process. I'm like, no way. No, thank you. Goodbye.
+
+David: Happy in Seattle, this is great.
+
+Dara: Yeah, 13 years.
+
+Ben: I got my place on Whidbey.
+
+Dara: I love working for Barry. I was good.
+
+David: This is fun.
+
+Dara: Exactly, it was fun. I was at the Sun Valley Conference, the Allen & Company Sun Valley Conference. I'm having drinks with Daniel Ek. He's like, Dara, did you get the call from a headhunter about the Uber job? I think you'd be perfect for the job.
+
+I didn't know why the headhunter called. It turned out it's Daniel. Dude, why would I ever do that? I'm happy. Why would I ever jump into that mess?
+
+Ben: Daniel gave the headhunter your number?
+
+Dara: Yes. I'm like, no way. He looks at me with those piercing Scandinavian eyes. He's like, Dara, since when is life about having fun? It's about having impact. This is important. You can do this.
+
+I'd had a couple of drinks, the alcohol was flowing, and we were having fun. My wife says, yeah, you can do this. I'm like, yeah, I can do this. The next day, I called the headhunter back. I said, let's talk. The next step was for me to meet a board member, and we had dinner. He was very charming, and he started the recruitment. It was pretty cool.
+
+Ben: How long between then and when you accepted the job?
+
+Dara: I think it was about two months, it was over the summer.
+
+David: How did you keep it secret? Nobody knew.
+
+Dara: I told them. I said, listen, upfront, I have a job and it's a great job. The nanosecond that my name shows up in the news, I'm out of here. I just want you to know, the nanosecond it shows up in the news, I'm out of here. But I had to be realistic that it could show up in the news. It's amazing that it didn't.
+
+Actually, at that point, I called up Barry because I couldn't put Barry in a situation or myself in a situation. I've worked with them for 13 years, probably 20 years in IAC. Even before as a banker, he and I have an incredible relationship. I owe so much to him. I couldn't take the risk of him seeing it in the press, the consequences of that, and the loss of trust.
+
+I called them up. I said, Barry, a headhunter called me about Uber. I'm going to talk to them. He's like, you're effing crazy, hung up on me. I said, oh, my God, I'm going to get fired. Nothing, dead silence.
+
+David: You weren't going to get fired, because what was Barry going to do, step in and be CEO himself? He wasn't going to do it. Maybe he would.
+
+Dara: I didn't know. We worked together for a long time. I called him the next day. He said, speaking as the chairman of Expedia, it will be a real mistake. But speaking as a friend, I understand why you're interested. I would be too. How can I help? That's the definition of who he is.
+
+Because we weren't in the news, we gossip about it. It's like, oh, did you hear Meg is this? It was a fun thing that we gossiped about. Actually, there was a point in time when I had to make a presentation to the Uber board. This was my big presentation, and I heard that the other candidates were coming in to present as well. This was a big day.
+
+I told him—I think it was a Saturday or Sunday—that I'm coming in making a presentation. He's like, show me the presentation. It was PowerPoint. I showed him the PowerPoint.
+
+He actually helped me with PowerPoint. He's like, this is good, this is good. You have to add this page. It shows you the kind of person he is. He put friendship in that case over his own business interest. Maybe he was sick of me. I don't know.
+
+David: It's calculated.
+
+Dara: Yeah. It just shows you the kind of person he is.
+
+David: That is true personal loyalty.
+
+Dara: Yeah.
+
+Ben: And there's an element to it, too, where if he got to collaborate with you on it, then there was a chance you would stick around on the Expedia board and remain a friend of the company, even though you're not in the seat.
+
+Dara: Yes, and I still am on the board. I love the company, but it's weird being on the board as a former CEO. It's a strange experience.
+
+David: Did you do anything to prepare for that?
+
+Dara: No. Usually, my life is like, stumble into something and then figure it out.
+
+David: You're not so busy, dude.
+
+Dara: Yeah, but I wanted to stay on the board. I wanted to help. The company is going through its own journey now. Hopefully to greatness.
+
+Ben: This famously was an issue in the Microsoft transition and has been an issue in the Disney transition. Did you consider, hey, actually, maybe it would be better for the company if I didn't serve on the board just to give enough space for new leadership?
+
+Dara: I talked to Barry about it, and it's ultimately up to him. I think he decided that he wanted me there. I tried to be helpful, but I think it's absolutely right. The job of the new CEO, to some extent, is to be the CEO and do something different from the old CEO. That's definitional.
+
+David: You know a little bit about that.
+
+Dara: Exactly. There could be hesitancy at a board meeting, et cetera because the old person is there. I think on a net, I trusted Barry's judgment. It does feel weird sometimes because I've moved up, but it's working. I think it's working, but it's complicated.
+
+Ben: I bet.
+
+All right, listeners. For our next sponsor, we are excited to talk about one of our favorite companies, Vouch, and some big news that they are dropping soon. They are officially launching their AI vertical.
+
+David: If you're wondering, what does it mean for Vouch to launch a new vertical? They start by diving deep into the industry, in this case, generative AI, and helping their clients figure out the specifics of their risks, and then they put an insurance program in place that covers all those risks. For AI, this means issues like bias, intellectual property, privacy, errors, and issues around model explainability.
+
+Vouch helps you think through what might happen if any of those things go awry, and how responsibility might fall between you and your customers. Once they have a solid understanding of a new tech category like AI, Vouch then develops entirely new coverages tailored specifically for that niche. They've already done this for health tech and for Web3, and now they're doing it for AI.
+
+Ben: Specifically for AI, David, it is amazing how much more important insurance is becoming with computers writing a lot of the language that reaches customers.
+
+David: So much more of what's happening is now out of your control, and you need to cover those risks.
+
+Ben: Totally. What's different about Vouch is that while legacy carriers may view new categories like AI as threats to their bottom lines, Vouch sees it as an opportunity. For every time a traditional insurer writes an exclusion into a policy or denies a claim, Vouch instead figures out how to make them into new coverage options.
+
+Vouch actually has a dedicated innovation team just for new emerging verticals like this. They work hand in hand with their clients to rapidly develop solutions. Thanks to their modern tech stack, they can actually deploy these new insurance features quickly, just like any other software.
+
+David: Imagine a traditional insurer doing that. If you're gearing up to enter or expand in the AI realm, and honestly, that is every company these days whether you started as a generative AI company or not, make sure that you are adequately protected with Vouch. All Acquired listeners can save 10% on your first policy by going to vouch.us/acquired. When you get in touch, just tell them that Ben and David sent you.
+
+Ben: All right, back to the reverse diligence question. What did you get to learn about Uber? To directly ask, did you get to talk to Travis? Did you get to talk to any of the departing leadership?
+
+Dara: I talked to Travis a couple of times, I talked with Ryan and Garrett, who were the other founders, I talked to a couple of other board members. I did financial diligence, et cetera. For me, it was ultimately about the opportunity. It's such an important company.
+
+I always tell people I look for three things. Do you work with people whom you like and you can learn from? Can you as an individual make an impact? Is the place or the company that you're at going to make an impact? I wasn't sure at number one, but I was a CEO, so I could build my own team.
+
+As it turned out, there have been great folks there who have stayed, who were there before me, and then new folks like Tony West and Nelson Che that we brought in, et cetera. The new team is a combination of new and old, which is great.
+
+Definitionally, as a leadership team, we can have an impact on Uber. Uber is a company that is unique in terms of its impact on the ground, on the city. It all checked off from the financials. It was still a really young company. The financials for me, yeah, could I do due diligence?
+
+Ben: Even though it was 10 years in, right?
+
+Dara: Yeah, less than that.
+
+David: It was just about 10 years.
+
+Dara: Okay. Yeah, there you go. You know better than I do.
+
+David: I imagine you had to have been feeling like, God, if we can make this work, the opportunity here is just...
+
+Dara: Absolutely huge. All turnarounds are hard. Tech turnarounds are especially hard. I think Uber had a global position, a talent pool, a brand that was absolutely exceptional, that was just going through a really, really hard time.
+
+David: It was a verb.
+
+Dara: Exactly. That was actually the advice that my dad gave me. When a company who's a verb asked you to run it, just say yes. I'm like, all right. Sometimes you can overcomplicate things. It's like, hey, do you want to take a shot? I want to take a shot.
+
+Ben: It's so funny, you say turnaround. Literally, it never occurred to me that you could construe Uber as that. But it might be the only turnaround in history where it was growing incredibly fast, had $10 billion of revenue, had some of the smartest people in the world working at it, and had all this momentum. Of course, burning money, catastrophe in the boardroom, catastrophe in the C-Suite. It is a turnaround in that sense.
+
+Dara: And it was losing a bunch of shares to Lyft.
+
+Ben: Right.
+
+Dara: That was...
+
+Ben: Delete Uber?
+
+Dara: Yeah, the delete Uber moment, et cetera. That was a tough thing, which is you're burning a bunch of cash. At the same time, you're losing category position to what's a tough competitor and a strong brand.
+
+Ben: Tell me if you agree with this statement. In the US, you no longer really have a formidable competitor in ride sharing. But in food delivery, you have a tremendously formidable competitor.
+
+Dara: I think Lyft is stronger than people give it credit for. It's definitely going through a tough time. The new CEO is moving. He's making moves, he's super aggressive. We'll see where that ends up. I feel way better today than I did five years ago, but I wouldn't count them out.
+
+David: Lyft is such a great example of a story. We see over and over again on Acquired of like, it's never over till it's over. It was over for Lyft, and then it was not over.
+
+Dara: Now they're having a tough time, we'll see. DoorDash is a tough competitor. DoorDash is larger than we are in the US. We are focused on keeping share in the US, then gaining a bunch of shares outside the US, and then over a period of time using the structural advantage.
+
+Build profit pools outside of the US. Use that to attack the US over a period of time. Then use the structural advantage that we talked about in terms of customer acquisition over a period of time to hopefully gain category position against DoorDash. They're a tough competitor. We respect them. We don't like them, but we respect them.
+
+David: Is there something in particular that you think they've done? When I think about them, I think about what you were saying about Booking of just being an execution machine. I'm curious from your perspective.
+
+Dara: I think it comes to these company biases, which are pretty important. They made a bet on the suburbs, and they made a bet on restaurant selection. Uber was an urban company. We operate in the big cities, transportation, et cetera. The business in suburbs is much lower, so we want to leverage a customer base that was an urban customer base. We went after the urban restaurants, et cetera, and Uber was about cheap and fast.
+
+If you think about it, if what you're trying to do is optimize for speed, let's say delivery in 15 or 20 minutes, the radius of restaurants that you can deliver from is smaller. You make a sacrifice in terms of selection in order to optimize for speed.
+
+As it turned out, the suburbs in terms of food are bigger than cities. Big families, et cetera, big demand, et cetera. Because of our urban biases, we didn't look at the overall market. We're like, what's our market? How can we leverage our demand, et cetera? That I think in hindsight was a mistake.
+
+Ben: This is a 2013–2016 decision that everyone's still living with now.
+
+Dara: Now, we've corrected that. I was running the same playbook 2018–2019 too, so I don't want to blame it on, oh, this is… it was happening all along. Usually, you focus on the things that you're good at. We were really good at urban, and we were really good at fast and cheap.
+
+We now are much more focused about building out selection. As we built out selection in urban centers, our category position versus DoorDash is actually quite constructive, really strong, we are looking to break into the suburbs. There, we got some work to do.
+
+The suburbs are very, very strong position. It's their profit pools. We're building our profit pools outside and international. The battle is happening in the big cities.
+
+David: It's interesting. I would imagine in the suburbs, there is so much more weight to food delivery than rideshare.
+
+Dara: Totally. Now we are expanding ridesharing into the suburbs now, and it's a pretty fast-growing part of our business. Maybe we'll get there over time, but definitely, it was an early aim of the business. We now specifically are aiming in certain suburbs. You have to build out your courier base, your restaurant supply, demand. All of it has to come together, which is difficult, and DoorDash has done a good job. It's not the end of the story, though.
+
+Ben: I'm curious. There's so much of this strategy that if you connect the dots looking backwards to use the Steve Jobs parlance, it just makes so much sense. This expanded internationally, leveraged the fact that you're the leading global player, generate cash, use it to compete domestically, Eats feeds ride sharing, you can use this flywheel. We haven't talked about freight yet.
+
+I'm curious. Of the three pillars today of ridesharing, Uber Eats, freight, and divesting everything else, all the autonomy, all of the self-driving, international bikes and scooters, what of today's strategy was in your pitch to the board when you were joining as CEO? And what is an emergent thing that's happened while you're in the seat?
+
+Dara: The pitch to the board was really different in that it wasn't about strategy. It was about operations and how you take the business to break even and profitability, et cetera. It was presenting myself as a mature operator and my track record at Expedia. I think now, things have changed, which is we have become much more focused on those three segments.
+
+If you look at rides, we have a number of growth bets, which is there's this base business, Uber X, which is going to be 50% of our growth. About 15% of our growth are international countries, where the business model as we had it wasn't legal. The attitude at the time was, well, if our business model isn't legal, then we're not coming in until we’re invited in.
+
+We took a different attack, which is, well, what business model is legal? Let's adjust our business model to the country versus have the country adjust to the business model. Once you're in, you build trust within a country, and you build a voice, et cetera, maybe then the business model can change over a period to benefit drivers, couriers, et cetera.
+
+We're in Germany, we're in Spain, we're in Japan, we're in Korea, we're in Turkey. There are a bunch of countries that we're expanding into, with tweaks to the business model to make sure that we're expanding into those countries the right way.
+
+There's a whole host of new bets that we're making in terms of transportation, taxi, which is huge, low cost hailables, two wheelers, three wheelers, Uber for business, health, transportation, all of these different segments. That whole new best portfolio will be 35% of our growth. If we do it right, 50% of our growth will come from these new initiatives that really didn't exist.
+
+On the Eats side, obviously it was about food and the general expansion of that business. But it's really about getting into the other categories, getting into grocery, liquor, et cetera. One of the parts that I'm super excited about is, we've always had an integrated offering. If you think about Eats, there's a marketplace offering. You come to Uber Eats, and Eats is bringing you demand, and then there's the fulfillment of that demand. My bringing wine here and delivering it. That has nothing to do with demand necessarily, but it's fulfillment.
+
+David: These are two separate businesses that got stapled together.
+
+Dara: Exactly. Now, we're separating the tech stack, so that now we can offer. We can go to merchants and say, if you want a marketplace, great. But if you want fulfillment, we can offer you fulfillment in a separable way.
+
+For example, Walmart isn't in a marketplace because they're Walmart, they have an incredible brand, et cetera, but they use our fulfillment services. More and more, our vision is we essentially want the local grocer to out-Amazon Amazon. Every single local business can deliver the same day, which is better than next day. If we can connect that to the marketplace, that's great, but that can also be a separate part of our business that can grow and thrive.
+
+David: It's so funny how much of this goes back to the original 10 years ago, 15 years ago, vision for Uber. It just takes so long to realize these things. It's complex.
+
+Dara: It looks great on paper, and then real life is a lot more difficult.
+
+Ben: Are there activities that you've thought about, where you used to need to do something different or counter-position the market in order to be successful, where now you look around and you're like, actually in this area, we're the incumbent, so there's a different strategy that we need to lean into as an incumbent?
+
+Dara: Our working with taxis was an interesting twist. To some extent, they have been definitionally the competition, or we have been the competition or the challenger to those incumbents. At some point, we became much bigger than taxis.
+
+In the end, if you remove yourself from the emotions, et cetera, and we're competing against X or Y, we're in the job of wiring up vehicles and drivers who want to drive people to places, and that includes taxis. There are 4½ million of them. If you take the hypothesis, which is the days of old, where you wave your arm to wave a taxi down, things are changing, then it was a move that was obvious.
+
+At the same time, the beauty of Uber is when you get into the actual challenges. For example, we launched Taxi. The way that we match, generally, Uber is one to one. You hail for an Uber, we will match you. We'll make an offer to a specific driver. The driver says yes, driver comes to pick you up, et cetera.
+
+What we found in taxi markets is that when we laid the one to one match, if we weren't integrated into the taxi meter, and that's something that we will build over a period of time, the taxi might be full, but the acceptance rate of the taxis was much, much lower. We didn't know why. If the acceptance rate is lower, you might wait for a long time to get matched because we're going to send an offer, offer, offer, offer before you get a match. The team built a technology blast dispatch, which is instead of a one to one match, we'll make a dispatch to 10 different taxis, and one of them accepts.
+
+David: This is just like the old taxi dispatch system.
+
+Dara: Totally. There's a pickup on 54 Leonard Street, and Joey says, yes.
+
+David: I got that one.
+
+Dara: Yeah, I got that one. What's old becomes new, what's new becomes old. What's been interesting is there's a simple idea, but then building out the tech infrastructure to be able to fit to that particular market becomes a challenge. Also it's an opportunity, which is now, for some of our competitors, is to copy that.
+
+It's taking a lot of tuning to actually get that experience to be excellent. There are some markets where we're mixing demand. You might click for an Uber X, a taxi might show up. Is that a good thing? Is that a bad thing? It improves marketplace liquidity. Things that seem very simple on the surface to actually make the magic happen of pushing a button and a car shows up in five minutes and you get great service is actually pretty difficult tech to build on the ground. It's really cool.
+
+Ben: That is cool. I have another corporate structure question that I'm curious about. I think you guys, between when you took the job and today, turned over basically the entire Uber shareholder base. I'm sure there are some people that still hold their shares from those early days. What is that like at the scale of a $70–$80 billion market cap company turning over a shareholder base in its entirety?
+
+Dara: Very painful. It was the displacement in terms of shareholders. It was tough. There's a certain cohort of shareholders going after hyper growth, et cetera, especially in this marketplace, where it's much more about discipline, growth, profitable growth, et cetera. That change over has been difficult, but we now have a set of shareholders like the Fidelities of the world, Capital, Morgan Stanley, et cetera, that have the capacity to own a lot of shares way more than they do today.
+
+There's a consistency about it. As we keep delivering, they keep upping their stake. We're now seeing a stock price that generally is working. I'll tell you, when we're in the middle of it, it was tough. After the IPO, after the lockup, Travis sold all those shares.
+
+David: That was probably 15% of the company.
+
+Dara: I don't remember. It was a lot.
+
+David: There are moments when you remember that stock prices are a function of supply and demand. When 15% of a company's outstanding shares hit the market all at once...
+
+Ben: Or 2% or 1%.
+
+David: Yeah. That's wow.
+
+Dara: In hindsight, I think it was a good move by him because it creates a separation. He wants to move on. In hindsight, I respect what he did. In hindsight, I didn't see it at the time. I was pissed. We were panicking. Oh, my God, Travis is selling, what does that mean?
+
+Everyone wants to create drama around Uber. It's difficult as the leader to keep the team focused and believing because it's very easy to keep score based on the stock price, and the stock price was definitely moving in the wrong direction. Travis, whether you liked him or not, you respect him. He's a really smart person. He's a founder of the company.
+
+That was a tough time. I think we're now in a good place, which is the shareholding is moving from either some of the startup folks or hedge funds to fundamental long-only players, who hopefully they'll be shareholders for the next 10 years.
+
+David: One of the things that we heard from many people as we were researching that time period was just the immense degree of the stakes involved for the whole ecosystem. This went beyond just the drama in the press. That's one level. The number of university endowments through the venture funds that were invested in Uber, had large portions of their whole university endowment that were dependent on the private mark of Uber.
+
+Ben: And fund to funds, where compensation has already been paid out as if this was a liquid security, but it's not a liquid security.
+
+David: And sovereign nations that were not dependent, but paid attention to this. Were you aware of that? Did you feel that?
+
+Dara: Oh yeah. Obviously, Benchmark and Travis were in this power struggle. There was this heavy feel. When you talk to the Benchmark folks, there's this responsibility. This was one of the hits of the century. This is a category-defining company and investment. Benchmarks had a lot of good ones, but this one was a great one.
+
+While I wouldn't say it was a probability, there was a much higher than non-zero possibility that it could all go. It could all go poof. I think that was a very, very heavy weight on Benchmark and some of the other startups, et cetera, which led to all events that ultimately led to them bringing in an unknown outsider. Those are some heavy decisions to make. I wasn't there, I was at the tail end of all that drama.
+
+David: But then you had to deal with the shareholder base turnover, which was the unwinding of that expectation.
+
+Dara: One really interesting dynamic that played out when I got in was there's all this stuff happening. I had to go to London, TFL, they revoked our license, there had been a data breach, and we had to deal with that. It was craziness. At the same time, Softbank was looking to invest in the company. This is the Vision Fund days.
+
+Softbank, the only way they came in was heavy. The issue that we had to deal with was one where Benchmark, Travis, and the founders, all had high vote shares. They both wanted to control the company. If you sold your shares, they were flipping to a low vote.
+
+There was this game of chicken, which is Softbank wanted in. In typical masa fashion, it was like, hey, if you don't let us invest in you, we're going to invest in that pink company. It's billions of dollars.
+
+We had to get Softbank in. They want to invest in Uber because it was a top brand, had top tech, et cetera. But at the same time, none of the shareholders wanted to sell because there was this game of chicken. Whoever sold might lose control, et cetera. We had to go around to all of the high vote shareholders, and we literally had to get everyone to agree to blow up the high vote share.
+
+It's actually the only time when tech companies blew up all of the high votes. We literally have to go shareholder to shareholder. Ben said he would say yes, and George, like everybody. If anyone says no, none of it will work. Softbank would go to call pink, which will be a disaster. That was really interesting. It was like all or none.
+
+In the end, we got everyone including Travis, Benchmark. Everyone agreed to essentially switch over high vote to low vote. That one, he got Softbank in, but it stopped the power struggle because then no one could control the company. That was actually a real secondary benefit.
+
+It became like, how do we build a great company versus who's going to get control, and who's going to have more impact? We did it for SoftBank. But in hindsight, it was a really important move, which is, okay, no more board control. This is no longer going to be a controlled company. Let's go build.
+
+Ben: This was an $80 billion prisoner's dilemma.
+
+Dara: Yeah.
+
+Ben: If anyone said, actually, I'm going to move in my own self-interest here, actually, long-term, it would have blown up the deal.
+
+Dara: Everything would have blown up. You might have had a Lyft, who was getting category position against us with a $10 billion investment from SoftBank.
+
+Ben: That's right, it was $10 billion.
+
+Dara: It was actually, I think, $15 billion, some secondary and some primary. That would maybe have been life or death. Who the hell knows? Any Uber had raised the most money of any company, any startup at that point. It was a very, very high stakes game.
+
+We had a deal person cam who did hero's work. He just talked to everyone, and then he would bring me in as a nice guy and say all the nice things. In the end, it worked. It was a big move. Everybody converted, which is pretty awesome.
+
+David: Wow. This is a little bit of echoes of Sumner Redstone and your early...
+
+Dara: It was a good training.
+
+David: A good training, right.
+
+Dara: I love the operating side of the business attack, et cetera. That's the stuff that I love. I have to say, the investment banking background that I had, helped. Even the concept of, hey, how do we get out of this issue?
+
+The way to get out of this control issue is everyone blows up the shares. Everyone's like, wait, that will work? Yeah, that could work. They're going after starting to call people. It was awesome. It was cool.
+
+Ben: Humility is great and all, but were you proud of yourself when that went through?
+
+Dara: No, because the next day, there was another crisis. It was like breathe for two minutes, drink more wine, and then off to the next battle.
+
+Ben: All right, listeners. Our next sponsor for this episode is PitchBook, which I used heavily in preparing for this interview. Let's go down memory lane using PitchBook as our guide. While Uber is worth nearly $80 billion today, the valuation at the initial seed round in 2010 was $5½ million according to PitchBook.
+
+There was a ridiculous group of angels including Brian Chesky, Ashton Kutcher, Jeff Bezos, Scott Belsky, 25 others, and who could forget Jason Calacanis. Their series A was the next year famously led by Benchmark, where Bill Gurley joined the board at quite the step up in valuation, $60 million. All those early angels got a 10X even before Benchmark came in, which was something I did not know without the PitchBook data.
+
+David: It's so funny. I feel like all these folks involved in the investor group for Uber are like an all-star cast of past Acquired subjects, guests, and friends of the show.
+
+Ben: Seriously. Flashing forward to the IPO in 2019, Uber had raised an astonishing $20 billion while private, plus another $8 billion on IPO day. Notably, for this new era of Uber, according to PitchBook, that is all the capital that they would need to raise. They got to break even on that cash. No more new raises since IPO day, which was a very new motion for Uber, given their history.
+
+PitchBook has tons of other great stats like Uber's 32,000 employees, all the patents, and great graphs of revenue breakdowns for each year by business unit. Interestingly enough, I just realized looking at this that in the last two years, Uber Freight actually does make up a material amount of their revenue now, again, something I wouldn't have known otherwise.
+
+You can get access to all the best company data with PitchBook. Basically, every VC and PE firm that I know has a PitchBook account. If you aren't using it, you're essentially at a competitive disadvantage.
+
+If you want to sign up for PitchBook, they are currently offering a free week trial that is coming up soon. You can go to pitchbook.com/acquired to get all the details. Just tell them that you heard about them from Ben and David at Acquired.
+
+I'm very curious about how you operate your Twitter account. On the one extreme, there's an Elon Musk–type operating a Twitter account.
+
+Dara: There's only one Elon Musk–type operating Twitter. It's a singular point.
+
+Ben: There is one in I don't know how many MLs they have, but one in some 100 million data points of tweeting whenever it comes to your mind no matter the consequence is.
+
+David: So much so that he bought the company.
+
+Ben: Yes. On the complete other side, there's Barack Obama and Tim Cook. I'd say you're one click in from the Barack Obama, Tim Cook.
+
+Dara: I'm going to consider that a compliment. Thank you.
+
+Ben: You definitely operate your public persona with a head of state grace. I'm curious if you ever think about letting it fly a little bit more. Do you have a full drafts folder? Do you ever wish you could express yourself a little more?
+
+Dara: What I really think?
+
+Ben: Yeah.
+
+Dara: Twitter feed?
+
+David: Do you have a burner account?
+
+Dara: I tweet mostly myself. There are some stuff that folks say we did this. It's me. I don't have someone running the account. I mix it up with some personal stuff and then some business stuff because you want to keep it entertaining. At the same time, I'm not using Twitter to express myself. I'd rather have a long form discussion like this.
+
+This is, to me, much more interesting. Twitter tweets can be taken out of context, et cetera. Again, I'm not there to stir the pot. Maybe that's what comes out in terms of my Twitter persona. I'll take Obama-esque or Clinton-esque.
+
+David: Tim Cook, it works for him.
+
+Dara: Yeah, that's quite a compliment.
+
+Ben: All right. next. There could have been a lightning round here. The next random lightning round topic, you were on the board of the New York Times. What are some of your biggest learnings from being involved with that company?
+
+Dara: It was definitely my favorite board to be on. It was a really interesting time at the New York Times because they were really becoming a top technical company in terms of being a publisher. It's at a pretty extraordinary learning organization, and they wanted me as the tech person. I was coming from Expedia, optimization, and all that stuff. It's a super traditional company. Their capacity to learn was pretty awesome.
+
+One of the fascinating parts about the company, and is both a superpower or it could be a weakness, is total separation of church and state in terms of content of business. When I asked, well, what's the cost of certain kinds of content and then how much traffic, can we have the connection between cost, content, and traffic, it was like, no, you cannot ask that question because the content is separate.
+
+It's just a fascinating organization. The bet that they made on subscriptions was amazing. It was not obvious because the advertising business was much bigger at that time. It was an enterprise bet based on a core identity of the company, which is we believe in quality content. I thought that was one of the most impressive bets because it was totally non obvious at the time.
+
+Every single news organization, et cetera, was advertising. This is the BuzzFeed days. It was quick content, et cetera. But I think that that bet that they made in quality was very much a bet on their identity that wasn't backed up by data, and certainly wasn't backed up by their financials, but their company went all in and they've really benefited.
+
+Ben: Do you think that could have happened in a company that wasn't family controlled? Did that have something to do with how they could make a bet like that without the data to support it?
+
+Dara: I think they're very sure of that core, of the quality, of the content that they're building. That allows them to make those kinds of business bets because in the end, they know that the content is going to win, absolutely. A little bit like Netflix do, it's quality content, focused on subscriptions. Now they are going to the advertising. You can't have a forever strategy or be so dogmatic as to not to understand that markets change, strategies have to change at the time, but it was absolutely the right bet at the right time.
+
+David: I'm curious how much this was an explicit boardroom conversation. The Times has also made a very explicit bet on the scale of quality content. You could argue maybe Wall Street Journal, but other than maybe them, maybe The Post, maybe, nobody else has aggregated quality content at scale.
+
+Globally, people might think of the political stuff or the new stuff. The New York Times Company covers every vertical. Every geography has at least twice as many reporters employed as any other news organization in the world, I think. How much was that a discussion in the boardroom?
+
+Dara: There was absolutely a view of the management, and the board agreed. I have to be careful because it was a boardroom and it's confidential, et cetera, which is, if there's going to be a top global brand for quality news, that should be the New York Times. Why would it not be the New York Times? They're very clear eyed about that. They're quite determined to achieve that. I think they're doing a great job.
+
+David: Yeah, and it's interesting. The company is called The New York Times, and yet it's global. In a way, in video and with Netflix, I think it was an easier leap to make. For news, I think it was a really unique leap that The Times made.
+
+Dara: It will be interesting to see. Netflix is building Korean content that then extends globally. The New York Times isn't necessarily doing that. It's English language content that is relevant to the world, but is probably relevant, especially international to a sub-segment. It's higher-end consumer, et cetera, who can afford the price. Again, it's been an absolute winner of a strategy. It's been a tough business.
+
+Ben: Yeah. There's a graveyard in the middle between the independent publisher with a low cost structure, The New York Times, and there's not much in between.
+
+Dara: The middle is where you go to die.
+
+Ben: More lightning round. I remember hearing in 2013 that it was cool that I was in 2013 because 2014, one year away, was going to be the year of self-driving cars. Here we are in 2023. Is next year the year? How close are we?
+
+Dara: It's an unanswerable question. It is because there's the last 2% of use cases, the tail use cases. It's unknowable what it will take to get past that last 2%. There's this pretty interesting philosophical question, which is, how safe does a robot have to be? In the US, I think there are 40,000 deaths as a result of car accidents. Let's say that robot cars are 10 times safer.
+
+Ben: I think that highway accidents are one of the top two or three causes of death in the United States, period, so something 10 times safer.
+
+Dara: Yeah. If you're 10 times safer, fast forward 25 years from now, who knows when it will be, 4000 deaths a year, so a little more than 10 a day. If you have four companies that are responsible for the marketplace, five companies, and there are 10 deaths a day, a good day is, hey, we only had one fatality. That's a good day. I can't imagine that.
+
+There's this, well, does it have to be 10 times better? I don't think it's good enough. It has to be 100 times better. Maybe that's not good enough. From a societal standpoint, of course, if it's 100 times better, we should go forward with it. But that would mean there are 400 fatalities a year, one every single day. I don't know how society would deal with it. Our society is very forgiving, but they understand humans are human, and humans make mistakes.
+
+David: You must have experienced this already with Uber.
+
+Dara: Yeah. We have this unbelievably unfortunate circumstance in Phoenix, and it caused us to completely redesign how we build for safety first, et cetera. Ultimately, because of the pandemic, we decided to get out of self-driving, which I think was a good decision because our core skill set is building this demand network, connecting demand to supply in a dynamic way, et cetera.
+
+We now get to work with a bunch of partners. Waymo's a partner, Aurora's a partner, et cetera, so we get to work with a much larger ecosystem. But I think the question of that last 2%, and then what safety will society underwrite to? Those two questions are, for me, unanswerable.
+
+My instinct is that you will see small scale. Continued experiments get bigger over the next 5 years, but it's going to take a good 10 years for it to be a material part of our network or transportation at large. That's a guess.
+
+David: I'm curious too. Also, I want to ask, given both your job, and you and I both live in San Francisco, something crazy has happened in the past six, eight months that it's now happening in San Francisco. For 15 years, everybody's been like, yeah, self-driving cars, it's happening tomorrow and like, yeah, yeah.
+
+Dara: Have you ever taken a ride in one?
+
+David: I haven't yet, but every day you walk down the street and you're like, there are cars going by with no driver in the seat.
+
+Dara: Yeah, it's pretty extraordinary.
+
+David: It's become just so commonplace that I don't even think about it anymore, but then friends come visit and they're like, what's going on here?
+
+Dara: Still, the service for certain originations and destinations, it works. Again, it's okay for a human driver to double park for a pickup, not okay for a robot. Again, when you get into the details, if you look at our rideshare service, for example, if our fulfill rate, which is the percentage of time someone asked for a ride and then there's a car available, if that's less than 98%, that's all hands on deck. It's a disaster.
+
+We are available all the time, everywhere, et cetera. There's a lot of work that goes into that. For any singular rideshare provider to provide that coverage is going to be really really difficult.
+
+Ultimately, we think the better solution is for the Waymos of the world, Auroras of the world, et cetera, mobilize to work with us so that you have this hybrid transition state, where you can still have this 98% coverage everywhere no matter what weather it is, et cetera, but we have this smart switching layer. Sometimes a human should come pick you up, sometimes a robot should come pick you up. The transition is going to take a while, but it is happening. It's cool.
+
+Ben: All right, last lightning round question, and then I have a closing segment. If you could only own Uber Eats or Uber, the transportation business, which one would you rather own?
+
+Dara: Also, Eats is a transportation business.
+
+Ben: Mobility.
+
+Dara: It's just transportation of stuff. You're like, choose between your children. Is it Georgia or is it Donnie? Come on, you can't be serious.
+
+Ben: You could own a business with a 20% take rate or a business with a 30% take rate. Which one would you rather own?
+
+Dara: I will answer somewhat seriously, which is high takers are dangerous. Our job as a company is to grow volume as much as we can, as fast as we can, and make our shareholders happy enough, minimizing the take rate, which is taking as much of that dollar and giving it to drivers and couriers. Last quarter, gross bookings grew 22% or so, which is really good. The money that drivers and couriers, including tips, made on the platform grew by 30% higher. At the same time, we're able to expand our margins brief free cash flow positive.
+
+The design spec that we're building is, how do you torture the organization? Sometimes it is torture, like watch every single nickel and dime, be incredibly efficient in everything that you do, automate everything, get fraud out of the system, et cetera, so that you can actually operate a business at scale at the lowest rate possible.
+
+Talking about booking.com, one thing that we learned, when I started Expedia, Expedia's take rate was 25%, and Booking's take rate was 15%. Over a torturous 13 years, we took Expedia's take rate from 25% to the teens. It was 17%, I think, or so when I left. Those were pure margin dollars that you're taking out.
+
+There's no goodness that comes out of it. It's just really hard work to do. As a result, we're pretty hardcore, which is, any quarter I can deliver, anything on the bottom line, if I can move my take rate up a little bit. But it's too easy. It's too tempting. We're very hardcore about like, no, no, we got to keep the take rate low. You have to do the hard work to be able to keep the take rate low.
+
+I'd say I take the 20% take rate business. It's more lasting. The growth can go on for much, much longer.
+
+Ben: Yup. I asked it in a tongue-in-cheek way, but I completely understand that. It's the NZS Capital thing.
+
+David: Bill Gurley wrote that blog post years ago about a rake too far.
+
+Dara: Exactly right.
+
+Ben: You build more durability by leaving more on the table for your ecosystem partners.
+
+David: Or maybe more accurately, you make yourself too vulnerable.
+
+Dara: It takes [...] out of the room. What's the saying, fat pigs get slaughtered?
+
+David: Pigs get fat, hogs get slaughtered.
+
+Dara: Exactly. You don't want to put yourself in that position. It's very tempting. It's very, very easy. There's this temptation, obviously. There's a quarterly treadmill that you're on, et cetera. You can make someone happy by increasing take rate and throwing it to the bottom line. We really, really, culturally try to resist that much.
+
+Ben: Cool. The last segment that I have here is giving you the floor. We're at the end of a long-form podcast. Anybody that's still listening appreciates nuance. If there's something that you feel is often misunderstood or that you want to say to people that are willing to let a long form argument soak in, what do you think is misunderstood about the company, you, the industry, or this time that we're in right now, really anything you want to talk about?
+
+Dara: I don't know if it's misunderstood, but it's certainly something that's top of mind for us. Ultimately, the future of the business as it stands now, depends on our building the best platform for earners. It goes to the take rate. If the take rate goes up too much, then we're taking too much of the service, et cetera.
+
+The fact is that I think Uber was guilty of taking earners for granted because when I first came in, and for much of the company, we were in a state of oversupply. We had too many drivers, it goes to end instead of gating them, et cetera. We just didn't really invest in the driver experience and the courier experience the way that we should have.
+
+The way that we organize the company around the earner experience was pretty standard in terms of a B2C business. There's a team. There's a team that runs the Uber app, there's a team that runs the Eats app, and the team that runs the driver app. You do all the typical stuff, which is analytics, measurements, and AB test, et cetera, in order to optimize throughput in the marketplace, et cetera.
+
+As we step back, we don't AB test what the 401(k) match should be for employees. It was the equivalent. Some of the experimentation that we were doing on the earner side is like, yeah, should we match a 3% or 6%? And let's look at employee turnover. Cool experiment. Maybe you could optimize. But when you're building a product that people are making a living off of or are earning money that they have to earn with, there's a different duty of care.
+
+The amount of time that they're spending on the app, most of Uber employees, myself too, are like, order rides all the time, order Eats all the time. You get in, get out, et cetera. But a driver will be spending four hours, five hours, six hours with the app every single day.
+
+The consequence of all of this coming together and are building for drivers the way that we essentially build for consumers, which is pretty cool, techy, et cetera, one is like the P95 experience. Usually, you don't look at P50 because averages lie, and then you look at P95, well, that's the worst experience.
+
+David:: The probability percentages.
+
+Dara: Yeah, the probability percentages. An average driver who's driving a week experiences a P95 circumstance every single week, multiple times a week, because they spend a lot more time on that. There's been a pretty important culture change of the company, which is a higher duty of care actually slowing down in terms of how we build for earners, being a lot more humble, listening to them, their experience, et cetera.
+
+The fact is that, when you have 5.6 million earners on the platform, there's this marketplace, which is it works for some earners or it doesn't. There's always going to be 10%, which is half a million people who are not happy with the experience, but we have to make sure that 90% are, and we're getting more people who like the experience into the platform. But because of where we came from, it's actually pretty new muscle for us to build this earner experience.
+
+As I step back and I think about what I am going to be proud of at the company, there's a lot to be proud of in terms of turning around the business, the team that we built, and the service that we built. I think there's a sense, which is tech is out of touch with the real world. Tech is you're building for the virtual world. Uber is unique in that it's a technology company that's built for the real world. The impact that we have, especially as it relates to earners, it's real people.
+
+What I would be most proud of, one is there's a practical reality, which is if we build a company that has the best product and experience for earners, we're going to win long-term. But if we're that technology company that's very much connected, not with the elite but with an earner base and the broad population, not just in San Francisco but all over the world, that's a company to be proud of. At the same time, I think that the muscle we've been developing in the last 2–3 years, we have a long way to go.
+
+David: Is Uber the largest earner platform in the world?
+
+Dara: Yeah, I think we're the largest source of work anywhere by far and growing pretty fast.
+
+Ben: That's a crazy statement.
+
+Dara: Yeah.
+
+Ben: Even if you just look at employees, companies that employ people employ max two million.
+
+Dara: Yeah.
+
+Ben: And Uber has how many earners on the platform?
+
+Dara: 5.6 million. As of the last quarter, it's growing. That's a lot of earners.
+
+Ben: What does the federal government employ? It's got to be on par with that.
+
+Dara: The vast majority are quite part-time, but the scope is pretty extraordinary, and it's everywhere.
+
+Ben: It's so cool. Thank you, Dara.
+
+Dara: You're very welcome. It was a pleasure. Thank you for treating me to the wine.
+
+Ben: No, you treated us. I'm glad you decided to stay after dropping it off.
+
+Dara: You gave me a good tip. It all worked out.
+
+Ben: David, that was a blast.
+
+David: So fun.
+
+Ben: Funny, you were just here next to me in Seattle, and now you're there in San Francisco. The magic of the Internet.
+
+David: I'm really missing that delicious wine that Dara brought us.
+
+Ben: I know. Listeners, you can tell us if you liked that bit or not, or if it was too campy. With that, our thanks to Common Room, Vouch, and PitchBook. Common Room is the platform to manage community-led growth, revenue, and gives you 20% off with the link in the show notes. Vouch is the best way to get insurance, period. If you're a tech company, get 10% off your first six months of coverage. PitchBook is the best way to get data on companies, public or private, and is offering a free trial. All of these links are in the show notes.
+
+If you want more of David and I, we recently did an episode on My First Million, and it was really fun. We went behind the scenes of Acquired. We talked about Acquired's business, our journey turning it from a podcast into a business, why we think the podcast works. Listeners, you might have your own ideas, but where our differentiation is in the market of content out there today.
+
+I don't know, it's just a blast. Sam and Sean are really fun to talk to. If you are interested in hearing that, you can click the link in the show notes to specifically go to that episode, or search any podcast player for My First Million. They also did episodes recently with a couple of friends of the show, David Senra from the Founders Podcast. Actually, David, one of you and my favorite YouTubers Doug DeMuro in the car category for anyone interested in cars.
+
+David: Doug is such, such a nice guy.
+
+Ben: Yeah. Check out ACQ2. It's our interview show, where we talk to folks who are on the cutting edge of what's next, figuring out things like where is the defensibility in AI for B2B SaaS companies, or our interview with the CEO of AngelList, talking about how they're deploying AI at their company.
+
+I know AI is a buzzword, but it is just dominating how every company is making moves these days. It's great to talk to the protagonists who are actually in the arena right now making all of these moves. That's on ACQ2. Check out the Slack. It's where we're talking about this episode and every other acquired.fm/slack.
+
+If you want to come closer into the kitchen and be a part of what David and I are building here, become an LP, acquired.fm/lp. Current benefits include once a season, you guys will pick an episode. You all picked Lockheed Martin, which is shaping up to be one of our biggest episodes ever, so thank you. I had a blast researching that one, so thanks to our LPs. David, we got to schedule an LP call here in the next month or so.
+
+David: Yeah, let's get it on the books.
+
+Ben: Yup. With that, listeners, thanks so much. We'll see you next time.
+
+David: We'll see you next time.

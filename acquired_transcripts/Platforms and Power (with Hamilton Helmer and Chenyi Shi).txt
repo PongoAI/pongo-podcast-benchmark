@@ -1,0 +1,587 @@
+Ben: Hey, Acquired listeners, we have some fun news for you. Following hot on the news that we are doing a freaking arena show.
+
+David: Arena show.
+
+Ben: A client pledge arena in Seattle, we are here tonight to announce the very first guest that will be joining us for that show.
+
+David: Ben, who is it?
+
+Ben: It is fresh off his full page profile in the New York Times this weekend, Jim Weber, the CEO of Brooks Running. We wanted to have a very fun local Seattle success story, but I think most people have no idea of the magnitude of the success story here or Jim's personal stories. It's fascinating.
+
+David: We want everything we do for this event to literally check all the Acquired boxes. This checks all the Acquired boxes.
+
+Ben: Berkshire Hathaway.
+
+David: Berkshire Hathaway. For people who don't know, Brooks Running is a very successful now standalone division of Berkshire Hathaway. Local Seattle story, amazing journey. Under Jim, they went from de minimis small number of millions of revenue to over a billion in revenue a year competing with Nike and Adidas.
+
+Ben: They were like accidentally bought by Berkshire as part of a Fruit of the Loom roll up and they were sort of this bland nothing brand. By unbelievable maniacal focus on making fantastic running products, that is how they became the billion-dollar business that they are today.
+
+David: Not to mention Jim battled cancer along the way. It was so great.
+
+Ben: When you say billion, by the way, we should say billion in revenue. This is profitable, over a billion-dollar revenue-growing company.
+
+David: This isn't a billion-dollar valuation. That's a billion in cash every year, not cash flow but revenue.
+
+Ben: Yes. We're very excited to have a conversation with Jim at the event. You should totally come join us. It's on May 4th, doors open at 5:00 PM with plenty of time for drinks and mingling throughout the event. You can go to acquired.fm/arenashow or click the link in the show notes to RSVP. We've got a few more details in the previous little mini episode that we released to announce the arena show.
+
+All proceeds will go to Climate Pledge Arena’s philanthropy, the One Roof Foundation. It's $20 to attend and we hope to see you there, acquired.fm/arena show or click the link in the show notes.
+
+David: We're going to have some more announcements coming over the next couple of weeks. It's amazing people are DMing us saying they're flying in from all over. If you live in Seattle, definitely come. If you don't live in Seattle, Alaska Air has great flights to SeaTac. This is going to be a huge party. We're so excited.
+
+Ben: Awesome. Listeners, acquired.fm/arenashow. We'll see you there.
+
+Welcome to this special episode of Acquired, the podcast about great technology companies and the stories and playbooks behind them. I'm Ben Gilbert and I'm the co-founder and managing director of Seattle-based Pioneer Square Labs and our venture fund, PSL Ventures.
+
+David: I'm David Rosenthal and I'm an angel investor based in San Francisco.
+
+Ben: We are your hosts. Today, backed by extremely popular demand, we have Hamilton Helmer. We email Hamilton once a quarter and David asks, have you found the eighth power yet? He always says no, but he did finally say, hey, my colleague, Chenyi and I, have been developing a new framework for how executives can apply seven powers for platform businesses, which are way more complicated.
+
+Obviously, we jumped at the chance to get to dig into this with Hamilton since we later found out that by platform, he means this very broadly. Any business that serves as an intermediary to make transactions, so it probably applies to the technology business that you're working on right now.
+
+David: Or investing in.
+
+Ben: I find it particularly interesting reflecting after the interview because it's a framework still in progress so you can start to see some of the really important principles crystallize for Hamilton and Chenyi as they talk through it. We get to read about these things in business books 20 years after they're finalized and gone through tremendous rigor. It's just really cool to see it in the infant stage.
+
+David: So fun to have Chenyi on too. She is an incredible rising star.
+
+Ben: For sure. These special episodes are sponsored by the Solana Foundation. As you know, Solana is a global state machine and the world's most performant blockchain. It means developers can build applications with super low transaction fees, low latency, and they don't have to compromise composability. It's all on a single chain with one global state.
+
+Today we've got a little fun Interview with Dan Albert who is the Executive Director of the Solana Foundation. Here we go. Dan, you guys are up to something really interesting in the Solana ecosystem with stake pools or liquid staking. Can you share with us what that is and how it has some advantages over some of the issues with just regular staking like the lack of liquidity?
+
+Dan: Hey, thanks for having me. The goal of the Solana Foundation is to foster the growth of the Solana network and the Solana community as a whole. The goal really is to have one billion people with self custody of their keys and the ability to understand what that means, sign transactions, and do useful things.
+
+In order to get a good chunk of the world's population doing this, we need a whole robust suite of apps and services that are useful to people as humans. To that end is one of the reasons why I'm really excited about stake pools because it provides a great vehicle for ordinary people who want to participate in the crypto ecosystem, the ability to participate while also fostering the growth of the network and supporting the growth of a larger set of validators.
+
+What this is really is a way for people who are interested in crypto and interested in supporting and securing the blockchain networks that they care about through staking but providing people a liquid means to do so. What does that mean? An individual user or users can deposit their soul into one of these programs and get back a derivative token. What happens under the hood is that the stake pool automatically distributes the underlying tokens to one or many different node operators or validators on the Solana Network.
+
+Traditionally, on Solana and on other proof of stake networks, when you stake an asset, it's subject to some lockup period or sometimes called the unbonding period where basically the asset is not liquid. You can't move it, sell it, or do anything with it on short notice. Stake pools provide liquid exposure to the same underlying asset while giving the user the ability to earn any potential staking rewards that are earned by the validators who are members of that pool. It really takes a lot of technical and research overhead away from the user which can be really intimidating.
+
+The Solana network currently has over 1500 validators operating on Mainnet beta. I get this question very often from members of the community that say, hey, I'd love to stake. How do I pick a validator? I click the drop-down list and there are a thousand names. By vying to be included in one or multiple stake pools, these validators can earn stake delegations based on performance and based on merit rather than based on name recognition.
+
+We've got some community-facing resources on the Solana Foundation website around stake pools, so that's solana.foundation/stake-pools. There's some information there about existing pools that have been launched and are being successfully managed by different teams in the Solana community. There's also some information if people are interested in potentially launching their own stake pool to support a group of validators or perhaps to implement their own unique staking strategy.
+
+Ben: Our thanks to Dan and Solana. If you are considering developing on Solana, head on over to solana.com/developers or click the link in the show notes. All right, with that David, let's dive into our interview with Hamilton and Chenyi discussing platforms and power.
+
+Hamilton: Seven Powers was an attempt to take an understanding of strategy and make it generally available as sort of pattern recognition—Chenyi I think uses that term which I liked a lot—for founders and people that are interested in trying to create great strategies and make their companies successful.
+
+The reason it needed to be decentralized is that there are really two major step changes in the value of a company. The first is product-market fit and the second is getting power. They are quite distinct and involve different things. Peter Dill gets at it in his book with his x- and y-axis. You create x value, but you only get to keep y percentage of it and x and y are independent variables.
+
+The thing is that each of these involves an invention. It means there's a creative activity involved. When you look at something that involves invention and creativity, it means guess what, it's the inventors that do it. The idea behind Seven Powers and Strategy 3.0 is to put into the hands of those who are capable of inventing a way of looking at the world that gives them a little bit more acuity about what will work and what won't.
+
+David: Specifically, what will work and what won't on developing power not finding product-market fit, but the second piece.
+
+Hamilton: Not on product-market fit, that's right. It's very much focused on the second thing and it should be in those people's hands. You have to empower the people that actually can do the invention. What we found is that platforms often involve different types of power. They're very complicated and idiosyncratic. They're complex. You can look at one and it's hard to tell whether they have power or not and figuring that out is hard so pulling that apart is a useful exercise.
+
+David: Chenyi, could you tell us two things? One, from your perspective from this work that you all have done and are still in the process of doing, how do you define platforms? Then also, why is this group particularly interesting to you?
+
+Chenyi: I'll address the second question first, which is why platforms are so interesting. I guess it's pretty obvious to us all that platforms are creating tremendous value. There are stats out there that say the majority of the most valuable companies today would operate on some form of platform in this model. For us, it's both important and just intellectually so intriguing to go into them. I guess the way we define a platform, we think of it very broadly and at a high level. We think of it as an intermediary for transactions and that's it.
+
+I know sometimes we see people sort of think of platforms as being bound to digital technologies. People equate the term platform with digital platforms. For us, that's actually limiting the scope of the topic because platforms really are more than that. It's a model with very ancient roots.
+
+There's a book that Hamilton and I both really enjoyed reading and learned a lot from called the Matchmakers from Evans and Schmalensee. Both are economists who've thought really deeply about platforms. They took their title in reference to the Chinese ancient village matchmakers who would keep a knowledge base of single men and women in the village and paired them up for dates.
+
+I love that example because these are people who existed 3000 years ago, they have no access to our technology, but they operate as platforms. This is sort of the scope of going after, if we come up with a framework to understand platforms, they should work as well for Uber or Airbnb of today, as they should work for the matchmakers 3000 years ago.
+
+Ben: In that example, is the keeper of all of the men and women to matchmake sort of intermediary of transactions that you're thinking of so that whoever keeps that database is indeed a platform?
+
+Chenyi: Yes, and if you think in their mind 3000 years ago, they'd be thinking, how do I out-compete this other matchmaker in my village? You'll be thinking about okay, do I have a bigger database? Do I have any better knowledge about these people on my platform? It's actually not that dissimilar.
+
+David: What are the dimensions that are going to make my platform more successful than another?
+
+Chenyi: Exactly.
+
+Hamilton: There's been a revolution in knowledge about this kind of business model. A lot of that is around the first step, which is product-market fit. You make better matches. If you've got mobile phones, all of a sudden, it's possible to do a lot of stuff that you couldn't do back in the day. That question is different from the question of okay, you've created all this value. How do you get to keep some for yourself, which is what power is about.
+
+Ben: What you're essentially teeing up here is—just to make sure I understand—platforms, under this definition of an intermediary of transactions, encompasses a lot of business models that we would otherwise refer to more narrowly as marketplaces or platforms like what Windows offered for application developers to build on top of in the '90s that gave it so much power, could encompass aggregators of sorts because they're all in a way an intermediary of transactions.
+
+I think what you're saying is there's a whole lot of work that you've done and there is to do out in the world of applying the Seven Powers framework specifically to platform businesses because they're different from businesses that aren't platforms. Do I have that right?
+
+Hamilton: Yes, that's well put. David should be interviewing you.
+
+David: Chenyi, can you walk us through your work on how to assess platform power?
+
+Chenyi: I guess even before that, we're not trying to understate. I think we just said platforms are not tied to a particular form of technology, but there's an important thing to notice that technology is really important. There's a particular form that gets reflected in the platform which is technology that lowers transaction costs and it lowers it so radically that what you see is entirely new markets that were non-existent before.
+
+Our way of framing the relationship between platform technology is that platform is not bound to a form of technology, but technology is the driver for new platforms to emerge. That's something I guess all the entrepreneurs and inventors out there would have a very clear sense of what is the technology trend they're writing and creating new markets with their platforms.
+
+Ben: Fascinating. It's definitionally true, be it by reducing distribution costs or by reducing the friction to make a transaction. Every step change in technology dramatically reduces transaction costs.
+
+David: TikTok using AI, that getting cheap enough and good enough to have that drive the algorithm, so many examples.
+
+Chenyi: Yeah, exactly. The friction or transaction costs are in very different tastes. It could be reduced search costs, reduced cost to input information, reduced cost to deliver things to your customers, and it's only up to the imagination of entrepreneurs to create new ways to make them happen.
+
+Ben: It's a great point. Even thinking about the database of the notebook, to go back to the matchmaking example because I think it's wonderfully concrete. Somebody has in their head the five single people they know that they can recall that might be good to matchmake someone with the Yenta of the village back in the day, but if you have a big notebook and you can write down everyone, suddenly your cost of storage went down dramatically and your recall got much less expensive and much more scalable.
+
+Then of course, when you fast forward to today and you have Tinder, Hinge, and these sorts of apps, it's all infinitely cheap, not only to store but to input, to distribute, to incentivize people, to load their own information to the database. There are just all these dimensions of cost that collapse to make everything have less friction.
+
+Hamilton: Technology is what opens up whole new potential vistas on product-market fit and just exactly the way you described, Ben. But if you think of two-step changes in value, that's the first step change, and the second step change is okay, how much of it do I get to keep? That's the power step change. It makes that, in some ways, harder—that's the paradox—because all these things that reduce friction are easily available to lots of people.
+
+Your very ability to spin up quickly and make something happen and it seems very powerful may in fact be the very thing that makes it easy for a competitor to catch you. That's one of the paradoxes that you have to be really thoughtful about when you look at power and platforms.
+
+David: I love it. Okay, can you walk us through how you've developed a framework for analyzing the power of the platform?
+
+Chenyi: It's a very complex problem and the reason for that is each platform we've tried to do a case study on, the industry economics is different. There are so many interesting characteristics that impact the equilibrium state. For us, instead of trying to give you a very abstract high level framework that's not going to relate to the actual situation, it's probably easier to raise a few questions that we think every operator when they think through will find some value in that.
+
+I'll throw out the three questions and we can go through them one by one. Number one, how is economic value created on your platform and how does that value change as the platform becomes larger or has more participants attending it? The second question is how does each group of your customers perceive their economic value from your platform and how does that change as your platform gets larger?
+
+The third question is what is preventing your competitors from getting to equivalents in that value proposition? That to us is the comprehensive list of questions that you have to think very carefully about and then after that you may be able to get some good insights about whether a platform may have power or not.
+
+Hamilton: The first question is, what's going on here economically? Who's gaining and where's the money? I'll give you an example. In Uber, what's going on is you have two sides—drivers and passengers—and they're trying to match and they're highly heterogeneous because each driver passenger is time and location stamped. By having more drivers and more passengers, it makes it possible for Uber to develop more efficient route structures.
+
+What more efficient route structures do essentially is to minimize driver downtime. It doesn't change how long it takes to do the drive. That's baked into who it is and where they want to get to, but it does change how much time you have to wait before you get the next ride.
+
+Then you look at both sides of this and say, okay, why does greater density create an opportunity for value here? The answer is that it's a better fit. You can pick a driver that's near a passenger. This fit notion is something that's the nature of platforms.
+
+You're looking at both sides, must be highly heterogeneous, and you're trying to get a better fit. That's the nature of economic value. Then the question is okay, how does that value that you deliver vary as the participants grow? Because that's the characteristic of platforms that is often how they're differentiated by different levels of participation on both sides.
+
+What happens there is that as you are more dense in a specific region, this is a very geographically bounded economic proposition in the Bay Area, for example. As that density increases, you can decrease the amount of wait time for drivers. However, I'd argue all other people at Uber and Lyft that know this much better than we do, I'd argue that's not a linear function.
+
+Ben: Right, it has diminishing marginal utility.
+
+Hamilton: Right, it's a negative second derivative. What that means is that the curve flattens and so now if you ask the question, how does one provider compare to the other, which is the power question, which is the third thing Chenyi was getting at.
+
+David: Just to set that up for one moment, the first two questions are more about understanding the lay of the land. Then the third question of what prevents competitors from getting to equivalence, that's the power question. Is that fair?
+
+Chenyi: It's about both how much value you can create and then how much you can capture from it. The second question is not worth asking if you're not creating much value in the first place. You actually have to go through all of them pretty carefully.
+
+Ben: Just for my benefit and I think maybe listeners, because we went through the questions kind of quickly, can you just remind us of the questions again so we know what we're referring to in the first, second, and third?
+
+Chenyi: Yes. Question number one is how is economic value being created on your platform and how does that value change as our platform starts to get more participants? Number two is how does each group of customers perceive their economic value from your platform and how does that change as your platform scales? Lastly, how do you prevent your competitors from getting to equivalence?
+
+Ben: I see. The first one's really about quantifying value creation and obviously understanding how that changes over time. The second one is about the perception of that value creation by different participants. Then the third one is really about value capture and defending the castle over time.
+
+Hamilton: Chenyi said that the power question involved more than just the last one. If you remember, the power involves two things, a benefit, and a barrier. The first question is the benefit and the third question is a barrier.
+
+David: Actually, can we finish Uber and talk about that third question for Uber? Because that sort of feels like for Uber and Lyft, that's where the rubber hits the road on how valuable are they?
+
+Chenyi: I think a very challenging characteristic of platforms overall is you don't own your customers. Your customers choose to patronize your platform and they can choose to do the same with another platform. This is a scenario that we call multihoming, and essentially, what we're saying is that a lot of the differential value a platform can generate is a result of the differential scale they have with their participants.
+
+Multihoming is what arbitrage out all of that differential value that platforms don't make profits out of their operations. The result of that is you're creating so much value, but all of that gets arbitrage and customers get it but not the owner of the platform itself.
+
+In the case of ride-sharing business particularly, the thing you really want to ask yourself is what is preventing my customers from also accessing the other platform that's competing with me? Your customers refer to both your riders and your drivers. It doesn't matter if my platform right now is larger if technically, both groups of my customers can frictionlessly multihome on the other platform.
+
+If you always open two apps and look for whichever one that happens to have that ride that's closest to you and always have open two apps to see whichever one gives me the closest rider that I can get matched with, then relative scale does not matter because you're contributing to the same pool of density in your local area.
+
+Ben: Makes total sense.
+
+David: Deep long listeners of Acquired will know that it's very close to Ben's heart with one of  your early startup weekend projects?
+
+Ben: That's true. At one point I started a startup that actually got killed by Uber not willing to play ball with us and cutting off our API, but it's effectively metasearch for ride-sharing to be able to find the fastest closest ride to you independent of who is actually providing the ride
+
+Chenyi: Wow.
+
+Ben: Yeah, it's an undifferentiated experience to hop in one or the other.
+
+Hamilton: It's interesting, the whole metasearch idea is a friction reducer. If you can get an overlay that compares two, then it's not hard to see what that does in terms of intermediating power.
+
+Ben: Metasearch as a category enables your customers to arbitrage away your power with less friction.
+
+Hamilton: That's right. Think of Snowflake or something.
+
+David: Okay, idea sharing is an example platform where you get to the end of the questions and maybe there's still kind of a question mark about the industry and the companies within it. Could we walk through an example of a company or an industry where you get to the end and you conclude, oh, wow, this company, this platform has a lot of power?
+
+Hamilton: David, before we leave rideshare, think of the moving parts here. One of the moving parts is what does that right efficiency curve look like? As you scale, how quickly does it start to slope down? Because that's going to be critical. If it's a straight line and your two times relative market share, your home free. If it tails off pretty quickly at an early stage with two times relative market share, you could be in an attractive relative cross position. Once the business is scaled, it's no longer true because you're into the flat part of the curve.
+
+It's the shape of that curve. It's your size relative to somebody else. Let's say you have that advantage, what's to keep it from not being arbitraged out? You want to turn to people like Ben and say, don't offer that app.
+
+Ben: Which they did.
+
+Hamilton: You can fully understand their motivation. You're the enemy.
+
+David: I think what you're saying is take this example of a market where there is diminishing returns to density. If the diminishing return curve is steep, then it's very unlikely that any individual company can develop power. If it's gradual or linear then yes, you still can't develop power even within a market with diminishing returns to scale.
+
+Chenyi: There's this concept that we call heterogeneity of preferences that matters. What it means is that returns to scale are always diminishing, but how quickly it diminishes depends on the space you operate in. In the case of Uber and Lyft, Ben, as you said, the drive is undifferentiated. All I care about is how far away my driver or my rider is. What they're doing is literally putting dots on the 2D geographical map and the minute you get to enough density, you're good enough.
+
+We can think about maybe something with high levels of heterogeneity. Think about YouTube. The content you watch has so many dimensions that you care about—the language, the theme, the music, and the production quality. That is a space where in order to get to a scale where I'm good enough, that this additional piece of content is not going to appeal to my users anymore, that's a much higher level of requirement, of critical mass, or of scale of content. This is something we think operators should also think through, what is the level of heterogeneity that your transactions have and that determines how important scale is to you.
+
+Ben: That makes so much sense that basically YouTube will continue to compound the economic value of their lead because even though there's, I'm going to make up some numbers that seem big, 100 billion hours on YouTube and only 10 billion hours on competing platforms, the thing I want to watch is so unique to me as a person, how I feel at that moment, and if the personality of the creator is interesting to me. The fact that there's always going to be a slightly better content market fit for me on YouTube than that other platform just means that that curve diminishes very, very slowly.
+
+Chenyi: Exactly. There's a favorable byproduct of that, which is for something like YouTube's content, it's actually really hard to describe what I'm looking for. How can I, in text, search for the exact content I want? YouTube accumulates this unique set of knowledge about both what you like and the watch time of others that attest to the quality of the video. That makes the search so much easier on YouTube compared to a competitive platform, even if it's a complete copycat to YouTube.
+
+Ben: YouTube is a good example where the value they provide to me is high, I perceive that value to be high, and then when you think about other constituents also, the creators perceive the value to be high, advertisers perceive the value to be high. Then when you get all the way to that third question of how are they better than competitors? There are lots of ways that they're better than competitors. I'm curious, as you think about YouTube as a platform, what are the ways that they have power versus other video platforms?
+
+Hamilton: Because of what Chenyi was talking about in terms of heterogeneity, if edge cases matter, there's a pretty good chance there's an opportunity for power. When you say edge cases matter, what you're really saying is that the curve doesn't flatten out very quickly.
+
+It says that even the differences in one of the side's scale remain material in terms of the other side's appreciation of the value being provided. When you go on YouTube, your tastes are extremely idiosyncratic. I'm looking for the latest climbing send, something on general relativity, the weird stuff, the latest performance car, or something,
+
+Chenyi: Yeah, definitely. There's a lot of [...] in economics that states there could be an equilibrium pricing schema where you charge one side and you pay the other side and that still contributes to a very powerful platform in the long run.
+
+It's an interesting state about YouTube. It's very complicated but extremely intriguing, which is that they have accumulated so much heterogeneous content that they are able to charge enough mindshare from their users. They monetize that mindshare with advertising dollars, which they then pay their creators.
+
+It's a position of power that creates enough firepower to keep maintaining and enlarging that lead in this particular user-generated video content market. That's why you keep seeing YouTube get larger and larger and that's because there's one source that provides them with that benefit that they can maintain in the long run.
+
+Ben: It's interesting that there's no real scale that seems to have been reached with YouTube where any margin starts getting compressed. There doesn't seem to be any place where a meaningful number of creators are going direct and publishing to their own video platform that's not YouTube, that doesn't seem like YouTube is having to pay out a smaller and smaller percentage of its profits to creators.
+
+It doesn't seem like advertisers are trying to get more bang for their buck. They're happy with the bang for the buck. The margins are not getting compressed there. It's kind of remarkable that as that business continues to grow and grow and grow, there is no margin compression in any corner of the business.
+
+Chenyi: Yeah, and the cost of multihoming on the creator side is actually not huge. You take a catalog, you upload it to the platform, it shouldn't be theoretically impossible.
+
+Ben: We will multihome this episode on both Spotify and YouTube.
+
+Chenyi: Exactly. The real question really to focus on is what's binding all the viewers? Why do people keep coming back to YouTube? A good thought experiment to go through is, let's say there is a copycat version of YouTube stood up tomorrow, which carried over every single video YouTube has today, would you move with viewers and slowly start to go to the other platform?
+
+This goes back to my earlier point about if this is such a heterogeneous space that the cost of search is not immaterial for me to, over time, accumulate the set of influencers I follow and tell YouTube which ones are the content I love to watch. YouTube knows the watch time, which is a very important input into their algorithm of what is the high quality content as proved by all my other users.
+
+That information dramatically reduces my search cost that the other platform, even if they have the whole suite of content, cannot really match. There are frictions right there on the viewer end that I think is protecting YouTube's business.
+
+Hamilton: Chenyi and I argue about this.
+
+Chenyi: Yes.
+
+David: Do you have a different opinion?
+
+Hamilton: For me, the reason I go back to YouTube is an expectation that exactly the content that I want is there and it's not the efficacy of the search. That's the dispute.
+
+Ben: There seems to be some sort of buried thing in my brain that is aware of their network economy power. At first, I thought it was brand, but it's more like I have the assumption that the latest SNL skit is going to be there because everyone uploads their stuff there. I'm with you, Hamilton. I'm going to go to YouTube every time because I have the absolute most confidence that the thing that I'm looking for is there because of their network economy power.
+
+David: I'm so excited here.
+
+Hamilton: When you say network economies, what you're referring to is that a network effect is when somebody uploads something, it makes the whole site more valuable to everybody else for all these reasons. It makes matching more efficient and more likely to result in a good thing happening in terms of value.
+
+David: I totally disagree. I'm with Chenyi on this one.
+
+Hamilton: There you go. That is perfect. Two for two.
+
+Ben: David's a real YouTube user. You spend hours a day.
+
+David: I've become a real YouTube user. I think there's a baked-in assumption, Hamilton and Ben, in the way you think about YouTube. You represent a large class of people, but I think there's also another class of people that I'm guessing Chenyi and I may be a part of.
+
+Hamilton: We won't get into age demographics here.
+
+David: The assumption is, you both think you are going to YouTube with the intent to look for something. I don't go to YouTube with the intent to look for something. I go to YouTube with the intent for YouTube to service for me without me doing anything things that I will enjoy.
+
+Hamilton: Interesting. Different use case. I hate to say it, but probably, history is on the side of the younger demographic. Although I guess, Ben, I hate to group you with me.
+
+Ben: No. I use YouTube the way that one might speculate older generations use YouTube. David is a little bit Gen Z in that respect.
+
+Hamilton: There you go, David. Now we've classified you.
+
+David: Amazing. I'm so happy. I can retire now.
+
+Chenyi: That's a good point for [...] through because without being YouTube, you won't know exactly how our customers split between people who've searched and people who just look for enjoyment on your platform. Every platform should have a clear sense of how its customers are split into those groups.
+
+David: Yet, both the segments exist for YouTube.
+
+Ben: This is what I loved about how specific you are, Chenyi, in your second question about how different customer segments perceive value. Because in analyzing the value created by YouTube to me but also the power that YouTube as a business has for me as a specific customer is totally dependent on my use case of it.
+
+Chenyi: Yeah, exactly. To give some examples, that's a more stark contrast between different modes of how customers might perceive the value. I think we often hear like, oh, more buyers will attract more sellers and more sellers are going to attract more buyers. This is oftentimes true, but it's so general that it's oftentimes missing the actual granularity that matters to you.
+
+The example I'll give is to think about an Amazon seller and how he optimizes his economic value from the platform. These sellers typically have a built-out supply chain. They more or less sell around the market price. What they're trying to do is they want to sell more units at a single price. Whether or not I'm going to go to a different platform, the question he's going to ask is, how many more units am I going to sell, and is that going to cover my cost of goods on the other platform?
+
+This rationale, if you take it onto an eBay seller who's trying to auction his antique watch is going to be very different. He has only one watch to sell but the equation going in his mind is, how can I sell this watch for the highest price possible? Again, this just depends on the better matching thing that we talked about before because the more participants you have on this platform, you're going to have better matching. It's more likely for you to have a buyer who values this watch much more than others.
+
+The question he's going to ask when thinking about this alternative platform is, what is the likelihood that a buyer with more willingness to pay is going to appear on the other platform and by how much, and how do I compare that with the cost I have to manage this other platform that I may want to hop on?
+
+You have to understand what's the equation going on in your customer's mind very carefully because sometimes, they could be really different. That determines the equilibrium of the competition.
+
+David: The Amazon seller doesn't care about finding people who will pay a higher price for their product. They want to find as many people as possible who will pay the market price for their products, right?
+
+Chenyi: Exactly.
+
+Ben: Assuming their margin is roughly comparable and also putting aside the question of, is it strategically a good idea for my business to sell through Amazon versus selling direct or I think intentionally not diving into that because it's a whole bag of worms.
+
+Hamilton: Right.
+
+David: One question I want to ask you all, maybe YouTube is the right one to go back to. I think we can all agree that YouTube has a large power opportunity. When and how is the right time for a company that finds itself with a large power opportunity as a platform to start capturing that value?
+
+Famously, everybody thought that Google was nuts with YouTube because it lost billions of dollars for more than a decade. In retrospect now, perhaps, that was a brilliant strategic decision by Google. How do you all think an operator should think about that?
+
+Hamilton: For me, the key thing here is to remember that the product-market fit and power questions are different questions. One doesn't necessarily answer the other, in fact, often doesn't. When you have a business model that gets you to product-market fit, there may be a power opportunity embedded in that and there may not be.
+
+Those are two very different problems. One is the problem of capitalizing on an inherent potential for power, and the other is trying to figure out what are you going to do that will get you power in something that currently doesn't have it. The second is a very hard problem. It's a second invent that's every bit as hard as the product-market fit invent.
+
+Think of Steve Jobs trying to figure out where to take Apple when the PC business turned out to not have any power. Here's the most brilliant innovator of our generation and yet he couldn't solve the problem and he ended up losing his job.
+
+Ben: It's actually worth drilling in on that, Steve Jobs came in for a minute. Of course, you tempt me with the Apple history catnip. I have to jump on it. It's interesting that he tried power computing—I don't know if the macOS running on other hardware devices was an initiative that started while Steve was still there. But it's interesting how obsessed Steve was with, we control the whole stack. We're the software and the hardware, our software only runs on our hardware, and our hardware can only run our software.
+
+With power computing and all these Mac clones that Apple authorized and said, we're going to enable our OS to run on these other PCs, I actually owned one. It was a cheaper Mac. It did not save the company because they had no ability to take the profit dollars that they earned from that and build something defensible with it. It's fascinating that, Hamilton, exactly to your point, they did try things. Also, there was no power opportunity that they or anyone really found to be a very profitable PC manufacturer.
+
+Hamilton: Yeah. I think if they hadn't completely flubbed the Mac3, I think they might have ended up in a very attractive power position because they did own the stack and they did own the operating system. They didn't yet own the processor, but they could eventually.
+
+If you think of the PC business, the two notes of power were the OS and the CPU. But you needed to have superior scale and get everybody signed up to have that work. The Mac3 was such a complete flub that it made it possible for the IBM PC to just take over the world, basically. Of course, the IBM PC didn't have power either. That ended up being a long-term not that attractive business
+
+Ben: It's funny because the Mac, just the desktop line, has a lot of power today. It is a remarkable amount that people will pay in dollars, they wouldn't pay to a different manufacturer with a different operating system for an Apple computer. Now they bundle in proprietary chips that are the best on the market, so they have a dramatically lower cost structure. It's just margins everywhere.
+
+Hamilton: Right. As you might guess, I'm a huge fan of Steve Jobs. I think his impulse to control the stack was not based on power but on aesthetics almost. He wanted to control the experience and had this sense of the aesthetics of the experience. He was a genius at that kind of stuff.
+
+It could have aligned with power, had their execution been better. But it was a failed opportunity, unfortunately. This will really date me, but I remember when IBM entered the PC business, Apple took out a full page ad in the Wall Street Journal or something welcoming them to business.
+
+That's sort of a common trap that you sometimes see, which is people that are just amazing at innovation, which I have a huge admiration for, that is to say, getting product-market fit think that they can just out invent the competition forever. That story usually doesn't end well, I don't think. The things you're in, you have to solve the power equation, or else you end up competing in a commodity way on your base business.
+
+David: Obviously, the answer is different for every company, but what are some ways to think about when you can feel comfortable enough in your power position to start dialing up your profitability, which I guess would equate to dialing back your subsidies on the platform?
+
+Hamilton: In the early stage of the platform, with product-market fit, what that means is there are a lot of people who want this stuff, so you scale like crazy. You're rewarded for that. Your B round and your C round, all of a sudden, the numbers start to look pretty darn good. But then, later on, you face the power question which is, is that a profitable proposition or have you just acquired a lot of customers?
+
+I think it's an idiosyncratic tactical question that as a business progresses, you have to make a decision about when you start increasing prices and it's not that you'd eliminate the subsidy. I think like all decisions like that, you have to look at the immediate effects and the long-term effects. But I have to say that in general and you see this in my book, there is this difference in businesses between the take-off phase and the later phase.
+
+Takeoff phase, when there's enormously rapid growth. In that phase, the acquisition price of a customer is not priced properly, so it's a good time to get customers. Later on, you can tighten the screws a little bit.
+
+David: The YouTube example is interesting. In their case, dialing down the subsidy and dialing up profitability means increasing ad loads to users. For years and years and years, ad loads were very low. It was comical. Users were getting so much value for very little ads on YouTube. Then in recent years, they've been dialing it up quite a bit. They don't seem to be bleeding customers in doing so.
+
+Chenyi: I'm going to supplement Hamilton with his own book so Hamilton doesn't feel awkward. I think there are two parts to this. Number one is if there are readers of Seven Powers and you are patient enough to flip to the appendix after each chapter, there is this concept that we call surplus leader margin, which is the maximum price you can charge more than a competitor while still maintaining your competitive position.
+
+Essentially, what we are talking about here is, how much can I charge while maintaining the leadership I have today? That number is not dynamic. That number is dependent on the differential scale you have against the other platform. That's one of the high levels, know what's the overall thing you want to achieve, but at the same time, we recognize the difficulty.
+
+Power is both market share and differential margin. Hamilton always knows it's an active trade-off between both entrepreneurs because when you see such a large green field you can penetrate, you should grab that and sacrifice a short-term margin for a larger market share. That's still power because you can realize those profits in the future.
+
+It's hard to tell people the one size fits all and this is the exact point. Understanding what is a surplus leader margin, how much is the maximum you can charge given the best alternative out there, and dial up the tune when it's the right time.
+
+David: All right, for our second sponsor of the episode, we have our Acquired favorites, Modern Treasury. Modern Treasury is by far the best way to manage your company's payment operations. Their platform allows you to move money right in your product using code, not manual finance operations. It's amazing.
+
+You can move money in any software product with them. It is literally a software layer on top of your and your users' bank accounts. They have direct integrations with almost all the major commercial banks and allow you to move money using APIs and web apps versus managing the vast complexity of the banking rails yourself.
+
+When you build money movement apps with Modern Treasury, your product, engineering, and finance teams can focus on your core product, what makes your proverbial beer taste better, rather than figuring out all of those nuances.
+
+On a personal note for Ben and me, it has been incredible to watch the success of this company. When we started getting to know Dimitri and the team two years ago, they were doing about $10 million I think in payments reconciled per month. That grew to $100 million in less than a year. Now they're doing over $2 billion in payments reconciled every month. Just incredible.
+
+Ben: Crazy, and the team is so freaking talented. It was fun hanging out with the team when I was down in San Francisco a few weeks ago now and just an unreal all-star group they've built there.
+
+David: Such all-stars. They are now trusted by customers across, basically, every sector like Gusto, Marqeta, Revolut, Pipe, TripActions, ClassPass, BlockFi, LedgerX, TradFi, crypto, and regular software products. All these folks use Modern Treasury for a variety of money movement use cases like automatic payouts, direct debits, incoming payment reconciliation, and digital wallets.
+
+Whether you're looking to build a FinTech app specifically or just add payments to your regular old software product, Modern Treasury's APIs make it super simple to do so. Go check them out and learn more at moderntreasury.com/acquired and tell them that Ben and David sent you.
+
+Ben: Thanks, Modern Treasury. There's something that I've been thinking about that I want to ask you. We had, months ago after our TSMC episode, a couple of the investors from NZS Capital on. One of the points that they made is we actually don't like to hold Apple in our portfolio right now because our view is that they're being overly extractive to their customers or over the whole ecosystem. That's the 30% stuff with the App Store.
+
+They are realizing their market leadership and they are squeezing as much as they possibly can. You contrast that against a TSMC, which does not charge the very most they possibly can to the customers to manufacture their chips. It's a very intentional strategy and they believe that that's sort of a long-term view that they have in order to do that.
+
+I'm curious, as investors, how you think about, from the perspective of maximizing enterprise value for a firm, what should a company do? Should they be maximally extractive to their ecosystem or should they leave some surplus on the table?
+
+Hamilton: It's a great question. Before commenting specifically on TSMC, one of their primary competitive interfaces, obviously, in terms of fab technology and getting ahead in that is Intel. Just a caveat, both those businesses are amazing, well-managed, and successful. The fact that TSMC seems to be gaining ground is also a reminder to everybody that power is not forever. I use Intel in my book. That's the way life is.
+
+Technology is changing, competition changes. For me, one of the longest-term power things I've ever observed is that of elite universities and being able to maintain, which is ironic that it's not even in the private sector.
+
+I think on a pricing question like that, pricing may well be tied to a strategic goal, but it's tactically available to anyone. Justification has to be tied to underlying fundamentals. Essentially, what you're doing is, in the case of TSMC which you've cited, they're sort of giving up current profits for something in the future. Presumably, it's future revenues. So either get retention through customer loyalty or acquiring new customers.
+
+That leads you to ask, will more customers, more revenue in the future, give you more differential returns? That gets you down to ask about scale economies, do they have it? I would argue, yes, but it's a pretty unusual type of scale economy.
+
+There are some very strange industry characteristics here. It's a really large, lumpy capital. I don't know what's the new fab now. Is it $10 billion or something?
+
+David: I think it's $10 billion-plus if I remember from our episode.
+
+Hamilton: Yeah, huge number. There are "predictable material performance advances" i.e., Moore's Law. Life isn't usually like that. You don't think that, well, I've got a fairly high assurance that if I make the right technology choices I'll have a 10x improvement in 18 months or something. Life isn't usually like that. This is very unusual and it's driven by the correct technology choices. The other thing is that the tech advantages are driven by upstream suppliers.
+
+David: Right, ASML and others in this case.
+
+Hamilton: That's a hard choice, actually. If you go back away, there is a long discussion in semiconductor companies of whether to go through the x-ray lithography. It turned out there's a lot of money invested in thinking about that.
+
+Ben: It was very contrarian. In the early 2000s, even Intel, I think, funded ASML's development of a big industry consortium including Intel of the UV and then thought the technology was going to die. I think three or four years in divested, whereas, obviously, now that's the dominant way that we have these three- and five-nanometer processes and TSMC is to benefit.
+
+Hamilton: Right. Under those really odd industry conditions, it means that if you're quite comfortable with forward guarantees of customers, you can make a huge capital commitment. It wouldn't matter much if there weren't those big material performance advances and it wouldn't matter much if it was not all that lumpy. You could do it in small increments. It wouldn't matter if it was relatively small amounts, and it wouldn't matter if it was all vertically integrated.
+
+That allows a scale company to get to the newer technology first. That has profound implications for continuing that cycle, but it means that they're lower cost per transistor and they also can do higher performance products, which probably are higher margin. Before TSMC, the companies that crossed that threshold of enough comfort with forward guarantees were the companies that sold the products.
+
+Back in the day when you guys are too young to remember this, but there was a time when IBM controlled the computer industry. There's nothing like that today where people talk about tech dominance, but IBM just was a force that was just so far and above everybody else. They backward integrated into fabs. They were the fab leaders because they could do this stuff. And then Intel.
+
+We've moved from a vertical to a horizontal organization of this. I may be too reductive about this. But to me, their pricing makes perfect sense even from a purely Machiavellian shareholder value kind of perspective. That allows them to get comfort with future customers.
+
+David: Comfort that NVIDIA is going to stay with them for generations to come and be paying them billions of dollars to allow them to...
+
+Hamilton: Right. Remember, for the really tricky upstream suppliers, is it the Dutch company? Do you guys know who it is?
+
+Ben: Yeah, ASML.
+
+Hamilton: You have to make a long-forward commitment. It's not just the amount. It allows them to do that. Of course, if they had that advantage and didn't make the right choices about technology, and I don't know if that's luck or skill, then it also doesn't work. But they've made the right technology choices and they have enough guarantee of future business that they can now be the leader in technology.
+
+This is a business where that performance frontier is moving in a predictable way. Being a leader in technology means that you are a cost and performance leader in the business. It makes a lot of sense to me to give up current profits to guarantee that ability. Does that make sense to you guys?
+
+Ben: Yeah. Of course, I thought, maybe it's not actually benevolent that they're not maximally extractive, but I couldn't quite put my finger on why.
+
+David: Morris seems like a nice guy.
+
+Ben: Yeah, and the why is so interesting that to the extent that they can massively increase the probability that their customers stick around for a while, they can spend this $10–50 billion of CapEx to build these new fabs. They can be one of the very few customers in the world that's guaranteed to, over the next three to five years, get these machines from ASML and other suppliers like Trumpf, the laser company, et cetera.
+
+Because those are scarce resources to be the customers of those companies and because it's so expensive to build these leading-edge fabs, to the extent you make the right technology choices, there is this sort of self-fulfilling prophecy of guaranteeing all of those future profits if you have that magic ingredient of being certain that your customers are going to stick around.
+
+Hamilton: Yeah, it's going to be very interesting. TSMC is just such an amazing story. They've been, in all prior generations, a vertically organized business and made it horizontal. The thing that makes horizontal organization work is typically a scale economy so that you pick up more scale. The strange industry characteristics mean that predictability of future customers is profoundly important in terms of creating company value.
+
+David: When we contrast that and come back to Ben's original question with Apple's situation today, I guess it is quite different. I think a lot of people feel that Apple's 30% rate that they charge developers to be in the App Store is...
+
+Ben: Is maximally extractive.
+
+David: It's maximally extractive. Yes, that's a good way to put it. But they're not in a situation like that. They're a vertically integrated company. They control the whole stack and they're able to fund their also quite large capital expenditures, but they fund that through hardware sales in a very different manner than TSMC.
+
+Hamilton: Yeah, it's not clear to me that giving that money back to customers or suppliers would benefit them a lot. I have an iPhone and I really like it. I realized that every time I turn around, it's trying to get me to buy the iCloud or something. They're, of course, trying to take advantage of me, but I really love the product. They're, of course, very high switching costs.
+
+I was on a plane and unfortunately ruined my iPhone. I landed in Hawaii and had to get another one. It was a very easy choice to get another iPhone as opposed to another product. I don't think people are terribly dissatisfied with the situation so they're not risking a lot. It doesn't seem insensible to me. There are regulatory issues they're going to face and they'll be constrained in certain ways and all that, but it makes sense to me. Maybe I'm too cynical in my old age.
+
+David: No, I think it makes sense. They haven't changed the policy. They continue to succeed enormously.
+
+Ben: Apple just keeps looking at the baton of each of the parties related to them. They keep looking at developers and they keep saying, okay, are these developers going to stop making iPhone apps? That's where all of the most affluent customers in the world do their computing, like spend their time so that they're probably not. Are the consumers going to switch? People only switch in the direction from Android to iPhone, they tend not to switch in the opposite direction based on the last 10 years of data.
+
+David: And consumers don't feel that pain as much as the developers unless consumers don't know or care about Apple's take rate.
+
+Ben: Right. They're sitting and they're going, why would we change what we're doing?
+
+Hamilton: I have to confess a bias here. As you all know, economics roots were in the Scottish Enlightenment. If you think of Adam Smith's ideas, David Hume's, and so on, it's the idea of self-interest. Behavioral takes a little bit of a detour from this. It basically says, if you look at people's self-interests, you can understand a lot. I see both of these as being quite self-interested.
+
+Ben: To phrase this in a much more tongue in cheek way, it's almost as if these companies that have us over a barrel as consumers are saying, look, we're married at this point and as long as you're not going to divorce me, I will become a worse and worse partner to you over time. That feels like the concern to me with companies gaining more and more power over consumers in the long run.
+
+Hamilton: If you lead a company that has very high switching costs—and I'd argue for most technical people and non-technical people, an iPhone has very high switching costs—you have to realize there's a conflict there between how much lock-in you have, how you treat your customer and manage it very, very carefully.
+
+I often encounter companies where they have a wonderful product-market fit but they don't yet have power. One of the things is, could you develop switching costs? My advice always is don't think about how am I going to lock in my customers, but actually think of it a different way. What is it that I can do for my customers that create value for them?
+
+If that proposition has withered away that they're tied to me, then so be it. But think about the value creation part first, or else, you tend to go down these paths of win-lose propositions, which don't end up very well, typically.
+
+David: What the ride-sharing companies did with their membership programs, would that be a bad example maybe, that that was trying to create switching costs but didn't really help anybody?
+
+Hamilton: Yeah.
+
+Ben: The one I always think of here is potentially adding insurance to a transaction like Airbnb's million-dollar insurance policy. I won't just wire someone money directly, I will pay Airbnb's ridiculous fees because it's kind of nice to have that insurance policy and them as a trusted facilitator of the transaction.
+
+Chenyi: Ben, I think you're touching on a good point, which is that platforms are naturally also competing with their own customers. Because what if your customers go directly to each other, buyers and sellers just transact off you? As a platform, you have to first prove that you provide enough value that they should pay you a cut and stay on the platform.
+
+That's one front that every platform has to think about and we call it table stakes. The second issue that a platform must think about is, what do you offer is that differential? So the insurance program of Airbnb, could a competitor also offer a similar insurance program and achieve a similar value add to your customers? There are two layers of questions that, comparatively, we also have to think about.
+
+Ben: Right. Yeah, the great observation that the insurance example makes it better than wiring money into a void. It isn't directly to the person that's hosting the Airbnb, but not necessarily better than Vrbo or someone that could very easily go negotiate a very similar insurance policy.
+
+Hamilton: Why should you be interested in power? That may sound like an odd question for you. I was doing a class recently with some earlier-stage founders talking about power. I mentioned some companies that I thought probably might not have it and yet, some of them were public and had really high market caps. Some of the people in the audience's response was, throw me in that briar patch.
+
+What I just want to say is that it is important. We talked about the earlier example of Steve Jobs. What he found when the PC started to go south was that it was not fun. A lot of the best and brightest would leave the company. If you get into the stage where you don't have power, this isn't going to be a fun company to manage and it won't become iconic.
+
+I think that most of the founders I talked to, they're not in it just for the money. There's this sense of, this is kind of me and it matters to me the durability of this thing and its success. If you want your company to be durable, attractive, a great place to work, a great example for people, something you're proud of, you need to answer that second step change question, where is that power?
+
+I know you guys know that. I should mention that because I think people wonder, why should I bother if I've solved the first problem?
+
+David: I've just climbed this mountain of achieving product-market fit. Isn't that enough?
+
+Hamilton: Right, which is an amazing accomplishment when you think about it, and really hard. Isn't that enough? So I totally get where people are coming from.
+
+David: You both. Especially over your career, Hamilton, you worked with so many founders and managers. Do you have any advice for founders at that point, psychologically, when they get there? I bet a lot of people are just exhausted like they've just climbed this mountain. Isn't that enough?
+
+Hamilton: I don't think there's anything really easy that solves things for them. I think, as founders, they are used to hard challenges and approaching those positively. I think that's the best that you can do is just say that you've got another hill to climb.
+
+David: I love that. That's such great framing.
+
+Ben: We teased earlier that we were going to talk about the difference between network effects and network economies. This is something that David and I have flubbed on a few episodes where I think I've conflated them in our power section. I'm curious, what are some telltale signs of a company that has network effects but did not develop network economies power?
+
+Hamilton: I think network effects in the types of things that we've been talking about in this episode are common. When a driver joins Uber, he makes the platform more valuable to passengers because more efficient route structures are now enabled. That's a network effect.
+
+Things that happen there are somebody joins the network, that's the network part, that's the new driver joining. Something happens to somebody else in it that has a value implication. That's the effect. That's a network effect.
+
+The question is, what would you like to call network economies? That sounds like an odd thing to say, but that's really the question. You could say anything that there are network effects and there's power. You could call it might be one choice, and Chenyi and I are currently debating this.
+
+There's another choice, which is the one that I'm currently going down, which is that it's when there's power from direct network effects. A direct network effect is where you're joining has an immediate value impact on somebody that's on the same side.
+
+I joined Facebook because I'm your friend, and those effects are strong because they're additive. Another friend joins, it doesn't substitute for the one that just joins, it adds to it. Those kinds of effects that do more lead to winner takes all kind of situations.
+
+My naming choice right now is if there's power as a result of direct network effects, and that's in our economy and those aren't very common, I'd say indirect network effects like the one in Uber are much more common. It's just a value impact. That's the benefit side, but as you two well know, you need both a benefit and a barrier side. Is it arbitrable?
+
+Then you have to get to the much rarer set of cases where there's a benefit, it's material, and also it's barriered and then that's a much, much narrower set of things. Do you want to add something?
+
+Chenyi: I'm hesitant to drag David and Ben into our whole debate. I think the short version of things here is network effects describe only the value creation. It's a statement without consideration about competition, which the latter is all power is about. Regardless of how we end up defining network economies, it is the type of platform that we believe has power that's differentiating from network effects on its own.
+
+Hamilton: I wish I had said that. You can edit out my comments and put Chenyi in.
+
+Ben: For our final sponsor of this episode, this is just one of the most fun sponsor reads to do, Mystery. You all know about this company by now as they really have grown up in the Acquired community. They have a new offer to really sweeten the deal for Acquired listeners today too, which I'm excited to tell you about.
+
+David: Leave it to the Mystery guys to be coming up with new stuff.
+
+Ben: Of course, mid-season. You might remember, the Mystery founders, they came on the LP Show back in April 2020 to talk about pivoting from facilitating these magical nights out for consumers, pre-COVID, to magical virtual experiences in the home while we are all in lockdown.
+
+There was another twist yet to come. It turns out a bunch of consumers who did these virtual in-home experiences in April 2020 worked at places like Amazon, Microsoft, Apple, McKinsey, Uber, Twitter, Autodesk, and a bunch of other great now customers.
+
+David: Including Modern Treasury.
+
+Ben: Very true. Their virtual experiences with their friends were great. They really needed to upgrade that virtual experience with their team because after you log into Zoom 17 times in that single day, you're trying to have fun with each other, and make it feel different, it's hard to make it feel super different without—
+
+David: The beatings will continue until morale improves.
+
+Ben: Yes. Thanks for quoting me from the last episode. Enter Mystery. They take over all those terrible team happy hours from scheduling, planning, and executing. They even do all that and track engagement, employee retention, and impact afterward so you know where that budget is going. It makes those just really fun, great experiences.
+
+Fast forward to today, they've executed tens of thousands of events. I love startup pace. How crazy is it that in April 2020, they had done zero of these and now they've done tens of thousands not just for those huge companies, but also startups of all sizes, David, like you mentioned—Modern Treasury, Convoy, and lots of other startups.
+
+They just raised a giant Series A from Greylock to really blow this out of the water. It's been so fun following their journey. Here's how they're up in the ante. We were like, you know what, should we change this around? We really appreciate the great tidbits we've been able to share so far, but what else can we do together? And they were like, oh, for Acquired listeners, we'll do three events for the price of one, which I think makes it the best offer any sponsor has ever had on the show, which of course they are doing this.
+
+They want to plan a series of three experiences for your team and find out your preferences, what the team likes to do, what they don't like to do, and make each event get better than the last. They want to do this three-event thing so that you can experience what the ongoing changing craftsmanship of the journey is.
+
+If your company could use someone to take all the headache and event planning off your plate and turn them into something that people really love, go over to trymystery.com/acquired or click the link in the show notes. Go get that crazy deal to get three mystery events for the price of one.
+
+David: Thank you, Mystery. When we were emailing before this, Hamilton, you wrote something that I know is going to be provocative. You wrote, "When you see a flywheel, run for the hills."
+
+Hamilton: Right, I did say that.
+
+David: The number of decks that I see that have flywheels these days is about 100%. This is going to be a new way of thinking for folks. What is the concern about flywheels?
+
+Hamilton: Flywheels are a sign of product-market fit and tell you absolutely nothing about power. It's not easy to get a flywheel. That is how these platforms find life. You get into issues of critical mass, ignition, and all that stuff, but that's product-market fit.
+
+It doesn't say that if one company has benefited from this, that another, as I mentioned before, often the very technology that enables that happening quickly enables multihoming as well. The benefits are usually from a differential size on one or both sides of the platform so you have to somehow prevent that.
+
+Chenyi: Anecdotally, there's one exercise we did, which was really simple but surprisingly interesting. We took a flywheel from a company that's really popular. I won't name which one, but we swapped that logo with their competitor's logo in the middle of that flywheel. This still works. That's exactly what we're looking for.
+
+David: That is a brilliant thought exercise.
+
+Ben: Assuming that they have more scale than their nearest competitor, is there some way that you could draw the XY axis where they're growing in a way that's n-cubed and their competitor is either further down the n-cube because it's a time series axis, or perhaps they're only growing in a way that's like n-squared so there's no way that they could ever catch up? That seems to be the thing that you're trying to tease out.
+
+Hamilton: Yeah. Typically, these things do depend on a differential scale on one or more both of the sides. The way you've asked that question, Ben, you've just assumed the critical thing, which is you've said, it can scale three times as fast. Then the question is, why?
+
+Ben: Because it's a flywheel, a lot of stuff feeds into each other.
+
+David: Because I read The Everything Store.
+
+Hamilton: Right, exactly. Then you get into the multihoming questions. Like most things in power, the barrier question is usually the hard question. That's the one you'd have to tease apart is to say, okay, why do you really think they can scale faster? Once the market is saturated, why can they keep that difference? There's a dynamic and a static question involved in that. The character of multihoming is critical in all of this stuff.
+
+Ben: I do have one summarizing question on this whole concept of power as it pertains to platforms. Is it right to think about it like if I was operating a general store in 1850, I could apply the Seven Powers framework? But today, if I'm operating a platform business as many, many tech businesses are especially the most valuable ones as you pointed out, I have to perform a Seven Powers analysis on each of the transactors on my platform. Whether they're the supply side or the demand side, I need to understand what gives my business power given that specific segment. Is that right?
+
+Chenyi: I actually echo Ben's observation. Interestingly, we've been trying to mathematize all we talked about today for a long time. Every two weeks, we come across one of those edge cases. It'd be like, ouch, that one is not included in this framework. The exact reason for that is, Ben, what you said, the participants in this transaction are going to have a different economic structure. They have a different industry structure that alternates how they behave and what they optimize for.
+
+This is exactly what makes platforms so complex but so interesting. You have to look very carefully at those and every platform is going to come out a little bit different. It's a work in progress for us. We hope one day we'll have a very abstracted and generalized framework that can describe the [...] operator you have to still focus on the one that you own and how that's different from others.
+
+Hamilton: I thought it might be useful for me to do a quick take of a summary of some of the points that we've talked about. Platforms are such an important topic. They're like markets that are a way of exchanging. That's what business is about in a certain way. There's a lot of value there.
+
+The tech frontier that's been advancing has made many, many more platform plays viable if you think of processors, displays, mobile distribution, and all that. Basically, we all have this little computer that we carry around with us that makes a lot of stuff possible that just wasn't possible before. We see that in many of the largest market cap companies in the world or platform place.
+
+The first reason is there is lots of value there. The second reason that's an important topic is it's really complicated. It strays into the multi-sided market territory, which economists have spent a couple of decades trying to sort out. I find it personally, to understand really what's going on, is very intellectually challenging. Lots of value, it's very complicated.
+
+The third reason is that we talked earlier in this podcast about their two-step changes in value in a company product-market fit and then power. In the case of platforms, one of the things that's really odd but very important is that those signals go in opposite directions often. That you can have tremendous product-market fit traction, something can scale really fast, and be a big market, but the very thing that lowers barriers, it allows easy competition and multihoming.
+
+You might see something where there's huge value created. But if you ask the question of is there power? A completely different issue and maybe at odds with the very thing that's driving all the value. Those are the three reasons.
+
+Getting into the nature of the platform, value facilitates an exchange between heterogeneous buyers and heterogeneous sellers. Exchange is what creates value, matching, typically.
+
+Ben: To your point on the first component here, technology is really such a huge lever because technology lowers friction. It makes possible much, much, much more efficient making of these transactions and making of these matches. That's why it seems to play such a huge role.
+
+Hamilton: Yeah, utterly. Think of matching. There has to be discovery and then there has to be the mechanics of the transaction itself. Think of discovery without mobile. Let's say I wanted a ride in the San Francisco area, will I just call a lot of people to say, do you have a car and time to give me a ride somewhere? That's really what we're talking about here.
+
+Having a computer that sits with you all the time that you pay a lot of attention to is a tremendous advance in availability. On the transaction side, all of a sudden, you can push a button and you don't have to negotiate price. Payment information is already in there. We all take this stuff for granted, but this just enables all kinds of, essentially, markets that didn't exist before.
+
+The value comes from matching a buyer and a seller, but power in these things is really different. It comes from one platform doing this materially better than another platform. The thing that drives that difference in performance is sustainable. Typically, the difference in performance is driven by differences in the size of at least one side of the platform.
+
+The New York Stock Exchange is more attractive than the London Stock Exchange because the liquidity is better. There are more buyers and sellers and you get lower bid-ask spreads. But if all the parties involved had easy multihoming, that would go away. But in fact, it's maintained by contractual arrangements and it's really a pain to switch from one to the other.
+
+David: The easy obvious example of this that has been discussed much in the past decade is Airbnb versus Uber. Airbnb has so much unique supply that you're not going to find on booking.com, HomeAway, or any other platform. Whereas, Uber, it's like, yeah, I can get a car on Uber, Lyft, DiDi, or whatever.
+
+Hamilton: First, you have to meet two conditions. The value that one platform delivers has to be materially better than the other. Remember, this is a matching situation. I won't get into the technical aspects of it. But basically, it's equivalent to a distance formulation.
+
+Even in multidimensional space is a square root function, which means the second derivative is negative, which means that it flattens out after a point. When it flattens out and whether there are two competitors that are both in the flat region is a critical element there.
+
+Even if that is true, that it isn't flat enough between the two of them and there is a real material difference in deliverables, then the thing that maintains that difference, which is different scale on at least one side, has to be maintained. The degree to which multihoming is frictionless is critical.
+
+David: We just see that play out so frequently in the startup, technology, and venture investing space. I have on my mind because we're researching right now, NVIDIA. They were the first computer graphics chip company in Silicon Valley. They thought that was going to be so great. They had such a great team and so much funding from Sequoia and Sutter Hill, and it was going to be great.
+
+Hamilton: Sutter Hill. Wow, that's going back away.
+
+David: Yeah. Then they wake up 6, 12 months later and there are 90 other companies that have all been funded doing the same thing. There's no power there. NVIDIA, of course, had to develop power in other ways.
+
+Hamilton: The segway of their business from one thing to the other, that'll be a wonderful thing for you to explore. You got to see what really drives value. Is there a real difference between competitors? Is there some lock-in of some sort of one side volume count so that you maintain that superiority? Anyway, this has really been enjoyable, as always. Thank you both.
+
+Ben: Thank you so much, Hamilton.
+
+David: Thank you both. This is a real treat and a treat to have. Both of you, welcome, Chenyi, to Acquired and the first time, I'm sure not the last time. We can't wait to do this again.
+
+Ben: All right, listeners, thank you for joining us on this journey with Hamilton and Chenyi. I learned some stuff. David, I know you learned some stuff. We want to hang out with you. Come join us in the Slack. We've got over 11,000 members. We'll be discussing the news of the day, this episode, and dropping some hints for the next episode.
+
+We've got a Limited Partner show that you should go check out. We've got three. I think David recorded that we've released only for LPs or we'll release soon. If you're a paid Limited Partner at acquire.fm/lp, you'll get access to those.
+
+Otherwise, after two weeks, all the episodes become public and you can search Acquired LP Show in the podcast player of your choice to get access to those public episodes like discussing what's next in FinTech with a partner from Bain Capital, Christina Melas-Kyriazi. What else have we released recently? Probably the Composer episode will become public here soon.
+
+David: Not Boring portfolio company number one.
+
+Ben: That's right, with Ben Rollert?
+
+David: The other thing on the LP Show, now with it being public, literally, the number one most requested thing that we got for anything ever at Acquired was, can I get the LP show on Spotify? Now thanks to doing this, you can.
+
+Ben: We've got a job board. These are jobs that David and I had special projects at Acquired that we research and curate personally. If you're looking for that next great career move, head to acquired.fm/jobs.
+
+Show this episode with a friend. We love social media, of course, but we love that strong one-to-one communication even more. Thank you so much for listening. We'll see you next time. Our thanks to Solana Foundation, Modern Treasury, and Mystery. Later, listeners.
+
+David: We'll see you next time.

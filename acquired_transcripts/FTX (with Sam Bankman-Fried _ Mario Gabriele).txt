@@ -1,0 +1,689 @@
+Mario: I don't know if that matters, FYI, but I just checked, and technically, the number of employees when I wrote the piece was 82. I said 75. It's kind of like whatever but...
+
+Ben: When you started your research, it was probably 75.
+
+Mario: Exactly. They hired seven between publication one and two.
+
+Ben: I believe that.
+
+Welcome to season 9, episode 7 of Acquired, the podcast about great technology companies and the stories and playbooks behind them. I'm Ben Gilbert and I'm the co-founder and managing director of Seattle-based Pioneer Square Labs and our venture fund, PSL Ventures.
+
+David: I'm David Rosenthal. I am an angel investor based in San Francisco.
+
+Ben: We are your hosts. Today, we are telling the story of the crypto trading exchange FTX started just two and a half years ago, and today worth over $25 billion. They're by far the fastest-growing crypto exchange. In the research, I found that they grew an astonishing 10x by volume in the year 2020. I went to look if they repeated that unbelievable feat in 2021 and found out that they actually 10x'd just in the first half of 2021.
+
+David: So the answer is no, they didn't. They doubled.
+
+Ben: Unbelievable. The pace is accelerating for FTX. We're still waiting on end-of-year numbers, but this company is just astonishing. FTX is now the sponsor of the Miami Heat's basketball arena, FTX Arena, and you can see their logo on every major league baseball umpire's uniform. You can see Tom Brady and Gisele in FTX commercials. It's wild.
+
+What is going on here? How did they get so big so fast? What's with these huge brand deals? Today we're going to tell the story with the CEO and founder, Sam Bankman-Fried. Sam is a genius and effective altruist. He's also the wealthiest person under 30 in the world, with an estimated net worth of nearly $9 billion.
+
+We are trying something new at Acquired. We have a guest host here with us today. We've brought in Mario Gabriele from The Generalist to team up for this episode. Welcome, Mario.
+
+Mario: Thank you guys so much for having me. I'm quite honored to get to be the first.
+
+Ben: You bet. Listeners, if you haven't read it yet, Mario did a three-part epic series on FTX over at The Generalist. I think it's safe to say, Mario, you are truly a world expert on this company after writing, I think, 36,000 words.
+
+Mario: Yeah. It was a long series. Brevity is never really my strong suit, but I really let myself fly on this one.
+
+Ben: I think that's why us, you, and Packy get along so well.
+
+David: We're all birds of a feather.
+
+Ben: Before we get in, is it right to say, Mario, is this company only 200 employees, and I think maybe started the year at a few dozen employees?
+
+Mario: Yeah, that's right. When I wrote my pieces in summer, it was closer to 70, 75. They're growing extremely fast, but still, when you look at the output, the leverage on each individual person is astonishing.
+
+David: All right. Before we dive in, I would like to welcome our presenting sponsor for all of season 9, pilot.com. Pilot is the backbone of the modern financial stack for startups. They themselves are backed by all star investors like Sequoia, Index, Bezos Expeditions, and Stripe. They are truly the gold standard for startup bookkeeping. Now over to our conversation with Pilot co-founders, Waseem Daher and Jessica McKellar.
+
+All right. We've talked a lot now about how Pilot works technically and the combination of humans, software, and Iron Man suits for your finance professionals. What does your actual tech stack look like? What types of technical talent are you looking to recruit to come join the team at Pilot?
+
+Jessica: Pilot has a really stacked engineering team. That's because what we're doing is quite difficult. How do you build the right systems to scalably deliver high quality books and other financial services to a wide range of customers and a wide range of circumstances? That's actually a really nuanced set of systems design and technical challenges that require a lot of finesse from people who are very, very good at what they do.
+
+As a consequence, we've really assembled quite the team to pursue this. I've spent basically my entire adult life quite rooted in the Python community and that served us well for bringing together a great team with that expertise in that ecosystem. I think the thing I would emphasize is the sophisticated systems that we're building. The workflow and systems design is where there's a lot of finesse. We've really built the right team to do that.
+
+David: You can learn more about Pilot and whether they can help your company eliminate the pain of tax prep and bookkeeping by going to pilot.com/acquired. Thanks to Waseem and Jessica. All Acquired listeners, if you use that link, you will get 20% off your first six months of service. Thank you, Waseem and Jessica, and everybody at Pilot.
+
+Ben: Thanks, Pilot. All right. Listeners, we're going to dive in here. Please know, and maybe even more than usual when we tell you this, but this is not investment advice. We may have investments in the projects, the tokens, the companies that we discuss. This show is for informational and entertainment purposes only.
+
+Mario, I think we want to make sure that we say this and cover you as well that you may have interests in things discussed, and do your own research. With that, on to our interview with Sam Bankman-Fried. Sam Bankman-Fried, welcome to Acquired.
+
+Sam: Thanks for having me.
+
+Ben: It is our pleasure and our privilege to really get to have you tell the story of FTX today, of Alameda research, how this whole crazy thing came to be, and really help us analyze the crypto assets ecosystem today.
+
+Sam: It's a crazy world.
+
+Ben: The first question I have for you is, how did this all get started? Take us to the moment where you became crypto curious, for lack of a better term or maybe a tongue-in-cheek term, and how you started digging in on all this?
+
+Sam: The first thing I did, I can actually, step by step, go through the pretty simple process. I went to coinmarketcap.com, I clicked on Bitcoin, and then I clicked on markets. That was my first investigation. I'll do that right now to see what it shows today because I think it's going to be an interesting contrast.
+
+If you do that day, it's going to show you a bunch of markets for Bitcoin. Just looking across the prices here, the data here is not perfect. They don't understand Tether’s pricing extremely well. But the range of numbers that I'm seeing with a few exceptions that we can get to is 48,280 at the low end and 48,320 at the high end. So that's a 10 basis point difference, I think, between the low end and high end pricing of bitcoin across major cryptocurrency exchanges.
+
+That's about typical today. If you're thinking, is there an arbitrage in Bitcoin? The answer is maybe, sort of. You're going to be paying a few basis points fees on both sides. This data is not perfect, it isn't perfectly synchronized, they're not pricing tether quite right. So really, the answer is kind of borderline. So it's a couple of basis points.
+
+Ben: When you went to CoinMarketCap way back when and looked, was your intention, hey, is there an arbitrage here? Is there a large spread?
+
+Sam: Yeah, it's basically what I was looking for. There's just an incredibly simple calculation you can do to get some sense of what one could maybe do if for some reason everything was easy and all the data was right. It's whipping a lot under the rug, but it gives you an upper bound on how much you can make doing arbitrage.
+
+What is that bound? You take the difference in pricing between major exchanges. That's the amount maybe you could make on each trade. You won't fly by the daily trading volume across those exchanges, and then maybe it'll be a percent of volume. I'm making that up. Again, this isn't meant to be precise. Back then, daily trading volume was only a few billion dollars, I think.
+
+Ben: What year is this?
+
+Sam: This is late 2017. It's a lot less than today. The spread between the exchanges was about 5% to 10%. It was what you saw. So it was about 1000 times bigger than the spread today.
+
+David: Was that even across major exchanges, not even go in esoteric?
+
+Sam: Coinbase to Bitstamp was usually like 1% or 2%. That's not even looking at Bitfinex or anything based on Tether, Japan, Korea, or anything like that, which would sometimes get in the 20%. What does this number say? Some number of percent. Let's say 2% maybe you could make times a few billion, times 1% of volume.
+
+So 1% volume is $20 million of volume or something like that. Make 2% on that. I think that's like $200,000. That's an estimate for how much money, maybe, you could make per day doing arbitrage. That's a lot of money to make each day.
+
+I saw that and it's like, oh, wow. Again, I don't know. This all might be fake, but if it's not fake, that's pretty compelling. That was enough for me to go create some accounts on exchanges, try and do it, and see what happened.
+
+Mario: Sam, do you remember where you were when you first looked at that CoinMarketCap page and the sensation of recognizing opportunity there?
+
+Sam: I was in California. I moved to California shortly after leaving Jane Street. I looked through it and it was very hard for me to do anything but immediately go try to do that. It's one of these things where you see it. The way I've been trained to think was it was painful every day, you don't do that.
+
+You see a great train in front of you, you're not doing it, and that should be painful. There should be negative feedback. Why are you not doing that thing right now? Why are you missing this opportunity? It's just like, I just need to [...] do this right now.
+
+David: To set some context, you were a trader at Jane Street Capital, which is one of the top quantitative hedge funds in the world. That $200,000 a day potential arbitrage opportunity in Bitcoin, how did that compare to the best trades you saw in traditional markets at Jane Street?
+
+Sam: It's interesting. Without going into detail about IP-sensitive things here, I guess what I'll say is, first of all, how much volume did Jane Street trade per day? I don't know if there's a public number here. But I can tell you that equity markets trade some number of hundreds of billions of dollars per day, maybe a trillion per day, depending on how you count. Jane Street is one of the big players in it.
+
+I would guess it's not the biggest by volume generally like a true HFT firm would be, but okay, the volume numbers that you'd be talking about there would be way bigger than the volume numbers that we're seeing. Maybe if you traded 100% of crypto volume, but you're not going to do that.
+
+On the other hand, if you can make one basis point on a trade in traditional finance, that's a good trade. No firm is like, oh, you're only making a dip on it, why bother? If you can get it done in a day or something, say like, yeah, here's the shortest time scale trading and make a base plan, yeah, go do that trade. That sounds great. If you could do it big, do it big, that sounds pretty good. We're happy with that.
+
+Maybe you can make two basis points. That'd be even better. Three, wow. Ten basis points? Come talk to us if it's big because we want to make sure we're not missing something about it because that’s a lot of basis points.
+
+David: And you're looking at 10% to 20% here.
+
+Sam: Right, and just blew it out of the water. I don't want to say this would have made a lot of money compared to the total amount of money that a top trading firm would make. I would not believe that statement. But I do think that in terms of percentages, I'd never seen anything like it before. One percent, I don't know that I'd ever done a trade good by 1% before in my life on anything.
+
+Maybe I had some weird, tiny, illiquid [...], which was like, holy shit, guys, this trade is good by 1%. They're like, yeah, it's $38. Congrats, Sam. So yeah, the spreads here were just unheard of if true. But of course, maybe they weren't true. Maybe it's all fake data. I don't know, or at least I didn’t know then.
+
+Ben: You had left Jane Street and you went to California, was it like the classic I don't want to be a trader, I'm leaving this world, I'm thinking about what I'm doing next, but you got pulled back in because the opportunity was just so unignorable?
+
+Sam: Only sort of. I really, really loved my job at Jane Street. I really enjoyed it. It was a good fit for me, and they were also just really good to me there and to most of their employees. It was a good place to be. It suffered from basically none of the problems that you generally hear about on Wall Street. I think many places do suffer from those problems. It mostly didn't.
+
+I was super happy there. It was more that I sat down and thought about what I wanted to do with my life and felt like, I don't know what the answer is, but there are a lot of things I have to try before I die. There are a lot of things that I want to give a shot at. I just think they're an extremely high upside. I don't know how good they'll be. I listed 10 and like, oh, boy, there are 10 compelling things. Probably one of them is going to be great.
+
+Mario: What was on that list?
+
+Sam: It was a pretty diverse list. Example of things on that list, politics. Going into politics is one of them. Becoming a journalist was one of them. Working at a nonprofit was one of them. Just bumming around the Bay Area and seeing what happened was one of them. Trying to find some startups, I don't know what was one of them. Fundraising for nonprofits was one of them. I didn't feel very confident about which direction to go. I felt compelled in a lot of different conflicting ways.
+
+David: It's impossible, from the outside, looking at you in this story not to make the analogy to 30 years earlier. Jeff Bezos, Mario made that analogy in his great pieces. How does that resonate with you? Of course, Jeff is leaving D.E. Shaw, a quantitative trading hedge fund, because he saw the huge opportunity of the internet, and was like, I don't know what I'm going to do on the internet, but I'm gonna do something.
+
+Sam: I didn't know that story at the time. I think it probably would have resonated with me had I known it. But all those stories are things that I didn't dig into until more recently, but I think there are a lot of parallels there.
+
+Mario: At the time that you looked at CoinMarketCap, how much knowledge did you have about Bitcoin in general? Have you been introduced to the white paper? Were some of your friends talking about it?
+
+Sam: I'm trying to decide whether nothing is the right answer. It might be. I'm not sure if it's quite the right answer. I'm not sure it's not the right answer, but it's pretty close to that. If you asked me what is a Bitcoin, I would not have been able to give you an answer other than a thing that trades on some exchanges and decentralization. I don't know.
+
+Mario: It's better than everyone else at the moment, a lot of the time.
+
+Sam: Maybe. I got one word further. But I couldn't have described a blockchain. I guess it was like the chain that blocks the transactions in them. I didn't really know who they were. I don't know if the blockchain does it. I really didn't know what crypto was when I first jumped in.
+
+Ben: It's a fascinating way to come to it because there are so many other folks. I can remember in 2012 or 2013 seeing Brian Armstrong at South by Southwest and getting obsessed with the notion of decentralization, but totally coming from the product manager developer side, never having experience in finance. The fact that it was a tradable asset was the part that was the completely foreign thing to me, all these years later.
+
+It's fascinating to me how technologists see the core technology, people from the finance world see the core change in the financial asset, and this crazy soup that we're in is because those two things are merging.
+
+Sam: I think that's right. One thing which we really try to maintain as a company is that people understand both of those sides. I did not before. I now understand what a blockchain is. But we want our business development team to understand what a blockchain is and how it works. We want our developer team to understand what a trade is and how it works.
+
+I think it's really hard to make good decisions. I'll give you an example. We want to list a new asset and we have to think about risk parameters for it. Is there some interplay between blockchain confirmation times and initial margin? Do you even know whether there is interplay between those?
+
+Whether that is a thing you have to think about, you have to have some instinct on both sides. But you have to be able to tell me, it takes about five minutes to send something on a blockchain and that number could get up to five hours during congested periods. You also have to know we care about movements on the order of a few percent for risk purposes, and we don't credit people for margin purposes until it lands.
+
+We're not usually pre-crediting, but maybe for some blockchains we want to, and we have to, to some extent. I say we don't pre-credit, but how many confirmations do we require for Bitcoin? It's not infinity. I think the answer is mostly there isn't a lot of interplay between those two things. But I think it's really hard to know there was interplay unless you can go through that thought process on both sides, be able to know what to think about and how to ballpark it.
+
+Ben: I want to take us back chronologically. You talked about you pulling up CoinMarketCap. You think maybe there's an opportunity to make $200,000 a day. You end up finding a trade that makes about $20 million a day. How did that transformation happen and how long was that opportunity available?
+
+Sam: Basically, the best trade we found was the Japan Arb. Korean bitcoins were trading 10% to 50% of American bitcoins. Lots of people said, why don't you buy American bitcoins and sell them in Korea? The answer is Korea wants a restricted currency.
+
+You can't get the Korean Won out of Korea. You can't sell it for dollars easily. You could buy a $10,000 bitcoin, sell it for $13,000 in Korea of Korean Won. Now you have Korean Won on a Korean exchange and anything you do with it is buy a bitcoin back for $13,000. I'm being a little bit [...]. There are some things maybe you can do, but you couldn't fundamentally just do that trade.
+
+Nearby though, Japanese bitcoins are trading 5% to 20% higher than American bitcoins, still quite a bit. The Japanese Yen is not a restricted currency. In theory, you could buy an American bitcoin, send it to Japan, sell it at 20% higher, turn the end back into dollars, wire it back to America, and you've just made a bunch of percent. Anyway, we tried to get set up to do that and it was incredibly logistically complex to do so. But around the start of 2018, we finally were able to turn it on.
+
+Mario: Sam, when you say we, who's in the room there at this point?
+
+Sam: Twenty-ish people who we cobbled together at the last moment. Myself, some high school and college friends of mine, some people from the Effective Altruism Community, some people who are friends of friends of friends. We'd only existed for like a month or two and had been frantically trying to put together something that looked like a team. It's very sort of ad hoc.
+
+The scale of it, in theory, if one had infinite capital, one could have made 10% on a few $100 million a day, maybe. I think $20 million was the size of this trade. We did not have a few $100 million of capital at the time, which is very frustrating. We still made like a million dollars a day from it during that period, so it was still a fantastic trade.
+
+But in the meantime, we're doing everything we could do to scale up our capital base. What's the APY [...] is a number that doesn't even sound real. I don't even want to say it. You hear that number like, oh, yeah, Ponzi scheme. Unfortunately, we basically scaled up the capital base the day that the arb went away. So we failed to really ever get to the point where we could have gotten with it, but it's still amazing trade for the three or four weeks that both we were active and it was alive.
+
+Ben: And so we at this point are Alameda Research. This all predates FTX.
+
+Sam: That's right.
+
+David: And are you thinking you guys are going to build a crypto quantitative trading firm at this point?
+
+Sam: We were thinking that. While doing that trade, we were doing a lot of other trades much smaller. Our vision was, this probably won't be the last good trade ever. We should build a firm here, whatever that means. We want to be scaling up.
+
+What was fundamentally happening here? Incredible amounts of customer excitement about crypto. Huge, huge buying and selling pressure—usually buying pressure but some of each—in different exchanges, jurisdictions, and tokens all over the place, and very little liquidity. None of the institutional quantifiers were in this space.
+
+When Japan was buying $400 million a day of crypto, there was no firm set up to be able to provide that liquidity. It was just like a giant mismatch of liquidity demanded, liquidity supplied that was creating gigantic spreads. Customers were getting terrible prices, and there is a pretty big opportunity to come in and provide on both sides of that. The Japan Arb was just one example of that.
+
+Mario: Before you guys ramped up on the LP side, were you guys just running your own money into this?
+
+Sam: Basically, yeah. It was the money we cobbled together. I had a little leftover. We cobbled together a few million dollars, then it iterated on that capital base over time, although without ever taking external equity or anything like that.
+
+Ben: Without naming names, because I'm sure you can't, do you have any fund meetings of what it was like to walk into a pitch? Any memory that sticks in your mind where you're trying to raise capital and you're describing the trade that you're making?
+
+Sam: Yeah. People were really excited hearing it, but they had all these questions. The questions just keep coming up of how do you handle A, B, C, D, E, risk, custody, and things like that? We're trying to answer them, but what's the honest answer? Where are we really actually coming from?
+
+We just [...] started this company two months ago. We're trying to scale up extremely quickly. We don't have great answers to some of your questions. What's your policy on X? We haven't written a policy on X. It's been around for two months and we've been desperately trying to get a bank account the whole time.
+
+Definitely, there were a lot of people who were like, I'm super excited to do this, can you show me your audit? We were like, literally, no crypto company has ever gotten audited before, of any type. We've been around for two months, obviously, we don't have an audit. Those are a lot of the pain of doing it. People were like, provide us some reasonable assurances that every other investment we've ever made has been able to try this and be like, oh, boy, that sounds hard.
+
+Other things that were going on, basically, we're trying to do what we can to optimize this opportunity. This was a period in crypto when a lot of people made a lot of money. We weren't the only ones who thought that we had a pretty good opportunity. How would you compare a quantitative trading firm to (for instance) someone who just issued a token and it went up a lot?
+
+Our returns are 3 trillion billion percent. It's like a little bit of a silly comparison, but it's not a completely obviously stupid comparison. It's a little bit complicated to think about what the right way to think about that is. There's no clear right answer sometimes. So we're simultaneously fighting for capital, versus a lot of firms like that.
+
+Frankly, people who invested in tokens made a lot of money, sometimes. It depends when you mark to and from. Those are probably the two biggest things that I think came up during our conversations.
+
+Ben: And you're referring to the fact that you're doing all this just after the ICO boom. So there were a lot of people that were inventing securities, not securities out of nothing, and then those would go up rapidly. It could also go down rapidly.
+
+Sam: Yeah, that's right. We serve at the tail end of the ICO boom. The ICO boom had not actually quite ended yet, as of that.
+
+Mario: And LPs are essentially looking at it as just high-risk capital. So the opportunity to earn a trillion billion percent versus 10%, they're trying to weigh those two things in a category that they think, what the hell, it's high risk anyway.
+
+Sam: Yeah, that's sort of right. We fell in a little bit of an awkward in-between, frankly, where on the one hand, we were high risk and who the [...] are these people?
+
+Ben: And it has the word crypto in it.
+
+Sam: Yes, it has the word crypto in it. We're low risk, we're doing arbitrage. Going on a firm exactly for extremely risky low-risk investments that make a fair bit of return but less than extremely risky ones do. It was always trying to appeal to a non-existent niche, and that definitely made it harder.
+
+Ben: Okay. Why start FTX? You've got this quant crypto trading firm, it's going well with Alameda, you're finally landing some big institutional capital to have real AUM here that you can make interesting money with, so you decide to start a futures exchange?
+
+Sam: Right. I guess there are a few things going on there. The first is, frankly, when you do the math, in order to really scale to where it needed to go, Alameda would have needed—and it did eventually succeed in this, but to actually get a substantially bigger capital base than it had, if you look at the amount that we're paying on capital combined with just a bunch of other difficulties there.
+
+One cool thing about crypto is it's very transparent from some perspective. It's very easy to see how much are the exchanges making, as an example. That is basically public, and it's also big—really big. To give some sense of what that means, how big is big, again, it's all public. You can do the math.
+
+This is circa late 2018. They were transacting how much per day? Globally, $5–$10 billion. What were their fees? They're making four basis points on average on that. That's a few million dollars a day that they're making, so billion dollars a year of revenue. It's a lot of revenue.
+
+The core business in all of exchange from some really simplistic perspective is very simple. Now, I want to know if this is really a reductionist perspective that I do not ultimately think really reflected reality. But the core business model is you have a matching engine and you let people submit bids and offers to it.
+
+David: Call it billion-dollar run rate revenue for the industry, which obviously was growing super fast too—a very high margin revenue. That's software revenue.
+
+Sam: High margin revenue, and we pretty deeply understood what product one would be to make. If you want to do this, what you need to do, the answer is like, oh, no, actually, that's pretty straightforward. We could do that.
+
+Ben: For all of our listeners out there who are not familiar with the trading world, I'm going to make a way oversimplified comparison here. Imagine running Airbnb or Uber, but you don't actually have the hard part of any humans, any cars, or any Airbnbs. You just have a pure matching of supply to demand of a purely digital asset. So your variable costs are near zero or zero?
+
+Sam: Yeah. It's very near zero. It's a definitional issue like maker rebates. It's a variable cost and it just decreases your revenue, whatever, but it's basically near zero. So we felt like we've been using these products, we understand it, it's a big business, but okay, fine, whatever. I understand Amazon, sort of. It's making a lot of money. I'm not starting Amazon 2.0 tomorrow. We're going to sell socks, but they haven't thought of that one.
+
+What was the other thing? The other thing was that in theory, I think an exchange is a much more complex business than what I described. In practice, exchanges circa 2018 were not. There's a lot of other things you might think you would have to do as an exchange. You’re mostly right that you have to do them, but that doesn't mean people did do them.
+
+David: We're not that far removed from the Mt. Gox era at this point, right?
+
+Sam: We're not, and you think back to that and you're like, well, okay, obviously, you can beat Mt. Gox by just not losing everyone's money.
+
+Mario: It's a killer feature.
+
+Sam: It really is. Okay, that's being a little good, but what were the killer features back in 2018? Some say they weren't that much harder than just don't lose everyone's money. The biggest exchange at the time was bleeding each day about a million dollars of customer assets to a risk engine that didn't work.
+
+Ben: Whoa, can you explain what that means?
+
+Sam: Let's say that you have futures on a platform, as one does. So people are taking leveraged positions on these futures, they put on a leverage position, and it doesn't go so well. They start losing to it, nothing all that exciting has happened. The market starts moving [...]. Their [...] long, and they put on a $500 million position because people will do that sometimes, right?
+
+Then markets go down 50%, now all of a sudden, their account is worth, how much? They lost $250 million, and their beginning count equity was what, $170 million or something? It's negative $80 million of account value right now. What does that mean for them to have a negative account?
+
+David: Who holds that bag, right?
+
+Sam: Right, exactly. You can call them up and ask for $80 million and they'll say, haha, no.
+
+Ben: Are they basically not liquidating people's positions fast enough when the market starts to turn against the leveraged bet they're making?
+
+Sam: That's exactly right. That's exactly what they're messing up. They were messing this up extremely consistently. It wasn't just like, oh, yeah, something weird happened that day and they didn't quite get their liquidations done in time. That's sad. It was like, yeah, it's Tuesday. I guess I lost $823,000 today. Oh, that wasn't so bad. Wednesday was worse.
+
+Ben: This is okay because they're making so much money. If this were purely what was happening to their cash flow, then they would be out of business immediately. But they're making so much that they're just running supper inefficiently because they have this problem.
+
+Sam: It's actually worse than that. You made an assumption there. Can you walk through that assumption? I don't know if you realize you made an assumption there.
+
+Ben: My assumption is if they're taking three to four basis points of everybody's trade, then they have this nice fat revenue stream that they can afford to make these screw-ups and not liquidate people out of their positions fast enough.
+
+Sam: You're making a more fundamental assumption.
+
+David: Is the assumption that Ben's making that the exchanges are covering the losses?
+
+Sam: Yeah, that was the assumption.
+
+David: Because they're not, right?
+
+Sam: They're not. Okay, but that's weird because again, the person's not going to pay up. What's going on then? Who is covering for losses? The answer is the customers.
+
+Each week, they would email the customers and be like, congrats, you got 83% of your PNL this week. The other 17% went to bail out people who are underwater. I know it's just happening every week. It's like you could average whatever, some 80 something percent of your positive PNL. If you lost money first, you go all of that, unless you lost more than all of your money, in which case you couldn't owe more than all of that.
+
+David: You got bailed out.
+
+Sam: Right. That's what was happening and that was not good.
+
+Ben: Since Alameda was a customer of these other exchanges, you were getting these emails and you're like, wait a minute.
+
+Sam: Oh, yeah. We saw this firsthand. We just saw it happening in real time. It wasn't fun. That's not how I would describe it.
+
+Mario: At this point, Sam, it feels like (if I'm not wrong) the futures market is particularly uncompetitive. I remember talking to Chris McCann of Race Capital and talking through how they thought about investing in FTX's seed round as spot and futures are almost equivalent in market size, but there are much less competitive players and much less robust exchanges when it comes to futures. Was that something that you guys thought about at the time?
+
+Sam: Absolutely. Basically, just a couple of players who were the entire futures ecosystem.
+
+Ben: Just for definitions, the spot market being able to buy and sell the underlying asset kind of like how Coinbase started. I go to Coinbase, I buy some bitcoin. That's a spot trade. Futures trade being more complex derivative instruments.
+
+Sam: That's exactly right. Basically, the futures market is half the total market. There are only two real players in it, and they're [...] shows.
+
+Mario: But they're still printing money.
+
+Sam: Right. But they're still printing money despite being [...] shows. That's right, which is an interesting combination.
+
+Ben: Yeah, your margin is my opportunity, as someone once said.
+
+Sam: Exactly. That was the point at which we felt like this is a huge opportunity, and to say they're not nailing it would be a bit of an understatement. So we just felt like, [...] it, we can do better than this. This is the bar, we will beat this bar. I also think that we were in a position where we could really directly tackle this.
+
+It wasn't like this dark room and we're randomly iterating. One day, we say, what if we just tried increasing the price we displayed by a percent? No, that makes no sense. We understood these products very deeply, understood exactly what we could do, and what would make them more powerful. That helped quite a bit.
+
+In the end, it's taking a ton of work and iteration. Sometimes they're just saying, yeah, having a good product is important. But it's just an incredibly important part of the sector, which was not done well. I think that's maybe another thing worth emphasizing. Why an exchange? Why not a custody firm?
+
+Ben: All right. There are lots of other players in this potential value chain here.
+
+Sam: Right. So why exchange? The answer is that there actually weren't a lot of other players in this value chain. That's one of the bigger differences between what we see in crypto and I think what we see in most financial ecosystems. Where usually, by the time from start to finish, how many people are involved in an average equities trade? It's a pretty big number in fact.
+
+David: As we learned with the whole Robinhood situation.
+
+Sam: As we learned with that thing. What actually happened to the Robinhood situation? If you trace it through well, there are broker-dealers, I guess. They have a mobile app that then goes to some [...] firm. Separately, there's the clearing settlement of that, then they'd go to an ATS, which goes to another [...] firm.
+
+Stock loan? Yeah, because there's a third-party stock loan desk involved somewhere here, probably. You start going through this and you're like, oh, wow, there are 12 firms because you buy-side and sell-side. Then someone's like, well, okay, was this trade fully funded? What do you mean this trade? Technically, there were 12 trades involved in one trade. It wasn't actually the case that one trade is even really the right way to think about it.
+
+Ben: So is the thought that if you're starting the exchange, then you can take on more and more players on each side and basically turn it all into one transaction instead of this gigantic mess?
+
+Sam: In fact, that is how most crypto exchanges work. How they work then and how they work today is if you look at the traditional crypto exchange, who is actually involved in it from start to finish? There's the buyer, there's a seller. There's the exchange. That's actually it.
+
+Ben: I see. The point you're making is because this is a whole brand new system, there's actually not all this cruft of all the players involved in every transaction. So you can't be anything but an exchange.
+
+Sam: That's right. Crypto happens to evolve that way. I'm not necessarily saying it needs to have, but it did.
+
+Ben: It certainly seems like the purest form of making a market.
+
+Sam: I think that's right. I think it's probably the right way to evolve. Yeah, there are a lot of advantages to that system. Which of the intermediaries in the traditional system was providing large value? You come out saying like, oh, maybe one of them was, it's not totally clear. Maybe zero, I don't know.
+
+I think it makes a lot of sense as a system. I don't think the sequence and [...] up there. But because it did, the exchange is the important piece. It's just like, there's no ambiguity about that. So if you're going to do something in crypto, you are going to do it at the exchange level, on the infrastructure side. That's where the value was.
+
+David: Of course, at this point in time, I think the whole idea of a DEX, of a decentralized exchange didn't even exist yet.
+
+Sam: I think it did technically exist, but it just wasn't really much of a developed thing.
+
+Ben: Certainly, Serum wasn't around because that would be years later by you guys. Uniswap hadn't started yet and V1.
+
+Sam: Yeah, that's exactly right.
+
+Ben: All right, listeners. Our second sponsor of this episode is someone that I use to help prepare for this episode, PitchBook Data. I was reading through FTX's PitchBook page to look at these astonishing rounds that have come together. Not just because of how fast it's grown in valuation and investment raise, but the unbelievable sea of investors that invested in this company.
+
+I just want to say thank you to PitchBook for providing a product that was, as always, super, super helpful in doing the research for what we do here at Acquired for this episode, and very likely what you do in your job as well. Whether you're raising money as a founder, whether you're a venture capitalist, whether you're in PE, whether you're in M&A, it's pretty likely that if you're listening to this show, you may now currently or at some point in the future have use for PitchBook and their 3.1 million companies in their database.
+
+I'm a satisfied customer. I know David and Mario have both used and enjoyed the platform as well. If you want to check it out, you can click the link in the show notes, pitchbook.com/acquired. Thank you so much to PitchBook.
+
+Going back to the story here a little bit. I've got a list in front of me that I pulled out from PitchBook of the original investors in FTX. This is a nutso list. I mean, Blackrock, IVP, Sequoia Capital, SoftBank, Race Capital, Binance. There are 30 firms and it's like the who's who. So your fundraise, once you decide, oh, we're starting a company called FTX and it's an exchange for crypto derivative products. This seems to go very well, very quickly, as opposed to Alameda, which seemed like kind of a grind to get off the ground.
+
+Sam: Why is that? I think there are a lot of things that went into it. I think, eventually, a story that convinced them was that FTX would be exciting and convinced a lot of people. It just passed diligence. The more diligence you did on it, the more it seems like, oh, that kind of checks out or like, look, the existing exchanges have serious issues, and people looking to like, yeah, okay.
+
+We've talked to a lot of people who use them who agree. I think we have compelling reasons to be able to do better. I think that there's maybe a more general thing going on here. It's not that they messed up a few specific things, but were great otherwise. They’re indicative of execution ability. I think some [...] just made a lot of money and peaced out. They're like, yeah, we're not going to, why would you try hard now?
+
+I think the other things were that it's a much more legible company. When you talk about recurring revenue. There sort of doesn't exist a clearer example of that than we have volume each day and we charge a transaction fee on it. It's incredibly clean. People like, is this revenue real? Yeah, it's all public.
+
+David: Versus the story of, hey, this arbitrage opportunity exists, we're going to keep doing it, and it may or may not be there tomorrow. If it's not, we'll find others.
+
+Ben: Right. In theory, that actually goes away over time. The more apparent this opportunity becomes, the less money you can make. Whereas in this one, it scales beautifully. The more money you can make, the bigger you get.
+
+Sam: Totally. I think I tend to find some things more credible than other people do sometimes and tend to believe a little bit more. Things might be great even if it's not provable or something like that. But for whatever reason, that was the case. So it just was a more legible product, and it was, from that perspective, sort of a nice one.
+
+Mario: Sam, isn't it almost exactly around the same time as you guys announced your seed round that Arthur Hayes, CEO of Bitmex, which is I think the biggest player at that point is getting into real trouble with the CFTC. So if there's ever a sign that there is an opening here, it really seems to all be happening in mid to early July of 2019.
+
+Sam: Yeah. I think some of this was coming from the perspective of, oh, wow, coincidentally, a lot of good things happened for us. Who would have thought? I think some of it is also a lot of hypotheses about ways that product differentiation would happen in the exchange space started playing out. Look, this is a big problem that some people have. We think it is going to get worse over time. It started happening.
+
+An important backdrop for this, how high of a standard do we need to hold ourselves to? The answer is incredibly high because we're coming from behind. We don't have a user base. We don't have a brand name. We're coming from a perspective of everyone knows our competitors and no one knows us. Just being about as good is just not worth anything. It's just like, whatever, okay, you're about as good as the other people. That's not going to cause someone to change what they're using.
+
+Ben: Sam, what were the things you were really intentional about as you realized, okay, we're going to build a company, an enduring institution here, an operating company with FTX? Because it seems like the crew that you got together for Alameda, it was like, there's this crazy opportunity, we have to exploit it, go, go go. We'll probably exploit more opportunities in the future. But now suddenly, you're realizing you're building a company that's going to become a key piece of infrastructure in this next paradigm. What did you have to be super intentional about?
+
+Sam: I think, maybe splitting this up into two things. One of which is internally, what did we have to be intentional about? Another is from a communication perspective. I think one thing also it traced down to is a long-term plan. The plan not just being, I don't know, we'll do the best thing at every point in time. Ask me in 10 seconds and I'll tell you what that is in 10 seconds. I can't tell you what that is now because the world might change, which is, honestly sometimes how we think about things, that the world does change and you have to adapt.
+
+But starting to think about, let's try and understand where this could be going, what we could do now to prepare for that, and how we can communicate that to our audience, to investors, to regulators, to users, to the company internally. I think that that's probably the single thing that we've gotten the most increasingly intentional about.
+
+Mario: One of the things that Ben pulled up was the analog to Bezos. It feels like there was also kind of a case of the Amazon AWS first best customer principle here where you were building this exchange and you also knew that Alameda could really benefit from having something like this in the ecosystem.
+
+Sam: Yeah. I think that having a built-in example of like, we are quite confident that this is going to be a product with demand because we've wanted this product for a while. This isn't some hypothetical, maybe someone wants it type of thing. This is like a, Jesus, is it here yet type of thing.
+
+David: The killer feature, I'm assuming, is it literally just as straightforward as with the crappy platforms out there today, I get net 83% of my profits? We're going to get you much closer to 100% of your profits.
+
+Sam: That was the most compelling thing at the time. One of them was like, we'll have an actual compliance department and we'll engage with regulators in a productive way. One of them is like, our deposits and withdrawals will hopefully work, most of the time we'll get banking. One of these is, we will innovate. We'll build new products. We'll explore other product areas and see if we can integrate it into the system. We'll be able to find a way to build cool things in the United States, as well as outside of it.
+
+There's eventually a lot of things that ended up becoming pretty relevant here. But I think the most legible thing and the most egregious thing at the time was this 83% of profits thing where it's just like, okay, that will change, that has to change. There's no way that that's how the world is going to remain.
+
+Ben: It is worth noting because you just brought up this in the United States and outside the United States, for our half of listeners that are in the US, you'll note that the thing you can use when I can use FTX US is not a derivatives platform. It's just to trade the underlying assets, and it's a very, very simplified version of the complex platform that you all have built, Sam, at FTX. Can you talk a little bit about your realization of that early on that actually international is the addressable opportunity for now and how you structured the company to be able to go after that?
+
+Sam: I guess I should also just explicitly flag that my thoughts on this have, to some extent, changed over time. That I think my thoughts have become a bit more nuanced. I think that I was a little too skeptical of the US opportunities when we first started.
+
+David: Thank you for being with us because you testified in front of Congress yesterday. We really appreciate a) your testimony, and b) you being here with us.
+
+Sam: Thank you.
+
+Mario: I want you to rock back up in the suit, Sam.
+
+Sam: I know, right. No, that one's gone for good. I actually thought about leaving it. My brother lives in DC. I thought about just leaving it at his house there.
+
+Mario: Because you're going to be back?
+
+Sam: Right. When's the next time I'm going to wear it, probably DC? Thinking about this, for me, this is a limited-time opportunity, potentially. What is the fastest way to get something compelling here? If you look at the US crypto ecosystem, the product that is relatively clean, at least today to get off the ground, is a spot bitcoin, USD, or Ripple. The thing about that is that it's clean, but it's not super compelling as a product.
+
+A lot of people have that product. Innovation is harder with it because just the core product is what it is to a greater extent. A lot of it is customer acquisition, which was our weakest point. We're coming from zero on that side. So that was not the most compelling thing to start with.
+
+If you want to build something more, if you want to build the products that there is really demand for and where most of the volume was trading at this point, those were the derivatives. It's a really long process to launch those in the United States. It takes probably five years from the start.
+
+What's the opportunity? The opportunity is elsewhere to start, at least it was, as of when we started. We started by not servicing Americans because it just had a really long regulatory regime.
+
+Ben: So you lived in San Francisco and then at some point you didn't. Did you have to move to launch that product? Did everyone else have to move? How did that work?
+
+Sam: More or less, yeah. When we launched it, I moved to Hong Kong, when we started building it out, I guess. This is late 2018 at this point and we launched in spring 2019. So we built it out from Hong Kong, and at least that's where I was at the time and then launched.
+
+Ben: Do I have it right, you're in the Bahamas now?
+
+Sam: That's right.
+
+David: You mentioned the things that you were going to have to do, you were new to need to build this out, regulatory was the first thing you mentioned. You were setting yourself up to completely changing your life. That was a big decision.
+
+Sam: Yeah. It happened iteratively bit by bit, but it felt like the right thing to do, I guess. In the end, I have felt and continue to feel like this is the most important thing I'm going to do. Whatever I can do to make this go well is what matters to me. It never felt like—I didn't even know that choice is exactly the word I would use to describe how it felt. It's more like, yeah, that's the thing I'll do here, and so it's what I did.
+
+Ben: I've heard you say in the past that you can't take zero risk. I always think that's an interesting point because everything has some amount of risk associated with it. Otherwise, you're just sitting in your chair doing absolutely nothing. Not only is there no economic opportunity, but you're also not going to live your life or build anything.
+
+I think it's interesting how you've decided to live your life in this way that you're saying, look, we don't know the regulations yet, so I'm not doing anything currently wrong, I don't know what the future holds. We are doing our absolute best to do all of the Know Your Customer and all of the Anti-Money Laundering requirements we possibly can. We're getting as many licenses at as many places as we can, and also, we're brand new and doing something in a brand new ecosystem.
+
+As I've been preparing for this episode, it really brought me to this perspective of actually everything in life is a risk-reward calculation, and you just have to make it a lot more often than other people do.
+
+Sam: That's right. As you said, we'll do the best we can. We'll get every license that we can get. You can't get more licenses than everyone you can get. That's how it is. It's not zero risk, nothing is zero risk, but so be it. That's, in the end, the perspective that I think we've taken and we've had to take. I think it's been the right one to take, although not always the easiest one to take.
+
+I think it involves accepting that you're going to have to go out on a limb and you're going to have to make judgment calls because there are always judgment calls involved in all these things. Again, that's just how it is. There's no point in pretending it isn't.
+
+Mario: Which honestly, in some ways, feels like almost a fairly singular or unique stance in many respects. There are the more US-centric exchanges, which I would say, have maybe moved a little bit more slowly, but have been super cautious about regulation. Then there are maybe more foreign-focused exchanges that move super, super fast, and are basically like, listen, we're not going to sweat this too hard.
+
+Whereas, I think you guys have really managed to thread the needle by saying, we're going to innovate, we're going to push new products forward, but we're also here to push the regulatory side of things forward as well. Yesterday was obviously an example of that too.
+
+Sam: I think that's right. I think that in the end, our sense of this is this isn't, you can choose to be compliant or you can choose to be functional, and you have to choose which company you're launching. I think the way we think about it is in the same way that you can make informed reasonable decisions on one front, you can make informed reasonable decisions on another front.
+
+Ben: We will come back to some of this in our analysis section, but just to finish out the growth of the company and bring us to today, now, one of the ways that you're acquiring customers is by owning naming rights to arenas, patches on major league baseball umpires, and celebrity commercials. I imagine when you launched in January 2019, that wasn't the strategy. So how did you get your early customers? You've been pretty much explosive growth from the get-go, if my understanding is correct.
+
+Sam: In terms of the early customers, the ones before we started building out the paradigm that we have now, it's a good question, and I think the basic answer is you do what you can. What that meant for us, basically, was, we think we have a good product. That's where a lot of this started from. Our strength is our product.
+
+Ben: To be super clear for people because Sam, you're not good at bragging. You have an unbelievably reliable and fast product with some of the cheapest transaction fees on the market. We think we have a good product translates into that.
+
+Sam: I appreciate that.
+
+David: This is a market where it's easy to objectively measure the quality of a product.
+
+Sam: That is true. That is an interesting piece of it. It's transparent, for better or for worse. I think, usually for better, but that means that, yeah, you can often just say, what does a good product mean? There's an answer to that. I think that what you do, if you think you have a good product, what's the right place to start? I think that the place you start then is, let's try to reach out to the people who care the most about the product, the people who are going to be really receptive to, we have a good product.
+
+Those, generally, are the power users. Those are the people who are using it every day, who use it deeply and intensely, who explore every angle of it. They're the ones who really care the most. So we basically started to try and reach out to the people who use crypto exchanges the most and say, hey, I want you to try this out and tell us if you don't like it. If you don't like it, great. Tell us why and we'll see what we can do about that.
+
+Ben: By the way, we've got a giant amount of volume from our sister company, Alameda, on the platform. So there's a big counterparty if you want to trade with us.
+
+Sam: Right. It helps basically solve this problem of, well, you're just starting up an exchange. Sometimes there's a catch 22, where, how did you get volume without liquidity? How did you get liquidity without volume? This gave a solution to that of basically starting with liquidity so that people could come and trade.
+
+We took a lot of feedback, we had the iterating. In the end, most of our initial growth came from power users, the people who are spending hours a day in the ecosystem, and would try out every new exchange that came, and use the ones that they liked the most, that was the best fit. We really do marketing, per se. Eventually, we learned how to tweet. That was about it.
+
+Ben: Which is very important in crypto.
+
+Sam: It's very important in crypto, but importantly, we didn't need to use Facebook ads.
+
+David: Right. Those are not your customers.
+
+Sam: Right. You could go on CoinMarket and like, oh, there's no exchange, let me try it. They don't need to see Facebook ads. So that's where our initial growth is.
+
+Mario: But presumably also, Sam, those initial customers were mostly institutions, is that right?
+
+Sam: They were about half and half. The thing that really set them apart with less being institutions and more being power users. Some of those were institutions, some of those were individuals. Crypto is somewhat unique. Mutual funds don't exist. Pension funds don't exist.
+
+Individuals don't all funnel all of their activity through a few central counterparties in crypto. They actually do it themselves. For really high volume users, a surprising number of them are individuals.
+
+Mario: Also you at this point were already kind of the avatar of the traders' trader in crypto. I remember reading interviews from 2019, people were talking about your arb, people were talking about Alameda. I think Chris McCann, I can't remember which product this was on, but weren't you at the top of the leaderboard for your trades?
+
+Sam: Yeah, Alameda was for a little while. It's on a few leaderboards. Some of them were more obvious than others.
+
+Mario: People knew you were this guy who was deep in the weeds. You had a lot of authenticity when you were talking to a power user because you're a power user.
+
+Sam: Yeah, I think the biggest thing that it helped with was not so much convincing people that this was what they should use, and more convincing people that they should think about using this. I think that that was where a lot of server initial growth really came from.
+
+Ben: Rather than going through blow by blow over the last couple of years from your launch, can you just fast forward us to today? What are some of the high level public stats that you can share on FTX as a business right now?
+
+Sam: Where are we today? I mean we've grown. Obviously, we were nothing a few years ago. A year ago, maybe we're down 12 or so, the biggest, globally. Today, we are the third biggest by volume, we're the second biggest by open interest, and actually pretty close to first, I just realized. We have $15 billion of volume globally in the last day. That's typically where we are.
+
+Obviously, there's some volatility in that from day to day. I guess we have a few million users. We have FTX US as well. We opened up a US branch about a year and a half ago. Today, I guess that's done a few hundred million dollars of volume.
+
+The biggest thing that we're anticipating is the launch of derivatives hopefully sometime in the next year that we think could really bring a lot that's been missing to the market. Because again, the US players just have not had a sophisticated derivative suite. We acquired LedgerX, now FTX US Derivatives. We're excited to work with CFTC on products through that. I think those are probably the biggest headline stats about where we are today.
+
+David: How about in terms of your strategy and how you think about things? Obviously, it makes so much sense in the early days. This is a market where there are strong power users, there's a power law curve to the customers in the market. You can objectively measure product quality. Of course, you're going to go after those power users. Maybe you learn to tweet along the way.
+
+Now you're doing all those things Ben mentioned a minute ago of buying a sports arena, naming rights, et cetera. That feels very different. Now that you've won that initial beachhead market, is it now more about expanding the whole market, or why this huge change?
+
+Ben: It's like a barbell almost, it seems like you're skipping the middle. You're getting this institutional multibillion-dollar trader, and then you're trying to get me in the nosebleed at a Heat game.
+
+Sam: Right. What's going on there? Maybe I’ll split it up into a few different pieces. I think the strategy looks meaningfully different from different perspectives. To some extent, it just keeps doing what we're doing. I'm going to ignore that piece, although it's important, but keep trying to grow it amongst power users. Ignoring that, what else is it?
+
+One big thing is the US derivatives play. Derivatives are two-thirds of global volume in crypto. That's not unusual. That's true in most asset classes. Derivatives are generally more volume [...]. But in the United States, derivatives are less than half a volume. The reason is there are basically no real derivatives in the US, I guess, to serve as a missing segment. Because you need a CFTC license for it, and basically, none of the crypto native exchanges have that.
+
+We're really excited to build out that product suite. I think it could be somewhat transformational for the ecosystem. It's a huge thing that doesn't exist today and should. That’s another piece of this. Putting aside those, there's Web3 gaming, which I think we see as a potentially huge opportunity and we're working on a lot of partnerships with NFTs in general.
+
+When you look at the customer acquisition side, I think it's easy to see a lot of the endorsement deals that we've done and think of that as customer acquisition. It's actually not really how we think of it. It's not the most effective way to acquire customers. It's gotten us some, not an enormous number. We think of it as a brand rather than marketing, if that makes sense.
+
+The diametric opposite of this is a Facebook ad. No one sees a Facebook ad and it's like, oh, wow, that's a cool fucking company. They see it and maybe they accidentally click on it, that's the whole truth. It's pretty direct just trying to acquire customers.
+
+When we think about what's the purpose of the partnerships and endorsements that we're doing, the biggest things we're thinking about are, how do we communicate to people who FTX is in a way which is meaningful and which will hopefully leave a little bit of a mark, I guess? Because if no one knows who we are, it's going to be really hard to convince them to use our product or anything.
+
+If we're just some anonymous random crypto company, that's not a very compelling thing for most people. So instead, what we're thinking is, how do we really communicate who we are to people in a way which is going to be sticky and compelling? When I say people here, I don't just mean potential direct users of FTX, the platform. I also mean institutional counterparties serve all the way through the spectrum, how do we communicate who we are?
+
+Because this is something that extends a lot beyond just users and platforms, all of our partnerships. It’s everything. Then the other thing is how do we establish our brand in such a way that if we do eventually go down more of just the direct marketing route, it's going to mean something to people, and that people will be compelled by it rather than just saying, oh, whatever. Another scammy crypto marketing thing. I'm going to ignore that. I think that is the more general vision behind the partnerships that we're doing.
+
+Mario: It feels like for crypto, so much of the battle globally is just the question of trust. Especially maybe coming into the US market as a late mover, I think, you guys have been incredibly savvy about building that trust by aligning yourselves with entities that are part of people's lives in really meaningful ways, and that they have long-standing emotional connections too.
+
+Sam: That's the hope.
+
+David: It's so easy so I'm going to keep going back to it. But going back to the Bezos analogy, it's so early. We're in 1992, 1993 relative to the internet. You can't trade derivatives in the US. The biggest part of the market doesn't even exist yet in the biggest financial market in the world. If you're playing the long game here, laying the infrastructure of trust is so much more important than acquiring a customer. Am I thinking about that right?
+
+Sam: That's how we think about it.
+
+Ben: All right. I'm going to move us here into our analysis section of the show. There's a section that we always do, Sam, called Power, which is based on a book by Hamilton Helmer called Seven Powers, which is an analysis of what it is about a particular business that enables them to achieve persistent differential returns, long-term durable profitability.
+
+There are seven of these as you can imagine. There's counter positioning, typically, versus an incumbent. Scale economies, switching costs, network economies between participants in the network, process power, which is usually, we know how to do something that's simply not transferable because it's too complex, branding, and then a cornered resource. We have something that other people don't.
+
+I've been thinking a little bit about what applies here. I think a lot of FTX's success to date is because you guys have executed flawlessly, very rapidly, as Mario puts it, speedrunning the market in his piece when there's just a massively growing pie and huge amounts of opportunity opening up. I actually haven't given it a lot of thought yet too. As there becomes more and more players and more and more competition, therefore profits get arbitraged away, what is it about FTX that will enable it to be durably profitable as competition pours in? I'm curious how you think about that.
+
+Sam: I don't think the answer to that is obvious. I don't think that it's like, oh, yeah, obviously, we're good at left clicking, no one else knows how to left click. They always right click and it doesn't take them where they're trying to go. I think that part of that is you look at the breadth and to some extent, frankly, randomness, of the type of things that we've tried to do. It's a little all over the place, which I think is also a sign of it's going to fuck with some narratives.
+
+Maybe one way to think of this is, you have Amazon, right? Amazon is AWS and they have their store. I challenge you to be compelled by the narrative about what those have in common. I'm not compelled by that.
+
+Ben: I'm actually not of the opinion that it's value creative for them to be under the same corporate umbrella.
+
+Sam: I'm not sure it is. If someone said, look, those should obviously just be different brands. I don't know, maybe. I don't see compelling reasons either way. I feel like yeah, it could be swung either way on whether they should be the same brand. But the flip side of this is, certainly, it seems to work for them.
+
+I guess from our perspective, what do I see is value creative for us or as a persistent something? I think just good execution, which is a lame thing to say, but I think that's the honest answer to part of it. I could try and point to maybe what I think are some things that caused that, I guess. What about us allows us to do that? I guess part of it is I think we have built a strong team and we've been really intentional about it. In particular, about not overgrowing the team.
+
+If you're too aggressive about overgrowing the team, then you get this monstrosity that no one can control anymore. It's like an underestimated factor often. We see time and time again this sort of really [...] with people. Companies just lose their ability to operate effectively because of it. I think that's a piece of it, although again, I don't want to try and make that sound more compelling than I think it is. I think it's only sort of compelling.
+
+I think that some of it really is just like the world is messy. There's a lot of things that we try to do better than other people. Maybe we do some of them better than other people. That helps us do well, and that's lame but true.
+
+Ben: There are also very intrinsic things about the business model that you are executing, that have very natural scale economies and network economies. Where an exchange requires counterparties, it requires liquidity for the spreads to be very narrow, so everyone gets the best price. The fact is, you were able to build volume very quickly in a market that was early on. Therefore, you'll reap the benefits of being a scale player forever as long as you keep executing well from being there at the right place at the right time in doing that.
+
+Sam: There's this interesting thing where also we started coming from behind though.
+
+David: The market was still in the takeoff phase. You weren't coming from behind against FTX today.
+
+Sam: That's right, but we are coming from behind with respect to today, some of the things we're trying to do. Some of the segments that we're trying to get at, we don't currently have that much penetration in. I do think we're still trying to do that. But I agree that there's some extent to which you can get liquidity moats, customer moats, regulatory moats, and whatever. There are a lot of moats I think can exist here.
+
+David: Is it fair to characterize FTX as a whole as you have the exchange business, both spot and derivatives as the bigger part of it? That's a great business and you've certainly built network economies and scale economies power there. But I think, if I'm hearing you right, you're thinking about, in the long-term, there's a lot more opportunity for FTX to build products and serve here than just beyond that. Gaming being just one of those.
+
+Sam: I think that's right. I think maybe another consequence of that or I don't know what flows from what exactly, but maybe a related statement is that I don't think of us as we've built the hard thing and now we’re coasting. I don't think it is like, great, we have our moat, now let's run with it.
+
+Mario: You've mentioned in the past how one of the growth strategies you guys might deploy is through acquisitions. Everyone enjoyed it when you talked about maybe buying Goldman Sachs or one of the major exchanges. Blockfolio seemed like it was a pretty quietly transformational pickup for your US business. I'd love to hear more about what you think about that, in particular and in general, where there's opportunity.
+
+Sam: I think it represented a pretty clear strategy that we've not previously been emphasizing, where we're looking beyond the power user. I think we served the seminal moment of we are now looking at the full spectrum of users. I think that that powerfully is important. I think it represents maybe an example of something, as we were talking about earlier, where we're coming from behind very much on that front, but we're going for it anyway.
+
+Mario: As you think ahead to future M&A—maybe this isn't a binary or dichotomy—do you think the play is expand beyond crypto and find new places for FTX to imbricate itself in users lives, or is it doubled down on these other crypto areas where we don't yet have a good base? Like NFTs is still too new for us, we should be finding a way to make a Blockfolio style move there, same for Web3 gaming, et cetera. Is it a yes and, or is there some sense of preference there?
+
+Sam: I think it's closer to a yes and. At least long-term, we really want to try hard not to cut off avenues that we think are going to be valuable. We'll have prioritization certainly, but we want to be pretty mindful of keeping the ultimate upside in mind.
+
+Ben: Thinking about the playbook that you've implemented to run FTX, of course, we've talked about some of these acquisitions, another one is a remarkable amount of transparency. Of course, you've got these great blog posts that describe all the volume that's happened over the course of the year, you're very public tweeting, you also gave Mario access to your entire data room so that he could write his pieces. What's the thinking behind this and why are you doing that when classically, no one in their right mind would do that?
+
+Sam: A thing that I think about a lot is sure, okay, you say people do X, tell me more. Why do people do X? Do people do X for a good reason? Convince me that X is the right thing for people to do here. I think, often, I come away feeling like I was not convinced. They said do X, we looked into it, and I don't see a reason why.
+
+You should always update on the fact people think you should do something. Often, there's a good reason for that. I don't want to dismiss that, but sometimes there isn't. When you think something is dumb, it's a good flag to look into it and see whether you're dumb or it's dumb. Sometimes it's one, sometimes it's the other.
+
+I think this is a case maybe of, I don't know. This seems basically going to be public anyway. No matter what we do, everyone is going to see this done. There's a number of people you can show something to after which it's not meaningfully private. I think that's part of how I felt about it.
+
+Mario: It feels like that ties back, in a way, to how you guys think about hiring and training your employees, which is like, no, you have to know both the technical side of things and the crypto native side of things, as well as the financial side of things. I remember in our conversation, you really said that it's very hard for you to know whether to trust someone's opinion because they don't have context.
+
+I think one of the things you do really well, both internally, it sounds like, but also externally, is give people all the context they need so that they can actually hopefully make sense from the data, and then you can decide whether to agree with it internally or how to communicate with it externally.
+
+Sam: Yeah, I think that's basically right.
+
+Ben: And just updating your mental models. Everybody believes a thing because of some underlying set of fundamentals. Those fundamentals change, but oftentimes, people still give out the same advice, even though the world's changed. Don't share your private company data made sense in a certain time in a certain market, and may just not make as much sense for your particular scenario now.
+
+Sam: I think it makes sense in a lot of times in a lot of contexts, but not literally all times in all contexts. I think there might be one where it doesn't. We're pretty comfortable in general being like, [...] it, yeah, it's kind of weird, but I don't know. I don't actually see the harm in doing it. I see the benefits. Yeah, let's do it.
+
+David: This is, I think, one of the most clearest examples of a company we've looked at in really the history of Acquired, all six-plus years of like, you are building a movement, you are evangelizing. That is what FTX and SPF are doing. If that is the case, you want as many people to understand as much about what you're doing as possible. You're not trying to keep anything secret. You're no longer in the world where you've got some arb and you want to exploit it before anybody else does.
+
+Sam: Yeah, I may think that's right. I think it's basically right.
+
+Ben: All right, listeners. For our final sponsor of this episode, we want to thank our friends at NordVPN. In fact, I think if (I'm remembering right) I told you in the last episode that I recently used NordVPN. I've actually used it a few times since, but it was especially important to use when I was on public Wi-Fi over at a conference at the Solana event when I was over in Lisbon.
+
+I was like, you know what, I probably should have a VPN on right now, especially at this crypto conference. So I had Nord installed and it's a fantastic user experience. I think you should check it out if you're looking for a VPN. We want to say a huge thank you to Acquired community member, Tom Oakman, who is the founder and CEO, who started NordVPN with four childhood friends back in 2012.
+
+Awesome story of a Lithuanian startup that's now used by, I think, over 15 million people. They have 1000 employees worldwide. The thing is totally bootstrapped. Just a really cool entrepreneurial success story. So if you're looking for a VPN service, look no further. Go to nordvpn.com/acquired or click the link in the show notes.
+
+Mario: Sam, we talked a little bit earlier about over-hiring and the risk of that. Something that I've always been curious about, given the amount of leverage you guys seem to have managed to extract from a very small team is, what do you look for when you are hiring folks? You personally or the team, are there certain things that just stand out to you as this is someone that I think can hang at the velocity that we operate at?
+
+Sam: It's so hard when you're interviewed, frankly, to do this. A lot of this is something that you have to figure out over time. But I think a lot of this is like, you put someone in an uncertain messy situation where there's no obvious right answer. There's no like, well, yeah, you do this and it's going to go well type of thing.
+
+You see how that goes, and you just frankly continue to stress the situation a bit, make the situation messier and messier, and see if they just continue to roll with it and be like, all right, yeah, it got a bit messy or whatever. Make another informed decision here, this is a new situation, I'll do the best I can, and it's not going to be perfect; or whether eventually, they just shut down and be like, this is too messy.
+
+There are just no good answers here. What you have to say is, okay, then choose a bad one. You say there are no good answers here. That doesn't mean there's not a best answer.
+
+Mario: So it sounds like one of the selections then is people comfortable with limited changing information and that are happy to, in absence of certainty, commit to some path.
+
+Sam: Yeah, and to do the best they can given that. Obviously, you always want to do the best you can, sure, but I think it's actually meaningful. In the end, I think that in practice, that isn't something that people always do. I think often people get flustered and end up doing nothing close to the best they can because they're just like, oh, geez, I don't even know what to do here. There are no good decisions. So yeah, I agree.
+
+David: Mario, you wrote about this in your great pieces a little bit. I think that that cultural value actually is quite different from Web 2.0 in traditional Silicon Valley companies in hiring, which mostly was this gross generalization. Obviously not every company fits this, but mostly, I think has, over the past 10, 15 years been hiring for experience. You scaled at Google, come to Facebook. You scaled at Facebook, come to Snapchat, et cetera, and on and on. That's really very different from what you're saying.
+
+Sam: Yeah, experience is very much not what we hire for. In fact, sometimes we're almost like, I wouldn't quite say we're anti-selecting for it, but we like flexibility. We can teach things. If there's something you don't know, you can overcome that. We can't teach someone necessarily how to stay cool under pressure or something like that.
+
+Ben: All right, I'm going to move us to our grading section here. Sam, in our classic episodes, when one company would buy another, we'd grade how good of a use of capital it was for big [...] by startup. Classically, Instagram is A-plus. They turned a billion dollars into half a trillion, and lots of examples of ones that are way worse.
+
+For these guest episodes where the story is being written in real-time, we tend to try and do it on a future-looking basis and say, okay, well, FTX has a set of resources right now. It has human capital, it has financial capital, lots of it, and it's got time. So if we look out five years from now, what's the scenario where you would reflect back five years and say, with all the resources we had, that was an A-plus outcome?
+
+What are the things that you can achieve where that would be the case? Then paint me the other side where you're like, that was a failing grade based on what we had, or potentially more interesting, what's like the C?
+
+Sam: What are the metrics we're going to judge ourselves by? One of them is, did we become the biggest crypto exchange? That's clearly going to be one of the core metrics here. I think thinking about did we ever succeed at getting retail users at penetrating that market is going to be one of the things that I think we're going to grade ourselves on, which I think I'm cautiously optimistic about, but we haven't proven that.
+
+We've never really gone big in that segment before. So I think that that's going to be one of the big things here. Then I think, did we manage to expand beyond crypto is going to be one of the big metrics.
+
+Ben: In other jurisdictions, you can trade equities at 9:00 PM on a Saturday, or at least, assets that look like equities on your exchange. I can go buy Tesla stock-ish.
+
+Sam: That's right. I think that's something that we think is important that we continue to move in that direction over time. So I think that that is another key piece of this. What else do I think is going to be important? Obviously, regulatory things. Did we manage to get licensure where we wanted to do it? Did we manage to continue to maintain good relationships there?
+
+That's going to be one of the things we're looking at. But some of this, there's a huge variety of things we're going to be looking at. I think some of this really is like, we don't even know what some of them are yet, and that's okay.
+
+Ben: Yeah, what about the C? Because the F’s easy. Everyone can be like, oh, we went out of business or something catastrophic. What's the plausible C?
+
+Sam: I think the plausible C is we just don't really grow. You look back at us in a year or in five years, where's FTX now? The answer is one of the bigger but not the biggest crypto exchange. They're number two. They dabbled in other [...], it didn't really go that far. They like growing the retail user base a little bit, but come on, that's not really what they have. I think those are the things that you would say in the C case.
+
+David: I'm smiling so much. I totally agree with you. I love that. It's so awesome that you're saying like, man, it would suck, I'd give ourselves a C if we're the second biggest crypto exchange in the world in five years. That's so great.
+
+Sam: It's how it is.
+
+Ben: All right, we're moving out at grading. Normally we'd go to carve outs or something, but we've got Mario here. So Mario, the philosophical fox, take us somewhere interesting.
+
+Mario: I'll try to. Basically, the setup that I have in mind is that certain eras tend to have a sort of Zeitgeist artist, someone who just understands the sensibilities of the modern-day in some way and can play with them productively to create businesses, to create art, to create value. Sam, after studying you for a long time in a strange way, were it not for a newsletter, it strikes me that you're probably one of the best Zeitgeist artists we have right now.
+
+You are incredibly attuned to pop culture in an interesting way, crypto in an interesting way, certainly the markets. I think it's part of the reason that you're uncommonly popular on Twitter. So it feels like a good chance to ask you, how would you define this current era we're in? If we try and step out of it by 100 years or 50 years, what will we say about today?
+
+Sam: I think the defining property of today probably is social media. I think it changed a lot of aspects of today. I think that investing has become quite different because of it. I think somewhat straightforward ways with the power to the people. I think that people's lives have been changed quite a bit by it. I think that news cycles have been sped up quite a bit by it.
+
+News cycles are no longer controlled by editorial cycles. It's tweet cycles now. That just iterates much more quickly. I think that you're seeing a lot of parallel worlds being spun off because you can split into different social media, for better or for worse. So I think all of those are pretty big changes.
+
+I think you look at memes, which have come to dominate, not just laughter, but finance, and presidential elections maybe. Again, for better or for worse, I think that defines the transitions that we're seeing today.
+
+David: Where in this cycle of this era do you think we are, Let’s call it the social media era. Are we towards the end or are we just at the beginning? Are we in the middle?
+
+Sam: I think we're a quarter of the way or something. I still think we basically don't know where it ends. I think we're basically still making this up as we go, and that it's probably going to be a while before people feel like, all right, we now understand all the implications that that ended up having for society. I don't think we're close to that. We're starting to understand some aspects of it. But we still haven't quite seen what the new society that that form is.
+
+Ben: Yeah. I'd love it if we take it to an S&P 500 graph for a moment. News cycles are faster because they're tweet cycles, not editorial cycles. That tends to mean that these market cycles are faster too. It's amazing even just watching the crypto eras, the crypto winters are getting shorter. Of course, this looks similar in the traditional stock market as well.
+
+Everything's moving faster, but do you think there's the GDP, the total value being created in the world is accelerating also, or are we just increasing the volatility while the pace of innovation and value creation actually remains either steady or at the same rate that it always has?
+
+Sam: I think yes. I want to say, absolutely, by leaps and bounds, but that relies on some sense of how valuable the [...] we're creating is. When it was all bananas, it was easier to answer that. But when it's not just bananas, but also NFTs.
+
+Ben: Intangible assets.
+
+Sam: Right. I think that you start to get to the pretty deep questions about how you feel about market to market values of intangible assets. I think that becomes just actually an important part of the answer to that question. I think it's kind of complicated. I think my answer is probably yes, but almost like as obviously yes as it would otherwise be because of that.
+
+David: Is there one way to look at it? The number of market participants in markets that matter has grown exponentially and is growing exponentially. That feels to me like one of the hallmark characteristics of the social media era. It used to be.
+
+Your career, there's Jane Street, there's a handful of other massive firms that make profits by trading in traditional markets. Then you said yourself, we were talking about who the power users are in crypto, and you're like, yeah, at some institutions, but that's a lot of people too. That's different. That feels like value creative to me.
+
+Sam: I think it probably is. I don't feel like it starts to like, oh, yeah, value accretion right there, here's how we can define it. I think it should be. I have a fairly strong prior that it is, but I see that again without wanting to express total confidence in that, if that makes sense. I more feel like it probably is. I think that's the right prior to have about it. So I'd be with a tentative yes or something like that, if that makes sense.
+
+Ben: That's great. Sam, thank you so much for joining us today. We've got a bunch of smart people out there listening who might want to work at FTX, they might want to trade some crypto. What should you direct folks towards?
+
+Sam: My Twitter is certainly a good place. You can go to ftx.com or ftx.us if you're in the US. You can file a support ticket there. That's where most of our communication is nowadays, I guess. Those are probably the easiest ways to reach me.
+
+David: I will say, actually, this episode came about because of a support ticket.
+
+Ben: That's so true. I forgot about that.
+
+Sam: Interesting.
+
+David: Absolutely.
+
+Ben: We tried to open an institutional account for Acquired and ran into some troubles.
+
+Sam: Yup.
+
+David: And here we are.
+
+Sam: I'm glad that our process sucked at least a little bit.
+
+David: Us too.
+
+Ben: It was great. All right. Thanks so much, Sam.
+
+Sam: Thank you.
+
+Ben: Listeners, thank you so much for joining us. Mario, thank you for joining us for the interview with Sam.
+
+Mario: Man, I had a blast. Thank you guys so much. What an interesting dude.
+
+Ben: Whenever David and I do an episode, we have like a seminal thing that we start our research with. Back in the day, it used to be the Wikipedia page. For more of the things that we've been doing recently, we read the canonical book on a subject if it exists. Conveniently, there is a book on FTX, and you wrote it and published it on your website in three parts. So thank you for being the canonical piece of research that we used.
+
+Mario: Thank you. I am always humbled when you guys use something I wrote. I look forward to these podcasts so much as a listener, so it was a treat to get to be a part of one.
+
+Ben: You've been on a tear with some other great Web3 stuff recently too. You had a MetaMask piece that was really interesting. What was the other one that I read? Oh my gosh, your Terra and Luna exploration, that was a whole new world for me.
+
+Mario: That would be a great Acquired. You should get Do Kwon here. He's a fascinating guy.
+
+David: That would be awesome.
+
+Ben: Yeah, he lives in the little bit of the other corner of crypto land getting subpoenaed at the top of an escalator on the way to give us a talk at a conference.
+
+Mario: Yes. He does, indeed, and then countersuing.
+
+Ben: It's crazy. Listeners, if you're interested in this, you should definitely go read Mario's piece on Terra. Subscribe to The Generalist. It's awesome. We love collaborating with you, Mario.
+
+Mario: Thank you so much. Likewise, guys.
+
+David: It's so cool now that literally, Ben was joking, but it's right. The books are being written real time on newsletters and social media. You are writing it. You are one of the foremost chroniclers of this new era. Thank you for the work you're doing.
+
+Mario: Thanks, man. Back at you guys. You guys have led the way in this space for a long time and I think made it a lot easier for folks like me and Packy to get to jump in and be a part of the movement in a little way. I know that you guys feel the same, but I just feel so lucky that I get to do this and have so much fun collaborating with you.
+
+Ben: Awesome. Thank you. Listeners, if you want more Web3 content, crypto, Web3, I got to figure out what my umbrella term is here. We did great deep dives on both Braintrust and Audius recently, and actually with Kyle Samani on how to run a crypto fund over at Multicoin. All of those and every other back catalog episode are now publicly available on the LP show.
+
+So if you just search Acquired LP show in any podcast player or click the link in the show notes, you can go find all that and more. With that, you can join the Slack. Come hang out with us and talk about this episode at acquired.fm/slack. Go subscribe to The Generalist, read thegeneralist.com. Our thanks to Pilot, PitchBook, and NordVPN. We will see you next time
+
+David: See you next time.
+
+Mario: Thanks, guys.
+
+‍

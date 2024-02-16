@@ -1,0 +1,1147 @@
+David: I walked in. The first thing I saw was the bottom of the big crane boom arm with the weights. I was like, why are there Olympic weights here? And then I was like, oh, because we got a professional boom arm camera. This is amazing.
+
+Ben: All right, let's do it.
+
+Welcome to season 11, episode 6 of Acquired, the podcast about great technology companies and the stories and playbooks behind them. I'm Ben Gilbert. I'm the Co-Founder and Managing Director of Seattle-based Pioneer Square Labs and our venture fund, PSL Ventures.
+
+David: I'm David Rosenthal. I'm an angel investor based in San Francisco.
+
+Ben: And we are your hosts. There's an incredible property of the universe where electromagnetic signals can be broadcast and travel through space at the speed of light to be received at a different point in the universe. Now, a tiny fraction of these frequencies are detectable by humans as visible light.
+
+Some other frequencies can be dangerous, like X-rays or gamma rays. But there's a part of the spectrum that is not detectable to humans, and it's not harmful at modest doses that can be used to transmit invisible messages all around us all the time without any of us having any idea.
+
+David: It's like magic.
+
+Ben: These frequencies have been used for over a century to broadcast TV and radio shows, presidential messages, and important news updates. In the last 50 years, humans have gotten tremendously clever at proposing some parts of the RF spectrum to be used for cell phones. But the story of how we got from transmitting small messages on a single frequency to having billions of humans concurrently sending megabytes or gigabytes of data every minute, has been an incredible journey of invention and entrepreneurship.
+
+The company most responsible for the mind-bending system of how it all works today is Qualcomm. Today, we will dive into their entire history and strategy unpacking their products, which to the outside observer is really best described as a layered series of magic tricks.
+
+David: Spoiler alert for listeners, this is an incredible story. I had no idea before we dove into the research. This one is up there with NVIDIA and TSMC. There is so much stuff you can't make up in this story. It's incredible.
+
+Ben: The largest fabless chip company in the world.
+
+David: Indeed.
+
+Ben: The other thing we should say, listeners, this was super fun to do this episode live in person, in Lisbon. Our huge thank you to the Solana Foundation for hosting us at Solana Breakpoint. Many longtime listeners will know Austin Federa from the Slack. He was kind enough to invite us and really fun to do it there, especially given Solana's ties to Qualcomm with Anatoly having worked there for over 10 years.
+
+David: Indeed.
+
+Ben: For our presenting sponsor to this episode, we are back with Fundrise. CEO Ben Miller has more to share with us on how they came across the idea for their new growth tech investing arm, the Fundrise Innovation Fund.
+
+David: I think people have loved throughout the season hearing the Fundrise story itself and how you guys raised $155 million from the retail investing public without actually going public yourself. Can you remind everyone (a) how you did that and then (b) how you're now opening this up to every private company?
+
+Ben Miller: When we started Fundrise in 2012, the mission was to give individual investors direct access to real estate because we saw when money's intermediated, problems happen. Intermediaries don't have the same interest as the owners. We scaled that business of democratizing real estate investing, having a direct to consumer model. And then when we went to raise, we said, well, why don't we walk around the talk? Why don't we raise money directly from the individual investors in the same way we do for real estate?
+
+That was 2017. It was extremely uncertain. No one's ever done it before. We didn't know if it was going to work. We launched it. We think we raised $17 million in the first 24 hours. It was very successful. We said, okay, aha, this is the future. This is the way to do it.
+
+We scaled up. We raised $155 million with 35,000 investors for Fundrise itself, for the tech company, not just for the real estate. We said, what's the next thing? We should do it for other tech companies, and we should wrap it in a structure so that all the company has to do what they normally do with an institutional investor.
+
+One company on your cap table, but behind it is a mutual fund with millions of investors. If you're a private company you should want to have retail investment from the masses as soon as possible because it's going to increase your brand awareness, it's going to smooth your transition to public markets, and it's going to get you a lot of customers.
+
+Ben: Our thanks to Fundrise. If you want to join the over 350,000 people investing with Fundrise, you can click the link in the show notes. If you're a founder who wants to get in touch about the innovation fund participating in your next round, email notvc@fundrise.com.
+
+After this episode, come talk about it with us. There are 13,000 other smart, kind people in the Slack, acquired.fm/slack. Without further ado, on to our live show at Solana Breakpoint. Listeners know that this is not investment advice. David and I may have investments in the companies we discuss, and the show is for information and entertainment purposes only.
+
+David: One small bit of ado before we dive into the story is we owe a big thank you to Dave Mock, the author of the incredible book, The Qualcomm Equation, which is not well known, but is the definitive history of Qualcomm and ranks right up there with among the best business books, business histories that we've used as a source on Acquired throughout the whole history of the show. It's awesome.
+
+Ben: The book is not even really published under a real publisher. It's published under an industry association. There's no audio book, there's no Kindle. You have to read the physical book.
+
+David: Yeah, it's amazing. I literally, the other day, texted Ben a photo that I noticed on the back cover. Ben, of course, has seen it too of one of the blurbs. I'm going to read it here now. It says, "Dave Mock helps uncover the single most important business story that has yet to be told, how Qualcomm came to rule the wireless industry. Think of it as a recipe book for one of the most innovative and leveraged business models of all time." Whose words does that sound like, Ben?
+
+Ben: That sounds like a deep business model thinker and someone who truly appreciates capitalism at its finest.
+
+David: And is willing to go find the rare gems, the rare diamonds in the rough. That is written and said by none other than Bill Gurley of Benchmark Capital for this almost unknown book. I bet it's going to be a lot more known after this episode.
+
+Ben: Yup.
+
+David: Dave starts the book, and it's such an apt place to start with a quote by Edwin Land, who I was not familiar with, until recently, when David Senra on the Founders Podcast familiarized us with Edwin. Edwin was the Founder of Polaroid, and Steve Jobs' hero.
+
+He had this quote that Dave starts this book with. "True creativity is characterized by a succession of acts, each dependent on the one before and suggesting the one after." With act one of the Qualcomm story, we start in Austria, here in Europe, in the mid 1930s in the pre-World War II era as Hitler, Mussolini, and the Nazis are rising to power.
+
+Ben: Is this the first time we've been able to say here in Europe on Acquired?
+
+David: I think it's the first time. It is the first time. You might think if you know anything about Qualcomm history, you think of mid-30s, like, oh, I didn't know Irwin Jacobs, Co-Founder and CEO of Qualcomm was born in Europe. He was not. He was born in New Bedford, Massachusetts. We start with somebody very different. We start with one of the most famous Hollywood film actresses of all time, a woman named Hedy Lamarr.
+
+Ben: Side note, the fact that we're starting with Hedy Lamarr on the story of how modern telecommunications came to be is so cool. I remember we reached out to the NZS Capital folks and said, hey, do you have any great resources on Qualcomm? They sent back this excerpt of, you should go read up on Hedy Lamarr. I was like, are they trolling me right now?
+
+David: Yeah. You cannot make this stuff up. This is why we do the show. Hedy was an incredible human being. She was a world famous, incredibly talented actress, incredibly beautiful. She would later be built like the way MGM—she was one of the MGM starlets—marketed her as the most beautiful woman in the world. She was also a genius.
+
+She starred in Samson and Delilah, Ecstasy, Zeigfried Girl, many, many more. But what most people at the time, even up into her death, did not know—and certainly her husband at the time in Austria in the mid 1930s—was that she had incredible powers of observation and was way more intelligent than anybody else around her.
+
+This said husband, it's quite a character. His name was Friedrich Mandl, and he was not a good dude. He was a Nazi arms dealer, which made him very rich at the time, which is probably how he met Hedy and they became married. Hedy though, probably unknown to Friedrich and certainly unknown to his business associates, including Hitler and Mussolini, was a Jewish.
+
+Friedrich would bring his beautiful, world-renowned film actress bride to his business meetings with the Nazi military powers. Hedy was listening in to everything that was going on. As the situation deteriorated, in 1937, she disguised herself as one of her maids and escaped to Paris, and then from Paris, made it to the US, went to Hollywood, and lived in Hollywood for most of the rest of her life.
+
+When she came to the US though, she knew an incredible amount of inside information about the Nazi war effort. She was incredibly motivated because obviously, she's from a Jewish family. She hated the Nazis, hated her former husband, and wanted to contribute. Specifically, she knew that the Nazis were working on and using to great effect a radio jamming technique for radio guided torpedoes that would be dropped from airplanes to attack Nazi submarines.
+
+Ben: It's also pretty amazing at this point in history that we had, as humans, the capability to radio guide the torpedo. The torpedo gets propelled and you could guide it using radio frequencies deciding which way to turn the rudder. I did not know that technology existed in the '30s.
+
+David: The digital computer doesn't exist yet. The concept of digital doesn't exist yet because we're going to get to that in a minute. This is all being done, essentially, with FM radios. Hedy wants to contribute to the Allied war effort.
+
+Ben: When you say with FM radios, therefore pretty easy to jam. If you know that someone's broadcasting on Jammin' 92.3 and you start another signal on 92.3, you disrupt their signal and they're not able to hit their target with the weapon.
+
+David: Totally. Hedy teams up with her new Hollywood neighbor, a music composer named George Antheil—bear with us here, I promise this is getting to Qualcomm—who is a film music composer. With her ideas and his musical prowess, they developed a concept that they patent. They get issued a confidential patent that stays confidential for decades in the US military.
+
+Ben: By the way, this, I believe, did not become declassified until 1981. That's how long it was buried inside the US government.
+
+David: It was issued in 1942, so four decades that this history was completely unknown. They developed a novel technique to defeat RF frequency jamming by using frequency hopping. What they described becomes the origin of something called spread spectrum technology.
+
+If you're familiar at all with the wireless world or Qualcomm, if you hear spread spectrum and you're like, oh, that sounds familiar. Spread spectrum technology, this is the first description of it in a technical document and a patent by these two incredibly unlikely people.
+
+Ben: What it basically means is any way that you're going to transmit a single message across a variety of spectrums. Rather than just on, I'm going to keep saying in Jammin' 92.3, to ground it in radio, but instead of just broadcasting on one frequency, they came up with this idea to hop, so change frequencies during different points in the message to evade anyone trying to jam the signal and move to a different frequency.
+
+David: The reason she teamed up with a music composer for this is that the way you make this happen is you have incredibly precise time syncing on, in this case, the two ends, but in wireless use case, all endpoints of the communication channel incredibly precise syncing so that all endpoints know when to hop frequencies. You're hopping frequencies dozens or hundreds of times a second.
+
+This can defeat jamming. This is great for cryptography, this is great for sending coded messages. It turns out, this was not on anybody's radar, pun intended, at the time. It turns out that this is also the most efficient way to use radio bandwidth.
+
+Ben: Let's put a pin in that for now. First, let's go back to this specific use case of we want to transmit from a plane to a torpedo. We want to be hopping around to different frequencies and we want to change that at incredibly precise time so the transmitter knows to change the frequency and the receiver knows to start receiving the message on a new frequency at very specific points in time.
+
+The concept of digital hasn't been invented, so how are we doing this, David? What's the technology used to synchronize a schedule of frequency hops between a torpedo and an airplane?
+
+David: If this were a Hollywood movie, like one of Hedy's films, this single-handedly would have defeated the Nazis and all that. Unfortunately, the reality is, there was no digital computing at the time. It wasn't possible. The US military tried very hard during World War II to make this happen.
+
+The whole Allied military, they couldn't make it work because think about what we're trying to do here. Vacuum tubes and analog computing was what was happening at the time. You would literally need to put ENIAC on a torpedo and drop it from the sky to make this happen. That was not feasible.
+
+Ben: It's worth sharing how their prototype worked though. The way that they prototyped this, Hedy, in the early 1940s, is they took two player piano scrolls that had the same basically song, and they mapped each note to a new frequency. They put the same player piano in the same scroll on the receiver that they did on the transmitter, and they pressed play on the player piano song at the same time so it would know exactly where to hop around.
+
+David: There were 88 frequency hops in their technical description of the patent because there are 88 keys on a piano. I guess, literally, you wouldn't be dropping ENIAC from the sky, you'd be dropping a piano from the sky to make this happen.
+
+Ben: Yes, like in a cartoon.
+
+David: Totally. Okay. That is the origin that you can't make this up, origin of spread spectrum technology. That's act one. Act two, we stay in World War II around the same time, but a few years later. There is a young PhD grad from the Massachusetts Institute of Technology, who was working on code breaking for the Allies very famously at Bell Labs and at the Institute for Advanced Study in Princeton, New Jersey, where he intersects with luminaries like Albert Einstein, John von Neumann, Alan Turing.
+
+We're not talking about any of those three folks. But by process of elimination, you can probably figure out who we are talking about. We're talking about Claude Shannon, literally the father of information theory, one of the fathers of computer science, and the inventor of the concept of digital, of the bit of information. Digital did not exist before Claude.
+
+During the war, all of this effort culminates in what he publishes after the war, his masterwork, a Mathematical Theory of Communication, which defines a bit the new field of information theory, ushers in the digital era for the world. Combined with the other folks who we mentioned, Einstein, Turing, von Neumann, and Bell Labs work on transistors during the war, these things come together to create the modern era of humans and the digital computer.
+
+We've described the Hollywood part, we described here in act two, Claude Shannon, the birth of computing and all that.
+
+Ben: It's worth maybe sharing a little bit about information theory. Can I take a second, David?
+
+David: Of course.
+
+Ben: All right. I heard people reference information theory or communications theory dozens of times over the years. Every time I'd open up the Wikipedia page, I'd see a bunch of complicated math equations, and you quickly want to get to like, okay, but what is this? Why does everyone keep describing it as so important?
+
+I think there's a pretty key concept that was an aha moment for me, which is all communication must happen through a medium. There's no communication that happens through nothing. You need some way to send a signal from a transmitter to the receiver. The method by which you communicate, the way you send signals is governed by that medium.
+
+What I mean by that in particular is let's use the analogy of a conversation. If you're in a super loud room, then your message needs to be very loud. It needs to not be very noisy. It needs to be a super clear, super loud message because there's a lot of noise in the room. Whereas if you're in a really quiet room, then you can have a message with a bunch of noise.
+
+Imagine someone talking but there's a bunch of static. That's okay if the medium itself, the room that you're communicating in, doesn't have a lot of noise itself. There's this relationship between how noisy a message can be and how noisy the medium is that you're communicating in.
+
+I think this is this very interesting aha moment where what he basically produces is there is a theoretical limit to the amount of signal that you can pump through any given medium based on how noisy the medium is and based on the level of entropy or randomness in the message that you're trying to describe.
+
+When I say entropy, let's say, David, you're expecting me. You think there's a 99% chance that I'm coming to deliver the message to you, I just had breakfast. If it's in a really loud, noisy room, and I'm sick, I'm coughing, and I tell you I just had breakfast, because you were expecting it, it's fine if it's in a really garbage medium.
+
+But if you have no idea what I'm about to tell you, and it could be everything from like, hey, you're fired to I just had breakfast, and you have no idea, we need to have that in a pretty pristine environment with really nice volume or gain on the signal. That's sort of the high level concept of information theory, and more specifically, of Shannon-Hartley theorem describing the relationship between signal and medium.
+
+David: Yup. Super cool stuff. Where this all comes together in act three of our story here, which is going to be a little longer, because we're getting to Qualcomm as part of this, is one Irwin Marc Jacobs. An American born in 1933, as we mentioned in scrappy New Bedford, Massachusetts, which used to be, I believe, the wealthiest town in America during the Whaling era, as we discussed during Standard Oil or Berkshire. I think it's Berkshire actually that we discussed this.
+
+Ben: It was Berkshire,because 45 years before Irwin Jacobs was born in New Bedford, the Hathaway manufacturing company was started in New Bedford before it merged with Berkshire and before, of course, with Warren Buffett.
+
+David: Even by 1933, New Bedford was not the New Bedford of Whaling era, shall we say? Irwin is a pretty amazing American story. He grew up in a very middle class family in this super scrappy area of the country. His dad worked a bunch of jobs and ended up running a local restaurant called the Boston Beef Market.
+
+Irwin was highly gifted in math and sciences as a kid going through school. He wanted to study math and science and probably would have wanted to study engineering if he knew it existed in college. But his high school guidance counselor famously told him that there's no future for math and science in New Bedford. And frankly, his high school guidance counselor was probably right.
+
+Irwin though had very good grades growing up. The guidance counselor encouraged him to go to the world famous Cornell School of Hotel Management so that he could learn the hospitality management business, come back, and work in the family business at the Boston Beef Market.
+
+Ben: Which he did.
+
+David: He did go to the School of Hotel Management.
+
+Ben: This engineering genius, this American pioneer of the wireless and communications industry, that is what he went to college for.
+
+David: And he would later credit the year and a half that he spent in the Hotel Management school at Cornell before transferring to electrical engineering. He would credit that year and a half with really helping him start, first, Linkabit, his first company and then Qualcomm get out of academia and become an entrepreneur because he actually learned about business accounting, the real world applications and found that he kind of love that too. Amazing.
+
+After a year and a half at Cornell in the Hotel Management school, he learns about engineering. He was like, oh, you can make money with math and science. This is actually in demand, maybe not in New Bedford, but in the rest of America.
+
+He goes to the dean at Cornell. He tells the story of he's like, hello, sir, I, sophomore at Cornell. I would like to transfer from hotel management to electrical engineering. And the dean's like, oh, you mean electrical engineering to hotel management, right? He's like, no, no, no, hotel management to electrical engineering.
+
+Ben: No, I want to do the harder one.
+
+David: I want to do the hard stuff. After the dean picked himself up off the floor, he allowed it perhaps with a degree of suspicion, which he need not have because Irwin is another genius in this string of geniuses. He would graduate, go on to a Ph.D. at MIT, which he would do in three years, finishing his Ph.D. in 1959, studying under none other than Claude Shannon himself, who after the war have returned to MIT as a professor.
+
+Ben: It's pretty interesting because so many of these stories that we tell, there's an immense element of genius, no question. Irwin Jacobs, Jensen at NVIDIA, and Steve Jobs geniuses.
+
+David: There were 10 people in the world who knew this stuff at the time, and they were among them.
+
+Ben: Yeah, it's the most incredible right place, right time in history too, because without studying under Claude Shannon, the father of information theory, it's extremely unlikely that Irwin Jacobs becomes the Irwin Jacobs he went on to be.
+
+David: Totally, and then without what's going to come later in Hedy Lamarr that he would start Qualcomm. Amazing. Young Irwin is so talented that after he finishes his Ph.D. in three years, mere five years removed from being a hotel management major at Cornell, Shannon in MIT asked him to stay on as a professor at MIT immediately, which he does.
+
+He spends five years teaching at MIT, during which he teaches the first course for students on digital communications in the world, I believe, applying Shannon's theories to disseminate amongst practical engineers being trained at MIT. He and a fellow faculty member write the first textbook on digital communications that is still in use today. It is the Bible of digital communication theory. You can buy it on Amazon and written by Irwin, distilled from the father himself of Claude Shannon.
+
+He spends five years teaching there. Then in 1964, he takes a sabbatical and heads out to California to do a sabbatical at JPL, at Jet Propulsion Labs, working on the US space program and communications with satellites in the US space program at the time, where he intersects faithfully with another recent MIT electrical engineering Ph.D. grad. One Andrea or Andrew, as it was anglicized, Viterbi, a Jewish immigrant from Italy, who got his Ph.D. from MIT in 1957, who was working at JPL.
+
+They become fast friends. So fast friends, in fact, that when Irwin returns back to Boston to cold, snowy, bleak Boston near his upbringing in Massachusetts after his sabbatical, Irwin then gets a call shortly thereafter from one of his former professors at Cornell that a new engineering school in San Diego is being started, the new UC San Diego, and there's an opportunity for Jacobs to come out and start the electrical engineering department at UCSD.
+
+He says, well, I really enjoyed my time out there. I've got this great friend, Andy. Let's do it. I would make the exact same decision. Irwin and his family moved out to UCSD. While he's out there, he continues doing his contracting work with defense contractors, JPL, and the US space program.
+
+Ben: And this is sort of one-off at this time. He's doing it under his own name. He hasn't really started a company. It's just kind of Irwin doing contracting.
+
+David: Totally. He is the first electrical engineering professor at UCSD. That's his full time job. But because he's in such close proximity to everything going on at JPL, NASA, and the like, he's doing that on kind of like one day a week-ish.
+
+One day, he and Andy and another professor from UCLA are up at NASA Ames in Mountain View doing consulting work up there. They're flying back, and they're all kind of lamenting. They're like, this is super cool that we're doing this, we're making more money than academia. We're helping our country. We're participating in the space race. But it's kind of hard to balance all this stuff that we're doing.
+
+They're like, hey, what if the three of us band together and form a company, kind of a shell company, to just kind of manage this consulting work that we all get? We could probably get some efficiencies here, maybe hire an assistant and help us out, that kind of stuff. They say, great, we don't intend this to be a real company. We're not going to make any products or anything. This is just to manage our consulting.
+
+They sort of tongue in cheek decided to call it Linkabit, like linking a bit. It's a very academic joke. Who is this third partner in Linkabit? He ends up not kind of gelling with the other two and leaves shortly thereafter. His name is Len Kleinrock, and I read that the first time and I was like, I know that name.
+
+Ben: I've heard that name before. I'm going to guess 99% of listeners haven't heard that name. But if you're you and me, and all we do all day is study tech history and the history of the internet, that name should ring a bell.
+
+David: Yeah. First, you read this history and you're like, man, bummer for Len, he missed out on founding Qualcomm. He actually ended up okay because instead of founding Qualcomm, he founded the internet.
+
+Ben: He literally was, I think, the founding engineer on the ARPANET project at DARPA.
+
+David: Many people were involved in the ARPANET project.
+
+Ben: I guess that's ARPA?
+
+David: ARPANET, yeah, which was the precursor to DARPANET, which was the precursor to the internet. Len and one of his grad students at the time at UCLA, the next year right after this has happened, this is all happening at the same time, they sent the first message on ARPANET ever, like the first internet transmission ever from UCLA to Stanford. He's one of the core founding fathers of the internet, so he ended up doing okay.
+
+He probably didn't make as much money, but he will be remembered in history. Pretty amazing. Andy and Irwin, they're mostly continuing to work on NASA and maybe defense projects in San Diego because of course, San Diego is a US Navy town. Most of what they're doing is working on satellite communications. If you know anything about satellite communications, the bandwidth that you have available to you is very, very narrow. You need to be very, very efficient with your communications.
+
+Ben: That's still true to this day. Any company in the emerging space economy, it's a totally different engineering problem than you're used to today. Because if you ship code up to your satellite and you find a bug, it's very expensive and very slow to get enough bandwidth and actually make sure you have the right time window to update the code on the satellite. It still kind of works the way that computers worked 30, 40 years ago.
+
+David: Yup. It wasn't them. This was the military. They got exposed to this, trolling around to find the best, most efficient ways to use this narrow bandwidth channel that they had. What ends up getting used, but this old, patented, spread spectrum technology from the World War II era invented by Hedy Lamarr and George Antheil.
+
+Ben: The timing is perfect because the time of Linkabit is this sort of early '80s.
+
+David: Early '70s.
+
+Ben: Oh, Linkabit's early '70s?
+
+David: Yeah, late '60s, early '70s.
+
+Ben: So they had 15 years of Linkabit before Qualcomm.
+
+David: Yeah, there's a long... You might not know, I've got some good surprises for you. They start doing more and more of this. Irwin's exercising the hotel management sort of side of his brain as he's doing this. He finds that he really enjoys it. They start bringing on other professors, other grad students into Linkabit to kind of build the sort of like army of the greatest information theory and wireless signal minds in the country.
+
+Ben: All for defense contracting.
+
+David: I don't think they were doing any commercial work at this point. I think it was all NASA and defense and almost all satellite work. They start building the company that eventually, in 1971, there's so much going on, Irwin decides he's going to take a sabbatical from UCSD and spend a year just organizing the company. He ends up never going back to UCSD ever because during that year, they get the idea.
+
+I believe it was during this year. Maybe they'd start to have inklings of it before, that it's really nice, they've got all this technical talent. They're consulting on these projects that defense contractors mostly are the prime bidders for. They're like, wait a minute, those guys are making all the money. We're doing all the differentiated engineering work here. What if we started bidding on some contracts ourselves? We would probably make a lot more money as a products contract services company ourselves rather than just as a sub-consultant.
+
+Ben: Yeah. That lesson persists to this day too. If you can pull off being the prime contractor to the government on a big contract, the economics are much better than if you get subcontracted by one of the primes.
+
+David: Oh, man. If you can be a prime, the primes back then, prime is being prime defense contractors, they're still the primes today. That is a gravy train that—yeah, Raytheon, Lockheed, Boeing, all these companies. Of course, they start doing this, but there's a reason the primes then are the primes now. Linkabit is not going to be a prime then or ever.
+
+If they're going to do this, they need to move into the commercial sphere. These are just so good. It's like history was made for Acquired. Do you know what the first contract project that Linkabit did? If you knew, you would just be smiling so wide right now.
+
+Ben: No, I don't.
+
+David: Remember, their expertise is in satellite communications. They hear about a regional retailer.
+
+Ben: No. Did they do Walmart's satellite network?
+
+David: Yeah, they did.
+
+Ben: What?
+
+David: Yeah, they hear about this eccentric founder of this small Midwestern regional retailer that for some reason wants to beam himself talking every day from HQ to all of the local stores of this local outlets of this retailer. Linkabit's first project is doing the satellite communication system for Walmart.
+
+Ben: That's wild. Listeners, for anyone who didn't listen to our Walmart episode, Walmart was, for a very long time, the most innovative retailer on the planet until Amazon, basically. One of the illustrations of this is in the late '70s and then continuing into the early '80s when they actually lit it up, they invested tens of millions of dollars into building a private satellite relay because the bandwidth available on the internet was insufficient for them at the time.
+
+David: It was just the ARPANET. It was Kleinrock.
+
+Ben: Phone lines. The public WAN effectively or precursor to WAN was insufficient to send the store data that they had actually been collecting and want to tabulate the results on a daily or weekly basis.
+
+David: Yes, Sam wanted to broadcast out the Saturday meetings. It's so great. Wait, there's more Walmart to come a little later in the episode. Stay tuned, literally.
+
+Ben: You just cracked yourself up.
+
+David: I know. We would probably cut this for the actual episode. Occasionally, we get these reviews for Acquired or comments that one host is really normal and the other host is just a complete crazy person. I'm like, well, at least they remember me.
+
+Ben: We are who we are. Nothing has changed, and it's seven years in.
+
+David: I promise you, it's not an act. Ask my wife. Okay. The next thing that they get into is, because they're in video, they're in satellite, they're in video now with Walmart and they're doing the two way communications, they build the video scrambling system for pay TV on cable system. It used to be, before the Linkabit solution for multiple access cable systems, if you were even mildly technical or could play around with an Allen wrench, you could get HBO or any of the early paid TV channels for free.
+
+Ben: Yeah, the catchphrase there is security by obscurity. They were just trying to find one clever thing that consumers weren't likely to figure out by unscrewing their box and moving one wire or something.
+
+David: Jacobs, Viterbi, and all the brain trust at Linkabit, they solved that problem. HBO uses them and then all the other big pay TV channels.
+
+Ben: I think that's the inspiration behind the HBO opener because it's descrambling and now bringing you this ah.
+
+David: That's Irwin and Andy right there. They do this for the whole decade of the '70s. In 1980, Linkabit, the company, gets acquired by an east coast radio technology company called MACOM. I think it's how it was pronounced. It used to be actually MATCOM, and then this weird '80s branding stuff. They changed the brand to M/A-COM, Microwave Communications, I think. Anyway, they sold the business for $25 million in 1980.
+
+Ben: Nice, early win.
+
+David: Not bad for some former academics $25 million in 1980 dollars. That's awesome.
+
+Ben: And they had a lot of people at this point. I think there were over 1000 employees.
+
+David: It was on its way there, but then it grew over the next five years within MACOM. It grew to 1500 people eventually. This is a big freaking business. You can imagine, the things we're talking about, a lot of other retailers started using satellite networks. A lot of other cable TV channels wanted to use these, and there were other products that they were building. Basically, they made a big mistake selling the company. They hadn't listened to Acquired. They didn't have all the lessons.
+
+Ben: They wouldn't have had Qualcomm if they didn't sell the company.
+
+David: Well, that's true. They made absolutely the right decision in selling Linkabit then. They stay with MATCOM for five years, and then there's a leadership change at MATCOM, and this is an east coast technology company.
+
+They all leave in 1985. They sit around for a couple months. They're like, look, we've made more money than we ever dreamed we would. We got to be part of so many cool things, but we're still young. The wireless communications industry is kind of just getting started. This is 1985, so the cellular telephone industry exists at this point.
+
+Ben: It had just started. You know how we're 5G now. Everybody remembers the iPhone 3G. That second phone and the Edge network that the first iPhone launched with 2G. It was a little advancement on 2G. This was 1G.
+
+David: This was 1G, which was analog, no digital yet in cellular—analog cellular.
+
+Ben: And cellular had just been an innovation. This notion that rather than communicating over long distances, we were actually going to put cell towers so that you only needed to communicate with your local tower, and that could be relayed. You had this sort of cellularification of all the geography that you needed to cover. That was new. It's funny how today, we don't even think about what the word cellular means, but that was the most recent innovation at the time.
+
+David: Yeah. Irwin and Andy, they are first rate academics. Hopefully, we've told the story here among the most brilliant minds in the world. Especially Irwin, incredible business people, market analysts. They're very aware of the products they developed at Linkabit. They're aware that this market is coming.
+
+The reason they're so aware, technically, it exists now, cellular, it's all car phones at this point in time because the way it works is it was just like the torpedoes back in the day. It was essentially a FM radio broadcaster that you would wire up into your car.
+
+Ben: Super high power.
+
+David: Super high power. You needed a lot of freaking power.
+
+Ben: You had to put it in a car for what you're talking about and because there was not a battery available to...
+
+David: You needed a running internal combustion engine to make this thing work. Yes, on the endpoints. Bandwidth was super limited, and these systems were thousands and thousands of dollars in early '80s dollars. Despite all that, the consumer demand for car phones was insane.
+
+There were waitlists years long for consumers to get car phones installed. The fledgling carriers at the time, they only have so much bandwidth they could fit because literally, there's no efficient use of channels. It's just like the torpedoes back in the day. They couldn't keep up with all the demand. I remember when my parents, who were lawyers, had car phones in the '80s. Did your parents have them?
+
+Ben: No, my great uncle had one. But it is interesting thinking about, when you're listening on an FM radio, you have 99.1, then you click up on the dial and it says 99.3, and then you click up and it says 99.5. You can't even have 0.2, 0.4, 0.6 because that's too close. There would be interference.
+
+This isn't exactly right. I'm going to oversimplify this a little bit. But you start thinking about, well, geez, how many slots are there to communicate in this analog way with a cell tower near me? What can the cell tower handle? One hundred phones, 200 phones, 500 phones? Either way, it's not going to stop.
+
+David: Not much more than 100.
+
+Ben: Yeah.
+
+David: When you think about how many radio stations there are, there's not much more than that. The Linkabit folks, Irwin and Andy, they see this. They know and they're like, oh, this industry is in its infancy. We see this amazing demand. We are literally the best. We know there's a better way to do this. We know you can do this digitally. We know you can do it way better. We know how to do it the best.
+
+They found a new company in July of 1985 with seven in total, Andy, Irwin, and five other of the best Linkabit engineers. They meet at Irwin's house, they decided to start this new company, and they named it Qualcomm.
+
+Ben: Quality communications.
+
+David: Which is short for quality communications, which I had no freaking idea when we did the research, but then I'm like, oh, duh, quality communications. When you know all this history, it makes sense. They know how to do quality communications. This is a communications company, and they can provide quality that nobody else could.
+
+Ben: There are so many companies named this way too. These things become these household brands, and then you don't even think about what the original meaning was.
+
+David: Totally. Because the industry was still so early and you think for a minute about what is involved in building out a cellular telephone network, there is enormous capex like laying cable. We've talked a little bit about the cable industry history on Acquired. That required enormous capex. This is literally putting towers in the ground, putting base stations on them, building these thousand dollar mobile phones. It requires a lot of money to participate in this.
+
+Ben: It's money and it's a bunch of competencies because not only are you thinking about the real estate for the tower, putting in the tower, and putting the base stations on the tower. Well, then you need to figure out, well, how are those towers? What's the protocol? What's the technical method that it's communicating with phones and making sure that the phones have all the correct hardware?
+
+It's not just antennas, it's very specialized chips. Then you're like, okay, do we need to then make phones? Do we need to build a consumer brand? Do we need to market to consumers? Do we need to be our own carrier? Do we sell to carriers?
+
+There's a way to bite and try to eat the whole elephant here. Or you could say, okay, we're just going to try and be one small part of this because we have an idea for how to make this better. But if you're just doing one small part of it and inventing the means by which the technical method that the phones communicate with the towers, there's a bunch of stakeholders that you've got to get on board with your thing—carriers, the government in terms of licensing spectrum, phone manufacturers, chip makers, and base station makers.
+
+There's this really interesting crux that they're at at this point of the company where they're saying, we know we can do this better. We have a specific idea about how to make this better, which we'll get to in a second. But they're really trying to figure out how much of the elephant to try to eat themselves.
+
+David: Hopefully this first 45 minutes of the episode was interesting. We had fun telling this crazy World War II, Hollywood history of all the technical aspects that come to this. The business history of Qualcomm, just like Bill Gurley said on the blurb of this book, it is one of the most brilliant strategic executions of entering a market, period, writ large ever. This is on par with NVIDIA, if not, honestly, more brilliant.
+
+Ben: It seems more difficult because if you were to pitch me this idea a priori, as an investor, I would tell you immediately, no, because I see 15 different needles, all of which you must thread perfectly, a story that's entirely path dependent. You're not going to get one thing until you get the previous thing, and that was a needle that you were threading. The likelihood of success is unbelievably low.
+
+David: And yet, here we are talking about Qualcomm. They knew two things at the outset of founding. (1) This is a massive opportunity that they eventually wanted to pursue. It was bringing their expertise to bringing terrestrial cell phone networks into the digital era and building the dominant gorilla company in this soon to be massive industry. (2) They knew they couldn't do it yet.
+
+They actually started in the same fashion that Linkabit did. They're like, okay, we're going to bootstrap up by doing consulting work. One of the first consulting projects they do is with Hughes, one of the defense primes. Hughes like Howard Hughes, pretty awesome, on a proposal to the FCC for a mobile satellite network. I will learn about consumer mobile telephony services, enter the market or we'll work on the satellite network.
+
+Ben: We're talking like Jurassic Park sat phones.
+
+David: Yes.
+
+Ben: Big honking thing, super expensive. But when you really need it, it's nice that there exists a sat phone network.
+
+David: Yes. While they're working on this, they're like working on like, okay, we're the experts at optimizing satellite communication channels for efficiency. They come up with an application of spread spectrum to use multiple conversations access the same channels at the same time. They used a technique called CDMA, Code Division Multiple Access.
+
+Ben: The first time you hear this phrase, it sounds like complete jargon, like meaningless, and then you stare at the Wikipedia article for a while to try and unpack each one. We'll break it into parts. Multiple access, that's fairly straightforward. Rather than being broadcast like a TV network, we have multiple endpoints that all want to communicate with each other using whatever the same communication medium is.
+
+Rather than using one single frequency to all trying to pile on there at the same time, which of course wouldn't work in that analog world that we were talking about. I want to call you on 92.3, you want to call Bob on 92.3. My mom wants to call my dad on 92.3. You quickly get into a situation where everything's just colliding with each other.
+
+Multiple access on just a single analog frequency doesn't work, so you got to divide up and say everybody gets their own frequency, and that's the way the world evolved. You mentioned code division. Before we get to code division, can we talk about a different type of division?
+
+David: Yes, we certainly can.
+
+Ben: Before we get to the CD in CDMA, code division, we've got the multiple access part. A bunch of people trying to communicate using the same medium. The things that we were talking about before, everybody gets their own frequency, that was called FDMA, Frequency Division Multiple Access. A pretty straightforward way that you might divide up the airwaves in order to have multiple conversations.
+
+The way the telecommunications industry works is, remember I opened the episode by saying it's basically a layered set of magic tricks. This is sort of the next iteration on top. If you say, okay, rather than sending analog signals, what if we were sending digital signals?
+
+If I'm talking to David, there's a lot of sort of pauses, about half the conversation is actually empty air. If two folks out in the audience are talking to each other, a lot of your time is actually empty air. So we don't both need the entire frequency all the time. If we are communicating using a digital signal instead of an analog signal, then actually, we can parcel up the information into digital packets.
+
+David: And just rotate the time of when different packets are being sent.
+
+Ben: Right. The very crude example is if we're at a dinner party, I can have my conversation for 30 seconds in a room, and then I pause and I stop talking. A different conversation can happen for 30 seconds. Of course, that's too crude and that's far too long.
+
+In a time division network, what you'd basically do is say, I get some digital packets for these milliseconds, then the next milliseconds you get your digital packets. Then the next few milliseconds, someone else gets their digital packets. And we will keep round robining it between the 20 conversations that we're all having. When it gets reassembled on the other side by some other phone or something—
+
+David: Thanks to transistors and digital technology, this can all happen fast enough that you don't even notice.
+
+Ben: Yeah,. You're like, oh, the signal maybe sounds a little compressed. It's not as good as if we're talking to each other actually face to face, but there's no weird blips or pauses in the conversation. Even though we're all borrowing different time slots on the same frequency, it actually sounds pretty smooth to me. That's the next iterative invention—
+
+David: This is the case, where Europe was way farther ahead than the US. Europe was basically ready to implement this time division multiple access digital standard in Europe for a European cellphone technology. That was driven by Ericsson, the big European infrastructure provider.
+
+Ben: I think just to pause and reflect, big innovation going from maybe 20x, 30x, 50x, you get a lot more capacity by saying instead of just one person gets a frequency at any given time, you now get a whole bunch of people who can use that frequency because the signal is digital because of time division. This is the movement from frequency division multiple access, FDMA to time division multiple access or TDMA.
+
+David: It's actually at 30, 50. Maybe now that kind of is, but back then it was 3x-5x. Really, I think the right analogy is it is time sharing. Timesharing is what it is. It's kind of like the old computing model of time sharing on a teletype on a mainframe. That's what's going on here.
+
+Ben: Yup. Over to Qualcomm, they're thinking about doing this satellite communication thing. Remember, Irwin studied with Claude Shannon. He's always thinking about what is the most efficient way to use all the way up to the theoretical limit of how much signal can be communicated in a given medium at a given time. He's sort of looking at TDMA and they're like, ah, I think there's something even more efficient than this, and we need something more efficient than this for this satellite network.
+
+David: And these guys were all around the beginning of the internet. If you know anything about how the internet works under the hood, packet switching, it's not timesharing.
+
+Ben: No, it is everybody compresses their data as much as they possibly can into a digital packet. They fire it off, and it bounces around a series of places until it hits the other side, gets decoded. And hopefully, the protocol is written correctly, whereas you're sort of opening your packets and sequencing them all in the right way, it seems perfect and how the message was originally intended to be when it was encoded in the first place.
+
+David: You said the magic word—decoded. That's what these guys figured out. They're like, duh, we'll just use code, and then everybody will send all the conversations all at the same time all across all the different channels. We'll maximally efficiently use all the spectrum allocated. We'll just append a little code to the beginning of each digital conversation. It'll get reassembled on the back end. It's basically the same way the internet works.
+
+Ben: Yeah. To break that down further, you've got this really interesting situation now, where all messages are encoded digitally. I keep going back to this analogy that they used in the telecommunications industry at the dinner party.
+
+Rather than the sort of frequency, the FDMA model of everybody's in their own room having their own conversation, that's not super efficient, or TDMA, which is you put five or 10 people in a room, but they need to wait their turn to have their conversation. What code division basically is as the analogy goes, is, well, everybody can communicate in whatever room they want. They're all just communicating in their own language. And the person that they're communicating to understands that language. They can listen and disregard noise that's coming in.
+
+David: It's like you're saying if I'm expecting your message to be, I had breakfast this morning, then I don't care how much noise is in the system.
+
+Ben: You don't care how much space?
+
+David: I either know you said that or you didn't say that.
+
+Ben: Right. You're like, I'm disregarding all the Spanish. I'm just listening for English that sounds something sort of like describing someone's state of breakfast. That's an oversimplification. If you really wanted to sort of dig into it, what you're basically doing is you run any given packet through literally an encoding.
+
+Maybe my encoding is 10010. You encode whatever the packet of information is. You run it through, sort of add it to 10010, and then you end up with this signal that you can sort of stack on top of other messages. Imagine a digital signal like a digital wave where all of our messages are layered on top of each other. The top of the peaks of some of the wave are extra high, and the troughs are extra low for others. When it all arrives all together on the other side, the other side knows how to decode all of our messages.
+
+It individually subtracts all of our messages, which are layered all on top of each other off the very same digital signal until it basically has all of our messages spread apart. It disregards any of the ones that doesn't match the code that I'm looking for, that I'm listening for. And it says I just care about the message that came from Ben, which was 10010 or whatever code I just made up, and that's the schtick for CDMA.
+
+David: What these guys do, just this brilliant. They saw it, they had the background, they had everything. Right place, right time, and the business sense. They developed this, and they freaking patent it in 1986.
+
+Years before Qualcomm gets actually directly involved in the cellular industry at all, they patent the method and technique for code division multiple access applied to terrestrial cellular networks in 1986 in US patent number 4,901,307, which is one of the most valuable patents in history. Unreal. Literally, they played such a long game. They threaded needle, after needle, after needle. And that was just the first.
+
+Ben: When you think about why that is so valuable, when you really distill down what the CDMA patent is, it was the very first time that you could say, well, rather than thinking about one specific frequency, just imagine you have all the frequencies available to you. Everybody can, all the time, broadcast their message on whatever the next available frequency is. And we have the technology to just figure it out on the other side. By the way, you don't even need to do it with super high power. It's good for battery life and that sort of thing.
+
+David: You don't need an internal combustion engine to power this thing.
+
+Ben: Right. The other side knows what it's looking for. This is the equivalent of there's a bunch of people whispering in a gigantic house to each other all in different languages. It's this way more efficient way to use a given medium to have the absolute maximum amount of conversations or signal transmission in that medium.
+
+David: Okay. Qualcomm founded in 1985. Patent issued in 1986 or applied for in 1986.
+
+Ben: Which is worth remembering, so it'll expire in 2006.
+
+David: That's right. Looking ahead, foreshadowing. Qualcomm doesn't enter the wireless industry until 1989. What happens in the interim? This is the next Walmart. Literally, you just can't make this stuff up. They get approached to bid on another contract, the fledgling Qualcomm does, from a company called OmniNet, which has this idea that they think the Qualcomm folks are going to be perfect to implement.
+
+They want to make a mobile satellite network specifically to connect commercial semi trucks on the roads in America, and then network them up to the distribution centers for retailers and other people who companies who ship a lot of things in the US. This is right in their wheelhouse. Qualcomm and Irwin are like, great, we're going to bid on this contract. They win it. They start working with OmniNet. They make it work.
+
+One of the very first customers is of course, Walmart, which implemented on their own proprietary fleet of trucks, building further their technical advantage over just about every other retailer in America.
+
+Ben: At this point, they've walked away from the satellite contract, right?
+
+David: The Hughes satellite thing, that actually just never happened.
+
+Ben: They developed this technology. They patent it. They were like, oh, but there's no money here, because the contract...
+
+David: Yeah, the FCC was like, yeah, satellite. Jurassic Park phone's not going to be a thing.
+
+Ben: Right. Instead, they're focused on this OmniNet deal.
+
+David: They focused on this. They also have a lot of the business relationships already from the previous iteration of what they were doing at Linkabit, including with Walmart and many of the other large companies and retailers. I believe Schneider trucking becomes actually the first customer I think for that.
+
+They worked on building that. It becomes pretty clear like this is going to be the interim main product. Qualcomm and OmniNet merged in 1988. They raised $3.5 million in funding as part of that. They bring the product to market at the end of 1988 as Omnitracs.
+
+People might have heard of it. It was part of Qualcomm for a long time before, I believe, it ended up getting spun out to private equity. In 1989, in the first year of business for Omnitracs, they do $32 million in revenue in 1989.
+
+Ben: It's like inflation adjusted $100 million.
+
+David: It's a lot of money, and there's a lot of demand for this product.
+
+Ben: In the first year of the product launch.
+
+David: Year one.
+
+Ben: Now there's a lot of cogs. This isn't SaaS revenue we're talking about.
+
+David: There's particularly a lot of cogs because one of the things they learned from doing this and one of the reasons that companies merge, the first Linkabit days, remember, Walmart was their customer for the Linkabit satellite thing. Walmart is very happy to integrate and implement technology themselves. Most other customers are not.
+
+They go around and they're pitching this to trucking companies, retailers, and the like. Most of them are being like, well, this is cool, but we're not going to operate our own dispatch centers and messaging.
+
+Ben: We try to have a small IT department as possible. Why on earth are you asking us to do all of this work and just handing us this pile of technology?
+
+David: Yeah. Irwin is like, well, what if we just operate it for you and we provide a whole full stack solution? We don't sell you a technology, we sell you a solution.
+
+Ben: Which is like every enterprise company that you ever... You know a company has become enterprisey when they crossed the chasm and their website no longer has products, pricing, about, and it changes to solutions.
+
+David: Yeah, solutions. They make the business carry up solutions.
+
+Ben: We all should say, this is a tremendously dilutive financing event. This is Qualcomm saying, we need money so badly to fund the development of Omnitracs for this customer, OmniNet, that the most attractive option for us is to sell half the equity in our company. Everyone gets diluted 50% by merging with the customer themselves in order to get just a few million dollars to continue funding this effort. It's a pretty different time than today where you go raise a seed round and you sell 5%, 10%, 20% of your business for...
+
+David: I don't know too many seed rounds that are happening for 5% dilution these days, but they were.
+
+Ben: They were. It's crazy to think the position that they were in, where everyone was looking at Irwin and he was like, hey, I think this is literally the best path forward in order for us to get the few million dollars we need.
+
+David: I think some people were pretty bitter about this.
+
+Ben: Totally. You can imagine too, it's not like an idea. They had done a bunch of work already. This was going to happen. They were going to go to market. They were just a couple of years away from making $100 million in inflation adjusted dollars, and yet they had to give up half the company.
+
+David: They literally were a couple years away from making actual 100 million because the business doubles every year for 5 years from $32 million dollar base. It's freaking awesome. Now that this is in place, they're like, all right, we have both a cash flow spigot that we can use, and now a base of business that we can finance, borrow against, and raise equity against to pursue the real big idea in our original patent.
+
+Here's the other just brilliant thing. What happened originally was not that. There were other people who knew about code division multiple access. Other folks could have been in a position to patent this and pursue it. But at the time, nobody believed it could actually work because you needed such sophisticated processing power on both the endpoints on the base stations and the endpoints to actually make this work. It sounded completely freaking crazy.
+
+Ben: It needs to happen in real time. People need to have conversations without a perceptible delay. You're first doing the analog to digital digital encoding, where you're taking their voice and you're actually turning it into a digital signal. You're cutting it up into a bunch of packets. You're encoding those packets with every user's unique code. You're sending it over the airwaves to your most local cell tower. That cell tower is relaying it across a variety of other cell towers to where the other person on the end of the conversation is having the call. And then the whole pipeline is happening in reverse.
+
+David: On the handset.
+
+Ben: On the handset.
+
+David: This is the thing that maybe you believe you could do this processing on the base stations on the infrastructure side. The idea that a car, something powered by an internal combustion engine like in a car or heaven forbid, not a car, like a mobile phone like Zack Morris phone that somebody would hold in their hand that you could do this on something like that was crazy in 1986.
+
+But the Qualcomm guys, they know about Moore's Law, which most people didn't know about at that time. They're like, yeah, I'm pretty sure you give it one or two more turns on the crank on Moore's Law here, and I think we could maybe do this.
+
+Ben: There are so many things that we've talked about on Acquired generally, but especially in the last year, where their success came from correctly forecasting where Moore's Law would be at the time that they shipped their product.
+
+David: Yeah, and at the time of shipping. It's not possible today, but when we're going to ship this, which is still going to be several years in the future, it will be possible then. It's so cool. I think there were so few people that knew that then and like, ah, crazy.
+
+Ben: Listeners, for our second sponsor of this episode, we are talking about Brex. And we're doing something a little bit different. Our friends over at Brex are big fans of the community and asked what we could do for the community. If you become a Brex customer because of hearing about them on Acquired and using the link in the show notes, that's brex.com/acquired when you sign up, they will send you a free Acquired t-shirt. That also goes for anyone who signed up earlier this season.
+
+David: Brex, of course, is a fantastic provider of modern corporate cards and expense software in over 100 countries trusted by big companies we've talked about on the show like DoorDash, Pilot, and of course, recent LP Show guest, Mutiny.
+
+Today, though, we want to talk about something that we found out that Brex does for their customers that is pretty unique. We were getting coffee with the Brex team in San Francisco a couple of weeks ago. We found out from them that for their customers, they do billboard rewards.
+
+Ben: Yes. Here's how it works. As you would expect, Brex gives points on everything that you and your team buy on the cards. Points, of course, never expire. While you can choose to use those points for cash, which I'm sure most people do, they also have a crazy way to redeem your Brex points, which is actual billboards.
+
+They have a full service in-house billboard campaign planner. You might say, how did this sort of come to be? Brex got very good at this in 2018 when you saw them everywhere, and they leveraged all these connections and discounts. They negotiated with media companies to extend it to all Brex customers. You can turn Brex points into out of home advertising and top cities, high traffic locations.
+
+If you've been in San Francisco in the last six months, you've probably seen the awesome billboard takeover on the 101 from Stitch whose founders are also members of the Acquired community. That was courtesy of their Brex points.
+
+To get started and to get an Acquired t-shirt, sign up at brex.com/acquired or click the link in the show notes. If you're already a Brex customer and you heard about them from Acquired, just drop us a line at hello@acquired.fm from the email associated with your Brex account, and we will get you a t-shirt too. As always, Brex terms and conditions apply. Our thanks to Brex.
+
+David: Thank you, Brex.
+
+In September of 1988, all these factors, they've got the financing capability to take a swing at this. They see a path with Moore's Law to it being technically feasible. They've got the patent. They literally are the only ones that can do this, and then the market timing.
+
+In September 1988, the US Cellular Telecommunications Industry Association or CTIA as most people know it, and then it's related entity, the TIA, the Telecommunications Industry Association, they released performance requirements, the spec for performance requirements for the planned upgrade of the US's cellular networks from the analog 1G networks to the new digital 2G networks.
+
+Ben: This is just the US one. Europe has its own.
+
+David: Europe's already well on its way. GSM, Ericsson, TDMA, it's all happening here in Europe. The Qualcomm folks, of course, they eagerly anticipate the release of the spec. They look at it and they're like, oh my God, this could not have been written better.
+
+Ben: It's written for us, it's perfect.
+
+David: This is a dream, it's written for us. They realized two things. Of course, TDMA is the frontrunner and Ericsson now to the US too, because they're successfully doing it in Europe.
+
+Ben: And not only is it being done in Europe. It makes sense to adopt in the US too because it's kind of nice to have a global standard and because it's quite believable. Like okay, one big thing I have to believe is we're switching to digital. I can believe that.
+
+Another big thing I have to believe is that you're able to use the same frequency for several conversations at once through cutting up different time windows. Okay, I can believe that, but gosh, how much new stuff are you trying to invent all at the same time? Anything further than that feels like I got to take a leap of faith.
+
+David: And show me it can work, and Ericsson's well on the way to pilot, proving, and showing it works. This actually works.
+
+Ben: They're big companies, they've succeeded before, they're the right vendors that everyone trusts.
+
+David: The spec that the CTIA publishes, the Qualcomm guys says, this must have just been beaming year to year. They realized that TDMA, because of the capacity limits of TDMA, it's not going to meet spec. You've got the best implementation of TDMA. It's not going to allow for enough compression to actually meet the spec that the US wants to hit.
+
+Ben: I've been waiting to bring this thing up. At this point in history, the US standards body is correctly forecasting the incredible popularity of cell phones in the US. They're setting a really high bar for the amount of phones that need to be able to use this network. The reason that they have since changed their tune is in 1980—this is a fun bit of trivia—AT&T, who has been the incumbent for 100 years on all things telecommunications, commissioned McKinsey & Company to predict cell phones—
+
+David: It all goes back to McKinsey always.
+
+Ben: Always. To predict the cell phone usage in the United States in the year 2000. Flash forward 20 years in the future. The Consulting Group argued that cellular telephony would be a niche market.
+
+David: Yes, of course.
+
+Ben: They forecasted 900,000 people would be subscribed to a cellular telephony network in the year 2000.
+
+David: I think I have 900,000 cellular connections, personally.
+
+Ben: As you know, that number was off by over 100x. There were 109 million people, not 900,000, 109 million subscribed in the year 2000. It does make the point that in 1980, it was super not obvious. You had some of the smartest people in the world both in domain depth at AT&T and just good business model thinkers at McKinsey wildly mis-forecasting this.
+
+To illustrate how big the miss was, AT&T eventually bought McCaw Cellular for $12.6 billion to become AT&T Wireless, which is the AT&T we actually all know today and catch up in mobile telephony. This 2G spec that was written is right around the time that a lot of the people in the industry are starting to realize, uh-oh, we're super wrong and what we all thought just a few years ago, the potential of this thing was.
+
+David: Back to the original Edwin Land quote starting the episode of creativity like one act following another enabled by it suggesting the next, this is the next needle day thread domino that falls of TDMA didn't hit the spec. They could kind of foresee this because they knew what the demand was, and they knew TDMA wasn't going to be able to do it.
+
+This is cool. I didn't expect to get into kind of like geopolitics on this. The US has a ton of bureaucracy and regulation like all of this being case in point.
+
+Ben: I think this took five years.
+
+David: And the standards bodies and all, this is not the free market by any means. The one difference in the US process for all this versus the European process, and it was the difference that made all of the difference, was the US government said, the industry associations, you guys can set the specs and all that. That can be official, but it's not mandatory.
+
+In Europe, it was mandatory. The TDMA, which TSM was based on, like mandatory. That's it, and plenty other countries, mandatory. US is like, this is the industry standard. We recommend that any mobile carrier follows it. But if you want to do your own thing, as long as it meets the performance spec, you can use whatever technology you want.
+
+Ben: Importantly, standards bodies are decoupled from government agencies. The FCC allocates spectrum, but the standards bodies are literally just industry.
+
+David: They're industry associations, yeah.
+
+Ben: And they need to exist, because there's so much coordination between all the different manufacturers, carriers, and companies involved that you need to have a standard. Otherwise, the innovation doesn't happen because no one knows what to build against, and no one can sort of effectively collaborate enough.
+
+David: Once all the standards come out, Qualcomm immediately goes to Washington. Irwin and Andy, they go to DC and they're like, hey, just to make sure. We just want to be crystal clear. Can you confirm to us that even though this other thing is the standard, if a given carrier, mobile operator, wanted to use something different, as long as it used a spec, that's cool. That's not illegal, right? And they're like, yup, that's the case. They're like, okay, cool. Thank you, we'll be back.
+
+That was the next needle they thread. They're totally undaunted. They go and they're like, great. We can go pitch individual carriers on using CDMA as a technology, so they start a sales process.
+
+This is now the beginning of 1989. They start a road show. They go out pitching this new novel CDMA standard versus the TDMA industry standard. Literally, I tweeted this the other day. In the Wikipedia entry for all this, this is canonically known as the holy wars of wireless. There's so much telecom nerdery, but it really is holy wars.
+
+Ben: Because it's about belief. So many people were just like, I don't believe you that CDMA will work.
+
+David: It was literally only the Qualcomm folks who thought it would work. I'm reminded of the Don Valentine like I knew the future. They didn't know the future, per se. But based on all their experience, they were very, very confident that it would work and it would win, despite the seemingly overwhelming odds, because they knew a secret, which was that, at the end of the day, as long as there was not government enforced standardized regulation, they knew that economics would win in the market.
+
+There are so many benefits of CDMA vs. TDMA. We've covered some of them. One of the other ones is that the voice quality is actually much better than TDMA. There's a whole litany of benefits.
+
+Ben: Security is much better. It was originally created for the government to beam stuff up and down to satellites. Another huge one is, literally, if you're operating a cell network and you can have more subscribers per unit of infrastructure, it's literally cheaper. It's a lower cost technology.
+
+David: This is the thing. There's one benefit that actually matters. All the others are nice to have on a feature spec. There's one benefit that is going to allow them to be super sure they're going to win, which is that it is an order of 3x-5x more efficient to operate.
+
+Ben: Unfortunately, they originally pitched 40x. That's the standard that everyone was benchmarking.
+
+David: That was versus analog, I think. It was 3x-5x more than TDMA. That meant if you were a carrier, you went with this crazy CDMA thing, and it actually worked, on a given set of spectrum that you are operating with, you could fit 3x-5x more subscribers, 3x-5x more monthly revenue on that same fixed cost base than your competitors who are using TDMA.
+
+If we've learned anything on Acquired about economics of industries, power, Hamilton Helmer, and all that, if you have a scale advantage or you have a power advantage of differential profit margins versus your competitors, you are going to run the table on your competitors in any given market if you do this.
+
+Ben: Yes. If a customer is worth more to me than they're worth to you, and we can offer them the same value, I'm going to win in the long run.
+
+David: Yeah, because you can just lower prices, get all the customers, and make more profits along the way.
+
+Ben: We've only sort of scratched the surface on this episode of reasons to doubt that code division was the right technology. There were all these other crazy hoops they had to jump over. One of them is the near-far interference problem.
+
+David: Yeah, this is like it.
+
+Ben: If you think about it, so let's keep the whispering analogy going. The code division idea is that we can all talk really quietly and use the smallest amount of power and the smallest amount of sort of gain in our signal to communicate with each other. It's much more efficient than all these other high gain, high power, high volume signals that everyone else is trying to use.
+
+If I'm using a really low gain signal and I'm far from the base station or from the cell tower, that's an issue, because the people who are really close are going to sort of drown me out. Imagine we're all whispering, but I'm miles away. You're going to hear the person whispering right next to you.
+
+We're very early days in powerful chips, powerful power management. You've got Qualcomm pitching the industry that they're going to do this and people were like, wait, but you have to turn down the gain on anybody really close to the towers and turn up the gain on anybody really far from the towers. You have to know in real time and adjust in real time all of that, so you have to be good at power management chips.
+
+Also, how are you going to know how far away someone is from the tower? And they're like, well, we'll be able to just observe the signal that is coming back from the tower. Or perhaps do it on the tower, observe the signal coming from the phone itself, and we will, in real time, determine if it needs to go up or down. This is blowing people's minds in the mid-80s. They're like, are you crazy?
+
+David: They're like, oh, don't worry, we got that.
+
+Ben: In real time, you're going to modify a signal based on what you're currently hearing from that signal, and then Qualcomm comes in way over the top and says, oh, also, there's this new thing called GPS that is coming out.
+
+David: Which they knew about from the military.
+
+Ben: Basing the technology on GPS, so we know how far away someone is from the cell tower based on GPS, which doesn't really exist yet. There are all these impossibilities with the system that theoretically is better, but we've never witnessed any of the building blocks that are going to go into it actually work in practice yet.
+
+David: Back to the magic thing, just the technological magic that went into this. Every stage of the way, they're like, yeah, we got this figured out. They patent every single piece of this. Unreal. The first patent we talked about is the most valuable, but there is a whole string of dozens, hundreds, thousands of other patents that come after this that are just incredibly valuable.
+
+They started the roadshow pretty quickly in February of 1989. One of the largest carriers in the Southern California area, PacTel Wireless is interesting because they get it. This economic argument, basically they're like, all right, if this works, yeah, you got us.
+
+They put up a million dollars to fund a prototype. They're like, okay, prove to us that this works, build a prototype. Qualcomm, for the rest of the year, works on this. November of 1989, they host a demo with the PacTel money, but they invite the whole rest of the industry in San Diego. There's famously a little hiccup where Irwin's giving a big speech introducing it, then they're going to do the actual demo. They've got vans driving around the city and then a base station back at Qualcomm HQ, and they're going to make it all work.
+
+He's giving the intro speech. One of the engineers is frantically waving in the back, like, keep talking, keep talking. They had to reboot the GPS system. He makes a little quip of like, as a former professor, it was easy for me to keep talking. He told this story like a million times.
+
+Ben: There is something funny too about this original demo where they're not a consumer hardware manufacturer yet. They've never built a phone. They're a bunch of academics and consultants. They're electrical engineers. For this demo, the cell phone that they build, basically, it looks like a mini fridge with a handset hanging off of it.
+
+David: Yeah. There's a photo of it in the book. It's awesome. We'll come back to building handsets in a sec. So it works. They're like, PacTel's great, we're in.
+
+Ben: Which then PacTel, by the way, would eventually get rolled up into Verizon. I think they're basically a Verizon's West Coast operator at this point.
+
+David: Some of the other industry folks who come, they're like, well, this is impressive. It works. San Diego is a pretty forgiving environment for cellular technology. This is a very geographically easy city to operate in terms of wireless signals. Prove to us that this can work in an urban jungle environment. Qualcomm's like, okay, how about New York? And they're like, well, we'll see you there.
+
+In February of 1990, they do a successful demo in Manhattan, in New York City. On the back of that, they sign NYNEX Mobile, which is one of the largest New York carriers. Then in August, they sign Ameritech, which is one of the largest...
+
+Ben: In Chicago, I think.
+
+David: Chicago, yeah. I think a big chunk of the Midwest. Then there's another brilliant move. They start going international. Here in the US, there's all this forward momentum that's already happened with the 1G analog services, the TDMA, and all that. They're like, what if we go out to countries where it's just tabula rasa, like clean slate, and we pitch this as the obvious best technology, and famously, South Korea back to the government mandated standards?
+
+The South Korean government is like, yup, this is clearly the best government mandated. They were building up the first cellphone networks in South Korea that were going to be these digital next gen networks, all CDMA, all Qualcomm. South Korea, for a time, was I think close to 40% of Qualcomm's revenues, and it was one of the most advanced mobile countries all just using Qualcomm.
+
+Ben: There's lots of benefits to the free market, freedom, and rights of individuals.
+
+David: There's also benefits to regulatory and government capture.
+
+Ben: Yes. Coming in over the top with an edict is also beneficial.
+
+David: In December of 1991, on the back of all this, they go public. There is a paltry $68 million in their IPO.
+
+Ben: Like a Series B.
+
+David: Yeah, totally. A 2021 Series B. Finally, in 1993, the US Industry Associations, the CTIA, and the TIA, does actually adopt CDMA as a second standard officially. It's like, okay, now you have our blessing. It's like, well, it doesn't matter. We already got half the industry signed up with us anyway. Thanks for nothing.
+
+At that point, Qualcomm does a secondary offering. There is another $150 million on the public markets. A couple years later or maybe a year later, there is another $500 million on the public markets, so they're very well capitalized. Why are they raising all this money?
+
+Back to the Omnitracs and this solutions discovery of enterprise, the people that they're pitching is their core customers, the wireless carriers. They are sophisticated operators, but there's a whole ecosystem of technology providers to them. Except in the case of South Korea, they already have built out towers, infrastructure. They're going to replace all that. It's a big ask, even with the economic advantage. It's a real big ask for PacTel, NYNEX, or any of these folks.
+
+Ben: If you're PacTel, you're like, it sounds great to me that you are going to have this much better standard and this much better technology.
+
+David: Are you going to replace my towers? Are you going to replace my base stations? Are you going to replace all of my customers handsets?
+
+Ben: Right. All of our customers buy phones from phone manufacturers. Are those phone manufacturers signed up?
+
+David: Yeah, right. It quickly becomes a rat's nest of industry dependencies. Qualcomm, they're this still relatively small San Diego technology startup. They can't do all this stuff. They do start signing some partnerships with both base station infrastructure providers and handset makers. They signed Nokia, big win, big European manufacturer as a partner. But they realize, to do this whole solution, specifically, there are four parts to making a CDMA wireless network work.
+
+We've talked about all them, but just to enumerate them here. You need the core IP and technology that we've talked about. Qualcomm's got that for sure. You need the infrastructure, the CDMA, like base stations that go on the towers and all that, the backend switching and all, you need that infrastructure. It needs to be CDMA, the old stuff is not going to work with it. The TDMA stuff is not going to work with it.
+
+You need the handsets for consumers to work. Same deal, there's got to be CDMA. Then, probably most importantly, in order to make those two sets of infrastructure work, you need the silicon, the semiconductors that go into them. Somebody's got to do all four of those things. All four of those things need to happen. Qualcomm's for sure got number one covered. The question is, who's going to do two, three, and four? I was like, the science start signing partners, but they're like, we really need to spur adoption. I think we kind of got to do everything ourselves.
+
+Ben: We need to offer the complete solution.
+
+David: The complete solution. This is a major undertaking. This is why they raised all this money in the public markets.
+
+Ben: Which is quite interesting. None of us are buying Qualcomm phones today, like Qualcomm brand new phones.
+
+David: Spoiler alert, Qualcomm today is the largest fabless semiconductor company in the world.
+
+Ben: Isn't that crazy? Bigger than NVIDIA.
+
+David: Bigger than NVIDIA, and they don't make handsets and they don't make infrastructure.
+
+Ben: Bigger than Apple.
+
+David: Yeah.
+
+Ben: In terms of numbers of orders they're placing with chip foundries, Qualcomm is the biggest.
+
+David: Yeah. How do you get from there to here?
+
+Ben: They did need to run this really interesting playbook where even though it wasn't going to be the thing that they necessarily did long term, in order to get their solution adopted, they had to do it in the moment.
+
+David: Bootstrap it up. They do another just brilliant move. They create two joint ventures, I believe both of them. I know the handset one, but I believe both were 51% owned by Qualcomm, 49% owned by the partner. On the infrastructure side, they partner with Northern Telecom, Nortel, to do a JV to manufacture CDMA base station equipment, and then another wonderful Acquired full circle moment.
+
+Ben: They call up our friends in Japan.
+
+David: They call up our friends in Japan, who at the time, their US manufacturing headquarters was based in San Diego, California. Very convenient. I guess Akio Morita was running it at that point in time.
+
+Ben: Yup.
+
+David: The Sony Corporation to partner in a JV to make handsets. I actually had a Qualcomm handset back in the day.
+
+Ben: You did? Like one of those little flip phones.
+
+David: Yeah, that was a lawsuit with Motorola. No, no, I had a brick phone, like a small brick. Not a Zack Morris brick, but a small brick. It's a Qualcomm phone that was made by the JV with Sony. That was a Sony phone with Qualcomm branding.
+
+Ben: But they're doing all this to be able to answer yes when a carrier is coming to them and saying, well, great, we'll be CDMA, but question mark, question mark, question mark. Qualcomm's like, yup, yup, and up, we make all that stuff, so you should feel safe adopting us.
+
+David: IP, infrastructure, handsets, silicon that goes into both. We got all of it. We just talked about one, two, and three. We didn't talk about the silicon.
+
+Ben: To be clear on the silicon, people know the Snapdragon brand today. This is not Snapdragons. This is not systems on a chip, CPUs. This is not a competitor to Apple's A15. This is literally the silicon to power the radios, and just that. It's to do the encoding, decoding, power management of literally just attenuating the airwaves to send CDMA-encoded telephony back and forth.
+
+David: You're making it sound trivial, but this is the final...
+
+Ben: I'm not making it sound trivial. You do it.
+
+David: Right. You do it. This is the final just brilliant master stroke in this long series of brilliant master strokes that Irwin and Qualcomm did at this time. I don't know any other chain of just brilliant, brilliant strategic decisions one after the other. If this had been 10 years earlier, they would've had to do the same thing with silicon. They would've had to partner with Intel, AMD, or somebody, TI, Texas Instruments, somebody.
+
+Ben: One of the real men.
+
+David: One of the real men that had fabs. Of course, were referring to AMD founder, CEO, Jerry. I forgot his last name.
+
+Ben: Who once said that real men have fabs and of course, was proven desperately wrong.
+
+David: Right. They would've had to do the same thing they did with Sony and Nortel on the semiconductor side, and maybe they could have had some value capture from the Qualcomm IP, but they would've had to partner to make this stuff. Thanks to our Acquired superhero, Morris Chang, fabless semiconductors in 1989, 1990, 1991 are just starting to become a thing.
+
+Ben: So they could design their own ships without having to actually have a foundry in-house to make them, and they could outsource that.
+
+David: So they could actually do all the important value added work. It's a freaking Ben Thompson smiling curve in this industry. If you go from one to four of the IP, the two manufacturing, and then the semiconductors, all the value, all the differentiation in this industry is in the IP and the semiconductors, and the manufacturing is a commodity.
+
+Qualcomm would've been a great company if they had just captured the first. They captured the first and the last. They got all of the value. Like we talked about on the NVIDIA episodes, it was equally crazy and future seeing to know that fabless was a thing, that foundries were a thing, to be willing to work with foundries. And Qualcomm did it.
+
+Ben: It's like, how many times is this company going to be in the right place at the right time and know it?
+
+David: Right. We're going to talk more about silicon and Qualcomm as we go here. But just to paint the punchline here, today, Qualcomm's total revenue is close to $40 billion annually, I think, of which 85% is their semiconductor business.
+
+Ben: Yup, $37 billion of their $44 billion of revenue is semiconductor business.
+
+David: But for this strategic decision, 85% of today's Qualcomm revenue would not exist. They are the largest fabless semiconductor company in the world, bigger than NVIDIA who's number two.
+
+Ben: It's crazy.
+
+David: Totally crazy. It makes sense. They started a couple years before NVIDIA. So compounding, it's a thing.
+
+Ben: That's right.
+
+David: They pull this whole freaking thing off. It's just crazy. There's nothing more to say than it's just one of the most impressive business stories I have ever heard.
+
+Ben: CDMA gets adopted as a major 2G standard for the next set of phones that come out.
+
+David: Fifty-seven percent market share in the US in 2G, 100% market share in countries like South Korea. They end up getting either 100% massive market share in China, which is adopting mobile cellphones for the first time, and this is so much so.
+
+Ben: 1995 is the first year that these networks go live in the US and internationally. Qualcomm does $383 million in revenue in 1995. In 1996, they do $814 million in revenue. Oh my gosh.
+
+Here's the crazy thing. Here's another just wild, you can't make this stuff up. You would think Wall Street would love the stock. Wall Street Bets would be going nuts for this stock, the equivalent at the time. Not at all the case. The stock is basically flat. Wall Street kind of hates it because the manufacturing operations and the JVs require so much capital, and they're tying up all the profits of the company.
+
+Ben: The stock gets punished basically all the way up until January of 1999, and a few interesting things happen. Are you okay jumping to '99?
+
+David: Yeah, great. I was going there anyway.
+
+Ben: A few interesting things happen in '99. Qualcomm starts to realize, it's a pretty serious drag on our business to have this super capital intensive manufacturing operations. We're funneling all this money that could be free cash flow for the business or could let us reinvest in new R&D into making phones and making base stations. We got to do something about this. In March of '99, they sell their infrastructure business, the base stations, to Ericsson, which was normally one of their competitors.
+
+David: They're a big competitor, who's part of a settlement deal of all the lawsuits that popped up between the two companies along the way. They're like, oh, great. We'll sell you our manufacturing [...].
+
+Ben: This is basically them looking and saying, I don't think we need that to bootstrap our strategy anymore. I think at this point, we've got enough momentum that we don't need to make our own base stations. We don't need to make our own cell phones. A thousand of the 9500 Qualcomm employees become Ericsson employees. Then they look over at their mobile phone business.
+
+David: One—not fun at the time, but fun now—little footnote on that sale to Ericsson. The employees that got transferred as part of that were so freaking pissed that they lost their Qualcomm stock options. They got Ericsson. I don't think they even got equity at Ericsson at all. They actually filed a class action lawsuit against Qualcomm to get their stock options back.
+
+Ben: Over the next 18 months, the stock would basically be Tesla stock. This crazy moment that we're about to talk about, December of 1999, Kyocera buys Qualcomm's mobile phone business. They now officially just sell chips that they call QTC, the Qualcomm CDMA Technologies Group. Then they've got a second group, QTL, which is Qualcomm Technology Licensing. The business model is now set.
+
+They make silicon. They make licenses. They sell very high margin revenue licenses to their patent war chest. That's the business model for the future. They no longer have this drag on them.
+
+David: And they sell relatively high margin semiconductor designs because they don't fab any of the semis.
+
+Ben: When they're selling these designs, they're not just saying, here's a chip, give me $5 for it. They're saying, how much you sell those phones for? Yeah, we'll take 5% of that. You say, what? What if I want to raise prices on my phones? And Qualcomm says, yup, you'll still pay us 5% of that.
+
+You're like, what do you mean? I'll just go somewhere else. They're like, where are you going to go? We own all the patents. And by the way, in addition to paying us 5% of the phones, I think you should pay us to license these patents too. And all the customers go, what? And Qualcomm goes, where else are you going to go?
+
+David: You make them sound so evil.
+
+Ben: I mean, they did invent it all, so they do have a right to monetize it.
+
+David: And the FTC sued them for antitrust.
+
+Ben: Well, spoilers.
+
+David: We'll get to that. The punchline of all this, after the December of '99, offloading of the handset business to Kyocera, which is actually a Japanese company, I also had Kyocera phones growing up...
+
+Ben: Boy, you bought all the good ones.
+
+David: I got all the good ones. You were on [...] network, right?
+
+Ben: I was on Cingular, which was a GSM network, which got bought by AT&T Wireless.
+
+David: It doesn't matter at all. It becomes CDMA anyway. In the year 2000 after this sale, the height of the tech bubble. On the Benchmark episodes, we're talking about eBay, eBoys, Benchmark's making billions of dollars, Yahoo's going nuts. It's the internet bubble, it's the tech bubble.
+
+Ben: And people are looking around. They're like, what powers the internet and what's going to power the next generation of the internet?
+
+David: The single best performing stock for the entire year 2000 is Qualcomm. It appreciates. The Qualcomm stock appreciates 2621% for the 366 days of the year 2000. I think it was a leap year. Yeah. It's unreal, 26.2x in the public markets in one year, the best performing stock of the craziest year until 2021, until last year in the stock markets.
+
+Ben: However, you would've had to know just the right moment to sell because it did not stay up there for very long. It would crash down over the next 18 months, such that it became only 4x from its pre-1999 high. But if you bought it on the way up, you lost a lot.
+
+David: I'll take only a 4x on my 2021 investments all day long these days. Yeah, pretty great. That's the core, just crazy business story of Qualcomm to take it from there to today.
+
+The next generation of cell phone networks, 3G, which Ben and I probably vividly remember, probably many folks listening do too. That's when there was a lot of debate, especially in the US about GSM versus CDMA. Naively, you would think at the time, like, oh, well all the folks who are going GSM, this is bad for Qualcomm. GSM switched to CDMA anyway. Basically, all of 3G was CDMA, it's just different flavors.
+
+Ben: In Europe and in the US, just worldwide. They just ran the table.
+
+David: Yeah. The reason for that was 3G was all about data speeds, broadband, internet data speeds, and CDMA was just the vastly superior technology.
+
+Ben: Totally. You didn't have to encode anything from analog to digital. When you're talking into your phone, you got to encode the signal. But if you're downloading a website, you're sending an iMessage, or you're sending a tweet, all that's digital information anyway. It's already packets. It lends itself perfectly to CDMA's digital required infrastructure.
+
+David: Totally. Then in 2005, Irwin retires as CEO, I believe, and also as Chairman of Qualcomm. Interestingly, his son, one of his four sons, Paul Jacobs, takes over and becomes the company's CEO. Paul actually has a Ph.D. in electrical engineering as well. He spent his whole career at Qualcomm, rose through the ranks, and becomes the CEO.
+
+Ben: An important thing, remember I put a pin in the idea that 20 years from 1985 when they filed that first patent, something else would happen? Paul Jacobs become CEO. Also in 2005, Qualcomm buys Flarion Technologies for $600 million.
+
+Flarion had some interesting products, but they had a lot of patents that would become essential for 4G. When we talked to some industry analysts about this, one view was, and I quote, "It was to refill the pot of missiles that Qualcomm promises not to fire at their customers if they pay additional money." The key set of technologies here were OFDMA, which we're not going into. 4G was based on OFDMA instead of CDMA, Orthogonal Frequency...
+
+David: Division Multiplexing.
+
+Ben: Yeah. We're not going to dive into it, but it was more efficient than CDMA. CDMA, it was definitely the night in shining armor versus the previous set of technologies. It didn't quite hold up to the claims or the future proofing of its evolution path.
+
+David: By this point in time, it's 20-year-old technology.
+
+Ben: Totally. What we do see here now is after the Flarion acquisition, Qualcomm is able to continue their same exact business model because all of the patents that would be required for 4G, LTE, and all that going forward, they own a lot of those too.
+
+David: Yeah. It's interesting. The Paul Jacobs era of Qualcomm from 2005-2013, I think, 13 or 14? Somewhere, about a decade. I think it's very viewed at a very mixed light. His big strategic initiative was getting Qualcomm into IoT. IoT didn't really become a thing, at least at that time.
+
+Ben: It's starting to work now.
+
+David: Yeah, it's starting to work now, but not in the time everyone thought it did. It was kind of like a lost era for Qualcomm. But when you look back on it, two things that actually were really great. (1) It was that acquisition because initially, Qualcomm was fighting OFDM and trying to have CDMA still be the standard for 4G. Eventually, they did pivot and get into OFDM. That was kind of an initial wrong move, but then it pivot in a save.
+
+(2) That's when they start building the Snapdragon unit, mobile systems on a chip, and CPUs and taking on more of the processing on the early predecessors to smartphones. That would just put them in such a good position for the modern smartphone era.
+
+Ben: They sell the high-end Android chip today. The world has sort of standardized around. Apple makes the A series chips for your iPhone. And if you're buying a high-end Android phone, it's a Qualcomm whatever. I don't know all the model numbers, but Series 8 Gen 1 or something is the Snapdragon.
+
+David: And they now brand everything Snapdragon.
+
+Ben: They do, which makes teasing some of this apart very confusing, because they've just slapped the Snapdragon label on so much that you're like, wait, but that's just an RF antenna. How come it says Snapdragon? And they're like, yeah, faked you out. That's the whole point of calling everything Snapdragon.
+
+David: I guess to be fair, the silicon engineering and the chip design, even for like, oh, just an RF antenna, that is a million times more complex than any processor in a phone 10 years ago. It is truly differentiated work that they're doing. That was obviously a huge win. To the point, I think today, Qualcomm makes on average about $20 for every smartphone sold in the world, including Apple iPhones.
+
+Ben: Yes. Let's get into that. I've got the timeline from here. Going to 2009, this is when all the litigation really starts to happen. People flipped from Qualcomm, we think really highly of you and you're a pioneer of technology and true inventors, which they are. They still spend a ton of the company's revenue and reinvest that into R&D. But where they really start to be known by their customers, the media, and the ecosystem as value capture pioneers.
+
+David: How do you capture pioneers? That's a new way. That's another Acquired t-shirt, value captured pioneer.
+
+Ben: Or what's the phrase that I use for Apple? Maximally extractive over their ecosystem. Qualcomm loses a lawsuit with Broadcom in 2009, has to pay $900 million. In 2012, Paul Jacobs at the helm makes a really bad bet. Maybe it's a good bet, but bad outcome on a reflective display technology called Mirasol. They spun up a $2 billion fab to make it.
+
+David: They actually made a fab?
+
+Ben: Yeah. There's ultimately zero customers for this next gen.
+
+David: Real companies don't have fabs.
+
+Ben: It was supposed to be like a screen that looks like a magazine page, but they were never really able to reproduce the image quality.
+
+David: Right. I was working at the Wall Street Journal at this time and like, oh, man.
+
+Ben: That was the future.
+
+David: It turns out, the iPad was the future.
+
+Ben: Yes. Steve Mollenkopf comes in and becomes CEO, or I suppose, gets promoted to become CEO. Very technical leader.
+
+David: He was COO before.
+
+Ben: He was COO before. But the problems, they keep growing revenue. They keep doing well as a company, but the ecosystem issues for them, and ecosystem reputation continues. In 2015, they enter into not just an issue with other companies, but now with nations. They have a licensing dispute with China.
+
+You have an activist investor who comes in that same year, JANA Partners, to try to split up the licensing and the chip business. That activist investor is kind of saying, why do these need to be the same company? The licensing business is printing cash.
+
+David: At this point in time, many semiconductor companies have split out the actual chip operations and the IP. A lot of old semiconductor companies are basically just litigation companies at this point.
+
+Ben: Yeah. That's the Broadcom model. It's interesting to say, okay, what is Broadcom at this point? Broadcom is actually a company called Avago where the CEO of that basically made a bet and said, I think the semiconductor industry is no longer experiencing growth. I think that industry should be harvesting profits.
+
+I think it's predicated on Moore's Law decelerating, but basically saying, I don't think that this industry should be reinvesting as much in R&D anymore because it's a settled frontier. What should be happening is we should be rolling up these companies. Avago buys Broadcom, takes Broadcom's name, buys some other stuff like LSI Logic.
+
+David: LSI Logic. Oh, big Sequoia win.
+
+Ben: Don Valentine. One of his first, very few investments. The Broadcom strategy is to roll up the semiconductor industry, squeeze them as much as possible. In fact, they're basically a private equity firm. Broadcom is borrowing lots and lots of debt to make the acquisitions that they're making and then squeezing them for profitability.
+
+David: I got my favorite piece of Broadcom history trivia that Avago, the sort of core of what Broadcom is, actually started its life as Hewlett Packard's chip division. What a sad state of affairs.
+
+Ben: Yup. In 2015, the company shakes off JANA Partners and doesn't split out the two businesses. I think that was the right call and I'll tell you why in playbook, but we were talking about Broadcom. In 2018, Broadcom comes in and tries to do a hostile takeover at a $117 billion valuation. Interestingly, it was financed by $106 billion of debt. That company, for the rest of its life, that would basically just be Qualcomm servicing the debt.
+
+Interestingly, the Trump administration got involved and said it would be a national security concern and block the deal. While that may have been true for the reason that the Singapore-based Broadcom was sort of joined at the hip with Huawei—
+
+David: They did a lot of business with Huawei.
+
+Ben: This, I think, ends up being a big win for Qualcomm's lobbyists. I think they had great relationships with the US government and always have since the early days in being a government contractor. A lot of people that we talked to or at least that I talked to, viewed this as Qualcomm being able to call in a favor and say, this is a national security concern, don't you think?
+
+David: We're calling in the favor now. It's totally true. This deal was going to go through, and Qualcomm was going to be everything you were just talking about with Broadcom, which would've been very—especially now, we know about semiconductors. This is one of the huge wins of the Trump administration for America was keeping Qualcomm an independent American company. Whether it was Qualcomm calling in a favor, I think we can all look back in 2022 and be like, this was an enormous win.
+
+Ben: Yup. In 2017, going back one previous year, both the US Federal Trade Commission and Apple sue Qualcomm for basically the same thing saying that Qualcomm was using its market position as the dominant smartphone modem supplier to force manufacturers into paying excessive fees. This is one that I want to sort of dive in on.
+
+We spent a bunch of time advancing through the timeline to really get to this particular point, which I think is a great place to zoom in on Qualcomm's strategic position today, is this Apple lawsuit. Some background, Apple has always used either Samsung processors in the first iPhones until they switched to their own, but they still had to pay Qualcomm patent royalties for whatever RF stuff they were using.
+
+Let's treat the CPU as its completely own world transitioning from Samsung to the A Series processors. Apple probably has to buy stuff from Qualcomm. Maybe they could look somewhere else, but either way, they're paying Qualcomm the licensing for it. Today, Apple does use Qualcomm cellular modems, which started in 2011. There was just one year where they used Intel or they did not use Qualcomm. We're going to talk about that.
+
+The way that I essentially perceive this and why Apple eventually initiated the lawsuit is Qualcomm got greedy. They had patents on technologies that were part of standards that were set by industry consortiums all over the world, and they leveraged those patents in basically every way possible.
+
+Here's the economics as far as I could sort of suss it out. They asked Apple for $7.50 cents per phone sold, which comes to about $2 billion a year plus an additional $8 to $10 when they were going to raise prices later. You quickly get to a situation where Qualcomm was sort of expecting Apple to pay $17 just to license patents.
+
+David: Right, no chips.
+
+Ben: On top of the price that they were paying for those baseband chips. Rack rate for a baseband chip, and baseband chips are the same thing as sort of cellular modems, is $30 a chip. It's not actually $30, it's more like 5% of whatever the average selling phone price is.
+
+David: Guess what, phones have a really high average selling price.
+
+Ben: iPhones. If you think about 250 million phones a year, that is $7.5 billion dollars a year that Apple would be paying Qualcomm. That would be 20% of the QCT revenue, 20% of all of the chip revenue that Qualcomm makes.
+
+Further, if you back out the $14 million a year from QCT, their chip segment, that doesn't come from the chips for handsets specifically, but rather there are some other stuff they're working on, automotive, IoT, and this new thing that they're calling the RF frontend radios product line, which we'll also talk about, Apple could make up up to one third of Qualcomm's handset chip revenue.
+
+Now, analysts have estimated that Apple negotiated down from $30 to $10. Apple's general counsel during the lawsuit let the number $18 slip. Whether it's $10, $18, or $30 a pop, that is an enormous amount of revenue that Apple pays Qualcomm, again, not for a Snapdragon, not for the CPU, not for the system on a chip. Just for the RF cellular modem.
+
+David: Wild.
+
+Ben: There are some other interesting things that came out in this lawsuit. Qualcomm asked Apple to speak out against Y-Max, which is a competing technology. They were like, we need you to vocally speak out that our competitor is a bad piece of technology. They also stipulated that if Apple ever used a competing supplier, and keep in mind, this deal is signed in the early days of the iPhone, if they ever used a competing supplier to Qualcomm, they would owe Qualcomm a billion dollars.
+
+What Apple is basically doing is biting their time for there to be an actual credible competitor. They had to wait all the way up until the 4G days until they're looking at Intel and they're like, especially if we work with you and we work closely with you, we think you can be a credible competitor to Qualcomm right now. We think your cellular modems business is close enough, where our customers won't notice the difference, and we can tell Qualcomm that we're going to use you and try to get a little leverage there.
+
+What Qualcomm interpret that as is, well, now you owe us a billion dollars because look at our original deal we did. What this basically comes down to from a legal perspective is because Qualcomm owns patents that are a part of an industry standard, they have to charge a price that is fair, reasonable, and non-discriminatory, or frand is the industry terminology.
+
+Apple's basically alleging, look, you're abusing the market because it's not fair, reasonable. You're highly, highly unreasonable in the way that you're charging us this. Around the time of the iPhone XS and XR, those phones actually did use Intel modems. But what was basically happening is the Intel modems were falling further and further behind Qualcomm. Apple was realizing, oh crap, we're going to miss 5G because there's no chance that Intel catches up right and can actually develop a credible 5G chip. So they end up settling and sort of backing off their big lawsuit with Qualcomm.
+
+David: We're going to escape our technical level of competency quickly if we haven't already, but 5G is pretty cool. You were talking about patents. This all sounds so icky, but the amount of engineering, IP, and work that has to go into what we described originally back in the World War II, it was so crazy complicated to make this stuff work back then. Now it's just like a factor of a million more.
+
+The amount of processing, what Moore's law has had to come up the curve to enable something like 5G, is unreal. There's a dedicated processor in front now of the RF stack to do all the crazy multiplexing that is required for 5G bandwidths to work, right?
+
+Ben: Yes. What is 5G? It actually is an open question. When 5G was first proposed, the proposal was to use the millimeter wave spectrum. This super high frequency part of the spectrum that for years, people thought was basically impossible to work with because it just requires incredibly sophisticated electronics to make it work.
+
+Not only that. Again, we're right on the edge of our competency here. But when you have really high frequency radios, they can't transmit through a lot of stuff. It doesn't handle concrete well. You end up needing a little base station on every street corner.
+
+Now, it can give you 10 gig internet. It's crazy, but it needs to be really close to you. As the telecoms were starting to build this out, of course, they say, we now have 5G. In fact, they even rebranded a bunch of LTE stuff to be 5G, so it would show up as 5G on your phone.
+
+David: I remember AT&T did this. Because I was on AT&T at the time. They used to say 4G LTE, and then all of a sudden, it just said 5G on my phone. I was like, what?
+
+Ben: Or 5GE. You're like, really, 5GE? That's exactly the same stuff I was using before, but now you've rebranded it. Occasionally you'd walk by something that actually had a millimeter wave tower and it'd be like, oh my God, this is the fastest internet I've ever experienced, and then you'd walk across the street.
+
+David: I remember Nilay at the Verge doing videos.
+
+Ben: Nilay is one of the world's expert on this.
+
+David: Yeah, on a specific street corner in New York City or San Francisco getting...
+
+Ben: 5G's a 10 out of 10.
+
+David: And then you take one step to the right and you're back on 4G.
+
+Ben: Here we are in 2022, five years after the initial hubbub about 5G started for consumers. What is 5G? The industry has decided to allot two more areas of spectrum that are not millimeter wave, and are easier to work with, and are cheaper to build infrastructure for and are slower as 5G also.
+
+Now, what that does to chip makers is it says, if you're building a cellular modem in your phone, you have to have a really complex RF frontend or what Qualcomm is calling their RFFE business. The RF frontend basically needs to, at any given point, adjust in real time depending on what flavor of 5G is currently available.
+
+David: You're accessing so many different windows of spectrum so far across the spectrum bands that like, yeah, oh, man. Think back to the original Hedy Lamarr and frequency hopping, it was all within one band. Now we're talking about a crazy number of bands.
+
+Ben: Going back to the Apple lawsuit, Apple sort of realizing, we're screwed here if we don't have Qualcomm as our customer. They settled with Qualcomm, and this is in 2019. Apple says, we will continue using Qualcomm's radios for now. I think they negotiated some discount to the exorbitant fees that they were having to pay Qualcomm. Apple also paid $4 billion—now switching over the licensing side of the house—to secure the patent licenses over the next 6 years. I think $4.5 billion for a six-year deal.
+
+It's actually unclear who really wins here. I think Qualcomm wins in the short term because Apple's backup solution of Intel's modem fell entirely behind. But in the long term, what ended up happening is Apple actually bought that division away from Intel. They've been developing their own cellular modems in-house. I don't know if it was a slip of the tongue or an intentional thing, but we know from the most recent Qualcomm earnings call a week ago that the next version of the iPhone that comes out in November of 2023 will continue to use Qualcomm's chips. Even though Apple has been working on their own [...] ever.
+
+David: Because they're trying to do the P.A. Semi on the modem.
+
+Ben: Yes. It's ludicriously hard to build the stuff that Qualcomm has built. Even next year's iPhone will have a Qualcomm RF frontend. I think they use RF frontend and cellular modems. But after that, Apple's definitely going to try and take this in-house. But Cristiano, the CEO of Qualcomm, sat on the most recent earnings call. After that, we do anticipate having almost zero dollars come from Apple in our chips business. At least they're foreshadowing to their shareholders, Qualcomm is, that they think Apple is going to succeed at this. It's just going to take a couple of years.
+
+David: This feels like a perfect time to talk about the other strategic chess move that Qualcomm made here.
+
+Ben: Yes. NUVIA.
+
+David: NUVIA.
+
+Ben: This is another 2021 move. Qualcomm bought this company called NUVIA for $1.4 billion. What is NUVIA? NUVIA was founded by former Apple Silicon people including the Chief Architect of the A-Series chips. That seems like a good get.
+
+David: Back to P.A. Semi.
+
+Ben: Yes. One way to look at it is this is Qualcomm's ticket into the laptop CPU/System on a chip market. They already make Snapdragons for the high end Android phones, and soon they'll be able to make a competitor to Apple's M Series chips for laptops, desktops, and maybe even servers.
+
+David: And phones too. iPads, phones, tablets. This is crazy.
+
+Ben: This is where it gets interesting. Snapdragons, for anyone who listens to our ARM episode, you'll remember the difference between ARM makes instructions and architectures that you can license or you can go big with them and just buy one of the actual ARM design chips off the shelf.
+
+David: Like buying a solution, you might say.
+
+Ben: Yes. Snapdragons use an off the shelf ARM design for their CPU. Apple just uses the ARM instruction set, but has done their own custom design to get the most performance.
+
+David: That's why Apple Silicon is so far ahead of the competition.
+
+Ben: Yes. The NUVIA team can just do their own custom design of chips and actually be differentiated from stock ARM CPUs just like Apple is doing. Unfortunately, everything cool about the Snapdragon chip doesn't actually include the CPU. The CPU is just a standardish ARM design.
+
+David: This is cool. This is the path for Snapdragon to get on par with Apple Silicon.
+
+Ben: Yes. And for their CPUs to actually, exactly. But one caveat to this whole thing about maybe they'll do laptops, maybe they'll do servers. Qualcomm actually doesn't really want to do any of that. Qualcomm historically has failed every time they've tried to do servers, watches, smart home, or displays. Every time they strayed too far from their core competency, it hasn't been good.
+
+David: Probably what Qualcomm really wants is $20 from Apple for every iPhone.
+
+Ben: I think that's a reasonable path forward. The CEO is pitching a much broader story than that to shareholders these days. What Qualcomm actually wants is for the NUVIA team to invest where they see the frontier going, where they see a much bigger TAM. Where Qualcomm sees a multi-hundred billion dollar opportunity, and that is IoT automotive and the RF frontend. They describe phone modems and phone systems on a chip as almost like a legacy business and they're highlighting these other areas as the growth business as the frontiers.
+
+But either way, NUVIA seems to be the ticket. Because if you can custom design chips using the ARM ISA, but be the performance of Apple Silicon, I don't care what you're putting those in. That's a really good powerful thing.
+
+David: Even for the technology industry writ large. Just like with Android, you had an iPhone rivaling operating system available off the shelf for any kind of application that let a million flowers bloom. To have the same thing for Apple Silicon, that's pretty cool.
+
+For our next sponsor of this episode, we have one of our very, very favorite companies in the Acquired family, pilot.com. Pilot, for those few of you who don't know by now, sets up and operates the entire financial stack for your company.
+
+Whether you're a startup or a growing company, even a large enterprise, that includes all your finance, all your accounting, your tax, even higher level CFO services like investor reporting. If you were to do this the old school way, you would either be building out your own finance team inhouse which is going to cost you half a million to a millions of dollars in increased burn. Which nobody needs right now. Or you would be using an old school accounting firm which probably is in no way equipped to help you as a modern tech company.
+
+Ben: We just had someone in Slack actually ask about solutions for something like this. We had a listener chime in and "We use Pilot. Can't recommend it enough."
+
+David: And Pilot, they integrate with APIs of all modern startup grade fintech platforms like Stripe, Brex, Gusto, Shopify, Square, etc. Any new up and coming service, you can guarantee that Pilot is going to integrate with it way before anybody else. Probably faster than you could do it yourself even if you had your own engineers working on it.
+
+When you think about why Pilot exist, this is the perfect moment. Accounting services has always been a services based business and Pilot still provides excellent service to all of their customers. But the why now has so much of finances turning into technology in fintech. Of course it makes sense that you now need and there's an opportunity for an actual technology company to do this for startups.
+
+Ben: Yup, if you would like to use Pilot, head on over to pilot.com/acquired. Make your life easier, have them eliminate the pain of tax preparation and bookkeeping for good. Thanks to our friends Waseem, Jessica, and Jeff, all Acquired listeners will get 20% off their first 6 months of service. Our huge thank you to pilot.com.
+
+There are two other small things that happen that I think let's just skip. I'll mention them briefly but let's get into analysis. Paul Jacobs got kicked off the board of Qualcomm in 2018. He tried to take the company private through a buyout when there was all this tumult about is it going to be bought by Broadcom, all this stuff. The board said, if you're going to try and make a hostile takeover and LBO the company yourself, you can get right off the board. There are no members of the Jacobs family on the board of directors anymore.
+
+The other thing that happened in 2016–2018, Qualcomm tried to acquire NXP Semiconductors. But I think eventually trying to just drag their feet enough to kill [...].
+
+David: They get tied up in the whole Broadcom thing.
+
+Ben: Yes. But quick review of where they are today and then we'll go into analysis. Qualcomm today has a $120 billion market cap. Which two things, (1) that's astonishing, that's impressive. They're technological pioneers and they're amazing at value capture. (2) That is the same prize that it was worth at the peak of the dot-com bubble.
+
+David: Wow. And just about the same amount that Broadcom offered to buy it for, right?
+
+Ben: Yup.
+
+David: Which is interesting. Revenue can probably also number of chips, they are the largest fabless semiconductor company in the world, bigger than NVIDIA. But a way lower market cap than NVIDIA.
+
+Ben: Yup. Are you going to make a bet? Here's my view on the Qualcomm versus NVIDIA. Do you bet on the intelligent connected edge as the CEO Cristiano Amon would put it or do you bet on AI? They're both mega trends, AI has a far bigger potential, in my opinion than the intelligent connected edge which is wonderfully buzzed.
+
+David: Although I do really have a genuine appreciation after doing this episode for the amount of engineering that goes into wireless technological advances. Which is almost at a Moore's Law, much slower than Moore's Law like pace, but a steady drum beat has continued to improve. Now there's no difference between 5G and home broadband.
+
+Ben: If you're standing on the right street corner. They do $44 billion in revenue. Chips make up most of that at $37 billion, licensing fees make up only $7 billion. But the licenses are a much higher margin business. It's a 69% margin. I think it's earnings before tax margin on licensing versus only 34% for the chips. There's a super efficient business there in licensing.
+
+Revenues are growing 32%. Earnings are growing 47% year over year. This is an amazingly high growth rate company.
+
+David: Yeah. That's pretty awesome.
+
+Ben: They almost doubled their revenue over the last couple of years too.
+
+David: This does seem to be doing a good job.
+
+Ben: Cristiano is the new CEO as of last year. I think he's been on for about a year. Into analysis. What power do you think that Qualcomm has?
+
+David: Patents?
+
+Ben: Is that a cornered resource?
+
+David: I think that is a cornered resource. Hamilton in 7 Powers, I think he does say patents are a canonical description or a corner resource, that for sure. They had at least, maybe still do have network economies in the infrastructure side of the telecom industry.
+
+Ben: One locks in the other.
+
+David: One locks in the other. If you control the infrastructure standard, all the handsets will have to use that. If all the handsets use XYZ standard, then the infrastructure [...] being able to control both. I think there actually was a network effect there.
+
+Ben: I also think they're scale economies. If you are a fabless chip company, then it is worth all the R&D going into designing and creating a Snapdragon and realize across a huge number of customers. It's really hard to start the next Qualcomm if the frontier you want to compete on is making a better Snapdragon. That's not going to happen.
+
+David: I've got a fun one here. This is both fun to talk about it because it always is. I feel reasonably confident in, I think Qualcomm during the golden years that we told the history of had real process power. I think it was equivalent to the XR Brain Trust. That set of people working together under those set of circumstances were wholly unique in the industry and the world. Actually, it's interesting, besides The Qualcomm Equation book from Dave Mock, which is amazing, there's tons of history out there about Qualcomm especially in local San Diego publications and history books.
+
+Ben: Especially because the Jacobs has given hundreds of millions of dollars to support the community.
+
+David: We didn't talk about this but Irwin is one of the great philanthropists of the past century, undoubtedly. But to UCSF, so much of building infrastructure in San Diego comes from Qualcomm and the Jacobs family. Going and doing all the research, all these local San Diego publications and historical documents, they all talk about the wellspring of startups and other technology companies that came out of Qualcomm.
+
+Indeed, they are linked about in Qualcomm. There are a hundred plus in the San Diego area that came out of Qualcomm. But you compare that to Silicon Valley, what came out of Intel, Fairchild, what came out of [...], there is not the same diaspora of success. There are plenty of successes, Solana and Anatoly's, they're part of the Qualcomm diaspora. It's not like there's none, but not at the same scale.
+
+I think that actually de facto shows there was process power. It was that unique group of people in that unique situation.
+
+Ben: That's an interesting proof by example.
+
+David: Deductive proof.
+
+Ben: Do you want to talk about the bear and bull case for the company? I have a few.
+
+David: Okay, go for it.
+
+Ben: All right. Here is the bear case. Qualcomm has very real competition from the low end that we didn't talk about. An example is Mediatek who not only makes the baseband modem chip, but also systems on a chip using the stock ARM CPU designs. Mediatek systems are way cheaper than Qualcomm. I think they just surpassed Qualcomm in terms of the number of units shipped. All the low and mid-end Android phones are using Mediatek. Qualcomm needed to buy NUVIA in order to differentiate the CPU and not just be using the stock ARM design that Mediatek and everyone else is using on much cheaper chips.
+
+Historically, they failed that everything that was not a phone that we talked about before and now they're sort of saying the future is IoT and automotive. These things are not phones. We'll see. They're just constantly in lawsuits. We didn't talk about this but China, South Korea, EU, Taiwan, all these nations have sued.
+
+David: Somebody's law firm must just be making a fortune off of this industry.
+
+Ben: Right. The last one for the bear case for me is I really think that they finally poked the bear—talking about their customers—enough to make them want to actually do something about it.
+
+The goal for Qualcomm should have been make as much money as you can without pissing people off too much. I think over the last decade, they really upset Samsung, Apple, so many people that are starting to at least make their own radios or even consider systems on a chip. Now that there's very viable alternatives for silicon that people can either use in-house or competitors coming around at different angles, Qualcomm may lose their leverage to actually get a royalty out of each phone sold.
+
+Licensing business is going to be a juggernaut, smaller in revenue but higher in margin. But that is the bear case in the current silicon business.
+
+The bull case, maybe the lawsuit thing is actually a bull case. They manage to keep making more and more money and have been reaffirmed over and over again in a bunch of jurisdictions that they set their way out of these lawsuits, but they're able to keep making tons of money.
+
+The big bull case is you believe that this shift to automotive IoT and 5G RF frontend is real. For those keeping track at home, everything I'm about to say is a part of the chip segment that does that $37 billion in revenue. Automotive does $2 billion in revenue. That's a very real business. The RF frontend business that we were talking about, that does $4 billion a year in revenue.
+
+David: It's interesting, I rented a car here in Lisbon for the family. Of course it has data built in, 4G or 5G data built right in as like just about every new car these days.
+
+Ben: Yup. The IoT segment is now doing over $7 billion a year. Qualcomm thinks overall this is a $100 billion opportunity. There's a bigger narrative that Cristiano is trying to espouse around this intelligent connected edge that they call a $700 billion opportunity.
+
+David: They're [...] numbers.
+
+Ben: I know. It reminds me a lot of the NVIDIA slide that talks about their trillion dollar TAM. They're executing very well but I think they're trying to sell a story in terms of an addressable market that is head wavy.
+
+Playbook. In the early days, this is a thing that we didn't talk about. We talk about some of the ecosystem stuff, but there is this incredibly delicate dance of needing to be the best supplier to win deals, but also have other credible suppliers. No phone company was going to take a dependency on the CDMA technology when just one vendor existed. They need to evangelize and create their own competitors so that their customers can feel safe with this new technology. But of course, as long as they kept some things secret of how to eke out the absolute best performance from the innovations, they actually could still be the leader. It was like figure out how to get a bunch of other people just good enough, which is fascinating.
+
+David: It's such an amazing case study in bootstrapping an industry.
+
+Ben: Yes, yes. Similarly, they had a clever tactic in their IP strategy. At Qualcomm, where I think they have something like 17,000 patents now, there's a decision every time there's a novel piece of technology about whether they should patent it or keep it a trade secret.
+
+There's enough things patented so that you can't achieve any of these things, these magical things we've been referring to all episode, these layers of magic without paying Qualcomm. But they don't patent everything because they want to keep an advantage for consulting revenue, implementation fees, or signing big deals where they say, not only do you get access to our patents—which may expire at some point—but if you work directly with us, you get access to the trade secrets and you can pay us to generate services revenue for you to work with our engineers.
+
+David: I was thinking about this for playbook as we're going to, there's this really interesting dynamic to this industry that lends itself well to the IP and patent monetization scheme that Qualcomm has adapted which is that the successive generations of wireless network Gs happened just fast enough that it's within the patent lifetime. So that all that core CDMA, all those patents are expired now, but it doesn't matter because we're so many generations beyond that those patents are now worthless. You get all the useful life during the protection period of the patent. It's not like a generic drug where Advil, Tylenol, or whatever is still useful.
+
+Ben: Right. That's a great point. It's also interesting if you miss the window. If Qualcomm had missed the window in the early '90s of evangelizing the technology for 2G, they may not survive long enough to catch the next window 10 years later for 3G. This is one of the few industries where there's this super quantized time window that exists when you can actually get in.
+
+Another one that I thought was pretty interesting, because I mentioned I think the business actually makes sense together, the licensing business offers Qualcomm predictable high margin revenue that they can basically use to fund R&D. Because they know they're going to keep getting that and because it's a big revenue stream, it lets them take bets on new R&D. When they do more R&D, that fuels the flywheel where they both get new products and they get more IP that they can continue putting into the licensing flywheel. There is a credible argument of why you want to keep them together.
+
+David: Qualcomm makes that argument explicitly.
+
+Ben: Totally. The not very credible argument is this thing's a cash cow and we want to keep our rich uncle around to make this a nice place to work. They have nine airplanes. It's a relatively cushy company from what I understand.
+
+David: San Diego is a very nice place.
+
+Ben: Yes. I do think the big picture is that the US government's patent system has granted Qualcomm a monopoly. This is one of the few things we've covered on the show where the business exists because of the US's regulatory system.
+
+They've basically said and then reaffirmed in a lot these rulings, you are allowed to capture a ton of value from this. There's so many good debates about whether the patent system exists and serves its intended purpose of enabling people to spread the news about their renovations so other people can add it. The way we compensate you is we give you a 20-year exclusivity window or whether somebody like this is an abuse of the system. But there's no way to argue that this is anything but a perfect execution of the game on the field.
+
+David: It strikes me telling this whole story that early stage venture capital company building [...]. If you were to give a venture capitalistic Qualcomm pitch. There's so many. There are at least six or seven different hops where ex ante it looks like, well, and then a miracle happens and then we succeed at this. And then another miracle happens and then we succeed at that.
+
+Usually, my pattern matching as an investor in early stage companies is anytime there's a single and then a miracle happens, automatic pass. Because this wasn't just like and then a miracle happened. If you listen closely and really knew this team, they really knew. They had really high degree of confidence that all of these tight threading the needle moments were going to happen really to a degree that just blows my mind. I've never heard anything like it.
+
+To maybe just be a little more open to that, some person walked in off the street and said, give you the Qualcomm pitch, for sure it would not work.
+
+Ben: For sure. The hardest thing being a technology investor or someone participating in this ecosystem in any way is it's a power law dynamic. This is a business of exceptions.
+
+David: I've seen—I'm sure you have too—so many counterfactuals too where incredibly credible teams walk in off the streets then a miracle happens and yeah, it still doesn't work. But sometimes.
+
+Ben: It never works, but sometimes it does.
+
+David: But sometimes it does. That's what makes our industry fun.
+
+Ben: All right. We're not going to do grading because we've decided to kill grading until we otherwise resurrect it. But I do think it's worth articulating a little bit of a takeaway. My takeaway on Qualcomm is the last decade was basically the best decade for their business model and being in the right place at the right time to have an incredible business model around capitalizing on mobile.
+
+In order for the next decade as successful, they need to be absolutely correct about their growth businesses around IoT, around automotive, and around whatever the intelligent connected edge ends up describing. Because I think those are technologies that we don't quite know what they are yet. I think if they continue to try to run the same playbook in just the handset market that they have been, the best days are behind them because people have caught on to their games a little bit and are going to squeeze in from a bunch of different directions.
+
+David: Yes, totally agree. To paint the best version of the intelligent connected edge that I have heard Cristiano articulate is to put plainly—we did the AWS episode. There's over a hundred billion dollars in revenue backlog in the cloud. We talked about on the AWS episode, Snowball and Snowmobile, getting data to and from the cloud is still one of the major pieces of lock in. You think about how data gets in and out of the cloud, most of it is not by Snowmobile. Most of it is wireless.
+
+Ben: Connected on the edge.
+
+David: Connected on the edge. If you think about it like that, you're like, okay, yeah, I can buy that this is a trillion dollar market. But how do you capture value in that, can we capture it in the same way that they have in the past? Very much open questions.
+
+Ben: Listeners, that was a total blast. David is crazy to do a live show like that with no guest for 2 ½ hours on stage just you and I.
+
+David: Yes and a professionally operated boom camera.
+
+Ben: Yes. If you haven't watched the video version of this, just go check it out on YouTube, Spotify, or anywhere just to see what that looked like. It was a very fun spectacle to get you to do that.
+
+Our huge thank you to Fundrise, Pilot, Brex, and the Solana foundation for hosting us at Breakpoint this year. It was a really great event and fun to be in Lisbon.
+
+On another note, we wanted to say a huge thank you to everyone who took our survey over the last month. We have emailed the winners of all of the Acquired t-shirts and the Airpods Pro 2nd Generation winner is Lindsay from San Francisco who we have also emailed. Congratulations to all of our winners, and a huge thank you for helping us learn more about all of you. It really helps us run the business, make the show better, and really understand the audience.
+
+When you finish this episode, come talk with us at acquired.fm/slack. Thirteen thousand other smart, thoughtful, kind people. If you want some of that sweet Acquired merch everyone is talking about, go to acquired.fm/store. I know in the next few weeks, there's going to be a couple new designs dropping inspired by catch phrases from episodes where I applied my graphic design skills for better or for worse.
+
+David: It's the perfect time to sign up as a customer for Brex to get one of those.
+
+Ben: Yes, that's right. If you don't want to pay for your t-shirt, brex.com/acquired, much cheaper way, you also get to be a Brex customer. Wins all around.
+
+David: Win-win.
+
+Ben: If you want to listen to the LP show, we have had some awesome, awesome episodes recently. We just interviewed Jay Hoag, which is a super rare interview to get. Jay is the founder of the $21 billion firm TCV, formally Technology Crossover Ventures, about their story and his personal philosophies.
+
+TCV was a major investor on much of the journey of companies you know like Zillow, Spotify, and Netflix which we spent a lot of time talking with Jay about. You can search Acquired LP Show for free, publicly in the podcast player of your choice to catch that. With that, listeners, we'll see you next time.
+
+David: We'll see you next time.

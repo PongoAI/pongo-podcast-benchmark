@@ -1,0 +1,407 @@
+Ben: Hello, Acquired listeners. Welcome to this episode of ACQ2. Today, we are talking with Cris Valenzuela, the co-founder and CEO of Runway ML, one of the most fascinating companies in the AI space right now. I've had a chance to play around with quite a bit, and I'm absolutely blown away by the product.
+
+As we are diving into trying to understand the current state of AI, and everyone is watching all this rapidly evolve in real time, I looked at this as an awesome opportunity to get to spend more time with Cris, who is not only contributing to this space but inventing it as we're going along. Without further ado, Cris, welcome to Acquired.
+
+Cris: Thank you for having me.
+
+Ben: Awesome to have you here. David and I wanted to start peeling the onion from the highest layer, which is you have created, at Runway, a text box where I can go and type in text, and then within a minute or so, I have a high resolution video of what I typed in. It is absolutely remarkable. I think you just released the Gen-2 model, which is even better. I wanted to just ask an open-ended question, which is, how does this work? And how did it evolve to be what it is today?
+
+Cris: There are a few questions there, so I'll try to unpack them all. How does it work, or how did we got here first? It's been a journey of a couple of years from the Runway side. The company is now turning five years old. We've been working on this idea of synthetic media or generative models for some time now, even before that with the founders we met at school and we've been working on for now, I would say collectively for 7–8 years.
+
+Ben: This was an NYU in the art school?
+
+Cris: This is at NYU and what you teach at the School of the Arts, which is an arts program that also has a bit of engineering in it. Think about it as an art school for engineers or engineering school for artists.
+
+We started playing around early on with new on their work, research, and projects, and tried to take some of those ideas and apply them into the fields and into the arts, specifically into filmmaking, designing, and art making in a journal. It's definitely taking some time, and that's where we're coming from and happy to go deeper into it.
+
+I guess the model you're referring to more concretely, Gen-2, is a model that our research team have been working on for some time now, that allows you to transform input mechanisms or input conditions like text, like you're referring to it, to video. You can also work with images or with other videos as well.
+
+Maybe the best way to think about the model itself is to think about it in two different ways. One from the product side of things, which is how are people using this. The best analogy I've come to understand or explain how these things work is really to think about it as a new camera. You have a new kind of camera, and this new camera allows you to create some video out of it. You can control the camera with different settings and presets. You can control the light and the aperture of the lens, et cetera.
+
+These models were pretty much similar. You have a system or a technology that's able to generate video. You can condition the video generation to text, to images, to video, and a few other things as well. Depending on what you're trying to do.
+
+If you're trying to create a video out of an existing image, you might choose the image to video mode. If you're trying to maybe get some ideas out of your head, you might try the text to video mode, which is you try being text and you get video out. It's a very flexible camera, if you want to put it with that analogy. That's, I guess, the first part of it.
+
+The second, I guess, more technical aspect of how these models actually work, there's research we're conducting for some time now on deficient models specifically applied to video, which is the baseline model that we built for this.
+
+David: The Runway founding team, you all were heavily involved of, if not, the primary authors of latent diffusion, right?
+
+Cris: Yeah, we've been pioneering work on building models and foundational models for both video and multimodal systems for some time now. We are the co-authors of a very important paper called latent diffusion that gave birth to stable diffusion, which is a collaboration between the University of LMU Munich and Runway.
+
+I was checking [...] the other day. It's the most used open-source model in the image domain. Perhaps one of the most influential models, I would say, in the whole generative AI landscape these days was made by Runway in LMU Munich. We've been working on it for some time for sure.
+
+The next frontier for us represents video. Gen-1 and Gen-2, which are also papers we published with our research team, have been leading the way in the video side.
+
+Ben: Okay. We could be here for a 16-week course of lectures to try to answer the question of, how does it work? Give me the Reddit explain-it-like-I'm-five version of how do these models work? Maybe let's start with the images to produce an image as the output. After that, I want to follow-up and ask you about video.
+
+Cris: Sure. Collectively, models understand patterns and features within a data set. They're just probably stick models, and they're trying to predict what's going to happen next. That's, I guess, the broad definition of any AI system.
+
+With video generation, you can take that same concept and apply it to frames. You take one existing frame, let's say a picture you've taken. In the real world, a lot of pictures you actually can generate with Runway. The model is basically trying to predict what frames will come after that initial frame.
+
+If you think about video, really, video is a magical trick. It's an optical illusion. There's no actual movement, it shows the optical illusion created by stitching frames together at a speed enough that our eyes believe they're smooth, but they're just frames.
+
+The trick and how it works is really trying to build a model that understands how to predict consistently and temporarily consistent, which is the key concept, every single frame, how that frame relates to the previous frame, and to all the previous frames before and after.
+
+For that, you train a large model that's on a large enough data set to gather those patterns on data and insights around frames. That's now conditioning or generating new frames. For that, you can use an [...] text or other condition mechanisms as well.
+
+David: You said something, a large model there. I want to double click on that for folks who maybe hear a large model and they think LLMs, the current or what everybody thinks of with generative AI. That's a whole nother branch of genealogy here, a different type of large model around language, around text. Images video, this is a whole another branch, right?
+
+Cris: Yeah, that's very important to make a distinction about. The key concept here is that AI is not just LLMs. AI is not just language models, and it's important that we're more specific. I think part of it has been this very reductive view of seeing AI as synonymous of ChatGPT, which I think ChatGPT has dominated so many of the conversations these days, that people assume that when we speak about AI, we're speaking about LLMs, chatbots, or language models.
+
+The truth is that the field of AI is way more bigger than just language models. For sure, language models have been perhaps the one that people have been particularly excited about, but there are other domains as well that just work differently or can borrow some ideas from language models but they operate in different domains.
+
+David: In many ways, it feels like the tip of the spear. If you think about the economy and human activity, text is very important, but lots of things go beyond text.
+
+Cris: It does. Some of the perhaps questions and uses that you might come with a chatbot or a language model might not actually be relevant or apply to someone working in film. When we're working in film, you don't have the same constraints, the same conditions, the same questions, or the same challenges when making a film that when writing something with text.
+
+Foundational models or large models can be on different domains or different modalities, depending on what they're trying to solve. Actually, we can go deeper into it, but there are actually models that can be multimodal. It can work on different domains at the same time or different inputs.
+
+Most of the time, when you're referring to foundational models, it's always good to be specific around the domain you're working with. There are large models for image, there are large models or foundation models for video, and there are large and foundational models for text these days.
+
+Ben: Are the explosions in all these different modalities, which seemed to be happening at the same time or within a year or two of each other, does it all date back to the 2017 paper on the transformer? Why is this all happening right now?
+
+Cris: The field itself dates back to the 40s and even perhaps before that. Definitely, there's collectively been decades and a lot of years of work into making this happen. I think for me, a bigger moment in time that helps explain, perhaps, the way of more recent progress we've seen happens around 2015, when ImageNet was around on a paper that was published, that came around and prove that you can use convolutional neural networks and neural networks in general to solve some problems that people thought neural networks were never solved.
+
+From thereon, few things started to happen. Researchers were experimenting with using GPUs to compute in parallel neural networks, which wasn't possible before that. I think it was 2012 or 2013.
+
+David: Kudo was only around for a few years at this point, right?
+
+Cris: Yeah. PyTorch was released around 2016, I think so, 2017. TensorFlow was around the same time. I started working on […] of Runway around 2016 or so, where most of these things were starting to get momentum on.
+
+I wouldn't say there's one particular paper that has explained or helped justify the wave, because again, transformers most of these days apply mostly on the text domain, on the language domain. They do have some obligations in the visual domain as well. But the latent diffusion paper that we published is perhaps a really important paper and a really important research that goes deeper into using some neural network techniques or deep neural networks into the image domain.
+
+That's a different paper and a different genealogy of work. I wouldn't say there's one single thing, it's more of a combination of things that's been, I would say, happening more in particular for the last 12–13 years, starting perhaps from the AlexNet and ImageNet work.
+
+Ben: It makes sense. On the video model in particular, does it have to train on video training data in order to understand what I mean when I say a panning shot, a dolly zoom, or something like that?
+
+Cris: You can think about the training as two separate stages to get that level of control. There's the baseline foundational model training, which is, let's first get a model that's able to generate frames. If you think about that, that's a new task. The idea that you can generate video using nothing but words is relatively new. Getting to a point where you can do that consistently wasn't even imaginable, again, a couple of years ago.
+
+What you do first is you generate the model, you create the model. A lot of the work that comes after that is fine-tuning, which is specialized in the model on specific styles or specific control mechanisms that allow you to take this initial piece of research and define better ways of controlling it, which I guess, to your example, how do you make sure that you can define the zooming, the panning, and other conditions that are relevant for a video itself? A lot of the work has to do with both things, creating the baseline foundational research model, and then fine-tuning on top.
+
+Ben: Before you get to the fine-tuning, you've created the model. How do you get the data to train models like these?
+
+Cris: Every model is different. At Runway, we have around 30 different models. Every model can and will be probably trained on a different data set. We have internal data sets that we use to train our models, but we also actually train models either from scratch or fine-tune models for our customers, mostly enterprise users.
+
+Think about, you're a large media company, you're a large entertainment company, and you have a large volume of data sitting around. You can use the data to train a version of a video generation model that has a particular knowledge and understanding of your thing that no one else has.
+
+If I go back to the analogy of the camera, it's basically the equivalent of building your own customized version of a camera that only works in the type of environments, settings, and presets that you need it to work. You can also do that with particular datasets.
+
+David: This is amazing, we're going to get in here in a second, too, your customers and use case is for Runway. But based on what you're saying, you could do something like train a Runway camera on a movie. You could have a movie with a certain visual style, train a Runway model on it, and create more video with that unique movie's visual style.
+
+Cris: Exactly. You can prompt or fine-tune a model with that particular art direction or particular style. You can use that as a reference material. Remember, these models learn patterns. They don't copy existing data. By learning the patterns, as a creator, they will allow you to iterate on those ideas or video samples faster and quicker than ever before.
+
+That's something we're doing a lot with filmmakers these days, helping them ingest their own films, own content, or animations, and using that to create this customized, very personalized system that now you can use in conjunction with other tools you're using these days.
+
+Ben: That's a great segue to the use cases. Anyone who's thought about this for five minutes can come up with, ooh, Hollywood movies. Then you start thinking a little deeper, and maybe you're like, ooh, what about marketing videos? People can come up with many clever use cases from there.
+
+Where do you decide where to aim your energy? I'm curious what your different customer segments look like and where you found the most fertile ground that AI can be helpful for video.
+
+Cris: That's why I go back to the camera analogy. It's a very flexible system. It's the general-purpose creative tool. Really, the field of video generation and synthetic media will encompass everything from future films to short films, to series, to internal HR videos that a company can make, to small creations that someone can make on their phone. That's actually a great representation of the type of content that you see these days.
+
+If you just do the exercise of searching social media for Runway, you'll see a combination of videos being created by people that might have never thought of themselves as filmmakers or creatives, creating video. You also have professionals who will be working in the film industry for decades using Runway as well.
+
+It's a very flexible system. Our goal is not to try to build barriers, constraints, or on the usage of it, because a camera can be used for anything. It's a very expressive tool if you know how to use it. I think the one thing though, it's interesting to recognize that, and it happens before with other technologies as well, which is the first thing people try to do with it is to try to replicate the past. They tried to use it literally as a camera.
+
+I think if you look at the history of the camera, the first thing people tried to do when they got their hands into a device that was able to capture light was to record theater plays because that was a form of art that people thought that cameras were supposed to be useful.
+
+That's part of the experimentation phase of dealing with a new technology, you have to have some grounding in something you know. You go back to what you know, which in the case of the camera was theater.
+
+Today, there are a lot of things that you can do with video models that are perhaps similar to the things that you can do with a camera. There are other things that a camera would allow you to do, and we're just starting to scratch the surface of those things. Futurewise, customer-wise, and focus-wise, we're really focusing on enabling those new types of creative endeavors to flourish.
+
+Ben: The movie example is someone shooting something very cinematically instead of onstage, where I've heard the analogy that we're not just going to put full-sized newspapers on the web, or we're not just going to take desktop websites and put them on the smartphone, there's a native app. What's that analogy for video with AI instead of reproducing the previous medium?
+
+Cris: I think it's part of the collective creative effort to try to uncover those. I think our role is partially just making sure that we can build those models safely and put them in the hands of creatives to figure out those new narratives and those new expression mediums.
+
+One that I feel is particularly interesting, though, is this idea of not thinking about film as a singular narrative or as a baked piece of content. If you think about any movie you've watched recently or any series you've watched, someone, a team, a company, director, a filmmaker, or an artist, made that and render that. Rendering that is you've collectively defined what the piece of content is. The next stage is you need to distribute that to viewers. You go into Netflix, into YouTube, whatever distribution format you have these days.
+
+The interesting thing is that, with generative models, you are going to be able to generate those pixels. Perhaps there's no rendering moment anymore because you might be generating those pixels as they're being watched or being consumed, which means that the types of stories that you can build can be much more personalized, much more specific, or much more nuanced to your audience and viewer. It also can be variable and can change. That might be the case.
+
+I'm not saying this is going to be the case for every single piece of content out there, but there might be a space where it looks way more like a video game than a film. It's still a story. Maybe you're in that story as well, or you're generating that story. Those are the things that you can do today with traditional editing techniques or traditional cinema, because you're constrained technologically by what you can do with it.
+
+David: I'm reminded of the Neal Stephenson book, Diamond Age, not Snow Crash in VR or the other one. Was it called Ractive, I think?.
+
+Cris: I haven't read that.
+
+David: It was very different. There were actors who were live playing, but the concept was a movie or TV show. The popular form of consumption has become dynamic. It's playing around you and you're a character in the Ractive, I think.
+
+Ben: Advertisers are going to love this if this becomes a possibility. The ability to do one to one personalized marketing is crazy.
+
+Cris: I think we're somehow living through that era of personalization. The Spotify algorithm is a great example of exactly that. It combines everything we're chatting about right now, AI algorithms, data, and it works. It works so great that you forget that it's an AI system behind the scenes. That's ultimately the goal.
+
+Ben: Right. There are two billion unique Facebook news feeds, which is extremely different from five million people receiving a newspaper once a day, opening it up, and all reading the same thing.
+
+Cris: That's great. That's great.
+
+David: On this topic, before we move on, what's your most mind-blown moment that you've seen so far of somebody's created with Runway?
+
+Cris: There are so many, I would say, creative moments. I think, overall, more than one particular example is the feeling when, really, you've thought very hard around every possible use case of a model or a way of using the model, and then you put this model into the hands of a very talented artist. That person realizes and uses it in a way that you never thought of before.
+
+I think that that's the adrenaline rush that as still-makers, we always try to find, which is you're making a guitar, and you put that guitar into the hands of Jimi Hendrix. Trying to predict the talent that might emerge, and the type of emotion and type of art that someone like that can make with an instrument or a tool like that. As still-makers, it's just joy. We have a few moments in time where we've seen a few Jimi Hendrix there playing the guitar in ways that we never thought were possible.
+
+Ben: Speaking of your Jimi Hendrix, this was used as one of the tools to make Everything, Everywhere All at Once, right?
+
+Cris: They use wonderful, many AI tools to edit a few scenes in that movie, yes. A small percent of it is.
+
+Ben: Still pretty cool because that was very early. I remember the first time I read that that was the case, I felt like it was only in the last few weeks I had heard things like, what if AI starts augmenting journalists? What if AI starts augmenting filmmakers?
+
+You're like, oh, literally the movie that I just saw and has crazy visual effects. Very good, very clever, very inventive visual effects. By the way, with a five-person VFX team, not a 500-person VFX team is already using AI tools as of course, one of many tools in the workflow, but it's not future stuff, it's present.
+
+David: It's happening.
+
+Cris: That's a perfect example, I would say, of what's to come more. You're not really realizing that a lot of things are already using AI in some sort. Really, that movie is a beautiful movie. If you haven't watched it, I definitely recommend it, just like wine on watching it. It was just great. As you were saying, by a small team of seven editors and VFX people, extremely talented artists who use many tools among those wonderful tools to automate and go through the process of building such a massive, visually intense movie.
+
+I think that's, again, a taste of what's to come with regards to really making sure you can execute ideas really fast. I think the real promise of generative models and the tools that we're building on Runway is to take down the cost of creation to nearly zero.
+
+It shouldn't be a constraint how expensive your ideas are in terms of communicating them. The only thing that matters is how good they are and how many times you need to read on those, because every creative endeavor is just a feedback process of iteration. The faster you can iterate, the more things you're going to make.
+
+Ben: Right now, everything is a waterfall. I'm going to read listeners the prompt that I put into Runway over the weekend when I was playing around with it. “Lens flare from a sunset while filming a pan shot of a vintage green 1970s Porsche 911 with Los Angeles in the background, super high gloss.” I'm watching this shot and just thinking about the camera setup and the perfect short amount of time.
+
+I would have a five-minute window to do this shot with a several person film crew and very expensive equipment to rent. Here, I can just keep iterating on it in Runway. You also do this staged level of fidelity, where first I get a still frame, and I can choose this. I think you probably use that as some seed to build a shorter cut.
+
+From there, I can do the more expensive thing of doing a full high resolution, longer scene. It is really mind-blowing of just me sitting here literally on my free credits before I even paid for a full account. I could do this versus a several thousand dollar you-better-catch-this-in-five-minutes film shot.
+
+Cris: Yeah, that's a great encapsulation of this overall idea of really thinking about anything great as an equal [...]. The more you make, the better stuff you'll eventually make. Making and having a tool that allows you to do that work that you're referring to like shooting something or creating a video but nothing like a word, allows you to do it at scale. You can do it multiple times, you can do it super fast. You're not constrained to actually going and shooting that in the real world.
+
+The best strategy is really to produce as much work as possible, because eventually from that amount of work, something great would come out of it. The best artists, regardless of the medium, are the artists who are always experimenting and creating a lot every single day.
+
+Picasso was painting every single day. The best filmmakers are shooting and thinking about cinema every single day. Sometimes it's hard and it's expensive because you don't have the tools, and maybe you don't have the resources, but now you have.
+
+David: We want to talk all about beyond just moviemaking and all the other use cases and applications here for Runway. But even just staying in that, the past decade, and we've talked about this so much on Acquired, has converged all of commercial movie making into the most monolithic, non-iterative, expensive barrier, gatekeeping, unoriginal...
+
+Ben: The 25 top grossing films are reused IP every year.
+
+David: Marvel was one of the best acquisitions of all time and one of the most anti-democratizing forces in Hollywood over the last 20 years. You're coming up at the right time to liberate this.
+
+Cris: I think the best movies are yet to be made, and the best stories are yet to be told. We could consider the golden era of cinema happening in one particular decade many years ago. I actually think that we're yet to see the true golden era of cinema. The moment more people are able to create what used to be only the realm of small studios, small agencies, small teams, is now going to be visible to anyone.
+
+We just released it just because this happened four days ago, a new version of our video generation model that has created some insane wave of creativity in filmmaking. People were using it to create all sorts of interesting, fascinating short films.
+
+I was just chatting with a producer of a major production house, and I was showing him a clip someone made. You can search for it, it's called Commuters. I think I tweeted about it. Just robots in the subway car in New York, incredibly well-crafted, very great cinematography, well shot. It's 30 seconds, it's short.
+
+If you look at that, and you think about how long it took and how expensive you think it was, you might guess around a couple of weeks and a couple thousand dollars. All of it was just maybe by one person, really, in a couple of hours just using Runway and a few other tools. The results are just astonishing. It's just so good.
+
+If you can see that we're stealing the early, early stages of this technology, again, think about the 1910s of the camera, it's a black and white camera. It works, but there's a lot of work to be done. We're going to get to a layer of resolution and quality that will enable people to do real, real, real wild creative stuff.
+
+Ben: You're six or so years in at this point. Has the thesis changed at all on where you'll need to play in the value chain? I could imagine thinking at first, oh, we want to create models, and we want researchers to use it, and then we want application developers to build on top of it. But now, you have a full-blown application. You've had to build a lot of real user experience for novices or people that aren't that well-versed in filmmaking. How has that evolved?
+
+Cris: There are a lot of, I would say, fundamental pieces of the technology that had to be built. Again, we were discussing the origins of PyTorch and TensorFlow, which are the frameworks that, I guess, nowadays every model is using, and those are just a couple of years old.
+
+If you want to deploy a video generative model to the world and to millions of users, you need to have some proper infrastructure in place. From the very beginning of Runway, actually, we started building those underlying systems.
+
+Eventually, I would say that you get to a point, where for someone who's shooting a film or who's telling a story, models don't really matter. No one cares, really. No one cares beyond the researchers or the engineers themselves.
+
+At some point, if you're a technologist and you care about that you will go deeper into it, but if you're a storyteller, you care about tools that are expressive and controllable. That's the only thing you care about because that's the thing you want to use.
+
+David: It's like Shopify. If you're a retailer, you don't really care how Shopify works. You're just like, let me take credit cards.
+
+Cris: In every piece of major disruptive, Runway has gone through similar stages. The Internet at the beginning, everyone wanted to chat about routers and the Internet highway speed, or whatever you want to call it, and you have all these terms to refer to understanding this technology. Really, nowadays, no one cares. You just open the website and it works. If it doesn't work, you complain about it.
+
+It's somehow similar. Our goal is really not to obsess around the technology. When you obsess around the technology, you don't find real problems to solve. We say this as the company's vision. We're a research-driven company. We build some of the, perhaps, most important models, or we build really important models in the space.
+
+At the same time, our goal really is to move storytelling forward. We're a storytelling company. We're a company devoted to creativity. The way to deliver that it's like, well, we have to build everything from scratch. We'll go back to the baseline, lowest level possible to make it happen. It's always good to obsess around people and not technology.
+
+David: It feels like a very NVIDIA approach. NVIDIA, my sense from the long series we did on them last year, is that they don't do what they do just to have the coolest technology. They do what they do first so that people can make the coolest video games possible now so that this can happen, right?
+
+Cris: Exactly. I think the best companies are companies that are obsessed around customers, users, and use cases rather than technology. I think a common misconception is since we're all so excited about technology is that you start obsessing around the name itself.
+
+Models and data sets, all these things dominate conversations nowadays, but few people are asking themselves, for whom and what? I think we've always started the conversation from the other side, which is, yeah, filmmakers, how do you make their process and their lives easier, so let's work backwards towards that.
+
+Ben: Switching over to the business side of things, there are clearly lots of different use cases. How do you do pricing, packaging, go-to market, and customer segmentation, when the tool is so versatile?
+
+Cris: It's hard. It's hard because this is a new field. It's an evergreen field that's changing radically. The one thing I would say we've learned over time by building Runway and building some learning and heuristics around that is that over optimizing for the wrong thing at the wrong time can be very costly. Making sure innovation is at the core, where you're thinking about the company, and the research and the product needs to be front and center.
+
+Monetization and value capture can really depend on the type of model and the type of output that you can make. I think we're really early on that journey. Video, capacity, and resolution will continue to improve.
+
+Efficiencies of running these models will also go down. Right now, we haven't even entered the efficiency stages of the technology, where things are going to get cheaper, faster, leaner. I think, eventually, you will get to a very similar traditional SaaS model, which we already have but more optimized. I think there's a lot of optimization that has to be done to make these models really, really effective to be used, hopefully, on a real time basis very soon.
+
+Ben: Do you find that the way that you build user experience, controls, the application workspace, support, and all these things for enterprise level customers, I don't know who your enterprise customers are. Are they Hollywood filmmakers? Are there different versions of the product and the experience that you need to craft for different audiences?
+
+Cris: Totally. Again, I'll go back to the camera. The camera can be flexible enough to be used by a consumer, but you also have RED cameras, which are professional filmmaking cameras. They have all these controls, systems, and settings. It's interesting because those controls, ways of manipulating, and having the flexibility that you want in our creative tools specifically for generative models, haven't been invented. This technology and these things that we can do weren’t there a couple of years ago.
+
+You really have to think about what we call primitives or metaphors to interact with the technology. If you think about panning and zooming, those are all concepts that we've come to understand so we can make sense of how to control a camera. You need to make the same metaphors, similar metaphors, or distinct metaphors, to try to control these models that don't work in a similar fashion or in a similar way.
+
+A lot of the time, a lot of the research that we do is on those aspects of understanding. Actually, I agree that one of the hardest things to do these days is, I would say, the field of AI is actually product building. It's not building the models, it's not fine-tuning the models. Of course, that's challenging and requires a lot of things.
+
+Ultimately, to go back to the people problem and the goal of what you're trying to do, is trying to find the best interface and the best product to solve a need using a model. That's where the real challenges start to appear.
+
+David: We spoke about this a few episodes ago in our original exploration of generative AI here on ACQ2 with Jake Saper and Emergence. The models and the technical abilities are critical, but you need the UIs and the workflows. In many ways, that's the much more scarce and harder thing to develop.
+
+Cris: It is. It's unknown territory. We haven't entered the full spectrum of what's possible with these models. There's so much to be explored around how to use these models. Again, I'll go back to control. Control is just key. You need to have control in a creative tool. Coming up with those metaphors is totally new. It's a whole new field of research and exploration that we haven't delved into before.
+
+Ben: If people are noodling on this and they're like, I want to get into this field, what do you think it takes on a founding team for a startup to build a successful paradigm shifting AI company?
+
+Cris: That's a big question. I can give you a sense of what we think is required to work at Runway and how we decide on who we hire. I think a few things that we tend to look a lot for, and I think our key for working in this space, is humbleness. Really not getting attached to your ideas and really willing and being able to learn and question everything. I feel that's moving fast, and you have a lot of preconceptions around how things should work because they've always worked like that. You're going to get DC very soon.
+
+Again, think about painters understanding the camera as a new paintbrush. The thing is that it's not a new paintbrush, it's a new thing. It requires you to think about it very differently. There are new challenges with it, new ways of using it, and new art forms that emerged with it, and new artists.
+
+The idea for a photographer or a filmmaker might not even be conceivable for someone who's painting in the 1800s. Similarly to now, if you come with a lot of preconceptions around how creative tools should work, how creatives are actually working, and not really questioning as to why, a good mindset there is to have a first principles view of the world. Just go and ask yourself why a lot. Are people really so deep into analysis or video editing systems because they like them a lot, or is it because that's the only thing they know how to use?
+
+I don't know if they're specifics, but traits that I think we tend to look a lot for when hiring people that could also, I guess, be extrapolated if someone wants to build in space. Again, take this with a grain of salt. I would say, having a first principles mindset is the first thing. The second is just humbleness, being able to learn a lot, and not getting attached to the ideas because the space is moving really fast. I guess the last thing is just focus on people, focus on customers, and focus on the goals of things they want to achieve.
+
+Ben: When you and your co-founders were first starting, did you have a perfect skill set where, hey, one of us understands the plight of the video creator, and another one of us is a pioneering researcher in foundational models. Or were there things that were totally missing that you had to figure out along the way?
+
+Cris: No, totally missing. The thing that's interesting is that now, you can always tell the story backwards and find all the ways of connecting the dots. There's this very influential book that we used to give everyone at Runway, which I think has really helped us shape our understanding of how to build teams, products, and research. It's a book called Why Greatness Cannot Be Planned by Kenneth Stanley.
+
+It basically outlines that the best way to build great things is to start laying stepping stones. Every time you lay a stepping stone towards something, you can look around, and new doors will open, new doors will be closed. Take one of those, take as many as you can, keep experimenting, and move to the next one.
+
+Really, to your point, the idea of even foundational models 10 years ago wasn't even in the realm of what people thought. There wasn't a term. A lot of the things that we thought you might need today, I see this idea of prompt engineering.
+
+Prompt engineer is a job people want to hire for. Those things didn't exist just four months ago. It's not that you need those skills to assemble someone, a team, or a company. It's more like having a mindset of understanding that those things are going to be possible someday.
+
+David: It's funny, you were saying that and I was like, that book and that name is ringing so many bells. I just looked up, I think this is one of Patrick's biggest episodes last year. The author goes on Invest Like The Best last year. I remember listening to it and just being like, wow, that is a completely orthogonal way to think about building companies, growth mindset, a new way to think about it. I just love it.
+
+With that in mind of you have to be humble, you have to learn a lot because everything is changing daily here in this space, how are you thinking about the business model right now? What is it right now? You mentioned you're essentially a SaaS business model, SaaS pricing. As I think back about this, every time there's been a major revolution in technology in the video filmmaking space, there's been a business model revolution.
+
+If I think back to Kodak, the business model was selling cameras, but you make a lot of money selling and developing film. That was the primary business model. Then you think about digital photography and you're like, o, well, Apple made all the money. You just sell a device that includes this technology. What do you think it looks like here?
+
+Cris: I think it's too early to tell its final shape or form, or be able to categorize it so definitely into something. I think interesting insights are that customization matters a lot because again, control matters a lot. Fine-tuning is going to be really relevant for large customers and enterprises.
+
+At the same time, I think distribution opens new possibilities for consumption. The business model is based not on the creation, but on the consumption side of things. Again, if we go back thinking about film and video as a game, or closely more related to, perhaps, the space of a video game, then you have much more options and business models that can be built around that as well.
+
+David: It makes sense because in a scenario like that, the cost actually accrues at time of consumption, not at time of creation.
+
+Cris: Exactly. The creation components might be different because you might charge people differently. Your value might accrue differently, but also the consumption might be different as well.
+
+David: The compute is happening at the creation time.
+
+Cris: And optimizations will go better over time. Right now, it's a bit constrained, but over time, I don't think it won't be that much.
+
+David: Actually, if you step back and think about it, if that is the way this space evolves, I think that's going to be a successively much better business model than Apple's. If you think about Apple monetizing, and I'm using Apple writ large, put RED camera in there too, anybody selling, or device makers, they monetize a fairly large amount up front. But then all of the consumption of photos and videos taken on Apple devices, that's a trillion-plus dollar economy across social media, everything. Apple doesn't monetize any variable rate with that.
+
+Ben: iCloud.
+
+David: Yeah. Okay, sure. The monetization happens on Instagram, on Snapchat, on TikTok, et cetera.
+
+Ben: And software makers have figured it out. Adobe makes a bunch of money every month by people consuming their software.
+
+David: But if you could monetize on a variable rate basis with consumption, that's just a way, way, way bigger opportunity.
+
+Cris: I think that, again, we're not there yet technologically, but I think we will. I think it's interesting to explore those. I think the most important technologies create their own markets and create their own business models. I think this is the case, where new business opportunities and new business models will be born out of it. I think we're already seeing initial behaviors that will make that the case.
+
+David: Obviously, it's too early to tell. I'm sure Tim Cook would, in a heartbeat, trade Apple's current business model for half a cent on every Instagram view or every TikTok view out there.
+
+Ben: Maybe. I'm not sure Tim Cook would trade Apple's business model for much.
+
+David: Fair enough, but the world may go in that direction.
+
+Ben: Cris, I'm curious. This is going to be a little bit of a financy question. Let's take it away from Runway and talk about companies in general that make foundational models and productize them to sell them to customers.
+
+For a company like that, comparing it against a SaaS company, do you think 10 years from now, the income statement between 2018 SaaS company versus a 10 years from now AI company, look the same? Or are the margins actually different because even if inference cost goes to zero, there are still large trading costs required on an ongoing basis?
+
+Cris: I think comparing research companies and research labs with traditional SaaS, it's perhaps the most fair comparison. Again, first of all, I think every company is different. Every company can operate differently, can offer different strategies to try to capture, create new markets, or compete. Not all companies and not all research labs might have similar or even the same strategy, I would say.
+
+First of all, everything in life, it really depends. Overall, I would say that, perhaps a better comparison is to think about research labs and companies building foundational models more as a bio company, where there's an intense capital that needs to be put up front to do the research to get to where you need to go. There's a lot of commercialization on top of it and products that can be built on top of it. More importantly, a know-how of how to do it the next time, and the next time, and the next time, and also building the infrastructure to do it multiple times in scale.
+
+The margins and the ways of, I would say, thinking about the investment here and the long-term value captures comes more from upfront investment that you have to do to train a model like Gen-2 and Gen-1, and then starting to commercialize that after as well.
+
+Ben: Certainly, right now, the amount of money being raised by AI companies is very large. My assumption has been, that's largely because of training costs. The compute to build these types of companies is just much more expensive, at least right now in history. There really shouldn't be anything else about the company that's much more expensive. The go-to market is the same, the talent maybe a little bit more expensive, but not.
+
+Cris: The talent is definitely more expensive. There are only a few people in the world that are able to do the baseline. There's definitely a lot, but it's not a crowded market.
+
+David: Right, you're not hiring iOS engineers here.
+
+Cris: Exactly. Research really matters. That talent is expensive, that's one thing, I wouldn't say that's the main thing, but you definitely consider that. You won't see that in other SaaS businesses, where you can assemble an amazing business with great engineering full stack of folks.
+
+Research is different. It takes this type of talent that's coming more and more, but it's still rare. That's the expensive part of it. For sure, compute matter a lot. I would say, long-term commitment and compute also matter a lot. It's a scarce resource. You need to make sure that you get your hands into those resources if you want to do the work that you want to do.
+
+David: On our Nike episode, we talked about how really Nike, Adidas, and the other scale players, lock up the world's footwear manufacturing capacity for years at a time, and nobody else can produce it at that scale.
+
+Ben: NVIDIA and Apple with TSMC, the same thing.
+
+David: Yeah, and there's the same element happening here with compute.
+
+Cris: There is. Being able to just compete there is a requirement. If not, nothing else might matter. That's the capital that you need to just get there.
+
+Ben: Are the hyperscalers reserving that capacity for people with deep pockets? Or if you're a startup, can you sign a big, long contract, even though you haven't raised the money yet?
+
+Cris: I'm not sure. I think every cloud provider might be trying to do something different, so I can't really speak to everyone. I think these days, getting compute is really hard, just like going to AWS or other cloud providers and getting one GPU might be hard, because there's a lot of demand. There are a lot of different demands coming from different companies who are trying to get capacity up to speed to train and also run models and inference. Hopefully that will get solved.
+
+David: That brings us too to your capital structure and your most recent fundraise. For folks who don't know, and didn't see that recently, you just raised $141 million led by Google, but also with NVIDIA in the round, your VCs, and plenty of others. There's a very strategic element to that, I would imagine.
+
+Cris: There is. It's an honor to be able to work with some of the best companies in the world. I think that's, first of all, one of the main takeaways of being able to partner with companies like NVIDIA, Google, and Salesforce, to make sure that again, we understand that this is not just about models. It's about getting into the hands and building great products that solve actual problems in the real world. So who better to partner with some of the best companies in the world to actually do that?
+
+Ben: Tell me if this is directionally correct or not. Pure financial investors are just at a disadvantage because they offer commodity capital, whereas you can go raise a lot of capital from people who can provide access to the scarce resources in AI right now, namely compute, where you could get your dollars from one or the other. But if you go with a corporate investor who actually has this access, it's trajectory-changing for the company.
+
+Cris: It is. I think the investor landscape has also been radically redrawn and reinvented. I think Nat Friedman has been leading a great example there, building their own cluster of GPUs and offering that to their companies. I think that's something rare to see and perhaps unimaginable just a couple of years ago.
+
+It tells you a lot that value comes not just from capital, specifically with the last couple of years, where interest rates were zero, and perhaps Capita was actually just free and cheap. There's more value that's required to build great companies. If you can provide that by providing or giving infrastructure or doing more than just capital, of course for companies, that will be all welcome.
+
+David: It's so funny. All the VCs thought that AI might be coming for their jobs making investment decisions. No, it turns out the AI disruption in VC is whether you have a GPU cluster or not.
+
+Ben: It turns out the platform teams we wanted all along were actually just GPUs.
+
+David: I love it.
+
+Ben: Totally Fascinating. As we start drifting toward a close here, one question I do have for you is, for people whose interest is piqued by this, and the answer can be technical answers, or it can be more abstract answers, what are the canonical pieces of reading that people should go do if they want to set aside a weekend, a week, or an hour, and just try to get deeper on a high-level understanding of where we're at today?
+
+Cris: Just the overall field of AI or in particular?
+
+Ben: Yeah, favorite pieces you've read about it.
+
+Cris: My favorite piece, it's a hard one. I remember Karpathy wrote a blog post in 2015 called The Unreasonable Effectiveness of Recurrent Neural Networks, which is something I think not in use these days, but I think it opened my eyes into what will be possible. That's a great historical piece that I often go to.
+
+For the visual domain that I can perhaps more relate to, since we're building our visual tools these days at Runway, there's this piece by an artist called Colin MacDonald that speaks a lot about using early computer vision models and early, early, early generative models for video making and image making. I go back and read that a few times because it always brings me a lot of interesting ideas and concepts around where things were just a couple of years ago and again, coming back to the rate of change these days.
+
+Besides that, these days, there are so many things going on that it's hard to keep up to. I think Twitter is a great source of material these days, but not really getting attached to anything again because, perhaps something you read that I would recommend last week might become obsolete next week, so it's hard to define.
+
+David: We spoke a bit about your history and being at NYU Tisch. How did you find yourself at this intersection? Have you always been fascinated by both engineering, filmmaking, and visual arts? Did you start in one or the other? What's your journey been here?
+
+Cris: My journey, and I think the journey of my co-founders as well, has always been very inspired by a combination of multiple things. I have a background in economics. I have worked as a business consultant for some time. I did art and exhibited in major places. I've doubled as a software engineer and freelancer for some time.
+
+I think we're more particularly interested in like, just we're very curious people. We understand that the best trait to have is just to be able to learn anything. When you learn that you can learn anything, that's a superpower. The same with my co-founders. There were engineers, researchers, turned to artists, and artists turned into engineers.
+
+That I think gives us some perspective of how to build things that will break the mold or the systems that we might have established around what the AI world is, what their research world is, and what the engineering world is. You really start understanding that those are just arbitrary silos and worlds that you can break apart if you know how to speak the languages of those.
+
+David: The Tisch program has always had that as part of the ethos. Were you part of ITP? What's that?
+
+Cris: Yeah. Are you familiar with ITP?
+
+David: Yeah. Is that what you were a part of?
+
+Cris: I was, yes. I came to study at NYU at ITP. ITP is a rare program, an intersection of art and technology.
+
+Ben: What does it stand for?
+
+Cris: It's one of those names that was given, I would say, 40 years ago, and I think it perfectly encapsulates that moment of time and technology at that moment in time. It stands for Interactive Telecommunications Program.
+
+Ben: Awesome.
+
+David: That's right.
+
+Cris: It's so old school. Nowadays, you do more than telecommunications, which perhaps was the thing people were thinking about in the 40s when Red Burns founded the program. The best way of thinking about ITP, and I think the ethos also of Runway that I think we've got inspiration from, is ITP is an art program for engineers and engineering school for artists. It's a frontier of the reasonably possible.
+
+You can come and do things that are rare, weird, and unique. Thinking about computer vision and AI in 2015, and thinking about it in the realm of art, was rare and weird. Now, it's all over the place, but I think it was the fact that we were able and willing to go into that that got us to where we are right now.
+
+David: It's super cool to come full circle. I remember, right after I graduated from college and lived in New York, I, of course, read Fred Wilson's blog every day at USV. That's how I first learned about ITP was him talking about it. Was Dennis Crowley and [...] who founded Foursquare?
+
+Cris: Yeah, Dennis Crowley from Foursquare. I think the initial ideas came out from a class that I think is still running called BIG Games, where you create real games in the city. I think Dennis created a real size Pac-Man in New York.
+
+Ben: I remember reading about that. In fact, I remember hearing from a friend who was interested in that back when I was in high school, years before Foursquare came out, that someone from NYU had done this crazy real life Pac-Man.
+
+David: I remember the story now. It was originally called dodgeball, and Google bought it. He was at Google for a few years. Like many things at that time during Google, it went nowhere. Then he left and restarted it as Foursquare.
+
+Cris: Exactly. It's a great place. If you want to build and explore technology, I think it's a great place.
+
+David: It's so cool.
+
+Ben: Cris, I know there's one other part of Runway that we haven't talked about yet, which is Runway Studios. That's fun because it's just very cool art that people can go and check out. Tell us a little bit about what Runway Studios is and how people can view it.
+
+Cris: Runway Studios is, I would say, the entertainment division within Runway. We have Runway Research that pioneers the research models and the things that we need to make sure we can keep doing to push the boundaries of the field. Runway Studios is the creative partner of filmmakers, musicians, and artists that want to take these models and push them to the next level.
+
+We've helped produce short films and music videos. We have an active call for grants that people can apply to get funding, to make content, make videos, make short films, and even feature films with Runway. The best way to think about it is to think about it as Pixar. It's a new type of department or company within Runway. It's really pushing the boundaries of storytelling from the creative side of things, not just from the technological technical side of things.
+
+Ben: Pixar is an amazing analogy because obviously, the films were to showcase RenderMan and the Pixar computer.
+
+David: Pixar was a hardware company.
+
+Cris: I'm a huge fan, of course, of everything Pixar-wise, but I think the key lesson for me there is, when you are able to merge art and science, great things happen.
+
+Ben: Love it. Where can people reach out to you or Runway if they're interested in being a customer playing around with the tools, working at Runway, or working with you guys in any way?
+
+Cris: We're hiring across the spectrum. If you're interested in working with us, just go to runwayml.com/careers. You can also find me on Twitter. The office we have in New York and Tribeca, we spend most of the time here. The team is based here. Runway Research and Studios, just search Runway Research and Runway Studios, and you'll probably find the right links for that.
+
+Ben: Awesome. Cris, thanks so much.
+
+Cris: Cool. Thank you, guys.
+
+David: Thanks, Cris.

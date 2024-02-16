@@ -1,0 +1,533 @@
+Ben: Welcome to Season 5, Episode 2 of Acquired, the podcast about great technology companies and the stories behind them. I'm Ben Gilbert and I am the co-founder of Pioneer Square Labs, a startup studio and early-stage venture fund in Seattle.
+
+David: I'm David Rosenthal and I am a general partner at Wave Capital, an early-stage venture capital firm that focuses on marketplaces based in San Francisco.
+
+Ben: We are your hosts. Today we are doing an episode that we have gotten a ton of requests for the Shopify IPO. Now here's a few fun things to know about Shopify before we dive in today. The company IPOed in May of 2015 with a market cap of $1.3 billion. In the ensuing four years, it has 27X that and today has a market cap of $35 billion dollars.
+
+David: Not bad for a pivot.
+
+Ben: No, 218 million people have bought from a store powered by Shopify, the vast, vast majority of which do not have any awareness that they did that and that is equivalent to almost all adults in the United States—also not bad. The Founder and CEO, Tobias Lütke is an absolutely fascinating character that I can't wait to dive in on the history and facts here. To give you a quick sense before we dive in, he tweeted last year, “I firmly believe that I learned more about building businesses from playing Starcraft than I've learned from business books.”
+
+David: He might be right having read a lot of business books and played a lot of Starcraft in my day.
+
+Ben: I was going to say. Now before we dive in, I want to thank the sponsors of all of Season 5: Silicon Valley Bank. Our sponsorship is a little bit different than usual today and it ties in nicely with one of the things that makes Shopify unique: growing a huge company in Ottawa, Canada. SVB has had a big push into the Canadian startup ecosystem recently and opened an office in Toronto this spring to work more closely with private and public companies in Canada. As we will dive into this episode, it is very different building a company that breaks the mold of the standard Bay Area tech startup and it’s great to have a partner like SVB that has both the local knowledge with the regional office, like their new Canada HQ as well as strong roots from their 35 years of operating in the innovation economy. And here’s something I learned from SVB. Like the global numbers, venture capital funding in Canada had a record high in 2018 with US$3½ billion invested through more than 471 deals. Thanks so much to SVB. If you want to reach out, you can go to svb.com/next or click the link in the show notes or in Slack.
+
+Speaking of Slack, if you liked the show, you should come join the 2500-person and growing Acquired fans that are hanging out in our Slack at acquired.fm. If you want more Acquired than just this, you should consider becoming an Acquired Limited Partner. David and I release about one LP show for every main show in addition and we use those episodes to go deeper on company-building topics.
+
+I was really excited about how our last episode turned out where we dove into series A and how it is a way different thing than it used to be, how valuations are very different today than what they were, what's market, what's not market, what determines market, how did we end up here, and all of this ties into what we think the next major technology wave will be and when it will get here. If you're a founder of a startup or a startup employee, this is one definitely not to miss. You can get started with a seven-day free trial and listen right here in the podcast player of your choice by clicking the link in the show notes or going to glow.fm/acquired.
+
+Alright, David, we're ready to hit it.
+
+David: Are we ready to do this?
+
+Ben: Let's do it.
+
+David: Alright, let's blast off. Ben, as you alluded to, you cannot talk about Shopify without talking about its co-founder and CEO, not its CEO at founding, but co-founder and now CEO, Tobias Lütke. Who is Tobi? Tobi lives in Ottawa, Canada, now with his wife and his children because that is where Shopify is headquartered, where their world headquarters are, and where he founded and co-founded the company. However, he was not born there. I believe he's a naturalized Canadian now, I think he's a Canadian citizen, but he was born in Germany. He was born in Koblenz, Germany, which is a town about halfway between Cologne and Frankfurt.
+
+Tobi, when he was growing up, he was quite the precocious young man. His parents gave him a Schneider CPC when he was six years old. Schneider CPC was a computer. To the best of my understanding, roughly, the German equivalent of the Commodore 64 that helps plays things. This would have been in 1986, Tobi received this and he was enamored. He was enamored with two things about it: one was that he could program it, hack it, build things for it, he could take it apart and put it back together, and add hardware to it. The other thing he was really enamored by, you already foreshadowed, Ben, was he could play video games on it. He started playing a lot of video games on his Schneider CPC and presumably future upgraded computers as well.
+
+So much for that, by the time he was 11 or 12, he was taking the games that he was playing on there, he was hacking into the code, and he was rewriting the games. I don't know if he was writing to cheat, or make it easier, or build his own levels. It was like Minecraft before Minecraft. In another world, he could have been Notch.
+
+Ben: And he has a lot in common with Notch, too.
+
+David: Totally. We're going to have to do a Minecraft episode at some point here. He was so into it that his parents who were not techies, they were like, “This is weird.” They actually took him to a psychologist to have his behavior analyzed like, “Is this normal?” It turns out, “No, he's totally normal. He just really loves computers and video games.”
+
+Ben: This is like a Dilbert comic. He's exhibiting signs of engineers, should we be concerned?
+
+David: Exactly. Nobody is more engineer than Tobi as we shall see, or at least at this stage of his life. And Ben, as you alluded to, he still talks today about how gaming is great training for entrepreneurship. You have to do resource management, you're playing against opponents here in this dynamic world that's evolving, especially multiplayer online games.
+
+Ben: Making real-time decisions.
+
+David: Yeah. He has his great line in there. One thing that becomes immediately evident about Tobi when you start studying him is he's highly intelligent. He has this great line in, I think it's on The Knowledge Project podcast where he says, “People get upset about that tweet about Starcraft. Parents get upset if their kids are playing too many video games. But think about it this way. Would you be upset if your kid were playing chess all the time? If I had tweeted about that, would you be vilifying me? What's the difference here?”
+
+Ben: It should be known, the tweet—I went to look it up in prep for this episode—has been deleted.
+
+David: Oh, interesting. Maybe he's changed his statement. Or maybe his kids were playing too many video games. That could be it. What does Tobi do as he's growing up, he's really into computers, at 17, he does something very different from what a highly intelligent 17-year old would do in the US, or in Canada, or in many other countries.
+
+Germany, at the time, has this pretty cool program, the goal of which is to increase the number of computer programmers in the country. They allow kids to drop out of high school, not go to college and become apprentices to become programmers. The idea is just like literally back to the Middle Ages like you're going to start as a trainee, then an apprentice, you're going to become a journeyman, then you're going to become a programmer, and then you can become a master programmer.
+
+Tobi drops out of high school, joins this formal program through, I believe, the German government, becomes a programmer trainee, and he apprentices with Siemens, the huge manufacturing and technology company in Germany. He grows up, he becomes a great programmer. But he's programming in Java, which is for all of our engineer listeners will smile and laugh here, I learned to program in Java, you probably did. Did you?
+
+Ben: Did that. AB Computer Science tests with some Java.
+
+David: Yeah, totally. Tobi’s going in, “All right, Java.”
+
+Ben: Also, I learned to program in PHP.
+
+David: Really? That's awesome.
+
+Ben: Yeah, of course. I got to make websites.
+
+David: I actually learned to program in college, in actual computer science courses. I should have started just making websites earlier. Anyway, he felt like it was pretty restrictive, but he still loved programming. As he gets a little older—he's making money, he didn't go to college, he's working—he develops another passion, he has some disposable income, he gets really into snowboarding. Trust us, listeners, all of this is going to become very relevant, literally, everything we're talking about here is going to become very relevant in just a minute.
+
+In his early 20s, at this point, because he's working as a programmer at Siemens and other companies, making good income, he loves snowboarding, he goes to the best place in the world to go snowboarding. That's a place I've been to many times. I’m sure you probably have too, Ben. I don't think we've been together, which is Whistler, Canada, and British Columbia.
+
+Ben: I did tear an ACL there so I have mixed feelings as much I love Whistler. In fact on tech nerd trivia, Whistler was the codename for Windows XP.
+
+David: Oh, no way. That's pretty cool. If you haven't been to Whistler and you are a skier or snowboarder, you got to go, it's the best place in the World. Tobi's there on a snowboarding trip in his early 20s and he meets a girl there, a woman named Fiona McKean. It's love at first sight, budding romance. Unclear if this happens on the trip or later, he persuades her to move to Germany and come live with him. She's Canadian and she moves over, lives with him in Germany for a year.
+
+Ben: Persuasive. It’s like when we talk about on the LP show, founders have to learn to sell because your job is always selling and can you be compelling, not only to pitch but for hiring people. I can’t imagine a more test of how compelling can you be than you should move to Germany with me.
+
+David: You should move to Germany for me. It turns out that Tobi's not quite ready to be CEO yet though. He might have won the short game, but lost the long game here because she says, “Okay, I'm going to move over,” she moves over for a year and then she persuades him to move back to her hometown of Ottawa, Canada. Ottawa, of course, in the province of Ontario is the capital of Canada, the beautiful capital of Canada.
+
+Tobi moves with Fiona to Ottawa and he's still working for a smaller German company at this point which does something really exciting. They make back-end accounting software for companies. Tobi is a great programmer, they let him work remotely. Shortly after he moves, though, in 2004, this company goes bankrupt. Tobi has now moved across the world to be with his soon-to-be wife and finds himself out of a job in Ottawa, Canada. What does he do? He says, “That's all right, I didn't really like programming financial accounting software in Java. Maybe I can find some other way to support myself and Fiona, make some money here and maybe I can use programming, do it on the side, but really, I just want to make enough money so that I can go snowboarding a lot.”
+
+He's kicking around ideas and he meets, through Fiona, a family friend of theirs named Scott Lake. Scott is very different from Tobi. He is not a programmer. He was a jock in high school. He's super outgoing. Unclear if he played Starcraft or not—didn't find that in the research—but he also loves snowboarding. He had worked on a few “startups” in town in Ottawa, not tech startups but more lifestyle businesses. He also had the itch to do this on his own.
+
+Ben: You know what Tobi’s doing in his free time at this point in the programming world?
+
+David: Not yet. This is about to come up. They decide like, “Okay, yeah, this is great. We love snowboarding. We're going to keep going together. Let's grow a small business together that we can do to fund our habit. Maybe what we should do,” it's now 2004, Web 2.0 is starting to become a thing, people are becoming more comfortable buying things online, Amazon's been a public company for a while now, “what if we just started a website to sell snowboarding gear and of course, because we're really elitist about this, we would never ride on mass-market stuff that you could go buy at Sports Authority or something, let's use the power of the internet. Let's find really boutique artisanal gear and only sell that online.” “Perfect. Let's do it.”
+
+They get together and Tobi codes up a website. They call it snowdevil.ca. You can go there, we’ll link to it in the show notes, it is still up. If you read the About Us section, it says, “Snowdevil is not your typical snowboard store. Instead, Snowdevil is a partnership among two riders who are only interested in selling boards and bindings that they love to ride on. Nothing else. If you want big brands like Burton or K2, you should try Walmart. If you want high-end top quality brands like Never Summer, Nidecker, Technine and others, you should try us. Yours truly, Scott and Tobi.” Then they list their personal gear setups for their snowboards.
+
+Ben: Now the funny thing, if you go to this website, they talk a big talk about how refined their taste is, but the website looks like absolute crap by today’s standards. There's some mismatch there when you're looking at it. But 2004 is a very different time on the web.
+
+David: Totally. Why do we tell this whole story? Two reasons. One because it's super fun and just part of the lore of what becomes Shopify here in a second, but also it's just amazing, this whole hipster ethos of like, “We're going to curate the best artisanal brands.” What is Shopify powering today? All of these D2C brands and Instagram commerce, it all comes back to this same ethos. They were way ahead of the curve here.
+
+In the process of setting this up, Tobi, of course, is CTO of the company. Scott is CEO of newly formed Snow Devil. Tobi is in-charge of putting the website up and he gets it up. He's a great programmer, but it's super hard. He has to go find all of these various tools to actually get a shopping cart, checkout, an inventory, and manage everything and he's using tools like OsCommerce, Yahoo Stores, and Miva. He says, “All those systems made my skin crawl,” this is a quote from him because of how bad they were. Just at that very moment, as he's putting his site up, he gets an instant message one day.
+
+Ben: Real quick, before we dive into this chapter, do you know the history of Yahoo Stores, David?
+
+David: No, I don't.
+
+Ben: Yahoo made an acquisition of a company in 1998 for $49 million that became Yahoo Stores. Do you know what that company was?
+
+David: Oh, was that PG’s company?
+
+Ben: It was Viaweb.
+
+David: Viaweb. Oh, my God. Wow. Of course, Paul Graham, who would go on to found Y Combinator. I didn't realize Viaweb became Yahoo Stores.
+
+Ben: Yeah. Like many Acquired episodes, the internet was a very small place when all this was getting going.
+
+David: Oh, my goodness. It's just crazy. Tobi gets an IM from a friend who's also a programmer right around this time in 2004 and says things like, “Hey, man, I found out about this new web development framework. You should really check it out. It's called Ruby on Rails. It's just getting started. There's this guy David Heinemeier Hansson, he works at this place called 37Signals, they make this thing called Basecamp, it's pretty cool software. They make it in this really obscure programming language called Ruby, but they've built this framework for using it for the web. It's called Ruby on Rails. Check it out.”
+
+Ben: This guy is too good for PHP.
+
+David: Yeah, too. Ben, if only you had started coding in Rails, then maybe there would be no Acquired. You, too, could be the CEO of a $35 billion public company right now. Tobi says, “Okay, cool. I'm going to check it out.” He starts a side project just hacking on Rails and he does what many hackers were doing these days. He decides he's going to build a blogging system. He builds an open-source blogging content management system for the web, he calls it Typo, and it blows up, it gets over 10,000 installs of people running their blogs, hosting their blogs using Typo.
+
+Tobi becomes pretty well known. He meets the 37Signals guys. He meets David. He meets Jason. He ends up joining them—not joining 37Signals—but he becomes a core contributor to the Rails open-source framework.
+
+Ben: The funny thing is, if you go to Tobi's LinkedIn, his about is like three lines. One of the lines is about the creator of the Typo weblog engine. It's just great that this guy's running a $35 billion dollar company and that's still a big pride point.
+
+David: Yeah. That's Tobi. Of course, what does he do next? As you can imagine, he's fully enamored of the Rails framework and he's just been through this terrible experience setting up the backend for Snow Devil. He says, “I'm just going to rewrite all of that from scratch and do it in Rails and I bet I can rebuild our store and not use this crappy software that Paul Graham wrote and have it work pretty fast.”
+
+He does, and within two months, he's completely written the backend for Snow Devil. They have their own custom commerce engine that he's built in Rails that is powering the store. It's way better than what he had before.
+
+Ben: Do you know what that's called and what he released it as? It’s little nerd diversion here for a moment.
+
+David: Are you referring to the Pixel?
+
+Ben: Active Merchant.
+
+David: Oh, no.
+
+Ben: There's a pattern called Active Record that Ruby on Rails uses. I'll quote Wikipedia for the formal definition of it, “It's an architectural pattern that stores in-memory object data in relational databases.” It's a very easy way to interact with the database without making SQL queries. You can just refer to things in the database in basically your model object in your code. Supposed to make it way easier often creates too far of abstraction for a lot of people to want to deal with and like it, but it was this big core thing in Ruby on Rails as Active Record.
+
+It's hilarious to me reading this that he would be like, “Oh, if Active Record is a thing, we should make another open source project called Active Merchant, we'll just work that into Ruby on Rails and that way, anybody can have this merchant engine as part of their open-source Ruby on Rails project.” If you're living in that world, of course, the natural thing you would build is this should be a part of Ruby on Rails.
+
+David: Yeah, he's a core contributor, of course. Somehow, he and Scott started talking about this and they’re like, “Wait a minute, we've got this snowboard site. You just built this thing in Rails that you can easily plugin and do the backend. This was hard for us. Maybe we could make an even better lifestyle business if instead of selling snowboards, we sold software.”
+
+Ben: Better margins.
+
+David: Yeah. “We don't have to deal with different kinds of shipping.” They do that. Did he actually pull Active Merchant from Rails?
+
+Ben: That, I don’t know. I'm not sure exactly how the cause and effect in that work. I'll look into it and then follow up on the LP show. Suffice to say, he both did something in the open-source world as part of the Ruby on Rails project and working on those commercial.
+
+David: And started Shopify.
+
+Ben: Yup.
+
+David: They like, “Okay, let's shelve the snowboarding project. We can use it as a demo site,” which it still is today for Shopify, “and start working on this software.” They spend a year-and-a-half working on the software. Tobi is a perfectionist, he wants to make sure it's right. Of course, a big part of that is actually commercializing this. It's one thing to build your own software for your own site, it's another thing to make it plug-and-play for commercial availability.
+
+They have some money saved up from their sales at Snow Devil. Tobi and Fiona move in with her parents. They raised about $200,000 mostly from Fiona's dad and from Tobi's uncle, who himself was an entrepreneur who had emigrated to Canada. They used that money and they bring on a programmer that Tobi knew named Daniel Weinand. He joins the team and he's considered a third co-founder of the company now. He ends up taking over design. He's a programmer, but he's really interested in design and he helps design this product, makes it really easy to use and install, and has a huge contribution to this first version of the product. I believe still to this day, in interviews, Tobias said he has veto power on any shipping any feature that is built at Shopify.
+
+Ben: Wow, that’s power. By the way, they're doing all of this. In 2004 they had created a Canadian entity to sell their snowboards. They're doing all of this new software business still in the same Canadian entity as the snowboard business. Talk about a wild actual pivot, not like, “Shut that down, do this other thing.” It's in the same entity.
+
+David: Yeah. It's in the same entity. When they're finally ready to release the software in 2006, they needed a name for it. They do the natural thing at the time, Tobi heads on over to Go Daddy's domain name generator, plugs in I need a name and comes up with jadedpixel.com, really, really rolls off the tongue, really catchy. If you go to jadedpixel.com today, it redirects to Tobi's LinkedIn profile.
+
+Ben: In 2006, they would formally rename the company from it's nameless Canada Ltd, it was entity 4261607 to formally in 2006 call it Jaded Pixel Inc.
+
+David: Yeah. Jaded Pixel Inc. Now, fortunately, Scott, at this point, makes a major contribution to this budding software company right before they launched. He's like, “Yeah, I don't know about this Jaded Pixel thing as the product name. Maybe we should reconsider that.” Mercifully, he comes up with Shopify. We’re shopping and we’re simplified so simplify shopping, Shopify.
+
+Ben: I’m so jealous when you could just do that and that domain is terrible.
+
+David: I know. The mid-2000s were really, really a good time to build web companies.
+
+Ben: It's amazing this didn't become shopper or like something with no vowel somewhere.
+
+David: Yeah. Amazingly, the domain was available. Tobi talks about this. They just registered on GoDaddy. They didn't have to buy it from anybody, it was just there. The initial feature set that they ship with is pretty basic and they're inspired by the whole Rails design philosophy of minimalist, functional, but have everything happen on the web in the browser.
+
+With the first version of Shopify, you can have a fully customizable store template. You have a shopping cart, you can track orders, you can get orders delivered to you as a merchant via an RSS feed, you have automated inventory organization, and you also have the ability to plug in payment processing. They're not doing payment processing natively at this point, but of course, taking payments is super important and they make it really easy to just plug in PayPal or any other third party credit card processor that you'd like right there on your website.
+
+Ben: Pretty cool.
+
+David: Yeah. Pretty cool and a far cry in terms of ease of use and ability to install and get set up than working with all of the huge big software packages that Tobi had to do when he was first setting up Snow Devil. They needed a business model for this new software that they were going to sell or offer online.
+
+I think Chris Anderson from Wired hadn't yet written the book on freemium. I think that came out a couple of years later, but percolating around in these Rails internet communities is this idea of free software, freemium, and building business models around that and they think like, “Okay, yeah, great, let's make this freemium and we should have it no-barrier to entry, anybody can set up a store and just start selling, and then we’ll just take a cut of the merchants transactions as they sell. It'll be really cool, incentives will be aligned, it'll be great. It turns out incentives weren't quite so aligned with that and fortunately, they figured this out pretty quickly.
+
+People started trying it and thinking like, “Oh, this is super cool. I can get set up,” but then pretty quickly, they realize either they start selling a lot and then they're like, “Wait a minute, I'm paying a lot of money to Shopify here because their fees are just scaling linearly with my sales,” or probably what's even more likely is that people are making a decision about what platform they're going to use. Of course, everybody's very optimistic.
+
+Ben: When I sell my million things...
+
+David: Yeah. When I have a hundred million dollars in sales, I'm not going to want to pay Shopify $10 million a year or whatever they’re charging. The business model was really holding them back here. But they figure that out and they decide, “Okay, we gotta switch things up. How are we going to do this instead?” SaaS is like barely becoming a thing at this point, Salesforce, of course, exists, “What if we look at this SaaS idea and instead of charging on the usage basis, what if we just make it really, really simple? We'll charge $29 a month and you get a full-featured commerce packaged in a box from us.” It turns out that was pretty magical.
+
+Ben: Obviously, the reason that this worked well is because there are things that you can charge more for as people develop bigger and bigger businesses. It's not every single, I don't know the biggest business on Shopify, but there are enormous businesses on Shopify, they're not just paying $29 a month.
+
+David: At this point, Unilever’s on Shopify. Google is on Shopify, enormous, enormous companies are on Shopify. But if Shopify were taking 10% of their revenue, of course, that wouldn't be possible.
+
+This is a funny side to it. It also speaks to what the company was like in these early days and they're like how Tobi and Scott were thinking about things. They knew they needed to make this change, so they're just like, “Okay, yeah. Let's change it. Let's ship it and flip the switch.” When they did that, they didn't really talk to any of their customers before they did that. They did it the day before Tobi and Fiona got married. That was probably not a good idea. Tobi talks about how he spent the whole night, the night before their wedding just taking calls from super angry customers who did not understand what was happening to their business.
+
+Ben: Talk about never deploy a production on Fridays.
+
+David: Yeah, seriously. Another really fortuitous thing happens in 2007 when they made that switch. A Toronto-based angel investor named John Phillips discovers the company and he invests $250,000 at a $3 million post-money valuation which was pretty rich for—I have to imagine—a small company based in Ottawa, Canada back in those days. I imagine everybody's pretty happy with that these days given the current market cap. But John was a lawyer based in Toronto. He had worked with a ton of companies and he becomes a really important mentor to Tobi, especially through what's about to happen in the next year in 2008.
+
+Scott gets the early-stage startup bug again and decides that “Hey, this company’s scaling. It's a SaaS company, I'm not sure if this is really what I want to do.” He leaves and Tobi ends up having to take over the CEO role. From a kid who is an apprentice programmer who loves playing video games and his parents thought, “Is there something wrong with him? He doesn't talk to people or other kids? He just sits at his computer all day,” all of a sudden now he's shoved into the role of being the CEO of this company that is growing pretty incredibly quickly with all these customers.
+
+Ben: As he becomes CEO of this company, he doesn't just do the job the same way that any other CEO would do it. He applies his engineering mindset to this. When you listen to Tobi in interviews, you can tell that he thinks about things in this extremely logical, extremely structured way, he's so low ego, he's all about measuring results and going back and revising past decisions, changing his mind when they're in the face of new data, being wildly structured about decision making. He basically becomes the engineer’s engineer.
+
+He's an amazing, amazing engineering leader and it really leads to them being able to attract incredible talent in that first set of employees because the set of really talented technical people, many of them who had been open source contributors to the Ruby on Rails project were dying to go and work with them.
+
+David: Yeah, totally. People are moving from Germany, from other places around the world to Ottawa to come and work at this company. We take a step back and we now have a fairly young CEO who was an engineer, has no management experience, in charge of a high-tech software company in Ottawa, Canada. This doesn't seem like a recipe for success.
+
+But Ottawa actually has some interesting features. There were plenty of old-school technology companies that were in Ottawa and Ottawa’s not far from Toronto and Toronto, of course, has great engineering universities and technology companies. Nortel was in Ottawa, there were a few chip companies in Ottawa, but there was nothing interesting happening on the software technology front there until Shopify came along. I think Nortel had fallen on hard times by this point. All of a sudden, here's this super interesting hot Web 2.0 software company based in Ottawa and they're able to recruit just incredible, incredible technical talent. He jokes about Tobi being the engineer’s engineer as a CEO.
+
+All this is happening and he was really wrestling with like, “What do we do about this? We're growing. Should I raise venture capital? I think the market opportunity for this is big and getting bigger. Should we take into being a growth company and put fuel on the fire?” He wasn't sure, so he decided, “You know what? I'm going to run a test.” The company has become cashflow positive in 2008 with about 10-ish employees. They made over a million dollars in revenue in 2008. They landed their first major customer that year which was Tesla Motors, which started selling the Roadster on Shopify. To this day all of Tesla’s online sales still run on Shopify which is pretty amazing.
+
+Ben: That is incredible. That’s a great find, David. That’s really cool.
+
+David: Yeah. I didn’t go in the Wayback Machine, but I found in some articles about Shopify, images of the website in 2008 and their listing Tesla Motors as one of their key merchants. It’s pretty awesome.
+
+Ben: I’ve got some Wayback Machine things to bring up later from the site.
+
+David: Tobi’s like, “Okay, I’m going to run this test.” He saves up $50,000 in cash flow from the company and he says, “I’m going to use this $50,000 and I’m going to run five growth test and if maybe two or more work, then that’s my answer that I should go raise venture capital and pour more fuel on the fire.” Of course, all five out of five work. One of these tests that he’s running, they’re super cool.
+
+There are all these web design consulting firms out there, and they’re making websites and commerce sites for a lot of their clients. “What if we started marketing not just to people who want to build businesses and [...] to them and we take these designers that we can get some of them and we offer them, we say, ‘Hey if you bring on a customer onto Shopify, we’ll give you 20% of the lifetime revenue of that account’? That becomes a very compelling deal as you would imagine to these web developers of like, ‘Oh, you mean you’re giving me a tool that I can use for my clients to make my life easier and I’m going to make revenue from that? Great.’” That brings in a ton of customers.
+
+Ben: If you’d think about the way that this is born of the developer community, it makes so much sense. I asked David Zager who’s our Head of Design at PSL and he used to run a design and [...] agency and did for years. I was part of this program and he smiled when I was like, “Yeah, back in 2006–2008 they were doing really well, they are giving distributed through a lot of these web development agencies,” and he just smiled, and he was like, “Yeah, they had this sweet referral program.”
+
+It’s so funny because today we would describe that and they’re like enterprise SaaS world does channel sales. Of course, these people who are going to be building 30 to 100 websites a year for people who want to sell on the internet, you want to be their vendor of choice and you want to figure out some relationships with them, but it was so pioneering at the time.
+
+David: The next test is even more fun. They launch an internet sensation. They launch the build a business competition on Shopify. Do you remember this Ben? Do you remember the partner that they run this competition with?
+
+Ben: I do not.
+
+David: None other than Tim Ferriss.
+
+Ben: No way.
+
+David: Yeah, Tim becomes the advisor of the company and Tim was like, “Hey people love competitions, what if you gave away a $100,000 to the team that builds the biggest business within X months period on Shopify,” and Tobi was like, “I don’t have a $100,000, I can’t give away” Tim was like, “Trust me.” He goes by the fact.
+
+Ben: I hear Tim Ferriss is pretty good at growth marketing.
+
+David: Yeah. They launch this contest together and they get over a thousand new merchants signing up to the platform just through this contest. It generated over $3 million in revenue across those new stores. It’s pretty good ROI for that $100,000 growth investment.
+
+Ben: I wrote those checks all day.
+
+David: Totally, and then what probably becomes the most important thing that they do during this time, in June 2009, they ship the Shopify platform. They build an API to allow third-party developers to plug-in their existing tools or right tools right into Shopify merchant pages and accounts.
+
+This really takes everything to the next level because again, think back to building in Rails, it’s very minimalist, functional design-oriented framework, and that’s what Shopify always been. Tobi talks about how the ethos of the company is, think about features that most of our customers use most of the time and build those, and features that some of our customers use some of the time, or most of our customers use some of the time, we don’t build those. But now, a third-party ecosystem builds those and plugs in.
+
+This massively increases the reach of types of merchants that could use Shopify for anything, or add functionality, or do subscription sales, or do whatever without cluttering and muddying the messaging of the core product.
+
+Ben: I guess the referrals were really the first piece of this, but this is really the second thing they do that starts to make this a really great scale business because while the intention of doing this, launching this platform is really around great. There’s a way that we don’t have the right code, but people can extend the functionality to attract more customers. What it really starts to do is build the mode, where Shopify becomes the absolutely dominant platform because they’ve got all the apps. They are very much like WordPress in blogging, it’s really hard to shake that inertia because they have all the plug-ins. Shopify has exactly that in the ecommerce world.
+
+David: Totally. In a minute we’re going to talk about Stripe, but things like that. Something like Stripe can get build which is incredible in game changing for the ability for people to take payments online and it just plugs right in the Shopify.
+
+In 2009, the first year they start really aiming for growth and running this test, they pass a $100 million growth sales that merchants do on Shopify. Remember, this is 2½ years into Shopify as a product in the market. In 2009 they pass a $100 million sales over the life of the company in the two and a half years that Shopify has cumulatively.
+
+In 2010, they do a $124 million in merchant sales just that year and at the end of 2010, Tobi finally gives in. I assume probably [...] knowing him an exhaustive process and meeting everybody and optimizing for his venture capitalist, he finally raises a series A. A seven million-dollar series A, led by Bessemer with FirstMark and Felicis participating. It’s off to the races to the company and full on growth mode after that.
+
+Ben: What episode did we just do where FirstMark was also one of their first checks?
+
+David: Pinterest.
+
+Ben: That’s right.
+
+David: Yeah, right around the same time. FirstMark had a couple of really great investments right at the beginning of their life as a firm. Really super impressive.
+
+Ben: When you listen to Tobi in interviews and he talks about the decision to take capital, he had long maintained this mindset that, that’s not the type of business this is. I don’t have the exact quote, but he said something like, “I want to be the best run, most successful, 20-person lifestyle business that there ever was.” After these experiments he realizes, “Oh, my God. We have enormous growth potential and we may actually be one of those rare types of businesses that are indeed a good fit to go raise venture capital, try and grow like that.” It’s very telling about him as a person how long he resisted that, and the discipline that he had around trying to build the business the way that he wanted before realizing what a massive opportunity it was in front of him then let the opportunity guide the decision-making.
+
+David: Even more telling about him, really this thing makes him such an admirable leader and CEO of a company. Now, when he talks about this is, “I was absolutely wrong. I hurt the business. I set the business back by years.” For those first couple of years and then during the time when he was running those experiments, not raising venture capital earlier, and not seizing the opportunity. Obviously they’ve been lucky that they’ve still been able to achieve dominance in the space and become a $35 billion-dollar private company.
+
+Ben: Right. There is some survivorship bias here.
+
+David: Yeah, totally. They could be two years further ahead of where they are now if he hadn’t done [...]. He freely admits that, which is very rare that you get that level of humility from a public tech company CEO these days.
+
+Clearly this is a market in a way that is huge and growing, and Shopify is riding it better than anyone else. How big can it be? Right after they raise that series A in December of 2010, they only had about 20 employees at the company at that point. By the end of the next year in 2011, they had over 100 employees. They had passed 10,000 merchants on the platform. That year, they did $275 million in merchant sales.
+
+The following year, they go from 10,000 merchants on the platform to 40,000 and three quarters of a billion dollars of GNP. They make $24 million in net revenue from that, which obviously is a lot less. This is the first year of their S1 that we have their net revenue, but that continue to just grow and grow. The next year they have 80,000 stores, $1.6 billion in GNP, $50 million in net revenue.
+
+Ben: David, do you have a sense of what was powering growth for them at this point? Is it still this referral engine through dev shops or is it word of mouth? What is leading to just the flocks and flocks of merchants running to Shopify?
+
+David: It was around this year in 2013 when Tobi and Shopify really take the ambitions up to the next level. That’s like, “Okay, we’ve been this easy way for mostly small merchants to set up and run commerce businesses online, and we have some small merchants that have grown into large merchants like Tesla, we have some large merchants that have switched over from Magento or BigCommerce or CommerceOS and come to use us. Maybe there’s more we can do,” because if you become a big merchant, you don’t just want to sell on a website online, you want to sell in a lot of places.
+
+So in 2013, they launch Shopify Point of Sale for offline sales. They have devices that you can put in a physical storefront, use that to actually be your point of sale, but even more importantly, they’re now syncing your online inventory with your offline inventory.
+
+Back in 2013, that was probably G-Whiz, you think today about all of these D2C brands out there that now all of these, you can’t even call them D2C brands or internet brands anymore because they have physical stores in major metro areas around the world. It’s critical enabler for this. Of course, all of those brands were built on Shopify and starting to grow in the early days in 2013.
+
+The other thing that they do, the next year in 2014, is they officially launch Shopify Plus. What’s Shopify Plus? It’s basically an enterprise version of the core Shopify product. It was really interesting that they segmented this out as a completely different business segment in a different office. It’s based in Toronto not in Ottawa. The concept behind this—I think all coming from Tobi—is that the core ethos of Shopify are these small merchants, these entrepreneurs, these startups selling on the platform.
+
+But when they try and go out and they sell to Unilever, they sell the Google, they sell to Anheuser-Busch of which are big customers using the platform they want something different. They want account managers, they want hand-holding, they want SLAs, they want uptime, and all of these things. They start this whole other division that’s going to go out that purely attack those. Now, Shopify Plus and these big customers are over a quarter of the total revenue of the company.
+
+Ben: When I was asking that question about growth and you’re talking about engaging with these really big customers, it is expensive to go in and actually do the sales and marketing to get those accounts. So, to give you a sense for today, where they did about a billion dollars in revenue last year, they did spend $350 million on sales and marketing. This business has never quite been a, “Let’s throw up a website and people will just come to it and just service themselves.” It does actually require spending to go and get that business.
+
+David: The net of all of these new initiatives is Shopify’s growth just continues in the venture capital era. In 2014 they cross $100 million in net revenue, they do $105 million in net revenue. In April of 2015, the company files to go public interestingly on both the New York Stock Exchange and the Toronto Stock Exchange in Canada. Two different tickers. You can take your pick should you choose to invest in Shopify. On May 20th 2015 they priced the IPO at $17 per share, which equated a pricing to a $1.3 billion market cap. Think about this is a $35 billion market cap company today, just about 4 years later.
+
+They start trading the next day at $28 a share, which is 60% higher. Actually, the stock stays relatively flat for the rest of the year. It would pick up later the next year, but 2015, for the whole year they do an amazing $7.7 billion in GNP of merchandise that merchants are selling on Shopify.
+
+Ben: What’s that up from the previous year?
+
+David: I didn’t find what the GNP was in 2014. In 2013 it was $1.6 billion.
+
+Ben: So, in two years they 8X it?
+
+David: Yeah or probably 5X from $1.6 billion to $7.7 billion. But it's still incredibly impressive. Net revenue is $205 million for the year ended 2015. We thought a fund quota and the topic of this show is the Shopify IPO, which we will grade in a minute, but a fund quota is sort of catch us up today, who we thought would be.
+
+In October of 2017, not quite two years ago, Shopify became the target of an activist hedge fund investor, a short seller, named Andrew Left at Citron Capital. He released a report on Shopify decrying the company as a get-rich-quick scheme that was the television report is, this is in all caps, the hottest stock on—eventually he has now changed it to The New York Stock Exchange—the NASDAQ, they’re not on the NASDAQ they’re on New York Stock exchange. It’s a completely illegal get-rich-quick scheme (with a good software platform).
+
+Ben: What’s it’s illegal about it?
+
+David: He accused the company, Shopify, he just didn’t believe it. At this point, this was in 2017, the company said they have 500,000 merchants on the platform. How could it even be possible that there are 500,000 different merchants in the world that would be selling online. That ludicrous. Who are these people? It must be a multi-level marketing ponzi scheme.
+
+Ben: How can it be possible if there’s two billion media outlets on the internet? Because it’s the internet.
+
+David: How could it be possible that there are now, I don’t know how many homes are an AirBnB, something like two, three million, four million maybe? How could that be possible? Anyway, this is great. He really says this report says the FTC is definitely going to come after Shopify. He puts a $60 price target on the stock. The stock had been trading at around $115 a share at this point in time. Six months later, it’s now the spring of 2018, the stock is trading in the mid-$120 a share. Okay, he didn’t do so hot on his shorts here.
+
+Ben: It was at $115 before.
+
+David: It is at $115, so it’s roughly flat at this point. It’s not down, it’s not doing good in this short position. Fast forward a little bit further to April of this year of 2019, just a few months ago, the stock is now trading at $205 a share. Remember back in October 2017, he tried to put a $60 price target on the stock. What do they do? What is Andrew trying to do? They come out again with another research report talking about how terrible Shopify is. He puts a price target of $100, up from $60 this time on the stock, says it would be down at a $100 within 12 months and if it is not he’s going to donate $200,000 to charity. Well we’re not 12 months yet from there, but today…
+
+Ben: All he can come up with is a $200,000 bounty with that kind of quick claim?
+
+David: This is so amusing. Today on July 31st, 2019 the stock closed at $317 a share for a $36 billion market cap.
+
+Ben: You just wait until it hits $60, David.
+
+David: I know. We’re going to do our narratives in bulls and bears here in a minute, and certainly no doubt that this is an expensive stock right now, but illegally get rich quick scheme? That is probably not an accurate characterization of this company.
+
+Ben: Let’s dive in the narratives and let’s do this a little bit differently than we normally do. Listeners, David and I were talking before the show. For companies like Facebook, we felt that it made a lot of sense to do the bulls and bears in the press leading up to the IPO. Uber was really exciting to do this. Shopify was less of an interesting media darling at that point, but now has really starting to heat up and get a lot of coverage. The interesting thing is what are the bull and bear cases to make about the stock now.
+
+David: It’s interesting we just went through this whole acquired history and facts of the company. There was one other company that some listeners out there might be wondering, why didn’t Ben and David talked about a company that I usually think of when I think of Shopify and hear people talking about it? And that is Amazon.
+
+Ben: One would think if we had just spent an hour talking about the rise of ecommerce from 2004 to today, the company would be Amazon that we were talking about.
+
+David: Yeah. Let’s start with the bear case here. It’s relevant for both the bear and the bull. All of this is great and certainly you can’t take anything away from the incredible business that Tobi and Shopify have built over the last 13 years. But isn’t Amazon going to just take over all of ecommerce? Why are people going to be selling on their own channels anymore when eventually everything’s going to end up on Amazon and they’re going to have the best fulfilment, the best delivery, the best pricing and everything?
+
+Ben: What are these 800,000 merchants do not sell on Amazon third party sellers and do and sell them over on their own .coms powered by Shopify? It makes no sense to me based on what everybody is saying about how dominant Amazon is.
+
+David: Then you looked at the price of Shopify. They did about a billion dollars in net revenue last year.
+
+Ben: Which puts it at 35X trailing 12 months revenue.
+
+David: Which also, by the way, take a step back and talk about they ended 2015 with about $200 million in net revenue. Three years later they end 2018 with a billion in net revenue; that’s incredible growth. But yeah, that’s a very expensive stock, Amazon is cheaper than that. Why shouldn’t I buy Amazon instead of Shopify.
+
+Ben: Where did you here Amazon is cheaper than that when people are talking about valuation multiples based on any company metric? This is a good point for less finance-y folks to talk about why 35X trailing 12 months revenue is big.
+
+First thing to point out is, it’s not 35X trailing 12 months income. In fact, the company is still a loss-making company. It’s not a big loss-making company. In 2018 they lost $64 million, in 2017 they lost $40 million. This company is not, at the end of the day, turning a profit on all these billion dollars of revenue that it’s getting. Now of course, there’s lots of great reasons for that. The company is a high growth company, but imagine for a moment that it was a 35X trailing 12 months income. The profit that they were making, you still would have…
+
+David: Back in the day when I started in finance, 35X earnings per share multiple, that was expensive. Now we’re talking about 35 time revenue.
+
+Ben: Right. You would still have to believe that this valuation is correct, that if you were to do a discounted cash flow. All the future years left of income that that stock was going to generate discounted to today, that it would be worth 35 times as much as it’s making now. That’s still a big leap to make.
+
+Who knows what the worlds going to be, let’s assume, which is a stupid thing to assume, but just for a moment that they’re not going to grow anymore, which is what the entire thing is predicated on, there’s 35 years worth of cashflows that we’re going to account for, oh it’s not even actually the profit. It’s the revenues.
+
+It starts to give you a sense of, “Wow. This is really being valued not only that it has a ton of growth in front of it, but they’re really going to find a way to turn this corner.” They are effectively break-even right now. There’s net losses so small, relative to revenue, but they’re going to find a way to flip that faucet and start becoming a very profitable company as well.
+
+David: This is going to be very [...]. One of our recent subjects here Acquired, Eric Yuan of Zoom, he would say the price is too damn high, which is ironic because Zoom is also trading at an extremely high revenue multiple right now. It’s extremely expensive to stock, but then there’s also the [...] question out there, how could you justify paying such a high price for a company that is competing in the same category as Amazon and is more expensive than Amazon? Unless you have anything else in the bear side.
+
+Ben: Please paint me the picture.
+
+David: Let’s flip to the bull side. Actually, for me the topic here is still Amazon. Tobi has this really great quote in one of his interviews where he says, “If you assume Amazon is going to eat retail of everything that has a barcode on it,” basically you need to have a barcode to sell on Amazon, “the question then is what happens to anything that doesn’t have a barcode on it? Is Tesla going to sell on Amazon? Are upstart D2C brands going to sell on Amazon?” Maybe they will and actually you can now on Shopify. They have a plugin to Amazon. You can easily sell on Amazon from Shopify. But there’s a lot of stuff out there that isn’t going to sell on Amazon.
+
+Ben: The way that I think about it is timing that this company, the market for people selling things directly on the internet or, let’s expand and say, selling things directly both on and off the internet actually expanded dramatically in the years after their IPO. We’re in this era where people want to sell things in a bunch of different ways and subscription method, using a strong storytelling component, using a strong brand component, all these things at Amazon is not good at. It makes sense. I don’t mean not good at in a tactical way. It’s not “Oh darn. They just couldn’t hire people to figure the dang thing out.” It’s a structural problem.
+
+David: Yeah. Amazon.com subordinates the brands of the products.
+
+Ben: Exactly. When you’re buying from a third party seller, David can you name one third-party seller that you’ve bought from on Amazon in the last year?
+
+David: I think they all have a lot of LLCs in them.
+
+Ben: Yes.
+
+David: Okay, what doesn’t have a barcode? What’s not going to sell on Amazon? It’s this. It’s Instagram brands, it’s “D2C” internet brands. You can think what you will. Personally, I feel there’s so many out there that’s probably overhyped and it’s like #millennials everything.
+
+Ben: That’s a direct David Rosenthal quote, ladies and gentlemen. #millennialseverything.
+
+David: There we go. Tobi also talks about this in the same talk. He’s like, “Look. Kylie Jenner launched a cosmetics line a couple of years ago and she launches on Shopify. She sells to her audience. Her audience is primarily on Instagram, other social media property as well, but most of what she’s doing is selling on Instagram.” It’s estimated that Kylie’s cosmetic brand did over $300 million in revenue last year. They have seven employees at the company. They don’t sell on Amazon, all of these is as far as I know. I didn’t check, but I’m pretty sure they don’t sell on Amazon.
+
+The question is, okay yeah, there’s going to be a lot of stupid millennial brand start ups that raise a lot of money out there and go bankrupt. But there is also going to be some companies that become really big huge companies that are just fundamentally architected in a different way and have direct relationships with customers, and Shopify is the platform that they use to manage all that.
+
+Ben: Yup, and if you look at the way [...] manifesting from a metrics perspective, there’s two things that increased after their IPO. Their sales efficiency increase as revenue continue to increase, which is crazy. Their return on sales and marketing expend actually got better even though the company’s revenue was growing. If you were saturating your market that would go down because you’re reaching worse and worse customers.
+
+They’re still accelerating in the product market fit or at least as of some data that I was looking at from 2016, still accelerating into an expanding market. And the ACV continues to grow. That’s the Average Customer Value. Basically the amount that any given Shopify customer is spending or giving to the company is growing at about 14% a year. It’s not even like, “Oh man, we on board someone,” or if you take the average across all of our merchants, any given merchant is increasing their business with us.
+
+David: And that’s things like going from regular Shopify up to Shopify Plus, which goes up to $2000 a month, probably even more than that for the big accounts that they’re directly managing. That’s also the other part of Shopify’s business that we haven’t talked as much about, we alluded to Stripe earlier, is through both the platform and third party services available on Stripe as well as things like Shopify Point of Sale and other products that they offer, they do make money per transaction. It’s not like the original business model where they’re just taking a flat percentage of every transaction that you make as a merchant, but their revenue sharing with Stripe for instance, when Stripe is powering internet payments for their customers.
+
+Ben: Yeah. It is worth taking a quick aside here and saying, “Shopify did $14 billion last year in GMV,” so the amount of goods sold on Shopify is $14 billion. Stripe processed almost all of those payments. A lot of money flowing to Stripe from Shopify. And Shopify benefits from that in some way.
+
+To look at how do Shopify make money, we talked a lot about these subscription solution. That’s the SaaS fee that you’re paying per month to Shopify. They have what used to be smaller and is now a little bit larger is their merchant solutions revenue. That’s payment processing fees, transaction fees, referral fees, sales from the point of sale hardware, David, exactly what you’re talking about. So, half the business is actually other things that they can make money from their merchants in addition to the SaaS fee. The part of the thesis that you could form, if you are really excited about the future of this company is, there is going to be a lot more stuff that they could sell to them, too.
+
+David: A lot more stuff. The bull case to sum it up is there is going to be a lot more merchants that will use Shopify in the future, that are going to sell a lot more stuff to their own customers and Shopify is going to be able to sell a lot more stuff to these merchants.
+
+Ben: Yup, and I’m pulling forward from tech themes here for a minute, but it’s totally valid. If you think about that $14 billion in GMV, that goods that were purchased powered by Shopify and the billion dollars in revenue, that starts to paint this picture that for every $14 spent, Shopify is able to capture $1 of it. Which is pretty interesting because then you can start to really think about what if that were a take rate? That’s what? Basically, have a 7% take rate on the marketplace model and the thing that you would have to believe is they’re going to be able to continue to expand that over time.
+
+Let’s assume that if keeps growing and they keep getting more and more customers, more merchants onboarded in this thing and that TAM is indeed expanding. What else could they do to make it easier to be a merchant in the world? By providing more value there, can they then claim more value of those transactions that are sold? That’s exactly what they’re doing right now.
+
+The very interesting thing that was recently announced is the Shopify Fulfilment Network which is partnerships with third party logistics providers. People that have warehouses and manage shipping stuff to people with a common interface for merchants that is powered by Shopify. It’s a Shopify interface, much like you interface with anything else on their platform using just the really nice Shopify tools or the nice plugins in their ecosystem in their app store.
+
+What that actually allows these merchants to do is be competitive with Amazon and do things like two day shipping. But importantly, and this is where this sits on the fence between bear and bull, this is very different than Amazon’s approach. With fulfilment by Amazon, Amazon actually owns the warehouses. So, if you’re a third party merchant you’re saying, “Cool, I’m going to use FBA,” Amazon controls the whole stack and [...] on the warehouses.
+
+From a business model perspective, Shopify’s way is great because it’s asset light. It’s software margins. I love it. It’s more like a software business. But they don’t have control over that whole experience, they’re outsourcing into a bunch of other third party logistics providers, and they don’t have ownership over that margin, the way that Amazon does. They have to share in the economics with those three PL providers.
+
+The question that you have to ask yourself is, can Shopify really make it as seamless for merchants to use their Shopify Fulfilment Network and those merchants customers as Amazon has made FBA.
+
+David: It’s interesting though. Shopify must have thought through all these as they were munching and thinking about their strategy, they need to be the anti-Amazon here. They need to let the brands and the merchants be the stars. Because the more you start controlling the experience and the customer, the more those brands are going to get pushed down below Shopify and then you’re in an Amazon’s world.
+
+Ben: You raise that really great point. It’s exactly the one we’d absolutely owe mentioning that Ben Thompson has covered so well on Stratechery and that is Amazon is much more like an aggregator where they’re the brand, they control the whole experience, they aggregate all of the customers, and the customers shop through them, independent of who the merchant is.
+
+Whereas exactly as you said, Shopify is the anti-Amazon, they’re a platform, and the bet there is, “Look, we’re not going to control the whole experience. We’re going to picks and shovels. You’re going to have to relationship with that customer.” Their bet is that they are able to make enough money off of its $1 out of every $14 that gets purchased, they’re able to make enough money that that business model works, too, and it supports a different customer segment.
+
+David: This is the first example we’ve seen of, if you believe Ben’s Aggregation Theory and that that has led to the fangs or Amazon, Facebook, and Google—Apple’s probably in a different category—this is the first chink in that armour, where the actual business model of a aggregator, being Amazon, maybe not the seeds of its own undoing, but Shopify is able to successfully compete precisely because it has a different product and business model.
+
+Ben: Yeah, but where I would really go with this is the big opportunity is the aggregator one. Amazon is a billion dollar market cap company. Really, what we’re saying is there is un-addressable opportunity by the aggregator in this market that also happens to be very, very large.
+
+David: It depends how large brand first merchants continue to become. Real quick on what would happen otherwise before we move to Playbook. The interesting thing here is we’ve seen this always on Acquired, but especially in the past year, this company almost didn’t happen. They were going to sell snowboards on the internet was Tobi and Scott’s initial ambition.
+
+If this company hadn’t happened, these people selling on the internet in picks and shovels to do that, that certainly wouldn't have happened. Would Stripe be more than a payment processor? Will it also be a storefront? Square is now starting to try to compete with Shopify online. Would Square have done that earlier and sold in online and offline? Or wouldn’t it been a totally different start up called Shopify started by someone else entirely? I think that’s interesting.
+
+Ben: It was a strangely empty space. Tobi talks about one of the hardest things was that they didn’t have a big competitor. Their competitors were these incumbents and really crappy experiences, Yahoo Stores and everyone else that he’s ripped to pieces. He says, “We had to have a higher bar because we didn’t have real competition.”
+
+It is interesting there was this strange low on the market where Viaweb started, sold to Yahoo, Magento was around, there wasn’t another low-end disruption ecommerce provider for the better part of a decade. And now you have people trying to compete with Shopify because it looks like very real market. Yeah, there wasn’t really anyone who would’ve come in and does exactly what they did when they did it otherwise.
+
+David: It’s interesting you mentioned Magento. We have talked about them on this episode. I had initially assumed Magento was an old school incumbent that Shopify was competing with back in the day.
+
+Ben: Are they not?
+
+David: No. Magento was started by the folks from OSCommerce in 2008, I want to say. But what they are, the strategy was not the right one in the long-term.
+
+Ben: I think they started four years after Shopify.
+
+David: I know. What they did, I haven’t fully researched this yet, but it’s an open source platform. I think they basically took the OS Commerce tech. Open source did and it started an open source company around that. But the problem with open source software with how they were doing it was people had to take the software, host it, install it either on-prem, where Shopify was just, “We’re SaaS. You don’t have to deal with all that.”
+
+The people that were using Magento were trying to go sell to big existing retailers online. So like, “Oh, use open source instead of closed source,” but they missed this whole other bottoms-up market that was getting started.
+
+Ben: Right. It’s not a low and disruption play in the way that’s classic Clayton Christensen idea of serving this new up-and-coming market as a crappier toy type thing. It wasn’t at all.
+
+David: Yeah. It wasn’t that at all. I think it comes back to Tobi saying, “We had this two year essentially delay where I wasn’t ready to take venture capital. I needed to prove it to myself and the company that we were truly a growth company and yet still no viable competitor popped up during that time. I really wonder why.”
+
+Ben: All right. Playbook?
+
+David: Playbook, yeah. Let’s do it.
+
+Ben: I mentioned the Wayback Machine. So I went and looked at their website from 2008 and I just had to share this quote. “Selling online with Shopify is easy. We take care of hosting, bandwidth and security so you can focus on your business.” It is amazing to me how value propositions change over time. I surveyed some people who have started Shopify sites, and I said, “Why do you use Shopify? Why is it so great? Why aren’t you figuring out a different way to sell your stuff online?” People said, “Oh my gosh, the templates, the really clean UI, the modern plugin ecosystem, the fact that payment processing is a total breeze, they have inventory management, I’ve heard they’re coming out with fulfilment.” In 2008, the way that they were billing it was security, hosting and bandwidth. It’s just amazing that you serve the needs of your customers as they grow and as your market grows.
+
+David: Totally. Back to what we’re just talking about with Magento. Back in 2008, if you and I wanted to start a store selling Acquired t-shirts, and we had to spin up a server and install a Magento pack, we wouldn’t do that.
+
+Ben: We haven’t even made it to set up a Shopify store.
+
+David: Yeah right. Maybe this episode will inspire us. My Playbook on this one, going through this history here. So many twists and turns as always, but Tobi joining the core Rails team, creating Typo, and then Typo becoming a thing in the Rails community actually was a huge, huge competitive advantage that they had. When they then launched Shopify, all of these people who had blogs that were on Typo that maybe they might want to sell stuff on their blog, or create a business around it and all of these other developers, that developers might want to start businesses and sell things online, they all knew of Tobi, they all knew what he was working on, and then all of a sudden it’s like, “Oh cool. Tobi just shipped this new thing. Let’s resell online. Maybe we should use that.” Such a huge competitive advantage.
+
+Ben: Yeah. That’s a great point.
+
+David: We talk about this a lot on the show. We think about this a lot as venture capitalist. Distribution and distribution advantages are not often talked about or thought through in the early stages of a startup, but they make the difference between becoming a big, successful company that starts to get traction than a flywheel spinning versus just spinning your wheels.
+
+Ben: Yup. “If you build it, they will come,” is just so, so rare.
+
+All right, I had one more and that’s looking at the financials of this company. As customers sell more, Shopify makes more per dollar sold. I just want to pause and we can think about that for a moment. The classic thing I’m always afraid of when we’re starting a new company at PSL is, “Oh man, are we building something that will be really great for someone to get started and then when they have sufficient resources, they’re going to build their own thing and they’re going to move off of us? It’s a great business to get other people started, but then you don’t get to keep their business over time.”
+
+As these businesses grow, Shopify actually makes more money off of them. This is amazing. Merchants pay for advanced services as they become larger and more sophisticated, so the effective take rate for Shopify actually goes up as the customers grow the business. It’s amazing that they can keep pricing power and keep layering on through the platform that they’ve woven with the app store, and with the incredible ease that they provide in taking on a lot of things that these companies don’t ever want to do themselves. It’s incredible that they can grow that take rate as these businesses scale.
+
+David: It’s so funny, going back to the original marketplace take rate business model didn’t work for exactly the reason then that early stage startups who do that, run a risk of that and you’re always afraid of, “Oh man, will our best customers be incentivised to leave us as we grow?” Just as you said, it’s adding and layering in all these products and services and the platform, the point of sale, payments, and all of that around the core offering where, as you start growing, you need those and then it’s easy to plug in Shopify solutions.
+
+Ben: It’s got to have a ceiling, right? I hadn’t really thought about this until now, but there’s not a network effect between customers, between merchants. The lock-in and the advantage all comes from customers, merchants saying, “We don’t want to do this in-house.” The thing that’s allowed them to generate so much revenue and expand as their customers expand is that that is deceptively large and complex, the set of things that all these different plug in do, hosting, security, and payments.
+
+All this stuff is stuff people don’t want to do, but Apple would never host store.apple.com on Shopify. There is some ceiling for which above that, you actually do have the resources to do 100% of it yourself, even including fulfilment. It’s interesting thinking about it’s not a lock-in network effect the way Facebook has a lock-in network effect. A platform network effect is actually a little bit weaker, but it can support you up to a point.
+
+David: In my notes, I had a quote from Tobi that I didn’t talk about because it wasn’t relevant as we are going through the story, but I think it’s relevant here. I don’t think Tobi actually thinks about Shopify as a network effect company. I think he thinks about it as a platform company and that’s subtle, but different. He talks about this. He says, “I read a book about Bill Gates pretty early in life when I was 16 or so, and one thing that Bill said is that everyone in the world wants to be a platform.” It’s like back in platform day [...] even before network effects were popular. I’ve heard Bill say this too, “You’re only really a platform if the value of the ecosystem on top of the platform is larger than the company that owns the platform.
+
+I think that’s what’s going on here with the Shopify “Platform” with payments powered Stripe with now logistics that they’re adding on. They’re adding all of this value. Why do Shopify’s merchant customers allow Shopify to take more percentage of incremental dollars over time? It’s because the value that those merchants are getting from those services is greater than the margin they are giving to Shopify. If they would have to go do that, stitch all that together themselves, the amount of margin they would have to give up is significantly higher than the margin that they give to Shopify by doing it all as an integrated platform. I think that’s how it happens.
+
+Ben: It ends up actually making the case for the bundle economics of Shopify being the point integration on the bundle of all these things.
+
+David: Exactly.
+
+Ben: That’s a good way to slice it.
+
+David: Showed you a quick value creation versus value capture here?
+
+Ben: Yeah. This is a section that has one name and means two things. The first of which is are they able to capture a good amount of the value they create? Certainly. We keep talking about this one-fourteenth number. The second thing that is interesting is value creation in the world on an absolute basis. A value creation versus value destruction.
+
+The reason we added this section was because with a lot of businesses particularly recently sharing economy businesses, a lot of our listeners had argued, “Hey, you keep talking about how these companies have created all these market cap for themselves, but there’s a chance it’s value destructive in the world. The thing that they’re destroying is actually greater than what they’ve created for themselves.”
+
+This is not at all the case in this company. Shopify has enabled so much innovation and so many creative entrepreneurs to become merchants and lower the barrier for entrepreneurship. It’s undeniable that they have created net new value in the world.
+
+David: You really have to reach deep like Citron to argue that this is not a net value creative to the world. I’m 100% with you.
+
+Ben: Okay. Let’s grade the IPO.
+
+David: If we think about the value of doing the IPO and doing it when they did, to me is just immense. This is an A bordering on A+ because you could argue against it that they IPOed too early before this massive expansion and perceived expansion in the market, and thus they could’ve taken less delusion had they gone public later. However, by going public when they did, and getting on the map, most people didn’t really know about Shopify out there.
+
+Certainly, in the investor community, in the finance community, but also just broadly the average person didn’t know. And then by doing it right at the cusp of the world into this D2C brand, Instagram commerce, influencer marketing, and Shopify being at the center of all of that, by being a public company, that helped also then on the other side of that by Shopify going up into the Unilevers, and the Googles and the big companies out there, being a public company certainly helped them on that, in launching Shopify Plus and that’s now a core to their business. This is a no brainer, at least a solid A in terms of what they were able to get out of, going public when they did it for me.
+
+Ben: Yup. That’s a great, great point. Then the only question is, did they make good use of the capital that they raised in the IPO and what did that allowed them to do? I don’t think there’s anything magical about it. They spent it on sales marketing, accelerated the growth of the company, subsequently have done very, very well on the investor community, obviously, and then very well with customers, too. I don’t disagree with anything you said.
+
+David: Interesting. They’ve made a few small acquisitions over the years. They haven’t made any meaningful acquisitions.
+
+Ben: You would think they’re going to make an all stock acquisition in a big way, you assume. If you were a capital allocator who was running this business right now, and it was valued where it was, you’d want to spend your stock on buying on some interesting stuff.
+
+David: Maybe that could be a future Acquired episode.
+
+Ben: Yup. Carve outs?
+
+David: Let’s do it. I have two carve outs. The first, this is a bit of an experiment. We’ve never done this on Acquired before, but our most recent investment here at Wave, a portfolio company Quota Pro, I spoke about them on out latest LP show. They are hiring and they are hiring for a bunch of roles, both engineers and for a head of product.
+
+I really debated whether we should talk about this because the last thing we want is for Acquired to turn into a commercial for each of our portfolio companies. But in this case, this company is truly one of the most exciting I’ve worked with in my whole career. They are tech-enabled brokerage for scrap metal recycling. If you talk about value creation versus value capture in the world, they are literally keeping metals of all types out of landfills.
+
+The company is less than a year old, is already doing millions of dollars a month in revenue or millions of dollars a month in GMV. They are hiring a technical team here in San Francisco to build up the back-end. If you think about Flexport, if you think about Convoy, or Uber Freight, very similar type businesses, we’re super excited to help them grow.
+
+If you are either an engineer and want to work on a really early stage company and an exciting market that’s growing quickly, hit me up in Slack and I’ll send you on to the company. Or if you’re an experienced products lead, ideally at a company like we were talking about Uber, Flexport, Convoy, Lyft, we would love to talk to you about Quota Pro.
+
+Ben: Who would ever want to be a product lead at a fast growing company invested in by David Rosenthal?
+
+David: There could certainly be worse things out there. And then my official carve out this time is Bill Gurley on Invest Like the Best.
+
+Ben: No way! Literally mine!
+
+David: No! I’ll let you take it then.
+
+Ben: No, no, no because I came up with the second one. I’ve recommended so many episodes of Invest Like the Best that it’s literally the one I have a strike through that one. I have a second one. Take it away, but it’s so damn good!
+
+David: It’s so good. Any time Bill speaks, it’s worth listening to. In this one, he talks about a whole bunch of things. A cross venture. The way he thinks about companies. He talks about a great XY access chart that he thinks about evaluating the scalability of companies and market places. Very worth listening to. A master class as always.
+
+Ben: Absolutely, especially relevant to this episode.
+
+David: Indeed.
+
+Ben: My carve out is David, the last time we did carve outs, you talked about a recent trip that you went on. Mine is a product that I used in our recent trip that I went on. I really like to ride my bike and I went on a trip to the San Juan Skyway. It’s a four day bike route starting and ending in Telluride, Colorado. You’re riding between 8000 and 11,000 feet and you’re riding through the amazing South Western Colorado mountains and Durango and Silverton, and all these really incredible places. Of course, I had a lot of fun, but one of the things that I really liked to do when doing these bike trips is take pictures. Of course, I love my big Sony NEX-6 around on my back.
+
+David: While you’re riding all those miles?
+
+Ben: The telephoto, you got to get that shot, but another thing that I brought this time for the first time was Moment lenses to put on my phone and take advantage of all the cool phone apps that there are. You can do this maybe dangerous thing of taking out your phone and taking some pictures while you’re riding instead of me taking off my pack, buzzing out the big camera, and doing the whole song and dance there. But also, it enables me to do things like hyper lapse or Spector, an app that does this cool time lapses.
+
+Moment has a time lapse feature in their app. To give folks an idea, Moment makes these really, really beautiful and really quality glass lenses that do telephoto, that do wide angle. That’s the two that I brought, but they have a series of other lenses too that really turn your phone into a camera that you thought it could never be, and do some really cool, I would say effects, but it actually uses physics and optics to change the light that’s hitting the sensor on your phone.
+
+David: That’s super cool.
+
+Ben: Yeah. They’re super small. I keep them in my backpack and I just use them in daily life and I can’t recommend getting some Moment lenses enough. I think they’re super fun.
+
+David: That’s also a Seattle company, right?
+
+Ben: It is, by a great CEO Marc Barros. I know a super talented team over there. Can’t recommend it enough and that’s been my toy of the month.
+
+David: I just can’t believe that you lug your big DSLR on your bike trip.
+
+Ben: It’s a mirrorless, but it doesn’t matter that’s a mirrorless because I also have the telephoto lens on it, so it’s big and heavy anyway.
+
+David: Love it.
+
+Ben: All right. Listeners, thanks so much. We hope you enjoyed this episode. If you want to become a Limited Partner, subscribing gets you access to our bonus show where we dive deeper into the needy gritty of building companies. To listen, you can click in the show notes or go to glow.fm/acquired. All new listeners will get a seven-day free trial and you can listen right here in the podcast player of your choice. With that, thanks again to our awesome sponsor, Silicon Valley Bank, and we’ll see you next time.
+
+David: We’ll see you next time.
+
+‍

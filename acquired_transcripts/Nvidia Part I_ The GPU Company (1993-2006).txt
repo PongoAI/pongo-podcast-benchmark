@@ -1,0 +1,897 @@
+Ben: Hello Acquired listeners. We were coming at you with a little bit of an announcement, some late breaking news. We recorded this episode, what David, a week ago?
+
+David: Yeah, a little over a week ago. We got some time travel going on here. I feel like I'm Jensen in a deepfake video Keynote.
+
+Ben: We sit here. It's Saturday, March 26th. We're getting ready to release this episode in about 24 hours. We want to tell you, we've got something that you don't want to miss. Save the date of May 4th—Star Wars day—for something in Seattle, Washington. We hope to be able to see you in person. We'll be able to share more soon. But for now, save the date.
+
+David: Consider this our save-the-date card that we're sending to each and every one of you.
+
+Ben: Yup. All right, now on to NVIDIA. Welcome to season 10, episode 5 of Acquired, the podcast about great technology companies and the stories and playbooks behind them. I'm Ben Gilbert. I'm the co-founder and managing director of Seattle-based Pioneer Square Labs and our venture fund, PSL ventures.
+
+David: I'm David Rosenthal, and I am an angel investor based in San Francisco.
+
+Ben: And we are your hosts. It is the eighth largest company in the world by market cap. When NVIDIA began in 1993, it made computer graphics chips in a brutally competitive and low-margin market. There were 90 undifferentiated competitors all doing basically the same thing at the same time. And yet today, they have an 83% market share of standalone GPUs—that's graphics processing units for those of you starting with us from square one—that are supplied for desktop and laptop computers.
+
+David: Ben, you're telling the whole story here.
+
+Ben: Sorry, I'll tease a few things here. Not only that, but of course, followers of NVIDIA know that they recently pioneered a completely new market—the hardware and software development tools to power machine learning, neural networks, deep learning, all of this in the cloud and the data center, which obviously is proving to define this whole decade of computing.
+
+As David and I began our research, we realized this really could be a book and a thriller of a book since the co-founder and CEO Jensen Huang really has bet the whole company three separate times, nearly going bankrupt each time. But obviously, as we reflect back here today, that certainly did not happen.
+
+David: All right, here's everything you need to know about Jensen. The CliffsNotes before we talk for six hours about him. The dude used to drive a Toyota Supra, like the Fast and Furious style, like a death machine, and he almost died. He got in a huge accident.
+
+Ben: Just one more way, he is like Elon Musk.
+
+David: Oh, man, crazy.
+
+Ben: Because we have way too much here for one episode, we'll save the stories on machine learning for next time. Today, we are going to tell the wild story of NVIDIA's founding to its rise in prominence powering the computer graphics and gaming revolution. This really is a story of true invention and innovation. It reminds you that engineering breakthroughs really do push our world forward.
+
+In saying that, to set some context, this is a story that takes place from about 1993 to the mid- to late-2000s. As hyped as NVIDIA has been over the last five years, obviously, with the stock run up and everyone's excitement around the company, I think Jensen is still an underrated CEO. Even graded where the NVIDIA Bowls have put him, I think Jensen is one of those people where if you know about him, you know what we're talking about and you have unbelievable reverence, but I think not enough people really know.
+
+David: Just one more Jensen quote before we get into the episode: "My will to survive exceeds almost everybody else's will to kill me." Amazing.
+
+Ben: Listeners, before we begin our parallel processing and graphics rendering journey, we want to introduce you to our presenting sponsor, Vanta, the leader in automated security and compliance. As you know from previous episodes, we are huge fans of Vanta and their approach to SOC 2, HIPAA, GDPR, all the compliance stuff. We have the CEO and co-founder Christina Cacioppo back with us today to help analyze her own company.
+
+Christina, I know long before Vanta, you were at Union Square Ventures from 2010 to 2012. You were really starting to be at the forefront and see how software was going to make it so companies could get way more leverage on people, money, and all the resources they have at their disposal to accomplish so much more so much faster. Was that an inspiration to what ultimately became Vanta?
+
+Christina: Definitely, especially in retrospect. I think when I was at USV, I didn't know the word SaaS. That's a reflection on me not at USV at all. What we called it or how I thought about it was developer tools.
+
+This was 2010–2011. This was like, is it too niche? How many of these people are there? All their customers are startups. Clearly, that's not sustainable. How do you sell new age tools to old companies? Being on the inside of USV, I saw the traction of an early Twilio or Mongo.
+
+You're just be like, oh, no, people haven't caught up yet, like this is very much a real thing. I think I just saw that a little bit earlier, the market broadly. Coming into Vanta, I just deeply believed a go-to market focused on startups can work. There are pros and cons of any, but you get fast iteration cycles and that works. You don't have to worry about selling to IBM when you're a five-person startup.
+
+Ben: Right. With tools like Vanta and last season's sponsor, Pilot, you have this ability to get so much more of your internal focus exclusively on the thing that makes your company great.
+
+Christina: Right. You don't have to become an expert in compliance, or in financial accounting, or whatever it is. Think of Vanta very much the mold of a Jeff Bezos, like you should focus on what makes your beer tastes better, not on the electricity you need to to produce the beer. I think the Vanta version of that is you should focus on your product, what makes it special, not on how it becomes compliant.
+
+Ben: Our thank you to Vanta, the leader in automated security and compliance software. If you are looking to join Vanta's over 2000 customers to get compliance certified in weeks instead of months, click the link in the show notes or go to vanta.com/acquired for a 10% discount.
+
+Listeners, after you finish this episode and you're thinking to yourself, gosh, I wish I could talk about this with people, we have good news for you. You can do that with 11,000 other smart members of the Acquired community at acquired.fm/slack. If you're dying for more after this and you're like, I can't wait for part two, I need some more stuff in the meantime, search Acquired LP Show in the podcast player of your choice.
+
+Here's a new thing. If you haven't rated or reviewed this podcast yet, I think the last time we mentioned this was years ago, Spotify in their mobile app just added the ability to rate. If you listen to Spotify, you should totally leave us a little rating in there. If you're on Apple podcasts, leave us a review. We really, really, really appreciate it when you help share your experience as a listener with others.
+
+All right, listeners, this is not financial advice. We may hold positions in things we discuss on the show. This is for entertainment and informational purposes only. David, take us in.
+
+David: We start in February of 1963. What’s going on in Silicon Valley in 1963? Fairchild had already started (I think) and Silicon Valley was underway, but it was early days. We start not in Silicon Valley, but in...
+
+Ben: Taiwan?
+
+David: Yes, the southern part of the island of Taiwan with the birth of Jen-Hsun Huang, later Americanized to Jensen Huang. His dad was an engineer for the air conditioning company, Carrier. You see those big industrial air conditioning units on buildings and stuff.
+
+When Jensen is four, his dad goes on company training to America, to New York City. He was like, wow, this is amazing. I want my kids to grow up here and to have all the opportunities that are available. He comes home, Jensen's four. Jensen has an older brother who's a couple years older. Nobody speaks English. His mom gets an English dictionary and picks 10 words every day, grills the two kids, quizzes them, and teaches them English out of the dictionary.
+
+If you listen to Jensen, where's that accent come from? Because it's not what you would think. The family ends up moving to Thailand a few years later. When they're living in Thailand and Jensen is nine, they finally decided that this is the right time to send the kids to America.
+
+The parents can't move to America yet. They don't have enough money, but they found a boarding school in America that is cheap enough that they can afford. It is called Oneida Baptist Institute and it is in eastern Kentucky, the sticks of Kentucky. Jensen would later say that he and his brother were the first foreigners to attend this school and they're pretty sure they were the first Chinese people ever in the town of Oneida.
+
+It turns out that the reason that this school, OBI (Oneida Baptist Institute) was so cheap was it's actually not a prep school. It's a reform school. This is a school for troubled kids. It's a reform school. Jensen's roommate, when he shows up as a 9-year-old, is a 17-year-old kid who had just gotten out of prison and was recovering from 7 stab wounds that he got in a knife fight.
+
+Ben: Classic American journey right here.
+
+David: And amazingly, this is so Jensen. They become great friends, even though this kid is eight years older than him, twice his age, basically, from a way different background. Jensen helps him with math and he gets Jensen into weightlifting. You see Jensen today and you're like, that dude is jacked.
+
+Ben: He is jacked.
+
+David: He's been weightlifting since he was nine years old. It's about his time in Oneida. Now, I don't get scared very often. I don't worry about going places I haven't gone before. I can tolerate a lot of discomfort. Boy, does that play out in his life, as we will see.
+
+It's pretty awesome. Actually, now, he and his wife Lori have given a few million dollars to the school. It's an amazing institution now. You can see Jensen gave the commencement address in 2020. We're going to link to this in the sources. It's pretty awesome.
+
+After a couple of years at OBI, his parents are finally able to save up enough money to afford to come to the US themselves. They moved first to Tacoma, Washington, great state of Washington. Then they move a little farther south down to the suburbs of Portland, Oregon. Jensen and his brother go home. They live with them. They go to public school there.
+
+Jensen continues his American upbringing. He gets really into table tennis. He places third in the junior nationals in table tennis and he gets his picture in Sports Illustrated. Pretty basic.
+
+His parents continued their academic discipline. Jensen's super smart, obviously. He ends up skipping two grades. Then going to college, he goes to State College. He goes to Oregon State University just down the road a little bit.
+
+Ben: And he got there when he was like 16, right?
+
+David: He got there when he was 16 because he had skipped a couple grades. He loves math, so he decides he's going to major in electrical engineering at OSU. He totally falls in love in more ways than one.
+
+The first way that he falls in love is he just thinks electrical engineering is the coolest thing in the world. He becomes one of the top students in the school. He talks about how he gets mad at the professors because they don't use enough precision when talking about exact numbers.
+
+Ben: Which he later comes to say that he respects the opposite position. I think some of the NVIDIA employees call it CEO math when he rounds all the numbers and he's like, reflecting back, I do understand what the professors were trying to show. The details only matter if you understand the big picture first.
+
+David: That's so Jensen, he understands. My employees get mad at me when I round the numbers and you see your math, like I get it. I appreciate precision, too, but the big picture is what matters here.
+
+The second way he falls in love is with his lab partner in electrical engineering fundamentals. His lab partner, Lori, who goes on to become his wife. It's such a cool story. He graduated in 1984. She graduated in 1985. They moved down to Silicon Valley. Jensen joins AMD as an equivalent of a chip design PM. It's very engineering–heavy, but he's kind of like a PM. He's helping as a junior manager of a process for developing a chip. He's working on a then blazing fast one megahertz CPU chip.
+
+Ben: Yeah, he talks about this. He's talking about how slow one megahertz is. He refers to it and says, you can even see it coming. It's about how fast it was.
+
+David: You could see it coming from a long way, and still coming, and still coming. Amazing. Of course, now, he makes literally the fastest chips in the entire world. He starts at AMD. He starts at night working on a master's degree in electrical engineering at Stanford. It ultimately takes him eight years to finish this master's.
+
+He works all the time that he's at AMD and then at LSI Logic where he goes to. We can talk about it in a sec. He ultimately does graduate right before they start NVIDIA. This is a super cool bit of trivia. Did you go back and watch the Don Valentine view from the top?
+
+Ben: No, I didn't.
+
+David: Lecture at GSP? I watch that once a year, every year. Every time there’s an excuse.
+
+Ben: Is that the one where he holds up Alfred's resume?
+
+David: Yup, when he holds up Alfred Lin's resume. Also Easter egg in that talk, that was the day that the Jensen and Lori Huang Engineering Center at Stanford was dedicated. Don says Jensen did a building. Pretty awesome.
+
+Ben: I did watch, he walks in and gives a talk at Stanford. I think it's the first time that Jensen has given a talk since the building opened. And he says, I've donated, we have this nice building now, so I have no more money.
+
+David: I'm penniless. Right, Jensen. It's so great.
+
+Ben: Just to set context for people, if you look at his NVIDIA shares, he's worth about $20 billion right now.
+
+David: I think he owns 3 ½ percent of NVIDIA or something like that. Yeah, he's not penniless. Okay, he works at AMD for a couple years. While he's working there, probably from working on this chip that is so fast, you can really see it coming, he realizes that designing chips is really freaking hard. Intel can do it, AMD can do it. But there are not many companies. It's all full stack at this time. TSMC didn't start till 1987.
+
+Ben: Not only are you manufacturing in-house, but for the most part, the process of designing a chip is a manual one. These companies each have their own institutionalized internal way of working that you design and layout the elements of a chip.
+
+David: Jensen talks about, when he was in school, the reason he wanted to go to AMD was he thought this was so cool that you could do it all. Once he's actually at AMD, he realizes it's actually not cool. It would be cooler if you could be really good at a certain part of the stack and have tools, platforms, and other companies to allow anybody to make chips.
+
+Ben: Yeah, if there were design tools to help you make chips.
+
+David: After a couple of years, his officemate at AMD leaves and goes to join a startup called LSI Logic, which had just gotten public. We've talked about it on the show. Made Don Valentine and Sequoia the then largest venture return in an IPO in history, maybe the largest venture return ever in history when they went public of $153 million on day one.
+
+Ben: Boy, has venture changed as an asset class.
+
+David: I'm trying to think that fund probably would have been Sequoia Fund II or III, maybe. I bet the fund was $10–$15 million. It is probably roughly 10X the fund in one day. Pretty awesome.
+
+What was LSI? It was one of the first and was the premier ASICs company. ASIC, Application-Specific Integrated Circuit companies. What they did and what that meant was they basically made custom design chips for other companies. That's what Jensen's thinking about.
+
+The custom design chips that they would make these ASICs would be for a very, very specific function that would be integrated into other systems, like defense companies, Lockheed Martin and the like. But lots of other companies now too are coming to LSI Logic and they got their ASICs companies in saying, hey, we want to create these systems of chips. You help us design the chips to go into the systems and we'll use processors from Intel, too. It really helps democratize making end-product systems.
+
+Ben: Right. The idea with ASICs is really, if you're not saying, hey, there's going to be a general-purpose computer that needs to power that can be super flexible and people might have all kinds of applications that run on it, but more inefficient in order to get that flexibility chip. Hey, I know the exact thing that this chip will do and it will only ever do this. We can actually literally hardcode that right on the chip. The actual design of the physical chip can be for this one specific thing, so it's super efficient at this one low level thing.
+
+David: Yup. The legacy of ASICs today, still around, still use both ASICs, but the legacy is FPGAs, Field Programmable Gate Array chips that some might say are sort of a bear case for NVIDIA these days. We will get to that far, far, far down the road.
+
+Sun Microsystems was one of their biggest customers. That’s how Sun got started and made the chips for their workstations. In fact, Jensen when he shows up at LSI, Sun is just starting and coming to LSI. He gets put on the project and he basically embeds with Sun in the early days of Sun Microsystems to help them build up the chips for what would ultimately become the SPARCstation 1, Sun's first big workstation product.
+
+Over the next few years, he pretty much exclusively works with Sun while he's at LSI logic. He works directly with Andy Becktolsheim who's the founder of Sun and with Vinod Khosla. He became super well-known, and developed quite a reputation as somebody who can really take these visions for chips and these customer requirements from Sun, and turn it into reality and production.
+
+One day, right around Thanksgiving in 1992, Jensen has finally, after eight years, finished his master's degree at Stanford. Stanford is quite, quite glad that he finished before this happened. Two of Jensen's buddies who he's become close with at Sun, Chris Malachowsky and Curtis Priem, who in Jensen's own words describes them as really, really fantastic engineers—when Jensen says that, he means it—they come to Jensen and they're like, we're not super happy at Sun, the two of us. We have an idea that we want to talk to you about. Jensen's like, well, sure. Let's go meet at my favorite spot, Denny's.
+
+Ben: Really?
+
+David: The man loves Denny's. He worked at Denny's in high school. He's always going to Denny's. He orders The Super Bird, I think, is his go-to dish. He's so folksy. I love him.
+
+As they go all have dinner at Denny's, Chris and Curtis pitch him on their idea, which their idea is pretty good. It's pretty good. Tell me as a venture capitalist if you would fund this idea back then in late 1992. They see 3D graphics are really becoming a thing.
+
+Remember, this is the era of Sun, LSI Logic, all this stuff. It's also the era of Silicon Graphics right down the street. Right there in Silicon Valley, SGI. So many great things that come out of there, Jim Clark, Netscape, all this great stuff.
+
+Ben: Jurassic Park.
+
+David: Jurassic Park is about to come out. It came out in 1993. There's this huge demand for 3D graphics. The way 3D graphics are done, you need SGI workstations. You need super custom, very high-end, very expensive stuff, only something with the budget of either the military or a Jurassic Park can afford to do this, but people love it. The consumers love 3D graphics.
+
+Ben: Not to mention, where are we in the evolution of video game consoles at this point?
+
+David: We're still in the Super Nintendo days. We're not at 3D console graphics yet. That's coming very shortly. What is happening is the PC wave is really cresting right now.
+
+Ben: We're a year-and-a-half from Windows 95 coming out.
+
+David: I remember doing this, I bet you do too, or kids in 1992–1993 doing on their PCs. They're playing Wolfenstein 3D and Doom. Doom came out in 1993. These are taking the world by storm and they're made by id Software in Texas, John Carmack, and John Romero. But Carmack is doing incredible feats of engineering to get 3D graphics to run on consumer PCs. It took somebody of Carmack's caliber to make this happen and the market loved it.
+
+The idea that Chris and Curtis has, they're like, we're really great chip engineers. Jensen, you're a really great chip PM, essentially. Let's make a graphics card. Let's make a chip that can accelerate the graphics of a normal PC to enable 3D graphics like SGI is doing with professional workstations. to enable them for consumer hardware PCs. We know that people love games. This will help the entire industry take off. It sounds pretty good, right?
+
+Ben: And you're not even saying that they're going to try and make it so you can develop games on a PC. You're saying just so you can play games on a PC, right?
+
+David: Both. Mostly, you can play games on the PC, but then you're also going to have to create all the APIs, SDKs, and developer ecosystem for developers to access this new hardware on PCs, but they'll just develop on PCs. It's really about getting the hardware into consumers' hands so that they can actually play this stuff. What do you think? Sounds like a good pitch?
+
+Ben: What you're basically asking me to believe, 1990 to me, is that video games on PCs are going to be a thing that there's going to be a big economic wave around that lots of consumers are going to want to do this. They're going to want to do it on PCs instead of on Super Nintendo and dedicated systems. Maybe.
+
+David: I have this proof point of id Software, Wolfenstein, and Doom, right there. Millions of people are doing this.
+
+Ben: But still maybe, because it's not clear that video games are going to be a giant market. It could be a kid market and it could be the case that, do you really need to totally change the development environment or can there be five or six different Dooms out there, there are five or six Carmacks who are all independently geniuses and can figure out how to do all the graphics on their own? Maybe, but there's a leap of faith.
+
+David: Yeah, definitely a leap of faith. Not totally obvious, but still, I think this was pretty fundable at this moment in time. The other thing that was going on was in Silicon Valley of these peripheral companies, people building chips and cards that plug into consumers' PCs, this was in full swing. There are companies making sound cards. There are companies making networking cards. There are companies making serial port cards. God knows what.
+
+Ben: There's already an accelerated computing wave here, where people are saying, there's some reason to do something specialized off the CPU that needs its own integrated circuit, that vendors are making custom and there's a market to make custom stuff as a vendor for PCs that takes a workload off the CPU.
+
+David: Yup. The pitch is we're going to make a custom graphics card. Take a graphics workload off the CPU, specifically for gaming.
+
+Ben: Great.
+
+David: Okay. Yeah, it was pretty much a brain dead yes. But as you alluded to at the top of the show, the problem when something is a brain dead yes for a venture capitalist is that it's a brain dead yes for lots of venture capitalists. Lots, and lots, and lots of companies get funded to do this.
+
+Back to Denny's that night. NVIDIA is the first. They are the first dedicated graphics card company. They all decided, the three of them, that they're going to go in on this. Jensen goes to the CEO of LSI Logic, walks into his office, and tells him that he's going to resign. He's going to go start this company with two engineers from Sun and this is what the business plan is going to be. Do you know who the CEO of LSI Logic was?
+
+Ben: No.
+
+David: It was a man named Wilf Corrigan, who was previously the CEO of Fairchild Semiconductor.
+
+Ben: No way.
+
+David: Damn right.
+
+Ben: Don Valentine, obviously, was the biggest investor in Sequoia and was in LSI Logic. Did he know him from Fairchild?
+
+David: Yeah, they were colleagues back in the day.
+
+Ben: Okay.
+
+David: And then the biggest exit in Sequoia's history to that point in time. Wilf says, let me get this straight. He says to Jensen, you're going to go build these graphics cards, and just like you were saying there, Ben, who's going to use these and what for? He's like, well, they're going to be on PCs, they're for gaming, they're for a bunch of kids.
+
+Wilf hones in on the critical question. He's like, well, who makes PC games? Is there a developer ecosystem for this? That's kind of like, we think if we build it, they'll come. Remember, he was at Fairchild. He's felt like he knows when to make silicon for specific applications.
+
+Wilf says, all right, you'll be back, I'm going to hold your desk. But in the meantime, before you go, I'm going to call up Don. You've done good work for me, I'm going to call up Don. He calls up Don and he's like, Don, I got a kid who's going to come see you, stand by.
+
+Ben: This is a lesson for all founders and aspiring founders out there. Getting a reference from the CEO of a portfolio company is a really good way to come in with a venture capitalist already leaning toward investing, especially if you're referred to by the top performing company of all time in their portfolio. It's kind of hard for Jensen to mess up this pitch with the recommendation that he's coming in with.
+
+David: It's literally impossible because he goes to see Don. You know Don. Don sits down and he's like, so? And Jensen completely botches the pitch. He gets really nervous.
+
+Ben: At this point, I think he had a partially written business plan. He had bought a book on how to start a business and was three chapters into the book, but decided not to finish. He started writing the plan, but he didn't finish the plan. He comes into this meeting and just barfs all over Don.
+
+David: Yes, exactly. Jensen's walking out the door. He's totally dejected. Don stops him and says, well, that wasn't very good, but Wilf says to give you money. Against my best judgment, based on what you just told me, I'm going to give you money. But if you lose my money, I'll kill you. Classic Don line. It's so good.
+
+The deal happens. Sutter Hill comes in because again, at least it's all dramatized. At the end of the day, this is a hot deal.
+
+Ben: This is two episodes in a row for us with Sutter Hill.
+
+David: I know. Oh, geez, they're so good. It was a hot deal. They wanted in. This fits central casting at this point in time.
+
+Ben: They invested a million each, is that right? For a total of two?
+
+David: So $2 million total round. I don't know who invested what. I assume a million each, but $2 million total round at a $6 million post-money valuation. Remember everybody, this is the eighth most valuable company in the world right now. It started at a $6 million post money valuation.
+
+They're getting things ironed out. There's just one problem. They don't have a name for the company yet. Jensen, Chris, and Curtis, they've just been working on the business plan, but they don't have a name. They need to incorporate the company.
+
+They were saving the files that they were working on for the chip design for the first graphics chip as dot-NV, NV being short for next version. They're like, we like that. We're always working on the next version here.
+
+They start looking around in the dictionary for words that have NV in them. It's probably a very short list and they find the Latin word, invidia, which means envy. They're like, great, we'll be the envy of the industry. Invidia will drop the I at the beginning, so we start with NV. This is awesome.
+
+Ben: Of course, they picked green. Later on, they can have that marketing campaign of green with envy.
+
+David: Be careful what you wish for here, though, because, again, as we've been saying, literally, 89 other companies get funded within a couple months to go do the same thing.
+
+Ben: It's a very clever name, also the notion of vid being in there, that it's video. That's another thing that they want to do. It's the classic Rich Barton empty vessel name. There are enough things that it could mean and we're going to fill it with meaning. Because they're doing a thing here that 89 other people are also simultaneously doing.
+
+It is kind of a new frontier that they need to invent and then own thought leadership in that area. They do need to quickly build a brand, not only with consumers, but with PC manufacturers. Jensen, the way he describes it is their vision, although he doesn't like the word vision because he thinks it's exclusionary to people, so he said, our perspective is that they want to enable graphics to be a new medium to tell stories.
+
+The way that he articulates at the time why video games today are a $180-billion-a-year industry, bigger than Hollywood, bigger than music. It's the biggest entertainment medium, but at the time, he had this thesis that you really can't, through computer graphics, tell stories today. But if you could, it's really interesting because it's not pre-recorded. It can be new and different every single time you enjoy it. It's also the only medium of entertainment that can be networked. Therefore, it's the only one that can really be social and interactive.
+
+Our reason for being is to create 3D graphics as a form of artistic storytelling for the future. Everything will be in service of that. I think that's not really what they are today, necessarily. It's a piece of what they are today, but that kept them going for the first 20 years of their existence.
+
+David: And baked into that is, again, Wilf hit on—and you did too to your credit, you're a very good venture capitalist—you hit on really the key problem with this first iteration of NVIDIA, which is, they have to go evangelize to developers to like, yeah, there's id and there's Carmack out there, but not a whole lot of other PC game developers out there.
+
+There's not a whole lot of other 3D PC game developers at this time. There are 2D PC game developers, but they got to convince a whole lot of people to go learn how to do 3D game development for PCs. That's like, we're going to enable storytelling on them. To do that, they have to go write their own APIs, SDK, and development framework to develop for this new graphics chip that they come out. They have to make a whole bunch of technical design decisions that they want the industry to standardize on.
+
+Ben: Right. This is a case study of what happens when you get more clever than the rest of the industry.
+
+David: Exactly. At first, things started off really well. Remember, this is super hot. They're the first company. They're funded by Sequoia and Sutter Hill. They land a big deal with Sega to power their arcade consoles and their next-generation home console to be the 3D graphics engine of what would ultimately become the Sega Saturn. As we know from our Sony episode...
+
+Ben: Not quite the Sega Genesis.
+
+David: Not quite the Sega Genesis. The problem is, NVIDIA and Sega, they're working together, they make a bunch of these design decisions. People probably know you create 3D graphics. You use polygons, that's why people are always talking about polygons in this industry. They have to decide on a primitive for the polygon. They're like, oh, well, we'll use quadrilaterals for vertices. Anybody who knows anything about video game development now, it's like, that's not how it's done.
+
+Ben: I'm pretty sure people talk about triangles.
+
+David: Yeah. I'm pretty sure if you look at NVIDIA's amazing headquarters building today, it's made out of triangles in homage to game developers, not quadrilaterals. This becomes a pretty big problem. Things go along for a while. It's been fine for about a year. NVIDIA's leading and they got this big Sega deal.
+
+Ben: There's not a reason to need standards yet. The industry isn't complex enough yet to necessitate a whole bunch of collaboration and a set of tools that everyone standardizes on using. You're like, okay, well, we're just going to put this chip in our game console and ship the game console. We're the only people that make an SDK, we being Sega. Everyone will have to standardize on this thing anyway, so great. But obviously, the ecosystem gets much more complex much more quickly and it sure would be nice to have some kind of compatibility.
+
+David: Here's what happens. Curtis, Chris, and Jensen weren't the only people in Silicon Valley that saw that kids want to play games on PCs. With Doom, Microsoft is like, oh, that's interesting. We like selling PCs. There are all these graphics cards companies out there now that are doing this. What we do as Microsoft, we really want to encourage this in the ecosystem. We create standards.
+
+Ben: We would love it if Windows developers could be able to easily develop for all these new machines shipping with all these advanced graphics capabilities. Let's make that as easy as possible for those developers.
+
+David: Yeah. Developers want to do 3D graphics directly into Windows without any of this crufty middleware from some no-name company like NVIDIA out there. Why don't we just bake these APIs right into Windows directly for 3D graphics? We'll call it Direct3D. Of course, anybody who knows about the history of this, that becomes DirectX.
+
+Ben: DirectX made some pretty different design decisions than NVIDIA had made. Is that right?
+
+David: Yeah, so they use triangles because triangles make sense. Now NVIDIA is really up a creek. All of their Camino, the 89 other competitors out there that started later, most of them are like, sure, I'm going to jump on board to this Microsoft ecosystem. I would be dumb not to.
+
+It standardized on this completely different paradigm than NVIDIA. They've got Sega. They've got this one customer. Then in 1996, Sega was like, yeah, we're not so sure about this quadrilateral thing either.
+
+Ben: And just so that this doesn't feel arbitrary why are we talking about this, we're going to say at a super high level on 3D graphics here, rather than really going into the weeds. A triangle is the fewest vertices in a shape that you can have while still creating a two-dimensional shape. It serves as a basic building block, where, assuming you can draw enough triangles and make the triangle small enough, you can form any other shape, any other curved surface. It's the most fundamental building block that you could use to create something that is perceived as 3D.
+
+David: Yup. NVIDIA at this point, they're halfway down the road of developing the next chip that they think Sega is going to adopt for what ultimately would become the Dreamcast. NVIDIA was calling the NV2. When Sega comes back and says, we're switching horses, we're not going to do this, they're screwed.
+
+For so many reasons, everything we've discussed, there's also in the interim year-and-a-half since NVIDIA started, the price of memory dropped because, thank you, Moore's Law. NVIDIA's chips were designed to be super, super tight on memory. The memory cost about $200 in component parts to go into their chips. Their competitors have more memory that's costing them $50.
+
+Ben: That was just in that one iteration. It's interesting to note that NVIDIA, by being first and not projecting out the exponential change that would come from Moore's Law, was actually at a disadvantage. Because they didn't get a chance to watch and see where the standards were adopted, so they picked their own lane and went off in their own direction, which ended up not being what everyone else picked, which put them at a disadvantage. But second of all, everyone else's cost structure was way lower or at least everyone else could see that the cost structure was getting way lower. NVIDIA designed for a constraint that was no longer true by the time everyone else came out with their stuff.
+
+At this point, Jensen and his co-founders had to look at each other and say, okay, do we scrap everything we did? And if so, how do we not make this mistake again? How do we make sure that in future generations, we premeditate the exponential curve of Moore's Law and prices coming down and design for things that are two, three, four generations beyond what we actually have available to hardware right now?
+
+David: When all this goes down, the company has about nine months of runway left. Literally anybody else, you pull the plug. It's over. Everything in the deck is stacked against you, like your F'd. I can't imagine sitting there dreaming up a way out of this. But Jensen, God, he's such a G. He's like, no, we're not going out like this.
+
+When you hear Jensen talk today about NVIDIA's culture, he says that intellectual honesty is the cornerstone of NVIDIA's culture. This is what he's freaking talking about. He sits down with Curtis and Chris. Remember, they're engineers.
+
+They've recruited NVIDIA a hundred-plus engineers into the company at this point and sold them on this technological vision of how we're going to define the industry, we set the standards. We're not going to use some off-the-shelf stuff. It's all toast. Jensen's like, guys, this is a pipe dream. We need to throw it all out if we're going to survive.
+
+The only thing we can do is standardize on the same Microsoft Direct3D as everyone else, same architecture, and our only shot is just to compete on performance and try to become the best chip out there in this now sea of commodity chips. His co-founders don't want to do this. This is not an exciting vision for a Silicon Valley engineer.
+
+Ben: When your CEO comes to you and says that, what they're basically saying is, look, if my job was strategy and your job is execution, the strategy failed, so we just now need to literally out-engineer all of our competitors. We need to be smarter at engineering decisions, so we can be more performant at a lower price point using less energy than our competitors.
+
+Microsoft being Microsoft had all the developer attention. And because Microsoft set a standard, NVIDIA realized, look, we have no ability to uniquely get our own developers, at least at that point in the company's history. So we must just on our left, look and see all the developers are coming from Microsoft using this API, on our right is all the same consumers. We have to compete just head to head on raw engineering ability with everyone else.
+
+David: You're saying engineering ability. But remember, this is essentially a commodity at this point. Really, it's not just engineering ability. It's how fast you can ship. How fast can you design the next generation of chips? And can you ship it before everybody else? Because everybody knows what's going to be on that ship.
+
+Ben: And why is it? What fundamentally was it about graphics cards that made it a commodity?
+
+David: At this point, all the other peripherals—and we're going to get into this in a sec—there was nothing that special about it. They all did the same thing, which was take polygon-level, 3D graphics processing out of the CPU and onto this other chip on the motherboard. Just like sound cards were doing the same thing for sound, just like networking cards were doing the same thing for networking.
+
+It was just like, what's the price performance ratio of doing that? The interfaces and the programming language, that's all standardized by Microsoft. You're just a commodity hardware.
+
+Ben: What GPUs actually do or did, at least in this point in time, say, okay, the system is going to feed me in basically point clouds, like vertices that make polygons that represent like a 3D world and my job as the GPU is to, as fast as I can, in the highest resolution that I can or I suppose a standard predetermined resolution, output a 2D thing that goes on the screen?
+
+I turned 3D stuff into 2D stuff. I have to do that better than other things that I'm competing against, where basically all of us are. When you say commodity, you mean limited by Moore's Law and doing right up to the edge of what integrated circuit manufacturing techniques enable us to do.
+
+David: Yup. Everybody knows what this means. They got to ship faster than their competitors. They also got to ship faster than their competitors because they're about to go bankrupt. They draw up this plan. They're trying to thread the tightest needle possible here.
+
+They have to lay off 70% of the company, which they do. They go down to about 35 people. Everybody who's staying knows we now have to design from scratch and ship a new chip before our runway runs out, which is nine months. You can't do that on a normal chip design cycle.
+
+Ben: It takes two years, right?
+
+David: Yeah. With these fabless chip companies, the way they would design chips is they would work on the design, they would send them over to the fabless company, the fabless company would produce some prototypes, they'd send them back, they test them, they go back and forth a few times.
+
+Ben: You mean the foundry would produce some, like the TSMC, or the Samsung, or the GlobalFoundries.
+
+David: Now importantly, NVIDIA is not using TSMC at this point because they can't. TSMC only works with the best and NVIDIA is not the best. They're using secondary foundries. That process takes a long time. Then at the end of it, when you're sure you got the design right, then you do what's called a tape-out of the chip.
+
+Ben: I love this term, by the way.
+
+David: It harkens back to literally when you used to tape masks to do the photolithography on the chip back in the day, but it just means finalizing the design.
+
+Ben: But you actually do run it on some prototypes first. The foundry sends back some, hey, thanks for the designs, here's the chip, run your tests on it, and make sure everything does what you think it does. That process takes two years to get a full iteration on.
+
+David: Yup. They're like, we can't do this. Jensen's like, here's what we're going to do. I've heard about these new technologies, some new machines out there that enable emulation of chips. In our case, we're going to use it to emulate the graphics chip that we're designing. It's all in software and it works.
+
+Ben: They're startups, but they exist.
+
+David: The problem is, when you emulate it in software, it's really slow. When you play a game, when you're looking at your computer monitor or whatever, it's refreshing 30 to 60 times a second. If you're a professional gamer, you probably have a go on it, like 120 times frames per second. This emulator runs at one frame every 30 seconds. They're going to have to debug this thing in software to save this time going at one frame every 30 seconds.
+
+Ben: It's just insane.
+
+David: That's brutal.
+
+Ben: They're basically making this trade-off of, okay, if we want to ship something in nine months, we don't have time to actually have it execute on the hardware. We are going to make the trade off of our testing being mind-numbing, like running whatever our graphics tests are, where we're looking for this certain specified output. We need to plant someone in front of a screen to watch the new frame render once every 30 seconds and look again some tests to verify that the output is correct. If it is and this person does that mind numbing work, and sits there just observing, and observing, and observing, then we will go right to manufacturing without ever producing a physical prototype and ship that.
+
+David: That is exactly what they did. They had spent a million dollars just to get the emulator hardware and software to do this.
+
+Ben: I think they had generated some revenue, but it was still a third of the cash that they had in the entire bank account.
+
+David: They go down to six months until they cash out in the company. They get it done in a few months and then they call up their foundry. I don't know if they're using United or one of the other foundries in Taiwan, not TSMC. They're like, all right, we tape this thing out and send it to production. The foundries were like, you guys sure about that? They're like, yup, we're sure. Make 100,000 units.
+
+Ben: If I'm remembering right, I think NVIDIA basically was the only customer of that emulation software. That was a startup that really wasn't fully proven yet. NVIDIA was like, look, we literally have no options.
+
+David: Yeah, they were the only customer and then that company went out of business after. The chip they designed is now the advantage. This is lunacy, what they're doing. Obviously, they have to do it because their back is against the wall.
+
+The advantage of this, though, is they are now designing this chip with the same set of assumptions about what technology is available as all their competitors, but their competitors are working on those designs. They're not going to be able to get them out for 18 to 24 months. NVIDIA is going to get the same generation of design out in six months. This chip is called the RIVA 128. It's what they call it. It is a freaking beast in every sense of the word.
+
+Ben: It's big.
+
+David: It's big. It's extremely powerful relative to anything else on the market.
+
+Ben: More powerful than any customers are telling them they want.
+
+David: Yeah, way, way more powerful. But it comes with some downsides. With great power comes great responsibility. Because they built this thing in such a manner, it barely works. There are a lot of stuff wrong with it. I forget the exact number of this, but essentially, Direct3D at the time had something like 24 or 25 different ways and techniques.
+
+Ben: These are the blend modes?
+
+David: Yeah. I think that's what it was, blend modes. The RIVA only works about two-thirds. One-third of it just freaking crashes. It doesn't work.
+
+Ben: I thought even worse than that. Basically, I think NVIDIA had to launch a campaign, going around to all the different developers and being like, come on, what do you really need more than these eight for? What are you really going to do where you need to use that fancy stuff? Do us a favor. For this generation of the chip, these eight work great. You're going to love them. They're so good. Just use those.
+
+David: This is so, so great because people do it. They learn about the market. In the first iteration of NVIDIA, we're going to build all this technology. We're going to drive the market. They didn't know anything about the market. They were just making all these assumptions about what people wanted.
+
+But now, Jensen's actually going into these developers trying to convince them to do this. They all do it. Why did they do it? Because the only thing that matters is performance. Consumers are going to buy hardware and games based on the quality of the graphics. This is being discovered for the first time. People are willing to make a lot of compromises in service of performance. NVIDIA's the first one that figured this out because they have to go around and do this, and developers all get on board.
+
+Ben: To be clear, it's because the consumers are making the buying decision on what graphics card they buy.
+
+David: It's a completely interrelated system where the consumer is making all of the decisions. That's where the demand is, the consumer is deciding what hardware to buy. That's what NVIDIA's business is.
+
+Ben: Whether they're buying it as a fully built computer from the OEM or whether they're buying the card put in later themselves, they're making a decision on what graphics card goes in the computer.
+
+David: Exactly. The game developers are making decisions on what graphics cards to support and how to build their games with the assumption of what's my target market of consumers? Who do I think will this game run on? You need to have at least an X-level performance rig in order to run my game in its fullest form.
+
+Ben: The developers are premeditating what graphics cards are going to be out in the market when their games launch. They're saying it's going to be the most performant one at the right price point, so whatever the mass market is, we have to target that. If you’re telling us that we're going to test it and it turns out that yours is the best performance per price, performance per watt, or whatever, if it's the most efficient card, then people are going to buy that one, so we must target that card.
+
+David: And they're going to buy my game. I remember that this is a few years later. This is a trope that happened. There was a game called Crysis. Do you remember this?
+
+Ben: Oh, yeah. What's the relationship between Crysis and Far Cry?
+
+David: Far Cry was the first game, the Crysis Engine, and then Crysis also. It was super convoluted. Basically, my perception of this thing was when Far Cry came out—this was mid-2000s—the graphics were unbelievable. If you had a rig powerful enough to run it, just unbelievable. The game itself was total crap. I don't think I ever played more than 10 minutes of it.
+
+Ben: I'm pretty sure if your computer didn't support it, there were all these videos that people would record of building a tower of a thousand gasoline barrels and then shooting it. Because it was too complex for their graphics card to handle, their computer would just freeze. That was the failure mode of Far Cry with non-performant chips.
+
+David: This is how the hardcore gaming industry evolves. Far Cry sold so much software and so much hardware just because people wanted to attempt to experience that level of graphics. That's what the developers are starting to figure out. They're like, all right, well, you can ship this thing. We'll use only those eight blend modes whatever it takes because graphical performance is the most important thing.
+
+It works. They sell one million units of the RIVA 128 within four months. I should have looked at what the MSRP was, but that is a lot of revenue.
+
+Ben: Yeah, no kidding. What year was this?
+
+David: This was 1997.
+
+Ben: It's an interesting era. The Internet is a thing. We still have a few more years until the dot-com bubble crashes. PlayStation 1 is out, but PS2 is not out yet, I think.
+
+David: With that, the gaming market bifurcated into the console market, which was standardized, and you knew it was all going to work. Then, the hardcore PC gaming market, which just had so much revenue potential even though it was smaller in terms of numbers because people are willing to spend so much money on this stuff.
+
+At the end of this, NVIDIA has now figured out these dynamics of the PC gaming market, and they now have a process within the company to design and ship each next generation of their hardware in a six-month timeline while the rest of the industry is on an 18–24-month timeline.
+
+Ben: Necessity is the mother of invention.
+
+David: To say this is huge is the understatement of the century. It's huge for this market, but nobody even saw this at the time. Jensen didn't see this and nobody saw this.
+
+They're now shipping relatively doubling essentially the performance in each generation with their hardware and they're shipping it every six months. You think about Moore's Law. Moore's Law was that the number of transistors on the chip equating to the compute power available at a given price point to the market would double every 18–24 months. NVIDIA is now on a cycle starting in 1997–1998 where they are doubling the performance that they are delivering at a given price point to the market every six months.
+
+Ben: It's fascinating. They're also competing on a different vector than the CPU manufacturers. It's amazing. We've made it an hour into the episode and haven't talked about this yet, but the magic of GPUs is that they're very, very parallel. CPUs, for anyone who's taken a low-level computing class, you know that every time the clock ticks, an instruction can run and things move through the long chain of operations that can happen within the CPU. It's advancing things serially through the processor.
+
+David: It's serial processing.
+
+Ben: It can read from a register or can add two things together, but it's all happening serially.
+
+David: It's like the I Love Lucy famous one where the chocolates are coming down the factory pipeline and you had the CPUs to wrap each individual chocolate one and then the next one.
+
+Ben: Yes, exactly. With graphics processing, the magic of it is that it's super parallelizable. There are all these things that need to be outputted to the screen that do not depend on each other. You can do them independently so the vector that they're competing on is really like, oh, we can—and that would be years before they would really get to this—add more and more cores or find more ways to execute more instructions simultaneously to parallelize these tasks.
+
+I think at the time, people thought really the only big use case for parallelization is graphics. Let's put a pin in that for now, but it's worth knowing that the thing that they're doing is figuring out how to process more things in parallel faster.
+
+David: Yes. Graphics cards, like NVIDIA is making at this point in time, are really good at in-parallel lighting the pixels on a screen 30, 60, or 120 times a second with the images that are being fed to them from the game or the graphics program which is living all in the CPU land. You're a game developer and you develop in Microsoft Direct3D becomes DirectX or OpenGL, the open-source competitor to this. All that logic is really happening in the CPU realm.
+
+What that means is if you think back to games from this time, think of console games—PlayStation 1, even PlayStation 2, N64. You look at the graphics in those games or PC games from the time too, they're all the same. All the lighting is all pre-done. When you're a game developer, you set the scene. You'd never see a character running around carrying a torch and that torch impacting the rest of the environment. It's all set in advance. No intelligence is happening at the GPU level with the screen. It's just lighting up the pixels.
+
+Ben: Basically, in order to make it easy for developers, the software development kit is written at such a high level that you don't really get enough control to make your game stylistically different. You just get to lay out the items on the screen.
+
+David: It's all the same and flat. Maybe you can program that hard code to be like, oh, time of day might change and that might change the way things look. But you're hard coding what they look like. No computation is happening. If you're playing a game today, even in the most basic mobile game or whatever, you're seeing dynamic lighting and shading—which we'll get into in a sec—all over the place.
+
+GPUs are a really important commodity, but they're a commodity. There are not a lot of smarts happening here, no programming. But NVIDIA has figured this out. They can now ship on a six-month time cycle. They're starting to really take huge market share. Now, a lot of people start paying attention to them in a good way. TSMC who wouldn't even return Jensen's calls back in the day—there's this amazing story. Did you watch the TSMC 30th Anniversary celebration?
+
+Ben: I did.
+
+David: This is so good. It's three hours on YouTube.
+
+Ben: This is worth a brief aside. This is how much Morris Chang from TSMC has. He gets the CEOs on the stage of NVIDIA, ARM, ASML, Qualcomm, and Broadcom?
+
+David: Yup. I don't think Lisa from AMD was there.
+
+Ben: No. It's basically everyone but AMD, the pillars of the TSMC ecosystem. Morris is playing interviewer. It's very entertaining to watch.
+
+David: It's like a celebration of Morris and TSMC. It's amazing. In the section with Jensen, they tell the story of how NVIDIA—at this point, it's got to be TSMC's biggest customer, they've been tied at the hip forever—all came to be. After the RIVA 128 hits and has become a big success, Jensen writes a physical letter and addresses it to Morris Chang in Taiwan.
+
+Ben: Because he can't get in touch through any of the salespeople.
+
+David: Exactly. They've all just been ignoring him, as well they should because they were a left-for-dead startup in a sea of startups. The letter gets to Morris, he opens it, and he reads it in Taiwan. He does the most Morris Chang thing possible. He calls up Jensen on the phone right there. The phone rings as they tell the story in the NVIDIA office. This is in the middle of their trying to mad scramble as a startup to ship these RIVA 128s that are coming in. They're testing them all by hand in the office because none of this stuff was fresh off the line. It's not been tested. It's chaos.
+
+Jensen picks up the phone. He's like, yeah, who's this? Morris is like, hello, this is Morris Chang at TSMC. I got your letter. Morris says that there's silence on the other end for a couple of seconds, and then he hears Jensen yelling, everybody shut up. Morris Chang is on the phone. Amazing.
+
+Ben: That's how TSMC became the manufacturer of NVIDIA chips.
+
+David: Yup. The next year, the two companies signed a huge multi-year deal for TSMC to become the primary foundry for NVIDIA and still are today. Jensen and Morris are super close. It's a landmark deal for both companies.
+
+With now an actually really good foundry as their partner and this super unique chip development process, NVIDIA just keeps accelerating. In 1999, they rebrand their products. They use the NV1 first and then the RIVA 128.
+
+They actually ran a little contest of what they should name the products and the winning name is Geometry Force which they shorten to GeForce which anybody who buys a graphics card knows. The NVIDIA GeForce is still the brand name they use for their gaming cards today and is probably one of the most respected brands in the gaming ecosystem. It's because this card that they ship, the first GeForce in 1999—it's the GeForce 256—is so powerful. It has 5X better graphics performance than anything else on the market.
+
+Ben: They call this the first GPU. Don't they say we're inventing the GPU?
+
+David: They call it a GPU. Before this, the term GPU didn't exist. It was these were graphics cards or graphics chips.
+
+Ben: I think Sony had used it for the PlayStation, but no one's marketing this idea.
+
+David: They market this as the graphical processing unit. On the one hand, that's marketing bravado. On the other hand, that is a very loaded statement to make. Why so? What do Jensen and NVIDIA mean by this?
+
+With Intel, you think chips. They're almost like a biotech company today, one of the big pharma companies. Or put another way, was another version of the Microsoft embrace, extend, extinguish thing. They would see there are all these peripherals, sound cards, networking cards, graphics cards, and all the stuff we've talked about. They would let all these flowers bloom and be like, oh, yeah, just plug into the PCI slots on our motherboards. No big deal. We're an open ecosystem. We want everybody to flourish. Then, they would see which of these peripherals got consumer traction, and then they would just turn them into a component in the motherboard.
+
+Ben: And thus began the wave of being able to buy a PC with an Intel motherboard and integrated graphics.
+
+David: Before that, integrated sound and integrated networking. It was so fun doing this research. Remember the company Creative and the Sound Blaster cards?
+
+Ben: Oh, yeah.
+
+David: I remember buying tons of that stuff. Then at a certain point, you stopped buying Sound Blaster cards.
+
+Ben: You're like, oh, the motherboard does 90% of what I needed to do. Why would I spend extra money on a separate thing?
+
+David: Exactly. Intel just sits back and watches all this happening. They integrate a game over for the startups.
+
+Ben: There were reasons for specialized stuff. I remember buying a special network card because the integrated networking capability of the motherboard on my Mac 8500 or something wasn't as fast as if you bought a dedicated PCI card that could be a faster networking card. Graphics cards would become that same thing where the integrated graphics for most people was good enough unless you were a gamer, in which case, you'd go buy your own graphics card or you'd buy it directly from the OEM when they were making the computer and shipping it to you.
+
+David: But wait a generation or two, even if you have the most demanding performance for home networking, you're not buying that separate networking card.
+
+Ben: These things are dead-end businesses.
+
+David: And there's no reason why graphics cards wouldn't be the same. Jensen and Intel coming out and being like, we're a graphical processing unit (GPU) is a big middle finger to Intel and this whole CPU-dominant world.
+
+Ben: It really wasn't true yet. It wasn't a processing unit in the same way that a CPU is a processing unit where people could write software for it in a way that created a meaningfully different experience for people using the software.
+
+David: Yup. This is where Jensen is just such a master strategist and NVIDIA is so great. This whole orchestration of a bunch of things all hit over the next couple of years. First, NVIDIA goes public. They've now shipped, the RIVA 128 was a huge hit, and this new GeForce 256 is flying off the shelves. They go public at the beginning of 1999 at a $600 million market cap, a 100X return from the $6 million post-money valuation on the Sequoia and Sutter Hill round. That gets them some more capital.
+
+Behind the scenes, they're working and are in talks with Microsoft. Microsoft's got a secret project that they're working on at this time, the Xbox, which we talked about a lot on the Sony episode and so many times on the show. Microsoft comes to NVIDIA. They're like, we want you to be a key supplier of the GPU for the Xbox.
+
+They do a huge $500 million a year deal for NVIDIA to supply the graphics for the Xbox with a $200 million advance. The chip that they use is a modified version of this incredible new chip that NVIDIA is working on.
+
+Jensen sounds like Steve Jobs talking about this. The GeForce 3, which introduces, for the first time, programmable shaders and lighting on the GPU. Everything we just talked about. The GPU massively parallel can light all these pixels, but it's essentially just taking instructions that are pre-hardcoded and baked in on what the lighting is going to look like. Now, you can program for these GPUs and you can make dynamic lighting in games and 3D graphics that are calculated.
+
+Ben: This is game-changing. The way to think about it is those "GPUs" were fixed-function graphics accelerators. They would be able to map textures onto a set of polygons, but you couldn't do the thing that you're talking about, David, custom lighting, a lot of that sort of stuff to actually program at the GPU level, what is happening.
+
+This is like, of course, it's cool because it's a wave of new consumer experiences that can happen, because every game developer can stylistically put their own stamp on games. But it's a totally different metaphor for the computer architecture, where suddenly, you can program a GPU. I guess that's why they're calling it a GPU. This is different than a graphics card.
+
+David: And NVIDIA develops in conjunction with this. They call it CG. Literally, they extend the C programming language with graphics, libraries, and capabilities to directly program graphics, lighting, and shaders for the GPU. This makes that marketing, oh, this GeForce 256, it's a GPU.
+
+Now it's real. This is a graphical processing unit that is intelligent, that is maybe not every bit as important as the CPU yet, but this is the stake in the ground of, this is no sound card. This is not going to get commoditized.
+
+Ben: Do you know if this was the GeForce FX or if the GeForce FX was a similar version of this that was available to PC?
+
+David: That's a good question. The GeForce 3 was the PC version of this.
+
+Ben: Okay. This move to programmable shaders was a bet to the company move. It was Jensen's answer to, how do we get out of this commodity business and do something unique and different. I'm pretty sure they were months away from cashing out again by pulling this move because of how aggressively they had to staff this very new type of product that we're inventing.
+
+David: Yeah. Back to that original quixotic vision for the company of we're going to create an industry, we're going to create the APIs, the SDK, the interface with it, we're going to do all this, now they're doing it. They're doing it with Microsoft this time, instead of against Microsoft, so an A+ move there. The amount of capital investment that went into this was enormous. At this point, Intel is like, we might have a problem here.
+
+Ben: Right. It's going to be more difficult than we thought to just take whatever these people are doing and integrate it directly into our motherboards.
+
+David: Yup. Irony of ironies, Jensen presses this even further. He does a big partnership with AMD.
+
+Ben: It's worth knowing here when you're saying AMD because people probably know AMD and NVIDIA are big competitors today in the GPU world.
+
+David: Not yet.
+
+Ben: Right. AMD primarily made CPUs at this point. They made processors and competed with Intel. They hadn't yet bought ATI, which is where the Radeon business comes from. That's all the graphics stuff that they do today.
+
+David: Yeah, ATI at this point was the number two competitor to NVIDIA. Actually an amazing story, too, was a Canadian company started in the 80s and pivoted into graphics cards. I feel like there's a lesson in here. We can talk about this in the playbook.
+
+When all the VCs funded these 90 Silicon Valley startups to go make 3D graphics cards, the only two surviving ones were NVIDIA, which went through this hellish journey, and then these Canadian guys that were totally out of the ecosystem and did it in a more bootstrapped way and evolved into this space.
+
+Ben: Jensen has a great quote about this. He's giving this lecture at Stanford years later. He says, "When technology moves this fast, if you're not reinventing yourself, you're just slowly dying." You're slowly dying, unfortunately, at the rate of Moore's law, which is the fastest of any rate that we know.
+
+It's so clarifying of how he thinks about why NVIDIA needed to do these three complete transformations of the company—bet it all, risk it all—because if you're not, you're one of those 89 companies.
+
+David: Exactly. Intel's like, holy crap. We might have a problem here. This is not a problem for Intel.
+
+Ben: It just is a thing they're going to have to deal with, instead of it being part of their extinguish strategy.
+
+David: Intel is used to at this point just like Microsoft at this point. Oh, sure. You want to go make WordPerfect, we'll let you do that. We'll see these great applications and then we'll go make our own. That's what Intel's doing. Now this is the first example of Intel's going to have some trouble doing this on their own.
+
+They actually, at first, come out with their own dedicated Intel Graphics—GPUs, graphics cards—competing as separate cards. I don't know that Intel has ever done that. I'm maybe speaking out of turn here, but as far as I know, this is not a common strategy for Intel. It's usually integrated into the motherboard and the CPU.
+
+They come out with their own external cards right around this time, 1999, to directly compete and they suck. These are some of the worst reviewed graphics cards in history.
+
+Ben: Talk about not your core competency.
+
+David: Not your core competency.
+
+Ben: And it really illustrates how different NVIDIA's approach was to what graphics cards had been before, and building programmable shaders, and creating CG, which was a little bit of an early strategy and something they would later do with CUDA. But really understanding that like, oh, we can differentiate our hardware not only with interesting hardware features but by building software on top that only works with our hardware, but makes it really great for developers to develop for our thing.
+
+David: Intel does make a big push and this actually ends up becoming a great strategy for them into integrated graphics. They do try and integrate this, but it's never good enough for the high-end. It's only good enough if you don't care about graphical applications for laptops and the like. And that's great.
+
+That's a big market for them for a long time, especially leading into mobile, although Intel and mobile is a story for another day. But for the hard core market, and that's making it sound too small, for the market of anybody who cares about graphical performance and quality, which is not just gaming at this point. It's 3D modeling, it's architecture. It has lots and lots of high-performance graphical computing applications.
+
+It's this dynamic and it sets up just like Moore's law. Whatever the current maximum is, it's not enough. It's never enough. You always want more. As good as graphics are today, it'll never be good enough.
+
+Ten years from now, game graphics will make today's graphics look silly. We'll all be in the metaverse or the omniverse if NVIDIA has their way, but it still won't be good enough. It's Moore's Law. You always want as much performance as possible.
+
+Ben: Yup. All right, David, it's time for you to tell us about one of our favorite companies.
+
+David: Indeed, it is. It is time for the next iteration of our insurance 101, brought to you by our amazing friends at Vouch. Today, we are talking about directors and officers' insurance. Last time we talked about E&O, today we're talking about D&O. This is one that Ben and I can speak to very personally.
+
+Ben: I have been insured under D&O many times.
+
+David: Me too.
+
+Ben: And usually the process sucks.
+
+David: The non-Vouch process does suck. If you've ever been on the board of a company, you know what we're talking about here. If you don't know what we're talking about, literally, I can't stress this enough. You absolutely need to have this in your company.
+
+Ben: In fact, if you get venture funded, most venture firms will tell you, we cannot wire unless you promise to get D&O Insurance within 60 days or something of that term sheet.
+
+David: Yup. A condition of closing the round from any credible venture firm is always going to be, you must have this in place. If you are running a company, you are an officer of a company, a board director of a company, and you do not have this in place, like literally just stop right now, pause this, you'll be here, go to vouch.us/acquired. Click the link in the show notes. Get it, I'm serious, right now. You do not want to not have this.
+
+What is D&O? Why do you need it so badly? This is insurance that protects the directors and officers of the company, personally, from liability arising from any lawsuits against the company. If the company gets sued, in many cases, you see this all the time, the plaintiffs will name the company as the defendant, but also the CEO, the individual members of the board, maybe officers of the company.
+
+This insurance protects you from the personal liability arising from that. It's bad enough if your company gets sued, but the worst case scenario is the company goes bankrupt. If you are named as a defendant, all of your personal assets are on the line, so you absolutely need this.
+
+You may be thinking, isn't this the whole point of a company, or an LLC, or whatever your structure is to limit your liability personally from the company? Yes, but there are plenty of cases where the veil of the corporation can be pierced and you can be personally liable.
+
+Say you're a VC board member of a company. Somehow, you're not even trying to do anything nefarious. You get some information from a pitch deck of a competitor to that company. Accidentally, you're not thinking about it or whatever. You disclose some of that information to the company or on the board of, the competitor finds out, they can sue you personally for that and the company. You are on the hook. So step one, get this insurance in place no matter what to protect yourself.
+
+But part of the reason we love Vouch so much here at Acquired is not only do they make it way, way, way easier than in the past to get this in place, it's specifically designed for startups and tech companies. Vouch is D&O Insurance. It covers a couple other really relevant items that most traditional legacy players do not.
+
+One is cap table disputes. This is super important. Say there's a falling out with co-founders or amongst the company in the venture capitalists, who has what shares, who invested, et cetera. You've got personal lawsuits flying about all over the place, Vouch will protect against that.
+
+The second is intellectual property protection, which is super common—patent infringement, trademarks, copyright. If you get named personally as a defendant, Vouch will protect against that whether you're bootstrap, seed stage, growth, or public. If you're public, my God, I hope you already have this in place or you are grossly negligent.
+
+Ben: Do you know what public company that we have covered on Acquired at length does not have D&O Insurance philosophically?
+
+David: I believe that is Berkshire Hathaway.
+
+Ben: Yes. Warren's perspective is we all should have a whole lot of skin in this game. That is not the vast majority of people's perspective.
+
+David: And that is not one that I personally think is worth taking, but I get where he's going with it. Unless you're Warren Buffett, but even if you are, for God's sakes, Warren, protect your family.
+
+Ben: Warren, go to vouch.us/acquired and get yourself some D&O Insurance. My God.
+
+David: It takes 10 minutes. So great. Vouch is the best, vouch.us/acquired. Everybody, if you use that link, you will get 5% off your coverage. They're the best. We love them. Thank you, Vouch.
+
+Ben: Thanks, Vouch.
+
+Okay, David. Xbox comes out, NVIDIA has a card in there that is the GPU of the Xbox that has programmable shaders. Rather than literally just spitting out triangles to put on screen, they actually are running these little programs in shaders. It's super cool. What happens after that?
+
+David: Basically, the company goes supernova in a good way at this point in time. The fiscal year then ends January 31st, 1999. This is right before they go public or right as they go public. They did $158 million in revenue.
+
+The next year, the fiscal year ended January 31st, 2000. The calendar year in 1999, they did $375 million in revenue, more than double that year. The next year, they do $735 million in revenue. The year after that, which is basically the calendar year 2001, the year the Xbox comes out, they do just about $1.4 billion dollars in revenue.
+
+Ben: Which makes them the fastest semiconductor ever to reach a billion in revenue and gets them added to the S&P 500.
+
+David: Indeed. The company's essentially ninth year of existence. They're already doing over a billion dollars a year in revenue.
+
+Ben: Throughout the company's history, they basically have these 6- to 10-year epochs. During those, they have a meteoric rise when they do something contrarian that's off the rest of the industry. Then it starts to taper and they need to figure out how to reinvent themselves again.
+
+We saw it for the first time before the competitors come in. Then the competitors come in and then we see it again with them figuring out we got to do the emulated version of letting our engineers design the chips and lay out the chips so we can be faster than everyone. Then everyone catches up and they have to do it again with programmable shaders, launching those to the industry, and then they have these few amazing years.
+
+After that, there is kind of a plateau again. You can see it in their revenue, they did obviously close to $2 billion as we moved through 2001. They stayed reasonably flat for a few years after that. I think they eventually did $2.8 billion in 2005, but it was barely profitable. They never lost money, but net income for each of those years was only a couple of hundred million or less.
+
+It's not like they're this super free, cash flow positive company. They're not adding to their cash pile in a meaningful way. You can start to see competitors figure out programmable shaders, too.
+
+David: Yup, ATI, of course. Then in 2005, I think it was AMD...
+
+Ben: That's when they start shopping around. 2006 is when the transaction actually happens.
+
+David: They buy ATI. Of course, now, AMD is the main competitor to NVIDIA. We're going to tell those stories in the next episode, but basically, a little teaser on what's going on here, they kind of take their eye off the ball in the gaming market. Maybe that's too harsh. I don't know what Jensen would say about that.
+
+Right around this time, something ultimately becomes pretty amazing that happens, which is they've achieved the dream at NVIDIA. They've created a programmable GPU. It is truly a GPU. It rivals the CPU. This is the model they have driven forth.
+
+This new industry of computer graphics enabled a whole generation of storytellers to program their GPUs and tell stories. A whole new class of users and developers starts to tinker around with these GPUs. Jensen likes to tell a whole story that's probably apocryphal, but we'll repeat it here as a little teaser for next time.
+
+Right around the early 2000s, a quantum chemistry researcher at Stanford calls up Jensen. He's like, I need to thank you because I do this work in my lab on the supercomputers that we have at Stanford. I write these models for the molecules that I'm researching. It takes a couple of weeks to finish the computation on these models.
+
+My son, who's a gamer, told me that I might want to try going over to Fry's—the local electronics store—and buy a bunch of your GeForce cards. So I did and that I should try porting my models into CG, into your graphics computer language and just see what happens. I did it and my computation finished in a couple hours.
+
+I waited a couple weeks for the supercomputer here at Stanford to finish. I checked the results and they were identical. So I just want to thank you, Jensen, for making my life's work achievable in my lifetime. For sure, it's something that Jensen made up. Maybe did, maybe didn't.
+
+Ben: He's probably cobbled together from a few different people's experiences.
+
+David: Probably. It's a composite, but every word of it is true in spirit.
+
+Ben: Yes, there is a whole industry called scientific computing or a whole segment that NVIDIA would be able to address in the future. They need a whole lot of tools to be built for them to be able to really use GPUs for all those purposes and more with machine learning and everything else. But right now, yes, you are buying off-the-shelf GeForces, here in this mid-2000s era and trying your best to sort of hack them together to do your super parallel processing task that is not specifically building a cool video game.
+
+What's interesting is the industry perception around this time was that NVIDIA had started to focus on this high-performance computing segment and that they were starting to take their eye off the ball in gaming. People were starting to think like, oh, maybe ATI is actually more interesting as a gaming-specific graphics card maker at this point.
+
+You mentioned this AMD-ATI deal. We all think of the AMD Radeon at this point. You don't think about the ATI Radeon, which I think they retire the ATI brand in 2009. But AMD's first choice was actually NVIDIA. AMD tried to buy NVIDIA to make that their graphics line. It was possible because it's not like the stock was blowing up at this point in time. It had a few years of reasonable stagnation before we got into late 2006–2007.
+
+Certainly, people didn't see the machine learning market. People didn't really see the scientific computing market. It was like, hey, maybe this company needs some guidance from a smart company like us, AMD. They make the offer and there's the cover story on Forbes. We'll put in the show notes, but there's this article that comes down called Shoot to Kill.
+
+Jensen, in this merger acquisition talk with AMD, insisted that he be the CEO of the combined company. That is the thing that blew up the deal, and instead AMD went and bought ATI, and the rest is history.
+
+David: Oh man. That is such a good ‘what would have happened otherwise.’ We use that to transition into analysis for this one.
+
+Ben: Yeah, let's do it. I thought it'd be fun to do narratives. Let's take it from this point in time. The AMD-ATI deal has just happened. We're looking forward, it's 2006. What's the bear and bull case for the company?
+
+I thought an interesting data point to ground this discussion would be that, if we look at the gross margins today for NVIDIA, which we will talk on our whole next episode about everything they do that's so insanely differentiated, they sell their GPUs at a hardware business with a 66% gross margin. Back in 2004, that gross margin was only 29% that they were able to command as a premium on their cards.
+
+You can see, all of their economic potential was being competed away and they weren't doing anything to differentiate in a way to get any sort of pricing power. You make that 29%, then you need to use that to pay all your overhead, fixed costs, your engineers, develop the next product, and pour it into R&D. Sure, they had a few great years of doubling in revenue after going public, but it's not looking great right now in 2006.
+
+David: Yes, and there's also another reason why their gross margins are so low in those years following 2001. They made this deal with Microsoft to power the Xbox. And it was absolutely the right strategic decision to power the Xbox, to get Microsoft's support in creating CG for programmable shaders, and protect themselves from Intel. But if you're going to deal with Microsoft, they're going to extract their pound of flesh.
+
+You'll note, there are three game consoles in the history of game consoles that NVIDIA has powered. The original Xbox, the PlayStation 3 which we'll talk about next time, and the Nintendo Switch. They have not done any others. People are always asking Jensen about this one.
+
+He's diplomatic about this because it's a crappy gross margin business. There's a $500 million a year revenue deal with Microsoft. $500 million a year when their whole company revenue is a billion. Is $500 million a year a very low gross margin revenue?
+
+Ben: Yeah. I think the way that he talks about this opportunity in the talk that I watched him, give it names. But he says, people always asked me, they come to me and say, Jensen, why aren't you making this great game console a GPU? What a waste? Why wouldn't you do that?
+
+He always talks about it like, there are a lot of things we could spend our resources doing. If I don't think that we can do anything really unique and special and really change the world, then we have better things to spend our resources on. That is kind of Jensen speak for like, no, there are crap margins in that, I'm not doing that.
+
+He is right that given a finite amount of resources, you have to allocate your capital and your resources in the most optimal, both short-term cash flowing way, but also a long term strategic way. It seems from their analysis, especially recently with game consoles, sure, we might be able to make some low margin revenue on it, but it's not strategic for us long-term to do that.
+
+David: It's probably, at this point in time, a little too much of an exaggeration to say that they're out of the fire and into the frying pan, having solved their Intel existential strategic challenge and ending up now at odds with Microsoft. That's too much, but there's a lot of truth to that.
+
+If you're looking at this stock in those years, especially as revenue starts to flatten, and a big part of that is coming out of towards the end of the Xbox generation of consoles leading into the Xbox 360, which of course NVIDIA does not power, that's a lot of gaming top line revenue going away. Meanwhile, they're spending tons of resources investing in this new high power computing segment for these researchers. I hear a little bit like, okay, Jensen, do you really know what you're doing here?
+
+Ben: And in 2006, Intel launched or announced this project, Larrabee, where they're going to be a full-fledged GPU maker. This is a totally second foray of Intel's really into this.
+
+You're like, okay, you've had to be this commodity, where you're living on Intel's motherboard. Customers are only choosing to buy your product when the integrated card isn't good enough for them. The person that makes the integrated card is now announced they're going to be a real honest-to-goodness GPU maker. Are you betting the farm on scientific computing?
+
+David: How big is that market?
+
+Ben: The answer is yes. That is also the bull case. It turns out, scientific computing would be so much more than scientific computing. The acceleration of all the other things in our computing world that has been very advantageous to become parallelizable. I will leave it there, so I don't have too many spoilers. But that is 100% the bull case and 100% of what happened.
+
+David: Yeah, it's interesting. We're working on an episode two with Hamilton Helmer and his colleague, Chenyi, at Strategy Capital about power.
+
+Ben: Specifically with platforms on how to apply power to platform businesses.
+
+David: It probably won't be out yet when this episode comes out, but it'll be coming out shortly thereafter. They make the point and it's a very, very valid one that when you climb the mountain as a founder and a company of finding product/market fit, it's very different than climbing the mountain of then having to go develop power. It's a whole second journey that you have to go on.
+
+Ben: It's a whole second invention. At this point, NVIDIA had definitely found product/market fit, but had not yet found their source of power.
+
+David: If you're looking at this company at this moment in time, especially as revenues flattening, coming off the Xbox contract, OPEX is going way up investing in this sort of speculative new area, I can totally see looking at this and being like, wow, this is yet another Silicon Valley startup that had immense product market fit, top line revenue soared. But now we're coming to the end of that and there's not a lot of power as defined by sustainable economic profit, operating cash flow coming out of this thing.
+
+Ben: As we talk about power here, what power do they have? For listeners who are newer, this is really the, what is it that enables the business to have persistent differential returns in a sustainable way, be more profitable than their closest competitor? They really didn't have power.
+
+I'm trying to think which of the seven powers can we make the best case that they did have. It's not switching costs. Switching costs are crazy easy.
+
+David: Switching costs is interesting. I think they were trying really hard to develop it. They did a really good job. They made CG in collaboration with Microsoft. CG works on NVIDIA products, but it's not like CUDA today to flash forward to next time.
+
+Ben: Yeah. They had the inkling of how they could get power, but it was not yet implemented.
+
+David: And Microsoft didn't have a lot of interest in helping NVIDIA create huge switching costs there.
+
+Ben: Right, because Microsoft wants to play Switzerland. Like, hey, anyone that is an application developer for Windows should be able to use whatever hardware is on any PC in a really great way, so we want to commoditize all of our suppliers.
+
+David: Maybe an attempted switching cost that was not fully realized. I think they probably thought and did (for a while) have process power in this six-month shipping cycle that none of their competitors can match for a while. But certainly the delta of NVIDIA's shipping cycles versus competitors compressed over time.
+
+Ben: Okay, playbook. I have one big one that we have not discussed. We sprinkle in lots of playbook themes, but there's one to me that I want to call out and draw through line to something that's happening with NVIDIA today. That is simulation.
+
+There's a thing that we're going to talk about a lot in the next episode, which is totally changing the world as we know it, which is things that we used to have to do physically we now do in simulation.
+
+An obvious example of this is, Boeing doesn't take every part and throw it into a wind tunnel. Maybe Boeing does, but the zillion new space startups certainly don't do that. They simulate the atmospheric effects on stuff. It happens way faster and it lowers your iteration time.
+
+Another one is drug discovery. You look at how fast we came up with Coronavirus vaccines. Simulation is an absolute miracle. Everything in our world is being compressed ten times, a hundred times faster, because we're able to simulate it rather than needing to do it in the real world.
+
+The interesting thing is a lot of that is actually powered by a lot of the machine learning advances that NVIDIA is doing in today's world with cool things that you can do on GPUs. But the reason I'm talking about it in this episode is that DNA comes from the fact that in order to survive when they had nine months left, the way that they saved themselves was with simulation. It became very clear to the company very early on, the benefits of being able to simulate something rather than having to do it in the real world.
+
+David: Similarly, a playbook theme I wanted to highlight that we have not talked about explicitly yet is just the power of democratizing tools for developers. Jensen really saw this back in his AMD days before going to LSI Logic. The ability for NVIDIA to use a software emulator to design their chips and then, of course, the massive, massive strides that the EDA industry has made since then.
+
+NVIDIA itself, we haven't really talked about it as much, but Jensen, Chris, and Curtis's original vision did come true. They created a new artistic platform for artists to tell their stories. Without this industry and all the hardware and software tools that went into creating it, you would have to be John Carmack to tell a story in this medium.
+
+There are very, very few John Carmacks out there in terms of being gifted enough developers, and surrounded by storytellers, too, and being a great storyteller himself to be an artist. NVIDIA talks about this now in their marketing materials to be Da Vinci and Einstein together in one person.
+
+Ben: Yeah, it reminds me of the people that do like the crazy cool art in Microsoft Excel by painting each of the cells a different color. You had to be that type of person to be a game developer in Carmack's era because it was esoteric as hell to be able to actually figure out how to make this hardware do what you want.
+
+David: Another big one I want to highlight, I just keep thinking back to the original time when NVIDIA was funded. I wonder if they're really honest with themselves. What would Sequoia and Don Valentine think about that? They made the wrong venture bet.
+
+In a market like that, we see it all the time. Look at Web 3.0 right now. If there's a team coming out of Solana and FTX or let's make up an imaginary example, making some new vision for a class of applications in Web 3.0, they're going to get term sheets from everybody and then there's going to be a million copycats the next day.
+
+Ben: It is the beauty of proliferation and then consolidation. Buffett has, I think it's in a 2000 Fortune article that he wrote—it's weird that I know that, but I think that's right—in an op-ed about how there were, whatever it was, 70 car companies before we narrowed it all the way down to Ford, GM, and Chrysler.
+
+The airlines were sort of the same way. There's this proliferation, there's no one who can really differentiate, no one can build any power, and so you only have a few survivors left. In general, they compete on pretty low margins when there are only a few left. Their defensibility comes from their scale.
+
+I think, open question, if that's sort of how the graphics market necessarily matured. But you're absolutely right to self-reflect on the time when Sequoia and Sutter Hill invested to say, would you make that type of bet again? You backed one of the two winning horses out of 90. Should you do that and just say, we're betting on amazing founders?
+
+David: This is the nuance. I think what is so cool and part of the fun of the art and the science of what we do, the company they backed was wrong. I think a lot of the GPs at Sequoia and certainly Mark Stevens, who was one of my professors at GSB, who was on the board for Sequoia and still on the board, have held their shares personally to this day. That's one of the best venture investment returns of all time, full stop period.
+
+Ben: Anything going from a $6 million valuation to the eighth largest company in the world, definitionally, has to be one of the best of all time.
+
+David: Right. They were wrong, intellectually, and yet they were right. Why were they right? They were right because, frankly, of Jensen.
+
+Ben: It's a reasonable enough market. The question is, what are you better off doing what they did and investing at the proliferation phase on someone you believe is going to figure it out and have a good shot at being one of the winners? Or should you wait until consolidation and just pay that much higher price in order to back one of the ones that are already running away with the market?
+
+David: And back then in the day, there was no option.
+
+Ben: There were no stages of venture capital. There was, you raise your venture capital and then hopefully you're profitable enough to go public.
+
+David: They did raise some more money in between that initial $2 million and going public. I think they raised 20 million in total, but there wasn't a lot of window. I think it was Sequoia and Sutter Hill that put that capital in for the rest of that $20 million.
+
+It's really interesting to think about these cases. Take Sequoia and Sutter Hill, too. Specifically, they've gotten it right so many times, but it's not a straight line. What's the lesson from that?
+
+Ben: Yeah. And the magic was that Jensen really figured it out early that they were in a business that was totally at the mercy of Moore's Law. In having that initial realization as early as they did with the proliferation of competitors, and everyone doing the triangles, DirectX and what, that taught them the lesson early enough that, oh, we are in a business where we must be reinventing. There is no way to stay ahead other than ruthless self-examination and completely ending and rebounding the business.
+
+David: Yup, ship faster and reinvent.
+
+Ben: Yeah. That, to me, is why they survived.
+
+David: If you think about the class of companies that are the greatest venture returns of all time, some of them are like NVIDIA, where you look at the team, you look at the business plan, the thesis originally. It wasn't a straight line, but it worked out. But then some of them are, Sequoia, even used to talk about this on their website, The Misfits, the ones that look unfundable. The early Solana team starting in the crypto winter, building a new blockchain...
+
+Ben: Steve Jobs smelling bad, that sort of thing.
+
+David: Right. Plenty of venture firms, but I have to hand it to Sequoia over history, too. They've done a really good job of doing both of these. They do the Steve Jobs and they do the Jensen's.
+
+Ben: Okay, before we move to grading, I'm going to plant a seed with you, David. It's a fun trivia question. Do you know the company was a startup that in 2006, NVIDIA invested in?
+
+David: Oh, I do. This is a really good one.
+
+Ben: Hold on an answer.
+
+David: We'll hold it.
+
+Ben: Okay. Listeners, before we finish up here and jump to that answer and grading, I want to thank our good friends at the Softbank Latin America Fund. Softbank, as you know, created this fund with a simple thesis. Latin America is totally overflowing with innovative founders and amazing opportunities, but historically has been short on the ingredient of capital.
+
+Softbank, unbelievably, has invested $8 billion in over 70 companies. They have one huge takeaway, which is not super obvious at first, but in retrospect, makes tons of sense that LatAm is not so much about disruption as it is inclusion because the majority of the population is underserved in every category. From banking to ecom, to transportation, most businesses as well are just underserved by modern software. There's just so much to build for so many people in Latin America.
+
+An amazing example of this is their portfolio company, Banco Inter. You should recognize this name because last season, we actually talked with the CEO, Joao Menin. It's an unbelievable story of legitimate digital transformation.
+
+If this is your first time hearing about Banco Inter, they're accelerating the shift to online financial solutions, and expanding access to banking, and investing services in a region, obviously, where over half the people over the age of 15 still don't have a bank account. They're lowering the historically expensive cost of doing banking really by becoming a digital-first bank, even though they're a multi generational, physical bank.
+
+David: Really, all of SoftBank Latin America, I was catching up with Shu and Palo, who run it just this week. It's such a great example of what we were just talking about. This is such a bright spot in the venture capital period and in Softbank. The Latin America investing ecosystem when these guys started several years ago, nobody was there. It was the misfits. It was crazy to go think and invest in this.
+
+Ben: And they've attracted so many more dollars from everyone else, too, by lighting the fire in this region. They really are the OG LatAm investors and are such a power there. To learn more, you can click the link in the show notes or go to latinamericafund.com. If you're interested in joining a company there, or starting a company, or perhaps co-investing in the region, definitely reach out to Shu, Paulo, and that team.
+
+David: They're the best.
+
+Ben: All right, David, so what is the company that they invested in?
+
+David: Ben, you are talking about Keyhole.
+
+Ben: Yes, I thought you would know. I love this little foreshadow before we get to grading because I think it's so interesting that Jensen basically saw the potential of Keyhole. Without sharing what Keyhole became, I think astute listeners will know.
+
+David: We've talked about it on Acquired.
+
+Ben: And we've done an episode. Basically, this company that can't raise any money from anyone else comes and pitches Jensen. He's like, oh, my God, I see this is the future. This is a simulation. You are creating a model of the earth in software and people can just navigate around the earth. Now that I've given it away...
+
+David: A graphical model of the earth.
+
+Ben: Yes. Google acquired it, it became Google Earth. NVIDIA was one of the early investors. That really goes to speak to where Jensen and the leadership team at NVIDIA saw their business going from this point forward, where it was all about simulation. It was all about using massively parallel computing to build brand new experiences to enable research. I don't think there was any machine learning going on. I think it was all the graphical use of the chip, but this gets into the omniverse stuff that they're doing now.
+
+One of the main reasons that I think they invested was because he wanted just to stay alive so they could keep demoing it to customers, because it showed off NVIDIA technology so well. I just love that little tidbit.
+
+David: We did our episode years ago now, the Google Maps episode. That was such a good one.
+
+Ben: Yeah, WhereTo, Keyhole, and...
+
+David: There were three companies that Google bought and mashed up in the parlance of the day to ultimately become Google Maps.
+
+Ben: ZipDash.
+
+David: ZipDash, yes. They were all $20–$30 million acquisitions. Amazing. That's what's so cool about this. I think maybe this is where Jensen and the NVIDIA story bridge from the obvious investment market to bet on, team to bet on, to go all-star engineers to go build this graphics card. Nobody really could have seen the graphics were going to become a lot more than games.
+
+You maybe could have seen it. There was SGI, Hollywood, and Jurassic Park. There were some military applications for computer graphics, but very few. Even Jensen and NVIDIA, they were video games, so the thing.
+
+Ben: Fortunately, that became the biggest entertainment medium. Even if that was your only market...
+
+David: Keyhole, Google Earth, and Google Maps are such great examples of computer graphics becoming so much more important and relevant beyond just video games. That's all a computer dynamically generated, programmable computer graphics, that are making all of that happen. Al right, how are we going to grade this?
+
+Ben: I'm thinking, given the market opportunity that existed between 1993 and 2006 for computer graphics, how did NVIDIA do at exploiting that market opportunity? Share price is a reasonable way to think about it. I think it's a second order metric on how they were creating value in capturing value. I'd say their value creation was amazing. Their value capture, they did better than anyone else as far as I could figure out.
+
+The question I was trying to figure out is that there were 90 other competitors doing the same thing to survive. Was there anyone else in the value chain that was able to do a much better job capturing? Would you rather have been Microsoft than NVIDIA?
+
+David: This leads into the really interesting question to think about for NVIDIA in this period. Microsoft did basically nothing. Okay, that's not fair to Microsoft.
+
+Ben: I'm sure there was a large team that did Direct X.
+
+David: A huge team and the Xbox project was amazing. I don't mean that in any way to throw shade at anybody at Microsoft. But they were in this position where they could just sit there. They could watch the market develop for computer graphics.
+
+By making very good strategic decisions, they could capture a ton of the value with other companies taking the risks of developing the market, figuring out all this stuff, and then Microsoft can come along and be like, great, NVIDIA, we're going to help save you from Intel. In return, you're going to give us a really sweetheart deal on these chips. And you're going to put us in business with Xbox.
+
+By the way, the other side of your gaming and computer graphics business on PCs, we're going to become your primary partner for that, too. All of the development languages that you're going to create, CG, and all that, we're tightly coupled with that and it's all going to work only on Windows.
+
+Ben: I think your assessment of Microsoft did basically nothing except make really good strategic decisions is reasonable enough for DirectX, but totally is not fair for Xbox.
+
+David: No, it's not fair for Xbox at all. It's not.
+
+Ben: To put it another way—and let's exclude Xbox for a moment—you're basically just recognizing that Microsoft had an unbelievable position in the market and did an amazing capital allocation job exploiting it. Basically saying, hey, you know what? You know what we don't need to do? All that crap that NVIDIA, ATI, and all those guys are doing. You know how we can still retain our market position and continue printing money the way that we do? This thing. And they did that. They didn't get into the commodity business and they were brilliant.
+
+David: We don't need to be in this brutally competitive industry where if we don't ship six months ahead of our competitors every cycle, we're toast. I think you know, in this grading question, the longer we do this show, the more I realize, this is like a mega theme of Acquired that Microsoft in the 90s or early 2000s was such a power. The DOJ case really, really crippled it probably for good for the ecosystem.
+
+Ben: This kind of foreshadows the next episode. Because NVIDIA had to learn these hard lessons and had to develop, like was forced to develop these really crazy competencies, like eventually developing CUDA that would power this whole machine learning and scientific computing revolution, was it bad for Microsoft to not have to grow that DNA in the same way that it was bad for Microsoft to not have to grow the mobile DNA and Apple beat them at that game?
+
+David: Yeah, that's a great point.
+
+Ben: I don't know enough yet about how the machine learning market is going to develop or has developed in order to make a call yet on that point. But if you're just standing there in 2006 reflecting back, NVIDIA fought for their life and won.
+
+David: Multiple times.
+
+Ben: And Microsoft just leveraged the crap out of their amazing position and probably achieved about the same outcome.
+
+David: Both of these two fighting-for-their-life-company-defining moments from NVIDIA's first 10-15 years, overcoming the 90 competitors, and then building and making the case that they're not going to get commoditized by Intel, that the GPU is going to be a standalone important thing, Microsoft profited hugely from both of those.
+
+Ben: Yup, it's so true. I will say, NVIDIA doing what they did has been net unbelievably positive for the world. I watched the NVIDIA GTC Conference 2021, because the 2022 is about to happen. The review of all the stuff they're involved in is so inarguably good for humanity.
+
+We need way less energy to do way more interesting stuff that's good for humans because NVIDIA exists. Without doing this first 13 years, they would not have laid the groundwork to be able to do all of that in the future. That's one sort of contorted lens to look at it through.
+
+David: I think I give NVIDIA, for this period of time, an A because they're basically the only company that survived. ATI did for sure, of course, but in a very different fashion. And they created this whole industry almost inarguably. Created and shepherded this whole industry. But it's not an A+ because Microsoft. There was the DOJ case, until the DOJ case.
+
+Ben: That's true. All right, I like that. Hard to argue with it. Carve-outs?
+
+David: I have a fun and very appropriate one for this episode, Elden Ring. Have you heard about this, Ben?
+
+Ben: No.
+
+David: You're not a gamer. We need to get you into gaming after doing all these episodes now. It's so fun. It's great. Elden Ring, for people who don't know, is the latest software game and it's on all the platforms, console, PC, et cetera. Lots of people are saying this is probably up there with the conversation for greatest game of all time ever made.
+
+Japanese developers, they made the Dark Souls games, if you've heard of them. They're just these legendarily incredibly hard games, but the world building is unbelievable. Elden Ring is the first one to come out on modern platforms and just everything about it, the graphics, the scale, the breadth of the world. The story, George R.R. Martin helped develop the backstory to this.
+
+If you needed another example of how video games have become the biggest, most ambitious storytelling medium out there, this is it. I've only just started playing the game because I've been researching NVIDIA the whole time. But even just in a few hours playing it, it's incredible. You're not going to get an experience like this in anything else.
+
+Ben: Cool. I have an appropriate one that I didn't realize was going to be appropriate until you shared it earlier, which is, I have been getting back into a weightlifting program that I haven't done for 10 years called Starting Strength by Mark Rippetoe.
+
+David: Inspired by Jensen?
+
+Ben: Yeah, apparently inspired by Jensen and I didn't even realize it. I reactivated a gym membership. I went back to the gym. I started from square one in terms of doing all the basic barbell lifts. It's a new hobby.
+
+It's something I did 10 years ago and then totally led to atrophy. The way that I love to work out in at least historically the last 5–8 years, has been endurance sports. I'm training for a marathon, or doing week long bike trips, and stuff like that.
+
+It's just very fun to get back into every other day, try and lift as heavy as you possibly can for a few reps, rest for a long time. You make sure you get all your sleep. It's a very different mentality, so it's been fun doing that again.
+
+David: I love it. I feel like we're both becoming better versions of our high school selves. I'm full-on gamer again and you're getting back into weightlifting.
+
+Ben: High school me would have been like, what? Why would I work out? That doesn't sound fun.
+
+All right, listeners, that's all we've got. We are very excited to (at some point) come back and talk to you about 2007 through 2022 with NVIDIA and the absolutely unfathomable things that they have done.
+
+Imagine if you started a business in the early 90s doing a thing that seemed like a small market at the time, but you did the thing, and then it turns out that that gave you line of sight to something that the same technology was uniquely able to do, that was 10 times bigger than the original thing. And no one else was even close to you because you had 18 years of building stuff and learning about these technologies to be the best company in the world to take advantage of that next thing, which obviously is machine learning. It is just like an oh-my-God story.
+
+You layer on top of that, the fact that gaming actually was 10–100 times bigger than anybody ever thought it would be. It's a literally unbelievable story, except that it happens, so you have to believe it.
+
+David: It's so great. This is the kind of stuff that we do Acquired for. I'm just being so jazzed about this.
+
+Ben: Yeah. I got a lot of research to do on parallel processing and why this was so perfect for all the machine learning and cryptography use cases. That's why we get some time between episodes to go and do more research and to watch GTC, the GPU technology conference, their annual developer conference 2022.
+
+Thank you so much for listening to us. Leave us a review on Apple podcasts if you listen there or with the new Spotify ratings feature on their mobile app. Share it with a friend if you like it. We welcome lots of feedback.
+
+Fortunately, in having a part two, we're going to be able to take your feedback and actually work it into the next part of the story, so acquired.fm/slack. Come hang out with us. Talk about this. Check out the LP Show.
+
+We've got a job board. If you are looking for the next stage of your career, we have curated all of the positions at acquired.fm/jobs.
+
+With that, thank you to Vanta, Vouch, and the Softbank Latin America Fund. We will see you next time.
+
+David: We will see you next time, indeed.
+
+‍

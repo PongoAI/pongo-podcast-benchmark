@@ -1,0 +1,587 @@
+Ben: Welcome to Season 5 Episode 8 of Acquired, the podcast about great technology companies and the stories behind them. I'm Ben Gilbert and I am the co-founder of Pioneer Square Labs, a startup studio and early-stage venture fund in Seattle.
+
+David: And I'm David Rosenthal and I am a general partner at Wave Capital, an early-stage venture firm focused on marketplaces based in San Francisco.
+
+Ben: And we are your hosts. Today, we’ll tell the story of the most valuable tech startup in the world, ByteDance. You may not have heard of it, but you have almost certainly heard of their most popular product, Douyin, or wait, if you're a Western audience, I mean TikTok. Valued close to $80 billion, this privately-held venture-backed Chinese company has completely changed how a generation of teens and 20-somethings globally use their phones.
+
+Another fun way to introduce TikTok, what is this machine learning-based social media app that skyrocketed the then-unknown Lil Nas X to number one on the Billboard Hot 100 for 17 weeks, the longest of any song in history with his breakout track Old Town Road?
+
+David: I’m so pumped. After doing this research, I finally know what the hot challenge was.
+
+Ben: David, how on earth can this app create such a universal sensation for so many people at once to skyrocket it to number one like this? This is something that no other social media app has been able to accomplish.
+
+David: Not in quite a long time. The other fun thing that we're not going to talk as much about on the episode but to say upfront to also just build the Acquired human suspense here, you, of course, know who assigned the $78 billion or $79 billion valuation to ByteDance, right?
+
+Ben: Is it Sequoia China? They were an early investor?
+
+David: No, SoftBank.
+
+Ben: Oh.
+
+David: Sequoia China wasn’t their early investor.
+
+Ben: Oh, boy, I can't wait for this.
+
+David: Yeah, the hits keep on coming, although this one actually is a hit.
+
+Ben: Indeed. Listeners, the way we'll be telling this story is through ByteDance’s 2017 acquisition of another China-based company, Musical.ly, so join us on this journey of ByteDance acquiring Musical.ly to create the TikTok that we know today.
+
+We have a special announcement that we're excited to share with you. we showed it on the last episode. We are doing a live episode in Seattle. It will be on December 17th with the co-founder and CEO of Convoy, Dan Lewis, discussing the origin story of the company, disrupting the trucking industry, and valued last month at $2.7 billion. You can click the link in the show notes or go to acquired.fm/liveshow to reserve your ticket.
+
+Lastly, before we dive in, I want to thank the sponsors of all of Season 5, Silicon Valley Bank. Earlier this week, I caught up with our sponsor so let's dive in for a little Q&A.
+
+Thanks to SVB, and now, on to TikTok.
+
+David: Indeed, on to TikTok. To start history and facts, we're going to go all the way back to the 1920s and Charlie Chaplin. No, I'm kidding, although if we really, really wanted to give it the full Acquired treatment, we would do that. But no. Of course, I was referring to the great performer, the performing arts, and the origins of showbiz, Charlie Chaplin, but no.
+
+We pick up the story relatively recently (this time by Acquired standards) in 2012, not in China but in the San Francisco Bay Area with a man, and not a young man as we so often talked about on this show, but a man named Alex Zhu who is in his mid 30s. He's from China originally.
+
+Ben: I love that’s like not a young man to you.
+
+David: Hey, I mean, I just turned 35 so I definitely don't feel like a young man anymore, but in comparison to what we're about to talk about, you might think that TikTok or Musical.ly, if you knew it initially, incarnation would have been started by a teenager or an Evan Spiegel-like character. But no, not at all as we will see. In many ways, Alex is the anti-Evan Spiegel. He's in his mid-30s and he's working as a UI designer at the European enterprise software giant, SAP, hotbed of consumer mobile social app innovation.
+
+Ben: Oh, yeah, totally. The SAP mafia of social network startups.
+
+David: Indeed. This is actually his second stint with SAP. At this point, Alex has a long career in enterprise software and after his second stint at SAP (he’s working there for about a year), he's just been appointed as an in-house futurist at SAP, focused specifically on the future of education. You can just see Musical.ly jumping right off the page here.
+
+Ben: I think I saw some tweet years ago that said, “If you have the word digital in your title, then you have the right job at the wrong company.” I think that might be the same thing for futurists.
+
+David: Yeah. Why is it a little bit like enterprise companies have futurists?
+
+Ben: I think Google does [...] that Google is the chief futurist or something?
+
+David: Oh, I don't know, maybe. I'll have to look that up. Alex's new role as futurist (and he says this on his LinkedIn profile which we’ll link to in the show notes), it's quite amazing. He says his job was to research the future trends of education and learning, specifically identify opportunities for breakthrough innovation and social impact and convert ideas into prototypes and applications.
+
+What did this mean at the time in 2012? I remember this super clearly, I was about to start business school at Stanford. What was all the rage, both in the tech world and in the education world, were MOOCs. Coursera and Udacity had just launched (both of them out of Stanford), raised tons of money, and they were going to digitize universities, learning, and education, and bring it all online.
+
+Both of them are still around, but neither of them would go on to realize the potential that everyone thought they had at the moment or at least, not in a near-term timeframe. Interestingly though, it was actually an enterprise software company to you that would go public and become quite a large company that would help existing schools manage their online degree programs.
+
+Actually, my old undergrad classmate, Jeremy Johnson, who's now the CEO of Andela was one of the cofounders of that. It was enterprise software. You could paint a story why it made sense for Alex to be working on this within SAP. As he gets deeper and deeper into it, he becomes really convinced that there are a couple of problems with the way MOOCs and online education is being approached at that time and he was totally right.
+
+The biggest one, as he digs in is that nobody finishes the courses. Not only nobody finishes the courses, nobody even finishes a single video of a single lecture, they're just too long for most people unless you're in an actual degree program where you have to. Students at colleges barely stay awake through lectures, who's going to watch a whole course of their own free will and volition?
+
+Ben: Yeah, reflecting back on it, I think if I'm going to watch even the Khan Academy type stuff, it's going to be like one video at a time and maybe not even the whole video.
+
+David: Yeah, you're going to spend five minutes or less on there. As he comes to this realization, he thinks, “Maybe the way to attack this is to make the videos short-form instead of long-form, these educational videos,” and he realizes, “Look, this is not something that an enterprise software company like SAP is going to really be equipped to tackle here,” so he is passionate about the space, though, and he does decide to start a company on the side outside of SAP while he's still working there.
+
+Ben: He’s going to take his futurism talents elsewhere.
+
+David: Exactly. At least, according to his LinkedIn, he does stop being a futurist at SAP. He goes back to working on other normal projects as a UI designer and actually stays at the company (according to his LinkedIn) for quite a few years to come. On the side, he's working on realizing this opportunity and he calls up an old friend back in China, Louis Yang, who he had worked with at another company back in China, and they started a company called Cicada Education, a real auspicious name.
+
+Ben: Like a bug?
+
+David: I believe so, at least, that is how it's spelled.
+
+Ben: I know where you grew up there were cicadas in Ohio, every 15 years or something, these gnarly bugs like for two weeks of summer.
+
+David: Yeah, same where I grew up in Pennsylvania and then especially in New Jersey going to college, it did not make you want to study.
+
+Ben: Or name a company after them.
+
+David: So far, this is an interesting compelling story. There are a few twists here, but it sounds like your typical Bay Area startup story on the surface. But when you peel back the onion a little bit, there's a couple of really unique things going on for the time. One, the dual China and US headquarters of the company.
+
+Alex stays in the Bay Area, he’s still working at SAP there, Louis is back in China. This is not done at the time. I remember starting to invest in companies when I joined Madrona at this time. Remote teams period are like a no-no for venture capitalists and startups, let alone cross-continent, cross-border, cross-cultural remote teams is just crazy, but these guys have a little bit of experience with that, or at least, Alex does.
+
+After undergrad, he first worked at China Pages in China as a designer and then he spent three years at WebEx where I believe—I can't verify for sure—he reported up to Eric Yuan.
+
+Ben: Wow, founder and CEO of Zoom.
+
+David: Of Zoom. Zoom would leverage this model (as we covered on the Zoom episode), to amazing success. Eric also did within WebEx (of having engineering back in China and all over the world, really) while having go-to-market based in the Bay Area.
+
+After WebEx, Alex joined SAP, then left SAP and went to an insurance software company called eBao. That's where he met Louis, who was the best PM there. They worked together briefly there before Alex went, rejoined SAP, and moved to the Bay Area. He calls up Louis, this really talented PM who he's worked with before, they go out, and they raise $250,000. Ben, you actually know the folks that they raised this angel money from, right?
+
+Ben: Yeah. One of the firms there is China ROC Capital Management, a great cross-border China-US firm that’s important to this story has a Palo Alto office.
+
+David: Yeah. They're at the forefront of this crazy idea of building cross-border companies and the idea is that they're going to take Alex's insight and get experts across a wide variety of domains from peer education to professionals, to create these short 3–5 minute videos explaining a subject that they know really well.
+
+They raised money, they started working on this. As you can imagine, it's not super compelling. After the pivot of Musical.ly, Alex says, “The day we released this application to the market, we realized it was never going to take off. It was doomed to failure.” The name Cicada may have had—
+
+Ben: Yeah, something to do with it. To have one thing so right in short-form video and one thing so wrong in delivering education in an entertainment-type format in that short-form video, it's remarkable how they really, really deeply keyed into a trend but didn't exactly nail it the first time.
+
+David: Yeah, Alex says, “It's hard for a new startup to fight against human nature. It's better to follow human nature,” and especially in short-form video, education is not just going to really compel somebody to open up an app on their phone. That's the big thing that they get wrong with Cicada, but the other thing that they get wrong, and this really goes on to inform Musical.ly and TikTok, is the videos took way too long to create and they were way too hard.
+
+Cognitively, if you're an expert trying to convey the essence of a subject in 3–5 minutes, you can't. You could do that if you spend a lot of time organizing and figuring out how to convey information, but also just like the tools—remember, this is back in 2012–2013—within the product to create these compelling videos are way, way, way too immature for this to go mainstream.
+
+Ben: Yeah. If you think back, 2014 was probably the iPhone 6s that [...].
+
+David: No, I think that was the iPhone 6.
+
+Ben: Or let's put an OS number on it. That would have been iOS 7 just came out.
+
+David: Yeah, 2014 was the iPhone 6 and iOS 7 or 8. This means back in the Cicada days, you're working with, at best, an iPhone 5s which is the small screen. As much as I love and miss that thing, creating video content on that was going to be super hard.
+
+Ben: Yeah, and it was only the third generation of Retina phones, so there are still lots of phones out there that are the 320x480 or whatever it was.
+
+David: Yeah, totally. We're now in the spring of 2014. They've burned through most of the $250,000 that they raised, but Alex is at least part-time on this.
+
+Ben: And I think he's hanging out a lot at the China ROC office in Palo Alto, and importantly leads to him taking Caltrain rides.
+
+David: Yeah. I believe he was also probably working for SAP’s campus down in Palo Alto at the time too, spending some portion of his time there. They decided to take another swing at this. As you said, he is famously commuting down from San Francisco to the Peninsula (as so many people do), and often he takes Caltrain to avoid the traffic.
+
+One day, he's thinking about the failure of Cicada, thinking about what they want to pivot into, and take a swing at next based on what they learn, and he sees a group of teenagers on the train. They're playing with their phones and they're doing it together. He starts observing them like, “Oh, what are these kids doing? Maybe I can learn something.”
+
+Interestingly though, the stereotype at the time, remember the adults or the older partners at Madrona talking about this like, “Oh kids, they just sit on their phones, they don't talk to each other, they're not social, and everything is digital,” but that's not what's happening at all. These kids are collaborating together, they're talking, they're chatting, they're being loud, they're not parallel playing, they're using their phones but they're doing things together physically on them.
+
+What are they doing? They're taking selfie videos. They have one person who's making the video, another person is finding music on their phone to play in the background to put a score to the video, then other people are creating graphics and digital overlays that they're going to put on top of the video, narrate all together a story about their time on the train together, and then they're posting it out to other social media, to Instagram, to Twitter, to Facebook.
+
+Alex realizes like, “Oh, wow, this is actually a perfect use case for all this tech that we've built and for short-form video. Look at these lengths that these kids are going through to create this content here on the train together. What if we made one app that made it really easy for all this to happen? That would be cool.”
+
+Ben: Yeah, and important here to know about Alex is there are lots of different founder archetypes, he's really the product person/designer archetype where part of the reason that he was able to raise that initial little seed money is really he's able to not only design beautiful products but observe problems in the world that can be solved with technology. The thing that we're seeing here when you're thinking to yourself how was it a good idea to pivot when deciding, “Should we pivot? Should we not?” Alex was uniquely good at observing problems, and with little resources, figuring out how to solve that problem with technology.
+
+David: Yeah. Louis actually talks about this later, he says, “We changed the product quickly from the education-video app to do an experiment. What if we just provide some music in the product to allow people to quickly shoot a video with music? Will they feel very confident about what they create? If they feel excited about it, will they share it?” This is interesting. He says, “We created the prototype very quickly and we tried to launch in China, in Japan, in Europe, and in the US, we just wanted to see, we were not sure which country was going to pick it up really quickly but we had a gut feeling that it should be the US, the US is a music country, everyone there is so into music and the US is the center of pop culture worldwide. We got that gut feeling but we still decided to try it worldwide. We just really stood in the App Store, created some keywords for people to search for it, and the result is yeah, in the US, people automatically started picking it up.”
+
+Ben: Fascinating. I did not know that was a hunch of why they did it in the US.
+
+David: Yeah. That's the official story of the launch of Musical.ly. As far as we know, we have no contradictory evidence that anything else was different, but there were two other apps that were blowing up at the same time that probably had a pretty big influence on the direction.
+
+Ben: Dubsmash?
+
+David: No, Dubsmash actually launched right around the same time as Musical.ly, they were pretty concurrent but had a big influence on the direction that Musical.ly decided to go.
+
+Ben: Snapchat?
+
+David: No, not Snapchat. One is in the US and one is in China, one is Vine. Remember Vine?
+
+Ben: Oh, yeah, Twitter’s biggest mistake.
+
+David: Oh, man, such a tragedy. Doing this research reminded me of it. Vine was acquired by Twitter pre-launch back when the team was still working on the product and Jack Dorsey saw the potential for this and just loved it and so they acquired the company in January 2013 before they launched the product. Vine (I'm sure lots of our US listeners will remember this) was 6-second looping videos and music and lip-synching was a key use-case on Vine.
+
+Ben: Yeah, it was lip-synching and NBA replays.
+
+David: Yeah, such a good platform for sports replays. Users loved it and it had priority distribution on Twitter, but especially teenagers. This story presages TikTok so exactly. There was this Canadian teenager who goes by Ruth B, who goes viral after posting a short clip of herself singing a few lines that she just made up about Peter Pan on Vine. It ends up turning it into a full song, gets a record deal, makes the Billboard top 100 charts.
+
+This should have been a sign to Twitter that there's something really interesting happening on this platform, but Twitter was going through its IPO at this time, they had crazy management drama, they didn't have enough resources to invest in it.
+
+Ben: Ultimately shut it down.
+
+David: Platform just peters out, yeah, and they ultimately shut it down. Lots of people saw what was going on here. I have to imagine that Alex and Louis did and this had a big influence on the direction of Musical.ly.
+
+Ben: Alright, what's the second one?
+
+David: The second one back in China is an app that's still a super large company today called Kuaishou. That was actually started in 2011 as a gift-maker tool in China. They’ve raised money from Morningside Ventures originally. It didn't go super well (they were just a utility), so they brought in one of their advisors and angel investors to take over as CEO, this guy named Su Hua. Su had worked at both Google and Baidu and he pretty quickly transforms Kuaishou into a short video platform. This is the first big short-video platform in China and it starts taking off like wildfire.
+
+Ben: Wasn’t Morningside also the first money into ByteDance?
+
+David: That's a good question. They might have been. They're really good early-stage venture folks in China. Interestingly, Kuaishou starts taking off not among what you think of is the normal audience for tech products in China, which is wealthy middle- and upper-class tier-one city urban elites, Kuaishou takes off in the rural areas with the 80% of the country that is still living in the provinces and are getting their first smartphones around this time. Kuaishou is just for people to make videos and talk about their daily lives.
+
+There's a great 2017 tech note article that talks about their strategy and this says it's a really authentic place where people can be themselves and show their lives. The way that it all works is the content that people see is not driven by who you are or who you follow, it's driven by an algorithm. It gets to know what you like and it recommends videos that other people make to you that just find their way to you. You don't have to go out and find influencers, find topics, it just starts to get to know you and it surfaces all this interesting stuff much like other companies that we're going to see in a minute here.
+
+Ben: There's one other interesting thing to note on why it blew up in America. In America, this notion of lip-syncing has always been like a thing people knew about, it's not like there was a dedicated video platform for it but it was like a popular thing to sing along with the music and famously, there have been some big debacles where even pop artists were lip-synching their own songs and got called out for that. This is a bit later but just to drive the point home on lip-syncing as a cultural phenomenon in the US but not China at the time, there was actually a TV show called Lip Sync Battle.
+
+David: Oh, yeah. That is going to come up in a second here.
+
+Ben: All right. I won't spoil it too much, but you got to understand at this time that this is really unique for a Chinese technology company to be building a product that is most popular in the US market. This was pretty unheard of and makes total sense when you think about the cultural differences of where it could be appreciated.
+
+David: Yeah. The super cool thing is the team learned their way into this. We're still in 2014 when they make this pivot and they launch the MVP of Musical.ly. Now they're already thinking about music clearly, but the name of the app as being a key feature, but it was more Vine and Kuaishou than it was what we think of Musical.ly and TikTok today. It was a broad short-form video platform.
+
+They launched it and they do a couple of really interesting things. Louis talked in that quote about the name of the app and doing app store optimization. This was a point in time when the app store, particularly the iOS App Store, started really prioritizing search terms, I don't know if you remember, Ben, a bunch of apps and Musical.ly does this more than anyone.
+
+Ben: Keyword stuffing?
+
+David: Yeah, stuff a ton of keywords into their titles. The title of the app is like, “Musical.ly-make videos for Instagram, Twitter, and Facebook with music with your friends, have fun like blah-blah-blah.” That just goes on and on and on, they stuff all these keywords in there and that's what starts getting the initial download traffic that the app is getting in the US. This is where, based on that, they start to learn a couple of things and this eventually leads to the big breakthrough of Lip Sync Battle.
+
+They operate for a few months, the app’s growing, they're getting really good retention and usage, people that are downloading it and trying it are sticking with it, but they're not hitting a rocket ship growth yet. So they started digging into their data and they realized that on Thursday nights in the US, every Thursday night, there's a big spike in downloads.
+
+They started going on the app trying to figure out why. They've always been really good about staying close to their users. They have lots of user research groups that they do to this day. Alex talks about how he creates fake accounts and just goes into first, Musical.ly, and now TikTok, and interacts with users just try to get a sense of what's going on and why they're using it. They realize that it’s because of the Lip Sync Battle TV Show which airs Thursday nights in the US on the Paramount network.
+
+I had totally forgotten about this, but Lip Sync Battle is actually a spin off from the Jimmy Fallon Show. Jimmy started doing this as a skit on the Jimmy Fallon show, and then he went and he pitched it with a couple other producers to NBC as its own show. NBC turned it down but Paramount picked it up and it became a huge hit. People love it.
+
+Ben: That’s awesome. I had no idea of the history of that.
+
+David: Yeah.
+
+Ben: Did they mention Musical.ly at all in that? Or was is just like people getting inspired from the show that they—
+
+David: No. It’s back to the App Store optimization. They had put lip sync in the title of a bunch of versions of the app. After the show ends, people just go on and search the App Store for “lip sync” and Musical.ly is what pops it.
+
+Ben: Makes total sense.
+
+David: Yeah. Super cool. It’s now in spring of 2015 when they realize this is happening. Because growth has been slow, they decide on a couple of things. One, we need to make a decision and go all in on a particular use case, like classic enterprise software crossing the chasm-type problem of you have a broad platform that ultimately will be useful for lots of different things, but in the beginning you have to have one very specific use case to knock down that first bowling pin of why people are going to use the product.
+
+They realized that they need to have one killer feature that they really prioritize in the app. This is where a confluence and of a bunch of things come together. They changed the onboarding flow to make it clear that Musical.ly is really great at helping you create lip sync videos. Two, they then start sending users regular notifications, like daily notifications with challenges of lip sync videos that they can create using the app. This starts driving people to keep coming back. People are coming back and consuming content but this starts driving people to come and create content on a more than a weekly basis.
+
+This is the origin of challenges that ultimately the Yeehaw Challenge would be one of the biggest stuff that would help drive Old Town Road, but that’s still to come. And then the product model is super cool. If you think about Instagram, Facebook, Twitter, even Snapchat, all the successful Western social networks up to this point, the content that you see is based on who you follow. When people log onto the app and create accounts for the first time, who are they follow?
+
+Ben and I were chatting before the show, we’ve been paying with TikTok over the past couple of days and Ben here were like, “I went in, I followed a bunch of my friends and none of them have any videos.” On TikTok and on Musical.ly, before that it didn’t matter. This is what they take from Kuaishou back in China. Because the content that the app surfaces for you is based on an algorithm of what it thinks you’re going to like completely regardless of who you follow. When you’re a new user onboarded for the first time, it prioritizes content that you have no connection to. That makes it super different from other apps but also this incredible opportunity.
+
+Ben: Yeah. It’s about finding the content fit with your interest, not the person fit, like a person that you know, and not your own perceived content fit. It’s not like I would tell you that I like SciFi. What’s actually become quite clear to me from TikTok is what TikTok has learned. I like prank videos and I like extreme sports things. I’ve been using TikTok for a year and didn’t follow anyone and I followed people this week and didn’t improve my experience at all. It’s still the same stuff from people who I’ve never met that is just very well-tailored to me at this point.
+
+David: Totally. Once they make this changes in the Spring of 2015, the apps just takes off like a rocket ship. Two months later, on July 6, it’s number one in the US iOS App Store. Since then, Musical.ly and then its successor, TikTok, has never fallen out of the top 40 apps, which is pretty incredible. This is the beginning of the rise that puts it not just onSnapchat trajectory, but now well beyond to Instagram and even potentially bigger.
+
+There’s a really great talk that he did, Greylock and our friends at GGV, main venture investors in Musical.ly. There’s a great talk that Alex does with Josh Elman at a Greylock product event that’s on YouTube. We’ll link to it in the show notes; you should definitely go watch it. He talks about the philosophy behind this product decision and how it leads to Musical.ly really having a chance to become a social platform instead of just a utility.
+
+Remember we talked about Vine. Dubsmash was out there at this point in time. There are a bunch of other competing apps, but what is it about Musical.ly that makes it special, it’s the Ruth B story from Vine. It’s allowing somebody who’s a nobody, who’s brand new to the platform, doesn’t have any special advantages like a celebrity or an influencer, they’re just somebody who has talent. If they put that quality content on a platform because of this recommendation algorithm, platform’s able to find it, surface it to a bunch of people, and make those creators who actually have talent really successful.
+
+That’s what this becomes over time, and what TikTok has become is this really interesting two-sided network effect of a creator side and a consumer side, of which there’s a lot of overlap, but they’re actually pretty different. It’s a lot more like YouTube than it is like Instagram or Snapchat or Facebook.
+
+On the creator side, even more than YouTube, really what it is, is it’s like a digitization of American Idol or America’s Got Talent, which is you’ve got these people who have aspirations to show their talents, whatever it is, whether it’s extreme sports videos, or comedy, or singing, or music. They believe that the platform, even if they don’t have a following today, if they make something great and they put it on the platform, there’s a chance that they’ll get discovered.
+
+Ben: Yeah. The interesting thing about this is—two points I want to make—one, in apps where the expectation was set originally that I’m going to express interest in who I care about and then I get to follow them. I get really annoyed later when that promise is broken. Twitter starts doing the algorithmic timeline, Facebook starts to limit organic distribution and makes you pay for exposure if you’re a brand. There’s always things where you start to feel like they’re really messing with what the brand promise was here.
+
+TikTok from the very beginning is, “We are going to show you what we think is the most engaging for you, and we make no promises.” Yeah, sure there’s that following tab, but that’s not where you live. You live on the tab where it’s, “Hey this is what we think you most like.”
+
+David: The for you tab, which is like the explore tab on Instagram that nobody goes to.
+
+Ben: Right. So, their algorithm is not public, but there’s been some really, really nice speculation by a great medium post by Matt Schlicht, where he talks about his experience dribbling stuff out and trying to reverse engineer the algorithm a little bit on TikTok. This is flashing forward a little bit, but I think it’s important to really understand what it’s doing.
+
+It’s like it’s always AB testing. The vast majority of what you’re being shown is things that TikTok thinks you will like based on your previous viewing and liking history. Mixed in there is every video gets the waters tested. They can see how engaging is this. It looks for what is the conversion ratio from view to like. What’s the conversion ratio from view to finish viewing. That determines how it spreads wider and wider and wider.
+
+It’s important to have a basic understanding of how the algorithm works. When we say things like, the platform truly rewards and spreads the most objectively liked or objectively good, talented videos, that’s actually what it’s doing.
+
+David: It’s even more than this. As I was doing research and thinking about what made Musical.ly successful more than its peers at the time and what’s made TikTok such an incredible global phenomenon, it really is bringing back to the American Idol analogy. It’s like a personalized American Idol for every single consumer on the app.
+
+In American Idol, it’s just a flat TV show. What can the producers go out and find from talent all across the country that’s going to have the broadest mass market appeal? Because they have to show that one single TV show across the entire audience.
+
+On TikTok though, they can have all of these content and all of these niches and have the personalized algorithmic feed for each consumer. They’re able to take so much more content, talent, and creators, and make them successful because they only need to find their niche audience. They don’t even need to go find it anymore. TikTok is finding it for them.
+
+Ben: Fascinating but important in knowing that you don’t need to find your own audience and you’re relying on TikTok finding it for you, it means you don’t get to form that direct relationship with that audience. It’s not necessarily going to lead to a follow or something where they’re going to see your next piece of content. You may be a flash in the pan if that’s your best and only great video. It truly rewards the venture investing philosophy espoused by Sequoia early on, you’re only as good as your last investment.
+
+David: Yeah, or your last TikTok video. Let’s talk about what success for creators on TikTok means. This is another area where the platform is really different from the existing social networks that’s come before them. Alex gives a great talk on YouTube at a Greylock event. Greylock, our friends at GGV were the main venture investors behind Musical.ly before it was acquired and became TikTok.
+
+In his talk, Alex has this analogy of building the social network of Musical.ly to being like founding and building a country, a nation. He says, “At first, you find the new world, the new land, and you have nothing. You just have a land. You just have real estate. You need to attract people to come to that land and to attract the people, you need to show them a path to success, you need to create this image of your new land of being a land of opportunity. The way that you do that is some version of a path to wealth creation, because ultimately it’s an economy that a country runs on a political economy and it’s the same thing with the social media platform.”
+
+Alex says, “When users first come to a new social media platform, the first thing they’re looking for is fame.” That’s a stand-in for an economy. It’s like a proxy people believe once they have fame they can get money. He says, “But that’s not enough. Once they have the fame, they have to monetize. The platform that can generate the biggest revenue streams for it’s biggest users, that’s the one that will stick around.”
+
+He says the way that they did this at Musical.ly is first, you centralize your economy. You make sure you put your hand on the scale. You make sure that some of those initial people that are on the platform, those initial creators, the ones with the most talent that you are subjectively judging as the arbiters of the platform, you make sure that they get rich.
+
+Alex doesn’t talk a lot about how Musical.ly does this, but ByteDance with TikTok in China, just start paying content creators and people who are creating the best content, they pay them more money. They invite them to exclusive events and they get all sorts of perks. And they broker introductions between them and marketers and advertisers who are going to want to sponsor their content, either directly or through the platform.
+
+That’s the first step. Then Alex talk about—this is a really amazing insight—he says, “Then though, you have to take a second step which is decentralizing.” You start with the centralized economy where you’re making sure that some people succeed, but then though you have to pull back and decentralize because if you want to keep attracting new creators—this is where Facebook and Instagram have really failed to make this step—you have to ensure that there really is an opportunity for everyone, that there’s the equivalent of the American dream.
+
+If you’re someone who is new to the platform, you have to believe that there’s a real chance that you’d get discovered and that you can find success even though you’re starting from a cold start. This actually is back to the American Idol analogy. This is why the algorithm and the algorithmic feed within Musical.ly and then TikTok is so important. It makes it so different from Instagram.
+
+Ben: Wow. There’s a lot there, but it’s a pretty interesting analogy to the criticism of America right now that the American dream has failed and actually, once you’re out one end of the pole or the other, you tend to stay there. You could see people arguing that our country needs an equivalent TikTokification.
+
+David: Also, quite ironic that this vision is coming from a cross-border US and Chinese startup. The thing gets acquired by and becomes part of the largest startup in China. The two subpoints that he makes about this need to decentralize is one, exactly what you said Ben. You need to have true social and economic mobility within the platform. But just as important too (and it’s your point about making money), you need a viable middle class. Of course you’re going to have the elite, the upper class, the Little Nas X, people who become just so much bigger than anyone whom we could have ever imagined, but you also need viability for the middle.
+
+There’s going to be people who just don’t have talent and then they won’t make it. But there are going to be people who have a few successes or have a relatively small niche. How do you help them succeed? This is something that the platform hasn’t fully, fully figured out in the West. We’re going to talk about this a bunch more as we go through the rest of the episode.
+
+Ben: Yeah. It’s really interesting. There’s another point that’s important to hit on that’s part of Musical.ly’s success here. They really do something pretty innovative in overhauling the app to be all in on lip synching because they’re able to allow people to be a little bit creative and get a lot of output, which was kind of the magic of Instagram when it started. You could be a crappy photographer and put a cool filter on it and then no matter what, it was going to look cool. It very much rings true of the way to bootstrap a network, which is come for tool, stay for the network.
+
+People were creating in Musical.ly because it could create a good product with little effort and sharing it everywhere else. Musical.ly watermarked every single one of those videos and made it very easy to share it everywhere else. If there’s one big difference to know between Musical.ly then and TikTok now, Musical.ly really grew organically because people we're sharing their creations that were far easier to make than you would think everywhere they possibly could.
+
+David: Yeah. This aspect of Musical.ly’s growth is a page straight out of the Playbook of Instagram which did this exact same thing in the early days.
+
+Ben: That applies for Twitter.
+
+David: Yeah, exactly, was make a really, really great utility that need the content you were creating as a creator look much better in a very easy manner. Was hipstamatic the straight utility competitor to Instagram?
+
+Ben: Yup.
+
+David: Yeah, and then provide that really easy sharing functionality. Really it was Twitter that Instagram grew at the back of, and then Twitter shut them off the platform, but it was already too late.
+
+Ben: Smash and grab, job accomplished.
+
+David: Yeah. Musical.ly does the same thing on that front. Now, by 2016, Musical.ly is on fire. They have 10 million DAU and over 90 million users up from 10 million the year before in 2015. They’re grown 10X, close to 9X in 2016. There’s also something else very interesting going in the year 2016 in social network land. There’s a bunch of things that we’ve covered on this show. But 2016 is the year that Facebook and Mark Zuckerburg are trying to crack into China.
+
+I think this was the year he made his annual challenge two-fold. One, he was going to learn Mandarin, and two he was going to go jogging all around the world. There was this famous moment I had totally forgotten about until doing research for this episode where he goes jogging through Tiananmen Square with a bunch of Chinese Communist party officials, and he’s working super, super hard.
+
+At this point, Facebook is still on its exponential growth curve. They’ve acquired Instagram and Zuck is looking at China and seeing the billion people there. Renren is around, but nobody has really become the Facebook equivalent of China at this point. WeChat is still in its infancy. He thinks this is going to be the next big market for Facebook.
+
+Ben: As we would see that did not quite turned out.
+
+David: It did not quite turn out. In fact quite the opposite. But 2016, this is the WhatsApp acquisition has happened, markets tried to buy Snapchat several times, he’s acquired Instagram, he’s acquired Oculus. What’s the Facebook Playbook for entering this adjacent large markets? It’s acquisition.
+
+I did not know this until yesterday. But it’s been reported that in August of 2016, Zuck invites Alex. Alex moved back to Shanghai at this point to be full time with the product and engineering team in China. Zuck invites Alex to come meet with him in Menlo Park and expresses an interest in acquiring Musical.ly. Apparently the next month in October of 2016, a whole team from Facebook goes out and visits Musical.ly headquarters in Shanghai. There’s serious acquisition talks going on between the companies. Just imagine what would have been if this had happened.
+
+Ben: Yeah, which is crazy. It’s crazy to go to China because a very large part of the business was being run out of LA at this point.
+
+David: Yes, Sta. Monica.
+
+Ben: Sta. Monica office, there was a North America GM. Another Alex, Alex Hoffman who was running that so well that the perception by most American using this was this is not a Chinese app. I’m not using something not built here. I’m using a social media app like any other. I think that the product team in Sta. Monica had a lot to do with that.
+
+David: Totally, but of course, Alex and Louis are the co-CEOs of the company. Apparently acquisition talks were quite serious but the deal falls apart and hasn’t been reported why, I don’t know if it was regulatory concerns.
+
+Ben: I don’t think it was price.
+
+David: Yeah, seems unlikely it was price.
+
+Ben: Looking at a $20 billion pick up of WhatsApp. I don’t think it was price.
+
+David: Yeah. We now enter 2017. Musical.ly is still on fire from a growth perspective. They’ve just come out of these discussions with Facebook, with renewed resolve to be an independent company and continue growing not as part of Facebook. The big priority for that year that the team that Alex and Louis decide on is to launch and grow back in their homeland, in China.
+
+I remember they had launched the initial experiment in a bunch of countries including China, but then they’ve totally deprioritized and focused on the West. First in the US and then had grown throughout North America and Europe. But in China, it was a different story and it was a different story for a couple of reasons. One, because everything is different in China. If anyone, if any kind of Western social network or Western-adopted social network is positioned to succeed in China, you would think it was Musical.ly because the founders are Chinese and at least half of the company more than half of the company is based there.
+
+But there are a couple of things that are different. One, the business model for content is very successful in China but very different from how it is in the West. In the West, almost all media companies from traditional media companies through all the social media companies monetized their advertising. In China, the advertising market at this point was not yet anywhere near the level of maturity that it is in the West. Instead, direct monetization is the most powerful business model for social lapse in China.
+
+Ben: Which wasn’t something I realized until we did that Tencent episode. I realized that really, Tencent invented the modern video game business model and a lot of were content in the West is shifting.
+
+David: Virtual goods, gifting, tipping, payments being a huge part of that, and a revenue generator for the platforms. But the gifting and tipping is really, really interesting. Now I’m back to what we are talking about a minute ago with the management of the economy of the network effect between creators and consumers on a platform like Musical.ly and TikTok. The China business model is actually really elegant way to do that. If you allow for virtual goods, gifting and tipping that the consumers can show their appreciation to the creators for any given piece of content or a series of pieces of content, and then those creators are able to exchange those gifts, convert it in part or whole into actual cash, now you can start to make a living and build a middle class on a platform.
+
+This is happening in China and Kuaishou is the pioneer of this. Remember, Kuaishou’s user base is primarily rural, so advertising, ecommerce companies and the like, don’t really have all that much interest. This is pre-Pinduoduo days (which we should definitely cover on another episode), but don’t have all that much interest in reaching these audiences. Instead, they’re able to monetize through this direct monetization. That’s one big thing. Musical.ly has to figure out how to navigate this new business model or different business model in China.
+
+Two, though (and this is going to become much more important as we get towards the end of the story) any time you talk about a media business in China, whether social or otherwise, you are operating in a very, very different political environment than you are in the West. We touched on this a little bit in the Tencent episode. Tencent and ByteDance is going to come in here in a minute.
+
+Basically, any content company—platform or non-platform—in China employs thousands and thousands of censors that are going through all the content, working with the Chinese Communist Party, making sure that the content on the platform is upholding the laws of the party but even the wishes of the party that is super different from a Western social network, be it Facebook, Instagram, or Musical.ly at the time where anything goes.
+
+In late 2017, after working on this for most of the year having this be the major priority in the company, Louis gives the talk at a GGV even where he—imagine he must be a pretty funny guy—says, “I regret not having entered into China’s market earlier. Now I can hear vibrating sounds everywhere making me uncomfortable.” Most Western listeners aren’t going to get what he means there, but by “vibrating sounds everywhere making me uncomfortable” he’s referring to Douyin, which is at this point has been launched by the number one content company in China, most valuable startup in the world, ByteDance. And Douyin means literally vibrating sound or shaking music.
+
+Ben: It’s important to know, too, ByteDance before Douyin was doing very well with Toutiao. I mean, hundreds and millions of users. This is the best news and information technology company in China. When they see this Musical.ly thing is taking off in the US, they’re not effective at entering China, and the world is starting to shift where this short-form video thing that maybe didn’t make sense a couple of years ago in China does makes sense now, it’s effectively a fast follow where ByteDance is like, “Cool, we’ll leverage all have from Toutiao to go and build Douyin, which is going to look a lot like Musical.ly does in the US. We’re going to launch that here in China and beat them to their own country.”
+
+David: Yeah. This is basically ByteDance’s version of Instagram stories here. A word about ByteDance, which we’ve referred to a bunch in this episode. Toutiao, which Ben just alluded to, up until this point was the core app of the company and the biggest and most important product. So what is Toutiao and why does this make ByteDance such a formidable competitor to Musical.ly?
+
+Basically, you could think of Toutiao like Apple News on steroids. Toutiao literally means headlines. It is a news and content aggregation app. Maybe more like Flipboard back in the day. But unlike Apple News or Flipboard or whatever, people spend an insane amount of time on it and like you mentioned, an incredible portion of China, something like half of the internet users of China are daily active users of Toutiao.
+
+More importantly, really early on, ByteDance realized with Toutiao that they couldn’t be limited by formats. They have text and news on there, but they also have photos. They also have long-form video and they also have short-form video. Short-form video within Toutiao is a big driver of engagement and content with the app.
+
+The other really key thing about ByteDance and the reason why they have succeeded above so many of their competitors in China is that their algorithmic recommendations, just like we we're talking about with Musical.ly that made Musical.ly so interesting and different, are the best in the world. They have the best AI technology to quickly suss out personalization for any given user about what they’re going to like and then go scour this immense vast corpus of content that they’re bringing in to Toutiao every single day to find the very best stuff that you’re going to love across all different types of formats.
+
+Ben: Yup and all vetted. Thousands and thousands of censors employed by the company to make sure that that aggregated content going to users is vetted.
+
+David: Yeah. Talk about emote here and a super easily accessible adjacent market for Toutiao and ByteDance to get into is pure short-form video. They’re seeing the super success on Musical.ly in the West. Now, ByteDance has always talked about having aspirations of expanding beyond the Chinese market and being one of the first of the new generation of Chinese internet companies that is going to be a global company. They see what’s going on with Musical.ly and they say, “Okay, this is the perfect Instagram stories, be a copier and fast-follow model for us here.”
+
+The other reason why this is appealing to them is, we talked a minute ago about monetization models in China and advertising versus direct monetization. ByteDance has direct monetization and is capable of that within their products as well. But they’re also the first company that’s really starting to crack the advertising market in China. Again, it gets back to this super sophisticated algorithm which gets to know users’ preference. Just like Facebook advertising where they know you so well, they can recommend content to you, they can also recommend ads to you.
+
+Arguable I would say with Facebook, it’s better recommending ad content than it is at organic content because so much of the way in the algorithm is who you know and who you follow as opposed to Toutiao and ByteDance. ByteDance over the past couple of years has been turning this algorithm into advertising, too, and they’re really starting to build for the first time, a digital advertising market in China.
+
+Ben: Yeah, and what’s important to know here is they launched Douyin that’s going swimmingly in China. Musical.ly frankly is scared at this point because they’re like, “Okay we sat around and missed China for too long. Now, we’re probably going to get beat there.” But similarly, Douyin is launched as TikTok in the US. It does not go well in the US. Musical.ly got this passionate, large, organically-built user base.
+
+Again, I think it’s easy to gloss over the importance of feeling like it’s a native app for your country. There’s not a lot of people using WeChat in the US. Certainly the Chinese version doesn’t feel like it’s for people in the US because it’s not, and the American version is so stripped down that it doesn’t feel right either, but Musical.ly really did. That’s a huge piece of that through the Sta. Monica office. TikTok versus Musical.ly in the US to the extent that you want to win this market, at least so far going to be Musical.ly.
+
+David: It’s interesting. The parallels to Facebook behavior with competitors are so apt here. First, ByteDance copied Musical.ly domestically in China with Douyin. That launched at the end of 2016. Nine months later, in the Fall of 2017, Douyin already has a 100 million users and they’re serving over a billion video views a day. They’ve got this amazing technology that they lifted right out of Toutiao better than anything Musical.ly has.
+
+Two, they’ve got this incredible scale but they’ve got the distribution relationship with consumers from Toutiao. They’re plugging Douyin within Toutiao to all their users. At this point, all the platforms (and especially the Chinese platforms) are super smart to the distribution hack of sharing all your content on to other platforms and then exfiltrating these users. There’s no way that ByteDance is going to let Musical.ly come in into the same thing on Toutiao, they’re going to do it.
+
+We’re now in the Fall of 2017. And that’s when ByteDance launches TikTok and takes Douyin internationally. No, it doesn’t get anywhere near the amount of traction that Musical.ly has. But it’s not really a full test. It’s more like a toe in the water.
+
+Ben: Shot across the bow, too.
+
+David: Yeah. It’s a shot across the bow. We’re now towards the end of 2017. Musical.ly has been struggling mightily in this big effort for the year to enter China, so they’re ready to re-entertain acquisition talks. I don’t know, I don’t believe Facebook was involved in this round but Kuaishou, the original short-form video platform in China, and Tencent are really interested in acquiring the company at this point in time.
+
+Remember, Tencent is a big investor and an acquirer of content all around the world, not just in China. Owner of Riot Games, League of Legends, investor in Epic Games and Fortnight and so many other things.
+
+Ben: And actually, amazingly, when you look over at ByteDance, somehow that company has never taken investment from Tencent or Alibaba.
+
+David: No. Or Baidu, I believe. I think they are the first independent startup out there.
+
+Ben: Yeah, that was the big first generation of the Chinese tech giants, was those thee. And every other one that we’ve covered that’s been a recent.
+
+David: Xiaomi, Meituan, Pinduoduo. I believe Pinduoduo all took money from one of those three, the BAT, the big three in China.
+
+Ben: ByteDance is much more a traditional venture funded mega unicorn.
+
+David: Yeah. And think about Tencent, which of the BAT is ByteDance the biggest threat to, at least right now. It’s Tencent for sure and WeChat.
+
+Ben: TikTok is Tencent’s miss. When you think about what each of those three companies were and their lose US allegory, you have Alibaba being the Amazon, you have Baidu being the Google, and you have Tencent being the Facebook-Twitter. It’s sort of the social. For both ByteDance and Musical.ly to come up developed in China under their nose and end up being today an $80 billion valuation company, is the first big credible threat to Tencent.
+
+David: Yeah. Tencent is really motivated and interested in potentially acquiring Musical.ly. And that’s where shot across the bow from ByteDance launching TikTok internationally right around this time is super important. Once the dust settles, it’s announced on November 10th, 2017 that ByteDance, not quite sure Tencent is acquiring Musical.ly for between $800 million and a billion dollars. The exact number wasn’t announced, but it’s really interesting. You got to think about what drove that decision to sell to ByteDance. You have to think it’s the power of thinking about wow, look at these two platforms do together.
+
+Alex actually takes some time off, but then comes back in and he is now running TikTok, all of TikTok within ByteDance and Louis, I believe, stays on fully all the way through ByteDance, but also if we were to sell and presumably sell for equity definitely to Kuaishou, potentially to Tencent, too, to one of these other companies, and we know now that we are going to have this direct competitor from ByteDance and TikTok all around the world, what kind of slog is that going to be?
+
+Ben: It's a great point. It's interesting to know, too, the scale of both of these platforms at the time of the acquisition. It's like, what do they get for 800 to a billion? Musical.ly had 100 million monthly active users at this point and because of the scale of China, TikTok/Douyin had 500 million monthly active users. They're buying a big company at this point, not necessarily in terms of people or revenue, but that is a thing that tons of people around the world, and really the Western world use all the time.
+
+David: Yeah. We'll get into this maybe [...] forward, but what happened otherwise a little bit. You have to imagine that Musical.ly didn't have a ton of leverage at this point in time because Facebook is already out. We don't know what happened, but unlikely that there's going to be an acquirer. You've got Tencent and Kuaishou interested. Tencent is probably the biggest point of leverage, but Bytedance is executing a build-or-buy right in front of them. There's very little imaginable path that Musical.ly either on its own or as part of Tencent is going to win as a big standalone network here.
+
+Ben: Billions sounds like a big number and it was only up a little bit from the post money on the last round, but when you think about it, it's only $10 per monthly active user. When you think about what does Facebook make off a monthly active user per year in the U.S? It's like $25-$30. So, to be able to go and pick up what might be the next generation of social networks and get those users in perpetuity for $10 ahead, it's a steal.
+
+David: Yeah, totally. They do the acquisition. Initially, Musical.ly and TikTok stay separate but then clearly this makes so much sense. Partway through 2018, they merged the platforms. They renamed Musical.ly as TikTok.
+
+Ben: They don't. This is the craziest thing. I could not believe that this is how it worked because here's what I thought. You buy this and you already have the app installed in everyones phone. You deprecate the old TikTok in the Western world and you just rename Musical.ly to TikTok and boom.
+
+David: Interesting. I assumed that's what they did.
+
+Ben: Me too, and I can't quite figure it out why they did it the other way, but here's what they did. They dupe the backend database. So, they basically said, "If you have a Musical.ly account then when you log into the next generation of TikTok that we'll be putting in the App Store soon, you're entire account will be maintained, so your same credentials and everything.” But they actually created a new and combined app, put it in the App Store as TikTok and told everyone to go download it and say, "Download it and log in."
+
+David: Interesting. You have to go download a new app. Musical.ly didn’t auto convert into TikTok?
+
+Ben: I’m 90% sure. I love anyone to check my research on this and [...]
+
+David: That is actually crazy. If that's the case, then everybody did migrate.
+
+Ben: Here's the nutty thing. Bytedance spent a $1.5 billion over the next several months doing a massive ad campaign in the Western world for TikTok. They spent more than the actual acquisition in advertising dollars to make sure that they made a huge splash. Not only with new users and saying, "Hey, you should go check out this new TikTok app. It's great," but ensuring that all of the existing users moved over from Musical.ly.
+
+David: I think we've seen this on a couple of episodes now, certainly on Disney Plus, our most recent episode. I think it's tempting as a technology company and especially as a social media company, but really any tech company, any consumer facing tech company to think that product and growth hacky distribution is always the key to success. That's wrong.
+
+It's the key to success in the early days, when you are figuring out product/market fit and getting early growth, but then once you’re passed that point and you’re trying to go mainstream, you need to be spending and spending smartly marketing dollars. You need to be doing it on a scale that is going to get you to break through.
+
+This is what Disney had done with other content forever, that they are doing with Disney Plus. This is what Netflix does, this is what Amazon does, this is what Facebook does, and this is importantly what Bytedance did in China, and had raised enough money to be able to do, learn the playbook there, and now they are running around the world.
+
+Ben: Absolutely.
+
+David: They merged the platforms in 2018. That's crazy. I didn't know that's all they did there. By the end of 2018, the combined platforms Douyin and TikTok have 500 MAU worldwide which is more than 2X Snap and already 50% of Instagram. It's the most downloaded app in the iOS App Store for all of 2018. Of course, downloads don't translate to retain users but still pretty impressive. Users spend an average of 52 minutes a day in the app which I believe is significantly higher than any other social network out there. This year, in 2019, TikTok has another 300 million MAU to get this to 800 million MAU total worldwide. They are approaching Facebook and Instagram scale here.
+
+Before we wrap up history facts, we can't not talk about the coda here with Facebook and US, and China and everything going on between the countries and indeed between these companies right now. As we all know, 2019 hasn't exactly been a banner year for US and China political relations and we talked about this a lot in the first episode of the season on our Huawei episode. In January 2019, the think tank Peterson Institute for International Economics comes out and says that TikTok is a "Huawei-sized problem." I was thinking about this during our Huawei Episode. It could be potentially larger than a Huawei-sized problem in terms of a national security threat to the US.
+
+Particularly, for many, many reasons, but one specific use case is that lots of military personnel use TikTok. There are many videos of people in western militaries, they are using it and TikTok is getting their location data, their facial data, biometric data through that, which the company is owned by Bytedance which is a Chinese Company. If the Chinese government were to request that data from Bytedance, even if they didn't want to give it to them, they would legally be forced to comply and give that data to the Chinese government.
+
+Ben: This news changes everyday so this may even change by the time we even release this episode. The Bytedance executives are regularly asked this question and regularly say,"Oh no, we won't do that." But as you say, you would be legally—
+
+David: They may want not to do that. Alex has talked about this. For the version of TikTok in the western countries, not Douyin, the data is actually stored in the U.S. I believe on AWS, on Amazon servers on the US. There’s that, but again, legally, it's owned by Bytedance. Would they have to give that data to the Chinese government if they ask for it?
+
+Then this becomes even more acute in Spring of 2019 and through the summer and through today when the protest in HongKong start and interestingly, they're blowing up on social media all around the western world, particularly on Twitter and so much discussion of it everywhere, but interestingly, not so much on TikTok. Then people start asking the question, "Why aren't people talking about the HongKong protest on TikTok?" Is it because what TikTok says, "Hey, this is a platform for goofing off. This is for making fun, entertaining content," or is it because TikTok is censoring post about the protest?
+
+Ben: Yup. So listeners, as you can imagine, it makes some US politicians uneasy and saying,"Wait a minute, this is a thing that's taking off our country. Surely, this must be subjected to CFIUS review."
+
+David: The Committee on Foreign Investment in the United States, which we talked about several times on this show.
+
+Ben: Yeah. If a foreign entity wants to come in and buy a massive AI company or a massive defense company. It makes sense that the government would say,"Well, let us look at this first." We have this really interesting scenario here where these are both Chinese companies. One with the presence of the US, but tons of users in the US and now close to two years after this acquisition got done, there's now politicians calling to institute [...].
+
+David: Yeah. Formally, a CFIUS review has been opened on the Musicl.ly acquisition which is two years ago, it's already closed in the past, but when it was done, there was no CFIUS review. I mean, (a) because I think people weren't really thinking about this at that time, but also (b) as you say, it was a Chinese company. Super interesting.
+
+I mentioned Facebook. I think you know that all of what we said is true and these are really serious questions and potential problems and things for TikTok, the US government, the Chinese government, Bytedance, and all of the ecosystem to grapple with. At the same time, conveniently, who is out there fanning the flames of this fire and the controversy? Mark Zuckerberg and Facebook.
+
+Remember, 2016, Facebook almost bought Musical.ly and their number one priority, Zuck’s number one priority for that year was figure out how to enter China. Here we are in 2019, and Facebook is completely out of China and proud of it because they are under tons of political pressure (to put it mildly) here in the US. They also now have this emerging threat to their social network hegemony in the west with 800 million monthly active users in TikTok. November 2018, a year ago, Facebook launched Lasso which is their TikTok competitor.
+
+Ben: Their latest attempt to make a really jank independent app that's a copy of.
+
+David: Super jank, fails miserably. Then in 2019, this controversy really starts to grow. Just a couple months ago, in October, Zuckerberg gives a speech at GeorgeTown University where he calls out all Chinese-owned social media in general about these issues around national security, around privacy, and around censorship. But he specifically calls out TikTok and Bytedance as a national security threat and a threat to western values and ways of life.
+
+He may not be wrong, this are super, super important questions but it's also a really convenient misdirect from the equally valid and important questions about Facebook's role in influencing elections, Facebook's own role in free speech, et cetera. It's against the backdrop of all of this that the CFIUS review does get extensiated this month, going back and relooking at this Musical.ly acquisition. It would be really interesting to see what happens. This is probably going to take more than a couple months. Heading into 2020, if CFIUS were to rule to try and reverse retroactively this acquisition, what would happen?
+
+Ben: How can the US force two Chinese companies to uncombine? I guess there's US shareholders of Musical.ly and lots of them. Maybe even more than 50%. I have to assume its more than majority owned by venture investors given the four rounds that they did.
+
+David: It's really interesting, going back to benefits true of what you said about how they integrated Musical.ly and TikTok and if they actually used the TikTok app, the core infrastructure, and migrated Musical.ly onto it. It seems crazy from a product decision, but I wonder if they were thinking about this, if this is now going to be an argument of a potential US. governmental review. This is TikTok. This was never Musical.ly.
+
+The last piece of the puzzle here that we are definitely going to watch play out, a year ago when Facebook launched Lasso (which you've never heard off), it failed miserably. But just a couple of weeks ago at the beginning of November in 2019, Facebook and Instagram launched a test of a new feature in Brazil, in the Brazilian market that they are calling Reels. Just like when they launched stories and copied Snapchat, this is a much more fully-featured TikTok competitor in a new tab, natively within Instagram, so we'll see how that performs. The plot thickens.
+
+It's interesting, one of the reasons we spent a lot of time talking about the core of how the product operates at Musical.ly and TikTok and the algorithmic recommendation, is (1) because that's the secret to the company's success, but (2) it may end up being the moat that protects them here from Instagram copying them. When you think about Snapchat, when Instagram copied stories, it was the same network model on Snapchat as this on Instagram of I'm following, I'm interacting with people I know, or people I care about, or influencers, or whatever. Here, it's not. Is Instagram going to be able to recreate algorithmic feed within Instagram? We'll see.
+
+Ben: That's a great question. Maybe fundamentally different in the way that stories fit in nicely, this may not fit in so nicely.
+
+David: Yeah. All right, acquisition category?
+
+Ben: For listeners who are new to the show, we like to categorize an acquisition whether it's a people acquisition, technology, product, business line, asset, or other. I actually call this one an asset acquisition where the asset they were acquiring was the audience. They were buying distribution instead of paying to build their own distribution. I don't have enough context to know if they actually needed to buy the product or not. I looked at this more like buying distribution.
+
+David: At some point, I can't remember which episode, maybe it was Zillow and Trulia, we added consolidation as a category. I think that's where I would go here.
+
+Ben: It's born [...] when you add more nodes to the network.
+
+David: Yeah. Even with all the differences we talked about, at the end of the day, this was the same product here, with different versions of it, but the same, filling the same need and use case. Just like Zillow and Trulia, or Rover and DogVacay, by being able to consolidate these two companies and these two user bases on both the creator and the consumer side, they were able to drive a lot more scale and network effect sooner.
+
+Ben: I definitely buy that, which I'm going to hold my comments on until grading.
+
+David: All right, the suspense builds.
+
+Ben: I think we pretty much covered what would have happened otherwise. Do you want to go into playbook?
+
+David: Yeah. The biggest thing for me is that I had no idea about all of these dynamics underlying how Musical.ly, TikTok, and Bytedance work, and this really orthogonal view to how all other western social networks operate in having content, being driven by the actual content, and algorithms recommending it as opposed to the people making it. I think this is a huge trend that is super important for entrepreneurs to be thinking about across all types of content companies.
+
+Ben: Absolutely. I would dive into that, but I want to take one step back first and say the way to emerge as a new social network, there's a narrative violation here, whether or not you like the term narrative violation.
+
+David: Yes, I love how Acquired finally made the New York Times for narrative violations. Amazing. Thanks, Erin.
+
+Ben: A narrative violation for sure happening right now is that you can't create a new consumer social network like, “Sorry, we live in the post-Facebook world and that's not happening,” and yet, TikTok did. So, what happened? The way that I was thinking about this is initially, to emerge as a social network and sort of “the one,” it was simple. You could just enable people to communicate with each other with messages or whatever, wallpost, and show information about themselves. Things like basic Friendster or early Facebook. This was very primitive creative expression. It was basically just a communication channel. But the way to disrupt that world is to create a new canvass for people to easily be creative within.
+
+This comes a little bit from Eugene Wei’s theory from this amazing post, Status as a Service, but you basically need a canvass that enables people to be creative without doing a lot of work and to have a large amount of variance in what can be created, because this will facilitate a new generation of creating, sharing, following, and thus TikTok was able to be explosive in growth by nailing the format of this new method for creative expression.
+
+You can consider that basically like an amplifier for the work that one has to put in on what they can get out the other side. By enabling this new format, this new canvass that you have the ability to paint on and be more creative than you thought you can be, it naturally attracts people to it. Then you can bootstrap a new network on top of that. TikTok is about sharing with anyone where Facebook and Instagram where about sharing with friends.
+
+David, this is where I want to bring in your point. There's a much higher K-factor or the viral coefficient when the content can get distributed to that much larger group. This really gets to your point of winner take all. It's really like diving into Metcalfe's Law, which is that aphorism that the value of a network is proportional to the square of the number of connected users in a system or equals N squared. The flaw in applying this to the Facebooks of the world is that with something like Facebook, it's not actually N squared because when a new person I don't know joins Facebook, it's extremely unlikely that it actually increases the value for me. But with TikTok, that's not true.
+
+David: It actually is N squared.
+
+Ben: Yeah, this is a totally new type of network effect that we are looking at, that actually acts as a global system instead of a whole bunch of stitched-together bifurcated personalized systems.
+
+David: As you were saying that, I actually think this trend and theme is even bigger than we've been talking about because for the last 15 years, the phrase “social network” has meant a technology-driven platform with a personal connections on it. It's just been like the friend model of Facebook, the follow model of Twitter, or Snap, or Instagram, or whatever.
+
+It's just this implicit assumption that all social networks are based on relationships between people, but that's not at all what TikTok is. In many ways, YouTube is much more similar to this, too. The relationships are about the content and it's about relationships. It's one to many relationships between creators and consumers and unlike YouTube though, on TikTok, a much higher percentage of consumers also become creators.
+
+Nowhere near 100%, not as high as Instagram but much much higher than YouTube because the barriers to creation is much lower because of the short-form format versus the long-form format on YouTube. Actually, I think you could make one of two arguments. Either that this represents a wholesale rethinking of what “social media” is or it's a different category altogether.
+
+It's not social media, it's pure media, like UGC driven media and to this narrative violation of you can't create a new social network, maybe that's sort of true. If you think about how Snap came on the scene and competed with Facebook, it was a competing social network. It's just that they found a separate network of users, in younger users that weren't attracted to Facebook, but it was a substitute product and same with Instagram.
+
+This is not that. It really isn't. Even though most of the users are young right now, that is not going to be the case forever. This is a network that's going to have a broad universal appeal just like YouTube because it's not about the people, it's about the content, and they can find the best content for you whether you're 9 or 90.
+
+Ben: What you are really seeing is the purest distillation of social network versus social media in a way that we blur them together before. This is very much a social media, really not a social network, whereas if you look at something like Facebook, it's much more [...].
+
+David: It's a social network.
+
+Ben: Why TikTok has been so explosive is it's all the benefits of YouTube like true social media where someone creates content and it could benefit literally anyone around the world, not just their little community of people that they are friends with, but it's also the best of Facebook or Twitter where it satisfies that instant gratification, short-form, in-the-moment, bite-sized content.
+
+David: Yeah. I love YouTube. We got to redo that episode because we were so wrong. But I'm never going to whip out YouTube while I'm standing in line waiting to check out at the register, but I might whip out TikTok because all of the videos are 15 seconds or less.
+
+Ben: Yup, which actually this is a double-edged sword. This leads to my bear cases on [...] and there's a bear case that is SoftBank-invested, which is it's own bear case, and you can also say $80 billion valuation—
+
+David: In Bytedance.
+
+Ben: Yes, but the one that is more based on fundamentals, is...
+
+Facebook has been entrenched in my life since 2005 or 2006 because it carries all the people I have ever met with me. And yeah, a lot of them fall off the network -- and maybe some moved over to Instagram and don't post on Facebook -- but that's based on a really solid bedrock of important things in my life.
+
+With TikTok being so much about instant gratification -- and me not really knowing any of the people I follow --  will it actually have that sort of staying power that Facebook has had by having that social network that's important to you?
+
+David: I think that's a really good question.
+
+Ben: And to get back to our previous conversation, maybe social media has higher short-term value because of the incredible propagation, but  social networks have more long-term staying power.
+
+David: I think it is even more important for TikTok and other potential social media networks like it, certainly like Toutiao to constantly refresh with new fresh relevant content because that's the lifeblood. If the firehose of new content creation that is coming into TikTok everyday, if that dips or dries up, then the algorithms aren't going to have amazing new content to recommend to people and the value of the library of old content probably gets stale much more quickly than the value of digitizing your relationships with all your friends.
+
+Ben: Which means the better comp here is actually YouTube than Facebook.
+
+David: Yeah, totally.
+
+Ben: Grading?
+
+David: Let's do it.
+
+Ben: I have a take. I was thinking about this before jumping on. The task of grading, if we think of ByteDance will make back the billion dollars they spent on Musical.ly with their current business model, it's tricky to back into that based on CPMs or average revenue they make today per user. To take a different angle at it, I want to talk about an episode we haven't done which is Facebook buying WhatsApp.
+
+Without doing any research, I preliminarily think that's going to be an A and the major reason being Facebook seems to have a monopoly on being the dominant social network. That allows them to be the best marketing channel in the world to reach consumers targeted by demographic or interest. If you think about it, before TikTok there were six social networks with over a billion users. I looked this up a few minutes ago, it's in order: Facebook, YouTube, WhatsApp, Facebook Messenger, WeChat, and Instagram. This is global.
+
+Facebook owns four of the six billion plus person social network or social media properties. If you take that lens on it, Facebook, which is a $200 billion market cap company only having to drop 10% of their entire enterprise value to protect against the greatest threat to them out there, it's actually still a fantastic move at that time even if they are not monetizing WhatsApp now. It's basically now a $20 billion insurance policy to allow them to keep printing that $20 billion in net income that they generate every year.
+
+Bringing it back to Musical.ly, which is only a billion dollar acquisition, and if you believe that that was essential to enable TikTok to become the insane platform that it is today, somewhere between half a billion and a billion MAU. David, I think you estimated it at like 800 million.
+
+David: Eight Hundred million, even though assuming nothing major changes, it will be a billion soon.
+
+Ben: Yeah, it seems like a no brainer that it will be this sort of first legitimate challenger to Instagram, which is really what Snap was supposed to be but fell short of with only 300 million monthly.
+
+David: But then again, I think the difference is, yes, Snap’s network effect was relegated to a specific demographic of people. I think there's a chance that's different for TikTok.
+
+Ben: I think you are right. I think that's why if you take the top down market view and analyze it based on buying a ticket to attend that billion dollar social network dance, I absolutely think it was a fantastic purchase and probably one that will go down in history as one of the best ever, if (1) TikTok can hold on and can actually, to the point that we are talking about earlier, create lasting value, to have staying power, to be able to make sure that even though they don't really own those personal relationships that are an important part of your life on an ongoing basis, and (2) really start to turn on the gas and monetize like Facebook has been able to.
+
+David: So, you are an A?
+
+Ben: I'll say A.
+
+David: Okay. I have one overarching caveat to all of this. I'm also going to be an A, but one overarching caveat which is all depending on what happens with the CFIUS review, that could throw a huge wrench in everything here.
+
+Ben: It could be multiple of billions of dollars of lighting money on fire.
+
+David: Totally. We are going to grade this just from a peer business perspective, assuming that there was no review of it happening when the acquisition was done over the last couple of years and let's assume that the acquisition doesn't get reversed. That's it. I'm also an A for, I'm not an A+ though, so I'm an A because for two reasons.
+
+One, this is what makes Bytedance exciting. All of these dynamics, that's the reason why it was and is the highest valued startup privately held company in the world. They would have been completely fine without Musical.ly, but I think they would have had a very hard time penetrating into the West. They would have been able to expand outside of China into other Asian countries but getting into the West and specifically into the U.S. in such a big and quick way, would have been really hard. This is their path to do that one.
+
+Two, as we talked about in acquisition category for consolidation, just generally for these two products in the space, combining them is going to allow them to grow much faster and with far fewer road blocks. Again, it all goes back to the flywheel effect between content that the creators are creating and the consumers consuming that content, and kneading the firehose of new compelling content by getting all of it all around the world onto the same platform. That's really going to drive things much faster.
+
+I think it's not an A+ though, because to me, an A+ is like this one company and this one acquisition created a new category like an Instagram. Facebook was not going to succeed at doing Instagram on it's own, I forget what their clone was called. They needed to buy the company (where Apple and Next). I think that's why I'm not an A+, but with the caveat of CFIUS, totally agree I'm an A.
+
+Ben: Cool. Do you want to do our first carve-out in a while?
+
+David: Yeah, let's do it. I've got two saved up. One because we haven’t done it in a while and two, for the holidays. My first carve-out is the Nintendo Switch Lite. I bought it when it came out and it's awesome. I haven't owned a video game console in years, but I'm travelling for Thanksgiving so listeners, if my audio call is a little bit on this one, I apologize. It's just been so great. I played no new games on it. I just bought Breath of the Wild on Black Friday, but haven't played it yet.
+
+Ben: You shared this with me a couple of weeks ago that you have a switch and you've only played the classic Nintendo games.
+
+David: I've only been playing Super Nintendo games and then I bought a few. There are a bunch of both Indie titles and reissued games on previous consoles in the Nintendo EShop that are all so good. I'm not even that excited to play Breath of the Wild, I'm just enjoying going back and playing like Super Metroid, Castlevania, and all of these stuff. That's one.
+
+My second carve out is Jenny and I were with my family for Thanksgiving and we went out last night and saw the movie Knives Out with Daniel Craig. I knew very little about it. I wasn't expecting it to be awesome, but it was really fun. Super great holiday movie, really well done.
+
+Ben: I got to see it. Mine actually has to do with this episode, but I won't tell you how until the end so I'm going to recommend a Nine Inch Nails album from 2008.
+
+David: I know where you are going on about this.
+
+Ben: I remember discovering this in college. First of all, I'm a big Trent Reznor fan and a lot of the harder, more classic Nine Inch Nails stuff has when you’re really going to have some good speakers around and rock out. Unbelievable live shows. All of the soundtracks that he's done with Atticus Ross, including Social Network, Gone Girl, and most recently Watch Men have been awesome. He released this album called Ghost I-IV. It's a four disk album and it's actually my favorite music to work to. It's sort of deconstructed tracks, they are very minimalist tracks, and it's great to put it on think music.
+
+My two favorite tracks on it are Track 26 on Ghost III, Track 29 on Ghost IV. You should go play both of those right now on Spotify because they are great, but the one I recommend today is Track 34 from Ghost IV which is the sample that is the base of the beat in Old Town Road.
+
+David: So great. We'll link in the show notes. The New York Times did an awesome both a text piece and also a video reporting that is on YouTube, where they go and interview the producer in the Netherlands who used the sample and made the beat. It's so good.
+
+Ben: It's awesome. It's one of the things where I always knew listening to Old Town Road, I know something like what this beat is but I never put two and two together and then watching that New York Times video, I was like, "No way. It's actually Trent Reznor under this whole thing." I just thought that was the coolest thing.
+
+David: Amazing. Trent Reznor and Billy Ray Cyrus, Lil Nas X, and Tiktok. I’m thinking of the name of the producer from the Netherlands. But anyway, that is a true 2019 moment, if there ever was one.
+
+Ben: Absolutely. All right, listeners. That is all for today. If you liked this episode or anything that we've done, please don't be shy about sharing it on social media or leaving us a review on Apple Podcast. We haven't mentioned that for a while, but it's an awesome way to help the show grow.
+
+I learned recently that the iTunes charts are actually dictated by the number of subscribers per unit of time in the Apple Podcast app, so if you listen in a different app and you want to help us bumped up the charts, you should go and click subscribe in Apple Podcast. I think we are starting to get into that territory where we’re getting a bunch of nice organic traffic from people looking for new technology shows to listen to and seen us on the chart. Thank you so much for doing that, or leaving a review, or sharing with us. We really deeply appreciate you helping to grow the show.
+
+David: By the way, if you are an entrepreneur or aspiring entrepreneur and you’re thinking about making the TikTok for a podcast, get in touch with us.
+
+Ben: David, I have so many; email you after this.
+
+David: Awesome.
+
+Ben: If you want to go deeper on any company-building topics, you should consider becoming an Acquired Limited Partner. You can click the link on the show notes or go to glow.fm/acquired and all new listeners get a seven day free trial. Lastly, if you want to join us with Dan Lewis at the Convoy Live Show here in Seattle, that link is at acquired.fm/liveshow. With that, thank you to Silicon Valley Bank and we will see you next time.
+
+David: See you next time.
+
+‍

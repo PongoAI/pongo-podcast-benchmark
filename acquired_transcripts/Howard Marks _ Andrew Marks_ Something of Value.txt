@@ -1,0 +1,685 @@
+Ben: Welcome to this special episode of Acquired, a podcast about great technology companies and the stories and playbooks behind them. I'm Ben Gilbert. I'm the co-founder and managing director of Seattle-based Pioneer Square Labs and our venture fund, PSL Ventures
+
+David: I'm David Rosenthal, and I'm an angel investor based in San Francisco.
+
+Ben: We are your hosts. Today, we have two guests with very different investment styles, a value investor and a growth-oriented tech investor, head to head, but not just any investors. We are joined today by the legendary value investor, Howard Marks, the co-founder of Oaktree Capital Management and his son, Andrew Marks, the co-founder of TQ Ventures.
+
+Oaktree, for those who don't know, is one of the leading investment management firms in the world specializing in alternative investments with $159 billion in assets under management as of the end of June 2022.
+
+David: Probably, far fewer of you know Andrew and his firm, TQ Ventures. What they've accomplished so far is pretty equally impressive in a very different field. As we'll talk about, TQ is an early stage venture firm that Andrew and his partners started about five years ago. They have a billion dollars under management now, including, I think a $500 million third fund that they just closed just a couple months ago.
+
+I can say I do know that their returns so far had been top decile across all venture funds raised during that time period in all of those vintages. We get to know Andrew over the years as a quiet community member and a listener. I've gotten to know him in the context of Kindergarten Ventures, my AngelList fund that I manage with Nat Manning.
+
+A little over a year ago, Andrew and Howard co-authored one of Howard's famous memos together in a departure for Howard, where they were debating over Covid together as a family, as father and son, value investing versus growth investing, tech investing, and what was going on in the markets. They turned it into a memo. It ended up becoming—we'll talk about it on the episode—Howard's most popular memo ever, which is incredible at a career spanning many, many decades as one of the most popular authors of investment memos.
+
+Ben: Oh, Howard's memos and books are among the most coveted in the entire investing landscape. Even Warren Buffett is quoted in saying, "When I see memos from Howard Marks in my mail that are the first thing I open and read, I always learn something." Well, if you want to discuss these topics with us after you listen, you should join the Acquired community acquired.fm/slack.
+
+Our new merch store is available at acquired.fm/store. You can listen to the LP Show by searching Acquired LP Show in the podcast player of your choice or get new episodes two weeks early at acquired.fm/lp.
+
+Now we are very excited to welcome back to Acquired our presenting sponsor, Vanta, the leader in automated security and compliance. We are enormous fans of Vanta and now investors. Their approach to the whole compliance process, SOC 2, HIPAA, GDPR, and more, we've got CEO and co-founder, Christina Cacioppo, back with us today.
+
+David: All right. Christina, we talked last time about the story of the tremendous round that Vanta raised at the end of April, even as the world was falling apart around you. But now that you've raised that round, how are you operating the company now in this environment that has changed quite a bit here in 2022? What advice do you have for other founders who are in the same boat?
+
+Christina: Yes. I think at a high level, a lot of actually what's said on Twitter and the advice that's given out is really good. Take the last round you've raised, presume it's your last or at least you're not going to raise for maybe two to three years, and operate the business accordingly. Also going to assume a bunch of your metrics, they're going to degrade. Whether you're going to spend more to Acquired customers or the retention is going to dip, I think that's all really good.
+
+A few things we've done just super tactically, I tend to find technical advice actually helpful to take the platitudes down to what we're actually doing. We have an operating plan for two and a half years that we are revisiting on a weekly basis, and then we'll make updates on a monthly basis. It filters in the hiring and filters in the marketing budget. It's just designed so that we, again, have the runway we expect, despite whatever changes might happen.
+
+We can just look at the plan, look at the actual results, differentiate them and be like, okay, can we speed up hiring? Should we slow down hiring anywhere else? What should we do based on what just happened and having those touch points? We have a set of people responsible for looking at the data and making the decision every month. It's super helpful.
+
+Another thing we do is we have napkin math for a bunch of different roles. That's how we figure out whether or not we can be comfortable with the hire in this environment. It varies per role. But for accounting executives, it's very much a pipeline and an attainment number. Our current salespeople are attaining at a level such that we want to bring on new folks.
+
+We also do a bunch of sales capacity modeling within the Salesforce school of thought that are zero, Stevie brought in. We have these mini AEs with this quota and this attainment, what do we think revenue can be. From that, then we'll back out a customer number and then back out a number of CSMs, then implementation managers.
+
+It's pretty much fourth grade math, but much more helpful than, oh, do people feel overloaded? Does anyone feel like they want to go recruit? I think in that world, you get, in some cases, too little recruiting, in some cases, too much.
+
+Ben: Fascinating. It's doing a lot of focusing on headcount related to revenue and trying to tie that as closely to predictable revenue as possible based on all the data you have on your existing headcount.
+
+Christina: Exactly. The go-to market side of Vanta, I think, especially as an SMB-focused business today, you can operate in this predictable, almost machine-like way, on the go-to market side. I think for the engineering, product, and design side, that's a little different there. We're actually just hiring as much as we can. It's great in this environment versus last year, honestly, but very much predictable revenue on the go-to market side.
+
+David: That is great.
+
+Ben: Our thanks to Vanta, the leader in automated security and compliance software. If you are looking to join Vanta's 3000+ customers and get certified for your compliance in weeks instead of months, you can click the link in the show notes or go to vanta.com/acquired for that sweet 10% discount.
+
+Now on to our interview with Howard and Andrew Marks. Remember, the show is not investment advice. David and I may have investments. The companies we discuss in the show are for informational and entertainment purposes only.
+
+David: It's such a treat to have you both here. The memo you wrote together is something of value. Howard, I believe this is the most popular memo that you've written across your entire illustrious career. Is that correct?
+
+Howard: That's right, David. Previously, that was held by. When I wrote it, I think it was in January of 14th or 15th called Luck, in which I talked about how lucky I've been and that I'm a big believer in luck. It's great to be on the right side of it. I listed about a dozen ways that I think I've been lucky, and people like that because it showed the personal side, as did something of value.
+
+David: You write in the memo about how this came to be of the two of you collaborating over the pandemic, but maybe here to recap on the podcast. How did this amazing thing happen of a father and son writing this incredible piece of work together?
+
+Howard: Nancy and I came to California on March the 6th of 2020. Oaktree was scheduled to have a conference for its clients on the 11th. Although we canceled the conference, we did record it at the conference venue for live streaming. We were in LA, which of course is Oaktree's headquarters. Andrew and his family came out on the 13th and moved in with us. We stayed that way for, I think, until June. We were incarcerated together.
+
+First of all, we have fun talking about what we do and kidding each other. We have a lot of differences, we're not the same person. Andrew's business is different from mine. His general mindset is different, what he learned 40 years after I learned what I learned, initially, hopefully, still learning, both of us. There were a lot of instances of differences, and that made for a very spirited period and I hope a spirited memo.
+
+Ben: How many memos had you written before this first one that you co-wrote together?
+
+Howard: I've never actually counted them, but I think it's about 160.
+
+Ben: Just trying to frame for listeners, Howard Marks' memo is a thing in the investment community. It's crazy to see one come out with both your names on it. I remember first seeing that and thinking, oh, this is going to be cool.
+
+I'm curious if you had, even before we got into the content and the debate that you had and created the tension with it, did you yourself have any reservation of, oh, my gosh, am I changing the nature of what the memo is by co-authoring it with Andrew?
+
+Howard: No, because, first of all, he didn't get near the keyboard, but we communicate really well. The ideas that he expressed, many of the ideas came from him as counterpoint to mine. When he expressed them, it was clear that we'd have a really good talk.
+
+Andrew: Yeah. I think what's also interesting is that I have been an investing nerd since I was really little, but only evolved into investing more in what you would call growth companies or what would generally be called growth companies. I started off being a value investor first parroting my dad, as all little kids do. I got fortunate into the Buffet letters really young, so I turned into a huge Buffet nerd and all the things that come with that.
+
+My trajectory was across the value end of the spectrum to the growth end of the spectrum. I had to make that journey myself, and understand how the two relate, and why I thought spending time in one area was better than spending time in another area, or whatever. I was sort of able to talk to my dad and his language. It definitely wasn't a debate, it was just more of a discussion of how things have evolved and trying to examine it a little bit.
+
+Ben: Andrew, do you recall in your journey, over the course of your life, the first time where you saw what you felt was a really attractive investment opportunity in what people would consider growth investing, high growth investing, or tech investing, that felt counter to some principles that you had internalized from your dad from reading the Buffet letters from your style of investing earlier in life?
+
+Andrew: I can't remember a specific one. I think the evolution happened a little bit gradually. A value investor, you would look at what the current cash flows of the business are, and valuing it on that, and not making much assumption for growth. There's a cohort of growth companies that weren't exactly tech companies in the way that tech companies look today. You could look at things like we're rolling out stores is a big thing, Starbucks, the auto parts companies, Walmart, or Costco, all that type of stuff.
+
+Also, things were really attractive. Acquisitions and synergies were attractive or were a huge part of the story. John Malone's cable roll-ups and things like that. What's interesting is you learn that, instead of looking at cash flows, there's this concept of maintenance cash flow, and then you could think about where to reinvest that. If you can reinvest that at really high rates, really attractive rates, that's a better thing to do than just hoarding the cash or whatever.
+
+By the way, Buffett talks about this when he talks about the concept of owner earnings and things like that. It's not too far to then say, well, those same sorts of investments, you can make them out of the cash flow statement, but you can also make them out of the income statement, things like high return sales or talented engineering teams, and R&D, and things like that. I think I just got exposure incrementally to different sorts of things that traverse that spectrum. That's where I found what made sense to me.
+
+David: I have to ask both because it's fresh on our minds, given recent Acquired activity, but also you write about it in the memo. I can think of no better example of a company than Amazon. What have been two of your journeys with Amazon? Did you discuss that? Was that part of this thinking about value and growth, perhaps not being two different things?
+
+Andrew: I think it's also really interesting, because a typical value investor, you look just at the fundamentals of the business and you look at the economics of the business. Buffett is very famous for saying that you want a business that an idiot can run.
+
+Ben: Because eventually, someone will.
+
+Andrew: Yeah, exactly. He talks about the primacy of business model over management. I think Amazon's a great example of the opposite, because if you owned Amazon when the story was about growing as a retailer, you could have never dreamed of AWS. That shows what happens when you bet on an amazing founder who can leverage their business to create value in really compelling other ways. I think it's a great business case study, but it's also a case study of putting faith in a management team and recognizing the optionality that comes with that.
+
+David: Howard, did Amazon ever intersect with your investing career?
+
+Howard: No, I'm a recovered equity investor. I was in the equity research department at Citibank from 1969-1978, and then I left. In the credit field, where I've spent the last 44 years, we historically have not had contact with what you would call a tech company.
+
+David: Although they had some distressed debt at one point in time after the tech bubble.
+
+Howard: Yeah, but again, remember, we put a very heavy emphasis on predictability. I think that for the most part, Oaktree does what Warren and Charlie do. They put it on the pile too hard.
+
+Andrew: By the way, one other thing that I would add about Amazon that may be too wonky, but also may be interesting, is I think it's also an example of one of the things we talked about in memo, which is it's hard to just take a knee jerk 30,000 foot view, and you really have to dive in and understand things. What people said for the longest time was that Amazon was losing money and could never be profitable.
+
+David: A charity run for the benefit of the American consumer.
+
+Andrew: Exactly. That came from looking a lot at the income statement and recognizing that they were losing money, partially, because they were continuing the lower price to achieve scale. I think what's interesting is they actually had a very favorable cash conversion cycle. The business was much more sound from a free cash flow perspective, much earlier than it was from an income state perspective.
+
+David: Michael Mauboussin wrote the research note that was not as popular as Amazon.bomb and Amazon.toast, but he called a cashflow.com, and that's what it was.
+
+Andrew: Yeah. I think it's just another sign of the fact that you probably shouldn't come to a conclusion about something without really trying to understand it for yourself.
+
+Howard: This captures two of our earliest points of discussion. (1) The companies we're talking about are more complex than the simple profit earners of the, let's say, deep value era. You can't, as Andrew says, have a knee jerk reaction to some superficial knowledge. You have to really get deep.
+
+(2) The other concept was this idea of optional profitability. The value investor wants to maximize cash flow and profits, EPS, but the growth investor sees losses sometimes as the right thing in the interest of the future. That's a very, very important divergence.
+
+Andrew: But also very often not. You can't just be in one camp and you can't say, well, I shouldn't care ever about losses, or I should just take for granted that all reinvestments and growth are good, but you also can't take the point of view that none of them are good.
+
+Howard: Right. Wasn't it Mark Twain who said all generalizations are flawed including this one? By the way, when I say the value investor does this and the growth investor does that, probably, the biggest single theme of the memo was that that dichotomy should not be so hardwired.
+
+David: Yup, which is so great. You make the point in the memo, which we talked about a lot in our Berkshire series. Ben Graham made the lion's share of his money on GEICO, which was not a value investment.
+
+Howard: Right. I think one of the great enemies of profitability is rigidity. I'm lucky. When I switched to managing money by switching to the bond department at Citibank and there couldn't be a bigger backwater at the time, they said, could you figure out what high yield bonds means and start a fund? I found this area where everybody said, oh, no, no, we don't do that.
+
+Most investment organizations had a rule against buying bonds that are rated below A or below triple B. I'm buying single B bonds and everybody says, no, we don't do that. Well, guess what? When you go to an auction and you sit down, take your seat, and you see there are no other bidders, that's usually a good thing. The point is open mindedness was really the most important single theme of the memo, I think, along with continuing to evolve your thinking as you get older.
+
+David: Can you take us back a little bit to that moment when you were starting to do high yield investing and nobody else was? I assume Milken wasn't active at this point in time.
+
+Howard: No, Milken was. Mike had been interested in low rated bonds. I think, all along, he got out of Wharton the same year I got out of Chicago in 1969. Among other things, he wasn't dedicated to an area, but I think he found low rated debt.
+
+There's a famous book called Hickman, which talks about bonds experienced from 1900-1943. Supposedly, Mike found that book. He read in it that the lower a bond's rating was, the higher its actual rate of return was. Not as promised yield, but it's realized total return, because, yes, there had been some defaults and bankruptcies.
+
+Let's remember that that period included the Great Depression. But nevertheless, the excess yield you got as an inducement, was more than sufficient to offset the credit losses. That was like an aha moment for him. At that point in time, it was impossible to issue low rated bonds. They were called non-investment grade, speculative grade, and you just got an issue.
+
+David: Ah, so the big banks weren't doing it?
+
+Howard: Right, and the big investment banks, which in those days were separate, the big underwriters. Let's remember that in Moody's Manual, it defines a B-rated bond as follows, fails to possess the characteristics of a desirable investment.
+
+When I teach classes about this, I say to them, let's go down to the street. I have a car there, I don't need it any more. You have money and you need a car. Before you say whether you'll take it or not, hopefully, you're going to ask me one question. What is that question?
+
+David: I'm debating whether the question is, what's the value of the car and what's the price of the car? But I want to know both.
+
+Howard: The value, you can't ask me because I'm a seller.
+
+David: Right. Okay, I want to know what the price is.
+
+Howard: You can ask me the price. Hopefully, before you say, I'll take it or I won't take it, you know the price. In 1978, Moody said these bonds are not proper for investment regardless of price. How can that be?
+
+Andrew: The other thing that you say sometimes is, how can life insurance companies make money knowing that every single person is going to die?
+
+Howard: That right? That was one of my real epiphanies. Around 1981 or 1982, one of the first financial cable shows interviewed me. The reporter said to me, how can you buy these bonds? You know some of them are going to default. This is one of those times when you just get the answer, it pops into your mind. I never thought of it before.
+
+I said, the most conservative companies in America are life insurance companies. How can they insure people's lives when they know they're all going to die? The answer is, (1) It's a risk they're aware of. It doesn't come as a shock when somebody dies. Nobody breaks into the board meeting and says, hey, one of the people died.
+
+(2) It's a risk you can analyze. They sent a doctor to your house to see if you're in good enough shape to get a policy. (3) It's a risk you can diversify. Nobody ensures just skydivers, or just people who live on the San Andreas Fault, or just smokers, but they diversify, they book. (4) It's a risk they're well paid to take. They look at me, they say this guy's going to die at 90, and they priced the policy on the assumption I'm going to die at 75.
+
+David: There's your margin of safety.
+
+Howard: Exactly. I said, this is exactly what we do in high yield bonds. We started doing it, and we made money steadily and safely investing in the worst public companies in America.
+
+Remembering my background, I joined the investment business in September of 1969. I had a summer job in 1968, so I got to look at it. But in 1969, I went to work permanently at Citibank's investment research part.
+
+The bank was what was called the Nifty 50 investor. The Nifty 50 were considered to be the best and fastest growing companies in America. Companies that were so good, that (1) nothing bad could ever happen and (2) there was no price too high.
+
+David: This was the polar opposite of not appropriate for investment.
+
+Howard: Exactly. For the Nifty 50, it was no price too high. For the high yield bonds, there was no price low enough. Of course, both stances are wrong. If you bought the Nifty 50 the day I got to work and if you held it tenaciously for five years, you lost almost all your money in the best companies in America, for the main reason that they had been priced too high. The normal PE ratio for the S&P is 16, postwar. These things, a lot of them were selling between 60 and 90.
+
+David: Gosh. I don't know any companies like that today.
+
+Howard: Yeah.
+
+Ben: Was it the case that they were not the best companies in America, or was it the case that they were the best companies in America, but they were just priced too high to make sense as investments?
+
+Howard: Some of each. They were all priced too high, but some, in addition, it was illusory. Let's go down the list. The granddaddy was IBM, the same way you can't be fired for buying IBM. Did IBM go bankrupt? Maybe, I don't remember, close. Xerox was number two. They completely lost their market to imports, they had to find a new business model.
+
+Andrew: The consumer companies and the tobacco companies were part of that too.
+
+Howard: For the most part, they did better. But I'll tell you one consumer company that didn't do well, and that's simplicity patterns. That was in the 50. Do you see a lot of people sewing their own clothes today? If so, you travel in different circles, for me, but that was considered a company that could never be heard. Maybe Sears was in there, I forget.
+
+The concept of disruption was never considered. The moats were considered violet. The thinking was really simple. Nobody thought about the fact that if Xerox priced their copies at 30¢ a piece, somebody from abroad could produce it and that presented a price umbrella that somebody else could get underneath.
+
+In those days, the Wall Street Journal used to run a box on the first page whenever something would crop out, showing the losses in a certain category. We had lots of companies where you lost more than 90% from the high to the low.
+
+Andrew: To go back to your question, I think if you're an investor, you have to have a couple of different skills. One is you have to think about the future potential of the company. That's what my dad was talking about, about moats, disruption, and things like that. The second thing is you have to think about, well, what's that worth versus what is that selling for?
+
+If you come back to the fundamental ideas in the memo, one of them is that all investments in equities are worth the discounted value of their future cash flows from here to eternity. For some companies, those cash flows are more in the here and now. For some companies, those cash flows are very far away, but they all go into the formula.
+
+By the way, if you think about the nature of a DCF formula, every company requires judgments about the future. It can be a seemingly stalwart company that has immense consistency and whatever, but those can be disrupted.
+
+Howard: I think the greatest example, one of the industries that all the values people thought were impregnable. Great. moats were the newspapers, because you had your newspaper, you didn't have to worry about competition from the newspaper in the town next door, you were entrenched, it only cost 15¢, so nobody would stop buying it in tough times.
+
+Andrew: If you wanted to advertise, you wanted to advertise in the paper with the most circulation.
+
+Howard: The local movies had to be in the local paper, the local one ads, the local car ads. The great thing was that if the consumer bought it today, guess what, they had to buy it again tomorrow, because it had a one day shelf life. What could be a better business? Twenty years later, most of the companies that are in the industry are fighting for their lives.
+
+Ben: If I could just make an observation, you sound like a crazy person when you assert that en masse very quickly consumer behavior is going to change. If you would have told me when I was reading the paper, and this was the most important thing in America, newspaper values are mostly going to go to zero because all of the consumer attention is going to be shifting to consuming everything on their computers as an interconnected web of servers that doesn't really exist yet.
+
+Therefore, the newspapers won't have value. You'd be like, what? If you came to me 10 years ago and so Facebook bought Instagram, and they're demonstrating their ability to constantly keep all the consumer attention. But eventually, actually, this Chinese company is going to start and it's going to be short form, but Facebook won't figure it out this time. All the consumer attention is going to shift, and I'd just be like, you're wrong. I just don't believe you.
+
+Andrew: Yeah. That's, of course, true. But I think the other thing that's really interesting to note, there are these very widely circulated charts of the speeding up of technological adoption. It was very possible for companies to be much more durable back then than it is today, in my opinion.
+
+If you transport yourself back to 1950 and you think about, well, how many businesses are there, where I think I can say, with high conviction that they'll be the same in 10 years as they are today? I think that number would probably be much, much higher than you could say, today. Without understanding what management is doing to further entrench their moats, fend off competition, or continuously evolve or whatever, it's very, very hard to say, well, with no minding of the ship, this business will just stay consistent.
+
+David: There are very few businesses that idiots can run these days.
+
+Howard: I'll tell you to second what Andrew is saying, if you go back to my youth, in the 50s, when I was a young man in the 60s and 70s, you just didn't have the feeling that the world was changing. My thought model for the world at that time, looking back at it, is kind of a consistent backdrop, like on a stage.
+
+The actors do their thing in front of the backdrop, but the backdrop doesn't change. There are cycles, ups and downs, excesses, corrections, and all these things, but the world hasn't changed much. Comic books were a dime for my whole youth. But today, everything changes every minute.
+
+Ben: Here's a question then. Should companies be worth less? Because if the future is more uncertain, and it's more likely that things get disrupted, and moats are less permanent than they've ever been, shouldn't we consider less future years of cash flows?
+
+Andrew: Like everything, it's a double edged sword. On the one hand, you just made the point that without minding the ship, companies are much more potentially disreputable. But on the other hand, that means if you have competitive advantages, and you continue to mine those advantages, and you use them to enter adjacent markets, launch new products, or going after other markets, geographically or whatever, there's much more value creation to be had.
+
+I think the ability to leverage your advantages and build more for the companies that are really doing so has probably never been higher. By the way, with the internet, you can address global markets. We just talked about newspapers where you can address the town next door.
+
+One of my favorite writings on investing, it's not actually about investing, but it's this guy, Brian Arthur. He wrote something called Increasing Returns in the New World of Business. That was in the mid 90s. He made the observation that with the new world, with the new distribution models of things like the internet and whatever, the best companies could continue to get bigger and bigger, whereas you were sort of kept out more in the old world, so you would have diminishing returns to scale over time.
+
+By the way, that couldn't have been more right. If you look at markets over the subsequent couple decades and you have companies like Apple, Amazon, Google, and Microsoft, that just continues to get bigger and bigger. I think a lot of that comes from the fact that they're just continuing to dominate more and more of various markets.
+
+David: This is one of my favorite pieces of trivia of all time about that paper. Brian Arthur was friends with Cormac McCarthy, the author wrote All the Pretty Horses in No Country for Old Men. Cormac helped shape the pros in that piece.
+
+Andrew: Oh, very interesting.
+
+David: It's one of the reasons why it's very successful.
+
+Andrew: Yeah. I guess for an economist, it was extremely well-written.
+
+Howard: Before I lose the opportunity, I just want to add one thing to Andrew's list of criteria for success in this continued expansion mode, and that is companies that are able to avoid the negative effects of success. You have to stay lean, flexible, unbureaucratic, and future looking.
+
+Ben: Andrew, you're pointing out this really interesting thing where you have two opposing forces that have butting heads. One is now we have globally addressable markets, so TAMs are bigger, therefore, market caps can be bigger. At the same time, competition happens faster than ever, because paradigms change faster than ever. Therefore, the future is less certain than it's ever been, despite the fact that the opportunity for any given business is the largest it's ever been.
+
+Andrew: Yeah. By the way, I wouldn't just say global markets. I would say strategically adjacent markets as well. Again, look at the big companies and how they continue to step out and do more and more in things that are tangential to their existing businesses. Amazon's a great example of that. They started in books, then they went to the media, and then continued on, and on, and on. Eventually, they leveraged their scale into cloud computing and whatever.
+
+David: And that into databases and all sorts of stuff. Yup.
+
+Andrew: Yeah, exactly.
+
+Howard: Ben, Andrew mentioned that he had never heard your voice at real speed, because he listens to podcasts accelerated. I think the way to think about it is take Darwinism and turn up the knob a few clicks. It's what it is, it's winners and losers, maybe more dramatic than ever, and happening faster than ever.
+
+Andrew: This all, I think, dovetails into one other point that we made from the memo that I think is really important, which is that markets evolve and games evolve. I was an obsessive poker player. I've always been an obsessive game player, generally. My dad and I, we sit around and we'll play Backgammon forever and whatever. I got obsessed with poker right when the poker boom happened, which was when Chris Moneymaker won the World Series of Poker, and they started online poker.
+
+Ben: Moneymaker and Farha.
+
+Andrew: Yeah, well done. That's very impressive poker trivia. When online poker first launched, everyone got into the poker boom, because no one knew how to play and it was so new. If you just sat around and you played aces and kings and nothing else, you could win money. It was very easy.
+
+Over time, people figured that out. They figured out the next level of the game and whatever. The winning strategy turned into a very exploitable strategy, and that evolution has happened a lot more times to the point that I'm probably terrible at poker now. But anyway, I think the same thing has happened in markets.
+
+Back in the times when Buffett was starting, information about companies and the ability to transact in companies, and actually, even finding out about companies, was extremely hard. You had to go to the library, you had to take out the Moody's Manual.
+
+David: He was driving around buying stock certificates from farmers.
+
+Andrew: Yeah. I don't know if you've ever looked at a Moody's Manual, but there's not that much there. If you were interested in something, you had to mail away for the annual report and so on, and so forth. You had to call your broker and they had to figure out how to buy an illiquid stock.
+
+Because there was so much friction to getting information, and transacting, it was much more possible for value to be hidden in plain sight. I wasn't there, but I know this because Buffett says that this is exactly what he did. You could look at something and just plainly see that the company just continued to march ahead and just plainly understand that it was undervalued relative to those prospects if you had conservative assumptions about the future continuing.
+
+Nowadays, information is totally ubiquitous. Anyone can buy a stock. There are tons, and tons, and tons of smart people investing in the stock market, but there are also algorithms, machine learning, and all this type of stuff. It's very hard to believe that you can just have some knee jerk surface level understanding of something, just look at financials, have some very elementary view on something, and have it be some sort of insight that's profitable.
+
+Howard: The phrase I took away from that, and it's in the memo, is readily available quantitative information about the present. Andrew pointed out the evolution of markets. I was taught in Chicago in the mid-60s, the efficient market hypothesis, that everything is priced right, because everybody's working so hard to find the bargains and the overpriced things. Of course, that's the framework, and it was not true that everything was priced right. But certainly over time, things are priced more right.
+
+David: It's become more true.
+
+Howard: Right. Inefficiencies, which I prefer to say mistakes, things the markets misprices, where do they come from? They come from ignorance and prejudice. Moody's had a prejudice against the single B-bond, it had a prejudice in favor of the Nifty 50, as did most investors. I was lucky to find some things that others didn't know about or didn't understand.
+
+Human knowledge is cumulative. Lately, it's been rushing forward at an incredible pace. It's hard to imagine that there's a piece of information that I can get off the internet that's going to make me any money for the simple reason that everybody else can get it off the internet.
+
+It's a zero sum game for a fixed amount of profit. It'll go to the people who do better at the expense of the people who do worse. You have to have an advantage, a knowledge advantage, a skill advantage, if you're going to be one of the people who ends up on the positive side of that equation.
+
+Andrew: To bring this back to what we were talking about earlier, it's very dangerous to just make qualitative judgments about a company that seemingly everyone has, oh, this is a great company, whatever. It'll just continue winning without also saying, well, to what extent is this reflected in the price? That's the whole point of investing, whether it's value investing or growth investing.
+
+That's the point we make in the memo. You have to be able to make judgments about the future prospects of the company, and then you have to be able to say, well, to what extent is this already reflected in the price?
+
+David: If you're talking about public equities or any public market, that dynamic is so strong that we were just talking about. There's so much information out there. Yes, maybe you can have some advantage, but it's very hard.
+
+If you're instead operating in a private market that is, at least relatively to the public markets, much more illiquid, you can have more advantages. You've shifted your career to doing mostly early stage private market investing. Is that a big reason for that?
+
+Andrew: What I'd say is, first of all, I think you'd be hard pressed to say that venture is super inefficient. It's not a market where everyone can transact. It's actually hard to get to a place where you can invest in seemingly great companies, but the competition to invest in those things is very fierce. I wouldn't say that I came to the realization that venture was this super inefficient market, I wanted to capitalize on that insight, or whatever.
+
+By the way, leaving aside the fact that I love hunting for founders, I love working with founders, I love so much that goes into the whole business of venture investing. But if you want to just talk about the proposition, the reason why I went into it is it suits my skill set more to make long term qualitative judgments about the future.
+
+I think, venture, so much of what you're doing is you're finding huge gaps between what you're paying today and what this could be worth if it's right. You have to really imagine, in 10 years, if this is successful, what could that business look like? Much more so than the sort of analysis that goes into being a public markets investor, that really suits my skill set much more.
+
+The other thing is, it's a much more probabilistic endeavor. What you're doing is you're trying to find extremely high expected value investments, where the average occurrence is that you're going to lose your money, but make enough of those bets, so it works out to be a great return.
+
+By the way, try to help the companies in whatever way you can. Follow them closely, so you can add more capital to the ones that are doing well and whatever. That whole endeavor really suited me, I made up much more.
+
+David: We were chatting before we started recording. I went back through my notes from business school from Howard, your book, The Most Important Thing Illuminated. Every other page on there is like risk equals permanent capital loss. Do everything you can to avoid permanent capital loss, and venture is not that.
+
+Andrew: It's not that. I also don't think that I would be particularly great at that. If you told me I had to have a portfolio of 10 companies, where not only would the portfolio return be 20%, but they'd all be roughly 20%, or they'd go somewhere between 10% and 30% or something like that. I just don't know if that would be as suited with my skill set.
+
+Howard: In 1978, when I left the equity area, it was really because of the terrible performance of the Nifty 50, which I as director of research was associated with. They said to me, what do you want to do next? I said, I'll do anything except spend the rest of my life choosing between Merck and Lilly.
+
+You can take the best drug analyst in the world, sit them down on the first day of every year, and ask them, which is going to perform better, Merck or Lilly? I guess you'll get it right half the time. But the good news is, my boss said, I want you to go into the bond department. It played to my quantitative skills and to my conservative personality.
+
+If they would have said, I want you to start a venture capital fund and be ready to invest in Amazon when it starts, I would have been a disaster, because I'm not an optimist, I'm not a futurist, and financially, I'm something of a chicken. The point is, so far, Andrew and I have gravitated to things that are right for us. That's a hell of a lot easier than doing something which is wrong for you and trying to put a square peg in a round hole.
+
+Andrew: One of the things that really interests me is applying some of the more traditional investing lenses, Buffett investing lenses, or whatever to venture is really interesting, because I think you have to think about, what can this be worth if it works, and what's the potential probability that it works? In order to do that, in my opinion, I think it's very helpful to be able to visualize what the business could look like.
+
+If the company IPO is in 10 years, what's that person going to be looking at when they're thinking about investing in the company? You have to sort of visualize, what could the financials of this business look like down the road, even though it's totally nascent? What could the moats in that business look like? How much capital might it take to get there?
+
+What's the likelihood of competition? What could they evolve into after they establish themselves in that market? Et cetera, et cetera. I think it's really interesting. To me, I find it to be really, really thought-provoking.
+
+Howard: Remember what I said that Andrew said, readily available quantitative information about the present, is not going to give you the key to the castle. He said a couple of minutes ago, however, that he's good at making qualitative judgments about the future. If everybody has all the company data about today and the means to massage it, how do you get a knowledge advantage? The answer is you have to either somehow do a better job of massaging the current data, which is challenging, or you have to be better at making qualitative judgments, or you have to be better at figuring out what the future holds.
+
+He's had to evolve from the old value people. Buffett talks about buying dollars for 50¢, which is not such a terrible idea. But to do more like he does, dealing with these challenging aspects of qualitative and future.
+
+Andrew: Yeah. I think you just have to find the type of thing that suits you. I like being an optimist. I like thinking about, what could this be if it works? There are other people that like saying, this company clearly sucks, but it doesn't suck as much as everyone thinks, or people think this business is going to die, but I think it's only going to be maimed or something.
+
+Ben: It will die slowly over more years.
+
+Andrew: That's an incredibly valuable skill to have. You can make incredible returns doing that, it's just not in my nature.
+
+Howard: At Oaktree, I think the thing we're known best for is investing in distressed debt. When we started that, in 1988, my partner Bruce Karsh and I had this idea. It was actually Bruce's idea, but he joined me, and I'd been in the high yield bond business for 10 years at that point. People would say, that's crazy.
+
+You're going to buy the debt of companies that are bankrupt, they're not going to repay the debt. The answer is (1) We're going to repay it in full, but they're going to pay part. That may be enough. Or (2) If the creditors are unpaid, they get the company. That may have value. That was good for me, it was great for Bruce Karsh, but it wasn't the right thing for Andrew. Fortunately, we gravitate in the right direction.,
+
+Ben: For our next sponsor, it is a very appropriate one for this episode, our good friends at Tiny, who share a lot of the same investment philosophies as what we are talking about here with Andrew and Howard—actually with both of them. They've got something new to share with us. We talked about this a little bit on our special with Anthony Gonzalez.
+
+As longtime listeners know, Tiny is the Berkshire Hathaway of the internet and has built and acquired a collection of truly wonderful internet businesses, most of which they fully own. Their story which many of you know is incredible. Andrew Wilkinson started the design agency, MetaLab, in Victoria, BC. They became one of the premier design firms in the world building UIs for Slack, Coinbase, Tinder, Headspace, Patreon, you name it.
+
+With that MetaLab's success, Andrew and his partners, Chris and Jeremy, started to think about investing. They became completely obsessed with Warren, Charlie, and the Berkshire model. Of course, that led them to realize, wait a minute, we know there are a whole bunch of companies out there just like MetaLab that are wonderful inner about businesses doing $5 million or more in recurring revenue at 30%-40% operating margins, but it just doesn't make sense for venture capital, because there aren't M&A buyers for them out there or they can't get to the scale required for an IPO.
+
+What would Warren and Charlie do here? They just go and buy these businesses and own them forever. That is exactly what Tiny has gone out and done for the past 15 years with incredible success.
+
+You can think about companies like Dribbble, Pixel Union, Creative Market, 8020, Girlboss, AeroPress, which I use all the time, all of these are now Tiny businesses run by their own independent managers, just like Brooks Running, for example, within Berkshire, and producing incredible cash flow for Tiny and their managers. David, what is new?
+
+David: It turns out that over the long bull market run of the past decade, a lot of wonderful internet businesses like these that should have been Tiny type companies, mistakenly took venture capital instead, and now they can't get to an exit. For anyone who's a founder or a VC in this situation, you know this sucks.
+
+I've been there personally, many times. Ben, you've probably been there personally. The company no longer has the potential for an exit that would make it meaningful to a VCs portfolio and get you on the board. It's taking all this time, there's a misalignment of incentives. At the same time, it's not like this is a bad business. It's a legitimately good small business on the internet, and it doesn't deserve to be just shut down.
+
+Tiny has realized that they can fix this situation for everybody. Sell the company to them. The venture firms get their money back that they can then recycle and invest in the same fund into new portfolio companies, and founders get to take control of the company back. Tiny has done this with several businesses so far this year. These are venture-backed companies doing over $5 million in revenue at 30%-40% operating margins or the potential for that to quickly be the case.
+
+Tiny came in, acquired the business, the VCs got their money back, and more importantly, their time back. Management and Tiny got to run the business as it should be, wonderfully and profitably with totally aligned incentives. Honestly, this is a total win for everybody. This function needs to exist in the ecosystem, and I'm so glad Tiny is now doing it.
+
+Ben: And more so in the last six months than ever before. There are so many companies where this makes sense. When there was just available capital everywhere, there were other options to kind of keep going and see, now this makes a lot of sense for a lot more companies.
+
+If you're running a business like that or you're a VC board member, and I know there are a lot of you out there, you owe it to yourself and to your portfolio to shoot a note over to hi@tiny.com. Just tell them Ben and David sent you.
+
+David: I honestly really wish that this existed back when I was an actual "professional VC" and I was taking board seats. This is a no brainer. I'm so glad Tiny is doing it.
+
+Ben: Thanks, Tiny.
+
+David: We wanted to ask both of you about the firm building aspect of the investment business. One thing I've certainly learned in my career is that being a great investor is a very challenging proposition and an activity that can easily be one's life work. Building a great investment firm is a very different challenge. It's very rare that people can be great at both of those and it's also not a second challenge to take on lightly. What did each of you think of this?
+
+Howard: Having spent my first 17 years at Citibank, which is management intensive bureaucracy, I was pretty good at those things. I was not a guy who started in a garage. Processes and deliberateness were right up my alley.
+
+On the other hand, we started Oaktree at a time when the quest for alternative investments was extremely strong. The demand I think outstrips the supply. Most people gave up on getting the returns that they need from stocks and bonds. We had a big tailwind.
+
+What Bruce and I did for the most part is create a culture. We didn't ever have a macro-managing, micromanaging mentality. We were too busy. It was not our day job to run the company. We did that as a sideline, and it wasn't management intensive. We weren't great on the profit margins, but they took care of themselves.
+
+We were haphazard about compensation. We respond to the last person to walk in the door. But the right culture at the right time with, I think, some exceptional people was enough to make the company a success, even though it was largely an unguided missile in terms of management.
+
+Ben: How did you think about splitting up the responsibilities of the core competency of the business investing versus the necessary lifeblood of the business of finding capital to manage?
+
+David: And recruiting and everything?
+
+Howard: The great advantage we had is that the people who started Oaktree, there were five of us, three others in addition to Bruce and me, had worked together on average for nine years at the time we did it. We weren't dealing with strangers and trying to figure out an MO. All we had to do was what we had been doing at TCW before Oaktree.
+
+For the most part, that meant I was out raising the money, visiting with the clients, and representing us to the greater community. Clients and prospects, Bruce, and the others, were back managing money.
+
+David, you mentioned my book, The Most Important Thing. That actually evolved from a memo of that title that I wrote around 2002. That had a section on how to run a company, which I spared the readers of the book, because it had nothing to do with investing. I said there that the key among partners is to have shared values and complementary skills. We absolutely shared values. We're all family men, conservative people, somewhat risk averse, and so forth.
+
+Andrew points out, we probably could have used one founder in the mix who wasn't quite as risk averse, but we did okay. But we had complementary skills. I could do things in the outside community that Bruce maybe couldn't do, although he's better at it than he thinks, but had no interest in doing.
+
+He could do things in terms of managing money that I couldn't do. But the great news is, we each accepted their truth of what I just said. That produces a lot of respect, mutual respect, and that's why we've had such a great partnership for 35 years.
+
+Andrew: For us, while I'm incredibly proud of and impressed by what my dad and his partners have built, our approach is totally opposite just because it suits us.
+
+David: It sounds like a theme between father and son there.
+
+Andrew: Yeah. It's not for the sake of being opposite. But my partner Schuster and I, who both, since we started, have run the investment program, the sourcing, and investment decisions. It helps that we've been longtime, extremely close friends. We talk all the time. We just feel like we have to really pinch ourselves that we get to do this every day, that we just love investing. To us, what motivates all of us is having absolutely world class returns over a long period of time.
+
+Ben: You seem to share that competitive streak with your dad, even though you have different ideals in many other ways.
+
+Howard: You know what, Ben, if you're not competitive, you shouldn't be in the investment business.
+
+Andrew: Yeah. I would say it's not competitive with others, it's competition with ourselves. We just want to be the best that we possibly can be. Everything we do at our firm is in service of that, and it's not because other approaches aren't also extremely valid or work for other people. It's just that this is what motivates us.
+
+We have no ambition to broaden our firm in terms of strategies or turn our firm into some big asset manager. If our jobs turned from investing into management, we'd be extremely unhappy. That trade off isn't worth it. Everything we do is in service of trying to do what we love, maximize our time doing that, and have the best returns that we possibly can.
+
+Do the things that we think enable that, which in our opinion in this business, is really all about your reputation with founders, and having as broad of a network of as many incredibly talented potential founders as you can, and then being able to do whatever we can to build the best relationships we can with them. I think that comes from helping them, but I think that also comes from being great partners and also friends. That's how we build the firm and it's very different.
+
+David: You point out that the nature of Oaktree and TQ's investment businesses is very different, and thus the core competencies are very different too. Andrew, you don't write public facing memos. You don't go on to many podcasts. Thank you for joining us here, but it's probably just not as important as it was at Oaktree.
+
+Andrew: There are other people in venture who do that stuff extremely well.
+
+Ben: Other people in venture go on podcasts?
+
+Andrew: I think those podcasts are great. I think people who do it probably do it because they enjoy it, but also because it really helps them. It builds great brands with founders, increases their network, adds a lot of credibility, and all that type of stuff. I think at some point, you just do what suits you.
+
+We have certain things that suit us and other people have things that suit them. It's not really a strategic question about if going on podcasts help us or hurt us or being public facing or whatever. It's just you do what you think is right for you.
+
+Ben: Which is funny. That's the echo of Howard, something I've heard you say in the past, which is that you just have to make sure that your investment strategy suits your demeanor as an investor, which is almost saying the same thing.
+
+David and I talk about this a lot in the podcasting business. We say, should we change the content to match what the demand seems to be, or should we just say, you know what, let's find a way to do what's natural to us, because that's what we're going to have the most fun doing, that's where we're going to have competitive advantage, and that's where we're going to have durability? I think that same concept applies in all three of those things just discussed.
+
+Howard: When I'm asked for career advice when I speak to students nowadays, I say something very, very much in line with what you just said, Ben. I say, look for something that plays to your strengths and avoids your weaknesses, and that you'll enjoy doing. It sounds like that's what you've done.
+
+Turn it around. We are so lucky to have the ability to do something we enjoy. Take that out of the equation. What are you left with? We only have one life, we should make the most of it we can. I think anybody who has a choice and does something he doesn't enjoy just to make more money is making a world class mistake.
+
+Andrew: I think learning and evolution are really important. Learning at our firm is really important to us, and it's just important to who we are as people. We're continuing to try and expand our competencies and rub our nose in the many mistakes we make and all that type of stuff. I think you have to find something that suits you, but you also can't get too hung up in your comfort zone and just say, this doesn't fit in my comfort zone, so I'm just going to totally ignore that.
+
+You guys talked about this on your Berkshire episode. One critique you could make of Buffett as he just totally ignored technology. Technology not only became much more pervasive, but I also think that he's an incredibly smart guy, and he understands lots of different elements of business. When he talked about technology, I think he was referring to science projects,  where your technical advantage is what will allow your business to succeed over time.
+
+There are lots and lots of technology companies where what they do is not so incredibly cutting edge. Really, what powers their business are moats that are very similar to other sorts of things. You also had Hamilton Helmer on here, and a lot of those sort of moats traverse both technology and non-technology businesses. I have no doubt that Buffett could have totally nailed it, but it was just not in his comfort zone.
+
+Howard: This points out a dichotomy in investing or maybe a conundrum of which there are so many. What we just talked about was, it's important to stick to your last and do what you're good at and fit with you, but it's also essential to be open minded and willing to change.
+
+Ben: I'm getting whiplash.
+
+Howard: Yeah. To be a good investor, you have to be confident, because you have to back things that are iffy and stay with them if they go bad. If you're in the public securities market, you have to buy more of them when they decline, but not so confident that you're thick headed and keep throwing bad money after good. You have to concentrate your holdings enough so that the few good ideas you get in your lifetime really make a big difference, but you have to diversify to protect against the unforeseen.
+
+This is really the nub of it. It's such a fascinating field, because in my opinion, the things we're talking about can't be reduced to an algorithm. This is where our humanity pays off, because Andrew talks about making better qualitative judgments about the future. I like to believe that computers will not be doing that well for some time, so that we all still have some scope for success.
+
+David: If they do, then it will cease to become a competitive advantage.
+
+Howard: Right, but we need to have some competitive advantages left. I think it comes from qualitative and future. I always say that I don't think that a computer can sit down with five business plans and figure out which one is Amazon in advance or meet five CEOs and know which one is Steve Jobs.
+
+Not many people can do it either. That's the important thing. But the few who can, can really help their clients. If the person who finds Amazon can also find Google and can also find Facebook, to the point where you can conclude, okay, it's skill, not luck, then you really have something.
+
+Ben: Here's a philosophical question. If there's a very credible trope to be made on either side of an argument, and you can always make both of them and then be stuck in the middle, ultimately, everything always comes down to judgment. Where does judgment come from?
+
+Howard: That's a great question. I was having lunch with Charlie Munger back in 2011 when the most important thing was about to come out, because he worked downtown right next to me in the building next door. When I got up to go, he said, just remember, none of this is meant to be easy. Anybody who thinks it's easy is stupid.
+
+I wrote a memo. I think it was September 15, if I'm not mistaken. I talked about that. I called it It's Not Easy. A friend of mine wrote a book on investing in the UK and the title is Simple But Not Easy. The things we're supposed to do are simple to describe. It's just not easy to do them (1) Better than other people, (2) Consistently, (3) Over time. It all comes down to judgment.
+
+That's not your question, Ben. Your question is, where does it come from? You remember that the first chapter, the most important thing, talks about second level thinking. Thinking at a higher level than others differently, but also better that is to say, more correct. It's easy to diverge from the thinking of the consensus. Not always easy to diverge correctly, but that's what a superior investor has to do.
+
+You might call it second level thinking, varying in perception, knowledge advantage, insight, judgment, but it's intangible. People say to me, can you teach somebody to be a second level thinker? I said, I don't know. It's kind of like asking the basketball coach to coach height. All his efforts will make his players any taller. Some people get it, some don't.
+
+Andrew: Yeah. I would say it probably comes from a lot of different places. Some ideas would be some combination of deep knowledge and understanding of what you're doing and the real framework for what matters, what doesn't, and why, I would say, rationality, which is the ability to think logically and not emotionally, which dovetails with knowing yourself and being able to know where your biases will infect the decision making process.
+
+I think there's intellectual humility that comes with it, knowing that there's a good chance that you can be wrong, even if all those things are true. Also knowing what you don't know, so knowing where you can opine, where you have to learn, where you should seek others, and things like that.
+
+David: I imagine this is less for you, but certainly at Oaktree, you've recruited a lot of people.
+
+Ben: It's over 1000 employees, right?
+
+David: You had to make a judgment about other people's judgment. How did you do that?
+
+Howard: Back when I was an analyst in the early 70s, I followed Xerox. One of the portfolio managers said to me, who's the best Wall Street analyst on Xerox cell site? I said, well, the one who agrees with me most is so and so. Isn't that our definition of who's the smartest? No, but the truth is, we look for smart people.
+
+We look for what Nancy, my wife, calls smart eyes—exceptional people who get things a little better than others who understand what's important and what's not, who can go beyond the readily available quantitative information. It's very simple. With oil, the cure for low oil prices is low oil prices. Some people get that intuitively, some people don't understand it.You have to get the people who get it intuitively.
+
+I think, also very importantly, we look for team players. We look for people who can work and exchange ideas and can do well with ideas from their peers, from their lessers, from their superiors, managers, subordinates, and throw it all together. We don't want the lone wolf, we don't want the you-eat-what-you-kill kind of person. We don't pay people on the basis of their one year's quantitative performance as an individual, and we don't want people to work that way.
+
+Andrew: I definitely can attest to having nearly as much experience in recruiting. We've added a whole three people to our team now. I do think that the vast majority of venture investment decision making is about understanding founders and having a sense for founders.
+
+Again, after talking about all this business analysis stuff, we firmly believe that the vast, vast majority of the investment consideration is backing the right people. What you're doing, I think, every day, every week is evaluating people, so you have to do that in the same way. I think, first of all, when you hear a venture pitch, so many of them that we all hear are like, the person gets on and it's like, here's where I went to school, here's where I worked, and then I worked here, and now I'm doing this, and let me tell you what I'm doing.
+
+I sort of say, no, no, let's stop, I want to spend a lot of time understanding you. I think the real way to suss out judgment is by going through the person's story and background and understanding why they made decisions, because you can fake your way through prospective things. When I, and I'm sure you guys were recruiting out of school, there was the vault guide for finance interviews. You memorize every single answer about how you would do this, how you would do that, and whatever.
+
+Ben: In CS, there was a book called Programming Interviews Exposed written by three ex Microsoft guys, and it was truly the way to whiz through any of these.
+
+Andrew: Yeah, but you can't fake what you've done. If you really dive into what people have done and why, and if they've made decisions based on their own judgment, and if they've learned and evolved, and if they've made decisions based on first principles, and we're willing to go against the herd, and we're willing to do things because they're passionate, and if their idea comes from specific knowledge of a real problem and a real deep understanding, I think you can evaluate judgment very well based on that.
+
+I think that translates into hiring too. Really, understanding what people have done in the past and why. I think you can also test for specific skills in the hiring process. I think you want to understand why you want to hire someone, and then I think you can test against those things in real ways.
+
+Ben: It's funny. On the founders' thing, I was having a conversation with my dad about a potential angel investment recently. He was like, I know people always say the founder is the most important, but what is your view of what that actually means? I just barfed out this answer.
+
+Howard, sounds like your earlier story, it just came to you and I was like, are they a weirdo? In particular, are they a weirdo at something where they're four standard deviations from the mean at that thing? It could kind of be anything. But if this person can't be in the middle of the distribution at everything, or else, this startup will never be successful.
+
+Andrew: Yeah. I think what's interesting also is that there are so many ways to succeed by being amazingly good at the conventional thing by being the best at going through the map, following the map, or whatever, and sort of hacking whatever the process is that everyone's done before you. With startups, there's not much of a map. There might be some general principles, but in any given area, you're doing what you're doing for the first time. If someone else is doing it, you're trying to do it differently, and better, and whatever.
+
+You have to be able to think for yourself, and you have to have real conviction in yourself. I think, to your point, the people who are more unconventional, are people who are willing to do things based on what they think is right for them in their own views, versus just being the best at what's conventional.
+
+Howard: My last memo came out a couple of weeks ago. It was called I Beg to Differ. It was all about the need to be different. It's exactly what you're saying.
+
+The path to exceptionality cannot come through doing what everybody else does. The advantage of the things we do, especially Andrew does that we've been discussing, is the fact that there is no clear roadmap. There is no simple algorithm, which will produce a consistently correct outcome. But we are dealing with challenging concepts here. The person who sees differently and better is the one who's going to win.
+
+David Swensen, who ran the endowment at Yale, used to talk about the need to do things that are uncomfortably idiosyncratic. You have to be idiosyncratic to split tax and to win. For many people, it will be uncomfortable, because they'll be out of step with so-called common sense, but you got to do it anyway.
+
+Andrew: One way that I intuit for myself about this point about why founders are everything, sort of the question, I guess, your dad asked is, think of the best startup idea you could possibly imagine. I don't know. Someone gave you Google's PageRank algorithm.
+
+Ben: It's literally what I was thinking of, too.
+
+Andrew: And then imagine someone from your life that's mediocre, or maybe better than mediocre, or an A- or a B+.
+
+Ben: Or even talented at conventional things.
+
+Andrew: Yeah. What are the odds that that person would have built Google?
+
+Ben: Zero.
+
+Andrew: Zero, right? That's because (1) It's hard to build a company even if you have a great idea and execute on all the things you have to execute. (2) If you're doing something well, other smart people are going to be like, hey, there's a lot of value to capture here, I'm going to go compete. Not only are you going to have to build your company, but you're going to have to outcompete everyone else. I just think it takes exceptional people who can exhibit exceptional judgment, who can attract and retain other exceptional people and all the things that go into being a great founder to build those sorts of things.
+
+Ben: For our next sponsor, it's Brex. Last episode, we introduced you to the new Brex, corporate cards and spend management that have zero receipt chasing, but with 100% compliance in over 100 countries. Okay, here's why I'm calling it the new Brex.
+
+As many of you know, Brex launched in 2017, is that super simple to use corporate card. They later added a cash management account that was interest bearing, venture debt, and financial modeling tools. Here we are in 2022, and Brex has expanded into the next frontier of spend management software. What is that? If you've submitted an expense report in your life, you're familiar with the long and tedious process of submitting for approval, justifying it, categorizing each expense, et cetera.
+
+David: I got to bed to approve my expenses all the time, it's terrible.
+
+Ben: You're probably also very much aware that the legacy tools are not fantastic, and there can be something much, much better. Brex realized it can fix a lot of this since it's also your corporate card. There are really nice ways to improve the UX by sharing data across both of those systems. Since they're now tackling bigger companies and not just startups, they realize they could go a step further.
+
+David: If you've spent time at startups and big companies, you know that as companies grow, they take on more people, processes, and systems. Unfortunately, with that, comes more overhead and more bureaucracy. Plus, today, all of those employees are likely to be living and working all around the world, adding an even bigger challenge.
+
+Brex has built spend management software that enables big companies to do everything necessary to support lots of people globally and drive 100% compliance at scale. But even better, it also enables them to preserve the trust and ease of use of the systems that keep startups moving fast.
+
+Ben: How it works is a super novel. Instead of reacting to expenses after they happen, Brex customers are empowered to direct spend from the start by creating a budget for each purpose or vendor beforehand. Brex is totally changing the paradigm and flipping it on its head. For each budget, managers can set an amount, expense policy, and assign employees this pre-approved spending.
+
+The system is built to ensure that employees stay 100% in budget, totally compliant, automatically, and frictionlessly. Of course, there's only one card for all expenses, so no need to juggle 10 virtual cards for different purposes. Budgets will categorize all spending to the right place automatically on the back end.
+
+By making all this proactive versus reactive, Brex saves everyone the time and headache of expense reports in policy spending is greenlit automatically, and only the outliers are the ones that actually require manager approval. Brex even flags suspicious transactions using machine learning and AI-driven anomaly detection.
+
+David: It's so, so great. It was beyond time for this. As we mentioned in the last episode, Brex also automatically gathers itemized IRS compliant receipts via exclusive merchant connections without employees needing to keep the receipts and track them themselves. That is zero receipt chasing now for your whole team.
+
+Employees will actually close out their expenses on time, because it's easy, and in many cases, automated. I joked about Ben approving my expense reports. We're fortunate we don't really have to deal with this at Acquired because it's Ben and me. But my wife, she tells me all the time, her direct reports don't do their expenses, and it holds up closing out the books. She literally complains to me at the dinner table on a monthly basis about this, and Brex solves all of this.
+
+Ben: Yes. For non-corporate card transactions, these are just a few of the ways that Brex helps big companies proactively manage spend in a way that drives accountability and reduces headaches all over the company. If you want to learn more you can visit brex.com/acquired.
+
+David: Thank you, Brex.
+
+Ben: I know we've drifted away from firm building a little bit, but I want to take us back there and round that out by talking about the concept of an exit. We talked about it all the time with startups. It's become taboo to put what's the exit strategy in the deck, but everyone wants to understand how I can get liquidity on this investment at some point.
+
+Oaktree, I don't know if you would categorize it as an acquisition, a merger, or potentially a majority interest investment. Howard, I wondered if you'd be willing to share with us how you thought about that and what it means for you going forward.
+
+Howard: It was really a dream transaction for us. Brookfield approached us and said that credit was the obvious omission in their list of alternative investment categories that they were providing. They could build it, but it might take 10 years, and they might end up with less than what we had, so they wanted to invest in Oaktree.
+
+At that time, this was 2018, we were half owned by the public and half owned by the founders, current and former employees. They propose to offer a fair price to take out the public, that's half, and to buy a fifth of our half. They started with just over 60%.
+
+We had criteria for a transaction that we would contemplate. We've had them for 20 years, and they were never fulfilled before, and Brookfield hit them all, which is that Oaktree would continue to exist, would continue to be an independent entity, that we would run it, that Brookfield wouldn't tell us what to do, and that Brookfield wouldn't try to interpose itself between us in our clients. They would be Oaktree clients tended by Oaktree. It was really ideal for us.
+
+Also, as I said, they bought 20% of my stake, Bruce's steak, et cetera. The former employees will sell an eighth a year until they're done starting this year. It happened already. The current employees have the option to sell an eighth, but they don't have to. Bruce and I, the other founders, and senior managers have the option to sell a fifth a year, but we don't have to.
+
+Right now, we can keep it as long as we want or sell it when we want. You reach a certain age when it's a good thing to have an exit.
+
+David: When did you start Oaktree?
+
+Howard: 1995, so I was 27 years old. I've worked there half my career, so let's see if you can do the math. We have an exit at our option, we still run the place. They consult us, they help us, they provide resources. It just couldn't be better. Bubba talks about skipping to work in the morning, and I skip inwardly.
+
+David: Another big topic I wanted to cover from the memo is just that. That's the perfect transition, selling. You each brought very different perspectives to the topic of selling.
+
+Howard: That was our most lively interchange, I would say.
+
+David: I'd love to hear from each of you what your thoughts were on selling before coming together and then how they changed.
+
+Howard: As you probably know, I wrote a memo in January of this year. I think it was called Selling Out. I observed that a lot is written about when to buy securities. It's a little bit about market timing, but not much about when to sell securities. Of course, it's half the equation.
+
+Yes, my tendency coming from the conservative background that I came from, was to, what would you say, take some money off the table, take some of the profits, I had this terribly misguided feeling that if you sell half, you can't be all wrong. Of course, I wasn't dealing with securities with the potential of what Andrew deals with.
+
+Anyway, for people whose parents were adults during the Depression, who were brought up with, don't put all your eggs in one basket, save for rainy days, that kind of thing, you take some profits. If you're a more optimistic bent, the timing of your birth was more fortuitous, you never heard those things. Maybe it's easier to hold for the long run.
+
+I wrote a memo on liquidity about eight years ago. Andrew gave me a great quote for that memo, the greatest quote. He said, "If you see a chart of a stock that's been up for 25 years and you say, man, I wish I own that stock, think of all the days you would have had to talk yourself out of selling." In selling out, I told the story of Amazon. I think it was 89 in 1999 and then it fell to six in 2001.
+
+Let's say you were fortunate enough to buy it at six, would you start selling at 12? Most people would start selling at 12, it's a double. Would you sell at 60?10x? What about 600? 100x? And then it went up to 3300.
+
+This idea that as soon as there's a profit, you should take some of it off the table, seems like a huge mistake. Charlie Munger says you only get four good ideas in your life. You got to get the most out of them.
+
+What I said in the memo selling out, half facetiously, but only half. There are two reasons people sell things, because they're up and because they're down. If something goes up, they say, I better sell some before the profit evaporates and I feel like a jerk. If it goes down, they say, I better sell some before it goes down more and I'll feel like a jerk.
+
+David: That has nothing to do with the business.
+
+Howard: Right, or the thing you're selling. A huge amount of people's  preoccupation, in my opinion, is with avoiding regret. Embarrassment in front of others regret themselves.
+
+Andrew: My view on selling is consistent with the general way that we talked about, the value and growth dichotomy, which is that what matters in investing is really deeply understanding what you own, why you are making the investment, and what you're playing for. When it comes down to making a decision about selling or not, what matters is understanding those sorts of things and then also understanding your opportunity cost.
+
+Your money has to go somewhere, so you have to think about decisions relative to each other. But the point of the memo was that, first of all, most people don't think about opportunity costs. Most conversations about selling are academic, thinking about, should you sell this investment in a vacuum or whatever? Outside of that, most people make selling decisions based on price action, if it's up, if it's down, or whatever.
+
+Most people confuse price action with fundamentals. Oh, this company has been up into the right for years, so it must be a compound or it must be compounding value intrinsically. I think you should make your selling decision based on why you made the investment, how things have evolved, and what you could be playing for.
+
+Take a simple example. Let's say you can buy $1 for 50¢. That's obviously a good thing to do. But if it reprices to $1, you should probably sell it, because there's no more in the investment. However, let's say there's a contract where you can get $1, but then every year, the value of what you can claim compounds by 20%, and you can buy that contract for 50¢.
+
+You can buy it for 50¢. Let's say it goes to $1. You doubled your money, but you shouldn't sell it. Next year, it'll compound value to $1.20. So if it goes up to $1.20, you're up 20%, you still shouldn't sell it.
+
+Next year, it'll go to $1.44. Let's say instead of $1.44, it goes to $1.60. You probably still shouldn't sell it even though it's "overvalued", because the right to compound at almost 20% in perpetuity is extremely valuable, and so on and so forth.
+
+You shouldn't just let price action alone determine what you should do. I think the other thing to note is things that can do that, these sort of compounding certificates in the form of companies, are extremely rare, but extremely, extremely valuable. If you just look at a DCF, if you really have something that can compound cash flows for 25 years, you're up 100x. If you can do that for 50 years, you're up 10,000x. It's really, really hard to price that in the near term.
+
+If you can really believe you found something like that, something crazy has to happen for you to sell it. The price can, of course, as my dad said, anything can be priced too high. Really recognizing what you have is really important.
+
+Also recognizing that we have a huge tendency to want to act, so sitting idle on something for decades and decades is really hard. But then, contrarily, those things are extremely rare, so most things are not that. If something appears where the price appears to be compounding, and you get comfortable that it is one of those things, you better be sure that it is, and you better know why you own it.
+
+I just think it's a nuanced conversation that comes back to, why do you own what you own, what are you playing for, what's your confidence in the future, and then if I sold this work, where'd I put the money?
+
+Howard: It all comes down to, maybe we can think better about the selling decision if we rebrand it, and we call it the decision to unbuy. The thought process should be the opposite of the buying decision and not some chicken stuff about being afraid to lose.
+
+I think, Andrew, it points out a very important thing. In the olden days, you'll look at the classic value investments, and I did some of this. You get this chance to buy a dollar for 50¢, and that's a great thing. But once it hits $1, you got to sell it, you have to find another dollar for 50¢. The concept of the buy a $1 for 50¢, and then it goes on to be worth $2, $4, $8, and $16.
+
+David: Cigar butts don't go to eight bucks.
+
+Howard: Yeah, right. Remember I was an accredited investor. The bond investor generally does not think in terms of getting more than 100¢ on the dollar. When the upside is capped or non-existent, then obviously taking profits may be somewhat more responsible.
+
+Andrew: By the way, venture is an interesting lens to look at this. The truly generational companies, the truly monstrous companies, are extremely few and far between. But when you have them, selling them early is just a colossal mistake.
+
+David: Oh, disastrous.
+
+Andrew: They're incredibly prolific firms, where their reputation is built on a handful of fantastic investments. I think if you probably looked at the PAs of the most famous venture investors of all time, a huge majority of it is made up of continuing to hold a few things.
+
+David: I have a great story of this. I won't out the firm. It could be one of several firms, but I know that one of the earliest venture investors in Facebook, after the IPO, they distributed out the shares. Among the partnership, most of the general partners relatively quickly liquidated the Facebook shares. But the partner who led the investment was like, no, I'm going to let this ride. That was a very good decision.
+
+Ben: I want to start moving us to a close here. I always find that people tend to mostly consume in whatever medium they're currently consuming in. David and I have played around a lot with, should we write, should we do blog posts, should we do newsletters?
+
+People we know, for 100% sure, are listening to this podcast. When I'm pointing them to go check out your memo, I would like to do so in the podcast form. Where can listeners go read the memo that we've mentioned so many times or listen to it?
+
+Howard: The memo and all my memos since 1990 are available at oaktreecapital.com/insights, under the heading of Chairman's memos. You can read them all one at a time, in order. The only thing I can promise you is the price is right, because they're all free.
+
+David: When did you start writing the memos?
+
+Howard: 1990.
+
+Andrew: That's a good story, by the way. You should tell that one.
+
+Howard: Yeah, I'll tell that story. It bears a little bit on what we're talking about here. In 1990 , I went to visit a client in the Midwest, who told me that the pension fund he ran for 14 years was between the 27th percentile and the 47th percentile every year for 14 years.
+
+If you say to somebody, well, for 14 years, it ranged each year between 27, 47, what do you think they did for the whole period? You would say, well, probably about 37, right? And the answer is fourth. That pension fund was in the fourth percentile of all pension funds for the 14 years. Why? Because some of the other people shoot themselves in the foot.
+
+That was a lesson in consistency. Then right around the same time, there was a deep value firm in New York. They invested very heavily in the banks that year, and the banks did horribly. The President comes out and he says, well, obviously, if you want to be in the top 5% of money managers, you have to be willing to be in the bottom 5%. The dichotomy between the implications of those two stories really caused me to write the first memo, the juxtaposition.
+
+My clients don't hire me to be in the top 5%. I don't care if I'm in the top 5% in any given year. I'm absolutely unwilling to be in the bottom 5%, and I think so are they. That thing about being willing to be in the bottom 5% sounds to me like a post justification. Anyway, that's not how I choose to operate.
+
+It was a great opportunity to write that up. I wrote that one in 1990. I think I wrote another one in 1991. Then I wrote one in 93. There was no regularity. One of the things I like to mention, David, is that for the first 10 years, I never had a response. Not only did nobody say it was good, nobody ever said I got it.
+
+Ben: And these were mail? This was pre-fax?
+
+Howard: This was the old days of mail, but they only went to our clients, so probably a few hundred. Now it's a few 100,000 by the subscriptions. By the way, you mentioned podcasts. These things are also available in podcast form under something called The Memo, originally enough.
+
+David: In any podcast player. We'll link to it.
+
+Howard: If you like to listen, you can listen. I like to read.
+
+David: It was a sporadic thing.
+
+Howard: Yeah, there was no plan.
+
+Andrew: The other thing that I think is great is you wrote it with a lot of consistency or with some consistency, but you got no feedback whatsoever, but you kept writing it.
+
+Howard: I was doing it for myself.
+
+Andrew: The dam broke one day, and it ultimately picked up steam.
+
+Howard: I wrote one on the first day of 2000 called Bubble.com. That one had two advantages. (1) It was correct. (2) It was corrected quickly, because if you do something correct, but it turns out to be correct six years later, nobody remembers you. This one, of course, the tech bubble crapped out in mid 2000. I like to say that after 10 years, I became an overnight success.
+
+David: Were you posting them publicly?
+
+Howard: No. I think we started posting probably around 2000, maybe when we got on the internet, which was of course a little earlier. But when we started Oaktree, they gave me a computer. I said, I only want Excel and Word. That's all I had, but that was 1995, and then I think we moved in 1998. I said, okay, I'll take that other stuff. For the life of me, I couldn't figure out the difference between Explorer and email, but I got there eventually.
+
+Ben: This explains why Andrew is the tech investor.
+
+Howard: Exactly, and why he had to fix my computer.
+
+Ben: If you were to graph committed capital from clients by year, is there a correlation with the distribution of how widely your letters go out once you started posting them publicly and committed capital from clients? Did that meaningfully help the firm marketing?
+
+Howard: You never know.
+
+Andrew: One thing that's interesting to that point, though, is that you've dramatically limited your fund sizes in certain periods and then raised them a lot in other periods.
+
+Howard: Yeah, we tend to increase our AUM in bad times. Of course, that is the best time to put money to work.
+
+Andrew: Or when you think there's going to be a bad time.
+
+Howard: Yes, that's right. In advance of bad times, yeah. Thank you. That job is still open for you. Most firms, if they have a very successful fund, will follow it up with another fund, which is larger on the back of that. But if you think about it, if you had success in a given area, the good performance of that fund is synonymous with appreciation. In other words, everything in that area is now more expensive.
+
+I would say you should raise less money, not more. That's the way we operate. If you look at our funds, we've been in business three or four cycles. There were debt crises in general in 1991, 2001, 2002, 2008, 2009, and then of course, a brief one in 2020.
+
+The biggest funds we raised were the funds that invested in those years, usually, because we had some foresight about what lay ahead. Having made a lot of money in those well timed funds, the next fund is always smaller. We're very proud of that.
+
+We don't always say, oh, no, this is the time for our strategy. What's the perfect time for our strategy? Oh, now. Sometimes it is and sometimes it's not. We take great pride in telling people which is which.
+
+Ben: Andrew, we've talked a lot about where folks can find things that your dad has created over the years. Where can people find you or TQ Ventures?
+
+Andrew: Yeah. You can find TQ at our website, tqventures.com. (1) We try to make it fun. (2) It's pretty sparse, and we mostly focus on our companies. But you can also always email me, andrew@tqventures.com, LinkedIn, or whatever. I'm actually not on other social media.
+
+David: You're a studio social media avoider.
+
+Andrew: Yeah, so that's the best way to reach me, I'd say.
+
+Ben: Congratulations on truly winning the social media game by opting out.
+
+Andrew: I was on Twitter for a little bit. Again, you just have to do what makes sense for you. Some people have the ability to be like, I'm only going to do this for 15 minutes or whatever, and it's just really tough for me. I was just sort of an all or nothing. I think nothing's better, especially if I want to keep my marriage and be a good father to my kids.
+
+Howard: My wife and I both quit Instagram this summer, and we seem to be doing okay without it.
+
+Ben: On that note, Andrew, Howard, thank you so much.
+
+David: Thank you.
+
+Andrew: Thank you, guys. It was a lot of fun.
+
+Howard: It's been a pleasure. David and I have been looking forward to this and glad we did it.
+
+David: Likewise.
+
+Ben: With that, our thank you to Vanta, Tiny, and Brex. A huge thank you to Andrew and Howard for coming on. Total blast to get to talk to them.
+
+David: It's so fun too to talk to a family doing this. What a cool, special experience to get to do something great professionally with your parents as a child and with your child as a parent. I can think of no more fulfilling experience in life. It's just so cool.
+
+Ben: Listeners, if you are wanting to discuss these topics with us after listening, because there's some really meaty stuff in here and I can't wait to chat about it with everyone here, come to the Acquired Slack, acquired.fm/slack. We will be talking about it.
+
+We've got merchandise available. Merch, finally, at acquired.fm/store. You can listen to the LP Show by searching Acquired LP Show in the podcast player of your choice or you can get episodes early at acquired.fm/lp. David, anything else?
+
+David: No.
+
+Ben: All right. With that, listeners, we'll see you next time.
+
+David: We'll see you next time.

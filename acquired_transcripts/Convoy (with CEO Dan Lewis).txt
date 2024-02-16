@@ -1,0 +1,733 @@
+Ben: Welcome to Season 5, Episode 10 of Acquired. The podcast about great technology companies and the stories behind them. We are coming to you live today from the University of Washington. I'm Ben Gilbert.
+
+David: I'm David Rosenthal.
+
+Ben: And we are your hosts. Let's talk about trucks, 18 wheelers, semis, the long haul guys. One out of every four of these that you see on the road is completely empty. Truckers finish a job and then pick up the phone to find their next load which could be a state or more away. You might think they should be able to just have their boss or co-worker figure it out across multiple trucks and coordinate, but get this, 90% of trucking companies have 6 or fewer trucks and 97% have fewer than 20 trucks.
+
+There are over a million independent trucking companies or carriers (as we’ll call them tonight) in the United States alone. Enter Convoy. Today we are going to talk about this company which has only existed unbelievably for 4½ years and their ambitious plans to make it easy for any truck driver to find a nearby load, transparently see what they'll get paid, and do it all as you would expect right on their smartphone.
+
+David: We've existed for 4½ years, too. We're almost as big as Convoy.
+
+Ben: Yeah. This was a sick dose of perspective. When we were doing the research, David and I realized that Convoy was started between the time that we had lunch and talked about doing the show and when we actually started the show. It's freaky to see close to a thousand-person company had acquired well on its way.
+
+Before we talk too much about Convoy and bring up our special guest tonight, we have, for the very first time in Seattle at a live show, our sponsors right here with us in person. As always, I want to thank the sponsors of all of Season 5, Silicon Valley Bank. Please welcome Washington and Western Canada market manager, Minh Le.
+
+Minh: Thanks for having me, guys.
+
+Ben: All right, Minh. You see pretty much everything that goes on in this town. When Convoy was started in 2015, the funding environment looked very different than it does today. What I wanted to pick your brain on is what are you seeing in terms of funding the last 6–12 months and what do you think is going to happen in 2020?
+
+Minh: The one thing I'd say is it's a good time to be an entrepreneur right now, especially for a growth stage company. If you think about the funding landscape over the last couple of years, VCs have raised record amounts of money. Those funds are largely concentrated in later-stage funds, so that leads to the deployment of that capital into more later-stage companies.
+
+Just to give you some perspective, if you think about the funding landscape here locally in Washington three years ago, we had zero hundred million dollar-plus rounds. Last year, we had (I think) five, and this year we're already at eight. Companies like Remitly, Outreach, Auth0, Highspot, and others, certainly, Convoy, being one of the ones that three weeks ago, announced a $400 million round. The only company on the list that made both 2018 and 2019. We're seeing a lot of activity in the late-stage funding.
+
+Ben: Awesome. Thank you. Now listeners, if you want to go deeper on company-building topics or you just want to support the show, you should become an Acquired Limited Partner. We have a second show where we get into the nitty-gritty with expert operators and investors like the CEO of Webflow and Cameo—upcoming episode, spoiler alert for people in person—and partners at Benchmark, Emergence, and other great venture firms. You can become an LP by going to glow.fm/acquired or by clicking the link in the show notes. All new listeners get a seven-day free trial.
+
+Of course, there are tons of ways to be involved with the show. You can join the Slack available at acquired.fm, rate us on iTunes, and we always appreciate any shoutouts anybody wants to give on Twitter or the social media platform of your choice.
+
+David: Or in person.
+
+Ben: Or in person. This is really crazy doing the show, looking up and seeing people. You're going to hear all the parts where we say um, which we always cut, you're going to hear when I look at David and I'm like, “That didn't make any sense. Can we delete that in post?” Anyway, with all that, on to Convoy.
+
+David: On to Convoy. When Ben and I started thinking about doing this crazy thing and planning for our first independent live show here in Seattle—this is actually our second live show, our first was, thanks to our friends at GeekWire—there was only one company and one entrepreneur that we wanted on the show. That was Convoy and its co-founder and CEO, Dan Lewis. Not only because, as Minh mentioned, it is (as we speak) the highest-valued startup in the Pacific Northwest, having raised a whopping $668 million in total capital, but more so because its story illustrates a really important new theme in tech that we haven't talked as much yet about on the show. It's going to shape many of the next generation of great technology companies and that's taking all the lessons in tech from previous generation companies like Amazon where Dan worked, Airbnb, Uber, DoorDash, all of them that were focused on consumer-driven businesses and using that same tech to disrupt super-large, super old-school B2B industries.
+
+Obviously, Convoy is at the vanguard of this but they're not alone. There's Flexport out there, which folks might have heard of, RigUp in oil and gas, even our own portfolio company at Wave [...] which does this in the scrap metal industry. We're going to see a lot more of this in the coming years. We are super, super excited to have Dan Lewis, the co-founder and CEO of Convoy come up to join us. Come on up, Dan.
+
+Dan: Hi. I'm on, perfect.
+
+David: Before we dive into the typical Acquired history and facts, and go back to 10 years before your birth and all that, I want to ask first, can you give us a quick high-level overview, just to set the stage for our audience, of there are many companies in the trucking space. What exactly does Convoy do? You connect existing truckers, not autonomous truckers, people who are driving rigs today with people that want to ship stuff.
+
+Dan: That's right. Convoy was a digital freight network. If you think about how trucking works, as we mentioned earlier, it's extremely fragmented. The average trucking company has three trucks. You have a bunch of mom-and-pop trucking companies on one side and a bunch of companies that want to ship freight on the other side.
+
+The mom-and-pop companies don't have a way to go source that business directly. They don't have a sales and marketing team and operations team so they work through middlemen, typically brokers or large-asset based carriers that also run a brokerage on the side. That's extremely fragmented. The participants in the middle are trying to (as individuals) maintain relationships with truck drivers and shippers, and connect the dots. Any individual person only sees a minuscule piece of the pie can't really identify all the opportunities, optimize the system, and figure out what's going on.
+
+What Convoy does is we're replacing the traditional brokerage model. We're aggregating that long tail and we're getting them all under the same platform, all under the same technology stack so that we can learn about them, know where they are, optimize their routes, keep them efficient, keep them productive, fewer empty miles, reduces a ton of waste in the system, help shippers get trucks more flexibly and faster, helps truck drivers get jobs that are more convenient to where they're located and what they want to do, and effectively just create a more productive trucking system. To your point about not just building software replacing the system, that's what we're doing with technology.
+
+David: To rewind, you grew up here in Seattle, birthplace of Amazon long before Amazon was built. What was your family like? What was your journey that ended up in this?
+
+Dan: My family is born and raised in this area. My dad went to UDub. When we were building a house in Northgate, I lived in Ravenna for a year as a kid. I was very local. My grandfather started a mom-and-pop office supplies distribution company out of his garage in Ravenna. My dad and uncle worked with that for a while, still doing that stuff today. A small business family but not really a tech family.
+
+I have relatives in Seattle that did biology for Washington State. I have other ones that work for the ferry department. A cousin of mine manages one of the fire stations in Seattle. A lot of different local jobs but not so much directly in the tech industry growing up. I just happen to grow up at a time when it was flourishing and Microsoft was coming on the stage. It got me interested in tech early on.
+
+David: You went to Yale, you're a liberal arts major at Yale, and then importantly, for the story, you joined a consulting firm after graduation. What were some of the projects you worked on, you're at Oliver Wyman, right?
+
+Dan: Yeah. I was at Oliver Wyman.
+
+David: Oliver Wyman does a lot of work with logistics-based industries, airlines, and the like. What did you learn there both in terms of exposure to some industries that would come in helpful later for Convoy but also the skills that you learned?
+
+Dan: I did learn a lot about supply chain logistics when I was working there. I worked for the Panama Canal for a little while. I lived in Spain and I worked for Vueling Airlines. We did a bunch of other projects with airlines, some projects with Boeing actually, thinking about everything from parts distribution, to the right maintenance repair and overhaul systems for an airline, to how do you optimize in airports. There are a lot of different logistics problems that we are working on in terms of skills.
+
+The thing that was the most impactful for me in consulting, something that bugged me for a long time in my life, to be honest, I remember even in high school and junior high, I did a lot of different things. I was always the kid that did seven different activities. Sports, student government, tried this hobby, tried that hobby, wanted to learn this thing, and I never really went deep. I remember thinking at one point, jealous of the person that found that one thing that they really love and they're super deep in it, I was wondering, maybe I could just pick something. I never was able to just settle on one thing.
+
+Consulting really fit me. I did 26 projects probably over 4 years or so but I kept wondering when am I going to figure out that thing that I really love. I bounced and I did lots of different things. Marketing, product management, engineering-related work. It wasn't until I started a company that I realized the thing that I was actually really good at and that I had trained myself to do over and over was to very rapidly understand new spaces, and be able to start things and kick things off very quickly, like get something off the ground. That was a skill I gained from consulting initially.
+
+Ben: Dan, did you find that you were great at that but not as operational as you would like? The knock on people that’s starting consulting or spend too much time in consulting is always like, “Oh, yeah. They're the smartest person in the room, they can definitely tell you how to solve your problem, but when it comes to doing it, it doesn't work. Was that your experience?
+
+Dan: It's a really good question. When I first started, I don't think I recognized that actually was the case in consulting. I thought that I understood things and then I realized I was just doing the strategy portions.
+
+David: You went right from consulting to a startup, right?
+
+Dan: The latter half of consulting was all operations. When I was in Spain, I was running a procurement project for seven months. It was end-to-end designing all of the specs for how we're going to do maintenance for aircraft engines APUs, working with 30 different vendors on a 6-month procurement process, and getting in all the details of finance, operations, and logistics.
+
+That's when I realized that I was learning that for the first time and a lot of the stuff are strategies. I feel like I had the benefit towards the latter part of my consulting career of really getting into the weeds and working on some real meat-and-potatoes kind of projects operationally-minded. I then went pretty far away from that, though, to be honest, after consulting in the tech and I didn't do that again for a while.
+
+David: Was that unique to Oliver Wyman? I had friends actually who worked at Oliver Wyman, McKenzie [...] and whatnot. I never think of them actually getting deep into the logistics and operations of any of their clients.
+
+Dan: It was both. Some of the projects we did were, let's create a new company inside this business or a new business that's very strategic. Who's the customer? How could we do this creating the bones of a new business? But actually, Oliver Wyman did and does a lot of work in operations, specifically around optimizing procurement. That actually was maybe a unique thing and that was a really good experience.
+
+It actually helps me all the time today because I'm on the other side of that now and I'm working with procurement departments from large businesses. I've sat in their shoes and worked on large scale enterprise procurement deals.
+
+David: After four years of this, you come back to Seattle. What year are we in now when you're doing Skydeck?
+
+Dan: When I joined Skydeck, 2007.
+
+David: Okay, so tech is a thing. Convoy hasn't been started yet. The Seattle startup market isn't quite what it is today. What prompted you, other than perhaps wanting to come home to working in logistics at airports, to go back into the tech world and join a crazy new startup?
+
+Ben: For people who aren't from Seattle, the way to think about this is, Amazon is in one building at this point.
+
+David: Yeah.
+
+Dan: Skydeck was in the Bay Area, I actually didn't leave right away. What I did, and this is something about how I just got into startups, I always wanted to do something in tech. When I was 10, my dad worked for US West, the local phone company. He brought home an IBM XT, I remember, DOS 3.0, and I just learned how to use it.
+
+I taught myself a bunch of things on there, I started with BASIC and just taught myself a bunch of really simple things, wanted to figure out how to optimize the computer so I could play more video games, and got online very early on. So, it's the library system and started teaching myself all that stuff work. I was really interested in tech early on, got away for it a while, but that's how I made money in college. I made money building websites for the athletics department.
+
+I did a lot of IT support and help people. Back then did make $10–$15 an hour just to have some money in college. It was something I developed early. Then, when I was consulting, I was like, “I want to go back in tech.” I had this bug. I didn't know how to quite get back in there because most tech companies and startups look at consultants and aren't that interested, at least back then. Especially in Silicon Valley, a lot of the early-stage ones were looking for folks with more technology experience.
+
+David: It really was in a lot of ways, part of what Convoy share a lot of heritage with Uber. It was then that really we’re like “Oh, yeah. We're going to hire a bunch of people from Goldman. We're going to hire a bunch of people from McKinsey and bring that operational know-how into the startup world.”
+
+Dan: It was definitely not normal. I hustled. I remember taking a vacation from Oliver Wyman for a week and a half and all I did was network. I just wrote a list of everyone I wanted to meet, then found ways to meet them, then would ask them who else they knew in the space. I started working on start-up ideas, I would just take time off to work on start-up ideas, and I had this idea for location-based services like data research company and surveys company.
+
+I started diving really far into that, wrote a whole business plan, that maybe 40 or 50 people, and never decided to do it but I realized really quickly the power of networking and information. I would have lists of people that I would write down and all my notes and my meetings with them. Then I realized after 10 or 20 meetings, every meeting I went into, I knew more about the space and the person I was talking to and I could introduce them to all these new companies. It became like this information poker roll. I finally networked my way into Skydeck.
+
+David: It should have been an associate venture capital firm.
+
+Dan: Yeah, I tried early and that didn't work out but that's how I found Skydeck. I actually networked my way in while trying to start my own thing, met this group, they had founded a company in New York called Vindigo, which is the early mobile app developer for brew handsets running on Verizon.
+
+Had some success doing that, moved out to Silicon Valley to build this new company, I was compelled and basically, somehow convinced them to hire me. They were all engineers and they’re like, “Why would we hire you? You're this consultant.”
+
+David: Was Skydeck also focused on brew handsets?
+
+Dan: No. At that time, it was pre-iOS. iOS came out right in 2007, I started this company in May 2007. They were thinking about social networks. The social graph was the big thing back then, and mobile, like location-based service is very early. They were thinking, “Hey, you have all this data in the phone bill. It's like someone's social graph. Can we let you unlock that and combine that with your email and contact [...]?”
+
+Ben: [...] text message records.
+
+Dan: All your text messages, phone records, and contacts so all of a sudden, you can see your real social graph. Is there a way to monetize that or to plug that into other systems that are being built at that time?
+
+David: The big reveal is this company ends up becoming Hiya, right?
+
+Dan: It went through a whole bunch of [...].
+
+David: Which is a spam call blocking now.
+
+Dan: Yeah, they actually did that. They had a call system specifically designed to help you identify if someone was calling that you didn't want to pick up. They got it pretty far, actually, and had a partnership with Google. Then Google shut it down and built it. They basically said, “You can't do this anymore on Android. You can't get access to the phone records, so we shut that down,” and they added something [...] to work them out.
+
+David: You have this startup experience, these crazy pivots, you end up coming back to Seattle then—our fault for not realizing it was Skydeck—but coming back to Microsoft, your first journey now, you’ve gone from consulting, started up big tech company, what did you learn in Microsoft?
+
+Dan: I was very lucky to get a job at Microsoft at the time. It was 2008. I got back to Seattle. I left my job in the summer of 2008, went on a round-the-world trip, came back in October 2008. While I was gone, Washington Mutual went out of business, so my bank went out of business. I had left a bunch of stock, most of my money in stock at the time were stocks that I wasn't really paying very close attention to it. Most of that was gone.
+
+I didn't have a job because I had quit my job. I thought I was going to start working with some of the partners from the management consulting firm I’d been at as a contractor to get my feet under me when I got back to Seattle, that was no longer available when I got back. I remember meeting a friend of mine at Black Bottle in Belltown, got in with Fritz Lanman who I’d gone to college with. He was at Microsoft at the time. I was like, “Hey, what should I do? It looks pretty bad out there.” He's like, “I don't know.” He had a text message from somebody pretty high up at Microsoft saying, “We are hiring no more consultants starting next month.” I was like, “I guess that's not going to be an option.”
+
+I just did the thing I did back when I was looking at Skydeck. I just hustled again and did a meeting every five or six meetings a day, networked, created my list, tried to find a job, got no interviews, couldn't get an interview from Amazon, couldn't get an interview from anybody at the time because the market was in such a rocky state. Fortunately, I knew some people at Microsoft through Fritz who gave me a shot at an interview and I got a product manager job there.
+
+David: Man, and you haven’t been a product manager at Skydeck, right?
+
+Dan: I had not been a product manager at Skydeck but I basically was because we were so early. I just thought like one. I was able to get through the interview. I want to give that context because that was a point where you imagine, I grew up in Seattle, went to a local school, somehow ended up at Yale (there's a story around that), worked really hard for five years, was really frugal, saved.
+
+Then in 2008, one decision was offline for a few months and came back to Seattle basically with nothing. No job, no money, and didn't have a place to live. I have seen that side of it and I didn't panic. I just knew I could work hard and find a job. But I have a lot of respect going through seeing 2000. I graduated in 2003. I went through this 2001. There were very few jobs and I was graduating. Again, really struggled to get that first job, worked really hard. A lot of friends of mine took a long time to get those jobs, 2008. I feel like I've been through a couple of these really hard periods which made me really value the opportunities that I've had.
+
+When I got that job at Microsoft, I was very proud of it and I'm very excited about the company. I grew up in Seattle looking at Seattle Times, reading about Microsoft Group. I remember looking at their stock price when it's printed in the newspaper, so intrigued by this growing company as a kid. It's a dream for me to get a job there.
+
+Ben: This is a unique Seattle thing. I didn't grow up here and nowhere in the US has reverence for Microsoft like Seattle does. If you grow up here, there's so much giving back to the community. It created so much wealth for the community. It puts you out on the map in a lot of ways. In Ohio, I was like, “Oh, well. Those are the bad computers.”
+
+David: Of course, you ended up working for Microsoft for many years.
+
+Dan: Yeah, you’re right. That was the foray into Seattle for me. I didn't take anything for granted because I realized we’re in a world of plenty right now, we were just talking about how much capital is available that Convoy’s been able to raise a lot of money. Everyone that's graduated in the last 10 years has only lived in an environment where everything's up into the right effectively.
+
+I've lived through two other cycles now. One I was, again, just out of college months later, but it's made me never take for granted anything we're doing. I don't rest and feel like we're there. We got to build a really healthy, sustainable business and hurry, and we're taking a big swing. The more money you raise and the bigger the opportunity you go after, the more challenges you face in terms of getting there.
+
+David: That's why we're spending time on this. You read the headlines about Convoy and you'd think like “Oh, man. What an emblematic of where we are in the cycle and hotshot entrepreneur from Amazon, raising all this money.” I would say that’s not thinking like you've lived through all this and in a way that most entrepreneurs don't have right now. Microsoft, then you're like, “I'm going to go back to do the startup thing again” Wavii, another startup, we were investors when I was at Madrona, great product idea, didn't end up realizing its vision, gets acquired by Google.
+
+Ben: Dan, you were head of product there, is that right?
+
+Dan: Yeah. I was head a product. It was pretty small so I did a lot of stuff like marketing products, planning a bunch of different things, jack-of-all-trades, I did that in that experience.
+
+David: How long did you stay at Google? The team (Adria) moved down to Mountain View. Did you stay in Seattle and is that how you ended up at Amazon?
+
+Dan: That's right. The company was acquired in 2010–2011, if I remember correctly, and ultimately, the entire team moved down to the Bay Area to join the Machine Intelligence Group. I learned an incredible amount at Wavii. I decided then to move to the Bay Area. I was working remotely for Google for a while. I was looking at several options in Seattle to join some of the teams here and I just decided I wanted to be part of a remote office at that time.
+
+Google's actually scaled pretty significantly since then, but I remember going down to the Bay Area once to meet some of the leadership of the team that I may have been joined. There were two or three options in Seattle and I distinctly remember sitting down with them. I won't say the person's name but I remember they're like, “We just have a love-hate relationship with our remote offices.” I was like, “Oh.”
+
+Ben: What's the hate part?
+
+Dan: I was like, “Oh, okay.” He's like, “Yeah. We have to keep a lot of the planning and a lot of the figuring things out down here and then we have some satellite teams up there to X you on specific pieces.” I was like, “That sounds fine if you're in maybe engineering.” What I wanted to do was very different than that. That was actually the thing that caused me to not stay at Google.
+
+I was like I don't really want to have that experience where I'm supporting a remote office. I want to be in the thick of it. I looked at several different companies at that time. Someone I had networked with early on when I was doing Wavii reconnected with them. They were with Amazon and was really inspired by the team. They built the organization they're building, so that’s why I went with Amazon.
+
+Ben: Dan, have you ever had a job that you applied for, that you apply and you’re like, “I hope they get back to me,” without having a relationship with someone there?
+
+Dan: Have I ever gotten a job or [...]?
+
+Ben: Have any of the jobs that you've ever held have been from a job portal?
+
+Dan: I think so. There were two, actually. My freshman year internship, the internship I had for my freshman year. I applied to an online posting. I joined a company called PR.com in Seattle which is acquired by Waggener Edstrom. So very 1999 name, PR.com; we did PR for tech companies. I didn't even really know how to be an intern. I just went on vacation once. for a week and they're like, “Just tell us.” I was like, “Oh, okay.” Then the other time was companies came to Yale looking for candidates and there were some companies doing on-campus recruiting. I went that channel. But after that, no.
+
+After that, it's always been through the relationships that I built. I very often hire, I reached out to a lot of people and I do a lot of personal sourcing, and that's always been a big part of my thinking. I have sent out a lot of applications where I didn't get anything. I was trained.
+
+I got that job I mentioned out of Yale, I got that in the spring. I sent a lot of resumes out and applied to a lot of places. I had taken my junior year off and went to Chile, so I became fluent in Spanish. The summer before and after, I worked with my family's delivery business. I didn't have the post sophomore, post junior year strong internships. Coming out in 2003, again, tight job market. I could do it but didn’t have the story, so the traditional channel didn't really work for me.
+
+Then back again in 2000 and over time, applied to different roles, then again in 2008, when I was applying, that just didn't work at all. When I've mostly been looking for roles, I've been in situations where that just didn't work. That's why I've trained myself to not really go down that path.
+
+Ben: All right, Wavii happens, you end up at Amazon, I want to ask one question on Amazon before moving on you founding companies and then we'll get to Convoy. Recently, Amazon has been dubbed the CEO factory. We've seen data of all these great CEOs at big fast-growing companies that have come out of Amazon, what is it in your mind that creates that?
+
+Dan: There are a lot of other companies too that does a good job of spawning CEOs. One thing that Amazon does is that it expects a lot of ownership from the people that are in the role. It has a culture of assigning a single-threaded leader or a person who's ultimately responsible for the outcome of the thing, at least, in my experience. That design puts you in a position where you feel responsibility across multiple functions even if you don't own all those functions. That cross-functional leadership at many levels of the company and a strong push towards ownership is really important.
+
+You see that both on the business side and the technology side. When I was at Wavii, we tended to bias towards hiring a lot of engineers from Amazon. Of course, there are great leaders in every company. Though the experience we had was that they had been expected to own more of the end-to-end aspect of their system versus just one piece. I saw the same thing on the product and business side as well. That probably attracts people that want that and then trains people in how to think that way, so then you can slot into those opportunities.
+
+Ben: Is there a proactivity and a hustle that doesn't exist at other bigger companies? Is that part of it or is that overly mythologized?
+
+Dan: I have only worked at several and I didn't spend as much time at Google, but I have at Microsoft and others. Definitely, there is a distinction that's true on that. I'll give you an example. When I got to Amazon, and this is not maybe the typical role, but I didn't have a team. They just said, “Look, you’re a person who’s going to build a team. Go do some research. In this general scope of the world, figure out what Amazon should be doing and why.” I wrote 5–6 pagers in my first 2½ months. I pitched them to the leadership team.
+
+David: Six pagers, of course, being the Canonical Amazon.
+
+Dan: The Canonical Amazon document.
+
+David: No powerpoint. Six pagers.
+
+Dan: Yeah. Just straight write a Doc. I wrote 4–5 docs, actually, that were each different business ideas. I pitched them. I go funding for three of them and then over the next two or three months, I went on and hired the teams.
+
+David: Who you were reporting to at the time?
+
+Dan: A guy named Michael Dougherty and then in his [...] is Sebastian Gunningham, who is actually on that list as well. The CEO [...] is now the co-CEO of WeWork, which is a whole different strategy. Whole different thing.
+
+David: Be careful of the company you keep.
+
+Dan: Yeah. He was creating the same [...] area for this to happen. The fact that that can exist in a company’s pretty inspiring. Then, when I realized after I’ve been there for a while was the planning process encourages people to come up with new ideas and pitch those ideas. If they’re able to build consensus and a story line around it and demonstrate some early value, they can go build a team around it. And data wins.
+
+I remember there’s an example. Ask a question and get an answer on Amazon. That’s a feature that exists on Amazon. You can ask a question on the product base. Other customers or manufacturers will answer that. That product was developed by someone else on the organization I was part of. It works now a little bit, but I didn’t directly develop that. That was originally given the thumbs down by leadership. But the team said, “Okay, fine. We’re going to figure it out.”
+
+They went and email a bunch of customers, asked them questions, came back and said, “Actually, if you email customers and you ask them questions, they will answer them at this rate.” The person who had said no was like, “Oh, I thought they wouldn’t. Turns out they will. Go do it.” So, someone just said, “I don’t agree with you. I’m going to show you the data.” They got a team out of it and they built it.
+
+That internal culture of funding good ideas and if people do the research, put the hustle, and figure it out, funding that has created obviously a very broad range of businesses and products the Amazon has created and a culture of starting new things. That’s probably unique, actually the range of things are doing.
+
+Ben: You leave Amazon to start a company. Are you writing six pagers and was Convoy originally a six pager? Was that the format in which you thought about new businesses?
+
+Dan: I didn’t do it that way. Convoy’s a combination of influence for many different companies, actually. I wouldn’t say just Amazon. There are a couple of things we took from Amazon that we thought really important, but we’ve taken from a lot of experience we’ve had. The original experience coming out of Amazon was a lot of research. I wrote a document, but I wrote different forms of documents to capture and structure my thoughts. But it was again, I need to talk to a lot of people, like let’s find the problem. I didn’t really know exactly where the problem was going to be. Logistics seems really interesting.
+
+I had this moment at Amazon where it looks like the supply change as one. I told this story maybe once before but not very often. When online shopping started, you had to decide. Am I going to go to the store and buy it last minute? Which means I get to procrastinate (people love to procrastinate). Or I have to buy it online 5–8 days in advance before I need it, which means I can be lazy, but I can't procrastinate. You have to be lazy or procrastinate. That’s two really strong human conditions that people really want to do and this goes back to my cognitive science at Yale.
+
+David: This is like a TikTok episode.
+
+Dan: Yes. People want those things and you have to decide. Then, Amazon Prime comes out and all of a sudden it’s two days. All of a sudden I can order it online, be lazy, I can be procrastinating over the last minute. What happened was, people change their behavior. You started waiting to order two days in advance if you’re a Prime customer because you could. Once you waited until two or three days left, where else are going to buy it? No one else delivers in that time frame. The secret was being faster than everyone else in creating that rhythm. It wasn’t about the exact two days, two days was faster than anybody, so you to wait and then you’ll order because everybody procrastinate. So you always wait. You would wait until the last minute.
+
+Once that kicked in, massive shift of business to Amazon, especially for Prime customers. In fact, today a monopoly over the purchasing in that time frame. When I saw the data and understood the impact of that, I was like, “Wow. The supply changes dominated.” That is why people are shifting their behavior. They can't see it, they can’t touch it. It’s not about the location of the store, the parking. It’s about two-day delivery, making me procrastinate and buy online from Amazon. Super powerful.
+
+All these other businesses started reacting to that. I was like, “Okay, I got to figure out something in supply chain.” I talked to other investors and Seattle. Hadi Partovi was somebody I spent some time with early on, who wanted me to look in the trucking, specifically in supply chain. I was looking at several parts of supply chain. I then took direction, started diving in the trucking aspect a lot more, and there are three or four interesting businesses and trucking I uncovered. But that was just through talking to people. Just hustling and getting out there to truck stops.
+
+David: All of there threads to your background come together here with Convoy.You talk to Hadi, you land on trucking with him, and just takes in the specific market space idea within trucking, one thing you guys did that I never see any other companies do is you recruited your team before you had the company? You and Grant, your co-founder, you guys meet at Amazon?
+
+Dan: Grant was on my team with Amazon.
+
+David: But you had five engineers that were part of your team even before you had landed on the idea for Convoy, right? Talk us through how you thought about that.
+
+Dan: I learned about this back when I was trying to get the job at Skydeck. I have a strong technical background, I know a lot about developing software now, but I’m not a software engineer. I realized, at least in my perspective (and some of the investors in New York can decide if this is right or wrong), as I was trying to get seed funding, what I learned and felt early on was, you have to check three boxes. You have to have an idea that they can at least understand and believe this compelling and believe it has the right dynamics that you could return on the investment. Can be that kind of an idea.
+
+The second is, you have to be a personality, an individual that is compelling to them. A big part of that is they want to believe that you’re going to do the work, you’re going to hustle, you’re going to commit to it, you’re going to get it done, you’re going to be smart and thoughtful about your approach, and you have to convince hundreds of other people over the next few years that what you’re doing is worth it.
+
+David: This is cool. I’ve never heard you talk about this before. Many entrepreneurs can check boxes one and two.
+
+Dan: Exactly. I couldn’t check box three of build it. I couldn’t build it myself. I didn’t believe I could go outsource that to a contractor to build my idea. I knew enough about the ecosystem that I wasn’t going to build a track the investors that I wanted and the supporters if that was my strategy for development. I need to get the best engineers around the table, otherwise I might not be able to raise seed funding. And as much risk as I wanted to take and as you take doing a startup, I actually wanted to minimize my risk in getting this thing going.
+
+What I did is I had a sense of some of the ideas that I wanted. I knew I needed a strong technical co-founder who knew how to build a startup, so I spent time trying to find that person. That was Grant. Grant and I decided to do this. Then, I went back to the team I worked with at Wavii, some of the people there, and some people I’d worked with at Amazon. Some of them were there and some of them weren’t there anymore. I started just planting the seeds and ideas. I got a few them to say, “I’ll do it.” Actually a few of them said, “I’ll do it independent the idea.” There’s two or three ideas, whichever one, let’s do it. I'm pretty confident and that was what I needed.
+
+Then, I put together the pitch deck and we start building it one the side. We started setting up the development environment, deciding what we’re going to build the building blocks of actually getting an app developed, things like that. Getting some of these things structured and organized. I started doing a bunch of research and then that brought some of the engineers in. UDub actually was where we started the company.
+
+David: I’ve heard you talk about the table. Was the table here at UDub?
+
+Dan: The table was here at UDub. TechStars has their office here at UDub, in the old law school library. That’s where it was. Chris Davor let us sit at one of the tables. Actually, to go all the way back, we started there. Once we knew we were going to do this, we went there. Before that, before totally Seattle (to give all the context), Maveron reach out to me and said, “Hey, we heard you’re going to do this. We want to give you an office to work out of.” I went down and worked out at Maveron for a while. I knew some of the Maveron partners. They gave me that access and let me get my feet on the ground. They gave me a place to start working in some infrastructure.
+
+I did all my research there and then I went to them and said, “I’m sorry, I’m doing a B2B idea,” because they only invest in consumers. They’re like, “Oh. okay.”
+
+David: You’re out.
+
+Dan: I should probably leave. But they were great. They’re really supportive. And then Chris was like, “Well, you guys can just use one of tables because we’re not using our tables when we’re between classes.” We sat at the table in that library. It was so perfect. Because what ended up happening is we’re in this fun dynamic environment, a lot of energy in that room, a lot of people were coming in and out, and I had this great feeling. It has a startup feeling before we started.
+
+I had three of the five at that point that wanted to do it. What we did is we just invited other people to come work with us. Because we have [...] team at Amazon. I’m going to start my own gaming related thing. And it was great. It’s funny. He was here laughing and was like, “Great idea! Come work on it sitting next to use at this table.” He just started hanging out there.
+
+We just started adding people to this table and then we would get to know them and then ultimately, we got some of the little traction. Like, “Oh, this is interesting.” We recruited the other two folks from there. Not everyone joined. Some people decided not to and a lot of people weren’t interested at the time. But that was how we got it going and that was the beginning.
+
+Once we got funding, we went and got our own spot. In Seattle, I would just say, just to be really clear, the ecosystem in Seattle helped. We didn’t have funding in those first two locations and they gave us a chance to get our feet on the ground in a great environment, which was compelling.
+
+Ben: That’s awesome. Did the thought occur to you that like, “Yeah, it’s going to help us raise money. Yeah, it’s going to help me feel more confident about this enterprise I’m starting,” but like, “Holy crap. We’re hiring five engineers and we don’t yet know (not product/market fit), we haven’t gotten any signal from customers that we’re building anything remotely right.”
+
+Dan: That’s true.
+
+David: Well, when you put it that way.
+
+Dan: As I mentioned, I went out and talked to a lot of other brokers, I went on and talk to a lot of shippers.
+
+Ben: Yeah. You notoriously hung out at truck stops.
+
+Dan: A lot of truck stops. I did all of that stuff. Those were fun. I remember I told this story. The first shipper I walked into, I walked in, panicked, asked where the bathroom was. They gave me a warehouse, I went to the bathroom of the warehouse and left. I didn’t know what to say. I was like, “Okay, that didn’t work. I’m back to my car.”
+
+David: Maybe they just not see your material.
+
+Dan: The first truck stop I went into, the same kind of thing. I went in there, I looked at all the people sitting having lunch, individually at each table by themselves. Everyone turns to look at me and I walk in. I’m dressed not like a driver. I went back to my car and thought about it again. My clipboard and Starbucks gift cards were effective, but not in that moment. But I learned a lot in some of the companies along the way. What I found was most ideas I’d ever had in my life, including the location-based services like data research one and maybe 10 others, that’s really bad ideas. Really bad ideas. All sorts of stuff.
+
+This one, actually, every time I shared it with somebody from the industry, they were excited about it and felt like it was necessary. I got really strong positive feedback from the industry that I had never experienced for and I never thought about something else. I didn’t know, but I knew there was a problem. I was really sure there was as problem. People are hungry for something to be better. I didn’t know how to solve it. That was where we started and we brought in those folks. The best part is, we did all this without ever incorporating. We knew that was important, but we were very much, let’s avoid the trappings of a startup, let’s just start building it.
+
+Maybe there’s some legal reasons not to do that probably. But we were working out of these different offices, we were getting people to sign up to work with us, we built our pitch deck without pitching investors. We were working on a code with folks part-time at that time. We started the company once someone told us they wanted to fund and then we need a bank account. We’re like, “Oh, we have to have a bank account that you can fund because I can’t just use my phone number and my home address,” which is a bad idea. Really bad idea.
+
+Ben: Do you still get a lot of mail?
+
+Dan: I get a lot of phone calls so I need to change the phone number. I do a lot of customer support when I pick up for truck drivers, or if we’re looking at someone’s like, “I didn’t get paid yet.” I’m like, “Okay. I’m working on it.” That was the origin. But it was really funny. Drew housed in from Dropbox. I don’t think I’ve ever told anyone this. We were going to close, it was over a day, and he was like, “We got to close.” Our first bank account was Silicon Valley Bank. We realized we had to incorporate.
+
+Ben: [...] to invest?
+
+Dan: He was going to invest. He was ready to wire before everybody else. Like, “Can I wire?” I was like, “Oh, hold on. We’re having some bank issues. Let me get back to you.” What we did is we reached out to an attorney, I won’t mention who it was. It was like on a Monday and they were like, “Great! We’ll do it.” I had an attorney that I knew pretty well, but my co-founder has reached out. He was taking care of that. [...] we are running so fast that week. I was like, “Who’d you reached out to?” He told me. I said, “Okay, sounds good. Let’s get this started and set up.”
+
+Then the person just didn’t call us back. They were just quiet for two days. We called them, they’re like, “Oh yeah. I’m on it, I’m on it.” “No, you said you would do it tomorrow.” “Okay, we’re done.” Two day contract, we’re not working anymore. I called on some night work with actually at Wavii, Anik from Orrick who was the only attorney I’d ever worked with in this context, who I really liked. He got it turned around by 24 hours, opened a bank account and got money.
+
+The learning from that is don’t worry about getting all the trappings of the startups, I would say. All the things that on paper designated that there as the startup, just spend all your energy on, is this the right business? Because none of that stuff really matters unless you have the right business.
+
+Ben: The startup isn’t the legal entity in the payroll system, an IP assignment. It’s having a thing that exist in the world that didn’t exist before that customers want.
+
+Dan: If someone’s interested in, or that someone is willing to fund to figure out if people will be interested in it.
+
+David: This business that you’re triangulating on that becomes Convoy, of a marketplace of truckers and shippers, how did you get the initial liquidity for this to happen? It’s one thing to like, “Oh hey, join my marketplace as a shipper. You can ship stuff. It’ll be great and I promise that I’ll get there on time,” and you’ve got one trucker that’s a hundred miles away.” How did you bootstrap this?
+
+Dan: There are few people in the audience that have more long-term first thing knowledge of this [...]. The way we originally bootstrapped it was when we had a mistake. We thought truck drivers will be compelled by our amazing vision. We thought that the great design of our app and the vision of our ability to help them would compel them to download and use our app. We worked really fast. We raised money in May and then we raised again in July our seed round. Then, we launched at the end of August.
+
+Ben: How much did you raise in May and July?
+
+Dan: I think it was like a million in May and like a million-and-a-half in July, something like that.
+
+Ben: Okay.
+
+Dan: We build the app just for [...] initially, a web experience, a pricing model, matching model, and then we went to market. This was the basic bear bonds riding an experience. We took this out, we went and showed a bunch of truck drivers. I remember going back to the truck stops. Completely safe about this, but everybody in the company when they saw a truck, will take a picture of the side of the truck and put it on the Slack channel. It looks this Slack channel the side of trucks because everybody has their MC number and DOT number.
+
+David: So you could go look up those trucks.
+
+Dan: You could look up who are these local truck drivers, all these folks. We didn’t even know where to find them, even though there are online directories we discovered later and there are lots of way more efficient ways to do this. Driving down the road, taking pictures of trucks that driving by, then posting to Slack is not safe, but we felt like it was important.
+
+We just went warehouses and took pictures of trucks coming in and out, or truck stops. We are just talking to people. We developed this local network of maybe some trucks to call, then which trucks, and asked them. Nobody was interested. We completely bombed.
+
+David: This was a big part of I meant to come earlier. A huge part of the thesis, I imagine, is you’re building up this business plan.
+
+Ben: The trucks are [...].
+
+David: The trucks I was using, but truck drivers have smartphones now. These are the days when, it is 2015, everybody has a smartphone, truck drivers were never going to touch software, they were never going to install a desktop in their trucks. But now they have a smartphone, they have a computer.
+
+Dan: They were just getting smartphones right then. They are thinking about, which completely rightfully so, “I want to get some work.” We were realizing brokers are not love-hate relationship. I also heard that from truck drivers about brokers. There are a lot of shady fly-by-night brokers. There are a lot of very respectable great ones. Here’s the thing that’ll happen. Someone create a brokerage, they will go to a shipper and say, “Hey, I’m a broker. I can do your work for you.” The shipper says, “Great! Here are these 25 loads to do.”
+
+Ben: And is it hard to get a broker’s license? Is this a big hurdle, like any single person? This is why there’s a million?
+
+Dan: It’s not that hard to get a broker’s license; 18,000 brokers in the US, yes. You can go get a broker’s license and most brokers are total legitimate and do a great job. But sometimes a broker will do this. They’ll go get work from a shipper, maybe the shipper’s going to pay them for 20 loads, $20,000 in total revenue. They go get trucks to do the job, the trucks complete the job, the shipper pays the broker, the broker disappears, never pays the truck drivers or they don’t pay them what they deserve. That happens. So, the whole idea of this middle man that controls payments on the sides. It’s a zero sum game where they’re trying to pay the carriers little as possible to make the maximum from every job. The truck drivers don’t always love that.
+
+David: That’s the worse case scenario. But even in a good scenario, you’re an individual broker, you are human. You are thinking, “How many trucks do I know? How many shippers do I know?” You’re trying to coordinate those trucks and then you’ve got the payment issue. You’re getting paid by the shippers but you’re not getting that money right away. Then the truck driver, here she is driving the load, and then they’re like, “Well, I just worked. I need my money. I need to get paid,” and the broker is like, “I haven’t gotten paid yet.”
+
+Dan: Exactly. That also happens. There’s a lot of discrepancies how much you want to pay them. It’s complicated. Basically that’s a situation where the trucker doesn’t always trust the broker. A brand new broker on the scene that says they have this app that’s magically going to give you freight when you open it, is not fully believable by someone who is used to load boards, which are effectively Craigslisted and brokers say, “I have a load.” The broker doesn’t actually have the load. They just post it, so truck drivers will call them and say, “Yeah, I want the load.” “Oh, great. How much are you willing to do it for?” “$800.” “Oh, great. Let me just double check to make sure it’s still available.” “Hey shipper, I can do it for $950.”
+
+They don’t have the load yet. They’re playing both sides. This happens, so then truck drivers don’t always assume that when they see a load post on the traditional load boards that it’s a real load. It could be a phantom load. That’s the environment you’re walking into. We’re discovering this. We realize that truck drivers don’t fully trust this notion. We’re brand new. Our MC number, our official motor carrier numbers of brokers a day old. Like, who are you? It was hard to get them on. What happened was nobody would go on and then we said, “Okay, we realized that tactic. The flywheel will not start spinning if we start with supply.”
+
+David: And the orthodox is you’re building marketplace, got to start with supply.
+
+Dan: That’s right. Exactly as we thought. We’re like, you got the supply ready for the demand. Uber’s model was that of a car all ready because you’re going to need a car in five minutes. What we realized was, we could get a freight from the shipper and it doesn’t pick up for 24-48 hours, maybe 72 hours. What we actually figured out was the best way to build the flywheel was not to go start with supply. It was to get demand, take each individual shipment, go to the supply and say, “I have a shipment for you, do you want it?” “Yes. real shipment, I’m in.” “Great, it’s waiting for you in the app.” Then you go from a 0% conversion to like 95% converseion. Whereas the truck driver wants that job, they’re going to download the app to get it.
+
+That ended up flipping it and making it go fast. The secret sauce to success factor for Convoy was about how rapidly we could on board and evaluate a new carrier. It was about speed of carrier onboarding became the most important thing, because effectively the clock’s ticking once you take the job from the shipper. We had to go get a new carrier onto our platform, sign them up, train them to use the app, get them to download it, do the paperwork, get them to sign our agreement, and do the job in 24-48 hours. That became the secret sauce for building the brokerage. That’s how we got the flywheel going.
+
+David: That’s what’s so cool about you guys in thess B2B marketplaces is, again, you think about the consumer-driven companies. It’s about how can I satisfy the product needs of the consumer as quickly as possible? And these B2B marketplaces, it’s about money. It’s like, “I have money. I have a job. I will get you the money as soon as possible.” The other thing that you guys did pretty early on, is you we will pay you within a day of delivering the load, right?
+
+Dan: That’s right.
+
+David: How did you make that happen?
+
+Dan: The flywheel works in our world not only do you need the driver to do the job, they need to download the app and use the app. A lot of work has gone into making that app as simple as possible. But we need them to use it. One of the best ways to get them to use it was to say, “If you use it throughout the job and you upload the paperwork to the app, then we can pay you really fast.” It created an incentive for them to use the technology, which then reduced our cost and give us the data we need to run our business.
+
+Effectively, if I could pay the carrier 30 days before they’re used to getting paid, the cost for me to finance that is a lot less than the benefit that I get from a carrier using my technology platform from the data that I collect, the operational efficiencies that come from that, the visibility, and the network that I built. That was as effectively as a cost of growing the network faster.
+
+Ben: There’s this interesting famous venture capital question that is, “Why now?” People have tried this business before and people specifically have tried building a digital freight brokerage before. Why now? It is such a clear and present answer of, smartphones came out in 2007, but the broad adoption by everyone who drives a truck wasn’t until the 2014–2015 era. Once that happened, not only could you get them to upload the stuff, but you could passively collect location data and just know like, “Hey, where are the loads?’ We don’t have to have people calling and saying, “Have they gotten there yet?” You just know.
+
+Dan: That’s right. That’s why it’s important that they use the app.
+
+David: That’s what’s cool. It’s not enough. You’re just like, “Oh, all the pieces are there.” There are companies out there that are already basically installing smartphone [...] on trailers at this point. You can sell software and try to be like, “Oh yeah, it’s better. The industry should do this.” Or you could create incentives like you guys did to make it economically better for participants of the ecosystem. And the way you do that is you actually create a full stack company, right?
+
+Dan: Exactly. You could build software. We could have built this software and sold it to brokerages. We thought about that and there were two big reasons we didn’t do that. One is, we really wanted to do something transformative. It’s very hard to change an industry by selling a software product to the person running the industry. Maybe that will drive their behavior, but it’s probably not going to really drive massive behavior change. They’re going to dictate what they want from you, so you build to their expectations and needs. They ultimately own it.
+
+Ben: The analogy is those flywheel apps in taxis. That wasn’t what took over the world.
+
+Dan: Yeah, that’s right. And we wanted to be in that position. We wanted to be the principal in the transaction, run the relationship with both sides, so we could not only improve the efficiency of the marketplace, we could go upstream into each of their businesses and solve their problems.
+
+Ultimately, that leads to a bigger total business opportunity. We don’t think this ends with truck load freight. We’ve already built a transportation management system, a TMS software solution for medium shippers to use, that they can run all of their freight on. They can actually book their loads on Convoy and book their loads on any other trucking company via Convoy’s platform. That starts to give us a bunch of other benefits, the same thing to these sites so we can build out now by owning that relationship.
+
+Ben: And that’s free, right? That trucking management system software?
+
+Dan: Yeah. That’s free for medium and small shippers.
+
+Ben: That serves as your top of funnel for the shipper side where, “Hey, you may not be using Convoy today in the traditional way that everyone else uses it. Here’s some free software. I’ll provide all these benefits to you.” Is that how you think about that?
+
+Dan: Yes. It’s still early but there are a lot of actually larger companies using it, too. We have companies doing 15,000–20,000 loads a year that are using it.
+
+David: Is our analogy here Amazon Marketplace?
+
+Dan: It could move in that direction at some point. That would be effectively really creating a marketplace for other brokers as well. Today we’re not doing that. When a company’s using that TMS, it’s a shipper. It’s a company that’s shipping freight. The company that’s actually purchasing the shipping service.
+
+Ben: I want to take us in a little bit of a different direction and not catch us up all the way to today, but talk about some of these milestones in the company. Convoy has grown up sordidly fast. In revenue, in fundraising, in headcount, in every observable metric. It is outpacing the traditional startup, and you’re 4½ years in. Can you talk about some of the points where you made the decision to put the foot on the gas and how you made those decisions, the tradeoffs involved in making those decisions. It just fascinates me that it is so aggressive.
+
+Dan: From the very beginning of the company, we believe that speed was a feature of the company. We thought a lot about our values, who we want to be as a company. How do you create foundational values that lead to the experience you want to have as a business. Speed was always one of them. We believe that as you said, 2014–2015 was when truck drivers started getting smartphones. And prior to that, this is impossible. Because you can’t mail a truck driver a piece of hardware that they’re going to install in their cab four states away when the job accept in a day or two. It’s just not a feasible thing.
+
+When we felt the window opened, we realize it was a really good idea. There are other people looking at the space and we wanted to move really quickly. We did decide early on that this was going to be a feature of the company. We were going to try to push ourselves. I’ll just walk you through year one time frame which was very fast.
+
+We started hacking on it in March, incorporated the company April 1st, not on purpose; it’s been fun. There are a couple of things we’ve now built around that. Again, we raised the money in April this time frame, July a little bit. I guess it would have been April, we raised money. We built it, like I said, in August in a private beta environment, 20 or 30 customers. Announced to the world on October and then raised out Series A in November, and closing December. It was a very fast first year.
+
+David: That’s where you say it was a $16 million round from Greylock.
+
+Dan: That’s correct.
+
+David: Which now, $16 million Series A seems reasonable. That was huge and very fast.
+
+Dan: That was very large. Again, that came back to the theory of we’re going to try to go fast, we need a line around the capital that’ll allow us to go fast. This was also in the earlier days of many of these shared economy and other ride sharing types of services where people saw how speed mattered.
+
+In the first move, I was able to get in a very advantageous position. It’s not exactly the same in B2B in hindsight, but at the time like now, we don’t rush, but we need to go faster. We don’t want to find out too late that that speed was really important. We built that, we built it quickly, and we determined that was going to be a big factor.
+
+Ben: Is that because you thought, okay competitors are going to see this [...] someone’s going to do it.
+
+Dan: Yeah. We thought people are going to get into it. These obviously don't come along very often. A technology changed that unlocked the potential to build this business and drivers adopted that at this time. Really, it was an open window for this massive business to be disrupted. There have been a lot of companies. Kyrie Logistics is a very innovative company that came along in 2006-ish. Several others have attempted to do innovative things as well. They just didn't have the smartphone.
+
+It turns out with a transportation service where location is so critical, you couldn't completely disrupt it without that. That was why where speed is going to matter. We really worked really hard and made it. One of our values is always have a sense of urgency. We made a bunch of decisions along the way to do that.
+
+Even in the code, if one of our engineers was going to build something and was going to do it in a relatively hacky, unsustainable way, but it was for speed early, they would comment it out with CTFU, which was, “Catch the F up,” which was the way we thought about it. We just said, “We're behind.” We don't know who we're behind right now, but we assume we're behind. Let's go fast. We wanted to do that and in hindsight, it was the right call.
+
+We were able to help design the industry and the category, where of the independent start-ups, I would say, the most notable brand. We were able to have more options when it came to fundraising because there weren't any others that were ahead of us is already raising from these investors. We were able to build a strong brand in relationship with shippers, carriers, ecosystem partners in the industry, et cetera.
+
+Right now, I still think we're a long way away from success, but we have the opportunity now to be the company that really disrupts this, and we wouldn't have that if we would have gone slower. Now, it's really important. You can't keep the same mindset forever. You have to shift and evolve based on the conditions of the business and the environment you're in, but that was the right mindset for the environment. We're in the business. We're going after for those first four years.
+
+Ben: I love that first few milestones. Give us some more along the lifetime of that company. Whatever you're willing to share, whether it's employees, or customers, or revenue, or whatever. Help us understand the exponential nature of those next few years.
+
+Dan: For the first eight quarters, or so, we were doubling volume every quarter approximately.
+
+Ben: That's like, GMV. The amount of…
+
+Dan: The number of shipments we're doing. We look at the shipments, number of loads. That was probably not exactly that, but we doubled for quite a while. We're not doubling, we're not doing that right now. It’s sort of we reached the size; that would be very, very difficult. We've grown, we've more than doubled over the last couple of years, each year, so that has been very aggressive and it's challenging. If you're trying to grow your business at that scale, you're trying to maintain your culture and your identity, and you're trying to hire efficiently and maintain the same bar, it's very difficult to do at that speed.
+
+I've said this before. It feels like we're a four year old that looks like an eight year old. The outside world often looks at us, people joined from other companies and are like, “Well, you're this company that has a pretty notable name now. You've raised a lot of money. You've grown to be pretty significant. You have a national presence. You have all these big customers relying on you.” We're the biggest trucking company for several name brands, Fortune 100 companies now in the country. We've really gone way beyond niche, but internally we're four years old.
+
+To build this in four years, the infrastructures and the systems, they're just not all there. At times, I think we hold ourselves to an unreasonable bar in that respect, and I actually encourage our teams sometimes, to not even push us to get there. You actually want to be sometimes a little bit less developed because you can move faster and be more flexible. You don't want to look like a 10 year old company when you're four years old. You want to be four years old. That's something that is really important.
+
+David: There's two really important strategic decision in this, that feed into this mindset of grow and scale fast, that I want to ask you about. The first one is, back in the early days, in the seed round, leading up the Series A, you were operating only in one corridor, one product, one type of trucking in one corridor, in the Pacific Northwest, right? More or less.
+
+Dan: Whatever trucking we could get.
+
+David: Yeah, exactly.
+
+Dan: We weren’t sure exactly which category to this. We were taking several different.
+
+David: Because there are a bunch of categories in trucking, of different types of loads, then there's also geography. Then you guys had to make a decision about scaling. If you use the analogy of a consumer market place like Yelp or an Uber, you have one city that was working. Then there's the economical question like, “Well, what do you do next? Do you expand nationwide? Do you go to one other city? Do you do another?”
+
+For you guys, the question was, “Do we expand to other types of products of trucking, or do we expand nationwide?” You eventually made a decision to expand nationwide, pretty, pretty early. How did you think through that? It wasn't obvious. You could say, “Expand nationwide. That means we need to have supply nationwide of all these trucks that need to serve our shippers, really, really well.” How did you do that so quickly?
+
+Dan: The marketplace works on a lane level. A lane in our world is either a metro—it's like the greater Seattle area, where a shipment were picked up and dropped off in the same location, and the drivers’ at home that night—or it's a point-to-point—Seattle to Sacramento, Sacramento to Phoenix, for example. The marketplace did all to that level. One of the challenges we encountered early on was, we had to decide, are we going to be super local-focused? There's a category for very local. They actually don't drive more than a couple of hundred miles in one direction because they want to get home every night.
+
+David: They sleep at home every night.
+
+Dan: Sleep home every night. We could have focused specifically on local and we did that for a while. Then we started realizing that, most of the dollars, most of the companies that are really in need to help have more complicated supply chains than just shipping locally. Some of the shippers that we're working with locally are like, “This is helpful, but what's really painful for me are these shipments I have to go between different geographies. I need your help there.” We started talking to some bigger companies, they're like, “I really need your help in this part of the country, on this lanes.”
+
+It was important to be very disciplined about what we did and didn't do early on, but we let the customer lead us a little bit early to understand what the opportunity was. As soon as you start thinking about, “We're going to support this lane,” now you need a truck driver that's willing to drive a little bit further outside of that local area. When the trucker was in that next location, if you want to think about how you keep them engaged with your platform, you might need another job for them. Otherwise, they're going to exit your platform and getting them back is hard.
+
+David: They're going to get to St. Louis and they're going to go, “All right. I’m going back to my traditional broker.”
+
+Dan: [...] San Francisco, or Oakland from Seattle. We did local for a while, but we started to have opportunities outside of that. We realized we had to have a controlled slide. We couldn't just go national first. We had to really think about corridors and parts of the country where we could develop that flywheel.
+
+David: But you had. Once you went beyond local, you had a national network effect because these truckers, once you went beyond local, they were the carriers. They operate nationally. You winning a bunch of carriers, helps you with shippers in St. Louis and helps you with shippers in Boston, and helps you with shippers in…
+
+Ben: I imagine, big carriers operate locally, but if you're bringing on these 3–5 truck carriers do they operate nationally like that?
+
+Dan: All of them do all of those things. There's ratios, but all of them do all of those things. There's regional carriers, too, maybe they're out for a week. You can start from that. You're right. What we had to do is say, “We're not some leakage.” A carrier will come into our network and maybe they'll leave the high five corridor. That's okay. We're not going to chase them. We're not going to develop those markets. Enough of them will stay there. We can't do supply and demand nationally at the same time.
+
+We focused on the Northwest. Then, we actually went some West coast. Then we went to Texas. There's a story on that where Unilever reached out and said, “Hey, we're doing this on pilot with some of the new companies. You guys just announced yourselves. We're about to start with these other two. Do you guys want to try it too?”
+
+David: There's only one right answer that question.
+
+Ben: That's an amazing thing for the startup to get.
+
+Dan: Yes. I was really confused as to why they called us, because we we're doing very local, like Hyper Seattle shipments [...] just in that area at the time.
+
+David: I remember you guys announcing this deal, this is huge.
+
+Dan: Yeah. I was sitting across from this guy named Lorin Seeks, who has been with Convoy from the beginning. I remember just literally doing a Hail Mary pass in room. I was like, “Okay, here we go.” I was like, “I'm going to say it.” I didn't know what to say to Unilever. I said something like, “We would be willing to work with you guys, but we need all your freight on the west coast.” Just because I was like, “I don't know, I'm going to aim what they offered.”
+
+David: They got nothing to lose.
+
+Dan: That's part of that. I was probably half serious, but they could not even rationally believe I may have been serious, so they just laughed and thought I was funny. Then I was like, “Ha-ha-ha. Yeah, where do you guys want us?”
+
+David: But like, really?
+
+Dan: I was still learning at that point. They said, “Okay, we'll get back to you on location, maybe it would be California, maybe it would be Texas.” They ultimately asked us to start off in Texas. I’m like, “Okay, this is interesting.” Texas is a very heavy, local, freight market. It fit our MO a little bit. We went down there and we started with them in Texas.
+
+Ben: Because they shipped from a city in Texas to other cities in Texas.
+
+Dan: We told them we're only going to do local. One of the hard things we had to do (and this is very important for a startup), was know who you want to be and how to sequence. We said, “We're only going to do dry van.” At the time, it was only flatbed and dry van, but we’re really only doing dry van. “We're only going to do dry van shipments. We're only going to do local dry van shipments. We're only going to do shipments that are not literally within this time frame, you have to give us this much notice.”
+
+We said, “If you want to work with us, we're not going to extend ourselves in something we don't know how to do yet. We're building this network.” The way we thought about our network is someone very wise early on said, “When you're building a marketplace for network, you want every single piece of demand that comes into that market place to apply that to all of your supply.” The ideal world is that every demand opportunity could be serviced by all of your supply. That is the least fragment in market place.
+
+The fast [...] possible reach liquidity in that marketplace. We looked and it and said, “What are all the dimensions that split supply?” Because you have carriers that are local, regional, and long haul, those are different. There's some [...] between regional, local, and regional long haul, but the fact of it is different carrier segments, and because you have different equipment types. These are the things we said to Unilever and others, “ We're only going to operate in this bucket. You draw the buckets up to a [...] do this and we can't break that. If we do, we won't be able to give you the experience you're looking for.”
+
+Every other broker in the country goes to them and says, “I can handle you nationwide tomorrow.” Because what they're doing is, picking up the phone and calling a bunch of trucking companies and not requiring them to use technology, not even to build a network, just saying, “Will you do the job?” Whereas, we required the driver to use the tech, to build this flywheel, and try out this automated matching. We had to really concentrate early on. That was a very important lesson and not going too broadly.
+
+Ben: One more scaling question that I have for you and I promise I'm done. We're in this interesting time in startups, in the capital ecosystem, where people are starting to favor you at economics over growth. Your perspective on that general transition, but as it applies to Convoy, I'm curious about over the last four years, what are the ways in which you've said, “Okay, this is a good time to give on you at economics, so that we can grow.” What leverage did you use to do that?
+
+Dan: The two, probably prominent reasons why we've done that is, we have a customer. That customer wants to ramp in a time frame that we could not reasonably do with the support services that we have today. Therefore, we have to expand the team, all the dimensions of the team. It can be building capacity with truck drivers, it could be providing customer service, it could be account management. We have to scale those faster and ahead of the growth, train and get the people into the company, and ensure that we offer an A-plus level of service.
+
+We're a tech broker from Seattle with a very short track record. If someone is going to make a bet on us, they're looking for us to fail on the non-technical aspects like service and support, really making sure it works, and then providing that account management, the support. We need to be great at that, because they're going to assume that's going to be our weak spot. One was over investing or investing heavily in that at different periods. When things started to crack, you might grow too fast. In other words, we’re not doing that, slow it down, and then reinvest in that. That was one.
+
+The second is developing the flywheel. The way freight works is there's no known price of the truck. For a job from Seattle to Portland, you might have one truck that's willing to do that job tomorrow for $400 and one truck that's willing to do it for $900, or maybe even less and more. For very different reasons, one really doesn't want to do it, one really wants to do it. The market’s made everyday.
+
+If I take five shipments today and I have trucks in my network already, I can probably service all those shipments with the right economics and pretty efficiently because I already have the trucks in my network. If I want to grow my network, I'm going to say to the shipper, “Give me 10.” I only have five trucks. I need to go get five more trucks that are less conveniently located, that I don't know yet, that I'm probably going to have to pay more to get them on my platform, but that's a way to get them on the platform.
+
+In order to drive density into our lanes and build the marketplace, we would bring on more demand than we had supply to cover, and then use that demand to bring in more supply in each of those—
+
+David: It's getting into the reverse of the traditional marketplace like, “Oh, you're going to invest, onboard a bunch of supply,” and when the demand will either run out where it's for the demand, for you guys you're like, “Let's use sales to onboard a bunch of demand and then that’ll attract the supply.”
+
+Dan: That's right. There's different balances as the market shifts back and forth. In those shipments, for example, we would not have great unit economics, but it's actually the number. It's ironic. You're like a bulk discount in trucking. You’re like a bulk surplus because the more jobs you take, the more jobs any broker take on a given lane, on a given day spends more per average to cover them, because you're buying a variable cost product the goes up with the amount you use.
+
+If you have 10 trucks, imagine those trucks in order from cheapest to most expensive. You're going to try to get the cheapest truck first. If I take one job and I get the cheapest truck in my network for that job, I have covered it at a maximum spread. Every additional job I take, the next best truck would be less efficient for that job.
+
+Ben: It's effectively worse and worse product/market fit for that individual job.
+
+Dan: For the individual truck driver in that moment, for that shipment, but that's how you build supply. Once you get enough, then you have a healthy ecosystem where you have a lot of trucks, you get the data to where they are, you can then start to efficiently match a job to a truck better than the traditional industry player can who’s just calling around. That's the investment you make in building this. There's a dozen other things, but that's one of the investments you made.
+
+Ben: You could sacrifice. You did economics for a long time to make sure you have tons and tons of carriers, truckers that are constantly using the app, tons and tons of shippers that trust you all the time, so that at some point in the near future where you're like, “Look, the spread between that one truck and that one shipment that is amazing, [...] economics for us, and finding that place where it's really expensive for us and we don't make much of a margin, if anything at all.” It just keeps pushing that further and further out because there's much more liquidity on the platform. That's the long-term thesis.
+
+Dan: There are a lot of nuances behind that, but that's effectively how it works. We're making a bunch of other investments. We have a big product data science engineering team, we have all these other functions that we're building to build the brand, the technology, and the infrastructure in parallel with the business. Those are all upfront investment where they can help in terms of your growth.
+
+Fundamentally, those are the primary drivers, making sure you do a great job for your customer. It's worth investing early on when you're building your reputation and your brand in traditional industry as an outsider. Screwing that up early means you don't have a chance in the future. Being able to grow your flywheel quickly and building density on your lanes is very important. We have all the data now, that shows when you do that here's what happens. The world looks better. We can justify those investments.
+
+Ben: Thank you. David, do you want to move right into tech themes? Do you want to catch us up to today in some capacity?
+
+David: Today, where would you say you guys ranked in terms of brokerages within the industry? Obviously, you're a tech-enabled brokerage. Give us a sense of scale for where you're at within the industry and how penetrated you guys think you are thus far.
+
+Dan: We're still a fraction of the total trucking market. The truckload market is about $600 billion a year in the US. That includes private fleets and for hire, but we can compete with all of that. The largest broker in the country, the largest truck load, free brokerages is doing about $10 billion a year in truck load freight. Then there's another $5-$10 billion that are between $2-$3 billion, and $10 billion. That's the ecosystem of pure brokers. There's a lot of large carriers that are also run brokerages. We would probably be in the top 20, at the top, maybe 15. We're pretty significant in brokerage at this point.
+
+David: That's pretty incredible. All these other companies are decades old. Cool.
+
+Ben: For folks who are new to the show, we do a section after this history and facts called, what would have happened otherwise? Where, if this is a traditional Acquired episode and we're talking about a transaction that happened, it's usually, what if that transaction didn't happen? What if big co didn't buy little co? It's interesting here to dive in a little bit of, what if you guys grew at a normal startup pace? Where you would be today? What if that risk didn't pay off?
+
+You told us a lot about it, but the way that I would describe it is that there are numerous people who could have beat you to the punch on having a whole bunch of supply and whole bunch of demand truckers and shippers. I'm curious if there's a data moat here beyond just the marketplace liquidity. By rushing into this and being an early player, what other things has allowed you to do that otherwise if you were, say, 300 people today, or something enabled to service the amount of volume on your platform that that amount would give you? What would you be giving up?
+
+Dan: Let's say that we had grown slower. We hadn't really done national. We wouldn't have a chance to write a story about what's going to happen. We wouldn't be able to define the future unless the major players in the industry viewed us very credibly and we're using our service.
+
+The largest shippers in the country, many of them are now using Convoy. A lot of the biggest ecosystem partners, the events, the influencers in the industry are looking to Convoy for what's the future, and we’re defining it. We're creating a category, digital freight network, we're describing what that is, we're telling that story.
+
+I think you had to make a bet to be in a position where you we're at scale, you mattered in the industry, and you're one of the first to do that. If you're not one of the first, no ones going to look to you for the story about what's happening. It's a lot harder for the folks that are a few below to influence what's going on.
+
+Ben: In a big way, these sales, you're making sales on both sides. You're selling the shippers on your platform. You're selling the truckers on being a part of it, on taking the loads. There's an immense amount of trust there. You're convincing them ahead of actually demonstrating value. It's like, you need to be buzzy in this particular instance, because you need them to be very receptive toward working with you.
+
+Dan: That's right. When we first started, I remember going to a dinner with a bunch of traditional industry trucking companies. I have a lot of respect for the companies. It's a very, very difficult industry, it's a hard job being a truck driver, running a trucking business is hard. It's a thin margin, complicated business. It's hard to differentiate and do it as a traditional broker-carrier.
+
+There was definitely a sense early on of, “Yeah, Convoy is doing this, but it's not really different. No one’s going to really take it that seriously.” I remember early on, being told by our customers and by analyst in the industry that are competitors who are basically saying, “Convoy just gets the freight that nobody else wants.”
+
+David: I remember this narrative, too.
+
+Dan: Convoy is picking up some of the scraps out there. I remember hearing, sitting, and listening in, people don't realize that I was there. [...] computers don't match freight, people match freight. It just doesn't happen.
+
+Ben: Ironically, computers matching freight is an amazing use of computers.
+
+Dan: It's a very good use of computers. Again, I don't think that they didn't recognize those coming. It's what you want to say, because it's the right thing, they don't have it yet, and there is some really big challenge for them to get there.
+
+Being in the position when we were, gave us a chance to write the rules a little bit and be the first to come up with some of the models like the free quick pay model, the guarantee detention model, the idea of providing data and insights back to your customer. Collecting data about what's happening, every time a truck shows up in a location, when did they show up? How long did they wait? How long did it take to get loaded? How do they rate the facility? What was their experience? That particular shipment, how was it tendered to us?
+
+We can correlate data across all these experiences and go back to our customers and say, “This particular facility is under performing other facilities in the region from your competitors that are competing for trucks. This facility in this city is doing better during this shift than that one.” You should be changing your tender in practices, because when you tender in the morning, the trucks are more expensive.
+
+Ben: They never had data like this before.
+
+Dan: No one has done that. We started that. We started a lot of things and the idea of an instant price. You can instantly get a price that is committed to and you can see what capacity is for an API.
+
+Ben: It not going to get haggled in the phone like, “This is the price.”
+
+Dan: That's right. You start to get to say, “This is what the future should look like. That's when the advantage of shipping early.” Others can quickly mimic that. We haven't invented all the things, but actually we have been very inventive. We've been the leader in new design.
+
+It gives us a chance that our shippers and folks that are making the calls in the industry and influence matters. Perception is reality in a lot of these things. If you're in a conference and the conference organizers are a famous freight analyst and a transition analyst from a big bank is up and says, “You know? We really think digital freight marks of the future for this reason,” that starts to make it a reality. It becomes a self-fulfilling prophecy because then all of the shippers are like, “Oh, we should probably start buying into this.” You need that perception momentum early on. If you don't go fast and you don't get there quickly, you don't really get to contribute to that as much.
+
+Ben: Yeah. David, we're full blown in playbook now, but this is totally one of mine. Like in startup, in a lot of ways perception is reality with the market, with your customers. I've said this on a show before, but one of the best definitions of a startups is from one of my colleagues at Pioneer Square Labs, Mike Galgon. He pointed out to me that a startup is very frequently just like getting, scrapping, and biting. It's something that doesn't yet deserve. Whether it's a higher, whether it's a customer. You’re not there yet, but you're really trying to create the perception that you're there.
+
+It's this interesting self-fulfilling prophecy flywheel of like, once you actually do get that resource, that person joins your team, that customer commits to you, then you are there. Then you can leverage that to the next round. It sounds like you guys have codified this in the Convoy flywheel, but that is the business for you guys.
+
+Ben: And it is every decision you make. Early on, you're talking about a job and like, “Well, I don't know if it's going to work. Should I join it?” I'm like, “I don't know. If you join, you're half of the company. It’ll be up to you. It's not like you're joining a thing that has potential.” It was hard to hire early on. Convincing someone to leave a job.
+
+Ben: Except for the five people that followed you independent of whatever that your idea was.
+
+Dan: That's right. We talked about some of the scope, but you're right. We had some. That was hard. That was trust built up over the years.
+
+Ben: Totally.
+
+Dan: I remember trying to convince a lot of people to join Convoy and it was interesting. We used the tactic of like, “Well, you'll get to build this,” and all these different things. But the economy has been doing really well, so a lot of big companies that also had very strong stock value appreciation over the last 10 years. Oftentimes, the pitch that a startup has is we're going to have faster appreciation, but when Amazon has doubled over a year, that was a pretty strong thing.
+
+David: You go to move faster. You're stock price has to appreciate faster than Amazon stock price.
+
+Dan: It has. It definitely has, but that's cooled off, too. During certain phases, it gets harder and easier based on how well the alternative is growing. I remember talking to somebody that I was trying to convince to join. I don't remember who this person was exactly. I remember I was like, “Here's how much we think your Convoy stock will be worth.” They were like, “Well, I am doing the math and Amazon will be worth a $8 trillion dollars in three years.” I was like, “Why?” “If you look at the last couple of years of their stock price appreciation,” whatever it was the time frame they're using, “it was the exact right time.”
+
+Ben: At some point, you have to start working back from GDP.
+
+Dan: I felt so compelled to convince this person that's physically impossible and you can’t apply a growth rate to a company that's scaled, that's like that. That rate happened for maybe the last year.
+
+David: Did you convince the person? Did you make the hire?
+
+Dan: This is a while ago. I'm trying to remember if that exact conversation turns into a hire. I believe it did. I needed a better [...] with that. I remember the conversation so vividly, it was over the phone. It wasn’t an easy one to land. I was like, “No, you can't. Please don't do this. Please don't make decision believing this would be a trillion dollar company.” That's not a thing. It was hard. That just emblemized the issue of that perception.
+
+What I did early on was, there were a lot of tactics we use to convince them to join. Early on before that was a thing, I remember drawing. What I would do is I would take a piece of paper and the X-axis was someone’s career. I'd be like, “Year zero.” and I was like, “How many years do you think you want to work?” No one really knows. They say something like 30, 40, or whatever. I'm like, “Okay great. Here's your earnings,” that's the Y-axis. “I'm going to draw a curve that shows how much money you'll be making every year, like your total wealth accumulation from your salary, like what do you expect to make here?” Beginning you're making about this much, it will probably go up pretty steeply at some point, and it will flatten off a little bit. Generally like a salary curve. If you add up that 30, the area under the curve is your earnings in your life.
+
+David: You sounded really like a far more consultant here.
+
+Dan: I know.
+
+Ben: It's like if you integrate your salary, you will get…
+
+Dan: Exactly, but it worked. I was like, “Look. This one year, it's going to come down a little bit. Then it’ll go back up. If it doesn't work out year after year because it just didn't work for you, then that's the area of your total loss.”
+
+David: We're talking to your co-founder, Grant, this morning. He was like, “Your reward for working in a field of startup in this environment is you get a better job.”
+
+Dan: Yeah, I get a better job. That was exactly right. If you take that little dip, you either get the bump from Convoy working, or you have this really interesting compelling experience and your line goes up a little bit.
+
+David: Yeah, you get the higher level Amazon when get back.
+
+Dan: Yeah. We've had success, but everybody knows that it's hard to hire effectively.
+
+Ben: David, anything else for the playbook?
+
+David: Real quick, my playbook. We're coming with some future episode, but because B2B marketplaces is so different and new, and you guys are the vanguard, I tried to codify what are some principles? I'm curious, is it yes if you agree, or no, but to drive success in a B2B marketplace [...] is demand drives supply.
+
+If you're bringing the money, you can align incentives in the market and get people to adopt a new technology that otherwise would be really hard. If “gee whiz” features isn't going to compel a trucker to download an app, that's one.
+
+Two, timing is super important. What you guys did with getting truckers paid to use the app within a day is game changing for the industry. If you can change cash flow timing, we're seeing in this another companies, that can be a huge driver of growth. That's two.
+
+Three, what you said about those early days, when people were haters, we're talking about Convoy and they're like, “You guys only take the jobs that nobody wants.” If you take those jobs that nobody wants, you can take the scraps from the industry, but because you're building a technology company and a holistic market place, you can then aggregate the supply out of that. Then, get to a point where really, really quickly, you have a better call structure for the jobs that everybody wants, right?
+
+Dan: And the companies will take you seriously. They're operating at a scale on the lens that they care about. You can use whatever you get to get the carrier base going and then translate that into a virtual network. And because we plug all the trucks into our technology platform, as we scale, we effectively have these partnerships that lead to this virtual fleet, which we have visibility into and a direct connection with, which gives us capabilities that feels like it's more of a first party network for the shipper. That's a really powerful combination.
+
+David: And then the last one (which we have no time to get into today), I also find it really interesting in these markets is we’re seeing that price is not set. These are not efficient markets. Ultimately, your big goal, if you guys can efficiently setting price in a way that nobody else can, then you just completely aggregated the industry. That's my last one.
+
+Ben: It's a really good transition in the grading. On a traditional Acquired episode, we would grade if big co buying little co was a right use of capital. In some cases, you've got Instagram, and you couldn't have part capital anywhere better. In other cases, lots of great other options to invest that capital.
+
+In these ones where either where it's a near term acquisition or there's no transactions that’s happening with Convoy going public or selling or anything like that, the way that we're going to do this is grade what the A+ future scenario is for the company. What are the things that have to be true in order for Convoy to create and capture a ton of value in the world? And what's the scenario where it's lower grade? David will put in here, what is the scenario where it could be a C- where those things don't come true and what are the factors there?
+
+Dan, you homed in on something earlier that was this concept that I didn't really understand before about. In an inefficient market place with low demand and low supply on it, there really is only one truck and one shipper for which you can be profitable on a transaction. Maybe you grow to two, three, or four. If you have all the trucks and everyone who's shipping freight on your platform, then you can handle a ton of volume and be profitable on those transactions.
+
+For me, a ticket to an A+, only after reading a bunch of your business for the last month and talking to you today, I think it’s going to be, can you widen that gap faster than your company consumes capital? Basically, can you create enough slots, enough matches between trucker, and freight where each one of those transactions is above some certain bar of how profitable they need to be, and do all the volume before some run out of money? The end game for every startup? Am I capturing it well? Is that how you think about it? Is that how you think about things like, "Here's the spread of scenarios in our future"?
+
+Dan: Yeah. A big part of it is getting all the trucks on board. It's really about making those truck drivers more productive. That's actually where this comes down. It's the empty miles that we've talked about. Convoy can significantly reduce empty miles.
+
+David: Yeah. That's why the price is hard because the same job is worth a different things for different people.
+
+Dan: That's right. We launched this year called batching. You can take two or three jobs together. Our system will identify these jobs, look at all the possible combinations, and automatically stitch together multiple jobs. Then, offer it to carriers with ideal locations. Maybe a triangle or a round trip with an ideal appointment times. We found that carriers will take that job for a significantly lower price than they would've taken each of the jobs in combination as an individual. That's because we're creating efficiencies and making that carrier more productive. That's the step we have to figure out.
+
+When we do that and we actually saw the carriers that do that, run empty about 19% of the time, if they're really plugged into Convoy doing the batches today with our current density of batching, the ones that don't, run empty about 35%-36% of the time. Just when you look at the impact on the environment, you're reducing emissions from using batches by about 45%. You're using empty mileage about 40%, which is massive.
+
+That directly also translate into lower cost for the truck. The actual small truck in the company spends less money to do the jobs because they're driving fewer empty miles, trying to reduce wait times, all these things. We view it as, let's knock down the waste. Let's go after miles, unnecessary wait times, loading, and unloading times. We just find ways to reduce those. If we can do that quickly plus add more volume into that, lower the waste, and add more volume, then we're creating a better cost structure. Then, we're in an advantageous position and we have options. Getting that in place, its scale, with the capital we have is the key.
+
+Ben: Awesome. David, anything else to add?
+
+David: I think that's right.
+
+Ben: Wow. Listeners, thank you for going on this journey with us. For folks who listen to a lot of our episodes, you'll be like, "Oh, yes. About how long does it usually takes." For folks who came expecting a commute to our podcast, it's been longer than that.
+
+David: Thank you for bearing with us.
+
+Ben: Yeah. Do you want to do carve outs?
+
+David: Why don't we do it after?
+
+Ben: I have one I want to do.
+
+David: Okay. Go for it.
+
+Ben: We haven't done carve outs in a bunch of episodes because we've been jammed for time. Mine is a very cool app that is based here in Seattle that David and I used last night for the Acquired annual holiday party that is former Convoy alum. Vincent Shane from Mystery have created something incredibly cool. It's mystery.sh for anyone who wants to try it out. You basically can set a time, say, some of your preferences of the things you like to do and the things that you might want to do that day or night, then random things happen to you. Like let’s show up and they take you places. You get fed.
+
+David: You choose the people you do it. They don't send random people to you.
+
+Ben: Correct.
+
+David: We chose to do this with each other.
+
+Ben: Correct. David and I went fencing last night. Who would have thought we'd go fencing.
+
+David: It was super awesome.
+
+Ben: It was amazing. If you're looking for new things to do with your life, I highly recommend Mystery.
+
+David: It was a blast.
+
+Ben: Awesome. Listeners, thank you so much. We hope you enjoyed the episode. If you haven't subscribed, you can at acquired.fm or in the podcast player of your choice. If you'd like to become an Acquired Limited Partner that is glow.fm/acquired. Thank you so much to Dan and thank you to Silicon Valley Bank.
+
+David: And all of you here live with us. This has been a new and awesome experience for us. Thank you.
+
+Ben: With that, if you are listening on the air, we will see you next time. If you're in the room, what do you think about 10 minutes of Q&A?
+
+David: Great.
+
+Ben: We've got a little bit of time here with Dan. We're going to do Q&A. After that, we're going to head to Big Time. We're going to make quick work of getting out of here, so please be clean, as clean as you possibly can, and we'll continue the conversation at the bar.
+
+Who's got a question for Dan?
+
+Man: When you were hyperscaling the company, I'm curious, what was an important mistake that you made that you learned a lot from?
+
+Dan: One of the mistakes that we made was that we didn't understand the actual contracting process and freight well enough. When we were scaling really quickly, we said to our customer, "Hey, we're going to do a contract this year. Do you want to sign-up and get freight for the next year from us?" and they’re like, "Yeah. It sounds great," so we learned a little bit about it and got involved in that.
+
+Then, we quickly realized that the nuances of how that works were much more complicated than we fully understood. The contracts aren't really hard contacts like in most industries. The shipper doesn't actually have to fall through and give you all the business. You don't have to take it all. You should, but you don't have to. That particular nuance really impacts price, how you engage with them, and how you manage that contract throughout the year.
+
+It's an advantage to come from outside the industry because you can disrupt things and you have to figure it out from the beginning, but what I would encourage anybody to do is build a team outside the corners of your disrupting. Build a really strong advisory panel from within, and early on, consider that as a strong input into your business, if you don't have that inhouse. We ended up doing that pretty well at different points in the company's history, but I think we could've done it a lot better with that.
+
+Ben: Who's next? We've got a youngster in the room.
+
+Zack: Yeah. I hope I'm not the youngest one in the audience. Maybe I am. I'm Zack. I had a question. I'm an aspiring engineer. About an engineering comment you made where you're saying prioritize speed in the early stages of Convoy over making things the most efficient or sustainable. Did those things always get fixed? I know, maybe, even to my own projects—
+
+Dan: Always.
+
+David: Only at Convoy, right? Nobody else fixes them.
+
+Zack: I won't name names, but knowing friends who've worked in other startups and working in one myself, sometimes there are other priorities like a startup moving really quickly and new opportunities come. Engineering resources can't be wasted to fix things that are going to take a long time to fix and make it sustainable. How do you approach that problem? Balancing between fixing things, I can't remember what the acronym was but I thought it was really funny. Things that were…
+
+Ben: CTFU.
+
+Audience: Yes, CTFU versus building new features.
+
+Dan: We do think about that. At this point in our scale, we have teams that are dedicated to thinking about tools for developers so they can more efficiently build. Effectively, if you can create the right infrastructure, give developers better tools, and make them more efficient, then they can do it properly in the same amount of time, or they have the right kind of architecture to work on. It has become part of the culture. It's about hiring the right leader. Effectively, you have to have someone who cares about that, who is going to think about that, and prioritize it.
+
+We have a really solid engineering leader and a solid engineering team who have built multiple things in the past and who have gone through the experience of infrastructure that wasn't developed correctly. It's just through experience of having lived through that. I've seen systems fail or seen things fail or seen the debt built up. I’ve been in the situations you've been describing and live through multiple cycles of that. To have a good instinct just when you need to apply more investment versus less.
+
+It's hard to quantify. There's some ways you can try to quantify, but ultimately it takes experience and judgment around to see what's happening and know when to apply it and when not to. We have a system to be more effective in doing that and then we have different stages. We now look at it and say, "Okay. This is a new thing that's going to be at this scale." We'll do it quickly, and then there's a process for it becoming more production-ready.
+
+Man: First of all, thank you so much for coming. As an UDub student here, it's incredible to have opportunities like this come so close to home. On to my question, we hear a lot about autonomous trucking were highways and long distances seemed like the ultimate opportunity for automated driving. Where do you think Convoy plays into this future where a lot of the carriers are automated?
+
+Dan: I think autonomous is coming for a bunch of reasons that have a lot to do with all of the things that happened besides the driving, so stuff being loaded, secured, confirmed, locked, dealing with different people along the way. The truck driver will still be in the truck from a very long time even if the truck is effectively driving itself?
+
+Dan: What'll ultimately happen is it'll take years for the fleet to be turned over, I think. You'll have mixed fleets. You'll have trucking companies that have some trucks that are autonomous and some that aren't. You'll have different regulations and different rules for different conditions under which they can drive in different parts of the country, maybe at different times.
+
+That complexity makes it even harder for a person without computers and without technology to optimize that system. Now you're considering even more variables. At least today, every single full truckload that's running on the highway, the driver can run 11 hours a day. That's going to change. The hours of service will change, rules will change. That's going to benefit us dramatically. It will get harder before it gets easier.
+
+On the other side of this transition, that transition will be messy, and will be in a greta position to represent that in our technology, in our data, then make optimal decisions that we can teach our technology and our [...].
+
+Man: Hi. I'm [...]. I'm a software engineer. Probably one question I had is that you've talked a bit about how as a product manager, you had to understand how software engineers think. Maybe there are some lessons in reverse. What you wish software engineers understood about product managers and how they think?
+
+David: That's a good question.
+
+Ben: That's a great question.
+
+David: You might be the first person that's ever asked that question.
+
+Ben: Oh, come on.
+
+Dan: One, product managers don't always know the right answer. One thing that I found and a dynamic I noticed across several jobs is that a product manager is obviously going to come up with, let’s say a set of requirements or a set of things they believed they need to build to serve the need of the customer to achieve the outcome.
+
+Let's say there's six things on the list, six things that we think we need to build. When they go to the engineering team, and they say, "Look. Here are six things we need to build. Hopefully, they're going to get some context. Here's the specs and the requirement for that. Can you estimate how much effort it's going to take to build this and how you're going to build this?"
+
+What I found is often times engineers don't say, "Okay. Are all of these six actually's 100% required?" There's this expectation that the product manager who'd not come to you and ask you to build it without knowing the answers to that, without already thinking through, and making you as efficient as possible. That product manager's pretty busy and actually doesn't fully know the answer. Maybe they didn't do all the homework and know if all of those are required.
+
+You go and estimate it. You come back and say, "This is going to take me three weeks." They're like, "What the hell? Is it three weeks?" You're like, "Do it faster" and you’re going to, "Okay. I'm trying to find a better way." Maybe they don't say it. Maybe they’re like, "Okay, great.” It takes four weeks or five weeks, and they're like, "Why is it taking so long? Why is it going over the estimate?" You're like, “It's really hard. You don't understand.” They’re like, “Okay. You don't have to explain it to me. Just get it done.”
+
+It turns out, all of these would've been solved if feature number five was designated as optional. It actually doesn't matter if you do feature number five in the first release. But that feature in concert with feature number two made it really damn hard to build. You had to go redesign some system or update like the way the database is structured, so you can do the right query with the right latency, and get this done.
+
+That's a really common thing. That's why I love problems and not solutions. I remember many times when an engineering team was behind schedule, the best solution was to rethink the solution. Sit down and say, "Okay. What are we building again? What are the constraints? We need these six things. Which one is really creating the issue?" Oftentimes, you can just take one out and you'll be done.
+
+One thing I learned is that doesn't happen enough. That's one of the things slows down, mismatches expectations, and causes product managers to be frustrated. They need to go back and push the idea. It would be great is engineers would say, "Do we actually do all these? Which one’s really maybe optional?" That would probably solve all the problems.
+
+Ben: Dan, thank you so much. Let's give him a round of applause.
+
+‍

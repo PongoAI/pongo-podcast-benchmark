@@ -1,0 +1,571 @@
+Ben: I think this is our first time doing a video in hotel rooms.
+
+David: I know. I know. It'll be funny.
+
+Ben: The funniest thing is David and I are in hotel rooms down the hall, recording in different rooms so we get better audio quality.
+
+David: Man, doing live in-person events, again, is awesome, but yields a whole new level of complexity.
+
+Ben: A whole new level. All right, let's do it.
+
+Welcome to this special episode of Acquired, the podcast about great technology companies and the stories and playbooks behind them. I'm Ben Gilbert, and I'm the co-founder and managing director of Seattle-based Pioneer Square Labs and our venture fund, PSL ventures.
+
+David: And I'm David Rosenthal. I'm an angel investor based in San Francisco.
+
+Ben: And we are your hosts. David, this should be a very fun… it’s funny I say it should be. We recorded this already. I know it was a fascinating conversation.
+
+David: We are speaking to you from the future. We had a great, great, fun conversation here with my good friend, Katherine Boyle, who is just a wonderful investor. She's a general partner at Andreessen Horowitz, where she leads their American dynamism practice.
+
+We dive all into what that means, why this is an important vertical both for venture investing and technology, the world and for America, but also for Andreessen why they decided to do this, her background.
+
+Her story is fascinating. She was a reporter at The Washington Post in the pre-Bezos era, and then came out to Silicon Valley and went to GSB. That's where we intersected and then became a venture capitalist. She just has an amazing story, and we were pumped to get to do it with her.
+
+Now before we dive in, for our presenting sponsor for this special episode, we have as always, the Solana Foundation. Solana, as you all know by now, is a global state machine and the world's most performant blockchain. That means that developers can build applications on it with super, super low transaction fees compared to other Web3 infrastructure, and all with very low latency and without compromising composability.
+
+Ben: It's like a real modern computer but distributed.
+
+David: It's amazing. It is indeed a technical marvel. Today, we are talking with Stephen Hess, the CEO of Metaplex. Stephen, welcome to Acquired.
+
+Stephen: GM, David.
+
+David: GM indeed. Well, that is the perfect greeting to lead into my first question, which is can you tell us a little bit about what Metaplex is?
+
+Stephen: Absolutely. Metaplex is a protocol and framework for building NFT applications, games, and experiences on the Solana protocol. Less than a year ago, there were no Solana NFTs, and now we have an exploding ecosystem of over, actually this morning, 1.9 million collectors are holding a Solana NFT that uses the Metaplex standard. That's 12 million NFTs minted to date, and there is no slowing down. I know there's a lot of talk of bear markets, but I can tell you that the NFT creators are not stopping. There is a lot of green field in front of us for sure.
+
+David: Wow.
+
+Stephen: The other thing for Metaplex is that it's also a program library that provides open source programs for developers to launch these apps. We're known for a program called Candy Machine, which has been used to launch the major generative profile photo collections in the Solana ecosystem. It's done a staggering $900 million in primary sales revenue, most of which has gone back to independent artists, creators, and small game studios that are using it as a form of crowdfunding.
+
+One of the most exciting qualities of the Solana NFT ecosystem is that it's mostly made of independent artists, creators, garage band teams that are using the open source tools that Metaplex provides to launch new businesses and creative projects. When we look at the data here, we see over 100,000 deployments of the Candy Machine program on-chain.
+
+We see 147 (I believe) projects with over a million dollars in market cap. You don't just have a few large IP holders or sports leagues that are driving the economy. You have this vibrant, meshed ecosystem of independent artists that are showing us the future in real time. One of the privileges of our work is that we get to listen to those creators, be part of that process, and use that inspiration to then build this next generation of tools and technology.
+
+David: For folks out there who were considering NFT projects working on them. What are the big benefits to using Solana versus (say) Ethereum or another blockchain?
+
+Stephen: There will be applications that we expect will live cross-chain, and we expect a greater specialization over time. We do view the metaverse as a multichain world. But with Solana, you have just a fundamentally different economic structure that is radically changing what creators, builders, and game developers can make with this technology.
+
+With a $1 mint and with sub-one cent transaction fees, it's just a completely different world. The energy of the Solana community from day one has been, what can we bring to the table that's unique? That was only possible when those types of economics have been provided to the community. That's just opening up an entirely new world for these types of immersive metaverse experiences. And you're competing with economics ultimately.
+
+Many of us that work in crypto have a fundamental and philosophical belief that greater degrees of decentralization will be important to society over time. But practically, consumers are making decisions based on the load time of the application that they're interfacing with and how quickly they can get to their end destination.
+
+David: That's awesome. Thanks, Stephen. Of course, our thanks to Solana. If you are considering developing on Solana, head on over to solana.com/developers or click the link in the show notes.
+
+Ben: Yeah, and listeners, you know the drill by now. Come join us in the Slack. We are 12,000 strong. We would love to have you there if you are not there already. And with that, none of this is investment advice. David and I and any of our guests may hold interests in things discussed on the show and make sure you do your own research. All right now on to our interview with Katherine Boyle, a general partner at Andreessen Horowitz.
+
+David: Katherine, welcome to Acquired. It is so great to have you here.
+
+Katherine: Thanks so much for having me. We've known each other for a long time, but I'm a huge fan. So it's so great to be here.
+
+David: I think we met just after you graduated from GSB, right?
+
+Katherine: Yeah, it's been a journey.
+
+David: It totally has. Oh my gosh, but we'll get all into that later. But let's start off with the most important, most interesting things going on right now for you and in the whole technology landscape, which is what you and Andreessen call this a thesis of American Dynamism.
+
+It brings me back to our Berkshire Hathaway episodes, lik believe in America, believe in the power that makes things better. There's a lot of the opposite side out there right now. So maybe to start, could you tell us what the American Dynamism thesis means to you and to Andreessen?
+
+Katherine: Sure, so the most simple definition is, it's companies that support the national interest. It's everything from companies that sell directly to the government, like aerospace and defense. These classic industrial sectors that have been supporting the government since the mid-20th century, but also things that every citizen cares about and takes part in, like education, housing, transportation, infrastructure.
+
+These really big categories that when we look back through the history of technology, there's been so much technological innovation, but at the same time, the last 30 years of software really hasn't touched a lot of these physical spaces.
+
+What we noticed through our portfolio is that some of the most important companies, some of the largest companies actually fall into this category that's outside of consumer technology and it's outside of enterprise technology. It's outside of these categories that venture capital has found themselves creating, but these become big companies that affect most people in the country.
+
+So the broadest definition is these are companies that support the national interest. Oftentimes, they sell to the government, sometimes they compete with the government. Other times, they're just heavily regulated by the government, but they touch everyone. We're excited to build a practice around this thesis, but also because we feel like the tailwinds are unique for this moment that we're in, especially coming out of COVID.
+
+Ben: Katherine, does that include things that support the national interest that aren't necessarily defense or foreign policy–related? I'm thinking healthcare, I'm thinking education, big swaths of the American economy and American time spent domestically.
+
+Katherine: Definitely. Education and housing are two areas that I think venture capital hasn't touched as much as (say) healthcare. If you look at the last 10 years, digital health has just grown tremendously. We have a separate bio and health fund
+
+But the same can't be said for education and housing. Education is one of these things that I think coming out of COVID, people really realize that we are still operating on a 19th century model. When the world had to shut down, there were not that many good solutions for the vast majority of Americans to educate their children, whether it be K-12, or things like higher education.
+
+One of the things we are noticing coming out of COVID is that there's just a tremendous founder appetite for innovating on a model that's really a 21st century model of how we're going to educate people.
+
+I know that's going deeper into the thesis now, but we really do see these big categories that can be transformative, that are oftentimes funded by government as needing the help of technologists and private sector in order to transform some of these categories.
+
+Ben: Everything you're saying, in some ways, sounds a little bit like how could you possibly argue with that? This all seems obvious. Of course, we want prosperity, and at least those of us in America, the American way to be as prosperous as possible. For as many people around the world who want that sort of lifestyle, to have that sort of lifestyle, freedom, democracy, those sorts of things, free markets.
+
+What are the counter arguments? Why is this not a no brainer? Why are you a little bit out on a limb in our industry being a person who is beating this drum?
+
+Katherine: Because I think these are hard sectors. The counter-argument to investing in the physical world is that it's not pure software. I think the argument against investing in defense, the argument against investing in a lot of these physical sectors is they've been around for a long time. There's usually a lot of regulatory capture. We can get into what the defense sector looks like and why it's so difficult to innovate in defense or in cases of transportation.
+
+These are important, large swaths of the economy, but there are entrenched interests. There are large players so it's always been harder. The history of Silicon Valley, as you all know, in many of the episodes that you've done, it's like a lot of people innovate on the things where there's not an existing sector. Sometimes it's a lot easier to innovate in the virtual world than in the physical.
+
+I think there has been a focus on how we build some of these big sectors of the economy where there aren't entrenched interests, where software plugs in perfectly, where the economics look perfect. I think these companies are just harder to build. As we like to say, these companies go deeper down the J Curve. They often don't look that good at Series A.
+
+David: The J Curve (of course) being an initial investment in venture capital. It's going to look bad. Your IRR is going to go negative as your investing period before the returns come. But yeah, so I love that deeper on the J Curve.
+
+Katherine: Yeah. I mean, you look at SpaceX. SpaceX is one of the most important companies, one of the largest private venture-backed companies. And yet, for the first 10 years of SpaceX, there was a lot of fear and a lot of worry that investors wouldn't necessarily see a return. It was often talked about. It's like you destroy three rockets before the fourth actually works. There were a ton of questions even until very recently around the business model of SpaceX.
+
+I think for a lot of these companies, they take extraordinary founders. Sometimes they have some technical risks. Sometimes they require more capital upfront. Sometimes they have longer periods of how they'll have to stay private or how they'll be venture-backed. But ultimately, they are such broad swaths of the American economy, as you've said. Also they become holding companies earlier, like this is something we can get into about why these companies are a little unique.
+
+A lot of times, if you're looking at companies and consumer enterprise, you'll see three or four different competitors going after similar markets, and they're all competing. Oftentimes, you see one or two companies that look alike that are able to go public, and that's fine. These companies usually become holding companies pretty quickly, and attract all of the talent.
+
+There's finite talent around things like aerospace. There's finite talent around things like defense. So you don't see as many competitors. As I said, they are harder to build in the beginning, but towards the middle part of these companies’ trajectory, they're really just competing against themselves, and really trying to compete against legacy incumbents.
+
+David: Well, this is good. Maybe before we dive into some example companies, specifics of the thesis itself, I'm curious, what was the intellectual process? Maybe for you personally, but also, I'm curious. Within a16z, you have these as a firm, these vertical practices now, which has been done in venture before, but not nearly to the degree that you all are doing it now. How did this vertical originate? Did it start with Marc’s It’s Time to Build blog posts at the beginning of COVID? What does it look like within the firm of hey, I think we should create a vertical.
+
+Katherine: It certainly starts with It's Time to Build. That was (I think) the impetus for everyone realizing that the story of Silicon Valley pre-COVID is very different from the story that is about to come. But I think we all very much believed that the world fundamentally changed. Anyone who doesn't believe that from a historical context or technology context isn't paying attention. The world fundamentally changed with COVID and will be reaping those, both the positive aspects of it and the negative aspects of it for generations to come.
+
+I think there was that understanding, but then I also think one of the observations that I had is that Silicon Valley is very good at understanding consumer businesses. They're very good at understanding how to make businesses more efficient. Silicon Valley has never touched government. That narrative around how Silicon Valley works with government has always been to try to stay as far away as possible.
+
+David: Which is so ironic, given we covered so much of the origins of Silicon Valley on this show. Don Valentine was selling to the Department of Defense back in the day.
+
+Katherine: Yeah, that's something that is just not understood in the modern history of Silicon Valley. Of course, Silicon Valley was built on defense investment. But this sort of view that software could actually ever work with the government or the DOD, I mean, it's just viewed as the procurement of these types of technologies is almost impossible. There has been sort of (I think) this 20-, 30-year of, do not engage modern wisdom from venture capital firms. It's just too hard.
+
+There's so much other stuff to do. There's so much other stuff to build. Let's make sure that we don't take off the regulators in some way. And in some ways, like when you look at the geography of Washington versus Silicon Valley, I think that part of the magic of Silicon Valley emerged so far away from Washington and emerged in a totally different part of the country with a totally different history. It’s sort of outside of the East Coast establishment or the corridor that very much understands how the world works.
+
+There is a reason why Silicon Valley has emerged in a way that has, but I think my background, it's been 10 years in Washington, they were sort of the center of my universe until I came out to Silicon Valley. I was stunned by the fact that there was very little overlap between what people in Northern California—this sort of haven we’re talking about—and people in Washington cared about.
+
+But of course, when you look at it from a DC perspective, these markets are so large. They're the most important markets, that's why they're regulated. Because they touch everyone, why are we so afraid of working with them? I think that was always just a question, an intellectual question in my mind of, is it possible for some of these companies to actually do the work of government?
+
+Then I started doing this research. I wrote a piece for The Washington Post in 2018, about how actually, it seems like Silicon Valley was actually doing a lot of the work of the government. They just didn't want anyone to know about it or talk about it. They didn't think of it in those terms. It's everything from SpaceX and Palantir, which are companies that really were helping intelligence agencies or NASA, the classical realm, but also things like Lyft and Uber that were completely transforming public transportation in cities across America.
+
+David: Not to mention the cloud providers, there was a big Jedi contract.
+
+Katherine: Oh, absolutely. That's a whole other story because that was a good example of (say) Google point out of working with the government, because they had employees who didn't necessarily want to work with the DOD. There were a lot of just (I think) events happening that made people realize that Silicon Valley is actually a lot closer to working with government than people realized, and that whether you think it's good or bad, or there's a value judgment (I think) on it from a lot of sides. But whether you think it's good or bad, it's happening.
+
+David: It was already happening, yeah.
+
+Katherine: And it happens in a very organic way. It's definitely not going away for a lot of factors I'm sure we'll get into.
+
+Ben: Well, it's funny. Even not thinking about the companies serving the government as a customer. Take Palantir, for example, let's say you run an experiment where you have a bunch of people doing and building very innovative things. Over the course of 70 years, that compounding at a high rate. At some point, that goes from being garage projects to creating a lot of the value and infrastructure in a society.
+
+At some point, these things have to come to a head because here we are, I'm thinking about the timeframe from 1950-ish to 2020-ish. A lot of the infrastructure that everyone outside the tech community uses in their day-to-day lives now is born of the tech community in Silicon Valley. It's just the math. You're going to keep compounding that capital, that talent, those innovations, and our way of life is now based on the things built in this community.
+
+Katherine: Yes, this is also a function of and this is one of the things that I think is actually forced the government to say, okay, we're going to have to work with the private sector in a way that's probably a lot deeper than what we used to do in terms of a defense industrial base. Software is a revolution that is completely touching every aspect of society. But the people who are building the best forms of software are not going into government.
+
+That is actually a radical change from how government used to work. It used to love to build internally. That was sort of the thesis. We need tanks and battleships, and we can get those from the private sector. We actually like to build our own internal tools. Anyone who's a student of history of company building, that sort of thing, is that it’s not what's happening in the best companies.
+
+You can choose to build or buy, but the vast majority of companies that are getting off the ground are using external tools. Their outsourcing is a decentralization that's happening, even in company building that we can get into, but the government has not realized that in terms of how it procures software.
+
+If you talk to people who are in the bureaucracy of government, it's like their private life of catching the Uber to go home, the DoorDash so they can get food delivered. They have this completely normal consumer, internet private life that all of us share. Then they go into the government and take 30 minutes to start their computer. It's like being back in the 1980s.
+
+It's one of the biggest frustrations because there's a lot of great, I would say, especially in the DOD I think is the best example of the most forward-thinking part of the government that actually understands technology. This is the most frustrating thing for people to say I'm living in a time warp when I go to work.
+
+We can understand that as people who are in this modern tech ecosystem. We have these modern tools when we go to work. We're conversing right now. It feels great and it's easy and simple. That is just not how the government works. It's one of the last holdouts.
+
+David: To your point, we have this mega theme on Acquired of, “Don't do stuff that doesn't make your beer taste better.” The origin of that quote was with Bezos, when he was launching AWS at Y Combinator 15 years ago, but probably 70% of our sponsors here—Phantom, Modern Treasury, Vouch—just sit in the water now, that of course, the way you succeed, the way you build great products is you'd be really, really great at one thing, and then you use the whole suite of other products that are built in this ecosystem that are really, really great at everything else you need.
+
+Katherine: Yeah, even when we think about, why has the cost of starting a startup gone down tremendously? I mean, that is the case. You don't have to build everything from scratch anymore, you can buy. But the one place that still does that is the government. It's actually incredible. Of course, how are they doing that? Well, they're using taxpayer dollars to build internally.
+
+So when we talk about why have defense budgets bloated, even if we're looking at education, and major changes that are going to come from. Why are these things that are civic goods so expensive now? It's because it is very difficult to use the technology that would actually make them cheaper than you look at.
+
+I think there's a famous AI graph on everything that has come down the cost curve, like televisions are less expensive. Everything is less expensive in consumer land except for healthcare, except for housing, and except for education. It's really because technology has not touched those sectors, and will not touch those sectors unless we do something about it.
+
+Ben: And there's mostly regulatory capture in those sectors.
+
+Katherine: Yeah, I do think it is. We can talk about classic regulatory capture, but it is also this idea that none of those sectors use technology yet. Going back to what is the thesis, if we truly believe software is eating the world (which we do), this is the last holdout. And it's such a massive holdout. But it's something where it is deeply tied to the physical world. It is not something that you can do just through the virtual world alone.
+
+David: One of the core mega themes that (I think) we have on Acquired that anybody who's a longtime listener is probably asking themselves right now, is there are three components of being right in a big way to an investment thesis. There's being correct. There's being non-consensus and correct. But then there's also getting the timing right, and the why now. I think that's the natural question for you and for a16z in launching this vertical. Either was it COVID that created this moment? Why is now the right time that this is finally going to change?
+
+Katherine: It's a fantastic question. I think, especially when you put all of these sectors together. These are disparate sectors. The reasons for why education is compelling right now are very different from the reasons why manufacturing is compelling right now. I do think broadly, it has a lot to do with COVID. I also think there are a couple of other things that make it a really interesting time.
+
+One is that the talent is very different in Silicon Valley. It's not just an outpost. I use the term ‘Silicon Valley’ broadly, I should say. I'm in Miami. Silicon Valley is an idea, not a place. But when I say Silicon Valley, I mean the people who are leaving the culture and going to the counterculture to build, and they're building with technology because they want to solve real problems.
+
+That used to be like a bunch of nerds that used to be people who would major in computer science. They were in the engineering department and they were really interested in infrastructure, like technology infrastructure, not the infrastructure that I'm talking about.
+
+I think what happened—I've written about this—is I think the myth of Silicon Valley hit everyone really hard to where the culture and the counterculture merged. And now, people who would have gone into government, people who would have gone into very different careers, say, I have this problem and I want to solve it.
+
+By the way, going back to our whole ‘you can take things off the shelf and build a company without necessarily knowing how to build your own infrastructure for the company,’ they can build companies, too. You see a lot of founders who are not your typical profile. They're not engineers.
+
+I've talked to founders, recently, who are former teachers. I've talked to founders, recently, who have worked in the Department of Defense as procurement officers. They're not the normal people, we would say, are the founders of 10 years ago. There are a lot of reasons for that. What that leads to is people are going into vastly different sectors than the sectors that they went into most recently.
+
+David: You've talked about this before elsewhere, but The Social Network—coming out now 11 years ago, I think it was, which is wild—really started this moment of being a founder, like you said, the merging of the culture and the counterculture, even though the movie might have been intended as a cautionary tale. If you want to build, you can do this.
+
+Katherine: When you look at any good movies about industries and that sort of thing, they're always cautionary tales, but then it leads to just a flood of young people saying I want to do that. That's certainly the kind of the 80s Gordon Gekko sort of why did so many people look at a villain and say, wow, he's a superhero, I want to go do that. But it's true. There's always a question of do they create the myth or are they responding to the myth.
+
+I do think The Social Network came out at just the right time where young people said, wow, this technology thing is really interesting, and maybe I want to be a part of it. Maybe I want to make it my own. Maybe I don't want to necessarily create a social network, but wow, it's a real thing and I want to be part of it.
+
+I do think that that would set off the, okay, it doesn't have to be the nerds. Now, it's become the thing that every kid who goes to a university and says, hey, I can go work in a traditional job, or I can work with a bunch of my friends to do this. And by the way, there's a glut of capital. Of course, we can talk about the macro now. But for a very long time, we were at the bull market where it was a glut of capital. Any kid with an engineering degree who had a bunch of friends could come out to Silicon Valley and raise some money.
+
+It was actually a very, I shouldn't say an easy way, but it was a simpler way to solve problems. Probably the only way that young people could actually do something where they felt they were having an impact. I talk a lot about if you wanted to be someone in Washington to have an impact, you would go work for the ranking member of Congress, and you would get that person coffee.
+
+Does that really ambitious person who wants to change the world want to be delivering coffee to senators? Or do they want to come out to Silicon Valley and work on an education product, work on a housing product? I think you saw 10 years of young people saying, hey, I don’t want to be a glorified intern anymore. I actually want to solve some things. Actually, I have the title of CEO, a founder. I do think it is the young people's revolution, and that we're going to continue seeing that.
+
+Ben: Do you think that Silicon Valley went from being counterculture to perhaps too much infrastructure on how to be a startup? Let me frame this question with a little bit more context. If you think about lots of institutions throughout history, they went from becoming an exciting frontier to becoming a bogged down institution that perhaps brought people in who weren't looking for the frontier.
+
+NASA’s probably a phenomenal example. You could look at the space race. Lots of people who would have started companies today, we're going to work at NASA because oh my God, we have a 10-year mission, or an 8-year mission to go land on the moon. Then you look at NASA, I actually think we should draw a hard line in the early 2000s because there's been a really big switch that we can talk about later but let's say in the late 90s.
+
+It's a lot of bureaucrats process people, people who want to polish something for seven years to accomplish what used to take one because we now have all this process in place. Do you think Silicon Valley has so much infrastructure now that it is attracting the 90s NASA people instead of the 60s NASA people?
+
+Katherine: Maybe three weeks or three months ago we could have had the conversation. I’m a little more worried about it. I do think markets are self-correcting in that respect. So you can talk to people who've been through downturns before. I haven't. I'm not someone who was working in Silicon Valley in 2001.
+
+David: But you have some partners who were.
+
+Katherine: Yeah. These sort of natural corrections that happen, often leave. People realize that they have to think differently. There's the kind of famous Ben Horowitz, the peacetime CEO versus wartime CEO. There's like peacetime in Silicon Valley versus wartime in Silicon Valley. I do think there is this question of, are we entering that now? That leads to a lot of innovation, especially for early-stage companies.
+
+I mean, historically, companies that have been built in downturns become tremendous successes because they have to rethink the playbook. And you can make the argument that a lot of people are going to have to be going through that, and that the most innovative thinkers will win, coming up through what we're seeing.
+
+David: I think this is the perfect place to switch gears a little bit, building up The Social Network, that period, that time between (I think) it was 2011 when it came out, and today is somewhere along that time. Everything you were saying about young people wanting to go build, realizing old institutions weren't necessarily the place to have the impact. That was also your personal story. Can you tell us about your background before coming to Silicon Valley? And that personal story of why you did because it gets super relevant here.
+
+Katherine: Certainly, it's going to sound a lot more forward thinking in retrospect than it was. The actual answer of why I left Washington and why I left the Washington Post was that I was convinced I was going to be fired. It was a terrible, terrible time to be in journalism. I was there from 2010 to early 2014.
+
+I actually left right as Jeff Bezos bought the Washington Post, which people look at the institution now. They think, oh, wow, it's really chugging along. It's incredible. When I was there, there was a fear that it would go into bankruptcy. That was the fear that a lot of media companies were going through before this sort of great reshuffling.
+
+David: I was working at the Wall Street Journal a few years before and we really thank God we're owned by News Corp. Otherwise, if Dow Jones were still independent, like The Post was at that point in time, there was no surviving as an independent entity.
+
+Katherine: Totally. It's interesting to look back on hindsight, but when I was there, I think the big thing that I was noticing is I was not a technology reporter, but every story I was writing had something to do with technology touching old institutions. How do we deal with this modernization? How do we bring tech into these various institutions in Washington that have never had to deal with a tech-savvy consumer?
+
+It was one of these things where I said, I'm covering these stories. This is the biggest story of our time. Why not be part of it? It really did feel like I was fortunate to be able to come out to the valley and actually kind of studied it as a student of history. What is happening here? What is my own view of what's going on with all of these movements?
+
+It was (I think) the biggest culture shock I have ever experienced. I sort of lived around the world at that point. When I came out to Silicon Valley, I said in some ways it didn't even feel like the country I knew. People were so heads down, they didn't read the news.
+
+That was another thing I was stunned about. No one talked about what was happening in the day-to-day news of the world. People were just focusing on their own passions and projects. That was new to me.
+
+The other thing that was really new to me is in Washington—and I'd say broadly, everywhere else in the world—there is sort of this wait-your-turn mentality. You can email someone, but if they're the CEO of a company, they're not going to really pay that much attention to a young student or a young person.
+
+When I got out to Silicon Valley, I was stunned. People just want to talk. I was like, why do people want to talk? It's like, well, because the incentives are aligned. They don't want to miss the next big thing.
+
+It was incredible as a former journalist coming out, and being able to email anyone, and realizing that people would answer my email, it was another shock of a different kind. People will actually let you in their office.
+
+Ben: It should be the opposite, right? When a Washington Post journalist emails me, that's much more interesting than a cold email from someone with a Gmail address in most scenarios. But perhaps you were feeling as a journalist that people were nervous to answer your emails for fear of being on the record.
+
+Katherine: Yeah, and I also just think this is a different conversation about media that I think was evolving at the time when I moved. There's no upside to talking to the media and the minds of people who are heads down building, but there's a lot of upside to talking to someone who might be your next employee. There's a ton of upside if you're an investor to talking to a young person who might build a new company.
+
+Talking to someone who is only going to get information about what's happening and derail your plan, that was something where I think, had I thought more about it, I wouldn't have been as surprised. But I was just wow, people want to talk to a student? This is why Silicon Valley is the most peculiar place in the world, because it's the only place where incentives are aligned with that sort of positive sum mentality.
+
+In places like DC, no one ever turns down talking to the press because it's information trading. It's a consulting class. It's a group of people who very much see a zero sum mindset and the press has a lot of power there because of that. The incentives of the ecosystems are so diametrically opposed. They actually think coming back to the thesis. That's one of the reasons why we haven't seen that much innovation in Washington. They are so different as ecosystems.
+
+David: When you made the choice to make that transition out to Silicon Valley, the choice to have the reaction to, ‘Well, shoot. Things are not going so well here. I'm going to go see what it's like on the other side,’ versus ‘I'm going to complain about it and bid on hope as a strategy and stay here,’ what did all of your networks in Washington say? That must have been a really very non-consensus choice to make.
+
+Katherine: It's interesting because I'm trying to put myself in the shoes of myself a very long time ago. What I'll say is most people in Silicon Valley have not experienced what it is like to be in a dying industry. For one, I think people were happy that there were young people choosing to leave, because it was a constraining environment. It was like, okay, great, we don't have to fire this person now.
+
+It was really, really bad. I can't stress. There were these things called cake-ins. We even had a name for it. It's anytime that someone was forced to take a buyout or forced to leave, they would bring in a cake. They would wheel in cakes.
+
+Sometimes on Fridays, there would be just cakes going across the newsroom. People were crying and people were celebrating all these great colleagues who were more like winners of the Pulitzer Prize. These are not people who should be fired, but it was such a bad ecosystem. No one really said anything. They were just like, okay, at least you got out. It's like you found a life raft. Ihat's great.
+
+I will say, six months before I left, my editor took me to lunch. This is great management. She's like, it'll be painful for you to leave. I was one of the younger people on the team. I worked seven days a week. Sometimes I would write three stories in the section, and they were just bleeding people.
+
+She's like, it will be painful, but you are young enough to do something new with your life. I'm forever grateful to her for saying it. It wasn't that you're bad at your job. Actually, I was reflecting on this recently. Maybe three years ago, we went out to drinks. I visited the new improved newsroom. Now it's Marvel columns and Jeff Bezos.
+
+David: The Amazon-funded newsroom.
+
+Katherine: Yeah, Amazon-funded newsroom. We went out for drinks and she's like, you are good, but you could have been great, and it brought me to tears. I was like, wow. She actually told me I should leave because she saw what was happening, probably before I actually realized it. It's like young journalists I will think they're going to be, like the next Bob Woodward.
+
+I think, why did I go? It's like, well, if you're going to start over from scratch, in some ways, it's like, you're going to start over from scratch, why not go to California? That's always been the American Dream, move west and find something new. But it really was. It's like, okay, I need to understand this tech thing. I hadn't been exposed to the culture, but I didn't have a reaction that it was a bad thing. I had a reaction more than it was the future and the biggest story of our time.
+
+Ben: What were you covering at The Post?
+
+Katherine: It's interesting. I was a Style section reporter.
+
+David: At The Post, that's a big deal.
+
+Katherine: It's interesting. The Style section has a very storied history of being where writer is right. There's always this question of, are you a writer or you a reporter? I think the number of people at the Style section who would say that they are writers first and reporter second is actually quite high. That was when I was there. It's changed a lot since I've left.
+
+For people who really enjoyed language and enjoyed doing 3000–5000 word stories about just random things, one of the famous pieces the Style section published when I was there was the difference between Sheetz and Wawa. It was a 10,000-word piece on just convenience stores on the Interstate.
+
+David: Wawa, the best.
+
+Katherine: You would read these like great Tom Wolf sort of meditations on just American culture. As a young reporter there, that's what you aspire to do. You aspire to write these ridiculous pieces about random things. It was more the joy of language and the joy of culture than even the reporting aspect of it.
+
+I was a general assignment reporter. I wrote about culture. It's interesting, because people often ask me like, what's the connection between venture capital and journalism? I think people often think about like, oh, the hard news journalists who's doing diligence.
+
+David: The Mike Moritz style.
+
+Katherine: Yeah.
+
+David: I think Don Valentine said Mike Moritz and Steve Jobs were the two best question askers I ever met.
+
+Katherine: Yeah, and I believe it. That's one of the aspects where they're similar. But I also think the similarity of what I saw in my colleagues and what I did is trying to get at the forefront of cultural shifts, even if you don't know what they mean. Just trying to see, okay, these weird movements that are happening in society. Maybe you should be the first person there to talk to these weirdos, these random people.
+
+That was the, what's the weird interesting thing that's happening? Now most of that happens on the Internet. That I think is the real shift is at. All the weird, interesting movements in the world now come as Internet-born movements. That's oftentimes what venture capitalists are looking for as well.
+
+David: Clearly, you still have such love and reverence for the world and for The Post. The world we're in today, especially with Andreessen Horowitz, it does feel like in some ways, they're on the other side and that there's like a battle going on now, specifically a battle between the old world media and technology.
+
+Katherine: The world of media has completely changed since I was a journalist. There wasn't a sense that you were at war when I was a journalist. I think that, of course, changed with a number of things, like everything from Trump being elected to the types of people that are going into journalism, even the idea of what journalism means.
+
+A lot of the people that I worked with when I was a journalist had this very old school view. It's talked about a lot. It's the, are you reporting the facts or are you an activist? There are a lot of people who will point blank and say, now, they're going into journalists to change the culture, to change the world, they are activists. They will use that word. They will say, I am an activist.
+
+I was part of a generation of people who would have bristled at that. There were people when I was at The Washington Post that wouldn't vote in elections because they didn't believe that they should be voting in elections if they were covering certain stories. I had such admiration for that, that if you are going to be the person who is on the sidelines of the culture, reporting on the culture, that you should really do your best to take a neutral stand.
+
+I took a lot of pride in that as well, covering things that were uncomfortable for me. That was something that I actually revered about the old-style view of journalism that I think has completely transformed and changed in terms of the people who are now at the forefront. I think there are reasons for that.
+
+I think a lot of it is Twitter. I was pre-Twitter actually becoming what it is when I was at The Washington Post. There was still a view that social media should be second to our actual reporting. If you read the recent reports from the New York Times about how they're trying to kind of curtail their Twitter use, because they've realized that it's completely changed how they report, I think is the biggest trend in media.
+
+I can talk about another one of our investment, Substack, which I think has benefited from this trend. People are now brands. They are identities. The individual journalist is ultimately more powerful than the institution. I think that that's just one of many trends, where institutions are collapsing in individuals. You all know this. Look at what you've built.
+
+Individuals will capture an audience and be more important than an institution now. When I talk about being a former journalist, I'm really talking about the Stone Age. It was 10 years ago, but that type of journalism does not exist anymore.
+
+David: It's so funny. I feel the same way thinking back on my time at The Wall Street Journal, even though I was on the business side not writing. I know exactly what you're talking about with that style of journalists. The people who were the managing editors, the deputy managing editors, the section editors at the journal at the time, they were those people. Yes, it's so different than today.
+
+Katherine: I was only there for a few years. I've been investing twice as long as I've been a journalist at this point. It's something that captures people's imagination. It's like, how did it affect you? And it really is.
+
+I think the greatest way that it affected me was, I think starting your career off in a dying industry gives you a different perspective than if you start your career off in a company that is just filled with abundance. You understand what death looks like versus momentum. That was probably very formative for me coming out to the valley and then seeing what good looks like.
+
+Ben: It's the same thing as the child psychology studies of people that always, not necessarily grew up with a tremendous amount of wealth, but who did not come from scarcity. There's a general underlying belief in every subsequent decision that gets made that I'll always be okay. I think the same sort of translates to career decisions and people being willing to take risks and believe that there is a growing pie, rather than I need to fight for my corner of it.
+
+Katherine: And also just understanding culture. I don't think people understand the difference between a culture of scarcity and a culture of abundance unless they've experienced both. I do think I've been really fortunate now. I'm definitely part of a culture of abundance. An abundance culture leads to yes. It leads to, oh, yeah, try that.
+
+The idea of building an American dynamism practice can only come out of a place that has movement and that has growth. Those types of things cannot be built in a culture of scarcity. I do think Washington is a culture of scarcity, just by its nature, that the incentives are, every two years, there's an election. Half the people who are in charge will leave, and the other half will come in. The people who are kicked out will go to think tanks. It is very zero sum and it's every two to four years. It is not a long-term cycle, because that's just not how we structured our democracy.
+
+Ben: Okay, here's a snarky response, though. How was it a culture of scarcity when every decade since 1913, the government has a bigger budget and significantly more employees than it ever had before?
+
+Katherine: That is very true. We could very much talk about the bloat of government, the fact that it doesn't feel like a culture of scarcity when we look at it as taxpayers. But in terms of who gets power, and remember, the currency of Washington is not money, it is power. Power is scarce, and it is extremely hierarchical.
+
+There can't be multiple winners. Someone wins the news cycle every day. That's another part. We have remember that news is part of the Washington establishment. There's a reason why it's called the Fourth Estate. It is part of the anchor of government, so all of those things are very scarce.
+
+Only one story can be the front page story. Only one person can hold the most power. That is anathema to Silicon Valley, and the culture of Silicon Valley is equity. It is money. It is success. It is building bigger businesses faster. There can be as many of those as possible.
+
+Yes, you could argue that in certain sectors. There will only be one winner. This is why you see founders helping other founders, venture capitalists can have a portfolio of winners. There is a culture of abundance. It changes the incentive structures and it changes how people think about solving problems.
+
+Ben: It's quite interesting thinking about that there's this idea of, if everybody in a sector is paying attention to the same thing, call it whatever politico is reporting on or whoever has the most airtime on cable news that day, that means that no matter how large headcounts and budgets get, there is a fixed supply of the thing people want, which is attention and power. But when the thing people want is money, and we can say it in nicer terms than that, but financial success, that is not a finite supply.
+
+Katherine: We're not hedge fund managers. This is something that I think oftentimes is misconstrued in Washington. I remember talking to some reporters I used to work with and they're like, all you people who think you're changing the world. Like, at least the hedge fund guys didn't think they were changing the world. My response was, do you not see the difference?
+
+I actually think one of the biggest, biggest problems with how we've been lumped in with other asset classes, I remember when I first moved to the valley and it was private equity and venture capital. Private equity and venture capital, as a category, could not be more different from what they are doing.
+
+Venture capital is creating new things from nothing. It is creating more jobs. It is pouring money into companies so they can grow, expand, and solve new problems with the most modern technology possible. Private equity is the death of old companies. It's consolidating them, firing people, and ensuring that they're going to be able to create value from things that have already existed.
+
+David: The hedge fund people sound pretty good now. At least they're neutral.
+
+Katherine: Yeah, you could probably make that argument. When you look at those, everything is lumped together in the minds of Washington. It's like, you're all just making money. When I say equity is the currency, what I mean is people come here and they actually build things, and the incentives driving how things are built. It's a system that actually works and encourages growth and encourages creation.
+
+I think we have to be very honest about that, which is very different than East Coast private equity. It's very different from hedge funds in which that is not what people are focused on. I think one of the greatest tragedies is that we're all lumped together.
+
+David: I think so much of our audience is a complete outsider to Washington. Is it gauche to talk about making money, starting things. Is that looked down upon?
+
+Katherine: I've recently moved to Miami. One of the things that I love about Miami is that there's no shame. I actually think this is one of the big problems of Silicon Valley. Miami, it doesn't matter what you are doing. Everyone is dressed to the nines. It doesn't matter if you're someone who works an hourly job or if you're someone who is a real estate mogul. Who knows?
+
+Before all the tech people came in, there were all these kind of weird things that people were doing in Miami, but everyone took pride. It is a culture of being proud of what you have earned. I do think that comes from, it is the city in the US with the largest foreign-born population.
+
+A lot of the people who come to Miami have come from countries that have collapsed. They're proud of capitalism. Because of the Cuban population, they're extremely anti-communist. There's just this view that if you work hard, and it's a culture of hard work and it's a culture of hustle, you should celebrate that.
+
+I actually think Silicon Valley has the hardest problem with that. That was always stunning to me in Silicon Valley. You don't see the same displays of, we're proud of what we have built. In fact, there are a lot of people in Silicon Valley who build something and then apologize for it. It's like they're ashamed.
+
+Ben: Seattle is far worse at this. Living up here, it's like the Bay Area, except even your shoes aren't nice. There are billionaires walking around in hiking pants.
+
+David: We're talking about personal displays of wealth. Yes, that is gauche in Silicon Valley, definitely in Seattle. But people are proud of the companies that they've built and the size, like my company did 100 million in revenue or I get a unicorn status valuation. People are proud of that.
+
+Katherine: That's true, and it goes back to this, ‘we are creating something.’ We are creating something, and you all know this better than anyone in the number of founders that you have interviewed. Founders, especially the best founders, are so obsessed with that creation story, even the incentives that are used to align people on the mission.
+
+That's more what I meant when I said equity and what is the currency. What is the thing that is traded that makes the system go? It is equity. But why people come here, it is so much more driven to create something real. It's usually driven to right the wrongs of whatever you've experienced in a previous industry. That's so much of what is driving people.
+
+One of the things I've been pleasantly surprised with in an ecosystem like Miami is that people are not ashamed to be successful. I do think that that is a uniquely kind of American Dream part of what Silicon Valley should be, and what it is, and what it historically was. It's that people were really proud of what they've achieved, and the number of people they're employing, and what they're building. Weirdly, I think Washington, in some corners, has moved away from that story of creation.
+
+David: All right, for our second sponsor of the episode, we have, once again, just one of the most fun things we get to do on Acquired. We get to tell you about Mystery. Mystery today takes over 100% of the planning, organizing, and running the literally most dreaded experience in just about every company, which is employee engagement, happy hours, and especially virtual happy hours over Zoom.
+
+Let me tell you how we've been part of many of them companies. You know the drill when you do it yourself. It's just impossible for it to be fun. Mystery makes it fun.
+
+Ben: When mystery first started, I was thinking, oh. When they first started doing this, oh, I see, they're making the Zoom happy hours more fun. But actually I think in practice, the way it's manifested is, I remember when we first started college working at Microsoft, it was really fun doing stuff with my team in person. Now that everyone is in some sort of hybrid, either splitting your time in person and not, or some people are actually the same city people or not, that legitimately needs to be completely reinvented, and that's what they're doing.
+
+David: Not only do they manage, run, takeover, schedule everything to execute these events, they also track employee engagement and the outcomes of the events. This whole massive budget within companies of all sizes that previously was just a black hole that spend went into, now with Mystery and their platform, you can actually track whether it's accomplishing your goals, whether that's employee retention, or if you're doing external events with the customers, with the partners, their satisfaction. It's really awesome.
+
+We've been telling you all season about this, but don't take our word for it. Here's their customer list—Amazon, Microsoft, Apple, Tesla, McKinsey, Uber, Twitter, Autodesk. The list goes on, and on, and on. It's not just big companies. It's startups, it's Modern Treasury, it's Convoy, it's so many other friends of the show. So many folks that we do have heard about them on the show both on the episodes we did with them, and now the reads.
+
+Ben: It's also (I think) a super approachable price point. It's like $25 per employee per event, which is about to make the deal that you're going to tell everyone even better.
+
+David: Yes, indeed, it is. For the Acquired community, they are offering not a two-for-one but a three-for-one. If you go to trymystery.com/acquired, you can sign up for your first event. Ben, as you mentioned, at $25 per employee, per person, per event, which is very, very reasonable. Not only will you get one event, you will get three events for that same single $25. That's not $25 each time, $25 per employee once for three events. It's freaking awesome.
+
+Ben: And they're going to tailor it for you. They'll learn from the first event much like with every Mystery program, and then the second event will be even better, and the third will feel even more of what your team is looking for. They take you on a journey.
+
+I'd say don't take our word for it. Take everyone else's word for it, but you can take our word for it, too. They're an awesome team. It's an awesome company. Check it out, trymystery.com/acquired or click the link in the show notes.
+
+David: Let's talk about what I think is probably now another huge mega trend to come for the decades ahead, the exporting of Silicon Valley to the rest of the country and the rest of the world. You've been talking about it. You're there in Miami. You're not here in California anymore, or Seattle, or the West Coast. How is your personal experience been over the past two years with that?
+
+Katherine: This is a core part of the American dynamism thesis. Maybe talking through a couple of companies that explain this trend will make it clear. We've talked about kind of your atypical founder, someone who came from different industries who felt like they were unable to build a company. That's happened, and a lot of those people felt like they were forced to move to Silicon Valley or maybe in some cases, New York.
+
+What I'm now seeing and what we're seeing in our own portfolio is that those people can build from anywhere. What that means for the country, it is an extraordinary thing that Silicon Valley could be exported to the rest of the country. That will be game-changing when you think of just post war.
+
+There was this myth that if you were someone who was high achieving or someone who wanted to have a career, you had to go to certain universities. You had to leave your state, and then you had to go to one of a handful of cities. The impact that has had on the country has been very detrimental. There is brain drain from certain states that has benefited places like San Francisco and New York.
+
+If we're telling the story 50 years from now, and we're looking back on what happened, the thing that will come out of Covid is that people have now said, I do not need to be in San Francisco. I can be anywhere in the world and anywhere in the country. I can be in my hometown building something, and there's enough talent there to do it or there's enough talent around the country that can do it remotely.
+
+I'm incredibly bullish that American dynamism will not only be companies that are built around the country, but it will also be just different types of problems, because founders who wouldn't have gone to San Francisco are now building for their hometowns. I'll give a perfect example of this because I think this is one of my favorite examples in our portfolio.
+
+There's a company called Flock Safety. That was a YC company built in Atlanta by second-time founders Garrett Langley, an extraordinary founder. He had just built a small company before and said, I want to go after one of the biggest problems, what do I want to do? He's like, why is it so hard to eliminate crime?
+
+Most crimes are done with a car, whether we're talking about petty crimes or things like Amber alerts, child kidnapping. Why is it so hard in the era of software and of cameras around the world? Why is it so hard to solve crime?
+
+He built a very small camera, license plate reader, realizing that so many of the license plate readers around the country were very expensive, built by legacy systems, and in some ways, public safety contractors. He started selling them to homeowners associations, selling them to neighborhoods, saying, put up this camera and we'll be able to track cars, not people, which was very important to him. With a network of cameras, maybe we can solve crime.
+
+What started happening around Atlanta is they didn't do any press, but these cameras started actually solving very dangerous crimes, things like child kidnappings. They were covered on the nightly news, and then more homeowners associations would buy them. After a while, police chiefs across the country just started contacting them, inbound. Can you give us some of these cameras?
+
+Now they're in 30 states. They've grown tremendously over the last few years. It was something that was built so that they could solve one of the biggest problems that they saw in their community. That's where I think they're a perfect example of an American dynamism company of a company that is solving civic needs selling to government, but didn't actually start out selling to government, but ultimately built for their community. It's incredible. This is an Atlanta-based company, which I think five years ago, people would have said, can you build a very large company in Atlanta?
+
+David: Oh, my gosh. I'm thinking as you're saying this, I used to live this as a venture capitalist. I was the bad guy on the other side of the equation of a company in an interesting market gets traction in XYZ City, Atlanta, wherever. They're interesting enough that Silicon Valley, venture capital, writ large is interested. Probably in the second meeting that you have with your VC before the term sheet, they're like, so, you're based in Atlanta. Do you really want to build something big? You got to move here.
+
+Katherine: Yeah, and anything for a long time, that was the view. What Covid has changed is everyone realizes that's not the case. By the way, people want to move to places like Atlanta. It's a great city, the same thing with Miami, Austin, and Provo, Utah, Salt Lake City. There are so many places that people want to live, but didn't feel like they could do it, because the myth was you have to be in Silicon Valley, you have to be in New York if you're a serious person. I think that completely changed after Covid.
+
+The number of new companies we're going to see sprout up in second and third cities across America, I don't even think it has to be really big cities. I think it can be smaller towns. The remote work movement, I think, will spur so many of these great companies, and really just lead to a democratization of tech around the country.
+
+David: Do you feel now that you personally, a16z generally, your geography is the Internet at this point, versus anything else?
+
+Katherine: I think Covid made that inevitable. All of us were keeping our relationships online. It's so funny, a couple years before Covid, people would mock people who spent too much time on Twitter. They would mock people who were in their signal chats, like, why aren't you go into cocktail parties? How you really meet people is building relationships in person.
+
+I very much disagree with that view. When you think of the early internet, people were hanging out in chat rooms. They were all weird avatars, it was all pseudo anonymous. You see that more in the crypto world now, but Covid led to this sort of rebirth of, actually, you could build relationships online.
+
+Actually Gen-Z, that's how they build the relationships. They make friends, not with their neighbors or not with the kids that are in their class. They're all over the country. That's a great thing that people can find community online.
+
+The idea that investors aren't going to find community online or founders aren't going to find their next hire online, the Internet is not this thing that's not part of our lives. I'd say in some ways, the physical world is definitely downstream of the Internet. Culture is downstream of the Internet, but we clearly need both. Of course, I'm invested in the physical world, but what we're doing right now is through the enablement of the virtual.
+
+David: What's the path, pre-Covid, for a company that was in the/of the caliber that Andreessen Horowitz could lead at series A or Series B? The path for that company was book a one way ticket to SFO and stay on the peninsula as long as you need driving up and down Sand Hill, meeting with firms until you get a term sheet.
+
+What's the path now as an example? How did you meet them? How did they present? How does the relationship happen? How do board meetings happen? What does it look like?
+
+Katherine: I'll share the story of how I met Hadrian, which was my first investment since being in Andreessen Horowitz, and how that relationship blossom, because that's another Los Angeles-based company, typically not a place where VCs spent much time, but of course, with the emergence of the just extraordinary new space movement, there are a lot of people spending a lot more time for different reasons in Los Angeles. I know my partners are certainly spending time there in games and other areas, too.
+
+Hadrian is a company where it was our first formal investment out of the American dynamism practice. It's a company that is building automated machine shops for aerospace and defense manufacturing. Talk about a sector that technology just did not go to. We just mentioned the private equity world.
+
+Private equity had been buying up machine shops for a long time, seeing that as a great place to do roll ups and to cut people. But in terms of building jobs and creating new machine shops to actually service the needs of these large aerospace companies, that was not something that Silicon Valley was interested in or that technologists were really interested in.
+
+The origin story of that company, the founder, Chris Power, is this extraordinary founder who moved from Australia a few years ago, was very devoted to this idea that he wanted to do something in manufacturing and wanted to build something new. Actually, he started out with, hey, maybe the only way is to raise a small private equity fund, so he raised a small private equity fund and talked to a bunch of different shops, machine shops, where people were retiring.
+
+The nature of this field is that a lot of the machine shops are owned by people who are baby boomers, and they're trying to get out, and their kids don't have the capacity to either leave the shops or want to. He realized, he's like, this is a nightmare of what is about to happen. This is an impending nightmare, because even if you are to try to bring software into these existing shops, it's almost impossible from a technical perspective. There's not much that can be done unless you build something from scratch.
+
+We actually returned capital to his investors and said, this is not feasible from a private equity standpoint or with existing shops. We have to build new machine shops with automation, and then we have to upskill American workers so that they can do this type of work. We need to bring in a new generation of machinists, who are technically competent but also where it doesn't require some sort of special artisan knowledge.
+
+He built his first factory and now on to a second. He's serving a lot of large aerospace and defense companies in a lot of the new space sector. It's one of these things where, when you talked about how we met, we met through a number of people in the ecosystem. It's one of these things.
+
+I always joke about anytime you hear this about a founder, like you should always pick your head up. Every third call I was having about aerospace, about what's happening in defense, his name would come up. This company would come up. This is one of these things where if it doesn't succeed, we will be in a bind. We will be in a bind if we can't get parts delivered as a hardware company or if we have to fly out to a random machine shop in the middle of the country and find out why things are delayed.
+
+It was one of these things, where you hear people talking about it on the Internet, but you also hear it just in your entire network that everyone is rooting for a founder to succeed. That's also just what's so cool about a lot of these companies. They don't have real competition. Everyone is excited about their success because if they don't create this world of abundance in a lot of these categories, we’ll all suffer. Particularly, things like aerospace and defense will suffer.
+
+That's one of the companies I point to, because it's an immigrant founder, solving one of America's biggest problems. It's being built in Los Angeles at the heart of our defense and aerospace industry. It's right next to the customer. It's been able to interface with the customer every day.
+
+It also has this really, really important mission that I think is people see it as secondary to what's actually happening. But it will be the legacy of this company, which is that you were upskilling a generation of people who were told that working with their hands was embarrassing, who were told that they had to go to college, and they had to [...].
+
+Ben: You're describing David's college experience.
+
+Katherine: Probably mine, too.
+
+David: Yeah, right. We can joke about it.
+
+Katherine: We were told, if you have an interest in doing something that your value comes from going to college, your value comes from having one of these jobs.
+
+David: And we were told, don't worry, it'll all work out.
+
+Katherine: Oh, yeah.
+
+David: We've been lucky it has for us, but for so many people, it hasn't.
+
+Katherine: A lot of people who graduated right at the Great Recession, it was like, okay, the myth and the lie has been exposed. We need companies that are saying, actually, you can be part of the startup revolution. You can work hand-in-hand with the people who are aerospace engineers as machinists, and we're going to solve these problems together. That looks a lot more like what Silicon Valley looked like in the 40s and the 50s.
+
+This is what the innovation with the Department of Defense looked like. As Silicon Valley was coming up in the 60s and the 70s, it was a very different type of community of people. I'm excited for that because I do think that we are going to see that renaissance of people working together. It's great that Hadrian is emblematic of the innovation we think is going to happen with the practice.
+
+David: You mentioned Substack earlier. I think one of the greatest problems facing America, Western society (broadly) right now is all these people that need jobs that [...] in college or didn't. How are people going to make money in this new society? How is the middle class going to thrive?
+
+You've talked about lots of people. You've talked about the surveys now that for the first time in generations, most Americans believe their kids are going to be worse off than they are and feel that they're worse off than their parents.
+
+At the same time as all this, we're talking about these companies that a16z funds that are power law dynamics and create these huge, huge outcomes. At the same time, there is this new middle class on the Internet. We're kind of like doing it right now in this conversation, and lots of subset writers are too. Is that part of the American dynamism thesis, too?
+
+Katherine: We're a little bit more tailored in terms of a lot of the companies that we are investing in now have a physical component. They don't necessarily need to, and I do think they touch government. But I do think you're pointing out a trend that is so important, that I think a lot of people are missing, which is that these companies are leading to a revolution for people who want to be individual creators. The Creator economy thing is, people have their theories on it, but you do see people are building new types of businesses through this enabling technology, and it is a small business revolution.
+
+The thing that I get upset with when Washington talks about tech is that it's this monolithic thing. Everyone points to big tech and everything falls into big tech. But small tech is actually the thing that gets me excited. It's the fact that I invest in early-stage companies. I invest in companies from the napkin stage. Those are small companies, those are small businesses.
+
+Of course, they aim to become large businesses because the incentive structure of venture capital and the incentive structure means that we want to see things grow. That's good. We should not be afraid of that. But these are wonderful small businesses. Now, people across the country can use the tools that have been built to enable these businesses.
+
+Whether you're talking about like, as you said, Substack or Shopify where people are building incredible businesses on the platform, or whether there's a lot of capital available, and now I'm a founder in Miami and I want to build a company here, and I want to employ people in Miami, and it's fantastic, but we're talking about small businesses. That's what's really exciting.
+
+We can talk about companies that are too big or things that get the focus of Washington and get people riled up on both sides. The only thing Washington can actually agree on is that they hate big tech, but not enough credence is given to small tech.
+
+Where I'm focused in American dynamism, these are small tech companies that are trying to solve the country's big problems, so we should support that. That's exciting. It's also this method of company building that I don't think people have realized. I think our generation has. I don't think older generations that are outside of technology have realized it yet, that this is the new way of company building.
+
+Whether you're in middle America or whether you're in Silicon Valley, this is how companies are going to be built in perpetuity. We need to be excited about that. Nothing is not a tech business anymore.
+
+David: It's funny. Even for me and us being in Silicon Valley, myself, when I transitioned to making Acquired my full time thing, I didn't know how to talk about it. Even hearing the capital of Silicon Valley, the thing that I landed on after a couple of months of trying to explain what the heck it was we were doing that seemed to resonate the best was I was like, well, we're building a small business on the Internet. Because of the internet, it can actually be a pretty big small business, but that's what we're doing.
+
+Katherine: Yeah, and we should celebrate that. We are a country of small businesses. The worst thing that can happen is when all of the talent goes to certain hubs and abandons the rest of the country.
+
+I do think the centralization that we saw in tech, maybe over the last (say) decade, we're now experiencing this decentralization and the fact that I'm investing from Florida, of all places, which I grew up in Florida, and did I ever think before Covid that I would be returning to Florida? At any point in my life, no, I didn't think it was possible. I loved Florida, but I certainly did not think that the world would change to where everything could become decentralized, and people could dissociate where they live from where they work.
+
+If we're all working online and if we're all online, this is actually a really good thing for the rest of the country. I'm hugely excited about that trend. I think we'll look back and say, wow, the post-war movement to New York City and to San Francisco, didn't have to be the end-all-be-all of the American experience.
+
+David: All right. For our final sponsor of the episode, we have, as always, our good friends over at Modern Treasury. Modern Treasury is by far the best way to manage your company's payment operations. Their platform allows you to move money within your product using code and not manual finance operations.
+
+This is huge. With their API's, you can move money within your product, which is pretty important for just about anything you would want to do these days. Having worked with so many companies, so many marketplaces, especially over the years, this was a nightmare on the back end for marketplace teams of having to manage ledgers, bank accounts, moving money, keeping custody. It was very, very, very difficult.
+
+Modern Treasury abstracts all of that away. Just by integrating their API and managing everything to their best-in-class web apps, you can take all of that complexity of banking rails off of your team's hands and let them do it probably far better than you ever could, honestly.
+
+It's just an incredible company. It's so cool. They're such a part of the Acquired community. We did our reverse interview LP Show with them a few years ago, back when they were a tiny, tiny little company doing $10 million per month in money that they were moving on the platform. Fast forward to last fall when we first started talking about working with them as a sponsor, they were moving $100 million a month on the platform. Now they are moving billions of dollars every month on the platform.
+
+Ben: It is one of these ‘maturity of the Internet’ things, where first you can move bits, then you can move text, then you can move images, then you can move videos, then you could programmatically do things like place calls with people like Twilio using APIs. Now you can use Modern Treasury's APIs and user interfaces for non-technical folks to literally move money around. They're so deeply integrated with all these banks. It just works. It's pretty cool.
+
+David: It's super cool. Customers like Gusto, Marqeta, Revolut, Pipe, TripActions, ClassPass, BlockFi, LedgerX, all the way through to Web3 companies in crypto all use Modern Treasury and their banking rails to move money around within the apps. If you're building a fintech app, we used to say, you definitely need Modern Treasury.
+
+The odds are, it's impossible that you don't already know about Modern Treasury if you're building a fintech app. Even if you're not building a FinTech app, the ability to integrate money and money movement into pretty much anything these days is mission-critical. Go check them out. You can learn more at moderntreasury.com/acquired. When you get in touch, just tell them that Ben and David sent you.
+
+Ben: Thanks, Modern Treasury. Katherine, I have a question for you that is somewhere on the border of moral philosophy and politics. I know that's a dangerous tee up.
+
+Katherine: Good one.
+
+Ben: In investing in American infrastructure projects, both to improve our footing domestically, but also to ensure continued prosperity in the international community of defense projects and things like that, there's an implied assumption that the continuation and breadth of the American way is a good thing. I think there are lots of good answers as to why that's a great assumption, but why is that to you? When you are going to bed at night and you're like, I'm funding this mission, what is it about the American way, where you're like, this is a very good thing that I'm investing in this?
+
+Katherine: This question is so interesting because I used to get this question a lot more (say) five years ago. I've worked with a company called Anduril for a very long time, actually since their seed round. This was one of the more contrarian. It's kind to say it's contrarian, but I can also say it was unpopular when the investment first happened.
+
+I was excited about the mission of the company, but I think I had because I came from Washington. I kind of knew what would happen in a way that I think a lot of other people didn't, which was defense was something that was deeply unpopular in San Francisco. Now when you talk to people about Anduril, all they can talk about is Ukraine.
+
+People are watching on a world stage. What happens when a country invades another sovereign country? We haven't seen a war like this since World War II. People are now realizing, actually, we need strong defense. It is not something that anyone wants to be right about, honestly. It is painful and it is horrible to watch.
+
+What I think was so clear about that investment was, time would tell why we need new defense contractors, especially ones that are built with modern technology. Going back to the journalism point, I've always understood what conviction looks like, and when other people see something as deeply unpopular, you say, I'm totally fine standing up and saying that history will serve us right or defending why I believe something is so important.
+
+It was so clear to me. It's one of the clearest investments I think I've ever made, where it was so clear that people were going to change their minds about the company. It's just extraordinary to see it has grown tremendously over the last five years. Multiple offices now working with Australia, the UK. It is a company that I think everyone is just so happy it exists and realizes that, hey, we need modern defense contractors, not ones that were built in the 1920s.
+
+Ben: What is it about the American way that fires you up and says we should have a lot more of this for a lot longer time?
+
+Katherine: I think America is the greatest experiment in human history. The vast majority of Americans come from somewhere else. My grandfather drove a truck, didn't have an eighth grade education. The fact that I'm sitting here is a miracle. The fact that I get to do this job is a miracle.
+
+The thing that has always motivated me and the thing that's very clear is that something like 50% of unicorn founders in this country are foreign-born. They are sometimes the greatest testament (I think) to what it means to live the American dream. It's the same thing of why I'm so excited to live in Miami, because people are enthused about what this country stands for, about what you're able to achieve here, what you're able to build.
+
+If you go to any other country as a venture capitalist or as a founder and you talk to people, whether it's elected officials, or you talk to people who are also working on civic technology, the question you get is, how do we become like you? How do we do this? How do we create this unique thing?
+
+I do think the founders experience in this country looks a lot like what the founders did in this country, where it is just a rejection of everything they have known to build something new. Usually, it's these people who are misfits, contrarians doing something that (say) no one else can do. It is an American experience and it's an American type of investing. Even the model for venture capital is something that is deeply part of the Silicon Valley story.
+
+There's just something so part of the history of this country of what we're doing. I think when you look at other countries and other ecosystems that are emerging using this model, which is exciting, extraordinary, and it's something I think we're all excited about, it's following a story that was created here.
+
+David: Totally. We tell it on Acquired almost every episode. I'm thinking of Jensen and NVIDIA. Where else could somebody come from? His dad was an air conditioner engineer and not of this country, and then Jensen ended up going to a reform school. Now he's Jensen. That is a pretty uniquely American story.
+
+Katherine: Totally. A country of misfits, where people come to escape and build something new. That is the Silicon Valley story. I was escaping my reality as about-to-be-fired journalist. That is the motivating factor of I have nothing to lose. You all know this when you talk to so many founders. They're coming from a place of, we have nothing to lose. That is such a motivating force. Then you add all of the incentive alignment of everyone trying to see that there's more innovation and ecosystem.
+
+The thing that I'm most hopeful about, and I think if we do our jobs right over the next 10 years—this will be the case—I want to see that incentive alignment across the country, so that it's not just this unique thing that's in Northern California, and that a certain class of people are privy, too, that it is everywhere.
+
+Ben: I love that. Katherine, as we wind to a close here, any parting thoughts or anything you want to leave listeners with?
+
+Katherine: Going back to your original question, as a venture firm, how do you create a new practice? I think if we do our jobs right, and we invest in the companies that we're intending to invest in, and we tell the story right, I think every venture capital firm will have an American dynamism practice.
+
+While selfishly as an investor, I don't necessarily want that. But as an American, I want that. I want every firm to say, actually, this is the best place to be investing. I can't believe we weren't looking at it and just the extraordinary opportunity.
+
+It's not impact investing, it's not ESG. It's not just, oh, well, we're going to see incremental returns. It is going to be the source of American innovation. It is a great place for the top venture firms to be investing.
+
+I think if we do our jobs right, we will see this new category. It'll be just like enterprise, will be just like consumer. I'm excited for that to happen, truly. I think that's the story of the next 10–20 years of Silicon Valley.
+
+David: It's cool. You can see it's starting. Space is the first piece of this, I think. It went from deeply unconsensus in Silicon Valley to now pretty consensus.
+
+Katherine: Yeah. One of the things that I think has made this easier is we see these companies in our portfolio before we had this practice. They are soaring. It is not something where it's like, oh, we're creating something completely new from nothing. There are a lot of success cases.
+
+The idea that it's just going to be these one-offs, no. This is going to be a category of innovation that becomes almost like you have to be investing actively in this category. In the same way that SaaS wasn't a thing, and then now, who would say we don't invest in SaaS?
+
+That is what I think is going to happen. It's not just going to be these one-offs. Maybe we're an investor in this weird thing. It's just going to be, no, this is a category of innovation that's going to be driving this country for the next 10, 20, 30 years.
+
+Ben: And it wasn't the first thing that people attacked, because it didn't have the highest gross margins the way that these Software as a Service businesses did. But as technology permeates everything else in the world, it turns out that you can build some really big businesses by attacking these broad swaths of the American economy. I think we're going to continue to see lots and lots of entrepreneurs do that. We're all better off for it.
+
+Katherine: Absolutely.
+
+David: Katherine, last thing before we wrap up here. We've been talking this whole episode about all these trends, the Internet, you can build companies anywhere, American dynamism. We know you and Andreessen are the first ones. You are planting your flag officially. How can founders who are listening, who totally resonate with, who are already building companies that fit with the American dynamism thesis, get in touch with you and Andreessen?
+
+Katherine: You can find me on the Internet.
+
+David: I'm shocked.
+
+Katherine: On Twitter, I'm @KTmBoyle. I'm pretty responsive there, but we're pretty easy to get in touch with, so definitely come find us.
+
+David: And you have a great Substack to the Rambler, right?
+
+Katherine: Yeah. I haven't been as active. I need to get back into it, but it's boyle.substack.com.
+
+David: I love it.
+
+Ben: Katherine, thank you so much.
+
+Katherine: Thanks so much for having me. This has been awesome.
+
+Ben: All right, listeners, thank you for going on the journey with us and Katherine. She's really dynamic. It's an inspiring big swing that Andreessen Horowitz is taking, and it's very cool that she is on the forefront of it.
+
+If you want to join us in the Slack, you should, acquired.fm/slack. If you want to listen to more Acquired between now and when the next show comes out, you can search Acquired LP Show in any podcast player and you can get more episodes of the LP Show. The back catalog is now completely open and free. You can go listen to the old classics like VC fundamentals or how to invest in consumer businesses with Sarah Tavel from Benchmark.
+
+There are a lot of good old gems in there that I think a lot of people didn't get to experience because it was behind a paywall. As folks know, if you want to get access to those episodes early, two weeks early before anyone else, you can sign up at acquired.fm/lp.
+
+We've got a job board, acquired.fm/jobs. We appreciate any ratings, reviews, anything like that you give us on any platform. More than that, we just appreciate it when you tell one friend, because as we deeply believe, organic growth is the best growth. We deeply, deeply want to keep our community as a great group of people who love getting together.
+
+Screaming it from the hilltops can spike numbers, but bring other people into the Acquired fold that you want to hang out with, because we probably will, too. With that, thank you to the Solana Foundation, to Mystery, and to Modern Treasury. We'll see you next time.
+
+David: We'll see you next time.

@@ -1,0 +1,453 @@
+Ben: Welcome to this special episode of Acquired, the podcast about great technology companies and the stories and playbooks behind them. I'm Ben Gilbert and I'm the co-founder and managing director of Seattle-based Pioneer Square Labs, and our venture fund, PSL Ventures.
+
+David: I'm David Rosenthal and I am an angel investor based in San Francisco.
+
+Ben: And we are your host. This episode is something that David and I have been thinking about for a long time.
+
+David: Years, in fact.
+
+Ben: It is called the Acquired Playbook and it is basically what we've learned from doing Acquired. People often ask us the question, okay, cool, you guys have analyzed 200 companies and spent an ungodly amount of hours doing that. What are the takeaways? This episode is the takeaways.
+
+David: It was back in 2018, I want to say, that we had a major book publisher come to us and be like hey, would you want to do a book of Acquired? This was the idea we had and then we were just like…
+
+Ben: Maybe at some point.
+
+David: Let's just keep doing episodes instead, but maybe at some point. Consider this the first draft.
+
+Ben: We don't know if this talk was good yet. We are in our hotel rooms at Capital Camp and we are about to go on stage and give it. This is sort of fun. This is the first time we've ever recorded one of these before doing the episode itself.
+
+David: Before we jump in, for one final time this season, a huge thank you to our presenting sponsor of all of our special episodes, the Solana Foundation. Solana, as you all definitely know by now, is a global state machine and the world's most performant blockchain. When we say performant, that means that developers can build Web3 applications on top of it with super low transaction fees compared to other infrastructure platforms out there you may know of. The reason that you can do that is that the Solana blockchain is literally a feat of engineering genius.
+
+Ben: If only we could talk to people involved in the engineering genius behind Solana.
+
+David: You know where I'm going with this because it's the last special episode of the season. I am talking to the co-founders of Solana itself, Anatoly Yakovenko and Raj Gokal.
+
+We are pumped to close out the season here with you guys. As a quick refresher, can you tell us what the Solana network was built to accomplish?
+
+Anatoly: It's a public blockchain, so it was built as a faster version of Ethereum and that's kind of a very, very high-level way to talk about it. Our initial vision—the slide deck and everything—in those super early days said that it's a blockchain in Nasdaq speed.
+
+The big dream idea is imagine you have a global computer, that doesn't matter where you're at but this computer perfectly synchronizes all information on it as close to the speed of light as possible. When news travels around the world, so does the information through this thing because if you can get to that speed of light—update speed—you are as fast as news. You're as fast as the fastest markets. It doesn't really matter if Nasdaq has sub-nanosecond, whatever trading, because that doesn't trade unused, it's just trading as statistical noise.
+
+The other thing about Solana is it's very energy-efficient. A single Solana transaction is about two or three Google searches. If you think of it as using a web service, this is a network that takes as much energy as a regular rep service. In comparison to the proof of work chains, this is a million times more energy efficient. To me and Raj, it was really important that this was true.
+
+David: That's amazing. We got all into our episode with you all a year ago into your background as a systems engineer at Qualcomm, leading into the proof of history, and how the network is architected. What's happened with Solana since?
+
+Anatoly: Oh, man. A lot of ups and some downs. We've had a crazy amount of traction. I think by the number of active accounts, we've passed all the other chains.
+
+Raj: Right now we're at 2 million daily, 6 million weekly, and then 18 million monthly, which is the highest of any blockchain and surpassed all the other ones about 60 days ago. The last time we spoke, we were basically close to zero.
+
+David: In the midst of all this incredible growth, the markets—in particular the crypto markets—have changed quite a bit since we spoke last as well. You started Solana in the middle of the last crypto winter. What advice would you have for founders out there?
+
+Anatoly: Bear markets are hard for mid-stage companies because they see their revenues and everything else shrink, but I think they're actually great for seed-level companies that are just small teams of engineers running in ramen that have a bright idea and a lot of energy to execute on it.
+
+Your competitors that are bigger are forced to prioritize and forced to take less risk for people that are just really hungry to build the next big thing, and don't need a lot of funding. That was our story. We actually had a lot of competitors that raised $100 million rounds on a white paper right before we got a little bit of seed funding.
+
+Raj: The first seed was a little over $3 million and that was more or less enough. The next round was $13 million, but a ton of it got wiped out because most of it came in ETH. Before we found a custodian and were able to sell any of it, a lot of that value got wiped out, unfortunately. Altogether, less than $10 million, I think to [...].
+
+David: Wow. For teams out there that are working on applications, what's the best way to get in touch with you all and how can Solana help?
+
+Anatoly: We have a Discord. We have a really strong community there. If you're a builder, you should definitely join that one. Also, Anchor. There are a lot of groups outside of just our main one. One kind of more fun way to do it would be to join any of the hacker houses, just show up, and start building with a bunch of people face-to-face and really feel the energy of working on something together and exchanging ideas and seeing things fail.
+
+David: Awesome. Thank you so much. It's an amazing feat to be the largest blockchain out there. Super cool. Our hat is off to you.
+
+Ben: As always, this is not financial advice. Please do your own research. David and I do lots of research, but you may come to different conclusions and we may have financial interests in the things that are discussed on this show.
+
+David: Indeed and speaking of different conclusions, this would be a fantastic episode to discuss in the Acquired Slack. We want to hear what your favorite lessons are from all of these hundreds and hundreds of hours that we've done at this point. This would be awesome, so acquired.fm/slack. If you're not already a member, we hang out in there. It's a great community, as you will hear us talk about in this talk.
+
+Ben: All right, join Slack, and then this is twelve of our favorite playbook themes, but there are certainly more. I'd love to hear from you. All right, on to the talk.
+
+David: We thought we would be really clever here with our first one. Both because this genuinely is one of our favorite themes and we thought this will be counter positioned. Everybody's going to talk about it's May 2022, there's doom and gloom. It's going to be good. Then, of course, a great friend of the show, Anu Hariharan, came up earlier tonight and already beat the optimism drum, but we will highlight it once again.
+
+Our first lesson from all the stories we've told is that optimism always wins. For folks here in the auditorium, raise your hand if you know who the people are who are on this slide. Wow, this is awesome. We're getting almost no hands raised. For folks at home, I don't know if we have a single hand up. Wow, this is awesome.
+
+The person on the left is Akio Morita and the person on the right is Masaru Ibuka, and they were the co-founders of the Sony Corporation. We told this story in about 3 hours earlier this year on Acquired. It is amazing, but we thought it would be the perfect story to kick off the night because it's just so perfect for this moment.
+
+As we said, there are not a lot of reasons for looking out at the landscape of the markets right now to be an optimist, but the Sony story reminds us that things were much worse than they are today in the recent past.
+
+Sony was founded in 1946 in Japan and just think about that time in 1946 in Japan.
+
+Ben: You think 2022 in America might be a bad time to start a company or a tough time to start a company. I don't know that in recent history there has been a worse time and place to try and live your life and do any sort of business, let alone start a brand new innovative technology firm.
+
+David: Right. These two men decided to start a company, which is crazy in and of itself in Japan in 1946. Even crazier, they decided to start a consumer electronics company. Crazy for two reasons. One, after the war, there was no technology left in Japan so what are they going to make? Their first product was a wooden rice cooker.
+
+Ben: There wasn't a market either, because every other technology firm that was making radios and stuff had pivoted to make stuff for the military, which was no longer a customer.
+
+David: Yes, it no longer existed. The second reason why this was a completely crazy idea was they were going to make electronic consumer products. The GDP per capita in Japan in 1946 was $17. Not $17,000, it was $17. There was no market. There was no technology.
+
+Ben: I think after the war, 48% of Tokyo was homeless. Half the population's homes had been destroyed.
+
+David: Yeah, unbelievable. Yet, despite all that, I can't even imagine bigger headwinds against them, they built one of the most iconic companies in the world. It's not an understatement to say that these two men and Sony changed the course of Japanese history, changed the course of world history.
+
+Again, we talked about this in the episode, but Steve Jobs was mentioned earlier tonight. Akio Morita was the inspiration for Steve Jobs and he actually did this great talk. It was not a WWDC. It was an Apple keynote after Morita passed away, where he did a tribute to him. I think, no Morita, no Sony, no iPhone.
+
+The lesson that we take away from this is even if things are at their bleakest, it's rational to be an optimist. Because if you're not an optimist, it's the optimist who drives the world forward. Then if you're an investor, investing in optimism is the only way that you're actually going to make outsized returns and build great companies. It is genuinely the rational thing to do.
+
+Ben: All right, point one here or lesson one, touchy-feely, kind of feel-good, but let's back it up a little bit. We all know Moore's Law. In this next lesson, we wanted to basically visualize and talk about this trend in a little bit of a different way than it's normally talked about.
+
+The number of transistors on a chip—we all know this—tends to double every 18–24 months and with some quick compounding math, that means you get a 10X every seven years or so. As you can see on this graph that we made here, the X-axis is time, the Y-axis is the number of transistors on a leading consumer processor, notice that it's in log scale. You can see every seven years or so 10X improvement in processing power.
+
+I figured we'd take the greatest hits examples. Intel’s 386, 486, Pentium 4, Core 2 Duo which was in my first MacBook Pro, the A7 in the iPhone in 2013, and of course the recent Apple M1. Of course, if you look at it in linear and not log scale, it looks like this. It's way too difficult to actually observe any progress and it seems like basically nothing happened and then everything happened.
+
+David: This is the craziest thing about Moore's Law and exponential scales, the graph always looks like this. In ten years, the M1 is going to look like nothing happened between.
+
+Ben: In 2000, with Pentium 4, it would have looked like this, too. Every single step along the way felt like this, which is wild. Because of how exponential growth works, you basically feel like you're always at this crazy top and all this progress just happened.
+
+Normally we don't look at charts like this when we're looking at processing power or at least like processing generations. We're used to looking at it for high-growth durable technology companies where we're looking at stuff like their market cap, so we aggregated that too. The first thing to note is that there's been a drawdown. I don't know if anyone noticed.
+
+David: We made these slides a few months ago.
+
+Ben: But the point still holds. This is the market cap of all global technology companies over that same time period starting in 1975. Even if you normalize this for the tech bubble and today, you'll see that the outcomes of venture-backed technology companies keep getting larger generation by generation. It's also worth observing the exact same phenomenon that basically it seems like nothing happened, save for the tech bubble. Then suddenly everything happened at once.
+
+The insight is that this graph and the Moore's Law chart with the processors are actually the same things. This is actually Moore's Law at work. We call this lesson the Mike Moritz Corollary to Moore's Law because we didn't make it up. There's a great story that goes with it.
+
+Around the time that Mike Moritz and Doug Leone took over running Sequoia Capital from Don Valentine, Mike looked back on the performance of the past couple of Sequoia funds that had Cisco, Oracle, and Apple, these unbelievable venture returns, never before seen venture returns, and they were asking themselves going, my god, what have I got myself into? How are we ever going to top this? Which would be a reasonable and rational way to respond, looking at the greatest returns in history in an asset class and thinking, okay, where do we go from here?
+
+He realized as long as Moore's Law continues to hold and computing power continues to get exponentially cheaper, the markets that technology can attack should keep getting bigger and bigger. To put some more numbers behind this, in 1990 a PC with that 486 processor cost $2000 and only about 42% of America, that's just of America, used a computer at all.
+
+David: That's wild.
+
+Ben: Right, that recently. Today a smartphone with literally a million times the computing power costs $200, which is one-tenth of the cost and over 6 billion people have one. Of course, this trend led Sequoia to go on to invest in Google, WhatsApp, Airbnb, Meituan, ByteDance, and global markets.
+
+David: I think this insight that Mike had originally of as long as Moore's Law holds, yeah, there'll be ups and downs in the market like we've observed in the past year. But technology should always be able to access bigger and bigger and bigger markets if the cost of computers keeps declining. It's played out.
+
+Ben: For those of you in the room who want to get really pedantic, you have to sort of slightly adjust Moore's Law in order to say that it still holds. You change the definition a little bit. When you look at what NVIDIA has been doing with GPUs, it is totally fair to say that this 10X improvement in computing every five, six, and seven years, is absolutely still happening. Therefore, the lessons you should take from it on the macro technology scale are to stay an optimist.
+
+David: Indeed. All right, number three, we talk about Sequoia a lot on Acquired. They've been involved in so many great winners. They built such a great franchise. But lest you think that they are just pure geniuses, they can do no wrong, lesson number three—queue the all-in theme song here, let your winners ride—this comes from Sequoia's biggest mistake in history.
+
+Ben: Their biggest mistake in history in one of the most successful companies, if not the most successful company in history.
+
+David: Yes. I think this is probably the single biggest mistake, period, in investing history. I don't think there's any way that it can't be, definitely. To be fair to Sequoia, they're playing on the stage where they could make a mistake that was the single biggest in history so they're doing something right.
+
+The story goes, one day in, I think it was 1977, Nolan Bushnell who is the CEO of Atari, called up Don Valentine, his main venture investor. Atari was actually the very first Sequoia Capital investment after Don started the firm. He said hey, I've got this young kid that's been working for me here at Atari. His name is Steve Jobs, he started a company, and I think you should meet him. I think you should take a look at him.
+
+Don talks about this in the way that only Don can and says that Steve came in and “looked like Ho Chi Minh.” I think this was during the phase where he wasn't showering, so he smelled really bad, but they funded him anyway. Don invested $150,000 in Apple Computer in 1977.
+
+Then 18 months later, they had an opportunity to realize one of the greatest venture returns of all time. They made a 40X on that investment. They sold their shares for $6 million before the IPO and they completely cleared out their position in Apple. Of course, we all know what happens. On the next slide, just for fun, we put on where our friends Ted and Todd over at Berkshire, with Warren's approval, started buying.
+
+Ben: The tortoise certainly beating the hare on this.
+
+David: The tortoise beating the hare, indeed. I think they did better than Sequoia did on this one.
+
+Ben: Because we use one gigantic, global, most successful technology company of all time to illustrate this, we figured we'd pick another example, too, just to show it's not an isolated incident. Amazon IPO at $8 per share. And just for fun, I want to point out that subsequently run up there in the dot-com bubble to $120 a share. Then, of course, that crash from the dot-com bubble. So 2001–2003, it looks like a pretty amazing buying opportunity. Actually, that's a ludicrous statement, because every year for the next two decades was a great buying opportunity in this company.
+
+What are we illustrating here? If you had held that Amazon IPO shares for 13 years, you'd have a nice 10X from the beginning of this graph to the end of this graph, but you really should have continued to hold. If you zoom out here, so you can see that the little crosshairs there illustrate where the previous graph ended, basically, any growth of the stock before 2012 just looks cute.
+
+At that point in 2012, I think we all would have described Amazon as a mature company. It was almost 20 years old. If you had just held for another 10 years, then instead of that 10X in 13 years, you could have had a 170X. Of course, the difference between those two on an absolute dollar basis, whatever you invested in the IPO is incredibly meaningful.
+
+David: Incredibly meaningful. The key insight in letting your winners ride, when to let your winners ride and when not, it's not your growth rate in any given year that matters. Frankly, that doesn't matter at all. What matters is how many years of growth do you have left. That is the ultimate question. In the case of Amazon, in the case of Apple, if you have decades of growth left, again, that's all that matters.
+
+Ben: It leaves you in this interesting place where you're thinking, well, okay, do I always continue to hold? This is why venture capitalists tend to be totally obsessed with market size because it's this idea that you basically need to be able to run forever, or decades and decades and decades, and continue to grow, and those markets continue to be this globally addressable, absolutely massive opportunity.
+
+The funny thing about it is all of the value tends to show up in the out years. The trick is figuring out okay, when am I in the out years? Like everything in startups, there's a great Paul Graham quote to go along with it. He remarked in December 2020 that an astonishing 99.98% of Amazon's growth had happened since the IPO. I just love this and I actually printed it out and I have it at home. It reminded me just how much running room Amazon had ahead of it after its IPO.
+
+David: All right, number four, one of our very favorites. I love this picture of Jensen Huang showing off the NVIDIA logo tattoo that he has on his shoulder.
+
+Ben: I think it's from the Tegra 2 processor line. Name a more badass tech CEO than Jensen Huang.
+
+David: I think he might be more badass than Elon. They both wear leather jackets. Our number four lesson is nothing can stop a will to survive. The reason that we put Jensen on slide, one, because his will to survive is unparalleled—we'll tell the story in a minute—but two, we actually started our two-part series on NVIDIA with this great quote from him, which is that “my will to survive exceeds everybody else's will to kill me.”
+
+One of the key things that we realized, looking back on all the stories that we've told, we kind of have a formula at Acquired. It just happens to be the best formula of all time, and it's Joseph Campbell and it's the hero's journey. All the great companies, whether it's Apple, Amazon, NVIDIA, or TSMC, they're all the hero's journey.
+
+The thing about the hero's journey is you face adversity along the way. You're fighting a dragon and it looks like you're going to die. The thing about company building is that, unlike fighting dragons, game over only happens when you decide to quit as a founder. You can't get eaten by the dragon. The market can turn against you, but the market can't actually eat you. There is always, always a way to survive. It's just a question of do you have the will to do that? The NVIDIA story just illustrates that better than anybody. When they were funded, Sequoia funded them.
+
+Ben: Shocking.
+
+David: Shocking, right. It was Jensen and a couple of his buddies from Sun. Jensen was at LSI Logic and his two co-founders were from Sun. This amazing technical team, this new market graphics accelerating and gaming on PCs, giant wave led by Doom and home adoption of PCs. This was like a great team to pursue. It can't miss investment.
+
+Ben: No-brainer venture bet.
+
+David: No-brainer.
+
+Ben: Just why the venture capitalists bet on everyone over and over.
+
+David: Which is the problem with no-brainer venture bets. Everybody thinks they're no-brainer venture bets. It's tons of competition.
+
+Ben: Eighty separate companies making graphics cards got funded.
+
+David: Yeah, it was 70 or 80 separate companies making graphics cards all got funded, which sounds quaint today, but that was a lot back then. Then it gets even worse. Intel came after the graphics card industry and decided that they were going to integrate graphics into the motherboard which they had done with sound chips, networking chips, and everything else. How many people have a dedicated networking card on their PCs these days? Nobody.
+
+Ben: Put yourself in Jensen and NVIDIA's shoes here. You just got funded. It's not a lot of capital. A zillion other people just got funded with the exact same amount of capital that you have. We don't have this in our sort of discussion here so I'm freewheeling. It's worth knowing that NVIDIA's original approach to how they wanted to render graphics on cards was actually basically wrong. It was novel but it was like not the way that everyone else decided to go, so it was difficult to program for.
+
+David: These quadrilaterals as polygons instead of triangles as polygons.
+
+Ben: Yes, which is not as efficient as a three-sided shape. Anyway, it does have a lot of merits. Not only are you not on the same footing as everyone else who you're competing against for a pure commodity on a thing that takes 18–24 months to ship. You are a step behind because you've burned a bunch of capital chasing the wrong approach first.
+
+David: Totally. What did they do? Jensen laid off 70% of the company and they did two completely crazy things. If you're not just focused on survival, you wouldn't do these things. One, he decided that the only way they were going to win and survive in this brutal commodity industry was by shipping six months ahead, shipping new technology six months ahead of their competitors.
+
+The way they did that was they decided they were just going to YOLO it. They designed all of their chips in software emulation as opposed to what everybody else did which was they'd work with their founding partners, they'd get some prototype chips made, they'd send them over from Asia, and test them out to make sure they worked. NVIDIA said no, we don't have time for that.
+
+Ben: They literally only ever ran the chip in software, and then once that passed, sent it to the production run.
+
+David: Then the other thing that they did, which we didn't talk about as much on the episode, is of course, you're going to have a lot of errors and defects by doing this. A large percentage of those chips worked sort of in aggregate, but a lot of functions that you would want to call, as a game developer, just didn't work. They were like it's a feature, not a bug. We're going to simplify your life as game developers.
+
+Ben: They would ship them broken and they would just disable that they would make it so that you couldn't access that in software. Then they would go around all the developers and say, you just actually don't want to use that blend mode.
+
+David: Trust us.
+
+Ben: Trust us. I feel like instead of all 24 blend modes, those eight are just going to be really good. You should figure out how to write your games using just those eight blend modes. I can't imagine, unless you are actually forced with your back up against the wall, to decide sure, I'm going to only ever emulate my chips before running a production run, and sure, I'm going to ship them broken and then tell the market to deal with it. I guess it goes back to necessity as the mother of invention. There was a lot of necessity.
+
+David: Yes, a lot of necessity. Jensen and NVIDIA are just the OG GOAT story. There's another great example that we had to include because we literally just talked to the CEO a week ago, and that's Eric Yuan from Zoom. This is from our interview with him a week ago.
+
+Eric: After I started the company, I realized wow, it's so hard to raise capital. By the way, the money that they give to you, don't think about that as money. That's trust. Every dollar matters. That's why every day I was thinking about how to survive, how to survive, how to survive. Even today, seriously, I still think about [...] how to survive.
+
+Ben: The interesting thing about that comment is I asked Eric the question, did you try to create a gigantic multibillion-dollar, world-beating company with Zoom? Or were you just thinking about how can I make a great product? He didn't even really answer my question. He was just obsessed with this notion of survival and that when he started the company, all the way even through to today, what he's thinking about is how do we ship great products and survive?
+
+David: It's a mindset of so many great founders.
+
+Ben: Yes.
+
+David: Number five.
+
+Ben: Strength leads to strength. There's a chance that we picked this one mostly just so we could show Marc Andreessen on this very large screen on the cover of Time Magazine at the height of the dot-com mania on a throne, barefoot. Simpler times.
+
+David: I feel like there needs to be some sort of similar image for 2021.
+
+Ben: Yeah.
+
+David: I have to think about what that is.
+
+Ben: Yeah, we'll hold a contest later. Long-time Acquired listeners will know this one well. This really starts with the idea of reflexivity. If you acquire new resources for your company—if you get more capital, or that next most important customer, or a great key hire, you bring in the right executive to your team—you are now by definition more valuable than you were before you acquired that resource.
+
+The question becomes how do you leverage your now more valuable asset into getting the next resource and becoming even more powerful, even more successful? An extreme example that I always think about this comes from a conversation that I had right here at Capital Camp last year with Michael Mauboussin, which was, if you looked at Tesla's market cap in 2020, you would say that there's no way they're worth that. That would be a very reasonable thing to say.
+
+What they definitely did do is use that share price to sell new shares at very little dilution and raise over $10 billion of cash to the balance sheet that year. Whatever you thought they were worth, they're definitely worth more now because they have a fresh $10 billion in cash and they know how to use it. It really comes down to sort of the ability to uniquely marshal resources.
+
+To bring it back to Marc Andreessen in 2009 when a16z raised their fund one, they came out swinging. For folks who were sort of observing the tech industry at this point, they raised $300 million for fund one in 2009. Marc and Ben knew this principle very well. They realized, we made this huge splash, we've got this big brand, people already think we're a top venture firm, just because we did this crazy thing out of the gate. How do we solidify that position?
+
+The very next year, they raised a $650 million fund. As you can tell, they basically kept going with this mindset of...
+
+David: Just yesterday, they raised another $4.5 billion dollar crypto fund.
+
+Ben: And they're somewhere between $30 and $40 billion under management now in 13 years since founding. They basically never took their resources and took that as a static notion of like, oh, good, now we can do some interesting things with this. They basically always looked at everything they had and say, okay, we're in a strong position, how do we get stronger? How do we do more faster and compound what we have?
+
+I think there's really something to just always thinking, okay, I just got more valuable, and that puts me in a position to get even more valuable again, and always just be really thoughtful and super aggressive about seizing that next opportunity.
+
+David: The other example that we have to mention on this one from the Acquired canon is literally the OG, OG , OG American capitalist business, which is Standard Oil ran this playbook to a tee.
+
+Ben: When you say OG, he’s actually a gangster?
+
+David: Yes. He may actually be a gangster. He was never satisfied. No matter how big Standard Oil got, it was never big enough.
+
+Ben: No matter what competitor he would acquire into the fold by whatever means necessary or no matter what railroad, he just did a deal. He would always use that to say, okay, tomorrow morning, I wake up and we figure out how to use my new more valuable company.
+
+David: All right, for our next sponsor, we have Mystery. This is so cool. I feel like Mystery has really come out of in some ways, and grown out of the Acquired community, and built just a juggernaut. Mystery has built the leading online platform for team events and employee engagement.
+
+You know all those zoom happy hours you've been doing with your team for the past few years, there are Netflix parties or whatever, and how they really, really are not fun, Mystery fixes that and makes them awesome. It is magical. You have to experience it to understand.
+
+We are going to do a Mystery for the whole Acquired community. This is going to be great. This might be the largest Mystery ever. They've done some really, really large ones, trust me.
+
+On Thursday, July 7th, 2022, we are going to do an Acquired-Mystery event for everyone. Ben and I will be there. You can sign up and join at trymystery.com/acquired. In true Mystery fashion, what we are doing will be a surprise, but I can promise it will be really, really, really awesome.
+
+At this point, I think Mystery has got to be the largest or one of the largest online event operators in the entire world, or if not, close to it. They manage events for hundreds of thousands of employees at companies like Amazon, Microsoft, Apple, Tesla, McKinsey, Uber, Twitter, Ford, Stripe, Starbucks, Fidelity, Convoy, Modern Treasury. The growth has been astounding. What's even cooler, it's actually been accelerating as the market has turned in the past few months. Companies spending smartly on employee engagement has become even more important.
+
+Before Mystery, you had to deputize some poor team member to do these events, to plan them. It was a thankless job with no upside. They're on top of your main job, nobody wanted to do it. Mystery takes over 100% of that. This is their full time job. They're the best in the world.
+
+Before Mystery, companies would spent all this money on team events, employee engagement, and it was just like going into a black hole. You didn't know if it was helping your team be more engaged and happy or even hurting, God forbid, or had no impact. You had no idea. With Mystery, they actually use software and surveys to measure the impact of these events. Imagine that on your team. Imagine understanding the impact of your spend on these things on your employee engagement, your workforce morale.
+
+Based on the data and the results they get, they can then actually tailor the events that make them even better for your team. It is a no brainer to do this. So Thursday, July 7th, you sign up in advance, and then go to trymystery.com/acquired. You can also get their awesome three events for the price of one for your team, special deal for the Acquired community. This is going to be super cool. Sign up, we'll have a blast. This will be a great way to close out the season. Thank you Mystery.
+
+All right, number six. This is another one that is near and dear to my heart. It's never too late. There are actually two meanings to this lesson. One is also another great Marc Andreessen piece of wisdom. There's a great famous quote of his from an interview.
+
+I think this was in 2014 that he did, where he said, "I came out here in 1994 to Silicon Valley, and the valley was in hibernation. My big feeling was I just missed it. I missed the whole thing. It had happened in the 80s, and I got here too late, and Silicon Valley was over." Obviously, that was completely not true.
+
+What's cool about this is that Silicon Valley and technology moves in waves. It's related to Moore's Law. Every time there's a 10X in computing, there's a new market, there's a new paradigm, there's a new technology that gets created. Yes, Marc was right. He missed the PC wave. It was too late for that, but he was right on time for the Internet wave.
+
+As long as Moore's Law holds, if you work in technology, if you invest in technology, if you build technology-enabled products, it's never too late. You're always right on the cusp of the next generation that's coming.
+
+The other meaning of it's never too late, folks who are viewing the video here in the auditorium will notice we have not Marc Andreessen on this slide, but Dr. Morris Chang, the founder of TSMC. This is I think the other lesson that I've really taken from Acquired is in this vein, which is that Morris Chang was 56 years old when he founded TSMC. TSMC is today, I believe, the 11th most valuable company in the world. It's so easy. The flip side of the coin of there's always another generation, there's always another wave.
+
+Ben: We should say that it maybe the thing keeping geopolitical tensions at rest. It may be the force that nobody wants to destabilize, and therefore, we have peace. It's not just a company.
+
+David: But it's easy to think, if you listen to Marc or that there's always another wave, that's for young people. Like it's Steve Jobs, it's Mark Zuckerberg, it's Vitalik Buterin. It's these young kids who get these new waves of technology. The reality is that's just not true. It's just a mindset. You have to be willing to dive in and do it. You can do it at 56 years old and still build the 11th most valuable company in the world.
+
+Ben: When we were putting this together, I was arguing with David that this isn't novel. This is only novel recently. If you think back to what venture capital was in the 60s and 70s, it was funding veterans of the Ciscos and the Fairchilds of the world who had designed five chips before to go start a new company and build the sixth chip of their life in their 50s.
+
+It's only the advent of the Internet with cloud computing, with super low cost to start a company, that there has been this wave of very young founders creating these consumer internet companies. That's actually a blip in history. It's funny that now the pendulum has swung so far to the lore being, oh, these young hotshot founders that we have to even make this crazy point of, wow, a 56-year-old can start an important world-changing company.
+
+David: Yeah, the traders say we’re not in their 20s.
+
+Ben: Yes. All right. This is a familiar face that many of you will recognize. Point number seven is don't mistake options for cash flow. This is from our episode with Michael Mauboussin, who we mentioned we met here last year at Camp.
+
+What do we mean by don't mistake buying options for investing in cash flow? There's this word—investing—come up a lot this week. It is used for multiple purposes. This is sort of an overloaded word.
+
+Classically defined, investing, in the Ben Graham sense, is that you are looking at a series of cash flows that a business generates from today into the future. You apply some discount rate, you value those cash flows at what they're worth in this present day.
+
+You look at things like characteristics of the business, like potential margin expansion or their growth rate. You make all sorts of assumptions based on, again, the cash flows that you know to exist today. You try and come up with some price that that business is worth, and you try and put some money, and then invest at that price.
+
+David: But Ben, that doesn't sound at all like what we do.
+
+Ben: No. David and I are professional seed stage venture capitalists. People call what I do investing. But while it's the same word, it doesn't involve literally any of the things that I just mentioned in that previous comment. It is funny to me that it is called investing. It's typically just a founder and an idea on a napkin. How can you make any assumptions about the cash flows?
+
+David: And then we're like, well, that founder and that idea is worth $20 million.
+
+Ben: It's so funny to me. People think it's complete voodoo math how venture capitalists come up with with valuations. This is where I think that Michael's comment and his thoughts on this make a lot of sense, because once you admit that there is no DCF and you stop trying to say, in what world is that worth $20 million, or $10 million, or $70 million at an idea stage, which we've seen recently?
+
+If you're willing to let that go, meditate, take your deep breath and say, okay, well, how do we price this thing then if it's not based on classic investing DCFs? Really, venture capital in the early stage is not at all cash flow–based investing. It's actually options investing. As you sort of think about it that way, the world starts to make more sense, because how do you value an option?
+
+When you look at the range of potential outcomes, the probabilistic likelihood of that option and the entire range of outcomes, which is actually what venture capitalists are doing, whether they're cognitively thinking about it that way or not, you're basically saying, what's the chance that this is a billion dollar company, or $100 billion company, or a zero?
+
+Of course, this leads to the idea that you need diverse portfolios rather than just investing in single large companies, because this range of potential outcomes is so wide that you need to find ways to sort of smooth that risk while still benefiting from the potential of an asymmetric return.
+
+David: It also completely explains why venture capitalists are so obsessed with TAM. It was one of the things when I first got into the industry. I was like, why is everybody care so much about the TAM? Aren't there other aspects that you should care about? What's most sensitive to the valuation of the option is the magnitude of the outcomes that are possible. You can then debate the probable weighting of it. But the higher the magnitude of the outcomes, the more valuable the option is going to be.
+
+Ben: Right. If I think there's some X percent chance that this thing becomes the next Apple, what should I pay for it now? That is actually the question you are asking, rather than DCF-ing your way to something there. Of course, it's it's sterile and kind of terrible to talk about people's life's work as buying an option, so there's an important corollary to this.
+
+David: Yes. This is from our friends over at Altos Ventures, and in particular, Ho Nam. He makes this great point. He actually just remade it on Twitter the other day, which is, yeah, okay, you probably should think about valuations and venture capital investing more like options than you do thinking about investing in public companies on a cash flow basis.
+
+But don't mistake startups for lottery tickets. These may be options to you from an investing standpoint, but these founders are real people with families, lives, bank accounts, and employees.
+
+The other thing that is fundamentally different about venture capital investing versus public market investing, is it's a multi-turn game, not a single turn game. How you behave and how you treat these founders, even if it's clear that your option is going to expire worthless, you don't know what those founders are going to go do next.
+
+You don't know who their friends are, you don't know who they're going to talk to, you don't know what the other investors around the table might think about the way you behaved or didn't behave during that period of time.
+
+I think these two dynamics really explain the culture in Silicon Valley a lot, which is you're doing options-based investing, but it's a multi-turn game.
+
+Ben: Yeah, and in practice, nobody's actually just doing one or the other. Everyone's style of investing is somewhere on the spectrum here, because other than the pure play value investors who are looking at the book value of a company, or the seed stage investors, or the preseed like me, who are looking at a napkin sketch and a founder with an idea, or sometimes even no idea, most people are actually in the middle.
+
+Most people have to blend some notion of what are the chances this could be big, and how big with the idea that, hey, they're actually generating revenue and sometimes even cash flow as a startup, and I actually can apply some multiple to that. Obviously, the multiple can change rapidly on you, and then you have to adapt. But everybody's doing a little bit of one and a little bit of the other.
+
+David: All right. For our next lesson, focus on what makes your beer taste better. We brought up this little vignette on a whole bunch of episodes on Acquired. This is an image of Jeff Bezos at the 2008 Y Combinator Startup School, which was a very important moment in history. At least it used to. I don't know if they still do, it's probably virtual now. We put on these physical events in Silicon Valley.
+
+Ben: I went to one in the Bill Graham Civic Auditorium.
+
+David: That's right, I went to one too. They would bring founders and luminaries to come and talk and inspire the next generation of founders, and basically, to inspire applications to YC. In 2008, Bezos came. This was right after AWS had launched. He used it as a marketing opportunity to market to all of the startups and future startups about why they should build on AWS instead of rolling their own infrastructure.
+
+Ben: We shouldn't say this strategy worked ludicrously well. AWS got probably a five-year lead on cloud by piling people on the plane from Seattle going down to the Bay Area, evangelizing like crazy to all these startups.
+
+David: To all these tiny startups who are in that very room at the 2008 YC Startup school, a startup that had not even been built yet, was Airbnb. The three Airbnb founders were at that YC Startup School. That's why they decided to apply to YC that year, and the rest is history.
+
+Ben: It worked for Bezos, and it worked for YC, too.
+
+David: Indeed. But if you go watch the talk—which I highly recommend; it's really great—Jeff uses this sort of odd analogy for AWS, where he talks about European beer breweries around the turn of the 20th century. You're like, all right, Jeff, where are you going with this?
+
+The point of the analogy he makes is electricity had just been invented. This was this massive boon, enabling technology for consumer products, CPG, like beer. They could now brew vastly more quantities of beer than you could before using electricity. But the first breweries to adopt it, they built their own power generators. They made their own power.
+
+That worked fine for a few years, but it was super capital-intensive, required all this operational labor to run the power generators. Then the utility companies came along, and the next generation of breweries, they didn't make their own power. They just rented it from the utility companies, and they ran roughshod over the first generation of breweries to use power, because guess what, whoever makes your electricity has no impact on how your beer tastes. Literally, making it yourself does not make your beer taste better.
+
+Ben: But it does raise your cost structure.
+
+David: It does raise your cost structure. Jeff's argument to all of these startups was, focus on what makes your beer taste better. There are two lessons here. One is what he's arguing that as a startup, you should focus solely—not just a startup, any company—on the attributes of your product that your customers are going to care about. Everything else, your infrastructure doesn't matter.
+
+The second and perhaps more important takeaway from this, if you look at what Bezos did, not what he said, is that being a utility company is an exceedingly great business, and particularly being an unregulated utility company.
+
+Ben: Yes. That's the reason that Amazon became a profitable business.
+
+David: It absolutely is. Not just Amazon. If you think about Square...
+
+Ben: I should say a profitable company, where they piled up too much cash to reinvest all their cash flows.
+
+David: But if you think about this model of what is an unregulated utility company and technology, it can be so defensible and powerful. That's what Square is. That's what Shopify is. I think two thirds of our sponsors on Acquired already know that's what Vanta is, Modern Treasury, Vouch, even Mystery. If you can provide a mission critical piece of infrastructure that other companies can use, that they need but doesn't make their actual beer taste better, it's a great place to be.
+
+Ben: I was thinking about this. Just to go off script again because it's fun up here. I think this is actually the same thing as the economic theory of specialization of labor, but applied to businesses, where it's basically well-understood at this point that GDP tends to go up when people get really good at a thing, focus their time on doing that thing, and then turn to their neighbor who's good at a different thing to provide that service back to them, rather than everybody doing everything for themselves and their lives. This is just that on a business scale.
+
+David: Totally.
+
+Ben: All right. The next one is one that is near and dear to my heart. I had a lot of fun illustrating this, so bear with me on some of these visuals. This one is scale up or niche down. I want to start first by talking about niching down.
+
+This photo is ripped with love from Brooks Running's website. It's a great Berkshire company. We had Jim Weber, the CEO onstage with us for our Arena Show a couple of weeks back in Seattle. For folks who don't know, Brooks is a pretty special company. Back in 2002, when Jim came in, they weren't, frankly.
+
+They were everything to everyone. They didn't just make running shoes, they made everything shoes, including $20 shoes that you would wear in a family barbecue. They made all sorts of apparel for all sorts of sports. The company is losing money, I think $5 million a year in the red. They were doing about $60 million in revenue, but obviously not able to capture a lot of value out of that.
+
+When Jim came in to turn the company around, the first thing he did was decide, we are going to be a running company. We are going to be a running company for performance runners, for people who care about their running. Immediately, he went to a bunch of their distributors, big box stores, slashed entire product lines. They went from $60 million in revenue down to $30 million or something like that.
+
+They got rid of all their unprofitable product lines. They got rid of anything that wasn't performance running. They blew up their whole distribution channel. They started caring only about these performance running shoes, focusing on R&D, and really investing in building brand with runners.
+
+I'll save you the whole story and just flash forward 20 years. It worked. They grew slowly at first, but then over time, it really started to pay off. They really started to be known as one of the best running shoe companies in the world. In fact, they're one of the top couple at any big marathon that you'll see when they take the high speed cameras, Brooks, Brooks, Brooks, Brooks, of course, some ASICs, some newer brands too, and of course, the new crazy Nike shoes.
+
+They just realize, we are not going to beat Nike. We are not going to beat Nike at the everything game. We have to niche down and play a different game. I mentioned that $60 million to $30-ish million in revenue. Last year, they did close to $1.2 billion, and had a great year last year through the pandemic, and are continuing to ride this wave of running becoming one of the largest and fastest growing athletic apparel opportunities in the world.
+
+David: It's such an amazing compounding story and Berkshire story. They've been growing at 30%–40% a year for the last 20 years. It's amazing.
+
+Ben: Duration.
+
+David: Duration.
+
+Ben: It also works to scale up. A quick case study, we did an episode on the New York Times a couple of years ago. While every mid-sized newspaper in the US was going bankrupt, thanks to disruption brought by the Internet, the New York Times became gigantic and a healthier business than ever.
+
+The Times saw the idea to be sort of the one national brand and one of the few trusted global brands in the space. The Internet, as we know, can be brutal to people caught in the middle, because it enabled everyone in the world to access any reporting, basically for free pretty easily. Whoever has the best reporting in the world on global or national stories, of course, sort of gets all of the traffic, and everyone in the middle is stuck.
+
+This obviously has an enormous cost associated with it. You need to basically hire all the best reporters, you need to have the most reporters, you need to build out massive technology investments. The New York Times is truly a technology company at this point. Super high fixed costs. You got to believe that you're actually going to be able to operate at that global scale to justify all of these fixed costs.The point here is, sure you can niche down, sure you can scale up, but you really don't want to get caught in the middle.
+
+Now on the media side, it's kind of funny. You've got these tiny little businesses like Acquired, Stratechery, our good friends at Colossus. The internet, while being extremely punishing to the middle, also enables these deep niches to form and sort of this interesting barbell effect, where if you keep your cost structure low and you're super, super focused on a niche, you can aggregate all the people who are weird on the Internet about your niche in the entire world and basically aggregate them together and create community of people who like three-hour business technology podcasts.
+
+I think it's important to realize that this may not happen overnight. For Acquired, it's taken seven years for us to get to a quarter of a million subscribers. But if you're just repeatedly loud and specific about the value proposition that you can bring to people by following your media publication, people find their way. Time and enough distribution and enough content kind of does its thing.
+
+I'm glad that we didn't decide to be a midscale media company. It's really like, all right, it's you and I and some microphones, and the New York Times can have that market.
+
+A couple other points here, I don't think this is unique to media. I think media was the first to experience this sort of squishing in the middle, but it's going to happen to everything.
+
+The Internet is still rippling out in all of its effects. You can see it in venture capital, for sure. You've got big funds like Sequoia and Andreessen that get massive. The niche funds, especially for the early stage, emerge. There are great opportunities for small funds who are very focused. Those caught in the middle are in a tough spot, and they're super undifferentiated.
+
+You can imagine this happening with universities. Harvard and Stanford brands are going to be just fine. Those will continue to probably grow in value as they're able to address more and more people using the Internet.
+
+Obviously, that happens slowly, because no one wants to devalue their brand. But as that becomes more and more widely accepted, I think those brands will just continue to get more powerful. You could imagine this happening in a bunch of other industries, too, besides just media, capital, education.
+
+As a final little illustration at this point, I just want to pull up a couple of market cap slides. In 1997, there were 3 companies in the top 10 in the world that were technology companies. Today, it's 8 of the top 10. What happened between then and now? The Internet penetrated the whole world.
+
+Obviously, the returns to scale got massively concentrated here, where you can see that the most valued companies in the world, not only are they technology internet companies, they're much more valuable than they were before. There's this sort of counterintuitive thing that the Internet was a decentralized network, it started as servers at universities, and then somehow it massively concentrated the returns to scale for the platforms that underlie everything that we do all day, every day.
+
+On the flip side, it also enabled the viability of the long tail. It's not that we have 30 mid sized retailers in the US anymore the way that we used to. Not at all. There's Amazon, and then there's, how many merchants are there on Shopify now? We've got something like 2 million Shopify merchants and over 30 million Amazon sellers. The platformification that the Internet sort of brought really enabled viability the long tail at the same time.
+
+David: All right, for our final sponsor of the episode, we have, as always, our good friends over at Modern Treasury. Modern Treasury is by far the best way to manage your company's payment operations. Their platform allows you to move money within your product using code and not manual finance operations.
+
+This is huge. With their APIs, you can move money within your product, which is pretty important for just about anything you would want to do these days. Having worked with so many companies, so many marketplaces, especially over the years, this was a nightmare on the back-end for marketplace teams of having to manage ledgers, bank accounts, moving money, keeping custody. It was very, very, very difficult.
+
+Modern Treasury abstracts all of that away. It enables you just by integrating their API and managing everything through their best in class web apps. You can take all of that complexity of banking rails off of your team's hands and let them do it probably far better than you ever could, honestly. It's just an incredible company. It's so cool. They're such a part of the Acquired community.
+
+We did our reverse interview LP show with them a few years ago, back when they were a tiny, tiny little company doing $10 million per month in money that they were moving on the platform. Fast forward to last fall when we first started talking about working with them as a sponsor, they were moving $100 million a month on the platform. Now they are moving billions of dollars every month on the platform.
+
+Ben: It is one of these maturity of the Internet things, where first you can move bits, then you can move text, then you can move images and you can move videos, then you could programmatically do things like place calls with people like Twilio using APIs. Now you can use Modern Treasury's APIs and user interfaces (for non-technical folks) to literally move money around. They're so deeply integrated with all these banks that it just works. It's pretty cool.
+
+David: It's super cool. Customers like Gusto, Marqeta, Revolut, Pipe, TripActions, ClassPass, BlockFi, LedgerX, Gusto, all the way through to Web3 companies in crypto, all use Modern Treasury and their banking rails to move money around within the apps. If you're building a fintech app, we used to say, you definitely need Modern Treasury.
+
+The odds are, it's impossible that you don't already know about Modern Treasury if you're building a fintech app. But even if you're not building a fintech app, the ability to integrate money and money movement into pretty much anything these days is mission critical. Go check them out. You can learn more at moderntreasury.com/acquired. When you get in touch, just tell them that Ben and David sent you.
+
+Ben: Thanks, Modern Treasury.
+
+David: All right, coming down the home stretch and staying on the media theme. We did this episode on Oprah two years ago now in Harpo Studios. It was so great. Our big takeaway from that was a line that was said to Oprah right as she was starting her own show and made a momentous business decision, which was, don't be talent, own the business.
+
+The way that I like to think about this is if you want to be a millionaire in the media business, you should work really, really hard. You should own your craft. You should become must-see content, totally unique, the opposite of a commodity. You should be Steph Curry, Leonardo DiCaprio, what have you. If you want to be a billionaire in the media business, you should do all of those things, and you should never, ever give away the rights to your content or sell the rights to your content. That's what Oprah did.
+
+We also told the Taylor Swift story earlier this year. Taylor started as just another country music artist, and then just another pop artist. Then in the past few years, she's completely changed the whole structure of the industry by figuring out ways to get back the rights to her original music, which is an incredible story.
+
+Ben: This is fairly unique for media. For content, this is easier to do than if you were a basketball player.
+
+David: Yes, it's hard for athletes to do this, at least in their sports.
+
+Ben: Athletes can own their personal brand, and they can leverage that into building something on the side. But the thing that they do, they're playing within someone else's game. The interesting thing about content is you can always just make it your own game, because the internet enables this distribution.
+
+David: That's the last cool thing about this, which is that thanks to Substack, podcasting, YouTube, TikTok, Instagram, it's never been easier. You don't need NBC. You don't need Universal Music Group. In fact, they might hold you back. Anybody can publish anything on the Internet.
+
+Ben: All right, this one is reasonably self-explanatory, but it's another Bezosism. In the very first shareholder letter in 1997, he wrote, “Because of our emphasis on the long term,” and people probably might know how to recite this by heart at this point, “we may make decisions and weigh trade-offs differently than some companies. We will focus on growth with an emphasis on long-term profitability and capital management. At this stage, we choose to prioritize growth, because we believe that scale is central to achieving the potential of our business model.”
+
+This is absolutely Bezos' way of basically saying, if you're not on my bus, get off, because this is what we're doing. They stayed true to their word for 20 years without turning a profit. As we talked about earlier, you could argue they still wouldn't be profitable today if it weren't for AWS. They've reinvested every dollar of the retail business for two decades. There is zero chance that they would have been able to execute the strategy that they did if it weren't for their ability to be loud and proud about their intentions.
+
+As we sort of drift toward the close here, I'll be a little bit less bashful about Acquired's specific examples. I've wanted to highlight other businesses, but this one is sort of too close to home. We're obsessed with this idea of treating our audience like they're smart. This wasn't the fastest path to growth, because I think we could have listened to what everyone told us.
+
+Podcast episodes need to be a half hour. Podcast episodes need to drop every single week, so you keep this content cadence. But we wanted to be weird on the Internet about something, and we wanted to basically be unabashed about it.
+
+I'd say that the people that we get to interact with now in the community and all the folks that we met here who mentioned, oh, I've listened to the show, we ended up with exactly the listeners that we wanted and the people that we want to spend time with, because there is a long game to play. If you're saying, if you don't want to be on the bus with us, that is fine. Please get off as soon as possible.
+
+David: Indeed, which is the perfect lead-in to our final lesson from seven years of Acquired. Speaking of getting on the bus, we all need to do that to go to the party. What are we going to do at the party? We're going to have fun. That is what this is all about.
+
+If you can find something that you can do with your business, with your life, where you have genuinely have fun doing it, and for other people who do the same thing, it's work, you are going to run farther, longer, faster, and better than everybody else.
+
+There's actually another takeaway to this. We put an image of us and our friends, Packy McCormick and Mario Gabriele at our Arena Show the other week up here. It was just such a blast. This whole thing, this whole journey has been so fun. But one, you're going to work harder than people for whom this is work. Bill Gurley makes this great point in his Runnin' Down a Dream talk, which we've talked about on Acquired. Everybody should go watch that on YouTube.
+
+The other point is that it's so much easier to evangelize, grow, market and have people attracted to whatever it is you're doing if you genuinely have joy in doing it. Joy is not something you can really fake. That's our biggest lesson. We have had such a blast during these past seven years. We've gotten to meet amazing folks like Patrick and Brent, the whole Capital Camp team. We're just so thankful.
+
+Ben: All right, listeners, hope you enjoyed our talk from Capital Camp. Please let us know your feedback, acquired.fm/slack. We'd love to hang out with you in there. Here are some of your favorite themes from all the playbooks over 200-ish episodes. I actually didn't count exactly, but it's a lot.
+
+David: I didn't either. I think it's well over 200 when you include all the LP episodes.
+
+Ben: Yeah, it's 250 with those.
+
+David: Wow.
+
+Ben: We definitely skipped a lot. I had 18 and David may be trimmed down to 12, so I'm curious if some of the ones that we didn't talk about are the ones that you want to bring up.
+
+David: I originally wanted 10. Ben fought too hard that I gave him two extras.
+
+Ben: Yes. Thank you so much for being with us this season and on these special episodes. It's been an awesome six months. We're super pumped for the next six months. We have some great stuff planned. With that, our thank you to the Solana Foundation, to Mystery, and to Modern Treasury. We'll see you next time.
+
+David: We'll see you next time.

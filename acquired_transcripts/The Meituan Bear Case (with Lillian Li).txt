@@ -1,0 +1,443 @@
+Ben: Hello Acquired LPs and welcome to another episode of the Limited Partner program. We are here today with Lillian Li, an excellent commentator/commenter—I'm not sure what the right word is—columnist and thinker on all things China Tech who has influenced my research as we've done several different China episodes. We were catching up with her after our Meituan episode and realized, boy, is there more to talk about here. I’m super excited to have Lillian on with us. David, who is Lillian, and what are we doing here today? 
+
+David: Lillian is the author of the awesome Chinese Characteristics newsletter, and is one of my favorite substacks that I subscribe to. Everybody should go check it out and subscribe to it as well, it truly is awesome. Lillian, like so many of our friends, you’ve been doing this for what, six months total? It is shocking to me the learning curve that you have come up with and so many other great folks out there like Mario and [...]. It took us years to be doing anything worthwhile. You rock, either that or we’re slow.
+
+Lillian: Thank you so much. I still just tell other people when I meet them that I write an internet newsletter and it confuses everyone. But definitely do not have to deal with the label of how should I present myself as a commentator, an analyst, or a recovering VC.
+
+David: When we were catching up earlier, you said in Chinese, there are different terms for influencers. You don't have to use the god-awful term influencer. There's a respectable title. 
+
+Lillian: Oh yeah, for sure. If I can make a plug for that, there are at least three different words for it. You can start off with the very respectable word of zì méitǐ, which means self-media, which is typically what I just referred to myself. I run a media organization that is composed of myself, people totally get that. 
+
+The second word, if you want to be a bit more classy, is you can call yourself a KOL which means key opinion leader. I do feel like a nice way of saying you're a thought leader, or at least you have a lot of fans without sounding too up yourself. The third one is Wanghong, which means you're very hot on the internet, which is the closest to one will be influencers. 
+
+They also have different vibes. Zì méitǐ, self-media’s, much more agnostic with respect to different platforms. If you're Wanghong, that definitely means that you’re more visual. And a KOL means you’re definitely an import person on a specific platform, most probably writing. There are nuances and shades over the crater terminology that I think should be really adapted. As we were talking about, it's kind of awkward to be like, hey, I'm a creator. And people are like, what does a creator actually mean exactly? 
+
+David: What does that mean? 
+
+Ben: Lillian, before we dive in here. Catch us up a little bit on your background. You mentioned recovering VC, you've got this wonderful British accent, but I believe we're talking to you from China. Give us the whirlwind story here. 
+
+Lillian: Yeah, let me give you my pitch. I was born in China, and I moved with my family to the UK when I was eight. Have sort of been there for the past few decades, apart from a few stints where I made it out to Boston to get snowed on and made it back to China for a gap year. My background was relatively stereotypical in some sense as I started off as a management consultant. 
+
+For the last five-year-plus, has been working as a VC across Europe. First with Salesforce Ventures and most recently with Eight Roads Ventures covering series A to growth-stage investment. Typically focused on SaaS but also a relative generalist because as you guys probably know, Europe is still a smaller market than the US. Sometimes you can’t be that choosy with what you want to specialize in.
+
+David: Changing fast though the UiPath drop.
+
+Lillian: It's true. The general [...] for Europe is this up and coming—and I do believe that. You definitely see a lot of very interesting—you have Adi, you have UiPath, you have Algolia that's probably going to come up as well at some point in the future. Very interesting startups are coming, more focused on the B2B side. Did that for five years plus. 
+
+I guess 2020 is the best and worst year to make major life decisions, which is what I did. I decided, after many years of reading about Chinese tech, visiting China, and still not really understanding what is happening, but feeling like it's very exciting. If possible, I should be part of it. I bit the bullet and moved back last year. Landed here in August. Very much started writing the newsletter when I was in my quarantine of two weeks in a hotel—partly out of boredom. 
+
+David: That’s so great.
+
+Lillian: Maybe similar to everyone who's doing a newsletter, and hopefully I'm not sliding off Mario or [...] here, but I feel like no one starts writing a newsletter and being like, oh yeah, this will be the way I claim fame and fortune.
+
+David: Totally. [...] wanted to start a lake in-person real-estate social club in New York. That was the original, it was not a boring club. The idea was it was going to be a club with space, and then the pandemic hit and he’s like, well, better take this online. I think Mario had always planned to be a writer, but he wanted to be a novelist.
+
+Lillian: Exactly, yeah. Mario, especially his literary flourishes. He's great. We’ve collaborated with him on an Am-piece way back. You can tell there is this aspiring great novel inside of Mario that's going to come out some point. None of us would have been like, yeah, I'm going to write a weekly newsletter and that is how I crack this. 
+
+Definitely not me because I guess when I landed, I was like, okay, I have almost no followers on Twitter, I'm sitting in a hotel room, I'm basically going to amuse myself—write about something I don't really know about but I think I should get better, on aka this "Chinese Gen Z YouTube platform" in heavy quotation marks because obviously, this is not quite that good, Bilibili. Which I think you guys should also do an episode on one of these days, by the way. It’s completely fascinating too.
+
+Wrote the piece and then it sort of slowly got traction. I didn't really pay too much attention to what is essentially like a passion project. But in the last six months, as we've seen with a whole host of things, there’s a lot more interest about Chinese tech. I've been relatively fortunate to essentially have ended up in the right place at the right time and write about it. Taking this back to what we're talking about with Meituan, it’s been a really interesting time because I’ve very much been on the ground since the entire community group buying phenomenon has really taken off here. You can just feel it in the air. 
+
+Every other news article, I think for the period of September all the way to November, was really about community group buying, these WeChat groups with heavy discounts, and was it a good thing or a bad thing? It is quite interesting, the perspective I bring, which is I still think of myself as a very wide-eyed [...] in many sense because while I know tech, I don't have this deep understanding of Chinese tech that you really require after living here for many, many years, and being in the ecosystem. 
+
+I think what I do have is that from the Western tech perspective. I'm able to say, hey, let me take all these frameworks and understanding I know about Western tech and try to apply that to Chinese tech, see the limitations of that, and then take the other side and say, why is this? Why do they have super apps? That seems confusing. What is it about this particular set that has its own internal logic in this context? Then try to I think be a bridge essentially between the two tech cultures because I do think there are increasingly parallel in many respects, and not so much as I think the narrative has been like, one is super ahead and one is super behind in everything. I think it’s just a reconfiguration of perhaps different basic starting points.
+
+Ben: Before we get here into Meituan specifically, I do want to sort of bring up a conversation that we had had in our catch-up call, which was, okay, China has super apps, the US and the whole Western world does not. This manifests in every way, but one of the ways is user interface. 
+
+In the West, you would never dream of seeing an app that has every icon under the sun jammed in there. It has to be, do one thing, do it well, keep it clean. It's just completely the opposite. I'm curious, your perspective as someone that for the last year and at various other times in your life has actually used apps in China and designed for the Chinese population, and obviously you’ve used a ton of Western apps. I don't know whether to ask this question of, why are Chinese app UI’s crazy? Which is my very ethnocentric view. Or why has the US failed to bring robust functionality across a whole bunch of different services into its apps? 
+
+Lillian: I've thought a lot about these questions because I think this is almost like a question that smacks you in the face as soon as you get into the two ecosystems. I think there's a lot of different factors going on. Taking a step back, when we think about what the China tech ecosystem has really taken off in the last maybe 10 years. I think it's really taken off when mobile hit. 
+
+People talk about China being mobile native, but the mobile native bit has to really emphasize the lack of existing players pre-mobile. Everything started off in the mobile, which meant it was a crazy greenfield when you started. When you start with a greenfield and you don't have to spend too much time really thinking about your particular niche, I think that sets a different way of thinking about the product. 
+
+I think then that filters on to this idea, which I have consistently observed because I think Western products will typically think about themselves of what is our core utility? What is our core function? What is the attribute that we want users to associate ourselves with when we use it? Let's pick an example, I'm YouTube, I want to be the video platform that everyone goes to to watch something that's entertaining. I don't really want to deviate away from that. 
+
+But I think for Chinese apps, when they started, given the greenfield opportunity, given the fact that it's harder to get consistent traffic to their platforms—which we'll talk about perhaps later—or hear in terms of getting public and private traffic. Given the fact that it was always going to be harder for them to internationalize. That has [...] out in the fact that we don't really see any big international Chinese tech firm bar Tiktok/Douyin/ByteDance, which is the exception that proves the rule. 
+
+It meant that as they were growing, they realized, okay, we have all these greenfield opportunities, but they’re probably going to be limited in China. With mobile native first, we need to find ways to grow users and grow users in a cheap way. I think you essentially definitely see that with Meituan. They need to keep the CAC low especially when you're in a very competitive situation, again, a very distinctive attribute of the Chinese ecosystem as you were talking about at the height of Groupon was there were thousands of competitors. 
+
+Can you imagine acquiring users, when you have thousands of other competitors and trying to bid on specific ad words? That would be crazy. All of them have gotten into this mentality, for better or for worse, from their genesis of we need to acquire users and retain users cheaply. 
+
+Bring that back to the YouTube example. We have YouTube who thinks about themselves in terms of function, and they probably can because they don't have to have all of these other considerations. They can go international, they can go into other product families, they can get traffic cheaply. But for a player like Bilibili, they will have to consider our core mission and every single Chinese app’s core mission is to own the user, to make sure that you do not leave the platform because if you leave the platform, you probably forget about that platform.
+
+David: Right, you'll never come back.
+
+Lillian: Precisely. Their mission is just to anything you want. Do you want finance? Great, we will give you a loan to buy this. You want, take out, we will give you discounts on take-out. I’ll try to entertain you with many games. Anything that they can introduce, they will introduce to really lengthen the time you spent in apps and to reduce the CAC of acquiring new users just in case you churn. 
+
+Once the big players do it, you see this manifestation everywhere else because then it's almost just keeping up with the Joneses. If my competitors are doing this, then I have no choice but to do this as a preventative measure that my users will go with [...]. To your point, from the perspective of a user, it is very annoying when I'm asked to consider whether I want finance insurance products from my food delivery apps, from my payment apps—every single app I'm using for the 10th time that day. 
+
+Ben: To maybe paraphrase or parrot back to make sure I'm sort of hearing you right. It is if you think about the seven powers concept of scale economies, a lot of the US companies are judicious in taking advantage of the scale economies of, hey, I already have this user, can I sell them something else? Because it sort of has to fit within their mission and vision, and they have that luxury, because (a) there's not as much fierce competition, and (b) the path that most of these companies go is to address the global market. 
+
+Whereas the Chinese companies are saying, it's fierce crazy competition. There's going to be another billion-dollar company starting in my space in the next six months because that's how crazy fast the cycles are.
+
+David: You mean the next six days.
+
+Ben: Right. China is big enough that I'm going to punt on needing to ever internationalize and keep just this one function but do it for the global market, My own market is big enough that if I just sell everything to the group of people that I am selling one thing to, that can be huge enough. 
+
+Lillian: I think that's precisely it. You definitely see this sentiment where entrepreneurs are kind of like, I don't need to internationalize China, it’s such a huge market. Its population is four times the size of the US. Also, just to take a crazy thing, if you step back, if you put the population of the US, Europe, Australia, Latin America, that still would not be bigger than the population of China. It's crazy big.
+
+David: Wow. That's insane. Oh my gosh. Yeah, we definitely don't think about that every day. This is great for the main thing we wanted to cover with you today. The genesis of this episode was we did this Meituan episode. Ben and I were just in awe of this company, this product, and how its meteoric growth, everything you can do on the app. We were extremely bullish on the company. We were struggling to come up with bear cases. 
+
+We mentioned this idea a little bit though of like, hey, by the nature of what Meituan is, it needs to keep growing, it needs to keep adding new products, new verticals. We talked a little bit about community group buying as being sort of the next battlefront on this never-ending growth journey. But we didn't have a lot of context about what's going on and why that's a difficult fight right now for Meituan. Let's dive into that because you have a little bit of a different perspective on Meituan’s prospects right now. 
+
+Lillian: I still think Meituan is a fascinating and fantastic company, but I think my outlook on them is definitely less rosy than your outlook. 
+
+David: That could still be quite rosy. 
+
+Lillian: It would still be quite rosy. To set the context right of the few themes that you've already touched on in the Meituan episode, which I think are more attributes of the Chinese ecosystem is, firstly, it gets competitive very quickly and it gets very competitive, very quickly. You have a lot of players spring up. 
+
+Something else, which I think was mentioned was, the unpredictability of the environment and subject to very quick changes, be it in terms of the market but also from government regulations. I think those two have been consistent factors that we need to consider. What that has meant for community group buying for Meituan in 2020 is that firstly, it has definitely exploded. I think 2020 is the year when everyone was locked inside the house and decided that an online grocery is finally a viable option because there was no other choice. 
+
+David: We even did it here in San Francisco. We were never online grocery people and now we could never go back. 
+
+Lillian: Exactly. 
+
+David: I could only imagine what it's like there. 
+
+Lillian: The great accelerator of COVID has really made a lot of companies see that the adoption cycle is much faster than it used to be. What has happened with the internet giants, in general, is that as we're seeing, there's been a slight slowdown in growth (I would say) in the last three years. Because all the natural saturation green space that we talked about initially—the installation base of the mobile—has come to an end. You're seeing that across the board in terms of ecommerce, in terms of delivery, and in terms of offline services as well. 
+
+There is just general mass anxiety for folks, and every one of them is seeing community group buying as the new area of growth because community group buying is targeting a segment that they typically do not access, which is people living in "the lower-tier cities." Maybe this is just a tangential aside as saying, what are lower-tier cities and upper-tier cities? 
+
+China, as we talked about, is very big. How people classify China is between the mega metropolises, which are Beijing, Shanghai, Guangzhou, Shenzhen. Those are the four first-tier cities. Then you have a handful of second-tier cities that range in population around probably 10 million. 
+
+David: Just a cool 10 million
+
+Lillian: Exactly, just like 10 million. That's not even like a mega big city here. 
+
+David: It's just a New York. 
+
+Ben: Yeah, 2X the Seattle metro.
+
+Lillian: Exactly. It's just one of those. We got plenty of those lying around, it’s fine.
+
+Ben: What are some examples of tier 2 cities that any names people might recognize?
+
+Lillian: I think the impressive thing is would they recognize the name? Xi’an is a tier 2 city, Qingdao is a tier 2 city. [...] is a tier 2 city, but I really doubt most Western listeners would have heard of these names. Seemingly "under the radar" but very, very big. The general trait for tier 1 and tier 2 cities is that the inhabitants are affluent. These are probably on par with the inhabitants of London or New York, kind of very Metropolitan buying habits. That's typically where a lot of—if you think about Alibaba and Meituan have thrived because they're also catering to this need for convenience, tech-savvy crowd. 
+
+What you've also seen is none of them are really paying too much attention to "the lower-tier cities." The lower-tier cities here are the tier 3, tier 4, tier 5 cities but also townships that have much lower income-per-capita that don't have major industries. That probably accounts for 50% plus percent of the population in China still.
+
+David: It's not just that these places are less dense, it's also that the standard of living, the GDP is much lower.
+
+Lillian: Precisely. They also have very different buying habits. For these populations, because the income-per-capita is much lower, they are very price sensitive. Traditionally, they are much later tech adopters partly because the logistics filled up to those reasons are not as good and sophisticated. Therefore, the buying experience is not as frictionless and the range of produce that they would also have access to is also much less.
+
+Ben: As a quick way to tie it to previous companies that we've talked about, where does the clientele of each of these companies live in terms of tiered cities between JD, Alibaba, Pinduoduo, and Meituan?
+
+Lillian: Let's go for each of them. JD, very much tier 1 because JD's key differentiator is that they sell really good electronics, and high-end electronics are typically consumed by tier 1 Cities. They've also built very strong infrastructure networks. I would be able to get something from JD within two hours here in Shanghai, which is pretty crazy. 
+
+In terms of Alibaba, traditionally as well, very much tier 1, tier 2 cities. The stronghold is Millennial women from the age of 20–35 who typically buy a lot of makeup and apparel. The preferences are also relatively urban as well.
+
+For Pinduoduo, I think that is the only one so far that has risen as a result of lowered tiered city demand because again this focus on groceries, which is more of a key [...] good rather than a would like to have consumption good, as well as the lower price points that they offered. Even the way they have put together the app with the emphasis on social commerce actually mirrors the stronger social ties that you would typically see in the lower-tier cities wise, where it's much more common to go and visit your neighbors on a regular basis. Whereas in cities, it's pretty common that you probably wouldn't speak to your neighbors ever. 
+
+For Meituan, it has also been actually an interesting combination of both. Meituan started off in the lower-tier cities, but then very quickly moved up to the first-tier cities. As I say lower-tier maybe tier 3, kind of the view of the less glamorous spots, but definitely not going to tier 5, tier 4 cities. 
+
+Ben: Still millions of people.
+
+Lillian: Exactly. You have a town center, you have the existing infrastructure of good roads and such. 
+
+David: I'd read about it and I knew community group buying and groceries are a big battlefront in China, but I hadn't quite realized why until you were just saying, it sounds like it's because for the 50% of the population that's in (let's call it) tier 4 and below cities and townships. Groceries, they're buying so much more of that versus electronics or discretionary goods. It's the one good that you can actually access a huge portion of the population with, right?
+
+Lillian: Exactly, because as you said, David, it’s a service that is very high volume-based. It really encourages a sustained buying habit, and therefore allows these tech players to train the user to really think about them and access them on a regular basis. Then to work towards up-selling them and then owning the user through then offering them a whole host of additional services once they have that initial habit. That's why the community group buying scene is so crucial for a whole host of big consumer tech giants right now.
+
+Ben: Lillian, two follow-up questions, one, can you give us a quick definition of community group buying? Because I messed this up on the Meituan episode. I thought David was referring to Pinduoduo’s sort of social ecommerce model, and it's a completely different thing. Secondly, is the growth of the middle class in China over the last 15 years illustrative of what's going to happen next to the lower class or tier 4 and below cities in China over the next 15 years? Why are people so obsessed over it? 
+
+Lillian: Community group buying is decentralized Costco. That means a group of people come together and they buy something in bulk. Typically, the way that happens is that, say we’re in a village and someone says, I'm going to become a group buying leader—very, very informal. What they do is they create a WeChat group, they pull in a bunch of members—perhaps 50–100 members, and each day they will send out a bunch of deals to the WeChat group. Picking the best that's available from the collection of Meituan, DiDi, a few of the startups like Nice Tuans, these startup players as well. 
+
+David: They're pulling in from multiple platforms these WeChat groups. 
+
+Lillian: Exactly.
+
+David: Oh wow. 
+
+Lillian: Yes. The thing is then the people in the WeChat groups then decide what they want to buy. You only buy the thing once you reach a certain threshold. Say today, we have a particular sale for carrots on DiDi’s platform, we need at least 30 people to buy that. Once we reach that threshold, then as the group leader, I can then go on the platform—actually no. Everyone has made these subsequent orders, but the platform then aggregates it and then will send that order to me, usually the next day by 4:00 PM at a specified dropout point. I, as the group leader, will go to that dropout point, then unpack the bulk carrots into the subsequent 30 orders, and then either allow that for pickup from the local residents or hand-deliver it to them. 
+
+Ben: Wow, there's real labor involved. 
+
+Lillian: Yes, but I get a commission as part of that. Especially because when we think about these typical residents who are in tier 4, tier 5 their income is not very high, to begin with, so this is a very good side hustle for a lot of them. Some of them are stay-at-home mothers, others own actually a small shop like a convenience store that makes it easy drop off points anyway and will be a focal point for the community. It's a way for all of these folks to access additional revenue. 
+
+The business model is really interesting because you've essentially got rid of the CAC for acquiring users, and you got rid of part of the servicing from the tech platform side. Suddenly, the unit economics of delivering grocery makes way more sense because I don't have to really essentially deal with too much of these traditional factors that were making the whole operation of delivering groceries really—
+
+David: All the stuff that Instacart does here in the US or Good Eggs here in California, that's a lot of work and cost. Even if you're using the Instacart model and going to existing grocery stores, that's still $10, $15, $20 worth of labor per order. 
+
+Lillian: Precisely. That is typically how a community group buying works. Obviously, that's also evolved. I'm giving you a very simplistic 1.0 version. Some of them have standalone apps that you can order directly on the apps, so you can do that without a team leader. Some of them are moving more real-time infrastructure, so you can access that as well. It's definitely grown by leaps and bounds since six months ago when this first became a very big trend.
+
+The second question was whether the lower-tier city folks will also essentially go through consumption upgrading. I think that is the big batch that everyone is making. That is definitely supported by the overall government policies of trying to stimulate "what is going to be internal circulation" where goods are made in China and then bought by China. Essentially, that means they really want to encourage China to switch to a consumption-led economy. That also means more money is going into all parts of China including the lower-tier cities and hopefully make these lower-tier city residents much more wealthy than they are now. 
+
+You see a lot of noise in here, but I guess back to the topic of our show which is the Meituan bear case, that might not happen given that this requires essentially a giant ship to turn around. China has consistently grown as an export-led country and has made moves to be a conception-led country for the past few years, at least. It's a slow process. In the intermediate time, we are still betting on external demand to drive parts of the Chinese economy and also for people to really drastically change their consumption habits, which is sometimes asking a lot from a population that's never really engaged in this kind of consumption behavior before. 
+
+To your question, is this going to happen? I think lots of tech players and the government are hoping this would happen, but it's actually a big question mark whether this would actually happen. 
+
+Ben: It's interesting because you're right, both of those things are tightly coupled. The tech players or Meituan, for example, need it to happen because that's the only opportunity for their future growth. Maybe I'm wrong on that but I'll sort of throw out that, that is the sort of first and best way for them to grow. As you said, the government has a massive incentive to make that the case since they're trying to switch to a consumption-led economy. 
+
+Lillian: Yeah, precisely. I do think that is the case for Meituan and a lot of other players as well. I think that's also why you see DiDi who is the Uber of China. Why is that company getting into grocery buying? That’s a bit of a question until you realize that's where they must think the next frontier growth is going to come from because, by assumption, they've exhausted other frontiers of growth. 
+
+David: Especially in China, keeping the user within your ecosystem is so important. Then yeah, that starts to make a lot of sense why all of these disparate companies are battling it out for these users. It's about groceries right now, but it's not just about groceries. It's like, if they're going to be doing ride-sharing in the future, if they're not buying groceries on DiDi, then they're not going to be doing ride-sharing on DiDi.
+
+Lillian: Precisely, yes. Community group buying really is a battle for the future of Chinese consumers. That's why you see so many big players plowing so much capital and really stating this is their future. When you look at what Wang Xing is saying for Meituan’s future is like, yeah, we're going all-in on growth. We're going to plow more money into this, we're going to build our existing infrastructure. 
+
+It seems a bit strange until you think about for them, this is their CAC for the next maybe three or five years. And then without getting this, they're not going to have any additional customers to upsell future deliveries, future plane tickets, future hotels too. 
+
+Ben: Is Meituan well-positioned to win this war? How do you think that's going to go?
+
+Lillian: It's a good question. I think the current two favorite frontrunners are Pinduoduo and Meituan. I think each of them has a lot of strength. Definitely, by looking at the data and coverage of different cities, those two will do very well and Meituan definitely is coming out the head in a lot of regions. It’s hard to say, again, this is another piece I want to bring into the conversation, which is that the government actually isn't too fond of community group buying because they view this as another way in which tech is exerting its monopolistic influences and disrupting small offline holders who sell vegetables. 
+
+They made, firstly, clear moves to indicate that lack of support in December by saying, actually, we think technology funds should focus more on innovation and think more about creating the next generation of semiconductors and AI software rather than focus on taking bread and butter from grocery sellers. Then they followed up on that, and I'm being a bit imprecise by that. 
+
+I shouldn't talk about the Chinese government as if it was a monolith. I will say the state administration of market regulations, then earlier this year levied fines on five group community buying companies after two months of investigation because they feel that these platforms have been engaging in predatory pricing by pricing their produce below-market prices, as a way to induce customers to buy from them rather than existing offline shops around their vicinity. 
+
+David: Which is probably funny because all these tech companies, they're probably looking at each other cross-eyed like, well, why wouldn't you do that? That's what we do in every market we enter. 
+
+Lillian: Exactly.
+
+Ben: Is this a shift for the Chinese government? In markets past, it doesn't seem the government has stepped in to try and prevent tech companies from growing quickly and displacing the small entrepreneurs who were doing that in a less efficient way before. Are they earning from we didn't like the way it went before? What's your view on that? 
+
+Lillian: Typically, what we've seen is government regulators will let companies innovate, and then they will follow up swiftly with regulations if they feel this is going to have negative spillover effects for the overall economy. I think an example that might have not gotten too much coverage is the P2P lending trend in China that happened a few years back, which was then very quickly revealed to be a semi Ponzi scheme. Then the government came in very quickly and then basically outlawed that entire sector. 
+
+When they feel like this is not value accretive, or maybe perhaps the vulnerable parts of society, they do make relatively swift movements. I think especially to your point of, they've seen this subsidy war, then plowing of resources, and then the death of multiple competitors within consumer tech a few times before. I think not just the government but also the consumers and everyone is very worried about the playbook. They've seen what happened last time. 
+
+Meituan and DiDi did that for food delivery or taxi service. They know exactly how this goes. The playbook is you come into the existing market, to your point David, this is the playbook used—subsidize everything so it’s very cheap. People move on to your platform, the existing market dies, and the ones people on your platform then you can exert crazy influence over because they have no other options.
+
+David: I think on the Meituan episode, as we were telling the story of when the Meituan and Dianping merger happened, it was quite intensive. We're trying to convince [...] to sell for a pittance into the combined company. They're like, yeah, we're going to have a monopoly. It's going to be great, that's the plan.
+
+Lillian: Exactly. The regulators as well as the Chinese folks are like, actually, that's great for you, but that's not so great for us. Our delivery costs are getting pricier, our taxi costs are probably the same as they were before DiDi came along. Where are the consumer benefits? 
+
+Especially in this case, typically the argument is made that if you are selling fruits and vegetables, the profit of these fruits and vegetables sellers in most wet markets and just general stores around the country is that they typically tend to be older folks of lower social-economic background. These aren’t folks that—once they lose their livelihood—can easily go and retrain to be a data scientist. 
+
+I think there is also the aspect of this is actually a very potentially vulnerable part of society that doesn't have many sources of income available to them. If we were to really disrupt their livelihood, what are the knock-on effects that could bring? Agriculture is still a significant part of the Chinese economy. That is very much in the back of the regulator and the government's mind when they think about this is, how is this going systemically?
+
+David: This is super interesting because the narrative, at least for the last month or six weeks or so—at least what I see—the Western investor market who are interested in and/or invested in Chinese tech stocks, the narrative has been the CCP now doesn't like tech and is bringing stronger antitrust cases and regulation. Everybody should be worried, and they're coming for tech. 
+
+But as you're putting out, it's really much more nuanced than that. There's this battleground and the government is concerned about the implications of what's happening there. That's quite different from, she woke up one day and said…
+
+Lillian: Yeah, I completely agree. It's disheartening to see how simplistic the narratives around what's been happening have been. It gets very distilled down to a narrative of personality where I think in China, it’s always a narrative of systems and also the competing factions within that system. 
+
+I was just at a talk this weekend about the Holt Event Financials. Just looking at the data that was coming out, China in 2020, [...] IPO. Holt had released at least 15 different pieces of white paper legislation around the reformation of the financing segment. There's always a build-up to any big regulatory changes. We can definitely argue about what the tipping point is, and then definitely there has been a change in sentiment. But I think for so many of these things, the trend was already around, this is nothing surprising. 
+
+I think no one really on the ground here in China, they were like, okay, yeah. They’re putting a bit more oomph behind what they're saying this time, but this is not really surprising if you've been listening and chatting to everyone around. I think everyone, there’s this sense of feeling that the tech companies have really a lot of power and really a lot of monopolistic power that impacts people on a day-to-day basis. It is a much bigger conversation here. 
+
+Ben: Funny how that's aligning with a lot of the sentiment in the US in the same way that it's aligning in China around the same time. The ecosystems are so terribly, terribly different. Tencent to me is a completely different animal than any FANG company in the US. I mean, it's closest to Facebook, but it also is a pure-play investor in many ways who can put their hand on the scale, as David and I have said many times. 
+
+I’m curious, I know we're deviating a little bit away from Meituan a little bit, but maybe not because Meituan ultimately is part of a proxy battle for Tencent anyway. How do you think Tencent ends up fairing with this sort of new lens toward a skepticism for the tactics that made Tencent as successful as it's been to date? 
+
+Lillian: I have always classified the very big tech players firstly as institutions in themselves, but also kind of in a symbiotic dynamic with the government. I think for Tencent, they will (in my mind) come out with parts of their business clipped a bit more. There are already talks around Tencent Pay and whether that needs to be more closely financially regulated, similar to app financial on other groups offering. There's more discontent around the gaming practices. But ultimately, Tencent also serves certain purposes for the Chinese government, especially in the realm of censorship and perhaps propaganda. 
+
+Yes, I think the next phase of Tencent’s growth will be relatively more confined, but I think it's not going to be gutted anytime soon. I feel like maybe the upside for me has been tapered for Tencent knowing where the direction of travel is. Also, Tencent themselves—knowing that they're very smart folks—will also be much more cautious when they are making plans for the future to not come across as if they’re a monopoly throwing their weight around, even though they already are. 
+
+Ben: Again, very similar to the US seeing some of the FANG companies get less acquisitive, especially with big combinatorial type acquisitions than last year too.
+
+David: This may be wishful thinking on my part as just a Tencent shareholder. No doubt that is playing into my thinking by a season in some way. How you've described what the government's concerns are specifically about tech companies and what they want from tech companies, which is innovation. Obviously, Tencent doesn't make semiconductors. But it does seem to me like they're better positioned to pursue growth in those areas than say for instance Alibaba is. Alibaba is a logistics ecommerce player, whereas Tencent is a software maker. 
+
+Ben: That means you think that Tencent is better positioned to create the type of innovation that the government would find favorable?
+
+David: That's my hypothesis. 
+
+Lillian: This is where I got to [...] on Tencent because they haven't really come up with any revolutionary product anytime soon. I think as you’ve even said in your Acquired podcast, Tencent’s two comparative advantages, one is traffic, and the other one is money. They've just taken that approach to the max. 
+
+During COVID they have launched WeChat Work, but that actually is far behind the market share for DingTalk, which is the Alibaba equivalent. In terms of cloud, they don't have as much market share. They probably have a 10% market share relative to Ali Cloud, which is converging 40% market share of the Chinese market. 
+
+Yes, I would say, when you look at it, you can say, Tencent is a software market. For this next phase of growth, which China terms to be focused on—cloud computing, edge computing, industrial internet, semiconductors, agriculture, seed, a lot of these choke point technology as they talk about it. Tencent has only been a big player through investment purposes, but not directly. Whereas I actually think Alibaba has fared well in actually making them.
+
+Ben: Let's pop up a level here. You had a tweetstorm, and then obviously we've had a conversation where you pointed out a few ways in which the Meituan future was not as rosy as we had painted. We've talked about one here or two here. One of which is a community group buying being the next frontier, but it's a very competitive area for them where they have very legitimate competition in Pinduoduo, which is ironically also a Tencent-backed company and part of the Tencent sort of family of startups. 
+
+Then the second one here is that the government actually doesn't love tech owning and creating community group buying because it displaces these existing smaller merchants. What are some other reasons why we may have overstated the certainty of their rosy future? 
+
+Lillian: I think additional competition. Recently, Douyin—the Chinese Tiktok aka ByteDance—has started launching the new group by discount feature in their app. Initial space of location-based recommendation and discounting is also kind of getting disrupted from all the new up-and-coming players.
+
+Ben: Doesn’t that seem to compete more with Pinduoduo, or maybe I don't understand what the new ByteDance functionality is. 
+
+Lillian: Sorry. It literally shows up and be like, hey, do you want to go to this nearby restaurant? Here's a discount coupon. It's very much trying to replace Dianping. 
+
+David: While you're on Douyin, it shows up in your feed? Wow. 
+
+Lillian: Yes. 
+
+David: Could you imagine that happening on Tiktok in the US—maybe that's a bad example—on Instagram?
+
+Lillian: I think it's not too far away, to be honest because I think they've done a really good job of landing you with the advertisement, and then trying to upsell you on the commission. What happens is they wouldn't be too hand-fisted, maybe you start to see a video of someone being like, hey, don't you want to know the best hotpot place in Shanghai? And they are like, oh, yeah. I do want to know the best hotpot place in Shanghai. Then it would actually be a short video of someone showing you around the shops, then show you the dishes, and then at the end they’re like, hey, by the way, here’s a potential link to a coupon. 
+
+Also, if I'm scrolling through my location features, I can also see advertisements for these coupons as well. It's kind of a content-led mode that we're already seeing Dianping doing. When I open the Dianping home page, there’s actually a lot of videos and pictures rather than the typical UX of just lists of restaurants that Yelp typically does.
+
+They already know the future is f more visual. In some ways, Douyin is at the forefront of it. To answer the initial question, Meituan has made its positioning in the location-based restaurant space around convenience. Hey, you are in this area already and we are going to suggest good things around here that you can go try out and eat. 
+
+But for Douyin, they are pushing a new way to think about it as saying, hey, we're going to make you go to this specific restaurant because it's so hot. Actually, that's also taking a different path to get to the same goal. I think that could be quite relevant in this day and age. At least something I'm seeing in the Chinese consumers is that they actually do want to travel and go to a "Wanghong" kind of like hot on the internet places, take pictures, and share then say, hey, look at me. I'm so hip right now at these really cool places. 
+
+I think that could be, if not a legitimate challenge to Meituan, definitely something that they have to be on the lookout for because Douyin is such a massive influence on people's attention right now that is getting competitive of WeChat. 
+
+Ben: It's unbelievable the hours, and hours, and hours they can capture of your life. It's running the same playbook with scale economies of saying, look, we've already acquired this user, we know how to keep their captive attention, they're going to get hungry while they're flipping through Tiktok or Douyin. Let's be the person that gets to make some money off of figuring out where they go.
+
+Lillian: Precisely. I see that as a very interesting challenge. It’s very early days because they've just launched this feature. But Douyin and ByteDance are never ones to back down from a fight, they’re very aggressive. I think once they do see an interesting product-market fit, yeah, that could evolve very quickly very soon. I think that's one point.
+
+Ben: They'll continue to be capitalized incredibly well. ByteDance is the most valuable private company in the world. It's worth two Space X's, to put that in perspective. I think it will not be hard to imagine investors or the public markets continuing to pile in tens of billions of dollars into that company. If they've got their eyes on a capital-intensive fight, they’re a formidable competitor. 
+
+Lillian: Yeah, very, very much so. Also because they hadn't had any kind of big hits because ByteDance churns out a lot of different types of apps, they’re very desperate to show some really good numbers ahead of a potential IPO. Again, that also puts more pressure there. I think the other case, in terms of just a bare case for Meituan is right now, there has been a lot more discontent around the salaries and treatment of their delivery workers. 
+
+Again, that has been coming across in the Chinese media where there's been unpaid wages or people having to essentially break traffic laws because what happens when you are a delivery rider for these platforms is that you are allocated a certain time period to make the delivery, which the algorithm has calculated that you need to make this route within 30 minutes. If you don't do that, your pay is docked or you potentially lose the job after too many infringement.
+
+Everyone is very much pressured to basically go crazy to make these very unrealistic times often. You would see often, delivery drivers going up over single-direction roads for the other side. They'll be driving on pavements. This has become a big societal worry because they are under pressure to make that 20-minute delivery, which really should have been made for 30 minutes. But because the platforms want to delight their own customer, they're saying, okay, we're going to make this delivery in 20. They're forcing that down to the delivery folks. 
+
+These delivery folks are engaging in very semi-dangerous practices, sometimes getting into traffic accidents, to no one's surprise. That phenomenon has been happening. There's already been a wide outcry during 2020 about the treatment of the delivery drivers. A small loosening up you're seeing is now the delivery times for different meals to have gotten longer, something I would have waited 20 minutes, for now, is going to take 30 minutes. That's already a slight friction point for potential people thinking about getting to delivery.
+
+I think going on and thinking about the general environment in which we've been talking about antitrust, thinking about whether these tech platforms have too much power, about are they really adding value. There is a case that's not too unlikely where the government comes and says, actually, you really need to treat these workers much better than you are treating them before. 
+
+You need to pay them higher salaries, give them wider delivery times so they're not risking their lives to try to make these things work for you. That could significantly cut into the margin and usability of the food delivery platform for Meituan. I think that that is a very real possibility given how "bad" it has been in recent years.
+
+David: It's funny, we talked on the episode about how we didn't really know how gig labor worked in China, we assumed it was different. The echoes of Prop 22 here in California and the classification and treatment of delivery workers and rideshare drivers in the US sounds like the same version is happening in China, just in a Chinese way instead of a US way. 
+
+Lillian: So true, that's why I think it is a parallel world. You see this similar trend, similar things happening in both spaces at the same time. I think, again, that is much more something to do with the properties of the tech platforms themselves and the incentives they create rather than anything else. 
+
+Ben: There's one area outside of the bear case, I'm sure we'll keep coming back to other mentions of it here. You had brought up this idea of traffic takers versus traffic givers, especially in the concept of Tencent and Alibaba. Can you explain that concept a little bit?
+
+Lillian: This is kind of a general trend that runs through our entire conversation. Taking a step back and to layout what the West looks like in terms of general traffic acquisition is that if I’m a startup and I need to get traffic to my new D–C offering, I would go on Facebook, bid on their appropriate key on Instagram, and then I would go on Google and bid on the appropriate keywords. 
+
+In the end, it's a relatively straightforward process. I can be sure that if I give money to these two major platforms. If I'm very ambitious, I can go on maybe Amazon if I'm setting my stuff there. Maybe if I'm really ambitious, I'll go on Twitter and Snap, but those are kind of very secondary considerations. I think most advertisers can just do Google and Facebook and call it a day and do relatively well for a very long time. But that is not the case in China. In China, the advertising landscape is way more fragmented. 
+
+As you guys have mentioned, it seems like every single super-app these days has an ad slides revenue. I can buy advertising on WeChat, Alibaba, Pinduoduo, Meituan, Bilibili, Xiaohongshu, Kuaishou, Douyin, and none of them have actually a significant market share, which is very interesting. It's not like there are one or two kingmakers. That's partly because the place where you would really want to buy traffic aka WeChat, they don't actually have a lot of inventory because of a specific product decision made to not spam people with a lot of advertising. 
+
+Completely different from Facebook or Instagram where I'm sort of served an ad every 30 seconds if scrolling relatively fast. In WeChat, I don't see that in my friends' moments. I don't really get any advertising pop-ups in my chats. It's a very clean interface, but it also means that where people are spending most of their time, they’re not being served advertising. 
+
+There's actually a scarcity of inventory on what is theoretically the biggest traffic platform in China, which then means that every other player doesn't have a dominant position in traffic, and everyone is sort of being able to partake in advertising revenue if you're a tech player. But as a startup or just as a general merchant, I have to spend an enormous amount of resources on all of these platforms to acquire the same customer because I just don't know if I should be putting my money on Xiaohongshu, Kuaishou, Douyin, or Meituan just to get that one particular set of customers because they're not all congregated in one place. 
+
+Coming back to what we were talking about at the beginning about owning the user, all of these apps have done such a great job of owning their users that it is now incredibly fragmented across each app in some sense. Therefore, that's why I come back to this idea of, at the end of the day, because Tencent has created this artificial constraint on traffic, then they can (by default) position themselves as the traffic givers in terms of their comparative advantage. 
+
+They can say, hey, what we have is a vast private traffic network comprised of decentralized conversations across WeChat, and our comparative advantage is that we will allow you to post your links on our platform. 
+
+Ben: Where? In what context? 
+
+Lillian: I will allow you to post them in chat. For instance, I can't post links to Douyin in my WeChat. 
+
+David: This is actually what Ben and I were hand waving on the episode. We’re like, Tencent, in lightweight ways, puts their hand on the scale. This is the lightweight way.
+
+Lillian: Yes, exactly. 
+
+Ben: Lillian, if you and I are going back and forth on WeChat, if I want to send you a Douyin link, I can't? 
+
+Lillian: Initially, there were some periods when you can't even send the link, it would just be recorded as spam. I think right now it's also changing because of antitrust rules. You can probably send me a link to a video, but it's like really, really high friction. For a period of time, they would just block all links.
+
+Ben: It’s like the Instagram-Facebook thing?
+
+Lillian: Exactly. 
+
+David: The Instagram-Twitter thing?
+
+Lillian: Twitter thing. Yeah, exactly.
+
+David: Wow.
+
+Lillian: WeChat does that for basically any apps that Tencent doesn't have a financial stake in. 
+
+Ben: Okay. That’s how you think about them as a traffic giver then absent having the ad platform.
+
+Lillian: Precisely.
+
+David: The product decision on Tencent’s part to not have a robust advertising inventory in WeChat, was this sort of grander plan what was behind that in thinking, well, we invest our other business or maybe our main businesses as we invest in companies? This will give us more power there, or was it something else entirely?
+
+Lillian: As far as I know from history, it definitely started off from more product decisions to have a very pure product. Because back in the day like Allen Zhang who designed WeChat is very much seen as a product visionary. He wanted a very clean interface. He felt like anything that was too cluttered will be taking attention away from what the user was there to do. 
+
+They were also competing, at the time, against websites and interactive models that did have a lot of advertising. In the early stages, it was a very counter positioning move—as what you would probably say with the seven powers—to get people onto the platform. And also makes them feel safe that their data and everything else wasn't being sold because there's no advertising. 
+
+You don't have great insight into why they then decided to continuously keep it that way. I can speculate on the fact that they had so much traffic as a result, and they can then divert into useful sources, to gaming, and everything else. They realize that was the power, and to dilute it with additional advertising is to almost kill the goose with the golden eggs. 
+
+To finish off the traffic giver analogy of Tencent, then we'll have Alibaba with the flagship Taobao and Tmall offerings, which are very much marketplaces that are where you finish buying something. They are very much, to me, when we look at—I sort of call this concept of owning the Funnel. Any marketing student will be very familiar with this. You have the top of the funnel which is you create awareness, then you should go to the middle of the funnel where you are thinking about consideration, and then the bottom of the funnel is when you actually convert. You actually buy the thing that you're looking for. 
+
+Every kind of Chinese tech company has been thinking about building out the funnel, but they each start off from different places of comparative advantage. We've talked about Tencent as being at the top of the funnel. They have traffic, they give traffic, they can then push that down to other conversion platforms like Pinduoduo or Meituan. That makes that combination extremely powerful.
+
+Alibaba, as an existing conversion platform, what they're really looking for is more top-of-the-funnel traffic. When you look at that framework, that's also why their investments tend not to do too well, to put it lightly, because they have always been looking at strategic collaborations from, how can I get additional traffic to my Taobao platform, to my Tmall platform? They're not there to say, how can we make you more successful? 
+
+Unlike Tencent, who's very much like, okay, Pinduoduo, here you go, here's all this traffic. I'm going to drive to you. Now you have a bunch of users, now you can come up, and boom you have money. Alibaba's very much like, well, I'm going to invest in Ele.me. Ele.me hopefully will get me more traffic because people will be buying food off that. Ele.me, for me, is just lower CAC cost, hopefully, because people will get hungry, they'll want to get food, and they'll go maybe go to Ele.me. 
+
+They wouldn't think about potentially investing and making those platforms that they invested as successful as potentially Tencent is able to. That's what I talk about traffic takers versus traffic givers. 
+
+David: Amongst entrepreneurs in China, is there a preference for Tencent over Alibaba as your big strategic investor? ¢
+
+Lillian: I think it very much depends on the specific startup. I think the general word on the street is kind of very much with Tencent. I mean, at the end of the day, they're both very formidable. I feel like it would be very silly for any entrepreneur to turn their nose up at Alibaba because at least there’s the carrot and there's a stick. You might not think the carrot that Alibaba is offering is too great, but they have a very big stick. 
+
+David: It's not like if you can't get investment from Tencent and you’re like, well, I could go to this Alibaba guy, but you'll still take their money if you have the option. 
+
+Lillian: Exactly, you might think. 
+
+Ben: I've heard Tencent is kind of sharky or it may be in American parlance, not as founder-friendly as Alibaba is. Do you know if that plays into it all where people perceive Tencent to be a sort of dangerous friend or foe to be in bed with?
+
+Lillian: It's a good question because I think Tencent, because of the focus on investment, would be very happy to invest in 10 companies in the exact same space just to make sure they don't lose out on the one company that takes off. Then maybe post-investment, they’ll also be happy to do things like, hey, why don't you guys merge and create a monopoly? I don't know whether that's what you want, but that would be really great for us. 
+
+They've done that already as we’ve seen in the case of Meituan. In the process of doing that with Huya and DouYu, which are the Twitch equivalent of China, so two live-streaming platforms that they both have significant positions. They're trying to essentially get merged. 
+
+I think that is the worry for many founders is like, okay, you're going to invest in me, but what do I actually mean to you? You’re just going to go invest in 10 other platforms tomorrow. Whereas I think Alibaba is "a bit more faithful." They’ll invest in you, you'll probably be the only bet they make in that, and they'll try to be more helpful.
+
+But I've also had other stories. People quite like the hands-off approach for Tencent. They typically get a check from them and don't really need to hear anything from Tencent if they don't need it. Where Alibaba has maybe more of a cohesive structure and would want to work and have a close relationship with the investing companies. It varies by segment and by founders.
+
+David: It's like the 1990s Sequoia versus Kleiner in the valley. Kleiner has [...] approach. Sequoia was like, you do your own things.
+
+Ben: Lillian, this is actually a really good segue. The last question that I had for you as it pertains to our Meituan episode, I was befuddled to see that the Alibaba-backed Meituan and the Tencent backed-Dianping, that when those two merged, Tencent was the one who owned a large part of the combined company, and Alibaba got off the table altogether and then went and invests in Ele.me. 
+
+I'm scratching my head at the whole thing. How did Alibaba get pushed off this cap table? Do you have any insight into why in the end, there was not Alibaba that was the sole sort of large shareholder of the Chinese tech behemoths in the combined entity? 
+
+Lillian: That's a great question. From what I've read, no one will really ever know the truth. I just want to highlight that ahead of time, this is all us, just sitting in a room telling stories to ourselves. Whatever the word on the street is that—
+
+David: That’s what we do here at Acquired, so perfect.
+
+Lillian: Exactly. It's just Alibaba got really pissed that Wang Xing would even want to do this with Tencent. I think it was almost seen as like a declaration of war of, oh, you want to do this? You want to go and take money from our greatest competitors and then have this alliance with them? How dare you. We're going to go and sell your stock on the market for a huge cut from [...] users and then we're going to invest in your competitors. It felt like it was a scorched-earth approach post Wang Xing deciding to go with Tencent. 
+
+Actually here, I would highlight as well, when I was listening to your narratives, the impression I had had for what went down was basically, given what we're discussing about the price giver dynamic between Tencent and its investee company, so Tencent was really kind of helping Dianping along with the early days by giving a lot of traffic, and also it could to get with favorable terms on WeChat Pay, which they've just launched at that time. 
+
+Wang Xing was experiencing a lot of anxiety in terms of, hey, Tencent is really giving Dianping of these rocket fuel to take them to the next stage early. Ali, you’ve invested in me, what are you going to help me do? The story was, basically, he had a meeting with [...] group and Ali at the time and they were like, well, nothing too much. We are your investors. We’re partners. What would you kind of expect us to do?
+
+David: Because it's like, Alipay, that's a core business. They’re not going to give you a break.
+
+Lillian: Exactly.
+
+David: Whereas Tencent was probably like, yeah, sure, we’ll give you better terms. 
+
+Lillian: Wang Xing then probably left that meeting incredibly bitter and was like, oh, these Ali guys, they talk such a big game about being your partners but when you actually need them, they’re not there for you. He comes out of the meeting and the word goes, he gets on the phone to Neil Shen because of course, if you have a direct line to Neil Shen at that point. 
+
+Then he was like, Neil, these Ali-guys are messing me around. They said they would give me all of these things but they’re doing nothing to help. He's at a point where he's thinking that he's going to just get killed by all of these other players on the market. He's like, okay, can you connect me to the Tencent team? Because Neil Shen is like best buds with the Tencent investment team, he's like, yeah, sure, of course. 
+
+The story was like Wang Xing was kind of almost the first instigator. Where he really felt like he needed to make moves to not get crushed in the war. That's why he sort of double-crossed Alibaba, and then Alibaba, once that happened was like, how could you do this? Now you're dead to me. Now I'm going to invest in your competitor. I think that narrative at least made some sense to me in terms of—
+
+David: How on earth this happened?
+
+Lillian: Exactly. Obviously, from a financial perspective, well, that doesn't really make sense. Why were you leaving all of this money on the table? Unless you bring it to this added angle of they were just very pissed off for some reason and they weren't thinking very rationally. They probably thought by doing this, they could really crush Meituan by selling their stock on the secondary market for a fraction of the cost and then also not just investing but buying Ele.me. Their thought process is that we are Ali, we have built up historically a great foundation of the B2B sales team because that's also one of Meituan’s comparative advantages. 
+
+In fact, Meituan’s COO came from Ali. He incorporates some of that DNA already from the field sales mentality, but Ali was like, well, we're the granddaddy of this entire strategy. We've got a whole host of fuel cells that can go out and acquire and merge. Why don't we just do this ourselves rather than rely on Meituan? We will just equip Ele.me with all the resources, have that DNA and then they'll be part of us, then they will then compete directly in the space, and then we will be better for it because we are also betting that we will execute better than them.
+
+Then it doesn't really make too much sense to own part of what we think will be a dying company because we're going to be so much better than them at the end of 2–3 years fascinating. 
+
+Ben: Fascinating. Lillian, this wouldn't be Acquired without us asking you, are there any playbook themes for China tech broadly that you want to highlight here before we wind down the episode?
+
+Lillian: I have a bunch. This is a not-so-subtle plug for my newsletter, and I write about a bunch of them now. 
+
+Ben: Oh, yeah, please do.
+
+Lillian: All my substack. I think we covered a lot of them on this episode already, but just let me take a step back and rehash some of them. One of the first playbooks I think is this mentality of owning the user rather than providing a function. When you are starting out, you’re very much thinking about what does this particular user really want to see in their functionality suite rather than saying, what is it that we think we are really capable of as a function and as a utility?
+
+I think every Chinese firm has very much adopted that, and that's part of the reason why a lot of the consumer apps we see are super apps. 
+
+Another playbook trend, which we've also talked about, is this idea of owning the funnel. That as you think about owning the user, you essentially want to own the entire user journey they have from discovery to conversion. I think that translates into this funnel structure where you start off with thinking about how you get traffic, then you think about how you provide a selection of services and products to them, and then you think about how you make them convert. 
+
+All of those also end up translating very directly to products as well. Just a pure point on the conversion, this is one of the reasons why you see every tech player is also moving into payment because you want a frictionless embedded way where you can pay on the platform without leaving the platform. Post payment, you also want to think about how you would cultivate customer service and goodwill with the existing customer base as well. 
+
+That leads itself to potentially SaaS tools or direct messaging with the consumers. These two are I think foundational, at least previously foundational playbooks for Chinese tech, how they operate. I think there are other traits and attributes that maybe are not so much playbook, but more kind of ethos of the tech ecosystem that I think is very interesting. 
+
+For instance, copying is nothing to be ashamed of. It is purely a way to make yourself on the same level as your competitors. You've actually just outsourced product research to your competitors and saved you and your team a bunch of time and resources. There is no shame in copying. In fact, as Euegene Wei has stated, as he was talking to a friend of his in China, a Chinese executive who says, if my competitor came up with a product and my team hasn't copied it within two weeks, that means my team is incompetent. It’s a very different way of operating. 
+
+I think those are some top of mine, I guess, heuristics for Chinese tech operates. I think there's plenty of others, which I would encourage readers to check out. 
+
+David: I hadn't heard the quote from Eugene. That's awesome. Listeners, definitely Lillian’s Substack Chinese Characteristics is excellent, can't recommend it enough. We've certainly gotten a much more nuanced view on Meituan in particular than I think Ben and I were capable of providing. This is awesome. 
+
+Ben: Absolutely.
+
+Lillian: My biggest hope was just you guys learning how to pronounce things a bit better. I'm really happy just to record you guys a section where I pronounce all Chinese names.
+
+Ben: We’ll have to bother you before the next time that we do another China episode. We need a little primer
+
+Lillian: Please do.
+
+David: We need one of those tools that DJs use, you hit the button to play clips. We could just have Lillian's recording of all the Chinese names.
+
+Ben: Yes, perfect. Hopefully, next time our education is off microphone. That would be ideal. Awesome. Lillian, we can't thank you enough. One more time, where can listeners go and read your great work?
+
+Lillian: You can find my work lillianli.substack.com, or you could just search for Chinese Characteristics Substack to find me. 
+
+Ben: Fantastic. All right. Well listeners, thank you again for joining us, and thank you, Lillian. 
+
+Lillian: Thank you guys for having me on.
+
+David: See you next time.

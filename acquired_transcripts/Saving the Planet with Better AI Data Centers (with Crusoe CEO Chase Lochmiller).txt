@@ -1,0 +1,615 @@
+David: Chase, welcome finally to ACQ2. We have been wanting to do this for so long. When did we first meet? A year and a half, two years ago I think?
+
+Chase: I think something like that. Very excited to be here. Very excited to do this with you guys.
+
+David: When I had heard about Crusoe years before, I was like, oh, wow, that's crazy. Then we met and I was like, wow, this is even crazier than I thought it was. We got to tell this story.
+
+Ben: Today's episode is going to hit listeners with so many different topical themes, but also Acquired themes. On the topical themes, there is no one more smack dab in the middle of what's going on in AI infrastructure and GPUs right now than Crusoe. But on the entrepreneurial theme side of the world, Chase, what you and Cully and the team are doing—spoilers for what we're going to get into—building data centers and putting them next to oil fields, where there are active oil flares to take advantage of energy that would otherwise be wasted and instead, use it to power AI data centers. It's crazy hard shit.
+
+You're running your own fiber. You're building data centers and infrastructure. There are so many cruxes of Acquired episodes, where we zoom in on something and we're like, that may sound normal now, but that was insane at the time. You guys are in the middle of your, yup, this is still currently an insane moment.
+
+Chase: That's right. It's been insane for five years.
+
+David: I guess let's just start with what you do. I just laugh every time I say it because I'm like, this sounds insane. You are a cloud infrastructure provider. You've built a new one. Usually, when you think cloud infrastructure, you think AWS, you think Azure, you think Google. You've built something just like that for AI companies using top of the line NVIDIA hardware.
+
+Chase: When you think about our business, it really starts with our core mission. Our core mission is aligning the future of computing with the future of the climate. What that means is we really take this energy-first approach to building computing infrastructure, to tackle the most energy intensive computing problems.
+
+Our goal, in order to make that impact scalable, is to not just make things environmentally aligned, but also to make them more cost efficient. If you can make them more cost competitive, you can actually drive impact at a more meaningful scale. That led us to focus on the most energy intensive computing applications, where the lifetime cost of ownership of an asset can be driven a lot by infrastructure and energy costs as opposed to other things.
+
+David: The amount of energy required to power a lot of the AI renaissance that's happening right now, is a new step function on the scale. A single NVIDIA H100 running at full load takes the equivalent of 10 US homes worth of power.
+
+Chase: That's right. It's a single H100 server. It actually has eight H100 carts in the overall system, but it's still really, really significant. Part of the reason that led us to building AI computing infrastructure is that energy becomes such a big part of the equation when you're thinking about doing this at a large and meaningful scale.
+
+We've taken this approach of focusing on the more energy intensive computing workloads and not going after everything that every big cloud provider is offering. Our goal is not to be everything to everyone and be part of the mass migration to the cloud for every single enterprise in the world, which is really the goals of AWS, GCP, and Azure.
+
+David: Yup. You're not hosting SharePoint servers on Crusoe.
+
+Chase: Exactly. There's a lot of different managing services that they offer to try to deliver everything to everyone. Our goal is to be very narrowly focused on the most energy intensive applications, which happen to be some of the fastest growing because of the large demand coming from the artificial intelligence space we're seeing today.
+
+Being nimble and focused on that narrow footprint, without having the baggage of this other large cloud platform that's trying to be everything to everyone, has also been a big advantage for us. We've been able to be very focused on building the most high performance infrastructure that has everything designed for this specific use case. This starts at the infrastructure and rack level.
+
+If you look at a traditional data center, oftentimes, the standard rack power density is seven kilowatts. A single H100 server, you really need a budget of 12 kilowatts for that single server. Even if you have something like a 15-kilowatt rack, you're only able to rack one single server on that rack.
+
+Thinking through it first from the overall rack design, the way you're going to manage heat dissipation in the overall system, and how the network comes into play when you're architecting the overall network design to create a high bandwidth, high performance networking experience for server-to-server communication through things like RDMA with InfiniBand.
+
+Ben: Chase, you can feel free to get a little bit technical here. I want to do a deep dive. If somebody came to you and said, how do you build a cloud, can you take us layer by layer? Maybe just go with one of your data centers as an example of like, what are all the necessary elements that you have to build in order to stand one of these things up?
+
+Chase: Sure. At a very high level, cloud computing sounds like this magical experience. But at the end of the day, it's just renting servers. That's at the end of the day, what you're doing when you're building a cloud computing platform. The technical details and how you actually deliver that experience to customers in a high performance positive experience is a bit more complex than just renting servers.
+
+Our cloud is built on a KVM based architecture for virtualization. We've had to build a lot of tools in-house to help support various demand workloads coming from customers. But at a high level, there are three different big buckets, compute, networking, and storage. On the compute side, that's really where the energy draw is coming from. We are very much a compute-first platform, really focusing on those very energy dense, energy intensive computing applications.
+
+David: I'm imagining for you relative to an AWS or an Azure, the compute focus of your build-outs is significantly higher.
+
+Chase: Absolutely. Compute is the product, that is why people are coming to the platform. They also need storage and networking, though. We've had to support that with both storage on the actual VMs with some meaningful amount of NVMe storage on the actual instance that we offer to customers, but also giving customers the option to mount large volumes through our high performance block storage solution that we've worked on implementing.
+
+We actually partnered with a group called Lightbits on that effort. Let's give them a shout out. They've done some really clever things to deliver a very, very high performance block storage solution.
+
+Ben: Okay, so compute, storage.
+
+Chase: And then networking. Networking can range from the WAN aspect to it, so getting your data from your desktop to the cloud and what pathway that follows to get there. Because we're often building data centers in remote locations, this can be a tricky problem. We have had to leverage large telcos and fiber providers to get us very, very close to data centers. We're often in a situation where we have to build a last mile connection.
+
+We may have to trench some fiber and actually build out that last mile connection to get the fiber to the site. We also need multiple sources of fiber to create geographically diverse feeds into the data center so that if a farmer's going through the farmland, digs a little too deep, and cuts the fiber, our customer workloads don't end up going down. That's on the WAN piece.
+
+David: I want to pause here for a second. I was going to bring this up later, but I think now is actually the right time. This is both a unique challenge for you guys at Crusoe, but I think it's maybe the key that enables you to exist and compete. If an investor were looking at you guys and said, well, why don't Amazon, Microsoft, and Google go build clouds on top of oil flares and in energy locations? They can't because they need their data centers for their clouds to be near internet traffic.
+
+Ben: Specifically, I think, David, the thing you're bringing up is the counter positioning of, if you're really just doing AI training and inference for customers, you can have high latency. You can be far away from people's desktop computing experience. But if you're AWS, you have to be close because people are interacting directly with your servers very often.
+
+David: If you're hosting an ecommerce website, latency really matters. If you're training AI data, it's okay if you guys trench the last mile of fiber.
+
+Chase: That's right. We've focused on very compute-intensive workloads. We try to think of things that are CPU bound and not IO bound. We started the business with a digital currency mining business. We've built a very large Bitcoin mining business. It's a globally decentralized network, so it's very tolerant to even meaningful latency hits.
+
+We started the business mining off of geosynchronous satellite networks that are 30,000 kilometers in orbit and take 700 milliseconds to ping the notes. The cost of that, we actually measured it in terms of what it meant in terms of our potential race conditions for finding new blocks on the Bitcoin blockchain. Because a block happens roughly every 10 minutes, the latency cost we measured was about 15 basis points. The amount we were saving on the energy was so much more significant than the 15 basis points that we're paying for this slow uplink, high latency, fairly low bandwidth solution.
+
+As we've built out a cloud computing platform, you can't get by with 25 megabits of bandwidth and 700 milliseconds of latency, but you can get by with 100 gigs of bandwidth and an extra 10-50 milliseconds of latency. That's pretty much imperceptible to someone that's training a large language model, any of these diffusion based models, or any of these modern AI techniques.
+
+When you're running these training workloads, you're typically running them for hours, days, weeks. The extra impact of tens of milliseconds of latency just doesn't matter at all. That's on the training side.
+
+On the inference side, you might say, oh, well, on inference, if someone is hitting this webpage and they want to generate some new image or some piece of text, latency should matter. It does, but it doesn't matter at the level of additional latency that we introduced to the process.
+
+What I mean by that is that the actual feed forward time of these large language models or big neural networks to produce outputs, the amount of time it takes to process all of the tokens in the network, well exceeds the extra latency hop when we're talking about adding an extra 30 milliseconds of latency. It becomes a rounding error in terms of the total computing time.
+
+Ben: In other words, when you're interacting with an AI application, when it feels a little bit sluggish, very little of that is coming from the round trip network infrastructure of hitting that computer and coming back. It's all about the fact that it actually just takes a long time to execute that in the neural network.
+
+Chase: Exactly. There are billions of parameters in these models. There are many billions of operations that need to take place in order to actually get the output from those models, and that's for each individual token. If you're adding many tokens into the network, the inference time is quite costly.
+
+Ben: It's a really good example of every business has a big set of trade-offs, and it's about aligning the trade-offs you're willing to make with the actual needs of your customer.
+
+Chase: That's spot on.
+
+Ben: This is the WAN. We're still in networking land. Take us to the networking inside the data center.
+
+Chase: That's right. Getting data to the data center, the WAN, we've had to do some creative things to make all of that work. On the LAN side, what's under discussed, I think, often in the AI conversation today is how important networking has become to delivering high performance solutions.
+
+When you look at the overall architectures that people have in place, being able to build these very, very high performance systems, when you're training a large language model, it typically isn't on a single node. A single node is comprised of eight GPUs, many CPUs, some on-system memory, and on-system storage. But typically, the workload extends well beyond a single server, especially if you're looking to train a bigger model.
+
+One of the big unlocks that really unlocked our ability to train these large language models is what's called RDMA, it stands for Remote Direct Memory Access. This is where, basically, you're connecting a NIC directly into the GPU.
+
+Ben: What's a NIC?
+
+Chase: A NIC is a Network Interface Card.
+
+Ben: No one gets away with acronyms on this show. No, I'll just keep asking. Use whatever you want.
+
+Chase: NIC is plugged in directly to the GPU, and then that actually goes through this high-performance non-blocking fabric and can connect directly into another server's GPUs. What that enables is this high performance, non-blocking fabric to share data and share information as you're training workloads server to server. You're basically going from memory on one GPU directly into memory on another server's GPU.
+
+You don't have to go through any PCIe or Ethernet fabric to get there. The performance is really, really significant. When you look at the latest and greatest implementations of this, Crusoe has built all of our architecture around InfiniBand, which is a technology developed by a company called Mellanox, which is owned by NVIDIA.
+
+David: NVIDIA's biggest acquisition, I think, of all time that they created a few years ago. It's a huge part of their strategy now.
+
+Chase: Yup. It was a $7.2 billion acquisition, really talented technology team from Israel to build this high performance networking solution. What's cool about it is, server to server on our H100 clusters, were able to get 3200 gigabits per second of direct non-blocking data transmission between servers.
+
+As much as people talk about the GPU performance, the number of flops, and the number of tensor cores that you're seeing on these new pieces of hardware, when you're running a big training workload, being able to share information between nodes is a very, very critical component to doing that in a high performance capacity. This will shave significant amounts of time off of your overall training workload, because you're not waiting for data to go from node to node.
+
+Ben: Fascinating. You gave us three building blocks, compute, storage, and networking. In my mind, there are three more building blocks too that are not really on the compute side. There's real estate, energy, and physical materials to build out your data centers. I'm curious, could you tell us a little bit about each of those pieces of the puzzle, especially on the energy side because it's what makes you so unique?
+
+David: I think there's a layer in the middle. Chase, correct us if we're wrong, but there's the virtualization layer too in between those.
+
+Chase: Yes. You can set this up as a bare metal instance. But being able to share capacity, one of the benefits to running a cloud is that you have upfront capex.
+
+David: Multi-tenant, elastic.
+
+Chase: Multi-tenancy, exactly. Elastic computing infrastructure. We've built our own virtualization stack. As I mentioned before, it's based on KVM. And then also being able to deliver, because when you're delivering a cluster to a customer, what they want to experience is this is a multi node cluster that they're training a workload on. Really, the experience they want is to have a virtual private cloud. They have their own subnet within this ecosystem.
+
+For that, we leveraged a lot of open-source tooling, but have built this architecture based on OVN and OVS. OVN stands for Open Virtual Network, OVS stands for Open Virtual Switch. They are tools to enable these software-defined networking solutions so that networking can become code. You can actually create more configurable, high performance networking solutions that enable these virtual private clouds and clusters as a service to basically be delivered to customers.
+
+David: This seems like a pretty cool, recent enabling factor for you guys, too. I'm imagining 10 years ago, if you wanted to build the virtualization layer for a cloud, you probably had to spend a lot of money with VMware, right?
+
+Chase: Yeah, that's totally right. What happened in the open source community has been incredible. There are so many great building blocks that you can leverage within open-source that make this stuff possible. I'm always just inspired and amazed by the contributions being made by the open-source community.
+
+Looking things up on Stack Overflow, I'm always like, man, who are the people that have all of the answers to my problems? It's just really, really cool to just see community-driven solutions that enable this type of technology to exist
+
+Ben: Is cost the main reason why you guys have essentially built a custom virtualization stack? There's not something off the shelf?
+
+Chase: Yes and no. I think being able to control your own virtualization stack, managing your own hypervisor, and doing that in-house, we have a unique setup in terms of the way we think about regions, the way we think about individual nodes within regions. The more you can manage those things yourself, the more you can create better solutions that are designed for the full problem statement that you're focused on.
+
+In a lot of ways, we've tried to vertically integrate a lot of components to building computing infrastructure. We're not in the chip design space, but most things downstream of that. We are focused on building and delivering for ourselves and for our customers.
+
+People veer away from these things a lot of times because they're hard. We talked about this earlier. It's hard to do many things well. But when you do, you end up with these incredible products that are truly designed for the full larger problem that you're trying to deliver to your end customer.
+
+I think of a company like Tesla that started out just taking the Lotus as the chassis for the vehicle, just loading up a bunch of batteries on it using the same drivetrain, and all these different things that they tried to take off the shelf. They quickly realized that what we're building is completely different from a traditional internal combustion engine car. We really need to rethink the full plan, and they had to vertically integrate things. I had a conversation with JB Straubel, who is the longtime CTO at Tesla.
+
+Ben: Let's get this on the record, original co-founder of Tesla.
+
+Chase: Yeah, co-founder and longtime CTO of Tesla, the man behind the scenes making it all happen alongside Elon. At one point, when they were building the Model 3, and they were putting together all these demand forecasts, they were like, okay, if this goes how we think it might go, we're actually going to need more batteries than the global production of batteries today.
+
+David: Nobody's going to be able to buy a laptop.
+
+Chase: We're going to soak up the entire battery supply chain. We have to go out, and we have to build our own battery factory. We have to go build the biggest battery manufacturing business in the world to support our own needs.
+
+It's a similar thing that they did with the charging network. When electric cars weren't a thing, end users really needed to be able to plug in to charge their vehicles and actually make them useful on road trips, Tesla had to invest in that infrastructure to really make electric vehicles a possibility for people to actually utilize.
+
+The end result is this amazing vehicle that they've designed everything from the software systems to the way the door handles work, to the way the phone application works, the way the batteries are designed and integrated with everything. The end result to the customer is just a better transportation experience. If it's a car or anything else, it's just a better experience of getting around.
+
+What we're doing on the computing side is really focused on trying to deliver that same sense of trying to start from a very first principled approach to energy costs, thermal management, heat management, managing virtual machines across the hypervisor, the way we think about coordinating various regions within clusters. The end result is a computing experience that can both drive down costs for end customers, as well as reduce the climate impact that they're having by running these workloads on these high performance computing clusters.
+
+Ben: Let's talk about that. We spent a lot of time in computer land. Let's get to the physical nature.
+
+David: This whole other side of your business.
+
+Chase: I love computer land.
+
+David: It's easy, right?
+
+Ben: The real estate, the physical building stuff, and the energy.
+
+Chase: We are very much an atoms-to-bits company. We exist in this infrastructure of the physical world and the virtual world. Again, you come back to this notion of cloud computing, it sounds very ethereal. It's up in the sky.
+
+Ben: It intentionally sounds abstract. It's an abstraction layer.
+
+Chase: You send it up to the cloud. It's this abstract thing. The reality is you're sending data to a physical data center that exists somewhere in physical space, is networked into the internet, and runs on power that has to be generated from some power generation facility. That power has a significant cost to it.
+
+Thinking about those physical aspects to things, having come from the digital currency mining world where energy costs become such a large component of your ability to be profitable in that space...
+
+David: Not just profitable, but it really sucks too. Way back on our Bitcoin and Ethereum episodes, there's a huge question here of like, is this going to destroy the world?
+
+Chase: Sure. I've heard the arguments for and against it, not to get into a philosophical debate around Bitcoin.
+
+David: I don't think we need to do that in 2023, but the point is, it takes a lot of energy.
+
+Chase: Sure, it takes a lot of energy. I think for a decentralized monetary ecosystem that's trying to create a digitally native store of value, having a large energy footprint is actually a positive. That's actually what creates defensibility.
+
+Ben: It's what makes it resistant to attacks.
+
+Chase: If I had a bunch of physical gold, it's like I want to store it in Fort Knox because it's really hard to break into Fort Knox. If I'm storing something in digital gold, I want to store it in the place that is the most difficult to attack, has the highest cost to attack, both from an energy cost standpoint, as well as an infrastructure investment standpoint.
+
+David: You came from that world.
+
+Chase: We came from that world. That is a business where cutting costs becomes very, very important. Early on, we're in the business of designing these containerized solutions to manage a lot of our Bitcoin mining workloads. Over time, we became the largest customer of one of our suppliers in that space. That was an electrical fabrication shop that was just working with us on these designs and then would manufacture these big modular data centers for us.
+
+It was a multi generational business, where the father really just wanted to sell out of the business and move on. We ended up in a position where we ended up buying that manufacturing business. For us, this made a lot of sense, because it could help us further vertically integrate with our business in terms of controlling and owning the whole manufacturing process. We could eke out quite a bit on the actual margin recapture of the cost of manufacturing that infrastructure.
+
+It also gave us a platform to really rapidly prototype and design new ideas, especially as we were going through the early phases of building out our cloud computing stack. Today, I think we have a really incredible facility. We call it Crusoe Industries that is focused on manufacturing our electrical and data center infrastructure in a very cost effective manner that's, again, very purpose built and designed around the specific workloads that we're focused on. That stems from the way we manage the heating and cooling of the systems, the way we manage the electrical feeds, the way we manage the battery backup systems.
+
+David: How much heat are your racks and data centers producing?
+
+Chase: For our cloud computing platform, we typically standardize around a 50-kilowatt rack, so quite a bit denser than these earlier 7-15 kilowatt designs that I was mentioning. What's interesting about that, I guess we didn't talk about it, but the proximity of the hardware to one another actually becomes more important for managing that land piece, that high-performance local area network.
+
+The reason for that is that these cables, the transceivers, and all of the components required to interconnect the servers in this high performance RDMA setup, are really expensive. They scale exponentially as you're trying to go further distances.
+
+David: This isn't a serial port that you're hooking up to.
+
+Chase: No, exactly. It's not a 200-foot cable as about the same cost as a 10-foot cable. It actually scales pretty exponentially. Being able to deliver these high density racking systems actually becomes a great strategic advantage.
+
+One area where the mining space, I think, has been quite ahead to leapfrog the data center space in a lot of ways is the adoption of other advanced cooling techniques. A lot of these were created from the traditional data center sector, but haven't been that widely adopted. I think you're going to start seeing a transformation, where people are going to start moving to cold plate or immersion cooled solutions almost by default for some of these more high performance applications.
+
+To explain what that is, I see you’re about to ask, Ben. Thermals become a big deal. When you're talking about running a server that draws 12 kilowatts, where is that 12 kilowatts of power coming from, and where is it going to? A traditional design is you have a chip that's on the actual motherboard, and then you have a heatsink attached to it. That heatsink is typically aluminum or something to diffuse the heat. Exactly.
+
+The heat transfers from the chip to the heatsink, and then they typically have these fins that you blow air over. You want to have a lot of surface area. As you're blowing that cold air over those heat sinks, you transfer the heat off the chip and dispose of it separately.
+
+There's a couple of different advanced cooling solutions. One is a cold plate, where you're actually running instead of a heat sink, you actually have copper pipes that have cold water running over the chip. It's actually more efficient to transfer the heat from the chip to the water than it is from the heatsink to the air.
+
+David: It sounds like a nuclear reactor.
+
+Chase: They kind of are, honestly. It's crazy. Then there's actually immersion cooling, which is even crazier. They're single phase, and there's two phase. But single phase immersion cooling is where you have a non-conductive dielectric fluid that you're actually putting the chips into.
+
+David: Obviously, you can't put the chips in water or that's going to not end well.
+
+Ben: Non-conductive, the chips are sitting in a liquid that can't short circuit it?
+
+Chase: Exactly. You could actually put it into deionized water, funny enough, but if any dust gets into it you're in trouble.
+
+Ben: Is that right that water is only a conductor when it has impurities?
+
+Chase: Exactly, it's the ions. Anyway, either way, there are these non conductive dielectric fluids that you can immerse the whole system into, and that is actually more effective to transfer the heat off the chip. They're single phase, which means the phase of the fluid is staying as a liquid. You're running the cold fluid over the chip, then it goes out to a heat exchanger like a dry cooler, and then it recycles back through the system.
+
+Or there's something called two phase immersion cooling, where the fluid actually flows over it, and it actually boils at the surface at the interface between the chip and the fluid. The boiling process actually strips off heat even more efficiently.
+
+The problem with two phase immersion cooling is (1) the fluid is very expensive and (2) they're generally these fluorocarbon fluids that are very, very bad for the environment in the case that any of it escapes. It has a global warming potential of something like 250, which means that for an equivalent volume of gas that escapes, it has a 250x in impact compared to that equivalent amount of CO2. It's a really, really nasty footprint.
+
+Ben: It's even gnarlier than methane.
+
+Chase: Methane is about 84. These fluorocarbons are quite a bit worse. It's actually not something that we generally use today. But anyway, there are all these very cool advanced cooling solutions that I think will become more standard in artificial intelligence and high density computing as the space continues to evolve.
+
+David: That's super cool. The traditional cloud providers, we're not really doing this, this came out of the Bitcoin mining world?
+
+Chase: It didn't come out of the Bitcoin mining world, it was productionized by the Bitcoin mining world. Bitcoin mining is one of the areas where this is probably happening at the most meaningful scale. There are people from the traditional HPC, high performance computing space, that have been big pioneers in these immersion cooling and cold plate technologies, but it's certainly being scaled up very rapidly because of Bitcoin's tendency to generate a lot of heat and that thermal transfer being a big component of the overall problem.
+
+David: Okay, so that's the thermal structure.
+
+Chase: Sorry, we're going in a lot of different verticals here.
+
+David: No, I think this is amazing. Definitionally, if you are generating a lot of heat, you're using a lot of energy. Let's talk about the energy piece.
+
+Chase: Our mission as a company is aligning the future of computing with the future of the climate. We take this very energy-first approach to the way in which we build computing infrastructure. Some people at the surface may say, wait a second, you're working with oil and gas companies and using oil and gas based products to power your data centers. What's important to understand here is that what we're using is actually a waste product from the oil production process.
+
+When oil companies drill for oil, they drill a hole in the ground, and then what flows out of the reservoir is this combination of oil, natural gas, and water. When that comes out of the ground, it goes through what's called a three phase separator that separates the oil from the gas from the water. Typically what happens, unless you have access to a pipeline on site, the oil can easily be trucked to an oil refinery, the water would be trucked to a water treatment facility, and then the gas, because it's in a gaseous state, it is actually very, very difficult to deal with. It's very difficult to transport unless you have a pipeline.
+
+There are other existing solutions to do this, things like compressed natural gas, where you actually compress the gas on site into a 4000 psi tank or something like that, and then you truck the tank to injection point, or you can liquify it on site.
+
+It takes a lot of energy, and it takes a lot of cost. Running that compressor is very, very expensive. The cost of operating these things typically exceeds the revenue that you actually get from them. Even though you're selling the natural gas, if you're selling it for $2 per MCF, MCF is 1000 cubic feet, if you're selling it for $2 an MCF, but it costs you $5 an MCF to do it, you just lost $3 an MCF.
+
+It's been this conundrum in the oil industry. Typically in these cases, the best and most economic thing to do with the gas is to just light it on fire. It's completely insane. This has been a problem. It's not a new problem. This has been a problem since we've been producing oil. You can see the trends on flaring from the IEA website and just look back at the history of it.
+
+The overall concept is, it becomes this waste product. It's not the reason they're drilling a well. They're drilling the wells to produce oil, and oil is the product that they're looking to sell and monetize that investment with. Gas is the byproduct and it becomes a nuisance.
+
+This is a bad problem for the environment for two different reasons. (1) When you're burning off that gas, it obviously creates a large CO2 emission footprint. (2) Even worse is actually the methane emissions that come off from it, because not all of the methane gets combusted in the flaring process. Typically, 9%-10% of the methane escapes uncombusted.
+
+As we were talking about earlier, in terms of global warming potential, methane has a very, very high global warming potential of 84, which means it traps 84 times more heat in the atmosphere than an equivalent amount of CO2. By volume, what that ends up with is from a flare, 70% of the overall greenhouse gas footprint comes from this methane that escapes uncombusted.
+
+With Crusoe, when we deploy our equipment to the site, we have these onsite generators, we have these onsite gas capture systems, that basically feed that gas into our generators and turbines. It becomes a very high efficiency combustion process, something called Stoichiometric combustion, where you get the right fuel to air ratio of the overall combustion process. We're able to get over 99.9% destruction efficiency of methane. By doing it this way, we're actually able to eliminate the greenhouse gas footprint of a flare by about 70%. It's a really meaningful emission reduction compared to the status quo.
+
+Ben: So far, none of this accounts for the actual benefit of what you're doing with the energy that would have consumed some other form of energy to get that completely done anyway.
+
+Chase: Exactly.
+
+David: This is just a reduction.
+
+Chase: There's a reduction from the status quo, but there's also what's called avoided grid emissions, which means if we weren't running this data center here, someone would be demanding that computing somewhere else, and it would be drawing power from some grid somewhere that has some carbon footprint associated with it. It's a win from an emissions standpoint on both those verticals.
+
+Just to give you a sense of the magnitude of the flaring problem globally, when I started the company, this was not my domain expertise. This was my co-founder's domain expertise. He was someone that grew up in the oil industry as a third generation oil and gas family. It was honestly something that he struggled with a lot. He was an environmentalist and went to Middlebury College as an undergrad, which is a very environmentally progressive school.
+
+David: Did you guys met in high school?
+
+Chase: We went to high school together, exactly. He was a Thomas Watson fellow and studied energy impact around the world. Always trying to find the right balance between energy's impact on the economy as well as the environment, and trying to find the right balance in terms of helping people get access to energy so they can raise their quality of life, while also being conscious of the long term impacts on the climate and what that's going to mean for the society in the future.
+
+All that aside, he educated me a lot about all of these things. When you look at flaring globally, there's about 14 billion cubic feet of gas that get burned every single day around the world. That sounds like a very big number, but what does it actually mean in practice?
+
+If you were to capture that gas, you could power Sub-Saharan Africa with that amount of power production. It's about two thirds of the consumption of Europe. Europe's big. It is this incredible waste that exists within the overall energy ecosystem.
+
+Ben: Of course, as you mentioned, you can't economically actually get it to any of those places to use it there.
+
+Chase: Exactly. Transportation is the problem. Getting it to a place where it's actually useful, that's the difficulty. People aren't burning this because they hate the environment so much, or they don't want to get paid for it. They're burning it because they have no other economic option to manage and deal with this gas.
+
+One other data point, the amount of gas being burned, because of the methane emission footprint of it, it's nearly a gigaton of total greenhouse gas emissions when you account for the global warming potential of the methane emissions. How does that rank in terms of emissions? Globally, humanity, our emissions are a little over 50 gigatons. We're talking about something that's nearly 2% of total global greenhouse gas emissions.
+
+The crazy thing is that we don't benefit from it. It's one of these things, where steel production generates a lot of greenhouse gas emissions, but we end up with skyscrapers. Cement, a lot of greenhouse gas emissions, but roads are pretty handy. The transportation sector were able to get around effectively and conduct commerce.
+
+In the case of flaring, it's this very large greenhouse gas emission source, and there's no beneficial use. Nobody's benefiting from this. It's literally a negative externality for everyone. With our digital flare mitigation solution, where we're co-locating the power generation and the computing infrastructure at the site, we're able to reduce that greenhouse gas emission footprint by roughly 70%, while also capturing a beneficial use. It really does become a win-win.
+
+To your earlier comment around the business and taking computing to the sources of energy, when you think about flaring as the problem, you really nailed it. The issue is a transportation issue. There is no market for the gas in the physical place that it's located.
+
+David: Out in rural Montana, rural Argentina, there's no demand in these oil fields for this massive amount of energy. What are you going to use it for?
+
+Chase: That's right. When you break our business down to the simplest fashion, really what we're doing is we're unlocking value in these stranded energy resources with computing. The insight really was that moving gas is difficult. Moving power is difficult. You have to build large transmission lines, these are big infrastructure projects.
+
+Moving data is pretty easy. It's a lot easier than moving gas. By recognizing that, if you could actually just create a data pipeline, you essentially create this digital pipeline that you're able to create value in these remote locations with various computing workloads.
+
+Ben: Do you know the Iceland story about aluminum? This reminds me a lot of that industry.
+
+Chase: I know some of it. My co-founder, Cully, actually spent a ton of time in Iceland working with the geothermal power production industry there. It is a geological phenomenon that Iceland exists. The cost of geothermal power production there is insanely cheap.
+
+Ben: They always joke that the island is going to slowly take over the world because it grows a few inches in each direction every year from the fault line down the middle, still being active spew of magma. For listeners that are unfamiliar, the insight that they realized, I think decades ago in Iceland, which is very similar to this insight that you have around data, is Iceland has tons of geothermal energy and not enough demand for it.
+
+So much supply, not enough demand. There's just not a lot of people that live there. The country doesn't have huge energy needs. What do you do? You look around for other energy intensive applications, one of which is refining aluminum ore. The issue is there's no aluminum ore in Iceland naturally.
+
+This is the most economical way to do it. They ship in aluminum ore to the country, use the geothermal energy to refine it there into the aluminum that we use in our lives every day, and then they ship the byproduct out. As a global society, that is actually the most efficient way to make aluminum.
+
+Chase: It's pretty wild.
+
+Ben: It's crazy. To your point, it's like, let's ship our data out to these oil fields so Crusoe can do something useful with it and ship it back to us. That's actually way more efficient than moving the gas.
+
+David: I'm wondering, especially thinking about that. Okay, flaring has been this problem forever. Why haven't aluminum smelters co-located there? Why haven't car factories been located there? I'm imagining the problem is the oil wells are there. They need to run, so you can't just build a factory on top of it.
+
+Chase: There's a couple of problems. Typically, an oil and gas well will have some decline curve, which means the amount of gas being produced today will decline in some exponential fashion in the future. That creates problems because it's hard to create a mobile aluminum smelting factory. It's just difficult to invest the capital to be there for a small period of time.
+
+David: It's measured in years, decades, maybe. These things run out of gas, literally.
+
+Chase: Yeah, the amount of production just declines over the course of time. It's also widely dispersed. The nice part about computing is we can deploy sites that require or that are able to generate two megawatts all the way up to—the largest flare mitigation site that we've done is upwards of 30 megawatts. An aluminum smelting facility might require 500 megawatts all in a single location. Not being able to chop things up into tiny little blocks makes it quite challenging.
+
+Ben: Magnitude and durability.
+
+Chase: Yeah, exactly. The other aspect is, it is a challenging environment to operate in. You're dealing with these, oftentimes, harsh environmental conditions. You're in remote locations, limited population centers. It can be a challenge to operate in that area with a significant workforce.
+
+Ben: To put a fine point on the thing that you're not saying but is implicit in all this, your data centers don't require tons of humans, it doesn't require a huge footprint, and it doesn't require building a small city around it. These things are mobile data centers.
+
+David: They don't all have to be in one place.
+
+Ben: Right. You can set them up, have them there for a period of time, and then at some point move them to a different flaring location.
+
+Chase: That's right. Everything has been built to be mobile and modular. You can think of those building blocks that we can move around. Obviously, our Bitcoin mining modular data centers are much more mobile and easy to interrupt and move around.
+
+You've gotten excellent at that mobilization process, where we can just move a whole site in a single day and get it back up and running. But the cloud computing data centers, we try to find locations that we are going to be there for a longer period of time. Remobilizing is probably not going to be an issue for at least a number of years.
+
+Ben: It makes sense. We've spent all this time talking about the catchy headline of Crusoe, which is we build data centers right next to oil flares. Oil flares are not the only place where energy is stranded. I'm curious to hear a little bit about the early journey you've done into wind and other power generation, where it's also an issue to move the energy.
+
+Chase: That's right. Coming back to our mission of aligning the future of computing with the future of the climate, as we think forward in this energy transition that's taking place across the world, we really view it as there are two big opportunities for Crusoe to be an important component to that transition.
+
+The first is helping extend the climate runway, helping us buy time by reducing emissions from legacy industrial sources. This is what our flare mitigation business is. It's taking a big source of emissions, reducing it by empowering computing infrastructure, and just reducing the overall footprint of that emission source as it exists today.
+
+The second big opportunity is that as we are thinking about electrifying everything, this has been a big trend between electrifying cars, electrifying stoves, electrifying heating and cooling systems with heat pumps.
+
+David: Dude, I was researching heat pumps the other day.
+
+Chase: Heat pumps are awesome. I installed one in my house about a year ago.
+
+David: Nice.
+
+Chase: We can trade notes on it, maybe separately. The whole point is, all of these things require a lot more power. We need that power as a society to be coming from carbon free resources that aren't accelerating a climate crisis.
+
+Carbon free resources that we're really focused on are wind, solar, geothermal, nuclear, and hydro. Those are the big sources that we would consider powering data centers that are grid connected. What is the opportunity for someone like Crusoe that's focused on stranded energy resources? There's this conundrum that exists within how we build renewable infrastructure.
+
+The conundrum is basically, when you think about investing in building a wind farm, and your goal is to produce a lot of power from that wind farm, you want to find somewhere that is very consistently windy. The problem is, that isn't necessarily in the same place where you actually have consumers to buy your power.
+
+David: Moving power is hard.
+
+Chase: Moving power is difficult. You have losses to it, too. There are significant transmission losses when you're moving power over significant distances.
+
+Ben: Moving power is hard, storing power is even harder.
+
+Chase: Storing power is even harder, exactly.
+
+Ben: You can only charge a gigantic stack of batteries so much.
+
+Chase: Yeah, and it can only store power for so long. There's a lot of headway and technological breakthroughs, I think, we need to make in order to make long term grid power storage a feasible reality. What happened in the US when you look at people that build and own wind farms, really, their revenue stream is coming from two sources.
+
+When they build a wind farm, they're underwriting against revenue that they expect to get by selling power. Obviously, they're building a wind farm that generates power. But the second big resource of revenue for them is actually coming from production tax credits. They get these credits that are incentives to basically build renewable energy for the country, which I think generally is a positive. However, they only get those to the extent they're actually selling the power.
+
+This has led them to building these wind farms in places where it is most consistently windy. One such area is an area like West Texas. West Texas is consistently very windy, consistently very sunny, and consistently very sparse and depopulated. There's just not very much in West Texas.
+
+David: Isn't that where the Blue Origin launch operations are, and Bezos puts his ranch and the clock in the mountain, and all that stuff?
+
+Chase: There's a lot of space there. What this has created is actually, because of the production tax credit dynamic. Wind farm operators will actually sell their power at a negative price because they still capture the production tax credit, and it's still marginally economically beneficial. Again, if you're selling your primary product for a negative price, that's generally not a good business to be in. There's essentially no marginal demand for that power that's being produced.
+
+The amount of time that people are getting negative pricing on their power in areas like West Texas can be really significant. Some of our partners on the order of 20%-30% of the time that they're generating power, they actually get negative pricing. Not a good model, doesn't really incentivize building more renewable capacity, and it's not an efficient use of energy that's being produced. To Crusoe, that's a big opportunity.
+
+We've partnered with these renewable energy producers by, again, taking the market to them. We bring demand in the form of computing and data center infrastructure directly to the sites of stranded, heavily curtailed, or negatively priced power, where we can actually, again, unlock value in that stranded energy resource with computing. We deliver to them at price floor so that it eliminates their negative pricing risk, where they're not having to pay to dispose of their power. They suddenly have a consumer, which is Crusoe.
+
+It helps us because it's very much in line with our mission, where we're able to actually power our computing and data center infrastructure with these on-site, renewable, carbon free power resources. There's a lot of different ways that people make claims about being net zero. We believe the best way of doing that is actually with on-site renewables, on-site carbon free power. That's really been the focus for us within this new business line we call digital renewables optimization, where we can help optimize renewable facilities by bringing digital infrastructure to the source.
+
+Ben: For your customers, it doesn't feel any different. They're just getting an AI cloud that happens to be located next to a wind farm instead of an oil field.
+
+Chase: That's right. It's basically just like a different region to them. The infrastructure is still in the box, inside the data center. It's still the same high performance infrastructure and high performance solutions that we discussed earlier on the episode.
+
+David: For customers and use cases, especially training but I guess anything, can the workloads be sharded enough that you have a big honking AI workload that goes out to various regions and data centers on Crusoe? Does it really matter, or does it all need to be in one?
+
+Chase: Typically, I think the best approach is certainly to be in a single region for a cluster. There are certain workloads that you can shard in that capacity. There's actually a really cool startup that's building ways to leverage that type of overall architecture as a layer of indirection to manage across different geos with low cost computing nodes, a company called Together. That's a really, really neat startup that's doing really, really interesting things in the AI training infrastructure space.
+
+Ben: Wow, fascinating. Can I ask Chase, how on earth did you come up with this as the solution to, hey, we should do something better with the energy that's currently being flared? Now that we're deep into the episode, give me the history.
+
+Chase: A bit of backstory, the company honestly is a representation of me and my co-founder. It's really what it boils down to. Just by way of background, I was in the applied AI research space, working as a quant portfolio manager in the finance world, where we were using advanced statistical modeling techniques to forecast stock prices and security prices.
+
+I went to MIT as an undergrad, studied math and physics. I went to Stanford for grad school, studied computer science with a focus on AI. I spent that first chapter of my career as a quant.
+
+This was the early days of cloud. We were mostly building the infrastructure ourselves. We hired a lot of people from government laboratories like Lawrence Livermore in Los Alamos that were building this type of infrastructure themselves, people like [inaudible 00:53:28] research that were building a lot of cool advanced computing infrastructure.
+
+I was always a big user of large computing infrastructure to train models to run big simulations. At the end of the month, we would get a datacenter bill. I was always just like, holy crap, how much are we spending on power? That's insane. You can buy a house with that. It was always just one of these crazy, crazy things that stuck with me as I went on in my career.
+
+I ended up getting really deeply interested in the digital asset and cryptocurrency space around 2016. I ended up meeting a guy named Olaf Carlson-Wee who was the first employee at Coinbase. He had left Coinbase to start a hedge fund, to invest just in digital assets and cryptocurrencies.
+
+Here in 2023, there's a million crypto hedge funds and probably a million more failed crypto hedge funds. But at that time, that was a very, very unique idea. There really weren't other crypto hedge funds that were just focused on the digital asset space.
+
+I ended up joining him in 2017 to build out this fund called Polychain Capital. There was a lot of chaos happening that year between ICOMania, people learning about what Ethereum was, and how it was going to transform everything with smart contracts.
+
+We were also big within the Bitcoin ecosystem as well. I really got this front row seat to understanding proof of work blockchains in a very, very deep capacity. Again, that really stuck with me as well as something that was this digitally native asset, that was protected fundamentally by low cost, decentralized computing infrastructure that required lots and lots of energy. I ended up leaving that in 2018 to go pursue a personal passion. I grew up in Colorado around the mountains, and I had always wanted to climb Mount Everest.
+
+David: I knew we had to work this into the episode, so okay. I'm glad that it's coming up.
+
+Chase: Yeah, I left to go climb Mount Everest. I had this self-discovery expedition of climbing to the highest point in the world. At the time, I didn't have a plan. I didn't have a plan on what I was going to do next.
+
+David: That was a four-month, two-month experience?
+
+Chase: It was about two months in Nepal. For other aspiring entrepreneurs that are out there listening, I do think that there's something very unique and special about the blank slate and the stillness of having nothing there. I think it can be particularly challenging for very ambitious people.
+
+Before I left high school, I knew exactly where I was going to college. Before the fall of my senior year, I knew exactly what job I had already accepted. When I left that first job and went to grad school, I knew that before I left the job. It's like I always had the next thing planned before I had left the previous thing.
+
+Having that stillness and that void of, I could do anything, what should I do, and just really having that openness to being open minded and honestly doing anything, was really, really important to me.
+
+Ben: And you did the summit, right?
+
+Chase: I did summit, yes. It was the ultimate adventure, so much fun. A lot of really cool memories came out of it. Actually, one of our core company values came out of this whole expedition as well. One of our very, very unique company values is actually to think like a mountaineer. We're not expecting everyone to climb Mount Everest. We're not expecting everyone to be a mountaineer, but we want them to channel the mindset of a mountaineer.
+
+One of the ideas when you're climbing a mountain is that getting up is optional, getting down is mandatory. You have to have a safety oriented mindset, which means you have to be thinking about what could go wrong. You're going to have a plan A that if everything goes to plan, we're going to follow this route, we're going to climb this path, we're going to do this crux, we're going to get to the top, and then we're going to come down this way.
+
+The weather could change, the route could change, an avalanche could happen. All of these things are possible, and you have to be prepared going into it with like, what am I going to do if this goes wrong? A core component to Crusoe culture is thinking like a mountaineer and really being prepared for things to break, for things to go wrong, because they inevitably do.
+
+David: As they do in any startup, just given the physical realities of everything we've been talking about here, I imagine a lot of things break all the time.
+
+Chase: Totally. You just got to put in the right processes and preparation to make sure that you can avoid those, or you have a plan in place to mitigate those risks. But anyway, coming full circle on the entrepreneurial story, I came back from that Mount Everest trip.
+
+I think one of the things that stood out to me was living through this AI landscape, we were using a lot of advanced statistical modeling techniques when I was a quant. When the deep learning boom happened, you had the initial cap paper published, and people were like, oh, there's these multi layer neural networks that you can utilize, that are crushing every single benchmark. We started to utilize some of these things in our own strategies and solutions that we were building.
+
+Really, I had this recognition that a lot of these things weren't big scientific breakthroughs. Multi layer neural networks had existed for decades. They're just an interesting nonlinear modeling technique that you can model some statistical representation of the data set that you have.
+
+What had changed is that data had become far more abundant. There was a lot more data that you could utilize to train these networks, and computing had gotten a lot cheaper. Those were the unlocks that actually enabled these technologies to start to make meaningful breakthroughs for society. I really felt that those were the two verticals that we're going to continue to drive those breakthroughs. Increased access and availability to data, unique datasets that are meant to represent your overall dataset, and cheaper computing costs.
+
+I was thinking about what do I want to do. I was really excited about building this infrastructure layer of computing. I was thinking about, how do you make compute cheaper? How do I make it more efficient? I could design a new chip and compete with NVIDIA. They seem pretty good at the paralyzed computing stuff, maybe I'll avoid that.
+
+I ended up meeting up with my co-founder when I was back in Colorado where I grew up. We ended up going on a climbing trip together, and he was telling me all about struggling firsthand with this flaring problem. Again, he's very much an environmentalist that grew up in this oil and gas family and was dealing firsthand with this problem of flaring, where he felt like he was stuck between a rock and a hard place, where the best thing economically to do for his stakeholders was to flare this gas. And yet, it was a massive negative for everyone else and for the environment.
+
+He was struggling with this, telling me about the problem, and saying, what can we do here? Is there a better solution? Is there something that can be done? We came up with this concept that we could solve the computing industry's problem of compute is expensive because power is expensive, by simultaneously solving the problem of flaring is a problem because there's no demand for the gas and its current location. We do that by co-locating these computing solutions and facilities on site with these waste sources of energy.
+
+Ben: It's clever, it's just crazy.
+
+Chase: Totally insane.
+
+Ben: I just can't get over how perfectly the puzzle pieces fit together if you go under lots of pain to make it true.
+
+Chase: Yeah. The other thing I'll say is that, we probably never would have gotten off the ground if we had started with building a cloud.
+
+David: Bitcoin probably made this possible, right?
+
+Chase: Bitcoin made this possible.
+
+David: You could throw everything into a container and drop it in, right?
+
+Chase: You have to remember, we're solving problems for two different counterparties in this situation. We're solving a problem for the energy company, and we're solving a problem for the computing customer.
+
+Ben: You were a trader, I listen to you with counterparties.
+
+Chase: On the oil side, if I came to an oil company, I said, hey, I can solve your flaring problem, I just need a couple of years to build this whole high performance cloud platform, I need to go find customers that will utilize it, I need to build the infrastructure and then co-locate it. They're like, dude, I need my flare gone tomorrow.
+
+David: Meanwhile, you go to the AI customers and you're like, I've got a great solution for you. It's going to be cheaper, it's going to be better, and it's going to be ready in five years. And you'll be like, dude.
+
+Chase: Don't care.
+
+Ben: Bitcoin mining bootstrapped to your demand side of the marketplace.
+
+Chase: Exactly. Bitcoin, by being an open permissionless network, you could rapidly scale it up and scale it down. It's a very elastic demand for computing, where we could basically plop a datacenter filled with Bitcoin mining rigs directly on site with these waste gas, utilize it, and soak it all up.
+
+I think about Bitcoin as being a bit of a power sponge. It can soak up waste energy to the extent it's there. It can modulate and flow with capacity available. If it needs to be turned down and erupted, all of these things are ultimately no big deal.
+
+We actually have very big plans for how Bitcoin mining will be integrated into these large DRO, behind-the-meter computing facilities, co-located alongside of our high performance computing cloud data centers as well. Again, you can think of them as these power sponge that really modulate and can create the most high performance campus in terms of being able to drive efficiencies without getting rid of any reliability or redundancy that you need for a large high performance computing data center.
+
+David: It's like the ultimate elastic computing workload, right? AI training is fairly elastic.
+
+Chase: It's the ultimate spot instance.
+
+David: Yeah, exactly.
+
+Ben: Assuming you believe that the output has value, which that's a whole another episode of debate, and there are lots of incredible reasons why you do.
+
+Chase: Yeah, exactly. I believe it has value because there's a market that tells me it has value. I can literally go onto Coinbase and observe the value of it.
+
+David: It's bitcoins all the way down. I hope as promised upfront, listeners, you find this as incredible as we do. Two more things we want to cover (1) Your capital structure and how you financed all this, (2) Maybe before we do that, we've mentioned NVIDIA a few times on the episode so far, anybody listening has got to be on their minds like, they're pretty important to you guys.
+
+Chase: Yeah, absolutely. For our cloud platform, because we very much focused on the GPU market, NVIDIA is the 800-pound gorilla. In fact, they're a 10,000 pound gorilla.
+
+David: Hey, AMD exists.
+
+Chase: AMD does exist. AMD is actually building some really interesting, cool solutions. There's been a lot of money poured into AI accelerators and interesting new technologies to tackle this AI problem. The problem is, for those other competitors, NVIDIA is really, really, really good at it.
+
+They're investing lots and lots of money. They've built up a full ecosystem between CUDA, NCCL, which is the package that helps manage these high performance networking solutions for the server-to-server communication. They've really nailed the full complete suite between hardware and software.
+
+We, as a company, because we didn't have any previous baggage, we hadn't tried to build our own high performance fabric from scratch. We hadn't tried to build our own chips from scratch. We really wanted to take the best things in the market, what the market was demanding, and deliver that to customers. That really was this NVIDIA stack of computing solutions.
+
+We've been able to build, honestly, a great relationship with NVIDIA. They've been a very good and key supplier to Crusoe. They're very aligned with our values of trying to deliver advanced computing solutions that are both cleaner and cheaper than a lot of traditional other offerings.
+
+David: NVIDIA, I don't think they like that their GPUs take a lot of power or that power is hard. I think they probably like making power easier.
+
+Chase: No, and I think a lot of people are starting to see this issue just as in crypto. Initially, it was like, oh, cool, people are doing this decentralized computing thing. They're doing proof of work to create value for this global monetary ecosystem. As soon as the economic incentives were put in place, things started to ramp up, people started doing on GPUs, and then people started building ASICs for it, those created just a lot of power demand. People were like, wait, this is consuming how much power? That's crazy.
+
+I think we're at the very early innings of that with AI. I think there's an opportunity to really get ahead of the climate impact of AI. A lot of people are talking about responsible AI and AI ethics. One of the key components that should be part of that discussion is actually the climate impact of AI. I think that's really where our energy-first approach to things really plays a major role.
+
+It's just the nature of humanity that NVIDIA will come up with a much more efficient chip, and then people just use a lot more of that. The overall power consumption actually goes up. It's like, well, that's...
+
+David: It's how things work.
+
+Ben: My unbelievably fast iPhone 13 Mini, because I still love the Mini, is not running the same apps as the iPhone 3G. We get more compute, we use it.
+
+Chase: Yeah, it's exactly right. People design things around more computing being available. That's important progress. At the end of the day, the potential for human progress and uplifting human prosperity through computing-led innovations is absolutely enormous. I think it's going to be one of the greatest transformations of our lifetime. We want to make that possible, but we want to do it without having to pay a huge climate impact cost.
+
+Back to NVIDIA, they have this very, very important place in the overall ecosystem. From my experience in working with NVIDIA, they're a company that cares very deeply about the end customers, people that are using the hardware, and people that are wanting to get the best experience for running high performance, computing, graphics solutions. It's been really amazing to watch them grow and scale into this opportunity.
+
+There are significant supply chain constraints. They have been, I think, taxed because of this step function increase in demand. It's not like a software demand step function increase, it's everything down from the foundry level with TSMC. It needs to be scaled up to be able to provide more [inaudible 01:09:25] to NVIDIA and ASML needs to make more EUVs.
+
+Ben: [inaudible 01:09:32] needs to make more very high power specialized lasers. There's a lot.
+
+Chase: The supply chain is big, complex, and it doesn't rapidly scale. I think that's all the more why it's important that NVIDIA really cares about end customer needs. Being a bespoke, independent cloud provider compared to an AWS, Microsoft, Azure, or GCP, we are afforded the flexibility of really purpose building the architecture and delivering it in the best way possible to customers.
+
+Amazon, for instance, made an acquisition of a company called Annapurna Labs. They've been trying to build their own AI accelerator chips called Trainium and Inferentia. Through that acquisition, they've also built their own high performance networking solution called EFA, Elastic Fabric Adapter. They're very committed to utilizing those things.
+
+The problem is, frankly, the market today is demanding the NVIDIA solutions. Even with the market demanding the NVIDIA solutions, it'd be us that's implementing their RDMA, non-blocking fabric through EFA, not through InfiniBand. There are some significant trade-offs that are being made there. Just having the flexibility that we want to build a platform that delivers the best experience to customers with the lowest environmental impact, it really gives us the opportunity to build things in the right way.
+
+Ben: You have no vertical or horizontal strategy conflict. You're trying to sell one thing to customers, so you're trying to make that experience as great as possible. When you sell a whole bunch of stuff, sometimes there are conflicts.
+
+Chase: Yeah, that's right. I think there's certainly a frenemy type relationship. When you look at the issues with Amazon building Trainium and Inferentia, Google building the TPU, these are these are meant to replace NVIDIA.
+
+David: At the end of the day, big tech, they have a very complex set of relationships that for you and NVIDIA is very simple.
+
+Chase: Yup. We're a customer. We want to deliver NVIDIA in its greatest glory to end customers. I also think NVIDIA has been very supportive of wanting to create a broader ecosystem of solutions than just AWS, Azure, and GCP. You've seen this emerging and burgeoning set of independent cloud services providers that are coming out with their own solutions, and delivering to end customers cool and unique ways of delivering infrastructure and enabling AI workloads.
+
+Ben: Cool. Before you run, you've financed this company in a very unique way. Can you talk a little bit through a capital structure, how much have you raised in equity? What type of folks have financed this company? And what are you doing that's unique?
+
+Chase: Obviously, our business is not just a pure enterprise SaaS business. It's pretty far from it. We have quite a bit of capex. We build technology. We build software solutions, but we also have physical infrastructure and big pieces of heavy machinery that are involved in the overall process.
+
+That led us to this unique, hybrid solution of being a fast growing startup that has gotten some venture equity funding. We've raised about 500 million in venture equity funding to date, coming from groups like Founders Fund, Bain Capital Ventures, and Valor Equity Partners. Those unfamiliar with Valor, they were very instrumental in helping Elon build a lot of his early companies between Tesla, SpaceX, The Boring Company, and Neuralink.
+
+Really, where they excel is around the operational expertise, oftentimes with either software or physical infrastructure companies. They've gotten deep with us on a lot of the physically operationally challenging aspects to our business and been very helpful in that regard.
+
+Most recently, in our Series C, our primary lead was a group called G2 Venture Partners or G2VP. It was formerly the Green Growth Fund at Kleiner Perkins, and they spun out, but they're very focused on decarbonizing technologies that are ready for scalability and growth. That's our core equity stack. We've had a bunch of strategics and other interesting investors get involved.
+
+One of the big areas of flaring, for instance, is the Middle East. Thirty-eight percent of the global flaring happens in the MENA region. That actually led to a handful of sovereign wealth funds like Mubadala, the sovereign wealth fund of Abu Dhabi, as well as OIA and IDO, the sovereign wealth funds of Oman, to invest in Crusoe, not just as a way to generate a financial return, but also as a way to bring an interesting, fast growing technology solution to help solve a domestic problem that is an issue for areas in the Middle East like Oman and Abu Dhabi.
+
+We've certainly done a lot of equity. On the capex side, we've done a bunch of very interesting things around, how do we actually scale the business without just plowing equity dollars into capex? At the end of the day, that's not really what we want to do.
+
+Ben: Actually, for listeners who don't come from the finance side of things, why is it a bad idea to just finance all the capex with equity? And when in a business's lifecycle can you explore other options? What level of predictability do you need?
+
+Chase: There's a bunch of fintech startups that will give you a whole bunch of different answers, everything from revenue financing to customer financing. There's a million different ways to finance everything these days, it seems. In our case, we really didn't want to finance big physical assets with equity dollars, because there is collateral there at the end of the day.
+
+David: It's like a mortgage versus venture investment. These are different things.
+
+Chase: Exactly. Most people don't buy their house with 100% cash because they can get a low interest mortgage, and the bank is happy to make that loan because there's existing collateral. If you stop making your payments, they can just take over your house and liquidate it for more than the outstanding loan that they have with you.
+
+In our case, we have large pieces of power generation equipment that we've been able to finance with asset-backed financing. There was one group that we have a large facility with called Generate, there's another group that we did something with called Northbase, and another group called SparkFun, all on the electrical and asset-backed financing for electrical systems and power generation equipment.
+
+What's cool about that is the way those are structured is they are asset-backed, which means it isn't debt that defaults up to the parent company necessarily. If we stopped paying, they'd come, they'd take the generator, and then they'd go liquidate it on a secondary market. They get made whole that way. It's not an incremental liability for Crusoe, the company. That's in our plan. If my debt holders are listening to the show right now, we entirely intend to continue to make all of our payments.
+
+Ben: But it's useful for listeners to understand how those things work and how it connects to the parent company.
+
+Chase: Exactly.
+
+David: This is how most of the non tech business world works. If you're Procter and Gamble or something, you're not financing your assembly lines with equity.
+
+Chase: Yup. Essentially, we have four big pieces of capex. We have generators and electrical infrastructure supporting the power generation side, we have GPUs and associated network equipment and servers, we have Bitcoin mining hardware, so ASICs that are used to whenever run the SHA-256d hashing algorithm. And then we have datacenter infrastructure, the actual physical boxes or buildings that we build to house the actual equipment.
+
+Our belief is that the best way to structure financing is actually to have each of those individually with different asset-backed loan facilities. We use equity capital to, essentially, continue to grow, invest in technology, hire the team, and also come up with our piece of the loan, essentially. You typically don't get 100% loan to value on something. Just like when you buy a house, it's typically not a 0% down payment. You typically put in 20%-30% as a down payment on a house. We do a similar thing with generators or GPUs with these asset-backed financing facilities.
+
+David: I would imagine, what's cool is there are pools of capital out there that are interested in the specific risk and return profiles of each of those different things, right?
+
+Chase: Exactly. We did a project financing facility with a really clever and creative credit fund called Upper90. This was actually focused on our Bitcoin mining business. It had equity -like constructs to it, but it had debt-like constructs to it. It was actually one of the keys to helping us get off the ground, it was through this facility.
+
+It was cool to see investors like that that were really willing to think deep creatively about what our actual revenue stream was, independent of where we were at in terms of stage of the company. We did that around our Series A, it ended up being a total of 55 million in total that we deployed through these facilities that really enabled us to grow and scale that digital currency mining business in a way that didn't dramatically dilute our equity cap.
+
+David: Right, otherwise you would have been adding on another $55 million to your Series A, and that would have sucked.
+
+Chase: Exactly. There are just creative financing solutions that people, by default, think they just have to go raise the next series of funding. I don't think that's the case. I think there's a lot of ways that founders can end up owning a larger percentage of their company by finding the right investor for the right component of their overall capital stack and capital structure.
+
+David: Did you have these relationships from your time in the financing quant world? How did you go about putting all this together?
+
+Chase: Some. One of the founders of Upper90, I knew he was at Goldman for a long time, and he was at Barclays for a long time. I just knew him through the finance world. Then he set up this bespoke credit fund and I was like, oh, this is really cool.
+
+On the venture side, a lot of it was just getting introductions from friends. People that I talked to that think my business was really cool, they'd be like, oh, you should meet my friend Scott Nolan, who's a partner at Founders Fund, or Salil Deshpande, who's a partner at Bain Capital Ventures. That was the early start for us and really leveraging our network of people that helped us get into the community of venture investors.
+
+Ben: This a great takeaway, I think, for founders among many on this episode. If you really do shoot for the moon, and you do something unique, challenging, good for the world, and clever, there are people who want to help your business succeed. There are doors that get opened for you because people are genuinely shocked, impressed, excited, and want to introduce you to their most valuable contact.
+
+David and I approached you 18-24 months ago and said, we normally don't cover companies at this stage. At the time, it was the LP Show, now it's ACQ2. Like, can we come talk with you about it, just because we're fascinated. It just opens doors for you, that if you're starting the next great SaaS company that helps you do project management, people are going to be like, cool, all right, later.
+
+David: Different set of challenges, but yeah.
+
+Chase: There's always room for a new SaaS company, I guess.
+
+Ben: It wasn't my point.
+
+David: Hopefully, it will be Crusoe AI infrastructure customers.
+
+Chase: It is hard to differentiate. I think we're probably going to see a wave of AI being the new platform. We're already seeing it, frankly. The amount of innovation, the amount of cool things being built by young startups leveraging AI as a mechanism to unlock new productivity potential, is absolutely insane and inspiring. I'm very, very optimistic for a lot of these cool things being built.
+
+David: It's always been a bad idea if you're a venture investor to stop investing in software startups. We should always invest in software startups in addition to super cool stuff like this one.
+
+Ben: Nothing wrong with 80% gross margins and super skill.
+
+Chase: Totally. Maybe they go up with AI, we'll see.
+
+Ben: Chase, I think that's a great place to leave it. Where can listeners find you? If they want to be customers, Crusoe employees, or invest in any of these different facets of the business, how can they get in touch and who should reach out?
+
+Chase: We're always looking for highly talented people that are motivated by our mission to align the future of computing with the future of the climate. The scope of employees that we have are probably much wider than most traditional tech startups. We have a wide range from high performance software engineers and infrastructure engineers to oilfield mechanics, electricians, welders, and technicians. It's not your typical software startup.
+
+David: You're not limited to just that audience.
+
+Chase: We're not limited to just that audience. We have a wide range of open roles. We're always interested in talking to talented folks. You can visit our website, it's crusoeenergy.com. That has a lot of our open listings.
+
+For those interested in leveraging our cloud computing platform that's focused on GPU cloud computing, you can visit crusoecloud.com. There, you'll be able to get more information on the instance types that we offer, the pricing, and cost savings that we're able to deliver, compared to many other incumbents
+
+Ben: Or just straight up availability of GPUs would be nice.
+
+Chase: Yeah. It is a rush right now. On the energy side, I think we're always interested in talking to new partners that are dealing with stranded or underutilized energy resources, we may be able to help them create more economic outcomes and more environmentally friendly outcomes.
+
+Folks struggling with flaring as a problem, if there's any listeners from the oil and gas sector, or any renewable energy producers that are struggling with curtailment or negative power pricing, we'd love to speak with you and see how we might be able to unlock value in that stranded energy with computing.
+
+Ben: Awesome, Chase, thank you so much.
+
+Chase: Thanks. Thanks for having me.
+
+Ben: Listeners, we'll see you next time.
+
+David: We'll see you next time.

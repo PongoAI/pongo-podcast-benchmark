@@ -1,0 +1,425 @@
+Ben:                 Welcome to Episode 17 of Acquired, the podcast where we talk about technology acquisitions. I’m Ben Gilbert.
+
+David:              I’m David Rosenthal.
+
+Ben:                 And we are your hosts. Today, we’re going to be talking about Google’s acquisition of Waze. But first, we talked about in our last episode we are going to be doing a community showcase and this week, it’s one of our listeners, Brian Sanders. He and his team are building something called Nexcast. Nexcast is a next generation podcasting client that has a lot of interactivity baked into it. So they look at the existing kind of flat one-way medium of podcasting as it is today.  Brian and his team are looking at ways to make it kind of more of a two-way street so you can have a relationship with a podcaster and click links and watch videos and things like that.
+
+The app is not totally built yet but their customer development process and kind of their pitching for funding and things like that is being covered in a podcast called Building Nexcast. So check him out at BuildingNexcast.com if you’re interested.
+
+David:              It’s really cool that we launched Community Spotlight and we did an episode about podcasts, and it’s like they were listening to the episode. This is perfect.
+
+Ben:                 Yeah, it's awesome.
+
+David:              So if anybody out there is building a social navigation app, please ping us.
+
+Ben:                 Yeah. If you would like to be on our next listener showcase and you’re working on something that you want to tell people about, shoot us an email at Acquiredfm@gmail.com or tweet us at @acquiredfm.
+
+David:              Or hit us up in the Slack group as always.
+
+Ben:                 As always.
+
+David:              All right. Ben, should we get into it?
+
+Ben:                 Let’s do it.
+
+David:              Let’s do it. Waze. I would presume most of our listener base is familiar with Waze but for those who aren’t, it is a social navigation app much like Google Maps or MapQuest, going way back, or Apple Maps. We’ll get into that in a minute. But you drive with friends.
+
+Ben:                 Yeah. So Waze’s magical insight is that there’s a whole bunch of data being collected on the road by other drivers all the time that can indicate things passively like oh, there’s high traffic there because people are going really slow. Now, Google has been doing that for a long time. They introduced that in 2009 based on data being fed back from Android. But what Waze does is it both plugs you in with a social network based on Facebook or importing your contacts and you can, while you’re driving, report things like red light cameras, like police officers, like traffic accidents and you kind of get a real-time map when you’re driving on the incidents on the road.
+
+David:              This is really cool because before Waze, there’s kind of like all of navigation and mapping was this like top-down thing where like TomTom or Garmin, like they had their data set that was canonical. Even Google was collecting it from Android phones, but before that, they were just buying it from these other companies. But the key insight in Waze was like people are driving around with this stuff like they should be sending data back about what’s going on in real time.
+
+So, yeah, cool history about how this started. So Waze is actually an Israeli company, and this is our first acquisition that we’re covering out of Israel. It was started in 2006 by five cofounders. I don’t know if I’m saying this right, Ehud Shabtai was the main founder and CTO. He was joined by Amir and Gili Shinar, Uri Levin, and Arie Gillon. And who’d had been given an old GPS system – well, new at the time but now old to our view GPS system – by a friend. You know, those things that, like, my dad still has one of these that are like the portable things like a Garmin type thing.
+
+Ben:                 Yeah, like in once a year or something you can download all the new map tiles.
+
+David:              Yeah, and you can plug it into your cigarette lighter car and suction cup it to your windshield. So he had been given one of these in 2006 and he thought it was super cool and he decided to write some software for it that would allow people to share information about where speed cameras were located on the streets in Israel, and it started to take off. But the company that made the GPS device that he had didn’t like it and so they sent him a cease and desist letter.
+
+Ben:                 Whoa.
+
+David:              I believe we read that. They said they’d be willing to, you know, integrate the software but he had to stop doing it. So rather than just giving them the software, he said, “Well, screw you. I’m going to take your mapping data out of this and I’m just going to create my own mapping data and I’m going to crowdsource it and build the user base socially. So he started a project called Free Map Israel. And the aim was just that, to replace the sort of top down map data set that this company had put in their GPS unit with a crowdsourced living and social data set and it started to take off.
+
+A couple of years later in 2008, things are going well and they changed the name of the project and the company to Waze. They changed the terms of the map data from being open and being usable by anyone to being owned by Waze. So Waze now owns and can commercialize all of the mapping data that its users are generating. So that was in 2008. Then in March of 2008, they raised their Series A, the first capital they raised, they raised $12 million led by Blue Run Ventures which is a US venture firm; and Magma Venture Partners and Vertex Venture Capital, I believe, who are really venture firms.
+
+It’s interesting later, you know, this comes to play after the acquisition. Noam Bardin who joined later in 2009 as the CEO of the company, he writes a blog post and he said, “One of Waze’s mistakes was the valuation of its Series A which significantly diluted the founders. Perhaps, had we held control of the company, as the Founders of Facebook, Google, Oracle or Microsoft had, Waze might still be an independent company today.” This was after the acquisition he wrote in the blog post on LinkedIn.
+
+Ben:                 Oh wow.
+
+David:              Yeah. So, the company continues to grow after they raised the Series A mostly in Israel and then they start to add other countries as well. In December of 2010, by that point they’ve reached 2 million users and things are growing pretty well. They have over 250 million users and things are growing pretty well. They have over 250 million kilometers logged in the app which is huge, again, compared to data that other mapping companies are using which is not live real data. This is a huge amount of mileage that’s on real city streets and routes that are getting uploaded to Waze.
+
+So at that point, they raised a $25 million Series B from the same investors plus Qualcomm. That was at a $95 million valuation. This was all reported in a Wall Street Journal article after the acquisition. At that point, they opened up their first office in the US in Palo Alto which is really cool. I remember when I started at business school at Stanford and seeing the Waze office just like on the street in Palo Alto, like, “Oh man! There’s Waze. That’s super cool.” It was a little storefront.
+
+Ben:                 I had that same feeling. I remember when I moved out to California for a summer for an internship walking up and down Castro Street and Mountain View and just seeing all the different startups. The one that actually sticks out in my mind was Meebo. I remember it was like that web-based chat software that I’d use a lot and it’s, like, really strange when you see a logo in real life that you’re used to seeing digitally like a physical representation on a building. You’re like, “Whoa, it’s right there.”
+
+David:              Yeah, this is one of those really strange things that when you live in Silicon Valley, you get used to really quickly and don’t think about, but when you first move there or you visit, it’s totally mind jarring. You see these storefronts and they’re actually storefronts in Palo Alto and Mountain View. Sometimes even in San Francisco, that will be next to retail shops and they’re like Waze.
+
+Ben:                 Yeah.
+
+David:              So they raised the Series B, they had about 2 million users. That’s December of 2010. Fast forward not quite a year to October of 2011 and here the intrigue starts to begin. October 2011, they raised their Series C. So less than a year later, they raised $30 million at about a $200 million valuation from Kleiner Perkins and Horizons Ventures. They announced that they have 7 million users at that point. So, October 2011.
+
+At the end of 2011, beginning of 2012, they announced they have 10 million users. So in just a couple of months they had 3 million users. Halfway through 2012 in July, they announced that they have 20 million users, so now doubled from 10 to 20 in 6 months. And then later on by the end of 2012, they get to 34 million users.
+
+But a really important thing happens in the life of this company and like I said, where the intrigue begins, in the summer of 2012, at WWDC, it’s amazing like how much Apple and WWDC ends up playing a role in our podcast here.
+
+Ben:                 Is this the Forstall…?
+
+David:              Oh yeah. Scott Forstall’s last hurrah, last stand. I was actually at –
+
+Ben:                 Wait, wait, say what it is.
+
+David:              Well, so yeah, I’m burying the lead here. Apple announces iOS 6 at WWDC 2012 and it, one of the marquee features is they’re launching Apple Maps. So they’re ripping Google Maps out of the iPhone. So until then, all previous versions of iOS had had the native built-in Maps software, was Google Maps.
+
+Ben:                 That was built by Apple but with Google’s data.
+
+David:              Data.
+
+Ben:                 Google’s map tiles.
+
+David:              Yeah.
+
+Ben:                 I think it was something like the contract expired and it was such that Apple didn’t want to renew the contract with the Google because they were starting to kind of part ways and get into a little bit of a war between the two companies. And Apple had to ship maps early because they couldn’t use Google’s data anymore and they didn’t want to re-up and they knew that re-upping would come with a really nasty price tag for them and a lock-in to send Google a bunch of data that they didn’t want to. I think Google is also requiring that people sign in with their Google accounts, which Apple didn’t want to do for privacy concerns even all the way back then. So, Apple kind of obviously rushed maps to market because there was really no other choice.
+
+David:              I think there’s even more context setting that needs to happen here which is that as we were doing the research for this episode, it just struck me how fast the technology world moves. This was only four years ago but it feels like a lifetime ago. I had completely forgotten all this stuff. At this time, the mobile platform “wars” were in full swing. Apple and Google are going at each other’s throats and everybody in the tech industry is like, “Who is going to win mobile? Is it going to be iOS? Is it going to be Android?” and the tide swinging one way or the other. People think that this is going to be a “winner take all” market at this point in time.
+
+The other thing that happened is Tim Cook had recently taken over as CEO of Apple. Steve Jobs had passed away. Tim and Apple, they were figuring out what was going to be the path forward. It was becoming clear that there was no way that they were ever going to catch up to or overtake Android on actual user numbers. But the world hadn’t come to the conclusion yet which now what we just accept as a given is that nobody won the platform war, like iOS and Android co-exist peacefully.
+
+Ben:                 Yeah, there’s this everybody builds for both mostly and Apple kind of has the more valuable customers and Android has most of the customers. That’s just the way the world works now.
+
+David:              And there are all sorts of tools now to make it easier to build for both. But that was not the world back then and so, this is the stage Waze had been operating for four years at this point, and it had been growing the user base nicely and riding the wave of mobile. But all of a sudden they are at the center of this huge conflict between these two behemoths.
+
+So in WWDC, Apple announces Apple Maps and this has been years in the making. But Ben, as you were saying, they had to rush the product to market when they actually shipped iOS 6 in the fall and it becomes super clear, like there was a ton of hype for this product. This was like the 10 pole feature of iOS 6. It becomes clear within a week that it is hugely broken and there are all these reports of people getting sent to the wrong addresses, causing all sorts of problems and accidents, and it is a disaster for Apple when this happened.
+
+Ben:                 The story that Apple is trying to tell is it’s two-sided. One is that we really messed this up and we apologize. Tim Cook comes out with that public letter.
+
+David:              Writes a letter, posted it on Apple.com apologizing. This has never happened before in the history of Apple. People are saying, “This would never happen under Steve.”
+
+Ben:                 Right. But on the other side, Apple’s hedging and they’re saying well, it takes a lot of time for the data to come in for it to get better. Apple Maps is only going to improve, which is true,
+
+David:              Which is true.
+
+Ben:                 It’s gotten dramatically better and that’s the exact same story they had with Siri. Going back to the Steve Jobs comment, it’s funny. This feels like actually a tremendously Steve Jobs move because Steve is famous for saying he’s going to go thermonuclear on Android andwhen he gets into a tiff, they get into a tiff and like even if it has some fallout like we saw here, I think that that’s a very Steve move. Actually Scott Forstall was largely responsible for this and he was Steve Jobs’ protégé.
+
+David:              Yeah. So closing the loop on the Apple intrigue here, this ultimately ends up in Scott Forstall getting fired.
+
+Ben:                 Scott refused to write the letter.
+
+David:              Refused to write, refused to sign it. Only Tim Cook signed it even though Scott had publicly introduced the Maps product. It was clear it was his product. Before Steve died and Tim became CEO, the public talked about like, “Hey, is Scott Forstall the next CEO of Apple?” This guy, he’s not just like some Apple exec. He was Steve Jobs’ protégé.
+
+Ben:                 Yeah. It’s amazing that in this letter that Tim Cook writes, he lists some alternatives for people that are dissatisfied with Apple Maps and says it’s going to get better.
+
+David:              Alternative products.
+
+Ben:                 But lists Waze as one of the products that people should go and try out instead of Apple Maps.
+
+David:              In the letter. Which is, again, this is like uncharted territory for Apple at this point. Again, because with the backdrop of they are locked in this feature war with Android and another one of the reasons why that people speculate about why Apple and Google couldn’t come to terms to keep Google Maps within the native iPhone software is that Google had recently shipped turn-by-turn navigation in Google Maps for Android, but it wasn’t available on Apple. People were speculating that Google was withholding that ability which is hugely compelling. You got to remember, again, more in context this is like TomTom and Garmin and all these guys had navigation apps in the App Store at the time and they cost 100 bucks.
+
+Ben:                 I think they were patented like Apple, for whatever reason, I remember maybe I was wrong about this but I remember the reason being that Google Maps for the iPhone didn’t have turn by turn is because those companies owned the patent to that.
+
+David:              Could have been. Maybe Apple is concerned about that.
+
+Ben:                 Maybe licensed to Google or something.
+
+David:              But it was bizarre like the official Maps app on iOS, you only just got a list of directions. It wouldn’t talk to you and say like “turn right in 600 feet or whatever.” You had to scroll through the list as you were driving or walking or whatever. It was terrible now looking back on it. But if you wanted turn by turn directions, (A) you got crappy products with crappy data from companies like TomTom and whatnot. But you had to pay 50 or 100 bucks for that just for the app. Can you imagine paying 100 bucks for an app now?
+
+Ben:                 Right. So the stage is set.
+
+David:              The stage is set. So in the middle of all this, Waze is free and Waze provides pretty good mapping data and application. So it was October 2012 by the time the dust settles. Apple has fired Scott Forstall. Then rumors start swirling that Apple is looking at acquiring Waze.
+
+Ben:                 Which was actually never true that I believe it was, who denied it, Apple…
+
+David:              Well, Apple denies everything.
+
+Ben:                 Anyway, Apple denied publicly.
+
+David:              Apple denied publicly but you got to imagine that in the wake of this that they’re looking around saying, “Oh my gosh, what are we going to do, like, we just have this egg on our face and here’s this pretty app that is pretty good in the store and has a really interesting data model. Maybe we should buy it.” The rumors were that they were talking about a $500 million acquisition with Waze. How far that went, we don’t know. But it doesn’t come together.
+
+At the same time in December of 2012, so a couple months later, Google launches a standalone Maps app, the Google Maps app on iOS which many of us, myself included, now use and love. Does include turn by turn directions, but it’s just a regular app in the App Store.
+
+Ben:                 And it was great. It was this incredible… actually I know that it was a 5-person team that did the native code actually in the Kirkland office here in Seattle.
+
+David:              Oh, cool. I didn’t know that.
+
+Ben:                 Yeah. I think the back end was all down in the Valley but the actual iOS app, the objectives, it was written up here.
+
+David:              And when it comes out, it gets huge praise. It was better than the Android app.
+
+Ben:                 Yeah, that was a big blowup. There’s all these articles written about Google’s new design paradigm because it was uniquely iOS but still familiar for people that loved the Google interface and they found this amazing way to combine the two design languages and there were pieces written. There was a fast company piece that was written about how Google had this design studio in New York and they would go and work with all these individual business units. I thought that it was really well made and I think the rest of the world did, too. It was so well received.
+
+David:              I think actually that moment looking back on it now is the beginning or the heralding of the end of the mobile platform wars. Now, I think we can look back on that and say that was the moment when the world, at least Apple and Google both decided that like, “Hey, we can peacefully coexist here.”
+
+Ben:                 Yeah. And Google knew that they had a good product on their hands and if they released it, and I believe you still have to, when they released it, you had to sign in with your Google Account so that was a path to getting a whole bunch of data that they wanted.
+
+David:              Yeah. Then Google realized they were getting all this data and all this monetization opportunity on iOS and it actually super valuable for them.
+
+So that was at the end of 2012 going into beginning of 2013. Another piece of context here is that Facebook is now emerging as the big giant counterbalancing Google, again, in the post, you know, as the world is determining that Apple and Google can peacefully coexist. Google’s main enemy shifts from being Apple to being Facebook.
+
+Ben:                 Yeah. It’s funny that it was Apple. It’s this weird detour. Google’s core competency is being the best search engine and that turns out to be a tremendous ad platform. So 90-some percent of their revenue to this day still comes from search ads or search engine display ads. They shifted direction. It almost seems like Android was a little bit of a distraction to go to war, like they needed Android for a variety of reasons but it made them focus on Apple as the enemy since Apple was also producing this rival OS that came with great hardware. But really, Apple wasn’t after Google’s core business of search queries that lead to tremendous ad –
+
+David:              No. Nor was Google ever after Apple’s core business of hardware sales. Google doesn’t make money on hardware sales for Android.
+
+Ben:                 No, but they really went to bat on trying to displace the iPhone.
+
+David:              Yeah. It's weird like historically, Google and Apple had always had this great symbiotic relationship.
+
+Ben:                 Google does the services. Apple does the hardware, native software.
+
+David:              Eric Schmidt was on Apple’s board until Steve Jobs kicked him off after they launched Android. Really, but you know, then at the end of 2012, when Google launches Google Maps on iOS, it’s like the detente is reached and since then, it’s like, I wouldn’t say it’s back to the good old days but Google and Apple both realized like, “Hey, we’re not each other’s enemy here.”
+
+Ben:                 Yeah. Apple makes hardware and software that are excellent, sells the hardware. They have services that differentiate them but ultimately you can plug in Google’s superior services on any of those devices.
+
+David:              And have a great experience, and it’s symbiotic.
+
+Ben:                 You can see why Google felt so strongly that they needed to control the input pipeline. It’s the same reason that they made Chrome. It’s the same reason that they’re distributing Chrome books. Anybody who’s the front door to the user has the power to redirect that like Apple shipping all these services associated with Bing in Siri and maybe even the default search engine on iOS.
+
+David:              Still Google but that’s always back and forth.
+
+Ben:                 You can totally see why Google is like, “Okay, we need to make sure that we don’t lose billions of people.”
+
+David:              The front door to the internet which is where we make our advertising money which is foreshadowing.
+
+Ben:                 Yeah, yeah.
+
+David:              So Facebook goes public right around the same time as WWDC in 2012, the beginning of this Maps drama, the real threat emerges to Google and that’s Facebook’s IPO.
+
+Ben:                 Yeah. Google’s castle is where are people going to spend their ad dollars digitally.
+
+David:              And that’s linked to where people spend their time and where people’s front door to the internet is.
+
+Ben:                 Right.
+
+David:              It’s like “Oh man, that’s Facebook increasingly.”
+
+Ben:                 Yeah, Apple’s not going to eat Google’s lunch. They have no incentive to try and get that advertising pie. But like Facebook sure is. That’s their core business. That’s the real threat.
+
+David:              Yeah. So we’ve just gone through this wild ride. Apple was rumored to be circling around Waze, thinking about a half a billion dollar-ish acquisition to fix their mapping issue, falls through. But then a couple months later in the spring of 2013, rumors start circulating that Facebook is not only interested in Waze but is going to buy Waze, and going to buy Waze for about a billion dollars. This was in the press for weeks. It reminded of the twitch deal about a year later in that everybody just thought this was a done deal that Facebook had bought Waze.
+
+Ben:                 Yeah, and in my research trying to look and see how Google justified this acquisition and how Waze was doing as an independent business beforehand, so many of these articles that are all loosely titled “Why is Waze worth a billion dollars?” were written before the acquisition.
+
+David:              Yeah, nobody even knew Google was in the mix at this point. This was about Facebook.
+
+Ben:                 Yeah. So the Facebook deal falls through.
+
+David:              And we don’t know. Unfortunately, Waze was not a public company so we can’t go through all the SEC filings and do our usual magic and to date, there haven’t been any lawsuits for us to go through a discovery. So we may never know exactly what happened with Facebook, but in some of the comments that the Waze team has made after the acquisition, one of the key sticking points apparently was that Facebook wanted to move the whole company to Menlo Park to California, and the team really wanted to stay in Israel. So weeks keep going by and the world assumes Facebook has bought Waze but it hasn’t been announced yet. Then kind of out of the blue, June 2013, it’s announced that Google is buying Waze for right around a billion dollars, somewhere a billion one and a billion three. Most of it was cash but there were other stock and other considerations, and that the team is staying in Israel. Some of the Wazers who were in Palo Alto were joining Google in California but the core team is staying in Israel.
+
+Ben:                 Yeah. They had a pretty immature location-based advertising product right around this time. Do you know when they actually started having a business model other than –
+
+David:              Waze did.
+
+Ben:                 Yeah.
+
+David:              I thought you were referring to Google had a pretty immature location-based advertising product at this point in time, which also might be an accurate statement. This was, I believe – When did Marissa Mayer leave Google to take over Yahoo? Topical as Verizon just bought Yahoo this week. But Marissa had been in charge of local and location-based advertising products at Google before leaving for Yahoo. I don’t remember. I think she had left for Yahoo at this point. But anyway…
+
+Ben:                 What I was sort of getting at is this billion dollar valuation has very, very little to do with.
+
+David:              Wherever Waze was in their monetization path. And they were doing things like they had sponsored gas stations and they had some, you know, like Safeway and other location-based advertising on the map. But I mean, this was, well, we’ll get into acquisition category. Let’s just get into acquisition category right now. I mean, this was not a business line acquisition. I will come down hard on that.
+
+Ben:                 No.
+
+David:              What’s your categorization, Ben?
+
+Ben:                 I want you to go first because I’m going to do something unorthodox.
+
+David:              I’m going to do something unorthodox. That’s why turn the volume up. Okay, I’ll go first.
+
+Ben:                 All right. Well, I’m doing it. So traditionally on this show we categorize either by people, technology, product, business line or other. I don’t believe this falls in any of them because this is a data acquisition.
+
+David:              I agree.
+
+Ben:                 David, it's funny, you were just bringing up right before we talked about the show. I want to introduce for Acquired going forward another category of asset.
+
+David:              Yeah, this is clearly an asset buy.
+
+Ben:                 Is that what –
+
+David:              That’s exactly what I was going to say.
+
+Ben:                 It’s like right in here… all right.
+
+David:              Are we sharing notes or something? Are you cheating on the test, Ben?
+
+Ben:                 No, absolutely I’m not. We actually started like, what, 5 or 6 episodes ago. David and I realized that it wasn’t very fun when we talked beforehand and then we’re of one mind when we had gotten into the show and then we would refer to things like we were talking before the show which is less fun for you, guys. So we were like okay, we’re going to stop talking before the show except for a few things here and there to make sure we have all of our bases covered. And sure enough, here we both are again.
+
+David:              Yeah. This is so clearly what it is because if you run through all of our previous categories for acquisition like this was not a people acquisition. The Waze founders were clearly very talented. But Google had plenty of people who were great at –
+
+Ben:                 A billion dollars is not a talent acquisition.
+
+David:              Well, I mean, yeah, no it’s not. This was not a technology acquisition. The technology is we’re just saying that was actually in the Google Maps asset was arguably as good or better than Waze at the time.
+
+Ben:                 Yeah. They didn’t have active reporting but they had the passive reporting of traffic and had been doing it forever. I actually had in my notes from real early research why doesn’t Google just do this themselves because this is exactly the kind of thing they’re good at.
+
+David:              Yup, it wasn’t a product acquisition. Waze still exists and lots of people use it and love it, but they didn’t replace Google Maps with this.
+
+Ben:                 No. It’s in fact not even part of the Google suite. Google finally now is bundling it as one of the OEM options when you get to choose all the Google services when you’re making an Android phone. But it's still not a Google branded product.
+
+David:              Google Maps is still clearly the flagship location-based product. It definitely wasn’t a business line. But it definitely was an other/asset buy. And the asset was I think a couple of things in this case which is really interesting. I think we talked about this a little bit with LinkedIn but this was a data asset. Waze generates so much very, very valuable data that would be valuable to lots of people but especially to Google in terms of improving the core maps product, in terms of their driverless car initiatives and everything they’re doing with transportation. You know, having real-time data. And not just passive data being streamed back from the phone like they’re doing with Google Maps but things like where traffic stops are, like user-reported accidents controversially but has always been part of Waze reporting, where police officers are and speed traps and red light cameras and things like that. But also super clearly as we’ve just been talking about with this whole drama leading into the acquisition, this had huge defensive value for Google. They did not want Facebook to have this.
+
+Ben:                 Yeah, and even more than the actual asset of the data is they bought this data gathering machine and I think that’s why we haven’t seen them mess with it at all is because it had a great growth trajectory particularly after the Apple Maps debacle, it was growing at 100,000 new users a day. It was insane. That obviously is short-lived, but they recognized that this thing is going to continue to feed us really great data and data about the real world and mapping data is something that is in need of being constantly updated. Waze has invented these great mechanics that people often complain about because they say they’re distracting while they’re driving. But they've really created mechanics that people reliably feed really up to date information in high fidelity.
+
+David:              Yeah, both passively and actively.
+
+Ben:                 The super high value asset is nailing the creation of that machine and the user experience that compels people to continue to do that over and over again.
+
+David:              Well, I don’t know if I want to say I’m glad we’re in agreement but I think we should add this to our categories going forward because this is so… usually in other it’s like oh, it’s a one-off, but this is very clearly a category that we just haven’t come across before.
+
+Ben:                 Yeah, I agree.
+
+David:              Cool. So what would have happened otherwise? I feel like in a lot of ways it’s through what we were discussing in the history with the drama and all the different big tech companies circling around Waze. This company was going to get acquired by somebody, so I think that’s what would have happened otherwise. It’s also interesting to think though, I mean, this was in 2013. Again, not that long ago. Reminding me again how fast the technology world moves. I feel like Ferris Bueller here. If you don’t stop and look around, then once in a while you might miss it. Nobody was thinking about driverless cars then. Today, like people think driverless cars are going to be the second coming and every tech company and their mother is going after it.
+
+What’s interesting is that Israel is actually really… companies in Israel and talent in Israel are really well positioned in this. There’s a company called Mobileye which is a large public company now that makes a lot of the sensors that go into cars that are used for autonomous and semi-autonomous applications.
+
+Ben:                 Is that that military influence?
+
+David:              Well, everything in Israel influenced. But it’s interesting to think like would an independent Israeli-based transportation and driving-focused software company combined with the hardware talent there be a real player in the race for autonomous cars today? I don’t know. Big asset to Google right now.
+
+Ben:                 Yeah, the hard part would be production. That’s something that traditionally American manufacturing has been very good at making, but the Japanese are probably forthcoming, Chinese cars.
+
+David:              It’s interesting too. I mean it’s just like that market still has so far to go to play out like do you actually have to make the whole car yourself? Could you make kits to put into cars that lots of people are trying to do? Can you just be a pure software platform?
+
+Ben:                 I think if I’m the car companies right now and realizing that there’s going to be this driverless future, I think you have to make the bet that people aren’t going to want to buy your cars en masse, but people might want to subscribe to your fleet and it would be like a Mercedes based Uber, like a self-driving Mercedes based Uber and the question is would people rather subscribe to an individual auto manufacturer’s fleet or the things you can do for lock-in there, or would people rather subscribe to a more generic fleet going on Uber.
+
+David:              In terms of thinking about themes we’ve talked about on this show a lot, in terms of Ben Thompson’s aggregation theory and owning the customer and the user experience, is Waze, is Google Maps, is that the user experience for driving now and then the cars at the backend. I don’t know. Maybe we should also spend a minute, I think it would be because this is just pure speculation as well as the next topic. But what if Facebook had bought these guys? Like what does the world look like now? Facebook has basically no play in transportation.
+
+Ben:                 Yeah. This isn’t quite transportation but Facebook is doing something like crazy cool drone stuff.
+
+David:              Oh yeah, super cool.
+
+Ben:                 So Facebook’s core competency is delivering ads to people and they’ve basically run out of people with internet. So to expand past their existing massively saturated user base, they’re trying to get internet to more people. So there’s a team, I think it’s a London-based engineering team that created –
+
+David:              I believe it was a company they acquired.
+
+Ben:                 Yeah. They created this gigantic drone that can… it’s super lightweight and can beam internet down and can fly for a month at a time. So it’s interesting like while they’re not in the transportation space, they are in sort of the large-scale manufacturing space for completely different reasons.
+
+David:              It’s super cool. This thing is awesome. It is a giant drone that can stay in the air for months at a time and beam internet down and probably do satellite imagery applications as well. Super cool.
+
+Ben:                 Yeah, it is interesting. You could see Facebook buying this just to more effectively deliver local ads. I mean this feels like Facebook at this point is looking for… basically, Facebook is buying digital social billboard space. And that’s what Instagram is. I don’t know if that’s what WhatsApp is. That eventually is what Oculus is. They create these experiences and Facebook extends their core competency of being an advertising company into that, I think. It’s wildly speculative but basically Waze fits into that category of digital social billboard space where stuff comes up that is relevant to you or people want to show to you or your friends recommend. I think it makes sense in that context and it just doesn’t get used for the autonomous car stuff at all.
+
+It is interesting like to this point until about two minutes ago, we’ve been talking Waze in the context of the world when it was acquired. And it is interesting now to start thinking about it in the context of the world several years from now that’s much more focused on requiring a super high fidelity data asset for autonomous vehicles.
+
+David:              Yep. Which is like clearly Google, they had already announced that they were working on self-driving cars as part of Google X at that point when they acquired Waze. But very few other people were thinking about this at that point in time. How much did that play into this acquisition or not at the time, you know, hard to say but it’s clearly like for them as a defensive move versus everybody else that’s trying to get into it. I mean like Facebook might have bought it, but what if Tesla had bought Waze?
+
+Ben:                 Right.
+
+David:              Or what if Apple had bought Waze as they were trying to and Apple is now as widely reported working on self-driving cars.
+
+Ben:                 Yeah. Did you just see they put Bob Mansfield in front of that and in charge of it?
+
+David:              I saw that.
+
+Ben:                 Bob Mansfield is like their senior VP of hardware and then didn’t agree with management or something when Scott Forstall was still there and then moved to head of special projects and seemed like he was half retiring. But now he’s really back in full force with Project Titan. I think that’s the code name for the Apple self-driving car thing.
+
+David:              Yeah, interesting. All right. Should we move on to tech themes?
+
+Ben:                 Yeah. Not that we haven’t been in there for the last full minutes.
+
+David:              Well, so I’ve got two here actually. And one, I’ll just do quickly which is we’ve mostly covered in this past section. But it's sort of the value of a data asset and but specifically, the bent I wanted to talk about, it is like it’s when you have the potential for a very valuable data asset, you can use that as like a way to upend the business model in the industry that you’re playing in and just give something away for free. So in this case, like turn by turn navigation apps cost $50 to $100. But Waze can just give it away for free because they’re going to get their value out of getting the data.
+
+Ben:                 And they don’t have to pay to acquire it.
+
+David:              Right, yeah, they don’t have to pay. I think we’ve seen this in various ways in other acquisitions both that we’ve covered on the show and ones that we haven’t yet like I’m thinking about Instagram. Instagram was a social network but there was also this app called Hipstamatic that was out before Instagram that was basically just the same thing but it cost $3 and it gave you cool photo filter for your photos. Instagram came out and made it free. Like lots of people I’m sure tried Instagram because they’re like, “Oh, cool. I wanted to use Hipstamatic but I didn’t want to pay $3.” Same with LinkedIn. If you wanted access to people’s resumes, you had to pay recruiters and go through databases. LinkedIn was like, “Resumes are free.” Skype did the same thing with phone calls. WhatsApp did the same thing with text messages.
+
+Ben:                 It’s a really interesting way of looking at that, that I didn’t really thought of before. It’s like all of these companies found a way to make something free that was previously expensive and then could upend their business model.
+
+David:              I think a lot of the initial users that came on to these platforms were probably just like cheapos who were like, “Oh yeah, I was thinking about using Hipstamatic but I really don’t want to pay $3.”
+
+Ben:                 Which is like everyone. I do that, you do that.
+
+David:              Exactly. We’re all cheapos in various ways. But that’s the thing about how you can get this “winner take all” markets and what you need to tip the market in your favor is you need to… Like I love the Jeff Bezos quote at the Code Conference this year which was one of our Carve Outs a while back. There’s this thing he says, I think it was either Kara or Walt was asking him about Prime and he’s like, “I wanted Amazon Prime to get to the point where it would be irresponsible not to be a Prime member because you’re getting so much value out of it.” That’s what this is here is like it would be irresponsible to pay for Hipstamatic because you get more value out of Instagram and it's free.
+
+Ben:                 Especially with network effects. Of course you get more value out of it, everyone's using it because it's free.
+
+David:              Exactly. Network effects, they’re a beautiful thing.
+
+Ben:                 Yeah. All right. I’m going to do my two now. That was just one of yours. Do you have another one coming?
+
+David:              Yeah, but it’s fast.
+
+Ben:                 Cool. I’m going to do both of mine now because they’re related. One is bringing measurable online advertising into the real world. Google and Facebook both have add units around this now of trying to attribute when you see ads online and when you go to physical retail stores and understanding where those places are, tracking you either via GPS or sensors when you’re in the store, trying to bridge transactions in the store and really get some good measurement around the holistic view of you in the real world and you online. Waze totally does this. You see a digital ad, you tap on it, you navigate to go there and like people don’t even think twice about the privacy because the main purpose of Waze is knowing where you are. So you hand that data right over. You say “I want to go to this place,” you navigate there. They might have paid for that ad and or it might be a place that you’re kind of organically trying to go to and then Waze knows that for sure you went there. Which makes a pretty valuable ad unit and kind of ahead their time. I think people were talking about doing this for a long time but the idea of putting it into an app where you very explicitly have said “please track me.”
+
+David:              Did I actually go there? Yup.
+
+Ben:                 Yeah. And then this kind of falls out of my second piece or my second tech theme which is banner ads totally failed on mobile. Display ads were a thing on websites and people tried to put banner ads on mobile but they’re such a little screen real estate that even the display ad people on mobile have mostly fallen back to just putting a big freaking desktop square in the middle of articles.
+
+David:              This would be a fun episode to do that at some point but when Google bought AdMob and Apple bought Quattro Wireless, everybody though mobile display was going to be such a thing.
+
+Ben:                 Yeah, there’s that slide every single year in Mary Meeker’s deck that says that the mobile ad opportunity is still huge because the amount of minutes spent on mobile versus on desktop way outpaces the actual ad spent on mobile versus desktop. That’s because, like, this is my tech theme. We’re just now seeing the emergence of affective native advertising on mobile and as it turns out, it’s not a banner ad, it's not a square. It’s not interstitial. It’s none of those things.
+
+David:              Instagram, Snapchat.
+
+Ben:                 Yeah. And it’s Pokemon, right? Like it’s figuring out what the very specific tailored experience someone is in when they’re immersed in this single full screen application and like in the Pokemon case, it’s my God, they’re so obsessed with finding that we are so obsessed with finding the Poke stop or the gym and like, businesses can pay for the right to direct people to go places in the real world. That’s going to be, in my opinion, the way that mobile advertising succeeds, is that it’s native, it’s very specific to the platform and it took us freaking 10 years of mobile to figure out what the right way to advertise to people on that platform is.
+
+David:              It’s such a classic case of the mobile display ads being the head fake that it was a faster horse. Right? Like it was the totally wrong way to think about it and we see this over and over again in technology that, and like, and we especially see it being in the startup world, so many times people recognize an opportunity coming in a wave, but their mode of thinking is stuck in the old world. Right? It’s the faster horse thing. You know you need to build the car. And Pokemon Go is the car. Snapchat is the car. Instagram is the car. AdMob was the horse.
+
+Ben:                 It's a $750 million horse.
+
+David:              Hey. Good for them. And Omar, former CEO, is at Sequioa now.
+
+Ben:                 Hey.
+
+David:              He’s doing great. It worked out for everybody. I’m going to my second one real quick. We’ve also talked about this before but I think really, I put this in here because there was a great quote in that same blog post I referenced earlier that we’ll put in the show notes from, Noam Bardin who was the CEO of Waze and still is from 2009 onward, and the theme is that like entrepreneurship is a global theme now. Silicon Valley is this incredibly special place and has its own network effect and is where the vast majority of startups are going to come, but like, innovation is not a physical location-based thing anymore and Noam puts this great in his blog post. He writes about how Waze was an Israeli company and the important of that.
+
+He says, “Growing up in Israel in the '80s and '90s, I lived in a radically different world than my American cousins. We had one channel of black and white TV, music and movies arrived 10 years later, there were no fast food or American brands – we lived very differently.” Then he talks about how “Cable TV started flattening the consumer experience in the ‘90s. The Internet accelerated this change as people globally used Windows PCs and Explorer browsers to surf web sites. Social and platforms have pounded at it again, as today most users have the same Facebook account or Gmail interface and use it very similarly. The final flattening of innovation in the world came from mobile. Anywhere you go in Israel today you will see iPhones and Android Phones, same as in San Francisco, running the same consumer apps and delivering equal joy. On a family vacation with Waze management, it was amazing watching our kids, both Israeli and American, naturally communicate and share apps without the need to speak the same language.”
+
+This is like a sea change that’s happening in innovation and we’re seeing stuff like the apps like Musical.ly now that are getting big. It’s based in Shenzen but it's a big social network in America.
+
+Ben:                 Yeah, there is still something to be said for density of networks, just the people that you encounter and the people you work around and the speed at which information gets exchanged there.
+
+David:              Absolutely. I think the nuance here though is something like Musical.ly, something like Waze, it's in both places. Musical.ly is in Shenzen and it’s in Silicon Valley. Waze was in Palo Alto and in Israel.
+
+Ben:                 Definitely the dual office thing. I would say you still sort of need to have your finger on the pulse in the hub.
+
+David:              Absolutely. Well, we talked about this with Scott like the importance with… in the Exact Target episode. It was so important to Scott and to Indianapolis that they get the direct flight to San Francisco.
+
+Ben:                 Yeah. It’s a great point.
+
+David:              Okay.
+
+Ben:                 Grading it.
+
+David:              Let’s grade it.
+
+Ben:                 So it's interesting. There’s two criteria to think through here. We’re three years out from this acquisition so we have a little bit of perspective. We can see what they’ve done with it so far. But then you also have to take into account the speculative view looking forward which is a lot around autonomous vehicles. And I think they’ve done a pretty… it’s really hard to figure out what the size of the ad business within Waze is. I predict it is nowhere near close to paying back the purchase. This as a product –
+
+David:              I would be shocked.
+
+Ben:                 Yeah. This as a product is not going to pay for itself, but the data asset has stayed really strong. People still use Waze all the time. Many Uber drivers are using it and preferring it to Google Maps. In developing countries it’s used way more often because the crowdsourced data is way more accurate. So as those countries really start to come online, their default experience is Waze, it will be not great for Google if that was out of their hands. I think that that combined with Google’s autonomous vehicle future and the great data that it develops, that creates for itself, for its use and its own app, and it feeds into Google Maps, I’m going to go A- only because the A’s that we’ve given out are just like widely successful on a ridiculously fast scale.
+
+David:              To me, it's almost like in some ways this is… I’m going to give it a grade but how I really feel, and I know this is a cop-out in some “ways,” it's too early to tell like even though this happened three years ago and it's too early to tell because just like three years ago and this whole Waze story I feel like was really the closing chapter of the mobile platform “wars”. You know, what’s happened since then, we're now at the emerging of the era of machine learning is really the important thing in technology like went from, you know, Google’s being very open and saying this about themselves, but we went from a world, call it 10 years ago, where companies were internet first companies. We weren’t software companies. We were internet companies to from 10 to 5 years ago, the world shifted to mobile first companies. Companies aren’t just internet. They’re mobile and they’re not spilling desktop websites, but now, we’re shifting to a machine learning-based. Companies are ML first. Google is very explicit. We are an ML first company now.” And you see that across all of our products with Google Brain, with Maps, with TensorFlow and the first, I think, like huge native ML application that industry that’s going to happen is probably autonomous vehicles.
+
+Ben:                 Already is.
+
+David:              Well, yeah, it already is. I mean Tesla is doing it. It was like this was the Trojan horse. So how important Waze and the Waze data becomes in that to Google? Like I said, I think the value is still in the future. But that said, for the defensive reasons we talked about and for the value that they’ve realized even so far along that. Yeah, I mean I think it’s an A- because like you said, our bar is very high for the A’s.
+
+Ben:                 Yeah. It’s an A- with low confidence that it’s going to stay there. It either is going to be an A or it’s going to not be an A-.
+
+David:              Yeah, right. It’s interesting like compare that to Cruise which GM bought for a billion dollars, like right around the same amount of money, arguably there’s a lot more value in Waze thus far that Google has realized, then Cruise is still very much a pre-product. So, we’ll see. Part of why I say though is that it's too early to tell.
+
+Ben:                 Yeah.
+
+David:              Okay. Let’s bring this one on home. So follow-ups, we got nothing for you this week. But maybe next time. Maybe we’ll talk about autonomous vehicles. Carve Out, what you got, Ben?
+
+Ben:                 All right. So I’ve got a podcast for us this week. I listened to one episode of this because I got totally roped in actually, a while ago, to a podcast called Song Exploder, their first episode which featured the postal service. What the host does, Hrishikesh Hirway, he sits down with an artist, a musical artist, does an interview and also gets them to provide the actual track, all the different tracks that make up that song and he’ll listen to each layer and play each layer individually and have a conversation with that artist about where did this individual sound come from and where did this instrument come from and who provided this and who did you collaborate with. A lot of times they even come with early recordings and demos and songs that inspired that song. He does a really great job of kind of isolating these individual pieces so you go, “Whoa, I can totally see that.” And one of my favorite bands is Odesza. I saw them this weekend at Seattle at Capitol Hill Block Party. Their episode is super, super cool. They talk about when they went over to Bainbridge Island to compose this song and that’s super cool but the best episode in my opinion, and it’s sort of dangerous to start with this one because it sets the bar high, is an interview with Weezer where the systematic approach to songwriting by this dude is absolutely amazing and he has spreadsheets full of lyrics that come out of his journaling that he highlights that he then puts in there in tags by the number of syllables and the on-beat and off-beat and then combining all these different ones after he writes. It is like, I’m not doing it justice. You got to listen to this. It’s the Weezer episode of Song Exploder. It’s so good.
+
+David:              Dude, that’s awesome. I’ve heard about this podcast and been meaning to check it out. But I really need to do now. That sounds really cool. It’s like they’re doing to songs what we do to M&A deals.
+
+Ben:                 They are. The production is so, so high quality. It’s a total treat to listen to each one. It’s gotten me into bands I didn’t like before and it's gotten me to songs where now when I hear some of these songs after I hear it get exploded for 20 minutes before, it’s like that song that comes one, that’s one of my favorite songs if it was an episode.
+
+David:              That’s awesome. So my Carve Out for the week is an oldie but goodie that was sent to me recently by a really good friend. And I’m so glad he sent it to me because it’s a TED Talk and it’s Simon Sinek’s “Start With Why” TED Talk. It’s one of the top 10 TED Talks. It’s interesting that it’s a TEDx Talk done at TEDx Puget Sound here in, I believe it was in Seattle in 2009. It's just such a cool concept and it’s called Start With Why and he ended up writing a book about this. But in the sort of more raw version of the TED Talk, he talks about it as the golden circle and there are three levels of communication about a company or a product or a person or a firm. There’s the what you do, there’s the how you do it, and there’s the why you do it. And 99 percent of companies or firms or products or people say, “Hi, I’m David. I’m a venture capitalist at Madrona Venture Groupin Seattle, Washington. We do seed and Series A deals, invest in seed and Series A stage technology companies largely in the Pacific Northwest and would love to talk to great companies.” So it’s like, people start with what, then they do how and then maybe they do a little bit of why. But if you actually want to inspire people and reach people and do something that has a much higher chance of success, you need to reverse the order and start with why. Say, “I’m David Rosenthal. I believe that all great companies in the Pacific Northwest deserve a chance to have an experience with their venture capital firm that’s every bit as high quality as the best companies in Silicon Valley get. Do you want my money?”
+
+Ben:                 Yeah, that was a lot more human than the last.
+
+David:              Then it just comes across just by reversing about talking about why you’re doing something and what you believe in, it’s going to be so much more powerful than starting with the what. Interestingly, Apple is the company that he uses as the canonical example here. We think differently at Apple. We have beautiful, intelligently designed products and those products happen to be phones and computers, not we make computers –
+
+Ben:                 And cars.
+
+David:              And cars, yeah. Now we make computers and phones, we design them beautifully and we believe in thinking differently.
+
+Ben:                 Yeah, that wouldn’t fit on the poster.
+
+David:              It would not.
+
+Ben:                 All right. If you aren’t subscribed on iTunes and you want to hear more, you can subscribe from your favorite podcast client and if you feel so inclined, we would love a review on iTunes or tell your friends, share us on Twitter. And we’ll see you next time.
+
+David:              We’ll see you next time.
+
+‍
+
+‍

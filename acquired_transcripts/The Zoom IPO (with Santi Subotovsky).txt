@@ -1,0 +1,437 @@
+Ben: Welcome to Season Four, Episode Eight of Acquired, the podcast about technology acquisitions and IPOs. I’m Ben Gilbert.
+
+David: I’m David Rosenthal.
+
+Ben: We are your hosts. To introduce our episode today, I want to play you a little clip from Emily Chang on Bloomberg TV. This is from the day of the Zoom IPO where she interviewed Eric Yuan, the founder and CEO of Zoom. As you can tell from this clip, Eric is incredibly grounded, humble, and quite a different type of Silicon Valley CEO as we will see when we get into this episode.
+
+Emily: That’s very exciting, but it’s also a lot of pressure. We’ve seen some of the recent IPOs like Lyft have a lot of volatility. Do you feel that pressure?
+
+Eric: I do because the price is too high.
+
+Emily: You think the price is too high?
+
+Eric: I think so. Anyway, yesterday we finalized the price to $36. Today, wow, there’s a bigger pump. It is [...] too, we just go back to work.
+
+Ben: This IPO pop last month, put Zoom’s market cap at $16 billion. Today, just under two months after he said that, it has risen another 60% to $26 billion. What’s going on here? What is Zoom and what makes it so special? Today on Acquired, we dive in with one of the best people on the planet to help us tell the story, Santi Subotovsky. All right, David. Who is Santi?
+
+David: We’re super lucky to have Santi here today. Santi is a partner of Jake Saper who was on the LP Show a few months ago and he’s here at Emergence Capital. Santi has been on the board of Zoom since he led Emergence investment in the company in 2014. Santi is also from Argentina. Like Zoom’s CEO, Eric Yuan, he’s an immigrant to the US which we are going to talk about a lot more on this episode. Before joining Emergence, Santi, you founded and ran an online learning platform in Argentina and you also did your MBA at HBS. I think the class here had some pretty good entrepreneurs, am I right?
+
+Santi: We had some great people, yeah, and I actually saw them last week. We were all celebrating our 10th year reunion.
+
+David: That’s awesome. Is it Rent the Runway came out of your class?
+
+Santi: Cloudflare, thredUP, so we got a bunch of great companies.
+
+David: That was a great year.
+
+Santi: To be honest, it was a horrible year to be looking for a job; it was 2009. That’s why the opportunity cost of starting a business was much lower.
+
+Ben: It’s funny. Your life cost of capital was very low.
+
+Santi: Exactly.
+
+Ben: Santi, thanks for having us in your office today here at beautiful Emergence Capital. We’re super excited to dive in.
+
+Santi: Thank you for having me.
+
+Ben: If you like the show and you want to go deeper on company-building topics with David and I, you can become an Acquired limited partner and get access to our second LP-only bonus show. On our last episode, we gave an update on a lot of our thinking from the Uber and Lyft episodes, regulation, and autonomous vehicles. We also answered a bunch of LP question and answers. If you want to join, you can become and Acquired Limited Partner by clicking the link in the show notes or going to glow.fm/acquired. Lastly before we dive in, I want to thank the sponsors of all of season four, Perkins Coie, counsel to great companies.
+
+We have with us today, once again, Allison Handy, a friend of the show and partner in the Corporate and Securities Group. Allison, we know a lot about IPOs from the outside looking in but what’s something that you know from actually working on them that most people wouldn’t think of?
+
+Allison: Many in tech are aware that there’s a lot of work that goes into being ready to be a public reporting company, but the work and the cultural changes required can be substantially greater than people realize. I’ll give you two examples. First, one thing that happens a lot that people might not realize is that the first audit for public disclosure can be pretty hairy. It can even end up delaying IPO timing. Second, some public company policies can be a culture shock for tech companies that are used to being really transparent with their employees.
+
+The SEC rules around disclosing material nonpublic information, often lead companies to adopt more controls on what executives can share and how they share it. In addition, policies that prevent employees from trading a company stock based on inside information may require significant employee training efforts to ensure compliance and can lead to policies that curb internal transparency.
+
+Ben: Pretty wild that the audit can actually delay the IPO timing. Thanks, Allison. If you want to learn more about Perkins Coie or reach out to Allison specifically, you can click the link in the show notes or in Slack. David, I think we’re ready to dive in.
+
+David: Let’s dive in. I was thinking about how to frame this episode on Zoom. A good lens for Zoom as a company is almost like a bridge both between [...] here in Silicon Valley. In many ways it is classic, old school Silicon Valley. It is an enterprise software startup, it’s located in San Jose, down on The Peninsula, and the DNA, as we will see, came out of a classic 90s startup WebEx, but it’s also undeniably part of this new wave of IPOs and part of the A+ cohort of companies that are coming out here. It’s also and Acquired theme a bridge between Silicon Valley and the rise of China, in the techy [...] in China. I’m really excited to dive in here and dive in with Santi.
+
+Before Santi comes in the picture, we actually start in 1970, speaking of China in the middle of the Cultural Revolution. In the Shandong province, which is in the East Coast of China and it’s located about halfway between Beijing and Shanghai. Shandong is the religious and cultural birthplace of China. It contains both Mount Tai, which I believe is where Eric is from, it is the most revered site in Taoism, and it’s where the first emperor of China was crowned. It also contains the city of Qufu which is where Confucius was born. Both of those are going to be very apt as we will see with Eric and Zoom as we go along here.
+
+In 1970, a boy named Eric Yuan is born. It’s still in the middle of the Cultural Revolution, but his parents, as far as we can tell, are pretty well-off. His family does okay. His parents are educated, mining engineers. Eric early on, even though the country is converting to communism, started showing some entrepreneurial tendencies. His parents are mining engineers, remember. He started collecting and selling mining and construction waste and burning it down to get that raw copper inside so that you can sell the copper to recycling plants.
+
+Ben: Like every young tech entrepreneur does as a child.
+
+David: Exactly. Apparently he almost burned down his neighbor’s house doing this. Maybe that is when saw the light that technology-enabled businesses were better.
+
+Ben: Santi, did you know this when you were making the investment, that he was so irresponsible and reckless?
+
+Santi: We didn’t. We would have [...].
+
+David: I think he learned a good lesson there because he does not burn capital, as we will learn. He goes off to university at the Shandong University of Science and Technology, but his girlfriend at the time who would soon become his wife goes to another school that is about a 10-hour bus ride away. It’s on these bus rides between their universities that as legend has it, Eric starts daydreaming about how technology could one day bridge this physical gap between him and his girlfriend-soon-to-be-wife and many people around the world, and would lead to many things, eventually Zoom.
+
+But before that, he graduates, he ends up getting his master’s degree after undergrad. He graduates, he marries his girlfriend, he goes to work, and in 1994, the company he’s working for in China sends him to Japan for four months. While he’s in Japan, he sees Bill Gates give a speech there. These are the days of the information superhighway and he hears Bill talk about the information superhighway and he thinks, “This is the future.”
+
+Ben: David, I was looking at this in your research. It’s ironic given how Microsoft missed the web and how then Bill Gates had to about-face the company writing, that classic internet memo that he wrote. It’s amazing that Bill Gates is actually the one who ended up inspiring Eric and so many others when Microsoft almost had a very existential moment about the internet.
+
+David: Crazy that a speech Bill Gates gives in Japan in 1994 that is heard by a young man from China ends up leading to the most successful IPO in the US of 2019. The world is just crazy. Eric goes back to China and he realizes, though, that he’s inspired by the internet but the internet in China is a long way away. It’s not going to be mature for a long time. If he really wants to be part of this, what is going to change the world, he needs to come to the US and he needs to come to Silicon Valley.
+
+He knew an entrepreneur from China who had gone over to Silicon Valley. I believe it was Min Zhu who was the cofounder and CTO of WebEx. Min had come over, I believe, to teach at Stanford and that was how he got to Silicon Valley. Min ends up hiring Eric into this fledgling startup of WebEx, which is also communication—not video communication to start—across the internet, the first step in bridging the gap between him and his wife.
+
+Ben: The main focus of WebEx at this time was not video conferencing but screen sharing.
+
+Santi: Correct. That’s how they started.
+
+David: Screen sharing and presentations. Eric says, “Great, I’m going to join you. I’m going to come over to the US. I just need to apply for a work visa to come over and me and my family will come on over.” He applies. This is 1995. His application is rejected, but Eric is undaunted. He continues. He applies again, and again, and again, and again, and again, and again. He ends up applying a total of nine times before his visa is accepted. It’s just crazy, that tenacity and that desire to come to Silicon Valley, come to the US, be part of this, to put up with all of these rejections and keep coming is just amazing.
+
+Santi: That’s something else that Eric and I connected really well on. I had to go through a similar experience coming from Argentina until month ago. I was still going through the process of back and forth then visa and green card and another visa and an extension and a rejection and those letters that said, “You have 30 days to leave the country,” showing up on one of those info pass offices, standing in line trying to explain a case, we bonded over that as well.
+
+David: You just recently became an American citizen?
+
+Santi: Yeah.
+
+David: Congratulations. This is not a political show, but this is the one topic that just comes up again and again. This is so crazy. Again, the most successful IPO in the world of 2019 and all these great people involved in it, they just want to be here and work and the US makes it so hard.
+
+Ben: Sidebar over to Santi for a second. While being a general partner of Emergence and doing the work in economic development and creation that you do, you had to mandatorily leave the country for periods of time?
+
+Santi: Yes. I got notified that my status has changed and I had to figure out some other ways if I wanted to stay here. That’s just so unbelievable.
+
+David: Congratulations on finally becoming a citizen. I hope that inspires a lot of people listening to this show on both citizens and non-citizens here. When Eric finally does make it to California in 1997, he shows up, he and his wife come to California and he starts working physically at WebEx. There’s just one problem. He doesn’t speak English. He doesn’t speak English at all. He can write code really well but he’s really hungry to learn and grow.
+
+He’s so focused on writing code as a founding engineer of WebEx and developing WebEx that he doesn’t actually take English language classes, he just learned and picks up English from working here and working with his teammates, which again is incredible. Even though that’s how he starts, he is really interested in management, in hiring and developing people. He rises up, he becomes an engineering manager. He ends up getting promoted to becoming VP of Engineering at WebEx.
+
+Then in July of 2000, WebEx goes public and ends up getting acquired a number of years later by Cisco for $3.2 billion in 2007. Eric is then promoted within Cisco to become VP of Engineering for all of their communications platforms. By the time he leaves Cisco to start Zoom, after 14 years in total at WebEx and Cisco—talk about loyalty—he’s managing 800 people across the globe.
+
+Ben: I may have actually reported to Eric and I don’t think I ever knew it. My intern with Cisco in the summer of 2008 and 2009 and worked in the TelePresence unit. I’m sure somewhere in the management chain, I guess because I was a test engineer, I probably did end up actually reporting to Eric.
+
+David: Wow. You’re one of the 800.
+
+Ben: I don’t know if they count interns.
+
+David: By the end, though, of Eric’s time at Cisco after the acquisition, he was going around and spending a lot more time with Cisco customers and former WebEx customers that are now Cisco customers. This is going to sound simplistic but bear with us here because it’s really important, he starts noticing that they’re really unhappy with the product, this is now 2009, 2010, 2011. That makes Eric really unhappy. Again, this sounds simplistic but this is really important for Eric and for Zoom, happiness is kind of his philosophy.
+
+I wanted to say a quote that he has here. He says, “Along the way,” he talks about his career, “I really came to understand that the purpose of life is to pursue happiness like here in the US. That’s really the most important thing. I also learned how to pursue happiness especially how to pursue sustainable happiness. You’ve got to make others happy. If you make others happy, you’re happiness will be sustainable. For me, to apply that philosophy to the company world, to the business world, if we can make a customer, our company will be happy. That happiness is also sustainable.”
+
+Ben: That’s wildly enlightened.
+
+David: I told you, Confucius was going to be important here. If you look at Eric’s LinkedIn profile today, it doesn’t say, “CEO of Zoom.” It says, “Delivering happiness to our users. Your happiness is my happiness.” I’m just curious for Santi to bring you here. This philosophy of Eric, obviously permeates the company which we’re going to get much deeper into. What did you make of this when you first met him?
+
+Santi: We heard directly from the early customers when we came across Zoom. This was back in 2013. That’s the first time that we came across the product Zoom. We came across the company because of a personal need I have. Being from Argentina, I tried every technology to stay in touch with friends and family. There’s a big difference when you’re trying to transact and when you’re trying to build a relationship with technology. When you’re transacting, then you can deal with issues even though it is frustrating, you just deal with them because you want to get to the end of the transaction.
+
+When you’re trying to build a relationship, if the technology doesn’t work, then that’s detrimental to that relationship. That’s why I felt I was not staying in touch with my friends and family because I dreaded those communications. That’s when I started trying every technology and in 2013, I tried Zoom and it worked. This was very early in the life of Zoom.
+
+Ben: It’s what? Two years after the company was founded, but during the first year of its operations?
+
+Santi: Yeah, a few months after they released the product. We not only experience that the product worked, but then after having those first initial calls with my friends in Argentina, I started getting random invites from other people in Argentina for Zoom calls. It not only worked but people loved it and they started sharing that with their friends. That was the light bulb moment when we said, “There’s something here.” Another interesting piece of information is when we were doing diligence on the company, we talked to early customers. What we heard is lines along the, “If you turn off Zoom, I’m going to quit my job and I’m going to join another company that has Zoom.”
+
+It wasn’t just customer happiness, it was customer obsession. Customers were incredibly thankful because Zoom was enabling them to do their jobs and be happy while they were doing their jobs.
+
+Ben: I think this is something that’s really easy to forget, like a lot of things we cover on this show. Technology moves so quickly that we acclimatize to what it is today. I’m remembering back, a friend of mine started a company out and it was three of them that grew to twelve of them and a live workspace. I remember him telling me, “My morning is five or six Zoom calls with some of our most loyal customers just to understand what’s going on with them.” I was like, “You can’t do that from a video call.”
+
+Today it seems quite reasonable because Zoom is very reliable, that makes sense to me. But I remember being in shock at the time, you can actually get the consistency and quality of understanding how the customers of your startup are going from doing Zoom calls every morning. That memory is really grounding for me for how bad that technology used to be.
+
+David: Speaking of, this was the Cisco technology and WebEx, but for them, of course, they were competitors.
+
+Ben: And inexpensive. The other thing is, in my head I remember thinking, I’ve never heard of Zoom, but what are you using for that? I know there’s enterprisey things, but you can’t afford that. They probably won’t even send the sales guy to talk to you. But also, I use Hangouts and I use Skype. That’s a very different class of thing, that can’t be working for you, and this middle didn’t exist.
+
+Santi: Those technologies were built for a different era.  If you think about a lot of the incumbents, they were built for a time where people were sitting at a desk with fixed internet. Everything was monitored and controlled. Now, people are on the go and you’re using your laptop, your desktop, your phone on WiFi, 3G, switching from cell towers. You had to rebuild the infrastructure from the ground-up. That’s what a lot of the incumbents couldn’t do, because they built this monolithic architecture and then they were just trying to patch it and adapt to the new world. That’s where Eric had this world vision that he had to rebuild the entire software stack. That’s what he did. He worked really hard, even before releasing the first product to make sure that everything worked.
+
+Ben: Santi, going through all the hardships that you did to try and communicate with people in Argentina, did you have an investment thesis around someone’s going to make this better and I want to look out for it, or was it more just, “I’m trying to solve my own problem and oh my gosh, this company happens to be a great investment”?
+
+Santi: We are incredibly thematic here at Emergence, we were not just running around saying what’s hot and trying to follow what everyone else is doing. The way the firm was started was with the big thesis that software was going to move from on-premise to the Cloud before it was obvious. That’s why we invested in Salesforce early on when, again, it wasn’t obvious. In this specific case, we had a thesis. We knew that things we’re going to change and it took us three years to find the right company. We talked to a number of companies in the collaboration space and we could never find the right company.
+
+The right company is not just the right technology, it’s a combination of the right technology, perfect timing, and the right leadership. That’s why when we came across Zoom, we liked the technology. Then we met Eric, we fell in love with Eric, and the timing was right. Even though the company wasn’t raising capital when we met, we kept on building that relationship, forging a partnership that eventually ended up in an investment.
+
+David: We’ve already talked a little bit about Eric’s background and what makes him special. He saw all the things that were broken within Cisco. He went to Cisco’s senior leadership and said, “I want to re-architect how we do our communication and collaboration platform as VP of engineering here within Cisco and build this product right.” They didn’t let him because they were obsessed with, these were the days of Yammer and Jive and Cisco thought the future of enterprise collaboration was Facebook for work. I like Zoom, it’s a bit better.
+
+In June of 2011, Eric finally leaves the company, he’s 41 years old at this point. Right after he leaves, a whole cadre or basically anyone who had ever worked with Eric immediately gives him money, just blank check, to back him to work on whatever he’s going to do. He knows he wants to start a company, I believe the first idea, Santi correct us if we’re wrong, is he actually thought he wanted to build an application on top of video chat. The company was initially called SASB.
+
+Santi: It’s more of a consumer play, not an enterprise play.
+
+David: But then pretty quickly, he figured out that actually the really big opportunity is do what we should’ve done within Cisco, outside of Cisco. That’s when the company became Zoom.
+
+Santi: That episode that you just shared about Eric’s life is very unique for him because people wrote him a check not because they loved the idea. Some people even hated the idea. It’s like, “Why are you going to this?” But they believed in Eric, they had full confidence in Eric. That was a great lesson for him and that’s what he used every time he raise capital. When he raise capital, he didn’t share all the information, he didn’t do the typical dance that most entrepreneurs do. It was more about I want people who are investing in me, who are convinced that I’m going to do something. If I get to that point, then I’m going to open up and share everything else. But if I don’t get there, then it makes no sense because business has changed.
+
+He saw it SASB. SASB became Zoom. The business changed. It went from a consumer product to an enterprise product. If someone had invested in the consumer product, they might have pulled their money when Eric said, “We’ll going to do enterprise.” Given that people invested in him, people were supportive of whatever Eric wanted to do.
+
+Ben: For folks listening out there who are first time founders or more junior in their career, that’s a move you can execute. When you’re 41, have lead a gigantic organization and have the track record that Eric has in addition, of course, to the personality that he has.
+
+Santi: I disagree, I think that you should always do that. You should always find the right partner, someone who believes in you before they believe in the business. Because if they believe in you, they’re going to be with you in good times and bad times. Believe me, a lot of these companies that we’re now talking about, “Oh, great outcomes. They went public. They got acquired,” it wasn’t a straight line. They had their own moments. You know it, it’s not a straight line. You want people who believe in you, who are going to help you when things are tough, especially when things are tough, because that’s when you need a true partner.
+
+When things are going well, then everyone is going to be a cheerleader and they’re all going to be your best friends. You want to make sure that you not only get the right partner, but you also get the right group of people because partners are just one piece of a firm, you want to make sure that everyone is invested in your success.
+
+David: We just talked about this but I want to highlight again, of the A+ companies who had gone public this year that we’ve covered. I think now three of four have been pivots. Zoom was a pivot, Pinterest was a pivot, Lyft was a pivot, Uber was not a pivot.
+
+Ben: Their real line of business is not where they started.
+
+David: True. It was a pivot to peer-to-peer [...]. We can debate whether we can classify that but it’s such a good point. We take this too hard. I think any great investor and partner does, that the most important thing is the DNA of the team you’re backing. If you believe in them, we like to say that the early stage is turbulent. You have to believe in the pilot’s ability to navigate the turbulence.
+
+I want to spend a minute before we move into building Zoom. What was it that was making WebEx customers so unhappy? Santi, I’m curious from your perspective, especially your thesis coming into the space. We’ll get into other companies that competed with Zoom over time, but this was not a unique insight to Eric. There was something that had changed. What was it about the collaboration space?
+
+Santi: I think a big change that a lot of these big incumbents missed was the purchasing process for these products. When WebEx got started, you talked about it earlier, they were selling to IT because they had very high price points. They just needed IT to be okay. They didn’t need IT to be happy. They just wanted IT to be okay with whatever product they were selling. It was more about, “Yeah, we’re complying, we’re secure, we checked all these boxes. If you users hate it, who cares? We’re just going to make sure that we cover your back and that we check all the boxes.”
+
+Ben: Classic enterprise software is the user is not the buyer.
+
+Santi: Correct. That changed over time. With SaaS and this freemium models, the end user became the buyer. Then, the purchasing decisions got decentralized from just pure IT to the end user, then the CIO now needs to manage all the applications that people are buying independently. That’s why happiness matters a lot more today than it did 10 or 15 years ago because now, every interaction can lead you to lose a customer.
+
+Early on, if you just took the CIO on a big trip and fancy dinner and they were happy with you, that was totally fine even if the end users hated your products. That’s why there is where you’re going to find the next opportunities. Just ask people which products they use, which products are they happy about and which products they hate.
+
+David: It cuts both ways. It’s not just if customers are unhappy in a SaaS world, you’re going to lose them, there’s also a multiplicative effect on the upside. If they’re very happy, they’re going to become evangelists. The buyers now are actually distributed and have buying power whereas if with an enterprise product, if users love the product before, it didn’t matter because the CIO is the one making the decision.
+
+Ben: It was so funny because predating this, two or three years before this, there was this phrase that was floating around, in 08–09. That was the BYOD, bring your own device, and CIOs hated it. There was this thing that IT suddenly had to deal with iPhones for the first time on their corporate networks and people saying, “I need to be able to get my email on my phone.” It’s not blackberry but I like this thing so much that you can pry it from my cold, dead hands. It’s amazing that it actually went hardware first and then took a few years to trickle into software.
+
+Now you look at Zoom, you look at Slack, so many of these companies, they’re distribution is bottom-up. Sometimes even their payment is bottom-up because any employee with a credit card can sign up for it. Santi, my question to you is, why did devices come first and now we’re in a bring your own software world in IT?
+
+Santi: We moved from bring your own device to buy your own app. I feel that the devices unlocked that purchasing power because when you brought your own device, you had full control on the applications that you installed. A lot of the consumer applications were driving this incredible user experiences because they needed to make sure that you were paying for those consumer applications. They knew that you had to hook them and deliver value, that rewired the way people thought about business application.
+
+It’s like, “I have this great consumer application that I use to communicate with friends. Now I’m going into business and I’m still using my phone. It doesn’t work and I can’t set up conference calls so I’m going to use a consumer application.” Then, when you were able to create a consumer-like experience with enterprise-grade security and features, that’s when you win the enterprise game. That’s what Zoom has accomplished.
+
+David: Once Eric landed on Zoom and got going, after leaving and raising [...] from all the folks that he had worked with in the past, this episode is full of incredible stats about Eric. Forty engineers of the 800 that he had worked with at Cisco come over and joined him to build this new technology from the ground-up that’s going to pursue customer happiness. Maybe that’s says a little bit about Cisco during that era, not to bash on them too much, but it says a lot about Eric. Forty engineers right off the bat.
+
+They just cranked for basically two years building this product. Finally, at the end of 2012, they get their first paid customer which is actually the Stanford Continuing Education Department. This was super cool. Also, right before then, they got a review from Walt Mossberg in AllThingsD, before they had a single paid customer. What a great write up. Walt is just glowing, we’re willing to [...] in the show notes in his typical Walt way, just glowing about how great the product is and how well it works.
+
+It’s funny, he talks about it as a consumer application even though at that point they were a business application, but that’s how good it was. Stanford is the first customer. I think that actually ends up becoming a great beachhead customer for them. This was the time of the rise of MOOCs and Coursera had just launched, there’s Udacity and 2U—2tor became 2U. All these universities around the country were thinking about like, “What is our online education strategy and component?” Zoom becomes the way that they deliver that. Education is still a huge vertical for Zoom, something like 90% plus of universities use it.
+
+Santi: It is a huge vertical, I think it makes perfect sense for these disruptive technologies. If you think even about Apple, the way they did it, they went into the education vertical because that’s where you capture the next generation. The older generation is probably okay with what they have, things are not going to change, but the younger generations are expecting a different type of experience. Then those younger generations get into the workforce and they demand the same type of experiences.
+
+This was not only a great decision by Eric to focus on education early on, but I feel that they also created a lot of value because if you’re trying to communicate to someone and deliver a message and people are remote, they can’t show up to class and you have a seamless way to communicate, that’s going to have a huge impact. I believe that if we could measure the impact on happiness within students and graduation rates of those people using Zoom, we should probably see an increase there.
+
+David: I was thinking about it as education was a great beachhead customer because they are ready to adopt, but that’s such a good point too. Again, what a perfect strategy to go in, these kids are all going to join the workforce. They’re going to show up and they’re going to be like, “Eww, I’m using a Polycom?”
+
+Ben: That’s icing on the cake. Timing is all about are you solving a customer’s pain point in a way where they didn’t have this pain before? Where there’s an opportunity for you to slide in there? All these companies had already bought the IT departments, had all bought video conferencing “systems” before so there is not really an opportunity there, but this slipstream that happened with MOOCs, that happened with students expecting to be able to watch things remotely has enabled you to go, “Yeah, that’s exactly what we’re for.” Then you get this massive upside later of a 20-year benefit of them joining the workforce and selling within their own companies.
+
+David: The other really, really smart thing that Zoom did in their freemium model with go to market was Zoom was and still is free for anyone to use the full product for up to 40-minute meetings. Do you know Santi how they landed on the 40-minute?
+
+Santi: Eric spent a lot of time in this space. He knew the stats. He knew that most productive business meetings were 45 minutes long. That’s why 40 minutes was a magic number. We still have a lot of people using Zoom for business and using the free version. As you said, they get access to the full product, they get to experience a full experience. Then we see that they use it for 40 minutes, they drop and they start a new meeting. We’re totally fine with that, we just want people to use it. If they can’t pay, they can use it for free. If they want to pay, they can remove that restriction.
+
+David: I think this demonstrates such a great understanding of the customer and customer needs.
+
+Ben: And the business model. When you have a business that requires a network effect to work like video conferencing, it provides a ton of value to do it with at least one other person who provides literally zero value to do it alone.
+
+Santi: If you’re using Zoom by yourself, you have bigger problems.
+
+David: There’s got to be some use case out there.
+
+Santi: People are recording messages with Zoom. There are some use cases, but it’s not the main [...].
+
+Ben: But the idea to take advantage of the inherent network effect that’s both necessary to make the product work and enables this incredible business that we’re now seeing really as a public company today, if you’re paying communicate with someone’s not paying and make that incredibly seamless for them or even if you’re trying to use it for the very first time and you’re not paying yet. Being able to jump right in on that in a network effect business is crucial to success.
+
+Santi: It is. On top of that, when you think about Zoom and we talk a lot about happiness, people are not only buying video conferencing from Zoom, they’re buying an experience. That’s what enables the company to do more than just video conferencing. If you’ve been following the recent announcements, they release phone and Zoom rooms and the marketplace, that’s because our customers want us to do more. They don’t want a phone solution, they want the Zoom experience with their phones. They don’t want a room solution, they want the Zoom experience in the conference room. That’s magical when you get to that point.
+
+Ben: It sounds like the vision is really to become a full scale collaboration productivity company. Is that how you think about it?
+
+Santi: We’re listening to what our customers want and we’re building based on what our customers need, that’s why we released these products because that’s what our customers wanted us to do.
+
+David: I want to get now to the point of, Eric and team get to build Zoom, they’ve got the education beachhead vertical, the companies and the product is starting to spread virally, you started using it as a consumer to start. Walk us through how your relationship grew with Eric and the investment process. In particular, I’m interested in, you mentioned you’ve been looking at the space for three years, [...] lots of competitors out there run by smart people who also get all the problems in the space. What was it about Zoom that you we’re like, “This is the one.”
+
+Santi: First of all, it started with the product worked. Even before meeting Eric, I knew there was something special in the product. Then when I met Eric for the first time, I realized that it was more than just the product working, it was strong leadership and someone who was committed to doing things right. Not taking shortcuts, not building it on top of open source stuff, just to patch things together, change the UI, and deliver quick value. He was focused on doing the right thing. Then I became obsessed with Eric and the product.
+
+I remember stalking him. They had this small office in Santa Clara on [...] road, I think. The elevator never worked and they had boxes piled on and cameras stacked on top of the refrigerator and boxes, and that was the state-of-the-art setting. I would drive down to Santa Clara to meet with Eric and the team on a regular basis, to build a relationship, and try to convince him to partner with us. My goal was to invite him to present to my team and he said, “I don’t have a pitch deck. I’m not raising, so I’m not going to do that.”
+
+The hook that we found was, “Look, we are using Skype in the office. I had bought a Skype camera that I would use to talk to entrepreneurs and I hated that, can you come in and talk to us about how Zoom is going to replace that?” He came in and he basically pitched us on Zoom. The pitch was very risky because he didn’t present the metrics, NPS and all that stuff. What he said is, “Everyone in the room, download Zoom now, we’re going to do a live demo.” If you’ve been in this industry, doing a live demo is incredibly risky. We all downloaded the product and we were [...].
+
+David: Did he leave the office, go somewhere else, and present [...]?
+
+Santi: No. We were all in the same room, we joined the Zoom call, and it worked incredibly well. People were kind of, “Okay, there’s something here.”
+
+David: That’s amazing. What happened from there? We were talking with Jake a little bit ahead of time. As you said, Eric wasn’t raising, he didn’t have his numbers prepared. You started digging it on diligence and then you found a big surprise.
+
+Santi: Yeah, the metrics were a lot stronger than what we even anticipated. We’ve seen great businesses, we work with companies like Box and Yammer and Salesforce early on, but these metrics were off the charts. To be completely honest, I don’t think that he knew exactly what they were doing because they sent us the data dump, a lot of information. For weeks, we tried to piece things together. A lot of people couldn’t even see what was going on. We saw some friends, people who are paying for Zoom and then they were churning. In this standard industry, if someone churns, that’s bad. But then, a few months later, those people came back. We saw those return rates, people were addicted to Zoom.
+
+Some people just needed to use Zoom once a month, once every two months, some people were using it on a daily basis. When we pieced everything together, we were completely blown away by the fundamentals of this company. Having seen the product work, being obsessed with Eric for a long time, and then seeing all these underlying metrics, that’s what drove us to, “Yeah, we should partner with his team and help them build the company.” We also felt that we could add some value beyond just a capital because we’ve seen a few of these moves play out in the past.
+
+Ben: This is what Emergence does. You’re able to figure out how to take these companies and professionalize the ability to sell at scale to enterprises.
+
+Santi: Exactly. Scaling go to market. When we first started working with Zoom, it was mostly focused on the SMB sector. We knew that over time, we had to go up into mid-market and enterprise. That’s what we focused on. I remember having a conversation with Eric even before we invested where we started introducing him to great heads of marketing, great heads of sales, so that they’re team could learn from other people and take the company to the next level. I feel that that combined with our approach to partnership is what convinced Eric and the rest of the team to go ahead and partner with us. Even though we wrote a very big check when we invested in the company, the largest check Emergence has ever written, the company never used our capital. They were not looking for capital, they were looking for a true partnership to help them scale the business.
+
+Ben: This is amazing, hearing it from the Zoom side. Can you talk about a little bit what it’s like as venture investor to write the largest check ever from your firm in this really high conviction bet in this quite unusual scenario of the way that you’re chasing the company and it’s not as formal of a presentation. What is your life like in that moment?
+
+Santi: My life was kind of hell because I didn’t have a lot of experience, I still don’t have a lot of experience in venture; I’m learning a lot. This was going to be a big investment and it was going to be my investment. I remember one of my partners telling me, “Santi, you’re betting your career in venture because if this doesn’t work out, then it’s going to be hard to get out of this.”
+
+David: No pressure, though.
+
+Santi: But that made me think about the conviction. Then after doing all the diligence and after everyone met Eric, we came together as a team. We make decisions as a team here and everyone was not just supportive of doing the deal, but we have this bar that we call unanimous enthusiasm, everyone is excited about the partnership. We were all there even though we didn’t all start there as we did more work and everyone met Eric, they tried the product, we got to this one where we said, “Yeah, this is something that we need to do even if it doesn’t work out.” But it didn’t feel great.
+
+David: That was leading up to writing the check and making the investment. How did your emotions evolved after that? Obviously, it worked out. How long did it take before you felt pretty good about it?
+
+Santi: I felt pretty good about it all the time because what I invested in, the relationship with Eric and team, that has never changed. I didn’t get any surprises, all the surprises we’re positive surprises. It was one of those board meetings where we should show up and Eric would say, “We didn’t do what we said we’re going to do. We did better.”
+
+David: It’s such a hard job as a venture.
+
+Santi: It was a good feeling all along. The more time I spent with Eric and the team, the more excited I got because initially, it was just video conferencing. Then it’s, “Our customers want us to do more. We can do more.” That’s how we kept on expanding the [...] and that’s where we are now. We still hear our customers wanting a lot more from Zoom than what we’re offering. It’s been a great journey. For me, personally, it’s been great because when I wanted to joint venture, I got a lot of rejections. I was talking to over 70 firms.
+
+Ben: It’s like being an entrepreneur.
+
+Santi: Yeah. It was my sales pipeline and I had a sales pipeline, different conversion metrics, and funnel. A lot of the nos I got were not specific about my track record, they were more about me as an immigrant, as a Latino in venture. That was before people got a lot more politically correct, this was back in 2010. A lot of people said, “Latinos are not in venture so you should try to find a different job here in the Valley.” I always have that chip on my shoulder where it’s like, “I’m going to prove you wrong.” I got a lot more energy from those conversations.
+
+Fortunately, the Emergence team gave me a chance, and I couldn’t be more thankful for what they did for me. A few people in venture, Alex Mendez who’s the founder of Storm Ventures, he believed in me and he helped me a lot. We’d have very long conversations and he had no vested interest. There were a few people that helped me out and I’m incredibly appreciative of that. Also, Eric and the team who trusted that we could help them out as well.
+
+David: That’s such an amazing story. Thank you for sharing it. I can only imagine you going through that on the venture side. I would imagine Eric probably went through a lot of that on the founder side, too.
+
+Santi: Yeah. He got a lot of rejection early on when he tried to raise capital. That’s why he decided that he was not going to raise capital. Even when we vested in the company and we could tell the company was doing really well, people wouldn’t even take meetings with Eric. When I would talk to my friends in venture about Zoom, it’s like, “No, we’re not doing anything in video conferencing. It’s a race to the bottom.” There were different comments about it. People wouldn’t even take the meetings.
+
+David: Wow, That’s so incredible.
+
+Santi: That’s why I feel that when people are looking just for a category, they might miss out on great people.
+
+David: Totally.
+
+Ben: Especially because if you believe which has shown to not be true that the raw video conferencing technology is commoditized, it’s not. Zoom is still excellent and it is widely true that most others are not as good. As you were talking about [...] expansion by leveraging that customer base and that happiness and that love for the company into all these other things that you’re completely blind to that [...].
+
+David: I’m going to market innovation too, the 40-minute freemium model, nobody else is doing that.
+
+Ben: It illustrated no better than WebEx being bought for $3.2 billion in 2006 or 2007 or whatever that was. Today, Zoom’s market cap, they worth $16 after their IPO, $26 billion were recording today. The enterprise value of this company is number one, not just about video conferencing and number two, turns out that wasn’t a commodity in the first place.
+
+Santi: I also feel that there’s a lot of bias when it comes to venture investments. People are looking for the next artificial intelligence, Blockchain-powered whatever. There are some basic building blocks that go through these renewal faces. CRM and what SalesForce did was not a new technology. It was a new way to deliver an existing technology. Same thing for Zoom.
+
+There are a lot of existing markets that go through replacement cycles, especially when the incumbents miss out on the big changes in the market. When was the last time that you heard someone say, “I love email and the way things are being handled or I love CRM?” There are a lot of those core building blocks that are going to go through big transformations. If the incumbents don’t see it, other people are going to take advantage of that.
+
+David: Before we wrap up with the Zoom IPO, I want to build on what we were just talking about a minute ago, the underdog status of you, of Eric. Can you talk a little bit about the senior management itself at Zoom and the philosophy? A lot of companies in the Valley and a lot of companies Emergence works with, Eric talks a lot about, they don’t really recruit superstar outside execs to come into Zoom. They build from within and people who are hungry, who have the capacity to learn. What have you seen being on the board and being part of this process in building the management team?
+
+Santi: I need to disagree that they don’t recruit superstars, they don’t recruit known superstars, like publicly known. But the people they recruit to lead the different functions are superstars and people who’ve worked with them recognize their superpowers, but they’re not the ones that are being listed in every list of, “Who are the top 10 CMOs, let’s hire one of those.”
+
+David: You won’t see a former president of Oracle coming to work for Zoom anytime soon.
+
+Santi: You’re going to look for the people who are actually doing the job, are going to work incredibly hard, and are going to connect with the mission of the company. That’s another area where Emergence connected really well with Eric. If you think about me, I’m a general partner now, I joined as a senior associate. When I joined, I was doing everything from copies to coffee to setting up technology, I still do that. I’m a tech support, I don’t care.
+
+David: You made, possibly, the best investment in the firm’s history by doing tech support for you conferencing.
+
+Santi: We still do that. We recruit people as senior associates and we invest in them to make sure that they become the next generation leadership. Kevin Spain, who’s also a general partner, joined the firm as an associate. Jake, who you guys know, also joined as an associate and now he’s a partner. We invest in rock stars before everyone recognizes them. We do what it takes to make sure that we create the right conditions for them to succeed. That’s what Zoom does. The team there is one of the strongest teams that I’ve ever worked with and is probably the most humble team that I’ve ever worked with.
+
+David: We’re being super [...] of Zoom because it deserves it. Of the names in your executives on the S1 for the IPO, other than Eric, all of the other named senior executives are women. I’m trying to find another company in Silicon Valley that looks like that.
+
+Ben: And that is not a story that they’re pounding the pavement with, you’ll notice that this is true and it’s not the cover of a vast company.
+
+David: And you probably didn’t know that.
+
+Santi: Yeah. I was talking to one of the executives at Zoom. She described Eric as, “Eric doesn’t see color. He doesn’t shape. He doesn’t see anything. He just sees raw talent.” That’s why he’s not saying, “We are an incredibly diverse team,” because he’s not going to use that for marketing. He’s just going to do the right thing. That’s been a strong core value of the firm, just doing the right thing even if people don’t even notice.
+
+David: I was shocked that I hadn’t heard Zoom or anybody else talk about that before. Going to the S1 I’m like, “Wait a minute, this is different.”
+
+Ben: Absolutely different. Santi, I want to ask you to lead us through after the investment through today and other funding routes and other milestones. One thing that we did skip over in the growth of the company, is we said founded in 2011, they launched in January of 2014. Let’s just take a moment to acknowledge how ridiculous it is that five months after launch, they had a million total participants in their video conferencing. And then 18 months after launch, continue to accelerate to 10 million participants by June of 2015. This company was growing like a weed from day one.
+
+Santi: True, but they were completely under the radar. People wouldn’t even know what Zoom did. That’s because they were not selling to IT. They didn’t have the billboard. It was more of a ground-up adoption. People were using Zoom even when their companies were standardized on different technologies. That’s just because they wanted a better experience. We saw a lot of that, where people were just using Zoom and it’s like, “Don’t tell anyone, but I’m not going to schedule a call with one of the other companies.”
+
+Ben: That was Google for Search when I worked at Microsoft and then it was Google for Docs when I worked at Microsoft.
+
+David: You worked on the Office team, Ben.
+
+Ben: I did. Well, I did a lot of competitive research. Santi, catch us up. Emergence leads a $30 million round in the company, they continue to grow very well. What did growth and then what did a future funding look like between then and the IPO?
+
+Santi: When we invested, this was back in 2014, the company was mostly SMB. The next big challenge we had was going up from SMB to mid-market and enterprises. We did that, probably 2015. We started getting some mid-market and a few enterprise customers. That’s when we saw that this was not just an SMB product, but big companies were willing to standardize on Zoom. Again, we were not raising capital, the company has been profitable for a while, as you can see. India is one, but then we got approached preemptively by Sequoia and Eric had always had an admiration for that firm. They were good partners, they did a good process. We ended up partnering with them. After that, we never raised more capital. I think we never touched the Sequoia money, either.
+
+David: This is such a difference from other companies that are IPOing this year.
+
+Santi: We’ve had another company back in the day, a company called Veeva Systems that went through a very similar [...].
+
+Ben: Is it correct, they only raised $7 million and they only raised it from Emergence?
+
+Santi: Yeah. They only used less than half of that, they’re now at $20 billion plus company.
+
+David: I think we should look for it, those types of companies.
+
+Satin: Actually, what’s also interesting is that the founder and CEO of Veeva Systems is now on the board of Zoom. When we invested in the company, we knew that we needed some of that enterprise DNA so Peter Gassner joined the company and that’s why you see a lot of similarities in the way Zoom scaled comparatively.
+
+Ben: How does that work? When the company was private, is he the outside independent seat?
+
+Santi: He’s an independent, yeah. He’s an independent with a lot of enterprise knowledge and a lot of company-building knowledge. You don’t just want to have a lot of investors on the board. You want people who build real companies.
+
+Ben: Yeah. So, before we switch to the IPO, there’s probably a lot of people out there—I know I’m thinking it, too—sort of pattern-matching off of that comment you made. We started SMB. In fact, I remember when we had Scott Dorsey on and he was talking about ExactTarget. They started with his email marketing software that sold to Salesforce, and their initial customer was a dry cleaner that was right there in Indianapolis [...] around the corner. Started the small business and ended up scaling up to be everything from small business, SMB, enterprise, mid market. They became a tremendous enterprise company.
+
+I was always shocked that, “Oh my gosh. This software that you’re originally selling to dry cleaners, at some point, you can sell to Nike and Microsoft.” As an enterprise SaaS investor, is that typical? This thing that Zoom went through in being able to flip the switch and move from SMB to enterprise, would you suggest people go about that strategy in building their businesses?
+
+Santi: What’s nice about that strategy is that you focus on the end user. When you’re selling to an SMB or a VSB, everyone cares about the money that they’re paying you, about the experience. So, if you can convince an SMB to buy your product and use it, then, it’s going to be hard to create that customer love when you’re moving to mid market and enterprise. I believe it’s a great strategy to get that customer love early on. But it’s not easy.
+
+Ben: That’s got to be a trying moment for the company doing the first few enterprise customers and really understanding those pain points.
+
+Santi: Yeah, and then making sure that you’re not only serving the end user, but the CIO will have his or her opinions about how to integrate into the platforms they’re using. They’ll ask about security. They’ll ask about compliance. You need to have that figured out. I remember a conversation with Eric where he said, “Oh, we have this big customer that wants to standardize on Zoom, but I told them that we’re not ready.” The contract value was much bigger than what we were getting from other SMBs. But he was right, and that sometimes what sets aside great CEOs from okay CEOs, that they know when to say no. That’s probably harder than saying yes, but if you’re building a big company, those initial experiences that you’re going to get with mid market or enterprise could end up killing you because when you’re not ready, you might become an outsource development shop for that enterprise and that might kill the rest of the business.
+
+David: My favorite customer stat from the S1 was Uber. I forget where Uber started with Zoom, but it grew and grew over the years to the point where Uber now does, according to the Zoom’s S1, 14 million meeting minutes a month on Zoom across the organization. Think about that. That’s crazy. But that’s actually growing with the company and you’re co-starting with small teams within Uber and using it to communicate. Then next step is get some bigger paid plans. Next step is to talk to the CIO and the next thing you know, the whole company is standardized on Zoom. That’s the way they collaborate.
+
+Santi: I mean not only grows with the companies, but it also changes the way companies run. I believe that Zoom is changing the way we work and I can see it in some of our biggest customers. I also see it here at Emergence. When I first started here at Emergence, most of our investments were here in the Bay Area. Last year, 60% of our new investments are outside of the Bay Area. So, bringing us back to this pursuit of happiness, I believe that Zoom is democratizing and globalizing the pursuit of happiness. It’s enabling people to realize their dreams regardless of where they are.
+
+David: I’m going to take us quickly through the IPO. Post-Emergence investment in essentially Calendar Year 2016. The company does $60 million in revenue, is cash flow positive, doesn’t use the Emergence investment. The next year 2017, does $150 million in revenue. 2018 does $330 million in revenue, with $51 million in operating cash flow, and files to go public in March of 2019 of this year.
+
+Ben: That’s net income positive folks, not a loss, which is the first time you’re hearing us talk about that this season.
+
+David: Yeah and that plays well with public market investors, it turns out. The IPO prices the evening of April 18th at $36 a share, above the range which has already been raised during the roadshow. That equates to $9.2 billion market cap. Then it closes the first day of trading, as we heard, at the very, very top of the show on Thursday, April 19th. Up 72% to $62 a share or a $16 billion market cap. What was that day like?
+
+Santi: It was an exciting day and the question that I got asked a lot was, “Did you guys feel that you were leaving money on the table by pricing at $36?” but this is very in line with how Eric runs Zoom. He was inviting new people to join our journey. Those new investors were going to be our new partners and he wanted everyone to be happy. So, not just existing investors or people selling. It was pretty much in line with the type of company that we want to build. Make sure we attract the right investors and that the right investors believe in what we’re building long-term.
+
+I came back home and I just cried this to my wife. It felt like when you get married, just take for a long time, you start building and making sure that you’re ready for that big day. Then you have that big day, you celebrate with your friends and family, then you go back home and you need to start dealing with the rest of your life.
+
+David: You have a marriage to build. You have a life together.
+
+Santi: It’s this and that. That’s the phase that we’re in. We’re still building. We’re still focusing on making sure that our customers are happy.
+
+David: I know we’re running short on time with you, Santi. We’ll skip the narratives. I mean, the narratives were amazing. I don’t know that there was a bear narrative. We usually bull and bear narratives. We just describe the bull.
+
+Ben: All right, David, let’s dive into the playbook.
+
+David: One I’ll just highlight again real quick as we started at the top of the show. The power of immigration and people wanting to build things, come here, and do it here in Silicon Valley and in America. What a shining example [...] and you are, too, Santi, I mean, amazing. But I also want to say, Santi, you mentioned this, I want to highlight it again.
+
+In the beginning part of the episode, every big market or most big markets, I think, they go through cycles of disruption and cycles of innovation. It’s so easy to forget that. You look at the video conferencing market and you’re like, “Well, that’s done. It’s big but it’s done.” These big markets always go through these cycles and you need to know where you are in the cycle.
+
+Ben: Yeah, that’s a great point. I’ve got a couple. One is on the product side. I open this episode with, “So, what’s going on with this company? What makes it so special?” I want to talk about the product side and I want to talk about what’s going on with the business.
+
+On the product side, we danced around this, but basically what you have is something that people thought was a solved problem, which David, you alluded to is not. People thought it’s a commodity and Santi, as you alluded to it wasn’t. It was an actually good experience for an essential piece of doing business, that had a mandatory network effect built-in. I think when you mix those things together, that product is going to grow. That’s going to do very well.
+
+When you look at the business impact on that, what’s going on with the company now when Jake, Santi’s partner here at Emergence, joined us on the Limited Partner Show, made the comment that, “What we like to look for is triple-triple double-double in SaaS companies, that first two years it’s great to see it triple, second two years it’s great to see it double, and it sort of gets smaller after that,” Zoom is still a massive growth story. They grew over 100%, so more than doubling, year after year last quarter, and that’s eight years after the founding of the company. This is still a superstar growth story.
+
+The payback period, when Zoom pays to acquire a customer, right now is averaging around nine months. That’s an implied payback period from reading the S1. For reference, Dropbox is about 16 months and DocuSign is about 30. When you look at the efficiency of spending marketing dollars and getting that back from revenue, wildly, wildly efficient. That leads to a business that is cash flow positive, that is now net income positive, and you can just see in the stock price why everyone just believes that this is such an amazing business.
+
+Santi: Yeah. That’s an advantage that we have. We’ve been doing enterprise investment for the last 15 years. We’ve seen a lot of these companies. When we see those underlying metrics and when we do those cohort analysis, we can see which companies are doing incredibly well. We can also help shape that because now, with a lot of capital available, some companies are not even focusing on doing the right thing. They’re just spending a lot of money and focusing on growth at any cost.
+
+Ultimately—Zoom has shown us this—markets care about profitability. They do care about growth, but profitability is also important. That’s why, having send us where we play out in the past, we can also help a lot of entrepreneurs focus on the right metrics. A lot of entrepreneurs have no idea how those metrics stack up against other companies. There are a lot of things that they could do. Even if they don’t do it early on because they just want to focus on growth, you need to understand, at scale, what are you going to change to make sure that you continue growing and you continue delivering and building value?
+
+Ben: Yup. All right, moving to grading. The way that we do this for IPO episodes that just happened is rather than issuing you a grade, we say, “What makes it an A, what makes it an F, and what makes it somewhere in the middle?”
+
+David: Over the next five years.
+
+Ben: Right. As history plays out, I think execution-wise totally an A+. I’m sure people with quibble and have quibbled over, “Should they have priced higher and then the company be able to raise more money?” versus sharing the profits with the new investors—love the company philosophy there on sharing with the new investors—and the upside. The thing that will make this an A+ five years from now is, in doing this financing event, in doing an IPO, and of course great liquidity for all existing shareholders, are they able to use that new cash generated, or do something with either the IPO proceeds, or what it means to be a public company to really grow into this really important collaboration company in the world, that all investors believe that it can be, this $26 billion company? I’m super optimistic about that.
+
+I think the thing that would paint this as a negative picture would be if it turned out that the real business was just the video conferencing and there wasn’t this additional value to be gained by being a Zoom customer, or if they hit some ceiling on growth and they didn’t continue growing in the way that they could and that they actually ended up being smaller. Personally, I don’t think that’s going to be the case, but I think as you’re looking at Zoom over the next five years, those will be the things to look at.
+
+Santi: And on top of that, what I would add is that the key driver that’s going to help up deliver results is making sure that our customers are still happy. That’s why the NPS score is critical for us and we keep tracking that score because that means that we’re doing the right job. If we keep our customers happy, then our employees are going to be happy, our investors are going to be happy, our partners are going to be happy.
+
+The second thing that we need to make sure that we continue to focus on, is making sure that we attract the right people. We talked a little bit about the people who succeed at Zoom and those people are not just rock stars, but they are people committed to the mission and vision of the company. We need to make sure as we scale, as we hire more people, as we expand internationally, that we keep on attracting the right people into Zoom.
+
+David: Well played.
+
+Ben: All right, David, carve-outs?
+
+David: Year, we haven’t done carve-outs in a while. [...] back at it.
+
+Ben: I went and saw an excellent movie this weekend with myself and four other folks from the PSL team, largely engineers that had a deep appreciation for the history. Saw the documentary, General Magic.
+
+David: I tried to convince Jenny to go with me a couple of weeks ago. She was up for it, but I could tell she wasn’t really up for it.
+
+Ben: It was incredible. I had some issues with the immense amount of drone shots and random pictures of California water, but it was so well done. For listeners who are wondering, “What is he going on and on about?” General Magic was a company that David and I have mentioned on a couple of episodes, that in the early 90s was formed to basically invent the smartphone. They went public. They had a product.
+
+David: [...] spin-out from Apple?
+
+Ben: It was technically a spin-out from Apple.
+
+David: We’re going to have to do an episode on that.
+
+Ben: It was led by Mark Porat. The founding engineers were Andy Hertzfeld and Bill Atkinson, the original Macintosh team, Susan Kare was there, and then you really start to dig into all the people. It’s Tony Faddel, he was like this crazy long-haired intern, Andy Rubin, so when you look between Tony Faddel and Andy Rubin, it’s 98% of the smartphone market ended up being co-created by those guys at different companies.
+
+It’s Kevin Lynch who was, I think, the CTO of Adobe and now he’s the Apple Watch team, he’s Apple Senior Vice-President of something Technology. There’s Twitter CTO, there’s the former CTO of the US government, to Barack Obama. The immense talent that came out of this plucky company, that by all accounts wildly failed. They went kaput in a big way. Not only the storytelling, but the ambition and correctness of their vision, as Santi alluded to, the timing is what really matters in these things, far too early.
+
+One of the things that made it really special, too, is they had a documentarian shooting a lot of footage while they were building this thing. So, they just had immense old VHS tapes, I guess. It’s certainly look like that to draw on, to create the documentary.
+
+David: It’s like the early days of Alibaba.
+
+Ben: It’s so wild. It’s a bunch of hippies on the floor, barefoot, building computers together. Although a couple of meetings were sitting on the floor, it’s great. We’ll link to it in the show notes. So, listeners if you have an appreciation of technology history and are unnerved about Apple stuff, smartphone stuff, early days of a lot of the roots of Silicon Valley today, definitely check it out. It’s touring right now. It is an independent documentary. I assume it will be available online at some point if you miss it on the tour, but super, super fun to go see.
+
+David: I can’t wait to watch this. Speaking of truly, truly excellent recommendations, the Ben you have made to me on carve-out’s past, Dissect Season Four, the Dissect Podcast. Season four is Tyler ‘Flower Boy’ by Tyler The Creator. So good. It’s been one of my favorite albums of recent years for a long time and Cole just did such a great job dissecting it. If you are into music at all, and even if you’re not, if you’re into Acquired-type podcast about anything, you will love this season.
+
+Ben: I guess the way we try and dissect companies, Cole dissects music both lyrically, “What on earth is going on with this track and this artist,” but then also from a music producer perspective, and dissects the actual track, piece by piece.
+
+David: Not just on a music producer perspective, but I also really love it from a music theory perspective, too, like, “Why do these chords work here? What is Tyler doing with stepwise motion here?” It’s very cool.
+
+Ben: That’s awesome. I listen to the season. I got to do it. I listened to the Kanye season.
+
+David: Also truly excellent.
+
+Ben: All right. Bring it home?
+
+David: Let’s bring it home.
+
+Ben: All right. With that, listeners, thank you so much, Santi. It’s been a real pleasure. I can’t imagine having done this episode without you and it’s so fun to have this conversation together.
+
+Santi: Thank you very much. This is a lot of fun.
+
+Ben: Yeah. Well, listeners, if you aren’t subscribed and you like what you hear, you should. We’ll be continuing to cover all of the big upcoming tech IPOs. Of course, if you want to hear deeper insights on SaaS investing from Santi’s partner, Jake, or dive into any of the other company-building topics, you should consider becoming an Acquired Limited Partner at glow.fm/acquired or clicking the link in the show notes. With that, thanks to our amazing sponsor, Perkins Coie, and we will see you next time.
+
+‍

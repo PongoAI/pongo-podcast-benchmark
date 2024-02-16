@@ -1,0 +1,667 @@
+David: Hello, Acquired listeners. We have here today, our good friend, my good friend for many, many years and fourth time Acquired guest, I think now.
+
+Ben: At least a three-peat.
+
+Jake: This is at least a hat trick.
+
+David: Our dear, dear friend, Jake Saper, General Partner at Emergence Capital, back for the third or fourth time to talk about maybe the most important topic we've talked about yet, which is, what the heck do founders and investors do about investing in generative AI right now, particularly in B2B SaaS, generative AI?
+
+If you're starting a new company thinking about that, if you are an incumbent, if you are an already established startup, this technology obviously will have enormous consequences. Nobody right now knows how to approach it, except for Jake and Emergence.
+
+Jake: High expectations, David. I like that.
+
+Ben: Emergence does one thing and they do it very well, which is to invest around Series A for B2B SaaS companies. Jake has basically been running all over the place talking to incumbents, new startups, and their portfolio companies around this specific type of company, business model, and customers that, how should we think about generative AI? Jake, you prepared a very nice deck from a lecture that you gave yesterday that we got to review ahead of this. I must say, you're a good frameworks thinker.
+
+Jake: Thank you. It was the training and consulting when I was 22 that stayed with me.
+
+David: All right. Let's dive into it. We're going to spend the bulk of this episode on what all of this generative AI, OpenAI, everything happening means for B2B SaaS companies and for investing in them.
+
+Just to get us all on the same page for folks who aren't as familiar, what actually is going on right now? What are LLMs that everyone's talking about? What are large language models? Let's start with that, then let's talk a little bit about the current state of play, and then we'll get into B2B implications.
+
+Jake: Awesome. At a high level, an LLM or a large language model is a program designed to understand and generate human language. It uses deep learning techniques to analyze vast amounts of text data, and to learn the patterns and structures of human language. It uses these patterns to predict next words and phrases. When you're using ChatGPT, what it's doing is making predictions on which words and phrases should come next based upon what you've typed previously.
+
+That's an LLM in its most basic context. The other phrase that you've almost certainly heard is GPT. What is GPT?
+
+David: Yeah, and I think this will be more interesting, and perhaps less of you will know.
+
+Jake: Yes. GPT stands for generative pre-trained transformer. It's a type of LLM that has been developed and popularized by OpenAI, which is a company almost certainly all of you have heard of, and it uses these techniques to generate human-like language.
+
+It's based on this transformer architecture, which was first introduced back in 2017. It's designed to process sequential data like language data in parallel, which allows us to process lots of information. It's proven quite effective in natural language processing tasks, which is part of the reason why it sounds so damn realistic when you talk to it. You think it's a person.
+
+David: I think a lot of people, myself included until recently, were like, AI, machine learning, this has been a buzzword back since when Jensen and NVIDIA started evangelizing and creating CUDA 12+ years ago. Transformers are a new branch of this whole domain that has become really, really important and useful for this use case, right?
+
+Jake: That's correct. It's relatively new. It's six or seven years old. Obviously, the technology has gotten much, much better over time. It just enables the processing of massive amounts of data very, very quickly and to do so in a way where the predictions are quite resonant with the user.
+
+David: What was the path for transformers from academic development in 2017 through into OpenAI, then GPTs, and then where we are now? Who carried the torch? What was the moment that took this from interesting research in the AI field to, holy crap, this changing the world at faster speeds than we've ever seen before?
+
+Jake: It's a really good question, and frankly one that I think merits its own mini Sega–like episode. It's basically a combination of open source—people publishing papers, people building on top of each other, and commercialization efforts that OpenAI and others have pushed forward.
+
+The history of this is a bit more of an academic topic than this more applied conversation, but I think the history of it is quite interesting to folks. That has not been a story that's been broadcast widely.
+
+Ben: No, or the exodus from the Google Brain folks coming together with the Berkeley folks.
+
+Jake: There is a really interesting story to be told here. The information has written some stuff on this, but it hasn't been done in proper narrative history fashion that Acquired is so good at.
+
+David: We were going to do OpenAI this season, and then we were like, I don't know what we can add, history is being written in real time. But you're right.
+
+Jake: I think you got to do the work. I can give you guys a half-baked answer, but I don't want it to be the canonical Acquired answer because it's not good enough for Acquired.
+
+David: Fair enough.
+
+Jake: One thing I do want to say on GPT is that that second word—pre-trained—is really important. What it means is that the models are pre-trained at a point in time with point-in-time data. In the case of the current GPT 3.5 and 4, those were pre-trained through 2021.
+
+If you ask the off-the-shelf models about what's happening with the war in Ukraine, they're totally unaware of what's happening. That points to some of the limitations of these things. There are lots of ways you can augment these models with more current data. That's work that's going on right now, but it's important to keep in mind that these models are pre-trained and not currently being updated recursively.
+
+Ben: I'm curious to get your take on this. I heard an interesting theory the other day, which is that the Internet from 2022 forward is basically all tainted because it is after GPT was released publicly. You have to train on the pre-2022 Internet, otherwise it's this recursive loop on training from the output of prior GPT models.
+
+Jake: It's like making a copy of a copy of a copy of a copy. For those folks who remember copy machines, just the quality degrades.
+
+Ben: Until suddenly, we end up with these JPEG compression artifacts everywhere, all over all of our answers to everything.
+
+Jake: That's one of the dystopian future use of technology, which is the Internet will be primarily composed of recursive material, and the new stuff that's generated by humans will be so small that it won't actually move the needle on these models.
+
+Ben: Right, it's crazy. It's not quite Orwellian in terms of, there's some puppet master at play controlling information. It's almost like, well, whatever ended up getting encoded into the thing that we all believe to be the truth becomes the truth, because all future truth is generated off of this iterated upon truth.
+
+Jake: To me, the solution or a solution to this, which we'll get to later on in more of the applied section, is how do we elevate the contributions of the human? How do we identify when the human is contributing their creativity, their insight into the system, and target as such so that the system doesn't lose that and just copy and copy and copy and copy and copy itself?
+
+Ben: It's almost akin to the security industry where they built a bigger ladder so we need to build a bigger wall, and then they go to work building a bigger ladder. Humans just need to keep up-leveling what they're contributing to these bodies of work, such that there's some new thing where we're like, surely a machine can't do this, but a few years later, the machine will do that, and then we'll need to figure it out again.
+
+Jake: I think that's incumbent upon the people who are developing this technology, including the people who are developing application layer technology to ensure that that insight, creativity, even brilliance from the human, is captured and brought back into the system, both to make their core application better, but frankly, to not end up in a world of Xerox copy machines.
+
+David: It's funny getting philosophical here, but you can't avoid it with generative AI. Maybe this is a great transition to how to invest in building this environment. I don't know. I'm very cognizant of the danger of making predictions about how things are going to play out here.
+
+Historically, technology has always followed the path of value accrual. If we ended up in a Xerox copy machine world, that probably doesn't seem like it's generating a lot of value. Capitalism will flow in generative AI just like it has in all technologies in the past towards where value is being delivered. There's probably a role for humans in creating and directing that value.
+
+Ben: That's not necessarily true. Look at health care. Sometimes you have patterns that make it so that capitalism doesn't actually float a value.
+
+David: Fair enough, but healthcare is a very, very broken market.
+
+Jake: I also worry that that's not true. This goes deeper into philosophy. I don't know if that's true on the consumer application side of things. If you're building a virtual companion for a lonely person, I don't know how important it is that what they say or do is necessarily unique, new, or correct. It's really just a function of, how long can it capture your attention?
+
+David: That's a great counterpoint if you look at social media and whatnot today.
+
+Ben: There are only certain applications where truth matters.
+
+Jake: I want to talk about that. That's a core part of what I want to talk about today because it matters a lot, particularly for building a B2B.
+
+Ben: All right, let's get into it. You're building a B2B SaaS company. How are you thinking about this?
+
+Jake: One framework to use to think about how to build with generative AI is to think about how important is accuracy for the product you're building and how important are understanding the real world outcomes. There are certain products where accuracy doesn't matter, there are certain products where it matters a lot, there are certain products where real world outcomes are relevant in there somewhere, it's super high stakes.
+
+If you think about products like the consumer applications that we've alluded to before, let's take a company like Character.AI. This is a company that allows people to chat with whoever they want, an avatar or whoever they want, including dead celebrities. There is no correct answer when you're chatting with a dead celebrity. Accuracy doesn't matter. By definition, there is nothing that's correct.
+
+It's also true that real world outcomes don't really matter in that context. If you were to draw a 2x2 with accuracy and outcome orientation, that would be the bottom left, where neither of those things matter. You don't have to think hard about the UX with those things with those two characteristics in mind.
+
+Ben: Right, it can just be a toy, that's fine. That meets the use case.
+
+Jake: Its goal is to keep your attention. That's frankly where a lot of the generative AI stuff that's happening today is being built because it's trying to keep people's attention. If you think about B2B use cases, almost all B2B use cases outcomes matter by definition because somebody's paying you to achieve some goal. There are some B2B use cases where accuracy is super, super important, I would argue many are most, and there are some B2B use cases where accuracy matters less.
+
+Let's take copywriting for example. If you're generating copy for a new product you're building, the outcomes matter because you want to know, did the person buy the products, whatever the outcome is you're trying to achieve. But accuracy is less important because you're creating something new. It's descriptive, it's adjective, it's more than it is facts, nouns, and such.
+
+David: There's no penalty for wrong answers or multiple shots on goal.
+
+Jake: Exactly. I think unsurprisingly, some of the initial breakout successes or at least thus far in B2B have been companies like Jasper and Copy, which are building products that have that focus in mind. We can talk a bit about in the defensibility section as to whether or not those are likely to endure.
+
+Let's think about the majority of B2B use cases. These are situations where companies need high accuracy. A great example would be a medical use case. If an AI is being used to transcribe the conversation that David's having with his doctor, and the doctor says, David, what's your blood type, David says, I'm O, and the system captures that as A, David's dead. Accuracy really, really matters.
+
+The question is, given the fact that AI can be wrong, even as these models get better and better, there's still a 1%, 2%, or 3% chance that the answer is wrong. How do you build a B2B use case? How do you build B2B applications that leverage this technology but doesn't put David's life at risk?
+
+Ben: It begs the answers have some sort of human in the loop system, or what's the thing that they do in space? The historical US space program would put multiple computers computing the same answer, and then do the winner of three in case some radiation got through and affected the way the computer was doing the calculations. You could imagine a winner of three type thing. Where are you going with this?
+
+Jake: The initial UX experience should involve some human in the loop, some copilot, some coach. We, at Emergence, have been talking about this concept of coaching networks since 2015, which is the core idea of using AI to coach workers on how to do their jobs better in real time.
+
+The idea here is, as they're doing their task, they're getting some message from the bot that says, hey, try this. They're accepting, rejecting, or importantly, modifying the suggestion that's made, and then the system tracks the real world outcome. If this is the sales context, does the deal close? How quickly does it close, et cetera? So that everyone else in the network gets their suggestions improved the next time that takes place.
+
+That context is very important because the human is playing two roles there. The first is they are accuracy. They're trying to ensure that the answer that's being given is in fact correct. The second thing they're trying to do is trying to create and add their own insights to the system. This gets back to our Xerox situation.
+
+If you have a situation where the system's just repeating itself over and over again, it's not ever evolving. It's not necessarily getting better. If you've got a human in there, particularly one who's adding their own edits, tweaks, insights, attempts at making the system better, then the insights that person is able to add to the system will be propagated throughout everyone else in the system.
+
+David: This is interesting and I suspect will be a theme of where we're going to spend a lot of time in this episode, if not the whole episode. That category of software already existed and was a highly investable theme before generative AI. It was one of your main themes.
+
+We spent so much time. Somebody runs here in San Francisco talking about it. This is your guru investment, which has done great. You can easily see, though, how adding generative AI makes this even better.
+
+Jake: That's the idea. You go from a place where most companies that were doing this had to build most of the infrastructure in-house, often developing their own models, often with far less performant models than what's available today, to a situation where you can just plug into an API and get incredibly performant models off the shelf.
+
+Ben: It also seemed like there was something that happened where we went from a world, where the important thing was that you have some sufficient amount of proprietary data to train a model to this world, where the base level foundational model is trained on the whole internet, whether it be the OpenAI stuff or the open source stuff. It's so funny they're both named open because one's not true.
+
+David: Right. By open, we mean closed.
+
+Ben: You can augment with fine tuning. You can augment these foundational models. But at the end of the day, the whole paradigm shifted from, you must bring your own data, to these things are phenomenally useful even if you have no proprietary data.
+
+Jake: That's such a good insight, Ben. It leads to this defensibility question. Also, it means anyone can start a company doing this, but then the question is, what is ultimately defensible?
+
+Just zooming out for a second, the fact that anyone over the weekend can play with the GPT-3.5 API and build a product has resulted in the current state of the startup market, which is effectively a horde of generative AI–enabled hammers looking for a nail. It's hundreds of thousands of people that have built effectively the same product. They're all now live on Product Hunt. I encourage you to come to Product Hunt and see what's live right now, and it'll be very difficult to tell the difference between what's going on.
+
+David: I'm curious about your reaction to this. For me, at least, it's honestly been demoralizing as an investor because this is too much.
+
+Jake: I'll tell you the main reason why it's demoralizing to me. I don't fear having to sort through all the wheat from the chaff because that's what I get paid to do. The reason I'm demoralized by it is because people have forgotten the core lesson in company building, which is you should build something people desperately need.
+
+We've just forgotten that. This tech is really cool. It's really magical. I can, over the weekend, just hack away at it and build something really cool. Okay, now, what should I do with this thing I built?
+
+David: Which happens in every freaking cycle—VR, crypto, blah-blah-blah.
+
+Jake: Yeah, the same thing happened in crypto. We're in a situation where there's so much hysteria over the technology that we've forgotten the core reason why you should build a company in the first place, which is to solve a desperate problem.
+
+David: It's so funny, Jake. You and I were joking the other day about being involved in East Coast colleges, some of which maybe our alma maters, which we love dearly, but some of the lessons of Silicon Valley and the Stanford ecosystem have not made it there yet. This is the core one, and yet, even we forget it when there's a new gee-whiz technology.
+
+Ben: You're referring to East Coast academia for academia's sake.
+
+David: Yeah.
+
+Jake: Or East Coast academia, who are developing really novel technologies that could have real important implications in the real world, but the in-the-real-world part is thought about six steps later. It's human nature when there's new cool tech that comes out to get really excited by the tech, play with the tech, and forget perhaps some of the more boring principles that are still enduring.
+
+We're in that phase right now. We're in the horde of gen AI–enabled hammers phase. I'm optimistic that that phase will die down and we'll get into the problem-solving phase. David, hopefully you'll feel less disheartened by the state of the market.
+
+Ben: Okay. Jake, let's say I am building something that's trained on all public data, or I don't even know what it's trained on, which is the case most of the time, but the output sure does do amazing things. How do I build a defensible business using this technology?
+
+Jake: Let's use the Jasper and Copy example that we talked about before. These are companies that are building in the copywriting use case. I will use the phrase job-to-be-done throughout this conversation, which was a phrase popularized by Clay Christensen. I highly recommend reading his stuff on this, but it's about thinking about a product not for the product's own goal but in the context of what is the job that it's trying to achieve.
+
+In the case of those companies, they're trying to write marketing copy. The question we think about those companies, they've been accused of being just wrappers on top of LLMs. It's just a wrapper on top of OpenAI. I don't think that's exactly the right way to think about those companies.
+
+In more broadly defensibility in this space, I think the core question to think about is, what portion of the job-to-be-done I'm doing can be done mostly or entirely with off-the-shelf LLMs? If I'm writing copy, how much of that job could be done within an LLM, versus how much additional scaffolding is necessary to actually complete that task?
+
+It could be the case that there are some jobs-to-be-done that require a lot of scaffolding, and therefore are likely more defensible. There are some where, hey, the brilliant insight that comes out of the LLM itself actually gets me to 90% of my answer, and those companies (I think) are less likely to endure.
+
+David: One thing that jumps out to me relative to our earlier conversation about being in the gee-whiz technology phase, this doesn't excuse you needing to figure out what the job-to-be-done is.
+
+Jake: Yes. This isn't the podcast for this conversation. But when you think about defining product/market fit, the way that Andy Ratcliff defines it is, what do you uniquely provide that your customers desperately need? That's the framing to think about when you think about what problem to solve. What desperate problem exists? And what unique insight do you have on how to solve it?
+
+One way to get there is from lived experience. Eric at Zoom was the VP of Engineering at WebEx. He knew that there was a fundamental issue with that tech stack, and he knew that there was a desperate need that customers had to solve that problem. He had an unfair advantage in finding product/market fit.
+
+There are a bunch of companies that I've worked with, Regal, Assembled, et cetera, where people in a previous life had a problem, looked around for off-the-shelf solutions to solve it, couldn't find the off-the-shelf solution, left and built that solution, and found product/market fit relatively quickly. We got to get back to that state.
+
+David: This is the classic B2B company story. Things are different in consumer, which we should talk about, where more wild experimentation can be rewarded. In B2B, you're trying to get somebody to pay you to do something. You need to be really specific about what you're doing. You really need to know what the problem is.
+
+Jake: And in some cases, the more obscure job-to-be-done your problem, the more opportunity you have for unique insight, which we can get to a bit if we talk a bit about startups versus incumbents.
+
+Ben: What are some examples of things that people could do on top of the raw LLM output to provide defensibility?
+
+Jake: Let's talk about the job-to-be-done of legal contracting. In the job-to-be-done of legal contracting, there are three basic things that need to happen. You need to draft the contract, you need to negotiate the contract, and you need to agree upon the contract, both internally and externally, so ultimately sign the contract. That's the job-to-be-done with legal contracting.
+
+I'll talk a bit about a company that we work with called Ironclad, which is a player in this space that recently just sprinkled some magic, generative AI pixie dust on their product. I'll explain how this fits into their job-to-be-done and the defensibility potential over time.
+
+One initiative they just launched is effectively a gen AI–enabled redlining tool. If you are going through your contract, you highlight a clause, and you say, I want to make this clause mutual, it will make a call to GPT-4 and come back with a suggestion to redline the entire clause to make it mutual. It's pretty phenomenal.
+
+The CTO called me a few months ago after he coded up over the weekend, and was like, oh, my God. Look what we have built. This is very powerful. It took him longer to actually productize and get into the product, but it's now there in delivering value, and customers are enjoying it. I don't think that in and of itself is defensible, as excited as I am about the technology.
+
+The reasons why I think that's true are two. The first is it's only solving a narrow slice of the job-to-be-done. Going back to my previous framework, for that narrow slice, you actually could do most of that within the context of the LLM directly. You don't necessarily need another massive SaaS solution to do it.
+
+The other reason why I think that on its own isn't sustainable is it doesn't necessarily integrate proprietary outcomes data. I think that gets defensible and much more interesting if you're able to say, hey, when I use this version of this clause, the contract closes 15% faster. That is data that the LLMs, no matter which off-the-shelf LLM using, are never going to have, no matter how much data they train on because that is proprietary to you, and you've gathered that data through the workflow.
+
+Ben: Architecturally then, do these models let you create feedback loops with your own data to create a better outcomes version of them?
+
+Jake: It depends on how you define these models. If you're just using an API call to GPT-4, no. There is an infrastructure layer that's being built that allows you to store and integrate your own proprietary data in things like vector databases so that you can maintain that knowledge.
+
+In addition, and you guys referenced this earlier, there's a growing ecosystem of open source models and open source stacks that you could use to customize the models with this information. This closed versus open ecosystem debate is really fascinating right now. My guess is there will be some hard lines drawn in the sand over time on this.
+
+Back to the Ironclad example, ultimately, the defensibility lies in the fact that they have all of this outcomes data because it's a broader workflow tool that has the full job-to-be-done.
+
+Just zooming out for a second, Ben, you asked the question, what else do you need? What scaffolding do you need? It's all the boring SaaS 1.0 stuff. It's robust permissions and approvals because you need to do that to make sure the contracts has approval from different people within the company. It's a native text editor. It's data integrations and the other formulations, esign, all the other things that you need to actually complete the full job-to-be-done.
+
+Ben: Audit trails, logging, and compliance.
+
+Jake: It's all that stuff that I think in the history of gen AI, we've lost sight of the fact that, oh, you need all this stuff to actually make software work well, but you do.
+
+The point I would make is that there are a lot of companies that are either solving jobs-to-be-done that can primarily be done within the LLMs, and therefore not durable, or the job-to-be-done they've chosen is such a narrow slice that there's not enough of this basic scaffolding you need to build something that's ultimately defensible and has workflow that gathers proprietary outcomes data.
+
+David: On this Ironclad example, which is such a great one, I want to clarify something for me and hopefully for listeners, too. It sounded like you're not that excited as an investor about this feature, but I wonder if that might be mischaracterizing how you feel about it.
+
+Is that true? Or is it that you're not excited about, if a competitor were to launch with this feature as a new startup built around just this feature that they would have a very tough time competing with Ironclad? Which of those you're saying or something else?
+
+Jake: I'm super excited about the future in the sense that when I first saw it, I was also blown away. I think it has tremendous potential for the platform. The point I would make is, if you were just developing this on a standalone basis, I would be less excited.
+
+If a company came to me and pitched me with a gen AI–enabled contract redlining tool—set aside my conflicts because I'm invested in Ironclad—I wouldn't be excited because to me, the majority of that job-to-be-done could be done within the context of the LLM. Maybe not as well, and certainly not with proprietary data that you'd be gathering over time. But if you're doing this within the broader context of a well formed job-to-be-done, that's where this thing gets interesting and defensible.
+
+David: Right. I would imagine as a board member of Ironclad, you're very excited about the future of all of the new gen AI–enabled product features that Ironclad can ship over the coming years because they've already built this robust framework to get the job done and a venue where it is happening.
+
+Jake: It's also why I don't have as much fear about the countless redlining gen AI–enabled startups that have popped up over the past three days.
+
+Ben: I thought you're going to say months, but there probably have been countless over the last three days.
+
+Jake: The math on this is crazy, Ben. If you look at the growth of ChatGPT, it took ChatGPT two months from launch to get to 100 million users. It took Instagram three years, it took Netflix 10 years.
+
+Ben: I have heard this stat cited a few times before. I have no doubt that it is unbelievably fast, but I don't think this is apples to apples because I think OpenAI is counting registered users, not active users.
+
+Jake: The hard thing about this is, typically, you would look at a monthly active user. But in this case, because it's only been a month or two, registered and active are basically the same thing. I think what you're getting to, which is a good question is, what's the retention curve going to look like and TBD? What this shows is just the massive mainstream interests that this technology has, which has been part of the reason why there has been so much activity around new startup creation here.
+
+Ben: There was a South Park episode on it already two months ago. They use the words ChatGPT and OpenAI 50 times during the episode, so it's not in the abstract. Mainstream America, mainstream world, is already like, oh, cool, this is the product, and this is the company.
+
+David: Has this happened before? All of that, this being on South Park, the consumer use case for OpenAI is ChatGPT product. But what we're talking about here is, how can this technology be used in the enterprise, which is a totally different thing, but it's the same company and technology being used in both ways.
+
+Jake: Part of the reason it's so exciting is because the extensibility of this stuff is effectively endless.
+
+David: You can start to see why people use this analogy. But when the Internet was created, the same thing happened. People went nuts when Netscape came out on the consumer side. But also, a lot of Silicon Valley B2B technology companies were like, oh, we need to understand what this means for our side of the house, and that led to the cloud.
+
+Jake: It's a good point, David. That's a good transition to think about. How do we contextualize this in the broader context of B2B software revolutions that have happened before? How does this compare to the on-prem to cloud revolution? How does this compare to mobile?
+
+On-prem to cloud, incumbents had a really tough time adopting and adapting at that moment because it's really hard to rewrite your entire code base. Most of the incumbents from the on-prem era are dead. Siebel is dead. Salesforce became the cloud-based CRM and took off.
+
+Ben: It's not just rewriting your code base. It is a physical change of how your entire company operates. Of course, there's the, we should make datacenters, we should stream the bits down to customers, and we should deliver it through the web, blah-blah-blah. But there's also, we should completely change the nature of our relationship with customers such that they buy a different product from us, such that they're buying access to software, rather than the truck full of our stuff by our employee that arrives there to install it and charge us service fees for installing it.
+
+Of course, all those companies are going to die. Rewriting code is like firing everyone and hiring a whole new set of people to do a completely different set of things, such that the job-to-be-done for the customer is the same. The tip of the iceberg looks the same, but what's under the water is actually a different iceberg.
+
+Jake: That's exactly right. Unsurprisingly, there was a dinosaur-like asteroid that hit, the incumbents died, and life was born in the cloud. Mobile was a little different in B2B. It did require some replatforming, but there have been a number of incumbents who have adopted with some success, certainly in the consumer space, Facebook, very notably.
+
+To think about B2B, I would argue that Salesforce, in the mobile revolution, has done an okay job of adapting to mobile. But if anyone's used the mobile product, it's still not awesome. There are now a bunch of use case specific mobile CRM applications that have been built to fill in the gaps. We're invested in one called Vymo focused on financial services. In that era, the incumbents, it was difficult, but not impossible for them to adapt, and I think that's what's happened.
+
+Generative AI is a completely different ballgame. It's as easy as an API call. Salesforce has already integrated this technology. How much success they have, how well they've integrated, how other incumbents do, et cetera, we're all still very early in figuring that out. This is a different ballgame and has meaningfully different implications for the startup opportunity.
+
+David: We're just talking about the Ironclad example. They are the incumbent in the space, and they're probably the best actual product version of generative AI in the space as well.
+
+Jake: I'm obviously biased in saying that, but I think that's true. There are interesting implications for, if you think about them as the incumbent, if a startup is trying to pick off little parts of their job-to-be-done, and you can do most of those within the LLM, it's going to be less durable.
+
+Ben: What types of incumbents do you think are the most at-risk from complete disruption, like their business going to zero from the fact that this technology exists?
+
+Jake: It's a good question. I think that there are incumbents for whom the current UX or UI paradigm is not one that will sustain effectively in the new environment. Let's get into UX and UI. As everyone knows, a chat interface, hence ChatGPT, is a common way to interact with these LLMs.
+
+There are going to be some B2B use cases, and certainly many more, I would say B2C use cases, where a chat interface is superior to a point-and-click interface. If you are an incumbent who has built their entire stack on a point-and-click interface, you're going to have an innovator's dilemma problem.
+
+I don't know if this is true, but let's imagine a world where a chat-first interface is the best way to build a CRM. If that's the case, it's going to be really hard for Salesforce. It's not that Salesforce can't afford to hire great product people to build that. It's that they have an installed base of millions of daily active users. Their use of the point-and-click interface, and they can't disrupt that business. There's an innovator's dilemma issue that could arise from this UX paradigm shift.
+
+Ben: One working hypothesis I've been noodling on ever since we interviewed Avlock, the CEO of AngelList on our last ACQ2 episode, is the more services-oriented a firm is, the more at risk they are of LLM disruption.
+
+He was pointing out that for all of everything that AngelList does, all the tens of thousands of portfolio companies managed by AngelList, and hundreds, maybe thousands of VCs that have a back office, and I can't remember what he said, but hundreds of thousands of K-1s, there's a 170 human team that works at the company, inclusive of their software engineers and management, everyone, designers, to perform all of that activity. They do a lot of AI behind the scenes for operational efficiency.
+
+David: His point was that 170 people at AngelList is probably roughly the same amount of people that Andreessen itself has in their back office. AngelList has scaled to support—nothing against Andreessen—just orders of magnitude more funds, portfolio companies, K-1s, and they use LLM and gen AI technology to get that leverage.
+
+Ben: It basically provides operating leverage for businesses that that use case didn't used to have operating leverage. You can have high gross margins in what we used to think was an exclusively low gross margin industry.
+
+Jake: I think it's also an opportunity to think about not just internally, but externally, what product could I build that was once a service. An example of that—I don't know if anyone's working on this yet—pricing strategy is something our portfolio companies spend so much time and money trying to figure out. It requires trying to estimate a price elasticity curve—how much are people willing to pay for this product, different types of people, what should the right packaging be, et cetera.
+
+That type of thing today is the domain of consultants and guessing, largely. But you can imagine a world, where you could input all of your historical data on this, and a model could spit out, this is how much you should charge for this, this is how much you should package it, and then it could be updating that real time as it's getting data from how people are purchasing. That is not an existing category. This isn't a question of disrupting an incumbent. It's about creating an entirely new category.
+
+David: Also to your point about UI and UX, that is a wholesale different UI and UX from the current way that job is done now, which is by people in consulting and steak dinners. If you productize it, that's going to be very different.
+
+Jake: One way to think about this is what jobs-to-be-done couldn't have been done with previous technology. A thought exercise there is, what is the domain of consultants today? My partner, Gordon Ritter, in 2013 wrote an article called The Death of McKinsey, with this spirit in mind. But I think the death of perhaps not McKinsey but—
+
+David: He was just a few years too early.
+
+Jake: Yeah. I think many of these consulting efforts, if they don't adopt this technology themselves, are likely to be productized away.
+
+Then there's another category to think about if you're a startup thinking about how do I play in the incumbent landscape, which is, what entirely new jobs-to-be-done will be created by this technology? There are the obvious answers here around infrastructure.
+
+There's a whole layer of companies that are being built today that are doing vector databases, that are doing prompt engineering, that are doing model chaining, all these model training, et cetera, that exists as this technology rises. That will obviously be an opportunity for startups.
+
+There's going to be a massive opportunity around compliance in generative AI. There's a bunch of stuff happening, whispers of what's happening on Capitol Hill right now in terms of potential regulation around generative AI. But my view is that regardless of what happens in DC, enterprises themselves are going to demand that their vendors have some form of compliance on this front.
+
+That compliance will likely entail something around, hey, what data do you train on? Is it even legal for me to use this product? How do I ensure that you're not taking my data and using it in the model? Or if you are, I'm aware of that and getting paid for it, et cetera.
+
+How do I ensure that there are proper guardrails around the technology, such that the thing doesn't go haywire and screw up my business? All of these types of things, there will be companies built to do this.
+
+David: You put this very elegantly in our little outline we were working on before the episode for this of Vanta for AI.
+
+Jake: Yes, which I know was a sponsor.
+
+David: It's such a great partner of ours, but yeah, totally.
+
+Jake: It's a super exciting and (I think) a really challenging space to build in, but one that I think will become important. It's an opportunity for a startup because there's not a space today.
+
+Ben: While we're in compliance land, it's an interesting thing to note that SOC 2 is not a regulatory framework that has nothing to do with anyone on Capitol Hill. Will AI be the same way where it's not legally enforced, but it's a set of standards that gets adopted?
+
+Jake: That's in my current framing. In general, I like to invest in stuff that has business tailwinds and not just regulatory tailwinds. My sense is, there's enough here that people are going to care.
+
+You guys probably read last week, Samsung discovered that three of its employees had uploaded proprietary data to ChatGPT. They had a bunch of secret meetings, and they wanted someone to summarize or something to summarize the takeaways for the meeting. They just put in ChatGPT without thinking like, oh, that data now belongs to OpenAI and Microsoft, our potential rival. More and more of that is going to happen.
+
+Right now, what's happening is companies are just saying, don't use ChatGPT. If you're firewalling this technology completely, then you're going to get left behind. You've got to find a way to integrate this technology in a way that is enterprise-compliant. I think that will be driven by the enterprises, not necessarily the government.
+
+Ben: Is that how ChatGPT's terms of service work? Any text that you upload here, we can read, and any of our employees are allowed to look at this in plain text?
+
+Jake: I don't know if any employees can read it.
+
+Ben: It's not like Uber God mode.
+
+Jake: No, I don't think it's God mode, I hope not. I'm just thinking about some of the things I've put in ChatGPT. I believe they changed their terms of service recently, where it's either the default or easier to default to them not being able to access that data. But the broader point remains that there's a level of fear and I think justified fear around sharing particularly sensitive proprietary data with third-parties.
+
+Part of this will get addressed with this open versus closed ecosystem conversation we're having before. If you are super, super nervous about your data leaving your premises, you're more likely to opt into the open source and open ecosystem and build your own, which is now easier to do than it traditionally was because of some of these breakthroughs.
+
+I think there are also going to be a bunch of privacy- and compliance-related technology that's necessary to ensure even in that world that the data that you're using is legally kosher, not leaving your premises, and the thing doesn't go off the rails, et cetera.
+
+David: This is, historically, has been such a huge opportunity for startups. I'm thinking of Zoom. I remember when we were talking about right after Jake and I were business school classmates, you joined Emergence right after we graduated, and talking about the Zoom investment as you guys were making it. At the time, FaceTime was really good, still is really good. The more directly competitive products with Google and Hangouts were pretty good. Zoom's probably and still is better.
+
+Jake: I'm biased, but I think so.
+
+David: The obvious at the time, Zoom became much, much, much bigger and more consumery over time, but was, hey, enterprises aren't going to use FaceTime for a whole bunch of reasons. They also don't like Hangouts for a lot of the same reasons.
+
+Jake: Yeah, the enterprisification of new technology creates massive businesses, both underlying application businesses, as well as the derivative technologies that are compliance, regulatory, and everything else to make sure that they succeed.
+
+It's even more important in this world than I think it was in previous worlds because the risk of things going wrong is so much worse. I assume you guys are familiar with, or if you're not, I'll share a bit about this concept of AutoGPT. Are you guys familiar with this one?
+
+Ben: I literally just started reading about it last night. Listeners, this is going to date how long we wait between recording and releasing episodes. AutoGPT is still a pretty new thing as we're recording this.
+
+Jake: It's possible that we won't exist by the time that this episode comes out because AutoGPT will have taken us over. AutoGPT is effectively an AI agent that you can give a goal in natural language. It can attempt to achieve it by breaking the goal into sub tasks, and using the Internet and a bunch of other tools, you can plug into it in an automatic loop to solve it. Basically, you give it agency to solve problems.
+
+Ben: It's implemented as a browser plug-in, so it can do things like type in websites, go to them, fill out forms, download files.
+
+Jake: Yup, it can be. There are a bunch of formats, but that is one of them. Basically, you can tell it, and there've been a bunch of examples of folks doing this, create a business. I'm going to give you $100, create a business, and try to make it as profitable as possible.
+
+David: I'm going to give you $100, turn it into $200 as quickly as inhumanly possible.
+
+Jake: It can start a company with Stripe Atlas, it can go to Shopify, it can spin up a shirt store. It can do all of those things. It doesn't take much imagination to understand how sci-fi nightmares become real, not just from a consumer perspective, but from a B2B perspective.
+
+If your well-meaning employee goes to AutoGPT, and says, do a bunch of scouting for prospects, draft a bunch of emails, and send a bunch of emails, you can imagine a world where some information that is shared in those emails is probably not what you want shared.
+
+Or, hey, do a bunch of research on this supply chain opportunity, reach out to these vendors, get some price quotes, and come to us. You can imagine a world, where a bunch of stuff is purchased that you don't mean to purchase. There are all sorts of ways in which I think that we could be trending towards our own FTX moment in generative AI.
+
+Ben: What do you mean by that?
+
+Jake: What I mean by that is things are evolving so quickly that people are building first and thinking about oversight and guardrails second. It's likely that there will be some catastrophic issue in a company in the coming quarters that is driven by someone building an agent that goes wrong.
+
+The reason I call it the FTX moment is because it will likely be similar to what happened there in that there will be a very famous blow up, and the issue won't necessarily be because there was a flaw in the underlying technology. FTX didn't blow up because crypto was bad. FTX blew up because there was poor oversight.
+
+I think the same thing could be true here. It's not that the underlying technology is bad. The underlying technology has a lot of limitations that you have to build around. But if you have proper oversight, I think it can be really helpful. But people aren't thinking about that right now. There are a bunch of gen AI–enabled hammers just looking for a nail.
+
+David: Another good analogy could potentially be the Sony hack, if folks remember that. That was such a key point. Companies, even big enterprises like Sony, didn't think about cybersecurity in any way the same form until that happened and the incredible disaster, not just for Sony but for so many other companies that got caught up in that because of their emails with Sony people. Snapchat was caught up in that. That was a watershed moment for enterprise cybersecurity.
+
+Jake: I think we will have something similar to that, which I think ultimately will be healthy. We will likely go through some trough of disillusionment with this, as is true with almost all new technology innovations. It's possible that the apex will look like one of these catastrophic moments. A lot of enterprises will pull back and say, whoa, is this ready for primetime? What do I need to do to make sure it is?
+
+That will be the healthy growth moment. It will be an opportunity both for the derivative companies, the Vanta for AI to come out and help make that a reality. It also goes back to UX design. I think we will learn a lesson in how we build these technologies to effectively include the human in the loop.
+
+Ben: It's pretty interesting, the trough of disillusionment, because normally when I look at this Gartner Hype Cycle graph, it's about VR, or about some technology that we hoped would reach mass scale and mass utility, but we all got too excited and it didn't, and then over time, slowly over the next 5–10 years, it did.
+
+In this situation, there's obviously an insane amount of utility for hundreds of millions of people, and that is already true. Our fall from grace here when the hype gets ahead of the utility isn't going to be that there's not utility. It's going to be that we're not ready to embrace everything that comes along with that utility. We're going to be reining or attempting to rein in some technology that clearly is useful. That basically never goes well.
+
+You can't tell people, stop using that super hammer that's cheaper, faster, stronger, better than your existing hammer. It's like, I'm pretty sure I'm going to keep using the super hammer. Otherwise, I'm not going to come work at your company. People do what they want, where they find value.
+
+Jake: That is true. I think that will particularly be true on the consumer side of things, I think the genie’s out of the box. When you're thinking about selling into a mid market or enterprise company, there is a level of conservatism that exists there and should exist, which I think will rein in some of these behaviors, but it's the opportunity. If you're an application builder or anyone in the stack that's building to try to sell into a proper B2B company, you have to keep this stuff top of mind.
+
+I think one of the most interesting things to pay attention to in B2B software over the coming year or two is how user interfaces and user experience do evolve. We talked a bit before about the Salesforce innovator's dilemma issue if chat interfaces become popular. There are some situations where chat interfaces will become more popular in B2B, although the infinite landscape, the infinite canvas that presents, I think, does have limitations, so I think it won't be ubiquitous necessarily.
+
+In general, how do you figure out how to effectively build a Copilot or a Coach? What are the UX best practices to do so to ensure that you're both getting the best of the human, as well as ensuring accuracy, and that the thing you build doesn't go off the rails? The companies that do that best will likely be the winners of this next generation.
+
+David: It feels like it's already here. The UX, for some of those things you just mentioned—I haven't actually tried Copilot, but I'm thinking of Notions AI feature—it's not really a chat interface. It's baked into the workflow that already exists in the platform.
+
+Jake: I think a lot of these UXes, obviously in the back-end, they're conversational. You're having a conversation with the LLM, but the front-end will likely include, depending on the use case, some elements that are more conversational and some that aren't. I think Notion is a good example of that, in the sense that you can type a phrase and the Notion can offer you, do you want to make it more professional, you want to make it more casual, et cetera. It's bounding the canvas and telling you what is possible.
+
+The scary thing with the chat is you just don't even know what's possible. There are lots of limitations within that, and scary things could happen. But I think a lot of these interfaces will take the best of that and say, hey, here are some suggestions on what you could do, press this button and see what happens. The best of them will learn what the human does with that suggestion, what edits they make, et cetera, and then tie it to a business outcome so that every time a new suggestion is being made, it's improved by the historical data.
+
+David: Ben and I, we were just texting yesterday about a piece of data that we've had for a long time on Acquired episodes that we basically completely ignored, the graph of listener engagement through the course of an episode. When do listeners stop listening? We have never done anything with it, but you can imagine.
+
+Ben: If we had, it would have changed our behavior. We would have been like, oh, don't make episodes too long because it traps your completion percentage.
+
+David: Right. We might have optimized on the wrong things. But also just completely ignoring it is probably not the right—
+
+Ben: Also wrong.
+
+Jake: This is why the human loop matters, just like that discussion you guys just had. Surfacing that data is going to be really important, and then you as the human have to figure out, what do I do with that? That's where the interpretation and frankly, the reason you get paid exists. Because otherwise, AutoGPT generated an all-in podcast script. You guys need to figure out how you can keep up in your game, which is ultimately come down from insights like what you've just shared.
+
+David: That's where I was going with when we're talking about the Xerox risk earlier. At least in our world, people will engage with what is compelling. If a Xerox world is not compelling, people won't engage with it. Somebody will come along and tweak it as a human, and they will again.
+
+Jake: I think that's right. There is likely to be an interstitial period, though, where we build these suggestion-based technologies, and the humans don't stay engaged.
+
+Let's say people start building what I'm describing, which is they have a smart Coach, Copilot UX, which helps hopefully mitigate some of the accuracy risks and tries to get some of the brilliance, but what ends up happening is the human gets used to it and just clicks, accept, accept, accept, accept, accept, and isn't actually engaging their brain at all.
+
+David: The DocuSign problem.
+
+Jake: Exactly. There's a real problem there. I saw a quote in the Journal last week. The woman who runs HR at Kraft Heinz Company said, the thing that's keeping me awake at night right now is how to use these AIs as a copilot, not on autopilot. It's a succinct way to summarize this problem. There are too many business use cases where accuracy is critical, and having the pilot fall asleep could crash the plane.
+
+Back to the UX question, I think the best companies will find ways to keep users actively engaged. Part of that may be things like the way you actually designed the suggestion.
+
+We work with a Seattle-based company called Textio, which has been doing augmented writing since 2015, I think. Their user interface is really clever. They're focused on HR writing. If you have a job post, they will go through and it will highlight phrases and say, if you change this to this, you're 12% more likely to attract whatever type of candidate you want to attract and eliminate bias in that process. Most of their suggestions, if you hover over them, will tell you, hey, change this to this. Every once in a while, they highlight a phrase and they say, change this. They don't give you any suggestions.
+
+Ben: Just so you don't get in the habit of click, click, click, click, click.
+
+Jake: There are two reasons why they do it. The first is so you don't click click, click, click click. The second is because they're actually trying to generate new data, new what you could call mutations for the system. So it's not a Xerox problem.
+
+Ben: Interesting. If the user base is wide enough, even if I only get those one out of a hundred times, and most of the time it's really speedy, you still create a very large new corpus of data.
+
+Jake: Exactly. If you take this even further, you could think about almost incentivizing or gamifying this process for the user. If I innovate on the dataset by coming up with a new way to answer this problem, or phrase this thing in a job post and that has a positive business outcome, it helps close the job posts faster, or whatever the outcome is, I should get paid. If the insight I came up with in conjunction with this AI really helps the whole system evolve or mutate to a better business outcome, I as the user should get paid. There are going to be new compensation models that I think could arise with this stuff.
+
+David: The Patreon of AI.
+
+Jake: Yeah, perhaps the Patreon of AI. That's an interesting concept. By the way, I went to a Scary Pockets show a couple of weeks ago at the Fillmore. Scary Pockets is an amazing funk band. They cover music, and the CEO of Patreon is in the band. Amazing, amazing show.
+
+Ben: Jack Conte, right?
+
+Jake: Exactly.
+
+David: Jenny, my wife, went to high school with him.
+
+Jake: That's so cool. As a lapsed musician myself, I find his ability to combine his day life and his nightlife so inspiring.
+
+David: Is Carlos still on Patreon?
+
+Jake: Carlos is still on Patreon. I pinged him to see if he wanted to come to the show, but he moved to Montana.
+
+David: Oh, wow. Nice. This is our other GSB classmate, who is also an accomplished musician. He is the CFO, I think, of Patreon?
+
+Jake: I believe he is the CFO. Back to the UI and UX interface, there's a framework that actually this guy James Cham at Bloomberg Beta helps me think through, which is thinking about the AI and human relationship as an intern to manager relationship. If you think about the AI as the intern, and their job is to help provide leverage to the manager, and the manager's job is to review their work, improve upon it, and then press submit, the human gets leveraged from the AI, but the accountability stops with the human. That's what people are going to pay for, I think.
+
+David: Right. The intern screws up, the manager is going to get fired.
+
+Jake: Exactly. We need to be building with this, where the use cases or accuracy is important, and it's tied to important business outcomes. Building with this framework in mind (I think) is more likely to create positive outcomes. Right now, so much of the conversation is the opposite, which is that the AI is going to be the boss, and can take every job.
+
+The reality is there are a ton of jobs where accuracy may not be as critical, where the human’s input doesn't have as much effect on the business outcome, where the task is super static, it doesn't change very frequently, where those will be and are being automated. But the use cases are very opposite, you need the human effectively involved.
+
+Ben: It's so hard for a human to stay in the loop if the suggestions are good enough. This is why Tesla makes you grab the steering wheel every X seconds because you will just tune out. It is your fault if you crash the car. You have a big counter incentive, including your own life, to not tuning out, but you're still going to because we're all humans, and we're wired that way.
+
+David: There are all those YouTube videos of people going to sleep in the back and just insane stuff.
+
+Ben: David, you and I got a DocuSign with a lot of pages and a few things that we needed to sign maybe 3–4 days ago. I don't think you read that whole document.
+
+David: I'm pretty sure that in most cases these days, I'm just like, oh, Ben's going to do this.
+
+Ben: That's why I read it. I was like, there's no chance David's doing this, I need to do it.
+
+David: It's called parenting.
+
+Jake: There are AI-enabled therapists if you guys are looking for some intervention here.
+
+Ben: A business marriage counselor.
+
+Jake: Let's take the Tesla example for a second, and even the DocuSign example for a second. I think one framing to use here that hasn't been discussed much is, how much influence does variation and human behavior have on outcome? What is the variance and outcomes in general?
+
+In the case of driving the car, the variance and outcomes is binary. You get into a crash or you don't. But in a lot of business contexts like sales, for example, there's a top 10% that perform way, way, way, way better than everyone else. That is largely driven based upon Deltas and their behavior.
+
+David: There's uncapped upside and downside.
+
+Jake: Exactly. In that world, I think you can build user interfaces and potentially compensation schemes that keep the human being engaged. You make it to a world where just the very top performers are the ones that stay engaged, and then you fire everyone else because the system can do the lower stuff.
+
+I read a paper that my colleague just shared with me a few weeks ago about analysis of Copilots in example scenarios. It found that the biggest impact they had was on people who are already high performers.
+
+David: Biggest positive impact that they had.
+
+Jake: It helped the high performers perform even more, which is both heartening and also a little bit disheartening example. Perhaps in the future, Copilots can be built to actually up level folks who aren't operating at a high level already.
+
+David: I was just thinking about that. What are high performing people who I've worked with like? They're people who are engaged.
+
+Jake: That's where we're going to name names. I was excited to hear from you.
+
+David: Participants on this podcast are at the very top here. I'll leave it to you guys to debate who's higher. It's people who aren't doing what I do with all of our back office stuff at Acquired to click, click, click. I'm a low performer there. I'm hopefully a high performer when it comes to reading scripts. I'm highly engaged.
+
+Jake: That's the point, David. Forgive me for zooming out life philosophy for a second. My guiding life philosophy is understanding what gives you, as an individual, energy, and then pursuing your life to maximize those things and minimize everything else. It's possible that writing scripts, and maybe playing with Nel are the things that give you the most life energy, maybe not.
+
+David: They do.
+
+Jake: Doing DocuSign reviews is not something that gives you energy, but it's possible that Ben actually gets energy from it or someone else does, et cetera. The process of self-actualization is to get yourself into the zone of energy creation.
+
+David: Here we go. Gen AI is pushing everybody to the top of Maslow's hierarchy.
+
+Jake: That's the positive spin on this. If we design the systems correctly, you can get to a place where it's like the person who was the lower performing sales rep, that never really gave him or her energy anyway. They can be replaced, the high performers can be coached, and they can go and do the thing that gives them more energy.
+
+Ben: Doesn't this argument also require universal basic income, though? At some point, there's not enough income-producing jobs for everyone to do the thing that gives them the most flow.
+
+Jake: I think that is probably true, but I think one thing that is worth keeping in mind as we talk about all the bots that are coming for our jobs is that after ATMs, there were more bank tellers. The fear was that ATMs come, and bank tellers are going to be gone. Now there are more bank tellers today than there were before ATMs.
+
+Ben: Is that a population growth thing? That's stupid. Why would there be more bank tellers?
+
+Jake: The bank tellers doing other things is the point.
+
+David: Humans like interacting with humans.
+
+Jake: Yeah. Before, bank tellers were just giving you cash. Now bank tellers can do a vast array of things that they could never do before.
+
+David: Manage your relationship with the bank.
+
+Ben: I get the new jobs thesis generally, but the more bank tellers thing smells funny to me.
+
+Jake: I haven't dived in deeply on it. I know that Ezra Klein goes back to it frequently, so I'm trading Ezra here.
+
+Ben: I don't mean to invite you on my podcast and then tell you you're wrong.
+
+Jake: What I'm going to do is put Ezra on my place, since that's where I stole that one from, and you can debate with him.
+
+Ben: The broader point, though, is absolutely right, which is you have no idea all the new jobs that get created by this new boom. All of the jobs that we all have—venture capitalists was a very niche thing but not non existent—as podcasters didn't exist 30–40 years ago. The job of program manager at 1 technology company where I started my career, basically didn't exist 30–40 years ago. Most new jobs for college grads are ones that are new.
+
+Jake: Yeah, it's beyond my expertise to really authentically prognosticate around where this is going to go from a broader jobs perspective. I think that it is possible that the jobs that do remain, people who have genuine energy towards doing those jobs, will be able to do them more effectively in conjunction with the help of a robot, as long as they think of themselves as a manager, and they think of the intern as the helper.
+
+David: I have two areas I want to make sure we hit before we wrap up. Ben can jump in with others. One from our outline, we need to make sure we hit because we'll be doing people a great disservice, founders and investors, if we don't. You haven't heard how to think about pricing in Gen AI. I have heard nobody talk about this, so please give us your thoughts.
+
+Jake: This is evolving quickly and I'll explain why in a second. One thing is pretty clear, which is that the current paradigm of pricing is unlikely to be the future. There are a bunch of reasons why that's true. One obvious reason is that there's a potential cannibalization effect. If this technology does make the user better, faster, et cetera, you just need fewer users to get the same job done. If you succeed, presumably your contract size could actually shrink. There's some cannibalization.
+
+You could argue that if you make them more effective, you can hire more of them, et cetera. There will be situations where that's not quite one-to-one. In general, the goal with pricing is to tie yourself to value creation. That is the framework to think about when you're trying to figure out, how do I price.
+
+Per seat made sense when you are selling a hammer. When you're selling a generative AI–enabled hammer, it may not. There are other reasons why pet seat pricing isn't potentially the ideal for AI.
+
+Another is per seat pricing can dissuade spreading across the company. A lot of these products we talked about before. I believe that the medium term moat in this space is going to be robust workflows around a complete job-to-be-done. I think the longer term moat around the space is going to be proprietary outcomes data, business outcomes data.
+
+You're best suited to gather that proprietary business outcomes data when you have a lot of people that are using your product. If you're pricing per seat, it dissuades that from taking place. I think it just makes the product potentially worse over time if you priced that way.
+
+David: Okay, so what do you do?
+
+Jake: What's the answer?
+
+David: Just to double click on the per seat, which has become—correct me if I'm wrong; you're the expert—the standard in SaaS. The reason I think it is is that you're going to tell an enterprise to adopt a new tool, and you're like, oh, the way you do that is we sign a seven-figure deal. versus the way we do that is a small team of you guys whips out a credit card, and we grow over time. That's a much better sales motion.
+
+Jake: It is, although it can be hard to really get to the seven-figure levels if you start that way. It's a much broader conversation on go-to market models for SaaS, which we can do an entire episode on if you guys want.
+
+The way to think about this is start with first principles, which is to do an ROI analysis to figure out how much value your widget is creating. This gets back to the first thing we talked about around, what is the desperate need that you're solving? How big is that need? And how effective are you at solving it?
+
+This is the truth moment where it's like, okay, well, I'm solving it, it's this big, and this is how much I'm solving it. Then you can ask yourself, okay, how much can I charge? This is not, how do I charge? It's how much can I charge?
+
+In general, SaaS companies can charge roughly between 10% and 30% of the value they create. In a more monopolistic setting, you can charge a lot more because there are no options. In a more commoditized situation, you obviously charge less, but that is a rough framework. Be really honest with yourself about this, obviously. Part of it is you have to gather data from customers and hopefully from—
+
+David: This is hard when you're just starting. You really can't do this because you don't know.
+
+Jake: It's true, which is why pricing is an iterative process. Most companies like at the startup phase, if there's a really good comp, they just charge what the comp is doing and maybe a little bit less because they're in the startups, so you need to get folks over. Or they just go to a customer and they have five different pilot customers, they get five wildly different prices, and just do price discovery that way.
+
+This is more of the academic framing to think about. Certainly, as you scale, this should be the framing you're using. But the process of getting there, it can be a messy one, but you need to be keeping it proactively top of mind.
+
+Let's say you figure out how much to charge using some combination of what we just described. Then the question is, how do you actually charge? As I said before, the goal here is to tie your pricing mechanism to value creation. That is where value is aligned. You did add value, therefore you should get paid. But you don't want to disincentive usage. That's a really important point, as we talked about before.
+
+What's an example of that? In the case of Textio, the company we mentioned before, the classic way to charge there would have been, proceed in terms of number of recruiters for their job post product. But number of recruiters may not actually correlate with how heavily used the product is, how much value it's creating, et cetera. They may not be hiring a ton of people right now, they may be hiring a lot of people, et cetera.
+
+You could also charge on a volume basis, which is how many contracts go through the system, but that dissuades usage. What Kieran, the CEO, decided to do was to charge on the basis of how many jobs the customer expects to fill over the course of the coming year. That basically creates an unlimited, all-you-can-eat usage of the product. But if they're hiring a lot of people, then they should be paying more because they're getting more value out of it. If they're not hiring that many people, then you potentially charge less.
+
+Ben: There are ways to deal with wrongness there. If you overestimate three quarters in a row, then we should give you some rebate, or we should talk about how we would give credits toward your next thing. Likewise, in the opposite direction, you can bring out a big hammer and say, if you go over your limit, it gets much more expensive on a per-hire basis, so you should estimate correctly.
+
+Jake: Yeah, that's right, and there are ways to validate. There's some work that goes into actually institutionalizing or operationalizing a model like this. There are also downsides because the customer is not used to buying a model like this. They're much more used to buying per seat.
+
+As people start experimenting with new models, for the reasons I talked about before, there'll be more openness to exploring approaches like this. The bonus way to think about how to charge thing in the world of AI, is how do you use pricing to actually improve your product?
+
+David: Which happened in the SaaS revolution.
+
+Jake: Yeah. How do you actually get people to submit their data to your system so that your product gets better for everyone else and allow them to use your data anonymously across the product? Proprietary outcomes data we talked about, I think that's the long-term moat for these businesses. It's more powerful if you're not building a model just for one company's proprietary outcomes data, but you have all of your customers' proprietary outcomes data.
+
+This is less likely to happen in datasets that are core to the company. The way we think about this, internally is, what are critical non core datasets? Datasets that are important that people are willing to pay a lot of money for access to in an anonymized way but aren't necessarily core to your company. Hiring data is a good one.
+
+It's critical data. Google's core proprietary, their code behind the search algorithm, they're never going to give anyone else. But they're hiring data. They might in a very anonymized, protected, et cetera, way, if they get a pricing break. This gets back to the pricing thing.
+
+You can think about saying, hey, you can have the single tenant version of my model that I built for you, and it's X. Then you can have the multi tenet that's pointed at X. Not only is it cheaper, but you also get access to everyone else's insights. You have a two-fold incentive to participate in this structure. That type of pricing thinking will become increasingly popular.
+
+Here's the part of my thinking on this that is still evolving because I think this whole space is still evolving. Given that in many cases, you're now renting a new piece of infrastructure that in and of itself has varying degrees of cost associated with it, how should you pass on that cost to your customer? Depending on how much open AI is charging you for whatever thing you're using, that'll have meaningful implications on how you can charge, so you have to think a little bit.
+
+Traditionally, software never had a cost-plus pricing mentality. Most physical goods are cost-plus. It's like, it costs me this much to make it, I'm going to charge 20% on top of it. Software obviously doesn't have that paradigm, which is part of the reason it has such high gross margins, but this is a world where we're adding a new cog. We're adding a new cost of goods sold.
+
+Ben: Very real variable costs. The question is, as you get better at the engineering problem, let's say a company has a use case, where there's AI magic that happens, customers are loving it, and the company figures out, we can do 20% less API calls if we cash in this layer, and we figure out some efficiency there. That should accrue to you for figuring out that engineering efficiency and not to your customer. You want to continue to get the operating leverage on new efficiencies you find in your company, too.
+
+Jake: Exactly. This is all evolving very quickly, real time. There are ways to optimize if you're using third-party models like if you're using the OpenAI's suite of models. I won't name them publicly, but I know some folks that are using OpenAI's models to train their own proprietary models. They're building a use case–specific app, they'll just do a bunch of calls on GPT-4 for, and they'll spend $50,000 training their model off of that. There's an interesting legal question here. Is that legal? I don't know.
+
+David: This is LinkedIn bootstrapped on address books.
+
+Ben: It's AI laundering.
+
+Jake: It's AI laundering, but isn't OpenAI doing some of that as well? The dataset they've trained on is that.
+
+Ben: What's CloseAI? We actually have no idea what they're doing.
+
+David: If it's dirty money all the way down, then what's a few more germs?
+
+Jake: We've talked about the regulatory stuff here. One thing we didn't touch on is, what will the legal implications of all this be? I think it's going to be years before this gets sorted out.
+
+Ben: Between now and then, someone will make billions of dollars. It's just like the LinkedIn thing.
+
+Jake: Exactly. We won't have to build it. Someone asked me recently, should I just not do anything for now until it gets figured out? I was like, do you want to play in the next 5–10 years?
+
+Ben: It's like, no, you should probably go make a bunch of money right now before…
+
+Jake: To be clear, people should be behaving as an all context with a high level of integrity. I don't want to excuse all this for lack of integrity.
+
+Ben: When I say make a bunch of money, it's like, go create a bunch of value for customers and ask people to pay you for the value you created.
+
+Jake: That's exactly right. The way people price, given what's happening on the underlying cogs layer, is going to have to evolve quickly because some people are training their models off Open AI. Some people are just doing their own open source stack, which potentially could be cheaper for them to serve, and therefore there could be some cost advantages against competitors here.
+
+We talked about UX as a super fast, evolving, exciting part of this that has a bunch of unanswered questions. I think the infra and the way the infra translates into application layer pricing is a really exciting space that a lot of innovation is going to happen over the next year or two.
+
+David: Awesome pricing discussion. Thank you for all of the alpha that you've just given us and founders listening to this right now. I said there was another topic I want to touch on before we wrap here. I just want to do a temperature check with you as a venture capitalist.
+
+Obviously, this space and your corner of it in B2B is top of mind and something you're spending a lot of time and effort on. This is a really weird time in venture and startup investing. We just came off this 15-year boom, with lots of mini booms building it all up to a huge deflation that happened violently and rapidly.
+
+Now, here we are with another. It's very disorienting, or at least I find it very disorienting. I'm curious, how are you feeling? How is Emergence feeling? What's going on?
+
+Jake: There's a level of schizophrenia, for lack of a better word. You're pivoting between situations where companies may have been struggling to sell because sales cycles have gotten much worse, financing issues and certainly the SVB crisis didn't do anything good for the blood pressure of this whole ecosystem. You're also chatting with folks who are building extraordinarily exciting products, many of which are me-too products, but some of which I think have the potential to really be enduring companies.
+
+I think it's always true in venture that the best of us find ways to control our emotions and find a centered place. I think this time, it's the hardest time I've ever experienced to try to do that, but it's also in some ways the most important, because ultimately, our job for the founders that we serve, is to be emotional calibrants to them. As bad things or good things happen, it's to help them calibrate their reaction and support them, particularly when things are challenging.
+
+A lot of this time is about trying to emotionally regulate your excitement, your fear, your anxiety, your opportunity. This is a time also of great anxiety, not just for VCs, but more broadly. In the VC landscape or the startup landscape, there's a real fear of FOMO, which is part of the reason why you see the horde of hammers. There's also a human anxiety level of like, what is the world going to be like for my kids? What should I be teaching my kids? Those are scary things to think through.
+
+David: All of that is very true, and I don't want to discount it. One thing I'm struggling with is just a capital allocation question. All of this is occurring when tech and venture—both public tech and private tech, broadly defined—like we said, it just went through this massive deflationary cycle or prices crashed, let's just put it that way. Let's be blunt.
+
+Interest rates are 5%, which turns out as actually a very attractive place to park a lot of capital. Risk appetite has gone way, way, way down. All of a sudden, here is this new incredible opportunity presented on a platter against the backdrop of an incredibly different macro environment from the last time. I'll make this perhaps an easier question to answer. What are your conversations with LPs like right now?
+
+Jake: We just had our annual LP meeting a couple of weeks ago, so it was top of mind. They asked a ton of questions about AI because both as consumers and obviously as investors themselves is top of mind. I think one of the key things that we talked about with them that we've tried really hard to stay disciplined around is time averaging or deployment pacing. You can never time the market, both from an interest rate perspective and from a technology innovation perspective.
+
+One of the core lessons of investing over time is invest ratably over time, be disciplined about that. Do not deploy a ton of capital when things seem hot, do not pull back when things seem bad. For us, we tried the whole discipline of that. We're investing out of our sixth fund now. It will be a four-year roughly fund cycle. Effectively, all of our funds have about a 3 ½- to 4-year fund cycle, including those that happened in the 2021 build up. We will do that for fund seven as well.
+
+David: You're one of a small number.
+
+Jake: Yeah. That is something we talked about with our LPs. It seems like others did not follow that path, and we'll do the same thing now. Higher interest rates obviously mean lower exit multiples, but we're investing for the future, not for now. The technology landscape, there will be a bunch of stuff, including stuff that we invest in that blows up and goes nowhere. Hopefully, there will be stuff that goes somewhere. But we'll also continue to invest in this two, three, four years from now, when some of the answers to the questions we've discussed today will become clear.
+
+A lot of this comes down to discipline and thinking about this as an institutional practice where you're investing ratably over time, understanding that most of your investments won't work. But if you invest with that discipline pace, and you're able to spend time with the right people wanting to have more hits, and everything will work.
+
+David: Yup. It's interesting. We could do a whole another discussion on this. Why brand power is so powerful in venture and I think is unlikely to change, despite what venture invested and changes over time, as we've been talking about this whole episode? Brand and institutional staying power, to be able to do that, because what's so hard about it?
+
+Everything you say is like, oh, yeah, of course stuff. That's what you should always do in any type of investing. The problem is the game on the field changes. Yes, that's easy to say. But when you rewind 2 years from now, and companies that are raising series As at 200 post or 300 post, your options are don't deploy or play the game on the field.
+
+Jake: That's true. I got a really good question from one of our LPs that was good for me to wrestle with. We generally strive for healthy ownership percentages when we first invest because we spend so much time with our founders. We make one investment per partner per year, so we have the time to try to become the most important partner to our founders. That's our second core value, we take it really seriously. The LP asked me, how have we been able to do that? Why have we been able to maintain our high initial ownership when others haven't had the same ability?
+
+After reflection, I think there are three potential answers. The first is, we are able to make higher conviction bets earlier than other people are seeing it because we're so focused. In the case of this coaching network stuff, we've been doing it since 2015. We may see a company where they don't yet have an obvious product/market fit, but we have been spending enough time thinking about this construct that we're willing to take the early bet and get paid for that bet if it pays off.
+
+There's a second category of companies, which you described before that are obvious companies, that are super hot, doing really well and high price. We win those deals, and we pay, and we get less ownership generally. In that case, that obviously lowers our average ownership.
+
+David: Correct me if I'm wrong, I think there's still a class, though. That happens with those deals, but there are a class of firms of which I think you guys are one of them; there are very few of them. Even in those cases, the ownership you're getting might be lower than that first class of deals, but it's not below a certain threshold, and that's a high threshold.
+
+Jake: That's true. Hopefully, we've earned that through our founders' references. That's the core value we have in a process, where a new founder is trying to decide if it's worth working with someone like us or someone that maybe less expensive, so to speak. It's ultimately about the value that you're able to add. Ultimately, this is a services business.
+
+Perhaps, to the earlier conversation, we may get disrupted by AI ourselves as we are a services company, but that's ultimately what it is. There's also a third category of companies where there's a negative sort, where we're investing in stuff that we get the ownership, but it's not necessarily a great company.
+
+The reality is it's a portfolio. There are examples of all of that in our portfolio. If you invest with that mindset, you do it over time, and you do it in a disciplined way without deploying too much too quickly or too little too quickly, then hopefully you win.
+
+David: You hit on the key point, which really is the theme of this whole episode, I think. I didn't know going in, we would maybe tie these two things together, but its value. Where's the value? Are you disciplined enough to invest in it? And do you not dilute your own value?
+
+Jake: Yeah, how do you charge for the value? If there's one key takeaway, I also hadn't really thought about that coming in. The biggest issue with the gen AI startup landscape right now is that people are not thinking about the value they're creating. They're not focused on that, they're focused on technology.
+
+If you just start with the core principle of, in my business, what is the desperate problem I'm solving, and how much value am I creating and solving it, that helps clarify your thinking if you're a generative AI startup, if you're an incumbent, if you're a venture capital firm, whatever it is you're doing.
+
+David: Yup. That feels like a great place to leave it for now. Jake, always a pleasure. Thank you so much for coming back on Acquired and being such a good friend to us over the years in many, many ways. We're looking forward to seeing you next time.
+
+Jake: Thank you, David. That will be my GPT-4, GPT-4.5, GPT-5, depending upon how we're counting the number of appearances I've had here.
+
+David: You may actually be an AI model at this point.
+
+Jake: Maybe. The crazy thing to think about is this conversation, maybe we do this on an annual or semi annual basis on this topic because the things that we will talk about will look so different. I'm doing this lecture that Ben mentioned at the GSB tomorrow, and I've been guest lecturing in this class on business in AI for four years now. For the past three years, I've been able to use basically the same presentation because the space has evolved, but not all that much.
+
+I have literally rewritten every single slide for the conversation I'm having tomorrow because the space has changed so quickly. As a result, I think this conversation, I know we try to keep this podcast evergreen, and there will be elements that are, but there will be elements that I think fade quickly.
+
+David: That's what's cool about this. Our interviews and our conversations here on ACQ2 is an explicit goal of the main Acquired stories is evergreen. These are timeless stories. But that's not all of the value in the world. There's a lot of value to what's going on right now and exploring as things are changing, so that's the goal. The answer is we just got to have you back in six months.
+
+Jake: I'm excited to do it.
+
+David: All right, Jake. Thank you, sir.
+
+Jake: Thanks, David.
+
+Ben: Jake, thank you so much.
+
+Jake: Thanks, Ben.
+
+Ben: And listeners, we'll see you next time.

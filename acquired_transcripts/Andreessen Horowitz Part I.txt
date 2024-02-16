@@ -1,0 +1,963 @@
+Ben: Welcome to season 9 episode 1 of Acquired, the podcast of great technology companies and their stories and playbooks behind them. I'm Ben Gilbert and I'm the co-founder and managing director of Seattle-based Pioneer Square Labs and our venture fund, PSL Ventures.
+
+David: I'm David Rosenthal and I'm an angel investor based in San Francisco.
+
+Ben: We are your hosts. Listeners, David and I decided to open this season with the complete story of the firm that totally appended the entire venture capital ecosystem a decade ago, Andreessen Horowitz.
+
+But as we started researching, of course, that meant telling the journeys of Andreessen and Horowitz themselves before founding the firm. Which of course means telling the history of the web browser, the creation of Mosaic, the founding of eventual IPO Netscape, which was the first real internet tech startup, and of course, the tumultuous story of Loudcloud and Opsware.
+
+David: And so much more than that that you don't even know, Ben.
+
+Ben: This is great. This is the first time I've literally not opened your notes at all. Normally we don't trade notes, but I have no idea what you've prepared. Listeners, the impetus for that is that this was going to be a one part episode until last night when David texted me and said, how about we do a two-parter. There are really things about Marc and Ben that I did zero research on and I'm excited to learn from David along with you all today.
+
+David: I'm like the old legendary Chicago Cubs short stopper Ernie Banks, “Let's play two!”
+
+Ben: Well, I'm really pumped to do this as a two-parter. I think the history of Marc and Ben is really important to understand the world views of both of them and how they were shaped by it. I think for all of us working in a startup ecosystem that was so shaped by the 2009 creation of the firm Andreessen Horowitz, I think it's paramount to understand the things that shaped them because they have shaped us all.
+
+I'm really excited because I feel my investor psychology has already changed since starting the research into Marc and Ben.
+
+David: Totally, can't wait to dive in.
+
+Ben: Listeners, two things to be aware of if you like the show: 1) is our Slack, there is awesome discussion that takes place on not just our episodes but also the tech news of the day going on there. We’re now 8,000 strong, so you can come and join us at acquired.fm/slack; and 2) is the limited partner program. This is where we drop subscriber-only-content like our library of over 50 interviews and deep dives on company building topics like venture capital fundamentals. You’ll also get access to our LP Zoom calls with David and I.
+
+You can click the link in the show notes or go to acquired.fm/lp.
+
+David: Before we dive in, we are switching things up this season. I would like to welcome our presenting sponsor for all of season 9, pilot.com. Pilot is the backbone of the modern financial stock for startups and is backed by all-star investors like Sequoia, Index, Bezos Expeditions, and Stripe. They are truly the gold standard for start-up bookkeeping and at this point, most if not all the companies I work with as an angel investor run on them. Now over to our conversation with pilot co-founders Waseem Daher and Jessica McKellar.
+
+For this first episode, can you start off by telling everyone first what Pilot is? Then how did you all as highly technical co-founders from MIT decided to come together and start a company focused on accounting?
+
+Waseem: Pilot runs the financial back office for your startup. We take care of your bookkeeping, your tax prep, budgeting, forecasting, projections, all that good stuff. And the way that we do it is we connect you with your Pilot team—full-time, US-based employees of ours who specialize in working with startups to take this work off your plate. Pilot is the third company for Jessica, me, and our co-founder Jeff. We all met at MIT and we all studied Computer Science together there.
+
+Jessica: Yeah, we were all nerds in the Computer Club at MIT. Our first company out of school was rooted in the master's thesis of our other co-founder Jeff Arnold. We were building a bootstrap self-funded company around technology for rebootless Kernel updates on Linux. Which was really fun Tech to build a profitable business out of, that eventually was acquired by Oracle.
+
+Part of what sticks out about Ksplice is first, we had to be very tight with our finances because we hadn't taken any external funding. As part of that, we needed to do something that every set of business owners, every set of founders needs to do, which is you need to maintain your finances.
+
+Being the nerds that we are. We're like, oh well, we'll buy a copy of QuickBooks desktop, the book Accounting for Dummies, we'll do it ourselves, and I'm sure it'll be great. So we did that, I'm sure poorly. We even wrote some software (being who we are) to do real-time reconciliation of our books. It was funny because during the acquisition conversations with Oracle, the Oracle Finance and Accounting teams were like, why were you doing rebootless Kernel updates? Why don't you sell this? Why reconciliation stuff?
+
+I think it is stuck in the back of our minds. We ended up extending at Oracle, got back in the saddle, and had another company together that was acquired by Dropbox. We're back in the saddle again with Pilot. I think that the visceral experience of meeting to take care of your finances to maximize the outcomes for your business and just having no good solution was true 15 years ago and it was still true when we were starting Pilot. That was unbelievable to us, and that's a big part of what motivated us to start that company.
+
+David: That's amazing, thank you. You can learn more about Pilot and whether they can help your company eliminate the pain of tax prep and bookkeeping by going to pilot.com/acquired. Thanks to Jessica and Waseem, all Acquired listeners—if you use that link—will get 20% off your first six months of service. We're super excited to have Pilot with us this season. They are really great and I can attest that will make your life way easier if you are a founder.
+
+Ben: Well, David take us in and listeners, normally this is where I would warn you that this show is not investment advice. David and I may have investments in the companies we discuss in the show, it's for informational and entertainment purposes only. But this episode, all this stuff's pretty old. Good luck investing in any of this defunct technology.
+
+David: We're going to be talking about a lot of dead companies in this episode. Next time, we'll be talking about a lot of live companies. One disclosure before we jump in here. I think this is the first time I have done this on this show. I have a new investment vehicle that I'm not quite ready to talk about just yet but I'm doing it with my buddy Nat Manning, who's the COO of Kettle and should tell everybody that a couple of the GPs at Andreessen Horowitz our LPs in that vehicle. I don't think it has affected my telling of the history but everybody should just know that going in.
+
+Ben: Congratulations, David.
+
+David: Thanks. Super excited. Can't wait to talk more about it soon. We start with history and facts. In 1966, in London, England—not what you expected. Was it, Ben?
+
+Ben: So this is not Marc?
+
+David: No, not Marc that we're talking about here. We are talking about Ben who was born in 1966 in London, England.
+
+Ben: I did not know that.
+
+David: It was the ‘60s, the counterculture is in full swing in London. You've got the mods and the rockers—The Who, The Rolling Stones, all that. Ben's family that he was born into (a young family) is living in London at the time. They're American expats. The husband of Ben's father had come to London to work for Bertrand Russell, the—
+
+Ben: Philosopher?
+
+David: Philosopher, polymath, logician, mathematician.
+
+Ben: Oh, wow.
+
+David: So the family already had either one or two children. I'm not sure if Ben is the second child or the third child. But nonetheless, in 1966, Benjamin Abraham Horowitz was born, of course, would grow up to become Ben Horowitz. So usually, on this show on most episodes, we would just stop there with the family. This is the like [...] that our protagonists were born into. We can now move on to the people themselves.
+
+This time we're going to spend a little more time on Ben's family. His mom's name is Elissa, then Horowitz and now Krauthamer, and his dad is David, David Horowitz. That name may not mean much to probably most people listening, but some of you listening are saying, wait David Horowitz, that David Horowitz?
+
+Ben: I have no idea what you're talking about.
+
+David: David was and is a radical political activist and is very much a large and still active part of American History, even though I think most people these days are not aware of it. So at this time, the reason he was in London is he was one of the leading young intellectual radicals that were championing the New Left at the time and the counterculture and they were in London. He was working with Bertrand Russell, protesting the Vietnam War, and advocating for world peace and worldwide nuclear disarmament.
+
+Ben: Oh, wow.
+
+David: He was working with not only Russell but Jean-Paul Sartre, Simone de Beauvoir, James Baldwin, Stokely Carmichael. He is in the middle of everything happening in the ‘60s. This continues for a couple of years and then in 1968, David gets an opportunity he can't refuse, which is to move back to America and become the co-editor of the magazine Ramparts, which was one of the leading publications of the hippies and the counterculture. They originally published Che Guevara's diaries, it's crazy. Ramparts was based in Berkeley California, which is how Ben Horowitz ends up growing up in Berkeley California.
+
+Ben: It's funny. I knew Ben grew up in Berkeley and I just didn't make the connection that anytime you hear that someone was in Berkeley in the late ‘60s, you should ask the question like what were they doing in the counterculture movement. What role were they playing and how did they end up there? Rather than just being the way you would today, which is like, yeah, it's all a bit of a hippie-dippie town, but it's part of the Bay Area, it's part of technology.
+
+David: Nice suburb, you get the college campus there, better weather than San Francisco. It was a little different back in the day. Speaking of different, we know David is sort of already part of the counterculture. When they get back to Berkeley (get this), he intersects with Huey Newton, the leader of the Black Panthers, and becomes very close with him and with the Panthers. When I say very close, I mean very close.
+
+So he writes about them and Ramparts all the time, helps bring them to National prominence. The whole family, including young Ben, would go to the Black Panther church every Sunday in Oakland, the Son of Man Temple.
+
+This is a little bit certainly outside the scope of Acquired, but just to paint the picture of where Ben came from—the Black Panther Party. If you're not American or from the US and studied American history it was one of the most powerful forces for black and civil rights in American history, and the whole family is right in the middle of it. But unlike Martin Luther King and the Civil Rights Movement, the Panthers did not advocate for nonviolence, shall we say.
+
+Ben: Less about the civil disobedience, more about the disobedience.
+
+David: More about disobedience. I didn't know this but it was actually originally founded as the Black Panther Party for self-defense. The whole purpose of it was to resist police brutality against black people in Oakland, that was the origin of the Black Panthers. This was like wild times. In 1969, FBI director J. Edgar Hoover described the Black Panthers as the greatest threat to the internal security of America. That's how wild this was. They're right in the middle of it, including young Ben—the Patty Hearst kidnapping, everything.
+
+So then in 1974, when Ben was eight, an incident happened which changed things very dramatically. The Panthers needed help with their bookkeeping. Huey turns to David who is sort of running this organization, Ramparts. He says, hey, can you help me when you're bookkeeping. If only they had Pilot, history would have taken a very, very different course.
+
+David introduces him to Ramparts’ bookkeeper, a woman named Betty Van Patter. The Panthers bring her on. Six months later, Betty disappears, and a few weeks after that her body washes up ashore across the bay in San Francisco. The crime was never solved, no one was ever charged, but David and many others believe that she found out too much and the Panthers had ordered her killed.
+
+Later, Ben of course would write The Hard Thing About Hard Things and live through all this crazy technology stuff. You just have to imagine, he was eight and his family went through this. A busted IPO doesn't seem so hard after stuff like this. Anyway, we will move on and get to Marc and Netscape, Loudcloud, and Andreessen Horowitz now. But yeah, it's crazy.
+
+For David, he does a complete 180 and ends up becoming an arch-conservativist. He was one of the primary strategists behind Trump's political strategy for defeating Hillary Clinton in 2016. Jeff Sessions and Stephen Miller were protégées of his.
+
+Ben: Oh, I had no idea.
+
+David: David Horowitz Freedom Center is one of the biggest funders of Trump leading political ideology in America. Crazy enough they still talk, Ben and David. They apparently still have a great relationship. There is a wonderful New York Times piece that we'll link to in the show notes. I recommend everybody go read about all of this that came out a few years ago by David Streitfeld about it. But yeah, this family history is just wild.
+
+Ben: That's fascinating, and it's so cool that family bonds can transcend and not just political beliefs but deeply seated ideological beliefs about the way the world should be.
+
+David: Totally, and yeah that out of all of this, 50 years later comes Andreessen Horowitz. Back to Ben, obviously, he soaks all these in. It has a huge influence on him, but he also wants to blaze his own path and get out of his dad's shadow. He gets turned on to this other revolution that is happening in the Bay Area in the ‘70s, which is the Computer Revolution.
+
+He ends up going to Columbia in New York for undergrad and studying Computer Science there. Probably, wanting to get away from everything happening in the family life at that point in time. He then goes to UCLA afterward and gets a Master’s in Computer Science. While he's there, he interns at the legendary Silicon Graphics.
+
+Ben: Otherwise known as SGI led by Jim Clark who will come up later many times.
+
+David: He's definitely going to come up in the story and SGI is just legendary. I don't think we've talked about them as much on Acquired, but they were right alongside Intel, Microsoft, and Apple. One of the big early computing companies in Silicon Valley. The current Google Campus was originally the SGI Campus. They did not just graphical computing but 3D graphical computing.
+
+They did the effects for tons of Hollywood movies like Terminator, Jurassic Park, the N64 Nintendo video game console, which is going to come back up later in the story, SGI made that. They made the processors for the N64.
+
+Ben: Really?
+
+David: Yeah. So if you played Mario Kart back in the day, you have SGI.
+
+Ben: The thing that I know that we're going to talk about later about N64 coming back up makes way more sense with Jim Clark having the SGI background and SGI making the shift for that now. Is there any tie between Lucasfilm and SGI?
+
+David: Oh, that's a good question.
+
+Ben: The University of Utah folks that ultimately became Industrial Light & Magic.
+
+David: Jim Clark was one of those Utah folks.
+
+Ben: Along with of course Nolan Bushnell and Alan Kay?
+
+David: I think that's right. I don't know if there are any direct ties between Lucasfilm and SGI. Although I'm sure they were using SGI’s hardware for the effects at ILM, at Industrial Light & Magic.
+
+Ben: It was Alan Kay who went to the University of Utah and graduated with his Master's in ‘68. So it would have been that same time as Nolan Bushnell.
+
+David: All this stuff going on. Later, we're now in the very early ‘90s, young Ben coming out of school, coming out of his master's program, he joins SGI. He doesn't stay that long though. After about a year he leaves and he joins a start-up that's coming out of SGI. And that startup kind of fails, but it's his first startup experience, and then he moves on and he joins Lotus.
+
+Ben: Yes. What should have been the way that we all processed words and numbers, but alas, Microsoft crushed them.
+
+David: Yeah. What was it? Lotus 1-2-3, I think?
+
+Ben: Yup, and Lotus Notes.
+
+David: Lotus Notes, yup. While Ben is at Lotus, he hears about this new exciting paradigm development. A new piece of software coming out of not Silicon Valley, but the middle of the country, the Midwest, the heartland of America—Illinois. We are talking about Mosaic, the Mosaic web browser.
+
+Ben: The NCSA Mosaic.
+
+David: Indeed.
+
+Ben: Wasn't it originally X Mosaic?
+
+David: Oh, I don't know that.
+
+Ben: Yeah, it was originally released as sort of a prototype piece of software originally only for Unix systems and used the X Windows System. It was a common thing to denote it with an X in the name of the piece of software.
+
+David: Wow. Well, we're going to get into the name more in a minute here, but then here's about Mosaic and of course its celebrity wunderkind young brash founder, I guess—Marc Andreessen. So who was Marc Andreessen? A man who needs no introduction. But his background was (let's just say) pretty different from the [...] that Ben was growing up in.
+
+He was born in Cedar Falls, Iowa, which is not a super, super small town. But he was raised in New Lisbon, Wisconsin. Do you know what the population of New Lisbon, Wisconsin is today, Ben?
+
+Ben: Ten thousand?
+
+David: Two thousand five hundred and fifty-four people. Marc's father, Lowell, was a sales manager for a seed company called the Pioneer Hi-Bred International Seed Company, and his mother Pat, worked in customer service at Lands' End. I think they would go on to become a sizable customer of Loudcloud, but that is, in the future to come.
+
+Marc talks about this all the time. If you've heard Marc talk about his background, he could not wait to get out of this small town, the Midwest, and computers on the internet where the vehicle he was going to do it. He says of his family, which he rarely, rarely talks about. The one quote I was able to find is he says, "They were Scandinavian hardcore, very self-denying people who go through life never expecting to be happy."
+
+Ben: Wow. It's worth pointing out too that when you say this non-traditional background, you alluded to him as this wunderkind, and that was just not true yet. At this point in history, and we have Brian McCullough from the Internet History Podcast to thank for this. I binged the first 10 episodes of that podcast to prep for this. But he brings up the point that Marc was like an hourly worker at NCSA.
+
+David: Oh yeah. He was getting paid $6.25 an hour.
+
+Ben: Yeah. No one recognizes his genius yet, and the innovation of creating Mosaic of actually mobilizing people to work on this thing was like, hey, we have a lot of fallow resources here. We have some smart people. I have no authority, but I'm going to wrangle the troops to try and do this with me.
+
+David: I think if there's one thing that young Marc Andreessen and now older Marc Andreessen is very good at, it is putting himself in the right environment to meet the right people and to succeed. We're referring to the University of Illinois where he would end up going to college. He was very intentional about deciding that.
+
+He decided that he wanted to go to school, a) to study computer science as we wanted to go to school with a great CS program that his family could afford; and b) he also wanted a place where he would have the opportunity not just to study CS, but to actually work while he's in school, on cool stuff that's going on. And of course, Urbana-Champaign had not just great a CS school, but what we were referred to a few times now: The National Center for Supercomputing Applications was attached to it, the NCSA.
+
+Marc—when he gets to Illinois—he immediately starts doing work-study at the NCSA and while he's there as you mentioned, he's not yet Marc Andreessen. How does he end up coming up with Mosaic? While he's at NCSA, they're interfacing with all of the other supercomputing centers around the world including academic research like particle accelerators.
+
+Particularly, with CERN over in Switzerland, the particle accelerator, which is where Tim Berners-Lee is and that's where Tim Berners-Lee comes up with the set of Standards like HTTP and all that stuff that he dubs "the world wide web". All the way across the world, halfway across the world in Illinois, this kid working there, Marc Andreessen hears about it and he's like, oh well, that sounds very interesting.
+
+Ben: Totally, it's cool thinking about how this came to be because you got Tim Berners-Lee there on one of the few next workstations, like the next cube, that actually shipped and was actually used by people. Because this crazy expensive thing that only went to people working in academia. Of course, this is sort of Steve Jobs' company before returning to Apple. It says so much about Tim and the environment in which the internet and the World Wide Web was started that it was on the NeXT machine.
+
+It came out of this rigorous Academia corner of the world, which is frankly so different from a lot of the startup innovation that is happening today. I mean, a lot of the frontier tech stuff comes out of academic labs. But I think we often forget, especially with how it's sort of countercultural, a lot of new things on the internet have become, that it started in a very...
+
+David: A very closed way, honestly. The original intention behind all these sets of protocols and the World Wide Web was supposed to be just for universities and research.
+
+Ben: So they could share research notes.
+
+David: Yeah, and it was very controversial what Marc was doing because people didn't want to let the riffraff in. They thought it would dilute the quality of this is supposed to be a pure thing about conducting research.
+
+Ben: I got this great quote from Marc. He gave this in an interview in 2003 that's talking about starting Mosaic, and he says, “But the internet community back then, the key technical people didn't want the internet to become easy to use or graphical because that would pollute the environment. Only smart people could use the internet (was the theory), so we needed to keep it hard to use. We fundamentally disagree with that. We found it should be easy to use and graphical. So you should be able to point and click.”
+
+David: Totally. It’s so great. It's really just because of Marc. He doesn't give a crap. He's getting paid $6.25 an hour over it [...]. He's like, well, what's the worst that can happen? I'll just code this thing up. He convinces Eric Bina who's a full-time employee there to work with him and code up an easy-to-use graphical browser to open this up to everybody. They'll fire me if it doesn't work, who cares?
+
+Ben: This is the first playbook theme that I want to pull forward, and listeners who are trying something a little new today, interspersing more of the playbook throughout the story. But this is the very first time Marc runs the playbook of there's something right now, there's only for some small close group of people in an accessible way. I think there's something very interesting to be done by opening up to the masses. And of course, there's no business model behind this yet. It just lets everyone use the internet and let's make that possible.
+
+When you think about Andreessen Horowitz all these years later funding things like Clubhouse and investing in social media platforms like Twitter like Marc did very early.
+
+David: Or help Coinbase.
+
+Ben: Absolutely. It is very much this let's take something very esoteric, make it very available to everyone, and then we will figure it out later. This is the very first time he runs that playbook.
+
+David: The other counterintuitive thing or going against the grain element of building a mass-market browser for the web was that this was not how most people thought the internet was going to go at the time. At the time, this was in the early ‘90s, people were talking about the information superhighway. Actually, SGI was a big part of this. SGI was working with the cable companies to build these internet-enabled set-top boxes.
+
+Ben: Everyone thought it was going to be TVs.
+
+David: It was going to be TVs and even worse, it was going to be the cable companies and the government in a private-public partnership that owned all these pipes. Could you imagine? That they were going to control the stuff that was going to go on there, Americans were going to access it through their televisions.
+
+Ben: This was a big platform with the Clinton Administration when they were campaigning for the '94 election was that we are going to be a big part of the information superhighway from the Federal Government. It's fascinating to zoom out a little bit.
+
+It makes sense that you have these big screens and you have fat bandwidth that's able to send perfect, not choppy, high fidelity audio and video to TVs. And then you look over at this internet thing, which is only a thing for academic institutions, there's 40 nodes or something at all. There are 40 servers on the whole internet and all it can do is send texts back and forth. No, you're not going to bet on that platform to be the way that this ends up coming to market.
+
+David: To be fair to the soon-to-be Clinton administration and in particular to Al Gore, who would become Vice President Gore. In the 1991 Gore Bill, which is allocating funding for all these various internet projects that are being built out in America. They actually specifically allocated funding to the Mosaic Project at the NCSA. This is how they get the resources to pay Marc’s $6.25 an hour salary for all the hours that he and Eric are going to work on coding this thing up.
+
+Ben: See, you're telling me Al Gore did invent the internet.
+
+David: He did sort of. I guess he was like the VC who funded the internet?
+
+Ben: Wow, Al Gore was Marc Andreessen's VC. You heard it here first.
+
+David: You heard it here first. They do this, they create Mosaic. In 1993, they opened it up for anyone to download and use for free. But importantly, this is going to come up again later. They do not open source the code. So the NCSA retains the code behind Mosaic. It's not free, available, and open-source, but anybody can download it and use it. Of course, people go nuts and do.
+
+In 1994, Wired would write, "The (Second Phase of the) Revolution Has Begun. Don't look now, but Prodigy, AOL, and CompuServe are all suddenly obsolete - and Mosaic is well on its way to becoming the world's standard interface."
+
+Ben: Because those were all these walled gardens. Everyone should remember, AOL was not the internet. It was AOL keywords. It was pay to play. It was you could only publish the content on AOL if you did a deal with AOL, which is of course how they had these incredible revenues that they were reporting and everyone thought this was the most unbelievable company ever.
+
+But, the internet was fundamentally something different. The World Wide Web was something completely different. Open is probably not the right word yet but used standard protocols. When you mentioned that it grew like crazy, I grabbed some stats on that.
+
+In February of ‘93 when they released the first version, and this is super prototype-y. There are some great comments from Marc Andreessen out on the NCSA X Mosaic listserv when they released version 0.5 in January of ‘93 that say things like, I'm looking more for feedback on design and functionality than bug reports right now. Don't take the current code too seriously.
+
+New releases will probably come out every 7–14 days until 1.0 arrives. The bulk of the program will be rewritten in C++ anyway. There are disclaimers all over the mailing list that he's distributing this thing out to, but the stats are crazy.
+
+David: It's like the early Ethereum.
+
+Ben: Totally. The next month, there were 12 users in February of 1993. Within 3–4 weeks, there's 1000, and by spring—you got January is that listserv, February is 12 users, a month later it's 1000. By Spring, two months later after that, it had 10,000 users, and then nine months later in early ‘94, it had a million users. The very first thing that Marc Andreessen shipped had insane growth and perfect product-market fit right out the gate.
+
+David: Those were still pretty good numbers today.
+
+Ben: Absolutely.
+
+David: This is in an era when people maybe have a dial-up connection, probably people have PCs, but not that many people.
+
+Ben: The TAM of the internet was super small. If you had a million people by early ‘94 using your software on the internet, I don't know what percent of internet users that is, but it's meaningful.
+
+David: You had 10% of all internet users.
+
+Ben: Totally. It was the killer app for the internet.
+
+David: This is funny. We're talking about 1993, this is also Marc's senior year at Illinois. He graduated in the Spring of 1993, probably when Mosaic was at the 10,000, 20,000-ish user adoption curb. He doesn't think this is going to be a thing. He’s like, oh, this is a cool thing I did as an internship during my college years. I want to move out to Silicon Valley, move out to California and get a job at a real computing company. Famously, he talks about this. He felt like he already missed it. He felt like Silicon Valley had happened.
+
+Ben: Absolutely. I got the quote for this too. Marc did a great interview with the Tim Ferriss Show a few years ago. He says, "When I got to the Valley in 1993/1994, I thought I had missed the whole thing... The great PC companies had gotten built in the ‘70s and ‘80s. And by the time the ‘90s arrived, the PC was done. It was finished, and you could go buy one, and it was great. But it was done."
+
+People in the Valley thought there was nothing else left to do. "And then, there was this moment where I and various people… wrapped our heads around the implication of the internet, which, today, seems obvious. But, at the time, it was very contrarian… if you said the internet will become a mainstream consumer medium that 3 billion people are going to use worldwide for all forms of human activity, you would have been laughed at. You would have been institutionalized."
+
+David: Spoken only as Marc Andreessen can. To insert a playbook theme here, this is always true. There is no moment in Silicon Valley writ large in tech where this is not true. I remember graduating from GSP in 2014 and commiserating with all of my friends being like, we missed it. It's over. The valuations are so high, it's crazy.
+
+Ben: I felt like this after shipping apps to the Apps Store, then I was five or six hit, and suddenly there were a million apps. I was like, shoot, it's over. Meanwhile, machine learning had yet to arrive, crypto had yet to arrive.
+
+David: Michael Moritz at Sequoia has a wonderful saying of this. I don't know that this is actually publically written anywhere, but this is the biggest lesson that he took from Sequoia's Cisco investment, which he was looking at the returns at Cisco. He was like, how are we ever going to top this? This is the top. We'll never do better.
+
+He was talking to Don Valentine about it and Don was like, it's always going to be bigger. As long as Moore's law continues, then the number and scale of industries that computing and technology can address are always going to grow as long as that is happening. The next generation is always going to be an order of magnitude bigger than this generation. That is played out time and time and time again.
+
+Ben: Of course, Moore's law technically didn't continue, but the number of cores for the same price that you can put on a single system on a chip has followed the same trajectory as Moore's law. Even when we hit the upper limit on certain things in Physics, the industry seems to figure out a way to continue to have the spirit of Moore's law and the price and power of compute continue such that, this is another Andreessen saying, but at some point, the hardware limitations go away and compute becomes free. Then it's really all about with an infinite and free resource of compute, what you can do with software?
+
+David: Yup. Back to Marc. He can't even get a job at a bigger respected PC or software company. He moves out in Palo Alto and he gets a job at Enterprise Integration Technologies, which I think was a tech implementation consulting firm doing PeopleSoft installations for companies.
+
+Ben: Sweet.
+
+David: You can imagine Marc Andreessen’s fit with an environment like this. Of course, as this is happening, this is when Mosaic is rocketing up this adoption curve. It's this weird thing where he's this kid out of school, working a no-name job, but he's kind of a celebrity.
+
+Ben: He's gotten kind of shoved out and there are two sides to this story. I think the folks in NCSA would say that Mosaic was an official project, Marc says they sort of self-organized. It became very clear to him that the bureaucratic leadership at the NCSA was going to take the lead on this and start doing the press interviews. They did own the license to the source code, so he was an employee and it became NCSA's thing, not Marc Andreessen's thing.
+
+David: Yup, oh boy is that going to come back. Enter Jim Clark. Of course, Jim Clark, founder of Silicon Graphics, SGI, Utah Mafia Alumni. He had just left SGI, he had been feuding with the board and he's out. He's looking for his next thing, but he has a non-solicit from SGI so he can't take any of his people with him, but he knows he wants to start a new thing. He's got a chip on his shoulder. He's like, I got another act. I'm going to prove all these people wrong. He needs to go find new blood.
+
+He hears about Mosaic, he tries it out, and he's like, this is amazing, this is the future. I got to look up this Marc Andreessen guy who's there on the about page. It’s like Mosaic by Marc Andreessen. He cold calls him and they get together, they have breakfast. I think Marc would famously say this is the one and only time he got up at 7:00 AM in his 20s.
+
+Here's how it goes down. They have breakfast and Jim was like, Marc, you should commercialize this thing that you're doing with Mosaic. You got to get out of this job and I think we should do it together. Marc was like, I don't know. I'm really enjoying this consulting lifestyle, doing software implementation, PeopleSoft. [...] hell no, let me get out of here. Let's go do this damn thing. No, that's not how it went down at all.
+
+You probably know this Ben from the research, but you would think that would be now, in retrospect, an obvious thing. No, Jim does take a shine to Marc and he's like, okay, great. I want you on my team in the new team I was assembling. I want some young blood, but the idea I have is this N64 Nintendo Console that we've been working with Nintendo over at Silicon Graphics. This is going to be the perfect information superhighway node into living rooms. This is how we're going to win the internet. We're going to build an online service for the N64 console.
+
+Ben: It makes sense given the background, given the hype that was going around N64 at that time. I see why that was the belief.
+
+David: I remember being a 12-year-old reading every single gaming magazine that would come out just trying to get details on the N64. I got mine on launch day. I would have convinced my parents to pay any amount of money for an online service for that console.
+
+Ben: Which is so interesting that this is what they conceived of instead of the browser because this would go on to become a huge business. You look at Xbox Live three, four decades later, this becomes an enormous opportunity. But at that time, this would have been absolutely the wrong move and there's another playbook theme. Marc has a quote that says, "If they had shipped a year earlier," referring to the N64, "we probably would have done that instead of Netscape."
+
+David: The history turns on knifepoint. The console gets delayed for a year and because of that, they'll never be able to reach a deal with Nintendo and it's unclear that anything's going to happen. Meanwhile, they're both itching to get a company going.
+
+They have a brainstorming session where they're thinking of other ideas for stuff to do and eventually, Marc is like, okay, you know this Mosaic thing? I did build that and all my buddies that I did it with back in Illinois, they're about to graduate too or they have already graduated. We can just go hire all of them, recreate it, and commercialize it. Jim's like, okay, fine. Let's do it. They incorporate and they start the world-renowned, going to be history-making, Mosaic Communications Corporation to commercialize Mosaic.
+
+Ben: I love that they were like, yeah, we'll just use the same name. We'll name our company Mosaic even though that's a thing that's owned by that lab at the university.
+
+David: Obviously, NCSA was not too happy with this. They threatened lawsuits all back and forth. Eventually, they changed the name to Netscape Communications, and that is how it came to be. It was actually Greg Sands who was the first PM that they hired.
+
+Ben: Greg Sands of Costanoa?
+
+David: Greg Sands of Costanoa, previously of Sutter Hill.
+
+Ben: Oh, awesome.
+
+David: Greg Sands’s little sister Emily was at Princeton with me and Jenny and was Salutatorian of Jenny’s class. One of the absolute top five brilliant people I've ever met in my life. They changed the name of the company to Netscape, but the internal code...
+
+Ben: I was going to ask you if you knew this.
+
+David: Yes, the internal code name that they used and that they continued to refer to the actual browser code itself is Mozilla, which stands for Mosaic Killer.
+
+Ben: It's so good.
+
+David: It's so good. If you are wondering where Mozilla came from, that's it.
+
+Ben: Yup.
+
+David: Clark at this point in time, his network from SGI is around $15 million or so. He puts in $4 million. He finances the whole thing himself, hiring all these great people like Greg.
+
+Ben: Which by the way, his network was $15 million from SGI not because that was a little company, but because he had to take on a colossal amount of financing on very onerous terms in order to make that company succeed.
+
+David: Totally. That he would walk away with $15 million from SGI after decades.
+
+Ben: $15 million and a chip on his shoulder.
+
+David: A huge chip on the shoulder. He's wary of all these VCs that financed SGI. I think NEA was the big VC behind them and took so much equity. He puts in $4 million, but then he's worried about well, this is really getting a lot of buzz, starting to take off. We're going to need more capital. I don't have enough to finance it myself. I guess I will bring on some venture capitalists.
+
+He goes and talks to his old buddies at NEA, but enters Kleiner Perkins and John Doerr hears about the deal and outbids NEA, invests $5 million in the fledgling Netscape Communications Corporation for 25% of the company, so 20 post.
+
+Ben: Wow.
+
+David: Times were different back then. Not too long after that, Ben our erstwhile, steeped in hippie Berkeley, true Bay Area culture DNA friend Ben, he's overworking at Lotus at that time and he had heard about Mosaic of course. He's been using it. He thinks this is the future. He hears all about this going on in Netscape and he was like, I got to get in there. I got to make it happen.
+
+He asks a friend, get him into the connection. He goes to the interviews, he gets the job, and he gets put in charge of the enterprise web server product line at Netscape.
+
+Ben: This is because there aren't web servers yet, right? What's the point of having a browser to load webpages if there's no software that can sit on servers that can create web pages?
+
+David: Exactly. This is going to become really big, but at that time, I don't know what Ben was feeling. Whether he was excited about this or not, but it was like, okay, this is how we're going to make money. We're going to sell licenses for the server business so that companies can create websites and have commercial websites. The big sexy thing is this browser that is getting millions of people using it. It's this part of the company that was, yeah, necessary, this is how we're going to make money.
+
+Ben: It is a beautiful time-tested business model. Give away the consumer thing for free, get as many people on that as you possibly can. It's actually the first real example of aggregation theory. Netscape ends up becoming powerful in the ecosystem because they are able to get all the internet users using it, and thus, then apply pressure to businesses that if you want to create great websites, you can do so. We promise it will be compatible with Netscape, the browser that everyone uses, so you should buy these tools from us. It makes a lot of sense.
+
+David: Really, I think it only came about because of the history of Mosaic being part of NCSA. If some company like Microsoft were to otherwise have gone out and created a new piece of software like they did with Word, Excel, or PowerPoint that they bought.
+
+Ben: Consumer licenses.
+
+David: Yeah, the natural thing to do. You put it in a box, you put it in a CD, you shrink wrap it, you get it to CompUSA, and you would sell that sucker for $50–$100 to every consumer that walked through the door. Not the route that the browser took to its great advantage.
+
+Ben: Which is fascinating because that affected everything henceforth. I've never paid for a web browser. You can make an argument that people are paying for Brave in different ways or certain people are paying for specialized browsers, but it sets the trend that you do not pay to get access to the web.
+
+David: Yeah, totally. Famously, people at Netscape would talk about how we invented internet time, and that it was this parallel universe that was accelerating faster than reality time. By August 1995, we're just 16 months after the company started.
+
+Ben: In April ‘94.
+
+David: In April ‘94, Netscape had an 80% market share of web browsers in the world and they decided—Jim Clark pushes them—that they're going to go public.
+
+Ben: And they successfully killed Mosaic at this point, 80%. Just 12 months ago, the other thing that Marc Andreessen created had close to 100% of the market share, which is wild.
+
+David: It turns out they haven't totally killed Mosaic.
+
+Ben: Sixteen months you're talking from founding to IPO, like any good tech company.
+
+David: Like any good tech company. The bankers, Morgan Stanley, Frank Quattrone, and Mary Meeker on the analyst side have taken them public.
+
+Ben: Just absolute killers.
+
+David: Killer superstar.
+
+Ben: Frank Quattrone of the Amazon IPO. Mary Meeker of Bond Capital and famously the Kleiner Perkins state of the internet.
+
+David: Yup.
+
+Ben: The people who would go on to do unbelievable things took this company public.
+
+David: Totally. They're not quite sure how to price that. Nothing like this has ever happened before, so they decided they're supposed to price at $14 a share. I didn't do the exact math, but that would be roughly $500 million or $600 million market cap, shall we say. Astronomical at that time. I mean, 12 months ago this was a 20 post-Series A that Kleiner did.
+
+They're thinking $14 a share the night before. Clark—remember he's pretty salty when he walked away at SGI—pushes them to up the IPO price from what they ended up pricing at the night before to $20 a share. The next day, the stock doesn't open because there is so much buzz about this company. Obviously, the institutional demand is high and famously, institutional investors were kicking themselves for having missed out on Microsoft a decade earlier and how big that became, so the hype is this can be the next platform. This can be the next Microsoft.
+
+Meanwhile, they’ve got millions of people like moms and pops, and kids using this thing on their home PCs. They all hear in the news that Netscape is going public, they're using Netscape, they want retail on sale on the IPO.
+
+Ben: You’re telling me there's going to be a POP?
+
+David: This is like the origin of the POP, the IPO POP, early-stage three IPO POP. Famously, Charles Schwab, the brokerage, had to change their phone systems leading up to the IPO because remember, there are no internet brokerages at this point. You can't place orders online even through Netscape.
+
+They changed their phone system so that when you called your broker at Charles Schwab, you would get a message in the couple of days leading to the Netscape IPO that said, "Welcome to Charles Schwab. If you're interested in the Netscape IPO, press one." There is so much demand it takes hours to open up the stock on the day of the IPO. It opens at $75 a share.
+
+Ben: Wow.
+
+David: The bankers were like, I don't know that we can go up to $28 the night before.
+
+Ben: They thought they were going to price it at $14, the bankers reluctantly IPO-ed it at $28, then the first retail trade happens at $75?
+
+David: Seventy-five, yup. It falls a little bit during the day but it closes at $58 a share giving the company a $3 billion market cap.
+
+Ben: Just insane.
+
+David: Totally insane. I think Microsoft was about $10 billion at this point in time, if I remember it right.
+
+Ben: It's worth saying a few things. One, this absolutely kicked off the dot-com bubble. This was the moment that it started. There were a couple of internet IPOs before this, but this is the one that blew the doors wide open, made valuations not matter, and created 4 1/2 years of absolute madness from this point forward. But Netscape had an unbelievable growth trajectory, not just in users, but in revenue. In the Ben Horowitz corner of the business, revenues were doubling every quarter, which means they were 16X-ing revenue year over year.
+
+David: They’ve only been around for five quarters.
+
+Ben: Sure. But a 16X year over year run rate on revenue?
+
+David: They did $17 million in revenue in the first six months of 1995 alone, which for a company that entered 1995 being eight, nine months old and then was doing run rate $50 million, $60 million revenue in that first full year of existence, that is very impressive.
+
+Ben: Yeah, for sure. The other thing that's worth mentioning here is that it was unusual for companies at this point in time to IPO without being profitable. Bankers were making this exception of, this one is going to be hot even though the company is not profitable. Whereas now you look around and it's absolutely the minority of the time that a company is profitable before the public is willing to take on the risk of continuing to finance that company. It's just funny how much things have changed.
+
+David: Netscape IPO, this was a cultural moment for tech, for the world, for finance, for everything
+
+Ben: Funny story. This was only six days before the launch of Windows 95, so this is the most interesting month ever in the tech industry to this point.
+
+David: This must have been on the risk factor of the IPO prospectus, I didn't look it up. But if there's one bear narrative on the Netscape IPO, it's Microsoft. Everybody knows Microsoft controls Windows. They control the operating system of 95% of the install base of PCs in America, in the world at that point in time. What are they going to do?
+
+But nobody pays too much attention and famously, shout out to Brian McCullough for finding this and calling it out. Around the IPO, Marc gives an interview and says famously that when he's asked if he's worried about Microsoft competing and he says, I'm not worried about it. Netscape can become a company that will turn Windows into a "mundane collection of not entirely debugged device drivers." Well, pride comes before the fall as we all know. Obviously, this is Microsoft in the ‘90s, which is an absolute killer.
+
+Ben: Pre-DOJ.
+
+David: Pre-DOJ, which happens because of all of this. In May of that year, Bill Gates saw this happening. He saw Netscape, he saw where this was going to go. In May of ‘95, he had written the internal internet tidal wave memo.
+
+Ben: For anybody who hasn't read that, it is just worth reading in its entirety to understand 1) the genius of Bill Gates, but 2) to understand the context of that time. Even Bill Gates, even Microsoft who was so steeped in this stuff, their strategy was the information superhighway. They were long all this stuff—interactive TV—but they just like most other people did not predict that this low-end disruptor— the internet—based on text being sent over HTTP and images, in line that Marc Andreessen managed to get into the browser too. That that actually was going to be the thing.
+
+It's not until early 1995 when he pens that memo where it becomes obvious even to the smartest, well-positioned people in the whole tech industry to react to this.
+
+David: Once he realizes and writes that memo, oh boy, is it ever game on.
+
+Ben: Guns out.
+
+David: This is a strategic priority, number one of the company. We're going to compete here and we're going to win. It turns out, they actually have the perfect strategy to kill Netscape already in progress within Microsoft. Which is that back in 1994, Thomas Reardon—a famous Microsoft employee and then would go on to be a founder of CTRL-labs, which Facebook acquired a couple of years ago—was playing around. He thought browsers were interesting, this is going to be a thing.
+
+He had licensed for Microsoft some code for a browser from a little company called Spyglass, Inc., which happened to be located in Illinois in Urbana, Champaign. Why was it located in Urbana, Champaign? Because it was the commercial entity started by the university to spin out and commercialize the IP that they developed at the NCSA including the Mosaic web browser.
+
+Microsoft has got a license to the Mosaic web browser. They're like, well, we got this license, we can use it. The terms of the license are actually that we pay Spyglass a portion of the revenues that we make for distributing this thing.
+
+What if we just bundle it to Windows and we give it to everybody for free? Oh my God, stone-cold killers. There actually ends up being a big lawsuit about this. Spyglass sues Microsoft and is like hey, you're giving this away to hundreds of millions of people and you're not paying us anything because you're not charging for it.
+
+Ben: Classic Microsoft, legally they're like, hey, we savvily negotiated an agreement with you. Sorry, it's your fault that you didn't anticipate the way that we would go on to distribute this thing.
+
+David: Famously, they ran this playbook and have done the same thing with DOS back in the day.
+
+Ben: This is worthy of a quick sidebar because this is absolutely unbelievable and is part of the reason Microsoft got sued. But Microsoft had a deal in place where in order to use DOS at all, to license DOS from them. If you're an OEM making computers, you had to pay them whether or not you chose to use DOS as the operating system on that PC.
+
+It was a per CPU shipped license. If you're a PC manufacturer, in order to get access to DOS, Microsoft is like, sure, we’ll license it to you, but we're not tying the amount of money that you owe us to the amount of computers with Windows on it. It's the amount of CPU you ship.
+
+Then, of course, the incentive there is for the OEM to say, well we got to make the most of this license since we're going to be charged for it anyway. They put Windows on everything they shipped and that is how Microsoft became the dominant platform with DOS where then every application became written on top of DOS because every CPU had DOS on it.
+
+David: Famously, Microsoft did not develop DOS. They did a very similar deal, they licensed it.
+
+Ben: From another Seattle company.
+
+David: Another story for another day. God, they were killers. The net of it is even after the lawsuit, they pay a grand total (Microsoft does) of $8 million to Spyglass, which goes back to the University of Illinois. The NCSA and University of Illinois get $8 million for Mosaic, which becomes Internet Explorer. That's right, Mosaic, which Marc Andreessen and Eric Bina wrote at NCSA, the IP stays at NCSA in Illinois, spun out into Spyglass, licensed from Microsoft, that is Internet Explorer.
+
+Ben: For anyone who is thinking, geez, how did Internet Explorer launch so quickly after Microsoft needed to catch up and needed to create a browser, this is how it did it.
+
+David: People know that this is happening and Netscape knows that this is going on.
+
+Ben: Meanwhile, Netscape at this point is helmed joining before the IPO was a new CEO, Jim Barksdale. They brought in a professional CEO operator. He was the former COO of FedEx. He came from McCaw Cellular and AT&T before that. They have this grizzled industry veteran at this point because even Jim Clark—for all of his executive-ness from SGI—before the IPO Netscape, actually did want this robust professional public markets CEO.
+
+David: Everybody knows this is going on, but Netscape thinks and the market thinks that okay, Microsoft got this Internet Explorer thing, they licensed it to Mosaic. They're going to run the Office playbook here. They're going to sell this at CompUSA and you're going to buy it.
+
+As you said Ben, two weeks after the Netscape IPO, they launched Windows 95 and not fully bundled in then, but they say there's Windows 95+ pack and Internet Explorer is bundled into it for free. Of course, this would eventually, very quickly, Internet Explorer would just be directly bundled to every copy of Windows 95 and then Windows XP. All of a sudden, Netscape is now forced to compete with free and bundled like every operating system basically on the planet.
+
+Ben: Absolutely brutal.
+
+David: Totally brutal. Now, this little division that Ben Horowitz is running, the enterprise server division, becomes hugely more important. This is the only part of the company where they can even conceivably compete against Microsoft, and this becomes a major strategic initiative in Netscape. We're going to focus on enterprise server products.
+
+Ben: Of course, the enterprise server products have to produce web pages that are compatible with Internet Explorer because that is now what everybody is using. It sucks.
+
+David: It's so brutal. Famously, Ben and the team start scrambling. They're going to make the product way better than the Microsoft product. They're working on a bunch of new features. They lined up a big announcement event in New York City for March of 1996 about the new version of the product. And famously, two weeks before the event, Marc ends up giving an interview to Computer Reseller News (of all publications) where he just reveals the whole thing. Ben sends an email to Marc. The email says one line, "I guess we're not going to wait until the 5th to launch the strategy." The email was from Ben just to Marc.
+
+Marc responds, copies in Jim Clark, copies in Jim Barksdale, and says, "Apparently, you do not understand how serious the situation is. We are getting killed killed killed out there. Our current product is radically worse than the competition." Competition being Microsoft. "We've had nothing to say for months. As a result, we've lost over $3B in market capitalization. We are now in danger of losing the entire company and it's all server product management's fault. Next time do the [...] interview yourself. F You, Marc."
+
+Ben: Reading this email in print—and of course, we're being family-friendly here on the air, but just saying F You, Marc. I just can't imagine sliding an email that way.
+
+David: Here's the best part. That email was written the very same day that the Time Magazine cover came out.
+
+Ben: The Barefoot, no way.
+
+David: The Barefoot. Marc Andreessen on the cover of Time Magazine barefoot on a throne as the throne of the next new Silicon Valley King. Marc would later say about this whole escapade, "this is why I should not run a company." No kidding. Maybe you should be a venture capitalist instead.
+
+Ben: That's actually a good question. In Marc's entire career, including the Loudcloud story that we're going to go on to tell later, has Marc ever been the CEO of a company?
+
+David: I don't know. Was he the CEO of Ning?
+
+Ben: He was the CEO of Ning, you're right.
+
+David: Okay, so once.
+
+Ben: We'll get to that. It's very interesting that of all the biggest successes, he was either effectively the co-founding CTO, a board member, or the venture capitalist behind it and not the CEO of any of the most successful stuff he's done.
+
+David: This is going to be great (I don't want to say a lie because it's not a lie, but the) posturing from one of the key elements at the beginning of Andreessen Horowitz, which was their motto that all the general partners here need to have been CEOs. But half of the first five or six general partners have never been CEOs.
+
+Ben: Right. There's a lot of credibility behind that they were strong operational leaders, executives, but yeah, it's a good point.
+
+David: Absolutely. Jeff Jordan led the PayPal acquisition and ran PayPal within eBay. He was not the CEO of eBay, but I would take him on my board. But yeah, that's funny.
+
+Ben: I think this is a good point. Before we get into the '96, '97, '98 continuation of the browser wars and what happens to Netscape—and I'll leave it there for the moment—this is a great time to announce our second sponsor of this season of Acquired.
+
+We are very excited to welcome PitchBook to the show. As many if not all of you know, PitchBook is the leading financial data provider for VC, private equity, and all mergers and acquisitions. Their platform includes a database with information on more than 3.1 million companies and over 1.5 million deals.
+
+I'm going to deviate from the script here and just say it is so comprehensive. There is no better, more broad coverage data source of private company data and a lot of public company data out there.
+
+I'll tell you, they definitely don't sacrifice quality for quantity because 96% of their clients rate PitchBook's coverage of private company data as better than any other data provider. We also do want to tell you, we use PitchBook all the time for the podcast. It is a huge part of how we research and how we do our homework for episodes. We're able to share these precise details like pre- and post-round’s share price, shareholder equity, and who owns what throughout the story because of PitchBook. This has been true for years.
+
+David: If only Jim Clark had it back in the SGI days, maybe he wouldn't have gotten diluted so much in his negotiations.
+
+Ben: So true. I'm thinking back to our Uber episode where we were telling the share price along all the different years as it was getting funded. That was all from data we pulled from PitchBook.
+
+Listeners, we do have a special offer for you. You can explore PitchBook's database first hand by signing up to get limited access. You can get free access to the largest database of private market intel for two weeks to steep yourself, see what we're talking about, and see for yourself. You can visit pitchbook.com/acquired to take advantage of that, or click the link in the show notes to see how PitchBook can help you.
+
+All right, David, we're in the browser wars. Microsoft just blew Netscape out of the water. What's going on for Netscape now?
+
+David: Such a tragedy. That year of the IPO in 1995—this actually was a really great company—Netscape did $85 million in revenue in 1995. Then, in 1996, it did $346 million in revenue. Then $534 million the next year in 1997. People love to dunk on this now as IPO mania, unprofitable, blah blah blah tech bubble. It was for real.
+
+Once the Microsoft bundling strategy became obvious here in December '95—which is when they announced that it was going to be bundled into all copies of Windows 95 going forward—the stock had peaked then at $171 a share, which is even hugely up from where the IPO was. But it never got above that. It was just straight downhill from there, unfortunately.
+
+In 1999, finally, famously, Netscape sells itself to AOL for $4.2 billion, but it's an all-stock deal with AOL. That's pre-Time Warner merger. Who knows by the time shareholders actually ultimately got liquid on that, what they were able to get out. Marc Andreessen, as part of the sale, became CTO of AOL. You can imagine how well that's going to work out.
+
+Ben: The funny thing is he's not actually responsible for any day-to-day operations. He's like the chief futurist at AOL. I think his role is forward-looking technologies or something like that. He only lasts until September of '99 right ahead of the Time Warner deal. He's like, yeah, I want no part of this and leaves before that.
+
+David: Yeah. Oh, wow. I didn't realize he didn't even stay a year. I wonder if he forfeited some earn-outs. Or maybe he was just like, the stock is going to be worthless soon anyway. I'm out.
+
+Ben though, this is going to become very interesting. Actually, this deal becomes huge for the next chapter and ultimately, for Andreessen Horowitz (the firm). Ben becomes the VP of AOL's ecommerce division. What he ends up doing is him and pretty much the whole old server team from Netscape, what he figures out is what they ultimately are tasked with doing are all of the brands that are trying to sell on AOL within the AOL walled garden—this is Nike, this is LLB, and this is Lands' End.
+
+We're talking about all these retailers and CPG companies. They want to sell, but they're not Internet companies. They don't have ecommerce apps, servers, and all the infrastructure that they need to make this happen. AOL can help them, but they got to go stand up like servers and data centers for all of these customers. That's what Ben's team ends up doing. Quickly, he realizes there's actually an opportunity here. AOL is going to do this for their partners selling on AOL.
+
+Ben: Which again, is not the internet or at least is not the web.
+
+David: Yeah. It's the internet, but not the web. I know that this is where the whole market is and is going to be in the future.
+
+These companies, Nike, et cetera, are going to need help doing the same thing for their web applications. Why don't we go start a company where we can operate this infrastructure for all these companies that are not technology companies? Then, they can just host their websites and their web applications on our infrastructure like a cloud of internet infrastructure that you can just deploy your applications to.
+
+Ben: You can dynamically spin up and spin down these virtual machines, David, so not even like owning your own server, but having virtualization across multiple servers that scale elastically as you need them.
+
+David: Yeah. This is a big idea, right, Ben?
+
+Ben: Wow. In '99, that feels a little ahead of their time.
+
+David: Maybe a little ahead of their time. But they like the idea so much that they moved back to Silicon Valley. They leave DC where AOL was based. Actually, I don't know if they ever moved there or stayed in Silicon Valley. But they left AOL and they started the company. They really want to embrace this cloud concept that they're pioneering. They call it Loudcloud.
+
+Ben: I can't wait to get into this. I do want to close the loop on a couple of Netscape things though before we move into the Loudcloud chapter.
+
+I was wondering, first of all, why did AOL buy Netscape? If they're getting wrecked by Microsoft, why are they giving $4.2 billion of their stock? Is it because they knew their stock was wildly overvalued? Let's say it's 10X overvalued, what's $400 million of actual value to go and pick this company up? Which is what we now know about the way that they were motivated to do the Time Warner deal to basically do a stock swap for a company whose stock they felt actually had real intrinsic value.
+
+It makes a lot of sense that they would wildly overpay for this pseudo-defunct Netscape even if all they got was the people and some technology behind it. That's one explanation.
+
+The other would be basically to get a bargaining chip against Microsoft in case it became relevant for them to try and be less dependent on IE to have a browser of their own that they could bundle in and distribute. There are other people who believe that AOL was interested in Netcenter, which is basically Netscape's web properties which drew a lot of the traffic. It's like the MSN play that Microsoft had to be the destination website.
+
+Those are the reasons why AOL could have been willing to part with $4.2 billion of their stock to do this. If you trace it all the way through to today, I really have been trying to figure out what happened to the Netscape brand and what happened to the Netscape IP?
+
+The brand is an easy one to trace. That stayed with AOL until they ultimately were bought by Verizon. The big red checkmark Verizon owns the Netscape brand today. But somewhere along the line, the brand actually got separated from the technology, the bundle of all the intellectual property and everything that Netscape was, which did need a new name because they couldn't use the Netscape name anymore because that brand was owned by Verizon.
+
+That got renamed to the New Aurora Corporation, which AOL sold to Microsoft, who then, in turn, sold them again to—wait for it, David—Facebook.
+
+David: Oh, yes. Oh my gosh, I'm so glad you found this.
+
+Ben: This is from James Zawinski or jwz who was an early employee, pseudo-founder. I think many credited him with being a founder of Netscape. He has this great blog and this crazy bar and concert venue in San Francisco called the DNA Lounge. He writes, "The former Netscape company is currently a non-operating subsidiary of Facebook, still known as the New Aurora Corporation. The Netscape brand remained with AOL." How crazy is that?
+
+David: That's so crazy. I'm so glad you paused us because there's another thing we got to talk about coming out of the Netscape.
+
+Ben: Mozilla.
+
+David: Mozilla, of course. I didn't realize this actually happened before the AOL acquisition.
+
+Ben: They were open-sourced in 1998, I believe. But yeah, you're right. Before AOL, they open-sourced all the browser code. Ironically, it's so interesting that Mozilla—the code name of the Mosaic killer—ended up becoming the name of the foundation that ended up stewarding the open-source code project, which of course then created Firefox. Out of the ashes of the duplicated—without ever looking at the code—Netscape, which came from Mosaic, you then have Mozilla.
+
+They did name the browser Mozilla for a while and had a separate browser called Mozilla, which was compiled from similar source code, and then Firefox.
+
+David: Which was a whole new thing, right?
+
+Ben: There was some code in common with the original Netscape browser.
+
+David: But it was very different. Firefox, when it first launched (I remember this), had the search bar in the browser which was a concept they borrowed from Opera, but that was not in Netscape.
+
+Ben: Correct. It was in the top right. It wasn't the omnibar that Chrome pioneered. It was that separate search window. But it makes sense to me now, knowing all this lineage, why user agents have always been such a mess.
+
+This is going to date me, but if you've ever written raw HTML code and needed to do a user agent check because you need to figure out if it's IE and you need to account for some three stupid pixels offset that they have that shouldn't actually be in there but the rendering engine sucks because it's licensed from whatever old Mosaic thing, that's actually an unfair criticism.
+
+The real reason why it sucks is because they had such a dominant market share that Microsoft could do whatever they wanted, deviate from spec, and just say, everybody's using our stuff anyway. Who cares what the World Wide Web Consortium says it should do? The truth is what we say it is.
+
+Anyway, if you ever do these user agent checks on the strings, it has every browser name under the sun listed. If you're doing a string search, you're looking and you're like, what is this Mozilla/Firefox/Netscape/blah blah blah? It's because it all comes from the same original branch. All these different browsers are competing against each other, but there are only two major lineages. There is the Mosaic lineage and then all those engineers left. Without looking back at the old code, they wrote a new code called Mozilla. Everything is basically either from Mosaic or Mozilla.
+
+There have been different stuff over the years with WebKit and I don't know where Opera is derived from, but it's amazing how much of the browser market share over time really just comes from those two.
+
+David: Yeah. It all still funnels through to today, which is crazy. It's so fun to actually have the right excuse now to be able to tell this whole story on Acquired. It always felt like there was a point in Acquired's life where we would have done a whole episode on Netscape, but now it's like, I don't know what we can do. This is the perfect vehicle. I'm so glad to do it.
+
+Ben: Totally. Thank God for the lessons of Netscape and Loudcloud, which we're about to go into. Became the ashes upon which the phoenix of a landscape-changing venture firm would come from is the way they excuse.
+
+David: The Firefox of venture firms, shall we say?
+
+Ben: Honestly though, after the financial crash and all the funding, it's not crazy to call it a Firefox, a phoenix, or whatever in founding a venture firm in 2009 and deploying capital the way they did. I'm jumping ahead. I know we'll get there.
+
+David: Absolutely. If you want to be really nerdy, you could call it the Thunderbird of venture firms. I used to use Thunderbird. I thought it was great.
+
+Back to the story, Ben and his server team have realized this market opportunity. They've got this idea for cloud computing, cloud infrastructure. He hooks up with two of his core team, Tim Howes and Sik Rhee. They leave AOL. They go back to Silicon Valley. They're like, we're doing this. It's still 1999. The bubble is still quite inflated at this point. There is a lot of hype.
+
+Ben: And everyone's drunk. Netscape IPO-ed with great revenues and great growth, but now everyone's just drunk.
+
+David: Yes. Immediately, they want to get Marc involved. Of course, who wouldn't want Marc Andreessen involved in something like this? Marc totally gets it. He's like, yeah, this is a big idea.
+
+Actually, this is amazing. At the press briefing for the launch of the Loudcloud, Marc would be there. In trying to describe what this cloud infrastructure concept is, he would use the very same electricity metaphor that Bezos would then use eight years later describing AWS at the YC event.
+
+Ben: What is the metaphor?
+
+David: Bezos's analogy that he used was German beer distilleries used to produce their own electricity to mash the hops and everything and do what they're doing in the distilleries. Then, they hooked up to the grid and just used electricity from the grid. That innovation they realized is that electricity doesn't make the beer taste any better. There's no reason why they should create electricity.
+
+The whole idea of cloud infrastructure is the same thing. Renting your infrastructure from Loudcloud, Amazon, Azure, or Google doesn't make your beer taste any better if you're an application provider. Marc was the first one to use this, so of course, they want to get him involved. But remember, Marc has learned at this point that he shouldn't run companies. Although I guess he made that mistake with Ning later.
+
+Marc says, I don't want to be an active co-founder, but I'll be Chairman and I'll invest $6 million. I guess he was able to get enough money out of the AOL stock that he can invest $6 million.
+
+Ben and the team go out to raise venture money on top of this and they meet Andy Rachleff at Benchmark Capital who they just love. Ben in The Hard Thing About Hard Things, a quote that he has describing Andy. He says, "If I had to describe Andy with one word, it would be gentleman." The relationship between him, Ben, and Marc is deep and continues to be deep to this day. Andy, of course, was Benchmark's infrastructure guy. He started as a telecom investor, so this is completely in his wheelhouse and he gets it.
+
+This is where things get a little murky. No doubt this scene is one of the major seeds of Andreessen Horowitz and the firm's whole philosophy. It would get sewn right here. I don't know exactly how it went down. I don't think anybody's ever given the whole story, but this is as best as we can reconstruct it. We'll have to just have the protagonists on for a kumbaya one day.
+
+Obviously, this was a super hot deal. Netscape had "failed," but like you said, Ben, everybody was drunk at this point in time. Somehow, I believe that Andy and Benchmark agreed to do the deal without a full partner meeting. They agreed to do it for a very high price even at the time, which was a $45 million pre-money valuation and Benchmark is going to invest $15 million in the company.
+
+Ben: It's a big check for them. Are they even doing their $400 million funds at this point? Probably around that.
+
+David: No. I think this was before their billion-dollar fund, which famously they said they'll never repeat. I think their funds were maybe $250 million, $300 million at this point in time. Big check, big valuation, a brand-new company, and no partner meeting. At least as far as I can tell. The deal is going down and the Benchmark partnership though doesn't like that Marc is investing so much personally. He's not an actively involved co-founder. He's investing $6 million.
+
+Here's the thing. The price of the deal is based on a pre-money valuation because venture deals—until the last five, six, seven years—all used to be priced on a pre-money valuation. Now, the problem with a pre money valuation—
+
+Ben: Nobody knows what they actually own until you specify exactly how much is being raised.
+
+David: Exactly. If more money gets raised, then you're going to own less of the company because the post-money valuation goes up based on the amount of money raised. Benchmark is writing this huge check. They want to get 15 divided by 60. They don’t want to be the only money into the round.
+
+Ben: Then they should have specified the post, David.
+
+David: They should have specified the post, but people didn't do that back in the day. Here's Marc coming in now. He's pumping the valuation up by $6 million and he's coming in. They tried to cut Marc out of the round. That was wrong move number one. You don't really want to cross Marc Andreessen.
+
+Ben: Even if we just stopped the episode there and say, let's look at this from a single-turn game versus multi-turn or iterated game, massive, massive bad idea for Benchmark to contribute to creating Andreessen Horowitz in the future. Sure, it could have been the most valuable thing to do for this deal at that moment, but for the next 20, 50, 100 years, it would be a great benchmark if Andreessen Horowitz didn't exist.
+
+David: Not only if Andreessen Horowitz didn't exist, but if Ben and Marc were part of the Benchmark family.
+
+Ben: Totally. That's an even better point. Creating a little bit of a friction point here, assuming that that is any factor contributing to going on to create their own venture firm.
+
+David: Well, that wasn't the only part. It gets worse. Supposedly, after the deal is done and closed, Marc of course is like, F You. I'm putting my $6 million in. Do you think you're going to come between me and Ben? We've been through this—it'd be like Benchmark trying to come between you and me. That's not going to happen.
+
+Marc invests the $6 million. It's a $66 million post-money valuation. Benchmark only gets 22.7% ownership after the deal is done. This is why I think they didn't present the whole partnership before the deal was done. Because Ben, Marc, and the whole leadership team of Loudcloud, of this new company, come in to meet the full Benchmark partnership. I think they only really knew Andy at this point.
+
+They come in. It's supposed to be like a slap on the back, get to know you. Oh, this is great, you’re our VC firm. Hey, that was weird with Marc, but we'll get over it.
+
+Supposedly, in this meeting, David Byrne, who was then one of the GPs at Benchmark and had been a very successful executive recruiter before joining Benchmark as a GP. Ben is presenting. The whole management team is there. He says to Ben in front of everyone, hey, just stop. When are you going to get a real CEO? Ben is like, what do you mean? He knows what David means here, but he's trying to be like, hey, this is a friendly meeting. Let's not break out the knives yet.
+
+Ben: In front of the management team.
+
+David: In front of the management team and Marc.
+
+Ben: That just pulls out the rug underneath his ability to lead these people to do that.
+
+David: Yeah. Apparently then, Byrne just doubles down again and keeps attacking Ben. He's like, you're not qualified to lead this company. How are you going to take this thing public, all of this stuff? Which also is ridiculous because of course, Ben is qualified to lead this company. Even if he weren't, why on earth would you say this?
+
+Ben: He was doubling revenue quarter over quarter at Netscape in his division. On top of all of that, Marc Andreessen threw $6 million in. He kind of needs you, but doesn't really need you. And you've already committed. Just do the value-creating activity of giving the leadership team the confidence in their leader at this point.
+
+David: Totally. This creates, as you can imagine, an intense dislike between Ben and Marc and all of the Benchmark partnership except for Andy because I guess nobody else really stepped up to defend them here. We will later, in part two, get to the amazing profile that Tad Friend did in The New Yorker of Marc Andreessen in 2015. But 2015, 16 years later, there are these great quotes in there.
+
+Ben says about the whole philosophy of Andreessen. He says, "We were always the anti-Benchmark. Our design was not to do what they did." He's talking about this. Then, Marc says about Bill Gurley—the most visible Benchmark partner at the time—"I can't stand him. If you've seen 'Seinfeld,' Bill Gurley is my Newman"—Jerry's bête noire.
+
+Ben: This is something that you definitely have to know about Andreessen Horowitz, especially in their early days when they were starting. They were loud about being different. They wanted to position themselves in every way we possibly can, we are the opposite of your classic venture capital firm personified by Benchmark.
+
+David: We're going to get into this in part two, but it's so great because that is the exact same playbook that Benchmark took against Kleiner Perkins when they started.
+
+Ben: It's fascinating. It's such a good strategy.
+
+David: Who was the architect of that strategy? Andy Rachleff. Who is the one Benchmark partner that they love? Andy Rachleff. Andy would then retire from Benchmark not long after.
+
+Ben: And the ties here end up actually running deep. Eric Vishria who was a Loudcloud exec would go on to become a fantastic partner at Benchmark.
+
+David: Here's the funny thing about all of it. This is so great. It's such a drama. I really do think that this experience was a big part of what planted the seed for Ben and Marc to start Andreessen Horowitz.
+
+All of this drama is just great for everybody. It's great for Andreessen. It's great for a Benchmark. No press is bad press. The more that people are talking about and writing about this as Andreessen Horowitz is getting off the ground, the more it just increases the stature of both firms.
+
+Ben: Yeah. The 2015 piece you're talking about is literally called Tomorrow's Advance Man about Marc Andreessen. That's the one you're mentioning, right?
+
+David: Yeah.
+
+Ben: That is the puff piece of puff pieces. It's a great analytical piece. But it's like, hey, you're the best futurist in the world. Say whatever you want. Having a platform to be able to do any of this stuff, Marc takes full advantage.
+
+David: Oh, totally. It's so smart. All of this drama around the funding aside, nonetheless, people are still jazzed about Loudcloud. Two months after Series A, there is another $45 million. Wired runs an article calling Loudcloud Marc Andreessen's second coming, but then the clock starts to run out.
+
+Ben: It's also crazy that the press can't get enough of Marc Andreessen. Ben Horowitz is running the company, but Marc is like this Internet King narrative that everyone just wants to keep perpetuating, which is true in many ways, but it's just interesting that he was not the CEO of either of those companies.
+
+David: Yes, but he was on the cover of Time Magazine on a throne. Here's the thing though about Loudcloud which is very different from Netscape. It's not a software company, it's an infrastructure company. The thing about an infrastructure company about what they're doing is that if you want to grow, if you want to take on more customers, you got to go lease some more data centers and you got to go—
+
+Ben: Buy some more servers, rack them…
+
+David: Rack them and stack them.
+
+Ben: It sounds like Capex to me, David.
+
+David: That sounds like a lot of CapEx. As they're raising all this money, they're investing forward in all this CapEx and they're getting orders in. Pets.com is like oh, yeah, I'm thrilled to get some of this infrastructure.
+
+Then, in early 2000 of course, in March 2000, the bubble starts to deflate. A lot of these orders start vaporizing, but they have forward contracts to buy all this CapEx. They need money even though they just raised $65 million. They go around—this is such a great moment. They're trying to raise money from everyone and all the VCs are spooked at what's going on. They're literally traveling around the world. They go to SoftBank. I don't know if they actually fly to Japan or if they meet with SoftBank in the US.
+
+Ben: I had no idea.
+
+David: They meet with Masa. This is great. Bill Campbell, the legendary coach, is by this point in time on the board of Loudcloud. Masa backchannels Bill and says, this is in The Hard Thing About Hard Things. Ben is like, Bill, how did it go with Masa? Bill's like, honestly, he thought you were smoking crack. You know it's bad even when he's like, this is crazy.
+
+Eventually, they do raise a Series C of $120 million at a 700 post, but it's by the skin of their teeth. This is in the mid-2000. They still burn through all that quickly and are once again on the brink by the beginning of 2001. The only crazy last-ditch potential financing option available to them is to try and go public because weirdly, there were still some believers in the public markets, even though all the VCs and private investors at this point were like, oh boy, we don't be funding any of these money burning companies.
+
+In March of 2001, they actually went public at $6 a share and the Wall Street Journal ran a piece leading up to the IPO. It’s called the IPO From Hell. I think it might have been either referenced in the piece or the title of the piece, everybody's calling this the IPO From Hell. They have a quote from Dick Kramlich at NEA saying, "This is what we call a Hail Mary deal. You throw it up in the air, and you hope for the best."
+
+Ben: Oh my God.
+
+David: You know that's not good. Immediately after the IPO, which they did get done, they lowered their guidance.
+
+Ben: It’s a great thing to be doing in your first quarter as a public company.
+
+David: Totally. The stock dropped by 2/3 to $2 a share and Goldman and Morgan-Stanley had a book run IPO, they dropped research coverage on the company.
+
+Ben: No way.
+
+David: Before even one quarter is done, amazing.
+
+Ben: What's the logic there? It’s just expensive to have analysts covering your company and they're like, look, we just don't believe in the company anymore even though we underwrote it, so we're going to stop paying analysts to do this work?
+
+David: That's a good question. It could be that or I wonder if it's more that if we were to cover this company, we would say you should not invest in this company. You should sell, and we don't really want to do that because we were just the book-runners on the IPO. It’s probably easier to just drop coverage.
+
+Ben: The logic of why they're dropping guidance is like, look, all the companies that we thought we're going to be customers are going out of business. We are a picks and shovels business for an industry that is going away.
+
+David: Yes. The gold rush is drying up. People are not going to want to buy Levi’s and at this point in time—
+
+Ben: No one is moving to California.
+
+David: It's unclear yet that Levi's are going to become a fashion statement, which of course they do, metaphorically speaking.
+
+Ben: David, you're like three levels deep here. Take me back to storytelling.
+
+David: Exactly. Okay. By 2002, it's clear that they're running into a brick wall. Ben manages to engineer a deal to offload the entire infrastructure business to EDS, Ross Perot's Electronic Data Systems company.
+
+Ben: With that, we need to do a company profile on it at some point. That's like a fascinating one
+
+David: Totally. They sell, basically, the entire business for $63.5 million. They lay off almost everybody at the company.
+
+Ben: That's 1/10 of what they last raised at. No, they went public for more than that, for more than $700 million.
+
+David: I think it was actually about flat when they went public.
+
+Ben: So 10¢ on the dollar is what they're liquidating the server business for.
+
+David: Totally, but they don't give up. They decide we've got this tool that we've built internally to help us provision the servers that were racking in our data centers. We might be able to sell that as software, it's pretty good. EDS is actually really interested in this. They want to own the infrastructure business because that's part of their business. But they're like, if you can deliver that as a software product, we’ll pre-sign up and will be at $20 million a year customer for you for the server automation product.
+
+Ben: Which is $20 million that Loudcloud is like great, we can use that to make payroll.
+
+David: Exactly. They do this. They laid off most of the company and they restarted as this software firm doing data center server automation. There's only one problem. The tool that they built, which is so great, has no UI, it is called the Jive, and is entirely pimp-themed.
+
+Ben: That's just one problem.
+
+David: That’s just one problem. It's not exactly something you can really deliver to EDS or any customer. When this happens, the stock [...] to 35¢ which is a $28 million market cap. Remember, they've got $63.5 million in the bank and a solid $20 million a year customer contract.
+
+Ben: Talk about trading below book value.
+
+David: The street is valuing them at half of the cash on the books. But Ben is undeterred and this is mostly what he writes about in The Hard Thing About Hard Things. They go to work and they rebuild the company back up. They clawed their way all the way back—over really not that long a period of time—to five years later, they sold the company to HP for $14.25 a share or $1.6 billion.
+
+Ben: Close to 2X what they went public for.
+
+David: Totally. This is a win. Ben would write later about this, "If I’d learned anything it was that conventional wisdom had nothing to do with the truth and the efficient markets hypothesis was deceptive. How else could one explain Opsware," which is what they changed the name of the company to, "trading at half of the cash we had in the bank when we had a $20 million a year contract and 50 of the smartest engineers in the world?
+
+No, markets weren’t "efficient" at finding the truth; they were just very efficient at converging on a conclusion—often the wrong conclusion." This experience I think would totally inform really what I think was the founding thesis of Andreessen Horowitz, which was there is no bubble. The internet is going to keep getting bigger. You all think we're crazy for paying these prices for these companies, but we're not crazy.
+
+Ben: Yeah. What you're alluding to there, for folks that don't know, Andreessen Horowitz’s early reputation is that these guys started a brand new venture firm. They raised too much money because then in 2009, a $300 million fund was big, and they're just giving startups these crazy valuations, overpaying, and blowing everybody else out of the water.
+
+David, you're exactly right. The efficient market hypothesis is wrong, and also that any crash we’re in is a local minima. All that matters is can you get through this localized crash and continue to ride the intrinsic value wave that is the internet and software taking over everything?
+
+David: Totally, and it's not easy. Literally, the title of the book that Ben writes about this is The Hard Thing About Hard Things.
+
+Ben: Which is so good.
+
+David: So good. It’s such a good title. It's like they had good marketing people there or something.
+
+Ben: To your point about it not being easy, Ben gets asked in interviews. How do you get through that when you had to lay off half the company and then get the other half to recommit to basically starting a new startup with you? His answer is, a lot of crying by me. It's brutal.
+
+David: But I think the lesson to be learned from this and it totally resonates for me is if you're in a technology market and you find yourself early to the market like they did with the cloud and virtualization.
+
+Ben: Beating AWS by seven years.
+
+David: It's not good to be in that situation. But if you could just hang on and stay alive until the market can catch up with you, these markets will grow. You can become a big, big player even if everybody's already written you off.
+
+Ben: Can you stay alive long enough to become lucky?
+
+David: Yup. Obviously, it's better to be lucky upfront, but if you're not, wait for luck to come to you. Anyway, there's one more other fun little part of the Loudcloud Opsware journey. One of the characters that's going to become very important later in part two, which is one of their other board members.
+
+The board of Loudcloud, pretty awesome, Marc Andreessen, Andy Rachleff, Bill Campbell the coach, obviously Ben, and the other independent board members who they had, do you know who it is, Ben?
+
+Ben: No.
+
+David: Michael Ovitz.
+
+Ben: That's how they met Michael Ovitz?
+
+David: That's how they met Michael Ovitz. Of course, we're talking about super Hollywood agent, founder of Creative Artists Agency, Michael Ovitz, later erstwhile CEO and President of Disney under Eisner.
+
+Ben: Briefly.
+
+David: After the whole Disney debacle, he was looking for stuff to keep him entertained and wanted to invest in the then hot internet area. He gets introduced to Ben and Marc and ends up joining the board of Loudcloud. Isn’t that wild?
+
+Ben: Wow. That's how Marc and Ben get infected with the idea of creating the CAA of venture.
+
+David: Totally. It's so funny how we’ve painted hopefully the picture on this episode of all the life experiences leading into Netscape, leading into Loudcloud, leading into that moment with Benchmark, and then Ovitz joining. It all gets expressed by Andreessen Horowitz.
+
+Ben: There's one more principle that you touched on earlier that I want to tie a little bit of a bow on that's a founding principle of the company. When Ben Horowitz is getting dressed down in the partner meeting at Benchmark and they ask him when are you going to hire a professional CEO? This becomes a major tenet of Andreessen Horowitz about technical founders being CEOs, being armed with the resources that they need, and the ability to—even before they would otherwise acquire those skills—have a leap on being a professional CEO.
+
+There's this 2003 interview—I love reading things from 2003 about Marc and Ben because it's this really interesting perspective where it's post-Netscape, post-Loudcloud, post-crash but they're just angel investors. It's six years before they start Andreessen Horowitz. One of the questions in this great Q&A that we’ll link to in the show notes is, should a founding technologist run a mature company? Marc’s answer—he's a brilliant person. He gives these long philosophical answers to every other question. This one he just answers absolutely.
+
+David: It's so great. This is so brilliant. We'll talk about this much more in the next episode. But what's so smart about this and so dumb about the rest of the venture capital industry until Andreessen changed the game. Let's put aside what's right or wrong or what you believe or don't believe. It was so dumb to preach and practice anything else except that founders should run the companies they start because if you say anything else, who are you alienating? You're alienating founders.
+
+If you want to win deals, why on earth would you say anything other than I support my founders and I'm loyal to them to the end?
+
+Ben: Yeah, just wild. Well, before we continue on a little bit, I want to unveil our third sponsor of this season. We are joining the ranks of Casey Neistat and PewDiePie this season to tell you about NordVPN. But we are doing this in our own little way, Acquired listeners. This company has a wild story behind it that we are excited to tell you about.
+
+NordVPN, as you may know from other fine podcasts, is a product by Nord Security. It works on all major operating systems. It's become one of the world's largest VPNs. They hold the title I think for the world's fastest VPN. They're now a global company with over 700 employees—700 worldwide—and are used by an astonishing 15 million people. Yes, the internet is a big place now that there are 15 million people using one VPN client. It’s a big, big business.
+
+But here are some things you may not know and why they're working with us this season on Acquired. The company is one of the rare big tech companies that were started in Lithuania. It was founded in 2012 by four childhood friends. The co-founder and CEO Tom Okman is a member of the Acquired community. He literally DM-ed David and I in Slack. He's been listening to the show for years. Insanely, with Nord, they have grown to this whole crazy scale that I just talked about without taking $1 of outside funding.
+
+This is impressively a bootstrapped company that has products used by 15 million people and 700 employees. We're super excited to be working with them. I love this culture, this ethos, this founding story. If you're looking for a VPN service, look no further. You can sign up at nordvpn.com/acquired by clicking the link in the show notes or go to Nord and use the coupon code Acquired at checkout. Our thanks to NordVPN.
+
+David: It’s so cool. Pumped to be working with you guys.
+
+Ben: Yup. Okay, David, take us forward. They sell the Opsware business to HP. What's going on after that?
+
+David: We've alluded to Ning a couple of times. Along the way, Marc had started Ning.
+
+Ben: What year is this? What year is that Opsware sale? We did the episode with Michel Feaster.
+
+David: Yeah, which was so great.
+
+Ben: She was at HP and bought the company.
+
+David: Way back in early Acquired history. I want to say it was 2005. I actually didn't ever [...] down when Marc started Ning. It was 2007 when Opsware was sold to HP. Marc was going along with Ning and Ning was a way for any community to launch their own social network. I guess in a way like what we have with our Slack community.
+
+Ben: It’s like white label Facebook.
+
+David: Yeah. Once again, ahead of its time. Marc, I think, was not super thrilled with how that was going. He ended up stepping back full time, right after the Opsware acquisition, brought in Jason Rosenthal from Opsware who had been a Netscape guy before that to come in and run Ning. Marc stepped back to just being a chairman.
+
+Remember, now we’re in 2007. We're now in the heyday of web 2.0, which is so funny. At any other point in time, if we hadn't had the tech bubble, the crash, and everything everybody lived through here, the rest of the market would have been gaga over Facebook, LinkedIn, Zynga, Shutterfly, Flickr, and everything that was going on. It was so exciting in the Valley. But because everybody still had the hangover from web 1.0, valuations were minuscule for these companies.
+
+Ben: Well, in 2000, 2001, 2002, even in 2003, venture firms weren't raising new funds. Everyone's preciously holding on to the last fund they raise, parceling out each dollar to their own portfolios, trying to make sure they're only investing if it's the very next Yahoo, and using their bullets very carefully. When Facebook came along in 2004, it's one of the only obvious ones that's growing like absolute crazy and kicks off that next generation of venture capitalists are going to be able to start raising big funds again and come out of the tech bubble screaming.
+
+David: But even that takes a long time. Ironically, it's Marc and Ben, arguably people who got hammered hardest by the dot-com crash, who recognize like, this is the time to put capital to work and embrace everything that's going on. They start angel investing together.
+
+Ben: Right. This is the era of super angels if you think back to the Ron Conway and Dave McClure era. There was the famous Bin 38 scandal. But Marc and Ben are these super angels that are individually investing tens of millions of dollars in startups.
+
+David: It's easy to forget now but they were the prototype super angels. Easy to forget now because now of course they're a venture firm.
+
+Ben: Of course, Marc made $150 million on the Opsware sale from—I think it's about right because he owned about 10% of Opsware at the sale to HP, Ben owned 5.5%. They've got cash to invest and they're dedicated to helping to build the next generation of startups.
+
+David: Yeah. And not only that, this is where the pieces start to come together. They also embrace (as users) web 2.0, and that’s a big part of web 2.0? It’s blogging. The Pmarca blog and Ben's blog, this is where it all starts.
+
+Ben: It was so good. Marc obviously became a prolific tweeter tweeting 100 times a day. Then 2016 he stopped, and we’ll cover all that in the next episode, but very much embracing the idea that I'm going to be allowed on the internet. I am going to share my thoughts with the world and very early to blogging.
+
+David: Yup. Through all this, they end up angel investing in companies like Twitter, of course, Zynga, Facebook.
+
+Ben: LinkedIn. Marc is still on the board of Facebook and still keeps up with Mark Zuckerberg.
+
+David: I hope so. The Facebook story is super interesting. When Andreessen Horowitz (the firm) launched, they launched with a big piece in CNN Money. Zuck is quoted in the piece. He says, "I moved to Silicon Valley in 2004, and I was introduced to Marc Andreesen [by Facebook backer Peter Thiel] in 2005. Marc became a sounding board about management and how to build a strong technology company. He has strong views on that, and they helped shape mine. Marc homes in on important things. It's very liberating. He has helped me not worry so much about the unimportant things."
+
+What is Zuck talking about here? Remember the Yahoo situation?
+
+Ben: Where Zuck turned down the $1 billion offer.
+
+David: When Zuck goes and vomits in the bathroom turning down the $1 billion Yahoo offer. Literally, everybody around the table is telling him to sell. Supposedly all the VCs, everybody involved with the company, all the rest of the management team are like, we got to take this offer. Because remember, web 2.0, Flickr sold to Yahoo for $30 million or something like that.
+
+Ben: Something like that.
+
+David: The idea that there could be a $1 billion outcome now post-bubble is crazy. Apparently, the only one of the advisors who told Mark not to sell was Marc Andreessen. Andreessen has a quote about this. He says every single person involved in Facebook wanted Mark to take the Yahoo offer. The psychological pressure they put on this 22-year-old was intense. Mark and I really bonded in that period because I told him don't sell, don't sell, don't sell. That is why Andreessen ended up joining the Facebook board in 2008 as well as the eBay board in 2008.
+
+Ben: Yeah, that's a fascinating one.
+
+David: That'll come up next time for sure.
+
+Ben: He stayed on the HP board by the way after the Loudcloud Opsware deal until 2018. He was a long-time HP board member too.
+
+David: Yeah. It's pretty crazy. They built up this vehemently founder-friendly, don't sell, build big companies, we're going to finance you…
+
+Ben: Technical co-founders stay as CEOs forever.
+
+David: Yup. We love technical co-founders. We are willing, just the two of us, to finance 45 different companies.
+
+Ben: Including digg.com, AngelList, Foursquare, LinkedIn—a lot of very meaningful companies of that era, high hit rate.
+
+David: They're the most active venture capitalists in Silicon Valley at this point. This is when Sequoia’s writing the RIP Good Times memo, and they're not even venture capitalists. This is the best. I think this is my favorite part of the whole episode.
+
+One day, Ben is still at HP. He becomes a VP of something at HP and it’s clear, this is going to be just like the AOL situation. He's going to stay there for a year and then move on, do his next thing. He gets a call from Doug Leone at Sequoia.
+
+Ben: Interesting.
+
+David: This is such a classic Doug story, I love it. Doug says, I want to know how you did it. Ben’s like, did what? Doug says maybe not quite these words, but maybe actually these words knowing Doug. I want to know how you took a dog of a company and turned it into a $1 billion outcome. I've never seen this happen before and I want to learn how you did it. It’s so great because a) it's so Doug, what a learning machine; b) it's so great because it's obvious what is happening here.
+
+Ben: He's trying to get Ben to come to Sequoia.
+
+David: He's totally trying to get Ben to come to Sequoia.
+
+Ben: Do you think they wanted to recruit him as a partner or as a person to come fund next?
+
+David: I'm sure they would have been happy with either, but I'm assuming probably as a partner. I bet they were trying to run the same playbook they did with Alfred, which is when Alfred joins Sequoia after Zappos. The original idea, Don Valentine says this in the Stanford GSB talk that we always recommend when he holds up Alfred's resume. He says, yeah, Alfred’s here. He’s a partner at Sequoia for now. But he'll start more companies and we can't wait for him to start companies and spin them out.
+
+Obviously, that doesn't happen with Alfred. But I'm sure they just want Ben and presumably Marc as well to just come be part of the Sequoia.
+
+Ben: Man, we don't do dissection episodes anymore but in the spirit of what would have happened otherwise, do you think about if Ben had accepted an offer to go be a partner at Sequoia? If Benchmark hadn't made the cardinal mistake of causing the executive team to potentially lose faith in their CEO right there in the boardroom, how things could've been different in the Valley?
+
+David: Well, the funny thing I was thinking about through all this is obviously as we've alluded to, Andreessen Horowitz is going to counter-position against Benchmark when they launch. Nobody ever counter-positions against Sequoia. I think it's just because like how could you? They’re so good.
+
+Ben: Yeah. It reminds me of the quote from The Wire, you come at the king, you best not miss. I don't really want to make a run at Sequoia. I wouldn't publicly counter-position against them.
+
+David: I was thinking the exact same thing. Ben takes this call. I don't know the exact timeline here, so I'm both hypothesizing and dramatizing for effect. But with that said, he takes the call. He knows what Doug is up to. He hangs up with Doug and he shoots Marc an instant message. We ought to start a venture capital firm and Marc replies, I was thinking the same thing. Boom. That our friends is where we're going to leave part one.
+
+Ben: That is a perfect, perfect spot. I feel like I now have a really robust understanding about the frame of mind therein going into starting Andreessen Horowitz (the firm). The question is when they're texting or whether they're on IM, is this before the financial crisis?
+
+David: I am imagining this is sometime in 2008.
+
+Ben: Yeah, which is fascinating because then between the time where they have the idea to do this and when they actually launched the firm, there is a global recession and bank financial crisis that they have to fundraise during. It’s pretty wild.
+
+David: Totally.
+
+Ben: I think we did a lot of great playbook themes during the episode, are there any you want to highlight here?
+
+David: Yeah. There is actually one, and we'll get into this more next time but it's pretty courageous.
+
+Ben: Did you choose that word carefully?
+
+David: I did not, I did not. It came to mind. It's pretty courageous what they do here. Okay, it's not courageous in that they have a lot of money. They never need to work again, etcetera. To turn down Doug Leone, to say we have a lot of money but we're going to deploy this money and put it at risk while all the rest of the world thinks everything is falling apart.
+
+I think it's easy to look back now and be like you guys of Andreessen Horowitz has $19 billion in capital under management and is this massive, enormous 200+ person firm with all these funds and like, yeah, you guys are money managers. That is not how it started by any stretch of the imagination.
+
+Ben: Yeah, that's such a good point. We'll get into this next episode, but from everything that I can hear, that's still the way that Marc and Ben act today. That they're by no means enjoying the $19 billion under management lifestyle. I think they're very much thinking about what is the next, not just generation, but what is the next epoch of Andreessen Horowitz (the firm) looks like. What are we beyond a venture capital firm? What will this institution be in the future? The way that you chose courage carefully, I chose the future carefully. We’re going to talk about both of those in the next episode.
+
+David: I love it.
+
+Ben: I've got a few just to bring it back. The timing, luck, and right place, right time are so strong here. I mean, especially in the N64 slipping one year part of the story, Netscape wouldn't have existed if N64 had shipped on time. As crucial as it is to be brilliant, you have to be brilliant in the right place at the right time and get lucky also. People always talk about Steve Jobs and Bill Gates being born at the right time and the right place to be able to start Apple and Microsoft. Kind of the same thing with Marc being around right for the start of the internet and being able to really jump on the emerging web and create a huge part of it.
+
+I also think a big playbook theme is knowing what good feels like because you've experienced it yourself. In launching Mosaic and getting a million users in the first year on a very nascent web, for Marc's whole rest of his career, that's the bar. If you've never experienced something like that viscerally where you've operated, founded, or worked at a high level at a company that was undergoing that, because you don't know what the benchmark is, you don't quite know what you're chasing.
+
+I think it meaningfully shaped all of his future experiences, Ben's experiences, and Andreessen Horowitz’s experience when they knew what true product-market fit and crazy growth felt like from the very first experience.
+
+David: I got one I really want to add to that. I totally agree. Yes, everything you said. And what makes it really powerful is the contrast. They also know what total failure looks like. I think you see a lot. People think, like what you said, knowing the benchmark, knowing success, that's what you need. I think you need both because if you only know success, you don't know the difference between success and failure. You don't really know what made for success and what was skill and what was luck.
+
+But I think what's really unique here in this story is they have absolutely both the highest of the highs, lowest of the lows. I think that can really help one triangulate where you are at any given point in time and why.
+
+Ben: I totally agree. I think it's a great point. Well, listeners, we're going to hold on grading until the end of our next episode. We'll have that conversation about actually the firm, Andreessen Horowitz, rather than trying to create something about Marc and Ben’s past. David, do you want to do some carve-outs before we bring it home?
+
+David: Yeah. Let’s do it. I've got a fun one that is tangentially related to at least the N64 aspect of the episode. I've just been on such a gaming and classic gaming kick lately. I don't know what it is. Maybe it's like you hit your mid-30s and then you just get nostalgic for the era when you were a kid. My carve out is my new favorite podcast (besides Acquired of course), the Resonant Arc YouTube channel and podcast. These guys are so great.
+
+They call themselves a video game storybook club. They take old classic video games like RPGs from this era. They did Final Fantasy VIII. They're now doing Xenogears. They did the first Nier game, which is more modern in the interim.
+
+Then they do like a book club. They do playthroughs. They're like we're going to play not a stream, but we're going to play from the beginning of the game to X point. We'll go play, you audience go play, and then we're going to do a podcast. We’re going to do a three-hour podcast at each checkpoint where we’re going to dissect the story, the development, who was the dev team, how did this project come together, and what is the context behind all this?
+
+Ben: That's a clever structure.
+
+David: It's really, really clever. I really like it. It ends up for all these games being 10, 15, 20 hours-worth of podcast time, but it's so cool. It is a really innovative format.
+
+Ben: You know you're talking to people who are willing to dedicate 10 hours of podcasts time to a single podcast like a Berkshire Hathaway trilogy. Couldn’t have found a better place to recommend it.
+
+David: A podcast after my known heart.
+
+Ben: I love it. I have a little bit more of a serious one. It's a nonfiction book called The Elephant in the Brain, and it is a psychology book that was originally going to be this person's academic paper. Then they decided I'm just going to get together with my friend, actually write it as a book instead, reach a much broader audience, and publish it as a consumer-facing book. It is a really interesting book.
+
+One of the main thesis is that we humans are animals and so why do we try and go around pretending that we're not and trying to do things that are socially acceptable when there’s an elephant in the brain, that we are animals and we are subject to these very base desires that come from evolution. It's not saying act on those, but every chapter points out a different and very observable basic animalistic thing that exists in our brain.
+
+The thing that I took away from it was once you can be more mindful of the way in which your brain is not acting “logically or appropriately” as you should present in society as it says it's acceptable to. Just being aware of the way that your brain is working and why it is working in that way so that you can then apply your higher functions on top of it is very interesting.
+
+I highly recommend it for anybody who is interested in psychology, capitalism, how to fundraise for nonprofits, how to lead, how to organization-build—all of this stuff is tied in there. They basically take anything that seems like people are doing purely altruistically or purely for whatever reason. They find the animalistic desires that underpin that and then find the data to support why that is often happening. Especially if you're interested in going into politics, it's a phenomenal read.
+
+David: I love it.
+
+Ben: I recommend that. All right. Well, listeners, thank you for joining us on part one of this journey. Thank you to our sponsors, pilot.com, PitchBook, and NordVPN. If you want to join us and talk about all things Acquired, all things tech with a great community, really thoughtful, respectful, good highbrow discussion, join us at acquired.fm/slack. As always, if you want to be a deeper part of what we do on the show, you can become an LP at acquired.fm/lp. David, anything else you want to say?
+
+David: I'm pumped for season nine. We are underway.
+
+Ben: I know, me too. I think this next episode is going to be really fun. Andreessen Horowitz has played such a seminal role in the development of the tech ecosystem of the last 12 years that it's a walk down my whole adult life and career to walk through from 2009 to today. I'm excited to do it.
+
+David: Yeah. Should we start recording right now, just run it back? Let's play two.
+
+Ben: No, I need a break. Listeners, we'll see you next time.
+
+David: We'll see you next time and until then Yung Spielburg, Mike Taylor, take us out.
+
+‍

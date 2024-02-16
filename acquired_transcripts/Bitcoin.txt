@@ -1,0 +1,1237 @@
+Ben: Welcome to season eight, episode one of Acquired. The podcast about great technology companies and the stories and playbooks behind them. I'm Ben Gilbert and I'm the co-founder of Pioneer Square Labs, a startup studio and venture capital firm in Seattle.
+
+David: I'm David Rosenthal, and I'm an angel investor and advisor to startups based in San Francisco.
+
+Ben: And we are your hosts. After close to 150 episodes over the last five and a half years, this will be the first one covering something that is not a company. While today's topic is nowhere near a corporation and is often thought of as quite the opposite, it has had a better investment return over the last decade than any company in the world including Amazon, including Apple, including Domino's Pizza, and even including Tesla.
+
+David: So great. We're going to have to talk about a little bit of pizza as we go along here.
+
+Ben: We are, but not from Domino's. Today we are talking about the single greatest 10-year investment return in human history—Bitcoin. In just over a decade, it has gone from less than 1¢ per bitcoin to over $30,000—a 3,000,000X investment return.
+
+David: It's just mind-blowing.
+
+Ben: I was going to say, dude, I don't know totally for sure that it's the single greatest decade investment return in human history, but it kind of has to be.
+
+David: There's the Naspers in Tencent, and the SoftBank in Yahoo investment and Alibaba, both of those were between $20 million and $30 million that turned into $100-$200 billion. Even that's a 1000X-ish? It just didn't even come close.
+
+Ben: Yup, pretty crazy. I have not computed the IRR but I bet that's pretty good too. Whether you are hodling on for dear life and riding it to the moon, or whether you think this whole thing is a crazy bubble that's about to pop, there is no denying the unbelievable cleverness of invention of all the math and mechanism behind the Bitcoin protocol itself.
+
+It is truly a beautiful and ingenious system, but by who? We don't even really know who invented it. Today, David and I will dive into the complete history behind the creation of Bitcoin, by the pseudonymous Satoshi Nakamoto, the different factions that pushed it to evolve to its several chapters since 2009 into the mainstream today. And we'll evaluate its position today with the same strategic lens we use on every episode here on Acquired.
+
+Is Bitcoin a new form of money, an investment opportunity, the start of a new global economy, or just completely a scam? Today, we dive in.
+
+If you love Acquired and you want to be a deeper part of what David and I do here, you should become an Acquired Limited Partner. You'll get access to our library of over 50 interviews and deep dives on company building topics, our monthly Zoom calls, and this is new—live access to listen in while we record big events like emergency pods like the Slack one we did a couple of months ago.
+
+David: Yeah, it's so great. That feels like 10 years ago. That was back when Bitcoin was under $20,000.
+
+Ben: Yes, and also listen live into our book club discussion with the authors. Most importantly though—and this is what's so cool about what the show has become—you'll be part of the Acquired community. We've been amazed at the caliber of people and insights that have shown up to our LP calls. It is so clear to David and I that we truly have the greatest audience in the world from young people just starting out their careers to CEOs and top executives, some of which are running hundred billion dollar companies and general partners at venture and investment firms of every size around the world.
+
+People have made friendships, gotten jobs, raised capital, launched new careers, and even met their co-founders through the Acquired community. If you aren't already an LP, click the link in the show notes or go to acquired.fm/lp, and we can't wait to see you there.
+
+Now, on to our presenting sponsor for all of season eight, Tiny. Last season, we talked with Andrew Wilkinson about what Tiny is and why it makes sense for all sorts of companies to sell their business to Tiny. This season, we have an exclusive interview miniseries with Andrew's partner Jeremy on building wonderful internet businesses the Tiny way.
+
+Jeremy, a lot of people think it is impossible to have your cake and eat it too. Where you can be a profitable business every year while also achieving high growth. Can you help us understand and potentially debunk that and maybe share a company that did both and how entrepreneurs can try to do the same thing.
+
+Jeremy: Sure. I think this is a really common misconception. An example of that would be Dribble. Dribble—from when we brought it a few years ago—has more than 10X in evaluation. We've never put additional money into that business since we acquired it and that's all been profitable.
+
+Our CEO, Zack, has done an incredible job there, but I think one of the interesting things is when you look at Dribble, you would see a community with 10+ million users and think that's a business we need a lot of venture capital because it's community-based, it's at scale, it's essentially a social network in a lot of ways, but that really hasn't been the case.
+
+It's just been this process of effectively using the money that the business generates and then investing that to what works, which sounds really simple, but it's something that's often overlooked. You can make a lot of money selling something at zero marginal cost, which sounds obvious and is kind of the foundational economics of software.
+
+When you're able to sell a lot of recruiter accounts or Dribble pro accounts, or as long as you focus on churn and the growth avenues that really work quite quickly. Not chasing big billboard ads or expensive paid acquisition, and just working on what exactly is acquiring users—what turns a dollar into two. You're able to do that while still being able to take money out of the business. I think that just puts Dribble in such a defensible position.
+
+We've got term sheets for Dribble from some top tier VCs, but it's really not just a route we see as super attractive because we can own our future and can continue to grow the business just with the cash flow that it’s generating.
+
+Ben: It's great. Thanks so much. We are super excited to have Tiny back for season eight. If you are contemplating a sale or even wonder what it might look like in the future for your wonderful internet business to sell, you should reach out and just tell them that Ben and David from Acquired sent you. You can learn more at tinycapital.com or by clicking the link in the show notes.
+
+David, I think it is time to dive in. Listeners do know that at various points in our lives—past and present—David and I have bought Bitcoin, sold Bitcoin, held Bitcoin.
+
+David: HODLed Bitcoin.
+
+Ben: HODLed Bitcoin—none of these, as usual, is investment advice. Don't take this as a recommendation to buy or not buy. In fact, I have learned way more researching in the last two weeks and really preparing for this episode than I ever knew when I held more Bitcoin than I currently hold right now. Certainly not investment advice, but definitely a fascinating deep dive.
+
+Hopefully, we'll both turn up some new stones that you didn't know—even if you're a Bitcoin enthusiast—and also help see the forest through the trees a little bit if you're someone that's deep on all this stuff.
+
+David: When we were planning this season and thinking about the stories we wanted to tell, there was no better story that I could think of to start the season than this.
+
+Ben: In fact, I thought you want it. I'm glad you pushed it through.
+
+David: All right, we're going to set a new record on where we start on history and facts today, but it's not going to be a record in the direction you think. We're going to start two days ago. On Monday, January 11, 2021, when I paid my taxes to the US government—I haven't really thought about it. I go into the IRS, I go into the California franchise tax board website, to my bank account, and pay the taxes.
+
+This time, I found it very very concerning. I'm dramatizing for effect here, but I actually woke up in the middle of the night, Monday night, thinking about this. I’m really worried about what I just did.
+
+Ben: Why is that?
+
+David: Why is that? I'm not worried that I paid my taxes, I certainly believe in paying taxes. It's important, you should do it. I'm concerned about how I paid my taxes. When I logged onto these websites—the IRS website, the California franchise tax board website—they kind of feel like they were designed in 1995, and they probably were. I went on, I was going through the flow. I entered my bank routing number and I entered my account number. I told them to take out many thousand dollars from my account and they just kind of did.
+
+They just reached into my account and they took the money, which I wanted them to. I wanted to pay my taxes, but that's insane. I didn't log on to my bank and tell them this was going to happen. I just gave out my account number and they came and took the money. I trust the government and I think that's okay, but I started thinking about all the times I do this.
+
+Ben: Right. If they could do that, the routing number is just the branch. You and I could foreseeably have the same routing number. All I need to do is either find or guess your account number, which is not very secret.
+
+David: No, I actually give it to a lot of people the more time we spend on the internet and transact. We built Acquired, we have our bank account on Acquired. We have vendors, we have people who pay us. We're giving out our account number all the time. There's really nothing to stop anybody—once they have the number—from sharing it, using it, taking money, doing whatever they want with it. That's kind of frightening, isn't it?
+
+Ben: Totally. Once you start pulling on that thread, it's almost scary to see where it goes and what the layers of our financial system are. I imagine that's where you're going with this.
+
+David: Yes. I was like, well, how else can I transfer money? I can write a check, you write a check then that's a piece of paper that has the routing number, it has the bank number.
+
+Ben: You're just making the problem worse.
+
+David: It has your name on it, it has your address on it. Literally, everything you need to steal somebody's identity and their money is just right there printed on a piece of paper. What do we also use? We use debit cards and credit cards to pay for everything. How many times have you had your credit card stolen, Ben? Because I’ve had my credit card stolen probably 3 or 4 times over the past 10 years.
+
+Ben: Yeah, something like that.
+
+David: Something I'm sure everybody listening is probably in the same bucket. If somebody knows your credit card number—even if you're really careful with it, you could be paying at a gas station, there could be a skimmer installed. The ecommerce you use could get hacked. It's out there. There's no way to stop anybody from putting fraudulent charges on your account.
+
+Ben: David, fortunately, these systems account for this. Take a credit card company, for example. We did the Venmo episode, we talked about the credit system. Those companies make a ton of money building transaction fees to account for all the fraud they have to deal with because these systems are silly. Much like our social security number where everybody's secure identity is a nine-digit integer. Call it good, no one will guess that.
+
+David: They are hard to guess, of course, we're dramatizing here, and there are these financial institutions that our banks, our credit card companies, et cetera that are in the middle of all of these. They're monitoring our accounts and are looking for fraudulent transactions that show up and they're canceling them. They're not allowing them through, but this is a huge tax on the system.
+
+In 2018, there was $28 billion of credit card fraud in the US plus their estimates there's another $50-$60 billion in financial bank fraud, wire fraud (generally, more broadly). Not to mention chargebacks, which when merchants try to put a charge to a credit card and the credit card company denies them, they're charged off. There's everything. There's all the work that all of these institutions are doing to prevent fraud. All the technology they're buying, all the people they employ. This is a lot. It’s crazy.
+
+Why does this happen? It happens because the account number is everything. There's only one address. Once that address is out there, you can access the account. It would be like with our email, if I knew your email address and I email your email address, I could also just send emails to you. It doesn't make any sense for the internet.
+
+What if I told you there was another system out there—something that was natively designed for the internet that works just like email. You can give me your address. I can send you money but not take yours. Nobody can chargeback that transaction, invalidate it, claim that there's fraud or any of that. Does that sound interesting? Does it sound like it might be valuable?
+
+Ben: Tell me more, David.
+
+David: Indeed we will. That was fun. We're getting ahead of ourselves for sure. Of course, we're talking Bitcoin and of course, we're talking about the limitations of the traditional financial system, which to be clear is amazing and is one of the most incredible developments of human history. But it wasn't built for the internet. It was built for an age when the way that most people live their financial lives is once a week or more, maybe even once a day. They went to a building, called a bank with somebody who knew them there, they took money out of their accounts.
+
+That person was like, yes, I know who you are. I can verify your identity. I can give you your money. That building, those people were processing checks that you are sending. They knew what was happening. It wasn't built for the internet.
+
+Ben: Right. The most important thing for this system, the number one goal is that it keeps working. You can see why it just keeps happening this way because it works. It is the foundational underpinning of our economy, democracy. The system must keep working. Sure, we've layered on all kinds of crazy hacks over the years to make it work the way it does, but I'm a fan of it continuing to operate the way that it does without breaking. I see why it just keeps on keeping on.
+
+David: Exactly. How do we get here? Now we'll go back to history. Modern Bank started back in the 14th century during the Italian Renaissance.
+
+Ben: Here we go.
+
+David: Many great things happen. Here we go. I think it was the Renaissance when double-entry bookkeeping was created. I don't know for sure, but I think it was one of the main innovations of the financial system.
+
+Ben: Here I am shocked that you're not taking us to seashells for currency. Let's just start with banks. That feels like a reasonable enough place to start in the story.
+
+David: That was when banks started. They would take deposits, they would put out loans, they would do other services like money changing between regional currencies, transferring large sums of money, et cetera. Then in England, in the late 1600s, that's when banks started issuing paper banknotes so that people didn't have to carry around whatever metal the currency was denominated in—silver, gold, seashells, or whatever. It turned out, that was a pretty good idea.
+
+Ben: When you say that they don't have to carry around the gold, silver, or whatever, the banknotes basically say I have this much gold but it's in the bank. Here I'm just giving you a piece of paper that lets you know I'm good for this gold. You can use this piece of paper, now you're good for that gold.
+
+David: Yup, at the bank. Then pretty quickly the government got involved. They're like, why don't we just keep the gold at our central bank, and then all these other banks in our jurisdiction can put out paper banknotes but it ultimately comes back to us then we don't have those metals going around, great.
+
+By the way, that also allowed them to inject money into the system and help finance their own spending as governments, but we'll get to all that later. From banknotes, it wasn't a big leap to check, which the banks would create on special tamper-proof templates and paper that would then come back to the banks for verification.
+
+Ben: Tamper-resistant paper.
+
+David: Yeah, tamper-resistant, and of course there was fraud throughout all of this. But again. Everybody knows each other. All these pieces of paper coming back to the bank. They're verifying. The system works pretty well. Then that grew up into clearing departments of banks that would clear these checks, and that got aggregated up into local geographies and then ultimately countries of clearinghouses.
+
+With the advent of computing in the 20th century, in 1959 in America, the Automated Clearing House or ACH System got implemented. That is a national system that all of these payment wires and checks come to and they take batches of them every couple of days. They process them automatically using computers.
+
+Ben: Also, imagine what a crazy cool system that would have been in 1959 that just because I have your bank information, I can send you money via the Automated Clearing House and it will just show up three to five days later in your account like magic. That three to five days without me writing a check, that's freaking awesome.
+
+David: It's amazing. It leads to things like direct deposit for employees from their employers, transferring money between business to business enterprise applications. This is all great, but as you said, Ben, it still takes three to five days. This is a batch processing system that's grabbing a lot of transaction data, pieces of paper, and pushing it out every few days.
+
+Ben: Twenty-five years before the Mackintosh I will take it, 35 years after the Mackintosh maybe it's weird that it's still the system.
+
+David: Indeed. Also, for consumer use cases like that, that's not going to work. You want to go out and eat at a restaurant. You're probably still carrying around your banknotes, your green bucks in America, or other paper currency in other countries. People come up with the idea of how can we make that faster?
+
+Credit cards. Credit cards started with Diners Club, one of the firsts. And then I didn't realize this until doing the research. Do you know where Visa started? Visa was the first big credit card network.
+
+Ben: There was a department store one. Was it Macy's or Sears?
+
+David: No. Visa was actually from the Bank of America. They started it in Fresno, California. They picked one town and they just mailed all of their Bank of America customers in Fresno, California—these credit cards—and people liked them. They started to work and then other banks wanted to get in on this action. They ultimately started a consortium of other banks with, they called it Master Charge, that became MasterCard. Thus Visa and MasterCard.
+
+Credit cards as we all know have a couple of problems with them. One, it's debt. The way that you can make payments happen really fast out in the wild is not actually do the payment, it's just on credit. That leads to consumers to start using them and start racking up a lot of consumer debt.
+
+Ben: Also an enormous consumer CFPB problem in our country today—the Consumer Financial Protection Bureau. This has been widely abused and many, many Americans are in credit card debt because, frankly, the system is taking advantage of them.
+
+I do think, as you're pointing out, David, it is very counterintuitive to me, but it's crazy that it evolved this way—that credit cards came before debit cards because we had ACH to literally move money around. But what we wanted was instant payment. Basically, these stores or banks would just extend you the credit and then they didn't have to move the money right away. They can do it later, which explains before the debit rails were laid—which I’m sure you’re about to get to—how you can have these instant payments even before we had a debit system.
+
+David: There's one other problem with the credit system, which is for merchants it's good in that they get to accept easy payments from lots of customers. They can probably do higher dollar value transactions without checks. They can get more volume coming through whatever they are doing—whether a restaurant, retailer, or whatever. The problem is they don't get the money right away.
+
+If you're a merchant taking credit cards, not only do you have to pay a fee to the credit card companies.
+
+Ben: 2.9% plus 30¢.
+
+David: Plus 30¢, right. But also, you just don't get the money right away because it's all on credit. You got to wait a month. That's not great for your cash flow if you're a struggling restaurant, retailer, or the like.
+
+Ben: In fact, it's a little bit of a hostage situation. If the consumers weren't demanding I must be able to pay in this way because every other store is letting me. If you came to me David and you're the credit card company and I've never heard of you before and you're saying, by the way, you should start accepting the payments through me. I'll get it to you a month later and I'll take a nice [...] along the way. I'll be like, get the hell out of here.
+
+David: Yeah. I think that's one of the reasons why it took 50 plus years to build up the network of credit card, merchants, and consumers in America—whether that's Visa, MasterCard, American Express, and the like because, yeah, there are some good things here but there are some really bad things to this system too.
+
+Then you mentioned debit. Once the rails started getting laid for credit card transactions and the early ones were super cloogy. I think merchants had to call up the issuing banks of the cards. There wasn't the automatic swipe and automatic phone system that checked everything. But as that started to get built up, then the debit rails got laid and banks said okay, we can create check cards that they will call initially. They came out in 1969 I think in America, and used some of these same technology rails but have it be a debit system.
+
+That's a little better, but I think it's still pretty slow. I could be wrong on this, but I think it's basically just an automated version or a card version of ACH and the check system.
+
+All of these work fine for a long time, but the internet really starts taking off, as we chronicle so much on this show. Once the internet starts taking off, people start spending and having financial relationships and financial transactions in so many more places than they used to. There's a lot more volume in the system than there used to be.
+
+Famously, Paul Graham even put out a request for startups—this was in maybe 2007, 2008—about accepting payments online is really hard. Somebody should do that, and of course, two brothers from MIT—the Stripe kids—found that, and they started Stripe and made it easy for businesses to take payments online.
+
+Ben: Which of course is our modern infrastructure companies and companies like Stripe, as a merchant, you just have a token which is the notion of that customer's card. Where if you pass that token to Stripe, Stripe says yeah, I've got their card stored. You never had to take on that risk of getting hacked or knowing the person's number and the consumers are better off because only Stripe actually knows your credit card number. That certainly was not the case in the first 15 years of the internet.
+
+David: Totally. What happens is like always, you've got these entrepreneurial attempts to make the system better and build on top of it. Stripe is a great example. Square is another great example. Venmo being another one. As the internet is proliferating, people are building out essentially new layers of infrastructure on top of these old traditional financial and banking systems.
+
+At the same time, you also had—over the first 20 years or so of the internet—a couple of attempts to start designing some new protocols from scratch for digital money. These were companies and projects that you probably never heard of like DigiCash, which was a company that I think started in 1996. E-gold was one of them. Bit gold was one, which got pretty close. And then in China (this is really interesting), Tencent had QQ coins, which were part of the QQ network—the pre WeChat part of Tencent—and they became so valuable that people started transacting lots of things in QQ coins in China.
+
+The CCP didn't really like that, so they started regulating that pretty heavily because it was becoming too popular. The other big attempt to solve all these financial and money problems on the internet of course was PayPal. PayPal was really interesting. They kind of almost did it. The whole vision of PayPal—Elon's vision, with Peter Thiel's vision, going back to the beginning, was to create internet native digital money. They did, and they found the killer use case on eBay with [...] babies and other things happening. The problem with PayPal was they did it as a centralized system.
+
+Ben: Of course, it's still denominated in US dollars. Sure, I can pay through it, and that really is the problem you're describing here that you're trying to solve—how do you take payments on the internet. But certainly, when we compare it to something like Bitcoin that is a completely different monetary system, what PayPal was doing was a much thinner slice.
+
+David: Yeah, much thinner slice. Also, they ran into the problem of they were like a bank taking care of all these transactions happening. There was so much fraud. One of the biggest challenges for PayPal was managing the fraud and actually Palantir—as a lot of listeners may know—grew out of the fraud prevention technologies that they developed at PayPal.
+
+Ben: Oh, I didn't realize that.
+
+David: But it was up to them. Whenever there was the equivalent of chargebacks or acquisition of frauds, they had to mediate all of these transactions and decide what was what, reverse some of them, and make sure everything was operating okay. The rails were better for the internet, but they still had this problem that it wasn't very efficient.
+
+Ben: Because it's built on all of the previous layers of this monetary system. Where fraud can exist because of our current means of securing accounts, transmitting money. Even the money itself doesn't lend itself for security. It lends itself to vulnerability. Although we've built up all these ways for it to be secured, which of course are expensive to maintain.
+
+David: Totally. Ultimately it was just a digital version of the same model, the traditional financing and banking system.
+
+Okay, then we get to 2008, and for so many reasons that we talk about so many episodes on this show, that was the seminal year. Really, in this case, I think it's two things. It is, of course, the financial crisis. It's Lehman going bankrupt and massive, not only a loss of trust in traditional banking systems but also just financial hardship and ruin for so many people that caused them to want to go seek other opportunities. In addition to just this massive exponentially growing complexity of payments on the internet that is like whack-a-mole that people are trying to stay ahead of.
+
+Ben: It's so funny. When you say payments on the internet, it's like two completely different archaic stacks that now need to interact. For all the credit we give the modernity of the internet, it's an insane system. The protocols that are used to underpin the internet evolved a lot over the years and especially the fact that a couple of years ago we wholesale switched to HTTPS from HTTP.
+
+You've got UDP and SMTP to send email. You've got all of these protocols that people have stitched together, and then of course you have a browser that sits on top of it all. There's the worldwide web that sits on top of HTTP. There are all these different kinds of cloogy, kind of archaic technologies now including Javascript, which for some reason runs everything that by some miracle, duct-taped together correctly created the internet which is amazing.
+
+That's this entire separate other stacks of the problematic monetary stack that we've already talked about. When you say payments on the internet, it’s like I hear a complex ball of yarn with a different complex ball of yarn that needs to somehow fit together. Obviously, we're making it work, but boy is it nasty on either side.
+
+David: Totally. This is why something like Stripe, people didn't think it could be done. It was so hard to make all of this work.
+
+On August 18, 2008, a domain name is registered under the name Satoshi Nakamoto for bitcoin.org. Nobody really notices this happening. Then on September 15, 2008, of course, Lehman Brothers goes bankrupt. I remember that day well. I will never forget that day, working on Wall Street at the time.
+
+Then on October 31, on Halloween, six weeks after Lehman going bankrupt, an account with the name of Satoshi Nakamoto publishes a paper on the cryptography mailing list, metzdowd.org, describing a new digital cryptocurrency titled Bitcoin: A Peer-to-Peer Electronic Cash System.
+
+This is why I started where I did with history and facts. So many people, when they start explaining bitcoin or trying to understand bitcoin, they immediately talk about well, this is an alternative currency. The Federal Reserve System and the fractional-reserve system is broken, and inflation. This is better. Yeah, that may be true.
+
+We'll get into all of that, but the actual original intent of this was to design a native payment and currency system for the internet that didn't have all these problems.
+
+Ben: It's so interesting. Literally, a couple of hours before we record—to put the icing on the cake of my research—I reread the Satoshi paper. It is amazing how in the several introductory paragraphs, which by the way, the whole paper is crazy succinct—nine pages including its references and sources cited.
+
+It's mostly talking about hey, because the system for transmitting money is relatively insecure and requires central authorities to verify everything—either the Federal Reserve Bank or banks in general or whatever it is—we basically have this big tax on the system that you could have fraud, that you could need to reverse charges because they were made by someone who didn't actually have the money, or they weren’t who they said they were.
+
+The whole system carries this big tax. What I'm proposing here is a way to pay for things that basically is a system that exists completely outside that system and is fundamentally better because it doesn't require those taxes. Everything is verifiable and authentic.
+
+David: Here is how the whitepaper starts. “Commerce on the internet has come to rely almost exclusively on financial institutions serving as trusted third parties to process electronic payments. While the system works well enough for most transactions, it still suffers from the inherent weaknesses of the trust-based model. Completely non-reversible transactions are not really possible.” Think about chargebacks on credit cards all the time. This is a huge issue that so many internet companies deal with.
+
+“Completely non-reversible transactions are not really possible, since financial institutions cannot avoid mediating disputes. The cost of mediation increases transaction cost. With the possibility of reversal, the need for trust spreads. Merchants must be wary of their customers, hassling them for more information than they would otherwise need. A certain percentage of fraud is accepted as unavoidable.”
+
+This is what they're talking about. Hopefully, you can see why an alternative system would be really interesting and important.
+
+Ben: Yeah. It's so interesting that this paper isn't about we need a different asset class that is immune from inflation or at least more resilient to inflation, or we need decentralization because putting too much faith in governments. None of that is actually in the paper. All of that is a derivative by-product and lure that has developed around this initial problem of a peer-to-peer, no centralized third party trustless system for transactions at low cost.
+
+David: To be clear, whoever Satoshi Nakamoto was, people think probably isn't just one person, it was a group of people. The early people who started getting involved in Bitcoin believe everything you just said. They tend to be pretty libertarian-minded folks, but that wasn't the purpose of why they came together.
+
+I mentioned DigiCash, E-gold, Bit gold, previous attempts at this—kind of half of the problem was solved. The crazy underpinning of the traditional financial system is that there's one account number and if you know that account number, which you have to give out to people to transact, you're compromised. That had been fixed through email and other technologies on the internet.
+
+Encryption was a thing like username-password combinations. The idea that you could have a public address like an email address that anyone can transact with, but you retain a private key, effectively, to access that, that was already baked. That was trivial by the time Nakamoto came along and published the Bitcoin whitepaper.
+
+Ben: Totally. This notion of public-key encryption that you're talking about, David, absolutely one of the greatest inventions in human history. If you think about ciphers from the pre-World War I era and war, you would have the same key to encrypt and decrypt.
+
+That notion is great if you can securely transmit that key to another person and trust that they're going to keep it secret. But the brilliant idea behind is I have a key that only I can use to send email as me, but there is a way that you can send email to me. Applied in another context, you can send me money or you can encrypt a message that only my private key can decrypt.
+
+You can publish it in the whole world and say, here is an encrypted message that anyone could read if they had the private key. It means that only the person who the message is really intended for—even if the message is intercepted—is the person who can read it.
+
+David: Okay, so what's the problem? Well, the problem is, think back to the email. If I sent you an email, you can copy that email, you can forward that email, I can copy other people on that email. Great for email, bad for the money. I don't want you to be able to send me $100, but then also copy someone else on that $100 and essentially double-spend the money, triple spend, or a thousand times spend. This was a problem that nobody had a good way to solve. This is what was just so revolutionary about Bitcoin and Nakamoto's solution.
+
+Ben: Zooming out for a second, the big idea in software—think back Windows 95—was creating infinite replication, creating abundance. Microsoft prints a copy of Windows 95 for basically zero marginal cost. They put it in the box, there's of course distribution cost, but cloning the bits over and over and over again made this incredible business model.
+
+Then the internet rolls around. Suddenly, you've got zero cost distribution, which compounds the abundance from the zero cost replication of software. Now, it doesn't cost you anything to make a copy and it doesn't cost you anything to deliver it. Think about that.
+
+Everything that we know to be true up to this point is that if something's digital, it can basically be copied everywhere quickly. The big idea—which is completely genius and previously thought to be impossible before Bitcoin—is creating scarcity with the software on the internet. Absent the fact that now we know Bitcoin is a thing, it would've sounded ludicrous if not then elegantly laid out in this nine-page paper of here's how we're going to do it.
+
+David: How do you do that? Well, the solution that Satoshi proposes is a "peer-to-peer distributed timestamp server to generate computational proof of the chronological order of transactions.”
+
+Why is chronological order important? Go back to the I'm emailing you $100 and I'm copying somebody else on that transaction example. Whoever gets the $100 first, then it's spent. The next transaction is void. If I were trying to give somebody a paper $100 bill, the first person who gets it, they've got it.
+
+Ben: Yeah. Of course, the way that this actually works—we talked about public-key encryption—is when I'm sending it to you, I sign it with my private key. I take that bitcoin, which is a hash that has all the other signatures that came before it in there. I know that's not technically exactly right, but that's the reasonable way to think about it. I sign it with my private key, I send it. Anybody else out there, if they wanted to sign something from my wallet that I owned, they couldn't. They only have my public key, I'm the only one who can sign it and send it to someone else.
+
+Now, of course, that someone else can verify that I sent it to them because they have my public key. They can quickly do some work and check the work and say, yeah, that did come from you. But they don't need to know my private key in order to do that check.
+
+David: If this system were to exist, all these transactions—thousands of them, millions of them, billions of them—would be going out into the network. How do you keep track of which ones are the valid, correct, unique, scarce ones? The way that Satoshi proposes you do this is you have a distributed system of the ledger. Everybody can see the entire chain of transactions of every transaction that has ever happened within the system.
+
+Ben: David, I think that's a really interesting concept and a little counterintuitive where he's basically saying, well, in a third party system where you have a Mint or The Federal Reserve, you send that information to them and they keep track of it. That's the only way to make sure that money is not getting double-spent.
+
+He's saying, what if he flipped out on his head—he, they, she, whoever it is—and saying, well, what if everybody has a copy of the ledger and everybody just has the complete transaction history of every single bitcoin right there on their computer? That's my proposed solution.
+
+David: If you're doing that, then he proposes that people who would choose to—who are part of the network—could grab these transactions that are being broadcast out and could generate computational proof of which ones came first, which ones were the right ones. If somebody's trying to send a bitcoin multiple times, which ones of those happen first, and are the correct transactions that should be added to this ledger.
+
+Ben: Right. He's basically saying there's a whole set of people out there who have decided they want to host on their computer the entire transaction history, and they're going to do some work to verify. They're going to go back through and they're going to say, I'm going to do some math to do some checks and basically say, hey, are all of these transactions valid? They're going to run their computers to do that and verify the integrity of all these transactions.
+
+If they verify and say, yeah, this is good, they're going to propagate it out to more computers and more people who are on the network. Essentially, there is one canonical version around there that everybody's copying off of that has a bunch of thumbs up on and say, yeah, I've checked this, it's good.
+
+David: How do you design this system so it's not just total chaos of everyone doing this? You make it computationally actually pretty hard to prove that you have the correct order of transactions. Okay, cool, that means that once one of these superusers, one of these nodes, broadcast out a set of transactions, everybody can be pretty reasonably assured that it's correct.
+
+Though because you chain these transactions together into one ledger that goes all the way back to the beginning. If you make it hard to compute each block, you make it impossible for anybody else to then change that ledger because the block is cryptographically chained to the previous block. That's hard to do and the system adapts so that it always takes on average about 10 minutes for everybody—all the miners out there that are working on these transactions, which is more computing power than you can imagine right now. It still takes 10 minutes to create one of these blocks.
+
+To go back, change, and fake some of the previous transactions, you would have to re-compute the entire chain all the way back to the beginning.
+
+Ben: It becomes an exponential problem. If you could do this, not only would you have to broadcast it out to a material part of the network and not just have it on your own machine, but tell your friends, have them tell their friends, and all that. It's exponentially difficult to take the hard thing to do in the first place, which is going through a block and basically finding a new block. But then it's also exponentially hard to go and rewrite every block that then is stacked on top of that one.
+
+David: Right. When you set up the system, say for the first week or month—depending on how many people are using it—even a year or two, it's not so hard. If somebody wanted to come in with a lot more computing power than other miners on the system, they could recreate all the transaction hashes back to the beginning, insert around fake transactions, give themselves 100,000 bitcoins, and then pass it off as the new one.
+
+Ben: If you had an M1 MacBook Pro—
+
+David: You could go back to 2012.
+
+Ben: Right, and there were only a handful of other crappy laptops doing this in the early days, then sure, your compute power would outmuscle a lot of these early ones. But that's not going to happen as soon it reaches a sufficient scale.
+
+David: This is what's so cool. It becomes a network effect economy because the more transactions that are happening, the more blocks that get created, and the more computing power that's working on that block, the harder and harder and harder it becomes to forge it until you get to a point where we are now. You would need the total amount of computing power that is gone into Bitcoin since the beginning plus some more to break it.
+
+That's just not possible. There's no way at this point because it's been operating for so long with so many nodes on the network, so many transactions happening, so many miners mining. It's impossible. Now you can guarantee—this is what Satoshi saw. If you could get to this kind of network with this density, scale, and operating history, it would be impossible to crack it. Then all of the fraud, all of the double counting, all of the costs on the system that we just talked about with the traditional financial system wouldn't apply anymore.
+
+Ben: Yeah, it's interesting. What we're talking about here is laying the groundwork for a system of accounts where you can be super sure that if you're sent money, it's legit. That there's not a risk that they didn't actually have that money and you're going to have to do some chargeback. You know it's legit because you've got everything we just described going into, saying that if I receive this bitcoin to my address, it's not going to get undone, or it's at least extremely unlikely that it's going to get undone because of all this work that's going into it.
+
+We jumped to use the word miner, and I want to explain how that fits into the context of what we were talking about five minutes ago. We were saying that there are these people who have a whole copy of the blockchain of the entire transaction ledger leading up to now. It's sitting on their computer and they're doing work. They're going through and running cryptographic algorithms to ensure the authenticity of all those transactions and check and make sure that these are all correct.
+
+Of course, they need to be compensated for that because they're taking electricity, they're running their machines, the fans are on a real high. In all likelihood, their GPUs and now even more specialized mining hardware that exist in a data center somewhere close to a river so they can have easy access to cheap renewable energy.
+
+David: Maybe back in 2009, researchers like Nakamoto and the people that he shared this with originally would have done this out of the goodness of their hearts because it's cool, but that's not going to scale.
+
+Ben: What was initially a by-product and is now the incentive of mining one of these blocks is the first coin on the block gets given to you as a thank you for doing the work to verify the integrity here.
+
+Without getting too far into the specifics of how that actually works, what it means is you're getting paid for your labor, or you're getting paid at least for the energy that you're putting into helping the system remain verifiable and authentic.
+
+David: It's not just the first coin, it's the first several coins on a block. It started with 50. If you mined a block, which again happens every 10 minutes, you got 50 bitcoins in the beginning. Now I think it's down to six and a quarter.
+
+Ben: Six and a quarter, yeah, because it halves every time, which of course we will talk about how bitcoin is not an inflationary currency but it has a finite number. Slightly under 21 million will ever get mined.
+
+It uses a halving function so that every four years, the reward gets cut in half. There is only a certain amount of bitcoin that will ever be mined. You can count on the system not getting watered down by injecting more and more bitcoin into it above this very predictable, regular, declining schedule that we have observed.
+
+David: What you were saying, Ben, is so important. We just described the super cool system. It'd be awesome, it'd make money on the internet worth much better, it's going to require so much computing power, why would anybody do that? Why would these coins have any value? They're not dollars, they're not backed by a government.
+
+The reason is what you're just saying. The coins get created by doing the work to make the system what it is, which is really, really good. The value is in the work itself, it's a recursive system.
+
+Ben: Right. What you have from the work being done is a system of integrity. The network effect may be small at the start, but you can count on the fact that you can be very certain that all of those transactions have been combed through. While technically, there is no chart of accounts, you figure out who has what in every account by running through the whole transaction history and figuring out where all the chips fall down when you run through line by line.
+
+Effectively, what you have is a big chart of accounts where you know for sure that those are right, those accounts actually contain those bitcoins.
+
+David: If you own a bitcoin, and the first people who own that bitcoin when it's created are the people who mined it, and then it gets transacted. You own some, I own some, people who buy and invest. What you actually own is you own a piece of the computing power that has gone into making the system robust, secure, viable, and good for everyone.
+
+Ben: Yeah. Before we move on to the story here, I think there's a couple of little rabbit holes I want to go down. We've talked about this cryptographic work a few times. I want to talk a little bit about the idea of one-way functions in computer science. There are certain types of math that are very easy to do in one direction but very difficult to undo in the other direction.
+
+A classic example of this is the product of two prime numbers. If you multiplied prime number A by prime number B, it's fairly easy to do that math. You can imagine literally doing it on paper, you can imagine writing a computer program to do it, bringing those numbers into the registers and assembly code, multiplying them together.
+
+But if you’re given the product of those two numbers, especially when all the numbers you were dealing with are very large, you can imagine that it gets extremely difficult and would be very inefficient to try and figure out what the initial two prime numbers were that created that product. The magic that makes this one-way function work is the fact that it’s easy to multiply two prime numbers together, but very difficult to factor large primes.
+
+Of course, it’s gotten much more complex since this initial insight. But I do want to pause on that for a minute and say, the implication here is that it’s very easy to check someone’s work when they tell you they have the answer to this product and they provide you one of the factors or one of those initial prime numbers. You can very quickly do that math and say, yup, checks out. But it’s super hard for you to stumble onto the exact two initial numbers without knowing any other piece of information.
+
+This system is totally ingenious. I want to David Rosenthal-style here, rewind back to 1874. William Stanley Jevons wrote in the Principles of Science—keep in mind this is little under a hundred years before the personal computer was created. “Can the reader say what two numbers multiplied together will produce the number 8,616,469,799? I think it will be quite unlikely that anyone but myself will ever know.”
+
+He came on to the very first idea of the one-way function. Obviously, now a computer can very quickly, through brute force, figure out what the two—guess and check, guess and check, guess and check—factors of that number are. But you can imagine if that number were extremely large, then it would take modern computers a very long time. Or frankly, if you make them large enough, it makes it impossible, to our knowledge, for computers today to undo that problem. It requires just way, way, way too much work.
+
+If you make them bigger than that, then you can say, assuming computers get better at a certain rate, this problem is never undoable. There’s a scary thing that exists here which is at some point, we have not proven for sure that one-way functions exist. We’ve tried to undo them a bunch of different ways and mathematicians everywhere have tried to prove this problem.
+
+It’s a scary thing where we rely on this for public/private key encryption, encryption of all kinds, hashing. Everything in Bitcoin is based on anything with any password that you log into anywhere is based on this. Your email is based on it. We’re pretty sure that you can’t [...] from the other direction in a computationally efficient way, but we’re not provably sure.
+
+David: Yeah, right. When we were saying a minute ago that you would have to put all the computing power that’s gone into Bitcoin back into trying to forge it, that would not be the case if you had a way to break this encryption.
+
+Ben: If you, basically, invented a novel algorithm that mathematically could undo that work just as officially as it was done instead of the horribly inefficient way that we know how to do it now, which is basically brute force.
+
+David: But the point is, yeah, that would break Bitcoin. That would also break all security. You could log in to any account anywhere. So it would break the traditional system too.
+
+Ben: Absolutely. One other little aside—which I think is a fun place to put it here—is this notion of public-key encryption, which is advancing further on this idea of using one-way functions. Which is the thing we were talking about earlier where I can broadcast my public key so anybody can send something to me, but only I have the private key. I am the only person who can either decrypt the message, send it to someone else, or however you decide to leverage that.
+
+This concept is actually born out of that 1874 discovery of prime factorization. Pretty amazingly, two different groups of people took this idea and turned it into this public/private key discovery right around the same time—1973 in Britain—but they kept it a secret because they wanted to use it for defense because it’s freaking brilliant that you have the notion of transmitting messages in a more secure way on the battlefield. The very same idea was discovered within the same time and ultimately was publicly announced in 1977—now known as RSA encryption.
+
+It’s crazy to me that it’s like physics or calculus where private/public key encryption was dually discovered in the same decade by different people who had no notion of each other. In fact, the first set of people was desperately trying to keep it a national security secret. It’s like the world was just ready for the discovery. Technology and modern math had advanced to the point where based on the same foundation, two different groups could independently make the same invention simultaneously, which is just really interesting.
+
+David: Totally. Okay, now we’ve got our math lessons done. We know how encryption works. We know private and public keys. We know why that’s better than the traditional financial system. Now we also know with blockchain why and how mining creates this scarcity and makes sure that transactions that are legitimate transactions are the only ones that can happen.
+
+What’s cool here is this basically turns into a regular Acquired episode now. Remember how we’re saying that as the system of mining grows, the more mining power that goes in, the more transactions that happen, it becomes a network economy, and then the overall value grows. It’s just like Facebook.
+
+Think back to the social network, which is going to come up in a second, that line of if you created Facebook, you’d have created Facebook. Anybody can create Facebook, anybody can create Twitter. Look at Parler. The question isn’t creating it, it’s getting critical massive usage. It’s valued based on network economies, we know how to value them—Metcalfe's law, which is the value of the economy is the square of the participating nodes within it.
+
+Now, it becomes a race because anybody could take the white paper and start their own coins, their own cryptocurrencies, their own Blockchains. JP Morgan could just go take this and implement it for all of their clients.
+
+Ben: In fact, many people tried. All these elite coins were forks of Bitcoin’s source code to my favorite little tweak on this and Dogecoin, and thousands and thousands of people have tried to create alternate cryptocurrencies with varying levels of success.
+
+David: Totally. Some of them are quite valuable. But having that early lead, then growing the network, and getting use cases for it just like Facebook on college campuses, that’s what starts the snowball rolling. And then the bigger it gets, the less and less likely it is that anybody’s going to catch up.
+
+In January 2009, Satoshi booted up the system. Essentially, he codes it up, he creates version 0.1.
+
+Ben: Which is amazing, by the way. You’ve got not only this research-y looking white paper that was published, which several other people published competing ideas up to this point. Hashcash was one of them. That wasn't maybe quite as elegant but had some of the same component parts. But Satoshi Nakamoto—pseudonymous or not—not only publishes paper but then, of course, writes the first actual working implementation and code.
+
+David: Hashcash is interesting, this is an aside, but it’s probably the thing that was closest to Bitcoin before Bitcoin. But it wasn’t designed as money. It was designed as an anti-spam system for email.
+
+Ben: This is freaking brilliant. This proof of work concept that we talked about earlier, where it’s extremely difficult to do the math in one direction but very easy to check that the math was done was basically applied as a spam filter. You said hey, you had to do this much computing work in order to be able to email me. I can quickly check if you did that work, but it’s going to be really expensive if you want to [...] my email and spam the crap out of me because I’ll just reject it if the math is wrong on the check.
+
+David: Beginning of January 2009, Satoshi boots up the system—literally bootstraps it. He mines the first block—the Genesis block—he/they/she gets their reward of 50 Bitcoins. And then he starts recruiting an open-source community of researchers to work on the product, work on the code, build a system, create mining nodes. This all starts happening. A couple of days later, Nakamoto sends the first Bitcoin transaction to Hal Finney, who was a researcher who he had recruited—a crypto researcher—into working on the project.
+
+Ben: And is this on that cypherfunk’s email list?
+
+David: Yes. Tragically, I think he died of Lou Gehrig's disease a few years ago. I think it was all on the same email list that he sent the white paper out to. He sends the first actual transaction out there, it gets mined on Satoshi’s mining rig. For the next year, that’s how things go. Until May 22, 2010, the infamous pizza day. One of the researchers working on the project, a Florida programmer named Laszlo Hanyecz offered up an idea to see if these transactions can actually have value in the real world. He says he will transfer 10,000 Bitcoins in exchange for anybody out there on the mailing list who wants to buy him a pizza.
+
+Ben: I like this. So programmery.
+
+David: So great. Somebody in England (of all places) all the way across the Atlantic Ocean sees this and he’s like, I’ll do that. I’ll take 10,000 Bitcoins. This person couldn’t get their name. They call up the local Papa John’s near Laszlo, they order two pizzas using a credit card, have them sent and delivered to Laszlo, and Laszlo then sends 10,000 Bitcoins over in exchange for this. This is the first real-world transaction with Bitcoin.
+
+Ben: I think this approximately values Bitcoin at 25¢ per Bitcoin.
+
+David: Yeah. I think that’s if you assume $20 for the pizza.
+
+Ben: It’s also funny to think about. Sure, yeah, I’ll order you a pizza. That saves me 20 blocks that I don’t have to mine. Yeah, this is valuable. It’s taking me forever to mine these blocks. Great.
+
+David: Amazing. Papa John’s, that’s the first. Shaq is on their board of directors. He should be proud. Shortly after that is when Nakamoto disappears off the internet. Stops contributing to the projects, he transfers control of the open-source repositories to some of the other developers on the project. He basically washes his hands and says, I’m done. Except at this point, he has somewhere between 600,000 and 1 million Bitcoins that he’s mined as the first miner on the system.
+
+Ben: He has a 1 million of the 4 or 5 million that existed at that point, 21 million that will exist total. This is a huge amount of Bitcoin in the world.
+
+David: Yeah, which nobody thinks twice about at the moment. They’re like oh, okay, I guess he moved on. He actually communicates. Somebody asks him what’s going on and he says in an email message, I’ve moved on to other projects. But there was never any personally identifiable information out there about this guy, group, girl, or people.
+
+Ben: What Satoshi did is quite remarkable in being untraceable. Most of the time, these people slip up in some capacity. Their personal account is the first one to follow their account. If their emails are ever leaked, they made a communication, their backup email is their personal email, or they did a two-factor auth from their phone number. There are all kinds of ways that you discover later, yup, turns out, this really was this person. The first time they were just with the domain at the name, they did it with their email address.
+
+Satoshi did none of these things. To this day, it could be 1 of 10 people who people think it is or could be none of those people. We have no idea.
+
+David: I think this is also one of the reasons why people really believed it was a group of people. Because then, if it’s a group of people, then there’s obviously no way that they would slip up and expose personal information.
+
+Ben: The paper is also written in we. Whether that’s the royal we, I don’t know. But they keep saying we propose the following solution.
+
+David: He disappears. Interest keeps growing though and some transactions happen mostly between the people that are mining the currency. In early 2010, a forum user on bitcointalk.org named SmokedTooMuch offered to auction 10,000 Bitcoins for $50. It was like $25 for the Papa John’s, twice the amount of money wants a 2X return. Nobody takes him up on it though. In April, he declared the auction over. He keeps the 10,000 Bitcoins, I guess. Nobody gets them. Probably pretty good for him.
+
+Interest does keep growing though. People do start tracking roughly the exchange rate between the US dollar and Bitcoin. It rose up by the beginning of 2011 to 30¢ per Bitcoin by whatever metrics people are using at this point in time.
+
+Ben: Which is already 120X return on the Papa John’s deal.
+
+David: No, even more than that because the Papa John’s was a fraction of a cent, right?
+
+Ben: And this is what now, 30¢?
+
+David: Thirty cents.
+
+Ben: Yeah, 120X. When I said earlier, this was a 3000X, it’s crazy to think about what a gigantic multiple of that was so early. It’s like if you buy a penny stock that actually makes it into dollar territory, you had this unbelievable return. It’s that.
+
+David: Yup, it’s that. And then it keeps going. By the end of 2011, there’s a pretty robust market for exchanging dollars into Bitcoin, which we’re going to talk about in one sec. Bitcoins are going or $5.27 per Bitcoin, which is crazy. Who’s going to be using it? Who wants to be exchanging dollars in Bitcoin all the time?
+
+Ben: That’s a $52,000 pizza at that point.
+
+David: Yeah. That’s a lot of dough. It turns out that in February of this year, in 2011, a little service calling itself the Silk Road launched. This was the first killer app for Bitcoin.
+
+Ben: Yeah. It’s worth pointing out there that if one of the primary value propositions of your product is it’s like money, but you don’t have to put your name on the account. You’re going to attract some people who are using it who don’t want to put their name on an account and otherwise would have to in any other system.
+
+David: This is just an amazing story. This is actually when I first started hearing about Bitcoin was I started reading the headlines about the Silk Road and what was going on. I was like, whoa, that’s crazy. But this Bitcoin thing is interesting underneath it.
+
+In February 2011, somebody calling themselves the Dread Pirate Roberts—named after the character in The Princess Bride movie, which is just amazing—launched an online black market and the first modern darknet market on Tor. Which is an encrypted internet then you need an encrypted browser to browse. This thing is basically eBay for illegal stuff. It’s eBay for anything. The biggest items that are transacted on it are not beanie babies, it’s drugs.
+
+Ben: Right. When you’re using a browser where the web history is not saved, where it bounces through a bunch of proxy servers, all the traffic is encrypted, and now finally you have a way that you can pay for stuff that doesn’t ever get linked back to a financial institution that is associated with your name. It couldn’t be the more perfect cocktail for selling drugs on the internet.
+
+David: Totally. What’s amazing is it’s exactly like eBay. The way this worked was people would pay for the goods—the drugs that they were buying—with Bitcoin, just like PayPal. And then the sellers would put the drugs in the mail like the US Post Office. Because you can’t search mail. It’s illegal. It’s mail fraud. It’s literally just like eBay. This is exactly how this is working. It’s eBay for drugs.
+
+Ben: I just never really thought about how would you get it mailed to you or how would you get the goods.
+
+David: Most of these people aren’t in the same city. It’s happening all over the world. It was actually kind of crazy. This character, Dread Pirate Roberts, wrote that he wanted, “Grow into a force to be reckoned with that can challenge the powers that be and at last give people the option to choose freedom over tyranny.” It’s kind of amazing.
+
+There was a club section on the website, the book club still exists. It’s like part of a message board now. I think eventually they did shift to an eBay style business model, like a traditional marketplace taking a cut of every transaction. But at the beginning, I think they didn’t want to get involved in the transactions themselves.
+
+Ben: That’ll legally protect you. As long as you’re not taking [...].
+
+David: Yeah, for sure. It’s all good. We’re just a platform. We don’t know what happens on the platform, we’re just a platform. Their first business model was you actually had to pay to create a seller account. You pay it in Bitcoin to create an account that you could then sell whatever it is that you wanted to sell on Silk Road. Amazing. This operates for 2 ½ years, starting in February 2011.
+
+Ben: By the way, there was a federal case opened almost immediately. I know the Feds were following two years putting the case together. Observing everything that’s going on.
+
+David: Totally. I think it was Chuck Schumer—there’s a great story. He was shown this on a computer, totally flipped out. The government was like, we need the FBI to crack down it—of course. During this time, over 1.2 million transactions happened on Silk Road.
+
+If you’re trying to bootstrap up the Bitcoin network of the killer use case, this is looking at attractive freshmen of the opposite sex on campus for Facebook. This is the way to get people using this.
+
+Ben: Right. It’s like the pseudo nefarious catnip. Here is an amazing news case that appeals to people’s vices for this new medium that has been invented.
+
+David: Yup. Just like any new medium technology, there’s no regulation yet. Over a million transactions, almost 150,000 unique buyers, and almost 4000 unique sellers used the platform over this period of time. They transact almost 10,000,000 Bitcoins, which I don’t know how many Bitcoins were in circulation at that time. But let’s estimate 2–3, 4 million maybe. Several times over the total number of Bitcoins in circulation get transacted in the Silk Road.
+
+Ben: Knowing what we now know about how the Bitcoin network works, the Silk Road can be largely credited with getting it over the hump to the level of transactions and the level of participants in the network where it’s now a self-fulfilling prophecy of integrity and certainty of the network.
+
+David: 100%.
+
+Ben: It’s funny that I use the word integrity. Depending on what moral authority you want to claim, the acts of least integrity guaranteed the future integrity of this financial system.
+
+David: Incredible. You can’t make this stuff up. Finally, in October 2013, FBI agents conducted a sting raid. They arrest a man named Ross Ulbricht at the Glen Park Library in San Francisco. This is like half a mile from my house. It’s like right down the street. I drive by it all the time. Glen Park is this beautiful little neighborhood in San Francisco. A total hidden gem, nobody knows about it. It’s a very sleepy, very neighborhoody feel, and the library is this small little branch right next to the grocery store there.
+
+Ross is hanging out, working out in the library in Glen Park. Three FBI agents conduct a sting raid. Two of them pretend to be a romantic couple that is having an argument and they have a loud argument to distract him in the library so that he looks up away from his computer. And then the other one comes and grabs the computer so that he can’t lock it while they’re arguing. Of course, it was suspected and then proved to be true that Ross was Dread Pirate Roberts.
+
+Ben: Wow. And when he was convicted, he tried to have someone killed, right?
+
+David: Yeah. That’s the allegation. He was never convicted of this. But part of the allegations of the government brought against him was that—he’s an interesting character. He grew up in Austin, Texas, and this dude was an Eagle Scout in high school.
+
+Ben: No way.
+
+David: Yeah. Quite the reversal from Eagle Scout to—I don't want to say drug lord because he was just operating the platform, but he had quite the journey, let say. He wasn’t convicted on attempted murder charges, but gotten more and more paranoid as he was operating this site with the pseudonym and thought that people were out to get him, which obviously, they were. The FBI agents at least.
+
+The accusation was that he had tried to pay—I don’t know if it was through Silk Road or through other darknet sites—to have people killed who he thought were after him. Nobody was actually killed, none of this actually happened, and he wasn’t convicted. But he was convicted of seven charges related to money laundering, computer hacking, conspiracy to traffic narcotics, et cetera.
+
+Ben: He’s in jail for life, right?
+
+David: Yeah. He was sentenced by the US Federal Court in Manhattan to life imprisonment without the possibility of parole. I think multiple life sentences. Kind of crazy. There was actually a talk of Trump wanting to pardon him or some crazy [...]. He’s in jail.
+
+Ben: He’s in there. He doesn’t give interviews either. He’s very tight-lipped. A lot of journalists obviously have tried to reach out and get his side of the story, but it’s not happening.
+
+David: Yeah. Silk Road itself was creating more interest in Bitcoin. This crazy media story is creating more interest in Bitcoin. The FBI, as part of this raid—remember, they got his computer—seized all of his Bitcoins. The US Government now has 144,000 Bitcoins that they’ve seized from Ross and from the Silk Road, which at the time wasn’t worth that much money.
+
+Ben: No, but now it’s 4.3 billion.
+
+David: It’s a lot of money. The next year—I had forgotten about this until doing the research, this is amazing—they hold an auction, an online auction. These US marshals, they do a raid, they get drug dealers’ Lamborghinis and stuff, and they auction them off. They do the same thing with Bitcoin online. They auction about 30,000 of the 144,000 of the Bitcoin online and Tim Draper, the venture capitalist, founder of DFJ.
+
+Ben: The Bitcoin Tie Guy
+
+David: The Bitcoin Tie Guy, he buys the Bitcoin, and it’s all a publicity stunt. But he paid $17 million for 30,000 Bitcoin. I hope he held on to those because he would be doing probably better than his entire venture career on that at this point. Amazing.
+
+Fun little coda on that. Actually, in November of 2020, two months ago—I don't think it was part of the 144,000 bitcoin—about 70,000 bitcoin that was known to have been associated with Silk Road. Part of Silk Road’s Bitcoin that people didn't know where they were, they transacted on the Blockchain.
+
+People saw this transaction happen, they’re like, whoa, what happened? It was about $1 billion at the prices, a couple of months ago—this 70,000 bitcoin. It turns out, what the transaction was—they haven't identified who or the circumstances, but the FBI had found and called it Individual X when they came forward and explained what happened. This person had hacked Ross in the Silk Road before all this went down and stolen the 70,000 bitcoins from Ross. Then the FBI tracked him down, and then they were transferring those Bitcoins to federal custody.
+
+Ben: Interesting.
+
+David: Isn’t that amazing?
+
+Ben: The person committed a different crime hacking Ross, and the FBI was busting the crime of hacking.
+
+David: Yes, the crime against the criminal.
+
+Ben: It's worth contextualizing a little bit what's happening here when someone gets hacked or when Bitcoin gets lost because those are two different things.
+
+David: It's not the fault of Bitcoin when that happens.
+
+Ben: Sort of. It’s the fault of Bitcoin for having a wildly obscure system that makes this whole thing tick. But is it the pilot's fault when it's hard to fly a complicated airplane? That's the question here.
+
+Of course, you can hack into Ross’s computer, you can get his private key, and then you can use his private key to authorize sending the $20 billion worth of Bitcoin over to your account. That is a very different thing than what has happened for something like 20% of the entire Bitcoin supply, which when you look through the ledger through the entire blockchain, has not transacted in a really long time—presumed to be lost.
+
+What lost means is the person who was most recently transferred to has lost access to the private key, which is of course, an unguessable crazy long number or letter combination that no one's ever going to be able to guess. It's not like you can click a forgot your password button. For those people, if you lose your private key—I suppose you still own the Bitcoin, but who cares because you can't ever do anything with it.
+
+David: When you lose your email, password, or whatnot, there is a centralized provider—Gmail or whoever you're using—they know your email password. You can go through some hoops with them to get it, but there is no centralized Bitcoin provider so you better not lose your password.
+
+Ben: Decentralization is a double-edged sword for sure. There's one other number that's interesting to note here. Satoshi, it is currently believed that he ended up mining about 1 1/2 million bitcoin of the eventual 21 million. A huge amount is owned by whoever this Satoshi person or group of people are. That's about $50 billion worth of Bitcoin.
+
+You've got 20% of Bitcoin lost. You've got maybe 7%, 8% that Satoshi—whoever Satoshi is—owns. There's all these Bitcoin that are in areas that aren't transacting, people holding it there for the long-term. There are only, even today, 3 or 4 million bitcoin that are actually trading hands and available in the supply-demand equation to set the price.
+
+David: Even just all of these Bitcoins associated with Silk Road that we're talking about, that's 1%- 2% of Bitcoins out there, right there. These weren't transactions on Silk Road. This was Silk Road’s Bitcoins.
+
+Ben: Right. The takeaway here is a lot of the big chunks of Bitcoin are owned by people who were using Bitcoin very early when you could mine huge blocks and it didn't take that much compute to do so.
+
+David: Silk Road by 2013 is, it's the end of it. But while all this was going on, from 2011-2013 as Silk Road was growing, all these people who were using it had to have a way to get Bitcoin. They weren't just going to email the listservs on bitcointalk.org and be like, hey, I want to buy some bitcoins so I can buy some drugs. There's got to be an easier way for them to buy-in to the system, so to speak. The way to do that is through exchanges. Just like any kind of currency exchange as you said, this has been part of financial institutions forever.
+
+Ben: You need somebody to stand up to the store that's going to accept your dollars and hand you Bitcoin in exchange. That store is going to be on the internet, but someone's got to operate it.
+
+David: Exactly. For almost all of this period of time, there was really only one viable exchange on the internet, and it was an organization called Mt. Gox. That sounds like a mountain, it sounds like Fort Knox. Mt. Gox is a trustworthy, secure organization that's going to store your Bitcoin and you're going to be able to exchange and buy it, right? Well, it had an interesting history of its own, shall we say. What is Mt. Gox?
+
+We go all the way back to 2006 when a developer named Jed McCaleb—
+
+Ben: In Japan, right?
+
+David: No, in the US. He was a big fan—as am I, as are many people—of the then going online but for physical card trading game, Magic: The Gathering. He thought, gosh, these magic cards, they’re super cool. Lots of people love playing. You can buy them on eBay and whatnot. but later there would be a Goat and Reverb. There should be a vertical, specific website on the internet for going, buying, and selling Magic cards. Great, I'm just going to code that up. Why don't we call it Magic: The Gathering Online Exchange, Mt. Gox.
+
+This was created by Jed in 2006. I don't know if he was not very good at distribution or whatnot. Clearly, there's a demand for this. Lots of people are trying to build this now for Magic cards, Pokémon cards, and other cards. But for whatever reason, Mt. Gox—in its initial iteration—didn't quite take off.
+
+He headed up for about 3 months. Nobody really used it. He abandoned the site. Now, we mentioned his name is Jed McCaleb. He’s a programmer. He's not just any programmer. This is nuts. Do you know who he is, Ben?
+
+Ben: No, I don’t.
+
+David: Today, he is the co-founder and CTO of Stellar, which is a really interesting crypto project organization out there. I think it's actually a nonprofit doing cross border remittances. It's backed by Stripe. Stripe has invested in it. Prior to Stellar, but well after Mt. Gox, he founded Ripple, and he was the founder and the CTO of Ripple. Obviously, of course, another cryptocurrency with its own story behind it that we’ll have to tell someday.
+
+Ben: How—after the incredible tragedy that we're about to get into of Mt. Gox—was he credible enough to then lead two other cryptocurrencies startups?
+
+David: Really credible, big cryptocurrency startups. Because he wasn't actually involved in Mt. Gox through everything we’re about to talk about. Here's what happened.
+
+He abandoned the Magic thing, but he still had the website. And then super early on crypto land—remember, he does all these crypto projects. I don't know if he was on the original email list—he hears about it. In July 2010, right after Pizza Day, he got involved and he realized the need for this exchange for people to come in and be able to buy Bitcoin. He says, oh cool, I can code that up. I know how to do this. He's got the mtgox.com website lying around. He’s just like, oh, great, rather than registering a new domain name, I'm going to use that.
+
+Ben: In my head, I had this notion that people were listing Bitcoin in the same way that they should have been listing magic characters. He just repurposed the domain.
+
+David: It's like, oh, you could buy a Dual Land or you could buy a Satoshi. Amazing. No, it was repurposed into just a Bitcoin exchange.
+
+Ben: Help me understand. At this point in history, if you're going to be doling out Bitcoin in exchange for dollars, you have to get your Bitcoin from somewhere. Are they mining in order to create the supply that they're selling out to people who are depositing their dollars?
+
+David: That's a good question. I assume so, but I don't really know. I bet that is, Jed quickly realizes this is going to be a major undertaking to do this probably for that very reason, let alone operating the exchange, making sure all these transactions happen, taking custody, doing them well.
+
+After just a few months, he runs it for about eight months himself, and then in March of 2011—this is where Japan comes in—he sells it. He's just running it. He decides you know what, I'm going to sell the whole thing. He has an interested buyer, a guy named Mark Karpeles who is a French programmer living in Japan at the time, a super interesting character. He makes an offer to buy Mt. Gox from McCaleb, which he did in March of 2011.
+
+At the time, McCaleb makes a statement. He says, “To really make Mt. Gox what it has the potential to be,” which is huge—this is Coinbase, Square Crypto, and Robinhood, everything before that. “Would require more time than I have right now. So I've decided to pass the torch to someone better able to take the site to the next level.” Unfortunately, that was not Mark.
+
+After a couple of months, in June 2011, after Mark took over the site, the first security breach happened at Mt. Gox. Bitcoins were stolen and lost. In October 2011, they sent 2500 bitcoins to the wrong addresses. Again, to the point of if it ends up in the wrong place and you don't have the private keys, they're gone forever. Specter, unfortunately, has things to come here with Mt. Gox. Twenty-five hundred bitcoins lost forever. But there are no other exchanges out there.
+
+Anybody who wants to come in, anybody who wants to transact on Silk Road just to be involved in any way as part of the ecosystem, they got to go to Mt. Gox. They handle—for the next year and a half—about 70% of all transactions in and out of Bitcoin that happened on the internet.
+
+Ben: That's right, it was so dominant. That even held me back from buying Bitcoin in those days. I'm hearing people talk about it. I have friends texting me about it. I remember going to Mt. Gox, and being like I just don't know.
+
+David: This is super shady, not to mention you the Silk Road and all this out there definitely held Bitcoin back from becoming mainstream for at least a year.
+
+Ben: It's so funny the whole crossing-the-chasm framework. In some ways, I am an early adopter, but I'm not going to adopt something that is only being used in my perception of illicit drug use on the dark web. It took until Coinbase came around. 2014 is when I started getting more interested in it, but it had to be at least that mainstream.
+
+David: Yup, same here. I started hearing about it with Silk Road, Mt. Gox, and everything going on. But Coinbase was when I did my first transactions.
+
+By April 2013, a few months before the sting operations happened and Silk Road went down, Mt. Gox finally starts its death spiral. They crash at a certain point because of the volume that is happening on the system in April. It's completely overwhelmed. They suspended trading. The price of Bitcoin crashed 50% because they're doing 70% of the market. It’ll be like if the New York Stock Exchange just went offline. The price crashes, a bunch of lawsuits started that they get hit with.
+
+Then in June 2013, Mt. Gox stops the ability to withdraw in US dollars. You can still withdraw in other currencies, but clearly, things are not well here, not looking good. Then in February 2014, they suspended withdrawals altogether. You can’t take money out of the system at all from Mt. Gox and they file for bankruptcy.
+
+Ben: If you have your own hardware wallet or something, if you knew another Bitcoin address, could you transfer?
+
+David: I guess at various points along the way, but eventually, you can't even do that. Ultimately, 750,000 client bitcoins—bitcoins that people were holding in Mt. Gox—got permanently lost. Private keys are lost. They're gone, almost a million. Then another 100,000 that was owned by Mt. Gox itself. That's 7% at the time of all the bitcoins in circulation just blown out of the sky when Mt Gox goes under.
+
+Ben: Just in client dollars, that's $22.5 billion of bitcoin today. They exist, but assuming that those people didn't download their private keys and they just trusted Mt. Gox to say, you keep my private key or maybe they couldn't even download their private keys. But basically, if you know the private key, you're not sending it anywhere.
+
+David: Yup, gone. Fortunately though, by the time this starts to happen and Mt. Gox enters its mid-2013 to the beginning of the 2014 death spiral, other people and other business-minded people had gotten turned on to Bitcoin and became interested in the system that they were like, holy crap, we need better exchanges here. Let's go build them.
+
+In many ways now, the most well-known one of these is of course Coinbase that we talked about. In June 2012, two co-founders, former Airbnb engineer Brian Armstrong and Goldman Sachs trader Fred Ehrsam. They're like, we need to build an exchange, and not just an exchange to compete with Mt. Gox. We need to build a legitimate exchange that people are going to trust to use, that we're going to work with regulators, that we're going to make sure that when people cash out of Bitcoin, they pay their taxes—do all these things to build this into a real functioning system.
+
+Ben: Importantly, not just an exchange. It's an exchange and cloud wallet.
+
+David: Exactly.
+
+Ben: This is the innovation that will make some people—who are true believers in Bitcoin, who are part of the initial movement—skin crawl because it is ruining decentralization. But what they're basically doing with the cloud wallet is saying, look, you're going to buy your bitcoin from us. You're not going to take your own custody of it. You don't want to be in the business of having Bitcoin on your hard drive secured by your own public-private key pair that you manage, be responsible for backing up that drive somewhere, but making sure you don't make too many copies of your private key. You want to be responsible for all that.
+
+What you should do is just the same way you manage any other username and password. You let us maintain your public-private key pair. Effectively, it lives in our cloud, on our servers, and you log in with a username and password. You do 2FA and all the stuff that you trust, but we have custody of your money. It’s like a bank.
+
+David: Maybe more like a bank or like a brokerage firm like Charles Schwab. You don't hold the stock certificates that you have in Schwab, Vanguard, or whatever. They do. Then you don't have to deal with the complexity.
+
+Ben: It's a little compromise, but it makes it way more accessible to way more people.
+
+David: Obviously, if you're a hedge fund, you're not going to use Schwab. You're going to do all that yourself. If you're a big player in crypto, whether you're an institution or otherwise, you're going to have your own wallets. You're going to do it yourself. You're going to print out your private keys. You're going to cut them up and then store pieces of those keys in safe-deposit boxes all over the world. But the average user, you and me, we're not going to do that.
+
+Ben: Not to mention that it's a bearer asset. You don't want to keep it on you. I don't hold a lot of bitcoin, but I could imagine, if I did, I wouldn't want to be broadcasting like, yep, but I've got it right here on my computer with me. It's something where you want the asset to live at an arm's length from you, personally.
+
+David: This is how the Feds seized all the Bitcoin from DPR when they raided Silk Road. It was just there on his computer.
+
+Ben: It makes sense. It's effectively like walking around with millions of dollars in cash lining your jacket pockets. You want to keep that somewhere else.
+
+David: Totally, and not just under your mattress. Coinbase does YC, summer of 2012. They raised a seed from Initialized and angels right afterward. Then they raised an A from Union Square Ventures, then they raised a B from Andreessen, and they started building all this infrastructure making it secure. Now they're huge. This is great for the ecosystem.
+
+The other really interesting story. Coinbase has Coinbase Pro now and institutions use it too, but it makes it retail-accessible just like Schwab, just like Vanguard, et cetera, or a bank.
+
+Ben: Robinhood-ification of crypto.
+
+David: Exactly. Of course, now you can do trade crypto in Robinhood itself too and in Square. Coinbase is attacking the retail side (if you will) of people interested in crypto. There is an even bigger prize out there though that people start to realize, which is getting the retail customers, that’s great. But what if you can get institutions?
+
+As this becomes an asset class, you're going to start to have hedge funds, endowments, company balance sheets themselves. Large pools of capital are going to be interested in also playing in this ecosystem. What kind of infrastructure do we need to make that happen? That looks actually pretty different than just retail infrastructure. Here is where the story takes another just incredible turn.
+
+Ben: I don't know where you're going with this.
+
+David: Remember I said the social network would come back into play here?
+
+Ben: Oh yes, I do.
+
+David: The Winklevoss twins. It's been so fun to read about this and I've watched a few videos with them. My opinion has completely changed from doing this research. Of course, people probably know the story of the Winklevoss as part of the origin of Facebook and The Social Network. They are two twins who were a few years ahead of Mark Zuckerberg at Harvard. They had the idea for what became Facebook and hired Mark to be a developer for them to help build it.
+
+Then allegedly, Mark had said, hey, this is actually a really good idea. I'm just going to do it myself. There was a big lawsuit about this. They sued Mark in 2004. It was eventually settled in 2008 for a $65 million settlement payment from Mark.
+
+Ben: That's a nice down payment on some Bitcoin.
+
+David: Here's where the story gets interesting. At the time, everybody thought—this is crazy, it's the line from the social network? If you had invented Facebook, you would have invented Facebook. Ideas are cheap. Execution is everything. These guys are crazy. They don't know what they're talking about. Maybe that's true, but these guys are also smart.
+
+When the settlement happened, $20 million of the settlement went to legal fees. They got $45 million before taxes and everybody is like, this is great. You're going to be set up for life, et cetera. They were rowers. They participated in the 2012 Olympics. You guys can just go be athletes. They said, no, we don't want the money in cash. We're going to take the money in Facebook stock.
+
+Ben: Oh, I didn't realize that.
+
+David: They took all $45 million in 2008 Facebook stock. There was a great quote in this. Cameron says in a New York Times article, “The lawyers thought we were crazy for taking the money in Facebook stock. We thought they were crazy for taking their $20 million in cash.” The stock that they get by the time Facebook goes public in 2012 is worth around $300 million. In the interim in the previous four years, they moved to the UK because the 2012 Olympics were in London. They came back in 2012. Facebook's gone public. They’re worth $300 million. The story is that they're on vacation in Spain after the Olympics, and they meet a guy there from the US who starts telling them about Bitcoin.
+
+Still early, Coinbase was just going through YC at this point in time. Cameron and Tyler—as they start to learn about it and think about it—realized, holy crap, this is money with network effects. They go all-in on Bitcoin. They don't put the whole $300 million and that would have been the whole market cap of Bitcoin itself at the time. But they started buying Bitcoin in the summer of 2012 at about $10 a bitcoin. They end up accumulating well over 100,000 bitcoins that cost them under $10 million. It was 1% of all Bitcoin outstanding at the time. Totally incredible.
+
+They say, what if we build an exchange specifically for institutions like Coinbase to have retail? They start and fund an exchange called Gemini, which still exists today, with the whole target of being certified by regulators for institutions. They end up getting a license from New York State regulators that allows them to be a custodian for regulated asset managers, banks, that no other exchange at the time had. Then a few years later, in 2017, when the Chicago Board of Exchange launched Bitcoin futures on the CBOE—which was a huge moment, a big part of the run-up of Bitcoin in 2017—it was Gemini that was settling all the futures on the exchange.
+
+Ben: Crazy.
+
+David: Super interesting, Thank God that Coinbase, Gemini, there were others out there as well who saw, hey, the future is bright for Bitcoin if we can start to build some real institutions that work with regulators, that people can trust, and are going to be legal. Otherwise, everything is going to go down in flames with Mt. Gox. Through all this, Bitcoin as an asset keeps growing—with an insane amount of volatility, of course, which still continues to this day.
+
+Ben: Bubble after bubble after bubble and pop, pop, pop.
+
+David: Yup. But with each bubble, it keeps going higher, and then the new floor price resets higher. In 2012, the price started at $5.27 per bitcoin. By the end of the year, it's at $13.30. Then in 2013—this was the huge breakout year even despite Mt. Gox, Silk Road, and everything going down the tubes—started the year at just over $13 as we said. By the end of 2013, January 1, 2014, Bitcoin was at $770 per bitcoin exchange rate. That is some serious appreciation in just one year.
+
+Ben: Then even after that, then fell down to $200 or something.
+
+David: Yes. When Mt. Gox finally disappeared and those three-quarters of a million-plus bitcoins disappeared, that was a huge hit to the system. Price fell down to about $300. Then in 2015, mostly stayed in that $300, $400, or $500 range.
+
+By 2016 though, all this infrastructure was starting to come online. Coinbase has raised a lot of money. Lots of accounts being created. They were seeing very high trading and exchange volumes. Same with Gemini, same with other exchanges. By the end of 2016, the price hit $998 per bitcoin, just a hair under $1000 a bitcoin. Now, at the beginning of 2017, six years earlier, you could barely buy a pizza for 10,000 bitcoin?
+
+Ben: It's totally fascinating to think about. I keep referencing this 3 million X, the number that we've talked about. The initial 35,000X was in the first five years. Making it to $350 in 2015. In the five years since, it's only been in 85X. Compounding math is funny that way, where if you combine at that incredibly low-cost basis where they started at 1¢ or sub-1¢, a lot of that multiple happens in those early years well before it even hits $1000 a bitcoin.
+
+David: What's so cool is this is exactly how the venture capital markets work. It's the early-stage investments that you can generate those huge multiple returns. But you can't put that many dollars to work in the early-stage investment. Sequoia’s figured this out and so many other big firms. You put dollars to work early. You get huge multiples on those dollars, but then you keep putting dollars to work in subsequent rounds as companies grow, get proven more, and the TAM expands and the market for you to be able to put those dollars to work expands. It's not just that you want to get the 3,000,000X on your first dollars. You also want to get the 85X on a lot bigger base that you're putting in later.
+
+Ben: It's interesting. It's just especially interesting. As we'll get into the analysis later, we'll see how crazy this is. But it's strange comparing all these companies, all these corporate assets, to a monetary asset because it's not apples to apples in the way that we normally think about these types of investments. This is a currency. The idea is that it's eventually going to be just a way that we store and transfer value. It's just funny that everything we've talked about so far is about growing the value of each fraction of the Bitcoin network a bitcoin.
+
+David: But this is the moment where things kind of tip in 2017.
+
+Ben: Bitcoin mania begins.
+
+David: Holy crap. On January 1, 2017, we’re at $998 a share. People are like $1000 a bitcoin. There's some real money here. What does that attract? That attracts grifters. People had already launched other crypto projects over the previous six, seven years. Ethereum launched in 2015. There were others there. Of course, we referenced all the altcoins and parity coins.
+
+Ben: So much to say about Ethereum here, about DeFi, about a lot of the more modern takes using the Blockchain—we’re using cryptocurrency outside the scope of this episode, but obviously those things are interesting.
+
+David: We will definitely talk about those in the future. But in 2017, people realize, man, this is a money machine. In May—folks may know, folks may use a real company, real project—the Brave web browser, which is a privacy-by-default, non-tracking web browser. They launch instead of raising venture capital in a normal route. They do this thing that they call an initial coin offering, which is the same thing Ethereum did. Anytime you're starting a new Blockchain-based project, you have a launch just like Satoshi mined the first 50 bitcoins to bootstrap up the Bitcoin network.
+
+Brave sells the initial tokens. They marketed it, they have a white paper and all this stuff, and people go nuts. They raise $35 million from this ICO in 30 seconds.
+
+Ben: In fully non-dilutive capital?
+
+David: Fully non-dilutive capital. People start talking about things like this is the new way to raise money. This is the new way to start companies. They see themselves go gaga. They're like, oh, wow, we're just going to invest in ICO's from now on.
+
+Ben: It's like crowdfunding. You're raising money from your users, all the incentives are aligned because as it increases, it's going to increase with the value of the product, blah-blah-blah.
+
+David: It’s totally unregulated. Literally, everybody and their mother has ICO in 2017. It’s like the SPAC of 2017. DJ Khaled has an ICO. Paris Hilton has an ICO. Floyd Mayweather has an ICO. It’s unclear what any of these projects are.
+
+Ben: Because the rationale for creating your own coin is that you’re creating DApps, distributed applications. I'm creating a distributed application, it's going to have a network effect, and there's going to be a bunch of people that use it. Literally, the value of the pseudo-virtual currency that you use on the platform will increase in value with more people using the platform. In the abstract, it makes sense in the same way that any abstract bitcoin made sense. The difference is largely just in what actually then happened.
+
+David: Totally. And who was pumping up these things? Bitcoin starts the year at $1000. There are a lot of people out there who made a lot of money just holding or hodling.
+
+Ben: Is it a misspelling of hold, or is it hold on for dear life?
+
+David: People have said both. But the original, it was a guy on a forum who during one of the bubble crashes for Bitcoin price was encouraging everybody to hold and not sell. He just typed too fast and said hodl.
+
+Ben: It just becomes an Internet meme like boom goes the dynamite or any other.
+
+David: I haven't heard that in so long. It’s so good. A lot of people that have just made all this money seemingly overnight to themselves in Bitcoin. They're like, cool, these ICOs. Great. We’ll pump the money into the ICOs.
+
+By May, when the Brave ICO happens, the price of Bitcoin is doubled to $2000 by the prevailing exchange rates—USD. By September, it's $4000. By the next month, in October, it's $6000. By November, it's $10,000. And by December 18, 2017, we hit—what many then later over the coming two years would believe would be the all-time high—$19,783.06 per bitcoin. Unreal. Twenty thousand dollars per bitcoin.
+
+Ben: For the record, I was very much in the camp at that point. I was cashed out. I'm done with this mania. There are also ICO's, scammers, altcoins, who knows what's going on.
+
+David: So many scammers.
+
+Ben: I definitely was like this is totally inflated and the highest it will ever go. I definitively remember thinking that.
+
+David: I don't think I had taken a little money off the table during the run-up from, not that I had or have many bitcoins, but from my experimentations buying a few in the early days. I've taken some money off the table in the run-up, but then after the crash, which happens at the beginning of 2018. I was like, I don't know. I don't need the money, whatever. It's an option. Let's see what happens.
+
+Ben: You let it ride. Good for you.
+
+David: I let it ride. I hodled.
+
+Ben: Alright, catch us up. This January 2018, we see this run-up to near $20,000. It falls. Clearly, it has risen again. What's happened in the last couple of years?
+
+David: Over the course of 2018, it falls from $20,000 all the way down to under $4000. At the end of 2018, by January 2019, Bitcoin is trading at just over $3700, down 72% for all of 2018 and down 81% from the high in December 2017. But underneath all of that, as the tide went out, the hype cycle disappeared, and all of these scammers (thank God) disappeared and ICO's became (thank God) a thing of the past.
+
+Ben: Many of them were prosecuted for fraud.
+
+David: Yeah, many of them. The regulators got involved, of course. VC firms regained their sanity and started investing in normal companies, as well as normal companies doing things with crypto, Bitcoin, and Blockchain.
+
+Ben: Some actually into cryptocurrencies themselves, but often a little bit more mainstream than into the ICOs.
+
+David: In the background, the groundwork that Gemini, Coinbase, and others started laying, that kept getting built over 2018, 2019. In 2018, Square added the ability to buy, sell, trade, and hold as custodian crypto natively within the Square Cash app. Robinhood did the same within Robinhood in 2018 and then rolled that out by 2019 to their entire user base. You get to the summer of 2019 and Bitcoin, which again had financed a lot of this ICO boom from profits that people had made in Bitcoin but were totally unrelated. The prices recovered about $13,000 per bitcoin by summer 2019. Things continue roughly in that trajectory. Then we get to March 2020 and the world changes.
+
+Ben: All the people who have been screaming for the last five-plus years that this is an uncorrelated asset, and boy oh boy would it be nice to own some currency that's not fiat, that's not connected to a single government. If we have a black swan event that happens and the world that is falling apart, you don't want to be associated with any specific government. You want to have a currency that is uncontrolled, blah-blah-blah. Is there an opportunity to prove you are right?
+
+David: Yes. Here's what’s crazy. Obviously, COVID hits the broader world in March 2020. When there's that initial dip in the markets, panic selling, everybody thinks the crash is happening, and equity markets sell-off, actually crypto and Bitcoin sells off too. The price of bitcoin crashes. On March 13, 2020—remember, it had been trading around $13,000, $14,000 per bitcoin—it crashed down below $4000, which is crazy. It's the exact opposite of Ben, what you were saying, what you would think. I want to own Bitcoin when the world is falling apart.
+
+Ben: Dude, I remember watching that and looking at the S&P 500 overlaid with the price of bitcoin and I was like, huh? It's a pretty correlated asset class.
+
+David: Of course, now we know with hindsight what was actually going on was there was a liquidity run. People who were holding Bitcoin were also holding other things. They had obligations and then as all the markets crashed, they needed liquidity to be able to pay off other things. That's what triggered a lot of selling at that moment. But since, just like the equity markets, it recovers quickly and just starts taking off.
+
+Ben, like you're saying—the Fed and the US government in response to COVID—just starts printing money like crazy like it’s never been done in our country ever before—World War II or any other time. During 2020, literally 22% of all of the US dollars in circulation all around the world are created. The debt to GDP ratio of the US goes from somewhere 60%, 70% to 135% over the course of 2020. This is of course financing all the stimulus packages and all the spending that the government is doing without the revenue to back it up.
+
+Ben: Meanwhile, we're in a 0% rate environment. There are two things that are happening in order to do the economic stimulus. One, the government is using tax dollars to pump money back into the economy, paying people, implementing programs, and the PPP loan.
+
+David: Not tax dollars. They're creating dollars to do that.
+
+Ben: But they're doing both. It's tax dollar allocations and the Fed is printing more money. They’re putting dramatically more money into circulation. I spend a bunch of time trying to figure out what's the best way for me to understand this because I always feel like if I can understand it, then it's a pretty good proxy for everyone listening.
+
+My notion of it—and I'm sure this is not exactly right—is if you're a shareholder in a private company and you go raise more money, you take a bunch of dilution. Usually, 15% to 30% dilution because you're creating new shares for the shareholders. We're effectively saying, hey, everyone with dollars, you're going to take 20% dilution in 2020. You’re just going to have less purchasing power because there are more dollars in circulation right now so that there are more dollars to go around.
+
+David: And it takes a while for that to percolate through the system that you actually see 20% higher prices, but eventually, that will come home to roost.
+
+Ben: I don't think either David or I are smart enough macroeconomist-type people to be able to interpret we’re in a 0% rate environment, the government printed a bunch of money into the money supply, who we did away with the requirement that banks hold 10% of capital in reserve that they're loaning out. I don't think you or I should be here.
+
+David: No, we are maybe not smart enough, but we’re enough to feel. We certainly feel influenced by actions, the actions of many investors, and people all around the world—probably yours too, are the effects of this, which is interest rates go to zero. All the money that I was holding in my bank account, that anyone was holding in their bank accounts earning interest on, was already low and had been since 2008. Now it's zero. I was getting emails every two weeks from my bank being like, we cut your interest rate again.
+
+Ben: Exactly.
+
+David: What incentive does that create? That creates an incentive to just not hold cash or not hold bonds either. Anything that's traditionally, relatively conservative investments that as an individual or an institution you would hold and expect to get 3%, 4%, 5% return on, you're not getting you're getting it, you're getting zero. And inflation's happening, so you're getting less than zero. What does that mean? It’s like a balloon. You're squeezing one end, you're just going to push people to go invest in places where they can get a return. Where is that going to be? That's going to be equities and Bitcoin.
+
+Ben: Specifically tech equities and specifically, early-stage tech equities that people hope are going to look one day like Amazon. That's what’s happening in the equity markets and of course alternative assets like Bitcoin. You have the coupling of people—capital desperately seeking returns. There's more capital ever that's looking into and taking things like cryptocurrencies seriously. Also, people really buying the story of, tell me about the fundamentals of how the Bitcoin system works again. That actually does seem more and more reasonable. All these other people are into it. A lot of legit people have parked a lot of caps?
+
+There's more and more legitimization of the asset class happening, more infrastructure being built up, and in the environment that we're in. Which one could argue is starting to show the cracks of what happens in quantitative easing, what happens in zero interest rate environments, what happens in not having hard requirements about fractional reserve banking. You actually start to see the way that the Bitcoin system was designed to fix all of that. We can't increase the money supply. It is what it's going to be at $21 million. There is no Fed. There is no centralized place that you have to have trust in that they're going to effectively manage it.
+
+A lot of these ideas just become more appealing at the same time as there's more capital seeking more returns. It's this perfect storm of the conditions that created people rushing into cryptocurrencies and specifically Bitcoin.
+
+David: Specifically Bitcoin, but also specifically institutions this time. All the bubbles in the past, it was individuals, it was retail, maybe it was some venture firms, maybe it was the Winklevii who were buying Bitcoin. Now, enough infrastructure has been laid through exchange-traded funds which now exists like Grayscale through Bitcoin Futures, through custodians like Gemini and Coinbase Pro. If you're a hedge fund, if you're a bank, if you're an endowment, or if you're a company treasury, you actually maybe can access Bitcoin.
+
+In May of 2020, Paul Tudor Jones, the famous investor who runs a $22 billion, $23 billion hedge fund, goes on CNBC and says, I actually have between 1% and 2% of my funds, assets in Bitcoin. At a $22 billion fund, that's $200 million to $400 million worth of Bitcoin.
+
+Ben: Investor money too.
+
+David: Yeah, investor money. Not his money, it's fund money that is just coming to Bitcoin. In August of 2020 MicroStrategy, which is a publicly-traded investment firm, revealed that they have $250 million in Bitcoin. Not just that they've invested in Bitcoin, but they're classifying it as a treasury reserve asset on their balance sheet. Not like an equity speculative investment, no.
+
+Ben: Cash and cash equivalents.
+
+David: We’re classifying this as cash in our treasury. In August, Square—which of course has been part of the crypto and Bitcoin community for a long time—put about 1% of their cash and cash equivalents on their balance sheet, on their treasury into Bitcoin—about $50 million. They're the first operating company that is now saying we're going to have part of our cash in our treasury that we're going to hold in Bitcoin.
+
+Ben: Also, their rationale for why they did that and how they executed the trade is really well-documented. They wrote it up, we’ll link to it in our sources. It's worth reading that post. I think it's a PDF if anyone's interested.
+
+David: The last big announcement in November, Guggenheim, which is a very large asset manager. I think they have about $200-$300 billion in total across all of their vehicles. One of their funds, which is a $5 billion fund, registered with the SEC to be able to invest up to 10% of the funds or up to $500 million in Bitcoin via exchange-traded funds by doing that.
+
+What’s the net of this? Even just across those transactions which we mentioned, which are ones that are public, there's plenty more I'm sure that we don't even know about where managers haven't disclosed their holdings. You've got close to $1 billion of inflows flowing into this asset class.
+
+It's not a super thickly traded asset class. The market cap for all of Bitcoin—as were running up here—is in the…
+
+Ben: $650 billion.
+
+David: That's at today's prices, but as these transactions are happening, it was probably ranging from $100 billion-$300 billion.
+
+Ben: Right, and keep in mind, only $3 billion of the $21 billion coins ever will be. There's $21 million total. Something like $16 million has been mined so far, maybe a little bit more. Only $3 million of those are actually the ones that are traded. The rest are held long term, lost, or whatever.
+
+David: Exactly. Remember, the Silk Road coins, the Mt. Gox coins, the Satoshi Coins—there's a whole swath of millions of coins that are just gone. They can't trade. Then you've got all the coins like the people don't want to trade that they're holding like, I'm not going to sell those.
+
+Ben: Why would you use this thing as a currency right now when it's appreciating so much? You understand the hodler mindset, which we haven't talked about yet and I think we'll get into in analysis. You can't really spend your Bitcoin at any retailers. Of course, you can't because who is going to spend these things right now?
+
+David: What is the price? It's the intersection of supply and demand. You've got these huge new chunks of demand, blocks of demand sizes that have never been seen before in the asset class, $100 million, $200 million at a time that wants to come in and buy. You've got not a lot of supply willing to sell, of course, the price is going to go through the roof. That's what happens.
+
+Ben: Listeners, before we get to catch up all the way up to today, we want to thank Vouch, the official sponsor of the analysis of season eight. Vouch provides business insurance for top startups. I'd like to share my personal experience here. I initially reached out to the co-founder for coverage for Acquired the business, since one of the co-founders is a listener and member of the Acquired community.
+
+The experience was unbelievably good especially versus my previous experience getting insurance for various startups that I've either started or invested in. I'd like to tell you a little bit about what they do. They are the fastest experience in the industry. You can get next-day coverage. Their digital app takes 10 minutes.
+
+For those of you who have had to get insurance for your business before, you know this can be a multi-week, multi-month process. It’s really painful, lots of trading long PDFs over email back and forth. Vouch provides proprietary coverage that is engineered specifically for startups. They're backed by Munich RE, so you get the benefit of a great user experience in the product and the stability and backing of a large and very well-known insurance company.
+
+Their service is insanely good and you get expert guidance via Zoom, chat, call, or email to work with a licensed insurance advisor. They're backed by some of the best investors including Ribbit, YCombinator, Silicon Valley Bank, Index Ventures. Customers include Neighbor, Middesk, Popshop Live, and of course, Acquired. Acquired listeners, get an extra 5% off of coverage, and you can click the link in the show notes or go to vouch.us/acquired to learn more.
+
+David, as we catch up today, I want to point out there's one institutional firm, Paradigm, that is cofounded by (I think) Fred Ehrsam and Matt Huang. Matt, of course, is a former Sequoia partner. Fred of Coinbase cofounder, definitely the President.
+
+David: Yeah, he was Brian’s cofounder. The two of them co-founded it.
+
+Ben: Matt has made this really great point. If I could tell you to do things to follow up, one is obviously the Bitcoin white paper remarkably cogent. The other is actually reading Matt's piece about his summary of Bitcoin. It's at paradigm.xyz and sort of why we're doing what we're doing. Why do we think it's interesting? What the trade-offs are. Where it could go wrong. Where it could go right—really a cogent analysis.
+
+One of the things he points out is of course Bitcoin has these bubbles, but as David mentioned, every time they pop, it plateaus at a higher level than the previous bubble. Because Bitcoin requires this network effect to be valuable—it is a self-fulfilling prophecy in a lot of ways—it actually uses bubbles as a go-to-market strategy. Where every time there's a run-up, there's more and more legitimate players and more and more institutional capital that piles in, more infrastructures get built up.
+
+When the bubble pops and you have a lot of the late-coming speculators that of course lose money, what is left there is all that infrastructure and all that advancement that was made from the mania and the hype. It's just really interesting to see that it really is a go-to-market strategy.
+
+David: What's so interesting about it this time and unique—and we're already seeing this play out in how the price has risen, fallen, and then stabilized over the past couple of weeks—is in previous bubbles, it was mostly individuals who are doing this. Who are subjects of course to individual psychological behaviors in price crashes, lots of people are going to sell? Lots of people will hodl, but lots of people will sell too.
+
+This time the big chunks of demand are driving up the price, this is Square’s balance sheet. This is MicroStrategy holding this is a treasury reserve. They're not going to sell. They're investing purposefully as treasury and as diversification. The price crashes 50%, 70%, they're not going to sell. They're institutions. Part of the thinking here is that as we now shift into this new phase of Bitcoin where institutions are playing within it, there's going to be a lot more stability.
+
+What’s happened with the price over the last month or so? We went from $3700 in March during the COVID liquidity crash to by the end of November, Bitcoin surpasses that all-time high of December. It's $19,860 in November. By the end of December, by the end of 202, on New Year’s Eve, we're sitting at $29,000 for a Bitcoin, which is insane. Another $10,000 in a month. It doesn't stop.
+
+The first week in January, which was last week even though it feels like last month, it hits $40,000. Ultimately, the price goes all the way up to $42,000 per Bitcoin before coming back down again several days ago over the last weekend—even though it feels like a month ago—to a low of about $30,000. We could have another crash, we don't know, but this crash is still $10,000 above the previous high.
+
+Ben: It’s now trading right around $35,000.
+
+David: Right, which it has for the last several days. By crypto timelines at least, by Bitcoin timelines, it's stabilized super quickly at $34,000, $35,000 price. This is very different than the way these bubbles and crashes played out before.
+
+Ben: Who knows, by the time we release this episode, we could be at Bitcoin $15,000.
+
+David: Right, it could be at $3000, it could be at $100,000. We don't know. We may look stupid, but I do think it's really interesting that you have different motivations this time of large blocks of capital that are coming in.
+
+Ben: Yup, for sure. Okay, before we transition to analysis, there's a couple of today's stats that I think are just interesting. I continue to be interested in comparing Bitcoin to accompany, to a currency, to assets under management.
+
+This $35,000 a coin price implies a market cap of $650 billion. Let's contextualize that $650 billion. The total consolidated assets of JPMorgan Chase, the largest bank in the United States, is $3 trillion. That's about five times all the Bitcoin out there is at JPMorgan alone, from the people who bank with them, is five times bigger. It’s an interesting number to keep in mind. It's actually pretty interesting. You go to the Federal Reserve’s website and just look at what are all the settled accounts, not within each bank but at each bank. How much money does each bank in the US with a bank charter have on hand or under their custodian? Actually not on hand, specifically how much are they a custodian for?
+
+I think Bitcoin would be like the fifth or sixth largest institution on that list if it were a bank that was regulated by the Fed, which is interesting. It's also interesting just to compare it to the market cap of Apple is $2.2 trillion. Four times as big as Bitcoin is if you want to think about it like how valuable is it versus the most valuable company in the world.
+
+Another interesting number to think about, especially as later we will start thinking about what is the TAM for Bitcoin? What’s its total addressable opportunity, not necessarily for a coin individually but what could all of Bitcoin represent to the world at some point in total? Because we know it caps out at $21 million, you actually can do the math and be like what would the coin value be at that point?
+
+The total money supply of US dollars is about $20 trillion. David, as you mentioned, it was about $15 trillion in January 2020. It's gone up quite a bit recently. But again Bitcoin is about halfway to $1 trillion compared to the US money supply—over $20 trillion. Another interesting number to know is that the total money supply of all global currency is about $70 trillion, or was, I think it's gone up a little bit.
+
+It's interesting to think about if you're someone who believes that it's going to overtake all currencies, then you can look at that $70 billion number. If you think it's just going to be an asset that gets held like it's part of a portfolio. A lot of people are likening it to gold.
+
+David: Which is about $9 trillion?
+
+Ben: $9 trillion, but half of it actually is in jewelry. No one's going to have—actually, there is some bitcoin jewelry.
+
+David: Tell that to CoinDaddy.
+
+Ben: But it is interesting to look at that there's about $4.5 trillion of gold out there not used in jewelry. It could usurp that. It's kind of digital gold, which we’ll get into all this as we transition to analysis here, but interesting to understand the scale of it in today's world.
+
+David: Yeah. It's come a long way from the white paper. This is such an improbable journey, whitepaper to Papa John's to Silk Road to Magic: The Gathering to the Winklevoss twins to Guggenheim investing in it. This is all within 12 years.
+
+Ben: Yeah. It's an improbable story, but you needed all these different factions, all these different vested interests, all these different true believers versus opportunists to push it forward to where it is today. All right, power?
+
+David: Yeah, let's do it.
+
+Ben: Listeners, for anyone new to the show, this is a section that we put in based on one of our favorite books called 7 Powers, which is a study of how businesses can achieve persistent differential returns, or put another way to be more profitable than their closest competitor on a sustainable basis. What we mean by power here is what is the thing—normally of a business, in this case of a currency or a new money system—that basically allows them to outcompete their closest competitors and gives the business, for lack of a better word, power?
+
+David: Yup, and this is going to be so fun because I think they're a bunch that Bitcoin has—a whole bunch. The obvious one that we've been banging the drum on through the whole episode, and is probably the most powerful, is network economies, I think.
+
+Ben: In particular versus other cryptocurrencies. Ethereum is the only one that stands a chance, and it just kind of has a different use case that's really more around the smart contracts and compute that’s built into it. For sure, you can't start anything that looks like Bitcoin now and have any chance of beating it. In the same way that Facebook just outran any other consumer social network, consumer social entertainment type app, and then obviously very smart in acquiring those who did get scale. Bitcoin just leaped ahead at the beginning of this paradigm.
+
+David: I think what's cool is it even applies at the technical level too with this idea of the amount of computing power that has gone into maintaining and making robust the Bitcoin network over time is itself a compounding asset. The more power that goes in overtime, the harder it is to crack. There is no supercomputer that could conceivably ever be created that is going to—as long as the bitcoin economy like a miner keeps working, that is going to be able to go back and redo everything, and that lead just keeps getting wider and wider.
+
+Ben: Certainly not really old things end up in the Blockchain, but there's always the risk on the newer ones. Things that are only two or three blocks behind, unless there's a paradigm change. Unless quantum computing arrives and suddenly you have 10 million times more compute than we did in the past on a single core or something like that.
+
+David: Well, this is also where network economies come into play. Satoshi actually makes this point in the original white paper. Let's say that happens. As long as the network is big enough and robust enough at that point, the value of legitimate—keeping the system legitimate, say you already own Bitcoin.
+
+Ben: This is a great point.
+
+David: If you already own Bitcoin, then your incentivized interest is not to break the system. If you hack it, then people lose trust, and then the value of the Bitcoins that you already hold—which presumably if you're a miner, you've already been mining—they go down. Even if you could create more fake Bitcoins for yourself, you have this massive disincentive to do that as more people join the system.
+
+Ben: Yeah, that's a great point. The other thing that the system is designed to do is to provide enough incentive. Of course, they rebalance this over time but provide enough incentive to the miners that if they were to make a call between being a malicious actor and mining, they should make it worth your time to mind, to be white hat.
+
+If you had access to a quantum computer they would adjust the software such that it would make more sense for you to mine than it would to attack. Of course, the caveats abound here that David and I don't know jack about quantum computing except maybe it'll be a big leap forward in the amount of computing per square inch, per square watt, or whatever. Square watts [...], but per unit.
+
+Network economies, absolutely. One that I wanted to bring up that I think is interesting is it’s counter positioned but not against other cryptocurrencies. It's counter positioned versus the US dollar where the definition of counter positioning—of course with my editorial here—is doing something that incumbents basically can't.
+
+David: It would break their system.
+
+Ben: Yes. There is no better example than the US dollars. If the Fed was like, Bitcoin’s a really good idea, and they felt like that's the future, the Fed's centralized infrastructure and the US banking system—the notion of the Central Federal Reserve—is completely antithetical to everything that Bitcoin stands for. Our monetary supply and our entire banking system exist in a very intentionally coupled manner with our government. It's not like it would ever be in the US government's interest to be you're right, a decentralized thing would be the way to go because it removes so much of the power of the US government, frankly the US as a nation.
+
+David: Just like network economies, I think there's another level that counter positioning applies too, which isn't just the US dollar, it's at the financial system itself. We started the episode with the way banks work and the way credit card companies work. The way traditional financial institutions work is based on this bank account number, credit card number system. They can't go back, change that, and make it into a public-private key thing.
+
+Ben: I think they could.
+
+David: They could, but all those ACH—how are you going to coordinate every bank out there that talks every other bank to now all of a sudden have…
+
+Ben: Federal mandate in the same way that we moved to chip and pin. They could adopt a superior and more secure technology if there was enough of an incentive to do so, but they could not change their centralization versus decentralization strategy.
+
+To bring it to another mental model, the US government and other governments who have fiat currency have bundled the safety security and amount of normalcy or normality of the nation with money. When people say the US dollar is backed with the full faith of the US government, that is literally true. It is legal tender. At some point, if you're conducting business on a large scale and the government is like, can you accept US dollars please and you're like no, they do have an army.
+
+They are intertwined intentionally and it is strategic to be able to make it so that our economy runs on our government's currency. That's been a strategy that's worked really well for a long time. I don't think an existing government is the strongest nation in the world—it's literally the definition of counter positioning. They would cannibalize everything they've built by switching.
+
+David: That’s a good point. What I'm talking about is more like this would be hard for the traditional banking system to do, but it's not against their interest to do it. Whereas it’s actually against totally the US dollar’s interest to refashion itself like this.
+
+Ben: It's funny. In this vein, that dilution idea I was talking about earlier where I was comparing adding new money to the money supply to the dilution of your shares in a company, I'm pretty sure that the vast majority of US dollars are actually held outside the US by people that are using it as this is the way that the world denominates value. It is the—I can’t remember what the phrase is.
+
+David: The reserve currency, I think.
+
+Ben: Yeah. It's something like 70%, don't quote me on that, but more than half is held outside the US. When we do things like print more money, it actually hurts everyone else more than it hurts us. You can do that to a certain extent. Obviously, if you do it too much, you create a huge problem and then you create hyper-inflationary and people don't trust it as the global reserve currency anymore. If you're like, you know what, I'm going to basically dilute everyone by 10% and they're going to take the hit a lot more than we are. That's what we're doing.
+
+David: That's actually a really good point where yes, you're hurting your own citizens with inflation, but you're also hurting these other countries whose central banks are holding your dollars. There's nothing you can do short of moving to another country if you're a citizen and you don't like this. If you're another country central bank, at a certain point, you're going to be like, screw it. I'm going to use a different asset as my reserve currency. You can make that choice.
+
+Ben: Yeah. To roll back to that early Facebook example, when Zuckerberg did the Eduardo Savarin dilution movie where he issued a crap ton of new shares to everyone except for Eduardo, you can't do that where you create a whole bunch of new money. I guess actually that's what we're doing with a federal stimulus. We’d create a bunch of new money and we only give it to US citizens.
+
+David: It’s like The Social Network again.
+
+Ben: You can only trot that pony out so many times.
+
+David: I think there are some more in here.
+
+Ben: It is 1000% a cornered resource. There is a finite number of these things available. It is written into the software that you're never going to increase the money supply. It is quite literally a cornered resource.
+
+David: It's a cornered resource for people who own it. For the system itself…
+
+Ben: It’s a good point. It depends who the actor is that you're considering here.
+
+David: Certainly though, for anybody who holds Bitcoin, absolutely. The fact that there is programmed in minimal to no inflation in the long term is an incredible source of value.
+
+Ben: Not to mention it's the most secure system to ever exist—this public-private key pair thing. Think about Satoshi. You got 1.5 million of these things and it's so secure that people can't even log in to view their own because they're losing it. It’s super cornered, it's not fully in anywhere.
+
+David: I want to explore scale economies. I think there are scale economies here but let's talk about it. Scale economies of course being like Netflix. Because Netflix has so many subscribers that they make so much monthly revenue from, they can go pay $100 million for a piece of content and amortize it over all those subscribers that a smaller service like Peacock or whatever can't afford to pay the same amount for that content profitably.
+
+In this case, I think it might apply to the mining pool resources. If people are going to mine, you could mine any cryptocurrency, but there’s gravity to Bitcoin.
+
+Ben: People are going to mine yours if they think it has the most potential future upside and staying power.
+
+David: Right, and because lots and lots of other people are mining and transacting that's creating—maybe this is back to just network economies instead of scale economies. Let's look at the mining industry itself, certainly, that is a scale economies industry. That's separate from the Bitcoin system, but if you want to be a miner…
+
+Ben: The only way you're doing it at this point is with dedicated hardware and a data center in a very special location.
+
+David: Exactly, you're not doing it with a laptop.
+
+Ben: Right. It's because a lot of the value has gotten arbitrage out of doing it by lots of other people trying to do it. It's a race once you find a block so you have to have the lowest cost structure in order to be a miner.
+
+David: This is exactly like Netflix and the like. Switching costs, what do we think about switching costs? You can exchange in and out of other currencies. I think switching costs are actually pretty low.
+
+Ben: Yeah.
+
+David: Even as a miner, you can probably repurpose your mining gear to other currencies.
+
+Ben: There are transaction costs to switching in and out of other currencies as compared to ripping out an enterprise SaaS solution in the Hamiltonian definition of it, it's pretty low switching costs.
+
+David: I don't think this process has power in any sense here.
+
+Ben: No.
+
+David: I think the last question is branding. Say you had $1000 to invest, do you put that in Bitcoin because you know and trust Bitcoin versus something else?
+
+Ben: I mean I would but it's more because of the network economies. It's because I feel if there's going to be a dominant cryptocurrency that is a huge part of our global economy 20 years from now, it's going to be Bitcoin. It’s not because of the brand.
+
+David: If something else had the same properties, dynamics, and network behind its system, and it was called something else, I don't think there's any brand power there.
+
+Ben: Yeah. I think the last thing to talk about in power that I should have talked about when you were talking about network economies, is again, going back to this comparison to the US dollar. Government-backed currency has an absolutely enormous head start on their network economies power versus anything else. The government mandates that you pay your taxes in USD. Automatically, it means that every single person in the country must own some amount of USD in order to pay their taxes in it, or at least they have to...
+
+David: They have to have to use it.
+
+Ben: Or maybe they're accepting their wages in it. Money is flowing from literally every person in at least one direction in that currency. That lights up a bunch of nodes on the network. On the other hand, the government pays its debts or its bills in that currency. It's getting paid out to every other country. It's getting paid out to every contractor. The government contractor industry is actually a large part of the US economy.
+
+David: Totally. My mom's going to be so happy, listeners who are government contracts lawyers.
+
+Ben: It is a huge segment of our economy. The government is the customer. It’s incredible anything can ever compete with government-backed currency given how many nodes on the network are already by default dealing in government-backed currency.
+
+David: That might be a good transition out of power into our next section.
+
+Ben: Yes, so listeners, what would’ve happened otherwise is our next section. A lot of times we like to look at a specific event and wonder if it had gone a different direction. We may do that here, but we want to adapt this section to basically say let's compare all the weird ways that Bitcoin works to the normal fiat currency system, to USD, and compare and contrast some of the elements.
+
+The way that I want to start is what is money? What is the purpose of money? Now, we're getting a little bit (I suppose) academic, but it is three things. It's a unit of accounts. It's the way that we basically say this thing is worth that much. When you look at a gallon of milk, in your head it occurs to you how much it costs. That's the unit of account. It's the way that you account for the world.
+
+It's a store of value. I made some money, I put it in a savings account that's denominated in cash. I'm going to come back and use that in the future. It's a medium of exchange. It's the way that I buy apples at the market. Of course, then the currency is in some ways a subset of that. It is literally like money in the form of however you pay for it. In the form of paper or coins, generally issued by a government, things like that.
+
+I bring this up because I want to talk about this phrase that people throw around in the Bitcoin bubble and that we’ve talked about on this show. If someone were to say Bitcoin is a bubble, for sure. No doubt it's a bubble. Also, so is USD. It's just a really long bubble. How would you define bubbles?
+
+Again, I'm going to quote Matt Huang here from his memo because I think it's super good. His comment is, “We can think of money as a bubble that never pops or at least hasn't popped yet. The value of fiat currency gold or Bitcoin is relying on collective beliefs. Other factors like a government’s power, the industrial utility of gold, or the robustness of Bitcoin’s codebase can help reinforce this belief, but belief is critical.”
+
+I think there's something really interesting as we think about money or currency here. It's not like a stock where you can say, sure Tesla is a bubble because it's relative to its current positive cash flows or any reasonable future positive cash flows that it could have. You could argue that it's trading way too high above the utility or intrinsic value of what you're entitled to as a shareholder of that company. You're entitled to the future profits of it.
+
+Currency definitionally has no intrinsic value. The only thing that gives it value is the collective belief that other people will continue to value it in the future.
+
+David: We’re going to exceed our macro-economic, academic, and history depth here quickly, but this is the argument. Before 1971, there was some argument about the US dollar that it was pegged to gold. You couldn’t get as much gold as you could buy for $1 if you turned in $1, but you can get some gold. There was something, but then after 1971 when Nixon sent that away and the US went off the gold standard, it’s no different than Bitcoin. There is no tangible thing underneath it all other than your belief in the robustness of the US government as a system.
+
+Hopefully, I think what we've laid out on this episode is that with Bitcoin, it is the same. You are believing in the robustness of Bitcoin as a system.
+
+Ben: It's really interesting. Currency is anything that we're comfortable using as this way of—again, the three points are a unit of account, a store of value, and a medium of exchange. Like most things are a pretty crappy form of currency if you can rip $1.50 too easily or if anybody could copy it and they didn't have serial numbers. I'm going to keep quoting Matt here because he’s just so good.
+
+He says, “As with any monetary asset, Bitcoin must be scarce, portable, fungible, divisible, durable, and broadly accepted in order for it to be useful. Bitcoin rates strongly across most of these dimensions except for broad acceptability,” which of course we talked about with the network effect. The dollar is that. If I had to score it, it's reasonably scarce.
+
+The issue is the monetary policies—portable, certainly, again. Not as portable as Bitcoin because if you want to carry a suitcase of $1 million, it's kind of hard. Fungible, it certainly is that. Any dollar is the same thing as any other dollar. I don't think Bitcoin wins at all on fungibility. Divisible, they both have the tiny little units. Their cents which represent the smallest amount that anything could really be worth or there is Satoshi, which is 1/1000 of a Bitcoin?
+
+David: No, it's less than. I think it's ten to the seventh, or ten to the eighth. Negative seventh or negative eighth.
+
+Ben: We may have to come up with something smaller than that if Bitcoin continues to rise.
+
+David: You’d have to go a long way away from here.
+
+Ben: Durability, I mean Bitcoin is way, way more durable than US dollars. We rotate dollars out of the system every once in a while because they just get too ratty. Your Bitcoins are not going to degrade on a hard drive or in cold storage somewhere.
+
+Basically, in everything except for broadly accepted, Bitcoin wins. Now, again, that thing we talked about earlier with the US dollar having this overwhelming unbelievable head start on the network effect, TBD if Bitcoin can actually—even though it's better in all these ways—fight that? An open question is does it need to, or can it exist as a complement alongside?
+
+There are three more features that Bitcoin has that the USD doesn't. Again, going back to Matt Huang here, it is digital, programmable—there’s actually four—decentralized and censorship-resistant, and universal. I think that's where you start to get into this daydreaming about finally a currency for the internet.
+
+Things like smart contracts, which you can do on a very limited basis with Bitcoin. That it's digital-first where you're not saying I'm transferring you some money but it's on credit. I’ll make good on it later. You're literally instantly or within 30 minutes moving money from one account to another.
+
+The decentralized and censorship-resistant, it’s very interesting, 5 or 10 years ago, I would not have been a person that's like that's super important in money. But I think everyone's confidence has been a little bit shaken by recent events. Maybe I do want to hedge. Maybe I do want some amount of hedge in case.
+
+David: I had to be clear, certainly, recent events in the US like the Capitol happening, but also recent events in China and all over the world. Maybe except New Zealand. I think New Zealand is on the rise, but it's hard to think of other governments where trust isn't going down around the world right now.
+
+Ben: If you're from Argentina, Greece, or anywhere that's had sort of a currency crisis in the last few decades, you're probably jumping out of your seat right now going, you stupid Americans. Get this through your head. This stuff happens. Just because you guys haven't had it happened yet, it doesn't mean it’s not going to happen.
+
+David: That's true. I skipped over to history and facts, but a huge moment for Bitcoin was in 2013 when Cyprus went bankrupt, defaulted, and nationalized bank accounts of citizens. Let's get this clear, here's what happened in Cyprus. If you held over the equivalent $100,000 in a bank account in Cyprus, when the Cyprus government defaulted, they reached into your bank accounts—I was saying in my nightmare scenario when paying my taxes—and they just took all your money over $100,000. They just nationalized it.
+
+Ben: Holy crap.
+
+David: That happens in the world. A bunch of those people and around the world were like, holy crap. I see now why I want Bitcoin.
+
+Ben: That's wild. That's how I wanted to go about. In this comparison that we often make in what would have happened otherwise, this is my Bitcoin to USD comparison. That might not be fair. I think as we move forward here, David, you have a little bit more context here than I do, the right comparison may actually be to gold, not to USD. At least at this point in Bitcoin’s development, it might be less about can I use it at retail opportunities and more about can I at least count on it being a good store of value?
+
+David: I mean that's the thing. We'll get into this and grading and how it's performed across different dimensions. But I think most people—certainly all the institutions that are coming into Bitcoin right now—are not thinking about it as versus USD. It's not an or, it's an and. This is a good store of value. I'm worried about inflation in USD and other relatively secure assets. Now, Bitcoin has tons of volatility, but it's got upside. It's not going to experience inflation, great. I’m going to view it like I view gold.
+
+Ben: By the way, did you know gold’s money supply increases? I think it's from finding new gold every year, but it’s 1.5%. It's literally from mining. They're adding to the gold money supply. Obviously, not at the whim and in such great volume as USD is. One thing that Bitcoin proponents would espouse is that already—even when we're only 11 years into this—the money supply increases by less per year than gold does.
+
+David: Interesting. I didn’t see that.
+
+Ben: It's like 1% versus 1.5% or 1.6%. All right, what else in what would have happened otherwise?
+
+David: I mean, we could talk about interesting things like what if Silk Road? What if DPR hadn’t gotten arrested and they were still operating? What if CoinBase, Gemini, and the like hadn’t been built and we're still all running on Mt. Gox? I don't know that those were that interesting. I think they're kind of like any company story we tell where it takes a lot to look along the way. You got to get the lucky breaks to keep going and Bitcoin certainly had that.
+
+Why don’t we move onto playbooks? I think actually a lot of those, for me, feed into one of my big playbook themes.
+
+Ben: Cool. My biggest one is definitely this notion of bubbles as a go-to-market strategy. My second biggest one is, again, I'm just so entranced by the beauty and the simplicity of reading the white paper.
+
+There is something rare that happens in Bitcoin that I don't think happens often, which is that just a small set of very clever, very simple inventions working together unlocking a tremendous amount of new value. They built on the shoulders of giants passed like public-key encryption and one-way functions, and certainly the proof of work from Hashcash and other people that had come before.
+
+I mean, the notion of a Blockchain incorporating elements of the things that came before in a tight and near-perfect system is really a marvel. No matter how you feel about Bitcoin and everything that's happened because of it, it is a beautiful system.
+
+David: It is. We were talking about this before we started recording. My first reaction in rereading the white paper for this was there's got to be more. It's only nine pages. There’s got to be a bunch of stuff that they're not describing that other little things, hacks, and stuff you need to do to make this work. What about this case? What about that case?
+
+Ben: There is with increasing the block size and these forks that have happened over the years.
+
+David: But so small, so relatively few things. You can probably count on one hand the number of additional modifications to the system that have had to be made over the last 10 years that weren’t captured in this 9-page document. It's incredible.
+
+Ben: Yeah, it is. I think the biggest change that Satoshi did not foresee that will need to happen is the one that's going on now and the one that hasn't really been implemented yet where Bitcoin was initially created to replace the payments layer on the internet, first and foremost, and create a low transaction cost payment system with no fraud. As you dive deeper and deeper, you realize…
+
+David: It’s actually not great at that.
+
+Ben: Right. What it is in its current form, because there are so many people who want to use it, it's existing in a different level of the stack. If you look at the money stack, there is the US dollar, on top of that there's the Federal Reserve, on top of that there's the central banking system, then there's your account at the bank, and then there's credit cards and stuff. It's actually not a great credit card, but it is pretty good either a bank account or one level deeper where it's like the rails that the central banks all work on together.
+
+I think what we're seeing is—this is where I think there's going to be a lot of debate within the community. I've only dipped my toe to really understand this, but it's very clear that the Bitcoin Blockchain as it exists today is going to be moving large amounts of secure value around infrequently. What needs to be built is still sort of like Bitcoins credit card.
+
+David: Exactly. That's so funny. I was thinking the exact same thing over the past couple of weeks researching, which even with how we started the episode, the original goal was to make native money for the internet, fixed payment rails, and whatnot.
+
+The realization to me was Bitcoin is like a bank. It's like the central bank plus your bank. It's not going to be good as a credit card and that's okay because other internet native systems can be the credit card on top of it. DeFi project is based on Ether and the like. We’ll cover all of this another time on Acquired. That's okay if the credit card rapid transaction layer in internet native cryptocurrencies is different from the bank account layer. You don't need one ring to rule them all here.
+
+Ben: That's a great point.
+
+David: As long as you can port in and out just like when I pay my taxes, I pay them out of my bank account. But when I buy something at the store, I go (hopefully, someday again) out to eat in a restaurant, or I order on DoorDash, I pay with a credit card. That's totally fine. I'll do stuff with Ethereum-based DeFi projects for rapid transactions, and I’ll move money in and out of that as needed from a Bitcoin wallet.
+
+Ben: One thing that I've been increasingly thinking about as we've done these episodes is trying to factor in more of my why now to our playbook. Why did this happen when it is happening? For Bitcoin, I want to talk about this idea that Nick Szabo brought up. He and Naval were on an episode of the Tim Ferriss podcast that we’ll include in the sources here. I haven’t been able to shake this idea out of my head.
+
+We've been obsessed with making computing more efficient over the last several decades. Frankly, we've needed to because we could clearly come up with reasons why we needed more compute than we had. The use cases definitely outpaced what the hardware was capable of. Bitcoin is one of the first times that we deliberately want to and have done something that is computationally extremely inefficient.
+
+When you think about it, Bitcoin requires tons of computers to do the same slow actions, to check each other's work, to propagate this Blockchain all over the globe over and over again. Many computers are doing the same work because they're voting by doing the work, which will have environmental consequences that we’re going to talk about just before grading. It's expensive from a computing resources perspective, but if it really does unlock new value for humanity, you can think of it as a clever way to take advantage of the orders of magnitude, more compute power that we have now to do something that is potentially a fundamental breakthrough for humanity.
+
+It's interesting to try and apply this lens and think what else could you accomplish that was previously thought to be impossible—from a system perspective—by leveraging this incredible scale of computing in a very inefficient way? I think the way that Naval put it was, our brains haven't become any better computers, but we've developed way better computers. How can we take things that our brain currently hasn't been able to do for all these millennia and figure out a different way for the computers to take on the work? Not in a superficial way, but in a system-wide new use case way. It's a little out there.
+
+David: I think that’s a lot of Ethereum. We'll talk about that when we do Ethereum someday.
+
+Ben: Put a pin in that.
+
+David: Put a pin in that for sure.
+
+Ben: All right, David. I have one more, but you go first.
+
+David: Okay, cool. I had two playbook themes that I want to highlight. One, I want to be not careful here but specific. I think this whole story really illustrates for me when you are pursuing a network effect, a network economy-based power business like Facebook is, like most social networks and the like, like Airbnb—two-sided network effects.
+
+In the beginning, what matters is getting nodes and usage on the network to start. It matters less what they are doing, more just that people come on board, and that your value grows according to Metcalfe's law. As it grows, more sets of users and use cases will come on board and it will evolve.
+
+In Bitcoin’s case—this is why I said I want to be not careful but specific—I am not in any way condoning what happened with Silk Road, that that's okay, that that should happen, or anything. But just from the perspective of value building of the network, the fact that had happened, transactions needed to start happening. Nodes needed to come on the network for users and for miners. Silk Road provided that as the first use case. Then there were more after that, one thing led to another, and now here we are.
+
+Here we are, is so radically different than what Silk Road was. But for the underlying network and the protocol, it doesn't really matter. What matters is increasing your velocity and growth of users and transactions. When I look at Facebook and when I look at Airbnb, it's actually the same story. What was Facebook in the early days—as we've alluded to—were undergraduates at colleges looking for attractive photos of other incoming undergraduates at their college. That is so different from Instagram and WhatsApp today, but that's okay.
+
+Similarly with Airbnb, what was Airbnb in the early days? It was people sleeping on air mattresses in each other's apartments. What is it today? It’s something wholly different, but the point is growing to the network.
+
+Ben: It's funny. On the one hand, yes, you are totally right. On the other hand, I'm sitting here thinking, and this is not really advice, it's just an observation. I think like many of our playbook themes if you are starting a startup David and you came to me and said, I'm going to eventually do this thing. Before that, I'm just going to do a bunch of random crap, but people are totally going to use it a lot. Eventually, once they're all using it, then I'm going to make them do this other thing. I’m going to be like, no. That’s extremely unlikely.
+
+David: I think there's some applicability here.
+
+Ben: Yeah. It's not totally apples and oranges.
+
+David: You stair step up. I think Ben Thompson had an article about this with Snap and laddering. You ladder up from disappearing text messages to a broader social network. I do think you can be very strategic about this. I think it also matters for investors who when you see something like this that's a network effect, it's so easy to write off Bitcoin because of Silk Road.
+
+But if you step back for a minute you're like, wait a minute, is there a chance that this is just the first set of applications on this network? Is there a chance that people sleeping on air mattresses in each other's apartments is just the first set of use cases on this network, and that that'll bring in and attract the next set?
+
+Ben: Yeah, fascinating point.
+
+David: The second theme I wanted to highlight—which is smaller and also sort of tarnished because of the ICO thing, but is I think brilliant and new about crypto and new crypto projects—is if you can reward and incentivize usage of your system by value within the system itself like with the mining set up, the rewards for mining are Bitcoin. Bitcoin is the work done by mining. That's super, super powerful. Now, there's an incentive in and of itself for people that come in and use your network.
+
+Ben: Before we get here into value creation, value capture, and then go into grading, we'd like to thank our final sponsor Capchase. Imagine if all of your customers pay upfront for a full year the moment you signed a contract. What would that mean for you? Capchase helps fast-growing SaaS companies finance their growth without taking on debt or dilution. Whether you need to invest in R&D or recoup customer acquisition costs, Capchase turns your predictable revenue into growth capital today.
+
+As an aside, I actually think this is a fascinating concept where you sign this contract, you know you're having revenue come from your customers in the future. If you could have a more favorable cash flow cycle there, David and I talk about this all the time on the episode, you could finance your growth with customer money instead of with dilution, debt, or whatever it is.
+
+You can make it way longer before you go and raise your next round. You’re going to have more impressive metrics. Maybe you’ll even be profitable and won't need to raise the next round. I just think it's a really interesting idea. And this sort of product, I can just imagine so many companies that it would be useful for.
+
+No more discounting your contracts to get your upfront payment. You can keep customers happy with monthly payments and keep finance happy with more cash to invest in your business. Capchase has helped founders unlock tens of millions in financing to fuel their growth.
+
+This just in from the Capchase team, they just announced that they raised a $60 million credit facility—and was written up in TechCrunch—which allows them to help even more SaaS companies. Founders who work with Capchase, on average, have extended their runway by eight months and speared upwards of 16% dilution. If this is interesting for you and you are a CEO, a founder, or an executive at a SaaS company, you can learn more by clicking the link in the show notes or visiting capchase.com.
+
+David, if there ever was an episode that we need to discuss the difference between value creation and value capture, it is this one. This is normally a two-part section. I'm going to ignore the one about, do they capture enough of the value that they create. We’ll leave for listeners to ponder on based on everything we've already talked about in this episode. I absolutely want to talk about the comparison between how does the value created for the world, not just shareholders or potentially coin holders, compared to any value destruction that they have created by existing.
+
+Of course, we've already talked about all the illicit uses of Bitcoin. Again, I'll leave that to further ponderance by the listeners, but I want to talk about the scale of the environmental impact. I surveyed some friends, what do you want to know about Bitcoin? One friend texted me and said, well is it bad for the environment or no? It's a good question. The answer is relative to what? Because sure, does it use computing power? Absolutely. How much and what do other things use? Here's at least some estimation of an answer.
+
+In 2019, MIT tried to answer this question by commissioning a study, and they basically said that Bitcoin mining specifically accounts for about 2/10 of a percent—0.2% of global electricity consumption. It produces about as much CO2 in our atmosphere as Kansas City does. That’s just a ballpark. A whole city per year. Some estimates actually put it even closer to 0.4%. Almost half a percent of the world's energy production.
+
+On an absolute basis, for anybody who knows their climate, this means 23 megatons of CO2 are put out into the atmosphere per year because of Bitcoin. Another comparison is if Bitcoin were a country using energy, it would be right between Jordan and Sri Lanka in terms of their greenhouse gas pollution. If you include other cryptocurrencies, mostly Ethereum, that actually doubles, to help you estimate how much energy is being used. I think the answer is a lot. I think there are other studies that have been done that show that mostly their mining facilities are using renewable energy. It's not like it's necessarily consuming coal or oil.
+
+David: They're using a hydro dam like the central basin in Washington.
+
+Ben: That doesn't change.
+
+David: Still, that's a lot of energy.
+
+Ben: Energy is fungible. Not as fungible as money, but it's fungible like money is. If these datacenters are using that renewable energy, then it means that other places are likely to look toward coal or oil. Yes, it's making an impact on our greenhouse emissions. Glorifying this system should not come without the discussion of is it worth it?
+
+I think the listeners, you make the call of whether you think that all of this utility that this new monetary system has brought, is it worth it if we race toward raising the global temperature by one or two degrees Celsius over the next 10 or 20 years. I don’t know. I think the jury's out. I'm not sure there's really much we can do about it. Again, it's a decentralized thing, so what are you going to do?
+
+David: There's also the question—I certainly haven't done the work to know, I don't know if you have—of how much energy and emissions does the traditional finance system produce. For sure it's also a lot. I bet it's a lot more.
+
+Ben: Yeah. Here's an interesting aside. Remember, when we talked about these, these are really ideal for big secure transactions, not credit card transactions. But in some ways, there's a lot of smaller transactions they're being used for today. A single Bitcoin transaction consumes more energy than 100,000 visa transactions.
+
+David: Interesting.
+
+Ben: I mean, if you think about all the computers that then have to go and verify that proof of work, stack it at the next level in the Blockchain, and propagate it out, it makes sense.
+
+David: It’s a lot.
+
+Ben: A centralized system is way more efficient from an energy consumption perspective.
+
+David: Yeah, that's a good point. I think the other dimension to this question is, not that we're going to be capable of or choose to talk about a certain side here, but it’s just a political side of this. There's probably a reason why currencies and governments have been tied together for 400, 500 years. This is separating that out. What are the consequences of that going to be? They're large.
+
+Ben: It's an unbundling of one of the major components of the services that a government provides in order to ensure a stable society. Will societies that you currently think are stable stay as stable if they don't own the fiat currency?
+
+David: Totally. That's the question. Then there's stuff like the Cypriots and residents of Cyprus. If those people had owned Bitcoin instead of had their deposits in a bank, would they have been able to be nationalized? Or if you live in a country where certain things are illegal that there may not be a right to be illegal, you can now have a vehicle to transact with them via Bitcoin that you couldn't otherwise. But yeah, there are also a lot of downsides too. Thorny questions.
+
+Your point there was right. The cat is out of the bag. These are philosophical questions. The real questions are going to be how will history play out in the coming years.
+
+Ben: Yeah, and this decoupling from the government is interesting because, for the average person, it is way, way, way, way better to live in a stable society versus an unstable society. The government provides an enormous amount of value in our lives ensuring you at least know what system you're operating within. You generally don't have concerns about safety or about someone screwing you over in one way or another. It just provides reasonable guard rails so that you can do higher-level functions in life.
+
+The flip side of that is, with stability comes sameness. If you're part of a group that's been oppressed by a government and maybe that's been the case for hundreds of years in your country, then you're going to keep being oppressed systemically. It would be better if you lived in a more dynamic nation where you could do more things to break the system, rise up, and get power. I think these are sort of two sides of the same coin.
+
+If you see the government owning less and less of the core components of society—the first of them being money—you will both see the destabilization, which is worse for the person who benefits from the stability, but also you will see greater opportunity for those who are oppressed to be un-oppressed.
+
+David: One last thing that actually is worth calling out here on a separate topic. We’re going to talk about this in grading in a minute. This is probably the best if you were to categorize Bitcoin and look at it through the lens of an acquired lens of a venture investment. This is probably the best venture investment of all time. A 3,000,000X, there's nothing that's even close. It's just hands down.
+
+Every other investment like that (probably in history) has just solely been the realm of institutions. If you could found a company, you could be Mark Zuckerberg, or you could excel in Founders Fund that invested in the early rounds. As an institution, you and I couldn't do that.
+
+Ben: Oh yeah, totally.
+
+David: Anybody can participate in this.
+
+Ben: Yeah.
+
+David: In fact, the institutions have been locked out until now because the scale isn't big enough for them to participate.
+
+Ben: Yeah. Put another way, asymmetric upside opportunities are typically only available to, frankly, wealthy people. Venture capitalists, those who invest in venture capital funds, accredited investors, people who are able to get in really on these companies that could be the next Amazon. Very rarely is there a public company that has that kind of upside left in it. Of course, Amazon is the example where there actually was that much upside left in it. People are perceiving that to be the case with Tesla.
+
+But I think the point you're making is that like, oh my gosh, look at this. This was a retail investment available to consumers at any scale and it proved to have this type of asymmetric upside. When I say asymmetric upside I mean sure, you're going to invest in a stock, and oh my god, if that stock 10Xs, that would be amazing. Almost never are you going to buy a stock and it's gone 1000X the way that Sequoia did with Airbnb. I don't have the number off the top of my head but in that sort of order of magnitude.
+
+David: Yeah. I think that's interesting.
+
+Ben: For sure. Value creative for those who did so in the pre-2013 era.
+
+David: Yeah.
+
+Ben: All right, grading. David, how on earth are we going to grade this one?
+
+David: Unless you disagree, Ben, I think we knocked out number one, which is how would you grade an investment in Bitcoin?
+
+Ben: It’s by far the greatest investment opportunity of all time in humanity.
+
+David: Over the past 10 years, for sure. Okay, that's easy. That's not that interesting. How would you grade Bitcoin in its original purpose as laid out in the white paper of becoming a native internet currency medium of transaction for the internet? I think a grade is actually pretty poor here relative to the initial intentions.
+
+Ben: Now with that said, it could prove with the 20-year lens. Let's say we're sitting here in 2028 from the white paper's initial beginning of the authoring. It actually works really well if they can figure out these other layers of Bitcoin—how they sort of interact and how you can do much higher velocity lower value transactions in a cheap way. It may be the case that it ends up great, but so far, no. It's been pretty poor for that.
+
+David: And Bitcoin itself. Now I think very likely, if there's no Bitcoin there, there wouldn’t have been Ethereum. Ethereum and its derivatives—probably in my view right now—stand the best chance of building that layer. Maybe it's responsible, but Bitcoin itself, no, and probably never going to be that.
+
+Ben: I can check out on overstock.com, but that's it.
+
+David: Interestingly, Stripe supported Bitcoin for a while. But then once it became clear that it was too slow, too unwieldy, and transaction costs were too high for high-velocity transactions, they dropped it in 2018. They stopped supporting it.
+
+Ben: Interesting. That's definitive. It's a D or an F for its initial purpose so far. But boy did it to stimulate innovation in that area.
+
+David: I was going to say we do store value next. That's probably related to being in investment.
+
+Ben: I mean, it's been an amazing investment and a highly volatile store of value.
+
+David: Like anything here, investing and value depends on your timeframe. If you have a multi-year timeframe, amazing. Best investment of all time. If you need this to function as something like a US dollar where like, I need to pay my taxes next quarter. I want to make sure that I put this money away so that I know I'm going to have that money to pay my taxes next quarter. Not good.
+
+Ben: It's interesting. To me, from a store of value perspective, it's a great hedge. There are reasonable possibilities that it loses 60%, 70%, 80% of its value in a short period of time. Am I calling my parents and telling them you should put your retirement in there? Absolutely not. Should you be building it into your portfolio? Maybe. Again, gold continues to probably be the best comp. It's like gold with a bunch of upside and downside
+
+David: With way higher volatility there. If you put money into gold, I'm probably going to be able to pay my taxes next quarter by converting that back out.
+
+Ben: That's a fair point. It's super high volatility—gold. Again, I don't know if there's alpha there. There's just as much upside as there is a downside.
+
+David: Yeah. But I do think over the long arc, there's a lot of upsides very likely. Especially as we get into our last grading lens here. Especially compared to cash and a 0% rate plus an inflationary environment where you are losing money in the long term...
+
+Ben: Not to mention dilutive from the money supply increasing this much.
+
+David: Unless something drastically changes, you will assuredly lose purchasing power by keeping money in cash over any extended period for the foreseeable future. Bitcoin knocks it out of the park relative to that.
+
+Ben: Yeah, that's a great point. High volatility relative to that cash, but yeah. It's a really good point that the old aphorism of I'm going to keep cash around in case there is a recession and I have the opportunity to buy up. That cash is just losing value faster than it ever has. We're not in a hyperinflationary environment, but relative to where we normally are, you certainly can't put it to work in a great way without taking a meaningful risk.
+
+David: We don't have to live in the context of the ‘80s in America where interest rates were in the teens. Talk about inflation, that's insane. You're losing 15% purchasing power every year. That's crazy. We don't have that context of lived experience, but there's just no rational way that I can think of to look at why in long term holdings that I don't need this cash right now and I can afford to be long term focused with it. I should have it in cash. It just seems like there's no way to win there.
+
+Ben: Well, the last way I want to analyze this is through the venture investment lens of, is there still enormous upside in this investment? I was thinking about this. We saw 35,000X in the first 5 years. Then we saw an 85X in the 5 years after that. Even to get a 20X in the future, that means a single Bitcoin would have to be valued at over $500,000.
+
+David: Which the Winklevoss twins are on record saying that that's their essentially price target for Bitcoin is $500,000, which would be parity market cap with the above-ground gold. If Bitcoin had the same market cap as gold...
+
+Ben: Yeah, that’s where I was going here. It's silly to think about what could I imagine a Bitcoin being? Because you can’t, it's arbitrary. The interesting thing is if I owned the share that I would own if all the Bitcoin in the world, which you can calculate, and Bitcoin’s market cap was—what I'm saying, I'm analyzing like a venture investment. Do I think this thing has a chance of being a 20X here?
+
+The answer is, probably. I probably think that or the answer is yes, I do think of that. Because if it's got this $500 billion market cap today and the market cap of what people are doing with similar products like the US dollar is there's $20 billion of those, there's $70 billion worth of that globally, there's $5 billion-ish of gold, and that's its closest comp. Do I at least think it can steal more of the gold market? Yeah, totally.
+
+That gold market is—even without jewelry—10 times bigger than its current market cap. Do I think it has a 20X in it? It could. It has a possibility of that. In the venture return, you're never underwriting to yeah, I think this is going to happen. You're underwriting to, if it happened, would it be sufficiently large enough, and am I willing to put together a portfolio of those if it happens? Just make sure that all of them clear the hurdle of if the one or two that are enormously successful are successful, will it be big enough in order to make the whole portfolio worth it? Yes, I do think this has enough running room in front of it.
+
+David: All right, I'm going to bring it full circle for Acquired here. The pre-2011 era for Bitcoin was the science project phase. The 2011-2013 era was like the seed investment phase for Bitcoin. You invest in Bitcoin during that phase, it's like being a seed investor in Google, Facebook, or whatnot. The 2013-2017 period was the series A, series B stage investment. If you go later in that spectrum, you're like Greylock coming in and doing the series A of Airbnb at a $60 million post. Super high at the time, that seems crazy. They made a lot of money there. We are now in the growth round phase of Bitcoin.
+
+Ben: You don't think we're in the post public, post IPO?
+
+David: No, because there are still all these upsides. You're investing in a growth stage company. You're doing a series C.
+
+Ben: You're investing in Stripe right now. That's actually the reasonable comp.
+
+David: I don’t think we’re there yet.
+
+Ben: 2020 Stripe.
+
+David: I think you're in 2017 Stripe.
+
+Ben: Here’s why I think we’re in 2020 Stripe. Bitcoin after here would go public because the TAM is so big, it's Amazon-like in that way. It still has a ton of growth potential in front of it after it's mainstream and accepted by all the people that would be interested in buying a robust IPO. Also, it's not a company, it's way bigger than that.
+
+David: Yeah.
+
+Ben: I guess that's where I would take your analogy.
+
+David: This is so great. We're viewing it the same way, but we're going to disagree on what stage. I think it's Stripe in 2017 because I think this is like a series C-ish in a company. The path that you laid out of the path to gold—high execution risk and whatnot, but that's an upside. It accomplishes that, great. I think that's the IPO.
+
+Ben: It's gold with more utility, so it’s not hard to imagine why they would be able to pull that off.
+
+David: In my mind—we can disagree about where we are in this—there's still upside to gold. Maybe low likelihood. Amazon went public, it was a bookseller. Amazon today is AWS and Amazon. The upside is it becomes more than gold. It starts to eat into a reserve currency, et cetera. I think there's still another after booster stage on this. Whether it will happen or not, I don’t know. I think you could view two tiers of upside left here. One is to realize the gold thesis. Two is to expand beyond gold.
+
+Ben: Realizing the gold thesis is only another 10X.
+
+David: Right, it's like a 15X.
+
+Ben: Well, I'm not counting the part of the gold that's dedicated to jewelry.
+
+David: Got it.
+
+Ben: People holding gold as a store of value, although jewelry is a store of value too. It’s just inflated because it's prettier. All right, I really like that analysis. I think that’s a great place to leave it.
+
+I haven't checked the time, I have to imagine this is going to be the longest Acquired episode in history. Listeners, thank you for going on this journey with us. David, I didn't expect frankly us to do as much as we did looking at both the history, this strategy pull apart, and some of the technical aspects. I hope listeners, you enjoyed all three. We'd love feedback. Particularly if you are an economist in this ecosystem, or if you know about moves that have been made in this ecosystem that we don't know about yet. We like to continue learning in public. Please reach out.
+
+For folks who don't know, we have started codifying the playbook from each episode in some written bullet points. We did that for this episode as well. We email those out after posting each episode. If this is something you want, you can sign up to receive the playbooks at acquired.fm. If you join the Acquired community Slack at acquired.fm/slack, you will automatically be signed up for them there as well.
+
+As always, if you love Acquired and you want to be a deeper part of what we do here, you should become a limited partner. You'll get access to our library of over 50 interviews and deep dives on company building topics, monthly Zoom calls, and the new thing we've added—live access to listen in while we record big events like emergency pods and our book club discussions with authors. If you are not already an Acquired LP, click the link in the show notes or go to acquire.fm/lp. We can't wait to see you there.
+
+If this is your first time listening to an episode and you're not subscribed, you can do that from your favorite podcast player. If you have a friend that you think would enjoy this episode, maybe someone who's a crypto bear, a crypto bull, or someone you like to talk about this with, you should definitely share it with them. Feel free to share it on social media, but again, we love that one-to-one touch when you share it with someone that you think would really like it. With that listeners, thank you and we will see you next time.
+
+David: We'll see you next time.
+
+‍

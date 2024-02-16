@@ -1,0 +1,471 @@
+Ben: Welcome to this special episode of Acquired, the podcast about great technology companies and the stories and playbooks behind that. I'm Ben Gilbert, I'm the Co-Founder and Managing Director of Seattle-based Pioneer Square Labs, and our venture fund—PSL Ventures.
+
+David: I’m David Rosenthal, and I am an angel investor based in San Francisco.
+
+Ben: And we are your hosts. Today we have a special episode that dives deep on the dynamic digital health ecosystem, especially with the lens on the complete upending of the landscape happening with companies going direct to the consumer. Today's episode primarily centers around Levels, a new company that's on a mission to make all of us aware of our metabolic health aka track your blood glucose with a real-time wearable sensor known as a continuous glucose monitor or CGM.
+
+David: Wearing mine right now.
+
+Ben: Me too. We were introduced to the company by two of our LPs and members of the acquired Community. Shout out to Michael Mizrahi and Ben Grynol. One of our favorite things about the incredible community that has developed in Slack and on our LP calls is that we get to learn about some of the most interesting companies in our ecosystem today.
+
+We are joined on this episode by the founder of Levels, Josh Clemente. Josh has a fascinating background even before starting Levels from his days as an early engineer at SpaceX where he worked on Dragon capsule, as the Lead Life Support Systems Engineer. Then afterward, at another Elon company, Hyperloop One.
+
+If you are wondering how the business models behind these new direct-to-consumer healthcare companies work, why the time is now for this revolution, or perhaps you just want to be one step closer to being a cyborg, this episode is for you.
+
+Speaking of the Acquired community, we have a presenting sponsor who many of you will recognize from Slack and our LP Community, James Avery. James is the founder and CEO of Kevel, the company that provides API infrastructure to quickly build custom ad platforms for sponsored listings, internal promotions, native ads, and more.
+
+If you remember Dick Costolo talking on our Twitter episode about how hard it was to build their own advertising infrastructure, Kevel now takes care of all of that sort of thing. The customers that use Kevel include Yelp, Rapi, OfferUp, Mozilla, Strava, and many other large platforms. Over the next few specials, James is going to share with us the journey he's been on in digital advertising since 2007 and his vision with Hyperloop one.
+
+Your first internet business was that you became the owner of an ad network called The Lounge before being the, obviously, the Founder and CEO of Kevel today. Take us back, what was The Lounge?
+
+James: Yeah, absolutely. History and facts Kevel edition here. Back in 2007, I was a software engineer, kind of independent consultant, and like everybody else, I was writing a blog. Like most people who write a blog, I put Google AdSense on it. You feel good about your $5–$10 a month from writing a blog. But then I got invited to join a small ad network called The Lounge.
+
+The Lounge was focused on developers. That was my audience in the blog. Went from making $5 a month to $50 a month. The crazy thing was that there were less ads. The Lounge was focused on a single ad unit with a little bit of text and a very prominent location versus the three or four ads I had running with AdSense. To this day, that's a really fundamental tenet of Kevel is that the right ad in the right place, the right audience is exponentially more valuable to both the publisher and the advertiser, and it's a much better experience for the user.
+
+A couple of months into being part of The Lounge, the guy running it sent us an email and said he was deciding to shut it down. At the time, I'd call myself kind of an indie hacker. I just shot him back an email and said, hey, can I take this over? He quickly got back and said, well, I guess that's better than shutting it down. We kind of worked out a deal. I took over the network and found myself writing code during the day and running a kind of micro ad network at night.
+
+Ben: That's awesome. Thank you so much to James. Since we know only probably a small percentage of you are in the market right now for an industry-leading set of APIs to power your ad platform, we figured it'd be more fun to point you to a page showcasing their company story and history through Acquired fashion. You can check that out at kevel.co/history, and our thanks to James and the team.
+
+Now on to our interview with Josh Clemente from Levels. Josh, welcome to Acquired.
+
+Josh: Super happy to be here. This is going to be so fun.
+
+Ben: We're excited to have you. David and I are both right around the one-month mark, David I think just finished using Levels for his first month. I'm about to cross that threshold. So many insights, so much fun to learn all this really cool company you founded.
+
+David: I think you guys are maybe winning in the startup category for a market share of Acquired community members as employees. Super, super fun to do this with you.
+
+Josh: That's a trophy I will hold proudly.
+
+Ben: Josh I'd like to start with your background because, before Levels, you were doing some crazy interesting stuff. I want to dive in to unpack some of that a little bit because we would like to have you as a guest on Acquired even if you hadn't started Levels. Let's start in sort of the SpaceX and Elon chapter of the world working on Hyperloop. First of all, can you explain to us what you worked on at SpaceX?
+
+Josh: I entered SpaceX as a manufacturing engineer. I was fresh out of school. I only really wanted to work for Elon when I had graduated, and I didn't have that job lockdown. I actually sold used cars at Carmacks for three months. It was just kind of hanging on to hope and work my network like crazy to try and get in.
+
+David: Wow. Did you call, email Elon? How?
+
+Josh: I called, emailed everyone including recruiters at other Elon companies like Tesla. I actually got an internship at Tesla first, and then they got DOE funding right as I was about to join. They shut down the design office I was going to work at and relocated. Basically, we're like, sorry, we don't have space for you. We'll do this again sometime. I was just like, well, how about SpaceX? Can you help me get in there?
+
+What's crazy is that I actually, out of pure coincidence, my uncle met Elon. He ended up working with Talulah Riley, Elon's former wife's father, and he met Elon. He's like, my nephew is really interested in your company. He didn't really know who Elon was, had no context whatsoever, and just dropped a name. I don't really know, but at some point, that filtered down and I ended up getting a phone call back. I think my uncle put in beyond just that in person but put in an email good word as well to try and get me in there.
+
+Anyway, long story short, after three months of selling cars, I got a call from SpaceX and they were like, here's an entry-level manufacturing engineer job. Which is primarily focused on taking the concepts that have been designed, or the first article has been built and tested and then getting those into production. We were a small company when I started. I think I was employee 678, and it was just a big empty building.
+
+Ben: Which is 10 times smaller than it is today.
+
+Josh: Yeah. When I left it was probably around 5500 people, and it's now easily 7000 and growing. It was very much the wild west days. You're taking these components that have been designed and tested, but you need to get them into spacecraft form and launched. Most of the stuff had never been done before. It was all initial systems. As a manufacturing engineer, it was focused on designing processes, training up technicians, putting work instructions in place, and then also just kind of like building yourself.
+
+I spent a huge amount of time in that first stage in the factory. On the factory floor, I was like a glorified technician and then ended up learning a lot from the existing technicians in just the hands-on process of building aerospace components. I spent a ton of time down at Cape Canaveral just getting launched articles. Once the vehicle was prepared for flight, it was then integrating all the final systems, putting it through [...], static fire, and then watching it go to space. It was just pretty wildly educational.
+
+From there I moved into what's called a responsible engineering position. You're responsible end-to-end. There is no other individual to point to and say we didn't succeed, it's your fault—the buck stops here type role. I worked there on a few structural systems.
+
+Finally, about halfway through my career at SpaceX, we had succeeded at getting the cargo vehicle through its COTS Program. We were starting on the human-rated program at SpaceX. This required a life support system to be developed. SpaceX had obviously no human-rated experience. I was one of the first four employees who had the opportunity to work in that department.
+
+I look at that project as, for sure, the pinnacle of my experience at SpaceX. I mean the team was just unbelievable. Some of the best people I've ever met and had the opportunity to work with. I got to lead the pressurized life support systems team.
+
+This is developing the oxygen breathing system. The pressurized tanks that go in the vehicle carry high-pressure oxygen, distribute it, regulate it down to lower pressures into the cabin, into the spacesuits, sensing oxygen concentrations, keeping the cabin at environmentally safe pressures and compositions. The fire suppression system, the docking adapting system that pressurizes kind of the space between the International Space Station in the Dragon capsule after docking—all of these pneumatic pressurization mechanisms. I was able to lead that small team, an amazing team through to the completion of the critical design review phase.
+
+Ben: That’s great. As we know now, Dragon Cargo and Dragon Crew have both successfully gone up. It must be crazy cool to see your work in action there.
+
+Josh: It's pretty surreal, to be honest with you. It felt like an impossible amount of time away always, and then all of a sudden, it happened and it worked.
+
+Ben: It's not bad.
+
+Josh: The stress is still high. There's going to be another flight with former astronauts later this year. The stress is still high every time because each system is unique, but as SpaceX develops more experience with reusability and re-flight, it allows some more confidence and breathing room, I feel like.
+
+Ben: Josh, before diving into the next chapter of your career and founding Levels, we got to ask. Is there a fun Elon story that you've got, or something crazy? Everything that happens when you're working at SpaceX I'm sure is crazy, but anything you want to share?
+
+Josh: I think one moment that always just reminds me of the kind of unique culture of SpaceX was really the first major launch. I got to SpaceX just after they flew the Falcon 9 1.0 rocket for the first time. Basically, SpaceX failed three times to get the Falcon 1 rocket into orbit. The fourth time it was successful, then on the first try, they got the larger Falcon 9 rocket into orbit. I got there just after that success.
+
+The second Falcon 9 rocket was getting ready to launch. At this time, the duration between launches was on the order of years. Everyone was working full time, basically hand-building a vehicle. We had this machine, this entire integrated first and second stage on the launch pad. There was an air conditioning vent that basically conditioned the interstage. It's basically the hollow space between the first stage and second stage.
+
+The second stage sits on top of it and has this very long vacuum nozzle. It's designed to give better efficiency to the rocket engine in the vacuum of space. It's very long and it's very, very thin. It's thin enough that you can tear it with your fingers. It was metallic at the time, but it's very well supported. Its skirt is supported by these rings.
+
+This air conditioning unit was blowing a high volume of air into the interstage to keep it purging. We noticed, during inspections, that the skirt had actually been fluttering in the high-pressure sort of air source and it was actually torn. This was a really big problem, of course, for a number of reasons—just debris and also efficiency loss in the engine.
+
+The typical approach in old aerospace would be, break everything down, disintegrate, push the schedule out, analyze everything, determine why this failure happened, press release, redesign. The SpaceX approach was, Elon calls up one of the lead technicians in the entire company, his name is Marty. He used to basically work on airplanes and was an airplane mechanic. The guy was just an absolute machine and brilliant.
+
+Elon convinces him to get on an airplane to Cape Canaveral with a pair of shears, go up in an extremely tall genie boom—this guy is terrified of heights by the way—crawl through a hole in the interstage, which is about yay big, into an integrated stacked rocket. You’re 100+ feet off the ground, there's a second stage above you.
+
+David: It’s that essentially bombs below you and bombs above you.
+
+Josh: No, it wasn’t fueled up at the time, but it was intimidating I'm sure, to say the least. Then he trimmed the lower edge of the skirt off, removing the tear in the nozzle. We did a little bit of propulsion analysis to ensure that the second stage would have what it took to get to orbit, even with the loss of efficiency of the smaller skirt. But basically, Kelly hand-trimmed this thing in the interstage walking around on the dome of the first stage, climbed out, we launched, and we successfully got to orbit.
+
+The whole company ground to a halt when this happened. It was a huge scary situation, and Kelly pulled it off. Part of the funny thing was that as an airplane mechanic, Kelly was like, this is a little bit scary actually, but he was terrified to fly. He hated airplanes, I think he has seen too much. The biggest problem was convincing him to go up on the rocket was actually not the hard part, it was convincing to get on an airplane to go to Cape Canaveral in the first place. I think it just speaks to the scrappiness of everything back then. It was really wild west.
+
+Ben: I'm sure you've thought about this a lot, but why does that work? SpaceX has worked, and it's been because of 1000 or 10,000 decisions like these. Was the industry just too conservative before? Or is there something different about SpaceX that makes it possible for them where it wasn't possible for people before?
+
+Josh: Definitely. I mean, I think that this kind of goes to psychology generally. There's like this scarcity syndrome that if you have something, you fear losing it, and if you don't yet have something, there's nothing to lose.
+
+SpaceX was in a, we have nothing to lose mentality for the entirety of its kind of early days. It's basically we're either going to run out of money, not get this contract, and cease to exist; or we're going to slice this thing off with scissors and try. That's kind of the approach, we were always one launch failure away from losing the company, until probably 2014. Once Falcon 9 1.1 flew, we got a ton of orders on the books and things started to smooth out a little bit.
+
+But up until then, it was Elon—every single opportunity he got—was telling people, look, you personally have to succeed. If you don't, 2000 people are going to lose their jobs, including you. I mean, he would not mince words.
+
+I think that old aerospace had kind of been resting on its laurels, in a sense, but also combined with the failures of the shuttle program was—in the political nature of the entire program—worried about losing what they had. Any failure was career-ending for a politician, and any failure was potentially career-ending for the engineer. Failure is not an option in old space, and it was always an option for SpaceX.
+
+That proliferates the culture all the way through to live streaming explosions of Starship. No other does that because it's like airing your dirty laundry.
+
+Ben: Yeah, that's such a good point. Man, we could talk about this forever but I got to hear about how Levels came to be. I'm wearing a continuous glucose monitor on my arm, it has a patch with your logo over it. Catch me up from you were a SpaceX engineer to you decided to have David and I sitting across the internet from you wearing this. How did it come to be?
+
+Josh: It kind of started at SpaceX. Partially in a good way, partially in a bad way. I kind of hit a total burnout wall in the late part of the life support program I was working on. In retrospect, I was burning the candle in multiple directions at once. I certainly was just working, was not managing stress, sleeping very poorly—my average sleep is probably four to five hours. My approach to maintaining wellness was working out as hard as possible as a CrossFit when I was a trainer but I didn't really train people, I would train myself.
+
+David: I got to imagine, this was pretty common at SpaceX. It doesn't look like Elon sleeps much to this day.
+
+Josh: Yeah. It’s a classic startup environment where everyone wants to be the hardest worker. You get a bunch of people who don't like to fail and impossible deadlines. They're just going to be like, the failure modes going to be them. They're just going to physically burn out trying to succeed. That's what it was like at SpaceX, and I think it still is to some extent. I have been doing this for my entire career at SpaceX, but I think there's a compounding return and we can touch on this as it relates to metabolic health in a little bit.
+
+I had gotten to the point where I woke up one day and was just like, I think I have a terminal illness. I have zero energy, my mood is always low. I'm not the optimistic happy person I think I am anymore, and I don't know what changed but I just constantly feel irritable. I am struggling to make it through the day in terms of not just professional performance, personal performance. Just keeping my siblings from hating me, and my significant other from walking away. It was that degree of something's wrong here.
+
+I was getting these bouts of fatigue that were truly symptomatic. It would be 11:30 AM and I would feel this shakiness, cold sweat, and kind of a whole-body tingling or itchiness type sensation. I would just need to sit down. I was like, am I about to pass out? I had never passed out. I didn’t lose consciousness or anything, but it was just a very real sensation. I'm describing this to my doctor, and we ran in a bunch of blood panels—the standard stuff—and nothing came up.
+
+Anyway, this was kind of going on with the background, and I was also working on a life support program. We were designing a super high-pressure oxygen system to deliver breathing gas to the crew. Something that divers and astronauts could potentially face in a failure scenario is a high-pressure, high oxygen concentration environment.
+
+What actually happens there is because oxygen is such a reactive molecule, you can generate a huge amount of oxygen toxicity in the brain—it's called central nervous system toxicity—and this can cause neurological shutdown. It can cause seizures, potentially even death. This is why divers are limited. They can't really just breathe pure oxygen underwater forever. They only have a short period of time.
+
+I'm thinking about failure scenarios like, how do we avoid anything like this ever happening, obviously? But also, what happens? I read a paper just randomly in my side research from Dominic D'Agostino who’s a Ketogenic Researcher at the University of South Florida. This paper described a series of studies he did on rodents. Where they fed rodents a ketogenic diet—they actually gave them exoticness ketones—as well as feeding them just a high-fat diet.
+
+Ben: Which for the uninitiated is basically almost zero carb, zero sugar. The only macronutrients they’re eating are fats and proteins?
+
+Josh: Exactly. In a certain macronutrient ratio, which is very high fat, your body will generate these macronutrient bodies called ketones, which are essentially a water-soluble, fat molecule. That's crucial because water-soluble means that it can cross the blood-brain barrier and provide energy for the brain. Typically, the brain is fueled by sugar glucose solely and traditional fatty acids can't cross that barrier—ketones can. They are a brain energy source.
+
+In the study, he gave these rodents a ketogenic diet and then submitted them to a high oxygen, high-pressure environment. The result was that these rats could live up to five times longer without seizure just because of the ketogenic state they were in. That completely blew my mind because up until this point, I was a calorie is a calorie absolutist. It didn’t matter what you ate, if you worked out hard enough, it was all just energy in the end.
+
+Ben: It's all thermodynamics. You're in a closed system, you should be able to burn it off.
+
+Josh: Right, just an equation. Although this wasn't in humans, I’m obviously extrapolating to humans and thinking wait a minute, the macronutrient selection here is giving these rodents superpowers. They can live five times longer in a deadly environment. What is going on here? How is this possible?
+
+That was the first moment where I started to think about what superpowers can be unlocked with dietary selection, and what am I doing to select for diet? Is there any objective data that I'm using to guide my choices? I was very unhappy with my findings. The only reason I eat things is because they taste good or because somebody else told me I should eat them, there's no data.
+
+I started to just self-experiment. As I'm approaching the end of my time at SpaceX, I'm still getting this extremely weird, kind of stress-induced, or I don't know if they were symptomatic episodes. Trying to figure out what's going on, and then I come across this paper and I'm like, maybe there's more to it than just the gym. I work out really hard, I've got a decent amount of muscle, I can run fast, but I don't feel healthy. Clearly, there's a difference between the way you look and how healthy you are or perceive yourself to be.
+
+That's when I started self-experimenting. My goal is to understand where my energy is coming from and how to optimize it. The primary energy molecule in modern humans is glucose. It's the sugar byproduct of carbohydrate breakdown. I got a finger prick glucometer it’s called. It's this little device you prick your finger, bleed on a strip, and you can get a single data point.
+
+David: You’re the equivalent of Elon on the plane back from Russia building the Excel spreadsheet. Hey guys, I think we can put something in orbit for a lot less money.
+
+Ben: It'll be even more obnoxious about the metaphor. It's as if Fitbit hadn't been invented yet and you're just like, hey, are you walking right now once a day?
+
+Josh: Yeah, it was like, what is glucose was step one, and then how do I gather this information into insight? Basically, I'm having these energy issues. The energy is coming from these macronutrients. I’m not in the ketogenic state, which means my energies are either coming from glucose or it's coming from fat—those are the two sources that it can be coming from. I can measure glucose by buying this little device at CVS and pricking my finger. I'm going to try to learn something here.
+
+I started pricking my finger, got very obsessed with it, started doing it 60 times a day at one crazy point. And then I was plotting the numbers in Excel to emulate a continuous data source. At this point, I had started sleeping more as I was tapering down my SpaceX work, and moving into Hyperloop, which we can touch on a minute.
+
+I'm sleeping more, I am in meetings, I'm doing work, I'm working out—during those time periods, I can't prick my finger. I've basically got point cloud in the morning, point cloud in the evening, nothing in between, and it's not making any sense. It's stuff, but it's not helpful. Then I read a book called Wired to Eat, which talks about continuous glucose monitoring. I was completely unsophisticated about biosensors.
+
+David: Yeah. Weren’t they in the market yet, or was this still before the Libre and the Index?
+
+Josh: CGMs, continuous glucose monitors, have been available in kind of trickling from the research lab environment through to just therapeutic research studies. The first one came out—actually, it was an early Dexcom or a Medtronic—came out in the 2006–2010 timeframes. They've been out for some time, but there hasn't been a mass-market move until right around this time.
+
+In 2017, the FreeStyle Libre from Abbott hit the market. It was like just coming out. The price point was good. There had been Dexcom G5 and G4 prior to that, but they were $1000+ a month minimum and very hard to get.
+
+David: Dexcom was a startup started to build a continuous glucose monitoring device for diabetic therapeutic purposes.
+
+Josh: Exactly. At this time, really even now, all continuous glucose monitors have been developed for the sole purpose of measuring blood sugar so that you can manage diabetes. Dexcom only does one thing. They develop continuous glucose monitoring sensors for type 1 diabetes, they're starting to move into type 2.
+
+The difference between type 1 and type 2 is that type 1 is an autoimmune condition primarily where the pancreas stops producing insulin. Insulin is the hormone that acts like a key to open the lock in your cells and let glucose in. Insulin is a signaling hormone, and when the pancreas stops producing it, blood sugar levels start to go very high. When glucose gets very high, similar to that oxygen scenario, it’s a reactive molecule—you start getting tissue destruction.
+
+Type 2 diabetes is considered more of a chronic lifestyle illness. This is where over time, you break down the insulin glucose feedback loop. Either your body can't produce enough insulin to keep up with demand, or you're just outpacing the production of insulin and you create what's called insulin resistance by amplifying demand to the point where your cells stop responding to it.
+
+Ben: When you say breaking the feedback loop, this is like, I have actively made lifestyle choices in what I'm eating where the natural feedback loop in my body of, hey, I should be producing this much insulin based on what the macronutrients that just came in. That just gets all out of whack and you can no longer rely on the natural system to function anymore.
+
+Josh: Yeah. It seems to be actually an adaptive response. We've been historically in a certain range of blood sugar values, and that's where you want to stay. If we're constantly jamming more glucose into the system than it was designed for, then you require more insulin than you're designed for. The devices have been developed for this condition, for diabetes specifically, which was very acute. Type 1 is very acute, type 2 is a longer time frame.
+
+David: It’s a spectrum.
+
+Josh: It's a spectrum, exactly.
+
+David: It can get extremely acute.
+
+Josh: Totally. I think they're both acute frankly, but type 1 is a situation where if you don't use insulin exogenously injected, the damage is happening much faster,¢ the effects are very immediate. Type 2 tends to be semi-controlled in the sense that glucose levels won't go as high because there is still some insulin feedback. This is where the devices have been primarily focused.
+
+2017 I read about this and I was like, oh man, I need one of those. I'm trying to emulate this with finger pricking, my fingers are black and blue, and I still haven't discovered anything. I went to my doctor and I was like, hey, check out my spreadsheet. Look, I'm pricking my finger a ton. I'd love to get a CGM. He was like, dude, you are one of the healthiest people I see. If you saw the people who need that device, you’d be ashamed to ask for it. That's for people who have a disorder.
+
+Ben: You're like, yeah, I'm trying to not get a disorder here.
+
+Josh: I was kind of surprised by that response. I thought, well firstly, if you look at systems generally, you measure what you don't want to fail. You don't just measure the thing that is broken because that's obviously useless at that point. In systems engineering, especially complex systems, you get as much data as you can, you observe failure modes as they develop, and find ways to counter them.
+
+Having already dove into the research on the metabolic health crisis that I had not known about prior, but I was aware of at the time, I was like, well, it's just me trying to learn more about myself and understand if there's something going on with my metabolic system. My physician was just totally opposed and was not willing to get me access to a CGM.
+
+David: This is one of the things we really wanted to explore in this episode with you. It feels—looking at this industry—like this huge disconnect developed between uses in a therapeutic sense as medical interventions. Your doctor’s totally right, there are people out there who need this way more than you do. But that's so zero-sum thinking. Just because giving you access to a CGM isn't going to prevent somebody else from getting that too. How did the light bulb start going off about maybe this can be a consumer device too?
+
+Josh: Eventually, after trying for several months, I was able to get a CGM, but it was through a friend of mine who brought one back from elsewhere where they're over the counter. He actually went to Australia and threw some in his backpack where you can buy a glucometer. I was still just interested. I was like, I wonder what's going on? I’m pricking my finger, didn't have any insight set, put the CGM on, and was instantly blown away by how bad things were.
+
+My blood sugar essentially looked much more like a heart rate trace than a blood sugar trace, and huge spikes, huge crashes. Everything I was doing, all of the meals I was consuming were putting me above what would be considered the pre-diabetic postprandial threshold—where your glucose should be after a meal—very often well into the diabetic range.
+
+My body was not managing blood sugar spikes effectively. It was able to bring them back, so it's not like I was a diabetic and have lost control. It seemed to be like, blood sugar would go very high, my body would release a ton of insulin, overcompensate, I'd have these precipitous crashes, and I was able to just immediately correlate those crashes with the sensations I have been having were the shakiness, the hunger, the irritability was all perfectly sync.
+
+Within two weeks, I had tuned my approach to diet—just trial and error on the meals I was eating. I was able to bring those huge spikes down to a minimum. At the time, I still wasn't satisfied with what the ideal levels would be, and actually, much of this remains to be discovered. But I was able to identify that things I was eating that I thought were healthy—large servings of sweet potatoes, brown rice, quinoa—I was having huge, again, in the diabetic range responses to. Which was highly counterintuitive.
+
+I eat the Paleo CrossFit style. Even though I love sugar, I love candy, and I love dessert, that's not what I'm eating for dinner, anymore—I was at college. Just this realization that things were going haywire, and it was the things that I thought I was doing well that were causing these huge inconsistencies.
+
+Ben: Josh, I'll tell you, in my first week of using Levels, I was like, doing the thing that I think the setup guide recommends, which is, eat your normal diet. Don't try and eat healthily. The goal of this is to see what your normal stuff does. I had recently worked in no sugar, just steel cut oatmeal into my diet. I think it wasn't actually steel cut, it was like the Quaker whole oat, but it was advertised as whole. It was wild how much that spiked my blood sugar afterward.
+
+David: It was like wholly bad.
+
+Ben: I just threw a ton of gushers in my mouth or something. I was staring at it, okay, I guess that's not as good for me as I thought it was.
+
+Josh: Absolutely, I mean, oatmeal is a prime example. You google the healthiest breakfast and it's top three no matter what is oatmeal. It's considered heart-healthy. The last time I checked and it has been a few months, but one of the worst foods in the data set was oatmeal. Something like 70% plus of people who are eating oatmeal while using Levels had exceeded that pre-diabetes threshold, were well into the significant blood sugar spike territory from food that's described as heart-healthy.
+
+The reason that's interesting is that glucose variability, the number and peak amplitude of blood sugar spikes is closely correlated with cardiovascular disease. Because that's an inflammatory event, the number of these that are happening throughout the day, which is obviously higher for people with diabetes is connected with negative hard outcomes. It draws on to question how these—
+
+Ben: How heart-healthy it really is?
+
+Josh: How that ended up on the oatmeal canister? We're seeing a lot of these examples. At the time it was just a realization. I'm using this device, which basically just spits out raw data. It gives you, you're at 88 right now. At least it gives you a trend arrow, but it's not telling you anything about what is creating this situation that you're in. It doesn't tell you how nutrition, exercise, sleep, stress are related.
+
+I started to intuit these things through use. It quickly became the most powerful accountability and education tool about how my body works that I'd ever used in my life. That's really the realization was just this thing was hard to get and it's completely transformed my approach to lifestyle.
+
+I'm a person who cares about health, but never knew the effects of cortisol. I've been stressed for a few years professionally and personally. Sitting through a meeting.
+
+Ben: You don't say.
+
+Josh: Sitting through a stressful meeting with the CGM on and seeing, without calories, my blood sugar exceeded 145 milligrams per deciliter, which is the postprandial threshold for kind of a pre-diabetic response changed my perspective on stress in one fell swoop. I had never seen anything so serious.
+
+David: Oh man, I'll tell you that was one of the biggest lessons for me. During one of the weeks I was wearing Level—wearing a CGM from you guys—Jenny and I were in Texas during the crazy power outages. I starved, not even water, and my blood sugars during that week versus other weeks were just unreal to see the data. I knew I was feeling bad. I was very stressed, I was very unhappy.
+
+Ben: Much higher, David, or more spiky?
+
+David: Yeah, much more spiky. Big spikes, big crashes. I saw it in my mood. I'm like, yeah, I'm very unhappy, I feel terrible, and there it is in the data.
+
+Ben: Okay, now it is time for our second sponsor of this episode, masterworks.io. Did you know that only 1% of day traders actually turn a profit? Why are so many of us mistaking picking stocks for serious investing? You cannot control the markets, but you can control your risks.
+
+How did billionaires like Gates and Bezos control their risk? They invest in blue-chip art. If that sounds unusual to you, you are not alone. It may be surprising but contemporary art as an asset class returned 13% over the last 25 years compared to 9% the S&P, with a lower loss rate than gold, and almost no correlation to the stock market. With the FED injecting money into the economy at a rapid rate, smart investors are moving some of their wealth to hard money assets like art to hedge against inflation.
+
+Masterworks.io is the only platform that lets you fractionally invest in paintings by artists like Banksy and [...]. The experts there will create a custom portfolio for your investment needs. They've been covered in places like Bloomberg, Business Insider, CNBC, and more for what they are doing. Please see the information at masterworks.io/disclaimer. You can sign up today and use code Acquired to skip the 15,000 person waitlist, or click the link in the show notes.
+
+Josh, I want to take us in a little bit of a more sort of flash-forward direction here. Folks should know that when you are using Levels today, it is an Abbott FreeStyle Libre device. You're not making your own CGM at all. Let's just talk about the scale of the company a little bit. Thousands of people that are customers, that are wearing these things, that are using this app, are entering their food to help understand how to correlate this meal precipitated by this spike.
+
+Obviously, it's a company, it's a commercial enterprise now, you started a startup. How did you come to the conclusion that actually, there's a start-up to be started here, and I can be the consumer brand rather than just assuming Abbott or whoever—the makers of the device—are going to be successful in the consumer market.
+
+Josh: I mean my patient-zero experience with the technology, the only reason that I paid attention here. It was just like, this thing has changed my perspective. It's given me confidence in areas that I didn't previously know anything about. It's informed me, much more than a textbook would have, about what's happening behind the scenes—nutrition, exercise, sleep, and stress—all-in-one device.
+
+This is something that has real potential, but there's a huge accessibility problem. It's not being used for general wellness, it's not being used for education, it's only being used frankly post-diagnosis when someone's already sick and things have already gotten to a bad place. The realization that across society, we have an epidemic of metabolic breakdown that is largely caused by chronic lifestyle choices.
+
+That is the key unlock is that we are breaking our bodies down over decades without feedback on the positive or negative effects of our choices. This has led to a situation where we have 90 million people in the United States with pre-diabetes, 70% of whom will convert to type 2 diabetes within their lifetime, and 84% of them don't know that they have this situation. It's because we're making these chronic choices without feedback. This was the tool in my opinion, and it's powerful for post-diagnosis to manage a condition, but potentially even more powerful to prevent that next wave.
+
+That's where things started to congeal in my mind that this could really bring a lot of solutions into people's lives. I had spent hundreds of hours, frankly, at this point pouring over research articles. You can't rely on that for people to get context for what's coming out of the device. It seemed the huge value proposition was building an insights layer on top of this raw data so pull it in.
+
+Oura, Whoop, and others do this now with heart rate and heart rate variability data. You take an LED that costs a few pennies and can measure heart rate, and you transform it into a behavior change tool by adding an insights layer that tells you what factors have affected your sleep, what a recovery looks like, and why you should want to focus in this area of your lifestyle in order to improve it.
+
+Ben: Or another allegory would be there's a huge amount of code between the sensor pack that's on the back of my Apple watch and the rings that Apple is presenting me on, hey, make sure you go on a seven-minute brisk walk before bed.
+
+Josh: Exactly. It's the difference between that Excel spreadsheet and a meal score saying, this was a 1 or a 9 out of 10. Helping people just understand, okay, large scale, I don't need to know the background data on what the optimal blood sugar range is and what milligrams per deciliter are, what a postprandial peak is. I just need to know that that meal is not working as well as this other one.
+
+That was the insight that it's really a data science problem. Ideally, innovation and hardware is going to be able to drive these sensors down to a more commoditized space. The value proposition is not going to improve if someone doesn't build the insights layer on top of it to contextualize and create behavior change. That's where things started. It just came together as what do I wish this experience had been like rather than what it was, and go build that.
+
+David: You started working on the company in 2017, right?
+
+Josh: Yes. It was actually late 2017, early 2018 when I full-bore on it.
+
+David: I'm imagining, from the outside—just thinking about what was going on at that time—that was right around the time of the rise of Hims & Hers and Roman. There was this new idea out there that things that are locked behind medical prescriptions but that really aren't dangerous and could be beneficial to large portions of non-therapeutic populations. There might be a way to get that to the public. Did you guys see that? Were you thinking the same thing? How did that come about for you guys?
+
+Josh: Absolutely. One of the earliest issues was like, okay, let’s say we build the app that provides insights, can pull in CGM data. Nobody has CGM's. There's no way to get your hands on them. No one's going to even google that thing. No one’s going to find that in the app store. We have to get the hardware and the software together into the hands of people who want it. That was huge. It was like, oh man, that's a big complicated hairy ball of pain to figure that out because these were Class III regulated medical devices prescription only.
+
+That's where things started. Actually, the accessibility of the hardware is the problem to solve first before we can solve the behavior change issue. Companies like Hims, Roman, and others were demonstrating a new model where you combine telehealth capability with low-risk medical products into a direct-to-consumer experience.
+
+It is a traditional practitioner licensed Physician reviewing information about their patient, developing patient-physician relationship, and then a mail order pharmacy powering the whole thing. But most of that is kind of hidden in an experiential sense from the end-user. It feels very much like ordering something online, which is really convenient. If you look at Romans numbers, they work in sexual dysfunction for men, and they've got massive conversion rates that no sexual therapeutic physician is seeing the number of young men come to them for Viagra at nearly the rate that Roman is. Because of the privacy and the sort of—
+
+David: Stigma.
+
+Josh: It's just like there's a lot of stigma there. This convenience factor and the privacy factor have probably allowed a lot of people to improve their lives that otherwise wouldn't. I think that was a very unique business model that they put together. It gave us a lot of ideas. Despite some owner’s regulations, there is a way that we can design something that would be elegant and as close to a delightful experience that you can get while still maintaining regulatory ethics.
+
+Ben: Just to put a fine point on it, what you're basically saying is, yeah, people are still totally getting prescribed. The doctor is just someone that's sending them a survey, communicating over text, and it's happening through a web browser that feels like it is an online checkout. A Little more friction as it should have, but you don't go anywhere. You can do it from your phone or computer.
+
+Josh: That's right. We set about developing a relationship with an independent network of physicians who intellectually are on board with the concept of informational biometrics. Using what would otherwise be used for management of a condition, but instead for education awareness. Starting there and then building the sort of platform where we can collect the information necessary and deliver it to the physician who will then engage in an asynchronous electronic consultation with that patient.
+
+These are all inside of the telehealth regulations that have been built and are, yes, definitely similar to the Hims & Hers and Romans. But building it in such a way that was specific and unique to the CGM, which again, this is a device. It's minimally invasive, it has a little filament that goes beneath the skin, but it's not a drug. It doesn't have symptoms, side effects, complications, allergy considerations.
+
+The risk is quite low, especially given that the user is not managing an acute condition. There is no situation where someone who's using Levels for information about their diet is going to inject insulin and potentially over inject due to faulty data. That's the situation that type 1 diabetes and CGM is built upon.
+
+Ben: What if someone says, yeah, I am type 1 diabetic. Do you say, well, actually you should go see a doctor about this?
+
+Josh: Right now the software that we're building is not approved as a medical device, it's not approved for diabetes management, although we are working as quickly as we can to get to the point where we could get this approved for therapeutic uses well. Today we aren't there, and it's really important that people who are managing an acute condition have a close relationship with their primary care provider, and all CGM data is being interpreted in a larger diabetes management context.
+
+It's a very different implementation for CGM. We will get there. I think there's tons of lifestyle unlock to be had for people with diabetes still, and look forward to getting there, but we're not quite ready.
+
+David: Yeah.
+
+Ben: Do I have it right that the regulations didn't necessarily change to enable this? It was just that several people all at the same time—I know Curology is one of them in the dermatology space, obviously Hims & Hers, Roman that you've talked about. It was sort of a reinterpretation or using technology to apply to existing regulations, not some new regulation that came about that made it possible.
+
+Josh: There have been some serious changes in the telehealth regulatory space actually since covid. Much of this was already plausible, but it wasn't clear. Many systems were, for example, not allowed to be used with telehealth. When COVID rolled around which is obviously a little bit after we had launched, we saw a huge number of improvements where physicians could be licensed across many states. Right now you have to be state-by-state licensed even to practice telehealth.
+
+You can also use the platform of choice. If you want to engage in synchronous consultation with a patient, you can use FaceTime, you can use Google Meet, or you can use whatever platform is most convenient rather than having to use these clunky—
+
+David: HIPAA compliant.
+
+Josh: EMR is what they're called where you have a built-in web client. It's just very old school and nobody has those platforms. You got to download an application, et cetera. We saw a lot of advancement in a span of an overnight awareness of how much these owners' regulations are sort of falling behind the times. Prior to that 2018, 2019, companies had been building inside of those owners’ regulations but primarily leveraging asynchronous capability.
+
+Many states do allow physicians to correspond just through written communication as opposed to having to be synchronous. For somebody who's not managing an acute condition, it's the most convenient path for them to engage in these sorts of optional medical product requests.
+
+David: It feels like, from just a business model standpoint, what this insight that you and other companies had around this time unlocks a whole new class of marketing. A, you’re marketing to a wholly different customer base than medical devices in a therapeutic sense were before. But that enables advertising as part of it or things like you go on lots of podcasts. You can talk to this whole population, and now they have an experience. It's not like you watched a TV ad for a drug and it’s like, talk to your doctor about so and so.
+
+This is something that could be additive to your life just like an Apple Watch, just like a Fitbit, or the like. If you want to experience this product, here's an easy consumer-friendly route to do it. You don't have to go decide, yeah, I'm going to make an appointment, I'm going to remember to bring this up. It might be a little embarrassing, my doctor might make me feel weird.
+
+Josh: I think this goes to the, why now the question of digital health, which historically, there are two ways to approach health. It's like you're either general wellness and making only general statements. You're just saying like, eat healthier and work out more. Or you're going down the route of a medical experience, which is—as we all know—peppered with regulation, very complicated, inconvenient. There's quite a bit of friction there.
+
+If you look at the space, this is how the companies filter out. You've got the Livongos, the Omadas, and the Onduos—these are organizations that once you're past the diagnosis phase, well now you're in the captured audience. It's like your insurance will reimburse, your doctor will prescribe, customer experience.
+
+Ben: I will say, it is amazing. There's a PSL Ventures company that we've invested in, Alertive. There's so much innovation in this space, even if you're not going the direct consumer route you guys have gone. What Alertive is showing is, well, what if you just bring these great Omada and Livongo—these great consumer experiences—to that existing funnel population rather than the new unlock. They're like two different paths of innovation going on here.
+
+Josh: Totally, no doubt about it. If it becomes too inconvenient, we just avoid the medical experience altogether. It's like, I'll just kick the can down the road, and certain people can't. It's like they have a legitimate condition. It's so challenging to carry on your day-to-day life and have a healthcare issue because the system is not designed for convenience.
+
+Ben: To your point, once you're in that, you also should have a great experience.
+
+Josh: Exactly. There's a ton of opportunity there. It's been like, you have superficial population generality happening in the digital space for the general wellness group. Once your post-diagnosis, you get more targeted, more consistent information, but the friction level is so high and the actionability of the data is just not the focus.
+
+I hate using terminology like this but it is very true. Once you're in the captured audience, you have a payer who's going to reimburse, you have a doctor who is going to draw from their list of potential treatments, and they're going to diagnose and prescribe. Then you—the end-user—are just going to go through whatever experience has been built. It's like your feedback, your customer experience, your process of improvement falls behind I think where any consumer mass-market consumer product would be just because there are so many conflicting incentives in there.
+
+David: You mentioned, payer for folks in the audience who are deep in the space. We're talking about insurance companies mostly, maybe employers occasionally, and the government too through Medicare or Medicaid. This is where that business model, if you’re a medical device company, if you’re a pharmaceutical company, if you're something that's been historically operating in the therapeutic space, it's a great business.
+
+This is why biotech, this is why medical device venture has been a thing for so many decades. But it's so different from the tech world where you get something, you demonstrate efficacy, you prove that to payers—all those categories over a long period of time, and then you basically just have a license to print money forever.
+
+Ben: It's classic disruptive innovation versus sustaining innovation. If you're working within this existing system, you can make the patient experience 10 times better, but you're still working within insurance companies, billing codes, and existing clinics. Again, can be a great business.
+
+David: It takes years to get that setup, where you’re like, yeah, I got the code from a billing code.
+
+Ben: The Levels, Hims & Hers approach—that's the disruptive innovation. It's exactly, Josh, what you're talking about, you bring your spreadsheet to your doctor. Frankly, right now, I'm even thinking about, okay, I have my Levels data and I want to figure out if I'm diabetic. Well, I should go talk with a doctor and show him my data. I do get this sense that I'll get kind of laughed out of like, what is this toy? This is not a medical experience. Come on, don't come to me with this.
+
+Josh: Again, it comes back to the way that the healthcare system is set up here is all oriented, and it wasn't always this way, but I've talked to many doctors who believe this is the route. The insurance coding system changed everything.
+
+Once it became a requirement that a physician enters a diagnostic code in order to proceed with treatment, everything changed. It went from the nuance of an individual to if you don't fit this bucket, I can't do anything for you. This is the reason that no one—this combined with, I think, well-intentioned but overreaching data privacy rules, has led to a situation where no one uses their healthcare data to make a decision in their lifestyle ever. I can basically make that statement and feel confident about it because it's just true.
+
+People get their blood work done once a year, maybe. You get a single point that's extrapolated to define your health overall. You don't use that to decide what to eat for lunch. You don't know whether or not you're sleeping well. You have companies that once you're in that diagnostic coded section, it’s like, all right, I get this amount of reimbursable. It doesn't matter whether my product is 10 times better, I'm still going to get that same reimbursement. My costs go up but the payer’s not going to pay me more.
+
+You have a situation where everyone is forced to conform and you get one option. The consumer, no matter how price-insensitive they are, if they're using an insurance reimbursement route, they don't have a selection choice. I think the future is a situation where you're hybridizing this, you're taking really high-quality information, you're going cash pay only direct to consumer, and you're providing the framework to meet the regulatory requirement. But you're sort of working outside of the three-party system.
+
+You're saying, this is the premium option. If user experience factors into your healthcare journey or your general wellness journey, this is the option that can deliver that quality of experience. We're going to see a move in this direction because that also unlocks traditional market forces. Now, you can have a situation where economies of scale step in, prices drop, and now you're genuinely competing. It may start out pricey, but with time, I think we can get to the point where these premium non-reimburses options are actually price competitive.
+
+David: Okay, great. Let's talk about your business model at Levels and what your vision is for how this works. Maybe to start, can you walk us through—just from a business model—how Levels works today, maybe a little bit where you're thinking about is the next step down the road, and then after that?
+
+Josh: For sure. Today, we're still in development. We're in what we call our beta mode, which is invitation only. But the process is you get invited into the beta and you fill out kind of an ecommerce like checkout experience. You pay for the program and then you move into a questionnaire process, which is a prescription consultation intake form.
+
+You fill out some of the medical history required there, that gets transmitted to an in-state physician. This physician is part of a network that is wholly independent of Levels. They’re licensed in the same state that you reside in, they review your consultation form, and they determine whether or not an informational CGM is right for you, the individual.
+
+This is entirely in the physician's hand. Levels has no control over who gets a prescription, who doesn't get a prescription. That's required for, obviously, ethical independence. The physician doesn't have any requirements, quotas, or anything like that from Levels. After that process and potentially an exchange of information, the physician may have extra questions they ask the patient, it's entirely up to them.
+
+Once we get a determination from the physician, we then fulfill if a prescription was received. We fulfill that order through our mail order pharmacy partner. That whole process feels very seamless to the end-user, and you end up getting access to a CGM device if prescribed, and the Level software. Then you go through a one-month experience where you wear the CGM system, you go about your life.
+
+The first week we recommend you don't really make any changes. You just see where you are, how your body is responding to the choices you're making, the nutrition selection, the exercise you're doing, the sleep that you're currently sustaining, et cetera. In the middle two weeks, we recommend you start exploring. Try things you maybe don't normally do, eat different foods, sleep well, walk after meals—all of these different metabolic challenges, testing the boundary cases. And then the final week the goal is to string what you've learned together into metabolic optimization—shoot for your high scores.
+
+After that one-month period, people have developed metabolic awareness. For the first time, they've closed the loop between the actions they're taking and the reactions their bodies are experiencing. They've been in communication between body and mind in a way that previously wasn't possible because we don't have a sensory feedback mechanism for the quality of our nutrition.
+
+That metabolic awareness, they’ve only been practicing optimization for a week, but the lessons learned are quickly turned into habits. When you first see that 10–, 15–minute walk after an indulgent meal can completely modify your body's ability to process that sugar. That lesson sticks with you in a way that, hey, you should walk after meals as general advice, it doesn't. It’s specific to you. It's grounded, and objective data. Those are the little magic moments that we're looking to uncover as often as possible in the one-month program we've built.
+
+David: Cool. The one-month program is a beta. What I think is so interesting is the price to participate in the program is $395, right?
+
+Josh: $399.
+
+David: This is what's so fascinating. This unlocks so much. On the one hand, for a consumer product, that's a lot of money. On the other hand, there's no other way you're going to get access to this, and is the value of learning that worth $400? Well, it's up to an individual person. You have thousands of people that have done it, 20,000, 30,000 people on a waitlist. It turns out, there's a large population of people out there that are willing to do this, right?
+
+Josh: Yes, thus far we've had about 7,000 people go through the beta program. We actually have about 105,000 people on the waitlist right now trying to get in. Again, we're in beta mode. We're really putting no effort into marketing. We're doing a lot of educational effort. Podcasts and our content platform are a prime driver of attention. The company is currently designed, we have our product effort, our content effort, and our research effort.
+
+One of the core issues we’re facing is that metabolism, as a word, is not common. Nobody is thinking about metabolism let alone metabolic fitness. We need to inform the world that this is something you should care about. To do that, we can't rely on osmosis from product experience, especially if we're an invitation-only mode right now. The education effort is to build a world-class content platform that helps people understand what it means to be metabolically fit and why that matters.
+
+Your brain, your body, all the cells, and all of the tissues in you need the energy to survive and to function. If your energetic production systems are failing, you cannot experience mental health, you cannot experience physical health. It's truly the situation where metabolic fitness underlies physical fitness, it underlies mental fitness.
+
+We talk about the other two, but we don't talk about the foundation. The content effort is in and of itself intended to be the leading source of education about why you should care about metabolism. Our research effort is then going to pair with our direct consumer product to look deeper into mechanisms, into efficacy, into effectiveness.
+
+We'll take the large data sets, the trends from those from our direct consumer group. We’ll take the research findings, and looking ahead in the roadmap, combine that information about how people who don't yet have a metabolic condition to concern themselves with are still improving the markers of long-term risk through just simple behavior change in their daily lifestyle. That I think is how we get to the point where, eventually, the consumer product is covered for insurance, self-insured employee programs, et cetera. It's sort of working backward.
+
+David: You think you can get to a point where payers, not consumers, will also be paying for Levels?
+
+Josh: The way we're going about it is we're starting off with the direct consumer play very deliberately. A big part of that is that A, we're going cash pay. We need to unlock the traditional market forces, we need to get out of the situation where the product is forced into conformity. That will allow us to open those economies of scale and drive prices down. That's necessary, you can get to the socioeconomic considerations.
+
+The second thing is if we can please a discerning audience for a premium product, we can build an exceptional experience, it's table stakes here. I think that will ensure that the enterprise offering is well-received. If we just design something for B2B, a reimbursable, we fall into the same trap that so many other products have that user experience doesn't matter, what matters is selling in an organizational decision-maker that this is something they should add to their offering.
+
+By working backward, not only will we be able to demonstrate with the data we're generating from our paying customers that this is important and that it is helpful. We'll also, I think, achieve a quality of experience that we wouldn't get if we worked in the other direction—going from Enterprise product to consumer product.
+
+David: To just completely beat the Elon analogy to death, it's like Levels current iteration is the Model S, very expensive. You guys have double-digit millions of revenue on your waitlist sitting there right now. You can use that to make the Model 3 to bring the price down, and then you can use that to launch the robotaxi fleet to vastly expand access.
+
+Josh: I actually think we're even earlier. We're in the roadster phase. It's expensive, it's hard to get out there, we don't have a huge scale. We know very well that this is the mode wherein. But if we can satisfy the roadster crowd, we can then take that success and the economic foundation that we build through a secure higher-margin business model, and start to work down the market. We need to get to the model 2 stage, model 3 is even too expensive for most people.
+
+Looking at the environment or really the landscape of metabolic dysfunction, it essentially focuses on the lowest socio-economic groups. It's the people who have the least ability to access the Levels program who need it the most right now. We're well aware of that. It's going to be a process. In order to get to that mass-market option where you have real-time data informing your decisions every day, we need many things to change. It's got to be hardware innovation, it’s got to be software intelligence, it's got to be a regulatory improvement. Tons of different very complex systems have to adapt for this to happen.
+
+Similar to what you've seen Tesla do, the entire market has adapted. I mean, the whole automotive industry is different now. That is all building inertia towards the zero pollution future for electric vehicles. I think that's what Levels hopes to do is trigger this new market, trigger innovation, make people aware that real-time data, biometric data, health data being used in our daily lives is the key to turning around the frustrating complex and failing medical outcomes we're seeing.
+
+Ben: All right. Before we move on to the final part of our conversation, we would like to thank Perkins Coie, the official legal sponsor of these special episodes of Acquired. As longtime listeners know, Perkin Coie is a premier technology-focused international law firm known for providing high-value strategic solutions and extraordinary client service to businesses ranging in size from startups to Fortune 50 companies.
+
+I have personally worked with Perkins and it's been an awesome experience. I know several other Acquired listeners who feel exactly the same way. Clients rely on Perkins Coie for council on formations, IP protections and enforcement, financing including IPOS, as well as the classic financing events in the private markets, and mergers and acquisitions among other areas. They also advised VCs in fund formations and in investments, and represent their portfolio companies throughout the arc of their growth. To learn more, you can click the link in the show notes or visit them at perkinscoie.com.
+
+Just to play devil's advocate here a little bit, Tesla didn't just make really good software that then got shipped to a bunch of GM and Toyota cars. They redid the whole thing from scratch. Sort of a two-headed question here, why isn't Abbott and the device manufacturers building the insights layer and building the consumer platform? Then two, do you think eventually you also need to become a hardware company to really apply best-in-class research and push the consumer experience that you want to create?
+
+Josh: It's a great question. Tesla did start off with—the concept was, we’ll take AC propulsion, batteries and software, and we’ll combine them with Lotus.
+
+David: Yeah, the two zero.
+
+Josh: That didn't pan out, and I think for a number of reasons. We're in a better situation where the hardware is really convenient, it's really good. I mean, I've been wearing a CGM from Abbott and/or Dexcom for going on three years now continuously. The biggest issue remains the insightfulness and actionability of the data. That's where our core competency, our core focus is centered, is improving the delta between the raw data coming out of a device and behavior change that needs to happen.
+
+For right now, although there is ground to be covered on the hardware, no doubt. I'm also looking to the future where sensors are not just measuring one analyte, they're measuring multiple, and they're doing it seamlessly and in combination with say, superficial metrics like pulse, body temperature, et cetera. That is the direction we're moving. I think we will evaluate all of the options necessary to make sure that that future comes true.
+
+We're not going to stand by and just like, hey, we got great software. Anyone want to give us great sensors too? It'll be a situation where we're going to jointly develop and/or create the attention necessary that there is a market here but innovation has to happen to feed it. Certainly being a hardware systems background myself, I'm more than happy to get my hands dirty if necessary.
+
+Ben: I bet. From a value capture perspective then, as I think through the value chain of you're providing the insights layer, the software, and the consumer experience, you're relying on other people to provide the hardware. This hardware has been in development for a really long time. How much of what the consumer ultimately ends up paying do you get to capture versus having to pass along to the device manufacturers?
+
+Josh: As I touched on, our program includes access and fulfillment of the CGM sensors. It's kind of an all-inclusive product experience right now. We have pretty good margins on the order of 50%–60% for the one-month program. We are also introducing a subscription model, which of course has lower margins, price point driven primarily by the sensor cost. These devices are still fairly expensive.
+
+In our subscription model, we don't make any money right now. It's kind of the second tier of product offering to our one-month experience. One of the reasons is that in development mode, we want to get maximum throughput, we want maximum fresh perspectives for feedback reasons. We've been biasing towards the one-month experience slowly. We have been slowly but surely, trickling into a subscription offering. Again, not making really much on that product, but it does really down select for the most intent of our members.
+
+People who are like, I absolutely cannot stop using this, I need to subscribe. They're the ones that find the subscription offering and get in there. For that user group, we're getting such high-value information about who they are, why they are subscribing continually. That will inform us about what a subscription has to be to really have staying power. We'll be starting to shift in that direction simultaneously with, I expect, some improvements and unit economics for the hardware, which I think are coming in the next 12–18 months.
+
+David: I would imagine too, the subscription part of Levels would become so important over time, for lots of reasons. One, to simply from ongoing value to your customers, but also defensibility and moat for you guys. If all of my data and all of my insights around that over a long period of time are in Levels, well, of course, I'm going to keep using Levels. But also, it's reminding me of our big episode on Meituan, the Chinese super app.
+
+One of the most critical factors for Meituan and surviving the war on so many fronts against thousands of other companies in China was the Dianping reviews database. The data from all of the reviews allows them to drive recommendations and insights of what to order for dinner, where to travel, or where to book so much better than just a flat system. I imagine for you guys too, the more data, the more ongoing data you have, the better your insights layer becomes.
+
+Ben: You guys got to pry My Fitness Pal out of Under Armour to be huge, to have that sort of auto-completed, auto-macro filled-in data set.
+
+Josh: Right now we're definitely biasing towards low overhead for the user to log. The goal is actually to connect the outcomes of your choices with the inputs to you. Just surfacing a picture reminds people, okay, what did I eat and what portion? What was the composition of that meal? Then giving them a score along with it helps to educate them very quickly with minimal input requirements on whether or not that was positive or negative.
+
+Those right now—requiring macro tracking or requiring calorie counting—become onerous and our adherence drops off quickly. We've done a bunch of experiments with this. I agree, the future is to get more information from those who are willing to volunteer it.
+
+In terms of the switching costs concept here, I think this is where a competitive advantage really lies. Again, we're focusing entirely on data science, and on the actionability—the behavior change platform. The metrics that we’re producing, which are composites of a number of clinically relevant data points about a blood sugar curve—how your body responds to a meal, how quickly, how high it goes, how long you stay elevated, all of this stuff is packaged into a composite that is actually quite sophisticated and getting better all the time.
+
+That's where the metrics turn raw data into behavior change opportunities. The majority of the value is there. I do believe that as we continue to dive into the research, develop the largest data set of its kind, we currently do have—by coming up on an order of magnitude—the largest data set ever in non-diabetic glucose, especially when paired with lifestyle information.
+
+We're still in invite-only beta mode. The opportunity when we do go to market is going to be tremendous, and it will continue to allow us—like you said, as the dataset enlarges our phenotyping will improve. We'll be able to identify you’re like this group, and these are the recommendations and insights that we can sharpen to make it more individual, more unique, and ultimately improve the outcomes for each person.
+
+Ben: That's great.
+
+David: It’s so incredibly impressive, speaks to you guys about building a company in a short amount of time. This incredibly complex space, getting to market, dealing with the regulatory issues, prescriptions, getting 7000 people through the program. But it speaks even more to the industry and how far behind it. I mean, CGMs have been around for over 10 years, and that you already have the largest data set of non-diabetic, CGM data of a population out there, that's crazy.
+
+Josh: Yeah, it is. One thing that I like to look at is just the historic kind of bifurcation of the market. We've seen so much data generation in these—it sounds like a derogatory term but—superficial metrics. This is your pulse count, your step counts, so much of our wearable data is oriented here. I think the reason that things are different now and going forward is that we've had a quiet microelectronics revolution, we've had software eating the world—all this stuff’s been happening, big data analytics are getting better and better.
+
+In the meantime, we've also had more individualization and personal ownership concepts bubbling up. All this is coming together into a moment where people want to know more about themselves specifically. They don't know about averages. There's enough awareness that just looking at 23andMe where we thought that a specific gene would tell you enough to know what to eat for lunch. That's just not the case. The uniqueness of the individual is so multivariate that you really need real-time continuous feedback to know whether things are improving for you.
+
+We're seeing a moment where all the pieces are in place where we can decentralize the solution. By building large enough data sets—obviously, anonymized in order to run research and sharpen insights—you can decentralize the actor down to the minimum viable one, which is the individual. Rather than trying to solve nutrition with legislation or policy, you can instead have each person solve for themselves, multiply that by enough people, and you fix the social scale problem without having to pass some complex administration back, do you know what I mean?
+
+David: Obviously, the food pyramid doesn't work.
+
+Josh: I mean, just look at the way things have been done historically. All well-intentioned, but the goal is just too broad. It's to try and solve for the average person. There is no such thing as the average person, there's the individual.
+
+David: Josh, before we wrap up, I, at least have one question I’m dying to ask your thoughts on—I know you don't have any inside information on this front. The rumor in this space has been for years that Apple is working on bringing this CGM technology non-invasively to the Apple watch. Do you think that's going to happen anytime soon? If it does, I imagine it's a huge unlock for Levels as the insight layer for this.
+
+Josh: Yeah. I spent a lot of time diving into the future of the tech and thinking about, how do we set up the chessboard so that the innovations happen that need to happen? Apple is dealing with situations where they can't break the skin, it will destroy the image of what an Apple product is, frankly. They have the toughest go at it. We can work with the hardware that exists, which does go below the skin and it gives you direct interaction. That filament is interacting with molecules of glucose in your skin. It's the gold standard for measurement in real-time.
+
+Apple needs to solve what I consider a mechanical miracle, which is a non-invasive measurement of a colorless small water-soluble molecule in a fluid, which is primarily water. And they have to be able to do it in concentrations and resolutions that are useful for people that don't have diabetes. The fluctuations are smaller, concentrations are tight, accuracy is important. I’m hopeful. It's called Raman spectroscopy is what I think the technique they're working on it, it's a light scattering technique.
+
+It's complicated. I've heard the rumors that the next generation of the Apple Watch will have it. If they do, I'm going to absolutely be blown away and I'm going to be excited. Because if you look historically, the Apple Watch is one of the best selling products of all time, and yet Apple typically delivers the hardware before the software solution. It gives Levels, like you said, the opportunity to leverage a prolific non-invasive option and build the insights layer on top of it to help people contextualize.
+
+Apple has had the hardware necessary to do exceptional sleep tracking for a long time, but they haven't. They put the hardware out there and other companies fill in the gap for sleep context. I think we would take the opportunity and very quickly leverage that. I think we're in a good position to benefit from really any innovation in the hardware space today.
+
+David: These events now come with much less frequency, but back in the day, every time there was an Apple keynote for a new version of the iPhone with new hardware sensors, that just launched an opportunity for so many companies. I mean, Apple adds great cameras to the iPhone, well that enables Instagram. Apple is not going to build networks on top of this. Apple is not going to build great dedicated consumer software services on top of this. That would be a massive opportunity.
+
+Josh: I tend to agree. Not to mention, the non-invasive measurement of a molecule and that concentration opens up the space for future analytes tremendously. That will strictly be a benefit for what we're trying to achieve, which is to solve the metabolic health crisis. We didn't really touch on the global implications, but estimates are that 30% of the global population is pre-diabetic, and 70% of those will progress to type 2 diabetes in their lifetime. We're talking about billions of people today who are on a path towards health and really dramatic degeneration of their bodies over the next 10, 20 years.
+
+Something has to change, it's got to change soon. It's not a situation where Levels wants to own every piece of that process. It's really a situation similar to the energy crisis where everyone's got to go all hands on deck on this thing. I would welcome Apple cracking this one because we can always refine the insights they provide at scale to better the outcomes for specific use cases.
+
+David: Totally. Josh, this has been awesome. Thank you so much for joining us. For listeners, how can they get in touch with you? How can they interact with Levels? How can they get on the waitlist?
+
+Josh: First off, thank you so much for diving into this stuff with me. This is a really exciting conversation. It gets the wheels spinning to dive into the tricky questions, I love it. Anyone that's interested in Levels should definitely jump to the website levelshealth.com. You can sign up for the waitlist right there and also access the blog. It’s that educational opportunity to discover what metabolic awareness is, why it's relevant, and follow along as we introduce more insight into how the product is affecting people today and how it's helping them understand themselves better.
+
+Then check us out on Twitter & Instagram @Levels, and you can follow along, in real-time, as people roll out their personal insights.
+
+David: Cool. What about for members of the Acquired community like Ben, Miz, and others who might want to come work with you guys.
+
+Josh: I would love to be in touch with anyone who hears this conversation and gets excited. We do have a careers page at levels.link/careers, but also just reach out to us either through the Acquired community to Miz or Ben [...]. I'd love to provide my contact info directly to you guys to distribute to your community. You'll end up with my email address. Anyone that's interested reach out directly to me or Sam. We’d love to talk about the scaling opportunities that we have, a lot of challenges to be solved.
+
+David: Great.
+
+Ben: That's awesome.
+
+David: That sounds awesome. Listeners, thank you for coming on this health journey with us. We're excited to be diving into these new areas on Acquired. I hope to do more of it coming up soon.
+
+Josh: Thank you, guys.
+
+Ben: Well, with that, our thanks to our presenting sponsor Kevel, also to masterworks.io, and Perkins Coie. Listeners, we will see you next time.
+
+David: We'll see you next time.
+
+‍

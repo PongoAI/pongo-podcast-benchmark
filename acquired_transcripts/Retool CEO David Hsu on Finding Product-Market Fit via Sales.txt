@@ -1,0 +1,485 @@
+Ben: Hello, Acquired listeners. Welcome to another great episode of ACQ2, our interview show. We are very excited to have David Hsu on with us today. David, I think this was one of the most mind-expanding founder interviews we've ever done on this show.
+
+DR: Totally. David and Retool are super cool. I don't know anybody else who went to Oxford to do a custom dual major program in philosophy and computer science.
+
+Ben: And then started a B2B SaaS company basically immediately out of college.
+
+DR: Right? It's so fun. David is super cool. I'm really glad we had this conversation with him.
+
+Ben: Me too. If you missed our last episode, it was a show that David and I did as guests on My First Million with Sam and Shaan. If you haven't had a chance to listen to that, it was very fun, quite different from the normal type of stuff that you and I do, David. Sam and Shaan definitely go places that we don't. If you like it, then head on over to My First Million and you could subscribe to their show.
+
+DR: I love those guys.
+
+Ben: All right. Without further ado, on to the interview. David Hsu, welcome to ACQ2.
+
+DH: Thanks. Excited to be here.
+
+Ben: We are very excited to have you. You are the founder and CEO of Retool, which I know many folks in the audience have used or have friends at other companies that use the product. What is the best one liner to describe Retool?
+
+DH: It's a fast way to build internal software.
+
+Ben: I like that. I've always thought about it as it replaces admin.mycompanyname.com. I feel like every company I've ever worked at has taken Twitter Bootstrap, built a whole bunch of custom stuff on top of it, and then subdomain it admin-dot until Retool came along.
+
+DH: Totally, yeah. It's actually a surprisingly hard thing to explain to your mom. Typically, we'll say it's like Legos for code or something. It's the best non-technical expression we found.
+
+Ben: We'll get into definitely more on the product side later. Listeners, just so you have a little bit of context on Retool, it's about 300 employees. They've raised $190 million. It's a six -year-old company founded in 2017, which is crazy that that was six years ago. David, you've actually been cashflow positive in recent years from what I've read.
+
+DH: That's right.
+
+Ben: Backed by great investors like Sequoia, BOND Capital, Elad Gil, the Collisons, Greg Brockman from OpenAI, Paul Graham at Quiet Capital. You guys have made something that has obviously attracted a lot of investment and a lot of usage. What we're here to do today is chat with you about a few different topics that I think you're pretty contrarian on.
+
+The first one is product-led growth, where I think this has become something everyone has accepted at absolute face value that this is the new way to go, this is how everyone should go to market. This is how, especially for a tool like Retool, your customers should adopt it with no salespeople. You and I were chatting before and you're like, yeah, I don't buy it. PLG is not the way to go. What are your feelings here?
+
+DH: I think PLG is super dangerous at the beginning of starting a startup, before you know you have product/market fit or not. When you launch something, as we did with Retool, you'll launch out into the world, and you honestly won't know what people think about it. You'll be like, okay, great. It seems like I got some signups. Are they converting? Not really. I don't really know why.
+
+Trying to PLG your way out of that is impossible. You probably actually don't have product/market fit. You probably need to pivot your product a little bit. You pivot the market a little bit, but all that is really only discoverable via sales, and sales is basically talking to customers.
+
+I think nowadays, a lot of founders that I meet say, oh, we're going to start a great SaaS business. It can be PLG, it's going to be super efficient, which is great (I think) when your company finds product/market fit, when it gets a few million in revenue. But actually, when you just start it out, talking to customers is the best way of figuring out whether you have product/market fit or not. When we started Retool, it was all sales at the beginning.
+
+Ben: It's very easy to digest the idea that you should do customer development at the beginning of your company and then transition to whatever go-to market motion happens. I think this is the organic way that most people start companies. Are you finding that having a true salesforce is a way to continue doing customer development in a more rapid way than you would get to otherwise?
+
+DH: Yeah. I guess another way of phrasing it is I would probably say sales is I think pretty underrated in the early innings of a startup. If you look at most PLG ecompanies—Figma, for example, Notion, or Airtable—those companies (I think) existed for three or four years. They were (I think) by their own admission wandering around in the desert at the beginning, where they released a product and they're like, okay, great. I think people are using it, but I'm not sure how I need to pivot my product in order to attract more usage.
+
+I think after three or four years of iteration, they find, oh, here's the insight that really works, and we can really scale this up, but that took four years. If you're talking to customers earlier—you can talk to Dylan about this; I think Dylan is by his own admission again—would say, I wish we had talked to customers earlier instead of just developing the product in a garage, if you will.
+
+I think sales is maybe underrated at the beginning of a startup because it tells you so much about how customers think about your space, how they feel about the problem, how they feel about your solution, et cetera. That is gold when you're a pre-product/market fit.
+
+DR: Were you doing all the sales? How did sales operate in early Retool land?
+
+DH: How it worked actually was that everything was outbound at the beginning because before we had launched, no one knew about us, so there was no inbound. I don't want to go to our website. At that point, it's retool.in. It was like retoolin, so no one surprisingly go to our website. The only way we knew how to get customers was by sending emails to them. There's no other way, basically.
+
+Funnily enough, the first time I posted Retool to Hacker News, I think I called it something like Show HN: Retool. It's Excel-like with higher order primitives. That was actually the messaging that we used in outbound emails, too.
+
+Unsurprisingly, that combined with the Retool and domain name, no one really replied. After no one replied, we're like, okay, well, maybe we've got to pivot a few things here. Maybe let's pivot the subject line, for example. Maybe let's pivot the messaging inside. Maybe let's pivot the website, maybe the domain name even, et cetera. We pivot a lot of those things.
+
+But honestly, none of that stuff would have been obvious to pivot, really, had we not been doing outbound sales, basically. When doing outbound sales, what happened was, I remember one hypothesis we had for Retool going outbound was Retool conceptually is similar to something like FileMaker. FileMaker, it's a product that was bought by Apple, I think, maybe 10–20 years ago.
+
+DR: At least 20, I think.
+
+Ben: I think I used FileMaker in the mid-90s.
+
+DH: Yeah, it was great to build a simple line of business application. Our hypothesis was, what if we emailed all FileMaker developers and tried to tell them that Retool was a better FileMaker, which, to some extent, it is actually. We emailed maybe 200–250 of them. Of those, maybe three replied, two were nos, and one was no, let me get on a call and tell you why your idea is so bad.
+
+DR: You're like, great, you're saying there's a chance.
+
+DH: We pretty quickly learned that, actually, FileMaker developers were not the best audience for Retool. I can imagine, had I not had the phone just launched Retool as a FileMaker but better, I'm confused for a while about why this wasn't working. I'd be like, is it that there are not enough FileMaker users out there? Is it that we're not sufficiently better than FileMaker? Whereas in a conversation, you can learn that much faster.
+
+Through a lot of pivoting, if you will, we tried many different kinds of messaging. In the end, what we found was that Retool was particularly effective for a CTO or a VPE of a fast-growing operationally-heavy company, so a delivery company or a fintech company. That's an insight that I think would have honestly been very hard to generate a priority. This is that if I had just looked at the world and said, here are the companies that would use Retool, it actually would not have been clearer, basically. And the best way to pitch it was saying that it was a fast way to build internal tools, which at that point, we were just almost this generic, higher-level Excel, if you will.
+
+DR: Which is very different from a fast way to build internal tools.
+
+DH: Yeah. To get us a little off the path, it was really all talking to customers and all doing outbound sales.
+
+Ben: Horizontal productivity applications have this very difficult early day path. Because if you're a vertical SaaS application, you can say, hey, you were a system of record for lawn care companies, or we're a CRM for small businesses like Wealth Advisors who work with people in their local community. It's very easy to grasp it and understand it.
+
+But when you're inventing a new paradigm that can be used for so many different things, you use the phrase Legos or building blocks earlier, that has to be a unique messaging challenge for helping people understand what you are. I'm curious if you had a moment, where through some demo, video, or a use case, you were able to make people go, oh, I see. I understand what you're talking about now.
+
+DH: Yeah. Surprisingly, the best way right now to explain Retool still is by showing someone the three-minute demo video because then, it becomes pretty clear what exactly Retool is or what is going on. Weirdly enough, though, we generally don't have the problem of the horizontal niche of the product making it difficult to adopt.
+
+DR: In the same way that I was imagining Notion, as Ben was saying that, like, oh, you can use Notion for anything, but what should I use it for?
+
+DH: The reason why I think it's been easier for us to sell a horizontal solution is because we sell to engineers. Actually, if you think about the BATNA, if you will, that an engineer has this alternative as a Retool, that basically is build it from scratch via React. If you think about React, React is a pretty horizontal platform, too. It's not verticalized for lawn care, for example. Whereas I think with Notion, it's probably more difficult because in the Notion case, maybe they are actually replacing verticalized software.
+
+Like you said, if you have a CRM, for example, and you're mowing lawns, you could choose to use Notion for that, or you could actually choose to use a specialized CRM for that. Whereas in our world, typically the BATNA basically is you build from scratch in-house. To do that, you use a horizontal product called React or JavaScript, for example, also very horizontal.
+
+I think we've been fortunate, but that's the sample of something that was not an insight that we had when we first started Retool. It just so happened to be that way. I think so many things about your business, you learned, and you're like, wow, I sure am glad, we're still the developers. Four years later, for example.
+
+DR: In those early days, how did you have this philosophy? Maybe the better question is, why did you have this philosophy that you needed to do sales and you needed to do outbound sales? You are making a very technical product for a technical audience, developers, who the standard traditional playbook is they hate being sold to, and sales is not a natural motion here. How did you end up coming to this, oh, yeah, we're going to do sales?
+
+DH: I thought of sales as the best way to get a grip on reality, especially outbound sales. We actually did a bunch of investor intros, basically. Like hey, can you tell your portfolio companies about Retool, and maybe they can try using it? That actually gave us a very warped perception of reality because they were all very happy to take the call that they didn't convert it. We're like, wow, what's wrong here? Does our product just suck? Why is it so low converting?
+
+Whereas outbound sales, if they don't like the product like the FileMaker person, they will tell you exactly why they don't like it. They don't have any allegiance to you, basically. Sales (I think) was the best way to understand what potential customers genuinely thought about you and your product. Having a firm grasp of reality was always very important to me.
+
+DR: Had you done sales before? You don't seem like you were at all afraid to be told that your baby was ugly.
+
+DH: No. You might as well find out earlier that your baby is ugly. You figured out ways. You pivot it, maybe, for example. I studied philosophy in college. I think I'm obsessed with reality, if you will. It's fun to find it, understand it, and pivot it, if you will.
+
+Ben: Did you start retool right out of college?
+
+DH: Yeah. I think maybe six months after college, we started Retool. When we started Retool, it was because we ourselves had built so many internal tools before. A few friends and I have worked on a bunch of other side projects, if you will. We discovered with every side project you work on, you have to go build, like you said, the admin dashboard for it. Building the admin dashboard is so painful. Every engineer hates building the admin dashboard. We thought there's got to be a better way, so that's how I started Retool.
+
+DR: These side projects, were these hustles? Were you trying to make money in college? What was happening here?
+
+DH: Those are pretty fun ones, yeah. Some of them made money. Actually, some of them made what seemed to me like tons of money back in college. I went to Oxford in the UK. In the UK, they have these balls, basically. I built a ticketing system for these balls that actually made quite a bit of money.
+
+DR: Balls, you mean dances, parties?
+
+DH: Yeah, basically. That itself is actually a pretty interesting business, where they sell maybe 500 or so tickets for maybe £200 each or something like that. It actually is a reasonable sum of money that sometimes they sell maybe a few thousand tickets, for example. They basically have to figure out how to burn it to something like a million pounds a night. It's pretty interesting. You get fireworks, you get all sorts of fun things. But one way to burn that money is spending it on a ticketing system.
+
+Ben: I was going to say, what's your cut as the provider?
+
+DH: That was great because I could bill on a percentage basis. I would say 5%, for example, I can negotiate a rate with Stripe, let's say, 2% and I'd get 3%. It was a pretty good business.
+
+Ben: Help me square a circle here. You're starting all these startups in college at Oxford while a philosophy major like self-taught computer science. How were you starting startups and studying philosophy?
+
+DH: Actually, I studied philosophy and computer science, which is actually one degree, which is the main reason I went to the UK. I grew up in Palo Alto. Another reason was I just wanted to get as far away from my parents as I could because they were in the way. I went all the way there.
+
+It was actually one degree, which is really interesting because you learn about a lot of fun things. For example, can computers think? Nowadays, for example, generative AI, is that thinking? They're not thinking. What does thinking mean?
+
+Ben: Do you have an opinion on that?
+
+DH: I think GPT-4 is not sentient. That's a pretty weak claim, I think, because I don't know if many think it is.
+
+Ben: To what standard do you measure sentience?
+
+DH: I think intentionality is probably one, which is, does the computer have a will? For example, when GPT-4 says, I want ice cream, does GPT-4 really want ice cream or not? I think probably not, I think it's more of a statistical model. It just so happens that if you prompt it with ice cream that is tasty, then it says I want ice cream, rather than it actually feels that it actually wants, but it's quite tricky.
+
+I think a fun analogy here is ants themselves are actually quite dumb, but an anthill or an ant colony is actually quite smart. It actually displays intentionality. If you poke it in this way, it will react in this other way, although the building blocks are actually quite stupid. I'm not sure. It's pretty tricky and pretty interesting. We can spend all podcast talking about it.
+
+Ben: Let's follow this thread a little bit. How could we test a computer to determine if it has will or intent?
+
+DH: I think one path we can go down, for example, is, does the computer have a will of its own? If it exists in the world, does it do anything by itself? A good example is if I put you as a baby, for example, on Mars, maybe it's not too hospitable, but probably you'll do something about it. Maybe you'll crawl around and maybe you die in a bit, but you'll do something, probably. If I put an ant there, it will probably do something.
+
+With a computer, probably not. The computer only does what it's programmed to do, but I guess the computer doesn't really have an instinct for survival like a human. You could argue that a human is programmed to survive, if you will, but I don't think a computer like GPT-4 does not need to survive, I don't think. It doesn't have the will necessarily to do so. What do you think?
+
+Ben: It's not clear to me that I'm anything more than a statistical model. It is quite possible to predict how I will react in most situations, if you have the training data of how I've acted in every other situation before this. I don't think I'm particularly surprised in the way that I go about my day, if you know me.
+
+DR: Yeah, but you probably want ice cream sometimes.
+
+Ben: And literally experiencing the emotion or the clarity of thought of I want ice cream, and it's more than just it is common for me at this time to say I want ice cream. This is going to be a hard thing to test.
+
+DH: I think another analogy is a calculator. For example, you type in nine plus nine into a calculator. The calculator spits out 18. But does the calculator understand maths, or is it just running the program as specified by the programmer? I'd probably argue the latter, but I suppose you're getting questions like, what programs you? I think if you put a baby in a room, it probably will start crawling around, maybe it'll cry, at least, or it'll do something. Whereas a matter of computer, it will. It feels to me like there's a difference there.
+
+Ben: You're getting to this idea of even in isolation, if you eliminate nurture, and you were to have a human that was never nurtured, you just have a baby that exists in an environment, that baby will figure out its environment. It may invent language, depending on if there are other babies. It will map its world, try to develop an understanding of it, and eventually have wants and needs even if they're completely different than anything we've ever seen because it was isolated from society. Whereas if you put a GPT-4 language model there, it's unlikely that it does anything at all absent prompting.
+
+DH: I suppose those things are a bit further, but I suppose you could program the computer system so that it will do something. For example, if you said your sole goal in life to GPT-4 is to manufacture as many paper clips as possible, I guess it probably would do something. It would probably say, I'm in a room, I got paperclips.
+
+Ben: Right. We are genetically programmed to map our environment, consume, reproduce, et cetera.
+
+DH: Anyhow, philosophy is really interesting.
+
+DR: It is. Speaking of mapping the room in a mental model, my mental model of you, David, is a little more complete now knowing you came from Palo Alto, you went to Oxford, and I was like, how did you end up hacking and having all these hustles over at Oxford? I'm assuming you had some exposure to tech and startups from your time growing up before you went to Oxford? Were there other kids at Oxford who were hustlers? Were you an n-of-1 over there?
+
+DH: There were, but it's more like an n-of-5 or something like that. I think part of the problem was I remember going to a startup seeing the college hosted. I think I was the only comp sci person there. It was all otherwise MBAs.
+
+This was in 2013. I think things have changed a little bit since then, but probably honestly not very much. That was one problem with entrepreneurship in the UK, which is challenging when you don't have the community or role models to look up to.
+
+Ben: Would you say you knew before college that your goal was to start a startup at some point?
+
+DH: Yes.
+
+Ben: It's a pretty contrarian move then to move to England and go to Oxford. We were chatting before this. You brought up the idea that you have to be both contrarian and correct, which we talked about a lot on this show to go and start something new, big, and successful. Did you think when you were starting Retool that you were doing something contrarian, or are you just like, I'm trying to solve my own problem?
+
+DH: It was mostly the latter, but then the former became more evident as we told more people about what we were working on. I suppose maybe that's the best merger of the two in the sense that what is obvious to you is contrary to others or something like that. It was obvious to us having built so many internal tools that clearly, there has got to be a better way of building all this crud software. There is no reason that we should be hiring talented engineers to go waste our time building this stuff.
+
+I vividly remember, when we were in YC—we went through YC I think in 2017—there were multiple other companies that came up to us and said, hey, this idea is not going to work. In fact, we tried it before. It's not going to work because it's going to be a big consulting shop, because you're going to go build this application development platform that no one's going to know how to use, it's going to be really complicated, and the only way you can get people to use it is if you use it yourself, and then you basically become a consulting shop. That's what happened to us.
+
+Ben: The classic pitch there is, customer needs are so different from one another that it's actually very difficult to build a product that suits all of them well without ridiculous amounts of customization, so no product opportunity.
+
+DH: Exactly. That was one counter argument. Another counter argument, which sounds actually pretty smart when you say it is, at this point, we're already selling to developers. People were like, you're selling a low-code platform to developers who already know how to code. Why would a developer purchase that?
+
+Why don't you democratize programming and enable non developers to be able to go build software? Surely, that's the bigger opportunity because there's a lot more of them and because the need is a lot more acute, because they actually can't do it. You're actually really raising the bar because they can do it already. Just doing it faster, is that really that helpful?
+
+I think this gets to the point where any successful startup idea probably has 10 reasons why it won't work. Because if it didn't, probably somebody would have done it already. You have to say, well, yes, I can see why I believe A, B, or C, but I actually disagree with you, and I'm going to prove it out. For me, at least, when I heard these stories, it was actually mostly motivating because when you ask them, great, thank you for the input. I cannot wait to prove you wrong.
+
+DR: What was the experience going through YC in regard to all of this? You mentioned that as part of being in YC, you had companies come up to you saying, we've tried this before, it's not going to work. What was that like?
+
+I guess, specifically, there was some contrarianism there, but also YC funds so many companies. So many YC companies, probably in your batch, contemporaneously with you and alumni, had this problem. It's probably a great network to access them.
+
+DH: YC, I think, is helpful for at least two reasons. One is, there is a real competitive dynamic amongst startups there. I think having to report back every week about what you achieved last week, and you're going to watch your friends achieve more or less than you, is tremendously motivating. That's maybe one reason why YC was so valuable.
+
+The second was YC brings in speakers every week. We were talking a bit before this podcast. What you really learn from the speakers is not really tactical and strategic advice. It really is, you learn about how fucked up now successful startups were back when they were your size.
+
+I remember when in our batch, I think we had both Airbnb and Stripe come and speak. Hearing stories about how fucked up those two companies were when they were 2 people, 5 people, or 10 people, it was so motivating to us because every startup has so many warts and so many problems in the startup. It's easy to over-focus on those problems when you're in it day to day. But then hearing that, wow, these other startups had all these problems and still became these giant companies and chased their industries. Wow, maybe I could do that too. It's so motivating.
+
+DR: I'm smarter than them, so I can do better.
+
+Ben: Were you taking feedback from all the haters? Were you trying to really narrow to, why didn't it work for you? Or why don't you believe it will work to say, ah, I see. We're different in this way, so therefore, we might work. Or were you trying to just tune it out and say, look, I have a vision here. We just have to get to launch and see. I don't really care that it didn't work for you in the past.
+
+DH: I think that's mostly the former. There is some feedback that can be discarded and I think is actually useless. Especially from other batchmates, they generally have good intentions. They're not here to shit on you. They're trying to help if they can.
+
+I remember one batchmate actually, I think, said that they wanted to save a few years of my life or something, but I didn't think that worked out. I have no idea. They have good intent, but I think understanding where they're coming from, where you agree or disagree with them, and why hopefully they're wrong is (I think) very important.
+
+In our case, at least a former objection to Retool, which is, it's so hard to build something that suits the needs of everyone. If you look at JavaScript, for example, or React, for example, React is not verticalized. JavaScript is not verticalized. Programming languages are not verticalized. We use them for everything. Social media companies use them, banks use them, they all use JavaScript.
+
+For us, we said, well, we're selling to the developer, and we're going to go build a developer tool where the vertical does not matter. For that reason, we are the objection. We understand it, but we don't think it's relevant.
+
+For the second one, similarly. In our case, we said, yes, we can see that democratizing programming sounds sexier. However, we think fundamentally, that's actually broken.
+
+Fundamentally, I don't believe in no-code for this reason because in order to go build complex pieces of software, code is the best way to get a computer to do something.
+
+Ben: Yeah, I completely agree.
+
+DH: It is so specific and so concise. If you're trying to reinvent programming in a visual way, and then trying to get non-engineers to learn that language, they might as well have just learned Python or JavaScript to begin with. Yes, I think the feedback is valid, but we had reasons for not believing it.
+
+Ben: This is such a good point. I always end up at this place mentally whenever I get excited about no-code. The place I always arrive at is, the hard part about computer science is not the syntax. The hard part about computer science are the concepts. If you have to represent all of the same mental models, it's going to be just as complex, even if you are learning a visual syntax instead of a language-based syntax.
+
+DH: Totally.
+
+Ben: In the same way that programming has data structures, Retool has these, I don't know if you call them primitives earlier, but in your demo video, you can drag what looks like a table. You can drag what looks like a search box. At the end of the day, most internal-facing tools consist of 5–8 very repetitive types of ways to display input information. You said CRUD operations earlier. Could you define that for those who don't speak computer science in the room?
+
+DH: CRUD base stands for—it's a funny acronym—create, read, update, destroy. It basically is maybe, let's say, creating a record in your database, reading it. Hypothetically, if you are (for example) mowing lawns, you might want to record all the lawns that you've mowed. That would be creating a record. Maybe someone put in a lawn that they want to be mowed, and you want to say I have mowed it, so it's updating, destroying, or deleting a record.
+
+We estimated actually that probably 50% of all software in the world is basically just doing CRUD. Developers, day in and day out, are just building the software. It's the most [00:28:30]. I think that's maybe another reason why we think developers like Retool is because no one wants to work on other stuff.
+
+DR: They can build this stuff, but they don't want to build this.
+
+DH: Yeah.
+
+Ben: You can take this to too far of a logical extreme, though. It's a trope that programmers, if you're an extremely technical person and you're evaluating a new business opportunity, you could pass on the investment because you're like, I don't understand. You're just building a relational database with a UI on top of it. Why wouldn't anyone just use a relational database with a simple UI on top of it?
+
+How are you ever going to accrue market power? What's your sustainable competitive advantage? This is dumb. It's a database. What is your view on how much above the computer science primitives there needs to be to sufficiently create an application?
+
+DH: I think if you look at modern application development, the fact that if you want to co-create a simple form, for example, that marks a lawn as to be mowed or has already been mowed, building a simple form like that in React today is probably a thousand lines of code. You probably need to worry about using 30 different libraries in order to do that.
+
+Our belief is that coding has gotten to this, maybe not even honestly, local maxima, if you will, where somehow we have normalized that building a simple form like that needs to take a week or two, involves writing a thousand lines of code, and it involves you to go through the libraries that you don't understand. Somehow this is like, okay, yes, this is the state of the art for coding now. Whereas, it really doesn't have to be that way.
+
+I think if you look at the history of programming over the past 30 or 40 years, for example, I think there have been some major advances (let's say) 40 years ago. Going from punched cards to Assembly is actually a really major advance because if you're punching cards and you actually punched through a hole, you run it overnight, and you come back the next day and you're like, oh, crap, well, okay, let me do it again. The iteration speed is a day.
+
+Ben: Right, or going from Assembly to compiled languages.
+
+DH: Totally. It's a real 10X increase in productivity. But if you look at the past 30 years or so, the languages are the same. JavaScript has obviously gotten a little bit nicer, the ES6, but it's actually the same language as 20 years ago. If you look at C or C++, we still use C++ today. The library is a little bit better, the framework is a little bit smarter, but we're doing the same thing.
+
+If you graph productivity of engineers over time, basically, it's probably actually trailing GDP growth once. It's surprising that engineers are so inefficient, basically. There's been relatively little innovation and programming at all. We hope that Retool is a much higher level way. It's almost going from punch cards to Assembly or Assembly to a higher language, basically. There's another jump left, basically, at least. That's why we're pretty excited about Retool.
+
+Ben: Is it still true today that Retool is for engineers? Or if someone's like an ops person who knows how to write SQL queries, are they facile enough for the product to now be for them to?
+
+DH: I think it goes back to what you were saying. Do they understand the computer science concepts? Because if you don't know what a database is (for example), you don't know what an API is, then building a Retool is still very difficult. We frankly think Retool isn’t the right fit for you.
+
+But if you don't know what a database is, if you don't know what an API is, and you can pick up a bit of JavaScript or learn about a SQL, then Retool is great for that. We see a lot of that happening within our customer base today. I think maybe something like 25%–30% of Retool builders are those kinds of people that have managed to pick up SQL or JavaScript, but we're not engineers to begin with.
+
+I think the wave that we are writing that is probably different from the wave that I think no-code aims to ride is instead of democratizing programming and dumbing programming down, instead we're saying, a lot of people that graduated college today maybe don't have a comp sci degree. But I've taken one comp sci class, able to pick up SQL or pick up JavaScript when they want to, and that I think is going to be such a fertile market for Retool over the next 10 or 20 years, especially with AI.
+
+Ben: I was going to ask, we're flipping back and forth between talking about AI and not talking about AI here. Do you have a view on the current state of the landscape, specifically Microsoft's GitHub Copilot on the leverage that that brings to programmers?
+
+DH: I think it provides maybe something like 30%–50% leverage, which is great. If you save 30% of your time, you're X amount faster. If you save 50% of your time, you're two times as fast, which is pretty good, but it's not really an order of magnitude chump. I think the reason for that is, let's say you had an AI that would punch cards for you, for example. That's pretty good. You can still program faster than punch the cards yourself.
+
+But fundamentally, if you as a human read the program, you're like, oh, it's hard to understand. I'm going to try to reason the holes here. We punch this hole, so what does that mean? It's hard to reason about. The same with Assembly. Let's say that (for example) you had Copilot for Assembly, that's great. You can co-write Assembly (let's say) twice as fast now, but you're still writing Assembly. If you're trying to debug Assembly, it's still pretty difficult.
+
+I think that's where we are with JavaScript, which is, JavaScript is still too low level of a language to be using to go write your programs. Copilot does speed that up, which is great. But I think where we will see hopefully something, a 10X or 20X jump. Maybe you see a 10X jump (for example) by going higher level with Retool, and you see a 2X jump on top of that (for example) by incorporating AI into Retool. We think that the program still is too low level, and we want to still make it much higher level. And then you can graft AI on top of that, which will be another 2X on top of that.
+
+Ben: Changing gears, I want to ask you, what is an area or a playbook that you feel you've developed really well at Retool, such that if a founder of a new company comes up to pitch you and ask you some question, you're like, oh, man, I have got exactly the answer for you. Let's sit down for an hour, and I can whiteboard you the exact right way to do X with your company. What do you think X is?
+
+DH: With a few chapters of Retool, I think the first chapter of Retool was probably finding product/market fit via sales. We can go much more in depth into that. I think it's actually pretty interesting.
+
+At the beginning, there was never a time that someone would use Retool without us watching them. We're always spying on our users basically at the beginning.
+
+DR: Physically or digitally?
+
+DH: Digitally. Basically, we had this integration where anytime we build our own analytics server, where if anyone was using the product, we'd immediately get notified. We'd immediately go into a full story and watch exactly what they were doing. Obviously, because Retool is such an early product at that point of time, there were going to be issues. When there are issues, we'll immediately call the customer up and say, hey, we saw that this error came through, we'd love to help you out.
+
+DR: The customer wasn't reaching out to you. You're just intuited from what you were seeing that they were having some problems.
+
+DH: Yeah. I think when we reach out to customers or at an early stage, when we were first getting started, we reached out to customers, basically, no one wanted to talk to us. They were like, just go away, I'm a developer, I don't want to talk to you. Whereas if you reach out exactly where they're using the product and just ran into an issue, they would love to talk to you.
+
+That is an example (I think) of sales really talking to customers at the right time, really paying a lot of dividends, because then we'd go fix the issue for them and be like, wow, this is the best support someone's ever had. Before I even told them I had a problem, they knew I had a problem, and then they fixed it for me. I love this product.
+
+DR: Great. Can I interest you in a renewal or an extension?
+
+DH: They’re actually just signing the contract. I think that's maybe one of the customer's acquisitions at the beginning. I think the second chapter of Retool is about sustainable growth, which is how do you grow quickly but actually be cash flow positive? How do you scale up and go to market and an EPD (engineering product design) team, while not being dependent on VCs? It's maybe another interesting one.
+
+DR: Can we double click on that a little bit for two reasons? I think that is probably highly relevant to people listening today in 2023. Also to our earlier conversation about contrarian, I suspect highly contrarian for you to have done during a zero interest rate environment, I assume you probably had available to you options to burn a lot of money. Why did you decide not to and how did you do it?
+
+DH: I think it was mostly a sovereignty thing or something like that in the sense that if you start burning a lot of money, you become basically beholden to VCs because it's very hard to reverse (I think) the sudden burning of a lot of cash. You could do 80% layoff, for example, but I think your company's toast if you do that. That's pretty difficult. That was one of the main reasons.
+
+The second was, I just didn't believe that there was that much work in the sense that with a SaaS company, I think what's really pretty phenomenal about software nowadays is that it's so leveraged in the sense that you can get in almost any industry, probably I think, $1 million or $5 billion ARR with basically a team of maybe 5 or 10 people. If you're able to do that, I think one maybe under rated phenomenon is it's actually very hard then for you to actually burn down much more cash in the future even, so you set yourself up for a lot of success.
+
+Let's say if revenue is growing 3X year on year, for example, it's actually pretty hard in fact to grow your company for a 3X year on year. What happens is if you start off in a roughly cash flow positive state, let's say a few million dollars in revenue, maybe less than 10 people or something like that, then as long as revenue is growing pretty quickly, you pretty much will just be cash flow positive for the next 2, 3, 4, or 5 years, actually.
+
+DR: You're set in the right direction.
+
+Ben: You're saying if you are actually tripling revenue, and you haven't staffed up a large organization, it's hard to triple your burn, which is mostly headcount. It's hard to triple your people. There are a lot of counter forces to hiring 3X year over year over year. Whereas for at least the first three or four years, it is quite reasonable to 3X in a product that people want in those first three or four years.
+
+DH: Totally.
+
+DR: I'm wondering now if actually you were YC batch mates, but close friends of the show, Vanta, this is basically their story. They did this too.
+
+DH: Yeah. I have immense amounts of respect for what Vanta has accomplished and will accomplish, yet to come. I think this is a playbook that now is becoming more available to startups because it is becoming more clear that you can, through the power of software, actually achieve one, two, three, five in ARR that's recurring. If you have positive NDR, it's such a strong tailwind that you don't need to hire that much at the beginning, actually, in order to do so.
+
+Ben: Can you define NDR for us?
+
+DH: NDR is net dollar retention, which is let's say you have 10 customers paying you $100 in aggregate at the end of 2022, for example, NDR is basically at the end of 2023. How much are that exact same set of customers paying you at the end of 2023?
+
+Let's say one customer churns, for example. These all pay you $10, now you're down to $90. But actually, the remaining non-customers actually expanded. They double because it's your product, then you actually are generating $180 out of the $100 base, basically. If you can actually repeatedly do that, that basically means you get almost “free” 80% growth year on year, which is really phenomenal if you're able to pull that off.
+
+Ben: It's serious leverage when you multiply that times your actual growth from new customers. A lot of the growth is being done for you. It's an extreme tailwind to growing revenue, as long as you have a fixed go-to market motion to acquire a new customer base.
+
+DH: Totally.
+
+Ben: I heard a crazy stat this morning. It's actually in the Acquired Slack in the random channel. Someone was posting that Snowflake's NDR is 158%. It's just astonishing. A customer that's paying you a dollar this year just shows up with $1.58 next year without you doing anything to reacquire them.
+
+DR: Yeah, the year after it shows $2.25 or something.
+
+Ben: It's wild. This is a new concept for me, what you said. If with a very small team, 3–5, maybe 10 people, you're able to go and get millions of dollars of revenue before staffing up, then a lot of natural laws of business physics will prevent you from getting over your skis and burning too much cash. It's only when you staff up a big team, but you're not at any meaningful revenue you could imagine.
+
+We all know lots of companies that are 30, 40 people, but with $500,000 of revenue, $2 million of revenue, something like that because they raised a lot of money. It's really hard to come back from that. It's interesting. What's the phrase when they say it's expensive to be poor, but it's cheap to be rich. It's that same thing, where there's extreme rubber band effect on either side.
+
+DH: It is painful at the beginning, but actually, it's not that painful. Because if you haven't hired anyone, you don't know what that feels like until you're like, well, great. I'm used to working (for example) 6 days a week, 16 hours a day. That's just how things should be.
+
+When you find yourself with a few million dollars ARR and let's say five people at the company, or 10 people in the company, then you can start hiring. You're like, wow, this looks tremendous leverage actually to go hire people. I see why having a larger team could actually be really helpful. But then at that point, it's actually hard to grow the team 3X or 4X here.
+
+DR: Would you categorize that as the next chapter of Retool? Let's get to $5–$10 million in ARR on a small team. At some point, clearly, you did raise a lot of money. How did you think about that? Were you ever tempted to be like, I could just keep doing this rather than a really nice cash flow generative business without venture capital. Was that tempting? How did you make the decision?
+
+DH: When you think about that, actually, the reason why that option was available was because we were small, and we were actually making $3–$5 billion of ARR. If you do the math, evenly most everyone, which may be the fairest thing, and let's say you moved to Hawaii, it's actually a pretty good life.
+
+When we raised our Series A from Sequoia, we did actually think about that, which is, hey, should we raise a Series A and actually go raise VC dollars. Or do we just want this to be a pretty good [00:43:08] business that could probably honestly grow another 3X, 4X, or 5X without any outside capital from here?
+
+The reason why we ended up raising that Series A from Sequoia was because we thought the opportunity was so much larger. We genuinely truly believe that Retool could be the way that maybe something like 10%, 20%, 50% of all software is built in the future. In order to achieve that, it's going to take really heavy sustained investments in the product on the go-to market side to make that happen. But if we're able to do that, I think the opportunity is so, so, so large.
+
+For that reason, we decided to raise more capital in the Series A. For that reason, we started to hire more people, too. I think that maybe it is now, I would say, the third chapter of Retool, which is we've now proven out that clearly, the TAM is incredibly large for Retool.
+
+Today, many, many, many companies are in Retool. But when I look at something like AWS, for example, AWS has I think around a million or so customers, we're not at a million customers yet. I think they are doing something with maybe $60 billion in run rate. We're not there yet, either. We need to get there.
+
+DR: I remember from our AWS episode, the $80 billion and the most mind-blowing stat of AWS is the revenue backlog is over $100 billion.
+
+DH: Yeah, it's nuts. I think that maybe speaks to the TAM of a horizontal developer platform. It really is just so large because there's so much software being built every day every year. It all needs to run somewhere. Is it built in something? Hopefully Retool.
+
+For that reason, I think the opportunity was so large that we thought, hey, even if it's a 30% chance or 10% chance of getting there, for example, we'd rather go for that rather than have this be a lifestyle business. That was the impetus behind raising capital. Now we're mostly preoccupied with, how do we get to a million customers and eventually one day, $80 billion in run rate? That's going to be challenging, but it's the ride that we're excited about.
+
+DR: As you sit here today, what are those big items on the roadmap or roadblocks along the way? What does the journey look like to get there?
+
+DH: If you look at the history of AWS, it basically starts with two product lines. It's S3 and EC2, and then they add more and more product lines.
+
+DR: The database is the greatest business model known to man.
+
+DH: Totally. And it turns out actually that even EC2 and S3 have giant markets by themselves. I would not be surprised. EC2, I'm sure itself has probably a $10 billion plus run rate business to it. I think the story is somewhat similar for us, which is, I think we now have actually four product lines. We actually launched three product lines in the past 12 months or something. That's pretty exciting too.
+
+We now have four product lines that each are all growing pretty rapidly. We want to launch more product lines. We want to get to the point where all software can actually be built inside of Retool. It was started off first of all as the front-end builder, which is great. Some percent are software front-ends, but some percent are also not front-ends, so we expanded out into back-end storage with a product called Retool DB. We expanded it out into a back-end logic product called Workflows. We expand out in mobile front-ends that's called Retool Mobile.
+
+I think now, what we'll see is you've all probably seen this chart stacked revenue growth over time. You could see at the beginning of the new product lines, it started off very small, but actually getting bigger and bigger and bigger and bigger. Our plan now is to continue growing all those product lines, but also to launch new product lines to feature as well. One lever is more product lines that allow more software that can be built inside of Retool. The second really is just distribution.
+
+DR: I don't know if tame is the right word, but the opportunity for that is basically infinite. How many product lines does AWS have now? Hundreds.
+
+DH: Totally. The second lever (I think) is awareness, which is, how do we get more developers aware of Retool? I think this is a challenging problem because developers actually know how to build digital tools. If you ask me, if you have any other developer, I want you to go build a front-end for me to manage all the lawns that I mow, and every developer knows how to do that. They're not googling how to build a lawn mowing front-end CRM. They're just like, no problem, I got it. I'm going to go start a database, spin one up.
+
+DR: So it's hard to capture them when they're in the intent phase.
+
+DH: Exactly. In that way, Retool is a challenge startup because it's not like a rip and replace, if you will. It's not like, oh, there's already this line that everyone already buys. We're just a better version of that, buy us instead. Instead, it is, I wouldn't even know. I needed an internal tools development platform. Is that even a problem that I have?
+
+I think from an awareness building perspective, that probably is our biggest challenge now. How do we get more people aware of the product, the problem, and the solution, if you will?
+
+DR: What are you doing on that front?
+
+DH: Right now, we have maybe 5 or 10 different engines that are all going on how we build more developer awareness. Some engines, for example, we might do honestly just brand marketing. For example, we recently wrote this post about Visual Basic that went viral. Our head of design probably spent maybe six months writing that post, not full-time, maybe let's say, three weeks of full-time work writing that post.
+
+In most ROI, there's no way to justify that ROI. We're running a blog post that has nothing to do with Retool. The history of Visual Basic isn't really tied to Retool at all, actually, and yet we spent a lot of time on it. It really paid dividends, actually.
+
+That's been one almost brand awareness place, if you will. I've read a blog post about, what is SAP? And why is this giant company, for example? I've read another blog post about, what's Salesforce and why is it a giant company?
+
+Ben: This is great. Dave and I were just talking the other day. Neither of us understand SAP, so we have to do an episode on it, so this is all a primer.
+
+DH: Yeah. We write content marketing, if you will. I like that, but that's good content marketing. It's not just SEO junk, if you will. It gets a lot of eyeballs. Some percent of those people are like, oh, interesting, I actually could use Retool actually. What is this Retool thing? And we click on the logo, for example. That's one engine that we have.
+
+There are other engines ranging from, oh, well, maybe people do google for (let's say) lawn mowing front-end, but maybe people do google for Firebase front-end. Maybe they're lawn mowing and they've chosen Firebase as the back-end (for example) for the lawn mowing CRM, and they're like, okay, now on to the front-end for it, let me google best Firebase front-ends, for example.
+
+SEO SEM is another major lever for us. We're now experimenting a little bit now with outbound, which is pretty interesting. But outbound is a pretty fickle (if you will) engine because I think you get them at exactly the right time. If I emailed you with a problem that you're having literally 10 minutes ago, you probably would reply, actually, but 99% of the time, you're not going to reply.
+
+Figuring out how we can identify people that are building internal tools and are really experiencing the pain, for example, or frustrated at it. It's challenging, but it's something that we're working on. These maybe are a few examples of engines, if you will, that we're working on, but it's fun.
+
+Ben: I want to change directions. When you first started the company, it was your idea and your force of will that created the company at all. I'm sure now, there are a lot of things where if you are still doing them, it's a problem. It's a massive game of trust and finding the right talent and delegation. I'm curious what things you think it's still important for you to hold on to as the CEO.
+
+DH: This is a really fun topic. I was chatting with a few founder friends recently. We were discussing, what are decisions that you made in your company that actually made a difference? Every day, I think we all make a lot of decisions. But to be honest, a lot of decisions are low impact, a lot of them are reversible, it doesn't really matter that much.
+
+The consensus we got to was every year, there are probably maybe three decisions that are actually important that you need to bake. The problem is you don't really know what those three are beforehand. But in retrospect, it generally is obvious. I think maybe it's quite an analogy, but I think in life, it's also similar too.
+
+In life, you make a lot of decisions about, do you have ice cream today or not, for example, but it probably doesn't matter that much. Probably the path that got all of us here comes down to probably 5 or 10 decisions you've made in your life. I think preparing yourself for those maybe three important decisions is important.
+
+I think being very close to the business so you understand at a very granular level what is going on, you have a fairly firm grasp on reality, so you can increase the probability of making the right decision, is also very important. I think maybe having a low ego or being willing to admit when you're wrong is also important, too.
+
+There are definitely product lines that I thought we shouldn't start. I was wrong. That's just stressful. I think those are maybe some principles that at least with the group that I was in talked a bit about, but it was interesting.
+
+There was one founder in the group that they were the founder of maybe a popular streaming site you may have heard of. His perspective was, there was really only one decision that he made over the past two years that really mattered. During Covid, he decided to buy more servers, which was a very contrarian decision. Everyone was like, oh, I don't know. I don't know if we should buy more servers. Who knows? There's a lot of uncertainty. He was like, no, I think we need to buy more servers. I think people are going to be cooped up at home, streaming is going to be big.
+
+That was the one decision that I think allowed them to scale revenue maybe 10X or something during Covid. Had they made the decision even three weeks later, for example, they would not have scaled revenue. Maybe the revenue has grown 2X instead of 10X.
+
+I think it's hard to know when decisions come up, but they do invariably come up many times a year. You have to be prepared by just knowing your business really well, being really deep in your business and also being willing to admit when you're wrong.
+
+Ben: Can you recall an instance—I'm sure recent examples are a little bit harder to talk about publicly—earlier in the company, where you had one key decision that changed their trajectory based on the decision that was made?
+
+DH: I have just one that we're making actually right now, which is pricing-related, which is to date, Retool has mostly priced. I would probably say we're testing the waters to understand the value that we provide. The pricing that we have reflects that. Where in some cases, if we're drilling a lot of value, we might price commensurately.
+
+When I think about the mission of Retool, which is that we want to actually become the way software is built, it is antithetical to that, which is revenue is obviously helpful, but it's actually not the one thing that's important. In fact, the one thing that's important is, how do we get more people building in Retool?
+
+While it's great that we're growing revenue very quickly, I think there's actually a bigger opportunity of, hey, what if we deprioritize revenue growth for the next (let's say) three years, instead of (let's say) growing usage 2X, 3X year on year, why don't we try growing usage actually 10X year on year? If we can do that, then I have the full faith that revenue will grow 10X–100X, 5, 6, 7 years from now.
+
+That's an example of a decision that is not easy to make. It will involve us deciding to actually forego revenue growth over the next (let's say) year or two, in order to capture substantial revenue growth 5, 6, 10 years from now.
+
+That's an example of a decision, I think, that in the end has to be the founder or CEO’s decision of, do we make that bet or not? Because it affects all areas of the company. It affects how quickly you hire, how fast your company's growing. It affects everything.
+
+Ben: Does that mean your revenue could actually temporarily go down? These pricing changes affect existing customers?
+
+DH: It does. In fact, we will be sending emails to customers saying, hey, did you know your bill is now lower actually than before? I myself have never received an email like that before, but I think that it's going to be hopefully incredibly energizing for a customer to see. Hopefully, they'll actually tell their friends about Retool.
+
+From our perspective, we care more about, can we genuinely change the trajectory of how software is being built today in the world, rather than, can we maximize our revenue in 2023? I think we're fortunate to have a board that is so supportive and investors that are so supportive of that because they're also not here to say, hey, let's go make Retool, let's go double the valuation and sell the company. No, the goal is actually to grow the valuation hopefully 10X, maybe even 100X where we are today, even if it's (let's say) a 50% chance of that actually happening.
+
+Ben: You can attribute this in part, of course, to the farsightedness of your investors, but a huge amount of it is because you've left yourself the flexibility as the operator of the company to make decisions like this in not having an enormous cash burn, but generating a good amount of revenue. If you do make less revenue, it's not like, oh, my God, now we've massively widened our cash burn in a way that makes our business unsustainable. You spent years buying yourself the optionality to make a decision like this.
+
+DH: Totally. I think that's maybe another underappreciated aspect of the cashflow positivity or the sovereignty, if you will. It gives you a lot of space to make these kinds of decisions.
+
+For example, if we're burning a lot more money and we had, let's say, a year or two of runway left, which is not a decision we're in, but if that were the case, I would be very nervous about this decision because we're like, oh, man, we actually can't do that where our backs to the wall. We cannot prioritize usage above revenue. We just have to prioritize revenue, because otherwise we're going to go out of business. We're really fortunate that we're not in that position.
+
+Ben: All right, we talked a lot about the rosy parts. Do you have an example of something that you were hopeful would be trajectory changing for the company but was a failed initiative?
+
+DH: Yeah, there are so many examples of this, too, especially in the early days. This is actually maybe almost the downside of having a sales-first motion in the early days. What happens when you have a sales-first motion is you vacuum up a bunch of weird use cases. You have to decide whether to serve them or not.
+
+Your memory is actually quite favorable when it comes to this stuff. If someone else asked me, what were the early days of Retool, I'm like, oh, yeah, it was great. We hopped on calls, but close deals, and life is super easy. It was great. It's just for fun.
+
+The other day, I was looking at my calendar from three, four, five years ago. I'd be like, I wonder what I was doing five years ago. Let's take a look at a day in the life of David five years ago. I was like, wow, I remember that customer that I talked to. A lot of them closed, actually.
+
+I remember there were so many things that I got so excited about, where there was one example of a customer that they basically have built a platform, almost like a Firebase-like platform, so a developer platform, a Heroku-like platform. They were like, hey, I really want to go buy Retool for all of my customers because we have all the data in our platform and we want this app-building experience on top of our platform. I was like, wow, this is huge. This is the future of Retool.
+
+These guys will get us distribution like crazy. In fact, we should target Firebase, we could target Parse, another app developer platform. We should sell retail to all these companies. That never closed because the person on the other side of the call was broadly interested and curious in adopting Retool in that way, but there's honestly not that much intent or urgency for that person to go make a purchase.
+
+I remember getting so excited about it. I was like, this is literally how we're going to be distributing Retool going forward. I was totally wrong. I want that to exit my memory entirely because maybe it was a bad memory or something.
+
+DR: I really like your framing from earlier going back to your philosophy degree of understanding reality. I was smiling as you were talking about that, just thinking about Acquired like a very, very different business and product. Ben and I have had so many conversations like that, too, over the years. Oh, this is the future of Acquired. It turned out, many of those were not the future of Acquired.
+
+Ben: You just list a bunch. There are so many. It's paid podcasting or having bigger and bigger guests, and those people are going to promote our episodes for us, and that's going to get us a whole bunch of new listeners.
+
+DH: Are there any embarrassing ones?
+
+Ben: Definitely. We renamed the show. This was a terrible, terrible decision.
+
+DR: It's painful even to think about this. This was totally my fault.
+
+Ben: We spent five years building brand equity behind Acquired. Then in one stupid phone call, David and I said, wow, Covid hit. We should, for some reason, change the show name to adapting to show how serious we are about changing to telling stories about people that are adapting to Covid.
+
+DR: It's truly a moronic decision.
+
+Ben: Does Rolex ship or watch one day that they're like, oh, by the way, it's Roblox? No. That's the one thing you can't change.
+
+DR: Oh, it turns out we're in a brand business.
+
+Ben: It's been interesting realizing we're in a business at all. We're in this period right now, where we're like, oh, wait, we do sales. Oh, right. Neither of us have any idea how to sell. We work with a dozen customers a year who are our sponsors. To date, those have just been relationships, where they come to us and we're like, oh, we love the idea of working with you. We'd love your product, I think we can write a bunch of really unique copy around it. Here's a cool thing I think we can do together.
+
+David and I were on a call the other day and we were like, what is a go-to market motion around this? It's so embarrassing because you would think this is a thing we would be good at right now. You just don't realize the business you're in because it happens so organically.
+
+DR: I think, similarly, not to make this about Acquired, but a lot of what you've been saying resonates with me so much that we're even more extreme than you control our own destiny. We have no shareholders except us. Nobody's forcing us to do anything.
+
+Ben: Do you think having shareholders is beneficial to light a fire or motivate you in some way that you wouldn't have been otherwise?
+
+DH: No, I don't think so. If you're counting our shareholders to pressure you, there are so many public company analogies here that can be fun to make, but you're probably not being motivated with the right things.
+
+I am motivated to maximize shareholder value, but we do that in the way that we think is right, not because some shareholder called us up and said, oh, what about this or what about that? I think intrinsic motivation is maybe if anything is a core value that I think a lot of Retool's employees actually really share, and that is such a powerful fire.
+
+DR: People succeed at doing what they want to do. People do things that they don't want to do for all sorts of reasons. But ultimately, you're not going to do it as great as if you wanted to do it.
+
+DH: Yeah, we have agency intentionality.
+
+DR: Back to GPT-4.
+
+Ben: As we drift toward a close here, I did want to ask, do you imagine AI playing a role in Retool in the future? Will we program with natural language? What do you think about that?
+
+DHL: I certainly think AI will play a role in Retool. I think natural language will play some role, but not as big of a role as Twitter may make you think. I think we think about the past or even just using tools in general. You typically use the right tool and the right medium for the job.
+
+Natural language I think is great, for example, for getting something started. If you want a quick mock up of something, natural language is really good for that. But oftentimes, you want something specific or trying to pick a color, for example. Probably, if you have a color picker, you can get to your specific color exactly what you want.
+
+The color wheel thing, you can pick exactly what you want very quickly. Whereas if you're forced to only use natural language for that, you could be like, oh, yes, it's more red or less red than this. Oh, more red, even more red than that. Yeah, please. That's just honestly pretty inefficient. You might as well pick exactly the red that you want.
+
+I think natural language is great for many tasks, but it's not great for all tasks. Code is great for many tasks, but also not for all tasks. Visual programs are also great for many tasks, but also not for all. I think if anything, AI or natural language is another tool in the toolbox, if you will, that I think we have to provide to all of our customers. I think it will lead to great outcomes, but it is definitely not the only tool.
+
+I was talking to Ryan Lucas, our head of design, recently. His perspective was, when we talk to each other using natural language, we already, between humans, have so much misunderstanding. If that is the only way you have to program a computer, we're going to be in a world of pain.
+
+Ben: It's funny, I had a very similar conversation recently, where if two engineers send each other a pull request, it is exactly what the communication is. It is literally saying, these are the instructions to a machine, can you look at them to ensure that they are doing what this contract says that it should do? But if two people are having a conversation, at least this is my understanding, the brain's capability, the spectrum for information in the brain, has much higher bandwidth than any given language.
+
+When I translate a thought into English, it is going through severe compression. I am communicating that to another person for which they could misunderstand it, like a word could trigger a different emotion for someone else than I mean when I say it. And then, they go through a decompression where they extrapolate that into their brain, and it could light up a completely different set of neurons than was originally lit in my brain, but we only have this lossy low bandwidth medium to communicate through with language. Now we're trying to use that same terrible, terrible high compression, low bandwidth language to interface with computers, where we can have exact specificity? What are we doing?
+
+DH: This is why math equations exist. We could just do math without equations and without any notation. We just talk about math all the time, but it'd be incredibly imprecise. Probably none of us would have an idea of what this was talking about. But when you write it down specifically, it's so much more helpful.
+
+Ben: David, this has been a blast to close down the episode here. Where can people learn more about you and Retool if they're curious to explore some of this conversation further?
+
+DH: Find us retool.com or me at @dvdhsu.
+
+Ben: That's great. Thanks so much for joining us. Listeners, we'll see you next time.
+
+DR: We'll see you next time.

@@ -1,0 +1,661 @@
+Ben: Welcome to Season 7, Episode 6 of Acquired, the podcast about great technology companies, and the stories and playbooks behind them. I’m Ben Gilbert and I’m the co-founder of Pioneer Square Labs, a startup studio and venture capital firm in Seattle.
+
+David: And I’m David Rosenthal. I am an angel investor and an independent advisor to startups based in San Francisco.
+
+Ben: And we are your hosts. Today, we are coming to you live from ASCEND: The event defining the future of space. Over the next hour, we will tell the fascinating story of Virgin Galactic, and the swirling cocktail of the billionaires, Richard Branson, Paul Allen, and Chamath Palihapitiya, and the aerospace pioneers including Burt Rutan and Peter Diamandis behind it.
+
+We also thought it would be very timely because, in the next week, Virgin Galactic expected to make their first flight from Spaceport America in New Mexico, followed by next year in early 2021, Sir Richard Branson himself flying on their first commercial trip. However, the news did break this morning—this probably won’t surprise long-time followers of the company—they announced that this flight is delayed indefinitely. I will put a link in the show notes to read that press release. For you, regular Acquired listeners, this is our very first episode covering a company that went public via a SPAC, and we will unpack the business behind and hopefully ahead of the company.
+
+A few fast facts. Virgin Galactic—if they are successful in opening up space tourism—will have a massive impact on the percentage of our species to go to space. As pointed out in their S-4 (the SPAC version of an IPO prospectus), only 573 humans had ever been to space by August of 2019, and Virgin Galactic already has over 600 customers—or as they call them potential future astronauts—who have prepaid deposits on their trip to space. The sticker price for one person to take that trip: $250,000.
+
+David: A cool quarter of a million dollars.
+
+Ben: Pretty steep.
+
+David: Just yesterday, there were, what was it? Two more new first-time folks in space with the SpaceX launch?
+
+Ben: Interesting.
+
+David: I know one of them was the first trip. I think maybe two of the four astronauts might have been on the first trip. Super cool.
+
+Ben: Well, I do know now SpaceX (I think) has sent more humans to space than the entire Mercury program. It was a stat that I saw thrown out yesterday, so amazing how the pace is picking up.
+
+For those of you watching this live at ASCEND, a few words about Acquired (this podcast) and what the show is. First of all, David and I are not from the aerospace industry. We are venture capitalists and entrepreneurs that invest in consumer and B2B startup technology companies, but we’re big fans and observers of space.
+
+Today, this episode will reflect an outsider’s perspective albeit we hope a fairly well-researched one. Our goal, besides our own self-indulgence in getting to geek out on the topic that we love, is to try and make space more accessible to those in adjacent fields. I know I’m not alone when I say this, but I think that the space ecosystem is poised to explode over the next decade or so, and this is one of the most exciting places in technology to be right now, though I’m sure all of you who are watching this live probably feel like it’s been this way for a while, and who is this guy who thinks he just discovered something and waltzed it in here? So, I'm really excited to tell this story with you today.
+
+Now, on to our presenting sponsor for all of season 7, Tiny, and its founder, Andrew Wilkinson. Andrew, so far in this season we’ve been talking mostly about the companies that you buy outright, and then grow those companies under pure whole ownership over time. But I know that you also do some minority investments. How does that work?
+
+Andrew: Often, people will come to us and they’ll say, I started my business with two co-founders and one of them left after six months but they are still own 5% or 10%. Or in one instance, we had a guy come to us and say, I had two co-founders and they both left. I want you guys to buy them out and be my majority shareholder.
+
+Often, we’ll help people clean up their cap table. We often approach it as, why would you have somebody who’s checked out of the business or you don’t get along with in your cap table, when you can have someone like us who’s going to help boost you, can provide additional capital if needed, but it will be a friendly shareholder who just going to leave you alone?
+
+We often will buy early employees shares or we will buy out co-founders who left the business, who want liquidity, there’s a disagreement on strategy, or whatever it is. We just did this with Buffer over the last couple of years. That’s worked out really well for us. We’re huge fans of Joel and what he says.
+
+Ben: That’s great. Thank you, Tiny. If you own a wonderful Internet business that you want to sell or you know someone who does, you should get in touch. You can learn more at tinycapital.com or by clicking the link in the show notes.
+
+As always, if you love Acquired and want to hone your craft of company-building, you should join the community of Acquired Limited Partners. Among other things, you will get access to the LP show, where we dive deeper into the fundamentals of company-building and investing.
+
+The last LP episode that we had was with Rahul Vohra. It was insanely valuable and a very enlightening conversation, where he pulled back the curtain on the unorthodox tactics that he used in raising venture capital investment for Superhuman, which is now valued at over a quarter of a billion dollars. If you are not already an LP, you can click the link in the show notes or go to acquire.fm/lp, and all new listeners get a 7-day free trial.
+
+Thank you to some awesome sources in our research. Julian Guthrie’s real awesome book, How to Make a Spaceship, that covers the entire history of the XPRIZE. There’s a great documentary called Black Sky that covers the entire development of the SpaceShipOne program. We will put all the links that were a part of our research, the talks we watched by Virgin Galactic executives like George Whitesides, lots of other great bits that powered the research here into the show notes when this does come out as a podcast that you can find anywhere where fine podcasts are distributed.
+
+David, with that, shall we dive into the history and facts?
+
+David: Indeed, and for folks to listen to Acquired, you’ll know that we can’t start our episodes without going back at least 50 years. In this case, we’re going to go back over 100 years. It just makes us so pleased here.
+
+We’re going to go back to 1919 and the announcement of the Orteig Prize, which was a $25,000 prize—that’s backed by the Orteig family, I believe, is behind it—for anyone who could fly a plane, an air vehicle nonstop from New York City to Paris or vice-versa. Of course, famously a few years later—actually more years than I would have thought, eight years later in 1927—Charles Lindbergh won that prize in the famous Spirit of St. Louis, which I think is now in the Air and Space Museum in Washington hanging there. It has to be.
+
+That was (I believe_ the first major aviation prize to spur innovation. Of course, there would be later prizes after that as well, and that would lead directly into what we’re about to talk about here with the XPRIZE, but this whole idea of using a prize to spur innovation is pretty cool.
+
+Ben: Totally. I think this is brilliant. I’m not sure this was the intention behind it but all these prizes since then have realized you get an amazing amount of leverage on your dollar. This $25,000 prize (I think) had $400,000 poured into the research and development by all the different teams who are competing for it, so not a bad return there if you had to go to raise that $400,000 100 years ago by yourself. That would’ve been a much taller order to get a similar outcome.
+
+David: Totally. Inspired by this history, we now fast forward about 70 years—past the Lindbergh flight—to 1995 when a gentleman named Peter Diamandis puts forward an idea at a space conference. Not the ASCEND space conference which takes him a while to get traction here. If this were ASCEND it would have been immediate. He puts forward an idea for a similar aeronautical innovation prize, this time for space. He posits if we put forward a $10 million prize for somebody—not a government—to build and launch a reusable crewed spacecraft into space.
+
+At this point in the mid-90s people are already thinking what the Elon and SpaceX have popularized this idea, that it kind of doesn’t make sense how we do space right how where every time you flew a 747 to a destination, you would scrap the 747 at the end of it and not use it to fly back or fly anywhere else. Reusability can vastly change the economics of going to space.
+
+Ben: Even the shuttle program which was amazing in many ways had its big problems in many ways. Even that had an element of reusability or refurbishability to it, certainly with the reusable shuttle, and then the refurbishable boosters.
+
+David: Yeah. Peter puts forth the idea for this prize that anybody who can launch a spacecraft up to what’s known as the Kármán line, which is 100 kilometers above the earth is one definition of space. In other words, you get to the canonical black sky where the sky is no longer blue. It’s black at that point. Actually, I believe it happens a little bit below the Kármán line, but it’s lower than orbit. You don’t have to make it up to satellite orbit, but any team that can do that with the vehicle twice in two weeks with the same vehicle will win a $10 million prize.
+
+He has this idea for the prize. This is 1995. It ends up taking quite a while to actually secure the funding. He doesn’t have the funding when he puts forth this idea.
+
+Ben: You can’t just tweet ‘funding secured’ unlike [...] these days.
+
+David: That only works with electric cars not with space vehicles. Notably, he approached Sir Richard Branson twice (I believe) and was turned down, right, Ben?
+
+Ben: Yup, and it wasn’t just Branson. This is a massive list. Everybody who you would think would fund this thing basically looked at it and didn’t. Paul Allen looked at this thing and turned it down. Although that was for more strategic reasons that we’ll get into later. He even approached Elon Musk in 2001—let’s just say 1995–2001. The funding was not secured for quite a long time after having the idea for this and ultimately launching it.
+
+Elon also said this is really interesting, but I have a certain amount of money, it’s finite, I want to do my own thing, I want to be specifically focused on mars. It’s a little digression but a great Elon quote that said, “Yeah, we want to do something that significant, but something at a reasonable budget. Not $10 million, just a couple of million. Not $10–$15 million to spend, but we want to start with an order of a $1- or $2-million project.”
+
+If you’re Peter and you hear that from Elon, this guy that’s starting to get some traction as an entrepreneur in this ecosystem, and then you go and watch how they do end up spending money, it must just be like, ‘Are you kidding me?’
+
+David: As we covered on the SpaceX episode, the idea originally was they were going to spend not that much money, but of course, that changed. Some of the notable early donors that they do get to the prize are Tom Clancy (the author) and also the Limburg Family Foundation comes in and donate some money to the cause.
+
+There’s actually quite a cool story that I think that you hear about how they fund about half of it, but the biggest donor ends up being the Ansari family, which is a super cool story on its own. It’s a family of Iranian immigrants who founded a telecom empire in the early 90s, I believe—late-80s early-90s—and made a lot of money through that. They end up becoming the title sponsors and it becomes the Ansari XPRIZE at that point, but that was only for about half of the $10 million, right?
+
+Ben: Yeah, it’s less. The way it basically worked is they raised $2 or $3 million, and then before the Ansaris came in—I think their initial pledge was $1.75 million—the way that they got from that $2 or $3 million up to $8-ish million was that they approached First USA who eventually became Bank One, and then finally JPMorgan Chase. Everyone ultimately lands either there or Bank of America.
+
+Basically, after raising this few million dollars, a huge chunk—$5 million—was actually filled by a hole-in-one insurance policy. In a sense, the $10 million was never actually raised, but rather, they found a price out which First USA was willing to bet against anyone ever actually successfully winning it. That price was $50,000 a month insurance premium that Peter and the XPRIZE team had to be paying in overhead in order to keep the prize alive, to hopefully get that hole-in-one cash out.
+
+It’s totally wild, and you think about the motivation there of First USA. Their biggest motivation was that the XPRIZE, while it was underfunded, was a really cool sexy brand and they saw a market to be the credit card issuer to people who were space enthusiasts. They wanted to do this multifaceted deal that included being the provider or underwriter of the policy that would reward the prize winner but also to be able to issue XPRIZE-branded credit cards.
+
+It also came with some other strings attached. In addition to the $50,000 monthly payments for the $5 million insurance policy, first of all if no one won by a certain date or if the full $10 million wasn’t raised, the $5 million from First USA would never have to be paid out at all. Second, that certain date was not very far in the future. It was actually just December 17, 2003 which (I think) this point was 1999–2000 right around there, so it really set up the XPRIZE for quite the photo finish because anybody who wasn’t already working on it had to throw their hat in the ring very quickly.
+
+David: Yeah, that’s why this is foreshadowing where we’re going to get to Virgin’s and Branson’s involvement in a minute here but the power of space as a marketing vehicle already.
+
+One of the teams—I really think just about the only credible team—that ends up entering the XPRIZE competition…
+
+Ben: There were a few credible. I spent a bunch of time and actually went and read the whole How to Make a Spaceship book. There were several credible teams, but the only one that got really, really close and the only one sort of left standing by the end of the competition was Rutan, so we should give credit where credit is due to some of the other international teams that did pretty amazing things.
+
+David: Okay, great. Well, this team led by aviation pioneer—probably everyone listening here live with us will know and know well—Burt Rutan and his company, Scaled Composites, enters the competition. Burt is a total legend in the aerospace industry. He had founded Scaled in 1982. Burt had been a former Air Force test pilot but was this legendary independent airplane designer. He designed the record-breaking Voyager aircraft, which, for folks who have been to the Air and Space Museum in Washington—it’s hanging there (I think) right in the atrium when you walk in—in 1986 was the first plane to fly around the world without stopping or refueling, which is just incredible.
+
+Scaled, interestingly, the company he had founded in 1982 had a long, storied M&A history of its own. It was bought in 1985 by a company called Beech Aircraft, which they’re collaborating with to design a plane at the time. Then, Beech was owned by Raytheon, so Scaled was owned by Raytheon. After a while—I think this was post-Voyager—Burt bought it back from Raytheon, then sold it again to a company called Wyman-Gordon. They got acquired. Burt bought it back again, this time with some financing from Northrop Grumman, who was already an investor—later we’ll see the story—and Northrop ends up acquiring Scaled fully itself. That’s why the company lives today.
+
+This company’s been independent, it’s been part of Raytheon, it’s been independent again, it’s now part of Northrop; kind of amazing, and to speak to the talent of both Burton and the team.
+
+Ben: Totally, and it’s not called Scaled Composites by accident. The thing that they’re really good at is coming up with these really innovative designs, and then using incredibly lightweight materials, composites to basically create aircrafts that people didn’t think were possible or that use less fuel, that do more things, and frankly just push the edge of applying cool principles of aerospace and physics to figure out what new goals you can accomplish. Many of the Scaled planes are ones where you kind of look at funny at first and then they go on to achieve something that humans didn’t really think was possible until they were able to do it.
+
+David: Yes, and that tells about the design that Burt ends up coming up with. Enter here the feather design. It’s pretty awesome.
+
+Ben: Yeah, it’s unbelievable. Anyone who’s never looked at SpaceShipOne (or now SpaceShipTwo), you can hear about it and in your head like, okay I kind of get what that might look like. It is a goofy-looking plane. It is a crazy-looking…
+
+David: Well, two planes, actually.
+
+Ben: Yes, animal of the system. Let’s talk first about SpaceShipOne, and then we can talk about the mothership in a moment. The whole idea that Burt initially figured out is if we’re going to send this really lightweight thing all the way up 100 kilometers above the earth to win this prize, it’s going to have to come back down.
+
+Normally, when winged things come back down—think the X-15 or the Space Shuttle—it needs an incredible amount of heat shielding because these things go crazy fast in the atmosphere. Famously, they were putting new tiles back on the Space Shuttle every single time it landed because these things would heat up and fall off. They’re amazing at doing their job, but it’s hard to maintain it; it’s heavy.
+
+Of course, in Scaled they’re building a lightweight aircraft. What do they do? They come with this design called the feather, which does two really, really interesting things. The first is that it applies an incredible amount of drag while keeping the aircraft very stable. What’s going to happen is it’s going to come back down to earth slow enough that heat is actually not a huge issue. When I say slow enough, it still’s supersonic (or at least starts supersonic) and then goes through the…
+
+David: Slow is relative here.
+
+Ben: Exactly, but it has maximum drag, so heat isn’t a factor, and it comes down very, very stable and steady. It automatically flips into the correct position that they wanted. The final thing that makes this all work is that it can be unfeathered while it’s launching—we’ll talk about it in a moment about what the launch system looks like—and, of course, it’s going like Mach 3 straight up and basically being a rocket that’s going up into space, that can be sort of unfeathered. The feather then flips into position which is this 55-degree angle, that comes back through the atmosphere with maximum drag, then unfeathers it again and boom, it’s a glider. It comes down, it lands real nice on a runway the way that you would expect, sort of a lightweight glider airplane with no fuel in it to land. Remarkable genius system.
+
+David: Basically, this thing is like a transformer.
+
+Ben: Totally. That’s the SpaceShipOne. Then, of course, they’re like, wait a minute. We’re not going to throw SpaceShipOne vertical on the launchpad the way that SpaceX or the Apollo Missions are doing it. The way that they’re going to do it is they’re going to create a mothership, the White Knight, that, I think it’s a dual fuselage or at least a SpaceShipTwo is a dual fuselage plane.
+
+David: I think White Knight One was also dual fuselage.
+
+Ben: Okay, that they put the cargo on, the SpaceShipOne on, they fly it up to about 50,000 feet, and then the way that they launch SpaceShipOne is they’re flying this thing, they drop SpaceShipOne, takes 5–10 seconds, and then boom, ignites, the rocket goes off, and then it flies straight up. This is the craziest system to imagine. If they not had precedent for this before with some of the very early prototype—I think the X-15 took off this way, at least some of the early vehicles in that era did—then it would be hard to imagine how they thought this was the right idea.
+
+David: This is like a video game thing, like a trick shot or something. It’s amazing.
+
+Ben: Yeah, it is wild.
+
+David: So, they enter the competition and pretty quickly they achieve supersonic flight, actually, in December of 2003. There must have been an extension on the XPRIZE insurance policy then.
+
+Ben: There was.
+
+David: There was. So, December of 2003 they achieved a first. From zero when they entered in 2001–2000 to first supersonic flight with the SpaceShipOne dropped off the White Knight in December 2003. This actually means this is the first private manned airplane, so not a government project. I don’t know how the Concorde fits into this that went supersonic, which maybe because the Concorde was perhaps developed with the government? I’m not sure.
+
+Ben: That’s a good point. I suppose that would be why. I do know in the Black Sky documentary, they point out specifically this is the first non-government–funded supersonic plane. And, of course, it also goes to space.
+
+David: Also goes to space, right. So then in April of 2004—a few months later—the US Department of Transportation issues Burt and Scaled the world’s first private license to go to space, which is incredible. And then in June of 2004, they make the first flight. I don’t know if they hit the Kármán line in that first flight in 2004. They may have, but it was just one flight, so they didn’t win the prize. They get SpaceShipOne back down.
+
+Ben: They did because they would have had to go above the 100 kilometer line to qualify to make that first flight.
+
+David: Interesting. Okay, so they hit the Kármán line. Then over two weeks, at the end of September beginning of October 2004, they do it. They make consecutive flights within those two weeks, and they win the prize. It’s incredible. Perhaps even more incredible is what happens right before and after.
+
+Ben: From a physics and human accomplishment perspectives, yes what we already talked about the amazing part.
+
+David: Within [...] by the way, too. From nothing to going to space twice in two weeks.
+
+Ben: 100% it’s wild. It’s worth noting, before we talk about what happened the night before the first flight, who was bankrolling and who was funding all the operations to create SpaceShipOne and the White Knight.
+
+David: It was not mostly Scaled itself because remember, Scale is an independent company at this point. They did have a semi-secret backer of the project who was Paul Allen, the Microsoft co-founder. Of course, a late Microsoft co-founder and a great space enthusiast during his time. But this was unbeknownst to the XPRIZE Foundation and to Peter Diamandis, so it was relatively a secret that this was happening.
+
+Ben: Yeah, it’s no surprise among Seattleites. Me and my colleagues at Pioneer Square Labs know Vulcan and Paul well in the Seattle ecosystem. He is always funding very eccentric, crazy projects that no one else is funding, particularly in space, particularly in oceans, particularly in these interesting exploration fields, but for whatever reason it was not disclosed until the successful flights that Paul had poured, I can’t remember exactly what the number is but on the order of $20-ish million into the project to fund the thing and into Scaled.
+
+The partnership with Burt—an amazing partnership that the two of them formed and built trust with each other—was so secret that actually Peter Diamandis and the XPRIZE folks didn’t even know who was behind or at least where the money was coming from to fund Scaled, to go and make this amazing run at the prize.
+
+David: So Paul Allen’s involved here. Obviously, they have to make the second flight to win the prize, but it’s a pretty safe bet that they’re going to do it. They’ve made multiple flights at this point, everything’s ready to go. The night before, who re-enters the picture? The one and only Sir Richard Branson. You may have heard the whole story. He contacts Paul Allen first, is that right?
+
+Ben: Yeah. There’s two deals that happen. The first one is a press conference that they have that basically announces that Sir Richard has seen the innovation that’s happening here, and even though he didn’t decide to fund the XPRIZE originally, and even though he doesn’t have a competing team here, he sees the future and he wants to buy the assets, all the intellectual property, and partner with Scaled, to take everything they’ve built and build a venture out of it after they complete this flight and win the XPRIZE.
+
+The second thing that happens is overnight, he pays Paul Allen $2 million or he cuts a deal to pay $2 million to put a gigantic Virgin decal on SpaceShipOne. Everyone who’s coming in for the flight the next morning, including Peter Diamandis, the whole XPRIZE team, they come in and the plane now has a Virgin logo on it. It has prominent placement on the runway. Richard Branson also has another project that’s going on that’s got a Virgin logo on it, on another plane that’s also out on the runway, front and center in front of all the press. Suddenly, all this media attention is descending upon the XPRIZE, hopefully about to be one, and boom there’s Virgin branding everywhere.
+
+David: Yeah. I think the amount is the XPRIZE. They’re pretty gracious about this. They’re like, oh well, cool. Good for space. The goal is to evangelize space and that is happening.
+
+After the flight, Branson holds a press conference with Rutan, and says that Virgin is going to be buying this technology. People were like, wow, okay. Well why? Virgin could be an episode all on its own. I think Branson actually got a start in the magazine industry, then moved into the music industry with Virgin Records, and then retail with Virgin Megastore. But at this point in time, probably the biggest and best-known part of the Virgin empire, are the airlines, the Virgin Atlantic in the UK, and then Virgin America which is now a big part of Alaska here in the US.
+
+What is he going to do with the space technology? He’s going to form the world’s first space line. What a brilliant marketing move.
+
+Ben: Airlines have been working well for us. Let’s do it on a grander scale.
+
+David: What’s bigger than the air? Space.
+
+Ben: I’ve seen Sir Richard talk a few times, once in Seattle and once in Indianapolis at a marketing conference that I went to there once. I do remember. I think he’s even said this in both talks that I watched. He has this line, ‘Screw it. Let’s do it.’ You could just imagine him sort of seeing the world change in front of him and saying, screw it. Let’s do it. We have to be a part of it. Space is the future, and I know the business model to do it.
+
+David: They announced that they are forming “Virgin Galactic,” a new space line. The business model is that they’re going to take private tourists into space for a very high ticket price. The idea is that this is going to be an airline, so Sir Richard puts one of his top lieutenants at Virgin, Will Whitehorn, in charge of this new company. They formed a JV with Burt and Scaled called The Spaceship Company. Virgin Galactic is the airline, the spaceship company, this new JV, is going to be essentially the Boeing or the Airbus. They’re going to build and also operate these planes at least in the beginning.
+
+Virgin puts up the money, reportedly over $100 million to fund all this. Scaled brings the technical know-how. The Spaceship Company is initially 70% owned by Virgin, 30% owned by Burt and Scaled, and Virgin Galactic (the space line) immediately contracts five SpaceShipTwos. The SpaceShipOne, which we’ll get into in a minute, is really not safe for passenger use.
+
+Ben: And certainly not enjoyable or smooth.
+
+David: Yeah. They are going to build five SpaceShipTwos and two White Knight Twos. To launch them, all contracted and they’re going to finance this. The revenue model is they’re selling these tickets at initially $200,000 apiece. The crazy thing is people buy them. So, pretty quickly, they sell a good number of tickets.
+
+Angelina Jolie and Brad Pitt buy tickets. I think they were together at the time. I wonder if they are taking their flights together or separately now. Lady Gaga buys a ticket, Steven Hawking, I think Branson actually gave Steven Hawking a ticket. Eventually some of the last folks to buy tickets or [...] twins later are on the list, on the flight manifest.
+
+Ben: You can understand the demand for this because this is a completely underserved market at this point or unserved. You think about the civilians that have been to space have either found their way to pay to be on a Russian rocket—I think they have to become honorary or temporary members of the Russian Space Agency to be able to do this—or you look at the folks, Charles Simone has gone up twice and I think has paid north of $50 million, maybe $75–$100 million to be able to go up. Of course that’s orbital flight that they are going up. This is a different thing.
+
+Civilians are not finding their way to Black Sky space and experiencing minutes of weightlessness. There’s no real product for that. In fact, the only product to experience weightlessness doesn’t really go all the way to space, but is Peter Diamandis’ previous company. That’s such a small world in the space community. You can totally imagine why there’s an entire tier of wealthy but not crazy wealthy people where you’re like, oh yeah, this is cheap, what a unique and different experience.
+
+David: Yeah. You can spend a lot more than $200,000 on a vacation house somewhere or you could go to space. Pretty cool. The product that they’re selling—this evolves a little bit over time—the current product is a four-day experience where you get training at Spaceport America which is now in New Mexico, which we’ll get to. You get 90 minutes in the air and about full over 5 minutes of weightlessness with 5–6 people in your ship. Probably, most importantly, you get astronaut wings when you land because you well have been to space.
+
+Ben: Pretty cool.
+
+David: Pretty cool. Okay, this is all happening in 2004. Remember, it was like three years to get SpaceShipOne up, reused, flown, and things are moving here.
+
+Ben: It’s like the classic software engineering aphorism that the first 90%, all you have left then is the second 90%.
+
+David: Exactly, orr maybe in this case, the second 99%. We mentioned that SpaceShipOne was really a prototype vehicle. All of Burt’s designs, like the Voyager, all those other great planes, this is not ready for a Virgin America (let alone Virgin Galactic) safety measures or comfort here.
+
+Three years later, in 2007, we still don’t have SpaceShipTwo ready or really even close to ready. Very tragically in July of 2007, there was an accident at Scaled when they were testing some of the engine components. Three Scaled employees were killed in an explosion when they are testing these engine components which was terrible and unfortunately not the only tragedy that’ll happen in Virgin’s history here.
+
+Shortly after that is actually the very next month when Northrop acquires all of Scaled. I don’t know if that was part of what was behind the acquisition, but certainly it was a few years later after that that Burt retired. You’ve got some transition happening here where the major technology provider to the spaceship company is now part of Northrop.
+
+Ben: Importantly about that accident, that wasn’t something like they thought a design would work and it wouldn’t, or that it didn’t and it crashed or anything like that. This was literally hey, we’re doing an on the ground test with fuel that we perceive to be safe and it just wasn’t safe. That’s most observed by the fact that the folks who are watching were behind a chain link fence. It wasn’t even like we have to go to a facility because something could go wrong. Just people think anything could go wrong there.
+
+David: Yeah, and it did, unfortunately. Nonetheless, the next year, in the next summer—July 2008—is when we get the first predictions from Sir Richard about when commercial flights can happen.
+
+Ben: The first of many.
+
+David: The first of many. In July of 2008, Branson predicts the first passenger flight will happen within 18 months. Then not almost quite 18 months go by in October of 2009, Virgin puts out a press release saying that actually it’ll be within 2 years from then. Within two years of 2009 and in March of 2010, actually the first SpaceShipTwo is built, the first White Knight Two is built at this point, and the first captive flights of the two of them up in the air together do start happening in early 2010. But SpaceShipTwo is not yet flying on its own. Despite Virgin and Sir Branson having put in $100 million, the project is starting to run out of money.
+
+In 2009, they go to the sovereign wealth fund of Abu Dhabi and they invest $280 million in Virgin Galactic, which had an $875 million valuation. Part of that deal is that they announce plans that a Middle East region spaceport is going to be built in Abu Dhabi. That’ll be great. And Virgin announces at that time that they have over 300 reservations at $200,000 each. Great. Things are moving along.
+
+Ben: Definitely signs of demand. One other classic Acquired theme that I’ll pull out here is this $875 million valuation, I don’t know what discounted cash flow you do to arrive at this company being worth that. This is your classic example of a company needing X amount of dollars and how much of the company does the funder need to own in order to be willing to do that deal. It is backed into valuation, if I’ve ever seen one.
+
+David: You might say venture capital style valuation, a theme that’ll come back up in a minute here. At the end of 2009, they do a big event at the Mojave Space Port in California where Scaled is based. They unveil officially the SpaceShipTwo. Branson says at the event, the flights are going to begin now in 2011. 2011 rolls around. Branson says, I hope that 18 months from now, we’ll be sitting on a spaceship and going to space. The trend continues. As we mentioned, in April 2011, Burt does retire from Scaled.
+
+Clearly, things are not totally on track here. Remember, Burt’s now retiring from Scaled, Virgin is the space line, but who’s the technical space leadership now? They end up re-orging the entire organization. Branson brings in a new CEO, the Virgin Galactic—actually at the end of 2010—George Whitesides.
+
+Now, who is George Whitesides? A part of his background is that he was actually one of the very first people to purchase a ticket on Virgin Galactic as soon as they went on sale. He has recently gotten married and he and his wife wanted to spend their honeymoon in space. They actually got a lot of publicity around this.
+
+Ben: So cool. George is a long-time space entrepreneur. We’re not talking about Brad Pitt wealth here. George is like, hey, this is a material amount for me. Hoping to be able to do this soon so that my honeymoon is in decades in the future.
+
+David: Yeah. He really does have passion and commitment to this company and project. But he also had some serious cred. He was the Chief of Staff at NASA immediately before becoming CEO of Virgin. Prior to that, he was the Executive Director of the National Space Society. It doesn’t happen immediately, but I have to imagine that this was the plan, with Burt stepping back. Virgin realized, we can’t just be a space line for this. We need to actually control production, science, and the technology in space, and be vertically integrated here.
+
+Shortly after he joins in 2012, Virgin buys out Scaled’s stake in The Spaceship Company, takes full control, and integrates the companies. George and Virgin are now running everything.
+
+George has a great quote about this. He says, “We changed dramatically as a company. When I joined in 2010, we were mostly a marketing organization. Right now, we can design, build, test, and fly a rocket motor all by ourselves and all in Mojave, which I don’t think is done anywhere else on the planet,” which is pretty incredible.
+
+Ben: It just makes sense for them to be vertically integrated here. It reminds me a lot of taking the Apple approach of needing to control the core technologies upon which your experiences and your products are based. It always struck me as a little bit strange that there was Virgin Galactic, there was TSC, and The Spaceship Company and it was its contractual relationship of which they had different shareholders. It just makes sense.
+
+David: Yup. It works for Boeing and the airline industry, but we're not anywhere near that level of maturity yet. There's actually a pretty cool little—Ben you found this—history and connection between Peter and George, right?
+
+Ben: Yeah. George Whitsides was actually briefly Peter Diamandis’ roommate back in the XPRIZE days when Peter was also running the space tech startup Blast Off from around the year 2000 in the gogo days of the Internet, which is its own whole separate story that we don't need to get into today.
+
+An interesting thing here is the world of space is so small. We always joke about this with Silicon Valley where we’re like, my gosh, that’s the same person that showed up in that other episode. Everyone in the story is really only connected by one, maybe two degrees of separation.
+
+While we’re on tangent territory here—I got to do this—one more insane connection is when Peter was in college at MIT. This is long before the XPRIZE. He started a college organization called Students for the Exploration and Development of Space or SEDS, which has since become this international organization, there are chapters all across these college campuses all over the world, inspiring thousands of future space enthusiasts and entrepreneurs. I suspect there’s many people in this audience who are in SEDS in college. The president of the SEDS chapter at Princeton around 1985—Jeff Bezos, which is crazy.
+
+For all the stuff that people want to say about Elon and Bezos, all these just negative headlines that we saw, I don’t think you see them anymore. But for the longest time, billionaire pet project, going to space, Jeff in college was the president. It’s just cool to see the seeds of these passions starting so, so early. Anyway, back to Virgin Galactic.
+
+David: Back to Virgin and George. Totally worthwhile digression there. The other thing that George does is lands a deal. Remember, George comes from the government. He lands a deal with the New Mexico State Government to construct and finance a spaceport. $200 million launch facility in the desert there, appropriately christened Spaceport America, and he gets a fantastic deal for Virgin.
+
+The New Mexico State Government constructs and finances the whole spaceport. Virgin is the anchor tenant. I believe they pay $5 million a year in rent, which is a total, wonderful deal for them. The other thing he does is this is the beginning of the excitement around the small satellite industry. He starts a new operation within Virgin to see if they can use this same tech to launch small satellites into space, not just people. In July of 2011 Abu Dhabi invests another $110 million dollars into the company behind this business plan. We’ll see what eventually becomes to this. But it starts to work.
+
+In August of 2013, Virgin announces that they now have twice as many customers as before who would reserve flights, up to 640 reservations, about $80 million of prepaid flight reservations, so things are on track.
+
+Ben: They actually closed down new tickets at this point, right? They haven’t sold another ticket since.
+
+David: I believe it was actually after what happens next that they closed new ticket sales. Unfortunately—George has said this often—space is hard and this is new stuff. In September of 2014, Branson goes on David Letterman, he says, we’re so close, I think we’re going to have the first passenger flight in the beginning of next year in February or March of 2015.
+
+Who knows if that may or may not have happened. Very tragically, the second major tragedy in Virgin’s history happens on October 31st, Halloween 2014. They’re doing a test flight of SpaceShipTwo. They had just switched out the fuel system to a new type of fuel and the SpaceShipTwo, the original one they had VSS Enterprise breaks apart in mid-air during the test flight after it's released from the mothership. The co-pilot Michael Alsbury is killed, and the pilot Peter Siebold survives, but he’s seriously injured. This is obviously not the headline you want. It’s tragic, period, but not the headlines you want when you're trying to attract customers to come and reserve tickets on your new space line, to have to craft a blow up in mid air.
+
+Ben: Just enormously sad. Both tragedy’s so sad in their own right, but the fact that they’re both so different, too, and so many years apart. It just shows what early day it still is for humans trying to go to space.
+
+David: This is really real pioneer stuff. It turns out the government—the Transportation Safety Board—does conduct a full investigation of the crash. Turns out it was not a real technology problem or a problem with the fuel. Unfortunately, the feather system that we describe earlier deployed way too early on the way up, not on the way down, and the G-forces from that tore the ship apart. The investigation revealed it was likely the result of pilot error which of course raises questions about shouldn’t there be safeguards about all of this? It was back to the drawing board for a lot of things.
+
+Ben: Right. They also said, I think, while it’s likely a pilot error here, it is incumbent upon the designers to consider human factors in designing the technology in the first place. A person undergoing that much stress and pressure, what should you expect of them and what should the systems do on their behalf? Which is a fascinating philosophical concept that we don’t have time to all the way dive into on the show.
+
+David: At the minimum, you shouldn’t be able to deploy the feather on the way up.
+
+Ben: Which is of course how Virgin Galactic changed the design for the next trip that they created.
+
+David: Yeah. After that, George and the company refocused on getting all this right. They spin off the small set, launch operations into a separate company to remove that distraction. It’s called Virgin Orbit. Which is actually still an independent company part of the Virgin Group today. It’s not part of Virgin Galactic Holdings.
+
+Ben: It is crazy cool. They’re basically strapping a rocket to a modified 747 and launching at the same way that the White Knight Two launches SpaceShipTwo. Really excited to watch that but totally different market different company at this point.
+
+David: And different tech down, too. It’s not using the White Knight. It’s using a 747 as the launcher. They need a new spaceship now. They start to work on the next to SpaceShipTwo. This one christened the VSS Unity, actually named by Stephen Hawking, which is super cool. They do a big event, Hawking announces the name. They unveiled that in December 2016. Then in April 2018, it performs its first powered flight, the first flight for the company since the 2014 crash. It ends up three and a half years until the first flight of the Unity.
+
+In December 2018, just about 2 years ago, we have the big moment when Unity finally reaches in a test flight 82.7 km above the earth, 51.4 miles, which is below the Kármán line, but this is what we were referring to earlier, NASA’s definition of space is actually the 50-mile mark. They passed the 50 mile mark.
+
+Ben: Such a hilarious standard versus metric system. The international metrics will be 100 km and America would be 50 miles.
+
+David: Totally. For something that space is such an exact science.
+
+Ben: Completely arbitrary. Gravity pulls the atmosphere toward the earth and it thins in a way that can be described by an algorithm. Here we are, defining arbitrarily what height space starts.
+
+David: Totally. This is huge for the company. It’s now taken 14 years. They finally have a viable, not yet ready for passengers, but design that will read for passengers that reaches space by some definition. NASA awards the pilots Mark Stucky and Frederick Sturckow astronaut wings. It's all happening. The SpaceX launched this year. It’s the first human space flight launched from American soil since the retirement of the Shuttle. It was actually Virgin Galactic. SpaceX launched earlier this year and then their second launched yesterday.
+
+Ben: That’s fascinating.
+
+David: We’re the first American launched into orbit and up to the space station, but it was actually Virgin that did the first human space flight from American soil after the Shuttle retirement program.
+
+Ben: That’s a good tidbit. Of course, on the business side of this, too, after the 2014 tragedy, as we mentioned they stopped selling tickets. I think there are 603 people who have paid that $200,000–$250,000, some with some discounting. They basically haven't sold tickets since then. What they have done because they need to know as a business is their demand for this thing and if there's a continuing demand, are our marketing efforts working. They do have the ability for you to indicate interest by paying a thousand dollars in a Tesla model.
+
+David: This actually launches this year.
+
+Ben: Oh, okay.
+
+David: It’s a post-SPAC.
+
+Ben: This is a Tesla Model 3 style, refundable deposit. Someone in the [...], I reserved a ticket. I’m actually curious if that's what we’re talking about here or it’s the full, hey, I paid $250,000. What you can basically do is go put the link in the show notes, you can go to their website, you can fill out a form, I think you can put your credit card information in and put down a thousand dollars and say, put me in line and contact me when I can pay.
+
+David: It’s the “One Small Step Program” that then once they are selling tickets for real, you will make the one giant leap from the $1000 to the $250,000. That’s a pretty giant leap.
+
+Ben: I love that. I didn’t realize that was recent. I thought that was before they SPAC’d and went public.
+
+David: No. It was only in February of this year that they launched that. Of course, we’re referring to the SPAC. By the end of 2018—this is big, this is huge for Virgin—they’re finally on track. They have demonstrated, put a vehicle into space; this can work. The only problem is they’re running out of money again. The money from Abu Dhabi has taken a lot of capital to do this stuff.
+
+That’s okay, though, because Branson and Virgin have a plan. They literally have secured funding, a billion dollars from another sovereign wealth fund in the Middle East, this time Saudi Arabia. This is now in 2017. They announced that they have secured funding from the Saudi Arabian sovereign wealth fund, a billion dollars to fund continued operations and hopefully soon.
+
+Ben: Notably, that sovereign wealth fund is the largest LP in SoftBank Vision Fund fund one. They’re doing big deals all around the world. At this time, many billions of dollars each.
+
+David: Saudi Arabia, under Crown Prince MBS, had made a big deal over the past few years. If they want to diversify their economy from oil, they’re getting into tech, there are LPs in lots of venture funds, not just the vision fund, lots of money in the public markets in tech. This all seems like a great path.
+
+The deals agreed to in 2017, but under regulatory review in the US and UK and takes a while to close. During that time in 2018, folks will remember the journalist Jamal Khashoggi, I believe was a Saudi and was living in the US, and was vehemently opposed to the Saudi government. He enters the Saudi consulate in Turkey and never comes out. It is assumed and very likely that he was murdered by the Saudi government inside the consulate, which, of course, (a) is just horribly, but also (b) for the tech industry, specifically causes all sorts of problems because there’s so much Saudi money all over the tech industry at this point, and this is a major international event.
+
+Ben: This is the start of the startups being very aggressive and asking venture firms before they invest, hey, tell me who your LPs are. This used to be faceless money to me. Now, I don’t want this particular money or money that seems like this type of money to be profiting from my startup or having control over my startup. So very much shook the entire venture landscape of what it means to take capital and how much you should care about who’s invested in your investors and who’s invested those investors, et cetera.
+
+David: This was a huge wake-up call we all remember vividly. Fortunately, for Virgin and Branson, the deal wasn’t done yet. Sir Richard does what he thinks is right and he pulls out of the deal, even though Virgin is bleeding cash, needs money, they’re not going to do this deal with the Saudis anymore.
+
+That is when he meets yet another colorful character, this time in the Silicon Valley tech world, Chamath Palihapitiya, which for anybody who’s a long-time listener of Acquired and certainly anybody in the tech industry, at this point well beyond, is probably familiar with Chamath.
+
+Chamath was an early Facebook executive. He was within the first 30 employees, and he was pretty senior there. He was the guy, by all accounts—his own and others—who really figured out Facebook’s viral growth strategy, started the growth team at Facebook, and he particularly also figured out international growth for Facebook. A super, super key executive. He was also the guy at Facebook behind, remember the Facebook Home, I think it was called, the operating system for phones?
+
+Ben: Oh yeah. I think Facebook won. They partnered with HTC to make a Facebook-specific phone.
+
+David: That’s right. While it was built off of Android. It was like the Fire Phone. Other companies building off of Android, turns out that wasn’t a good idea. Anyway, right after that, he left Facebook. Facebook had already gone public at this point. He had a large equity steak, made hundreds of millions if not billions of dollars from Facebook.
+
+He did a pretty audacious thing. He said, I’m going to take most of my money and I’m going to roll it into a venture capital firm. He started a venture capital firm called Social Capital with few partners from USVP, Mamoon, and Ted from USVP. They start Social Capital. I remember, when they were breaking in, this was 2012–2013 timeframe, I think.
+
+Ben: Sounds right.
+
+David: They made a big splash. I think their first fund was like $600 million or so.
+
+Ben: Big fund back then, pocket change now.
+
+David: Now, it’s a quaint early stage fund, but that was big. They got in early into some really great companies. They did the Series B in Slack, a bunch of other great companies. I think they led the A for Front. Really established themselves. At that point in time, no new venture firms had really broken on to the scene in a big way in this same way that social capital did.
+
+Chamath engineers all of this. And then in 2017, a few years later—this has been chronicled much elsewhere; we’ll have to tell the full story ourselves in Acquired someday—Social as a venture firm, basically breaks up at Chamath’s direction. Remember, he is by far the largest LP in the fund. He converts it into a Berkshire Hathaway–style holding company/family office. I believe some of the LPs did roll into this.
+
+Ben: He’s mostly investing his own money at this point.
+
+David: Mostly investing his own money. He had made some great calls on the public markets, too, along the way. He went all in on Amazon. He had a hedge fund within Social as well. That was also managed like a bunch of his money. He went big into Amazon at $300 stock price or maybe it was even lower.
+
+Ben: Seemed high at the time.
+
+David: Yeah. Made some great bets on Bitcoin early. He has a lot of capital to play with. He’s in the process of converting Social into this holding company. He gets this idea and sees this thing that’s happening in the venture industry, which is now news to nobody but at the time was really ahead of the curve, which is companies are staying private longer, they’re not going public, time to liquidity is awful. When companies do go public—that’s where he started to see some IPOs at this point in time—it’s a raw deal for the companies.
+
+You’re seeing this big IPO pop, but that leaves so much money on the table, literally billions of dollars in market cap that is just a wealth transfer from these companies to the investment bank with clients that are buying into IPOs.
+
+Ben: For folks who are new to Acquired and haven’t heard us talk about this on our Limited Partner show, which is our sort of second show that we go deep with our biggest fans who are actively building companies to talk about these concepts, we did one on SPACs and talked about this. In talking about comparing against the IPO pop, my favorite example of this when people are saying, what do you mean the IPO pop? Isn’t that good? When you think about it this way, it’s like I own something that’s worth (call it) $20 and I sell it to someone for $20. At the end of the day, they run over and they sell it to their friends for $30.
+
+David: Or $40 or $50.
+
+Ben: You’re like, wait, wait, but you just bought it from me for $10. Literally, nothing has happened in the time since then, how come all of you told me, the whole market, you all only told me that it was worth $20 and now suddenly you’re all saying it’s worth $30. It’s just this ludicrous thing where you’re like, I spent a freaking decade holding this thing from $1 to $20 and here you are now doubling the price or putting this on big multiple within a day. This is stupid. Yes, that is the approachable corollary.
+
+David: This is the real leap that Chamath makes. Bill Gurley was already starting the rant against this. You had the Spotify direct listing, I think happened right around this time. People are looking for alternative ways. Chamath thinks he finds a really good vehicle to solve this in a more elegant way, which is he dusts off this old concept, called a Special Purpose Acquisition Company or a SPAC as abbreviated that Ben referred to, and he says, hey, we can use this thing which used to be a financial engineering play to take old school private equity–type companies public and profit off of some cash flow from them. We could actually use this vehicle to take tech companies public in an alternate route to an IPO that’s going to be way easier, way faster, and most importantly, it’s going to avoid this mispricing aspect where this wealth transfer is happening just to basically investment banking clients.
+
+This is crazy at the time. Chamath has a great quote on this. He says, “This is something where everybody wants to be second. Nobody wants to be first.” It’s kind of an apt analogy to being a passenger on being Virgin Galactic here. 2017, Chamath teams up with an investor out of the UK named Ian Osborne, who runs a fund called Hedosophia, which is funny.
+
+Ben and I were texting when we were preparing for this. I thought Social Capital Hedosophia which is the name of the SPAC was a name that Chamath came up with to name his SPAC. No, it’s actually his investment partner, the Hedosophia firm in the UK. Ian and Chamath probably knew each other from the Facebook days. Because Ian was a partner at DST.
+
+Ben: Yuri Milner’s Russian firm?
+
+David: Yuri Milner’s Russian Tech Investment vehicle. I think they lead the first real big valuation growth round in Facebook at a $10 billion valuation I think. Mary [...] at a $500 million valuation which is crazy at the time, but then this multi-billion dollar valuation, DST the ones that got this. Ian and Chamath launched a $700 million SPAC in late 2017 under the ticker IPOA. They go out looking for a tech company to merge with and take public.
+
+Ben: I remember, of course I didn't really remember before for the Virgin Galactic announcement when it was just a SPAC and they didn't know what they were going to buy because that wasn't well marketed. The press wasn't writing about what Chamath is doing with the SPAC and we don't know what he's going to buy. What they're writing about came months later when he did know he was going to buy.
+
+David: Within Silicon Valley, I remember that people are talking about it, Chamath’s doing this crazy thing, Social Capital’s turning from a venture firm into a holding company. What is going on here? What is a SPAC? I don't understand this.
+
+Ben: SPACs at this point are for bad companies. This is a way to get crappy companies public and whatever he buys for this thing can't be good. The counter argument to that is whatever he's buying here is nontraditional. It is something that most traditional retail investors with some specific time horizon and herd mentality wouldn't be taking public the normal way or investing in the normal way. At the very least, whatever he's going to buy here is likely their only or one of a limited set of options that they have.
+
+David: Indeed. I don't know the actual story of how they got introduced. I wonder if Hedosophia and Ian had something to do with it, given that they're based in the UK, as is Branson, of course. Anyway, after the Saudi deal falls apart for Virgin Galactic, they get introduced and it's a perfect match. By mid-2019, they agreed to a deal and on October 28, 2019, it's finalized. IPOA, Hedosophia Capital, Hedosophia 1 “de-SPACs,” which merges with Virgin Galactic bringing Virgin Galactic to the public market. It’s now a publicly traded company under the ticker symbol for the company changes from IPOA to the very appropriate SPCE.
+
+Ben: Love it.
+
+David: Love it. Here's the deal, here's what happened. Remember, the SPAC was a $700 million SPAC vehicle with  $700 million in a trust.
+
+Ben: That just means it's basically worth $700 million and the reason it's worth $7000 million is because it's literally a cash account of $700 million.
+
+David: Yup, to be used to consummate a transaction, a merger with Virgin Galactic which they do. In the deal, $674 million from the SPAC, from IPOA goes into Virgin Galactic. Presumably, the delta there was operating expenses for the SPAC and the search period over the year-and-a-half-ish or as close to two years, really, where they were looking for the right target before they finalize the merger. Plus, Chamath invests another $100 million himself in new capital. We have $774 million going into the deal, $274 million of that goes to buying out insiders in Virgin Galactic. I'm not sure exactly who I presume. This is probably long-time employees options and probably also at least some portion of Abu Dhabi's stake.
+
+At that point, I believe they own about a 37% stake in Galactic. There's close to $50 million in transaction fees associated with the deal. Virgin at the end of the day becomes a publicly traded company with…
+
+Ben: God, $50 million in transaction fees; that is going to come down over time.
+
+David: I have to imagine that part of the reason that was so high was this was the first technology SPAC that was happening, so they were pioneering a lot of stuff here which, of course, means lots of legal fees. Virgin gets $450 million in new cash to the balance sheet after transaction fees and the $274 million buying out insiders.
+
+The deal includes Virgin Galactic and The Spaceship Company, which (remember now) is a wholly-owned subsidiary of Virgin Galactic as vertically integrated. It does not include Virgin Orbit; that’s a separate company. When the dust settles, Virgin Galactic, SPCE is now publicly traded at the end of the first day of trading worth about $2.3 billion on the public markets.
+
+The SPAC shareholders own 33% of the company, almost exactly a third, Virgin and the previous shareholders own 52.5%. Chamath and Social Capital, Hedosophia team owned 13.2%. Chamath is chairman of the board of the company. An untraditional match if there ever was one, but it works incredibly. As we sit here today—there's more news this morning—as of last week, the company was trading at over a $5 billion market cap.
+
+Ben: It works is a funny thing to say there, David. The speculation party has continued. I would say the merry-go-round, musical chairs, or whatever you want to call it, that's continued. Of course, we haven't really seen results yet. The cash did go to the balance sheets. The company gets to keep building toward its goal of launching, paying all of its expenses. It seems to be close to going to plan, but if you just want to look at it from an equity investment perspective, sure, the things doubled in market cap since the IPO which seems good for anyone who invested at that point.
+
+David: Yeah. That's probably just like tracking to market at this point at least for the tech market.
+
+Ben: That's a great point. I'd compare it against the NASDAQ.
+
+David: Against the NASDAQ, but it's pretty funny when they do. As part of the de-SPAC merger process, there's not a typical S-1 prospectus. There is an S-4 merger document though, which includes much of the same information, actually more because they can talk about forward-looking projections. It's pretty funny.
+
+For the prior 12 months and in June 30th, 2019, the last quarter in the books at the time of the de-SPACing, Virgin Galactic had a revenue of $4 million an operating loss of $173 million, very much a non-traditional IPO.
+
+Ben: A number that has gone up since then is their operating loss because I think they're burning about $250 million a year now on a run rate basis.
+
+David: The question is why would public market investors receive this stock with such enthusiasm or at least equal enthusiasm to the NASDAQ over the past couple of years? I think it just comes down to what this could be. This is an option on this future market. Now, Virgin said at the time of the de-SPACing merger that it believed it could complete 16 flights in 2020, serving 66 passengers which would equate to $16 million in revenue and hopefully growing quickly from there.
+
+Now, of course, here we are in November 2020 and zero of those fights have happened. Virgin would argue that is valid to a certain point that coronavirus had a lot to do with that, but there's also the IP and all the actual physical property associated with the company which is worth a lot. There's Spaceport America at least. There's the Virgin brand that they have a license to.
+
+Ben: There’s all the IP of the actual planes.
+
+David: The technology, the spaceship company. I think at the end of the day, the biggest thing though and why this has traded so well is there's just no other way or very few other ways for people who don't have access to venture capital as an asset class to make these kinds of bets.
+
+Ben: It's a public moonshot bet and it is literally a public moonshot bet. It’s such a good point, David.
+
+David: What else could you invest in where there's legitimately a chance of 100X or 1000X return in the public markets? There probably are some good examples of those but nothing that is so clear cut, pure play, hey, I can put a little bit of money into this and I might get 1000 times my money back or it might go to zero, but it is an asymmetric upside.
+
+Ben: It's funny. David and I were texting last night and I was like, so a market cap of $5.2 billion. I guess because it's either worth a lot more or a lot less.
+
+David: Yup. Okay, so what's happened since the merger? In February of 2020, like we talked about, they reopened the ticket sales with the one-small-step program. Elon inspired $1000 to reserve your place. It had 900 people signed up so far, so close to $1 million in revenue there, great.
+
+In July of 2020, the big news, they bring in a new CEO. George Whitesides transitions, becomes Chief Space Officer within the company; he is very much still part of the company. The new CEO, Michael Coglazier is—drum roll Acquired theme—literally spent his whole career, except for his internship during business school, close to 30 years at the Walt Disney Company.
+
+Ben: In parks, right?
+
+David: Mostly in parks. I believe he's started—this would’ve been late 80s, early 90s—under Eisner in the [...] group. He spent a couple of years doing that and then went to business school. He interned at Bain during business school, then came back to Disney after that. He has spent most of his career in parks under Iger and of course now under new Disney CEO, the other Bob—Chapek—running the parks business, which you could imagine being a really great fit for now running this new experience.
+
+Ben: If I am going to spend $250,000 to go and do four days, it better feel like Disneyland the entire time, Disneyland in space; that is what you should be promising me for this price tag.
+
+David: When you put it that way, I wasn't planning on doing this but Disneyland in space, that's pretty compelling. I might have to book a ticket.
+
+Ben: It is interesting. In a lot of ways, it shows the maturation of the company, where it originally was with Burt and the Scaled team. It's originally cowboys. It goes from cowboys to space industry veterans who are well-connected and have the ability to work with government agencies and much bigger contractors if they need to farm out parts to either Boeing or Lockheed or the subcontractors of Boeing and Lockheed to the world.
+
+On top of that, George can be the chief space officer, have all the space relationships and understand that ecosystem, but now we need the person who can craft the consumer brand to be the CEO of the company going forward. I don't know exactly what the narrative they sold to Wall Street or talked about internally was, but those three eras of the company make a lot of sense to me.
+
+David: Totally. That was in July of this year, of 2020, two weeks ago on November 5th, they announced earnings. Earnings i.e. losses, but that was to be expected.
+
+Ben: They don't like to call losses calls, though.
+
+David: The announcement that the first test flight at Spaceport America will be happening later this month in November, 2020. They're on schedule for the first passenger flight to take place in Q1 of 2021 with Richard Branson on board as the first passenger. After which, they will open up real ticket sales again. All of that is good, the stock reacts well. Here we are, it's Monday morning, November 16th, 2020 as we're recording this and they announce this morning that that flight from Spaceport America is now delayed indefinitely supposedly due to new guidelines from the New Mexico Department of Health to disrupt the spread of Covid-19 which makes sense that very well could happen. I don't know what the New Mexico new governments are. We're in the middle of the surge.
+
+Ben: We're in the middle of the worst moment of the pandemic in the United States.
+
+David: It totally makes sense. On the other hand, you do have to ask the question, it's not like COVID is a new development.
+
+Ben: Well, this is also the 15th year that there's been a delay. At some point, you have to say can you give us a date and hit it?
+
+David: Exactly. When we started recording, the stock goes down about 10%. I mean that really is the question now going forward and we’ll wrap up history and facts here and transition into analysis. The promise here is immense and we'll get into the TAM and what this could be if they do execute on Disneyland in space. Unlike another company that we've covered on the show in the startup space industry, SpaceX, that despite some early missteps has now just had a decade long track record of launching and hitting their targets.
+
+Ben: Sort of hitting their targets. They're very good at revisionist history. Both SpaceX and Tesla are good at setting an incredibly aggressive target, missing it by 12-18 months but then it's the plan the whole time. They make enough profit fast enough and they ship stuff where you're like, it still feels really fast to me.
+
+David: You get that 18-month leeway. Virgin has used this 18th month leeway. I wasn't counting but 5 or 6 times and still hasn't launched, so we shall see.
+
+Ben: Space is hard.
+
+David: Now, a funny quote which is totally appropriate to put a bow on history and facts, last month in October of 2020, do you know who the latest entry to the SPAC game was?
+
+Ben: Is this Branson's SPAC?
+
+David: It’s Branson himself. We're coming full circle going from being the first SPAC target to now a participant on the SPAC side.
+
+Ben: What will he buy? That’s interesting.
+
+David: I don't know. I think they're targeting a consumer or a technology company, $480 million VG Acquisition Corp. If any SPAC investors out there who want to go speculate on what Sir Richard might buy, it is available for you to do so in the public markets now.
+
+Ben: Before we go into the analysis section here, we would like to thank Bamboo, the official sponsor of the analysis of season seven. Bamboo is one of the top growth marketing firms in tech. They've supported world class growth programs for startups like AllTrails, Peloton, friends of the show at rover.com and many more. Whether it’s paid search, paid social, creative production, attribution, or product analytics, Bamboo’s services always have the same objectives in mind, helping tech companies earn a growth marketing budget back faster and retaining their customers longer.
+
+Whether you are a startup with multimillion dollar growth targets ahead, or an already big and successful company looking to invest smarter, our friends at Bamboo will make a great extension to your growth team. You can click the link in the show notes or go to growwithbamboo.com to learn more. I just cannot say enough wonderful things about these folks. Thanks so much to our friends at Bamboo.
+
+Okay, analysis?
+
+David: Let's do it.
+
+Ben: Narratives?
+
+David: I think narratives are the right one for this, because are there ever?
+
+Ben: We've pretty much danced around narratives, but I think it's worth specifically articulating what the bull and bear cases are around the company. The bull case is that SPACs actually are incredible vehicles to finance these long-term capital intensive projects. What they were used for before was bringing crappy companies to market and they deserve the reputation that they had. The vehicle itself not having to do a roadshow and actually consummating a transaction with one buyer who has done a ton of research on your company brings a ton of capital all at once to bear.
+
+It's actually an awesome way to raise a good amount of money, to provide the right amount of liquidity to shareholders and to only need that one party that believes in your long-term vision and is willing to get you public to allow any future investor to make a moonshot bet. Whereas the traditional IPO process, it would be really hard to run the traditional book making process on Virgin Galactic. It had never made a dollar or a material dollar before. Well, still basically never. It was really hard to estimate when that would start happening, when it would turn a corner. It’s really hard to estimate how much future capital would be required.
+
+You can make a projection but how much is any retail investor going to believe that? You sort of risk going public and then the whole business dying based on trading down immediately or based on being able to not subscribe to the offering, whereas in a SPAC, you really just need that one true believer.
+
+David: Well, that one true believe it and it's at a negotiated price. I think that's an important piece of upgrade here which is the SPAC vehicle but the insider as of the SPAC and the SPAC shareholders acquired 50% of the company.
+
+Ben: Right, it’s a pretty dilutive financing.
+
+David: Even though it ended up first day trading at a $2.3 billion market cap, I think this was basically a more or less appropriate valuation for something like this, which is a very high beta bet, but the upside is huge, so shareholders will be very much appropriately compensated if this works out. It could go to zero, but you're buying half the company here. At that, from day one market cap, it was trading at about 2X the capital that has gone into the company which I know is not an ideal academic way to value a company. You can just think about, okay, $1 billion now of R&D has been put into this. Am I willing to pay $2 to every $1 of R&D that's put into this for an option on the side here?
+
+Ben: It’s pretty cheap.
+
+David: You could make the argument that this is not a crazy valuation.
+
+Ben: All right, so that's our bull case on the transaction. Let's talk about the future of the company. Let's talk about the market here because of course there have only been 600 people to date who have been willing to pay the $250,000. These are pre orders. These are people who have been lining up to do this. I don't think they knew it would be a decade before, but a decade before they could actually get on the ship. How many people potentially could do that?
+
+They ran some analysis. I think they worked with an investment bank to figure out that it's something like 90% of the people on that 600 person waitlist, 90% of those have over $1 million in net worth, which makes sense if you're going to go spend 25% of your net worth. 70% is less than $20 million. Their sweet spot is people between $1 and $20 million. In all likelihood, it's a lot more than one.
+
+David: They might be able to get the price down over time. If you have $1 million in net worth, would you pay $25,000 for this? Yeah, probably.
+
+Ben: They won't get the price down that much and I’ll tell in a minute why. The bull case is basically let's just say $10 million plus is what the majority of people who are going to do this will have. Well, there are 1.8 million humans on Earth that have that much money. You actually don't need a huge percentage of that market in order to make a really, really nice business here.
+
+David: I ran the numbers. By my math, if 10% of those 1.8 million people buy tickets or at some point in time—which you may argue that 10% is way too high, you may argue it's way too low—at the $250,000 ticket price, that's close to $50 billion dollars in revenue to Virgin.
+
+Ben: That's lifetime potential revenue for the company. Another bottom-up way to build that is using the company's stated goal, is to get to 1000 people per year. If you think about that, that's 200 flights per year. These things are fully reusable. They can get to $160 million a year in gross profit.
+
+The way that I got to that number is they actually have 65% gross margins. If you look at the fuel, launch costs, and insurance, it's like $400,000-$500,000, but you can generate $1.25 million per flight. Those are almost software gross margins. That $160 million in gross profit can cover a lot of overhead, a lot of our R&D, a lot of G&A. If you can actually get that coming in revenue that you don't have to pay out in fuel and all that, you can subsidize a nice nice amount of overhead.
+
+David: Yup. This is part of why the original contract was for five SpaceShipTwos. Obviously, the idea is that they're going to build out more spaceports around the world. You could get to a point if this is a popular product where you're doing many launches a day. Thus, hundreds to thousands of launches a year, you could start to make real money with this.
+
+Ben: Yeah. What's the bear case narrative on this company?
+
+David: What isn't the bear case narrative here? No, that's too harsh. I think the big one, it’s been 16 years and still, there has not been a passenger flight.
+
+Ben: The biggest issue is, these are companies going after completely different markets. You do have a second launch spaceship company called SpaceX that has wildly outperformed over basically the same time period and didn't have the head start of being able to just buy the successful SpaceShipOne IP. When did SpaceX start that? 2003? 2002?
+
+David: Yeah, that was a bit early. That was the one go by a Russian rocket in 2002.
+
+Ben: Right. Again, lots of reasons why these things are in no way apples-to-apples. SpaceX is going to orbit 1-2 times a month and Virgin hasn't flown suborbital flight until last year. That would basically be the bear case on why investors are falling all over themselves to get money via secondary transactions into the non-public SpaceX versus buying retail shares of Virgin Galactic in the public markets. That's reflected in their valuations.
+
+We've talked about this $5.2 billion number. SpaceX most recently raised money in the private markets at $50 billion dollars. You can decide which risk profile you would rather take, but that's why there's a 10X delta in value.
+
+David: Totally. SpaceX, the current business model is totally proven. They're making a lot of money doing both government contracts and satellite launches into space. There's more speculative but very promising additional business models to come with Starlink, then potentially future exploration with the moon, Mars, and all that, but it's a real business.
+
+I think there is also a question, an unknown, of how deep is demand here for Disneyland in space? How many people are really going to just want to do this and be willing to pay a large sum of money to do it?
+
+Ben: Yeah, I think the bet is that they have to be able to graduate from this market quickly to be able to make orbital flights and do things beyond just space tourism. I think that's in the company's plans. Not only to be able to do more than just space tourism to open up additional markets, but also de-vertically integrate or horizontally integrate where you're already seeing them sign NASA contracts that were announced just in the last couple of months to do things like identify the people who want to go to the ISS as tourists and help train them but not actually fly them on Virgin hardware in all likelihood, going up on other launch providers.
+
+Virgin Galactic has these competencies that they seem to be willing to unbundle from their full service offering and be able to generate revenue in other ways. Of course, this makes sense. You look at companies like Blue Origin that are unbundling their engines and selling their engines to ULA, to other rocket builders, and not just staying fully vertically integrated. It makes sense in sort of an early Wild West industry that, hey, there's a material revenue opportunity to go chase this thing. It requires me doing a little bit of unbundling and changing my strategy a bit, at least for the time being. Sure, that seems reasonable to me.
+
+David: Totally, and there's also another big opportunity on the horizon. If this becomes a safe regular thing—these launches that Virgin is doing—and there are multiple spaceports around the world, you could take off in one spaceport and land at the other two hours later, halfway around the globe. Now, SpaceX has also talked about doing this, too, as part of their business. I can totally understand the demand for that.
+
+Ben: Better set up for it, though. If they set up an Abu Dhabi spaceport and have Spaceport America, you can do that point-to-point travel, sub-orbitally and in this fashion, rather than strapping yourself to the top of a Falcon 9, that makes a lot more sense to me.
+
+David: Totally. Okay, I think that's the bear case. Do we want to do what would happen otherwise quickly?
+
+Ben: Yeah. The big question here, basically, is if you look at the comparable of SpaceX. Why is it that SpaceX has done what they've done while Virgin hasn’t? Let's pull out execution for a moment.
+
+A big component of that (I think) is SpaceX’s strategy to go get those government contracts and basically have an enormous amount of capital in the form of revenue from government customers to launch satellites. That has just been (I think) over $10 billion now in non-dilutive revenue funding that the company has gotten, which of course, translates to things like 10X the headcount. You look at Virgin Galactic, still a startup, it's like 700 people. SpaceX is 7000. Let's, for a moment, just say it is by no means an apples-to-apples comparison because of the way that they chase dollars differently.
+
+David: Space industry folks may correct me here because I'm waiting out into somewhat technical territory that I'm unqualified to. I do wonder if SpaceX’s technology strategy, too, of basically laddering up from the Falcon 1 to the Falcon 5 to the Falcon 9, to the Falcon Heavy to the Starship.
+
+Ben: Never ship the Falcon 5. It was never built.
+
+David: But it was part of the roadmap, right? They just went straight to the 9, right?
+
+Ben: I think they basically just strapped for more Merlins on it and went straight for the 9.
+
+David: Anyway, they stair stepped-up into where they are now, whereas Virgin from the get go was like, hey, we're going to go from this prototype and go all the way to commercially viable. They haven't actually changed the design in 16 years. It was like a big heavy lift to start with. All of these things aren't heavy lifts but I do wonder if I'm more stair-stepped strategy would have been more appropriate here. I think probably the bigger thing is what you said, Ben, just the capitalization and the amount of funding that SpaceX had was an order of magnitude bigger.
+
+Ben: Yeah. This is a great segue to the playbook. This is our first playbook item. Another structural way to look at this, Virgin Galactic is chasing a market that doesn't yet exist of space tourism, whereas SpaceX was serving a market that totally existed, which is governments that want to get things into space and are willing to pay a lot for it. Of course, there was revenue financing available, whereas Virgin Galactic needed to demonstrate they could do it before people would pay. Of course, notwithstanding the $80 million that they have raised in revenue capital. Since those are preorders, I imagine they can't quite use that. I think you have to be very careful in how you spend that $80 million.
+
+David: Yeah, I do think that. I think they have restricted cash there. Okay, playbook, let's do it.
+
+Ben: Big one in my mind is an industry prize. What a fun concept that provides an immense amount of leverage on the initial dollars raised, that brings in so many more people to an ecosystem, that stimulates way more innovation than you would have if you just took that same amount of capital and ploughed it into a single company trying a single thing.
+
+Of course, there's way more losers because if you don't win the prize then you spent your millions trying to achieve something, not only did you fail, but you also didn't win the prize to get reimbursed for your costs. But you don't see it in that many other industries. It's very interesting how this seems to be unique to aerospace and space.
+
+David: The only other one that comes to mind in our world is the Netflix prize. I think to run this playbook, you have to have something that is so sexy that people are going to want to do it. There's also the DARPA competition with autonomous driving. You're not going to be able to run this playbook if you're building a SaaS company.
+
+Ben: Right. I can just imagine the launch website of someone trying and Twitter just hating it.
+
+David: Of course, we joke. In this market, probably somebody could stand up a prize for some innovative SaaS company and I bet they would actually get entrance.
+
+Ben: Someone should do a prize for making Chrome faster.
+
+David: Oh, that would be amazing.
+
+Ben: Or Gmail faster, yeah.
+
+David: [...] already on that.
+
+Ben: Yeah. Okay, cool. That's a prize. I think that the important second one here is the concept of, the best time to invest was yesterday, but the second best time is today, where Branson famously turned down Peter twice for the XPRIZE. Not that that would have been an investment anyway, but stayed out of this game until literally the night before the first all eyes on the prize successful flight, then comes in and funds it.
+
+To say that that was still the first inning of consumer space travel would be a vast understatement. The idea of when you know you're early to a market, having no shame about sort of passing, then coming back and saying, nope, still lots of runway ahead, I think that's an important one and one not to be missed.
+
+David: Totally. The only one I would add, unless you have other playbook themes you want to talk about?
+
+Ben: Nope, go for it and I'll think about if I have one more or not.
+
+David: Cool. The only one I would add to what you said is actually something from the SPAC and Social Capital, the Hedosophia-Chamath side of things here. I've heard Chamath talking a lot about this in all the other media he's done.
+
+I think there really is something to what he said about a new risky thing. Everybody wants to be the second person to do it. Not that many people want to be the first. If you're willing to be the first and if you size your “bets” right and you risk exposure, that's how you can get extremely outsized returns by doing stuff like that, like doing this whole SPAC thing, that was crazy.
+
+A lot of people thought Chamath was nuts for doing this. Well, the story is still being written on SPACs, but it turns out it was actually a pretty good idea and it was a good financing product certainly for Virgin Galactic, and I think it's going to end up being a good financing product for a lot of other companies here.
+
+Chamath has benefited hugely from that. He now has six (I think) as of today, SPACs that he and Hedosophia have launched just on this Virgin one alone—the founder shares in the SPAC and sponsor promotion. You have to disentangle his secondary investment that he made as part of it. He made a lot of money right off the bat in successfully completing the SPAC.
+
+At a broader level, he's talked about on other shows how he really tries to have a barbell strategy with his holdings in his portfolio. Now, with the holding company of Social Capital, one large end of the barbell is relatively low-risk stuff. I don't know exactly what all he would put in there. Traditionally, you'd think bond funds and whatnot. Today, it's probably Amazon stock.
+
+Another heavy barbell on the other side of out there, higher risk stuff with not a lot in the middle. This type of thing, whether it's Virgin Galactic, SPACs, or anything in the like, this is that other side of the barbell. Most of that's not going to work. A lot of it's not going to work, but for the ones that do work, you're going to get truly outsized returns.
+
+Ben: Yup, and not being afraid to look like a moron. There's going to be a long period between when you declare you're going to do this and when it works, if it works, and being willing to take the heat.
+
+Most humans aren't set up for that psychology. You kind of want a social check of your ideas with your friends. If they tell you it's stupid and enough people tell you that, you kind of don't do it. That does not seem to be how Chamath operates.
+
+David: No, not at all.
+
+Ben: Well, the last one that I want to bring up before we get to a grading here is frankly applauding the government. I think it's the government finding the right way to be involved to enable private enterprise in a win-win.
+
+The big one that jumps out to me here is the New Mexico state and county governments that actually funded Spaceport America. Virgin Galactic has this $5 million a year lease on it which is expensive. It's a material cost for the company. It would have been completely impossible for this company to go and raise $200 million on their own to build this facility, in addition to all the other money they needed to raise. Who is going to fund that if that's in your pitch deck?
+
+David: Right. When we think about that $5 million rent a year, that's 40 years to just pay back the construction costs.
+
+Ben: Right. The state of New Mexico being forward-looking to say this could be huge for our local economy if we become the Silicon Valley of space and we build this thing. Not only the goodwill that comes from that. Who knows how much money we’ll make in the future if we're actually the center of this ecosystem?
+
+On top of that, the literal dollars that will come from [...] two, three, four, five, the payback period actually isn't bad if you can get several Virgin Galactics in there.
+
+For anyone who's curious, you should go to Virgin Galactic's website and look at the pictures of Spaceport America. This thing is awesome. It looks like a spaceship while you're driving up to it. They did a fantastic job working with this great architecture firm and making the whole thing. It does feel like the front door to Disneyland of space. They did an amazing job at that.
+
+I do think it reminds me a lot of our SpaceX episode where we covered NASA's forward-thinking approach with the crew resupply and cargo crew initiatives to outsource those missions to the private companies. We just saw Crew-1 and we've talked about it several times. It launched last weekend, actually yesterday as we record this. I think governments take a lot of heat for being stodgy, for being backward-looking. I think these are two great examples of government enabling not only private sector innovation, but in a way that will benefit the government and that government shareholders over time.
+
+David: 100% great, fantastic investments to be applauded in both cases.
+
+Ben: All right. Now, before we go into our grading section, we'd like to thank Perkins Coie, the official legal sponsor of season 7 of Acquired. We have with us today Jason Quintana, a partner in the firm's M&A and private equity practice.
+
+Now, as you all know, Perkins is not only a great firm for working with startups, but has serious breadth across industries and company sizes. Jason works a lot with aerospace companies and actually worked with Boeing as a client on their pipe investment in Virgin Galactic when it was going public via SPAC. Amazing, amazing domain expert here.
+
+Jason, the space industry is full of SPACs. Why are we seeing this industry above all others using this newly popular way to go public?
+
+Jason: One of the unique things about the race to space now is speed and efficiency of obtaining capital. Really, when you look at the Elon Musks of the world, the Jeff Bezos of the world, what you're finding are solid ways of getting sources of financing. Not everybody is a Jeff Bezos or an Elon Musk.
+
+What space companies will tend to do is try to be as quick and as efficient as possible in raising capital in order to maintain the speed and efficiency that they get into keeping up with the Blue Origins, the SpaceXs of the world, or frankly, even in the Boeings of the world, where you'll have commercial crew as one of those Boeing initiatives.
+
+It's really speed and efficiency. It is the reason why you're seeing a lot of these space companies go after SPACs. Virgin Galactic is certainly one of those.
+
+Ben: Awesome. Well, thanks so much for joining us. Thank you to Perkins Coie. If you want to work with Jason or any of his partners on the legal needs for your company, you can click the link in the show notes or visit them at perkinscoie.com.
+
+All right. Let's bring this home with grading.
+
+David: Let's do it.
+
+Ben: We thought, listeners, about the standard Acquired thing is grade the transaction. Hey, was this a good use of capital to spend it on this transaction? We could get into that on this back. We sort of have litigated a little bit, and it feels like the wrong way to do this.
+
+What we want to do is paint the A+, the C, and the F scenarios for Virgin Galactic as a business over the next 10 years. We covered some of this in the bear and bull case. I just want to put a little bit more color around what the picture of an A+ could look like. The business is awesome on a unit economics basis. Obviously, we haven't yet seen a unit happen yet because it—
+
+David: It sounds like a seed startup pitch like, hey, we don't have any revenue yet, but our unit economics are going to be awesome.
+
+Ben: That's so true. I was so guilty of this. Really, if you think about it, if this works and they've tested each part of the system individually, they've tested the fact that the thing can fly, it can go above 100 kilometers, it can take people, there's some number of people who are willing to pay $250,000 for this, you can put 5-6 people in these capsules, if you really can generate $1.25 million per flight and you really can make 65% gross margins, the fact that they have this fully reusable design of both aircrafts or if you want to compare it to a rocket, effectively like a first stage and a second stage, both of Virgin Galactic are reusable, which is not a common thing in the industry right now. They really could fly it. I don't know if it's every day, but you land it, you inspect it—an inspection doesn't take terribly long, you refuel it, you clean it up, and you fly it again. It's an airplane.
+
+I think that, to me, is the A+ case. It's a strong gross margin business, super reusable. It could be super high volume if you believe what we were talking earlier about the market, if you really think you get 1000 people to do this per year or more of the 1.2 million person market of the 10+ millionaire club. Of course, there's going to be a handful of the people below that, but the 10+ millionaire is where it's a drop in the bucket. It feels like you could get to a profitable business there.
+
+David, you mentioned earlier the fact that the price could come down over time. Unless the fuel price dramatically goes down, it seems unlikely they'll materially lower it. I think that's a very long-term horizon, unless they were willing to start taking lower margins. At least at the quantities we're talking about here, I think that it needs to be a pretty high margin business in order to be sustainable.
+
+David: Fair enough, but to your point, it could still be big.
+
+Ben: Yup. All right. What's the F?
+
+David: We have a few things in our notes here. The biggest risk for the F here is that for whatever reason, it just continues to be that they can't actually get this thing off the ground, which—I hate to say it—I hope is not the case. But it is hard to ignore that it's been 16 years and it still hasn't happened. If history is any guide, then how much longer? Not just how much longer, but how much more capital?
+
+Let's assume that they can get off the ground and make this happen. Are there unforeseen things or things that aren't baked into the projections that are going to require them to raise a lot more money to make this happen? This last round of financing, while obviously being a great outcome for the company, was extremely dilutive. It was 50% dilution.
+
+Now, if this takes a few more years, they're burning $200 million a year run rate now. I didn't actually look at the cash balance, but let's assume they probably only have two-and-a-half years, maybe even less runway left at this point without revenue, so it doesn't take many delays. We've just seen another delay here this morning before they're back needing more capital.
+
+Ben: Yeah, it's a great point. At what point does any existing shareholder employee start looking at their equity and going, this is never going to be worth anything. It just keeps getting crammed down. Even if we become a $20 billion company, we've taken on so much capital that my shares, divided by the total number of fully diluted, is just a very, very, very small percent.
+
+David: Totally. We have a couple of other things. The other big one is demand might not actually be there. These 600 people that have paid the full ticket price, plus of the 900 people that have taken that One Small Step, maybe that's half the market here.
+
+Ben: I think that's 2500 now. I think they've got a fair number of deposits on the One Small Step. But you're right. It could just be that this is only cool for so long.
+
+Just to touch quickly on the C, I think it's the horizontally disintegrating thing that we mentioned earlier, where the core business never works out, but they're able to sort of scrape some revenue from providing a lot of different things to a lot of different people, licensing technology out, basically not having a focus, and not executing their main strategy. They'll just never build power as a business and have a repeatable engine for free cash flow. That would be my C case.
+
+David: Yeah. They look more like a Samsung than an Apple.
+
+Ben: Well put. All right. Should we land the spaceship?
+
+David: We're going to deploy the feathers.
+
+Ben: Defeather, we’ll go into glider mode. We'll land the plane. Well, ASCEND attendees, thank you so much for coming to this session. If you are interested in hearing more Acquired, we highly recommend checking out our SpaceX episode that we did earlier this year just before the Demo-2 Mission. You can look up the show anywhere where great podcasts can be heard, any podcast player or at acquired.fm.
+
+Thank you so much to the ASCEND organizers, in particular friend of the show, Rob Meyerson. Thank you so much to our sponsors, Tiny Bambu and Perkins Coie. Each of those are linked in the show notes.
+
+If you are new to Acquired, you can learn more at acquired.fm, as mentioned. If you are looking to invest in yourself as an entrepreneur, investor, or a company builder of any sort, you should join the Acquired Limited Partner community at acquired.fm/lp. All new listeners get a seven-day free trial. We hope that you'll give it a shot.
+
+Lastly, if you liked this episode, feel free to rave about it wherever you see fit. On social media, Apple podcast reviews, or our personal favorite, just sending it to one friend that you think would enjoy it too. All right, everyone, we will see you next time.
+
+‍

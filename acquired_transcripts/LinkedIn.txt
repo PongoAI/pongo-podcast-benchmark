@@ -1,0 +1,411 @@
+David:              You are not yet schooled in the power of network efforts, young Gilbert.
+
+Ben:                 We’ll cut that.
+
+Welcome to Episode 14 of Acquired, the podcast where we talk about technology acquisitions that actually went well. I’m Ben Gilbert.
+
+David:              I’m David Rosenthal.
+
+Ben:                 And we are your hosts.
+
+We have a very special episode for you today. I can’t really think of a time when I didn’t call it a very special episode.
+
+David:              Every episode is special, Ben.
+
+Ben:                 It’s true. This episode is not necessarily about a technology acquisition that actually went well. We have no idea how it went. It is huge and it is recent. Today, we are talking about LinkedIn being acquired by Microsoft two days ago at the time of recording. And super speculative, but I think the whole internet is sort of abuzz with what’s the deal with this acquisition, why did they do it, what’s the future hold, and I think it’s going to be super interesting to speculate a little bit and throw out some possible paths and draw some conclusions.
+
+David:              Yes, we’re going to have some fun with this. I don’t think we’ve ever gotten as many requests on Slack and email and other channels for “please, talk about LinkedIn.” So, here we are.
+
+Ben:                 In fact, I think this may change the timber of what this show is about. I think at some point here we might rename this to just a show about tech acquisitions because we’re doing things that didn’t go well, things that did go well. Really, anything that’s got a good story.
+
+David:              We love stories here.
+
+Ben:                 We do. A little bit of administrative before we dive in. As usual, I’m going to ask please review us on iTunes. It makes a huge difference and it’s what makes the show grow and tick. Share it on Twitter, Facebook, or even LinkedIn. Please share it on Microsoft LinkedIn whenever you can. For those of you who – We get some questions, you know, “I’m not listening on iTunes or I don’t have an Apple device, we’re going to post this on Product Hunt. So, search for it on Product Hunt. We would love it up both there.
+
+David:              Yes, please. Thank you as always. Feel free to join the Slack group. It’s really awesome interacting with all you guys. We’ve got over 100 people now and great discussion going on. So, if you want to spend more time with Ben and David, join the Slack group.
+
+Ben:                 Yeah. We want to do a little bit of follow-up. There’s been some news from our last couple episodes that we think are worth talking about for a minute here. David, you want to talk about Snapchat?
+
+David:              Yeah, we’re going to add – Sometimes we’ll have this, sometimes we won’t, but adding a section to the show on follow-up of some previous shows. So, we’ll do this quickly. But first, from Snapchat, big announcement this week as well. Ben Thompson, our favorite oracle here on Acquired, tweeted that the LinkedIn acquisition in WWDC were the second and third most important announcements of the week, and that Snapchat launching their advertising API was the most important announcement of the week. Well, time will tell on that.
+
+Ben:                 Yeah. I think all we have right now is a press release to go off of and it will be super interesting to see how advertisers and brands adopt that.
+
+David:              Yeah, big profile in Adweek though talking about the launch of this API and profiling the company. Worth reading. We’ll link to it in the show notes.
+
+Then the second follow-up we wanted to do is actually on Instant Articles as well. Ben had a funny experience this week.
+
+Ben:                 Yeah. I’m not actually that sure this is an announced product or even maybe just like a real label of an existing. But I tapped on what looked like a Facebook Instant Article this week and expanded into a native ad unit. It was something that was a super sleek experience. It had my email auto-filled, my phone number auto-filled, and it was a way for me to kind of join a waiting list for an upcoming product. I think Facebook has always had this direct response capture-type ad unit. But it's really interesting to see them potentially expanding that Instant Articles or Instant Ads umbrella to include these other things and having a real sleek experience with it.
+
+David:              Yeah. What’s cool with both of these, the ad products and the ad product teams don’t get a lot of airtime in tech companies, especially social networks and tech companies, but really cool product innovations on both of these fronts.
+
+Cool. All right, with that –
+
+Ben:                 You want to dive in?
+
+David:              Let’s dive in. Acquisition history and facts. So, LinkedIn, I assume almost everybody listening to this episode is a member of LinkedIn. But let’s go back to when it was started.
+
+Ben:                 If not, I’d like to invite you to join my professional network on LinkedIn.
+
+David:              Spam your address books. We’ll get to that.
+
+Okay. So LinkedIn, I think, I could be wrong in this, but I think was the very first spinout – not spinout, but progeny of the PayPal Mafia.
+
+Ben:                 2003 was that?
+
+David:              2002. So, PayPal was acquired – as we talked about several times ago – was acquired by eBay in July 2002. In December 14, 2002 to be exact, less than six months later, several former PayPal-ers led by Reid Hoffman ban together and they form a new company and they call it LinkedIn. So they started in December and then they worked really quickly and they launched an MVP very quickly, especially again this is pre-AWS time, they launched an MVP in May of 2003, and it is a social network. Social networks are hot then.
+
+Ben:                 I remember reading The Facebook Effect by David Kirkpatrick and in that book he kind of talks about that there was a group of people that were in Silicon Valley that were super involved in a lot of tech products and realized that social networking was going to be the next big thing and that it explains their fast time to market because I think that with Friendster right around then –
+
+David:              Yeah, that’s what I was going to say.
+
+Ben:                 There’s a group of ex Paypal-ers and other kind of close people that were like, you know, technology is finally in the right place right now or this is about to be huge and let’s get to it.
+
+David:              It’s really cool that there was this in Silicon Valley this kind of swelling of interest and building of social networks. Facebook hadn’t even started yet. But Friendster was a super hot company. They had raised money from benchmark and somebody else, I can’t remember, but were a darling of Silicon Valley. MySpace was growing quickly.
+
+Ben:                 Reid Hoffman and Mark Pincus both put money into Friendster, if I recall.
+
+David:              I think that’s right. Anyway, so they launched in May of 2003 and they have a really interesting sort of bootstrapping mechanic for the network to get how do you start a network from a cold start, and that was the infamous and product of a lawsuit later on as is a recurring theme on our show, the infamous scrape your address book and spam everybody in your email address book.
+
+Ben:                 Yeah, and in a very funny kind of super foreshadow-esque way, kind of reminds me of Microsoft. I mean they did this thing that was sort of sneaky and maybe would earn them a lawsuit and they sort of just did it knowing that the upside from doing this thing, it would be huge and it would be something where they would have to pay the price later. They got sued. I think it was $100 million suit later on for this. But, once they had the network, they had that pocket.
+
+David:              This is like a total recurring theme in network driven technology companies like it doesn’t get talked a lot about these days but it’s on the internet. Like AirBnb totally did this, offered Craigslist to bootstrap their supply network to start and many, many other networks have done the same thing.
+
+Ben:                 Do you know about Microsoft’s like price per-core thing? We talked about this on the show, price per CPU. They basically put it when they were originally selling Windows or maybe it was DOS really early on. They had it in their sales contracts that they would make money for one copy of Windows per-core shipped by someone who entered an agreement with Microsoft to sell Windows at all. So they basically swashed the competition because manufacturers realized oh, well, I’m paying for a copy of Windows whether I put it on here or not, so I may as well ship Windows. And by the time they got sued for that, and I think actually the justice department forced them to pull that out of their contracts. By the time that came around, they had already swashed the competition and were totally way out ahead.
+
+David:              When you’re facing a cold start problem as a network, the chicken and egg problem, like you got to have something, some unfair advantage to get through it. It doesn’t always have to be illegal but in many cases it turns out it was.
+
+So, by late 2003, the network is starting to take off a little bit, it’s still really early. The raise a Series A from Sequoia, $4.7 million which was a lot of money back in the day especially after the internet bubble had burst. Mark Kvamme joins the board later when he left Sequoia. Mike Moritz takes over and is still to this day, I believe, on the board of LinkedIn.
+
+Ben:                 Mark Kvamme is now in Columbus, Ohio running Drive Capital.
+
+David:              Exactly. Ben’s hometown.
+
+Ben:                 Columbus shout-out.
+
+David:              Shout-out. And so things continue to go well and in 2004, the next year, they raised their Series B from Greylock and super cool, I think about two years ago, much like when we talked about with YouTube and through the lawsuit of YouTube we were able to see Sequoia’s investment memo about that. Two years ago, Reid Hoffmann “open sourced” his pitch deck for his Series B Greylock. It’s this great document. We’ll link to it in the show notes. But he has the whole slightly edited pitch deck that he used for LinkedIn Series B and then he has a commentary on it and he’s very self-critical. He was like, “Obviously this works but I made a bunch of mistakes and I was really nervous about these things and trying to cover up, like we had no revenue.” The elephant in the room was like, “Why the heck do you guys not have revenue?” And he’s like, “I was really nervous about that.” Cool document.
+
+So in the pitch deck, the LinkedIn positions, they positioned it as the unbiased, sort of ground source of truth about professionals and talked about how with all the existing ways of finding professionals in the world at that time, it was mostly kind of directory based and all these incentive problems. People were incentivized to make themselves look good or to be found or to do sales leads, and there was nothing. They thought that a network could solve all these incentive problems and create, for the first time, true information publicly available on the internet about professionals and where they are and how to find them. It turns out, they were right.
+
+As we talk about this acquisition, LinkedIn has never been primarily an advertising-based business. They’ve had ads as part of their business line bust most of their revenue comes from monetizing recruiters and so as people have been commenting about this acquisition, you hear lots of talk about like “Oh, LinkdIn doesn’t have a lot of engaged users and I spend no time on the site and it looks like crap.” But you can’t really judge this company in the same way that you judge Facebook or Twitter because it's now how they monetize.
+
+Ben:                 No. And Josh Elman has a great post that I’ll put in the show notes too. Josh is – He was at LinkedIn. He’s been at a bunch of great companies and he’s at Greylock now. He has a great post talking about you can’t look at this like are the users of LinkedIn really like X multiple, more valuable? They’re not that engaged. At the end of the day, they are able to monetize those users in a very different way because they sell an extremely high value product which is browse and access to these people.
+
+David:              Yeah. It’s interesting later, we’ll get in a minute to LinkedIn’s IPO, but actually in the IPO prospectus, they list in the risk factors “a substantial majority of members do not visit the website on a monthly basis,” which is funny when you compare them to many of the other businesses that we’ve looked at on this show. But again, they don’t make money when you visit the website. They make money from having your up-to-date professional data about you on the system and you being found.
+
+So they build these business lines over time but there are three that LinkedIn has. The first is what they call talent solutions. That’s about 60 percent of their revenue. That is for recruiters. As Ben was talking about, this is a super expensive product that they sell to recruiters. The full product is $900 a month per seat.
+
+Ben:                 I think the cheapest way to go to LinkedIn Premium is like 600 bucks a year?
+
+David:              It’s $100 a month.
+
+Ben:                 About $1200 a year.
+
+David:              Yeah.
+
+Ben:                 So think about that every time somebody contacts you and has the little yellow thing there.
+
+David:              Completely they have just knocked it out of the park in executing on this. If you are a recruiter operating in the HR world, you need to have a LinkedIn recruiter. It’s like a joke if you don’t.
+
+Ben:                 Right. Let’s imagine that you’re a company and you haven’t purchased this for your recruiting department. You’re not going to be able to hire any recruiters because they’re going to be hamstrung from day one. They’ve created this just incredible expectation in the market that that is a table stakes tool to have.
+
+David:              Table stakes. They’ve captured a ton of value in that market. So then the other two business lines they have, the second one they call marketing solutions and that is primarily ads that they show in various forms on the site whether it’s sponsored in mail or all sorts of things.
+
+Then the third one is premium subscription. So this is where they’ve spend a lot of time on over the last few years and that’s monetizing members of LinkedIn who are not recruiters.
+
+Ben:                 Oh, so you’re separating. So LinkedIn premium is separate from there recruiting tools.
+
+David:              Yes. And LinkedIn premium, there are different flavors of it but it gives you access to broaden out beyond your second degree network on LinkedIn and that’s great. I mean, I use it all the time. Basically this tool was meant for venture capitalists, I think, and business development folks and sales folks. And that’s about 20 percent of their revenue too.
+
+Ben:                 That’s about, is 3 billion a year in revenue I think?
+
+David:              Total?
+
+Ben:                 Yeah.
+
+David:              Yeah, I actually did not look that up.
+
+Ben:                 Yeah, I think that’s about right and that’s about 106 million users.
+
+David:              106 million active users. Just about 400 million registered users on the site.
+
+Ben:                 Interesting.
+
+David:              Which is very interesting. So, they continue, they execute super well on this as a private company and the sort of biggest event that they had before they go public is in, I believe, it was 2007. Reid actually steps aside as CEO and they bring in an outside CEO to run the company. Reid stays at the company day-to-day. And then Dan Nye. So this isn’t actually talked about much. He didn’t stay very long. He was there less than 2 years. He came from Intuit and then he was at Advent Software. He went on to become CEO of Rocket Lawyer. Which reminds me, I found this doing research for the show on the side, but really kind of hilarious. When they raised their Series C which they did in January of 2007 right before this happens, they raised Bessemer – but they also had this other firm that I hadn’t heard of and they’re called the European Founders Fund. I was like, “What’s the European Founders Fund?” I looked it up and it’s the Samwer brothers.
+
+Ben:                 Wait, we’ve talked about them before, right?
+
+David:              These are the guys that run Rocket Internet – Rocket Lawyer made me think of it – in Europe that they just copycat all the US businesses. And I was like, this is just too funny. The Samwer brothers had a venture capital firm – I don’t know if it still exists – called the European Founders Fund. So they’re just copying Founders Fund.
+
+Ben:                 Wow.
+
+David:              Just like they do in many other businesses. Man, it works for them. So, I just saw that and I was like that it is too funny. So, Dan doesn’t last very long as CEO but in December of 2008, they bring in Jeff Weiner and he is still today the CEO of LinkedIn.
+
+Ben:                 And even will be inside Microsoft.
+
+David:              Exactly, yeah. And he will remain so within Microsoft.
+
+In January of 2011, the company finally files for an IPO. They go public in May of 2011. They price the IPO at $45 a share. It trades up to $94.25 by the end of the first day of trading. I remember this was like a watershed moment at the time. They were the first to sort of new wave big internet company to go public after the sort of mid 2000’s and it was shortly thereafter that Facebook went public, that Pandora went public, that Twitter went public. So this was a big moment and that everybody kind of realized that these social networks that people were like, “How does Facebook make money?” even though Facebook makes money in a very different fashion from LinkedIn. But when LinkedIn filed their prospectus for the IPO, they were like, “Man, this business is going to do like 50 million in EBITDA this year.” So it was a big moment.
+
+Then the stock continued to do really well for over the five-ish years that it was public going up into the 200’s and above.
+
+Ben:                 Till what? February of this year?
+
+David:              Until February 5, 2016, just a few months ago. It was on a Friday. Both LinkedIn and Tableau announced fourth quarter 2015 results and expectations for the year to Wall Street. It was like Black Friday for software companies.
+
+Ben:                 Yeah, and it actually killed the private company valuation and some of the market cap of other SaaS companies and it felt like it was super sensationalized and not well understood by the market because LinkedIn –
+
+David:              So LinkedIn announced earnings. They actually beat expectations on earnings for the fourth quarter of 2015 but they announced guidance that was lower than Wall Street expected for 2016, and the stock got hammered. It was down 43.6% in a single day; $10 billion of market cap just wiped out of LinkedIn.
+
+Ben:                 I mean they basically were signaling that we are hitting the top of our S curve and that you can’t count on this continued growth of the future which had been priced into their stock. So I think while that core business was still strong, they were looking for secondary revenue channels. They had a display ads business that they had shut down a little bit earlier, at least moved the resources away from. And then there was a second product. It was a…
+
+David:              Lead…
+
+Ben:                 Sales Navigator.
+
+David:              Sales Navigator, they still have. But they expected huge growth in Sales Navigator and it’s been slower to materialize. We’ll get into this. But at one point LinkedIn had a market cap of over $50 billion and between that and then following was just it fell off a cliff in terms of the stock price. On that same day, a similar thing happened to Tableau which is a great software company here in Seattle. Because of those two companies announcing weaker than expected earnings, the whole SaaS sector, public SaaS companies just took a big hit. So on the same day, on Friday, New Relic down 23%, Zendesk down 23%, Hubspot down 20%, Workday down 16%, NetSuite 15%, Click 14%, Demandware which ends up getting acquired by Salesforce last week, 2 weeks ago, was down 13%. Salesforce itself was down 13%. It was just carnage.
+
+Ben:                 Also, nice research.
+
+David:              Thank you, internet. So then for the last couple of months, the share price of LinkedIn has crept back up and nowhere near the highest where it once was and then two days ago, Monday, in like what was got to be one of the best kept secrets of major M&A of all time, Microsoft announces that they’re acquiring the company for $196 per share.
+
+Ben:                 Which comes to?
+
+David:              Which comes to $26.2 billion total.
+
+Ben:                 Crazy.
+
+David:              Which is a lot of money but half of what LinkedIn was worth a year ago.
+
+Ben:                 I mean the thing that I wasn’t thinking about in February when – It’s like there’s two parts to arriving at this conclusion. I feel like within that first week I sort of understood like oh, these companies are sort of undervalued right now because they took this huge hit and their core business remained strong. It was just that a new business that promised huge growth didn’t quite materialize, like they’re still doing 3 billion in revenue a year. And the thing that didn’t occur to me at that time is okay, these guys are on sale and that doesn’t mean on sale just to go buy the stock. That means like they’re massively at a discount for somebody to acquire them and what you got to start thinking then is who are key acquirers where LinkedIn could be a massive asset and amplified by their existing core business.
+
+David:              So our job today is to speculate and think about was this good, was this a good move for Microsoft, for LinkedIn shareholders? We’ll find out. But I feel like we can’t dive into it just yet without mentioning a super important piece of context here which is that about a year ago, a little over a year ago, there were tons of rumors swirling in the market that Microsoft had made an offer to acquire Salesforce.
+
+Ben:                 I think it was all but confirmed like that that actually came to the eleventh hour and then fell through.
+
+David:              So the rumors and these are just rumors, we don’t know, maybe we could do a show on this at some point. That will be fun. The rumors were that Microsoft offered somewhere between 50 and 55 billion dollars to acquire Salesforce a little over a year ago and Salesforce was willing to talk but they wanted 70. And Microsoft walked away from that. So, super important. And that played out in the press over weeks and that two things with this. Both of this was completely kept quiet.
+
+Ben:                 The LOI I think was signed a month ago.
+
+David:              Yeah. And Jeff Weiner in his memo to LinkedIn employees mentions that the senior management team at LinkedIn has had months to digest this which is pretty amazing. Apparently, it all started after February 5.
+
+Ben:                 Which says to me at Microsoft that not a lot of people knew that this was something that was board, Satya, key executives. Actually, a friend of the show, Kurt DelBene, is very much involved in orchestrating how these two companies will come together.
+
+David:              Kurt who were lucky enough to have on for our Acompli and Wunderlist episode is going to be leading the integration for Microsoft.
+
+Ben:                 Actually, the press release talks about how he’s going to be doing that with Scott Guthrie who leads Enterprise which includes both Azure and Dynamic CRM product, and Jie Liu which chief purview is mostly kind of productivity, so the whole Office Suite and Bing. So I think there’s a little bit of clue there as to what they’re going to do with it probably in Office and then some combination of Azure and fueling the Dynamics product.
+
+David:              Let’s jump in to acquisition category because I feel like this will start to unpack this here. What’s your early categorization here?
+
+Ben:                 So I think there’s a business line from acquiring the current revenue stream. But in my mind, you don’t buy this product just to cash flow it. They’re not buying that business line because it’s going to pay itself back and short order and we feel good about owning this new revenue stream. It’s an integration play. So I’m calling this a product acquisition since it's a product that they’re going to amplify the current sales of with their own kind of channel and integrations and then make their own products better and kind of define the future of identity. So I would say it’s a product acquisition to be combined with their existing products.
+
+David:              I’m going to take a similar route. But I think this is really key. So for me, I say yes, product acquisition. But it's a product acquisition that at least has the potential I think to transform and evolve an entire business line for Microsoft. So clearly this is, I don’t know, but I would imagine this is going to be within Microsoft’s productivity and business processes segment which is one of the new segments that Satya streamlined the company into when he took over. I think there’s so many ways/angles to think about LinkedIn but one of them that you would have to imagine people at Microsoft are thinking about is as a data set and a data acquisition and the ability to continue to operate LinkedIn as the set of products that it is within that segment but then infuse that data into Office, into Active Directory, into Dynamics, into all of the sort of "mobile-first, cloud-first" world that Microsoft lives in now, all of the business tools that they have, you have to imagine it’s something they’re thinking about.
+
+Ben:                 Totally. And that’s a really good lead-in. I sort of have like four buckets of why I think they pull the trigger on this one. That first one, you just nailed is integration with Office 365 to extend identity outside the company. In the world of Microsoft viewer, they have Active Directory.
+
+David:              Which I might say a word about that because I bet a lot of our listeners have no idea what Active Directory is.
+
+Ben:                 Yeah, great point. So basically Microsoft’s lock-in in the enterprise comes from the fact that they own identity and everything that stems from that. So everything works seamlessly or historically works seamlessly across all their products because everything plugs into Exchange and uses Active Directory to manage identity and it’s the rock solid truth of who you are that everything in the company can plug into.
+
+David:              So when you as an employee at a company that uses the Microsoft productivity suite, you sign in to your Microsoft account and then thatgrants you access to your email, to Office 365, to whatever enterprise if you use –
+
+Ben:                 In fact even Windows.
+
+David:              For the few people out there who use Dynamics, into Dynamics and even Windows.
+
+Ben:                 You can think of it as deeply, deeply integrated the single sign-on. The nature of companies has changed and I think that – We’ll talk about trends in a little bit but I think that a big tech trend or really a big world trend that’s happened is people move around a lot. People stay at companies for 18 to 30 months and there’s a lot of bouncing around and people collect knowledge from all the different companies they were at and build reputation from all the different companies that they were at and a world that is entirely centered around who you are at this company is kind of antiquated.
+
+David:              This is such a good point.
+
+Ben:                 The company doesn’t own your identity anymore. You own your identity and you lend your skills and reputation to the company while you’re there. Some people do that for a really long time, but some people don’t, and you have to have a way to be able to access and leverage all that other data.
+
+David:              For Microsoft previously which is again trying to reinvent everything it’s doing as Kurt talked to us about a few months ago, in this mobile-first, cloud-first world, when the reality is the majority of employees at least in fields like tech or finance aren’t staying in the same job for long periods of time anymore. If you, as Microsoft, only have these very siloed views into people and not the holistic view of their skills and their career history and their identity across jobs, there we go, hence LinkedIn.
+
+Ben:                 The parallel that I wrote down anyways, 5 years ago, 10 years ago, we had this like IT shakeup where they’re freaking out about BYOD (Bring Your Own Device) and this is the realization of BYOD when it comes to identity.
+
+David:              Yeah, BYOE (Bring Your Own Employee), BYOP (Bring Your Own Person).
+
+Ben:                 You mentioned – Well, I was going to go into the sort of second things, I think it’s a good segue there. The second reason, we kind of talked about identity and Office 365 there, I think that as it extends to Dynamics CRM, it's hugely valuable to know an entire person’s work history when you are trying to sell something to them. So imagining, you know, the problem with Microsoft’s world view before is this is John Smith and he was at Company A. There is also a John Smith at Company B. We don’t know if those are related. I’m sure there’s attempts to make sure they’re related but the magical thing that LinkedIn nailed is all the incentives are aligned for them to make money off of you wanting to make all of your information accurate. So, if you can have this holistic view of identity when it comes to customers, that’s incredibly valuable also.
+
+David:              I agree and I want to jump into with something that I’ve been thinking about is with regards to this acquisition. Ben and I were texting about this earlier. The way I think about LinkedIn is it’s such a canonical example of the power of a network effect and the value of the asset of LinkedIn’s network that they've built, and I’ll get into this in a little bit in tech themes. But if you take for a given for the moment that the network effect and the defensibility of that means that their professional network that they built basically can almost never be disrupted and Lord knows many people have tried over the years despite the product being really crappy and all these other things.
+
+What can you build on top of that? We talked about how LinkedIn doesn’t monetize via ads really. They’re sort of like they did recruiting first. That was the most obvious. They nailed it like they owned that industry. But then it's also really obvious like they should do sales and having partnerships and like what I use LinkedIn for and probably many of our listeners. They’ve kind of really dropped the ball there. Then you think about like man, could Microsoft with the LinkedIn network asset on top of that really execute where LinkedIn hasn’t? I think there’s a big opportunity there.
+
+Ben:                 Yeah. Ben Thompson agrees with you. I pulled this quote. It’s getting to be not a question of if but how many times we’ll mention Ben’s prolific writing on the show. But he has a quote in the Stratechery article about this. It says, “I do believe that upside is magnified significantly by Microsoft: should LinkedIn’s Sales Navigator, for example, sell in to 100% of the Microsoft Dynamics CRM user base, a good portion of this deal would be paid for.” And that’s just really interesting to think about it. You raise a good point. The crux of the whole thing is can Microsoft leverage the network asset that LinkedIn has created better than they themselves have –
+
+David:              And it’s worth a word on like Sales Navigator. So this is this product that LinkedIn has put a ton of effort into and this is their attempt to execute and capture this sort of second pillar value on top of the network with sales and lead generation. The problem they’ve had is that sales runs on the CRM. This is why Salesforce is such a valuable company. Unless you’re directly plugged into the CRM, it’s really hard to add a ton of value in and they’ve done a lot of integrations and Sales Navigator has had integration with Salesforce and with all the other CRMs out there. But it’s really hard to do that.
+
+For Microsoft, (A) they can plug it directly into Dynamics which has very small market share but they also have the weight and through all the rest of the productivity suite including email, the most important app for sales and many other functions. To be able to plug all of LinkedIn’s network asset into that, huge opportunity.
+
+Ben:                 For everybody out there who works at a company that sells to businesses, Salesforce has become kind of the operating system of the B2B company and if a product doesn’t plug into Salesforce, you’re not using it because that’s the central repository for how all the different departments of your company communicate with each other and is the ground source of truth. So, Microsoft has always been the “we power productivity and we enable enterprises to be the most productive and efficient they can with the use of technology or through the use of technology.” That’s been their mission for a long time or at least one of their missions. To see Salesforce really etching away at that, it’s almost like to defend that turf, they had to do this.
+
+David:              I want to let Ben get to his other two points, but I want to add in really quickly. I have to imagine – So what’s also really cool about this acquisition as is the theme on this show, we’ll get to find out all the nitty-gritty of how it happened, when the SEC filings come out, when the deal closes.
+
+Ben:                 Which they said is this year, which likely means late December.
+
+David:              I’m really looking forward to that because I have to imagine that there must have been at least one other bidder here or the price wouldn’t have gone this high, if not, multiple others. But I got to imagine the other bidder was Salesforce.
+
+Ben:                 It has to be. This is awesome. This is leading right into point #3 for me. Somebody else was going to buy them like they are on sale, there is only one LinkedIn, like the magic of network effects makes it so that they were the source of truth for where an employee has been and what they’ve done and what they’re good at even though their skills and endorsements thing is a little bit of a joke. There is only one. So you couldn’t go out and buy the other LinkedIn or build the other LinkedIn. There is this one super valuable asset. And that’s sort of an interesting M&A trend because of the network effects in technology today. It makes them immensely more valuable and it creates this – There’s certainly a bidding war here. So, when you’re considering the value of this and you’re Microsoft and you get approached by the investment banker that sort of put this together and said, “Hey, what do you think about this?”
+
+David:              Which I believe was Frank Quattrone. We’ll fact check this.
+
+Ben:                 Let’s see. I know LinkedIn was advised by –
+
+David:              Qatalyst, Frank Quattrone.
+
+Ben:                 Cool. And Microsoft by Morgan Stanley. You got to be thinking with the hat not of boy, is this worth $26 million, but more with the hat of what is the opportunity cost of it going to someone else and what’s the capital outlay that we need to make in order to not have our lunch eaten. Taking a step back from that, it’s sort of interesting companies more so these days than ever have to look at M&A as a competitive threat and have the means, the borrowing means or the cash-on-hand means to do what they need to do to defend their turf against a massive landscape shift like this.
+
+David:              I mean let’s just take as an example, what if Twitter had acquired Instagram? I remember early days Instagram, my primary use case for it was posting pictures to Twitter. So I totally could see the rationale for that to happen. Like how awful would that be for Facebook right now?
+
+Ben:                 Yeah, not good. The other interesting thing that I sort of danced into here a little bit is Microsoft did not pay for this in cash and this is often the case but –
+
+David:              Well, they did but they didn’t do it.
+
+Ben:                 Right, right. They did not pay for it in the cash that they carry on their balance sheet. They took out a large amount of debt because 94% of their assets are held overseas.
+
+David:              The cash.
+
+Ben:                 I’m sorry. Their cash is held overseas and, you know, with the 40-ish percent tax that they would have on bringing that back home.
+
+David:              Repatriating the cash. This is a huge problem for all companies that are multinationals and are headquartered in the US. Tech companies especially have a big problem with repatriating their cash. So what they did, this was not a stock deal. It was all cash consideration that LinkedIn shareholders were receiving, but Microsoft took out debt to finance the transaction.
+
+Ben:                 I think not entirely. They took out – It’s not $26 billion of debt, but it was a large part of the financing the transaction. So, yeah, I think that getting back to David’s point, it’s like there was one single huge asset with network effects here and the question is can Microsoft squeeze more revenue out of it than LinkedIn was doing themselves.
+
+David:              “Will they” is we will see. “Can they” answers in my mind 100% yes.
+
+Ben:                 Then getting into my fourth point, this one’s a little bit more broad. So Microsoft has admitted that Windows is not the future, that they are not the Windows company going forward. Of course they have a large amount of people working on Windows, huge revenue stream. But its operating systems are not the solo cash cow that they once were and I shouldn’t even say operating systems. Windows is not. So in moving to this mobile-first, cloud-first company, and focusing on their cloud offering, as you look up and down the cloud stack, they have infrastructure as a service and platform as a service with Azure; they have software as a service with Office 365. You could look at this like okay, they’re becoming the cloud services company. So, business tools for recruiters and more broadly for sales and marketing also is a cloud offering that they can add to that stack of services they provide. So I think you put on your old Microsoft hat, you’re like, “What are they doing?” They typically squander large M&As. So that’s just terrible. It's not going to go well.
+
+David:              You talk to a bunch of current and former Microsoft employees about this and that is the most common reaction, I would say.
+
+Ben:                 Yeah.
+
+David:              So I’m dying to get to tech themes. But before we do, I think it’s worth spending a minute on what would have happened otherwise. We talked a little bit about somebody else buying LinkedIn. I think that’s probably most likely. Clearly they were on sale, as you say, in more ways than one.
+
+But I think the other route is let’s say LinkedIn had managed to stay independent, they’re having a hard road executing on building another pillar of monetization on top of their network asset. But I want to throw in here a bit of discussion that’s come out in the press that I think is relevant that somebody pointed out, and I believe there was a New York Times article about this. LinkedIn’s stock-based compensation has grown hugely in the last few years and it actually was becoming a real problem for them.
+
+So a stock-based compensation, as probably many of our readers know, this is a concept in start-ups but also in public companies where part of your equity package as an employee is you get a salary but then you also get stock options in the company. LinkedIn had basically, over the last couple of years, been giving away huge amounts of equity to employees and that dilutes the existing shareholders. So, it’s a non-cash expense. So it doesn’t show up in like EBITDA metrics and stuff like that. But stock-based comp at LinkedIn went from 13 million a quarter in 2012 to 222 million per quarter in the first quarter of 2016. The problem there is well, if you start doing that and compensating your employees – Obviously, I’m a huge believer in employee equity, but the thing about cap tables is like there’s only ever 100%. You can’t have more than 100% of the equity in the company. So any time you give more out, you’re diluting everybody and so it’s like the LinkedIn stock had become this sort of like leaky sieve that was happening. That was a major problem that they would have had to deal with but now they don’t.
+
+Ben:                 Interesting. I think what happened otherwise, it would have gotten sold to Salesforce and in that case, I wonder for the future of what Microsoft is doing with Dynamics if they lose out on this deal because I’d feel like that’s a nail on the coffin for Salesforce.
+
+David:              You mean a nail on the coffin for Dynamics?
+
+Ben:                 I’m sorry, for Dynamics.
+
+David:              All right. Let’s go into it. Let’s jump into tech themes because this is – I mean I’ve said this to so many people over the years that as an investor I’ve been such a huge fan of LinkedIn and continue to be.
+
+Ben:                 David, when did you buy LinkedIn stock?
+
+David:              I bought right after the IPO and then I bought a bunch more after February of that. The reason for that is like we’ve been discussing, there are major challenges for the business and the company but to me, there is so few real true network effects that exist in technology, and LinkedIn’s is so powerful. I don’t believe that anyone, perhaps ever is a long time but any time in the foreseeable future we’ll be able to disrupt LinkedIn. Software alone is just software like it’s just a commodity. Somebody will build something better, it will come along. And LinkedIn is such the classic example like it looks like crap, let’s all be honest. The product is really bad at this point.
+
+Ben:                 Yeah, you have 10-second page load times.
+
+David:              It’s really, really bad. But nobody will ever beat it, like I will always use it. I’ll use it every day because everybody I need to interact with is on it. If I leave and go somewhere else, they’re not on it.
+
+Ben:                 The only thing, I can envision a future where people chip away in verticals and then those verticals expand but we’re a ways out from that. The couple of things that I’m thinking of are when recruiting developers, it's very common to start on GitHub.
+
+David:              Exactly.
+
+Ben:                 Then all of a sudden there’s all this data that is not actually in LinkedIn, that’s so much more actionable and it’s like oh, just the mere breadcrumb trail that they’ve left from doing their work creates a much richer profile. Or you can imagine sort of the same thing on AngelList like it moves out from founders and VCs to employees and then people are actually incentivized to keep their AngelList profile up to date. That proliferates to other industries.
+
+David:              Design. There was a company called Behance that Adobe bought that was doing this. Totally agree. If you were going to attack LinkedIn, this is the only way to do it because it’s the only way where you can actually get enough critical mass. Like a network is of zero value until it is of critical mass value and then it is of, like, completely defensible value. But I really think it would be a fool’s errand to try and build a horizontal wide-based professional network at this point.
+
+Ben:                 Yeah. I mean in the same way that it would be foolish to build a horizontal video hosting platform at this point or a horizontal pure social network. I think the era of horizontal platform – Horizontal platforms, once they have network effects applied, you don’t disrupt them by building out a horizontal platform. I think that that’s just an interesting thing to note when you’re thinking about starting new start-ups because I’ve heard so many people say “LinkedIn sucks, I’m going to try unseat it and disrupt LinkedIn.” Like yeah, we all have our product qualms but you’re not going to do it by creating a better horizontal LinkedIn.
+
+David:              I think this plays for me, well, one point I want to bring out about the acquisition that plays really strongly in here is LinkedIn, they’re smart guys and gals. They get this. So what has LinkedIn been more terrified of than anything else in its history, its people exfiltrating the network off of LinkedIn and stealing it out and bootstrapping it and competing with them.
+
+Ben:                 LinkedIn is famously like just iron-fisted in their terms about their API limits or your ability to store data that you retrieve from LinkedIn. They have the most locked down “open API”.
+
+David:              The API is a joke. It is an utter joke. And so one of the things that gets me really excited about LinkedIn being part of Microsoft as a user, as a user of products, and as somebody who has a huge vested interest in innovation of the future is man, could this mean the dawn of a real LinkedIn API? Because Microsoft has a very different set of motivations than LinkedIn.
+
+Ben:                 So long as they keep the network effect locked.
+
+David:              So long as they keep the network effect but it’d also be embedded into all of Microsoft’s products. Microsoft is also a developer-facing company. So if they open up the LinkedIn API to – I mean, I think about like even venture capital firms, so many firms are building data tools internally for themselves to be able to identify people who might be founders, great founders before they start companies or people who might be interested in joining startups before they do who are really talented. And you've just been totally hamstrung because you can’t really use the LinkedIn API very well. But if now all of a sudden you can like, man, think about all the cool products and services that are going to be enabled by that.
+
+Ben:                 You can. I’ll just caveat this with like David, remember venture capitalists are a niche market.
+
+David:              Yeah, exactly. But there’s so many more examples too.
+
+Ben:                 Good point. Should we grade it?
+
+David:              I think there was one…
+
+Ben:                 Oh, I have a question I want to post to you. So it is in Microsoft’s interest to integrate LinkedIn with all of their products. Keep in mind Microsoft also owns now the LinkedIn product and has an incentive to make that revenue stream profitable.
+
+David:              Which it is without accounting for a stock-based compensation.
+
+Ben:                 Or I should say as successful as possible. Do they do a bunch of Google apps integrations also? Microsoft starts to encounter or potentially could encounter – It will be interesting to see how they navigate this, the platform versus product tensions where famously they didn’t want to release Office for iPad because…
+
+David:              As you know all too well.
+
+Ben:                 Because it competed with the competitive advantage that that service had or in a million other ways, Office and Windows always having tension. Do you run into a scenario here or is there a clear subservient product and leader product where it’s nope, we're not focused on growing LinkedIn through other people’s integrations and that is a sole source of value for others products of Microsoft.
+
+David:              I got to imagine. I’ll be really disappointed in Microsoft and Satya and Kurt and everybody if they take the old-school Microsoft approach. I can’t see them doing that.
+
+Ben:                 Shots fired! Shots fired!
+
+David:              But I mean, this is the whole thing about the Satya’s leadership in Microsoft is like the way that this company becomes relevant again and an innovator again – But hey, relevant again like technology moves fast. It’s like Ferris Bueller. You might miss it if you don’t stop and look around every once in a while.
+
+Ben:                 Mobile.
+
+David:              Mobile, yeah. But man, like Office on iPad, you want it to be everywhere where you are. So if LinkedIn, all the value that they’re going to hopefully go try and create and bringing LinkedIn to sales and other verticals isn’t on Salesforce too, that’s a big fail for them.
+
+Ben:                 Yup.
+
+David:              Okay. Conclusion. What do you got, Ben? So how are we going to do this, like this – Are we grading like right now the buy or are we predicting the future and thinking like…
+
+Ben:                 Yeah, put yourself 5 years from now was this a good purchase for this price.
+
+David:              I mean, I think today sitting here, I say this is a great buy because a year ago-ish, LinkedIn was worth twice this much and it’s this incredibly unique, incredibly defensible asset that is now part of Microsoft, so I’m like huge thumbs-up. But by that rubric, God, it's really just going to be like they can execute on this? The opportunity is massive but with great opportunity comes great, you know, there’s a lot of complexity here and it is very difficult to do these things. It's all going to come down to execution. So right now, I’m going to give it an A- right now just accounting for the huge amount of risk to come in the execution.
+
+Ben:                 How are we both positive on this? I was going to give it an A. I woke up Monday morning being like, “What?” And here I am, all right, but I have some couple of rationales. But one is in November of 2015, the stock price was at 255.
+
+David:              Okay, so not quite twice as much.
+
+Ben:                 Right. They bought it for 190-ish. I don’t think the company is actually worthless and if you look at it like it’s 25 or what is it, for 26 billion and it’s a little over 3 billion in revenue, so like an 8x revenue.
+
+David:              To acquire a sort of premier internet and SaaS company for 7x to 8x revenue, those companies were trading on the public markets at 10x to 15x revenue a year ago before accounting for any kind of liquidity, you know, M&A premium. So yeah, great buy.
+
+Ben:                 So that’s operating under the assumption that LinkedIn continued its trajectory. You have the risk that typically comes with a startup acquisition, any M&A thing of integration failing.
+
+David:              You can’t really consider LinkedIn a startup.
+
+Ben:                 No. Of integration failing and there’s the bigger the acquisition, the farther you can fall and $26 billion write-down would be truly a gut punch. I think this kind of comes down to two things. I think they needed to make this acquisition or acquisitions like this because that’s their future bet. They are this cloud services company and this is a cloud service that is right in their wheelhouse delivering value to enterprises to make them more productive and efficient and do their best work possible. The question is did they need to do large M&A to do it, like they need a product offering like this for companies. They weren’t going to build their own LinkedIn. That was going to fail miserably. What else could they possibly have done? I think I do have faith in this new Microsoft much more so than the Microsoft of old days that is famous for flubbed M&A. I think when I say old days, I’ll just say under Steve Ballmer. I think with Satya’s leadership and the people, I really have a lot of faith in the people leading in these integrations and I think that we’ll probably end up doing a follow-up episode one way or another.
+
+David:              So here’s something interesting that we haven’t talked about at all on this episode but I think is really relevant. This is by far the biggest acquisition we have covered on this episode. The scale of this, maybe I’m just trying to do some quick math in my head but the value of this acquisition is approaching the combined value of all the other companies we’ve talked about combined. Maybe slightly less but it’s on the same ballpark.
+
+Ben:                 We even haven’t done WhatsApp yet.
+
+David:              We haven’t done WhatsApp yet. So, is Microsoft buying LinkedIn worth, what do we got here, Pixar, Instagram, Twitch, Bungee, Siri, LucasFilm, YouTube, Accompli, like whew, it’s a lot of money.
+
+Ben:                 I don’t think you can really look at it through that lens. You have to look at it like what was the cost of not doing it.
+
+David:              Yup.
+
+Ben:                 And I think you got to pull the trigger.
+
+David:              Yeah. Well, hats off for now at least to Microsoft and all our friends over there.
+
+Ben:                 And to folks at LinkedIn. The big question will be like: can these cultures mesh? LinkedIn has offices all over the world but primarily centered in Silicon Valley. Microsoft typically doesn’t do well with their Silicon Valley campuses.
+
+David:              But as Kurt talked about a few months ago, they have a new mindset when it comes to M&A of like we don’t care where we are. You can be in Wunderlist in Berlin, you can be Accompli, you can be in Silicon Valley. It doesn’t matter.
+
+Ben:                 Just a lot of flights. Fortunately they’re close.
+
+David:              Well, fortunately Alaska bought Virgin.
+
+Ben:                 That’s a great place to leave that.
+
+David:              That’s a great place to leave. Do you want to do a quick Carve Out?
+
+Ben:                 Yeah. Mine’s super quick because I think a lot of people probably will have seen it already. But the Code Conference was last week and it was bookended by Elon and Jeff Bezos. I haven’t watched the Jeff One yet but the Elon Musk one is so fantastic. So, go watch the Elon Musk interview at the Code Conference. He just has this incredible way of dancing back and forth between total dude in a spacesuit that is talking about the future in a way where you’re like, “What?”
+
+David:              Is this the one where he says there’s an 80% chance we’re living in a computer civilization?
+
+Ben:                 The metaverse? Yeah. But then there’s other things were like the way that he explains why the first-stage rocket lands on the drone ship. Unfortunately it blew up today but the last four have landed on the drone ship. He does a really good job of explaining why the drone ship needs to be where it needs to be in position to the ocean and for anybody that’s sort of into the SpaceX story or understanding any of the physics behind that, super approachable, very interesting and clearly a visionary.
+
+David:              Cool. I am grinning widely here because literally, no joke, my Carve Out was the Bezos talk at Code. So this is great because I have not yet watched the Elon talk so now I got to watch it and you got to watch and everybody listening has to watch the Bezos talk. It is fantastic. That guy is just awesome. But a couple of quick things I love from it. One, they ask him like “God, there’s so much going on on Amazon. How do you think about this? How do you think about your businesses?” He says, “I think about innovation,” and he’s like, “I like to think about when we're starting a project or something super ambitious like Alexa or whatnot, what about our customers isn’t going to change in the foreseeable future. So much is changing so fast in technology, but what are the core things that are not going to change?” Also, that reminds me of LinkedIn. I sit here today like I was a happy LinkedIn shareholder for a long time because I just sat there and I was like, “I’m going to be using LinkedIn 20 years from now.” No doubt in my mind.
+
+So anyway, there we go. Code Conference. It was good this year.
+
+Ben: Awesome. Well, we're leaving you. I’ll say one more time because I think it's probably more useful at the end of the episode than the beginning. We’d love it if you could leave us a review on iTunes and if you liked it, share the episode to your friends. See you!
+
+‍

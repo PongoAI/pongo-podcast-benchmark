@@ -1,0 +1,1431 @@
+Ben: Welcome to Season 10, Episode 3 of Acquired, the podcast about great technology companies and the stories and playbooks behind them. I'm Ben Gilbert and I'm the co-founder and managing director of Seattle-based Pioneer Square Labs and our venture fund, PSL Ventures.
+
+David: I'm David Rosenthal and I'm an angel investor based in San Francisco.
+
+Ben: And we are your hosts. Listeners, today we are telling the story of the company that Steve Jobs idolized and modeled Apple computer after, the Sony Corporation.
+
+David: Literally modeled himself after. You know the story of the black turtlenecks and the Sony connection.
+
+Ben: Enlighten us.
+
+David: The story goes that Steve idolized Sony whenever he visited and saw that there was a uniform that Sony employees had. He was like, that's a great idea. I want Apple to have a uniform. Where did you get that uniform? He bought a pack, he made a proposal to Apple, and people were like NFW.
+
+Ben: Didn't Sony employees have uniforms because the clothing was scarce after World War II?
+
+David: Yeah, I think that was part of the origin. Steve decided, okay, if Apple can't have a uniform, I'm going to have a uniform. And so he went to Issei Miyazaki, the famous Japanese designer who had made the Sony uniform, and got him to make him a hundred black turtlenecks.
+
+Ben: Amazing. There's so much about our generation that we remember from Sony growing up, the Trinitron TVs, Discmans with advanced CDs skip protection, 30 seconds worth. Even more recently, the excellent professional line of cameras that Sony makes and actually David and I are both recording on right now.
+
+David: As well as Sony headphones right now, right?
+
+Ben: That's right. Sony goes so much deeper than that and also so much broader than that today expanding into a very special type of conglomerate. David, did you know that they own a division that exclusively makes a tiny dog robot?
+
+David: I did know that. Do they still make that thing?
+
+Ben: Yeah, they do.
+
+David: You might say it's the Tesla bot of old, the precursor.
+
+Ben: You might say that, yes. They are the second-largest Japanese company by market cap behind only Toyota. They're the largest video game console company and the largest video game publisher in the world. They're the largest music publisher and the second-largest record label, which for those of you who listen to the T. Swift episode, you now know the difference. And they have the third largest Hollywood film studio on top of all of that. We have a wild story going all the way from World War II to Spider-Man to tell you here today.
+
+First, we want to introduce you to our presenting sponsor, Vanta, the leader in automated security and compliance. As you know from the T. Swift episode, we are huge fans of Vanta and their approach to the whole compliance process—SOC 2, HIPAA, GDPR, and more. We've got CEO and co-founder, Christina Cacioppo, back with us today.
+
+Christina, you shared with us how SOC 2 came to be. What is the traditional way that people go about getting a SOC 2 certification and how is Vanta different?
+
+Christia: Pre-Vanta, step one was, again, go read the SOC 2 standard, see the we solemnly swear we protect data in a good way, figure out what that mean for your company, go and do that, try to make sure that you've really done that, call in an auditor who's going to come in and ask and say, hey, you said you solemnly swear this, now prove it to me. You might say, how do you prove this? Show me that you've encrypted all your data at Rest in AWS, that you use SSL on your websites, it's up to date, and this and the other.
+
+Show me that by logging into these systems and taking screenshots, mail them to me. You'll mail this person hundreds of screenshots. They will say thank you so much, go back to their office or their home office, look at all the screenshots, and write this up into like a 70-page report that roughly says we went to the company and saw that they have these practices and confirmed they're in place and so you can trust them.
+
+That's really how it works, it's surprising when you explain that to people in software. These are not things that founders enjoy doing or honestly can justify prioritizing. I think it's just part of why startups didn't get SOC 2 until a few years ago. We looked at that as a kind of engineer product manager then we're like, well, that seems inefficient. I can build you some tools for that.
+
+If you want to think about the security of a company or they're trustworthy, looking at screenshots from last Tuesday is probably reasonable for last Tuesday, but it doesn't tell you anything about today, tomorrow, or next month.
+
+What we did with Vanta was break down the standard figure out (we call it) sane default of the definition. Then we connect with the tools a company uses—AWS, G Suite, GitHub, et cetera. Pull configuration information out so we can be like are you actually encrypting data at Rest?
+
+That's helpful to the company because they can see how far along they are in what they're doing. It's helpful to the auditor because they can see all of that too and in much higher fidelity than they got historically, and so it's easier and faster for them to write that 70-page report and give it to the company to accelerate the company sales.
+
+Ben: Our thanks to Vanta, the leader in automated security and compliance software. If you are looking to join Vanta's 2000+ customers to get compliance certified in weeks instead of months, you can click the link in the show notes or go to vanta.com/acquired for a 10% discount.
+
+David: Such a great company story, Vanta.
+
+Ben: Truly. We also want to tell you, if you are new around here in these Acquired parts, which many of you are after a nice little growth spurt—thanks, Taylor—you should make it official and join the 11,000 other smart folks at acquired.fm/slack. We'll be discussing this episode, the blockbuster acquisition news of the day, and you can meet other awesome people there. You also can get access to our second show, the Acquired LP show, by searching Acquired LP show in the podcast player of your choice.
+
+David, without further ado, take us in. Listeners, please know, this is not investment advice. Do your own research. David and I may or may not have investments in any of the things that we discuss, and this is for informational and entertainment purposes only.
+
+David: We're going to discuss just about every industry. First, we start back in the summer of 1944 in the Tsukishima neighborhood of Tokyo in Japan, right next to Tokyo Bay. I think this is right near where the fish market is. If you've been there, I believe.
+
+Ben: I've never been to Japan.
+
+David: No way. You got to go. We should do an Acquired trip.
+
+Ben: We totally should.
+
+David: Jenny and I went there on our honeymoon. It was so, so awesome. We did Kyoto, we did Tokyo, so wonderful.
+
+Ben: Oh, nice.
+
+David: There, in the summer of 1944, obviously most people are realizing right now there's quite a big worldwide thing happening in the summer of 1944 that Japan is intimately involved in that would be World War II. There, two engineers are assigned to a military task force to create a heat-seeking missile, which is one of the desperate things that Japan is trying to do at this point to turn the tide of the war against the Allies which they are losing at that moment.
+
+Both of these two engineers are involved in the war effort pretty reluctantly, not only because these are not military nationalist people. I think both of them probably believe that the war was a terrible thing for everybody, and it certainly was, but they also are particularly not into the war because they're pretty certain that when Pearl Harbor happened and Japan decided to pick a fight with America, that was a really, really, really bad idea because they're technologists and they know that America has the best technology in the world at this point in time.
+
+Ben: Yeah, listeners, David and I both read a couple of books to prepare for this. One of them is the excellent Made in Japan, co-written by Akio Morita himself, who we're about to introduce here. He talks about this a lot where he's really idolizing the technology and the innovation coming out of the US and knows from reading everything that he possibly can get his hands on. I know this is a very US-centric view and a very US-centric thing for me to be proud of, for lack of a better term, but it really is like we should not get in a fight with people that are that good and that far ahead in their technology revolution.
+
+David: I went and looked up population statistics from the World War II era and Japan had about 70 million citizens before World War II. The US only had about 130 million. Yes, America was bigger, but not way bigger. It wasn't that we should not pick a fight with America because they just have so many more people. Heck, they picked a fight with China who has a lot more people. No, it was specifically that the technology was just so much farther advanced in America than anywhere else in the world, especially Japan at the time.
+
+You referenced Akio Morita. He is one of the two engineers, but he's the junior engineer working on this project. The senior engineer, a man who's 13 years older than him, is a man named Masaru Ibuka and he is a prototypical engineer. This guy loves technology. I can't remember if it was Morita or somebody else in one of the books I was reading who lovingly referred to him as a dreamer.
+
+Ben: Yeah, it's so right that Morita, he does have a physics background and he's definitely an engineer. It is right to say that Ibuka is the engineer's engineer and Akio has much more of a marketing sensibility. While he invents a lot of these technologies and understands it, he's on the business side.
+
+David: You might say that Ibuka is like the Woz and Akio Morita is the Jobs.
+
+Ben: That's a great comparison.
+
+David: Ibuka loves technology, and particularly, he is fascinated at this point in time by radio and all of the applications of radio. This was one of if not the major technological paradigm of the '20s, '30s, '40s, and due to his proficiency in radio when the war started, the military and the Japanese government made shortwave radios illegal in Japan. This is also paradoxical. I learned all this. Did you know that shortwave radios are actually long-distance transmissions?
+
+Ben: I did. When I was a kid, my dad and I used to try and pick up shortwaves coming over the ocean and you can only do it, I think, at night because there was less electromagnetic interference from the sun or something like that. Isn't the spirit here of doing this so that consumers can't listen in on—I didn't know if it was the allies' signals or the Japanese's military plan?
+
+David: Exactly. I think a lot of governments did this during World War II, but certainly, the Japanese government. They didn't want their citizens listening to propaganda from the allies or other countries, which of course, the Americans and others were broadcasting all around the world.
+
+Ben: If you're going to listen to propaganda, it has to be our propaganda.
+
+David: They literally made it illegal to sell, buy any shortwave capable radios that consumers had. They had to take out components that received short waves.
+
+Ben: I think a lot of it was the government officials who were coming around to modify the radios were just clipping wires. Some of it was modifying components, removing it, but other ones, they just go in and be like oh yeah, there it is.
+
+David: Ibuka though is like, sure, whatever. You can clip as many wires on my wires as you want. I'm just going to keep making my own shortwave radio. He knows though that he can listen to transmissions from the allies and others. He knows that despite what the government is saying in 1944, the war is not going well for Japan.
+
+Ben: When we say radios, the thing to picture listeners is reasonably large, high power, not portable radios that use vacuum tubes, is an appliance to have a radio at this point in history.
+
+David: Okay, so that's Ibuka. The engineer, of course, is Akio Morita. It's pretty amazing that he finds himself here in this place at this moment because he is the eldest son of the 15th generation of the Morita Family of Nagoya, which is the family that controls one of the largest sake empires in Japan. Literally, for 400 years, his family has been running this business and is one of the most prominent families in Japan in the province of Nagoya. It's not just that they run this business, they kind of run the area.
+
+Ben: There are old companies and then there are Japanese old companies. I don't think there is a family business in the US that is as old as this company either in terms of generation or years.
+
+David: The US isn't 400 years old.
+
+Ben: Yes, exactly. Part of it is that there are umbrella shops in London [...] country. The Japanese, in particular Japanese family businesses, think on a 10X timeline the way that we sort of think about them in the US.
+
+David: The way it works is that the oldest son of each generation literally has to change their name to [...] when they take over the business and then they become the head of the family and the head of the business. Akio is destined, he's born into this, that he's going to take over the sake business.
+
+Ben: Of course, it's always a little bit of a point of tension with the family where Akio is taking apart radios, building stuff, and everyone's sort of looking at him like, boy, you sure are interested in physics for someone who is 100% going to take over our sake and soy paste business at some point.
+
+David: Yup. At age six, he starts going to business meetings with his father. Then at age 10, he starts attending all board meetings of the business. He gets a real business education alongside his interest in engineering, electronics, and tinkering. Unlike his father, Akio is growing up in the '20s and '30s, they're a wealthy family, they're getting all this American technology into the house. They're getting American radios for Morita.
+
+The big moment was when they got an American phonograph and records and he just fell in love with this, listening to the music, and understanding how this worked. When it comes a time when he reaches high school age—this is before the war—he asks his father to sort of ceremoniously release him from his duty at his destiny to take over the business, which his father does and by all accounts is very understanding about this, shockingly so.
+
+Morita goes off to study physics and engineering instead of going right into the family business. There's no way I think he or anybody else could have foreseen this. I have to imagine that very likely saved his life because when Pearl Harbor happened in 1941, Akio was 20 years old. If he hadn't gone into engineering and studied physics, what he is able to do is he's able to join the Navy as an engineering researcher, and get assigned to work on technology weapons research projects like he ultimately does during 1944 from the lab. If he hadn't done that, he probably would have gotten stuck on a boat, and a very, very high chance that he would have been killed.
+
+Ben: I think they even say either in the Sony book by John Nathan or in Akio Morita's book that his younger brothers were actively training to be Kamikaze Pilots. That would have been his future.
+
+David: Yes, there is still quite a high price though that Morita has to pay for landing in this relatively plumb and safe assignment. He has to sign up for lifetime employment with the Navy as an engineering researcher in order to do this, but (a) he feels like he has no choice, and (b) he loves engineering and loves research so okay.
+
+Ben: Yup, that's what I want to do.
+
+David: We fast forward to August 15th, 1945, the US, in the week prior, has just dropped two atomic bombs on Hiroshima and Nagasaki. The reaction that Morita has, he writes this.
+
+This is literally the opening paragraph to the book, Made in Japan, "I was having lunch with my Navy colleagues when the incredible news of the atomic bombing of Hiroshima arrived. The information was sketchy—we were not even told what kind of bomb had been dropped—but as a technical officer just out of college with a degree in physics, I understood what the bomb was and what it meant to Japan, and to me. The future had never been more uncertain—Japan had never lost a war—and only a young man could be optimistic. Yet I had confidence in myself and my future even then."
+
+Ben: Wow. There's also this fascinating thing where he sort of knows a secret. The next day after the bomb has been dropped when he hears about it and hears first-party accounts of it, he knows exactly what it is. I think, if I'm remembering right, he thought the US was working on an atomic bomb but was sort of like years behind where they were. Once he hears this report, he sort of knows a thing that the rest of the Japanese public doesn't, and so he sort of gets to decide, okay, how am I going to spend my next few days knowing what I know even though the government isn't sharing it widely yet?
+
+David: Yeah, there's a whole story that I didn't put in the notes here, but it's in the book. Everybody should go read the book. It's really, really great.
+
+Ben: It's the Shoe Dog of the '80s, truly.
+
+David: It is, in many ways. He goes home to his family at that point in time and he's worried that the military is going to order all officers to commit suicide rather than surrender.
+
+Ben: In a part of the surrender.
+
+David: He tells all his colleagues when he goes home. He's like, look, what this means, this bomb, don't do that. It's over.
+
+Ben: He says, depending on what the orders are, I may not come back and rejoin you. You can see what a cowboy he is already. The classic Imperial Japanese response there would be is it's my duty to come back and perform whatever ritual we are all performing as ordered by the Emperor together. What he's doing is looking around and saying, guys, I don't think there's a regime here anymore. I think it's, everybody, figure it out and go care for your families. The allies are going to be here soon and let's hope they're benevolent to us.
+
+David: It's August 15th, that's not when the bombs are dropped. What happens on August 15th? That is when the Emperor goes on the radio in Japan and announces that Japan is surrendering and asks everybody to surrender. This is amazing, the Emperor going on the radio. The vast, vast, vast majority of Japanese, throughout all of history, had never heard the Emperor's voice. So the aftermath is awful. There are 2.5 to 3 million people who died in the war, both soldiers and civilians. By contrast, less than 500,000 Americans died in the war, so it's pretty bad.
+
+Ben: Outside of just Hiroshima and Nagasaki, which is just so awful, the darkest moment in human history, what happened there, or among the darkest anyway. Even in Tokyo and all these other cities, they're destroyed. They got firebombed over and over and over again. I think it's something half of all Japanese urban citizens, even in Tokyo, are homeless.
+
+David: Yes, 47% of Tokyo citizens are homeless at this point. The per capita income in the country the next year in 1946, the first year after the war, is $17.
+
+Ben: You can inflation adjust all you want, you are not going to make that a meaningful number.
+
+David: It's unreal, and the country is just transformed. Japan is banned from having a military ever again. There are occupation forces that are running the government. The Imperial dynasty is at a minimum, not what it was before. Morita goes back home to Nagoya. Ibuka goes right back to Tokyo. The research project had been evacuated out of Tokyo before the end of the war as the bombings really started in Tokyo. He goes right back to Tokyo amidst all this, and what does he do? He founded a company.
+
+I think part of his vision, Morita would contribute to this too, but I think Ibuka really saw a huge opportunity after the war in that all this technology that had been focused on military and industrial use, but primarily military use, around the world and in Japan. Japan doesn't have a military anymore. You can't focus technology development on the military. The only thing you can do with technology, the only market you can serve is the consumer market.
+
+Ben: This is the moment where we realize that Ibuka is truly an irrational optimist. The National tenor couldn't be bleaker and yet Ibuka is like, let's start a company. Let's start it here in this completely war-torn, bombed-out old building. Sure, let's do it. Let's serve a market of people that have no disposable income.
+
+David: Maybe half of them don't even have homes.
+
+Ben: Unbelievable.
+
+David: He creates a founding prospectus for the company, which starts out that the purpose is to "establish a stable workplace where engineers could work to their heart's content in full consciousness of their joy in technology and their social obligation." The question is what is he going to name the company? He, of course, comes up with a brilliant name, Sony now. He names it the Tokyo Telecommunications Research Institute, befitting his goals.
+
+Ben: Yup. Sounds like something founded by a former military academic.
+
+David: Yes. He's founded this company, he's assembled a few engineers, he wants it to be a haven to work on their joy in technology and social obligation. There's just one question, which is, what products are they going to make?
+
+Ben: Which is not a part of the founding prospectus. That's the best thing. It's like, we don't have an idea. We have a lot of engineers.
+
+David: We just want to have a place where engineers can be engineers. The first thing they try is an electric rice cooker, they can't get it to work. The next thing they try is an electric heating blanket. That also doesn't work for various reasons. Then finally, they got the brilliant ideas, it was obvious. If only they'd been listening to our episode here, we've been alluding to it all along, that they should just fix the damn radios that everybody has in Japan.
+
+Ben: It's like sure, it may be a services business, but if you can just open up for business, let people bring in their radios, and you can modify them to make them unclipped at the very least for the easy, low hanging fruit, that seems like a business.
+
+David: People want not the only news that people are desperate for at this moment in time, but they also want entertainment. As bad as things are, people want something to remind them of a better time and a better future. They start doing this and things go well enough that they actually get a little write-up in a national newspaper at the time about the service that they're offering and know-how high quality their work is.
+
+Ben: I doubled down on service there. I think eventually they do come out with products too that people can modify their radios by attaching this product and it turns into a shortwave antenna or something like that.
+
+David: Yes. Who reads this article? Akio Morita, who's back home in Nagoya. He reads it. He's like Ibuka, he's created a company. He's created this haven for engineers. I would kill to work with him again. He writes to Ibuka and says that he wants to come to Tokyo and "be of service to him and the company." What does he mean? Why does he say be of service?
+
+One, he sort of figured that money was tight then and that the new company might not have enough money to employ him. The bigger problem was, it's pretty unclear what the status of Morita's obligations are at this point in time. Remember, he signed a lifetime employment agreement with the Imperial Navy, which may or may not exist anymore? Probably not. It's unclear.
+
+Ben: There are like 20 engineers at the company already even though they really can't make much money doing much of anything. The company is kind of established. Even though Akio is like, hey, remember when it was sort of you and I are working on this thing together? I'm reading between the lines a little bit, but I think he's a little bit searching for a signal on does Ibuka want me? You assembled a team of 20 and after that bond that we had.
+
+David: You didn't reach out to me?
+
+Ben: Yeah, it never comes up again. They're thick as thieves forever after this, but it's sort of interesting to me that Akio Morita was not one of the first 15, 20 people at the company.
+
+David: Yeah, you're right. Nobody really knows why. The speculation in some of the books and things I read are just that Ibuka really is just kind of a dreamer. He just might not think about Morita, but once Morita writes to him, he's like, oh, yes, I definitely want you here.
+
+Ben: Yup. The company, by the way, if you go to Sony's website, they have meticulously maintained corporate archives. If you go and request them, I don't know if it is anyone, if it's just journalists, or whoever special guests, but they have this stuff preserved and can bring it out to you with gloves on and let you read the founding prospectus. They've maintained this stuff for 70+ years.
+
+David: We should do that someday. What does Morita do? He finagles an assignment in the military "to get a teaching assignment at a university in Tokyo," still sort of through his original contract employment agreement. He knows what's about to happen, which is that the occupation government is about to decree that everybody who was previously in the military needs to be purged out of government, but also out of education.
+
+Ben: Which is totally fascinating. This idea where if you're the occupation government that's helping the country heal, you're there to make sure that it doesn't break into war again. After you drop atomic bombs on this country that you're helping them rebuild, you make this decision, which is fascinating that, hey, we don't want soldiers educating the next generation. We want the next generation to grow up in a completely detached way from the mindset of those who waged war.
+
+David: It's just so hard to imagine what life was like through those events.
+
+Ben: We have been very fortunate in the place and time that we have grown up, for sure.
+
+David: Totally. Anyway, it works. The strategy works from Morita. He gets "purged" from his job, and he's a free agent again or sort of a free agent. I just have Taylor Swift on my mind and her story because of our recent episode, but literally, what happens next is like a Big Machine moment. Morita and Ibuka want to join up. He wants to go work at the company.
+
+Now that he's been released from his lifetime contracts with the Navy, it's unclear if he actually needs to go back to the family business or not. He had been released from the family business to go to the Navy, but now he feels like he needs to go back to his father and get his father's permission once again to leave the family. They also need some money, some capital in this new company that they're restarting together.
+
+Ben: You can tell that this is very important to Ibuka because Ibuka goes to the family dinner with Akio.
+
+David: Yes, they both get on the train. They go to Nagoya, they have a family dinner. They ask for Akio's father's blessing for him to become partners with Ibuka in this new venture. They get the blessing and ¥190,000 investment in the new startup company. Over the next couple of years, the Morita family would put a little more money in overtime and eventually own 17% of the company. I don't have the exact dates here, but even by the early 2000s, the Morita family still, I believe, owned about 10% of Sony.
+
+Ben: Yes. As of 1999, the family controls a 10% share, which at the time was worth roughly $5 billion.
+
+David: The question is what's worth more, the Morita sake empire or the 10% stake in Sony?
+
+Ben: The 10% stake in Sony.
+
+David: But it depends on what years you're talking about here.
+
+Ben: That's true. That's a very good point. Sony had some dark years in the future.
+
+David: They're now in business together poised for the races, but they're still doing this radio repair and add-on in modifying business. That's great, but it's a service business. It's an add-on business at best. They're looking for a real product to make.
+
+In 1949, shortly after this, Ibuka gets a chance to see an American tape recorder machine and he's enraptured by this. This is a new technology by the leading manufacturer. I don't know if they actually manufactured this machine that Ibuka got to see. The company, Ampex, in the US makes the machines. The way the industry structure works is they obviously have a great business, but they don't make the tape. 3M is the leading manufacturer of tape for a tape recorder.
+
+Ben: Which is the Minnesota Mining and Manufacturing Corporation.
+
+David: Yes. Both of these companies are making huge amounts of profit on this new technology. Ibuka comes back and he's like, Akio, I've seen the future. We got to make this. Morita understands a little bit about these business dynamics and he's like, yes, we should do this. We should make these tape recorders for Japan and we should also make the tape.
+
+Ben: Yeah. If we're doing it, we better be doing both. The other thing to say is when you're picturing this—I'm going to keep resetting us because everything's gotten so miniaturized and componentized over the years—when we say tape recorder, picture something about the size of a small table. This is not a cassette tape recorder, this is reel-to-reel. It is (again) a hefty piece of machinery primarily for recording, also for playback, but a huge piece of value is the recording component.
+
+David: Yeah, and it's all audio at this point. Through some of the family connections, both from Morita and Ibuka's father-in-law who had been a minister in the government before the war, they started making these tape recorders.
+
+There are all sorts of stories about how they do it because metals and plastics are hard to come by in Japan at this point in time just after the war. The legend has it that literally, the first tape that they were making, they were frying metals in a frying pan in a factory.
+
+Ben: That was to make the magnetic coating that would go over them that you would actually record on. I think they were trying to use a Saran wrap type of material for the tape because it was hard to come by plastic. It obviously would stretch out, so the audio would get all distorted and sound terrible on the second playback.
+
+David: Once they get the product right, they're able to get first into the court system in Japan. They started replacing stenographers which were in short labor supply after the war. At this point in time, the company is known as the Tokyo Telecommunications Engineering Corporation (TTEC) with its tape recorders. They built a pretty sizable business in the Japanese market making these.
+
+Ben: Again, this starts so counter to the lean startup methodology. There was no job to be done when they started this. They get lucky in finding their way to the stenographers and the court reporters as a market. They initially go out to sell this thing and people are like, whoa, why would I pay so much money for that thing? No one has any money. It's a little bit of an accident of history that they actually found a use case for it.
+
+David: Totally. I believe the first product cost ¥160,000 per recorder. You basically got to be selling to the government at that point in time.
+
+Ben: Right. I don't know how to think about that in terms of dollars then or dollars now, but it's thousands and thousands of dollars.
+
+David: Yup. The Morita family's initial investment in Sony was ¥190,000, and now they're selling their first product for ¥160,000.
+
+Ben: That at least gives you some context.
+
+David: This goes along for a couple of years. They're building up the company. And then, in 1952, Ibuka heard that the world-famous, renowned institution that everybody respects, especially nobody more than Ibuka and Morita in Japan—Bell Labs—that the then-parent company of Bell Labs, which is a company called Western Electric. It went through a whole bunch of owners, it was all related to AT&T and the various entities as part of that. That they were going to open up the transistor for international licensing. Of course, they had created the transistor in Bell Labs that they were going to license the technology internationally.
+
+Ben: We talked with the NCS guys about this, but the invention of transistors, semiconductors, this stuff is so divergent. Once we get to the integrated circuit. It's so wildly different than the path that technology was already on that it was unlikely that anybody else toiling in a lab was going to independently find their way to it at the same time. Once this thing gets invented and all these brand-new use cases emerge, the opportunity to license that technology and use it to commercially make products in your country is huge.
+
+David: Keep in mind what we were saying for the last few minutes here about the size of these various technology "products" that were being used to build the radios that were the size of console tables and tape recorders the size of nightstands.
+
+The transistor is available for license and Ibuka is like, this is it. Just like when he saw the tape recorder and just like when he got obsessed with radios before, he's like, we got to do this. Morita is like, okay. Morita goes off to New York—this is, I believe, in 1953—and negotiates a deal. It ends up taking about a year to finalize this, but he negotiates a license from Western Electric, Bell Labs, to use the transistor.
+
+The Bell Labs guys are like, well, what are you going to do with it? Ibuka and Morita are like, we're going to make miniature radios with the transistor. They're like, guys, you can't do that. This stuff is still done with germanium at this point. You can't get enough power in this to really power a radio that would actually work. We think the market application that makes sense here is hearing aids.
+
+Ben: Hearing aids, that's right. Ibuka and Morita are like, no, the hearing aid market in Japan will not be a viable one for us. In fact, I think there's a cultural issue where it's perceived as a weakness to be hard of hearing.
+
+David: They knew for lots of reasons that there was no chance that they could build a big company and a big product making hearing aids.
+
+Ben: They're betting the farm here on, we are going to be able to figure out how to dope these transistors, use a different material, or something in order to make it viable to create a radio.
+
+David: They're nothing if not confident. Bell Labs is like, all right, good luck, guys. It takes two years, but two years later in August of 1955, TTEC releases their first transistor radio product—the TR-55 portable radio.
+
+This was actually not the first transistor radio in the world. An American company called Regency had worked with TI to make a transistor radio in the US. Bell Labs, TI—the rivalry. TI and Regency had actually come out with a portable transistor radio slightly earlier in the US, but for whatever reason, they didn't invest a lot in the product and it never became a big thing for them.
+
+Soon-to-be Sony is all-in on this idea of, if we can shrink this down, people can take it with them. It can be portable. Leading up to the release, they're like, this is going to be our big consumer product. Tokyo Telecommunications Engineering Corp doesn't really just roll off the tongue anywhere and especially not in English or other markets around the world where ultimately, we want to be selling products. We need a new name.
+
+They literally start going through the dictionary looking for new names and eventually, they come across the Latin word sonus. They're like, that sounds interesting.
+
+Ben: It means sound. It sounds cool.
+
+David: Yep. What do we do? We make technology focused on sound. Maybe we could do something with that. At the same time, this is such a funny cultural quirk. I think that this is because after the war, there were lots of American GIs.
+
+Ben: Yeah. Sonny Boy was being used a lot. You can hear a lot of young people out in the streets in the neighborhood saying Sonny Boy. He wanted something that would represent a product for young people, so the idea of naming it something that sounds like Sonny or Sonny Boy would appeal. He wanted to merge this powerful sonus with Sonny Boy.
+
+David: It's such a great name. I think from the beginning, it's stylized as all capital letters.
+
+Ben: There's one logo before that they very quickly dumped, but there are then four or five iterations. It looks very much when you know you should change your logo to update it, but you also think it's pretty much perfect. That is exactly what the Sony logo evolution over time represents.
+
+David: I love it. It's so good. It's such a brilliant name. It works in every language and every culture around the world. It really becomes synonymous with innovation for decades.
+
+They release the TR-55. It goes well but it's a first-generation product. It sells well in Japan. They keep working on it, refining it, and wanting to get it smaller. Ibuka has this vision of a truly pocketable radio that you can fit in your shirt pocket, take with you, walk around, and have with you all the time. Very, very personal device.
+
+Ben: By the way, we should say I'm pretty sure they don't have headphones at this point. The radio is getting smaller, but it's still a radio with speakers.
+
+David: Yes, exactly. I think a lot of people do this, just walk around with their phones playing music on speaker.
+
+Ben: Yes. People do that.
+
+David: This is where it starts.
+
+Ben: Especially on hikes in the woods.
+
+David: Two years later, they come out with the next version of the product, the TR-63. This thing is a monster. Ibuka has this vision of fitting it in the shirt pocket. It's just slightly lighter than a standard man's dress shirt pocket. He and Morita really want this to be the narrative. They outfit their salesforce. They have the Sony salesforce that sells the products to the distributors or the retailers. They get special custom shirts made for all of them with slightly larger-than-standard pockets so that they can demonstrate putting the radio in the pocket. It's amazing.
+
+Ben: Again, the Steve Jobs peril, the showmanship of that. It's like the MacBook Air in the envelope.
+
+David: Totally. Consumers go nuts for this, first in Japan where they launched it first. Ultimately, the TR-63 ends up selling 1.5 million units at $25 each. I don't actually have any financial data on the scale of the radio repair business or the tape recorder business, but suffice to say, this is orders of magnitude larger than the tape recorder business.
+
+Ben: Right. They've got a real corporation on their hands now.
+
+David: Yup. The company grew to 1200 employees, the newly named Sony Corporation. Of course, the big thing that they want to do for many reasons, not the least of which is that America is the largest consumer market in the world at this point, is they want to bring the product to America.
+
+Morita comes back over to the US and starts talking with distributors about, hey, we've got this amazing transistor radio. We know consumers love it. We're pretty sure Americans are going to love it too.
+
+He connects with the Bulova watch company, which I hadn't heard of. The brand still exists today. Ironically, the Bulova watch brand is owned by (I believe) Citizen watches, which I believe is a Japanese company. At the time, it was an American watch brand. They're like, yeah, this is pretty great. We want to place an order for 100,000 units that we're going to bring over to America and sell through our channels. That's huge.
+
+Ben: Morita is like, sorry, what? How many? How on earth are we going to make that many?
+
+David: That is a huge, huge order. Bulova is like, yes, we want that many, but the thing is naturally, we're going to be this big business partner for you. We want it to be the Bulova TR-63. We want to put our brand name. Morita would later say that this was the single biggest and best business decision of his career. He turns them down and says, nope, you can sell the Sony TR-63 or you can sell nothing.
+
+Ben: It is really brilliant. It is a mark of what was to come and also something that truly defines the company. Company culture and company values don't mean anything until they're tested. I don't think he used the phrase direct-to-consumer, but when they decided they wanted to be a direct-to-consumer company, that's cute and all until someone offers you a big pile of money to be a white-label OEM product. But when you really test it and when it comes out is when he says, nope, we refuse this order.
+
+I'm going to keep making Apple parallels by the way. As much as we like to hold up Steve Jobs, he did come out with the HP iPod.
+
+David: That's right. Oh, my goodness, I forgot about that.
+
+Ben: There was that iTunes phone that was actually a Motorola phone that was a piece of rock.
+
+David: The ROKR.
+
+Ben: Yeah, the Moto ROKR. That's right. But the HP iPod truly was just an iPod with an HP logo on the back.
+
+David: Did they have any special colors or anything? I remember I had the U2 iPod that was black and red. That thing was awesome.
+
+Ben: That was cool. I had that too. Yeah. I think that was a pre-dated Product Red but what would become Product Red.
+
+David: Yup, I think that's right. Ultimately, what that leads to is a couple of years later, Morita and Sony decided we need to establish our own corporation in America so that we don't have to work with distributors. We can just directly have a Sony operation in America.
+
+They started the Sony Corporation of America in 1960. Morita actually moves to New York City. Originally, the intent was he and his family were going to be there for two years and set up Sony Corporation of America. It ultimately ends up being about one year because his father passes away and he has to go back to Nagoya. Ultimately, his younger brother would take over the family and the business.
+
+Ben: It is interesting how his US license plate when he moved here was AKM, which is the hint that he did always think about himself as the [...] of the family.
+
+David: It was AKM15.
+
+Ben: Right, because he's 15th generation.
+
+David: The 15th generation, yup.
+
+Ben: By the way, the move to the US is a thing that sets him apart versus his peers. Other Japanese CEOs were not really willing to move to the US. It was a very un-Japanese thing to say, I want to do business in the US so badly that I will move my family and become a part of this culture to do that. That just wasn't done.
+
+David: But it really sets up the business relations between Sony, US corporations, and the overall business environment in Japan and America. Maybe there has never been any other company, except SoftBank, that bridges the two. There are American executives in Sony. At one point, one of them becomes the CEO of Sony, Howard Stringer. I don't think that happens in any other Japanese corporations.
+
+Ben: Both the American-Japanese bridge and the pure focus on the Japanese economy. If you think about what Sony did for Japan as a nation, it was unprecedented. I think the most telling quote of all is when Akio Morita passes away many, many years later in 1999, somewhere around there. The Prime Minister of Japan referred to him as the engine that pulled the Japanese economy. That is an astonishing quote.
+
+Can you imagine a sitting US president referring to a US-based founder CEO as the engine that pulled the US economy? You can't make that big of an impact.
+
+David: You wouldn't even say that about Steve Jobs.
+
+Ben: No. The state that Japan was in when they started Sony and how massive, impressive, and successful they grew it to over the course of Akio's whole life, the quote is not hyperbolic.
+
+David: No, not at all. One thing I just realized, I should correct myself. Howard Stringer was not an American. He was Welsh, British.
+
+Ben: Not Japanese.
+
+David: A non-Japanese business person. You can't say that about anybody. You can't say that about Elon Musk in America.
+
+Ben: He's the engine that pulled the Martian economy.
+
+David: Exactly. Let's fast forward a little bit. We got this Sony Corporation of America set up. Fast forward to 1966. I thought this was going to be just a total side note in the history, but it actually became super interesting and important. Sony, what's it all about at this point? It's audio, music, the first tape recorder, and radio. That's music and sound. That is literally sonus, that's what it's all about. Japan has become a huge music market at this point in time.
+
+As we talked about on the T. Swift episode, there are lots of aspects to the music market. There are obviously the devices and the consumption that Sony is in at this point with their radios, but there's also the recording industry.
+
+Before the war, CBS had negotiated a merger with a record company in Japan to create an organization called Nippon Columbia, which was using the Columbia Records label and doing distribution for Columbia Records' artists and music in Japan. Side note, do you know why it was called Columbia?
+
+Ben: Because the C in CBS stands for Columbia.
+
+David: Yes. As a second side note to pull forward from later in the episode, did you know that Columbia Pictures is not the same Columbia?
+
+Ben: I did. I looked this up because I wanted to bust this out for you and be like, did you know that Sony Music and Sony Pictures were reuniting the original Columbia? Then as I was digging into it, I was like, wait a minute, these companies, Columbia Pictures and CBS where the C stands for Columbia, shows the word Columbia completely independently. That is not true. They did not stem from the same company. They are completely different, and yet Sony ended up buying both of them in the future. Unbelievable.
+
+David: They didn't reunite the Colombias. They united the Colombias for the first time. Back to 1966, CBS is newly interested in Japan. They're looking for a partner to set up a JV to access the Japanese recorded music market. Morita hears about this and hears that a CBS executive named Harvey Schein is over to handle this matter for CBS. He meets him and he says, I'm in. I will do everything in my power to make this happen. We want to do a 50-50 JV between CBS and Sony. We'll be super flexible on whatever terms you want and we will make this happen as fast as humanly possible.
+
+Schein is like, okay. They do. Morita is true to his word. Within a year, CBS/Sony Records is created. It's a 50-50 JV between the two companies. It goes pretty well. In fact, it goes so well, it blew my mind. I had to check this in a bunch of different places to make sure that this is accurate, but multiple sources have this. CBS/Sony Records, which is the Japanese distribution arm of CBS' recorded music in Japan, became such a cash cow that within just a few years, it is the most profitable division for both Sony and CBS. It is just a geyser of cash.
+
+Ben: This is because of the pent-up demand for the Japanese public to buy American recorded records.
+
+David: I would assume part of it is what you said, Ben, that there's just enormous demand for music and for American music in Japan.
+
+I think the other part of it is there probably aren't really much costs associated with this business. CBS Records around the world is signing all these artists and producing the music. This is just distributing it in Japan. It's all just incremental revenue. Anyway, this just blew my mind.
+
+The other smart thing he does—which probably has a lot to do with CBS/Sony Records' success—is Morita puts his young protégé in charge of running it in Japan, a young protégé with a strong musical background. Do you know who that is?
+
+Ben: I have no idea. Nope.
+
+David: Norio Ohga who would succeed Morita as the CEO of Sony. Ohga was not a founder of Sony, but Ibuka, Morita, and Ohga were really the triumvirate for a long time. Ohga was a classically trained musician. He was an opera singer and a conductor. Even after he was CEO and chairman of Sony, he would still conduct the Tokyo Philharmonic Orchestra.
+
+Ben: Oh my God, that's wild.
+
+David: Unreal. He was a legitimate musician. In the early days of Sony when he was still a student, they would bring him into the factory to help test the products and get the musician's input on the quality of the products. That led to Morita saying, hey, this guy is incredibly talented at business and engineering and products. In addition to being a musician, we want to bring him into the company.
+
+The first major role he gets is running CBS/Sony Records and then turns it into this geyser of cash flow. Literally, the stories about this are ridiculous. Because it's a JV, they both had to agree to do distributions, both Sony and CBS, to get the cashback to the parent companies, and they weren't always on the same page. They had just tons of cash sitting at this subsidiary. They started buying up citrus groves in California to buy land, anything to park the money coming out of this subsidiary.
+
+Ben: They're getting into music in a big way.
+
+David: Right around this time too—we're now in the late '60s, early '70s—of course, television is becoming a huge thing. Television has been around forever, but colored television is starting to be a thing.
+
+Ben: When we started doing this research, David, I had no appreciation for how much harder it was to do colored television than black and white.
+
+David: I just assumed that when colored television came out, everybody started buying colored TVs, and black and white TV went away of a VHS, which we'll get to in a minute—when DVDs came out. No, not the case. For many years, colored TVs were on the market, but people kept buying black and white TVs because the colored TVs' picture quality was so crappy.
+
+Ben: Right. Without getting too far into the details because we'll get way over our skis. Most of the time, the way that the colored TVs were happening was either by having three electron guns. Basically, there was this miracle that had to happen where they all had to be aimed properly, you had to have the three primary colors, and all of them had to show up in the right place on the screen at the same time.
+
+When you're used to one white light electron gun, that's a much easier thing to solve. The picture is going to be crisp. Now suddenly, you're trying to line up this miracle. It's going to be really expensive. It's going to be really temperamental. It's going to be blurry in most cases. Yeah, David, you're right. The invention of the colored TV happened and most consumers went on buying black and white.
+
+David: Yep. Sony goes to work for years trying to make a really, really great colored TV that could live up to the Sony name and engineering culture. The result of that is the Sony Trinitron, which is their electron gun system for creating a colored picture on a screen.
+
+Ben: This was an Ibuka thing. He parachuted in and said, I know I'm effectively the CTO of all Sony and we've got these product lines. It's like Steve Jobs and the Mac. He's like, okay, I'm handpicking a bunch of engineers. We're going to go start a brand-new research project. It'll eventually be called the Trinitron.
+
+David: They put up the pirate flag.
+
+Ben: We will figure out how to make a colored TV that is mind-blowing to consumers and something that people want to rush out and buy. Now, of course, the first run of those that actually did make it cost Sony way more to manufacture than it actually was priced at retail because their yields were so terrible. One out of 100 or something actually worked to specification, so the company lost a lot of money on that. But it was totally like Ibuka's jumping back in, rolling up his sleeves, and handpicking a team.
+
+Ben: Yeah. The net of this when it comes out, I actually don't have the full numbers, but for some ungodly amount of time, decades from when the Trinitron TV comes out, Sony is the number one by market share TV manufacturer in the world. Later in the episode, we'll come back to how that became an albatross for them.
+
+Ben: I remember growing up in the '90s. There were Sony TVs and there was everything else.
+
+David: Exactly. I had no idea what Trinitron was. It says Trinitron there. I don't know what that means.
+
+Ben: That's just some random Sony brand. The same way that Bravia is today or was recently. It's like, oh, marketing.
+
+David: But no, it actually was the technology of the electron guns that they created. The Trinitron was a huge success. Ibuka was very much behind it. Morita and Ibuka get together and they're like, okay, we've now got this toehold in video with a display that we've created the best on the market. We've got the number one market share. What if we run the reverse playbook that we did with the audio or go back to our DNA as a tape recorder business? What if we created a tape recording device that would work with our Trinitron TVs and would allow consumers to record video? That would be pretty awesome. I bet there would be demand for that.
+
+Sony engineering teams work super hard for several years. In 1975, they introduce—
+
+Ben: The greatest technology in its class by far.
+
+David: To come out of this company in its illustrious almost three decades of existence, the Betamax video recording technology. This is so good. The story behind this is not at all what I thought. It was really great technology. On a feature basis, you could only record about an hour on Betamax.
+
+Ben: We might actually have some young listeners that don't know that word, David. Let me just real quick say, anyone who grew up with a VCR, that's the thing that the Betamax lost to.
+
+David: Yes. VHS was the competing format that they lost to, which we'll get to in a minute. Betamax, for many listeners, is like the butt of a joke.
+
+Ben: You don't want to be the next Betamax.
+
+David: Exactly. They introduce it in 1975. It's the first product-to-market of a video cassette recorder that consumers can use to record television programs. They market the killer feature as time-shifting.
+
+Ben: It's amazing that the first killer feature isn't you can take movies that you used to only be able to watch in theaters and watch them at home and that will be a distribution channel for movies. No, it's tape stuff off your TV.
+
+David: No. Literally, you do the recording, not buy a movie that's pre-recorded. They run these great ads. First big success on this, they have Bela Lugosi who was the famous actor who played Dracula. He's in character as Dracula in the ad and he says in a Transylvanian accent, which I won't do here, when you work nights as I do, you miss a lot of great TV programs. Now with Sony Betamax and Trinitron. It's so good.
+
+These commercials start going well. They start getting a bunch of sales, especially in the US, but all around the world of Betamax, consumers are loving this. They got a hit product, so they want to keep going with this marketing theme. They reached out to MCA Universal to do a similar ad.
+
+Ben: It would have been Lew Wasserman running it.
+
+David: Yes, it was Lew Wasserman and Sid Sheinberg. At that point in time, I forget which shows they were, but Universal had two of the top TV shows that they created. They were studios behind the shows, but they were airing on different channels at the same time. Sony wanted to create an ad that is like, hey, with Betamax, you can watch both of these shows that you normally have to pay for. He started talking to Sid Sheinberg about this.
+
+Lew and Sid, as we talked about with Michael Ovitz, are smart cookies. They were behind aggregating all the power in Hollywood before Ovitz came along. They're like, recording this time-shifting Betamax thing is actually a threat to our power to Hollywood. This could be a new aggregation point and point of power in the ecosystem. We're not going to play ball with that. We're going to go full-on scorched-earth on Sony who's trying to take our power here.
+
+They respond to the request of reaching out to do a commercial with them with, hey, guys, we think this is copyright infringement. We're going to hit you with a lawsuit because you're stealing our content.
+
+Ben: Henceforth, there will be an FBI warning at the front of every videocassette.
+
+David: This isn't even about buying movies from the video store that the studios are putting out. This is you recording at home. This is the beginning of this propaganda campaign, at least in America of, oh, recording content is bad. You could get sued and you could lose all your money. Napster and everything else down the road all stems from this.
+
+In November of 1976, MCA files a lawsuit against Sony for enabling copyright infringement.
+
+Ben: That's right. They're not even actually doing any infringement. They're just making a machine that enables anybody out there to allegedly infringe.
+
+David: This is a major news story. Harvey and Sid Sheinberg go on Walter Cronkite to debate this issue of is it okay for both the lawsuit and is it okay for consumers to time-shift?
+
+Ben: The lawyers would never let this happen in public now.
+
+David: I know. It's so great.
+
+Ben: Can you imagine if Tim Sweeney and Tim Cook went on a national television show together to just have it out?
+
+David: That would be amazing. The irony of all this is that it's great for Betamax sales. Betamax sales go through the roof because (a) it's free publicity and market education and (b) at least American consumers are like, well, shoot, I better buy this before it goes off the market.
+
+Ben: Right. I went and downloaded Fortnite on all my iOS devices when I thought they were all going to be removed.
+
+David: Exactly. Morita is pumped about this. He actually orders Harvey, the CEO of Sony America to start a $20 million advertising campaign immediately in the US for Betamax. Harvey declines and doesn't get through with it, which creates a big rift between them. Unfortunately, though, this was ultimately also the death of Betamax. I actually don't know what happened with the lawsuit. I imagine it was probably settled.
+
+Ben: At the end of the day, I, in the '90s, grew up recording television on my Sony VHS cassette player, VCR.
+
+David: Which they made. How does this all happen? Other electronic manufacturers, even other electronic manufacturers in Japan, have been working on their own formats. Lew and Sid at MCA are so pissed at Sony. The other soon-to-be arriving on the market competing formats come to them and they're like, we'll work with you guys. What do you want? Do you want to work together to build the movie-at-home industry? We'll sell VHS tapes with pre-recorded Star Wars or whatever on there. Great.
+
+MCA starts working with the VHS format, which was made by Matsushita Electric.
+
+Ben: Which of course is Panasonic.
+
+David: Yes, Panasonic and JVC. They had a few brands. But then remember from the RCA episode, who buys MCA? Matsushita.
+
+Ben: It's amazing that after building this relationship that it then got so adversarial. I didn't know this when we interviewed Michael. Through this relationship about developing the VHS format and then offering their content exclusively in VHS, MCA Universal had a pre-existing relationship of collaboration with Matsushita.
+
+David: Yeah, a super deep relationship.
+
+Ben: But suffice to say, this was enough to kill Betamax.
+
+David: Lew and MCA had such clout in Hollywood at that point in time. I wonder if them essentially anointing VHS and Matsushita as the winners were enough to drag the whole industry.
+
+Ben: Sony lost Betamax versus VHS. That seems very clear. That story is very well-told at this point.
+
+Interestingly, the '70s had a lot going on for Sony. The first of which was that in 1970, they became the first Japanese company to be listed on the New York Stock Exchange. Americans actually could become shareholders of the Sony Corporation.
+
+David: That's right. They did an ADR listing.
+
+Ben: Sony's now tradable in Tokyo and the stock exchange there and on the New York Stock Exchange in the US. It didn't go so well with Betamax, but they've got a few other pretty awesome tricks up their sleeve.
+
+David: They've got essentially three bangers in the hopper here. The first one is the compact disc. I did not realize that the work on what would become the CD actually started back in the '60s. The origin of this was that Ohga, who would become CEO of Sony, in 1966 had negotiated a cross-licensing deal with Philips, the Dutch company, where the companies could share their tech, share their patents, and then collaborate on new technologies together. They started working on a digital audio format. I believe it was the early '70s when they started working on this.
+
+Ben: How crazy is it that we're telling the origin of the CD format before the Walkman?
+
+David: I know, crazy. It takes many years for this technology to get to a point where it's productizable. It's crazy when you think about all the tech that goes into CDs.
+
+Ben: Totally. The first of which being precision lasers. David, what else spun out of Philips that involves precision lasers?
+
+David: That would be ASML, right?
+
+Ben: Yup. It's funny thinking about all the incredible innovation that we have today with the small semiconductors made possible by something that traces its roots back to the same laser innovations but late '60s research on a laser readable, writable disk.
+
+David: It truly is Philips and Sony working together to create the CD format, lasers, and all the technology going into it. It's not until 1980 that it's ready to be productized. They announced the CD format in 1980. They signed up tons of partners in all industries all over the world to license it.
+
+In 1982, Sony brings the first CD player to market, and then lots of other manufacturers follow suit. The great thing is Sony and Philips are getting royalties on all the hardware and all the discs being sold out there.
+
+Ben: Let me say, when you say CD player, I think everyone's probably picturing something that looks like a Discman right now. Picture a VCR. It's a big box. You put a CD in it and it plays, but it is a sizable machine.
+
+David: In just a few short years by 1986, CDs become the dominant recording format by sales passing records.
+
+Ben: I'm actually looking right now at the RIAA data on this that I conveniently had from the Taylor Swift episode. If you look at US recorded music sales by format, the CD grew really fast. I think there might have been a handful of years there in the mid- to late-80s where cassettes were bigger than records but CDs hadn't caught up yet. But the cassette wave was reasonably short-lived as the dominant platform between records and CDs.
+
+David: Interesting. Of course, Sony also does pretty well in the cassette industry with what you're referring to, the Walkman. This is another thing I didn't realize. The Walkman came out pretty concurrently with the rise of CDs, but as you were saying, it's not like you could take a big honk in-home CD player on the road.
+
+Ben: No. CDs were not portable for a long time. On the EA episode where we interviewed Trip Hawkins, we talked about how famously, Madden was Trip's folly. Of course, he was vindicated and proven very right even though it cost a lot of money, took a lot of time, and ended up being an enormously powerful franchise.
+
+That is the story with the Walkman. This is Morita's folly. He single-handedly thought that, hey, we've got this cassette player, but really, it's a cassette recorder and it doesn't have speakers. It's a little chunky, but people can take it out in the world, record stuff, and listen to it on the speakers. I think there's a market for people who want a slimmer, sexier version of that where we throw away the recording capabilities, we get that right out, stop taking up space with the speaker, and attach headphones.
+
+All of the marketing people at Sony are like, no, there's no market for that. No one wants to walk around outside in their own little world listening to music and headphones. You concurrently have the engineering saying, but we need lots of power to produce all the sound. It's not really technically viable because we need to produce all this audio so that it goes out into the world.
+
+You have Morita going, no, it's going to be low power because we're going to make these amazing low-power headphones. We only need to produce a little bit of sound because it's going to be right next to people's ears.
+
+This was a consumer behavior that did not exist in the world that Akio Morita just said, everybody, trust me, let's invest in this. It completely changed human history forever and the way that humans walk around out in the world.
+
+David: It's amazing that it was Morita who did this. This is the kind of stuff that Ibuka usually does. The sentiment on the board and in the company against Morita—Morita at this point is that the CEO of Sony—was so strong that he had to make a promise that if the initial 30,000-unit production run didn't sell by the end of the year, then he would resign from Sony.
+
+Ben: I didn't realize that.
+
+David: Yeah. He had to literally lay his cards on the table.
+
+Ben: The way Morita phrases it in the book is this quote that is "Steve Jobs before Steve Jobs." I'm going to make that point 11 times in this episode because it's not that Steve Jobs is a rip-off of Akio Morita. It's that he so badly wanted to be Akio Morita. He was such a better marketer in his time of a lot of the concepts that a lot of us grasp on to Steve's version of them, even though a lot of the concepts are actually Akio's version of them.
+
+There's this one quote in particular, which is, "I do not believe any amount of market research could have told us that the Sony Walkman would be successful, not to say a sensational hit, that would spawn many imitators. And yet the Sony Walkman has literally changed the habits of millions of people around the world." He said this in 1986. Steve Jobs would say things like this, "Apple doesn't do focus groups." "You have to invent something." "People can't tell you what they want." These are all Morita-isms.
+
+David: I know. It's so amazing. Everybody really should go read the book, Made in Japan. It's very, very good.
+
+Ben: John Sculley, between Steve and Steve CEO at Apple who famously Steve convinced to come over from Pepsi so he didn't have to sell sugar water for the rest of his life. His quote about Steve is that he was a freak about Sony and that it was nearly fetishistic. In fact, he even had a collection of Sony letterhead and marketing materials.
+
+He talks a lot about how the Mac factory was designed to emulate the Sony factory, that super crisp, pristine look, the idea that the factories were spotless. John Sculley says this made a huge impression on him. While Apple didn't have colored uniforms, it was every bit as elegant as the early Sony factories that we saw.
+
+He goes on to say, which I thought was really interesting, Steve didn't want to be Microsoft. He didn't want to be IBM. He wanted to be Sony. Right around this time, Sculley and Steve even met with Akio Morita. He says, "I remember Morita gave Steve and me one of the first Sony Walkmans. None of us had ever seen anything like it before because there had never been a product like that." This is 25 years ago. "Steve was fascinated by it. The first thing he did was take it apart and look at every single part, how the fit and finish was well-done, how it was built."
+
+This whole thing comes totally full circle when Morita eventually passes away. Steve Jobs in '99 is giving the Macworld keynote. He starts the keynote by putting up a picture of Akio Morita, who they used in the Think Different campaign, and says—and this is a quote from Steve on stage—"While he was leading Sony, they invented the whole consumer electronics marketplace, the transistor radio, Trinitron television, first consumer VCR, Walkman audio CD."
+
+David: Notice that he doesn't say the name of the first consumer VCR there. You sent me that video. We'll put it in the show notes. It's fun to watch. I didn't realize they used Morita in the Think Different campaign, which is interesting because they were quasi-competitors.
+
+Ben: Had Sony come out with Vaio yet at that point?
+
+David: No, probably not.
+
+Ben: I think Steve had this thing where he could have reverence for the history of a company in a way that made their current competition not matter, but the companies that he viewed having no taste and no history like going thermonuclear on Google or his relationship with Samsung, all bets were off.
+
+David: Microsoft too. The first Walkman comes out in Japan in July of 1979. It sells through the 30,000 initial production run in one month, the next month, it doubles, the next month, it triples, and it continues tripling for month after month after that.
+
+Ben: Jake Saper on the LP Show said he looked for triple-triple, double-double in the first four years of a startup.
+
+David: Those were years, not months.
+
+Ben: Right. This is double, triple, triple, triple months in a row.
+
+David: This stat was fascinating to me, both for how big it is and how small it is. All-in, Sony sells a quarter billion Walkmans in the life of the product.
+
+Ben: Which is 1979 until 2000-ish?
+
+David: Call it that, so 20-ish years. That's both incredible. I don't think there were any other single products that sold quarter-billion units.
+
+Ben: The iPhone has.
+
+David: No, at that point in time. It's so impressive on that front. But today, a quarter billion units is a year for Apple or something.
+
+Ben: Yeah, it's crazy. There's just been so much consolidation to the point where if you go buy the best phone, which is the top-of-the-line iPhone from Apple, that is the best one that humans can buy, and yet there are millions and millions of people buying that device.
+
+David: The Walkman, of course, eventually leads to the Discman also becoming hugely popular. I had so many of those growing up, and Walkmans too. Did you have Walkmans?
+
+Ben: I had one Walkman and one Discman. Both of them were light Sony gray colors. It was like that plastic that was designed to look like metal.
+
+David: That was classic. I had the colored versions.
+
+Ben: The yellow Discman that was meant for running that had the extra skip protection on it.
+
+David: Extra skip protection, yes. Unfortunately, after the Discman, they did the MiniDisc.
+
+Ben: Which I bought like a fool.
+
+David: Me too. I love Sony. How could you not love Sony? Then, fortunately, I didn't buy this. Did you buy the memory stick digital audio player, MagicGate memory stick?
+
+Ben: Fortunately not. I did not have products that used that Sony thing that was a competitor to SD memory sticks. They also had a thing that was a competitor on their cameras, CompactFlash.
+
+David: Oh, that's right.
+
+Ben: The thing that I had that used, the Memory Stick Duo, was my PlayStation Portable.
+
+David: Oh, you had a PSP?
+
+Ben: I had a PSP. Those are two defunct Sony media types that never got adopted by anyone but them, the Memory Stick Duo for the SD card and the game cartridges or UMDs. It was called a Universal Media Disk.
+
+David: They were going to sell movies on it too in addition to games.
+
+Ben: I remember watching Mr. And Mrs. Smith on my PSP. I don't know if I bought the UMD or how it got there.
+
+David: That's amazing.
+
+Ben: I actually did a little exercise to write out all the stuff that I had that was Sony because we were an Apple family. Other than the Macintosh 8500 that I had at my desk and the G3 that my parents had on their desk, we had those two Apple products, and I think my dad had the first iPod which plugged into our Sony stereo, but everything else was Sony. I had the Sony tape, Walkman, the Discman, the MiniDisc player, a PS2 and the PSP, and many, many sets of Sony headphones. Our Family TV was a Trinitron and multiple family camcorders going from the VHS version of it down to some other digital video format tape.
+
+David: Yup. We had one of those.
+
+Ben: Then, of course, a VCR, a DVD player, several USB flash drives, my CRT computer monitor, the living room receiver for our stereo, the radio that plugged into the stereo—everything was Sony. It was just like, well, if you were going to go buy a piece of home electronics and it was going to be good, you go buy Sony.
+
+David: You didn't even really look at the features or anything. You're just like, oh, if I want the best, I get the Sony version.
+
+Ben: Totally. It's just amazing since then how Apple has combined a lot of that functionality into very few of their devices. Then, the low-end came in and ate up a lot of market share and other things like TVs. I know I'm flashing forward and we'll get to that, but it's just incredible, the breadth of products that they used to sell that was just the best on the market.
+
+David: Incredible The '80s were good for Sony, Betamax aside, for three reasons: (1) CDs, (2) the Walkman, and (3) life insurance.
+
+Ben: So crazy. I remember when I started reading and was looking into their financials, I'm like, what is this large Sony Financial Services Group? What is Sony Life? David, what is Sony Life?
+
+David: Sony Life is a life insurance company. They originally started in 1979 as a JV with the Prudential Life Insurance Company in the US. Supposedly, the reason this comes about is that in one of Morita's pretty early trips through the US, he goes to Chicago and he notices the Prudential building. The Prudential building is a very, very impressive building on the skyline in Chicago. He asks somebody, oh, what building is that? They say, that's the Prudential Life Insurance building. Morita supposedly thinks to himself, okay, life insurance is a business I want to be in, so they create this JV.
+
+Ben: The conglomeration of Sony begins. It's one thing to say, oh, they do Japanese distribution of music which largely gets played on their players anyway. Now they're selling life insurance.
+
+David: They do. In Japan, it has become a pretty big life insurer. They eventually add the Philippines, Taiwan, and China, and it's active in all of those places today. It becomes a decent-sized business. In recent years, as other Sony businesses have stumbled, the life insurance business is contributing 50% plus of their operating cash flow.
+
+Ben: I have a stat here. As it grew, I think in 2001, it was 5% of Sony's revenue. By 2014, its financial arm includes Sony Life, Sony Bank, a handful of other things, and a direct-to-consumer bank.
+
+David: But I believe Life is the big business.
+
+Ben: In 2014, 63% of Sony's total operating profit was Sony Financial Group.
+
+David: Amazing. It's this thing that we don't hear about. Actually, I wasn't able to learn too much about how the business works.
+
+Ben: No, because you go to the websites and they're all in Japanese. Sony Bank came out in 2001 as a web-only consumer bank in Japan, so it's the first neobank.
+
+David: Yeah, that's right. There's this alternate universe where Sony is Apple, Disney, and Berkshire Hathaway all in one. It's not even alternate, it happened.
+
+Ben: But of course, times got a little tougher between then and now. But first, while we're on the note of insurance, David, I know there's a fantastic insurance company that you want to tell us about.
+
+David: For our second sponsor of the episode and all of Season 10, we would like to thank Vouch, the insurance of tech whether you're bootstrapped, seed-stage, growth, public, or anywhere in between. With Vouch, you can go online, get next-day coverage in as little as 10 minutes, and grow your coverage as your company grows. Vouch is awesome.
+
+As you heard on the Taylor Swift and Peloton episodes, rather than just telling you the same thing every time this season with Vouch, they had the awesome idea that we should use this time to do a little insurance 101 and dive deeper into what insurance is and how it works.
+
+Today, we're going to cover what actually happens when something goes wrong and you need insurance to step in. The most frequent example of this in Vouch's coverage is employment claims. Say someone leaves your company and then a couple of months later, you receive a wrongful termination letter from an attorney that they've retained.
+
+There are basically two ways this could go. If you don't have insurance that covers this, you immediately start a massive fire drill. You try to understand what happened, you talk to all the parties involved, and you probably lawyer up yourself. No matter what ends up happening with this allegation, it is guaranteed to cost you money and frankly, more importantly as a start-up, time, emotional energy, and focus dealing with all this.
+
+If it ends up that your company did do something wrong or at least in the eyes of your lawyers they think a judge or a jury might think you did something wrong, you're probably looking at at least a six-figure settlement, if not a trial. That is definitely not something that you want. That is being distracted from what makes the beer taste better for your company. That's option one.
+
+Option two, you have specific insurance coverage from someone like Vouch. You contact Vouch, they step in, they work with you to resolve the situation, and they take a lot of this off your plate. They, of course, do this stuff much more often than you as any individual company or management team ever would. They have processes for these things.
+
+They can either recommend the right law firms to work with or work with folks that you already have. They can partner with you and help quarterback and resolve the whole matter, whether that means settling or litigating. Of course, because you're insured—this is what insurance is—they cover all the costs, settlements, judgments, et cetera up to the deductible on your limit.
+
+Basically, a quality insurer like Vouch can turn something from a gigantic, expensive time-, focus-, and energy-sucking problem into a no big deal kind of thing. As they like to say, "Insurance can help you learn some hard lessons the easy way."
+
+You can learn more at vouch.us/acquired. All Acquired listeners, if you use that link, you'll get an extra 5% off your coverages.
+
+Ben: Thanks, Vouch. All right, David, Sony Financial Services, good business for a long time, enduringly good even through some ups and downs. What are some ups and downs that are coming up for Sony?
+
+David: There's a big up and then there's probably a down to neutral in the long-term. The big up is the irony of ironies. In 1986, CBS gets a corporate raider who comes in and assumes a large stake in the company. One Larry Tisch buys a large stake in CBS. There's this cash cow in the JV with Sony, and the records business as a whole is a nice business.
+
+Tisch wants to offload it, sell it, and monetize it. He's talking to a whole bunch of private equity and the like about selling. The folks who are running CBS Records, Columbia Records are not too happy about this.
+
+They go to Sony and say, hey, Tisch wants to sell this thing. We think the bids are probably going to come in somewhere around $1.25 billion for the whole business. Would you be interested in actually buying all of CBS Records?
+
+Ben: To this date, they're still a Japanese distribution partner via this JV and they're saying, come by the whole freaking record label.
+
+David: Yeah. At this point in the '80s, there are two things going on. One, Sony is massively ascending. The CD is already really big at this point. Sony is a worldwide, large, global brand, so it's not unreasonable to think Sony could buy all of CBS Records. The other thing happening in the '80s is that Japan's currency has massively appreciated versus the dollar and it is much easier for Japanese companies to make acquisitions abroad than it would have been otherwise.
+
+Ben: Which is of course feeding many Americans' fears of Japan taking over all of American business. There's this incredible xenophobic—even through the '90s—very anti-Japanese business mentality among Americans that they're going to come by all of our staples. It's honestly a little chilling to go back and watch some of these interviews that look like they're in reasonably modern times. The vilification of the Japanese is very inhumane.
+
+David: Didn't you actually send me one that was a Donald Trump interview from this time where he's bashing Japan?
+
+Ben: I did. So much changes and yet so much stays the same.
+
+David: There's a bunch of back-and-forth drama with Tisch and others. Tisch postpones the sale for a while and comes back. Basically, Morita is like, we're good for any price. We absolutely want to own this asset. We know it's a great asset. It's great for us here in Japan. We want to be 100% owners of this JV so we can control the cash flow at corporate. We also think the overall record business is pretty good.
+
+They end up buying it for $2 billion. At that time, this is crazy. Headlines are all over the place. Sony buys CBS Records is news in and of itself for all the reasons you said. People also think the price is nuts, $2 billion for a record company.
+
+I wasn't actually able to find the full numbers, but based on what I read, I think it was only about 5X earnings that they paid for this. That says a lot about the business environment of the '80s when people thought that 5X earnings were a crazy price to pay.
+
+Ben: You and I were just texting the other day about a company that was 4X earnings and how excited we were to be doing a value investment in it.
+
+David: Right. Tech value investing. This ends up being a pretty good buy for Sony. As of recent years, Sony Music, the core of which is the CBS Records business, does over $2 billion in operating cash flow every single year and they've owned it for 30 years. It was a pretty good pickup.
+
+Ben: Sony has a bunch of business lines now, so this stat almost isn't going to sound as impressive as it should just because of the sheer breadth of stuff that they own, but the music segment, Sony Music, which comes from CBS Records did (I think) 11% or 12% of the revenue of the whole company.
+
+David: Yeah. This is a great deal. On the back of this, they are enticed to do another media content deal.
+
+Ben: Let me say, this is a great deal from a financial perspective. If you're Berkshire Hathaway and you're just going to come in and own something, great. This ends up being a great financial purchase. From a strategic perspective, big, open question mark. Are they able to effectively manage a growing electronics business, the life insurance company, and now a music label that's wholly-owned while they again cast their eye where you're alluding to in buying a movie studio?
+
+It starts to open this big question of not only focus but are there synergies here? Because I think Morita and Ohga are pretty convinced that to continue being a successful growing electronics company, they need to own the content that ends up on those devices or at least have some leverage and ability to design more custom experiences using wholly-owned content. I don't know if that ever actually became true.
+
+David: I think it certainly did not. Here's what's interesting in my perspective on this. Going back to the CBS Records deal, as you point out, that was a great financial deal and a great asset to own at the price that they paid for it.
+
+I think you could argue, to some extent, any of this synergies thing—I think in large part synergy became a bad word because of what companies like Sony did during this time. If any of that were valid, it would be valid in the music business given Sony's history and given their ownership of the CD format. It's almost definitely not true in the movie business.
+
+Of course, we're talking about Sony buying Columbia Pictures in 1989 for $3.2 billion, but that was the equity purchase price. Ultimately, when they assumed debt and a few other things, they spent about $6 billion to buy Columbia Pictures.
+
+Everybody at the time knew that that truly was way more than the company was worth. Supposedly, the real driving factor behind it was Betamax. Morita felt like that was such a defeat for the company and a point where they realized they had no leverage in this industry. They felt that if they owned a studio, they could at least be at the table against the Lew Wassermans and the like when they were negotiating formats, licensing fees, and all the strategic stuff. I think that was the real driving factor.
+
+Ben: It sounds good on paper, but what ended up happening is that there was a lot of infighting between the hardware teams and the movie team, so you had misaligned incentives. We've talked about this a lot in previous episodes, but it's the vertical versus horizontal strategy issue where the devices people wanted to make it so that they could play the widest amount of content possible.
+
+By the way, including pirated content. If you're trying to move electronic devices, you want to be super-duper Switzerland—buy this thing, have as much fun, and get as much value as you want out of it.
+
+Meanwhile, the music label folks and the film studio want to leverage the channel that they have with these devices to find a way to increase sales of music and movies. Unless you can figure out some way to align incentives, you have a huge problem there.
+
+David: Totally agree. One other thing that is probably a bigger issue for Sony that crops up out of this is hardware. I had to do a bunch of double takes reading Sony history stuff. They refer to hardware as the consumer devices that they were making, but then they talk a lot about software.
+
+It was weird to me reading this as I'm reading about their software. I'm like, that doesn't sound like software as I think about it. Internally at Sony at this time, they think of content as software, at least in what I was reading. Maybe this was different in Japanese, but they literally thought about the music business, the movie business, and eventually the gaming business as software that would go on their hardware.
+
+Ben: In some ways, gaming is definitely the most credible.
+
+David: The closest, yeah. To my mind, this is where the seeds are sown for Sony's demise in the coming decades after this. They just totally didn't get software. They didn't get computing. In their view, consumer devices were computing, computers were a separate thing, and consumer devices would take over people's lives. They didn't see that computers were going to take over people's lives.
+
+Ben: If you're watching the video version of this, we'll put up a stock chart. But if you're not, try and look at Sony's stock price over time and zoom all the way out. The company had an incredible runout through the '90s, got hit hard in the dot-com bubble crash or at least around that same time, and then it's basically been a turnaround story since then.
+
+It's fascinating that even though, from an enterprise value perspective, the company really has turned it around, these seeds that you're talking about, David, of being very good at hardware and still not really getting software still show up.
+
+These cameras that we're recording on, I'm pretty convinced that the Sony Alpha 7C will produce the most beautiful pictures of any camera in its class. You have to do a little bit of color stuff and whatnot, but from a raw image off-the-sensor perspective, amazing.
+
+David: These cameras are incredible.
+
+Ben: But they are not fun to shoot with. It's not like shooting with a Fuji. The menu system on this Sony when you need to interact with the software on the devices is like oh my God.
+
+David: It is truly torture.
+
+Ben: So frustrating. You really nailed it where it's like they can make these fantastic devices. They're the opposite of Apple. They don't know how to build fantastic software and services that differentiate their hardware, they just make great hardware.
+
+David: At this point in the late '80s and early '90s is where they set their strategy. These were the last years of the original triumvirate. Morita has a stroke in 1993 that left him pretty incapacitated. Ibuka dies in 1997. Ohga starts facing toward retirement in the late '90s.
+
+During this time, they set their strategy as hardware—meaning consumer devices—and content which they think of as software and the marrying of those two things. Look, that's not wrong. Look at the tech companies today. Content and tech is a big thing that they all do, but Sony's just missing that true software element.
+
+Ben: Yeah, I think that's right. It is interesting. One thing that they have smartly done is in recent years—and I know I'm flashing way forward—they have played the arms dealer strategy in the streaming wars. Fortunately, we have not seen Sony+. I think that they've basically done a first-look deal with Netflix. Anything that comes out from Sony Pictures, Netflix has the first opportunity for, but they also have signed a licensing deal with Disney for Disney+ and Hulu too.
+
+They're basically saying, look, we don't care who wins here, we know the contents are going to be valuable, and we're deciding our strategy is not to vertically integrate like the rest of you. You look over the morass of mess that is HBO Max producing movies with DCIP that is produced by WarnerMedia, that is owned by—whose WarnerMedia owned by at this point?
+
+David: AT&T?
+
+Ben: That sounds right.
+
+David: I can't keep them all straight.
+
+Ben: Yeah. Sony is not playing that game, which I think is interesting.
+
+David: Yup, and they also are where I thought you were going with this. They're playing the arms dealer role well with image sensors.
+
+Ben: Oh, yeah.
+
+David: But we have one more big story that we got to tell on history and facts before we move towards the present day here. I'm so excited about this. This, of course, is the PlayStation story.
+
+Ben: I kind of forgot that there's another big story somehow.
+
+David: That's like, Jesus, you're not done yet? I assumed that everybody knew the PlayStation story.
+
+Ben: No, you are blowing my mind with every text that you sent me. I had a PS2 and a PSP and I did not know these things. All right, how did the PlayStation come to be?
+
+David: In 1989, at the end of the first golden decade for Sony, there was a senior engineer working at the company named Ken Kutaragi. He's done great work on stuff like the early digital cameras, the Mavica, which was Sony's first digital camera, and on LCD displays, which are going to be seen as part of the next generation of televisions and consumer devices. Norio Ohga loves him. He thinks he's a rising star in the company.
+
+Ken's daughter, around this time, they get her a Family Com, which of course is the Japanese name for the Nintendo Entertainment System, the NES. She loves it. He just observes her playing with this. Everybody at the time thinks video games and Nintendo systems are toys.
+
+Ken sees this like, I think this could be really big. I think video games could be more than just toys for little kids. I watched how my daughter is so consumed with this thing, and I think it could be big and I think Sony should get involved in this industry. He's just an engineer at the company. He's not part of the management team, somehow and I don't know-how. There's not a lot of firsthand history from Ken about this.
+
+Somehow he connects with Nintendo, personally. He hears from Nintendo that they are working on the successor system to the NES, the Nintendo Entertainment System, the Super Nintendo Entertainment System, the SNES. Classic, of course.
+
+Ben: Round the corners, make some purple buttons.
+
+David: It's so great. Ken's really excited about this. He says, well, can I help? Can I work on it? Can Sony help? Nintendo says, yeah, actually, we're looking for a really great sound chip for the device and audio processor.
+
+Ben: Because all sounds and video games before were just [vocalizing].
+
+David: Beeps and boops.
+
+Ben: Yeah.
+
+David: Yeah. The Super Nintendo had super great audio, like really good stuff. Ken and Sony designed that chip that made it possible. Now, he doesn't tell anybody at Sony that he's working on it, and when it comes the time to actually do the agreement and the Super Nintendo is going to ship, management at Sony is pissed.
+
+Ken totally went around the protocol here and essentially did this component engineering work for Nintendo, this toy company, making the sound chip. Kutaragi nearly gets fired, but Ohga steps in and he's like, no, no, no, I like this guy, he's great. Who knows? Maybe this video games thing could become interesting. Let's see where it goes.
+
+The CEO steps in and allows the project to continue. They ship the chip, the Super Nintendo becomes a huge success. It sells just under 50 million units worldwide, which is enormous. For today, that is a very successful video game console. Great new relationship for Sony.
+
+Things go along. Now the Super Nintendo, as most folks listening will know, probably even younger folks, was a cartridge-based system, literal game cartridges that you stuck into the system. Cartridges had some advantages. They were fast read times, instant load times. You didn't have any of this stuff you would later have with the PlayStation with loading times. But the downside to cartridges is you can't fit much data on them.
+
+Game developers, especially developers who work with PCs and PC-based systems are lobbying Nintendo that they want to be able to develop the CD format for Nintendo as well. Nintendo's like, okay, well, we've got this relationship with Sony. Let's work on a system together.
+
+This is amazing. They called up Ken. Ken's like, great, we can build an add-on for the Super Nintendo of a Sony CD drive that developers can then make CD-based games for the Super Nintendo with our add-on. And also, why don't we also make a Sony-branded console that combines the two things—the add-on and the Super Nintendo. It's just one piece of hardware made by Sony that is a Super Nintendo, but also has the disc drive on it.
+
+Ben: We will put this up on the video for those of you on Spotify and YouTube. David sent me this thing and I was like, what is this photo? It is a device that looks like a Nintendo or Super Nintendo, kind of, but it says Sony PlayStation on it.
+
+David: The Sony PlayStation that plays Super Nintendo games. Oh, my gosh. This is all done. They made this freakin' product.
+
+Ben: Did they ship it?
+
+David: I don't believe they actually shipped it. I think they only had final prototypes made. The two companies are so excited about this. This is a big partnership. In 1991 at CES, this was before E3, so CES was still the major video game industry conference, Sony announced the partnership. They announced the Sony Nintendo PlayStation. They showed it off.
+
+The next day at the Nintendo keynote, Nintendo talks about how they've partnered with one of the original developers of the CD format, this great technology company with amazing history and legacy to bring CD gaming to Nintendo for the first time, this secret partnership that they've been working on that they have not announced to anybody until today, Philips.
+
+Ben: No way.
+
+David: Yes.
+
+Ben: What? And they just kept Sony in the dark the whole time?
+
+David: This is a huge thing in, I think, both gaming business history and Japanese business culture. This is the ultimate betrayal. Literally, Nintendo shoving a machete in the back of Sony and going with their original partner Philips. Totally secretive.
+
+Ben: So there was a CD add-on for the Super Nintendo that Philips made?
+
+David: No, this never actually comes to fruition as intended. There is no add-on for the Super Nintendo that Philips makes. What does happen is Philips makes their own game console called the CDI that comes out. Do you remember this?
+
+Ben: Whoa, no.
+
+David: This is super obscure.
+
+Ben: So Nintendo did this to Sony the day after their announcement only to not actually ship the thing with Philips?
+
+David: Yeah, they don't actually ship the thing. Nintendo does make some games for the CDI. They have like this partnership, but it never goes anywhere. Nintendo is, great as they are, notoriously making questionable business decisions like sticking with cartridges for the N64 and all sorts of stuff.
+
+Now in Nintendo's defense, the reason that they do this is that Sony was going to retain licensing rights to the Super Nintendo disc-based games. That's where all the money is in the console games industry. Notoriously, and as we'll get into, console manufacturers almost always sell the hardware at a loss and then they make all the money from the games.
+
+Ben: Licenses to the games.
+
+David: And you can make money from games either. For Nintendo, when they sell Mario, Legend of Zelda, and games that they own and develop...
+
+Ben: They keep 100% of the money.
+
+David: They get 100% of the money. But then if you're the system owner and the format owner, you get money as a license when third parties like EA, Activision, Bungie, or whoever sells games on your system. Sony was going to get that money or most of that money for the Nintendo disc stuff that's why Nintendo did this.
+
+Ben: I see. They were the license holder or the person who can issue licenses and make money on people using the game dev kit.
+
+David: I'm sure it was some split between Sony and Nintendo, but Sony was getting enough of that economics that Nintendo was unhappy.
+
+Ben: Maybe Nintendo looked at this and said, this is going to be bad, but if we actually proceed with this plan, it's such a bad deal for us anyway that there's really no reason to continue it.
+
+David: But the way they did it, oh my gosh. Nintendo, I think, thought that like, all right, well, Sony's not going to get into the games industry themselves. They can't do that. They have no first-party studios. Nintendo can go make a new console and put Mario Brothers on it, and Zelda, we make that stuff ourselves. Sony doesn't have any of that and they don't have any relationships with developers, et cetera.
+
+Sony has three options at this point as Nintendo expects. They can completely give up. They could go to Sega and try to partner with Sega, the Nintendo competitor at the time. They actually tried to do that. Sega in another boneheaded move is like, yeah, no, we're not that interested. They were just like a much smaller company at that point.
+
+The third option is that they've done all this engineering work on making a console and like, well, we could just try and do this ourselves. The Sony board and the management team, you can tell. I'm just loving this.
+
+Ben: Totally, you're grinning ear to ear. We finally get to dive into some video game history for the first time in a while.
+
+David: I know. It's been a little while. The board and the management team vote to just abandon the gaming projects. Basically, it's just like the Walkman. Everybody is against doing this, but Kutaragi is questing within Sony to make this happen. Ohga is like, all right, I see that you want to do this. This could be big. It's not going to work within Sony, the parent company. He transfers Kutaragi and the whole project to Sony Music, to CBS Records.
+
+Ben: Was it within electronics before?
+
+David: Yeah, it was within the core electronics business. He moves the whole division, essentially.
+
+Ben: Into music?
+
+David: Over into music just to kind of protect it so that politically, they could actually do this within the company.
+
+Ben: For listeners who do this and end up being worth their while, not only is the video game industry this year, a $180 billion industry compared to Hollywood, which is $50 billion, so yes and ended up being much, much more than a toy. If you actually look at Sony's predictions or projections for this year, for 2021, they think that they will do ¥2.9 trillion in their gaming segment out of ¥9.9 trillion total. They think that close to 30% of their revenue for all of Sony is going to come from gaming.
+
+David: I think unquestionably the most valuable part of Sony these days.
+
+Ben: And from a profits perspective, I'm pretty sure it's close to 50%, at least last quarter.
+
+David: This is the thing about the games business and the console business, as I was saying, you make all the money from selling games. The way the business works is you want to get the largest installed base possible on the consoles, on the hardware so that you can sell as many games as possible.
+
+This is where Nintendo and Sega, to a lesser degree, just made such a huge tactical error in letting Sony into the market. Sony had so much more financial resources than either of them. They could afford to take much larger losses on console sales to play for the longer-term game of getting as much software sales as possible.
+
+Ben: It's the ultimate venture capital bet. It's how much can we throw into a business that we think will have really high operating leverage. Where we can cover all the fixed costs, then pull up the road behind us, and then have amazing low marginal cost, high gross margin futures ahead of us where we elbowed out all the incumbents.
+
+David: The Super Nintendo, like I said, was this amazing success, hugely successful console. It sold 50 million units in its life worldwide. The original PlayStation sells over 100 million units. They win over all the major third-party developers to come over.
+
+Ben: How did they do that?
+
+David: There are a couple of ways. It takes them a while. The early pitch is a few things, (1) we're going to use CDs as the medium, so you can actually make the games that you want to instead of being limited to the cartridge format. (2) We've talked about this in a few other episodes in the past. Nintendo, they had this relationship with Silicon Graphics. You needed industrial workstations to develop games for Nintendo.
+
+You couldn't just use PCs. You had to have really invested in a big chunk of hardware to build Nintendo games. For the PlayStation, it was all based on PC, so you could develop PlayStation games on PC. That massively opened the market. Then also, they were just like, look, we need you, developers. Trip talked about this I think a bunch on our episode with him. Nintendo was terrible to third-party devs.
+
+Ben: We have Mario, we have Zelda. We're the biggest investment studio on the Nintendo platform, so we don't need you.
+
+David: Whereas Sony came to all these third-party developers and they were like, we need you. We're going to do everything we can to make you happy. Once the PlayStation started getting such a large install base, then it was just a no-brainer. It's like, oh, of course, I'm going to either go exclusive on PlayStation or at least multi-platform on them because otherwise, I'm leaving out a massive part of the market.
+
+See, a PlayStation, a huge success. I could go through all the games there. Everybody knows them, they're great.
+
+Ben: Crash Bandicoot.
+
+David: Final Fantasy VII, Resident Evil, Metal Gear Solid, Gran Turismo, blah, blah, blah, on and on and on. Amazing. By the end of the system life, it gets 8000 unique games compared to the N64, which came out later and only gets 400 unique games on the platform. That's the sense of scale here. All told, over 1 billion games are sold for the original PlayStation. This is a massive hit. And then the PlayStation 2 became the most successful console of all time with over 150 million units sold worldwide.
+
+Ben: It's the only game console I've ever bought.
+
+David: Wow, yeah. I'm surprised that you had one.
+
+Ben: It hit the concentric circle that was me. I wasn't allowed to have a game system before my Bar Mitzvah. That was my reward was that I got to get a PS2.
+
+David: The PS2 was the peak of Sony's strategy. That was that moment where it was actually working, the DVD player being bundled in as part of it.
+
+Ben: That was a selling point. DVD players were kind of expensive. We had one for the main TV, but for the little TV in the basement where I was going to plug in my PlayStation, my argument to my parents was, well, we don't need a DVD player now because this one comes with it.
+
+David: Smart.
+
+Ben: What was the next competitor? I guess the N60, no.
+
+David: Sega Dreamcast, I think.
+
+Ben: And we were never going to get a Dreamcast. I guess it would have been the original Xbox, but I'm not sure that would have been out yet.
+
+David: Yeah, that didn't come out for another year or two.
+
+Ben: When would this have been?
+
+David: It was the year 2000 when PS2 came out.
+
+Ben: Okay. I guess Xbox would have been the other one that I could have gotten. I think a sufficient number of my friends had a PlayStation where I was used to the controller. Then they all got PlayStation 2s and then it became a no-brainer for me to get a 2.
+
+David: Yup. And the other thing that the PS2 had was backward compatibility with the PS1, and that was a totally new concept in the industry. Day one, the PS2, you had 8000 games from the PS1 that you could play, and they did a little bit of upscaling on them. Unfortunately, the PS3, Sony got a little carried away.
+
+Ben: It took a while to get going, but ultimately did become a pretty successful system.
+
+David: It did, but they really, really screwed it up. After the PS2, Sony was in the video game industry. Nintendo was relegated to a niche player, basically. Microsoft came in with the Xbox, but the first Xbox, Sony, the PS2, just trounced it. The PS3 should have just run away with the market. This is where Sony's not-understanding computers really come in. The PS3, they'd made this whole thing. They had the Cell processor. It was the key to it. It had Blu-ray and the Cell processor.
+
+Ben: And the Blu-ray made the price tag kind of expensive.
+
+David: Both of them did. Blu-ray was expensive and they wanted to do the same thing they did with the PS2, use it as the Trojan horse to get Blu-ray into living rooms, win the format war with HD DVD. Then the Cell processor, they developed with, I think, Toshiba and IBM. It was like its own unique architecture and a total beast in a bad way.
+
+The idea was Sony was going to use the Cell processor across all of their products, it was going to become this convergence thing, and they were going to put it in TVs and refrigerators. Game developers hated this thing.
+
+It actually opened the door for Xbox 360 to bring a lot of developers in. Then over time, Sony did fix a lot of the issues with it and made it more developer-friendly. They barely won the generation war between the PS3 and the Xbox 360, but they should have just totally walked away with it.
+
+Ben: Microsoft has always struggled here because—every time somebody wants to use something as a Trojan horse, it's like when you're in the Division Series, you're looking at the ALCS, and you can't forget that you still have a game to play.
+
+David: Yes.
+
+Ben: Microsoft has always seen this as the path to the living room. Until very recently, when I think their strategy has shifted pretty meaningfully, the thinking was always, we're not going to go for the hardcore gamers, we're going to go for the Ben Gilbert when he's 13 years old idea of, well, we need a DVD player anyway and this thing can play games, so great, and then they can use that to have a computer in the living room.
+
+It seems like they always underestimate the fervent hardcore console gamer market, and then Sony runs away with that market, and Microsoft ends up not selling enough devices and not having a compelling enough story like the Xbox One, for example, of how this thing is really going to make your life that much better by being the computing thing in the living room.
+
+David: Yup, I think that is totally a fair characterization of Microsoft for many years. The irony is it's also Sony, right?
+
+Ben: Yeah.
+
+David: At least with the PS3, they completely messed it up. Sony loses $5 billion on the PS3 in the first three years. It's bad. Again, this is coming off of the best-selling console of all time. They hadn't won.
+
+Ben: They lose a bunch of money on this. They also, at the same time—and I know we're going to talk about Blu-ray but it's worth pulling it into this story—lost a ton of money because Blu-ray's lifespan was just not as long as they thought it was going to be. So they invested all this money into R&D the same way that in previous format wars they had and spinning up this big industry-wide group that's going to figure out all the licensing, we're going to sell licenses to the ability to decode the format and big investment in shifting the industry toward this new format, and then streaming took off. I don't think they ever really recouped their investment in Blu-ray.
+
+David: I don't think so either. I think it became a big albatross for them.
+
+Ben: The early 2000s, they're just getting beat up left and right.
+
+David: Yeah. In 2006, they lost the number one market share lead in televisions for the first time.
+
+Ben: They got so expensive. That's when Samsung started making pretty good TVs and came in. Today, it's totally different. You have the TCLs that look unbelievable for $300, $400, or whatever it is and they're gigantic.
+
+David: They basically pay you to take them.
+
+Ben: Yeah, it's crazy. But it used to be like, you'd go get the Sony Bravia or you'd go get a lesser TV, then Samsung whittled that away, and then that just felt like a rock after that.
+
+David: Yup, and that Sony Bravia, those things were like $5000.
+
+Ben: Yeah, it was crazy.
+
+David: In 2002. For eight straight years in the mid-2000s, the television division, which was once one of the main crown jewels of Sony, ended up losing money, like bleeding cash for eight years.
+
+Ben: Didn't they spin it out? It was so bad that they were like, we just got to get this off our books.
+
+David: Yeah, they ended up restructuring it and basically got out of the business in 2011. I think you can still buy Sony TVs, but there's a bunch of JVs.
+
+Ben: But it's owned by private equity or something?
+
+David: It's not a core part of the business anymore. The Blu-ray fight was totally a Pyrrhic victory. They did ultimately win against HD DVD, which was a Toshiba format, but not worth it.
+
+Ben: Yeah. By the way, just to put some numbers around how royalties work, this Blu-ray Disc Association earns about $7 for every Blu-ray player sold, then I think there's maybe $2 that they make from selling the software that goes on it to be able to read the Blu-rays, and then it's something like 7¢ per disc. That gets cut up a bunch of ways depending on who contributed R&D efforts originally. This consortium gets paid the $9 total per player plus 7¢ a disc. It takes a long, long time to be able to really recoup the costs.
+
+I guess the point of this is, even if Blu-ray went well, the point of this isn't to have a big new revenue stream for Sony. The point is, they don't have to pay someone else a big revenue stream who develops a format and now they have meaningful cogs as a part of selling each one.
+
+The other reason they do it is Sony's whole reason for being is to create brand new cool engineering things that make it so the public will have something new to buy and love, and by creating a new standard and enabling that brand new consumer experience in a higher resolution. It's sort of this opportunity to create a brand new generation of devices, but I don't think that they ever look at the format licensing as a meaningful revenue stream.
+
+David: Whether they did or didn't, they failed on both fronts with Blu-ray. There's no way that the Blu-ray consortium got their money back in terms of R&D and marketing efforts. Blu-ray players do not become a major consumer electronics staple.
+
+Ben: It is worth calling out, before we move on fully from PlayStation here, not being in gaming and paying a lot of attention, I don't think I understood Sony's dominance here relative to Microsoft. I always thought the two of them come out with devices and they both sell well. But if you look at the top game consoles ever sold, PlayStation has three of the top three. The PS2 is the best selling of all time, the PS4, than the original PlayStation.
+
+They also have four of the top six slots because the number six slot is the PS3, and the four and five slots are the Nintendo Wii and the Nintendo Switch. Microsoft, by console sold measurement, doesn't hold a candle to Sony's success in the console market.
+
+David: But that's so far.
+
+Ben: Right.
+
+David: It'll be interesting to see what happens going forward.
+
+Ben: Yup.
+
+David: I don't know if it took the pandemic or just this current generation of consoles with the series X and S Xboxes and the PS5, but I feel like these companies have finally woken up that like, guys, video games are the largest medium by revenue out there, and they shouldn't be strategy devices to achieve other aims. You should just focus on the business itself.
+
+Ben: Yeah. If you sum up all of music, all of Hollywood, and then multiply it by two, two and a half, then you get the video games market. It's ginormous. That wouldn't have been obvious even 10 years ago. It's now a sprint.
+
+The question is, who has the better strategy? And because we haven't explicitly said it, Sony's strategy is more of the same, make the best console, try like hell to get the supply chain in order to be able to actually fulfill them. It's going to be a reasonably expensive console, but that thing's going to be awesome.
+
+Microsoft's is, huh, well, I bet we can make this as a services revenue line. It's a very Tim Cook way of looking at it. If you look at what Microsoft's done with Game Pass, which is brilliant, they're making it sort of financially irresponsible to buy one of their devices outright.
+
+David: It's like a prime membership.
+
+Ben: Yes.
+
+David: It's financially irresponsible as a gamer not to subscribe to Game Pass.
+
+Ben: Right. It's like, would I go buy one of these multi-hundred dollar devices and then have to buy games for it, or would I rather pay, what is it per month?
+
+David: Game Pass itself is $15 a month, and then if you get a console with it, you add on a certain amount.
+
+Ben: Whatever it is, the way it hits you as a consumer is like, oh, complete no brainer to subscribe. When you look at it, Microsoft is now up to 18 million subscribers to Game Pass, which to your point, I think there's a cheap version at 10 and then a more expensive version at 15. Every year, as an annuity, it is generating $2–$3 billion on Game Pass. It's just such a completely different strategy than what Sony's doing.
+
+David: It reminds me of what you pointed out on the Taylor Swift episode about Spotify. There are gamers out there who will buy 10, 20 games a year. They'll go pay $60 for either a disc or download to buy the game.
+
+I am not one of those gamers. I think there are a lot of gamers out there like me that in an ordinary year, I would maybe buy a couple of games. But it's a no brainer for me to subscribe to Game Pass for $15 a month, in which case, I end up spending a lot more money on games, Microsoft makes more revenue off of me than if I were just buying games, and I feel happier because I get access to so much more than I would otherwise.
+
+Ben: Right. That's such a good point.
+
+David: Sony is interesting. As of yet, Sony has not released a subscription service for games.
+
+Ben: Oh, yeah. But isn't there something that's supposed to come out in late Q2 this year? Have you read about this?
+
+David: I've not read anything specifically, but most people assume that they're working on one. The interesting thing is that Sony is really doubling down on exclusivity on games. They have both in-house studios and then exclusive agreements with third parties of like, if you want to play God of War, the latest Dark Souls game, or something like that, you're going to have to do that on PlayStation.
+
+Ben: Oh, interesting.
+
+David: Which is different from Microsoft. People are worried about what the Activision will do about whether Microsoft would make Activision's games exclusive on Xbox. I don't think they will
+
+Ben: No way. The incentives are so genius for what Microsoft has set up with that because, yes, they want you to subscribe and they want to have the most number of subscribers at the lowest churn rate because it's the best business model ever. Let's say this Activision Blizzard thing goes through, do they want your revenue if you go play that game elsewhere? Totally. Their incentives are totally aligned to say, hey, we love it either way, whereas Sony is in a little bit of a tougher place because they have to sell you the game.
+
+David: Yup.
+
+Ben: It's Project Spartacus, by the way, is the rumored Game Pass alternative, which is kind of a mess because they already have the PlayStation Network. There are all these different names for the ways that you can—
+
+David: It's just classic Sony. The PlayStation is such an amazing story and entrepreneurial journey, and yet, it's got all of the Sony unfortunate corks all over it too.
+
+Ben: Yes. Well, what else haven't we discussed about Sony today? I think it's important to talk about the image sensor market.
+
+David: Yes. A couple of things, we've briefly mentioned the Vaio PC division. That never works. They ended up selling it in 2014. Then mobile and smartphones are just an unmitigated disaster for Sony.
+
+Ben: The whole Xperia thing was just a colossal failure. In fact, if you look back at the annual report, in 2018, they decided for their electronic products and solutions segment to break down into subsegments in this annual report. You can see that it's all mobile's fault.
+
+They could have shown, hey, we basically made zero profit in all of electronic products and solutions, which by the way, is the core Sony thing. Originally, Sony was an electronics products company. That's recently been like a breakeven business for them. They generate a lot of revenue from it, they generate basically zero operating income, a little bit recently. But in 2018 in particular, they were showing like, yeah, it would be profitable, but we lost a ton of money on our mobile communication segment.
+
+As I think more about why did Sony fail so badly at PCs, why did Sony fail so badly at mobile, why did they eventually lose TVs, I think Sony doesn't know how to make computers. As things become computers, they lose.
+
+David: I 100% agree with that.
+
+Ben: Phones became computers. Computers matured to be the modern PC that we know today. You got to worry about them against Microsoft if Microsoft's 20-year vision of the computer in your living room actually becomes a meaningful, useful computer in your living room that you spend a lot of time with. Smart TVs would kind of tell us that that is coming true.
+
+David: Yeah, but I think like we were just talking about with Game Pass, I think Microsoft has finally abandoned that computer in your living room vision for Xbox and realize like, no, no, this is a good business, we're just going to make this a good business.
+
+Ben: Yeah, that's true. That's very true.
+
+David: But I think you're spot on that Sony didn't see and wasn't equipped for a world where a computer became your phone and a computer became your content consumption, your TV. Your phone became your TV. I think instead, they thought the world was going to be that your living room device became your computer. That's what the PS2 and then really the PS3 was all about, and the Cell processor, et cetera. And that just never happened.
+
+One of the things that if you look at bear and bull cases on Sony out there, and we're going to do our own in a minute here, one thing that came out at CES last year, I think with Sony electric car, that's something that people are very scared about like, no, no, no. You are not going to do that as well as Tesla.
+
+Ben: It's a bad sign for the company that they announced. that. It's like when I saw Wonder Woman '84, I wasn't just like, oh, this is a terrible movie, I was like, the fact that this thing got out the door makes me seriously doubt every decision that the creative leadership at Warner's does. It's the same thing with Sony, where I'm like, yikes.
+
+David: Yeah, you should not be making a car right now.
+
+Ben: If this is a concept thing the way like, hey, let's have a fun thing to do at CES, that's one thing. But if you're really putting energy behind this, it's a very scary sign for the company.
+
+David: Which there hasn't been any indication since that they really are putting energy behind it. Let's talk about image sensing because that, I think, is a really good story.
+
+Ben: That's an amazing story. Continuing their arms dealer strategy, I think, as they realize how bad they were going to be at making cell phones, there was a thing that was happening that started 15, 20 years before, which was innovating on sensors, in particular, camera sensors. This was really beneficial for their PowerShot line. This was really beneficial for all of their pro end cameras.
+
+They kind of invented the mirrorless segment, the Sony Alpha—I hate this word but it's so applicable here—the prosumer concept of like, hey, people want a reasonably compact thing with interchangeable lenses that they can take out that isn't a big gigantic SLR. All of that work led them to have tons of breakthroughs, tons of patents on how to get the smallest most effective image sensor.
+
+They, I think, are now the sole supplier to the iPhone for the little sensor that enables all the cool computational photography stuff that's going on. They have something like 50% market share in the image sensor market broadly. They are able to put sensors in lots and lots of other phones too, it's not just the iPhone.
+
+When you think back to, I think the announcement was the iPhone 4, when cell phone cameras turned from camera phones to like, whoa, these are actually becoming pretty good cameras, that was Sony. There's a ton of engineering and software that's been done on top of that now, especially, as you know, people like Apple design their own silicon and have a really tight image processing pipeline.
+
+I think in 2009, Sony was the first to create this commercially viable back-illuminated CMOS sensor. That enabled things like low light photography. There are a lot of rumors around the next generation that'll be in the iPhone 14 and 15 that are totally unbelievable like gigantic step-function changes in the number of megapixels and the image you're able to get per size of pixel. There's supposedly really, really great stuff to come over the next couple of years purely on Sony's innovations in the sensors.
+
+David: That's such a good success story of making back to the original Sony like, here's something that people want that is like, this is going to work in the market and then you learn and grow from that.
+
+Ben: Yes, absolutely. Also, it's the same approach that they're taking with Sony Pictures of being this Switzerland arms dealer type thing where we're not going to be effective at marketing or creating and marketing our own phones and operating system and all that but damned if we're not going to make the absolute best sensors in the world for this thing. Similar to the way that they're thinking about, we're not going to compete with Netflix, but we'll sell them content.
+
+David: Sony's just like this collection of all these vignettes that stitch together into Sony. It's not quite a linear narrative in the same way as a lot of other companies we cover.
+
+Ben: That's actually a huge playbook theme of mine. It's actually a diversified business. Every business we cover is kind of one hit product that then they were able to really lean into, had a perfect product-market fit, and a gigantic market, and ruthless execution. This one's kind of like, there's a lot of stuff going on here and they're pretty good at managing it usually. Sometimes not, but there's definitely a lot of stuff.
+
+David: Definitely a lot of stuff. Okay, so all the stuff, where does this leave us?
+
+Ben: Yes. Today.
+
+David: What's the picture of Sony today?
+
+Ben: It's interesting. When you look at it from a revenue perspective, they're a gaming and electronics company. There's 30% of the revenue that's coming from games and 23% that's coming from electronics.
+
+David: Electronics are consumer electronic devices?
+
+Ben: Yeah, that includes cameras, the classic stuff Sony makes, and a Walkman. It's not totally clear what else is necessarily a part of that. But when you look over at their operating income, the game is also 30-ish percent, maybe a little bit more.
+
+Electronics have gotten a lot more profitable recently. They actually think that that is going to be a material part of the business. It's like 18% of profits this year are coming from electronics. That in the past was zero.
+
+David: Or negative, right?
+
+Ben: Or negative, yeah. For many, many years, that was basically nothing. There's been a pretty successful turnaround inside of electronics. The emergence story, which is really interesting is this imaging and sensors, which is now 11% of revenue and 14% of profits. Again, none of these numbers are that big, because it's super diversified, but that's a pretty big market. They have half of it. I think that's the big story.
+
+If you would ask me 2011 to 2014, then the answer would have been, everything's failing and the financial services are enormously profitable and are half of their profits. That's just like not really the case anymore.
+
+David: Maybe that's actually the best way to have business insurance. Besides Vouch, you should definitely do that to start. But the next thing you should do is start your own insurance company within the company to keep you afloat even when everything else fails.
+
+Ben: Yup, it's quite the hedge. Here's a way to explain how diversified Sony is. Out of all of their segments—games, music, pictures, electronics, imaging and sensors, and financial services—there are zero single-digit percent business lines in revenue or profit.
+
+David: What a collection of stuff.
+
+Ben: Yeah. I was like, I should compute these things so I'm not just looking at them in Yen. As I computed the percentages, I was like, it is very, very diversified. They're used to be all these great blog posts that you could do about how it's really an insurance business under the hood or how the core business that used to be consumer electronics totally died. That's just not the case anymore.
+
+An interesting thing to point out is within gaming, most of the sales are actually coming from digital software and add-ons, which is related to the PlayStation Network. Only 10-ish percent is selling hardware, and in the same way that Microsoft has reoriented their business model around, we got to keep selling people who like Xboxes digital stuff. Sony's realized that too, they just haven't changed their business model yet.
+
+Here's an interesting little aside that I want to take you down. This year, Sony will do about $86 billion in revenue. Remember that number, $86 billion. I'm writing it down here. Over the last 22 years, Sony has had an asset that has generated about $7.5 billion in revenue that we have not talked about in this episode yet. Do you know what that is?
+
+David: I don't.
+
+Ben: That $7.5 billion would be the box office gross receipts for the Spider-Man franchise.
+
+David: Yes.
+
+Ben: Not even including home video, not even including other licensing things around that, there is an insane story about why we're talking about Spider-Man and Sony when we've done so much wonderful discussion on this show on Marvel, the Marvel Cinematic Universe, and Disney. There's been close to 10 episodes dedicated to that world. While we were doing the Sony story, I thought we got to link it in somehow.
+
+David: Yes. All right, what's going on? Why does Sony have Spider-Man?
+
+Ben: First of all, there's a great Planet Money on this link in the show notes. You should go check that out if you want the real deep dive. Sony, as you know, has done a mix of good deals and bad deals corporately in their history. Marvel, before their most recent stint, mostly did bad deals, as we talked about in the Marvel episode. This may have been the worst one that they ever did.
+
+Starting around 2000, Sony approached Marvel and said, we'd like to pay you $10 million for the film rights to Spider-Man. The MCU wasn't a thing, Marvel Studios wasn't a thing. They didn't do the deal with Merrill Lynch to go take on a bunch of debt to start Marvel Studios, nothing of that. They looked at this and they're like, okay, free money, we'll get $10 million, that's great.
+
+I think they also were going to get 5% of the movie revenue. Marvel's like, we get a licensing fee, we get some ongoing revenue, and I think Sony said, we'll split the money that comes from Spider-Man toys that are sold specifically to the movie. They looked at that and they're like, that's probably all incremental, so great. let's do it.
+
+In some ways, that was a really boneheaded decision. In other ways, maybe they wouldn't have known to start Marvel Studios absent the gigantic success of the Tobey Maguire Spider-Man. David, $10 million and 5% of the revenue is what Marvel gets out of this. Here's the insane thing. This is the deal that they signed that somebody getting fired isn't enough for the criminality of the steal. Sony has the right to produce Spider-Man movies forever.
+
+David: Forever?
+
+Ben: Yes, in perpetuity, as long as they release one every five years and nine months
+
+David: We can guarantee that there is going to be one Spider-Man movie at least every five years and nine months forever.
+
+Ben: Yes, forever. This is why we got those weird Andrew Garfield movies right after the three Tobey Maguire ones where they told the same story again.
+
+David: Yeah. I never even bothered with those. It's like, why is this happening?
+
+Ben: Right. They had to produce and release them in order to retain the rights. You might say, okay, well, how does it work now? Because we've got a new Spider-Man who is the same in the Spider-Man movies and in the Marvel movies. Somehow he's back in the Marvel Cinematic Universe, so what happened there?
+
+Obviously, Marvel really wants to have Spider-Man included in the Avengers. They also decide that, well, can we make it so that the Spider-Man movies that are coming out are good and kind of tie in? Maybe it's the same actor. It really should be kind of cohesive. The people over at Marvel, they're artists. This isn't some we're producing a movie just to keep a deal alive.
+
+David: They're not like Sony Pictures.
+
+Ben: They cut a second kind of bad deal. This is really interesting to pay attention to where the leverage is. They are saying, we will make the movies. We will make the independent Spider-Man movies, mostly. It's going to be technically Sony's creative control, but we're basically doing the whole production. Let's keep the same deal where we only make 5%, but we're going to basically make the movies, and in return, you have to let us put that Spider-Man into the MCU.
+
+David: Wow.
+
+Ben: They cut that deal right before Captain America's Civil War, which is where they introduced Spider-Man. All these recent Spider-Mans, No Way Home, it's actually this weird joint ownership where Sony is making the money, but Marvel's making the movie, and they're just doing it in order to get to use Spider-Man in the MCU.
+
+On top of all of this, you might say, does this work? Because some of the Spider-Man movies, other ones are Marvel movies? If Spider-Man is the main character, it's a Sony Movie with the 95/5 split and it doesn't go on Disney+. Sony gets to license out the movie wherever they please. If Spider-Man is not the main character, it is a Marvel movie, then it's just all the same normal stuff that Marvel always owns.
+
+David: Wow. I'm so glad you researched that. That is so fun.
+
+Ben: It's wild. If you look at the performance of Spider-Man: No Way Home, the one that just came out that already grossed, worldwide, $1.7 billion in revenue—remember, Sony is keeping 95% of that. The costs are high. These movies cost hundreds of millions to make now. Sony Pictures itself only made $10.2 billion this year. That is a big marketing budget, but whatever their cut of the $1.7 billion grossing movie is, the bottom line of that is pretty impactful to this $10 billion total revenue line.
+
+David: So Marvel now has an incentive to make the cost of the movies as high as possible, right?
+
+Ben: It's a good question. I assume there are a lot more caveats in that deal. It is, I think, the first time in history that a big piece of IP like this—and they point this out on the Planet Money episode, there's a lot more drama to it, by the way, involving the Sony hack and executives who are at war with each other. But the long and the short of it is, I think, it's the first time that two studios that are rivals like this have, because these are two of the big five, shared a really important IP and actually created a successful product out of it.
+
+David: That is so cool. The movies have been incredibly successful, right?
+
+Ben: Totally and really good. That's the thing. Sony almost tried to do like an MCU-type thing with all the IP that they owned, but it was Spider-Man, Ghostbusters, and a bunch of very odd things that didn't belong together. Again, this is all in the Sony hack emails, but then they started bringing Spider-Man into PlayStation marketing in kind of a weird way. Do you remember the PlayStation 3 font that was printed on the outside was the same as the Spider-Man Tobey Maguire series?
+
+David: Now it makes sense why the Spider-Man games are PlayStation exclusives, I always wondered that. I was like, what? Why is this not on Xbox?
+
+Ben: Pretty crazy. There's even something more nutty for another $10 million. I think Sony could have licensed all the Marvel characters, but somebody was like, they're all kind of bad except Spider-Man. No one cares about any of the others, which was kind of true at the time. No one really cared about Iron Man. They invented the MCU out of second-tier characters. Sony was like, no, let's just go get Spider-Man.
+
+David: Oh my gosh. This is like A Confederacy of Dunces here like who is more stupid than the other?
+
+Ben: Totally, but it just goes to show you can't forecast these things. You don't know.
+
+David: You don't know.
+
+Ben: All right, let's do bear and bull and we'll do some Powers.
+
+David: Give me your bull case on Sony.
+
+Ben: All right, bull case. The console wars continue as they've been. No massive strategic or business model shift. Sony continues to execute really well. They actually get the supply chain on order so that I can get a PS5 if I want one. There's way more demand than supply right now. That's my bull case on gaming.
+
+Based on what I'm seeing that are rumors about one and two years out, I think they're going to continue to have unbelievable gains above anyone else in the mobile imaging space. I think that's going to only get more and more important. There's something interesting about music labels, which is that they have wholesale transfer pricing. If you like Spotify, you should really like record labels in terms of their attraction as an investment.
+
+At Sony Music, I think both revenue and operating profit is growing at 50% a year. If a lot more people start streaming, then all of the benefit of all those people starting to stream and pay Spotify and Apple Music accrues to Sony Music and UMG. It's a pretty predictable, defensible business. I think even after doing the Taylor Swift episode, it made me think the labels are an even better business than I thought.
+
+I was going into it thinking, Taylor Swift is showing us that artists are going to go direct. And I kind of came out of it saying, unless you're Taylor Swift, it seems like record labels are going to continue making a lot of money. I think the fact that they own that, that's growing, and seems to be run pretty well is impressive. I think their diversity is a play to their strength thing here.
+
+If you're going to play the conglomerate game, go play it well, and they're playing it. It really is a turnaround story. The stock price is near where it was with their all time high 20+ years ago. The turnaround of undoing all the damage in the late '90s and early 2000s is almost complete.
+
+David: The irony of it all is that the dot-com bust was when Sony went bust, but they were the opposite of a dot-com.
+
+Ben: Right, yeah. It's interesting that it was in the dot-com era but was a completely different set of mismanagement activities.
+
+David: Yup. Okay, that's the bull case. What's the bear case?
+
+Ben: My bear is that Microsoft's right in their strategy with Game Pass and gaming will move to the Netflix of video games style thing and that it's not about having the most beastly console and keeping the business model the same. Maybe the Xbox, they have finally segmented the market right where they can sell an expensive beastly console to the people that want that, sell a pretty good console to everyone else, and make a ton of money on $2–$3 billion a year right now on the subscription revenue. I think the bear case is that 30% of both revenue and profit right now come from gaming for Sony, and that's at risk.
+
+David: Is there any risk to the image sensing business that Apple, in particular, in-houses this at some point?
+
+Ben: Maybe, but I think the super-specialized CMOS sensing stuff is pretty different than all the in-house silicon stuff Apple is doing. I think Apple beats Sony up on price pretty hard as they do with all their component suppliers. I think unless Apple feels like there's a 20-year bet to make, they're happy to keep continuing letting it play out as is.
+
+David: Sourcing.
+
+Ben: Yeah, and maybe they do. Maybe all the work they're doing in the image processing pipeline, they're like, nope, we need to own the sensor too, but I haven't seen anything to that effect so far.
+
+David: Cool.
+
+Ben: The other bear case is Sony is fully out of the business that they used to be in, where you go buy a bunch of Sony gadgets and put them around your house. Now they're like, we sell you a gaming system and then we sell specialized stuff or we're an OEM. The OEM is either on the content side or on the components side selling the image sensors to Apple and others. It is a little sad to watch the original Sony be done other than maybe their camera line is probably the closest thing to what they were, originally.
+
+David: It's just kind of hard to get super excited about anything in the future for Sony right now. Obviously, the PlayStation has been this incredible success. I don't think Microsoft is going to completely take the market from them now or possibly ever. The imaging sensing business is also incredibly impressive but they're a component now. What would Ibuka and Morita be thinking about the current state of the company?
+
+Ben: I bet Ibuka would be excited about the PSVR 2. I think right now, this current generation, the Oculus Quest 2 is much newer than the PSVR, but I think it's massively outselling it. If you were going to get excited about something, I think it would be, there I say, a Metaverse bet on them producing a good VR system. I suspect what that means is that he would have to believe the long-term future of VR is actually in gaming, not in the lifestyle, which, if Apple comes out with something, it's going to be for all over the place, at least all over your house.
+
+David: That's a good point. With sentiment about Meta and Oculus, yeah, there's a real opportunity for Sony there.
+
+Ben: Yeah. That said, I think Meta is investing just gobs and gobs of money, talent, and everything into the next five versions of the Meta Quest and everything that's going to come after that. At this point, I'm not sure there's a balance sheet deep enough to challenge all the investment they're putting in, other than Apple's.
+
+David: It'll be interesting to watch that play out. I'm sure we'll talk about that on the show a lot in years to come. The Facebook Portal by all accounts is a great device and using it as a webcam is awesome, but I just have a hard time about having a Facebook device with a camera in my house all the time.
+
+Ben: I don't think that's going to be an issue for a lot of people. I think they're going to do a good enough job distancing the Meta Quest 5 or whatever is going to be the real consumer hit from any ickiness that people feel about what was once called Facebook.
+
+David: Yeah.
+
+Ben: Okay, let's talk about power. This one's hard to do because it's a conglomerate. The question is, do we talk about each business having its own power or lack thereof? Or maybe let's first ask, does the conglomerate itself have an overarching power where it actually effectively leverages the ownership of multiple businesses to help those businesses versus competitors?
+
+David: I would say, today, the answer is no. I do think in the past there was a brand power. that went across much of the conglomerate, maybe not all of it.
+
+Ben: For sure. This is great. I actually thought you were going to take it there, so I pulled this quote. In the New York Times in 1983, there was an article that said, "The technological leader, Sony was able to command a premium for its wares in the marketplace and refrain from price-cutting, allowing it to keep its profit margins up." The irony was that this piece was written right around the time that Betamax was not catching on, so they were starting to cut prices showing for the first time that they didn't have the brand cache.
+
+Actually, the analyst who's writing that article says, it's over for Sony, the company's best days are behind it. The stock would go up a lot after 1983, but the spirit of what they were saying was right because I think the very thing that was alluring to Steve Jobs—that this company makes stuff of the highest quality always has the superior brand and therefore can command higher prices—was kind of going away.
+
+David: Yup.
+
+Ben: David, for the rest of the Seven Powers, rather than going through each other's individual businesses, is there one or two powers that apply to one or two businesses that jumped out to you, in particular, today where you're like, oh my gosh, this segment totally has this power?
+
+David: Well, it's interesting you say, today, I do think the PlayStation story is an incredible story of network economies in the developers and consumers of a two-sided network economy where the more install base PlayStation got, the more attractive the platform came to developers. The more developers on the platform making better games, the more attractive it was to consumers.
+
+Going through those numbers and doing the research, I anecdotally felt this as a consumer at the time, but 8000 games on the PlayStation versus 400 on the N64? I had both systems and I love them both, but that's just such a difference in the amount of quality content available to consumers. Likewise, for developers, Sony had such an uphill battle to start in winning developers over to the platform. But then even before the end of the lifecycle of the first PlayStation, the gravity was so much with that platform that Square Soft, Capcom, and Konami had to come to the PlayStation.
+
+Ben: I think that's a good point. It's funny because the question is, why are each of these businesses able to have outsized profits versus competitors? If I look at going down the list today, music versus competitors, I don't think so. I think there's an oligopoly in that business and that's why they're able to be really profitable.
+
+Movies, they're one of the big five studios. I should look at the numbers at the other studios to confirm this, but I don't think they're more profitable than the other ones or they have a real edge the way that Disney does with all their in-house IP.
+
+David: Except for the Spider-Man deal. That's a cornered resource.
+
+Ben: I think they're largely competing in the marketplace with pictures. With electronics, products, and solutions, I kind of feel the same way. I know I'm over-indexing on cameras because it's what I know and there's a lot of other stuff in here, headphones, and lots of stuff I'm missing. I feel like they have a superior product a lot of the time, but they're really not able to communicate that in a way that enables them to price meaningfully higher.
+
+I think if the Sony camera was twice as expensive as a comparably good Canon, I definitely would get the Canon. I don't think there's any reason why they're able to be extra profitable there and they historically haven't been. Financial services are just generally good businesses, so no surprise that that's a profitable one for them.
+
+Then it just comes down to gaming, which is close to a third of the company in revenue and profit. I don't know what their power is today. I think I worry that there really isn't one. There are not a lot of players. It's a big investment to do business with them as a game developer. It's expensive as a consumer. It has meaningful switching costs as a consumer to switch from one ecosystem to the other and buy a new box and learn all the new controllers.
+
+David: It's interesting though, with Game Pass and if the industry moves much more to subscription dynamics, I do think a lot of this power goes away. Switching costs become a lot lower. Network economies become a lot less powerful.
+
+Ben: That doesn't leave us with a super rosy outlook for the company other than it seems well-run right now. I would say it has operational efficiency. They're effective at identifying markets and going into them, but I don't think they have a particular power that we're excited about in the way where we analyze some other companies and think, oh, this is a 50-year defensible organization.
+
+David: No, the only one that jumps out from the story and the history is the previous incredible power of the brand.
+
+Ben: Yup. Before we move toward grading here, and I think instead of value creation, value capture today, I want to pose one question to you. This is something that I found myself thinking about a lot in reading Made In Japan and of course, it's why it's titled Made In Japan, which is, let's pick three points in time, the day that Sony started, the heyday of the early 90s, and today, what does Made In Japan mean?
+
+Famously, Akio Morita's goal with Sony was to transform Made In Japan on a product from, oh, this is of low quality to, oh, this is of high quality. I'll tell you mine and you can pile on to this. My view of it is it absolutely worked in the '90s. I think when I was buying a lot of Japanese electronics in the '90s, to me, it's like buying a Japanese car today. I own a Honda because I'm certain that it's very high quality and durable. I felt that way about Sony a lot, so it's a mission accomplished for Morita and friends.
+
+Today, I don't think that it's any lower quality, but the totally dynamic nature of global supply chains and brands has changed things where I buy so much from American companies that work with design partners overseas as we've learned from Jeremy at Italic in the LP show, where the manufacturers are deeply involved in the design that it feels like I buy more from American companies that are manufactured elsewhere and I don't feel like I buy as many things from Japanese companies.
+
+I don't think that I would say my brand perception of something that is made in Japan is any lower than I would have thought in Sony's heyday, but it hasn't continued its ascendancy.
+
+David: It's interesting. That's what I was struggling with when you asked the question, how do I feel today? I 100% agree when Sony was started, Made in Japan for most people in the West, probably meant low quality, signified low quality, and then by Sony's heyday, it signified high quality.
+
+The interesting thing about today, also on the same page with everything you said, it's also interesting that that same playbook has been run in so many places now so successfully. The same thing in Korea. After it came right on the heels of the journey of Made In Japan from low quality to high quality, the same thing in Korea, and then the same thing in China in an even bigger way.
+
+Just as a consumer having had that played out a bunch of times now, I'm just much less like, oh, okay, if something is low quality or high quality now, that means nothing to me. It means very little to me about whether it might be that way in the future. I just assume that any location that's coming up the learning curve of product production is going to get to a high quality place.
+
+Ben: Yeah, I think that's right. I also just expect that everything is made outside of the United States. If I'm buying from any brand anywhere, I expect that it's actually made in a lower labor cost location. I guess they didn't even really think about anything where it's made nearly to the extent that people were when companies were headquartered and in the same place that they were designing, manufacturing, and marketing products. That era is kind of past us.
+
+David: It's kind of past. Yeah, exactly.
+
+Ben: A lot of people don't want it to be when they're marketing Made in America goods because they want that to be a big selling point and I think there's a lot of people who do really care about that. But this notion of where the sticker on the bottom says it was made, consumers just don't pay attention the way that they did, especially when we were recently at war with a lot of those countries.
+
+David: Exactly what you said. It used to mean a lot where something was made. I think it just means a lot less now.
+
+Ben: That's a good point. Actually, yeah. This answer is a two-axis thing, where it went from meaning something was low quality to high quality, and then the magnitude of how much it mattered just went away.
+
+Now for the final sponsor of our episode, we want to tell you about our good friends at SoftBank, the SoftBank Latin America Fund. As you know from previous episodes this season, SoftBank created this fund with a very simple thesis. The region is absolutely overflowing with innovative founders and great opportunities, but as we all know, has been historically short on capital.
+
+As Shu and Paulo have told you in previous episodes, one of the big lessons they learned while investing $8 billion dollars in over 70 countries in LatAm is much more about inclusion than it is just disruption because the vast majority of the population is underserved in almost every single category from banking, to transportation, to ecommerce, and similarly, businesses wildly underserved by modern software solutions.
+
+There is just so much to be built for businesses and people all across LatAm. A phenomenal example is portfolio company VTEX, a collaborative commerce platform. VTEX is crazy. They saw more than 98% growth during the pandemic as companies turned to it for digital commerce, their native marketplace, and order management capabilities. Today, VTEX powers over 3000 online storefronts for global brands like Walmart, Coca-Cola, Nestle, and wait for it. David, Sony.
+
+David: No. Come on, you made that up.
+
+Ben: I did not. That is what they sent me and they didn't even know Sony was going to be this episode.
+
+David: They had no idea.
+
+Ben: It says a lot.
+
+David: That's awesome. I love that.
+
+Ben: VTEX was also recently named the world's fastest-growing ecommerce platform, so just wildly impressive growth before and during the pandemic. This is just one example of how SoftBank is partnering with founders and bringing the capital and expertise that they need to help build the future in Latin America.
+
+Now, if you're considering what's next in your career, whether you're an operator, you want to be a founder, you're in Latin America, maybe you want to invest in Latin America, you would be wise to get in touch with VTEX, with SoftBank Latin America Fund, with any of the folks we've talked about on any of these episodes. You can go to latinamericafund.com or click the link in the show notes. Our thanks to SoftBank Latin America.
+
+David: It's so great what they're doing there. What a massive opportunity. They really were the first to come in in a big way and deploy $8 billion of capital into this opportunity. It's such a great story.
+
+Ben: Okay, so grading. You can choose to have another way to grade this one, but I wanted to draw a fun comparison. In 2004, there were two consumer electronics companies that both had a market cap of about $30 billion—this is after that big Sony crash. They both had pretty thin net income margins of around 2% or 3%, so neither is really making a lot of money. Sony is obviously one of them.
+
+Sony grew to an impressive market cap of $150 billion. It's about where they sit today. They grew that [...] net income margin to 13% today, so they're generating income. Unfortunately, for our comparison, the company that started right at that same starting line as them is Apple.
+
+David: I figured.
+
+Ben: Apple is now worth $2.8 trillion or about 19 times what Sony is worth and they generate twice the net income margin percentage at nearly 26%. To add insult to injury, Apple is also growing their revenue twice as fast, even with the crazy high numbers that they have today at 30% per year versus Sony's 15% per year. Sony's strategy coming out of that terrible era for them was good. Apple's was the greatest in history.
+
+David: Yes. Thank you, as always, to Berkshire Hathaway, for keeping me invested in Apple.
+
+Ben: It's like, okay, well, you both kind of had the same opportunity, and Sony, you get an F. To the extent that this was the opportunity, it was for both of them. They were both starting to make MP3 players, they both had a line of computers.
+
+Sony didn't have an operating system, so they looked in many ways sort of like Apple in the '90s in their diversity of products, cameras, headphones, PDAs, and all that, but without good software. Apple, by shifting down to just a few product lines and focusing on the integration of hardware, software, and services, not to mention pseudo monopolistic distribution channels like the App Store, have just built the greatest business in history. Sony continued as a reasonably undifferentiated manufacturer of electronics and now other stuff.
+
+David: It is amazing. Put the Mac business aside for a second, all of Apple's businesses, MP3 players with the iPod, all their great successes, the iPhone, the iPad, the watch...
+
+Ben: I'm certain Sony, at one point, made a digital watch. I may have even had one.
+
+David: I don't know for sure. I'm sure they did or they certainly could have.
+
+Ben: A tablet PC, a PC, this is all the stuff they do.
+
+David: These were all markets for Sony to lose.
+
+Ben: Headphones.
+
+David: And they lost every single one of them. Headphones. Right, headphones.
+
+Ben: How big of a business is AirPods?
+
+David: Enormous. I haven't done the math, but there are all those articles about how the AirPods business alone is like a Fortune 50 company. It's probably as big as Sony.
+
+Ben: That's a great point. Maybe that's a follow-up tweet for us at some point in the future. Listeners, if you want to help with the math, AirPods versus Sony, what's the bigger business?
+
+Why is it that these things happen? We've talked about a lot of reasons. A big one is, Apple, every time they released a product figured out better reasons for you to get product n plus one if you had product n. They all work together really well. I have a lot of grapes. I wish my AirPods switched between my computer and my phone more cleanly, but I have lost stuff like that.
+
+At the end of the day, there exists our true ecosystem. Getting iMessage on my computer, on my phone—amazing, game-changing. I don't think I've ever owned a Sony product that worked with another Sony product in a meaningful way at all.
+
+David: They, for a long time, wanted you to think that they did. That was part of the brand halo, I think. I certainly felt that way when I was younger. When I was a kid, I know my family felt that way that having everything Sony, it meant you're getting the best. But also having it all together, I was like, oh, it's all going to work together. But at the end of the day, you were just wiring up boxes with coaxial cables between them. There was no computing magic. There was no software magic there.
+
+Ben: In some ways, this recent era, and I think we should grade the other eras of Sony too, but this recent era where they grew their market cap from $30 billion to $150 million, it's kind of a bummer to call that an F. But given the opportunity that was in front of them, we have the counterfactual with Apple of what the other opportunity looks like, from a company that was modeled after Sony, it's a pure F. There's just no way you're net $2.8 trillion less of value.
+
+David: I guess an F would be like Nokia or something like that.
+
+Ben: Yeah, that's right. I guess that was positive. It didn't go to business, so sure.
+
+David: Maybe it's a D.They're still alive, right?
+
+Ben: Yeah. Oh, they only 5X'd their really big business. It's probably harsh to call it an F.
+
+David: I'll say F is extreme. We don't do enough C's and D's.
+
+Ben: I'll go D. How do you think about other eras?
+
+David: I'm hard-pressed to think of anything except maybe an A+ for the initial era through the heyday. Coming out of World War II with every card in the deck stacked against the company and the country to then build one of the most respected brands for quality around the whole world, and a true innovation for decades. Ibuka's founding prospectus to create a place for engineers to work in the joy of their pursuit of technology and benefit to society, that I think was probably Sony for decades.
+
+Ben: Yup.
+
+David: It's an incredible story.
+
+Ben: It's hard not to call it an A+ coming out of World War II in Japan, the whole run all the way up to the mid-90s. Just astonishing execution.
+
+David: This may have been a timing coincidence, but really, the run was over when Ohga finally stepped aside. He was the last link to the original days, the original founders.
+
+Ben: It's weird because it's very un-Japanese, but it is not a multi-generational company.
+
+David: Yeah, it was unlikely to be a 15 generation, 400-year dynasty.
+
+Ben: Maybe it will, but it just won't be meaningful in those latter. Really, after the first generation of founders, it's a company in the world. Frankly, it's the second-largest company by market cap in Japan, so it's big. It's an important company in the world. They're one of the three majors.
+
+Everything I said at the top of the show, their dominance across, or at least top three in many important categories, is still true. And yet, I don't think anyone's really looking at them and saying, they're the innovators of tomorrow. Somehow both of those can be true at once.
+
+David: Yeah. I feel strange coming to the end of this episode.
+
+Ben: We could just make it never end.
+
+David: All right. That's an Acquired theme. But it's not often on this show where we get to the end of a story and we're like, that's mediocre at best in terms of where we are right now.
+
+Ben: Yeah. We just don't tell the stories very often where the brightest days were behind them.
+
+David: Yeah. Well, who knows? Maybe folks at Sony will listen to this. There's plenty of other criticism in the marketplace on them too.
+
+Ben: Emotionally, I do feel like their best days are behind them. Rationally, they'll probably make more money in the last 10 than in any other 10 before it. But the way that we're trained to analyze these companies is, are you going to continue growing at 300% a year? Apple only grows at 30% a year, only 30%. Microsoft's only accelerating in their 45th or 50th year of business, whatever this is.
+
+David: Right, and Amazon, any of these companies.
+
+Ben: But we do have faith that those companies are going to come out with the next innovative platforms and we're excited about those. The way that we're talking about the Apple headset, we are not talking about the Sony headset that way.
+
+David: Yup.
+
+Ben: All right, we've beat the horse. Should we do some quick carve-outs?
+
+David: Yes, let's do carve-outs.
+
+Ben: All right, I read an awesome, awesome article called How All This Happened by Morgan Housel. I cannot recommend it enough. It is a fascinating look. It's another story that starts in World War II and comes to today. It's basically a look at the plight of the economics that consumers experience in America.
+
+It talks about everything from housing booms, to the people's debt load over time, to the rise in people buying stuff like hardcore consumerism and the national tenor of people's feelings toward all these things throughout different decades. It winds these wonderful stories explaining how we got to where we are today as a society economically.
+
+David: That sounds right up the Acquired family's alley.
+
+Ben: Yes, and it's shorter than you think. It's a long piece, but shorter than you think based on the way I just described it.
+
+David: That's so great.
+
+Ben: Morgan's just such a stellar, stellar writer. You can't go wrong reading any of his stuff.
+
+David: All right, I have a very apt carve out for this episode. I'm very excited about it. I've been waiting a long, long time. You know what it's going to be, don't you?
+
+Ben: I don't. It feels gaming-related.
+
+David: No. Well, maybe, tangentially. Finally, I took delivery of the Model 3 that I ordered months ago. It's awesome. It's so great. It's just like, ah. We test drove the Polestar, Volvo's electric Model 3 competitor, and we looked at a few other things. At the end of the day, gosh, it's just so good.
+
+I feel like the Tesla brand, the experience, and all of that is just like Sony back in the '90s. We haven't noticed any panel gaps or anything on our Model 3. It seems to be all fine, but the experience is so amazingly integrated.
+
+From the buying process, to the delivery process, to picking it up, I got a text on my phone with a notification to go in the Tesla app, finish up my paperwork, and then for whatever reason in San Francisco, they're not doing driveway deliveries. I went to the dealership in Marin and they're like, your car is in parking stall E. Go to it, look around, see if it looks right to you, and then click accept in the app. Then I just hit accept, I get in.
+
+The car is basically a computer on wheels, which I know is a trite, everybody says that, but experiencing it, I'm like, holy shit, it really is that. Then I just drive off. The app is amazing. You get the live sentry cam view. I can pull up right now live cameras on the car. In the app, I can do everything from the app remotely in the car. It's pretty cool.
+
+Ben: I'm delighted you're delighted. You hear these things, but it's nice to hear it from someone who is actually going, you're glowing right now. All right, listeners, I think that about does it. If you're like, man, I wish more people would talk about this topic with me, I have a feeling at acquired.fm/slack there will be plenty of people talking about this. So come join us and talk about the news of the day. We'll talk about acquisitions like Microsoft buying Activision Blizzard and Sony buying Bungie.
+
+We also have our Limited Partner show and our latest episode is with repeat guests from NZS Capital talking about what on earth is going on in the markets right now and their view. If you are a paying LP, you have access to those episodes two weeks before they hit the public feed, which in market choppiness, this is helpful to the extent where you're learning things that you think, of course, aren't investment advice, but may help the way that you think.
+
+Also, if you join the LP program, you'll get access to our LP-only Zoom calls. If you want to access the public version of that feed or become an acquired limited partner, both of those are linked in the show notes.
+
+Lastly, we've got a great job board. If you're looking for what's next, David and I personally have curated some jobs at acquired.fm/jobs with some friends of the show.
+
+If you like this, share it with a friend. We love one-on-one recommendations. Pick someone that you work with or a close friend. If you would personally endorse it and say they should check it out, please do that. With that, our thanks to Vanta, Vouch, and the SoftBank Latin America Fund. Listeners, we will see you next time.
+
+David: We'll see you next time.

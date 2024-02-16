@@ -1,0 +1,479 @@
+David: Acquired LPs, we are here today with a very, very, very special guest, Roneil Rumburg, the co-founder and CEO of Audius. We’re super excited to have this conversation because until recently, for the past (I don’t know) 6–12 months plus—we’ll hear the whole story—every time we talk about Solana or crypto projects in general, there was one canonical example of the real world, non-DeFi use case for crypto, and it was Audius.
+
+Now, there are many more but you guys were the first. We’re so excited to dive in with you. Welcome, Roneil. Awesome to have you here.
+
+Roneil: Thank you so much for having me in. I’m stoked to be here, too. This is going to be a really fun chat.
+
+David: Oh, this is going to be so fun. Probably most people listening will at least have heard of Audius, and a lot (I think) will know what you are and hopefully, many will even have used it as millions of people have. Maybe to start, can you just give us the overview? What is Audius?
+
+Roneil: At the highest level, Audius is a digital streaming service that connects fans directly with artists and exclusive new music. We really see that direct piece of that explanation being our key differentiator between Audius and a lot of the music listening and distribution services that you might know today. 
+
+The way that Audius achieves that is by being fully decentralized. There’s a network of node operators that are actually hosting all the content, hosting all the metadata, all this other stuff on the network—basically running the network—and artists and fans have come together to run this as a community good, effectively. It’s been a crazy ride since we got going, but it feels like things are only just beginning now.
+
+Ben: When did you start the company?
+
+Roneil: The project got started in early 2018, so coming up on about four years now. It actually took nearly two years to get the first version of the product out publicly, so that launched in late 2019.
+
+David: Early 2018, the idea of building a consumer application, let alone a music streaming application, decentralized on a blockchain—you guys use a combination of Ethereum and Solana; you used both—nobody was thinking this.
+
+Ben: You were taking crazy pills. Why did you believe firmly enough in sort of certainly Ethereum winter, that this was an interesting thing to pursue?
+
+Roneil: The idea for Audius actually first came for my co-founder, Forrest, and I in 2015 or so. The idea really was a community-owned and community-operated version of SoundCloud. It was very directly inspired from seeing (I think) some of SoundCloud’s missteps and issues around that time. We really felt that if there were a way for users to be in control of the decisions made around how the platform works, how discovery works, how curation works, how all these things work, a product can have staying power around user-generated audio that no one ever seem to get previously, going all the way back to MySpace was really the first place for user-generated audio.
+
+That was the initial genesis of the idea. I was working at Kleiner Perkins at the time. Me and a couple of others started this little seed practice.
+
+David: Edge, is that what it was called?
+
+Roneil: Yes, KPCB Edge.
+
+David: Oh, man. I remember that happening.
+
+Roneil: Yeah, that was me and a couple of good friends from my former school, Anjney and Ruby. Anjney was the one that led up Edge and organized the effort internally. He and I were good friends in school and he knew I was very into distributed systems and decentralized tech stuff. He was like, hey, why don’t you come help us look at this area, hang out, and have a good time? I was like, great, yeah.
+
+Anyway, with respect to Audius, we concluded at that time the tech didn’t exist to do what we wanted to do. We basically came up with the very, very convoluted design for Audius that would work with Bitcoin. Bitcoin has this OP_RETURN field in a transaction that you can write arbitrary data into.
+
+David: This would have been in those days (or maybe slightly after) when people were trying to create Bitcoin 2.0. As Ethereum was getting started and there was the Colored Coin guys, all the projects in Israel that were like, oh we can build on top of the Bitcoin blockchain and create these other fields.
+
+Roneil: Yeah. We didn’t make it very far with that. We quickly realized this was not going to work. And I’m glad that we did because, in retrospect, it definitely wouldn’t have at that time.
+
+I spent a few more years at Kleiner. My co-founder (Forrest) ended up starting a company that kind of worked on data center asset tracking management problems. They would track usage of licenses across—
+
+David: Natural transition from that to the music streaming industry.
+
+Ben: I could see some similar problems to solve there.
+
+Roneil: We all give them a lot of [...] for that. It’s pretty funny. He was so scarred by enterprise software sales. That was heavy on-prem software enterprise sales, not like SaaS. You just like, never, never again. Obviously, what we did with Audius couldn’t have been more the polar opposite in terms of that.
+
+He sold that company in mid-2017 to a company called Avi Networks that later got bought by VMware. I decided to leave Kleiner around that time because I wanted to get back to building stuff. It was a little bit tough at a firm like that to spend a lot of time on what I thought were the most interesting things in crypto, which were these tokeny things. Now, things are a lot easier in terms of how venture firms can get exposure to that asset class. Back then, it was really not clear from a legal perspective, from a limited partner agreement perspective how you could engage with that asset class.
+
+David: It was basically Union Square Ventures that was dipping their toe in, and all other VCs were [...].
+
+Roneil: I think A16Z was the only other firm spending a ton of time in the space from the traditional guard of firms. There were a lot of new folks, of course, like Blockchain Capital, Quinterra, and others. They were kind of the crypto-native folks spending time there.
+
+Anyway, to close out the thought, we revisited this idea in late 2017. Obviously, Ethereum and IPFS had both launched by that time, and we thought were the two enablers that can help us do this and said, hey, let’s try to make a prototype around this and see if we can make something work. We did, and then some folks got excited about helping to lead a seed in the project. That happened and everything went from there.
+
+Ben: Who were your early believers that you’re willing to shout out here?
+
+Roneil: It was Niko Bonatsos at General Catalyst, and Adam Goldberg who’s at Lightspeed at the time but now founded a dedicated crypto fund called Standard Crypto. It was the two of them. They co-led that seed. They were the ones that believed in what you mentioned earlier. 
+
+Everyone thought we were dumb as a rock to try to do this. It was like, what were the known things about crypto in 2017? No one uses it is number one, and nothing works yet is number two.
+
+David: Floyd Mayweather is doing ICO scams.
+
+Roneil: Yeah. What was known about music businesses at that time was none of them made money. Spotify was the one exception to that, but there was such a long trail of destruction around music technology that no one wanted to touch that either.
+
+Ben: You’re right at the intersection of two. Just beautiful trends that investors are championing at the pit to go and invest in.
+
+Roneil: Exactly right. We were like kryptonite. Everyone thought we were stupid.
+
+Ben: We’ve used the phrase ‘seed’ several times on this show, once to describe the seed practice with KPCB Edge and then again for Audius. Can you describe what seed meant in what you were doing at Kleiner Perkins, and what seed meant when you raised a seed round for Audius? Because now it’s totally different.
+
+Roneil: It even became different (I think) during that time. When I started at Kleiner Perkins in 2015, seed meant $1–$2 million at an 8–10 cap, say for some other thing like that, rarely priced. Now, it’s pretty cookie-cutter. KPCB Edge, that group was writing cheques of $100,000–$200,000 at the time. We were not leading seeds. We’re just a small participant in them.
+
+David: Roneil and I were both at Stanford when Snapchat was happening. If I remember right, didn’t Lightspeed do Snapchat seed round of $600,000 total round (I think) at a $6 million cap?
+
+Roneil: That’s right.
+
+David: Wow. Oh my goodness.
+
+Ben: Yeah, crazy. This is totally not what this episode is about, but it’s so hard not to take it here every time because the world has just changed so much. Even the last 12 months but certainly in the last 4 years.
+
+Roneil: It certainly has, and it just kept changing in the face. I remember when I was at Kleiner, people were like, oh my God. A $10 million cap on a seed, this is nonsense. This is crazy. How are we ever going to make money investing at these crazy prices? No.
+
+David: You’re going to do fine. Don’t worry.
+
+Ben: Before we get into the implementation of how Audius is implemented using blockchain technology, can you talk a little bit about the why of decentralization in music?
+
+Roneil: I think it’s helpful to start from what the economics of the music industry look like today. At the very highest level, music generates about $42 billion of revenue a year. That’s everything from recorded music to concerts, to merch. You name it. Everything.
+
+Ben: Is that growing, shrinking, or flat?
+
+Roneil: That’s growing. Actually, all of those categories are growing in terms of the dollar amount of revenue. But only 12% of that makes it to the artist, which is insane. The other 88% are going to distributors, platforms, middlemen like these so-called rights societies that collect revenue on behalf of songwriters and other groups, then sort of sit on it, take a cut, do whatever, and maybe pay it out one to two to three years later. There’s just so much structural inefficiency and complexity there.
+
+The bigger thing to take note of with that is that the economics of music more generally looked about the same as they did 30–40 years ago when making a record back then was really expensive. 
+
+If you think about it, you have to have a factory to produce CDs, LPs, tapes, or whatever the medium of choice at that time was. You needed a physical distribution network to get that out to retail stores. You needed distribution deals in place like the Tower Records, the Best Buys, and the Amoeba Musics of the world, everyone from the independants all the way to the big box music retailers. 
+
+That was really expensive. What it also meant was that there can only be maybe a couple of hundred artists in a year that could get distribution.
+
+David: Plus there was the whole radio dynamic. You have to have the relationships to get the radio airtime to drive demand. It was also cloistered.
+
+Roneil: Yeah, and same thing there. There’s a fixed amount of radio airtime, in the same way there’s a fixed amount of retail shelf space. Of course, the Internet completely upended that. We have an infinite shelf and an infinite amount of distribution capability. When the marginal cost of reproducing music is now zero, there’s so much that—
+
+Ben: In distributing it.
+
+Roneil: Yes.
+
+Ben: It goes to zero.
+
+Roneil: It’s all close to zero. There’s so much more niche music that can have a place in the world and can find fans that otherwise, if you were an artist with 10,000 fans, you had no chance in the old music industry. But today, if you could get 10,000 people to pay you $10 a month, you’re doing pretty damn good. Music, despite being kind of the earliest unintentionally to the digital age.
+
+David: Oh man. The first killer app on the Internet, right?
+
+Roneil: Yeah. Despite unintentionally being the earliest there, I think we’ll be one of the last to finish the process of digital transformation. And streaming, if you look at the economic breakdown there, kind of looks the same. All the same parties that used to exist in physical record distribution still exist today and still capture roughly a similar amount of value to what they did back then. They don’t add value to the chain.
+
+Ben: I’m so glad you brought this up. Over time, given an infinite timescale, if you’re not adding value you can’t capture any more value. But these things take awhile to shake out. I’m curious. You just made a phenomenal argument for why something like Spotify or Apple Music should exist. Algorithmic recommendations, infinite musical shelf space, zero cost to reproduce the music, zero cost to distribute the music. What you end up with is the streaming services we have today at a very large scale. I’m curious to hear your perspective on why are there all these parties who are involved and how do they manage to still capture value in this new ecosystem?
+
+Roneil: There are a lot of structural and historical reasons there that I think they’re able to maintain their position in the market. Everything from legislation across the world to pre-existing long-standing deals that (say) the major labels had made with given distributor companies and things like this. The groups that have power in music haven’t changed, and that’s why the economics of the industry haven’t really changed, either, because they’re kind of controlled by folks that have a vested interest (obviously) in maintaining their current position. 
+
+When you look at folks like Apple Music and Spotify, I think they did the best that they could with the [...] hand. They had to get these groups happy because they were not direct upload or direct engagement tools. You actually still can’t upload music as an individual directly to those things. You have to go through a third-party distributor. There are a lot of reasons for that.
+
+David: Which is insane. What if you needed a third-party distributor to upload to YouTube, or a podcast?
+
+Roneil: That’s right, although I think there’s a place for it in the market to write in that, this is me and Ben, something we talked about last time we spoke, like Netflix and YouTube can co-exist serving different segments of the market. So, too (I think) can user-generated audio exist in a different sphere from this sort of studio quality professional. For the user that knows what they want to listen to and just wants to look it up and find it, I think Spotify’s great for that user. That’s why we don’t really see ourselves as competing with that.
+
+David: You want Fleetwood Mac or you want The Notorious B.I.G. All that is owned by the labels. You have to go through the labels to get that.
+
+Roneil: Yes, that’s exactly right. That comes with all the various baggage associated with it. But I think that the sea change that’s coming is that the labels are a lot smarter than people like to give them credit for, and I think they actually do add a lot more value than people like to give them credit for.
+
+Ben: There’s this thing I’m dying to ask you. I’m going to put you in sort of the exact opposite position as most people usually put you in, which is you are a record label. Imagine you are one of the big, I don’t know, 4–5 record labels. I’m an emerging artist. Can you pitch me on the value proposition of me signing with you, versus giving you the finger and saying, I’m going it alone.
+
+Roneil: If I’m the record label, my pitch is I’m the most effective marketing- and brand-building machine that exists in the music industry. It’s kind of a venture-type of bet. In the same way that as a founder if you raise a seed round—going back to our earlier thing—and then your thing doesn’t work out, if you sell your company for $1 million or whatever, you don’t make any money. That all goes to your backers. 
+
+It’s the same kind of dynamic in music. If you want to be the next Drake or Katy Perry, that’s the way you do it. That’s the only way to do it. That one-size-fits-all model doesn’t work for everyone. If I were in the shoes of the label, that’s the pitch I would make to folks is like, look, if you’re willing to roll the dice on the 5%–10% chance that you can become a superstar if we work together, we are the best place to do that. We have a business model that can underwrite losing 95% of those bets because we make our money back on the 5% they do pay off.
+
+I think a lot of the sour grapes around how label deals are done, it would almost be akin to a founder being mad that their early-stage investors got such a good deal or something when they go public. They only spent like $600,000 on their SnapChat equity, and now that’s worth like a billion dollars or whatever. 
+
+People made a deal in a place at a time, and the way that the world works is you honor deals that you make, you honor your word, so it’s incumbent upon the artist to ask themselves that question—do you do you want a 95% chance of failure or do you want a meaningful shot at having a great living and great career?
+
+David: Okay, control your own destiny kind of—
+
+Roneil: Yes.
+
+David: It’s easy from the outside to just look at this, especially all of us in tech can be like, wow, this industry is so backwards and messed up, but you said about you want to be Drake or Katy Perry. The labels’ business models are built on creating Drakes and Katy Perrys, so if you have aspirations to be the next Drake, you should do that. If your aspiration is to be a great folk singer, there might be a better path.
+
+Ben: Either something with a small TAM or with slow growth. Contextualizing to the startup terms, something a bootstrapper would be interested in versus a venture-scale founder CEO.
+
+Roneil: That’s the key point I’d definitely drive home. I think that the labels’ approach is kind of one-size-fits-all. It’s suited to a world where there are a hundred artists that matter every year right. That’s just not the way that today’s world is, but it does still work for a certain caliber class of artists. 
+
+The thing that’s also really interesting, the label model’s very much predicated on high-cost content. The model there, for everyone listening understanding, is a label will advance money to an artist, and then the artist actually uses that money to produce an album, produce content, and then releases it. Then the label recoups the money that they advanced the artist.
+
+It’s almost like a book deal, basically. It is the same as a book advance. The label recoups against revenue, and then revenue gets split according to your contract after the recouping is done. The vast majority of these deals never recoup, the same way that the vast majority of book deals never recoup, probably.
+
+Ben: Or the vast majority of startup deals never clear the preference hurdle?
+
+Roneil: Yeah. Here’s where things get interesting, though. A lot of folks don’t realize that producing a typical pop or rock song is like hundreds of thousands of dollars per song. There’s an audio engineer that needs to be there in a physical studio space, sitting with you and recording. It takes weeks and weeks of the band sitting together and re-recording parts over and over again. Then there’s a producer that has to merge and organize it. 
+
+That is so different and requires a different amount of capital from a dance musician who can sit on their laptop in a room for a few weeks and produce a piece of content on their own. I think hip hop, actually, we see similar dynamics where beat makers are separate from rappers and folks like that. Same as a dance producer sitting in a room and making beats, a rapper can go listen doing here cool beats and then say, oh I’m going to rap something over this. This is dope. I’m going to use it.
+
+The cost of producing those types of content is just so much lower, that artists in those areas tend not to need the advance to be able to get content out the door. Whereas if you’re a rock band, like a typical guitarist, bassist, drummer, singer, producing folk music, that’s really expensive content to make well. You kind of need the advance to be able to do something like that. 
+
+I think where you see behaviorally, like what a lot of hip hop and dance folks will do with the advances they get from the label, is not make music. You can spend that money on whatever you want.
+
+Ben: Right. Classically in the book deals, the writers use it for six months to live while they’re writing the book. It’s a lifestyle expense.
+
+Roneil: Yes. When you look at everything in the music industry economics-wise, you can walk through a very logical explanation for how things came to be that way. In the same way that I just did for why labels that have advances and then have to recoup them, and then they have the revenue sharing model that they do. 
+
+It all kind of makes sense, but artists and creators are free people, and I think the role and opportunity for platforms like Audius to play in the future, to give folks an alternative to that path, to say, hey, here’s a way you can own the rights to your music and get it out to the world. It works very well for content that’s cheaper to produce. You don’t need the advance from the label. You don’t need all of that machinery, all of that everything.
+
+Ben: When I first checked out Audius, there’s a lot of EDM, dance music, and some hip hop, but it’s exactly that type of thing, that it’s stuff you can make on your laptop. And the cool thing is, laptops have some unbelievable software at this point to be able to produce things where you’re like, wait, one person did that in their bedroom? It’s mind-blowing.
+
+Roneil: Yeah. The cost of producing content going to zero (I think) is actually the really enabling trend behind the proliferation of great music and great content. Anyone in their bedroom can make something today that sounds indistinguishable from what was made by a major label in a studio context, which is really remarkable. Video is not like that, obviously, but yeah. 
+
+Ben: Yeah, it’s crazy. This is great. To steer us back toward Audius, I want to ask you a question but then also give you a minute to tell us about the scale that Audius is at today. I think people will probably so far think, well this is nice. This sounds really good. I don’t think we’ve had you explain the serious scale. This is a presence in the world. 
+
+I want to ask my question, but then, first open with that, please. How does decentralization help this? Obviously, someone could do everything you’re talking about on AWS, where there’s a company that serves as the middle man, that lets you upload your music directly, lets fans stream, so why decentralization?
+
+Roneil: It’s about distributing ownership and control of the system, and it’s about the trust that that comes with that. Artist communities have been burned so many times by products in history, that they’re quite wary of investing a lot of time, energy, effort into some new platform for it to go away a couple of years later. Or their account to be taken away, or their fans to be taken away, or whatever it may be.
+
+David: [...] great example. I’ll say it so you don’t have to, but you do. At the top of the show you mentioned SoundCloud. To my mind, that’s the perfect cautionary tale for an artist here. It was this great hope of hey, YouTube for music. Everything we’ve been talking about, it’s here, it’s happening, it’s getting momentum. Then it stopped for lots of complicated reasons. For artists, they’re heavily invested in that. That must have been crushing.
+
+Roneil: It was. It truly was because so many folks’ ability to get booked for tours—which ultimately is how most artists actually make their money is from touring—was dependent upon their engagement numbers on SoundCloud and elsewhere. If they invest a lot of time into SoundCloud as a platform and then their engagement numbers start falling off a cliff because users aren’t going there anymore for…
+
+Ben: Some algorithm change, or they introduced a new feature, or we highlight people that are paying us, or something like that.
+
+Roneil: What decentralization does here is it removes any company or set of individuals from being in a position to make decisions like that, that undermine both the integrity of the platform but the ability for users to continue to get the same value out of it that they have been previously. 
+
+I think that also has helped us grow to where we are today. Audius serves about 6 million people on the listener side every month, and over 100,000 artists have uploaded stuff today. It all comes back to that trust aspect and that trust dynamic that people feel they don’t need to trust us to use this. They actually earn the ability to control this by contributing content, by contributing value back to it.
+
+There are some interesting dynamics there where the network directly incentivizing and distributing control of itself to the people who are making it valuable, so both incentivizing that value creation and spreading control of itself out across the community. That’s turned out to be this very powerful dynamic because artists are being told, hey, if you can bring your fan base here, this network will pay you in ownership to do that.
+
+Ben: Yes, let’s talk about that. What’s the primary mechanism by which I gain governance over the future product development of Audius?
+
+David: Actually, one thing real quick before that. I think it used to be six million monthly users just for the record sake. I think that makes you the most used crypto app in the world.
+
+Roneil: We think so. It’s not entirely clear. Brave browser is a little bit bigger than us in terms of their top line monthly user numbers, but it’s not a decentralized application necessarily in how it operates.
+
+Ben: You’re right, David. We should not have let that just slip. Congratulations, Roneil.
+
+Roneil: Thank you. I believe we are the largest decentralized application in existence by user numbers. For comparison’s sake, MetaMask (I think) just crossed 10 million monthly. That (I think) is a good proxy for what is all of crypto in terms of the crypto-native crypto usage. For us as a single product, to be at six million has been really cool to see.
+
+Our user base is not crypto-native in the majority of cases. I think that’s how we were able to get here. When you use Audius, it looks and feels like any other music listening experience and music player product.
+
+Ben: Yeah. I signed up and I kept waiting for the part where I needed to either hook up my card wallet or my bearer asset wallet that I have. Oh weird. Nope. This just feels like a web app. There’s no mention of crypto anywhere. Huh, okay.
+
+Maybe this a good segue to that previous question before I so rudely did not acknowledge what a ludicrous scale you’re at. How is this a crypto app and how does governance accrue?
+
+Roneil: In the Audius experience that you were using when you signed up, you actually have a wallet now without knowing it that the Audius app generated and now manages for you. It’s one that you as the user control and custody. There’s a somewhat complicated explanation around that that I can get into if interested. 
+
+But long story short, you have a wallet. Your wallet was actually on your behalf signing transactions and submitting them on-chain to create your account, to follow the initial set of people you followed, to repost and engage with content. All of that’s actually triggering these actions on your behalf behind the scenes, and your browser’s actually talking directly to these community-operated nodes on the network.
+
+When you go to audius.co, you’re getting this client-side app bundle, but after that your client-side app is able to do all of this on your behalf, basically talking directly to the network which is pretty neat. The majority of our users have no idea there is any decentralization crypto anything there, but they’re getting the benefits and the value props that exist around crypto despite not knowing that, which is pretty cool.
+
+Even if you look at all of our public marketing materials, everything else we talk about, all the benefits that this model provides, you get unfettered and complete access to your relationships with fans. You get all the data associated with those interactions including the ability to target things to subsections of your audience and things like that. You get that kind of control over how content can be unlocked by whom and under what conditions. 
+
+All of these benefits that none of those things I just described would have been possible without the Audius product being fully decentralized, but users don’t need to know how they’re possible. It would be like if… 
+
+Ben: Don’t sell implementation details. Sell benefits.
+
+Ronei: Yeah. It would be saying you should use my Facebook competitor because it’s built on Postgres instead of MySQL. Who gives a [...]? If it does something new and interesting that matters to a group of people…
+
+David: You should use Snapchat because the photos disappear, not what they chose for a database.
+
+Roneil: Yeah, and I think so much of the Web 3.0 community today is just so early in terms of how the benefits of this are communicated to users. Even though the benefits are (I think) people aren’t kind of honest with themselves around what the benefits of a lot of these things are with respect to decentralization. I think we’re going to see a reckoning that happens because of that. In the same way that in the late 90s, everything was on the web regardless of whether it needed to be on the web at that time or not. A lot of things were just let’s do X that already happened in the real world and put it on the web. We’re seeing the same thing now. Let’s do X that happens in Web 2.0 land, put it on a blockchain, and then maybe it’ll somehow be better.
+
+Ben: Let’s take an example. Let’s say some product manager in the future at Audius wants to introduce a feature that makes it so that for an artist to reach the fans who currently follow them, they have to pay Audius a bunch of money to do that. How does decentralization and sort of governance being decentralized over the product prevent that from happening?
+
+Roneil: The way the incentive model around Audius works is it all ties back into this [...]  token that sits in the center. That has three functions. It secures the network so the people who run those nodes actually put up a bond or a stake of those Audius tokens to be able to run their node. If their node misbehaves or does something wrong, they actually can get penalized against that bond that they put up. The token provides this level of economic security around how the network runs. The token also grants access to certain types of distribution features. From the artist’s side, if you stake a sufficient number of those tokens, you can get different abilities within the network. The third function is it maps directly to governance power within the ecosystem. 
+
+When the Audius network officially launched—October 23rd, 2020—from that moment onward our company was incapable of making any changes to the code that powers any of Audius. Anything from the way that content uploads works to the way that searching and discovery works, all of those things were basically—at that time—sort of handed over to the community to say, hey, we tried to make some logical, sensible choices for how things could work upfront, but you’re in control of how this works going forward.
+
+Actually, to make changes to those things you have to make a governance proposal, convince the community that the change is worth making, and then vote it into place. Even routine bug fix updates and stuff that our team will help to put out, we summarize and explain the list of bug fixes, and say, hey, these all seem good things to do. If you agree, please vote in favor of this.
+
+We actually aren’t capable (I think) of making some of those core decisions that many other platforms had made previously when they reached a certain level of scale, like pulling the rug out from under their API (for example), all these things.
+
+Ben: And this seems basically that those node operators or the validators, they’re as idealistic as you set out to be. It requires that this decentralized web of people who are voting whether or not they want to take the change, they have to have the sort of same set of principles and ideals upon which you founded the company. Or I guess they could have an economic incentive not to ruin a good thing.
+
+Roneil: They are one of many participants on the governance side. Actually, a node operator doesn’t get to vote with all the tokens that are delegated to them on the staking side. They’re only able to vote with any direct stake they may have put up. They’re actually a very small minority of the total voting share and voting base right now. Anyone can vote with their tokens on these changes and outcomes.
+
+That shifts the focus of your question but doesn’t change the nature of it. There are still some interesting incentive issues around that. The biggest risk that governance structures like this run is that it's a rich get richer kind of model. The people who control it today will vote to retrench their own power over time and make themselves more powerful over time. There’s some work for our community to iterate forward towards a model that is sort of the most perfect. 
+
+The network right now is minting about 70 million tokens on an annual basis, and it’s distributing those to the folks that are creating the most value around the ecosystem defined by driving engagement, among other things. The intent there is basically to forcibly distribute control and ownership among a very broad set of folks who are in proportion to the amount of value they are creating today.
+
+David: There are two aspects, at least as the way I think about decentralized applications and systems—feel free to correct me if I’m thinking about things wrong—there’s the carrot and the stick. Governance is the stick, but economics are the carrot. How are tokens distributed? 
+
+My hypothesis is that the carrot can oftentimes be the better incentivizing factor for behavior. You’re an artist or you’re a node validator, whoever. You’re generating value for the system. Great, you get tokens. You also get governance. It’s a good bet. If the token’s, hey, they have value today and if they appreciate more, then you own the network. You see the value there.
+
+Roneil: I love that carrot and stick analogy. I think it’s absolutely on point. Governance is both meant to improve and push the protocol forward, but it’s also meant to punish those who are misbehaving within the ecosystem. I think we’re on the cusp of one of the larger conflicts to play out there over the coming months, which is around botting and abuse. There are a lot of folks in the ecosystem now getting concerned about people running tools to manipulate the way how many plays their thing has and all this other stuff.
+
+There are a number of features going that I know folks in the community have been working on to reduce those issues. There are ways that you can detect behavior that looks not human. The question is how well the existing power base of governance responds to a situation like that. 
+
+This problem is still very early, so it’s not like it’s significantly impacted the distribution of governance power, but it brings up this very interesting question: What if the very people in control aren’t incentivized to punish themselves or to fix the problem?
+
+Whereas the economic incentive structure (I guess) they go kind of hand-in-hand. Your ability to earn the carrot has to be protected by some ability to enforce a good [...] because people will abuse these things, especially if there’s some monetary value ascribed to what they’re able to earn in the form of these tokens. There are some stuff to be cognizant of there.
+
+David: How do people earn tokens today?
+
+Roneil: There are a number of incentive programs in place. If you upload a track that crosses a threshold of listening or engagement on it, if you curate a playlist that ends up being one of the top playlists. There’s a recurring set of rewards that are distributed on a weekly basis, the top X number of folks in each of these categories, including actually API integration. There are a number of folks that have built on and around the Audius ecosystem. 
+
+A lot of folks don’t realize this, but the majority of listening on Audius is no longer driven by our core app—the one that you use at audius.co. It’s actually by third-party folks that have built these amazing cool applications that drive listening in different ways. There’s this music racing game where you have to steer your car around and through obstacles that are in sync with the beat of the music that you’re listening to. They use the Audius catalog to help back that to more typical alternative music player experiences.
+
+For example, the Audius mobile app that our company put out is a React-native app that’s not super great. Candidly, we’re a small team. We didn’t have any native mobile engineers on the team. There were some folks in the community that were like, hey, we can do better than this. So they built a couple of great native iOS apps now that search again—
+
+Ben: It’s like the AlienBlue example in Reddit land.
+
+Roneil: Yeah, because the Reddit app itself was garbage for so long. No offense intended to that. It’s just that it’s not a focus, clearly, in the same way that for us it wasn’t a focus for a while because the majority of our engagement is still on desktop/web, actually.
+
+Also, probably in no small part because the majority of our growth has happened during COVID. There were 150,000 people listening to Audius on a monthly basis this time last year, and there are 6 million today.
+
+David: That’s awesome.
+
+Roneil: All of that happened in a COVID-native world.
+
+Ben: There had to be some weeks in the last year where you’re looking at your growth chart going, are we the fastest-growing company of all time?
+
+Roneil: I don’t know about that. Actually, we’re 4 years old now as a company.
+
+Ben: If you’re getting from 150,000 to 5 million in a year, I assume there are several hundred percent growth weeks in there, maybe not.
+
+Roneil: No weeks like that. We had 150% months before. Our growth is actually much more steady than you might think. It’s been 50%–70% month over month, and now it’s down to more like 35%–40% month over month, because we’re growing off of a much, much larger base.
+
+Ben: I was thinking through my comment, like wow. Reverse engineering compounding is hard, like trying to think through what actually what those be.
+
+Roneil: Yeah. If you run the math back on what is 70% month over month growth for 12 months, it’s a big number. Compounding really gets you a lot quicker than you think. To be fair, there were some moments where things just went crazy. 
+
+The week that this TikTok integration went live a month ago or so, I think we added nearly a million users in a week-and-a-half or so afterwards, which is pretty cool to see. That was 10 times as many users as we had after a year of running we added in a week. Those things are fun, yes. 
+
+Ben: This gets to a bit of a technical question that I’ve been wondering about for all companies like Audius. When I say companies like Audius, I recognize that that’s not necessarily a big category yet, but for companies that are creating a Web 2.0 front-end or perhaps an API to create a set of Web 2.0 front-ends to a Web 3.0 product, how does that work? 
+
+All the blockchain stuff is decentralized. I go to audius.co and that route through DNS, presumably to a centralized AWS-hosted or something that web server. How does that work in order to make the client-side stuff as decentralized as it needs to be?
+
+Roneil: I think the way that clients decentralize is actually exactly what we were just talking about, like this sort of API ecosystem. Our client was always meant to be a reference implementation but not the primary interface. Our client’s completely open source, so lots of people forked it and done fun things. That was actually how (I think) the first dark mode of Audius [...] It’s one of those things. 
+
+Another one of those things that our team never got around to doing, so someone in the community was like, well, I’ll just do it and it’ll be cool. I think it just made another style sheet that you could load against the same webpage, but they did it by taking the existing styles from the open source code and playing around with them. 
+
+There actually comes a time where the core first-party product stops being hosted by our company and hosted exclusively by the community. Even today, the majority of listening is happening not through our own product. I think this one of the biggest frontiers around decentralized tech and decentralized products because a lot of folks are saying, oh well, the smart contracts are decentralized so the thing is decentralized even though 99.9% of people use it all through a single website controlled by single group of people.
+
+Ben: That’s where I’m going with this. Let’s say you give up the strategic market position of having all the front-end to all the traffic. You say audius.co is no longer the biggest or the best whatever. Your back-ends are all still decentralized on the blockchain, but let’s say someone makes a really sick front-end and then 90% of all traffic goes through them. Can’t they just turn around to all the validators and everyone with tokens and say, look, I control the traffic. I want to add this feature. I’m either going to go around the blockchain-based back-end and I’m just going to introduce this feature in a centralized way with my client? Or I’m going to force you all to take some change because I have so much power in this ecosystem?
+
+Roneil: That gets super interesting. There are certainly things like that that could happen in the future. The will of the community is what governs this and people will find interesting ways. The thing that has always made me feel we would be resilient to these things over time—again, I’m speculating; this has never happened—is that all of the content and interactions around the content, all the data-driven generated through that and aggregated around that lives in the network. It’s very hard to build a network effect around a front-end. I guess for a front-end to abuse that position because they don’t have defensibility from people using other front-ends. 
+
+Exactly what you’re getting at is one of the big reasons why SoundCloud, Twitter, and so many other social products would rip away their API after a while because they don’t want other people to be able to.
+
+David: I think there’s a really, really powerful thing here that is a unique thing to Web 3.0, and ways of doing things like Audius, which is you don’t have to have that Twitter, the SoundCloud business model. The way token economics work, it’s the underlying database—for lack of a better word—that where the value is. 
+
+I love the example of Audius being used in video games. Could you imagine licensing music from either via Spotify or Apple Music or whatever to go use in a video game? No. You got to go negotiate all thoses and whatnot. You can just be this decentralized clearing house where all that matters is streams of the tracks, the artists get value for that because as long as their play counts are going up, they’re getting rewarded with tokens. It doesn’t matter where it’s happening and you can just spread out decentralized to everything.
+
+Roneil: That’s exactly right. I think that’s where we get our defensibility to what you were describing. I think value accrues at the network level here, not at the level of the interface. What remains to be seen, where things are going to be really fascinating or where, as there are third party interfaces that gain large amounts of traction, what’s their business model become?
+
+We’ve started to see, at least here, some things from folks, like they’re thinking about having ads, for example, in their front-end, things like this. But again, there’s a fine line between if you go too far with that, you’re going to push users to other things. 
+
+It’ll be very interesting to see if and when there are others that control the network from the interface perspective, like if they had tried to misbehave with that positioning. Right now, we manage to create a great amount of diversity around how people are accessing the network. To your point, we’re actively pulling back from our own interface alongside that. Part of the reason that the majority of listening happens elsewhere, the bigger reason is just to let people come up with cool stuff that we never would have come up with.
+
+Ben: How does a company launch entirely on a Web 3.0 stack? There are all these components of an application and it’s easy to just single out the mobile front-end or something that just isn’t Web 3. technology. I’m always wondering, at some point does every line of code that runs as a part of an application, can that be decentralized? 
+
+Roneil: Yeah. That’s a really great point and DNS is the linchpin here. That’s the big limiter. I think the only way to do that today would be to have a desktop app. If you tell people, hey you have to download this app, and then use the app to talk to the network. Or if they install a handshake or ens Chrome extension that lets them resolve names on those networks. The UX around that is pretty garbage.
+
+Ben: This feels like eventually the opportunity for Brave, once they have a blockchain-based widely installed application that then can run full stack Web 3.0 applications. 
+
+Roneil: I agree with that, and actually MetaMask, too. I’m surprised that they haven’t because they do have that Chrome extension install base. They could resolve names in the URL that others might not be able to. Maybe they don’t want the Chrome extension to grab that permission because it’s scary. I don’t know if you’ve ever seen that when you install a Chrome extension it says, this extension can read and modify all data related to this website or whatever. They have to do that to be able to intercept the request.
+
+In the case of an ecosystem like Audius, having many, many interfaces and ways to interact with the network actually achieves the same decentralization. I don’t know that that serves itself well necessarily to a lot of other use cases. Music’s different. A lot of people want to build stuff with music.
+
+David: I was just thinking about the same thing. Music is so perfect. Before we worked with Yung Spielberg and Mike Taylor, and got our awesome Who Got The Truth, which they just killed it—we worked directly with them to make that happen—we had so many headaches with music on Acquired. It was such a pain. 
+
+I can just see with Audius because all that matters are play counts and artists get rewarded based on play counts, all that goes away. Every artist will feel like, oh I’d love to have my songs in these podcasts or these video games or these movies or wherever, because it’s all on the network. It all works.
+
+Roneil: It all drives awareness of their content. This can be my hot take of the day (I guess). I think the way that the future of music is evolving, the thing that will capture value increasingly over time is the brand equity around the artist, not that asset of the content itself. Artist business models are shifting towards that. 
+
+The average artist makes the vast majority of their money from touring. The average artist is earning a living from music, mind you, not the longer tail of creators. They basically use content as marketing to source super fans who come to their shows and buy their merch. The shows and the merch are actually the business model, not the music.
+
+We’ve seen the rise of the so-called 360 deals where labels are now capturing a percentage of all revenue generated around the artist’s business, not just off of their music. But the incentives across the industry are starting to align towards building value around the brand and not necessarily trying to build royalty revenue around content, which is the older way.
+
+If you treat content almost as a loss leader for these other businesses, I think there’s actually a lot more money to be made than $42 billion if you think about the cultural impact that music has had. Kanye West releasing Donda a little while ago had already made it probably about as much selling, I don’t know if you guys saw this little speaker. He made a speaker that had samples from the album. You could push buttons on the speaker. He made more money on that than he’d likely make off of a year of royalties from the album.
+
+It’s like a joke to compare. You can make a little speaker and those speakers have this super marked-up resale market on eBay and elsewhere. It’s become this whole thing to clear millions of dollars directly in your pocket from a tertiary experience like that. A very small aggregate number of people are engaging with, it’s just a very different world from monetization where scale is not necessarily the biggest driver of income for artists today. It’s actually not even not necessarily. It’s just not.
+
+David: Clearly, this thing was manufactured at scale and is a super cheapo thing, and it was sold for $200?
+
+Roneil: Yes. It was probably $20 at a factory in Shenzhen. It’s just the bomb for that. But his fans love it. They’re clearly getting fulfillment and value out of being able to engage with Kanye in that way, and that’s $200 per one of those people going directly into his pocket. That’s huge for him, so yeah.
+
+Ben: It’s wild. Two more big buckets that I want to cover. One is a technical topic and then another one is the current chapter of Audius’ life involving your recent investment and working with artists. 
+
+First on the technical topic. We have mentioned Audius on the show before as a good example of something that works across multiple blockchains, that takes advantage of the benefits that each one has to offer. At least to my knowledge, those two are Ethereum and Solana. Can you talk about what you use each one of them for and what it’s to build a multi-chain application?
+
+Roneil: There’s actually a third one in that mix which is called POA network. It’s an Ethereum side chain. That’s actually where we got started on POA network, and then the Audius token staking system governance launched on Ethereum. Then the stuff that’s on the POA network has been migrating to Solana that’s faster, more secure, and better. 
+
+That’s how Audius was decentralized from day one but still had a decent UX. POA network has a block time of around five seconds, the fees were very low, so it is pretty easy to get going there. In early 2019 was the first alpha of Audius, so it’s 7–8 months after we got going. POA network was the only thing that existed at that time that was not Ethereum. We’ve been (I guess) multi-blockchain for the whole existence of Audius. 
+
+The key insight that we had that doesn’t apply to most other projects but puts us in a really unique position, is that because there’s this off-chain node architecture in Audius. There are these community-run nodes that host all the content, host all the metadata. As an end user, when you upload something to the network, you’re actually uploading it to one of those nodes. It’s returning to you a pointer to that content, which your client then writes on chain. That’s what signifies, hey, my private key is signing the message saying this my content. I’m claiming this as mine.
+
+That whole end-to-end workflow, you have these references to content and to various things on-chain. You get the security of the on-chain structure and that logical centralization, I would call it. There’s one source of truth for what’s all the content in Audius, who has the rights to update and modify it, and then who triggered the engagements around it. So every time you repost something, you like it. That actually is all hitting that chain as well.
+
+Anyway, the key insight we had—tying back to how I started this thought—was that these off-chain nodes can bridge information between various chains. A lot of the complexity that might come in a model like this is when the Ethereum stuff needs to know some information that is definitively known by the Solana stuff or the POA stuff. 
+
+Ben: Can you just give an example of what would be a thing that’s squarely in Ethereum land and something that is squarely in Solana land?
+
+Roneil: How many tokens do you hold is Ethereum land because the token is an ERC-20 token. It lives in Ethereum. Whereas the stuff squarely in Solana land or a mix of POA in Solana land are things like who is this user? When did they make an account? There’s an arbitrary Ethereum address that holds some number of tokens. That’s all that the Ethereum stuff knows. 
+
+There’s that arbitrary Ethereum address that controls a given user account in a POA network (let’s say). That same address controls different things in different places. The way we are able to grapple with that complexity from the developer model perspective, there’s this metadata indexing node. 
+
+There are two types of nodes that people in our community run. There are content nodes that store content, and then discovery nodes. They’re called the index and allow for easy discovery of content. That indexing node actually indexes the data across all these networks and then provides a unified API interface for looking it up. 
+
+You can search data across all these things and do so in a trustless and decentralized way because it is being run by our community. There’s a [...] slashing mechanic around ensuring that those folks are operating those nodes properly. There’s a level of trust that you can build with those things, but you effectively get this kind of Oracle structure indirectly by doing that. 
+
+If those nodes can now report that information back to other chains, say this user has 10 tokens right now, if that could be a signed message from the discovery node that can now get delivered to another chain, and if that signed message has a timestamp with it with some it decay rate on it, like the timestamp has to be (say) 30 seconds or one minute old at maximum to be valid on the other chain.
+
+Sorry I got very complicated and technical. Having the off-chain nodes allows all this information to get bridged and reconciled in a sensible way. Without that, this would be really hard.
+
+Ben: Even popping up a level—let me just ask the devil’s advocate question—couldn’t you just build it all on Ethereum? Why or why not?
+
+Roneil: Today, there are over 400,000 transactions per day being done on Solana, for example. If that were on Ethereum, it depends on the time of day, but at least judging from my recent [...] interactions, that potentially at a minimum $4–$5 million a day and a maximum potentially $20–$30 million a day. It would just never work. You have $4 million a day if the transactions are only $10 each, and I don’t think that would be the case.
+
+Ben: And I assume that my listening history is probably stored as a part of my account, so I find liking a song and hitting next, next, next, next, next, if those were all writes to the Ethereum blockchain, I imagine the whole thing would be cost-prohibitive and you couldn’t operate it.
+
+Roneil: Yeah, it would be very cost-prohibitive. But even all those things aren’t writes to Solana either or to anything else, that would blow up anything. It’s when you actively engage with the tracks, if you repost it, if you favorite it, if you make a playlist around it, those actions are all hitting the chain. It’s not like there’s (I guess) the level of data that you might get from a Google Analytics or something isn’t making it to chain.
+
+That is all actually getting stored locally on your browser. We’ve been trying to figure out a way to allow folks to get better recommendations driven by that data without compromising their user privacy. It’s a bizarre thing because your browser knows what you’ve listened to, how long you listen to it, how you found it, and all these things. The network knows some of that. The network does know if you’ve completed listening to a track, for example. That gets recorded as one of those play counts. 
+
+It gets super interesting to think about the data models around this. As it is now, there are already people building recommendation systems on the Audius dataset because all the data of who favorited what and when they found it, all that is all public. You could write a collaborative filter very easily on the Audius data set. Anyone can. It’s all just out there for the taking.
+
+The data modeling around decentralized consumer-scale applications like this is just super, super different from a traditional product. If we were a traditional consumer product with six million users, probably just have one super giant, gargantuan Postgres database and probably nothing else. It would be fine. Stick the content in S3, now Postgres database be done. There could be one engineer building this and it would be totally fine.
+
+Ben: To adopt a mental model here, you’re trying to have a really long view on the success of this product and ecosystem. Because you sort of have that example—again, I’ll say it not you—of something that didn’t work (eventually with SoundCloud) and you know where the pitfalls are, you’re sort of incurring a lot of cost, like massive taxes on the system from a development cost perspective, from a need for decentralization perspective, in order to be able to sort of complete the marathon.
+
+Roneil: That’s exactly right. I actually even think about beginning the marathon. There isn’t any reason for people to use Audius without those value props up-front. Just the ability to own the relationships with those fans have some certainty around the rules of the game being somewhat set in stone and not subject to the random whims of a company. Those things resonated with the right communities early on, and that’s what got our network effect going. Without that initial hook, no one would have ever come here.
+
+Ben: Talk to us about the artist communities that it resonated with. You’ve been very modest, so feel free to flex a little bit. Who’s on the platform? How do they use it? Do you have any fun stories?
+
+Roneil: So many fun stories. Our early bread and butter was dance. That’s where my co-founder (Forrest) and I had some at least deep personal professional background. I think also that community was one that was very much aligned with the early ethos of SoundCloud, and that they ended up really resonating with our product and product direction. 
+
+People like Skrillex, deadmau5, Dillon Francis, Diplo all use Audius on a regular basis, which has been super, super cool. That (I think) was to the stories that the more surreal thing of all of this. One of our earliest supporters on the artist side was Blau, the producer and—
+
+Ben: Which a lot of people out there right now are having the moment of, oh wait, it’s not 3LAU?
+
+Roneil: Yes. I was a fan of his forever. I remember he came and played a small show at Stanford in 2011. Actually, David, you weren’t at Stanford quite yet then, but it was at the Full Moon on the Quad in [...]. He played that back then.
+
+David: The Full Moon on the Quad was legendary. They shut it down, I think?
+
+Roneil: I have no idea. They threaten to shut it down every year. The whole thing was kind of gross.
+
+David: I never participated because Jenny and I were married, but even before I started at GSP.
+
+Roneil: I didn’t either. I think the idea of that was just quite disgusting. 
+
+Ben: I think this would have been right after Blau left. He went to Wash U for college. 
+
+Roneil: Yeah. I think he dropped out to pursue music full-time. This is probably right around then. I went to the show from him at Stanford. This is four or five months after we started Audius. He was super into crypto. We found an intro to him and it was super cool to talk to this person who was like, I love your music. 
+
+Then that happened again, and again, and again, and again. You get desensitized to it over time (I guess), but I still have to fight back that starstruck moment when we get on a call with someone who grew up listening to their music forever. It’s definitely a surreal business or work to do but started out very dance-centric, dance-heavy. 
+
+We started to make a lot more inroads and have a lot more growth in hip hop more recently. I think for similar reasons, that community, like I mentioned earlier, around the cost of producing content and the grass roots support around how folks come up and break out rather than artists being broken. That breaking an artist term just means when they break out or when they get discovered, basically. Hip hop artists tend to break through their communities not by, there’s this term, the industry plant in music. There’s no sort of hip hop industry plants that have been able to be successful.
+
+David: It’s not like NSYNC here.
+
+Roneil: Yeah. I actually don’t know the story of NSYNC. They certainly feel like it if you think about the level of that prescribed template. 
+
+David: [...] definitely the Backstreet Boys. They were architected. There’s no way they weren’t.
+
+Roneil: I don’t know for sure so I won’t say. 
+
+Ben: There was another one that was literally on Making the Band, that they architected them in front of America on TV. It was maybe O-Town. I feel right in that boy band [...]. 
+
+Okay, Roneil, on our closing topic, would you be open to telling us about your recent fundraise, what you raised and who is involved? But maybe mechanically since it’s quite unique for companies in crypto.
+
+Roneil: We just announced a small $5 million raise from a lot of folks in the broader music industry that have been supportive and helpful to the network over time. This is a chance for them to have a little bit more skin in the game and a little bit more access to ownership. There was a $5 million raise put together with a very long list of folks, but some of the highlights that you all might know are Katy Perry, Noz, Steve Aoki, The Chainsmokers, this fund Mantis that they run.
+
+David: Yeah.The Chainsmokers are investing in everything these days. I mean that in a good way, but they’re investing in non-music tech.
+
+Roneil: They are so sharp on the business side of music and tech when you chat with them. They’re great dudes. They’re extremely sharp on how all this works, so it’s been a real pleasure to have gotten to work with them.  They’re another one that I have loved for so long. It’s definitely super wild to talk to them. 
+
+See, a great group of artists, a great group of industry heavyweights, some folks like Marc Geiger who ran WME for many years, the Bandiers, Martin Bandier who ran Sony music group for many years. There’s a great set of folks from all different directions that were able to come together here, and we’re super excited about it. If it helps us with a lot of our upcoming work, starting to serve the broader music industry, continue to grow, and do cool stuff.
+
+Ben: And I assume that they didn’t buy shares in some Delaware C-Corp called Audius Inc, right?
+
+Roneil: Yes, they bought tokens. The way that this mechanically works, actually there is an SPV, an investor in our ecosystem, formed by a guy named Ken Seiff at Blockchange. He [...] that’s great.
+
+Ben: Ken’s quietly the investor in a bunch of really cool Web 3.0 technologies.
+
+Roneil: He is and I think that’s how he likes to be. He likes to be a little bit quieter and in the shadows, but he’s been so instrumental in helping get Audius to where it is today. This was another case where it’s hard to hold by engaging with tokens. He formed this SPV and he’s administering it as a favor to the ecosystem, to help folks who wouldn’t otherwise be capable of logistical hurdles. 
+
+David: I read he [...] Uniswap.
+
+Roneil: It’s a whole thing. That SPV is able to administer and manage the position on behalf of these folks, and it’s been really cool. You’re right. Crypto projects doing fundraising is a very strange and odd process, given the structure’s just so different.
+
+David: How do you think about… this is going to sound weird about money and resources.
+
+Roneil: It’s a really, really good question. There are different parties or groups in the Audius ecosystem that work on various things. Our company receives grants from the Audius Foundation, as do others. The Audius Foundation is actually what controls this treasury of tokens.
+
+Ben: And did the SPV purchase the tokens from the foundation? 
+
+Roneil: It did. The foundation’s job is to manage this treasury of tokens and make sure that it has enough cash—dollar, other stablecoin-denominated cash or whatever, if the dollar is not the most stable thing in the world these days. It’s basically meant to insulate the ecosystem through ups and downs in value. 
+
+Various macro events can affect crypto, so that treasury management function is really the foundation’s role. It’s the job of companies like ours to go ask the foundation like, hey, we want to do X, Y, and Z. Do you want to fund us? They can be no or they can be yeah.
+
+David: Isn’t one-to-one of audio token ownership to governance of the foundation?
+
+Roneil: The foundation is not governed by token holder governance. There are two separate treasuries which get complicated. There’s actually a community treasury that’s on-chain. There’s a pot of tokens that the community’s able to vote and allocate. Over time, actually, I believe the foundation will shift control of its books into the community’s hands, but I think for where the project is at right now the foundation being able to be a little bit more agile is helpful.
+
+The foundation is still able to conduct real world contracts and things of that nature. It’s going to take some time before Dow can…
+
+David: We need some more infrastructure built in all this.
+
+Roneil: Yeah, like a legal invoice or whatever it may be. We’ll get there. I have faith we’ll get there. It’s just going to take a lot of time. We think about money (I guess) the same way as any other early-stage company would, with the caveat that you don’t get to make more tokens. That’s not a fit, unless the community were to vote to make more tokens, there’s a finite quantity that the foundation oversees. It needs to manage that like an endowment more than it does like an evergreen source of potential funds.
+
+We [...] that company equity is evergreen and tokens aren’t equity. They serve very different functions and behave very differently, but in a traditional tech company or whatever you can make new shares. Financings are dilutive. In token land, financings are not dilutive, so that gets very, very different. It changes the calculus.
+
+Ben: Fascinating. That seems like a great place to leave it. Roneil, where can listeners find you on the Internet? How can they get involved? Where should they go?
+
+Roneil: Definitely check out audius.co, is the primary product that you can go engage with and discover cool content, listen to stuff. Twitter is where we announce the most interesting news and things, so @AudiusProject is the handle. Give us a follow, check it out. 
+
+For myself, I don’t really do much interesting outside of Audius, so I don’t think I have much interesting to say on the Internet outside of that, but if you want to see lots of retweets of Audius content, you can go follow me on Twitter also. It’s @roneilr.
+
+David: We’ll link to all that. I think that you probably sell yourself short.
+
+Ben: Awesome. Well Roneil, thank you. Listeners, we’ll see you next time.
+
+David: We’ll see you next time.
+
+Roneil: Thank you for having me.

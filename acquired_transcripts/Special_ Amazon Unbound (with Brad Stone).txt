@@ -1,0 +1,503 @@
+Ben: Welcome to this special of Acquired, the podcast about great technology companies, and the stories and playbooks behind them. I'm Ben Gilbert and I am the co-founder and Managing Director of Seattle-based Pioneer Square Labs and our venture fund, PSL Ventures.
+
+David: I’m David Rosenthal and I am an angel investor based in San Francisco.
+
+Ben: And we are your hosts. On today's show, we are sharing our most recent book club discussion with you all. We were fortunate enough to have repeat Acquired guest Brad Stone join us to talk about his most recent book Amazon Unbound.
+
+David: Brad is the best.
+
+Ben: Yeah. This book is the successor to Brad's first book The Everything Store. It is about everything that has happened at Amazon since 2013 including Alexa, Amazon Go, third-party sellers—the further development of the third-party seller ecosystem anyway—their various grocery businesses, and of course, the activities of Jeff Bezos outside of Amazon. This episode was recorded live with Acquired LPs on the line, and you'll hear some questions from them at the end.
+
+As always, if you want to become an Acquired LP and be a deeper part of everything we do here, you can go to glow.fm/Acquired.
+
+Now, before we jump into the conversation, we have a great sponsor from the Acquired Community—someone we know because he's a frequent participant in Slack, James Avery. James is the Founder and CEO of Kevel, the company that offers the infrastructure APIs used to quickly build custom ad platforms for sponsored listings, internal promotions, native ads, and more. They're used by customers like Yelp, [...], OfferUp, Mozilla, Strava, and many other innovative brands.
+
+Over these special episodes, James has been sharing with us his journey that he's been on in digital advertising since 2007 and his vision with Kevel. James, great to have you with us again. It's been great hearing about the origin story of Kevel, your history with the lounge of how you got passionate about the space. Amazing you've been in this since what, 2007, 14 years?
+
+James: Yeah, absolutely.
+
+Ben: I hear you have a story for us about Adzerk making its first sale, obviously before changing the name to Kevel. Lay it on us.
+
+James: Awesome. Last time we talked I was running the lounge but also working on pivoting to SaaS. I started looking for customers. The first thing I wanted to do is find the first customer that I could sign on to this SaaS platform. I got a little lucky here but I saw a tweet by Jeff Atwood, better known as Coding Horror, a very popular tech blogger. I've gotten to know him just through the blogging community. I was constantly trying to get him to join the lounge and he would never join the network. In his tweet, he had said that he was looking for an ad server for Stack Overflow, which had just recently launched.
+
+This is now kind of 2010. I shot him an email, we had a quick Skype. He was really interested, he didn't want to use Google, he didn't want to use something open source out there. He said this is great, but you're going to have to sell my co-founder, Joel Spolsky. I said, great, I can definitely do that. He had proposed a Skype call. I said, no. I'll jump on a plane to New York and go meet with Joel.
+
+I go to New York, sitting with Joel and his team, pitching what we're doing at then Adzerk, now Kevel. He turned to me and said what would you do with $500,000? I quickly said back, I said, well, I'd hire a couple of engineers because there's a lot of stuff I want to build. Later I realized he was trying to buy the company. But at the time, I was so zeroed in that I didn't even pick it up. And then a couple of weeks later I had a follow-up call and he said, hey, like here's the list of features that you don't have that we would need to use at Stack Overflow.
+
+I said, what if I get all these done in six weeks? I think he was kind of skeptical, he was like, okay, sure if you can do that. Hung up the phone. Told my wife, look, I need to be working 14 hours a day for the next 6 weeks. I just got to do it. Basically shut myself in the room, wrote all those features, and the Stack Overflow launched on Adzerk/Kevel in October of 2010. We now have hundreds of customers. We're doing billions and billions of requests a day through the system, and we're currently at about 50 people.
+
+Ben: That's awesome. Thanks so much to James. Since we know that probably only a small percentage of you are currently in the market for an industry-leading set of APIs to power the ad platform in your product, we figured it'd be fun to point you to a page on Kevel site that showcases the company's story and their history. You can check that out at kevel.co/history, and thanks to James in the team.
+
+Now, onto our conversation with Brad Stone on Amazon Unbound.
+
+David: We thought of a fun way to start—I don't think we've heard you do on any of the other pods you’ve been on yet. That I want to hear the story behind was—what is it called, the monograph page at the front of the book?
+
+Brad: The epigraph.
+
+David: The epigraph. You have two quotes, and the second one I just loved as a lifelong Steinbeck fan myself. You say—I think this is from Cannery Row—“It has always seemed strange to me... the things we admire in men, kindness and generosity, openness, honesty, understanding, and feeling are the concomitants of failure in our system. And those traits we detest, sharpness, greed, acquisitiveness, meanness, egotism, and self-interest are the traits of success. And while men admire the quality of the first they love the produce of the second.” Where did you find that?
+
+Brad: First of all, let me start with the other quote on that page from a book called The Last Days of Night about Thomas Edison. Actually, it was an Amazon Board Member named, Bing Gordon, who had pointed me to that novel. And that's about Edison in the system of invention and how applicable that is to Amazon and to Bezos. He has created a system of invention at Amazon, not just being an inventor, but creating the processes, the rituals, and all of that and then extended it to the Washington Post. That was my soul quote on that page, but it's a little bit of a flowery quote.
+
+In this book, I wanted readers to really think about Amazon's impact—the good and the bad—not just a system of invention, but the unanticipated consequences of building systems at scale. They're supposed to move fast and never break things, but in fact, with the marketplace globalizing and with the transportation network expanding, there have been repercussions.
+
+I was searching for that alternate quote that can bring readers into the book with two things to think about. And yeah, Cannery Row was a book I had read and probably had underlined that quote. I was looking back and talking to my editor Stephanie at Simon & Schuster about it. Just came back, returned to that quote as being this great example of maybe something that could get readers thinking about the things that we're celebrating in business figures like Jeff Bezos.
+
+David: It's such a perfect quote. Before we get into the content of the book and talking all about Amazon., what was the moment when you decided The Everything Store needed a sequel?
+
+Brad: I was thinking about that. I went back to my notes and I started to do interviews for this in 2017. That was before HQ2 was announced before Bezos became a figure of tabloid interest, and obviously before some of the more recent antitrust stuff and the pandemic. I think it was around the realization that Alexa had changed the company, the market cap had expanded so quickly, the transportation business had started, and that I was still on the road doing talks about Amazon about The Everything store, but the story had changed.
+
+David: Right, which came out in 2013.
+
+Brad: Right. So the $120 billion market cap was at the end of 2017, probably around an $800 billion dollar market cap. I just felt like there were a lot of stories. When you’re starting a book, you're also realizing that you'll be working on it for at least two or three years. I figured it's probably going to get better. I had no idea. They kept adding other chapters.
+
+For a long time, I was thinking how can I end this in the pandemic? And its navigation of it ended up being the encapsulation of everything that's probably great and effective about Amazon, some of the dangers of it getting so big and dominant, and having so many advantages. That was crystallized during the pandemic when all of its competitors basically stopped operating.
+
+David: I hadn't quite thought about this, it's a huge opportunity cost for you to decide to write a book because you're a full-time journalist, editor. You're running Bloomberg's technology team. You had to take a full sabbatical to do this, right?
+
+Brad: Yep. I took a couple of months off to write it. I am fortunate in that at my perch at Bloomberg, we're working, writing, thinking about this stuff anyway. Doing this—at least reporting it in addition to the day job—isn't as difficult as it seems. And maybe I'm also fortunate that I'm a manager with a lot of support around me so I can pull that off. But David, the one difficult thing is, particularly writing about tech companies, they change so often. I sometimes think about it as jumping onto a train.
+
+You guys remember my last book was called The Upstarts about Uber and Airbnb. I jumped in the train, moved, and I fell under the tracks because it was like a month after that book came out.
+
+Ben: 2017 with Uber.
+
+Brad: The first Medium post by Susan came out alleging discriminatory culture at Uber, and then the story started rapidly changing. I came out with a paperback a year later that had an additional chapter on that. I’m proud of that book in retrospect, and it captures a moment in Silicon Valley. But it was a great illustration of just the risks of writing about companies that change so often.
+
+And had Bezos postponed his CEO resignation announcement for another quarter, that would have been a disaster.
+
+David: You definitely would have had to write the third book.
+
+Brad: Yeah. In this respect, on this one, I got lucky, as unlucky as I got with The Upstarts because I had time to add to the book. And I also recognize that the story I was telling (in some ways) was very consistent with the idea of Bezos getting more and more distant from Amazon and then moving into a broader world and focusing on other things.
+
+Ben: Just to frame how much has happened since the first book, I was reading my copy of Amazon Unbound, and a friend said, what is that? I was like, oh, it's the second book by Brad Stone on Amazon. He was like, he already wrote the book on Amazon, right? I was looking at the date that The Everything Store came out, and Amazon has created over a trillion and a half dollars of market cap since you released the first book.
+
+David: Oh my God.
+
+Brad: Crazy, it's crazy. That's just the numerical representation of it. The Kindle company became the Alexa company, AWS was a cipher in 2013, the company revealed the financials in 2015, and the world recognized how good of a business that was. The marketplace became global and on and on. Amazon entered India—I have a chapter about that in the book—and Mexico. The high-profile battle at the Trump administration. The Jedi contract, HQ2, the advertising business really germinated over the past few years. The Prime Video and Amazon Studios business and Bezos’ is neck-deep involvement in that.
+
+In some ways, maybe the momentum and some of the ideas were there back in 2013, but certainly, it's all become very public and shaped the perception of Amazon ever since.
+
+David: I don't know if listeners would agree or if you would agree. I felt to a certain extent The Everything Store was kind of like the Liar's Poker or the Social Network of Amazon. I don't think you intended it to be like a cautionary tale in the same way that those books were. But for me at least, I read that book and I was like, this is an amazing company. It doubled, tripled, quadrupled my admiration for the company, and either drew me to it as a shareholder. Did you feel that way? The company—whatever they felt initially—did they see that they got applicants who started coming to the company being like I read The Everything Store, I want to work here?
+
+Brad: I do take a little bit of pride in the fact that people can come to both these books and take a lot of different things out of it. Critics will come out of it—the first book and then Amazon Unbound—with dockets full of evidence that they have for the next attack on Amazon. Fans of the company or employees at the company might find a flattering portrayal. But my goal is really just to tell a good story.
+
+Yeah, I'm an Amazon customer, but I don't think I would be writing two books about the company if I didn't on some level admire entrepreneurship. I also find plenty of cause for concern in some of their anti-competitive tactics and some of the ways in which they've administered the marketplace or they build these transportation networks without really controlling them or employing the workers and how there are repercussions there.
+
+But I don't feel like I'm a critic and hopefully I'm not a geographer. It's not an old-school, Silicon Valley book of how this triumph was accomplished. I try to tell the words in all the stories and then hope different people can take different things out of it.
+
+Ben: I finished it. I came in right under the finish line yesterday. I definitely felt like toward the end, your description of how the company did through COVID and basically what they did for the world was really well-balanced. That was the thing that definitely hit me the most and your skill as an author of something that is currently unfolding is both looking back and saying, here are the things that they really screwed up during COVID. They seem pretty unabashed about it, but balancing that with the fact that between AWS and the incredible logistics networks they've built were all way better off over the last year for them existing.
+
+Brad: I think that is easier than it looks because at the moment, everyone is telling a really simplistic version of that story. You have critics inside and around the company—particularly in the organized labor movement—that are simply looking for the missteps and to characterize the company as irresponsible and putting employees at risk and obscuring the toll. That's obviously not true. There are human beings at Amazon, and they did their best during the pandemic amid incredibly challenging circumstances.
+
+Then on the other side, you have Amazon wrapping itself up in the mantle of the pandemic hero who made no missteps, did everything by the book, and where virtually perfect in her unfairly maligned.
+
+David: You had the Jake [...] quote in the book that I think he said, “I'm confident when the short-term and long-term histories are written, no one will have done more for the world than Amazon here.”
+
+Brad: Right. Just purely talking to everyone and figuring out what they did, they hired some world-famous virologist to counsel them, but they got lost in the confusion of March 2020 and they did make some mistakes. They did fire the whistleblowers, and there were lots of employees and executives who left the company and felt that was just wrong. Talking to as many people as I could, combining their accounts, looking at both sides, and trying to navigate the real story instead of the partisan stories that emerged over the last year and a half, that's basically the formula.
+
+Ben: I'm curious what your relationship with Amazon was as you are writing this because I think you made it pretty clear that you didn't actually speak with Jeff. But I imagine there are lots of conversations with Amazon PR and of course many departed and current executives. How does that dance go?
+
+Brad: When I approached them in 2017 or maybe ‘18 when I first told them about it, they were pretty receptive. Almost as if they had maybe been anticipating, or at least anticipating that somebody would do the update to The Everything Store.
+
+David: They could see the sales data. They were going to launch their first-party version.
+
+Brad: Exactly, the Amazon basics history. I'd send Bezos a couple of notes explaining what I wanted to do and asking of course for access to him. They assigned a PR person to me, and they basically said after a while that they would give me access to anyone I wanted to talk to at the company and they would see about Bezos toward the end. I did labor under the perhaps false hope that I would break down his reluctance and get him to talk.
+
+In the end, it didn't happen and I would just point to the recent history and his reluctance to really engage in a meaningful way with any kind of journalist over the past few years to address the challenges and tension points in Amazon history. When he's done it, it's always been about the broader things—Blue Origin or the Washington Post. He's talked to fellow billionaires, an Amazon employee, or his brother. In the end, even though I did harbor some hopes, maybe it wasn't all that surprising that he's not willing to sit for a Steve Jobs-like end of career retrospective.
+
+Ben: Plenty of time.
+
+Brad: Yeah, he's got time. But the other thing is I don't feel like the book suffered because of that. He's incredibly disciplined. He tells the same stories that are like polished little stones that he's crafted over the years, and I've heard them all. Frankly, I could probably recite them all.
+
+David: I don't know, to me I thought it was almost better (a) because you knew what he would have given you if you had. But (b) I thought one of the coolest things about this book that I don't remember as much being in The Everything Store was the access you had to the S-team. I feel like we really got the stories of Dave Clark, some of the other folks that most people don't know about but have had huge impacts.
+
+Brad: People really don't know who Dave Clark is. He's now the CEO of the retail business. One of the most powerful executives at Amazon, and he grew up in the sort of operations and fulfillment part of the business. As obviously a genius, great at building big systems, and he devised and executed the whole transportation arm of Amazon logistics.
+
+One of the interesting revealing things that I found in my research was his original boss at Amazon or one of his first bosses became his best friend and was the best man at his wedding. And then he gets promoted over that guy. When that executive leaves Amazon to go to Target, Dave Clark basically has Amazon sue him.
+
+David: Yeah. That was the most heartbreaking moment in the book.
+
+Brad: Yeah and they never talked again. Right there encapsulated perfectly is Amazon's ruthless, relentless, business-focused, competitive mindset where relationships and empathy don't really factor into it. I don't want to say that there's a little bit of heartlessness or a lack of empathy that goes into this empire-building. But okay, I did just say that, and right there was illustrated—he sued his best man. He's one of them now most successful executives, most prominent executives at Amazon sitting there trading tweets with Bernie Sanders and other Amazon critics.
+
+Ben: I mean, this is Dave Clark, this isn't Jeff Bezos. This is an employee who rose up through the ranks who was indoctrinated with the Amazon culture, clearly bleeds into his personal life because he severed ties with his best man. That's completely outside the scope of a business relationship. How do you think about your comments that you had made in the everything store around Jeff bots in the current day, and does that apply in this situation?
+
+Brad: I actually dropped that terminology. I wanted to stand on its own and be fresh in part because even though I was sort of kidding about that in the first book, Mackenzie mentioned that in her one-star review I think. There were definitely executives who took it really way too personally, but I do make the same point.
+
+I think at the end of that chapter on Dave Clark and operations I say that he had demonstrated in some ways some of the Bezos ideals. The work in the company over everything else, not a lot of empathy, consensus building is really subjugated to getting to the right answer and doing what's best for the company and the customer. In some of these actions towards his fellow friend, Clark had illustrated a little bit of Bezos’ philosophy. Maybe I said it without just using the phrase.
+
+David: It's funny all the Jeff bots. I don't think the Liar’s Poker analogy is super applicable. The Everything Store is its own thing. But that was one of those things to viewers. MacKenzie at least got so offended by that, and probably Amazon and Jeff did too. But there's another side of that where you're like, yeah, if you're going to come to Amazon, you're going to be in charge of something, and you get to be Jeff for something. There's something appealing in that too, right?
+
+Brad: I think what I originally was riffing on with that term was how he's so effortlessly alluded difficult questions back when he gave interviews. And then I noticed that when I would talk to an executive like Steve Kessel who is running the Kindle business and then started to run the physical retail business that he had the same method for evading questions, and that was the origin of the Jeff bot idea. That they were just so all so skilled in the same exact way of speaking publicly and not saying anything.
+
+Ben: When David and I were reading it, we were talking about this beforehand, the big aha moment of this book (at least in my opinion) was that this concept of interlocking and self-reinforcing businesses. Whereas in the previous book, it was very clearly the Amazon flywheel. We've all seen the diagram a zillion times at this point. How did you come to that realization of the self-reinforcing businesses as the point that you want to drive home this time?
+
+Brad: It might have been in the chapter on Prime Video. It just seemed for a long time even employees and some board members and investors on Amazon didn't understand Bezos’ infatuation with Hollywood and his investment in video, and almost saw it as a personal weakness, midlife crisis, a digression, or a diversion. But as with all these things, so often, Bezos is just simply ahead of the pack in thinking about it.
+
+It was this idea that Prime was a two-day shipping club and then it was a one-day shipping club. But the reality is that fulfillment centers are outside every major American city and shipping really ceases to be a differentiating factor. Prime would have to be something more, would have to be a content club.
+
+The way in which Prime Video feeds in the Prime and reinforces the retail business, and Prime Videos (in some ways) a consumer application of AWS because it's streaming and sitting on Amazon servers. The same with Alexa, it being a consumer application of AWS. That's how Jeff conceived it with that first email to executives at a $20 computer whose brains are in the cloud controllable by voice. It also goes back to one quote from The Everything Store where he said to Tim O’Reilly, we don't have any big advantages so we have to weave a rope with smaller advantages.
+
+That's the way Bezos thinks and the way he's encouraging his executives to think. What are you doing for the cloud business? What are you doing for Alexa? Getting everyone to go and exploit the assets and the advantages Amazon has. You've got this set of really opaque and hidden connections between all these businesses that are at the center of how Amazon operates. While they'll probably really resist mightily any effort or suggestion that they should break up.
+
+Ben: Actually, I want to put a pin in antitrust for one second and ask this question sort of in a different way, which was when I heard you were writing this book I made the comment to David that The Everything Store is a pretty clean narrative. It's one idea, it’s ecommerce starting with books becoming everything. It's The Everything Store and it's the story of this maniacal guy who's going to pull that off.
+
+For this one, I was like, oh my God, Amazon has done so many random things and many of them have become very big businesses. They're not a conglomerate like Berkshire Hathaway because the S-team is much more than capital allocators. They're not just sending money to the head office. His businesses really do—as you would later coin—interlock.
+
+I just think it's so fascinating that they occupied this middle ground between a classic conglomerate and what you would think of that sort of a normal business should just go into near adjacencies. Where it's like, well, let’s expand and address a very similar market. Whereas Amazon is taking the strategy of we are going to go after completely different markets and find ways to link them together with the same customer. It's just a super unique structure.
+
+Brad: They do both, right? For every satellite project Kuiper where they're going to get into internet access if they can ever launch the satellites, there's the physical retail initiative, the Amazon grocery stores that will also function as ecommerce distribution centers, and Pick and Pack in addition to using their AI strength. Use the Go Store technology to do cashierless checkout. There is some sort of far-field business expansion at the same time as they do kind of leach out into adjacent markets.
+
+Ben: Do you think there's any advantage to AWS and the retail business being under the same roof at this point?
+
+Brad: Totally. Yeah, retail is the biggest customer of AWS. It's the first customer. AWS is going to have a beta tester for every new service. It'll get to scale very quickly and enjoy the economies of scale because Amazon retail would be a big customer. And then on the retail side, I would assume they're going to “pay” more of a wholesale price for the cloud instead of a retail price, and then have the biggest and the best cloud provider behind them at moments of intense traffic during a pandemic or in the holiday season.
+
+David: We did an LP show a couple of weeks ago with Oliver Sharp from Highspot about customer-led growth and customers’ interests. It’s like, yeah, the number one customer is right there in the same building.
+
+Brad: Just really quickly, in the device business and the video business with the whole is to intensify their relationship with the Amazon customer is built atop AWS. Things like Alexa are possible because the brains are sitting in the Amazon Data Center and are constantly being upgraded.
+
+David: You mentioned this in the book and I'd heard this before that Amazon retail ran on Oracle. Is it still in addition to AWS? Did you find out if that's still together or if they totally transitioned off to Oracle now?
+
+Brad: They made a big fuss online when Jeff Wilke went and ripped out the last Oracle server used in Amazon retail. I think that was a couple of years ago. They were very proud of it, and that was part of the long-standing devolution of the relationship between the two companies.
+
+David: Yeah. It's all well and everything that was to come. Okay, so on those threads, the long-term, the interlocking business, and video, in particular, one thing I've been watching—following Amazon for a long time, been a shareholder for a long time, I have lots of friends there. I had no idea that this campfire thing happened, and that it started in 2010 way before video and Hollywood. Tell us more about this campfire thing. And for people who haven't read the book yet, you can tell about it.
+
+Brad: Yeah, and thank you, David. That's one of the things that I feel like my gut in the book and I was proud of and it took a lot of detective work and not a lot of people picked up on it. This has been mentioned a couple of times in the press, but basically for the last 10 years (at least before the pandemic) Bezos was hosting this secretive event first in Santa Fe among the literary elite, then it migrated to Santa Barbara more, and moved in the direction of the Hollywood elite. Oprah, Shonda Rhimes, and every celebrity you can imagine is invited. They are flown in private jets, their families are invited.
+
+David: This is so not Amazon.
+
+Brad: No, it's not. That's why no one ever knew or it was never reported who actually paid for this. I went into it thinking that actually Bezos paid for it personally because it's so not unfrugal. They get bags of swag in their hotel rooms. When the kids come they're given an individual counselor.
+
+David: It's like Sun Valley at the Allen & Company conference.
+
+Brad: Combined with a Ted because they'll bring in speakers and a networking event. There are hikes, there's a beach club. They rent out a whole hotel and beach club in Santa Barbara.
+
+Ben: They had Michael Lewis come to speak that one year.
+
+Brad: I've got a bunch of the guests and the attendees in the book.
+
+David: Are we getting our invites for next year?
+
+Brad: I am hoping for mine, but in fact, as I looked into it, Amazon pays for it. Bezos, he brought his family, called it the best part of his year. He loved it. Essentially, you had to almost put this first a literary community and then the entertainment community, bring them into Amazon's orbit, get to know people, strengthen the relationships, and show how important that was to him as he was thinking more about Prime being a bundle of important content, not just a shipping program.
+
+David: Yeah. I was so blown away. Everything about that just seemed so anti-Amazon to me and that it started in 2010.
+
+Brad: It really is a symbol of its evolving ambitions because it was very much a literary weekend. You would have big-name authors. George R.R. Martin would be the center of attention. Actually, he probably would still be the center of attention.
+
+David: Bezos, as you said in the book, he wants his Game of Thrones, right?
+
+Brad: He wants his Game of Thrones, right. Maybe, if they purchase MGM in the next couple of days, they'll have their James Bond, at least.
+
+Ben: It is now time for the second sponsor of this episode, masterworks.io. Are you concerned with the performance of your portfolio over the next several years? According to Masterworks, JPMorgan, BlackRock, and just about every other big bank are projecting public equity returns of 3%–5% over the next five years. Even the analysts at Bank of America are urging investors to consider real assets as a part of an inflation strategy for government spending.
+
+Where are the smartest people putting their money? Well, at billion-dollar endowments, 55% of the investments are going into alternatives. These are managers that have produced the best returns for decades. Long-time Acquired listeners will know this, but what is the interesting alternative asset class that Masterworks provides access to? It is art.
+
+Contemporary art has appreciated 14% annually from 1995 to 2020 outperforming other real assets like real estate and gold. Masterworks is disrupting this centuries-old asset class by selling shares in multi-million-dollar paintings by artists like Banksy, Picasso, and Warhol. For the first time ever, you can allocate a portion of your portfolio to one of the best-performing asset classes over the last 25 years.
+
+See important information at masterworks.io/disclaimer. If you want to get started, you can go to masterworks.io or click the link in the show notes and use the code acquired to skip the 30,000+ person waitlist.
+
+David: Three individual business lines, I want to get your take on since you studied them so deeply. Let's start with video, there's now been, what do we think? $10, $20, $30, $40 billion of capital from Amazon sunk into video, easily. Good use of capital? The jury’s still out because there's no way to know this from Amazon's financial reporting.
+
+Brad: When you think about how valuable Prime is to the whole Amazon ecosystem, the fact that yes, shipping is receding as a centerpiece as I said in the direction that entertainment is going in, and the fact that Amazon wants to be the everything store and the DVDs shelves disappeared—this is the future of entertainment. They tend to also move in these directions and then figure out how to monetize them later.
+
+Only now we're seeing the emergence of IMDb TV, which is a horrible name for anything but is this streaming service that is alongside Prime Video and it's free but supported by ads. Now you've got this massive advertising business. I think $6 billion in the last quarter. That's the other category.
+
+Ben: Quarter. It’s a $6 billion a quarter business. That's like a 100% margin.
+
+Brad: Right, exactly.
+
+David: That's one of the business lines I don't need your take on whether it's good or not. It's obviously good.
+
+Brad: That's why in the book I called that chapter The Gold Mine in the Backyard because it was there and they kind of turned it on. The more programming and content they add to that, the larger the video ad component of that becomes. It's just another act of business building. On its own, it's valuable. Then it ties into the Amazon ecosystem in these really interesting ways and then drives the central retail flywheel.
+
+David: Okay, so that's video. International, you devote a few chapters to this. (A) They screwed up China, just like eBay back in the day. Unclear if any Western company ever would have won there in ecommerce, probably not. Then India and [...] that you talked about too. Another business line that they have sunk untold billions into, the scene of Bezos wanting to ride in on the elephant, and he has to settle for the flatbed truck to deliver the check to...
+
+Ben: That’s in India, right?
+
+David: In India, yeah. What's the state of those businesses?
+
+Brad: India I think they built a big business there. It wouldn't surprise me if it was still unprofitable. Although I think the international part of the income statement in the last quarter was profitable for one of the first times. But India strikes me as still probably a money-losing proposition. In part because the political climate there has become so hostile to international companies. The Modi coalition has become nationalist, and they’re protecting the mom-and-pop shops that make up that economy.
+
+Amazon had to operate as a pure marketplace business and really has been restricted with some of its workarounds like investing in the largest sellers on its Marketplace. But it's invested in Prime video, TV shows, and movies there, and changed the way people shop particularly in the larger cities. Now of course everything has been thrown into chaos by COVID-19. I wouldn't call that a failure, it’s still a bit of massively expensive work in progress. I quote Bezos in the book as saying, “The future of the world is the United States, China, and India. We need to succeed in two out of three.” They're not taking no for an answer.
+
+David: The interesting thing in India is it does seem like the game is still afoot because Flipkart, to my mind, I haven’t thought about this until reading the book, totally screwed up by selling to Walmart. If Flipkart were still an independent Indian national company, absolutely the Modi regime (to my mind) would be putting their fingers on the scale.
+
+Brad: There would be Reliance right now as the homegrown champion. I think I quote a Flipkart (maybe) board member investor in the book as saying, “If there was a mistake to make, we made it.”
+
+David: You had the great quote too, I don't know that you had a name on it but it was just an S-team member who said, “We didn't know if we were going to get it right in India, but we knew Walmart was going to get it wrong.”
+
+Brad: Exactly. Then you have Reliance who's now an offline conglomerate, who’s now trying to be the national ecommerce champion. Yet, as we know from experience, moving expertise in physical stores into the online channel is not easy. It's really a completely different business. In some ways, it's really disruptive. That's a game in progress.
+
+Then I tell the story in Mexico, in part for two reasons, (1) they tried to launch in Mexico without Google. It was a great illustration of how concerned Bezos and Jeff Wilke were about Amazon’s reliance on Google and how they spent billions of dollars every year to advertise and acquire customers via search. They launched in Mexico without search advertising, and it doesn't work.
+
+Their numbers are upside down because they're trying to acquire customers with billboards and conventional ads, and it's super expensive and ultimately unproductive. So they turn on Google advertising. Then the second reason that was interesting was, it's a tragic story but they hired the CEO of their business in Mexico who ends up getting fired from the company. Then is accused of having his wife assassinated. Then goes on the lam and has never been seen since.
+
+David: You had coffee with him in San Francisco.
+
+Brad: Before he hired the assassins. I had absolutely no idea. To me, it was interesting. I don't want to read too much of it, but they hired the guy, they had him run their business in Mexico, and obviously, he turned out to be an unsavory character. There was a little bit of interesting judgment, who knows, maybe unforeseeable. But that was a story that ended in really hard to believe tragedy.
+
+David: Totally.
+
+Ben: It is staggering that that nugget is in this business book. We haven't even gotten to the whole sort of 2018–2019 saga and Jeff's personal life. You're reading this, it's not by any means dry, it's one of the most interesting companies in the world written in this thriller-like way, but it's a business book. Then you hear that anecdote and you're like, I'm sorry, what? Did you have to hold yourself back from wanting to dig in further to that as a drama?
+
+Brad: A little bit. I mean, I did dig in further and sort of had to measure it because it is so startling and different in tone and content. I felt like it was interesting and I think it was relevant. The kicker of that whole section was how Amazon had to turn off Google AdWords after the assassination because the news story kept popping up. It was just so interesting and showed the strange interdependence between the two companies.
+
+Ben: Well, this is like a place where I really wanted to ask this question because we were talking a lot about Flipkart. It became very obvious to me (reading this book) that Jeff Bezos does indeed care about competition, in addition to the customer. It's this famous anecdote and I've heard it quoted to me by a thousand startup Founders over the years saying, oh, I don't pay attention to competition because Jeff Bezos doesn't. I'm only worried about my customer. Sure.
+
+After diving in as deep as you have, how would you massage how he actually looks at the competition, and when to pay attention to it and when not to?
+
+Brad: Whenever they say, it's disingenuous about that. It's theater.
+
+David: Brad, it's a leadership principle.
+
+Brad: Of course you pay attention to them. We study them, but we just don't obsess over them. We obsess over customers. Bezos came to India in 2014, and Flipkart’s got billboards lining the road from the airport. He's there studying their methods. They launched Big Billion Day, and then he insists on launching a sort of celebration of India's Space Program the next day. He wants to make a splash with the elephants. It's all very explicit.
+
+The Google story of Mexico. There's another part of the book where he authorizes Prime now. A real foray into grocery delivery and fast two-hour delivery because Google is launching Google Express. At some point, they're launching it in Seattle, his backyard. This was an opportunity that he thought would be there for them down the road and suddenly he saw Google moving after it. This was a land grab. I don’t hold it against them. It all seems like good business to me, but the idea that they've got a higher ideal that puts them above or beyond focusing on competitors is definitely not true.
+
+David: To that moment and this competitive dynamic of Bezos, I don't think you wrote this in the book but, was Prime now also partially a response to Instacart? I can't ignore the irony of both Instacart and Flipkart being founded by former Amazon Engineers who were like, we should do this. Amazon was like, we’re not going to do this. Then they go do it and raise billions of dollars and Amazon's like, we're doing it.
+
+Brad: No. In that chapter, it's not just Google Express, it's Instacart and their success of fundraising rounds. Sometimes it's a story in the Wall Street Journal, the Times, or Bloomberg that catches their eye and there's a competitive response. Yes, certainly Instacart, the fact that this was a former employee had hit them hard, and they tried to copy it.
+
+I talk about what Prime now was at the beginning. One element of it, which they called [...], was an effort to basically do the same thing as Instacart. Kind of syndicate offline physical retailers and use their shelves as fulfillment centers and deliver those with contractors to people's homes.
+
+What they found when they tried to emulate Instacart is that no grocery store was going to work with Amazon. That would be madness. Particularly since in a very Amazon-like way, they also had this AmazonFresh experiment happening in Seattle, and by that point probably San Francisco and LA, that seemed like this big mortal threat to the grocery stores. Little did they know, Amazon Fresh at the time was kind of a disaster and wasn't really being expanded.
+
+But Instacart has the benefit of being a technology platform for other grocery stores. Whereas Amazon was kind of doing both, a little bit of 3P and 1P. They even went to Whole Foods back in 2015 and got told no, which was interesting and precipitated a little bit of the relationship down the line.
+
+David: There was a fun little moment that just reminded me of in the book. I think you either wrote implied that John Mackey at Whole Foods reached out to Bezos either through Bloomberg or after having seen something in Bloomberg.
+
+Brad: Right. The companies had been circling each other. Activist investors were kind of pummeling Whole Foods Market. My colleague at Bloomberg, Spencer Soper, wrote an article that suggested that Amazon had considered buying Whole Foods in the past, which they had. That was a precipitating event to Mackey saying maybe we should pick up the phone and call these guys, maybe Amazon's our way out.
+
+Then I've got the name of whoever this was in the book, and I'm not going to be able to remember it, but somebody who was advising Mackey had been active in Democratic politics and called Jay Carney, and that precipitated the deal.
+
+Ben: Fascinating. That was one of David and my first big episodes. I woke up, saw the news, we texted each other and said, oh my God, we have to do this. We have to cover Amazon and Whole Foods even though we've never done a live on the scene thing before. That was, of course, not a part of the narrative at that point in history. It’s just cool to hear it unearthed.
+
+David: The third business line I want your opinion on is, not the OG OG, but pretty close—the first kind of pillar of the story of Amazon is the Marketplace. I'd always assumed that this is an unassailable, unbelievable business. Even putting AWS aside, which on its own, should be a FAANG company. US Marketplace, also on its own, should be a FAANG Company. You paint kind of a dark picture of what's going on with the Marketplace right now. What’s your take? Tell us more.
+
+Brad: They made a series of very logical choices over the years which unlocked a tremendous amount of opportunity and growth. In fact, one of the big questions I had going into the book was how does the retail growth of a 20-year-old company start to re-accelerate? That seems to defy the laws of company gravity. The bigger you are, the slower you grow. What exactly happened there in 2015–2016 that GMV kind of took off? I remember looking into it and talking to former members of that team. Essentially, again back to the competition point, they are “inspired.”
+
+Their eyes opened by two companies. (1) Alibaba is expanding AliExpress with the idea that the sellers who have learned how to sell on Alibaba in China could now reach customers in the US and Europe. That was a seductive idea. I think it got the attention of Amazon executives. In fact, I think, except for maybe parts of Europe, that really hasn't worked out that well. In any event, that was sort of one inspiration. There was internal communication among Amazon executives that I cite in the book expressing fear that maybe Jack Ma would like to reduce fees to nothing in an effort to expand outside China.
+
+David: Which is normal in China ecommerce as we see on Acquired.
+
+Brad: Exactly. The other inspiration was wish.com conducting a kind of geographic arbitrage, getting sellers in China and other countries to sell to the West with really low fees, no-name brands, generic products, sometimes low quality, and weeks-long wait shipping time. Nevertheless, huge selection, really low prices, was raising money in Silicon Valley, and kind of taking off. Bezos [...] his lieutenants and says, you’re on this, right? That was like, that's all they need. It's like the sly-nod from The Godfather.
+
+They open up the Marketplace, they basically reduce all the friction to selling from China to the rest of the world. They're translating from Mandarin, it's self-service, sign up, and sell anywhere. They’re aggregating products in the ports and shipping them at low cost to the West. They're storing items on Amazon Fulfillment centers. They’re making it really easy for cross-border commerce to happen. That sounds great, and it was great.
+
+David: Great for consumers and the business is booming in terms of revenue.
+
+Brad: By the way, Amazon has seen that if you offer a curated selection of branded items at a high price, a very orderly store in say shoes, and then you A/B test that with a disorderly selection of unbranded products at low prices with an extensive selection and even low quality, actually customer still gravitate to the chaos in the large selection of the low prices. They knew what customers wanted. The corporate compass at Amazon is always pointed to what customers want. Again, good for customers.
+
+Then every seller in the west is suddenly blown out of the water by a wave of competition from overseas, sellers who aren't paying the same taxes, who don't have the same labor costs, who are close to or in some cases are the manufacturers, no brands, no markups on prices. Also, a group of sellers in that community that is playing hardball, are wearing black hats.
+
+David: Stealing IP or all sorts of stuff.
+
+Brad: Bots with the reviews.
+
+David: I don't know about everybody listening or you, but the number of times I get a little card on stuff I order from Amazon now saying, write a review and email it to us at this address and will send you something.
+
+Brad: When you read about exploding hoverboards, sneakers that are self-destructing after the second wear, or out-and-out fraud, it's because Amazon built these systems and scaled them. And in an Amazon-like way, ran them with algorithms, software, and a lot of human care and curation because they were moving quickly in setting up these systems and trying to globalize the marketplace before Alibaba, Wish, or anyone else.
+
+Ben: I thought that was a really interesting point that you made that was like, sure, there's this big problem with counterfeiting, IP theft, and factories selling direct even though it's really someone else's product. Let's even put that aside for a minute.
+
+There's a sort of legitimate battle going on between Chinese manufacturers with lower-cost structures who are willing to play by the rules and are willing to build legitimate brands. I think Anker is the brand that you cited that made phone chargers and all sorts of gadgets. They just have a dramatically lower cost structure than the American brand that they're selling against because everything about the company is China-based. As long as they can ship them to American customers, they can always undercut the third-party seller marketplace.
+
+Brad: Steven Yang, the CEO of Anker, says to a western seller named Bernie Thompson, who's the CEO of Plugable, which is in the same business accessories. He says to him at one point—in a very kind way because Steven’s a nice guy says—Bernie, we're going to run you over just because there’s the acknowledgement that you really can't compete. Steven and Anker, they have their manufacturing relationships and they have an underlying cost advantage.
+
+I went back to a lot of the sellers who over the years have been mentioned in Bezos’ investor letters, to take their temperature and like, here they are in the letters as the evangelists for Amazon Marketplace. I thought after many years what would their tune be, and all of them had become disgruntled because of exactly what we're talking about. One of them had that great quote, I feel like I was invited for Thanksgiving dinner and I was the turkey.
+
+David: I mean, for me, I’m (unapologetically) a huge Amazon fanboy. Up until that moment, I was like, yeah, but it's good for customers, it's good for customers, it's good for customers. Then when you went to every single person, every single seller that Amazon had championed in the past, even the guy that was sort of reluctant, you could tell he was pretty pissed off, he just didn't want to say it.
+
+Brad: I will say that Bernie Thompson is one of those sellers who has mentioned in the investor letter, this guy that Steven Yang of Anker said I'm going to run you over. Plugable, among all those guys, still is doing well. He's still selling on Amazon. He wasn't as embittered, although he did bring some arguments to Amazon to try to get them to change some policy. Look, sellers are being aggregated right now. You guys have probably heard about this. There's obviously opportunity on the Marketplace. They're being rolled up by bigger players.
+
+David: Thrasio and the like.
+
+Brad: Plugable is constantly changing the product mix and keeps bringing out new things and innovating. That's the key, someone who was selling stand-up paddleboards five years ago and still wants to be selling stand-up paddleboards today in the same way, that's commerce, that's capitalism, it's globalization plus Amazon on top, it's not going to be possible.
+
+David: The conclusion I kind of came to was like, there's a problem there in the Marketplace. I do think Amazon will probably fix it enough in their Amazon way. I'm not too worried about Amazon, but it did make me think (a) not that I'm a shareholder or anything, but less bullish on the Thrasio-type model and aggregating sellers like you were a commodity before and now you're a super commodity. Whatever your cash flow dynamics are today, is not going to be what they are tomorrow. (2) Also more bullish on Shopify and arming the rebels thesis too existing alongside Amazon.
+
+Brad: I agree with that. Amazon is doing so much now in serving so many constituencies that the brand holder who wants no part of this frontier chaos, wants to sell directly, and have a relationship with their customers. Shopify is serving that need, and Amazon kind of can't do it all.
+
+Ben: For anyone listening to the show right now, we're live on the line with a bunch of our LPs. We want to get to some questions that they have. We have to touch on, as David has it in quotes here, “the Bezos lapse of judgment” in the 2018–2019 timeframe. There's so much stuff that you said in the book that I don't think that we need to rehash, but I did have one question for you.
+
+Of all the things that you found about the helicopter flying, the helipads part of HQ2, and the insane leak from Lauren Sanchez’s brother that was happening simultaneously with the hack from NBS and the Saudi Arabian involvement. You can't make this stuff up. Was there anything that was original insights that you had found where you're like, oh my gosh, this hadn't been uncovered before?
+
+Brad: No, I mean, I think there's a lot in there. I mean, you mentioned the helipads. The idea that the request for helipads in Long Island City and Crystal City that were part of HQ2, that instituted a political backlash in New York, that Amazon claims was really just normal ordinary corporate request for aerial access, and that Bezos, not only—
+
+Ben: For a company that doesn't own helicopters.
+
+Brad: Right. Except that Bezos (what I found out) not only was seeing Lauren Sanchez who’s a helicopter pilot, but he had taken helicopter lessons at the time.
+
+David: We got to stop first, what is up with that? The dude himself almost died in a helicopter accident. Obviously, there's Kobe. Does he not get that people die in a helicopter?
+
+Brad: And he's flying them. Although, I looked for the pilot's license and I couldn't find it in any database, but I do know that he took lessons. I found that he had personally bought a Bell Helicopter and that Lauren Sanchez’s company had also registered a new Bell Helicopter at the same time. My hypothesis, he bought his-and-hers Bell Textron state-of-the-art helicopter.
+
+Anyway, there's a lot. I mean, there's a lot in there. The yacht, the fact that he's building the superyacht, three-masted schooner with an accompanying support yacht for the helicopters. That’s all fresh in the book. That took a lot of sleuthing.
+
+Then, little aspects of the three-way fight between the National Enquirer, Bezos and his representatives, and Michael Sanchez trying to clear his sullied name, then he had MBS. That really had nothing to do with the whole thing. I mean people can go read it. It's chapter 13 in the book. There's some Businessweek excerpt. It's a tangled, strange, bizarre, hall of mirrors saga.
+
+Ben: It's an unbelievable chapter. Even if you feel like I know a lot of these stories, I'm not going read it. Go buy the book and read chapter 13. It’s such a crazy story completely on its own. Do I have it right that his phone via WhatsApp was hacked by Mohammed bin Salman, and that was very likely exfiltrating data, but that has nothing to do with how the public found out about the affair?
+
+Brad: The second part is right, it had nothing to do with the National Enquirer story, which supplied the evidence filed in the voluminous court cases. Amply showed, the evidence was supplied by the brother. I would say that there's just ambiguity around whether the Saudis hacked his phone. There was a study done by a consulting company that Bezos hired as a private investigator. There's a lot of skepticism in the cybersecurity community about that study and what they found. I don't know and I don't know that we'll ever know.
+
+What's unfortunate is that the Saudi bots on Twitter have kind of taken what I wrote in that book to launch another wave of attacks against Bezos saying that he improperly accused them. The interesting thing is that there is obviously real enmity from the Saudi government, the Crown Prince, and their agents against the Washington Post and against Jeff Bezos. That is unequivocally true. The question of whether they employed Pegasus software and hacked his phone. It's also true, by the way, that NBS was sending very curious texts.
+
+David: That was suspicious.
+
+Brad: Wait, I just wanted to say one other thing that I just remembered. You asked, what was new. I'll just sort of at a distance refer. Do you remember that the center of this whole thing is whether The Enquirer had acquired explicit photographs?
+
+Ben: Yes.
+
+Brad: The selfie, we'll just leave it there. The fact that they never had it. What they had was a photograph that Michael Sanchez had taken from an escort website and passed off as an explicit photograph of the richest man in the world. That was one you cannot make up. It was funny. In retrospect, all of these parties were battling over a photograph that actually didn't exist.
+
+David: That’s unbelievable. We could do a whole nother podcast that is not a business podcast about this. I do want to ask a meta-question. What was the link reporting that? You're kind of going behind the scenes of this story and sources. You’re a journalist yourself. You have sources, obviously you know the sanctity of sources, and you're trying to report on this. Meanwhile, there are all sorts of legal ramifications here, people could be going to jail, what was that like?
+
+Brad: David, I'm not going to lie, it was awesome. I'm a business journalist. We're writing web deals, we’re writing what business people tend to be scripted, disciplined, and boring. To write about explicit selfies, Saudi agents, hacks, tabloid journalists, and double-crossing sibling betrayal. Oh, it's great.
+
+David: That's awesome.
+
+Ben: All right, last question before we open it up to the floor, Brad, have you heard from Amazon, Jeff, or anyone in the book since publishing, and have you gotten any more recent feedback than what you actually wrote in the book?
+
+Brad: Not anything official, and I think they have maybe learned from the aftermath of The Everything Store, have realized that to respond publicly would only add oxygen to the fire.
+
+As much as I might hope for a Dave Clark tweet, a Bezos Instagram rhetoric, even (praying to the heavens) another Mackenzie review, or Lauren Sanchez review, that would be awesome. I have a feeling that is not forthcoming. Informally, the feedback has all been good. It feels like a factual account and well told. That's a really informal reaction. Obviously, nothing from Bezos nor do I expect to. The response so far that I've gotten has been favorable.
+
+Ben: That's great.
+
+David: All right. Now, before we go into Q&A with our LPs, we would like to thank Perkins Coie, the official legal sponsor of these special episodes of Acquired. As long-time Acquired listeners know, Perkins Coie is a premier, technology-focused international law firm known for providing high value, strategic solutions, and extraordinary client service to businesses ranging in size from startups to Fortune 50 companies.
+
+I have personally worked with Perkins many times over the years in my Venture career and as an angel investor now. It has always been a great experience. I know several other Acquired listeners out there, including my co-host Ben, who feel the same way. Clients rely on Perkins Coie for counsel on company formations, IP protection, and enforcement, financing including IPOs, and mergers and acquisitions among other areas. They also advise VCs in fund formations and investments and represent their portfolio companies throughout the arc of their growth. To learn more, you can click the link in the show notes or visit them at perkinscoie.com.
+
+Ben: Anyone wants to kick us off here with the first question. Logan, I see your hand raised.
+
+Logan: Yeah, obviously, love the book. Read the book, loved it. Thank you for coming on. My question is related to Nina Rolle, the voice of Alexa. The question is more on the journalistic approach. Basically, can you go into more detail or whatever detail you can provide that you didn't include in the book on how you were able to (I don't know if this is the right phrase) hunt Nina Rolle down?
+
+None of the parties involved can confirm that she's the voice of Alexa. I was curious if you can basically say how you were able to confirm the degree of confidence that you put her name in the book? How'd you find out that she was Alexa and what was that process?
+
+Brad: Thank you, Logan. Definitely love talking about this. It was in the first book. I tracked down Bezos’ biological father. Unfortunately, there were no more long-lost relatives to hunt down in this one. I thought, well, what secrets are there to unearth?
+
+If you remember, Logan, the voice of Siri a couple of years ago—way back maybe 2012—was unveiled and it was a woman named Susan Bennett who actually hadn't even known early on that she was the voice of Siri. It was a data set that she had recorded for another company that had been acquired by Siri, and then acquired by Apple.
+
+I knew and I remembered that these synthetic voices start out with voice actors or actresses reciting yards and yards of scripts, and then the AI takes that and produces a voice. I just put finding Alexa as one of my challenges for the book.
+
+Then it was right understanding where these voices come from. There's really only a couple of studios to do it. There's one in Atlanta that produces Siri called GM Voices. Just networking through employees, former employees, and people in the community, I found out that it was likely GM Voices that did Alexa. Then networking around GM Voices, I had some candidates. I went to their websites, and when I got to Nina Rolle (rhymes with trolley) her website, she had a bunch of voiceover clips that she had done in the past.
+
+I remember one was for Mott's applesauce, I think. Just playing it, I could tell. I played it for my daughters and they were like, yeah, that sounds familiar. Then I called her and she said she couldn't talk to me. That wasn't it. I did sort of know and had confirmed that it was her beforehand just through networking. Then when Amazon wouldn't talk about it and she wouldn't talk about it, I had a pretty good signal.
+
+Logan: Awesome, thank you. I'll leave it at that.
+
+Ben: Thanks, Logan. All right. Ben Grinnall.
+
+Ben G.: Super interesting book. Last week, I was part of another book club and it was for Working Backwards, so two great Fridays in a row. You've done so much reporting on Amazon and really dug deep. Two-part question. One, what is Amazon missing from their business model? What is a new opportunity or revenue stream that they haven't pursued which they could? And what's something that you think they should drop that they're currently doing?
+
+Brad: Did you ask the Working Backwards guys this question?
+
+Ben G.: Side note, it was like an eight-person book club and Wilke came to it—very different conversation.
+
+Brad: Okay, that's going to challenge me. What is the thing that is missing? Hard to imagine what the missing pieces are in the Amazon quilt of businesses because they are sort of doing everything right now.
+
+I'm inclined to say the physical grocery opportunity was one that I think they were just laid on. They bought Whole Foods and then they've been waiting to perfect this Go store technology. I think they're viewing technology as a differentiator that cameras on the ceilings and the weights in the shells. The idea that you can bypass the cashier is their big selling point for these stores.
+
+I don't know. Personally, I don't think that's a really big impediment. Waiting in line for a couple of minutes and checking your phone before you leave, I mean, maybe I'm wrong about that. I just feel like perfecting that, which has been a super expensive 10-year plus process, has slowed them down when it comes to entering physical retail in a big way. Maybe without that obsessive focus on finding a way to enter the market with a distinctive technology solution, they could have moved faster on physical retail in the opportunity to supermarkets.
+
+Ben G.: Wasn't it $10 billion or something you said in the book?
+
+Brad: I don't know that I had a number, but I definitely had some sources saying that it was the biggest single investment in Amazon history. At least alongside China is the biggest capital investment, the Go store. Then the second thing is, what are they doing that they should drop?
+
+Ben G.: Yes.
+
+Brad: That's a tough one. The AWS service recognition, the image recognition service, and AI service that they have been selling to corporate customers but also police, and government authorities. They have suspended that. They suspended it for a year after the sort of outcry and anxiety about image recognition. Now, I think they've suspended it in perpetuity.
+
+There's just deep societal discomfort about the bias in those algorithms and the way in which police authorities have historically used them. That’s an easy one for me to grasp on to and say, maybe this suspension of selling recognition to governments should be following Google and other companies and actually really abandoning the technology.
+
+Ben G.: Very cool.
+
+Ben: I have sort of an answer to that that I'm curious if Brad thinks is an answer. It’s been a really long time since we covered this on Acquired. Brad, do you think the Zappos acquisition was value creative in a big way for Amazon, or is that just been a stagnant business?
+
+Brad: It's a little bit like the acquisition of diapers.com, which was a little bit after it, in terms of neutralizing a competitor. Then allowing it to run autonomously, maybe learning from it a little bit but then pursuing their own strategy. Amazon never slowed down in terms of selling shoes or expanding the selection of shoes and apparel on its own site.
+
+In terms of value creation, maybe it hasn't been positive. But in terms of neutralizing a competitor, slowing its growth down, and blocking the capital markets of a competitor from acquiring it, and posing a real competitive threat, it's been successful. The exact same thing with diapers.com. Marc Lore did a, How I Built This on NPR over the weekend where he tells the whole sort of bitter story of being acquired by Amazon and feeling like they closed some avenues for Quidsi.
+
+This is why regulators and lawmakers now wish that the FTC had taken a harder look at those acquisitions.
+
+Ben: Let's do Brad Romney next.
+
+Brad R.: I'm curious to hear your thoughts on which elements of Amazon's innovation flywheel would you identify as being subtle yet impactful? And which elements could you potentially separate from the maybe less savory elements of the Amazon culture that you reported on?
+
+Brad: That's a good question, Brad. You might stump me with that one. I mean I think that Bezos is central to the innovation process in Amazon. As much as they like to talk about a culture, I've been mentioning decentralized teams. When you peel back some of the biggest ideas at Amazon, it tends to start with an idea for Bezos like that Alexa email. Then his sort of maniacal attention to it and sponsorship within the company.
+
+I think it's a long-term challenge for Amazon because Jassy—for all his skills as an operator and he's been amazing at AW—I don't think it's capable of wheeling off and emailing a new business idea in the way that Bezos is. Then as the founder and the CEO, Bezos just brought a level of magic to his sponsorship of these ideas. It was a combination of inspiring employees, terrifying them, and getting them to jump through hoops and jump over high bars. He walks out of meetings.
+
+I have that anecdote in the book where he believes the Alexa team isn't collecting data fast enough and he walks out of the meeting. They come up with the AMP program to go and bring Alexa out secretively into the world to collect data. Those are the kind of heroic entrepreneurial feats he can inspire. You can't bottle that up because there's one Jeff Bezos. It really often comes to having someone who's inventive and creative, but also has the fortitude and a little bit of the guts and the resources to make these huge investments and try them. Also to fall flat on his face.
+
+One theme in the book, I think, is Bezos is willing to be embarrassed. He humiliates himself with the Fire Phone. Then launches Alexa a couple of months later. He risks embarrassment and is embarrassed by the Lauren Sanchez saga. Yet, maybe doesn't really have the gene that he cares that much about her. He's at least willing to risk the humiliation. It turns out that maybe it's the susceptibility or allowing yourself to fail and fail really publicly. That's also kind of key to the innovative process.
+
+Ben: Brad, it does seem also, just to chime in here, that founders get more leeway from the street. Bezos is the guy that made this happen, therefore, he's got a lot of rope. Not just from the board, but what activist shareholder is going to come in and try and say he's not doing a good job? You can see the successor, whoever comes in, (we know who comes in), but future non-founder CEOs, they get a much shorter leash from investors.
+
+Brad: Totally. When you think about what Doug McMillon, the CEO of eBay, or even the CEO of Target have to deal with in terms of managing the street quarter-to-quarter and never really being able to go and have four lousy quarters so that you can have the potential of building something more promising down the line. Amazon can do that whenever they want. It's not just because Bezos is the founder, it's because he's stuck around but because he called the shots.
+
+With the first shareholder letter, he said this is how he's going to run his business. Then he has reproduced that letter every year and said it's still they won and repeated it all like a mantra. He's bought himself the leeway and the flexibility to do it.
+
+David: Real quick on that. You more than allude to this in the book but there's a real rivalry between Elon and Bezos. Is there any more that didn't make it into the book that you found on that?
+
+Brad: I talk about it in the book how they met early on a couple of times. Elon tried to tell Jeff that some of his technical decisions were wrong. That they had really different philosophies. Bezos was constraining his investment in Blue Origin, wanted to keep the team small, and wanted to start with suborbital space. Then Elon comes and does it all 10X, gets government contracts and commercial contracts to pay for everything. Bezos is kind of left as a straggler, something that he's really not accustomed to being in second place.
+
+I think the rivalry is real. It's super entertaining to see Elon exchange barbs with Jeff over Twitter and sometimes vice versa. It'll be interesting to see whether Bezos commits more of his time to Blue Origin now that he's retiring as CEO and tries to rescue it.
+
+I do think that company is a little bit dysfunctional in terms of Bezos owning it, operating it from afar, trying to keep its headcount small. But then really, in pursuit of SpaceX, changing directions abruptly, hiring Aerospace folks from companies like Honeywell, and changing the culture on a dime. Then investing a billion dollars worth of his return from Amazon stock every year and turbocharging it. That kind of change of pace I think has yielded some dysfunctional outcomes.
+
+Look, the story there might change in the next couple of weeks. They say New Shepherd’s going to fly paying tourists to suborbital space. Maybe that'll be a big triumph and create some momentum. But right now, they're sort of years behind all their projects and promises on a lot of these new contracts, like the Blue Moon contract, they're losing the SpaceX.
+
+Ben: Josh Guttman, let's go to you next.
+
+Josh: I was kind of curious because there's the time between The Everything Store and Amazon Unbound. Amazon started acquiring way more companies than they previously had. This was in a period where the company was much bigger too. In some ways, the acquisitions look smaller on paper. In hindsight, even Whole Foods, if you think about it in terms of the market cap now feels pretty insignificant. What has changed internally at Amazon for how they think about acquiring companies? What kind of made the cut for you in terms of what was worth talking about from an acquisition point of view?
+
+Brad: I do tell the Kiva story in one of the chapters on operations. To me it was a Dave Clark call. It was the epitome of Amazon in terms of trying to automate systems and take humans out of the equation. It was a little bit of a ruthless move in that they negotiated the thing over many years and tried to suppress its growth, then bought it, then made a promise to the Kiva founders that they could sell it externally, and then reneged on that promise.
+
+It allowed the super scaling, the fulfillment centers, and made them incredibly more efficient. Then it also furnished Dave Clark with some leadership credentials that allowed him to continue to grow inside the organization.
+
+I think you're right, Josh. I did take a little bit of a light pass on Twitch. Definitely, on Ring, I did not do much. Part of it was just streamlining the story and trying to shoehorn everything into a narrative without too many digressions and also while keeping Jeff Bezos at the center of the action, that was the main narrative challenge of the book. Amazon might acquire MGM in the next couple of days.
+
+I always thought that Amazon's ability to acquire companies was going to get severely curtailed because of all this antitrust scrutiny. We'll see what happens, but it seems like that's an asset that they'll easily be able to buy and then increase their output of movies in their catalog. You're describing one of the challenges I had of figuring out what to include, what not to include, how to keep things moving in this book that covers the entire arc of Amazon history and all these characters that populate it.
+
+Ben: Brad, to wrap, where can listeners buy the book?
+
+Brad: Well, Ben and David, it turns out that you can get it at your friendly local neighborhood bookstore. You can certainly pick it up at Barnes & Noble or if you must resort to it, it is available from Amazon itself as an ebook, as a hardcover, or as an Audible audiobook.
+
+Ben: That's great.
+
+David: You need to set up shop in your garage there selling it out the front door.
+
+Brad: Exactly or I'll be selling it on my street corner this weekend.
+
+Ben: There's a couple of parts that you actually read in the Audible if I was hearing right.
+
+Brad: I do. I do the introduction.
+
+Ben: And the acknowledgments that had to be you too, right?
+
+Brad: Frankly, it’s probably about as much as anyone wants to hear me read it. There's a reason professionals do it, which I've learned.
+
+Ben: That's great. Well, thank you so much. Anywhere else listeners should find you on the internet, follow you, or anything like that?
+
+Brad: I'm @BradStone on Twitter.
+
+Ben: That's great. Really appreciate it. LPs, thank you for joining us today. Great questions. Brad, best of luck.
+
+Brad: Thank you, guys.
+
+Ben: Cheers. All right, listeners, that is all we have for you today. Thank you for tuning in. Obviously, you heard where you can find Brad on the internet, where you can buy the book. If you do buy the book you should go leave a review. I know Brad would greatly appreciate it. It is years of shutting yourself in a room and working through this crazy process, so we should all go and help Brad get the most out of this incredible story that he has unearthed. Go leave him a review.
+
+David: Totally. I left a review. I was very excited. I put a photo of my copy of the book with all my notes on it won't. I aim to be the top reviewer for all the books that I review. I think.
+
+Ben: I think you are on 7 Powers.
+
+David: I’m number one on 7 Powers.
+
+Ben: Yeah.
+
+David: Yeah. It's all because of the image. When you leave a review, put a photo in there.
+
+Ben: Growth hack. All right. Well, listeners, we really appreciate it. As you heard at the top of the show, if you want to join the next one of these, you should become an LP, that's acquired.fm/lp. We are hanging out in Slack. That is free to join, everybody can join. You don't have to be an LP to do it. That is acquired.fm/slack. Come talk about the news of the day with us. If you like this episode, share it with a friend, subscribe from the podcast player of your choice. With that, listeners, we'll see you next time.
+
+David: We'll see you next time.
+
+‍

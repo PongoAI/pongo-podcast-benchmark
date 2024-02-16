@@ -1,0 +1,563 @@
+Ben: Welcome to this special episode of Acquired, the podcast about great technology companies and the stories and playbooks behind them. I'm Ben Gilbert and I'm the co-founder and managing director of Seattle-based Pioneer Square Labs and our venture fund, PSL Ventures.
+
+David: I'm David Rosenthal. I'm an angel investor based in San Francisco.
+
+Ben: We are your hosts. Today, we have something very unique to share with you all. It is common for top venture capital firms in Silicon Valley to get all their CEOs together once a year in one room for a CEO Summit and speak frankly with them. It is uncommon, however, to allow anything discussed to be shared publicly.
+
+Today, we are doing just that. The good people at Emergence Capital, in particular, a friend of the show, Jake Saper invited David and me to interview two very heavy hitters at their CEO Summit last week, Eric Yuan, the founder and CEO of Zoom, and Peter Gassner, the founder and CEO of Veeva Systems.
+
+David: I think this is the first time that any content from any venture firm CEO Summit has been specifically created for podcast public consumption. It's so cool.
+
+Ben: I think Peter has never done a podcast before.
+
+David: I think that's right.
+
+Ben: He's built a $20 billion company.
+
+David: Yeah, the Veeva System story is amazing as you will hear. We talked about how they raised $4 million—that's four, one after three. On just that $4 million that they didn't even consume all of that capital, they've now built a $2 billion revenue business with incredible margins. It's such a cool story. Peter is on the board of Zoom. As you'll hear, he and Eric know each other very well.
+
+Ben: It's a super different company that we normally talk about too. It's vertical-specific, so it's just in the life sciences industry. They sell high-dollar software to pharmaceutical companies and I think biotech as well, right, David?
+
+David: Yup.
+
+Ben: The topic that we discussed with both of them is capital efficient growth. That's something we felt would be super valuable for all the CEOs in the room. Obviously, that means that we think it's going to be really great for everyone to be thinking about right now.
+
+Rapid scaling on very little capital is something they obviously both know a lot about. David mentioned the $4 million total funding that Veeva raised before going public. As you remember from our Zoom episode with board member Santi Subotovsky, also an Emergence Capital partner, Zoom raised $30 million from Emergence and another $100 million from Sequoia afterward. And they never touched the vast majority, if not, all of those funds.
+
+David: I think they didn't touch any of that $130 million. Eric, as you'll hear about, had raised some money from angels along the way. That funded product development, but none of the venture money was consumed.
+
+Ben: It's crazy. If you're excited to learn about how these companies managed to pull off enormous impact with very little capital to do so, you are in the right place. If you want to discuss these topics with us after you listen, you should come join the rest of the Acquired community. I think we're 12,000 strong now, David, at acquired.fm/slack. You should join us. It is always a riot.
+
+David: This will be a great one to discuss in there with the community and other founders, including Jake Saper himself from Emergence who's active in the Slack.
+
+Ben: It's true. As many of you know, we are excited that these special episodes are brought to you by the Solana Foundation as our presenting sponsor. Solana is a global state machine and the world's most performant blockchain. What does that mean? It means developers can build applications with super low transaction fees, low latency, and not compromised composability since it is all on a single chain with one global state.
+
+Many of you have heard this. Solana is capable of processing tens of thousands of smart contracts at once. Today, we are talking with Frank, the co-founder and CEO of GenesysGo.
+
+All right, Frank, welcome to Acquired. Thank you so much for being here. My first question, can you tell us what is GenesysGo?
+
+Frank: Thanks so much for having me. I'm super excited to be here. GenesysGo at its heart is an infrastructure project building primarily on the Solana blockchain. We've been bringing decentralized networks to a piece of the Solana network stack that's traditionally been very centralized.
+
+By utilizing our native token, the Shadow token, we effectively have been able to take very centralized network architecture, decentralized that in a way where anybody can step in, contribute compute power, storage power, and receive commissions in exchange for that.
+
+What that's provided software developers on the Solana blockchain is the ability to get highly performant infrastructure at zero costs, thus lowering the barrier for entry for new developers who wanted to come online and needing a stable platform to build on.
+
+Ben: How exactly are they able to get zero-cost infrastructure? How does the decentralization element play into it?
+
+Frank: That's the magic of Web3. We took a page from all these NFT projects out there. We're releasing NFTs and basically use our NFT as a mechanism by which we decentralize our network. Whenever an NFT is traded, there's what's called an NFT royalty that gets paid. That pays for our network architecture.
+
+That's like the backbone, the foundational aspect of it. But over time, as a network becomes more and more decentralized, the costs associated with running that network, the operational costs are spread out further and further, as more and more operators start to come online. Those operators carry those costs because they're earning emissions.
+
+It's very similar if you think about the Bitcoin network, the actual Bitcoin blockchain. People contribute compute. They're paying for the hardware, the electricity, and everything in order to contribute that compute. But they're doing so because they believe that the emissions in the token, which in our case is in Shadow Tokens, they believe that their Shadow Token emissions are going to be more than enough to offset their own costs.
+
+Ben: That's awesome. Frank, thank you so much.
+
+Frank: Thanks very much.
+
+Ben: Our thanks to Solana. If you are considering developing on Solana, head on over to solana.com/developers or click the link in the show notes. As always, this is not investment advice. Please do your own research. David and I may hold positions in things we discuss on this show. This is certainly not investment advice from anybody that we had on the show today. Now on to our interview at the Emergence CEO Summit with Eric Yuan and Peter Gassner.
+
+David: To set the stage, I thought maybe, could each of you please give us a brief overview of your fundraising history up to and including Veeva and Zoom's IPOs, which ordinarily would take like an hour.
+
+Ben: This is going to be pretty short talking about a private financing history.
+
+Peter: We were simple angel investors when we just started, and then about 15 months in, some angel investors, I think that was $3 million and Emergence was $4 million. We never actually used the Emergence $4 million, but I thought we might at the time. We got within about $100,000 of using it and then we went public.
+
+Peter: The time frame, we started in 2007 in February. We raised in about 2008, maybe March or so. That was the environment at the time.
+
+Ben: Another very simple time to be fundraising and company building in.
+
+Peter: Yeah. It was hard to even open a bank account because it was the whole know-your-customer thing and financial crisis. Everything's hard.
+
+David: I think probably most people here know this, but for folks listening on the podcast today, you're doing about $2 billion in revenue at Veeva?
+
+Peter: Yeah, we're doing about $2 billion, about 30% profit or so.
+
+David: Amazing. Eric, could you share your fundraising journey with us?
+
+Eric: Sure. I started the company in 2011. First thing I did, I opened up a Wells Fargo bank account. It's very easy for me to raise capital that's why I opened up a bank account. Unfortunately, it took me several months. No VCs wanted to invest in me. Unfortunately, I do not know my brother [...] Emergence Capital. Otherwise, life would be much easier. Finally, we targeted some of our friends. It reached $3 million seed funding. That's how we started.
+
+Here comes [...]. I tried to target VC again, again, nobody wanted to invest in us either. We targeted friends and got another $6 million. That's how we started. It's very hard.
+
+Ben: Nobody wanted to talk to you at that point because most people assumed video conferencing was either a settled frontier or a race to the bottom. Am I thinking about that right?
+
+Eric: Absolutely right. That's the thing. Everyone mentioned, Eric, you are crazy. The world has known you to have another video conference solution. Another VC friend even is a great friend, he told me that, Eric, I have a check for you as long as you do something else. I couldn't say I did not listen. I was very stubborn. Also, he shared to me a story. Once I was told by a big VC, I do not want to mention the name, for sure, you guys do not like them.
+
+He told me that, Eric, I do not think your [...] works. Look at Skype, look at Google Hangout, look at Webex, they're dominating, right? I debated with him a little bit. I failed. I cannot convince him.
+
+On the way back, I told him myself, I'm going to change my Windows screensaver. Back then I was using a Windows machine. I changed the Windows screensaver—you are wrong. For several years.
+
+Ben: Just to make sure I have my facts straight, I believe you raised a $30 million dollar round led by Emergence and then another $100 million dollar round after that. Similar to Peter, you did not dip into any of that $130 million to build the business. Is that correct?
+
+Eric: For me, actually, I offered $30 million from Emergence Capital. I think we are on the right track. To be honest, actually, we don't even need to raise a Series D because at the time, with that $30 million, I think the company was completely different again.
+
+David: One thing we wanted to ask is a difference between your two companies. Peter, obviously, once you got to cash flow profitability, which was immediately, basically you never raised another round. Eric, you did make the decision to raise some more capital even after you were generating cash. Peter, you were on Eric's board when that process happened? Why did you make that decision?
+
+Peter: For Veeva, I didn't raise more just because I thought I didn't need it. It's just that simple. As far as for Eric, when you're on the board, that's really Eric's decision.
+
+Eric: As I mentioned earlier, I offered to raise $30 million from Emergence Capital. At that time, seriously, they had no plan whatsoever to raise another round of capital. The reason why we still wouldn't move forward to have a Series D is because I thought the economy would go down quite dramatically.
+
+David: This was 2017?
+
+Eric: Sixteen, '17 timeframe. I was completely wrong.
+
+Ben: It had been a seven-year bull run, of course, the end was near, right?
+
+Eric: Yeah. A long story.
+
+Peter: I think that raising that money at the time, I thought, man, maybe we don't need to do it. But also, I thought, it doesn't matter. What matters for Zoom is the great product and the customers. Whether you take some more money, you don't take some more money, it's all fine. It would all work out.
+
+Ben: As we were preparing for this interview, our first thought was, if we just had one of you up here and we were interviewing you about capital efficiency, it'd be easy to chalk it up to business model and cash flow cycle. Multimillion-dollar contracts upfront in the case of Veeva, or in Zoom, customers flocking with their credit cards for a self-serve experience. These are two completely different models.
+
+I think one of the things that it illustrated to David and I is capital efficiency is a mindset and culture thing more than a business model thing. I'm curious to hear both of your reactions to that, but also, what are the things that enabled you uniquely, more so than 99% of startups to be so capital efficient?
+
+Peter: I can take that one. I guess I've seen a little bit of Zoom and a little bit of Veeva. I would say, probably, it starts with a mindset. Just run a profitable lemonade stand. From my point of view, for me, there's safety in that. Cash generating business is always going to be valuable to somebody. At some point, a business that's not cash generating is going to be valuable to nobody. There's security in the long term. It starts with the mindset. I think Eric shared that.
+
+Then you have to have product excellence, too. That's something I think Eric and I share. We're both product people. I think also, we both worked really hard. We work really hard now, especially Eric. Probably in the first five years, I worked really hard. You didn't see me working really hard, but I saw you working really hard. We worked really hard, we worked really focused. Anything that wasn't related to the product or the customer was just BS, then just don't do it.
+
+The first five years, I was not at a conference like this, for example. I was just maniacally focused, and then the market really helps too. That's something you just have to get lucky on. It was the right timing for Veeva, it was the right timing for Zoom. Maybe if you started Zoom five years earlier or five years later, it would have been hard.
+
+Product excellence, real focus, mindset, and then you have to have some luck in your market. I'm sure there are some things that I could have tried to do or Eric could have tried to do. We might have picked a bad market and then it just wouldn't work.
+
+We're outliers and so is Eric. You have to pick something that most people think is going to fail to be an outlier. Otherwise, by definition, you're picking something that most people think is going to work. A lot of people are picking it, therefore, you're not an outlier.
+
+Just like Eric, all VCs have any kind of note except for Emergence turned us down. Ours was really simple. Vertical specific software, that's a small market and it doesn't work. That's what they would say. I was encouraged by that because I thought, well, it has an opportunity to be really good because it's something non-obvious.
+
+David: One thing that I want to double click on that we were talking about beforehand. Yes, you need to be non-obvious, to have a chance of a great outlier outcome, but you also need to be correct. What you both did was not, hey, I'm going to pick some random idea that other people think is crazy.
+
+I know Veeva, as one of your core values, clear and correct target markets that you have written on the wall. What did each of you do ahead of time that led you to really genuinely believe, yes, the world thinks this is crazy, but I really think this is going to work?
+
+Peter: I'll go first, this is really easy. I talked to three or four potential customers for our first product. They all said, we don't need that. That's not interesting. It's not a good thing to do. But I wasn't listening to that. I was listening, are they emotionally attached to where they're getting their product now?
+
+Are they emotionally attached to those people? Do I feel like they're getting value out of that thing? I could tell in their responses that they weren't attached and they weren't getting value. All four customers said it was a bad idea. They're all customers now, though.
+
+Ben: Let me understand the Peter formula to build a business. Ask a customer if they want your product, they say no. You dig deeper and say, what are you using now? And they say, oh, yeah, because I have a solution for this. But they just don't love it, so you build for them anyway on the bet that you can be better than their current.
+
+Peter: Yeah, you have to listen to what they feel, not what they say. They would say, yes, we're very happy with the solution. But then you dig, oh, tell me more. Why is that? What is it that you get out of it? It's like, uhm, uh, and that's when you know.
+
+David: That sounds like the video conferencing market circa about 2015, 2016.
+
+Eric: For me, it's very straightforward. Of course, I was an original founding team member of Webex. Two years before I started the company, I knew that Webex really sucks.
+
+David: Did you try to tell Cisco that?
+
+Eric: I told my team. I do not dare to tell others. Anyway, Skype is also not reliable. Google has done no work. Every day, I spent a lot of time talking to every customer. I know if I can build a better solution, I think at least I can survive.
+
+I never thought that everybody was going to standardize on the Zoom platform. At least I know for sure, if customers do not like something, if you can do something better, you have a chance.
+
+Ben: Eric, did you think from the outset that you were trying to build Zoom as a big company, or did you just think that you wanted to build a profitable company to survive and then you would sort of see where it went from there?
+
+Eric: I think two things. First of all, at that time, my passion was very straightforward because Webex is more like my baby. I feel like I worked so hard for so many years, I let a customer down. I really wanted to fix that problem, but Cisco doesn't want me to start over. I had no choice but to leave to build Zoom. This is the number one reason.
+
+After I started a company, I realized, wow, it's so hard to raise capital. By the way, the money that the VC gives to you, don't think that's the money. That's trust. Every dollar matters. That's why every day I was thinking about how to survive, how to survive, how to survive. Even today, seriously. I still think about, I wake up at night, how to survive?
+
+David: You mentioned people in your team. When you started Zoom, you were a solo founder, but you brought a large number of people with you. One of the first operational topics we wanted to dig into around this topic of capital-efficient growth is hiring and people. That feels like such an important part of the culture and DNA of having people who are going to get on board with, yeah, there's not going to be the spiritual equivalent of kind bars and exposed brick in our office here.
+
+Both of you, but Eric to start because you brought so many people with you from Webex, how did you select the people that you brought?
+
+Eric: All of them are very good engineers, except for me. I did not write any code. On day one, we had around 25, where soon we got another 15. A total of 40 people and myself included. All the certain people, they all write all kinds of code.
+
+David: And this was all funded with angel money?
+
+Eric: Yes, exactly. Actually, we ran into a problem in less than two years. That's why at the time, we had a Series A. We've only had engineers just to get the products done. I'm one of the product managers, UI designer, and also the facility guy, everything else, seriously, on day one.
+
+I used the furniture and bought everything by myself. I also wrote about the company culture and values. That's pretty much what I did. Even for the first several years, after the product is ready, some [...] mentioned, hey, you already have money in the bank now, why not build a marketing team? Look at your competitors, they spent a lot of money on the billboard and [...]. At the time, I said, no.
+
+For the first four years, we did not have any marketing team. Only until 2015, we started building up a marketing team. I want to be very disciplined.
+
+David: To just highlight this, you started the company with 25, quickly growing to 40 people. Those were 39 engineers and you. No product managers, no marketing, no sales.
+
+Eric: Yeah. That's the reason why I know how to use QuickBooks. I never know how to use it. Seriously, I had to learn how to use it.
+
+Ben: It sounds very easy to say don't buy billboards. You got your customers somehow. How did you get the snowball going?
+
+Eric: A little bit lucky because seriously, luck does play a role. Several weeks before we launched a product, seriously, we had no idea how to get a first customer. Luckily, a world-famous reporter, Walter Mossberg, valued our service.
+
+We were so nervous. He's very straightforward. The good news, he did write down a very nice article published in Wall Street Journal. Also, he personally recorded a video. Overnight, we got 50,000.
+
+Ben: Fifty thousand users from that article?
+
+Eric: Yeah, but most of them left after several weeks.
+
+Ben: But those who stayed, I imagined that was the kernel of the virality of telling their friends who told their friends, who told their friends.
+
+Eric: I maintained a very good personal relationship with them, either VIP accounts or sent them a small gift. Someone that canceled, back then, it was $9.99. I personally sent him an email. Why did you cancel our service? What can we do differently? We still maintain a relationship even today.
+
+Ben: One of the CEOs wrote in and asked us about different metrics to track. Did you have a north star? After you had those 50,000 people where you realized, okay, I'm holding something in my hand and the sand could slip through my fingers, but is there something I can measure to see if this 50,000 can turn into something? What were you paying attention to?
+
+Eric: To those very loyal early adopters, even 100 is good enough. They were the early, I will say, most loyal users. Double down to make sure they are happy. If they are very happy, guess what, network effects. They are going to bring a lot of new users. That's why even if 49,000 users left, as long as 100 still stayed, we would double on that. That's the strategy.
+
+David: Peter, on the hiring and people in the organizational front, you had a very, very different type of business. Your customers don't buy with credit cards. They buy multimillion-dollar deals, cash upfront in a year for a year deal. You need a Salesforce to sell that, which usually means you need a lot of cash comp to compensate that Salesforce. How did you think about the right people to hire as you were building and how to compensate them?
+
+Peter: I think one thing Eric and I have in common is, in the early days, there were no wasted people, no optional people. No wasted people because it'll burn through your money and it'll just make your decision-making more complicated. It's like [...] machines, so no wasted people.
+
+For us, it's a long sales cycle so we need the sales right away. I was the first salesperson. I started selling before I signed the articles of incorporation. I showed up at the customer. Hey, I think you should buy something from me, this thing that I'm going to make. Well, have you hired anybody? No.
+
+Okay, well, can you show us a demo of what you're going to do? No. How about a PowerPoint? No. Okay. Then I come back a month later. I got a PowerPoint now. Have you hired anybody? No, not yet. Just keep selling because it's a relationship-based business.
+
+Funny story, the first customer bought a small customer. Actually, somehow, through a relationship with my co-founder, we got to this guy who was a CEO. He wanted to buy some software for the small department just because he was really peeved with his IT team.
+
+This guy had no idea what we were selling. He's like, I know that my IT team doesn't want you, so I'm going to make a point and show them that I'm actually in charge here. That's how we got our first sale. You could barely log into the system at that time.
+
+David: I didn't know that.
+
+Peter: But then you got to hustle, then just like Eric, then you got to hustle. Oh my God, this customer wants to buy something and then you're working super hard to make them successful.
+
+Eric, I'm not sure. I never asked you about this, but we never had customer satisfaction surveys for Veeva in the beginning. I always thought if I talked to those early adopter people, I would know, I will get the feeling. If I have some survey, maybe I won't get the feeling.
+
+Eric: Totally. You're right. I agree with you.
+
+Peter: When it's small, you can sort of hide behind metrics sometimes and it doesn't work. But if you actually talk to a human and you figure it out, you'll know what's going on.
+
+David: Can you also tell us the story of lending your first big customer, which I believe is probably the deal that really made the business?
+
+Peter: There was a set. There was the first guy who just peeked at his IT team and then worked up to the next size deal and the next size deal. It was always a step function. The first multimillion-dollar annual deals were a big customer of Pfizer. It was just hand-to-hand combat. There was a partner at the time. Actually, salesforce.com at the time said, I'll send a note that Veeva will never win this deal. I replied back, I said, we will win this deal.
+
+Ben: They sent it to you during the Bake Off?
+
+Peter: Yeah, because they didn't want to even come into the meeting with us. They were like, oh, we're going to go with this other system integrator or something like that. I sent an email back and said, we will win this deal. Why? Because we have better people that will work harder. We're Pfizer's only shot at greatness and I think they want to shoot for greatness.
+
+I remember there was this big meeting with Pfizer. There was a guy in there in charge of it. We had a certain amount of people in the meeting and the guy stood up for Pfizer. He said, we have more people in this meeting room than you have in your company. Why should we buy anything from you? I just said the same thing. We're your only shot. We're going to make something great and we have the best people. It seems simple to me. Then we got lucky.
+
+I remember after winning it, thinking, oh my God, now what? Now, how are we going to make them successful? The whole company got a bonus when that customer was live and happy, which didn't have a formulaic metric. It was based on interviews.
+
+Ben: Did you use the invoice from that customer to then go fund product development?
+
+Peter: Yeah. I thought, oh, we've just raised a $3 million round of capital. It didn't cost us any dilution. The check came in. That's exactly what happened.
+
+Ben: Do you think that's still doable today? I imagine there are lots of folks out there that are like, well, I would love to invoice a customer and get cash in the bank. What situations is it possible to fund your product with customer revenue versus not?
+
+Peter: First of all, you can't be wasteful. Every person has to matter. I would almost think about, oh, we're hiring that person. Let's say we have to pay them $100,000 a year. My father was in the business of metalworking and machinery.
+
+I remember him. He would like, oh, I got to buy that lathe. How much is that lathe going to cost? Is it worth it? I would think of people like I'm buying a million-dollar machine because I got to pay him $100,000 a year. Is that million-dollar machine worth it or not? Frugal and then make a really excellent product because that's the best way you can lower your cost of sales.
+
+Like Eric's product, you probably all notice that it's easy to use, but he made it easy to consume the whole product. He didn't have to convince a bunch of people. That's how to do it. Excellent product, get a good price, and easy to consume. You don't have to spend your money on salespeople because you have a differentiated product. Because salespeople, that's where it's really, really expensive, right? You didn't have any salespeople.
+
+Eric: I read Peter's S-1 document many years ago. At that time, I still remember, wow, oh my God, this model is so awesome. In our case, the largest paid customer is only $2000 a year, so we cannot use that to find a new product development because most users pay us only for $9.99 a month. That's really hard.
+
+I do think for all the founders, the business model is very, very, very important. If you can figure out a way to do something similar to what Peter and Veeva do, that's best to spend time on that, not only for the product, but also the business model. As Peter mentioned, product excellence, how to sell the product, and how to leverage a big enterprise customer are very important to build a long term sustainable company.
+
+In our case, actually, I can tell you that today, the biggest challenge is our online business. It's very profitable. However, it's very hard to predict. They come today. The next month, they might leave. If they cancel the service, this is not a good business. [...] portion is very good. That's why I learned a lot from Peter how to manage a big enterprise customer.
+
+Peter: We met at an Emergence event way back when. That's how we first met, Eric and I. It was smaller.
+
+David: Hopefully, there'll be some more connections like that today. One thing I want to highlight on this topic of contracts and funding development because I think it's really counterintuitive. Again, the topic is capital efficient growth. You would think that what you would want to do with the Pfizer deal, for example, or Eric, when you started selling enterprise contracts are multi-year deals.
+
+Let's make this contract number as big as possible. Let's get as much cash upfront. Let's lock people in for two, three, or four years. That's not what you did at all, right?
+
+Peter: Yeah, we didn't do that. I was always optimizing for the long term value, which is the annual value per customer. If I had to give the customer terms that would lock them in, I thought that's actually shrinking my market because they'll pay less if they're locked in. That's one thing. The other one, I didn't want us sort of getting lazy. I wanted us to earn the business every year. It was just sort of like that. The driver was really optimizing for the long term value.
+
+David: Which makes so much sense now thinking about it. You would have had to have given a 30% annual discount or lock in the price, then raising prices is harder later.
+
+Peter: That's unique to us. I think we're selling in a very confined vertical. It's not really fair if there are two companies and one's paying 30% less than the other. They end up knowing about it and feeling bad about it. That's something specific to this confined market.
+
+Ben: To put some shape around it for folks that don't know Veeva's business as well, you have a couple of thousand customers of which there's a hundred or so that are your really big customers. There's basically no one else out there who could be a customer without you expanding the market.
+
+Peter: Right. We sell into a defined set of customers, the life sciences industry. There's kind of a top 20 and then there's another thousand or so that are doing smaller things. We've just expanded our product footprint. When we sell to a customer, we might have 20 things that we can sell to them. They start in this area, they start in that area. Gordon calls it layering the cake. We have to lift different layers of the cake that are all into the same customer.
+
+We leverage relationships. It's fine for us to spend $100,000 a year maintaining free relationships and just putting into developing relationships. That's not wasteful because we have a lot showing up at the door with $100 million worth of product. If you have a relationship, it's worth it. Like a bank, investment banking is worth it. It's a different type of business.
+
+David: For our second sponsor, just a company that is so special to us in the community, Mystery. I think at this point, probably, everybody listening knows about Mystery and their story. We've had these guys on the LP show back in the day. They've pivoted twice. It's been this incredible journey. They have landed on something that is just frankly incredible to watch.
+
+Ben: We know for a fact that a lot of the Acquired community took the Mystery folks up on their last offer from the last episode. We are excited to share more details on that. Certainly, many more of you are familiar with Mystery than even a couple of months ago.
+
+David: I know. It's so cool. When Mystery had originally started as a consumer-facing magical recommendation platform to take care of a night out for you and your significant other or your friends, make it magical, you don't have to do any planning, COVID hit. That obviously was not a great business to be in during COVID. They pivoted to doing virtual, remote teams, and office culture. Man, those Zoom happy hours that teams were doing and companies were doing were just terrible.
+
+Ben: I'm glad we're through that.
+
+David: Oh, I'm glad we're through that. I'm glad we have Mystery because they take all of that over for your company. It's crazy. They work with Amazon, Microsoft, Apple, McKinsey, Uber, Twitter, and Autodesk. All of these companies use Mystery to completely take over the planning, the organizing, running all of the team experiences for their internal teams, oftentimes, also for external-facing customer events with their partners. It is way, way, way better than the Zoom happy hours.
+
+Ben: Yeah, not only do you have to not do the work that you would have had to do to plan it before, but they're just way better too because the mystery team, I know there's a bunch of former wedding event planners.
+
+David: And they get amazing performers. It's super cool. This is what's cool about what they built out. Obviously, there's this event's aspect. They've built out the software side of this too. Mystery now tracks employee engagement, customer and partner engagement, and participant engagement with your events, and the impact on employee satisfaction and retention afterward.
+
+Before Mystery, 90%+ of a company's morale budget was frankly misspent. The reason why was there was no way to track whether going go-karting with your team or anything actually had any impact or move the needle. Mystery solves all of that by not only taking care of the events, but then giving you full insights into what the actual impact was on your team and on your employees.
+
+They have, today, executed thousands and thousands of these events. This scales up and down as big or small as you want. Modern Treasury uses them, Convoy uses them, and so many other friends of the show. Mystery just raised a giant Series A from Greylock to blow everything out further.
+
+Ben: Yeah. For listeners, in case you missed it on the last episode, they have the greatest deal ever offered to the Acquired audience. I looked it up and I was trying to do some quick math to figure out, has anyone ever discounted this well or offered this great free early experience? No.
+
+Mystery is giving you three mysteries for the price of one, which means that the first event is just $25 per person, regardless of the team size, and the next two are free. Of course, because Mystery is Mystery and this is what they do, they sort of learned from that first event about you and your team and got tighter on how to tailor the next two experiences to build on that and be even better.
+
+You should totally, totally click the link in the show notes and take them up on this screaming deal to try this out with your team. That is trymystery.com/acquired for three mysteries for the price of one.
+
+David: It's super great. Thank you, Mystery.
+
+Ben: Thanks, Mystery.
+
+David: Eric, for you. I'm curious, maybe you can talk to us both in the beginning days and then also now at Zoom, how do you think about pricing and account strategy?
+
+Eric: Our case is a little bit different. Ideally, when you start a SaaS company, either focus on vertical market or focus on departments. That's probably the best business model. Unfortunately, we started from building a horizontal collaboration solution. It's really hard because a lot of other competitors are already there.
+
+David: Including free competitors.
+
+Eric: Exactly, and a lot of free solutions. Our strategy is more like opening up a new restaurant business. You have better service, a better price, and better food. That's pretty much it, even today.
+
+I want to make sure our products are better than our competitors. I make sure when it comes to pricing, also better. I also make sure to offer better service. You look at any time, our product is always, always a better price across the board for any product compared to any competitors.
+
+Ben: Life is about trade-offs. If you're telling a customer, oh, we're better, faster, and cheaper, what has to give? Is it something organizationally?
+
+Eric: Efficiency. Let's say customers, they are probably going to spend a lot of money on marketing. What can we do to leverage the network effects? If they hire 100 sales reps, what can we do to have 50 sales reps who can deliver the same value? That's why it's very important to have internal efficiency.
+
+David: Which is so funny. That efficiency translates to capital efficiency, which translates to operational margins, which translates to cash flow, which is the whole point.
+
+Eric: Totally. Yeah, it gives you more flexibility.
+
+Peter: I would say the key also is just product excellence. That comes from the core set of engineers you hired, I think. You were especially very focused in the early days, right?
+
+Eric: Totally.
+
+Peter: You were not thinking about something else. You were thinking about video conferencing. I would say that's why I got to know Eric. I got to know Eric, I thought, that's a pretty focused guy and that his product is good. And then I tried out his product. I'm like, oh, this is really good. I want to join his board. I think that product excellence can make you more efficient, your sales cycles more efficient. Everything is better. Your product was twice as good as Webex, right?
+
+Eric: No, 10 times better.
+
+Peter: Ten times better? I guess my point is, if your product was only 20% better, it wouldn't have been enough. It wouldn't have mattered.
+
+Eric: You're so right. That's why I always like the restaurant analogy. You're buying a brand new restaurant. If the food doesn't work, even for free, you don't know if I'm still going to buy it anymore.
+
+Again, back to Peter's point. It's extremely important. Everything starts from one thing, product excellence as a foundation. You can optimize a lot of things. If a product does not work, forget everything else. Just double down, triple down on the product. That's the number one thing. Peter's right.
+
+Peter: That's a lot about which people you put on the product.
+
+Eric: Yes, totally.
+
+Peter: Eric was very particular about getting the best people.
+
+David: People, we can come back to that. I remember what we talked about with Santi in the episode we did on Zoom's IPO years ago now, you're named executive officers in your S-1. You think typical, oh, here's a high-flying SaaS company. There's going to be a VP of sales from Salesforce. There's going to be a chief marketing officer from HubSpot. Nothing wrong with those companies and those people. I think at both of your companies, the people you brought in as leaders were up and comers. They weren't the established superstars.
+
+Peter: I always wanted to have some people with some range. They could get very hands-on, but also grow into managing. I guess I've always thought of trying to get people to do something that they haven't done before, so they would have a little bit more mojo and have an opportunity to do something that they haven't done before. The team is very important. The chemistry of the team is much more important than the skills of the individual players.
+
+Ben: In a lot of ways, that comment reminds me that there's a parallel between you not signing multi-year deals where you're forcing the product to earn the customers and you promoting internally where you're keeping people hungry and forcing them to do their best work to earn that job.
+
+Peter: It's more thrilling when you can give somebody a chance to do something that they haven't done before. For me and for them, there's more fulfillment. Otherwise, it's why you're doing the same thing you've done three times. What's the allure? Oh, I can get rich. Okay, just at some point. That doesn't keep you going at the end of the day
+
+David: I imagine there's an element of compensation to this strategy too, which translates to capital efficiency.
+
+Peter: No, not really.
+
+David: I always think of equity versus cash.
+
+Peter: I don't think so. I never really made any kind of decision on people based on that. You got to get the right person and then pay the right compensation for the right person. Always the right person first and then figure out the compensation.
+
+Eric: Peter's right. When we tried to make an offer to some executives, at that time, the feedback, why not hire some very experienced and seasoned leaders from all sides? It's really not about a comp package because when it comes to hiring at Zoom, we really like to hire those people with self-motivation and self-learning mentality, including the senior executives.
+
+They can grow themselves along with their company. Plus, they're very loyal. I think that was our philosophy. I thought that was the best philosophy. After COVID, I think I was wrong. Actually, there's a bigger flaw also because when the business auto flows, auto-grows your team. Guess what, the executives or team are not ready, like usage like 15 to 20 times more. The revenue was seven times more.
+
+Our team, even myself included, was not twice better. It was one challenge I learned. That's a mistake. Another mistake is we think all those executives or key team members can learn along with the company growth. However, the pace is different. In some ways, they can learn quickly and some are very slow.
+
+Also, that's another flaw. That's why looking back, I feel like, ah, you should have a mixed team structure, someone who has potential and they can grow themselves. Someone else, you have to hire some seasoned leaders. You never know. In case suddenly your business is going to take off. At that time, your team is not ready. That's the challenge we're facing today.
+
+Ben: You need to have some members of the team who have experienced scale bigger than your company, but other people that you're developing—
+
+Eric: Exactly, that's a healthy mix. [...] I was too stubborn. I should have learned more from Peter. I said, everybody, you have to have potential. You do not have a background. Actually, looking back, that's not right.
+
+David: Interesting.
+
+Peter: Maybe a mix would be better.
+
+Eric: Mix is much better.
+
+David: Do you think you should have done that even in the early stages of the company?
+
+Eric: Not early stage. For the first four years, no need. But down the road, you already see the market fit, the product fit. You want to scale your business. At that time, you have to change your philosophy.
+
+Ben: These parallels keep popping up for me where Zoom is one of the greatest product-led growth companies of all time, and yet here you are talking about the beauty of predictable revenue that comes from enterprise contracts. It's the same thing. It's not that experienced people are better or that house talent is better. It's that you need that mix.
+
+Eric: Totally. Hence, it makes this very important.
+
+David: One of the last disciplines within a software company that I want to talk about operationally in this context is marketing. With both of you, but particularly with Eric, we were chatting with Santi and with Peter, we should ask this question. Once you got the product developed, you scaled with such beautiful capital efficiency, but you didn't spend money on marketing.
+
+You joked about the billboards, but there are Zoom billboards now. I asked them, how did Eric and Zoom think about spending money on marketing? I'll let you tell the punchline, but how did you think about it?
+
+Eric: Today, every Tuesday, we have three hours for a staff meeting. This morning, the first topic is to read about reviewing our competent marketing programs. Even today, still. I think it's very tricky. The reason why is you do not have a formula for when to spend more, when you spend the last. It's not like that.
+
+As a founder, you have to spend time on marketing as well. Do not always focus on the product or the sales. Marketing also is very important. However, when to invest in marketing is very tricky. Every business is different.
+
+In our case, we specifically made a decision, no marketing team for the first several years. This is not something new. It is a product. This is a very, very mature market era and a standard video conferencing. If your product works, you really have your marketing team. We try to prove that point.
+
+After we have paid customers, a lot of customers told us, Eric, I never heard about Zoom. But I tried your product, your product works. Why is that? We receive very consistent feedback like that. If I knew that's a signal, then we doubled down on that.
+
+In 2015, we created a marketing team. Even after that, we also measure every marketing program spending. Early on, I spent a lot of time trying to understand. I'll give an example, SEM. Every company spends money on SEM. The first time I sent a check, oh my God, this is the price I pay to Google. Oh my God, this is the largest check I'm going to sign.
+
+David: Do you remember how large that check was, for context?
+
+Eric: That's more than $200,000 a month.
+
+David: A month? Oh my goodness.
+
+Eric: It's crazy. That's why I wanted to deep dive to understand. By the way, our marketing team is all very well-educated by Google. If you want to talk about ROI, you give me $1 and I give you $1.50 back. It's pretty cool, right?
+
+Ben: Yeah.
+
+Eric: But I tell them no, it should be $3 back. Why $1.50?
+
+David: Particularly what I asked you about, the timeframe you wanted that money back
+
+Eric: We optimized that. Again, a marketing team is very important, but quite often very creative. If you do not know how to measure that, do not spend.
+
+David: The stories we heard were, most founders, CEOs, marketing teams think about CAC to LTV with marketing. There's more complexity to it than that, but I'm going to spend $1, I'll get $1.50 or I'll get $3 back. If that pays back within a year, doing great.
+
+Eric: Don't believe that. That's a mistake for all SaaS companies. It's not $1.50 back and not $3. It should be $4, you should optimize. That's a common mistake, I think, for most SaaS companies.
+
+Ben: Eric, how fast should it payback?
+
+Eric: I will say it's as big as possible. Every brain is different, but you got to optimize. Keep optimizing every day. Do not feel satisfied. Oh, I give $1, I get $1.50 back. No, optimize how to get $2, $3. You have to optimize. This is one example for every marketing dollar. However, if it works, you'll have to double down.
+
+I remember, the first time we had a billboard, many customers shared very positive feedback with us. They feel like, ah, early on, we decided to deploy Zoom. I saw the billboard, I feel like you guys are a bigger company. We've been around the city to bet on Zoom.
+
+David: It's more about validating the decision then.
+
+Eric: Exactly. Plus, the employees feel very happy. They say, oh my God, Zoom has a billboard now. After that, I realized, why not double down on that? I told our team, how many billboards do we have? It's one. I said, no, three. It works. That's why you have to know when to double down or when to take a step back. If you know how to effectively measure that, it's very important.
+
+Ben: We spent most of today talking about how to build the castle and how to have a profitable castle, not sure if that really extends, but now let's talk about defending the castle. I'm curious. Maybe let's start with Eric and then go to Peter, since we've been on a good Zoom streak. Where do you see the source of Zoom's defensibility as a business over the next 30 years?
+
+Eric: It's more like a sport. We need to focus on both offense and defense on both sides. Back to Peter's point, even if your products work today even better than any other competitors, you have to be paranoid. You have to keep thinking about what you can do differently. Keep innovating, either the new services or new features. That's the most important thing. Do that and at the same time, you also need to think about, what's next?
+
+From our perspective, we started from a unified communication. The next step will be not a unified communication, but a collaboration platform. At the same time, how do you build new departmental obligations? You also need to play offense as well. The better offensive play is probably for the defense as well. That's our strategy.
+
+Peter: I'm very similar. Product excellence, you can get there, but you also have to work hard to stay there and keep reinventing yourself. Also, you do want to expand to different areas.
+
+Critically, I think something that people don't realize is if you get a high market share in an area and you don't expand to another area, what will happen just because of the nature of your company and the creative people, you'll do more stuff in your established area than you should. That creates its own set of problems if you do more stuff.
+
+If Eric is constantly rewriting his codec unnecessarily, it's disruptive. You got to expand to give yourself a creative outlet. These may be more particular tasks, but we also have a goal that we set out about five years ago to be the leader and liked—that was our codename for it—because if you get to be quite dominant, there are a few things that will knock you off.
+
+Arrogance, the customers will get turned off over that. They'll naturally find an escape hatch. Also, we audit for integrity of the leadership team because when you're quite well established, that can throw you off. Integrity issues in the leadership team, so we audit myself and others. Also, energy in the leadership team because these are things that you got to audit for because if you wait for the results to show those things, it's too late.
+
+Determine to have product excellence. Have a goal to be the leader and liked. We actually tell our customers about that. That holds us to a higher standard. We want to be the leader and liked.
+
+Now, they bring that up sometimes like, hey, that's not the leader and liked. Oh, God, why did I tell you that? It's a way to set yourself out there. Not only do we want to be the leader, we want to be liked. Product innovation as an outlet and avoid that arrogance.
+
+Eric: By the way, related to this question, I want to share with you a conversation I had with Peter. I think, probably, it can help some of the founders' cases as well. I forgot which quarter. A year before we went public, I looked at our growth plan. I realized, wow, we wouldn't have one service. If we have another service, we also can monetize. The gross trajectory was very different.
+
+At that time, Peter told me, that's the ideal case, but that basically should be made two years ago or three years ago. If you wanted to have a new service, you cannot have a new service today. You need to think about trying to make this in two or three years before that. I clearly remember that conversation.
+
+Looking back, that's the biggest mistake. The reason why is because we have one service. At the same time, I always think about, what's the next service? Always plan ahead. That's probably a better way, back to your question. You always have to build another service and another service.
+
+David: That's exactly what I was going to ask as a follow-up. Peter, I know Veeva launched a second service after the first CRM service around content, CMS content management. When did you start planning for that second product and then when did you launch it relative to your first product?
+
+Peter: We started thinking about it in the first part of 2010. I remember Gordon, I, and others started thinking about it the first part of 2010. We had 150 people in the company or something like that.
+
+David: That was three or four years into the company?
+
+Peter: Three and a half, yeah. Then we made our first hire in the fall of 2010. That's when we started going. I viewed that as critical. It was a turning point. I thought, hey, I could have a single product company that does really well, maybe go public, but then it probably has to be sold to somebody or something like that. Or I can try to make it a multi-product company.
+
+The decision was to pick something that was clearly not an add-on to our first product. It was clearly so far away from our first product. I was worried that our second product would maybe become an add-on to our first product. So I just picked something that was just way out here, just way, way different.
+
+We sold it into the same company, but different buyer, different product, different code line, different everything. So I thought, this is the way to become a multi-product company. It'll either make us or it'll break us. I thought the odds were more likely that it was going to sink us.
+
+Ben: That's so counterintuitive because normally, you would think you'd want to give the same sales rep something that they could sort of bundle in for an incrementally higher ticket price and leverage what assets you already have.
+
+Peter: But that, you will do anyway. If you don't go out of business, gravity will take you there. As you go along, it's like, oh, well, maybe we should make an add-on product or not. Like, yeah, duh.
+
+If you get confused and you think that an add-on product is really going to float your boat, it's not. Your new product, if you have a chance, should be way out here, and maybe have the potential to be bigger. But it's risky.
+
+David: What's the scale of the two revenue lines today?
+
+Peter: The second one is a bit bigger, but the second one also has quite a bit more potential. Maybe it's 5X or 10X potential. It was risky. We debated that at the board level because that could have sunk the company. Our rocket ship on our first product was going up, I had to take my eye off that ball to start this thing. It did cause that first thing to suffer, but overall, the trade-off was worth it. It was risky.
+
+Ben: Our most recent episode was about NVIDIA which had a tiger by the tail with gaming, as everyone knows. They totally took their eye off that ball to start building for life sciences, for scientific computing, for what became neural networks and machine learning. Boy, was that a good thing they took their eye off that ball.
+
+Peter: You know the hidden thing there? You need a CEO that was an engineering type that went to Oregon State University because that's what NVIDIA and Veeva have in common. I don't know him, there are very few of us Oregon State Beavers as CEOs.
+
+Eric: That's an amazing comedy. I know Jensen well. Actually, look at NVIDIA's stock price. It was flat for 10 years in a row before it took off.
+
+David: That's such an amazing story. The conviction, really, he had to persevere through that decade is amazing.
+
+Peter: Hard work, right? He's a hard worker, too.
+
+David: He is focused.
+
+Peter: I remember when starting Veeva, the first time I started a company, I asked a friend who had started some other companies because I realized about three months in, God, this is really hard work. I'm working really hard every day, every hour. So I asked my friend, is there any way to do this without working that hard? And he very quickly said, no. There's not. Isn't that true, Eric?
+
+Eric: I do not think that's work because we all enjoy that. This is a part of life. Otherwise, what can you do? Are you going to play golf? No.
+
+Peter: There's no shortcut.
+
+Eric: Exactly, no shortcut.
+
+David: All right, everyone, for our final sponsor of the episode, we have another of our favorite companies here at Acquired. This is so fun, Modern Treasury. By this point, probably, longtime listeners of Acquired know everything about Modern Treasury.
+
+They are, by far, the best way to manage your company's payment operations. Their platform allows you, as a company and your developers, to build right into your product the ability to move money. You can imagine that as pretty important for probably just about anything your company does, any application, or service these days. You can do it using code, not manual finance operations.
+
+It's literally a software layer on top of your bank account that connects with all of your users, customers, partners, and everything. They have direct integrations with almost every major commercial bank at this point. They allow you to move money using APIs and web apps versus managing the complexity of banking rails yourself.
+
+I remember 5, 10 years ago, especially in marketplaces where you're moving money around managing all of that complexity themselves was brutal
+
+Ben: You're just building so much software and then you're thrusting your own internal software onto your finance teams, it's a mess.
+
+David: Your finance team was doing so much of that manually. Modern Treasury just takes over all of that. It's been incredible to watch this company. They're just a few years old. Two years ago, right after they started, they were reconciling about $10 million of payments every month, that's a lot, about $10 million a month moving on the platform. Today, they are doing well over $2 billion of payments every single month moving on the platform.
+
+Ben: Just so folks understand, Modern Treasury is not only the workflow software that gets used by the product team, the ops team, and the finance team. They're also the literal underlying money movements. They have bank integrations to actually facilitate those movements for you. You're not just clicking a button and then you also need to go do something with the bank. No, it is all actually integrated.
+
+David: It's so great. They are used by companies like Gusto—they're moving a lot of money at Gusto—Marqeta, Revolut, Pipe, TripActions, ClassPass, BlockFi, and LedgerX. Lots of crypto companies are now using them for ramps on and off, connections between fiat, crypto, and Web3.
+
+You can do so many use cases with Modern Treasury—automatic payouts, direct debits, incoming payment reconciliation, digital wallets. Whether you're building a fintech app, if you're building something in fintech, you absolutely need Modern Treasury. You, for sure, already know about them.
+
+Even if you're not in fintech, if you're looking to add payments or any aspect of money and money movement to your software product, Modern Treasury's APIs are super simple. Absolutely go check them out. You can go to moderntreasury.com/acquired to learn more. When you get in touch with them, just tell them Ben and David sent you.
+
+Ben: Thanks, Modern Treasury.
+
+All right, we got to wrap, but there's a quick way that we end every Acquired episode, which is with grading. For companies that are in the middle of their journey like both of yours, we like to ask it as a little bit of an open-ended question. What makes the future of Zoom and Veeva an A+? What's the scenario where it goes incredibly well? Paint that for us. And what's the failure case?
+
+Peter: I don't have any time to think about the failure case, honestly. I'm just not wired that way. A+ is we really help automate this big industry. It's a $2 trillion industry. If we can help to automate it and be that trusted partner that is essential to that industry and using that word very specifically—essential—and appreciated. There's not been anything like that before where you're automating a whole industry in a meaningful way.
+
+Essential. You're going to be a life sciences company, you got to use Veeva. Man, you'll like that. That would be a big success. Then we have a bit of a social mission too to prove that you can be a good company, profitable, et cetera, but also be a good contributor to society and the employees. That would be a success.
+
+David: You were the first public company to convert to a B-corporation, is that correct?
+
+Peter: To a public benefit corporation, but that's just more the formality of it. The way we've operated the company is always like that. That's success. It's essential, appreciated, really automating this industry, and contributing to being an example of a good employer so that other people could copy it.
+
+Ben: I love that.
+
+Eric: In our case, I will say that's a good question. A+ scenario will be Zoom will be a very successful plan for a company. We're going to introduce multiple new services. People can count on Zoom to achieve more. At the same time, we can also grow our revenue every year. That's probably the A+ scenario for many years to come.
+
+In terms of a failure scenario, I will say maybe you go back and use Webex. That's a failure scenario. Peter is right. I did not think about it as a failure scenario, but just to think about it, be very optimistic. You think about the future.
+
+Seriously, we're all founders, the CEOs. We all feel a huge pressure. But sometimes, you cannot be too paranoid. Otherwise, every day you think about too much but a failure case. Guess what, you do not dare to move forward. That's why I say, do not think about that. Next time, do not ask me this question.
+
+Ben: Only the paranoid survive, but don't let it consume you.
+
+Peter: I think you're paranoid about not doing your best. I think, Eric, you put a ton of pressure on yourself. You don't feel good if you don't do your best.
+
+Eric: Totally.
+
+Peter: I see that in Eric.
+
+Ben: I love that.
+
+David: Thank you, all. Thank you for being here in the room with us. Mostly, thank you to both of you. Thank you to Emergence for facilitating this and making it happen.
+
+Eric: Thank you, Emergence Capital. Thank you, Santi. Thank you all of you. I really appreciate it. Thank you my great mentor, Peter.
+
+Peter: Yeah, thanks.
+
+David: Thank you.
+
+Ben: Thank you.
+
+All right, listeners, thank you so much for joining us for this. I actually cannot imagine a more useful topic right now than dissecting how to build great companies on little capital based on the era that we're going into. David and I don't need to debate this endlessly. You can hear the drum beats on Twitter of how much the market is changing. The reality is it is, where everyone has to play the game on the field. Peter and Eric, it's just unbelievable and impressive on what they have built on so little capital.
+
+David: They're two of the greatest of all time. Literally, two of the GOATs at this, which is so funny. Now everybody thinks of Zoom as the pandemic high-flier. I was just thinking, every time for the last few years that people would talk about Zoom in whatever context. Do you people realize how much cash flow this company is generating? It's all because of this DNA, mindset, and everything we talked about with them.
+
+Ben: After spending time with Eric, it feels to me like the amount of time that he spends thinking about, oh, no, the stock was going crazy and, oh, no, now it's going down, is approximately zero. They're thinking about how you build a great company and how you generate happiness for customers, build a profitable enterprise, and grow that profitable enterprise. It was a nice, refreshing viewpoint to get to spend time with him and Peter.
+
+If you want to chat about this with us, we would love to do that with you. You should join the Acquired Community Slack at acquired.fm/slack. Twelve thousand smart, courteous, and kind people have done so before you, so you would be in great company.
+
+We also have our Limited Partner show. If you want more Acquired between now and our next special, which we have recorded, is awesome, and we are very excited to release, you can search Acquired LP Show in any podcast player, Spotify, Overcast, Apple Podcasts, or anywhere you listen to podcasts and find that there.
+
+We have a job board, acquired.fm/jobs, where we curate the most interesting jobs that we think we should make available to the Acquired community. With that, our huge thank you to the Solana Foundation and to our friends at Mystery. Go check it out, trymystery.com/acquired, three for one. It's seriously insane. And our friends at Modern Treasury, that's moderntreasury.com/acquired. We will see you next time.
+
+David: Wait, you forgot one. A huge thanks as well to our friends at Emergence for making this possible.
+
+Ben: That's so true.
+
+David: I'm so happy. I'm wearing my Emergence Capital fleece right now.
+
+Ben: You got to wrap the swag with pride.
+
+David: We got to wrap the swag. Seriously, I was thinking as you were saying that, I know, we talked about the Slack at the beginning and end of every episode. It's not just like, oh, you should join the Slack because you like Acquired. If you're listening to this, you are probably a founder, an employee, or an investor working at companies of any size where this is relevant, and so is everybody else.
+
+This community is amazing. People are talking about this in Slack. Jake from Emergence is right there in Slack to talk about this. People DM each other. There's so much vibrant discussion. I can't underline it enough. It's such a great part of the Acquired community. If you're not part of it, you should absolutely join.
+
+Ben: I bet you should. All right, listeners, we'll see you next time.
+
+David: We'll see you next time.

@@ -1,0 +1,1341 @@
+Ben: Welcome to Season 8, Episode 8 of Acquired, a podcast about great technology companies and the stories and playbooks behind them. I'm Ben Gilbert, and I am the co-founder and managing director of Seattle-based Pioneer Square Labs and our venture fund, PSL Ventures.
+
+David: I'm David Rosenthal. I am an Angel investor based in San Francisco. Today, I am here with you in Seattle, in the flesh.
+
+Ben: We are your hosts. First, we want to give a huge shout out to Young Spielberg and Mike Taylor for crafting this new intro music that we use to open this episode. We have been wanting for years to do something distinctive for the show and it was a real treat to work with both of them on this. We have links to both of their fine work on Spotify. Just love both of these artists.
+
+David: They killed it. I am so pumped.
+
+Ben: Me too. We started this season with our first blockchain episode covering Bitcoin. It seems only appropriate to bookend it with the season finale on Ethereum. David and I are here together in person to tell this story. As you all know, from our Bitcoin episode, Bitcoin is some combination of currency, a store of value, a medium of exchange, which all frankly are up for debate if it's doing a good job at any or all of those things.
+
+As many of you who have bought or sold cryptocurrencies over the last six years know, there has been a big second game in town with ether, ETH, the token used as a currency in the Ethereum network. This time, it's not just about currency. Ethereum is something completely different. You can think of it more as a gigantic distributed computer that exists all around the globe, in a completely decentralized way.
+
+David: It's the world computer.
+
+Ben: It is. It is one single virtual machine that runs across millions of CPUs all at the same time. I'll be on one very slow virtual machine. There is a strong argument to be made that this enormous tamper proof, censorship proof computer is maybe the most important invention of the last decade, laying the groundwork for technology companies to come for the next several decades.
+
+While there are kittens and rainbows everywhere you look in Ethereum land, there were some absolutely wild stories that transpired to bring us to where we are today. This thing has had a pretty wild last year, as most of you will know, having a market cap 12 months ago at around $20 billion, earlier this year at $450 billion. In the same 12 month stretch, it's been a heck of a year for Ethereum.
+
+David: This is a heck of a year for a lot of things.
+
+Ben: No kidding. Are you an Acquired/Slack member? If not, you should. Aside from all the normal reasons that we usually point out, I'm sure this episode will have quite a vibrant digital assets channel discussion. It's a great way for beginners and the crypto-aware alike to have great conversations. As always, you can join that at acquired.fm/slack.
+
+Another thank you to listener Austin Federa, for curating that channel and for helping with several discussions as we prepared it for this episode. On to our presenting sponsor for all of season 8, Tiny, today we continue our exclusive mini series with Jeremy on building wonderful internet businesses.
+
+Jeremy, since there is so much media coverage about venture-backed companies, there's a temptation to believe that the only way to do it is to build for a massive market and be a huge independent company. What if you want to build a company and sell it at some point? Any advice for people thinking about that?
+
+Jeremy: Yeah, there's lots of little things, but the biggest thing is replace yourself as soon as you can. There's nothing Acquired likes to hear more than, oh, I've been on vacation for six months without any cell service and the business has continued to grow. If you can do that, then you have something that's incredibly attractive to almost everyone to buy.
+
+There's other things like long-term contracts and strong management, but really all of those bubble up to being able to step away from the business. The biggest thing that we look for is really how involved the seller is in the day to day of the business. Oftentimes, even the seller doesn't realize how important they are to the business. That would be my one piece of advice. To anyone who wants to sell their company, really make sure that they can step away from the business and have the business still thrive.
+
+Ben: Great insight. Thanks so much. Thank you to Tiny. If you are contemplating a sale or even wonder what that might look like in the future for you and your wonderful internet business, you should reach out and just tell them that Ben and David from Acquired sent you. Click the link in the show notes or go to tinycapital.com
+
+All right, David. Take us in. Listeners, as always, this show is not investment advice. David and I may have investments in the company's assets, protocol tokens, utility tokens that we discuss, and this show is for informational and entertainment purposes only.
+
+David: These are commodities, not securities.
+
+Ben: Commodities.
+
+David: That's right. Before we get into it, two things. One, this is obviously the Season 8 finale. What a season. This is crazy. We started with Bitcoin, we did the New York Times company, we did three freaking episodes on Berkshire Hathaway, we're ending with Ethereum, we have Meituan too. This is wild. It's so cool. We get to do all this crazy stuff.
+
+Ben: It's remarkable. We can find bull cases in all of those things when they've got daggers pointed at each other, particularly crypto in Berkshire.
+
+David: There are at least daggers in one direction from Warren and Charlie to crypto. I don't know about the other direction.
+
+Ben: I think the Bitcoin maximalists are very excited to see the time of Berkshire Hathaway be in the past.
+
+David: That may be true. It's so freaking cool. Thank you guys all for just being with us on this journey. It's so awesome. Number two, before we dive in, huge thank you on this episode to Camila Russo and her book, The Infinite Machine, which came out recently and served as basically the main narrative source for history and facts here.
+
+Camila is an excellent journalist and was part of the technology team at Bloomberg. Bradstone has quite the crew that he's assembled over there. Now Camila runs The Defiant, which I think plots the DeFi. A wonderful book, highly recommended. Everybody, go check it out. Thank you to Camila for writing this amazing history.
+
+Speaking of history, if you remember all the way back to the beginning of the season with our Bitcoin episode, you'll remember that the Bitcoin white paper was published in 2008, but it wasn't until May of 2010, when the famous pizza day, pizza transactions happened, where two pizzas were purchased for 10,000 bitcoins, something like that. Man, those were some spendy pizzas.
+
+It obviously took a little while for this whole idea of crypto to gain steam and enter the, not even the mainstream, but just broader awareness. Then the killer app for Bitcoin, which of course, was the first killer app, which was the Silk Road, didn't launch until February 2011. It was right at that time, the very next month in fact, in March of 2011, that a new user showed up in the Bitcoin talk forums online.
+
+Ben: How many of these Acquired episodes start with someone showing up in the forum?
+
+David: I feel like probably half the China tech episodes are so and so. I was hanging out on IRC with all the other future giants. Amazing. The Bitcoin talk forums were the central hub of this early Bitcoin community. They were actually created by Satoshi himself in 2009. This is where the pizza transaction happened. This is where the famous HODL post was in the Bitcoin talk forums that generated that meme. Super cool.
+
+This new user who joins the forums is very unlike Satoshi in pretty much every dimension. The most obvious dimension is that unlike Satoshi, he uses his real name. There is no username. The name, like everybody else, smokes too much. There was a user, smokes too much that had posted into the forum. This new user is just simply, Vitalik Buterin.
+
+Ben: Right there. Right on the line and saying, forever, you will know me by my name. I'll be a public person. I'll be a figure that will identify with all of my comments. Whether for good and for bad, for being vulnerable, but also for galvanizing a movement, this real name tied to my real identity is how I will do that.
+
+David: Real name, no gimmicks, Vitalik Buterin. Who is this character? When literally almost everybody else in Bitcoin land and crypto land at the time is using a pseudonym, why is he willing to use his real name?
+
+He's willing to use his real name because he's just a high school kid. He's got nothing to hide. He's got nothing to lose. He's 17 years old. He joins because he is looking for a way to earn some Bitcoin. It's pretty awesome, like a side gig as a high schooler.
+
+Ben: Where is he at this point?
+
+David: He is in Toronto at this point. Okay, Vitalik, 17. He was born in Russia, in post-Soviet Russia to undergrad computer science students at Kolomna, which is right outside of Moscow. It's hard to imagine. He was born in January 1994. I've never been to Russia, but I hear January's pretty...
+
+Ben: I went to Russia in February and I can tell you it will freeze your face off from the cold.
+
+David: A whole new level. Probably makes Toronto look balmy and tropical.
+
+Ben: Southern Canada, may as well be the beach.
+
+David: It's 1994. He's born to these two very young, very unprepared parents. Not long after he was born, they would get divorced. Russia at the time was in total shambles. The Soviet Union had collapsed a couple years before, there's hyperinflation like double digits per month inflation. People are losing everything. There's a depression, people are starving.
+
+I didn't realize how bad this was. Life expectancy in Russia declined by over 10 years from the collapse of the Soviet Union to the time that Vitalik was born. That's crazy. Average life expectancy for people was down to 50 years. That is insane. On the one hand, you've got all this huge amount of turmoil he's born into and grit that he's going to have to develop out of this.
+
+His parents are getting divorced. That's so hard for anybody, let alone with all this other stuff, but he also has all these huge opportunities. He wins the genetic lottery. Both of his parents are not only hyper intelligent, which of course, Vitalik is as well. Probably everybody listening to this has at least heard his name, if not heard him speak. He is quite literally a genius.
+
+Ben: I bet that's overstated. I actually think the majority of listeners do not know Vitalik's name.
+
+David: Interesting.
+
+Ben: Just to level set, for anyone out there who's like, what, what are you talking about, David? He's a public figure to us, because the last six months especially, we've been diving into the world of crypto and blockchain. We've done months of research to prepare for this. Last year at this time, did I know Vitalik's name? I don't think so.
+
+David: That's funny. I think of him as this public intellectual. Maybe that's just because he's buddies with Tyler Cowen and it goes on in the conversation.
+
+Ben: Yeah, he's been on some fairly mainstream podcasts at this point.
+
+David: Anyway, not only are his parents hyper intelligent, and of course, Vitalik is, his parents are computer scientists in the mid 90s. This is a great time to be a computer scientist. Even though they get divorced, it's very amicable. They agree, his parents, to basically live their lives together but separately. Their number one priority is giving Vitalik every opportunity they can.
+
+The first and maybe most important of these things is when Vitalik was five, they decided to leave Russia and emigrate to Canada. They settled in Toronto. Vitalik gets put into the gifted program in Toronto's public schools, which is funny. He didn't speak English at all until he arrived in Canada. It takes him a few years to really get comfortable speaking English, but he's clearly a genius at math, computers, and taking after his parents.
+
+He's also really good at writing, though, and writing English. This was crazy. When he's seven years old, I don't know if this is a school project or just something Vitalik did for fun. He writes a 30-page document in English in Microsoft Word called the Encyclopedia of Bunnies. He's really interested in bunnies. He structures it like a scientific paper. He's got graphs, charts, and he lists all the chemical elements that make up a bunny.
+
+Ben: Is it a typesetting attack? I can just imagine this being an overly academic thing for a child.
+
+David: Totally. His dad, Dmitry would joke later that it was Vitalik's first white paper.
+
+Ben: Having read quite a bit of Vitalik's writing, preparing for this across blogs from 2013 and before, through the white paper, through a lot of the stuff he's written today, he is a talented, succinct, incredible communicator.
+
+David: Totally, especially given how young he still is. I think he's 27 at this point, as we're recording this. For high school, he's clearly so talented. His parents decided to take him out of public schools and enroll him in this school called the Abelard School in Toronto. I didn't even know schools like this existed. They're only about 10 students per grade at this school. It's a very intensive curriculum, but also lets kids explore their own passions.
+
+This is where we pick up the story. Vitalik is a junior in high school. Both of his parents are still in tech. His dad is an entrepreneur. He runs a software company. In 2011, his dad told him about this thing called Bitcoin that he's heard about, he's looking into it. He's part of the company, it's pretty cool. Supposedly, at first Vitalik, like all teenagers, was like, yeah, cool dad, whatever, no big deal. I don't know, crazy virtual currency.
+
+Obviously, he spends a lot of time on the internet, and he starts hearing about it himself. He's like, oh, actually, maybe this is cool, maybe I should focus on it. He decides he wants to participate in this whole movement, but he doesn't want to just go buy bitcoin. That would be really boring, plus he's a high school kid.
+
+Ben: It doesn't feel like participating in the movement if you're just buying it.
+
+David: He really wants to be a part of this. He wants to earn bitcoin. You would think at this point, listeners, you're probably going to like it, this is where Vitalik turns all of Aberlards’ computer labs into a giant distributed bitcoin mining machine.
+
+Ben: I actually didn't know that.
+
+David: No, he didn't. I'm thinking at this point that this is what he would be doing, but no. This is when he logs on to the forum and the reason he does it, the way he wants to earn bitcoin is he wants to write about Bitcoin. As he's going deeper in the communities, people are not doing a great job of communicating and evangelizing what this is. I'm good at technical writing, I think I can do a good job.
+
+Specifically, he created his account to respond to a post, a request for writers from the publisher of an organization called Bitcoin Weekly, which is a new site that no longer exists, but you can go read all this in the forum. The initial post reads I am willing to pay 5 bitcoin for anybody who would write an article and authorize me to publish it under the public domain. Pitch an idea to me and I will think about it. If I like your idea, you will get a four-day deadline to write your article and a three-day deadline to finish your final draft. I am one of the most reliable employers on the market.
+
+Young Vitalik responds and he's like, hey, I can write. Why don't I write about economics and the dynamics of why using credit cards doesn't make sense for micro transactions. This is all stuff I can write about. The publisher responds, he's like, yeah, sure, send in your submission and I'll see if I like it.
+
+Vitalik does. He writes the article He gets paid for it in 5 bitcoins, which at the time was worth $4. Today it's worth, what?
+
+Ben: I hope he kept those.
+
+David: I hope he kept those, indeed.
+
+Ben: $150,000 today.
+
+David: Yeah, $150,000 plus. He keeps writing. His post starts to become really popular. He strikes a deal with the publisher, because he's the only one writing for this thing that people are reading.
+
+Ben: Because it sounds like a scam, the way that it was posted about.
+
+David: They decided what they're going to do—Vitalik's going to write for free for Bitcoin Weekly. They're going to post the first paragraph of all of his articles on the site. Then they're going to hold the rest of the article, essentially for ransom, where there's a fee that has to be crowdfunded by people for a certain amount of bitcoin for each article, that people have to pay into a wallet address to unlock everybody seeing the rest of the article.
+
+Ben: Interesting. It's not just a paywall, it's the only way anybody gets to read this is if enough people are pulling up.
+
+David: It's like a Kickstarter for Bitcoin articles. Amazing. With this, they start making a pretty decent amount of bitcoin. Good for young Vitalik. This goes on for a few months. Unlike the original post, Kiba, the publisher, is not exactly one of the most reliable employers on the market. Bitcoin Weekly goes under by the end of the summer that year in 2011.
+
+People really liked Vitalik's writing. That August, a dude in Romania named Mihai Alisie and his girlfriend Roxana, who were fans of Vitalik's writing, thought, hey, what if we started an actual magazine to give Vitalik's writing a new home and he can be the head writer? They reach out to him, unclear if they knew that he was a high school kid in Canada or not, but, hey, it's crypto.
+
+Ben: Magic on the internet. You also don't have to disclose that.
+
+David: Exactly. They reach out to him with the idea to start a Bitcoin magazine, which they do. They team up with a few other folks in the forums, and they get to work. The initial idea is that they're going to start slow, they're only going to publish online, and then they'll work up to a real physical magazine. What are the other people who become involved though? A guy under the pseudonym Matthew N. Wright has a different idea.
+
+Mihai, he goes to incorporate this company. They decided to incorporate in the UK. He flies from Romania to London. He's incorporating and then in the middle of traveling, he's on his way back. Matthew "messages of the group online" he says let's dream big. Then he hits publish on a press release that he's written and I don't think he's told anybody about.
+
+The press release is entitled The First Issue of Bitcoin Magazine Goes to Print, and it says, a 64-page glossy magazine is on its way to the printers with a 5000 copy initial run and subscribers are going to get their copies within two weeks.
+
+Ben: Which of course, no one has done any of that stuff.
+
+David: Literally, nothing has been done. The whole time I was thinking when I read this, the World of Warcraft, Leeroy Jenkins meme.
+
+Ben: Yes.
+
+David: That's exactly what this is. The Leeroy Jenkins, the magazine.
+
+Ben: It's not clear that this guy is someone you want to work with long-term.
+
+David: No, I think he ends up staying for another month or so and then they're like, are you going to get out of here?
+
+Ben: At this point, Vitalik's using his real name, he's starting to get out there in the community, a promise has been made. They're like, hey, I guess we should make good on this so that we're viewed as reputable people.
+
+David: Right. Necessity is the mother of invention. Mihai, Roxana and Vitalik, they're like, we got to do this. Amazingly, they make it happen. I don't think they hit the two-week deadline, but they published a real physical Bitcoin magazine that gets picked up eventually in Barnes and Noble. It becomes a real publication. It's pretty cool. With that, Vitalik, he's the head writer. He starts becoming even more of a Bitcoin and crypto celebrity.
+
+Ben: Which at this point are the same thing in this 2012 timeframe. There is no other crypto.
+
+David: I don't think so.
+
+Ben: Not of note anyway.
+
+David: Certainly nothing of note, and this will get into most of the other projects that are happening. I think Satoshi has already disappeared at this point, but most of the other crypto projects that were happening, I think were happening on top of the Bitcoin network at this point.
+
+It's fall 2012, Vitalik has now graduated from high school. He starts as a freshman at the University of Waterloo studying computer science. Vitalik at Waterloo, he's still writing all the time for Bitcoin magazine. He's taking a whole bunch of courses. This is no walk in the park to actually be a CS student at Waterloo. He also starts working as an assistant to this legendary professor named Ian Goldberg. Do you know Ian Goldberg?
+
+Ben: I don't.
+
+David: He was one of the OG cypherfunks back in the day. He hacked Netscape 's SSL implementation as a researcher, ended up as a chairman of the Tor Foundation and helped get that off the ground.
+
+Ben: For folks who don't know, Cypherfunk is the email listserv of renegade cryptographer, computer scientists that actually wasn't Bitcoin hatched and proposed on the Cypherfunk email list.
+
+David: Certainly in that community, it's all intertwined. Ian is buddies with Neal Stephenson. I think a lot of Ian's work influenced a lot of Neal Stephenson's Sci-Fi. Pretty cool. Vitalik is busy.
+
+Ben: He has a side hustle thing that is earning him a name in this community with Bitcoin magazine. He also has the approved societal path of being at university, where he is also connected to that community through his professor.
+
+David: Yup. By the time the spring rolls around Vitalik's first year at Waterloo, he's ready to do an internship and start going. He's like, I want to go get some actual programming, real world experience at a company, but I'm really interested in all this crypto stuff. Right around this point is when Ripple was getting started. We take back what we said earlier that there were no other crypto projects, there was Ripple.
+
+At the time Ripple still existed and has had lots of controversy since, but it was a super hot idea to bring blockchain and crypto transactions into the existing banking systems. They raised a ton of money. The founder of Ripple, we talked about this on the Bitcoin episode, was Jed McCaleb. Remember, he was the dude who also created Mt. Gox.
+
+Ben: That's right. He created Mt. Gox and then he sold it. He collapsed. He's not responsible for the collapse.
+
+David: Jed now runs Stellar.
+
+Ben: That's a fairly credible current project.
+
+David: Yup.
+
+Ben: Whereas just to make sure we're super clear on Ripple, there's an SEC lawsuit against them that's being worked through.
+
+David: It's being worked through. I think it got delisted from Coinbase. Certainly, it's accomplished a lot. At some point, I think the market cap of Ripple was in the 10s of billions. That's a crazy story for another day up here. At this point, Jed is also a big player in the crypto community.
+
+Vitalik gets in touch with him and Jed's like, oh, yeah, we got to hire this kid. They would have, and history would have taken a very different turn, except they can't get him a US visa. Remember, Ripple is a legitimate cryptocurrency company. The idea is they're going to bring it to the US financial banking system.
+
+Obviously, they're a US C-Corporation. You have to have a US visa. Work visas don't work for them. They can't get Vitalik a visa. Like, all right, sorry, let's stay in touch, we'll be friends, but you can't actually come work here for the summer.
+
+Instead, Vitalik says, well, Mihai, I and Roxana, we're close. This Bitcoin magazine thing is going well. I'm just going to take the summer off. I'm gonna go over to Europe, hang out in Romania and spend the summer with them. We'll write for the magazine.
+
+Mihai and Roxanna we're working on a project to basically build a legitimate Silk Road. The Silk Road exists at this point.
+
+Ben: What does a legitimate Silk Road even mean? We're going to accept crypto payments. It's going to exist as an online marketplace, but we're not going to mail drugs through the USPS.
+
+David: Basically, it's eBay. It's like, we could do a decentralized eBay, maybe. I don't know if that's a good idea or not, but clearly, the killer use case was drugs. Needless to say, that project didn't get very far at least at that point in time.
+
+They end up having this wild summer. They move around Europe. Mihai and Roxana are also pretty young. I think they had graduated from college, maybe a year or two before. They move around Europe, they spend most of their time hanging out in an anarchist commune in Catalonia.
+
+For Vitalik, he's always been a super, super serious kid. This is mind expanding for him. He's having a great time. By the end of the summer, he emails Waterloo and he's like, hey, I think crypto and Bitcoin is a really big thing. I want to take a year off and just focus on working on these crypto projects and being in the community. I'll be back in a year.
+
+Ben: Much like actually the sentiment of a lot of super ambitious, young technical people right now who are doing that on everything that Vitalik would go on to create. He was the first to say, yeah, maybe it's time for me to take some time off to focus on crypto.
+
+David: Yup. Also, it just hits me over the head how much the parallels between Vitalik and Mark Zuckerberg. Again, 10 years earlier, we're going to keep getting into it as we go along here, but same deal. When Mark took that summer to move out to Palo Alto and work on Facebook, I think he was intending to go back to Harvard. Maybe he did the same, like I'm going to take a year off and be back.
+
+Obviously, neither of these guys end up going back to college. This starts this incredible journey that directly leads to Ethereum. What Vitalik decides he's going to do—there are all these Bitcoin meetups and conferences that are happening all over the world. He decides he has enough money that he's making from doing his writing, especially as bitcoin starts to appreciate, he decides he's just going to travel around and go to all of them, and meet the community, and hear about all these projects that are happening and write about them.
+
+Ben: What year is this?
+
+David: This is summer 2013. We're very close to the start of Ethereum here. He goes to one conference in Amsterdam, where he meets a guy named Amir Chetrit, who was working on a project in Israel called Colored Coins. This is where it's all going to start to come together.
+
+Colored Coins was building on top of the Bitcoin network and they wanted to bring in real world assets, real estate or fiat currencies, real world financial assets, securitize them and bring them on to the Bitcoin blockchain. Like, okay, that's an idea a lot of people were thinking about.
+
+He invites Amir and Vitalik to come to Tel Aviv and meet up with him, see the team. There are a few other projects that are happening in Tel Aviv at the time that they're collectively calling this group, Bitcoin 2.0. It's a self-proclaimed group of people in Israel that are going to create Bitcoin 2.0.
+
+Ben: It's essentially a layer on top of Bitcoin. They're not proposing any changes to Bitcoin itself.
+
+David: That's the thinking. They're going to start building. Vitalik would later use the analogy and other people would use the analogy of like, they're going to turn Bitcoin into a Swiss Army knife. Bitcoin is the chassis of the knife and they're gonna build the small knife, and the screwdriver, and the toothpick and all the different tools around it.
+
+Ben: What Colored Coins was doing was like, hey, I'm going to put the fact that I own this property on the Blockchain so that this property or any physical thing in the real world can be identified by a marker on the Blockchain.
+
+David: I think that's right. It's a representation. I think that was the plan. Vitalik goes over, meets up with a bunch of teams. One of the other teams in this Bitcoin 2.0 movement is a team called Mastercoin.
+
+What they're thinking about is that their Swiss Army knife tool that they're going to build on top of Bitcoin is the ability for anybody to create their own other currencies on top of the Bitcoin network and then fundraise for those currencies. This sounds like something people might want to do in the not too distant future.
+
+Ben: For sure. This is where it's worth disambiguating a couple things just as a vocabulary lesson. In the world of Ethereum, Ethereum is the network and ether, abbreviated ETH is the token, the currency that exists on that network. In the world of Bitcoin, the blockchain is called bitcoin and the coin or token is called bitcoin.
+
+You can buy and sell bitcoins and there's a blockchain that exists that is also called the Bitcoin blockchain. Their proposal here is basically like, we want to find a way to create other currencies to exist on the Bitcoin blockchain that is not bitcoin.
+
+David: Exactly, yeah. Bitcoin is two things. We talked about this a little bit in the episode. Bitcoin is bitcoin on Bitcoin. Bitcoin being the currency and the Bitcoin network being the blockchain.
+
+The way that Mastercoin was going to make this happen, of allowing these other currencies to exist on the Bitcoin network, was through this concept, this computer science concept called smart contracts, which people might have heard of, and people talk about Ethereum being the smart contract language.
+
+Smart contracts, actually, the concept was invented by Nick Szabo way back in the day, who was the dude who proposed bitGold, if you remember from the Bitcoin episode.
+
+Ben: He was also on the Cypherfunk email list.
+
+David: He was also a cypherfunk. He was actually a lawyer, too, I believe. He wasn't technical. He never implemented bitGold. It was just a proposal, but it's one of the couple proposals that were closest to what Bitcoin is.
+
+Ben: Definitely inspired. I remember, Satoshi definitely worked from that foundation.
+
+David: Those were the shoulders that Satoshi stood upon. Szabo defined smart contracts as "a set of promises." Remember, he's coming from a legal background, "a set of promises specified in digital form including protocols within which the parties perform on these promises." What does that mean? Basically, smart contracts, it's just code. It's code that can be arbitrary, but it executes if and only if certain conditions are met. That was the innovation.
+
+When you marry that with a blockchain and something like Bitcoin, where there is a ground truth, nobody can argue over whether conditions are met or not, then you seed the environment for these smart contracts to actually be really useful.
+
+Ben: Right, yeah. What you're saying is, if everything is actually on the blockchain, the assets, the cryptocurrency and the conditional logic is also on the blockchain, then you can have things that will probably do what you think they are going to do. Whereas, in the real world, you've got a contract that's written by a lawyer and then it takes people actually carrying out the work that contract says.cThey're effectively dumb contracts. They then require a human compiler to go through, and then make sure that the logic that is in that contract can be parsed and then interface with things in the real world.
+
+David: You can get into all arguments about whether these conditions are met or these are not. Because it's not met, and that's why we have our legal system, judges, and lawyers.
+
+Ben: Yup. There's one spec that's written, that is executable, that has direct manipulation over the assets to move it. It's pretty genius.
+
+David: Yeah, totally. The Bitcoin network and Satoshi, it's not like he didn't know about smart contracts. It uses it. There are smart contracts in the Bitcoin network, but they're limited. There's only a very specific, very small set of functions that you can call functions in the programming sense, that you can call as part of Bitcoin's smart contracts.
+
+What Mastercoin, Colored Coins, and all these other folks were doing in the Bitcoin 2.0 movement, they were essentially writing more functions that you can call in smart contracts. Vitalik, he's hanging out with these guys. He's like, well, this is great, I love these ideas, I'm good at writing, maybe I can help you guys write up white papers for your projects, and help evangelize and crystallize what you're doing. That's great, they're like, sure, go to town, work on white papers for us.
+
+As he starts the process of writing, though, for each of these projects, he realizes like, hey, these things are all separate projects. This is all cool in building on top of Bitcoin, but you're all just scratching the surface of a bigger idea. This is whack a mole of adding set functionality to Bitcoin.
+
+If you know anything about programming, like the beauty of programming, is this idea of Turing completeness. A programming language that is Turing complete, you can do anything. You can create a developer. It doesn't need any permission, it doesn't need any set functionality. She or he can write their own functions and do anything, ad infinitum.
+
+Ben: It's the way that any piece of software technology works, that you have these varying levels of abstraction and at the highest user facing layer, you have this application, where that is designed for a specific purpose, often for a very specific type of user, performing a certain business logic.
+
+Take Slack, that's a very abstract thing that is a field that you type in, that's got a chat window. It's an application. What people are doing in this Bitcoin land, and this is a little bit of a stretched analogy here, but they're basically building highly specific applications on top of Bitcoin and trying to extend it.
+
+David: The Bitcoin network is a calculator, not a computer.
+
+Ben: Right. What Vitalik's basically saying is, but what if the instruction set, the sets of functions or instructions that we could call were very general purpose, very abstract, where there's even further levels of abstraction that applications that can be built on top of that? It's a dangerously difficult undertaking, because it's exploitable in all sorts of ways, it requires incredible amounts of security. It requires you to really think through every way that someone could use your very primitive set of low level instructions to craft whatever they want. If you can do it, then it's a hell of a foundation.
+
+David: This is a huge idea. Basically saying like, Bitcoin is a calculator, let's build a computer. If we're going to build a computer, it's got to be a wholly different thing. He goes first to the Mastercoin team and tells them about this. He's like, hey, I'm working on your white paper, what if you guys did this instead?
+
+The Mastercoin team, half to their credit, they're like, wow, that is a big idea, that's really cool. Then half to their incredible detriment, they're like, we're going to stay focused on what we're doing. That was probably a mistake.
+
+Ben: Let me just crystallize this even further, just because I keep thinking that it is a stretched analogy. It's like someone handed you a Macintosh without Mac OS for it. What you said was, well, I'm going to start building Slack or I'm going to start building Chrome or Photoshop. Then somebody proposes to you, whoa, instead of just building Photoshop, build Mac OS. Imagine the potential that we will unlock with that. We only have so many resources.  
+
+David: Yeah. There's this amazing email that's in The Infinite Machine that Camila cites from the founder of Mastercoin to Vitalik. He says, but I'd rather see Mastercoin doing its core functions before we start experimenting with scripting, scripting being what you would need, like a universal scripting language as part of this to turn it into a real computer.
+
+Vitalik, at first he's a little disappointed. Then he's like, wait a minute, I'm Vitalik Buterin. I've got a following. People in crypto land know me. I'm good at writing white papers. I'm also pretty technical. I think this is the future. I'm just going to go do this.
+
+He leaves Tel Aviv and heads to probably the one place in the world, certainly then, and probably still today were the best place where if you've got the big world changing idea, you want people to take you seriously, even if you're not super well-known. He goes to San Francisco.
+
+Of course, remember, he knew the Ripple team and Ripple's based in San Francisco. He shows up, he counts serves, he crashes on the couch in the apartment of Ripple's CTO, Stefan Thomas in SoMa. He spends two weeks in San Francisco and he alternates between. During the days, he goes on long walks around San Francisco up and down the hills, and then he comes back and he just writes the white paper. He doesn't talk to Stefan.
+
+Stefan wants things like, hey, I want your thoughts on Ripple and like, maybe you should write about Ripple and events like that. He's like, no, no, I'm focused. He writes the white paper in two weeks, which would become the Ethereum white paper.
+
+At first, he titled it, the ultimate smart contract and decentralized application platform. Then he realizes again, Vitalik knows how to write, he knows how to convince people. He's like, I need a cool name for this project.
+
+He starts scrolling through Wikipedia looking for science fiction terms that he can use as inspiration, Sci-Fi terms, and he comes across the word ether or aether. I always thought it was aether. Aether was then called ether. This concept, I remember this from way back in middle school. It originated with the ancient Greeks who thought that aether was the fifth element out there. There's wind, fire, water, earth, I think are the four elements.
+
+The ancient Greeks postulated that those were like the human elements, but there was this fifth element called aether that the gods, the medieval Greek gods breathed. This idea never got stamped out in human history. In medieval times, just when the scientific revolution was getting going, people postulated that aether was an invisible substance that permeated the universe, that light traveled the force. It's like the force, it's exactly like the force.
+
+Specifically, light was conducted through aether. The gods breathe it, whatever. Anyway, it has been disproved, not the case. Vitalik thinks this is perfect. He's like, oh, man, the substance that the gods breathe, that it permeates the entire universe, that light gets conducted through, great. I'm going to borrow this term.
+
+Actually, aether does exist, and I'm going to use it to title my project. He comes up with the Ethereum network, of which the native currency on top of it is ether. Boom, it's born.
+
+Ben: Pretty good name. If you read this white paper, it's pretty A, long and B, technically complex.
+
+David: Yes, this is not like the Bitcoin white paper.
+
+Ben: No. The Bitcoin white paper does have some reasonably complex mathematical formulas. It basically, succinctly, lays out in prose how these clever mechanisms exist and how they'll all work together. The Ethereum white paper is like, here's the instruction set architecture for a new type of assembly language, and the type of machine that it will run on, and the registers are going to look like this. It's like going back to my operating systems class in college.
+
+David: We'll link to it, you should go look at it, read it. You should go read the Satoshi white paper. Anybody can read that and understand that. This is for a technical audience.
+
+Ben: The funny thing is, there's even a further technical specification on top of that called the yellow paper. When I was at Microsoft, we had the PMs write the spec and then once the specs were signed off and the devs wrote the design document was actually how the software would be architected. It's the spec and then the developer design doc of Ethereum.
+
+David: So funny. That would come a little later. More drama before then. Basically, we've talked about Ethereum being the computer versus Bitcoin the calculator, or like a computer without an operating system. There are two big consequences of this.
+
+One, you've got a Turing complete, generally programmable computer with a native currency in it. You now have code with money. With Bitcoin, you have money, and not really code. With a normal non-crypto world, you've got code.
+
+Ben: Lots of code, but completely separate from money.
+
+David: Here, the way Vitalik architects Ethereum, there are two types of accounts in the Ethereum network, accounts that can hold, spend, do things with ether, and can execute code. There are user accounts, which humans would call it like a wallet. They're user accounts, but then there also are contracts and smart contracts accounts. They are exactly the same as user accounts.
+
+Ben: This is the cleverness of the abstraction thing that we were talking about earlier. It's like, how low level and customizable can I make stuff? You just see it show up in the fact that both user accounts and contracts are a subclass of account. The cleverness of, yup, this account exists over here and you can upload your contract to it, and of course, you have to pay. We'll talk about that, of getting your contract to go live in this location. At any point, after that people can send inputs to it. The contract will execute and then the outputs.
+
+David: You've got literally the code, contracts, that are the same as the user accounts, meaning they have their own money. The code has its own money. This has never happened before. This is huge. That's just one of the two big ideas. The other big consequence of this is that if this network actually gets instantiated, it's going to be a world distributed computer, like there has never been before.
+
+People call Ethereum the world computer. This is what they mean. Of course, there's AWS, there's Azure, there's all cloud computing out there, but Amazon owns AWS. You can go find all the locations that all their data centers are and whatnot. It's like a thing. It's unlikely it's ever going to go down, but Amazon runs it.
+
+Ben: Right. Let's take the smart contract and just remove the money component for a moment here. It's like thinking about serverless architecture. Even in server architecture, you write some code, you deploy it to an endpoint somewhere, you expose an API that has an input and output, but that code lives on one server. There's probably some replication, but it's on a server in a data center.
+
+When you deploy an Ethereum, your contract to a location on the blockchain, that is replicated on all hundreds of thousands of nodes on the Ethereum network that have a copy of that.
+
+David: Just like every node on the Bitcoin network has a copy of the ledger with all the transaction history. Same deal here, every node on the network has a copy of all the code.
+
+Ben: Right. As you're visualizing this, where your brain should go is, wow, that's powerful. Then simultaneously, it should go, geez, that distributed nature, I could really imagine that being hard to take down. You can unplug a server from the wall, but once that code's deployed, that smart contract, it's pretty hard to undo.
+
+David: We're going to get into that.
+
+Ben: Lastly, your mind should go to a place where you're like, well, that's pretty inefficient. Like, wait, what? That's going to cost a lot of energy and time. Maybe there'll be a lot of network congestion. Already, as you're starting to understand the architecture of this, you're really, really good for some stuff and at great cost.
+
+David: I'll have this later in the notes. To pull it forward, just for context, people talk about, even today, in mid 2021, the relative power of the computer that is Ethereum, the world computer, is roughly equivalent to a Raspberry Pi on a home broadband connection. That is running everything.
+
+Ben: It is stable AF, David.
+
+David: Yeah, that's great. Maybe, maybe. We'll get into that. This is all pretty freaking cool, especially for an 18 year old. November 27th, 2013, Vitalik, I think he's still in San Francisco at this point, he's done the first draft of the Ethereum white paper. He emails it out to a very small group of people that he knows from the crypto community to ask for their feedback.
+
+Camilla writes in The Infinite Machine, Vitalik, "Sure his work was going to get torn apart. With an idea this big, there has to be a very good reason why nobody has tried to do it." That never happened. Vitalik's email got forwarded and then forwarded again. Instead, what he got was a flood of responses from people who were excited about the project and wanted to work with him. Vitalik's vision was much too big to be constrained.
+
+He was thinking about creating a base layer for everything, a computer that could simultaneously live in all the nodes of an enormous global network, which would be able to process anything you threw at it without downtime or interference, so developers could build whatever they dreamed of, and nobody would be able to stop them or their applications, like an infinite machine. It's pretty freaking cool.
+
+Ben: Very cool.
+
+David: So cool.
+
+Ben: Definitely Sci-Fi.
+
+David: Definitely. I mean, ether. We were all wrong. The Greeks were right, it exists. Pretty quickly after this, a core group of five people starts to form to pull this ambitious thing together and try to make this project happen. There's Vitalik, of course, there's Mihai, his buddy, his Bitcoin magazine partner-in-crime. There's Amir Chetrit, the guy that he met in Amsterdam, the Colored Coins guy who initially brought him to Israel. Amir's like, oh, I get it. This is cool. I could do this with you.
+
+Ben: Even though at Colored Coins, we're not going to do this as a part of that project, I get where it would go.
+
+David: I get where this is going and this should be its own thing. There's going to be some drama here because Amir doesn't leave Colored Coins. He's still working on Colored Coins. Two more people. The first is a guy named Anthony Di Iorio, who is also from Toronto and was a Bitcoin enthusiast, but unlike everybody else here, actually had some wealth in real world money.
+
+Ben: He worked at Goldman Sachs, right?
+
+David: No, that was Joe. He's going to come a little later. I forget how Anthony had made some money, but he had some money. He gets brought on and like, hey, I'll bankroll this while we're getting started up. He's like, we should also get my buddy, Charles, involved in this. Charles Hoskinson.
+
+For all Ethereum and crypto fans who've been following this phase here, you're probably smiling to yourselves right now because you know what's about to happen. Charles had done work on the idea of decentralized cryptocurrency exchanges, which of course would become a very big thing on Ethereum a few years later.
+
+Ben: These are dexis. People have heard of that. Coinbase being centralized, it runs in AWS.
+
+David: It's like the New York Stock Exchange.
+
+Ben: Right. It's a SaaS application that happens to connect to a bunch of blockchains underneath it. Whereas a decentralized exchange or a dex uses decentralized technology to create the exchange to trade.
+
+David: It runs in the nodes of the network. We'll get much more into this when we get into DeFi at the end of the episode. The other thing that Charles had worked on was helping pioneer this idea of a concept, which was just out there at the time, a concept called a DAO, a decentralized autonomous organization. Also going to come up in a minute here.
+
+Anthony's like, hey, Charles. He really knows his stuff, he's good, and he's got some experience running projects. He would be really good to bring on here and he knows what he's doing. The group quickly decides that Charles should be the CEO of this fledgling Ethereum something company foundation project. Charles, of course, would later go on to found Cardano.
+
+Quickly after that, they've got Vitalik, who wrote the white paper and is technical, but he's still a kid. He's a second year computer science student. You've got Amir who's not technical. You've got Mihai, who's not technical. You've got Anthony who's not technical and you've got Charles who's like borderline technical, but not a developer.
+
+They realize, hey, we need some devs. They bring on two developers, the first of whom is an amazing developer named Gavin Wood, who also works for people in crypto land, you know Gavin.
+
+Ben: Legendary name. Truly a gifted programmer.
+
+David: Incredibly gifted.
+
+Ben: Gavin had intersected with Mihai and Roxana before. When he hears about Ethereum and the white paper, which is now making the rounds in the community, he emails Vitalik. He says, yes, how far along are you in coding it? Can I help? Vitalik responds like, not far, yes, you start tomorrow.
+
+Gavin drops what he's doing, and he gets to work right away on C++ implementation of a client to run Ethereum nodes on the network. Gavin made the first commit to Ethereum's GitHub on Christmas Eve, 2013. He's dedicated. Right around the same time, a Dutch developer named Jeff Wilcke also joined the project. Wilcke was at Mastercoin.
+
+He was in Amsterdam, but he was working for Mastercoin, and joined this as a side project. He continues working on Mastercoin as well. Jeff gets to work on an implementation of an Ethereum client in Go, in The Go Programming Language. Gavin's working on a C++ version. Jeff is working on a Go version.
+
+Ben: Which if I remember right from the book was accidental at first. It was like, hey, we both know different programming languages. We both want to do this. We're both just going to get started. It wasn't like this intentional, hey, we should have redundancy to make sure that if we miss implement something in one of the languages, it doesn't become the way Ethereum works.
+
+David: Which actually ended up being one of the few good decisions in the early days of Ethereum, and I think was probably really a boon to have both of these versions out there. The next month, in January 2014, the original five plus Gavin and a few other folks—not Jeff, Jeff decided to stay in Amsterdam. They convene at an Airbnb in Miami, ahead of the Miami Bitcoin conference. I thought the Miami Bitcoin conference this year was the first one. No, it's been happening every year.
+
+Ben: I totally thought that too. Because there's so many Miami jokes that are happening that we should totally acknowledge that Miami 2014 was when Ethereum first happened, when it was presented, when this group got together.
+
+David: Miami's got OG tech grid.
+
+Ben: Absolutely. Do you know if the Bitcoin conference happens every year in Miami?
+
+David: That's actually a good question. I don't know. I should know. Nonetheless, it happened there in 2014. Vitalik, they decided that this is where they're going to announce and launch Ethereum. Vitalik is slated to give a talk at the conference, but this is all happening so fast. He's just giving a talk as Vitalik Buterin, writer for Bitcoin magazine. He's not even on the main stage in the conference planning, it's hilarious.
+
+They all show up at the house, also, Joseph Lubin, Joe, who you're bringing up earlier, shows up at the house. He'd been introduced to Vitalik and Anthony also. Joe was at Goldman and then in the hedge fund world, also a Princeton alum, Go Tigers. They decided to bring him on board. He's got some money as well, so he also helps with financing. Joe and Anthony are just out of their own personal finances or financing these early days.
+
+Ben: It's not like there's ether to buy at this point. They're literally just spending money to cover the costs.
+
+David: Yup. They decided at the house that the original five will be co-founders of Ethereum, not Gavin, not Jeff, not Joe. The co-founders will get the largest personal stakes of ether in the pre-allocation before the network goes live. That's decided on the early first day at the house. Gavin's there, meanwhile, he had been coding. He's coding furiously at the house trying to get a test net up to demonstrate during Vitalik's presentation, and has his coding. He's looking around and he's like, dude, I'm the only one who actually knows how to build this thing here.
+
+Ben: What are all these other people doing?
+
+David: He starts getting a little salty. He's like, guys, I should be a co-founder and I should be CTO, because what are you going to do without me? He and Anthony actually have a pretty big argument, supposedly at the house. Everything's happening so fast and I think it's settled there. They're like, all right, well, let's just get to Vitalik’s presentation and watch this thing. We'll see what happens after that.
+
+Finally, the presentation happens at 9:30 AM on Sunday. I think that was maybe the last day of the conference or something, January 26th. Still not on the main stage, but word had gotten out that this was going to be a big deal. Vitalik takes the stage, the room is packed. Everybody in the crypto community is there.
+
+He announces Ethereum. I think he announces that the test net is live, and people go nuts. It's like a rock concert. There's a standing ovation, there's cheering. People are really jazzed about this idea as they should be.
+
+Ben: It's so ambitious. The reason it hasn't been done is largely because it's just phenomenally risky and a ton of work, and then we'll require an enormous groundswell of community support in order to make it happen. Bitcoin already had this huge lead, all these network effects. It's like me saying, I want to start a new operating system, and then I'm going to build a new app store on top of that operating system. It's just nutty.
+
+David: Literally as Vitalik is walking off the stage, everybody and their mom is like hey, can I give you money? I want to fund this thing, I want a piece of this. Before the announcement, the team had been planning to do a $5 million crowd sale of ether to bootstrap the network and raise initial funds to pay back Anthony and Joe, and get going, and fund development.
+
+They decide, though, in the wake of this, they're like, it's the Roblox IPO. We got to postpone this. The demand is too high. They said like, hey, let's postpone, let's leave Miami, let's regroup in Switzerland. Because at the time, Switzerland had the most Swiss neutrality, that's friendliest laws for crypto companies in the world, and let's decide how to proceed.
+
+Actually, before they get there in the aftermath of the conference, Gavin continues to be a squeaky wheel. They decide, okay, great. We're going to expand the group of co-founders from five to eight. We're going to include Gavin, we're going to include Jeff from Amsterdam, he's running the Go implementation, and we're going to include Joe as well, because he's now financing this.
+
+Ben: Big founding team.
+
+David: Those are eight people, of which two and a half are technical on the founding team for an incredibly technical project. The next big question, though, that once they get to Switzerland, they have to start figuring out is like, well, how do we structure this thing? Is this a company? Is this a foundation? Is this Linux? What is this?
+
+As Camilla puts it in The Infinite Machine, the question was, would they be Google, a for-profit company with revenues, and cash flow, and profit? Would they be the Mozilla Foundation, which still would have revenue and resources, but is a non-profit that would allocate resources to developers both internally and externally to further the project?
+
+Here's where things go off the rails. Basically, Charles is the CEO, titularly at the time. Charles, Anthony, and Amir, the Colored Coins guy, all want the for-profit, the Google route. They're seeing dollar signs.
+
+Ben: Which is so funny that they're seeing dollar signs because it would be a corporation. In retrospect, there are a lot of dollar signs because it wasn't a corporation.
+
+David: Arguably a lot more dollar signs. We'll never know what would have happened otherwise. Meanwhile, Vitalik and Mihai, they want the Mozilla route. The developers Gavin and Jeff, I think mostly don't really care. They're just like, WTF guys. We don't have anything right now. We got to build this damn thing, and you're arguing about corporate structure? What the hell? If you press them, they probably want the Mozilla route, but mostly, I think they just don't really care.
+
+This becomes a huge schism. Charles wants to go to Silicon Valley, go do a tour, raise money from venture capitalists, and get the cash in the door, which they certainly could have done. Everybody else is like, you're going to go raise money from VCs? This is still crypto land. The whole point is to rage against the machine. You're going to go raise money from the traditional financial system?
+
+Meanwhile, fortunately for the way things would go, crowd sales of initial tokens for various projects were becoming more and more of a thing on top of Mastercoin, which existed at this point. There starts to be a really viable argument like you were saying, Ben, you can get plenty of money in by making this a non-profit foundation. The question though is, is it legal?
+
+Ben: Let’s rewind, has a foundation ever been behind something where you are selling tiny chunks that can potentially be used in the future to have some utility, but today, it's totally speculative? Also, because you're a foundation, you don't have shares. It's not like you're selling pieces of your company because it doesn't exist.
+
+David: It really is a gray area, but it really looks on the surface a lot like a securities offering, which of course, would be like a major no-no. The SEC would have something to say about that.
+
+Ben: Not a no-no in the sense that you can't do it. A no-no in the sense of like, you have to register with the SEC to do that. You need an IPO effectively. You need to do a list on an approved exchange. There are ways to sell securities to the public, but not the way the Ethereum guys are thinking about this.
+
+David: There's the US, which is obviously the biggest financial market in the world, but this is a world project and a world computer. Most of these people are not Americans, so there's that. They retain a whole army of securities lawyers all around the world to figure this out.
+
+They even managed to get—this is amazing—a former SEC Commissioner. A guy named Joseph Grundfest, who was SEC Commissioner in the Reagan administration. He's now teaching at Stanford. They get him to advise them on what to do here. The question all comes down to, ether (the currency), what is it? Is it a security or is it a commodity? That's a good question.
+
+Ben: The reason you're saying commodity is because it's a good that people can trade that has a utility. Rather than it being a share that people trade, that is speculative, that the price will go up or down in the future because it's tied to the performance of an entrepreneurial venture that's managed by some management team.
+
+David: Yup. If it's a security, no dice on this offering. If it's a commodity, all good. Anybody can start selling something.
+
+Ben: The thing that really gives them that credible argument around it being a commodity is the fact that it has utility in the Ethereum network.
+
+David: Exactly. We mentioned gas fees. The way the system works is ether is the currency on top of the Ethereum network, but ether exists to pay fees to the nodes on the network to get them to process transactions.
+
+Ben: It's effectively a bounty. When we're talking about gas fees, you can think of gas and ether effectively interchangeably. It's effectively a bounty where you say, all right, I need someone to do something with this smart contract that I've written. I need it propagated.
+
+David: You need an incentive to do that.
+
+Ben: Here's what I'm willing to pay for you guys to send this all around the world.
+
+David: Yup. Vitalik wasn't even thinking about the securities law implications of this when he wrote the white paper, but he calls it gas. He's like, this is the analogy. You got to buy the gas to put the gas in the car to get the car to go. They go to Grundfest, the former SEC Commissioner and they say, well, hey, here's how this works. It's gas fees. Real world gas isn't a security, obviously. That's a commodity. I can just set up a gas station and sell gas. I don't need to register that as a security with the SEC.
+
+Ben: Unless I'm always sunny style, then go and hoard all the gas in my basement or the back of a van, and then try and resell it later at a higher price.
+
+David: You probably don't bring that up with Grundfest. Isn't ether the same thing? Shouldn't it be a commodity? Grundfest thinks about it and he's like, yeah, I guess you're right. It's amazing.
+
+They take this to their US securities law firm, Pryor Cashman. They get Pryor Cashman to write an opinion letter saying, based on Grundfest saying this, we are of the opinion that ether is not a security, it's a commodity.
+
+A bunch of other law firms also write opinion letters. Boom, the doors are wide open, not just for Ethereum to now do an initial crowd sale of their utility token, but for anybody to do an initial crowd sale.
+
+Ben: Oh boy, a lot of people rubbing their hands together here.
+
+David: Talk about those dollar signs. If only the people that wanted to go the C-corp route had known about this, they would have changed their tune.
+
+Once this is settled, they all get back together in Switzerland—this is now June 2014—to make the final call on the direction to go. Everybody thinks going into this meeting that this is just going to be like a rubber stamp, like, great, we're going to approve. We're going in the Mozilla direction, we're going to do the crowdfunding. All good here, not a big deal. Camilla titles this chapter, The Red Wedding in The Infinite Machine.
+
+Basically, this becomes about way more than how they're going to structure the company. The devs are starting to really resent Charles as CEO and the decisions he's making, how he wants to run things, and they don't think he's doing anything. Amir is still running Colored Coins as well. They're like, what the hell is this Amir guy doing? Why is he part of this? He's not even doing anything?
+
+There ends up being a mutiny in this meeting. Everybody's screaming at each other. They all turn to Vitalik. Vitalik hadn't been to Switzerland. He was still traveling around the world evangelizing, talking about Ethereum, the white paper, and everything. He had just been awarded the Thiel Fellowship. He then emails Waterloo and he's like, hey, guys, I'm not coming back. And he drops out to work on this. He shows up and he's got a full on mutiny on his hands. They all look at him and they're like, you make the call. You decide who's in and who's out.
+
+Ben: Which incredibly foreshadows the future of Ethereum. They're not saying the eight of them are this decentralized governance, but despite the fact that there are eight people with eight voices, ultimately, when push comes to shove, everyone looks at Vitalik and says, all right, what do we do?
+
+David: Yeah, rightly or wrongly. It's not a company. He's not the CEO, but everybody looks at Vitalik. Supposedly, he goes out on the terrace of this house in Switzerland in Zug where they are. Apparently, he just sits there for a super long time. He's got a yoga ball that he's hugging to his chest. He's rocking back and forth like a baby. I'm just imagining the weight on this guy. He's 20 years old.
+
+Meanwhile, back in the house, everybody's staring at him and the tension is crazy. Finally, he comes back in, it's like, smoke is coming from the Vatican. He declares, Ethereum will be a foundation, full stop and for all time. Charles and Amir, you're out. You're done. You're gone. The project going forward is me, Gavin, Jeff, Joe, and Mihai. You two are out. This is pretty heavy stuff. As I was reading about this, it reminded me of Zuckerberg, Yahoo vomiting in the bathroom.
+
+Ben: It absolutely is that high tension, high drama, pins and needles moment.
+
+David: The entire future of the project is on him here. This is like Facebook could have sold to Yahoo for a billion dollars. This is the same moment.
+
+Ben: The code's not done. There have not been any tokens sold yet. Six, seven years later, the market cap of all the tokens out there would be half a trillion dollars. This is a high tension moment. Of course, they don't know that. Everyone believes that if this thing succeeds as the world computer—
+
+David: That's going to be pretty valuable. There's a lot at stake. They incorporate the Ethereum foundation as a Swiss non-profit. They move forward with the crowd sale.
+
+Ben: Can you incorporate? Does that word mean corporation?
+
+David: I don't know if they start, they instantiate—to use a developer phrase. The crowd sale starts on July 22, 2014 at midnight, Swiss time. It runs for two weeks. They sold $2.2 million worth of ether in the first 12 hours. By the end of it, they sold a total of 60 million ether for $18.3 million, which was way more than any other crypto crowd sale in history to that point.
+
+Even just thinking back to 2014, this is essentially a seed round for a company. An $18 million—to use the VC world analog—that's crazy. Nobody raised that much money. This is huge. Now, we have to actually launch the thing. Gavin's like, I've been telling you guys all along, we got to launch the thing.
+
+The plan is that they're going to launch in January 2015 and then throughout the year of 2015, they're going to roll out the network in five phases. By the end of 2015, they will have rolled out the final fifth phase, which is going to be called Serenity, it's the codename.
+
+Ben: All five phases in that first year?
+
+David: All five phases in the first year was the plan. Serenity was going to transition the underlying network and blockchain from a proof of work blockchain to a proof of stake Blockchain, which is just going to be a lot more scalable. It's all mapped out. Non-crypto people who are listening and wondering why we’re laughing.
+
+Ben: Why is David cackling like a mad man in the corner over there?
+
+David: We're now in June 2021. There is no Serenity, there is no proof of stake. It’s coming soon.
+
+Ben: July, there's a huge milestone, theoretically, this month. Listeners, before we dive back into the story and say exactly all the ways in which this did not go to plan, it's worth dwelling on this proof of work, proof of stake thing for a moment because we haven't really talked about proof of stake.
+
+We talked at the end of the Bitcoin episode about how proof of stake, theoretically, was going to require a lot less energy, but would retain a lot of the same characteristics of that security, verifiability, tamper proof, immutability. Let's save that for a moment.
+
+I do want to talk about Proof of Work because there was a key detail in the Bitcoin episode that we missed in the history of Proof of Work. Which of course is the cryptographic way of consuming energy to do a very hard math problem and end up with a mechanism that verifies the integrity of the chain, of all the transactions that came before.
+
+Of course, it was mentioned by Satoshi who proposed it in the Bitcoin white paper, Proof of Work, and its prior use in Hashcash. But it was actually invented way back in 1993 by Cynthia Dwork and Moni Naor. I didn't want to call this out because it is way too easy to make it seem like crypto was pioneered by a bunch of dudes. It's hard to tell the story if you’re like dude, dude, dude, dude, dude.
+
+It's all based on research done by Cynthia, a female computer science professor from Harvard in the early ‘90s.
+
+David: No way. That’s so awesome.
+
+Ben: It's funny how this concept that was originally intended to make it cost prohibitive to be an email spammer, ended up becoming the underpinning of crypto blockchain, this whole world pioneered [...].
+
+David: That's right, because Hashcash was an anti email spam thing. Super cool. I did not know that.
+
+Ben: Yup, Proof of Work ‘93, Cynthia at work.
+
+David: Wow. Vitalik wasn't even born then. On July 30th, the middle of 2015, the team finally released the first of the planned five phases of Ethereum. The Frontier release goes live and Ethereum is open to the public, amazing. Two weeks after it goes live, the first new other token crowd sale happens on top of Ethereum.
+
+Augur, which is a decentralized prediction and betting market, raises $5.3 million in a token offering of the Augur tokens that is built on top of Ethereum. They build on the "ERC20 standard" that makes it really easy to issue currencies on Ethereum. Just like Mastercoin on Bitcoin, now with ERC20, you can do it super easy.
+
+Ben: ERC being the Ethereum request for comment putting out their, hey hey world, hey open source friends, here is a proposal that I'm making and I'm requesting comments on it. Eventually people comment, the proposal gets revised, and then at some point, it receives a number and now it's a thing out there in the world that is the standard upon which you can operate.
+
+David: Because remember, Ethereum at this point, they are now operating and still do like the Linux Foundation, like the Mozilla Foundation. People out there in the world, they say like, hey, we should add this, and then the foundation is like, okay, cool, yeah, we'll add that. The ICO Boom is born. Just two weeks after the public launch, the first ICO on Ethereum happened.
+
+Ben: That's wild. That was something from the research that I did not realize that was so fast. Like, hey, there's this new thing, Ethereum. It's not even like, cool, there's a world computer, imagine all the uses for that. It's like a gold rush to launch my coin on this new thing.
+
+David: Augur is a real project.
+
+Ben: Sure. I'm not saying all ICOs were scams.
+
+David: The next year in 2016, while Augur does happen very quickly and was a legitimate project, at least to the best of our knowledge, it does take a little while for people to realize how much gold is in these hills. The next year, in 2016, there were 64 ICOs on Ethereum that collectively raised over $100 million. That's a lot of money.
+
+People are like, ICO Boom, 2016. Well, 2017 there are 966 ICOs that collectively raise over $10 billion, Floyd Mayweather, DJ Khaled, Paris Hilton.
+
+Ben: Everyone's getting a little sweetener for promoting their social media.
+
+David: Oh, my goodness. We talked about all this on the Bitcoin episode. Amazing. What we didn't realize was, just like Silk Road was for Bitcoin, ICOs were the killer use case to bootstrap up the Ethereum network.
+
+Ben: Just like the Silk Road, it didn't matter how legitimate the initial use case was. What it did do was bootstrap a network that could be then used for all sorts of purposes, now that you have this decentralized...
+
+David: It literally played out exactly the same way. Thankfully, by the end of 2018, the ICO bubble had deflated. Still, though, even in just the first 6, 9 months of 2018, there were 2300 ICOs that raised $11 billion. At the start of 2018, Ethereum had risen up for a long time, all-time high of just over $1,350 per token, giving it a market cap of over $100 billion.
+
+Then when the ICO bubble deflated at the end of the year in December, ether had crashed to $84 a token or a market cap of just under 10. So 90% of the value in the Ethereum network or of the ether token vanished over the course of 2018.
+
+Ben: It is fascinating that this bubble had a very specific reason for it that there was utility in Ethereum to be used by anyone launching an ICO. A lot of the time there's these bubbles in crypto, where you can't quite point to exactly the reason why the token was getting so much more valuable other than a snowball of excitement building around it. This one, it was very clear what the boom was about and what the buzz was about.
+
+David: It's all about getting the money. All right, so speaking of money, we got one more we got to talk about that is probably the wildest part of this whole episode. One of the 64 ICOs in 2016, something like that, that's the early part of the tip of the spear and the wave. There was a little project that a group of folks had put together that they called Slock.it.
+
+The idea behind Slock.it was it was going to be a decentralized Airbnb and other sharing economy platform, where you could send transactions into the blockchain and use those to unlock hardware locks like on doors, and on bikes, and cars, and stuff that would be connected to the blockchain, and these specialized hardware. You would pay the rental fee as part of the transaction on the blockchain. It would all happen on smart contracts on the Ethereum network. It sounds like freaking crazy, really dumb, but at the time, people were excited.
+
+They decided to do an ICO for this. The Slock.it founders were real believers. They're like, yeah, this is the future. A lot of people are excited about this.
+
+Ben: Thank God for the diaspora of human enthusiasm and creativity, because when some new piece of technology comes out like this, nobody knows what the future is. Nobody knows what the killer use cases are. Thank God, there are legions of people that take their own harebrained ideas and try and execute them, because absent that, we would never have the discovery mechanism to discover what the actual great applications are.
+
+David: Yeah, totally. You could argue whether it was good or bad that the Slock.it team did this. Remember, like I said, they're true believers. They get a bunch of money. It hadn't happened yet. They were lined up, they thought they were going to get a bunch of money. They said, hey, we're going to go a step further. Remember, I introduced a little while back with Charles Hoskinson, the idea of a decentralized autonomous organization.
+
+Ben: Which, by the way, is actually in the original Ethereum white paper.
+
+David: Yeah, as an idea of something you can do on Ethereum.
+
+Ben: Yup. For folks wondering like, okay, these words, decentralized autonomous organization, to the extent that a company, a corporation, is made up of a set of documents. You've got your articles in corporation, you've got employment agreements. A corporation is defined by a big pile of dumb contracts.
+
+David: A corporation is defined by a board of directors, a CEO, and a management team that are making the decisions.
+
+Ben: Totally. Those people are given powers by the contracts, by the documents. The DAO is simply that, but with smart contracts.
+
+David: It's all in code.
+
+Ben: Yeah. Why couldn't you have an organization that runs in a provable code legislated way?
+
+David: The idea is, in a DAO, the allocation of resources—be it capital, or time, or effort, or dev resources, or whatever—get allocated in a decentralized way by people who hold the tokens of the DAO. Everybody can vote and there are protection mechanisms for minority token holders versus the majority. Anybody can take their money out at any point in time if they disagree with the direction the DAO is going, but it's a decentralized organization. Okay, pretty cool.
+
+The Slock.it guys, they're like, we're going to be a DAO. If you don't like what we're doing, you can vote, you can have a say in the governance of Slock.it. If you don't like what we're doing, you can take your money out, then you decide to go even one step further. They say, actually, we think the Slock.it thing is cool, but there might be other things people think are cool, maybe cooler than Slock.it. We'll allocate our money to anything, and we'll just let the DAO decide where the money is going to go.
+
+Ben: It's like a reverse Berkshire Hathaway. Everyone has a say in capital allocation.
+
+David: That's exactly what it is. It is the opposite of Berkshire Hathaway. To say the crypto community goes nuts with it, this is catnip for the crypto community. People are jazzed.
+
+By the time the ICO closes in May 2016, remember, this was originally for a decentralized hardware, Airbnb competitor, they raised $150 million. They renamed the whole thing, The DAO. That is what they are. It's so great, so, so great. A $150 million, that is more than most first time VC funds in the world. That's a lot of money. That is the biggest crowdfunding of all time.
+
+Ben: I think the only seed funding that is larger than that for a single entity is probably Quibi.
+
+David: That is more Fred Wilson in Union Square, going to come into the story here in just a minute. A $150 million into The DAO is more than USV's entire first fund. They're one of the most active venture capital investors in crypto at the time. This is a lot of freaking money. It turns out, though, that there is a security flaw in Ethereum. It's specifically in the part of smart contract code where The DAO operates.
+
+Ben: To put a finer point on that, there are a few programming languages, but there's one very popular programming language developed specifically for writing smart contracts called Solidity. Solidity, it's like JavaScript. If you know how to write JavaScript, you can pretty quickly learn how to write Solidity.
+
+The DAO is basically a big pile of Solidity smart contracts that all interact with each other, but to your point, in order to run Solidity, there is code underneath in Ethereum's core software that needs to make sure that when those Solidity smart contracts are running, they're doing what the programmers intended for them to be doing.
+
+David: The code all exists in all the nodes in the Ethereum network. There are some downsides to distributed systems here. Right after the DAO finishes their ICO and gets all this money in the bank, one of Solidity's core developers realizes that there's this bug in Solidity. The consequence of this bug is that you could drain money. An attacker could come in and drain money out of a DAO.
+
+Probably one of the biggest unforced errors of all time, they're in the foundation. They're like, okay, you're great, we're going to update this. We're going to update our clients, we're going to post about it, we're going to let everybody know what's going on. They do that, but it's a distributed system. Not all the nodes in the network update the client software that they're running on to patch the hole.
+
+Anytime on the internet, you're going to have bad actors, especially in crypto land. A bunch of hackers are like, oh, shoot, here's a whole blog post about how to exploit DAOs and how to drain the funds. Here's this DAO that has $150 million in it. I'm going to go start hacking on this thing.
+
+Ben: The initial exploit was actually, wouldn't have been discovered, we don't think, except for the fact that the Ethereum foundation published about it.
+
+David: Yeah, it could have been independently discovered by other folks too, but yes, one of the core developers on Solidity found the bug, and then fixed the bug, and then they published about the bug, but it wasn't all fixed yet.
+
+Ben: They breathed this deep sigh of relief.
+
+David: Yeah, until the balance in the DAO's account starts slowly going down. This is a crazy thing. That's like the main plot point of The Last Jedi, where the slow motion cruiser chases throughout the whole movie where it's happening in slow motion. This is exactly what happens. The way this exploit worked, you could steal money, but you could only steal it very slowly. You could do it in a way that was unstoppable.
+
+Ben: You drip that out.
+
+David: For two weeks, everybody is freaking the F out. Vitalik is losing his mind. Everybody is losing their mind. The DAO was so big. That $150 million was 14% of all ether in existence, was in the DAO, and it's getting robbed.
+
+Vitalik calls on all exchanges like Coinbase, Binance, everybody to stop trading ETH. It literally paused everything. This is amazing. A group of white hat hackers band together. They call themselves the Robin Hood Group. They're like, we're going to hack the DAO as well, we're going to attack the DAO, but we're going to do it...
+
+Ben: We're going to drain the funds into an account that then we're going to take that account, and we're going to give it back to all the people. We're going to figure out how to drain it faster than the blackhat attacker. The craziest thing, because we've talked about this a couple times, but the way that you can get stuff to happen on the Ethereum network is by spending ETH, by offering a reward to do it. The more they can bankroll their whitehat efforts, the faster it will happen.
+
+They're out like they're asking anybody who they know who is a big ETH holder, a lot of the early true believers. It's like, hey, send your ETH to our address so that we can drain the DAO faster. When they start doing this, they aren't even publishing about it yet.
+
+They're freaking out that like, wait a minute, we're actually just blackhat hackers right now until we tell the world what we're doing and why. Everyone realizes that we're doing this for the good of everyone. It's this crazy Spider Man gift with all the pointing.
+
+David: This is such a giant cluster. Unfortunately, nothing works. The white hat, the Robin Hood Group, they're draining the DAO, but the blackhats are also draining the DAO, everybody's freaking out. The foundation and Vitalik decide, all right, we're going to do a soft fork of Ethereum. We're going to get all the nodes that are running Ethereum, all the miners to update their software and basically stop.
+
+We know the addresses of the blackhats. We're going to get them to stop processing transaction requests from the blackhats. We can do that by just updating the software. It's fine and then everything will continue on. Cool. It's not great, but it's not good.
+
+Ben: It really makes you wonder how decentralized this is, really.
+
+David: Just wait. Let's see where this evolves.
+
+Ben: Wait a minute. You're telling me that you're willing to modify the core code to just be everyone except that address?  
+
+David: Yeah, exactly. They're about to do this, and then a group of researchers at Cornell led by professor Eamon Gunn-Stryver figures out that if they were to do this the way they were going to do it, they would actually open up the network to big distributed denial of service attacks. You could do this, but this is not going to be good. They decide, all right, we're going to call off the soft fork. That leaves only two options. One, do nothing and the attackers steal 14% of all the ETH out there.
+
+Ben: They've already stolen one-third of it. The blackhat guys have 50 of the 150 already stolen.
+
+David: Yup, exactly. Option two is do what's called a hard fork and actually modify the underlying protocol itself to cut out the history like, go back and modify the history of the blockchain. That necessitates ending the current Ethereum blockchain and the wholesale starting over with a new one.
+
+Ben: Basically, you're rewinding the tape before the attack started, you're changing the code then. You're undoing all the transactions. Everyone's having their money move from destination accounts back to source accounts. All that gets undone, and then the bug gets patched, and then we fork, and now we're just playing everything forward again from there. The future can unfold with this bug fixed and none of those transactions happened.
+
+David: Yup. To a lot of folks listening, going with the hard fork and option number two might seem the obvious right path here, but this has huge philosophical consequences. As you were alluding to, Ben, this is essentially a bailout that we're talking about here. It's just like 2008.
+
+We screwed up, the consequences of our actions ended up in bad places. Rather than taking responsibility and moving on, we're going to have some days [...] a government. A higher authority is going to come in and reset things here.
+
+Ben: Right. What they proved is that these Ethereum Foundation people have a lot of power over this ecosystem. If they come out and Vitalik comes out and says, okay, everyone, we want you to hard fork, then as long as 51% of people hard fork, and really, it's 51% of the mining capacity, so it's not that many players that need to—you just get a few of the big guys together.
+
+They hard fork, that is the new source of truth. Sure, technically, the way that you look at the architecture is that it's decentralized. If we were willing to wind back the clock and rewrite history, then we could always do that. In the future, we'll be able to do that again.
+
+Really, you're betting the farm not on what you thought you were, which is contract is code, and this is immutable and unchangeable, but really in, well, if a few people decide that the "right thing" to do is to undo history, make the change, and then let's go forward from there, then they could...
+
+David: Any different than your own pal deciding to parachute money in. Vitalik is like, again, this is a huge decision. He's really stressed. Finally, even that computer science professor at Cornell sits down with him and he says to Vitalik, I'm going to ask you a question and I want you to answer truthfully. I'm not going to judge you, just be completely honest. Are you serious about building the world computer or are you trying to appeal to illegal money flows, drug dealers, illegal gamblers and whatnot?
+
+Vitalik responds, no, that is not what this is about. We want to build the next generation of applications. I really believe in the world computer and even says, okay, well, immutability, not doing the hard fork is paramount if you want to appeal to this illegal money crowd. If you don't and you're serious about the world computer, then it's completely reasonable to do a fork. That convinces Vitalik.
+
+They do it, they do the hard fork. All the miners switch over, literally, people are popping champagne at the foundation and at Cornell. It's all happening. A couple hours later, all of a sudden, the old blockchain comes back to life.
+
+Ben: That's another dramatic moment where you're imagining them watching the old chain on some monitor somewhere and you're like, wait a minute, they're adding new blocks to the old chain, how's this even possible? What's going on there?
+
+David: It's unclear to me, at least, I don't know if it's known, if anybody else knows or broadly, whether it was either on a mistake that some of the miners didn't get the message and kept mining the old chain, or if it was on purpose, a protest, true believers or the attackers themselves. Like, hell man, I want my money. That old chain keeps going. It is still going to this day. It is called Ethereum Classic. You can buy Ethereum Classic tokens on Coinbase. It has a $4 billion market cap.
+
+Ben: It's the 22nd largest cryptocurrency by market cap.
+
+David: Amazing, amazing. Ethereum, of course, the main thing, "main chain" has a $200 billion market cap as we're saying. It's obviously more successful, but this is crazy.
+
+Ben: Ethereum Classic is in some ways Dogecoin-like, where people are trading it even though they know there's a fundamental flaw and its future development. It does not have any effort behind it to fix bugs and develop new features. It's not going to evolve the way that Ethereum is going to evolve for the future.
+
+David: They survived the DAO and this becomes known in history. This is one of the defining moments of Ethereum. Ironically, there's Ethereum Classic, there's the fork and everybody who really is into immutability, and whether you want that for philosophical reasons, or to do illegal stuff, or whatever you want that for, that exists.
+
+For the main Ethereum blockchain, ironically this helps it, because they're like we'll assume we're going to do the right thing. We are a system and a protocol that is in development, we are evolving, there will be bugs, there will be hacks. When that happens, we're going to do the right thing and we're going to fix it. You can understand why that's actually pretty appealing to a lot of folks.
+
+Ben: It demonstrates a pretty extreme amount of pragmatism. It's very interesting how this crypto community started as exclusively true believers. As it gets more into the mainstream, and as there's more money behind it, and as it needs broader societal adoption, the trappings of traditional society start to seep in a little bit.
+
+There is this realization that maybe safety nets are good, and maybe having someone at the helm who has good judgment also, maybe that's good. The future of Ethereum, as much as Vitalik wants to work his way out of it, for better or for worse, there is a little bit of a benevolent dictatorship going on there between Vitalik, the foundation, and the largest mining pools, where ultimately, we are putting our faith and trust in something.
+
+David: It's certainly hard to know what would have happened otherwise, but had there not been a Vitalik, I don't think the hard fork would have happened. Only he, just like all the co-founders, put the gun in his hand to set up how the company was going to be, how the organization was going to be. Without somebody like that at the helm, there's good chances where it just devolved into chaos.
+
+Ben: Right. With Vitalik, so goes the community.
+
+David: That doesn't necessarily mean though that Ethereum is out of the woods or that all is sunshine, rainbows,  kitties, and unicorns.
+
+Ben: David, we did say at the beginning of the episode, this is the world computer and it's also the world's slowest computer.
+
+David: It is maybe the world's slowest computer.
+
+Ben: We should also talk about your comment about the Raspberry Pi. There's not any more Raspberry Pis getting daisy-chained to that thing as this is growing. We're seeing the ICOs, we're seeing all these people spinning up Coinbase accounts during Covid. I'm sure you're about to tell us about the boon of DeFi and it's still all happening on this little Raspberry Pi.
+
+David: Scalability, as more and more stuff is happening on Ethereum, the Raspberry Pi is having a harder time keeping up, and there has been an explosion of stuff. For a sense of scale, right now, the Ethereum network processes somewhere on the order of 15 to 45 transactions per second. That's the entire Ethereum world computer, 15 to 45 transactions per second happen on it.
+
+Ben: Those transactions could be anything. If you really want to abstract, just think about that as an actual transaction, a wire transfer or something about software, like a tweet could be a transaction, any sort of movement of bits from one place to another.
+
+David: Any read/write on the system. For comparison purposes, the Visa network can at peak load process about 50,000 transactions per second.
+
+Ben: Centralization, baby. You can really scale with that.
+
+David: A lot more. Once the final Serenity release of Ethereum—which together with a few other things is being called Ethereum 2.0—is live, in theory the Ethereum network will be able to process up to 100,000 transactions a second. That's like a Tesla Roadster style upgrade.
+
+Ben: You're probably scratching your head going, wait, how's that possible? Maybe let's put a pin in that and now, but it's coming, and it's been coming for six years but it's coming.
+
+David: It's coming, but right now, it's not here. As network congestion gets worse and worse, the amount that you have to pay to get the nodes to validate your transaction, the price that you have to pay, the gas fees keep going up.
+
+Ben: It’s supply-demand. Effectively, your CPU still has the same clock speed, but now there's a kajillion people that want to do stuff on that CPU.
+
+David: It goes from a de minimis amount in gas fees that you have to pay in 2015, 2016. I think in 2017, it hits maybe $13 per transaction you have to pay, then that dives down a little bit, and then at the peak it's $70. In the last few months here, DeFi has just totally taken off. DeFi involves lots of transactions.
+
+Ben: Decentralized finance. There is no application that requires more transaction throughput than high frequency trading, lending all that stuff.
+
+David: It spikes up over $70 just to execute one transaction. Obviously, this is a problem. Vitalik and the Ethereum Foundation know it's a problem, but progress is not happening super fast.
+
+There's this famous Fred Wilson from USV, one of the most prominent, early VCs investing in crypto, board member of Coinbase, plenty other, Dapper Labs, maker of CryptoKitties, which we'll get into in a sec. He's doing a fireside chat that's on YouTube at Multicoin Capital's 2018 Summit and he just goes off on Vitalik and Ethereum like, literally, goes off.
+
+He argues that they're incompetent, that they can't ship, that they're blowing the lead for the whole ecosystem. He says somebody needs to go over to Switzerland and fire those effers who don't know what they're doing. Boom, he lays down the gauntlet.
+
+Ben: His rationale for that is like, hey, at this point, it is a growth stage startup. There are playbooks here to run. He was on the board of Twitter. I remember reading Hatching Twitter and feeling like, actually, these Etherium stories, it feels similar to how Twitter came to be this band of renegades, pseudo anarchists.
+
+David: We've been making the comparison between Vitalik and Zach in this episode. There's also a comparison between Jack.
+
+Ben: Yeah, absolutely. Much tumult happened at Twitter, but Fred witnessed here how you take something that is an unbelievable product market fit, is scaling crazy, and figure out how to put great management in place.
+
+David: Vitalik then responds, he goes on Laura Shin's Unchained podcast and he's like, yeah, you're a VC, you want them but no. It's debatable who's right here. In the meantime, developers, they're building stuff that's really cool, it's executing very slowly, performance is such an issue on the network. Other blockchains start popping up to compete, they're like, well, hey, there's a problem. It's a free market. We'll start with an Ethereum competitor. We've referenced Cardano from Charles Hoskinson.
+
+Ben: Unbelievable that that guy was one of the co-founders of Ethereum and then went on to start Cardano.
+
+David: Polkadot comes out from Gavin. Gavin Wood had left the foundation and started working on...
+
+Ben: This is the genius programmer who did the initial implementation of...
+
+David: A Rust client, a Rust Ethereum client. As part of parody, I think is his company, and was a great contributor from parody into the Ethereum ecosystem for a long time. Then they start Polkadot, which is a competing chain–a little different, but competing chain. There's EOS, which raised $4.2 billion in an ICO before that bubble burst. They end up getting sued by the SEC. There's Binance's smart chain, there's lots and lots of folks out there.
+
+By and large, though, a lot of these projects still here in 2021 haven't even shipped. You think Ethereum ships slowly. Look at some of these other ones. None of them get real traction though, except maybe Solana, which we'll get into in a little bit.
+
+Meanwhile, these transactions are exploding on the Ethereum network. We talked about what they are, DeFi and NFTs, let's get into it. I thought the NFT boom came after DeFi. No, I'd forgotten about this. NFT's became a thing first.
+
+Ben: CryptoKitties.
+
+David: Exactly. At the end of 2017, The Ethereum Foundation hosted their first official Ethereum Foundation Hackathon in Toronto. A Canadian startup incubator called Axiom Zen from Vancouver, they're like, oh, we're looking at blockchain stuff. We're going to send our team over to Toronto, we're going to participate in the hackathon.
+
+At the hackathon, they come up with this idea, they're like, there these ERC-20 tokens, which are used for ICOs and creating your own currencies on top of Ethereum. Those are commodity tokens. Every token is just like every other token.
+
+Ben: They're fungible. It's like American dollars. Sure they have serial numbers, but if I have $20 and then I exchange that for a different $20, I still have $20.
+
+David: What if we create and implement a new token standard, where every token is different? Every token is unique and that's actually the appeal. We can make them collectible. We'll do things. This is the internet, let's make them cats. The internet loves cats.
+
+Ben: This is Ethereum. That community is a cats and rainbows community.
+
+David: To say it's like catnip is obvious. CryptoKitties, really, I didn't know this. CryptoKitties invented the NFT.
+
+Ben: I don't think I knew the phrase NFT. I actually came very close and really regret not buying CryptoKitties in 2017. I remember going to the website and being like this is wild, I can't believe they're doing this.
+
+David: People didn't think about it as an NFT, it was just CryptoKitties.
+
+Ben: Right. People thought, hey, we could do this for other things. In fact, there was a friend and another venture capitalist that was pitching me on this idea of baseball cards but on the blockchain, like CryptoKitties for sports. People were thinking, hey, we could take this idea and do it for other stuff. There wasn't a category name that was in the public consciousness.
+
+David: Of course, many listeners will know CryptoKitties, Axiom Zen changed its name to Dapper Labs. They are the company behind NBA Top Shot now. It's so freakin cool. CryptoKitties accounted for, at its peak, 15% of all the transactions on the worldwide Ethereum network. Crazy. That's NFT's and then, of course, that goes on to people, and daily, and everything going on now that people probably know about.
+
+The other big set of applications, though, that are happening on Ethereum in the post ICO summer after the ICO winter is DeFi, decentralized finance. We're not going to go super deep. We don't have time here, but it is super freaking cool. Basically, the idea behind Bitcoin was, we're going to create a decentralized currency, a non-fiat currency. We're going to go outside the traditional financial system to create money. DeFi is like, well, what if we take that a step further and we just go outside the traditional financial system for every financial [process]?
+
+Ben: It's something like 15%, 10%, I can't remember exactly what it is, but a meaningful percent of the US GDP is the finance and financial services industry. Clearly, there's a lot of stuff that needs to happen, a lot of instruments, a lot of different professionals to manage those things. If we've got a new type of money and we've got a new set of rails that that money can move around in programmatic ways, we need all those instruments in this ecosystem too.
+
+David: Remember what Ethereum is. One big idea is the world of computers, the other big idea is it's code with money. You got a code with money, now you don't need the code with institutions. The codes got the money.
+
+The first major DeFi project was actually MakerDAO. MakerDAO launched the Dai stable coin, which was a totally decentralized stable coin. You didn't need to have a counterpart, like with tether, on the other hand, saying like, don't worry, I hold USD in some bank accounts somewhere. You don't need that anymore. Then at the end of 2018, Uniswap launches and Uniswap had liquidity pools.
+
+Ben: Now suddenly, you don't necessarily need a specific Counterparty to trade with. There is a pool of basically pairs of tokens from one to another, if you want to swap assets without somebody on the other side of the trade.
+
+David: There's a very, very acute and real use case for this, which is like, hey, I want to buy a coin. Before Uniswap, I would go to Coinbase. I would go to FTX. I would go to some centralized exchange and I would do it. I would sell some Bitcoin and I buy some ether or whatever, or I would put money in and then I would pay a whole bunch of fees to that exchange.
+
+With Uniswap, you just do this: decentralized, peer to peer. No centralized exchange, no fees. Great. People love it. In June of 2020, another project, a decentralized lending platform called Compound, went even further. They say to participants on their system, which are lenders and borrowers, if you participate in the system, we're going to give you a new Compound token. We're going to give you a utility token for Compound by participating in the system.
+
+This kicks off a crease. This becomes known as yield farming and this kicks off DeFi summer, and it is all up to the rate from there. Before this Compound event, at the start of 2020, there was about $1 billion worth of collateral that was in DeFi. By the end of the summer, last year, it was $12 billion. In May of 2021, last month, it's $100 billion in DeFi.
+
+Ben: Which is half the market cap of ETH.
+
+David: You can imagine the pressure that this is putting on the Raspberry Pi, that is the Ethereum computer.
+
+Ben: Quite a constrained world computer at this point. For all these DeFi projects, each one has an associated token. That's the crazy thing, they all work the way that Ethereum does, where there's a utility token that allows you to do stuff on that platform. Of course, that platform is a sub platform that sits on top of Ethereum. Going way back to our earlier example, Ethereum is the operating system, but somebody made a browser, and then you can have web apps inside the browser. It's an application with our platform, within a platform, within a platform type of thing.
+
+David: Ben, the computer scientist in you is getting excited.
+
+Ben: Absolutely. Each one of these projects that has a purpose also has an associated utility token that you can trade, that can do something inside of that project. It's the speed at which the complexity of this thing is just growing. It's really hard to stay up on what is the current frontier.
+
+David: It's so exciting too. These are real things that are happening. Bitcoin's a whole separate thing. I think Bitcoin is a store of value. That makes sense. I think it's a good idea, but that's what it is. All this stuff, how there's so much innovation happening and new value being created in Ethereum. It's awesome.
+
+That brings us to today, at the start of 2020. The price of ETH was $140 a token. Last month, in May of 2021, that had skyrocketed up to over $4,000 a token and about a $450 billion market cap for ETH that has since come down by a factor of about two. ETH is right around $2,000 token right now and right around $220 billion market cap. Not bad for Raspberry Pi.
+
+In December of 2020, the Ethereum Foundation did finally launch phase zero of the Ethereum 2.0 upgrade, which started the beacon chain to start the process of moving to proof of stake. Sharding, which we haven't really gotten into, but that's a real scaling.
+
+Ben: Listeners, we'll get into Ethereum 2 and sharding here in analysis, because that is the conversation that we want to have around, what the future of Ethereum looks like and how we should think about this thing going forward. Let's pause on that for the moment.
+
+David: Here we are. It's amazing.
+
+Ben: David, before we get into the analysis here, as you've brought us to today, I want to thank the second sponsor of today's episode, Vouch. I told this story on the Berkshire part three episode. For those of you who love crypto and hate Berkshire Hathaway, I want to tell you again today, because this is a wild freaking story. I'm going to give you a word for word email that I received from a founder describing their experience with a legacy incumbent insurance company providing business insurance for their startup.
+
+I am completely spent. I can't take it anymore. The process with our insurance company and my renewals has blown my mind with paper forms scanning, mailed invoices to an office I'm not even in. There has to be a better way that does not consume more of my time than the price of this policy itself.
+
+Whatever I've spent on premiums, I'll give it two X this year on administrative cost. This is wild. Vouch is the literal exact opposite of this.
+
+David: They're like the DeFi equivalent of the centralized old insurance ecosystem.
+
+Ben: As you know, from us telling you this whole season and as we wrap here in this last episode of this season, it has been so great for them, they provide business insurance for startups. They got business insurance for us, Acquired, a company in less than 10 minutes.
+
+Night and day, doesn't even begin to describe Vouch versus the incumbents and it truly is an unbelievable step function better than everything that came before them. Acquired listeners, you'll get 5% off your coverage if you click the link in the show notes or go to vouch.us/acquired to learn more.
+
+David: As we get into analysis, I was so freaking pumped for this episode. He's doing all the research, all the crazy stories, all the history. The one thing I didn't have time to do was to go back and reread all the great pieces that Packy has done on the whole Ethereum ecosystem, on Web 3, on all the applications on DeFi, especially his great piece he just did on Ethereum. It would really help with our analysis if I'd done that.
+
+Ben: You are in luck. Is that Packy McCormick I see on Zoom?`
+
+Packy: Hello, Acquired. What's up, Ben and David? How are you?
+
+David: What is up?
+
+Ben: Great to have you, man.
+
+Packy: I am so honored to be here for the last episode of the season.
+
+Ben: I was wondering why Zoom was open on my computer this whole time. David's here in person. This doesn't even make any sense. I hope he joins at some point.
+
+Packy: I'm here now. This is going to be so fun, a topic that is near and dear to my heart and a podcast that is near and dear to my heart.
+
+Ben: Packy, the first analysis section we want to do here is the bull case and the bear case for Ethereum. Because you're mister unicorns, and rainbows, and bubbles, and sunshine, and the optimist, I would love for you to lay out. What is the bull case for Ethereum from here? Why is it going to beat all the challengers? We haven't even really talked about some of the challenges yet. How is ETH 2 going to go well? What the heck is ETH 2. I don't know where you want to start. I think you painting the bull case would be just perfect.
+
+Packy: Fantastic. When I wrote my piece on the internet, on Ethereum, I thought ETH is around 2400. I'm about $400 more bullish now than I was then. I think the bull case ends up being pretty simple. I think this is maybe a meta theme for all of crypto. For it to work, it has to have analogies to traditional business. I think the bull case here is more demand and less supply. You can boil it down to that.
+
+I know you've talked about some of the use cases. We've talked about DeFi, we've talked about NFTs, maybe touched a little bit on DAOs. There's all this stuff being built. I'm talking to so many people who are building things on top of Ethereum right now who are not in the least bit perturbed by the price.
+
+I think that you know high value art sales will continue to happen, but there's going to be this long tail of NFT content that is created on the internet, where there's just ownable files. I think there's an explosion happening in the DAO space right now. Just wrote a great piece today laying out the whole landscape.
+
+David: It's so crazy, The DAOs are back. Literally the worst thing.
+
+Packy: They almost broke Ethereum. They're very, very back. There's so many interesting projects being built. There's a company called Syndicate Protocol right now, that is essentially rebuilding investing infrastructure on the blockchain.
+
+There's all of these projects being built by people, some of whom are crypto native, some of whom are coming from traditional web to traditional internet, that are building on top of the blockchain.
+
+The fun thing about ETH is that, I view it like Ethereum is AWS if you had to use Amazon stock to use AWS. You had to buy Amazon stock to use AWS. Then when you use AWS, they actually did a share buyback and ate up some of those shares.
+
+Ben: When you say supply-demand, you're talking about ETH, the token or Ethereum, the network, or both?
+
+Packy: Both. The way that it works is to do nearly anything that you'd want to do on top of the Ethereum blockchain. You essentially need to start with ETH, which you pay transaction fees in the form of gas fees. You need to buy the thing, create demand, and you need to spend that thing on top of the blockchain. You might buy other tokens that you use in certain projects, but you're buying them with ETH and you're still paying gas fees.
+
+For the most part, right now, what happens is with ETH 1 or Ethereum, we are in a proof of work world just like Bitcoin where people are solving math problems on their computers, and they're getting rewarded in ETH. To do that, then they're having to sell a lot of that ETH to go pay for the computers themselves, the electricity to pay their taxes that they're making off of this.
+
+All these ETH are being minted and then just kicked out of the system, so they sell pressure on. What's happening with EIP-1559, which was a proposal that is approved and is about to be implemented, is that gas fees are splitting into a base fee and a tip, where the tip is, there's a bunch of transactions at any given block and you can pay more to be further in the block. That's one thing.
+
+The other piece of it, which is a huge change, is that the base fee is being burned. Instead of going to the miners and being sold, to be cash, to be whatever, that's just being wiped out.
+
+Ben: It's effectively deflationary or potentially deflationary because you're basically saying the amount of ETH that exists in the world, of course mining will continue so the people we continue creating more ETH, but now there's a way for it to be destroyed also in the base fee basically getting burned.
+
+Packy: Exactly. The more things that are happening, there's more demand for the currency itself. As more of those things happen, more of the currency is burned off. It's potentially deflationary. There's this meme that goes around in the Ethereum community that if that coin is sound money because it has a cap supply then Ethereum or ETH is ultrasound money because it has a decreasing supply. If you’ve seen the bat and the speaker on Twitter, that is the ultrasound money meme. That's one part of it. The other thing that's happening is the switch to Eth2 which will change it from being a proof of work consensus mechanism to a proof of stake consensus mechanism.
+
+David: Before we get into proof of stake versus proof of work, I knew what you're just saying about the deflationary aspects but am I right that this will also remove a huge amount of selling pressure as you were saying? Not only is it going to be deflationary, but you have now all of a sudden all of these essentially sell orders that were coming in from miners that are now going to not come in, right?
+
+Packy: Exactly right. The inverse of less sell pressure is essentially more buy pressure, it's more buy pressure. It's essentially all of the stuff that was being sold to pay for computers and electricity and all the stuff off-chain is now essentially being bought, assuming everything as well.
+
+David: Always a big assumption with Ethereum.
+
+Packy: Always a big assumption. That is a whole other thing, I think if you want 559 the least of a huge assumption, Eth2 is a very big assumption, we’re probably six months out from Eth2.
+
+David: Make the three of us. First to happen, Eth2 or full self-driving Teslas.
+
+Ben: Eth2 but not by much.
+
+David: I'll go with Eth2 too.
+
+Packy: I'm also going to go with Eth2. But I think it's interesting. All these things that seem technological challenges are also human challenges. Just like Tesla, everyone's like the tech is there but it's the regulation. I think the same here. There's a bunch of people who are ETH miners who are bummed that they've bought these rigs and they have the whole thing set up and they're no longer going to be running these proof of work things and making ETH for doing so.
+
+What I think is the opposing camp to Eth2 is the miners who've been making all this money off from proof of work. But if it does switch to proof of stake which it seems like it will, the big thing that happens there is that instead of spending a lot of electricity to solve really hard math problems and maybe hurting the environment or maybe not, depending on if you use renewables, all of that, what happens is you put up whatever amount of ETH I think, to do it directly unchained, you need to hold 32 ETH and put them up or stake them. You sensually vote this is a good transaction.
+
+We can allow this. No, this is an ETH transaction. We won't allow this. You earn Eth and that's where you get your yield from staking your RTH, if you're voting in the right way. But if you contradict yourself or if it's proven that you vote in a way that's bad for Ethereum, then you lose your stake. You’re staking the stuff to vote. But what it also means is that the yield for staking means that all of the sudden instead of just being kicked out of the system, the value that is being created on top of Ethereum actually starts accruing to ETH holders
+
+That's the really big thing, where there's always been this disconnect in my mind or the question that I always ask people is like, great, people use Ethereum, what happens? How does value occur to ETH and proof of stake is how value accrues ETH, because you need ETH to stake to secure the network. Then for doing that as a holder, the value accrues back to you.
+
+David: It essentially makes it a cash flowing asset.
+
+Packy: It makes it a cash flowing asset.
+
+Ben: Okay. Let me just identify what proof of stake is, let me throw out the question that everybody has to have in their mind at this point. Proof of work, you get rewarded with a token in order for spending money on energy to do some hard math problems. Proof of stake makes it seem like now just the people who have the existing ETH are the people who get to vote whether something's legitimate or not.
+
+It almost feels like we're shifting the power from labor, from the computers doing the work to mine, to the power going to capital, whoever currently has the most ETH and is willing to risk it to say I'm staking my ETH on the line here to say that this is the most legitimate transaction. You can take it away from me if it's proven later that it's not a legitimate transaction. Is that the right way to think about it?
+
+Packy: I think Bitcoin fans are coming. Bitcoin people would say that a proof of work is a much more democratized, open, fair way to do it because anyone with a computer in the world is able to become a miner. On Ethereum, you need to own a certain amount. It's 32 ETH, that's a meaningful amount of money. That's $64,000 at today's prices. You can also stake smaller amounts if you do it through Coinbase and a bunch of other projects where you are able to stake ETH in smaller amounts. Then they'll pool them and stake them for you.
+
+It's not like you have to be the richest person in the world. The fear in all of this is if somebody gets 51% of the ETH in circulation, then they can just take over the network. They win, the whole thing is done. They take everything.
+
+David: But there's always a 51% issue with any of these decentralized networks.
+
+Packy: There's a 51% issue with any of these for sure.
+
+Ben: We should say this actually—I was going to bring this up later, but it's worth calling out now. If you look at the pie chart of current miners on Ethereum, ether mine, F2, pool two and Nanopool combines, own something close to 60%. It's only those three mining pools that could hard-fork if they wanted to. But of course, it's not in their incentive to do it because then people wouldn't trust the system. They want ETH to continue to get more valuable.
+
+Packy: Which is the other really interesting piece of a bull case for Ethereum more than Bitcoin is that it's in the interest of anybody building on top of Ethereum for ETH to be more valuable. Because the more valuable that ETH is, the more secure the network is. There's all these different ways I think for the value to accrue.
+
+Ben: Yeah. In some ways, the bull case there would be that it's so geographically distributed that you can't turn Ethereum off. You could crash the value but there's no way it's going to go down completely. It's censorship resistant, but it's not collusion resistant. If those three parties colluded to do something, they could, but there would still be a lot of other people out there running ETH nodes and it's in everybody's interest Ethereum nodes. It's in everybody's interest to make that network as robust as possible such that if any single set of actors does something bad then there still exists a large network.
+
+Packy: To buy up enough. For those pools to continue to own enough or for any outside party to come in and buy up enough to influence anything and then to do 51% attack.
+
+David: Yeah, because in proof of stake, it's not about the miners anymore. It's about how much ETH itself you hold.
+
+Packy: Exactly. If ETH is all of a sudden $10,000 and the market cap goes up to $1 trillion then it costs $510 billion to run that attack. If it goes up to $20 trillion, it costs $1 trillion to run that attack. The more valuable it is, the more secure the network becomes which I think probably is why Ethereum, just the Lindyness, the fact that it's been around…
+
+Ben: Explained Lindy.
+
+Packy: Okay it's a Lindy is this concept that the longer something has been around, the longer it's likely to be around. If something's only been around for a day, then the chances are probably in another day, it's going to be gone. This could be a buzzy social app, this could be whatever else. If it's Plato and people have been referencing Plato for millennia, then chances are people are going to be referencing Plato for millennia in the future. There's a bunch of reasons that happen. One is quality I think rises to the top over time. They become these network effects where people start teaching philosophy courses and using Plato and all of that.
+
+I think with a blockchain, its network effects and Lindy a little bit on steroids where there's also this financial fee tied to the Lindy. It's attracting money.
+
+David: It’s like you own a Plato coin in addition to teaching Plato.
+
+Packy: Exactly right.
+
+Ben: Okay, we talked about EIP 1559 which you've now said enough times that I actually know the number which is about changing the way that gas fees work and changing the way that mining works and potentially will make ETH deflationary. Now, we talked about switching to proof of stake. Packy, do you have a good handle on what the proposal is for these side chains that are proof of stake to interact with the one main core Ethereum blockchain?
+
+Packy: Now we're getting into sharding. Right now, there is a single chain, it's one of the reasons that there is all of this congestion, because everything you're trying to do is fitting a block each single transaction into the main chain and that's it. Of course, there's going to be congestion particularly when [...] exploding and entities were exploding. Gas fees were high because people were bidding to get in. It was just insanely expensive to use Ethereum and the network was congested.
+
+With sharding, what happens is that these transactions get batched off the main chain in any number of maybe 64 shards and then come back down to the main chain as one transaction.
+
+Instead of 64 separate things happening, it happens one time and comes back down to the main chain as one transaction which decreases congestion.
+
+Ben: Yeah. Let's introduce the Scalability Trilemma. This is an interesting concept that was proposed by Vitalik, where he basically said there are three sides of the triangle. You've got decentralization which we hold dear. There is security which we also hold dear. Then there's scalability or you can think of that as bandwidth. David and I talked about how you can get 15 plus transactions a second, but it's certainly not 5000 transactions a second. It's not going to scale to a lot of transactions.
+
+The proposal for the side chains is interesting because you're basically saying we're going to punt a little bit on either security or decentralization in order to get that scalability. For little ticky-tack transactions that you don't want to pay huge fees for but also if they don't matter as much, if there's a lie in it somewhere or there's an attack on it and it's not that big a deal, it's fine for that not to happen on the main Ethereum blockchain. It's almost like not all laws or the 10 commandments. Things can be treated with different weights.
+
+For those things, maybe it's okay to have these side chains that we're going to punt a little bit on the decentralization or we're going to punt a little bit on security, but it's going to enable a lot of these ticky-tack transactions to happen in a way that actually makes the whole system work better. That said, there exists things like Solana that are Ethereum like in the fact that they are global scale computers but they make different tradeoffs in that trilemma and definitely get a lot more scalability but perhaps don't have the same level of hard core security and decentralization as Ethereum.
+
+Packy: The only thing that I would add to that is there is this concept of the execution layer and the settlement layer and right now with Ethereum those 2 things are all bundled into one. It's like having all the trades happen in real time on the New York Stock Exchange and then all of the settlement and the bank accounts and the money trading hands at the end of the day also happen in that same spot. Sharding on Ethereum or things like Solana could be where a lot of the execution happens.
+
+But because Ethereum is the most secure and more decentralized potentially than the other ones, a lot of the settlement will still happen on Ethereum even if a lot of activity happens in a bunch of different places.
+
+David: Yeah. The analogy I’ve been thinking about with Solana, they're the most interesting competing other chain with Ethereum. I think about it like lots of organizations use AWS and they use Snowflake. That makes sense. It's not like you're only going to use one or the other.
+
+Ben: Just to put up a fine point, because you brought up the execution layer and settlement layer, it's worth making the analogy to the current financial system where we've got a very low bandwidth connection between banks that doesn't need a lot of transactions. You've got Fedwire, that needs to be bulletproof, but how many per day do you really need to execute? Not that many.
+
+Credit card transactions, we need tens of thousands per second around the world because a lot of people are doing that. There are going to be some issues. There is going to be some fraud, there's going to need to be some reversals, we need to build all sorts of other mechanisms. But do all of those need to happen on Fedwire? No, they don't. To put the bow on the bull case, is it fair to say this is the next internet, web 3.0 is the next breakthrough paradigm shift for technology, the way that the internet was. It will power trillions of dollars of new economic activity the same way the internet did. Importantly, this is part of the bull case, Ethereum will be the base layer upon which it all happens.
+
+Packy: That is a good summary of the bull case, yes.
+
+David: Ben's been reading Packy’s pieces.
+
+Ben: Okay then let's go to bear. I mean the very first one here that I think we've all been alluding to is either Eth2 switch over doesn't happen and they blow their lead in the corresponding network effect, because it's technically difficult and also difficult to get the community on board, or that it goes poorly. In trying to make the system work faster, they actually kill the golden goose of this existing bullet proof-ish but slow system. That to me feels like the big bear in the room. Does that seem right?
+
+Packy: That seems right. Again if you talk to Solana or some other single chain, single shard protocols, I think what they might say is that because you're switching over to sharding, this beautiful thing that we haven't really discussed but is one of the reasons that people like building on top of Ethereum and building web 3.0 in general which is composability or people call it money Legos or media Legos, were you can have all the things that snap together and work together instantly.
+
+Ben: These are like smart contracts that exist at different addresses on a chain that you can sort of daisy-chain together.
+
+Packy: It's like a bunch of open source projects that fit together really nicely that anybody can just take off the shelf. There's a bunch of those daisy chains that happen that if they're not on the same chain and they're starting, then there's speed lost in that moving down from the shards to the main chain. It just breaks compose ability for certain use cases. Maybe there's enough things that somebody else can come in and say we can do all of the things that Ethereum can do. We're single shard and we're faster than X, Y and Z. Maybe there's enough there to provide the activation energy needed to move over to another chain.
+
+Ben: Right, it's sort of like god to bring it to the web 2.0 world. I built this great application. It calls these three other API's and I send data into this API. It sends data out which then calls these other APIs. It's beautiful. Actually though between these two, there's actually a phone call that needs to get made.
+
+Packy: Right. It's happening much faster and all that but I think that's a really good analogy.
+
+Ben: Yeah. I mean if they do have this huge lead but they threaded the needle the first time by creating Ethereum at all. The concept of a Turing complete globally distributed computer upon which other, not only applications, but platforms for applications could be built. That's a rabbit out of a hat. That's threading the needle. They need to do it again in order to make this shift to a scalable feature.
+
+David: Doing the research, for me, it seems like people like Fred Wilson. I’m just fed up with how slow it's moving. We've known that scalability is a problem for a long time. We still don't know what it's going to get fixed. There are risks despite all these benefits to Ethereum. Are you going to reach a certain point in the equilibrium where gas fees are too high and it’s too much of a pain for developers where they're like, fine, I'm out. I don't know. What do you think, Packy?
+
+Packy: I think that's certainly a possibility depending on how slow it moves. There are already some things like Audius Project which is a distributed music player which is built on both. It also settles on Ethereum.
+
+Ben: Both Solana and Ethereum.
+
+Packy: For really fast things like likes or upvotes on certain things, there’s just these really quick transactions. That's all happening on Solana. Then it's coming down and settling on Ethereum and all of that, but there is this idea of the different pieces being picked off. But there's also this thing where there are enough good blockchains like Solana that can interoperate with Ethereum, but that have certainly lower gas fees and lower congestion. If there are enough side chains that gas fees just get so low, that even if a bunch of people use this thing, maybe the take is just so low that not enough value is accruing to the holders of the tokens.
+
+David: Of Ethereum.
+
+Ben: That's the bear case for ETH. This thing becomes so rarely used that those tokens don't become super valuable.
+
+Packy: Potentially. Even if everybody in the world uses credit cards but interchange drops to .001%, Visa and MasterCard become a lot less valuable. Maybe there's something at play there. There may be a very good response to that critique. But that's one that is just in the back of my head a little bit. What happens if everything gets so decongested and gas fees dropped so much that there's actually not that much money to be made even if this is something that a lot of people are ultimately settling back on?
+
+Ben: It's interesting, your comment there on the credit card companies. Because ETH’s value is derived from the supply-demand match, it's actually a worse “business” on two axes. It would be that smaller percentage spiff and there would be way fewer transactions happening. It's like an exponential problem for them if a lot of the demand for transactions on the Ethereum blockchain shifted to other blockchains.
+
+Packy: I think that's right.
+
+Ben: At least for ETH holders.
+
+Packy: I think that's right, yes. Everything is a double edged sword. Its strength is also its potential downfall.
+
+Ben: I think that covers it for high level bull and bear and I think in playbook here, we may discover some more. But do you want to shift to power?
+
+David: Yeah, let's do it. This is interesting, I guess we did 7 Powers for Bitcoin. It's a whole new world in protocol level power.
+
+Ben: It's almost like first, I want to wrap my head around what's the power of HDP. You raised the right point that Bitcoin is simple. It is complex and clever in the combination of genius insights to create a system that works beautifully together. But Ethereum, it's actually quite difficult to wrap your whole head around it, the way you can wrap your whole head around Bitcoin because it exists in all these different layers. Maybe as we're doing power, we should define it a little bit tighter in say the Ethereum network, rather than trying to say the asset of the tokens.
+
+David: I like that.
+
+Ben: Okay, so for folks who are new to the show, the options here coming from Hamilton Helmer’s 7 Powers are counter positioning, scale economies, switching costs, network economies, process power, branding and cornered resources. Normally the way this is defined is what enables a business to achieve persistent deferential returns above their nearest competitors? How to be more profitable than their closest competitor? Of course this is a foundation and of course is a big open source community. It's interesting how we would define the persistent differential returns of the Ethereum network, so that we even have some criteria to figure out the power.
+
+David: I think that's easy. I think that's the value of Ether.
+
+Ben: Does it all keep coming back to that? Actually, it's the market cap of ether.
+
+David: Yeah.
+
+Ben: It's the total combined value of all the ether in the world.
+
+David: I'm tempted to say Ethereum has every single one of these powers.
+
+Ben: David’s got laser eyes over there on the corner.
+
+Packy: To me, I think network effects are for any blockchain, the number one thing that any of them have. This one actually works in a couple of ways. One, there’s the concept that we talked about that everything gets more secure, the more people who are using and the higher price the ETH is. Then, I think even on top of that all the things that are being built on top of Ethereum, I think really benefit from it. Where the holders of a token of a certain project are more likely to stick around. I think that's the potential power of businesses built on top of Ethereum.
+
+They're incentivizing users to get more of their friends to use the thing that they're using because their token gets more valuable as they do it. Those things have their own really strong network effects I think. That then I think benefits back down to Ethereum.
+
+David: Yeah, it’s multi-layered.
+
+Ben: You're right. I keep trying to come up with a good non-crypto analogy. Because I think the Mac OS one that I threw out earlier was like Ethereum is the operating system upon which you can build platforms and applications. That felt right, but there is also this element where it's also like being a shareholder in Apple, as well as Mac OS.
+
+David: Well, this is where I think there's counter positioning too. If you view AWS and the like as competitors to the Ethereum network, there's no way that Amazon even in a post-Jeff Bezos world is going to be like when you use AWS, you get paid in Amazon stock.
+
+Ben: Right. It’s like, no, we want to capture that upside. That's our leverage. There's massive switching costs. I mean, if you're going to go write something for Solana, you don't write in Solidity. In any of these applications that have already begun development or are already developed for Ethereum, there are some other systems that are compatible, they call them EVM compatible with the Ethereum virtual machine. Basically, the globally distributed computer that is Ethereum. You can, with minor tweaks, port those over to non-Ethereum blockchains.
+
+But for ones that are dramatically different and better in a lot of ways like Solana, it's going to be hard to get the developer community to really shift at this point. It's not that Ethereum has a 30 year lead but they have a four or five year lead with the developer community that is non-trivial.
+
+David: I think there's another element of switching costs too, which is for participants in the crypto economy, ether is the coin trading pair and Bitcoin too, but probably ether more than Bitcoin for other coins and other objects. If you want to buy an NFT, you're buying that with Ethereum. You're not buying that with Solana tokens. If you want to buy Solana tokens, you're probably buying that with Ethereum. If you want to trade on Uniswap, I think ether is the number one trading pair on Uniswap.
+
+Packy: Then there's another level which is that if you're accruing tokens for participating in something that's built on top of Ethereum. Those are ERC-20 tokens, so maybe there are some mechanisms where you sell, you convert to something else, and then you get a new token if the project switches to another chain. But it seems incredibly complicated if not impossible to pull that off. I think just the fact that all these tokens are ERC-20 tokens, it has a switching cost as well.
+
+Ben: The thing that springs to mind is on the Bitcoin episode, we were talking about how entrenched the US dollar is versus Bitcoin because the government both settles its debts and collects taxes in USD. There are so many things that plug into the Ethereum network at this point that it's the same effect. If you're participating in a lot of these different projects, you're going to end up with ETH one way or another. Then, it's work for you and it's transaction costs for you to move that to a different blockchain.
+
+David: All right, what's next? Let’s keep going here.
+
+Ben: There's something that it doesn’t have. What's the corner resource? I don't think it really has that.
+
+David: Vitalik, maybe? Although people aren't exactly cornered resources. I don't think there's any other single person who is as much the face of crypto as Vitalik.
+
+Packy: It's a liquid asset, so this is not exactly right, but there's something about ETH holders or at least serious ETH holders or people who have held for a long time that are effectively cornered resources. People who just aren't going to sell or incentivize for ETH to become more valuable.
+
+David:  The HODLers.
+
+Packy: The ETH HODLers. Maybe not as boisterous or passionate maybe as the Bitcoin [...].
+
+David: I can buy that.
+
+Packy: I think there's something there where—at some point, you have to pay a bunch of taxes if you sell your ETH. Then maybe that's a cornered resource. There’s a bunch of people who don't have to pay a lot of taxes.
+
+David: Latent capital gains. I think there's probably scale economies…
+
+Ben: Definitely scale economies.
+
+David: …with the mining network and then in a proof of stake world that there are just a number of ETH holders out there who are staking.
+
+Packy: That's true. You could argue that there's been negative scale economies as well where gas fees got prohibitively high because too many people were using the network. Maybe it’s negative network effects as well but too many people using the network degrades the experience and all that. Maybe those are things that if you assume EIP 1559 and Eth2 go through smoothly become powers, but in the short term may not be.
+
+Ben: That’s a great point. We've been to sunshine and rainbows over here on that point, yet Ethereum as a network got less utility in several ways as it got bigger.
+
+David: Yeah, for sure.
+
+Ben: That is the opposite of what happens on WhatsApp or Facebook or any of these like true network effect businesses. Just to stay on scale economies, it’s also the opposite of what's true in like a Netflix, where you have that pure play scale economies, where the bigger it got, the more cost effective it got for them to do things like licensed content. That doesn't show up here at all.
+
+David: Okay, maybe not then.
+
+Packy: The bigger it gets, the more secure it gets and the more people are willing to build on top of it. But then there's also certainly the economies of scale up to this point.
+
+David: Yup.
+
+Ben: Continuing down the things that it's probably not, I don't think there's really process power. There are a lot of people who contribute to this thing. It's a big open source project, but I don't think that gives it power, I think in large part that has held it back.
+
+David: Yeah. I mean Fred Wilson would say it’s held it back.
+
+Ben: So much of the value actually happened when there wasn't a lot of process to it at all when it was the founders and early folks contributing to it that created the initial system.
+
+David: Yep.
+
+Ben: All right, we haven't talked about branding yet. It's the last one. How do you guys feel about that? Yes? Does it have branding power? The way this would classically be defined as…
+
+David: It’s Tiffany’s, I'm going to pay more for this diamond because it's from Tiffany’s.
+
+Ben: I don't think this has that.
+
+Packy: I would say maybe that other than network effects, maybe it’s its biggest power. Vitalik wrote a post that I reference on legitimacy and how one of the main reasons that different things in crypto have value is because they have legitimacy. You can get legitimacy in a whole bunch of ways, but because Ethereum’s been around a long time, it performed well in the past and all of these things, it keeps on accruing legitimacy. You could build, and people have built forks of Ethereum. There’s Ethereum classic out there right now.
+
+David: Ethereum classic has recovered, yeah.
+
+Packy: Which is the same thing, but it doesn’t have the brand power associated with. It all ties in together where there are network effects because people moved over so it makes sense because other people are moving over. There's a bunch of things jumbled into one, but I think the existence of an Ethereum classic, or existence of a bunch of chains that technically are the exact same as something like Ethereum, but their coins are nowhere near as valuable. I think to me, that's kind of bread power. That ties into the Lindy thing we were talking about before.
+
+Ben: Yeah, that's a really good point. It's funny how the psychology of when I go put $5000, again not investment advice, into Ethereum feels like, maybe, it’s probably not going to go to zero, but when I put $5000 into a brand new coin that someone told me is doing technically interesting but I've never heard off, I may be like, how about $500?
+
+There's definitely some test the water things and it's funny how it's actually more around how much I would be willing to invest, not how much I will be willing to pay. There is a brand power that accrues to it from a trust perspective of even though it's a very, very volatile asset, gives me some amount of trust that it's here to stay.
+
+David: I'll buy it. Packy, you're spot on with the ETH Classic argument.
+
+Ben: We appreciate you joining our liquid superteam to bring us this great insight.
+
+Packy: It has been an honor to be on the liquid superteam.
+
+Ben: There is something that's sort of been ruminating, and I know we already did bear and bull. There's got to be a bear case on all of crypto that's like the bear king here that we're not talking about. There's a variety of things that are pseudo black swan like quantum computing or someone figures out how to crack RSA effectively. Let's put those black swan type things aside. Where is there a perma burst on the entire crypto bubble?
+
+Packy: I think there are still a lot of things that are happening on Ethereum because it's early, cool, and they have no impact on the real world. One big bear bubble burst case is just it doesn't find applications where it's that much more useful and useful enough to be worth the extra complexity. That's not my belief but I think maybe one of them is that it just doesn’t find the application still. I think that has been the risk for the past few years.
+
+Another one is that everything is still so tied to the price of Bitcoin. Bitcoin is a blessing in disguise, I don't think there's anything fake about it just because it's built on human belief and the fact that other people will accept Bitcoin. If people decide for whatever reason—it has tanked a bunch recently. If people decide for whatever reason or the government starts to crack down, it's just not worth the headache. If Bitcoin goes down, at least temporarily everything is going to absolutely crash.
+
+David: It's been wild to watch these last couple of months. As Bitcoin is swung around, Ethereum is swung around, a lot of tokens are swung around and nobody realizes these things are completely not connected, but they are which is your point.
+
+Packy: That one is a big one to me. Just even the fact that they trade together I think is a big one to me. Let alone what happens if Bitcoin drops. The fact that they're not being priced independently yet is either a phenomenal opportunity or something to be worried about.
+
+David: How do you feel about the state act or government risk, not necessarily in terms of oh, government or state act is going to do a 51% and destroy these things. More of like what we are starting to see which I know of like we’re going to make it illegal to do this. We're going to try and prevent our citizens from participating in either Bitcoin or in the whole decentralized ecosystem and Ethereum.
+
+Packy: I think Uber is a good analogy actually where it's this race between what the government decides to do and how much people really want to use this thing. If it can get to a point where there's a ton of utility and it enables cross border payments and people who are in a hyperinflationary market need cryptocurrency as a stable thing to keep their money in. If those use cases accelerate past the point of what governments can control and there's a ground swell, then that's awesome.
+
+The Uber case is that they will go to town and break all the rules, but customers love Uber so much that they can fight the local governments and win because they have all the constituents on their side. I think that's probably the race that plays out is can crypto find enough use cases and provide real value to enough people that if the government tries to crack down, it will cause an uproar.
+
+Ben: Right, because right now that cross border payment thing is real in countries that are having monetary crises. In terms of actual real use cases, while there are very cool things like Audius out there, most of them are for true believers.
+
+To your point, if the government bans it, there has to be enough of the citizenry who is in it for the utility of what's already built rather than in it for the belief in the future to continue its development and momentum.
+
+Packy: Right. You couldn’t ban the internet at this point. There's probably a time in the early 90s, late 80s, where the government could have said no internet and people would have been like meh, it would’ve been cool.
+
+David: I'll use my web TV instead.
+
+Packy: There wasn't money tied up into it, I think we're past that point now, but I think that's the risk.
+
+Ben: Thank you for helping me tie off that section in a way that calms me, it just feels like we missed something there. Playbook?
+
+David: Yeah, playbook.
+
+Ben: The first one that I thought that was really interesting is just to contrast this to the Bitcoin episode, Bitcoin is pretty set in stone, but Ethereum evolves. They've demonstrated this ability to learn from mistakes, adjust the underlying software and the contracts to change to what the community feels is best and that's for better or for worse.
+
+Is Ethereum truly immutable? No, I don't think it's truly immutable and yes it does have weak subjectivity.
+
+David: There have been a bunch of hard forks.
+
+Ben: Right, decisions left to human actors who can influence 51% fairly easily and then it changes the way the world works. We talked about the three mining pools. In contrast to Bitcoin, it does represent the human element of the way that all of our existing social monetary technology systems are structured where we do have fate in institutions.
+
+David: Not that I think this actually happened, but it would be much less crazy then with Ethereum to say Bitcoin was probably given to us by the aliens. I'm not saying that it was, but it could have been. It was like a technology transfer from an advanced society where they were like here it is. That is not as we've seen with its history. Ethereum has been built in public by humans.
+
+Ben: The other thing that makes me think Bitcoin is built by aliens is that no human could sit around with $60 billion in a bank account and never touch it.
+
+David: You're talking about Satoshi?
+
+Ben: Satoshi’s Bitcoin stake.
+
+David: I’ve got one that is a really, really big playbook theme that we've only scratched the surface here and we can't fully dig into, but I think we're going to in the future of Acquired quite often is look, Fred Wilson's arguments against Patel, against The Foundation had a lot of merit and rewinding back to the original history and the founding, Charles, and Anthony, and the desire to do a for profit company for this as the vehicle and to raise venture financing, there was merit for those things.
+
+Ethereum and so many other crypto organizations since Ethereum have proven that there is another way to generate, and for people in institutions to capture amazing amounts of value outside of a traditional US C-Corporation. Solana is a combination of a foundation and a C-Corporation that is operating things but most of the values and most of the tokens are held by the foundation.
+
+This is a whole new way of structuring projects, companies. It totally is and this is going to change a lot. Certainly a lot of VCs from USV, crypto native funds, et cetera are like, yeah, cool. We get it, we're going to buy tokens instead of buying shares in C-Corps. Maybe it's that simple. I think we're just scratching the surface of all the implications of this.
+
+Ben: I got another one that we touched on earlier but is worth repeating. When we literally think of what is the playbook to build Ethereum, what was the playbook to build Bitcoin, it was bootstrapping the network with illegitimate use cases. Once that network has been laid, you do really cool stuff on it, cool legitimate stuff that is better than what came before or at least serves a different use case because now you have this infrastructure.
+
+I was trying to think where did this show up or did we see this with the internet in the same way that we've seen it in crypto where the Silk Road in Bitcoin, you had ICOs with Etheruem. People talk about the adult industry being an early adopter of the internet and pioneering video technologies. That happens to some extent.
+
+David: It also happened with Ethereum. We didn't talk about history, but there's a thing called SpankChain that for sure is one of the first applications on Ethereum.
+
+Ben: Yup, I guess the contrasting point I want to make is that it's interesting to me that the internet started in university computer science departments and maybe I'm missing a huge chunk of internet history, but it doesn't feel like a bunch of nodes were lit up on the internet because people wanted to access something illicit. It's fascinating to me that that has happened twice in crypto but was not a part of the internet or part of the PC revolution. It didn't seem to be a part of the phone revolution. It's sort of a new way to gain widespread adoption.
+
+David: Not on the same scale, I think.
+
+Ben: Yeah, it's a spectrum.
+
+David: So the playbook starts with an illicit use case if you want to get [...].
+
+Ben: The crypto playbook is to figure out how to get as many nodes on your network as fast as possible at whatever cost so you can gain the benefit of what will happen down the line with it.
+
+David: Makes sense to me.
+
+Ben: Packy, any playbook themes?
+
+Packy: I think the interesting thing on that playbook theme is that people who were operating, selling drugs, and porn all had a hard time operating in the existing system so I think it's less illicit use cases and it's more enabling something that wasn't possible for a group of people before. Those people are not able to transact in the existing system to the same extent that they were, something that's decentralized and a little bit more anonymous.
+
+I certainly think that piece is true, but I think the playbook theme is if you're enabling something that wasn't previously possible to a certain group of people, that's where you get your first adaption. Maybe market place building 101 is to find that passionate core niche and expand outward from there. I think maybe that's the kinder, gentler way of what happened here.
+
+Another playbook theme to me is there's something around the idea that there's all of these use cases that are internal to the network right now. They're still looking to find ways to influence the "real world" a little bit more, but I wonder if there's a playbook theme around how do you build up used cases that are internal to your network to get that initial activation energy before going out and taking over external use cases.
+
+Ben: Yeah, it leads me to another thing that I've been thinking a lot with Ethereum and crypto broadly, I set out this tweet the other way that was in this vain of jobs to be done that you were sort of talking about, Packy, which is what are examples of blockchain based applications that a, created a lot of value besides profit from speculations, b, would have a worst user experience if built on centralized technologies, and c, has a primary function that is not finance or currency.
+
+I got a lot of really good push back from a number of people including friend of the show Chad Whitman that were basically like why would you put c in there? Why does it have to have finance or currency not be a core part of it?
+
+Because what Web 3.0 is is bringing finance and currency in an integrated way to network software. It's like in the way that Web 2.0 is about bringing dynamically loaded data into your web pages. It's like asking what's a good example of a Web 2.0 app that doesn't use Ajax? The jobs to be done of all things on Web 3.0 on the crypto internet do involve a transfer of value between people.
+
+I think I'm coming around to the idea that I'm not going to see the next Spotify that is just straight up better than Spotify, but decentralized and because it's decentralized, it's like no we're going to see a version of Spotify that lets me transact directly with the artist. Transacting directly or something involving decentralized finance is actually the point of Web 3.0.
+
+Patchy: I think DAOs are fascinating here as well. The big innovations and where most of the people are doing their work, it's not on the technology side but is on the incentive design, tokenomics, all of the things to help coordinate groups of people on the internet in ways that might otherwise either not be possible or build with so much friction. That comes back to the financial aspect, whether or not it's financial, the tokenization aspect where you at least have the status of owning a bunch of tokens or other things.
+
+I think the idea of making incentive design into the core of the product and letting the community design incentives for themselves is mind bendingly fascinating.
+
+David: I’ve gotten Ben interested in BitClout. That's such a good example of this. What is BitClout? It's Twitter with money. Twitter with money is super freaking different from Twitter.
+
+Ben: Totally. Many times I have wanted to invest in someone some way that I thought was criminally underfollowed for the quality of their content. Yup, that is exactly what it lets me do.
+
+David: Yup, cool.
+
+Ben: I think that wraps up the playbook for me.
+
+David: Me too. Should we move on to grading?
+
+Ben: Before we go to grading, we want to thank our third sponsor of this episode and just give a huge bear hug. Thank you for a great season with Capchase, the official sponsor of grading for season eight.
+
+David: And a big congratulations on their huge new round.
+
+Ben: Fundraised, totally.
+
+David: Yeah, we knew they’d win.
+
+Ben: More cash to help more startups to realize less dilution. You guys all know this by now, but there are a few things I want to point out. Imagine if all of your customers paid upfront for a full year, the moment you signed a contract. What would that mean?
+
+I'm going to go off-script here and say seriously, what would that mean? Everybody does cash flow planning and you're going to realize this cash at this point, I can reuse that to invest in growth later. What if all of that just showed up right now?
+
+People are doing stuff like discounting contracts anyway to try to incentivize that cash to happen up front so they can delay raising money so they can bigger and more valuable by the time they raise money.
+
+Now you don't need to negotiate that everytime with a customer. You say, great, you pay on the terms that you pay on monthly, quarterly, or whatever it is and then Capchase makes it so that you can get all of that cash up front to invest in growth, R&D, whatever it is. I'm really learning this business by having a whole season of getting to know both the teams there.
+
+David: It's great. They need a product for podcasters.
+
+Ben: They totally do. I think just a quick status that founders who worked with Capchase have extended their runway up to eight months and spared 16% or more on delusion. Go check them out if you're a SaaS company that wants to sell less of your company, which who’s not? You should visit them at capchase.com.
+
+Okay, grading.
+
+David: How are we going to do this?
+
+Ben: Are we going to decide on air how to do this? I guess so. I'll tell you what we're not going to do, Packy and David can doodle on what we are going to do. We are deliberately not grading this one on the investment return of ETH. Bitcoin, I think we talked about, was a 3 million X in one decade, it's the single greatest return in human history on any asset in one decade.
+
+But that is not what Ethereum is about. It is the world's computer. Sure it's a financial asset, but it's not primarily a financial asset. Of course, it is a cryptocurrency but I think if we focus on grading and tying this episode up based on it's investment return, I think we're missing the point.
+
+David: Totally agree.
+
+Ben: David, how are we going to grade this one?
+
+David: I think we should grade the Ethereum Foundation on their storageship of the Ethereum network over the past seven years.
+
+Ben: Yeah, and to abstract it even more, you can say grade how Ethereum's implementation, how successful it has been given the germ of the idea initially of the world computer that exists on a Blockchain.
+
+David: I think it is utterly amazing what has happened here. No Vitalik, no white paper, no foundation, none of this would exist. No DeFi, no NFT, no CryptoKitties, no NBA TopShot, no Audius. None of these things are "mainstream" yet, but they're pretty darn close and there are billions and billions and billions of dollars of economies that have been created here. That is out of this world. That's on the one hand.
+
+On the other hand, 2014 was a long time ago. They've shifted a bunch of versions, but relative to certainly the initial promise of we’re going to be at the serenity released by 2015, we are way far behind here. I think Vitalik himself has said in a minute that there are many things he would go back and change about the beginning of Ethereum and the trajectory that it's been on.
+
+I'm going to land on an A-. I think it gets A range because of the first part of what I just said, this is freaking unreal. The actual execution, you're not ready for primetime yet. They're getting there, but I’m going to go with A-.
+
+Ben: It's funny how it parallels so many other open source things like famously the meme in the early 2000s was next year is the year of Linux on the desktop. This stuff, we are hurting cats, and Vitalik is literally hurting cats. It's to be expected with the path that they chose.
+
+The question is was it executed better or worse than your average open source project given what a world changing idea they had to start with. I do like your A-. The only thing, I'm going to violate the way I initially opened this by talking about ETH here, the only thing that would possibly push me closer to an A but I'm not going to go there and I'm going to land with an A- is the fact that they have created $200 billion plus of market cap in six years.
+
+You look at Uber that IPOed at $80 billion after 10 years. That everyone refers to as geez, if I could just get a little Uber in my portfolio. Just one, all I need is one. You hear so many VCs that are like that.
+
+The value creation activity or at least perceived value activity that Vitalik and the team have done in the last six, seven years is remarkable and outpaces basically every hyper growth startup.
+
+David: For sure, yes. I cannot argue with that.
+
+Ben: But A- to your point, if this is the route you chose, and this opens for a foundation way and this is the way you chose to execute it, there are laws of human physics that govern your ability to affect change.
+
+David: You got to manage it well and they've managed it okay.
+
+Ben: Yup. Packy?
+
+Packy: You left the A wide open for me and of course as the rainbows, unicorn, and butterflies guy, the other big crypto thing we've touched on a little bit but we haven't talked too much is the idea of trade offs. I think there's a bunch of tradeoffs with the way they decided to do things.
+
+They have a human team that is just the starting point they dealt with themselves. If you're starting after that, I think given the fact they have a human team, given the fact they don't want to change things too many times and change things to quickly, they've forked and made some decisions in the past that are very human decisions, but they can't do that too frequently and still be viewed as secure thing. They're of course going to be slower.
+
+Obviously it will be amazing if they're faster, but look at the explosion of things that has happened on Ethereum in the past year despite all of that and maybe they made the exact right tradeoffs even accidentally over the past few years to get to the point.
+
+David: Maybe the world wasn't ready five years ago.
+
+Packy: Certainly, the world wasn't ready. It was accidentally super lucky that it was at least stable during the time we were all locked inside and looking for new ways to organize ourselves. There's a ton of luck involved as well.
+
+I think looking from then to now and what's potentially going to happen in the future, the seeds of things that are being planted right now, to even just be alive to this point when there had been other Blockchains spinoffs and Bitcoin spinoffs and other things. Ethereum is still standing as number two and the most exciting in terms of world changing potential. I don't know how you do a much better job than that one whether it's by skill, or luck, or some combination of the two. You have to give it an A.  
+
+David: Alright, there we go.
+
+Ben: I didn't expect anything less.
+
+David: Packy McCormik, not boring as expected.
+
+Ben: Yeah. You guys want to do some carve outs before we wind it up here?
+
+David: Yeah, I actually have some great ones for this episode.
+
+Ben: Multi carve out?
+
+David: It's two in the same category. Criminally, as a long time listener of this show, I've been reading sci-fi for not my whole life, but a number of years now and I really enjoy it, love it, been through Asimov, everything, so fantastic. I have not until the last couple of weeks read Arthur C. Clarke.
+
+It's fantastic. I love his stuff. Famously, he coined the term, “any sufficiently advanced technology is indistinguishable from magic.” Often quoted in the tech world. Plenty of other things he pioneered. He was writing in the 50s, 60s, kind of the same time as Asimov.
+
+His writing is great. I really like it. First book I read was Rendezvous with Rama. That's a really cool one about a dead seeming alien spacecraft entering our solar system and what happens. That's super cool.
+
+Then I'm in the middle of The City and the Stars right now which I'm also really enjoying. Set billions of years in the future where all of mankind has been reduced to one single city on earth. The rest of earth is desert. It's super cool, highly recommended.
+
+Ben: I like it, adding to my list. I'm going to do a little bit of a popcorn one this time because I think I've been heavier in the past. I'm watching Loki right now on Disney+ and it is exceptional. It is so clever. There are so many little details. It opens in a way where I'm like, oh my god, I totally didn't realize there was this hole in Avengers, in the MCU, where they created an opportunity to go and tell this entire story with Loki.
+
+As soon as I saw the beginning of this first episode, I was like, oh my god, of course that was unresolved. I just think it's Marvel and Disney+ at their absolute storytelling best. Just so that I don't say full rainbows, I contrast it heavily with the Winter Soldier show that they've come out with where it seems like Loki was made for people who are looking for clever, fascinating, Marvel on top of their game shows.
+
+David: They're made for the nerds.
+
+Ben: Yeah, and they just cranked out that Winter Soldier like it was Pacific Rim. It felt really off brand in a way that I was so uncompelled. It's interesting to see how some of these spin off shows they're doing from the MCU.
+
+David: Did you watch Wanda Vision?
+
+Ben: I did, that was great too. Loki is like Wanda Vision caliber. If you're into that, go check out Loki.
+
+David: Great.
+
+Packy: I'm actually going to go to sci-fi as well. It's pretty much over the past year and a half all I've been reading. Recently, my friend recommended that I read The Diamond Age by Neal Stephenson. He's famous for Snow Crash and coining the term metaverse.
+
+The Diamond Age is really fascinating because it's a non-digital future. It's a future where a lot of the invasion has come to the physical side of things. The world map is split up and all of these interesting ways and it takes place in what is today China. They have this matter compiler that makes all sorts of interesting things including islands and airships.
+
+It's just like a totally different view of the future where no one spends any time on computers. It's all centered on this book that talks to the readers and is actually read out loud by a real human actor. It's just a very different view of the future that I'm used to reading in sci-fi. The best part is it reminds me, in terms of writing style, a lot of Kurt Vonnegut. It's just this really fascinating book to read. I will highly recommend The Diamond Age by Neal Stephenson.
+
+Ben: Awesome.
+
+David: Love it. Since this is the season finale, I got two more. Can I throw in two more?
+
+Ben: Let's keep going.
+
+David: Alright, let's keep going. I've been playing on Xbox Game Pass NieR:Automata which is a Square Enix game, I would have never played otherwise. It's kind of a weird game to play because you got to play through it four times.
+
+Ben: It's like watching the [...].
+
+David: Yeah, it's like an [...] type of piece. It's kind of cool though. Packy reminded me of this weird future, it is sci-fi, and then you play as an android, you're fighting robots. It's a very different vision of the future that I find interesting.
+
+Then my other one, the pandemic has subsided here in the US. We are very lucky on that front, we've been vaccinated. A couple of weeks ago, I did an in person recording with Jeff at Software Daily.
+
+Ben: It was so good.
+
+David: It was so freaking fun to be back in person like Ben and I here now. Packy, we gotta get you out here next time live. It's so great. At the end of it, we're hanging out, it's so great to hang out. You want to play some Magic: The Gathering? We put Magic: The Gathering together with a couple of buddies and god, it was so much fun to just be back in person playing cards. It's so fun.
+
+Ben: That's awesome. Listeners, if you haven't, check that one out. It's a great episode with Jeff and David. Speaking of Packy, where can people find you on the internet?
+
+Packy: You can find me at notboring.co or @packyM on Twitter.
+
+Ben: Great. Packy, thank you so much for joining us.
+
+David: What a season.
+
+Ben: Listeners, we really enjoyed being on the journey the last six months. Whiplash, all these competing ideas concurrently and just forming new perspectives and new ways of looking at the world. I hope you enjoyed it as much as David and I have. It's truly a privilege to be able to do this and get all the incredible feedback and comments that we do from you all so thank you.
+
+David: Thank you so much.
+
+Ben: If you want to be a part of what we do here, you should become an LP. We're going to do more Zoom calls in the coming months and more book clubs. We got I think probably closer to 75+ grade LP episodes in the catalog for everything from the basics of VC fundamentals through pricing and packaging, through hiring, building great teams, all sorts of good stuff in there.
+
+If you want to become a part of the Acquired community, that is free and no doubt we will be discussing this episode. You can join Slack at acquired.fm/slack and lastly, if you aren't subscribed, you should, and if you liked this, please please share it with a friend, share it on social media. We really appreciate you helping to grow the show. With that, thank you so much and we'll see you next season.
+
+David: See you next season.

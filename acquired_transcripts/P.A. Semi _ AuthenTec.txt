@@ -1,0 +1,343 @@
+Ben:                 Welcome back to Episode 30 of Acquired, the podcast about technology acquisitions and IPOs. I’m Ben Gilbert.
+
+David:              I’m David Rosenthal.
+
+Ben:                 And we are your hosts. Today’s episode, we’re covering two acquisitions that we believe go together nicely: Apple’s acquisition of P.A. Semi and AuthenTec. We think it’s a really nice way to mark the 10th anniversary of the iPhone just a few weeks ago. These acquisitions led Apple A series chips inside the phone and the TouchID sensor, which have a nice confluence where they work together well.
+
+David:              Indeed.
+
+Ben:                 David, how are you doing today?
+
+David:              I am doing good. I am in cold but sunny Boston today.
+
+Ben:                 Hey, I’m in cold but cloudy Seattle.
+
+David:              It’s kind of crazy. This is Episode 30. I feel like we need like a birthday party for Acquired or something. We’re getting old.
+
+Ben:                 I know, I know. Well, I’m marking it by being highly, highly caffeinated. And for listeners, most episodes, we record in the evenings and today, I’m recording from home, David’s recording from the road and sipping coffee.
+
+David:              Morning show.
+
+Ben:                 Yeah.
+
+David:              All right. Should we dive into it with the history and facts?
+
+Ben:                 I think so. I just want to throw in a quick note before we dive in. We want to say if you've been a listener of the show for a long time or if you’re new to the show and like the episode, we would love a review on iTunes. We’d really appreciate sharing with your friends on Twitter, Facebook, LinkedIn, emailing out to your company, whatever you feel is appropriate. It’s how we grow the show and it’s how we get new listeners. Also, I want to let everyone know we have a Slack channel. We talked about it a lot at earlier episodes in the show but haven’t mentioned it in a while. There’s over 400 of us in the Acquired community hanging out and talking about deals that happen in real time that are too recent to cover on the show, talking about past episodes, sharing tips, posting jobs, all sorts of things. So, join us. If you go to Acquired.fm, you can join the Slack there.
+
+David:              Yeah, awesome. Look forward to seeing many of you in there. All right. Let’s dive in. So I’m going to start with P.A. Semi. Which was funny, when we were chatting about preparing for the show. Ben was like, “Oh yeah. Weren’t they based in Israel or something?” I was like, “Ï don’t think so,” and then I looked it up, and it turns out the P.A. Semi was founded in 2003 and it was originally called Palo Alto Semiconductor. But then right after they were founded, they moved to Santa Clara. So, rather than changing the name, they just decided to go by P.A. Semi because they were no longer in Palo Alto but right down the street.
+
+So, the founder of the original Palo Alto Semiconductor was actually kind of a celebrity in the chip design industry called Dan Dobberpuhl. I hope I’m pronouncing that right. He had been a lead chip designer way back in the ’70s and ‘80s for DEC and had become kind of a celebrity in the field. He actually wrote a leading textbook that talked about chip design that was used at colleges all across the country. He worked first on the DEC Alpha chip while he was there in the ‘70s and ‘80s.
+
+Then he got involved in the ARM world and built the team. Actually, moved to California and built the team in California for DEC that made the StrongARM processors which were sort of higher powered versions of processors based on the ARM chipset. They tried to commercialize it and thought maybe sort of mobile devices might be an application for this. This was in the mid 90’s. Couldn’t make it work. They end up selling the whole division to Intel. Dan goes with it to Intel. Then that becomes the XScale chip at Intel which would power a lot of the BlackBerries that RIM was putting out in the late 90’s and early 2000’s which was kind of cool.
+
+Ben:                 Yeah. Do you think we should take a minute just to for less – you know, this is an extremely technical episode. For folks not in the semiconductor world –
+
+David:              Which includes Ben and me.
+
+Ben:                 Yeah, right. That’s a great thing to start off with. Should we sort of explain the difference between AMR and x86 at least at a high level –
+
+David:              Yeah. Let’s do that at a high level, why don’t you go ahead. And also a good disclaimer here that Ben and I are sort of playing experts on TV here about the semiconductor industry, but I’m sure we’re going to miss a lot of stuff. So listeners, if you know about semis, jump in the Slack or email us and tell us what we got wrong, and we’ll correct ourselves on a following show.
+
+Ben:                 So without getting too into the details, typically computers, as we know the desktop computers, laptops and servers use x86 architecture from Intel. There were efforts made kind of starting or at least most popularized by ARM to do a different chip architecture with a different instruction of set of assembly language that was more restricted but a lot lower power. Intel has had attempts over the years to come up with lower power chips. The Atom processor is a great example of this. But the reason why ARM chips in our iPhones, iPads and many other things have come to be extremely popular in the last few years is because as we moved to mobile devices, we have stricter power requirements when we cannot plug things into the wall.
+
+David:              We’ll get into this in a minute when we actually get into P.A. Semi. But that’s exactly what Dan became known for, Dan Dobberpuhl, as a serving expert on pushing the limits of this power to performance tradeoff in chip design. So this first strong arm was kind of too early for the market in this and so he leaves Intel in the late ‘90s and actually founds another company before starting P.A. Semi. That’s a company called SiByte. SiByte is focused on making chips for – this is sort of like the run up to the internet bubble, making chips for routers and networking gear because everybody is, you know, these are like the 3Com days and everybody is obsessed with the buildout of internet infrastructure. So, the big market for chips is actually in Cisco, 3Com routers.
+
+SiByte sort of like hits the timing exactly right for the market, ends up getting acquired by Broadcom, the big chip company, public chip company, before they even release their product for over $2 billion in late 2000. Talk about being in the right place at the right time. And this is great. This is where Dan’s textbook, turns out, helps in this acquisition because the CEO of Broadcom gave a quote to the Wall Street Journal about the acquisition. So, he first came across Mr. Dobberpuhl in college when he studied the engineer’s textbook on processor design and he quotes that SiByte has the best engineering team he’s ever seen. So, there you go. Write a textbook, get acquired for $2 billion. It’s that simple.
+
+So, Dan stays at Broadcom after the acquisition for a couple of years. But late 2003, he sort of sees mobile coming, he’s ready to leave and try the low power starter company to do low power chips again, and he starts Palo Alto Semiconductor. They end up raising money right out of the gate and then threw a couple rounds from Bessemer, Venrock, Highland, and then later on, Texas Instruments actually invest a lot of money in the company. They’re working on the sort of like very low-power but combined with high-performance chips. But they’re initially using the power instruction set architecture which, as Ben was mentioning, x86. And ARM, that’s a third instruction set that folks might remember was initially used by Macs before Steve Jobs made the famous announcement that Macs were going to switch to Intel.
+
+Ben:                 Yeah. Which this all happened, it’s sort of interesting confluence of time where that was announced I believe in 2005 onstage at Macworld, the first Macs emerged in 2006 and then in 2007, they were fully moved over to Intel.
+
+David:              So it was WWDC 2005 when Steve announces that the Mac had had this secret life for the last 10 years. And this was actually coming out of the NeXT acquisition that the Mac operating system in secret had been able to run on Intel chips so that Apple would be able to switch over to Intel at any point if it felt it needed to for strategic reasons.
+
+Ben:                 God, it's such a good dramatic Jobsian reveal. The fact that the last two versions or at least one version of Mac OS10 had actually shipped with these universal binaries or the ability to run universal binaries on x86 architecture or the PowerPC architecture. He pulled up images of the CDs that are in people’s homes on their computer and said “You actually have this right now. We’ve just disabled it.”
+
+David:              Super cool. Such a Steve Jobs moment. And like who else could Steve Jobs – I mean, Ben and I geek out about all this history but I bet a lot of listeners are like, you know, the instruction said, like chip architecture, like this is not why I buy products. When Steve made this announcement, this was like national news, everybody was floored. Like who else could Steve Jobs could make switching chipset architectures into such a huge announcement?
+
+Ben:                 It's very similar to the time when Bill Gates came on that gigantic screen to WWDC and addressed the group. This was marking the enemy, like Apple embracing the enemy. They had demonized Intel for so long and grouped them into the IBM Microsoft group of evil companies that did not represent the interest of Mac users and the creative professional in the future, and here they were basically signing a truce onstage.
+
+David:              Yeah. This is directly related to the history of P.A. Semi and their interactions with Apple because P.A. Semi, it turns out, had actually been working with Apple for several months up before this announcement and they had no idea it was coming. So when Dan and the company, they were targeting the embedded market and low power devices and mobile, they weren’t actually thinking about smartphones because smartphones didn’t really exist yet. They were thinking about ultra-portable laptops. So they had been working with Apple behind the scenes trying to bid for the contract to be the main provider of chips for the next set of Macbooks. They were convinced that they were going to win this contract from Apple. This was going to be huge and make the company. Then WWDC rolls around, Steve goes on stage, makes this announcement they’re switching to Intel and apparently Dan and the company were just floored and completely furious because this blew up the deal that they were working on, that they thought was going to make the company.
+
+Ben:                 Wow.
+
+David:              So at this point, this was 2005. Apple doesn’t end up acquiring P.A. Semi until 2008.
+
+Ben:                 After the launch of the iPhone.
+
+David:              After the launch of the iPhone, right. The iPhone isn’t going to debut for another two years. A lot of people think P.A. Semi is kind of left for dead at this point. They have this incredible technology. It really was kind of a 10x. We talk in VC and startups about you need a 10x better product to really be disruptive in the market. Their technology really was 10x better on power savings. But they were targeting the PowerPC architecture and that market just wasn’t there especially with Apple switching over to Intel.
+
+So P.A. Semi kind of bumps along. They eventually do release a process. Their 64-bit dual-core processor, huge power savings, comes out in 2007 but there’s not a big market for it.
+
+Ben:                 That was the only product they ever released, right? It was the only –
+
+David:              Yup. I believe that is the only chip they ever released into the market. But then at the same time the iPhone comes out and the iPhone initially, folks might remember the first few versions of the iPhone that the original one, the 3G and 3GS, all used Samsung processors.  
+
+Ben:                 That’s right.
+
+David:              For a whole bunch of reasons, Apple is really interested in moving away from Samsung processors and then in 2008, they end up acquiring P.A. Semi for $278 million in cash which is a decent outcome. But the company had raised $86 million. We don’t know at what valuation, but it must have been at least somewhere in the mid-100 million’s. So not a huge outcome for investors and certainly relative to Dan’s previous company, SiByte, that’s an order of magnitude smaller.
+
+Ben:                 It’s worth taking a quick pause here that that 86 million figure, you might think how could a company of 150 employees that was around for four years that needs to design and manufacture microprocessors and systems on a chip or I guess just microprocessors, how could they only raise that much money. It’s because they were a fabless chip company. They were not actually making these things themselves. What most people do is they use a chip fab in China or somewhere else with less expensive labor cost to manufacture the chips and they themselves are designing the architecture and laying out the board. And actually, there was a lot of speculation when Texas Instruments invested in P.A. Semi that their fabrication plants because TI has their own chip fabs would be used to manufacture those processors. So, that was kind of big strategic investor for them.
+
+David:              Yeah, totally. What’s funny though when the acquisition happened – and I was going back and re-reading some of the articles about the deal when it came out, I don’t know Ben if you saw the same thigs – most people didn’t really realize that this was about the iPhone. Because this is 2008 and I believe the 3G had come out at this point. Not yet the 3GS. But the iPhone was still pretty small, like it had a lot of buzz but people didn’t really realize yet that the iPhone was about to become Apple and that the Mac was going to take a backseat. People were still thinking about the iPod as still I believe at that point, I’m not sure, but roughly the same size or bigger than the iPhone. So all the press at the time of the deal, they were really confused about like why is Apple finally being P.A. Semi, they switched to Intel? Are they thinking about a new ultraportable that they’re bring out that they might bring back the PowerPC architecture?
+
+Ben:                 I mean, it is interesting. I’d love to get your take on this. They were clearly brilliant people there that were specially brilliant at chip design. But they weren’t working on ARM processors.
+
+David:              No. But what did happen is right away they basically stopped all the work that P.A. Semi was doing on their own stuff and they put the team on – Apple already had an existing project working on an ARM design, working on what would become the A4, the first Apple chip that they would put out which actually launched with the iPad, when the original iPad was introduced. This was a big selling point and the whole team from P.A. Semi got put on that. And of course, Dan is sort of this legend in low-power performance tradeoffs. So they really accelerated the work.
+
+Ben:                 Yeah. Good point.
+
+David:              So yeah, in 2010 Steve Jobs introduces the original iPad and it was really fun doing the research, going back, watching that keynote and watching the product introduction video. Scott Forstall takes up like half of the product video which was pretty funny.
+
+Ben:                 Yeah. Poor guy.
+
+David:              And all the apps look so much skeuomorphic design. It was actually sort of painful to look at.
+
+Ben:                 Yeah, I bet. It’s weird how so like the lickability was a thing at the time in UI and you wanted to touch it and now it’s just a whole bunch of wasted rendering.
+
+David:              Yeah. Total sidebar too. I kept thinking this was 2010 when it launched and looking at this, we’re here in January 2017 which we talk about a theme on this show that things move really fast in tech and waves keep coming successively faster. But like that was not that long ago. And both the software and the hardware of the original iPad, Steve and Johnny Ive and everybody is tapping it as so incredibly advanced at the product launch and now it looks like a dinosaur.
+
+Ben:                 Right. And it was at the time. I mean, I had the first iPad and I remember thinking this thing is like a marvel but knowing even then that this one would be known as the heavy one. You really couldn’t hold it out in front of you with one hand for any meaningful amount of time without your arm getting tired.
+
+David:              I had it too. I bought it on launch day and lined up for it.
+
+Ben:                 Nice.
+
+David:              It was great and I used it so much. But now I’ve got my iPhone 7 Plus, I don’t have an iPad anymore and it has almost as much screen real estate, maybe not almost, significant enough screen real estate and weighs almost nothing and battery lasts forever. Amazing how technology moves.
+
+Ben:                 Truly.
+
+David:              So that’s the story of P.A. Semi. The AuthenTec story, we’ll run through it a little more quickly because it’s less interesting in whole but it’s sort of new. We haven’t seen something quite like this yet on Acquired I think. AuthenTec was based in the technology hotbed of Melbourne, Florida which I did not know until I started doing the research here. But there is I believe the largest employer in Melbourne is a company called Harris which is a giant defense contractor. It was actually named by – the things you learn doing research for this show – named by Wired Magazine as the #2 threat to internet privacy in America in 2015, right behind the NSA.
+
+Ben:                 Wow.
+
+David:              The main product I believe that Harris makes now are, what do they call it, I want to say StingRay, I could be wrong. They’re basically like fake cellphone towers that your phone will try to connect to and then through that the government or whoever owns these things then can track phones. Huge privacy controversy around this company.
+
+Ben:                 Creepy.
+
+David:              In the ‘90s they had a big semiconductor division and they must have gone through a strategic review and decided that they were going to change that part of their corporate structure. They end up spinning off the entire semiconductor division in 1999. But right before they do that, in 1998 they spinoff this company called AuthenTec. And AuthenTec was going to work on specific security and authentication technology for embedded devices. This was back in 1998, so way before smartphones are even a concept. There’s actually this really great article that we’ll link to in the show notes of the CEO of AuthenTec is after the Apple acquisition. He goes back and he gives a talk at I believe NC State which was his alma mater. And he brings one of the prototypes of AuthenTec’s first product which is basically the TouchID sensor that’s in the iPhone. But it’s like many times larger than an iPhone itself now. It’s this huge box with like a separate box attached by a big cable that you stick your hand on and it worked 5% of the time.
+
+Ben:                 To draw an analogy, it sure reminds me of playing with an Oculus in 2016-2017.
+
+David:              Yeah, definitely. So, AuthenTec works on this technology for a long time. They actually go public themselves in 2007. They keep refining the technology and selling it to any customers along the way and applications that would find it interesting and then finally in 2011, they do sort of a collaboration with NXP Semiconductors and a software firm called DeviceFidelity that was working on mobile payment software and they sort of create this suite of both hardware and software that’s aimed to enable fingerprint authentication for NFC mobile payments for the Android ecosystem. So, this was kind of the age of when everybody was all excited about NFC. This was a big selling point for a lot of Android phone manufacturers. So, this consortium actually wins contracts with Motorola, Nokia, and then finally with Samsung, and this was going to be a huge deal. Samsung was going to put this system in their coming flagship phones. It was beginning of July 2012 when Samsung announces this that they’re going to integrate this technology in their new set of phones. Then almost immediately thereafter, late July 2012, on July 27 Apple acquires the company.
+
+Ben:                 Hey!
+
+David:              Hey! Which is a big coup. I mean, we talked about on the Android episode, a bunch of episodes in the past, this was like the height of the smartphone wars. Samsung had emerged with copying Apple feature for feature and this was going to be a big innovative thing that Samsung was going to launch. Apple swoops in and acquires the company.
+
+Ben:                 It’s interesting that I remember hearing about this when it happened and looking it up and going, “Oh, fingerprint recognition,” and kind of being like, “Well, maybe they’ll do that on Macs at some point or the iPhone at some point.” But the thing that totally got lost in that story was the payment stuff. It’s funny that with Apple Pay becoming one of the major advantages to having TouchID, that that had its roots all the way back in AuthenTec.
+
+David:              Yeah. And more than a decade before. It’s pretty amazing, I mean, that time and that amount of R&D over a decade plus that had gone into this product I think really did make it differentiated in the market because Apple acquires the company end of July 2012 and it’s just almost exactly a year later when… well, they announced they’re acquiring end of July 2012. The acquisition probably doesn’t close for another couple months at least because AuthenTec is a public company at this point. And it was beginning of September 2013, the very next year when the iPhone 5s comes out that has the TouchID sensor. So the turnaround time on this is like basically immediate in terms of product development when you’re integrating an acquisition. So this was an incredibly speedy job by the Apple team and it speaks to the maturity of the product.
+
+Ben:                 Totally, totally. I’ve got a couple of interesting tidbits here. I went to the Wayback Machine on Archive.org and looked up AuthenTec from February 22, 2011. And you look at their website and it really is the whole suite of very un-Apple-like authentication methods from that era. There’s like a little banner – and we can include this link in the show notes – there’s a little banner there that says “Does your PC have a touch sensor?” and it's got that little swipe down thing that’s on a lot of the PCs to log in. There’s an ad for the HP SimplePass 2011 powered by AuthenTec’s identity management system.
+
+David:              Oh, God. So much garbage product names.
+
+Ben:                 Yeah, totally.
+
+David:              So un-Apple.
+
+Ben:                 Totally. You like at this and the kind of high level point I’m trying to make is this company looks nothing like an Apple company. It’s kind of the antithesis from a go-to-market and product perspective of the way that Apple reaches customers. I mean, they have like 8 other companies’ logos all over this website. And their quote, when you pull up the Steve Dowling quote that they always give when they acquire a company is, “Apple buys smaller technology companies from time to time and we generally do not comment on our purposes and plans.” That’s truly how they look at it, that we’re buying a technology here. Like we could not care about the way that they’re going to market right now, the way that their products look or are defined. It’s literally like look at all this R&D these people have done, we’re buying a technology company.
+
+David:              Yeah. I think this is perfect transition unless you have anything else to go into acquisition category.
+
+Ben:                 I do have a couple little things.
+
+David:              Okay, go ahead.
+
+Ben:                 One, on this show as listeners know, we love when public companies acquire other public companies because we get to learn things. Apple paid a 58% premium for AuthenTec over their existing or their current trading market cap. A lot of this was powered because Samsung was one of its biggest customers and believed to be also making a play. So, I don’t believe there was a counteroffer but Apple did go in high to make sure that they got the deal. We’ve seen in other episodes where we’ve reviewed public companies buying other public companies. You see 18% to 30% as the premium that existing management teams and boards are willing to accept as an acquisition bid. This is dramatically higher than other ones we’ve seen. And it did come with a termination fee of 20 million in case there were antitrust issues and the deal didn’t close.
+
+David:              Yeah, it’s interesting though. I mean, the sticker price was 356 million which I don’t think we mentioned earlier, we should have. So yeah, that was at that almost 60% premium, 356 million. When you take a step back, that’s a large premium but like that’s not that much money. And it’s interesting that Samsung either didn’t counteroffer or if they did, not enough to win the deal for… when you’re talking about not that much money relative to the amount of – we’ll get into this in grading the show – but the amount of money in the smartphone hardware sales for a really differentiating feature like this, interesting move by Samsung not to let this one go especially they just announced earlier that month this big deal that they were going to include this as a flagship feature in future smartphones.
+
+Ben:                 Yup, yup. Then before we move on to, it’s worth noting we’re covering two very big landmark deals here. But Apple spent over half a billion dollars after acquiring P.A. Semi on other semiconductor and processor related companies – Intrinsity, Passif Semiconductors, PrimeSense. It wasn’t just that they developed it wholly in-house than after acquiring P.A. Semi.
+
+David:              Yup, definitely. Did they acquire other authentication companies along the way too?
+
+Ben:                 I’m actually not sure. I think smaller ones but this was definitely the… you know. You look at an iPhone, you identify it has a screen and a button with a fingerprint sensor, and this was the fingerprint sensor.
+
+David:              Yup. This is the main tech behind it. All right. Acquisition category?
+
+Ben:                 Let’s do it.
+
+David:              So yeah, Ben, what you’re saying earlier, what I think is interesting about these two deals is both of them very directly related to flagship features of iOS devices, both iPhones and iPads that would become differentiators in the market. So, they make sense to do it together as one episode in that sense but I actually think they are two different categories based on the history of how the integration happened, you know, with P.A. Semi clearly like Apple was already working on their own ARM chips that they would release with the iPad. But this was about getting sort of the best talent in the world to come and join the team and execute with them. Then on the AuthenTec side, so I think the P.A. Semi acquisition was very much a people acquisition, very technically minded people.
+
+Ben:                 That’s only 1.8 million per employee. I mean, that’s actually not insane if you think that if you are Apple making the bet that this is going to have tremendous business impact and there’s not other people of this caliber, they’re all –
+
+David:              Yeah. I mean, this is literally the guy that wrote the book on low-power high performance chip design. But then AuthenTec is interesting. This is a company that was a spinout from a defense contractor based in Melbourne, Florida. I believe most of the people from the AuthenTec acquisition are no longer at Apple or if they are, perhaps moved to Cupertino. That was very clearly a specific technology in the fingerprint sensor that became TouchID that they acquired. So they both accomplished the same goal, but it’s interesting I think they took very different routes in each acquisition.
+
+Ben:                 David, I couldn’t agree with you more. That’s exactly what I had in my notes. I just want to make drilling a little bit further on one point that you made of why it makes sense to do these two companies together. The ability of Apple to integrate these two products creates an advantage that other manufacturers don’t have. So, the A series chip have something that Apple market says the “secure enclave” which means that it has the ability to do processing specifically of security applications in an isolated way from other things going on on the chip itself.
+
+David:              Yeah. And importantly, locally on the device.
+
+Ben:                 Yes, yes. When you do your TouchID fingerprint, not only does it not roundtrip to the server, it doesn’t get to memory and it doesn’t even get to the main CPU or I guess the main core of the processor. So, the TouchID sensor operates fully in an isolated way and we’ve seen really paid dividends for Apple going toe to toe with the FBI.
+
+David:              Yeah. In the San Bernardino shooting case.
+
+Ben:                 I think when Apple plants a flag in the ground and says “we’re serious about device security…” and that I don’t to get into the morality and politics of that, I think that’s a different discussion. But they really are able to say that all the security vectors that people would normally do to get into devices by rooting or having direct hardware access like those fingerprints and the ghost in memory of those fingerprints don’t even ever exist to be able to go and get them later. So I think that the integration of these two technologies is something that as Tim Cook would put it “only Apple would be able to take this approach.”
+
+David:              Well, this is definitely going to be one of my tech themes which we can talk a little bit more about later. But I’m thinking back to the next episode and Steve Jobs quoting that if you’re really serious about software, you need to make your own hardware.
+
+Ben:                 Which I think he ripped off from Alan Kay, right?
+
+David:              Yes, exactly. And he attributed the quote to Alan Kay when he said it. But the classic case of that here. This is a key differentiator of the iOS ecosystem and devices now for a lot of people especially in the post privacy, post truth world we live in.
+
+Ben:                 Oh, man.
+
+David:              That the Android ecosystem can’t make these claims. No other device manufacturer can. Also, I find it incredibly ironic that AuthenTec is a spinout from a major defense contractor ranked by Wired Magazine as right behind the NSA in terms of decreasing privacy on the internet and then becomes a cornerstone of Apple’s privacy strategy.
+
+Ben:                 The irony is thick.
+
+David:              It is thick. All right. Should we move on to what would have happened otherwise?
+
+Ben:                 Yeah. I think one thing that I want to raise now but not talk about until we’re grading it is I talked about this Tim Cook marketing speak on the Apple and the advantage that these two technologies combined together under the same roof and the same engineering team give. I think it’s interesting for us later to examine what was the actual business impact of that.
+
+David:              Yeah.
+
+Ben:                 What would have happened otherwise? You know, I have two sort of notes here. One is, who else could Apple have bought or how else could Apple have gotten here? Let’s look at P.A. Semi first. It was basically a “build or buy” decision for Apple and clearly they were working on building anyway but this has rapidly, rapidly accelerated their pace. Then with AuthenTec, it truly was competitive. Samsung was very clearly skating in the same place and AuthenTec was already sort of in the Android ecosystem. So it wouldn’t have surprised me if somebody in the Android ecosystem that was butting and becoming the… at this point I think it was kind of overtaking Apple and becoming the more popular, not the more profitable but the more popular operating system. I could see that one going to a different company. Then the question for Apple is, you know, how would have they been able to build out the feature that they wanted to build without bringing AuthenTec in-house.
+
+David:              Yup. Spot on. I think this whole discussion, especially Samsung’s failure to either submit a competitive bid for AuthenTec or a compelling one, it really reflects the difference in perspective about products at Apple versus many of their competitors in the ecosystem. You know, Apple really, say what you will about them and I think as we move further into the maturing phase of mobile devices and people start to look to the next generation, there are a lot of legitimate questions about Apple’s future right now. But, they really think about products from a whole product sense and from a user centric and compellingness to a user perspective, and they realized that they had a vision of what this integrated product that we were just talking about not only the convenience of unlocking your phone and paying with your fingerprint for mobile devices, but the security and the necessity of doing that with in-house technologies versus their competitors in the Android ecosystem. I really don’t think of them can make the same claims around both security and privacy and also seamlessness that Apple can in this arena.
+
+Ben:                 Totally agreed. There’s one other thing. I don’t think it’s insightful. I just find it hilarious that in 2008 CNET wrote this article that was pointing out that Apple made a choice here with ARM with the iPhone and yet Intel, their partner for all their Mac computers had a low-power chip they were developing called the Atom. They write this whole article analyzing why it seems like Apple’s not going to go with the Atom chip. The title of the article is “Apple unlikely to get up and Atom”. I just read it and I was like, “Boo!”
+
+David:              That’s like a bad joke, if I ever heard one. All right. Tech themes?
+
+Ben:                 Tech themes. You know, I don’t know if this was apparent to them at the time but when you look at the proliferation of applications that Apple has been able to go into with first party hardware that they never would have dreamed of 10 years ago, it’s incredible and it’s all powered by the work that they did on the A series chips. So, we look at the Apple Watch which has the S2 chip which is they call it the system in a package, so not just the system on a chip but they actually package other sensors with it. The ear pods have custom silicon, the W1 chip. The touch bar has the T1 which basically is a forked version of watch OS that it runs and it’s a similar architecture. It’s incredible that Apple has been able to so finely tune their products because they’ve been able to control the underlying chip and surrounding pieces of that rather than buying it from a third party. And Apple we view as a vertically integrated company, and really, they’re modular in so many ways. They have tons of suppliers. They negotiate fiercely. They combine hundreds of other companies’ products into their own and then put a nice case on it. But for the things that they think can really differentiate them and really provide a strategic advantage for the long term, they bring it in-house. And doing that with the silicon and vertically integrating the silicon into all their products really enabled all these new product categories that they’re trying to go after today. And I don’t think any of them will be as successful or profitable as the iPhone. I think that was a unique moment in history but it sure is allowing to go new places.
+
+David:              This was one of mine too that talked about sort of this idea that if you care about software, you make your own hardware, the Alan Kay concept. But I wanted to talk about it in the lens of there’s very, very few technology companies that really take that to heart and they tend to be the giant, most successful, enduring companies that do. Google with what they’re doing with their data centers and slightly one level of the stack with tensor flow and all the machine learning tools and technology they’re creating. Amazon, certainly with Amazon Web Services. I think that balance, if you really want to build an enormous and sustaining technology franchise, certainly Microsoft does this too, and Facebook is beginning too, you have to make that transition. But you can’t do that as a startup, right? It would be a fool’s errand, you know.
+
+Ben:                 Xiaomi tried.
+
+David:              Right. And they are at this moment in time I think struggling a little bit relative to expectations.
+
+Ben:                 Yeah.
+
+David:              But, you know, Baidu does the same thing, Alibaba. The question of when to make that transition in the life cycle of the company is an important strategic one. Certainly, I don’t think I would recommend baby startups doing it. You know, as a startup you want to embrace standing on the shoulders of giants. But at some point, if you really want to compete with the big boys, you kind of have to become a giant yourself.
+
+Ben:                 That’s true. Another interesting… to hit a point on this. So according to Geekbench, and this is from a Verge article we can link to called “The iPhone 7 A10 fusion processor and Intel’s future.” The single-core performance of Apple’s latest generation of smartphone processors, the A10 fusion, has basically caught up with Intel’s laptop CPUs and actually rivals the single-core performance of the Mac Pro, albeit a few years old. The single-core performance of the chip in my phone is rivaling Intel’s laptop chips. Of course, there’s all sorts of advantages to being a tower. You can put in GPUs and as much RAM as you want and a lot more complexity without having to worry about storage. But the market for that high-end power is shrinking or the market for low power chips is growing dramatically or has grown dramatically.
+
+David:              I found since upgrading to the 7 Plus, I had the 6 Plus, not the S, the sort of 2 ½ year old model at this point before upgrading, I noticed a dramatic difference in performance.
+
+Ben:                 Yeah. If you really want to go tech trends and themes, how much does all this matter going forward? It’s clearly been super important in the last decade to have all this power on our phones. But are we going to shift back toward the tick-tock of “powerful on the client, powerful on server, powerful on the client, powerful on the server.” In this world of cloud and machine learning and relying on a lot of infrastructure for computing, is this going to be less of a competitive differentiator and how much does this world of ARM matter in the land of machine learning and cloud?
+
+David:              A hundred percent. Actually, two other tech themes I wanted to lump together and cover quickly. I don’t think answering that question but furthering the context for it, one is sort of market timing and waves and I think the P.A. Semi history illustrates this so perfectly. We talk about on the show so often, we covered in our 2016 review episode, the key to startup and venture capital is targeting the big market at the right time, and the right time of the wave. Apple with the iPhone just got it so right. Probably the most right of any sort of combination of size and timing of waves and history with the smartphone market, like technology had just gotten to the point and consumer willingness to adopt had just gotten to the point where it was possible. The first processor in the first iPhone was like, I think it was 416 megahertz, I believe, from Samsung and like it was just barely enough to make the thing work. But it was just barely enough. But now as the market has matured and we’ve got a chip in our iPhones that literally is as powerful as a Mac Pro a couple years ago, how much more power do we need? We’re at a mature point, at least a maturing point in the smartphone market.
+
+Then the other theme I wanted to tie that to is just like both of these acquisitions are total Clayton Christensen sustaining innovations, not disruptive innovations. They are sustaining this wave that Apple is on. But as you pointed out with your question, the critical question for the tech industry for us as investors, as startups, as people working in it right now is what is the next wave? Because this past wave that we’ve been riding of mobile and smartphones while being the largest and most prolific in history, it’s mature now. It’s crusting.
+
+Ben:                 Yeah. The title of that book and the phrase “What Got You Here Won’t Get You There” starts to come to mind where we’re going to get into grading here in a minute, but having their own in-house silicon and to a lesser extent security features, gave Apple a lot of advantages to keep their experienced lead over Samsung and other Android manufacturers and to really be able to produce the best quality, most differentiated experienced phones. I think that was hundreds of billions of dollars in revenue that we can attribute to that. But looking around and as the dust starts to settle today and looking at what’s next, I am not convinced that actually sets Apple up for the future in a wave that matters in the next wave of experiences.
+
+David:              Completely agree. Especially if the next wave of experiences are primarily machine learning driven, data and data science driven, and most importantly as a result of that, service driven innovations. Not hardware, not software but service driven innovations. That is not in Apple’s DNA.
+
+Ben:                 No, it’s not. I forget what they called it. Differential… what’s the thing where they do the machine learning on the device for the photos that they touted at WWDC?
+
+David:              I don’t remember. I’ll look it up.
+
+Ben:                 Differential privacy? Yeah, well you do that, listeners. Apple is taking the position that they can do a lot of this really advanced machine learning and cool applications that you’re seeing from Google and others, that they can do it on the device and they can do it without sending your identifiable information to the cloud and potentially compromising your security at a request in the future. They’re publishing papers on it and actually they’re using a lot of methods that we’re published by Google engineers years ago. It’s interesting. I fundamentally don’t think that the on-device way of doing this will win out in the long run relative to having all of your data in close proximity to each other that’s not bandwidth constrained all in data centers.
+
+David:              Yeah. We’re still in early-early innings of this wave. So we don’t know, but I do tend to agree with you. I mean, to the extent that the quality of machine learning and data science is driven by the volume and the quality of data that you have, siloing that data to just what the storage available on your local device and your own data generated from it versus a Google-like approach where it’s unfathomable amounts of data across the entire world interacting with your product in real-time in all their data centers across the world. I think Google is going to win that. So, we’ll see.
+
+Ben:                 I think so too. Google, Amazon, Microsoft. Not Apple, I don’t think.
+
+David:              I don’t think so.
+
+Ben:                 Yeah, differential privacy is the name of that feature.
+
+David:              Got it.
+
+Ben:                 Yeah. You want to move on to grading it?
+
+David:              I think so. So for me, this really is kind of is as we’re talking about, sort of a tale of two cities, a tale of two acquisitions – was the best of acquisitions, was the worst of acquisitions for Apple. On these two companies, they spent a combined $634 million and it’s been pointed out they acquired many other smaller companies in the same, also in silicon design. So let’s call it another half a billion-ish. Let’s say they spent around a billion dollars on these themes and technologies. From the time they launched the A4 in the iPhone which was with the iPhone 4 and let’s just only look at iPhone and look at the generations from iPhone 4 to iPhone 6. So not the 6S, not the most recent 7. It’s roughly four-ish years. Let’s just say as a proxy that that’s sort of the competitive advantage period granted by these acquisitions and the speed with which they were able to deploy these differentiating features versus the market. Just those generations of iPhones sold about 720 million-ish units at roughly a $600 average selling price. It’s a little higher. So that’s over $400 billion of revenue and let’s assume about a 40-ish percent gross margin, it’s actually a little higher. You’re at sort of $170 billion of gross margin generated by units during that time. And then so, trying to do the math here, like okay, how much of those sales are attributable to these differentiated features? I don’t know, 10%, 5%. Let’s take 5%. That’s still almost $10 billion in incremental sort of contribution margin from the exact position. Versus a billion dollar spent 10 to 1, that’s great.
+
+At the same time, these are as we just talked about, sustaining acquisitions. I compare them versus our benchmarks of what great acquisitions are – in Instagram and in NeXT. Those are acquisitions that generated entirely new business lines and categories for their companies. In NeXT’s case, over a trillion dollars’ worth of business. I don’t think those fall into that category.
+
+So for me, I think I give a B+/A- leaning more towards the A- side because they were incredibly executed sustaining innovation acquisitions. And had they fallen into competitors’ hands I think would have changed, impacted the trajectory of Apple’s profits versus the competition in this space.
+
+Ben:                 Man, this is why I love having you as a cohost.
+
+David:              Because you would have done the same math and we’re about to do the same thing and I just stole your thunder?
+
+Ben:                 No, because I didn’t do the math and I was going to arrive at an A- minus conclusion through a much more handwavy method. But the actual analysis to come up with that, 10 billion compared to 600-ish million, it's a 16-17x return and using all sorts of assumptions and sort of generalities in that model but totally, here’s going to be my A-. They made hundreds of billions of dollars of revenue. Some amount of that attributable to these acquisitions. It was tremendous for them getting here but didn’t set them up going forward, so I was going to discount my A to an A- for not being convinced that it meaningfully differentiated them in the future.
+
+David:              Well, I think we probably both, you know. Together we’re both at the right combination of database analysis and big picture gutfeel here. These were incredibly well-executed acquisitions but I just can’t put them in the same league as Instagram and NeXT. Not Nest. NeXT. We’ll have to do Nest at some point. I just bought one. I actually really like it.
+
+Ben:                 Nice.
+
+David:              But, anyway.
+
+Ben:                 And the counterargument. I’m going to stick with my grade but the counterargument would be that let’s say we move to a world where there’s not all this heavy compute going on in the phones and we rather than having a single device, we have this networked confluence of sensors around us. We have ear pods and we have a watch and we have a screen but it may not have all the innards of the iPhone in it and maybe that screen just appears in our glasses or it appears wherever we’re looking. There’s all sorts of interesting sci-fi features about what the display could be like.
+
+But let’s say we decouple all these things. Even though a lot of that intelligence is going to be done in the cloud, we still live in a world that’s more bandwidth constrained than it is compute constrained or storage constrained. I think that as bandwidth continues to be the issue, that’s going to be the gating factor in how much we can push off of our bodies versus actually have with us at all times. Apple bringing all of this silicon design and production in-house or at least designed in-house does allow them to create the best possible experience of this several device ecosystem talking to each other as we’ve seen with the ear pods providing a meaningfully better experience than pairing most Bluetooth headphones.
+
+David:              I completely agree and I that the truth lies somewhere in the middle. The reality is, as we talked about, this is what makes our jobs fun and technology as an industry fun, like we’re still early enough in the next wave or waves, whatever they will be whether it's machine learning driven services or sensor and very intimately personal device driven technologies. We’re still early enough that these stories haven’t been written yet. And these waves come so fast in technology that both of us have been in this industry less than 10 years and we’ve already experience multiple waves. It’s what keeps the fun.
+
+Ben:                 Yup. All right. Moving on to Follow-up.
+
+David:              Yeah.
+
+Ben:                 We got three things. So, we covered in our first non-technical episode the merger of Alaska Airlines and Virgin or Virgin America. I sent David a picture recently of I was flying back from vacation, had a little insert in my Alaska seat in front of me. They really, really embraced messaging to all of their customers that they’re merging. In the seat back pocket there’s little information things. All the flight attendants were wearing these really well designed shirts that blend the Virgin brand into the Alaska brand and extremely information on how all the point stuff gets combined. So I think they’re just rolling that out now to combine all of their –
+
+David:              The loyalty programs.
+
+Ben:                 Yeah.
+
+David:              As a self-proclaimed “west coast” resident, Jenny and I, we hardly think of ourselves as living in one city and more just up and down the west coast at this point, and I’m so excited. I think this is taking the great Seattle service that Alaska has and Virgin from SFO and LAX and Oakland. I’m super excited to merge these point programs and keep getting incremental status tiers.
+
+Ben:                 Absolutely. Number two. Marc Lore is starting to make moves at Walmart. They just had a big reorg, created new positions, eliminated others. One thing that we talked about in the Jet episode was if they’re going to be serious about rebuilding their organization as a true internet company at Walmart, and if they’re going to sort of be able to move that almost reverse acquired DNA of Jet and kind of like infuse that at Walmart and we’re starting to really see the first steps now.
+
+David:              Yeah. News just came out in a memo from Marc Lore basically reorg-ing most of the e-commerce operations at Walmart.com. And unsurprisingly, it’s mostly jet folks who are taking over. We talked about this on the Jet episode but just even more firmly positions this as sort of a very, very expensive talent acquisition that Walmart did.
+
+Ben:                 Yeah. It’s funny how like the price tag actually may make it command more respect internally. Like if they had bought it for $1 billion, you could see people inside being, “Eh, we don’t have to listen to this guy,” but with like a more expensive price tag comes a more necessary adherence.
+
+David:              Man, that is some dysfunctional organizational behavior as they would put it in business school. But I can totally see that being true.
+
+Ben:                 Yeah. One other thing that’s kind of a tech theme we can pull out of this is when we originally started doing the show, it was for David and I to understand why successful acquisitions went well, what were the characteristics. And as we started companies in the future that if not IPO hopefully sell to larger companies, how to make those more successful within the company. One theme that we immediately identified that Facebook does very well is this “keep the team separate mantra” where you let teams exist on their own for a long time. This is a big part of change management, just sort of like message what’s changing, message what’s not and allow the good things to continue for as long as possible from the smaller organization.
+
+A second big one that we’re now seeing that I think we saw first in the Acompli episode where Javier Soltero took the lead for all out of Outlook at Microsoft is when you acquire a company, promote their leader to be the leader of the organization that they’re coming into and allow all the goodness from the company that you acquired to actually grow in that much larger tree of the organization chart rather than existing just down in their little thing.
+
+David:              Well, I think it really depends on what the acquiring organization sort of goals and needs and realities are. Facebook can take the luxury with a lot of their acquisitions of letting them flourish and operate on their own because the core Facebook business at this point, we talked about on the IPO episode, at one point it was quite challenged but at this point it’s doing so well, versus at Walmart where they’re just battening down the hatches versus Amazon. In particular, I got to think if I’m at Walmart right now and I see Amazon Go and Prime Air and drone deliveries, like I’ve got to be just terrified of what that’s going to do to my business. They don’t have that luxury.
+
+Ben:                 Right.
+
+David:              Third and last follow-up we wanted to do is the news to be expected, drama is mounting around the Snap Inc. IPO that is hotly expected in a few months. There was a series of articles I believe right at the end of 2016 about potential fraud at the company and overstating their growth numbers. News just came out this week that unsurprisingly, Evan Spiegel and Bobby Murphy are going to have super voting shares and control the vast majority of the voting shares of the company. This is going to make for an excellent Acquired episode when the IPO finally does happen later this year. We can’t wait to get all these issues at least resolved in the context of the IPO and dig in.
+
+Ben:                 Yup. I can’t wait either.
+
+David:              All right. With that, should we wrap up with Carve Outs?
+
+Ben:                 Yeah. So mine, I was going to recommend a whole blog but I want to save more pose on this blog for future Carve Outs because there’s so many good ones. There’s a guy named Michael Lopp who is a long-time engineering manager at Apple and then Pinterest. Now I believe he runs engineering at Slack and he writes under the pseudonym “Rands”. And he writes at RandsinRepose.com. There’s a great piece that he wrote late last year called The Situation. It’s about that situation where something bad happened at your company, you need to have a meeting about it. Everybody is sitting there in the meeting and kind of all looking at each other like “Uh-oh. What’s the right protocol for this?” like “Who’s on the line? What do we need to do? What are the steps?” It’s all about the way that you feel in that moment, and a really beautiful writing style, and pretty good actual means of dealing with escalation like this and understanding what are the logical steps that need to be taken in varying types of situations. So, just love his writing style. Obviously, the content is super applicable for anyone in a tech or an engineering organization. And I highly recommend it.
+
+David:              Yeah. Even beyond tech and engineering organizations, the number of “situations” I come across on a monthly, if not weekly basis. I need to read that post.
+
+Ben:                 It’s great. A lot of his posts are basically the pre-writing for a book called Managing Humans that he’s got. I haven’t read the book yet. It will probably be my carveout when I actually do read it. But, I highly recommend it.
+
+David:              Reminds me of… total side bit. When I came back from business school to Madrona and first started working on boards as a venture capitalist, I asked Sujal Patel who was the founder and CEO of Isilon that’s a very successful storage company and former Madrona portfolio company in Seattle, sort of what advice he had as a successful CEO and having worked with lots of VCs in Madrona and Sequoia and many others on his board. “What advice will you give me?” He said, “You know, the biggest thing, just don’t freak out.” I’ve tried to take that to heart. He’s like, things are going to happen in any journey and if you freak out as a board member, then you make me as a CEO freak out and then that makes everyone else at the company freak out and then that leads to bad decisions, you know.
+
+Ben:                 Oh, I love that.
+
+David:              Keep a steady hand.
+
+Ben:                 Cool, cool.
+
+David:              My carve out is a fun one. Jenny and I were staying at an Airbnb for a wedding this weekend in New York. The host had this book on a bookshelf there called Daily Rituals, and I thought, “That sounds interesting. I’ll pick it up and see what’s in it.” It’s this cool book. It’s a collection of sort of 1-2 pages each on really famous artists and thinkers from the last couple of hundred years and just what their daily routine was like, like what did they do, how did they get their work done, how did they spend their time. Super interesting. In the wide variety of some people like Benjamin Franklin and others like very, very disciplined, very regimented in their lives and devoted hours to work and really good health habits and those things. Then others are like Voltaire. Voltaire spent most of his time just lounging in bed and he would write in bed and dictate and drink “massive amounts of alcohol” and other people would do all sorts of drugs. The doubly interesting thing about it is each title of each person had their birth year and then if they were deceased, their death year. There seemed to be no correlation between longevity and degree of hard living, like people who were the most disciplined would die in their 50’s and people who lead the craziest lives would live into their 90’s. Just interesting. I’m not sure that that justifies living a crazy life –
+
+Ben:                 Yeah, Dave won’t be recommending here.
+
+David:              Yeah.
+
+Ben:                 Well, that’s it for the day, guys. If you aren’t subscribed and you want to hear more, you can subscribe from your favorite podcast client and if you feel so inclined, we’d love a review on iTunes or any sharing you could do with your friends, family, coworkers, social media, whatever you feel is appropriate.
+
+David:              Just a quick preview. We’ve got some great episodes in the works with some really special guests. So we’re looking forward to the next few months here at Acquired. We also have some new stuff coming on the show and we can’t wait to share it with all you, guys.
+
+Ben:                 True that.
+
+David:              That’s a teaser, but stay tuned. We’ve got exciting stuff coming soon.
+
+Ben:                 Well, how about this? Join the Slack and we’ll tease a little more.
+
+David:              Yeah.
+
+Ben:                 Awesome.
+
+David:              All right. Talk to you guys, soon.
+
+Ben:                 Later.
+
+‍

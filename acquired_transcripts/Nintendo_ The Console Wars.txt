@@ -1,0 +1,1451 @@
+Ben: Welcome to season 12 episode 4 of Acquired, the podcast about great technology companies and the stories and playbooks behind them. I'm Ben Gilbert.
+
+David: I'm David Rosenthal.
+
+Ben: We are your hosts. We last left our Nintendo heroes in 1990, when they single handedly revived the video game industry and captured 95% of the market share globally. We did our seven powers analysis and determined the company had a better competitive position than basically any company in history. The game was theirs to lose, but somehow they did just that.
+
+David: Indeed, they did. They won, then they lost, then they won, then they lost, and then they won again.
+
+Ben: Exactly. Today's story will be about the fall and how Nintendo managed to blow a 10-run lead in the bottom of the ninth. But like all great heroes, when faced with foes like Sega, Sony, Microsoft, and eventually even Apple, Nintendo's creativity and cleverness has kept them a major player and certainly the most unique player in the video game landscape today.
+
+David, as you mentioned, this is a weird story for us. Usually, the narrative on Acquired goes something like revenues kept climbing every year. Now they're making more money than they ever had before.
+
+With Nintendo, it's been a very cyclical road. They actually lost money in long periods of time like 2011–2018. Their greatest strengths are their greatest weaknesses all the way through. On the eve of the release of the Chris Pratt movie, Super Mario Brothers, we tell Nintendo's part two story today from the console wars of the 90s forward.
+
+Before we get into it, we want to let you know about the latest over at ACQ2, which you can search in any podcast player. It's got some great episodes. The next one to drop will be with the CEO of Retool, David Hsu. He's a super contrarian founder and really interesting to just hear his take on startup wisdom generally. We've also gotten lots of emails from folks saying you really love the Statsig episode with Vijaye Raji. That is a great one to check out, too.
+
+There's also the Slack. The Slack community has become a critical research tool for David and I since so many of you have insights and real work experience in the areas that we are covering. If you are not in the Slack yet, that is definitely where the best discussion is happening on top of what we were able to learn before we recorded an episode about it all afterwards. That is acquired.fm/slack.
+
+David, without further ado, please take us in. Listeners, as always, this is not investment advice. David and I may have investments in the companies we discuss, and this show is for informational and entertainment purposes only.
+
+David: It'll be very fun at the end of the episode to talk about whether we think Nintendo is a good stock to own at this point in time or not here in 2023. Before we talk about all that, we first need to talk about one more giant success from Nintendo in the 1980s. A very small, giant success that we intentionally left off in the last episode because it's going to be very, very important here in part two. That is, of course, the Gameboy.
+
+We talked last time all about Gunpei Yokoi, Nintendo's effectively chief engineer. He's the genius behind building everything from the ultra hand to the light gun shooting range, to mentoring Shigeru Miyamoto, and everything he did for Nintendo. One of his first early successes that we glossed over last time was the Game & Watch business. These were portable, dedicated, handheld video game systems. Meaning, by dedicated, each piece of hardware only played one game.
+
+There was a Donkey Kong game and watch, there was a Mario game and watch, there was a Zelda game and watch, even of course, a Mickey Mouse game and watch, but each piece of hardware only played that one game. It was also actually on the Game & Watch where Gunpei invented the D-pad that is on every single controller.
+
+Ben: I didn't realize that.
+
+David: That is where the D-pad was invented with the Game & Watch. It's pretty pretty freaking awesome.
+
+Ben: The Game & Watch actually sold a ton of units. I think 43 million units got sold before its end of life.
+
+David: Yes, and this is the thing. Western audiences don't know that much about it because it was never that popular in the West. It was huge in Asia though. Like you said, 43 million units, over a billion dollars in lifetime revenue from this product line, which back then in the 80s and pre-NES, that was super, super significant for Nintendo.
+
+If you're thinking about this, given everything we talked about last time about technological and video game innovation and marvels—the Donkey Kong, Mario, the NES—and how advanced it was, how the hell did Gunpei and Nintendo get Donkey Kong running on a portable piece of hardware in 1982, pre-NES? How did this come about? It would be through Gunpei's philosophy, which really becomes the second core piece of Nintendo philosophy beyond the name of the game is the game. Gunpei's technology philosophy is lateral thinking with withered technology.
+
+Ben: Because the NES still was cutting edge hardware in many ways.
+
+David: Absolutely. It was years ahead of the competition. It had the first GPU architecture in a consumer-focused device. It was not withered technology, it was the opposite of that.
+
+Sitting next to all of this—silicon, PC, computing, and graphics—innovation that's happening in the 1980s that the NES took part in, was another adjacent market in silicon ecosystem, which was calculators. We've talked a little bit about the calculator industry on the show in the past on our TSMC episode, specifically, the history with Morris Chang and Texas Instruments. We got to cover TI at some point in the future. I think that was on our voting for LPs for the next potential episode.
+
+By the early 80s, the calculator industry was like the PC industry is today, other than the Mac and Apple silicon. It was a total commodity, very mature, cheap, completely understood technology, and you can make it for very, very low cost. It was also specifically dominated by Japanese semiconductor companies, very convenient for Nintendo.
+
+Gunpei just expanded his mind a little bit in what could be silicon technology powering video games. He reached over and grabbed a bunch of mature technology from the calculator industry and voila, portable Donkey Kong.
+
+Ben: The LCD screen is basically the same type of screen. It's no more advanced of a processor doing simple math to decide whether the character moves left or right, summing points, and things like that. It's a calculator.
+
+David: Nobody would mistake this for an arcade quality port of Donkey Kong, but it doesn't matter. People now can play Donkey Kong on the go. This is amazing. People love it.
+
+Ben: Huge deal.
+
+David: Legend has it that the way Gunpei came up with the idea for doing the Game & Watch in the first place was when he was on the train in Tokyo. He observed a businessman who was also on the train, who was just killing time by pressing buttons on his calculator and doing random things on his business calculator. I think that tells you a ton about the potential demand for on-the-go video entertainment in the 1980s.
+
+Ben: I'd say that was apocryphal, but that has literally happened to me, where I pulled out my phone and I'm up to date on my email, I'm up to date on Twitter. I pulled down, no new tweets are coming in, so I'm scrolling around on the home screen doing nothing, opening and closing the same apps over again just because it's entrancing.
+
+David: Now imagine no smartphone, no Twitter, no Instagram. What else are you going to do? How did people even live back then? Barbaric.
+
+Ben: Newspapers, man.
+
+David: Newspapers, right. So, time marches forward, everything that we talked about in episode one on Nintendo comes to pass, the NES launches, it achieves 95% global market share, Nintendo is on top of the world, et cetera, et cetera.
+
+While this is all happening, Gunpei, who was not involved with the development of the NES, goes over to Yamauchi and says, hey, I think we can basically combine the NES and this old Game & Watch technology and make a similarly awesome, portable cartridge-based console. Yamauchi and the rest of Nintendo are like, well, yes, of course, if you could do that, that would be amazing. Who wouldn't want to buy one of those things?
+
+Part of what made the NES so great was it was years ahead of all the competition and technology. How are we going to do that in the portable era? Gunpei's like, don't worry, Mr. Yamauchi, I've got it. I can make it all work.
+
+This device that I have in mind, it'll play awesome games. It will have great battery life. We can get it to market super fast. I'm pretty sure we can sell this thing even cheaper than the NES. However, he's like, this is too good to be true. How are we going to do this?
+
+Ben: It's quite the promise.
+
+David: He's like, here's the big reveal. It's going to be black and white.
+
+Ben: Not even black and white, but black and green.
+
+David: Yeah. God bless Yamauchi. That man was a visionary, and he completely got it. For a non-technologist, he understood technology better than anybody because he gives Gunpei the go ahead on this. Everybody else at Nintendo is like, this is not going to work.
+
+I know we're still in the 1980s here, but the 1980s are more advanced than you might think. Black and white is the 1960s. Nobody wants black and white, especially in the video game market, which is supposed to be this advanced technology, graphical market.
+
+Ben: To play games that they're accustomed to seeing in color, you're going to go downgrade Mario? That's a terrible experience.
+
+David: Right, a terrible, terrible idea. Internally, this project gets the nickname. I'm not exactly sure how to pronounce this, but it's Dame-Game, which basically means hopeless game. But nevertheless, they push ahead.
+
+In April 1989, they released this device in Japan, followed shortly in the US for $89.95. This device, of course, is named the Gameboy. We talked about this all the time on Acquired, things that are in technology, in our industry, in the past, that just seems so natural, we don't even think about them. Why did they call it the Gameboy? They called it the Gameboy to dig at Sony, who if they've made it would have called it the Gameman.
+
+Ben: Why?
+
+David: Because they had the Walkman.
+
+Ben: No way. That's really why?
+
+David: Isn't this hilarious? It's so obvious when you think about it. The Gameboy, it's like a Kleenex. It's like, oh, portable handheld gaming system. It's a Gameboy. This is Nintendo on the rise. Looking over it, they're big brother in Japanese technology corporations with Sony and be like, we are beating you to the punch here on technology.
+
+Ben: I love it. I had no idea.
+
+David: It's so freaking awesome. It obviously becomes a huge success. The first Japanese production run of the Gameboy sells 300,000 units almost immediately. The first US shipment of 1.1 million units also sells out immediately.
+
+The killer app, especially in the US driving sales, is not a kid's game, but Tetris. We won't tell the whole story. It's pretty amazing of how Tetris, the game, comes out of the communist Soviet Union, makes it onto the Gameboy in the US, and becomes the most popular game of all time. Go watch the movie. I've heard that it's great.
+
+Ben: It is. Yeah, I watched it this week. It's obviously a little over dramatized. It is pretty crazy that the talk about the name of the game is the game. A Soviet programmer invented this game that was then so obvious to everybody who looked at it that this thing was the perfect game, that there was this massive geopolitical mini war over who could get the rights to this thing and all these different countries on all these different consoles.
+
+Nintendo, we think of them as this very nice and shiny company making stuff for kids, but executing the steps they needed to take to obtain the license for Tetris is a wild story. The movie is awesome. The important thing that the movie does a good job of underscoring is Minoru Arakawa deeply understood once he saw a demo of Tetris for Gameboy that this could expand the market beyond just games for little boys and teenage boys.
+
+David: This is not a kid's game. This is an adult's game.
+
+Ben: Yes. Now we can sell Gameboys to everyone of all ages everywhere, and not just as a toy.
+
+David: Totally. It's funny. I was laughing as you were saying all that about image of Nintendo is this friendly, cuddly company. I think we debunked that in part one pretty well.
+
+Ben: Right. There's plenty of corporate espionage behind the Mario smile.
+
+David: Yeah, plenty, plenty, plenty. Yes, (a) the Tetris story is amazing on its own, but (b) for our purposes here, and it really was Arakawa in the US who saw this at Nintendo of America, the opportunity, just like Gunpei saw with a businessman playing with his calculator on the train back in Tokyo, everybody loves games. It's not just kids. If they can get this device that is easily adoptable and at a low-enough price point by a broader market, Nintendo is just going to crush it.
+
+Nintendo of America, in their tradition as we talked about in part one, just have the most amazing advertising campaigns around the launch of the Gameboy at Father's Day. I don't know if it was 1990 or 1989. It must have been 1990. They come out with a campaign called Punish Your Father. The whole thing is your dad has been stealing the kid's Gameboy. For Father's Day this year, punished him by buying his own and stopping him from stealing the kid's Gameboy. This is so brilliant.
+
+They start buying ads in airplane magazines. The ads says, if you're reading this, you're obviously bored. You need a Gameboy, and you need Tetris.
+
+Ben: That's awesome.
+
+David: They're literally marketing it at business travelers.
+
+Ben: Which makes sense. Seriously, you walk in an airplane today and who's playing Candy Crush? A lot of business travelers.
+
+David: Exactly. In the US, 46% of Gameboy players are adults. This is so different from the NES market. It becomes this businessman status symbol. I remember this in my own life. Everything in these Nintendo ads actually happened in my family. My dad used to steal my Gameboy all the time. We had to go get him his own.
+
+Ben: Did you have one of the original fat ones?
+
+David: Totally. I was five years old when it came out, so I was exactly in the target kid demographic. I think my dad, I was talking with him about this this weekend. He still plays the original Tetris cartridge on an old Gameboy Advance at this point to this day. This is how universal the appeal of this game and this system is. It's unbelievable.
+
+Nintendo ends up selling 32 million Gameboys in the first three years, which is way more than the NES. That's roughly $3 billion in hardware sales alone. The Gameboy and then its quasi successor but really the same platform, the Gameboy Color, would go on to sell 118 million units worldwide, which is over double the NES and the fourth highest-selling console of all time, period. It's just amazing. This was Nintendo's first taste and really the whole industry's first taste of massively expanding what already was a huge gaming market.
+
+Ben: It also was at a completely different price point. I wasn't allowed to get a console, but my first video game system was a Gameboy Color because I think it was a little over $100 or something for the colored one versus around the $200 or more price point for the at-home consoles.
+
+David: It takes both the kids gaming market and the casual adults gaming market, that it creates and marries those into one device, and leaves the core gaming market to the home console. You would have been exactly in the target demo for Pokemon when it came out.
+
+Ben: Absolutely. You bet. I bought the translucent purple Gameboy Color so that I could get Pokemon Blue.
+
+David: Oh, my God. Probably 70% of people listening right now, regardless of their age or in that bucket. I bought Pokemon when it came out even though I was a teenager at the time.
+
+Ben: Yup. Okay, we want to take a quick pause and thank our first sponsor of the episode. It is our good friends at Tiny.
+
+David: Tiny, as so many of you know now, is the Berkshire Hathaway of the Internet. They have built and acquired the world's premier collection of truly wonderful internet businesses. As we talked about in part one of the Nintendo series, we are so happy for them. Just like Berkshire Hathaway, Tiny is itself going to be a publicly-traded entity which is just so awesome and full circle.
+
+Andrew Wilkinson started really what is the premier UI design agency in the world, Metalab. Andrew and his partner, Chris, became total Warren and Charlie nerds. They took it and started buying cash flow–generative businesses just on the Internet.
+
+Ben: It is funny how you've seen a lot of people talk about what a great idea this is in the last couple of years and say, I want to start a portfolio of internet businesses. It might not be venture scale, but might be these niche Internet businesses. Tiny has been doing that for a decade. They're so well-positioned now that the economy has shifted.
+
+David: Some of them are not so small. Dribbble now is a huge business. Especially now that Tiny is going public and has so much more firepower, I just think there's a really compelling alternative path to venture capital, regardless of the scale or nature of your business, just like there's a compelling alternative path to being part of a conglomerate, a private equity firm, or a public company, and joining Berkshire instead.
+
+Ben: Seriously, it is a no brainer for so many founders right now who are starting to look and gear up for that next big capital raise to figure out, does another big capital raise make sense, or is it time to set the business on a different trajectory?
+
+David: If you're running one of those businesses, if you're a VC board member of one of those businesses that's facing that decision, or if you just know of one, shoot Tiny an email over at hi@tiny.com or click the link in the show notes. When you get in touch, just tell them that Ben and David at Acquired sent you.
+
+Ben: Okay, we're in this era. Gameboy is flying off the shelves, but the NES is getting a little long in the tooth. How does the whole Super Nintendo thing work?
+
+David: Here's where we're going to change gears. Gameboy, another incredible smash success for Nintendo. But back on the home console side of things, we're entering some choppy waters here.
+
+Where we ended last episode, ⅓ of US households have an NES. Nintendo has roughly 90% global market share. They've got this amazing combination scale economy, network economy, distribution power. By the midpoint of the 8-bit generation in the NES, it looks like Nintendo's moat is impenetrable.
+
+The reality was, for the 8-bit generation, it was. There were other competitors on the market. Remember, Atari got split into two companies when Warner Brothers sold it off. The hardware side of Atari releases a new console, the 7800. It sells about a million units like, okay, also ran.
+
+Ben: The NES lifetime sold 62 million just to put that in context.
+
+David: Sega, in response to the NES in Japan, released a home video game console called the SG-1000. It does okay, but also only sells about a million units. They take the third revision of that console called the Mark III. They export it to the rest of the world as a system called the Master System. It flops in the US, where they sell off the distribution rights to it to Tonka, the Tonka truck toy company. Tonka has no idea what to do with this thing.
+
+Ben: Also this underscores how much people thought of this as kids' toys. The pure set is Mattel, Tyco, and Tonka.
+
+David: Hasbro. Exactly. This is the toy aisle. Nobody understands this stuff in the US. But importantly, this "Master System" console from Sega does fairly well in Europe and in Brazil. It ends up selling between 10 and 15 million units worldwide.
+
+Again, no NES, but this is enough of a success from Sega to give them some hope that, well, maybe we should continue investing in the home console business. As we mentioned in part one, Sega at this point was primarily an arcade company. Did you know this? Sega was actually founded by Americans.
+
+Ben: Yes.
+
+David: Even though it's a Japanese company, it was originally an American company.
+
+Ben: Involved in World War II military service in Hawaii. Is that right?
+
+David: Exactly. Sega is a portmanteau of Service Games. The company was started to make, like Nintendo, gambling games or thinly-disguised gambling games that morphs into arcade games for US military service bases around the world.
+
+Ben: Crazy. I love how these companies evolve to morph and survive over time.
+
+David: They know that they're not going to dethrone the NES and the 8-bit generation, but they think maybe we can try and do what Nintendo did to get this huge advantage with the NES, which remember, was just like Steve Jobs and the iPhone, we want to produce something that is years ahead of the competition. We might actually be able to leapfrog Nintendo here and do the same thing to them.
+
+Sega actually has two advantages at this point in time that Nintendo does not have. One, Moore's Law has continued to progress since 1983 when the Famicom came out in Japan. More advanced and cheaper processors are now available to everybody. Specifically, 16-bit processors are now cheap enough that you can put these in a living room, quasi kids' toy home console.
+
+Nintendo, obviously, also had access to this technology. But in an innovators' dilemma–type situation, they don't really have the motivation to pursue it because the NES is the gift that keeps on giving for them. They want to keep that console generation going as long as possible.
+
+Ben: Right. They do have to come out with something eventually. But if they can delay that eventually another year and no one forces their hand, that is very good news.
+
+David: Exactly. Sega again, because they were so successful in the arcade business, and the arcade business moves so much faster than the console business—new technologies, new games, new game concepts are coming out all the time—they already have a pretty robust 16-bit arcade board that they've been using on some of their arcade hits at the time like Shinobi or Golden Axe. Those were 16-bit games running on advanced arcade boards that Sega was producing.
+
+Ben: What does it mean when you say the 8-bit generation and the 16-bit generation? Eventually, we'll get to 32-bit, 64-bit.
+
+David: 64-bit becomes part of the marketing, in fact, for Nintendo.
+
+Ben: Yes. It basically means that the CPU for the machine can process 8-bits at a time. That affects everything downstream, sound, graphics, processing power. It's basically, effectively the bandwidth that the CPU has in order to process information concurrently.
+
+David: Right. Specifically, I remember at this time in the jump from 8-bit to 16-bit processors, the color palettes that the games could use. With 8-bit processors, you couldn't even fit so many colors in there, but 16-bit processors, you could fit hundreds more different colors that can be used in the game, stuff like that.
+
+Ben: Yup. Of course, this stuff is exponential. Eight-bits, what does that mean? Two to the eighth, different combinations that are possible, so 256 different values in each chunk of data that is processing. You can see how going from 8-bit to 16-bit, which takes you from 256 different possible values to 65,536 different values. It is an enormous leap forward.
+
+David: Right at this moment in time, this whole soup of factors that come together to really give Sega an opportunity to break into the market. Even though the NES is so dominant, older consumers, especially teenagers and adults, value graphical performance. They're willing to pay for it, as long as the are good games to actually back it up. Sega is like, well, we've got a bunch of really good 16-bit games that we've made for the arcades, we can probably do this.
+
+Ben: It is interesting how much graphical capability mattered in those days. It still matters today, but it matters less. When you go from almost photorealistic to even more almost photorealistic, it makes them more impressive, and it makes it more interesting to look at on a 4K TV, but does it literally make it more fun than playing something on my Switch? Probably not, but back in those days, that's a huge leap forward.
+
+David: Totally. Even on the Switch and on the virtual consoles, I love going back and playing Super Nintendo games and Sega Genesis games, which you can do on the Virtual Console and the Switch, which is so fun. But going back to the NES era, I grew up with those games. I remember playing them and loving them. I can go back to 16-bit games, but 8-bit is pretty tough.
+
+Ben: I'll say, I still play my N64 Super Smash Brothers. That game is more fun than Super Smash on my Switch. You do hit some point, I think around 64-bit graphics, where more bits is no longer equals more fun.
+
+David: Back to Sega here and 16-bit. In 1988, they launched a new console called the Mega Drive in Japan. That was in late 1988, then they turned around in early 1989, and launched it in the US. They decided, of course, that the Mega Drive is probably not a good brand name for the US, so they named it the Sega Genesis, a new beginning for Sega in America. Surprisingly, it doesn't sell well in Japan, either at launch or really ever.
+
+Ben: It's really weird. I couldn't figure out why.
+
+David: Maybe Nintendo had such a lock on distribution, game developers, and market share in Japan that even the quality arcade games that Sega was making wasn't enough for the Japanese market.
+
+Ben: And when it launched in Japan, it didn't have Sonic yet.
+
+David: Exactly. We will get to that. It doesn't have Sonic in the US, either. Even if you think you know the history of the console wars and the Genesis in America, or you lived it as I did, I didn't remember this exactly as it happened. Initially, the Genesis is also a flop in America. It sells about 500,000 units in the first year, which again is okay, but this isn't that much better than the old Master System here.
+
+Ben: Nintendo isn't necessarily viewing it as the competitive threat that says, okay, we need to release our next generation system ASAP. They're like, okay, cool. This one also isn't beating us, so I guess let's keep riding the sales of the NES.
+
+David: Right, why would we change things? The next year in 1990, Sega decides, hey, we need to make a change here and specifically, we need to make a change in Sega of America. They install a new CEO, a guy named Tom Kalinske. If you're looking for an executive to come in and turn around your ailing video game console business to do things differently, you probably wouldn't go hire Tom.
+
+Tom at this point is a toy executive. He's in his late 40s. He knows nothing about video games. His most recent job is he was the CEO of Mattel before being ousted by the board for underperformance.
+
+Ben: His big success was Barbie.
+
+David: Right. This doesn't exactly scream like video games. Video games are part of the toy market, but Sega is trying to change this. They're trying to appeal to teenagers and older adults. It turns out that actually, Tom had a second act in him and ends up being the very best hire that Sega ever could have made.
+
+He shows up and he's like, guys, if our strategy is to literally do what the marketing slogan was at the time when he showed up, which is Genesis does what Nintendon't, the problem though is they were doing a piss-poor job of executing on it. Even with this great tagline, the actual commercials that Sega was showing on TV were this really cheesy 80s jingle. I'm not even going to try. Go look it up. They're just like weenie.
+
+When Tom shows up, and surprisingly, coming from the toy industry, he's like, if we're going to do this, we got to go all out. We can't still keep one foot in the toy industry here. We need to go full on punk rock, MTV, directly appealing to teenagers, none of this 80s jingles in our commercials anymore.
+
+Ben: No, it needs to be what everyone knows, Sega [...]. We need to pivot the whole company. Sega needs to be the aggressive video game company, full stop.
+
+David: Yes. He presents to the Sega board back in Japan. He flies over to Tokyo and presents a four-point plan of how exactly Sega of America is going to dethrone Nintendo.
+
+Ben: It's great. The way he gets recruited for this, David and I both read this book, Console Wars, which is really fun if you want the whole blow by blow on this. Tom actually gets recruited by the chairman of Sega while he's on a family vacation in Hawaii on the beach. The chairman of Sega walks up to him and says, Tom Kalinske?
+
+For as compelling as the Nintendo story is, it's compelling because they won long term. For this brief moment of time, the Genesis era, I think Sega probably has an even more impressive narrative and hero's journey with Tom Kalinske.
+
+David: Totally. We're going to get into what they do, this four-point plan. It is freaking brilliant. I think this is the best example we've ever seen on the show of how to compete against an entrenched incumbent. They literally walk up to Nintendo and just punch them in the mouth. It's so great.
+
+Here's the plan. Point one, we need to preemptively start a price war. We know that Nintendo is working on a new 16-bit system. They're just dragging their feet because they feel no sense of urgency here. We also know, given Nintendo's history and everything we talked about in part one, that they like to make money on their hardware. They want high hardware margins.
+
+Here's what we're going to do. We think they're probably going to price the Super Nintendo when it comes out at the equivalent of $250. We're selling the Genesis for $200 right now. We're going to preemptively cut that to $150.
+
+Ben: This is perfect counter-positioning. Nintendo's incumbent strategy is to make money on hardware. What are we going to do? We're not going to make money on hardware.
+
+David: Exactly. We're going to preemptively put pressure on them to cut costs on the Super Nintendo. I don't think Tom and Sega even realized how important this would become. Put a pin in this, we're going to come back to this in one sec. This is a critical move.
+
+Ben: Especially the preemptive. It's not just we're going to make it so they can't make money, it's that before they launch, we have to make them cost-conscious.
+
+David: Number two, we need to change the pack-in game, the bundled game that the Genesis comes with in America. I had forgotten about this. The original pack-in game was an arcade port called Altered Beast. I think it was an okay arcade game. It wasn't that good. It wasn't as good as Golden Axe and [...], but it may be had the worst American localized title ever. Who's going to buy a game called Altered Beast?
+
+Ben: Yeah. Altered doesn't really make you feel one way or another. It's an uninspiring word.
+
+David: Yeah, Altered Beast. I don't even know what that means. Tom's like, look, I know when you were recruiting me in my early time here, you, Sega in Japan over there, you're working on a top secret "Mario killer" game.
+
+I know that your plan is to sell that separately from the system because you want to maximize revenue from this game that you know is going to be a pretty good seller. We need to bundle it into the system here in America. know we're going to lose money on this, but we got to up our install base. We need a Mario killer that is going to be with every single Genesis. That's point two.
+
+Point three, Speaking of games, and this is also just a brilliant insight, he's like, we need to make American Games for American audiences. That means two things. One, we need to have our own Sega development studios here in America, which Nintendo doesn't have.
+
+Ben: And never went on to have. I don't think there's a Nintendo game development studio in America still.
+
+David: Nope, the closest that they had was their second-party studio, Rare, which they stupidly let get acquired by Microsoft when Microsoft is launching the Xbox. Rare made Donkey Kong Country, Goldeneye 64, and lots of great games for the Super Nintendo and the N64. That was in the UK. They never had development studios in America.
+
+Tom says, Nintendo's missing a huge opportunity, and so are we. We need to have our own studios here, and we need to really embrace American third-party game developers, which Nintendo aren't embracing any third-party game developers.
+
+Ben: Nintendon't.
+
+David: Nintendon't, exactly. Specifically, what this means is Sega at this point is locked in a heated negotiation (shall we say) with our buddy, Trip Hawkins and Electronic Arts, as we talked about on our episode with Trip. Back a few years ago, Trip is just awesome.
+
+Ben: He literally recounted the story for us.
+
+David: Totally. More on that in a second. Tom's like, we need to settle all of that contentiousness. It hadn't progressed to litigation yet, but we need to set all that. We need to bring Electronic Arts into the Genesis fold and bring them into the home console market.
+
+The fourth point, as we alluded to, no more of this 80s jingles in our marketing. We're going to go directly straight on after Nintendo with our commercials and our advertising. Naturally, given this brilliant plan of how to compete as an underdog, what do you think the Sega parent company board says to all of this? They reject it, as corporate boards want to do.
+
+Fortunately, Ben, like you said, the chairman at the time, Hayao Nakayama, he sides with Tom. He pushes through this plan and says, okay, I hired you to make your own decisions in America, I trust you in understanding the American market, you can go ahead and do this. We're not going to do this in Japan, but you can do this in America.
+
+Ben: This is a career bet for Tom because this is probably his last act one way or another. If he fails, he goes out in spectacular glory. But if he succeeds, then this is probably his job for a while.
+
+David: Clearly, this market is enormous. Being CEO of Sega of America is a pretty great job if they succeed. What happens? Let's go through each of these points. Point one, the preemptive price war. Oh, boy, was this important.
+
+Nintendo was, as everybody knew, working on the Super Famicom/Super NES. It would come out in Japan in late 1990 and in the US in late 1991, two years after the Genesis. When they launch it, they launch at ¥25,000 in Japan and $199 in the US, which even that was $50 more than Sega had cut the price of the Genesis 2.
+
+More importantly, though, than Sega being cheaper than Nintendo from day one, is that Nintendo was planning originally to include backward compatibility in the Super Nintendo so that it could also play NES games. When I read about this in the research, I was just like, oh, my God, they blew it.
+
+Ben: That is, of course, the right strategic move to leverage the fact that you already have tens of millions of people that are Nintendo customers. You want to come out with something that makes sure they remain Nintendo customers. But your competitor dropped the price, so you decided to cut something. The thing you cut is the thing that makes it so you no longer take advantage of the fact that you have this huge install base.
+
+David: That would have given you a stair step into the new generation. Totally. Nintendo estimated that including backwards compatibility in the Super NES would add about $75 to the bill of materials.
+
+Ben: Woah, that's huge.
+
+David: Yeah. Rather than come out with the Super Nintendo price to $250, $275, or $300, because the Genesis had already been preemptively cut to $150, they're like, ah, we really can't do that. Let's cut out this $75 cost and come out at $200. Hard to say if this was a mistake on Nintendo's part or not.
+
+They had to do this. Certainly, the mistake was not pushing their advantage and coming out with the Super Nintendo earlier. They absolutely could have. They let the Genesis beat them to market, and then this preemptive price war forces them to take what really would have been their best built-in advantage for the new generation of porting the existing install base over to the Super NES and just hit reset on the whole industry, which is crazy.
+
+Ben: It's funny. Strength leads to strength. If Nintendo had just been aggressive and obsoleted themselves, they would have probably been in a great position. But instead, they sat back, they tried to play defense, they tried to give enough running room to their NES to keep making good money as long as possible, then it left this opening for Sega to come in and pull this move, and then suddenly, Nintendo no longer has an advantage to leverage. It's like the classic football prevent defense thing. Prevent defense prevents you from winning. You've got to keep being aggressive and playing offense.
+
+David: It reminds me of, I think, my favorite company values sheet of all time, which is the legendary Nike corporate values. It's so good. I think it's number two. It's we're on offense all the time. You don't win by playing the prevent defense.
+
+Ben: Absolutely not.
+
+David: I think we could maybe give some leeway to Nintendo here. This was all happening for the first time. People didn't totally understand console business dynamics yet. If you fast forward to today, Sony and Microsoft not only always have backwards compatibility in each new console they release, they also do forwards compatibility. New games for a couple of years that are coming out for the PS5 or the Xbox Series S and Series X will also be playable on the previous generation hardware.
+
+You couldn't do that back in the day, but this is so important to feathering in each new console generation that literally billions of dollars of engineering across, not only hardware, but software titles are invested in this today. Nintendo didn't know that, but this becomes a huge, huge mistake. That's one.
+
+Point two, the pack-in game. Obviously, this is Sonic the Hedgehog. Sonic is just the most perfect example ever of counter-positioning and brand.
+
+Ben: Totally.
+
+David: If you think about what Nintendo's real strength is in games that we talked about so much on the last episode, it's these amazing stories, not narrative, but story driven fantasy worlds that you can get lost and explore in. That's what Mario is. That's what Zelda is even more. That's what Metroid is.
+
+You know what? That style of game is—besides being amazing—also really slow. That is the opposite of Sega's DNA, which is all in the arcades. That is fast, and nothing is faster. I want to know what kind of drugs the people were on that came up with Sonic the Hedgehog. I think it was an internal competition within Sega of Japan.
+
+Ben: It was. It was an employee pitch.
+
+David: Yeah. What would lead you to come up with a trash-talking supersonic blue hedgehog?
+
+Ben: That originally had fangs and an electric guitar.
+
+David: That's right. Also a human girlfriend that was not wearing much clothing, I think, originally.
+
+Ben: Yes, scantily clad human girlfriend.
+
+David: Yes, and the best and the worst of the 1990s. But mostly, especially with the final version of Sonic, it's just freaking awesome. It doesn't get any better than that.
+
+Ben: Mario is family friendly, slow, and open to exploration. Sonic is not only fast, but aggressive. The whole brand of Sega adopted the brand of Sonic on its means of competing against Nintendo.
+
+David: Totally. Remember how we talked about in the maybe the 1990 Q survey that Mario was more recognizable than Mickey Mouse? By the 1993 Q survey, Mario is still more recognizable than Mickey Mouse, but Sonic is even more recognizable than Mario by American consumers, which is just ridiculous a couple of years later. That is how successful Sonic was. This was part of Kalinske's genius, it was bundled in with every Genesis console. Sega is giving up on the incremental $50–$60 a pop revenue that they could get from Sonic the Hedgehog, but this really drives Genesis console sales.
+
+Point three, we need American Games for American audiences. Nintendo at this point in time is basically making two types of games. They're making the timeless works of art like we were just talking about—the Marios, the Zeldas, and the Metroids. They're also making super quirky Japanese stuff. What they are not making is super quirky American stuff.
+
+Specifically, they're not making American sports games. Now, they are making sports games, they make Punch-Out, they make Excitebike, they make a bunch of baseball games. Third parties make games. The developer Tecmo famously makes Tecmo Bowl (American football games). They're out there, but these games don't capture the actual American experience of these sports.
+
+Ben: They're cartoon approximations of something based on a sport, but it's not like you're playing Madden.
+
+David: Exactly. We talked about this a lot with Trip Hawkins on our episode with him. That's what was so game-changing about EA's John Madden Football. It was 11 on 11, real football with real playbooks. If you ever played football, if you were a student of the game, or if you watch the NFL every Sunday, it was still a rudimentary video game by today's standards, but this was actually simulating the game of football in a way that nothing coming out of Japan really ever could.
+
+That first version of Madden came out in 1988 for the Apple II because Electronic Arts at this point in time was a PC game publisher. They weren't in the console business at all. They didn't want to play ball with Nintendo and the ridiculous licensing terms that Nintendo had.
+
+They're right in the middle of these negotiations with Sega because Trip and EA had famously gone out and reverse engineered the Genesis in a cleanroom. He had these grand plans of he was going to make his own Genesis cartridges, not pay any royalties to Sega, and then he was going to take his program to other third-parties and completely end around Sega altogether.
+
+Ben: He had to negotiate from that point, but they were ready to do. They actually did the unbelievable engineering feat of in a cleanroom environment, reverse engineering the way to make games work on the system.
+
+David: Totally. You can imagine why Sega (the parent company) would be and were really, really pissed at Electronic Arts and not want to play ball with them. Kalinske's like, no, we got to settle this. We got to embrace them. If we can get Madden on the Genesis and not on Super Nintendo, this is going to be huge for us. Sega basically completely bends over backwards to EA to accommodate them.
+
+Ben: Which is the right move, by the way.
+
+David: Absolutely.
+
+Ben: The pie massively grows by this game seeing the light of day on Sega exclusively, versus if they enter a litigation, it's like, okay, let's divide up a small pie. No, absolutely not. The answer in this moment where this is a rapidly expanding market and a fight to the death between Sega and Nintendo, is no side quibbles. Figure it out, move forward, launch the product, everybody makes money.
+
+David: Totally. Sega's original program and the program for other third-parties was $10 licensing fee per game unit. For EA, they give them a $2 licensing fee per game unit capped at a million units. EA will never pay Sega more than $2 million on any game. Very, very different. But like you said, Ben, this is just an enormous win.
+
+That first year, that first version of Madden that comes out on the Genesis, EA and Sega's prediction is that it'll sell 75,000 copies. It ends up selling 400,000 copies. It's just a huge hit for them. This is the exact kind of thing that is not on Nintendo and soon to be the Super Nintendo.
+
+EA eventually does bring Madden to the Super Nintendo, but they have a separate studio working on it. They've got the A-team working on the Genesis version, and they've got the B-team working on the Super Nintendo version. The Genesis versions were always better. I remember this as a kid. This is a big reason I was lucky I had the Super Nintendo and the Genesis. I wanted Sonic, but even more, I wanted really good Madden games.
+
+Ben: Wow, I didn't realize because these days, the Xbox and the PlayStation versions are, I think, equivalent. If there are any hardcore Madden fans out there, they're probably going to come at me with, no, it's way better than this, that, or the other way. FIFA is the same thing, but I didn't realize there was such a difference then.
+
+David: Yeah. Back in the day, they were actually made by different studios. There were some things about the Super Nintendo architecture that limited the frame rate that it could run at. Basically, it was always better on the Genesis.
+
+Ben: It's worth saying, point one, in eliminating the backwards compatibility, it made Nintendo have to fight Sega on an even playing field. That didn't mean Sega was going to win, it meant even playing field that negated their advantage of large previous install base.
+
+Point two and three are the games. You've got, with point two, Sonic being faster, brighter, more exciting than Mario. When you see them head to head, which Sega was making sure that you saw them head to head, Sonic seems like a much more interesting game that you want to buy regardless of the fact that you have loved Mario the last few years.
+
+David: On the surface, it is much more compelling.
+
+Ben: Yes. Of course, with Madden, now they have even more advantage. The scales are really starting to tip towards Sega here.
+
+David: Point four, punching Nintendo in the mouth. Kalinske goes out and brings on a guy named Steve Race, who had masterminded Reebok's resurgence against Nike in the 80s with the pump sneakers. Remember that?
+
+Ben: Oh yeah.
+
+David: That was Steve Race's brainchild. Kalinske tells him to just go wild on the marketing. Steve would go on to leave Sega and become the first president of Sony Computer Entertainment America for the launch of the PlayStation. But before that, he would pretty much single handedly yank Sega and really the whole video game industry. This really sets the stage for the PlayStation out of the toy world and into full-on media technology, the MTV generation. This is Sega and his work.
+
+They go out. They hire the Goodby Silverstein ad agency, and they come up with the Welcome to the next level campaign, which was just so great and had the trademark way that all of the ad spots ended with the Sega scream.
+
+Ben: Yup. There's also some pretty amazing jujitsu here around the idea that you've graduated from Nintendo. That's cool that you used to do that. That was for babies. Now you're a real grown up, and it's time to graduate to a real grown-up system.
+
+David: It worked on every level. It was so great. They premiere the campaign during the 1992 MTV Video Music Awards. What a perfect marriage of everything here. Literally, the same VMAs, where many years later, Kanye would take the mic from T-Swift, this is not the toy aisle here. This is pop culture at its pinnacle.
+
+They also invent the term blast processing. If folks remember this, the Genesis has blast processing. That's what makes Sonic fast. It's a completely made-up marketing term. There was something in the development manual, somewhere for the Genesis about something that maybe could be translated as blast processing, but it didn't actually do anything.
+
+Ben: Apple has been hot on this recently, the A12 bionic, the neural engine, and marketing terms for something highly technical, such that it doesn't actually describe the technical thing that it's doing.
+
+Another Apple example is the retina display. Once they start marketing the retina display, it doesn't matter if their competitors have something that's just as many pixels per inch. It's not a retina display, but it is completely meaningless.
+
+David: It all goes back to the Genesis. It's got huge font on the actual console. I think it's gold letters in Japan and silver letters in America that say 16-bits on the console itself. It's amazing.
+
+Ben: I love it. That is their competitive edge.
+
+David: Totally. One of my big takeaways from this whole series is just how much Apple took from the video game industry in their marketing. Steve, Tom, and the team at Sega also do super innovative stuff that really just brings the industry forward into the modern era. Before this era of Sega, there weren't actually release dates for video games. When new Nintendo games would come out, they just start showing up at retailers and not even on the same day. Some regions of the country would get them before others.
+
+There was no organization. Tom, Steve, and the marketing department at Sega of America are like, nope, this is the movies. We are doing worldwide release days for our games. They're going to be just like movie premieres. We're going to have celebrities. We're going to have big marketing events. The date is going to be plastered all over everything.
+
+Ben: Totally. There are millions of people that know May 12th, 2023 is going to be Zelda, Tears of the Kingdom. This has become the way that you market video games.
+
+David: That all started with Sega of America. Specifically, it started with Sonic II, where they had Sonic Tuesday as the launch day. So hokey, but this is hugely innovative.
+
+The other thing that Sega of America does in their marketing—Ben, you will love this—is they literally do the Pepsi challenge. They take trucks, 18 wheelers, and they outfit them with Super Nintendo's and Sega Genesis' in the back. They drive them around to malls across America. They invite kids in to play head to head, Sonic versus Super Mario World, and then they ask them which game they prefer after five minutes of playing. The first five minutes of Sonic are really good. The next couple of hours, not as good.
+
+Ben: Right. This is an amazing trick. It's the same thing that all the TV manufacturers do. They gamma up, contrast up, and brightness up all the TVs when they're in the store, and you get mesmerized by the one that's got the most insane Christmas light colors on it, and then you take it home and you're like, this is terrible for watching The Dark Knight Rises or whatever. It turns out that when you're comparing things side by side, there are things that appeal to you that are actually not the best long-term option.
+
+David: Totally. They keep track of all of this. Lo and behold, 7 out of 10 kids in America prefer Sonic to Mario. Of course, Sega trumpets that in the Wall Street Journal, all of the investor press, and everything. It's amazing.
+
+Ben: At the same time, it's Sega’s genius and the fact that they showed up to play, but also Nintendo keeps dropping the ball. The games that they're shipping for the Super Nintendo are, again, very conservative, very like, we're going to try to maintain our lead. You play the Mario game for it, you're like, okay, yup, it's Mario again. It's nice. I like Mario, but this isn't new. I don't really understand necessarily why this even needed to be 16-bit.
+
+David: Right. Super Mario World is an amazing game, but is it that much different from Super Mario Brothers III on the NES? No. It's got Yoshi. Yoshi is no Sonic.
+
+All of these four points by themselves, would any one of them have dethroned Nintendo? Certainly not, but all for them working in concert and Sega's just amazing execution, my God, they do it. It's tough to tell exactly because both companies (Nintendo and Sega) were highly incentivized at this time to be creative in what they were reporting as their console sales data, shall we say?
+
+Ben: Right. This is when you have to really tease out the sell into the channel numbers versus the sell through the channel numbers.
+
+David: Yes, but as best as I can tell, I think it is basically fair to say that every year that they're competing head-to-head on the market—the Genesis and the Super Nintendo—the Genesis outsells the Super Nintendo in America. You can certainly quibble with that. The data is not perfect, but take a step back, even if it's 50/50.
+
+We went from Nintendo having, for all intents and purposes, 100% of the market neck-and-neck with the Genesis. Nintendo basically fights to a draw. It's not like the Super Nintendo was a failure. It was a success. But corporate-wise for Nintendo, this is a huge failure. They basically have given up half market share to this new entrant in one generation.
+
+Ben: Okay, we want to thank our friends at Vanta, now longtime sponsors of Acquired and portfolio companies for David and I.
+
+David: Yes. Vanta, as you all know by now, is the leader in automated security and compliance software. If you're asking yourself, security and compliance, that sounds like a nice to have, wrong. That is an absolute must need to have almost regardless of what business your company is in. If you are selling to consumers, they care a lot about your platform being secure and compliant. If you are selling to enterprises, they care even more.
+
+Being compliant with industry standards like SOC 2, ISO 27001, or HIPAA if you're in the healthcare space, literally enables revenue for your company. What's so great about Vanta and what they've enabled for now thousands of companies and startups, is you can be any size. You can get these super important security certifications so that your company is compliant. You can enable this revenue, even if you're a very small team or an early-stage startup.
+
+Ben: Yeah, it is pretty transformational what Vanta has done for the whole industry as the market leader now and really the first company to just flip this whole thing on its head, where startups can sell to big companies because it is literally 10 times faster and cheaper than it used to be to get SOC 2–certified.
+
+David: Yes. For a limited time, Acquired listeners can get $1000 off of their Vanta subscriptions. Just go to vanta.com/acquired to get started. You can join the now over 4000 other customers strong. It's such an incredible rise that Vanta has had in these past few years.
+
+Ben: Yup. Our thanks to Vanta. What exactly made it so that the Sega Genesis advantage wasn't a durable thing that they kept winning with?
+
+David: It's a long and sad story. But basically Kalinske, Sega of America, and the parent company and the board back in Japan, massively disagree on how and when to launch the Sega Saturn, the next 32-bit console generation. That conflict and that mismanagement becomes a total disaster, and it starts a downward spiral for Sega with the failure of the Saturn. Then they follow it up really quickly with the Dreamcast. That also never really gets traction.
+
+Dreamcast was actually an awesome console and very innovative on a lot of fronts, but they just start bleeding cash. They end up exiting the hardware business. The company basically goes bankrupt and has to get acquired by a Pachinko manufacturer called Sammy. It's really sad.
+
+Ben: Brutal. They now make games for Nintendo platforms.
+
+David: The great outcome of that is that you can play Genesis games on the virtual console on the Switch, so good for consumers.
+
+Ben: This story feels abrupt, but I remember it feeling abrupt when it happens, too.
+
+David: Yup. A story for another day. But for our purposes here in the Nintendo story, the point is that Nintendo has now fallen, and they've fallen pretty hard. There were a couple of other self-inflicted Nintendo wounds around this time, too, starting in 1988. They actually get embroiled in two separate antitrust lawsuits with each of the successor Atari entities, both the hardware side and the game side.
+
+They win both of these, but this really hurts Nintendo's brand image. It comes out to the American public through this that what we know from doing part one, Nintendo, corporate wise, is not really this family-friendly, gentle, kind company.
+
+There's a great quote from Howard Lincoln in Game Over about this lawsuit. He says, “I thought to myself, you have no idea what you've taken on Atari. We are a tiger who will skin you piece by piece.” Obviously, he doesn't say that publicly, but this isn't really good for Nintendo's image. Fun side note on this, the Atari Games case is actually the start of the video games career for the then baby lawyer Mitch Lasky of Benchmark and Gamecraft Podcast fame.
+
+Ben: No way.
+
+David: Yeah, super fun. Mitch talks about that on Gamecraft. They're just so arrogant at this point in time.
+
+Ben: They're arrogant and they're getting beat up.
+
+David: Yup, and then they do even more dumb stuff. Nintendo sues Blockbuster during this time for renting their games, which is just really dumb. What's a really good marketing for games? It's renting them and letting people try them. What are American consumers really going to hate? You suing them to stop that. They also sue the maker of the Game Genie, which is one of my favorite video game artifacts from this period.
+
+Ben: The Game Genie was the thing that let you enter weird cheat codes and modify the games and stuff. This just shows another example of Nintendo's belief that they know better than anyone else what makes a game fun, and you are not to modify their game rules at all because Miyamoto will come down from the mountain and tell you what is fun or not.
+
+David: So true. Also, we would be remiss, I think, if we didn't point out too that all this was happening during the incredibly ugly and sad era of Japan bashing in the US that we talked about a little bit on the Sony episode. You and I were kids, so thankfully, we didn't really experience this.
+
+I remember people in my parents generation just saying really awful things about Japan and Japanese companies at this time. There was this real worry in the US, especially in the business community that as Japan's economy was ascending so rapidly, Japanese companies would come take over all of American media, movie studios, and stuff like that.
+
+Ben: Yup. We talked about this a lot on the Sony episode.
+
+David: This culminates for Nintendo in another well-intentioned, but really self-inflicted wound debacle, where they buy the Seattle Mariners, which really was well-intentioned. The owner at the time was going to move them to Florida. Nintendo, as a goodwill gesture for how good the people of Seattle and Washington State had been to Nintendo of America, steps in as a white knight savior to buy the Mariners and keep them in Seattle. Major League Baseball tries to blackball them from buying the team because they're a weird foreign company.
+
+Ben: It's also a company buying a team. Sports team ownership in the US is owned by individuals.
+
+David: Again, well-intentioned but probably ill-advised move on Nintendo's part at this point in time. And don't win a World Series despite having Ken Griffey Jr, Alex Rodriguez, Randy Johnson. But they do make a Super Nintendo game out of it that's pretty damn good.
+
+Anyway, by the end of the 16-bit generation, Nintendo's fall is pretty precipitous here. The magnitude of it is actually hidden (initially) because of Sega's subsequent total implosion and even bigger fall with the Saturn and then the Dreamcast, but Nintendo is really irreversibly weakened from this era.
+
+We talked about the numbers, how in a single generation, they go from 90% global market share to basically 50%. But more importantly, strategically, the net result of this is that a lot of the things that made the NES so powerful in the market are completely negated by the end of this. First and most importantly, the whole year is ahead of the competition. Hardware advantage, that's gone. They're now behind the competition.
+
+Two, they lost control of the third-party developers. They had this incredible lock on the third-party ecosystem with the NES. Now, developers like Electronic Arts and others are saying, look at Sega and look at these other new folks like Sony who are going to enter the ecosystem. I can make more money with less drama on their platforms. Screw you, Nintendo.
+
+Ben: Less drama and often better economics. They're willing to cut special deals with me that you're not. And in many cases, they have more advanced capability, so it's an easier platform to program for.
+
+David: Maybe worst of all, Nintendo's brand value just takes a huge hit in this generation. We've talked about this as we've gone along here. But to put a fine point on it, older kids and teenagers no longer play Mario, or at least they don't want to admit that they do. Sonic doesn't become the long-term replacement, but Tomb Raider does, Halo does, Grand Theft Auto does, Call of Duty does. Nintendo ironically gets trapped in the toy aisle ghetto for the next 20 years.
+
+Ben: All right, we're through the Genesis era. We've unfortunately seen basically the end of Sega, but there's another adult-oriented gaming firm that's gearing up in the shadows right now to come aggressively at Nintendo and expand the gaming market even further. And that is Sony. Take us to the PlayStation.
+
+David: The whole 16-bit generation story for Nintendo that we just told was really one of arrogance bordering on stupidity and self-inflicted wounds for Nintendo. But ultimately, they were competing against, at best, a roughly equal-footed competitor in Sega and really an underdog. Sega did not have the technological firepower that Nintendo did. It was amazing that they came proud of where they did and battled Nintendo to a draw. That's not going to happen in this generation because now, the big boys are coming.
+
+We talked about these often on Acquired of self-inflicted wounds. This may be the worst self-inflicted wound of all time, what Nintendo does here, because as we talked about on the Sony episode, the PlayStation was supposed to be the Nintendo PlayStation. Somehow, this partnership that Nintendo had been working on with their fellow Japanese technology and consumer electronics, giant Sony, to enter the CD medium and the 32-bit era. Somehow, that went from being a beautiful partnership to basically almost signing their own death warrant.
+
+At the June 1991 Consumer Electronics Show, there are big expectations. Nintendo and Sony are all set to announce the CD-ROM add-on for the Super Nintendo system to bring the CD format to Nintendo powered by Sony, the Sony and Nintendo PlayStation. They're all set to announce it. In fact, Sony does announce it at their press conference.
+
+The very next day, Nintendo turns around. In their press conference, doesn't mention it at all, and instead trumpets their major CD-ROM technology partnership with Sony's arch rival, Phillips. They betray Sony, they stabbed them in the back.
+
+Ben: So much hubris.
+
+David: So much hubris. Dumb decision to do this, period. Even dumber decision to do it this way.
+
+Ben: To let them whip in the wind publicly like that.
+
+David: They just light a fire under exactly the company that you do not want to light a fire under at this point to come and destroy you.
+
+Ben: To illustrate how much bigger Sony is, in 1994 when the Sony PlayStation would launch, they were doing $38 billion in revenue. At that point in time, Nintendo was a $4 billion revenue company. Sony is the much bigger beast here.
+
+David: Yeah. This partnership that they were working on with Sony, it's unlikely that it ever actually would have worked out because there's just too much money at stake. The video game market is too attractive, despite the fact that Sony didn't enter the portable market with the Gameman and Nintendo stuck it to them with the Gameboy. The bad blood goes way back here.
+
+The reason that Nintendo pulls out of the partnership is they couldn't come to terms on how they were going to split the royalties on software revenue, which as we talked about in part one, that's where all the economics are in the business. It's a razor and blades.
+
+Ben: Right, which is actually quite rational.
+
+David: There is not really a viable alternative history where the Nintendo PlayStation came out. There is a viable alternative history where Sony waited a little longer to enter the market and they didn't have as much burning hatred for Nintendo as Nintendo generated here.
+
+That happened at the 1991 CES. Ken Kutaragi goes off and within Sony Music builds the PlayStation franchise, and Steve Race comes over from Sega and gets involved on the American side. The PlayStation finally comes to market at the end of 1994 in Japan and 1995 in America. It's an amazing console. It's CD-based. It's got incredible power. It's much easier to develop for. They've got all of Sony's both technological and financial firepower behind it.
+
+Ben: And it's a 32-bit system on par with the Sega Saturn.
+
+David: Yes, it's a 32-bit system. It just blows away the Super Nintendo on every dimension here. Much more storage availability for games and game developers by using the CD format, much more powerful processor. It's clear that this is going to be a big investment from Sony here, and they're going to be a big player in the industry.
+
+Nintendo, again, probably in hubris, tries to compete directly with Sony here in response. They go off, and they partner up with legendary Silicon Valley company, Silicon Graphics (SGI) as we talked about on the Andreessen series back in the Acquired canon, to build the N64. They're going to leapfrog the 32-bit generation and go right to 64-bits with the N64.
+
+But, (1) it comes out too late. The 64-bit doesn't come out until 1996, after the Playstation has already had a year plus to be on the market and establish both the install base lead and the third-party developer network. (2) The N64 famously uses cartridges again instead of CDs.
+
+Ben: They have a very particular way they love doing things, which I think was partially an anti piracy thing. They cared so much about stopping piracy that they were willing to hamstring developers into needing to use a much more constrained format in the cartridge than CDs because they thought, well, CDs are just going to get pirated, and we don't have as many mechanisms to prevent that.
+
+David: Yup. Third part of this, yes, the N64 was a very powerful 64-bit system, but it required very expensive silicon graphics hardware to develop for that the PlayStation did not. Really, the whole thing is just a giant FU to third-party developers who already hate Nintendo. At this point, everybody pretty much abandons Nintendo for the Sony platform.
+
+The N 64 would sell 33 million units in its lifetime. That's about half of what the NES sold, versus the PS1's 102 million units. Nintendo just gets the floor wiped with them by Sony here, which was obviously predictable.
+
+Ben: The N64 ended up being a fantastic console to play Nintendo first-party games on. They, even more than ever before, entrenched that that is what our company is all about. Super Mario 64, Mario Kart 64, Super Smash Brothers, Starfox, these are all first-party titles. The only one that wasn't is GoldenEye, and that was Rare, which was a very close relationship with Nintendo.
+
+David: Yup, that was a second-party title. Nintendo owned, at that point in time, something like 25%–30% of Rare, and Rare developed exclusively for Nintendo platforms. That's the N64, PlayStation. In the next generation, the wheels just totally come off the bus. Sony and the PlayStation 2 goes on to become the best selling console of all time.
+
+Ben: Still, to this day, the PS2 has sold more units than any other console, including the Gameboy, including the Nintendo Switch.
+
+David: Everything. They sell 155 million PlayStation 2s. My God, did I love my PS2. Remember Pimp My Ride? People were putting PS2s in cars. That was the ultimate rapper status symbol.
+
+Ben: This was the console that I got after my Bar Mitzvah when I was finally allowed to have a real console, not just a Gameboy. It is the last console I owned, until I bought a Switch a month ago. I've had an N64 that I bought as a novelty thing to play Smash after I graduated college, but that's not a real thing. The PS2 is totally the workhorse system that I grew up on as a teenager.
+
+David: This is Sony at its absolute pinnacle in the pre-Internet era. It was their consumer electronics expertise. It was bringing DVD players to the living room of homes around the world for the first time.
+
+Ben: Right. It was a DVD player and a game system in one for the price of just a game system.
+
+David: For God's sake, there was all this FUD I remember in the media at the time when it was launched in the American media about, should we allow Japan to export these things because what if adversarial nations to the US get a hold of these and use them to build missile guidance systems? The PS2 was a literal supercomputer at the time.
+
+This is the other huge advantage that Sony had over Nintendo and anybody else (except Microsoft that we'll talk about in a second), which was they could afford to subsidize the crap out of this thing.
+
+The PlayStation 2 launched for $299 in the US. I don't actually know what the bill of materials was, but it costs way more than $299 for Sony to make every one of those. They had so much capital that they could take that loss and then make it up on the software library over time. For the high-end consoles, this is how the business works to this day between Sony and Microsoft. For Nintendo, oh, God, it's such a sad story.
+
+Ben: Their answer is the freaking GameCube.
+
+David: GameCube, the poor GameCube. I actually have really fond memories of the GameCube. This was just the epitome of Nintendo was like a kid that was really cool in middle school, then got awkward in puberty, and in high school gets stuffed in a locker.
+
+Ben: They had no idea who it was for. They made it, and it was more competitive on a specs perspective than the PS1. They did try to market it like it was for everyone, like it was a game system for kids, for adults.
+
+David: Yeah, except it looked like a lunchbox.
+
+Ben: Totally. It also was competing against the supercomputer PS2.
+
+David: Yeah. Literally, people are worried about this thing guiding nuclear missiles. What do you think the American teenager is going to want to buy, the thing that their parents are freaking out about nuclear war, or a thing that looks like their little brother's lunchbox?
+
+Ben: The PS2, it's black, it's sleek, and it's the same playbook that the Sega Genesis ran in terms of we're the grownup gaming machine. On top of all of this...
+
+David: Microsoft enters the market.
+
+Ben: Yes.
+
+David: Another company.
+
+Ben: Suddenly you have a two horse race, both of which have infinite treasuries and are subsidizing this market they really want to get into, and neither of the two horses is Nintendo.
+
+David: Yeah. Microsoft with the Xbox, Microsoft takes at least a $5 billion loss on the first generation of the Xbox. They are thrilled about that because this is their entry into the long-term strategy of getting into the video game market.
+
+Ben: And owning the living room. It was their, how do we get Microsoft in the living room?
+
+David: Even though they took that loss on the whole generation, I think that's hardware and software included. I don't think Xbox as a franchise was profitable at all for Microsoft on that first generation. They're willing to take that enormous capital loss, which is basically all of Nintendo's treasury to compete against them, and they've got Sony. Nintendo just gets rocked.
+
+Ben: On top of all of this, there was a bill coming due that Nintendo had to pay eventually, and this is where they had to pay it. They finally leave cartridges. They have zero backwards compatibility with the GameCube because they were too stubborn to adopt discs sooner. On top of the fact that they're moving away from the cartridges, they go with mini CDs.
+
+David: Mini DVDs.
+
+Ben: What on earth?
+
+David: It's like, did you learn nothing?
+
+Ben: It's not backwards compatible with any of the stuff that they've had before.
+
+David: The N64 wasn't either. Another dumb move, but that had to happen because of the Silicon Graphics technology, which was dumb in the first place.
+
+Ben: Yeah, it is truly hard to believe that Nintendo would come roaring back from this moment. This is Nintendo at their ultimate low.
+
+David: Yeah. To put some numbers on that, the GameCube sells barely over 20 million units for the generation versus the 155 million that the PlayStation 2 sells. Even the Xbox beats the GameCube. The Xbox sells 24 million units with that $5 billion plus loss that Microsoft's taking.
+
+Any other company, this is Sega's failure with the Saturn and the Dreamcast that basically bankrupts the company. This is that times 10. This is a smoking, smoking crater for Nintendo. Except unlike Sega, all the way back to the beginning of this episode, they had one very small, but very big thing that kept them alive through all of this,
+
+Ben: The gift that kept on giving.
+
+David: The Gameboy. Before doing the research for this part two, I didn't realize that Gameboy and its successors saved Nintendo's skin for 20 years.
+
+Ben: That's Gameboy, which includes the Gameboy Pocket, its Gameboy Color, its Gameboy Advance. Of course, they would launch the DS, which we'll chat about in a minute here. It is amazing that Nintendo basically had a monopoly on portable gaming. This entire time, there's the home console wars that are playing out, and there's this whole side thing that's happening where Nintendo was selling millions of units as the only credible player in handheld.
+
+David: Literally, everybody's rigging all their hands about the home console business, and that's all that anybody who's serious pays attention to. But over the adult market, Nintendo is just continuing to crush it like it's 1989 here.
+
+Remember how we said all the way back in the beginning of the episode that the Gameboy is the fourth best selling console of all time, and then we just said that PlayStation 2 is the first best selling console of all time? Numbers two and three are the DS and the Switch, and then the Gameboy Advance isn't far behind. We're going to talk about the Switch at the end of the episode, obviously, but everything that Nintendo gets wrong in the home console market, they get right in the handheld market.
+
+Ben: We could have retitled this episode as Nintendo, the handheld gaming company. That wouldn't have been far from the truth.
+
+David: That is 100% the truth. Let's go down the checklist. Global monopoly, yes. Sony does launch the PlayStation Portable.
+
+Ben: I had one.
+
+David: You have one? That's awesome. I never had one.
+
+Ben: Got stolen out of my locker in high school.
+
+David: Oh, no.
+
+Ben: Brutal.
+
+David: Brutal, which was a great device, but it was for a different market segment than the Gameboy. It never competed head to head with Gameboy.
+
+Ben: It had a really fancy screen, so it was pretty good for watching movies. It was more like a small computer. It's like an iPad. It's probably the precursor to an iPad type device.
+
+David: Totally, very Sony device.
+
+Ben: Yes. All the way to the proprietary memory sticks, very Sony.
+
+David: So, global monopoly, check. Most innovative technology, ironically also check. Thanks to Gunpei Yokoi's maxim of lateral thinking with withered technology. A huge and dominant third-party developer platform, check. Locked-in consumer software libraries with perfect backwards compatibility, check. Literally, everything that they got wrong in the home business, they get right in the handheld business.
+
+The Gameboy and Gameboy Color sell 118 million units over a 12-year run. That is the more impressive headline number. But the Gameboy Advance, which comes out in 2001, only ends up having about a three- to four-year lifespan before the DS comes out in 2004. During that time, the Gameboy Advance sells 81 million units making it the 10th best selling console of all time, despite having this incredibly short primary lifespan.
+
+The average selling price for the Gameboy Advance was about $100 a pop. That is $8 billion just in hardware revenue. Remember, Nintendo is making margin on this hardware revenue during those years. It also does 375 million units in software sales, which is almost double what the GameCube did. Literally, you're right. This episode should be titled Nintendo, the handheld gaming company.
+
+Ben: It's crazy. It just gives them so much margin of safety to screw up generation after generation over in the home console market.
+
+David: Then the DS. I was perfectly within the generational window where I missed the DS, so I didn't realize what a monster this was. What I mean in the window, I was too old to buy it as a kid and too young to buy it as an old fuddy-duddy. We'll get into that in a minute.
+
+The DS was a monster. Remember we just said the PS2 sold 155 million units, and the DS is the second best selling console of all time? It sold 154 million units, so basically neck and neck with the PS2.
+
+Let's be conservative and say that the average selling price for the DS was $100. It was actually more, but we'll be conservative. We'll say it's $100. That is $15 billion in hardware revenue for Nintendo. That's just the hardware. The DS sells almost a billion game units at an average selling price of $30. That's $30 billion in high margin software revenue.
+
+Ben: At this point, Nintendo is still dramatically a first-party publisher for their own platforms. That billion units sold, also most of that or at least half of that is them.
+
+David: It's Nintendo. Yeah, it's incredible. The DS franchise generated almost $50 billion in revenue for Nintendo.
+
+Ben: Wow, that's wild.
+
+David: How is it possible that this same company is failing so spectacularly on the home console side while simultaneously succeeding so spectacularly on the hardware side?
+
+Ben: I'll say, the portable side is the side that's paving the future for what Nintendo would become for better or for worse. They're the ones who were having this very strong opinion of, let's innovate on a gaming device and what a gaming device is. To this point, that hasn't really been Nintendo's MO. You look at the NES, the controller is what you would expect. The SNES, okay, cool. They came out with the shoulder buttons on top, the L and R, okay, that's a small step forward.
+
+David: The N64 (I think) does deserve credit, particularly Mario 64. That was the first game and game system that showed how to do 3D games. It was incredibly innovative.
+
+Ben: Totally agree. The GameCube is a very me-too console. Everything about it is like, we wish we had done some of this on the N64, but it's a little too late now. But what you're seeing in the handheld, especially in the DS is, okay, this is super innovative to have two screens. One of them is a touchscreen with the 3DS that would come later. One of them is a 3D screen.
+
+Nintendo is starting to, at least the handheld group, figure out, the way forward for us is we design innovative hardware that can inspire new types of games to be played and new types of games to be designed, especially by our first-party team in-house. That does all kinds of amazing things for them. Think about the Wii, think about the Switch switching literally, and the joy-cons and how popular that is. It also does terrible things for them, which we'll talk about for the Wii U.
+
+This is when they really discover they are unapologetically innovating on the hardware to play games, and that is what defines them. This is so much the future direction for Nintendo that in 2002, when Hiroshi Yamauchi is leaving the company and transitioning to the next CEO, Satoru Iwata, and leaving it in his hands, his final request is, "Nintendo give birth to wholly new ideas and create hardware which reflects that ideal and make software that adheres to that same standard."
+
+David: Yes, and it's not just new types of games to be made on new types of hardware. It's serving the end goal of enabling new types of people to play games. What's going on here and why the handheld business becomes such a juggernaut for Nintendo is, I think as we alluded to earlier, it starts serving two completely different markets than the PlayStation and the Xbox. Both of those other markets are (a) completely ignored by Sony and Microsoft, and (b) very, very large.
+
+The first is the kids' market. This is the bread and butter all the way back to the NES and the toy aisle. As Sony and Microsoft moved into the Grand Theft Auto era, the Call of Duty era, the Halo era, and more mature content, the Gameboy became the new home for kids. It's cheaper.
+
+If you're a parent of a four-year-old or a five-year-old, you're not going to worry about buying $100 piece of plastic for them. It's less immersive, which is actually a feature for kids because it's easier to play. Back to the Nintendo guarantee Seal of Quality brand, you can be pretty sure that little Susie and little Jimmy isn't going to be playing really violent or adult content games on your Gameboy Advance, DS, or what have you.
+
+It's really compelling for little kids and their parents. As we talked about a few minutes ago, nothing embodies this more than Pokemon. We talked about Pokemon on the NFL episode, where Pokemon is, I think in my opinion, wrongly listed as the highest grossing media franchise of all time because the NFL really should be a single media franchise and is bigger, but it doesn't matter. Pokemon is number two or number one, no matter how you want to say it. Lifetime Pokemon franchise revenues are just under $100 billion. The primary medium for it is the freaking Gameboy.
+
+Ben: Yeah. Let's take a little detour and tell the Pokemon story here because it is incredible. I think this is not a super deep story, but so cool. So many little aspects of this are one in a million chances. You mentioned a $100 billion lifetime franchise since 1996 when it came out. $60 billion of that is merch. Video games is only $35-ish billion of the $100 billion.
+
+People became such big fans of this that they tripled, quadrupled the actual video game sales in merch revenue. That's $60 billion if you compare it to the Marvel Cinematic Universe, which people think of as a big media property. The MCU is $30 billion lifetime, which is half of Pokemon's merch revenue.
+
+David: Yes. Pokemon is a masterfully managed business franchise IP. I don't know for sure the breakouts, but I believe a large portion, if not maybe even the majority of that merch segment is the trading card game all the way back to Hanafuda cards and Nintendo. Almost $50 billion cards have been sold. That's 50 billion Pokemon cards exists in the world.
+
+Ben: Wild. All right. Pokemon, 1990, Gameboy comes out. Satoshi Tajiri had started this thing called Game Freak a decade before with some of his friends. It's a fan magazine for video games. They eventually get into making their own video games. None of them really necessarily take off, certainly not to the extent of Pokemon.
+
+At Game Freak, Satoshi Tajiri is pitching internally, hey, we should make something for the Gameboy. I saw the functionality with the link connector. I loved collecting bugs as a kid, and it made me think about bugs going back and forth on the link cable between these two Gameboys. I wonder if there's something we can do around kids and bug collections, trading them, battling them, or something.
+
+He comes up with this concept, and he pitches it internally. Internally, what is it? It's four programmers.
+
+David: That started life as a video game magazine.
+
+Ben: Yes, riled up about this concept. He goes and pitches it to Nintendo. Nintendo is not excited about it, but there's one person who sees promise and says, I think we should greenlight this, and I will mentor Satoshi Tajiri. That person is Miyamoto. Suddenly, you have the very best game designer in the world seeing promise in your hair-brained concept.
+
+David: Literally, bug collecting. If you know anything about Miyamoto personally, obviously, that would resonate with him.
+
+Ben: Yes. Game Freak raises money from Creatures Inc. I think the right way to think about it is Creatures Inc is the publisher and Game Freak is the developer.
+
+David: Yeah, I think Creatures also manages the trading card game.
+
+Ben: Okay, makes sense. They then spent six years developing the game. Four people over six years with a whole bunch of setbacks, living off of basically Satoshi's dad's money because they're living in his basement and trying to survive off of him having a real job. In 1996, it was finally ready. They launch it.
+
+David: Yup. I believe it was red and green in Japan initially, and then it was red and blue in the US.
+
+Ben: You're right. The whole thing is so unbelievably frail, that when they go to translate it and make an American version, they actually need to recode the whole thing from scratch because it's spaghetti code everywhere. It does well. But unlike every other GameBoy game that peaked and started trailing off, this thing just accelerates. It just goes and goes and goes.
+
+Everyone at Nintendo is shocked. Everyone at Game Freak is shocked. Everyone at Creatures is shocked. No one expected this thing to be this successful, especially after taking six years to bring it to market with basically four crazy people.
+
+David: Yeah, it's just wild. Obviously, fast forward today, Pokemon is enormous in just about every dimension. It goes from that to selling just on video game consoles, Nintendo consoles, over half a billion lifetime units of console software sales. It's incredible.
+
+Ben: Do you know the trivia with the names of the Pokemon characters?
+
+David: No, I don't.
+
+Ben: Ash Ketchum in the Japanese version is named Satoshi after Satoshi Tajiri, the creator. Satoshi's nemesis, Gary Oak, the rival of Ash Ketchum, in the Japanese version is named Shigeru after Shigeru Miyamoto.
+
+David: That's awesome.
+
+Ben: Yeah. We'll come back to when we talked about Pokemon Go later, but it would evolve into the Pokemon Company, which is the licensing body that is 32% owned by Nintendo and the other thirds are owned by Game Freak and Creatures. I think the way they basically operate is as if they're a studio of Nintendo at this point.
+
+David: It's the most successful second-party business of all time. I don't know that for a fact, but I assume it is a fact. I can't think of anything else that is a second-party business that would be as big as Pokemon. Obviously, the kids' market is huge.
+
+Ben: I remember, this is all I did all day at recess. Any time I could bust out my Gameboy at school, this is what we were doing.
+
+David: It spans generations. I think it's all kids are doing today, all day at recess. We're old now. I have kids. Not yet at Pokemon age, sadly. Okay, that's the kids' market, obviously huge.
+
+The other market that the Gameboy/DS franchise serves for Nintendo, and this is perhaps not surprising given if you think back to the original history with Gunpei observing the businessman on the train playing with the calculator, but it's what eventually becomes the casual gaming market. People aren't thinking about it quite as that at this point in time.
+
+Ben: Nintendo totally discover/invents casual gaming.
+
+David: They 100% do. This is my dad and millions of dads around the world playing Tetris in the 80s and 90s. Nintendo codifies this and embraces it best with the DS. This is Brain Age. Brain Age were these mind-training games that were targeted at older people and grandparents.
+
+It's Nintendogs, which is Miyamoto's dog racing simulator that's really popular with women and older women, as opposed to most video games. It turns out that this category, which nobody knew existed until Nintendo accidentally found it, and then they didn't even truly embrace it until the mid 2000s, this is actually the biggest gaming category of them all.
+
+Ben: By far. And it's incredible because the modern instantiation of casual gaming, certainly the largest, is mobile, free-to-play casual gaming. Nintendo invented it before mobile and before free-to-play.
+
+David: Totally. Brain Age 1 and 2 combined sell 34 million copies on the DS. Nintendogs sells almost 25 million copies. Tetris all the way back on the Gameboy sold 35 million copies. Now most of those are bundled in the US. These are billion dollar franchises within Nintendo that nobody thought about for decades. It's crazy.
+
+We ask the question, how is Nintendo screwing up so royally on the home console side while they're succeeding so spectacularly on the handheld side? I think it's one that the kids and the casual segments were viewed as these ghettos for a long time, that no serious company and certainly nobody like Sony or Microsoft would go after and go compete with, wrongly so by the way.
+
+Ben: The people who would have competed with them were Atari and Sega. Both were basically defunct by this point. Nintendo had this lane wide open because everyone else who's trying to come into the industry is coming after the core gaming segment, the serious gaming segment, or the high ARPU (average revenue per user)—people that are buying $60 DVD discs to play.
+
+David: To the other side of how are they allowed to screw up so badly in the home side, I don't want to say it doesn't matter, but it doesn't matter. Nintendo's revenue and operating profits more or less stay flat from the NES era all the way through to the mid 2000s. Even though the home console business basically just gets doused in gasoline and lit on fire, the handheld side completely replaces it. Nintendo's always doing a solid $4–$5 billion in revenue a year, call it, and maybe half a billion to a billion dollars in operating income. There's no gun to their head.
+
+Ben: Yeah. Handheld, very good business for Nintendo. When you couple that with a generation of home console that is also a good business for Nintendo, when they absolutely knock it out of the park, define a brand new form factor, and a brand new way to play games that has mass audience, then they do the most revenue in the company's history. That's going to be the Wii, and we're going to get to that.
+
+But first, this is a great time to think another one of our favorite companies, pilot.com. As you know, this season, we are joined by Waseem Daher, the CEO of Pilot, for his tips he has for founders after starting three different companies. You have here the title of this segment, Don't accidentally steer the ship. What does that mean?
+
+Waseem: In the earliest days of building your company, when it's you and your co-founders, you can think out loud, and you have a deep personal relationship with everyone. You're peers with your fellow co-founders. But as your company grows, a funny thing happens. You become the boss. Everything you say actually becomes a strict directive, even if it's something that you just happen to casually mention without giving it much thought.
+
+That power can be really, really valuable because what that means is if your company is in trouble, you're the one person who can actually cause the company to successfully course correct. But if you're not careful, you can easily accidentally invoke that power in a way that will take you much further off course than you'd expect. If you're not careful, and you accidentally just lean on the steering wheel, whoop, all of a sudden, your team is going to reorient around the casual comments you made in a way that was completely unintentional and very thrashy for the team.
+
+David: This is one of those crazy human behavioral, organizational dynamics. Very unintentional consequences come within the team as a result of that.
+
+Waseem: The amount of things that happen because Waseem said, I thought Waseem said, or Waseem made a funny face while I was presenting, therefore he must not have liked this thing, it's wild. People are studying your cues very closely. They will do dramatically different things because they think that's what you want.
+
+David: Meanwhile, you just got a funny photo of your kids or something.
+
+Waseem: A hundred percent. Don't accidentally steer the ship is this idea that you have a lot of power, and you need to use it responsibly and appropriately. Because if you don't, there are all kinds of unintended consequences for the team.
+
+Ben: Our thanks to Pilot, the largest startup-focused accounting firm in America, providing finance, accounting, bookkeeping, and tax prep to companies of all sizes. You can click the link in the show notes or go to pilot.com/acquired and get 20% off your finance accounting and tax prep needs for your first six months. Thanks, Pilot.
+
+All right, the Wii. There's a little bit of a lead up to the Wii, which is some leadership changes. Satoru Iwata comes in and succeeds Hiroshi Yamauchi as president of Nintendo Ltd, the parent Japanese company. Right around this same time, in 2003-ish, Reggie Fils-Aime works his way up the ranks and comes in as the president of Nintendo of America.
+
+You've got this pretty awesome tag team of leadership that is ready to do something very different. The GameCube comes out. They know right away that this is a miss. They're still doing everything that you think they would do to try to occupy the time until they have something really great, but they're already foreshadowing very early. They're like, yup, yup, yup, we hear you, developers and gamers. We need to be doing something different.
+
+David: They're learning from the DS, which they just launched and became this enormous success. They're like, oh, maybe these people want to play games at home, too.
+
+Ben: Totally. There's this great keynote in 2004, where Reggie comes out on stage. He's introducing himself and he says, I'm Reggie, I'm about kicking ass, taking names, and we're about playing games. Then they have this whole keynote of the most hardcore Nintendo I've ever seen. It's almost like a dark in your face. They don't know who they are as a company.
+
+It reminds me of Luke Skywalker at the beginning of Return of the Jedi. You're really not sure which way it's going to go. It could be dark, it could be light. But what you do see is them starting to really embrace something.
+
+They start talking about the DS, and they're showing off the backwards compatibility. It looks funny, but you can put in a Gameboy game. It sticks out in a way that is clearly awkward, but they know that this is an important thing because they have this massive install base of people that had all these Gameboys, Gameboy Advance, and everything over the years. Okay, we're embracing that, check.
+
+You also see them talk about everything they can in the GameCube. But then Reggie invites Satoru Iwata out on stage in from Japan to talk about this revolution that is coming for home gaming.
+
+David: That's right. The codename for the Wii was Projekt Revolution.
+
+Ben: Yes. They really start just foreshadowing how they really want to change everything again and how it's an exciting time to be working with Nintendo as developers because everything is just about to be so different and truly a revolution. They laid this groundwork a whole year before they even announced the name Wii.
+
+David: Yeah. I think almost two years before the Wii actually comes out.
+
+Ben: I think that's right.
+
+David: The Wii is such an enormous success on basically every level, but it really is the triumph now fully across all of Nintendo as a company and all their product lines of the Gunpei Yokoi lateral thinking with withered technology maxim. Infrared motion sensing, which is what the Wiimote uses, is an incredibly novel technology to bring to video games, but it's a well-understood "withered technology." TV remotes have been using this for decades.
+
+Ben: It's a World War II technology.
+
+David: Yeah, but it works just unbelievably well. The Wii goes on to be incredibly counter-positioned to the PS3 and the Xbox 360. Again, we talked on the Sony episode about all their problems with the PS3. It was this cell-based super computer that was a total beast to program for. And here's the Wii that's underpowered and using this old technology, but opening up brand new markets.
+
+It sells over 100 million consoles coming back from barely 20 million that the GameCube sold. What a turnaround. It beats the PS3, it beats the Xbox 360, and it becomes the seventh best selling console of all time and the fourth best selling home console.
+
+The games they make for it, they make Wii Sports, and they bundle it in with the Wii. They make Wii Fit, they make Wii Play. This completely revolutionizes the market. My favorite sidebar story on this is, remember how Travis Kalanick was a world champion Wii Tennis player?
+
+Ben: Right, second best in the world or something.
+
+David: Which later got debunked because it turns out there were no global leaderboards. I think he was just really obsessed with Wii Tennis or something like that.
+
+Ben: He was probably really good at it and just told people he was second best in the world.
+
+David: Totally. This is part of the market that the Wii enables, which is Travis Kalanick doesn't have time to go spend thousands of hours playing Call of Duty, but he will go play Wii Tennis and he'll get really into it.
+
+Ben: Totally. They intentionally make the controller look like a TV remote because they just want people to call it the remote. They don't want people to be intimidated by it. It's like, look, if you can use a TV, you can use a Wii.
+
+David: Totally, the Wiimote.
+
+Ben: They also made it smaller. I think the mandate was that it's the size of three DVD boxes so that it's not this big, intimidating…
+
+David: Ah yes, the console itself.
+
+Ben: Exactly. This is where we should talk a little bit about the different segments of games because it's starting to become important. I think this will help us understand Nintendo today. The Wii really starts to lay the groundwork for understanding what their position is today.
+
+We have three people to thank for conversations that we had leading up to this. Nick Fajt from Rec Room, longtime friend of the show, and some games industry veterans, the creators of Xbox Live Arcade, John David and Greg Canessa, for going down memory lane with us and helping us to understand the way that this landscape looks.
+
+There are many segments of games, but it's worth breaking it down to three. There's casual, mid-core in the middle, and then there's a core gaming audience. Casual games are what we've been talking about that have a broad appeal that you can pick it up and play. It's a quick in and out. It takes you minutes to understand, but hours to master.
+
+David: It's Tetris, it's Brain Age, it's Wii Tennis.
+
+Ben: Exactly. In the modern casual world, the most common type of monetization model is free to play. This is the thing that's really taken off on mobile. You see Candy Crush, that brainless thing that you could listen to a podcast while you're playing this type of game. The revenue per user per day, if you're really good in this thing, it's 20¢–40¢. That's the way to think about the monetization potential. If you're not good at it, it can be 1¢–5¢.
+
+There are mid-core games, which are games where you pick up where you left off. That's how I think about it. Not core games like World of Warcraft, but a version of that where they're taking these core game mechanics, and you're making them more approachable. They take some time to learn, but once you learn them, you really love the game. Zelda: Breath of the Wild is a really good example of this.
+
+When we are talking about ARPDAU (average revenue per daily active user), that metric we mentioned before, it's more like a dollar in terms of monetization potential. Smaller market than casual gaming, but a dollar per person. That's definitely a market worth going after, a dollar per person per day.
+
+Once you get into the core gaming segment, I mentioned the World of Warcraft, but this is really anything, where you're training yourself even to play it at all, and your grandma can't pick it up and start playing.
+
+David: League of Legends.
+
+Ben: Right. The revenue per user on that is through the roof, but it's a much smaller audience. I wanted to paint this picture to try to help us understand where Nintendo decides to start playing from here. They've typically been a mid-core company with their titles. You think of the Zelda, the Super Mario, Odyssey. With some casual games, you think about Super Smash Brothers or Mario Kart, your button mashers, those games lean more casual.
+
+What they did with the Wii, which in some ways was shooting themselves in the foot—and David, you can push back on this if you disagree—is that they started walking away from their mid-core characters that really defined who Nintendo is and launched a casual gaming home console. The thing that was a hit for the Wii was Wii Sports. It's these lifestyle games. The things that I don't even ever remember playing on the Wii are Mario and Zelda. That's not what that platform was for.
+
+David: Yes. I would agree with exactly how you characterize that. I also agree that by doing this Nintendo shot themselves in the foot, but I don't know that you can blame them necessarily. I think it actually was completely brilliant at the time. It completely revitalizes the company. With the Wii and its success, Nintendo's revenue almost quadrupled from the $5 billion-ish range to just under $20 billion in 2009.
+
+Ben: All time high, even to date. Even including all the Switch success, that was still the all time high.
+
+David: Operating income goes through the roof to over $5 billion. They're killing it. This is an unbelievable revolution, as they would have said. Unfortunately, though, and this is where you can debate whether it was possible to see this coming or not, right after the Wii launches and brings this revolution, that's 2006–2007 timeframe, the App Store's launched on mobile late 2008 into 2009, that just sucks all of this away.
+
+This is the problem, that shooting themselves in the foot. They were so vulnerable to this in a way that Microsoft and Sony weren't because the core gaming market, the hardware, and the platforms that Microsoft and Sony were putting out, weren't threatened by mobile. Mobile didn't take share from them, but it took all of Nintendo's share.
+
+Ben: Right, because the Wii was not the Mario console. The Wii was the casual gaming console. The greatest casual gaming experience in the world launched and fell right into everybody's pocket a few years later that swept out their entire current market away from them, and then it took them a decade to basically go back to their roots with the Switch and figure out how to revitalize all the mid-core Nintendo IP on to a platform that was dedicated and best in class for that use.
+
+David: This is the really sad part of the story. They just get rugged here.
+
+Ben: And you could see it in the stock price. It is nuts. When you look at when Iwata came in and took over in 2002—we talked about the Wii was released in 2005—in the four years from October of 2003 to October of 2007, Nintendo's market cap nearly 8X'd from $9 billion to $70 billion. They were a $70 billion market cap company, but very briefly. I think their market cap was even bigger than Sony's for that year. But by 2012, it was all the way back down below where it even started to $8 billion.
+
+David: The impact of mobile gets felt pretty much immediately. In 2009, which is just the third full year that the Wii is on the market, and when it should be hitting the fat part of its lifecycle at its prime, that's when the App Store has really hit. Wii sales declined 20% that year, when they should be accelerating. Then they fall roughly another 30% each of the next two years.
+
+Software sales, which are more important, declined even more. That's on the home console side and the Wii, which is maybe a little more insulated from mobile. Meanwhile, the DS, which was this juggernaut is just getting rocked.
+
+Ben: Yeah, it's weird. In some ways, Nintendo called it because they realized that casual gaming was going to be a huge market. They realized that portable gaming was going to be a huge market, but they did not have any strategy around mobile.
+
+David: Yes, it was the perfect marriage. Nintendo launches the 3DS to try and differentiate in versus smartphones and having the 3D screen. They launched that in 2011, but sales stall out pretty much immediately. I'd forgotten this about the 3DS.
+
+They have to do a major price cut on it within six months of launch. They dropped the price 30% less than six months after the console launches. That is bad. That does stem the tide for a bit. 3DS sales do grow for the next couple of years, but then the smartphone juggernaut is just too big. In 2013, 2014, 2015, 3DS sales just fall off a cliff.
+
+Ben: This saving grace that they had their entire life or from 1990 onward of no matter how much we screw up, our handheld gaming's system will protect us, shields are gone.
+
+David: Totally. Now, Nintendo is in a Sega, post-Saturn, and Dreamcast–type situation. There is an existential crisis happening. In Nintendo's fiscal year 2012, they report their first ever annual loss. This is a company that even during the crappy years was making half a billion to a billion dollars in operating income. It's just coming off the Wii year bonanzas, where they're making $5 billion in operating income. All of a sudden, they're bleeding cash.
+
+It gets doubly bad because the only way out of this for them if they're going to keep their hardware strategy is to rush out a new console, which means they have to invest capital in R&D and in marketing for launching a new console. They try and stem the losses both on handheld and mobile, it's rough. They rush out the 3DS, they rush out the Wii U as the successor to the Wii. The Wii U is a piece of garbage. The thing sucked.
+
+Ben: There are so many insights with the Wii U that are correct.
+
+David: Directionally correct, let's put it that way.
+
+Ben: People want touchscreens. Okay, you're right. Phones and iPads are really starting to take the market by storm. Having a controller for your home console that has a little touchscreen on it, okay, I can see that, but God is this convoluted. You basically handed people what looks like a portable console, this controller with a screen on it.
+
+David: But it's got to be in range of the console.
+
+Ben: Right, they can't actually use it as that. They have to use it as a controller for the console. There are all sorts of innovative things they can do, that this is where the maxim of Nintendo really comes into play, where they're obsessed with designing hardware that enables new game experiences and then designing games to work with that hardware. They still, to this point in time, have never shipped a game on any hardware where they did not design the controller.
+
+They're starting to make all these very clever use case games for this very strange piece of hardware, where there are accelerometers in the controller so you can tilt it back and forth, or you can put it down on the table and you can write on it, or you can be playing chess and you can flip it sideways. It's weird watching the commercials for this because you're like, wow, this could do everything. This is a very innovative console, but a bunch of things were wrong with it, including the fact that it was rushed to market, wildly misnamed. It's sounds like it's an accessory for the Wii, which it wasn't. It was a full new generation.
+
+David: Yeah, it was bad. The Wii U just really compounds the gravity of the situation for Nintendo. It only sells 13 million units in its entire lifetime. Remember, the GameCube was bad selling over 20 million? It's Nintendo's worst selling console ever, save for the Virtual Boy, which was worse.
+
+Ben: These losses continued year after year after year. I think most of the years from 2011–2017, 2018, we're in the red.
+
+David: Yeah. As that happens, shareholders and shareholder activists start demanding that Nintendo go the way of Sega and get out of the hardware business. There's this really, really obvious value maximizing, at least in the short term move, that Nintendo could do, which is take their IP and publish it on smartphones.
+
+Ben: This argument makes a lot of sense. What does this company have anymore? They do have IP that is super valuable, that you should put everywhere, but nobody likes their last console. They can't prove that they've been able to do two consoles in a row. They can't prove that they've been able to leverage their user base into buying the next console literally ever.
+
+They can't prove that there's any purpose to everything they learned from the Wii because all that great casual stuff that they learned for the Wii is now happening on smartphones, which they have no play in. It would be very reasonable to be like, you really need to stop making hardware. You have this unbelievable asset, which is some of the world's most valuable IP.
+
+David: Yes. There's a legendary story, which maybe apocryphal and after some more research, I think, actually is apocryphal, but the spirit of it is absolutely on point. Mitch and Blake tell this over on the Gamecraft podcast. At the 2013 shareholder meeting, Iwata is up on stage. He's taking questions from the audience.
+
+He gets in an argument with a shareholder, not even an institutional shareholder, just an individual shareholder who's there, who says, hey, my daughter loves playing games on her smartphone, and she loves playing Nintendo games. Why are there no Nintendo games on smartphones? Iwata's mortal honor is offended. He jumps off stage and punches the shareholder in the face.
+
+Ben: What, really?
+
+David: I don't think this really actually happened. I think it's an urban legend, but it very well could have because Nintendo and Iwata were just so stubborn through all of this. They're like, no, the Wii U, it's the future. Please buy our console.
+
+Ben: They're philosophically opposed to mobile in a number of ways. They like controlling the whole experience. They did not design the smartphone controller, therefore they don't feel that they can make great games for it, which is pretty stupid, but it's how they feel. They also philosophically hate the business model that's doing well on mobile, which is free to play. They think it's like the devil. They think it is an immoral thing to do.
+
+David: It's so ironic, given Nintendo's history.
+
+Ben: Right? You talk to video game veterans, and they do say, we are very grateful that Nintendo exists in the industry, because otherwise it would literally just become this detritus of capitalism.
+
+David: I totally sympathize with this point of view. Iwata says—this is an actual quote from him around the time—"Making smartphone games is absolutely not under consideration. If we did this, Nintendo would cease to be Nintendo. Having a hardware development team in-house is a major strength. It's the duty of management to make use of those strengths. It probably would be the correct decision in the sense that the moment we started to release games on smartphones, we'd make profits."
+
+Remember, they're not making profits at this point in time. "However, I believe my responsibility is not to short term profits, but to Nintendo's mid- and long- term competitive strength." He's absolutely right, and history proves him right here. From a shareholder perspective at the time, people are like, you got to go, we've had enough.
+
+Ben: The funny thing about this survivorship bias is if history didn't prove him right, in the long-term, we also wouldn't be doing this episode. Somebody who could have had that same opinion, then got in the way of Sega, and today we will be talking to you about the Xbox or some other episode.
+
+David: Totally. Nintendo stock price from the highs after the Wii declines over 80%. It's brutal. I think there's probably a decent chance that Iwata would have been forced out. Unfortunately and completely tragically, he dies way, way, way too young and unexpectedly of cancer in 2015.
+
+Ben: Age 55.
+
+David: Age 55. It's just terrible. It's also really sad because he, Miyamoto, and other Nintendo executives, finally do realize that they have to change things. Just like Tom and Sega had the four-point plan, they come up secretly and internally around this time in 2013 with an internal three-point plan for Nintendo, and it is everything that they need to do.
+
+It starts with point one, we need to stop fighting this smartphone battle and embrace it, but we're going to embrace it in a Nintendo way. This is super smart. We're going to build a new standalone business unit. We're going to do it in partnership with the Japanese mobile company, DNA, to co-develop smartphone games using Nintendo IP, but we're not going to fully transition the business to smartphone games like the investors want us to. We're going to use this as a way to unlock our IP and spread it out more broadly to the rest of the world like we've seen Pokemon has done.
+
+The Pokemon IP is applicable so far beyond the Gameboy games. All of the revenue and activity from that drives sales back to the Gameboy games and to the Gameboy platform. We can and should be doing that same thing with all of our IP with Mario, with Zelda, et cetera.
+
+Speaking of, if we want to do that, right just like we see Pokemon doing it, it's not just that we want to do mobile games, we also want to do theme parks. We want to do movies. We want to capitalize on nostalgia because now, just like you and me, Ben, the core Nintendo customers from the old days have gotten old enough that we have nostalgia for the NES, the SNES, the N64. They start releasing NES, SNES classic editions like rereleasing the home consoles with HDMI ports. This is genius. They make tons of money from this.
+
+They sign a partnership with Universal Studios to start building Super Nintendo Worlds, first in Japan and then in Hollywood, which just opened. It's coming to Florida, it's coming to Singapore. Really, these points one and two, embracing smartphones, embracing the IP strategy is really to buy time so that they can rethink the hardware strategy and reimagine what the future of Nintendo is going to be.
+
+I think Iwata is totally right. For better or worse, Nintendo is not Nintendo if they exit the hardware business. Sega is a shell of its former self. Nintendo probably would ultimately have gone the same way if they had exited the hardware business at this point in time.
+
+Ben: All right. In 2013, they start laying the groundwork for the Switch, for leveraging the IP, to the movie coming out right now, theme parks, and of course, mobile.
+
+David: That takes us to the summer of 2016. A big surprise announcement, the very first smartphone game with quasi Nintendo IP. It's not through their partnership with DNA. It's not Mario, it's not Zelda, it's Pokemon and Pokemon GO. This is the perfect everything, mobile game, a way for Nintendo to dip its foot in the water. It's just amazing. Pokemon GO is one of those things that you just cannot make up what happens here.
+
+Ben: The craziest thing is I had been playing Ingress for the previous 18 months. When Pokemon GO came out, I was like, wait, this is just Ingress with Pokemon in it. This is very strange.
+
+David: Do you know how the Nintendo-Pokemon-Google relationship starts?
+
+Ben: No.
+
+David: Niantic, which developed Pokemon GO in collaboration with The Pokemon Company—Nintendo was one of the main shareholders of The Pokemon Company—was a spin out from Google. Niantic was the team that, within Google, had made the mobile location-based game, Ingress, that Ben was just talking about, which was super geeky and really fun, but it was basically Pokemon GO without the Pokemon.
+
+Ben: Yeah, it was a test of the infrastructure and to develop the right game mechanics. The IP that it was using was an old sci-fi novel, but it wasn't exactly one-to-one.
+
+David: That's right. The spark of this relationship actually goes back to 2014, the 2014 April Fool's joke. Google loves April Fool's jokes. I had forgotten about this until I read about it in the research, and then I was like, oh, yeah, which was the Google Maps Pokemon challenge.
+
+On April Fool's Day 2014, Google released a video saying they were recruiting for a new position within Google that was the Pokemaster or something like that, the Google Pokemaster. It was a competition to get this job. The way you could compete was by capturing Pokemon on Google Maps. They had like a video for it and all this stuff, and it was hilarious.
+
+What I don't know and wasn't able to find was, were they already starting to think about Pokemon GO and building a game together? Very clearly, that work that went into putting Pokemon showing up on random spots on Google Maps was exactly the work that needed to go into building Pokemon GO, but this was a total under wraps surprise. Nobody outside of Google, The Pokemon Company, and Nintendo knew that this was coming. Then one day in the summer of 2016, it hits, and it's just a cultural touchstone. I'm sure almost everybody listening to this episode remembers this.
+
+Ben: I was convinced AR had arrived. I was like, oh, we found the AR use case, the world will never be the same.
+
+David: Every venture capitalist was running around trying to find AR and VR companies. Niantic spins out and then does raise a boatload of venture capital from all the big VCs. Pokemon GO itself gets over 500 million downloads just in 2016, which is mind-boggling. A lot of those folks churn, but it becomes a real viable ongoing smartphone game.
+
+Ben: But the ones who don't churn spend.
+
+David: They love it. It has well over 100 million ongoing monthly active users. It now earns about a billion dollars every year. It's one of the top mobile games out there, period. Investors in Nintendo gets so excited about this.
+
+In particular, what this means is a harbinger for other Nintendo IP coming to mobile, that within two weeks of Pokemon GO’s release, the Nintendo stock price doubles from (call it) $15 billion to a $30 billion market cap, and everybody's just going wild like, this is it, Nintendo is finally going to embrace smartphones. The reality is maybe perhaps in part because of Pokemon GO's success and the breathing room that it buys them. They don't.
+
+Ben: The funny thing is that this game is not released by The Pokemon Company that Nintendo has 32% ownership in. This game is released by Niantic who has secured a license to the IP from The Pokemon Company. To your point around the stock spiking, Nintendo has to issue a press release telling investors mid-quarter, hey, you all are real excited. We do not expect this to impact our revenue meaningfully for the quarter. This was a license.
+
+David: What's interesting is I think the stock does drop back a little bit when they issued that press release, but not that much. People are still really excited. They're like, this is the great unlocking of value, it's happening.
+
+Ben: To really underscore this, there are a few interesting nuances here. To this day, only 3% of Nintendo's revenue is the entire basket of mobile, licensing, theme parks, and movies. They clump mobile in with all that. They don't look at games like Pokemon GO or what we'll talk about in a minute, Super Mario Run, as a Nintendo game. They look at this as, oh, we've licensed our IP for someone else to do something with. The fact that it's a game, even though that sounds like what we do as a company in our core business, oh, no, no, no, this is different. This is a license.
+
+David: It's actually part of the IP strategy, and it's actually marketing.
+
+Ben: Right. It is only 3% of their revenue. All of this Pokemon GO stuff that happened is like, okay, a lot of people got reminded what Pokemon is again. But Niantic makes a bunch of money from that. Nintendo doesn't make a bunch of money from that.
+
+David: I suspect The Pokemon Company made and continues to make a bunch of money from Pokemon GO, not quite as much as Niantic.
+
+Ben: But a bunch is relative. It's not impactful to Nintendo's business.
+
+David: It's not transformative, certainly not to Nintendo.
+
+Ben: Also, it's worth pointing out. If The Pokemon Company were the developer of this game, there's no way it would have the attractive business model that it has. It is a whale-driven, microtransaction game that Nintendo is philosophically opposed to. In the same way that Apple gets to claim, we're the privacy company, but then get paid tens of billions of dollars by Google, Nintendo gets to claim like, oh, we don't touch these dirty microtransactions, and yet we're selling a license to a company that is making billions of dollars from doing that.
+
+David: Pokemon GO is the first quasi Nintendo IP to hit smartphones. Later that year, in the fall of 2016, they do come out with the first game in the DNA partnership, Super Mario Run and a whole bunch of people download it. It doesn't end up becoming a big ongoing game like Pokemon GO.
+
+Ben: Miyamoto gets up on stage in an Apple Keynote. which was really cool to see because these companies are spiritually aligned, although one ate the other's lunch. Nintendo's throwing stones at Apple saying that their business model is a moral evil. You've got Miyamoto announcing on stage that they're going to bring Mario to the iPhone, which, to me watching it, I remember thinking like, okay, they have no strategy. This is him waving their arms around and being like, oh, my God, the Wii U is so bad, we don't know what to do.
+
+David: Don't look over here, look over there.
+
+Ben: I think even in the keynote, they say, we don't know what the price is going to be yet. but it's not going to be in-app purchases. You're going to buy it once upfront because that's how we believe games should be bought, which, of course, is him saying, we're just not going to make any money on this, because you're not going to sell a $60, $70, $80 skew on the iPhone, you're going to sell a $5 skew on the iPhone.
+
+The game itself is effectively the original Super Mario. But since Nintendo doesn't own the controller, it's a little bit of a weird mechanic. You're tapping on the screen to make him jump, and you're holding it to make him jump higher.
+
+David: Yeah, it's a really weird baby between the original Super Mario and a runner game, which runner games are somewhat popular niche genre on mobile.
+
+Ben: Right, because you're not controlling the speed at which you're running, you're just going. The funniest thing about it is, it's so Nintendo in all these different ways. They're super, super anti piracy. Even though they're making basically no money on this thing, they won't let you play it without an internet connection because they're so afraid of people jailbreaking the iPhone that you can't play it on a plane or in the subway.
+
+David: That's so Nintendo.
+
+Ben: Sometimes they cut off their entire body to spite their face.
+
+David: I had forgotten that. That's ridiculous.
+
+Ben: Matthew Ball puts it the very best. He has a great piece written in 2020 that we will link in the show notes, which is basically, Here's why Nintendo looks a lot like Apple and Disney, but isn't actually as attractive of a business as Apple and Disney, is the crux of the piece.
+
+There's this paragraph that says, “2016 Super Mario Run is one of the 10 most downloaded mobile games of all time with over 700 million installs. However, it is achieved only $75 million in gross revenue after four years, according to Sensor Tower. These downloads are a testament to the power of Nintendo's IP, but 11¢ per user and less than $100 million in total top line likely makes Super Mario Run the worst performing game with nine figure installs by far.”
+
+David: On the one hand, point taken. On the other hand, this is explicitly not Nintendo's strategy, which brings us to the announcement at the end of 2016 and in the launch in March of 2017 of the Switch. The Switch is so interesting. It obviously goes on to become this enormous success. I love mine. I've played the hell out of it.
+
+Ben: 123 million sold in the first six years.
+
+David: Yup, it's the first console you bought since the PS2, is that right?
+
+Ben: Yeah. I guess I had a PSP, but I didn't consider that a console.
+
+David: Exactly. It is this amazing success. But when it's announced, so many people, certainly the investor community—and I raise my hand and count myself among this—thought it was a terrible idea. It was not obvious, at least to Wall Street, that this was the savior that it ended up being.
+
+When they announce it, Nintendo stock drops 7%, and then it keeps falling until lunch. Remember, everybody's all excited about like, oh, Nintendo is finally coming to mobile. There's a great book case narrative for Nintendo out there. Then they drop the Switch, and people are like, what the hell is this?
+
+Ben: We're making a thing that's like a phone, but bigger, and you need to also carry it with you, so now you need a second device.
+
+David: It's an underpowered home console combined with a big portable console that doesn't fit in your pocket.
+
+Ben: Even though you do have a console that does fit in your pocket.
+
+David: Right, you have better versions of both of those out there on the market. This will be really fun for us to talk about because I think there are two things going on here. I think Nintendo saw both of them. The one that they certainly saw, Ben, is what you're talking about earlier, of the mid-core market being underserved at that point in time. In particular, the mid-core market for Nintendo IP.
+
+There wasn't a really good platform to play Nintendo or otherwise, mid-core type games out there. The switch was the perfect platform to do it. That certainly was one thing that the market didn't appreciate that Nintendo saw.
+
+I think there was also another dynamic here, or at least this is my experience with the Switch. While the dynamics in the mobile gaming industry, on the one hand were very different than the Atari 1983 video game crash in that, obviously, that industry still makes tons of money. It's by far the biggest segment of the gaming industry. I think it's $120 billion annual revenue industry in and of itself now, mobile gaming.
+
+On the other hand, some of the same problems are definitely there. It's filled with shovelware crap. Even the games that make the most money are crap. This is why Nintendo is philosophically opposed to it, and so many people appreciate their point of view.
+
+When the Switch launches, it's actually a throwback to the NES’ Seal of Quality. A lot of people, certainly myself included, I would play more casual, certainly mid-core, but also more casual mobile games if I had a Seal of Quality, knowing that this wasn't crap, this wasn't going to try and drain my credit card of hundreds, if not thousands of dollars and treat me like a whale, and that's what the Switch becomes. Even despite all the success of mobile, there was this room for quality.
+
+Ben: You're right that quality is the way to describe it. It's not first-party, it's not third-party, it's quality. Nintendo is going to basically have a pretty low volume throughput of third-party games. The way that they designed the device forces you to custom-make games for it because it's not great for porting other games.
+
+It flies in the face of everything else happening in the industry, which is, we want our game available on the most endpoints because it's going to be some kind of open world, services-oriented, events-based game. You want to be able to play that with all your friends no matter what devices they're on. What Nintendo's saying is, we're going to make a device so weird that it's basically a smartphone, but without Bluetooth.
+
+David: It does have Bluetooth, it's just neutered, and you can't use headphones.
+
+Ben: Yeah, right. What the heck? I can't use my Bluetooth headphones with it? It's weird. Also, it is going to have a 2013-2014–era Tegra chip.
+
+David: The NVIDIA Tegra finally finds its use case.
+
+Ben: It's so strange. What it means is, it's a great first-party device because Nintendo is not making their games for any other platform, so they're happy to custom write for this weird thing. Indie developers, at first, probably won't write games for it because there isn't an audience. But over time, if it gets an install base, it's great as an indie developer-to-develop a really high quality game purpose-driven for it. But if you're developing Call of Duty, it's pretty unclear that this is a great device for you.
+
+David: I think we need two separate out to different parts of the market. On the one hand, when you're talking about Call of Duty, when you're talking about fittingly, Madden—Madden Football is not on the Switch still to this day—stuff like that, the very, very high-end core gaming market, what you're saying is absolutely correct. There is no Call of Duty for Switch, pretty sure.
+
+Ben: It actually is going to be part of the divestiture.
+
+David: I love it.
+
+Ben: Microsoft has announced that Activision will do it if they're acquired.
+
+David: Right, but only as a concession to the DOJ.
+
+Ben: And no consumers actually want.
+
+David: I think that's 100% rate on core games. But indie games, the Switch becomes this very vibrant, flourishing platform. Yes, you have to do some work to port it over, but it's actually not quite as hard as you're making it out to be, especially if you originally developed the game in Unreal, in Unity, for the PC, or for Steam, because the Switch runs on the Tegra, on NVIDIA's system on a chip. You got to do some stuff with the controls to make it work, but you can port these games over.
+
+Games like Hades is a great example, or Undertale, or Celeste. These indie games that I played and I loved on my Switch. The Switch is by far the best platform for games like this because they harken back to the old 16-bit Nintendo era. For the first time in generations, Nintendo has actually become a really viable third-party platform for the right type of developer. It tends to skew more indie.
+
+We talked to folks in preparation for this episode, who have games that even tend to be more mobile smartphone–based games that are actively working trying to get them onto the Switch, because of this quality dynamic and that players on the Switch are much more likely to monetize, even though it's a smaller audience base.
+
+Ben: People on the Switch will buy 20-plus $60 games over the life of owning their Switch. This is not a casual ARPDAU-type audience. This is a high monetizing, high-intent audience.
+
+David: Finally, I think there is another element that we really got to give Nintendo credit for with the Switch that I and very few other people saw the potential in when they announced it, which is that the use case that they marketed, the primary use case of seamless playing between on-the-go and at home is actually pretty compelling.
+
+Legendary game director and designer, Hideo Kojima of the Metal Gear Solid franchise, was one of the few people, pre-launch, that publicly really recognized this. He has a quote. He says, "The fact that you can play something at home and take it outside, this is the gamers' dream. The Switch is an evolution of that." Before the switch, you really couldn't do this. Your same save stay, your same progress, your same everything.
+
+Ben: Exactly right. The other thing they got right with the Switch, which has been huge for them, both as a business and doesn't unlock for player dynamics, is they finally got online. This is a thing where people have been saying, oh, and Nintendo is always five years behind. I think Nintendo was 10 years behind in online play. This was literally their third attempt.
+
+They now finally have this thing called Nintendo Switch online. There are two versions of it. There's a $20 and a $60. But they finally have some semblance of an Xbox Live–type service that works.
+
+Before, I think they had the Nintendo Wi-Fi connection in the DS and Wii era, and that had some really weird sub things inside of it, the Wii Shop Channel, DSI shop, and they had this whole Friend Codes thing. They deprecated all of that, and they launched the Nintendo Network. Inside of that, they had the Nintendo eShop, and the eShop eventually got folded into Nintendo Switch online when that launched, but it has taken a long time and some pretty half-toe-in-the-water technology bets to get here.
+
+Famously, they launched Switch online. They said, it's great because it's peer-to-peer. Everyone was like, that's terrible for us. That's good for you because you don't have to build data centers, but it's slow and buggy. What do you mean it's peer to peer? Xbox Live has existed for eight years.
+
+David: Xbox Live has existed for 18 years.
+
+Ben: It is wild. They finally have their act together with that. I have never bought a physical game for my Switch. I've only bought them digitally. The difference between the $20 and the $60 is there are a bunch of differences, but one of them is like you can get access to the N64 emulator if you do the $60 online or the $20 a year online.
+
+David: I think you get the Mario Kart DLC courses if you buy the $60 version.
+
+Ben: Yes, you do. The functionality is good, and now there are compelling reasons to subscribe to Nintendo, which is a pretty big unlock in their business. If you had told me in 2016, before they launched the Switch, that at some point I'd be paying an auto recurring subscription to Nintendo for services I may or may not be using at any given time to play on a dedicated Nintendo device, at that point in history, I would have told you, you are completely insane.
+
+David: The Switch really is just an incredible comeback for Nintendo. While the Wii was also an incredible comeback, it was one that they had clear line of sight into from their experience in the handheld business. Of course, creativity was involved in making it. But if we can build this, we're pretty sure they will come.
+
+The Switch, I don't know if it was luck, genius, or just what, but this was the first time they were the true underdogs. They had all the deck stacked against them, and they proved everybody wrong.
+
+Ben: Right. The big question is, do they have to keep doing this and betting the farm on inventing a brand new form factor half the time they fail on, or have they now discovered something that is a durable platform for the future that they can keep building on top of, leverage the existing base? How freaking attractive is it now that they have 123 million people who have bought these things for developers? Developers finally want to be in business with Nintendo again.
+
+David: Especially indies, but the major third parties too. Okay, we're going to have a very robust analysis discussion of this because Nintendo is literally right at the crossroads again of what to do about the next generation.
+
+Ben: The Harvard Business School should be surrounding Nintendo and doing a seance. It is the most incredible business strategy microcosm to learn how they're going to handle this unique position that they're in right now.
+
+David: Forget Harvard Business School. This is why we're here. Acquired is on the scene.
+
+Ben: All right, let's finish out the story and then we'll go into analysis.
+
+David: Once they launched the Switch, it is an immediate hit. Nintendo plans an initial 2 million unit worldwide production run. Remember, the Wii U was such a flop. They only sold 13 million units in the whole lifetime. Two million units, it sells out immediately.
+
+They have to airship more units from their production lines to retailers across the world at a cost of $45 per unit just to get more in the hands of demand out there, which was a brilliant move that the old Nintendo never would have done. It's worth eating that cost to serve demand and build out the install base. What a difference.
+
+Ben: Yup. Although I wonder if they still have some of that in them. It's the sixth year of the Switch. I was backed up to a month to get one online. I drove to a Target and got the last one in person. I think there are still some games going on over there for limiting supply.
+
+David: Yeah. They can probably use the excuse of, oh, chip shortage, but there's no chip shortage on the Tegra from 2014. It's a huge success.
+
+To your point about the mid-core market, it launches with Zelda: Breath of the Wild, which originally was supposed to be a Wii U game. It launches also on the Wii U. It's forward and backward compatible to the Switch.
+
+Switch copies of Breath of the Wild sell at literally a one to one rate as the console itself for 100% attach rate. This has never before happened in the history of a non-bundled game. You can't separate out Breath of the Wild from the Switch's initial success in that first year or two. It was a generational game that deserves its own episode on a different podcast, and I'm sure it has many out there.
+
+Ben: This is one, where when you talk to game industry insiders, a hundred of people are like, this game is just so beautifully designed. A quote that I got from someone I was chatting with is, "When Breath of the Wild 2 comes out next month, the whole industry will stop, will not go to work, and will just play Tears of the Kingdom.”
+
+David: Similarly, though, to the Switch, I think there are some questions of like, what could Tears of the Kingdom do to top Breath of the Wild? We'll see. The Switch sells over 15 million units in the first year, so more than the Wii U just in the first year.
+
+It goes on. As you say, they sell 123 million units so far. It's still on the market. I think it's unlikely it will pass the DS and the PS2, but it depends how long Nintendo waits to launch the successor and what form the successor takes.
+
+Ben: My money is on Switch 2 in the next six months.
+
+David: I think that is where the betting line is, but we will discuss. On the back of all this, Nintendo revenue just explodes from less than $5 billion at the end of the Wii U era, immediately in the next year to $10 billion after the switch launches, then $12 billion up to $16 billion during 2021 in the pandemic. The stock goes up another 50%.
+
+As switch sales now have started to slow that we're in the sixth year of the console lifecycle, the stock has fallen again a little bit, but they're still doing $5–$6 billion in annual operating income. It's still a $50 billion market cap. Nintendo today is so far removed from Nintendo of the Wii U era.
+
+And then, here's the IP. We are literally recording this the day before the Super Mario Brothers movie comes out.
+
+Ben: Which is supposed to actually be pretty good.
+
+David: I suppose it to be pretty good. I want to go see it. They've got Chris Pratt, they've got huge stars. This is a departure for Nintendo now they did do a Super Mario Brothers movie.
+
+Ben: Fool me once, Nintendo.
+
+David: Yeah, we won't talk about that one. That was a disaster back in the day.
+
+Ben: Matthew Ball points out that the 1993—I think that's when it was—movie was so bad that it set the whole industry back by a decade for licensing video game IP for movies.
+
+David: I totally believe that because, obviously, as we see here now in the mid-2020s, video game IP is fantastic for movies and TV shows. But it was because of that movie (I think) in large part that people shied away from it.
+
+The first Super Nintendo World opened at Universal Studios Japan in 2021. The first American one opened at Universal Studios Hollywood just a couple of months ago. By all accounts, they're both pretty awesome. Two more are opening in 2025 in Singapore and Orlando. Pokemon GO continues to crush it on the IP strategy.
+
+Ben: You're talking about a lot of things right now that don't seem to make much money from Nintendo. I just want to point out, it is getting their characters out there, that's all well and good, maybe they'll start making a bunch of money in the future, but so far, non-material to the top line.
+
+David: I think that's the point. All right, let's transition to analysis and talk about this first.
+
+Ben: Yeah. What is the end game? Is the end game to get people to fall in love with the characters all over again on a continuous basis so that then they go buy more Switch games and Switch 2 stuff?
+
+David: I think yes with the additional nuance that I'm no brand IP strategist here, but I think the additional goal is generational management that, frankly, the Pokemon company has done so well. Every year is a new cohort of children in the world who can and should be brought into the Nintendo fold. Pokemon has done this so well. You and I played it growing up, and kids today play it growing up equally, if not more passionately. I think once you start moving into across generations like that, you really do need a broad multimedia IP strategy to make sure that you're engaging and bringing the new generations into the fold.
+
+Ben: I think that's right. The better comp is probably the NFL than Disney. Originally, I was like, oh, they're running the Disney playbook. But Disney takes on all of the in-house work of operating their own theme parks and having all their own employees and needing to have that core competency. Also, Disney has hundreds of stores.
+
+Nintendo has, I think, two stores. They don't have physical touchpoints with consumers as much as in part one. We talked about World of Nintendo in the stores to sell the games. It's so different than the actual boots on the ground stuff that Disney has that makes up the Disney flywheel.
+
+In our old Disney+ episode, we talked about how $1 on a Disney movie in revenue equals $2 in parks and merch. The way that Nintendo is structured, where they've decided they want to make great hardware to play games, they want to make games, and they want to not do anything else because that's all not very Nintendo, that's a different strategy where all of this other stuff is brand building, and it might make some money. NFL films was breakeven, so it's probably one click away from NFL films, but it's certainly not the Disney flywheel.
+
+David: I think the NFL and NFL films is the exact analogy. I think the mobile games strategy within Nintendo is don't lose money, but extend the IP. They're not trying to build it into a revenue driver.
+
+Ben: In other words, they're willing to give away margin dollars to not have to be in those businesses, but accomplish the same touch points with customers.
+
+David: Yup. Okay, that's the IP. Let's talk about the big question. What is Switch 2?
+
+Ben: Yes. Okay, here's an interesting way to tee it up. Let's work backwards from Nintendo Switch online. That launched in December 2018. The switch didn't have it at first, which I think is interesting. It grew very quickly. Three months after launch, it had 8 million subscribers. By January of 2020, it had 26 million. September of 2021 32 million. Today, a reasonable estimate based on everything they've disclosed is somewhere between 35 and 40 million subscribers.
+
+There are about 100 million active Switch players per month when you think about the churn, people buying multiple devices, devices breaking, and stuff like that. You have an attach rate of 35%–40% on a recurring revenue software business. It's pretty good.
+
+David: It's not something you would want to just throw away like Nintendo did with the NES install base.
+
+Ben: With the NES install base, it was theoretical. It was like, well, these people who we have relationships with should stay our customers. But our customers, the hour is doing a lot of heavy lifting in that sentence because they were your customers when they bought a game last time. You hope they will be your customers when they buy a game in the future. Flash forward to today, with the Nintendo Switch online, there are 40 million people who are your current customers who are paying you money.
+
+David: Their credit cards are automatically being charged every month.
+
+Ben: Yes. When you do some quick math, there are two price points. There's the $20 and the $50. Assume the average revenue per customer is $30, maybe $35, depending on the mix between those two skews. That's a billion dollar, maybe a billion-and-a-half dollar recurring revenue, super high margin software business. That is before you even factor in the digital games.
+
+It's probably a $3 billion business when you think about the one-off digital purchases people are making. There's a company called Nintendo that does all the stuff they used to do, but also makes a billion dollars of recurring revenue and another $2 billion on top of that of super high margin software revenue.
+
+David: This is so funny. On Acquired, we always talk about how software is the best business model of all time, media is the second best business model of all time, and video games are truly the best because they are software that is media. Nintendo, with help from studying Atari, figured that out before anybody with the NES and built this incredible Juggernaut, but then they forgot it for a very long time. Everything you just described is not new, innovative business models.
+
+Ben: Well, SaaS is new.
+
+David: Right, but Microsoft figured this out 20 years ago. This was the whole point of the Xbox and why they were willing to lose $5 billion up front on it, because they knew that if they can get those Xbox Live subscribers (and now the Game Pass subscribers), that's a really, really, really good business model. Nintendo has only just figured it out. It's so funny.
+
+Ben: Yeah. They basically make $10 billion a year selling physical things on a non-recurring basis. They make $3 billion a year selling digital things that have super high margin revenue, and a billion of that is recurring. I think that's the framing that you have to go into when you think about what their next move should be. Now, they're Nintendo, so they're going to do whatever they want it to be. But if it's what should it be, the answer is, figure out how to launch a next generation piece of hardware that makes people upgrade, very similar to the way that people do with their iPhones that has backward compatibility to every other thing that they've purchased in your ecosystem before.
+
+Preserve and make it so that you're growing your monthly active customer base. If they're thinking like this, we might see them do the thing that Apple shifted to, which is, instead of reporting total devices sold, reporting their monthly active participants in their ecosystem, and make it so that the Switch 2 has all these cool capabilities that make people want to upgrade, but the same great games work everywhere.
+
+David: This is the forward compatibility piece that Microsoft, Sony, and Apple too have figured out of like, make sure the software, for a certain period of time, keeps working with the old Switch consoles.
+
+Ben: They've already done this for a half generation. You have the Switch Lite. When you were at my house, and you were playing with the Switch OLED that I went and bought a couple of months ago, I could see a glimmer in your eye. I could see you saying, boy, if they don't release the Switch 2 soon, I might be buying this OLED thing because boy, this is nice.
+
+David: If I didn't know that we were going to have this robust discussion about the Switch 2, I would have already bought a Switch OLED.
+
+Ben: It's so funny because I went out and bought it. I was like, I can't believe I'm buying a thing that's a six-year-old piece of hardware. How is this thing not outdated? As I started to do the research, it seems like what happened was they were planning a Switch Pro that was going to release sometime during Covid. But then when demand popped right around the time of Animal Crossing and 2020 hit, they sold a whole bunch of them, and they were supply constrained. I think the plan for Switch Pro went out the window and they were like, let's just extend the life of the Switch. Some of the features they were planning for the pro like the OLED screen went into this mini step of the Switch OLED before they do the Switch 2.
+
+David: Which presages like, I think it's unlikely Nintendo will do this because they're Nintendo. But if you really want to take the logical conclusion of this business model to the extreme, you turn the Switch hardware line into the iPhone hardware line, where it's not Switch 1, 2, 3, blah-blah-blah. I guess iPhone is 13, 14, 15. You might upgrade every now and then, there are plus models, and incremental S models, but you enter the ecosystem at whatever point feels right to you, and you're part of the ecosystem.
+
+Ben: Yes, and we shouldn't take credit for this. This is the exact thesis popularized by Crossroads Capital, who's a Nintendo long and writes awesome letters that we'll link to on the bull case for Nintendo. But if you are a buy on Nintendo right now, this is the thing that you believe they should do.
+
+There's this question of, okay, but what will Nintendo do? What do the close insiders at Nintendo who don't care about the stock price, who don't really care about their revenue, who don't really care? I mean, they care enough about shareholders.
+
+David: I think they care about the spirit of Nintendo, as we just discussed for several hours.
+
+Ben: Make really fun games on hardware that pushes the envelope on what types of experiences are possible for people. I think if they get a bee in their bonnet about a new hardware idea that they think is groundbreaking and will enable a whole bunch of new game experiences, they're going to do that, and then they will figure out the business model implications later.
+
+David: I think the thing that is a little scary, and we'll see how much this is imprinted on Nintendo, the Wii U debacle and when smartphones came out, really existentially challenged Nintendo for the first time ever. They could afford to have that philosophy during the 90s and the 2000s. They had the handheld business to save them every time. They could do whatever the hell they wanted, and It was fine. There was no existential risk.
+
+We've seen now, even with all the incredible success from the Switch and the $5 billion of annual operating income that they're generating right now, they're in a much more precarious position. If they don't get things right, consumers will just leave and go back to mobile. They can't do another Wii U.
+
+Ben: Now we're full-on in bull and bear. Let's just pull that forward and do it now. This is one of Matthew Ball's point on the bear case, which is everyone's all hot on the Switch as the best selling console Nintendo has ever done, blah-blah-blah. But really, it's not one console, it's two because it cannibalized their other business line.
+
+You have to look at not how's it doing against the Wii, how's it doing against the Wii plus the DS, or the NES plus the Gameboy. That really puts it in a different perspective where they have no backup plan. They can't move forward in one while keeping the other one stable. They now have one platform for better or for worse, and they really can't screw it up.
+
+David: Which is a great thing. As a consumer, that's awesome. It's just like, please don't screw it up.
+
+Ben: Here's all the other angles on the bear case. Nintendo missed mobile, they'll never have a business on mobile, all the future growth is in mobile gaming, and they just are not there.
+
+David: Disagree. I hate mobile gaming, and I love my Switch.
+
+Ben: Okay, but let's talk about the business. Nintendo is cute, doing $13 billion of revenue a year, $5 billion of operating income, but let's look over at Mobile. Let's see how Apple and Google are doing, who by the way, make no games, just operate stores and sell devices. They're getting away with murder on mobile games. Sixty-one percent app store purchases are games. It turns out that the killer app is mobile games.
+
+Casual free to play mobile games turns out to be the killer app for the iPhone. $90 billion in total revenue per year, which means almost $30 billion for Apple and Google. That has nearly 3X Nintendo's very impressive revenue from the Switch this year. That is the pot of gold in gaming.
+
+David: Yes, totally true. I think one of the things that this episode has really crystallized for me, though, is that it's wrong to think about gaming as one market because it's not.
+
+Ben: I think that's right, especially as we're entering the era of people hanging out in videogames. The metaverse is here, it's just in people spending time in a digital environment that isn't necessarily VR, isn't necessarily immersive. It's hanging out on Discord while you're playing games together or whatever.
+
+To the extent that video games are where you hang out with your friends, that's a super different use case than me playing Mario Kart to pass the time in my living room, and also a super different use case than someone who wants to basically play a slot machine on their phone while they're on a flight. These are all such different human experiences and jobs to be done, but it is totally crazy to call them all gaming.
+
+To your point, I bet if you talk to a Nintendo executive, they look over at mobile and they're like, okay, sure, Apple is making $27 billion a year (Apple and Google) on people playing what you're calling mobile games. But if I look at that, I think only 2 billion of those are games, and the rest of that is something that's not games. It's some statistical extraction of people's money through digital marketing.
+
+David: Yes. I think the reality is even more fine-grained than that. For example, I love the new Halo Infinite. It's had a lot of problems as a live service, but it's finally getting ironed out. Having spent a large portion of my teenage years on Halo, I just love playing it.
+
+If you were an alien, or let's say if you were a 60-year-old person observing me playing Halo infinite versus observing somebody else playing Fortnite, on the surface, it looks pretty similar. You're in a live service environment with other people and you are shooting at them. But the job to be done of those two experiences is completely different, and those are very different markets.
+
+Ben: You said live service, which is another Nintendo bear case. Nintendo is not a good live services company. Even if you're writing off the whole mobile market, Fortnite on Xbox and Fortnite on PlayStation, people play those games as forever games because they're live services. You need to have fresh content to introduce. You need to be able to have events. The way you monetize those games is with this live orientation, which Nintendo has none of in their DNA. That's a second market that is not particularly addressable to Nintendo, or at least they don't seem to want to address.
+
+David: I think they're building into it. Mario Kart 8 Deluxe has certainly become that, especially with the new waves that they're building into, which is their version of seasons. A Mario Kart 8 wave is the same as a League of Legends season. It's the same concept. Whether Nintendo is as good at seasons as Riot is, they're absolutely not. But they are building towards it clearly,
+
+Ben: As you look around it, I'm not sure it's a bear case. But it is interesting to just note where everyone else has ended up in this market, where Microsoft is trying to do the Netflix of gaming. They're really pushing into this predictable revenue, subscription, you pay us, we give you all you can eat. We don't even care if you play on Xboxes. We want this to be available anywhere, and you should use our app that you pay a subscription for to play games on all devices.
+
+That's a very different strategy than what Sony has done, at least for the last five years. They might be changing right now, but we're in the middle of a potential pivot for them. They're basically playing the same old console game, and they're playing it with the highest monetizing audience of people who want to pay a whole bunch of money for a game, get the unbelievable graphics experience out of it, and play it on that device.
+
+It's interesting how all three of these companies—Nintendo, Sony, and Microsoft—after competing for a while, have now all chosen completely different lanes to occupy in terms of what they're marketing to consumers and what the business model around that is. I think the big question for Nintendo is, do they care about the strategic position, picking a lane, and deciding to be Microsoft be in this way with the subscription? Or is it really just like, do they pay attention to their shareholders? I don't know.
+
+David: It is a legitimate question. We don't know.
+
+Ben: But thank God that someone is a Nintendo in the world and gets to innovate and drive things forward because everybody else is just copying each other and figuring out, is there a cash grab to be had, or are we going to miss out on some big thing, we need to hurry up and go chase it? Nintendo is really not doing that.
+
+David: I think that is what is clearly different about Nintendo now than the past 20 years, which is they're no longer stupid. They may not be as commercial as shareholders would like them to be, but they're no longer stupid. I think you probably got to have some faith that they're going to figure it out.
+
+On the other hand, relative to a Sony or Microsoft where you can be pretty sure that they're not going to screw up the next generation, there is still that wildcard risk with Nintendo.
+
+Ben: Totally, which is the bear case is. Games are hit-driven, consoles are even more hit-driven, and they take six to eight years to recover from a mistake. Now they have all their eggs in one basket.
+
+To close out the bear case, even with the Switch's success, revenue still hasn't matched the 2008 peak. Sure they're doing more with this licensing, movie, theme parks, other mobile apps, but it's not clear how they will make a material amount of revenue from all of that relative to their core business. We've talked a lot about the bear case.
+
+The bull case, if they actually transition to this durable platform business, they have a billion-plus dollar subscription business on their hands. They have a $3 billion digital high margin direct-to-consumer business on their hands. They also on top of all of this—to your video games are the best business model of all time—have durable IP, perhaps the most valuable IP in all of video games on top of the subscription business, creating the additional stickiness.
+
+As we get into their Crossroads Capital viewpoint here, there's a valuation bull case, because you have this company that if they're actually set up in this way and they do actually execute the platform playbook, their price to sales is at a measly three and a half X, where they're trading right now. You compare that to Apple, that's half of Apple. If they're actually going to go execute Apple strategy, and they actually have the ability to have the margin structure, the growth rate, and the durability that Apple has with the iPhone business with the App Store on top of it, you can make a case that you should value those companies the same based on their multiple of revenue, but then let's get to profits.
+
+Their price to earning is only 13X. For comparison, freaking Sony is at 16X. Apple is at 28X. Disney's at 54X earnings. Nintendo's got a $3 billion digital business. If you value that comparable to other SaaS businesses, that's a $21 billion business. You add in their cash. That gets you to 34 billion.
+
+If you look at Nintendo's actual market cap where they're trading today, it's $47 billion. That means the difference between those two is $13 billion. Would you value their entire hardware business, hardware Switches, hardware cartridges (games for the Switch), and all the future licensing revenue at just $13 billion? That's a freaking steal. That's the whole AWS narrative around, you buy AWS and you get the retail business for free. If everything goes right, and if you believe the whole platform thesis, that's the valuation bull case that Crossroads has astutely pointed out.
+
+David: What's really interesting is that Crossroads and others have been talking about this narrative for a long time.
+
+Ben: At the same time, it's funny. A video games executive told me last week, we've all thought Nintendo was going to go out of business for the last 20 years.
+
+David: Right. I suspect there are a lot of people listening right now at the end of our two-part, call it 7–8 hours series on Nintendo, that have learned a lot and are surprised about a lot of things. However, I think people that actively follow the stock and either are long or short in it, are not surprised. This is not new information, per se. There's just so much uncertainty.
+
+Ben: I do think we're in a very fun period here because we will get to learn what their strategy is (I think) in the next six months around the next generation console.
+
+David: Yes, and that will be amazing. I guess, though, there is a third option, which you never know with Nintendo, which is that we don't, and they just do nothing. I don't think they will do this, but they could. Is there a really compelling reason right now to release another hardware generation? Is the Switch under attack from any angle?
+
+Ben: Right. Why release another? The Switch OLED's a great device.
+
+David: Right. It is awesome. I was playing it at your house, I'm tempted to buy one. The only reason I'm not is because I think there might be a Switch 2 coming soon.
+
+Ben: I'm actually not sure what the Switch 2 would have. Maybe it would solve a developer problem, where there are certain developers that are frustrated right now by the processor and there are a bunch of games that can't get created that consumers might want.
+
+David: Certainly, that is a big thing. The processor is woefully underpowered at this point. But processors are so good, particularly in the gaming world. Can not a mobile processor from 2014 that NVIDIA made run the latest games? Sure, it can. Will it run them with ray tracing? No. Do most consumers care? No.
+
+Ben: That's a good question. There's also some weird way left field thing that they could do. They could actually decide we want to be the next Disney, and they could do theme parks in-house, movies in-house, merch in-house, and design all the toys themselves and sell them in stores that they own.
+
+David: Which is what Marvel did. Marvel initially didn't make their own movies, and then they stair-stepped into it. When they started their own studio, that's when that really took off.
+
+Ben: Right. The tea leaves are reading against it since they're constructing for whatever new theme parks in partnership with NBC Universal, so I imagine they've got a pretty long-dated license on that to break ground. That's the bear and the bull. We're out of order here, but I would like to do power in playbook if you're game for it.
+
+David: Yeah, for sure.
+
+Ben: All right. What of the seven powers—and for listeners who are new to Acquired, go listen to our previous episode with Hamilton to learn what power is—do you think that Nintendo has in the time period from 1990 to today?
+
+David: Let's start with what we talked about in the last episode and what we talked about with Hamilton and Chenyi about this amazing, magical, alchemical blend of scale economies, network economies, and switching costs, that the NES was in the 1990s. I think they basically do not have that anymore. That has disappeared in all the ups and downs over the last 20–30 years.
+
+I think you could maybe argue that none of the console players have this anymore, at least not in the same way that the NES did. They do have these elements, but so did their competitors, so it's not differentiated anymore. I think that's actually no longer the case for Nintendo. I think they absolutely have a cornered resource in their IP.
+
+Ben: For sure. That's their strongest one now.
+
+David: That may be the strongest one, and potentially also process power. There's nobody else that can make Breath of the Wild. There are other studios that can make other amazing games, but the core Nintendo games serving that mid-core audience, nobody does it better. I don't think anybody can really compete with them.
+
+Ben: I have a hard time with this. I'm sure there are indie developers.
+
+David: Okay, fair enough. Too much nostalgia, maybe.
+
+Ben: I haven't played Breath of the Wild yet. I don't know what I'm waiting for, but I don't know. I'm not sure that they uniquely can create that type of game if you were to pluck out all the IP.
+
+David: Yeah, that's fair. You're right. It's cornered resource. It's the IP.
+
+Ben: I do think there's a new one that they've introduced with Nintendo Switch online, which is, no pun intended, switching costs. I bought my games from Nintendo, I don't own them.
+
+David: It's a different version of switching costs.
+
+Ben: Totally. Interestingly, if I let my subscription lapse, if I don't pick it up again, for six months, there's a six-month grace period, then I lose all my saved data. If I'm someone who got super invested in all the progress I made in Breath of the Wild, I have to keep paying Nintendo, assuming that I bought the game digitally instead of as a little cartridge, which is weird that they offer both, by the way. It's very Nintendo.
+
+David: I think that is actually a console games industry problem as a whole, not just Nintendo. Xbox and Sony have the same issue. You look at the PS5 and the Xbox series X through one line, you're like, why the hell do you have CD slots? On the other hand, core gamers feel very strongly about this for the reason you said. They really want to own their games and make sure that nobody can ever take them away from them.
+
+Ben: And resale. I can't ever sell. I just paid Nintendo $120 for two games in the last week. That's money I'm never getting back.
+
+David: They still have a weaker version of that scale economy, network economy, switching costs thing. It's just not solely there. Microsoft and Xbox have their version of it, too.
+
+Ben: Right. If I'm an indie developer, that 120 million Switches is a very attractive group to distribute it to, so are the Playstations and Xboxes.
+
+David: I think the Switch and Nintendo is counter-positioned against the smartphone gaming market right now, in particular, because of this quality concept. I can be very sure that when I buy a game for my Switch, it's going to be quality.
+
+Ben: Right, and Apple to adopt that stance would have to forego revenue, so it is counter-positioning. All right, playbook?
+
+David: Playbook.
+
+Ben: There's a great line that Shigeru Miyamoto has, which is, "A delayed game is eventually good, a bad game is bad forever."
+
+David: It's so good.
+
+Ben: I think about this all the time. Ever since I first read the quote when we were first starting researching three months ago, it is something I think about a lot for Acquired episodes. We loosely have a schedule. We do six episodes every six months, but you and I just keep canceling stuff and we're like, quality is low. I'm not sure it's the best way to run a business, but it is the best way to create art.
+
+David: Yes, which to our discussion about, what is it that the people who worked at and run Nintendo think they're doing there? It's somewhere in between.
+
+Ben: Right. They really do value the art. I think that's pretty rare. When you look around Activision, EA, the people making the big decisions do not care about the art. They are running the spreadsheet businesses, and Nintendo is not.
+
+There are a bunch of stuff to read into in this quote, which is great. "A delayed game is eventually good, a bad game is forever." Also nestled in that quote is that Nintendo doesn't improve upon their games after releasing them. That's so the opposite of Epic Games.
+
+David: It's such a good point. Even my favorite example, Halo Infinite. Halo Infinite was a bad game when it launched. It still has a lot of room for improvement, but it is so much better than when it launched.
+
+Ben: Fortnite didn't have Battle Royale when it launched. That's crazy. That's another interesting one. Matthew Ball points out a third thing about this quote where he looks at the word, is a delayed game eventually good?
+
+David: Now we're in the Bill Clinton territory. Define is.
+
+Ben: Matthew's point is, well, a delayed game could be eventually good, but I think there's this artist polishing thing, which is if I just take enough time, and I make it the way that I want, it will eventually be good.
+
+David: Yes. I think Nintendo falls victim to this. We haven't really talked about the games themselves side of Nintendo because that's way beyond the scope of Acquired as a podcast. I think there's a big element of this, though, within Nintendo. I think they think that every Zelda game is amazing, and it's not.
+
+Ben: Yeah, you can feel that.
+
+David: All right, I'll jump in with a couple here. One that really popped up to me in this episode in part two is the jobs to be done framework. We talked about this sometimes on Acquired, not a lot, certainly not as much as we talked about seven powers and other ideas. The handheld market, in particular, really highlights this for me and how everybody in the industry basically ignored it forever.
+
+I don't know if Nintendo thought about this consciously, but the Gameboy and the DS were hyper serving two jobs to be done. One was games for kids and one was games for casual adult players. Neither of those audiences were being served well at all by all the innovation and investment going into all the other gaming platforms. Nintendo just got it right.
+
+On the surface, you look at the Gameboy and you're like, what is this thing? But then it's actually serving these wildly diverse audiences in very good ways.
+
+Ben: That's such a good point.
+
+David: Two more that I want to talk about. I don't really know what the takeaway is for this on me, but I've really stuck out in this episode of how stark the difference is for me on Switch games versus smartphone games. I know that smartphone games are a much bigger market and are likely to continue to be, but the actual experience of playing them is so bad. Many people will argue with me on this.
+
+Ben: That we're being reductionist on how bad mobile games are, and we're not talking about any of the good ones.
+
+David: Totally. Back to what I was just saying, on the jobs to be done framework, I think a lot of people that are playing those games, that game is accomplishing a job to be done for them. Absolutely.
+
+But what this really makes me think and makes me a little bit sad for is how badly Apple failed the consumer in gaming on iOS. There is an alternative history, where iOS and iPad OS is a Nintendo-like gaming platform, and game design and the art of gaming is flourishing there. I will be so compelling as a consumer that my phone that I have with me all the time also has these beautiful game experiences. That is just so not the case.
+
+Ben: The ethos of what these devices were supposed to be and Steve Jobs as Apple is very Nintendo-like. When you think about the App Store, App Store review, and we don't need fart apps, when you have an enormous pile of money on the scale, it's pretty hard to let your values outweigh it. I think that happened to Apple.
+
+I think they all looked at it. I'm not saying Steve Jobs would have been any different. Steve probably would have let the same thing happen. The whole thing was set in motion while he was there. But I don't think anyone had any idea how much money well-driven casino mechanic–type games, loot box games, Candy Crush type games, those could make.
+
+If you could go back a priori and say, Apple, you can have a much more closed down App Store that looks a lot more like Nintendo Switch online or you can have what it is today, I think maybe they wish they could have gone the Nintendo route. But being the most valuable company in the world and the most profitable company the world's ever seen, is also pretty attractive.
+
+David: I think they want to think that they would have gotten the Nintendo route, but they for sure would know. It's funny, I was just thinking, as you say that, on the one hand, nobody could have predicted and nobody did predict how big the mobile gaming market would become. But I'm thinking all the way back to bring it full circle to the origins of Nintendo, of course you could have. It's called gambling, it's human nature. It's been there forever. The more things change, the more they stay the same.
+
+Ben: It's not just gambling. It's gambling combined with social status. Sometimes it's not gambling.
+
+David: Dude, what do you think casinos are?
+
+Ben: That's true.
+
+David: Gambling combined with social status. It's just all digital now. You can't tell a 135-140–year-old company story without it fundamentally boiling down to being like, human nature is human nature. The Nintendo story just illustrates so much for me that the seeds of success are sown in a fall, and the seeds of a fall are sown in success. The Nintendo story, with the ups and downs, the falls came from their successes, and the successes came from their falls.
+
+Ben: Their greatest strengths are their greatest weaknesses. All right, my last one is what would have happened otherwise. That question is, how is this company not owned by Disney? You have to imagine, Bob Iger was on a plane in Japan at some point discussing this.
+
+David: It's unimaginable that he wasn't.
+
+Ben: They bought Pixar, they bought Lucasfilm, they bought Marvel. In 2012, the year that Lucasfilm was purchased, Nintendo was only worth $12 billion. Assuming that that happened, how did that meeting play out? I think nothing has ever come out about this, but either, Disney would have had to decide, we don't want to be that in the video games business.
+
+They bought Playdom. They do have games. I think they make billions of dollars from mobile games, but maybe they decided, that IP is not the type of IP that we were buying. We think that movie IP is more repurposable into our flywheel than games IP. I don't think that's the case.
+
+David: No, because it would be perfect.
+
+Ben: It'd be so perfect. Mario, Zelda, the whole cast. Donkey Kong is first class IP along with those three franchises they bought and the Disney Princess series.
+
+David: Totally. I'm not the first person to say this, but I suspect this new Mario movie is going to do really well. You know what's going to just freaking crush it. When there is a Zelda movie television series or whatever, people are going to go absolutely nuts. We talked about it in part one, but more people like Mario than Zelda, but people who like Zelda get freaking tattoos of Link. They named their daughters Zelda.
+
+Ben: It's going to be like Lord of the Rings style. One thesis I have is that Japan, as a nation, would never let Nintendo be sold to a foreign buyer.
+
+David: It's like the reverse of what almost happened with the Mariners.
+
+Ben: Yeah. I just have a hard time imagining the Japanese government allowing a deal to go through. I have to imagine, there's some discussion with the state before you even try to propose it. It's a national treasure. The Olympics opened with nods to Mario. I think when—I can't remember what year it was—the Japanese prime minister came out of a tube, one of the Mario green sewer tubes.
+
+David: A warp tube? Yes.
+
+Ben: I think no matter how bad this company does, the state would nationalize it before whatever gets sold to a foreign buyer.
+
+David: Yeah, I think that's right.
+
+Ben: Man, I would kill, though, to hear the conversations between Bob Iger and...
+
+David: There's got to be audio tapes out there somewhere.
+
+Ben: I know.
+
+David: Somebody recorded that meeting on their smartphone.
+
+Ben: All right, if anyone has that recording or at any knowledge of any conversations, we promise we won't tell anyone.
+
+David: acquiredfm@gmail.com.
+
+Ben: Yeah, join the Slack. You can DM in the Slack, too.
+
+David: Yeah, exactly. That's such a good point. There's no way that that conversation didn't happen.
+
+Ben: Right?
+
+David: No way.
+
+Ben: No way. All right, carve outs.
+
+David: I have two carve outs, podcasts and podcasts related. One is really, really good Vanity Fair article with Kara Swisher that just came out. A friend of the show, former Acquired guest, Kara Swisher, pioneer of our industry and our category. It's so good.
+
+When we had her on the show way back when, we told the story of the ReCode acquisition. She's had six more chapters in her career since then. I hope we have six more chapters in our career at that age. Good for her.
+
+She has two children that are about my daughter's age, too. Wow, I could not imagine being 20 years older and parenting young kids like I am now. Her energy is just incredible while also doing all these things. That's carve out number one.
+
+Carve out number two is a long, long, long time coming, but I have finally really gotten into Hardcore History. It's always been an inspiration for us in theory. I've never just actually spent the time to dive into it. Dan's so good. He's the OG. Everything we do is trying to be a shadow of him. It's so good. If you haven't listened to it, go check it out.
+
+Ben: Yup. All I do is research for Acquired. I'll come up with some other ones, but the Tetris movie is great. I think it's totally worth your time. It's a fun watch. I should come up with one.
+
+I did just listen to a great podcast episode this week. Invest like the Best with Patrick O'Shaughnessy. Always a great show. Truly, he's just one of the best interviewers alive and friend of the show. We've done a home and home with him, and we need to do something again. He interviewed Daryl Morey, the GM of the Philadelphia 76ers. I think he's the GM, right.
+
+David: Wow, I'm not up on my NBA.
+
+Ben: Yeah, he left the Rockets. He was considering leaving basketball. He thought he was out, and he is now the President of Basketball Operations at the 76ers.
+
+David: Wow. I am so behind on my NBA drama. He took Hinkie's job. Wow.
+
+Ben: It is a fantastic interview. It is really fun. It actually dovetails off this episode well. They had spend a lot of time on the topic, what makes a good game? For all the video game nerds out there who love thinking about balance and things that are OP or overpowered, nerfing versus buffing, and trying to make a game the most competitive, this episode spends a lot of time on that.
+
+Obviously, Daryl has thought a lot about this problem. How do you continue to tweak the rules of sports to make it the most competitive like the best true game and the purest sense of the word, but also the most interesting to watch, which in some situations means you actually want to make it less skilled-driven? You want to make it more about luck because you want the Any Given Sunday effect.
+
+There are a lot of very interesting points that he makes. As usual, Patrick does a spectacular job with the interview. I highly recommend it. We'll link it in the show notes.
+
+David: I haven't listened to that one yet. I need to go and add it to my queue.
+
+Ben: It's awesome.
+
+David: Related to that, I'm skeptically interested to see how the pitch clock goes in baseball this season.
+
+Ben: Oh, yeah. I'm literally going to the Mariners game tonight, the former property of Nintendo of America, and I'll have to keep you posted. It'll be fun.
+
+David: Yeah, you have to report back.
+
+Ben: With that, our thanks to Pilot, Tiny, and Vanta. You can get the link in the show notes and the links to the discounts. Go to any of them to learn more.
+
+You should join the Slack. It is a great way to discuss this episode, share childhood stories of playing Nintendo, hear from people who are involved in the industry who are always dropping great nuggets in after we record. It's an awesome place for post episode discussion. That is acquired.fm/slack.
+
+ACQ2 was churning out bangers, so go subscribe. If you're not subscribed, you should because the next one, seriously, with the CEO of Retool was one of my favorite conversations we've ever had on the show.
+
+David: David is so great. We've also got some really great ACQ2 episodes coming up too, so stay tuned there. We're taking the dues to the next level.
+
+Ben: We are. Speaking of the next level, David, that is a fancy shirt that I see you wearing. How can people get sweet merch like that?
+
+David: In the Acquired merch store.
+
+Ben: Acquired.fm/store. All right, listeners, with that, we'll see you next time.
+
+David: We'll see you next time.
+
+‍

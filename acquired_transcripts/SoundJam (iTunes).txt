@@ -1,0 +1,491 @@
+David:              And iTunes sucks.
+
+Ben:                 iTunes does suck. Well, yeah.
+
+David:              It’s bloated.
+
+Ben:                 Yeah. Or I won’t take a position. I’ll say people seem to hate iTunes.
+
+Welcome to Episode 38 of Acquired, the podcast about technology acquisitions and IPOs. I’m Ben Gilbert.
+
+David:              I’m David Rosenthal.
+
+Ben:                 And we are your hosts. Today, we are covering Apple’s 2000 acquisition of SoundJam which would go on to become iTunes. So speaking of iTunes, we love iTunes. Well, actually now podcast reviews. So this is the part of the show where before we dive into things, I ask you, our listeners, be it a brand new one or someone who’s been listening to the show for a while, if you’ve got some extra time, we would love a review on iTunes. It's how we grow the show and make it better. We’ve also got a Slack. If you’re new to the show, there’s over 600 of us that are in the Slack channel talking about technology news, M&A, IPOs, all kinds of stuff. So if you head over to Acquired.fm and you’d like to join us, there’s a little widget on the side bar to join us there.
+
+David:              That was very clever there, Ben. I see what you did there. I like that.
+
+Ben:                 Well, most of the show is kind of unscripted, like we have notes but we don’t actually take them out. And then like you try and get too clever when you are typing out the exact words that you’re going to say, listeners.
+
+David:              We’re just getting more professional here at Acquired.
+
+Ben:                 Yes. That is one thing. Like listeners who have been listening to the show for a long time, it’s funny how with these things when you decide to up-level a little bit, that becomes the new bar and then that’s just the bar that you have to hit every episode after that. So if anybody’s starting a podcast or a creative project, keep that in mind for the future.
+
+David:              All these new listeners now are like, “Wait a minute. This doesn’t sound very professional. What are these guys talking about?” This podcast started as Ben and me drinking beer and recording ourselves. We’ve come a long way.
+
+Ben:                 That's true. Since we started doing these morning recordings and we’re in different time zones, we were either a lot more coherent because we’re not drinking anymore or we’re a lot less coherent because we’re groggy. It’s not clear.
+
+David:              We will see.
+
+Ben:                 Yeah. Before we dive into things, I want to thank our sponsor for this episode, Silicon Valley Bank. Silicon Valley Bank has been a sponsor for us in the last several episodes and we want to thank them for supporting the show. Why don’t we go now to a real quick Q&A with the managing director at SVB?
+
+What is SVB and how can people start a banking relationship if they’re interested?
+
+“SVB is probably the most hyper focused commercial bank on the planet in that we focus solely on the innovation economy, the entrepreneurs and venture firms it, and hope to work with people from the dog garage idea phase all the way up to being a multibillion dollar public company and everywhere in between. If they wanted to start a relationship with us, you can check us out on the web SVB.com or frankly just straight down to LinkedIn, anybody that works with Silicon Valley Bank, start there and shoot us a note.”
+
+Great. Thanks.
+
+David, are you ready to take us into the acquisition history and facts of SoundJam?
+
+David:              Let’s do it. We are entering the time machine here at Acquired. Maybe it's a hot tube time machine.
+
+Ben:                 Hopefully not.
+
+David:              We’re going back to... all professionalism is out the window today.
+
+Ben:                 Apparently.
+
+David:              We are going back to the late 90’s and the early days of the MP3 and digital audio revolution. There were a couple of apps or “programs”, as they were called back then, that ruled the day and if you were a teenager in America as I was, you definitely had these on your PC: WinAmp and Napster.
+
+Ben:                 Yup. And oh man, just to describe what my music listing setup was at this point in my life, it was Napster to get the music. This was on I think it was a Power PC 8500, so this was like gray Macintosh tower. So I had the Napster Mac client and you get music through that.
+
+David:              So that was after 2000 then because there was no Napster Mac client until 2000.
+
+Ben:                 Oh! All right, well I’m reshuffling my history here. But I guess what I'm getting to here is my hard drive on my computer I think was like 4 megabytes or... no, that’s wrong. Anyway...
+
+David:              Gigabytes maybe?
+
+Ben:                 I can’t remember what it was. But the hard drive on my computer, with all the programs and the system extensions and stuff, I had lived around on it, did not have room for MP3s. Like I needed at least 100 megabytes for my favorite songs at the moment. And I had a Zip drive plugged into my computer like a series of 100-megabyte Zip disks that I could load my MP3s onto and put them in. I didn’t have WinAmp because I had a Mac and I can’t remember exactly how I played the files pre-iTunes, but it was a disaster. Like you’re just working directly off the file system.
+
+David:              Oh, man. Well, you and every other teenager in America who had a Mac and not a PC had this exact problem and luckily for you and for everyone else and for Acquired, Jeff Robbin and Bill Kincaid stepped into the fray and emerged as the saviors for teenagers pirating music in America. This is going to be a fun one. Ben and I were chatting before the episode, we are really excited to dive in here and I want to give a quick shout-out to my buddy Eric over at ISC who actually... we’ve been planning to do this episode for probably as long as the show has been in existence at this point. But Eric shot me an email a couple of weeks ago and he said, “Hey, I don’t know if you explored the company SoundJam as a topic. But it stands out to me as an interesting one because this is the app that not only became iTunes but I may have also influenced ‘the metal finish’ of Apple software design over the several years.” And oh boy did it ever –
+
+Ben:                 What a beautiful brushed metal it was.
+
+David:              Brushed metal. And Eric says, “I remember buying it, and yes, it came in a box when I was in college because I was looking for an MP3 player for my Mac.”
+
+Ben:                 Wow. Yeah. So fast-forward from me playing the MP3s off my Zip disk and actually playing them through an application, SoundJam was awesome. Like I remember before Apple acquired them and then we found out there was going to be an iTunes playing with SoundJam, and the coolest thing about it was the skins. There was some really, really not tasteful but like insane skins that would this thing transform from like a brushed metal rectangle into like the most insane glob of like the psychedelic.
+
+David:              Psychedelic.
+
+Ben:                 Yeah.
+
+David:              And of course, they had the visualizer too, which we’ll get into all this. But yeah, so 90’s.
+
+So Jeff Robbin and Bill Kincaid worked at Apple in the mid ‘90s and they were engineers and they were working on the Copland operating system, which listeners, if you go back to our next episode that we did live at the Geekwire Summit last year, there was a key part of the history of what ended up becoming when Apple acquired NeXT and became OS 10, Copland was what Apple was working on before that internally and it completely failed. It was a total disaster. Never shipped. But Jeff and Bill were really good engineers at Apple, really highly regarded. And when it never shipped and Apple acquired NeXT, they ended up leaving the company. So Robin left and he became an indie software dev on his own, became really highly regarded; wrote this program called Conflict Catcher which back in the old pre OS 10 Mac days, you had all these extensions for different files on your computer and different programs and it could become really a mess, the operating system didn’t manage it itself. And so he hacked this software together to basically just manage it for everybody.
+
+Ben:                 Okay. So Conflict Catcher was amazing because there were some incredibly interesting architecture choices made in Mac OS 9. So when you would load a system extension, they would load in a certain order as you booted your computer up and that order was alphabetical.
+
+David:              Oh, man.
+
+Ben:                 And not only that, the system extensions all shared – I think this is right – the same addressable memory space, I believe, with the operating system.
+
+David:              Wow.
+
+Ben:                 So there were extensions that could accidentally load in an area of memory that another one was trying to directly write to and they totally screw with each other and make your computer unbootable. So the only way to do this was like a kind of safe mode thing where you go and you try and manually figure out how to turn these things on and off. And Conflict Catcher made it so that you could actually change the order that these things booted and figure out like oh, this one conflicts with that one and see it in an interesting way and toggle them on and off so that you don’t have to like manually figure it out how you just horked your computer.
+
+David:              Per usual, I’m going to do a quick jump ahead to tech themes. One thing, I love doing these episodes on old software because they’re such a reminder of like how far the world has come and how much in software. You’re standing on the shoulders of giants and work that has been done before you so that you don’t have to deal as a user and a software developer don’t have to deal with this stuff anymore.
+
+Ben:                 Yup.
+
+David:              So that was what Robin did after he left Apple. And Kincaid, he goes to a startup and he’s working with a startup and he also has this hobby on the side which is that he really likes to race Formula cars, and one day, he’s driving them to a racetrack in Northern California and he’s listening to NPR on the radio as he’s driving up there. He blogs about this much later and he hears on NPR this discussion of MP3s. And this is the late ‘90s and they’re talking about Napster and they’re talking about this company called Rio and this player that’s just came out, this new piece of hardware called the Diamond that they made that allows you to take MP3s that you have on your computer or that you’ve downloaded from Napster or the internet loaded onto it and then listen to them like a Walkman on the go. And he’s like, “Oh, wow. That's really cool.” And then on the show, they say don’t get excited though, Mac users, because it doesn’t work with Macs. And he has this thought and he’s like, “Well, I bet I can make it work with Macs.”
+
+So he’s still working at the startup but he immediately on the side sort of takes this challenge and the next day he starts researching MP3. People don’t know about MP3s at this point, he had never heard of it. And he actually calls up Diamond, the company that makes the Rio, and we should say too for listeners who weren’t alive back then, I mean these things were everywhere. You walk into a BestBuy or CompUSA back in the day.
+
+Ben:                 There was that one particular model that looks sort of like a lima bean on one side and then it was like kind of convex curved on the other side and like it can fit in the palm of your hand and have this blue and black swoosh that ran through it.
+
+David:              I think I had that when I first went to college.
+
+Ben:                 I think that’s the one that finally had enough megabytes of storage where it could really blow up.
+
+David:              Yeah. So Kincaid calls up Diamond. They’re really excited. They’re like, “Yeah, we would love to get this working with Macs. We’ll help you out. We’ll give you access to our engineering team,” and he starts working on it but he quickly realizes he’s not a good enough engineer. Well, he’s created the backend and he can handle the backend, but they also are going to need kind of a frontend and an MP3 management software, and that’s not his strength so he calls up Robin and says “Hey, let’s get the band back together and work on this.”
+
+Ben:                 Yeah, pretty cool. And it’s interesting how it started first with necessity as the mother of invention, somebody needs to figure out a way to make an MP3 codec that works with the Mac so that you can decode this MP3 file format and play it. But that’s not enough, like what, are you just going to click on every file individually in Finder and make it play?
+
+David:              Yeah. And you need a way to manage your MP3 library. Otherwise, these are just going to be random file names sitting on your Finder as you said.
+
+Ben:                 Yup. It’s funny how we take MP3 for granted today but it was not a widely known thing people were distributing MP3s. They had to become world experts on reading the ISO spec for what is the MP3 file format and how would go about decoding it.
+
+David:              Yeah, amazing. I mean, there are no APIs for this stuff. It’s not handled natively in the Mac OS, nor I think in Windows which I think is why WinAmp took off.
+
+Ben:                 Interesting. Yeah, that makes sense.
+
+David:              So they team up and they quickly bring on a first employee, a third developer to work on it, Dave Heller, who actually I don’t think they worked with him in Apple. I think they knew him separately and they get cranking and they build a first version of the product. They decide to call it SoundJam. And they need to get it out to users, so all these Mac users who want to get in on the MP3 revolution. But first, they need a publisher because in those days, if you wanted to distribute software, you needed a publisher to do it because you need to get it in on a CD and shrink wrapped in a box and delivered to BestBuy and CompUSA and all these computer scores where people bought software.
+
+Ben:                 Unbelievable. I forgot that this notion of existed of like oh, you need a publisher to distribute software. I was doing research and saw like Casady & Greene distributing software and I’m like, “Wait.”
+
+David:              Yup, so that’s who they go with. Who had distributed Conflict Center for Robin before.
+
+Ben:                 Yeah. And I’m like, “What?” So who’s getting acquired by Apple? Why are there two companies involved here? Oh, publishers were a thing.
+
+David:              It’s amazing how much things have changed since then. But this is so awesome. What you’re not going to get these days was software and when you don’t need a publisher. So, Casady & Greene, the publisher that they go with had an employee who wrote the manuals for the software that they published whose name was David Pogue, who is the David Pogue who would soon thereafter go to work for the New York Times and become the Walt Mossberg of the New York Times. And so he actually wrote the manual for SoundJam which is pretty awesome.
+
+Ben:                 Amazing. And David is what now, the editor of Yahoo Tech, I believe, that publication.
+
+David:              Yeah. I believe that’s where. I think he’s left the New York Times now.
+
+Ben:                 Pretty amazing. It’s a great little Easter egg that I found too doing the research.
+
+David:              So on the strength of the Pogue-written manual, SoundJam comes out in, I believe, late 1998 and it totally, you know, huge reception. Everybody, like we’ve been saying, who wants to participate in the digital music revolution on a Mac, this is by far the best software when it comes out to do it. And Macworld (the magazine) writes a review of it and says, “Of all the MP3 software available for the Mac, Casady & Greene’s new SoundJam MP,” which I think MP stands for music player.
+
+Ben:                 I believe so, yeah.
+
+David:              “...is the most complete. It’s the only Mac MP3 tool capable of not only playing back MP3 files but also encoding tracks from audio CDs, all with a comfortable, customizable user interface.”
+
+Ben:                 And it has the most baller logo. Like we will link to this in the show notes. I remember I used to use this extension called Malph on Mac OS 9. I remember like loving having the SoundJam logos sit in Malph. It was my little pre-dock launcher to launch this thing. It’s like this bald dude with this amazing like he’s got this grin on his face, but his eyebrows make him look like he’s up to no good. And he’s wearing these real cartoony headphones with lightning bolts coming out of him.
+
+David:              That's great.
+
+Ben:                 It’s awesome.
+
+David:              Yeah. The kind of thing that once SoundJam becomes iTunes, Steve Jobs quickly gets rid of that.
+
+Ben:                 Yup.
+
+David:              But the UI is, well, it's not in and of itself groundbreaking but it is the stock UI, as we were saying, you can download skins for it and customize it which skins for software was all the rage at this time. But the default UI is brushed metal and Apple had actually pioneered and had invented and brushed metal UI look when they released QuickTime 4.0 and SoundJam adopted it, and this is the first application that really sort of popularizes this to the world. And then we go through like a 5 or 6-year period where everything Mac is brushed metal.
+
+Ben:                 And so heavy. The Finder is made out of like lead dipped in hot molten steel. Yeah. It’s amazing to watch the evolution of Mac UI after that. Right? You go into Aqua and then you can start to get into many steps along the way but now we’re in this sort of like there was intense translucency and now we’ve taken a step back and we’re at like moderate translucency. You see this over and over and over again with Apple where they come out with a new UI like iOS 7. They go way too far. They go hard on something and then they need to ease off and head back towards center, but this is continually the pattern that they do, is go all in on some new crazy paradigm and then get back towards something moderate.
+
+David:              Yeah. And I wonder, this is total speculation here, but I wonder, Scott Forstall must have been in Apple at this point.
+
+Ben:                 I think so, because Phil Schiller was.
+
+David:              Yeah. And I wonder how involved he was in the brushed metal UI because he was famously or infamously the skeuomorphism champion with the angel of skeuomorphism within Apple before he got ousted and then it was excised from iOS. It was iOS 7, right?
+
+Ben:                 I believe it was even... so it was after the Maps debacle on either 5 or 6, but he left right after 6 and then 7 was a very clear “Johnny, I am taking over software and hardware responsibility.” I think it’s like this crazy 7-month scramble to do a complete UI redesigning and get that out the door, and I think that's sort of why we saw so much shock and surprise is it had less bake time than usual.
+
+David:              Yeah. The other main famous and now in hindsight infamous UI element of SoundJam was the visualizer. Apple included this when they launched it in iTunes. But looking at this took me back 15+ years at this point. I think WinAmp pioneered this. But when you would listen to digital music in a digital music player on your computer, you could have the option to have a visualizer where it would take the soundwaves from the MP3 you were listening to and then put it through all these transformations and make it into this psychedelic, you know, landscape that you were watching sort of in time to the music. And Steve Jobs loved this. He talked about how it reminded him of doing LSD in his youth.
+
+Ben:                 Yup. He talked about like when he announced it – we’ll get here – but when they announced iTunes at Macworld 2001, he talked about it like they invented it. Like, “Wouldn’t it be cool if you could visualize your music? Well, we’ve done it,” and like announcing it on stage. And the folks familiar with SoundJam or here’s an early hint, we’re going to talk about a product called Audion here in a minute, just like sitting there with their head in their hands like “We did that! We’ve seen that!”
+
+David:              Well, you know, reality distortion field and all of that.
+
+Ben:                 Yup.
+
+David:              So pretty quickly, Apple takes an interest. And Steve Jobs and Apple realizes that hey, digital music is here to stay and there is now a big wave and big opportunity for computer companies and technology companies to invade the music business. And this coincides actually right at the time where Jobs... so Apple had acquired NeXT, Steve had come back to Apple in 1997, right? In ’96 or early ’97. But it wasn’t until early 2000 when Steve took the permanent CEO job. He had been interim CEO for a few years and they finally make it permanent in early 2000. The first thing that he does after this has happened is he starts to initiate the grand master strategy that would be really what sets Apple on the path to being relevant again and becoming the largest company in the world which is music and first iTunes and then shortly thereafter the iPod.
+
+Ben:                 A digital hub strategy. This one’s major, major key ingredient. I mean, when you talk ecosystem business models, Apple is like the perfect case study of the behemoth that they’ve become today, all being bootstrapped off this idea of iTunes was the software hub for everything, the iPod was an incredibly successful consumer product even before the iPhone was the most successful technology consumer product of all time, and the whole thing was predicated on this idea that you can take your music with you. You’ve got this iPod, it's all managed there on your computer on iTunes, it syncs “seamlessly” and then you can take it with you, bring it back to your Mac and for a long time especially when iTunes was Mac only, like this was a reason to get a Mac. Like that iPod showed you in the door and then you became a Mac user. And they really, really grew a user base with kind of this iPod as lead generation strategy.
+
+David:              Yeah. I mean, I remember all this happening in my first couple of years in college and so many of my friends switching from PCs and Windows to Macs just so that they could get an iPod.
+
+Ben:                 Pretty crazy. I mean, that is using an incredible product as a really, really high leverage position.
+
+David:              Yeah. So going back to early 2000, this is all just a dream in Steve Jobs – a very, very prescient dream in Steve Jobs’ head but he knows he needs to move fast and he decides that Apple rather than they’re going to start developing what will become iTunes, of course I'm sure they started working on it in-house but they really wanted to buy one of the existing players in the market and accelerate development.
+
+Ben:                 Apple actually released something in June of 2000 called Music Player, that was six months before iTunes came out. And it was like the most basic, sort of the Finder. When you look at it, you’re like, “That’s a separate app.” It’s a pretty barebones thing.
+
+David:              Yup. So there’s SoundJam obviously and then there’s also, as Ben alluded to, another product at this point in the market called Audion. Audion was made an indie dev shop in Portland – shout-out to the northwest – called...
+
+Ben:                 Panic.
+
+David:              ...called Panic, yeah. And Panic was run by Cabel Sasser and Steven Frank. There’s so much fun stuff to come from this in the interplay between these two companies and Apple.
+
+Ben:                 Yup. And Panic has just an incredibly rich history. For anybody who’s a Mac OS developer out there, it was called Transit and I believe it’s now Transmit code too. If anybody’s played Firewatch, they had a hand in building the game Firewatch and they’re truly like a gem of the northwest, of indie Mac and iOS development, just an awesome software shop. They’re just quirky people, like it’s a interesting little side, but like Cabel releases this hilarious blog post every year that’s like the most amazing fireworks packaging he’s found for the 4th of July and he’s like a connoisseur of ridiculous of fireworks packaging. They have all kinds of just like crazy company traditions. There’s this incredible blog post that they’ve put up about how they created the super unique sign that’s on their building now as they’ve grown and they have a shop in downtown Portland. I remember, I’ve been following Panic for years and we’re about to dive in a little bit to the story of how Audion was competing with SoundJam and the different fates that they ended up taking. But there’s this incredible blog post. Anybody that’s interested in the story should go in and read The Long Story by Cabel Sasser of Audion’s sort of history and story all the way through to its resting place that they have on their website.
+
+David:              Yeah. And we’re going to quote liberally from in a minute. But it’s so funny to think about if all of this were playing out today, you know, Apple’s going, looking to buy a company to get into what’s clearly a big technology wave which is digital music and digital audio. And their two options are two indie dev software shops. Today, they would be 15 VC funded companies all pursuing the same thing, all having raise 50 million plus.
+
+Ben:                 David, why weren’t there? Like there was venture around at this time. Was it all going into internet companies and an MP3 coder with a desktop UI just not splashy enough?
+
+David:              Well, yeah. I mean, there certainly was venture at the time. I mean, this was the middle of the tech bubble. But I think a couple of things. Like one, we’re talking about Mac only and that was just a tiny, tiny portion of the market at that point, at least from a VC perspective. And two, I think we’re also just really early in consumerization of the internet. Amazon is around and ecommerce is a thing, Pets.com is a thing and Cosmo and Webvan and all those. But the idea, like there’s no Facebook, there’s no MySpace. The idea of consumers doing things sort of for free and quasi legally, Napster of course is around and AOL has bought WinAmp at this point (which we’ll get into). But for whatever reason, it wasn’t a huge focus area for VCs.
+
+Ben:                 Yeah. One way that you can operate as a VC is put on your hat of what’s it going to be, what’s the world going to look like in 5 years, what’s the world going to look like in 10 years, what’s the world going to look in 20 years. And people believed in the digital music revolution which now seems obvious in hindsight but what’s not clear to me is did people beside Steve Jobs who has always had this passion for music and say it's part of Apple’s DNA and part of who they are as a company is loving music. Did other people including technology investors also believe that the digital music revolution was coming? Or did this catch just everyone completely by surprise and that’s why you see no funded companies in the space?
+
+David:              Yeah. I don’t know. It's a great question. I’d love to go back and have been a VC back then and thought about it. I mean, the reality is too, I mean, none of these companies were big exits. I mean, not even Napster and WinAmp.
+
+Ben:                 Nope.
+
+David:              Really interesting just how much the infrastructure around these companies, the platforms that enabled them to big businesses. I mean, maybe not in music today as we’ll get into later in the show but certainly we think about Facebook, we think about Instagram, we think about Snapchat, just how much that’s changed over, you know, what is a long time in technology but not that long relative to other businesses.
+
+Ben:                 Right.
+
+David:              So Apple tries to meet with both SoundJam and Audion. They’re obviously successful in meeting with SoundJam and they know the folks very well since they were all former Apple employees. But Audion and Panic, they’ve separately been negotiating with AOL which owned WinAmp and was considering also acquiring Audion and bringing it into the fold and having it power sort of the WinAmp version for Macs. And when Apple reached out to them, they didn’t realize what Apple wanted, that they wanted to buy them, and so they thought that they needed – even though they haven’t yet been acquired by AOL, they thought it was only right to ask AOL to be part of the meeting too.
+
+Ben:                 Yup. You think about the Panic guys, these are not like business tycoons. Like the stories that we’ve talked about where you have incredibly savvy, sort of investment-minded CEOs running these empires. Like this is a couple of guys sort of working on this thing out of a passion project and just a burning desire to ship the best software for this use case that they possibly could. And so, for them they didn’t think about like “Oh, do we have a no shop clause?” or anything like that. It was much more like “Well, we’ve already started talking with these guys at AOL. So even though it’s AOL and they’re not the most benevolent people in the world and we’re not even sure we want to go work for them, it’s probably a good idea to see what they think first.”
+
+David:              Include them in this, yeah.
+
+Ben:                 Yeah, yeah.
+
+David:              And it’s so funny. At the same time, of course there’s all sorts of corporate bureaucracy at AOL and executives are changing and they can’t make the meeting happen. And so it just doesn’t happen. Audion and Panic never meet with Apple. Well, they meet later but at this point in time they don’t meet with them. And then the deal with AOL ends up falling through too so they don’t get acquired by AOL either, and it’s unclear that they actually would have wanted to.
+
+Ben:                 Right.
+
+David:              Especially given all the corporate bureaucracy that was going on there at the time. But instead, Apple needs to move forward and so they acquire SoundJam at some point during kind of mid-2000. And Kincaid and Robbin and Heller all come back to Apple joining and they start basically ASAP turning it into iTunes because the find out that Steve Jobs wants to launch iTunes at Macworld in January 2001, six months later.
+
+Ben:                 And they’re doing this very quietly. SoundJam users got no notification. There was no public announcement. That nobody really knew that Apple owned SoundJam and it wouldn’t be around for the foreseeable future at this point.
+
+David:              Yup. And there’s some rumors in the industry that started leaking, but nobody really knows what’s going on and the Panic guys definitely don’t know what’s going on. So they, come January, go to Macworld like every --
+
+Ben:                 David, there is one absolutely amazing little tidbit in here and it’s when Cabel Sasser at Panic got word that something may be going on with SoundJam and it wasn’t totally clear what, he called the tech support line for SoundJam.
+
+David:              Oh yeah, for the publisher.
+
+Ben:                 “Hey. Is it like a good idea for me to buy the next version of SoundJam?” implying like is it going to continue to be maintained.
+
+David:              Supported.
+
+Ben:                 And got this like shaky like, “Oh yeah, I don’t see why not.”
+
+David:              Yeah. So they’re worried. Super funny. This blog post is great and it’s so kind of Cabel to history into the community to write with such candor about everything that happened. And he’s such a great writer too. You really get that sense that he and Steve at Panic, they were doing this because they love making great software and still do.
+
+Ben:                 Yeah.
+
+David:              So they go to Macworld in 2001 and the rumor is that Apple is going to do something big in music. And they’re sitting in the audience and Jobs comes onstage and announced iTunes. And they’re like, “Well, that looks a lot like SoundJam.”
+
+Ben:                 Yeah. It has visualizers, it’s much more full featured, and we should really harp on this point because it's easy to lose that point today with the bloated behemoth that iTunes has become, but it was beautiful. It was revolutionary.
+
+David:              Yeah. It was so revolutionary for the time.
+
+Ben:                 Yeah. Defined new user interface paradigms that would come back into the Mac and Finder and standard APIs later. It was always the bleeding edge by a year or two on what we would see in the OS in the future. And it was so well thought through but with all of the great cool features that existed in SoundJam and a lot of them, I mean, SoundJam and Audion have this war back and forth of releasing a new feature trying to make mine better than the other guys, trying to make mine more beautiful and more well thought through. And suddenly then iTunes comes and it’s like the messianic incarnation of what both of them had been striving for.
+
+David:              And not to mention, free. So, included in Mac OS and completely free for download. Whereas both SounfJam and Audion were boxed software that you had to go to Best Buy and pay $40 or $50 for.
+
+Ben:                 Both free and bundled with the platform, like shipping with the OS.
+
+David:              Yeah. Huge, huge announcement. But Cabel and Steve at Panic, they’re undeterred. And this is all in the blog post which we’ll again link to in the show notes. After the keynote, they’re walking around on the floor at Macworld and they see Steve Jobs. Now, they actually have a meeting. Jobs had reached out to them and Apple – well, I don’t know if it was Jobs but Apple had reached out to them.
+
+Ben:                 This is amazing, how it’s happened. Cabel emailed Phil Schiller to get a meeting. Or I can’t remember exactly why he emailed Phil, but didn’t really get a response back. And then emailed Steve just like I think they always email Steve whenever they release new software hoping that like maybe he’ll take a look. Oh, they emailed Phil because he was an Audion user and they had them in the system.
+
+David:              That's right. He was a registered user.
+
+Ben:                 So they emailed Steve and they’re like, “Hey Steve, you know, just as usual we ship some new software and we think you’d really like it.”
+
+David:              This is before the iTunes announcement.
+
+Ben:                 Yes, yes. And they get a response back that ended up setting this meeting from Steve Jobs. And one of the fascinating things is, the male client that is encoded in the headers is still the next email client. He’s not using Mac OS 9.
+
+David:              Right. Because OS 10 is not yet.
+
+Ben:                 Yeah. And it’s not from Steve at Apple. It’s from Steve at Pixar. And it's just like a little one-liner email that’s basically like “Hey, are you interested in throwing in with us at Apple?” And like, what does that mean? Is that an acquisition offer? Does he want to hire them? It's just so...
+
+David:              Only Steve Jobs. He’s been CEO of Apple on an interim basis for four years at this point. He’s not using a Mac. He’s emailing from his Pixar email address. And he makes an acquisition offer with a one line response. Only Steve.
+
+Ben:                 Yup. So now they’ve got this second meeting set. So the first one sort of fell through.
+
+David:              So they get a second meeting set up for a couple days after Macworld but they were there and they see Steve on the floor and afterwards they go up to him. And they say, “Hey Steve. It’s us. We’re the Audion guys.” And Cabel transcribes this in the blog post and Steve says, to Cabel’s recollection, something like, “Oh, hey. Steve. Nice to meet you. So, tell me, what do you think of iTunes?” And Cabel says, “Well, I think it looks great. You guys have done a great job but I still feel that we’ll do alright with Audion.” Then Steve says, “Oh really? Well that's interesting because honestly, I don’t think you guys have a chance.” Steve Jobs. And Cabel says, “Well, Steve, I really think it’ll still find an audience. We’ve got a lot of higher end features that you guys probably won’t ever have.” Steve says, “Yeah? Like what?” And then Cabel is like, “Well, you can keep count of how many times you’ve played a song and you can even rate your songs by popularity.” And Steve responds, “Why the hell would anybody want to do that?”
+
+Ben:                 And sure enough, they ship that in iTunes in the future.
+
+David:              Yeah, iTunes 2.0 in the near future. So then a couple of days later, they have the formal meeting at Apple headquarters at Infinite Loop and Steve’s there. Well, actually before Steve walks in, Phil Schiller is there and Phil says to them, “You guys remember the last time we tried to meet with you, it was actually because we wanted you guys to make iTunes, not the SoundJam guys.” And they’re kind of stupefied by this. Then right after that, Steve Jobs walks in and supposedly throws his feet up on the table and gets right to the heart of things. He asks a bunch of questions, he wants to know how big they are, how long they’ve been doing this, why they’re doing it. And then he says, “Do you have any other ideas for apps you want to work on?” And Cabel replies, “Well, we’ve got an idea for a digital photo management platform.” And Steve replies, “Yeah, don’t do that one.” And then everybody laughs.
+
+Ben:                 And there’s this like team of Apple people in the room that all laugh and the Panic guys look at each other like “Ah, okay. They all know something we don’t.”
+
+David:              Then I think either Phil or Steve at that point is like, “We’re building that. It’s going to be called iPhoto.” So the Panic guys at this point are probably literally in a panic. So Steve continues and he says, “So here’s how I kind of see this playing out if you stay independent and try to compete with us. It's like you guys are a little pushcart going down the railroad tracks, and we’re a giant steam engine about to run you down.” And then he follows up with, “But we want you guys to work with us. You guys have shown us that you can do a lot with a little. You guys kick ass. Your software totally kicks ass. Cabel, your marketing kicks ass. We think you do an incredibly work and we want you to join us.”
+
+Ben:                 Imagine getting that offer. They have complete autonomy now. They have no idea what it looks like if they join Apple. It’s hard to know to really have a negotiation around what those details could look like. I think Cabel goes into this in the post that basically it should have been a hard decision but they both already sort of knew that the answer was no and that they were independent by... it was kind of their nature and that's what they were going to go and keep doing. So I think this was largely before the term acquihire had been coined but, you know, an attempted acquihire.
+
+David:              Yup. So they ended up turning Apple down. And Cabel doesn’t talk about it in the blog post but I wonder if Steve repeatedly telling them, basically insulting their chances and telling them he’s going to steamroll them, which he was totally right.
+
+Ben:                 Right.
+
+David:              It had something to do with it too.
+
+Ben:                 Wait. Steve Jobs was kind of a jerk but completely right about something? I’ve never heard about that narrative before.
+
+David:              Yeah. Never. [chuckles] All these, I love going back and covering these Steve Jobs stories because both of those things are true. He was a jerk and he was right. Really for all his personality foils, he really was a visionary.
+
+Ben:                 Yup. And so, you know, it’s interesting there’s not much about what would have happened otherwise in the story that we haven’t really covered. I guess what would have happened otherwise, there’s one fork where maybe they acquire Audion instead of SoundJam and then sort of the same thing happens where the two parties are switched. You could imagine the Audion guys instead of shutting down the software a few years later end up “throwing in” with Apple and joining. And maybe those guys go on to VP positions at Apple. But really, like Apple was going to make iTunes. They had some expertise in-house that they’d already started with music player but really wanted to build on top of product that already had some market validation and some of the hard work done in a lot of the MP3 coding and file management. And there two companies doing it, they wanted to grab on, they could have grabbed both. And we are where we are today.
+
+David:              But they did grab SoundJam and as best as we can tell, all the SoundJam guys are still 15, 17 years later all at Apple. And Jeff Robbin is actually, he’s VP of consumer applications. He remains the lead software designer for iTunes. He works with Tony Fadell on the iPod. Supposedly, he actually lead the TV project that kind of never came into being that Steve was... it was his pet project right before he died but ended up... the Apple TV and the new Apple TV did come out but I don’t think that’s the sort of full vision of what they were working on.
+
+And another fun little Steve Jobs side. Robbin was so important that in 2005, Time Magazine wrote an article I think probably about iTunes and the iPod and referred to Robbin but Steve wouldn’t let them refer to him by name, only describe him because he was worried about competitors “poaching” his talent. Became one of the many famous Steve-isms.
+
+Ben:                 That couldn’t be a more perfect segue into what I believe the acquisition category is. And for me, I was debating between whether this is a people or a technology acquisition. I think when you hear comments like that and you sort of take a step back and look at what was going on here, yes, they forked the SoundJam codebase to ship iTunes, it’s based on a lot of SoundJam code. But this was a people acquisition.
+
+David:              Apple was going to do this regardless.
+
+Ben:                 Yeah. And it’s not like some insane new piece of technology that needs to be developed in a research lab where they’re actually acquiring a technology itself. It’s really the people that have played around with this newish MP3 software, right? And really understand that file format and really understand how people want to interact with music. And they really acquired the expertise of the SoundJam folks.
+
+David:              As we were talking about in the beginning of the episode, both the SoundJam and the Panic folks, they’ve spent years in the guts of the MP3 codec audio technology and all of the guts of making this work. I mean, this was not something that was baked into operating systems. So really, in terms of people who knew how to do this and make great music software for the Mac operating system, I mean, you’re looking at five people in the world, and three of them were at one company and two of them were at the other.
+
+Ben:                 And it’s funny, the timing of this episode is interesting for a couple of reasons. Listeners a lot of the time will try and do an episode specifically timed with a news event or a tech trend that’s going on. I thought when we picked this episode that we weren’t doing that at all. I was like, “You know what, it’s about freaking time that we do SoundJam.” And when I was doing a little bit of research for this, I found – this is a good blog post on Marco Arment’s website, Marco.org – that the MP3 file format patents actually expired last month on the 16th of April. The MP3 technology as referenced originally in US patent number 6,009,399 and administered and held by Technicolor expired. So MP3 for the first time is a patent-free file format and it’s funny how I don’t think it was ever really a big issue before, like I didn’t really look into if there were major lawsuits or if Apple had to license the MP3 technology. But it’s interesting now that you can build an MP3 app and feel completely legally on solid  ground to do so.
+
+David:              Interesting. Yeah, I never would have thought about that. I mean, we just take it for granted at this point.
+
+Ben:                 “Oh, it's a standard.”
+
+David:              Yeah. I mean, when we started doing this show, it was the first time I actually thought about and had to deal with MP3 file formats and different types of digital audio formats for the first time in years.
+
+Ben:                 Yeah, it can get hairy. By the way, if you’re ever producing a podcast, there are so many file format things that can make it go wrong. It is so freaking touchy.
+
+David:              Oh yeah. Fortunately, consumers don’t have to deal with this anymore. Should we move into tech themes?
+
+Ben:                 Yeah, let’s do it. So, one big obvious one for me is comparing the world of 2000 to 2005 to the world today, I went from being the music on a zip drive person to music on an external drive person, to having every single one of my files on my computer itself. And I remember like buying CDs, and buying CDs, and buying CDs and downloading music and just having this like incredible huge music library and being so proud of it. Like I would go over to a friend’s house and we would hang out together and like show off cool songs that we had. And like I had the entire Beatles CD collection imported into my computer.
+
+David:              This was the version of your album collection when our parent’s generation growing up, you know, so important. It was such a stamp of who you were. Or your cassette tape or eight-track collection in the ‘70s.
+
+Ben:                 And today, yeah, I’m a very loyal Spotify user and it really exemplifies how much of ownership and much of products that I would buy have shifted to subscription to my life. Like I don’t have a car, I use Uber. I don’t buy movies, I subscribe Netflix. I don’t have a music library which was part of my identify for a while because I’ve subscribed to Spotify and it’s all available on demand and I can stream anywhere on any device. It’s really this world that we live in of everything as a service and everything as a subscription.
+
+David:              Yeah. You don’t have collections anymore.
+
+Ben:                 Totally. And I think that's only going to continue to happen and I think honestly, at Pioneer Square Labs, we think a lot about like new businesses as a start, it's like where is there additional white space and things that people buy now that they could subscribe to.
+
+David:              Yeah. I think a super interesting question for you and for all of us, is as those signifiers of identity have disappeared with the transition from ownership to renting to subscription of content, what are the new signifiers of identity?
+
+Ben:                 Of identity, yes.
+
+David:              Is it the filters you use on Snapchat? But those are available to everyone at any time too. You’re essentially subscribing to those.
+
+Ben:                 Right. How can people be creative in a way that defines themselves.
+
+David:              And express their individuality, yeah.
+
+Ben:                 In a world of so much wide availability.
+
+David:              I mean, I think this is a consequence both, as you were saying, of the shift to everything on demand and subscription versus ownership. But also of the massive, massive broadening of reach of social networks, of Instagram, of Facebook and of Snapchat in its own way too. I mean, I think a lot of while it opens up communication and the possibility to be seen and heard to so many people to so much wider of an audience, it also at the same time has a homogenizing effect.
+
+Ben:                 Yeah, totally. It’s interesting to start thinking more about like things that haven’t been homogenized yet that could be. Like you see signs right now, like everyone gets the same opportunity to post an Instagram shot and you just get to pick like what pixels, are you lighting up what colors in that square that make you an individual. And there’s all these people that do food photography. Then on other side of the coin, there’s people drinking Soylent and like deciding that “Oh, what the guy eats... I don’t need to differentiate myself on what I eat and I don’t actually take that much joy in it. So whatever, I’ll just drink Soylent and it is ‘nutritious’ and everything that I need.” It’s interesting that I think about like there’s people that pride themselves on taking the photos of food and there’s other people that have written that off. They’re like, “No. That's the way that I’m going to be the same as everyone.” And it's almost like when you think about a business, like where are we going to differentiate and where are we going to be world-class and where are we going to just try and outsource our non-core competencies. There will be table stakes in these areas that aren’t core competencies. As you point that to people, do you think that we’re getting less and less opportunities to be different and define our own core competencies because there’s an ease of availability to the table stakes and everything else because there is everything as a service or you sort of can outsource everything.
+
+David:              Yeah. I mean, I really think so. The really interesting question is, like, are we at the crest of the wave here or the nature of the wave in terms of is individuality and individual expression especially in physical things and collections, is it going to continue to decline, or is there going to be a reaction a pushback to this homogenization to the extent that people are feeling it and people are going to want to go back. I think this might be why you’re seeing physical album sales and LPs, vinyl is coming back.
+
+Ben:                 Vinyl continues to grow 50% year over year, yeah.
+
+David:              Yeah. I think it’s why you’re seeing a really vibrant pen and pencil, paper, notebook, Moleskins and other – you know, Moleskin is corporate now – you know boutique notebooks. All sorts of things. You’re seeing it in clothes, in fashion. I wonder if there is something similar digital and tech-enabled sort of root to more honest and individual expression that can start to emerge.
+
+Ben:                 That's really interesting. I’ve got a couple more that are not nearly as ethereal.
+
+David:              Yeah, we’ve waxed philosophical on that too. Go ahead. You want to do yours quickly and then I’ll jump in with a couple?
+
+Ben:                 Yeah. So it's interesting that companies acquiring former employees. When we started Acquired, as long-time listeners now, we do this to try and find common threads between successful acquisitions to really understand what makes a successful acquisition so that as we build companies in the earliest stages, how can we build with those things in mind, that you need a very successful integration or very successful IPO and you don’t want to build something that’s great early and then sucks when it’s acquired or something.
+
+So one thing that I totally thought was going to be a theme that we have only seen once besides this episode is companies acquiring people that used to work for them. And that previous one is Steve Jobs and NeXT. We talked about that it could happen in the Jet episode where like potentially Marc Lore could end up back at Amazon and there’s a bidding war with Walmart because Walmart really wanted to keep Jet out of the hands of Amazon. But like we really haven’t seen it and if you would have asked me a couple of years ago, like is that a common thread of someone leaving the company, starting a thing and it getting bought and bringing them back in. It seemed like it was a common thing but it has not been the predominant story of these very successful IPOs that we’ve been talking about or these very successful acquisitions.
+
+David:              If anything, it’s kind of the opposite. I wonder if, you know, I think a lot of big tech companies are buying companies that are started by people from their rivals. Like I think about Facebook buying Instagram and obviously that is our benchmark here at Acquired. I mean, there is even as Instagram just continues to crush it, I mean that is going to go down as one of the best purchases of all time in any industry, technology or otherwise. But, you know, Kevin says the term came from Google and there’s so much Google DNA that has come into Facebook through acquisitions and, similarly, Apple DNA into Google or Facebook and Amazon or what-have-you.
+
+Ben:                 All right, I’ve got one more and that one is this rising tide lifts all the ships concept where if any of the listeners are familiar with like the indie Mac ecosystem, there’s this concept of getting Sherlocked where Apple introduced Search, sort of Sherlock the feature and that was a third-party utility before, and when it got built into the platform that “we’re very sorry, thank you for the idea, thank you for building our platform, we’ve destroyed you.” And there are times where that is terrible and there are other times where they do a bare bones implementation on the platform level and it gets better for everyone. An example of that, I mentioned Marco Arment before that he built Instapaper before doing Overcast and with Instapaper, Apple came out with Safari reading list that was baked into the operating system into the browser. And that actually raised awareness of the category of the concept that you could save things to read later and was good for Instapaper. And it’s interesting to think about how sometimes that’s the case but sometimes it kills you and in this case, Audion guys were hoping, well, maybe Apple did sort of a barebones thing here and for pro sophisticated users, they can find out about music management through Apple and then come and buy our software. And that totally didn’t happen. iTunes was too full featured, number one; it was free and it was bundled into the platform. And it’s something where it’s I’ve always thought before, well, maybe people freak out too much when a platform launches a thing and they should think more about the Instapaper strategy of how can you create something that the platform by their nature, by needing to serve a wide variety of people aren’t going to serve the narrow band, like how can you thrive in that narrow band. But you really need some serious pro features and serious narrow band differentiation in order to make your thing worth paying for when it’s competing with free and baked into the platform.
+
+David:              Oh man, this is such a great lead-in into my biggest tech theme I wanted to discuss. But I'm wondering thinking about this, how much this has to do with Steve Jobs. Like when you think about, I mean, Sherlocking was happening in the Steve Jobs era and certainly iTunes-ing which absolutely killed Audion, as they wrote about in the blog post. Steve was write and he told them to their face that when he was launching iTunes, he was like, “Yup, we’re going to steamroll you guys. Like you should throw your lot in with us.” And he was right. And then it’s later kind of in the tail end of Steve’s tenure and then after Steve with stuff like podcasts, you know, talking about Marco and the Apple default native podcast app, but I use Overcast now that Marco makes and so many other people, and it’s the indie software that’s so much better or like with Maps. You know, when Apple launched Maps and it was like, oh, you know, are they going to kick Google. And like no, best thing that ever happened to Google Maps on iOS was Apple launching Maps.
+
+I wonder if it’s really that both the focus that Steve had on really, well, on (A) doing individual apps right and having a ton of focus on them. Having them (B) key parts of his overall vision. I mean, his vision for the digital music revolution and making Apple relevant again wasn’t just iTunes. It was fitting into a whole piece of ecosystem that he was building. And Apple has really not done well on that since Steve.
+
+Ben:                 Yeah, that's interesting. iTunes is relatively deep. Like they’re not taking a broad, shallow approach. They took a full featured approach, and that full featured approach resonated with everyone. Like they did this amazing job of making it deep without being complex and part of that is the praise of the UI design, but another part of that is the fact that maybe Steve kind of was the every man in his interest where when he decided “This is a passion of mine and music is a passion of mine, and we’re going to go deep into music and be a music company,” that actually was something that just did resonate with tons and tons and tons of people, and that he was kind of like a symbol for the every man.
+
+David:              The tech theme I wanted to discuss and bring up is one we’ve talked about so many times on this show which is when you’re making a product and I think this just illustrates it so well. You need to make something that people want and the best way to do that and to know you’re making something people want is to make what you want.
+
+Ben:                 And especially if what you want is aligned well with mass market. Like those are the key piece.
+
+David:              Both mass market and the timing of waves in technology, of which digital music at this point in time was a huge one.
+
+Ben:                 Yeah.
+
+David:              I was thinking doing the research and prepping for the show and like we just talked about, Steve, say whatever you want about his personality. Some people love him and some people hated him. But he was someone who was very often right about things and right about things in a big way like this. And I think this is a key component of why he was so right was he had an experience in his mind that he had a vision of, that was so clear to him and that he wanted, and then he was so exacting in managing the products to really, really solve that need and bring to light what he wanted, and that aligned with technology trends and with what lots of people wanted. And I think there’s a real danger in if you take the opposite approach and you manage a product just to either feeds and speeds and specs, or to just try and time a wave without thinking about solving the problem, that's when you can run into a lot of trouble.
+
+Ben:                 Yup. Agreed.
+
+David:              That’s my philosophical waxing for tech themes. The other two ones I wanted to hit real quick, I mentioned earlier in the show. I love doing these throwback episodes because it just reminds us how far technology has come and I cannot imagine having to muck around in the depths of MP3 codecs and we are standing on the shoulders of giants here.
+
+Ben:                 We are.
+
+David:              And will continue to. And 5 to 10 years from now people will be like “Gosh, I can’t believe actually you had to write in Swift or in Objective-C.” It's this self-reinforcing and improving cycle in technology that makes magic happen.
+
+Ben:                 Yeah. Layers of abstraction that you used right after assembly language or even before that, the hacks of the binary and then you get the advent of machine language and then ever since you just keep building more abstraction layers on top of the stack and then you get hyper card and you get these visual forms of programming languages and you get playgrounds where you can see your iOS codes sort of move around in real-time. And there have been many times where people have envisioned the way that we were programmed visually and easily in the future, and you don’t actually have to know about the guts but often to do the specialized thing or to do the best thing, you really do need to know a lot about the guts. And I’m very curious to watch and see like I think to do the easy thing, we’re going to have platforms, but to do the hard thing, no one who built the platform envisioned the really hard differentiated thing that you want to do. So I think there’s always space if you want to be different at the difficult product level. There is always a space to know what’s under your layers of abstraction.
+
+David:              Again, Steve Jobs is back to his favorite Alan Kay quote, you know, “If you really care about software, you should really care about hardware.”
+
+Ben:                 Yeah.
+
+David:              Okay. Last one I wanted to make real quick is just this whole idea that again we’ve talked about on this show and this episode and others is, it’s really hard to compete with free in technology and if you have a utility app and it’s just a utility, if there is a big enough market for that, somebody is going to come along and make it free. And you are not going to be able to capture long-term value just from utility. But what does capture long-term value is either an ecosystem like iTunes and the iPod and the Mac and the digital hub and sort of bundling. There’s two ways to make money in business: bundling and unbundling (as we talked about on the last show), or taking an approach of creating a network around like Instagram did. Instagram was Hipstamatic. It was a photo filter utility. But they created a network around it, not just a utility. And I think there’s a big lesson there. Utilities can be a great wedge of an entry as a product into building a customer base. But you can’t stop just there if you want to build a sustainable business. You have to create either an ecosystem or a network around it.
+
+Ben:                 Yup, yup. Love that point. All right, should we go into grading?
+
+David:              Let’s do it.
+
+Ben:                 Okay. So the financials are silly on this one. Like we don’t even have numbers to run. Like the purchase price of this thing was so small.
+
+David:              For all we know, they might not have even really bought it. They might just have hired the –
+
+Ben:                 Yup, totally. Totally. And getting an opportunity. If you’re those guys and they say “Hey, we’ll pay you a little bit more than you’re making on your own right now, you’ll get a stable wage and we’re going to distribute it to way more people and give you some team members,’ it's like, “All right. Done. Deal. Sounds great.”
+
+David:              And you get to the be the key architects on what became grew into the most powerful and best product ecosystem and business in the history of technology.
+
+Ben:                 Yup, yup. And so just for fun, I went and looked at last quarter’s financials, they break out services revenue. So Apple has the Mac, iPhone; they break out a few different product lines and one of them is services. And that's basically recurring revenue that comes from iTunes related things. So it’s Apple Pay, it’s Apple Music, iCloud, those sorts of things. And that alone last quarter was $7 billion. So just on those sort of services-related, these things that were born out of iTunes. But really, I think the fair way to assess is like it kind of allowed along with Mac OS 10 and next generation operating system; iPod, an amazing piece consumer hardware; the iPhone, the most revolutionary consumer technology product of all time – like it kind of enabled the way that they were going to do the digital music revolution and the digital hub.
+
+David:              Let’s be clear. No iTunes, no iPhone.
+
+Ben:                 Right. And last quarter, they did $52 billion in revenue. Last quarter, across other product lines. And we talked about this that like the numbers are almost silly when you look at the next acquisition and it’s like well, I think Apple had done like a trillion dollars of revenue since buying NeXT, almost all of it in some way attributable to the next. It’s sort of the same ridiculous thinking. So I was like, “Okay. Duh, A+.” But I’m going to walk it down to an A for this reason: Apple was going to do this with or without either of these two companies.
+
+David:              Yeah. They were going to do this anyway, no doubt.
+
+Ben:                 They would have figured it out. They would have found a way to hire the right people. This is square in their core competency. It’s not like they needed Instagram that came with a whole network effect. It’s not like they needed Pixar that came with IP. It’s not like they needed some core research-based technology. Like they were going to do this. So, A+ on the foresight, the vision, and the plan to create iTunes and have this strategy. Also freaking brilliant acquisition, like great. It was sort of the obvious thing and it was good on them for doing it. I’m giving an A because of the outcome of what that small investment has really become, but I don’t think all of that value is attributable to the acquisition in the same way that it was for NeXT.
+
+David:              Yeah. I think this is everything you would want in an A+ in an acquihire, which is what it was. And in terms of our sort of grading benchmarks on this show, yeah, I think I’d give it an A-. This is a super great execution, probably had very little impact on the ultimate trajectory here. But it did accelerate things. If Apple had had to build iTunes from scratch, then it would have taken longer or maybe it would have given time for somebody else to really emerge and whether it was Rio or Microsoft or somebody else with a digital hub strategy.
+
+Ben:                 There was something to be said for acceleration, yeah.
+
+David:              Yup. Definitely something to be said for acceleration. But on the balance, this is in and of itself no Instagram, but is a component of as we’ve said many times on this show, what has become the best business and business model of all time.
+
+Ben:                 Yup.
+
+David:              Okay. Follow-ups, real quick. So, Amazon, a contender for the throne of best business model of all time, so much going on over there. So much innovation and the latest being the Echo Show. We talked about the Echo Look on the last episode. First camera, now a screen. And shout-out to other friend of ours and friend of the show, Rob Katz over at Amazon for being one of the key PMs on the Echo Show.
+
+Ben:                 Yeah, and it’s interesting. As more of this Alexa hardware starts to roll out, it’s interesting thinking about what’s a clear core evolution of what Alexa is for the mass market and what these Echoes are for the mass market, and what is like a side project. Like when the Echo Look came out, I was thinking, “Okay, narrow use case.” But this Alexa Voice Service is something that is cloud-based and you can put on a variety of hardware. So why not put it on some specialized things especially if you can manufacture them cheaply and ship it with economies of scale. The Echo Show to me feels like hey, we released the Echo and now this is Echo version 2 and this one has a screen. Because like there’s so many freaking use cases when I'm yelling at Alexa that I’m like, “Boy do I wish I could see the product that she’s trying to describe to me before I commit to paying money for it.” Or there’s a variety of things like see the song that’s playing, see the timer countdown. Like the device needs a screen.
+
+David:              Yup. So great timing and this episode too, talk about the power of a digital hub strategy and you can see the potential here for something like the show and future versions of Alexa and Echoes to become the hub of Amazon, the hub of ecommerce. I mean, what is Amazon? It’s an ecommerce company when you’re buying things and buying things through the Echo. Gosh, it’s really helpful to be able to see it.
+
+Ben:                 Yeah. Even the hub of messaging. Crazy. Like they’re a trojan horse communication platform now.
+
+David:              Next follow-up relevant to, right on the heels of our last episode on BAMTech, Facebook announced yesterday that starting today, they have done a deal with Major League Baseball to stream live 20 Major League Baseball games on Facebook this season.
+
+Ben:                 Very interesting.
+
+David:              And I think, well, I’m not sure, details are scarce so I guess we’ll find out later today when the first one happens. But I would assume it will be done on Facebook’s infrastructure, not BAMTech’s. Which is interesting given BAMTech is now an independent company.
+
+Ben:                 Yeah, it’s interesting. As soon as they split, like there’s competing business interests and MLB should do what’s in MLB’s best interest which is make their content available on the most places to generate the most revenue for them. And so, like suddenly BAMTech is an interesting thing for them, it’s a great utility. It’s an asset that they own a lot of and the majority of and can guide what it does. But, when it’s in their own best interest for their core business, suddenly it’s Facebook’s infrastructure.
+
+David:              Yup.
+
+Ben:                 Which let’s continue to harp on the fact that the horizontal versus vertical problem that we touched on last episode that so many people fail at, Major League Baseball’s doing a great job at knowing “Hey, our main priority is our main priority, and this BAMTech thing helps us when it helps us. But otherwise, go be your own business.”
+
+David:              And this is a great... we talked about on the show why is it in MLB’s interest to spin this off, you can see why it’s in BAMTech’s interest. But this is a great example of it was in MLB’s interest to do this. Now they can focus on the main thing and serve their customers where they are.
+
+Ben:                 One more piece of follow-up? Snap had their first earnings call where they in a single day dropped from 22.29 down to 18.05 after being up even higher before that. They announced they had a $2.2 billion loss, 2 billion of which could be attributed to stock-based compensation related to restricted stock units with a performance condition. So everyone’s freaking out. It’s back up to over $20 now. Everyone is freaking out about this loss and like, yes, they’re losing a lot of money – yes, that’s true. I'm much more concerned about the potential slowing of user growth from all the Instagram features really cutting them out before they have a chance to grow to a larger audience. But I think the $2.2 billion loss was very overhyped. Like it’s a one-time event with a lot of these RSUs. Much of it, the public already knew about that was the 700-800 million CEO bonus that is a very weird thing. Go listen to the Snap episode if you’re interested in that. But basically, like all that should have been priced in and expected. I think it happened, I think it vested like a little bit earlier than people thought which is why it came as more of a surprise.
+
+David:              Interesting.
+
+Ben:                 But it’s a lot of hype. There’s still a long game here. Let’s see what the next eight earnings calls look like.
+
+David:              To me, the Snap earnings call is I guess surprising. I mean, these things take time but it’s like “Okay, well, that didn’t really answer the question. We got to wait till the next one.” And the question is, user growth, and can they reignite it. And it picked up a little bit from the last couple of quarters but not enough that it was... Snap has not yet and will need to in the next 6-12 months, it’s likely longer but I don’t think they have that much time. They’re going to need to definitively answer yes or no and how they’re going to reignite user growth. And this is, like we talked about on the episode, I mean just the exact same situation that Facebook was in right after their IPO totally missing mobile, and it will be very interesting to watch. And of course, that was when Facebook acquired Instagram and as of yet, Snap has not made any major internal product announcements or acquisitions along those lines. But I think these next 6-12 months are really when the next few years of Snap are going to be forged.
+
+Ben:                 Maybe they’ll ship free AR/VR spectacles to everyone, get everyone on their platform and then... I don’t know.
+
+David:              Well, that's one way to use your IPO cash.
+
+Ben:                 That's right.
+
+David:              All right. Should we move on to carveouts?
+
+Ben:                 Let’s do it. So mine is accidentally very aligned. The way that I generally do carveouts is I’ll look through my Instapaper and say “What did I read this week?” and I’ll flip through my Overcast and say “What podcast did I listen to this week?” The one that stood out to me is the most interesting thing I consumed was the Internet History Podcast – shout-out to Brian McCullough, friend of the pod – and the Napster story with Jordan Ritter.
+
+David:              Oh yeah. So great. I’m so glad that episode came together, both of them friends of us and friends of the show, and that was a great episode. Highly recommend. Everyone go check it out. And Jordan, it's very relevant to this episode talking about early days of the digital music revolution and Napster and MP3s. And Jordan is just a fantastic guest. He’s very honest and open about the dynamics that the company and in the industry and how Napster played out. Very worth listening to.
+
+Ben:                 Especially if you are listening to Acquired because you like narratives and you like hearing the backstories of this stuff and the details, what went down in inside baseball. It’s all there. Also, thank you, David, for doing my carveout explanation for me.
+
+David:              Sorry about that. I just totally hijacked your carveout.
+
+Ben:                 I’ll send you my carveouts beforehand now and that way you can prepare a little something.
+
+David:              I couldn’t help myself, I’m sorry.
+
+Ben:                 Pour myself a glass and just listen.
+
+David:              You want to do mine?
+
+Ben:                 Well, I don’t know what it is.
+
+David:              Mine is actually, well, I don’t know if you could do mine. Fun, totally unrelated, as we’ve talked about this show, my wife Jenny and I have been on a bit of a travel expedition over the last few months and we wrapped it up, we just got back to the States yesterday which again is probably why if we’re less professional on this episode, we can blame it on the jetlag. But one of our last stops before we came home was Israel and neither of us had never been before and was just such an amazing, eye-opening experience in so many ways. And so glad we went and just really would recommend to everybody if you have a chance, if you live in America, if you live in Europe or elsewhere in Asia or Africa and you haven’t been to Israel or if you don’t live in the Middle East.
+
+Ben:                 So basically you don’t live in South America?
+
+David:              Yeah, well if you live in South America... If you don’t live in the Middle East, let’s put it that way.
+
+Ben:                 I see.
+
+David:              There’s so much going on and I feel like I understand so little still about that place but I understand so much more about the world and about our own country having actually been and seen what’s going on there. And even though Israel is just a small part of the Middle East, makes me want to go back to see more. Felt completely safe the whole time. As safe or safer than any major American city. And just can’t recommend enough to go see it with your own eyes. It’s an amazing place, if you haven’t.
+
+Ben:                 I felt very, very similar after my trip after a few years ago. It’s something to understand there for everyone.
+
+David:              Yeah. Regardless of what religion or lack of religion you are or political persuasion, I mean literally it is the cradle of western civilization and it is worth seeing with your own eyes.
+
+Ben:                 Yup. All right, listeners. I think that will do it for today. We appreciate you listening, as usual. Thank you so much to our sponsor for this episode, Silicon Valley Bank. If you are not subscribed and you want to hear more, you can subscribe from your favorite podcast client and if you feel so inclined, we would love a review on iTunes. You can find us at Acquired.fm, @Acquiredfm on Twitter. We’re on Facebook, search for Acquired podcast or Acquired. Thanks for joining us.
+
+David:              We’ll see you next time.
+
+‍

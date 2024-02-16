@@ -1,0 +1,633 @@
+Ben: Welcome to this special episode of Acquired, the podcast about great technology companies and the stories and playbooks behind them. I'm Ben Gilbert.
+
+David: I'm David Rosenthal.
+
+Ben: And we are your hosts. Eight years ago, I pitched David on an idea for two different podcasts. One was on grading technology acquisitions that became Acquired. The other idea was to do episodes on companies that managed to create two separate multibillion dollar innovations. Our hypothesis is that most companies have really one big founding insight, and that the rest of the company's history is just drafting on that.
+
+Hamilton Helmer and Chenyi Shi, friends at the show, coincidentally have been exploring literally exactly that idea. They've been asking questions like, what percent of the profits of the biggest companies in the world came from a second business line? They have a new framework, in addition to Seven Powers, to help founders answer the transforming question. If I were to expand the scope of what my company does, how should I go about it?
+
+David: This is a particularly interesting time to do this episode with them because I feel like a bunch of the companies we've covered recently on the show, this has been a key part of the story, whether it's Amazon and AWS, or LVMH and how all the businesses—LVMH itself—had been transformed over the years. In particular, I'm thinking about Nintendo and our Nintendo series and going from a supplier for the Yakuza to dominant video game console manufacturer.
+
+Ben: Yup. David, I can say that you and I have already recorded this interview with Chenyi and Hamilton. We address exactly that. Listeners, this is a really fun one to do. Having Hamilton and Chenyi on, it just concretizes a lot of the various abstract thinking that we banter about on the show but never quite crystallize. They crystallize it for us.
+
+If you want to go deeper, you can become an Acquired LP to come closer into the Acquired kitchen. We have bimonthly Zoom calls. We just announced that we'll be asking our LPs to help us pick future episodes. You can join at acquired.fm/lp.
+
+Subscribe to our second show, ACQ2, formally the LP Show, which is now public for expert interviews with founders and investors. Search ACQ2 in any podcast player.
+
+Join the Slack. There are now over 15,000, smart, thoughtful, kind members of the Acquired community at acquired.fm/slack. It's pretty cool. But I will say, that only represents 5%–10% of you who listen to Acquired every month. For the rest of you who haven't joined, come join us in the Slack.
+
+Without further ado, this show is not investment advice. David and I may have investments in the companies we discuss. This show is for informational and entertainment purposes only.
+
+David: Hamilton and Chenyi, welcome back for the third time to Acquired.
+
+Hamilton: Our pleasure. All is great to be here.
+
+David: The Acquired audience has grown so much since the last time we did this together. We thought it might be fun first to humanize the Seven Powers a little bit and do a little background on what is this thing that we talk about on every Acquired episode. How did the two of you come to be world experts in this?
+
+Hamilton: I think in other episodes, my understanding as an economist is that the ground zero for economic vitality is the strength of the entrepreneurial sector. There's a famous economist called Joseph Schumpeter. He posited that. It was different from normal economic theory at the time because it was very dynamic and not mathematical. I believe that very strongly. Of course, Silicon Valley is a center for that.
+
+The thing that really interested me was, can I contribute to that in any way? Is there anything that I can do that helps with that? My discipline is sort of business strategy. There's a real question about, is there anything useful that business strategy can add to that creative, dynamic effort of all these people? I'll cue it up with an example that I used to use in my class at Stanford sometimes, which is that if you can imagine me holding up two devices.
+
+Ben: That's the iPod with the touch wheel. I have no idea. Is that a calculator?
+
+Hamilton: Right. That's the first handheld calculator in the United States, Bowmar. Here's the issue. Here are these two devices. They were wildly successful to begin with, incredible product/market fit. Bowmar went from maybe $3 million to $100 million in a couple of years, which back in those days was real money.
+
+Of course, calculators are an interesting starting point because the Japanese calculator, Busicom, was what started the whole CPU revolution and so tremendously successful. You all know the story of the iPod. That was the beginning of Apple as an incredible business model, but it also was the precursor to the iPhone. Bowmar, on the other hand, and this speaks to why Seven Powers...
+
+Ben: Not exactly a household name today.
+
+Hamilton: Right. You've never heard of it. That dates me and you.
+
+Ben: You might be saying that innovation is not sufficient.
+
+Hamilton: Or disruptive technology is not sufficient. It was very disruptive if you were an abacus maker or a Monroe calculator maker. It puts you out of business. Very disruptive, but completely went out of business after a while. Tremendous brand recognition was the thing and a huge spin up. That speaks to strategy.
+
+What you wonder is, if you're helping the people founding those companies, is there anything that you could say that would maybe guide them to be a little more iPod-ish and a little less Bowmar-ish? The problem with that is that the nature as the two of you know from your Acquired side, as well as all the other things you've done, the nature of developing business is adaptive and evolutionary.
+
+It's not like you said a bunch of bright people in the room and you figure out the strategy and say, okay, we're just going to execute from now. You go forward in time, effort, and new information comes in. Oh, that customer didn't do what I thought, this competitor is coming in this way, the technology frontier has changed, all this stuff, and you have to adapt to that over time.
+
+The problem with that, is that, okay, well, then, if it's that way, how does a body of thought contribute to that? The answer to that is that if you can provide a useful mental model, or as Chenyi calls it pattern recognition, you provide something so that as entrepreneurs are moving through space and time, they can see what's a little more likely to end up iPod-ish and a little less likely to end up Bowmar-ish. That kind of mental model is actually hard to construct.
+
+What I say in the book is that the very high hurdle that it has to clear is that it has to be simple but not simplistic. Simple, it has to be that way or people won't remember it. If it's some complex theory that you have to go back and look it up every time, it's not going to help a lot when you're making business decisions. Not simplistic means that it's got to cover most of the situations you face. In other words, it has to be relatively exhaustive, and that's a high hurdle.
+
+There were a number of strategy frameworks before that were extremely interesting and made great contributions, but weren't simple but not simplistic. Probably the most prevalent was Porter's Five Forces focused on what he calls industry attractiveness. It was a tremendous contribution, but it's not insufficient. If you're in an attractive industry, it doesn't get you to the kind of security that an iPod has.
+
+Ben: Right. Samsung is in an attractive industry called smartphones, and yet their P&L looks quite different than Apple's.
+
+Hamilton: Right, and there's been statistical work just buttressing that point more generally. The industry attractiveness doesn't explain a lot of firm differences and profitability. Another one was Christensen's work on disruptive technology, which is just phenomenally interesting and highly erudite, but this example is perfect.
+
+Disruptive is actually not correlated with long-term profitability. It has to do with product/market fit. It basically says you've come up with a better way of doing something that takes out the incumbent. It disrupts it. Very interesting in that frame but not for the Bowmar or iPod problem.
+
+Then there's a whole strain of thought around capability analysis. You can do a lot of things with capabilities, but it's not common that that's the basis of why you build great business models. Other people have those capabilities as well.
+
+What that meant from a concept development framework is that I had to go back to square one and say, okay, I'm thinking about pattern recognition for entrepreneurs. What's simple but not simplistic? One of the keys to that question is persistence, which is that, if you were to say Apple's profitability next quarter, it's not a random draw. It's highly persistent, and there's statistical work on that that suggests that's generally true for very successful companies.
+
+Ben: Importantly, not just next quarter, but four quarters from now and eight quarters from now. You have a pretty high level of confidence. We don't know 10 years from now, and that's what we're going to get into on this episode, but we know a year from now.
+
+David: Bezos always used to say the line, this quarter is already baked. This quarter was baked three years ago. I'm working on a quarter, five years from now.
+
+Hamilton: Yeah, there's that. But I think also the fact that he says that this quarter is baked also tells you something about the business model in a way. That persistence tells you that there are economic structures that create attractive outcomes. You then ask the question, can you generalize about those? Because if you can generalize about those, then maybe you can get to something sufficiently simple and yet comprehensive that is useful to entrepreneurs.
+
+After looking at that for decades, my conclusion was that actually, it is simple. There are only seven of them. In fact, if you're dealing with startups these days, that's usually a smaller subset of that. That, to me, was a fairly profound insight. That's what Seven Powers is. It's just those structures that if you can get there, make you more iPod-ish and less Bowmar-ish.
+
+Ben: A key piece that I always enforce myself to remember whenever I'm analyzing a brand new business idea and trying to run it through the Seven Powers framework is, Seven Powers is about defending the castle and less about is this a good idea or not? It is a second invention after product/market fit to create a durable business.
+
+Hamilton: That's right. I wish I had said that.
+
+Ben: I think you did say that. I think this concept of a second invention is literally your words from a previous episode.
+
+Hamilton: Product/market fit and power are more or less orthogonal. There are some complexities in that statement. I'll tell you something, Ben and David, that has occurred to Chenyi and myself over the last year which is a little bit different maybe than what's said in the book, which is that I used to think that it was sequential. You get product/market fit and then you deal with power.
+
+My biggest education is talking to founders. I love their intelligence, their creativity, dare I say, their youth, and their deep thoughtfulness about stuff. What I'm finding is that the proper path is actually to be thinking about those things simultaneously because what's going on is you're trying to figure out, okay, what am I doing with this business? I've got this choice and this choice. In the mix of that, there are both product/market fit questions and power questions.
+
+You don't just say, I'm just going to do the product/market fit stuff and think about power later. You actually need to start thinking about it. You won't solve it completely at the beginning. You won't know, yeah, I have power, for sure. But you should be thinking about it. Persistence then leads you down to those structures.
+
+Part of the reason that it's really cool that you're thinking about this in your interviews and we think about it in our work is one thing I've said to you before. The genotypes of power are simple. There are only seven. My partner, Bill, says that it turns strategy from an essay question into a multiple choice question, although I don't know what ChatGPT or the difference is anymore.
+
+The phenotypes, that is the exact granular way on which they are articulated and carried forward, are complicated. Chenyi and I might struggle for weeks trying to figure out whether something has power or not. I'll give you an example of how the idea of power is so important.
+
+I'm a sports car nut. I used to drive too fast. Porsche is a great example here. Think of that, the 911, first one came out in 1964, 60 years ago. For sure, it wasn't the sportscar leader of the world at the time by any means. What that enabled Porsche to do, which I don't think was conscious exactly but spun out in an evolutionary way over time, was that they took away the design element as part of the mix in what wins over sports car enthusiasts.
+
+If you looked at a 911 in 1964 and a 911 today, they look the same. What did that allow Porsche to do? It allowed to just constantly optimize the best performance features in the context of what people would pay for that—handling, acceleration, interior ergonomics—and the technology frontier was changing fairly rapidly.
+
+Today, I'm just astonished at the performance you can get from a small scale Honda that'll go 155 miles an hour, faster than a Jaguar XK-E back in my day. There are all kinds of parallel developments in other aspects—brake, sound deadening, and everything else. They could constantly upgrade each generation without having to think about the design aspect to it, but it hit the performance envelope, and people would pay for that. You needed all those things. Consequently, they end up with this incredibly durable business model, by far the most profitable automobile maker, devoted fans, and great cars.
+
+Ben: Are you saying the fact that they abstracted away the design and they fixed the design meant that it wasn't a hits-driven business, it wasn't, do people like this design are not?
+
+Hamilton: Exactly. Why are you interviewing me?
+
+Ben: You do the hard part. I just get to synthesize.
+
+Hamilton: Yes, and then all of these elements like getting the PDK transmission just right. Those are fixed cost investments. If they can spread that over a larger number of automobiles, it's lower cost.
+
+How many times have you seen sports cars that were quite interesting, and then they just couldn't keep upgrading them to meet the great? Think of the Toyota 2000, an early version of Alfa Romeo, or something.
+
+Ben: To your point, it's not just, did people like them enough? It’s, could they predict that enough people would like them to invest in the necessary things they needed to invest in? If they couldn't be certain or didn't have the chutzpah to say, they're going to sell a million of these things, then you can't make the investments you need to.
+
+Hamilton: Right. Porsche was the one that just kept being right on that performance envelope because they were able to do all these investments, and it's a phenomenal business model.
+
+Ben: All right, let's kick it over to Chenyi. Anything to add Chenyi before we move to transforming?
+
+Chenyi: I guess I'll just add on to the perspective of a student of the Seven Powers framework, not the creator of that. One thing that has struck me as the most useful way to apply the power framework is really as a cognitive leverage. I think, Ben, you mentioned, it doesn't really tell you what's the next thing you should build or what product is going to hit the market. It tells you what's the right strategy question to focus on.
+
+I think the way I put it is, what is not important is as important as what's important. Naturally, as founder and operator, you'll spend 90%–95% of time on operational excellence. It's so important, you have the right team, the right culture, the right execution, but there's 5% of time that you may spend on real important strategy questions. Those are what determines the eventual margin structure of the business, the competitiveness of the business.
+
+What power structure can tell you is, what is that 5%? Out of all the things you're thinking about, what really makes the real strategic importance that you spend all the time thinking about, that's one way I think this will be the most useful, maybe for a lot of members in your audience? The other comment I'd have is, now that I've had the chance to work on the theory myself, it's actually amazing how it's not done yet.
+
+I've been in Hamilton's class 7–8 years ago at Stanford. Now I've been working with him for the past couple of years. I used to think, oh, it's all in the book. It's just there. There are seven of them, and it's all described. But then as we dig into it, things that we don't know come up.
+
+We talked about the platform last year. We're going to talk about transforming now. It's about the dynamics part of power and maybe even extends into corporate strategy, not just business strategy. This life within the theory is actually really exciting and fun to explore.
+
+Ben: I know we're going to get into this in transforming. Can you define the difference between corporate and business strategy?
+
+Chenyi: I'll kick this one to you, Hamilton.
+
+Hamilton: Business strategy is how to find power, if you will, in what you would think of as a single defensible entity. Corporate strategy is how you think about strategy in a multi business unit corporation. The central problem of corporate strategy is, why is one plus one greater than two? In other words, is there any reason, from a value point of view, for two separate businesses to be under the same roof?
+
+There have been a variety of efforts in that. If you go back in the days at GE, wildly diversified companies, there was a theory for a while that it was really a good thing that you get these diversification benefits turned out not to be true. It's really that question of, why is it that if you're in one thing, it makes sense or doesn't make sense to be in another thing?
+
+Again, think of Amazon, AWS. Why is that interesting? The static part is one plus one is greater than two. The dynamic part—that's what our transforming discussion is about—is what is it about the business that you currently have that is somehow useful in doing something else? You guys did a wonderful episode on AWS demythologizing, but Amazon did have capabilities that made it not completely alien territory.
+
+Ben: Let's get into it then.
+
+Hamilton: I'll give you a quick intro to transforming on why we think it's interesting, then Chenyi and I can pull it apart a bit, and you can ask questions. There are really three reasons that we think about this. The first is that if you're interested in creating businesses, it's important. By important, I can give you a little data on that.
+
+I did a study once of the S&P 100, the largest market cap companies in the world, and looked at if you pull the park their value, looked where their profits came from, and you ask the question, what share of their profits came from businesses that wasn't their original business, what would you think if you were asked that?
+
+Ben: Can you help us with a year when you looked at this?
+
+Hamilton: I did it just prior to the financial crisis, so it’s 2007.
+
+Ben: David, what was your guess?
+
+David: My guess was 80%. Knowing that timeframe, I've maybe dialed it down a little bit to 70%-ish.
+
+Ben: I think it's low because I'm thinking about banks, oil companies, the largest companies in the world to that point weren't technology companies. I have to imagine that those are more single business lines, statics still, drafting off their original innovation companies. Hamilton wouldn't be asking this question if it were a boring answer.
+
+Hamilton: I don't know if you consider the answer boring, but it turned out to be about 50%. In the tech world, which you guys intersect more, you can think of all the examples. We talked about AWS as an example. The leadoff example in my book of Intel getting into CPUs, that's transforming. They're in memories.
+
+David: Certainly the lion's share of Apple's revenue is not.
+
+Hamilton: Right. The iPhone was not in that business before. Google into Android, Microsoft, operating systems, and applications, were originally a language company. As both of you said, sometimes not, as Zuckerbeg at Harvard started right out of the gate with Facebook. Fifty percent is a big number.
+
+Ben: Yeah. Half of all corporate profits of the largest companies in America came from something other than their original innovation.
+
+Hamilton: Right. That's the flagship. It's important as one. The second is that it's hard to get right. It's a difficult area. There are reasons that have to do with motivation, and there are reasons that have to do with understanding.
+
+Chenyi will talk about some of the common business nostrums that fall apart in this. On the motivation side, I'll just mention that from a founder point of view, they just found something that works, so they're accustomed to that success.
+
+Sometimes they may not appreciate all the idiosyncratic, uncontrolled elements that went into that success. They're very creative, and they want to just move forward, so they're inclined to do that. That's a great motive force, I love that. That's the lifeblood of an economy, but it also means that you can sometimes get into stuff that you really don't know how to do.
+
+Ben: Especially for first time founders, if it works out of the gate, then you have no idea what to attribute the success to. It could be skill, it could be luck. Of course, it is some combination of it. But you have no idea of the percentage of that skill and the percentage of that luck. You say, that worked, I will just repeat the exact same process again, and surely I will create success again. That is almost assuredly not the case.
+
+David: I have several companies in my mind that thought that and definitely did not happen.
+
+Hamilton: Right. On the people that often sit on their boards or finance them, there's also a dissonance, which is that if you think of the VC community, the business model and VCs issue find really interesting things to invest in, then hopefully they go up in value, and then there's an exit which you profit from that increase in value, which is this wonderful engine if you think about what drives the US economy. It's just phenomenal.
+
+But in the early stages of how people think about value, there isn't yet this track record of persistence because people are often, for example, spending a lot to acquire customers. Profitability may not be evident yet in fundamental economics. They haven't really asserted themselves. The only thing left is how the top line is doing. Are you growing crazy?
+
+When you hear VCs sometimes complain that people waited too long to IPO, what that message really means is that all of a sudden, people's perception of the company changed from the top line to the bottom line, and they missed the window. What that says is that, that investor community is focused on top line growth as it should be because it's the best marker available, but it doesn't tell you much about power. It's hard to do.
+
+The third thing, which of course you would expect from us, is that actually understanding power tells you some interesting stuff about transforming. So three things—it's important, it's hard to get right, and power matters.
+
+Ben: We want to take this moment to pause and not only thank our sponsor for this episode, PitchBook, but bust out some pretty interesting stats. This season, we're diving into PitchBook for resources on the companies we're covering. You may know that they've got these amazing browsable data sets on every company, but they've got these research reports too.
+
+I pulled one up that is basically a high-level overview of the gaming industry. You're going to love the way that this research report starts. In the 1960s, a group at the Massachusetts Institute of Technology created Spacewar!, an early computer game inspired by science fiction novels. Do you like that, David?
+
+David: I love it. It's like they listen to our old Atari episode with Nolan.
+
+Ben: I know. I popped it open and I'm like, all right, where are all the stats going to be in here? I'm like, oh, my God, this is an amazing way to introduce the gaming industry. It just keeps getting better from there. Listeners, we'll link to that whole thing to read in the show notes.
+
+A couple of super interesting stats. In 2021, the sector had $16.6 billion dollars in VC funding. In 2022, of course we've had this drawdown. It was still $13.3 billion. They've also got this great ecosystem map.
+
+I also found what I think is a new feature in PitchBook when I was looking up Nintendo's page. They have a number of patents by filing year. Nintendo has been declining from a high of around 130 patents filed in 2013 to just over 50 in 2021, and under 25 in 2022. It's just another interesting lens into companies to see their patent velocity.
+
+David: For getting up to speed on an industry sector, it also works really well in tandem with Acquired episodes. The number of folks who've been texting me, DMing me, they're like, I'm a public equities analyst looking at the video game space, is way more than I expected.
+
+Ben: Another great place to look for all that is PitchBook. We'll link to the gaming report. If you're an entrepreneur thinking about fundraising and wondering who's the right target for me, PitchBook is just for everyone at this point. I can tell you from doing the Arena Show with them last year, they are just great people to be in business with.
+
+If you want to sign up for PitchBook, they will be offering a free week trial that is coming up soon. Don't miss out. Go to pitchbook.com/acquired to get all the details. I think they're also going to link to the research report page there, and just tell them that you heard about them from Ben and David at Acquired. Thanks, PitchBook.
+
+Something else just finally occurred to me. I've never thought about it before, but if you are analytical and can figure out and quantify a company's power, then you can assign it a more accurate multiple of profit than anyone else can. Because if you can observe, oh, a company has a 24% operating margin many, many years in a row, you can decide, okay, fine, I know what the operating margin is going to be in the future, and I can figure out how I want to value this company. But if it's a new company, and it just settled into some steady state of profitability, and you understand the power dynamics, you can be better than other investors at predicting the net present value of all the future cash flows of that company, rather than a very brute force way of doing it of just slapping the same multiple on that everybody else does.
+
+Hamilton: Ben, not only is it going to supplant me in writing Seven Powers, but it's going to take over Strategy Capital.
+
+David: I think that falls to Chenyi.
+
+Hamilton: We're constrained about talking about our investments stuff too much. But basically, the proposition of Strategy Capital is if you have a differential understanding of long term competitive outcomes in places where that's really hard to figure out, you can value things more carefully, so I completely agree. You properly constrained it. If there's a long history of financials, it's already in the price. Does Walmart have power? Sure.
+
+Ben: My dog can tell you that.
+
+Hamilton: I'd like to meet your dog sometime. That's why it's important. I'm going to just give you a quick take on what I mean by transforming. When I laid this topic out to the two of you, I said that if you're thinking about increasing value in a company, there are two questions. What can I do better and what can I do next?
+
+You spend most of your time as you should on what can I do better. You think of Amazon developing a better search engine when you look for a product. You got to think about that. That's most of your time, but then you also think about, okay, well, what can I do next? That's what transforming is. That would be Amazon going into AWS.
+
+You can imagine thinking about whether to do AWS is a very different exercise than optimizing the search engine. Transforming is a separate topic. A fundamental thing and strategy is a thing called business definition, which is, what really are the boundaries of your current business?
+
+Chenyi: I think, actually, in our prior email conversation, David, you had the question of, how do we go about researching something like this? Typically, we start with looking at what others have been talking about. This is exactly where we come across a lot of common narratives of, where do you find our next level of growth? We've all heard about, go listen to your customers. There's the Amazon school of customer obsession that's fairly popular. People will go after 10 expansions, expand geographically, and go different segments or fuller core competence, et cetera.
+
+As we look through this, I think one issue we found is they don't seem to be conclusive about the chance of success of these transforming steps. In other words, you can't say if you do X, you are more likely to succeed. For example, there's this whole school of thought around marketing myopia that says, you should define our industry definition widely.
+
+The reason why railroad industry goes into decline is not because people don't have demand for transportation, it's because they can't think of themselves as a broad transportation company. They should have moved themselves into cars, trucks, airplanes, and even telephones, which are new forms of transportation. I think this is one of the best sellers of Harvard Business Review of all time. It just speaks to the popularity of it.
+
+The question we will ask is, do companies that follow marketing myopia all tend to be successful? Does that give us a way to predict success? I can think of examples on either side. Disney today is not just a theme park company or animation company. They seem to be a broad entertainment company. They're pretty good at coming up with the next form of entertainment that people will love and want to watch.
+
+On the other side, Uber at one point was all in on mobility. It was not just about cars. If you remember the scooters, buses, bikes. They were serious about flying cars at one point. There are all the helicopters. That didn't seem to end up that well, even if it ends up in the same mobility definition.
+
+What that means is we can't tell whether following a certain school of thought is definitely going to be within success, which means we don't have a theory behind it. That says our problem is can we say something that's a bit more definitive, a bit more having the predictive power there?
+
+As we thought about it, the real reason why we have this issue is a lot of these popular narratives tell you about economic value, but they don't tell you much about business value. In other words, they tell you about value creation but not value capture. In other words, we're basically saying product/market fit is not power.
+
+Hamilton: Coming back to the very first conversation about why we did this in the first place, the point Chenyi just made is the fundamental one, which is that creation of economic value is pretty orthogonal to capturing some of that value for yourself, which is to say the creation of company value. Creation of economic value and the creation of company value are different animals, and both are important. There's a dynamic connection in the sense that if you create economic value, it creates the opportunity to think about capture and so on. In just a single slice in time, they're very different, but that's a fundamental point about all this.
+
+Chenyi: I think that's a good way to put it, which basically means all of the common narratives out there are really useful. They're really useful as idea generators that tell you where to look for the next product/market fit out there. We think the understanding of power is the missing link here. We have all these ways to come up with options, but how do you assess which one of them is really the best idea? That's what we set out to give a better structure to.
+
+Hamilton: I'll just say how power helps you out in a way. I mentioned this ethereal concept before of this definition. It's rather important. If you think about Uber versus Netflix, where do they go next?
+
+Uber, at first, their thought was that this was an international business. That means that going into China, somehow, their strength would be transferable into that effort, and they could be successful. Netflix thinking about going international, thinking that if they started streaming in Korea, that would make a lot of sense.
+
+Ben: Are you considering the international a separate business, or are you thinking about this as, should we expand the core business and just address a broader market?
+
+Hamilton: That's the question. The key thing there is if you have an established business, is the drivers of power in that extensible to that additional segment you're considering, whether it's geographic, custom, or whatever? Because if it is, the risk reward of doing it, the calculation in the beginning is so much better because being able to carve out value to yourself is really hard. If you can build on to something that already does that and it works in that environment, then oh, boy, go there, because that's so much easier than doing something really new.
+
+Netflix streaming in Korea, you're saying you can share content across countries. It built in the same fixed cost economics of content development, and worked. Uber, if they have a source of power, it has to do with geographical density in a specific area like the bay area or something. Going into China, if they're head to head with DD or something, they don't have any advantage at all. It doesn't work.
+
+Ben: They get to bring their technology platform over. They're amortizing all the engineering design product management cost, but they have to go reacquire both sides of the marketplace in full and create that density, which is actually the expensive part of the business.
+
+Hamilton: Exactly. If it turned out that the engineering part was 75% of the cost structure, content and for Netflix is 50% or 75%, then it would have been fine, but it's not just as you said. When you're thinking about business definition, in some businesses, international is part of the same business, which is to say it's under the same power umbrella. In some businesses, it's not. You have to understand that in terms of what you're doing.
+
+If you're thinking about what's next, if you can go to things that are under your current power umbrella, oh, boy, is that great. If Porsche wants to sell cars in China as opposed to selling them in the US. no brainer.
+
+Ben: Right. Still all the same unbelievably hard engineering problems that went into creating the car you're selling in the US, you can find a way to distribute that.
+
+Hamilton: Yeah, and a Chinese competitor would have to go through the same calculation. The first point of this conversation is that to properly assess transforming directions, the first thing is carefully understanding your current base of power, then looking at this new segment, whether as I say it could be customers, geographic, technology, whatever product, and seeing whether it relies on that as well because then, oh, boy, a world looks rosy. But on the other hand, if you think it does and it doesn't, it's like Uber and China. I don't know. Did they lose a billion dollars or something? I don't know what it was.
+
+Ben: Maybe more once you consider all the divestiture.
+
+Hamilton: They used to be compensated by the shares. I don't know what their shares are worth now. Anyway, that's the starting point.
+
+David: It's interesting the way I'm thinking about it. We're in the middle of our Nintendo series as we're recording this. This really is an interesting framework to think about because on the surface, it can be pretty far flung. I'm thinking about Nintendo made playing cards with the Japanese organized crime as their primary customer. Moving from that, the video game console is a pretty big leap.
+
+What they had, originally, that is the same thread through the whole business, is they had an absolutely ironclad lock on their distribution networks, and then over time, through playing cards into toys, into video games, into toy retailers.
+
+Hamilton: That's such an interesting case, David, because oftentimes, it's that kind of subtlety about locking in a distribution channel, for example, that's invisible but may actually be the very thing that makes that such an… If you think of Sony on the other hand, when they went into game consoles, that was a different business, I'd say, and brutally hard. It relied on some capabilities. It shows why the capability thing doesn't get you there. It had some engineering at the time, analog was king there, and digital was thought of as a backwater, but it was very difficult. Now it's, of course, the source of their profitability.
+
+David: It was a long journey for Sony to get there.
+
+Hamilton: And like all these things, there were a few principal actors, a few leaders that had they not been there, it's hard to imagine it ever happening, some innovative hard-driving people.
+
+Ben: Hamilton and Chenyi, can we ask you, what are the most common power types in today's technology-driven world, where people might find expansion opportunities inside of their current power umbrella?
+
+Chenyi: I think particularly for earlier-stage companies, the three most common power types that you will find are scale economies, network economies, and switching costs. It's actually often that you'll have counter positioning because that's how you tackle your incumbent in a space. But there are a couple of other power types that don't really come in until the more mature phase of the business, and that's laid out in a book like process power or brand power. You really need to develop them after years and years of experience honing in on the core business.
+
+For the benefit of the audience today, we thought it'd be more useful to focus on the three types of power—skill, network, and switching cost—which is probably the most common that we'd find out there.
+
+Ben: Are you not including counter positioning here because it's hard to find a second business under a counter positioning umbrella?
+
+Hamilton: Let me just weigh in here a sec. I agree with her leaving off because to have power, you have to have it versus all potential and existing competitors. The counter positioning one is typically the type of power that you would have against incumbents, but it doesn't work against wannabes because they don't have the same problems. The one that you have to think hardest about is versus other companies that are doing it just like you. For Bowmar, it would be Texas Instruments doing calculators. That's why she left it off the list.
+
+Chenyi: Yeah. Regardless of what's the core power prospect, and we're calling a prospect because it has a pretty hard bar to clear, but even if you're still in the make for you, and you think this is going to be the mechanism that protects you from competition in long run, the first step is always to get a really clear understanding of what that core business power prospect looks like.
+
+Back to your example of Uber, if the core power prospect of Uber is actually scale economies which says, the technology framework of doing the matching automatically is so hard and it acquires so much cost to build, then international expansion would have been totally irrational because you're just spreading that fixed cost over more geographies, and you're getting a head start in every single place you have.
+
+But the truth is, it's not. The majority of cost of that business actually lies in acquiring and maintaining their customers, which means if anything, the route you should really try to get to is network economies, if you have one. The scope of that network that defines each market is actually heavily bounded geographically. Every new country, even new city that you go into is a complete new business and have to start from scratch.
+
+That's just an example of getting a definitive answer or a confident answer about what your core business power looks like. It gives you a very different place to look on where to transform or where to take it to the next step for your business.
+
+Ben: I'm here in Seattle. If I was operating an Uber-like service, I have this power, which is all the drivers, all the riders, or a high density of that, that means nothing where David is in San Francisco. Instead of launching Uber in San Francisco, maybe I should try and figure out other things to leverage my network here in Seattle because that's the place where I have the durable competitive advantage versus others.
+
+Hamilton: Uber Eats, right?
+
+Ben: Right.
+
+Chenyi: I think the jury's still out whether ride sharing and food delivery belong to the same business. Maybe they do.
+
+Hamilton: But it's more plausible than different geographies.
+
+Ben: This is one of these things where it seems obvious on the surface and then we start to dig in, you're like, oh, wait, maybe it's not as overlapping of a network as I would have thought.
+
+Hamilton: Right, that's the question.
+
+Ben: Right. The drivers for food delivery are overlapping but not that overlapping set of drivers for rideshare. The set of consumers is obviously different as well, which you can see in the corporate action they took to ship a separate app called Uber Eats rather than bundling into one app. You actually have two overlapping two-sided networks, but not fully overlapping on either side of the network.
+
+Hamilton: Ben, that's such a great example because it speaks to the point of the complication of the phenotypes, that until you peel back the covers, it just sounds, oh, yeah, Uber Eats and ours sounds all the same. But when you start peeling it back, it may not be.
+
+What that says is you have to have quite a lot of nuance in your understanding of whether you have power to begin with. Of course, for Uber, it gets into the nature of platforms, exclusiveness of the sets that occupy either side of the platform, and whether they overlap and all that kind of stuff. Without that nuance, you miss it.
+
+Ben: One other network economies, one that I'm curious to get your take on that I see in your notes here, is Microsoft versus Slack. Can you walk through the Microsoft decision to enter the market of whatever Slack's product is? It's quite hard to define async chat work communication with teams. Why or why not was that an interesting entrance and use of their power umbrella?
+
+Chenyi: The interesting thing here is we can also think about Microsoft as a platform. You operate an operating system, where on the two sides, you have users and also you have applications. The interesting concept here is that the users of Microsoft's platform have a really high cost affiliation. It's not just on the hardware side, you buy a physical machine, but also it's typically an enterprise-wide adoption. There's a procurement process attached to it. There are distribution channels that are similar to how the Nintendo one worked.
+
+Because of that, Microsoft's network scope basically extends to whatever demand my user side would have without incurring more cost on their end. They don't have to do another procurement cycle, maybe or not have to buy another hardware for it. That naturally extends to, basically, maybe all of productivity software. That's how you see Microsoft teams create at least a competitive hassle for Slack.
+
+I think we all have experienced that Slack has a really good product, but good products don't always win because when there is competitive advantage from an incumbent, in the case of Microsoft, they basically have a network that can extend into the product that Slack is operating in. They create issues competitively.
+
+Hamilton: Where we're heading in this conversation is we're saying, transforming is a worthwhile topic, and then we're saying that a starting point is understanding the power of your current business because if you can build off of that, it creates a wildly preferable risk return prospect for something you're getting into. That then takes us to the next topic, which is what if you can't build on your current thing, and you need to get into something that doesn't build on your current source of power?
+
+The two of you, with all your interviews, actually have so much. You have this wealth of information about what goes into people's minds doing that. But if you think about that, what are you into? You're basically starting a new business, right?
+
+Ben: Right. Congratulations, you don't have to file as a Delaware C-corp. You probably have some people you've already hired that can work on it, but what other assets are you repurposing?
+
+Hamilton: Exactly. Remember that thing I said about the S&P 100. If you look at what they went into that generated a lot of value and ask the question, could you generalize it all about that, creates some definitions here a little bit. Three categories. Does it satisfy the same needs, or does it use the same skills? Those are the two dimensions because I have a consulting background, and the whole world is all this two-dimensional.
+
+If it has neither the same skills or the same need, I just call up your diversification. Rarely does that work. That's a very high risk proposition. You're basically creating a new business, something you don't know how to do at all.
+
+Ben: When you say skills and need, that's the skills of my company and the needs of my customers?
+
+Hamilton: The skills of your company. What your engineers know how to do, what your salespeople know how to do, and all those things.
+
+David: In that case, you'd be better off either having people who are entrepreneurial within your company leave, start a new company, and spin it off, or invest your treasury in other companies.
+
+Hamilton: As a big company, you have all the agency problems of trying to get something off the ground with a lot of bureaucracy and everything else.
+
+David: There are some advantages, but there are more disadvantages.
+
+Hamilton: There are probably more disadvantages than advantages. And data supports that, that unrelated diversification is typically not a great thing to do.
+
+Ben: The lower left of this two-by-two matrix is I neither have the team that is great at creating this next new thing, nor do I have the customers that want this next new thing currently.
+
+Hamilton: You got it. And then if you look at the upper left, which is the same need but different set of skills, you can call that reinvention. Sometimes you're forced to do that, but the opportunity set isn't that great, really. It's not like you're opening up the whole world opportunities. Those are pretty rare, but it does happen.
+
+Netflix into streaming as reinvention. It can happen. It's hard to do. You're usually in a counter position because you've got a whole group of people that want to do it the old way, and they have a lot of power in a company, typically, because they've got the P&L.
+
+Ben: It requires the founder sponsor to go pursue it.
+
+Hamilton: Yup, that's very insightful. It's exactly right. Otherwise, you get swamped by agency problems. The different needs, skills, and sharing the same skills are not the same, but shared skills, you can call that category coaction. That's where all the action is.
+
+David: That's AWS for sure, right?
+
+Hamilton: Exactly, AWS.
+
+Ben: Wait, so this is the lower right?
+
+Hamilton: This is the lower middle. It's a bunch of not perfectly shared skills. You know quite a bit about the stuff that you need to do to get in there, but it's a different need. I don't have the numbers in front of me, but I think 90% of the value in the S&P 100 of the new stuff came from coaction. That's saying something that's pretty straightforward.
+
+David: I guess there is no top right because that is your current product, same team, same needs, right?
+
+Hamilton: You're too fast for me. That's right, same business. The extra credit on this will be, why are these axes not quite orthogonal? But I'll leave that to another discussion.
+
+If you think of Sony going into PlayStation, that was not the same as Sony going into cars. It was a different business, but they did have a lot of stuff. That basically says that you want to constrain yourself to areas that meet with your current capabilities.
+
+Occasionally, there are companies that have capabilities that are so proprietary, actually, that aligns with power automatically, but that's very rare. I'd say Corning and glass technology, for example. It's such a weird material science, so they can do glass stuff that other people couldn't do.
+
+Ben: Is 3M a good example of this lower right, where they know how to make all kinds of interesting stuff but for completely different customer bases, completely different use cases?
+
+Hamilton: My view of 3M is that they're basically a material science company. Material science is weird. It's not fully or at least it used to be, I'm not currently on it so much, but not fully developed theoretically. There are all kinds of nichey idiosyncratic aspects to it. They were able to invent stuff.
+
+If you think of post-it notes, that was a not so sticky glue, and then they didn't know what the hell to do with it. It went on for years. There is a champion in the thing that just said, no, there's something great here. They almost missed it. It came down to a final marketing trial where they almost didn't follow up on it.
+
+David: Wow, it is great. I've never really thought about that. I know it's a famous story, but objectively, it was a really crappy product that they made, and then they turned that crappiness into a feature.
+
+Hamilton: I'd characterize it a little differently. I'd say it was a very interesting technology with no product.
+
+Ben: It's like Web3. It's like a computer. It's way slower.
+
+David: Too soon.
+
+Hamilton: Right, I love that.
+
+Ben: Maybe we'll find the sticky note. Maybe the fact that it's really slow is irrelevant, given it's decentralized.
+
+Hamilton: Yeah, it's funny. I guess we share a view on that. I don't find myself very popular on that view, but I agree with you. There's all this hand waving about the wonders of decentralization, the world will be a great place, and everything, and I’m waiting for the…
+
+David: We need the sticky note.
+
+Hamilton: We need to sticky note, right. Anyway, I think that is just a simple observation, which is that the stuff that's most likely will get you there is a different need but using some of the skills that you have. There's nothing very complicated about it, but I think data bears that out.
+
+Ben: I would say a lot of tech companies today have the same set of capabilities. Is it about where you have differential capability versus other companies, or just, hey, you can repurpose a bunch of your engineers to do something interesting, and sure everyone else can do it too?
+
+Hamilton: A really interesting question. Way back when, before the idea of core competencies, there's a writer that wrote about it. I think they used the term distinctive competencies, which is exactly what you're getting at. I would say that that was probably true of Corning and glass technology, but it's rare. I agree with you that a lot of tech companies have a lot of similar sort of stuff. If you had a distinctive capability and that had an application in an area so all I do is a good product, then, oh, boy, that's great. But it's hard. That's not common.
+
+If you're in this place where you can't build in your current power, you just have to realize, as you were saying before, Ben, you're back in invent space. You can build on current capabilities, but that's table stakes. You're into that level of risk. Like all those things, it's adaptive. You try stuff and move forward in a positive way.
+
+Ben: My little mental waterfall so far from everything that you've shared with us is step one, identify the power in your current business and be brutally honest about it.
+
+Hamilton: Brutally honest and very granular.
+
+Ben: Yes. Step two, figure out if there is a new business to launch or expand into under that particular power umbrella. If so, great, do that. If not, you have to start a new business, and where you should look for the most fertile ground for that new business is using your existing set of capabilities but for a different job to be done for customers. Look there, and especially—this is almost step four—if you have differential capability versus other companies who could also pursue that same opportunity.
+
+Hamilton: I love it. Should we write that down, Chenyi? I think we should make sure we remember all that.
+
+Chenyi: Yeah. Ben just helped us produce a theory.
+
+Hamilton: I think you nailed it.
+
+Chenyi: There's one point I want to make. There's a reason why it's sequenced that way. It may be obvious but still worth iterating, which is that invention is risky. If you have something underneath your existing power umbrella, and that's what Amazon did—they had this distribution logistics, they started with books, then CDs, then electronics, et cetera—it's a natural extension that not just leverage but also intensifies your existing power, that's way less risky. You know you start somewhere new, but with a head start compared to anyone that's a competitor.
+
+The movement into Amazon Web Services is invention. I loved your guy's story on how there are the four different sources of starting points for Amazon. People love to think this based on some existing competitive advantage of the business, but it's really not. It's invention. They figured out a new thing that the market wants.
+
+As successful as they are in AWS, they also flopped. Fire Phone, if you still remember that. They also lost billions and billions on Alexa. There's really no track record of a business who can continuously come up with successful invention. That speaks to the riskiness of that, which is why it's only the point number three or number four on the list. If you don't have to go there, don't. But if you do have to go there, coaction is the most possible place for success.
+
+Ben: Thank God, these things are power law–distributed. Otherwise, to your point, because no one has ever successfully been able to do hit after hit after hit like this, it would be net unprofitable to pursue innovation.
+
+Hamilton: Right. I just want to underline that Chenyi has rightfully pulled that out. A key point here is that the risk level of doing something that's under your current power umbrella or not, the difference is gigantic. That should be your starting point because it is absolutely gigantic.
+
+I think since we're back into invention, and I am a huge fan of Amazon, the fact that they've been able to do what they do, I would argue that they couldn't have done it if they weren't willing to take the risks and have some failures.
+
+When Chenyi and I talked to companies, often when we hear it, if they have been successful at transforming, and we talk about future transforming, the narrative that makes us think, oh, boy, this has really got us into a problem is, oh, we have a really defined process for innovation here.
+
+There is a 17-step process. We know exactly who to assign to it and blah-blah-blah. That's the red flag of all red flags. There are other company things you worry about. Screening criteria, for example. Some companies, when they're thinking of doing new stuff, say, I won't do it unless it will move the needle corporately, which means the market has to be a certain size.
+
+Ben: This was Microsoft. It was like, oh, unless you're going to go create a billion dollar revenue product, I'm not green lighting your document.
+
+Hamilton: Right, and usually, if it's already a billion dollar market, it's either too late. This just to highlight that invention is really hard. It's hard for a large company to do it, it's hard for individuals to do it, and corporate strategy is asking a question on the transforming side (at least) of if you do it, are there cases in which your current platform is of significant benefit to you?
+
+Ben: Where would you put the iPhone in this framework?
+
+Hamilton: The iPhone and the iPod or straight up coaction, similar capabilities. They are computers in a generic sense, but the iPhone, in a functional way, does compete a little bit with the desktop.
+
+Ben: More so than they realized it would.
+
+David: They're maybe as high up as you can go towards the top right of, they're the existing products of the company, but different in some key dimensions.
+
+Hamilton: I would say that one of the things when you're trying to do business definition, there's the theoretical side, is the power shared. The empirical side is to look at the composition of competitors and see if they're different. That's suggestive that they're different. The competitors for the iPhone are different largely than the competitors for the MacBook Pro.
+
+Ben: It's a good litmus test.
+
+Hamilton: Again, it's not perfect, but because sometimes that doesn't develop in exactly economic ways, but it's a pretty good way to look at it.
+
+David: All right, listeners, we are back with great friends of the show, Vouch, the insurance of tech. In this season, we've decided to share some real examples of startups who are buying insurance with Vouch. Today we're going to talk about VUI search, which is one of Vouch's customers. It's VUI like a play on GUI. VUI is an AI-powered product search solution for ecommerce. They just raised a Series A. They're about 18 months into the journey.
+
+Their insurance story starts when the founder, Phil Frank, was closing their largest enterprise contract yet. It was a multimillion dollar deal that would basically triple their revenue and transform the company. The customers' legal team redlined their contract with a bunch of insurance requirements. Better get insurance fast. This is totally normal. Customers do this to ensure that if something goes wrong, there's money set aside to make it right.
+
+Suddenly, not having the right insurance was blocking something super important, in this case, millions of dollars of revenue. Insurance went from a maybe-someday-problem to literally one of the most important and urgent things. They asked their banking partners for a recommendation, and they said, you should go talk to Vouch.
+
+Ben: The process from there works exactly like you would expect from a modern tech company. Phil went to Vouch's website, answered some questions on the company, and was presented with a menu of coverages that he could customize. I know because I've gone through this myself. He had a question, so he hopped on a Zoom call with a vouch insurance advisor that same day. The Vouch team reviewed Phil's insurance requirements, double checked the limits, and helped him push back on one of the clients' contractual requirements to save some money.
+
+As you would expect, this is not at all normal for the insurance industry. VUI actually did compare Vouch with their previous traditional broker. That option ended up being more expensive than Vouch, and the timeline is significantly longer since the broker had to shop between carriers and fill out a bunch of manual applications. I think a lot of you have probably done this in the past. The coverage is, of course, not even apples to apples because Vouch has 10 exclusive policies that are designed from the ground up for tech companies.
+
+Phil took a few days to negotiate with the customer and sync with his board. He hopped back in to Vouch for his online account to activate the coverage. The customer signed the contract, and now VUI is in the next chapter of growth. It's pretty awesome. When it's time for you to get insurance, save 10%, on your first policy with Vouch at vouched.us/acquired or click the link in the show notes. Thanks, Vouch.
+
+David: Thank you, Vouch.
+
+Ben: Here's an interesting—you can tell me if it's interesting—observation on Apple. It's basically always been coaction when they come up with a new multibillion dollar product line. You've got the iPod absent, going and getting the new type of hard drive. They knew how to build everything about the iPod already.
+
+Once they had the tiny hard drive, then great. All of our engineers know how to build something like this. iPhone, same thing, iPad, same thing. These are new jobs to be done for customers, but they have all the right talent to build them. AirPods, same thing.
+
+David: Watch.
+
+Ben: Maybe this AR-VR device, same thing. We'll have to see if it launches here in the next few months. But interestingly, a thing where they didn't have a large amount of the talent in-house is cars. They had to go build completely new skills within the company. They've got several thousand people working on this car now, still haven't launched, changed strategy five times.
+
+They have no confidence that this is going to be a commercial success. It's a new requirement for customers that requires a whole bunch of people that they did not have and capability they did not have. That speaks to where I think you're going with this framework that that product has not been successful or even launched.
+
+Hamilton: That's closer to pure diversification. If you think of that horizontal axis, that thing I was talking about, that's a spectrum from 0%–100%. If you're in the car business, if you go from green cars to red cars, you have almost 95% shared skill. Go from luxury cars to compacts, a high sharing. Toyota can do it and go from cars to tanks. It's pretty different.
+
+David: Porsche did it under coercion by the Nazis.
+
+Hamilton: Right. It's not impossible but quite different. If you go from cars to refrigerators, it's really different. I agree with that analysis. But remember, too, not to forget the importance of the entrepreneur in this because they are the locus of inventiveness. It doesn't happen without them.
+
+This isn't an automatic process or something mechanical. There's individual human creativity involved. It's especially evident at Apple, but it's really true everywhere for all entrepreneurs. That's why Chenyi and I have to be fairly modest about what we're doing because what we're really trying to do is to provide pattern recognition for those people, but it doesn't substitute for them. It's just a tool.
+
+David: This is a good lead up actually to what I wanted to ask you as we wrap on internal transforming and new business development. Does this framework apply to thinking about acquisitions as well for companies? I would imagine that companies that are starting to think about transforming are also at a stage where they could be contemplating fairly large or transformative M&A. Is that different or should you think about that with the same rubric?
+
+Hamilton: It's very related. If you're acquiring a company, the primary question you have to ask yourself is, why is this worth more to me than to the seller? There will always be an information asymmetry. The seller will always know more about the assets than you will. There's a ton of financial analysis work on this. You can't get it perfectly, but basically they look at the stock price before and after acquisition and all this stuff.
+
+If you distill all that, what it basically says is the acquirer is breakeven or whatever, and the seller does very well. The fact that they figured that out for a large segment of business was genius. That question of what do you bring, you can imagine now that touches on this subject of business definition and so on. That's why antitrust authorities get so upset about it. If you horizontally acquire something with scale economies, that just makes you advantage that much more.
+
+People get upset about it. People would love to do it, but Hart-Scott-Rodino won't let you get away with it and rightfully so. You have to be very, very disciplined because often what happens if you're inside a large company and facing these decisions—I've been involved many of them—is the argument that's often made to advance that is, oh, well, we don't have to have the same number of accountants or we can reduce these cost reduction personnel overlap thing. It never works because they're diseconomies of being in a large organization as well as economies. They're awash is a good assumption about it.
+
+David: And how much money are you really going to save?
+
+Hamilton: Right. That analysis doesn't get you there. You need something more fundamental, and usually it's related to power or something like that.
+
+Ben: One of David and my learnings from doing our episode, the Acquired top 10, the best acquisitions of all time, was there are exceptions, but most of the time something is a wildly successful acquisition. It is because you're able to find more revenue rather than find cost savings. Cost savings are capped, whereas new revenue has unlimited upside.
+
+Hamilton: I'll add something to that, which is that the cost of that revenue is favorable. Think of Disney. Think of getting Lucas and Cameron stuff.
+
+David: Marvel is incredible.
+
+Hamilton: Yeah, it either created a huge amount of corporate value by doing those things, and Pixar. That had to do with him taking franchises like LVMH was taking powerful brands that weren't fully exploited and figuring out how to economically exploit them. Disney was taking branded entertainment that was powerful and being able to fully exploit it.
+
+It answered the question, why is this worth more to me? You could take Star Wars stuff, which you had the feeling George Lucas wasn't so interesting to exploit it. He was a creative genius, and yet Disney could take it and run with it. I think it wasn't that you bought revenue that already existed, it was that you were able to exploit that.
+
+David: I'm curious if you have any thoughts on or if there's more nuance to what I always think of as the highest likelihood of success acquisitions or enterprise software acquisitions, where a product is bought by one of the top enterprise software, call it Microsoft, Oracle, Salesforce, or the like, and then they plug it into the Salesforce.
+
+Is that similar to what we're talking about here? It seems very clear to me why XYZ good product that is sold in the same manner that Salesforce sells all of their products would be way more valuable to Salesforce than to its current owners.
+
+Ben: David, real quick, I'll caveat that with maybe the highest likelihood to succeed, but not the highest magnitude of success.
+
+David: Right, yes. I think that's what's interesting about it.
+
+Hamilton: Right. Examples like that, they plug completely into the power structure of the current business, so high switching costs stuff so that they can deploy it to all their customers and get the same economics by switching costs. Chenyi, do you want to add to that?
+
+Chenyi: It actually occurs to me that it's exactly tied to switching costs. There might be another rationale for buying, which is building takes longer than buying and timing matters, particularly for companies with switching costs.
+
+The interesting thing about switching costs going back to the power itself is it's non-exclusive. Your competitors, if they're functionally equivalent, can also have switching costs. If you go down this logic line, it creates the possibility of companies having switching costs but no profits.
+
+The way it happens is, if a competitor was able to build the same product, roughly the same product, and they fully realize this is the lifetime value of the customer, should I acquire them? Then it's rational to invest up to all of those values in the acquisition phase, be it discounting, partner incentives, marketing campaigns, whatever it is. It's rational to spend up to all of that lifetime value to try to win that customer. What you end up with is companies with switching costs but no profits.
+
+Hamilton: That's why if you have switching costs, the key strategic challenge is to acquire customers when the cost of a customer does not fully arbitrage out the profit stream that you would expect from them.
+
+David: Which is so funny. Like we talked about earlier of Slack, Salesforce, Microsoft, and Teams right now, I haven't studied either have the businesses, but I would expect that despite all the ballyhoo about all of it, neither Slack, Salesforce, maybe Teams for Microsoft is, but are not huge, transformative, incremental drivers of profits for those two parent companies.
+
+Hamilton: I think a non obvious point of all this is that if you're thinking of doing something new getting into stuff, that understanding business definition is critical. Which is to say, into what areas does your current power umbrella extend? You got to understand that. Then the next one is the point that Chenyi made, which is that expansion into areas where the umbrella extends is radically more attractive than starting something utterly new.
+
+Chenyi: I'll add to that, that it's not good to have. If you understand the power umbrella, it's bigger than what you currently offer. If you ignore it, you actually are creating competitive openings for somebody else to take on.
+
+Hamilton: That's a really important point, absolutely.
+
+David: You're failing if you don't exploit it.
+
+Hamilton: Right because you can assume that eventually somebody else will, and that may completely ruin your competitive position, for example, if the space doesn't scale. Point one, go to business definition, think very hard about where your power umbrella is. Point two, if that does extend into an area you're considering going there because it's really traffic. And then the third one is that if you don't have anything there and you still want to do something new, coaction is the name of the game, but understand that you're now into the invention of the new business and with all the things around it, risk, adaptation, everything, and entrepreneurs matter.
+
+Chenyi, that was such an important point about how if you miss a business definition. I'm going to ask you for an example. Can you think of a good example of companies that didn't understand the full extent of their business and got taken out as a result of it?
+
+Chenyi: I'll throw something out. It's tough because you tend to have survivorship bias. You only remember those companies that made it.
+
+Hamilton: Right. Bowmar, you never heard of them, right?
+
+Ben: Or the handful of very few colossal failures that were so unbelievable. They're stuck in all of our psyche. For example, Blockbuster. It could be the case that Blockbuster failed, where they had the distribution network and the customer relationships. There was a source of power there, and they failed to exploit it in using that to launch their own streaming service, which mostly is because of boardroom blunders, but a failure nonetheless.
+
+Hamilton: My take of Blockbuster is if they'd done a red envelope business a year earlier, Netflix wouldn't have survived.
+
+Chenyi: Maybe another example is the credit card industry and how it evolved.
+
+Hamilton: Oh, I love that.
+
+Chenyi: It started basically as branded charge cards for a particular retail store or gas station, and then turned into Diners Club, which is a card for many restaurants. And then very quickly, it turned into a universal card. It's a card for basically everything.
+
+Ben: They were basically extending your credit. They were saying this works here, and we'll give you some credit at our store. Over time, they would start saying, yeah, we'll spot you for that restaurant, too. We have a relationship with that restaurant.
+
+Hamilton: Do either of you have Diners Club's cards?
+
+Ben: I do not.
+
+David: No.
+
+Hamilton: Right, so they missed it. It's a great example. They didn't understand that there was actually a platform where you want to cover as many purchase types as possible, and it shouldn't be constrained. They missed the business definition. This is one of the highest margin businesses in the world right now.
+
+Chenyi: Yeah, Visa's 50% margin. It's astonishing.
+
+Ben: Wow. We got to do Visa at some point. I can't believe Visa didn't IPO until the 2000s.
+
+Hamilton: That is so natural. Were they owned by banks?
+
+Ben: I think it was a B of A. Yes, founded in 1958. by Bank of America as BankAmericard.
+
+David: Yeah, it was a consortium of banks. That's right. I remember all this now. The IPO happened right in the middle of the great financial crisis. It was March 2008. Talk about bad timing, but it didn't matter.
+
+Hamilton: Probably a good time to buy the stock.
+
+Ben: Seriously. All right, Hamilton and Chenyi, while we have you here, we got to ask you something that David and I were debating on our Nintendo episode, specifically in the 1980s. You've got a console maker, Nintendo. They have a whole bunch of customers that are the people who are buying the consoles and playing the games on them. They have a mix of first and third-party titles. They make Mario as a first party title, and they have some third-party developers making games for them.
+
+David: Final Fantasy, Dragon Quest, and Castlevania.
+
+Ben: Of course, the reason that those third-party publishers are making the games for them is because they have 95% market share of people buying video game consoles. David and I were really going back and forth. We're like, is it a scale economy because they can amortize the cost of game creation across so many consumers? Or is it a classic two-sided network effect or a network economy power?
+
+Chenyi: I was thinking about this this morning. It's fun. I think it's both. The reason why it's both is because you can think of Nintendo as a platform that vertically integrated into the production side. Basically, all the first party content is a vertical integration. That's why they would exhibit economic structure that you would typically find in producers, which is economies of scale. But at the same time, the third-party transactions are a nature of network economies.
+
+Some questions we may have to analyze are, is this platform really stable, which means, is there a really high cost of it being attached to this platform? Can you multihome, et cetera? We have to go into that.
+
+David: In the 80s, there were no other viable platforms.
+
+Chenyi: Right. Maybe they're just the one. That's why you would observe the economic structure of both scale economies and network economies. There's a deeper question there, which I haven't had an answer to. Is one of them the cause and the other is the effect, or are both of them causes for power?
+
+Hamilton: Right. I love the answer. I think she's right. When we look at platform things, there is the business of running the platform. Think of, for example, the fixed cost in Uber of their modeling and all that kind of stuff, and then there's the network economy aspects of a two-sided platform of people and so on. You could have power in either one of those. But if it turns out that there isn't a huge lump of fixed costs, then it doesn't matter much. But I think Chenyi got it right.
+
+David: Okay. We feel vindicated because that's the conclusion we came to on episode two of it's both and they're deeply intertwined.
+
+Chenyi: I'll give you an example of intertwined real life. We all know Amazon in retail has gigantic scale advantage in the infrastructure, just all the warehouse and distribution centers are built. But at the same time, you observe what you will call flywheels on the retail. The more buyers, more sellers, and the loop goes on.
+
+This is what I call the mixing of reality between cause and effect because without a really strong distribution infrastructure, which gives them the cost advantage, faster delivery in Prime, and all of those benefits, there really isn't anything that makes their marketplace sticky. I'm on either side.
+
+The so-called network effect you observe is actually an effect of the power in scale of the infrastructure underneath, but you would just observe the economic structure of both because platform just mixed them all together.
+
+Hamilton: And this isn't a pointy-headed issue because it gets back to, if you find the thing that's cause rather than effect, that's the thing that you got to defend. My intuition about this, and I don't know if it's right, is that you have to introduce time as a variable in this to correctly understand the problem. I think Chenyi and I are involved in this deep debate right now about the boundaries and relationship between scale economies and network economies.
+
+If you want to get even more confused, just remember that scale economy typically is defined as a situation, which as scale increases, cost per unit goes down. That's often true of network economies, but the structural economic conditions that are created are quite different. Understanding those if you're a business operator is really important because then they're less likely to get taken out, played, or better.
+
+Ben: I think this is a great place to leave it. Hamilton, Chenyi, thank you so much for part three. I can't wait for part four in a few years. Is this going to be a book? Are you guys going to publish this?
+
+Hamilton: What we're talking about right now is there are a variety of topics that are extremely difficult, phenotypes if you will, to tease out and de-layer. We seem to have enough of those that actually we probably could write a book about it. It's a topic of conversation.
+
+David: At a minimum, you all should have a newsletter. There should be a Strategy Capital newsletter. You'd break up there with Ben Thompson.
+
+Ben: Even if it's only quarterly or something.
+
+Hamilton: We've thought about white papers and this and that. I'm pretty lazy. Chenyi, you probably could do it.
+
+David: This is the problem. You need a bundle of skills to be like a Ben Thompson. You need to be both a great strategy thinker, which you both are. You need to be a great writer, which you are. Seven Powers is really excellently written. You need to love writing and want to do it every day or every period, which I'm not sure that you do.
+
+Ben: That's the part where David and I fall down to. People keep saying, oh, you should turn Acquired into a book, or you should turn these into blog posts. David and I look at each other and we're like, it takes us hours to write.
+
+David: That sounds like hell.
+
+Hamilton: I'd say my passion, and I think probably Chenyi aligns with this, too, is getting the theory right. It's very satisfying and extremely hard to go through and figure out how this all fits together. Of course, that's how you get to simple but not simplistic. It's the only way you get to simple but not simplistic. That's the satisfying part, but I don't know the idea of writing another book. It scares the hell out of me.
+
+Chenyi: Yeah, it doesn't help when the theory is never done. It's funny. I think earlier you mentioned, the last time we talked about platforms, it doesn't feel completed. The truth is it will never be completed, and it's always in the works. Nowadays, we got a lot clearer about it than a year ago, but it's always in the make. We'll think about something else, and it comes back to platform. We're like, oh, that's the missing piece.
+
+I realize it's actually vertical integration. We were confused about the whole scale for a very long time. Now we're like, oh, that's what's missing. The communication strategy is always a difficult piece as well. I bet the two of you spend a lot of time on each company that you do an episode on. It's things like that. Whenever you want to do an example, you're like, is this really true? Then you have to go take it all back and be like, am I just miss perceiving what this really is about?
+
+Hamilton: How did you two layer AWS?
+
+Ben: That one, we actually talked to a lot of people who were around it at the moment of conception or theoretical conception over a variety of years. There have been canonical sources. We read Brad Stone's book. We know, Brad, so we asked him, who did you talk to to piece this together? We had our own folks that we knew.
+
+There was a little bit of actual first party knowledge there. David and I had this little bit of an aha moment, a little bit of a sigh of relief, when we were like, oh, we're not going to figure out what the one story was. We actually can create an episode out of it. There are a bunch of stories, and we leave it to you, listener.
+
+David: Probably the right answer is there is no one story. Being a third-party observer to the extent that our version of what we told is true or closer to the truth than others, no person who was personally vested and interested would be able to have that perspective.
+
+Hamilton: Yeah, and channeling Kurosawa, right?
+
+Ben: Exactly. All right, that's a great place to leave it. Hamilton, Chenyi, thank you so much.
+
+David: Thank you both.
+
+Hamilton: Great. Okay, our pleasure.
+
+Chenyi: Thank you.
+
+Ben: All right, listeners, thank you. Thanks to Hamilton and Chenyi for joining us. A very clarifying discussion I felt, David.
+
+David: Totally. They really are too modest to say on the episode, but they are the very best people to do what they do because they sit at the intersection of academia, corporate strategy. Hamilton worked for Bain in strategy consulting for many years, and active investing. They're working with founders everyday getting their hands dirty. They truly are the best.
+
+Ben: Listeners, we'd love to go deeper with you. You can become an Acquired LP to come back into the Acquired kitchen. David, are you liking that language?
+
+David: I think of Steph Curry every time you say that, cooking in the kitchen.
+
+Ben: Good. Listeners, we have bimonthly Zoom calls with our LPs. We just announced that we are asking LPs to help us pick future episodes. LPs, watch your email for that. Listeners, you can join at acquired.fm/lp.
+
+You should subscribe to our second show, ACQ2, in any podcast player. For expert interviews with founders and investors, come join the Slack. There are now over 15,000 smart, thoughtful members of the Acquired community who have joined at acquired.fm/slack. For the other 95% of you who listened to the show and haven't joined, we would love to chat with you.
+
+All right, listeners, we will see you next time.
+
+David: We'll see you next time.

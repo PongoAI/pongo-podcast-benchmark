@@ -1,0 +1,667 @@
+Ben:                 Welcome back to Episode 24 of Acquired, the podcast about technology acquisitions. I’m Ben Gilbert.
+
+David:              I’m David Rosenthal.
+
+Ben:                 And we are your hosts. Today’s episode is Microsoft’s 2011 acquisition of Skype and the wild crazy journey that it took to get there.
+
+David:              Ben, you mean eBay’s 2005 acquisition of Skype and the wild crazy journey it took to get there.
+
+Ben:                 Or perhaps the Silver Lake Partners private equity takeover with Andreessen Horowitz.
+
+David:              In 2009, acquisition of Skype and the crazy path it took to get there.
+
+Ben:                 All that and more as we dive into the show. Before we get started today, we want to do a community spotlight. A user in Slack, Swyx, pointed us at his company. I believe it’s Sentieo.com. They are the kind of future of Wall Street analysts. So they have a software platform where you can save time on research, join thousands of investment professionals on a modern and intuitive platform built by former Wall Street analysts, and he lets us know that they just launched their Alexa scale. So, check that out if you have an Alexa or go to their website to check it out if you’re interested.
+
+David:              Indeed.
+
+Ben:                 Cool. Shall we dive into the show? There’s a long, rich, and incredible history on this one.
+
+David:              This story has more drama than something with a lot of drama.
+
+Ben:                 Yeah.
+
+David:              A whole lot of drama.
+
+Ben:                 I don’t know. A Will and Grace episode.
+
+David:              Yeah, sounds good. Bravo. Whatever.
+
+All right. So our drama-filled story starts all the way back in 1999 when two guys, Niklas Zennström who lived in Sweden, and Janus Friis who lived in Denmark, were both working at the Swedish telecom company Tele2. This was early days of the… well, late days of the internet bubble but very much here at 1.0 bubble. And this Tele2, they wanted to launch a web portal because everybody in those days had to have a web portal and they wanted to call it Everyday. I don’t know if it's Everyday.com or whatever the Swedish domain, you know, term ending was at that point in time. But they had just one problem and that was that nobody could develop software at the company, or at least nobody could develop good web software.
+
+And so, they had a department in Estonia. Do you know where Estonia is, Ben?
+
+Ben:                 I do. We’ll totally dive into this. But when I was at Microsoft, I was fortunate to spend a bunch of time at Skype offices and spend a week in Talin at the Skype headquarters there.
+
+David:              Skype headquarters in Talin, Estonia.
+
+Ben:                 Beautiful city.
+
+David:              Former Soviet Bloc nation on the Baltic Sea.
+
+Ben:                 Yeah. And it is wild being there because it is this incredible dichotomy of old and new where you have total Soviet Bloc buildings and even the real old, kind of the old city from before the Soviet era in Talin. And then these, like, you know, companies like Skype and a lot of the sort of new revitalization, and Estonia’s a totally… imagine if you had the opportunity to intelligently start a new country today, all the decisions you would make, and they kind of learn from the best and looked at what’s working.
+
+David:              Yeah. This is a country that was part of the Soviet Union until the late ‘80s.
+
+Ben:                 Until1989, yeah. And so there’s so much… if you ever get a chance to check out, there’s a lot of really interesting things that they do as a government that are totally tech enabled. Every citizen has a smart card that they can put into their computer and you can vote online because you’d have a uniquely identifiable, you know, electronic thing that identifies you as a citizen. It’s super cool.
+
+David:              Wow. So 1999, the whole country is 10 years old. The Swedish telecom wants to make a web portal. So what do they do? They take out an ad in the local newspaper saying ‘advertising contract job to build this web portal’ for them and they’re going to pay 5,000 Estonian kroons per day, which is about $330 at the time, and that was more than the average Estonian earned in a month apparently. They were going to pay that every day.
+
+So they get a lot of interest and they end up hiring three developers: Jaan Tallinn – we’re going to butcher these names, we apologize – Ahti Heinla and Priit Kasesalu. We totally butchered that and we apologize. They end up hiring them and there’s just one more problem, though. They’re very talented programmers but they don’t know PHP, which is the language of the web at the time.
+
+Ben:                 Yeah. My problem was that I didn’t know PHP like sophomore year of high school, I remember. That would have been like 2004-2005 and I wanted to make this… it's totally irrelevant but that was totally the language of the day, right? If you wanted to do anything on the web, it was like, well, if you have a PHP server running, you can drop these fancy tags and do dynamic stuff inside your HTML and wow everyone.
+
+David:              Yeah. I mean, for the longest time Facebook was all ran in PHP.
+
+Ben:                 Yup.
+
+David:              No longer. Those days are over. But, back in the day, PHP was how the Internet ran. So, no problem. These guys are super talented. They just learned PHP in a weekend and they build Everyday.com or whatever it was that Tele2 wanted to be called, and it was awesome. So, a couple of years, not even a couple of years go by, but Zennström and Friis, the guy in Sweden and the guy in Denmark, they decided they want to leave Tele2 and they want to become entrepreneurs, you know, internet bubble and this is the heyday of Napster. So, folks probably remember Napster. I certainly do. Won’t comment on whether I participated in the file sharing.
+
+Ben:                 I heard it was great.
+
+David:              I heard it was great, yeah. Although I was definitely under 18 at the time, so whatever. So they decide that they want to start a competitor to Napster, and it’s not going to be just for music. You’re also going to be able to share files of any type. So, movies, AVI’s and software programs, you’d be able to basically share and (read) “pirate” anything. And so they decide that they’re going to call this Kazaa.
+
+Ben:                 Oh my God, yeah. When I was doing the research, I could not believe these were like the same guys that did the Kazaa.
+
+David:              Literally the same guys. So, again, but they’re not software developers. So, what are they going to do? Well, they call up the Estonian guys. So they call up the Estonian guys and were like, “We’re doing this, we’re building a Napster competitor.” They come onboard, they build Kazaa. It’s awesome. And it was indeed quite awesome.
+
+Ben:                 Yeah. I remember I was like in an epic war with my friends on what was better, LimeWire or Kazaa. Because they were both sort of the –
+
+David:              The successors to Napster.
+
+Ben:                 They both succeeded Napster .
+
+David:              And Napster gets shut down. And so, Kazaa and LimeWire become like the heir apparent. Kazaa actually becomes pretty quickly the most popular application in the world.
+
+Ben:                 Really. Like the most popular application. Period.
+
+David:              Yeah. It’s like the biggest thing on the internet. I mean, the internet is quite small at this point in time, but Kazaa basically owns the internet. They’re like Facebook.
+
+Ben:                 Which is hilarious to make that analogy because like, thinking about Facebook’s brief detour and Mark Zuckerberg and those guys ended doing Wirehog in the early days of Facebook, and actually being a competing priority, they almost didn’t do Facebook because they were focused on Wirehog.
+
+David:              On Wirehog, yeah.
+
+Ben:                 P2P file sharing was the thing.
+
+David:              Which sounds totally crazy now. But, I mean, there actually was some justification for this. I mean, so Kazaa launched in September 2000 and, like I said, super quickly becomes the most popular program on the internet and along with that massive, massive legal issues, you know, playing out once again just like they did with Napster.
+
+Ben:                 This will be the foreshadowing for all of the legal issues that they would go through with Skype later on.
+
+David:              Oh yeah, much more to come. So, Zennström and Friis, they’re riding higher, like they have the biggest company on the internet, but they’re also terrified that they’re going to get arrested. And so they actually sell Kazaa on paper to some Australian businessmen with, yeah, I don’t know, that’s all I was able to find. They sell it to some Australian businessmen.
+
+Ben:                 There’s no price or like…
+
+David:              I don’t know exactly what happened.
+
+Ben:                 It got lost in the sands of time.
+
+David:              Yeah, lost in the sands of time.
+
+Ben:                 If you know actually, we would love to hear about that in Slack.
+
+David:              In Slack.
+
+Ben:                 You know us, Acquiredfm@gmail.com. It would be good to follow up on those.
+
+David:              It may be out there somewhere. You know, there’s so much out there about Kazaa in the early days and Skype. This show was so much fun to research. So they sell the company but they keep the technology behind it, and that foreshadows what will happen in a few years with Skype. So they keep the technology and they start casting about it for, well, what else could we do with this incredible peer-to-peer file sharing technology that we developed? It might be worth a quick detour to just talk about how peer-to-peer technology and file sharing actually works at this point in time.
+
+So, the basic structure is that whoever is on the network is connected to everyone else on the network, and so, if you have a file or any kind of piece of data that you need to be transferring, rather than going and downloading that from one server in one location which is how traditionally the internet networking had worked, and actually, once again, worked mostly this way today. But this was before the “cloud” existed. You could just download pieces of that file from everybody else, every other node on the network. So, this is why on Napster and on Kazaa, you know, songs that were really popular were super, super fast to download because if thousands and thousands or millions of users all had that same file on their computers and they were connected to the network, you could just download little pieces of it from many thousands of different people instead of downloading, everybody going to one spot and downloading the whole file.
+
+Ben:                 And that’s so much more effective because, you know, then your bandwidth constrained by that one single server, in those days, you know, you had CDNs that were not as established and well-built out yet – the bandwidth issues and performance issues getting it from that one single server. So, suffice to say, peer-to-peer was this total revolution in maybe not the highest availability. There were kind of issues with reliability and some spottiness with it, but in a full distributed peer-to-peer network, amazing if your neighbor had something that you wanted, that you could just one-off grab from them.
+
+David:              And so, Zennström and Friis at this point have sold “Kazaa” but they’ve retained this technology and they’re casting about for what else they can do with it, and they realized actually of this ingenious realization that this same peer-to-peer technology can be used for a bunch of stuff but for transmitting voice over the internet. And if a whole bunch of computers all running the same peer-to-peer software, just like Napster, like Kazaa, were online in various geographies around the world as long as you had enough density in particular, you know, starting points and ending points of calls that were happening, you could transfer packets that contained voice, you know, across this peer-to-peer network instead of like, you know, in singular kind of routes between one computer and another over the internet, and it actually enabled really clear, high quality voice calls to be done just for free over the internet.
+
+Ben:                 Right. And they actually developed their own protocol for this. You know, it’s formerly known as the Skype protocol that endured until I think 2014 and from there would sort of establish this hybrid model, where they had these direct peer-to-peer nodes like we’re talking about, and super nodes. So, you know, established servers that were kind of–
+
+David:              Always on.
+
+Ben:                 Always on and meant to handle that kind of traffic.
+
+David:              Yup. So, this is now kind of late 2002, early 2003. So they team up with the Estonians again and they start working on an early alpha for what would become Skype, and they decided they wanted to call it “Sky peer-to-peer”.
+
+Ben:                 Catchy name.
+
+David:              Super catchy name. But they wanted to abbreviate it to “Skyper”.
+
+Ben:                 Which I think is cool. I wish they had stuck with it. But I think the issue was they couldn’t find the domain name.
+
+David:              They couldn’t get the dot com name.
+
+Ben:                 Yeah.
+
+David:              Yeah. They couldn’t get Skyper.com, so instead, they decided to just drop the ‘R’ at the end and thus Skype was born.
+
+Ben:                 Dropped Skype’s wiener.
+
+David:              Totally.
+
+Ben:                 Incredible at that time that Skyper was not available. But Skype, a one-syllable, five-letter word.
+
+David:              Like that would never happen today that you would go down a letter and that domain name would be available versus a higher number of letter domain name.
+
+Ben:                 Planning for the old days.
+
+David:              But they do something really right at the beginning too. So we talked about how the technology was pretty amazing and that enabled them – you know, it enabled people to do voice calls over the internet as long as there was density of people online in both where the call was starting and ending, you know, around the whole world. Way better than traditional telephone networks. But the other thing they got really right is they made it really simple in the beginning. They realized that kind of just like Kazaa and like Napster, if you were going to build a huge network of people doing this, you couldn’t just have tech geeks doing this. You had to make the software so easy that everyday people would do it.
+
+And so there’s actually an interview, a quote from an early Skype employee, Lauri Tepandi, at the time, and she says, “Right from the start we set out to write a program simple enough to be installed and used by a soccer mom with no knowledge of firewalls, IP addresses, or other technological terms.” And because of that and also probably because it was free, it enabled you to call people in other countries for free when you used to pay a lot of money to do that.
+
+Ben:                 Long distance calling even domestically was super expensive then.
+
+David:              Yup. Even domestically, long distance calling was expensive. But think about in Europe where Skype is based, like calling between countries, and people have friends and family that are in other countries, and they have to pay exorbitant amounts to call them.
+
+Ben:                 Yeah. And the telecoms were highly, highly regulated, had a very inflated price scheme where there was, you know, not necessarily a collusion but at least a set expectation of how much you would charge for long distance and routing between networks and by, you know, pioneering VoIP, really coming up with this idea that, like you go around all that entirely. And I think the funniest thing to think about is in the history of network computing, everybody that had a dial-up modem, we started with our data flowing over voice lines and the way it would communicate is literally making sound over those lines. So it was like IP over voice, and then you had the advent of this and where we are today and how every office mostly has phones that are actually IP phones, and now all of our voice goes over IP.
+
+David:              Yeah.
+
+Ben:                 It’s kind of hilarious.
+
+David:              Yeah. This technology is so much better than the traditional phone system that now, the traditional phone system runs on this technology.
+
+Ben:                 Right.
+
+David:              Which is pretty amusing.
+
+Ben:                 Yeah. Actually we’re sitting here in Pioneer Square Labs, we moved into a new office a couple of months ago, and all of our hardwired phones that are like our desk phones are all IP phones. We didn’t even think to, you know, why would reach out to AT&T and have them set up a… yeah.
+
+David:              Totally. So, like I said, super simple. Free, really compelling value prop. So Skype launches officially in August 2003. On the very first day, remember this is August 2003, so like the internet orders, multiple orders of magnitude smaller than it is today. On the very first day, they get 10,000 downloads. The first day they launched, they get 10,000 downloads of Skype. By the end of the first month, they have a million users.
+
+Ben:                 I’m so curious how they… like on the first day, so how did they get the word out? That’s a little loss of history, but it’s not like there’s an App Store to be featured on the front page of.
+
+David:              They did super early growth hacking, you know, emailed their friends and friends of friends and got the word out. I mean, they also had some benefit in that these were like the Kazaa guys. So, you know, they were known quantities. But still, this is incredible. Ten thousand downloads on day one, a million users by the end of the first month, 4.1 million users by the end of the first quarter; and just a hair under 20 million users, 19.8 million users that they get in their first year.
+
+Ben:                 Wow.
+
+David:              I mean, those are like pretty decent numbers for even a mobile startup today. There are no mobile phones at this point.
+
+Ben:                 Yeah. And the fascinating thing about peer-to-peer –
+
+David:              There are no smartphones at this point.
+
+Ben:                 Yeah, good point. It’s cheaper to start a company with the advent of cloud hosting than it was in those days where you need really expensive data centers. But with the advent of peer-to-peer, they could support 20 million users without those insane infrastructure costs that would, you know. Any other company is saying like, “Oh, it’s 2001 and we’re launching a company, and we quickly have 20 million users.” It’s like, well, how many millions of venture capital did they raise?
+
+David:              Yeah. And they did raise a small amount of venture capital before they launched. Interestingly, from Bill Draper, the legendary venture capitalist.
+
+Ben:                 No way.
+
+David:              And Howard Hartenbaum who’s now at August Capital. They were working together at a different firm at the time. And they went over and they had heard that the Kazaa guys were starting a new company and they’re like, “We’re going to give you some money. We don’t care what you’re doing. We’re just going to invest in you because, like, you’re the Kazaa guys.”
+
+So, they were the first investors. But then they launched and this growth is incredible and so as this growth is happening, of course, every VC now in the world wants to invest and so there is 18 million dollars from Index, Bessemer, and DFJ after they launched and have this growth. But, things are still pretty crazy. So, most of the companies in Estonia where these original developers are–
+
+Ben:                 And Estonians are crazy. I mean, I was there in February so it’s like -20 degrees and people are still going out drinking. They get used to it like it’s nothing. They cross-country ski miles and miles everywhere all the time. I walked away with this impression that you do not mess with an Estonian.
+
+David:              Yeah. So, you know startups, like there’s lots of fun and pressure and crazy times in startups still. But this kind of took it to a new level. So, I think still even to this day, every new employee at Skype has to undergo an initiation and the initiation is you have to do a shot of tequila, sambuca, and Tabasco sauce.
+
+Ben:                 I did this.
+
+David:              You did this?
+
+Ben:                 Yes!
+
+David:              This is amazing.
+
+Ben:                 Yes. There’s this bar right outside the old… in Talin.
+
+David:              Yeah. From day one, every Skype employee did this.
+
+Ben:                 No way. This is on the internet?
+
+David:              This is on the internet, yeah.
+
+Ben:                 Did you see what the shot was called?
+
+David:              Yeah, there’s like a name for it. I didn’t write it down.
+
+Ben:                 I don’t think… English speakers can’t… it’s hard to pronounce it. I’ll see if I can look it up while you’re…
+
+David:              So the other thing that they do is they install a pool in the boardroom in the office in Estonia. Not a pool table. A pool!
+
+Ben:                 What?
+
+David:              Yeah. And apparently they have to, like, negotiate with the building about, like building management, like whether the floor is going to be able to support this. I think it was a kiddie pool but it was still a ton or two of water that was installed in the boardroom.
+
+Ben:                 Jesus. Okay. The drink was either Millimallikas. I heard it differently from different people. But as soon as I saw it on Google, it’s like, “Oh, yeah!”
+
+David:              That’s amazing. You've been initiated.
+
+Ben:                 I have.
+
+David:              So, the growth just continues as we’re talking about things that are growing, like gangbusters. In June of 2005, they add video calling, which is funny when we think of, like when I say to somebody I'm going to Skype them today instead of doing a call, like I mean I’m going to video chat you.
+
+Ben:                 Right.
+
+David:              But that wasn’t even added until two years after it launched.
+
+Ben:                 Yeah, ’05. It’s interesting to think fast forward to today where they’re making forays into text chat, they’ve had text chat all along but trying to make that more part of the core experience started with audio, then got into video, became ubiquitous with video; and a lot of other chat platforms are competing against it today that are text and photo-based. Like that’s not their kind core and starting place at all. And it’s funny to think about much like with phones, how primitive text seems and how complicated voice and video seem, but there was calling on cellphones before there was texting on cellphones.
+
+David:              Yeah.
+
+Ben:                 And text was the third feature of Skype.
+
+David:              I’m sure this is something we’ll get into more in tech themes and grading. But it is pretty funny to think about that, that text is now the dominant medium of communication. Not calling even though it’s more complicated and more bandwidth-heavy these days on smartphones.
+
+So, they launched video calling. That grows also enormously and so a couple months later, September of 2005, there is lots of interest in Skype and from multiple acquirers. Big companies are interested in buying the company. They end up deciding to sell to eBay for $2.6 billion. eBay.
+
+Ben:                 Hey, that was the heyday for eBay too.
+
+David:              Well, it was slightly post heyday. I mean, this was a couple years after the internet bubble burst. But eBay is still a very large company and people are like, “Why is eBay acquiring Skype?” And one of the rationales that they give for the deal is well, people would be able to call each other and verify transactions.
+
+Ben:                 The mind-blowing thing here with this is like when we covered the PayPal-eBay acquisition, that made so much sense because people were already using PayPal as a major source of payment on eBay, and I’m very curious like did they observe behavior where people were using Skype to do this already or was it literally just –
+
+David:              It's really hard to imagine. I have no idea why you would call somebody after they wanted eBay auctioned.
+
+Ben:                 Yeah. To me it seems sort of eBay’s foray into trying to become a conglomerate and, like, private equity style take on this high growth business that has a very pioneering technology and see if they can just grow that as an asset inside their organization and theoretical synergies happen with their other product. But, to me, hindsight’s 20-20 and we can look all smart here being like, “That was a done acquisition.” I don’t see it.
+
+David:              Yeah. I agree. It will be hard to see this being a smart acquisition. Regardless, however, it was definitely a dumb acquisition because they made one key mistake as part of the acquisition and that was much like when the Kazaa guys sold Kazaa and they kept the technology, once again, they kept the technology.
+
+Ben:                 And so they had, I think it was a company called Skype technologies that literally was just licensing it to eBay.
+
+David:              It was actually a company called… I don’t know if it’s Joltid. It’s J-O-L-T-I-D. And that was Zennström and Friis’ company and they kept the core peer-to-peer networking technology in that company and then licensed it to eBay and Skype. So as we’ll see in a minute, that definitely comes back to bite eBay and Skype, too. So, the transaction happens. Skype, which is this crazy European company is now part of eBay based in San Jose, run by… I think Meg Whitman was still CEO at that point in time.
+
+Ben:                 Yeah. This is September ’05.
+
+David:              Yup. September ’05. You know, very Silicon Valley but very corporate as far as Silicon Valley goes, has been through the dot com crash and now emerged and is a very large public company. So to say there was culture clashes is an understatement. In fact, in 2006 most of the eBay management goes over to Estonia to go visit the Skype team there and go through kind of like the roadmap and the feature development and the integration plans. The Skypers aren’t too excited about that but then in the evening, they decided the Skype team is going to throw a huge party for this, for the eBay guys coming over. And so they throw this huge party at the hotel where the eBay team is staying. And the party ends, apparently Niklas Zennström – we read this on the internet so it must be true – he gets behind the bar and starts pouring everybody shots, unclear if they included Tabasco or not. And then he gets on the bar and he’s pouring shots for everybody and he yells out “what happens in Estonia stays in Estonia!” And everybody, eBay, Skypers, they all jump in the pool. They’re all like fully clothed at this point at the end of the night. Well, turns out it gets caught by news crews in Estonia and it's on local television, like eBay and Skype management basically trashing this hotel. So then of course they have to pay for it all and this is not like the corporate culture that eBay signed up for.
+
+Ben:                 Sounds like a good party to me.
+
+David:              Yeah, sounds like a pretty good party. Kind of wish I was there. But, the eBay management did not. So, a couple years go by, Skype is still growing super, super fast. We get to 2009 and Wall Street is like… So Skype is at this point the fastest-growing part of eBay, division within eBay.
+
+Ben:                 But that’s a story we’ve heard before with PayPal.
+
+David:              Yeah, exactly. Skype has over half a billion users around the world at this point and is quite profitable and making a lot of revenue. In the third quarter of 2009, Skype itself did $185 million in revenue. But it’s just not a fit within eBay and Wall Street is saying that they should spin it out or do something, this makes no sense. And so they start working on a transaction that we referenced earlier where a consortium of private equity firms and Andreessen Horowitz, which had just been founded by Marc and Ben, are going to invest directly in Skype, spin it out of eBay, eBay will retain a stake, and end up valuing the company about at what eBay bought it for a few years earlier.
+
+Ben:                 Because I think somewhere in the middle there, October of 2007, eBay did a write-down internally of the value of Skype.
+
+David:              Yup. But there’s still one problem again, which is that Skype doesn’t own the IP. And they’re just licensing it back from Joltid, from Zennström and Friis. And so, what happens, Zennström and Friis actually sue both eBay and the investor consortium, sue to stop them using the technology and there’s this whole big… and this is all playing out in public, eBay is a public company.
+
+Ben:                 So that’s totally road blocking any of –
+
+David:              Totally road blocking. There’s a chance that Skype could just die. Like one very real path was that they couldn’t use the technology anymore, that they would just have to shut the whole thing down.
+
+Ben:                 And that’s not realistic, right? They’re going to settle.
+
+David:              Well, right. So another potential path that the eBay and the Skype team was furiously working on is develop an alternative technology to power Skype. But again, really hard to do that because the peer-to-peer technology is kind of the core of how this works. And then the third option is settle with them. That’s really, I think, what was going on, was the founders were basically trying to… you know, they wanted to invest in the deal and did end up investing in the spinout. But so they do eventually end up settling. And it’s interesting what happens. So, they give Joltid 10% in Skype as part of the settlement. So they get a 10% equity stake. Skype gets the technology. So finally the actual technology becomes part of Skype the company. And the founders also get an $85 million cash payment. But what’s interesting is they then also invest $80 million into the spinout. So I guess the cash comes out about even for them but they then get another roughly 4% of the company. So they end up with 14% of Skype post spinout. eBay retains 30% and the investor group gets 56% of Skype.
+
+Also interesting as part of the deal, Skype itself at this point, Niklas has a venture firm in Europe, which is quite a good venture firm called Atomico. Skype ends up investing in Atomico second fund and investing in Rdio, the streaming music service that was also started by them.
+
+Ben:                 No way.
+
+David:              Both of these as part of the settlement.
+
+Ben:                 Wait. Was Rdio an Atomico company? Who started? What’s the connection there?
+
+David:              Zennström and Friis started Rdio.
+
+Ben:                 No way! They had a third act with that. Wow.
+
+David:              Yeah, they had a third act. And they had a fourth act, a company called Joost which was going to be a peer-to-peer video streaming, basically disrupting television. Skype didn’t invest in that but they agreed as part of the settlement to promote Joost on Skype. I don’t know how they would promote Joost on Skype, but it was part of the settlement.
+
+Ben:                 Wow.
+
+David:              Super interesting. This was a crazy deal. But, it works out. So the spinout happens. October of 2010, Skype hires Tony Bates who was a star at Cisco to come in and be the CEO.
+
+Ben:                 And before that, in June 2010, Mark Gillett who was an operating partner at Silver Lake became the chief development officer. So those guys, you know, this is where the folks at Microsoft start to become familiar with these names, people who were there now and have been there for the last 5 years or so. Both played huge roles in sort of the integration and leading the Skype division inside Microsoft.
+
+David:              Yeah. Huge roles. And then so, in these couple of years in the interim, Tony and the new management team basically focuses on like totally restructuring Skype, so, integrating the technology that is now finally part of Skype into the company, modernizing it.
+
+Ben:                 Classic and super well executed private equity play.
+
+David:              Incredibly well executed. I mean, I don’t know if we’re going to disaggregate the grades of all these acquisitions here but I think this definitely is making a case for getting the highest marks. They also realized at this point it’s obvious that mobile is going to be a thing. So, they really pushed Skype for mobile, getting on iOS, getting on Android, and the business does great. And then just a couple years later in May of 2011, so actually less than 2 years after the spinout happens from eBay, Microsoft shows up and finally, we get to the end of the story. $8.5 billion acquisition – Microsoft announces in May of 2011 that they’re acquiring Skype, at that point was their largest acquisition ever.
+
+Ben:                 Just until LinkedIn.
+
+David:              Just until LinkedIn.
+
+Ben:                 And looking at just to recap, September of 2009, Skype is valued at $2.75 billion in the private equity takeover. And then when you look at this Microsoft acquisition May of 2011, so what, under 2 years –
+
+David:              Under 2 years later, essentially almost $6 billion of value creation. Now granted, I mean there was a lot of pain that they had to go through to get that, but hey, that’s a pretty good payout for everybody.
+
+Ben:                 Yeah. I mean value creation defined in the terms of, which I guess, is how you define value but value is whatever the highest bidder is willing to pay. Because if you truly look at the intrinsic value, I mean it grew tremendously in terms of user growth under Silver Lake. But boy, you know, Microsoft paid 32 times Skype’s operating profits.
+
+David:              Yeah. So when Microsoft acquired Skype, had 700 million users, and in 2010, the full year of 2010, had done $860 million in revenue and $264 million in operating profit. So still, I mean a very rich price paid by Microsoft, right?
+
+Ben:                 Right.
+
+David:              Well, it’s something that I think kind of gets lost in this. All the ups and downs and roller coasters of this story and all of these transactions were reported so much in the press, is Skype’s actually a really, really good business.
+
+Ben:                 Yeah, absolutely. I mean, we focus on the valuation play of like basically, eBay sold it for what they bought it for after some tumultuous years, you know, the private equity days, they tripled it in less than 2 years. But you’re right. As an independent business, I don’t know if it’s actually worth 8.5 billion dollars in 2011, but like fantastic business.
+
+David:              Yup, fantastic business. And eBay, we’ve been pretty hard on them I think justifiably so thus far, but they did make quite a bit of money on Skype because they sold a 65% share at the spinout but then they retained 30%.
+
+Ben:                 Great point.
+
+David:              And so when Microsoft bought Skype, they made roughly back, you know, the same value that even just from that, pretty close to the same value that they paid for Skype in 2005.
+
+Ben:                 Yeah. That’s totally lost to the narrative. I mean the intelligence of eBay to hold on to that much, that it had future growth ahead of it outside of eBay.
+
+David:              Yeah. I mean, it was never a question that (A) this was great business and (B) was growing super fast, even through all of this tumult.
+
+Ben:                 Yup. And so to be clear, there’s no more partial ownership after this. Microsoft really, I mean, they cleaned out the cap table. The full owner, they have entire –
+
+David:              Which usually is what happens in an acquisition, but I guess third time is the charm for Skype.
+
+Ben:                 Yeah, yeah. Well, I mean we’re used to, yeah, kind of shocking what happened with eBay. I was going to say like we normally see where the tech company is. They want full and complete control because they’re going to integrate the product and it’s going to become like, you know, as we’re doing research, we look into Skype today and it’s impossible to get clear numbers on how the Skype business is doing because it’s been so integrated into every fiber of what Microsoft is doing. And that’s kind of the normal story. People look at it like an asset that they’ve acquired that they move into all these pieces of their business, not this like independent private equity owned thing that another tech company kind of owns and the founders kind of own. There’s management put in place to clean it up and get it ready for a sale.
+
+David:              Well, I think that’s why… you know, part of the reason why Wall Street was clamoring so hard for eBay to spin Skype off in the late 2000’s because they reported it as a separate division. Like it was a completely separate company. They were no synergies with eBay despite whatever they may have said at the time of the deal. But it was really clear that there was a lot of value locked up in that company.
+
+Ben:                 Yup. So at this point, Skype’s former CEO, Tony Bates, is now the president of Skype reporting directly to Microsoft CEO Steve Ballmer. They have $663 million global users and, you know, it’s time to do the integration. I remember this vividly when one Microsoft memo came out that that company was going to reorient to more of a functional organization under Steve. Since then, obviously Satya has come in. Microsoft has taken a little bit of a different or tremendously different direction.
+
+David:              But what’s interesting and then we’ll move on to what I feel like we’ve talked a little bit about acquisition category already, but I don’t know if you remember, but when Ballmer announced that he was going to retire, there was a lot of speculation about who the next CEO of Microsoft was going to be. And Tony Bates was pretty at the top of the list. You know, it was Tony Bates, it was Alan Mullaly from Ford.
+
+Ben:                 Until he went and joined the board of Google.
+
+David:              Yeah, right. Good way to disqualify yourself from becoming CEO of Microsoft and unclear that he ever wanted the job. Maybe that was how he… He just stated he didn’t want the job.
+
+Ben:                 He was sending a clear signal, yeah.
+
+David:              And Satya. But Tony was very legitimate candidate to potentially become the next CEO of Microsoft.
+
+Ben:                 Yeah, that’s right.
+
+David:              He’s actually at GoPro now.
+
+Ben:                 Really?
+
+David:              He’s the president of GoPro.
+
+Ben:                 Huh.
+
+David:              Yeah.
+
+Ben:                 It’s probably worth talking a little bit about what’s happened at Microsoft since the acquisition. So, for a long time, you know, let’s talk about what’s going on at Microsoft during the period of the Skype years. So, they had Office Communicator that was part of the Office Suite when you subscribed and you entered an enterprise engagement and, you know, you got Word, Excel, PowerPoint, Visio – the entire Microsoft Office Suite. There’s obviously varying levels of that that would come with Communicator, which I believe in… I’m going to get the date wrong, but at some point it was rebranded as Lync which was something that never, I mean that was an Enterprise offering that people who had Communicator in their workplace then knew “okay, we got Lync”, and that was never a brand that was on the typical consumer’s tongues. And in acquiring Skype, then there was this like very interesting dichotomy of while we’ve been building this thing called MSN Messenger, which was our consumer offering for a while, there was Office Communicator which became Lync. Now we have Skype. So they’re sort of these three different chat-looking things that all seemed to sort of do the same thing, and it’s taken probably 3 or 4 years to really start to narrow that. So, MSN Messenger has been killed. Lync is dead. It’s formally changed into and using kind of a mesh code base. But, Skype for Business. So there’s Skype for consumers and Skype for Business for businesses, and you know, this is in Outlook.com when you log into your consumer mail offering, you see Skype automatically is there. There is all sorts of apps for every platform. It’s baked into Windows. It’s really kind of like across the whole Microsoft ecosystem at this point.
+
+David:              Yup, and let’s not forget a year later Microsoft acquires Yammer.
+
+Ben:                 Yes, in all of its glory.
+
+David:              All of its glory.
+
+Ben:                 You know, Enterprise social or Enterprise mass communication that transcends email is and will be a thing; it just was not in the form of Yammer.
+
+David:              Yeah.
+
+Ben:                 It’s kind of an interesting product in the early days.
+
+David:              You know, I feel like we’re bleeding a little bit into tech themes here. But you know, Skype was really… well, I’m just going to say we’ll talk about it more in tech themes later. Skype was really the first both business and consumer internet product and really in many ways both foreshadowed and was the wrong instantiation of Slack to come. You know, I mean Slack is a business product but very also used by consumers.
+
+Ben:                 Super user-friendly.
+
+David:              Super, super user-friendly and Skype’s very similar. You know, I think it was more a consumer product and the business model was more for consumers than enterprises but it was the first… I don’t know if it was the first but it was a great example of a crossover product that businesses… I mean, I do many calls with startups I do as Skype video chats.
+
+Ben:                 Yeah. I wouldn’t say that it was the wrong product. I think that video, audio served a different purpose than what Slack is, a glorified IRC chat. You know, slack is expanding to become communication in the fiber that exists between employees that’s more than just chat. But that’s really their core competency. And the question is who will own communication in enterprises going forward and what form will it be and we’ll these things be combined. Like, are we going to see a Skype-like product and a Slack-like product merge, and are we going to see that happen. You know, are we going to see Slack get Skype-ified and Skype get Slack-ified at the same time.
+
+David:              Well, I think that these things are both happening. But it’s interesting, you know, the path that Microsoft has kind of taken since the acquisition with Skype – we were talking about this before the show – is not a unified path. I mean there’s Skype for X, Skype for Y, Skype product derivative Z. It’s very confusing whereas like unclear what product that Microsoft and Skype are offering today that I would use for what use case. Whereas you look at Slack on the other hand, it's just Slack, like there is one product.
+
+Ben:                 Right. There is no ‘Slack for’.
+
+David:              One front door and everything is integrated into Slack but it is one user experience. And then you can do everything from within that one user experience. I think that is, just speaking on personal preference, but I think also speaking for most users out there, I would so much rather have one superior user interface and customer experience that I can accomplish many things from than I would… oh, am I stealing your thunder here?
+
+Ben:                 No, I’m just like –
+
+David:              It always comes back to Ben Thompson, come on.
+
+Ben:                 Maybe it’s integrated versus modular. And it just like it’s going to ebb and flow and it’s going to be advantageous to be bundled and then it’s going to be advantageous to be unbundled, and then it’s going to bundle in a new way and it’s going to keep going back and forth. Like we’re about to see bundling, I think, and we’ll see this stuff get recombined and then we’ll see it get re-broken out again when that’s appropriate. But yeah, I want to move on to acquisition category.
+
+David:              Okay, let’s move on to acquisition category.
+
+Ben:                 So I’m going to call this a product acquisition. There is technology in there--
+
+David:              Well, it very definitely was not a technology acquisition a couple of times.
+
+Ben:                 Yes. It certainly was more a technology acquisition this time than it was the eBay time around. The reason I don’t think it’s business line is because they bought it at such a high multiple of what their operating profit was that they weren’t just going to buy and cash flow this thing. They were buying a product to integrate into the rest of their ecosystem and create a stronger offering across the board. This was an acquisition done where this product was being greatly sought after by both Google and Facebook. There were acquisition rumors swirling for about half the price of what they got bought by Microsoft for for months before this. And so, you know, in a competitive environment where video streaming technology or video chat technology is not yet commoditized, we’re still two years away from Google launching Hangouts. You know, this is a product that has a lot of users, is growing fast, and can really be integrated to beef up somebody’s offering, and Microsoft decided it needed to be them.
+
+David:              Yup. I totally agree. It’s interesting, you know, I think the eBay acquisition really was a business line acquisition. I mean it was totally separate, it was reported separate, it was a very different product. But the Microsoft acquisition I think is very clearly a product acquisition and not with the integration that you've seen into all parts of the Office Suite and other areas within the business.
+
+Ben:                 Yup.
+
+David:              Okay. What would have happened otherwise?
+
+Ben:                 It sort of is interesting to look at like the rise of Hangouts and, like, competing video chat and VoIP products. It doesn’t feel like Skype is the sort of one and only the way that it used to be. I don’t know if you feel that way too. This is totally, totally anecdotal.
+
+David:              I definitely feel that way.
+
+Ben:                 When someone says like we should hop on a Skype call, it ends up being a Google Hangout pretty often.
+
+David:              Or in an enterprise case, often a Zoom call.
+
+Ben:                 Oh, yeah. Or Blue Jeans.
+
+David:              Yup. Blue Jeans or Zoom. I found that Zoom actually tends to work the best out of everything. But, I think this is interesting and I want to talk about this in the context of what would have happened otherwise because yes, you’re right, there were lots of rumors that Google and Facebook were looking at Skype as well when Microsoft bought them, which I just think is super interesting and also comes back to this crossover nature of Skype. Microsoft primarily acquired Skype I think for the enterprise side of the business more so than the consumer side of the Microsoft’s business. And you see that, you know, it was actually our friend Kurt DelBene who when he was president of office who led the acquisition. So it was actually being done through office at Microsoft. And then think about like what if Facebook had acquired Skype and then it would be primarily a consumer-facing product.
+
+Ben:                 And the fascinating thing about it is Facebook had just launched like a Skype, a white label version of Skype inside of Facebook Messenger. So Phillip Su I think led this project which is like the overlapping people in this is incredible. So, when I was doing the garage at Microsoft, Phillip had started one of the most legendary projects of all time and he was like a constant garage tinker guy and it worked on all kinds of cool stuff. He ended up leaving to go to Facebook. He runs engineering in the Facebook London office now but before that led the project to integrate Skype Calling, which wasn’t called Skype calling. It was just like video calling in Facebook.
+
+David:              I remember this, yeah.
+
+Ben:                 Into messenger.
+
+David:              But it was Skype that powered it, right?
+
+Ben:                 Yes. And so then, I mean that left all these questions of like, well, is this their first or are they just doing a little bit of a deal now so that they can acquire them which didn’t quite end up happening. But interesting proof of concept there.
+
+David:              Totally.
+
+Ben:                 Now that we’re here in “what would have happened otherwise”, I think it’s worth bringing up the issue of repatriating of capital and what that currently looks like for US corporations. We’ve been hearing a lot about it in the news recently in this kind of political race that we’re in about companies can’t bring, you know –
+
+David:              You mean this national travesty that we’re in?
+
+Ben:                 Yes. God, I can’t even think picturing him.
+
+David:              Sorry about that.
+
+Ben:                 So in thinking about what could have Microsoft done with a lot of this capital they had overseas, that it had been a long climate of not being able to bring it back to the US without paying huge taxes. Skype is a Luxembourg corporation.
+
+David:              That’s a great point.
+
+Ben:                 It’s a pretty great way, you know, and looking at like what foreign businesses could we buy that would integrate well into our products and give us like, you know, this boost into communication, like they needed a consumer and to boost their enterprise offering in video chat, in calling. It takes total sense when there’s not a lot of better things you can do with that capital.
+
+David:              Yeah. I think this is a great point and also, you know, we don’t know exactly how Microsoft thought about this and how much this played into it but, Ben, as you pointed out some of the rumors that were circling about other players, Google and Facebook, acquiring Skype, the rumors were at a much lower price was Microsoft willing to pay a lot more because they had all this cash overseas that they needed to put to work.
+
+Ben:                 Certainly at a much healthier balance sheet than Facebook at least at that point.
+
+David:              Yeah. If Facebook was public at this point, I think it would have just been…
+
+Ben:                 Let’s see.
+
+David:              When was the Facebook IPO? No. Facebook was a private company at this point. Not public. So, it would have been certainly possible for them to do an acquisition of this size but quite difficult.
+
+Ben:                 Right. And honestly, that’s one thing I’m going to keep in mind when grading this acquisition. I mean, I think the super skeptical lens that I had on coming into today was Microsoft spent $8.5 billion with Skype and seriously, how are they going to earn that back? It's so far from being something that they can just cash flow. It’s growing but like it was already a pretty huge business with a massive percent of the VoIP calls that were made globally going through it. It wasn’t something that I thought had that much more growth left in it and nor did I believe Microsoft was going to accelerate that. And, you know, it's done well like it’s grown the way that you would expect it to grow. But when you think about in the context of what else could they do with that cash and was this the best thing or one of the better things they could have done with it.
+
+David:              Certainly better than buying treasury bills.
+
+Ben:                 Yup.
+
+David:              Yup. Great point. Really great point. I guess the other thing we should cover on before we move out of “what would have happened otherwise?” You know, I think there was a path and a very viable path for Skype to go public and be a standalone public company again.
+
+Ben:                 That’s right. And what is this, in 2010 Skype filed with the SEC to raise 100 million.
+
+David:              They had actually filed to go public, filed an S1. I think that was probably the plan at spinout when Silver Lake and Andreessen and the other folks invested in Skype and the spinout was that with some cleanup led by Tony Bates and others that this could be a standalone public company.
+
+Ben:                 Yeah. On to tech trends, I think that it’s interesting… this is a good foray from what we’re just talking about. It is interesting to note for listeners that we keep seeing this pattern over and over again where a company gets bought right when it was about to raise a bunch of money like Instagram, or somebody’s out looking to do a rollup strategy and then they get bought because an offer was put down on the table to stop them from doing that rollup strategy. And in this case, it was their preparing an IPO and that made them a really great takeover target. And it’s really interesting to see. My first tech theme is that a lot of times whether it’s you’re about to make acquisitions, you’re about to IPO or you’re about to get bought, there is a little bit of like a leverage game going on where you pursue concurrent tracks at the same time in order to make sure that the pressure is on for whichever one you want to happen to happen.
+
+David:              Back when I was an investment banker, we used to call this a “dual track” process – dual track being one track an IPO and one track being an acquisition. And you’re absolutely right. These things totally play off one another and the fact that it is known that you are preparing to go public, you filed your S1, it’s out there, that has a way of drawing buyers out of the wood work.
+
+Ben:                 Yup. Another tech trend is the rise of the mega acquisition.
+
+David:              Yes.
+
+Ben:                 This is absolutely insane at the time. I mean, 8.5? I worked around a lot… there are a lot of cynical people in my group and when I worked at Microsoft, like a lot of lunch conversation was that people counting the number of things, like how many Skype’s something was, like “Oh, this is an eight of a Skype.” Or pointing out, making crazy jokes about what a huge number this was and how it was never going to pay off for the company.
+
+David:              And it turns out it’s actually less than half of a WhatsApp.
+
+Ben:                 It's so true. It’s less than half of WhatsApp. You know, consumer chat, broadly defined, also includes Snapchat. Like they weren’t going to become Snapchat. They were in a very different path from that, but could they have become WhatsApp? WhatsApp’s value prop is that you could very inexpensively communicate across –
+
+David:              It’s amazing. It’s the exact same value prop. It’s just for text, not for voice.
+
+Ben:                 Exactly. Inexpensively communicate across political boundaries and avoid the tax of the telecom. Like, it is exactly that. You look at, what, $22 billion dollar…
+
+David:              Just fully valued given everything that went into that deal. Future episode coming soon at some point.
+
+Ben:                 Whats App.
+
+David:              I just don’t think we have enough to decide WhatsApp. I think we need to wait a little bit.
+
+Ben:                 But anyway, looking at like could Skype have become WhatsApp? Did they falter by not becoming WhatsApp? Or was it just a different era?
+
+David:              Well, yeah. I mean, (A) it was a totally different era. My tech theme – this may be a good segue into it, Skype, on the one hand it’s kind of sad that I feel like this is a company that has never fully realized its potential given this crazy corporate history that it has. However, the growth of this company and the product market fit that happened is pretty incredible especially when go back to the context of when Skype was started in 2003, and launched in 2003, and the kind of growth that it experienced, and what were you doing until I was graduating from high school and starting my freshman year in college in 2003, and I owned a tablet PC? You know, nobody had ever heard. There were palm pilots, you know, but there were no smart phones. Most people in America, I don’t know if it was most, but certainly a large portion didn’t even have broadband.
+
+Ben:                 Right.
+
+David:              And so you couldn’t use Skype if you didn’t have Broadband. I think about that in that addressable market and yet how fast it still clearly grew, and so the tech theme that I had is there was a really great, actually ironically, right at the same time that the Microsoft acquisition of Skype happened. Bill Gurley wrote this great blog post, I believe the title is “All Revenue is Not Created Equal: The Keys to the 10X Revenue Club”.
+
+Ben:                 It's a great post.
+
+David:              It’s a great post and he goes through 10 points of like what is it that makes companies that are valued highly/public companies valued by Wall Street at 10 times revenues are higher, sort of these elite companies like what are the factors that separate them from other companies. And he includes a slide from an early Skype pitch deck in one of his points. The slide is just amazing. The point that Gurley is making is that companies that tend to be valued very highly, they grow on the back of organic demand versus heavy marketing demand is what he says. So, a lot of companies who think about this and we see in startups all the time, you know, your unit “economics” may be working but if you’re paying a lot of money to acquire every user that you get to your product, you’re going to have to pay/spend a lot of money to build that market and win that market. Skype never spent any money on customer acquisition. It was all organic. It was just pure product market fit. And so the slide from the Skype pitch deck, they’re comparing themselves to Vonage. You remember Vonage was the Skype competitor in the day, and Vonage advertised all over national television in the US. And the slide just compares Skype’s cost CAC to acquiring a user and Vonage? Vonage is $400 that they were spending per new user.
+
+Ben:                 Wow.
+
+David:              And Skype was 1/10 of 1 cent. Because they had no costs for every call, it was a complete peer-to-peer model, they had no server costs, and they were spending no marketing. So this thing could just grow and grow and grow, and there were no limits to it. Which is pretty amazing. It’s super rare to find these kind of businesses. And again, like I said, Skype kind of… I don’t think it's the credit it deserves as a product and as a business because of its corporate history. But the growth is just impressive.
+
+Ben:                 Yeah, yeah. All right. On to grade the acquisition. I’m giving it a B-. I thought I was going to be much harsher.
+
+David:              Which acquisition are we grading here?
+
+Ben:                 I’m grading the Microsoft acquisition, yeah.
+
+David:              Okay.
+
+Ben:                 I thought I was going to be way, way, way harsher. And in fact, I didn’t know I was going to do this episode years ago, but I would have called it like a D in 2012, and it seems like over time it actually is getting… It takes a long time because it’s a big ship to maneuver, but it’s the right move to have Skype and Skype for Business and not have versions of Lync and some messenger and totally deprecate Communicator. It’s the right move. It was an amazing use of that capital considering other options that they could have done with it. And, unless of course we see some kind of big break where all the US companies in the next few years are allowed to bring that cash home, but I don’t really foresee that happening, bringing it home at a reduced tax rate. And on top of all that, I think having this consumer offering and a little bit of that consumer DNA with all the Skype teams that have built this product leaves them fairly well positioned for whatever is about to happen in the enterprise communication market that Slack has pioneered. You know, I’m sure they wish it looked more like Slack right now unless the slow steady growth of Skype, but if Skype Team’s the real thing, I’m excited to see it.
+
+David:              Yup. I definitely agree with that. Yeah, it’s interesting to think about, you know, think back to one of our early episodes with Kurt DelBene talking about Acompli and Wunderlist and sort of recreating the Office Suite, and in particular, Outlook on mobile. And I got to wonder if, you know, Kurt led the Skype acquisition when he was at Microsoft the first time, I kind of wonder if the experience with Skype informed some of the things they did differently with Acompli. And in particular, making Javier, who was the COO of Acompli, head all of Outlook, not just Outlook Mobile but empowering him within the organization to really remake and it’s still work in progress and will be for a long time but I think Outlook has made huge strides from the massively bloated super old-school piece of software it was before the acquisition to the still really bloated but much nicer design and clearly making strides, and it's my most opened app on my iPhone, where it is today. And to compare that to Skype where yes, Tony stayed at Microsoft for a little while and was in the running to perhaps become CEO, but then he left.
+
+Ben:                 Also ultimately not like a product guy, right?
+
+David:              Also ultimately not a product guy, yeah.
+
+Ben:                 He plays from the PE…
+
+David:              Yeah. He was like a turnaround guy. And I think the lack of any real leaders, you know, corporate leaders within Skype that could come in and champion that and champion a product division for Skype as part of Microsoft has really hurt them.
+
+Ben:                 The heroes of Skype are gone and the heroes that are talked about in Skype and their talent offices or otherwise are the original founders.
+
+David:              Yeah. The dudes from the newspaper ad.
+
+Ben:                 Yeah, right. You even go and you look at the way that it's structured in the org now, it’s under a Redmond leadership. It's all over these distributed offices in like six or eight places around the globe. But long-time Microsoft people that they report up to that, you know, they’re running it like the next evolution of Lynch which makes a lot of sense but it's very different than the Acompli acquisition.
+
+David:              Yeah. And thinking back to what Kurt was saying, that realizing that ultimately a lot of these things really are about the people. That’s what was not there in the Skype acquisition. As good as the product is and the product market fit and even the financials. So, I think I actually net out at the same B-. Like it would have been a bad acquisition but for some of these other factors we mentioned, like finding a use for foreign cash, it actually being a good business, but just so relative to the potential that it has not yet realized.
+
+Okay. Let’s move on and do some quick Followups and Hot Takes. So Followups from our Android episode. Google recently held a big event and launched the Google iPhone, otherwise known as the Google Pixel.
+
+Ben:                 And sort of unapologetically so. Their marketing copy mentions the iPhone, or at least their press release copy does. It looks really good. All the reviews are super encouraging. Someone here at PSL got one earlier today, so I’m excited to play around with it tomorrow. But looking at the pictures and comparing it against the iPhone 7, not counting the portrait mode stuff, all the flaws that I noticed in the iPhone photography over the years were like it flattens things too much and it loses some details and it doesn’t have the incredible high contrast and the textures, like the Pixel phone looks really, really good and I’m excited to play around with it. And aside from all that, there’s a niceness to that hardware that we haven’t seen in non Apple devices in a long time.
+
+David:              In Android devices, yeah, in a long time. It’s interesting. A couple of things for me, One, in our Android episode, we’re like the mobile wars are over, Google and Apple are not fighting each other anymore, and then a month later, Google comes out with the most direct shot at Apple that they’ve taken in a long time. But I still think the mobile wars are over. But it’s interesting, in that episode we talked about the day when Samsung was just unabashedly copying the iPhone design-wise.
+
+Ben:                 The worst part is, I’m ripping this off… from everybody needs to go listen to the most recent episode of the talk show with John Gruber with guest Ben Thompson. Of course we can’t go an episode without mentioning Ben Thompson.
+
+David:              Of course not.
+
+Ben:                 This is John Gruber’s line. But it’s like Samsung always acted like Apple never existed. “Oh, Apple? Never heard of them. But look at the new phone that we invented.”
+
+David:              Slide to unlock.
+
+Ben:                 “And look at this beautiful new design that we came up with.” And Google is just not treating it like that, right? The really interesting thing, and again, totally go listen to that podcast episode, but Ben and John pointed out this really great point that this is a potential change in business model for Google not only because they’re selling hardware and they normally just make the software and the OEMs make the hardware, but Google Assistant right now appears to be only available on the Pixel and it's actually not part of Android. The Google Assistant is part of the phone and not part of Android.
+
+David:              I think this is by far the most interesting part of this announcement.
+
+Ben:                 Yeah. So walk through this. In a world where you use and AI, the AI is there to give you answers, not options, and Google’s business model is predicated upon giving you options, some of which are sponsored options. And in this voice world, like the user experience of this, we’re shifting to… you know when banner ads didn’t work on mobile and we had to figure out what worked. Like now we’re shifting to this world where search result ads don’t work when people are asking their phone stuff. So, Google had this incredibly profitable business model and now there’s a chance they might need a new one if this thing that they happen to be very good at which, like, this is like the Googliest piece of technology of all time, is creating this Google Assistant, this thing they happened be incredibly good at is incredibly bad for their business model.
+
+David:              Yeah. Man, this is technology cycle disruption at work here.
+
+Ben:                 Right, right. So then they look to Apple for okay, what’s a good business model where we can leverage the things that we're good at and it just so happens that it might be that the things they’re good at, being Google Assistant, maybe they just have a really high margin phone that they sell.
+
+David:              They can just sell phones that include the Google Assistant, yeah. Super interesting.
+
+Ben:                 So, go listen to that podcast because I’m totally ripping those ideas from there and that is like such a good, astute analysis.
+
+David:              Very astute analysis. Hot Takes. Interestingly, the least interesting thing to me that we are going to talk about today is AT&T and Time Warner.
+
+Ben:                 Yeah. I mean it’s 1999 again. What’s all this new and my senior research paper was about net neutrality, 42 pages of arguing why that –
+
+David:              That is the most relevant and terrifying aspect of this.
+
+Ben:                 It just keeps coming back and every time we get closer to the telecom and a gigantic content provider being aligned like this scares the crap out of me.
+
+David:              Yeah. But I mean I think a little bit like, God I hope, knocking on wood, you know, it’s a little bit like this election cycle, you can’t fight the forces of history and you have these –
+
+Ben:                 Wait, say more about that. How is that?
+
+David:              Well, politically we are moving towards a much more progressive society like that’s the direction that history is moving and if you’re going to fight that, you’re going to be on the wrong side of history. And just like that, in this case, net neutrality is the future and content will be unbundled and Facebook is worth more than every old traditional media company combined and that is the future. But what’s interesting is that even though we can sit here and say that’s the right side of history, at times like these, these forces pop up that are total reactionary, conservative “go back in time, make America great again” and like, hopefully, they will lose.
+
+Ben:                 Dude, you just compared AT&T and Time Warner’s merger to Donald Trump.
+
+David:              I did that. I just did that, yes.
+
+Ben:                 Yeah. The slogan of this year-long process of FCC approval of this thing is going to be “make America great again.”
+
+David:              Yes. All right, we should just leave it at that.
+
+Ben:                 Yeah.
+
+David:              Let’s talk about the Wirecutter.
+
+Ben:                 Oh wait. We’ll link to this in the show notes, but I tweeted a link to this article the other day that had awesome graphic of basically the baby bells getting built back together that is so interesting to look at, like the AT&T breakup and kind of the reassembly of the Terminator 2 robot into its former glory and it’s super interesting to see how that’s going to work.
+
+David:              I feel like I should say one more word about what I meant by “make America great again.”
+
+Ben:                 Yeah, go for it.
+
+David:              Time Warner has many good businesses within it and it will continue to be decent businesses, especially HBO, probably a really good one.
+
+Ben:                 Westworld is so good.
+
+David:              By the minute, that world just becomes less and less relevant, like who watches linear television programming anymore? The old world media companies and the types of content they produce, like just don’t have as important a place in a Snapchat world, you know.
+
+Ben:                 I like it.
+
+David:              Okay. The Wirecutter. New York Times.
+
+Ben:                 Yeah! Great for them. God, the Wirecutter is awesome and I don’t think I have bought anything of significance that was not researched on the Wirecutter or the Sweet Home in years.
+
+David:              Such a great site.
+
+Ben:                 And I’m an unabashed fan of the New York Times and it’s great to see them land in one of the media institutions that has figured out how to come into the modern era and to your point earlier, go with the version of the future. I think the New York Times had it a lot easier than many smaller regional papers because they were truly a destination site. They had a brand built up. People were going to go there without someone needing to share content with them. You just go to the New York Times because it’s the freaking New York Times. But, I love seeing how progressive they are – experimenting in VR and buying sites like the Wirecutter. And I was just watching before we were diving into the show, there was a great interview with Brian Lam talking about how he loves doing what they do at the Wirecutter because rather than writing news, he’s writing something that just helps people. He’s like “This is a thing that people find continual value in over and over again. We figure out when to refresh it, what to refresh it with, how to tell people that we’ve refreshed the guides, and we just build a solid, long, many multiples of hours longer than anybody would ever take to write a piece.” And, it’s a phenomenal piece of content that’s super engaging, that actually helps people. I think it’s interesting what we’ll see as they start to bundle it in more with the New York Times coupling some of these buyer’s guides with more investigatory pieces. The example he uses is like why can’t anyone make a good Wi-Fi router, is the investigatory piece that someone writes.
+
+David:              What happened with the Samsung Galaxy Note 7?
+
+Ben:                 Right, right. But then coupling that with a buyer’s guide for wireless routers or phones, like what is actually the one that you should go buy and I think we’re going to see the continued evolution of digital journalism.
+
+David:              All right. With that, should we do our Carve Out?
+
+Ben:                 We should. Although I feel like I’ve been just sitting here doing Carve Outs for the last few minutes. I finally got around to reading the super long and formed piece from the New Yorker called Sam Altman’s Manifest Destiny.
+
+David:              Oh, it's a great article.
+
+Ben:                 Yeah. It’s interesting. So for a little background, Sam took over Y Combinator from Paul Graham and sort of like revamped the whole thing, made it significantly large or open up new divisions, hired a whole bunch more people and frankly, expanded the scope and the ambition significantly.
+
+David:              Hugely, yeah.
+
+Ben:                 And you either really buy into it or you think the pieces of mega puff piece, but no matter what, reading it leaves you with this mindset of a widened ambition and thinking about, “Uh-oh, I’ve been thinking too small.” I love when things reset my perspective like that. So, highly recommended.
+
+David:              Yeah. Really, really good piece. Also highly recommended. Regardless of what you think about YC or about Sam.
+
+Ben:                 I fall on the side of like I think everything Sam has done is… I’m on Team Sam.
+
+David:              I agree. The not everything he’s doing will work and that’s the point.
+
+Ben:                 Right.
+
+David:              To have that scale of ambition, you need to be comfortable with failure and that’s eminently laudable.
+
+Ben:                 May the failures be colossal and the successes even more so.
+
+David:              Yeah, totally. Great piece. Go read it. My Carve Out for the week, super fun one. One of my really good friends from business school, Jake Saper, who is a venture capitalist at Emergence Capital is the star of the hottest thing to hit the Bay Area and Silicon Valley, since Silicon Valley, and that is SOMA the Musical.
+
+Ben:                 No way!
+
+David:              Yes. Which ironically, Jake is the star of the show and he plays the entrepreneur in the musical. Opened and ran in San Francisco last week and was a huge success. So, big shout-out to… Lots of articles you can go read about it. We’ll link to some. Big shout-out to Jake and very, very well done. Hopefully, coming to a Broadway stage near you soon.
+
+Ben:                 That’s awesome. Yeah. If you want to see a great show or talk about enterprise SaaS, go talk to Jake.
+
+David:              Yeah, totally.
+
+Ben:                 Awesome. Well, that’s all we’ve got today. If you aren’t subscribed and want to hear more, you can subscribe from your favorite podcast client. If you feel so inclined, we would love a review on iTunes or please tweet, Facebook, share with your friends. And we are @Acquiredfm on Twitter.
+
+David:              We’ll see you next time.
+
+Ben:                 See you.
+
+‍
+
+‍

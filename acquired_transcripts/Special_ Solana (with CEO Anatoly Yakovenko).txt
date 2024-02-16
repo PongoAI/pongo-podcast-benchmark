@@ -1,0 +1,495 @@
+Ben: Welcome to this special episode of Acquired, the podcast about great technology companies, and the stories and playbooks behind them. I'm Ben Gilbert, the co-founder and managing director of Seattle-based Pioneer Square Labs and our venture fund, PSL Ventures.  
+
+David: I'm David Rosenthal, and I am an angel investor based in San Francisco.
+
+Ben: And we are your hosts. All right, David. In our last episode, we covered the history of Ethereum, what it is, and of course, we speculated on its future. A big outstanding point at the end of the episode was, with all this excitement around DeFi, NFTs, and decentralized apps, this decentralized world computer has gotten really slow and really expensive.  
+
+David: It's really slow.  
+
+Ben: Yeah. Sure the Ethereum community has plans for how they're going to fix this. But listeners, as many of you heard, there are other credible blockchains out there to build applications on top of.
+
+David: I was trying to do some DeFi stuff the other day, no joke. Gas fees were $50–$60. It was crazy.
+
+Ben: Brutal. That's close to an all-time high. It's wild. One credible alternative blockchain that David and I have been particularly interested in is Solana. On today's episode, we are joined by Anatoly Yakovenko, the founder and CEO of Solana Labs.  
+
+Solana Labs is the company that spearheads the development of the Solana blockchain. Just to set some context, they recently raised $314 million led by Andreessen Horowitz and Polychain Capital. Yes, that is Pi-hundred million dollars and they have a market cap of all their coins right now right around $10 billion.
+
+David: Both so fun and so crazy. A couple years ago, if you're going to say or make a joke, oh, we're raising Pi million dollars, you'd raise like $3.14 million or maybe $31.4 million. Wow, just the scale of all this is incredible.
+
+Ben: Yeah, it's wild. If you are new here, you should join us in the Acquired Slack. If you like this episode, you will love the community discussing crypto in our digital assets channel. You can join at acquired.fm/slack. Thank you to listener and community member, Austin Federa, not only for setting up that channel, curating that community, keeping it awesome, but for his work at Solana and introducing us to Anatoly to make this episode happen, so thanks so much to Austin.  
+
+David: Huge shout out.  
+
+Ben: We have a very fun announcement for you, our first sponsor of the episode. We are stoked about all the sponsors this season of Acquired, and we are kicking off with a serious bang. The presenting sponsor of these special episodes of Acquired is SoftBank, and we are joined to kick things off on this episode with the managing directors of the SoftBank Latin America Fund Paulo and Shu themselves.  
+
+Paulo and Shu, welcome to Acquired. We're so excited to have you here. Most folks out there who are listening to the show have heard of SoftBank, but I don't think people really understand what you are doing transforming Latin America. Paulo, can you tell us about that?
+
+Paulo: Yeah, of course, Ben. First of all, we're huge fans of the show. We listen to every single episode. It's a great pleasure to be here. We came to Latin America because there was a complete lack of capital for growth, equity, and venture capital. When we came in, people called this crazy to invest $5 billion in the region. They thought it was impossible to find good opportunities, but the first move was an easy one. Now, of course, fast forward two years, the rest of the globe has discovered Latin America. Now it's less of a secret.
+
+Shu: It is easy to think of it as a tangent for SoftBank, but actually is very consistent. Masa from the earliest days in the 80s was big themes. The themes were both technological and geographic. First, it was software, mobile, and internet, but then very quickly it was China. And China produced Alibaba, which was an incredible investment. Then it was India for a while. It's just Latin America was never proximate enough to Japan, to anyone who worked at SoftBank for us to care. It was a real blind spot, and we're lucky. We saw it 2½ years ago, otherwise, we'd be scrambling with everyone else trying to notice it now.
+
+Ben: Wow. With all the changes in the ecosystem over the last, even just two years, with so many new players coming in, new investors, how have you seen it evolve? How do you work with new folks who are interested in the ecosystem?
+
+Paulo: First of all, Ben, we're super collaborative. We love working with other people. We think what's best for entrepreneurs is to have different ideas, different people, different networks, contributing to their success. We always have a mantra here. Whatever is best for entrepreneurs, it should be working for us long-term. We're super long-term–oriented.  
+
+What has changed in the original things, the entrepreneurs now can dream big. We have two companies like Gympass and VTEX that have gone global.
+
+Shu: I'd add to that by saying, just like there's been a dearth of capital, and in general, a dearth of talent, there's been a dearth of really high quality global board members. Part of what we like about these other investors is they sit around the table with us and they make the company better. It's really not zero sum. The rounds have gotten faster, the prices have gotten higher, but we like having these other smart people around the table because we think it helps make bigger companies, which is what we're all about.
+
+Ben: I know that you are joining us here on the show to find like-minded individuals, be it co-investors, be it entrepreneurs. Who should get in touch with you, and how can they get in touch with you?
+
+Shu: We're on the show because we just like you guys. We geek out over business models, and always try to find content that does the same, and communities who go as deep as we want to go. We love the 4-, 5-, 10-part Berkshire Hathaway break down. That is catnip for us. Really, why we're here is because of rigor and quality. We aspire to that ourselves. If people want to get in touch with us, I'm on Twitter, @snyatta on Twitter.
+
+Paulo: I'm on LinkedIn. The best way to contact me is through LinkedIn. Feel free to reach out for ideas, share investments. If you want to lend your company in Latin America, if you're excited about working in Latin America, let us know. Anything goes, just reach out.
+
+Ben: Great. Listeners, if you want to get in touch with either Paulo or Shu, we've put links in the show notes. They also have the domain, latinamericafund.com, so you can go learn more about the journey that they've been on deploying $5 billion into the region there. Our thanks to the SoftBank Latin America Fund for sponsoring this episode.  
+
+Listeners, as you know, this is not investment advice. I think we even will talk about in the interview with Anatoly, that we do hold Solana. You should make your own independent research decisions before buying anything, whether it's a cryptocurrency, stock, or anything like that. The show is for entertainment and informational purposes only.  
+
+Now on to our conversation with Anatoly Yakovenko, the founder and CEO of Solana.
+
+David: Okay. Welcome, Anatoly. We are so excited to have you here with us for so many reasons. We've been following Solana for a little bit now, thanks mostly to Austin Federa in the Acquired community, founder of the digital assets channel in the Acquired Slack, which is a wonderful and vibrant community in its own right that's developing. Awesome, of course, works with you guys at Solana now. You had some huge news last week, where you raised Pi-hundred million dollars from Andreessen Horowitz and Polychain capital, which we definitely want to get the story behind that. Excited to tell your whole story here to the Acquired community.  
+
+Anatoly: Awesome. Yeah, great to be here.  
+
+David: Before we get into what Solana is, why it exists, what problems it's solving, why there's a need for other layer one, sort of base layer protocols out there in crypto besides Ethereum. Maybe to start, this round is obviously enormous. Lots of demand, you guys are doing wonderfully well. You said that your path is not quite like a lot of other crypto projects. You raise tons and tons of money out of the gate. Maybe, can you rewind and tell us a little bit about how you ended up shipping first, what it was like when you first tried to raise capital, and why you decided to take this path?
+
+Anatoly: I wish there were just active decisions versus just trying to survive. The project was started at the end of 2017–2018. That was really like that right peak of that last boom cycle, but the crash that followed was really fast and brutal. This is right when we were trying to raise. At that time, the funds that were committed to us blew up in front of our eyes and like, sorry, guys, we can't fund this.  
+
+David: With these dedicated crypto funds?
+
+Anatoly: Yeah. Not to blame the people involved or anything like that. It was just such a volatile time in the crypto industry. The things went from extremely promising, like everything's going to be magic in crypto in the span of a year, to oh my god, the world is falling apart. We were born out of that fire. We had enough funds to get a ridiculously amazing team together. I was able to pull a lot of principal engineer–level folks, senior directors at Qualcomm that were just itching to go build the next big thing. The true builders there that were super experienced and have worked with me for over a decade all jumped ship. That was really surprising to me, too. They're like, as soon as I asked, they're like, yeah, where do I sign up?
+
+David: You were like Eric Yuan building Zoom out of WebEx.
+
+Anatoly: Exactly. That was really awesome and a huge confidence boost in the design of what we're doing, what was right, because there was a huge amount of technical risk. I came up with this idea, proof of history, nobody else was working on it. There were a few academics defining verifiable delay functions, but it was really out there. Everybody else in the industry was going in a totally different direction. That made it hard for us to get a lot of commitments, too, from investors who were much more readily eager to invest in somebody with a huge pedigree out of MIT or whatever, like an Ivy League.  
+
+Ben: Anatoly, I want to put a pin. As we dive deeper down the crypto rabbit hole here, we have a lot of non-crypto native audience, of startup native audience. I want to highlight. You just used the term proof of history. We're going to put a pin in that and come back to it later because it's one of the things that makes it very special. I'm going to do the work of highlighting a, hey, I'm going to force you to define that here at some point because a lot of us are very new to this.
+
+Anatoly: Totally. We got the team together. We had a decent runway, I think around two years, and we thought, oh, this is going to be done in a year. This is easy and we'll just ship it. It actually took a little longer, like 2½ years to do it and cost more. We had to hire more folks than we expected and we did a couple of raises after that, but we're always a little bit starving under 2 years, under 18 months of runway at any given time, bear market, trying to ship this thing as fast as we could, so we could get to the next stage, which is let's get users, let's build the use case we're always dreaming of, let's actually get to the adoption stage.
+
+David: It feels like when you were first starting, it sounds like you're in this window where the crypto-native investors, either their funds blew up, or they just were focused on other technical paradigms, and then the non-crypto native investors were probably like, this stuff is radioactive, we're not touching crypto at all right now.  
+
+Anatoly: For the most part, except for the few amazing folks, like Foundation, like Slow Ventures, like Multicoin, that actually backed us and stuck with us through every raise. We also, in that process, discovered this amazing community of validators, the people that are actually running the nodes, that are crypto OGs, that have been doing mining, involved in Cosmos and every other network. It became clear in a span of a year that every round, these guys always came in first without asking any questions. They're like, yeah, let's do this. Do you guys need more funding? Let's do this. That was just awesome.  
+
+Ben: Because they were validators on the Ethereum network and seeing the problems there?
+
+Anatoly: It's just folks that are super deep in the space at a technical level. A lot of them would just run every network, every cool piece of tech that anybody would try to ship. They're just true believers. We found that community to be immensely supportive, and really helping us out financially, and really being our first customers. These are the first folks that we ship software to, that ran it, that saw how the sausage is made, that fails. They've dealt with every failure into a facade, so that was really amazing to have built that part.  
+
+David: That's cool. Maybe now, with this level set, and also the level set just so our listeners get a sense as we're talking, the total market cap of the Solana protocol is about $10 billion. You have come a long way from those days. Let's rewind. How did you get into crypto and blockchains? I get the sense that you weren't, 2009–2010, running your own nodes, true believer from back then, or maybe I'm wrong.
+
+Anatoly: I heard of Bitcoin right around that time during the 2008 crash. Definitely it's what opened me up to it. I mined it a little bit on the CPU, and lost those keys. I thought, what if I wrote a GPU miner? Somebody shipped that as I was thinking about it. I was like, well, maybe I can do FPGAs that came out like a month later.  
+
+Then I remember, this was my first true crypto experience. There was a company that was building ASICs, CPU dedicated basics, dedicated semiconductors that they designed solely for crypto mining. I wanted to buy some, but they built them and delayed the actual, shipping them to customers for six months so they could mine with them first.  
+
+David: Wow. Talk about front-running your customers.
+
+Anatoly: It was a beautiful example of what crypto is, which is it's totally Wild West, peer-to-peer system, where anything goes, like true to its Internet core, and you have to understand that, but who is on the other side of this conversation on the Internet? If you can't verify their keys, if it's not software that you can verify, then you can't assume or trust anything.
+
+David: Anatoly, you were at Qualcomm, though, right through all of this, which is going to become very important here in a minute. What were you working on there?
+
+Anatoly: At that time, 2008, I was still working on BREW, which is this flip phone operating system. That was the first mobile app store. If you're a programmer, this was written in C with C++ compatible virtual tables that we wrote out by hand. I built a sophisticated macro language to generate these. It really made me an engineer. That period of working on these dinky 16-bit ARM chips with barely any memory, you had to really think about every optimization, everything that you're doing as close to the hardware as you could.
+
+David: That's great.  
+
+Ben: You teed up exactly the question that I want to ask when you called out scalability. In a pre-Solano world, what are the problems? Why is it that all the existing energy and heat—I'm using those metaphorically in this sense—and attention with the existing systems—Bitcoin, Ethereum, a lot of the alt coins that were being developed in the mid 2010s—what are the real problems?  
+
+Anatoly: At the technical level?  
+
+Ben: Yeah, let's zoom in on scalability and cost.
+
+Anatoly: Systems based on proof of work have this wonderful property that when you receive all of the data, you can verify its thermodynamic security from its starting point to its final point. You can do so in this black box without talking to anyone else. This objectively measurable security is something that is really unique to proof of work. That's what gives Bitcoin its claim on store of value. It's still not proven yet, but that's really the strong argument there.
+
+Can you have store value? You need some objective, a way to measure this. When you think about gold, I can literally verify that this is the gold element, and then measure how much of it exists and then compute that I have X amount of it out of the known universe.  
+
+These systems depend on this property that I can get the entire data set and verify it from scratch. If you put that limit on it, it means that the underlying chain just can't grow that quickly. It has to be somewhat limited in terms of the amount of data that gets put into the system.  
+
+Aggressively, maybe it can double that size every two years. But people are very cautious about that because they're now sitting on a $1 trillion asset. They're afraid that if we do increase the throughput of Bitcoin or something like that, or the gas capacity of Ethereum, that it's going to grow so quickly that it will become unusable from that perspective and lose it's magic power.
+
+Ben: Magic being the really hardcore verifiability of all of the energy that it took to create the blockchain so far?
+
+Anatoly: Yeah, not just the energy, but also that the energy went into something that is consistent from its root point from day zero, that there were no invalid state transitions and nobody monkeyed with the amount of ETH or bitcoin in existence. That piece of it, I think, is really interesting. It's like a meme. It's a phenomenon, a religion.  
+
+David: These are like what you're talking about, for folks who aren't as deep into crypto communities or religious concepts?
+
+Anatoly: Yeah. Proof of stake is something that Vitalik started publishing about pretty early on, I think, almost right after Ethereum. Super early on. This is not a new concept. The idea with proof of stake is that instead of using this thermodynamic energy, you have a bunch of keys that represent some value in the native token itself. Based on weighting of those keys, you can then verify the consistency of the chain because that token is monopoly money. It's virtually manufactured inside this computer, but it's not real. It doesn't have this thermodynamic weight to it.
+
+It's something that you have to establish this first trust. I have to find its first Root of Trust, like my browser has VeriSign as its Root of Trust and then everything's derived from that. That first establishing a trust is this hard problem of me asking the world, hey, am I talking to the right network? Am I in the right network? That first thing is not strongly objective, it's weakly subjective. Once you bite that apple of weak subjectivity...
+
+David: You might as well go all the way in and start farming the orchard.  
+
+Anatoly: Exactly. Solana, our design is like, to me, this was obvious. Okay, VeriSign, root of certificate. This is how the Internet is built. Trust and first use is the standard security model. You verify once then once you establish the session, it just continues running.  
+
+If you go all in, then you can just start optimizing this thing to the limit. Our philosophy is that, break away from all of these chains of proof of work, this idea that, do you need this full objective verification and just go all in, make the fastest possible communications network. What we're thinking about isn't so much about the store of value or global money. It's more, do we have the most censorship-resistant messaging network, this way of passing information throughout the world that guarantees that any two parties connecting to this network will always receive their messages, they can always synchronize, they can always have fair access and nobody can get ahead of them?  
+
+That's more of a financial system. It's more of a marketplace. It's literally what NASDAQ provides you when you jump through all the hoops and get your machine set up in the same room, server room as NASDAQ runs their markets. They literally give you an ethernet cable that's exactly the same length as everyone else's. Your information gets to the markets at the same speed as everyone else. That's censorship resistance.  
+
+We bought into this idea and this is probably because Qualcomm is a communication company. I always think of these like old school terms of radio, Shannon-Hartley Theorem. This is just information passing between default.
+
+David: I was going to say it's the same thing when I dial Ben on my cell phone and I'm pretty sure I'm going to get connected to Ben, no matter how many people are around me.  
+
+Anatoly: Exactly.  
+
+David: All right. Now it is time for the second sponsor of this episode.
+
+Ben: Who is it going to be?
+
+David: Very, very special one. Not only is this company a close friend of the show, but the entire team has actually been a past guest on the LP show. That is right. Modern Treasury, the worldwide leader in payment operations. Just like ESPN, worldwide leader in sports, worldwide leader in payment operations.
+
+Ben: I think we met these founders at Acquired live show, is that right?  
+
+David: Yes.  
+
+Ben: That was my first time meeting Dimitri, I think, at WeWork in San Francisco before our Andrew Kortina live show.
+
+David: The one right across the street from Benchmark's San Francisco office, who would then of course, go on to lead their series A. It was fate. It's all because of the live show. Dimitri is probably yelling at us right now.
+
+Who is a Modern Treasury? For customers like Gesto, Pipe, ClassPass, Marquetta, and others who manage complex payment flows. Modern Treasury automates the full cycle of money movement from payments to approvals, to reports, to reconciliations. With Modern Treasury, you can manage all of that via software and give your overworked finance teams a rest.  
+
+Monitor Treasury's robust APIs allow engineering to build payment flows right into the product, while finance can monitor and approve everything through a sleek and modern web dashboard. They're one of the hottest young fintech startups on the market today. They've raised $50 million from top firms like Benchmark, as we mentioned, and of course, Altimeter Capital, and Y Combinator. If your company manages complex payment flows, seriously, go check them out.
+
+Ben: If they're fintech, if the company might be real estate tech, at any time you have money flowing from one place to another and you need to account for that in multiple places, they're all on different schedules, it's actually amazing that companies do this without Modern Treasury. The engineers are building something custom to account for it that doesn't talk to the thing, that the accounting and finance people have to actually recognize the revenue. It's amazing that this happens at all without the modern treasury to tie it all together.  
+
+David: Totally. Because the only thing that the Modern Treasury team is even close to as nerdy about as payment operations is Acquired itself, they have generously made the LP reverse interview that we did with them in February available to everyone. You can go click the link in the show notes or head over to their website to find that. If you are interested in payment operations for your company, go to moderntreasury.com, find out about the great work they do, and tell him Ben and David from Acquired sent you.  
+
+Ben: Anatoly, can I ask you to define a couple of terms? I've heard these terms settlement layer and execution layer. Can you go into that concept a little bit and explain where Solana can fit in?
+
+Anatoly: Yeah. Settlement, I can't name you a single company in the world of the settlement. They were briefly in the spotlight during this game stocks thing. Basically, what the final state of the trade is when they look at the list of who owns what and they change the values around. This is what Bitcoin does. Essentially, Bitcoin, an hour later, everyone in the world considers that settled.  
+
+Ben: It's slow, it's official, it's the very bottom layer.
+
+Anatoly: Exactly, but it needs to be extremely secure. That security in the traditional world has been commoditized to the level that the company that does it. There's only one of them and they make some small percentage of the things that they settle. All of the fun stuff, derivatives, options, spot markets, futures, perpetuals, whatever sophisticated financial thing that you can imagine that runs at an exchange, which does execution and clearing, some of them do clearing, but just think of it as one layer not to make it too complicated.  
+
+This is where we're talking about physics limits of speed of light and Shannon Hartley Theorem of how much information can we observe of the world, compress it into a price for a particular asset, and then throw that price into a market, and have that the information that's then propagated to the rest of the world that can then work in this feedback loop. Those limits are, like there's theoretical speed of light limits on how fast this thing could do. How big of a marketplace can we build for the entire world? That's, in itself, a really interesting hard problem that has nothing to do with settlement.
+
+Ben: Would it be accurate to say that Ethereum is supposed to be or could be this interesting execution layer, but actually it's really slow because it's still proof of work–based?
+
+Anatoly: Exactly. Bitcoin is fully like, if we don't want anything to do with anything that even potentially touches the store of value, thermodynamic energy security, and want to be the simplest thing that's easy to verify, easy for an engineer in college to build a client for, that's cool. That's the simplest form of money, maybe, that that's really what they're going for.  
+
+Ethereum is trying to be in the middle, where you can do some of that, at least in its current version, in the ETH one. You have proof of work. You have an execution environment, which is secure but slow, and you can do sophisticated contracts, constant function market makers. Those constraints on Ethereum have driven a ton of innovation. AMM just didn't exist until Ethereum really popularized that.  
+
+Ben: What's an AMM?
+
+Anatoly: Automatic Market Maker. It’s Uniswap. It's a beautiful piece of math that allows people to passively create markets with capital in a passive way. With just a single cryptographic signature, all of a sudden, there's a market and anybody can trade with it.
+
+David: It's literally the New York Stock Exchange in code.
+
+Anatoly: Yeah, in like a hundred lines of code.  
+
+David: Yeah, it's amazing.  
+
+Anatoly: But that has its own inefficiencies because it's not maximizing the amount of information that the world is synchronizing on.  
+
+David: Yeah, at first sense of scale. The whole Ethereum network, the global Ethereum network is limited to 65 transactions a second, is that right?
+
+Anatoly: Something like that. It depends on the gas limits and how complex the operations are. Some measurements go as low as 11, some go as high as 65. From the last numbers I checked, Uniswap does about 100,000–200,000 transactions per day.
+
+David: Right there, that's a huge portion of the capacity of the whole Ethereum network.
+
+Anatoly: Serum, which is a central limit order book–style exchange that runs on Solana is the same design as NASDAQ that does 20 million transactions per day but for a much smaller amount of capital and volume. If you think about users, there are way more users in Uniswap. There's more capital in Uniswap. It's much more transaction-efficient, but the synchronization of information on the central limit order book exchange on Solana is just much tighter, much more message heavy, and it's closer to real prices. It's much closer to the real market.
+
+Ben: This is a great transition. Tell us what Solana is and how it actually solves these problems. Maybe just to anchor it, one more time, give us the transaction limit that exists today for Ethereum, for Bitcoin, because these are astonishingly low numbers. Because this thing is in the public consciousness, everyone assumes that, oh, there must be tons of transactions, but it is incredibly limited in the way that these networks work today until something like Solana.
+
+Anatoly: What's cool is that seven transactions per second is what the Bitcoin theoretical limit is. It's actually quite a lot. Humans don't do that much stuff per day. If everybody was using it for payments, it would fall over. If we're talking about a global settlement layer for this world's reserve thermodynamic money, it's actually pretty good.
+
+Ben: Yup. There's a heck of a lot more than seven credit card swipes globally per second, but in terms of settlement layer, yeah.
+
+Anatoly: What we're talking about is almost like the wire level. When you send an international wire, how many of those per second occur? Bitcoin could probably handle that and maybe that's fine. Ethereum is trying to do something more sophisticated, where you have tokens, you have governance, you have these communities, and they need to trade and move money between them. A lot of this activity occurs on centralized exchanges. People deposit their tokens there, they trade at a high frequency, and then they move them back to Ethereum.  
+
+Also a bunch of it occurs in Uniswap and these automatic markets. The cornerstone of DeFi is that trading bit in Uniswap. My understanding of what Ethereum today, depending on gas costs, is somewhere around 11 to maybe 20 transactions per second. I think when we're seeing fees over $40 a transaction, Ethereum was doing 1.6 million transactions per day. Now that fees have dropped to under $1 per transaction. I think today, it's under $1 and it's doing about 1.2 million transactions per day.
+
+Ben: It's the same order of magnitude as Bitcoin and way more complex transactions because there are smart contracts that are executing. There are just a lot more interesting use cases of this decentralized computer but still relatively the same speed as Bitcoin.
+
+Anatoly: I would say that it's twice as much. That's enough to do a ton of really cool stuff. That's enough for governance for a bunch of communities to form. The growth that you're seeing in Ethereum is real. There are real people using the network just for what it was designed for. That's really cool, but it really needs this change from either ETH 1 to a chartered system, or ETH 1 to a bunch of roll ups or layer twos, or however you want to design that to really take on a billion users. That's just not going to happen there.  
+
+What we set out to build Solana was, I think we just never thought of Solana as replacing digital gold, sovereign money, or anything like that.  
+
+David: There's a store of value in this.
+
+Anatoly: That’s right. It was, how do we build a Byzantine fault tolerant system that can synchronize information globally as fast as it can. This is really thinking of these systems in a very old school way. A morbid analogy is you have a bunch of sensors detecting a nuclear strike. How do you make sure that they act correctly? You need a high degree of independent verifiable sensors that are necessary to corrupt for the system to go wrong.  
+
+Balaji described this as the Nakamoto coefficient. It's the minimum set of independent participants that if they all colluded would break the network. I have my sensor array to detect a nuclear strike. How do I know that it's working? I need to maximize that minimum set that would collude against me.  
+
+To do that, to really scale that to a very large number, 20,000, 30,000, you need to make a system that just handles a lot of messages per second, does a lot more cryptography per second, uses a lot more bandwidth, requires more hardware. I honestly thought that everyone else was going to do the same thing because to me, this was obvious. That's the hardest problem. We got to solve that. If we don't solve that, everything else is BS.
+
+Ben: How do you solve that? Just because we're storytellers here in Acquired, how does that stem out of the things that we're known to be true at Qualcomm? It seems like it comes out of the TDMA philosophy.
+
+Anatoly: If you remember physics, these problems went back to the Cold War. How do we detect a nuclear strike reliably, and building the first radio towers. If you have two radio towers that go up and they transmit at the same time or at the same frequency, those electromagnetic waves interfere and you get noise. The first optimization that anyone's ever tried is, why don't we give each tower a very synchronized clock and have them alternate?
+
+You have a bunch of towers. If all the clocks are variable synchronized, that they never overrun each other, and they can all transmit information, and information passes through. This problem exists in Bitcoin and proof of work because the systems have these agents called block producers.  
+
+Proof of work is this puzzle that you solve to be allowed to produce a block. Once you've proven that, you found the puzzle for this particular challenge, you can construct a block that's signed along with this proof of this puzzle, and you transmit that, and Nakamoto consensus encourages everyone else to build on top of your chain, on top of your block. If there are two blocks that occur at the same time, there are now two forks because the participants don't know which block to build on the next. They now have two options.
+
+Ben: In the classic Bitcoin world, it would be like, well, which one's longer? I'll go with that one.  
+
+Anatoly: If two blocks are produced at the same time, then both are longer, both are exactly the same weight. That's the noisy state. So somebody else has to pick one. The next block producer basically picks one at random, or the one with the best fees, or something like that. That noisy state is a delay in the network that requires resolution. Same problem as radio.  
+
+I had two coffees and a beer, and I was up until 4:00 AM. I had this eureka moment that puzzle similar to proof of work using the same SHA-256 preimage-resistant hash function. Instead of running it in this massively parallel, use as much electricity as you can to find this answer as quickly as you can, you actually make that thing slow, recursive, and force it to be running in a single core on a single thread. The computer, you can force it to prove that it's taking a certain amount of time that there's a force delay before you do an action. I knew that I had this arrow of time.  
+
+David: So then you can start timing and assigning time blocks to transactions.  
+
+Anatoly: Exactly. I was manic for a week.
+
+David: You were at Dropbox at the time, right?  
+
+Anatoly: Yeah. This high level idea of, there is a way to construct an arrow of time. It was so cool to me because there is no mathematical version of the arrow of time. There's nothing that guarantees time moves forwards or backwards in Einstein's equations. Digital systems are math systems. This is a way that ties, is cryptography even possible in this universe? This is an open question, or will all cryptographic systems be broken? If they are possible, if we can get to a point where we can prove that cryptography is guaranteed to be secure, then we can construct an arrow of time. There is a way to move things forward. It was so cool to me that it's possible today with these very simple digital systems to do that.
+
+Ben: Can I maybe try and pare it back to my understanding in a very simplified way here? You can tell me if I'm right. You turned this method of propagating the true correct ledger around all the other nodes from a real time game to a turn-based game, where nobody is able to, in the gaming world, hit keys faster, or in the blockchain world, throw more cores at it and more energy at it. That's not going to gain you an advantage. You have one set turn on this single-threaded, single-core thing that you're constrained to to accomplish your thing.
+
+Anatoly: Yeah. I will take it one step further. It went from even a turn-based game to a scheduled game, where you have a certain amount of time to take your turn. If you don't take it, it's passed to somebody else.  
+
+David: You're on the clock. It's like chess.  
+
+Anatoly: Exactly. That difference between going from turn-based to this scheduled system is why Solana is faster than Tendermint or all the other proof of stake networks. Those classical BFT systems, they are like, Ben takes a turn to speak and everybody else checks if Ben speaks. Did he not? Then David gets a turn to speak after those checks go through. In a scheduled system, we literally just have a button that pass between all the windows on our Zoom, and if I don't speak during that moment, I can't speak.
+
+David: We need Zoom to ship that feature.
+
+Anatoly: Yeah, exactly.
+
+Ben: So Solana effectively preschedules all the moments where I get my turn to speak?
+
+Anatoly: Exactly. That reduces this overhead of synchronization in every stop, in every block. That is more of a real time system where it's like voice. This is how voice works in cellular networks. The base layer of the radio network is TDMA.
+
+David: That's so cool. Is it then that the proof of history is tied to that?
+
+Anatoly: Yeah. The later, more complex realization of how to tie this high level idea of arrow of time to this TDMA construct. That took months to develop working with the folks we hired at Qualcomm. That's really when that took root. Initially, I was like holy [...]. I have a mathematical arrow of time. I know that that's good enough or something.  
+
+David: This is amazing. With this, what's the three points of the Solana Network today?
+
+Anatoly: We benchmarked this at about 50,000 TPS with peaks of 65,000.  
+
+David: Wow, that's what Visa is basically.
+
+Anatoly: Yeah, but there are a lot of caveats there. I work at a hardware company, benchmarking is a game. You can think of it as what TSMC claims, a 3 nanometer process, that's the smallest unit that they can make.  
+
+When we benchmark, you flood the system where there are many non-overlapping easy paralyzed transactions as you can. You can see under these ideal conditions that we can in theory get this much throughput through. When something like Serum runs, it's a central limit order book. Each one of those markets right now has implemented a one megabyte buffer. Each order requires one megabyte read, one megabyte write. Those are more complicated transactions that require more work in the system, but they're still paralyzable.  
+
+It's not that there are limits there that can’t exceed 65,000 TPS. It's just if we start hitting those limits, then we go optimized, then we see where the hardware limits are. This is where benchmarking is hard because you're dealing with problems in software that if somebody actually needs them for solving, it's like three to four weeks of work to do it versus if everything is optimized to the theoretical limit of a hardware itself.
+
+If you backtrack from the hardware specs, if you actually start like we did at Qualcomm, we looked at a chip, we're like, okay, this is what this DSP can do, that means we can support 64 frames per second at 4K resolution to do post-processing. That's the limit, then you write the software until the client is happy. You can tell them the best we can do is 4K video at 64 frames per second. Maybe you should VCO 24 frames, and then they're like, that's good enough. Don't work on something else for now.
+
+If you start at the hardware level itself. One gigabit network is really the bottleneck, like the bandwidth. You need one gigabit of input and output for the validator on this global network. That can, in theory, support 700,000 transactions per second.
+
+Ben: Does that mean that this network requires pretty great internet connections in order to be Solana-based versus operating a Bitcoin node?
+
+Anatoly: Exactly. That's because this is maximizing the amount of information that anybody can synchronize on over as many parallel bits as we can. If all of these events are parallelizable, if these are different markets—there are 700,000 different markets, they all want to do one event per second—we can all schedule all of them. That's how you can think about it.  
+
+That capacity is all over a single giant table of state that you can execute over. As bandwidth gets cheaper and as hardware gets better—AMD doubles the number of cores and video doubles in number of lanes per GPU, PCI busses go from like PCIe 4.0 is from one terabit to two terabit in the next version—that means that we can then inject more data at these data centers with bandwidth right now, it goes to 20 gigabit, process it, and then synchronize it around the world.  
+
+At the base hardware layer, if you're just looking at the hardware specs, I think you can do tens of millions of transactions per second, but this is going to be blood, sweat, and tears to get the software to get to use all of those.
+
+David: That's just such an order magnitude higher than the card state of the Ethereum network. You can imagine why. If you're building Uniswap now or the next Uniswap or the next whatever, we should talk about what this enables. It's just no question where you're going to run most of your transactions.
+
+Ben: You mentioned 700,000 as this theoretical high water mark at this point, transactions per second. If you wanted to be a Visa, you wanted to be a credit card network, like a super high traffic, high frequency, what's their processing limit per second?
+
+Anatoly: Their capacity, I think they've published they measured it up to 60,000, but they probably handle around 5000 at most per second, a steady state. All of Twitter is 5000 messages per second.
+
+Davdi: Wow.
+
+Anatoly: Humans are just really bad at doing anything interesting. Nasdaq does maybe 200-300 trades per second. There are 30 times more orders for trade and there are 30 times more cancellations per order because bots are just flooding the system with no change of state.
+
+David: This is really about machines, this is not about humans.
+
+Anatoly: Exactly.
+
+Ben: Solana is already, from a throughput perspective, past the point where you would never need anything more out of a network of humans doing pretty much anything in the world.
+
+Anatoly: The interesting part here is if you're building a financial system, the value creators in this thing are like, the machine that synthesizes the world's information, they look at this arbitrary data, pick a price for a particular asset, and throw that information. That's value creation. That's a machine that's doing that as fast as it can. We need that thing to be on the same network as the value creators that are building products that humans want.  
+
+They actually onboard humans, that's value creation. It's really hard to get humans to do anything so if there are no intermediaries between those two, that's the perfect financial system. That means that we eliminated all this gunk. There's nobody taking 30 bits. Everytime some paper changes hands, everybody takes a little bit of the top. That's really what this stuff is all about. How do we eliminate all of that?
+
+It's pervasive to the point of what I consider a totally unfair market is Google and Facebook where I go to a website, they steal my data, and feed me information I don't want, and charge 0.2¢ to somebody that's trying to advertise to me. But 60% of what they're getting paid for is quick fraud, like F that, F all of that.
+
+David: Amen. One of the (I just think) super cool use cases that I know people are building on Solana—obviously there are tons of DeFi stuff—Audius which is a decentralized Spotify and manages streams on the Solana [...]. How do you talk about that or maybe there are other projects that you’re seeing out there that are just super cool stuff that could not exist?
+
+Anatoly: Audius (I think) is also one of my favorites. A lot of that comes from Roneil himself. He's just an awesome founder. You guys should totally talk to him.  
+
+What I love about it is that it is trying to get away from traditional Web 2.0 business models of let's steal your data, shove you stuff you don't want, undercharge our artists. It's really a platform to connect artists and fans directly without any intermediaries. The metadata that it's collecting, the place, the fan relationships between users and their artists is all done in the open and on a decentralized platform so it doesn't need to have this Web 2.0 model at all. It can just run off it's token.  
+
+This stuff is really hard to imagine what's going to take off. What's actually going to replace Web 2.0. It's hard to imagine that, but music has always been at the forefront of new tech. I'm excited to see them having ridiculous traction, four million users using this stuff with traction within a small…  
+
+David: This is Audius, there are four million people using Audius. It's amazing.
+
+Ben: Wow.
+
+Anatoly: And this is just a single niche of EDM artists. That's who they run after. They had all the best people jump in this and loved them from the start because music is a financially predatory environment for artists.
+
+David: Rewind, every generation of the Internet, music has led the way. There's Napster. No Napster, no Skype, no crypto. It's all a lineage back, it's the ultimate peer-to-peer file sharing.
+
+Anatoly: I think a lot of that comes from the fact that the music industry itself is predatory. Unlike every financial part of the ecosystem from the artist to the fans, it's just really trying to squeeze everybody [...].
+
+Ben: What's the value proposition here? I always want to keep playing this. I had a voice all the back of my head all the time that's like cool, you made the same thing but you put it in the Blockchain. Then the old world is like it's worse because it's slower, it takes more energy. In the Solana world, you're like, okay, now at least it's as fast a centralized world and doesn't use up a bunch of energy. What's the reason it's better to be a decentralized version of Spotify than Spotify?
+
+Anatoly: It's peer-to-peer. That's the cool thing about it. You're not really using Audius. You're directly connecting to voice noise or Deadmau5. It’s their private key cryptography that's signing those assets in Audius to your private key cryptography that's connecting to them directly. It's a direct line.
+
+David: They know how many streams they're getting from whom and they're getting paid directly?
+
+Anatoly: Exactly.
+
+Ben: It's this fascinating concept where in the abstract, if you were to tell me about the Internet in 1985, I would believe that the natural way the Internet would end up to be decentralized. Wow, it's this thing where anyone can connect to anyone else and everybody can start a business. Anybody can put up their own website and author their own HTML.  
+
+It's this surprising thing that happened that led to centralization where 1985 me would be shocked that there are five big companies. What? That's not what technology does. It's quite remarkable that with this next evolution moving from Web 2.0 to Web 3.0 of the blockchain, now we do actually have a chance for 1985 me to be like yeah, that actually makes sense on how I would have guessed it ended up.  
+
+Anatoly: This is why we don't even care about the sovereign money narrative. If you think about what we're solving for Audius, it's this piece of artist with a cryptographic key, a bunch of fans with cryptographic keys, and we're guaranteeing that they can talk to each other. We're guaranteeing that what we just described that anybody can self-publish or whatever they want that there's no interference there. That's it. The token itself is just there to prevent spam in this superconnected world.  
+
+Ben: Solana doesn’t have a dog in this fight of should some country adopt this as their currency or change at what fee that money is being used?
+
+Anatoly: Thinking it from an information system only, I think it's actually more interesting to think of it if we have a super connected world that's equivalent to if we all have neutrino-based lasers that cannot be interfered with, that we can all talk to each other at any moment. That's kind of a science fiction thing that we're building in itself.
+
+David: I'm reading The City and the Stars by Arthur C. Clarke right now and that's literally the city in it.  
+
+Anatoly: Let's do that. That's a cool-enough thought experiment that if that exists in a truly superconnected world, what's possible in that world? That to me, is an interesting question and in many more ways interesting to me than what is store value, what is gold, what is money.
+
+Ben: Anatoly, in that vein, there is a cryptocurrency called SOUL. People can buy it all over the place. I think FTX is where I've bought it in the past. How does that factor into this? How does that work in the network that you've created?
+
+Anatoly: Going back to that more of an example of a nuclear strike, what we're really trying to do is guarantee that there isn't any central authority that can issue who are these sets of nodes that can guard the network. If we were the root certificate and we issued a thousand nodes, and we can issue more anytime, then that effectively makes us the point of failure. That censorship resistant piece is not good enough to prevent nuclear strikes.  
+
+David: I trust you, but I don't know if I trust you that much.
+
+Anatoly: Right. To eliminate this central certificate root, you limit the number of certificates that can be issued, issue all of them, and let them decide who owns what, which is effectively what this token represents as a weight in the network in terms of how much vote you have, how much power to sensor you have, and maximizing that minimum set of nodes that can sense the network. You need this thing to be freely transferable and freely re-assignable.  
+
+It's just naturally how it evolves. If we actually try to keep some form of control over it but we did a good job with everything else, then that network can decide to remove us from control at any point anyway.
+
+Ben: It's sort of like they distribute all of these SOULs among people. That group is the VeriSign of this network in a distributed way, and people vote ratably on whether something is valid or not.
+
+Anatoly: Right, and the goal is to grow that set as large as possible and make that minimum set up to 33% as large as possible. That's our religion. If we're talking about store value or something as being the Bitcoin religion, the religion in our little community is to maximize censorship resistance. That's the number one focus everybody is working on.
+
+Ben: That’s how this is proof of stake base when we talk about proof of work. Proof of work, in the Bitcoin sense, is how much thermodynamic energy did you use up in the past, everyone collectively approves that this thing is real. Previous stake, if I'm understanding correctly, is more like you got a bunch of SOUL, so you and other people who have the most of it have the most authority in deciding this, basically verifying that this is the person you think it is.
+
+Anatoly: Correct. We want to grow that set to be as large as possible. Again, thinking from this nuclear strike [...].
+
+Ben: Censorship-resistant.
+
+David: All right, now it's time for our final sponsor of this episode, Fundrise. Listeners of the show don't know this yet, but there's actually another thing that Ben and I collaborated on besides Acquired, which is a massive Excel spreadsheet that we each use to manage our personal investment portfolios.
+
+One thing that we've been wanting to add for awhile but we haven't been able to until now is real estate, especially given how exposed we both obviously are to tech. Real estate, in particular non-Bay Area and non-Seattle real estate, always seems to be great diversification with still having high upside return potential.  
+
+As we looked into buying investment properties ourselves—obviously that requires a huge amount of capital, not to mention time, effort, risk getting mortgages, managing tenants, et cetera; we're busy here at Acquired—we can always buy REITs, but then you're giving away the best properties and bleeding away returns to middle men. Enter Fundrise.
+
+Fundrise is one of the only platforms that lets anyone, not just accredited investors by a fractional ownership and custom portfolios of private real estate assets the same way that LPs like [...] do. It was started back in 2012 and fast forward to today, they have over 150,000 investors and over $5 billion worth of real estate on the platform.
+
+Investors can track all the individual properties in their portfolios, including data like occupancy reports, construction progress, and market data trends. It's truly the best of both worlds with load minimum diversification, all the ease of use of a REIT, but the granular control and the low overhead you get from buying and managing properties yourself. You can learn more and sign up at fundrise.com or click the link in the show notes.
+
+This is a good transition to the last big topic we want to cover with you guys. All of this is awesome. The innovation, the technology, it just makes me smile thinking of technology and liberal arts. You're marrying different concepts from different fields, bringing them together here. None of that matters if you don't get adoption of the network. You can have the most beautiful thing, but you have to have people using this. How did you, especially because you started in the crypto winter, get anything? How did you start getting people involved in this?
+
+Anatoly: The validators were really the first group of customers or users. They're super positive people, they just want to play around cool tech. This idea of maximizing censorship resistance is just cool. Go try it, how cool it will be if it works?  
+
+We got a really good community of builders that were willing to do whatever we ask them to do, which is call up a data center, go install a machine there. This is not just running systems at home. We actually need to understand what you're doing.  
+
+That process really taught us that it's not about reducing friction for users or [...]. It's about giving them something that they don't have like anywhere else. Giving them something so interesting and so cool that they're willing to do the hard work to build and deploy.  
+
+The use case that we thought would be really interesting was what if we ran Nasdaq in this thing? This thing that Serum runs, like price [...], such a limited-order book, and through the winter, a lot of people were telling us that DEX is dead, that we shouldn't even bother.  
+
+Ben: DEX being a decentralized exchange?
+
+Anatoly: Yeah, but I fundamentally believe that if the system is possible, if we can be a world's price discovery engine, then that will be the world's information library–style dream. That's like the world changing thing that we need to build for.
+
+David: You guys have never had any ambition to build a DEX yourself, right? Or did you?
+
+Anatoly: We would have done it on our own, we have plans to do so. We briefly talked to FTX nine months before we launched and we were like, hey, you guys are cool. You're building cool products, up-and-coming exchange. What if we did options or something interesting on [...]? They're like, is it live? Are we thinking about six months? We didn't have enough time for this, we got to shift stuff tomorrow.  
+
+Six months later, we actually go live. We built this little demo called Break (break.solana.com) where you smash your keys and you see transactions fire off, then you see them all clear on the screen. You see them all confirmed and these are smart contract transactions, you can go look at the code. I demoed this to Sam and he was like, okay, everyone else needs to see this, this engineer star.  
+
+David: Sam's the founder of FTX.  
+
+Anatoly: Yeah. They showed this to their engineering folks and they've been thinking about this from a trader's point of view. If you can actually have a system that was fast enough to do full-style central [...] books, the stuff that they know, there's a chance that decentralized finance could potentially get 50% of the world's finance, maybe 25%. It doesn't matter. It's big enough for them to be like, holy [...]. This is a big opportunity.
+
+Ben: Just to make a metapoint here, I think I'm understanding this right. You could basically say, hey, you want to run a quant fund on the regular stock market? Use our blockchain-based software that can execute super fast and go trade regular securities. You don't even have to trade blockchain assets.
+
+Anatoly: Yeah. You can trade anything because this is an open network. The tokens can represent whatever the settlement there, tells the chain that it's representing—it could be stocks, it could be stocks, it could be something like dollars, like out of the USDC—but it's more of the idea that if you have this open, permissionless platform that is fast enough for this use case, will let things naturally roll downhill and end up there anyway.
+
+Ben: It's like separating pragmatism from the idealism where most of the people who actually bought Tesla's early bought it because it was a status symbol and a really sexy car. And they said, I'm saving the world. This actually could be the best fast software to use for a high-frequency system that we're describing, that may or may not trade blockchain-based assets so you pick it because it's the best system. Also, I have this idealistic view of this decentralized world and that's the way it should be.  
+
+Anatoly: And is the decentralized world the natural endpoint? Because it's easier. It's cheaper, faster, fault tolerant. You have stronger guarantees. If all those things are true, then will things just naturally gravitate there? As soon as this thing exists.
+
+David: If you don't have to pay Visa 5% of every transaction, you would.
+
+Anatoly: Nasdaq (I think) earns $10 billion a year, where does that money come from? It comes from the people.
+
+David: I want to rewind back. You talked about the validators. I think this is an important part for building a crypto, at least a protocol I haven't quite thought about. It's like supply and demand. You need the supply before the demand. Before you can go get an Audius or you could go build a Nasdaq, you actually needed the network of validators that were going to run this, right?
+
+Anatoly: Yup, and we started with just 40 of these dedicated people that were just there through our first launch that crashed in 20 minutes, the second launch that crashed in two hours, over and over they just came back.
+
+David: I get what you're saying about them. They're there because this is cool.
+
+Anatoly: Yeah, that they were true believers. Some of those folks were so early, and bug bounties that they’re finding these really hard-to-find critical bugs that they're now funding their own security firms because of this early investment, digging through our code, understanding where we made a mistake, and demonstrating it. That commitment really created a ton of value for everyone involved. It was just awesome to have these folks early on working with us.  
+
+David: That's amazing.  
+
+Ben: Anatoly, after all of this, it sounds to me like Solana is just going to work. It's going to take up the world. It's going to be this super high-frequency perfectly optimized blockchain for exactly what it's doing. When I turn my head and see the elephant in the room of Ethereum coming up with Eth2, which is not necessarily the tightest defined at this point, but there's going to be a system based on sharding and moving from purely proof of work to proof of stake, how do you think about Ethereum and Solana? Does it coexist in the same world? Is it one or the other? Are they doing things right? Are they doing things wrong?
+
+Anatoly: What I remember from Open Source World 90s, I was the Linux geek. I built Linux from scratch and Microsoft started killing Linux. You can't kill an open source community. We can kill Ethereum just easily as Ethereum can kill us, meaning it's impossible. If you have people willing to work on something over the weekend, at their own time just because they think it's fun, there's no killing that. It's just code that people want to write because they love to do that.
+
+We're competing because there are lacking features. At any given moment, there's a certain number of users, and that competition (I think) is awesome because we do something well, people look at it, can my application run Ethereum, adopt it, improve on it, and vice versa?
+
+We're going to see this bouncing back-and-forth between any of these healthy communities that are growing that are doing the iteration cycle product/market fit. I think the kernel engineers, honestly we're all friends. We all hang out when we go to conferences, we all end up at the same bar drinking beers, talking about our consensus, just like Windows and Linux engineers hang out because it's just interesting problems.  
+
+The ecosystem has this healthy flow of competition that is necessary for the entire space, the crypto space, to onboard the next billion users. This world right now that we live in is just so small. How many people do you think self custody keys? Do you guys self custody keys?
+
+David: Should.
+
+Ben: I know I should.
+
+Anatoly: You guys are in the crypto industry at large, but you don't self custody keys. Not your keys, not your coins. You can't directly connect to an artist in Audius without your own self custody. You're not in the interconnected world. You're still in this Web 2.0 world where you're going through intermediary.  
+
+Ben: What percentage of people who think they own crypto currency self custody?
+
+Anatoly: I don't know. My upper estimate for self custody is maybe 30 million, but that's a very generous estimate.
+
+Ben: 30 million people?
+
+Anatoly: Yeah. DeFi summer with 30,000 or 40,000 people participating in these flash communities that will form overnight. Imagine that with 30 or 40 million people that were rapidly coming together around an idea, pulling resources together around an idea, just in an hour or a day around the world with no friction. That's the power of cryptography.  
+
+That peer-to-peer part of us with keys all connecting is just mind blowing how important that is. The layer one tech is like we're kind of arguing about Intel versus AMD, or x86 versus MIPS. These are details that are important to us as engineers, but that end-to-end user super connected world is just so wild and so cool.
+
+David: It's interesting to think about what you're saying a minute ago about you guys on Ethereum going out to bars, having drinks, talking about technical problems. Without you guys, I wonder do you think, maybe you can't answer this, but there are other competitors for sure. Let's not say you guys, all of the various Ethereum killers out there. If they didn't exist, Ethereum woudl just be dumb, fat, and happy. You need this motivation to push things forward, right?
+
+Anatoly: Maybe. I can't imagine a world where people will look at it and decide I want to build something different because the design space for these systems are just so interesting and so big that as an engineer, it's like operating systems. You look at one, you're like, I want to make a bunch of different choices and do something different. Let's see what happens. There's an urge to try it.
+
+Ben: Give me your pitch. I'm an application developer. I'm coming with some heavy weight, maybe I've got some money behind me or great team behind me and I'm saying, geez, if I write code that's compatible with Solana, it's not compatible with Eth2 and vice versa, why should I write it on Solana instead of Eth2?
+
+Anatoly: Because we guarantee this superconnected world for one billion users without charge so that intermediary, this is where it's going to happen first. This is what we're building for. We don't care about anything else except connecting these billion people together. You can go deal with [...] other stuff if you want, or if your vision is bigger than x86 Intel, if you're building software and you don't care about the hardware, you actually care about the user experience, we're the place to do that.
+
+David: There's also an element right now, too. If you want to do this, you're the only place you can do it, right? Eth2 isn't live yet.
+
+Ben: It's a theoretical concept.
+
+Anatoly: I think if you talk to any of the folks that worked with us, at the end of the day it's about the people. I don't know what it is about Roniel that we just instantly connected. I don't know what it is with Sam that there's this instant trust. We're all in it together, we'll just go do whatever it takes to make it work.  
+
+There are people like that in the world. If you're one of those and you talk to us, and you're like, I have a massive vision. I don't know how I'm going to do it. We will just boil the ocean, we’ll eat glass to make it happen for you. The details are not as important to us right now, the commercial parts of it. None of that is as important as actually building something cool.
+
+Ben: I love it.  
+
+David: Yeah. I love it. To cap it all up, this is so exciting. Everything is already happening even just Audius itself is one example. It's live. It's happening today. What do you think the Solana ecosystem looks like in two, three, five years?
+
+Anatoly: We have this dream of this being competitive. Something as big as Google, like Android. There are 5000 engineers working at Android, 5000 engineers costs a billion dollars per year. We can't possibly raise that much to compete with them.
+
+David: I don't know. In this environment, maybe.
+
+Anatoly: There's no way. We actually have to have folks come into the space, build awesome products, love the tech. Go start being one of those 5000 engineers on their own, build a community that is more grassroots than this top down Google-style centralized system. There's just no other option.  
+
+If we succeed, it's this amazing set of engineers that are just working and building really cool [...] and amazing set of validators that are building really cool hardware to make this stuff run as fast as possible. That's the dream of it that there isn't one single authority that's telling anybody what to do.  
+
+David: Love it. Great spot to end on. Thank you for joining us.  
+
+Ben: Where can people find you on the Internet?
+
+Anatoly: solana.com is where you can find all the information and Solana's twitter handle. Go follow it on Twitter. Follow me if you want to hear me talk about consensus and censorship resistance. Or Raj. He's far more active on Twitter about the ecosystem and cool [...] that's been built.
+
+David: Are you guys on BitClout yet?
+
+Anatoly: No, we're not. There's a cool project called [...] that's creator tokens that can attach to any social network. That’s a cool thing on the Hackathon. If you want to do some work and you're not an engineer, go look through the Hackathon submissions and tweet us what is good.  
+
+One of the hardest parts in the space is actually synthesizing information. Go use your massive brain, the most advanced piece of technology in the universe. Go look at all this information of all these other teams that are building stuff and tell us what's good, what do you actually like, what's high quality that takes a ton of work.
+
+David: Amazing.  
+
+Ben: We'll put links on the show notes.
+
+Anatoly: Awesome.
+
+Ben: Anatoly, thank you so much.  
+
+Anatoly: Thank you.
+
+Ben: All right. Listeners, see you next time.

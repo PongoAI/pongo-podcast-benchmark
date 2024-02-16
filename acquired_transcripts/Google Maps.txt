@@ -1,0 +1,703 @@
+Ben: Welcome to Season 5 Episode 3 of Acquired, the podcast about great technology companies and the stories behind them. I'm Ben Gilbert and I'm the co-founder of Pioneer Square Labs, a startup studio and early stage venture fund in Seattle.
+
+David: I'm David Rosenthal and I'm a general partner at Wave Capital, an early-stage venture firm focused on marketplaces based in San Francisco.
+
+Ben: And we are your hosts. Today we are talking about Google Maps and the acquisition of three companies starting with Where 2 Technologies in 2004 that set the whole thing in motion. David, I would not have guessed it when starting to research but there's a chance this is as big of a success but far less discussed than our shining example of an A+ Instagram. Listeners, over the next hour or so, we or at least I, are going to try and build that case.
+
+David: I can't wait to hear it. That's actually a good question. Probably, Instagram has used more individual user sessions per day than Google Maps, but if you count all the APIs of Google Maps, it might be close.
+
+Ben: Yeah. The Dual Revenue Model as one, being a different front door to Google then search. Two, actually, now selling that API access. We will get into all of that and more.
+
+Before we dive in, I want to thank the sponsors of all of Season 5, Silicon Valley Bank. Earlier this week, I caught up with our sponsors so let's dive in for a little Q&A.
+
+Listeners, we have with us today, Matt Trotter, who heads up SVB’s frontier tech team, which specializes in VC-backed companies in the transportation, robotics, and aerospace sectors. Matt is based in SVB’s downtown San Francisco office right in the heart of SoMa.
+
+Matt, on today’s episode, we’re going to talk a bit about Google Maps and the impact on the development of autonomy. What technology or company is the closest, in your opinion, to a commercially available autonomous vehicle service?
+
+Matt: I think the technologies that are closest are the ones that have been able to constrain the problem. The hardest thing about autonomous driving is you have to solve for the edge cases and if you get those wrong, the repercussions can be very dire.
+
+The industry that I look at that’s probably getting closest is autonomous trucking. Don’t be surprised if you’re driving on the road in Florida and you see a semi truck going down the road with no driver in it. Do not be afraid. If it makes you feel a little better, there’s probably a truck driver in an office building somewhere with a remote steering wheel that is keeping an eye on things, but it will still maybe a little unnerving for the first people who see that.
+
+All right, thanks so much to SVP. If you want to reachout, you can click the link in the show notes or in Slack. Speaking of Slack, if you like the show, you should come join the other 2500+ Acquired fans that are hanging out in there.
+
+If you want more of the show, you should become an Acquired Limited Partner. David and I released one LP show for every main show and we use these episodes to go deeper on company building topics. The last of which was on a not very well known topic with Andrew Abramson from Riviera Partners on how the best companies in tech search and recruit for product executives. You can get started with a seven day free trial and listen right now here in the podcast player of your choice by clicking the link in the show notes or going to glow.fm/acquired.
+
+All right, David. I'm pretty excited to do a classic Acquired episode.
+
+David: I know. This is going to be classic. I noticed in our LP review, you no longer say how buttery smooth it is to subscribe. It is very buttery smooth but we got a bunch of feedback in the survey that people didn't like that description.
+
+Ben: Yeah. We got a lot of funny feedback in the survey. I think we should do an LP show on stuff we learned from the survey. There's a lot of good. Of course, there's an interesting demographics stuff. For example, the top two types of people that listen to the show or the product managers and engineers, but here's a lot of other really interesting data that I think we should tease.
+
+David: We totally should do that. We had almost 800 responses, which is great. Thank you for all the feedback, some great helpful stuff, some really funny stuff, but mostly we just appreciate all of you who are listening. It's super cool. Thank you.
+
+Ben: All right, David. You want to divein to the acquisition history and facts?
+
+David: Let's do it. We go back to 2003, relatively recent by Acquired standards.
+
+Ben: Yeah. We're not starting with the original cartographers. "Someone thought of an idea of a map and..."
+
+David: It's been a busy week here at Wave. No, we go back 16 years to 2003 to Google in Mountain View. It is pre-IPO Google, as we're going to see just pre-IPO Google. They're starting to gear up. They found their business model of paid search inspired by Overture.
+
+Ben: The borrowed best business model of all time.
+
+David: Yes. We covered in the Internet History Podcast.
+
+Ben: Yup, Brian McCullough.
+
+David: Yeah. So, it's 2003 and a young product manager at Google, fresh out of Stanford, who's name is Bret Taylor, is working on a truly little feature of Google at that time called Search by Location. The idea is that you can enter searches into Google by location. But there's no maps. It's completely useless. In Bret's own words, "It had zero users per day."
+
+Ben: If I remember right, you had to use a keyword or typing in the search bar, it was location: or something like that. It's like a command line function.
+
+David: I don't remember it because I didn't use it, but for our listeners, the name Bret Taylor might sound familiar. Ben, do you know what Bret Taylor went on to do?
+
+Ben: Is he CTO of Facebook now?
+
+David: He went on to become CTO of Facebook.
+
+Ben: Oh, FriendFeed!
+
+David: He founded FriendFeed. He was the CEO of FriendFeed. That was acquired by Facebook. He became CTO of Facebook, then he left and founded Quip, which was acquired by Salesforce. He is now the Chief Product Officer of Salesforce. We're going to have many illustrious Google Maps alumnis as we continue throughout the episode here.
+
+Ben: FriendFeed was so awesome. That was that time in social where all of the platforms where similar enough that you could build an aggregator and that actually made sense. Now, Facebook posts have so much crazy metadata and different types associated with them, Twitter, everything was sort of unique.
+
+FriendFeed basically said, "Sure. Connect with all your services and we'll create one feed of all your friends across all your services." That wildly defies the business models of all these companies now. That would have been shutdown immediately but that was a really cool at that time.
+
+David: It’s almost like what you were done with Red Ride aggregating Uber and Lyft. Great idea, not. Anti-business model of the companies. Anyway, we digress.
+
+It's 2003 and Bret sits down with Larry Page, co-founded of Google, and recently hired as VP of Business Development, Megan Smith, to talk about Search by Location state of the product—the state of the market out there. They realized, "This feature is not cutting it. We need to do better." What was going out there, AOL, a couple of years earlier had bought MapQuest. MapQuest was the leading Internet mapping product out there.
+
+Ben: It was already public. They bought it after it was a public company.
+
+David: Yeah, that's right. They bought it for a billion dollars. I think that acquisition was pre-bubble bursting. It was the most used product out there. Yahoo! also had Yahoo! Maps out there which were quite popular. Google found out that Yahoo! was doing a bunch of work to adding a bunch of features to Yahoo! Maps and really making a push on it. The three of them decide, "Okay. We need to really compete in this space." Fortuitously, right around that same time, they get a tip from one of their investors, Sequoia Capital, that there is an interesting little company down under in Australia that they might want to look at.
+
+Ben: In researching this last night, I discovered that MapQuest is still around. You can go to mapquest.com. The logo is something that I have never seen in my life. Of course, it's owned by Verizon because the whole AOL to Yahoo! Verizon thing. It's still a thing you can use that uses a map box, licenses, and data. I couldn't believe it was still around. The last time I used MapQuest, I was printing out the directions so that when I'm driving somewhere, I could look at the piece of paper.
+
+David: That's what you did. We'll get to the state-of-the-art in a minute. What was state-of-the-art is you went to MapQuest, you got your maps, you got some directions, you printed them out, and as you drove along or walked along, you look at the sheet of paper, and there was no dynamic.
+
+Ben: "Look how cool it is! This was made just for me."
+
+David: Yeah. There were these static pages. You entered your starting point, your destination, and you got a static webpage that you then printed out.
+
+Down in Australia, though, there is a motley crew of four people. Two Danish brothers, Lars and Jens Rasmussen who had recently moved there. They're Danish by birth. They had been in Silicon Valley in California. They had been working at a startup. That startup was called Digital Fountain. It was a dot-com bust. I think it ended up surviving and maybe ended up getting acquired in 2000s or something like that.
+
+Ben: They laid off most of the people.
+
+David: The two brothers had gotten laid off. They said, "Okay. Well, it's kind of a nuclear winter here post dot-com bust, but let's start something. We've been through the startup. We were interested in starting a company."
+
+Lars was dating a woman who he would ultimately marry who is Cuban. She couldn't immigrate to the US. She and he decided to move to Australia. They moved to Australia. He and his brother Jens were thinking about a product that they could build. Jens had the idea that, just like we were talking about, the state-of-the-art in mapping on MapQuest and Yahoo! Maps kind of sucks. It really kind of sucked, and maybe, they could build something that was better.
+
+If you go way back and try to remember using these sites, you would see a map. But the map wasn't actually the key part of the experience. It was the list of turn by turn directions on the side of the map. The map itself was you get a tiny little—
+
+Ben: Just for fun, they generate this tile that's like, "Look! This is illustrative of where you're going."
+
+David: Yeah. He had the idea that the map should be front and center just like a map and the directions should be on the map. The map should not be static, but it should be dynamic. You could interact with it, you can zoom in, you can pan, you could do all of the things that we now think of as normal modern mapping applications. The way he thought that you can do this was to make the map based on this concept of tiles. It would be dynamic tiles on the map, they represent a small part of it, and they could stitch it together so that whatever view you were looking at was an aggregated view of all the little mini tiles that made up the map. You can move it around, see different tiles, and whatnot.
+
+Ben: That's a brilliant technological innovation that enables this. It's amazing to me that it both requires the breakthrough technology innovation which is still how maps work today. There's a lot more vector stuff than just this static tiles world. That's what enabled this mapping revolution. The vision innovation that he really nailed was if you made the map big, pretty, zoomable, and searchable, it itself could be a platform for other services. The map itself could be a platform.
+
+David: It could be the motive of interaction. Lars was like, "Yeah, okay. This is cool. Let's start a company around this and let's do this." He's moved to Australia. He convinces Jens to move to Australia and he recruits two other engineers who are friends of theirs, Noel Gordon and Stephen Ma. The four of them start working on this out of Noel's spare bedroom in Sydney, Australia. They decided that they'll name the company, Ben as you said, Where 2 Technologies.
+
+They started talking about how they're going to do this. The web isn't even on their mind. Clearly, the only way that you could build an application with this performance, this dynamic, would be with Desktop software. This would be the Encarta Encyclopedia. You're going to install this on your desktop computer. It will be super cool. You can find what you want. Maybe you can still print out the directions eventually. How else could you do this?
+
+They start working on it. They realized, "Hey, this is kind of cool." They might be onto something. They should search for funding—VC funding—for this. Lars and Jens fly back to California. They meet with the former Cisco consecutive they've known who is a prolific angel investor. His name is Frank Marshall. Frank says, "Okay. This is cool. I'll introduce you to my network to a bunch of VCs including Sequoia Capital."
+
+They get introduced to Sequoia. Sequoia gets pretty excited about this. Sequoia have been investors in Google. They're investors in Yahoo. They're investors in lots of great companies over the years as we've seen many times in this show. The start talking terms. It was unclear if this was a verbal offer or they actually gave a term sheet to the company to invest $2 million for 40% of the company. It was a different time back then. First of all, it'll be $5 million postmoney valuation selling 40% of the company for $2 million. Time's have definitely changed in the seed market since then.
+
+The brothers are excited about this. They're like, "Man, great! It's great capital. Premiere marketing venture out there, they're willing to fund us here in Sydney, Australia. This is great." They're excited to do it.
+
+Before they actually sign the deal, though, Yahoo! releases what the Google folks know what they're about to do is a big update to Yahoo! Maps. They add local yellow pages listing. It's clear like, "Oh, okay. This is going to be the business model here. We're going to have local businesses on these maps. We’re going to sell advertising around that. People are going to be able to find them." This is a gamechanger in the industry. Sequoia sees this and they pull out of the deal. They say, "Yahoo! is going to be the winner here. We're not as excited about funding this startup company and try to compete with these giants [...]."
+
+Ben: Sequoia gets a lot of things right but not this one.
+
+David: They still get something right, though. They are in many of the best [...] platform companies out there. Of course, they're investors in Yahoo! and Google. Sequoia does say as a parting gift while passing with the brothers here and whereto, says, "You know? With Yahoo! launching this, Google is going to need to respond. We're investors. We're on the board of Google. We can introduce you to them. We'll broker an introduction." They, as we alluded to earlier, make this introduction to Larry Page.
+
+Back in Mountain View, I assume Lars and Jens fly over again back to California. They meet with Larry and Megan. They pitched them this company. I think I mentioned earlier, the name of the desktop software is Expedition. They showed them Expedition, how cool it is, they pitch them.
+
+Larry and Megan are interested but there's two problems. One, as we alluded to earlier, Google's into the middle of preparing for their IPO. All deals are on hold. Period, indefinitely. They're not doing any M&A during the quiet period while they're getting ready to go public. This is 2004 at this point. We're talking about Google here. Google doesn't want to make desktop software. Google makes web software.
+
+Ben: Did you see that Larry page quote, "We like the web"?
+
+David: Yes,exactly. "We like the web." At the end of the meeting, that's what Larry says. "You know? This is great but, we like the web." Of course, Lars answered in typical great entrepreneurial fashion, they say, "We can do that."
+
+They go back to Australia. Still just four engineers, they work feverishly for three weeks. At the end of three weeks, they come back to Larry and Megan, and they say, "Hey. Remember how we had Expedition running on the desktop last time? Here it is running on the web." What they do, they have it running on a web browser. They used this idea that was, as best as we could tell them, they talked about this on Google, independently invented both by the Gmail team and Paul [...] within Google. Also, Where 2, while they're trying to get acquired by Google at the same time, that's leveraging this relatively unknown feature of JavaScript that Microsoft added to Internet Explorer that allowed a webpage that was already loaded, to sink with XML data stored on a server.
+
+At this time, web pages are static. You load a webpage, everything is done. There is no processing happening on the webpage. It's static, but there is this feature that you can dynamically fetch XML data in the background without refreshing.
+
+Ben: Asynchronous JavaScript and XML.
+
+David: Indeed.
+
+Ben: The wave of the future.
+
+David: The wave of the future. For all of our engineering audience, probably some other engineering audience, know exactly what we're talking about here. For anyone else, you might have heard of the term AJAX. That is Asynchronous JavaScript synching with XML data, stored on a server. Short for AJAX. We're plumbing the depths of our engineering abilities here.
+
+Ben: All I remember is this is a couple of years before I rewrote the Hudson High School website. I remember writing a lot of XML HTTP requests and being like, "This is going to be cool like Google Maps was."
+
+David: Indeed. I feel like we've been lately on a Web 2.0 history kick here. This becomes a killer key building block of the whole Web 2.0 era is the ability to have non-static web pages via this technique. As part of the Slack episode, we talked about Flickr that had just launched a couple of months before. This is really one of the key underlying technologies of the Web 2.0 renaissance.
+
+The Where 2 team, they come back, they present to Larry and Megan, and they're like, "All right. This is pretty good." Google was double impressed because, again, Paul Buchheit on the Gmail team—I don’t think Gmail had come out publicly yet. I think it was still being worked on internally. They were at the bleeding edge of building web applications—were doing the same thing internally. It was like, "Oh, man. These engineers must be pretty good if they come up with this independently."
+
+Later that summer, in August, Google does complete the public offering on August 19th, 2004 and then very shortly thereafter, probably as soon as they can, wants [...] settles from the IPO. In October 2004, Google acquires Where 2. Bret Taylor moves over and becomes the first PM for this new team which is re-christen from Where 2 to Google Maps, inventive name.
+
+It was just over the summer where Where 2 is building the web version of the product to try and impress Larry and Megan. Google Maps launches publicly in February 2005. So, the acquisition is October 2004, the web product is only a couple months old, and within months Google Maps is launched to the public. It's pretty incredible. I feel like we hear the story a bunch on Acquired. Some of these totally world-changing products are built in just a matter of months by really, really talented engineers.
+
+Ben: One of the things that makes the story so common on this show is, there was this time when web applications were so new that it was intuitive what was going to have product market fit because there were so few web applications. I think the first really good interactive mapping software, the first really good interactive, you name it, there was probably a big space for it.
+
+David: Photo software, Flickr; video software, YouTube, all of these companies. The flood gates were opened to building these applications on the web and whoever could build them fastest and best.
+
+Ben: And the web was a little slow at that time, too. That's exactly it, fastest and best. This was an era where technology, innovations created a 100X better user experience for people that made them actually use those applications. There were lots of people that would decide that they wanted to get into this but it took a real technical genius to work with the Internet speeds we had at that time. The browser technologies to be able to make that possible for people.
+
+David: What's interesting is that this is pre-Google Chrome days. Actually, all of the browser technologies making this possible are coming out of Microsoft.
+
+Ben: And Firefox.
+
+David: And Firefox, too.
+
+Ben: And Mozilla.
+
+David: Yeah. Pretty incredible. Rewind just slightly back to the end of 2004, Google also acquires two other companies in quick succession at the same time. One is a company called Keyhole. Keyhole was unlike Where 2, was a well-funded startup in, I believe, located in Silicon Valley, California. It also made desktop software and it was called Earth Viewer, and of course as viewers and listeners can probably guess, that becomes Google Earth which interestingly, would remain as desktop software for quite a number of years.
+
+Ben: And contain a flight simulator.
+
+David: That's right. Microsoft parallel [...] very, very important here. Ben, do you know who the CEO of Keyhole was?
+
+Ben: I do not.
+
+David: I'll give you his name. See if this rings any bells. John Hanke.
+
+Ben: Nothing.
+
+David: John would ultimately, after a couple of years, become the VP of the Geo group "within Google." He would be taking over Google Earth and Google Maps' responsibilities and executive for that. But then as often times happens to companies in Googles, he got bored with this role and wanted to go back into doing something new and innovative. He had come from the video game industry before he started Keyhole. He started a little project within Google that was referred to as Niantic Labs.
+
+Ben: No way.
+
+David: Yes.
+
+Ben: Awesome. The geospatial stuff makes a lot of sense then.
+
+David: Indeed. John is now the CEO and co-founder of Niantic, which of course makes Pokémon Go, the new Harry Potter game—
+
+Ben: And Ingress.
+
+David: Started with Ingress. It actually started with, I think it was Field Trip which was an application built on Google Maps that could show interesting points of interest around you if you held up your phone and panned it around. It's certainly by far the most successful augmented reality game or probably application period out there right now.
+
+Ben: For sure. It is funny. I think, when people talk about the emerging AR market, I think that's the widest use.
+
+David: It is the market. Pokémon Go, that's the market. That was Keyhole. Google also acquires a company called ZipDash. A very small company. I believe they paid $2 million for ZipDash. ZipDash was also based in Silicon Valley, California and they were providing and creating real time traffic data on streets. They were getting that data both from and sending it to mobile phones. Of course that is when you want traffic data, when you have your mobile phone with you while you are driving. It was a giant market of only four Nextel phones at the time of the acquisition.
+
+Ben: Dude, those had the sweet walkie-talkie features.
+
+David: Yeah, that [...] to connect. I never had one of those. I always wanted it.
+
+Ben: The commercials were great.
+
+David: The commercials were awesome. The ZipDash team, by far the most insignificant of the three of these acquisitions.
+
+Ben: To this day, Where 2 acquisition price is still undisclosed. It was a mix of cash and stock, that's the most we know but I think it was less than $50 million. I think it was a relatively small acquisition. Great for four people, but..
+
+David: And I believe Keyhole was $35 million. I’m being sort of facetious about the total insignificance of the ZipDash acquisition because Google would have, of course, stick them in as backwater thing they would work on that nobody would care about which would be the mobile version of Google Maps, which of course is now by far the 90% plus of the business and one of the most important applications in history.
+
+Back to the launch in February 2005 of Google Maps, the night before it launched, it got Slashdotted. Remember Slashdot?
+
+Ben: Yeah. That was like getting dug before a dig.
+
+David: I know. So great are tech names now.
+
+Ben: It's still up. I don't know if there's traffic, but there's writers.
+
+David: I remember going to Slashdot literally everyday.
+
+Ben: slashdot.org. It looks the same. This is crazy.
+
+David: It's not even the Wayback Machine.
+
+Ben: Yeah. Somebody published something this morning. It's still a news site.
+
+David: So Slashdot for the listeners who don't remember or weren't alive, was sort of the user-generated and posted news site for technology back during this era. Getting "Slashdotted" was if your application, service, or product, or what have you, made it to the top of the Slashdot boards, you would get tons of traffic.
+
+Ben: I'm reading About. Slashdot was created in 1997 by Rob "CmdrTaco" Malda. I remember CmdrTaco. He was the username on all the posts.
+
+David: Yes, so great. People find out about this impending, not even relaunch of Where 2 because Expedition was ever launched publicly and it was desktop software, but the launch of Google Maps coming the night before, it gets Slashdotted with the URL of google.com/maps, so when they launched the next day and announced the product, they just got a ton of traffic.
+
+But that doesn't equate to immediate success for the product and actually according to Bret Taylor and many of the histories out there, for about a year, it was like okay. It got some usage but certainly, MapQuest and Yahoo! Maps—despite being obviously inferior in many ways—were still the leading products out there on the web.
+
+Over the next year, though, they do two things that are really important. One that is fundamental that was starting to be well known and I feel like Google was way ahead of the curb but now is obvious, which is that they rewrote the app. It was really slow, and they rewrote it for speed. Google understood that speed of loading of web pages, search results, everything.
+
+Ben: It’s not their primary value propositions for why Google won. Not only was it the best result, but it was the fastest result.
+
+David: It was instant. They rewrote all of the software. They made Google Maps actually performant and fast. That certainly helped a lot specially as the products scaled helped a lot. To the distribution and stunt side, they added satellite imagery to maps. I vividly remember this, the satellite imagery, aerial imagery they took from the Google Earth team from the Keyhole acquisition and they were able to bring it into maps and the web application. So, when this launched, it was such a novelty. I remember doing this. I remember my parents doing this. Everybody would go find their home.
+
+Ben: "I got to find my house!"
+
+David: Go find my house and view it from the satellite. That was the key thing that made, [...] For Zillow that got mainstream people using this.
+
+Ben: You thought you were a spy. It was like, "I saw this one on the movie. Only the government can do this. Now I can do it, too."
+
+David: Yeah and there's a super fun story from Bret Taylor that he posted on Twitter that we will link to about naming this product's features, which, of course is as we now call Satellite View. When they were working on it, the maps team called it Satellite View. But apparently, the Earth team got really upset about this because some of the images where from satellites but most of the images—
+
+Ben: Helicopters.
+
+David: Yeah, were actually aerial from planes and helicopters. There was this like holy war between the engineering teams about, "You can't call it Satellite View. Most of it are from planes." They ended up having a product review. One of the product reviews before the feature shipped with Sergey Brin in the product review on the agenda was to finalize the name of this feature. Apparently in typical Larry and Sergey fashion, especially Sergey, they are always doing nutty stuff.
+
+Sergey was on this kick that every meeting had to end on time. Every meeting he went through, he brought a timer. A countdown clock and he would hit the countdown clock at the beginning of the meeting for 45 minutes, or an hour, or however long it was. Then when the clock reaches zero, he got up and walked out, meeting was over. Whatever decisions needed to be made, the current state of where things stood, that was the decision.
+
+So, they are in this meeting and debating what to call it, everybody is throwing out different names and Sergey is mostly in [...] mode. Then the clock hit 10 seconds and Sergey says, "Let's call it Bird Mode." Then the buzzer goes off and he walks out. Everybody is looking around and they were like, "Are we really calling this Bird Mode?"
+
+According to Bret, the maps team goes back to work on it and they were really debating, "We can't call this Bird Mode. That's ridiculous." So they decide just not to do it. They just leave the Satellite Mode name in there. They ship the feature and nobody asked them ever again. They literally defied Sergey and they just did it. Now, Satellite Mode that we all know and love is Satellite Mode.
+
+Ben: Meanwhile, Microsoft shipped the org chart. I don't know what it looks like today but I remember in Bing Maps, for the longest time there's both satellite which was truly from satellites but there was also, I don't know if they called it Bird’s Eye or Helicopters, but Aerial Perspective or something like that.
+
+This was actually the helicopter shots which, for nerds was pretty cool because what you could do is they crisscross in the sky like north to south, south to north, east to west, west to east, and you could actually rotate the perspective that you are viewing. It wasn't like at a 45-degree angle, it was maybe a 20-degree angle or something, but you could actually sort of see what it looked like viewing not directly down but sort of slightly at an angle down—
+
+David: Yeah. I remember when they did this.
+
+Ben: Yeah. I remember like, "This is cool, but is this useful at all?"
+
+David: Why would you have two different views for this?
+
+Ben: Yeah but sure enough, I looked at my house and I looked at it from all four angles and I was like, "This is pretty cool."
+
+David: By 2006, once all these features had shipped, Google takes over MapQuest and Yahoo! and becomes the largest Internet mapping destination and provider in the world. In mid-2006, they released the maps API and this was another watershed moment in Web 2.0 development is developers go nuts with access to Google Maps API, they start creating mashups. Do you remember mashups, Ben?
+
+Ben: No.
+
+David: Google Map Mashups were such a thing. It was like the tech world meme of 2006-2009. All sorts of applications get built showing overlapping crime data or any points of interest data. People are just taking the underlying maps and the dynamic nature of it, embedding it in their webpages, layering data over it. Super cool stuff gets built. My favorite was, do you remember PadMapper? Did you ever use that?
+
+Ben: Oh, yeah. For sure.
+
+David: PadMapper was a Google Maps Mashup.
+
+Ben: That makes sense. I found an apartment that way. Until prices got all puffy and shut them down for scrapping.
+
+David: Yeah. This is a fun story here, but they released the API, the developer interest in mashups, and people started to do this, this leads to things like Trulia, things like Zillow, things like Uber. None of this would be possible without Google Maps API.
+
+Ben: Which for a while we should say was free. Maybe a Google growth strategy or maybe just Google saying things like, "We love making things that make the web better, so if you want to use Google Maps for your own thing, it's free. Then if you are really using it a lot, it's pretty cheap." Until recently.
+
+David: I remember I worked for a year at the Wall Street Journal after investment banking and before I moved into [...] and getting into venture capital. During that year, we started doing a bunch of mashups and work with Google with Maps. We spent a ton of time on the Maps [...] team trying to figure out, "Could we use this for free? Do we have to pay for it? How much do we have to pay for it?" It took Google a while to figure this out. I think they got a pretty good business model now.
+
+Ben: Also listeners, quick update on my last comment. I'm on Bing Maps right now. They have an aerial feature but it is effectively satellite view, and there is not a way to rotate around your favorite building in for slightly different angles.
+
+David: Sad. There's just one problem with all of this, though. I bet this is why it took so long for Google to fully iron out the API business model, which is that Google and Google Maps were completely dependent on mapping data from other data providers and satellite companies. The two largest of which were Tela Atlas and NavTeq.
+
+In 2007, both of those companies got acquired. I may mix this up, but I think NavTeq got acquired by Nokia and Tela Atlas got acquired by TomTom. It maybe the other way around, but they are both very large acquisitions. They had a duopoly on satellite map and navigation data providing. They would sell their data and images to all the car companies that were putting GPS and Maps into screens in their vehicles. They would sell to the Garmin, TomTom obviously was making their own standalone GPS devices. They would sell to MapQuest, Yahoo! Maps and Google Maps.
+
+Google knows that this is a dependency that they are not too excited about. Also in early 2007, Larry and Sergey are back on the Stanford Campus where of course they were PhD students and Google was started. They meet up with someone who I assume they knew and they are friends with, who was a computer science professor, Sebastian Thrun, who at that time was a computer science professor at Stanford.
+
+He was running two important projects. One was SAIL, the Stanford Artificial Intelligence Laboratory. Two, was the Stanford’s team in the DARPA Challenge. He and Stanford’s team had just won the 2005 DARPA Challenge. The DARPA Challenge, was a challenge to create an autonomous vehicle that could navigate a pre setout course and terrain in the dessert. Sebastian and his lab were at the forefront of all of the things that would go into ultimately autonomous vehicles but a huge component of that is mapping navigation data all of these things.
+
+Sebastian told Larry and Sergey that he's actually in the process of—with a bunch of grad students—starting a startup to work on one aspect of this. It was going to be called Vutool. Really great product name and they had a crazy idea. Based on their work and the DARPA challenge, they knew all these things were important. They were going to drive around the streets of America with cars driven by human drivers but with big cameras on top and they were going to use these cameras to take pictures of everything and (a) that was going to have pictures of everything, but (b) it was going to be data that was going to be incredibly useful for this future of navigation, and autonomous vehicles and all of that.
+
+Ben: Which was not a thing that the public was in any way talking about that was five years out.
+
+David: I remember the DARPA Challenge from back when I was in school at Princeton at the same time, we had a DARPA Challenge team. All the major universities did. It was something that academics and engineers were thinking about, but it’s nowhere near mainstream.
+
+Ben: But it was 2012–2013 before the tech community started getting buzzy about autonomous vehicles might be a thing sometime soon.
+
+David: It was totally in science project territory. You could argue that maybe this is still in the science project territory, but it definitely was then. Larry and Sergey hear all these from Sebastian, and of course they know on their minds is this dependency problem on Tela Atlas and NavTeq. They say, “We’re going to buy you immediately.” They do, and of course this turns into Google Street View.
+
+But Street View itself, as we’re talking about, was never the only goal of the project. Although Street View was super cool, it was a whole another round of just like when they were satellite [...].
+
+Ben: I want to look at my house.
+
+David: Everybody goes and looks at their house. It was great marketing for Google Maps. Using that data, Google starts internally a project called GroundTruth and this is lead by Megan Quinn who was a Product Manager at Google at the time. She would go on to Square and then Kleiner Perkins and now she’s a GP at Smart Capital, and investor and board member of river.com, one of the many illustrious Google Maps PM alumni.
+
+She leads this project. What they’re doing with all the engineering talent at Google is basically taking the data and the images from the Street View Cars and using that and interpolating it in ways such that they can get everything they need from that and they don’t need to buy Tela Atlas and Navteq data anymore.
+
+Ben: Talk about another unique and amazing technology problem to solve, where they take these nine cameras or something, they’re mounted in this crazy way on top of this car. They’re all taking these still images. Of course, there is the difficult thing of stitching them together nicely for Street View. But we’re going to be able to extrapolate structure data that serves to create our maps by taking these lot long coordinates from the moment that these pictures were taken, all these pictures, and actually derive map data from that. Freaking amazing!
+
+David: Incredible engineering project. It takes a little bit of time as you would imagine, but they have to drive their cars around all of America to get it. But by October 2009, they acquired VuTool in early 2007. Back to October 2009, Google boots out NavTeq and Tela Atlas and they are official only using their own Google data for apps. I’m remembering this is when I was at the Wall Street Journal, it was right around then that they open up the business side of the Google Maps API and they start charging to license out the map’s API.
+
+Ben: Continuing Ben’s quest of playing with mapping software in real time while doing the episode, there’s a really cool feature you can do. Because these cars are still actively driving around all over the place, capturing all this data, where you can actually in Street View go and change the year that you are looking at. In the top left corner, if you hover over the little clock, you can adjust—I’m on Mercer right now, in Seattle—from 2015 to 2019. Even in those few years, it’s crazy to see how much the city gets built up and how much that road changes.
+
+I think on average, roads tend to have four or five years of historical data there. But it is like the coolest thing to go in this time machine and look at what they captured today versus what they captured—I can go back to 2014 over here. It’s wild to watch the change over time.
+
+David: I didn’t know you could do that. That’s really cool.
+
+Ben: Yup. I found it in a deep way too much time on the Internet, Google images, going around session.
+
+David: Apologies for the multiple jumps around in timeline here. As recently, Google Maps has just become such a foundational product and technology to so many things. I’m sure what is on everybody’s minds and people promptly remember going back to the ZipDash acquisition is mobile, what’s going on with mobile for Google Maps. Let’s go back again to 2007. 2007, great year. Year I graduated from college, but what else did happen in 2007? It was also the year of the Jesus phone.
+
+Ben: iPhone.
+
+David: Remember it was called the Jesus phone?
+
+Ben: I do, yeah.
+
+David: If any phone was a Jesus phone, it was the iPhone. People probably remember when the iPhone shipped, there were no third party applications on it. Everything was built by Apple but there were two apps that weren’t entirely built by Apple and did have third-party back-ends, and those were Maps, powered by Google Maps and YouTube, powered by YouTube.
+
+Ben: And those beautifully skeuomorphic images, like YouTube was that old TV instead of the YouTube logo.
+
+David: I know. We’re going to be talking about Mr. Forestall in a minute here. This must have been in 2006. By this time, John Hanke of Niantic fame had become the VP of the Geo group. Both Earth and Maps were reporting up to him. One day, according to him, he’s at his desk at Google, the phone rings, he picks it up, and it’s Steve Jobs. So many episodes of Steve calling people on Acquired.
+
+It’s a quote from John. He says, “Steve Jobs called me at my desk to ask me to help out on a project. He wouldn’t tell me what it was, but of course I knew. We worked closely with Apple to get Maps ready for the launch of the first iPhone which opened up so many possibilities.” At iPhone launch, when Steve Jobs announces it on stage in January 2007, like we said, Maps and YouTube are the only third party apps on the iPhone, except they’re not really.
+
+What happened was, they work closely with Google and YouTube on these, but it’s actually Apple engineers and Apple designers that are building the apps based on the back-ends and the APIs from Google. Google has no control.
+
+Ben: I think about that time, how there was no iPhone SDK. There was no separation between being a platform engineer and being an application engineer as far as iPhone OS went. Of course it had to be Apple engineers because there were APIs that were optimized for performance. You are writing directly, interfacing at a very direct level. I need to be really careful that you weren’t doing anything that would just cause the app to crash every time or worse, something to the operating system level.
+
+David: Love to see if we can find a link too in the show notes. There’s great retrospectives and histories with people. I think on the 10th anniversary of the iPhone talking about how duct tape it all was together in the first version.
+
+Ben: Especially that on-stage demo. Where it was actually three different phones that were used during the course of it because it can’t all work on the same phone.
+
+David: Yeah and they choreographed the entire thing. If Steve touched one thing at the wrong time or where it went off script, the whole demo would crash. Anyway, Apple is controlling everything about the UI of Maps on the phone. Google’s just providing the data. But of course, Google is also working on the smartphone of operating system of their own in Android, which they acquired in 2005. 2004–2005 was a big time of acquisitions for Google. We of course covered that on our Android episode. Then in 2008, when Android launches, of course it has Maps and Google Maps on it. And then when they update it in 2009, the next year with Android 2.0, Google adds turn-by-turn navigation to Maps on Android.
+
+This is huge. People knew at the time, this was the death knell of Garmin, TomTom, NavTeq, and all of these companies. I didn’t go back and looked it up, but I think their stocks dropped to 30% on the day of announcement. They’re worthless now.
+
+Ben: Meanwhile though, the Google Maps for the iPhone, you just see you blue dot. You know where you are, you can get a list of directions but you can’t get anything live.
+
+David: Remember in tapping through like, “Oh, I’ve made this turn now, now I’m going to tap it. I’m going to go [...] the next one.”
+
+Ben: I’m going to tell the phone that I have moved. Barbaric!
+
+David: Who knows what was going on in discussions between the two companies? You could paint a picture where Google wanted to add turn-by-turn navigations to maps on the iPhone. But they couldn’t because they didn’t control the UI. But then, as the two companies start fighting over the smartphone wars in this era, the turn-by-turn navigation is a killer, killer feature for Android. There were turn-by-turn apps available on the App Store for iOS, but they were $50 or $100 that you had to pay. Remember that?
+
+Ben: That’s right, yeah. Because I think TomTom had one of them.
+
+David: Yes, TomTom did, maybe Garmin too. We talked about this on the Waze episode which we’ll refer to in a minute. As all this is deteriorating, also I have in my notes here, remember when Microsoft bought Nokia is part of this. Oh my goodness. An era best forgotten in time.
+
+Ben: That was just like arbitrary dig. You just dug that out of nowhere, just [...] dig.
+
+David: I know. I just see that we haven’t talked about it on Acquired yet and I feel like it had to come up at some point in time. Time marches on, we get to 2012.
+
+Ben: Just mean.
+
+David: I know. I’m sorry, but really, Nokia?
+
+Ben: 2012.
+
+David: We get to 2012. Summer time 2012, it’s Dub Dub (WWDC) and rumors are swirling that Apple is going to make a major move in the wars with Android. They’re going to release iOS 6. Major update and the mark key feature is they are booting out Google, they are launching their own mapping service, Apple Maps. It’s going to be insanely great. Who comes out on stage to introduce it but Scott Forstall. We won’t be harsh. I mean, it’s so hard to build a mapping service.
+
+Ben: Especially one where you’re just starting 10 years after your competitor.
+
+David: Yeah. Everything we’ve talked about on this episode from Where 2, to Keyhole to ZipDash, all the work internally, to Street View and VuTool, all of these over the years, all these engineering that Google has put into Maps. I don’t know how long they were working on Apple Maps internally.
+
+Ben: I’m sure a couple of years. I’m sure that they realized it was a huge thing. They had cars driving around people were posting pictures on macrumors.com of the Apple cars driving around. They were definitely putting a huge amount of money and effort.
+
+David: But in the meantime, Google was doing not only all this engineering but they had billions of people, probably hundreds of millions of people at this point in time using their services and getting all that data back from them. When Apple Maps finally ships in September 2012 with the release of iOS 6, Google Maps is gone. Google’s completely booted out. You cannot get Google Maps on the iPhone anymore. Your only option is Apple Maps or a third party application of which Google is not on there.
+
+Ben: Apple Maps did have turn-by-turn.
+
+David: Apple Maps did have turn-by-turn, but if you followed the turn-by-turn directions, you might not necessarily end up where you wanted to go.
+
+Ben: Reminds me of that episode of The Office where Michael drives into the lake. “The machine says!”
+
+David: Totally. There were stories of this happening all over the world. The only thing worse than not having turn-by-turn navigation on your map app on your phone is having turn-by-turn applications that sends you to the wrong place. Within days of this happening—we covered this on the Waze episode—Apple apologizes, letter from Tim Cook.
+
+Ben: Letter from Tim Cook not from Scott Forstall.
+
+David: Not from Scott Forstall.
+
+Ben: The writing was on the wall there.
+
+David: The writing was on the wall there. Skeuomorphism in total is removed from Apple. And as part of the letter, Tim says, “We recognize this is unacceptable. We are working to make Apple Maps better. Here is a list of third party applications that you can get in the App Store that are alternative mapping applications to use in the meantime.” One of those that he list is Waze. Of course, we covered this on our Waze episode which everybody can go, listen to for the history there. What everybody wants is Google Maps. Google Maps is the best.
+
+Ben: They hadn’t done the rewrite for iOS yet.
+
+David: They had not. Remember, Google was caught flat footed here. There was no team internally that had built Google Maps for iOS. Again, this was September 2012, when this happens, on December 12, 2012. Three months later, Google ships a third party application to the App Store of Google Maps and it’s incredible.
+
+Ben: It’s amazing. It’s so good.
+
+David: It’s so good. It is complete feature parity with Android Google Maps including turn-by-turn navigation. In many ways people think it was, at the time, better designed, better looking, better flow. Within two days, it is installed on over 10 million iOS devices. It is like a tall Google drink of water in a desert.
+
+Ben: Two quick personal stories on this. One, I remember the halls of Office for iPad or the Apex team at Microsoft World buzz when this came out because everyone is downloading it, everyone is analyzing their user interface paradigms. This was the first time that Google had really nailed that trade-off of distinctively Google but sensibly iOS. It was their first of many really great iOS apps that felt Google-y but also felt iPhone-y. All of us were tearing it apart and trying to understand, should we be taking cues from this in Office for iPad.
+
+The second fun personal story there is the team that built that app was actually Kirkland-based. It was Google Kirkland. It was a small team, I remember there are four core people on the team. I went to a presentation by them on how we built Google Maps for iOS three months after they launched it. They basically said, “Look at the whole API surface is already written for Android. We just needed to be really good iOS engineers and connect to the right services. Not that it wasn’t that hard but it actually was architected really nicely for us to just make an iPhone app that we just had to be objective C experts.” They really shows the power of all the work that Google has done to this point that just in the few months there they can make something really nice.
+
+David: Two things purported from Playbook and we can mention them again then but to talk about them in a moment. One, all of this episode just highlights people talk about Google being an engineering-driven organization and having incredible engineering resources and talent. This is it. Better than anyone else on the planet, nobody else could do this. Everything that they did with Maps over the now 15 years that it’s been around, the incredibly architected back-end and API surface, such that within three months, a team—that is an incredibly talented team—can build one of the best iOS applications in the world at that time and use this API back-end and not need to worry about it, and then ship it to the App Store and now, Google Maps is one of the most downloaded and installed iOS apps of all time. Pretty incredible.
+
+Ben: I also remember one big thing that made it so good was when it was still the Apple version. Apple’s app was connecting to an older back-end that used these static tiles and had to re-download new tiles for whatever zoom level was. Whereas when Google regain control over the front-end by being able to ship their own app, they could connect to their V2.0 or whatever that was APIs that actually had the vector maps. Suddenly, all the scrolling was much smoother and zooming.
+
+Actually, this is when they introduced that gesture. For anybody who hasn’t used this, if you don’t use this and you’re learning this from me for the very first time, this is going to blow your mind to make your life better. Instead of pinching on Google Maps, you can actually double tap and then move your thumb up or down to change your scroll level. You can use zoom one handed by just holding your phone instead of holding it with one hand and pinching with the other hand.
+
+David: Oh, that’s awesome! I did know that but I’d forgotten that. That’s huge.
+
+Ben: Life changing here on Acquired.
+
+David: We’re going to end history and facts here. Definitely go check out our Waze episode, our Android episode to hear more of the history around this. Waze especially picks things up from here because Google, a couple of months after this, Waze gets a huge traffic boost and download boost from Tim Cook’s letter where Waze is one of the applications he recommends. Rumors start swirling that Apple’s now going to now buy Waze to fix their mapping problem. Then the rumor starts swirling that Facebook is going to buy Waze because they want to be an Internet portal too and have a mapping solution for some reason. Ends up, Google buys Waze for $1.3 billion in June of 2013. Then progress marches on until today.
+
+One last little coda before we leave the history and move on to Acquisition category. I think this was one of our carve outs on the Zappos Sofft episode with Alfred Lin. Justin O'Beirne did three wonderful, wonderful long-form blogpost in the last couple of years comparing the development of Apple and Google Maps over the last few years. We’ll link to them on the show notes. But if you’re really into all the technical aspects and detail minutiae of mapping and business models around this, go read Justin’s post, they’re really, really great.
+
+Ben: I’ve got a couple of fun catch-ups from this story today. The first is, what did the Rasmussens do at Google after moving on from Maps?
+
+David: I know the answer to this. The real question is, do you know what Lars went and did after this? Of course what they go and do is…
+
+Ben: Google Wave.
+
+David: Google Wave. I remember when that was launched.
+
+Ben: I was so hyped on that. I watched Lars’ live stream of here is the platform that’s going to change the freaking world.
+
+David: It was super cool. One of the main meta themes on Acquired that we keep talking about is the tech world is a small place, old ideas are new again, everything comes around. They were right, they were completely right on the need for this. The product that met that need was Slack. It was not Google Wave.
+
+Ben: Sort of. It was like Slack plus Notion. It was like a document surface in addition to being chat.
+
+David: That’s true. The interesting thing about it was it just that the timing was wrong? Was it that they got the product wrong and trying to be Slack plus Notion all in one product? We’ll never know necessarily. But, yeah, Google Wave. Then, do you know what Lars went and did after Google Wave?
+
+Ben: I know the company that he started, that he’s running now.
+
+David: Before that.
+
+Ben: Oh, I do not.
+
+David: He went to Facebook. I don’t know if he conceived dev and launch but he was a key executive on Facebook for Work. Which is Facebook’s attempt to compete with Slack and [...].
+
+Ben: Which we have heard from listeners. We may have denigrated Facebook for Work in the past. We’ve heard from some listeners that they really like it, and that has rolled out at scale inside their organization. It’s definitely a quietly large and successful product.
+
+David: Yeah, within Facebook. Super fun.
+
+Ben: Lars’s new company is called weav.io. Weave not to be confused with Wave. It is a musical BPM syncing service that their first thing is a running app, that I’m [...] to try out.
+
+David: You’ve been doing a lot of running lately.
+
+Ben: It’s true, very true. And then one last update. The fourth co-founder of Where 2, Noel Gordon is the only one of the four who is still working at Google. Their fourth co-founder retired a few years ago, the Rasmussens obviously are gone but Noel Gordon is still a Google-er.
+
+David: Incredible, 15 years later.
+
+Ben: Yup.
+
+David: As we move on to Acquisition category.
+
+Ben: Yup, let’s do it. I think it’s a technology acquisition with Where 2. Walking through this listeners, this is where we select whether the acquisition was primarily done or the main value that was acquired was people, technology, product, a business line, asset, which is what we decided that Waze was, since it was sort of the data that Waze contained and the data that would be generated an ongoing business in the future, or other which gives us the ability to come up with new stuff every episode if we want to. I think this is pretty squarely a technology acquisition that they transitioned into launching their own product.
+
+David: That makes sense. You could make an argument for product. It was Google Maps, they launched it, it stayed as Google Maps. A lot of the work and building was done within Google. It was the technology that they acquired, that lead to this.
+
+Ben: All right. What would have happened otherwise?
+
+David: That’s a really good question.
+
+Ben: Could Google have done this internally without buying Where 2 and would it have been successful if they did without the Rasmussens and the rest of the Where 2 team?
+
+David: I’m thinking Keyhole and ZipDash? Maybe they would have gotten there internally eventually, but there were so many other things going on at Google at this point in time. The IPO obviously, Gmail, everything that was happening, they have YouTube, which of course they acquired, Docs. They certainly wouldn’t have moved as fast. And then you think about VuTool and acquiring Street Maps.
+
+Of course, what we didn’t talk about then is Sebastian Thrun goes on just like all of these alumni to do so many amazing things. Founded Udacity, started Google X within Google, and then of course Waymo, that whole division and Google’s Autonomous Car Division comes out of that. We’re really threw rocks on this episode, but I don’t think Yahoo! would have come up with all of these.
+
+Ben: There wasn’t a logical other acquirer for them. Facebook was too early and apparently made some decision that they didn’t care about owning Maps at some point. I think they use Bing Maps as their solution now.
+
+David: I remember that.
+
+Ben: Apple was almost a decade away from doing anything here. If they were going to sell the company to someone, it was probably going to be either Google or a legacy player. Then I guess the other what would have happened otherwise is what if they had raised this [...] money and what if the timing had been different just enough so they could actually close the deal. This is actually a good question. Did Where 2 need Google in order to be a successful mapping product or could Where 2 have been its own thing?
+
+David: Because if this we’re playing out today, SoftBank would have invested hundreds of millions of dollars in this company.
+
+Ben: Literally SoftBank invested $300 million in Mapbox.
+
+David: We have to go back to what was happening at that time. I don’t think this could have been an independent company.
+
+Ben: Did they need Google for distribution?
+
+David: Maybe, maybe not. I agree with Sequoia’s decision to ultimately pass because maybe they could have gotten distribution on their own. Certainly Flickr did, certainly YouTube did, although both of these companies sold and sold way too early. They could have been built as standalone companies.
+
+I think the problem here was the reliance on NavTeq and Tela Atlas data. If you’re an independent startup, are you going to be able to negotiate with them? Especially since users are not going to pay for the product. It has to be a free product because MapQuest and Yahoo! Maps is free. You’re not going to have a business model, you’re going to have to license all of these super expensive data and the genius business model that Google ends up developing the API here, that you can’t really monetize until you free yourself from that data, and you can’t free yourself from that data.
+
+Ben: You think that’s the business model.
+
+David: Yes, certainly local advertising is the primary business model, but you’re going to be hamstrung by that. I think at the time have been really hard to do as an independent company because there was no way, even if you went public, you couldn’t raise the amount of money that companies can raise now. They just wouldn’t have the access to capital to do this.
+
+Ben: The Google has run this in the red for at least 10 years, maybe more. There is no way that they would have had a leeway to do that as a private company in that era. When I say in the red, like way in the red. You think about the operational cost of driving a lease van around or paying someone else for that data which wouldn’t have been as good as the data asset that Google has built up.
+
+David: Back to satellite for a minute. In 2014, Google acquired SkyBox Imaging, which is a satellite company. Google is now owning, operating, and launching satellites into space to do all of this. Could a mid-2000s startup have done this all independently? Hard to imagine.
+
+Ben: I think you’re right.
+
+David: We’re moving to PlayBook?
+
+Ben: Yup, let’s do it. It’s been a while since we did a classic Acquired episode of analyzing a big company that bought a small company and then grading if that was a good use of capital or not from A to F. So, I went back and cloned an old script, and my old one said tech themes, which, of course, we call the playbook now because when we used to do this section, we were just obsessed with abstractly what tech themes are there here. We’ve definitely become more interested in what are the learnings from the actions that Google took and Where 2 took here that we can extrapolate to use in future investments, companies we start, companies we work at, so here I have playbook, formerly known as tech themes.
+
+The biggest thing that I’m taking away here is that Jens saw the future that there could be a geovisualized search results page and this is an important distinction from turn-by-turn directions with a map. If you have a rich canvas map, it’s a full experience, and in the future screens will get better, speeds will get better, all the technology will get better, a map is actually a great platform interface for other things, particularly search.
+
+I think it’s important to think about that when considering startup or product ideas. This is not a direct competitor to MapQuest. This has the potential to be something very different because we’re going to build it in such a way where I can be so much more than what MapQuest is.
+
+David: There’s two thoughts on that. One, just the power of the interface is not just search. It’s not just Google Maps. It’s Uber, it’s DoorDash, it’s Zillow. None of these businesses would exist without Google Maps and without this user interface paradigm. The other thing that reminds me of this, I’m trying to remember who said this to me. I think it might have been Kurt DelBene, way early days Acquired guest, former venture partner at Magenta when we’re all there, and now Head of Strategy at Microsoft.
+
+We’re looking at the company and I remember him saying to me, “It’s very rare that you find a product or a company or an idea,” thinking in terms of an idea, “that the more you think about it, the bigger it gets. And this is one of those ideas. They’re extremely rare and they often come in camouflage, but when you find them, that’s the time to go big.
+
+At this moment in time, as we were saying, there is no way to go big as an independent company. The only way to really do this is was part of Google. Maybe Microsoft could have bought them or something, but really Google was the natural fit here.
+
+Ben: At this time, exactly?
+
+David: At this time, yeah. This is actually a big part of our jobs as venture capitalists. Everybody might think they have an idea like this, but are you really, really intellectually actually honest with yourself and can people around you evaluate whether this truly is an idea of this category of which 99.9% of ideas are not? If you do have that, today you can build it as an independent company and today, you can become an enormous platform in and of yourself.
+
+Everything comes back to SoftBank, but for all the funny high jinks around SoftBank—we will cover many of them in the coming We [...] IPO episode—this is the thesis that with ideas like this, you can now fund them and build large independent companies and not have to be YouTube and sell to Google for $1 billion.
+
+Ben: It’s a good point. I can’t remember if we talked about it on the show or not, but I feel like you and I had a conversation four or five years ago and I remember having this conversation a lot and saying, “Machine learning is becoming equivalent with software,” in a way that in the early 2000s, you said, “We’re software,” and the late 2000s you said. “We’re an Internet company.” In the early 2010s, you say, “We are a machine learning company.”
+
+It’s table stakes to build a technology product, especially a large-scale one is to use machine learning in some way. I remember having this fear and definitely we both talked about this that startup innovation was capped because the big companies had all the data and the best products were going to be built by Google and Facebook, not because they had the most money—but also that—but because they had the most data.
+
+Exactly your point. For all the high jinks and criticism of SoftBank, it enables this way to flank that. Okay, but what if you had half a billion dollars?
+
+David: Or what if you’re DoorDash? What if you have $3 billion or $4 billion? How about that? Can you compete?
+
+Ben: It does, actually. In a world where data moats have become incredibly important. It does actually allow for startups to continue to have the ability to compete with these big companies.
+
+David: Yeah. At the risk of being too waxing poetic here, which you can definitely accuse us on Acquired all the time, but to zoom way out here, I think it’s really cool. We started the show in 2015, so we’ve been doing it for four years now, and we’ve witnessed and the show has been chronicled all the changes that have happened of exactly what we’re talking about. When we started, we were focused on acquisitions, acquisitions that actually went well, and then acquisitions.
+
+At that time, people thought, “If you were to think about it, yeah, you can build big, independent companies.” Of course Facebook did and whatnot, but as VCs and as founders you were still like, “You know? Yeah, I could build something. I could get that half a billion, billion dollar acquisition,” and the whole venture landscape was optimized around that, most “early stage” funds were in the $200 million to maybe at the outsize $500 million fund size, so a billion dollar acquisition of a portfolio company, that really was meaningful. Today, that really completely changed and you see on the show.
+
+Ben: And to really dig into that, let’s say you own 10% at exit. That means you have $100 million return on that company if your fund size is $200 million. Ideally, it shouldn’t be your biggest exit. You should have an exit that’s 2X–3X that size to really make the portfolio math start to pencil.
+
+David: You could string together a number, though, and you could have a good fund. It’s been a long time since we’ve covered an acquisition on this show. Most of what we do are IPOs or just stories of great companies because now, the opportunity is to build a great company. There’s so much more capital available, not just from SoftBank, but from Sequoia, for instance, which we’ll talk about more on this season, just raised $12 billion global growth fund. So many funds, new entrants, and all sorts of things, and the goal is really find these types of ideas and build them into really large independent standalone companies.
+
+Ben: Yup. There’s a few other topics I want to touch before we go to grading. One is something we didn’t talk about but was actually a really big piece of value creation for Google Maps, which was Google Map Maker, and Lars talked about this in a talk that he gave 6–7 years ago. It’s an old YouTube video, 3000 views, but basically, in order to build out maps, especially before they had all the cars driving around with cameras really operationalized, they got a lot of their early data from relying on the passion of locals who I think were called Google guides or Google local guides, who wanted to improve digital maps for their area because they saw this dream of, “Oh my God. My area, no matter where I am in the world, should totally have a really rich, robust digital map for it.”
+
+They figured out this great system of appointing local guides and earning points. Community leaders emerged to really build the maps for their area. Totally, the power of UGC, of user-generated content business models where you can organize people to do something that benefits them. People were excited to use the maps but also have a little bit of street credential of being a local guide. Your vision is big enough and your vision is, “I want to make the world better in this way. Everyone should be able to digitally view a map of their area because of all the benefits that come with that.” You can get a crazy amount of stuff for your business for free in a sustainable, updatable way, and for a long time. Google Map Maker is not a tool anymore, but they still have variants of this with people and local communities updating information for them.
+
+David: You can claim your business and update all the info on it.
+
+Ben: Another point that I wanted to make was Lars, in that same talk, talks about how difficult it was for them to recruit to Where 2. It was the four of them. They wanted to hire all of their engineering friends. They couldn’t because everybody thought that they couldn’t make money from maps. I think it was even difficult to recruit once they got into Google because the canonical wisdom was there’s not a business there. As we’ll get into here in grading, there was. It was just 15 years later.
+
+David: Yeah, so lucky that Bret Taylor was already working on this and was the natural person to move over and help make this happen. You have to imagine adding a truly excellent PM to the team of engineers like that had a lot to do with how fast they shipped and how fast they iterated.
+
+Ben: Do we want to do value creation, value capture before diving into grading?
+
+David: We could probably devote a whole episode to this here between the wars between the platforms, the moat that Google has built because of all this, and how hard it is to compete [...] to Mapbox, which has potential, but that’s a large hill to climb to compete with Google Maps here, and especially the Waze acquisition.
+
+In the current antitrust environment, would that have been allowed to happen? Probably not or at least it certainly would have been scrutinized a lot more than it was. I guess it’s a long-winded way of saying Google Maps is a perfect example to me of the kind of thing that Ben Thompson has been talking about a couple of years now, of antitrust needs to evolve in the current environment because Google Maps has created so much consumer surplus, it’s free to use as a consumer, its incredible benefits to so many people’s lives and so many other businesses. And yet because of that, it has this moat where it’s effectively a monopoly and it has been allowed to continue to purchase other startup competitors to it. What does that mean for the future of innovation in the space?
+
+Ben: But no doubt in my mind, massively massive value creating for the world that this product exist and that this acquisition happened.
+
+David: Zero doubt. The interesting thing is that it has created so much value for the world, does that enable Google now to capture so much value going forward that it becomes a problem?
+
+Ben: Which is a great way to segue into grading. A lot of times, the way to think about value creation value capture is a fair trade is to be able to capture 10 percent of the value that you create for your customers. At the very start of Maps, Google was capturing 0% and the question is how much are they capturing now from all this value that they’re creating in the world?
+
+Going to grading, this is where I want to make my case. The criteria that we use for grading, for anybody who’s joined the show in the last season-and-a-half or something for grading acquisitions, is how good of an idea was it for the big company to buy the small company? An F is they lit the money on fire. It would have been better off in their bank account doing absolutely nothing or perhaps even buying a company that did less worse.
+
+David: Are you referring to a burning platform?
+
+Ben: AOL Time Warner or Nokia or a variety of companies. An A+, Instagram is our shining example, Booking.com is a great one, too. The Priceline Group buying that, where you spend money and it becomes an enormous part of your business. Instagram, actually some great data bit that came out today, thanks to some reporting by the information. Facebook bought Instagram for $1 billion and Instagram revenues were expected to surpass $10 billion in 2018 after hitting $1 billion just two years before. The enterprise value of Instagram is one to $400 billion?
+
+David: What is that? That’s over 300% annual growth over the last two years starting from a billion dollar base? Oh my goodness.
+
+Ben: Yeah. That’s what an A+ looks like. Let’s think about this. Let’s start in the abstract. Google’s mission is to organize the world’s information and make it easily searchable. What Maps does really is it organize the world’s information geographically. It’s this really, really nice extension of their mission.
+
+Another thing to keep in mind for context here is to remember that Google, despite being in cloud computing, productivity, mobile operating systems, making phones, making laptops, making home assistants, and all these other bets, 84% of the revenue for Google still comes from advertising revenue. Four percent is Google Cloud, which they just started breaking out and 12% is this others. So, when you think Google as a business, it is ads and most of the ads is search ads.
+
+David: Does that include YouTube ads, too?
+
+Ben: Yes. YouTube ads are included. YouTube ads and Maps ads are included in that 84% of revenue, considering advertising, but what they don’t break out is what is search advertising. They have at different points in time alluded to it, but it’s not in the regular financials to break out YouTube advertising versus search advertising.
+
+Advertising is still the cash cow. In one decent allegory, Maps is a lot like Facebook acquiring Instagram. Granted, Maps didn’t come with its own user base, but in the sense it lets their existing advertisers have access to more inventory and new and creative ways to reach users where they are. YouTube is similar. YouTube actually is estimated to be worth $160 billion according to Morgan Stanley estimates.
+
+David: We got that episode wrong.
+
+Ben: David, it is time for us to go and revisit YouTube. We analyzed that business and said, “As best we can tell, it’s still a break-even business. It still is extremely expensive to run.”
+
+David: We just did the episode too early.
+
+Ben: Yeah. Well, the funny thing is we did the episode like value investors. What are the growth margins on this business and will it even actually generate a profit? We should have been doing it like tech investors or public market investors who are willing to buy these IPOs, who are saying, “Wow. Look at how much revenue they’re doing. That’s $160 billion market cap company right there within Google.” It’s being a little facetious, but it really speaks to the difference between trying to value a business based on what you thinks it’s either [...] economics or gross margins are today and what you believe that scale will be able to let that business accomplish in the future.
+
+Here I am making this case that Maps is like YouTube, which is like Facebook buying Instagram, which is take your existing advertisers, give them a new way to reach existing customers in a new inventory format that’s valuable.
+
+So, what are the equity researchers think that Google Maps is doing as a business? Baird Equity Research has estimated that in 2016, Maps could do $1.5 billion in revenue, and then in 2017 they estimated that as soon as 2020, Maps could do $5 billion in revenue and you really start to see this business emerging where people are using Google Maps as a place to go for search.
+
+It’s a different kind of search. It’s not, “What lawn mower should I buy?” That’s all happening over on Amazon, but they’re really using it for, “I need to find something around me,” and they’re very open to suggestions.
+
+Last year or two years ago, Google launched promoted pins on Google Maps. They just issued a change in the last six months and made those larger and more prominent, but they’re really starting to think about using the Google Maps surface much like search results surface.
+
+David: Yes, and a total aside here. Feature request for any Google Maps folks who are listening right now. I still use Foursquare for restaurant, bar, café discovery.
+
+Ben: I think you’re weird in that.
+
+David: Okay, but here’s why for Google Maps folks who are listening. I hate the five star rating system of both Yelp and Google Maps. I think it’s completely useless and doesn’t give me any actual information. Foursquare has a 10.0 rating system.
+
+So, when I run a search on Foursquare, they have two features. One, you can use your finger to draw a geo-fence of where you want to search. I still don’t think you can do that on Google Maps. For me, I’m looking for a restaurant in a very specific area that is not a rectangle, that I can get to with Maps zoom.
+
+Two, the ability to differentiate between quality at that 10.0 granular level is super important to me because everything is a four star and that just means I can tell Foursquare, “Show me ranked on a 10.0 scale within this very specific geo-fenced area that I’ve drawn, what the best cafés are.” that is much more useful information to me than the current way you can search for such things on Google Maps.
+
+Ben: It’s a great feature request and actually, I looked up last night to see what’s Yelp do in revenue. Last year, they did about $1 billion. That could also be Google’s revenue. I can see a world where Google Maps continue to get better and better. They encourage people to do more and more local searches there. They control the operating system so they could get a little more heavy-handed for how most people or at least 50% of America and most of the world begin to look for things in the real world.
+
+It seems very plausible to me that there’s $5–$10 billion of advertising revenue that Google could see come from the mapping product. If you’re looking it at that way, it could well be as big as an advertising platform as Instagram is.
+
+David: Yeah, then you have the API licensing. I haven’t dug into the finances there, but—
+
+Ben: It’s tough. The new pricing is $7 per 1000 requests. So, it’s a $7 effectively CPMs. DoorDash is paying $7 per 1000 times someone looks at a map, and there are five million customers with API keys for Google Maps. So, tough to quite understand how much of the Google Maps business is attributable to the API versus [...].
+
+David: But the potential is there.
+
+Ben: For sure. When I look at this versus Waze, let’s say this acquisition—just to put a number in the air—Where 2 is maybe $10–$20 million. Waze was $1 billion. You look at the revenue potential from Maps and probably what they’re doing now being single digit billions. Maybe in the next couple of years getting to $5 billion. It’s a much better revenue business that would generate a lot more revenue from Google Maps than they are from Waze and they pay a heck of a lot less for it.
+
+Now, of course, the amount of billions of dollars they’ve poured into building the asset over time, that’s actually the right way to analyze this. Just from the acquisition itself, paid way less to buy the company, and seeing significantly more upside than Waze.
+
+David: In this case, it’s truly warranted to say the financial aspect is only one part of grading here and probably not even the most important because it’s everything we’ve been talking about. This is fundamental infrastructure for so much of the Internet and beyond the Internet going forward as you think about autonomous vehicles, if and when they should ever become mainstream, that this asset is so valuable. We know it’s $37 million for ZipDash and Keyhole. Add, say another—
+
+Ben: It’ almost silly [...]. They probably spent how many billions of dollars really creating it.
+
+David: But as we talked about, if they hadn’t bought these companies, I don’t think it would have bubbled up internally, certainly not as fast to be working on these things, and the moat that they have, they’re going [...] pieces called Google Maps moat. The moat is so wide at this point. They have years and years of advantages over any other competitor and that gap keeps getting wider.
+
+Ben: It’s funny you mentioned self-driving cars because if we have done this episode a couple of years ago, I would have been more inclined to grade on how helpful has it been to self-driving cars, but in spinning way more out and that marketing developing slower, then we all thought it might [...]. And it feels like Google is not necessarily a clear winner there. I feel like less of the value that Google Maps is going to provide is coming from self-driving cars in the next five years.
+
+David: That maybe true, but what’s interesting, though, is to me it comes back to the API. Forget self-driving cars. What about Uber? What about Zillow? How many more businesses are going to be built on the Google Maps API? I don’t think we’re done yet.
+
+Ben: No. I think you’re totally right. This is an A for me.
+
+David: Yeah. Add for me, too. The question is, is it an A+? With Instagram, on every dimension—strategic, asset-based, and financial return—it’s a knock out of the park.
+
+Ben: The reason why I think this is an A and not an A+ when you just compare it to Instagram is, Instagram is a pure tech business. They’ve built an incredibly asset-light thing that’s pretty easy to maintain, even though there’s tons of people working on it. Basically super high fixed cost, almost no variable cost, and except for cost of revenue to go and acquire the advertisers that are putting the ads on it.
+
+Crazy high-gross margin business? When you look at this, the maintenance cost of keeping the maps up-to-date, to adding the expected functionality, to doing all the stuff in the physical world, it’s meaningfully high.
+
+David: I’m with you. So, our only A+ has remained Instagram and next?
+
+Ben: I think Booking.
+
+David: Was Booking an A+ or an A?
+
+Ben: If it was then we were wrong.
+
+David: Okay. Either actual grading or revised grading, the A+ [...] is next Instagram and Booking?
+
+Ben: Yup.
+
+David: Maps doesn’t quite make it, but it’s very close.
+
+Ben: Doesn’t quite make it. And we’ll see over the next few years, too. I think it could emerge. The two big takeaways are one, its fundamental structure to the Internet as we know it today, that they’re going to monetize through charging for that API, and two, it’s an ever increasingly common, basically new search page. Google makes all their money on the search page.
+
+David: Yup. There we go. Very compelling argument. Do you want to do a bit of a follow-up?
+
+Ben: Yeah. I mess something up on the Shopify episode that I want to talk about. That is our last episode not including the quick take that we took on DoorDash. That was Shopify actually powered $41 billion of sales last year, not $14 billion as discussed towards the end of the episode. That $14 billion number that we talked about was the fourth quarter number. I guess we way discredited the incredible amount of commerce that Shopify powers.
+
+While this changes the analysis of the value captured that we did at the end of the episode, where Shopify actually only captures 2½% of the merchant sales as their own revenue, not the 7%, which admittedly is very different, I don’t think it changes the overall sentiment that we had on the company as discussed in the episode. Any thoughts on that, David?
+
+David: The only thing I’d add, especially given this episode and we’re talking about the platform that Google Maps has built and the ability for empowering companies to be built on that platform, I’m starting to think Shopify actually has a similar opportunity that you could think about.
+
+I think you might be able to build really big companies that use Shopify and Shopify’s customers as a platform and in particular Shopify fulfillment that was just launched, which is not them doing their own fulfillment. It is a wide-open door for new logistics and fulfillment providers to come in and serve all of Shopify’s customers with a very easy distribution channel and customer acquisition. I’m even more bullish on Shopify’s potential as a platform.
+
+Ben: Yup, very much agree. Interestingly, that’s predicated on their being a huge totally addressable market out there. If you think about this, Shopify is not a marketplace business. It’s not a [...], but if you think about it this way, they capture 2½% of the value that they create as their own revenue.
+
+If you think about Uber, Uber captures close to 30% of the value that they create as revenue for themselves in the form of a take rate. That marketplace is a signed where the platform itself is doing a lot of the work. If you look at Airbnb marketplace assist, do you know what the take rate there is, David?
+
+David: It’s about 14%, at least historically on average.
+
+Ben: So, less of the value is being provided by the platform than Uber because Uber actually assigns you someone. When you bring supply to demand, you’re entitled to take much more of the economics than if you just provide a platform and then say to someone, “Go find your own customers.” That is an interesting takeaway for me in analyzing the percentage of total value there capturing.
+
+David: Yeah. It comes actually at the end of the Shopify episode which we talked about. It’s not a network effect business, although there’s network effect aspects to it. It’s platform and it’s Bill Gates’ definition of a platform is you are capturing far, far less of the value that you are creating, and what’s cool about platforms like Google Maps is they provide a wide open opportunity for businesses to be built on top of them, especially marketplace businesses.
+
+If you’re building a marketplace business on Shopify or anything resembling a marketplace business, please come talk to me. That’s my play.
+
+Ben: And that you are entitled to. Carve outs?
+
+David: I’m going to do a mashup of one of your recent carve outs, which is The Expanse. I’ve not yet watching the TV show. I want to read the books. I started reading the books of The Expanse series. They are so good. I finished the first one, I’m in the second one. I think there might be nine in total, so it’s going to keep me occupied for a while but really, really great stories.
+
+Ben: I heard the books are great. I did the [...] thing and watched the TV show. It’s good.
+
+David: Watch the TV show eventually. Books or TV show, take your pick. Great sci-fi stories.
+
+Ben: Yup. David, as you alluded to early in the episode, I’ve been doing a lot of running recently. I ran my first marathon on Sunday, this past weekend, and that means that I listen to a lot of podcasts in my training. I always thought I’ll never listen to podcast when I run, but I need something. I need music. I need that to be fast and motivating, and I can’t focus on the running.
+
+It turns out when you’re doing lots and lots of miles, having a distraction is actually pretty nice and being able to not focus on the steps is quite nice. One of the episodes that I listen to during the marathon was an episode of The Moment with Brian Koppelman, who you may remember me raving about is one of the co-creators of Billions on a previous carve out.
+
+He has this podcast. The podcast itself is very cool because he talked to people from all walks of life but really dives into creativity, creative process. It’s like lightweight psychoanalysis, but it’s a lot of making the unique work that someone does often in a very archaic way. Understandable, digestible to a broad audience. That’s very similar to what he did in Billions, it’s very similar to what he did in Rounders.
+
+He interviews in this episode Marc Andreessen. It’s really fun for listeners to this show, for myself, for David. We listen to people talk about tech, venture capital, building big companies within our own circles a lot. We get to hear it discussed to the—
+
+David: [...].
+
+Ben: Exactly. We all know what the terminology means, There are lots of expectations that we all have. There's a lot of things that you can look over to another person and know that they have the same fundamental basic assumptions that you do. Brian’s show is not like that. It’s very cool hearing Marc Andreessen explain venture capital to people who probably have never come in contact with it. It’s just a really cool and different perspective on it.
+
+David: Super cool. I have to listen to that.
+
+Ben: Yeah. All right. That brings us home. Listeners, if you want to subscribe and you like what you hear, you should click the subscribe button in the podcast player of your choice. If you want to become a Limited Partner, subscribing gets you access to our bonus show, where, as I mentioned earlier, we dive deeper into the nitty-gritty of actually building companies rather than what we’re doing on this show which is reflecting on where they ended up.
+
+If you are in the process of building a company in any way, shape, or form, we’d love to have you join us and listen. You can click the link on the show notes or go to glow.fm/acquired and all new listeners get a free seven-day trial. With that, thanks again to Silicon Valley Bank and we will see you next time.
+
+David: See you next time.
+
+‍

@@ -1,0 +1,705 @@
+Ben: Welcome to this special episode of Acquired. The podcast about great technology companies and the stories and playbooks behind them. I’m Ben Gilbert and I'm the co-founder of Pioneer Square Labs, a startup studio and venture firm in Seattle.
+
+David: I'm David Rosenthal and I am an angel investor and independent advisor to startups based in San Francisco.
+
+Ben: We are your hosts. You'll notice this is a very abnormal episode for us. I didn't say a number, we didn't talk about a company in the intro. David, what is this episode that we are doing today?
+
+David: We have a very, very special guest—an episode we've been looking forward to doing—all of us—for a long time. We have Patrick O’Shaughnessy, CEO of O’Shaughnessy Asset Management, and also the host of the Invest Like The Best podcast—one of our favorite shows here at Acquired. So excited to have him on.
+
+Patrick is a master interviewer (as we all know). He gets these amazing guests, talks all about their businesses and their stories. Other than the old episode you did with your dad, your audience didn't get to hear about you. We want to hear about your business. What is this O’Shaughnessy Asset Management thing? How did you come into this? You're a philosophy major, now you're running a quant fund. You have a venture fund. You've built this amazing podcast empire. We're going to dive all into it. Welcome, Patrick.
+
+Patrick: Thank you guys so much for having me. I'm always hesitant to do any of these because I'm scared of boring people with the same stories, but there's a mutual admiration society here. Of all the podcasts I listen to, yours is the most regular show. It's an honor to be here. Thank you for having me.
+
+Ben: Thanks for joining us. Before we dive in, if you love Acquired and you want to hone your own craft of company building, you should join the Acquired community of Limited Partners. You’ll get access to the LP show where we dive deeper into the fundamentals of company building and investing, in addition to our LP monthly calls where we talk with all of you directly. And of course, our Book Club and Zoom calls with the authors. If you aren’t already an LP, you can click the link in the show notes or go to acquired.fm/lp. All new listeners get a 7-day free trial.
+
+This special episode of Acquired is supported by Teamistry, a podcast from Atlassian that tells the stories of teens who work together in new and unexpected ways to achieve remarkable things. I'm here with Pedro Mendes, the writer and producer of the show, and John Ville, Atlassian's editorial director. Hey guys.
+
+Pedro: Hey there, Ben.
+
+John: Hey, Ben.
+
+Ben: Pedro, if there's one thing Acquired listeners love besides corporate drama and business strategy, it's outer space. Probably because David and I just gig out on SpaceX too much. Teamistry actually did two episodes about teams that accomplished incredible things in space. Can you tell us about those?
+
+Pedro: Yeah, for sure. What they both have in common—it's the first photograph of a black hole and the suits that were constructed for the moon landings for the Apollo missions. There are stories that we know the end result, but we don't know how they got there. With the blackhole story, you may have seen that glowing orange orb, but you have no idea of the decade of work to get to that point. The teams around the world who had never worked together like this. Just to put it simply, they had to build a telescope the size of the planet in order to do this.
+
+They're scratching to try to get the money and to try to get the time. The way they were able to pull it all together—the lessons that came out of that—you'll look at the images of the black hole again in a different way.
+
+In a similar way with the Apollo moon suits, we've seen the landings and we've seen Armstrong on the moon. What we're actually looking at is not Neil Armstrong. We're looking at the moon suit. We're looking at this thing that was constructed. It really hadn't occurred to me. I was like, where did that thing come from? We hear about the seamstresses, some of whom had worked at Playtex who constructed the suits.
+
+The true story of course is that there were multiple teams—engineers, scientists, folks from NASA all working together to construct the moon suits. Of course, they've never done anything like this before. No one had ever built suits for the moon before. The way they all came together is another fantastic story. What I'm really proud of is that we take you there. We take you to 1969. You experience it as if you're there with these people as it's happening.
+
+Ben: That's awesome. I actually just finished listening to this episode, and I loved the bit about the fact that these were hand sewn. It never occurred to me that the skill of incredibly uniform stitching would be so important because these suits that took us to the moon were actually sewn by these women by hand.
+
+Pedro: Yeah. It’s something that we were so pleased to be able to get the voices of the people who were really there.
+
+Ben: That's great. You can click the link on the show notes to listen to the podcast and our thanks to Teamistry for their support. Now, on to our special with Patrick O’Shaughnessy of Invest Like The Best.
+
+David: All right. Before Invest Like The Best, there was—actually, not Before Invest Like The Best as we’ll get into the first iteration—O’Shaughnessy Asset Management where you are CEO. But before that, there was O’Shaughnessy Capital Management. That was started by your dad, right Patrick?
+
+Patrick: It was. Technically in 1987, so it goes way back. For the first several years, it was a research firm, not an asset management firm. That might be a theme we refer to back and forth today, which is the combination of open research, open ideas, and asset management, and how the two interrelate. Technically, it was 1987 but began as an asset management firm in '95, '96.
+
+David: You guys still have a close relationship with RBC, right? The Royal Bank of Canada?
+
+Patrick: We do, yeah. The Royal Bank is a fascinating business, an incredible business that most people probably won't know. I've actually been lucky to be in more places in Canada than probably all but a few Canadians. Love the country and love that company. They are our largest, longest-standing client. They actually are the only outside owner of our business. They own a minority stake in our business. A deep long partnership with them has been a common thread throughout my career. There's an interesting story. Maybe we can come back to about a pivotal role they played in the first couple of years of my career in the times that I did get to see all those tiny corners of Canada.
+
+David: We definitely got to put a pin on that and come back. O’Shaughnessy Capital Management, the core insight (as I understand) that your dad had was that there was academic research around quantitative methods for investing and for screening and identifying equities. I believe equities or maybe all types of assets to invest in. Is it fair to characterize it as a data-driven approach to the old Ben Graham style, Graham and Dodd value investing? Is that a fair way to characterize the insight that he had?
+
+Patrick: Yeah. I think a common misconception about quants in general where I would count us is that we're value investors. We're not slaves to value. It just happens to be one of those things that have worked really well historically. There are other things that are very different from the value that works too. But the original work was shockingly simple and oftentimes—as I find this is the case—no one had just gone to look at data to see what kinds of stocks with what kinds of attributes tended to do well.
+
+The original version of the research was literally the Dogs of the Dow strategy, which is nothing more than taking off the 30 Dow stocks. The 10 stocks that have the highest dividend yield, buying them, holding them a year. Redoing that same rule several years later with a single trade. He was the first person to bring that research all the way back to the inception of the Dow 30. What he found was this arguably stupidly simple strategy did better than the Dow itself. And that the two pillars of that were the discipline with which it was implemented, so you never deviated from a very, very specific process or rule set, and just bought stuff for a lower price.
+
+That strategy—like any strategy that gets discovered—tends to fade in its significance, but not necessarily go away. That was the original research that kicked off our entire journey as a company way back in the '80s—with an incredibly simple, by hand microfiche collected data set going back to the 1920s.
+
+David: That's the first time microfiche has come up on Acquired.
+
+Patrick: Powerful set of stuff you can find. If you're willing to just go grind and put in the work and find differentiated data sets—people talk about this too—it's often not the modeling exercise that matters. It's the information that you're able to access, clean, normalize, and control. Not a lot of people who are at the library look in through microfiche.
+
+David: You mentioned a library. To my mind—at least a key piece of even super early in this first iteration of the firm—you guys were pioneers in marrying this investing and your approach in this whole quantitative approach with media and evangelizing too. Invest Like The Best that we all know and love today is the second iteration of Invest Like The Best, right?
+
+Patrick: It is. I catch a lot of flak for the title like it’s some corny, rhyme-y title, which I suppose it is on face value. The reason I named it this was my dad's first book—he’s written four. His first book was called Invest Like The Best. The whole premise—this actually predated what became O’Shaughnessy Capital—was that he was hired by large pension funds to effectively model their managers. The famous managers of the day. The Peter Lynches of the world, for example, John Templetons.
+
+What he did was cloned portfolios by super simplifying their investment strategies into a ruleset. The idea of the book was to extract lessons from the behavior in investments of very famous successful managers and have it as a tool that you can carry with you or even use directly in your investing.
+
+I just thought, oh, that's kind of cool. I'm basically going to do a version of that where I'm talking to people because I'm interested in getting them to share portable lessons with me and everybody else. Be a neat tip of the hat to my dad's original research. I thought about that for about two seconds. It just popped into mind. That's how it got named.
+
+There's a lot of continuity here around a commitment to—I always call it learning in public. I feel like that's becoming a clichéd phrase, but I can claim to be using that very early on. I do believe deeply in the power of doing that.
+
+David: That first iteration, capital management, Bear Stearns ends up acquiring it. It became the linchpin and biggest part of Bear Stearns’ asset management practice right before the financial crash in 2008.
+
+Patrick: There's an intermediate step, which is actually quite interesting which was, in the late '90s, the team that was at O’Shaughnessy Capital began to build a business called Netfolio. If Motif Investing and Wealthfront had a baby, it would've been Netfolio back in the late '90s. It's an idea that was inevitable but just ultimately too early for its time.
+
+That whole team was building effectively a robo advisor in the late 1990s. It was a part of the whole boom and bust cycle. It was the quintessential story of tons of money raised.
+
+Ben: Targeted at consumers?
+
+Patrick: Targeted directly to consumers. We'll come back to that when we talk about Canvas later on because we're doing something very different. Again, returning to our technology routes, if I was to credit any two patterns that are in common between me and my dad—even though we never really talked about this. It was just implicit. It was this love of technology and this love of open research.
+
+David: It definitely carries through.
+
+Ben: With today, if I go to Wealthfront, it's very set-and-forget. I pick basically the right amount of risky exposure I'm open to, and it does all the rebalancing for me. With Netfolio, did it bring in that idea of the cloned portfolios? Could I invest in my favorite value investor?
+
+Patrick: I never got far enough where all the different product ideas came to fruition. At first, it was very simple versions of the same screens that were being run at the O’Shaughnessy Capital Management, which was all around the quantitative research that the team had done. And largely from a book called What Works on Wall Street, which was the book that created the asset management firm, which is an interesting directional story. That was about it.
+
+The plans may have been to expand types of strategies and make it more and more customizable, which would've been a powerful concept—one that we're planning with today. Never quite made it there. Its chassis was fairly straightforward, but it wasn't passive. Wealthfront and Betterment are just low-class index rebalancing, it did offer active strategies.
+
+David: Then obviously 2008, it happens. It's February 2008, a few months before Lehman. You guys take the practice and spin it back out of Bear. That's the birth of what we all know today O’Shaughnessy Asset Management, right?
+
+Patrick: Yeah. I could now speak from experience, not from the story because now I’ve entered the pictures. We actually left in the year before—the March 2008 blow-up of Bear Stearns in the summer of 2007. Technically, the first day of OSAM was July 3, 2007, which we call OSAM Independence Day.
+
+Ben: Oh, good timing.
+
+Patrick: Sometimes luck of the Irish helps. We definitely were lucky in more ways than good. The plan had already been in motion long before the two structured high-grade credit hedge funds that were the canary in the great financial crisis coal mines began to blow up.
+
+David: Patrick you were graduating 2007 as well.
+
+Patrick: I did. Yeah, I literally graduated two months earlier.
+
+David: Oh my gosh. I did too. I started working in the Analyst Program at UBS in the TMT group there. I remember, whenever it was when those hedge funds blew up and JP Morgan acquired the assets of Bear for $2 a share, somebody taped a $2 bill to the revolving door on Bear's headquarters in Midtown.
+
+Patrick: I remember hearing the news in March. Again, I started—and it sounds like you too—our careers on Wall Street thinking wow, this is a great place to be. The market seems to just go up. I didn't really have the 2000 stain on my brain. My awareness of the market was ‘02–’07, which was just like up in the right scenario, and the first several months were more of that in my career. I was very green. I hadn't studied finance or business. I really didn't know anything. The shit hit the fan.
+
+The famous thing that I remember—because we knew so many Bear people—was thinking that someone had screwed up the price. That it wasn't $2, it must have been at least $20, right? There's no way it could be $2. I'll never forget that image of the $2 bill plastered up against that beautiful Bear Stearns building, which was part of the deal when Lehman acquired Bear. Just that building alone was like a $1 billion building and they got it for nothing.
+
+Looking back, the aftermath of the crisis was really hard for me because it forced me to learn so much so quickly in a very stressful environment with clients that are angry and upset about losing a lot of money. Ultimately, that was formative. I'm glad that I started my career with that event. Better than having late in one's career or after a rosy period.
+
+Ben: What does that look like when you take the firm and spin it out of Bear Stearns structurally? How do you do something entrepreneurial like that with the existing assets of an asset management firm?
+
+Patrick: It's complicated. The way that we ultimately did it was highly unusual. We—as divorces go—had the friendliest of possible divorces with Bear. There was literally a period where an asset management tracker gets our everything. Trackers could break if they're not continuous. We actually had portfolio management team members as dual employees of Bear Stearns and O’Shaughnessy Asset Management.
+
+Fourteen people, not including myself, left Bear and were the foundational team for OSAM. I spent a big chunk of that early summer calling the clients.
+
+David: Are you the first hire?
+
+Patrick: I'm technically the first employee. I'm also the first intern at first, although that didn't last long. I spent a lot of my time transferring clients over. We had billions and billions of dollars and thousands of accounts.
+
+It was a rude awakening for what business is like and all about. It was as friendly it could be, meaning they helped us make a continuous and a good experience for the clients, or as good as we could make it. It's interesting to basically start a business that's already a fairly large going concern, but nonetheless have to treat it like a brand new business with all the trouble that it entails. But it was a great education for me. Again, I hadn't studied this stuff, so I had to learn by doing. I treasure those early days even though it was stressful and hard.
+
+Ben: Okay. My plan here was to get right into the business model of OSAM since a lot of our listeners are not finance native. We've touched a few times on your education now and how you didn't come from this. Take us through how you decided what to study in college. Did you intend to go into the family business or not?
+
+Patrick: I'm a big believer that hardship early on often shapes someone's personality and character later on. One of my hardships early on in life was completely self-imposed, which was I was a horrifically bad student in high school. I moved from a very small class size school in 8th–9th grade to an enormous 4000-student public high school in Connecticut for high school. I had this realization that I could do effectively no work and get Bs. That was a big change for me and basically, it meant that I got to play more video games, hang out with my friend more, and play frisbee and soccer more. I did all those things.
+
+David: Probably more valuable to your life and career now, right?
+
+Patrick: Again, I never look back on scars with regret because they form things later. I assumed—through stupidity and some arrogance and entitlement—that I would get into the University of Notre Dame where my family has a long, deep history. I didn't, and I also—because I have had that thought—didn't apply to other schools that were safety schools. I applied only to rich schools. I was rejected by each of those schools on the same day. I got six of those college envelopes that no college applicant wants to get all at once.
+
+I ended up going to a regional school that had a compatible curriculum with Notre Dame so that it would be easy for me to transfer there. When I went to that smaller school, which was in Minnesota where I'm from originally, I took the opportunity to reverse that course. I studied really hard. I declared as a history major. I was always interested in things. I just hated being told what to read or what to learn.
+
+What I found in the first philosophy class I took at that school—the University of St. Thomas in Minnesota—was that philosophy, letting me guide my education in a very distinct and unique way. I just fell instantly in love with it because the professor was basically saying, go read anything you want and make an argument to me.
+
+I was like, oh, that's like what I do anyway. That sounds great. When I went to Notre Dame, which at the time had the best—it wasn't by design, it was just luck—philosophy department (arguably in the world) despite being a religious school. It had an unbelievable (I'll call it) secular philosophy department with some incredibly famous philosophers as my professors.
+
+That was my education. My education was twice per semester per class—read a ton of stuff on a topic, synthesize it, and write a paper, and that was my schooling. I just loved that way of learning because it was so self-directed.
+
+That was the background story in philosophy that reignited or maybe even arguably ignited a love of learning that I still have. I just love the topic. I could talk about it all day. I still read a lot of philosophy. I think it's a great way to build a foundation for how to think. I'm very lucky that the whole story played out the way it did, even though at times, it was pretty rough and stressful as a teenager.
+
+David: Wow. What a great way also to prepare you for the other part of your career now that nobody could have seen coming at that point. I'm going to guess the podcast existed. I remember downloading some to my iPod in college.
+
+Patrick: I was very shy. As a kid, I actually think I've completely changed. I'm not shy at all now, but I was very shy and certainly—on the personality test—would test highly introverted. God, if you had told me I'd be doing this thing in 10 years when I was 18. I would have told you, you’re out of your mind. Sure enough, here we are. Things change.
+
+David: Wow. Coming out of Notre Dame, had you been thinking all along, I'm interested in all the stuff my dad does in finance. How did you end up being employee number one at this startup?
+
+Patrick: The truth is I didn't think about it at all. I delayed it and procrastinated this decision. I thought I would go to law school, just because I liked arguing. I liked constructing arguments. I liked the competition. I liked being a truth-seeking missile, above all else. That was my default path that I would have a summer off, study for the LSAT, and maybe go become a lawyer.
+
+I just got lucky. The timing was just right that the business was getting set up. I couldn't argue with the logic that it would be pretty smart to watch and help a business get set up. That's a valuable experience no matter who you are. I just jumped on it, and that was it. There was no more magic to it than that.
+
+I don't think I actually even really read my dad's work or books. We didn't ever even talk about it at home until after college. When I say I knew nothing about investing, I knew nothing about investing when I graduated. I didn't know what equity was. I joke all the time, I had never used Excel. I didn't even know what that was as a tool in college because I'm just reading and writing, basically.
+
+Ben: Which is amazing. Your dad tells stories of bringing piles of computers with him on a family vacation to backtest models against historical stock market trends. What was your view of that growing up?
+
+Patrick: My view was that he was at the house while we were body surfing and boogie boarding on the waves. I didn't care much. I think a gift that any parent can give their kid is tremendous support and care for their interest without imposing one's own interest in their children. That's something that I'll emulate and repeat with my kids.
+
+We weren't bludgeoned with it. It wasn't a dinner table conversation. It was maybe that strange now looking back on it given that what is always mind share was going to, but we were at the beach while he was doing that.
+
+David: It's so funny. I can relate so much—obviously, very different—somewhat to the story. When I showed up for analyst trading, analyst trading was fun, but my first couple of months in the group CBS.
+
+Ben: David, you were French literature in college?
+
+David: French literature, yeah. Arguably philosophy. Although I did more theater and stuff. Man, I never used Excel either. I just got hammered. I was bottom of the class for a long time. It's just that learning curve. Like you said, coming in with a fresh mind and just having that, it's a stretch to call it adversity. You got to sink or swim. You got to learn this stuff. Having a liberal arts education and being prepared to learn, it ended up serving me super well and it sounds like you too.
+
+Patrick: I think the best thing that can come out of any early education is just the feeling of what it's like to enjoy learning. Whatever area that happens to be, it opens the door for you to be a high slope learner and other stuff. If you're curious and let that be the pull mechanism versus some push mechanism, which as I mentioned just didn't work for me. I think that's the skill that really matters.
+
+You can figure Excel out if it's a means to an interesting and curious end for you, and any other tool that we have at our fingertips. I think becoming a high slope learner and getting the experience of how fun that can be is really the only truly valuable thing that college or some other formal education can bestow on you.
+
+Ben: I had this moment. I remember sitting in college physics freshman year. I went the engineering route. But when I was sitting in that lecture and I remember connecting the dots between how orbit works and why I can't throw a baseball very far. Understanding how that manifested in the equations we were learning.
+
+This teacher, this lecturer, we have the most amazing narrative between the practice theory, those two concepts, and putting them together. I still remember the high that I had from the flow state of what a pleasure it was to learn that. In a lot of ways, all three of us are constantly chasing that in how we learn something new in such a complete and well-illustrated way that it's thrilling and enjoyable to learn.
+
+Patrick: Couldn’t agree more. That's what everyone should be chasing early on in life, I think.
+
+David: Yeah, and always. Speaking of learning, educate us and our listeners too. What is this business you were setting up, O'Shaughnessy Asset Management? How does an asset management firm work period, and how do you guys work?
+
+Patrick: The thing about traditional asset managers is, in many ways, the simplest business model on planet earth and arguably one of the best, if you do it right. It's literally as simple as you take control over other people's assets. You are given the discretion to trade their assets on their behalf. This could be wealthy individuals working with a financial advisor.
+
+It could be a huge pension fund, it could be a corporate pension plan, or whatever that might be. You're given discretion over the assets. You're hired to transact, trade, and invest on their behalf. Traditionally, in a long-only context, you're paid a percentage of those assets that are quite small—sub 1% of those assets these days—as an annual fee for your services. It's just a management fee.
+
+In hedge funds, there's the extra layer of usually carried interest like you would see in venture capital firms. The big long-only managers that just buy stocks on the long side just to hold them will charge some flat asset management fee, and that's the entire business.
+
+It's a function of how much you manage. The beautiful thing about it is that it's recurring. It's very SaaS-like, in that sense. It's a recurring revenue stream. Also, there are no accounts receivables. You tend to strip the fee that you're generating directly from the asset base that you control itself. It's an incredibly simple model.
+
+You obviously want to design strategies that can accommodate some assets. Maybe not too much in assets, because any strategy starts to die as it gets too big. In public markets, this can be billions and billions of dollars, and that's it. That's the entire business model. The functions of the business are just like any other business.
+
+There's a product, which is the investment strategy. That's run by a research team, a Chief Investment Officer. In our case, a team of quantitative researchers building predictive models to buy stocks. That's the research function or product function, and then there's the distribution side of the house.
+
+People talking to those investment advisors, telling them about our strategy, convincing them that we're better than the next guy, maintaining relationships, telling them about performance, and all these sorts of things. Then there are the operations and support functions inside the business like any other business. It is, in many ways, the world's simplest business model.
+
+Arguably one of the oldest too. Financial advice—of one shape, way shape, or form—has been around literally forever. That's how our business was structured out of the gate. Nothing complicated.
+
+David: Is there also the equivalent of a carry component, a performance component? Or is it all just the asset management fee?
+
+Patrick: It totally depends on the firm. Some charge a performance, incentive fee above and beyond the performance of a certain benchmark. Let's say you're hired to manage the US stock portfolio. If you beat the S&P by 10%, you get to keep 2% of that 10% on a dollar basis. Sometimes managers charge that way.
+
+The much more common is just a flat asset management fee that's based on assets, but you can contractually do anything you want. Sometimes big investors like to pay zero management fees and generous incentive fees so that basically, the only time you make money is if you do your job and beat the broad market.
+
+Ben: Why do you think it is that historically, it's been common for long-only public asset managers to be fee-based and venture capital, private equity, hedge fund managers to have such a heavy performance component?
+
+David: We could debate the latter part of that statement these days.
+
+Patrick: I think it's just capacity. The reality is if you were to give me in our US large-cap strategy $1 billion tomorrow, we'd execute it in a day or two, and we wouldn't move the stocks that we're trading. When you think of the challenge of putting $1 billion to work in almost any venture context, it's incredibly hard to do. There's just not enough capacity to go around.
+
+Therefore you need to incentivize the managers with potential rewards, and because the capacity is capped, you need to have that be something like an incentive fee like carried interest. There's a lot that we could talk about in this space, the alignment of incentives, and how this should work. You could argue that someone that gets paid carry should not be able to get rich on management fees.
+
+Obviously, in practice, that's not always the case—and usually not the case—for successful firms. They get rich both ways. That's the primary driver is that a strategy like ours in public markets could accommodate billions tomorrow with no real marginal cost to us and without affecting the market price.
+
+David: We've seen this experiment play out over the last 10 years in the private markets and particularly in the "venture flavor of the private markets." Billions of dollars have come in, and they have impacted the market hugely.
+
+Ben: Yeah, massively increased prices. Like you say, it's hard to efficiently put $1 billion to work in certain private companies, but particularly venture. That's why we got 2 ½ years of joking about the SoftBank vision fund every time anybody was bringing up venture returns because they have a blunt instrument in deploying these billion-dollar checks.
+
+David: That was one firm that literally impacted the whole market.
+
+Patrick: I won't name names, but I've heard from founders who have taken SoftBank money about the absurdity of the process of diligence that went with that. I just think it's crazy. I think that amount of money, to put it to work, you have to be cutting enormous checks and doing so fairly liberally. It's no surprise the impact it has on prices.
+
+Ben: Wait, absurdly a lot of diligence or absurdly not enough?
+
+Patrick: Absurdly not enough. If you're thinking about even the biggest hedge funds and the amount of work they would do to deploy $1 billion into a business. It is crazy. I live more in the circle of public market analysts. Even though now I'm spending a lot of my time in the early stage markets. But sometimes I feel like I'm an alien on a different planet because the work done on companies is just so different. Charlie Songhurst described this as the East Coast versus West Coast mentality.
+
+David: It was such a good episode you did.
+
+Patrick: He's one of the best. I think that the right answer is somewhere in between those two mentalities, but I think there's a lot to be learned from each for the other. The West Coast has had a nice run here. It's hard to argue with the way they've been doing things given the results.
+
+I think the public market mindset applied to private markets as a powerful concept, but in the context of some of the biggest venture investors—I wasn't there so I can't say for sure. But I don't think the same degree of rigor was applied to the work being done.
+
+Ben: Thank you for illustrating the vanilla asset management model, particularly for long-only public funds or long-only public managers. How does OSAM deviate from that, and how has it deviated over the years?
+
+Patrick: I would say the major deviation has happened in just the last couple of years, which is our move to become much more of a software business. We still are an asset manager in the sense of the business model. We charge people an asset management fee based on the assets they have with us.
+
+The way that we're accessed and the way we deliver our product (I'll call it) is now heavily through a piece of software that we call Canvas. If I'm good at anything, it's just collecting really good ideas and applying them liberally without a lot of second-guessing from the smartest people I can find.
+
+In many ways, what we've done with Canvas is just borrowing some of the best lessons I've uncovered, and we've uncovered as a team over the last three or four years. Chetan, who we both know really well, had a huge hand in this. Which he knows, and I've told him several times in terms of our go-to-market strategy. So many others—heavy-handed how we thought about the product.
+
+But I think of us today as a software business that happens to monetize through asset management. I'm happy to walk into the origins there, but I would say that's the primary deviation between us and the everyman asset manager.
+
+Ben: Patrick, you're on Acquired, please walk us through the origins of that.
+
+Patrick: Happily. When I was in the early days of the podcast, the podcast was nothing more than an open search for me after having really honestly maxed out my abilities as a quantitative researcher. The lack of statistics background caught up to me. I did a lot, and I'm proud of the work I did. But the team that's on our team today would, even the ones that are very young, absolutely run circles around me five times a day, in terms of the actual work being done.
+
+I had to find some new ways to add value. What I agreed to do with a couple of my friends was to do this very openly. I tried six or seven different things, different formats for doing this. The podcast is the one that stuck. I was basically just looking for areas that interested me, you know what, what could I find that was applied to our business.
+
+I could understand, I felt like I could intelligently apply, and most of that ended up being around the world of software. I got especially enamored of the early Amazon Web Services story, and the story of Andy Jassy and his TA stint. Which is this program at Amazon where the senior team often has a shadow staff member called the technical assistant, a TA.
+
+Ben: It started at Microsoft under Bill Gates.
+
+Patrick: Right. Jassy was Bezos's TA for 2003 or whatever year it was. Had this brilliant insight of, wow, let's repurpose the infrastructure we built for our retail business and turn it into Amazon Web Services. I talked to a lot of people at Amazon. I just like getting on the phone with people.
+
+I find them pretty good at getting to the people with the right information and just getting them talking. I got a lot of context around how this worked in the early days. I thought holy crap. We have the same, obviously much smaller scale, but we have the same general type of opportunity.
+
+We're a quant firm, so we built all this crazy infrastructure, ripping third party vendors out one by one over 10 years, rebuilding a software solution internally to help us do our jobs. We had a full-time dev team that was just building internal tools. The question became, well, if this had a beautiful front end skin on it, what would the product be? What would it look like? Let's go through that exercise.
+
+We poked and prodded on a couple of different things and settled on the final model that we call Canvas, which does exactly that. It literally is our internal tools as a service to let you design extremely customized investment strategies through a web-based portal. Which we then do all the trading and implementation on, all the reporting for the benefit of generally very high net worth individuals through their financial advisor. What we work on is software.
+
+David: Obviously, client-facing and end-users.
+
+Patrick: In my mind it’s client-facing. Our clients are the advisors.
+
+David: The people that use Canvas are themselves advisors?
+
+Patrick: Correct. I'll make up a firm RIA, Registered Investment Advisor firm. We'll call it John Doe capital. John Doe capital has five advisors, some support staff, and they manage $1 billion for 10 families. Let's just say really very wealthy families. Those families have outsourced their investment function to the advisor. They trust them to oversee their estates and their investments.
+
+Those advisors typically today don't pick stocks themselves. They used to but way decades ago. Then they moved to pick mutual funds, then to managers. It's evolved, but usually, they outsource the function.
+
+That could be hiring Vanguard to do it at a very low cost. It could mean hiring an active manager like us, and they make that decision based on a lot of research. What we do basically is we're going to do all that. But you don't just get to pick like option A, B, or C. Instead, you get to design exactly the strategy that you want that is specific to the circumstances and preferences of the end client.
+
+The actual investor will call them. That might be particularities around their tax preferences or around what kinds of stocks they're willing to own. What risks they have in their life. Arguably, if you're a Facebook executive, maybe you want to route some of your investment risk in different parts of the economy.
+
+Not double down on the same sector. There are all these variables. Everyone's life is a little bit different and preferences are different, and this software allows advisors to show their clients something very unique that's totally tailored to them.
+
+David: This is awesome. It truly is an AWS story. You guys were serving clients yourselves. Now you're serving clients yourselves and other advisors who are serving clients.
+
+Patrick: Correct. Our goal is to make the advisor central here. Shopify is another interesting example that I've thought a lot about with merchants as the North Star versus customers as a North Star that Amazon has built its business on. You can think of advisors like us building for merchants. We're building a platform that they can build an entire business on top of, and at the same time provide a really interesting solution to their clients.
+
+Ben: Patrick, I have the vertical versus horizontal conflict question here brewing in my mind. How did you think about whether you should sell licenses to Canvas to OSAM's competitors or not?
+
+Patrick: It's an interesting and ongoing question. I don't have a great answer to this. I had like one definition of a platform, which is that you're not using the same tools to compete against your clients. There's a tension here like another one of my favorite little ideas from my podcast history was an observation from Keith Rabois.
+
+Then at coastal now at Founders Fund, when he said all the money he had made in his career was building tools for the equivalent of merchants. Let's say, having the merchants be too slow to adopt them, and then using the tool vertically integrated to compete against the legacy merchants.
+
+David: Open Door.
+
+Patrick: I always have these opposing views in my mind, but we have a long history with the IRA community. We love working with them. We were one of the first firms in the late-1990s to work with that community. It's a fast-growing segment of wealth management. We generally like the wonky stuff and are less good at the end client experience and the rest of the package.
+
+We're not interested in estate planning, in particular, we're interested in investing. I think the role that we play is the right role to serve RAs and advisors as our primary clients in that part of the business and not the end-user. It's one of those perennial questions and decisions. When you have a powerful product, it's a luxury to wonder, what could we do with this? I think ultimately, the more you get distracted, the more you lose focus, the worst product you create.
+
+David: This is the perfect transition to talking about the other thing you've built over the past couple of years on your own and within OSAM. Your Keith Rabois episode, fun Acquired history here. So good. At the end of it, I think you've stopped doing this as much, but you were asking your kindness questions, but you also ask people for book recommendations. Have you stopped doing that, or are you still doing that?
+
+Patrick: I have stopped doing it mostly because I don't read books anymore for the most part, which is a strange departure given I used to read 100 a year. But because I've lost interest in books, for the most part—nonfiction books specifically—I actually don't ask the question anymore.
+
+David: We should ask, what podcasts do you listen to?
+
+Patrick: Exactly.
+
+David: Keith's answer to the books was 7 Powers, and Keith was like, hey, there's this book and this guy, Hamilton Helmer, best-kept secret in Silicon Valley. This is a fantastic book, and so I listened to that. I picked up the book. I was like, Ben, you got to read this book. We reached out to Hamilton and the rest is history.
+
+Ben: I was like, really, David? I've never heard of it. I don't know. He's like, look, Reed Hastings says it's the best business strategy book and he's the best business strategy practitioner in the world. I was like, okay, fine. It is amazing to be just flashing back. What was that six months ago, having skepticism there?
+
+Patrick: Just to pile on there. I was introduced to Hamilton through Daniel Ek. I think Daniel is the best strategist that I've personally spent time with, and he says the same thing about Hamilton, or something similar anyway. That's two pretty good re-endorsements there. Albeit from a very similar business model—Spotify, and Netflix.
+
+Ben: One trying to beat the other pretty quickly.
+
+Patrick: Yeah. Anyway, 7 Powers is something I think about a lot.
+
+David: It's now a whole section on the Acquired Show, which we're going to make you go through for OSAM in a minute. Invest Like The Best, how did this happen? You wrote this. You've talked about your philosophy of growth without goals, which maybe you can get into here in a minute. This thing has taken on a life of its own, how did it start?
+
+Patrick: Some of it is timing. It started in 2016 before this mega boom of podcasts. I think sometimes better just be earlier or have the right timing than good. That was definitely a component of it. I was probably one of the first couples, what I would call high-end investing podcasts.
+
+It was just lucky timing that my friend, Jeff Gramm, who had just written a book—I think it was called Dear Chairman, which was a story of eight different activist investment campaigns and public markets. Including the letters that were written by the investor to the Chairman. It's an awesome book.
+
+Jeff was marketing the book and I can't remember who asked too, but we decided that we would record like an audio version of the major topics covered in the book. That was the first episode. I told my producer Matthew that I would commit to doing seven of them because if I don't have a habit I don't do well. I figured seven was like seven weeks felt like long enough.
+
+The second episode is with Michael Mauboussin who is a recent research friend (I'll call him) at the time, a legend in the research and equity investing business. It just took off. It was one of those things that I think had product-market fit in week two and steadily has grown ever since. It turns out, on the internet, the more focused you are, the more wonky and niche you are, the bigger your audience is.
+
+I think the internet rewards the edges of distributions, and I just happened to be really interested in one of those edges, which was a deep, wonky business and investing discussions. I've just done it ever since. For the longest time I never really had any goal with it. I just wanted to talk to interesting people and let my curiosity guide me to the next guest or let the past guest guide me to the next guest.
+
+It grew organically from there. I never marketed it. I never did anything but tweet out a link to it. Still, for the most part—although that's changed recently a little bit—I don't do anything extra. And that's the whole boring story, to be honest, guys. There's not a whole lot more to it than that. I should probably start making up all these founders do. I should make up a much more mythical origin story.
+
+David: You're walking in the woods.
+
+Patrick: Yeah. I just happened to be downtown one day in New York. That's where Jeff's offices were, we recorded an episode, and then the rest is history.
+
+Ben: How did you decide on seven and how did you decide I'm going to find a producer right out the gate before I even know if I'm doing this thing or not?
+
+Patrick: I tried to edit the first one myself and literally got 45 seconds into it and said no effing am I doing this. I asked on Twitter for somebody I got lucky that my producer Matthew Passy was around to answer or something, and he's been my partner this whole time.
+
+I've never touched the production or engineering side of this whole thing. I just have the conversations, that's my role. Seven weeks, I have no idea. I probably made it up. It probably felt like enough that it wasn't a crazy commitment, but also enough that I actually had to think about five more people after those first two—go get them, sit down with them, actually put in some effort, and to see if it worked.
+
+By the third episode, I was like, oh, I'm going to do this for the rest of my life. This is so much fun. Talk about a cheat code as a way to get ideas and information. I always joke now, books should be 1/10 of their length, most of them. You can get multiple books equivalent to insight in a single hour conversation. Why not just do that, especially if you can go get the best people in the world.
+
+David: It's pretty concurrent with this whole new strategy in building Canvas, right?
+
+Patrick: Yeah, it preceded it. It was the fall of 2016 when I started the podcast. I took over OSAM in 2018, so there was a bit of a gap, and then we really started building Canvas in earnest in the very end of 2018. We built it very fast.
+
+I think about it like having APIs at our fingertips. We had already built so much of the core infrastructure, so it was really just tapping into the infrastructure. Even though people saw and they're like, holy crap, you built this in three months? We said, well, really, we built it in like 10 years, but we were able to move very quickly. Part of the reason for that was the lessons I was picking up, and my team was picking up along the way in those first two years.
+
+Ben: With the podcast, was it an intentional strategy to attract capital for OSAM or then, later on, to attract customers for Canvas?
+
+Patrick: Never. I don't believe intentional marketing almost ever works. I feel like the best marketing is how did this happen question after the fact. Podcast remains a critical marketing asset for everything I and we do, but it's never with the mind towards that.
+
+I'm never thinking, how can I subliminally design something to get people to call us on this? It's never ever like that. I think of it very much as a brand versus direct response marketing. No, it was never part of a strategy session or something like that and never will be because we just know that that would pervert the whole reason it's interesting in the first place.
+
+Ben: And your listeners would see right through it. I mean, this is one of the biggest keys...
+
+Patrick: Yeah, it’s the smartest group in the world.
+
+Ben: Exactly. The biggest key tenant that David and I have about Acquired is to assume the audience is brilliant.
+
+Patrick: Yes, because they are.
+
+Ben: Not only will you then attract brilliant people, but it forces you to play at a higher level so that you get to keep engaging brilliant people.
+
+Patrick: Yeah, I think that's so important. The second people smell sales—it has a stench. I never want to fall into that trap. It will remain driven by what's interesting to us, not what we think other people want to hear or not some backdoor into a business outcome that we're trying to achieve.
+
+David: Are there moments you remember from the last four years either something happened to a particular show, a particular guest that moved the needle in a big way, or where you were like holy crap. This is bigger than I realized.
+
+Patrick: I tried to not check the metrics too often because when I wrote a book, I was pretty young. I wrote a book when I was in my mid- to late-20s. When it came out on Amazon, I remember checking this stupid Amazon ranking so many times a day. It's like crack for authors. I hated that. I was like, you know what, I'm not going to do that this time.
+
+After an amazing episode that I just knew was awesome, I would check just out of curiosity. For sure there was a steady organic growth rate with step-function changes. I actually called this the Mauboussin bounce because I've had Michael on I think four or five times now. Every time I do, there's a 10% audience increase that then doesn't disintegrate. He's my growth hack, along with a few others.
+
+I tried to stay away from all that because, again, that's one of those feedback loops where I would feel like the lessons were driving my thinking on what to do next versus just my curiosity. I've really tried to stay away from that as much as I can, especially recently as the numbers have gotten very big, and just ignore it. Trust that if I'm curious it will come across, if I'm doing something by a route that will come across because the audience is so smart, so just don't do that.
+
+David: At the same time, it has taken on this life of its own. You're doing a bunch more stuff around it. Can you tell us about what's next both for the show and how it's bled into the investment business as well for you?
+
+Patrick: Sure. COVID’s been with all its misery for so many people. I've tried to take it as a personal blessing in as many ways as we can. The first of those blessings is the time I get to spend with my family now. I was traveling a lot for work. I've been home. I'm sitting in my home office right now. My kids, I can hear them in the background. I get to see them and my wife Lauren all the time. That's the first blessing.
+
+The second is it's made everyone realize the parts of what they were doing that were wasted effort or if not wasted, things they just didn’t really enjoy doing. I just believe that enjoyment aligns with good outcomes for the most part because you just have more energy for stuff. If you have more energy, you have more persistence to get through hard times, so better outcomes are possible.
+
+I ask the question, what would the perfect alignment be between my own enjoyment, curiosity, and effort in the business? I think the way that shakes out is what I'm going to do in the next 20, 30, or 40 years just trying to be a cartographer. Just try to map the best knowledge in the business and investing world in a pretty formal way.
+
+Again, probably my legacy as a quant makes me think about everything like what does the database schema look like for something like that? What is the atomic unit? If I'm writing data to a knowledge database, what does the unit of data look like? How is the database structure? How is it accessed? What front end to a build on top of it? All these questions that I think anyone in software would understand, trying to think about what I do through that same lens. That's going to be my primary focus.
+
+Now that manifests in a couple of ways. I like to be radically open with this stuff, so I'm going to publish a lot of those learning as we go. We're probably going to open source that database in some interesting way. We are just in the process of launching our first early-stage investment vehicle called Positive Sum that I'll be spending a ton of my time on because it aligns so clearly with the same exploration.
+
+I think about it as I'm just going to do one thing. I'm just going to find interesting things to learn about. I think I'm pretty good at getting to the best people in the world on those topics, and somehow convincing them to share the lessons they've learned and just try to mimic. Be a human version of all of these companies. Like Shippo or something, which is an API that sits on top of other APIs.
+
+I'm a good router. When I get a question, I'm lucky. Rather than answer it, which is who cares about my answer, I get to go ask the smartest person in the world on that topic what the answer to that question is and do it pretty quickly. I'm trying to be a router, not an originator. That's going to be my goal, and it's going to manifest inside the business in a lot of different ways.
+
+I mentioned the new fund, the podcast will be expanding. I'm going to try to convince even more of the calls that I do for my normal job to be recorded, which is weird and radical, but really helps the general public. As long as we're not doing any harm to any company or any individual—which we’re very careful about—or revealing sensitive information, or anything like this.
+
+I think that there's an opportunity to just hit a button—a little more often than not—when having normal conversations than anyone would have in the investment business as they’re doing diligence and research. Be radically transparent and hopefully create a lot of value for other builders out there in the process.
+
+Ben: To paint a use case—which is a thing that I often do as an investor when I'm hearing a startup pitch to try and echo back what I'm sort of conjuring up in my head—you could imagine a situation where you're doing research on businesses where there are scale advantages. Where you can—with a very large audience—amortize the cost of something. You stumble upon Spotify and what they're doing with podcasting. You stumble upon Netflix—to keep the examples we've been talking about this whole episode.
+
+There are a few ways to click the play button where you get to hear various conversations between you and Daniel where we can hear different insights about how he thought about that strategy from different times you've communicated with him. Is that how you're thinking about it?
+
+Patrick: Yeah, there's a question of what format does this take that becomes really user friendly and useful. I've built them in part of products that no one wanted to use. I try to be very allergic to that, so we'll iterate around this. I know for sure that capturing these lessons in a more formal way is going to be—if only for our own benefit—very valuable. When I look back at a given episode—I even did it in preparation for this talk—just looking at the episode title and saying, what lesson did that episode contain?
+
+It's amazing for many of them. I could just go through them right now and just tell you. Here's what I remember, and it's an incredibly powerful tool. It's easy for me because I'm the one that had the conversation. I think it's harder if you're listening. For a few of your episodes, I could say yep, here's the lesson I remember. But it sure would be reinforcing and powerful if I can tap directly into that good stuff more directly and with more control.
+
+I think your example’s a good one of I found this interesting. How do I keep pulling on the same string within the same ecosystem? It’s two tasks—feel that database with good stuff, find incentive structures to keep writing good data to that database, and then find a way to make it navigable for interested people through technology and software.
+
+David: You called your vision and what you want to do here being a router going forward. To my mind, that actually undersells a little bit of what you've already been doing and the opportunity to do going forward.
+
+This listener said to me once. He’s like, hey, you’re knowledge curators. All the knowledge is out there. This is the thing about the internet—this thing about Acquired, probably the thing about you too. All your guests have been on other shows. They have interviews in other formats. They're on YouTube in various talks. The knowledge is out there. What you’re doing is you're curating it and packaging it in the best, most consumable form. Does that resonate with how you're thinking about things?
+
+Patrick: Yeah, there certainly is a curation aspect. As the amount of information and knowledge explodes due to the internet, all of a sudden, it becomes valuable to be able to compress that or curate it in a helpful way. That’s 100% the part of it, but part of it too is helping others frame things in a novel or different way than they have in the past.
+
+If I'm trying to get better at anything, it's having just a really low tolerance for repetition of content with a person. When I'm interviewing somebody that's done a lot of interviews, my goal is to have as much of it be novel and to have their reaction be like, I've never thought about that question before as often as I can. I find the best way to do that is I'm just easily bored. I have consumed so much content that if I've heard something before, I'm just bored. Then I feel like I'm wasting my time.
+
+By having a low tolerance for that sort of stuff, I think that's the second function. It’s curation and eking stuff out that hasn't been explained or revealed in that specific way before. That's what I'm trying to do, and be selfish about it. Ultimately, if you're selfish in solving your problems, that's usually a good policy. Sometimes, the questions I'm asking are, I'm dealing with some problems in one of our businesses and I don't know how to solve it. I ask somebody that's really good at how to solve it and then you find something great.
+
+Ben: I have a management question on this. You have these multiple concurrent initiatives. You've got the codifying business knowledge and making it more navigable. You've launched an early-stage investment fund, which is a completely different operational animal and decision-making framework than public long-only equity investing. You've also got—which I think you should pitch listeners on—this new podcast that by the time this is out, this will be launched, that will be right up a lot of people's alley. First, what is that? And second, how on earth do you manage to do these three things concurrently while also running a large existing business?
+
+Patrick. It’s the most common question I get. The first part of the answer is I work very hard and have a lot of energy for this stuff. Sometimes, having more hours that are productive in a day is an advantage, so that's part of it. The second is I'm just ridiculously open about what I'm doing. You know all my stuff, as does everybody else. I don't have any other stuff.
+
+What I generally find in my relationships with other very successful people is they also have lots of other stuff that you just don't know about. There's a little bit of transparency making it seem like I'm doing more than others when in reality, it's really not the case in my experience of highly curious people who just tend to do a lot.
+
+The last piece of it—which is probably the most important and maybe interesting—is the way I think about it is I actually only do one thing, and it just happens to show up in a lot of different outcomes or side effects. That one thing is this scout function. I am out trying to find what is the next interesting useful concept, idea, market, area, person, product, or whatever that can be emulated, borrowed, copied, mimicked, or whatever it might be in a productive way for the people that use us for something.
+
+That takes the form of handing lessons off to my team at OSAM. I work with the senior team there that I've been with for 14 years each—all four of them. We know each other intimately well. They're all more talented in most ways, except for my talent. Maybe it is the scout function. They're all more talented than me in every other way. I work closely with them. I'm handing them stuff, that's part of it.
+
+On the venture investing side, I would actually argue that my trading in public markets is awesome preparation for the time I'm now spending here. It is different. It's much more qualitative than quantitative, but quantitative still matters a lot. What I'm finding when I'm talking to founders, especially around Series A and especially if there's a data component, or a modeling component to a product, which these days are more and more common. The kinds of questions we’re able to ask them about that—they look at us funny. You can tell they've never been asked the question by other operators and practitioners like we are.
+
+I just think it all feeds on each other to let us ask better. It's all about asking better questions at the end of the day. That's the one thing I do. Just ask better questions and ask them of the right people. Sometimes, that manifests as a lead investment, a participating investment, an angel investment, an idea for a product, a podcast episode, or whatever it might be, those are the by-products. Those are not the things themselves.
+
+The thing itself is getting better—I guess I’ll call it the art of conversation—at asking questions that lead to interesting revealing answers. That's it. That's really the only thing I try to focus on doing, and then just build systems—solve problems with technology, not with people. My friend, Leore Avidar, the founder of Lob and now Alt—I love that answer that he gives to that question of what's a technology company? It's a company that solves problems with technology versus people. We solve problems that way and try to build really efficient systems that let us do more of the things we're good at, which in my case is asking good questions.
+
+Ben: Well, the good news for you—and you probably already know this, but that was what Don Valentine said. The number one most important job to be a great venture capitalist is learning to ask the right questions and then learning to listen to the answers.
+
+Patrick: I don't think it's much more complicated than that. Once you open the right door, then there's a lot of work that still has to happen. You have to underwrite the data. You've got to channel check. We have to do the work.
+
+In my case, the work is the most fun part. If I find a company that's interesting, going in talking to the 10 most relevant industry companies or players in that space, is the most fun part. One of the questions I've been asking is what if I recorded those conversations and shared them in some way, shape, or form? Not be too obvious. Maybe publish on a lag and, again, never do any harm.
+
+That's what everyone does in investing. They're reading stuff, they're looking at information, and they're talking to people. That's it, and then they're synthesizing everything. I'm going to do the same thing. But what if I'm just radical about the way in which I share the positive aspects of those things so that others can benefit passively and everyone's the better? That's the question that I'm trying to answer.
+
+David: Here's the thing, you do it the right way, it benefits the companies too. You have a platform. The XYZ person at XYZ firm does that and posts it on the internet. Probably they would start getting followers, traffic, and fans. It would work. You could build it up. But you can make an argument to founders, like hey, we're looking to put the stuff out there. You're going to get a flood of attention to your company from customers, from talent, from [...] and funding. It all starts to work in this, hopefully, flywheel, right?
+
+Patrick: We literally call it the flood, and the flood is typically the call we get the next day from whoever it was that was on with some sort of expletive saying, what the hell? Who is this audience? This is crazy. Another way to frame this would be to just try to be the muse. Don't try to be the visionary or the hero. Just try to be the muse that gets other people talking about interesting things because everyone then likes that.
+
+That's why people listen to Acquired. They're there because you guys love the stuff so much, you put a lot of effort into it, and you're there to learn. They get to as well, and then they're motivated to go apply those learnings, call that person, engage in that company, or whatever the case may be. Whether that's as a customer, as capital, as talent, or as a fan. It's a powerful flywheel that gets spinning. It happens to also be a competitive advantage.
+
+We're going to talk about 7 Powers. One of my favorite questions is what is hardest to replicate about any given person, company, or thing? I don't know how much money would take to replicate Acquired. I don't think you could do it. It's its own thing, and that's true of the best media properties. They're very unique. That comes from curiosity and authenticity. If you ride that, this is five years deep now. It's the five years to be an overnight success story. The numbers are enormous now, but the number was 571 people in the first episode for me.
+
+David: That's a great start.
+
+Ben: Yeah. I think ours is about 28.
+
+Patrick: I mean, it's all compounding at the end of the day. It ends up being a competitive advantage, which I think is an important point. It shouldn’t be the reason you do it, but it is a nice side effect.
+
+Ben: Yeah.
+
+David: You teed it up. Should we jump into 7 Powers?
+
+Patrick: You tell me, I'm game. I love this framework.
+
+David: Listeners—probably to both of our shows—know Hamilton Helmer's 7 Powers that he's identified. He would characterize powers as both a benefit and a barrier. It's probably closest to the concept of a moat—the Warren Buffett classic: defense, ability, and moat concept. But it has to provide a benefit to customers and a barrier to the competition of all types from coming in and eating your lunch.
+
+The seven he's identified are counter positioning, scale economies, switching costs, network economies, process power, branding, and cornered resources.
+
+Ben: Importantly here—the point I always try to make—is this is what entitles you to generate profit in your business that doesn't just get arbitraged away by competition.
+
+David: Yep, and in fact, he has a formal definition of power, and it is a long-term differential profit margin.
+
+Ben: Patrick, the very easy question to you is, in your web of businesses—and let's start with OSAM to keep it simple—to where do you derive power?
+
+Patrick: We're definitely going to have to extend our end time here because you guys can get me going on this for a long time. I’ll just throw out examples. This was maybe one case where several years ago, probably three years ago, I did literally sit down—as probably everyone that reads 7 Powers does—and say, okay, which one of these can I do? Which one do I already have, or which one can I engineer? I’ll just tick through ones that I think are relevant for one of the things that are going on in my world.
+
+I do think the brand is like the most straightforward one that I don't need to spend a lot of time on, which is just high-quality, low variance outcomes. That's how I think about brands. Can you just consistently deliver something really high quality so that you build trust with people. Trust takes time, therefore it takes consistency.
+
+There needs to be a high minimum quality bar. I love that phrase from Toby Lutke. I think about that a lot. If you can do that consistently with whatever it is that you do, you will build a good brand over time. The logo doesn't matter. All this other stuff really matters less than just consistent high performance at a certain thing.
+
+In many cases, you can AirDrop a brand. Maybe it's possible, maybe Dollar Shave Club did it. I think arguably that wasn't good business. They had really low retention. It was an amazing story in that everyone wants to hack to create a brand instantly, and it did. There are exceptions or hacks, which can be very useful. I'm not discounting them. But I think a hack should be on top of some steadily compounding trust equation with the end audience.
+
+I do think we've established a brand. What exactly it is we can argue over, but I won't say a whole lot more about that. The barrier there is just time. If you want to establish the same brand that you see today, okay, well, we're 5, 10, or 20 years ahead, depending on which of the brands you're talking about. I think time is the ultimate barrier to entry for some of the highest quality brands.
+
+David: I love that. I hadn't thought about that brand—and specifically those terms of high quality, low variance, and time. Of course, we talked about a bunch on our show and yours too, there’s persistence in venture capital. What is that persistence due to? It’s due to the brand power of the top firms. What is that brand power due to? It’s due to high performance, low variance, and overtime.
+
+Patrick: That's the first. Maybe my favorite—and I know it's Hamilton's favorite too because he's always said that to me when we’ve talked about it—is counter positioning. Here I just think it is that radical transparency of the research process. I joke with a lot of my friends who run investment firms that have that classic mysterious website that’s just a logo and an info@emailaddress and nothing else. Basically, the digital velvet rope, which I love. I’m close to a lot of these investors. Indeed, oftentimes, they are literally the best investors. I respect the hell out of almost all the people that have that website.
+
+I joke that one of my goals is to convince as many of those people as possible to come on my podcast, which I’ve done many times and have many more on my sights on long sales cycles. But I do think there’s an incredible counter positioning there, I won’t pick out a name. As an investor now (say with positive-sum), how am I going to beat this illustrious, incredible firm with track records, crazy brands, and everything?
+
+It’s to do literally the opposite of that. To be the most open, most non-proprietary investor on planet Earth where I'm externalizing all of the things that you're normally buying from them. If you get one of these great investors to be on your cap table, you're accessing this thing in their brain that they've built up over time. I'm just saying, no, actually forget that. You're not getting my brain. You're getting the positive side effects of me externalizing that process in a radically transparent way.
+
+I think it would be very hard for most of those firms to completely change their attitude on this topic to say nothing of their behavior. They've been doing a certain thing and a certain way for a long time. That would be counter positioning.
+
+Ben: Do you think that OSAM today has counter positioning? Or do you think it's actually that it's vulnerable to counter positioning and then it's more of the incumbent that derives its power from what we already think branding and maybe scale economies?
+
+Patrick: I think it's very counter positioned because to be able to build Canvas, you basically need a heavy quant background. Firms that don't have that skill set—this is a seriously complex problem that we're solving. It is non-trivial to build. Each of these things requires a complex modeling exercise.
+
+They all have to integrate, there are crazy optimizations that happen, and there's quite a lot of compute understanding that is required to make things happen fast. This is a really complicated problem. Most of the firms that I would get scared to hear that they're launching a Canvas competitor are the most well-known quantitative hedge funds, not long-only firms.
+
+David: And they have a different business model.
+
+Patrick: And their whole thing is that their proprietary research, insight, and data that isn't shared. It's like the Bezos thing when he was asked about other big tech competitors and laughing, saying those guys are used to software margins. I'm a retailer. It's an advantage sometimes to not be as fat and happy and have lived on a different business model.
+
+I think we're very counter positioned—with Canvas specifically—against the firms that would most scare me to be competitors. And it's a lower-margin business, so I'm not worried about them.
+
+David: We're not as up to speed on probably who those current are people in the [...]. If you’re talking about 10 years ago, if SAC were building Canvas, that would terrify you. They're not going to do that because they make their money from performance, their hedge fund.
+
+Patrick: I'll use a salacious example. SAC actually wouldn't be one of them. The most obvious example would be Renaissance Technologies. It's the most extreme example because it's absurd. They charge $5 and $50 or whatever it is and still produce 40%, 50% returns annually on their own capital.
+
+They're not launching a Canvas competitor but they could, and it would be awesome. That's the thing I mean. The most sophisticated and advanced quantitative research shops, it just doesn't make sense for them to do this right now. We’ll have at least a few year’s head start.
+
+You're going to get me going down all of these now. There's a fun one in cornered resource, which Hamilton also acknowledges is the least common of the 7 Powers, but nonetheless is an interesting one. Which is through a program that we call Research Partners at OSAM, which is a very simple trade.
+
+We effectively give away our entire data, library, infrastructure, and access to our team to independent researchers in order for them to do their own thing at their own pace in whatever way they want. Where the trade is we own the intellectual property that gets created. For the most part, these are retired engineers, people in completely different fields. The most famous of them is an anonymous guy on Twitter—who's probably the smartest person I've ever met in my life.
+
+Ben: Modest proposal?
+
+Patrick: Not Modest. Jesse Livermore is his name. Although Modest is a very close friend and actually next week's podcast guest.
+
+Jesse, as he goes by, has an engineering background of sorts—a very technical background. Again, literally, the smartest human being. I could stick a human being on understanding a complex problem, it would be him. He does these months-long deep dives with our data and teaches us as he goes. And because we offer so much flexibility and we offer this data set for free—again, the thing that most firms like us keep as the most proprietary asset—they become contractors with us.
+
+As a result, we've captured some of the most interesting people like this in the world, and I think have the best value proposition to them. That's a super tiny example of a cornered resource, but we have benefited tremendously from those research partnerships. This is the one where I will admit to thinking about that program because of reading 7 Powers. Actually, the power came before the implementation and that one's been a smaller-scale success but a huge success nonetheless.
+
+David: I thought you're going to say the podcast was a cornered resource, which in your case may be fair because you're obviously the CEO and you're the major owner of the firm. One of the things I love from the book and Hamilton's work is that people are not cornered resources. It has to be like what you're describing. People are not cornered resources because somebody else can hire them—they're arbitragable. It has to be non-arbitrable, and I love this. It's like a cornered resource plus counter positioning that you've built this practice of.
+
+Patrick: I would argue. I don't know which, but maybe you guys could tell me where you would put this power. I think this more is just a flywheel than power, but there's got to be something in there. Traditionally, this flywheel would normally manifest at scale economies, but maybe it's network effect here.
+
+On the podcast side, it's something like every week you get more listeners who are incredible. Who can have a positive impact on the guest, which then helps you get even more interesting guests who then help you grow the audience and you spin that flywheel? Therefore, the best guests are just going every week to have a better reason to do yours instead of someone else's with their precious time. You just have to be patient with that.
+
+I always talk about it like someday, I'll have Bezos and Elon on back to back weeks. I'm convinced I will. I know how compounding works. Maybe it's two years from now, maybe it's five years from now, but it's going to happen. That's I think something that is very hard to compete with. What power should it be assigned under? I have no idea, but it's something to do with that growth flywheel that no amount of money could buy.
+
+Ben: Yeah. I've always thought about it, not as a flywheel, and I think this is Ben Thompsonism—laddering up. Where once you have someone on some wrong, then they become a part of the way that you're able to describe the show to the next great guest.
+
+Let's move on to Playbook. We've touched on several Playbook themes here, and I think we should introduce a couple of new ones and surmise our takeaways. Where if you wanted to run a Playbook similar to what Patrick has done over the various stages of these different businesses, what would it be? David, I'm curious, you've got one here that we haven't touched specifically on, but I think it's just an awesome observation.
+
+David: There was a really interesting exchange on Twitter. I think, Ben, you sent this to me. You texted this to me when it happened a couple of weeks ago. Taylor Pearson and Austin Rief from Morning Brew, talking about the investment business. I can’t recall for this specifically VC or the investment business period. Obviously, a period for our purposes here—really becoming the media business. I think we are referring to you, Patrick, and others as well.
+
+Turner Novak's done such a great job building a platform for investing in Twitter. Blake Robbins, Matthew Ball, so many people. Austin responded it's not just the investment business. Every business is turning into the media business in some way, shape, or form. It wasn't premeditated. It sounds like for you necessarily, Patrick.
+
+Ben: What do you think about that?
+
+David: What do you think about this?
+
+Patrick: Very often, I think observations like this benefit from hindsight, and it happens to be a strategy that just has worked for a lot of people in the last 5–10 years. Therefore, it feels tempting to go do the same thing. I don't know how long the runway is for this learn in public, orientation in the investing business, or just in general in businesses.
+
+I think there's always an opportunity to have a content mindset. I love Red Bull as an example, that Red Bull says the content media business that happens to sell this weird drink. I think that's really neat, and there are some businesses that the thing they actually do well is the media thing. And then the product is just a value capture mechanism versus usually, it's the other way around.
+
+We think of businesses as a product or service, and then figure out how to distribute it or market it. I do think that the internet has created this funny inversion where—with no gatekeepers to reaching the end audience—it behooves you to create media or content because that's the way they're going to notice you. You have to stand out.
+
+The way to do that is to be, as we discussed earlier, at the tail of the distribution in some way. Don't be the Walter Cronkite solution that pleases the most people, the most average amount. That's a recipe for death on the internet. Go study mischief, go study the extreme version Red Bull. Go study the extreme versions of this that are unapologetic about their uniqueness, and then do your version of that thing.
+
+I think it needs to just feel natural. If you're having a strategy session about this once a week, it's probably going to suck. You can't engineer your way to a good version of this. I think you just have to make a decision to be public about your thinking process and have a really high—I'll use Toby's phrase again—minimum quality bar for what gets shared. I type and delete a lot of stuff. I write a lot of stuff that never sees the light of day. There needs to be that curation filter for people to continue to trust you.
+
+If you can do all that, power to you. I think it's a great way to reach whoever your end audience is. I'm always hesitant when everyone's starting to agree that the one right way of doing things is X, Y, or Z because that's happened to work. Like any distribution channel, Facebook in the early days was super cheap, and it's not now. Ditto Google, ditto everywhere. This was a really "cheap acquisition strategy" for the last 5 or 10 years. Whether or not it will be in the next 5 or 10 is an open question that I don't have the answer to.
+
+Ben: Yeah. Really interesting thing. This is contrasted against Facebook and Google—once you're at scale, this channel continues to be cheap, at least relative to new entrants. I think you've definitely seen this with your podcast. We've seen it with ours where because we had a 4-year head start on the podcast mania and planted our flags in our respective niches and said, this is the thing we're weird on the internet about. Come join us.
+
+If we had to pay per listener, and we were doing that against anybody else who wanted to start a podcast for the same reason. We don't have to do that because there's just so much organic goodness that comes out there from building that brand that's compounded over the years.
+
+Patrick: Yeah. I think a great question asked too is do I, personally, already consume anything like what I'm contemplating putting out there? When I started the podcast, the answer to that question was no. It didn't exist, and it certainly didn't exist in the channel that I was going to do it in.
+
+I just think if you can just have that filter. Everyone was joking about these LinkedIn stories yesterday. When I saw that I was like, oh, like I don't follow anyone on LinkedIn stories. I'll bet you that I'm going to if it succeeds as a product. In two years, there's going to be some star that currently has zero followers in that venue.
+
+When I see that sort of thing, I get excited because it's novel and early. Whereas right now, I think it's an interesting question if I were to launch this podcast with episode one tomorrow, would I get anywhere? Maybe not even though the quality is good. I do think that you want that mindset of do I already consume a lot of stuff like this? If the answer is yes, good luck. If the answer is no, you're probably on to something.
+
+David: That's like a perfect playbook for our discussion thus far. One thing I want to make sure we do is—you're not starting with episode one tomorrow. You've done four years of episodes. We talked about this before the show. What are some Playbook themes you've learned from your guests in your episodes over the years? As you look back, the top things that have influenced you that have come out of your episodes, what stands out?
+
+Patrick: God, I could rapid-fire some off to you. I'll just do that. I'll just go down a mental list here. Chetan Puttagunta taught me that in enterprise software, you want to take what he calls the go slow to go fast approach of picking very carefully your early customers, and then patiently building for them well beyond what feels comfortable.
+
+Meaning, don't go get new customers beyond the original cohort. before you let the product mature. Because you then make a much stronger product that fits the market better and can handle the scaling like one of the things that we've lived with Canvas. Chetan told us to do something, and we just did it with Canvas. I didn't question it. It made sense to me. I would have done the opposite naturally, which is, go up into the ride as fast as possible.
+
+David: Get as many customers as possible.
+
+Patrick: Thank God we didn't. Any system is fragile in the early days, and it needs to have that slow organic growth. One of my all-time favorite books is The Systems Bible, by John Gall. One of my favorite lessons from that book is you can't just AirDrop a complex system and have it work. It's got to have evolved from a simple system. There's incredible wisdom in Chetan's advice to go very slow in the early days with enterprise software specifically and reach product maturity. That's one example.
+
+I'll never forget when I messaged Bill Gurley, Chetan’s partner. Someone had raised this idea of creating a marketplace for obituary writers. The idea was, can you have obituary writers on one side and living people on the other side that commission the writers to write a really high-quality, retrospective obituary type thing in their life? Because newspapers no longer really did this as much as part of cost-cutting.
+
+I thought, wow, and the stories were amazing. I read a couple of them that the person with this idea had produced, and I was like, wow. I would definitely buy that. I sent a message to Gurley, one of the smartest guys on so many things, but marketplaces are one of them. I remember messaging him and saying, what do you think? And he just drew this little chart conceptually, which was on one axis, the producer penetration. What percent of obituary writers do you have signed on? On the other axis was the benefit to consumers. Basically, conceptually, think about it as does the service keep getting better as you penetrate deeper into the supplier pool?
+
+That line should look straight. I think he said, once you penetrate a certain amount, the marginal supplier is not going to make the service better, and that's going to happen pretty early. So you're going to get this little bump and then a flatline, and that's not a good marketplace business.
+
+David: He didn't talk about that concept in your episode?
+
+Patrick: I think so. Yeah. That little concept of just that little plot. Every time I see a marketplace now, that's the very first thing I think of. I've had Benchmark guys and girls on recently, so I'm thinking about them, but Chetan's idea that open source as a business model is not about saving on R&D. It's about building differentiated distribution among developers.
+
+Matt Ball's idea in media is that if we reach a metaverse, it's not about Ready Player One. It's about the interoperability of the systems that let you move value through the system. There are not these like walled gardens. It's creating like a common layer, a portable layer of information and value that would ultimately represent what a metaverse is.
+
+Charlie Songhurst's idea that the best way to think about labor is to search for uncompetitive markets. That Silicon Valley is a terrible place to look for labor, but that's where everyone looks for labor. That you should probably be looking at Bulgaria or something like this because there's talent everywhere just on the internet. We've seen this have been going fully remote.
+
+Go to uncompetitive places when you're looking for stuff. I could do this all day. I love Katrina Lake's idea. She's the CEO of Stitch Fix. That legacy ecommerce was all about speed, convenience, and price, and that the future of ecommerce will be about personalization. It's the same concept we were talking about earlier where the early internet was the explosion of information.
+
+Now it's too much. We need to curate it down. Daniel Ek's idea about seeing around corners as a company scales, and having that felt experience of what you're going to need if you're growing 30% a month in 6 months is not what the human brain is designed to process. Thinking about what a scale-up looks like and getting around those corners as early as you can. There's this amazing story of a woman named Kat Cole, who is the Chief Operating Officer for Focus Brands, which oversees Cinnabon, Carvel, Jamba Juice, and several other related food brands.
+
+She told me this story about how she was a Hooters waitress at her first job. And these guys kept giving her a hard time about chicken wings because they would order 50 and then insist when they ate all the bones that they'd only been given 45. They would give her a hard time every Friday. Finally, one Friday, as they were nearing the end, she just showed up with 10 extra wings and gave them hell about it.
+
+All the guy's buddies chastised them, and from then on, they tipped well and they thanked her. She completely inverted this whole thing on them, and I've seen that a lot of ways this inversion to deal with challenging people, by going right back at them is incredibly powerful. I could probably do a whole another segment on everything Sarah Tavel has taught me.
+
+Everything she puts out is like a tool kit to be messed with and thought about. Maybe the last one I'll close with is one of my all-time favorites, which is another venture investor named Josh Wolfe who runs Lux Capital and his idea of the directional arrow of progress. Which is one of the most obvious ideas after the fact that you can encounter, which is basically just like a lot of these technology trends are plotting. You can see what's going to happen based on what's happened in the past.
+
+In my world, the cost of a commission for a trade-in, a brokerage account is a great example of this. You can just see technology making that cost go down every couple of years, and Robinhood's genius was they said, let's extrapolate this directional arrow to its endpoint and go to zero. Let's jump the line.
+
+I think jumping the line on these directional arrows or progress is a really interesting way to generate business ideas. In many ways, that's what we're trying to do with Canvas.
+
+David: We've learned so much from covering China tech on Acquired. That's one thing that really strikes me. The difference between the Chinese startup tech and venture ecosystem is that's the primary thing that I think people think about over there. What's the trend? What's the plot? Where is it going to end up? That's not as common here in the West, but should be.
+
+Patrick: When you meet these people—I'm choosing one. I realize that wasn't brief—trying to just distill something down. There are 10 of those per person often. That's the most fun part of this whole thing is just trying to extract these ideas.
+
+Ben: Patrick, you really should start some kind of knowledge platform to explore ideas with passion like that.
+
+Patrick: It's a great idea. I might take you up on that.
+
+Ben: I love it. Patrick, I teed you up earlier to tell us about a new podcast. Lay it on us.
+
+Patrick: Yeah. Starting—I guess it will have already come out when this comes out—on Thursdays, it'll be on the same feed as the Invest Like The Best Podcast. We'll call it like a mini-series or a sub-series, which is going to be called Founders Field Guide. From that point forward, Tuesdays will be for conversations with investors, and miscellaneous others.
+
+Thursday's will be for conversations with founders, CEOs, and builders—maybe builder is the right word. It'll often be a founder. What's interesting about this is that it's often quite hard to get investors talking, and that's a fun challenge. It's not hard to get founders talking.
+
+The access and the depth of conversation so far have been exemplary, and I think we've already recorded maybe eight. There's just going to be a wide, wide range of really interesting private and public market CEOs and founders that join us for that.
+
+The whole idea will be lessons from the building. Their stories, portable things that we could take away for other people, and trying to draw the lines between concepts, industries, and ways of building things that are valuable to people. We're really excited about that. It'll be every Thursday, and then who knows where we go from there.
+
+I think we'll end up publishing a lot of audio content in a variety of different ways as we do this learning process ever more transparently and in public.
+
+Ben: That's awesome. I can't wait to listen. Let's move to grading.
+
+David: As Acquired listeners know, well (A) we're not going to let Patrick out of here without doing some grading, but (B) for acquisitions, companies, and deals that are more of a history, we will render a definitive grade on how it's gone.
+
+For situations that are still fluid, we predict scenarios in the future and paint the A+ versus the F scenarios 5, 10 years out. I think it'd be fun to do both of these with Patrick here. The first spin on this is looking at your own tenure over the last couple of years as OSAM CEO and what you've done. How would you grade yourself?
+
+Patrick: I think there's just always room for improvement. I think we have a platform now that has an extremely bright future and has a very large potential future. It's still very early. We don't share how much we're managing on that platform. It's a significant amount.
+
+Ben: This is Canvas?
+
+Patrick: Canvas, yeah. That has put us in a position. That's just different from most long-only asset managers. That's a sleepy business to be in like more of the market is just hiring Vanguard, so I wouldn't really want to be playing in that space long term.
+
+I think we're in a position now that we can benefit from technology versus being disrupted by it, and therefore, there are some points for that. But as with everything, it's all about execution, and we're in the very early days. I think I'll give us a tentative B+ to give us lots of room for improvement, but because we have established something that we can really see building on for decades to come. I think that's hard to do, and the team—to be clear, not me—has done that building in insane fashion over the last 18 months. It's wild what they built with a relatively small team.
+
+David: How many engineers do you guys have?
+
+Patrick: I'm ashamed to admit it because we're trying to build this team out a lot. Full-time engineers, maybe five. I think people that see it think we have 30. These people are absolutely cranking. The research team is very technical, so that's been a huge help, and they've been a huge part of this as well, but it's a team that's going to grow a lot.
+
+Ben: To help us put some shape to the Canvas business—you don't have to talk in numbers at all—how do you price it, and how does that compare to the pricing of a traditional asset manager? What's the scaling factor on that?
+
+Patrick: It's incredibly simple pricing, which I think people like. It's dynamic. It depends on the settings you choose, and all we're doing is we establish a minimum fee, which is very competitive with whatever and low. We will go below that minimum fee, if the settings are the most vanilla, will still charge that number.
+
+Above that, it's simply a pro-rated version of our normal fee for our services. If you're allocating more away from the very basic public market index portfolio, we do some of that too, a lot of that. If you're allocating away from that, the more different you get the higher fee you pay. It's a sliding scale up to a max where even the max is lower than what a lot of long-only asset managers would charge.
+
+It's dependent on the settings you choose. We don't charge for extras. Everything is included in one asset base price. Clients have really liked that because it puts them in the driver's seat if the fee is a really important variable to them, that it's under their control, and we're a platform that fulfills that we don't dictate the terms. They can decide themselves and that's worked really nicely.
+
+In terms of scale—again, we talked about this earlier—the reason there's no performance fee in this is if you told me we had to invest $100 billion (to use an absurd number) into this platform, we could do it over the next year. In many cases, it would be a crap ton of work, but in many cases, we would still end up owning a modest amount of these huge public companies, and hopefully not affecting their prices. It scales extremely well to very large numbers, and that's how we think about it.
+
+David: Cool. All right. In the future, what's the A+ scenario for OSAM and you over the next five years? What's keeping you up at night? What's the nightmare F scenario?
+
+Patrick: Well, I guess the F scenario is the easiest one to think about. That everything just stops working. The software fails, there are large errors, technical problems, team problems, or whatever and others just do a better job than we do. Again, everything's execution.
+
+The F scenario is that we fail, and no one uses our service. It's very hard for me to imagine a failure scenario in—I'll call it the media side—because I'm just going to keep doing this unless I get sicker and firmed or something, I think it will work to some degree.
+
+I guess the failure would be the status quo. That it just doesn't change from what it is today. It doesn't help people any more than it does today. It's no more interesting. It's no more navigable as we talked about earlier, but I can assure you, that the F scenario is not going to happen.
+
+That would be F. A+ is hard for me to talk about because of this growth without goals idea that I live by, which is I really don't think about this thing. We don't have 5- or 10-year goals. Personally, for me, they're wrong and dangerous. I’m much better at putting one foot in front of the other and having really strong habits that we can hang our hats on.
+
+I try to engender that in our businesses as much as I can. I was a video game player growing up. The furthest I'll go is think about them like boss battles. What's the next boss that we face? That's always very present, near term, and an objective. That's about as far of a goal as all set or try to reach. The rest is more about principles, and we've talked about all those things already. Public learning, clear value delivery, customization for investors, flexible technology, chassis, and platform. Those are all key things that I just want to keep getting better at.
+
+What does that look like in 10 years? I honestly have no idea, and I won't let myself speculate or think about it because I just think that gets me off course.
+
+David: Okay. We got one last question for you that we have to ask. Patrick, what's the kindest thing that anyone has ever done for you?
+
+Patrick: It's so hard to answer. I've done this a few times where I've been asked the question, and I've always wanted to give a new answer. I try to optimize for novelty. The most common answers to these questions are people making a bet on other people early in their lives. That or something family support.
+
+I love those answers. Whenever someone mentions some bigwig making a huge bet on a 20-something-year-old with no real evidence of prior success, that makes me feel really good. That happened to me, so many times. The true answer is something my cousin did for me, which people can listen to in other podcasts. He introduced me to my wife, my best man, and several others in a really interesting fashion in college. He's my cousin, so he was obligated to bring me out for one night, but he brought me out for six months straight and just made it his personal mission to get me set up socially, and my marriage resulted.
+
+I'm extremely thankful to him. His name is Tim. And then just the ongoing kindness of my family, my wife, my kids, and my extended family. They're the real answers, but they're boring. I've given them before. I'll come up with a unique one that's business-related.
+
+Actually, we referenced it earlier, and then we didn't circle back, and so I'll close the loop. This has to do with the Royal Bank of Canada. When I was 23 or so, this was right after the financial crisis had happened. The market had crashed. Like I said, they were our largest client. We manage money for everyday Canadian citizens, through mutual funds.
+
+In many cases, in the worst case, at the worst time, 60% of their money was gone. We were the ones that were responsible for that money. The market obviously was down a lot, but so were we. That was painful.
+
+What happened was I was sent around all over Canada. We had all hands on deck, and I was a free resource. I was tasked with effectively going and explaining to a large chunk of Canada as a whole why we sucked so bad.
+
+David: You're at 23 at this time?
+
+Patrick: I was 23. As I mentioned, I was introverted, though I was always a good public speaker. That's part of the reason they sent me, but I was green. I was really scared about being asked questions that I couldn't answer because I didn't know the strategies well enough.
+
+I went on a three-week tour. The kindest thing I think was this group that I traveled with from the Royal Bank. I'll do a special call-out to a gentleman named Bill Hill. Bill was the one who was the head of a major group there at RBC at the time. He was with me the whole time, and then it was a rotating band of other people.
+
+He took a big risk doing this. There were no other 23-year-olds explaining the performance of this magnitude at this scale to a whole country at the time. I was legitimately scared. I was really worried about flying up to this trip. I brought way too many suits, and he made fun of me for having like a carry on suitcase. It was an ordeal.
+
+Bill really held my hand through that whole process, coached me up in an extremely positive way after every presentation. I probably gave 50 presentations to rooms, so 50–150 people. Every presentation, he would let me suffer through the bad parts. There was one time I tried to quote like a German philosopher and I forgot the quote in the middle.
+
+He let me suffer through it. He didn't try to come to save me. He let me get through it and then coached me afterward. If he ever listens to this, he'll be surprised that this is my answer, but it was very formative for me of just gutting something out, getting better, realizing that you just got to keep going and learning a lot in a very compressed period of time because of that pressure.
+
+He didn't have to do that. He took a big risk by doing it. I could have sucked for all he knew and thankfully I didn't. But I grew up a lot in that short period of time. I remain very thankful to Bill and the whole RBC team for holding my hand through that process.
+
+Ben: I can't imagine getting 50 presentations about that to rooms of 50–100 people. You're a better person for it. I'm sure.
+
+David: Indeed, yeah.
+
+Patrick: Everything after that was a little more straightforward, but it was a good trial by far and great kindness.
+
+Ben: I love it. Patrick, I normally wrap the show up by letting folks know that if they like Acquired and they want to go deeper, they can become an LP. Why don't I turn that over to you, and if you're open to it, let people know why they might think about that.
+
+Patrick: Yeah. I'm a wholehearted supporter of this thing. It's so simple, which is this little deeper dive into what you guys have built that, I think—at least from my perspective—is actually even more enjoyable than the main show. It feels special to me because I know that everyone listening to it has opted in and gone the extra mile to support you guys a little bit, but also is just hyper curious. The episodes are as good or as better than the main ones. To say nothing of all the other stuff that comes with being an LP.
+
+It's one of the best little small chunks of money that I spend, and I know a ton of these LPs that have done the same because I've sent them there. I would just encourage everyone listening to check it out. It will break your wallet, but it will definitely expand your mind. If you're interested in these topics that we've been talking about today, how businesses get built, and how this investing business works. I think it's awesome. You didn't coach me on this. That's entirely my opinion, and I highly encourage everyone, go become an LP.
+
+Ben: Well, thank you for taking that ball I passed you without letting you know that the pass was coming.
+
+David: It's like a LeBron assist there.
+
+Ben: It’s amazing.
+
+Patrick: I believe in the LP.
+
+David: Thanks, Patrick.
+
+Ben: Well, thanks so much, listeners. If you like the show, feel free to subscribe. If you like Patrick’s show and want to tell folks, hey, this is where you can get more background on Patrick. Feel free to share it from your favorite local social media hilltop or with a friend or co-worker.
+
+Go subscribe to Invest Like The Best. It is absolutely safe to say I've learned more from Invest Like The Best than any other podcast. It is the one that I have the highest percentage likelihood to listen to any given episode, just because I know—and I have a deep trust—that if Patrick is having someone on. I'm going to learn something radical and new. Even if it's a person I know like Chetan or that I've heard on 10 different talks because I'm obsessed like Michael Mauboussin. There's always going to be the reason that you decided to have that person back on. It's an amazing show. I know many of you already listen but check it out if you don't.
+
+David: Amen.
+
+Patrick: Guys, thank you so much for having me. This has been awesome. I really appreciate it.
+
+Ben: Yeah. All right, listeners. With that, thanks again to Teamistry, a podcast from Atlassian that tells the stories of teams who work together in new and unexpected ways to achieve remarkable things. If you want to listen, you can click the link in the show notes and our thanks to Teamistry for their support. We'll see you next time.
+
+David: See you next time.
+
+‍

@@ -1,0 +1,1065 @@
+Ben: Welcome to season 9, episode 4 of Acquired, the podcast about great technology companies and the stories and playbooks behind them. I'm Ben Gilbert, and I'm the co-founder and managing director of Seattle-based Pioneer Square Labs and our venture fund, PSL Ventures.
+
+David: And I'm David Rosenthal and I am an angel investor based in San Francisco.
+
+Ben: We are your hosts. Today's episode is 150 years in the making. David, somehow, we missed this IPO if or when it happened.
+
+David: Can we still get secondary shares and put together a little SPV? 
+
+Ben: It might be a spin-off or something like that at this point. At least the Standard Oil that we will cover today never IPOed. It was privately held the whole time. Its financials were kept very secret. That must be why we have missed it until now, David.
+
+David: Yeah. Must be. 
+
+Ben: This episode on Standard Oil is of course the oil monopoly founded in the 1870s by John D. Rockefeller, the wealthiest person in modern human history. Embarrassingly, until I had started to do the research, I didn't realize the oil in Standard Oil did not refer to gasoline, at least until much, much later in the life of the company.
+
+David: Model T was 1910 or so.
+
+Ben: Totally. Standard Oil predates the Ford Model T by 40 years.
+
+David: Yeah. John D. becomes the wealthiest person in modern human history before gasoline. This is a different oil.
+
+Ben: Yeah. Gasoline helped later. It turns out that compounding can show up especially when the second business line gets layered on top, but we will get into it.
+
+Listeners, the other thing that is crazy that I want to point out is I didn't realize how much Standard Oil is very much with us today despite being famously broken up. The parts went on to become Exxon and Mobil, Marathon, Amoco—which of course is now a part of BP—Chevron, and several other companies. 
+
+When you look at a gas station, you are probably looking at some remnant of Standard Oil, so this one will be at least a two-parter. It turns out that the company responsible for creating the entire modern energy industry has a lot of wild stories.
+
+David: All right, I would like to welcome our presenting sponsor for all of season nine, pilot.com. Pilot is the backbone of the modern financial stack for startups and is backed themselves by all-star investors like Sequoia, Index, Bezos Expeditions, and Stripe. They are truly the gold standard for start-up bookkeeping. Ben, do you know who else started their career as a bookkeeper?
+
+Ben: John D.
+
+David: John D. Rockefeller, that's right. Today, he would have started his career working for Pilot. Now, over to our conversation with Pilot co-founders, Waseem Daher and Jessica McKellar. 
+
+For nearly every technology startup, finance and accounting is not one of the things that matter and that you should do in-house. Startups have been outsourcing their finance and accounting for decades. What changed that enabled you to actually build Pilot as a technology company around this?
+
+Waseem: There are really two trends. The first is the rise of FinTech, the rise of SaaS, and the rise of the cloud in this back-office stuff, meaning even 10 years ago, if you look at the landscape, Stripe didn't really exist, Expensify didn't really exist, and Gusto didn't exist. Your bank statement was literally a thing that arrived in an envelope at your home or your office. 
+
+The fact that there are these best-of-breed electronic systems that you can use to help you run your back office and that they all have APIs is what enables a key portion of what we do, which is the ability to programmatically ingest and transform data from a variety of data sources. 
+
+The second thing though is really a shift in the consumers' behavior. Even 10 years ago, probably what the business owner wanted to do was to go downtown with a shoebox of receipts to visit their accountant in person and talk to them in an office with a lot of mahogany or whatever. Actually, what the business owner wants now is the convenience of it being done electronically, of it being done well, and of being able to take care of the stuff on Saturday at 11:00 PM in their pajamas.
+
+David: You can learn more about Pilot and whether they can help your company eliminate the pain of tax prep and bookkeeping by going to pilot.com/acquired. Thanks to Waseem and Jessica, all Acquired listeners—if you use that link—will get 20% off of your first six months of service.
+
+Ben: Love Pilot. All right. Listeners, before David takes us in as always, this show is not investment advice. David and I may have investments in the companies we discuss.
+
+David: Unlikely in this case.
+
+Ben: This is for information and entertainment. Let us know if you find Standard Oil a stock ticker. We'd love to go check it out. Without further ado, Standard Oil.
+
+David: Maybe PitchBook has some data on them. All right. I just want to give a lot of love to Ron Chernow who is one of America's greatest historians, biographers of Hamilton.
+
+Ben: He wrote the book that Hamilton is based on, the play, right?
+
+David: He wrote the book that Hamilton is based on, yeah, and also wrote Titan, the definitive biography of John Davison Rockefeller. That is the main source for this episode.
+
+Ben: It's so good.
+
+David: I think the perfect place to start is with one of Chernow's quotes at the very beginning in the introduction to Titan where he says, "The story of John D. Rockefeller transports us back to a time when industrial capitalism was raw and new in America, and the rules of the game were unwritten."
+
+I think more than anything we've covered on this show, Standard Oil wrote the rules.
+
+Ben: The way business is done.
+
+David: They wrote the unwritten rules. Then, Congress wrote rules about them, but we'll get to that.
+
+Ben: The era that we should think of here, this isn’t the wild, wild west. This is the wild, wild east. We're 30 or 40 years after our nation was founded in the early 1800s. The Civil War hasn't even happened yet.
+
+David: No Texas, no California.
+
+Ben: Yeah. Certainly early in corporate law, but we're early in all forms of human organization in the United States.
+
+David: We start in 1810 in Ancram, New York, which is actually not that far from Manhattan. Back in those days, it was a different world. We start there with the birth of William Avery Rockefeller.
+
+Ben: Big Bill.
+
+David: He would also go on to have another nickname. His other nickname is Devil Bill, which he got because of his profession that he would grow up to participate in. Of course, we're talking about John Rockefeller's father here. Devil Bill, Big Bill was literally a snake oil salesman. People use that term like, oh, Ben, he's a snake-oil salesman.
+
+Ben: This is where the term comes from.
+
+David: He sold medicines out of his pack that he rode into town on a horse, professed to be a doctor but didn't do anything, and then he got out of town before anybody realized. One day, when he was 26 years old in 1836, he rolled into a new unsuspecting community to offload his goods on, shall we say, Richford, New York, far, far away in Central New York State. There, he encounters the Davison family. The Davisons are quite unlike Bill and the Rockefeller clan.
+
+Ben: They're upstanding.
+
+David: They are upstanding. They are devout, religious Christian followers. They have a different moral compass than Bill, shall we say.
+
+Ben: Yeah, and they're wealthy
+
+David: That is the other thing. They are quite wealthy. Young Bill's or Big Bill's eyes light up when he sees the Davison ranch. The story goes—I think this is actually true. One of his tricks of the trade (if you will) was he would pretend to be deaf. He would carry a chalk slate around his neck, write on it, and pretend to be deaf and couldn't speak. He's at the Davison house and he's seated, doing this little charade.
+
+He hears the second eldest daughter of the Davisons, a woman named Eliza—a pretty young girl—say, I would marry that man if he weren't deaf and dumb. Miraculously, oh my God, the beauty of young Eliza cures Bill of his affliction. He can speak and he can hear. Amazing. The patriarch of the Davison family, one John Davison—remember that name—is a little suspicious of what's going on here, but nonetheless, Bill woos Eliza and they are married shortly thereafter. 
+
+They get married. They settle down. Bill built a house, a shack. Literally, people built their houses back then, little ways down the road.
+
+Bill's like, well, we need a housekeeper here. I've got this old friend, Nancy. Why don't we have Nancy move in with us and be our housekeeper? It turns out Nancy was his girlfriend.
+
+Ben: Oh, this old friend can help with the kids, the housekeeping. All right. We're painting the picture here. You've got this unbelievable swirling concoction of the well-to-do, religious-by-the-book mom side of the family. Dad side of the family, not quite as upstanding of a human being.
+
+David: But here they mix. One July evening, all of these forces swirl together. On July 8, 1839, Eliza gives birth to her second child. It's the first son. They decided to name this child after Eliza's father who was John Davison. They named the boy John Davison Rockefeller. Oh boy does little JD have a lot of both John Davison and Wild Bill Rockefeller in him. 
+
+On the Rockefeller side, little John is totally captivated and totally dotes on him. He thinks he's the best. For the rest of his life, Rockefeller would intensely defend his father. Chernow would write that in no area did Bill impress his eldest son more or did his eldest son prove more impressionable than in the magical realm of money. Big Bill had an almost sensual love of cash and enjoyed flashing plump rolls of bills. Indeed, one of Bill's companions at the time would say of him, "The old man had a passion for money that amounted almost to a craze. I never met a man who had such a love of money." Except, of course, for his son in the future.
+
+Ben: This is where we start to get into the ways in which his son would become like him but different. Like him is, of course, in this love for making as much money as possible. The way in which it is different is that Bill would come back from these trips. He would have a fat wad of cash, he would take the $100 bill, and he would put it on the outside. He'd make sure that everybody knew that there was at least one, maybe lots of $100 in this fat wad of cash. 
+
+Whereas John D. would grow up and detest shows of wealth. The smallest house on the nicest street in Cleveland. He mixes his mother's side of the family into these lessons from his father.
+
+David: Totally. Speaking of his mother, the Davisons were Baptists. That was not unique but pretty different from some of the original Protestant groups that had come to America a generation or two before. The Baptists, you think of church revivals. You think of big, showy, and theatrical, the whole point was to evangelize and to recruit. They didn't think that they were the chosen people that were going off to the new land to be by themselves. They're like, no, we’re going to take over the world here. We want everybody on our side.
+
+Ben: It was an evangelical religion.
+
+David: Totally. Here's where these two sides of John's maternal and paternal sides seem like oil and water. They're not. The Baptists are all about the money. They think money is also great. They just think it's great for a different reason, which is that the more money, the more influence, the more followers we can recruit into the fold.
+
+This also has a huge impact on JD. He would say later, "I believe the power to make money is a gift from God—just as are the instincts for art, music, and literature—to be developed and used to the best of our ability for the good of mankind. Having been endowed with the gift I possess," the gift to make money, "I believe it is my duty to make money and still more money, and to use the money I make for the good of my fellow man."
+
+Ben: He heard the word duty in there about making money that God has asked him to go forth and make as much money as humanly possible. It is this incredibly unique thing about John D. Rockefeller when you describe him as one of the wealthiest businessmen of all time and a philanthropist, it's very different than the way that you would describe today's billionaires as wealthy people. It's not one then the other. It's not career and then philanthropy. 
+
+John D. held these things to be intertwined, that he should go make as much money as possible and to be simultaneously incredibly philanthropic. The purpose of making this money was to be philanthropic as if he were a better charitable allocator than anybody.
+
+David: In every dimension—wealth, power, control, philanthropy, and impact—John D. makes Bill Gates or Mark Zuckerberg look like children. It's wild.
+
+In 1853, when John is 14 and just on the cusp of manhood, Bill sweeps in, comes back from one of his trips, and announces that he is going to move the family away from New York to Ohio, specifically to Strongsville which, Ben, you know is right next to Cleveland.
+
+Ben: For sure. Strongsville, Ohio is one of many wonderful suburbs of the Cleveland area.
+
+David: This is like your homecoming, this episode.
+
+Ben: It's true. A lot of this episode takes place in places that were within a half-hour drive of where I grew up.
+
+David: It's so great. The stated reason for the move is that Bill wants to go open new territories for his business. But there's actually another reason, which is he's got another new girlfriend back in New York named Margaret. He wants to keep the families more separate, but he wants to marry this new girlfriend. This is the world that America was back then. He's like, well, if I just get a state border between the two of them, great. I don't see why I can't have two wives.
+
+Ben: That's true. There's no internet. State registries are probably pretty hard to go look something up in a different state.
+
+David: They moved to Ohio. At first, before Bill marries his second wife concurrently (Margaret), he sends John and his little brother, William, to a boarding house in Cleveland to go to a real high school. That goes on for about two years.
+
+Then, when Bill actually marries Margaret, he sends a letter to John and says, plans have changed. I can't really pay any more for you and William to go to school, so I'm basically deputizing you now as head of household. You're going to have to drop out, get a job, and find a way to support the family. Best of luck, son.
+
+Ben: Talk about a wild thing to just hear and totally hijack your life plans.
+
+David: Totally. This really was not what John was planning, but remember, he's got this love of money. He's like, what can I do to make money? What if I stay close to the money? He pays $40, does a three-month crash course over the summer in bookkeeping, and decides that he's going to become a bookkeeper. This is going to be his path to supporting the family. 
+
+Ever the sensible fellow, when he finishes his training and he's off to go get a job, he decides that the way he's going to job-search is he gets a directory of all the businesses in Cleveland, he looks up what their credit ratings are, and decides that he's only going to target the ones with the best credit ratings. He is smart.
+
+Ben: To the extent that he thinks that access to capital is the thing that he wants to be close to. You may as well only be a part of businesses with the best access to capital.
+
+David: Strength leads to strength, right? The story goes that he pounds the pavement for six weeks, and he goes to every firm on his list. They all reject him, but he's undeterred and he just starts back up at the top. He goes to see all these companies at least two times, some of them three times.
+
+Finally, one company, a partnership of Hewitt and Tuttle—they probably just got so tired of the 16-year-old kid banging on their door. They're like, all right, fine. You can start. You can work here. You can be a junior bookkeeper. This happens on September 26th, 1855. Get this, for the rest of Rockefeller's life, he celebrates September 26th as his job day.
+
+Ben: I love this. More sacred than the birthday. Job day is like the day he was baptized into capitalism by being able to make money in the world.
+
+David: Absolutely. Literally, this is a big deal every year in his life. It's bigger than birthday, it's job day. Except he's starting in labor, not in capital. But he makes the transition pretty quick, don't worry.
+
+He gets to work. He becomes basically the best bookkeeper that history had seen before, at least until Pilot. Chernow writes about this. "John betrayed a special affinity for accounting and an almost mystic faith in numbers. For Rockefeller, ledgers were sacred books that guided decisions and saved one from fallible emotion." Of course, they're sacred. The numbers in the books are money. It's the divine, God-given path to be close to the money and get as much of it as possible.
+
+Ben: Absent the divinity, this is very Buffetesque. At a young age, having this respect and obsession with the numbers.
+
+David: Supposedly, when John was a younger kid, he would also go to the general store, buy a big block of candy, cut it up into little pieces, and then sell the little pieces away to other kids, just Buffett and the sticks of gum.
+
+He goes to work in this firm. What is Hewitt and Tuttle? They are a merchant trading firm that specializes in produce commodities like foodstuffs, things that people would eat—meat, vegetables, produce stuff that's coming off of the farms going into cities like Cleveland. I assume they mostly dealt in foodstuffs that came into Cleveland to then be sold in stores and consumed by the newly-rising urban populace.
+
+John D. is rising quickly through the ranks. Pretty much immediately, they give him a 50% raise because he's doing so well even as a little kid. At the beginning of 1857, not quite two years after John joined the firm, Tuttle (the junior partner) left to go seek his own fortunes out from under the thumb of the senior partner, Hewitt. Hewitt's like, all right, John, you're going to take Tuttle's role here. John is like, that's nice. Are you going to pay me like a partner? Hewitt's like, dude, you're 17 years old, no.
+
+John is undeterred though. This is pretty crazy. He's head of household, supporting his family. He's already making a lot of money. He's got this great role. But the next year, in 1858, he's like, I think I'm doing the work of a partner in a merchant trading firm. I'm going to go be a partner in a merchant trading firm. 
+
+He hooks up with a much older gentleman named Maurice Clark that he had met doing his bookkeeping training. They go in 50-50 on a new merchant firm called Clark Rockefeller.
+
+Ben: And doing the same thing, still produce, meats, trade, and foodstuff?
+
+David: Exactly. Foodstuffs and produce. Things go okay at first for a couple of years.
+
+Ben: What is this, 1859–1860?
+
+David: Yeah, 1859–1860. They managed between the two of them to put $4000 in capital into the firm to start the trading operations, which was a lot of money. Rockefeller put in half of it.
+
+Ben: Wasn't Rockefeller finding ways to borrow from Devil Bill.
+
+David: Devil Bill definitely had his sticky fingers in all this that is for sure. Things go okay, but they have some losses. They actually had to bring in a third partner (I think) in 1860 to shore up some losses and bring more capital into the firm.
+
+Ben: Just to put a point on that, the reason the capital is so important is they basically need to have enough on hand to make the purchases and then hold the inventory until they can go and sell it. There's a cash flow cycle there that they need to have enough capital to be able to manage that cash flow cycle.
+
+David: Yeah. Things are going okay. Then, in 1861, something very big happens in America.
+
+Ben: North goes to war with the South.
+
+David: Yeah. Fort Sumter, the Civil War. One, Rockefeller doesn't fight in the Civil War despite being 21 or 22 years old at that point in time—prime fighting age. He hires a substitute. There was technically a loophole. If you were head of the family, you didn't have to fight.
+
+Ben: Rockefeller's careful in how he messages the strife going on in his family. He never throws his dad under the bus. He always holds everyone, at least outwardly, in the highest of esteem. The way that he dropped a hint here at some point is he says, "How could I go fight in the war when the business would die? It was young, it was fledgling, and so many relied on it." That's him alluding to, look, my whole family needs this business to stay alive.
+
+David: He doesn't go fight, but for his business that he needs to survive, the war is a pretty big boon for commodity prices, specifically foodstuff prices.
+
+Ben: You got to supply an army with food somehow.
+
+David: Yeah. There are a lot more orders and demand for pork belly and the like coming in, thanks to the war. This drives up the price of foodstuffs through the roof. In 1862, the first full year of the war, the firm, Clark and Rockefeller, made a trading profit of $17,000 which I believe was 4 times all the money that they had made in all the previous years of operations of the firm. They are living large. They're swimming in profits. They can't buy enough. They got to put this money somewhere. So what do they do?
+
+Right around this time, people in Cleveland are starting to hear about an interesting development that's happening not too far away in Western Pennsylvania in a tiny little hamlet called Titusville. Ben's obviously smiling here. Some of you are maybe smiling.
+
+Ben: Yeah. I just did a zillion hours of...
+
+David: Probably, most of you are like, what are you talking about here? Titusville, Pennsylvania, I have no idea where you're going with this.
+
+Ben: Everyone knows, David, that the center of the oil world is not the Middle East, Russia, Alaska, or Texas, but Western Pennsylvania.
+
+David: That's right. I had no clue until reading Titan during the research for this episode that for decades, the entire center of the oil industry in the world was this small little town.
+
+Ben: For 50 years.
+
+David: Literally. There were some producers, some oil rigs elsewhere, but very small. Most of the oil in the world came from Titusville, Pennsylvania. Just wild.
+
+Ben: Not just Titusville, but Oil Creek and other areas of Western PA that had oil discoveries.
+
+David: This is all going on. It's not that far away from Cleveland. For the first couple years of this going on up until the Civil War, the whole industry is just based there in Titusville. They drill for the oil, the oil comes out of the ground, they refine the oil, and they make kerosene.
+
+Ben: When we say they were refining, it was a pretty rough process. I think pretty early, they figured out you could use sulfuric acid to refine and separate the kerosene out, but a crap ton of sulfuric acid and doing this in large wooden boxes with cracks in it everywhere. It's just sloshing around and spilling all over the ground. It is a gnarly process of "refining."
+
+David: Super gnarly. Right as Rockefeller and Clark have all this money that they need to have something to do with, people come up with the idea. With the oil they were refining into kerosene, the main use was to burn in lamps. Where do you need lamps and artificial light more than anywhere else? You need it in cities. People realized you don't actually have to refine the oil in the same place that you drill for the oil.
+
+All of a sudden now, people are like, wait, we can buy the crude oil that comes out of the ground from Titusville, bring it into our cities, refine it in the cities, and then sell the kerosene in the city. That's a really good business. That's a good place to park some capital.
+
+Ben: At the same time, all these interesting tailwinds are happening where cities are blowing up. You have this industrial revolution that's happening where people don't live in rural areas and farm anymore. They're starting to be a lot more industry in cities. You have, for a while, only rich people could basically get oil to burn at night. For most people, the sun would go down, they'd have no light, and then they'd go to bed. But whale oil—
+
+David: And then they would use whale oil from the whaling industry.
+
+Ben: Isn't that where Hathaway of Berkshire Hathaway—?
+
+David: Yes, that's where Berkshire Hathaway came from.
+
+Ben: But kerosene is way cheaper than whale oil which has a massive shortage. It's obviously terrible that we kill whales to harvest whale oil. Way cheaper, way more plentiful. It's a pretty clean thing to burn relative to the other stuff that people were trying to burn.
+
+David: This is huge. The keyword is that it's cheaper, and of course, easier to drill into the ground than to harpoon a whale.
+
+Ben: Yeah. This is an infinite resource here.
+
+David: But plentiful is the keyword. Like you said, it was only rich people that use whaling oil that they could have light at night, but with the new demand with the Civil War going on and then industrialization afterward, you need light for commerce, for industry. It's not just so that rich people can have light. You need to operate factories and do all this stuff. You need light.
+
+There's a lot of demand, and kerosene is the answer. Rockefeller was like, oh okay, cool. This is a new commodity. They start trading a little bit—these are Clark and Rockefeller—and they start making some profits.
+
+Ben: But of course, Rockefeller is feeling a little hesitant to do too much of it because he's like, this is speculative. Who knows when this will dry up? There have already been some boom-bust cycles in this. Foodstuffs are our thing, so I don't want to dabble too much in this speculative weird oil thing.
+
+David: Initially, they were trading crude, but then like I said, people started to realize, wait a minute, we can refine in the cities. This is really early knowledge. This would be like in 2011 if somebody came to you were like, hey, there's this thing called Bitcoin. Don't just buy it, but I know how to set up rigs to mine it. Wait, why don't we just take some old computers you have and mine them? 
+
+This is really hard-to-get knowledge. It just so happens that the one guy in Cleveland, a guy named Samuel Andrews who knows how to refine oil, is buds with Rockefeller's partner, Clark.
+
+Ben: That works out. He's a chemist, right?
+
+David: He's a "chemist," yeah.
+
+Ben: But there's real science involved in applying the sulfuric acid and separating the kerosene from the gasoline and other crap that's leftover that you don't have anything to do with.
+
+David: Which by the way, they just pour that stuff into the river.
+
+Ben: Totally. In fact, this is a fun little Cleveland trivia. The Cuyahoga River caught fire many times. There's this Great Lakes Brewing Company beer called Burning River Ale.
+
+David: This is where it comes from.
+
+Ben: Totally. Because under the cover of night, these refineries would have all this extra gasoline leftover—cars wouldn't be a thing for 30 or 40 more years—they thought the gasoline was useless, and they would just drip it into the river. Awful.
+
+David: Just wild. Andrew is the chemist who knows how to refine kerosene. He's buds with Clark. He goes to Clark one day in the office—the merchant office that they have—and he asks him. He's like, hey, I think it'd be a pretty good investment. I know how to do this. Nobody else around here really knows how to do this. I think it'd be a good investment. Why don't you invest in me? We'll set up a refinery and we'll start refining here in Cleveland.
+
+The story goes that Clark is like, look, I’m not too interested in this. But Rockefeller overhears what's going on. He pipes in and he's like, hey, actually, I think that's not a bad idea. I'm interested in that. Clark, of course, knows that Rockefeller is really good at this stuff. He's like, okay, fine. They turn around and they invest $4000 on the spot to set up a new refinery.
+
+Later that year, they opened the Excelsior Works refinery in a strategically chosen spot in town. Ben, you'll probably know exactly where this is.
+
+Ben: In the flats, right?
+
+David: Yeah. I think in the flats. It's an area that has access both to the Cuyahoga River and to the Terminus of new rail lines that are going into Cleveland.
+
+Ben: In a super industrial area. Actually, in the last few years, there has been an amazing amount of renovation and cool stuff that's going on there. You have this interesting confluence of the river, everything leftover from the Standard Oil days and the steel boom that happened in Cleveland, and now this redevelopment. It's totally the city area that's up against the waterfront.
+
+David: Interesting. We’ll have to go do a field trip there.
+
+Ben: For sure.
+
+David: We'll do a TrovaTrip. He's like a pig in the mud here. He was a bookkeeper. He's so meticulous. He loves money. He loves profit. He was focused on trading before, but now, he's got this operation, this refinery. Literally, he’s the Morris Chang of oil refineries. He's experimenting with constantly tweaking the process. 
+
+Andrew, the chemist, is like, dude, I'm the technical talent, but Rockefeller is like everything around it—the operations, how crude comes in, where things are located in the factory. He's A/B testing. He's doing all sorts of stuff. He's always looking for any efficiency, and it's all with a view to it. It's not just better is good. It's all the view to profitability. We want to run this as lean as possible, make as much money.
+
+Ben: God told me to make a profit, and I am here to make a profit. By the way, put a pin in that Morris Chang thing because there's an interesting way that they are very much like TSMC that I want to talk about later.
+
+David: This is so different. There are other people that are setting up refineries in Cleveland and elsewhere, but they don't care about optimization. They don't care about efficiency. They're just like, look, hey, it's a gold rush. Give me the gold and I'll just take as much of it as possible. If it goes away tomorrow, that's fine.
+
+Ben: The high-margin dollar’s just flying out of the ground.
+
+David: All of this—the behavior of the other folks—causes huge gyrations in price. It really is like the early days of Bitcoin. Still today in crypto, things are flying around all the time. Prices could be $12 a barrel or $0.12 a barrel for oil.
+
+Ben: It all depends on two things—one is who found what, and two is what do people believe people have found recently? Prices would be impacted by word of mouth traveling and saying, hey, I heard there's a big gusher going on in this city right now. People would be like, well, I guess I'm not going to buy for a while because I heard there's a big gusher and so prices are going to go down.
+
+David: Yeah. Rockefeller though just got this vision where he's like, oh man, the more profit I make, the more capital I can put into this, the more oil I can hold, and the more I can produce. When the price crashes, I'll just keep buying. He buys the dip over and over again. Because his operations are so much more efficient and so much more profitable, he can afford to pay more than anybody else. He can afford to hold this stuff longer. He's really thinking long-term in a way that none of his other competitors are.
+
+Ben: When we say he's tweaking stuff and he's so much more profitable, he is both horizontally and vertically integrating. Let's talk about vertically integrating first. He's doing things like realizing, jeez, we're hiring a lot of plumbers to come in and lay this pipe every time we do a build-out. They do things like hire their own plumber, hire their own blacksmiths, and decide actually, we should do this ourselves. That way, we can save all this money on piping instead of buying it from a third-party contractor.
+
+Later down the road, he even plants a forest. He buys up a forest so that they can cut down the trees themselves to build the barrels out of.
+
+David: To make their own barrels. Oh my gosh, this is so great.
+
+Ben: They save all this money rather than buying barrels from somebody else. Then, of course, they can innovate on the barrel-making process. He figures out, oh, if we treat the wood in the forest, then it's lighter and cheaper to ship back to the refinery so we save all this money on transportation. That's the vertical integration side of things, which would be crazy enough, but he's figuring out that wait, we do this process. How can we use the whole buffalo? What can we sell the gasoline for? I think they invented Vaseline.
+
+David: Yes. I think they buy the company that invents Vaseline. Petroleum jelly, which is one of the byproducts, they commercialize it.
+
+Rockefeller found his calling here. This is divine passion. There's just one problem which is the partner, Clark. Clark is not so into how much capital Rockefeller is tying up in the business here. He's like, hey, we're merchant traders. The point is profits, and then we keep the profits.
+
+Rockefeller is like, no, reinvesting it in R&D, CapEx, and inventory. Rockefeller starts going around to all the banks and all the financers in Cleveland and lining up. He's not even using just the profits from their operations. He's getting more external financing to finance growth here.
+
+Ben: When I say both vertically and horizontally integrating, in the horizontal sense, he is obsessed with trying to figure out how to be the sole supplier of oil to the world. As soon as he figures out that there are economies of scale here, he's like, okay, cool. How do we start the flywheel, get as much capital as possible, build out as much production as possible, and start having agreements with whoever's got rights to the land as possible so we can start vending to the world?
+
+David: Yeah, and own this super strategic chokepoint of refining in cities. Clark is spooked by all this. Chernow has this amazing quote that he finds from Rockefeller. I don't know where he found this. I should look up in the notes at the end of Titan. This is so good. Rockefeller apparently wrote or said this at some point. "Clark was an old grandmother and was scared to death because we owed money to the banks." It's so great. 
+
+Rockefeller engineers a coup. Some of Clark's brothers are also partners in the business at this point in time. They get into all these arguments. John baits them one day into threatening that they should just dissolve the partnership. John's like, okay, great, let's dissolve the partnership.
+
+Ben: Because he knows that if he goes to them and says, look, first of all, I don't think you are risk-tolerant enough, and second of all, I don't think you're upstanding so I want out. He knows that he loses leverage by doing that. That's why he baits them into doing their normal thing of getting all up in a fit and saying we're going to back out.
+
+David: Totally. Rockefeller immediately goes to the local paper and places a notice that the partnership is dissolving and that there's going to be an auction for the assets of the partnership including the oil refineries. It sets up this showdown where the Clark brothers and Rockefeller bid against each other for each other's 50% stake in the business.
+
+Ben: Which is, by the way, a great way to do it. If you've got a partnership that's blowing up, all right, whoever wants to pay more to buy the other person out is the person that should get to own the whole thing. The idea of a bidding war between the two of them to figure out how to value the business makes total sense.
+
+David: Between the two principals. Rockefeller though, remember, he's been going and getting the relationships with all the banks and financiers, he lines up financing in advance of the auction. He's got basically unlimited resources, although the price ends up stressing him out. He buys Clark's 50% of the oil business for $72,500. In exchange, Rockefeller gives Clark his 50% share of the produce trading.
+
+Ben: Which by the way, he probably buys him out for $3–$4 million, something like that, in 2021 dollars.
+
+David: A good chunk of change. That 50%, that $72,500 or however you want to think about it, is 50% of Standard Oil right there.
+
+Rockefeller would say later, "It was the day that determined my career." Probably bigger than job day. "I felt the bigness of it, but I was as calm as I am talking to you now." This is what we're going to see. This man has literally solid ice running through his veins. It's crazy.
+
+This was a big price. It was more than Rockefeller wanted to pay, but this happens in February of 1865. Back to what's going on in America, two months later, General Lee surrenders to Grant, and the Civil War is over. With the Civil War over, what's less important? Commodity, produce trading. What is all of a sudden a hell of a lot more important? Oil, industry, urbanization, everything.
+
+Ben: Because all these soldiers are coming back and getting jobs in factories, you have an industrial boom here. It's interesting how Rockefeller is obsessed with I'm not a speculator. I'm not one of these people rushing to prospect various plots of land in Western Pennsylvania. It's funny that it's, I would say, a picks-and-shovels play. I guess the point to make here is he's doing the predictable, reliable, stable, very strategic part of the value chain. He's not out prospecting land.
+
+David: To just doubly underscore strategic, did Rockefeller know the war was going to end in two months? Probably. Sherman's probably marching to the sea at this point.
+
+Chernow writes, "The war had stimulated growth in the use of kerosene by cutting off the supply of southern turpentine, which had yielded a rival illuminant called camphene. The war had also disrupted the whaling industry, and led to a doubling of whale oil prices. Moving into the vacuum, kerosene emerged as an economic staple and was primed for a furious postwar boom. This burning fluid extended the day in cities and removed much of the lonely darkness from rural life."
+
+Soon, John D. Rockefeller would reign as the undisputed king of that world. He's now got the oil operations, the refining business all to himself. December of 1865, the war's over, all this is going on, and he opens a second refinery in Cleveland next to the Excelsior Works with a new name that he chooses, he wants to let everybody know that his oil, his kerosene, his business, and his operations are going to be bigger than anyone else. It's going to be the best quality and it is going to reign from sea to sea. What does he call the new operation?
+
+Ben: Standard Oil.
+
+David: First, the factory is Standard Works, and then it becomes—
+
+Ben: Oh really?
+
+David: Yeah. The first refinery was the Excelsior Works and then Standard Works is the name that he chooses. He's setting the standard.
+
+Ben: Importantly, it's about setting industry standards. For him, he was observing—I know I'm hammering home on this speculators and cowboys thing, but especially after the war, you've got all these soldiers who are trying to figure out what to do with their lives. They're going, working, and drilling. You have all these people that (I think) in the book refers to someone with a gun, a canteen, and their plot of land in Pennsylvania.
+
+I think Rockefeller is basically observing that the kerosene that could power the world is volatile in price. People are scared that it's not safe because it's being refined in questionable ways. People's houses are burning down. There's no professionalization in the kerosene industry the way that he wants to bring it. This notion of Standard is almost like the TSMC chip yield thing. Everything that comes off of our line is super high-quality.
+
+David: Totally. That is exactly the same analogy. This is not necessarily easy stuff to do. They're going to set the standard.
+
+Ben: By the way, at this point, he's now figured out that he can run the factory on gasoline.
+
+David: Oh, I didn't realize that.
+
+Ben: The Standard Oil factories are burning less coal than their competitors and using the gasoline byproduct.
+
+David: That's so great. So they're literally feeding themselves.
+
+Ben: Yeah.
+
+David: You said something a minute ago when you're talking about this. You said selling this oil, this kerosene to the world. By the very next year in 1866, America is a big market and is going to grow hugely, especially after the Civil War. Do you know what's a bigger market? The rest of the world. 
+
+Ben: Especially at this point in time. America is not America yet. It's probably 30, 40 million people. 
+
+David: Yeah, maybe if that. 
+
+Ben: All right, you keep talking. I'm going to Google this. 
+
+David: Okay, great. By the very next year, in 1866, the fledgling Standard Oil Company was already selling two-thirds of their kerosene overseas primarily to Europe, one-third domestic, two-thirds international already. 
+
+Ben: Thirty-one million people in 1865.
+
+David: Wow. They're selling most of their oil overseas. Rockefeller dispatches his little brother William, who's now working in the business, to New York City to go handle all of the export business for Standard Oil.
+
+Ben: Do you know the story about when he needed to raise, I think it was $50,000?
+
+David: Ohh, I don't know. 
+
+Ben: It's a great story. This is in Chernow’s book. Rockefeller has a bit of his father in him, sort of a flair for showmanship, and he really needs $15,000. He needs a loan pretty quickly, sort of looking around for financers for it. He dresses very nicely, he presents himself nicely, and he walks in areas where he's sure to bump into people. 
+
+At some point, someone stops his carriage and looks over and says, oh, Mr. Rockefeller, could you use a $50,000 loan? Of course, Rockefeller's like a jackpot. He sort of looks at him without breaking. He looks at him and he goes, hmm, could you give me 24 hours to think it over? Of course, by doing that, he gets the best terms on the loan.
+
+David: It's like, I'm not sure I really need this.
+
+Ben: He's unbelievable at getting his hands on way more capital at way better terms than other people would be able to.
+
+David: Oh, so good. Now that William's in New York and the family has got operations in New York, they can get like Sir Rockefellers, could you use $250,000 or $500,000? Pretty soon, they're bringing up bazooka to a fistfight with the other refiners out there.
+
+This whole part of the story just reminded me so much of the Uber days. Do you remember when Uber went out and raised all that money and was like, we're going to flatten Lyft, DiDi, and all the global competitors? It was the Uber playbook, except it really worked. 
+
+Ben: Yup. 
+
+David: Speaking of Uber, right after William goes to New York, this sort of (shall we say) Emil Michael character of Standard Oil. 
+
+Ben: You're stretching a metaphor here. 
+
+David: I'm stretching it too far, but an interesting colorful character comes into the fold in the fledgling Standard Oil Empire. I've been posting on Twitter all the fun stuff just because I've been enjoying this research so much and I posted about this guy, Henry Morrison Flagler on Twitter. Andy Sparks replied to my tweet with I think the best one-liner about Flagler possible he says, "Flagler was savage."
+
+He was really like Rockefeller, he's driven by this divine calling. He's willing to go to the mat. He's willing to do just about whatever, but it was Flagler and then some of the other lieutenants that he brought in that were the ones who did the dirty work.
+
+Ben: Yeah, because Rockefeller, he needed to preserve plausible deniability left, right, and center, especially once they figured out all the business tactics that were really going to let them press their advantage. He had some very bad lieutenants so he could stay as plausibly good as possible.
+
+David: Rockefeller was for sure the one pulling the strings. Flagler ends up coming into the business because he has a wealthy relative named Stephen Harkness, who hears about what's going on and wants to invest equity dollars into this new Standard operation. He invested $100,000 in the operation, which oh my goodness, I didn't actually find what the net worth of the Harkness family ends up being because of this, but enormous. 
+
+Ben: Yeah, it has to be generational wealth. 
+
+David: One term that he asked for as part of investing is that he wants, I think maybe Flagler was his nephew or something, he wants Flagler to join the firm as treasurer to "keep an eye on his investment." So Flagler joins, and literally, this is what I tweeted, he keeps a quote on his desk at Standard Oil for all the time he's working there. The quote says, "Do unto others as they would do unto you—and do it first." Oh my goodness. 
+
+Flagler takes over the negotiations for the shipping of oil with the railroads. If you know anything about Standard Oil, you can see where this is going. When Rockefeller was running negotiations with the railroads, he always was able to get pretty good shipping rates because he had a BATNA being there in Cleveland on Lake Erie.
+
+Ben: Totally. During the summer months, the spring, and fall, we can ship way cheaper by sending it out by water. 
+
+David: By water, yup. All the crude coming in from Titusville to be refined in Cleveland at Standard could come in over the water or by rail. Then when it was going out to then go off to the rest of the country and the rest of the world, he had another option. Flagler is like, oh, this is nice. That's cute.
+
+Ben: Let's exercise our power in a different way.
+
+David: What about if we go to the railroads? We're like hey, guys, it's really expensive to operate these railroads. What would you say if we were to guarantee a really, really, really large amount of minimum shipments of oil that we'll do with you? In exchange for us guaranteeing you guys an unbelievable amount of volume that will do on your railroads, you give us an equally unbelievable shipping rate, cost of doing this. The railroads are like, yeah, that sounds good.
+
+Ben: Except the railroads are like, wait a minute, but you don't make that much oil. Where's all this oil going to come from?
+
+David: Specifically, the railroads think this sounds really good because, with the amount of volume that they're talking about, this means they can run dedicated lines of just oil tank cars, not mixed trains with boxcars and oil cars, just oil tanks between Titusville and Cleveland with no stops. If you think about operating a railroad, if you have different types of products that you're loading on the train, that takes more time and money. 
+
+Ben: They were like being forced to stop to pick up one car and add it to the train.
+
+David: Exactly, and then all these stops just add up. It costs money. Time is money here. They love this, but as you said, Ben, they're like, Henry this is a great idea, but how are you going to do it? You don't have enough capacity. 
+
+Ben: Two other things before we answer that question. One is just to give the magnitude of how much this helped them, it lets their own way less cars also. The railroad gets to go from something like needing to have 150 cars to being able to make the same amount of money on 40 or something just dramatically smaller. 
+
+The other thing is Standard Oil has started to really build up some credibility here because when people were putting oil on trains before they were sloshing around in open wooden boxes. Standard Oil pioneered, hey, we're going to put them in tanks and then eventually metal tanks and it really professionalized. 
+
+David: Eventually, we're going to make railroad cars that are like the car itself is just a tank. 
+
+Ben: Yup. 
+
+David: Fast forwarding a little bit like, oh, railroads, what if we made those tanks for you? But we're getting ahead of ourselves. Flagler was like don't worry guys, I got this. He goes around to all the other refiners, everybody else in Cleveland. 
+
+He's like, hey, guys, I have negotiated a great rate for all of us. Do you all want to come on board together and we'll all pool our shipments that we're all getting in from Titusville? By doing this altogether, we've got this great rate. This is an offer that they can't refuse.
+
+Ben: Not only can they not refuse it because what happens if we say no, but this is their major cost driver. They're in a commodity industry at this point and so the distribution of the oil is actually the big driver of the business.
+
+David: Yup. So everybody's said, well, this is fantastic. Flager's like, okay, great. Let's do this. But one thing, let's not write any of this down, okay. Let's just keep this all as a little gentlemen's agreement between all of us and the railroads. We don't need any Feds sniffing around. "Feds" if there were even any then. 
+
+Ben: Basically, if anybody ever asks us if we have an agreement, there's no agreement. Everybody can look at each other and go, I haven't seen the agreement.
+
+David: Yup, totally. This agreement came to be known as the Lakeshore Agreement because the Lakeshore railroad was the main railroad that they did this with, and this is huge. By doing this, until this point in time, Cleveland as a city, so if you forget the individual companies, which Standard is one within Cleveland, but just think about refining production of oil in America. Cleveland was actually the number two largest center for oil refining behind Pittsburgh at this time. 
+
+Once they do this deal, Cleveland is fast-tracked and becomes number one. Standard, Rockefeller, and Flagler, they're like the Godfather. They just brought all the other families in Cleveland to heel. They run the collective now.
+
+Ben: This starts a playbook of, if there's oil leaving the city, either it's ours or we have some agreement in place where it's good for us even if it's not actually ours, and maybe it'll eventually become ours.
+
+David: Yup. They dominate Cleveland. Cleveland becomes the number one oil refining center in America. But that's not enough for young Rockefeller. He's got his sights set on the whole industry like Pittsburgh, Philadelphia, there is some refining happening in Titusville, some in West Virginia, some in New York—he wants all of it. How's he going to do this? As you alluded to at the top of the show, there actually is no legal framework at this point in time for businesses to operate outside their own states.
+
+Ben: Importantly, they cannot own property in other states.
+
+David: Yeah, they can't own properties, they can't have operations. Literally, this is all changing after the Civil War, but it was the United States. The states were the sovereign or near sovereign entities here. 
+
+Ben: Totally. It's really only recently that you could just incorporate your own business as you please at all without getting express written consent from the government. In the days of England and early in the U.S., incorporating a company, a corporation, was like the government granting us special right to operate this business. Already, the doors are—
+
+David: Needed a charter, literally. 
+
+Ben: Blown wide open that you can just start a company, but we're not yet to the era of, oh, I can start a national corporation.
+
+David: Yup. They think for a while, this whole little crew at Standard Oil and Cleveland about how they're going to do this. They know that if they want to consolidate the whole industry and the whole country, they need a) a lot of capital, and b) an ability to operate outside the borders of Ohio. Flagler comes up with this idea.
+
+Ben: It's financial and corporate law innovation. 
+
+David: Innovation. Did you read about how he came up with a new structure that they use, or I guess it was an old structure but it wasn’t very popular, but they turned to the joint-stock company? Did you read about how Flagler—who was not a lawyer—drew up the actual incorporation? 
+
+Ben: Wasn't it on a yellow legal pad?
+
+David: Yeah, like the equivalent of a yellow legal pad. 
+
+Ben: No letterhead. 
+
+David: Yeah, totally. Which partially, I think was just because this was still wild west type stuff. Also, I think they didn't want anybody really to know about this. They wanted this to be super secret. Flagler came up with the idea. It’s like, these joint-stock companies, which I think wasn't the Dutch East India Company a joint-stock company? 
+
+Ben: I think so.
+
+David: He takes this idea, but not many other companies were doing it. He says, if we were a joint-stock company, then we could buy shares in other joint-stock companies. We could also sell shares in ourselves to raise money or to strategic partners who we might want to have a vested interest in our success. This is interesting. This might solve some of the capital requirements. Okay, well, that's interesting.
+
+Ben: Also, this selling shares to raise equity capital thing, Rockefeller is like, my God, that is brilliant. How did I not think of this before?
+
+David: Totally. It's Flagler that comes up with this, it's amazing. On January 10th, 1870, they abolished the old partnership and they poured all of its assets into the new joint-stock company, the Standard Oil Company of Ohio, boom, it's born. They capitalize this new joint-stock corporation with $1 million of liquid assets. That is how enormous this had become already, unheard of. I don't think that there was any other organized enterprise in America with that amount of capital. Already, that's how big this is and we're still just getting started. 
+
+This doesn't solve the interstate commerce issue though. They come up with another absolutely brilliant and diabolical plan to solve this, which is the trust. What they decide to do is they say, okay, technically, companies can't own shares in other companies outside the state. But what if we create a trust then this trust holds shares in companies all around the country?
+
+Ben: The trust could have some trustees that get to decide what happens with maybe all the companies that roll up to the trust. We can make sure that these corporations, each of which are nicely situated inside their own state and don't own any property outside their own state. But we, the trustees, sort of get to decide how those companies might work together.
+
+David: Yup, and there's no law that says that officers of any given company can't be trustees of a trust that owns shares in other companies. This is the loophole around it. They create this trust, and the trustees just a) dictate to the other companies that they purchase what to do, but also b) this is important, all the dividends from all the other companies, the trustees, designate the beneficiaries as the individual shareholders of Standard Oil of Ohio. Nothing ever touches the actual company—Standard Oil of Ohio. It all goes to the trustees and then to the individual shareholders, and that's how they get around this.
+
+Ben: Interesting. The individuals who own the corporation... 
+
+David: Yup, literally everybody on the cap table. 
+
+Ben: End up being the sort of puppeteer or controller and beneficiaries of all these other entities.
+
+David: Rockefeller is like, oh, this is amazing. He comes up with the idea that none of them are going to take a salary. They're going to focus solely on these dividends that are coming in as a source of value and income. But also, even more importantly, focus on the appreciation of the value of this whole enterprise. This was new thinking. Now, people listening are probably like yeah, duh, equity. 
+
+Ben: Why else would you join a startup? 
+
+David: Why else would you start a company or join a startup? Nobody had ever thought this way before. The idea that equity and dividend could be your primary source of income and wealth generation and that you could use that to incentivize new people who you're bringing into the organization as employees, partners, or companies you're buying.
+
+Ben: The idea that your competitors could become your friends by being able to offer them ownership in the joint combined company where as we win in this industry and this industry gets bigger, we all win by holding shares of this thing together.
+
+David: Yup, [...]. Whatever the debates about his ethics, economists and historians have unanimously extolled Rockefeller's role as a pioneer of the modern corporation. Then quoting from another biographer of Rockefeller, "Rockefeller must be accepted as the greatest business administrator America has ever produced," and it's this. 
+
+This is how well this works. In the very first year of the trust—1870, the first year of all this getting set up, remember there's $1 million in total capital that gets put into this structure—they pay a 105% dividend at the end of the year including also reinvesting tons of cash flow back into the business and expanding and buying other companies. 
+
+The million dollars that were in there, they pay over a million dollars out to the shareholders and have many other millions of dollars to go do other things.
+
+Ben: It's crazy. They're extremely profitable and they're growing like crazy. Let's talk about this, Rockefeller's argument to the societal benefit for a moment, which is silly that the state orders are preventing it. Why should that really be a thing? To the extent that I've been able to rapidly expand in Cleveland, and we've been able to create a great product for consumers at a low price, the quality of life for people has gotten better. That has all happened because we've expanded here, why shouldn't we just be able to do that for people everywhere?
+
+His argument is really like, this is for the betterment of consumers. Now my competitors when I move into the states probably don't like it, but ultimately, the American public wins.
+
+David: He's right. He's totally right. Just like Jeff Bezos would probably say the same thing today.
+
+Ben: Speaking of today, and Amazon and great companies, we have a great company that we want to tell you about. Our second sponsor of season nine, PitchBook. I'm going to try and figure out how to work a Standard Oil [...] here, David. Do you think Standard Oil is in PitchBook?
+
+David: I can't stop thinking about the fact that they organized this whole structure. They paid 105% dividend the first year. Like oh man, it's like raising a massive growth round from SoftBank and then paying out all the money again at the end of the year.
+
+Ben: Unprecedented in business history. Listeners, as you know, PitchBook has the best at both the widest and the deepest data on private companies in the world. They're the leading financial data provider for venture capital, for private equity, for all companies looking at M&A. They have 3.1 million companies and over 1.5 million deals. Maybe half of those 3.1 million companies are probably spin-offs of Standard Oil, and actually reconsolidated maybe a little bit less, but 96% of their clients’ rate PitchBook's coverage of private companies better than any other data provider. 
+
+Actually, a few people have DMed me in Slack about this, but we've got a great offer for you. You can explore the PitchBooks database firsthand by signing up to get limited access. That's free access to the largest database of private market intel for two whole weeks. You can sign up at pitchbook.com/acquired or click the link in the show notes and see how PitchBook can help you. Thank you to our friends over at PitchBook.
+
+David: Indeed. Thank you, PitchBook. 
+
+Ben: David, they've now got the structure in place to become a National Trust and expand here. How do they do that? What happens?
+
+David: This is so great from just this story, the smile on my face is so wide right now. 
+
+Ben: It’s juice.
+
+David: It's juicy, yeah. Great is up for debate. The structure of the joint-stock company, they can buy and hold stock in other companies. They can issue shares and hold them. What are they going to do here? 
+
+Remember, we said the railroads are the most strategically important supplier and choke point for the industry. Standard goes to the three biggest railroads, the Pennsylvania Railroad—the storied, huge, enormous Pennsylvania Railroad.
+
+Ben: I think that's on a Monopoly board. 
+
+David: It is. It is literally on a Monopoly board. Pennsylvania, the New York Central, and the Erie Railroad. They say, so we got this new thing. This new thing lets us do things with other companies.
+
+Ben: Do you want to cooperate as a part of our new thing? 
+
+David: Do you want to cooperate? How about we all do something together? The railroads are like, yeah, we like doing stuff. This sounds pretty good. They get together, they set up a shell corporation called the South Improvement Company. Oh, this is so juicy. 
+
+Ben: Which is intentionally nebulously named. 
+
+David: Yes. In fact, later in life when Rockefeller would be getting grilled in Federal depositions, he would be asked if he was ever a director or involved in the Southern Improvement Company. 
+
+Ben: Which of course, not a thing. I have no idea. 
+
+David: Nope. Standard Oil was never involved in the Southern Improvement Company. Oh my goodness, so great. Obviously, he was not perjuring himself by saying that because the questioner got the name wrong. 
+
+Ben: Though I think he did perjure himself in other SIC-related. 
+
+David: Yeah, I think he did. Here's the deal, Standard Oil is going to set up and control most of the South Improvement Company through their new trust and joint-stock corporation structure. The Railroads will own a token amount, but the railroads and the principal owners of the railroads, the individuals, Standard Oil is going to issue them some stock so that these guys now have a little skin in the game with Standard Oil. All the interests are aligned here.
+
+Ben: And the railroads had a problem that they need to be solved, which was that because of the boom-bust nature of everything that's going on their cars, especially oil, and remember that thing that I mentioned earlier where people are deciding not to buy because they hear it's going to be cheaper soon because they know there's a big gusher. 
+
+This whole thing is totally screwing with the railroads. Not to mention the fact that with intense competition among the railroads, just like there was intense competition among all of the non-sorts of Standard Oil, oil companies, a lot of the profits are just being arbitraged away. They've got unpredictable demand. They've got booms and busts. 
+
+They've got this situation, especially with oil where certain types of oil in certain areas were so insanely cheap that everybody's going out of business because no one can make any money. The same sort of thing is happening in the railroad industry. And so, if there's a cooperation opportunity for the railroads and Rockefeller’s offering them, I can kind of solve your problem here and we can sort of smooth out business. 
+
+David: Ben, it really comes down to it's really hard to run a business when prices are fluctuating and they're not fixed. Clearly, the answer is to fix the prices. Oh my goodness.
+
+Ben: We ascribe no virtue to this. We'll get to this later in the episode and certainly in part two of what parts of this were good and what parts of this were bad? It's both. There are lots of both that happened all through this story. 
+
+David: The three biggest railroads and Standard, they get together in this South Improvement Company. They say, here's what we're going to do, all the railroads, we’re going to set a new fixed price. There is now literally a fixed price for shipping oil on railroads to everybody out there. Anybody shipping oil, there is one single fixed price and it's really high. Whatever it was before, it's multiple of that. It’s really high. 
+
+Except for anybody who's a member with us—of the South Improvement Company—you all get a 50% discount on that fixed price. It goes even further. Now, this is just like, oh just twisting the knife here. Anybody who's a member of our little company here…
+
+Ben: One might say a little cartel. 
+
+David: Little cartel, yeah. Also, they will receive a little dividend, a little kickback. They call it technically a drawback from any revenue that any other oil producers that are not part of this that ship on the railroads, part of that revenue from the really high price that they're charging, they're just going to give some of that revenue to the competitors that are part of this little cabal here.
+
+Ben: This is the most mind-blowing part of the deal. Not only do you get a rebate for shipping with us so that way the price is actually way cheaper, but you also get a rebate even when you're not the shipper. They call it this drawback. Other people ship stuff with us and thank you because you are a nice member of our organization, you're going to get some of that money. Your competitors are just paying you. It's the craziest system ever. 
+
+David: I don't know what the formal definition of the crime of racketeering is, but this sounds like—whatever it is, I think this fits the case.
+
+Ben: There's a couple of different ways that this story draws parallels to Microsoft, but this reminds me so much of that CPU licensing thing that they did. Do you remember this in the early Windows days? 
+
+David: Yes, I do. 
+
+Ben: The deal that Microsoft cut with, I think it was IBM, was yeah, you guys can use Windows and that's great. Any computers that have a CPU in them that isn’t running Windows, you're also going to pay us for those CPUs. That's the deal they signed. Microsoft basically ended up monopolizing the entire industry because IBM was like, well, wait a minute whether we're putting Windows on these machines or not we're paying for it. I think Windows is. Actually, I don't know if it was Windows yet, it might have been DOS. 
+
+David: If only Gates, [...], Jeff Raikes, and all the like, if they'd had our episodes here on Standard Oil, they'll listen to before they put that stuff in writing, history could have been different. 
+
+Ben: It turns out, yes, this may have been a flashpoint once the public realized how egregious this sort of agreement sounded. 
+
+David: I'll say, there is literal rioting in the streets in Titusville in reaction to this once word gets out. Literally, people are fighting in the streets. They’re banging up and destroying Standard tanks and property.
+
+Ben: It's truly heads I win, tails you lose for Standard Oil versus their competitors. 
+
+David: Yup. This is the point where public opinion really starts to get concerned about Standard Oil. 
+
+Ben: In particular informed by the competitors because the public public is like, great, we're getting so much stuff so reliably for so cheap. This is awesome.
+
+David: Yup. The railroads, maybe they know they may be gone a little bit too far and they're like hey guys, I don't know that we can actually do this. Rockefeller and Flagler, they're like, it’s okay, let's just hold out for a couple of weeks. I think we're going to be fine. We’re going to go do some stuff and we’ll get back to you. 
+
+During these few weeks when this deal has not yet gone into effect yet, but rumors of it are spreading throughout the industry. Flagler and Rockefeller go around to all the other refiners in Cleveland. 
+
+Ben: Keep in mind, many of them are in very rough shape right now because, a) the fluctuations, but b) oil prices are getting driven down so far that people are trying to produce and make a profit on this. But because of this crazy inflation then deflation thing that happens, a lot of these companies are slowly on their way to going out of business anyway. 
+
+David: Yup. They’re already brought to heel by the Standard by the Lakeshore Deal where they're already sharing capacity. Now, Flagler and Rockefeller go to them and say, you know, that great rate that we organized for you? It's over. You all have heard about this South Improvement Company thing, it's happening. The way we see it, you basically have two choices. You can stay nominally independent and you can die, or you can just sell your operations to us, come in and join the fold. 
+
+Ben: Get some Standard Oil shares. 
+
+David: We’ll even give you stock and then we can all profit from this amazing deal that we have. 
+
+Ben: There's something Rockefeller says, own shares of Standard Oil and your family will never go hungry. 
+
+David: Yeah. As Ida Tarbell, who we’re going to talk much about next time, wrote in her investigative reporting on Standard Oil, this is what she claimed that the Standard pitch was to other folks about joining the scheme. 
+
+"You see, this scheme is bound to work. It means an absolute control by us of the oil business. There is no chance for anyone outside. We are going to give everybody a chance to come in. You are to turn over your refinery to my appraisers, and I will give you Standard Oil Company stock or cash, as you prefer, for the value that we put on it. I advise you to take the stock. It will be for your own good." They're literally deciding what value they're going to pay for all these refiners. 
+
+Ben: Of course, the offer that they put in is like 25%–50% of what the refineries even paid to build the factories in the first place. Rockefeller’s argument is, well, we're just going to shut most of these down anyway. We're actually doing them a favor by taking this thing that's just going to go out of business over the next few years, giving them some shares in our company. We don't want to be too terrible to these guys. They are our fellow countrymen and they're also in our industry. We're just bringing them in, we’re giving them some shares. I'm going to write the whole thing off anyway, so it's a crap factory. 
+
+David: So over a period of 6 weeks, from February 1872 to April 1872, Standard Oil bought 22 of the 26 other refineries that are operating in Cleveland. This comes to be known as the Cleveland Massacre. And then, once they already own all the refineries in Cleveland, they’re like, all right, we're done. We don't really even need this South Improvement Company thing anyway, and I guess the public doesn't like it so we're not going to do it.
+
+Ben: Apparently, not a single barrel was ever shipped using the South Improvement Company. They never documented anything but structure. It was all set up and agreed upon, but then they didn't actually ever need to do it because they used it as leverage to just go and roll everyone up anyway
+
+David: This was the tipping point. Obviously, this was the Cleveland refiners first, but then immediately after they go to Pittsburgh, they go to Philadelphia, they go to West Virginia. They don't even have to set up some ploy shell corporations like the South Improvement Company. They just go to all the other refiners in these cities and they're like y'all heard about what happened in Cleveland. We're coming here next.
+
+Ben: You want some shares?
+
+David: You want some shares? Yup. By 1877, Standard Oil controlled 90% of the oil business in America 
+
+Ben: As Berens put it, consumers of kerosene had no choice but to purchase the product from a Standard company, not that they complained. Standard’s policy was to upgrade the product continuously while lowering the costs in order to frighten away potential competitors and increase sales. 
+
+I just want to say, David, just like TSMC, it's like, yup, but I think it's something like 70% of the leading edge CPUs flow through the island of Taiwan and 50% are actually manufactured by TSMC. We're all better for it as consumers. It's just fascinating this notion of we’re going to keep lowering prices, the product's going to keep getting better. At the end of the day, it actually is good for consumers. Oh, and we're going to get huge and super-profitable along the way.
+
+David: ASML and all the equipment manufacturers, they're like the railroads here
+
+Ben: Right. Although amazingly, this cooperation with the railroads really didn't lead to Standard Oil squashing the railroads. They stayed in really good businesses for a long time. 
+
+David: They did for other industries, or at least I think they did. I don't know enough to say about the railroads. They certainly stayed independent. But Rockefeller, Flagler, and this whole crew, these guys are paranoid as well. They do realize after they've just gone and consolidated the whole oil industry, they know that the railroads do have strategic leverage over them. Again, remember, the oil refiners, they let the other refiners stay in business. They just bought them and gave him Standard Oil shares. 
+
+They're worried about the railroad. We don't want them having strategic leverage over us. How can we co-opt them? I mentioned earlier—tank cars.
+
+Ben: What was the deal here? 
+
+David: Right around this time, Standard starts going to all the big railroads and they're like, we've saved all of his money on OpEx. Now you get to run trains directly, no stops, no box cars. This is great for you. But these tank cars, these modern tank cars made of steel and the like, that's a lot of CapEx for you to keep building. We just keep sucking up all of this shipping volume with you all. What if we just make these cars for you and we lease them back to you? We’ll take on the CapEx to make the cars and we’ll lease them to you at a really low rate. 
+
+Ben: What's the play here? 
+
+David: Chernow writes about this. He says, "As the owner of almost all the Erie and New York Central Tank Cars, Standard Oil's position gew unassailable. At a moment’s notice it could crush either railroad by threatening to withdraw its tank cars." No tank cars, no business. You can keep running this great business for you all, but you mess with us, we can withdraw our tank cars.
+
+Ben: Wow. Now they've got 90% market share of kerosene, and they've got this relationship with the railroad where they basically are going to get the most favorable rates without a railroad going out of business. 
+
+David: And then they take it one step further again. 
+
+Ben: By the way, David, you laughing through this like a maniacal plan, it's so scary because I'm like, oh I have implicit trust in you. You're so kind, you’re so warm, and you're like, and then they take it one step further.
+
+David: And then they stabbed the knife in the back again and it's so great. This is such a good story. I love it. Not condoning this behavior by any stretch of the imagination.
+
+Ben: An important pillar of American history. 
+
+David: A critical part of American history. They take it one more step further, and this is really the coup de grace here. As they're doing all these deals and Standard Oil is becoming this octopus as it would be known—a derogatory term by its critics. You think the Goldman Sachs vampire squid sucking on America was bad. Literally, the Standard Oil octopus is bigger than 10 vampire squids. 
+
+There's a new technology that people are thinking about with regard to oil, not gasoline, not yet. That's coming later. But all of the oil is being moved around either by water or on railroads. People are thinking that there might be a way to move oil much, much, much more efficiently. The concept of pipelines already existed, but really short distance pipelines. Literally from the derricks, from the wells to the railroad depots. This would be a mile at most. They would pump oil through pipes to the railroad depots, to the shipping depots, or whatever to then load it up in cars and get it out of there.
+
+Some people started thinking like, well, I wonder if we could pump oil a lot farther than just a mile or two. Meanwhile, the remnants of the industry that haven't yet been consolidated by Standard, they're looking for any Hail Mary pass to get some leverage back in the industry. They decided that they're all going to go in together against Standard and the railroads. They know they can't get any concessions out of the railroads. They're going to try and develop a long-distance pipeline. 
+
+In 1877, they did this. They band together and form the Tidewater Pipeline Company. This just sounds like a scandal right off the bat, the name Tidewater Pipeline Company. 
+
+Ben: Why would you name it that? 
+
+David: I mean, it's 1877. I have no idea. First, the goal is that they're going to pipe oil from Titusville directly to Baltimore on the seafront. They then shortened it to Williamsport, Pennsylvania, which is still 110 miles. This would be an amazing proof of concept if this would work. 
+
+Ben: Isn't that where the Little League World Series is? 
+
+David: It is. 
+
+Ben: Yeah, I thought so.
+
+David: I don't know why Williamsport was where they wanted to pipe this stuff too. They do end up piping it. Standard though fights them tooth and nail on this. A bunch of the execs want to hire thugs to go smash the pipeline and do all this stuff. Rockefeller, he reigns in his exuberant execs on this and says, no, no, we're going to fight it with every political leverage that we have, which they do. But they don't succeed. In 1879, the pipeline turned on and it worked. I think a bunch of people in Standard are probably pissed at John. They don't understand why he let this happen. Rockefeller is like, oh, don't worry, I have a plan. 
+
+Remember, this is just one route that this new pipeline has opened up from Titusville to Williamsport. Rockefeller is like, I got all the railroads in my pocket. They go around to the railroads and they instruct the railroads to cut shipping rates so far down on this line that literally they're basically paying anybody who's willing to ship by railroad on this line to ship. It's actually the pipeline, even though they invested all this money in building it and it's so much more efficient, so much cheaper than running a rail car. Because at Standard Oil’s pressure, the railroads have now lowered prices so far in response, it's not economical to use the pipeline. They starve them out.
+
+Ben: This is like the Bezos versus diapers.com thing where Bezos is like, I can sell diapers at a loss forever, you don't understand. 
+
+David: That is totally what happens. The Tidewater Pipeline Company is up against the wall. They're about to go bankrupt. They can't compete. By March of 1880, they sold a minority stake in the pipeline to Standard Oil. Standard assumes control of the pipeline, takes all the technology, immediately turns around, and goes and builds out four more major pipelines from Titusville to Cleveland to Manhattan to Philadelphia to Buffalo. They build these now pipelines that are huge. Do you know what land they build the pipelines on? This is the most cold-blooded thing in the whole freaking episode. 
+
+Ben: No.
+
+David: Okay, so who would have land rights in straight lines between cities? 
+
+Ben: Oh, the railroads.
+
+David: Standard Oil goes to the railroads and they’re like, my friends, we've got this really exciting new thing that we're working on. We're friends. We help you, you help us. How about we use your land? How about we build our pipelines right along next to your railroads, and then it'll just be a little reminder sitting right there? Reminder to you all that we don't need you. That we've built on your land.
+
+Ben: You're looking at your competition every single time you glance out of a train car. 
+
+David: If you ever want to try and screw us on prices, just remember, we've got an alternative right there. Oh my God. 
+
+Ben: By the way, do you know the deal with Sprint? Random business trivia fact. I may have said this on another Acquired episode. 
+
+David: I think we've talked about this before. Yeah, that telephone lines were laid along rail lines.
+
+Ben: Yeah, it's the Southern Pacific Railroad (SPR). 
+
+David: Oh yeah, that's right, that's right. 
+
+Ben: And exactly for this reason. Like, hey, we need someone who's already eminent domain to a bunch of land that we can go directly in a straight line from one city to another. Boom!
+
+David: Yup, crazy. I don't know for sure, but I didn't see anywhere that the railroads got any equity stake in these pipelines. 
+
+Ben: All right, I fully take back my comment earlier that it seems like the railroads made it out okay. 
+
+David: I think they actually did. I mean, this was Rockefeller’s style and Standard Oil’s style is like we're going to let you live. We're going to be benevolent dictators. We're going to let you continue, you’re just going to remember that our knife is pressed against your back at all times. 
+
+After this, it's done. This is the story of how Standard Oil became Standard Oil. Rockefeller, Standard—they have won on a scale that nobody has ever won before. Since their competitors are obliterated, new upstart technologies are co-opted, all of the suppliers are reduced to total lackeys.
+
+We didn't talk about the customers. This is great. Most kerosene is sold at retail in America in grocery stores. In the early 1880s, Standard decided to run the same playbook that they've run with the railroads with the grocery stores in America. They go to them and they say, hey, you know it's expensive for you to set up and give shelf space and everything to all of these cans that are all non-standardized Standard Oil kerosene in your stores. From now on, all Standard kerosene needs to be sold in Standard canisters that we set the terms on, we fixed the price, and we tell you where you're going to put it in your stores. 
+
+Some stores bristle at this and say they're not going to do it. Standard sends out a letter in Mississippi—they had a particular problem with this. They send out a letter to all the groceries in Mississippi. They say, if you do not buy our oil, we will start a grocery store chain to compete with you and sell goods at cost and put you all out of business. This is in writing sent to all of them.
+
+Ben: You can just feel the American public and Washington getting stirred up about like okay, monopolies are pretty bad. We really need some legislation about this. 
+
+David: Yeah, as turn out rates by this point in time, Rockefeller’s creation could only be discussed in superlatives. It was the biggest and richest, the most feared and most admired business organization in the world. In 1883, official Standard Oil headquarters moved to Manhattan, to New York City.
+
+Ben: 26 Broadway.
+
+David: To Manhattan, to 26 Broadway. Do you know which is the building that they have constructed for the Standard Oil Headquarters, 26 Broadway, right on Wall Street? Do you know what is right outside of 26 Broadway today?
+
+Ben: No.
+
+David: The Bull, the Charging Bull in Wall Street.
+
+Ben: No way.
+
+David: It’s literally right outside 26 Broadway. You know the Bull was only put there in like 1989, I think. 
+
+Ben: Oh no, I would have assumed it was there through the ‘80s. 
+
+David: It was put there after the 1987 stock market crash. 
+
+Ben: Ah, interesting.
+
+David: Rockefeller, his brother, and all of their lieutenants moved to New York also around this time. They just bought up Midtown. Rockefeller moved right off 5th Avenue in the ‘50s. It was at 54th St. maybe. Actually, I don't have it written down. 53rd or 54th Street right off 5th Ave. He buys a house, moves in there, really right there between the park and between Rockefeller Center. There is no Rockefeller Center. They build freaking Rockefeller Center.
+
+Ben: Which he had nothing to do with. That all ended being endowed by his son.
+
+David: We'll probably talk about this more next time. I didn't realize it was Columbia University's campus there. When Junior decided to get in and start developing, building Rockefeller Center, they leased it from Columbia, and then they ultimately bought it.
+
+Ben: Fascinating. In part two, we'll have a lot to say about universities and Rockefellers in New York. We haven't touched a lot on the personal side of Rockefeller other than saying he was deeply religious, believed he should make a lot of money, and then do interesting things with it. There's a lot of very good things he does with it that I think we’ll save for part two. And a lot of his idiosyncratic things around being afraid of death, wanting to live a long time, and his health obsessions. I think a lot of that especially starts to show up in his old age. But David, bring us home here to 1890. 
+
+David: Yeah. It's funny we're going to recount now what will ultimately become the beginning of the downfall of Standard Oil. It's weird being at this moment in the story because they've literally won. I don't think we've ever had this before. The only thing that can bring them down is the government.
+
+Ben: Or a paradigm shift. I'm referring to electricity and lights in houses, but they very quickly were saved by the fact that conveniently, right around the same time, any thirst that we had for oil before once you have the car, Rockefeller got so much richer in his retirement from his shares of Standard Oil. Which became the things that powered us moving around the country in cars than he ever got from kerosene. It’s like a paradigm shift could have disrupted and did disrupt the core kerosene business, but the thing that happened at the same time was so much bigger than anything they ever could have imagined. 
+
+David: I think that Standard was also making some investments into electricity and electrical utilities. I don't know how deep they got into the business. 
+
+Ben: But all I'm saying is, monopolies—even if you don't trust bust them—are always at risk of being disrupted by a paradigm shift.
+
+David: Totally a fair point. Not in this case though. Not in this case. It's funny. I always assumed what I knew of the Standard Oil story before doing all the research was that it was the 1890 Sherman Antitrust Act that brought down Standard Oil. 
+
+Ben: It wasn't for another 21 years. 
+
+David: Indeed it was. Yes, it was the Sherman Antitrust Act, but it was not for 21 years. We’ll close with the wild story of the Sherman Antitrust Bill. Ohio Senator John Sherman, brother of General William Tecumseh Sherman. 
+
+Ben: No way. 
+
+David: The Great Hero of the Civil War. Yeah, unbelievable. You know how we joke about how there must have been ten people in Silicon Valley in the 1970s and 1980s. I think there must've been like 10 people in America at this point in time. Senator John Sherman in 1889—as the sort of public sentiment is starting to shift against this huge octopus monopoly—proposes an "Antitrust Bill" in the U.S. in the Federal Senate. It turns out that just a few years earlier when Sherman was running for office in Ohio, guess who one of his biggest campaign supporters was? 
+
+Ben: Rockefeller?
+
+David: Yes, that would be correct. This is like you're biting the hand that feeds you here. The act does pass, but Sherman makes the political gamble that the political power and stature that he's going to get from doing this is going to be worth more than the money that he's going to get from Rockefeller and Standard going forward. The act ended up passing in July of 1890 outlawing all trusts and business combinations in the United States of America that were—this is the key modifier—"in restraint of trade," but they don't define what in restraint of trade means.
+
+Ben: It's up to some judge to set precedent.
+
+David: And everybody thinks, oh well, there's no legal precedent for what that means. That's never really going to become an issue, and in fact, Rockefeller and Standard Oil viewed this as a win. They were like, oh, great. The public is now going to feel like the US government has taken action, they have heard them. They're going to curtail Standard’s power, but they're not actually going to curtail anything that we do. We're going to keep doing exactly what we've been doing. In fact, when Sherman ran for reelection in Ohio the very next year in 1891, do you know who, once again, one of his biggest donors was?
+
+Ben: Is it Rockefeller again?
+
+David: It is John D. Rockefeller once again. 
+
+Ben: Fascinating.
+
+David: How funny is that? The act that ends up bringing them down, he is one of the biggest donors after the act passes to the senator that introduces it.
+
+Ben: Fascinating.
+
+David: So, in 1896, Rockefeller’s like, well, I guess it's been a good run. I'm going to hang it up when they retire. I'm going to focus on my philanthropy, and I'm going to leave one of my lieutenants, John Archbold, and my son, John Rockefeller, Jr., who's about to graduate from Brown University. I'm going to leave them in charge. I'm going to go retire in my state, and I'm going to focus on doing good work. 
+
+Ben: But a key mistake, he didn't fully leave.
+
+David: No. No, he did not. 
+
+Ben: He's like, well, just in title only, I’ll stick around as president or as chairman. But of course, that's not how the public would view it. They're like, no, your name is still on the door. 
+
+David: Oh, he's going to get dragged back to the witness stand in the years to come. 
+
+Ben: No sunset ride off for him. 
+
+David: Yeah, what a story. 
+
+Ben: As we get into the analysis here, I have a few fun points I want to make. But first, we want to thank the final sponsor of this episode, NordVPN. We've talked about Nord in previous episodes. This is one where I think we used to do these community shoutouts, David. This feels more like a community shout-out to me than it does a sponsorship. But of course, Nord is a great company, and we do formally work with them as a partner much like many other YouTubers and podcasters everywhere. 
+
+You've probably heard about them in other places, but especially our thanks to Tom Oakman and the rest of the founders there for listening to the show, being a part of the Acquired community, and seeing in Slack. It's just so cool. But for folks who haven't heard of other episodes, this company has a wild story behind it. It is a thousand-person company that serves 15 million people globally that is founded in Lithuania. 
+
+Founded in 2012 by some childhood friends, they haven't taken a dollar of outside funding. It's totally bootstrapped, and so it's this incredible European startup bootstrapping success story to build the huge business that they've built today. If you're looking for a VPN service, look no further. You can sign up at nordvpn.com/acquired by clicking the link in the show notes, and you can use a coupon code Acquired at check out. Our thanks to NordVPN.
+
+David: Indeed. Thank you, Nord. They’re almost like the pipeline for internet traffic. Built-in much less sinister, shall we say?
+
+Ben: I listen to these sponsorships just to hear how you steer it into our episode content. Perfect.
+
+David: So great. Thank you, Tom, and everybody in Nord. 
+
+Ben: We used to do these narrative sections when we did IPOs. I want to talk about the public sentiment versus Rockefeller’s defense. The public sentiment here, and when we say public, it's less at this point in history the actual public and more about their competitors who are making a bigger deal out of this because all the public knows is there’s this really big company. They provide things (kerosene mostly) that I use in my life, and it gets to me in a consistent way and at a stable price. It is good for consumers. 
+
+If you think about the consumer welfare standard of antitrust, this really isn't bad for consumers. It could get there if Standard Oil is the only company and they sort of wield that power to raise prices and stuff like that. But at this point, it's really their competitors who hate their guts, and especially anybody who's been coerced to cooperate with them—the railroads, the pipelines, anyone in their orbit, the retailers, it sucks for them too. You've got these beginnings of really stirred up public sentiment against this company that is by some views, the most evil capitalist structure of all time.
+
+Americans, ever since we got here from England—my family immigrated at some point so I certainly didn't come from England. But ever since the original Anglo people came over from Europe and settled in America, there's been this incredible hatred of monopolies. In particular, because our country was founded on equality and people having the right to be free, the free market. The government was a monopoly in England and that's what we were running from.
+
+David: Still, to this day, there's a huge skepticism amongst Americans of centralized government power.
+
+Ben: Right. There's this interesting very American stripe that runs through people, that is, I can't quite put my finger on why, but I don't like big stuff and I don't like concentration of power. I didn't like it when it was concentrated in a government, and I don't like it now when it's concentrated in the rich people. That shows up all the way through to today. That's a defining characteristic of the national conversation now.
+
+Rockefeller’s defense to all this is saying, look, Social Darwinism is bad. Without Standard Oil rolling everyone up, you just have all these people producing non-Standard products. They're going to kill this industry that could make everything great because consumers won't trust it. All these businesses will go out of business because the prices are so low. Every time there's a gusher, the prices drop so much. These people are all going to go out of business anyway. Standard Oil is the antidote to social Darwinism, which is bad, which is killing the golden goose here.
+
+The way he makes this argument is, it was a cooperative success. It was for the general good. It was our moral imperative. It was downright Christian for me to do this and provide the service.
+
+David: Certainly, any of the competitors, suppliers, partners, or the like who ended up taking Standard Oil stock got fabulously wealthy by doing so. How could you argue that that was bad for them?
+
+Ben: He really seems to have deeply believed that this invisible hand—the Adam Smith concept of the invisible hand that guides the free-market—kind of takes too long, and there's a lot of bad stuff that happens along the way. Academically, sure, it makes sense that the free market will work itself out. But when you actually look at the businesses today and the people running those businesses today, there's going to be a bunch of hardships and dirt along the way. You might have whole industries that die out because they never reach their full potential.
+
+It's not communist and it's not social. It's this interesting uniquely American viewpoint on social Darwinism and free-market capitalism are bad things. Everybody just eating each other's lunch and eliminating all the profit in every industry, and potentially to our own detriment, is bad.
+
+David: Chernow even talks about this. In some ways, what Rockefeller was trying to do and what Standard became shared just as much intellectual grounding as with Marx and communism, as it did with Adam Smith and capitalism. It was this view that like, hey, pure individual competition is not actually the most ideal status. And some form of collectivism—in this case, collectivism in the form of a company, Standard Oil—was the best path.
+
+Ben: Yeah. The place where it falls down is where he says, look, if we just knife fight to the death, someone's going to win. Ultimately, that one is going to be me because I'm the best at this. He's probably right. This notion of, so therefore, everyone should allow me to save them in a very evangelical Christian way. I'm going to go and save and bring them into my business church is very much how he sort of thought about it. They come into the light and embrace Standard Oil.
+
+David: Literally, the light, I love it.
+
+Ben: Just dripping with irony in the way that I'm drawing these parallels here. It falls down where him accelerating the death of all of these businesses and saying, it was inevitable and at least they're getting some upside now. The benevolence argument does seem to fall down there a little bit.
+
+David: Perhaps maybe the most blatant example to me is the grocers. That letter was sent out in writing to grocers saying, if you don't do what we want, we're going to metaphorically burn down your houses. It's unreal.
+
+Ben: Right. There are places where it made sense for him to exert his power to reorganize the industry for the betterment of all the producers involved and all the consumers. But those places are far more limited than the number of places where they actually reached and exerted their power.
+
+David: Yup. Sidebar on the logo because it’s so great. We'll see if we can link it in the show notes. You'll recognize it when you see it. It's this red, white, and blue.
+
+Ben: Oh, it's the Amoco logo now.
+
+David: Yeah, it's the Amoco logo. Amoco was—was it Standard of Ohio?
+
+Ben: California. Oh, wait.
+
+David: California was Chevron. It’s either Ohio or New Jersey. I think it was Ohio that became Amoco. I could be wrong.
+
+Ben: I think you're right. I'll fact-check that.
+
+David: It's this red, white, and blue oval with, in the middle of the oval, there’s this Grecian column looking like an Olympic torch.
+
+Ben: Indiana.
+
+David: Indiana. Oh, interesting. Like an Olympic torch-looking column with a fire burning on top of it.
+
+Ben: Interestingly, I think the Standard Oil of Indiana company adopted a different logo. But when they turned into Amoco, they adopted something that looks a lot more like the original Standard Oil logo.
+
+David: Interesting. The other threat I want to talk about here in narratives is Rockefeller and Standard Oil as an organization. Rockefeller as a person is really like the prototype of so much of American culture today. He was simultaneously viewed as this sinister villain and as this great hero. People hated him, but people wanted to be him.
+
+Ben: Is that a rap lyric?
+
+David: I feel like it must be. Well, I mean, Jay-Z would name his label Rockefeller Records. There's a reason for that. I feel like the public feels about Bezos, Zuckerberg, and Musk—all these billionaires today—this was the prototype. This was the first time that Americans felt this way. There's this great quote in Titan. It says, "The general public was of two minds and viewed the new entrepreneurs," of which Rockefeller was foremost, "as alternately sinister and heroic.
+
+By 1888, Rockefeller began to pop up in fawning magazine features about rich Americans, but he was also singled out as a notorious trust king in Joseph Pulitzer’s World and other papers. The Press kept up an editorial drumbeat against Standard Oil, demanding vigorous state and federal antitrust action." At the same time, he's in the equivalent of Vanity Fair as the new elite.
+
+Ben: I think he started embracing that later. For a while, his policy was don't talk to the press, then later started opening up to this idea of like, geez, maybe it's probably a good idea for me to have a positive image out there. Silence is not doing me any favors.
+
+David: Yeah.
+
+Ben: All right. Power?
+
+David: Power. Okay, so what are power categories here?
+
+Ben: As Hamilton Helmer would put forth in his wonderful book, 7 Powers—counter positioning, scale economies, switching costs, network economies, process power, branding, and cornered resources. I haven't rigorously looked at each one, but I think Standard Oil—at various points in its first 20–25 years of existence—exerted every single one of these, but the domineering one, the one that enabled them to do everything that they did was scale economies.
+
+David: No argument from me on scale economies being the most important one here. Literally, that was all the machinations with the competitors, with getting the volume in the Lakeshore deal, and with doing the deals with the railroads. It was all about economies of scale for sure. What's your thought on counter positioning?
+
+Ben: I think in being a pure-play refinery that was located in a different location, is there a reason that no one else should have done an off-site refinery because they had too much vested interest in an on-site refinery? I'm not sure.
+
+David: I'm not sure if there was any reason why they couldn't. But I think all the folks who were in the producing world—the drilling and the crude world—it was just such a gold rush mentality.
+
+Ben: They were not professionalized.
+
+David: Yeah. They were just chasing quick profits and they were distracted. They weren't thinking long-term. I don't think there was any reason why they couldn't have set up refining businesses in other locations.
+
+Ben: The counter positioning feels a little thin.
+
+David: Yeah. All the others like switching costs, for sure, with all the railroad deals, the tank cars, and all that network economies. They build the retail distribution with the standard cans.
+
+Ben: Actually, is that all scale economies, though? Is there any network effect here where it's better for one customer that other customers exist? Does anybody ever have a relationship between customers?
+
+David: That's a good question. Maybe not.
+
+Ben: Network economies were certainly less common in a pre-telephone era.
+
+David: Maybe not. Maybe that's more of a stretch.
+
+Ben: Process power, certainly, especially over time as it got more and more complicated. Branding—I mean, they named themselves Standard, and then they became that.
+
+David: They had lots of cornered resources.
+
+Ben: Eventually, they cornered the resource on all the crude in the Eastern United States. They actually owned all the land rights to actually produce the...
+
+David: Yeah, they did eventually get into exploration and production, I think it was much later. I want to say it was in the 1880s or 1890s maybe when big oil deposits started being discovered elsewhere in America and then they got into that in bigger ways.
+
+Ben: Fascinating. Let's move on to playbook.
+
+David: Let's do it.
+
+Ben: I have one playbook theme that we didn't touch enough the rest of the episode and I have a long quote. This is in particular, around the period where there's a lot of fluctuation in prices. There's a race to the bottom, lots of people going out of business, and this is Rockefeller talking about how they're going to weather the storm and swallow everyone else up.
+
+"What made an expeditious shutdown of outmoded rivals vital to Rockefeller was that he borrowed heavily to build gigantic plants so that he could drastically slash his unit costs. Even his first partner, Maurice Clark, remembered that 'the volume of trade was always what he regarded as of paramount importance.' Early on, Rockefeller realized the capital-intensive refining business. In this business, sheer size mattered greatly because it translated into economies of scale.
+
+Once describing the 'foundation principle' of Standard Oil, he said it was the 'theory of the originators... the larger the volume, the larger the opportunities for the economies, and consequently the better the opportunities for giving the public a cheaper product without... the dreadful competition of the late ‘60s ruining the business. During his career, Rockefeller cut the unit costs of refined oil almost in half. He never deviated from the gospel of industrial efficiency."
+
+There's so much tied up here, but one of them is, this is kind of the first venture capital business. We talked a lot on the TSMC episode about these massive fixed costs. They're investing $100 million in fabs over the next three years. Then it's all a volume game. How much can you get the plants at full capacity as fast as possible? The unit costs can be super small because your variable costs are super low, but it's all about that gigantic capital investment of the fixed costs.
+
+David: I love it. There is the TSMC payoff.
+
+Ben: Two hours later.
+
+David: The other thing that I was just thinking the whole time as you're reading that quote was Marc Andreessen. Strength leads to strength, right? This is the original strength leads to strength business.
+
+Ben: Totally. This is him justifying rolling up all these other producers where he's basically like, look, the best thing for consumers is to run as much consumer demand through one capital structure as possible so we can just absorb all the fixed costs and then make the variable costs as low as possible.
+
+David: We're on such a kick here with these types of businesses. Is there ever a kind of business or industry where not scale economies, per se, but this broader Maxim of strength leads to strength? Is that ever not the case?
+
+Ben: It's always the case, I think, but it's in varying strokes, especially in industries where there are no fixed costs or where there are low fixed costs. Think about a restaurant business. Assuming that you don't own the building, you're leasing everything, and you even lease the equipment, then you’re like, what is really the CapEx? You're at the whim of, can you produce a better product and get a little bit more margin than the person down the street?
+
+David: Maybe this is kind of similar, it also would apply to the restaurant business. If you're competing on the highest end of quality, I'm thinking of a fine dining restaurant. That's strength might lead to strength in terms of its brand. But if it were to raise a bunch of capital, expand, go have a bunch more restaurants—
+
+Ben: If your value is scarcity, then yeah, it's value-destructive.
+
+David: Yeah. Okay, that's a case where strength wouldn't lead to strength in the same way. But so many venture capital businesses and businesses that scale as large as we're talking about in the last few episodes. We've been talking about the largest businesses the world has ever known. It's amazing how this dynamic applies.
+
+Ben: Totally. For grading on this one, listeners, we are going to combine value creation, value capture, and grading. We already talked a lot about the component of this value creation section where how does the value created for the world compare to value destruction? I think we've talked a lot about that in this episode. We haven't spent a lot of time on how the value that Standard Oil created compared to the value that they captured for themselves, which I think is the interesting one to look at here.
+
+A terrible example is Wikipedia, where there's no company that creates any more value in the world, but captures so little of it. Whereas you look at Google, they create a lot of value, but they're enormously profitable based on it.
+
+Some interesting numbers with Standard Oil. We know that they're responsible for this kerosene boom in the United States and the world. Let's save the gas car conversation for the next episode. I absolutely want to have a conversation around climate. I think we should save that for the next episode too. Let's just look at the shape of the business by this period of time. Standard Oil in the mid-1880s, employed 100,000 people. That's probably the first time a company ever employs 100,000 people. Governments probably did, but did corporations?
+
+David: It would be hard to imagine, especially in a world where there are only 30 million people in the United States.
+
+Ben: Totally. They had dividends of between 50% and 200%, to all shareholders per year, which of course, were private shareholders. It was mostly Rockefeller and his partners.
+
+David: I just want to underline that again. That’s balling out of control.
+
+Ben: That's a very, very profitable business.
+
+David: The amount of capital invested in the business, literally anywhere from half to two times that, being dividend out to shareholders every single year, while you continue investing capital and growing.
+
+Ben: Ball so hard.
+
+David: They want to find you.
+
+Ben: Yup. The last thing I want to throw out is, this period between 1890 where we're ending this episode to 1900, they grew tremendously. They had annual earnings, where we're leaving the story off of somewhere between $10 and $20 million, which inflation-adjusted is like 30X. It's really 300–500 million in terms of the amount of earnings profit that they were generating per year in today's dollars. 
+
+By 1900, they’re 6X that. So over a decade, they actually grew tremendously. It depends whether we're thinking about the business in this $10 million to $20 million era or in the $60+ million dollar era, by the turn of the century. 
+
+I think that gives you a good shape of like, this is a business that was spinning off cash, David, the way that you were just describing for us, that employs 100,000 people that kept America and Europe's lights on. Because it's been so long since this happened, we don't have SEC filings telling us here is literally the amount of value they were able to capture versus create.
+
+I think the way I would look at this one and talk about this is, you can tell from the business practices that we've harped on this entire episode—every time they created value, they looked around to capture every single scrap of it that they possibly could rather than let consumer surplus exist, or their competitors participate in the upside that they were creating or partners.
+
+David: The numbers that we have, scant data such as it is—I wish we had PitchBook back in the day—I think they're also misleading. They do seem a little small like, wait a minute, you guys are talking about how this is a business on the scale that no other business in America has ever been before. But inflation-adjusted, even by 1900, you're talking about a few billion dollars of cash flow. That's dwarfed by companies today. I don't think these numbers tell the whole story because so much of the capital in this business was, a) being recycled, and b) not accounted for because of the crazy decentralized trust structure.
+
+We'll talk about this much more in the next episode. But when it ultimately gets broken up, you said at the top of the show, the children companies that come out of Standard Oil—Exxon, Mobil, Chevron, the bulk of British Petroleum now, and Amoco, all of these companies. It wasn't until the rise of the FAANG era in the last 10–15 years, before that, ExxonMobil was by far the largest market cap company in the world. That was just one of the children that came out of this company. The value that was tied up here was immense.
+
+Ben: That's a much better way to look at it, you're right. I also think inflation adjusting these things is probably the wrong way to look at it. I was thinking about this more in the context of Rockefeller’s personal wealth, which we'll dissect in-depth in the next installment here. Sure, you can inflation adjust wealth and you can inflation adjust profits, but what you should be doing is looking at them as a percentage of the GDP at that time.
+
+Let's look at 1900. Standard Oil, in 1900, produced $60 million in earnings. Rather than inflation adjusts that, let's look at it relative to the total GDP, which was $24 billion. So $60 million, divided by $24 billion. So 0.25% of the entire country's GDP is Standard Oil’s profits. I suppose GDP really would be based on revenue. Assuming they had 33% operating margins, I'm kind of pulling a number out of thin air, but that feels reasonable.
+
+David: I don't know how they're defining profits here. I don't think this is GAAP accounting. GAAP accounting doesn't even exist at this point. That might be the dividend, the annual dividend.
+
+Ben: Oh, the earnings being the...
+
+David: Yeah.
+
+Ben: No, because the data source we pulled this from had dividends differently. Let's assume that Standard Oil's revenue represented something like 1% of America’s GDP. Probably a little bit shy, but something like that. I think that is the right way to frame the amount of money that was flowing through this one company at the time.
+
+David: Wow. That is a significant scale. I think the question that we wanted to ask on grading is, Standard Oil becoming a monopoly in this way versus if the industry were to have played out with the unfettered individual competition.
+
+Ben: Which, of course, is a counterfactual that we have no idea, but how can we get a sense of what the shape of that could have looked like? 
+
+David: It's interesting. This makes me think about China and what's going on in China right now. I think the Chinese political-economic philosophy is really aligned with the Standard Oil view of the world, which is that unfettered competition is fine in the early days of an industry. But then you got to come in and you got to consolidate it. You can consolidate it through the government's hand, in the case of China. 
+
+In this case, it was through Rockefeller’s hand. But that's what you need to enter a phase of maturity in an industry. As we were just saying, Rockefeller's argument is that all of this was good for consumers. This was great for consumers. This was great for America.
+
+Ben: In the most recent Amazon letter to shareholders, when Jeff Bezos calculates the amount of consumer surplus. He's like, if you look how much Amazon shareholders have profited on us existing, Amazon employees have profited, and Amazon customers, it's by far the customers who have won.
+
+David: Yes. So good. Bezos, student of history.
+
+Ben: Rockefeller’s making the same point here. I think it's really interesting.
+
+David: Yeah, well, again, counterfactual, impossible to know, but there's definitely a world where the kerosene industry doesn't develop anywhere near the same scale or impact or size.
+
+Ben: I'm going to throw this out there and say I think the world would end up no different of a place. I think it would have been totally net even. The only difference would be that the Rockefeller Family Foundation wouldn't be as large. Give or take a few years, I think the whole thing would have played out pretty similarly. We would have ended up in the same sort of major players in the oil world that we have today.
+
+David: Yup. Maybe all of the Standard Oil children—the Exxons, the Mobils, the Chevrons, et cetera—would have developed anyway.
+
+Ben: That could have been a Cleveland refiner, growing on their own and not being a part of Standard Oil and then having to get spun out.
+
+David: That's a really good point. Rockefeller was a genius on so many levels. He brought the Morris Chang level of thought and discipline to the business, but eventually, other people would have done that too.
+
+Ben: Yup. It might have been a little more annoying where you had to get those two types of kerosene sitting next to each other on the shelf and make sure to buy the compatible one for whatever apparatus lamp you had at home. That would have been a slight bummer. I think Rockefeller made a lot of arguments that served his purpose. As fun as it is to imagine and theory craft why he was right and how that would have played out, I think net net, we would have consumed about the same amount of oil between then and now. Consumers would have spent about the same amount of money on oil between then and now. And we would have about the same number of players we have today.
+
+David: Let's see if I can translate it right, it sounds like you're arguing for a grade of a C, like a passing grade.
+
+Ben: Oh, it depends what we're grading. In terms of creating a bunch of value and capturing as much as you possibly could, A+.
+
+David: Right. In terms of the grade of the development of this industry in America, as it did, versus non-Standard Oil path.
+
+Ben: Yeah, I guess that is what I'm arguing. What do you think?
+
+David: I'm not feeling strongly any different way. I think that's a really good argument. It's funny, I feel like if Peter Thiel were here as a guest with us, he would be vehemently arguing the opposite. It's the zero to ones. Yes, anybody could have done this. Yes, other people might have, but Rockefeller did it. In the absence of somebody doing it, then it might not have happened.
+
+Ben: Without all this standardization in the oil industry, then we wouldn't have had all the unbelievable lifestyle upgrades that we've all had over the last 150 years because of the advent of a unified oil ecosystem.
+
+David: Yeah, like your electric cars and Teslas and the like. No kerosene back in the day. No gasoline thereafter. We don't advance to the level of technology and development that we're at now.
+
+Ben: If the car was much more inconvenient to drive or wait another 30 years to develop, then there's a zillion knock-on effects of America doesn't innovate in all sorts of other ways. People don't have a lot of other products that we all take for granted and realize now.
+
+David: All right. I don't have a strong point of view. I think I'm going to go a notch higher than you to B, just because I really do see both sides here. One side being the argument that this all would have happened the same way anyway, and the other side being yeah, but really, you need Rockefeller. No Rockefeller, it doesn't happen. The other reason I'm going to go with B is I just really love telling this story.
+
+Ben: That I can tell. 
+
+David: All right.
+
+Ben: Carve outs?
+
+David: Carve outs, let's do it.
+
+Ben: Two for me, both are related, the first is more related than the second. The first one is the movie There Will Be Blood with Daniel Day-Lewis. If you are jonesing for some good old fashioned extremely violent early oil days. I wasn't there so I have no idea, but an unbelievable articulation of what it would be like to go and prospect in the oil field, the risks involved in that, the personalities involved in that, the deception, and the way that rogue entrepreneurs were organizing labor and capital to make these things happen.
+
+I saw that movie maybe six months ago, but I thought about it so many times, especially in regards to Titusville and some of those in researching this. My second is only tangentially related because it is actually about a gold rush, not the oil rush, the TV show Deadwood with Timothy Olyphant.
+
+David: I've heard that that's very good.
+
+Ben: It's excellent. I am one of three seasons in right now. I just finished the first season. It's so good. The characters are so compelling. The acting is great. I actually got tipped to it when I was doing the research for the Andreessen Horowitz episode. Marc, I think, mentioned that it was his favorite TV show. I should check that out if it's Marc Andreessen’s favorite TV show. Sure enough, it's awesome.
+
+David: It used to be the show.
+
+Ben: Oh really? Which is also great.
+
+David: Yeah. I've never seen it, but given what we do here, I need to watch it.
+
+Ben: You do, so go watch Deadwood. It's awesome.
+
+David: And There Will Be Blood. I've never seen it. I'm so living under a rock
+
+Ben: Oh man, you need to see that and Gangs of New York.
+
+David: Yeah, which I also have never seen. My carve out is completely unrelated. I'm sure I could think of some. The Standard Oil octopus tentacles reach so far that I probably could think of some connection, but I'm not going to. The Secret Base YouTube channel, which is part of SB Nation, the sports news website. It's so good. I've liked this channel network for a long time. These guys just do irreverent histories of sports moments and teams.
+
+In particular, they just did a seven-part series on the Atlanta Falcons. It's probably five or six hours in total and it's so good. It's so funny. The whole premise of the history is they do a lot of great graphics on the channel. They take a visual representation of the win-loss differential for the team where if the horizontal x-axis is a 500 record, then going down below is losing, and then going up above is a winning overall record.
+
+Basically the whole history of the Atlanta Falcons, their wing as they call it, it's all losses down into the red, almost exactly mirrors the Falcons logo. If you tilt up on its side so that the x-axis becomes vertical, it really looks like the Falcons logo. It's so funny but very, very well done. Highly recommended.
+
+Ben: Sorry to any Falcons fans out there.
+
+David: But it's like a love letter to the Atlanta Falcons. It's so fun. I don't think I made this my carve out but they did one on the Mariners a year or two ago that was equally good. We'll link to that one too.
+
+Ben: All right. Well, listeners, thank you for joining us on part one of this epic journey. We are excited to take you on part two here. We are very interested in your feedback in between episodes. I think we're going to leave ourselves enough time to make sure we have this out in the wild before recording the next one.
+
+Join us in Slack to come talk about it at acquired.fm/slack, email us at acquiredfm@gmail.com, or tweet at us at @AcquiredFM on Twitter. If you like this, share it with a friend. If you are in the oil and gas industry, we'd love your perspective. We're very interested to learn from folks where this is their bread and butter.
+
+With that, thank you to pilot.com, the greatest bookkeeper since John D. Rockefeller himself, PitchBook, NordVPN, and listeners. We'll see you next time.
+
+David: We'll see you next time.

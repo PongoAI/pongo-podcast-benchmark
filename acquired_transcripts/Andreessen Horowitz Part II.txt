@@ -1,0 +1,1433 @@
+Ben: Welcome to season 9 episode 2 of Acquired. The Podcast about great technology companies and the stories and playbooks behind them. I'm Ben Gilbert and I'm a co-founder and managing director of Seattle based Pioneer Square Labs and our venture fund PSL Ventures.
+
+David: And I'm David Rosenthal and I am an angel investor based in San Francisco.
+
+Ben: And we are your host. Listeners, welcome to Andreessen Horowitz part two. We last left Marc and Ben instant messenger conversation in 2009 with the famous first words, “We have to start a venture capital firm and I was thinking the same thing.”
+
+David: I think that conversation was actually 2008.
+
+Ben: 2008, that makes more sense. Launched in 2009.
+
+David: It takes a little while. We'll get into it. It takes a little while to set up a venture firm, raise the money.
+
+Ben: You just don't snap your fingers and have $300 million?
+
+David: Hahahaha.
+
+Ben: Today, listeners, we will cover the next 11 years from the firm's founding to today. This is the story of the VC firm that basically changed everything in the whole landscape. Super high valuations, massive fund sizes, criticism for both of those things, becoming an investment firm and a media company, popularizing the message that former operators make better VC's than career investors do. David, reflecting back, it's pretty crazy that a16z is only 11–12 years old.
+
+David: Wow.
+
+Ben: Yeah, that became a big dominant force so quickly. To put it in perspective, they were founded two years after the iPhone came out.
+
+David: That's right. Pretty good time to start a venture capital firm.
+
+Ben: Perfect timing. Listeners, two things to highlight if you like the show. One is our Slack, and when I say Slack, I do indeed mean the company that a16z made $3-ish billion investing in.
+
+David: Do you mean Tiny Speck?
+
+Ben: Oh, sorry. I do mean Tiny Speck, you're right. We've got a great discussion of these episodes, crypto, investment ideas, all the good stuff with a community of 8000 super smart people like yourself. Join at acquired.fm/slack and the limited partner program. This is our members-only community where we drop special for-subscribers content.
+
+The most recent one was with Kyle Samani who is the cofounder and managing director of Multicoin Capital. We talked with him about how to manage a crypto fund, how it's different than managing a normal fund on this show.
+
+David: Very different. What was his line? Because they had a head fund and a venture fund all doing crypto. Well the demarcation is if time to liquidity is more than six, nine months or so, we put that into a venture fund. Oh, wow.
+
+Ben: Yeah, a whole completely different universe. If you want to listen to that or any of the other LP show episodes or join us in our next upcoming Zoom calls with LPs, you can click the links in the show notes or go to acquired.fm/LP.
+
+David: One last thing before we dive in. I would like to welcome once again our presenting sponsor for all of season nine, pilot.com. Pilot is the backbone of the modern financial stack for startups and is backed by all-star investors like Sequoia, Index, Bezos Expeditions, and Stripe. Not Andreessen Horowtiz yet, but life is long and a16z does have a pretty large growth fund now, so we shall see.
+
+Pilot is truly the gold standard for startup bookkeeping. At this point, most (I think) if not all the companies I work with as an angel investor run on them. Now, over to our conversation with Pilot cofounders Waseem Daher and Jessica McKellar.
+
+You talked last time about the importance as a startup of spending time on things that will actually make a difference in your outcomes. What was your experience with finance and accounting in your previous startups and how is the Pilot approach different?
+
+Waseem: At our first startup case-wise, we started right out of school, we’ve all taken computer science. We knew nothing about anything, certainly nothing about running a company. We were bootstrapping the thing, so our dollars were scarce.
+
+One consequence of that is we did all of our back office work. We bought double entry book keeping for dummies and a couple of ClickBook desktop. It was incredibly tedious and painful. I didn't really want to spend my time doing accounting and the time I was spending doing accounting was the time we weren't talking to customers, or improving the product, or hiring great people.
+
+I think the experience we had was very visceral. Every startup founder needs to be laser-focused on what matters. Startups are super hard. You want to maximize your chance of success by really focusing it on the things that are really going to move the needle for the business. That visceral pain is really what caused us to start Pilot.
+
+We said, why don't we build the service we wish existed? To be clear, that service is not ‘here’s a software package that helps you do your accounting.’ What you really want is ‘hello, I'm an expert who can take this work off your plate for you.’ That's what we set out to build.
+
+David: Amazing. Our thanks to Pilot. You can learn more about them and whether they can help your company eliminate the pain of tax prep and book keeping by going to pilot.com/acquired and thanks to Waseem and Jessica. All Acquired listeners, if you use that link, will get 20% off your first six months of service. Super excited to have them with us all season. Thank you, Pilot.
+
+Ben: Thank you, Pilot. Pretty sweet offer. Listeners, as usual the show is not investment advice. David and I certainly hold equity in some of the companies that we're going to talk about in the show so please do your own independent research. None of these is investment advice. It's for informational and entertainment purposes only.
+
+David: One other disclaimer, disclosure, I do have a new investing vehicle that I am super excited about. It's called Kindergarten Ventures and it is an angel fund that I've started with my buddy, Nat Manning, who is the COO of Kettle, a great company that we talked about a bunch on this show. As I said last time, a few of the Andreessen Horowitz VPs are small LPs in the fund. I don't think that has had any influence on…
+
+Ben: I’ve been keeping you honest.
+
+David: Ben, you keep me honest here. I'm going to be pretty laudatory of Andreessen here, but I think I would have done that anyway, but you can keep me honest here.
+
+Ben: David, congratulations. Excitingly, you are moving from angel to super angel in the 2008 parlance.
+
+David: That's right.
+
+Ben: Pretty cool.
+
+David: Just like Ben and Marc, originally, it's not just about seed investing. Really, it’s about (in a large part) all the great folks in Acquired. We invest at any stage, any sector, we are super angels.
+
+Ben: You're starting to spoil stuff, take us in. You're sounding exactly like one of the ten full VCs of the start of Andreessen Horowtiz.
+
+David: Indeed. Let's see where Kindergarten goes over time. Okay, as you said at the top of the show, we finished last time with Ben Horowitz (not Ben Gilbert) getting off the obvious recruiting call from Doug Leone from Sequoia. He hangs up and he IMs Marc. IM, I love it.
+
+You might be wondering, huh, why aren't they starting a company? Why are they starting a venture firm? Venture was something that, Marc at least, had supposedly been interested in back from his first early days in the Valley. He says to the wonderful writer, Tad Friend, in the great New Yorker piece that we're going to keep referencing today.
+
+He says to him about venture capital, “I always thought the entire venture thing was incredibly cool. Going to Kleiner Perkins with the high ceilings, the markers on the wall of the great companies they IPOed, Larry Ellison walking through, and at 11:00 AM the biggest buffet you'd ever seen at a time I was eating at Subway, it was the closest thing to a Cathedral for nerds.”
+
+That's some way to talk about the venture capital industry. As we talked about, Marc and Ben (of course) have been doing their super angel investing thing. This was an entirely huge leap, but as many, many people would point out to them and of course as they knew themselves, building a venture capital firm that is going to lead deals and beat out other venture capital firms to lead deals is a very, very different proposition than being an angel investor.
+
+Ben: In this angel investing they were doing, we should say Marc and Ben did 36 deals together over just three years. A deal a month with their own money of about $200,000 of a max cheque size. They're pretty much leading rounds. They already don't have the dynamic of needing to be the one to set the terms and come in. That is about to hit them in a big way of a total difference between coming in as a participating versus a lead investor.
+
+David: I'll say having now made the opposite journey. It is way easier and way more fun not to be a lead investor, but that's a whole nother story. But like we said, it's a pretty interesting and definitely contrarian time to start a venture firm. Here we are in late 2008, early 2009, of course what's going on? The financial crisis.
+
+Most other VCs—if not VC, certainly the LPs—are all tucking their tails and triaging their portfolios right now. This is not about deploying more money or starting a new firm. Sequoia is just literally just on the RIP good times presentation. It's kind of crazy, though, to think that oh, we're going to go start a new firm right now.
+
+Ben: Yeah, it's wild.
+
+David: Here they are, obviously we talked about the big thesis that they have that there is no bubble. They're kind of all alone in shouting from the rooftops here that hey, things are actually great in Silicon Valley. This is not like the dot-com crash. The financial crisis is actually only going to be great for Silicon Valley startups, and of course, they are right about all of this.
+
+Pretty much nobody else is saying this. Tad would write in the New Yorker piece later that a16z was designed from the beginning to be a full-throated argument about the future. Of course, at a time when nobody was making that argument.
+
+They've got this insight. They've got the interest in VC and the drive to make it happen to go build a firm. They're Marc Andreessen and Ben Horowitz, but they're still just two dudes. If you want to pull off what they want to pull off, they're going to need a whole lot more than that.
+
+They go to see, who else but their old friend Andy Rachleff. Andy, by this point, has stepped back from Benchmark and he's teaching at Stanford USB, and he's just made the jump to be an entrepreneur himself. He has founded Wealthfront. Of course knowing Andy, there is nothing that gets him more jazzed than the idea of, in the words of Howard Marks that he uses, “a correct non-consensus bet.” That is obviously exactly what Ben and Marc are trying to do here.
+
+Andy tells them this is great. I love you guys and I love this contrarian bet that you're making, but you want to be in the upper echelon of VC firms and you need a strategy to break in. You see, we did this at Benchmark about 10 years ago when we started Benchmark and we've talked about this a lot on the show, but what we did in Benchmark was we counter-positioned against one of the two major incumbents at that time, which was Kleiner Perkins. Kleiner, as we talked about it, was the correct approach to venture capital.
+
+Ben: All of our companies worked together in different ways as sort of a mesh network. We sort of sit in the network as the capital provider, but they work with each other in different ways.
+
+David: Yup. On the one hand that was great, but on the other hand it's certainly that some of the Kleiner entrepreneurs felt like they were pressured into doing deals, working with other Kleiner portfolio companies that didn't really make sense for them. What Andy and Benchmark did is they said, there's no pressure from us to do anything else. We're going to treat you as sovereign states and help you make the best decisions for you. That was fun.
+
+The second piece of the benchmark counter positioning against Kleiner—maybe this is the most important—the thing about Kleiner during its heyday was it really was John Doerr, and we got to do a whole episode on Kleiner and storied history even before John Doerr, but the glory days, it was all John. All their Bitcoins from Netscape to Amazon and beyond, it was John that sourced them and John was the reason why the entrepreneurs wanted to take Kleiner's money.
+
+The thing about how it worked that wasn't talked about a lot, was John would source the deals. He would be the face of Kleiner, the reason everybody wanted to work with them, but then he'd farm out the board seats to other partners and even associates. How do you counter position against that?
+
+Benchmark’s like this are great. We're going to be a small equal partnership. All the partners here are going to be great people you want on your board, you know what you're getting. Somebody from Benchmark you're getting an equivalent, maybe not quite an equivalent but they talked about an equivalent of John Doerr and your partner is actually going to sit on your board. If you're Benchmark, you need to start talking about how important it is to who your board member is.
+
+Ben: Right. It's sort of this all about the individual. You form one trusted relationship, they aren't promising to do anything for you. We're not going to staff up your company or help you with PR. We're going to be the best financial investor and board member possible and you're going to have this really tight one-to-one relationship with someone that you really really want involved in your company, personally.
+
+David: Totally. I think it's worth doubly underlining this because obviously it is super important who your board member is. The right advice from the right board member can make a huge difference. Today, we just take this for granted. It's like fish in water, yes, of course the board member that you have on your venture firm is super, super important. That wasn't the case and you could actually ask the question of is that the truth, period.
+
+Ben: Totally. We're going to talk about a lot of things on this episode that Andreessen Horowitz introduced into common startup wisdom. This was the one that Benchmark introduced in the common startup wisdom.
+
+David: Yup, and the reason they introduced this into startup wisdom was specifically to fight against Kleiner Parkins.
+
+Ben: It was a strategy credit. It worked really well for them.
+
+David: Exactly. Then of course the last piece of the benchmark counter positioning related to all of these now working on concert together was Kleiner was this huge firm. It's got a lot of tiers of parents, and lots of people there, lots of politics, lots of functions that are investing partners.
+
+Benchmark is somewhere near the opposite. We're going to be a small, flat, equal partnership so we're all going to get onboard in a way that politics at a bigger firm like Kleiner would sometimes make it difficult.
+
+Of course there's a lot of luck that goes into building a venture capital firm as well, and probably the most important thing for Benchmark was that they made that early investment in eBay. All of the strategy and all this counter positioning, sure, that helped, but they got eBay. Nothing else is going to matter after that, and that helped them ascend to the top of the venture capital heap.
+
+Marc and Ben started doing all of this and hearing this from Andy, they're like, huh, okay, well what are we going to do? Remember, of course they love Andy but they hate Benchmark.
+
+Ben: Yeah, and we should say the way that Benchmarks established these tenets that they hold true and the way that Andreessen Horowitz is about to, it's not pure marketing. At least from what I can tell in all the research. It is a self examination of what are the things we hold to be true and then what are the subset of those things that we can make a really loud marketing message about that we were going to do it anyway but played to a massive advantage for us.
+
+David: Yup. They're like, we like this counterpositioning thing, Ben and Marc are. Who are we going to counterposition against? Not Kleiner and probably not Sequoia. Like we talked about in the last episode, if you're going to come at the king, you best not miss. That just seems really hard. Maybe we should counterposition against Benchmark?
+
+Ben: Our buddy Andy is not there.
+
+David: It's like the old saying, you either die a hero or you live long enough to see yourself become the villain, right?
+
+Ben: Oh, on that note, I know you're about to talk about this later so I won't disclose how Marc announced the existence of the fund, but in the first sentence of the interview that he did announcing the fund, he literally said the sentence, “I'm crossing over into the darkside.”
+
+David: That's actually great because I cut that from the quote that I was getting.
+
+Ben: All right, perfect.
+
+David: Perfect. Much later, Ben would just actually say point blank, “Yeah, we're always the anti Benchmark. Our design was not to do what they did.” Of course he's referring to them telling him that he wasn't CEO material but also in general we’re going to do the opposite of what they do.
+
+Now the question becomes, okay, Marc and Ben know what they're going to do. They're going to counter position against Benchmark. How do they do that? The obvious first thing is we don't fire founders here and we support young technical founders, help them become the best CEOs that they can be, and we're not going to do what David Byrne tried to do to us.
+
+Ben: I love the way they talked about this because clearly, it's something they deeply believe having both been computer science undergrads and gone on to become founders of companies. The way that they described it is without a synthetic network, without a network of what Andreessen Horowitz will become, a technical founder doesn't really have a chance of becoming a professional CEO.
+
+The pace of the company's growth is going to require a CEO network, a CEO's understanding of how an organization is built much faster than someone can develop those skills. The thesis behind developing what would later become platform at the entire VC ecosystem platform teams was really Marc and Ben saying, how can we synthetically create or stimulate all the tools that a real professional CEO has if you are a technical founder, if you are the innovator, because their core belief they believe that the innovator should be the one who is running the company. If that is true, oh my gosh, there's all these problems that now we have to help them fix.
+
+David: Totally. Now think about how this all fits back into these various VC firms’ strategies. What was Kleiner's strategy for overcoming this? It was the [...]. Great, we're going to take all of these founders, all these young companies, and how do we turbocharge them into being real companies, building their networks, and doing their deals? We have them work together. We have the best companies, so that's great.
+
+Now think about the Benchmark strategy of where are you going to position against Kleiner? What do you need if you're the Benchmark strategy? You need CEOs who are grownups, who are capable of standing on their own, running their companies because they're not going to get a lot of support on that front from Benchmark because it's just the partners. Now it starts to explain some of the behaviors here over the past few decades.
+
+Ben: You show me the incentives, I'll show you the behavior.
+
+David: Exactly. They start thinking about this. They're like what are we going to do? Well, we want to raise a big fund. We want to be a big firm. We're going to have a lot of management fees associated with that and we, Marc and Ben, don't really need the management fee income streams. We've made plenty of money and we're used to being entrepreneurs, not VCs, not getting high ongoing salaries.
+
+Ben: Lumpy cash flows.
+
+David: Exactly. What if we take all these management fees and we staff up? We build a platform, Andreessen Horowitz. So 2.5% of $300 million is $7.5 million a year. That's a lot of money.
+
+Ben: Right, and classically, when people say 2 and 20, it's 2% on average for the lifetime of the fund. You can say in the back half we're not going to be doing as much active work on this particular portfolio so we'll take 1.5%. At the front end we want to take 2.5% ot balance it out. Yeah, David, you're right. If we're not paying ourselves, which we should say for at least the first two years—Marc and Ben did not take a salary—we got a lot of cash we can spend on stuff.
+
+David: Yeah, on people and resources. Then they start thinking about the rest of the venture industry. Marc and Ben's lenses as former entrepreneurs, if you got these firms that are small partnerships, not that many people, but they're just getting these huge management fee streams. It's kind of weird then that these VCs are telling entrepreneurs, oh, you should take $50,000 annual salaries, which was the norm back in those days, $50,000–$60,000 as annual salary and you should give us this big ownership, but we're going to make a few million a year each, rain or shine, out of these management fees. Interesting.
+
+The next piece they start thinking about is how they can counter position. Benchmark, more so than pretty much any other venture firm even to this day—but a lot of venture firms felt the same way—they had the Series A purist approach. Really this idea that still permeates venture to this day, but the Series A, that's the real craft of venture. The board is related to this board member thing. That round is the sacred special round where the shoe leather really gets polished, so to speak.
+
+Ben: To say why because in this very clear-cut world which we're not in now of these crazy names for rounds and incredible fluidity of rounds, there was not a seed asset class, there were no seed firms. So the Series A was your first professional venture capital institution coming in and writing a cheque into your company, taking a board seat—the first time you had real governance—and before that you have whatever cowboy would help you as an angel investor get to something that looked venture capital fundable.
+
+David: If that even happened at all. In many cases, the Series A was the very beginning because you needed a few million dollars to go buy some servers and do all of that. By the time we're talking about here in 2008–2009, the Series A has really become this catbird seat from the venture capitalist because they can outsource all the real early-stage risk to the seed stage with way less capital—have these companies get going—and then once they start to show product/market fit and a lot of the risks has been removed, then the Series A venture firms can come in, lead around, and they're still all these hangover baggage with the round where it's like the norm that whoever leads your series A is going to get a huge ownership percentage in your company—25%–30% ownership—and it turns into this total bonanza for the venture firms who aren't really taking that much risk.
+
+Marc and Ben are like, well, what if we say that Andreessen Horowitz will do any round at any time. We'll do seed. We'll do lots of seeds and we won't take board seats in the seed investment. You don't need that much capital, and we won't give you that much capital, and we won't take that much ownership. Then we'll do Series A, sure, but we'll also do Series B, and we'll also do growth rounds.
+
+Ben: Listeners who are not professional venture capitalists listening to this, it sounds like okay, cool. They have a different strategy. They don't focus on a stage, they just focus on lots of stages. For anyone who has raised a fund before, you will know how insane this sounds. What venture capitalists classically pitch to LPs is our sweet spot investment is this. It is a company that looks like this. It's a stage that looks like this. It is an ownership percentage that looks like this. It's a cheque size that looks like this, and it's a set of governance rights that generally looks like this.
+
+We intend to do that 20–40 times. That is how we will construct our portfolio, so therefore there can be a bunch of different variations among the companies as they go along. There will be winners, there will be losers, but they will start out like this so that's what you're buying. By starting a venture firm being like we're stage-agnostic, we're government-agnostic, it's like, wait, what's the thesis?
+
+David: Totally. It seems crazy. Again, they look at the ecosystem and they're like wait a minute, there's super angels of which we've been them. We're doing great.
+
+Ben: We're cleaning it up on Twitter, Facebook, LinkedIn, and Zynga, I think.
+
+David: Groupon. All these companies, where in them, we're doing great at seed. Why on earth will we stop that? Then they looked downstream past the Series A. There's a whole set of venture firms at this point in time that all they do is they just ride the coattails of Sequoia, Benchmark, and Kleiner and they say, what series did they do? Great, we're going to come in. We'll mark it up like 2X at the Series B. We'll ride along and they're doing great.
+
+Andreessen Horowitz is like, we can blow these guys out of the water. Then they look across even further and they're like, whoa, there's this whole other asset class out there. I'm talking about Summit, TA, and Silver Lake which is going to come back up. Those guys, they're deploying a lot of capital. They're getting less multiple returns, but the dollar returns that they're generating are enormous right now.
+
+Ben: In pretty short periods of time with very, very protected downside. Very low risk, low multiple, but fast return, big dollar amount investments.
+
+David: Totally, and they don't even pretend to offer any of the stuff that venture firms pretend to offer, like huh, okay, great. This whole set of things, we're going to build a big firm, people-wise. We're going to use the management free resources to build out platforms to help technical founder CEOs become CEOs.
+
+Ben: They would later call these networks. Each individual function, recruiting, finance, or acquiring enterprise customers, they call these networks at the firm.
+
+David: Yup. We're going to do that. We're going to not necessarily focus solely on Series A. We'll do Series A, Series A is great, but we'll also do seeds. We'll also do growth rounds because we think there's opportunity there, and we can break in. Then government things, like sometimes we'll take board seats, sometimes we're not going to take board seats, but we don't necessarily need to, and maybe that will help us scale.
+
+I would say all of that collectively becomes the counterposition against Benchmark. You know it works to varying degrees. On the whole it works great. There are a few specific things that don't work. The seed and the governance in particular, I think these are good ideas and they work now, but at that time, they started to inadvertently leave a pretty big flank exposed to old school VCs here which becomes the signaling effect.
+
+Ben: This became talked about for 5–7 years after this was an issue.
+
+David: Oh my God, people are still talking about these three or four years ago which is insane.
+
+Ben: All right, so what is it, David?
+
+David: If Ben and marketing will go out there and do all these seeds and not take board seats, the question then becomes if they don't invest in the next round in Series A or later, is that going to send a really negative signal to the market of, well, Andreessen Horowitz had the inside information on this company because they did the seed and now they're doing the A in the competitor. Does that mean the original company that they seeded is no good?
+
+Other VCs in private and public vehemently attacked Andreessen Horowtiz on this front. The reality is the most exemplary cautionary tale about this is completely the opposite, and that is of course, Instagram which is so great. Andreessen, along with Baseline, does the seed in Instagram and then chooses at the Series A in one of the most boneheaded decisions of all time to instead back competitor PicPlz.
+
+Ben: Right, because they ended up both being in their portfolio because Instagram started as Burbn, pivoted into Instagram, suddenly Andreessen Horowitz has a problem because they have two competing things in their portfolio. They're like, well, we got to pick one and we're picking PicPlz.
+
+David: Totally. What actually happens here like, oh, you would think if you buy the narrative of the attack against Andreessen Horowitz, oh, signaling effect, Instagram, they're toast. Far from it, they raised a Series A from Benchmark, from Matt Cohler of Benchmark. Of course, we know what happens there and what happens to PicPlz, which is nothing exciting. The reality is the signaling effect works more against the VC firm than against the companies.
+
+Ben: We've got this thing where the innovator should be running the company, Andreessen Horowitz is going to have all these networks that are going to augment that innovator, and give them CEO-like resources at their disposal. They can really be the professional CEO and the technologist who brought it into the world, they're going to spend a bunch of management fees to make this possible, they're gonna raise a pretty big fund for the time, $300 million. They're doing wacky stuff with portfolio construction.
+
+David: Okay, all this is great. They've got this great theory, the grand unified theory of counter positioning and market entry strategy into the venture industry, blah-blah-blah, all good. But Andy's like us. This is one other thing, which is the reality on the field. I've done a bunch of research here since I joined the faculty at GSB. I've concluded, with data approved, what we all knew all along, which is that there's a very small finite set of companies that get started in the Valley, every year that actually matter.
+
+It is a bloodsport to win the lead position as an investor in those companies. You're fighting against Benchmark, Sequoia, and Kleiner. You can counter position all you want, but you're going to go fight against John Doerr. You're going to go fight against Bill Gurley, and you're going to fight against Moritz and Leonie and all these guys. How are you going to win?
+
+Just like the Mike Tyson quote, "You've got your plan, it's going to work until you get punched in the mouth," and they are going to punch you in the mouth. How are they going to punch you in the mouth? They're going to say things like, you know, yeah, Marc and Ben, Marc invented the browser and that's great and whatnot, but they haven't been VCs. They haven't been board members. They haven't been professionals here.
+
+The other thing that they're going to say—and that's going to cut way deeper for you guys—is they're going to say that you guys don't have staying power. As Don Valentine would have said back in the day, obviously not about Marc and Ben, but he would have said, where are the monuments? What's Netscape? What's Opsware? You guys have built these good stories. Good companies, they're not around anymore.
+
+Who's using Netscape? Nobody. You talk about this big game, but where's your eBay? Where's your Cisco? Where's your Oracle? Where's your Google? They aren't there. You want to work with us? We've got those monuments.
+
+There's this great quote from the fortune cover story when they launch the firm. There's this quote in there that says, "Just five years ago, Andreessen's image was more that of a smart, amiable, billionaire playboy who dabbled ineffectually at technology's fringes. He seemed more like Paul Allen than Bill Gates." Then in the same piece, this is from the launch of Andreessen Horowitz. Think about it, who was placing these quotes?
+
+There's a quote from Steve Case. Somebody didn't up Steve Case to like, do you have a quote here? “Marc is like a rock star who had his first album hit big and then the next ones were not quite the same.” Brutal. They're getting punched in the mouth, hard.
+
+Ben: Those are brutal. You're implying then that in this punch-you-in-the-mouth landscape that's going on, the journalist is doing research for the story, and they just get connected with people who are going to, from day one right out of the gate, beat the crap out of Marc and Ben's accomplishments?
+
+David: Yeah. I'm sure, Marc, Ben, and the great people they were working with on the PR side—which we'll get into in a sec—weren't the ones that pointed people to this quote.
+
+Ben: The Steve Case thing is interesting, too, given that Marc reported to him for nine months as the CTO of AOL.
+
+David: Totally. There's actually another sentence to the quote where it really softens the blow, something like, people have a lot of respect for him that he's persevered or something like that. The point, the damage is done here.
+
+Ben: Yup.
+
+David: They're like, we're going to have to deal with this. Fortunately, they know somebody who knows a thing or two about punching other people in the mouth. That is their other old board member from the Loudcloud, Opsware days. The original OG, Hollywood super agent Michael Ovitz. So great. We've talked a lot about Ovitz on this show, CAA and the whole Disney debacle, where he goes and becomes president of Disney. We of course talked about him joining the Loudcloud board after that on the last episode. I think if Andy was the inspiration for the highfalutin strategy of Andreessen Horowitz, Michael was the inspiration for like, okay, how are we going to get this done?
+
+The quick story on Ovitz is he started in the late 60s in the mailroom of William Morris, the storied, long-term Hollywood talent agency, and everybody started in the mailroom back in the days. The dynamic in Hollywood was totally broken. We're talking here about how the venture and startup dynamics were a little broken at this time, like Hollywood was bad. The studios controlled everything. They held all the power, they held all the creative decisions. The talent and the artists, the actors, the directors, the writers, et cetera, they were but little more than indentured servants. The agencies like William Morris claim to represent the talent, but they knew who the real customers were, which were the studios.
+
+Ben: I don't know if we've talked about it before on the show, but I've talked about it before with other folks in the Pioneer Square Labs context of how startup studios fit into the landscape. I love this equivalence between Hollywood and tech, especially in the old school days, you have the VCs, which are a lot like the studios. There were 3–5 major VC firms with money and there were 3–5 major studios with money that could greenlight a movie.
+
+Then of course, you've got the CEO founder who's a lot like the director of a film, and then everyone else including the actors who works on the film is a lot like the team of the startup. Watching the way that the power dynamics evolve between these two ecosystems in parallel is really fascinating.
+
+David: Totally. What Ovitz does, he and a bunch of buddies from William Morris, they're like, screw this, there's got to be a better way. They leave and they go start their own firm. It's exactly like Jerry Maguire. Jerry Maguire was actually about this guy, Leigh Steinberg in the sports agent world, but it's the same story. They leave, they're going to start a new firm, and they're going to focus on the talent, not the studios.
+
+They're going to figure out how to deliver the power to the artists, and the talent, and take it away from the studios. How do they do that? One, they package projects and talent together, and then they sell whole packages to studios, and say, we'll sell the rights to you. By doing that, versus like, oh, we represent this actor and you studio, you're making this project. It's more like, no, we got the project and the artists own the project. We packaged it and we're going to bid these studios off against one another to finance it at the highest price.
+
+How do they do that? They got to connect up the talent. They got to take the talent from being each individual person of their own to working together against the studios. How did they do that? They transformed what the firm from being each individual agent is a silo to we are a network. We're like a web network. They call it the franchise.
+
+Anybody who's part of CAA, your job is to have your clients, but to get them to work with all the other clients at the firm that are represented by a shared Rolodex. To do that, everybody at CAA is a partner. No mailroom, no blah-blah-blah. We're all here, we're all together. This is about the franchise.
+
+Ben: It's really fascinating in a business strategy context, zooming out what they did. This is a common discussion point on Stratechery of like, what is the point of integration within a value chain? What it used to be was at the studio level, because that's where the money would come from. They would get to aggregate all the resources together using their money, and the fact that it wasn't that competitive because there were very few people that they were competing against, and they knew them very well, and nobody wanted to lose their power. When you start having CAA say, actually, we're going to package all this together. The point of integration shifted down the value chain, one click to where now, it was happening with CAA.
+
+David: Exactly.
+
+Ben: The important thing here is, wherever the point of integration is, that's where you gain power. That's where you're able to become more than a commodity. Basically, you're able to create margin, where you're able to get more cash for something than it costs you to assemble it.
+
+David: What did CAA do? They create the projects, like Jurassic Park, Lethal Weapon, Schindler's List. These are CAA projects. These are not studio projects. They pull them together and then they bid them out to the studio since now, all of a sudden, all these studios bidding against one another, the price goes way up, the dollars flowing into the space goes way up, and the artists all do way better, so Tom Cruise, Kevin Costner, Barbra Streisand, Steven Spielberg.
+
+Within a couple of years, CAA's just vacuuming up everybody. Literally, the term that they used that I think Ovitz’ clients have become sad about CAA and Hollywood about all this, is they become, "the dream execution machine." You're an artist, you have a dream, CAA is your dream execution machine.
+
+Ben: It's great marketing.
+
+David: Oh, my God. Ben and Marc, they're like, oh, holy crap, this is so great. What better analogy to use we're going to go build the dream execution machine in startups.
+
+Ben: Which happens to work particularly well because they're working with technical founders.
+
+David: Exactly.
+
+Ben: You have the glint of a dream and the ability to create the core piece of value, the core way a customer interacts within, and gets value out of the product. But you can't do all the other stuff. We are the dream execution machine, you should come to us.
+
+David: Yup. They're just like a director, or a great actor, or a great writer, et cetera. The last unwritten, but it didn't need to be written principal at CAA was, take no prisoners and we're going to burn the old system to the ground. F all of those people. Of course, Ben and Marc have that same ethos about the venture ecosystem.
+
+Ben: Whether theirs was written or not internally, it certainly became written externally in all of their communications. They pulled no punches in talking about how the entire existing, incumbent industry sucked and people were greedy; we'll pull some quotes later. They were not shy about being critical of the establishment.
+
+David: Totally. This is the punch back in the mouth. Great, you're going to punch us in the mouth, say that we’re has-been rock stars who were one hit wonders? We're coming at you twice as hard. That's what they do. They also basically wholesale copy the firm building approach from CAA.
+
+As you said, that platform and the networks that they build up, they hire a whole bunch of people. They have a biz dev network to connect founders with large company customers. They've got an executive recruiting network. They've got an engineer recruiting network. They've got future financings like other venture firms’ networks. And an M&A network associated with that, too. You need an acquirer, we'll hook you up with acquirers. Then of course, probably the most differentiated and important last piece of this is they have a PR network.
+
+Ben: Yeah, which they wouldn't say is the most differentiated. The most differentiated, I think they would say, is the executive briefing center and our ability to galvanize a set of Fortune 500 companies to become your customers. In reality, yes, they are masterful at PR.
+
+David: Ben would say this quote later, but here's the perfect spot for it. He would say, “Literally, we introduced a new concept to the field of VC, which was called marketing.” And it's true. No venture firms were doing this for themselves or helping their companies with PR and marketing before Andreessen Horowitz.
+
+Ben: The interesting thing about why no venture firms were doing it about themselves was the commonly accepted wisdom that opacity plays to our advantage. I think most people didn't actually think it through. They just thought, what have successful venture capitalists done in the past and that was to be opaque, don't make too much PR noise other than to claim your win when you have it, but you don't need to take these big positions, be brash, and counter-position publicly.
+
+Andreessen Horowitz not only saw that as a thing they could exploit, but I can't remember if it was Marc or Ben—I was listening out to a podcast that we'll link to in the show notes, along with a lot of other sources we did for research for this one—brought up the fact that if you trace back the origins of institutional firms like venture capital firms, it comes from the investment banks of the 40s and 50s, who were opaque because they were financing wars.
+
+There were lots of reasons why they wouldn't talk about where their returns were coming from or their excitement about the projects they were financing. Whereas Marc and Ben are unabashedly optimistic about the future, Marc in particular, of just standing on the largest soapbox possible and preaching about how cool the future will be, and how much better off everyone will be both on average and in every spot in the distribution in the long run.
+
+Let's bring that closer as fast as possible and be really loud about the future that we see, and about the companies that we're investing in to build it, how much we believe in that, and how unapologetic we are about that. That was just totally different from the commonly accepted wisdom of how venture capitalists should go to market.
+
+David: Two things. One, I think the version of hiding the war financing of investment bankers that VCs were doing here was, they're hiding the management fees. Come on, you got a 10-person organization, half of which are assistants, and you're making $20 million across your funds in management fees a year. I don't want to shout that from the rooftops if I have a VC firm.
+
+Ben: Or brag about how I'm putting $2 million into work to own 30%–40% of a company.
+
+David: Exactly. Then the other thing, though, the flip side is, if you are going to be unabashed about pounding the table about what you're doing in the future, if you're an entrepreneur, you think you're part of building that future, God, now you've got a champion. This is great.
+
+Ben: Yup.
+
+David: There's one other person along these lines that they go see before launching the firm, which is the number one, hands down, best PR person in Silicon Valley at the time, Margit Wennmachers at the OutCast PR Agency. Margit had co-founded OutCast and they had all the best clients—Facebook, Salesforce, VMware. They worked with them from the time they were nobodies still up through being huge companies. Amazon, they did the Kindle launch and may to this day still work with the Kindle team.
+
+The story of how they get connected is—Margit tells this on an a16z podcast episode—that one of the companies that Marc and Ben had been angels in, wanted to work with OutCast, but Facebook blocked it and said it was a conflict and wouldn't let OutCast work with them. Marc had just joined the board of Facebook and he gets involved in trying to smooth this all over. He's like, wow, Margit is really amazing. I see a Facebook, like what she's doing there.
+
+He gins up an excuse to get her contact info, calls her up supposedly to talk about this situation, and instead brings her to the Creamery in Palo Alto, sits down with Ben and they just talk the whole time about how they're going to launch a venture capital firm. I've got another project for you, which is great. Marc is like, okay, we work with venture capital firms, I can do this. What are you going to call the firm? They're like, we're going to name it Andreessen Horowitz. She's like, that is a terrible idea.
+
+You're talking about this big game about how you're going to be a franchise, you're not going to be about the partners, it's all about the entrepreneurs and network, and you're literally going to put your own names on the door. Are you serious? They're like, no, no, no, no, it's not what you think. We did a whole big branding exercise about this. We heard a big branding firm, we did all this work, and we decided we need to do this for two reasons.
+
+One, Marc Andreessen is a known quantity. He invented the Mosaic browser.
+
+Ben: He’s already a brand.
+
+David: He's already a brand. We can draft off of that to get going and then once we get going, we transition from Andreessen Horowitz to a16z, which is a to z. Supposedly, the story, I guess, it's probably true that people used to abbreviate internationalization to—
+
+Ben: Oh, I actually know. It's definitely true. My first job when I was 14, was as a product test engineer at this medical printer company in Cleveland.
+
+David: I did not know that. That's awesome. We're learning some Ben Gilbert history.
+
+Ben: Yeah, and I did some internationalization work, which you will need to type that once before you're like, well, I never want to type that word again. That is abbreviated i18n.
+
+David: People really do this?
+
+Ben: Absolutely. There's another one. I think it's localization, might be L16n or L11n. I can't remember how many letters but yeah.
+
+David: Interesting. They're like, well, it's perfect. It's a geeky reference.
+
+Ben: Super esoteric.
+
+David: Super esoteric, but it's a to z. We're going to do a to z. At Andreessen Horowitz, we'll do any round, a to z. This is great.
+
+Ben: By the way, you'll get a heads up that Marc and Ben are going to step back from the firm when they actually, formally changed the name to a16z. I was looking for it in this most recent visual refresh that they did. I'm like, oh, is it time? Are they actually flipping it to a16z? But nope. The official logo as you'll see on the art for this episode is still Andreessen Horowitz.
+
+David: Still Andreessen Horowitz, interesting. It's got to become… all across the website everywhere. All the media they do, it's a16z. It's not Andreessen Horowitz.
+
+Ben: Yeah, but still the unofficial moniker.
+
+David: Still there, baby. There's one other thing, one other benefit about the name which we know very, very well at Acquired. They're going to be listed first in the phonebook.
+
+Ben: Yup, huge advantage.
+
+David: It literally is a huge advantage. Anytime that a reporter's writing a piece about them talking about various venture capital firms, as much as not, they're just going to alphabetize stuff, and who's going to come first? Andreessen Horowitz is gonna come first.
+
+Ben: We happen to be just very lucky that podcast clients are not terribly sophisticated in how they do sorting. Whenever you subscribe to the show, it just displays them in alphabetical order.
+
+David: Totally. Marc is like, yeah, all right, whatever, fine. All right, you guys have done a lot of justification to put your names on the door.
+
+Ben: Rationalize, rationalize, rationalize, great.
+
+David: Yup. What you need is you need to build up hype and you need a cover story. What do you want to do? What outlets do you want to go on? Where's your cover story? I can get you whatever you want. What do you want to do? So in February of 2009, Marc goes on Charlie Rose.
+
+Ben: Even 15 years later, it holds up really well.
+
+David: Yeah, it was really good. Landing Marc on the show when there's no reason; it's not like he has a new company or anything.
+
+Ben: In fact, the funniest thing is that I tweeted this from the Acquired account last night. There's some point where it brings up the little title tag underneath and it says Marc Andreessen, I think its founder, Ning. Founder of Ning? It was true at the time, but did anyone care about Ning? Not really.
+
+David: That's the best he can come up with?
+
+Ben: Yeah. We should be clear. He is on the board of Facebook. He's involved in some stuff that's going crazy. He's an investor in Twitter and Twitter's in its third month of vertical line growth. He's not just the Netscape guy. He's involved in something that these companies that are part of a cultural phenomena at the moment.
+
+David: Totally. Still, it was a pretty big win for OutCast to get him on the show. Charlie starts off and says, when we interview people like you, we always have to ask the question, what's the hottest idea there in Silicon Valley? What's the next big idea? Marc replies, well, maybe this goes off track from your question—he's great at redirecting; he's obviously had some training—I think the hottest idea is that innovation is actually alive and well. Remember, this is February, 2009. But look, there are a lot of people out there who are arguing the other side of that. He's already setting up like, we are the champions of innovation. Only we can save you. Then Charlie asked him about rumors he's been hearing that Marc is starting a venture capital firm.
+
+Ben: It's like rumors he's been hearing. This is why he's on the show. It's generous of you to give him...
+
+David: Rumors he's been hearing from Margit that you're starting a venture capital firm.
+
+Ben: You have to realize, before you finish, I think it is worth planting the seed. I watched this interview because I was reading an article and I was like, oh, this article says that he announced it on the show. I should go watch the Charlie Rose interview where he announces it. I start watching it and I get 20 minutes in and like, this isn't about Andreessen Horowitz.
+
+Then I remembered exactly what you opened with, obviously, it wasn't a brand yet. He wasn't known for being an investor yet. If you're making the pitch to Charlie Rose, if you need to have this guy on the show, Charlie's throwing Marc a bone by letting him mention his new project to galvanize it on this show. Of course, it only occupies 3 minutes of a 50-minute interview.
+
+David: Marc replies with, as he said at the top of the show, yes, I'm going to the dark side. Then he says, so I'm creating a fund and as you know, our claim to fame is we've actually been entrepreneurs. We're by entrepreneurs, for entrepreneurs. We've done it. We've been on that side of the table for a long time. We know what it's like.
+
+Ben: Yet another way, they're counter positioning. It's like, oh, my gosh. These professional investors out there, you don't want to work with them. You want to work with us because we've been in your shoes, which is now the dominant dogma that VCs feed to founders and then just uncommon.
+
+David: You heard it here first on Charlie Rose.
+
+Ben: Yeah.
+
+David: It's actually really funny. Did you get to the part later in the episode where they're talking about various new seed stage companies in Silicon Valley, and Mark starts talking about this really interesting guy who's starting a company and he's proven demand for it?
+
+Ben: Yes. He describes what we do at PSL, the validation process of driving traffic, and having a brand, and testing conversions.
+
+David: He just built a landing page. There's no product. Did you get to the part where he says who it is?
+
+Ben: Yes, it's Andrew Chen, who would become his partner 10 years later.
+
+David: So great. He's like trying to remember, oh, what was that guy's name?
+
+Ben: Right. He pitched me on this thing. I think he's getting close to having it around. It's coming together, good for him. Of course, this is pre-Uber. Andrew hadn't even done the growth thing at Uber yet.
+
+David: So great. These artifacts are history. I just love them.
+
+Ben: It's like when Don Valentine holds up the resume and it turns out to be Alfred Lin's. It's that kind of reference.
+
+David: It's one of those moments, totally. The actual big cover story reveal, as we said, July, 2009, cover story of Fortune Magazine, Marc is, I think not barefoot in this one on a throne. I actually didn't see what the image was. I'd be very curious.
+
+Ben: I'll look it up while you talk.
+
+David: They announced Andreessen Horowitz, a $300 million fund, which was very large at the time, especially for a first time fund. The piece starts off with the old Netscape email story that we told last time about Ben emailing Marc about the launch back at Netscape and Marc replying like, next time, do the effing interview yourself, F you. Then this is where the quote from Marc of, "this is why I should not run another company that comes up", which of course, this is the perfect. Oh, yes, we're starting a venture capital firm because I shouldn't run another company. Hahaha. Perfect.
+
+Ben: So, the cover image is this pretty hokey Uncle Sam gag where it's Marc pointing at the camera and it says, I want you to get the future.
+
+David: Oh, my God, that's so great. I want you to get the future. So prescient, given that the future would be the future for them. That's awesome. Okay, a couple quotes later in the article. First quote, “Entrepreneurs are sure to be attracted to Andreessen,” drafting off the Andreessen brand here, “who expresses more kinship with founders than with his peers in the finance world.”
+
+One blog post that Marc has written, titled, The truth about venture capitalists raised the question: VCs: soulless and rapacious capitalists, or surprisingly generous philanthropists? Two guesses which side of the coin he comes down on in that piece, talking about punching back in the mouth.
+
+Ben: It's like, how could you even have listed the second one? Of course, it's not the second one.
+
+David: Yeah.
+
+Ben: Has anyone in John Doerr's life or Don Valentine's life ever accused them of being merely a philanthropist? No, come on. It's the readers of fortune, too.
+
+David: They do some great philanthropy, but...
+
+Ben: For sure, but not through Sequoia and Kleiner Perkins.
+
+David: No, definitely not.
+
+Ben: It's a value created for the world. Clearly, I believe that I wouldn't be in this line of work, and you, and us doing the show, and everyone listening, but it's not philanthropy.
+
+David: It's just so easy for Marc to set up these straw men here, but the punches are flying in this article. We've already alluded to this a little bit. Later in the piece, another quote, "The Andreessen Horowitz strategy of investing in a menagerie of startups could pose hazards." Here's a direct quote in the article. "If I were one of those guys whose company stumbles, will they,” they being Marc and Ben, “be there to help me, or will they have time?" says Paul Holland, general partner at Foundation Capital, a Silicon Valley venture firm. "Where the pain part of it comes in is when you get up to those 60 or 70 investments. It will be an interesting chore to keep track of all that." Bad idea to go on the record here, Paul.
+
+Ben: Everyone's just finding a way to talk to their own book. Whatever my strategy is, is superior because XYZ, whatever they're doing is stupid because of XYZ.
+
+David: Totally. It lands with a big splash. They're in business, they got this $300 million fund, it's December 2009. I think, according to PitchBook, the very first check they wrote is actually a very small check early. I think they hadn't even done a final close on the fund into, do you know the company, Ben?
+
+Ben: Is it Seattle-based?
+
+David: It's not a Seattle-based company. This is a very small check that they wrote.
+
+Ben: No.
+
+David: Into a larger round, a Series C that is led by somebody else of a then—this is at the end of 2008; it must have been just like a first close on the fund, like a warehouse investment or something like that—very, very hot company, end of 2008 in Silicon Valley. Not Facebook, not Twitter, another social media company.
+
+Ben: LinkedIn?
+
+David: Nope. Digg, digg.com.
+
+Ben: Digg. I thought that was a personal investment.
+
+David: I think it was but I think they managed to get a little bit of fund money into their Series C.
+
+Ben: Fascinating. I was obsessed with Digg.
+
+David: So great. Kevin Rose, amazing.
+
+Ben: In the Reddit versus Digg war, I was so team Digg. It has better design that makes more sense. I watched Diggnation. I think every episode of Diggnation, I was all in.
+
+David: So great, me too. It was the best. That was the first. Then the first real actual large check round that they lead is a Seattle company, Apptio.
+
+Ben: Apptio. While doing research for this episode, I was on a bike ride and I rode past the Apptio building. I was listening to some podcast interviews with Marc and Ben, and I took a selfie and sent it to David. I was like, doing research.
+
+David: The irony is, I was going to a Giants game in San Francisco right at the same time. When I get out of the Uber, a block away from the Giants stadium, I get out right in front of Andreessen Horowitz's new San Francisco office building with the big sign up front. I didn't notice if it was a16z or Andreessen Horowitz. I think it was Andreessen Horowitz.
+
+Ben: It's Andreessen Horowitz. You know if they're putting it on the sign that the intention is for it to stay around for at least a few more years. The Apptio investment, it's a co-investment with both of our former employer, Madrona.
+
+David: Yup, and Greylock, I think, too.
+
+Ben: Yeah. I think they had worked with Sonny in the past, the founder at, was it at Loudcloud?
+
+David: I think Sonny's previous company had been acquired into Loudcloud.
+
+Ben: But that was really emblematic of part of what the thesis was at that point is, we've worked with these amazing people over the course of our careers, we're going to be a network-driven firm. They didn't have the firepower yet to be a thesis-driven firm. Now they're extremely thesis-driven. At that point, it was like, oh, this guy's an entrepreneur and starting a company or it was, I think, already a company in flight. Absolutely, we should invest in it. We know it very well. It's a great employee.
+
+David: Totally. One of their other first checks.
+
+Ben: Speaking of stage-agnostic.
+
+David: Speaking of that same, we're going to invest in Opsware, Loudcloud, or Diaspora. Great, great indeed, truly great people. I think this is one of their first 5 or 10 investments, Rockmelt. Our boy, a great friend of the show.
+
+Ben: Eric Vishria.
+
+David: Former Opsware, VP of marketing, future Benchmark capital, general partner, Eric Vishria.
+
+Ben: Pretty cool.
+
+David: It's so funny that they led this around. Benchmark, I don't think was an investor in Rockmelt.
+
+Ben: The other funny thing about that is that it was supposed to be a next-generation web browser. Obviously, Marc knows a thing or two about web browsers, and Rockmelt was like, what if the browser had built in social characteristics and could bring in your newsfeed, Twitter, and all this stuff right into the browser? It was like a sweet spot investment for Marc and Ben, having worked directly with Eric, and then also Marc saying that seems plausible.
+
+David: Totally. It was a great idea. I remember using it. I thought the browser was great. It was built on Chromium. In many ways, it was Brave too early and before crypto was a thing.
+
+Ben: Yeah. Do you know what I was referring to, speaking of stage-agnostic?
+
+David: You're talking about their $50 million investment in September, 2009?
+
+Ben: In the first year of operations of the fund out of a $300 million fund.
+
+David: It's going to put 1/6 of it.
+
+Ben: $50 million into one company that ended up looking genius, but boy did this cause a lot of kerfuffle and criticism when they did it.
+
+David: Boy, did it ever. September 2009, $50 million deployed alongside Silver Lake.
+
+Ben: The private equity firm, Silver Lake.
+
+David: Tech private equity firm, Silver Lake, who I believe the Silver Lake headquarters are in the same Rosewood office park on Sand Hill Road that Andreessen headquarters are in. Maybe they talked about it at lunch at the Rosewood one day. We haven't talked about the headquarters literally in the Rosewood complex on Sand Hill. It can't get any better than that. So yeah, $50 million into the spin out of Skype from eBay.
+
+The whole transaction is a $2 billion purchase of 65% of Skype from eBay. Worked out pretty well, but they probably should have spun out PayPal instead of Skype. That would have been a lot better.
+
+Ben: They did eventually, but both of them ended up being really fantastic ideas. Both of them created a lot more value independently.
+
+David: Andreessen Horowitz wasn't part of the PayPal spun out.
+
+Ben: Early stage investors often talk about how there's a minimum ownership percentage that they need to hit in order for it to be meaningful for the fund return, which is true if you're only deploying a very small percentage of your fund. But this is a case where they used $50 million to buy 1.8% of Skype.
+
+On the one hand, you're like, oh man, that 1.8%, gosh, we need to own a lot more for this to be meaningful for our fund. However, since you were putting 50 million to work, that even if you got like a 2X on that, which is not great by venture standards for a normal early stage investment, but that really is meaningful toward helping to return the fund.
+
+David: They ended up getting a 4X on it?
+
+Ben: A 3X. And it was quick. It was just a year-and-a-half, it ended up turning into $153 million for them.
+
+David: A couple of things on this. One, Marc, then be back to like, okay, what are we going to do here at Andreessen? This is going to become a case study. He helps broker a Facebook partnership for Skype, which I remember this. Remember when Facebook integrated Skype for video calling?
+
+Ben: In Messenger.
+
+David: Yeah, man, huge. Could you imagine something like that happening today? No effing way. That was all Marc. And then he helps recruit Tony Bates to come in as the CEO. Tony from Cisco was a rising star there.
+
+Then in a later fortune piece that Margit would place another great one, talking about the deal, "The clincher was Bates's meeting with Andreessen. I'd always been a big admirer, but never met him." Bate says of Andreessen. "Going into the Andreessen Horowitz office was an experience. They have this wonderful library in the lobby, and I looked for a couple books that were special to me. One was Neuromancer by William Gibson. I couldn't find it, so that became a good opening to the conversation."
+
+Ben: I think it's Marc's personal library, the library in the lobby.
+
+David: You can just see the whole mystique, the firm, the franchise, all of this being woven together here and it's happening in public, in Fortune Magazine.
+
+Ben: In the press.
+
+David: So great.
+
+Ben: Yeah. There's another great little end of this story, which is, there's a blog post where Ben Horowitz said that the Skype deal generated a tremendous amount of controversy for us. That controversy ended this morning. Of course, this is when the deal gets done.
+
+David: What was it? $9.5 billion that Microsoft acquired it for?
+
+Ben: I think $8.5 billion, somewhere in that neighborhood.
+
+David: $8.5 billion, that's right. Still pretty, pretty nice, quick return. Unfortunately, shortly after this, right around this time, I keep saying the biggest mistake in the firm's life, but the reality is Instagram only got acquired for a billion dollars. There are two mistakes. One, Andreessen screws up, not continuing to invest in Instagram. Two, Instagram sells to Facebook for a billion dollars.
+
+Ben: Versus $200 billion, $500 billion, some massive company inside of Facebook that it is today.
+
+David: Totally. So sad. That was March, 2010. Fortunately, though, also in early 2010, they made a great decision.
+
+Ben: Wait, I just have to pause for one quick second and say Instagram was definitely not their biggest miss ever there. Their biggest miss ever is definitely Uber.
+
+David: That's coming. Don't worry.
+
+Ben: Okay.
+
+David: You're right. Not the biggest miss for Andreessen, but Silicon Valley's biggest miss to the past 15 years was Instagram being sold to Facebook.
+
+Ben: Accrued to Facebook shareholders, but not the rest of the venture ecosystem.
+
+David: Totally. That's a whole another rabbit hole that we've been down many times. A great decision that they made in early 2010 is they lead the Series A of Okta, the identity company, which they would then own 18% at IPO, I think?
+
+Ben: Yup. They owned just a hair under 20%, pre-money at the IPO before the IPO cash came in.
+
+David: That IPO valuation was $6 billion. Is that right?
+
+Ben: $6 billion and today, it's $33 billion? That company's continued to just be a monster.
+
+David: Yeah. This is out of a $300 million fund. At IPO, their stake was worth...
+
+Ben: Call it $1.5–$2 billion at IPO.
+
+David: At IPO on this one company. If they've held to today...
+
+Ben: Which it's unlikely, given it was a fund one for them.
+
+David: Totally, and I'm sure they distributed over time. They probably captured some of this upside, but just as a thought exercise, 15%, that’s $5 billion-ish? Not bad.
+
+Ben: Okta, this is another one that Marc talks about publicly, as we were totally laughed at. Identity providers were a thing already and Microsoft with Active Directory like it was owned, but the CEO of Okta, Todd McKinnon had this big thesis around the shift to the cloud, which means that there's time for a new identity provider. There's room for a new person to come in and now the incumbents are going to be able to react to it.
+
+Marc always talks about that like, this is the kind of thing that we love hearing when there's a rearranging of the technology paradigms that are used. Right now it's just by a small select set of people, but over time, everyone will shift to the cloud. He said they were totally laughed at for doing the Okta deal because it was very against collective wisdom that that would be successful.
+
+David: Two things. One, it even goes deeper than that because Tim Howes, who was an early Netscape guy and then a co-founder of Loudcloud with Ben, Marc, In Sik Rhee, and everybody, he invented LDAP, the Directory Access Protocol. They knew a lot about this. The other thing, just everything you said reminds me of the classic Sequoia question, the why now, why was it great? Why now for Okta? The cloud was changing everything.
+
+Ben: There were a lot of companies around this time and even for the next five years where just saying, hey, we're going to do a thing that's already a settled frontier and a very settled frontier in the On Premise world, but we're going to bet big on cloud, and we're going to architect it in such a way that we're not even compatible with the On Premise world. If they miss-time the enterprise shift to cloud, the whole thing would have gone under because there would have been no way to be, I'm thinking specifically of like a Snowflake, the cloud-based data warehouse. You had to be binary in your bet and say, we believe in this thesis at this timing. Obviously, with Okta and Snowflake, it paid off, but with other cloud bets like Loudcloud, it did not.
+
+David: The why now was not great. Actually, it was great. It was a good story, it just didn't play out well. They're spending money. Let's see, maybe their VC enemies would say drunken sailors. Maybe it would be a good term at this point. We're in the early parts of 2010. They've done $50 million into Skype, they've done all of these deals, they're doing tons of seed deals on top of it. It's a lot, they're almost out of cash and they're reserving half the fund for follow on, so they only have $150 million of new money to deploy. They're like, we got to go raise another front.
+
+This actually just came out recently. I saw this in, I forget which publication this was in, but a quote recently that Ben said, this is a quote, "Horowitz said in a recent Clubhouse interview, that when the duo were raising their first investment fund of $300 million,” a big sum for a VC firm at the time, indeed, “Andreessen told him they needed to raise a second much bigger fund right away. In fundraising and in venture capital, strength leads to strength." Andreessen said, according to Horowitz.
+
+Ben: It's so true. It's such a good point.
+
+David: Oh, boy. Strength leads to strength. It's so true. It's so funny and it's so true.
+
+Ben: Have you read the Michael Mauboussin paper on persistent differential returns by asset class?
+
+David: I have.
+
+Ben: We'll put a link in the sources. For those who haven't read it, there's all this data to support the fact that you look on one side of the spectrum on hedge fund managers, and if you're the top performing hedge fund manager this year, it has almost no bearing on whether you will be a top performer five years from now, maybe not even one year from now. But if you look all the way on the other side of the spectrum at venture capital, and because he's a good academic, he doesn't presume to state the cause, he just states that there is a correlation, that the top performing firms stay the top performing firms for a long time.
+
+If you're the top performing venture investor this year, it's very likely that you will be 10 years from now. We're at least one of the top performing ones. The postulate is that, well, strength follows strength, that when you do the best deals, you then start to realize the flywheel of getting the best entrepreneurs that are referred to you.
+
+David: Totally. This is everything that we spent the last hour-and-a-half talking about of like how are Marc and Ben going to break into this dynamic? I remember, I think I've maybe talked about this on an episode in the past. Back when I was an even younger whippersnapper, just starting out in VC at Madrona, I got a chance to get drinks with Bill Gurley once. I was so eager, like all my questions were prepared.
+
+I had a notebook and the biggest one I wanted to ask him is like, Bill, tell me the secret. What is the secret to success in venture capital? He looked at me and he was like, David, the secret to success in venture capital is success in venture capital. It's so true. You have success and that gets you more success. You don't have success, good luck.
+
+Ben: To Marc's point here, it also is true in startups. If you are massively outraising everyone else in your category, you're going to be able to kind of keep that mindshare of the category leader, you're going to be able to recruit the best executives, you're going to be able to land those customers. There is this, on the one hand it's hype, and on the other hand, a hype is a self-fulfilling prophecy in a lot of ways.
+
+David: Totally true. What a great encapsulation of startups and everything. It is hype, but it's also real. Anyway, they go out in December, 2010 and they raised a second fund in one year. After deploying an RD large $300 million fund, they raised a $650 million second fund in 2010.
+
+This was nuts. This was like an atom bomb going off in the industry. Two reasons, A, that is so much money. When I was at Madrona at the time, we were investing out of a $250 million fund and we were a 20-year old firm.
+
+Ben: It's still pretty close after the financial crisis.
+
+David: Yeah, I mean, 2010. The pace, the idea that you would "blow" $300 million worth of a fund in one year and be back a year later to your LPs to go raise another fund, this was crazy. The established VC firms, they're still coming off the hangover from the dot-com bust, where they stretched their 99 funds for 4, 5, 6 years. We did that special with Altos talking about how they had to stretch a fund 6, 7, 8 years before they could raise their next one.
+
+This is just wild, what's happening here. The press eats it all up.
+
+The other thing that raising now having almost a billion dollars in capital under management gives them is even more management fees to go out and recruit more people. This is when they go back to Margit, who's been just doing a bang up job for them on PR.
+
+Ben: Which we should say, when you say a lot, this is $16 million of new fees coming in every year or about $15 million, you got a budget.
+
+David: Wow. You got a budget. How about you leave OutCast and join Andreessen Horowitz full time? This wasn't totally crazy because she had already sold OutCast to a holding company. She had co-founded it, but it had been sold, and they just brought in a separate CEO. She comes and full-time joins as head of marketing for Andreessen. No venture firm had a head of marketing before this.
+
+They also bring on Jeff Stump to run talent. They bring on John O'Farrell, who was head of biz dev, I think, at Opsware as a GP. Interestingly, he had not obviously been a CEO, despite the mantra of, we only have CEOs as GPs here. Anyway, it works out well. What did they do? They've had the strength, they now have more strength. They keep the foot on the gas, they keep deploying the money quickly.
+
+Early 2011, this is crazy and totally works out great for them, but gets pilloried in the industry at the time, they take all this money. They start going and buying private secondary shares in pre-IPO companies like Facebook, Twitter, and Groupon. I don't know how well Groupon worked out for them, but they deploy I think over $80 million into buying pre-IPO secondaries in these companies.
+
+Ben: Wild, which they probably were investing exactly the upper limit of each fund in secondaries because they weren't a registered investment advisor yet. They were just a regular venture firm.
+
+David: Yup, that makes sense.
+
+Ben: Which is 20% per firm. It's what you can do into...
+
+David: Yup, 20% per fund. So 20% of $650 million would have been like $120–$130 million. I bet they did.
+
+Ben: It's like up to that, give themselves a little breathing room, that's how you come up with the $80 million.
+
+David: Yup. It may have been more than $80 million too. That may have been just Facebook anyway. Then in April of 2011, they led a hotly-contested Series B for a little gaming company making a game called Glitch, the name of Tiny Speck. Marc had invested in the seed for Tiny Speck personally and then in the previous fund, Andreessen Horowitz had put a little bit in in the A that Excel had led. Of course, the CEO of Tiny Speck is Stewart Butterfield.
+
+Ben: Stewart Butterfield, I know that name.
+
+David: Very shortly after, I believe, Andreessen leads this round, the Series B. Stewart sends an email to the board. "I did not feel that we are pouring gas on a fire here, more like pouring good whiskey on a drugstore heating pad. It is unlikely to burst into flames." And he means that bursting into flames being good for the company, not bursting into flames being quite bad for this new Andreessen Horowitz investment.
+
+Ben: I loved his honesty. It's great.
+
+David: Yeah, just keeping it real. They all figured out as board and I think Marc's involved in all this. All right, well, what else are we gonna do? We don't necessarily want the money back.
+
+Ben: There's a lot of negative things about serial or repeat entrepreneurs that get a lot of criticism, like it's not their life's work, they've already made their money. There's a lot of reasons to be a little bit careful. This is one way where it massively plays to the company's advantage that Stewart from Flickr knew what bursting into flames felt like. You could call it escape velocity, you could call it getting real traction, or product/market fit. Whatever it is, Stewart knew what that felt like, much like Marc did from his Netscape experience. This wasn't it.
+
+David: It's not it. No, it was not. Of course, they pivot into this little front end that they'd built on IRC.
+
+Ben: IRC. It was extensions on top of IRC.
+
+David: Extensions on IRC for workplace communication that they were using internally. Decided to call it Slack. They called up our friends, Andrew and the crew at MetaLab. Andrew, now of course at Tiny Capital, got MetaLab to design the UI, take it to market as a product called Slack. Works out pretty well for everybody involved.
+
+Ben: That it did. I threw out that $3 billion number earlier. A lot of these exit numbers are estimated. It's not like we actually know Andreessen Horowitz's returns, but we can back into it based on what we think they own from participating in various rounds, or what they owned at IPO, and when we think they may have liquidated. Assuming that they held it from IPO to the 18 months afterwards till the Salesforce transaction, it would have been about a $3 billion outcome. Very good decision for Andreessen Horowitz to let Stewart keep running with the money even though the game was not bursting into flames.
+
+David: That's a good couple of multiples on that. A huge $650 million fund, too. How would they ever return that? Oh, boy.
+
+Ben: When you say, how would they ever return that, that's because that was the knock on Andreessen Horowitz at the time. That was their narrative. It was like, these guys, this huge fund, there's no way.
+
+David: $650 million venture fund. Can anybody return that amount of capital, let alone these new guys? So 2011—oh, boy, what a schizophrenic year—here are some of the investments that they made in 2011. Do you remember ShoeDazzle?
+
+Ben: I do.
+
+David: Yup. ShoeDazzle. Jawbone, how about that one?
+
+Ben: Yeah. Boy, everyone lost money on that.
+
+David: Oh, boy. It grew as a great quote from Marc. I forget where, maybe it was in the New Yorker piece, saying that Jawbone is the new Sony.
+
+Ben: It's such an unbelievable cool technology innovation that just...
+
+David: Yeah. Lytro camera, remember that one?
+
+Ben: Yeah.
+
+David: How about this one? fab.com.
+
+Ben: Jason Goldberg?
+
+David: Yeah. Oh, boy. That was a flameout, unfortunately.
+
+Ben: There were a lot of other big name folks. Speaking of Digg, Kevin Rose was involved in that one, too.
+
+David: In Fab, was he?
+
+Ben: Yeah. I bought some stuff on Fab. They had really unique merchandise.
+
+David: I did, too. It was cool, but man, burned through a lot of money. It doesn't matter. Also in 2011, they bring on a few new general partners, I think, but one in particular, Jeff Jordan. Boom, wow. Jeff, I believe, started his career in the famous Disney strat planning group. I think he worked for Meg Whitman there.
+
+Ben: I didn't realize. That's quite the mafia.
+
+David: Totally. If I'm remembering this, right, I think this is how we ended up at eBay. Of course at eBay, he was North America GM and then champion at the PayPal acquisition and ran PayPal within eBay. Pretty good. Then after that, remember, he left and became CEO of OpenTable. Who was OpenTable’s main venture capitalists and board member? Bill Gurley. The bete noire of Andreessen Horowitz. Jeff becomes one of the best consumer investors of the last decade at Andreessen Horowitz
+
+Ben: He would go on to do the Airbnb investment, right?
+
+David: Yeah, in 2011 right after joining. I believe the first right after joining, Pinterest. Pretty good. Then Airbnb, then Instacart, then a firm a couple years later, many others. He's done so well that in 2019, he actually became a managing partner. They made him a managing partner of Andreessen Horowitz, the firm alongside Marc and Ben, and Scott Cooper, who's also a managing partner, but more like the COO of Andreessen.
+
+Ben: I get the sense the four of them are really the stewards of the firm at this point.
+
+David: Yeah, that's a good word. That's what Sequoia calls the Sequoia stewards. They're the four stewards of Andreessen Horowitz. Quick recap, this is just a small sampling of the 2011 deals at Andreessen Horowitz. According to Pitchbook, ShoeDazzle, Jawbone, Bump, Lightshow, Fab, Airbnb, Pinterest, Stripe, Nicira, Tiny Speck, Facebook, Twitter, Groupon. What a collection.
+
+Ben: They did Stripe?
+
+David: They did, the seed. They didn't leave it, but they were part of the seed.
+
+Ben: Fascinating.
+
+David: Yeah, slugging percentage not batting average. You've already alluded to it, you've already spoiled the biggest mistake in the history of Andreessen Horowitz that they made in 2011. I was going to ask if you knew what it was, but obviously, you know what it is.
+
+Ben: Which would lead to a subsequent success, like a multi billion dollar success, but…
+
+David: Yeah, Uber, fall of 2011. This is brutal. Brad Stone does great reporting on this in The Upstarts. Andreessen Horowitz is in line, specifically Jeff Jordan. Could you imagine what a monster year it already was for Jeff? Pinterest, Airbnb, all in the same year. He's in line, handshake on a deal to lead Uber's Series B.
+
+Of course, who was Uber's Series A investor? Benchmark and Bill Gurley. We got this huge feud between the firm's but like, hey, Bill Gurley was on Jeff's board. They're great. They know each other. We're going to make the piece here. Handshake deal, it's all done. Jeff is going to lead it, hot streak is going to continue. Marc's involved. Everybody's shaking hands on a deal at a slightly over $300 million post money valuation for Uber's Series B.
+
+Ben: This reminds me of the Berkshire episode when Warren buys Berkshire.
+
+David: I know, it's brutal. God, it's so brutal. Somebody and Brad implies in The Upstarts that it was Marc himself who starts to get cold feet about the deal. He takes Travis out to dinner and he tells him at dinner, they still want to do the deal, but they can only do 220 posts, not 305 or 310 or whatever it was supposed to be. That's a pretty big haircut.
+
+It gets worse. Supposedly, Travis was still going to take the deal. He really wanted Andreessen Horowitz to be the lead. All the marketing had worked. He was going to do it, but then the actual term sheet arrived and in the actual term sheet, they must have really had cold feet. They didn't want to do this deal.
+
+Ben: This is half-assing your way into a term sheet right here.
+
+David: This is limping across the finish line if I've ever seen it. They put a huge new option pool refresh in there, which of course would dilute existing shareholders and particularly the entrepreneurs even more. That's the straw that breaks the camel's back. Travis is like, he very politely tells them he's not going to take the term sheet. Typical Travis fashion. Nope, scorched earth. Big mistake.
+
+Ben: Was it Menlo that ends up doing the deal?
+
+David: Menlo, who was, according to Brad, the stalking horse for the deal on valuation. They come in, they're like, oh, yeah, we'll do. Do you want over 300 posts? No problem, we got that, which ironically, is the Andreessen Horowitz playbook that's going to be dashing them on.
+
+Ben: Right. Andreessen Horowitz has conditioned us all that we can pay 50%–100% more than we thought for deals. Not only will we win them, but that may actually work out for us well in the future.
+
+David: It worked out real well for Menlo, not Andreessen Horowitz. So sad for Andreessen, great for Menlo.
+
+Ben: Of course, they would go on to invest in Lyft. Let me go look at my best guess data here. I think they owned about 6% at IPO. If you think about when the lockup would have ended, it'd be about a $16 billion market cap at that point. They ended up with a billion dollar stake of Lyft at the time that they could liquidate.
+
+David: If you want to get really nerdy about this—we covered this, of course, on our Lyft and Uber episodes back in the day—at this time, while this Series B is happening, Uber is a black card company. Nobody's doing peer-to-peer ride sharing yet, nobody. It wasn't until 2013 when Lyft would be the one that would pioneer, take the Homobiles' playbook and do true peer-to-peer ride sharing. That's when Andreessen invested in Lyft, where they saw the future.
+
+Ben: Then Uber launches UberX and the war is on.
+
+David: Exactly. You don't really want to cross Travis Kalanick.
+
+Ben: Just to be like super crisp about this, it's a huge, huge loss. Sure, Lyft ended up being worth $16 billion. Uber at that point was worth $80 billion. It would have been a completely different fund dynamic if they were in Uber instead of Lyft.
+
+David: Totally, huge loss. Man, 2011, what a freaking year for tech period, but also for Andreessen Horowitz too. You know what else happens in 2011? Literally right before the Uber deal goes down, which just makes it all the more mind-bending that Marc would get cold feet here.
+
+Ben: No.
+
+David: Software is eating the world.
+
+Ben: Oh, my gosh. That's when he published the Op-Ed?
+
+David: August, 2011, right before the Uber deal goes down. Op-Ed in the Wall Street Journal. Crazy. The piece itself, it's a masterwork of arguing this, there is no bubble thesis. At this point in time, people still think tech is overvalued and we're still in the shadow of the financial crisis.
+
+Marc talks about in the piece, he says, "Today's stock market actually hates technology, as shown by the all-time low price-to-earnings as ratios for major public technology companies." Apple, for example, has a P/E ratio of around 15.2, the same as the broader stock market despite Apple's immense profitability and dominant market position. Today, Apple's P/E ratio is 32.5, Microsoft is 39, Amazon is 69. The market didn't hate tech or just didn't recognize tech at this point in time.
+
+Ben: Which is fascinating because those companies did have unbelievable gross margin profiles and continually high growth rates for public companies. Not as high as they have now. It's crazy to watch all these companies continue to grow the rate at which they're accelerating, even today, even later in their life. At that point, he's totally right that investors and public markets hadn't really realized this about tech companies yet.
+
+The other thing that he sharpens his pencil on this point later, I don't think he makes it as directly in the software is eating the world thesis, but he now argues, look, compute costs are just going to zero. Truly, it's going to asymptotically approach zero. At some point, if you have infinite free compute, which we should say, that does require continuous innovations in energy because it does take a lot of energy to do stuff and that's the big knock on crypto, let's make the assumption that compute asymptotically approaches a cost of $0, then the question becomes, what's the interesting thing that you can do with software, even if you have to have it do a lot of compute to do the thing that you want it to do?
+
+David: The thing that's so cool that I didn't put together until doing the research for this episode, remember, last time we talked about the Mike Moritz line that I don't think is public, I think it's more like an internal saying that every successive generation of technology companies should be an order of magnitude bigger because of Moore's Law, because the cost of compute declines. That means that every successive generation can address an order of magnitude, more industry is more people, and thus, the outcome should be bigger, and every fund's performance should surpass the last.
+
+It's the same argument as software's eating the world. It's exactly the same argument. Compute cost declines. Marc says in the piece, "More and more major businesses and industries are being run on software and delivered as online services, from movies to agriculture to national defense. Over the next 10 years, I expect more industries to be disrupted by software with the new world beating Silicon Valley companies during the disruption in more cases than not." That's exactly what happens.
+
+Ben: The only thing I will disagree with in your comment is that every successive generation of funds should be that much better than the previous. Because as we've seen, even in the earliest stages, price goes up. Your entry point continues to be higher and higher, even though, as you're pointing out, your exit value or the addressable market of every single company continues to be greater and greater as software companies.
+
+David: You're making the anti Andreessen Horowitz argument.
+
+Ben: Someone's got to make it here on this optimistic program.
+
+David: I love it. So great.
+
+Ben: Also then, there is this question of like, will that always be true? There are three billion people on Facebook now. At some point, if you saturate the entire global population with compute at their fingertips, and you take up 24 hours of their day, and you have 100% of their value creating activities, AKA their jobs running on software, at some point, especially because the population is not growing, it would seem that you no longer have an order of magnitude greater addressable market than in the previous year, but we're probably very far from that horizon, or an order of magnitude more than the previous decade.
+
+David: I think it looks like now that crypto is going to be the next answer to that. What is the next value of Moore's Law accelerating and decreasing? You said a lot of energy.
+
+Ben: David Rosenthal calling it here on air.
+
+Ben: I think Andreessen Horowitz has been calling it for a while.
+
+Ben: 2013.
+
+David: Back to that. After software's eating the world at the end of 2011, in January 2012, they go out and they raised Fund 3, $1.5 billion. Oh, my gosh, get at me.
+
+Ben: You thought we were big before. Watch this.
+
+David: Watch this. That $1.5 billion fund, get this, was 7.5% of all of the venture money raised globally in 2012. One fund, one firm.
+
+Ben: Wow, that's wild.
+
+David: Isn't that crazy?
+
+Ben: It's interesting because in a lot of ways, Andreessen Horowitz was just slightly out of step with the growth of the rest of the venture ecosystem. They took advantage of these like arbitrageable moments, where the one that you were talking about, where they realized, wait a minute, there's actually less risk in Series A than there used to be because there's all these seed investors. Therefore, we should invest at Series A because we can get paid too much in equity for the risk that we're taking or more appropriately, other people are getting paid too much in equity for the risk that they're taking, so we can price higher. They're doing it again here, where this is really two years before the race is really on in raising massive, massive funds. They can play that to their advantage, too.
+
+David: Yup. And what's the other piece of the arbitrage here? It's the summit, it's the TAs, it's the Silver Lakes. They raised $1.5 billion venture fund, 7.5% of all venture money raised in 2012, but a big portion of that isn't going to venture in the same way. Pretty quickly after they raised the fund, at the time you're like, this is nuts. $100 million Series A in GitHub.
+
+Ben: GitHub, that's right. That was the first real capital that GitHub had raised.
+
+David: It has been bootstrapped all the way. It was the first real cap. This wasn't a Series A. This was the type of deal that a generation earlier, Summit, Insight, Silver Lake, or whoever wouldn't be doing.
+
+Ben: This was the largest "Series A" ever.
+
+David: Masterful PR and branding of this is a Series A. There's no way in hell this was a Series A.
+
+Ben: I think they bought 10% of the company or something.
+
+David: Yeah, I think even more. I think it was a 750 post money valuation.
+
+Ben: That sounds familiar.
+
+David: Yeah, whatever, slightly more than 10%.
+
+Ben: I do know that they would end up making a billion dollars on this in the ultimate sale to Microsoft in 2018.
+
+David: Yup. That almost returns the whole fund. This is how that type of investing works, very low downside, still pretty high upside. They 10X'd their money.
+
+Ben: Again, going back to before, a 10X actually not interesting to an early stage investor. You need to be in that 50X to 100X territory to make the portfolio math work for that to be the big winner in the portfolio. However, if you're investing $100 million out of your $1.6 billion fund, then that $100 million 10X-ing, very impactful for the fund.
+
+David: Very impactful. Totally. Later in 2012, Chris Dixon joins the firm. Chris, of course, was a very, very well-known New York entrepreneur, venture capitalist. He started SiteAdvisor and then Hunch which was acquired by eBay. He started Founder Collective, the seed VC firm. He had been part of Bessemer earlier in his career.
+
+I remember it because I used to live in New York. People really identified him with New York venture capital. He's like, going to Silicon Valley joining Andreessen Horowitz. This was big news. Shortly after he gets there in 2013, he leads a Series B, $25 million in Coinbase at a 150 post. Wow, oh, man. Really overpaying for that one.
+
+Ben: 150 post. What is this thing even do? Crypto.
+
+David: Here's the kicker. Over the years, Andreessen Horowitz would keep buying shares from other investors. Other early investors were selling shares, including USV and others. Andreessen was just buying, buying, buying, buying. This is like, venture's a power law. We're talking about so many great outcomes here. This one dwarfs everything else.
+
+At the DPO, Andreessen Horowitz's stake earlier this year in Coinbase is worth $11 billion. Oh, my God. That's 7X. That entire $1.5 billion fund like, oh, my God.
+
+Ben: Thank God for the investors and that $1.6 billion fund that that Coinbase investment was out of this fund, instead of one of the smaller funds because returning a $1.6 billion fund, no easy feat, but if you have one $11 billion dollar return in there, okay.
+
+David: Yeah, and this is the whole thesis. These outcomes are bigger than you think. There is no bubble. These valuations are not just justified, but the crazy prices we're paying now, we're getting the deal.
+
+Ben: It's wild.
+
+David: It's wild. They invest all told in 76 new companies in 2012. In 2013, they add another 97 new companies, including Lyft and PagerDuty, which is going to be another great win for them. Robinhood, they only do the seed in Robin Hood. I think they don’t continue until—
+
+Ben: I think that's right. I think until like 2020 or something, they did it with the growth fund.
+
+David: Yeah, Oculus.
+
+Ben: By the way, all this great data that we're finding from our friends of the show at Pitchbook is just an awesome resource for digging through this and figuring out who participated in what round.
+
+David: Totally. So great for this episode. Databricks is in 2013, which is still private, but that's going to be a monster for them.
+
+Ben: Most recently valued at $28 billion, they led the seed round and have participated in (I think) every round since. I bet they own a ton of that company.
+
+David: I bet, yeah. I can't wait to see that S1. I just love this episode. We've got so much great stuff and we've got so much funny stuff too. Zenefits, that was 2013.
+
+Ben: I forgot they were in Zenefits.
+
+David: They were the big ones in Zenefits. They were holding that bag for sure. Clinkle, remember Clinkle?
+
+Ben: Yeah.
+
+David: One of my GSP classmates spent his summer at Clinkle. He didn't go back full-time. That was a good choice. The kicker, this may be my favorite part of the whole episode. In 2013, they band together, a band of brothers, three musketeers, it ends up being called, with Google Ventures and Kleiner Perkins to create the Google Glass Collective.
+
+This is the most ridiculous thing ever. It wasn't a fund. It wasn't like the crypto fund and the bio fund that we're going to talk about in a minute here. It was a collective, where the three firms said they were going to share Google Glass-related deal flow, but no actual commitment to invest.
+
+Ben: What? That's an incredible PR. To be able to plant that story is impressive work because that's a non-story.
+
+David: It's a total non-story.
+
+Ben: I agreed to share deals with other investors all the time. That's a non-story.
+
+David: There's a huge press release. There's an event, a big TechCrunch piece. Money quote from Marc Andreessen in the TechCrunch piece, "You put on glass and you say, yup, that's the future." Yup, that's the future. Marc. Can't win them all.
+
+Ben: I do legitimately think augmented reality, both visually and audio, is the next big compute platform.
+
+David: Totally, yeah.
+
+Ben: But was Google Glass? No.
+
+David: That's so great. We tweeted the photo of Bill Maris from Google Ventures, John Doerr from Kleiner, and Marc Andreessen wearing the Google glasses and posing on Sand Hill. Oh, my God. What a classic photo. It's just great. Despite all that, things continue to go pretty well. In 2014, Marc gets really into Twitter, he tweets something like—
+
+Ben: It’s over 100 times a day.
+
+David: Despite being an angel investor in Twitter, he had only tweeted twice before 2014. I remember thinking that was ridiculous back in the day that all these people who were talking about how they invested in Twitter and blah-blah-blah had never actually participated on the platform. I think Fred Wilson was the only one who actually was active on the platform. Then for whatever reason, in 2014, Marc decides, hey, I'm going to get really into this. He tweets like 20,000 times in six months.
+
+Ben: It's wild. He was the best person to follow because if you were interested in mental models and exploring wacky futuristic ideas, it was a buffet table of that.
+
+David: Yup. People, of course, also creates press and everybody wants to know, why is he tweeting so much? It's so great. He says in some interview, he loves Twitter because, "Reporters are obsessed with it. It's like a tube and I have loudspeakers installed in every reporting cubicle around the world." So great.
+
+March of 2014, they closed another $1.5 billion fund, just a little over two years after Fund 3, the $1.5 billion fund.
+
+Ben: Assets under management here about $4 billion.
+
+David: Yup. They do Instacart, Reddit, Magic Leap. They do all sorts of stuff. Interestingly, though, the pace actually steps down a little bit. They stopped doing quite as many seeds during this time period. They've now since stepped back up the seeds, but I think maybe they started listening to folks about the signaling talk, or maybe entrepreneurs were actually listening to the signaling effect.
+
+Ben: It was resonating with people. To recall a conversation we had when you were starting your venture firm in, when was that?
+
+David: 2017–2018, yeah.
+
+Ben: This was part of the thesis. You were like, well, no one wants to raise seed rounds from the Series A firms because of the signaling risks. We're a pure play seed firm and I think that makes a lot of sense. The professionalization of the asset class of seed happened because of that.
+
+David: Of the signaling effect. Yeah, totally. It's just so funny. It's completely disappeared now.
+
+Ben: In so many ways, everyone has followed Andreessen Horowitz's lead in truly every way. The one that we're describing here is shrugging a little bit on what stage is the right one for me, and how much do I need to stick to my knitting, and how much does signal matter?
+
+David: Yup. In 2015, finally, The New Yorker piece comes out. It's so good. It's so damn good. You got to go read it.
+
+Ben: Tomorrow's Advance Man.
+
+David: Tad Friend is such a good writer. This is once every year, a couple of years. The New Yorker is like, we're going to do a profile on an industry. They talk about this on the a16z podcast. I think it's the episode with Margit, the opportunity to have the profile on venture capital in The New Yorker and to have Marc Andreessen be the mouthpiece for it. It's so great. Can I read a couple lines because these are so good?
+
+Ben: Please do, yeah.
+
+David: First off, the piece starts off with a little vignette of Mixpanel, which, of course, was a big Andreessen investment. He's talking to the founder, Suhail Doshi, about his experience raising venture capital and whatnot. He says, this quote is so good, "Mediocre VCs want to see that your company has traction. The top VCs want you to show them that you can invent the future." It's so funny and it's so true. It's just great.
+
+Let's see, “Andreessen and Horowitz modeled their brand strategy not on the industry's elite, but on Larry Ellison's Oracle and its aggressive marketing during the enterprise software wars. For one investor in their funds, Princeton University's chief investment officer Andrew Golden, it became a running joke. How long would it take other firms to complain about Andreessen Horowitz? In the early days, it was within two minutes," he says.
+
+Here we go. This might be my favorite part. "One morning, as I sat down to breakfast with Andreessen, a rival VC sent me a long email about a16z's holdings. The VC estimated that because Andreessen's firm had taken so many growth positions, its average ownership stake was roughly 7.5%. It's actually 8%, which meant that to get 5X–10X across its four funds, you would need your aggregate portfolio to be worth $240–$480 billion. How could that possibly be? I started to check the math with Andreessen. He made a jerking off motion and said, blah-blah-blah we have all the models, we're elephant hunting, going after big game.” That rival VC would take the time to type out a long email.
+
+Ben: And would take the time to have themselves or an analyst go model out a different firm's average ownership. Are you kidding me?
+
+David: So great. Model out close enough to be within half a percent of the actual number.
+
+Ben: Totally. Wait a minute. That's actually an interesting question. They would need, what were the numbers of how much market cap in aggregate would need to be created?
+
+David: $240–$480 billion of market cap.
+
+Ben: You got Coinbase at 100?
+
+David: Right around a cool 100.
+
+Ben: You got Roblox at 45, so that's 145. You got Okta at 33, so that's around 170. You got Slack at 24. No.
+
+David: Something like that. Let's take it to 200, around 200. You got Airbnb, that's another 100 right there.
+
+Ben: Yup. You got Pinterest, which is another 45–50.
+
+David: Yup. All right, so we're at 350.
+
+Ben: You can see sending that email being a good luck effing luck and you do look at the companies they invested and you're like, yup, they've far surpassed that. We haven't talked about Instacart, Databricks, or Robinhood. Of course, these are smaller positions.
+
+David: It's so, so good. Then Marc's response, makes a jerking off motion with his hand. It says, we're elephant hunting, we're going after big game.
+
+Ben: That has to be the first time that was printed in The New Yorker. It must be.
+
+David: So great.
+
+Ben: The interesting thing is, the whole industry seems to massively give Whiplash from some new disruptive entrant, often who's writing bigger checks and has a bigger fund. The first reaction is, oh, my God, complain about them.
+
+David: See, Tiger today.
+
+Ben: Exactly. It was Andreessen Horowitz, and then it was SoftBank, and then it was Tiger. At least with Andreessen Horowitz, it seems like—I don't mean information that's not public—with SoftBank Vision Fund 1, strategy worked a heck of a lot better than people thought it was, at least a lot better than the media was reporting.
+
+I suppose the next time, my knee jerk reaction is to be like, oh, these new guys, they don't know what they're doing, they're being irresponsible, and they're blowing us out of the water. Maybe think twice about just complaining and figure out, okay, how do I actually need to adjust my strategy because maybe this is going to work?
+
+David: You couldn't have teed me up any better here. Back to The New Yorker article. His quote, “A16z's services model made a strong impression on Sand Hill Road. Andreessen caused us to up our game on the marketing side," said Sequoia capital's Doug Leone. "Younger founders pay attention to media and we don't want to be depositioned. Sequoia hired an in-house publicist and two new marketing specialists to complement the four it had, and most top firms made similar moves, even if they primarily believed that a16z's services were simply a marketing tool." So Doug, so Sequoia. We're not going to be depositioned. Yes, this is a good innovation, we're going to adopt it.
+
+Ben: Yeah. It's Bill Gates, Ian in that way.
+
+David: Yup, totally.
+
+Ben: I can't wait until power to talk about this one. It's so interesting to me that this caused effectively margin compression in the venture capital industry.
+
+David: Ownership compression.
+
+Ben: No, I literally mean margin compression and how profitable it is to be a general—
+
+David: You mean the management fee side of things?
+
+Ben: Yeah. It's hard to run lean as a big firm because you need all this stuff to be competitive, and that stuff is really expensive. It's a big team. You can't just take home $10 million in fees every year.
+
+David: Even if you're Sequoia, you need a big team.
+
+Ben: Totally. You end up with this fascinating dichotomy. It's the same thing that's happening in the media ecosystem where there is no more middle. If you are going to be one of the few who succeed and you're big, you have to have a big ass cost structure. Andreessen Horowitz is the New York Times of venture capital.
+
+Simultaneously, it will be true that there's this long tail of people. They're like, F that big cost structure. I'm going to start kindergarten ventures and take my small amount of capital and no team, and I'm going to play a completely different super niche game. There is some room in the middle, but there's not the room that there used to be in the middle.
+
+David: Yup. I think the industry has found that out, painfully, over the last 10 years.
+
+Ben: Yeah, but this really interesting thing of like, it took a long time. It took 30 years or 40 years of venture capital as a profession for the arbitrage of profits to go away from general partners.
+
+David: Yup. Flip side of this coin both on the staffing and the services side of things, but also on the deals and the valuations front. Just like the support, it just beats me over the head. Maybe this will sound biased towards Andreessen Horowitz, but I'm not trying to be. I'm really just doing this research, thinking about the last 10 years. There is no bigger winner in all of this than entrepreneurs.
+
+Ben: For sure.
+
+David: Oh, my God. You used to be giving up 25%–30%+ of your company at Series A, and getting $2 million for that, and somebody sitting on your board doing something, maybe.
+
+Ben: You're absolutely right. I was talking about the margin compression and fees. Now let's talk about the margin compression in returns. Everyone's cost basis is higher because there's way more capital competing to go in. Therefore, your ownership percentages are going to be less for the same amount of capital that you wanted to put to work.
+
+David: Even on the fees side, VSB entrepreneurs, they're just getting a lot more. You can argue all you want and people do about how valuable these various services are and whatnot, but I think it's pretty valuable that somebody, Andreessen Horowitz in the lead but now the whole industry, is out there just banging the drum about how great startups are and how great their portfolios are.
+
+If you're an entrepreneur, why would you not want somebody championing you? In a way, that's going to be so hard for you as a founder of a small company to do. You're not going to go get a profile on The New Yorker, but Andreessen is, and they're going to talk about how awesome you are.
+
+Ben: Yeah, it makes the most sense for these things, where it doesn't yet make sense for a startup to have that competency in-house. Having access to a fractional resource of that competency, who's a specialist and one of the best in the world at it and really highly paid who you couldn't afford for how sort of tiny and pathetic your company is, which all startups are, it is an unbelievable boon to get that. Not only are you facing less dilution and getting more capital than you ever used to before, but you are also actually getting a far superior product to what you used to get.
+
+David: It sounds like our Capchase ad-read from last season. I love it. One playbook theme I want to highlight here—we'll talk about this again at the end—any time your name is on your competitors' lips, you're winning. You're winning. It doesn't matter what they're saying. If they are talking about you, good, bad, ugly, indifferent, you're winning. You should just keep doing what you're doing.
+
+Ben: Particularly when they're the most successful incumbent of all time with Sequoia.
+
+David: After that, later in 2015 they raised a $200 million bio fund. June of 2016 they raised another $1.5 billion core fund. 2017 they raised $450 million second bio fund. 2018 first $300 million crypto fund led by Chris Dixon and new GP, Katie Haun. Interestingly, I didn't know this about Katie until doing the research. Do you know what her background was before she joined Andreessen?
+
+Ben: No.
+
+David: She was a federal prosecutor at the DOJ and she led the Mt. Gox case.
+
+Ben: Whoa, awesome.
+
+David: Then after that, Coinbase recruited her to join the board of Coinbase after the Mt. Gox debacle. They were like, look, we're Coinbase, were doing this aboveboard, we're the right way to do this. That's how Chris met Katie and then she came into Andreessen. Super in demand. Crypto is so different from the rest of the startup ecosystem.
+
+Also in 2018, they launched the Cultural Leadership Fund, which got a lot of blowback at the time and I think was pretty misunderstood. I think it's actually a pretty good idea. 2019 they split the main fund, finally, into separate funds for early and growth. $750 million for early, $2 billion for growth. Then 2020, just one year later, they're back in the game with $1.3 billion main early fund 7, $3.2 billion growth fund 2, $750 million bio fund 3, $515 million crypto fund 2. That's $6 billion in total across a suite of funds raised in 2020.
+
+Ben: Strength follows strength.
+
+David: Dang. Then this year, of course, in 2021, they added another $2.2 billion crypto fund 3 bringing total capital under management to just a hair under $19 billion.
+
+Ben: I've got some other stats about Andreessen Horowitz today, and I think we'll talk a little bit more about them today before going into analysis. It is time for our second sponsor of the episode, Pitchbook. Of course, the stats that I'm about to tell you are from Pitchbook.
+
+Many, if not all, I think everyone probably at this point has heard of Pitchbook. You know they're the leading financial data provider for VC, P/E, M&A, and podcasts about those things. Their database is crazy, 3.1 million companies, 1.5 million deals, 96% of clients rate that Pitchbook's coverage of private companies is better than any other data provider. I use it for PSL stuff, I use it for Acquired stuff, as you know. It's totally unparalleled. It's a huge part of our research process, as you know.
+
+We want to tell you about a special offer, where you can explore Pitchbook's database first hand by signing up to get limited access. This limited access is a little bit different. I think that you might not be able to download reports, but you can basically browse anything you want. You get this for free for two weeks. You can get that by visiting pitchbook.com/acquired or clicking the link in the show notes.
+
+All right, other things that I pulled from Pitchbook about the firm today. They made us this great tearsheet. We'll have to see if we can share this in Slack. It's a great set of data on the firm. They did a little under 1000 investments in a little over 500 portfolio companies total. They've produced 160 exits, 20 of which were companies going public. There's now 22 GPs with the addition of a new New York–based GP, the first time there's been someone outside of the Bay Area hired as a GP, David Haber.
+
+David: That’s right. Another friend of the show.
+
+Bend: David, as you mentioned, $19 billion, hereunder in assets under management, 8 network teams, 220 people now work at the firm. To give you a sense, they've got 22 GPs, but that means that 90% of the people who work at the firm are not GPs. They've got a big investment team, but obviously, these network teams have grown meaningfully.
+
+I also was talking to some folks. They did a lot of hiring outside of the Bay Area during Covid, as much as they were one of the champions of Bay Area for life. If you're serious, you invest here. The best companies are created here, blah-blah-blah. The last year has really changed that. Not only are they investing in more places, but they actually have staff in more places, and have adapted the culture and the processes internally to be hybrid.
+
+David: Then also, we debated including all this in the history and facts. I think for a length, if nothing else but also to do it right, we're going to do a different venue to talk all about this, but they've also built a media company alongside all of this.
+
+Ben: Yeah, absolutely. There's a whole forward-looking view of—
+
+David: A future-looking view, one might say?
+
+Ben: Yes, I was trying to avoid, let's call it future-looking view, not only of the media company but other things that they're doing that transcend to being a venture firm with value added services. I think, as Marc recently coined it, and he had a great invest, like the best episode on this HP 2.0. There's definitely a lot more that we'll talk about there, probably in a future episode at some point.
+
+David: Yeah. I think that's the right way to do it. That's Andreessen Horowitz. Wait, there is one more piece to talk about. There's this great saying in venture that is also a Mike Moritz phrase—he's so good—which is that "the apples take longer to ripen than the lemons." Of course, apples being a double entendre meaning good companies but also Apple. Getting Sequoia's case, so good.
+
+They start having some success. April 2017, success on the distribution front. Okta IPO, March 2019; Lyft IPO, April 2019; Pagerduty, Pinterest, June 2019; the Slack DPO, December 2020; Airbnb, January 2021; Affirm, March 2021; Roblox, which within a year they turn around 15X on that.
+
+Ben: Yeah, here, I actually calculated that. Their initial investment into Roblox, which I think is out of their late stage fund, the growth fund, somewhere between $100 million and $150 million. It was a $150 million round at a $4 billion valuation.
+
+David: So great. Big shout out to our friends at Altos.
+
+Ben: Totally. It means they own probably about 2.5% of the company at IPO, which of course, is a $45 billion market cap today. Pretty quick turnaround for that $100–$150 million into $1.2 billion.
+
+David: Then the big one, April 2021. What’s that? Seven years after the initial investment?
+
+Ben: Coinbase.
+
+David: Coinbase. Damn. $11 billion stake that Andreessen Horowitz has in Coinbase.
+
+Ben: Which I think is an even better outcome, or it's about on par with what Sequoia had with Airbnb, if I remember right from our episode there.
+
+David: Yeah, it sounds about right. Maybe a little less. I want to see Sequoia had a 15%-ish stake in Airbnb, 13%, 15%, something like that.
+
+Ben: I seem to remember this $10–$12 billion absolute return.
+
+David: That could be, but Airbnb traded up to around $100 billion. I think it might be back down a little bit now. Anyway, we're splitting hairs here. These are pretty good.
+
+Ben: In any case, one of the single greatest venture capital returns of all time.
+
+David: Yeah. Hard to argue.
+
+Ben: We're definitely going to get to grading. I did a little bit of math. It's napkin math, but I think it's interesting to review this, but let's do some analysis first. Let's take our narrative section. What's the bull case and what's the bear case on Andreessen Horowitz moving forward? Let's start with the bull.
+
+David: I think we just painted the bull case. I got two bull cases. One, crypto. If you believe crypto is the next...
+
+Ben: I wrote two and you've just got the first one.
+
+David: Okay. Next bull case I would have, I'm curious if you'd have this as well, a16z has been pretty adamant (like you said) about Bay Area and in particular about western technology companies that they invested in. They haven't touched China, India, et cetera, or the rest of the world. No reason to think that their brand couldn't extend. That feels like a green shot for them. Those are the two off the top of my head.
+
+Ben: I like that I didn't have that. The second one I had is this HP 2.0 notion of, in the old days before there existed a startup ecosystem where you could get funded by venture capitalists to go and pursue your idea, you would try and rise up the ranks of an HP or one of these companies as an executive to go and invent the future. HP was the 100% owner of every division. GE was the 100% owner of every division of their company.
+
+Obviously, taking minority positions is different, but can you be more of the Hewlett Packard in their heyday if you aren't the majority shareholder of these businesses? Can you still find a way? Now we're drifting into Kleiner Perkins territory a little bit, but can you find a way to both provide the services, find synergies between portfolio companies, and really find leverage from your own scale, such that you can find economies of scale across the different companies? By that, does everyone really need their own totally separate finance team?
+
+At some scale, probably not, the same kind of thing that you see in industry consolidation when one company buys another. I'll be very curious if they transcend the ‘we help you out with part-time resources’ thing in their networks to see if there's some way, where actually some part of the fundamental operations of the company are happening at the venture level.
+
+David: Interesting. It's maybe an actual fulfillment of the CAA dream execution machine thing. Because the CAA package, like Jurassic Park, the packages that they were putting together, the talent, they weren't doing anything. Part of the reason CAA had to exist was like, they're not going to pull together, I don't know. I don't know what goes into making a movie, but I'm assuming there's a lot of stuff that the studio's used to do, and that CAA was able to bring together into a package and then be like, nope. Studios, you're just financers, now.
+
+Ben: Totally.
+
+David: I wonder if this is part of what's informing this HP 2.0 strategy.
+
+Ben: The thing that I wrote down is that the biggest case is that the firm is actually unrecognizable in 10 years, that they're the startup platform. They're like an idea platform. I'm not being specific about what that means because I don't really know, but maybe the right term is that they're like the startup dream machine, which actually lends itself more toward a studio. Just based on all the work we've done at PSL starting 27 companies, I do wonder if they'll shift earlier and start being more of like a, you literally are a person with an idea and we have an ability to take that and plug it in.
+
+The cool thing about the studio is we have that machinery built for the first 18 months. I'd be curious. A lot of people talk about seed to IPO as an investor. It'll be interesting to see if Andreessen Horowitz can become the startup dream machine all the way from idea to IPO.
+
+David: Yeah, or you could just go raise a whole lot of money and you could be the next disruptor in the industry.
+
+Ben: It's a great point. It's really like that Marc and Ben have no sacred cows. They're very experimental, they're very willing to change things. It wouldn't surprise me if at some point in the near future they stop talking about it as a venture capital firm because they feel that it's a broader set of activities.
+
+David: Clearly, they're already going this direction with the media company and all that.
+
+Ben: Yup. We also totally skipped over crypto, which I think is okay, but can you give one or two sentences on how they're different from other firms with a lens toward crypto?
+
+David: In one respect, it is just simply that they're first and early. They've been part of these big ones. Other firms have, too. USV being primary among them, and then native crypto firms like Paradigm, Multicoin, and all those great folks, but to the extent that success breeds success is going to apply in early-stage crypto investing as it always has in venture.
+
+Andreessen has been there, like Coinbase, dang. Solana, yup. Everything interesting, they're there. I think that's a big part of it. The other piece of it is that it's different doing that. They've built the machinery to do it in a way that other traditional venture firms have not. Have I understand the history right, I think part of the reason why they created a separate fund for crypto versus doing it out of the main fund was because of the same things that secondaries needing to be an RIA.
+
+I think if you do too much token investing in a core fund, you would need to register and you would lose your venture capital exemption. While other firms were registering as RIAs to do secondaries, which of course Andreessen also does, they were like, oh, we'll go do this first with crypto funds and then now for the whole firm, to be able to buy tokens instead of equity. I think it's just going to take a lot of firms a long time to catch up to that.
+
+Ben: And the operations of things of staying abreast of the things you can do in the US versus international takes overhead. They've invested in that overhead and they've figured out what the necessary infrastructure is from a regulatory perspective to do crypto investing with LP dollars.
+
+David: Yup. Should we talk about the bear case?
+
+Ben: Yeah. Here's my biggest one. We have been on an unprecedented, unbelievable bull run in tech that started the same year that Andreessen Horowitz was founded. They've never operated in a down market. I'm not saying it's not going to go well, but their strategy has aligned perfectly with the economic landscape while they've been operating in it.
+
+It is untested, unlike all these other firms. If you believe the a16z haters who say, they have no price discipline, will that come back to haunt them during the one or two funds from the vintage years of whatever downturn comes at some point in the future? It could hit them a lot harder than it hits other folks. You don't have to debate that. I'm just saying.
+
+David: Yeah, totally. Question mark.
+
+Ben: That would be the knock. The other bear case I was thinking of is they basically overextend themselves in trying to get too creative and imagining what this HP 2.0 could look like. They have a great, very profitable business on their hands where they have really dominated an industry, and them trying to turn that into something entirely new and different may actually not work.
+
+David: I got to also say, for a firm and people that are so good on branding, marketing, and whatnot, calling the strategy HP 2.0, you might want to rethink that one. I don't know that HP is something you really want to associate with these days.
+
+Ben: There's just not that many people alive and operating in the business world right now or leading companies in an aspirational way who are aware of the HP that Marc talks about. They're only aware of the defunct PC manufacturer.
+
+David: You want to say Amazon 2.0? Great. Anyway, I have no view one way or the other way whether this is happening or not, or at risk of happening, would just be that as you turn this into a big firm, it's already a big firm. Politics are going to start to creep in. It happens. This happens in organizations. Frankly, probably politics have been the downfall of every venture firm that has risen and fallen to varying relative degrees.
+
+There are all sorts of reasons, but if you break it down at the end of the day, it's people, it's politics. That's the problem. The bigger you get, the more opportunities there are. The bigger you get, the more time that goes by, the more opportunities there are for that. Maybe some seams will start to get exposed, other firms can now come along and, yeah, to die hero or live long enough to be the villain. I guess they've been the villain their whole lives to a certain extent. At some point, they're going to be the villain to entrepreneurs.
+
+Ben: In some way they've been the underdog, too. They've had this tailwind of feeling like, fight the man. You're right, they're the man.
+
+David: They're the man.
+
+Ben: One other thing I was thinking about is, speaking of Tiger Global and what's going on in hedge funds coming in to late stage financing, and now even early stage financing, those folks are beating the drum of, we're a financial investor. We're going to give you the cheapest available capital. You can use that capital to go and build your own relationships, hire people, and do all the things you need to do. VC is a bundle of both advice, relationships, capital, and we're just selling you pure capital.
+
+There's some set of entrepreneurs who are going to do that because they're very experienced, they have their own relationships, they don't need the services that a firm like a16z brings to bear. The question is, will that belief spread? Where more and more people, even if they're inexperienced and could benefit from the set of services that a16z offers, if they're actually the most capital at the cheapest price sounds great to me, I actually just want all these competencies in house.
+
+David: Which has hopefully, we've painted along the way here, was a key component of the Andreessen Horowitz strategy. There's all the stuff, there's all the services and everything about it, but also they were offering the best terms at the highest prices for a very long time. If they're no longer doing that, I think it's a very valid argument that price is what matters.
+
+Ben: It's like Andreessen Horowitz had a different underwriting model on the future than the rest of the VCs did. So far, because we've been in this bull run this whole time, it has proven to be right. Everyone else who is being too conservative in their valuation models and basically underwriting of what future markets could look like, was wrong.
+
+That's why Andreessen Horowitz could both be the best product at the best price, but it may prove to be the case at some point in the future that the gas in the tank runs out on software is eating the world, or that we go through a little extended hiccup, where people stop believing that for five years and the money coming after you dries up, and the LPs are difficult to raise from. I'm just imagining a little bit more capital-crunched environment, where you can't be both higher valuations with more money and a really expensive broad set of services.
+
+David: Yup. Now in the long run, obviously, I think we all know what side we fall on here.
+
+Ben: Everything, it depends on your time horizon. If your time horizon is infinite, then yes, you and I, being the optimist that we are, we're looking at this bear case being like, yeah, but as long as you can tough it out, it'll be fine.
+
+David: The Internet. Never bet against the Internet.
+
+Ben: Never bet against the Internet.
+
+David: You're so spot-on about the underwriting thing, that they were just underwriting differently than everyone else, and more correctly the vignette from The New Yorker article with the competing VC—
+
+Ben: Right. The point of that competing VC was like, this is crazy. The math doesn't work.
+
+David: Their underwriting is wrong.
+
+Ben: A16z is like, that thing that you said was crazy, where it's like, the math doesn't work because the numbers are too big. We think we can hit those numbers, and they did.
+
+David: Yup, and they did.
+
+Ben: By we, tech companies broadly that we invest in.
+
+David: Yup. This isn't exactly a narrative one way or the other. Maybe it's a narrative about the industry as a whole. We made this point on the first episode that I want to double, triple underline, underscore here. We're telling this whole thing, and there's so much drama, and it's so fun. Andreessen's the underdog and the disrupter, and there's all this feuding and whatnot. This is all just great for everybody. It's just freaking fantastic for everybody.
+
+The fact that The New Yorker is writing about tech, it's great for other VCs, it's great for startups, it's great for entrepreneurs, it's good for podcasts like you and me, it's great for Andreessen, it's great for Benchmark, it's great for Sequoia, full stop.
+
+Ben: Yup, which is a great lead into power. This is interesting. I think that they had a source of power that worked really well for their first eight-ish years, and now they have a different power. Remember, for folks that are new to the show, power is the thing that enables a business to achieve persistent differential returns, like how can they be sustainably more profitable than their nearest competitor.
+
+The first one was clearly counter positioning. We've used it several times in this show to describe the way that they positioned themselves in the press versus other folks, versus incumbents. I'm going to use it a little bit more specifically in this case, which is, they literally did things that other people could not do because their business models did not allow for it.
+
+If you were to go to GPs epic firms and say, in order to bet on the future correctly, the way these other guys are and we need to staff up like this, overnight, we all need to stop taking salaries for the next three years, and we all make over a million dollars a year in salary and have personal lives and burn rates that have accommodated that. That's even before we start getting our carry.
+
+The chances of that happening immediately, rather than over the next 5–8 years being forced to, was zero. There was that moment in time, much like how CAA was able to do it in the agency world, where they literally took a different business model and did a thing that the incumbents couldn't copy, which was genius. It's totally genius.
+
+David: The other one was brand.
+
+Ben: Totally, and that's the one that will last for the future. All this highfalutin stuff is great. All the value added services are great. All the networks are great. The executive briefing center is great. Let's not forget the business that we're in here, which is deploying capital and getting a return on that capital.
+
+That is a commodity. Capital is a commodity. The way that commodity industries look is that they're pretty much undifferentiated because the vast majority of the value is available from near exact provider substitutes. What differentiates a commodity from another commodity? Brand.
+
+David: Coke and Pepsi, baby. There was actually a great quote—I forget where. I almost put it in the script and I didn't—of an entrepreneur talking about the Andreessen, Benchmark thing, and they're just like, oh, it's so great. It's like watching Coke and Pepsi do a price war. I'm just sitting here sipping.
+
+Ben: Truly. It's like watching a game of chess play out, too, because it is simultaneously true that having a great board member can be game changing for your company, having this set of services can be game changing for your company. I just watched—not to toot our own horn—some of the folks that were able to bring into portfolio companies through us at PSL recruiting them, trajectory changing for companies.
+
+I've never worked at Andreessen Horowitz. I'm sure that works in speeds there. Even forget all the other services, if you have a great recruiting mechanism, game changing for companies. Also it is true that the primary value that comes from raising capital is the capital.
+
+David: The brand piece is also interesting, too. Just riffing a little more on the Coke and Pepsi thing, back to the Benchmark versus Andreessen, Benchmark's brand, we are the Kraft venture capital firm. Andreessen's brand, we are the franchise. It's just like Coke and Pepsi, right? Coke is Coca-Cola classic with the polar bears and whatnot. Pepsi is like the taste of a new generation. It works. There's different segments that they address. It works.
+
+Ben: It's funny. While we're talking about power, we should also talk about, when you talk about profits, persistent differential returns, you should literally talk about pricing power. In Forbes, it was reported that Andreessen Horowitz takes 30% carry. It's interesting to see that their returns and their market perception has literally turned into them being able to price higher than their competitors. This is LP phasing. When it's them versus other venture firms, they can say, yeah, you're going to get a worse deal with us than you're going to get with other people, but it's worth it. So you'll take it, and they do.
+
+David: This is the Hamilton Helmer definition of brand power. You can charge a higher price for the same product. That's why people pay more for a Tiffany's diamond than a no-named diamond.
+
+Ben: Yup. The brand thing is multi-sided. It's your brand entrepreneurs and it's your brand LPs.
+
+David: Yup. The entrepreneur version of this is you get into the round. You get into the round and you get a large ownership allocation in the round.
+
+Ben: Yup. All right, Playbook. I know we've done a lot of this already, but there's a few that I want to hit.
+
+David: Go for it.
+
+Ben: All right, just to review all the things that were unheard of or uncommon before a16z started doing them, GPs as former founders rather than investors, huge team of experts, which is now known as VC platform, calling everyone at the firm a partner, blogging, which other than Brad Feld and Fred Wilson doing transparency versus opacity and content marketing more broadly—that didn't really exist in venture—paying huge prices to blow your competitors out of the water and just offer much higher valuations and bigger checks.
+
+David: It's crazy. Literally, nobody did that.
+
+Ben: Yeah, it existed to some extent and in isolated ways, but no one just said, F it, we're doing it over and over and over again because we're underwriting the future differently than you are.
+
+David: Yeah, and not really. People would be like, oh, I can't believe. Because I entered the industry in 2010. Andreessen was there, but it's still early days. It would be like, oh, I can't believe the price that X firm paid for this. We offered a six-pre and they did an eight-pre. Nobody was just step change.
+
+Ben: Nobody said, what if you raised eight? Then we'll figure out how to value that. Lastly, venture firms investing in crypto. I think USV probably gets a little bit of credit. I think they were earlier in some ways but not nearly investing as many dollars and for as long a period and building a brand with the crypto community the way that Andreessen has gone on to. You look at those six things.
+
+David: I would add seven, too, of PR, as well.
+
+Ben: I guess I've put that into the content marketing, brand building, but you're right. It's a different function of marketing. Those seven things that you take at face value, like that's part of the job. That's what it is to be a venture capital firm, which just weren't things a decade-and-a-half ago, before Andreessen Horowitz made that a part of what it takes to do this job.
+
+David: Yeah, I can't argue with that.
+
+Ben: Literally, their playbook was to change the requirements of the job to be done for everyone else in the industry.
+
+David: It was wild.
+
+Ben: On that note, there's this interesting thing that I've been thinking about, which is, the common knock was that they were overpaying to buy name brand for themselves to buy their way into winners, which, first of all, even if they did that, it actually is a creative to their LPs since their LPs would benefit from being investors within this name brand fund in the future, assuming that they were going to continue investing in subsequent funds.
+
+It actually was a good use of the capital, even if their prices were irrational, because great, now, in the first year when that fund was deployed, yeah, we might have overpaid for some deals, but now we're in a top three franchise. So awesome.
+
+David: And the first funds ended up being good.
+
+Ben: Right, but anybody argue today that they actually paid too high a valuation for anything they did from 2009 to 2015, absolutely not.
+
+David: Yup. One other corollary to this is a playbook theme I wanted to make. We made this point in the last episode, but I don't think we've talked about it yet here. This is just so silly, and I didn't quite get this perspective until being outside of the institutional venture industry and now it's just obvious to me. It's so silly. Why would you ever publicly argue as a venture firm that valuations are too high? Who's your customer? Your customers are entrepreneurs.
+
+That'd be saying a politician running and being like, taxes are too low. We need higher taxes. That is my platform. Not only that, but the specific other competitor of mine from the other party who's running, the problem with their platform is they want lower taxes. If you're an entrepreneur listening to this, you're like, I like lower taxes. I like higher valuations.
+
+Ben: Right. That's a great point. Pick a different thing to argue about if that's your side.
+
+David: You can feel that way all you want, but don't argue about it.
+
+Ben: Right. Speaking of things that are specific to institutional VC, like we discussed on our VC fundamentals episodes in the LP show, there is an investment process that has to happen because there's a lot of partners. You need to figure out, we raised this fund, we got these 22 people. Isn't that crazy? It's 22 now, but even imagine a smaller partnership earlier on, 5, 6, 7 people, like how do we make decisions to invest this fund?
+
+An interesting thing that they do is they do not have a consensus-based approach. I think, and this is according to the information which is LinkedIn sources, any GP can pull the trigger on any deal on their own. They can say things like, I'm going to bat for this. The way Marc describes it in some podcasts is that they assemble a red team. The way we've talked about this at PSL and I think I've talked about on LP episodes in the past is to have a foil if you're advocating. To turn a project into a spin out, someone should be the bear case on it or your foil.
+
+Marc calls it the red team. He's like, we basically staff someone with the responsibility of going and trying to figure out why this is a bad investment. Because if you don't have the consensus of the partnership, and you're putting your name on the line, sure we should do that investment, maybe, like it's a good non consensus bet.
+
+Also, you should have to go argue with someone who's going to present the other side of the case. He's like, we figured this out because Ben is my red team. I can come in and be super optimistic about something and Ben is naturally good at it because they fight like dogs. He’s naturally good at presenting the other side of my argument, and we decided to institutionalize that in the firm, which I think is really an interesting approach that both forces you to be diligent but also allows for non-consensus bets.
+
+David: Interesting. I like that in theory. I wonder in practice how much it actually goes. You and I know these deals happen in days if not hours.
+
+Ben: Lightning speed.
+
+David: It's interesting.
+
+Ben: At least in theory and great to talk about on a podcast.
+
+David: Yeah, great to talk about on podcast. It makes total sense that there can be a consensus driven firm with that many people. You're never going to agree on anything.
+
+Ben: Yup, especially at the pace that they're doing deals now because of the peace that the whole thing is working now.
+
+Last one that I had that I thought was interesting that we didn't talk about any of this but Marc talks a lot about, which is he doesn't really believe in pivots, or the notion of failing fast, or the lean startup. I'm amenable to this argument even though I do a ton of testing of ideas.
+
+The big innovations throughout history are made by true believers who just kept trying. There's something like the filament of a lightbulb was Edison's 200th attempt at creating filament. It may not be the right decision for you as an individual to keep ramming your head against a wall, but it's good for all of us as a society that there are a lot of people who are willing to keep running at something almost illogically so in a way that is potentially not in their best interest because that is where the true breakthroughs come from. If everybody's always looking at data from the first task and they're like, yeah, it's not really working, let's try something else, then you don't get the breakthrough animations.
+
+David: Yup, that makes sense. I think both of these things are true, but certainly we didn't test Acquired and if we had tested Acquired in the early years, we'd probably have been well, that's not working very well.
+
+Ben: Totally, but passion projects, passion leads you to do things that aren't necessarily economic. Then at some point, you look around and you're like, whoa, value creation has happened.
+
+David: I love that image.
+
+Ben: Hopefully not said in that sterile of language.
+
+David: I like that. I'm going to use that with startup companies and just be like, guys, value creation has happened.
+
+Ben: I was talking actually with a portfolio CEO the other day about how I really believe from doing Acquired now and we talked with Patrick [...] about this about brands just take time. People don't love stuff quickly. They're always skeptical of new stuff. So a brand is like time times absolute number of people who are familiar with the brand times the magnitude of how much they care about the brand.
+
+Sure, you can get the coefficient on those second two factors to be very high, but it sure helps to have a lot of time because it multiplies through. Just looking back at Acquired and a16z now has this going for it, too, it is remarkable even if the product doesn't get any better and certainly the product for us and for what they offer has gotten dramatically better, that time existing in market continuing to bang your head against the wall, keep doing you thing, and being true to it. Even if it's an irrational decision because it might not pay off, the passion can allow you to stick it out long enough such that a brand can be built.
+
+David: There's also once you get a brand like that. I guess this is the point of seven powers. Any of the powers, once you achieve them, you're just like a whole lot more robust than you used to be. Think about the first Andreessen fund and the Skype deal. If they had lost money on that, man, history might have been different.
+
+Ben: Totally.
+
+David: That could have torpedoed everything.
+
+Ben: Yup.
+
+David: Now they write a couple of million dollar cheques into something and it blows up in their face. Let's take Clubhouse. Jury is still out on Clubhouse but let's assume for a minute that they just play out a scenario where it goes to zero and they lose a whole bunch of money on it. Won't matter at all. Literally no impact.
+
+Ben: That's such a good point.
+
+David: Similarly like the early days of Acquired. If something really bad had happened, we probably would have quit, but not that I don't want to do this at all, but if we had a bad episode or something like that, we're probably going to be fine.
+
+Ben: I don't know. This is like my constant paranoia because it's such a big risk to dedicate.
+
+David: It does feel like a little tight roppy.
+
+Ben: Listening to a podcast is a risk because—we're totally off topic here, but this is something I'm super fired up about—if an article is boring, it's fine because you skim it real quick and then under a minute, you're gone. If an episode sucks, you're like, wow, I just dedicated an hour, two hours, three hours of my life to this thing, I'm not going to trust these people to produce things that are high quality anymore. I'm gone. I don't know about you, but I constantly live in fear and have gotten aggressive on, if this thing is not of the quality bar in which we set, every single episode we release is a risk.
+
+David: It's funny. I'm curious what you think. My level of nerves going into every episode has remained constant and steadily increasing for the six years we've been doing this.
+
+Ben: Totally. There’s more on the line every time.
+
+David: Everytime, yup. That was a digression. Fun one.
+
+Ben: Totally. Before we get into grading here, let me thank our friends over at NordVPN. It’s so funny, listeners. You've heard of these folks because they sponsor a ton of stuff. Huge influencers, Casey Neistat, and they've been doing it for years. There's this unbelievable media strategy to partner with lots of creators out there that do stuff.
+
+I just think it's so cool that we get the inside scoop on the company because Tom is a member of Slack. If you didn't hear in the last episode, here's the schtick. Tom Okman is a member of the Acquired community and he's in our Slack, he’s been listening to the show for years. He started NordVPN with some childhood friends in 2012 in Lithuania. Now there's a big tech company based in Lithuania. He let us know between the last episode and this one, they've now grown to a thousand employees worldwide.
+
+They're used by 15 million people and of course as you know, and we've mentioned last time it works on all OSes, it's the worlds' fastest VPN, and I just think it's so cool that there are people like this in our community. Tom's not the only one. There's a ton of folks like this that we get to interact with all the time. I know many of you are thinking about people you've met on LP calls and through Slack. We're just grateful to have the community that we have.
+
+If you are looking for a VPN, look no further. You should sign up at nordvpn.com/acquired by clicking the link on the show notes and you can use the coupon code “acquired” at checkout.
+
+David: That's so great. There's so many stories. Continuing the riff on our tangent of the podcast, we were worried we're going to run out of stories after 10 episodes.
+
+Ben: We did run out of good acquisitions.
+
+David: That's true. But my God, there are stories everywhere and in our community now. It's the best.
+
+Ben: Flywheel spinning. All right, grading. Listeners, we are not LPs in Andreessen Horowitz. If we were, we wouldn't be able to disclose their returns. That said, thanks to our great relationship with the folks at PitchBook data, we were able to pull a ton of stats when they invested, at what rounds, at what valuations. We're able to scan S-1 of all these companies to see if they owned more than 5% at IPO, what they own. We do know how much money they've raised, so we're able to do some napkin math.
+
+Here's the napkin math we've done. We looked at the proceeds from their top 10 liquid outcomes. That may not mean they've actually liquidated their position, but that they could have. I'll just run through them real quick because I think we said some of the numbers earlier, but it's worth highlighting again.
+
+Okta was $1.5 billion to $2 billion back to Andreessen Horowitz. Coinbase, $11 billion, the granddaddy of them all. Airbnb, we estimated around $3.5 billion based on an $85 billion market cap they have IPOed in the last six months so it's reasonable to think they would start liquidating that position now. We think that they own about 4%, there are some 5% shareholders of course on the board.
+
+David: They've led this Series B. I think they put $60+ million in the Series B.
+
+Ben: Yeah, a lot of capital there. Probably 3% or 4% somewhere in here. Lift, they generated about a billion dollars out of PagerDuty, half a billion. Slack, we think about $3 billion assuming they held all the way to the sales force deal 18 months later. Pinterest, $1.5 billion. They own 10% at IPO which is I think a $15 billion market cap but has 3X since then so it depends how much they held.
+
+David: Depends on when they were distributed, yeah.
+
+Ben: It could have been higher. Roblox, a quick $1.2 billion. GitHub, a billion and a firm somewhere between half a billion and a billion. Again, these things are estimated, but if you just look at those companies and think about distributing pretty earlier, assuming that they didn't hold Okta all the way until it's worth $33 billion that it is today, these companies probably generated about $25 billion in returns.
+
+An interesting thing to do is to then look at that divided by the AUM of the funds that they come from. Just to say what's the worst case scenario for their multiple?
+
+David: That's assuming no more value from anything else.
+
+Ben: Which is simply not true and we'll revisit some of the things that could still bear fruit after we do some quick math. You look at their total assets under management, $18.8 billion. But a lot of that doesn't contribute to any of those companies we talked about, so subtract out the early stage funds from 2019 onward because none of those companies haven't returned yet. That's $2.2 billion of the $19 billion.
+
+Then you got to take out their most late stage fund from six months ago which is $3.2 billion. Then you take out at least crypto funds two and three and maybe even take out crypto fund one which is another $350 million. Then you're pulling out from all of that another $2.7–$3 billion. Then you take out all the biotech funds which is $1.4 billion. You're close to $10 billion to subtract out.
+
+David: You could maybe even argue that one or two of the more recent early stage funds to take out as well.
+
+Ben: To make this, again, all napkin math really easy, because we're just trying to figure out did it work? Is it going to work? Is it showing signs of working? Let's just say their first $8 billion, we have some data on, then the most recent $8 billion, the jury is still out, we don't know yet. Time will tell.
+
+If you look at that first eight, that created at least $25 billion which is a cool 3X and you're not even counting, and this could be a monster Databricks which could be worth $20 billion. It wouldn't surprise me if a16z owned 25%. They invested every early and they've been investing every round. They can own $7 billion of that company at the current valuation.
+
+Again, I don't know but this will be a reasonable estimate. Instacart would seem reasonable to think they own $2 billion on that. Robinhood, a small percentage because it's only a seed investor then something more recent in the growth round, but you also have Robinhood, Oculus, Flatiron Health, Stack Overflow, Instagram, which is so funny. They generated $78 million out of Instagram which was a nice return at that time but sort of doesn't matter in this overall analysis today.
+
+That $25 billion number that grossed 3X is even before all of these other companies that definitely contributed and before all the other ones that may have returned capital, may have done it well, but not Coinbase well.
+
+David: There's one more dark horse, too, which is I believe in the crypto funds and maybe some of the early core funds, they're buying Bitcoin and Ether.
+
+Ben: Oh, interesting.
+
+David: I'm almost 100% sure. At least Bitcoin. If not Bitcoin and Ether, they were buying a bunch of these funds.
+
+Ben: Wow. Depending on when they were buying that's game changing depending on how much capital they put in work for all this whole analysis.
+
+David: Yup.
+
+Ben: The reason that I wanted to do this napkin math is to basically say, we know with the first half of the capital they raised in their life. At the very worst case, they had as good returns as anyone else in the top quartile of the industry. At the very worst case, it didn't not work.
+
+David: This is not an F.
+
+Ben: They were able to do a hard thing, which is burst onto the scene and break into something where there is really persistent returns year over year, decade over decade, and compete with the very best of the best. Do we actually give the data to tell you if they're the best in the industry or compare them to Sequoia? It's too hard to do.
+
+Davdi: But it also doesn't really matter. It will be fascinating to know if they're better than Sequoia or better than Benchmark or not, but they're in the ballgame.
+
+Ben: Yeah, and I think we can finally put to bed that leaked data in 2016. It's not that the data was wrong and all, but the conclusion of all people's analyses, for the brand that they have, Andreessen and Horowitz is way under performing. Gosh they're only going at 2X or 2.something and you're like, okay, we don't know yet. If you would analyze Coinbase in 2016, would you have been able to determine that it's going to whatever gigantic multiple was on that fund just from that one company? There's no way you would have been able to.
+
+David: The apples take longer than lemons to ripen. I skipped over that [...] for time, but it was a Wall Street Journal article that was so clearly a headpiece planted by rival venture firms with a bunch of quotes from LPs and stuff. I think the headline of the articles are something like, despite loss or whatever, Andreessen returns are average.
+
+Ben: I don't have much more to add. Frankly, I guess I would throw an A on it, but the plus being if we ever got clearer data. For what a challenge it was to break in and challenge the incumbent in such a short time frame, it's remarkable how well they've done.
+
+David: That's spot on, it's an A. Only reason it's not an A+ is like A+ is Facebook buying Instagram and getting $500 billion of value for one. We just don't know enough yet that maybe it could end up being that in the future, but it's not that today, but no way this is less than an A. Who else did this? Nobody has done this.
+
+Ben: Just to put some numbers. I'm going to guess that the first $8 billion of capital in these funds that were calling inbounds for this analysis returned somewhere between $25 and probably $40-ish billion.
+
+David: It's so good. It's funny like the other navel gazing aspect to venture and investment returns that people talk about all the time is the multiple, the IRRs, efficiency of capital, only having the best company, and blah-blah-blah. Just the magnitude is like at the end of the day, what really matters is the magnitude here.
+
+Ben: Yeah, the absolute dollars.
+
+David: The absolute dollars. They generate, let's make it easy, let's say $30 billion that they've returned on $8 billion invested, that's $22 billion that they've generated. Name other firms who have done that. There are a few, but there are a very very few who have done that.
+
+Ben: It's interesting. Good multiple means you are right, but a great amount of absolute cash returned means you were three things. You were right with conviction, you had winning access to be a meaningful participant on the cap table, and you effectively did the work to obtain the capital in the first place to be able to deploy a large-enough amount of it to generate a large dollar return. You got to be good in a lot of things and you got to be convicted and right in them.
+
+David: I think large institutional LPs, that's how they think about it. They're like yeah, great, 10X funds, fine. If it's a $50 million fund and you 10X and you return $500 million, clap I'm proud of you, but I'm not jumping out of my seat. You return me $22 billion, now I'm jumping out of my seat. I don't care what the multiple is.
+
+Ben: All right. Gosh, it feels good to come to the end of these two parts. Do you want to do carve outs?
+
+David: Yeah. Let's do some carve outs. I got two. First, they're both quasi carve outs. The first one is a quasi carveout because I've already had this author as a recent previous carve out, Arthur C. Clarke. So good. Was it in the Ethereum episode, maybe? I had him as my carveout OG, super OG Science Fiction author. I have since continued to read his stuff and I read Childhood's End. Have you read Childhood's End?
+
+Ben: No.
+
+David: Oh my gosh, it is so good. You got to go read this book. You know the movie Independence Day? The Will Smith movie?
+
+Ben: Absolutely.
+
+David: So great. Independence Day is based on Childhood's End but is only based on the very beginning. The beginning of Childhood's End is what Independence Day is based on, but the rest of the book takes a very very different turn. It's super mind-bending and really cool. Can't recommend it enough. That's number one.
+
+Number two is specifically for you, Ben. I have a carve out for you. We are both huge MKBHD, Marques Brownlee fans, and I think his most recent video, he just launched a new channel on YouTube called THE STUDIO Channel! with the video. You're going to love this because you're such a gear geek. Studio tour, MKBHD's studio tour, oh my God, it's so cool.
+
+Ben: And he's got great gear. I got to go check that out.
+
+David: I was watching and I was both jaws on the floor and I was like, wow, we're so amateurs at Acquired.
+
+Ben: He has a litany of RED cameras.
+
+David: Litany, and wow, videos. I've had so much respect for what YouTubers do. Audio is easy, we're playing on easy mode here.
+
+Ben: It's so much harder for sure. Okay, cool. I'm legitimately adding to my to do list to go watch after. Mine is continuing my recommendation of the Sopranos and Goodfellas, The Godfather. Somehow I have never seen The Godfather trilogy.
+
+David: What?
+
+Ben: It just escaped me. I know. I like going back and actually watching all these.
+
+David: You started with the Sopranos and Goodfellas without having seen The Godfather?
+
+Ben: Correct.
+
+David: Whatever path leads you to greatness, the point is you get to greatness.
+
+Ben: Yes, and greatness it is. God, it is so good. I is so good and raw, and II it's so artistic and well-thought through, and the method of storytelling flashing back and forth between those two stories. I think some people complained about it, I loved it. I think it's De Niro's best performance ever. It's definitely Al Pacino's best performance ever.
+
+David: III exists.
+
+Ben: III, I turned off. Actually I didn't watch III, I watched Coda. People think it's better than III. It's like a reshot. There's some stuff that's reshot, reedited. Maybe if I had 14 years between II and III, then it will be okay, but because I tried to watch them back to back, I was allergic to the ninety-cisms of Coda where I was just like, this is unwatchable. Haircuts alone. I think Michael Corleone says more words in the first 10 minutes of that movie than in the entirety of II.
+
+David: I believe it.
+
+Ben: Just no subtlety.
+
+David: I don't know if I've ever watched III. This is what I hear from everybody.
+
+Ben: I and II are so good.
+
+David: So good. The horse head.
+
+Ben: Ah, it's so beautiful.
+
+David: Just great.
+
+Ben: With that, listeners, thank you to pilot.com, PitchBook, NordVPN. Come join us in Slack. Become an LP. All those links are in the show notes. If you liked this episode, share it with a friend. You can share it on social media, that will be nice, but I actually like the one-to-one better. We're all about the slow, methodical, high-touch growth here at Acquired so if you can put someone you think would really appreciate it, then that's who you should share it with.
+
+David: We love social media shares, of course, but it's kind of hard to just post on social media, like you should listen to this three-and-a-half podcast that is part two of Andreessen Horowitz. You got to convince someone, so if you loved this, tell your friends.
+
+Ben: It's like when I get an Eventbrite invitation to go to something versus when a friend texts me and is like, hey, you should come over for this.
+
+David: Yup, exactly.
+
+Ben: It's a totally different thing. Listeners, we'll see you next time.
+
+David: See you next time and we got one more piece of news. Who Got The Truth? Live on Spotify.
+
+Ben: Go check it out. You can listen to it here for the next two minutes and then go listen on Spotify.
+
+David: Yung Spielburg.
+
+Ben: Mike Taylor, take us out.
+
+‍

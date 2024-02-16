@@ -1,0 +1,397 @@
+Ben: Hello, Acquired LPs. We have a super cool episode today. David and I were brainstorming after the AWS episode. After we talked about the power of cloud data warehouses, what would be the appropriate way to dive deeper into why cloud data warehouses matter so much and became this big strategic part of cloud? And how do enterprises actually use them? Because I think we ended the episode by saying, oh, this is the most important thing in cloud today after databases, and okay, great. Snowflake’s doing well.
+
+David: Hundred billion dollar mess by Amazon. We’ll leave it at that.
+
+Ben: The way that we wanted to explore this is through the launch of a new company called Samooha. We have the founder and CEO of the company with us today, Kamakshi Sivaramakrishnan. Kamakshi, welcome to Acquired.
+
+Kamakshi: Thank you so much, Ben and David. It's great to be here. I’m excited about the next hour plus or so of us talking about everything cloud and Samooha.
+
+Ben: Yeah. Well, listeners, just so you understand the crazy credentials of Kamakshi before we dive into ever articulate cloud landscape to us today. Kamakshi, your company was called Drawbridge. Is that correct, before starting Samooha?
+
+Kamakshi: That's right. Actually, after Stanford, I was a part of what I would call a phenomenal company called AdMob. That was before Google. So we were all called the Mobsters. Like the PayPal Mafia, that was the new version of what we had.
+
+David: That was the first mobile ad network, right?
+
+Kamakshi: That's right. It was kind of crazy. This was way back in 2007. I was just graduating from Stanford, and we all had these flip phone devices. You had the scary message coming from your telco operator saying, are you sure you want to launch your internet browser? Your data rates are $1.99 per minute. You're like, oh, no.
+
+Then this whole notion of monetizing mobile web sounded familiar because Google and the others had done it on the traditional web. But the mobile web wasn't very accessible to everyone, so it was an interesting company, obviously, an interesting experience. So many cool people that AdMob brought together.
+
+Then from that point onward, it's a journey that I've never looked back on. I fell in love with entrepreneurship and being a founder. Being a founder is such a cathartic and a transformative experience. From that point onwards, it's been that journey, one after another.
+
+AdMob exited to Google in 2009. The transaction closed in 2010. A bunch of us spent their flash few months at Google. There were a number of companies that were born out of AdMob. I started Drawbridge. It was an interesting journey in and of itself, another transformative experience for me. I sold that business to LinkedIn and Microsoft in 2019. Interesting part there was I literally was selling my company and giving birth to my daughter at the same time.
+
+Ben: Oh, my gosh.
+
+David: Oh, my gosh.
+
+Kamakshi: Not happening around the same quarter. No. It was happening the same day, a couple of days. It was an interesting exercise.
+
+Ben: Kamakshi, we're not going to ask you to confirm this. But just for listeners, if you google around, you see a reported $300 million neighborhood for what that acquisition was. Important purchase by LinkedIn for their advertising products. Then I think you went on to work closely with the CTO of Microsoft after that, right?
+
+Kamakshi: That's right. LinkedIn being a Microsoft company, spent a couple of years. LinkedIn has this best kept secret called LinkedIn Marketing Solutions. So when you're on the LinkedIn feed, a lot of enterprise marketing for a captive audience of professionals in this professional networking environment call LinkedIn happens on that feed. That's the LinkedIn Marketing Solutions. As I said, best kept secret because it's a highly profitable business, high margin business, a large business at that as well.
+
+David: LinkedIn is the best kept secret within Microsoft. It's $10 billion-plus revenue annually growing 30%–40% a year globally.
+
+Kamakshi: Absolutely, and a very well-run business. So many factors. I had a healthy cynicism about corporate environments coming being this proverbial founder. But it was amazing. Both Jeff Weiner at LinkedIn, in terms of understanding and learning from an environment at that scale.
+
+Then you go to the mothership Microsoft, at the office of the CTO with Kevin Scott. That's a whole other experience, because that brings a canvas that is humongous. I was discussing this with Kevin and the Deputy CTO, called Lila Tretikov, who I report to. It's like a SWAT SEAL team, like a McKinsey that could not do what we do, because these are such deeply technical problems that the office of the CTO takes a look at that helps both.
+
+Microsoft at large, and certainly Kevin as well. Kevin Scott looks into some of the strategic directions. It was a highly educational exercise, making these in Microsoft barlines. This the h1 h2 h3 of multiple horizons, like your h3 horizon strategic imperatives for the company. I was constantly contemplating what is next for me. I could fade away into semi-retirement, or I could look into interesting things to do.
+
+David: The first one doesn't really seem, knowing you a little bit now how you're wired.
+
+Kamakshi: Yeah, that didn't seem so as a compelling alternative for me. I felt I had at least one, if not two companies in me. Being at Microsoft, obviously, the whole cloud movement. And you touched upon this in the intro as well. You just cannot ignore that you're in Microsoft.
+
+Azure was a big part of getting the learning experience for me having that white canvas. That education gave me some conviction that look, I think while the cloud movement to the point that you raised data warehouses, whether structured or semi-structured analytics workloads, new kinds of workloads that a lot of imperative on the clouds are about new workloads, et cetera, especially AI-centric workloads.
+
+When you think about all of that, you see that some of the problems haven't quite hit P0 yet. When I mean P0, I'm talking from the P0 priority perspective. That's where there's an implicit and explicit understanding. I feel, at least across all the cloud players, that we are living in a reality of cross cloud. We are not living in a reality of there is no winner take all dynamic here. It is a fragmented market.
+
+David: No major enterprise, and even midsize enterprise, but certainly no Fortune 500 is like 100% on AWS or Azure or GCP.
+
+Ben: It’s too much risk and it's too much pricing power to give the vendor.
+
+Kamakshi: A hundred percent You're talking about a fragmented market. None of us have a full view of customer data.
+
+So when you put some of these trends and facts together, you're looking at a modern data stack that has to lend itself to collaboration. Collaboration, not from a good perspective of goodwill but from a perspective of business outcomes, to complete those vacuums of data that we all as businesses and enterprises have.
+
+That's where I connected back to the comment around P0. None of the clouds at least at that time had made it a piece of imperative to support cross cloud collaboration, creating a secure airway across clouds.
+
+Ben: When you say cross cloud, that's not even thinking about collaborating with your customer or collaborating with a partner. It's literally like, I have data in two different, some in Azure, some in AWS, and I need to be able to use the data that's in two places for my own use case.
+
+Kamakshi: A hundred percent. Even if you extend that problem, and even further simplify it and say that, look, I have my data on a cloud, but I have compliance requirements within my enterprise, as a result of which the right hand has restricted access to the left hand in terms of the data boundaries. Even that has restricted solutions today. This is less about a statement around the fact that clouds cannot solve the problems.
+
+Obviously, these are hyper scalars, massively resourced companies with highly talented people. It's about the prioritization and it's about the product experience. Has this been made super easy for businesses and enterprises to make data sharing data collaboration within their enterprise boundary and across their enterprise boundaries super easy?
+
+Ben: Is there an incentive misalignment to where any marginal engineering resource at AWS would go toward building products that make people more inclined to put all of their data and compute on AWS, rather than making it easier to interoperate with Azure?
+
+Kamakshi: Absolutely. The reality of, if you think about resources, especially technical, whatever scale you are, you have constrained resources. That incremental allocation does go towards the core mission, if you have been able to create the gravity around that cloud ecosystem rather than creating collaboration tools.
+
+But if you think about where innovation has been strong is certainly around bringing a bunch of collaboration tools. How we think about communication-oriented collaboration tools, productivity-oriented collaboration tools, but then if you think about data-oriented collaboration tools, that's a hard problem. The moment you put the word data before collaboration. You're talking about security. You're talking about governance. You're talking about privacy. You're talking about compliance.
+
+It's not an easy problem to solve. As a result of which, unless and until there's a certain trigger, from an opportunity perspective. I think that's where my characterization of P0 effectively comes in. That's where a company like Samooha probably arbitrage is the opportunity in a near term sense. I think there's an opportunity for us to innovate and we are going all in on that.
+
+David: Love it. Help us understand. Where does Snowflake fit into this picture? They're obviously an independent company, not part of AWS or Azure. How does that fit into this picture? And obviously it doesn't fully solve the problem.
+
+Ben: To dumb it down even further, why are cloud data warehouses a thing versus there were already eight database solutions available from AWS. Why doesn't everyone just use a relational database or a key value store?
+
+Kamakshi: I think to your point on where Snowflake fit in, Snowflake talked about opportunity. Someone said that if you define the term product/market fit, it was what Snowflake went through starting 2011. Because there were these cloud environments. There were these (to your point) warehousing tools that were not quite heavily invested. Pretty much the same dynamic that we are going through at this time vis-a-vis collaboration.
+
+AWS had a solution redshift, but wasn't a major area of investment for them. Then here comes a product solution, Snowflake, that basically abstracts away the underlying data stack and/or the cloud infrastructure, and says that all the high performance access to warehouses, data, and databases is basically the way we are going to solve it. So we are abstracting away the complexity of the underlying cloud infrastructure. Here's basically the application around the warehouses that we are delivering to.
+
+In that way, we find ourselves very aligned with that mode of thinking. Forget the complexity of the underlying infrastructure, the cloud infrastructure. If we are able to build a collaboration environment that abstracts away that complexity, then we are basically talking about an intuitive product experience.
+
+Snowflake comes in the sense that I think Samooha’s vision is to being able to make data collaboration a highly intuitive product experience, so businesses have a big, easy button to be able to share data within their enterprise boundary or across enterprise boundaries. That seems to align very well with how Snowflake talked about the problem of data warehouses.
+
+Ben: For folks who haven't followed the cloud data warehouse world, you're basically saying, you had to make a lot of upfront technical decisions in a pre-Snowflake world around performance, around scalability, around how easy it is going to be to retrieve this data, around security of whatever underlying technology I picked to store the data.
+
+With Snowflake, they said, no, it's all at the application level. We're going to figure out all the guts under the scenes, and it's all going to live in the cloud. It's going to be super easy, fast, and everything you want. You just interact with our application.
+
+There are API's, but you don't have to do a lot of the PhD-level computer science stuff underneath. What you're saying with Samooha is there's this whole next generation now of collaboration, where it's kind of the same thing around interoperability between data that lives in multiple places and multiple clouds.
+
+Kamakshi: Very well said, and more importantly, not just the PhD-level computer science but the same problem gets solved over and over again across enterprises. That's also another thing. Again, speaking of the definition of product/market fit, I think that's what happens. It's a pain point that every business, every enterprise, and every data team, and engineering team was going through.
+
+Here, they basically [...] that abstraction away and being able to focus on the core product use cases at hand of the side enterprise or business was basically the value proposition that Snowflake was able to offer. Exactly to the point that you said, I think if being able to extend that, to then make more sense out of the data and making sense out of the data is how do we get insights out of the data? How are we able to create more actionable, valuable business outcomes?
+
+This has been a goal for many SaaS enterprise businesses over the decades. I think we are coming at it from the perspective of collaboration. If you think about data collaboration, how do we do it today? Very simply put, we share documents over email. We put confidentiality phrases as appropriately needed. We share it over Dropbox, and there is no workload. This is just basically a share. Hardly a secure share. That's basically all that we do at this time.
+
+But if we want to bring a true collaborative experience where data can come together while maintaining the sanctity of the data without making copies of that data. That's where basically data collaboration, at least Samooha is going for. It has the potential to be disruptive. That's the vision for which we are building this company.
+
+Ben: It's such a good point. I hadn't really considered this before. But absent building your own custom engineering tools to make AWS talk to Azure or GCP, there are probably a lot of people who are under-resourced in organizations doing cowboy stuff like downloading in a file. Your web browser kicks off a thing that says the download will be ready in 10–15 minutes, then it sends you an email that it's ready, then you download it.
+
+Now, it's moved over the network, into your corporate network or someone's box at home. Now it's sitting on their desktop. They're uploading it somewhere else, probably through some web interface, because they want to use some tool. There are copies of the data all over the place, and it's moving through encrypted and unencrypted ways to get there. I totally see how this is a problem.
+
+Kamakshi: To the point that you said, it's moving unencrypted in most scenarios. A lot of this is depending on the industries, the enterprises, and businesses. There's a lot of sensitive data associated with it.
+
+Imagine versions of this happening in the healthcare industry, financial services as an industry, and even more recently, advertising, media, and marketing had a certain MO by which that industry operated. Now with the increased regulation, it's beginning to look like financial services or our healthcare industry with increased regulation, and rightfully so.
+
+That's where most of these industries are now having to be more accountable to how data moves, data mobilizes, data is not copied, data is encrypted, and yet, you're able to not render the data value less through this process. You have to still continue to extract value from the data, because that's where we are, as a generation. We are smarter because of the data behind it.
+
+David: Particularly now, I'm curious how much visibility you got into this when you were at Microsoft and in the office of the CTO, and also you're thinking about it now. But with AI and the importance of data for that, using the data that you have, and (in particular) your own unique data that you own that nobody else does, mobility has never been more important, right?
+
+Kamakshi: There were a number of conversations around from a top leadership perspective that happened at Microsoft translating to product initiatives. I'm sure versions of this happened across the other set of hyper scalars, as well.
+
+Most of the data was treated by bringing data to compute. That's why this whole notion of copies, fragments, breadcrumbs of data, and trails being left along the way. Hence along the way, a lot of exposure.
+
+If you can change that paradigm and bring compute to data, that's where you're mobilizing data without having the needs of mobility of the data. I think that's where our alignment with the likes of Snowflake even comes in, because we think about this new framework of bringing compute to data.
+
+At Samooha, our data collaboration application is built on the fundamental paradigm of bringing compute to data. A very narrow instantiation of that is what is called cleanrooms. That's basically acquired the name because the industry that has been most affected by this, at least in the recent past, has had an existential crisis is this advertising media marketing industry. They rose to the occasion because that industry operated a certain way, and suddenly the rug is pulled underneath them, then there's an existential problem.
+
+Ben: You're talking about when there are leaks of customer email addresses, because they were sharing customer data back and forth between multiple sources?
+
+Kamakshi: Actually worse. Over the course of the last 5–10 years, we've seen all these third-party cookies surreptitiously capturing information that you would have on browsers that is not a clear chain of consent and awareness from an end user’s perspective on what all data has been collected about them, whether it is through experiences of media, content, gaming, et cetera, that they're engaging in.
+
+That was at the heart of how “tracking” would work in the media marketing use cases because the promise of digital advertising and marketing is that it is measurable. That means a user has to be tracked. That's exactly where a lot of this, whether it is the Cambridge Analytica and how Facebook came into a lot of public anger, if you may. But this is how the entire industry operated.
+
+David: And here we are today now, with the Apple App tracking. Like you say, the rug has been pulled out in the whole industry.
+
+Kamakshi: In response to that you basically have Apple, Google, et cetera, change the way in which tracking works on their OEM, whether it's on the browser, on the application environment, on the devices that are shipped and manufactured by these large players. That changes the paradigm of how advertising and marketing and media as an industry is operated.
+
+They rose to the occasion and that's why now you have to share sensitive data. The sensitive data being a user is identified and appropriate, consented around an email address that they have shared with a certain game or experience or media application that they're consuming from. Similarly on the brand side, data is being matched and joined against what are sensitive email addresses and other words, personally identifiable tokens.
+
+Now you see the analogy of why it starts looking like the healthcare industry, where you have personally identifiable but also sensitive pieces of data around health information, et cetera, that comes in.
+
+Anyway, that industry is basically having to overnight transform the way it operates. They stood up to the problem of secure data collaboration in a very narrow instantiation as clean rooms. The reason the instantiation of clean rooms makes sense in security and collaboration is the underlying cloud infrastructure provides the security posture. Secure data collaboration bent to the point that you were talking about if we take it across clouds.
+
+An arbitrary business sitting on Azure, AWS, or GCP are effectively bringing the datasets together to model for fraud better, to do cycle detection and anti money laundering. Assuming that these enterprises are financial institutions, you need a secure airway or airspace across these three clouds. There is no such solution out there. There is no underlying security posture. You're going across the cloud boundary.
+
+That's where the zero trust paradigm effectively comes in. You have to have cryptographic multi-party computing techniques that have to come to the rescue, to be able to have this ability to run workloads across cloud tenants that are across the cloud boundaries. We are probably going rather quickly into some of the more technical aspects of this, but hopefully, I'm able to illustrate why these problems are not easy problems, especially when you're ready to sit down in a zero trust environment.
+
+Ben: What you're describing sounds like a magic trick and sounds like doing the impossible. When you say things like, well, we're going to make sure that the data is never unencrypted. We're going to make sure that the compute moves to where the data is stored, rather than uploading the data to a new source to further compute to happen there. You start to think about some of the problems that you have to solve in doing this.
+
+This is where you think, well, who in the world is best suited to perform these magic tricks of what sounds like theoretically very difficult to do? I want to bring your co-founder, Abhishek's background here, because I think it's literally the background of someone who saw this at the greatest scale in the world. Abhishek, formerly worked at Apple as the head of ML privacy and cryptography.
+
+For anyone who has been a keen watcher of the Apple keynotes over the years, you'll remember something called differential privacy, the magic of what Apple can do on Apple photos on your device, rather than needing to upload unencrypted photos to Apple's cloud the way that Google would do to run all of the ML in the cloud.
+
+It's like this breakthrough innovation of whoa, we can in a secure private way on a device where the data lives, go and perform a lot of these super complex machine learning workloads.
+
+Then, of course, he goes on to work on the technology for the COVID-19 exposure notification system, which, Kamakshi, to your point, we're starting to treat all data like healthcare data where we need just the most identifiable bits to compare against other data sources in order to determine whatever outcome we're trying to hit to understand without exposing people sensitive information.
+
+I'd love for you to tell us a little bit about how you two found each other and how you decided that you should aim both of your backgrounds, which with yours, ad tech, marketing tech, obviously important cloud problems at Microsoft, and his, in solving these really unique, nuanced data and ML problems together to do this.
+
+Kamakshi: Ben, you very aptly described my co-founder's background here. I wouldn't have the courage and conviction to go for this problem, which you aptly described as magic brought to bear with Matt. He's the kind of person to be able to be the ideal partner to solve this. Especially his background at being able to have done this, I'm going to use his phrasing at the scale of a billion-plus devices and an ecosystem like Apple that is the bastion for being able to do this securely.
+
+Even bringing this new paradigm of what you would call being able to do all of this compute and processing on a device, that's basically the paradigm of bringing compute to data. Otherwise, it's basically centralizing all data to a cloud-based processing and then disseminating learning.
+
+That's I think very much behind his expertise. At least his view has been how we can bring this more at scale, democratize this, bring access to this across businesses, not just have a large company like Apple do this across its ecosystem, just enable businesses to get smarter about doing this and doing this the right way.
+
+In short, I would only do this as I said because I have the power of a co-founder like him and certainly excellent background. Many times when we speak to customers, market, when we are in meetings jointly, he introduces himself. One of his achievements is he solved this 40-year-old math problem that remained unsolved for a long time, and he took that on.
+
+This is at the heart of being the cryptologist that he is. It's hard to follow suit when such an illustrious founder goes first. It's hard for me to follow suit than I can do and then introduce myself.
+
+It's great coming together from a perspective of, I bring in a bunch of product perspectives to the point of advertising, marketing, and media industry. This industry both abuses and also innovates. You're at the forefront of it, it's a very dynamic, fast moving industry.
+
+Having had live experiences, live use cases, I come in from the perspective of, how can we replicate this across other industries? How can we make pharma, life sciences, health systems, and payers and insurance collaborate with each other without having to go through extensive legalese and BAA agreements?
+
+How do we get financial services and institutions to be able to avail and a price grade, highly secure, high mathematically, guaranteed security and governance, and privacy practices that these applications can offer? How do we bring these practices into these other industries? I come in from that perspective.
+
+The joining of forces between me and Abhishek I think is at the heart of why we have a shot at solving this problem. Again, it's going back to that arbitrage analogy. Hopefully, we are able to arbitrage the opportunity ahead of when the hyperscalers deploy 1000 talented cryptologists and engineers behind this problem.
+
+Ben: Coming from the office of the CTO of Microsoft, I'm sure you get asked this by investors in meetings all the time. Why won't the hyperscalers do this? Or why should this be an independent company?
+
+Kamakshi: Here's the thing. I think there's a reckoning across all the hyperscalers that we live in across the cloud world. There is an absolute movement happening from their cloud applications and services to support and accommodate their businesses, and the recognition of the fact that to the point that you mentioned earlier that not 100% of their enterprise and our customer data is on their cloud.
+
+There is certainly a move to provide support services, applications, and make it a friendlier environment, but has that catapulted to a level of being able to build a very secure (as I said) data Airware that is built on a zero trust paradigm that makes no assumptions of the underlying security postures of the cloud itself, and really provides mathematical guarantees such that these businesses have a very secure way to collaborate across the cloud boundary? I wouldn't say there is a method for this. Even this definition of this basically calls for an independent company to go solve this problem rather than on the cloud themselves.
+
+David: I don't know if Hamilton Helmer would quite identify this as counter positioning, per se, but it is an element of counter positioning here. For business model reasons, none of the hyperscalers are super inclined to dedicate 500 engineers to doing this.
+
+Kamakshi: At the same time, I think there's an understanding, and that's why we are able to engage in conversations with these hyperscalers because they are very curious. They know what's happening. They know that customers are asking for this. If there is a credible application that is able to, at a technical level, at an engineering level, at a mathematical level, legitimately solve this problem, it piques their interest. That's exactly why we are able to engage the cloud environment.
+
+This is not taking away from the core movement to the cloud. This is just mobilizing data better, faster, and bringing the same Snowflake-grade efficiencies that were brought into the core data stack. This is also bringing it to the data stack, but more at an application level.
+
+I'll just probably add one more thing. We are under no illusion that this is an easy problem for us to solve from a product technical perspective, and also the elbowing that we would need to do to be able to really do is at scale natively across the big three hyperscale clouds itself. There are challenges to be able to do this.
+
+In some sense, this is going to be a very high grade experiment and a learning experience. That's why Snowflake also comes in because it's a bounded environment, where precisely this level of abstraction from the cloud from a warehouse perspective has happened. We are able to build and learn from a product perspective. We are able to learn and understand the dynamics of businesses wanting to work with each other and understand time to market, time to sell this product, time to understand use cases across multiple industries, how does this get adopted.
+
+I think that's where the Snowflake equation gets cemented a bit more, to be able to have that innovation partner, design partner, who's aligned at a core level. It's a more bounded environment from a complexity scale perspective. The learnings from here, hopefully, we are able to take and apply at a larger scale as well.
+
+David: This is great. Tell us the story of how the company and Samooha came together, because you've met Abhishek at this point, you two have decided to team up to take on this incredibly difficult but rewarding challenge.
+
+Ben: The spoiler is that your round ends up getting put together by Snowflake Ventures and our good friend Brad Gerstner at Altimeter. Obviously, we end the story and we've said Snowflake's name so many times. We end the story deciding that, hey, Snowflake is the right abstracting letter to build this.
+
+David: The punchline is that Snowflake is deeply corely aligned with the company, as you say. How did it all come together?
+
+Kamakshi: I wouldn't have had the conviction to do this without my co-founder. Oddly enough, I haven't had a long operating and working history with my co-founder. I got introduced to him about a year-and-a-half back at this time by a friend who was like, hey, you're thinking about this problem, and here's a guy at Apple I know who's arguably a domain expert in this. You guys should connect, just share thoughts, and compare notes.
+
+I got on a call with Abhishek. This is Covid times, so it's a Zoom call. There is a certain distance that Zoom adds to be able to do this. The first call is, while he piqued my interest because he's a person with a stellar background, I had no reason to believe that we were actually going to go ahead and do something together. I had an inkling hearing him and getting to know him.
+
+Basically, the exercise the two of us went through was whether it is engineering design, whether it is product design. Whether it is a problem, space exploration, and discovery, we are going to go through this. We're going to go through this not just across those dimensions, but we are going to go through this iteratively till a point where we are going to find every reason not to do this, because either the hyperscalers are going to do this themselves, or this is going to be an incredibly hard problem. The elbowing from the partnership dynamic, the go-to market motion around these things are incredibly hard to solve.
+
+The good news was from an engineering product design perspective. This is not an insurmountable problem. With the right talent and for the right individual, and that's where Abhishek comes in. Having spent months doing that, I think we came to a point where we felt, yeah, let's still go ahead and do this. Even though we had to establish that founder dynamic between ourselves, I'd like to best characterize it as a spiritual connection that we developed over the months.
+
+David: He hadn't been a startup guy before, right? Was he looking to start a company?
+
+Kamakshi: That's exactly the thing. I have done this before. I carry the scars of being a founder. Let me see if you appreciate my characterization of this. Entrepreneurship and founding a company is a high fixed cost problem. An exercise that every founder goes through. There's a very high fixed cost whether it's 30 million outcome, 300 million outcome, 3 billion, 30 billion, or an IPO company.
+
+There's a certain amount of fixed costs that goes through because until you achieve a certain escape velocity, the fixed cost is coming from the founder and the founding team squarely. It was something I was extremely aware of. Establishing the right dynamic with a co-founder was very, very important for me. Especially with a founder who hasn't done it before, you're on different trajectories and evolution curves, if you may.
+
+My hope here is that I'm able to help him in ways where I can pattern recognize both opportunities and challenges. Similarly, he's able to help me in ways in which he's able to uniquely solve this problem ahead of others.
+
+When you think about the incumbent space as well, there are probably a couple other companies that comprise a set of venture-backed startups who have taken a crack at this problem, probably unsuccessfully so, or at least going through it at this time. For one reason or another, there are different reasons why the escape velocity for companies is not quite established.
+
+The reason I feel that we will have a shot at doing this is also both from an engineering technology perspective, how we are approaching this, the partnership dynamic, whether it is Snowflake today or the hyperscalers tomorrow. The Snowflake today establishes a proof point for us to be able to then go ahead and do this with the hyperscalers.
+
+I think all of these things coming together, we feel like we have a shot at a mission level as well to go ahead and do this. To the point of Altimeter and Snowflake coming together, I sit on the board of a public company called iHeartMedia, which owns about close to a thousand radio stations across the country led by a legendary CEO, Bob Pittman. I sit on that board with Brad Gerstner.
+
+I honestly had a conversation with Brad, not because we designed it as a problem to go raise capital from Altimeter. It was just because Brad is an avid advocate and voice, not just for Snowflake but companies innovating around the modern data stack, to the extent that Snowflake is a part of our on-ramp journey here. I was just curious and understanding how we should be thinking about this problem.
+
+On a similar vein, the partnership with Snowflake made sense because Snowflake abstracting away a new warehousing. That's where they started over the cloud and building a data cloud economy as the abstraction layer over the underlying hyperscalers themselves. You take that one step further is basically mobilizing data and creating an application economy over that data cloud, that Snowflake is.
+
+Effectively, we have a very, very side-by-side adjacent position, if you may. There are adjacencies and there are also consequentialities, meaning that we are a very natural consequence of what Snowflake's cloud is. That's why the partnership with Snowflake also made a lot of sense. It helps us, as I said, establish our learnings on how we take this to the hyperscalers.
+
+Somebody asked me this question, and I think you did too, Ben. Why not do this at Microsoft? Like I was there.
+
+Ben: I have to imagine you talked with Kevin Scott and Satya about this.
+
+Kamakshi: Of course, I did talk to Kevin. I did talk to a bunch of players. I think as well-intentioned a group of people are, Kevin and all the execs at Microsoft are in that bucket of highly well-intentioned, putting their money where their mouth is, that if you think about the physics of the problem at the scale of an organization like what Microsoft is, there are restrictions to the agility and nimbleness with which a team can go and achieve.
+
+That's the age-old dynamic of innovation happening independently as a company rather than within another organization. That's what we ended up choosing as a company. That does not, in any way, circumvent any opportunity for us to participate and partner with all of the hyperscalers. Absolutely, that's the eventual karma for these companies.
+
+Ben: There are customers who all want this.
+
+David: Which just like Snowflake did.
+
+Kamakshi: Exactly. That's another interesting thing. Even the Snowflake dynamic itself, there are some questions, like how far does the Snowflake dynamic go? It goes as far as it makes sense and then it evolves. Snowflake went through that themselves and some will go through it ourselves.
+
+Ben: There's this funny thing if you keep taking Microsoft as an example, but all the hyperscalers are this way. They know their customers want this. They're not really sure they want to accelerate the development of it that much or make it their core competency to commoditize themselves and enable data to flow freely between them and all their competitors.
+
+But if someone that they have a great relationship with is going to go start this, great, go do this for our customers. We're super excited for you to provide this. We're going to keep a close eye and make sure that we're supporting all the use cases that make our customers the most delighted, whether it's with you or any other way that they're meeting their needs.
+
+Kamakshi: Well said, and I think all of this is grounded on the fact that, (I think) borrowing from Kevin's words, are you able to mathematically prove to me and establish guarantees around the privacy, security, and governance of the underlying data?
+
+I think that's where, at the core of it, our strength comes in. If you're able to do that, I think the hyperscalers have it in their advantage as well, especially at this stage of evolution to see how we are able to play it out. To your point, there are probably opportunities in the future for how that can take shape.
+
+Ben: I have a question about the Snowflake partnership. Because they are a cloud-agnostic layer that sits on top as the data warehouse, did you ask them when you were starting to get to know their team, hey, why aren't you doing this, why aren't you trying to facilitate this secure connection between data that lives inside Snowflake, outside Snowflake, under different underlying clouds? Does it seem like it's in their wheelhouse or should it be an independent startup?
+
+Kamakshi: Actually, Snowflake has something called cleanroom primitives that they provide themselves. They are precisely that, they are primitives. Primitives effectively means it's thousands of lines of code that businesses, enterprises have to take and implement themselves, typically with their own engineering resources to be able to then translate that as an end application for themselves.
+
+That is where the friction point exists for the primitives to become at-scale adoption across the Snowflake ecosystem. Then from there onwards, all the various combinations that include Snowflake and the hyperscalers are not.
+
+That's where, again, Samooha comes in from a product perspective on how we can be the big easy button to enable this collaboration no matter what the underlying security posture, the underlying data stack, the underlying data infrastructure is. A big part of how we would do this, and this is where I even go to the partnership between me and Abhishek is the product experience of this.
+
+If I may venture to say that the intuitive product experience of collaboration that Workspace, Slack, Teams, and SharePoint, et cetera offer, that degree of intuitive experience has to be there in a product like this. We have to increase the addressability of this product from the data scientists and the data engineers who typically deal with data and touch-sensitive data within their enterprise across enterprises.
+
+We have to increase the addressability to the non technical user persona as well, which is analysts, operations professionals, et cetera within an enterprise who are analytical but are not technical. That's a big part of how we build and deliver the product experience by truly making it easy and consumable.
+
+David: We've done a great job so far (I think) setting the stage for the level of challenge of what you're undertaking here, how you had to bring this whole ecosystem together to bear to even begin to attack it. What are you doing now? How do you start this company? What do you build first?
+
+Ben: What's the implementation? What does the product look like?
+
+Kamakshi: What we did organically is build off of the Snowflake primitives, we have built a native application that is distributed via the Snowflake marketplace today. It's built on a streamlet of web application frameworks. The web application is built on streamlet. It's as easy as a one-click install that we are used to as consumers for an app that is distributed in the app store. We are basically an app in the marketplace that with one click is installed on the enterprise tenant on Snowflake or off.
+
+The business is very easily able to then go ahead enable it and provision it to whoever users within the organization. The application allows you to collaborate on data within the enterprise itself if there are compliance boundaries within the enterprise or across enterprises. All of the workloads are brought to bear with templates that are offered, that are easily pre-baked.
+
+If you want to basically run queries about how my data joins and looks vis-a-vis my partner's data, how many common records exist around my data and my partner's data so that we are able to build off of. These templates are pre-baked and offered within the application.
+
+We have actually put together a little like 30-second video snippet that basically gives a tangibility to the look, shape, and form of how this application looks like.
+
+Ben: Oh yeah. We'll drop a link in the show notes.
+
+Kamakshi: Another point that we're excited about is… We are living at a time where generative AI is dominating our collective consciousness. Having this natural language interface to a data application wherein you ask questions in natural language and that is translated into a set of APIs that queries the secure airspace across clouds.
+
+Ben: Have you done that?
+
+Kamakshi: We have done that, too. I think it's still very early days in terms of where this would take. I heard Brad or someone else talk about citizen data scientists. If you have to really create a greater awareness of data, that means you're creating accessibility of data not just for enterprises but also for consumers. But let's start with enterprises.
+
+Arguably, in any business or enterprise, there is more of a non technical audience than a technical audience. When I say technical, I'm talking about the code writing audience.
+
+Ben: So many non technical people have forced themselves to learn SQL over the last decade, but there are still 10 times more people who haven't and have questions about the data that the enterprise has that would enable them to actually do their jobs better.
+
+Kamakshi: Exactly. They're analytical, meaning they understand data and understand correlations, causations, and value of data and understand models better, but they are probably not well-equipped to be able to write code themselves. That's where having this natural language interface that is able to query model data.
+
+The heavy lift that is necessary for us to be able to do is basically translate that natural language and learn under a language of APIs that is built on the secure airspace across the clouds. That (I think) is such a transformative opportunity of how we can take this even beyond just the promise of secure data collaboration, agnostic of clouds. It's about how we make it then super accessible to anybody in the business.
+
+David: Kamakshi, you're at the beginning journey of the company here. How are you thinking about the go-to market in these early days? Obviously, if you are successful at what you're setting out to do, Samooha will be a giant, broad horizontal platform used by every industry just like Snowflake is.
+
+Anybody listening who thinks that what we're talking about could be helpful for your enterprise get in touch with Samooha, but do you start with a particular vertical in terms of go-to market, a particular use case? How do you think about it?
+
+Kamakshi: The way we are coming to market is trying to verticalize this so that we are able to create more easy adoption. We could offer horizontal abstractions and these templates that I talked about, these query templates that allow you to query the shared data, the multi-collaborator shared data, multi-party shared data. We could stop at a certain point and allow for further customization by the said business and/or customers themselves. What we are doing instead is we are actually verticalizing it and going deeper so that we are able to solve for end use cases.
+
+What we offer in the product is whether it is an audience overlap use case between a large publisher media house, Roku and NBC Universal. Think of these large media houses and brands that buy inventory and try to understand audience behavior on these media houses. There's this proverbial question of, how do I model the audience that I want to reach?
+
+That end use case is built and delivered all the way through within this application with a bunch of enablement points across third-party platforms that are audience management platforms, content management platforms, media actuation platforms, et cetera, who act on the secure insights that are captured within the cleanroom application. We actually build this far out.
+
+Similarly, in the healthcare and financial services use case as well, we are building the cycle detection for an anti-money laundering use case when there are multiple parties bringing in data that are all encrypted.
+
+We are verticalizing the use cases across industries and developing end applications. Obviously, it is a pretty high bar for us to be able to do this as a multi-industry category and develop multiple applications at any given time. We are bringing this industry category one at a time. Today, that is a bigger pull towards the advertising media market use cases.
+
+David: Every industry does need this and we'll need this more of a time, but that's where there's a real hair on fire problem right now with what's going on with Apple, Facebook, GDPR, et cetera.
+
+Kamakshi: Correct. That establishes reference customers for us. We are able to then apply that and carry forward.
+
+It is basically one vertical at a time in terms of how we are able to perfect the art of the application or template that is all the way through, that is not simply horizontal, where there's a fair amount of lift that our customer will have to do at their end.
+
+The reason we are able to still even contemplate this is because we partner with Snowflake to be able to bring this to market because it is distributed in the Snowflake marketplace. The Snowflake sales team is able to bring us in appropriate conversations, where the ecosystem of 6000–7000 Snowflake customers have raised their hand and expressed a need for a solution, not a problem, a product, or a service like this.
+
+That's where Snowflake reminds me of Facebook or Salesforce, a decade plus or so back when there was an entire ecosystem being developed around them. The birth of Zynga for Facebook or Viva for Salesforce was true than (I think) fast forward time to today, there's Snowflake. There will either be a bunch of successful large scale vertical applications that are built out of Snowflake or developers who will build successful horizontal applications as well. I think that's where the dynamic, but Snowflake is an interesting one that is playing out at this time.
+
+David: It's super cool how aligned you are with them. Snowflake is now at the point where they are becoming that level of platform, but they're just at the beginning and they're deeply aligned with you and helping you. This is the core of your initial go-to market for this. I love it.
+
+Kamakshi: Maybe one other point there is, I think this is less about us with only Snowflake and Snowflake only with us. It's an example of if you leverage the data cloud and have an appropriate application, Snowflake is a great partner, not just for us, but for any other startup that is able to build itself successfully around it.
+
+Similarly for us, if we are able to prove this on Snowflake to be able to prove this across the hyperscalers and extend the learnings both from a product and go-to market perspective, that's true for us, too. While building successful companies, Samooha has just one example on Snowflake, Snowflake is also just one example for us to be able to do this from a cloud ecosystem perspective.
+
+Ben: Kamakshi, as we drift toward the end here, I do want to bring back one thing you brought up earlier and scratch it out a little bit deeper. Because the fixed costs of doing a startup are so high and you've already had some success, some very nice successes, did it change the required outcome or the outcome that is interesting enough to justify the super high fixed costs to you? And do you feel like you had to do something even more ambitious in order to justify that, would you say, 30 billion of fixed costs?
+
+Kamakshi: I think it's a great question because it's at the heart of the questions I ask myself. What would it take for me to go ahead and incur the fixed cost again? Very broadly, I think there is a desire for a higher impact radius and maybe put in management consulting parlance, that proverbial two by two grid.
+
+David: I always love a good two by two grid. People knock it, but it is a great way to make decisions.
+
+Kamakshi: It's a good framework. I think it simplifies things for some of us folks easier. If you think about an impact from a problem space perspective and us going to one axis and the other axis is the size of the problem that you're solving for, it is still very early days in terms of how we are thinking about this.
+
+But if we navigate this right to be able to offer a first class service that makes it easy for any business to share data in a compliant fashion within its enterprise and/or across its partner ecosystem, collaboration tools, data communication, and productivity Samooha does to data collaboration, it's as easy. You get into a business, you get your badge, you get your laptop, you get a bunch of enterprise applications.
+
+A bunch of shared data resources come in appropriately permission for you. Behind the scenes, there is a highly complex and/or secure layer that permissions this data, enables you to be able to run analytics, workloads, et cetera. You don't have to be a technical person. You are an analytical person to the points that we have discussed. This makes it super easy for you to be able to get insights out of your enterprise data.
+
+Enterprise data, I think you would agree with me, is highly valued but highly underutilized as well. I think if we are able to generalize, bring that intuitive product experience, and also verticalize it and solve for bespoke use cases that are industry-specific, I think the opportunity size for this problem is large. That's the value and impact axes.
+
+If this makes healthcare better because bias and clinical trials can be solved for better, because you're able to have easier data collaboration without onerous legalese that preclude either parties from going through what needs to be done, from an impact perspective, it feels like there are industries and use cases where this has a high impact. That got me over the hump to say that, look, it's worth going through this experiment.
+
+Every founder accompanies an experiment at this early stage. I say this with respect to the audience that you have. No LPs and investors like to hear the word experiment, but it is an experimental. The escape velocity has been proven. I got the conviction around that two by two axis. If we navigate this, design this experiment, continue to iterate the right way, and most importantly, iterate fast enough, then we probably have the top right quadrant of high value and high impact.
+
+David: Again, like you say, this is an experiment. It might not work. But it is pretty rare that you can identify as clearly as you have and certainly, it seems to me, the opportunity for a broad horizontal industry in the way that Snowflake did in data warehouses and the way that the hyperscalers originally did in the cloud. It's just not that often that you see a white space like this.
+
+Kamakshi: True. For me, I phrased it as arbitraging. I hope I got my point across. I think it's time until which the hyperscalers identify this to become an important-enough problem, a large-enough problem, and a persistent-enough problem where they are not able to ignore it any longer from their customers.
+
+I think it's basically arbitraging at that moment of time. That's the time that we are arbitraging to be able to get ahead in the innovation curve. At such time, we hope to be able to partner with the hyperscalers to bring the solution exactly at scale within their ecosystems.
+
+Of course, we are building across their ecosystems on top of their environments, on top of their stacks. I think there is certainly a whitespace, but that whitespace exists because (as I said) I think this is somewhere a prerogative, but not a priority yet at the highest level. That's why it gets sold ineffectively across the big cloud environments, although this is really interesting.
+
+Over the course of the last 6–7 months since we've been at this, probably every instance of the large investment banks having their forums where the big cloud CEOs consistently talk about data sharing and collaboration. This arbitrage opportunity probably doesn't exist for too long. That's when it is important for us to be very innovative and establish the proof points at scale in this time that we have.
+
+Also along the way, we are partnering with the hyperscalers themselves to be able to do this. It's not simply an arbitrage opportunity. I hope I do not minimize in phrasing it as such. I just phrase it to make sure that we are capitalizing the whitespace in time dimension.
+
+Ben: There's an area under the curve thing here. I don't know what the Y-axis is, but the X-axis is definitely time. There's the window between when you started approximately a year ago and when everyone else wakes up to what a big problem this is. You have to speed-run the market in between these two edges of the X-axis.
+
+Kamakshi: I like to quote my previous boss, Kevin Scott. I'll paraphrase it, not quote him. I think the right time from a compelling product is when you're a little ahead of market primeness. As the demand grows, as there is a greater need for this, you're riding the wave, and you're not starting then. I think it's a phrasing around timing the market for opportunities like this. I hope that that dynamic is somewhere true for us. We'll see. At least that's what we're trying to prove at this time.
+
+Ben: Kamakshi, I think that's a great place to leave it. We will definitely link in the show notes to where listeners can check out the video that you mentioned earlier that helps articulate the product implementation a little bit more. Where else would you direct listeners around the web to follow you, Samooha, or anything else?
+
+Kamakshi: I'm certainly active on Twitter. We certainly want to be thought leaders. Certainly, it's about Samooha and what we're doing at this point. We are early in the journey that there's a lot that we say through our product and our company. I think the space is so nascent. Ss David said, there is enough whitespace in this opportunity that we want to lead through thought leadership as well and the most distributed medium, whether it's on Twitter, on the social side, or blogs.
+
+We intend to publish actively from a blog that we host on samooha.tech, our domain. We want to be very technical about this problem so we are able to demonstrate, again, going back with provable mathematical guarantees that security indeed implies this definable, quantifiable degree of security of the underlying data.
+
+Our perspective is while we remain true to our grain of being able to be mathematical about the truth of what we are offering, the product truth of what we are offering, but also educating businesses who probably have some degree of appreciation for the engineering and math behind the problem, but in actuality, they have a product need for this or they have a use case to solve for, so trying to bridge between the two.
+
+I think between social, our blog destination for the more deep dive of content, and then we hope to be able to be back at the appropriate times in forums such as this and others as well, where certainly, my co-founder (Abhishek) also talks about how we continue to innovate and develop from a product perspective.
+
+I'd love to continue to talk about how we are navigating the journey from where we are today across the hyperscalers themselves. There are lots of learnings that we are going to get from the market in terms of, someone told me this, I'm really keen to learn this, I have some initial observations.
+
+Building any business, you're selling to customers. It's hard enough. What Samooha is doing is not selling to one customer, but we're selling to multiple customers because it's a collaboration problem. By definition, there are multiple parties involved. I was asking myself, is this a polynomial complexity or an exponential complexity given on how many customers are we selling to?
+
+I think this is where some of the partnership dynamic that we have chosen for the stage. We hope that this extends beyond today. I think the partnership with Snowflake, selling into that ecosystem, being able to validate the proof points of collaboration interest, this polynomial complexity, it's at least polynomial complexity, you're selling to at least multiple parties, that is eased because the captive, qualified customers are brought to bear by our partner in question, AKA Snowflake.
+
+Similarly, I think this is something that hopefully will help us develop the right recipe when we are launching this across hyperscalers as well. From here and now, how we continue to talk about this, educate the market around our learnings, learn from the market, especially this dynamic of what the goal market of this looks like when you're selling to multiple entities at any given time, I think that's going to be very educational for us. The learnings from a partnership perspective, how we do it with Snowflake today and with others tomorrow, is also going to be something that we would love to share.
+
+David: We would love to have you back to talk about the next chapter as you continue to evolve and do that.
+
+Kamakshi: For sure. I think my promise to myself is that as founders, there are lots of forums where we all can learn from the other founders, but I think successes are talked about more than mistakes or failures. I think this is going to be an interesting exercise. There are going to be mistakes that we make along the way, that is taxes, death, mistakes, and founders [01:26:30] out of certainty.
+
+I want to be able to when I come back, whether it's this forum or elsewhere, generally talk about the learnings of how it is that you solve for complex go-to market questions like what we are facing when we have to bring multiple parties to bear at any given time.
+
+Ben: I want to start a new podcast called death, taxes, and founder mistakes.
+
+Kamakshi: I do feel very strongly that these are three certainties, equally. Exactly.
+
+Ben: I love it. Kamakshi, thank you so much. Last quick question for you. Who should reach out if someone listens to this and they're thinking, oh, I might want to work at Samooha, it sounds really interesting, or I might want to be a customer? What do those sorts of people look like?
+
+Kamakshi: Of course, work at Samooha. We'd love to talk to talented, curious people who we aligned with culturally in spirit and in action. Please do reach out to us if you're interested in learning more about how we build stuff and how we are not just building stuff from a product perspective, but building the company as well.
+
+David: Are you remote? Is the company located in the Bay Area?
+
+Kamakshi: We are fully remote. We have a center of mass in terms of employees who live in the Bay Area, but we are fully remote. I would just say to your listeners who are listening that the best way to learn about building companies is to be a part of an early founding team. There is a dynamic of being able to learn on someone's back or along with someone rather than feeling solitary and more punitive. It's a great exercise and something for you to consider. If you're interested, we'd love to talk to you.
+
+In so far as customers are concerned, of course, that's obviously going to be number one for us. If you're a CDO, if you're a CISO, if you're a CMO, if you're a chief product officer across innovative healthcare companies, innovative pharma life sciences companies, innovative fintech companies, innovative marketing tech companies, innovative D2C retail companies, all of you are dealing with problems.
+
+In fact, horizontally speaking, no matter which business you are in a CISO office, if this message around, hey, look, any employee of mine gets onboarded, here's a badge, here's a laptop, here's a set of enterprise tools, and here's how they get access to enterprise data, if you see a wall as the CISO where this is true, we'd love to hear from you on your perspectives. We'd love to talk to you about how we are solving the problem. If our product fits your needs as you see it today and evolve, we would certainly love to talk to you about that.
+
+Ben: Awesome. Kamakshi, thank you so much.
+
+Kamakshi: Thank you very much. It was such a pleasure, Ben and David. Really, this was one of the highs of my entrepreneur journey. Hopefully, there'll be many more of being able to talk to the two, which is Ben and David.
+
+David: I think we will have many more opportunities.
+
+Ben: I agree. Listeners, we'll see you next time.
+
+Kamakshi: All right. Thank you.
+
+‍

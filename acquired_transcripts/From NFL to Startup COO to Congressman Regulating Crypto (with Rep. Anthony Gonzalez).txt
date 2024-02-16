@@ -1,0 +1,923 @@
+Ben: Welcome to this special episode of Acquired, the podcast about great technology companies and the stories and playbooks behind them. I'm Ben Gilbert, and I am the co-founder and managing director of Seattle-based Pioneer Square Labs and our venture fund, PSL Ventures.
+
+David: I'm David Rosenthal and I am an angel investor based in San Francisco.
+
+Ben: And we are your hosts. Today, we have a first ever for Acquired. Our guest is a United States Congressman serving from my home state of Ohio, Representative Anthony Gonzalez. David, Anthony has an incredible story.
+
+David: An incredible story. The original motivation was Anthony is on the House Financial Services Committee and is probably one of (if not) the foremost member of Congress working on understanding and regulating Web3, crypto, everything that's happening, and beyond that too—the broader economy, the Fed, GameStop, Robin Hood. We get into all of it.
+
+Ben: Yes, the House of Financial Services Committee had a broad mandate well before crypto came around.
+
+David: Anthony is one of the handful of folks, as we talk about, that really actually use and understand this stuff in Congress.
+
+Ben: And not just because he's actually played around with it himself, but he ran a venture-backed startup before serving in Congress. He went to Stanford GSB for grad school with David.
+
+David: That's where Anthony and I first intersected and that's what we talk about all through this episode. His story is just incredible. His family immigrated from Cuba after the revolution. His dad was a steel entrepreneur in Cleveland and Anthony ended up playing football at Ohio State.
+
+Ben: I remember in high school watching him on TV.
+
+David: He went to the NFL, he played for the Colts, he caught touchdowns from Peyton Manning, went to business school, and now is a US Congressman. It's just incredible.
+
+Ben: Excited to get into it. Listeners, if you want to discuss this episode after we wrap up here, join us in the Acquired Slack at acquired.fm/slack.
+
+Now, we are very excited to welcome back to Acquired our presenting sponsor, Vanta, the leader in automated security and compliance. We are huge fans of Vanta and their approach to the whole compliance process, SOC 2, HIPAA, GDPR and more. We've got CEO and co-founder Christina Cacioppo back with us today.
+
+David: Christina, a lot has happened since we last recorded, right?
+
+Christina: A lot has. Thank you so much for having me back.
+
+David: One of the biggest things is you have raised probably the best round of 2022 so far—a $110 million series B at a $1.6 billion valuation from Craft, Sequoia and a whole host of other great folks, including Ben and myself. Tell us about what raising this round in this environment was like.
+
+Christina: This round was raised at the end of April 2022, which was different from the last round, which was raised in (call it) January 2021. To go back a little bit to April, ice was definitely melting. People were starting to get real skittish and you would see that because all of the questions were around the efficiency of growth, so it was very clear the bar changed.
+
+If you had to pick one metric for this round, it was burned multiple. For every dollar of revenue you earn, what did you spend to get that dollar? I think in 2021, it was all just revenue growth. It was like what does that compounded growth rate go? I think actually those two metrics sort of speak to just what a different funding environment it was, what differences there were in diligence agents, what investors really wanted to see, and what they would kind of stomach and not stomach.
+
+David: Obviously you navigated that incredibly well. What about how you had set up the company—going back to the very beginning—kind of allowed you to be so successful in both of these two very different environments?
+
+Christina: We got to basically $10 million of revenue on a couple of million dollars seed round, and that was by sort of just doing the basics well—charging annual contracts, doing so upfront, having something people wanted and we're willing to pay for annually upfront. I think that installed a lot of discipline early on to say, actually I still get the cash balance in my inbox every single Monday. You see the impact of your decisions on a weekly basis.
+
+Having worked in VCs, your actual best bet for getting venture funding is to have a business that doesn't need venture funding. It's sort of that playbook and then realizing we could pull it off, and then honestly a little bit of like I wonder how long we can push this. Can we get to $2 million in revenue? What about $5? $10?
+
+That kind of DNA was set really early on and culture too, and then [...] the adjustment for us more with 2021 when it was like okay, it does not matter. Spend market share, revenue growth, go. So we did. Kind of like everyone else step up and change pretty quickly. I think that actually helped us kind of shift again in 2022. For us, it's like shifting back the motion we knew, whereas I don't know if that was particularly true across the board.
+
+David: Obviously one of the great benefits of now having raised this round in 2022 is you are now a highly resilient company and of course the DNA that you've had all along. How has that shown up so far this year in your interactions with customers?
+
+Christina: Because we serve other technology companies and often high-growth companies, they're facing the same stuff, they're playing the same game on the field. They can sort of appreciate it and they're like oh, you guys will be around for a while and not just kind of the business continuity thing, but given what you've raised, you're able to make decisions for the long term.
+
+It's funny, I think it's just because the customers are from the same milieu as we are, they get it, and they appreciate it. We often don't even need to say it. They'll say it to us.
+
+David: Our thanks to Vanta, the leader in automated security compliance software. If you're looking to join Vanta's 3000+ customers to get compliance certified in weeks instead of months and build deeper trusted relationships with your customers and partners. You can click the link in the show notes or go to vanta.com/acquired to get a 10% discount.
+
+Ben: Now on to our interview with Congressman Anthony Gonzalez. Remember, this show is not investment advice. David, myself, and any guests may have investments in the companies we discuss, and this show is for informational, entertainment purposes.
+
+David: Anthony, welcome to Acquired. This is pretty surreal given that we were classmates just a few years ago and now here we are again, reunited on the podcast.
+
+Anthony: Surreal for that reason. Surreal because I've heard you make that intro before, but never for me because I listen to the show. It is an honor to be here, and thank you for having me.
+
+Ben: When you say here, where is here right now for you? Because it looks like a very official setting behind you.
+
+Anthony: So it is. I'm currently in my congressional office in Washington. I'm not sure when the episode will air, but we just had a series of votes and we're done for the week. I got a couple of hours, and before I head out, figured we'd jump on and have a little chat.
+
+Ben: That's great, and where is the Congressional Office building-wise?
+
+Anthony: It's basically across the street from the Capitol Building. My son, when he comes to work, says that's the dome where Daddy works. Just across the street on one side of the street or the house office buildings and then on the other side of the street of the Senate office buildings. Theirs, of course, are much nicer and much bigger, but ours aren't bad either.
+
+David: You guys do the real work.
+
+Anthony: We like to think so. They treat us like little children, like, oh, that's a cute little House member. The Senate is going to really solve this problem. I'm not sure that the country would agree with it. I don't think the country thinks either of us solve many problems, but that tends to be the dynamic around here.
+
+David: We'll get into all that. Speaking of problems—things that you are highly involved in that are relevant to all Acquired listeners—you're on three committees in Congress. The House Financial Services Committee, which oversees all financial services in the country, and in particular, you're very involved with crypto, Web3, all of that regulation, the SPF testimony, all of that fun stuff. You're also on the Science, Space, and Technology Committee, which oversees NASA, among many other things. And the Climate Committee. We're going to touch on all three of those here.
+
+Anthony: Great. All fun committees. One of the fun things about being a House member is it's sort of a choose your own adventure where you can pick whatever you want to work on and what you think is interesting and relevant to your district. I found myself on three great committees that certainly will be relevant in the near and long term. It's been an interesting few years, to say the least.
+
+Ben: Well, because you teased it of things that are interesting to you and relevant to your district, let's take that threat and extrapolate on it. How did those things become interesting to you? And let's start all the way with sort of your family story and dating back to Cuba.
+
+Anthony: I'm the son of Cuban immigrants. My father immigrated here from Cuba. My mother was born and raised in Cincinnati, and her family. Our sort of path to Ohio is interesting in a sense. My Cuban grandparents were honeymooning and trying to go from basically New York City to Miami, they were driving. The legend is that they ran out of money in Ohio and so they had to stop for a little bit, figure out how to get home and finish out their trip. So they made some friends, made a little money, and then came back to Cuba.
+
+I never thought they'd come back. My grandfather always wanted to have some sort of an American experience because he always admired the US, particularly our democracy. Even Pre-Castro, it wasn't a beacon of democracy and freedom. It's known primarily for corruption.
+
+David: Both Ben and I just rewatched The Godfather movies and I forgot the Godfather Part Two happened right before the revolution.
+
+Anthony: Totally. There's a book called Havana Nocturne, which is a really interesting and sort of graphic description of how the mob, Frank Sinatra, and all those folks spent a lot of time down in Cuba. Anyway, once Castro took over, my family was driven into exile.
+
+My grandfather was part of a pro-democracy movement. There were sort of a handful of movements, disparate movements, but he was part of a pro-democracy movement. Once Castro took over, he—not directly but through one of his lieutenants—offered my grandfather a position to run one of the courts. It's basically like a district court in Cuba.
+
+My grandfather turned him down because he kind of saw Castro for who he was, and that was the end. I mean, you don't turn Castro down back then. Anybody who did was getting killed or put in prison. They went into exile and basically kind of hit out in the jungles and around Havana until they got their visa processed.
+
+Ultimately, once the visas came through, flew here to the US—did that legally, obviously—came to Miami for a couple of days and then called the old school back that my grandfather worked at. This was in Cincinnati. He said, hey, can we have our jobs back? They said sure, come on up.
+
+They got a small little house in a neighborhood called Sayler Park, which is a working class, primarily minority neighborhood at the time. That's where my father was raised. That's where he met my mother. They went to brother and sister schools—Catholic schools in Cincinnati—and got married. My father went to Michigan.
+
+David: Oh, wow. I didn't know that part of your history.
+
+Anthony: That was more contentious than I would have thought. When I was getting recruited, it was interesting because I ended up playing at Ohio State. He played at Michigan, so he went to Michigan, but he played for Bo Schembechler.
+
+Ben: Whoa, not too many father and son combos in that club.
+
+Anthony: No, a small handful, but he was great once I told him where I wanted to go. Luckily, he knew Coach Russell. We lived there, and he started a steel company maybe the year before I was born that he runs to this day. That's kind of what I grew up in.
+
+I grew up in Northeast Ohio, which is the place I feel most comfortable in the world. That's kind of where my people are, if you will. Did a lot of sports and hung out at the office with him. Like most founders, he was working 12-14 hours a day so if you wanted to see dad a lot, you had to go into the office.
+
+I'd see him in the mornings. I woke up early. He woke up early. Otherwise you see him in the office. It's a hard-working, sort of hard scrabble kind of community that we take a lot of pride in and that I'm honored to represent to this day.
+
+Ben: Listeners, as everyone knows, I grew up in the Cleveland Akron area in Northeast Ohio, too, and my Uncle David is very involved in the city with the Greater Cleveland Sports Commission and the Convention of Visitors Bureau. The way that they sort of described the area is sophisticated grit.
+
+Anthony: Now that you've said that, I know exactly who you're talking about. It's so funny. I never put it together that Ben Gilbert and David Gilbert might be related.
+
+Ben: In the sort of circle of Cleveland area folks, you're not going to be more than a connection or two away.
+
+Anthony: Yeah, no, for sure. Part of what I love about it is you feel like you kind of know everybody and if you're from there, it can be great. I've just been really proud of being from Northeast Ohio and it's sort of who I am culturally and the things I'm interested in and whatnot.
+
+That's how I've always been and part of what has been so fun about Congress is you get to represent a community that you love and that you're from and that from my perspective, welcome to my family because we aren't from here. My father is not from this country, my mother's not from Cleveland. It’s a big move for them and ultimately we've made it home and it's been incredible for all of us.
+
+Ben: Anthony, we are talking about you being the son of Cuban immigrants and the sort of unorthodox path to being a member of Congress. You had an even more unorthodox stop along the way playing D1 college football and then playing in the NFL. How did that transpire?
+
+Anthony: I always say when I look at my own background, I didn’t know this makes any sense, certainly not linear. Growing up, I loved football. My father played football. He played at Michigan. I was actually a Michigan fan growing up until we went on a recruiting visit. Lloyd Carr was the head coach at the time and thought I was a kicker. I was not a kicker.
+
+David: Your dad must have been pissed about that.
+
+Anthony: I was a wide receiver. He wasn't with me, my mom was. Now that I have kids, I can understand how heartbreaking that must have been. I grew up a huge Michigan fan and my dream would have been to go there. I go with my mother, we make the drive up from Cleveland. It's not far; 2½ hours. I've been there for games before and be like oh, my gosh, this is it. I get to finally maybe be a part of this if they'll have me, and just completely ignored.
+
+They paid attention to and really focused on four people from Cleveland in particular, who I knew, who I just played against at my position and I'm like you all didn't watch the game clearly. If you did, you maybe would at least say hello. We were like, an hour-and-a-half in and I turned to my mom and I was like, I think I'm ready to go. I was 16 at the time. She was like okay.
+
+David: That must have been heartbreaking.
+
+Anthony: Yeah, again, now that I'm a parent, I'm like, oh, my gosh, how does she not burst into tears? I'd be mortified just for my kid. The next week was Ohio State, it's the same thing. There were these things called junior days. This was before recruiting got crazy.
+
+I went to Ohio State and it could not have been more different. We walked in, Coach Tressel grabbed us the second we got in, pulled us into his office. We had a private meeting. He kind of went through—this is only a second year on staff—his priorities for the program, how he saw it, how he could see me fitting into it, all those sorts of things, exactly what you would do if you're trying to sell somebody. I walked out and I said, that felt a little bit better. I was an impressionable 16 year old. We'll consider it.
+
+Ben: I know this is a tech and business podcast, but you got to make it about the glory of Ohio State football for a minute here. I think what you're explaining is a microcosm that really outlines why the next decade-plus went the way that it did.
+
+Anthony: I think that's probably right. Tressel lost, I think, once to Michigan in his second year and then never again. They haven't won much until last year. If we want to look at causes, I think Coach Tressel is definitely on the short list of reasons why the tide turned on that rivalry.
+
+I got home from that junior day and my dad, I wasn't sure how to tell him because he went to Michigan. I just kind of played it cool. I was like okay, it was nice. It was fun, but they hadn't offered me a scholarship yet. A couple of weeks later, there was this banquet in Massillon, Ohio, a big football town.
+
+Ben: Right near the Football Hall of Fame.
+
+Anthony: Yeah, right down the street from the Football Hall of Fame and we had played Massillon. They do a dinner every year where they have a keynote speaker and they invite the MVP from the opposing team for each game. I was the invitee from our team. Before I go, my dad says, well, this is easy, son. If he offers you a scholarship, you just say, thanks, but no thanks. We're going to Michigan and that's that. I'm like, okay, but I knew how I was feeling inside.
+
+I get there, I go see Coach Tressel and he was the keynote, and he comes up and he says, Anthony we're going to offer you a scholarship. I said I'd be honored to play for you, Coach. Whoops. I botched the line.
+
+David: Were you planning on saying that or was it spur of the moment?
+
+Anthony: No, I was actually planning to do what my dad said and maybe see if Michigan came around, but I rushed back before the dinner and was like, I really do need to think about it, but that is a generous offer, and I loved my time at Ohio State, so we'll see. Then eventually, obviously, I went.
+
+My grandfather was an attorney, as I mentioned, and so was his wife, my Abuela, and I was as close to them as anybody I've ever been close to in my life, especially my grandmother. She lived with us after he passed away and she and I spoke daily until the day she died. He always said, if you want to be an attorney, you should major in philosophy and English.
+
+I thought I wanted to be an attorney and I felt like English would be a little boring, but I really liked philosophy. So I took a couple of classes and loved it. My plan was I'm going to major in that, play the NFL great, but then I'll go to law school.
+
+I didn't change my mind until business school and until I got to the NFL in my third year. I was hurt my entire third year. Fast forward, I got drafted in the first round, played two years, it was fine. I wasn't an MVP or anything, but played well, and was slated to take over for Marvin Harrison, who's a Hall of Fame wide receiver.
+
+David: In playing for the Colts, catching passes from Peyton Manning.
+
+Anthony: Yeah. I would say if Payton Manning is your quarterback and you can stay on the field for 16 games, you're probably going to have a good year. Unfortunately, I got hurt in the first game and just never came back, and really never came back, period. I just kept getting hurt. I never got hurt my entire life and then the third year in the NFL, I got hurt, and I got hurt every time I stepped on the football field thereafter, pretty much.
+
+Between my third and fourth years, HBS did a little business program that they use the case method on and sort of be a business school student for one week. After the first day, I remember I called my mom and I was like I know exactly what I'm going to do when I'm done with this game. I'm going to go to business school.
+
+At that point, I started studying for the GMAT—I hadn't taken a math class in a decade—took the test later that year, put it to bed until my career ended. When it was pretty obvious that was going to happen, I finally applied to Stanford. I did it, actually, from the locker room of my final preseason game which is sort of weird. I went out for the game and I felt like I just knew my body wasn't right. I was like I don't think I'm going to play much longer.
+
+Ben: You went back to the locker room and you started typing up an answer to what matters to you most and why?
+
+Anthony: Exactly. I'm going to need an hour-and-a-half here, folks. I'm not playing. I'm just going to hang out and write this essay.
+
+David: You were with the Patriots at that point, right?
+
+Anthony: No, I was with the Colts. I had the application finished, but I wasn't sure I was going to submit it. But it was right before the deadline for the first round. Anyway, I submitted it and got in, and I still wasn't sure so I signed with the Patriots. I went to New England and was hurt again. I think I had three surgeries in six weeks when I was there.
+
+Bill Belichick actually was the one who unceremoniously fired me. He called me in and he said I like you, but you're hurt, and I can't have hurt people. I was like that makes sense. He said, if you get healthy, have your agent call me. We would like to have you.
+
+I was actually smiling when he was saying this. He's like, you're smiling? That doesn't normally happen. I said well, I think I'm going to retire and go to business school. He said where are you going? I said I'm going to go to Stanford. He goes it's a good school, good luck. He was the first person I told. Then I didn't tell anybody for three weeks, so I still wasn't sure. Eventually I got around to it and as good a decision as I possibly could have made, that's for sure.
+
+Ben: At this point in your life, did you have public office in mind or were you thinking, I'll also go to law school and be a lawyer?
+
+Anthony: My aspirations in college, if you were to ask Troy Smith, who was our Heisman Trophy winning quarterback, who had the locker next to me—he was number 10, I was number 11; one of my best friends—what I'm going to do, he would say, oh, he's going to be Mayor of Cleveland because we used to talk about that. I wanted to be mayor of Cleveland. That would be the coolest job in the whole world, would be mayor of Cleveland.
+
+I've always sort of had this thought in my head of public service. Admittedly, as life moved on, I thought I would do it after my NFL career or after a long business career. I went to NFL, went to GSB, I was running a tech company before I got into Congress. My thought was play that out for a long time, run that out, have a family, make some decent money, take care of them, and then once the kids are grown, then go into public service. That was sort of my plan.
+
+What upended that was honestly, the 2016 election. It was probably the biggest thing that upended that. I saw a situation where I just stopped recognizing politics in our country. It just didn't make any sense to me anymore. It seemed to me like we were headed down a pretty dangerous path, politically, so I really started thinking about, okay, what's the best way that I can be of use to the country in a moment like this?
+
+Ultimately came to the conclusion that I should just run for Congress, which is sort of a weird realization. But I thought if I did the right things and that I could probably win, I felt the urgency from the standpoint of the country.
+
+After a lot of back-and-forth with my wife, because this wasn't our plan when we got married at all, was hey, look. Let's really talk about this and see if it's for us and if it's something that we should pursue. Again, I don't know that we were 100% this is definitely the right thing for us, but we did feel the urgency that the country was in a spot and my community was in a spot where going into service seemed like the right thing to do. So we jumped in.
+
+Ben: Lots of people around that time were feeling like gosh, the direction things are headed might be dangerous—polarization, the sort of lack of respect for institutions that we hold sacred, the seeming shift away from democracy is the most important thing, to my own power is the most important thing. Most people probably couldn't say, you know what I think I should do? I should run for office and then most people who do say that don't have a prayer.
+
+What were some of the things that set you apart? When you started being like okay, I met with this person and that went well and I think I can start to build a coalition in the Republican Party this way here locally. How did that transpire?
+
+David: Also we should probably say to most people who are thinking that we're not Republicans at that point in time.
+
+Anthony: I came to a sort of interesting conclusion on that, but in terms of how you get started. I had never done anything like this. I have been running a startup in San Francisco that are good friends at IGSP who David knows and would love to have on the show at some point if you can beg them on.
+
+Ben: The highly secretive Investment Group of Santa Barbara.
+
+David: We've been begging for years now. We're making a public appeal here. Come on, guys.
+
+Anthony: Yeah, I know. Come on, Reece, Tim, and Alex, get on here. I was working with them and running a startup there and they're an investor in. I knew the startup game and I have kind of been in that world, so I felt like this is somewhat like a startup. I've never run for anything and I don't know how politics works, but I'll try to figure it out.
+
+I honestly use a lot of the principles that I learned from them in terms of how to company build, around how to build a campaign, and how to build an apparatus around it. It started with doing a bunch of what I would call customer interviews. I probably had 15–20 conversations before I decided to run with people in and around politics in my district just to understand what are the motivations, what do people care about? All those things I thought I knew but you have to test those hypotheses, and then to figure out whether my message would work.
+
+I went through that process and ultimately thought I understood my district in a very powerful way, and I thought I could craft a message that would work, but that's not enough either. You can have the best message in the world, but if you have no team and no ability to get it out, you're not going to go anywhere.
+
+David: What was the message that you landed on that you thought would work?
+
+Anthony: Well, mine was primarily to focus on economic issues. I think the takeaway that you saw nationally from the 2016 election was oh, my gosh, the country is embracing this terrible politics, this attitude, the nastiness, the vitriol, the anger, and the division. That's what people want right now. My view was that, at least what happened in northeast Ohio was fundamentally an economic story. I knew that story very, very well because my father has been building a steel company in Northeast Ohio for my entire life.
+
+I know that when he started it, there were something like five or six car manufacturing plants within 90 miles. And now there's one. I know where they all went, I know what happened to those jobs, and I know how the people feel about it.
+
+Ben: I remember the day LTV Steel shut down that factory.
+
+Anthony: Absolutely. Quick story on LTV. LTV Steel had this massive factory just south of the city. Massive.
+
+Ben: Right off the highway, it was big. You drive by, it has a presence.
+
+Anthony: Yeah, you can't miss it. It's just part of the city. My dad always used to say when we were little, he would point at the smokestacks and say as long as there's smoke coming out of there, everything's going to be okay in Northeast Ohio. Just don't worry about it because that means people are working.
+
+I think at the time it was like 20,000 people working there. It's not precisely correct, but directionally correct. Things changed hands multiple times, gone through multiple bankruptcies. I think it's fewer than 500 people working there today. That kind of transformation is what I felt the real takeaway of 2016 was and I wasn't seeing enough understanding of that or nuance on that.
+
+I ran on primarily an economic message and a unity message—in 2018, which is when I ran—around, hey, look, we've got to work together. We're from Northeast Ohio. We should know that the way you solve problems is together. We're actually like a purple part of the state, typically, so let's put all this chaos aside, let's start working together, and let's start building our economy in a way that works for all of us. That was essentially my message. Obviously there was sort of nuance in there and specifics, but that worked.
+
+The second part of it—so you get that message—the advice I was getting from people who've been in politics forever was you have to do two things. You have to build a great team and you have to raise money. If you can do those two things, you can probably have some success.
+
+I said I've run sales teams before and I know how to manage revenue. It's not rocket science, and I think I can build teams. My current chief of staff was campaign manager at the time. I went and found him. We sat at a bar together for about 3½ hours until I got him to say yes. I just want to warm him down, but he still hasn't left, so I think he's somewhat happy.
+
+My message then was, looks like I view this as a partnership. Sure, my name will be the one on the door, but we're partners in this, and that means a lot of things to me. We've had a good run together and a lot of fun. Like I said, on the revenue side, I built a custom salesforce dashboard, which I don't think is common for congressional members.
+
+Ben: And probably not the candidates themselves doing that.
+
+Anthony: Yeah. I like Salesforce and I used it in my previous company. I built a little dashboard and had the contacts loaded in and tracked it the same way I tracked sales and ultimately hit the fundraising targets. We built a team and then you just work like mad. I mean, you're just everywhere. You don't stop until you win and that was that.
+
+David: What was the budget for that first campaign?
+
+Anthony: I was told I needed $2 million for the primary, and that's a lot. I was told I needed $2 million, and I was told I needed to make a big splash in the first month. I think we ended up raising roughly $600,000 in the first month, which was good. You can only raise it in $2700 chunks.
+
+Ben: Two million is a lot when you have to add a lot of little numbers together, but it's not very much when you could just find a billionaire and be like here, just fund the whole thing.
+
+Anthony: Yeah, but for a whole host of reasons, we've decided that that's probably not the best way to run our country. We've spent seven episodes on campaign finance but the goal there is, let's not let all the rich folks band together and buy elections essentially. You got to build support at a grassroots level and ultimately, like I said, we're able to do it. Ton of work, but unbelievably rewarding. From a professional standpoint, it's probably as much fun as I've ever had, to be honest.
+
+David: I would assume there's a power law of campaign contributions there. Let's assume all the top and you need 1000 people to give you that max campaign contribution, right?
+
+Anthony: Yeah, but you also don't want your average number to be too high. You want broad support. It is important to not only have the sort of high donors, but also grassroots support. I forget what our average campaign contribution was. I think the goal should be to get that number actually is pretty low, because it means your support is beyond just sort of wealthy folks in your area.
+
+There is something that happens in politics, where people want to back the winner and they want momentum. Part of the goal with the advice on you need to raise a lot of money quickly, is you're sending a signal to the market.
+
+Ben: Strength leads to strength.
+
+David: Right, it's like startups.
+
+Anthony: Absolutely. You have this sort of, I need to signal to people, hey, this isn't just some jock who thinks he can trade on his football name. There's some substance here. The thought was, okay, well, let's raise as much as humanly possible quickly. Then once we did that, those first dollars were the easiest in some ways, because it's friends and family, I put some in myself, and it feels more controllable.
+
+After you get that first slug in, that's when the real work begins. Because now people are looking, okay, who is that and what is he all about? And then you're just continuously selling nonstop. We were leaving the house every morning at 7:00 AM. I was finishing my follow-up emails around 11:00 PM. That was the schedule for like a year, but it was fun.
+
+First off, I'm just a competition junkie. I just love competing. It's just hardwired in there. I wish I could get it out sometimes but that's just where it is. There's that element to it. But the other part—this is the more rewarding part—is you're connecting with the people that you're ultimately hoping to represent. It's hard to explain this, but you learn so much from them, like an unbelievable amount.
+
+One of the things that always bothers me is when people say, well, voters are dumb. I haven't met a dumb voter. My voters are really smart. They're smart on a handful of issues that really matter to them. When you talk to them about those issues, they know more than anybody. They certainly know more than me, and they educate. That's how you learn.
+
+Are they experts on every policy issue? No, of course not. But the ones they care the most about, man, people are really smart on those issues. They taught so much. That's where the reward comes from this feeling like, oh, my gosh, I better do a good job for these people, because they care so deeply about these issues, and I have to deliver for them. That was part of the reward and continues to be part of the reward, frankly, of doing this job.
+
+Ben: Yeah. There's sort of this dual responsibility as an elected official, specifically to those people that you represent, you raise money from, you are inspired by, and you understand their plight in a big way. But also, you sit on committees, and what those committees need to do is think in the best interest of everyone, not just the specific group that you represent.
+
+As we transition here into talking about some of the specific topics of your committees, I want to open with that question of, do those things ever come at odds or do you usually feel like representing your specific group and the broad American public is something that basically always works out?
+
+Anthony: The way I think about it is, how closely do your values align with your voters' values? For me, the answer is most of the time, so it's not hard. There are occasional moments when those things are at odds. At that point, you have a choice. Your choice is, do I rely on my own judgment, which may cause me some problems back home? Or do you just sort of do the politically expedient thing?
+
+There are different schools of thought on that, honestly. But the way that I handled it was, to the extent that I thought I could do it, I always relied on my own instincts over the political expedience. I will admit, nobody can do that 100% of the time, or at least, I didn't feel like I could, because you only have so much political capital. I think you need to be careful about how you spend it.
+
+It doesn't mean you never spend it. Some people never spend it, by the way, and that's a really good way to keep getting re-elected. Everybody handles it a little bit differently. But the good news on that, for me is, like I said, for the most part, 99% of votes, they never really felt like I was making that choice.
+
+Ben: You're making decisions on a lot of very important things right now, but I do think it's worth giving listeners context of what your term has been like. If you're willing, take us through that second impeachment vote and how you thought about it. Just so we don't bury the lead here, Anthony voted in favor of impeachment of the president at the second vote.
+
+Anthony: Just a quick rewind. The 2020 election happens. From the time it ended until (say) January 6th, I had a deeply uneasy feeling. I felt like things were going to get pretty crazy, because I was seeing the rhetoric that was coming out of the White House. I was seeing how it was being reported, and I was hearing from my constituents how they were feeling.
+
+To me, it was pretty clear. I personally think anybody who's in this business who knows how elections work, should have known it was clear. To me, I was thinking, man, hopefully people aren't buying this, because this is crazy.
+
+I remember talking to somebody very close to me, and he said, gosh, this thing was stolen. I said, what country do you think you live in? This thing wasn't stolen. Tell me where you think it was. They would give me some of these explanations that you'd be hearing on these tune-on boards on Twitter and whatnot. You could usually dispel them. These were people close to me, but your average person didn't have full access to me and I could barely get our message out.
+
+I remember grabbing my chief of staff. I said, just find me a camera, just get me in front of a camera, I need to start talking to people and telling them, because otherwise, we're going to have a problem. Something terrible is going to happen if people think this thing was stolen. This is the United States. If half the country believes the election was stolen, we're going to have a real violent outcome here. I was hoping to be wrong, but that's what I thought was coming.
+
+Lo and behold, you sort of fast forward. As we get closer and closer to January 6th, the pressure builds. On the morning of January 6th, they told us. They said, hey, you got to come in early. Just get here early, there's going to be a big protest. It'd be easier for you if you're here early. So okay.
+
+Early to me, I wake up at 4:00. Early to me is I'll go 4:30, 5:00, and I'll get in. This was during the pandemic when nobody was ever on the streets. Normally, from where I live, to get to the Capitol, it takes like 15 minutes. This time, it took 45 minutes, because there were buses, and buses, and buses from all over the country.
+
+The mall was already pretty well-filled and packed with people, energy, activity, and signs. You can read the signs as you're going in, signs I've never seen before that didn't make any sense to me. I thought, okay, this is actually going to be a lot worse than I even thought. I tried to send my staff home, but they stayed, they insisted. And we had already pre released what I was going to do, which was to certify the election.
+
+Fast forward a little bit. We're in the House chamber and I'm up in the balcony. I wanted to see a couple of things. First, I wanted to make sure Pence did the right thing. I don't know what my plan was going to be if he didn't, but I just wanted to make sure. The second thing, I just wanted to see if they would actually go through with these objections. I thought it was crazy that it's the most anti-democratic thing I've ever seen in my life. I still feel that way.
+
+I'm sitting there, Pence does the right thing. Okay, good. Then Ted Cruz stands up and objects, and I was just disgusted. I'm just completely disgusted. I said, I got to get out of here. I started walking out of the chamber, and I was going to go back to my office, and then I could see the people start to breach. I looked at one of the windows and you see the people start to go.
+
+I flipped on my Twitter. You could see, oh, my, they've already gotten through the Senate. At that point, I thought, okay, the best thing for me to do is just get into my office. I get into the elevator, go through the tunnels, boom. By the time I get back, the folks were already in the house. The riders were already in the house, they were trying to evacuate people, and basically, the session had been canceled.
+
+Now you're sitting there going, okay, I don't know what's going to happen, but it's not good. I know that much. The basic instructions we got were, if you're not with the other members, they had hidden the other members in a sort of a bunker, if you will. If you're not with them, shut off all the lights and be dead silent, because we don't want you making any noise. It's like, okay.
+
+I'm sitting in my office and thinking, okay, I should probably change out of these clothes so I don't look like a member of Congress in case they bust through the door. I threw on jeans and running shoes, and I'm thinking to myself, well, I can still run a little bit. If they get in here, I guess I'll just jump over and then sprint. Maybe that's my plan. We did all that.
+
+Periodically, you would hear screams, yells, and stuff. I called down at one point and I said, hey, there's somebody making a lot of noise in our hallway. Can you send somebody up? The dispatcher was like, sir, we are completely overwhelmed, just do the best you can. I'm like, okay. That doesn't sound so good.
+
+I started trying to get a hold of folks at the White House and just anybody I knew who might be there. I said, hey, he's got to call this off. This has gone way too far. He wouldn't do it. It took him hours, I think almost three hours, maybe a little more than that.
+
+When you're in a situation like that, 3 hours feels like 15 hours. You're just hoping to God that somebody does something responsible, and it just wasn't happening. My view remains that it's an unforgivable assault on the country, and it was led by the former president who was inspired by him.
+
+Ultimately, my view, which I think is coming out in this January 6th Commission is that he kind of liked it. He kind of liked what was going on. I spoke to a number of people who were around him that day and came to that conclusion. At that point, you have to ask yourself, are you willing to make that impeachment vote?
+
+Ben: To be clear, there was previously an impeachment vote that you had not been in favor of. But this specific event is sort of what changed your mind to say, yes, I'm one of, I believe, it was six Republicans to vote to impeach.
+
+Anthony: I think we were 10. It may have been 6 senators, but in the house, there were 10 of us. The first one, let's go back to it. I certainly didn't condone the behavior, but it just didn't hit my bar for impeachable.
+
+David: That was the Russia stuff, right?
+
+Anthony: Yeah, it's actually Ukraine who tried to theoretically bribe Zelensky. Back to this current vote. As that was unfolding, admittedly, on January 6th, I thought to myself, I think they're going to impeach him again. Democrats control the house, so they control what goes to the floor. I just swear I think they're going to do it again. I'd better start thinking about this.
+
+I kind of went back and forth, not because I didn't think it was wrong or impeachable. I certainly did. The thing that was ticking around in my head was, what he did was clearly impeachable, but he has six days left by the time the vote comes or three days. Is that really the right thing to do? Should we censure him? Should we do something else?
+
+Ultimately, I came to the conclusion that not only was it the right thing to do, but we actually had to do it for a whole host of reasons. One of the main ones is, because I think it's important that we send a message to every future president forever, that if you think for one second you can concoct this ridiculous plan, sick your supporters on Congress in the Capitol resulting in a bunch of deaths, total embarrassment of our country, a grave wound on the country and the democracy itself, then you are going to get impeached. And everybody needs to know that.
+
+That was ultimately the decision I came to. But admittedly, it was the hardest decision I've ever had to make professionally, for sure.
+
+Ben: This is one of those where potentially your own interests are misaligned from what you believed was the right thing to do. Did you know that in casting this vote, that would be the end of your ability to serve a subsequent term?
+
+Anthony: No. Honestly, I planned to fight it. I knew it was gonna be hard. But ultimately, at the end of the day, I've made two oaths in my entire life. I've made one oath to my wife and I've made an oath to the Constitution. Those are the only two oaths, to my knowledge, that I've ever taken. I don't plan to break either one.
+
+It really came down to that for me. I feel like I owe this to the country. I feel like I have to do this. It's going to be brutal and it's going to be terrible for me. It was, but you got to do it, and then you got to fight for your political life. Ultimately, that was the plan. That's what I intended to do.
+
+But admittedly, after many months of sort of going through that process and really trying to figure out—independent of the politics—what kind of life do my wife and I want, what do we want for our kids, what do we want for us, where do we want to be, what kind of jobs do we want, it was pretty obvious as our kids are getting older that politics probably isn't the best place. I made a very difficult decision again, which was to drop out of the campaign. I'll finish my term out here in January, and we'll see what happens.
+
+David: You really have to live these two lives with your constituents back home in Ohio, but you're also in DC.
+
+Anthony: Yeah.
+
+David: Those places are not contiguously, either geographically connected.
+
+Anthony: No, and one of them is pretty expensive. From a family perspective, it's just a really hard life. I think this is why, originally, I planned to get into politics much later when my kids were grown. The reality is to do this job correctly and to serve your constituents in the way that I think they deserve to be served.
+
+You probably have to be on the road north of 100 days a year for sure, but you're probably looking at 150, maybe close to 200 in terms of days that you should be out. We as a family talked about, okay, what do we want for our kids and what do we want for our marriage? Ultimately, we decided that the best thing to do is to just step away and I'll focus on my committee work, which I love. I love working on my committees, making whatever difference I can in my last couple of months before setting sail on the next journey.
+
+Ben: It's not like the work you're doing in your committees is some afterthought. That's the craziest thing. You had this very crucible moment in your term. Of course, that dominates a lot of the sort of conversations I'm sure that you have. But you still have the rest of your term here to serve and you're doing things like proposing regulation for the future of crypto, Web3, and potentially the next generation of technology. I'd love to talk a little bit about that if you're open to it. What on earth a committee actually does?
+
+Anthony: What I say is committees are where the real work happens. If you follow on Twitter, you see the votes and all that. All that's fine and good, but real work actually happens in committee. That's where we have hearings. We have real dialogue, debate, and you really talk policy.
+
+In terms of crypto, when I got here in 2018 or early 2019, crypto was a topic. It was definitely something we were talking about. But it really didn't go into overdrive really until the pandemic when folks were at home and markets were straight vertical. You can all thank Jay Powell for that. Jay sure has slowed down a little sooner.
+
+David: I think what's going to be my favorite lasting moment of the pandemic was somebody did a deep fake autotune video of Jay Powell, Janet Yellen, Ben Bernanke, and somebody else too, Rickrolling or singing Never Gonna Give You Up and dancing around.
+
+Anthony: Yeah. We have similar friends, so I get the same memes that come to me.
+
+Ben: As Elon Musk says, I got a good meme guy. It sounds like you both share the same meme vendor.
+
+Anthony: Yes, very similar meme vendors. People really started paying attention to it congressionally in a thoughtful way I would say in 2020, as the markets were going a little haywire. Frankly, when I got into it, I was on a family vacation with my wife's family. They do an annual trip to Nantucket every year.
+
+We were there. I was listening to Modern Finance, which is Kevin Rose's podcast. I know he's been a guest of this show. He had something on Flamingo DAO, which I had never heard of a DAO. I certainly didn't know what Flamingo DAO was.
+
+After that hour or however long it was, I thought, oh, my gosh, I feel like it's about getting red pilled or whatever, or orange peeled. That was my moment, where I thought to myself, okay, I think I've just learned something or stumbled onto something that can be unbelievably impactful for society, and helpful, and solving a lot of problems that I currently see in with the Internet, in our capital markets, with access to financial products and all these sorts of things. It was really my aha moment.
+
+Ben: And you were on the Financial Services Committee at this point?
+
+Anthony: I was. I went through the paces on crypto to make sure I wasn't ignorant, but I hadn't really gone deep on crypto. Then I spent a good chunk of the next few months going as deep as humanly possible and just learning about the different L1s, what an L2 is, what's the difference between these tokens, and how are these applications working.
+
+David: And you were actually participating in DeFi.
+
+Anthony: Yeah. The way that I did it was, I'm on the committee. There's no rule against this, but I don't necessarily think I should be investing in crypto assets while I'm thinking about regulating them.
+
+David: Shocking.
+
+Anthony: There probably should be a rule against it, but there isn't.
+
+David: There's just no regulation at this point back then.
+
+Anthony: Yeah. The whole host thinks it don't make sense. That's probably one of them. I kept reading these white papers and coming to a conclusion, which is, man, I feel like I can only learn so much. I need to actually play with this stuff a little bit so I can figure out how these things work. If I'm going to be knowledgeable in the space, I should at least have some sort of feel for it.
+
+It would almost be like asking somebody to regulate cell phone companies, but you're not allowed to use a cell phone. In my head, I thought, okay, well, I don't think I should be investing, but I do want to play around with it. I took a little margin, a couple of $100 or something, and started playing around in DeFi. I quickly realized I couldn't do anything with my ETH because the gas fees would destroy it.
+
+I did that for a couple of weeks. Then my plan, which I ended up doing, was I just give it all to the United Way when it's over. The United Way accepts crypto donations. I did that for a couple of weeks. I forget how long it was, not too long. I ultimately learned probably more playing around with it than I ever could of just reading. From that, not only did I feel like I understood it better, but I also felt like I could legislate in a more thoughtful way.
+
+From there, we've kind of been going deep on it ever since. It's been interesting. We're getting to a point as a Congress, which is really nice, where I feel like we're getting close to finally legislating on it, specifically around stable coins. We'll see if we get there. But I think that's sort of the first bite of the apple coming off the Terra Luna crash.
+
+David: Do you feel like there's a critical mass now of enough people in Congress, and maybe specifically on the Financial Services Committee who have done that work, who really understand it now, or is it still that people are legislating on cell phone service without using a cell phone?
+
+Anthony: We're past that on financial services. Take a step back for a second. If you were just in Congress broadly, I would say 90% of members don't understand it at all. They've heard about it, but they don't know it. Maybe their kids use it, grandkids, whatever, but they don't know much about it beyond that.
+
+The next 5% are people on my committee who are getting up to speed, who understand the basics and the building blocks. We've had a couple of hearings now. They've been really productive, I think, and had some great witnesses. They want to be thoughtful in this space, but maybe they feel a little hesitant because it's complicated. If you've not really gone deep, it's hard to understand it.
+
+The final 5% are folks like me who have spent a ton of time on it and are now coming to some pretty clear views on what the right regulatory framework should be. That may sound daunting, like you got 90% you don't know anything about it. But the truth is, that's how most issues are around here. As I say, that's where the real work happens.
+
+The committee's lead, because these are difficult, complex issues and you need real expertise, and then if it's the right set of members and it's the right policy, that can pull the other 90% with them. I think we're getting to that point where that 5% is comfortable on both sides of the aisle to really engage in a thoughtful way.
+
+Ben: This is reasonably bipartisan, and it's the support or lack of support. It's not sort of split left or right. It's kind of split on age or demographic lines.
+
+Anthony: That's what I've noticed. I'll say this, going in, like just walking into the debate for the first time, Republicans tended to be more supportive than Democrats. I'm not sure entirely why that is, but as a general rule, Republicans were more supportive than Democrats. Having said that, within those two bands, the bigger break was on demographics. The more senior a member, the more skeptical they're likely to be.
+
+This makes sense. If you look at how crypto is used, the more junior the member is, mostly by age as opposed to tenure, the more likely they're going to engage in it and try to understand it. That's largely played out. But as the weeks and months have gone on, even the more senior members have realized, hey, this is something we really need to tackle.
+
+I think the President's working group, they put out a paper, which some of it I agree, but some of it I don't. The most meaningful aspect is that the White House signaled, hey, this is important, and we need to work on it. I think that's really jump started everybody, because we've had a whole bunch of hearings as a result, and now there's real legislation being debated.
+
+Ben: Let's zoom in on legislation being debated. We're going to go to Schoolhouse Rock here a little bit. But how does something go from a vague concept of we probably need legislation in this space to becoming law? And what is the committee's role in that versus a general member?
+
+Anthony: You'd be shocked at how many members seem to completely forget about Schoolhouse Rocks when it comes here. It's just like unilaterally, I know how to fix this. Yeah, do you have a co-sponsor? Is it bipartisan? No? Okay, sit down, please.
+
+David: For our international listeners who may not have been exposed to this, it was on PBS, right? I feel like it was all over the TV when we were growing up.
+
+Anthony: Where was Schoolhouse Rocks?
+
+Ben: I don't know. Everybody pause this, go to YouTube, search I'm just a bill, and then come back.
+
+Anthony: That's exactly right. To summarize the video, you all are about to just watch. The way something like a crypto bill would work is Congress sort of gets it in their head that, hey, we need to legislate in this space. A whole bunch of catalysts for crypto in particular, but that's sort of a conclusion we've all come to.
+
+At that point, the committees will hold hearings. Usually, they're on a number of different topics related to the main, if you will. We had one specifically on stable coins. We had one specifically on CBDC. We had one on crypto markets just sort of broadly.
+
+You go through that process. It's a pretty in-depth process. You're preparing for these hearings. It's multiple hours, you and your staff are trading questions back and forth. As you develop your understanding, you start to come to some conclusions around what you want to do.
+
+My view is the best legislation is durable. In order for something to be durable, it needs to be bipartisan and it should be bicameral—bicameral meaning House and Senate. My perspective is always you got to give yourself a chance by starting with some Democratic counterpart.
+
+If I’m legislating on a bill, I'll base this on committee comments. I'm listening not just to my own questions, but I'm listening to how other people are processing the information. I'll say, okay, these two people over here, I think can work with on this. Then you just literally go tap them and say, hey, you want to do something on this? It sounds like we're in a similar place.
+
+From there, your staff gets together, you all trade notes and legislation back and forth. Ultimately, hopefully, you've come to some good texts. You propose it. It will get a vote in committee if the committee chair wants it to.
+
+Once it goes through committee, it goes to the House floor. Passed to the House floor, now it gets kicked over to the Senate. They can take it or not. Most of the time, the Senate ignores us, but sometimes they listen.
+
+In the Senate, they have to beat the filibuster. They need to get 60 votes over there. We're just a simple majority in the House, so it's a little harder to get things through that. But then from there, it goes to the White House, and the President signs it into law, and the way we go. As simple as that sounds, it's the most frustrating, chaotic process you can imagine. Things that should take six months take like six years.
+
+David: You're explaining to us the last time we chatted in preparing for this that no bill ever is pure of scope. It's Christmas trees. Stuff gets hung on and all sorts. You may be wanting to regulate stable coins and all this totally unrelated stuff that gets added on to that.
+
+Anthony: Totally. That actually happened to crypto in particular on the infrastructure bill. There was a big infrastructure bill that was passed not terribly long ago. The one I worked on a lot is bipartisan, bicameral. It started in this group called the Problem Solvers Caucus, which is a group I'm a part of. It's a great group.
+
+For most people who are frustrated by Congress, it has been encouraged by this. It's 50 Republicans, 50 Democrats. Everything we do is bipartisan. It's a great group. It's all the members who you've never heard of, but are actually very productive. Stay off cable news but work hard.
+
+Problem Solvers Caucus put the infrastructure bill forward, at least the principles. The Senate worked out the details. This is also frustrating. You get the bill four seconds before it's voted on. It's not like you get the bill a week ahead of time.
+
+Ben: I've been a part of companies closing financing. You get it four seconds before the deal is done.
+
+Anthony: Exactly, so politics isn't the only place with this issue. The infrastructure bill gets through the Senate. All of a sudden, people are high fiving and then it's like, oh, wait a minute. There's a crypto provision in there in the infrastructure bill? Why is there a crypto provision in the infrastructure bill? Because we have to pay for the infrastructure, of course.
+
+Somebody slipped in a little tax without really telling anybody. Ultimately, it came into the infrastructure bill and was signed into law. That's sort of the Christmas tree version of how legislating works.
+
+Admittedly, the person who crafted that provision didn't intend it to be as wide-sweeping as it was. There was a thought that, basically, we were going to label any developer working in crypto a broker, which would kill the industry if everybody had to register as a broker.
+
+Ben: And what is the tax?
+
+Anthony: If you are a broker, then you have to do X, Y, Z, which would involve you registering, paying taxes, et cetera. That was part of it. The goal is to get at something real, which is if you don't have good tax compliance in crypto, that's another thing I probably realized when I was playing around with it a little bit. If you're not careful, you can break tax law pretty easily in this space.
+
+David: Yeah, like the default is that you do.
+
+Anthony: Yeah, the default is. One of the first thing I did is like, I need a software. This is all on chain, so surely, there's a way for this to automate and track for me. I won't name the product because I can't endorse a product, but I found a particular software that I liked, that I used, and helped me track all that stuff.
+
+The motivation was a sincere one, which is, hey, we want to make sure that the people aren't evading taxes. Actually, that's what it was. It wasn't a tax on the broker. It was going to require anybody who was defined as a broker to provide tax information to the IRS. It would have required developers to all of a sudden provide tax information.
+
+Ben: Which makes sense if you're not familiar with crypto, because that is the way that our USD-based infrastructure works, where if you have a brokerage account somewhere, you can just count on the fact that it's calculating all your taxes for you, it'll tell the IRS, and it'll send you a copy so that you know what to pay or at least you know what to include in your tax return.
+
+Because that's not mandatory in crypto, none of the brokerages do it. It's actually a little bit difficult in many ways, especially in DeFi to figure out what your taxes are. But you face this other problem where it may not be what we think of as like a brokerage or an exchange that is generating these taxable events for you. You would need every application developer to be spitting these things out too, which is, as you mentioned, pretty untenable.
+
+Anthony: Right. The senator who proposed that had to go down to the well of the Senate and basically say, I did not intend for it to sweep in all these developers, wrote letters, and those sorts of things. That's actually important to do, because that way, if anything ever goes to court, they could refer to that as, hey, this was actually congressional intent. It wasn't to sweep up all the developers, but was to actually go after legitimate brokers.
+
+That was an aha moment (I think) for all of us, but certainly for the crypto community was that infrastructure bill. That's unfortunately how things do get legislated around here a lot.
+
+I am hopeful that with respect to crypto though, that going forward, we'll be more thoughtful and do things like what I think is appropriate, which is to take sort of little bite sized chunks as we understand them, because the last thing you want to do is put something forward that you only sort of understand, and then ultimately, you cause a heck of a lot more problems than you intend to. That's the direction we seem to be going in crypto. That's actually really encouraging and not normally how we operate around here.
+
+David: What do you think is the directionally right framework for regulation that should exist for crypto, given here we are in summer 2022? The second question is, what do you predict the coming months of regulation is going to look like to the extent it's different?
+
+Anthony: I actually think we should look to the Clinton administration for how they handled the early Internet. They orchestrated around the phrase, do no harm. Bill Clinton, rightfully, I think, came to the conclusion that, hey, look. There's a lot of weird stuff happening with this new internet thing and these chat rooms are weird. Remember, those were nasty places.
+
+David: We were all teenagers in them at the time, I think.
+
+Anthony: Barely teenagers, yeah. I think my first AOL chat room, I was definitely not a teenager and shouldn't have been in there. But having said that, yeah, there are some pretty terrible things happening online. You could have made an argument that the right thing to do is to shut it down, tamp it down, control it, and regulate it to death, basically.
+
+David: This was the era I'm remembering, where a bunch of people in Congress wanted to end video games.
+
+Anthony: Yeah.
+
+David: This was not a crazy sentiment in the country at the time.
+
+Anthony: No, this was kind of how people felt. Bill Clinton actually provided the right leadership there where he said, first, do no harm. Let's let this thing breathe. Let's see where it goes. Once we understand it better, then we can propose a set of regulations that makes sense for the space given what it's becoming. It won't always be nasty chat rooms. And he was right.
+
+Slowly but surely, we worked up on the regulatory apparatus. Did we get it perfect? No, of course not. Congress is infinitely fallible. We never get everything perfect. But I think that was ultimately the right playbook for that time and space.
+
+I would argue the same mantra should exist today. Are there things that are bad that happened in crypto? Absolutely. We talked on one—tax evasion. Does that happen? Certainly it happens. Of course, it happens. As you said, it's probably the default. You have to decide that you're going to pay taxes.
+
+That's something we need to work on, and there are other areas as well. But should the response be to destroy the entire industry before most people understand it and before it's even had a chance to really develop in anything? Certainly not. My view is the mantra should be do no harm and take bite-sized pieces as they become obvious, but don't overreach.
+
+I suspect that's how Congress will behave. I do fear that the administration will take a more heavy-handed path, mainly because the SEC chair’s pretty hostile at times in his public comments on crypto. That's (I think) where the give and take will be. But that's also why it's so important that Congress actually puts laws forward, even if they don't pass, but just by showing there's bipartisan support for a set of principles.
+
+That in and of itself will send a message to the regulators that, hey, we're actually pretty far away from where Congress is, and that's not a good place to be. The last thing you want to do as a regulator, you propose a set of regulations and then Congress just flips them on you. My hope is that the energy we're seeing, which is becoming more and more bipartisan by the day, will ultimately lead us more down that ‘do no harm’ path, as opposed to the heavy-handed path.
+
+Ben: What do you think the bite-sized early regulation will be sort of on the steps to getting a more complete regulatory framework?
+
+Anthony: My view is stable coins are probably the most straightforward to figure out. Part of it comes from the Terra Luna issue. I think what that did was it awakened members of Congress to what can happen when things go wrong. This was a happy surprise. It also forced members to confront, okay, what is this algorithmic stable coin thing? How is it different from a Fiat-backed stable coin? And what if anything should we do about that distinction?
+
+I've been really encouraged by how well members have articulated that distinction and have grasped that distinction. What I think you'll probably see is some sort of law that enshrines a "payment stable coin." That language has been used in a couple of different bills. A payment stable coin is essentially a Fiat-backed stable coin.
+
+My preference would be that we're silent on algorithmic stable coins and we'll figure out what exactly that is later. Is it a security? Is it something else? Is it a commodity? I don't think there's actually a clear answer to that because they're all different. They all have different properties and they don't all work the same.
+
+I would say let's focus on Fiat-backed stable coins, because I think we all actually agree on that. Intellectually, that's not that difficult. Fiat-backed stable coins, we're really talking about, what are the reserves? What are the reserve qualities? What are the auditing requirements?
+
+What sort of attestations do they need, and what sort of redemptions and consumer protection things do you want to build into that? If you can answer those questions, you can probably define something that looks like a Fiat-backed stable coin. Algos are much harder.
+
+Ben: n my mind, there are two high-level purposes that regulation in this space could serve. I'm curious if you think that I'm sort of describing this right or thinking about it right. One is protection for the American consumer or the American investor. When something goes dramatically wrong, we look at it and we go, we don't want that to happen again, and we pass a law that makes that thing illegal. Two is giving comfort to developers that they can innovate without doing something illegal. Is that how Congress thinks about it too or are those actually the same thing?
+
+Anthony: I think they're the same thing or I think they're heavily correlated, for sure. The overwhelming majority of the innovation happening, folks want to do it responsibly. Very few people are out there building these amazing products and services with the goal of stealing. There are some criminals out there, pump-and-dump schemes and nasty things. We should go after them with the full force of law. There are laws on the books that exist that give the authority to do it.
+
+But most innovators in this space want to build transformative, amazing products. They want to do it at scale, but they're scared to do it in the US, because our regulatory environment is so uncertain.
+
+David: So many examples, FTX being the obvious one.
+
+Anthony: FTX is the best example. Sam Bankman-Fried basically grew up on Stanford's campus, and he's building a tech company outside the US. It's the craziest thing. Imagine that for a second. That never would have happened in Web2, Web1, or whatever. If you're in Silicon Valley, that's where you want to be to build this tech company. Today, he's going basically everywhere but here to build that company. We hope to get him back.
+
+David: Which obviously, there's nuance, of course, but pretty clear, that's not in America's best interests. We want that company here.
+
+Anthony: No, of course not. No. That's my interest in it. I believe fundamentally in the innovation, and I believe that it's powerful, it's going to create a ton of jobs and economic might and power, and it's going to be important technologies for the world, for every technology like that, not just crypto, I want that here. I want that developed here. That's going to create jobs, it's going to provide opportunity, and it's going to do all sorts of things that most Americans think are positive for our country and our democracy. That's my primary motivation.
+
+Part of how you protect consumers and provide that clarity on regulation is by proposing things that hit both sides of it and do things like defining what a stable coin is, what a payment stable coin is. Essentially, you provide that definition, because from my vantage point, in a world where these are proliferating around the entire country, I need to know that if my farmers get paid in stable coins that they're solid.
+
+I can't have my farmer getting paid in Terra Luna, and all of a sudden, that thing goes to zero. If these are going to be hitting the payment rails, and people are going to be relying on them to pay their bills, feed their families, et cetera, we need to know that they're solid. That's consumer protection, but it's also pro innovation.
+
+David: It's happening. Angel list, you can invest via stable coins now. We have LPs in Kindergarten Ventures that make their capital contributions in stable coins. We need that to be actual money to go into startups.
+
+Anthony: Yeah. Sam Bankman-Fried, he was in Washington not terribly long ago. He said they've done acquisitions using stable coins. They said when they buy companies, they use crypto for the reasons you would think, because it's quicker, easier, and the cost is lower.
+
+When it's done right, I think we'll see more, and more, and more of that. But if we dropped the ball on this, we're too heavy-handed, or we go way further than we're capable from an understanding standpoint, we're more likely to get it wrong than right. That's why in my view, first thing, let's just do Fiat-backed stable coins because we can pretty much figure that out.
+
+Ben: We have all the benefits of the instant settlement, no need for a trusted intermediary, there are going to be less fees, and all this stuff. We understand what the value is tied to and we have a lot of other things that depend on that system of what that specific one USD denomination is tied to. There's a lot of comfort that can come from that while getting all the benefits of the innovation.
+
+Anthony: Yeah, totally, 100%. The way I think about some of the other stuff, again, like the Algos, hopefully people aren't saying, oh, he hates all Algos. I don't, but to me, like it's not clear what that's going to turn into and what the right response is. If I don't feel like I understand something from a policy standpoint, my reaction is I should be silent on it from a regulatory and policy standpoint.
+
+Until I understand it, I probably shouldn't be regulating it, unless it's hurting people or destroying people. That's why I say, I think we largely understand Fiat-backed stable coins. Let's start there, and then we can sort of take our bite-sized pieces as we develop.
+
+Ben: For our next sponsor, we have Brex. Brex is a company you've definitely heard of, but you may not fully understand. Brex brings together smarter corporate cards, spend management software, and banking alternatives in one mobile first solution. They make it easy to manage every aspect of your company's spending from the tiniest purchases to big massive procurements, so you have total visibility and ownership over everything your company spends on end to end.
+
+We're going to be sharing with you this season all the cool stuff Brex can do for you and why it's really unlike anything else out there. I've been seeing more and more of my portfolio companies using them recently and having really great experiences. It's sort of everything you'd expect from a modern software company—great mobile app, high touch service, really works around the globe.
+
+David: It's so great that all these enterprise and fintech products now have UIs on par or better with consumer apps.
+
+Ben: Let's take a step back. You remember who they were when they launched out of YC in 2017, blanketed billboards across San Francisco, New York. Brex was mainly just a corporate card for startups then—black cards, high limits, fast online setup, no personal guarantees. You can see why it grew ludicrously fast.
+
+Where are they now? They kept reimagining different financial systems for growing and scaled companies because there are a lot more to spend management than just the one sort of piece of plastic that was the entry point. On top of credit cards, they built something really interesting. It's a new end to end spend solution that has a completely different philosophy than everything that came before it.
+
+What does this actually mean? Brex is helping companies create a culture of financial discipline that accelerates their business. Like you, Brex's founders love the trust, teamwork, and ownership mentality that startups embody. For example, David and I, just a high trust working relationship. There's not a ton of bureaucracy. But Brex noticed that as companies scale and get big—including their own—those things can kind of fade away, which means new policies get implemented that are really blunt instruments and create inefficiency.
+
+David: Oh, man. We're about to record our Amazon episode. This was like a core tenant of Amazon as it grew. Jeff had to be like, no, we are throwing out corporate infrastructure, two pizza teams, nothing can be bigger. It's just the natural law of gravity as a company scales. Unless you fight it, that bureaucracy is going to creep in.
+
+Ben: Totally. That first time that an employee expenses a first class ticket to Paris for a meeting that should have been an email, trust is gone, the big hammer of policy comes out, the company clamps down, so enter Brex. It replaces the command and control model with a super smart, delegate, and empower model. Brex makes it easy to spend within policy from the beginning.
+
+David: It's super cool. Managers and finance teams can actually pre-approve spending instead of having to review expenses retroactively. Brex essentially just automates compliance, and it's easy for employees to understand what's allowed. Managers can then only focus on the anomalies.
+
+Ben: Yes. Brex is almost eliminating the need for receipts entirely. They've built exclusive connections with payment processors to automatically create the receipt. Employees don't even have to save or look for receipts after spending and managers don't have to nag them.
+
+David: Oh, I love it. Keeping track of receipts. This is one of those things where you're just like, it's 2022. Why do I need this receipt? There should be data exhaust. This should all be done automatically. Brex is doing it. It's great.
+
+Ben: Yup. Our huge thanks to Brex. To learn more, you can go to brex.com/acquired or click the link in the show notes. All right, let's stay in committee but move on from crypto. What percentage of your time on the House Financial Services Committee is spent on crypto over the whole course of your term?
+
+Anthony: Over the whole course of my term, I would say probably a third. I've done a ton of China work and that was the bulk of my first year in Congress. I was doing things to fix our international financial institutions like the World Bank and the IMF, which had been largely overrun by China. I did a ton of stuff for reforms there. That took a lot of time and energy.
+
+The areas I focused the most on, China, cap markets. I did a lot of different things around the GameStop, meme stock craze, which was interesting and fun, especially following on Wall Street bets, and then crypto. Those are probably the three areas that I spend my most time on.
+
+Ben: Has there been legislation that came out of the meme stock mania?
+
+Anthony: No. I was actually disappointed in that, because we did a ton of hearings on it. The Democrats proposed some things. I don't say this is a partisan comment, by the way. It's just the reality. Republicans do the same chunk. We could have done some things maybe in a bipartisan way that I think would have been smart.
+
+The main thing we could have done is pass a bill to shorten the settlement time from two days to one day. That would reduce the risk in the system overall and probably would have prevented what Robinhood ultimately had to do, which was halt trading.
+
+But rather than do that, what they ended up doing was they took a whole bunch of things that they wanted to do for the last decade. They put them into a bill and passed the House. It'll never go anywhere in the Senate until nothing changed.
+
+Again, that sounds like a hit on the Democrats. I'm not trying to hit Democrats. I'm sure if and when we retake, the house majority will do the same thing. It's just kind of the frustration of Washington.
+
+David: It became a political casualty.
+
+Anthony: It did. That happens unfortunately with a lot of issues. The reason that one was so frustrating is because we actually did real work on it. I think we had four hearings on it. We spent a lot of time trying to understand it.
+
+Ben: And there was national media attention. I think I watched those hearings live.
+
+Anthony: Yeah, that was probably the most fun hearing. They're interesting hearing. I had two computers up, we did it remote. I had two computers up. I had my personal computer up which had the WallStreetBets Forum and then I had the hearing. Every single member who spoke, they just absolutely eviscerated.
+
+David: I love it. You're just reading in real time.
+
+Anthony: The guy from Hitman, the video game in the movie, they're like, who let this guy in? Whatever his name is.
+
+David: They were comparing you to the guy from Hitman. That's so great.
+
+Anthony: Yeah, they're like, who let Hitman in? This guy is an idiot, and then I started asking questions like, wait a minute, he's got it.
+
+David: There we go. This is your career after Congress. You can go play Hitman in the next video game.
+
+Anthony: Play Hitman and be a meme stocker.
+
+David: You've got a built-in audience. All right, let's move out of financial services. I don't want to make you bash on Jay Powell even more than he's already a poor guy. He's already in the depths right now.
+
+Anthony: He's a very nice man, but have got some inflation issues.
+
+David: Yeah, seriously. A fun little sidebar before we move on to science, space and technology, and American dynamism. But it is sort of related. You, given your background, had been highly involved with the revolution really that's happening in the NCAA right now in college athletics. The name, image, and likeness bill for college athletes can now take sponsorships. The repercussions that have been wild. Tell us a little bit about what's going on there.
+
+Anthony: It's pretty messy right now. My view on name, image, and likeness—this goes back to my time at Ohio State—was it never made sense to me why college athletes were the only people in America who couldn't do anything with their name, image, and likeness.
+
+Literally, everyone else in the country can do it that I'm aware of. Maybe some military officers can't. I have no idea, but I think even they can. College athletes, as far as I knew, were the only ones. Didn't make sense to me then. Still doesn't make sense to me.
+
+David: Did you and your teammates resent this back in the day?
+
+Anthony: A little bit, not in a negative way, necessarily. I say college athletics was one of the greatest experiences of my life. I got way more out of Ohio State than they ever got out of me. I did the best I could while I was there. I hope I contributed admirably, but that experience was invaluable. I wouldn't trade it for anything in the world.
+
+Having said that, there is something that happens, too, when you see a bunch of people wearing your jersey in the stands, and you see your autographs on eBay selling for whatever amount of money, and you're thinking to yourself two things. I'm not getting any of that, but that's my jersey. That's a picture of me with my signature.
+
+That does affect people. Again, not in a way to cheapen the experience, not to say, hey, this is BS, I didn't get anything out of this. We all had an amazing experience, but that doesn't mean that everything was perfect. This was always something that I thought it makes sense for people to be able to do, not just for the football players, by the way.
+
+My wife was a swimmer at Stanford. She's a college swimmer. Stanford is one of the most expensive places in the country to go to school and to live. She's on the swimming team, she's not allowed to teach swimming lessons to help pay bills.
+
+Ben: That’s literally the number one person I'd want to take swimming lessons from.
+
+Anthony: Exactly.
+
+David: There are a lot of families in Atherton that would pay a lot of money for a Stanford swimmer to teach their kids how to swim.
+
+Anthony: Exactly, and they probably did despite the rules. But the rules, for forever, said you couldn't do anything with this. Nothing with name, image, and likeness. Whether you're a star football player at Ohio State, a star swimmer at Stanford, or a backup long snapper at pick-your-college-anywhere, you just can't do anything with this. It didn't make sense to me because I thought you can monetize it.
+
+A couple years ago, the state of California passed a bill that would legalize it in the state of California. That set off a whole chain reaction, where states all over the country started passing laws, but they were all different. To me, that was chaos. You want a whole host of things. But at minimum, you want an even playing field for everybody across the country.
+
+David: Right, because then you get into a situation where—let's just stick in football for a moment—quarterback goes to USC. Now that that person can make a lot of money by doing that, the quarterback goes to Ohio State, they can't make any money by doing that. That is a market distortion.
+
+Anthony: Exactly. I think it's an awkward way to make a college decision. It's like, which state has passed the law that I liked the most with respect to marketing rights? What we proposed was, hey, let's do a national standard. Let's have one standard and legalize it.
+
+Provide the economic right for the athlete no matter who you are, but build in some guardrails around inducements, recruiting, and those sorts of things. That was our intent. That's what we've proposed now for two congresses, have it bipartisan.
+
+Ben: Just so people understand the history of this, it's not like there was something federally making it illegal. It was that the NCAA said that you can't do this and be a part of one of our programs, which are all the biggest programs. With Congress passing regulations, it's basically superseding and saying, look, you can't prohibit these people from doing this thing.
+
+Anthony: Exactly. We've been pushing that legislation for a few years now. Ultimately, what happened is the NCAA lost a court case at the Supreme Court last year that's about a year ago today. Since then, they just said we'll make name, image, and likeness legal, but we won't enforce it. We'll stay completely out of it, essentially.
+
+That's the set off, but to me, it looks like the Wild West. Now what you're seeing are these things called collectives. What a collective is, it's a group of boosters that don't have an official affiliation with the university. They are raising "marketing dollars" to go buy players on behalf of the team.
+
+David: Yeah. This is insane. This is crazy.
+
+Anthony: Yeah, it's nuts. You're seeing it in the recruiting. You're seeing quarterbacks signed these "NIL deals" for $8 million. Problem with that, a couple. I've not seen any of these deals and nobody has. But here's what you should look for if you were to look at one of those deals.
+
+What commission is the person who brokered the deal taking? My guess is they're taking a big commission. If you sign an NFL contract, most of what your agent can make is 3%. That's via collective bargaining and the rules of the Union. Marketing deals have unlimited cuts. But normally, it's around 20%.
+
+My guess is these NIL deals are coming with pretty big haircuts that look more like 20% than 3%, but there's no way to know because there's no transparency and everything's just sort of happening in this chaotic situation. On top of that, it's goofy for the team. If you're the coach, now you're hoping that the collective that you have no association with buys the right players.
+
+Ben: It really handicaps the coach. The coach can't go and convince the player and say, I know for sure I have this thing for you. They're at the mercy of a collective and got to make a call and say, do you think you could go up to this number for this player?
+
+Anthony: Exactly. To me, the model is in a place where if Congress doesn't step in and find some sort of way to stabilize this, the whole thing will probably just go professional, which maybe a lot of people think it should. That's may be an argument for another day.
+
+Here's the trade-off that you make if it goes full professional. In that world, the way most schools would react, I suspect, is they would cut every single sport that doesn't make money, except for the ones they would have to keep for Title Nine purposes, so these athletic departments would shrink dramatically.
+
+David: You probably have 6–10 programs per school.
+
+Anthony: At most, yeah. You have a football team and a basketball team, you have a women's basketball team, and then you probably have field hockey. I think there are a lot of people on that team. I think synchronized swimming has big numbers. You'd be making choices that I would argue aren't in the best interest of your entire student athlete body, so a lot of opportunity would go away.
+
+Ben: For folks who don't know, I'm pretty sure when I was at Ohio State, I remember the stat that us in the University of Oregon by virtue of Nike using it as their testing ground and the incredible rabid fanhood for the university, I think the football program paid for every other sport, thus making the athletic department itself profitable and could contribute back to other things in the university. I think, us, in the University of Oregon, we're the only country and the nation at that time that actually could do that.
+
+Anthony: I think there are more that are profitable now. The general structure is football and men's basketball make the money and they pay for everything else. That's generally how it works. Maybe we should have that discussion, but there is a trade-off. There is in everything. The trade-off is the opportunity for the men's track, the women's track, the softball team, the field hockey team, my wife's swimming team, and all these, all of a sudden, those are on the chopping block.
+
+When you talk about how do we expand opportunity in our society and how do we make sure that institutions are more receptive to people from all different backgrounds, in particular, really difficult backgrounds, in particular, minority backgrounds, one of the best ways is through sports. If you're going to kill the college model, you're going to kill that opportunity right alongside of it. That is the trade-off.
+
+Again, people can come down wherever they want on that issue, but I think we need to be eyes wide open as we think through this. For me, the conclusion was always been, look, I don't know what the answer to that question is. I do know that NIL is pretty straightforward. I know that people should be able to market themselves.
+
+If a college swimmer anywhere in the country wants to teach swim lessons to help pay for school, because by the way, they're not on scholarship, so they're taking on student debt just like everyone else, if that's true, then we should let them market themselves. I don't think that's controversial.
+
+David: It's crazy, the amount of dollars that are involved. The most crazy thing to me from all of it is that it's almost like college programs are half pregnant right now. It's got all of the money and structure of a professionally owned for-profit sports organization. But these collectives, boosters, they don't own equity in Ohio State. It's wild that they're putting up this money for I don't know.
+
+Anthony: I also don't think it is sustainable. What do you get? There's no economic return to it for them.
+
+David: Exactly.
+
+Anthony: It's a psychological return, the notion that you get to be more connected to your team, and you're going to win more games. That's wonderful, but people paying that money don't make anything off of that, as far as I can tell. Maybe they do. I don't think they do.
+
+Ben: Maybe they're cutting on the deals that there's such a large commission or something.
+
+Anthony: No. I think the collectives are all set up as nonprofits. I think the people who are making money off the deals are the agents, it would be my guess. That's where I think having some visibility on what those commissions look like would be helpful to the players, frankly, because you would know, hey, what the heck, you took 30% of me, but only 5% of him? What's going on here? It's a broken market.
+
+David: Speaking of opportunity in America, let's talk about science, space, and technology. American Dynamism in Katherine Boyle's terms. You mentioned China competitiveness that you were involved in actually in the Financial Services Committee. I'd love to hear from you. Maybe the right way to start is you've said this before, plenty elsewhere, kind of what you see as the great political battle of our time and how it's not Republican versus Democrat.
+
+Anthony: I don't think it is, though the activists inside of both parties think that's what it is. To me, I think we're at a crossroads in our country, but also globally. I think the breakdown is do you believe in American democracy or not? That's not a question of do you believe that democracy is working perfectly.
+
+Clearly, the answer to that is no. There are almost no people I know who think our government's working exactly the way that it should. We should fight for meaningful reforms to make sure it's more reflective of the people we serve, absolutely.
+
+When I say there are people who have lost faith in America and why I think the real divide is who believes in American democracy and not, is I think on both sides, what I've seen increasingly is people inside the parties. When things don't go their way, when they don't get the outcome they like, their immediate reaction is to destroy and tear down something. It could be a building, it could be law, could be the court, it could be anything. It's sort of the, take your ball and go home, this thing's totally broken, we need to burn it down and start over with something else. I see that on the left and I see it on the right.
+
+I think that's poison. It's poison for a whole host of reasons. One of which is I think we need to take a step back and remember how incredible the American idea and American democracy has been for the entire world. Prior to our founding, governments were not of ‘by and  for the people.’ Governments were of ‘by and for the government.’
+
+David: Like a monarch.
+
+Anthony: Yeah. Outside of a handful of Greek city states back in the day, democracy was a new idea and was an experiment. For the first time ever, we placed the sovereignty of the individual at the center of society. The Government's job, if you go back to the founding, was basically to protect the rights of the individual. The individual was sovereign, the government was beholden to the individual. That's a beautiful, beautiful and powerful idea.
+
+By the way, we don't just believe that for people inside our own country. The belief is that all people have dignity, all people have these rights. As a result, we need to lead with those values globally. If you believe that, then of course, you have self government, of course, you have a democracy. You wouldn't have an arbitrary monarch ruling over you because the people are sovereign.
+
+From that, we've created more wealth, more prosperity, lifted more people out of poverty, freed more people, and oversaw the longest sustainable peace in world history. That's not to say we're perfect. Again, of course, we're not. Of course, the founding was imperfect where the truth is compromised. I think it's the original sin of the country.
+
+A whole host of things that we've gotten wrong, but compare that to the alternative, which is authoritarianism, Chinese communism, and the sort of divides there. I think it's a pretty clear answer as to what the right path forward is.
+
+When I see people tear down our democracy, whether it's again, right or left, I think that's a dead giveaway to China. It emboldened the Russias and the Chinas of the world, and you hear it in their rhetoric. You see it from their propaganda arms. All it does is cheapen democracy and our leadership in the world, globally.
+
+To me, that's the real divide. Faith in democracy isn't given, it's earned. People in positions like mine need to do a much better job of fighting for things that are relevant for our people, ignoring the most extreme voices, and take the necessary political risks to bring us back.
+
+It's also not just on us. The beauty but also the burden of democracy is it's a participation and support. You actually have to show up as an American. You have to vote and not just once every four years.
+
+Ben: Right. Not only do I have the right to vote, but I kind of should know what I'm voting on. I kind of need to do some work to make informed choices.
+
+Anthony: Yeah. The one question people ask me a lot is, hey, how do we fix this? The first question I ask is, how many of you have voted in primaries? Usually, one hand goes up. The numbers are around 20%. Around 20% of voters vote in primaries.
+
+The primary is where the battle is for most races. Most congressional districts, certainly in this country, are heavily gerrymandered. A lot of the Senate races really come down to who's going to win that primary.
+
+David: You were saying in your own journey, it was all focused on the primary. All the fundraising, that was the battle.
+
+Anthony: Yeah. You run hard and you fight hard for every vote. You represent every constituent, not just Republican primary voters. But ultimately, you have to appeal to the people who vote if you want to get elected. If we could move our primary electorate participation from 20 to 50, I actually think our politics would moderate and they would improve dramatically more so than most people realize.
+
+Ben: Why is it that they won or lost in the primary versus the general?
+
+Anthony: In congressional because they're so gerrymandered, so they're all ranked. My district is an R plus nine, which means generic Republican versus generic Democrat, the Republican has a nine-point lead. Every district has it. Mine's actually, a nine-point lead is a lot. Mine's one of the least gerrymandered in the country. You actually see a lot in the teens, 20s, and 40s, where it's an R plus 57. It's like nobody can win.
+
+Ben: That's the argument of whoever then wins the Republican nomination and the primary is paved, the path is paved from there.
+
+Anthony: Right.
+
+David: If you think about it, in general elections, the media is making such a big deal about XYZ House seat or Senate seat. You're talking about three or four seats in the entire country. What does that mean for the rest of the seats? Those are given.
+
+Anthony: Right. What else just happened, we all just got our maps redrawn. What happened is fewer districts are now toss ups. There are basically fewer at play, and the existing districts are now more extreme. It was the worst of all worlds. We have fewer competitive seats, and the ones that we have are going to have more extreme candidates. Unless—here's the hack—people actually show up and vote.
+
+Ben: This one little trick.
+
+Anthony: Yeah, that's one thing that you need to do. Get engaged. Actually follow the primary. Look, do I like this candidate or not?
+
+David: They mail you a booklet. It's right there. Everything you need to know is right there.
+
+Anthony: Yeah. Everybody's on Twitter. Get on there and look at the things. It's really easy, I think, to figure out if I resonate more with this person or that person. Nobody is going to be 100% the way you want, of course. But I think you'll be able to quickly figure out, okay, who's going to be a productive representative and who maybe has other motives? That would be my biggest solution for individuals who are frustrated. You just got to vote more.
+
+Ben: For our next sponsor, we have our good friends at Tiny. They've got something new to share with us today. As longtime listeners know, Tiny is the Berkshire Hathaway of the Internet, and has built and acquired a collection of truly wonderful internet businesses.
+
+Their story is just incredible. Andrew Wilkinson started the design agency MetaLab in Victoria, BC, and they became one of the premier design firms in the world building UIs for Slack, Coinbase, Tinder, Headspace, Patreon, you name it. At the same time that they were having all the success building that business, Andrew and his partners, Chris and Jeremy, started to think about investing and became totally obsessed with Warren, Charlie, and Berkshire.
+
+They thought, wait a minute, we know there are a whole bunch of businesses out there just like MetaLab that are wonderful Internet businesses doing $5 million or more and recurring revenue at something like 30%–40% operating margins, but don't make sense for venture capital because there aren't M&A buyers for them and they can't get to the scale required for an IPO. If you put aside the VC approach of needing to play for that exit, who wouldn't want to own a portfolio of businesses just like that?
+
+That's exactly what Tiny went out and did over the past 15 years. There are just incredible successes—Dribbble, Pixel Union, Creative Market, 80/20, Girlboss, AeroPress, which I used this morning. All of these are now Tiny businesses run by their own independent managers just like Brooks Running within Berkshire Hathaway, and producing incredible cash flow for Tiny and the managers themselves.
+
+David: What's new? It turns out over the past decade-long bull run, that a lot of wonderful internet businesses that should have been Tiny-type companies mistakenly took venture capital instead, because it was so easy to get, and now have a proverbial monkey on their back looking for an exit. Tiny has realized that they're actually in a great position to fix this situation for everybody.
+
+I've thought about it. So many people have talked about this. This has always been the problem in venture capital. Thirty-ish percent of the portfolio of any VC firm or companies like this end up being good companies but just aren't going to get to scale for an exit. What do you do with them?
+
+Ben: And they just don't fit that venture return profile. You think they might when you make the investment, but it turns out, that's not how it plays out.
+
+David: Well, enter Tiny. Tiny has figured out they are in the perfect position to solve this. They can come in, acquire the company, VCs get their money back, and founders get to take control back. Tiny has no interest in running your company. They want you to do that, you go back to running it profitably for the long term. Then together, you and Tiny both take big dividends out of it, and they have no interest in actually exiting the business.
+
+They've done this now with several companies so far this year, where a VC-backed company was doing that kind of over $5 million in recurring revenue, 30%–40% operating margin or potential to have 30%–40% operating margin. Tiny can come in, acquire a business like that, make the VCs whole, just reset the capital structure. Then management, if you like, founders or whoever's currently running the business, you continue running it profitably and with totally aligned incentives.
+
+This is exactly what Berkshire does when they acquire a company or Walmart did that we talked about the early stores where there were partnerships. Tiny owns the business, but they set up structures that make it fully aligned and worthwhile for you as a management team and employees to stay and continue running the company profitably.
+
+If you're running a business like that, which we know many of you out there in the Acquired community actually are. Say you're a VC board member of one, we know there are a bunch of you out there as well or even if you just know a business like this, I think it would be a great fit for Tiny. Shoot them a note at hi@tiny.com and just tell them Ben and David sent you.
+
+Ben: Our thanks to Tiny.
+
+David: Let's now bring it to American industrial policy. Over the time you've been in Congress, the view has shifted so much that globalism is an unfettered good to holy crap, we may have some issues with our supply chain and American industrialism and offshoring. You've lived all this. What's your duty been?
+
+Anthony: Again, I come from a maybe a slightly different perspective because of my father's background, my family's background building a steel company in Northeast Ohio, and seeing what has happened to the industrial base in the Midwest, and what that's meant for our communities. You've seen poverty creep into places. You've seen what were once very vibrant neighborhoods start to decay, a lot of hopelessness, opioids, and all kinds of terrible things come in their place.
+
+When you see that, I think it forces you to take a step back and say, okay, what should we really be doing here? To me, I think there are sort of three buckets that I think are most important. One is to build a sustainable economy, one a dynamic economy, and then also a resilient economy.
+
+I would say sustainability gets probably the most publicity right now. That's obviously important, but the dynamism is absolutely critical. By that, I mean, basically, I think the US should lead in every critical technology from now until eternity. I want the best AI systems and machine learning systems.
+
+Ben: Dynamic literally meaning changing. So whatever the next big wave is, we are leading that big wave.
+
+Anthony: Yeah, because that's where the economic value is going to be created. That's also where the jobs are going to be created for the most part.
+
+David: FTX being based in the Bahamas is not good.
+
+Anthony: Yeah, it drives me crazy, and they're not the only one. Whatever we need to do to attract builders, founders, engineers, and talent, to be in this country, to be educated, and to build the most critical technologies of the future and the supply chains that underpin them, I think is massively important. Then on the resiliency side, I think this is where sort of the goal was efficiency forever.
+
+I think, Covid, more than anything, probably highlighted to the world what maybe Northeast Ohio realized a long time ago, which is if you just optimize for efficiency, you're going to hit a trade-off at some point. For us, it was jobs. During the pandemic, it was supplies and PPE.
+
+Ben: Yes. The more you squeeze margin, and the more you make it so that you can get every last drop out of the towel, the less resilient you are to any sort of shock in the system.
+
+Anthony: Absolutely. We're dealing with it again on the inflation side, which I think is still largely a holdover from sort of Covid disruptions. What should we do going forward? Do I think we should reshore everything? No, I don't.
+
+In this world where I believe it's us versus China, Russia, and sort of US values, norms, and ideas, versus the Chinese Communist Party values and ideas, I want as many critical technologies and supply chains, domestic or with our friends, as possible. I'm happy to offshore a t-shirt manufacturing. If we run out of t-shirts, that would be unfortunate. But if a war broke out, we would probably survive.
+
+Ben: And you're identifying that it's not mission critical. Whereas, semiconductors, for example, are mission critical.
+
+David: TSMC is pretty freaking important.
+
+Anthony: Yeah, absolutely. By the way, if China moves on Taiwan, that's a big problem for us, especially if we have a national security issue. Those are the sorts of things. But on top of that, I think we have to get some of these raw materials going here as well.
+
+That can be uncomfortable because there are environmental impacts. But what I would say to my folks who are more concerned about that, is, this isn't 100% true, but by and large, the United States has higher standards around our manufacturing and the cleanliness and sustainability of our manufacturing than other parts of the world.
+
+A ton of steel made in the United States is going to be made with less energy intensity than most parts of the world. Not all, but most, and certainly, China. There's no silver bullet, but I think you solve a variety of your goals if you want a dynamic, resilient, and sustainable economy, by bringing a lot of this production, in particular, the most critical pieces back home or with our most trusted allies.
+
+Ben: It's such a prisoner's dilemma on the sustainability versus dynamism front, because, okay, let's just simplify the problem and say the US spends more money to make the very same steel, but does way less pollution. China does weigh more pollution to make cheaper steel of the same quality. I know those things aren't necessarily true, but let's just assume that it's a clean box problem.
+
+We all live in the same atmosphere. If you take it as a given that they're going to keep doing that as long as we're willing to keep buying it, then are we actually helping the sustainability goals by saying, hey, let's not produce here because that would be a way to contribute to solving the problem by being the leader and the first mover.
+
+Anthony: That's why I think from a policy standpoint, it's so important that we, at the government level, invest in the R&D necessary to literally invent the answer to that question. My belief is the answer to the prisoner's dilemma is we have to invent the answer. It doesn't exist today. There's no obvious answer to that. You are literally in a prisoner's dilemma. Unless we find a way to develop cheap but also sustainable steel, we're going to forever be in that particular box.
+
+Some legislation that I hope will pass very, very soon that I'm working on would basically fund demonstration projects for clean steel to do exactly this problem. I think steel is one thing. That's on the manufacturing side, but you can also look at agriculture, transportation, energy generation.
+
+Most of those sectors have similar trade-offs to what you just described. My view is, the only way we can really do it on a global scale, is if we make the green alternatives so cheap and reliable that everyone everywhere would say, hey, this is the best thing to do for all sorts of reasons. That's way into the future, what I just described. That's probably a 20- to 50-year journey.
+
+I don't know how to solve the sustainability goals otherwise, because I think something like 50% of the people born in the world in the next 50 years will be born in Africa. How do those economies power themselves? They power themselves largely on fossil fuels, and then they're developing the economy. So what are you going to tell them? Hey, sorry, you have to take this really expensive steel and your people have to stay impoverished? Absolutely not.
+
+Ben: It's deeply oppressive to say we spent the last 100 years expanding unbelievable amounts of energy to build this incredible nation that we live in. But sorry, the atmosphere is super polluted now, so none of you are allowed to do that, and we're going to use military muscle to make sure that's true. That's oppressive. You need to innovate your way through this problem.
+
+Anthony: That's my personal view. Yeah. You said it better than me. My view is that the answer to this is it's a market design question, but it's also an innovation question. I think our responsibility again at the governmental level is to make sure we're funding that R&D so that we get there. No private enterprise can underwrite a 50-year R&D project. The payoff is not there.
+
+Ben: This is our argument on the TSMC episode. Only government-scale investment actually could have a prayer of succeeding and creating the next TSMC elsewhere.
+
+David: And TSMC was a government-seated company.
+
+Anthony: Yeah. In Congress, we're about to pass this Chips Act, which is a bit controversial, but its goal is to reshore semiconductor manufacturing here in the US by providing subsidies, grants, and all kinds of incentives to get folks to build fabs here. It happens to be that Intel has announced a massive investment in Ohio, so I'm pretty excited about that. I want to see that get done.
+
+David: I totally agree. That's what we've always done is innovated our way out of problems.
+
+Anthony: Exactly.
+
+David: I don't know if it's the American way. I think it is, but it's the Acquired way, at least. Let's put it that way.
+
+Ben: It's definitely the human way. Human beings are unbelievably good at growing and surviving. I think humanity will continue to bump up against the edges of its environment until it innovates a way to continue to spread and prosper.
+
+Anthony: Yeah, and I'm totally bullish on our ability as a species to do that. I'm particularly bullish that America is going to lead the way because I think we have the best system for it. The free enterprise system is unbelievable. If you want evidence, think about how awful our politics are, but how strong our economy is. On a relative basis, we should be in a much better position than we are politically, but that's the power of free enterprise. You set the incentives up, you turn people loose, and they create some unbelievable things.
+
+David: My question is, what do entrepreneurs and investors do? If you agree that the dynamism part of the American economy needs to be reinvigorated, let's take Ohio. Are new steel startups going to get started in Ohio? What's the right way to approach this? Is it legacy companies? Is it a combination of both?
+
+Ben: I think it's all of the above. Governors all over this country want their states to be more dynamic and want their economies to be stronger. They want to attract more people generally. In Ohio, I always think the way to approach it is to leverage the existing assets that you have.
+
+Most people don't know this, but Columbus, Ohio, in particular, is starting to develop a pretty nice tech scene. There's a company called Drive Capital which was started by Mark Kvamme, who some of you all might know. His fund is doing incredibly well.
+
+They've had a handful of IPOs in the last few years and some solid acquisitions. As a result, you're seeing this burgeoning tech scene more on the software side in Columbus, Ohio. A lot of it is in the insurance space. We happen to have an incredible insurance industry in Ohio as well.
+
+Ben: It turns out, nationwide people know a lot about how to create new insurance products.
+
+Anthony: Exactly. You have this sort of nice little flywheel building around software, insurance, and technology. Then the capital and expertise is there with Drive Capital. Layer the Intel investment on top of that, and we'll have some giant fabs and investment happening right outside of Columbus. It's a trite term, but you can see sort of a Silicon Heartland sort of dynamic taking place.
+
+What we'll need to do is find a way to become great at advanced manufacturing, chip manufacturing, and all those sorts of things. We're going to actually have to build the facilities and the support services around them. That's going to happen in Ohio, and that's really exciting. That's just the Columbus area.
+
+Northeast Ohio, Ben, as you know, the Cleveland Clinic and University Hospital are two of the most innovative medical facilities in the world. I think we need to do a much better job as a region connecting the innovations that are happening inside the walls of those two great institutions out to the broader ecosystem.
+
+I think if you sort of look at the pockets throughout states and see, okay, what assets do I already have, how can I leverage them, and what's fast growing, high growing, I think you can start to piece together a strategy. Take a step up to a national level.
+
+I think you need to have the incentives put in place, such that as we transition away from fossil fuels and towards more clean energy, we're doing as much of that development and manufacturing here as possible, that we're mining the minerals here, and that we're building sustainable supply chains around that. That could be anywhere. That's sort of how I think about the economic challenges that we have.
+
+David: It's interesting. This dynamic has always been true. But now that Silicon Valley mindset is really a diaspora at this point, across the country and the world, obviously, one of the things I always thought when you and I, Anthony, were there lived first hand was that, Stanford really got this from a policy perspective in a way that no other university ever has, which is to my mind, I always boiled it down as the simple idea that if you push the innovation out of the university, let people make money on it, you will do better as a university than if you try and hold it within. That, to me, is a big part of the story of Silicon Valley.
+
+Ben: Famously, Stanford only took 1% of Google when it was a Stanford graduate research project, when most universities want 25%–50%-plus of anything that they call tech transfer. It's not even like, oh, it was your idea in the first place and we'd like the piece of it because it was developed here. It's like, oh, we're transferring it out into a company. It's right there in the language.
+
+David: Jensen Huang was a grad student at Stanford, as we talked about, while he's starting NVIDIA. There's a Jensen Huang building at Stanford, and it's not because Stanford took equity at NVIDIA in the early days.
+
+Anthony: The inertia behind some of these really good, important early decisions is incredible. Once you get it right, these flywheels develop and they're just so powerful. They're powerful for your community, they're powerful for the country, and we need as much of it as we can get.
+
+Ben: Anthony, on a closing note, let's bring it back to you personally a little bit. You're not running in the next election, so what do you think the future holds for you as you focus on the next chapter of your life?
+
+Anthony: It's a good question. Admittedly, my primary focus is finishing strong. I have a handful of pieces of legislation that I'm still pushing, that I'm hopeful we can get across the finish line. That's the primary focus. But I am starting to kind of go through my notes again, and reread my business school notebooks, and go through experiences. I keep notebooks at all times. It's kind of fun to go through and relive some of those experiences, building businesses, but also in business school.
+
+I think I'm still trying to work through, do I want to be an investor or do I want to be an operator? I've done operating and I enjoy it. I enjoyed the heck out of building our campaign team, which is a startup in a way, and I enjoyed the investment side.
+
+For me, what I'm trying to figure out is, who in my life do I admire and what kind of businesses do I want to build? I think of the IGSB model, and I just think it's fundamentally an incredible model. The success is outrageous. For those of you who listen to the Altos Acquired episode, it's probably most similar to that.
+
+David: It's a truly incredible story. It's called the investment group of Santa Barbara, but it also came out of Stanford GSB. Really, just two folks and a very small handful of people over 50 years have compounded at numbers that are unbelievable.
+
+Anthony: Yeah, it's crazy. Basically by sort of doing the Buffett model but with high growth companies. Be super concentrated, don't get outside your circle of competence, and focus on the underlying economics of the business. What they would say is we also only work with people we like and admire.
+
+That is probably my top priority as I move forward. I want to be in a position where I love the people I work with, I admire the people I work with and for, and I'm working on exciting new challenges. That's sort of where I think I'll be the most effective. Again, whether it's operating or investing, I guess time will tell. But I guess we're also all just a little bit of both at the end of the day, right?
+
+David: Yeah. Capital allocation is the number one most important skill of a CEO. Many people would argue.
+
+Anthony: Yeah, that's certainly the Will Thorndike perspective, right?
+
+Ben: Absolutely. We should plug Will's new thing here.
+
+David: Oh, yeah.
+
+Ben: If you like The Outsiders and you liked our book club with Will back in the day, he's got a new podcast called 50X. That's the first episode. I think he's with the CEO of TransDigm, which is a great episode. David and I got an early sneak peek.
+
+David: Yeah, it was part of our friends over at the Colossus Empire.
+
+Ben: That's good for me. I got to pick that up.
+
+David: Oh, yeah. It's really good.
+
+Ben: It's unbelievable how they've grown into a truly excellent manufacturing company, both organically and by acquisition over the years. It's an impressive story.
+
+Anthony: TransDigm is Nick Howley's company.
+
+David: Yup.
+
+Anthony: I know Nick well.
+
+Ben: Oh, nice. Yeah, it's Will interviewing Nick.
+
+David: We have a small minority, but a very vocal small minority of Acquired listeners who are just campaigning for a TransDigm episode.
+
+Anthony: Nick would be great on the podcast. I don't know if you've ever heard Nick speak, but Nick is incredible. He's super fun, entertaining, and gregarious. He's a Cleveland guy. He's awesome. He'd be a good guest. He'd be better than me. You should get him.
+
+David: This has been pretty good.
+
+Ben: We'll add it to the list. Listeners, go check out 50X.
+
+David: All right. We won't make you answer what you're going to do next. But I'm curious, where would you steer founders? I think there are a lot of people out there right now, always, who are listening who want to found companies, I think especially if these ideas that we've been talking about with Katherine, with you, of American Dynamism, resonate. Where do you think founders should go poke around and dig to start companies?
+
+Anthony: It's a great question. Admittedly, I'm kind of thinking of the same thing.
+
+David: Don't give away your best ideas, maybe your second best.
+
+Anthony: This isn't going to be that profound. To me, I look for industries that have enormous tailwinds, like, where's the growth going to be? And then, where can I fit inside of that, if at all? There's probably going to be enormous growth in vaccine development and pharmaceuticals. I know nothing about it. I hope everybody does phenomenally well in that space, it's just not going to be for me. Outside my circle of competence, I love everyone in it, not for me.
+
+But are there ways to marry my experiences on decentralized systems and sports or entertainment? Probably. Is that what I'm going to do? I have no idea, but I do think there are some interesting tailwinds on the decentralization side. There are certainly interesting tailwinds on the climate movement and how do we decarbonize the economy and do it in a way that's responsible not just for our people, but for the entire world.
+
+It's probably the biggest theme, frankly. I think it's probably a 50-year theme. Definitely for the rest of my career, I think we'll be working on that. Where are your skills going to be the most valuable? And where do you have the ability to do the best job, which is sort of an obvious point, but I think it's an important one.
+
+I think a lot of times, people think, oh, there's a lot of money to be made over there, I'll go over there. If you're not a good fit for that, you're just going to be fighting uphill. That's what I would tell founders. Focus on the things that you can be the best in the world at that have a bunch of tailwinds behind them, and surround yourself with people you love and admire. The times that I've gotten it wrong in my life is when I put myself in positions where I'm not with people I love and admire. When you're in that position, things can break down and they break down quickly.
+
+David: Amen. I 100% agree with that. That is true good wisdom from the NGSB folks and many others.
+
+Anthony: For sure. The most fun times I have in my career and the most meaningful are always with people I love. It's not even like-minded people. It's like people from all different backgrounds and creeds and colors. You come together in these interesting environments and you build something amazing. It's so fun and interesting, and you'll learn so much.
+
+That to me is where the development is, it's in those uncomfortable moments. Anybody can go be comfortable. It's sort of where you can push your own limits and do it with people you love. I think that's where the growth comes. That's what I enjoy the most.
+
+Ben: Anthony, it's a bummer that we're all going to lose you as someone representing us. I got to say it's going to be nice to have you back building stuff again.
+
+Anthony: I'm excited to finish it out, but I'm excited to get back out there. It's a great big world out there, I just got to find my place in it.
+
+Ben: Anthony, thank you so much.
+
+Anthony: No, thank you. This has been fun and an honor. I appreciate you having me on.
+
+Ben: With that, listeners, our thank you to Vanta, Brex, and Tiny. If you are interested in any of these sweet, sweet discounts that they are offering or to sell your business to Tiny or explore even what that could look at, the links for all of those things are in the show notes. After you finish this episode, come discuss it with the other 12,000 smart members of the Acquired community at acquired.fm/slack.
+
+Many of you know this, but we have something called the LP Show. If you want more, you can go to any podcast player and search Acquired LP Show. Our next episode is an interview in partnership with the Solana Foundation. We had a seriously longtime listener, like 2016, Austin Federa, join us for a primer on the state of the crypto and Web3 ecosystem today.
+
+David: It's actually going to be a great companion episode to this episode.
+
+Ben: Totally. It's frankly very helpful just to understand what is the terminology that everyone's using, what does it mean today, how are all of us sort of sharpening our pencils on better understanding what this landscape looks like, what's useful, what did we think was going to be useful but didn't really play out? That will be live soon in the public LP feed that you can find at any podcast player. If you want that episode early, it is already live for paid Acquired LPs at acquired.fm/lp or by clicking the link in the show notes.
+
+Lastly, if you are looking for that next great move in your career, check out acquired.fm/jobs. Those are all curated by us here at Team Acquired. We hope to hook you up with an opportunity that frankly we think is really interesting. With that, listeners, we will see you next time.
+
+David: We'll see you next time.
+
+‍

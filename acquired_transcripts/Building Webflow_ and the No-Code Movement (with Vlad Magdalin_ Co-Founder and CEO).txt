@@ -1,0 +1,507 @@
+Ben: Welcome LPs. Today we are doing an episode I have been excited about for a long time with Vlad Magdalin, the co-founder and CEO of Webflow. Did I say that right?
+
+Vlad: Yup.
+
+Ben: Alright, good. 
+
+Vlad: If you go for my full name it’s Vladimir Konstantinovich Magdalin. 
+
+Ben: Next time we’re on the show, the whole thing prepped. 
+
+Vlad: It’s a very intimidating. 
+
+Ben: Webflow is a company I’m personally very passionate about since I grew up as a web developer always fighting between building websites from scratch in PHP and hand coding HTML and CSS. 
+
+Vlad: PHP. Facebook days. 
+
+Ben: The LAMP stack, baby. There were WYSIWYG editors out there. 
+
+Vlad: You’re dating yourself then. 
+
+Ben: I know. Like Dreamweaver but they always required you to do all the hosting yourself. I don’t know the state of the price today. This is 12-year-old data. But generated garbage code and Webflow has been an amazing answer to provide the ease of use of a graphical user interface while still being an enormously powerful tool. We personally use the site for Acquired, we use it for PSL, and basically all of our portfolio companies use it as well. 
+
+David: It’s so powerful that even I can now update the website and add. The last time I wrote a line of code, I think I was probably 20 years old. 
+
+Ben: Yeah. Vlad, I have the designer creds, David has an editor log in. So, who is Vlad? Webflow, while most of you may know this company only from the last year or two, it is at least a decade-old company that I believe Vlad, you started as a side project in 2005?
+
+Vlad: Yup. It was actually something that started when I was still in college, when I was working at an agency part time as an intern, and then turn it into my senior project and turn into a couple of failed attempts at starting it as a business. Then I joined Intuit, worked there for a while. Then had another failed attempt at turning it to a business during the Web 2.0 heyday. And then finally, started it hopefully for the last time in 2012. 
+
+David: Wow. All attempts to start the same business. 
+
+Vlad: Same business, same name, different co-founders every time. Two of those attempts just by myself, looking for a co-founder. The third attempt was actually with two Intuit buddies. That attempt didn’t work out and we can go into the history behind that. It sort of fizzled out and over time, one of those co-founders ended up starting his own company, got into YC, got acquired by Stripe and then came back as a senior product manager here. That’s one of our product leaders.
+
+Ben: Circle of life. 
+
+Vlad: Exactly. I worked on it in many different iterations with multiple people and finally something worked. 
+
+David: That’s so cool. While we’re getting to all of that. 
+
+Ben: It’s the 2012 version. That was the start of the company.
+
+Vlad: That’s the best vintage so far.
+
+Ben: We know today.
+
+Vlad: Exactly. 
+
+Ben: Wow. I think it only raised maybe a few million dollars between then and now.
+
+Vlad: Yeah. We started in 2012, started with my brother and then one of my buddies from Intuit joined a few months later. Bryant, being the third co-founder. About a year later, we got into YC and then did a seed round, which at the time seemed huge at $1.4 million. Even though other companies were closing the seed rounds much faster or they’re bigger and then we ended up doing a small relative to the extension of another 1.5 about a year later. And then got to profitability and didn’t worry about funding for a long time. 
+
+Ben: That was what? 2015 you get to profitability?
+
+Vlad: In late 2015, yeah.
+
+Ben: Wow. Awesome. Listeners, you should know the company then for the last four years has raised no money, as Vlad said. And then this year raised a $72 million series A from Excel that is coinciding today with no-code movement. We’re getting a little bit of that later on.
+
+Vlad, I want to go back to the very beginning. You alluded to how you started Webflow. Can we talk all the way back like your college project. What was your initial conception of what it could be. My understanding was called Webflow in every one of these iterations, but what was different about the ethos and what you thought the product needed to be in the world?
+
+Vlad: Originally, when the first idea came across, it was not designed to be a visual landing page builder. It’s sort of in the days where Ruby on Rails was first becoming a thing, where those ideas that you don’t have to program everything, you can write some configuration, and scaffold out the database for you. 
+
+David: Like Shopify.
+
+Vlad: Exactly. The key insight came as following all of these tutorials and trying to find out how people build apps. I think the thing that is important here is that I was going to art school right before that. I wanted to study 3D Animation. I want to work at Pixar, that was the dream job. That got too expensive, so I went back to study Computer Science. Finally listened to my dad of like, “Hey, that might be a better career path.”
+
+David: Was your dad or your family engineers?
+
+Vlad: Sort of. We all grew up in Russia. Russia was 10+ years behind on technology. I wouldn’t call it computer engineering, it was more like get old computers and try to repair them and try to find schematics. My dad did do some programming, but he was mostly like IT set-up networks, install. 
+
+Ben: Before Amazon. 
+
+Vlad: It wasn’t like mainframes but it was computer administration. He was the guy to go to get software which, at the time was not always on the up and up. I’m probably throwing my dad under the bus here, but it’s been a while. Statute of Limitations or whatever and we all know what we did with Photoshop back in the day. 
+
+David: Some of our more classic episodes, we should talk a lot about software distribution back in the day, there was no internet distribution. There was but it was not on the up and up. That’d be really fun. Maybe when we cover Microsoft to talk about distribution, legal and otherwise in that area. 
+
+Ben: Yeah. I think a lot of people’s careers were built on that. I first got into graphic design using CorelDRAW which I remember downloading from somewhere and then Photoshop, et cetera. I remember Microsoft had this strategy of whatever. As long as people get used to it, which is their strategy in Russia and China. They built their entire business on it and then you monetize. But that’s a whole probably different episode. 
+
+David: Probably in a lot of ways leads into Webflow. In your premium model and all that.
+
+Vlad: Anyway, jumping back to the original insight was I was working at this agency and my whole job was at the creative department. We’re building these CMSs for large companies like Apple, HP, Tennis Channel, Quicksilver, et cetera. The amazing creative department were doing the websites, designing what they were going to look like.
+
+My entire job as an intern —I was being paid minimum wage plus a dollar, which I was really proud of—was to take their designs and put into this custom CMS that the company had. The entire workflow was look at the layout, build in HTML and CSS, and then right out the SQL to update, read, fetch data, update it, delete it, et cetera. It was pretty repetitive. Every different data object was the same thing with a slightly different variable or whatever. I was okay with that, that was the state of the world. 
+
+One day, I wasn’t supposed to see this, but on the desk of the creative director was an invoice for the Tennis Channel and each line item was for each data object like player, program, or whatever. Things that took me three or four days to implement plus the design cost. Not sure how many days that took to design; that was the truly innovative work—create the brand, work with the customer to tell a visual story, whatever. And each line item for that I was probably being paid $300-$400 a week to do was over $100,000.
+
+That was the value that it provided. Immediately I was like, “Shoot! This needs to be automated where that design team should at least have an…” The original insight was not like a design tool that generates this stuff, but almost like a visual logic builder for Ruby on Rails to generate the things you would write out that would scaffold things, one layer above that, like a visual dragon drop thing, like a form builder that would then scaffold out the scaffold. 
+
+David: What time frame was this? Early 2000s?
+
+Vlad: This was the end of 2004–2005ish. 
+
+David: That’s crazy. Where are you getting into the Web 2.0? Old school companies are still paying $100,000. 
+
+Vlad: They’re doing that today. I wouldn’t be surprised if there been today like Sitecore and all these massive quadruple installations. It’s super valuable. 
+
+David: I worked at the Wall Street Journal briefly and our CMS and the amount of money that we paid in consulting fees and sign-ups, it was insanity!
+
+Ben: Yup.
+
+David: You can probably build a better product on Webflow now. 
+
+Vlad: Absolutely. 
+
+Ben: Feel I was like a certainly [...]. This code generation was the initial…
+
+Vlad: That was the initial thing more for like the back-end side of things, like how do I generate the database. 
+
+Ben: Like how do you automate your own job.
+
+Vlad: Yeah. How do you automate the forms that take data. But in order to pull that into a template, I was still imagining you have to write HTML and CSS, and [...] today that same way that you would with React and GraphQL today or whatever. That insight didn’t come. I wrote my senior project on that concept, like how do you automate the creation of back-end flows without needing a developer. I think I still have the opinion because I spent so much time and so much effort learning HTML and CSS, that I didn’t believe that it was possible to automate at that point. 
+
+Ben: Isn’t it funny how that’s like a trend where once you acquire what you consider to be unique knowledge, you’re like, “Oh this isn’t something that software can do. Now I hold the magical keys to accomplish this thing.”
+
+Vlad: Exactly. The third attempt was 2007 going on 2008 when I try to start it with a couple of Intuit buddies. This was already when Web 2.0 was in full swing, YCombinator was a thing; they had a couple of batches already. The convertible notes were starting to become a common way to get started quickly. We got incorporated, we did the whole thing around splitting the company and the equity or whatever, started building pitch decks, started talking to investors. 
+
+David: Were you in YCombinator at this point?
+
+Vlad: No. We are planning to apply, we had created the C Corp or whatever. Then Weebly became a big thing, like, “Oh, crap.” We knew that they were doing very cookie cutter sort of template stuff. You couldn’t do a lot of back-end custom data thing. Still, we thought there was an opportunity there. 
+
+Ben: How did that compare to Squarespace at the time?
+
+Vlad: It was very similar. I think Weebly were lower priced and they’re going for the strikingly later became another version of that, that is even lower priced, that you could build landing pages even faster. But it still very much targeted directly at small businesses. You’d pick a template, move some stuff around and press publish. I think they had an ecommerce component but I don’t remember. Anyway, I just remember feeling intimidated by them because they got into YC and it’s sort of game over for us.”
+
+David: We keep going with this story, but I like to come back at some point and talk about, you see that sometimes in a category where it can feel like it’s overcrowded. We could reel off a tone off quasi competitors to you guys, and yet, there’s room for differentiation and for multiple, really big companies to be built. 
+
+Vlad: That is the case looking backwards when we were in, “Oh crap! We’re way behind. I don’t know if it’s worth pursuing that.” 
+
+Ben: You also don’t know what the market segments are going to evolve into when you’re pitching yourself as, or honestly just emotionally trying to decide, “Where do we fit into this puzzle?” You don’t know where the big pieces are going to be, you don’t know what pieces sound good but are actually non existent. 
+
+Vlad: Right. That’s something I’ll get to a little bit later, but you even have those thoughts when you have some semblance of product/market fit, when things are working and you’re kind of like, “We’re not working well enough, so we must have something off or whatever.” 
+
+That third attempt actually failed for stupid reasons. Because we had incorporated and then filed for a trademark, and then filing for the trademark because we have the domain. I thought getting the domain was the hardest part in the Web 2.0 era when everybody is dropping letters just to get something to work. We got all of our bases covered so we filed for a trademark. 
+
+Because we filed for trademark, I guess somebody who already owned a trademark for Webflow for a different category or whatever, saw that on their trademark notification service or whatever, and they sent us a cease and desist, like, “Hey, we already have early filing.” It was this company in Florida and I guess they were developing a product. Not a website creation space but an elearning space that had something to do with the websites. We basically ran out of money trying to fight that. 
+
+David: Have you raised money?
+
+Vlad: We had not raised money. We got $15,000 from lawyers to sort of like, “Hey, we’ll take a small cut of equity and we’ll cover your incorporation or whatever. You don’t have to worry about until you raise,” and then just some personal money that starting from scratch was mostly on credit cards. 
+
+Ben: You didn’t raise money, you’re not generating revenue, and you’re already embroiled in a legal battle. 
+
+Vlad: Exactly. I wouldn’t call it a legal battle. It was more like there was a volley lobbed at us and it was more of a battle with our lawyers and them telling us, “It’s not worth it. You’re just going to pay us tens of thousands of dollars just to send emails back and forth,” and these are high-powered Silicon Valley lawyers that are, at the time, were $500 an hour or something like that. 
+
+We got totally discouraged. We went back to the drawing board, started looking for new names, created a bunch of logos for this version called Markdup, like HTML markup, except you couldn’t get the domain.
+
+David: Markdup. I feel like now that would mean like a venture firm that does grows stage rounds, Markdup.
+
+Vlad: The idea of running a company called Markdup and us spending four months trying to rebrand. One of the co-founders dropped out and this is our first job at Intuit. The idea first came when we were in a very, very early few months where there wasn’t a lot of pressure work but then work picked up and it fizzled out. Personally, I was really discouraged by not being able to use the name, and the job got interesting at Intuit. 
+
+David: What were you doing there?
+
+Vlad: Initially, I was working on payroll, which is not great, but then about a year in, I switched to their innovation lab, which is amazing. I got to work on this product that essentially I invented in what they call 10% time or Widespace time. It was called Brainstorm. It was around sharing ideas internally. It was almost like an internal Facebook for sharing ideas that centered around business ideas, where you can develop them and get execs to sponsor in and they would have idea jams. 
+
+Ben: Did anything every ship out of that?
+
+Vlad: A ton of things. 
+
+Ben: Cool.
+
+Vlad: It was like the first version of TurboTax on mobile. I remember coalescing a small team through idea jams but we had thousands of ideas and then a bunch of them actually made it to become products. We ended up productizing it, selling it to other bunch of other companies, became a multimillion kind of ARR of business in a pretty small team. 
+
+Ben: That’s cool. 
+
+David: This is total aside. We got to cover into it someday because that’s a talk about narrative violation. I’m laughing because the New York Times article. First time Acquired made the New York Times and Ben was quoted as...
+
+Ben: Talking about narrative violation.
+
+David: But I think people think Intuit as this super stodgy, old school, not innovative, not fun company. But I think that’s actually not the case at all. 
+
+Vlad: It’s not the case at all. I think it’s a great company. They've put a lot of thought into empowering people to bring the best ideas forward. The founder, Scott Cook, is always around, roaming the halls. I remember an article when we joined straight out of college, I think he was spending more time with us than other parts of business. Maybe that says something about other parts of the business. I don’t know.
+
+David: Bill Campbell, the coach was Intuit. John Danahoe, from eBay came from Intuit too, am I remembering that right?
+
+Vlad: I think so. We were going to spin the business out into a separate thing because they had nothing to with Intuit’s core thing. 
+
+Ben: And this is the product for companies to empower individual ideas to rise to the top. 
+
+Vlad: Correct. Because Intuit’s whole schtick is small business software, taxes and accounting. We had this tiny (by their standards) SaaS product for idea exchange or whatever. They were going to spin it out, but at the end of the day, Bill Campbell said it was probably not a good idea to set the standard of Intuit subsidizing startups that had nothing to do with the core business, which I think it was the right call. 
+
+Anyway, during that time, when it was pretty clear that Intuit was not going to keep prioritizing this brainstorm thing. I started working with my younger brother, who was the best designer. He’s working at a skate shop in San Diego and we started building a bunch of websites together. Just for [...]. I have kids at this point, trying to make ends meet, planning to buy a house, was trying to get all the income I could get. I started with my dad’s boss who is a dentist, built his website. Dentist know other dentists, sort of recommended to other dentist, until I’m building a bunch of dentist websites.
+
+Ben: Viral strategy. 
+
+Vlad: Yeah. We almost started expanding to orthodontists. Actually, dentists, if you are listening, and people run agencies, dentists are the best because they are not super price-sensitive, they do a lot of business for their websites, and usually use super old builds that somebody else created for them for tens of thousands of dollars. They’re not getting value out of it. For building websites, dentists are [...].
+
+We were just jamming on creating all of these websites and he would design them in Photoshop. Every project was different, sort of talk to the client, see what they need, what kind of story they want to tell, or whatever. Dentists have stories to tell, apparently.
+
+David: You have a [...] audience. 
+
+Vlad: Yeah, exactly. There’s a bunch of puns in there. I was building all of them in WordPress. I would translate them to HTML and CSS or whatever. That’s when finally the final idea of what I’m doing is not just repetitive, like creating these custom post types, or databases, or whatever. Almost every single build that I’m doing is kind of the same thing. The same workflow for creating layouts, the same kind of workflow for creating pages. I was getting honestly really tired of it because it was really tedious.
+
+For Sergie, it was really exciting because every new design, there’s a new project. You do it once, you get it over with, where I was dealing with WordPress installs, theme upgrades, security patches, hosting and all this crap that you mentioned in the beginning. It was so tedious that I just wanted out. 
+
+When this Intuit thing was winding down, out of the blue, I kid you not, end of 2011, to my house—I’ve moved three times from the early Intuit days, when we’re living in the Bay Area, I was now in Sacramento—arrives just five years later, an envelope, a hardline envelope, that has a trademark certificate in it, for Webflow. I guess from the original application and then something about the other company in Florida. Their thing lapsed and they didn’t renew and we were on some list. I still don’t know how it happened. 
+
+David: It’s a sign.
+
+Vlad: Yeah, exactly. And we were already in a process like buying a house. I try to buy a house in Sacramento and I was like, “Okay, this is a sign.” Something is happening here.
+
+David: Total aside, but I was listening to a podcast with Scott Adams, the [...] guy, and the same thing happened to him. He was a business dude. He wanted to be a cartoonist. He talked to a famous cartoonist and got some advice. So, it’s like, “Okay, good.”And then he writes some cartoons, sent them out to everybody, get rejected. He’s like, “Okay, I gave it a good try. I’m going back to the business world.” A year later, the dude he went for advice sent him a letter in the mail, and he’s like, “I just want to make sure you haven’t given up yet.” And he got that and was like, “Okay. Let’s do this for real.”
+
+Ben: The universe telling you. 
+
+Vlad: Yeah. I still wasn’t super convinced. I was trying to plan. Okay, what’s the angle here, et cetera. Responsive design becoming a thing at that point. You have one code base across breakpoint and the same code base responds as you resize your browser and sort of works on mobile, et cetera. It’s still didn’t click, like there was a huge opportunity there. Until one day, this is early 2012, somebody randomly shared a video on Facebook. I assume people used to use Facebook. I don’t know if you guys are…
+
+Ben: Sick burn.
+
+David: It’s all that TikTok these days. 
+
+Vlad: Exactly TikTok all day. I saw this video called Inventing on Principle from this guy Bret Victor, and he was all about direct manipulation. The impact of direct manipulation, that category of software has disrupted so many parts of what we know as technology today, including simple things like word processing. It used to be that you have to switch between modes. Only programmers will be able to use it, to now we have 3D animation software.
+
+He painted this whole picture of being able to build games and define electric flows if you’re trying to create a circuit board or whatever. Where applying a visual language to something that’s technically, really traditionally, more complicated or you have to do a lot of things in your brain and translate it in your brain. Saw that video, immediately the next day put in my notice and said, “I’m starting Webflow.” This is just the combination of those things, is just way too many signs, and made a decision right there without another co-founder or whatever, and then pretty soon after talking to Sergie, I was like, “Hey, I need a designer. Can you help me out on a contract basis?” He’s like. “I don’t know. I can’t do that right now.” Eventually, a month later, convinced him to join full-time. 
+
+Ben: That’s awesome. I had not made this direct manipulation connection. Do you know what Bret Victor did before releasing that video and before doing a lot of the research stuff that he’s doing now?
+
+Vlad: No. I think he was working at Apple, right?
+
+Ben: He was. I believe he worked on the original iPhone team and one of the core tenets of the iPhone, I think a lot of people call it multi touch, but when we really dig in, one of the core tenets of that team was that things on the phone, when you’re interacting with them don’t use a metaphor for interacting. You don’t have a button to close a window, you close the window directly.
+
+Computers to this point had very much been about using metaphors, all the way to the mouse as a matter for the pointer on screen. And the iPhone was like, “No. We need the latency to be so low, we need the pixels to be so close to the screen. Everything should feel like you’re literally interacting with the objects. Since where you get this incredible skeuomorphic design.” It makes so much sense that that would kickstart this era of why are we using all these translation layers and metaphors to build websites we should be directly interacting with.
+
+Vlad: Exactly. That was the final spark and that’s exactly what Webflow became. Was like how do you turn what developers are doing within a text editor and sort of like mentally mapping, “Okay, this is what I mean. This is actually what I want.” which is a totally different paradigm than how other creative disciplines work. You don’t sculpt by pushing in and then going to check if that’s what you meant. You have this direct connection to the thing that you’re...
+
+Ben: Brings you closer to the art. 
+
+Vlad: Exactly.
+
+Ben: This notion isn’t brand new. The direct manipulation is a great insight and the timing is interesting, but WYSIWYG web editors had existed before. It’s like the right ones run anywhere, it’ll finally be good this time. It’s still not good this time. Why is it that Webflow has really found product/market fit and created this nice product with a web-based WYSIWYG editor when it’s failed so many times before. 
+
+Vlad: Two things. One, I think if we tried the same exact thing in 2007, we would've failed and I’ll tell you why. The reason direct manipulation works in Webflow is that we have the real thing inside of the browser itself. Webflow is built in a browser. You can think of Webflow as dev tools or web inspector with a lot more visual tools on top. What a lot of other WYSIWYG tools try to do was like, “Hey, we’re going to take a graphic design tool, like Photoshop or Illustrator or Sketch or whatever and we’re going to try to randomly best guess what the generator code should be.” It’s an approach that doesn’t respect the core principles, the core foundations of what the web is. 
+
+The web is, you have these DOM nodes. There’s essentially boxes on top of boxes inside of boxes, et cetera, and everything is a box. You want to make a circle, you have to make a box with rounded corners, that’s a circle. Or you have an SVG or something like that. I think Webflow is the very first application that said, “Okay, here are the core primitives. You have styles, you have classes, you have CSS abstractions and what we’re going to do is create a pretty shallow abstraction that still forces you to understand those core principles, not necessarily the core syntax.”
+
+For example, when you’re doing layout in Webflow, it’s Flexbox or CSS grid. You just don’t know it. The visual tools built on top of it are a representation of those same alike constraints and limitations. They’re not like draw anything and then we’ll try to guess what the code is. 
+
+Ben: It’s literally like adjust the margin and padding. 
+
+Vlad: Exactly. You almost one to one making code changes, you’re just doing it through a different language. It’s almost like if you’re using software to create music, you have to understand the core principles of music. You might not have a piano in front of you, you don’t get to cheat by saying, “I’m going to create a masterpiece by not understanding good rhythm, et cetera.”
+
+That’s the same thing with Webflow. It does have a more advanced learning curve because you have to understand the box model. Because you have to understand, you don’t just draw a box and then go drag it anywhere. You have to think, okay when the screen resizes I have to think of this box as being 50% of the width of the current viewport not 500 pixels. And then when I resize, I change it to 495 pixels or whatever. I have to think in the way that a good developer would think, but we’re erasing 95% of the complexity in knowing how to glue all these things together, et cetera.
+
+The other thing that made it possible was that when we first started building it in 2012 was the first time that browsers are getting good enough, just like Chrome 1.0 days. Safari and WebKit were using the same engine. Firefox and Internet Explorer were the old guard in terms of like, “Hey, this is the way to view documents,” or whatever. But Google’s really pushing Chrome as an application platform. Google Maps set the standard of what’s possible as an interactive type of thing in a browser. That was impossible in 2007, 2008, et cetera.
+
+I order to create that full abstraction of I’m previewing exactly what’s going to ship, you have to actually show that in the browser in an iframe or something. And browsers just didn’t support that until 2011, 2012, 2013. That’s when browsers kicked into gear of like, “Holy crap. This is the next wave of application platform.”
+
+Ben: Fascinating. 
+
+David: I’m rewinding a little bit. I remember buying shares of Google when they launched Chromebook and Chrome OS. At least it sounds like, “Oh, yeah, okay. Google is going to use its weight to push the browser forward as an application platform,” and then sold them way too early.
+
+Ben: All right. Vlad, catch us up to today. Obviously lots changed between 2012 and 2019. What has Webflow evolved into? How do you best describe it today? Tell us a little bit about the company. 
+
+Vlad: Sure. We first started like a landing page builder. We’re thinking how do you empower Sergie to build dentist websites. And dentist websites only go so far. 
+
+Ben: Did the two of you co-founded as brothers?
+
+Vlad: Yes. 
+
+Ben: That’s the TL;DR?
+
+Vlad: Yup. And then Brian joined shortly after. We had worked together in Intuit and then he went to co-found another company called Vungle. 
+
+Ben: Oh, yeah. Wow.
+
+Vlad: Yeah, and joined as soon as he could because there was a lot that depended on him. He joined and then a few months later we got into YC and then hit the ground running after that. 
+
+David: When you applied the YC, how did you describe the company? 
+
+Ben: Landing page builder. 
+
+David: We’re in 2012, we’ve always been around for a long time. Squarespace is around. 
+
+Vlad: We did describe it as something like a professional website builder and very heavy emphasis on the “professional” like, “Hey, pick a random set of YC startups and our tool’s the only way that can actually recreate their layouts because we have the full power of CSS.” We didn’t have a CMS at that point, we didn’t even have the ability to create multiple pages or whatever, but that was our schtick of there’s a lot more power here.
+
+There’s a whole story around on how we applied to YC. The first time in 2012, got rejected because we didn’t have any traction even though it was the same product. And then in early 2013, we applied again. Went to our interview. I don’t know if you know the general sequence, but they give you a phone call if you’re in and they send you an email if you’re out on the same night of your interview.
+
+We’re passing time trying to watch a movie, super nervous, grab a few beers, and got this phone call from [...]. And he’s like, “You’re in.” We’re jumping over the moon, called our families, set up dinner, just sort of celebrating or whatever. Went back to finish the movie because it wasn’t over, it was Oblivion by the way.
+
+I’m still nervously checking my phone for whatever reason and then email comes in saying, “I regret to inform you that we loved your presentation, but we think your product is too difficult to figure out for novice users and not powerful enough for developers or professional users,” which is exactly the reason we would give for rejecting us. We thought, obviously the phone call was a mistake. They never said Webflow. Never said anything by name. 
+
+Ben: It’s [...] is responsible for exactly what we’re just talking about [...] and web applications.
+
+Vlad: Exactly. It turns out the email was a mistake. But we had a whole hour of trying to reach somebody over there. It was probably the biggest rollercoaster of emotions of my entire life. 
+
+David: Because at this point, you have your first kid already. 
+
+Vlad: I had both kids. I have 3 and a 1 year old.
+
+David: You have both kids, you’ve left your job. 
+
+Vlad: Yeah, and they’re driving to a restaurant to go celebrate. 
+
+David: Oh my God.
+
+Vlad: Yeah. Left my job. This was already nine months in. We’re like functionally broke at that point, almost bankrupt. My daughter just had surgery for a hernia that popped up out of nowhere. We had catastrophic health insurance. At that point, a lot was riding on.
+
+David: On the phone call.
+
+Vlad: Yeah, exactly.
+
+David:Wow. 
+
+Vlad: After that we launched the simple landing page builder and then started adding all the things that progressively got us closer to where we are today. We added animations and interactions, then we added a CMS which ended up being a pretty big inflection [...] possible with Webflow because it’s not just like a CMS for pages and blogpost. Literally you can build anything. 
+
+Ben: These collections. 
+
+Vlad: Collections, exactly. It’s almost like a visual database. You can create all sorts of relationships, et cetera. 
+
+Ben: Every Acquired podcast episode is a collection [...].
+
+Vlad: Nice. Awesome. It’s very flexible. You should buy it.
+
+Ben: It’s like when Bezos gets interviewed on stage still, he’s like, consider buying your loved ones a gift from amazon.com. We’re like, really? 
+
+Vlad: This is where half their sales come from. Why do you think I’m on this podcast? Just kidding. I’m joking. 
+
+David: [...] Ben’s smiling face. 
+
+Vlad: Then we built our ecommerce platform, which is essentially CMS plus the ability to charge for things. 
+
+Ben: Work with Shopify on that? 
+
+Vlad: We did not. Both of CMS, originally, the idea was do we work with WordPress, but you get 10x the benefit of not having to export to some other thing and having translation later, it essentially means the difference between somebody being able to practice this stuff and not. 
+
+Our Visual CMS became a way for people to not even have to worry about that whole hand-off piece and the same thing with our visual commerce engine. It’s essentially Shopify without all the things that you would need to rely on Liquid, which is Shopify’s templating language that developers have to use. We put that power into the designer’s hands. 
+
+Obviously we’re not competitive with Shopify on a feature-by-feature basis. They’ve had 15 year lead on us, if I’m doing my math right. But for small DTC type of brands and soon we’re releasing digital subscriptions and things that don’t require shipping, et cetera, it’s just a slam dunk because a small design shop or an individual freelancer can build all that stuff that a dev agency that’s working out of Shopify platform can build at 10X the less time and less effort, et cetera. 
+
+Ben: I was going to save this question for later and I know I’m cutting you off right before you bring us to today, but I think this is the appropriate time to ask. There are frenemies and adjacencies and pseudo-competitors all over the place. What do you think about segmentation? What’s the ideal customer profile where you’re like, “Oh, Webflow is totally for you, but if you have these needs and this direction, it’s not for you.”
+
+Vlad: We have a broad segmentation. We know that Webflow is not for you if you’re like a tiniest [...], building your own landing page or something like that. That’s Squarespace, Weebly, Wix. We’re not for the enterprise or your Adobe experience manager or Sitecore. We’re in this big fat middle where it’s startups all the way up to multi hundred persons sort of companies, marketing teams, et cetera, where you need a unique web presence. You’re not going to get away with a template. You usually have some sort of engineering talent, like working on marketing stuff, and moving more and more into not beyond just marketing, like all kinds of applications. I can talk more about that later. 
+
+That’s our very wide but sweet spot. We're not going to pretend that we're an alternative to Squarespace or Wix, even on an ease of use level, because we're as powerful as a WordPress with all the customization thereof but without code. 
+
+David: It’s our journey, too. We started on Squarespace, and then we moved to you guys once we got to a point where this became a real business for us and we need something more powerful. 
+
+Vlad: Yeah. And the idea is that we’ll continue improving at a pace that where you never need to [...]. The same way that Shopify, for example, if you’re running a Shopify store, it’s basically—
+
+David: Tesla runs on Shopify. 
+
+Vlad: Exactly. It’s one of those things where that is your platform where you just worry about your business, worry about your products. they’ll take care of the infrastructure. We want to be the same thing for not just ecommerce but anything web presence-related. That’s why right now we’re focusing really heavily on expanding beyond websites into web applications. 
+
+Ben: You could build a productivity tool in Webflow?
+
+Vlad: That is probably a couple years out, but the first big steps are user authentication and visual logic. That gets you a lot closer to being able to build more Ruby on Rails. 
+
+Ben: Like a stats dashboard type thing. 
+
+Vlad: Exactly. Or even simpler things like product done, or like a basic Airbnb, or like a small social network or whatever.
+
+David: Like the LP Show. We could have a special website. 
+
+Vlad: Yeah. You could create your own CRM. People are going to have login accounts and the idea is that you’ll be able to segment based on transactions that you completed or whatever plan you’re on that you specify, like you have access to specific parts of the site, et cetera.
+
+Ben: It’s interesting. There’s this world of lifestyle businesses that generate low single digit millions of revenue a year, but they’re kind of fun things to own because once you build it, they just spit off cash. They atrophy over time. The codes are going to get old and crusty. But right now you have to be a developer to have that privilege, to have a little side business on the side, where you’ve built a web app and you’ve targeted all the dentist you can, and this vertical niche thing. You’re lowering the barrier to that. 
+
+Vlad: Absolutely. It’s not just lowering the barrier, it’s also a lot of how we think about this is not a replacement for what people are doing right now. It’s the ability for a hundred if not a thousand times more people to be able to access that power. Talk about crusty code, a lot of times why that happens is because you have to control the entire stack. Right now, I can list just that of the dentist websites I’ve built. How many things like outdated jQuery and WordPress versions or whatever. However, when you look at platforms like Shopify and especially Webflow, what you’re doing is you’re declaring the behavior and the look and feel. 
+
+Ben: And you’re abstract in a way [...]
+
+Vlad: Exactly. Behind the scenes. Stuff is changing all the time. 
+
+David: You guys are upgrading. You’re the developer. 
+
+Vlad: Exactly. Stuff is changing. We literally change from jQuery to Knockout to React behind the scenes, the way that sites are powered. CDNs have changed all the time, like versions of Node and all these other technologies have changed behind the scenes. Not a single one of our customers ever notice. We've solved many security issues through libraries that other people use or whatever. We sold them essentially and nobody ever hears about it. You don't have to ever do a template upgrade or a theme upgrade or whatever. You just worry about what this looks like, what the functions like, that's it.
+
+Ben: Yeah, that's cool. The other thing that I want to ask you about is, let's drift into the no-code movement stuff. I wouldn't describe Webflow as no-code. I would describe it as code optional and when you do want to write code, you can write almost whatever you want. You can't go create a whole new controller or something but if I want to put a whole bunch of JavaScript into a single page or an entire collection of pages, I can.
+
+How has that thinking of all for you where WebFlow, five years ago, three years ago, no-code was not a thing and now it's a movement and something that frankly, you get to be a nice champion of? When something comes along like that, it's not exactly what you're doing but it's very close. How do you adopt it? 
+
+Vlad: You're right. Webflow is very much like code-optional type of tool. The aspiration is that it becomes a lot closer to no-code over time. A lot of the things that people have to pull in code for in Webflow today is just the limitation of the platform. It just means the building blocks are not available. 
+
+If I want to do something as simple as adding a Mapbox integration that pulls. Maybe you do podcast and then, for whatever reason you have latitude and longitude locations where you do this podcast, you want to show them on the map. The ability to say, "Okay, here's our last 20 things pointed on the map," that is pretty simple building block of like, "I want to drag in a Mapbox thing, map it to something like collections," you just don't have that. You have to pull in code, look at the API, whatever.
+
+Right now, we're in this territory where for a lot of websites, everything is available, but as you get more and more niche, there's a huge long tail of things that have to be implemented in the code. The first person I ask to build the Mapbox integration, they could (and this is something that we're working out now) create a plugin that's more of a no-code API, where they do the work of looking at Webflows internal APIs and saying, "Hey, now here's the Mapbox building block. The only thing you really need to do is paste in your API key if you are Mapbox customer or whatever. Then, you drag it in." Then, your interface is totally visual where you're saying, "Okay, I'm going to buy this thing, I want to change the color of these pins or whatever." One developer has to do that work, not end developers or tens of thousands of developers that ever want that on their side.
+
+Ben: Very much had the WordPress plugin ecosystem.
+
+Vlad: Exactly.
+
+David: And Shopify too. This is the Shopify developer platform. 
+
+Vlad: It's very much like standing on the shoulders of giants not redoing the same. The same way that the developer community works with NPN or whatever. You're not rewriting your own search algorithm. You're just going and searching on GitHub and getting the best library or whatever pull you in. 
+
+Ben: And this really shifts from Webflow, the tool company to Webflow, the platform company.
+
+Vlad: Absolutely. We're already seeing a lot of that just by the nature of how people are building, how their communities are growing. There's a lot of side marketplaces of people selling components, templates, and entire businesses built around the WebFlow ecosystem. We just haven't formalize it yet with our upcoming plugin marketplace that's going to be the official way to extend WebFlow in the first party way by third parties where you don't have to, "Hey, take this code and paste it in the custom embedded block." 
+
+Ideally over time, those exceptions where you have to get down into code are lesson less. They get into 1% territory, not 20% territory. That's one we could say, "Okay, we've reached our aspiration." That's the idea with no-code as a movement is that when you say the differentiator between no-code and low-code is that low-code makes this implicit admission that in order to really finish the project, I'm going to need a developer or I'm going to need to know how to take it across that last mile.
+
+Ben: We'll use to make it really powerful.
+
+Vlad: Exactly. In no-code, the aspiration is that you, for the vast majority of cases, will not need that. When you do, there's an approach to having one or few developers create the no-code version that abstracts away the low-code version and then put that into the hands of millions more people. 
+
+Ben: Will I be able to make money as a plugin developer?
+
+Vlad: Absolutely.
+
+David: Maybe that's the side hustle to it if you ever come.
+
+Vlad: A ton of people already making money by selling Webflow templates. Webflow templates, the thing that makes them different from WordPress templates is that they're built visually but what makes them different from Squarespace and Wix and all those templates is that all of ours is actually built inside the tool itself. 
+
+It's almost all of them start from scratch and there's just a point in time where designers are like, "Okay, this is good enough for me to monetize." The sky's the limit for them. Anybody who can use WebFlow becomes a Webflow expert. They can now monetize their templates and soon, it's going to be application templates, they're way more expensive. Let's say I spend up a podcast template that it has ratings and [...]
+
+David: Or I’m going to build a marketplace, I’m launching MVP for a marketplace.
+
+Vlad: Exactly. Like, “Here’s an Airbnb template.”
+
+Ben: Someone could build [...] on your platform. You could recreate this social network tool.
+
+David: Like we talked about with Rover started, the directive from Airbnb to Phil was like go to airbnb.com, copy [...], and we had to get Phil (who dropped out of college as a CS major) to do that and it took him months. Instead we could go to Webflow.
+
+Vlad: That's the idea. The idea there is right now, the people who are able to create those things with code, they literally represent 0.3% percent of the population. This is a tiny fraction that so much potential is left off the table. It's almost like if Spreadsheets were available to that few people, sure, no-code tools are going to cover 100% of this software development space but the space that they do cover is going to cover the majority of this simpler cred-based apps which were the foundations of Airbnb, Twitter, et cetera, and all these foundations of business that have transformed how we live and how the Internet works.
+
+Ben: To the extent that this works and becomes incredibly probasive. If you think about it from a Macroeconomic perspective, what it really does is it forces companies to work or not work based on, not their ability to execute building an application but more of their ability to understand their customers and distribute to them.
+
+Vlad: Absolutely. And that's honestly the hard part. Take something simple. You want to create a way to manage a podcast show where you might set up these visual flows around like, "Hey, when I upload something, it goes to an approval process." You have to understand your own pain around this, you have to understand what works and what doesn't. Knowing how to translate that into HTML, CSS, Ruby on Rails, NoteExpress, PHP, again, all it is is a translation mechanism. If you're able to declare that in a way that it doesn't require all that complexity, it just removes more barriers between you, your idea, and getting it out of there.
+
+David: Yeah. Totally.
+
+Ben: All right. I want to shift to this era of productivity that we're in. We’re in this crazy era with both productivity and creativity software. We had Rahul from Superhuman on the show, recently we have seen the rise of Notion, Airtable, Sketch, Figma, you guys. Why is this happening now?
+
+Vlad: A lot of it goes to just the fact that the web platform is now so mature. There's no longer a limitation of what you can build in the browser. Sure the browser is single threaded, you can have only a certain amount of memory or whatever, but the advances that were made over the last six years especially just means that you don't have this barrier of somebody has to install something or whatever in order to say something like, “Oh, here's web class type of software, which is simple forms or whatever and here's software-software type software like Photoshop or whatever.”
+
+Now, you have Webflow and Figma. These are pushing the limits of what you can do, not just in a browser but in software. Period. Plus the combination of the distribution mechanisms of the Internet. Everyone is now relying on a de facto truth that connected software like Google Sheets and Google Docs or whatever is the most effective way. 
+
+Even our lawyers are tired of sending red lines back and forth whereas even two years ago, that's the way that lawyers work. I think it's been a lot of cultural change, a lot of technological change that now, people don't conceptualize these barriers, like reasons not to do something, and people are more into optimistic dreaming mode of what's possible.
+
+David: I meant it's also, getting back to your dad, and it's distribution, too, because the web has this powerful software now. You don’t have to like in the past you're like, "Oh, I want to do this. I'm going to go to CompUSA and I'm going to buy Photoshop, and I'm going to install it." Screw all that. Plus, this is just like the [...] but then there's also the business model.
+
+All of these software we talked about, it's all freemium software. There's no risk. You just tell one password to generate password for you and then you're in and you're using the thing and you haven't paid anything. You get this incredibly powerful tool that's democratize all of these.
+
+Vlad: Yeah. It feeds on itself because that allows people, for free, with fewer barriers create, [...] new products, then actually build them, et cetera. The way I think about Webflow sometimes is sort of what AWS did for hardware. It used to have to know how to buy your own machines, write your own servers, replace your hard drives, configure RAID, and all the stuff.
+
+Now, even though AWS is pretty complex, it just hit a huge category of problems away from developers where you don't have to worry about that stuff anymore. You're just like, "I need computing power." Boom. Did you pay for it, it's pretty cheap and you don't have to worry about power going out or whatever.
+
+That's the journey we're on that we need the same thing for the software side of things. How do you abstract away as  many of these complexities as possible, so that people who are experts at this stuff really are sweating it, the performance, accessibility, et cetera. Especially hosting, things that touch hardware, infrastructure, and scaling, whatever. 
+
+You're never going to have people come. Even me, as a software engineer who has been doing this for 20 years, I don't know the stuff even to 1% of what infrastructure engineers understand. That problem only needs to be solved by a few people and then that could be scaled and made available to millions, if not billions.
+
+Ben: So you say, you as a software engineer, are you still writing code?
+
+Vlad: Absolutely not. I'm a visual developer now. I use WebFlow. But also, that's mostly because I want to get out of my team's hair. 
+
+David: When did that stop? I want to transition a little bit in the founder journey here. 
+
+Vlad: That was actually one of the hardest transitions that I made because I was the original engineer on Webflow. I built all of the front-end myself. Then, Brian joined and built the back-end and the dashboard piece.
+
+The next five years, I was really heavily involved in coding. More and more emerges a problem because either I was the only person aware of how things work and therefore, I was the only one who worked on some pretty critical things, or I was distracted for weeks writing code when I shouldn't be doing something way more needed by the team like hiring more people or really think about company building, culture building, and setting up ways for all of us to collaborate, et cetera. All the things that you have to graduate to once you stopped coding.
+
+For me, I was really emotionally attached to writing code. I found a lot of satisfaction from that and I never imagined that I would have a fulfilling life with the absence of that, but surprise, surprise, I haven’t been doing it for 2½ years. I think because it's a slow transition, it was easier for me to see how I can get satisfaction and fulfillment from higher leverage things like being able to hire five engineers that were then able to do way more than I can do in the same amount of time and seeing the impact of how fulfilled they feel working on that team. I got the satisfaction of seeing that impact multiplied.
+
+Ben: Yeah. It’s that dopamine hit that you get when your code works. You can get in a slower, more spread out way but a much higher leverage way from empowering others.
+
+Vlad: Yeah. One thing I will say though is if there's something to get into flow state and getting a machine to work, get the thing to work, but it's also way more predictable and a lot easier, honestly, than building teams. People are not as predictable. They’re...
+
+David:They're not state machines. 
+
+Vlad: They're [...] together, compiling [...] all the time and memories not… but it's a lot more satisfying when you get it right.
+
+David: This is a good transition to bring it all back, all these together. You guys, as a company, have not taken, despite the fact that we're here on 11th street on [...], San Francisco in the heart of Silicon Valley, you did YCombinator, but you haven't taken the traditional path. You did YC finally on the third attempt to start the company, you raised a seed round and a small extension and then, years go by, you guys are just surrounded in buildings.
+
+How did that journey go? Did you intentionally decide? In a way, how did you get to profitability? Was that an intentional decision and then, a decision not to raise more capital until just now? How did you think about all that? 
+
+Vlad: It was a combination of intentionality and accident. After we raised, we knew we had to build a lot of things. We knew we had to build the CMS.
+
+David: This was after the $3 million? 
+
+Vlad: Exactly. So, this is early 2014. We just weren't growing fast enough to be able to justify a full A-Round and I think we realized that pretty early when we still had a lot of cash in the bank.
+
+David: Was that you guys realizing that or your investors?
+
+Vlad: No, us realizing it because so much of Webflow is reliant on being able to meet a certain functionality bar for people to be able to base their entire business on you. The first year up until 2015, it was a very high churn type of situation where a lot relied on our Export tool where you would like to use it for projects and then take it somewhere else. 
+
+We realized that it was a tool product essentially and our main competitor at that point on a category level is Adobe. The way that people thought about us was, "Oh, it's just another Adobe." But we didn't have the entire other suite of products. You didn't have anything [...] you there if your project was over and your only building one project because we don’t have the Creative Suite or whatever. 
+
+We realized then our option and I think around the time Paul Graham has an essay, Default Alive or Default Dead? We really wanted to whatever was possible to get to Default Alive. We thought that that would give us a lot more optionality and it was mostly a survival thing like, "Hey, we're pretty sure we're not going to raise more money. Let's just get to hire a little slower, try to get growth as high as possible so that we are in control of our own destiny." 
+
+Once you have reached that, you stopped thinking about fundraising because you're able to operate on a monthly basis, so you're more or less break-even, cash bounds goes up. We're operating on that mentality for the next 2–3 years. But then we realized which is what led us to this fundraising.
+
+I'll rewind back a little bit. Almost all conservations with investors at that point, even when people find out that your profitable or close to it, a lot of the conversation were not inspiring at all. They're like, "Okay, how do we get more business using this?" Even conversations around like, "Oh, Google would be interested in an acquisition." Almost thinking about local optimization of revenue and how do we get into enterprise, "Oh, These enterprise deals that you've signed before, they could be a quarter of a million dollars. Let's focus everything on that." Well, why would we care about 2500 customers paying us a small amount of money when we can have one customer that pays us a quarter of a million dollars?"
+
+That was a very philosophically, we had this opposition to it thinking that if we do get pulled in that direction by investors, then it's very hard to go back and create a democratizing product for the option that empowers a lot more people.
+
+David: It's the classic problem if you go that path where you're going to have to create custom features for each client that's paying you a million dollars. Next thing you know, you've gone from this incredible platform opportunity to an outside [...] shop.
+
+Vlad: Exactly. And it wasn't until we started talking because we've been talking to Accel for three years and it wasn't until we met Arun that was a full, mind meld opportunity of the future opportunity like, "Hey, this website thing is interesting." We're just a tiny fraction of the WordPress market share. WordPress is like 40%, we're like 0.1%. In terms of the business, there are like $300 million or whatever. We’re about $20 million, but at a much smaller fraction of that entire space. That wasn't even part of the conversation.
+
+That's interesting and there's a huge opportunity there but think about this opportunity of creating software. The amount of new companies that can be created, the amount of new services that can be created, the amount of new ideas that can become a reality, there are already percolating people's heads and people are not just building it because they don't have the right tools. That is just a vastly more powerful opportunity that we don't even know how to quantify or how to even work up the time for that. 
+
+David: Well, it's really the difference. Arun of Accel has been a good buddy of mine for many years, we were classmates and just be together and I’ve seen his thought process to this. Most investors, until recently when this has become in vogue, we look at a company like you guys and what they're thinking when they're telling you about enterprise, blah, blah, blah, they're thinking like, "Oh great. This could be an acquisition. How are we going to flip for a couple of hundred million?" I think Arun and Accel were one of the first folks to see, "No, no. You can build really big standalone companies like Atlassian, like Qualtrics, like Squarespace where there are investors and not sell them. 
+
+Vlad: Yup. That’s the goal here. We haven't even discussed an IPO and an exit strategy. There's no exit strategy. We're building Webflow. We probably build 5% of the things that we want to build. It's going to take another couple of decades to get to that full vision, if not longer. So, still having fun and there's no reason to change course, I don't think.
+
+Ben: Love it. Well, the final question that we always like to ask is, is there anything that we didn't ask you about or that you would like to say to the audience of, primarily, founders and  aspiring founders?
+
+Vlad: I wish that somebody had given me this advice sooner is don't focus on perfection, just ship sooner. Ship, deliver value, ask quickly as you have it. We have been learning that lesson over and over and I think we still have to learn it. There's this tendency to think, "Okay, everything has to be perfect or nobody is willing to pay for it." I am consistently surprised by releasing something that is much less powerful than you think and then, tons of people finding value from it in its infancy. Then of course, you iterate on it.
+
+I wish we had that mentality sooner. I think we would have gotten to where we are faster and I think a lot of founders could be a little too, I don't know, precious is the right word, around what their idea of what's actually marketable. You'd be surprised that it's probably something much earlier. 
+
+Ben: Awesome. Thank you so much, Vlad. 
+
+David: Yeah, Vlad. Thank you. This has been awesome.
+
+Vlad: Thank you, guys. It was great.
+
+Ben: LPs we will talk to you next time. 
+
+David: Talk to you next time.

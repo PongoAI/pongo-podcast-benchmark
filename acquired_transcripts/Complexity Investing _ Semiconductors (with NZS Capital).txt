@@ -1,0 +1,813 @@
+Ben: Welcome to this special episode of Acquired. The podcast about great technology companies and the stories and playbooks behind them. I'm Ben Gilbert and I'm the co-founder and managing director of Seattle-based Pioneer Square Labs and our venture fund, PSL Ventures.
+
+David: And I'm David Rosenthal, and I am an angel investor based in San Francisco.
+
+Ben: And we are your hosts. On our TSMC episode, one of the 65 sources that we used was an episode of the Knowledge Project with Brinton Johns and Jon Bathgate. Brinton and Jon are public equities investors at a hedge fund called NZS Capital, and they spend a lot of their time researching semis. It was packed so full with great content that I actually watched it twice to make sure I understood everything.
+
+David: It was so good.
+
+Ben: It was awesome. Then on a wild coincidence, the very next week, even before we shipped the TSMC episode, David and I were at Capital Camp—great event organized by Patrick O'Shaughnessy and Brent Beshore—and we ran into Brinton in person. I was like, I recognize that guy. Where do I recognize him from?
+
+David: It was like the Spiderman GIF. You? No, you?
+
+Ben: Very, very much so. After nerding out the whole rest of the event on TSMC, geopolitics, semis we decided to have Brinton and Jon on Acquired. On this episode we actually didn't even get into semiconductors for the first hour since it was so fascinating to hear about their investment principles at NZS. I've said this many times on the show, but yet again, new frameworks that have totally changed the way that I think about the world.
+
+David: It's frameworks all the way down, Ben.
+
+Ben: It is. Well for our presenting sponsorship on this special episode, we have the SoftBank Latin America Fund. As many of you know from other specials this year, Softbank LatAm is deploying huge amounts of capital into the burgeoning Latin America startup ecosystem.
+
+They just announced they have another $3 billion to invest in addition to their initial $5 billion. We are talking today with the CEO of one of their portfolio companies, Joao Menin, CEO of Banco Inter, which is now a publicly-traded digital bank based in Brazil.
+
+David: Joao, welcome to Acquired. You have taken a publicly traded traditional bank and wholesale-transformed it first to a digital bank and now into one of Brazil and Latin America's leading super apps. The bank, it was a traditional bank when you stepped in as CEO?
+
+Joao: Yes, that's a very good question. But Inter was founded back in 1994. We like to say that we are everything but a start up, we’re not a startup. I also like to say that we're not fintech. We changed the course of the business when I stepped in, because from 1994–2014/2015, we were just a local commercial bank. We didn't have retail, just wholesale. We're very focused in one big city in Brazil—that is where we are still headquartered today—[00:03:34] to really try to launch a retail banking unit from scratch.
+
+I realized that in order to have a chance to succeed, we need to do something different. In Brazil, we have five big banks that control maybe 85% of the market. In order to compete with them, they still have like 25,000 plus bank [00:03:58]. We need to take a different approach and that's what we did. We decided, say, look, let's launch 100% digital, free, and full-service checking accounts within the smartphones and let's try to get as many clients as possible.
+
+If you fast forward to 2021, it really happened. We actually just achieved 14 million clients yesterday. After that, we also decided, look, why not put some non-banking products as well? The first one we launched was our marketplace and they have many other non-financial products. Then I would say that we transformed ourselves into a super app here in Brazil.
+
+David: That's amazing. Do you look to folks in China like Meituan or Grab in Southeast Asia as inspiration? Or was this a vision that came homegrown in Brazil?
+
+Joao: I would say that we don't have these guys as a benchmark for us, but we started to say, look, what else can we add? So let's add investments, okay. What else? Let's add new shops. What else? Let's add shopping. What else? Let's add effects. We start just to keep evolving the business, but we're really trying to see what else we can put in order to help our client.
+
+We'd like to say that everything ends up with banking, which stands for payments and credits. Everything you do in your life. If you want to travel, if you want to give a call to your girlfriend, whatever, it's always about banking.
+
+Ben: Our thanks to the Softbank Latin America Fund to Joao and Banco Inter. If you want to get in touch with Softbank, you can do so at latinmericafund.com or if you want to learn about Inter, there are ways to do that in the show notes, too.
+
+Now as always, this is not investment advice. We almost certainly hold stocks that we talked about on this episode so do your own research, make your own decisions, but love the frameworks that we dive into with Brinton and Jon. Without further ado, on to our conversation.
+
+All right, well, listeners, we want to introduce you to NZS Capital, their investing philosophy, and partially because we think they're fascinating firms similar to hoe down with Altos or Hamilton Helmer of Strategy Capital. But also, the deeper David and I have dove down the rabbit hole of last week of reading all the papers they published, we feel like we've gotten a lot smarter. So we basically just want to expose the world to more and more of that. Brinton and Jon, welcome.
+
+Jon: Thanks for having us.
+
+Brinton: Thanks for having us.
+
+Ben: First, let's start with Complexity Theory, which is a concept that your whole firm is based on and you've published a 47-page paper on, that is just (a) full of fun little graphics, but (b) I think probably has 5–8 mind-blowing concepts in them. The first one is you come right out and admit that you don't know the future. What's going on with that?
+
+David: You would be bad marketers as VCs if you claim to know the future.
+
+Brinton: Look, the whole investing philosophy comes out of a lot of pain. We are investors for a long time. We are wrong a lot like all investors are wrong a lot on a consistent basis. We're just looking for a better way to think about things.
+
+Somebody suggested this book to me called The Origin of Wealth by Eric Beinhocker, and sort of serendipitously at around the same time, someone suggested Complexity by Mitchell Waldrip to Brad and we both read those books. Origin of Wealth was a slog, I think it took me six months to really get through it, and then swap books and started thinking about sort of a different philosophy.
+
+David: I'd heard a little bit about complexity theory and the Santa Fe Institute, which I want to get into. I think Bill Gurley talks about this fairly frequently and Michael Madison, and that's how I kind of originally got turned onto it. Tell us a little bit more about what is it? Because it's not at all about investing. It's about the world.
+
+Brinton: That's right. In fact, I think it was Bill Gurley that recommended Complexity to Brad. Complex adaptive systems are all around us. That's what governs the world. That's how the world works. We don't know how the future is going to unfold because the system is interacting together and it creates what's called emergent behavior.
+
+Emergent behavior makes predicting useless in most cases, and we can have guidelines, and heuristics and those are all helpful. As far as exact outcomes and what's going to happen in the future, those are a lot more difficult.
+
+Santa Fe Institute started with a group of scientists from the Los Alamos National Labs. They came together—they were mostly physicists—and they started talking to economists. It was sort of hard sciences and soft sciences, and the physicists were like, hey, economists, guys. You guys seem really smart, but your theories don't work. All your math doesn't work. So what's up with that? With our math, it's extremely precise. In fact, when the math is off just a little bit, Einstein's like oh, your math is off. Pluto should really be here and come up with a Theory of Relativity.
+
+David: It's like we literally made the atomic bomb, it works.
+
+Brinton: Yeah, it works. So they started coming together around this idea of complexity. What is complexity? How do we define complexity? Where does it sit? Because we are living in this complex, adaptive system, how do we think about the future? How do we think about life? How do we think about going forward?
+
+For us, this sparked an interest in biological systems and we found this sort of biology vein much more interesting than the traditional economics vein, and much more applicable to investing than the traditional economics vein.
+
+David: Am I right that you all actually went to Santa Fe Institute and took courses there? How deep did you go?
+
+Brinton: We did. A lot of rabbit holes we go down very deep. We quickly became members of the Santa Fe Institute (they call it the) Action Group. It's this group of non-scientists that are allowed to sit in on a lot of the science. Then we took this complexity course over a weekend—Brad and I did—at Stanford and that was a ton of fun actually. Jon and Joe, the two other investors on our teams, took a longer course. They actually had to do real work. Brad and I didn't have to do homework.
+
+We just learned so much. I remember sitting outside of this cafe in Palo Alto with Brad and we have just sort of been at this course with Deborah Gordon, this lady that teaches at Stanford, here to study ants. I thought, man, this concept of resilience is really fascinating. It's really more about resilience than it is about predicting the future and it's about adaptability.
+
+Biology doesn't really care that much about the future. They care about adapting to this wide range of futures. Bees don't really care if it's going to snow tomorrow, they can adapt to snow. They've learned how to do that over millions of years. What if we looked at companies like that?
+
+Of course, we kept reading, we kept writing. This is probably 2011–2012, and in 2013 we published this long paper that you reference, which is super geeky, but it's got a lot of pictures because that's the way we think.
+
+David: You've got the Back to the Future DeLorean in there.
+
+Brinton: It's got the DeLorean. What more could you want? We were really hoping for a DeLorean for the office. That's our dream office furniture.
+
+Ben: On the note of ants, this is probably the first and best example of an extreme version of resilience in an organization. Can you share the insight you had there?
+
+Brinton: Yeah. We attended this class by Deborah Gordon and she has been studying this group of ants for 30 years in New Mexico. They obsess over this group of ants. They know what every ant is doing at all times. What they found was really fascinating.
+
+They found that about half of the ants of the colony weren't doing anything. They were just sort of sitting around and then they had half the hands doing these defined jobs. That's very counterintuitive. We think of ants as sort of the ultimate productivity machines. Then it turns out ants aren't optimized around productivity. They're optimized around longevity. They're optimized around resilience, around living as long as possible, let’s say it that way.
+
+That was really insightful for us. We thought, man, all these companies are optimized around productivity and Wall Street only makes it worse because we're obsessed over quarterly earnings. What if companies were really optimized around this long-term thinking? Of course, we see that with lots of companies, most of them tend to be run by founders, because founders have a lot of skin in the game, they think long-term, but there are CEOs that think that way also.
+
+We know that the average tenure of a CEO in a SP 500 is less than five years. They're not optimized like ants are. They're trying to get a lot of returns really quickly. But companies that take this long-term view are so much more interesting.
+
+David: When I read that, in your paper, the thing that hit me over the head, I was like, oh, this is Warren and Charlie's laziness bordering on sloth.
+
+Brinton: That's exactly it.
+
+David: The goal is not productivity. The goal is long-term steady returns and resilience.
+
+Brinton: I think Warren and Charlie got this very early and there's a lot of science behind that math, but they don't need that. They're so good with folksy wisdom.
+
+Ben: The other thing that hit me of course was a company's not going to have half their employees sitting around doing nothing. Just as a fun thought experiment, what if a company only was growing at half the growth rate of a high-growth company, but it's a marathon, not a sprint? They could do that over 40–50 years, instead of thinking in these 5- and 10-year time horizons.
+
+Do you have any good anecdotes on, ‘I know you have this firm belief that hyper growth is bad and actually slow. Very long-term compounding growth is the real Holy Grail’?
+
+Jon: I think what we're generally looking for is, we kind of use Groupon as an example, whether that's fair or unfair. We're not looking for the next company to hit X revenue run rate in the shortest period of time, or whatever it is. We're really looking for this durable resilient growth. I think that the way you framed it, Ben, that if the company does have employees that aren't driving the, I guess level of growth that you'd be seeing in a hyper growth firm, that's okay as long as it's hyper durable.
+
+You could look at me and look at [00:13:40], or kind of like some of the classic iconic growth companies that have compounded for decades. That's generally where you see the compounding. Obviously, you compound at 10%–12% a year—we're in the teens—but you can do it for 10, 20, 30, 40 years, and you can just get tremendous value creation.
+
+Some companies in the portfolio we admire that do that will be someone like Texas Instruments where they have a really decentralized culture and they actually push responsibility decision-making down into the deeper parts of the organization. The CEO is not really a manager. He's a capital allocator. He almost has to think more like an investor and a portfolio manager than an operator. I think that's what we really look for is companies that can provide this durable growth.
+
+Again, it's very Buffett-like. We're hopefully finding companies where you can set it and forget it, and they're going to put up moderate to healthy growth for 10, 20, 30 years. In our framework, which we can talk about around resilience and optionality, that's what we're looking for in a resilient bucket of portfolios, these companies that can really compound at a healthy rate for a very long time.
+
+David: You guys have these two concepts and then one kind of super concept that combines both of them of resilience and optionality that you look for in investing. Neither those are terms that most investors are familiar with. Can you define what you mean by both of them? Maybe give a few examples of companies?
+
+Jon: Sure. On the resilient half of the portfolio, we kind of say, when you see it, which I think is kind of an unsatisfying answer. But generally, what we're looking for are companies that are further along in their S Curve in their growth trajectory.
+
+These would be companies we own. The head of the portfolio would be someone like Microsoft or TSMC. We're not looking for value stocks or kind of like cheap companies. We're looking for companies that are healthy growers that we think can durably grow for the next 20 or 30 years. Our turnover in this half of our portfolio is around 10%. This is hopefully ‘set it and forget it’ part of the portfolio.
+
+A few characteristics we tend to see in that part of the portfolio are mission criticality and switching costs, which I know you guys cover well in some of the deep dives you've done. Just scale like TSMC, we can talk about it in more detail. It's like a classic scale company where we've talked about power laws in our investing framework and pockets of industries where one company can take 90%-95% of the profits in a given industry, and TSMC is a great example of that.
+
+Then exactly the way you guys laid it out so well on your episode on TSMC, is you really got the flywheel going, where the more scale you have, the more you can reinvest, the more you can impact your customers. It just becomes this beautiful compounding machine.
+
+The last bucket we probably would see in the resilient part of our portfolio is this network effects–based competitive advantages where you see companies that really hit their inflection point. Again, especially in digital markets, you'll tend to see a handful of companies or potentially, one or two companies take most of the economics in a given market like digital advertising or smartphones. There are so many markets where there are one or two players that have 80%–95% of the profits. We tend to see those in the resilient product portfolio.
+
+David: One thing I think was really counterintuitive about how you guys think is you actually not looking for moats. The companies you just described and I think a lot of investors think about like, oh, wow, they've got really deep moats. Of course, you want those as your long-term compounding holds, but you guys have a little different perspective on this, right?
+
+Jon: Yeah, we've a little bit of a different take. I don't want to offend anyone that uses the term moats. I think it's a great term and it's a great part of anyone's investing toolkit. I guess one of the things that we're careful about is looking for companies where part of their moat is inserting themselves into the value chain into their customers' share of wallet, basically, where they put themselves in a position to extract as much economics as possible.
+
+I think that can be viewed, especially in more like an industrial age view of how competitive advantage has evolved, is something that we try to avoid. We're not trying to look for a company where they feel like they have a customer lock-in and then all of a sudden they can raise the price 3%–5% for the next 10 years.
+
+Part of our framework and the reason we named the firm NZS Capital is we're looking for non-zero sumness, so looking for a win-win outcome for all constituencies across the value chain. That includes the company's employees, their customers, and also kind of society in the environment at large. We're just careful looking for companies where all of a sudden, if I have this moat then I can screw my customers over the next 10 years. I think that's what we're careful about.
+
+David: I don't think you guys hold Apple, right? But you do some of the other large tech companies. This feels like a perfect example to me of oh, Apple, incredible moats.
+
+Ben: They're getting pretty good at value capture over there.
+
+Jon: Yes, that's a very nice polite way of putting it. You obviously see it with Spotify in the EU and Epic here in the US being in the news flow constantly. I just think when you get to a point you're taking so much economics for your business which already has the largest market cap in the world, that your key partners on your platform are taking you to court, or taking you up to various regulatory bodies, or writing white papers on how you're screwing your customers, that's just what we're trying to avoid. Who knows, it might work out perfectly for Apple over the next 10 years.
+
+David: It makes you less resilient.
+
+Jon: Yes, exactly.
+
+Ben: Is that the idea that if there's consumer surplus, money left on the table for consumers, where they're not getting every dollar extracted that they could buy the company, that that company is more resilient over time, even if they're not making every profit dollar and growing as quickly as they could today?
+
+Jon: I agree with that. If you really have a management team that's thinking really long-term, I don't know why you wouldn't give up a little bit of extra economics for your key partners whether that's suppliers, or developers on your platform, or your customers to really solidify your trajectory over the next 10–20 years, versus I don't want to pick on Apple too much, but what's the gross profit impact if they cut their app store take rate from 30% to 15%? Across the board, what is that, 5% of gross profits? It's meaningless to them and it would create so much value. There are obviously network effects of that.
+
+Anyway, I think that's what we're looking for is companies that are paying it forward. Again, back to the TSMC example. Because you guys covered it so well, TSMC has lower gross margins than most of their customers. At any point, they could probably take the margins from 50%–60% and say, hey, I obviously have a monopoly in this market. The way Morris Chang architected the culture there is on long-term value creation and really creating a platform for their customers to create massive amazing businesses. I think that's the way we think about it.
+
+Ben: And just for listeners to put some numbers behind this concept, which I think is just great from this NZS white paper, 15% growth over 10 years would deliver more than a 300% return. Not bad, but 15% growth over 15 years would almost double the 10 year return. If we could populate our top 20 positions with these types of resilient companies, we'd only trim and add around periods of volatility. All the real absolute dollar value of compounding shows up in the out years so you just want to make sure that you're still compounding in the out years.
+
+Brinton: That's right, and it's sort of where we take issue with Porter.
+
+Ben: This is of course Michael Porter competitive strategy, Porter's Five Forces.
+
+Brinton: Thank you, yes. If we take a cynical view of Porter, a lot of people have interpreted it as, hey, build a moat around your business and then stick it to your customers on price. I'm not saying that's what he said, I'm just saying that's the way it's interpreted.
+
+That's a terrible way to build a business because eventually, someone will undercut that and offer actually a better value prop to the customers. Because all of this value is the out years, it was really not a value maximizing way to run the business either.
+
+We think this concept of creating more value than you take is really important and Porter agrees. He actually revised his thinking, and in 2019 wrote a paper in Institutional Investor called Where ESG Fails, where he talked about this concept of shared value.
+
+Ben: That's not him trying to say that purely because it's good for the world to care about all your constituencies, not just your shareholders, but also your customers and partners. He's literally making an economic argument for shareholders that that's the long-term value maximizing thing to do, right?
+
+Brinton: I think that's right. He was a consultant for Intel back when ARM processors were starting to come out and actually dominate the mobile space. They came out with this sort of dumbed down processor.
+
+Ben: The Atom?
+
+Brinton: Yeah, exactly, but even before that, they came out with a cheaper version of it. In reality, that's not what they should have done. They should have actually embraced a totally different business model like ARM did where they're just selling IP, and enabling a whole ecosystem instead of trying to take all the profits for themselves.
+
+David: Okay, so that's the resilience side of NZS thinking and the portfolio. Then you also marry that with something very different. Tell us a little bit about optionality and how you think about that?
+
+Brinton: We're thinking about the future. We're just thinking about how broad and safe is the prediction we're making. We can make these very broad, safe predictions, like we think electronics are going to push deeper into the world. I think in 9 out of 10 copies of the multiverse that's happening.
+
+There are other predictions like we think EUVs are going to dominate the world and Tesla is going to be the power law winner inside of EPs. That may only happen in 2 out of 10 copies of the multiverse, certainly not 10 out of 10. These predictions are much narrower and the range of outcomes is much broader.
+
+That doesn't mean we can't invest there because it's incredibly asymmetric if we end up being in that copy of the multiverse. But if we're not and it's a zero, it also doesn't torpedo the portfolio. I feel like actually, you guys could give the masterclass here since you're such great venture capital investors, but that's really what we're trying to expose ourselves to and these earlier stage public equity companies.
+
+Ben: How do you actually then apply both of these very different principles inside the same portfolio? Are you picking some stocks because you're maximizing for resilience, and you say, look, this is a great compounding slow growth, but durable company. And then there are other companies that you're investing in because you say, oh, my gosh. If this thing's right, it's going to be really right, like venture capital asymmetric upside right. Or is it blended in some of the same companies?
+
+Brinton: You're right. It tends to be these two portfolios in one. We concentrate on resilience—that's about 50 names and just over half the portfolio—and then we distribute optionality—that's about 40 names, also just under half the portfolio. Max position size, one-and-a-half. In the middle of this between one-and-a-half, two-and-a-half, one-and-a-half three, we don't own anything.
+
+Ben: That's percent of the portfolio?
+
+Brinton: Thank you, very much percent of the portfolio. I say this stuff so much, sometimes I don't complete the sentences. Then sometimes we find these very resilient companies that are actually layering on optionality to the business. They have both, they have this resilient base, but then they have optionality on top of that.
+
+David: You call those companies route moats?
+
+Brinton: Yeah, we're such geeks so bad. It's resilience without the money optionality. It's just the shortcut on the team that we use.
+
+David: Those are the companies that you bump up to 7%–8% of the portfolio, right?
+
+Brinton: Yeah.
+
+David: What are some examples of those?
+
+Brinton: There are a couple of those. The classic example would be Amazon in 1997 when they went public, I think around a billion dollar valuation. Nobody could have foreseen AWS. That wasn't anybody's DCF. They're going to also create infrastructure that everybody in the world is going to use to create businesses. They sound so silly, right?
+
+Another one that we had in the portfolio years back was eBay. I don't know if you guys remember the marketplace business was struggling. They brought in a new CEO, John Donahoe. They had PayPal, and really you weren't paying for any of PayPal. If the marketplace business would recover that more than cover the cost of entry. Of course, marketplaces did recover. PayPal ended up being great, John Donahoe is an amazing leader, and that was a classic route thus far.
+
+Ben: In that situation, you've got a fairly resilient business, or the hope is that the marketplace is a resilient business, then PayPal is the out of money option that you sort of have that's being valued at zero, but clearly is a very valuable business.
+
+Brinton: That's exactly right.
+
+David: Well, I think what's cool about this, this makes a lot of sense in investing. This also makes a lot of sense in how you should run your company. The best CEOs think this way, as to how do I create resiliency in my core business, but then what are the options that I'm investing in for the future on top of it? To my mind, there's no better example than Amazon. This is the whole operating philosophy of the company.
+
+Brinton: We love this concept because we think it's true in the universe. Therefore, the narrow slice of investing that we're using it for, we're pretty sure it's also true, but it works really for everything. I mean, it works for parenting. Parents, oh, no, we're doing like I have four kids, I have no idea what I'm doing. So I'm just trying new things all the time. Well, that didn't work. There's optionality in that, too, then sometimes your optionality becomes resilient and that's what you're hoping for, but you just try a lot of new things. For us it's a life philosophy.
+
+Jon: Fantasy Football is another area where you can apply resilience and optionality very well, actually. You can't get out of your head once you start practicing this, which is so funny.
+
+Ben: All right, I'm going to take us in a totally different direction. I want to talk about the difference between normal distributions and power law distributions. Listeners of the show who are in venture capital or in startups and have tried to raise venture capital or successfully raise venture capital will know. They get this answer from VCs all the time that our portfolio construction is really a power law. We fully expect a third of the portfolio to go to zero with a third to return capital, and really only one or two companies at the head of the curve are going to be this hopefully 10, 50, 100X that gets us a great return regardless of what else happens in the portfolio.
+
+You guys, interestingly, are sort of applying that thinking at much later-stage companies, hopefully ones that are going to zero, the way that a frail, $10 million valuation startup could. How does that work, and what was the insight that made you realize, hey, the world is not normally distributed? Actually, in certain scenarios, it's very power law distributed.
+
+Brinton: Once you accept the fact that all of life is governed by complex adaptive systems, and the markets are also governed by complex adaptive systems, which means emergent behavior, you can't predict the future, you focus on adaptability, then those complex adaptive systems tend to be governed by power laws. It's sort of a natural follow on.
+
+The insight here is, all risk models are based on these Gaussian. these normal distributions. But in fact, the world doesn't work that way. There's a really fascinating economist named Ole Peters, who's done a lot of work here and said, wait a second, your risk models are sort of like airbags that go off at stop signs, but not when you get in a crash.
+
+David: This has always been my beef when I was in business school with economics as applied to business and investing in the real world. You studied this stuff and you're like, wait a minute. I actually work in the industry. This is not how it works.
+
+Brinton: Exactly, and being venture capital investors you see this all the time. With public companies, it's also true. There are a few big power law winners. We see them in the market today. They're driving the entire market. This is a reality.
+
+David: There's a great study that you guys referenced in the paper that I'm wondering if you could just talk a little bit more about it. The toy example of a coin flipping contest, where, let's say you win $50 or whatever, when you lose, you lose $40. That sounds like investing to me. There's an expected return of 10%. What actually happens when you run that contest?
+
+Ben: Wait, real quick before you answer. Is it win $50 lose $40? Or is it 50%?
+
+David: Oh, it's percent. Okay. Yup.
+
+Brinton: If it's $100, then yeah, you're right, David. It's 50% down 40%.
+
+David: Got it.
+
+Ben: Okay.
+
+Brinton:: Yeah, the concept, it gets to the heart of modern portfolio theory and expected utility theory and the flaws of that. Back to the multiverse, the way this works is, if you had 100 people flipping coins and they did it for enough time, you would actually see a nice steady positive return. That looks like on average the experience of the participant is winning. But that's not really true. What you get is a lot of people going bankrupt and a few massive winners, sort of the Buffetts and the Soroses in the investing world. The average is not average.
+
+In one portfolio theory, you're taking an ensemble of all these. But that doesn't really make sense because I don't really care about your outcome, David or Ben, I care about my outcome. I only get to live in this one universe. I don't get to live in yours. I don't get to live in the multiverse. My outcome, on average, is that of loss instead of bankruptcy. When the time average does not equal the ensemble average, that is called a non-ergodic system. You guys put in the show notes, Ole Peters works on this. It's super geeky, but really fascinating.
+
+David: It's so cool. Well, this is so counterintuitive. You would think if you presented that game to me, I would be like, oh, for sure I want to play that game. The odds are stacked in my favor. But most people who play that game will lose, then a few will win really, really, really big. That just blew my mind reading that.
+
+Brinton: Yeah, the distribution side is not normally distributed. It's power law–distributed. That changes everything. That's why all these risk models are like airbags that go off at stop signs. It's because it turns out the world doesn't work that way. We hear on a regular basis, oh, this was a three standard deviation event, which, if you understand the math, that three standard deviation events you expect, oh, wow, I'm so lucky to see one of these in my lifetime. But we see them a lot, according to the media. That’s sort of ridiculous. 99.73% of all of that should fall within three standard deviations is the way the math works.
+
+Jon: Meanwhile, I've been in this business for 13 years, and already been through two recessions that are way outside of three standard deviations. Brinton has as well. It is just a funny common sense thing that when you're practicing this stuff, that the normal distribution doesn't really make that much sense. Brinton mentioned that I took this course at the Santa Fe Institute. It was actually around this time last year. The power laws were just so cool. It's amazing.
+
+One of the examples we use in the white paper is if you plot earthquakes by frequency and intensity that just like in nature, naturally forms a power law, which actually makes a lot of sense, you're going to get one or two or three heavy-magnitude earthquakes a year and a lot of small ones.
+
+But also, if you plot the frequency of every word in the book, Moby Dick, that actually also forms the power law. ‘The’ is mentioned 15,000 times, and then the next word is ‘and’ and that’s like 7000 times. Then there's the super long tail of words that are only used a handful of times. [00:31:57] when these things once you see it.
+
+It's amazing for certain companies, obviously, like we mentioned, especially in digital markets, because the world is going towards more markets where a winner can take all and becomes much more of a power law dynamic. That's why we just always have our antennas up for these power law dynamics. That's honestly a big part of what we're looking for optionality. That's what we think about is this a company that is at a relatively earlier stage in public markets that has the opportunity to power law a large market.
+
+Ben: Which is why of course you're making 40 diversified optionality bets here. It’s funny to think about this but the statement of let's go back to the stop sign example. Yeah, the vast majority of the time, the fact that these airbags don't work is totally not an issue. But it's a massive issue the moment that you need them the most. Very similarly, all of the gigantic, outsized economic value is created from the three, four, five, six, seven sigma events in the world.
+
+It's ludicrous to be like, well, the vast majority of the time this investment philosophy is very sound. You're like, yeah, but we're not really trying to index on how many days out of the year it sounds. We're trying to index on how much value can get created at the end of the portfolio 50 years from now. And that's going to be driven by the outliers. So we have to be prepared and fully optimize around the outliers, not close our eyes to the few days that they might exist.
+
+Jon: That's such a good point. I'm really glad you brought it up because what we're really playing for optionality, half the portfolio is asymmetry and really it's not a batting average. It's okay if we're only right 30% of the time, which is not intuitive at all for public markets investors. I think everyone wants to be right 55% of time, 60% or whatever. It doesn't have to be that high to have good long-term returns. We're playing for a slugging percentage where even if only one of the three works, but those are multi-baggers and can really create a lot of value over a long period of time.
+
+That's the beauty in that half the portfolio, and we've seen it. We've been doing this for years now and it is amazing how you see these companies emerge as value creators and generate a lot of value for the portfolio out of relatively small starting position sizes.
+
+David: It gets back to this whole idea of you don't know what's going to happen. If you set everything up with the idea that you don't know, I think in a lot of ways, most venture capitalists grok this idea and set up their portfolios in this way. But I think lots of people, myself included in the past, didn't fully understand this.
+
+You say the paper, I think you use nicer language than this, but I'll use my own language. This is my quote, that this idea of conviction that so many people in venture talk about. Entrepreneurs have conviction. I'm convicted, which convicted means you're convicted of crime, but anyway, I have conviction that in this company, I'm going to lead this investment.
+
+Conviction is stupid. Conviction is saying, I think my view of the future is going to be right. Really, what you want is optionality, and you need people to have conviction because otherwise there would be no entrepreneurs.
+
+That example of the coin flipping contest, that is exactly the dynamics of becoming an entrepreneur. The expected value is positive, yet the vast majority of people who start down that path go bankrupt. Then a few people win really, really, really big.
+
+When you're constructing a portfolio, what you actually want is a lot of those bets. You guys have 30–40 optionality names in your portfolio as a venture fund. You want 30–40 “names” in your portfolio. Venture portfolios with 5 or 10 are very non-resilient.
+
+Brinton: Yeah, that's right. We use conviction as a synonym for overconfidence. I think that's what really is the right way to think about it. Conviction for us means, hey, I've done a ton of work. So I've got a lot of sunk cost, which means I've got bias. I think that my view of the future is better than yours.
+
+David: That is literally what you're saying when you say that.
+
+Brinton: Yeah, right? So who knows, right? What we're trying to do with the tail of the portfolio, and I think what you guys are trying to do in venture capital investing, is maximize the probability that we get lucky. I just rip that off from [00:35:51], is very good at calling it what it is. We're just trying to maximize the probability that we get lucky.
+
+Jon: I also think just changing your mind is the hardest thing to do as an investor when you're wrong. I think if you stand in a room and say this is my highest conviction idea, it just makes it that much harder to Brinton's point. I'm just introducing bias into the equation. I also think if you invert it, I think it's fine to have an optionality position that you'd actually don't have that high of conviction on [00:36:22].
+
+Example on Tesla, I don't think that we have super high conviction that Tesla's going to power law the EUV market, but is there some probability where they do that and it's worth multiples of what it is today? Sure. That's the way that we think about conviction.
+
+Again, I don’t want to piss anyone off that uses the word conviction similar to moats. It's fine. Everyone has their own process. We're not trying to push what we do on anyone else. This is just what has worked for us over time. One thing we're very careful about is introducing bias into our process. Luckily, everyone on our team knows each other well and can call each other out, but I do want to be careful.
+
+Ben: Well, I have two points to make. This cultural one, I think, is the second. But let me start first with, at the end of the day, this is a Buffett concept. This idea that it's better to be approximately right than exactly wrong, that's another way to describe this optionality phenomenon here, where it doesn't sound nearly as strong to stand up in front of an investment partnership and say, I have very little conviction in this. But it could totally work. If it does, it'll be really big.
+
+That's about the best I can tell you right now. That does not get everyone around the table excited. In a very Buffett sense, if it works, it's going to be so freaking successful that this is a great price to own it at. Do I know if this is the right price to own it at? Not at all.
+
+Brinton: How many versions of the multiverse do we have railroads? All of them, right? They're important. How can we recreate that? We can't, it's impossible. I think you're right, Buffett and Munger say this so easily, so naturally, and we're just saying it in a much more complicated way.
+
+Ben: That's the second point I'm curious about is what are some guardrails that you have in the internal culture to reward non-conviction? To reward like, yeah, I don't know, but it could work. And if it does, it could be really big. Here's why it could be really big.
+
+Brinton: We think investing is inherently a team sport. It's a terrible solo sport for the most part. The way we view team is our role is calling out bias in each other. Now, these are uncomfortable conversations because nobody likes to get the bias called out. We all know that bias is really easy to identify in other people and really difficult to identify in yourself. So by opening yourself up to having been called out, then your probabilities go up as an investor. It feels unnatural to us at this point to say, I have super huge conviction that this micro cap stock is going to rule the world my day. That would feel really odd. Everybody is like, are you okay? Are you feeling all right?
+
+Jon: I think the way we've also set it up with our framework is we just inherently expect failure. I think more than other public markets investors might like if we put something in the optionality to the portfolio. By the way, that half the portfolio turns over a lot more quickly than the resilient product portfolio, which makes sense. We are going to be wrong a lot. Luckily, there are more positions, so you're not going to torpedo the portfolio, as long as the most important thing to do is just admit you're wrong and move on.
+
+I think building that into a culture where it's okay to be wrong and move on and fail quickly versus string ourselves along on a three-year journey in a tough position. That's one cultural way that we've architected the way that the team works together that has really helped. It basically gives yourself a license to take some risks that maybe you otherwise wouldn't take if you were sitting on a different team or within a different organization.
+
+Ben: Do you try and document, ‘here's the reasons why I'm making this optionality bet, so you can decide to rotate it out of the portfolio if those reasons are no longer true’?
+
+Brinton: Yes, everything's written down. Actually, Brad, who is an investor on the team, is amazing at pulling this back up and say, you said, blah-blah-blah.
+
+David: He must be really popular on the team.
+
+Brinton: Yeah, he’s great. We love Brad. He's just very good at remembering and then pulling the source data and saying, hey, look, you've drifted.
+
+Jon: To your guys point, too, it’s not, is their operating margin exactly 22% this year or is a revenue exactly this runway [00:40:00]? Are we approximately right on the thesis? It's not like we feel like we can predict the future where you can certainly have checkpoints along the way. Usually with any stock here, I think there are usually three or four things that really move the stock, as we call those key leverage points in any position. You can generally check in on those and make sure that we're on track.
+
+David: One of my questions is the thing that didn't quite make sense to me in reading your paper, can you talk about what you do with your optionality part of the portfolio as things evolve in it, and how you start an optionality position? There are two copies of the multiverse where this works. Then X amount of time passes, and you start to have more of a view of which copies, 2 out of 10. And now, maybe it's 2 out of 5 or 2 out of 3. As it evolves, what do you do?
+
+Jon: Exactly. There are two scenarios that you can really see this happening. But a good example is on Peloton before the pandemic. The stock obviously went parabolic. There was huge beneficiary of work from home, but it's also just a really dynamic company that's early in its lifecycle building a brand and a platform. With a company like that, I think it's still early days to call that business resilient for many reasons, both just like the context of the company of we're going through the digestion after 2020, the record year for them. Off the charts here, I should say.
+
+For a position like that, we'll just trim it. We have this cap of how big the portfolio we allow optional positions to get. It's generally pretty clear how much of this is something that's a really durable inflection in the business. Sometimes, I guess it is both. I think Peloton is definitely a different company in this version of the universe versus the non-COVID version of the metaverse. I think we can't cross it over.
+
+David: Well, this is so different that you trim it. The canonical VC wisdom is ride your winners as long as possible. The things that are working are likely to continue to work so don't sell. But that's not the approach you guys take.
+
+Jon: Yeah, it's a really good question. We've talked about it a lot,because you're certainly, in some cases, leaving money on the table (I think) if we're not letting our compounders really express themselves over time. There are stocks, we will let them own them earlier in their lifecycle and let them cross over and the resilient head of the portfolio and we'll do that a few times a year. I think that's forced us to average up if the company given actually buys more stock, potentially at multiples higher than our initial purchase.
+
+Ben: It's so hard to do.
+
+Jon: It's so hard to do. I thought about this a lot. This is actually part of our process where we're forced to do it, which is really helpful, because otherwise it's harder to look at the stock and buy more. We're saying we're making this explicit decision, that we're gonna take this from 150 basis point position to 250 basis points. We're going to end capital because this business has structurally changed and actually belongs in the resilient bucket of the portfolio.
+
+There are companies that we've done that where they're honestly just more mature or they're becoming more of a platform. You can actually see the network effect starting to hit and honestly, some of that evaluation conversation also shows there are plenty of platform companies we might want to own in the resilience of the portfolio. But in the current market environment, they're treating valuations that we would not consider resilient. So that's another reason we would own them as optional positions.
+
+It's a really good question. I think what we try to do is not make sure that an optional position ends up in the head of the portfolio, because that's something we've just learned the hard way. If you have a stock that can have a 50%–70% drawdown, the starting point is a 5% position, not only is the crusher performance but then you're also probably hamster on. We've got a stock, that's still a relatively big position, and you don't really want to add to it. Then you just fit that take your licking. That's something that we've learned through experience.
+
+David: I'm wondering if even just thinking about this past two year COVID cycle, you've seen this happen. The stocks that were huge multiverse winners in the beginning, the Pelotons, the Zooms and the like. I'm thinking of Zoom. Zoom went from, I don't know what $70–$80 a share to $600 a share, and then back down to, I think it's at $280 right now. You've seen this happen, right? The optionality played out. That was correct, but then returns pulled back.
+
+Brinton: We're always looking at what's happening to the range of outcomes. Is it widening? Is it getting broader? Is it prediction becoming safer or is it remaining narrow? So with a company like Zoom, it looks a lot to us like a feature. Now the question is, can it become a product and eventually, maybe a platform? Can it develop an ecosystem around it? We don't know.
+
+To take your example, let's say in the middle of the pandemic, it was sort of a cool feature. It was better than everything else on the market. It still is. Then this big ecosystem came around it and it became a full-blown platform. Then the range of outcomes would narrow and the prediction would get safer. That would warrant that becoming a bigger portion of the portfolio.
+
+Valuation is a key piece. This is the piece that we get everyday as public investors. Expensive valuations force predictions. I have to believe a lot more at 10 times sales than I do at 10 times earnings. We're seeing, what is the prediction of the company, what is the prediction the market is forcing us into, and are we comfortable with that?
+
+Ben: We are in an unprecedented investment climate where everything on a whatever basis you want to revenue multiples, earning multiples, unprecedented highs. Any asset you could invest in, be it stocks, or farms, or crypto is forcing you to make predictions. What I've heard this whole podcast so far is you actively avoid trying to make predictions. How do you respond in an environment where there's very little resilience in your ability to invest without making a prediction and have a margin of safety there?
+
+Jon: You just inserted yourself into the weekly NCS investment meeting. This is most of our topic.
+
+David: Just dial us in at any time.
+
+Brinton: Part of this is interest rates. We've never had negative interest rates, and then stimulus. Those effects on all assets, which are unprecedented. We think about this a lot. We don't know the answer exactly. But this could get us into our top semiconductors, because there are a few building blocks of the information age. We are in an epic shift. We're still early days from the industrial age, the information age, and semiconductors are the new oxygen in this environment.
+
+We look at some of these companies. We think the valuations are actually quite reasonable. We choose to sort of bring the portfolio more towards the resilience. This is one of the ways we do it. We do it multiple ways.
+
+David: Yeah, like you used the railroad example. There are 10 out of 10 copies of the multiverse in the future going forward where railroads are important. They are probably also 10 out of 10 copies of the multiverse where semiconductors are important.
+
+Brinton: Exactly.
+
+Ben: Well, that's an amazing way to transition to semiconductors. I was looking for the right hook. Brinton, I think you bring that up as prepared to make some joke. Like, wait, you guys know something about semiconductors? I think TSMC is a top three position for you guys. I think your other top positions—Amazon, Microsoft—use a lot of semiconductors. I think Salesforce is probably up there, too.
+
+David: And TI is one of your top positions, right?
+
+Brinton: Yes, that's right.
+
+Ben: Maybe even before getting into some of the nerdier semiconductor topics, let's stick with an investment one. What semiconductor companies do you own right now in the name of resilience, and which in the name of optionality?
+
+Brinton: Let's start with the two different versions of semiconductors. There are a lot of semiconductor makers that are in the digital space, on the leading edge.They're making three nanometers and on, and these are the high compute functions. And there are other semiconductor makers that aren't really dependent on that leading edge. They're more dependent on having the breadth of a catalog. That would be Texas Instruments that has 100,000 parts or microchips.
+
+In our top positions, we’re more heavily weighted towards the catalog names. These names that the lifetime of a part is 30 or 40 years, and the margins are high. The growth is pretty good. There's clear NZS in the business. They're definitely creating more value than they take. They're very hard to replicate not because what you're doing is technically hard—it's hard—but it's because the breadth of what they have would take you decades to recreate.
+
+Jon: I've always hoped that Buffett would buy a catalog semiconductor business, I just feel like those are just classic Buffett businesses where they're probably not going to look honestly that different in 20 years than they do now. They'll have higher margins and be bigger, and they'll be selling cool electronics we don't even know about. But they're also still selling water meters, coffee makers, and just everything in your household or in a factory. Anywhere you look just has these cheap but high-margin chips in them.
+
+I guess to answer your question a little bit just on the semiconductor impact on the portfolio, we have about a third of the portfolio in semis and that goes across the whole value chain.To Brinton's point, we invest in the catalog analog microcontroller companies. We invest in a digital company like Nvidia that's actually in the optionality tail of the portfolio right now, just because for valuation and context reasons. We're big investors in semiconductor capital equipment, and those actually are ahead of the portfolio. We do those as resilient.
+
+TSMC is a resilient position and then the broader ecosystem like Cadence Design Systems, which you guys brought up in the TSMC episode. That's one of the two key CAD software platforms for designing a chip. It's also a position. There are more less household name–type positions we own as optional positions like a company like Cree, which is early in silicon carbide, an alternative technology to silicon that's used in electric vehicles, including the Tesla Model 3.
+
+That's a classic example where there is some version of the universe where it's a massive platform and silicon carbide, the market goes from being a $1 billion market to a $30 billion market. I don't know if there's a 50% chance of happening or 20%, that kind of thing. It's like a little bit of a walk around the portfolio in terms of semis.
+
+Ben: That silicon carbide thing, it’s the first time I’m hearing of it. Is that changing the substrate of the wafer?
+
+Jon: That's exactly right. Yeah. Using a silicon, like a bulk silicon wafer, uses a silicon carbide wafer, which is actually the wafer itself is much more expensive and it’s very hard. That's one of these classic semiconductor processes where there's some black magic that goes into it. Honestly, most of the people that know how to do this are all in the Research Triangle in North Carolina. Korea is the one company that has two-thirds of the market for the substrate itself, then they will sell the chip.
+
+David: The ASML of silicon carbide.
+
+Jon: So potentially, that's the classic optionality, right? We honestly don't know. There's a chance where we did this stuff that isn't that hard to do and they have a two year lead on their competitors, or it's incredibly hard to do, they do become one of these companies where they're doing something that no one else in the world can do. That is the classic optionality for us. It makes electric vehicles, charging, also renewable energy, and really high-voltage applications much more efficient.
+
+It's like really one of these companies where their core competency has just all of a sudden the market really needs what they can offer. The market is growing extremely quickly. We're seeing a lot of activity around from other companies trying to get into the market as well.
+
+David: All right, listeners. You know what time it is. We've been joking all season that Modern Treasury is the worldwide leader in payment operations. I'm going to borrow a little bit from the ESPN Sports theme. Like college selection day, when all the athletes get their hats out. I've got boom, Modern Treasury hat here for people watching the video version. So great. We are so pumped for our friends over there. They just announced a $80 million Series C at a $2 billion valuation led by existing investors, Altimeter Capital and Benchmark Capital. Modern Treasury is the best.
+
+Ben and I are now small investors as well, which we're so excited about. For customers like Gussto, Pipe, ClassPass, Marqeta, anybody who manages complex payment flows, which is basically every company out there these days, Modern Treasury automates the full cycle of money movement from payments, to approvals, to reports, to reconciliations. All the things that your finance teams did manually by hand in the past, now it is all done in software with API's from Modern Treasury. They're just the best.
+
+Ben: You’re invoicing people to get money if you're sending money. If this isn't straightforward in any way, if there's any complexity or multiple people that need to collaborate on this, Modern Treasury is for you.
+
+David: We actually used the product ourselves for the first time this season at Acquired. It is just mind blowing how much better this was than the old build.com and invoicing and reconciliation. It’s so much better.
+
+Ben: For those of you who are wondering, is it working? It’s a cool idea. Here's a pretty crazy stat. In 2021, they had 20X volume growth, to $2 billion a month in payment volume, which is accelerating from 10% growth already in 2020. Just an unbelievable company.
+
+David: And as we've been saying all season, if you haven't checked it out yet, the only thing that the Modern Treasury team is more nerdy about the payment operations is, of course, Acquired. We had such a blast a few months ago, interviewing the whole company, which is now about 2X–3X bigger than it was then. On the LP show, they have made that LP episode available to everybody to listen to. You can go check it out at moderntreasury.com/acquired or click the link in the show notes.
+
+Let's do a little sidebar if you guys are game. I just thought of that. I think this could be a really cool case study if you're willing to talk about the NZS process. You mentioned, Jon, that you own Cadence as a resilient position in the portfolio. Having just done our TSMC episode and a deep dive on the whole semi industry infrastructure. You mentioned they also have a competitor synopsis, and the two of them, it's like a duopoly in the EDA space. How did you decide to own Cadence? I'm assuming not Synopsis. Or do you hold both?
+
+Jon: We've talked a lot about both of them. Over the years we've owned Cadence for 9 or 10 years back to our days at our previous employer. I think on Cadence it's a few things. It's actually a cool story of just how we've got into the idea of investing. EDA is part of our process for finding new ideas and just being up to speed on what's going on in the industry as we follow. It’s going to industry trade shows instead of investor conferences. We don't generally go to a lot of big investor conferences.
+
+Early last decade, I used to go to all these chip conferences, and every presentation it was someone from TSMC and someone from ARM, and then someone from either Cadence or Synopsis. At the time, Cadence and Synopsis are viewed as the sleepy, crappy companies. We love TSMC, we love ARM, so let's do some work on Cadence.
+
+Both companies are amazing. They deserve a lot of credit. I think what steered us towards Cadence is the management team. Lip-Bu Tan at the time was the CEO. He's actually moving into the executive chair role this year. He just was one of the iconic leaders in this sub-industry over the last 11 years. He was actually a VC previous to being the CEO of Cadence. He was just on the board, had to come in, and basically turn around the company. He was just so focused on the culture of the company.
+
+He’s told us what we wanted to hear, but in terms of turning around the culture, really taking a company that was in a very difficult position in the financial crisis, and really re-architecting the product positioning of the company, he's so customer-centric. That was how we first got involved with Cadence.
+
+We do think they’re taking market share, especially in digital markets where they would be selling to an Intel or an Apple or an Nvidia. We think they’re a sure gainer. With both companies, it’s an extremely high quality duopoly. I think you’re fine either way.
+
+Ben: And do you end up doing one-on-one meetings with the CEO at the level of capital that you’re deploying?
+
+Jon: Yes. This was back to our previous firm where there was more than a hundred billion dollars of AUM to deploy, and technology was a decent chunk of that. Cadence is a great example. We are actually their biggest shareholder for multiple years. At that point, we had really strong dialogue with them. I honestly would just bump into the CEO in airports and conferences [00:55:42]. Suddenly, it’s not that big of a universe. Everyone’s kind of going to the same things.
+
+Ben: And he’s very tall.
+
+Brinton: He’s very tall, too, so he’s easy to spot.
+
+Jon: Yeah, you’re not going to miss him. He’s also such a good person, too. We would talk about wife and kids, and a lot more than just our investment in their company. It’s actually something we think about a lot.
+
+NZS is a younger company with less AUM behind us. We have a lot of relationships from being in the industry for a long time, but it’s an open question of how often do you really need to talk to, but when you talk to the CEO of a company four times a year, probably not. Or 6 times a year, 10 times a year, the way we’re investing, especially with the resilient company, realistically maybe a check-in every year or two, or if there’s something obviously really critical the thesis we can check-in. But that’s kind of the way we grew up investing is a lot of management interfacing.
+
+David: I’m always curious with public market investors. How do you think about that? It sounds like you do find it very useful to have conversations with management, versus all the information’s out there.
+
+I would imagine on the one hand, of course I want to know. I could glean so much more information than subtle signals from talking to somebody in person. On the other hand, I kind of think, well I really care about what you do, not what you say, and I can just see what you do in your filings. How do you all think about that?
+
+Brinton: This has changed a lot over the past decade because seeing management team talk is easier than it’s ever been; it’s publicly available. There are some times when it’s helpful. There are some times when it’s harmful. It probably nets out to be not helpful.
+
+I’m just thinking of one interaction that we had with Rich Templeton, the CEO of Texas Instruments, in early February 2009. It’s a terrible time; everybody’s unhappy. It’s really rough. Rich walks in the room, big smile on his face. How’s it going, boys? A recession is a terrible thing to waste, and you’re like, what’s going on?
+
+David: I love it.
+
+Brinton: He clearly had a different mentality of, hey this is where we make all of our returns up to the next decade. We’re going to go buy equipment for pennies on the dollar, we’re going to systematically lower our capex-to-sales ratio, and we’re going to go get customers and sign them up because we’re running our fabs full out still and other people aren’t. He’s just one of these amazing leaders.
+
+When he took the company over, they have 40% of the business geared towards wireless and Nokia was a massive customer, their largest customer, and he bled that down to zero. Clearly, this embodiment of a company that’s built around adaptability instead of these point predictions. People that are helpful to interface with, but honestly, we probably could get everything we need at this point without meeting with them as well.
+
+Ben: David and I were explaining our research process to some friends the other day. One of the things that I think that is chronically underviewed on YouTube is presentations by executives at industry conferences. That’s a thing that we’ve relied on really heavily. Everyone goes and watches Elon Musk give his talk at the Recode conference, but 358 people watch the YouTube video of Gwynne Shotwell presenting at an aerospace industry event. There’s a lot of really interesting information about the company, probably more so than the big, shiny, public-facing stuff.
+
+Brinton: That’s exactly right. It amazes me. I don’t remember the last time I watched the computer history interview between Jen-Hsun and Morris Chang.
+
+David: Oh, so good.
+
+Brinton: It was under 3000 views or something like that. I was like, how does this not have three million views?
+
+Jon: You’re like, am I watching the wrong feed? How could there not be more views of this? It makes no sense. There should be a million views; it’s so funny. We send stuff like that around all the time. I couldn’t agree more. Brinton and I were sending some stuff back and forth earlier this week, that’s mostly free too and from industry trade organizations. It’s a huge resource.
+
+Also, you do get a little bit of a different flavor. If you see a management team at an investor conference, or if there’s even a road show coming through town but you’re the fifth investor I’ve seen that day, it’s like you kind of getting the company line versus hearing what they’re really pitching to their broader stakeholders at an industry conference. It’s such a good resource.
+
+David: When we’re doing an episode, just us, two-, three-, three plus–hour deep-dive on a company, we almost never talk to people actually at the company. Maybe we should, but we get all the insights we need from obscure YouTube videos, books, presentations, white papers.
+
+Ben: To Briton’s point, there’s so much material out on these companies and stuff by management teams these days.
+
+David: And we do it in our basements.
+
+Brinton: I think you guys are on to something with this Acquired thing.
+
+Ben: We’ll see. I’m going to take us into the more technical side of semis now. Brinton, you sent an email when we were batting around topics, and you said, well what if we start by talking about the UFO crash that happened in Roswell in 1947 where we got the first semiconductor technology, and then begin to reverse engineer it at Bell Labs, winky face.
+
+David: It was the first tech transfer.
+
+Brinton: That’s exactly right. We know exactly what semiconductors came to planet Earth. It was July 7, 1947. And they needed a back story when they took the UFO over to Area 51. They’re like, how do we get this to the world without people knowing? Of course, enter William Shockley—fresh from the war, doing research on radar and submarine warfare, and he’s got top secret clearance. All right. Okay, where did this come out of? Bell Lab? Shockley? Oh yeah, that’s it. That’s the backstory.
+
+David: We’ll give it to Bell Labs.
+
+Brinton: That’s the whole backstory in semiconductors. I think we’re done.
+
+David: There you go. With Shockley, I actually don’t know the history. I know he was super involved in World War II, right?
+
+Brinton: He was, yeah. There’s this great book, by the way, called The Idea Factory. It’s the history Bell Labs. If anyone’s interested in the history of semiconductors, you should definitely check it out. Not only the semis but information theory from Cloud Channel which came around the same time.
+
+David: Also from Bell Labs, right?
+
+Brinton: Also from Bell Labs, yeah. In the 40s he took a leave of absence from Bell Labs and did work actually with that Secretary of War on radar and submarine warfare.
+
+Ben: Just to keep pushing on this, the reason that this is a plausible story that we got this from UFOs is because the magic behind how a semiconductor works is so mind-blowing and unfathomable that you could just experiment your way to finding this. That’s sort of what you’re going for here.
+
+Brinton: I think that’s right. It really was this—overused—quantum leap to head back in tubes. That’s what the switches were made out of. It was one of the few places where there is still pure science being done at Bell Labs. They said when [01:02:03] switch, it doesn’t break. We sent a lot of people out in the middle of nowhere to replace these vacuum tubes. This could go on very long, but there were some key insights around doping germanium.
+
+David: You’re on the Acquired podcast, so it’s different. Indulge yourself.
+
+Brinton: There are these few key insights, and it wasn’t just Shockley. It was two other guys, Brattain and Bardeen as well. The three of them together came up with these insights and just right after the war. Some of it was during, but most of it was just after.
+
+They figured out you can dope this substrate germanium with different N-type and P-type is what they’re called, and when you run a current through it, it changes. It actually does the switching in solid state. This idea of solid state switching, which of course came about because of the transistor and then later I was made into integrated circuit by Kilby at TI, is what enabled the foundation for all modern electronic devices.
+
+Ben: Over the last decade, I’ve read the Wikipedia pages for semiconductor, for transistor. I remember the first time trying to look up how does a flash drive work. I’ve got this cool USB drive, I put it in my computer, and I read the whole Wikipedia page. Afterwards, I was sort of just blinking. I still don’t understand.
+
+This actually was not helpful. And it is all these things where most of the time, especially having a computer science education, I feel I can connect every building block to the next layer of abstraction building block on top of it, where eventually at some point after a few years of studying computers, you’re like wow, cool, I pretty much get how we go from physics to operating an operating system on a monitor. I understand all the building blocks in between.
+
+But somehow, there really is something right around this layer where I never quite can jump from the physics to how it actually works and then how it manifests in information in bits on a computer. I think I just need to go read a few more books, but it is one of these things where when you sent the alien joke, I was like, you know you’re right. I just take it at face value that this works, but I don’t really understand how it works.
+
+Brinton: I told my daughter that this morning. She was like, wait a second dad. That’s really what happened right? Mostly. Yeah, let’s back up.
+
+David: Ah, parenting.
+
+Ben: Okay, well getting tactical here. On our episode, I think we did a little bit of a high gloss shine on the story and the current state of the market, especially with TSMC and Samsung. We basically equivocated them and said, they’re basically doing the same stuff. TSMC’s 1–2 years ahead. Obviously, Samsung has the whole consumer electronics division as well. Okay, that’s TSMC and Samsung, and that was probably too simplistic. One thing I was hoping from you guys today is helping us better understand who’s good at what between those two companies.
+
+Brinton: Samsung is an amazing company. Probably not super well-understood, maybe like TSMC, and people know them for consumer electronics and phones, obviously. But yeah, 50% market share in DRAM and about a third of the market share in that. Of course, as we do compute we need more memory. We need a lot more DRAM, which is the fast memory on your phone or device or whatever. The queue stuffs up.
+
+It’s like a funnel. If you look at a funnel, you’ve got solid state or stuff sitting there and NAND flash moves into DRAM, then actually goes onto the chip with SRAM, which is really fast funnel, then it goes to the logic to get processed.
+
+Samsung is very good at making memory, and like I said, they have over half of the market share of DRAM, which is incredible. There are really only three major companies that are all the big DRAM—two in Korea and one’s Micron in the US. Then in flash, they’re big. They also have a decent foundry business. It’s about 17% of the total foundry pie, so not as big. But DRAM and NAND are easier to make than logic.
+
+Ben: Are these branded Samsung products or are they manufacturing them as a contract manufacturer?
+
+Brinton: The DRAM and NAND are all branded Samsung, but of course, everybody uses Samsung. It would be next to impossible for Apple to get all the memory they need without having a massive relationship with Samsung. So they’re frenemies.
+
+David: So the four or eight gigabytes of memory in your iPhone, that’s coming from Samsung.
+
+Brinton: That’s coming from Samsung, yeah exactly. These are easier to make, they have fewer steps, but still they’re very hard. DRAM takes around 400 steps and over a month in the fab working 24/7 to make. NAND has a little bit fewer steps than that, but actually NAND is getting more difficult because they’re stacking it into 3D. As you get more layers, it’s actually getting more complex.
+
+Logic is still the hardest stuff to make, the system on chips that TSMC makes. Just imagine making one thing over and over versus making a menu. What if you had to be a restaurant to make every kind of food on the planet? It would be really hard to get all this food, so that’s what TSMC is doing. That’s some of the differences.
+
+Samsung is also doing logic, but they have a different business model. They compete with their customers, so it’s harder for their customers to trust them. Whereas TSMC doesn’t have that conflict.
+
+Ben: What do you think makes for a more resilient company? Playing at multiple spots in the value chain such that you compete with your customers and have optionality, or being super pure play so that you have no strategy conflict?
+
+Jon: I think it depends. If you talk about something in semiconductors—Intel’s the classic example of this where they’re more vertically-integrated—the hard thing about doing that is you have to fight battles on multiple fronts. Intel has to fight TSMC on process technology, which in itself is one of the hardest things. Any technology company had to do over the last 20 years, and that’s why Intel has been surpassed by TSMC.
+
+They also have to fight AMD in their core chip design market, were AMD—enabled by TSMC—is innovating faster than they have in the last 20 years, really delighting customers and taking share from Intel real time. Or Nvidia, where they’re trying to just basically marginalize the CPU and make the CPU less relevant, so Intel’s less relevant.
+
+I think that’s the hard thing about being vertically integrated in semis versus being more of a second horizontal pure play, is the needs of Moore’s law are just so difficult. It’s hard enough to just do one of these things well. Doing multiple of them well makes it harder.
+
+I generally think Brinton’s point on just the business model difference between Samsung and TSMC is so spot on because TSMC is the neutral party. They will never ever compete with their customers. If you think about the amount of trust that their company has to put in TSMC because they’re betting their entire company on TSMC’s ability to make this chip for them and to have capacity for them when they need it, is just the amount of trust.
+
+This is Kevin Morris Chang’s hallmark since he founded TSMC. That’s just something that Samsung can’t quite offer because they just have a different business model, and they’re not willing to, not that they aren’t willing, they just don’t have the capacity to build a massive foundry.
+
+David: They can’t change, right? Like they’re not going to shut down two-thirds of the company.
+
+Jon: Exactly.
+
+David: How do you all think about—especially since TSMC’s such a large position in the portfolio—the geopolitical risk? Because we did this whole big going episode. The conclusion I think we came to was this company’s amazing. There’s no fault we can find in this except that China might want to take over the land that they sit on.
+
+Ben: Except this enormous company-ending risk.
+
+Jon: [01:09:09] TSMC’s last earnings call when asked what they thought about Taiwan’s sovereignty. I’m just like, what a world we live in. That’s an open question that an analyst can ask on an earnings call. What do you think about China invading your country? Brinton and I are not geopolitical experts at all. We spend a lot of time thinking about just the importance of TSMC to the world.
+
+I do think TSMC is top five most important technology platforms to the world. I think TSMC is more important than Apple. If Apple disappeared off the face of the earth, I actually think it would be painful for everyone that loves iMessage and FaceTime, but it really would not be as big of a deal versus if for some reason China moves to seize Taiwan or however it wants to play. Also, if TSMC’s fabs were shut down, then the western world be set back at least five years, if not 10 just in terms of technology progress. By the way, technology progress is driving most of GP right now.
+
+You do read about what’s happening with the auto sector and shortages. You’ve seen nothing. If you think the storage is from the way the auto guys manage their inventory and kind of the classic post-recession, [01:10:08] you always get, you go from there to what would happen if Taiwan’s sovereignty wasn’t questioned and TSMC stop making wafers for some period of time, I just think the impact on the global economy would be extremely painful.
+
+That brings you to a logical conclusion of hopefully the US and the west would move to protect TSMC at all costs or at least get the people out of there. I shouldn’t joke about if, but it wouldn’t be totally dissimilar to what’s happening in Afghanistan, where I think you just airlift as many TSMC folks out of there as possible in a short period of time.
+
+But then, you have no fabs. TSMC fabs a quarter of the digital chips made in the world now. It would be a lag of multiple years between when you get those people out and when you can actually start making wafers again. It’s a very complex topic.
+
+Brinton: I think another way to think about this is just an ecosystem perspective. TSMC as a company is very valuable, but it’s not super valuable without ASML, [01:11:01], AMAT, and KLA. When you think about the ecosystem of semiconductors—and ASML is, of course, not valuable at all without TSMC and Samsung—there are these handful of companies, call it 15-ish, maybe more, that, if you think of them as one super company, which is kind of what they are is like a super organism, kind of like my bees as superorganism.
+
+David: It’s like an ecosystem you mean?
+
+Brinton: It’s like an ecosystem.
+
+David: A really complex, adaptive system?
+
+Brinton: Yeah, predicting the future is really hard. Anyway, yeah, if you think of it as a superorganism, this is probably the most important superorganism on the planet. If it’s not, it’s certainly one of the top most important. Could you recreate that elsewhere in the world? Yeah, absolutely you could if you had access to the rest of these pieces, which we in the west we do. It would just take to transport a long time, and that’s why people are sort of saying, maybe we should take some risk out of this place.
+
+ASML calls this semiconductor sovereignty. We’re building this fab in Arizona, this 5 nanometer TSMC fab. But it wouldn’t be a stretch to think that they will be built again in Europe. This happened before. But of course, when technology reaches a fairly stable state, you want to optimize, run efficiency, so you get this horizontal-type model.
+
+I remember when Apple bought P.A. Semiconductor. I was on record going, this is the stupidest thing ever. Qualcomm makes really good semiconductors. Broadcom makes them. TI makes a great application processor.
+
+David: And this is the origin of you deciding that you don’t know the future and so you should.
+
+Brinton: Yeah. What I said was it obviously [01:12:32] that’s for sure. But when technology changes, I just didn’t have a concept for the smart phone, so technology was about to change quite a bit. In that change you really want to be vertically integrated because you’re not pushing efficiency. You’re pushing product technical ability. We see this with Tesla as well but vertically integrated. Can you imagine Ford having an AI day? That’s just kind of funny, right?
+
+Ben: Well they could have something then they would call it an AI day. I could see that happening.
+
+David: Yeah. MKBHD just did this awesome thousand mile road trip with a Tesla, a Ford Mach-E Mustang, and a gas car. It was just amazing. They’re like, look, the Mustang is a good car, it’s really good, but we couldn’t complete the road trip. It directed us to this charger, the charger was broken. Then we went to another charger. Well that charged at a rate of a mile every five minutes or whatever. We got stranded, and in the middle the Tesla was like, yeah we were half an hour shorter on the trip than the gas car. It directed us to the charging network, it told us which stall to go to, all this stuff.
+
+Jon: So I guess the full circle answer to your question of how we even incorporate the geopolitical risk on TSMC is it will never be a 10% position for that reason. There is always this risk. But also, I think it’s important, my kind of cheeky answer to this is probably not fair, is if there is enough conflict between China and Taiwan that TSMC’s business sovereignty is under concern or people are worried about them being nationalized by China or something, the whole US market is going down.
+
+It’s not just TSMC. I think they’ll be the epicenter, but it’s not like this is going to happen in isolation. At that point, who knows if there could be more of a World War III–type global conflict coming from that. I say at that point, the performance of our TSMC common stock is probably not my biggest concern that day.
+
+Ben: Okay, so let’s say TSMC is a resilience position. Let’s say there is a black swan event which, the fact that we’re all forecasting it and so is everyone else means it probably isn’t that blacks swan-ny if their sovereignty gets challenged. The point of optionality positions is to benefit from these blacks swan events. Do you guys have any ideas if the whole US market went down in this situation, what could you hold that would hedge it?
+
+Jon: The obvious hedge would be defense stocks but we probably wouldn’t have known them because of additional things. Those are very high NZS businesses. But honestly, that would be the one pocket of market that probably will fair okay.
+
+Brinton: If you get to rebuild all these fabs somewhere you’re going to need a lot of equipment. You’re leaving 20 years of equipment on the ground somewhere and you get to recreate that fab probably pretty defensive against that outcome.
+
+David: There’s also I guess owning China tech companies. This is a question of like, if all of this is really going down, I don’t think China’s…
+
+Ben: My ADRs are probably going to stop.
+
+Brinton: They’ve been [01:15:26] working already?
+
+David: Do you have any China tech position? Tencent or others that are…?
+
+Brinton: We don’t. We’ve owned China tech for a long time, but we put this portfolio together at the end of 2019. It just looked sketchy to us, honestly. I don’t know for lack of a better word. We owned zero China tech. We just thought we don’t have to be there. There are other places that are very interesting. It’s a question of ownership. We’re not really sure who owns these companies. And through the ADR structure and the VI structure, we know we don’t own them, so we just [01:15:59].
+
+Ben: Yeah, makes sense. Well, I want to come back to some more technical questions. Another thing that I think we kind of glazed over in our TSMC episode is the current state of Moore’s law from a liberal perspective, but then probably more interesting, the current state of the spirit of Moore’s law. I was wondering, maybe Jon let’s go to you. Could you give us a little bit of a download on, does Moore’s law still work at least spiritually?
+
+Jon: I’m glad the way you framed it that way because it is kind of a religious debate, and people much smarter than me in the semi industry around both sides of it, is the true Gordon Moore, Moore’s law still holding up? I think for the spirit of Moore’s law, we still have revisibility probably for the next 10–15 years.
+
+To be honest, the industry never had more than 10-15 years of revisibility. I think obviously the death of Moore’s law has been pronounced for a very long time. But I think that’s one thing to keep in mind is there are a lot of things out there that’s going to keep us driving down Moore’s law.
+
+One thing that you guys covered well in the TSMC episode is the implementation of EUV systems from ASML. They actually are allowing us to shrink the transistor—the fundamental building block two-dimensionally, so actually putting more transistors into a chip—so ASML comes on record saying to think that EUV will last about 15 years.
+
+Ben: In terms of they’ll allow us to keep doubling the number of transistors on a chip every 18 months for 15 years, or just it will be an effective way of getting any performance?
+
+Jon: I think it will be an effective way to drive performance and drive shrink, basically is the way the industry frames it. You’ll be shrinking the transistor to pack more performance into a chip. But I think that the broader point you hear from the industry, a lot of this concept of, there’s more than Moore, which is kind of a cheeky pun.
+
+David: The semi guys. They’re a real hoot.
+
+Jon: Exactly. So kiki. The broader point where Moore’s law is going now, it is not just about the transistor. It’s really about the package. You’re seeing a lot more innovation, not just more transistors onto one gigantic chip to drive more performance. You can actually split up chips into multiple chips called chiplets which AMD is doing, and this is a big part of Intel’s future strategy, actually.
+
+Also, instead of having one gigantic GPU, you apply for Nvidia, you can have four smaller ships, and you can kind of stitch them together to drive more performance. That’s another way that we’re going to get a lot of benefit from Moore’s law.
+
+Actually, one thing I skipped over on the transistor side as we are moving to a new transistor architecture—either a two nanometer or three nanometer, depending on which company you’re talking about—to a gate all-around architecture. Previously, we are on FinFET, which has been around since I guess for the last seven or eight years, I don’t know the exact numbers, [01:18:41] 10. There’s line of sight into from here, more gate architectures, different materials, and then we get to the mid-2030s we’ll kind of see how it goes.
+
+It is amazing. I was actually at a virtual chip design conference earlier in the week, and there’s so much focus not just on this packaging idea but even if you have to extract one more layer from that, it’s about system-level performance. If you look at what Nvidia or AMD, and the leading digital companies are talking about, it’s can you make more processors and actually stitch them together into a cluster with some sort of proprietary interconnects.
+
+They’re really thinking more like computing companies than just chip companies now, and that’s a big change. But all of these transistor-level innovation, package-level innovation, and then system-level innovation, I think we’ve got a pretty good line of sight into the spirit of Moore’s law continuing at least through the mid-2030s.
+
+Ben: Let’s just talk about the iPhone because it’s the one I understand the best. Apple became the aggregator rather than the old days of I’m going to go build my computer, I’m going to go buy a motherboard, I’m going to buy a GPU and I’m going to slot it in the PCI slot, and blah-blah-blah.
+
+Apple basically says, well we’ve designed this logic board and we’ve designed most of the chips—the important chips—and we’ve situated them together. TSMC manufactures it. They do all the packaging, so you have the bare metal to bare metal packaging of these things so we don’t need to run it through these buses that have low bandwidth to get information from one piece to another.
+
+Let’s keep playing that out a little bit based on everything you know. Where in the value chain do you think the point of aggregation shifts to over time? Who gets to own where do we put all this stuff together? And I get to capture a lot of extra margin because I’m the one putting it all together.
+
+Brinton: I think the interesting thing about the semiconductor ecosystem is actually there’s a lot of people capturing margin, and they’re captioning really high margin. This is the sign of a healthy ecosystem. There’s not one company that’s making all the money throughout the whole chain. We see margins come up.
+
+Here’s a good trivia question: Who has higher operating margins—Texas Instruments or Microsoft? Because I asked it, you know the answer. It’s TI. It’s not really appreciated how good these businesses are.
+
+David: That’s shocking.
+
+Brinton: Right?
+
+David: Yeah, especially because TI, the core business is not the leading edge digital processors that TSMC is doing. It’s the commodity stuff, right?
+
+Brinton: I think this is Rich’s key insight. He said, okay, we’re doing all this leading edge stuff. We’re fabbing at TSMC. What if we just trickle that business down to zero. They try to sell it, no one wanted to buy it, and boring is beautiful. You look at TI’s end markets, two-thirds of which are industrial and auto, and I guess it’s a tech company. Yeah, they make chips, but it seems a lot industrial company, too.
+
+Jon: I think you can make the same point that you made on TI on Nvidia. The fabless business model, really is like a software company. Nvidia got close to 70% gross margins and low 40s operating margins. It really with very little cyclicality because TSMC offload all that cyclicality. It’s just one of the best business models. Besides, I would say enterprise software is one of the best business models in the world. TSMC is the enabler of that.
+
+But I think Brinton’s point is spot on. In this future world, one thing that’s kind of cool is it takes the whole ecosystem to really drive the future of Moore’s law. It used to be just about ASML needed better litho tools, Intel would use them and shrink the transistors, and we just brute force ourselves down Moore’s law.
+
+Now, [01:22:10] packaging needs, litho advancement from ASML, but it also needs improvements from other equipment guys, like Lam Research, or Applied Materials, or Tokyo Electron because you need deposition and etch steps to build these advanced packaging and multi die packages for current events packaging applications.
+
+You also have all this off-the-shelf IP they’re getting from companies like ARM or from Cadence or Synopsys, that may part of what Apple does, to your point, Ben, is they’re really just an aggregator. They buy IP blocks off-the-shelf. A lot of web designing a chip is about it. It’s just buying a lot of [01:22:38] and aggregating them.
+
+The great thing about it is since Moore’s law is really freaking hard, everyone in that ecosystem does really well. I think TSMC is sitting in the middle of it. They obviously do very well because they’re driving all the innovation also, and obviously are the key partner for a lot of this.
+
+David: Really quick on TSMC. I think we glossed over this on the episode because we weren’t deep enough to understand it. My sense is that the open innovation platform that they’ve created is really important, and it’s what orchestrates all of what you’re talking about here that it really takes the village of the whole industry to push things further down. Is that true? What is that and how central is TSMC’s open innovation platform to all of this?
+
+Brinton: That’s exactly what I was going to say. I think it’s really true and there is no Github to the semiconductor IP ecosystem. The closest you get is the TSMC open alliance. There are pockets of it elsewhere. The EDA guys have a ton of IP as well. Of course, as you make these chips you need to emulate them to see if they actually work, hopefully before you put them in the fab because that’s really expensive. All these things really play together.
+
+When you think about how Intel was doing this for a long time, it is a closed system. It’s Intel’s way; Intel’s process flow. TSMC said, oh wait. Let’s form an alliance with everyone because this is really going to take everyone to keep driving this forward. This open architecture or this open approach has really won over.
+
+Ben: One thing that’s always hard for me to understand is how hard it is to do each layer of the stack. By that I mean it seems the ASML guys create a pretty unbelievable machine. They have a lot of services associated with that machine. They are even in the TSMC factory helping to assemble and operate these things. I sort of was scratching my head thinking, could ASML just kind of like become TSMC? Could they just operate their own equipment?
+
+Then I drove down the other side of the slope. I was like, who makes the stuff that’s important to the ASML machines? I was like, what is this TRUMPF company? Then you go on the TRUMPF website—let the name lie for a moment here—and make this unbelievable laser. They’ve got this crazy video on their website that shows off their laser. I’m pretty sure what they’re showing me is actually the magic of the ASML EUV machine. I’m like, well shoot. Why can’t the TRUMPF company just do what ASML does and then also do what TSMC does if they are the only ones in the world who can make this unbelievable laser? Can you guys shed any light on, is that ever going to happen? Could ever vertically integrate?
+
+Jon: First of all, the videos of the simulations of the laser and any of the systems on the TRUMPF website are so freaking cool.
+
+David: They’re amazing.
+
+Ben: Yeah.
+
+Jon: Actually, I hadn’t seen them until recently, and I’ve heard so many times that 50,000 pulses a second drops a [01:25:30] the whole spiel from ASML which, Ben, by the way did a very good job on the TSMC episode.
+
+Ben: I was doing my best Jon Bathgate impression.
+
+Jon: I can tell you’re excited to do it (I think) multiple times, really like, can I do the ASML thing now? Anyway, we have a few things to think about. One is there’s so much innovation. The laser itself actually is 10 tons, but an EUV system is 180 tons. There’s a lot of other equipment in there that’s not just a laser. I actually was trying to find this from a dollar value. I didn’t track it down but I’m sure that number is out there.
+
+ASML’s partnership with ZEISS (the lens company) is also really special. I guess TRUMPF and ZEISS could try to partner too. I don’t think they have any ambitions to do this, but they could try to partner together to kind of circumvent ASML. The lenses that ZEISS is coming up with are literally the most uniform lenses designed in the history of the world, and some of the metrics that they threw out on that are incredible.
+
+One of the things that’s unique about ASML is they shipped the first EUV tool in 2010 to TSMC. EUV didn’t really start high volume, and this is after a decade of R&D already. But then, they didn’t start high volume manufacturing on EUV until 2019. They had almost a decade of learnings in TSMC’s fabs and how to get these things to actually work, how to get the throughput to levels where the economics actually makes sense.
+
+There’s actually this really cool conference called SPIE every February, where all of ASML’s customers come together and basically give feedback on EUV and kind of give the updates on where they’re at. ASML lives through 10 of those with all the feedback, not just from TSMC but from all their ecosystem partners.
+
+I just feel the learning cycle that ASML’s been through, there’s just so much more innovation in addition to the laser and the lenses, but it is. I mean the lenses are a really critical component. ASML actually bought a laser company in 2012 called Cymer. I think they actually have an internal laser bake off between Cymer and TRUMPF, and I think TRUMPF won for EUV, which is also kind of a funny trivia question.
+
+Ben: Wow, fascinating. Okay so the answer is they all add a ton of value on top of the previous layer of the stack.
+
+Brinton: And like a lot of things in the techie systems, there are fractals on fractals. Like you say, what’s the most important part of this ASML tool? There’s a fractal down. Then you keep going. But it’s really the ecosystem approach that makes sense. No one can do all of this. It’s just way too hard. It really does take a village.
+
+David: All right, listeners. For our final sponsor, we are here to tell you about Fundrise. As we’ve been saying, Ben and I collaborate not just on Acquired but on a massive spreadsheet. Basically, the intention of this was how do we recreate the infrastructure of a family office in Excel for our personal investing and collaborate on it.
+
+One thing that—until Fundrise—we were unable to access in our personal investing was real estate. We are so exposed to tech in just about everything we do, and our primary real estate in San Francisco and Seattle is, of course, also pretty exposed to tech.
+
+We had thought about looking at investment properties elsewhere in the country, but the problem with that is not only do you need a huge chunk of capital upfront, but the time, the effort, all the overhead of managing properties yourself, we didn’t want to do that. We looked it REITs, but with REITs you’re paying too many fees and you have no control over the properties that you’re investing in.
+
+Enter Fundrise. Fundrise is one of the only platforms that lets anyone, not just accredited investors, buy fractional ownership in custom portfolios of private real estate assets. This is the same thing that sophisticated institutions like endowments and foundations do. You get fine-grain control over what you’re investing in. It’s not a totally blind pool just like a REIT.
+
+The company Fundrise started back in 2012, and fast forward to today they have over 150,000 active investors on the platform and over $5 billion worth of real estate. Investors can see and track all the individual properties in their portfolios, including data like occupancy reports, construction progress, and market data trends. Truly, it is the best of both worlds. You get the fine-grain control of doing it yourself but without all the overhead and management fees of a REIT. You can learn more and sign up at fundrise.com or click the link in the show notes.
+
+Ben: Great. Well, Jon, I know you have an ASML story that you want to share. I’d love to hear it.
+
+Jon:  This is a really cool story about how ASML came to be. ASML is so strategic to the world. They have one competitor, which is Nikon, in the lithography market. Nikon gave up on the market coming in the last decade. TSMC, Samsung, and Intel looked around and realized, we’re betting the future of Moore’s law on this one company (ASML), which at the time was a sleepy Dutch company that have a $20 billion market cap. No one really knew who ASML was in 2012.
+
+What’s so unique is that Intel, TSMC, and Samsung partnered and actually bought 25% of ASML to inject capital into ASML, to develop EUV systems. That sort of really the iteration path of developing EUV to get EUV to where it needed to be for high volume manufacturing by the end of the decade.
+
+It’s just such a cool story of the ecosystem coming together and everyone in the semi industry knew how important ASML was at the time, but the world didn’t really understand that. Getting ASML where they needed to be on EUV obviously is now enabling Moore’s law for the next (at least) 10 years.
+
+Ben: And is it right that they’ve all largely divested at this point?
+
+Jon: They have, yes. They honestly should have just [01:30:56] to it. It would be not immaterial to, especially Intel’s enterprise value. There are so many stories like that that you guys covered. The ARM origins, all of these major ecosystem players had stakes from other companies at various times, which is just kind of a funny way the semi industry has worked.
+
+Ben: I couldn’t find in our research how much of TSMC does the Taiwanese government currently own, because they started by owning 50% of it.
+
+Brinton: That’s right. I looked for that too, recently, and I couldn’t find it. I want to say it’s still in the 20s, but I can’t be just making that number up.
+
+Jon: I was actually going to say 20 off the top my head, but maybe don’t quote us on it because I don’t know if that’s true or not.
+
+Ben: Wild.
+
+David: Could you imagine if the US government own 20% of Intel?
+
+Brinton: I know, right?
+
+David: Or Apple, or…
+
+Ben: [01:31:41] a lot of Ford at one point.
+
+Brinton: That’s true. Sometimes, people ask why can’t just other company buy TSMC? Well, it’s a national champion. The government [01:31:51] is impossible.
+
+Ben: Some things don’t have a price at which they are for sale.
+
+Brinton: Exactly.
+
+David: Jon have another trivia question for us.
+
+Jon: That can be the point, that fabless chip companies are kind of best and smallest in the world. I think one thing that’s so cool about TSMC is if you just look at all the value they created, like Nvidia is half a trillion [01:32:14] company. Then add up their next few biggest customers like Qualcomm, Broadcom, and AMD, that’s another half trillion.
+
+I was trying to think of their aggregate value creation. Apple is obviously the biggest customer, so I think in an Acquired episode about the top 10 acquisitions of all time, you guys assigned a value to P.A. Semi and how much of Apple’s differentiation is driven by semiconductors. If you guys know off the top of your head, that would be my guess for Apple’s contribution to the TSMC value creation for the world, if that fraction all makes sense.
+
+Ben: That was the most handwavy part of that whole analysis. I feel we ascribed half of Apple to NeXT, and then 10% to P.A. Semi or something arbitrary.
+
+David: We were literally carving up the Apple.
+
+Ben: Well, here’s the framework. Here’s the reason it’s hard. It’s because the notion of necessary but not sufficient it’s really hard to frame into a percentage. Apple would be worth zero if they didn’t acquire NeXT. But does that mean that NeXT is responsible for 100% of the value of Apple? Absolutely not. What percentage do you assign it? It’s tricky.
+
+Jon: Yeah, that all makes sense. I actually don’t know the number you guys use. I thought it was 25% off the top of my head, which maybe that’s a good, rough number that Apple’s contribution is. Another half trillion dollars to the TSMC value creation story, but you get the broader point. It’s just trillions of dollars of market cap that TSMC has created for their partners, which I think is just so cool.
+
+Ben: Yeah, it’s amazing. It’s really meets the Bill Gates line of the definition of a platform that they’ve created way more value for their customers and their ecosystem than they’ve captured for themselves.
+
+Jon: Yeah, which is so cool because obviously now a traditional Internet or ecommerce platform, the way most of SaaS platform, the way we think about platforms is like a manufacturing platform which is just so unique.
+
+Ben: There’s one point that you’re getting at here. It is part of the white paper of what we discussed earlier, which is about leaving money on the table for your customers and leaving money on the table for your partners. It reminds me a lot of when we did the Altos episode with Ho Nam.
+
+It’s really this idea that if you as the management team or if you as an investor who deeply understands the company knows that, in a way that other people outside the company can’t underwrite, then you can’t do a much more intelligent job valuing the company than anybody could with a brute force metrics such as industry average earnings multiple. Because if you actually understand, well our earnings could be this if we wanted it to, or our growth rate could be this if we wanted it to, but we’re making strategic trade-offs to not do that, then you actually have a unique ability to underwrite the company’s value and thus actually more of a margin of safety or more of a willingness to pay up than anybody else.
+
+It’s interesting being deeply studied about these companies where you do know that they’re sort of leaving something on the table for other participants that you can be more comfortable making an investment than other people can.
+
+Brinton: I think that’s a really insightful point, Ben. The thing it gets too for me is duration of the asset, duration of the growth. When you leave money on the table, what you’re doing is you’re creating goodwill for your customers and you’re buying the company duration, which is oftentimes the way to maximize total value.
+
+When I think back about Ho talking about roadblocks, he was effectively saying, we just really understood how big this ecosystem could become. We kept seeing the value accrue and then it moved beyond our original investment case, therefore we became more comfortable investing more money over time.
+
+What people get wrong oftentimes is this duration because duration, if you can go 50% back to your earlier example, it’s extremely nonlinear if you can keep that flat. All the value comes in the tail. We’re just not very good at thinking like that. Our brains don’t work in that nonlinear fashion.
+
+But when you create more value than you take, and that’s your driving factor. and you want to take a lot of value, it’s a hard task because you have to all the times think of, how we want to take a lot? We need to create even more. How do we do that? And then, of course, that buy serration which is a feedback loop, sort of the happy feedback loop if you want to think about it. I think Morris Chang got this very early on and that’s what created TSMC into such a great company.
+
+David: It’s so good. Yeah, we touched on this a little earlier, but that is to double-underline one of the things about you on your ethos, that was kind of an aha moment for me is flat growth versus hyper growth. Flat growth extended over time will beat short-term hyper growth.
+
+Ben: You mean the derivative being flat, right? That a company grows at the same rate every year.
+
+David: If you grow 20% a year for 50 years like TSMC, you will destroy every Groupon out there.
+
+Brinton: So what you need for that is a negative feedback loop. The negative feedback loop for TSMC is, I’m going to come in, I’m going to take what used to be the special sauce of your business, and you’re going to trust me to do that. That’s extremely hard to do. No one wants to do that. But then, the more it happens—there’s a game theory to it—everybody has to do that eventually because it works so much better. You’re never going to get 100% growth—it’s impossible—but you might get 20% for 30 years, which I think the number that you guess on your podcast is 17.7 for 30 years or something like that, which is just incredible to me.
+
+Ben: And when you say negative feedback loop, you basically mean a governor on the growth, like a natural force in that particular business that makes it so you can’t have ludicrous Uber-style hyper growth. And it ends up being a long-term good for the company to have that growth governor or that negative feedback loop.
+
+Brinton: That’s exactly what I mean. We think about ASML, they can shut everything they can make. But they just can’t make anymore. It’s impossible. There is a governor on the growth.
+
+Ben: Wow. Well that’s a great place I think to leave, especially the semis discussion and most of this episode. It’s so counterintuitive, but the way that you’ve framed up why it is long-term good for an investor to want slow, methodical, governed growth is just very different than a lot of things we talk about on the show.
+
+Brinton: One of the things we think about sometimes is that we’re looking for companies that can double in five years and double again the five years after that. All that means is we’re looking for companies that can growth 50% over a decade, all things equal.
+
+Ben: Easier said than done.
+
+Brinton: Easier said than done. Much easier said than done. I will just say one thing about our days. We get a lot of questions of how do you do this with a small company versus a big company? Part of it goes back to what we were talking about earlier. It’s easier to do research these companies now than it’s ever been.
+
+But the second piece of it is, yeah there are more details we have to deal with at times, but how much extra time would you have in your regular job if you only had two meetings a week and you never had to worry about office politics? My guess for most folks is it’s about 20 hours, so then how would you use that? Well, we just use it for unstructured research time.
+
+The way we think about it is we can wander around not knowing what we’re doing and waste 90% of that time. Ten percent might be really useful, and 1% might be absolutely watershed. That’s really all we’re looking for. But you can’t ever just get to the 1%. You have to wander around to find it. That’s how we really structure our days.
+
+Ben: And Brinton, that’s why you run for 24-plus hours straight.
+
+Brinton: And that’s why I run, and that’s why I keep these. It’s all the same thing.
+
+David: It’s where your best investment ideas come from.
+
+Brinton: That’s right.
+
+Jon: I do think this idea of linear time versus non linear time is really interesting. It’s something Brinton and I talk about a lot because the linear time is probably very similar to you guys, getting ready for your next episode. You’re going down the rabbit hole on one topic and then you spend time doing that, obviously. But then you just have so much extra time, though, just be out there trying to connect dots, so you never know when you’re going to have that aha moment or that insight, but having as much opportunity for that as possible is how we’ve intentionally tried to structure our time.
+
+David: We could spend another hour on how you structure your time. I was actually wondering maybe we can get one of both of you—if you’re up to it—to join our next LP call, and I’ll chat about it. I’m sure folks would love to pepper you with questions and hear about how you spend your time.
+
+Brinton: It would be super fine. We always learn from those questions. We love to do it.
+
+Ben: Awesome. Well, Brinton and Jon, where can folks find you on the Internet?
+
+Brinton: You can go to nzscapital.com. We do try to write a lot and we put it all on the Internet immediately. It is everything that we use internally. Nothing’s held back because we know when we put it out there, we’re going to get more value back. This is our way of trying to create more value than we take.
+
+Our partner, Brad, also writes a newsletter every week. If you want to see how he spends his time, you can sign-up for the newsletter on nzscapital.com. It’s called SITALWeek. It’s just Brad’s process of sitting all week and what he thinks about. Brad is like a microprocessor. He’s literally the smartest person I’ve ever met. The way his brain works is incredible. If you like to sign-up for that, you can do that there as well.
+
+Ben: Great, and on Twitter I think you both have Twitter handles.
+
+Brinton: That’s right. The whole team is on Twitter. NZS Capital has a Twitter account. I’m @bjohns3, Brad is @bradsling, and Jon is @jbathgate.
+
+David: Great, and we’ll link all those in the show notes.
+
+Jon: Thanks [01:41:36].
+
+Brinton: Thank you.
+
+Ben: All right, listeners. Hope you enjoyed our conversation with Brinton and Jon. If you found it to be frankly as eye-opening as I did, feel free to share it with a friend. If you learned something new about complexity investing, or their barbell strategy, or resilience and optionality, I’m sure you can think of someone that you want to share that with, so feel free to do so.
+
+If you are not already a member of the Acquired Slack, come join us, acquired.fm/slack. Some of the best discussion you’ll find on the Internet about lots of things that you care about. If you’re not an LP, you should become one. It’s a way to get closer to what David and I do here at Acquired. We have these awesome LP calls once every month or two.
+
+We have been on a tear recently with great LP exclusive content. We just dropped about a month ago now a great interview with Roneil, the CEO of Audius, which is the largest crypto Web 3.0 application out there with over six million users. And then just before this episode, we dropped another sort of Web 3.0 episode, this time on Web 3.0 marketplaces centered around Braintrust.
+
+David: With Adam from Braintrust. Wow. That one was a blast.
+
+Ben: Yeah, so if you’re Web 3.0–curious or maybe you’re Web 3.0–skeptical, these are fun episodes to listen to because they’re super non-DeFi, non sort of crypto use cases.
+
+David: Yeah, they’re real world applications.
+
+Ben: Yeah, which, of course, we wanted to dive in and tell those stories.
+
+David: I feel the universe works in funny ways. I think everything sort of aligned and a bunch of stuff happened all at once. It’s the Santa Fe Institute and complex. Everything we talked about on this episode just seems like such an amazing place. I’ve always wanted to go to Santa Fe. Period. I’ve never been there, but to go [01:43:25] class. We should do something.
+
+Before this, we had our Michael Mauboussin episode—he’s the chairman of the board there—where Kindergarten is actually investing in a company that the CEO is also a board member there. There’s too many stars aligning. We got to go.
+
+Ben: The universe is telling you something, David.
+
+David: I think it is.
+
+Ben: Well, with that, thank you to our sponsors, the Softbank Latin America Fund, Modern Treasury, and to Fundrise. Listeners, we will see you next time.
+
+David: See you next time.
+
+‍

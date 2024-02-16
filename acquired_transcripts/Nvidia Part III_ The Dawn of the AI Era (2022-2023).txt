@@ -1,0 +1,1399 @@
+Ben: Do you like my Bucks T-shirt?
+
+David: I love your Bucks T-shirt.
+
+Ben: I went for the first time two weeks ago when I was down for a meeting at Benchmark, and the nostalgia there was just unbelievable.
+
+David: I can’t believe you hadn’t been before. I know Jensen is a Denny’s guy, but I feel like he would meet us at Bucks if we asked him.
+
+Ben: Or at the very least, we should figure out some Nvidia memorabilia to get on the wallet books.
+
+David: Totally.
+
+Ben: Fit right in. All right. Let’s do it.
+
+David: Let’s do it.
+
+Ben: Welcome to season 13, episode 3 of Acquired, the podcast about great technology companies and the stories and playbooks behind them. I’m Ben Gilbert.
+
+David: I’m David Rosenthal.
+
+Ben: And we are your hosts. Today, we tell a story that we thought we had already finished—Nvidia. But the last 18 months have been so insane, listeners, that it warranted an entire episode on its own. So today is a part III for us with Nvidia telling the story of the AI revolution, how we got here, and why it’s happening now, starting all the way down at the level of atoms and silicon.
+
+Here’s something crazy that I did a transcript search on to see if it was true. In our April 2022 episodes, we never once said the word generative. That is how fast things have changed.
+
+David: Unbelievable.
+
+Ben: Totally crazy. And the timing of all of this AI stuff in the world is unbelievably coincidental and very favorable. Recall back to 18 months ago. Throughout 2022, we all watched financial markets, from public equities to early-stage startups to real estate just fall off a cliff due to rapid rise in interest rates. The crypto and Web3 bubble burst, banks fail. It seemed like the whole tech economy and potentially a lot with it was heading into a long winter.
+
+David: Including Nvidia.
+
+Ben: Including Nvidia, who had that massive inventory write-off for what they thought was over-ordering.
+
+David: Yup. Wow, how things have changed.
+
+Ben: But by the fall of 2022 right when everything looked the absolute bleakest, a breakthrough technology finally became useful after years in research labs. Large language models or LLMs built on the innovative Transformer machine learning mechanism burst onto the scene, first with open AI’s ChatGPT, which became the fastest app in history to a hundred million active users, and then quickly followed by Microsoft, Google, and seemingly every other company.
+
+In November of 2022, AI definitely had its Netscape moment. And time will tell, but it may have even been its iPhone moment.
+
+David: That is definitely what Jensen believes.
+
+Ben: Yup. Well today, we’ll explore exactly how this breakthrough came to be, the individuals behind it, and of course why the entire thing has happened on top of NVIDIA’s hardware and software.
+
+If you want to make sure you know every time there’s a new episode, go sign up at acquired.fm/email. You’ll also get access to two things that we aren’t putting anywhere else: (1) a clue as to what the next episode will be, and (2) follow-ups from previous episodes from things that we learned after release. You can come talk about this episode with us after listening at acquired.fm/slack.
+
+If you want more of David and I, check out our interview show, ACQ2. Our next few episodes are about AI, with CEOs leading the way in this world we are talking about today, and a great interview with Doug DeMiro where we wanted to talk about a lot more than just Porsche with him, but we only had 11 hours or whatever we had in Doug’s garage. A lot of the car industry chat and learning about Doug and his journey and his business, we saved for ACQ2, so go check it out.
+
+One final announcement. Many of you have been wondering, and we’ve been getting a lot of emails, when will those hats be back in stock? Well, they’re back For a limited time. you can get an ACQ-embroidered hat at acquired.fm/store. Go put your order in before they go back into the Disney vault forever.
+
+David: This is great. I can finally get Jenny one of her own. So she stops stealing mine.
+
+Ben: Yes. Well, without further ado, this show is not investment advice, David and I may have investments in the companies we discuss, and this show is for informational and entertainment purposes only. David, history and facts.
+
+David: Oh man. Well, on the one hand we only have 18 months to talk about.
+
+Ben: Except that I know you’re not going to start 18 months ago.
+
+David: On the other hand, we have decades and decades of foundational research to cover. When I was starting my research, I went to the natural first place which was our old episodes from April 2022. I was listening to them and I got to the end of the second one.
+
+I had forgotten about this. I think Jensen maybe wishes we all had forgotten about this in one of NVIDIA’s earning slides in 2021. They put up their total addressable market and they said they had a $1 trillion TAM.
+
+The way that they calculated this was that they were going to serve customers who provided $100 trillion worth of industry, and they were going to capture just 1% of it. And there was some stuff on the slide that was fairly speculative, like autonomous vehicles, the omniverse, and I think robotics were a big part of it.
+
+Ben: And the argument is basically like, well cars plus factories plus all these things added together is $100 trillion and we can just take 1% of that because surely their compute will amount to 1% of that, which I’m not arguing is wrong, but it is a very blunt way to analyze that market.
+
+David: Yeah, it’s usually not the right way to think about starting a startup. Oh, if we can just get 1% of this big market, blah-blah-blah.
+
+Ben: It’s the topiest-down way I can think of to size a market.
+
+David: You Ben rightly called this out at the end of Nvidia part II and you’re like, to justify where Nvidia is trading at the moment, you actually got to believe that all of this is going to happen and happen soon. Autonomous cars, robotics, everything.
+
+Ben: Importantly I felt like the way for them to become worth what they were worth at that time literally had to be to power all of this hardware in the physical world.
+
+David: I can’t believe that I said this because it was unintentional and uninformed, but I was grasping at straws, trying to play devil’s advocate for you. And we’d just spent most of that whole episode talking about how machine learning powered by Nvidia, and did up having this incredibly valuable use case which was powering social media feed recommender, and that Facebook and Google had grown bigger than anyone ever imagined on the Internet with those feed recommendations, and Nvidia was powering all of it.
+
+So I just idly proposed, well maybe, but what if you don’t actually need to believe any of that to still think that Nvidia could be worth a trillion dollars? What if maybe, just maybe, the Internet, software, and the digital world are going to keep growing, and there will be a new foundational layer that Nvidia can power? Is that possible? I think we were both like, yeah, I don’t know. Let’s end the episode.
+
+Ben: Yeah, sure. We shrugged it off and we were like, all right, carve outs.
+
+David: But the crazy thing is that, of course, at least in this timeframe, most things on Jensen’s trillion dollar TAM slide have not come to pass. But that crazy question just might have come to pass. And from NVIDIA’s revenue and earnings standpoint, definitely has. It’s just wild.
+
+Ben: All right. So how did we get here?
+
+David: Let’s rewind and tell the story. Back in 2012, there was the big bang moment of artificial intelligence, or as it was more humbly referred to back then, machine learning. And that was AlexNet.
+
+We talked a lot about this in the last episode. It was three researchers from the University of Toronto who submitted the AlexNet algorithm to the ImageNet computer science competition. Now, ImageNet was a competition where you would look at a set of 14 million images that had been hand-labeled with what the pictures were of, like of a strawberry or a cat or a dog or whatever.
+
+Ben: And David, you were telling me it’s the largest ever use of Mechanical Turk up to that point was to label the ImageNet dataset.
+
+David: Yeah, it’s wild. Until this competition and until AlexNet, there was no machine learning algorithm that could accurately label images. Thousands of people on Mechanical Turk got paid however much, $2 an hour to label these images.
+
+Ben: If I’m remembering from our episode, basically what happened is the AlexNet team did way better than anybody else had ever done. The complete step changed for the better. I think the error rate went from mislabeling images 25% of the time to suddenly only mislabeling them 15% of the time. That was a huge leap over the tiny, incremental progress that had been made along the way.
+
+David: You are spot on. The way that they did it, and what completely changed the fortunes of the Internet of Google, of Facebook, and certainly of Nvidia, was they actually used old algorithms, a branch of computer science and artificial intelligence called neural networks, specifically convolutional neural networks, which had been around since the 60s. But they were really computationally intensive to train.
+
+Nobody thought it would be practical to actually train and use these things, at least not anytime soon or in our lifetimes. What these guys from Toronto did is they went out probably to their local Best Buy or equivalent in Canada. They bought two GeForce GTX 580s, which were the top-of-the-line cards at the time, and they wrote their algorithm, their convolutional neural network in CUDA, in NVIDIA’s software development platform for GPUs, and by God they trained this thing on $1000 worth of consumer-grade hardware.
+
+Ben: And basically the algorithm that other people had been trying over the years just wasn’t massively parallel the way that a graphics card enables. If you actually can consume the full compute of a graphics card, then perhaps you could run some unique novel algorithm and do it in a fraction of the time and expense that it would take in these supercomputer laboratories.
+
+David: Everybody before was trying to run these things on CPUs. CPUs are awesome, but they only execute one instruction at a time. GPUs, on the other hand, execute hundreds or thousands of instructions at a time.
+
+GPUs, Nvidia graphics cards, accelerated computing, what Jensen and the company likes to call this, you can really think of it like a giant Archimedes lever. Whatever advances are happening in Moore’s law and the number of transistors on a chip, if you have an algorithm that can run in parallel, which is not all problem spaces but many can, then you can basically lever up Moore’s Law by hundreds of times or thousands of times, or today, tens of thousands of times, and execute something a lot faster than you otherwise could.
+
+Ben: It’s so interesting that there was this first market called graphics that was obviously parallel, where every pixel on a screen is not sequentially dependent on the pixel next to it. It literally can be computed independently and output to the screen.
+
+You have however many tens of thousands or now hundreds of thousands of pixels on a screen that can all actually be done in parallel. Little did Nvidia realize, of course, that AI and crypto and all this other linear algebra matrix, math-based things that turned into accelerated computing, pulling things off the CPU and putting them on GPU and other parallel processors, was an entire new frontier of other applications that could use the very same technology they had pioneered for graphics.
+
+David: It was pretty useful stuff. This AlexNet moment and these three researchers from Toronto kicked off—Jensen calls it and he’s absolutely right—the big bang moment for AI.
+
+Ben: David, the last time we told this story in full, we talked about this team from Toronto. We did not follow what this team of three went on to do afterwards.
+
+David: Yeah. Basically what we said was, it turned out that a natural consequence of what these guys were doing was, oh actually you can use this to surface the next post in a social media feed, unlike an Instagram feed or the YouTube feed or something like that, and that unlocked billions and billions of value. Those guys and everybody else working in the field all got scooped up by Google and Facebook.
+
+Well that’s true. As a consequence of that, Google and Facebook started buying a lot of Nvidia GPUs. But turns out there’s also another chapter to that story that we completely skipped over. It starts with the question you asked, Ben, who are these people?
+
+The three people who made up the AlexNet team were, of course, Alex Krizhevsky, who was a PhD student, under his faculty advisor, the legendary computer science professor, Jeff Hinton. I have an amazing piece of trivia about Jeff Hinton. Do you know who his great-great-grandparents were?
+
+Ben: No, I have no idea.
+
+David: He is the great-great-grandson of George and Mary Boole, like Boolean algebra and Boolean logic.
+
+Ben: This guy was born to be a computer science researcher. Oh my God.
+
+David: Right? Foundational stuff for computation and computer science.
+
+Ben: I also didn’t know there were people named Boole, that that’s where that came from. That’s hilarious.
+
+David: Yeah, the AND, OR, XOR, NOR operators. That comes from George and Mary. Wild. He’s the faculty advisor and then there was a third person on the team, Alex’s fellow PhD student in this lab Ilya Sutskever. If you know where we’re going with this, you are probably jumping up and down right now in your seat. Ilya is the co-founder and current chief scientist of OpenAI.
+
+After AlexNet, Alex, Jeff, and Ilya do the very natural thing. They start a company. I don’t know what they were doing in the company, but it made sense to start one.
+
+Ben: And whatever they did, it was going to get acquired real fast.
+
+David: By Google within six months. They get scooped up by Google, they join a bunch of other academics and researchers that Google has been monopolizing really in the field, three specifically—Greg Corrado, Jeff Dean, and Andrew Ang (the famous Stanford professor). The three of them had just formed the Google Brain team within Google to turbocharge all of this AI work that has been unleashed by AlexNet. And of course to turn it into huge amounts of profit for Google.
+
+Ben: Turns out individually serving advertising that’s perfectly targeted on the Internet through Facebook or Google…
+
+David: Or YouTube.
+
+Ben: …is an enormously profitable business and one that consumes a whole lot of Nvidia GPUs.
+
+David: Yes. About a year later, Google also acquires DeepMind, famously. Right around the same time, Facebook scoops up computer science professor Yann LeCun who also is a legend in the field. And the two of them basically establish a duopoly on leading AI researchers.
+
+Now at this point, nobody is mistaking what these companies and these people are doing for true human-level intelligence or anything close to it. This is AI that is very good at narrow tasks, like we talked about social media feed recommendations.
+
+The Google Brain team, and Jeff, Alex, and Ilya, one of the big projects they work on is redoing the YouTube algorithm. This is when YouTube goes from money losing, crazy thing that Google acquired to the just absolute juggernaut that it is today.
+
+Back then in 2013–2014, we did our YouTube episode not that long after. The majority of views of YouTube videos were embeds on other web pages. This is when they build it into a social media site. They start the feed, they start autoplay. All this stuff is coming out of AI research.
+
+Some of the other stuff that happens at Google, famously after they acquired DeepMind, DeepMind built a bunch of algorithms to save on cooling costs. Facebook, of course, probably had the last laugh in this generation because they’re using all this work and Yann LaCun is doing his thing and hiring lots of researchers there. This is just a couple of years after they acquired Instagram.
+
+Man, we need to go back and redo that episode because Instagram would’ve been a great acquisition, anyway, but it was AI-powered recommendations in the feed that made that into a $100-, $200-, $500-billion asset for Facebook.
+
+Ben: And I don’t think you’re exaggerating. I think that is literally what Instagram is worth to Meta now. By the way, I have bought a lot of things on Instagram ads so that the targeting works.
+
+David: It absolutely does. There’s this amazing quote from Astro Teller who ran Google X at the time (and still does) in a New York Times piece, where he says that “the gains from Google Brain during this period,” I don’t think this even includes DeepMind, “just the gains from the Google Brain team alone in terms of profits to Google more than funded everything they were doing in Google X.”
+
+Ben: Has there ever been anything profitable out of Google X?
+
+David: Google Brain.
+
+Ben: Yeah. I mean, yeah.
+
+David: We’ll leave it at that. This takes us to 2015 when a few people in Silicon Valley start to realize that this Google-Facebook AI duopoly is actually a really, really big problem. Most people had no idea about this. This is really visionary of these two people.
+
+Ben: And not just a problem for the other big tech companies, because you could make the argument it’s a problem because Siri’s terrible, all the other companies that have lots of consumer touchpoints have pretty bad AI at the time. But the concern is for a much greater reason.
+
+David: I think there are three levels of concern here. One obviously is the other tech companies. Then there’s the problem of startups. This is terrible for startups. How are you going to compete with Google and Facebook when this is the primary value driver of this generation of technology?
+
+There really is another lens to view what happened with Snap, what happened with Musical.ly, and having to sell themselves to ByteDance, becoming TikTok, and going to the Chinese.
+
+Maybe it was business decisions, maybe it was execution or whatever that prevented those platforms from getting to independent scale. Snap’s a public company now, but it’s no Facebook. Maybe it was that they didn’t have access to the same AI researchers that Facebook and Google had.
+
+Ben: That feels like an interesting question. It’s probably a couple of steps too far in the conclusion, but still a fun straw man to think about.
+
+David: A fun straw man. Nonetheless, this is definitely a problem. The third layer of the problem is this sucks for the world, that all these people are locked up in Google and Facebook.
+
+Ben: This is probably a good time to mention, this founding of OpenAI was motivated by the desire to find AGI (artificial general intelligence) first before the big tech companies did. And DeepMind was the same thing. It was going to be this winding and circuitous path at the time since really nobody knew then or knows now the best path to get to AGI. But the big idea at Open AI’s founding was whoever figures out and finds AGI first will be so big and so powerful so quickly, they’ll have an immense amount of control, and that is best in the open.
+
+David: So these two people who are quite concerned about this, convene a very fateful dinner in 2015 at, of all places…
+
+Ben: Is it the Rosewood?
+
+David: The Rosewood Hotel on Sandhill Road, naturally. It would’ve been way better if it were a Denny’s, or Buck’s of Woodside, or something like that.
+
+Ben: But it does actually just show where the seeds of open AI come from. It is very different from this organic, scrappy way that the Nvidias of the world got started. This is powers on high and existing money saying, no, we need to will something into existence.
+
+David: Yup. Of course, those two shadowy figures are Elon Musk and Sam Altman, who at the time was president of Y Combinator. They get this dinner together and they invite basically all of the top AI researchers at Google and Facebook. They’re like, yo, what is it going to take for you to leave and to break this duopoly? And the answer from almost all of them is nothing. You can’t, why would we ever leave? We’re happy as clams here.
+
+Ben: We’ve gotten to hire the people that we want. We’ve built these great teams. There’s a money spigot pointed at our face.
+
+David: Not only are we getting paid just ungodly amounts of money, but we get to work directly with the best AI researchers in the field. If we were still at academic institutions—say you’re at the University of Washington, an amazing academic institution for computer science, one of the top in the world, or the University of Toronto where these guys came from—you’re still in a fragmented market. If you go to Google or you go to Facebook, you’re with everybody.
+
+So the answer is no from basically everybody. Except there’s one person who’s intrigued by Elon and Sam’s pitch. To quote an amazing Wired article from the time by Cade Metz that we will link to in our sources, “The trouble was, so many of the people most qualified to solve all these AI problems were already working for Google and Facebook, and no one at the dinner was quite sure that these thinkers could be lured to a new startup, even if Musk and Altman were behind it. But one key player was at least open to the idea of jumping ship,” and then they have a quote from that key player. “I felt there were risks involved, but I also felt it would be a very interesting thing to try.” That key player was Ilya Sutskever.
+
+After the dinner, Ilya leaves Google and signs up to become, as we said, co-founder and chief scientist of a new independent AI non-profit research lab backed by Elon and Sam, OpenAI.
+
+Ben: Before we talk about what OpenAI would go on to do in its first chapter, which is quite different from today, this is a great time to tell you about one of our very favorite companies and actually the perfect fit for this episode—Crusoe.
+
+Crusoe, as listeners know by now, is a clean compute cloud provider, specifically built for AI workloads. Nvidia is one of their major partners. Literally, Crusoe data centers are nothing but racks and racks of A100s and H100s. And because Crusoe’s cloud is purpose-built for AI and runs on wasted, stranded, or clean energy, they can provide significantly better performance per dollar than traditional cloud providers.
+
+Just as one example, Crusoe was one of the first clouds to deploy the 3200 gigabit InfiniBand, which we will be talking about a lot more later on the episode, to dramatically accelerate the performance of large AI training clusters in their data centers.
+
+Ben: We talked about that on our ACQ2 episode with Crusoe CEO Chase Lochmiller, which David, that actually ended up being very helpful for my research for this episode. InfiniBand is wild and it’s just one example of how Nvidia has built such a dominant position in AI that we’ll talk about later in this episode.
+
+We’ll link to that interview in the show notes, so you can hear what it’s like for Crusoe actually deploying that technology in their data centers and the lengths that Crusoe goes to to maximize performance.
+
+David: The other element that makes Crusoe special is the environmental angle. Crusoe locates their data centers at stranded energy sites—think oil flares, wind farms that can’t use all the energy they generate, et cetera—and uses that power that would otherwise be wasted to run your AI workloads instead.
+
+Ben: Obviously, it’s a huge benefit for the environment and for customers on costs, since Crusoe doesn’t rely on the energy grid. Energy is the second largest cost of running AI, after of course, the price you pay Nvidia for the chips. These lower energy costs get passed on to customers.
+
+David: It’s super cool that they can put their data centers out there in these remote locations where “energy” happens, as opposed to the other hyperscalers such as AWS, Google, and Azure who need to build their data centers close to major traffic hubs where the Internet happens because they are doing everything in their clouds.
+
+Ben: Yup. If you, your company, or your portfolio companies would like to use the lower cost and more performant infrastructure for your AI workloads, go to crusoecloud.com/acquired or click the link in the show notes.
+
+Okay, so David, OpenAI is formed, it’s 2015. Here we are eight years later, and we have ChatGPT. Super linear path from there to here, right?
+
+David: It turns out, no. As we were talking about a little bit, AI at this point in time, super good for narrow use cases. Looks nothing like GPT-4 today. The capabilities that it had were pretty limited.
+
+One of the big reasons was that the amount of data that you could practically train these models on was pretty limited. The AlexNet example you’re talking about 14 million images. In the grand scheme of the Internet, 14 million images is a drop in the bucket.
+
+Ben: And this was both a hardware and a software constraint. On the software side, we just didn’t actually have the algorithms to suppose that we could be so bold to train one single foundational model on the whole internet. It wasn’t a thing.
+
+David: That was a crazy idea.
+
+Ben: People were excited about the concept of language models, but we actually didn’t know how we could algorithmically get it done. So in 2015, Andrej Karpathy, who was then at OpenAI and went on to lead AI for Tesla and is actually now back at OpenAI, writes this seminal blog post called The Unreasonable Effectiveness of Neural Networks.
+
+David, I don’t think we’re going to go into it in this episode, but note that recurrent neural networks are a little bit of a different thing than convolutional neural networks, which was the 2012 paper.
+
+David: The state-of-the-art had evolved.
+
+Ben: Yes. And right around that same time, there is also a video that hits YouTube or a little bit later in 2016 that is actually on Nvidia’s channel, and has two people in this very short 1 minute and 45-second video. One is a young Ilya Sutskever and two is Andrej Karpathy.
+
+Here is a quote from Andrej from that YouTube video. “One algorithm I’m excited about is a language model. The idea that you can take a large amount of data, and you feed it into the network, and it figures out the pattern in how words follow each other in sentences. So for example, you could take a large amount of data on how people talk to each other on the Internet, you can train basically a chat bot, but you can do it in a way that the computer learns how language works and how people interact. Eventually we’ll use that to talk to computers just like we talk to each other.”
+
+David: Wow. This is 2015?
+
+Ben: This is two years before the Transformer. Karpathy is at OpenAI. He both comes up with the idea or espouses the idea of a chat bot, so that had already been discussed. But even before we had the Transformer, the method to actually pull this off, he had the idea that—and there’s an important part here—it figures out the pattern in how words follow each other in sentences.
+
+There’s this idea that the very structure of language and the way to interpret knowledge is actually embedded in the training data itself rather than requiring labeling.
+
+David: This is so cool. So at Spring GTC this year, Jensen did a fireside chat with Ilya. It’s amazing. You should go watch the whole thing. In it, this question comes up. Jensen poses as a straw man, like hey, some people say that GPT-3, -4, ChatGPT, everything going on, all these LLMs, they’re just probabilistically predicting the next word in a sentence. They don’t actually have knowledge.
+
+Ilya has this amazing response to that. He says, “Okay, well consider a detective novel. At the end of the novel, the detective gathers everyone together in a room and says, I am now going to tell you all the name of the person who committed the crime. And that person’s name is blank.”
+
+The more accurately an LLM predicts that next word, i.e., the name of the criminal, ipso facto, the greater its understanding not only of the novel but of all general human-level knowledge and intelligence. Because you need all of your experience in the world and as a human, to be able to guess who the criminal is. The LLMs that are out there today, GPT-3, GPT-4, Llama, Bard, these others, can guess who the criminal is.
+
+Ben: Oh, yeah. Put a pin in that, understanding versus predicting, the hot topic du jour. David, is now a good time to fast forward two years to 2017 to the Transformer paper.
+
+David: Absolutely. Ben, tell us about the Transformer.
+
+Ben: Okay, so Google 2017 Transformer paper. Paper comes out, it’s called Attention is All You Need.
+
+David: And it’s from the Google Brain team that Ilya just left.
+
+Ben: Just left two years before to start OpenAI. Machine learning on natural language, just to set the table here, had long been used for things like autocorrect or foreign language translation. But in 2017, Google came out with this paper and discovered a new model that would change everything for these fields and unlock another one.
+
+Here is the scenario. You’re translating a sentence from English to French. You could imagine that a way to do this would be one word at a time in order. But for anyone who’s ever traveled abroad and tried to do this, you know that words are sometimes rearranged in different languages. so that’s a terrible way to do it. The United States in Spanish is Estados Unidos, so failure on the very first word in that example.
+
+Enter this concept of attention, which is a key part of this research paper. This attention, this fairly magical component of the Transformer paper, it literally is what it sounds like. It is a way for the model to attend to different areas of the input text at different times.
+
+You can look at a large amount of context while considering what word to pick next in your translation. For every single word that you’re about to output in French, you can look over the entire set of inputted words to figure out what words you should weigh heavily in your decision for what to do next.
+
+David: This is why AI and machine learning was so narrowly applicable before. If you anthropomorphize it and you think of it like a human, it was like a human with a very, very short attention span.
+
+Ben: Now, here’s the magical part. While it does look at the whole input text to consider what the next word should be, it doesn’t mean that it throws away the notion of position entirely. It uses a technique called positional encoding so it doesn’t forget the position of the words altogether.
+
+It’s got this cool thing where it weighs the important part relevant to your particular word, and it still understands position. Remember I said the attention mechanism looks over the entire input every time it’s picking what word to output.
+
+David: That sounds very computationally hard.
+
+Ben: Yes. In computer science terms, this means that the attention mechanism is O of N squared.
+
+David: Oh, that’s given me the heebie-jeebies. Back to my intro of CS classes in college.
+
+Ben: Just wait till we get through this episode; it gets deeper. So obviously yes, traditionally you’d say this is very, very inefficient, and it actually means that the larger your context window, AKA token limit AKA prompt length gets, the more computationally expensive it gets on a quadratic basis. So doubling your input means quadrupling the cost to compute an output, or tripling your input means nine times the cost.
+
+David: It gets real gnarly.
+
+Ben: It gets real expensive real fast. But GPUs to the rescue. The amazing news for us here is that these Transformer comparisons can be done in parallel. Even though there are lots of them to do, if you have big GPU chips with tons of cores, you can do them all at exactly the same time.
+
+Previous technologies to accomplish this like recurrent neural networks or LSTMs (long short-term memory networks), which is a type of recurrent neural network, et cetera, required knowing the output of each step before beginning the next one, before you picked the next word. In other words, they were sequential since they depended on the previous word.
+
+Now with Transformers, even if your string of text that you’re inputting is a thousand words long, it can happen just as quickly in human measurable time as if it were 10 words long, supposing that there were enough cores in that big GPU. The big innovation here is you could now train sequence-based models in a parallel way. You couldn’t train models of this size at all before, let alone cost-effectively.
+
+David: This is huge, and probably for all listeners out there starting to sound very familiar to the world that we live in today.
+
+Ben: I sort of did a slight of hand there morphing translation to using words like context window and token length. You can see where this is going.
+
+David: Yup. This Transformer paper comes out in 2017. The significance is huge. But for whatever reason, there’s a window of time where the rest of the world doesn’t quite realize it.
+
+Google obviously knows how important this is. There’s a year where Google’s AI work, even though Ilya has left and OpenAI is a thing now, accelerates again beyond anybody else in the field.
+
+This is when Google comes out with Smart Compose in Gmail, and they do that thing where they have an AI bot that’ll call local businesses for you. Remember that demo from I/O that they did?
+
+Ben: Yeah. Did that ever ship?
+
+David: I don’t know. Maybe it did. This is Google here. The capabilities are there. The product sense is not as much. This is when they really start investing in Waymo. But again, where it really manifests is just back to serving ads in search and recommending YouTube videos. Like they’re just crushing it in this period of time.
+
+OpenAI and everyone else, though, haven’t adopted Transformers yet. They’re stuck in the past and they’re still doing these really researchy computer vision projects. This is when they build a bot to play DOTA II (Defense of the Ancients II) the video game.
+
+Ben: And super impressive stuff. They beat the best DOTA players in the world at DOTA by literally just consuming computer vision, consuming screenshots and inferring from there. That’s a really hard problem because DOTA II is not a game where you get to see the whole board at once. It has to do a lot of really intelligent construction of the rest of the game based on just a single player’s worth of input. So it’s unbelievably cutting edge research.
+
+David: For the past generation. It’s a faster horse, basically.
+
+Ben: Maybe, yeah. They were also doing stuff like Universe, which was the 3D modeled world to train self-driving cars. You don’t really hear anything about that anymore, but they built this whole thing. I think it was using Grand Theft Auto as the environment, and then it was doing computer vision training for cars using the GTA world. It was crazy stuff, but it was scattershot.
+
+David: Yeah, it was scattershot. I guess what I’m saying is it was still in this narrow, use case world. They weren’t doing anything approaching GPT at this point in time. Meanwhile, Google had moved on.
+
+Now, one thing I do want to say in defense of OpenAI and everybody else in the field at the time, they didn’t just have their heads in the sand. To do what Transformers enabled you to do, which Ben you’re going to talk about in a sec, cost a lot in computing power.
+
+GPUs and Nvidia, and the Transformer made it possible. But to work with the size of models you’re talking about, you’re talking about spending an amount of money that’s, certainly for a nonprofit and anybody really except Google, was untenable.
+
+Ben: Right. It’s funny, David. You made this leap to expensive and large models. All we were doing before was merely talking about translating one sentence to another. The application of a Transformer does not necessarily require you to go and consume the whole internet and create a foundational model. But let’s talk about this.
+
+Transformers lend themselves quite well as we now know to a different type of task. So for a given input sentence, instead of translating to a target language, they can also be used as next word predictors to figure out what word should come next to the sequence. You could even do this idea of pre-training with some corpus of text to help the model understand how it should go about predicting that next word.
+
+Backing up a little bit, let’s go back to the recurrent neural networks, the state of the art before Transformers. They had this problem in addition to the fact that they were sequential rather than parallel. They also had a very short context window.
+
+You could do a next word predictor, but it wasn’t that useful because it didn’t know what you were saying more than a few words ago. By the time you’d get to the end of the paragraph, it would forget what was happening at the beginning. It couldn’t hold onto all that information at the same time.
+
+This idea of a next word predictor that was pre-trained with a transformer could really start to do something pretty powerful, which is consume large amounts of text, and then complete the next word based on a huge amount of context.
+
+We’re starting to come up with this idea of a large language model, and we’re going to flash forward here just for a moment to do some illustration and then we’ll come back to the story.
+
+In GPT-1, the first OpenAI model, this generative pre-trained Transformer model GPT, used unsupervised pre-training, which basically meant that as it was consuming this corpus of language, it was unlabeled data. The model was inferring the structure and meaning of language merely by reading it, which is a very new concept in machine learning.
+
+The canonical wisdom is that you need extremely structured data to train your smallish model on because how else are you going to learn what the data actually means? This was a new thing. You can learn what the data means from the data itself. It’s like how a child consumes the world where only occasionally does their parents say, no, no, no, you have that wrong. That’s actually the color red. But most of the time they’re just self-teaching. By observing the world.
+
+David: As a parent of a two-year-old can confirm
+
+Ben: Then a second thing happens. After this unsupervised pre-training step where you then have supervised fine-tuning, the unsupervised pre-training used a large corpus of text to learn the general language, and then it was fine-tuned on labeled data sets for specific tasks that you really want the model to be actually useful for.
+
+David: To give people a sense of why we’re saying that the idea of training on very, very, very large amounts of data here is crazy expensive, GPT-1 had roughly 120 million parameters that it was trained on. GPT-2 had 1.5 billion. GPT-3 had 175 billion and GPT-4 OpenAI hasn't been announced, but it’s rumored that it has about 1.7 trillion parameters that it was trained on. This is a long way from AlexNet here.
+
+Ben: It’s scaling like Nvidia’s market cap. There is this interesting discovery, basically, that the more parameters you have, the more correctly you can predict the next word. These models were basically bad sub-10 billion parameters. Maybe even sub-100 billion parameters. They would just hallucinate or they would be nonsensical.
+
+It’s funny when you look at some of the, like 1 billion parameter models, you’re like, there is no chance that turns into anything useful ever. But by merely adding more training data and more parameters, it just gets way, way better. There’s this weirdly emergent property where Transformer-based models scale really well due to the parallelism. As you throw huge amounts of data at training them…
+
+David: You can also throw huge amounts of Nvidia GPUs at processing that.
+
+Ben: Exactly, and the output unexpectedly gets magically better. I know I keep saying that, but it is like, wait, so we don’t change anything about the structure? We just give it way more data, let it run these models for a long time, and make the parameters of the model way bigger? No researchers expected them to reason about the world as well as they do, but it just happened as they were exploring larger and larger models.
+
+David: In defense of OpenAI, they knew all this, but the amount of money that you would have to spend to buy GPUs or to rent GPUs in the cloud to train these models is prohibitively expensive. Even Google at this point in time, this is when they start building their own chips, TPUs. They’re still buying tons of hardware from Nvidia, but they’re also starting to source their own here.
+
+Ben: Importantly, at this point they are getting ready to release TensorFlow to the public. They have a framework where people can develop for stuff, and they’re like, if people are developing using our software, then maybe it should run on our hardware that’s optimized to work with that software. They actually do have this very plausible story around why their hardware, why their software framework.
+
+It was a surprising move when they open sourced it because people were like, gasp. Why is Google giving away the farm for free here? But this was 3–4 years early and a very prescient move to really get a lot of people using Google architecture compute at scale.
+
+David: All within Google Cloud.
+
+Ben: Yup.
+
+David: With this, it starts to look like maybe this whole OpenAI boondoggle didn’t actually accomplish anything, and the world’s AI resources are more than ever just locked back into Google.
+
+In 2018, Elon gets super frustrated by all this. Basically throws a hissy fit, quits, and pieces out of OpenAI. There’s a lot of drama around this that we’re not going to cover now. He may or may not have given an ultimatum to the rest of the team that he would either take over and run things or leave. Who knows? It’s Elon.
+
+But whatever happened, this turns out to be a major catalyst for the rest of the OpenAI team and truly a history-turning-on-a-knife-point moment. It was also a probably super bad decision by Elon. But again, story for another day.
+
+Ben: There’s this great explanation of what happened in the Semaphore piece that we’ll link to in our sources. The author says, “That fall, it became even more apparent to some people at OpenAI that the cost of becoming a cutting-edge AI company was going to go up. Google Brain’s Transformer had blown open a new frontier where AI could improve endlessly, but that meant feeding endless data to train it. A costly endeavor. OpenAI made a big decision to pivot toward these Transformer models.
+
+On March 11th, 2019, OpenAI announced it was creating a for-profit entity, so it could raise enough money to pay for all the compute power necessary to pursue the most ambitious AI models. We want to increase our ability to raise capital while still serving our mission, and no pre-existing legal structure that we know of strikes the right balance,” the company wrote at the time. “OpenAI said it was capping profits for investors with any excess going back to the original nonprofit. Less than six months later, OpenAI took a $1 billion investment from Microsoft.”
+
+David: I believe this is mostly, if not all, due to Sam Altman’s influence and taking over here. On the one hand you can look at this skeptically and say, okay Sam. You took your nonprofit and you converted it into an entity worth $30 billion today. On the other hand, knowing this history now, this was the only path they had. They had to raise money to get the computing resources to compete with Google, and Sam goes out and does these landmark deals with Microsoft.
+
+Ben: Yeah, truly amazing. Their opinion at the time of why they’re doing this is basically this is going to be super expensive. We still have the same mission to ensure that artificial general intelligence benefits all of humanity, but it’s going to be ludicrously expensive to get there. We need to basically be a for-profit enterprise and a going concern and have a business that funds our research eventually to pursue that mission.
+
+David: 2019 they do the conversion to a for-profit company. Microsoft invests a billion dollars, as you say, and becomes the exclusive cloud provider for OpenAI, which is going to become highly relevant here for Nvidia. More on that in a minute.
+
+June of 2020, GPT-3 comes out. In September of 2020, Microsoft licenses exclusive commercial use of the underlying model for Microsoft products. 2021 GitHub Copilot comes out, Microsoft invests another $2 billion in OpenAI. Then, of course, this all leads to November 30th, 2022.
+
+In Jensen’s words, the AI heard around the world, OpenAI comes out with ChatGPT. As you said, Ben, the fastest product in history to reach a hundred million users. In January 2023, Microsoft invests another $10 billion in OpenAI, announces they’re integrating GPT into all of their products. Then in May of this year, GPT-4 comes out, and that basically catches us up to today.
+
+David: We eventually need to go do a whole nother episode about all the details here of OpenAI and Microsoft. But for today, the salient points are: (1) Thanks to all this, generative AI as a user-facing product emerges as this enormous opportunity. (2) To facilitate that happening, you needed enormous amounts of GPU compute, obviously benefiting Nvidia. But just as important, (3) it becomes obvious now that the predominant way that companies are going to access and provide that compute is through the cloud. The combination of those three things turns out to be basically the single greatest moment that could ever happen for Nvidia.
+
+Ben: Yes. You’re teeing all of this up, and so far I’m thinking, this is the OpenAI and Microsoft episode? Like what does this have to do with Nvidia? And God, there’s a great Nvidia story here to be told. So let’s get to the Nvidia side of it.
+
+But first we want to thank our friends at Statsig. We’ve been talking this episode about names in AI that, you know—Nvidia, OpenAI, Google, et cetera. But there’s a name you probably don’t know that’s powering a lot of the AI wave behind the scenes. Statsig. A ton of big AI companies rely on Statsig to test, deploy, and improve their models and applications. How this happened is crazy because Statsig did not start as an AI company.
+
+David: If you listened to our ACQ2 interview with founder and CEO Vijaye Raji, you know that Statsig is a platform that combines feature flagging, experimentation and product analytics. They help teams run experiments in their products, automate the analysis, launch new features, and analyze product performance.
+
+Their focus was on taking these pretty traditional product workflows, and making them easier by giving teams one connected tool to move fast, to make data-driven product decisions. How does that relate to ai?
+
+Ben: Well, if you’ve ever built anything with these AI APIs, you know there are a ton of things to test. Like the model version, the prompts, or the temperature. Adjusting these can have a huge impact on the AI application’s performance.
+
+These AI companies have started using Statsig to measure the impact of changes to their models and the customer-facing applications using real user data. Even non-AI companies like Notion and Figma have been using Statsig to launch their AI features, ensuring that these new features drive successful outcomes for their businesses.
+
+David: In today’s generative AI world, product decisions aren’t just the product features anymore. They’re literally the weights and temperatures of the models underlying the products. Whether you’re building with AI or not, Statsig can help your team ship faster and make data-driven product decisions.
+
+If you’re a startup, they have a super generous free tier and a special program for venture-backed companies. If you’re a large enterprise, they have clear transparent pricing with no seat based fees.
+
+Acquired community members can take advantage of a special offer, too, including five million free events a month and white glove onboarding support. Just go visit statsig.com/acquired to get started on your data-driven journey.
+
+Ben: Okay, Nvidia.
+
+David: We just said these three things that we’ve painted the picture of on the first part of the episode here, that: (1) generative AI is possible, a thing, and it’s now getting traction, (2) it requires an unbelievably massive amount of GPU compute to train, and (3) it looks like the predominant way that companies are going to use that compute is going to be in the cloud.
+
+The combination of these three things is (I think) the most perfect example we’ve ever covered on this show of the old saying about luck being what happens when preparation meets opportunity for Nvidia here.
+
+Obviously, the opportunity is generative AI, but on the preparation front, Nvidia has literally just spent the past five years working insanely hard to build a new computing platform for the data center. A GPU-accelerated computing platform to, in their minds, replace the old CPU-led Intel dominated x86 architecture in the data center.
+
+For many years, they were getting some traction. The data center segment was growing for Nvidia, but people were like, okay, you want this to happen, but why is it going to happen?
+
+Ben: There are these little workloads here and there that will toss you Jensen, that we think can be accelerated by your cool GPUs. Then crazy things like crypto happen, and there are AI researchers in academic labs that are using it as supercomputers.
+
+But for the longest time, the data centers segment of Nvidia just wasn’t clear that organizations had enormous parts of their software stack that they were going to shift to GPUs. Like why? What’s driving this? And now we know what could be driving it. That is AI.
+
+David: Not only could be, but if you look at their most recent quarter, absolutely freaking is.
+
+Ben: Now it begs the question, why is it driving it? And David, are you open to me giving a little computer science lecture on computer architecture?
+
+David: Please do.
+
+Ben: I need to do my best professor impression here.
+
+David: I loved computer science in college. They were my favorite classes.
+
+Ben: I will say doing these episodes, this TSMC, it really does bring back the thrill of being in a CS lecture and being like, oh, that’s how that works. It’s just really fun.
+
+Let’s take a step back and consider the classic computer architecture, the von Neumann architecture. Now, the von Neumann architecture is what most computers, most CPUs are based on today, where they can store a program in the computer’s memory and run that program.
+
+You can imagine why this is the dominant architecture. Otherwise we’d need a computer that is specialized for every single task. The key thing to know is that the memory of the computer can store two different things. The data that the program uses and the instructions of the program itself, the literal lines of code.
+
+In this example we’re about to paint, all of this is wildly simplified because I don’t want to get into caching and speeds of memory and where memory’s located, not located. Let’s just keep it simple.
+
+The processor in the von Neumann architecture executes this program written in assembly language, which is the language that compiles down to the byte code that the processor itself can speak. It’s written in an instruction set architecture, an ISA from ARM for example.
+
+David: Or Intel before that.
+
+Ben: Yes. Each line of the program is very simplistic. We’re going to consider this example where I’m going to use some assembly language pseudo code to add the numbers two and three to equal five.
+
+David: Ben, are you about to program live on Acquired?
+
+Ben: Well, it’s pseudo assembly language code. The first line is we’re going to load the number two from memory. We’re going to fetch it out of memory and we’re going to load it into a register on the processor. Now, we’ve got the number two actually sitting right there on our CPU ready to do something with. That’s line of code number one.
+
+Two, we’re going to load the number three in exactly the same fashion into a second register. So we’ve got two CPU registers with two different numbers.
+
+The third line, we’re going to perform an add operation, which performs the arithmetic to add the two registers together on the CPU and store the value in some either third register or into one of those registers. That’s a more complex instruction since it’s arithmetic that we actually have to perform, but these are the things that CPUs are very good at. We’re doing math operations on data fetched from memory.
+
+Then the fourth and final line of code in our example is we are going to take that five that has just been computed and is currently held temporarily in a register on the CPU, and we are going to write that back to an address in memory. So the four lines of code are load, load, add, store.
+
+David: This all sounds familiar to me.
+
+Ben: You can see each of those four steps is capable of performing one and only one operation at a time. Each of these happens with one cycle of the CPU. If you’ve heard of gigahertz, that’s the number of cycles per second. A one gigahertz computer could handle the simple program that we just wrote 250 million times in a single second.
+
+But you can see something going on here. Three of our four clock cycles are taken up by loading and storing data to memory. This is known as the von Neumann bottleneck, and it is one of the central constraints of AI (or at least it has been historically). Each step must happen in order and only one at a time.
+
+In this simple example, it actually would not be helpful for us to add a bunch more memory to this computer. I can’t do anything with it. It’s also only incrementally helpful to increase the clock speed. If I double the clock speed, I can only execute the program twice as fast. If I need a million X speed up for some AI work that I’m doing, I’m not going to get it there with just a faster clock speed. That’s not going to do it.
+
+It would of course be helpful to increase the speed at which I can read and write to memory, but I’m bound by the laws of physics there. There’s only so fast that I can transmit data over a wire.
+
+The great irony of all of this is that the bottleneck actually gets worse over time, not better, because the CPU gets faster and the memory size increases, but the architecture is still limited.
+
+There’s this one pesky single channel known as a bus. I don’t actually get to enjoy the performance gains nearly as much as I should because I’m jamming everything through that one channel, and that only gets to be used one time per every clock cycle.
+
+The magical unlock, of course, is to make a computer that is not a von Neumann architecture. To make programs executable in parallel, and massively increase the number of processors or cores. That is exactly what Nvidia did on the hardware side, and all these AI researchers figured out how to leverage on the software side.
+
+But interestingly, now that we’ve done that, David, the constraint is not the clock speed or the number of cores anymore. For these absolutely enormous language models, it’s actually the amount of on-chip memory that concerns us.
+
+David: Yeah, I thought you’re going there. And this is why the data center and what Nvidia’s been doing is so important.
+
+Ben: Yeah. There’s this amazing video on the Asianometry YouTube channel that we’ll link to, also on the TSMC episode, but the constraint today is actually in how much high performance memory is available on the chip. These models need to be in memory all at the same time and they take up hundreds of gigabytes.
+
+While memory has scaled up—we’re going to get flashing all the way forward; the H100’s on-chip RAM is like 80 gigabytes—the memory hasn’t scaled up nearly as fast as the models have actually scaled in size. The memory requirements for training AI are just obscene. It becomes imperative to network multiple chips, multiple servers of chips, and multiple racks of servers of chips together into one single “computer” in order to actually train these models.
+
+It’s also worth noting we can’t make the memory chips any bigger due to a quirk of the extreme ultraviolet photolithography that we talked about. That EUV on the TSMC episode, chips are already the full size of the reticle. It’s a physics and wavelength constraint. You really can’t etch chips larger without some new invention that we don’t have commercially viable yet.
+
+What it ends up meaning is you need huge amounts of memory, very close to the processors, all running in parallel, with the fastest possible data transfer. Again, this is a vast oversimplification, but you get the idea of why all of this becomes so important.
+
+David: Okay, so back to the data center. Here’s what Nvidia is doing that I don’t think anybody else out there is doing, and why it’s so important for them that all of this new generative AI world, this new computing era as Jensen dubs it, runs in the data center.
+
+Nvidia has done three things over the last five years. One and probably most importantly related to what you’re talking about, Ben, they made one of the best acquisitions of all time back in 2020, and nobody had any idea. They bought a quirky little networking company out of Israel called Mellanox.
+
+Ben: Well, it wasn’t little. They paid $7 billion for it.
+
+David: Okay, yeah. And it was already a public company, right?
+
+Ben: It was, yup.
+
+David: But it was definitely quirky. Now, what was Mellanox? Mellanox’ primary product was something called InfiniBand, which we talked about a lot with Chase Lochmiller on our ACQ2 episode with him from Crusoe.
+
+Ben: And actually, InfiniBand was an open source standard or managed by a consortium. There were a bunch of players in it. But the traditional wisdom was, while InfiniBand is way faster, way higher bandwidth, a much more efficient way to transfer data around a data center, at the end of the day, ethernet is the lowest common denominator. Everyone had to implement ethernet anyway, so most companies actually exited the market and Melanox was the only InfiniBand-spec provider left.
+
+David: You said, wait. What is InfiniBand? It is a competing standard to ethernet. It is a way to move data between racks in a data center. Back in 2020, everybody was like, Ethernet’s fine. Why do you need more bandwidth than ethernet between racks and a data center? What could ever require 3200 gigabits a second of bandwidth running down a wire in a data center?
+
+Well, it turns out if you’re trying to address hundreds, maybe more than hundreds of GPUs as one single compute cluster to train a massive AI model, yeah you want really fast data interconnects between them.
+
+Ben: People thought, oh sure, for supercomputers for these academic purposes. But what the enterprise market needs in my shared cloud computing data center is ethernet. That’s fine. Most workloads are going to happen right there on one rack. Maybe, maybe maybe things will expand to multiple computers on that rack. But certainly they won’t need to network multiple racks together.
+
+Nvidia steps in and you got Jensen saying, hey dummies, the data center is the computer. Listen to me when I tell you the whole data center needs to be one computer. When you start thinking that way, you start thinking, geez. We’re really going to be cramming huge amounts of data through wires that are going between these? How can we think about them as if it’s all on-chip memory or as close as we can make it to on-chip memory, even though that’s in a box located three feet away?
+
+David: Yup. That’s piece number one of Nvidia’s grand data center plan over the last five years. Piece number two is in September 2022. Nvidia makes a quite surprising announcement of a new chip. Not just a new chip. An entirely new class of chips that they are making, called the Grace CPU processor. Nvidia is making a CPU. This is heretical.
+
+Ben: But Jensen, I thought all computing was going to be accelerated? What are we doing here on these ARM CPUs?
+
+David: These Grace CPUs are not for putting in your laptop. They are for being the CPU component of your entire data center solution that is specifically from the ground-up design to orchestrate with these massive GPU clusters.
+
+Ben: This is the end game of a ballet that has been in motion for 30 years. Remember when the graphics card was subservient to the PCIe slot in Intel’s motherboard? And then eventually, we fast forward to the future, Nvidia makes these GPUs that are these beautiful standalone boxes in your data center or perhaps these little workstations that sit next to you while you’re doing graphics programming, while you’re directly programming your GPU.
+
+Then, of course, they need some CPU to put in that, so they’re using AMD or Intel or they’re licensing some CPU. Now they’re saying, you know what? We’re actually just going to do the CPU, too. Now, we make a box and it’s a fully integrated Nvidia solution with our GPUs, our CPUs, our NVLink between them, our InfiniBand to network it to other boxes. Welcome to the show.
+
+David: One more piece to talk about the third leg of the stool there, strategy before we get to what it all means that I think you’re about to go to. Spoiler alert, you say solution, I hear gross margin.
+
+The third part of it is the GPUs. Up until Nvidia’s current GPU generation, the Hopper generation of GPUs for the data center, there was only one GPU architecture at Nvidia. That same architecture and those same chips from the same wafers made at TSMC, some of them went to consumer gaming graphics cards, and some of those dies went to A100 GPUs in the data center. It was all the same architecture.
+
+Starting in September of 2022, they broke out the two business lines into different architectures. There’s the Hopper architecture named after great computer scientist, Grace Hopper, think Rear Admiral in the US Navy, Grace Hopper. Get it? Grace CPU, Hopper GPU, Grace Hopper, the H100s. That was for the data centers.
+
+Then on the consumer side, they start a whole new architecture called Lovelace, after Ada Lovelace. That is the RTX 40xx. You buy top-of-the-line RTX 40, what-have-you gaming card right now, that is no longer the same architecture as the H100s that are powering ChatGPT. It’s got its own architecture.
+
+This is a really big deal because what they do with the Hopper architecture is they start using what’s called chip-on-wafer-on-substrate (COWOS).
+
+Ben: When you start talking to the real semi nerds, that’s when they start busting out the COWOS conversation.
+
+David: This is when a certain segment of our listeners are going to get really excited. Essentially what this is, back to this whole concept of memory being so important for GPUs and for AI workloads. This is a way to stack more memory on the GPU chips themselves, essentially by going vertical in how you build the chips. This is the absolute bleeding edge technology that is coming out of TSMC.
+
+By Nvidia bifurcating their chip architectures into a gaming segment that does not have this latest COWOS technology, this allows them to monopolize a huge amount of TSMCs capacity to make the COWOS chips specifically for these H100s, which allows them to have way more memory than other GPUs on the market.
+
+Ben: This gets to the point of why can’t they seem to make enough chips right now? Well, it’s literally a TSMC capacity problem. There are these two components that are extremely related that you’re talking about, the COWOS (chip-on-wafer-on-substrate) and the high bandwidth memory.
+
+There’s this great post from SemiAnalysis where the author points out a 2.5D chip, which is basically how you assemble this COWOS stuff to get the memory really close to the processor. Of course, 2.5D is literally 3D, but 3D means something else. It’s even more 3D, so they came up with this 2.5D denominator.
+
+Anyway, the 2.5D chip packaging technology from TSMC is where you take multiple active silicon dyes, like the logic chips and the stack of high bandwidth memory, and they stack them on one piece of silicon.
+
+There’s more complexity here, but the important thing is COWOS is the most popular technology for GPUs and AI accelerators for packaging these chips. It’s the primary method to co-package high bandwidth memory—again, remember, think back to the thing that’s most important right now is get as much high bandwidth memory as you can closest to the CPU—next to the logic to get the most performance for trading and inference.
+
+COWOS represents right now about 10%–15% of TSMC capacities, and many of the facilities are custom-built for exactly these types of chips that they’re producing. When Nvidia needs to reserve more capacity, there’s a pretty good chance that they’ve already reserved some large part of the 10%–15% of TSMCs total footprint, and TSMC needs to go make more fabs in order for Nvidia to have access to more COWOS-capable capacity.
+
+David: Which, as we know, takes years for TSMC to do this.
+
+Ben: There are more experimental things that are happening. I would be remiss not to mention, there are actually experiments of doing compute in memory. As we shift away from von Neumann and all bets are off now that we’re open to new computing architectures, there are people exploring, well what if we just process the data where it is in memory instead of doing the very lossy, expensive, energy-intensive thing of moving data over the copper wire to get it to the CPU?
+
+All sorts of trade-offs there, but it is very fun to dive into the academic computer science world right now, where they really are rethinking what is a computer?
+
+David: These three things that Nvidia has been building, the dedicated Hopper data center GPU architecture, the Grace CPU platform, the Mellanox-powered networking stack, they now have a full suite solution for generative AI data centers. Ben, when I say solution…
+
+Ben: I hear margins. But let’s be clear. You don’t need to offer some sort of solution to get high margins if you’re Nvidia. Price is set where supply meets demand, and they’re adding as much supply as they possibly can right now.
+
+Believe me for all sorts of reasons, Nvidia wants everyone who wants H100s to have H100s. But for now, the price is like a, I’ll write you a blank check and Nvidia you write whatever you want on the check. Their margins are crazy right now, just literally because there’s way more demand than supply for these things.
+
+David: Let’s break down what they’re actually selling. Like you were saying, Ben, of course, you can and lots of people do just go by H100. You’re like, I don’t care about the Grace CPU, I don’t care about this Mellanox stuff. I’m running my own data center. I’m really good at it.
+
+Ben: And the people who are most likely to do this are the hyperscalers, or as Nvidia refers to them, the CSPs (cloud service providers).
+
+David: This is AWS, Azure, Google, Facebook for their internal use.
+
+Ben: And Nvidia, don’t give me one of these DGX servers that you assemble. Just give me the chip and I will integrate it the way that I want to integrate it.
+
+David: I am a world-class data center architect and operator. I don’t want your solution. I just want your chips. So they sell a lot of those. Nvidia, of course, has also been seeding new cloud providers out there in the ecosystem, like our friends at Crusoe, also CoreWeave, and Lambda Labs, if you’ve heard of them. These are all new GPU-dedicated clouds that Nvidia is working closely with. They’re selling H100s and A100s before that to all these cloud providers.
+
+Ben: But let’s say you are an arbitrary company in the Fortune 500 that is not a technology company. My God, do you not want to miss the boat on generative AI and you’ve got a data center of your own? Well, Nvidia has a DGX for you.
+
+David: Yes, they do. Full, GPU-based supercomputer solution in a box, that you can just plug right into your data center, and it just works. There’s nothing else on the market like this.
+
+Ben: And it all runs CUDA. It is all speaking the exact language of the entire ecosystem of developers that know exactly how to write software for this thing.
+
+David: Which means that whatever developers you already had who were working on AI or anything else, everything they were working on is just going to come right over and run within your brand new, shiny AI supercomputer, because It all runs CUDA.
+
+Ben: Amazing.
+
+David: More on CUDA in a minute. But as we said, you say solution, I hear gross margin. Nvidia sells these DGX systems for $150,000–$300,000 a box. That’s wild. Now, with all these three new legs of the stool—Hopper, Grace, and Mellanox—these systems are just getting way more integrated, way more proprietary, and way better.
+
+If you want to buy a new, top-of-the-line DGX H100 system, the price starts at $500,000 for one box. If you want to buy the DGX GH200 SuperPOD—this is the AI wall that Jensen recently unveiled, the huge room full of AI…
+
+Ben: It’s like 20 racks wide. Imagine an entire row in a data center.
+
+David: Yes, this is 256 Grace Hopper DGX racks all connected together in one wall. They’re building this as the first turnkey AI data center that you can just buy and can train a trillion parameter GPT-4 class model. The pricing on that is, call us.
+
+Ben: Of course it is.
+
+David: But I’m imagining hundreds of millions of dollars. I doubt it’s a billion, but hundreds of millions easily.
+
+Ben: Wild. Let’s talk about the H100. I have the baseball card right here on this insane thing that they’ve built. They launched it in September 2022. It’s the successor to the A100. One GPU, one H100 costs $40,000. That’s how you get to that price point you’re talking about.
+
+David: That’s what they’re selling to Amazon, Google, and Facebook.
+
+Ben: Right, and you mentioned that $500,000 price point. The $500,000 is the eight $40,000 H100s in a box, with the Grace CPU, and the nice bow around it.
+
+David: Yup, which do the math on that. Eight times $40,000, that’s $320,000. That’s essentially an extra $180,000 of margin that Nvidia is getting out of selling the solution. It’s an ARM CPU. It doesn’t cost them anything to make that.
+
+Ben: These $40,000 H100s have margins of their own. Every time they bundle more, there’s more margin in the fully assembled. That’s literally bundle economics. You are entitled to margin when you bundle more things together and provide more value for customers.
+
+To illustrate the way that this pricing works, the reason you want an H100 is they’re 30 times faster than an A100, which is only 2½ years older. It is nine times faster for AI training. The H100 is literally purpose-built for training LLMs, like the full self-driving video stuff. It’s super easy to scale up. It’s got 18,500 CUDA cores.
+
+Remember when we were talking about the von Neumann example earlier? That is one computing core that is able to handle those four assembly language instructions. This one H100, which they’re calling AGPU, has 18,500 cores that are capable of running CUDA software. It’s got 640 Tensor Cores, which are highly specialized for matrix multiplication. They have 80 streaming multiprocessors. What are we up to here? Close to 20,000 unique cores on this thing.
+
+It’s got meaningfully higher energy usage than the A100. A big takeaway here is that Nvidia is massively increasing the power requirement. Every time they come out with a next generation, they’re both figuring out how to push the edge of physics, but they’re also constrained by physics. Some of this stuff is only possible with way more energy. This thing weighs 70 pounds. This is one H100.
+
+David: Jensen makes a big deal about this. Every keynote that he gives, he’s like, oh, I can’t lift it.
+
+Ben: It’s got a quarter trillion transistors across 35,000 parts. It requires robots to assemble it. Not only does it require physical robots to assemble it, it requires AI to design it. They’re actually using AI to design the chips themselves now. They have completely reinvented the notion of what a computer is.
+
+David: Totally. This is all part of Jenssen’s pitch here to customers. “Yes, our solutions are very expensive. However,” he uses the line that he loves, “the more you buy, the more you save.”
+
+Ben: If you could get your hands on some.
+
+David: What he means by that is like, say you’re McDonald’s and you’re trying to build a generative AI so that customers can order something. You’re using it in your business.
+
+If you were going to try and build and run that in your existing data center infrastructure, it would take so much time and cost you so much more over the long run and compute than if you just went and bought my SuperPOD here. You can plug and play and have it up and running in a month.
+
+Ben: Yup, and by the fact that this is all accelerated computing, the things you’re doing on it, you literally wouldn’t be able to do otherwise. Or might take you a lot more energy, a lot more time, a lot more cost.
+
+There is a very valid story to buying and running your workloads here or renting from any of the cloud service providers. Running your workloads here is more performant because the results just happen much faster, much cheaper, or at all.
+
+David: You mentioned energy here. This is also Jensen’s argument. He’s like, yes, these things take a ton of energy, but the alternative takes even more energy. We are actually saving energy if you assume this stuff is going to happen. Now, there’s a bit of caveat here in that it can’t happen except on these types of machines. He enabled this whole thing, but he has a point.
+
+Ben: I totally buy it, though. I think there’s a very real case around, look, you only have to train a model once and then you can do inference on it over and over and over again. The analogy I think makes a lot of sense for model training is to think about it as a form of compression.
+
+LLMs are turning the entire internet of text into a much smaller set of model weights. This has the benefit of storing a huge amount of usefulness in a small footprint, but also enabling a very inexpensive amount of compute—again, relatively speaking—in the inference step for every time that you need to prompt that model for an answer.
+
+Of course, the trade-off you’re making there is once you encode all of the training data into the model, it is very expensive to redo it, so you better do it right the first time or figure out little ways to modify it later, which a lot of ML researchers are working on.
+
+I always think a reasonable comparison here is to compress a zillion layer Photoshop file. For anybody that’s ever dealt with a three gigabyte Photoshop file, that’s not a thing you’re going to send to a client. You’re going to compress it into a JPEG and you’re going to send that.
+
+The JPEG is, in many ways, more useful as a compressed facsimile of the original layers comprising the Photoshop file. But the trade-off is you can never get from that compressed little JPEG back to the original thing.
+
+I think the analogy here is you’re saving everyone from needing to make the full PSD every time because you can just use the JPEG the vast, vast majority of the time.
+
+David: Hopefully we’ve now painted a relatively coherent picture of both the advances that made the generative AI opportunity possible, that it has truly become a real opportunity, and why Nvidia even above the obvious reasons, was just so well-positioned here, particularly because of the data center–centric nature of these workloads, and that they had been working so hard for the past five years to fundamentally re-architect the data center.
+
+On top of all this, Nvidia recently announced yet another pretty incredible piece of their cloud strategy here. Today, like we’ve been saying, if you want to use H100s and A100s—say you’re an AI startup—the way you’re probably going to do that is you’re going to go to a cloud, either a hyperscaler or a dedicated GPU cloud like Crusoe or CoreWeave or Lambda Labs and the like, and you’re going to rent your GPUs. Ben, you did some research on this, so what does that cost?
+
+Ben: I just looked at the pricing pages on public clouds today. I think Azure and AWS where I looked, you can get access to a DGX server that’s eight A100s for about $30 an hour. Or you can go over to AWS and get a P5.48xlarge instance, which is eight H100s, which I believe is an HGX server for about $100 an hour, so about three times as much. Again, when I say you can get access, I don’t actually mean you can get access. That’s the price.
+
+David: If you could get access, that’s what you would pay for it.
+
+Ben: Correct.
+
+David: Okay. That’s just getting the GPUs. But if you buy everything we were talking about a minute ago—say you’re McDonald’s or UPS or whoever—and you’re like I really like Jensen. I buy what you’re selling. I want this whole integrated package. I want an AI supercomputer in a box that I can plug into my wall and have it run. But I’m all in on the cloud. I don’t run my own data centers anymore. Nvidia has now introduced DGX Cloud.
+
+Ben: Of course, you could rent these instances from Amazon, Microsoft, Google, Oracle, but…
+
+David: You’re not getting that full integrated solution.
+
+Ben: And you’re getting some in integration the way that the cloud service provider wants to create the integration using their proprietary services. To be honest, you might not have the right people on staff to be able to deal with this stuff in a pseudo bare metal way.
+
+Even if it’s not in your data center and you’re renting it from the cloud, you might actually need, based on your workforce, to just use a web browser. Just use a real nice, easy web interface to load some models in from a trusted source that you can easily pair with your data. Just click run and not have to worry about any of the complexity of managing a cloud application that’s in Amazon or Microsoft or something a little bit scarier and closer to the metal.
+
+David: Yup. Nvidia has introduced DGX Cloud, which is a virtualized DGX system that is provided to you right now via other clouds—Azure, Oracle, and Google.
+
+Ben: The boxes are sitting in the data centers of these other CSPs.
+
+David: They’re sitting in the other cloud service providers. But as a customer, it looks like you have your own box that you’re renting.
+
+Ben: You log in to the DGX cloud website through Nvidia, and it’s all nice WYSIWYG stuff. There’s an integration with Hugging Face where you could easily deploy models right off of Hugging Face. You can upload your data. Everything is just really WYSIWYG is probably the way to describe it.
+
+David: This is unbelievable. Nvidia launched their own cloud service through other clouds.
+
+Ben: Nvidia does have (I think) six data centers, but that I don’t believe is what they’re actually using to back DGX cloud.
+
+David: No. starting price for DGX cloud is $37,000 a month, which will get you an A100-based system, not an H100-based system. The margins on this are insane for Nvidia and their partners.
+
+A listener helped us out and estimated that the cost to actually build an equivalent A100 DGX system today would be something like $120,000. Remember, this is the previous generation, this is not H100s. And you can rent it for $37,000 a month. That’s three months’ payback on the CapEx for this stuff for Nvidia and their cloud partners together.
+
+Even more for Nvidia, more important longer term, for enterprises that buy this, Nvidia now has a direct sales relationship with those companies, not necessarily intermediated by sales through Azure or Google or AWS, even though the compute is sitting in their clouds.
+
+Ben: Which is crucially important because at this point the CFO Colette Kress said on their last earnings call that about half of the revenue from the data center business unit is CSPs. Then I believe after that is the consumer internet companies, and after that is enterprises.
+
+There are a few interesting things in there, one of which is, oh my God, their revenue for this is concentrated among 5–8 companies with these CSPs. Two, they don’t necessarily own the customer relationship. They own the developer relationship through CUDA. They’ve got this unbelievable ecosystem right now of Nvidia developers that’s stronger than ever, but in terms of the actual customer, half of their revenue is intermediated by cloud providers.
+
+The second interesting thing about this is, even today in this AI explosion, the second biggest segment of data centers is still the consumer internet companies. It’s still all that stuff we were talking about before about the uses of machine learning to figure out what should show up in your social media algorithms and match ads to you. That’s actually bigger than all of the direct enterprises who are buying from Nvidia. The DGX cloud play is a way to shift some of that CSP revenue into direct relationship revenue.
+
+David: All of this brings us to 2023. In May of this year. Nvidia reported their Q1 fiscal 24 earnings—Nvidia’s on this weird January fiscal year end thing. Q1 24 is essentially Q1 23—in which revenue was up 19%, quarter over quarter to $7.2 billion, which is great because remember, they had a terrible end of 2022 with the write-offs and crypto falling off a cliff and all that.
+
+Ben: Yes. It’s amazing that in that Stratechery interview in March of 2023, Jensen said, last year was unquestionably a disappointing year. This is the year ChatGPT was released. It is wild. The rollercoaster this company has been on.
+
+David: The timeframe is so compressed here.
+
+Ben: And part of that, of course, is Ethereum moving to proof of stake, the end of the crypto thing for Nvidia, which I’m sure they’re actually thrilled about. But part of it was they also put in a ton of pre-orders for capacity with TSMC that then they thought they weren’t going to need, so they had to write down. From an accounting perspective it looks like a big loss, like a really big blemish on their finances last year. But now, oh my God, are they glad that they reserved all that capacity.
+
+David: It’s actually going to be quite valuable. Speaking of, this Q1 earnings is great; up 19% quarter over quarter. But then they drop the bombshell. Due to unprecedented demand for generative AI compute in data centers, Nvidia forecasts Q2 revenue of $11 billion, which would be up another 53% quarter over quarter over Q1 and 65% year over year. The stock goes nuts.
+
+Ben: 25% in after-hours training. This is a trillion dollar company, or at least this made them a trillion dollar company. But a company that was previously valued at around $800 billion, popped 25% after earnings.
+
+David: It’s even crazier than that. Back when we did our episodes last April, Nvidia was the eighth largest company in the world by market cap, and had about a $660 billion market cap. That was down slightly off the highs, but that was the order of magnitude back then. It crashed down below $300 billion, and then within a matter of months it’s now back up over a trillion. Just wild.
+
+All of this culminates last week at the time of this recording, when Nvidia reports Q2, fiscal 24 earnings. We usually don’t talk about individual earnings releases on Acquired because in the long arc of time, who cares? This was a historic event. I think this was one of, if not the most, incredible earnings release by any scaled public company ever. Seriously. No matter what happens going forward, last week was a historic moment.
+
+Ben: The thing that blows my mind the most is that their data center segment alone did $10 billion in the quarter. That’s more than doubling off of the previous quarter. In three months, they grew from $4-ish billion to $10 billion of revenue in that segment.
+
+Revenue only happens when they deliver products to customers. This isn’t pre-orders. This isn’t clicks. This isn’t wave your hands around stuff. This is, we delivered stuff to customers and they paid us an additional $6 billion this quarter than they did last quarter.
+
+David: Here are the full numbers. For the quarter, total company revenue of $13.5 billion. Up 88% from the previous quarter and over 100% from a year ago. Then Ben, like you said in the data center segment, revenue of $10.3 billion. $10.3 billion out of $13.5 billion for a segment that basically didn’t exist 5 years ago for the company. That’s up 141% from Q1 and 171% from a year ago. This is $10 billion. That growth at this scale. I’ve never seen anything like it. Neither has the market.
+
+Ben: That’s right.
+
+David: This is the first time I noticed it. Jensen had talked about this in Q1 earnings, so it wasn’t the first time, but he brings back the trillion dollar TAM, not in a slide. I think this time he just talks about it.
+
+Ben: No, but in a new way that I think is a better way to slice it.
+
+David: This time it’s different. We’ll spend a while here now talking about what we think about this, but this is very different. This time, he frames Nvidia’s trillion dollar opportunity as the data center. This is what he says. “There is $1 trillion worth of hard assets sitting in data centers around the world right now.”
+
+Ben: “Growing at $250 billion a year.”
+
+David: “Annual spend on data centers to update and add to that CapEx is $250 billion a year. Nvidia has certainly the most cohesive, fulsome, and coherent platform to be the future of what those data centers are going to look like for a large amount of compute workloads.” This is a very different story than like, oh, we’re going to get 1% of this $100 trillion of industry out there.
+
+Ben: Whenever someone paints a picture, you say, okay, what do I have to believe? The thing you have to believe is there is real user value being created by these AI workloads and the applications that they are creating. There’s pretty good evidence.
+
+ChatGPT made it so OpenAI is rumored to be doing over a billion dollar run rate now, maybe multiple single digit billions, and still growing meaningfully. That is the shining example. Again, that’s the Netscape Navigator here of this whole boom.
+
+But the bet, especially with all these Fortune 500s, is that there are going to be GPT-like experiences in everyone’s private applications in a zillion other public interfaces. Jensen frames it as in the future every application will have a GPT front end. It will be a way that you decide that you want to interact with computers that is more natural.
+
+I don’t think he means like versus clicking buttons. I think he means everyone can become a programmer, but the programming language is English. When you’re like, well why is everyone spending all of this money, it is that the world’s executives with the purchasing power to go write a $10 billion check last quarter to Nvidia for all this stuff, wholeheartedly believes from the data they’ve seen so far that this technology is going to change the world enough for them to make these huge bets.
+
+The thing that we don’t know yet is, is that true? Is the GPT-like experiences going to be an enduring thing for the far future, or not? There’s pretty good evidence so far that people like this stuff, and that it’s quite useful in transforming the way that everyone lives their lives and goes about day to day, does their jobs, goes through school, and on and on and on. But that is the thing you have to believe.
+
+David: We have a lot to talk about with regard to that in analysis. But before we move to analysis, I think we should talk about another one of our very favorite companies here at Acquired—Blinkist from Go1.
+
+Ben: Absolutely. Listeners, we’re doing something very cool with them this season. As you know, Blinkist takes books and condenses them into the most important points, so you can read or listen to the summaries.
+
+David: It’s almost like a large language model compression for books.
+
+Ben: There you go. A couple of cool things we’re doing, one of which is David and I have made a Blinkist page that represents our bookshelf. If you want to read the books that influence us, you can go to blinkist.com/acquired. For this particular Nvidia episode, Blinkist has made a special collection for us. Amazingly, there are not really books about the history of Nvidia itself, at least not yet.
+
+David: Which is unbelievable.
+
+Ben: Yeah, but there are plenty on AI through the years. If you go to blinkist.com/nvidia, you can find books by Gary Kasparov, Kai-Fu Lee, and Cade Metz who we already mentioned earlier on the show.
+
+David: Who wrote the amazing Wired article.
+
+Ben: Yup. You’ll get free access to that Nvidia Blinkist collection, and anyone who signs up through that link or uses the coupon code NVIDIA will then get a 50% off premium subscription to all 6500 titles in their library.
+
+David: For those of you who are leaders at companies, check out Blinkist for business. This gives your whole team the power to tap into world-class knowledge right from their phones anytime they need it. Available at blinkist.com/business.
+
+Blinkist is a great way for your team to master soft skills, which if you believe that this new AI world is coming, is going to be even more important for the humans in your workforce.
+
+Ben: Our huge thanks to Blinkist and their parent company Go1 where David and I are both huge fans and angel investors. Go1 and Blinkist are both amazing ways for your company to get access to the most engaging and compelling content in the world. Our thanks to both of them and links in the show notes.
+
+Okay, so David, analysis. We got to talk about CUDA before we even start analyzing anything else here. We talked about a lot of hardware so far in this episode, but there’s this huge piece of the Nvidia puzzle that we haven’t talked about since part II.
+
+CUDA, as folks know, was the initiative started in 2006 by Jensen, Ian Buck, and a bunch of other folks on the Nvidia team, to really make a bet on scientific computing, that people could use graphics cards for more than just graphics, and they would need great software tools to help them do that.
+
+It also was the glimmer in Jenssen’s eye of, ooh, maybe I can build my own relationship with developers, and there can be this notion not of a Microsoft or an Intel developer who happens to be able to have a standard interface to my chip, but I can have my own developer ecosystem, which has been huge for the company.
+
+CUDA has become the foundation that everything that we’ve talked about, all the AI applications are written on top of today. You hear Jensen and these keynotes reference CUDA, the platform, CUDA the language, and I spent some time trying to figure out, when I was watching developer sessions and literally learning some CUDA programs, what is the right way to characterize it?
+
+David: And what is the right way to characterize it today? Because it has evolved a lot.
+
+Ben: Yes. Today, CUDA is, starting from the bottom and going up, a compiler, a runtime, a set of development tools like a debugger and a profiler. It is its own programming language, CUDA C++. It has industry-specific libraries. It works on every card that they ship and have shipped since 2006, which is a really important thing to know.
+
+If you’re a CUDA developer, your stuff works on everything. Anything Nvidia, all this unified interface. It has many layers of abstractions and existing libraries that are optimized. These libraries of code that you can call to keep your development work short and simple instead of reinventing the wheel.
+
+There are things that you can decide that you want to write in C++ and just rely on their compiler to make it run well on Nvidia hardware for you. Or you can write stuff in their native language and try to implement things yourself in CUDA C++. The answer is it’s incredibly flexible, it is very well-supported, and there’s this huge community of people that are developing with you and building stuff for you to build on top of.
+
+If you look at the number of CUDA developers over time, it was released in 2006. It took four years to get the first hundred thousand people. Then by 2016, 13 years in, they got to a million developers. Then just two years later, they got to two million. Thirteen years to add their first 13 million, then 2 years to add their second. 2022 they hit 3 million developers. Then just one year later in May of 2023, CUDA has 4 million registered developers.
+
+At this point, there’s a huge moat for Nvidia. I think when you talk to folks there, and frankly when we did talk to folks there, they don’t describe it this way. They don’t think about it like, well CUDA is our moat versus competitors. It’s more like, well look. We envisioned a world of accelerated computing in the future, and we thought there are way more workloads that should be parallelized and made more efficient, that we want people to run on our hardware, and we need to make it as easy as possible for them to do that.
+
+We’re going to go to great lengths and have 1000–2000 people that work at our company, that are going to be full-time software engineers building this programming language, compiler, foundation, framework and everything on top of it, to let the maximum number of people build on our stuff. That is how you build a developer ecosystem. It's a different language, but the bottom line is they have a huge reverence for the power that it gives them at the company.
+
+David: This is something we touched on in our last episode, but has really crystallized for me in doing this one. Nvidia thinks of themselves as, and I believe is, a platform company, especially this week after the blowout earnings, everything that happened this quarter, the stock and whatnot.
+
+A popular takeout there that you’ve been seeing a lot is, oh we’ve seen this movie before. This happened with Cisco. You could say over a longer timescale this happened with Intel. Yeah, these hardware providers, these semiconductor companies, they’re hot when they’re hot and people want to spend CapEx, and then when they’re not hot, they’re not hot.
+
+But I don’t think that’s quite the right way to characterize Nvidia. They do make semiconductors and they do make data center gear, but really they are a platform company. The right analogy for Nvidia also is Microsoft. They make the operating system, they make the programming environment, they make many of the applications.
+
+Ben: Right. Cisco doesn’t really have developers. Intel never had developers. Microsoft had developers and Intel had Microsoft, but Intel didn’t have developers.
+
+Nvidia has developers. They’ve built a new architecture that is not a von Neumann computer. They’ve bucked 50 years of progress, and instead every GPU has a stream processor unit. And as you’d imagine, you need a whole new type of programming language and compiler and everything to deal with this new computing model. That’s CUDA and it fricking works. There are all these people that develop their livelihood in it.
+
+David: You talk to Jensen and you talk to other people at the company, and they will tell you we are a foundational computer science company. We’re not just slinging hardware here.
+
+Ben: It’s interesting. They’re a platform company for sure. They’re also a systems company. They’re effectively selling mainframes. it’s not that different from IBM way back when they’re trying to sell you a $100 million wall that goes in your data center. It’s all fully integrated and it all just works.
+
+David: Yeah, and maybe IBM actually is a really good analogy, like old school IBM here. They make the underlying technology, they make the hardware, they make the silicon, they make the operating system for the silicon, they make the solutions for customers. They make everything, and they sell it as a solution.
+
+Ben: A couple of other things to catch us up here as we’re starting analysis. One big point I want to make is let’s look at a timeline, because I didn’t discover this until two hours before we started recording.
+
+In March of 2019, Nvidia announced they were acquiring Mellanox for $7 billion in cash. I think Intel was considering the purchase and then Nvidia came in and blew them out of the water. It is fair to say nobody really understood what Nvidia was going to do there and why it was so important. But the question is why.
+
+Nvidia knew that these new models coming out would need to run across multiple servers, multiple racks. They put a huge level of importance on the bandwidth between the machines. Of course, how did they know that?
+
+Well, in August of 2019, Nvidia released what was at the time the largest Transformer-based language model called Megatron, 8.3 billion parameters trained on 512 GPUs for 9 days, which at the time at retail would’ve cost something like half a million dollars to train, which at the time was a huge amount of money to spend on model training, which is what, only four years ago?
+
+David: But today, that’s quaint.
+
+Ben: Nvidia did that because they do a huge amount of research at the company. They work with every other company doing AI research and they were like, oh. Yes, this stuff is going to work and this stuff is going to require the fastest networking available. I think that has to do with why no one else saw how valuable the Mellanox technology could be.
+
+Another thing that I want to talk about for Nvidia’s business today is this notion of the data center is the computer. Jensen did a great interview with Ben Thompson last year where he talks about the idea that they build their systems full stack. Their dream is that you own and operate a DGX SuperPOD.
+
+He says, “We build our systems full stack, but we go to market in a disaggregated way, integrating into the compute fabric of the industry.” I think that’s his way of saying, customers need to use us in a bunch of different ways, so we need to be flexible on that. But we don’t want to build each of our components such that if you do assemble them altogether, it’s this unbelievable experience.
+
+We’ll figure out how to provide the right experience to you if you only want to use them in piecemeal ways, or you want to use us in the cloud, or the cloud providers want to use us. Again, it’s build the product as a system, build the system full stack, but go to market in a disaggregated way.
+
+David: I think if I remember right in that interview, Ben, picked up on this and was like, wait, are you building your own cloud? And Jensen was like, well maybe. We’ll see. Of course, then they launched DGX cloud in a well-maybe-we’ll-see sort of way.
+
+Ben: You could imagine there are more Nvidia data centers likely on the way that are fully owned and operated. Speaking of all of this, we got to talk to some numbers on margin.
+
+This last quarter they had a gross margin of 70%, and they forecasted for next quarter to have a gross margin of 72%. If you go back pre-CUDA when they were a commoditized graphics card manufacturer, it was 24%. They’ve gone 24% to 70% on gross margin. With the exception of a few quarters along the way for these strange one-time events, that’s basically been a linear climb quarter over quarter as they’ve deepened their moat and as they’ve deepened their differentiation in the industry.
+
+We’re definitely at a place right now that I think is temporary due to the supply shortage of the world’s enterprises, and in some cases even governments. You look at the UK or some of the Middle Eastern countries, like blank check. I just need access to Nvidia hardware. That’s going to go away, but I don’t think this very high 65%-plus margin is going to erode too much.
+
+David: I think two things here. One, I really do believe what we were talking about a minute ago that Nvidia is not just a hardware company, they’re not just a chips company. They are a platform company, and there is a lot of differentiation baked into what they do. If you want to train GPT or a GPT class model…
+
+Ben: There’s one option.
+
+David: …you’re doing it on Nvidia. There’s one option. Yes, we should talk about there are lots of less-than-GPT-class stuff out there that you can do and especially inferences more of a wide open market versus training that you can do on other platforms, but they’re the best. They’re not just the best because of their hardware. They’re not just the best because of their data center solutions. They’re not just the best because of CUDA. They’re the best because of all of those.
+
+The other illustrative thing for me that shows how wide their lead is, we haven’t talked about China yet.
+
+Ben: The land of A800s.
+
+David: Yes, so what’s going on? Last year, sales to mainland China was 25% of Nvidia’s revenue. A lot of that is they were selling to the hyperscalers, to the cloud providers in China—Baidu, Alibaba, Tencent, others.
+
+Ben: By the way, Baidu has potentially the largest model of anyone. Their GPT competitor has over a trillion parameters and may actually be larger than GPT-4.
+
+David: Wow, I didn’t know that. It’s wild. Then I believe also in September of 2022 last year, the Biden administration announced pretty sweeping regulations and bans on sales of advanced computing infrastructure.
+
+Ben: David, they’re export controls. Don’t say bans.
+
+David: Yes, that’s a fine line. This is pretty close to bans that the administration introduced. As part of that, Nvidia can no longer sell their top-of-the-line H100s or A100s to anybody in China. So they created a nerfed SKU, essentially, that meets the performance regulations, the A800 and H800s.
+
+Ben: Which I think they basically just cranked down the NVLinks data transfer speeds. It’s like buying a top-of-the-line A100 but not with as fast of data connections as you need, which basically makes it so you can’t train large models.
+
+David: Or you can’t train them as well or as fast as you could with the latest stuff. The incredibly telling thing is that those chips and those machines are still selling like hotcakes in China. They’re still the best hardware and platform that you can get in China, even a crippled version. I think that’s true anywhere in the world.
+
+Ben: And there’s been an even more recent spike of them because a lot of Chinese companies are reading the tea leaves and saying, ooh, export controls might get even more severe so I should get them while I still can, these A800s.
+
+David: Yup. I can’t think of a better illustration of just how wide their lead is.
+
+Ben: That’s a great point. Talking about the rest of Nvidia just for a moment, this episode is about the data center segment, but—
+
+David: You mean they still make gaming cards, too?
+
+Ben: Is worth talking about this idea that Omniverse is starting to look really interesting. As of their conference six months ago, they had 700 enterprises who had signed up as customers.
+
+The reason this is interesting is it could be where their two different worlds collide: 3D graphics with ray tracing, which is new and amazing and the demos are mind-blowing, and AI. They have been playing in both of these markets since the workloads are both massively parallelizable. That is the original reason for them to be in the AI market.
+
+If you recall way back our part I episode, the original mission of Nvidia was to make graphics a storytelling medium. Then their mission has expanded as they’ve realized, my God, our hardware’s really good at other stuff that needs to be parallelized, too. But fascinatingly with Omniverse, the future could actually look like applications where you need both amazing graphical capability and AI capability for the same application.
+
+For all the other amazing uniqueness about Nvidia that we’ve been talking about and how well-positioned they are, adding this on top where they’re the number one provider for graphics hardware and software, and AI hardware and software, oh and by the way, there’s this huge application emerging where you actually do need both, they’re just going to knock it out of the park if that comes true.
+
+David: There was a super cool demo at a recent keynote. It might have been at SIGGRAPH where Nvidia created a fully ray trace game environment. Looks like a AAA game, looks amazing. Basically distinguishable from reality, but you really have to look hard to tell that this isn’t real and this isn’t a real human you’re talking to. There’s a non-playable character that you’re talking to, an NPC who’s giving you a mission. They show this demo, it looks amazing.
+
+Then they’re like, the script, the words that that character was saying to you were not scripted. That was all generated with AI dynamically. You’re like, holy crap. You think about playing a video game, the characters are scripted. But in this world that you’re talking about, you can have generative AI–controlled avatars that are unscripted that have their own intelligences, and that drives the story.
+
+Ben: Or an airplane that’s in a simulation of not just a wind tunnel but simulating millions of hours of flying time using real time weather that’s actually going on in the world and using AI to project the weather in the future, so you can know the real world potential things that your aircraft could encounter, all in a generated graphical AI simulation. There’s going to be a lot more of this stuff to come.
+
+David: Totally.
+
+Ben: Another thing to know about Nvidia that we really didn’t talk about in the last episode, they’re pretty employee-efficient. They have 26,000 employees. That sounds like a big number, but for comparison, Microsoft, whose market cap is only twice as big, has 220,000. That is 5X the number of employees per dollar of market cap going on over at Microsoft. This is a little bit farcical since Nvidia only recently has had such a massive market cap.
+
+David: The scale of the platform that Nvidia is building is on the order of magnitude of Microsoft scale.
+
+Ben: Right. They have $46 million of market cap per employee.
+
+David: Wild.
+
+Ben: Crazy.
+
+David: Which I think translates into the culture there as we’ve gotten to know some folks there. It really is a very unique culture. It is a big tech scale company, but you never hear about the same silly big tech stuff that you hear at other companies at Nvidia.
+
+As far as I know, I could be wrong on this. There is no work from home or return to the office policy at Nvidia. No. You do the job. Nobody’s forcing anybody to come into the office here, and they’ve accelerated their ship cycles.
+
+Ben: I also get the sense that it’s a little bit of a do-your-life’s-work-or-don’t-be-here situation. Jensen is rumored to have 40 direct reports. His office is basically just an empty conference room because he is just bouncing around so much. He is on his phone and he is talking to this person and that person. You can’t manage 40 people directly if you’re worrying about someone’s career ambitions.
+
+David: He’s talked about this. He’s like, I have 40 direct reports. They’re the best in the world at what they do. This is their life’s work. I don’t talk to them about their career ambitions. I don’t need to. For recent college grads, we do mentoring, but if you’re a senior employee, you’ve been here for 20 years, you’re the best in the world at what you do, and we’re hyper efficient, and I start my day at 5:00 AM seven days a week. you do too.
+
+Ben: It’s crazy.
+
+David: There’s actually this amazing quote from Jensen that I heard in an interview with him that I was listening to. Towards the end of the conversation the interviewer asked him, “Jensen, you and Nvidia do these just amazing things. What do you do to relax?” And Jenssen’s answer is—I’m reading, this is a direct quote—“I relax all the time. I enjoy relaxing at work because work is relaxing for me. Solving problems is relaxing for me. Achieving something is relaxing for me.” And he’s 100% percent serious, like 1000% serious.
+
+Ben: How old is Jensen?
+
+David: The dude is 60 years old.
+
+Ben: It feels like all of his peers have either decided to retire and relax, or are relaxing while running their companies. I think there’s another crop of people that are doing that. That is just not at all interesting to him or what he’s doing.
+
+I get the sense like he’s got another 30 years in him, and he’s architected the company in such a way that that’s the plan. I don’t think there’s anyone else there where they’re getting ready for that person to take over. I think the company is an extension of Jensen’s thoughts, will, drive, and belief about the future, and that’s what happens.
+
+David: I don’t know if there is or isn’t a Jensen and Lori Huang Foundation, but if there is, he’s not spending his time on it. He’s not buying sports franchises. He’s not buying mega yachts, or if he is, he isn’t talking about them, and he is working from them.
+
+Ben: He’s not buying social media platforms in newspapers.
+
+David: Totally.
+
+Ben: It is quite telling that when you watch one of their keynotes, it’s Jensen on stage and it’s some customer demos, but it’s not like the Apple keynotes where Tim Cook’s calling up another Apple employee. It’s the Jensen show.
+
+David: Right. Nobody would accuse Tim Cook of not working hard, I don’t think. But you go to those keynotes and it’s like, Tim does the welcome and then the handoff. And a parade of other executives talk about stuff.
+
+Ben: Good morning.
+
+David: Tim Apple. I love it.
+
+Ben: I love Tim Apple.
+
+David: We got to have Tim on the show sometime. That would be amazing.
+
+Ben: Yeah, text him.
+
+David: Text him.
+
+Ben: All right. Power?
+
+David: Let’s talk Power.
+
+Ben: For listeners who are new to the show, this is the section where we talk about what it is about the company that enables them to achieve persistent differential returns. Or in other words, to be more profitable than their closest competitor, and do so sustainably.
+
+Nvidia is fascinating because they have a direct competitor, but that’s not the most interesting form of competition for them. Disintermediation is. Sure, ostensibly there’s Nvidia versus AMD, but AMD doesn’t have all this capacity reserved from TSMC, at least not for the 2.5D packaging process for the high-end GPUs.
+
+AMD doesn’t have the developer ecosystem from CUDA. They’re the closest direct comp, but it’s Amazon building Trainium and Inferentia. It’s if Microsoft decides to go and build their own chip as they’re rumored to with AMD, it’s Google and the TPU. Facebook developing PyTorch and then leveraging their foothold with PyTorch with the developer community to figure out how to extend underneath of PyTorch. There are a lot of competitive vectors coming at Nvidia, but not directly.
+
+David: Not to mention all the data center hardware providers that are their direct competitors now, too. Intel, et cetera, on down the line.
+
+Ben: Yup. Now all that said, they’ve got a lot of powers. As we move through these one by one, I think let’s just say them all and we can decide if there’s something to talk about here.
+
+Counter-positioning is the one where I actually don’t think there’s anything here. I don’t think there’s anything that Nvidia does where there’s another company that’s actively choosing not to do that, because any company would want to be Nvidia right now.
+
+David: I would have agreed with you, but I actually think there is strong counter-positioning in the data center world right now. Nvidia and Jensen put a flag in the ground several years ago where they said, we are going to rearchitect the data center, and all the existing data center hardware and compute providers had strong incentives not to do that.
+
+Ben: But right now, what do you think other data center hardware providers, what are they not doing?
+
+David: Fair point. They’re all trying to put GPUs in the data center, too.
+
+Ben: Everyone’s just going to chase exactly what Nvidia is doing years behind them. That’s the market right now.
+
+David: Okay, fair enough.
+
+Ben: The question is, will Nvidia be able to stay ahead in ways that matter? That I think is the entire analysis on the company right now. In what ways that matter to customers at large scale and large markets, will they be able to sustainably be ahead of people that are just chasing them and trying to copy what they’re doing, because the margin profile is so fat and juicy that people don’t want to pay it?
+
+The second one, scale economies. This has CUDA written all over it. You can make massive fixed cost investments when you have the scale to amortize that cost across. When you have four million developers who want to develop on your platform, you can justify whatever it is.
+
+Sixteen hundred people who are actively on LinkedIn at Nvidia today have the word CUDA in their job title. I’m sure it’s actually even more than that, who just aren’t saying software or something like that, but thousands of people of an investment that they don’t make any money on software. They may make a de minimis amount on software, but that is amortized across the entire developer base.
+
+David: I think it’s worth saying a bit more here on this, too, which we also talked about in our last episode. To me, the dynamics here are a lot like Apple and iOS versus Android.
+
+Apple has thousands and thousands and thousands of developers working on iOS. Android also has thousands and thousands of developers working on it across a widespread ecosystem. But at Apple, it’s all tightly controlled and it’s coupled with hardware. On Android, it’s not. As a user, maybe you’ll get the latest operating system update. Maybe you won’t.
+
+Ben: I think this is exactly the right framing here, that Nvidia is the Apple of AI and PyTorch is Android because it’s open source and it’s got a bunch of different companies that care about it. OpenCL is the Android as it pertains to graphics, but it’s pretty bad and pretty far behind.
+
+ROCm is the CUDA competitor made by AMD for their hardware. But again, new, not a lot of adoption. They’re working on it, but they’ve open sourced that because they realize they can’t go directly head-to-head with Nvidia. They need a different strategy. But yes, they are absolutely running the Apple playbook here.
+
+David: I think in the current state of things, it’s even more favorable to Nvidia than iOS versus Android, because Nvidia has had first dozens and then hundreds and now thousands of engineers working on CUDA for 16 years. Meanwhile, the Android equivalent out there in the open source ecosystem has only just been getting going.
+
+If you think about the delta of the timeline between iOS and Android, it was a year-and-a-half, two years. There are probably at least 10, probably closer to 15 year lead than Nvidia has. We talked to a few people about this and we’re like, oh, what’s going on in the open source ecosystem? Is there an Android equivalent?
+
+Even the most bullish people we talked to were like, oh yeah. Now that Facebook has really moved PyTorch into a foundation and outside of Facebook, that means that other companies can now contribute a couple of dozen engineers to work on it. And you’re like, cool.
+
+AMD is going to contribute a couple of dozen, maybe a hundred engineers to work on PyTorch. And so will Google, and so will Facebook, and so will everybody else. Nvidia has thousands of engineers working on CUDA 10 years ahead.
+
+Ben: I sent you this graph, David, of my estimated number of employees working on CUDA per year since inception in 2006. If you look at the area under the curve and just take the integral, it’s approximately 10,000 person years that have gone into CUDA. Good luck.
+
+David: Now again, open source is a very powerful thing. The market incentives are absolutely there for this to happen.
+
+Ben: That is the interesting point. Every moat only works if the castle is sufficiently small. If the prize at the end of the finish line becomes sufficiently large, you’re going to need a bigger moat, and you need to figure out how to defend the castle harder. I’m mixing so many metaphors here, but you get the idea.
+
+David: I love it.
+
+Ben: This was a perfectly fine moat when the addressable market was $100 billion. Is it a trillion dollar market opportunity? Probably not. Basically, it means margins come down and competition gets more fierce over time.
+
+David: I think Nvidia totally gets this because part of this, as I was alluding to is Covid-related, but we talked way back in part I about how Nvidia ended up to save the company moving to a six month shipping cycle for their graphics cards when their competitors were on a one- to two-year shipping cycle, that persisted for several years, and then they relaxed back to a annual shipping cycle. There were annual GTCs.
+
+Since Covid, Nvidia has reaccelerated to a six-month shipping cycle. They’ve been doing two GTCs a year, most years since Covid, which is insane for the level of technology complexity that they’re doing. Imagine Apple doing two WWDCs a year. That’s what’s happening in Nvidia.
+
+Ben: It’s crazy.
+
+David: On the one hand, that’s a culture thing. On the other hand, that is an acknowledgement of, we need to be pedal to the floor right now to outrun competition.
+
+Ben: We’ve built some structural ways to defend the business, but we need to continue running as fast as we’ve ever run to stay ahead because it’s such an attractive race that we’re in.
+
+David: Yup. All right, that’s scale economies. Let’s move to switching costs now.
+
+Ben: So far, everything of consequence, especially model training, especially on LLMs, has been built on Nvidia. That alone is just a big pile of code and a big amount of organizational momentum. Switching away from that, even from the software perspective is going to be hard.
+
+But there are companies today in 2023, both at the hyperscalers and Fortune 500 companies that own their own data centers, making data center purchase and rollout decisions that will last at least the next 5 years, because these data center re-architectures don’t happen very often. You better believe that Nvidia is trying as hard as they can to ship as much product as they can while they have the lead, in order to lock in that data center architecture for the next 10 years.
+
+David: We talked to many people in preparation for this episode, but one of the most interesting conversations was with some of our favorite public market investors out there, the NZS Capital guys.
+
+Ben: Who I stole many insights from for this episode.
+
+David: They’re just so great, and obviously, been following Nvidia in the space for a long time. They made the point that data center revenue and data center CapEx is some of the stickiest revenue that is known to humankind. Just the organizational switching costs involved in data center procurement and data center architecture standardization decisions—God, that’s a mouthful even to say—at Fortune 500 companies and the like is they’re not changing that more than once a decade at most.
+
+Ben: Even if we’re in this bubbly moment around the excitement of generative AI before we necessarily know the full set of applications, Nvidia is leveraging this excitement to go get some lock-in. I’ve seen some people on the Internet being like they love how supply-constrained they are. I don’t think so. I think they’re looking for capacity in every way they can get it to exploit this opportunity while it exists.
+
+David: I completely agree with that. I think, again, we didn’t talk to Colette, Nvidia’s CFO, about this, but I strongly suspect if I were them I would be happy to trade some of this growth margin right now for increased throughput on sales.
+
+Ben: Yup. But there’s only one TSMC and there are only so many fabs that they have that can do the, what do they call it, the 2.5D architecture, so.
+
+David: Should we talk about cornered resource?
+
+Ben: Yeah, this is probably the textbook cornered resource. Nvidia has access to a huge amount of capacity at TSMC that none of their competitors can get their hands on. They did luck into this cornered resource a little bit. They reserved all that wafer supply for a different purpose, partially crypto mining.
+
+But AMD doesn’t have it. AMD does have a ton of capacity. It’s worth saying at TSMC for their other products, data center CPUs, which they’ve actually been doing very well in. But Nvidia did end up with this wide open lane all to themselves on COWOS capacity at TSMC, and they got to make the most of that for as long as they have it.
+
+David: I guess to say a little more, though, it’s not like this is not a commodity as we talked about on our TSMC episode. Although TSMC is a contract manufacturer, it is the opposite of a commodity, especially at the highest-end leading edge.
+
+Ben: It’s like an invention delivered by aliens that very few humans know how to actually do.
+
+David: Yes.
+
+Ben: It is worth acknowledging, it’s a two horse race for LLM training. I know we’ve been harping on Nvidia, but Google TPUs are also manufactured at volume. You can just only get them through Google Cloud. I don’t know if you have to use the TensorFlow framework, which has been waning in popularity relative to PyTorch, but it’s certainly not an industry standard to use TPUs the way that it is to use Nvidia’s hardware.
+
+I suspect a lot of the volume of the TPUs is being used internally by Google for Bard, for doing stuff in Google search. I know they’ve added a lot of the generative AI capability to search.
+
+David: Totally. Two points on this. Just sticking to the scope of this business and market discussion, this is a major casualty of a strategy conflict at Google. Obviously, the way you want to do this is the way Nvidia is doing this. If your customers want to buy through the cloud, you want to be in every cloud. But obviously Google is not going to be in AWS, Azure, Oracle, and all the new cloud providers. They’re only going to be in GCP.
+
+Ben: Maybe, David.
+
+David: But I was going to say, through the expanded lens, though, I think this makes sense for Google because their primary business is their own products.
+
+Ben: And they run among the most profitable businesses the world has ever seen. Anything they can do to further advantage and extend that runway, they probably should do.
+
+David: Nothing has changed through all of this with respect to the fact that what the previous generation of AI enabled with machine learning with regard to social media and internet applications being the most profitable cash flow geysers known to man, none of that has changed. That is still true in this current world and still true for Google.
+
+Ben: The last one that I had highlighted is network economies. They have a large number of developers out there and a large number of customers that they can amortize these technology investments across, and who all benefit from each other.
+
+Remember, there are people building libraries on top of CUDA, and you can use the building blocks that other people built to build your code. You can write amazing CUDA programs that just don’t have that many lines of code because it’s calling other preexisting stuff.
+
+Nvidia made a decision in 2006 that at the time was very costly, like a big investment decision, but it looks genius in hindsight to make sure that every GPU that went out the door was fully CUDA-capable. Today there are 500 million CUDA-capable GPUs for developers to target. It’s just very attractive.
+
+I’m putting this in network economies. I think it’s probably more a scale economy than a network economy, but you could imagine a lot of people hoe humming around Nvidia in 2006 to 2012 saying, why do I have to make it so that my software fits on this tiny little footprint, and we can include CUDA taking up a huge amount of space on this thing, and make all these trade-offs on our hardware so that we can? Are people going to use CUDA? Today, it just looks so genius.
+
+David: We’ve talked about this many times on the show, including with Hamilton Helmer and Chenyi themselves. But for platform companies like Nvidia clearly is, there is this special brand of power that is a combination of scale economies and network economies, and this is what you’re getting at.
+
+Ben: Yup. They do have branding power for sure.
+
+David: I actually think it’s worth talking about this a little bit.
+
+Ben: This is the, nobody gets fired for buying IBM. Nvidia is the modern IBM in the AI era.
+
+David: Yup. I don’t feel confident enough to pound the table on this, but given the nature of how the company started, how long they’ve been around, and the fact that they also have the market leading product in a totally different business in graphics, which is both consumers but also professional graphics, I think that probably does lend some brand power to them, especially when the CIO and the C-suite at McDonald’s is making a buying decision here. Everybody knows Nvidia.
+
+Ben: You’re saying that they carried their consumer brand into their enterprise posture.
+
+David: This is way, way, way down the stack in power, but I don’t think it’s hurt them. They’ve always been known as a technology leader, and the whole world has known for decades at this point that the stuff that they can enable is magical.
+
+Ben: Yeah. There’s a big strength-leads-to-strength thing here, too, where I bet the revenue results from last quarter massively dwarf any brand benefit that they ever got from the consumer side. I think it’s just the fact that like, hey look, everyone else is buying Nvidia. I’d be an idiot not to.
+
+David: Nobody is getting fired for buying Nvidia anytime soon, yup.
+
+Ben: Or taking a big dependency on them or targeting that development platform. If you’re innovating in your business, you don’t want to take risks on the platform you’re building on top of. You want to be the only risk in the value chain.
+
+David: The last one is process power.
+
+Ben: This is probably the weakest one, even though I’m sure you could make some argument that they have process power. It’s just that all the other powers are so much more valuable.
+
+David: It’s always so tricky to tease out. I think the argument here would just be Nvidia’s culture and their six month shipping cycle that, clearly they had in the past and they didn’t have for a while and now they have again, I don’t know. I think you can make an argument here.
+
+Is it feasible? Let’s do a thought exercise. Could any of their competitors really in any domain move to a six month ship cycle? That’d be really hard. Could an Apple-sized company do two WWDCs a year? No.
+
+Ben: The question is, does that actually matter? There are so many people that are using A100s right now. In fact, most workloads can be run on A100s, unless you’re doing model training of GPT-4. I just don’t know that it actually matters that much or as much as other factors.
+
+I’ll give you an example. AMD does have 3D packaging on one of their latest GPUs. It’s a more sophisticated way of doing real copper to real copper, direct connection without a silicon interposer. I’m getting into a little bit of the details, but basically it’s more sophisticated than the process that the H100 2.5D is using to make sure that memory is extremely close to compute.
+
+Does that matter? Not really. What matters is everything else that we’ve been talking about. Nobody’s going to make a purchase decision on this thing because it’s a little bit of a better mousetrap.
+
+David: Thinking about this more, I think actually brand is a really important power for Nvidia right now.
+
+Ben: In a strength-leads-to-strength way. You can see why they’re trying to seize this moment.
+
+David: Yup.
+
+Ben: Playbook?
+
+David: All right, let’s move on to playbook.
+
+Ben: One thing that I want to point out is Jensen keeps referring to this as the iPhone moment for AI. When he says it, the common understanding is that he means a new mainstream method for interacting with computers. But there’s another way to interpret it. Does this sound familiar, David, when I say a hardware company differentiated by software that then expanded into services?
+
+David: Yes, it does.
+
+Ben: It’s quite tongue-in-cheek to be referring to the iPhone moment of AI when referring to oneself Nvidia as the Apple. Because I really think that the parallels are uncanny, that they have this vertically-integrated hardware and software stack, provided by Nvidia, you use their tools to develop for it. They’ve shipped the most units, so developers have a big incentive to target that market. It’s the best individual buyers to target because they’re the least cost sensitive and they appreciate you building the best experiences for them.
+
+It’s the iPhone, but in many ways, it’s better because the target is a B2B target instead of consumers. The only way in which it’s different is Apple has always had a market cap that lagged its proven value to users. Whereas Nvidia right now is exactly over their skis.
+
+David: Let’s save that for bull and bear at the end.
+
+Ben: Great. The second one is that they’ve moved on from becoming a hardware company to truly being a systems company. While Nvidia’s chips are typically ahead, it really doesn’t matter on a chip-to-chip comparison. That is not the playing field.
+
+It is all about how well multiple GPUs and multiple racks of GPUs work together as one system, with all the hardware, networking, and software that enables that. They have just entirely changed the vector of competition which lots of companies can learn from.
+
+My third one here is this quote that Jensen had again from the same Stratechery interview, which is, “You build a great company by doing things that other people can’t do. You don’t build a company by fighting other people to do things that everyone can do.”
+
+I think it’s so salient. It comes out in all these interesting ways, one of which is that Nvidia never dedicated resources to building a CPU until there was a differentiated way and a real reason for them to build their own CPU, which is now. The way that they’re doing it, by the way, is not terribly differentiated. It’s an off-the-shelf ARM architecture that they’re putting some of their own secret sauce on. But it’s not like they’re doing Apple-style M3 creation of a chip from scratch.
+
+David: It’s not the hero product.
+
+Ben: There are many ways that Nvidia applies this, which I think we talked about in the last episode. If they think it’s going to be a low margin opportunity, they don’t go after it. But the nicer way to say that is, we don’t want to compete for things that anybody can do. We want to do things that only we can do. Oh, and by the way, we will fully realize the value of those things when we do them.
+
+David: I think this may be a related playbook theme here for Nvidia of strike when the timing is right. I suspect that a lot of the inner competitive drive and motivation for Jensen and the company over the past 10–15 years here has been to really fight against Intel.
+
+Intel tried to kill them. As we talked about many times in the previous episodes. We talked to somebody who framed it as Intel was the country club and Nvidia is the fight club. Back in the days the Intel country club didn’t want to let Nvidia in.
+
+Intel controlled the motherboard. Intel controlled the most important chip: the CPU. Intel would integrate and commoditize all other chips into the motherboard eventually. If they couldn’t do that, then they’d try and make the chips themselves. They tried to run all these playbooks on Nvidia and Nvidia just barely survived.
+
+Then in the data center. Intel controlled the data center for so long. PCI Express, that was the interconnect in the data center for so long, and Nvidia had to live in there. And I’m sure they hated every single minute of it. But they didn’t turn around 10 years ago and just be like, guess what? We’re making a CPU, too. They waited until the time was right.
+
+Ben: It is crazy. They used to have to plug into other people’s servers. Then they started making servers that plugged into other people’s racks, rows, and architectures. Then they started making their own entire rows and walls. At some point here, they’re going to start running their own buildings full of servers, too. And they’re going to say, we don’t have to plug into anything.
+
+David: But I think for a lot of other leaders, it would’ve been hard to have the patience that they’ve had.
+
+Ben: Totally. You only get to do the stuff they’re doing if you invested 10 years ahead of the industry. We’re wildly inventive and innovative in creating these true breakthrough innovations, and we’re really, really right about huge markets. None of this stuff applies unless you’re doing those three things.
+
+David: Yeah. Fortune 500 CIOs aren’t making buying decisions if none of what you just said isn’t true.
+
+Ben: Right. There’s this interesting conversation I wanted to have with you ahead of winding it up with the bull and bear case. Think back to our AWS episode. We talked a lot about how AWS is just locked in. The databases are a ridiculously durable advantage. Once your data has been shipped to a particular cloud, often literally in semi trucks full of hard drives…
+
+David: Snowball, yeah.
+
+Ben: …it’s hard to move off of it. There’s this interesting question of, will winning Cloud 1.0 for all these Google, Microsoft, Amazon, will that toehold actually enable them to win in the cloud AI era?
+
+On the one hand, you’d think absolutely because I want to train my AI models right next to where my data is. It’s really expensive to move my data somewhere else to do that.
+
+David: Case in point, Microsoft is the exclusive cloud infrastructure provider for OpenAI, which runs as far as we know solely on Nvidia infrastructure, but they buy it all through Microsoft.
+
+Ben: On the other hand, the experience that customers are demanding is the full stack Nvidia experience. Not this, oh you found the cheapest possible cost of goods sold way to offer me something that’s like the experience that I want. Sometimes, the cloud providers have to offer me an A100 or an H100 because my code is way too complicated to ever re-architect for whatever accelerated computing devices they’re offering me that’s first party and cheaper for them.
+
+I don’t know. I just think for the first time in the last five years or so, I’ve cocked my head a little bit at the moat of these existing cloud providers and said, huh, maybe there really is a vector to compete with them and cloud is not a settled frontier.
+
+David: Well—this is pejorative here—cloud is a euphemism for data centers. There’s so much more to the hyperscalers and public clouds than just data centers.
+
+Ben: But physically, they’re data centers.
+
+David: Yeah. There is a mile of distance, metaphorically, between an Equinix and an AWS. But they’re data centers, and there is a fundamental shift, at least according to Jensen, that is happening in data centers. I think that probably does create some shifting sands that the cloud market is going to have to navigate.
+
+Ben: I bet the way it plays out is that where you landed in Cloud 1.0 strongly dictates where you’ll land in this AI cloud era? Because at the end of the day, if customers are demanding Nvidia stuff, then the cloud providers have every incentive in the world to make it so that you can run your applications created in their cloud.
+
+David: But also like there’s more to this too. Crusoe exists, CoreWeave exists, Lambda Labs exists. These are well-funded startups with billions of dollars that a lot of smart people think there’s a major cloud-sized opportunity for. That would not have happened a few years ago.
+
+Ben: Super true. All right, let’s do the bull case and bear case, and bring this one home.
+
+David: Oh boy. We’ve been trying to delay this as long as possible. This is the crux of the question right now.
+
+Ben: Part of it is, is their existing moat big enough if GPUs actually become a hundred-billion-dollars-a-year market? Right now, GPUs in the data center are like a $30 billion-a-year market going to like $50 billion next year. If this actually goes the way that everyone seems to think it’s going to go, there are just too many margin dollars out there for these big companies to not invest heavily.
+
+Meta, through tens of billions of dollars making the metaverse. Apple’s put $15 billion (rumored) into their headset. Amazon put tens of billions of dollars into devices, which by all means was a terrible investment. How is Echo paying anything back?
+
+David: Oh man. Total sidebar. I’m so disappointed. I have standardized my house on the Echo ecosystem and it keeps getting dumber. How in this world of incredibly accelerating AI capabilities are my Echoes getting dumber?
+
+Ben: They need to train them in Inferentia a little bit harder.
+
+David: Oh, Jesus. Okay, rant over.
+
+Ben: Never doubt big tech’s ability to throw tens of billions of dollars into something if the payoff could be big enough. These are ludicrously profitable monopolies, except for Amazon. Not that profitable.
+
+David: AWS is.
+
+Ben: Yeah. But Google, Facebook, Apple, at some point here there’s a game of chicken that ends, and some of these companies go all in and say, yeah we have smart engineers, too. We’re going to figure this out.
+
+David: Yeah. But also never underestimate the inability of big tech to execute on stuff that it thinks it can. Especially with major strategy shifts.
+
+Ben: Yeah. All right. Let’s actually do this. Let’s start with the bear case.
+
+David: You just illustrated (I think) bear case number one, which is literally everybody else in the technology ecosystem is now aligned and incentivized to say, I want to take a piece of Nvidia’s pie. And these companies have untold resources.
+
+Ben: To put a finer point on that, let’s look at PyTorch for a minute. Now that all the developers or lots of developers are using PyTorch, it does enable PyTorch to aggregate customers, which gives them the opportunity to disintermediate.
+
+You’ve got to write a lot of new stuff underneath and ship a lot of hardware. The cloud service providers have taken some steps here. It was originally developed by Meta. And while it’s open source, it’s still hard for all these companies to invest in it if it’s really owned and controlled by Meta.
+
+So now, PyTorch has been moved out into a foundation that a lot of companies are contributing to. Again, it is an absolute false equivalence to PyTorch versus Nvidia.
+
+But in real Ben Thompson aggregation theory parlance, if you aggregate the customers, you have the opportunity then to take more margin, to disintermediate, to direct where that attention is going. PyTorch has that opportunity that feels like the vector that a lot of these CSPs will try and compete on and say, look, if you’re building for PyTorch, it runs really well on our thing, too.
+
+David: For sure. No doubt that that’s going to happen. All right, so that’s bear case number two as part of bear case number one.
+
+Ben: The next one is literally the market isn’t as big as the market cap reflects. I think there’s a pretty reasonable chance that there’s some falter in the next 12–18 months, where there’s a crisis of confidence among investors, where at some point something will come out where we all observe, oh maybe GPTs aren’t as useful as we thought. Maybe people don’t want chat on our faces.
+
+That crisis of confidence, that mini bubble burst will trickle out to America’s CIOs and CEOs, make it harder to advocate in the boardroom, to make this big fundamental purchase and re-architecture of our whole budget from this year that we agreed on that I’m trying to propose us changing. There’s a crypto-like element to an excitement bubble bursting that will, for some companies, slow their spend.
+
+The question is like when that happens, because it’s not an if, it’s a when. I have a hard time believing that given all the hype around everything right now, AI will be even more useful than everyone believes. It will continue in a linear fashion where, without any drawdowns, everyone’s excitement only gets bigger from here. It may end up being way more useful than anyone thought, but there at some point will be some valley or trough. It’s about how Nvidia fares during that crisis of confidence.
+
+David: It’s funny. Again, we talked to a lot of people for this episode, including a set of some of the foremost AI researchers and practitioners out there, founders and C-suites of companies that are doing all this. Pretty much to a tee, they all said the same thing when we asked them about this question. They all said, yeah, this is overhyped right now. Of course, obviously. But on a 10-year timescale you haven’t seen anything yet. The transformative change that we believe is coming, you can’t even imagine.
+
+Ben: The most interesting thing about the overhype is that it’s actually showing up in revenue. Everyone who is buying access to all this compute believes something. For Nvidia, because it’s showing up in the form of revenue, the belief is real. They just need to make sure that they smooth the gap to customers actually realizing as much value as the CIOs of the world are currently investing ahead of.
+
+David: I think the subpoint to that that’s worth the discussion right now is like, okay, generative AI. Is it all it’s cracked up to be?
+
+Ben: Well David, I haven’t asked you about this in a month or so, but a month ago you were pounding the table insisting to me I have no need for, I’ve never used ChatGPT, I can’t find it to be useful, it’s hallucinating all the time. I never think to use it. It’s not a part of my workflow. Where are you at?
+
+David: Still basically there, including forcing myself to try to use it a bunch in preparation for this episode. But also as we talk to more people, I think I’ve realized that David Rosenthal’s use case doesn’t really matter here at all because as a business, we are such a hyper specialized, unique little unicorn thing, where accuracy and the depth of the work and thought that we ourselves put into episodes is the paramount thing.
+
+Ben: And we have no coworkers. There are so many things about our business that are weird. We never have to prepare a brief for a meeting.
+
+David: Right. All this stuff, anything external that we prepare is a labor of love for us. There is nothing we prepare internal.
+
+Ben: I know people who use ChatGPT to set their OKRs. I’m like, okay. What’s an OKR? And they’re like, I wish my life were like that, too. That’s why I have ChatGPT do it.
+
+David: Honestly, Through doing this, talking to some folks, and reading, I think there’s a very compelling use case for it for writing code right now. No matter what level of software developer you are from zero all the way up through elite software developer, you can get a lot more leverage out of this thing in GitHub Copilot. Is that valuable? For sure that’s valuable.
+
+Ben: Yeah. The LLMs are unbelievably good at writing and helping you write code. I’m a huge believer in that use case.
+
+David: Then I think there’s the slightly more speculative stuff, but you can actually see it now, of like that gaming demo that I mentioned recently from Nvidia, of like, oh you’re talking to a non playable character that wasn’t scripted.
+
+We did an ACQ2 episode recently with Chris Valenzuela from the CEO of Runway. That was used in everything everywhere all at once, and he said that’s just the tip of the iceberg. The stuff that you can do, that is happening, that’s out there today with generative AI in these domains, is astounding.
+
+Ben: I think what you’re saying is one could be a bear on your own experience. Every time you try to use a generative AI application, it doesn’t fit into your workflow. You don’t find it useful, you’re not sticky. But on the other hand, actually what AI will be is a sum of a whole bunch of niches.
+
+There’s a video game market, there’s a writing market, there’s a creative writing market, there’s a software developer market, there’s a marketing copy market. There are a million of these things and you just may happen to not fall into one of the first few niches of it.
+
+David: I think for me at least, again just speaking personally, too, I had a very strong element of skepticism initially because the timing was just too perfect. It was like, all UVCs out there, you just told everybody about how crypto’s the future and whatever you’re talking about, and then interest rates went to 5% and your world fell off a cliff.
+
+Ben: The number of people who were out raising a fund and they’re like, the future is AI. This is the best time ever to be investing.
+
+David: There was a large part of me that I was just like, come on guys.
+
+Ben: It’s too perfect. You’re right.
+
+David: It’s too perfect. But this most recent couple of months in this quarter for Nvidia has shown that, put all that aside, Fortune 500s are adopting this stuff, CIOs are adopting this stuff, Nvidia is selling real dollars. And learning also about what it takes to train these models and the step scale function of knowledge and utility going from a billion parameters to 10 billion parameters to 200 to a trillion parameter models, yeah. Something’s going on there for sure.
+
+Ben: This leads me to my next bear case, which is the models will get good enough, then they’ll all be trained, and then we’ll shift to inference. Most of the compute load will be on inference where Nvidia is less differentiated. There are a bunch of reasons I don’t believe that. That is a popular narrative, though.
+
+One of the big reasons I don’t believe that is that the Transformer is not the end of the road. In a bunch of the research that we did, David, it’s very clear that there are things beyond the Transformer that are in the research phase right now. The experiences are only going to get more magical, and only going to get more efficient.
+
+There’s a second bear case there, which is right now we threw a brute force kitchen sink at training these things, and all of that revenue accrued to Nvidia because they’re the ones that make the kitchen sinks. Over time, like you look at Google’s Chinchilla or Llama 2, they actually use less parameters than GPT-4, and have equivalent quality. Many other people can be the judge of that, but we’re high quality models with less parameters. There is this potential bear case around future models that will be more clever and not require as much compute.
+
+It’s worth saying that even today the vast majority of AI workloads don’t look like LLMs, at least until very recently. LLMs are the current maxima in human history of jobs to be done that require a ton of compute. I guess the question is will that continue?
+
+Many other magical recent AI experiences have happened with far less expensive model training, like diffusion models and the entire genre of generative AI on images, which we really haven’t talked about a lot on this episode because they’re less compute-intensive, but many tasks don’t require an entire internet of training data and a trillion parameters to pull off.
+
+David: That makes sense to me. I think there also is some merit to workloads shifting to inference that is happening. I agree with you. I don’t think training is going anywhere, but until recently thinking back to the Google days, training was what everybody was spending money on. That’s what everybody was focused on.
+
+As usage scales with this stuff, then inference—inference, of course, being the compute that has to happen to get outputs out of the models after they’re already trained—becomes a bigger part of the pie. As you say, the infrastructure and ecosystems around doing that is less differentiated than training.
+
+Those are the bear cases. There’s probably also a bear case around China, which is a legitimate one because that’s going to be a problem for lots of people.
+
+Ben: A large market that they won’t be able to address for the foreseeable future in a meaningful way.
+
+David: And just what’s going to happen, generally. Obviously, China is racing to develop their own homegrown ecosystems and competitors, and that’s going to be a closed-off market. What’s going to come out of there? What’s going to happen?
+
+Ben: That’s definitely one, too. My last one is a bear case, but it ends up not being a bear case. For most companies, I would say that if they were trading at this very high multiple and they just experienced this tremendous real growth in revenue and operating profit, that spike to the system when it goes away will irreparably harm the company. When things slow down, stock compensation is an issue, employee morale is an issue, customer perception’s an issue. But this is Nvidia.
+
+David: Yeah, this is nothing new.
+
+Ben: The number of times that they’ve risen from the ashes after years long, terrible sentiment with something mind-blowingly innovative, they’re probably the best positioned company or the company with the best disposition to handle that when it happens.
+
+David: I love that. That’s a great turn of phrase there. You upped your training model on language there.
+
+Ben: You should see the number of parameters.
+
+David: I love it.
+
+Ben: All right. Just to list the bull cases, one, Jensen is right about accelerated computing. The majority of workloads right now are not accelerated. They’re bound to CPUs. They could be accelerated and that shifts from some crazy low number, like 5% or 10% of workloads being accelerated today to 50%-plus in the future, and there’s way more computers happening in parallel and that mostly accrues to Nvidia.
+
+David: I have one nuance I want to add to that. On the surface, I think a lot of people look at that and they’re like, yeah, come on. But I think there actually is a lot of merit to that argument in the generative AI world and everything we’ve talked about in this episode.
+
+I don’t think Jensen and Nvidia are saying that traditional compute is going away or again gets smaller. I think what he’s saying is that AI compute will be added onto everything and the amount of compute required for doing that will dwarf what’s happening in general-purpose compute.
+
+It’s not that people are going to stop running SharePoint servers or that whatever products you use are going to stop using their whatever interfaces that they use. It’s that generative AI will be added to all of those things and the use cases will pop up, which will also use traditional general-purpose CPU based computing. But the amount of workloads that go into making those things magical is just going to be so much bigger.
+
+Ben: Also, just a general statement on software development. Writing parallelizable code is really hard unless you have a framework to do it for you. Even writing code with multiple threads, like if anybody remembers a CS college and class where they had a race condition or they needed to write a semaphore. These are the hardest things to debug.
+
+I would argue that a lot of things that could happen in an accelerated way aren’t just because it’s harder to develop for. If we live in some future where Nvidia has reinvented the notion of a computer to shift away from von Neumann architecture into this stream processor architecture that they’ve developed, and they have the full stack to make it just as easy to write applications and move existing applications, especially once all the hardware’s been bought and paid for and sitting in data centers, there are probably a lot of workloads that actually do make sense to accelerate if it’s easy enough to do so.
+
+David: So your point is that there’s a lot of latent accelerated addressable computing out there that just hasn’t been accelerated yet.
+
+Ben: Right. It’s like, this workload isn't that expensive, and I’m not going to pay an engineer to go re-architect the system. It’s fine how it is.
+
+David: I’ll buy that.
+
+Ben: I think there’s a lot of that. So bull case one, Jensen is right about accelerated computing. Bull case two, Jensen is right about generative AI. combined with accelerated computing, this will massively shift spend in the data center to Nvidia’s hardware.
+
+And as we’ve mentioned, OpenAI is rumored to be doing over a billion dollars in recurring revenue on ChatGPT. I think there’s (let’s call it) $3 billion because that’s the most credible estimate that I’ve heard; maybe that was a forecast for next year.
+
+But they’re not the only one. Google with Bard, which I’ve found tremendously useful, actually, preparing for this episode, is not directly monetizing that, but they’re retaining me as a Google search customer by doing it. There is a lot of real economic value even today, not nearly the amount that’s baked into the valuation. I suppose the bear case of this is that everything has to go right for Nvidia, but the bull case is indications that things are going right for Nvidia.
+
+Third bull case is that Nvidia just moves so fast. Whatever the developments are, it’s hard to believe that they’re not going to find a way to be really well-positioned to capture it. That’s just a cultural thing.
+
+Four is the point that you brought up earlier, that there’s a trillion dollars installed in data centers, $250 billion more being spent every year to refresh and expand capacity, and that Nvidia could take a meaningful share of that. I think today what’s their annual revenue at, like $30 billion or something?
+
+David: If you run rate this current quarter, then it’s at like $50, $50-plus billion.
+
+Ben: So right now that puts them at 20% of the current data center spend. You could imagine that being much higher.
+
+David: Wait. That includes the gaming revenue. It’s about $40 billion because the data center revenue is $40 billion. It’s $10 billion, so $40 billion annualized.
+
+Ben: All right, so 15%–18%. But you could imagine that creeping up. Again, if the accelerated computing and generative AI belief comes true, they’ll expand that to a $50 billion number and they’ll take a greater percent of it.
+
+An interesting way to do a check on this math is to look at what other people in the ecosystem are reporting in their numbers. TSMC in their last earnings said that AI hardware currently only represents 6% of their revenue. But all indications over there are that they expect AI revenue to grow 50% per year for the next five years.
+
+We’re trying to come at it from the customer workload side and say is it useful there? But if you come at it from this other side of what do Nvidia’s suppliers are forecasting, and they have to put their money where their mouth is, building these new wafer fabs to be able to facilitate that, and packaging and all the other things that go into the chip. It’s expensive for TSMC to be wrong.
+
+That’s another bull case. The last one that I have before leaving you with one final thought.
+
+David: Are you saying you have one more thing?
+
+Ben: Yes. Is that Nvidia isn’t Intel, and I think that’s the biggest realization that you helped me have.
+
+David: And it’s not Cisco.
+
+Ben: Yeah. The comparison we were making in the last episode was wrong. They are Microsoft, they control the whole software stack and they simultaneously can have relationships with the developer and customer ecosystems. It may even be better than Microsoft because they make all the hardware, too.
+
+David: It may be old school IBM.
+
+Ben: Right. Imagine if IBM operated in a computing market of today’s magnitude. Computing was a tiny little market back then.
+
+David: It was like that. It took the PC wave to disrupt IBM, which was a personal computer in today’s parlance, Edge computing, device-based computing. IBM dominated the B2B mainframe cycle of computing.
+
+Again, if you believe everything Jensen is saying and how he steered the company for the last five years, we are going back into a centralized data center, modern version of a mainframe-dominated computing cycle.
+
+Ben: I suspect a lot of inference will get done on the Edge. You think about the insane amount of compute that’s walking around in our pockets that is not fully leveraged right now. There’s going to be a lot of machine learning done on phones that are going to call up to cloud-based models for the hard stuff.
+
+David: No doubt. I don’t think training is happening at the Edge anytime soon, though.
+
+Ben: I certainly agree with that. All right, well just like our TSMC episode, I wanted to end and leave you with a thought, David, of what it would take to compete with Nvidia. My big takeaway from the TSMC episode was that’s a lot of things you’d have to believe about a government putting billions of dollars in and hiring all this talent. I was like what’s the equivalent for Nvidia?
+
+Here’s what you would need to do to compete. Let’s say you could design GPU chips that are just as good, which arguably AMD, Google, and Amazon are doing. You’d of course then need to build up the chip-to-chip networking capabilities like NVLink that very few have. You’d of course need to build relationships with hardware assemblers like Foxconn to actually build these chips into servers like the DGX.
+
+Even if you did all that, you’d need to create server-to-server and rack-to-rack networking capabilities as good as Mellanox who was the best on the market with InfiniBand that Nvidia now fully owns and controls, which basically nobody has. Even if you did all that you’d need to go convince all the customers to buy your thing, which means it would need to be either better or cheaper or both not just equal to Nvidia.
+
+David: And by a wide margin, too, to this brand you’re not going to get fired for buying Nvidia anytime soon. This is the canonical, you got to be 10X better than Nvidia on this stuff if you’re going to convince a CIO.
+
+Ben: Even if you got the customer demand, you’d need to contract with TSMC to get the manufacturing capability of their newest cutting edge fabs to do this 2.5D COWOS lithography and packaging, which there isn’t any more of, so good luck getting that.
+
+Even if you figured out how to do that, you’d need to build software that is as good or better than CUDA. Of course, that’s going to take 10,000 person years, which would cost you not only billions and billions of dollars but all that actual time. Even if you made all these investments and lined all of this up, you’d need to go and convince the developers to actually start using your thing instead of CUDA.
+
+Well, Nvidia also wouldn’t be standing still, so you’d have to do all of this in record time to catch up to them and surpass whatever additional capabilities they developed since you started this effort.
+
+I think the bottom line here is it’s nearly impossible to compete with them head-on, and if anybody’s going to unseat Nvidia in the future of AI and accelerated computing, it’s either going to be from some unknown flank attack that they don’t see or the future will turn out to just not be accelerated computing in AI, which seems very unlikely.
+
+David: When you put it that way, I think the conclusion that we can come to is that Marc Andreessen was right, in what year was this that we were talking about on?
+
+Ben: Was like 2015 or something?
+
+David: Yeah, 2015–2016.
+
+Ben: They should have put every dollar of every fund that A16Z raised into Nvidia’s market price of the stock every single day.
+
+David: Because they were seeing all of these startups doing deep learning, machine learning at the time, early AI, and they were all building on Nvidia. They should have just said no thank you to all of them and put it all in Nvidia. Mark is right once again. Strength-leads-to-strength. There you go.
+
+Ben: There it is. Well listeners, I acknowledge that this episode generalized a lot of the details, especially for technical listeners out there but also for the finance folks who are listening. Our goal was to make this more of a lasting Nvidia part III big picture episode than how did they do last quarter and what are the implications on that of the next three quarters. Hopefully, this holds up a little bit longer than just some current Nvidia commentary. Thank you so much for going on the journey with us.
+
+David: We also, as we’ve alluded to throughout the show, owe a bunch of thank yous to lots of people who are so kind to help us out, including people who have way better things to do at their time, so we’re very, very grateful.
+
+Ben: Ian Buck from Nvidia who leads the data center effort and is one of the original team members that invented CUDA way back when, really grateful to him for speaking with us to prep for this.
+
+David: Absolutely. Also big shout out to friend and listener of the show, Jeremy from ABC data, who prepared…
+
+Ben: Four PDFs for us?
+
+David: Completely unprompted. An insane write-up for us about a lot of the technical details behind this.
+
+Ben: Private blog posts.
+
+David: Yeah, private blog posts. Our Acquired community is just the best. You guys continue to blow us away. Thank you.
+
+Ben: Julien, the CTO of Hugging Face, Oren Etzioni from AI2, Luis from OctoML, and of course, our friends at NZS Capital. Thank you all for helping us research this.
+
+David: Indeed. All right.
+
+Ben: Carve outs?
+
+David: Let’s shift gears. Carve outs. What you got?
+
+Ben: My wife and I have been on an Alias binge.
+
+David: Oh wow. Yeah. Jennifer Garner?
+
+Ben: Yes. I never saw it when it came out. It is the perfect early 2000s junk food when you have one more hour at the end of the day and you’re just laying on the couch.
+
+David: Then I never have one more hour at the end of the day. I have a two-year-old. But I really appreciate it 16 years from now when she goes to college. I’ll keep that on my list.
+
+Ben: Oh you play games.
+
+David: That’s true, but that’s research. I’m just checking out the latest graphics technology.
+
+Ben: My review of Alias is, it’s a little bit campy. They repeat themselves pretty often. It’s weird to observe how much TV has changed between now and then, because they make very similar shows today. But they’re just much more subtle, they’re much darker, they leave much more to the imagination.
+
+In the early 2000s everything was just so explicit and on the nose and restated three times. I’m just glad the show doesn’t have a laugh track, but it’s well worth the watch. Sometimes, you have to imagine it has a different soundtrack because every episode has a Matrix-type song to it.
+
+David: That’s right. This is like the TV version of the Matrix, right?
+
+Ben: Yes, but it’s great. We’re having a lot of fun watching it.
+
+David: My carve out, related to my stage of life, also something I missed and discovered recently, we just watched our first full Disney movie with our daughter.
+
+Ben: Whoa, what’d you pick?
+
+David: A major milestone, and she freaking loved it. I think we picked a great one, Moana, which neither Jenny nor I had seen before. In reading just a little bit about it afterwards, you know how super sadly Pixar fell off in recent years? Such a bummer. They’re still Pixar, but they’re not Pixar.
+
+Ben: It’s not the guaranteed hit every time that it used to be.
+
+David: Yeah. Moana came out in this generation with Tangled and some of the other stuff out of actual Disney animation after the Pixar acquisition, that are just return-to-form Eisner era, Disney animated just fires on all cylinders.
+
+We loved it. We watched with our brother and sister-in-law who don’t have kids in our 30-somethings living in San Francisco. They loved it. Our daughter loved it. Highly recommend Moana no matter what life phase you’re in.
+
+Ben: All right, great. Adding it to my list.
+
+David: And it’s got the Rock. How can you complain?
+
+Ben: There you go. Well listeners, our huge thank you to our good friends at Blinkist and Go1, at Statsig and at Crusoe. All the links to all of those phenomenal products and offerings are in the show notes.
+
+If you want to be notified every time we drop a new episode and you want to make sure you don’t miss it, and you want little hints to play a guessing game at our next episode, or you want follow ups from our previous episode in case we learn from listeners, hey, here’s a little piece of information that we wanted to pass along. We will exclusively be dropping those in the email, acquired.fm/email.
+
+David: It was so fun. I think you’re about to talk about our Slack. It was so fun watching people in Slack talk about the hints for this episode. We wrote the little teaser and I was like, oh, everybody’s going to know exactly what this is.
+
+Ben: No one got it. I was shocked.
+
+David: Eventually somebody did, but it took a couple of days.
+
+Ben: Yeah. We have a hat. You should buy it. This is not a thing that we make a lot of margin on. We just are excited about more people sporting the ACQ around. Participate in the movement, show it to your friends.
+
+David: It’s not our SuperPOD, but, you know.
+
+Ben: Yeah.
+
+David: The pod is the SuperPOD.
+
+Ben: Become an Acquired LP. You can come closer to the kitchen and help us pick an episode once a season, and we’ll do a Zoom call every other month or so, acquired.fm/lp. Check out ACQ2 for more Acquired content in any podcast player, and come talk about this in the Slack, acquired.fm/slack.
+
+Listeners, we’ll see you next time.
+
+David: See you next time.

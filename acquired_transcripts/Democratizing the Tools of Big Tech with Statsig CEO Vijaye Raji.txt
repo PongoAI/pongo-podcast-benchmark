@@ -1,0 +1,557 @@
+David: Hello, LPs. We are here with a very fun episode at the beginning of 2023 with Vijaye Raji, the founder and CEO of Statsig and before that, formally a very, very senior executive at Facebook, so senior in fact that you are the most senior person in Facebook, Seattle where you were head of entertainment for all of Facebook and concurrently head of the Facebook Seattle office.
+
+We have a lot of fun stuff to talk about here. Welcome to the show.
+
+Vijaye: Thanks for having me, Ben and David.
+
+Ben: It's our privilege. The thing that I'm really excited to talk about today is you worked at Microsoft before Facebook. We share that in common. You were an engineer there, and you worked purely on technical problems.
+
+Then, when you went to Facebook, obviously, you had a business role and an overview over a lot of very important products for Facebook strategically at the time. While you were a site lead for Seattle, about how many people worked in the region?
+
+Vijaye: When I was leaving Facebook as the head of Facebook, Seattle, we had about 6500 people in the region. It's Seattle and Bellevue all combined together.
+
+Ben: Your roles escalated from technical problems to human problems and lots of scale problems, and then you left to start Statsig and decided to go from one of the biggest roles in our industry to one of the smallest. I think a big crux of what we're going to talk about today is your calculus for that decision, what surprised you, what you've liked about it, and what you wish you knew if you could go back and do it again.
+
+Vijaye: It was quite a journey, and I'm excited to talk about all of it.
+
+Ben: At the tip of the spear here, I want to talk about something that came up on our prep call that I know you feel very strongly about. You are an in-office person. Maybe tell us a little bit about how Statsig operates. We'll get into the business, product, and what you guys build later, but what does your culture look like?
+
+Vijaye: This is very interesting because we started our company, Statsig, in the middle of the pandemic. This was February 2021. We decided, hey, this is early days. We have seven people, so let's get an office, get together, grab some whiteboards, and get started.
+
+What started that way led to me believing that it is going to be important to be in person to make decisions very, very quickly and to move very fast. We started seeing people also opt into an in-office culture, so we started hiring people with like mindsets.
+
+I decided, let's keep going. As long as we can hire people that want to be in the office, we will be in good shape.
+
+Ben: You started with a pretty serious critical mass. There were eight of you who all left Facebook to start the company together, right?
+
+Vijaye: That's right. We all left on the same day, and we started the company the very next day.
+
+Ben: It's awesome. You're 55 people today all in person?
+
+Vijaye: Probably 56 because we hired someone yesterday.
+
+Ben: Nice. There are lots of benefits to being in person. How do you think about the set of trade-offs you're making, and why?
+
+Vijaye: Choosing to be in person is a big trade-off, especially in this weather and climate where people are expecting to be remote or at least hybrid.
+
+There are lots of folks that I would have to say no to because they want to be remote. These are world-class engineers, data scientists, and product managers that I am saying no to, and that's a big negative.
+
+I do strongly believe that culture drives a lot of what you do on a day-to-day basis, including how fast you move. When I was at Facebook for 10 years, Facebook was one of the strongest engineering cultural companies.
+
+When I think about what the definition of culture is, it's a set of unwritten rules that you absorb by observing. It's literally like you have to see other people do things a certain way, talk a certain way, use tools a certain way, and build a relationship a certain way, and you absorb that. You think, okay, this is the right way to do it.
+
+If you start writing it down, then it becomes a set of rules. It loses its magic. I feel like when you're in the office, you're able to absorb that much faster than when you're on Zoom calls.
+
+Ben: You guys are truly five days a week, and everyone is physically present. Do you think that that is more important for a company of your stage that is right around this product-market fit precipice than it is for a bigger, more established company?
+
+Vijaye: I think so. It was a fun story. When I was on Facebook, Seattle, Seattle was the epicenter of COVID.
+
+We have this process called boot camp at Facebook where you go for six weeks and get a lot of orientation and cultural assimilation at that point. We started doing it all remotely. That worked. The reason why it worked was because a lot of processes, tools, documentation, and materials were there, and we could onboard people. I think about how something like that would happen at Statsig when you have absolutely nothing. We have not written down anything.
+
+David: Facebook probably has at least a thousand people just in HR alone.
+
+Vijaye: Right.
+
+David: This is just a specific example of the conversation about leaving Facebook to start a startup. Given where you were at Facebook, think of a few examples—I won't say names—of similarly senior executives at the top five big techs, broadly FANG-type companies who then leave and start a startup. They run the startup like they ran their division at a big tech company. They're in a big fancy office, and they do all this stuff.
+
+Those startups never work. I'm curious about any general thought process about leaving and starting Statsig. Given the decisions you've now made, clearly, you didn't want to take that approach. You're taking a very different approach at Statsig.
+
+Vijaye: Yeah. We're very scrappy, so much so that I annoy our people. When I joined Facebook in 2011, Facebook was still considered a startup. There were about 1500 people, and there was a lot of scrappiness in there. Things were not quite as well.
+
+I moved from Microsoft. We're at that point probably 80,000 or 90,000 people where you walk into a meeting room, the conference room is all set up, there's a big screen, there are devices on the table, you press a button, and you get connected to your video conferencing.
+
+Ben: Real estate and facilities may have even worked with catering to have the drinks ready for the meeting.
+
+Vijaye: I know. Then, you go walk into a startup. On the first day, we have to put together desks because we don't have desks. All we have is a large office room. I think a lot of that came from the good, old days of a startup starting to imagine what was the snapshot of how I felt when I walked into an early, early Facebook office. I'm just trying to recreate a lot of that from memory.
+
+Ben: In 2011, did Facebook still have elements of that?
+
+Vijaye: Yeah. There were only—at that time—600 engineers, and we had 2 offices in Palo Alto. I remember going to the Palo Alto office, and then I also remember doing boot camp in a boot cave. There are no windows or anything. They put all the boot camp folks in the boot cave. It was very small, very scrappy, and moving very fast, so a lot of going from a large company to that kind and then actually scaling it down all the way to eight people.
+
+David: Because even that's a difference than certainly 1500 or 600 people.
+
+Vijaye: It really is. I wouldn't say I had it all right as a lot of mistakes I make, but there's an element of what you're describing. You need to definitely leave behind the comfort of, oh, yeah, everything is already done for you.
+
+A really good way to think about this is a large company where you start up a project as something you spin up a virtual machine on AWS, whereas a company that you started on your own from scratch is like, okay, you take a blade server, connect your Ethernet cable, and update your OS to make sure the security and firewalls are all fine.
+
+Ben: You identify the best colo in your area that you can drive to easily to do the maintenance.
+
+Vijaye: Exactly. That's a big difference. There's no facilities team, there's no recruiting team, and you don't have a bunch of people waiting to join your project. You have to figure all that out including janitorial, when the trash goes out, and how many trash bags we have to buy. I'm not kidding.
+
+David: Maybe I'm wrong, but I'm assuming that the decision to do this wasn't because you wanted to take out the trash, but because you thought, hey, it's going to be worth it for me to go back to taking out the trash to do something.
+
+Vijaye: Definitely. The decision process is a lot about you, your family, your life situation, and then what you want to do next. As I thought about 10 years at Microsoft, I learned a lot about software engineering.
+
+Ben: That was 2001–2011.
+
+Vijaye: Yeah. I was a compiler engineer, so I was working on language services in Visual Studio. I wanted to do a lot of hardcore coding, and that's what I did at Microsoft.
+
+Then, I went to Facebook. At that point, it was a big jump going from a large company to a small company with lots of ad hoc processes. I just happened to work.
+
+Ben: Were you a manager at Microsoft or literally just an IC engineer?
+
+Vijaye: No, literally an IC. Even at Facebook, for four or five years, I was an IC and then decided to become a manager. It was an interesting journey. I started learning about businesses, people, and people management. There's a lot to unpack there. That was 10 years at Facebook where I was able to go try out various things, expand my comfort boundaries, and add value.
+
+Ben: Just so listeners get a sense, you mentioned compilers at Microsoft. What were some of the products that you led at Facebook?
+
+Vijaye: It was completely different. When I started at Facebook, I was working on Messenger. I was building a new client for Messenger. That was in a web climb back in the day. We didn't have a mobile app.
+
+David: HTML5.
+
+Vijaye: I know. What was fascinating was that we put a link on the site. It was a tiny link on the site on the Facebook homepage. All of a sudden, I saw the very next day that we had more users than MSN Messenger. MSN Messenger was the biggest client at that time. I was blown away. How is this even possible? How powerful a link on the homepage is, you get to learn that.
+
+Then, I went on to do some ads. I built the first app install ad product on Facebook. That was a pretty interesting jump because that was the first time I did mobile in taking desktop traffic to mobile and sending people an install link.
+
+Ben: That was when Facebook discovered its business model for [...]
+
+David: That saved Facebook.
+
+Vijaye: A little bit. The mobile app install ads took off. I was so lucky to be at the right time and the right space and just be able to bridge the gap that everybody was feeling the pain. The sales team just ate it up. They just took and sold it, and that became a billion-dollar business in 14 months. I was blown away.
+
+We had six engineers. We used to joke, per engineer, in terms of net revenue, this is probably the highest that we've ever seen.
+
+David: Were all six of you in Seattle?
+
+Vijaye: Yeah. All six of us built the team in Seattle.
+
+Ben: That's a good challenge for listeners. If anybody can think of a better example than $1.4 billion of revenue from six engineers, we'd love to hear it.
+
+Vijaye: This was when we were building on top of the existing ads platform and the existing newsfeed, which was the distribution model. We're building on top of abstractions. Those were all done before us in order for us to come in and build that product.
+
+After that, I started expanding that particular product into an ad network. That was Audience Network. We built and shipped Audience Network, and that also became a competitor for DoubleClick from Facebook.
+
+David: Can I interrupt you for a little digression? I didn't realize that your team had built the app install product. How did that start? That was such a non-obvious thing. The App Store should have done this and completely whiffed in not doing it, and then Facebook took this ginormous market. How did that all come about?
+
+Vijaye: It's an interesting digression. The thing that I was trying to do was to take desktop traffic and then send them to mobile. We were working on figuring out how to get people to install our Facebook app.
+
+The way we were doing that is to send a link to the App Store. As we were doing that, we figured out that we could potentially send a link to the Facebook app itself. Imagine you're on the browser, you click a link, and you get a notification on your mobile app. That was the thing that I was trying to solve.
+
+We call that send-to-mobile. It's literally a push notification that you can trigger from your desktop browser. Once you got the idea of, oh, what if we could do an ad not just for the Facebook app but for other people to install because then on the mobile app, you could redirect them to the App Store, once you connect the dots, you're like, okay, I guess we have an ads product here.
+
+The next step was, okay, instead of even using the desktop app, let's move the ad to the mobile app itself and then redirect people to the App Store because we do have a lot of user information and user interest. They show interest in a specific app or game. We can use that to show the right targeted ads. That was the sequence of how we actually got to the app install ads.
+
+David: It was so cool that it was organically product-driven. Mitch Lasky and Blake Robbins are doing this great history of the gaming industry podcast called Gamecraft. Their most recent episode talked about all this. You look at it strategically and you're like, oh, there's this huge strategic reason and business opportunity of all these mobile game developers needing to get app installs, but this was a product-driven thing.
+
+Vijaye: The product drove it, but there was a demand.
+
+Ben: In the use case, you were not trying to solve this problem. You invented a technology that was trying to solve a different problem and then repurposed that technology to build an ad platform.
+
+Vijaye: This is why I say we were super lucky. I was super lucky to be at the right time at the right place because there was an existing demand for not just app install ads but mobile ads.
+
+At that time at Facebook in 2012, we were figuring out how to get mobile to monetize because if you get more and more people on mobile and you're not showing ads, you're actually losing revenue. The biggest thing that everybody was trying to figure out is how do you monetize mobile, and here comes a technology that is like, oh, look, we can actually drive installs.
+
+The equation is as long as these installs cost less than the lifetime value of the user on the app—even $0.01 less—people will use this forever and infinitely.
+
+David: It turns out the LTVs of some of these users can be a lot of money.
+
+Vijaye: A lot. The game developers were the first ones to adopt this, so it was great. I got to learn about the sophisticated mobile gaming industry where everything is driven by data. I was so fascinated by that.
+
+That was a combination of a set of things. The demand was there, the idea was there to monetize mobile, we were figuring it out, and then I was able to connect a bunch of this stuff together.
+
+David: And the technology and product were there.
+
+Vijaye: Right. That just blew up. I would say that that was one of the seminal moments of my career where I was able to see a lot of the business side of things and the way you take a product, and that turns into a real revenue stream for the company that hits the bottom line, which was great.
+
+That propelled me into, okay, now that I was able to go and get projects, I want to go build an ad network. Let's go build it. A lot of that reputation comes from a few successes. You build on top of that, go and establish if you have new ideas, and explore those.
+
+Ben: How did that lead to you running a lot of the media products at Facebook?
+
+Vijaye: There's absolutely no connection. I was doing an ad network, and then about three or four years in, I was like, I want to do something different than ads. That was literally a motivation. I want to go do something different than ads.
+
+Deb Liu, who was my product manager at that time, was the PM, and I was the engineering lead. She was always wanting to do a marketplace, so we were like, okay, let's go build a marketplace for people where people can buy and sell on Facebook.
+
+David: I was literally on Facebook Marketplace this morning right before we recorded.
+
+Ben: Me too. I've been looking for a new car.
+
+David: I was looking for a rug.
+
+Vijaye: It's so awesome because what we saw there was this organic intent. People were buying and selling on Facebook without us even building a product around it.
+
+If you think about groups like Buy Nothing and Swaps, there were so many of these things that were cropping up in every town. We noticed that there's an opportunity here for us to actually open this up and build a marketplace, so we literally built Marketplace. That was also the Seattle team. The team that built that Marketplace as you see it was an entirely Seattle team that I gathered together in Seattle.
+
+David: That's got to be a huge portion of Facebook's traffic now, right?
+
+Vijaye: Yeah. One of the things that really helped Marketplace was we got a tab. Getting a tab on Facebook is really, really hard because there are so many products competing for a tab. Marketplace and Video were the two that were first tabs. When the tab arrived, Marketplace just took off. The number of people buying and selling was just...
+
+Ben: Are the tabs static, or do I see different tabs depending on what experimentation group I'm in?
+
+Vijaye: It's dynamic. It's not about experimentation group. It's about what you use frequently.
+
+Ben: Interesting.
+
+Vijaye: It's personalized.
+
+David: Marketplace for sure.
+
+Vijaye: That was fascinating, right? Marketplace was just growing, and we were building a large org that was the engineering lead for the large orgs. I think at some point, I probably had a couple of hundred people in my org.
+
+At that time, there was a push to consolidate a set of products from Platform at that point. The gaming was actually part of Platform. Gaming at that point was all about—if you remember—Canvas games, Flash games, Mafia Wars, FarmVille, and things like that. Flash was dying, and there was really nowhere to go other than having everyone update their games to HTML5, and so on.
+
+Gaming was trying to pivot and figure out what to do next. I saw that as an opportunity. I was like, okay, I want to go solve that problem. I left Marketplace, and I picked up gaming. At that point, I also went from an engineering lead to a product and engineering lead, so taking care of the P&L and the business as well.
+
+That was also interesting for me to learn a lot on the business side of things, but gaming was also something that I thought needed help and some push. Somebody needed to just keep it going because I thought it was a very important segment that we should not forget.
+
+I went and invested in gaming. At that point, we invested in gaming videos. Twitch was big, people were watching other people play games, and then we were trying to revive some of the Canvas gaming on HTML5 on mobile, so we built this thing called Instant Games.
+
+That was another 1 ½ years. As I was building it, my manager was getting a promotion, and she wanted me to pick up the rest of the stuff that she was holding onto. This is Fidji Simo. She was the head of entertainment and monetization at that point.
+
+Ben: Fidji went on to become Instacart's CEO.
+
+Vijaye: Yeah. Fidji went on to run all of Facebook app, and then after that, she's now the CEO of Instacart, and she's just killing it there. When she was going to go become the head of Facebook app, she asked me if I would take over all of entertainment. That meant Video, Live, and then any investment that we're going to go, make it music, movies, and so on.
+
+That's how I picked up all of entertainment. I invested in a lot of things around premium music videos, a bunch of sports, and also if you are watching Stephen Colbert clips and stuff, those are all my investments in entertainment.
+
+Ben: How did you start to see the opportunity for what would eventually become Statsig? Maybe give us a little bit of background on the incredible amount of internal tooling available to Facebook engineers.
+
+Vijaye: This is a really good question. If I were to think about my transition from Microsoft to Facebook, I told you that I learned all of the software engineering at Microsoft.
+
+What I learned was the waterfall model where you have a product manager that goes and does some research and writes a design doc and what the product should look like. The engineers or the architects will come in and write up the architecture design doc, and then there will be some milestones of coding. People will code, and then there'll be a stabilization milestone where they'll toss it over to the QA team, the QA team will test it and file bugs, and then you fix the bugs. This iteration happens three or four times.
+
+David: And then you send them to the manufacturing where they print the discs and ship them to [...].
+
+Vijaye: And then it sits on Best Buy shelves or goes to the OEMs. The CDs go out. The whole cycle takes 2–3 years, and then when you're done, you increment the version. You go from V0 to V1 to V2 to V3. The cycle happens, and it works.
+
+Ben: It's a miracle of modern humanity that a 5000-person organization can hit a ship date defined three years earlier all at the same time.
+
+Vijaye: It is a major feat. If you actually think about it, all of that process started from hardware. Hardware is still operating the same way, so a lot of the processes we just borrowed from hardware engineering.
+
+Going from there to Facebook, on day one, I was given six tasks in production, and then I had the entire Facebook running on my laptop. I had to go figure out those bugs, write some code, and send out a diff. Someone accepted my diff the next day, and I said, okay, committed.
+
+I don't remember the days, but a couple of days later, my code hit 600 million people, and I was like, something's wrong. This can't be true. This should not be true. If this was the case, nothing should ever be working. The site is going to come down at any moment now.
+
+There was a lot of disbelief that this could even work. I thought this was completely crazy. At any moment, something's going to break because it goes against everything that I've learned. But that never happened. Things never broke, and things continued to work.
+
+David: Despite the company's motto in those days.
+
+Vijaye: The idea is that if you're moving really, really fast and even if things break, you can fix those things fast. That is better than moving slowly or deliberately. It worked for the time when we were that small and growing really fast.
+
+It's so much so that I thought shipping every week was crazy. About a couple of years later, they actually changed that to shipping every day. Another six months went by and then, oh, we're going to ship two times a day because there's a London office and they want to ship as well. Code goes out two times a day. A year later, they changed that to code goes out continuously. Any code you write and ship instantly hits 3 billion people. That's nuts.
+
+Ben: I could see how that could be a problem or could create a problem.
+
+Vijaye: It definitely would. This is my fascination. I was like, okay, when you come in from a different perspective, start to understand how this works, and start to appreciate all the tooling behind this to keep everything working, when you distill it down, it boils down to a set of tools that someone had the foresight to invest in and the infrastructure long before I even arrived.
+
+The fascinating thing is that most of the folks that go straight from college or another company to Facebook take it for granted. They don't understand.
+
+David: This is how you produce software.
+
+Vijaye: This is how you do software. When you come from a different world, you have that perspective. You start to appreciate it and want to really understand how this thing is going to work. How is this held up? That was my fascination with the tooling behind all of the things that we had at Facebook, the tools that allow you to control the release of features.
+
+They literally decoupled code shipping from feature shipping. That is controlled by this thing called Gatekeeper. In real-time, you can turn on or turn off features for very, very, very specific sets of folks. You can turn on features to only Washington State or to Seattle folks.
+
+A lot of times we turn on every feature to New Zealand because it's English-speaking. You don't have to invest in localization. Even if things break, it takes 12 hours for the new cycle to hit, so we can fix things.
+
+Literally, those are the kinds of conversations, but you have to know that if you open up Facebook, there are about 600, 700, or 800 features that are lying dormant in that app that could be turned on anytime when the team decides that it's actually the right time to turn it on. They may be testing it.
+
+Ben: That's a paradigm shift, the notion of code ships but may not be active. That really is what enables all sorts of interesting on-the-fly and very targeted experiments to happen. It's like, look, all the code is in production, but most people are just having the same experience they've always had.
+
+Vijaye: Exactly. That's the foundation of this new paradigm of software development. Once you understand that, then you start to build on top of that. Facebook did. Most of the industry is still figuring out feature flags which is like what this is. We call it Gatekeeper at Facebook.
+
+What Facebook did was we invested even further. Beyond just being able to control a feature, you could also measure the impact of the feature. When you launch it to just 1% of the population, there's 99% of the population that doesn't see the feature which means you've already created a set of a split of the metrics and the behavior of the people that see the feature. Comparing that with the people that don't see the feature, you can find statistical differences.
+
+When you're able to find statistical differences in metrics, you can quantify the impact of that feature. This literally tells you, okay, this particular feature that I invested so much time and effort in is actually going to be beneficial for the users or not. If yes or no, by how much?
+
+That makes you take data-informed decisions about, should I ship this thing, should I continue investing in this thing, or should I roll it back? This is the crux of the cultural shift of software development where people no longer are interested in just shipping code or shipping features, but they're interested in quantifying how well the thing that I worked on is improving people's lives.
+
+Ben: If I think back, in order to be able to do this there's not enough integration to pull it off as a startup typically. You've got some analytics package on your website, Google Analytics in your product, and Amplitude, and then your whole engineering stack is pretty disconnected from whatever your analytics stack is.
+
+Even if in your engineering codebase, you have a good system for turning on the ability to just show something to 1% of the users, it's pretty hard to then tell your analytics, hey, I need you to segment out all these users and treat this as an experiment so that I can learn from it. I can see why having a big internal team at Facebook is helpful for creating that end-to-end platform you need to actually make sense of this.
+
+Vijaye: Yeah, exactly. If you don't connect the product metrics back to the features and provide a causal direction as to why is my metric doing this like, oh, it's because this team shipped this feature to this set of population, then it's extremely hard. You're looking at graphs and trying to make sense of them without the tool telling you exactly what really happened.
+
+That's the important part. There are tools out there that will tell you. Amplitude is a great tool that'll give you product analytics. There are tools out there that will do feature flagging, but when you connect those two things, it's where the magic is. Obviously, you have to do the causal analysis and actually be able to point out this is the reason, the root cause analysis.
+
+That's the power that we had inside Facebook. That's when I started thinking about the perspective like, okay, outside of Facebook in the industry, there are not very many tools like that. There are A/B testing tools, but you have to really know what your hypothesis is, build the A and B variants, put it out there, and then have your data science measure, go debug, and all of that stuff.
+
+That takes a long time. Most people will run one or two A/B tests for whatever the critical features are, whereas what we were able to do inside Facebook is every single code change, you have a metric associated with it. You have not just one. It's a set of metrics. These are business-level and business-critical metrics.
+
+David: Do you know roughly how many engineers at Facebook are dedicated just to infrastructure like this?
+
+Vijaye: A lot.
+
+David: I'm imagining a couple of thousand probably.
+
+Vijaye: Yeah. The other interesting thing that I also noticed is that the best engineers at Facebook want to go work on the infrastructure side of things including the developer infrastructure. Usually, my experience before that is everybody wants to be in the customer-facing team. The internal tools team is not quite as sexy or magical.
+
+David: But it flipped at a certain point.
+
+Vijaye: It did. Most senior engineers gravitated towards solving these scale problems and internal developer problems. You can see and tell the difference in the quality of the stuff that comes out of the infrastructure team on Facebook. It was just ridiculously good.
+
+David: Clearly, there's a product opportunity and probably a business opportunity around this. What made you think that you're like, okay, we can go start a new startup and create this? This seems really hard.
+
+Vijaye: For the opportunity, once you start examining the industry and what is the market potential for something like this, there's a lot of analysis there. Let me also say that anybody that is doing a startup, there's a little bit of crazy in them. There's a crazy bet. If you're entirely rational and constantly doing what is my expected outcome, if you ever do that math, nobody should ever start startups.
+
+Ben: Of course, the expected value is the probability of success multiplied by the magnitude if you are successful, and the probability of success is unknowable, but it's probably pretty low.
+
+Vijaye: It's very low. If people are rational, everybody should be joining large companies. Nobody should be ever doing a startup. There has to be some amount of craziness. Along with that, there's some amount of blind faith as well. You can do as much market research and convince yourself that there is a market out there, but there's an element of, you know what, I believe in this so strongly that I'm willing to give up whatever that I have to go do this crazy thing.
+
+A lot of things came in together. Part of it is I have two kids, and they're grown up. There wasn't ever a good time for me. We had the first one, and I was like, okay, maybe when our firstborn grows up, I can go. Then, we had our second one, and I'm like, okay, we'll just reset the timeline.
+
+You also have to consider financial utility. You don't want to put your family at risk. Once you have two kids, you're like, I don't want to go without salary for a while until you save up enough. Now I have some cushion that I could go do something crazy.
+
+A lot of factors come into play. Secondly, I was 10 years at Microsoft and 10 years at Facebook. What am I going to do next? I don't really want to go work for a large company. It became like, okay, this is my last shot at going and building a startup. Otherwise, in the next 10 years that go by, I may not have the energy or the capacity. That was all the combination of that plus a strong idea that made me go do this.
+
+Ben: Did the desire to do a startup come before the idea, or was the idea so good that you were like, I got to chase this?
+
+Vijaye: The desire to do a startup came first. It is one of those things where you're like, okay, there's a part that comes from your heart, which is I will regret it if I didn't do a startup. That part was always nagging.
+
+Then, the idea came from the brain. It's logical. It's like, okay, if I were to do a startup, what is the maximum probability of success? Let's go pick that one.
+
+David: I love that. Marriage of the brain and the heart. The first part of the decision matrix you're talking about there on the family side, just because I'm in this too, I now understand in such a real way that when it's academic, it's very different than actually raising a kid. How old was your youngest kid when you decided, okay, I'm going to go do a startup?
+
+Vijaye: Four.
+
+David: That makes sense to me.
+
+Vijaye: She's now six. That's been two years in this journey of Statsig. It'll be two years in about two weeks, so I'm excited for this podcast to go live with that.
+
+Ben: We'll commemorate your anniversary.
+
+David: Before, I was like, I can do a startup. Now I'm like, this first year, especially two years, you can, but you probably shouldn't.
+
+Ben: Or you could probably do podcasting.
+
+Vijaye: That's why you see a whole bunch of people. It's so much easier. You're straight out of college. There are not very many responsibilities in a way. You're almost free to go explore, and there's not very much to lose. Then, there comes a point in time where you've gathered a set of commitments and responsibilities, so you have to make sure those are all taken care of.
+
+In a way, you've gathered experience and connections that come in handy when you're doing the startups. That's what I'm noticing. The benefit of me out there building the stuff is I have gathered 20 years of software building, people coaching, growing, and scaling, a lot of experience that I wouldn't have had if I had done something like this early on.
+
+Ben: I want to take us into the product itself of Statsig. You were witnessing a wide variety of amazing tools built by some of the best engineers in the world at Facebook. How did you analyze what subset of these tools can solve what specific problem that was in starting a new startup in the world?
+
+Vijaye: When you're trying to think about what to start with, this is not where you would end with. Where you start is important because you want to understand what is the friction to adoption. What is the wild moment? How soon can we bring the wow moment to the people? The quicker you can, the faster the adoption is and the more traction you'll get.
+
+For me, Gatekeeper was the simplest thing to help people understand, and it also applies to everyone. It doesn't have to be a specific industry and a specific stage in the startup. It applies to everyone. Most people when they look at it are like, okay, I understand the value of this.
+
+That's where we started. We started with just feature gates where you can control the release of your features and decouple your code releases from your feature releases. Very simple and very good value proposition.
+
+Then, once somebody has a feature gate installed for us to provide more value by actually showing the metric impact, that's what we did next. Organically, we built. I got to tell you. It was nerve-wracking. I can tell you that this is the sequence that we took, but when we were doing it, there was a lot of doubt.
+
+It was something that I guess all founders and all startup teams go through where for the first four months, you're building in a vacuum. Nobody is telling you, this is what we need. A lot of it is coming from intuition. A lot of it is like, okay, we think this is what people want, and then build it and pray and hope that if somebody really wants that, we try really hard to get people to give us a shot. We wanted to give it out for free so we can get some feedback. We were looking for design partners, and nobody came, so I would say six or seven months in, that was the lowest point in our startup where we started to doubt if this is really even going to work.
+
+David: What did you do at that moment in time?
+
+Vijaye: I was talking to everyone. If I can get someone on a phone call or a Zoom call, I would. Hey, try this out. Have you used this other competitive tool? We can do the same things, and we'll give it to you for free. You try every approach that you can.
+
+David: I'll come to your office and install it for you.
+
+Vijaye: Yeah. We'll do hackathons and code up for you. If there's a specific feature that you're using, a competitive tool, we'll just go build it for you. It's nerve-wracking. If you've heard of the startup depth, I would say we were at that depth, or we're starting to really wonder if this is going to take off.
+
+At this particular moment, there was some traffic coming from Indonesia, Singapore, and Southeast Asia. At first, we were like, is it some sort of someone trying out from there and using our SDK? Then, the traffic started increasing. We thought, oh my God, somebody's trying to DDoS our system, and then we realized nobody even cares about us, so why would they DDoS our system?
+
+What happened was an ex-Facebook engineer built an app in Singapore to order food—this was during the pandemic—over WhatsApp that uses our feature gating system. That was an ex-Facebook engineer. I was like, oh, interesting.
+
+David: That could be a good target market.
+
+Vijaye: Exactly. We're like, if anyone left Facebook to go join another company, I'm pretty sure they're missing the tools that they had access to inside Facebook, so let's actually sell it that way. Let's go and find all those folks. It's so much easier to sell. This is exactly like Gatekeeper.
+
+David: You've got the shared language.
+
+Ben: There's no market education.
+
+Vijaye: Our first contract came from Headspace where an ex-Facebook product manager was the head of product. He's still the head of product at Headspace. He was like, yeah, this makes sense, so let's give it a shot.
+
+I'm so grateful for that first contract that we had from Headspace because that really gave us a legitimate reason to be alive and validated some of the early, early hypotheses we had. Since then, we've had a couple of hundred customers now, so we're pretty on our way, and we're building more and more.
+
+This time around, we always listen to our customers. They can tell us what they want instead of us building in a vacuum. That's a big difference
+
+David: Leading up to that dip before the WhatsApp food ordering in Singapore, had you raised money? What set of stakeholders did you have to worry about?
+
+Vijaye: Again, I was very lucky in this respect. This is part of being in the industry for a couple of decades. You build connections, and people help out.
+
+Mike Vernal who was my manager at Facebook had left and gone and became a GP at Sequoia. He and I chatted a few times even before I really started Statsig. He was very excited about this idea of the developer tools bringing it out. I got to say I'm very grateful for him to believe in Statsig to invest the first check. That's how we were able to hire people and start building this stuff. In a way, we thought about this as a seed investment. Let's actually build what we believe is the product. Then, we built it.
+
+The good thing for us is we didn't have to design it. There's a lot that we already know that we had to go build, so it was easy for us to just get started and run fast.
+
+Ben: I think there's an interesting Rorschach thing going on with the way that you just described this journey. If someone wanted the confirmation bias of I'm a visionary, they could totally interpret everything you just said as, well, they went and built it in a vacuum because they knew exactly what to build. They went heads down for months, shipped it, and then worked with customers who clearly wanted what they had.
+
+But if you have a lean startup methodology and you're looking for confirmation bias on that, you can also listen to what you just said and say, well, they were aggressively pounding down the doors of anyone who would listen, trying to work with design partners, and coding stuff up specifically to what customers were asking them for.
+
+In this holy war of lean startup versus Steve Jobs, where do you think you actually put the truth of your approach on that spectrum?
+
+Vijaye: I am so far away from Steve Jobs. I often appreciate that when what you believe actually goes wrong and you're not attached to it, you have the humility to say, okay, I was wrong. I'm going to drop that and then go build.
+
+I didn't go into the details. There are so many things that we built, shipped, and then killed, and that's okay. I would any day take someone that tells me, okay, I want this, or I don't like this. That feedback to me is extremely important. In fact, so much so that that is the ethos of Statsig. It's about iterative development.
+
+At Facebook, 80% of the code that we wrote was not working the way or didn't do what we expect it to do, so we always have to rewrite the feature, rework it, or just plain throw it out. When data is making those calls, it's a cultural element of you don't get attached to what you write.
+
+I know that there are people out there that are visionaries with amazing product intuition that could probably say, oh, yeah, this is what we're going to go build. We're going to build it for the next two or three years, and I'm going to ship it. Steve Jobs does it.
+
+David: There are people who could do it.
+
+Vijaye: But I think it's very rare. The majority of us would benefit from actually iteratively developing. Take the next step and figure out if it's actually the right step. If not, course correct, and then change the direction.
+
+Ben: How early could you start self-hosting during the development of Statsig? How early when you guys were coding up Statsig could you start using Statsig to make decisions about if customers wanted that feature of your product or not?
+
+Vijaye: We were using Statsig from day one, not for making product decisions but for gating features. As we were in development, features may not be fully done, so it's gated out. We will do dogfooding to make sure that there are no bugs and such, and then we roll it out.
+
+A lot of times, the understanding of the impact is important, but even before that comes, you want to catch big, major issues, big interactions, side effects, and bugs. When you line something and open it up to 1% or 2% of the population, if there are bugs, you'll immediately notice that something is tanking or some metric is destroyed. You want to pause the rollout or roll it back, and then go fix that issue.
+
+We used to Statsig the entire time from day one.
+
+Ben: It's cool. What are some of the cool stuff you can do once you have that infrastructure of basic feature flagging built? I assume that in talking with these hundreds of customers now, you're getting all sorts of crazy ideas of new abstraction layers you can build on top of it.
+
+Vijaye: The most important thing is if you are constantly measuring. Let's take an example of observability. When people talk about observability, companies like Datadog have made it extremely easy for you to identify an issue that happens in 1 server out of 100,000 servers in real-time, be able to go fix that, and then identify and take away the problem.
+
+Ben: That's like fixing your infrastructure.
+
+Vijaye: That's the infrastructure side of things. But when it comes to product, we're still in the stone age where we bundle up a bunch of features, and then we launch it as a version. You put it up on the App Store, and then you wait for adoption and critical mass adoption to happen. You have some data scientists go back, be like, okay, what date did the product launch, draw a vertical line in the graph, and then see, did any of my metrics change, or is there an inflection in the trajectory?
+
+That's super not scientific. I think where the immediate thing once you have feature flags is to be able to—with precision and confidence—tell which of my 10 features that I launched yesterday are impacting what metrics and by how much. That is incredibly valuable. That's what we call product observability. You observe and understand what your product is doing without any doubt and confusion with the causal prediction. To be able to go and say, these four features are actually tanking our revenue, let's turn it off, and then immediately get the revenue boost that you were missing is important.
+
+The next step is to be able to identify anomalies. Outliers are an important aspect of debugging. Imagine you shipped and your registration flow and the number of conversions have gone up by 5%. Everybody's happy, and everybody's celebrating. That's the average number.
+
+What if a tool can tell you that even though the average is 5%, on Android devices that have screen sizes smaller than 5-inch, you're actually seeing a 20% drop in your registration conversion? That's an outlier. How would you even know to ask that question?
+
+The tools should be able to identify that anomaly or outlier and tell you. Just like Datadog is telling you which server is running out of memory, we should be able to tell you the product with precision. Those are the kinds of things that we're building and investing in.
+
+Ben: When we did our big episode on Amazon, I got deep into the perf engineering blogs of some of the engineers who worked on the site in the late '90s and early 2000s. This was one of the big things. They had a vendetta against averages because averages hide the distribution. How do we figure out that we didn't make something less performant for a potentially very important segment of ecommerce customers when all the numbers look good overall?
+
+Vijaye: Exactly. That hits the nail. The idea of being able to identify these outliers, and then bring them to the product team. The whole idea is to bring all that data to you so you make data-informed decisions. At the end of the day, the decision is still for the product team. Sometimes, shipping it will continue to make sense because the trade-offs are worth it.
+
+Then, taking it even further, once you understand the outliers, can the system automatically roll back? You can set guardrails and say, I don't ever want to ship anything that will tank my retention metrics by more than 5%. I set a guardrail, and 5% is the range that I'm willing to give up. If it goes beyond that and the system can automatically roll back that particular feature, those are powerful. Now we're talking. Now we're in the real observability space.
+
+That's why we're taking our product. We're building a lot of real-time analytics. We're building a lot of guardrails, alerting, and notifications, and then eventually, we want to get to automatic rollouts and then rollbacks.
+
+Ben: It's cool getting this level of depth on the show because for Acquired, we tell these big three-hour or four-hour stories of companies where we're looking 20, 30, or 40 years in the past and getting these big beats of the story.
+
+So it's cool to hear the state of the art of how one would go about actually building a scale product today, what is the set of tools, and what infrastructure is available if you're not Facebook.
+
+David: We've been talking here about all the increasing sets of product features for Statsig. I want to talk about your go-to-market because obviously, you are an enterprise software company that's pretty different than Facebook. Enterprise software go-to-market is a thing with playbooks, rules, and whatnot. You've made some interesting decisions there too. Specifically, you both have an enterprise go-to-market and a self-serve go-to-market at the same time as a startup. Tell us about that.
+
+Vijaye: When we started, we were a bunch of engineers together in a room. There was no world in our mind that you cannot have a self-serve product that is focused on developers.
+
+When you think about engineers, typically, what do you think? They have inspiration, and they just want to go code it up.
+
+David: They don't want to talk to enterprise software people.
+
+Vijaye: Yeah. You put an 1800 number in between your inspiration and motivation to code something up. Something doesn't work. That just doesn't work.
+
+Oftentimes, inspiration hits you at midnight, and you're furiously coding past midnight. Imagine calling an 1800 number during that time.
+
+The decision to have a self-serve was a no-brainer. It has to be. This tool has to be self-serve. A lot of the SDKs and documentation are open-source. We want everybody to be able to just open it up, understand how we do this, and change it if they want to. It's not even debatable. It has to happen.
+
+What I learned after that is there are people that will download the SDK. They'll integrate that into the app like the food ordering app that happened in Singapore.
+
+That's all good, but then the moment we started talking to a serious company, the first thing they asked was where's your NDA? We want to sign an NDA. Where's your DPA? Do you have SOC 2 compliance? We were like, what are those?
+
+We spent about 3–4 months actually preparing those because SOC 2 compliance doesn't happen overnight.
+
+David: It's why Vanta exists.
+
+Ben: Can we ask how you become SOC 2 compliant?
+
+Vijaye: We went to Vanta and said, please help.
+
+David: Christina will be very happy.
+
+Ben: Did not orchestrate. I just cast the line out and was hoping that would be the answer.
+
+Vijaye: We're very happy customers of Vanta. They helped us out. They expedited it, so within a month or so, we had SOC 2 compliance certification.
+
+I got to tell you this though. You visit websites and see all these badges at the bottom. You make fun until you actually have to put those.
+
+Ben: Until they become a big part of your revenue-generating story.
+
+Vijaye: Yes. Now we have badges. We proudly display those badges.
+
+David: You either die a hero, or you display badges on your website.
+
+Vijaye: That was a moment for me to pause. I think we're now talking to serious large companies that operate very differently than self-serve. That's how we started building a sales team. We hired some STRs to go get some prospects.
+
+I was so lucky I had someone connect me with Sam who is our sales lead now. He was in Segment. I was able to convince him to come and run sales for Statsig. It was a great fit, and he had lots of connections. Great leaders people follow, so we now have a very strong sales team that is covering pretty much all of sales.
+
+In my mind, these two things are not mutually exclusive. The self-serve and enterprise notion both exist. They both serve a very different set of people.
+
+Self-serve has been very good for all those people that want to just build a hobby app and then try it out including people or engineers from large companies that are just testing things out. It's so much nicer to be able to just download stuff, play around with the console, play around with the tool, understand the benefits and the limitations of it, go to your manager and say, hey, I think you should use Statsig, and then the sales team gets engaged and so on.
+
+Ben: I was going to ask, how does that handoff happen? When does something go from the KPI that the self-serve person owns to the KPI that the sales team owns?
+
+Vijaye: The self-serve has actually become a funnel for the sales team. That worked out really well, so much so that we created a commercial AE team. What this commercial AE team does is there's the enterprise AE team that is taking care of starting conversations, doing outbound prospects, and then working with them on a proof of concept and so on.
+
+The commercial AE team is interesting because they take people that are already onboarded through the self-serve, and then go to them and say, hey, look, if you sign a 12-month contract, we will give you even better rates and stuff, plus you get support.
+
+It's easy for them to convert people that have already understood the value of Statsig into a contract. We're landing a good number of small-size contracts, and I've been very happy with them, so we've doubled our commercial AE team from one person to two persons recently. I'm actually pretty bullish on this model.
+
+David: Literally, you're doing all three major go-to-market strategies for enterprise software. You're doing big enterprise sales, self-serve, and bottoms-up adoption all with the same work.
+
+Vijaye: We're doubling down even further. Recently, we've packaged out the most commonly used self-serve product, which is feature flagging.
+
+For us, the feature flagging part of it is a stepping stone. It's the first step you take to integrate your product. Beyond that, the value we add is all about analytics, impact analysis, and quantification of the impact.
+
+Feature flagging is a commodity. I think everybody should have it. We believe everyone should have access to feature flags, so we're giving it out for free.
+
+We just launched a feature management package where we're giving out basically the entire set of all the capabilities of the feature management system packaged out for self-serve purposes. Anybody can pick it up and use it for up to 500 million events, which is a pretty generous offer. It takes away a lot of what you would need to spend, especially if you're small and a startup to some of our competitors.
+
+Ben: You can feel free to not answer this if it's digging up dirty laundry, but is this something that incurs material costs to you and therefore has to really work, or is this something that you can actually do pretty cheaply, so why not offer it for free?
+
+Vijaye: Majority of our costs are the data analysis part. Feature flagging by itself is extremely cheap. Usually, when you're running server SDKs, it runs on your servers, so it doesn't even cost very much until we are collecting exposure events, doing the analysis, and stuff.
+
+We do want you to start using those features. Part of the equation is we can give it out and it's very cheap, very easy for us to run, and probably the right thing for everyone to have access to, just the feature flagging part of it.
+
+We also have a pricing philosophy where we don't charge anyone anything that doesn't cost us money. It's a very simple pricing philosophy. It's like seats, SSOs, or MAUs. None of those things cost us any money. You have unlimited seats, and SSOs. It doesn't matter.
+
+The thing that we charge you on is if we process your data and actually do a pipeline analysis. That costs us infrastructure dollars. We add a margin on top of that and charge our customers.
+
+Ben: You basically are the feature flag is an SDK that runs in their infrastructure but then all of the analysis stuff needs to get pumped through your Statsig-hosted cloud.
+
+Vijaye: Correct. There is a small cost for us to be able to host the config and then be able to download and make sure that the throughput, QPS, and all of that is maintained, but to us, it's negligible.
+
+Ben: Speaking of you living long enough to be the villain, I am so curious if we were to talk to you in five years if your entire pricing model will still exclusively be cost plus margin, or if you'll have figured out how to dial it in where you're like, look, we actually can be a lot more profitable here and there are plenty of customers that are happy to pay us for things that don't cost us a lot of money.
+
+Vijaye: I've also been around for a while to know that I shouldn't say anything that is set in stone. Things are down to change, and I'm a pragmatic person.
+
+The interesting thing is I believe the model that we have now is scalable. When we talk to people and our current customers that are using Statsig, they are comfortable with that margin. They're comfortable because the value that we provide and the value they get is really good.
+
+It benefits us as well because when you don't charge for seats, everyone in the company will use it. The tool just travels. Your product managers, engineers, data scientists, designers, and execs, we want everyone to just hang out in the tool and use the tool.
+
+Ben: You're getting better in their culture then.
+
+David: Just like the Facebook culture, the ultimate goal is you become the standard way of doing things. As people leave companies, go to new companies, and start new companies, the tool comes with them.
+
+Vijaye: We've seen that happen as few of the engineers switched jobs. They've taken Statsig to their new companies. I've had Deb send me photos of her board meeting where they're presenting Statsig charts.
+
+To me, that's success. That's what we want. We want to be able to generate a report and then send it to their managers and CEOs. At Facebook, we used to call, where's the deltoid link? For every feature somebody wants to ship, where is the deltoid link? We want everybody to be like, where's the Statsig link?
+
+Ben: Interesting. What's the deltoid link?
+
+Vijaye: It's the quantification of the metrics for a feature. If anybody says, hey, I want to ship this feature, someone is like, where's my deltoid link? You do want to take a look at that deltoid link and say, if this feature is positive entirely and it doesn't hurt the company's critical metrics, then there's no reason to not ship it. It's beneficial for the users and it's valuable, so let's ship it. The same way I want the conversation to be like, okay, if somebody wants to ship some new features in a company, they should ask where's the Statsig link.
+
+Ben: I love it. I think one beat that I want to hit before we close is after reflecting back on all of this, for other people who are in your position—20 years at very successful companies and technical background—and a lot of folks who listen to the show that have executive leadership roles, what would you tell your former self 2 or 3 years ago that you wish you knew then?
+
+Vijaye: The first thing is like I said, I knew I would regret it if I didn't do something crazy like this. It would always haunt me, so if you ever have that inkling, I think it's beneficial to explore it.
+
+It is nerve-wracking. I wouldn't sugarcoat this. I made a ton of mistakes, and I even explained the first six or seven months of our journey. It was pretty rough and hard. You need to go through that.
+
+Chances are we may still fail, and that's okay. Chances are there are a lot of unknowns. I've made a lot of mistakes, but what I've felt so far in the last two years is I'm so much better than I was before in learning these things and understanding the mistakes that I've made.
+
+It's humbling. You build humility and see the world very differently. You shed the bubble that you were brought up in. In any large company you spend long enough, you build a bubble around. You see things as they are. It's very different.
+
+I would never trade these two years for anything else. Even if Statsig doesn't succeed and even if we don't go anywhere, I would still fondly remember this. At the end of the day, these are memories that we're creating.
+
+David: You point yourself into a situation where you had to learn or die. There's no other option. I assume you didn't know how to do enterprise sales before starting Statsig.
+
+Vijaye: No. I made probably every single mistake in the book. The other aspect that I would also mention is at some point in my life early in my career, I chose to chase technology. I was like, I want to be a compiler dev because compiler engineers are like Gods.
+
+Ben: The most hardcore [...].
+
+Vijaye: I want to be like them, and then I actually worked on compilers, language services, incremental parsing, and a lot of that stuff. It's great that I did that.
+
+At some point, you realize that people problems and user problems are more interesting than technical problems, so you figure out how you chase user problems. After a while, you want to chase people, find good people, and want to stick with them because you enjoy working with them, learn a lot from them, they become your mentor and sponsor, and you grow with them.
+
+At some point, the equation flips. You'll start to notice that there are people following you and looking up to you. When that happens, just make sure that you take care of them much like somebody took care of you. When I think about the company that I'm building, who I'm bringing along, and how I can help them, that is definitely top of mind. It's something that you're paying forward.
+
+Ben: I love it. Vijaye, where should we direct listeners if they want to learn more about you or Statsig or perhaps try out the newly available free functionality of Statsig?
+
+Vijaye: So statsig.com is our marketing site. If you go there, you should be able to get a feel for what we are, what we're building, and what you could get out of it. That's where I would go.
+
+Ben: Great. Vijaye, thank you so much for joining us.
+
+Vijaye: Thanks, guys. This is really fun. I enjoyed having this conversation and digging up the past, so thanks for having me.
+
+David: Thanks for joining us. We love this.
+
+Ben: We'll take Facebook war stories any time.
+
+Ben: Listeners, we'll see you next time.
+
+David: We'll see you next time.

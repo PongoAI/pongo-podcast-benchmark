@@ -1,0 +1,787 @@
+Ben: I do have to say, that based on the other companies we analyzed, I was expecting to see gross margin highlighted in their financials and talked about in the presentation, but Facebook’s actual operating margin is so good, that that is what shows up everywhere, because they actually make money and they make a ton of it. It's like a dramatic departure from a lot of episodes we've done in the last year.
+
+David: That's insane.
+
+Ben: The way I'd think about that status, like for every dollar they bring in-house, they keep 45¢ even after paying for everything, all of their fixed costs, all of their employees, it's just a cash machine.
+
+David: That's why it's a $630 billion market cap company.
+
+Ben: Yup.
+
+Ben: Welcome to season six, episode one of Acquired. The podcast about great technology companies and the stories behind them. I’m Ben Gilbert.
+
+David: I’m David Rosenthal.
+
+Ben: And we are your hosts.
+
+Today, we are talking about WhatsApp, an app that Facebook paid $22 billion for and has done virtually nothing in the six years since. In fact, it was reported last week—that's right David—they are abandoning near term efforts to enable advertising in WhatsApp, which of course is Facebook’s core business model.
+
+David: You said $22 billion, right?
+
+Ben: Billion.
+
+David: Just to make sure we're on the same page.
+
+Ben: That's right. That's 22 Instagrams right there. Today, we will decide, was this one of the worst acquisitions of all time or did Facebook make a genius move even for this insanely, insanely high cost?
+
+David: I'm super looking forward both to telling its story, because it's an amazing story, but also to debating that question because I think there are really good arguments we made on both sides.
+
+Ben: This is as classic as a classic Acquired episode gets. We have more than five years of hindsight, we got a big price tag, we had lots of reporting around the time of the sale, and frankly not a ton of follow-ups since, so it's going to be fun to tell the WhatsApp story from the very beginning and as you said, debate that very question.
+
+Now, before we get going, I'd like to thank our sponsors Sarah Peluso from Silicon Valley Bank, whether you're at the seed stage, scaling to series A, or beyond, Silicon Valley Bank has the insights and expertise to help you hit your next milestone.
+
+All right, thanks so much to SVB and you can visit svb.com/next to learn more.
+
+If you're a fan of the show and you want to go deeper on company-building topics, the nitty gritty of how companies today are solving problems in real time, you should consider becoming an Acquired Limited Partner. In recent episodes, we interviewed the founder of fast growing Chicago startup Cameo and we did another episode that turns the tables and interviewed us on the business strategy behind Acquired. You can get started with a seven-day free trial and listen right here in the podcast player of your choice by clicking the link in the show notes or going to https://glow.fm/acquired/.
+
+David, I think it is time to dive in.
+
+David: Let’s dive in. You know what? There's something funny about messaging apps. Just thinking, looking at our script here, where we're going to start, and how we started the Slack episode with Dharma Butterfield (soon to become Stewart Butterfield) growing up on a commune in British Columbia, there's something about communism and messaging apps. I don't know what it is, but it's a really good breeding ground for founders of messaging apps.
+
+Ben: For a strong community.
+
+David: For a strong community. We are going to start in the mid-1970s, in the Soviet Union, in Ukraine, in a little village just outside Kiev, where a boy named Jan Koum is born to a Jewish family in 1976, in this village, in the then Soviet Union, and this is a pretty not great time to be all of those things. A jewish child, in Ukraine, in the Soviet Union, under communism, in the mid 1970s.
+
+Jan actually later talks about this and he says, in his time in the school he attended there, “It was so rundown that our school didn't even have an inside bathroom. Imagine the Ukranian winter, negative 20 degrees celsius, where little kids have to stroll across the parking lot to use the bathroom. Society was extremely closed off. You can read 1984 (the book), but living there was experiencing it. I didn't own my own computer until I was 19, but I did have an abacus.”
+
+That was the reality that this young man (Jan Koum) was growing up in, and he would stay in Ukraine until he was 16 years old. This would have just such an impact on everything as to come this entire story. His dad worked for a state-run construction company in the village. It was really hard and it was a very anti-semitic environment.
+
+Finally, by the time Jan was 16, his mother, his grandmother, and he was able to escape. This was in 1992, the Berlin Wall had fallen at this point. They were able to get out of the country and come to America. The three of them moved to Mountain View, California, Jan is 16 year old, he barely speaks any English. When they arrived, his mom starts working as a nanny to support the family. But it's not enough. They live in government-assisted housing in Mountain View, they're on food stamps.
+
+Jan's dad never was able to leave the Ukraine. He very sadly passes away in 1997, never comes to America. Even more tragically to a few years after that, in 2000—we're going to talk much more about what happens before year 2000—Jan's mom is diagnosed with cancer and passed away in 2000. Here's this guy, now, at the end of the day, at the end of the story, Jan walks away with nearly $7 billion dollars after taxes from the WhatsApp sale. This man has been through a lot.
+
+Ben: Yeah, no kidding. I think you opened that chapter by saying, “It was pretty not a great time.” That is a very soft way to describe a very hard existence.
+
+David: When he comes to America, he doesn't speak much English. He enrolls in an American highschool in California. He doesn't get along with other kids there and he's had a lot of trauma in his life. He's got this one thing that ends up becoming a light in his life that he gets is that he's in Silicon Valley (this is the mid 90s) and he gets really into computers.
+
+He actually teaches himself programming and computer networking by purchasing manuals from a local used bookstore, reading through them, teaching himself, probably working on the school computers, learning how to program, and then returning them to the store, getting the money back after he's done. He ends up through this. While he's still in highschool, he joins a hacker group online called w00w00.
+
+Ben: That's leetspeak w00w00.
+
+David: Leetspeak w00w00. He ends up meeting after co-founder Shawn Fanning through that and he finds his community on the Internet.
+
+After highschool and through all of this, he enrolls in San José State University in college. The college is not for him and he ends up dropping out. He first takes job bagging groceries, then he ends up working at Fry's Electronics. If you've hung out in Silicon Valley—I remember when I was a GSB at Stanford—there's still a Fry's Electronics on El Camino Real in Palo Alto.
+
+Jan works there, then from there, he ends up working at an early Internet Service Provider, a local ISP, and through that he ends up actually joining Ernst & Young as a computer security penetration tester. He's putting all of his hacker cred to use even though he's a college dropout.
+
+Ben: White hat.
+
+David: White hat by day, unclear what Jan was doing at night. This is where everything changes. He goes to a conference while he's with Ernst & Young, and at the conference (this is now mid-90's) he meets Yahoo! co-founder David Filo. He's out on an Apache Security Conference.
+
+They hit it off and David's like, "Hey, when we get back to California, why don't you come in to Yahoo! and interview for a job." Jan does, he ends up joining Yahoo! as an infrastructure engineer, becomes a real engineer and he meets in his group when he joins, a man who ends up becoming a mentor figure and then a deep friend, a man named Brian Acton.
+
+Who is Brian? Brian has not quite as traumatic but equally really interesting story. Brian was born in Michigan in 1972. I believe his parents may have divorced when he was quite young. He was mostly raised by his mom, who ran her own freight forwarding business. It’s incredible, this woman with a child, just running a freight forwarding business. I would imagine not a super female-friendly business in those days.
+
+Ben: Not the venture capital darling that freight forwarding is today.
+
+David: Yeah, this is way pre-Convoy and pre-Flexport. She then moves in to Florida. He spends most of his growing up years in central Florida, I believe. She instills in him this ethos of both small business entrepreneurship but also huge responsibilities of beating payroll, scraping by, and getting through month-to-month.
+
+He’s super bright, he ends up going to Penn on a full scholarship to study engineering. While he’s there (he's learning about engineering in his freshman year), he hears about Silicon Valley and about this university called Stanford. He probably heard of Stanford before, but him and his background and nobody in Florida was thinking about going to Stanford. He ends up applying to transfer and is accepted into Stanford. He transfers out to California his sophomore year and ends up majoring in computer science at Stanford.
+
+This ends up being huge for him. He interns at Apple his junior year. After graduation, he joins Yahoo! as employee number 44 in the really early days. He works super closely with David Filo, he works with Qi Lu, and all of these super legendary engineering leaders that end up coming out of Yahoo! because in a lot of ways—we haven't really covered it enough on this show yet—it was the first successful Internet company.
+
+Ben: Internet directory basically. It's funny, you mentioned Qi Lu. Qi, obviously, is very notable for his work at Yahoo!. I know him as my mega skip level boss from Microsoft when he ran Bing, because Microsoft recruited him over and he ran a search for Microsoft. Then ultimately, actually took over all of Office as well.
+
+David: Of course, the relationship between Yahoo! and Microsoft, many of our listeners probably know, is really long and complicated. A topic for another day. Brian and Jan have become kindred spirits when Jan joins Yahoo!. Brian really rises through the ranks. He ends up becoming the Chief Architect of Project Panama within Yahoo!, which was super. They would talk about it on their earnings calls. I remember Carol Bartz talking about it all the time and then Marissa Mayer, after she became CEO. That was a massive project to re-architect all of the back-end of how Yahoo! Search worked and how ads worked on Yahoo! Search.
+
+The two of them, with Brian leading on the technical side, go through this experience of re-architecting at massive scale, this original Internet company. But doing it while this company is going from over a $100 billion market cap, darling of Silicon Valley, all the way down to below $10 billion and then just plummeting. Ben, what price did ultimately buy Yahoo! for? I think it was like $3 billion or something?
+
+Ben: I don't know, but if your final resting face is at Verizon, it's irrelevant where your final market cap was.
+
+David: They get this incredible technical experience, but they also see this business model of portal that Yahoo! is. It's so fickle, it's so dependent on user attention, and it's so dependent on advertising. They start to believe that Yahoo! makes a ton of product compromises in service of their ad partners and that that was a big reason. Through these years, they simultaneously see the rise of Google. These days, Google famously is just one white page with a search box on it. Meanwhile, Yahoo!’s throwing up all of these display ads and doing all this stuff. It becomes super, super disillusioned with it.
+
+Ben: Amd you bring up an important point there, Yahoo! was the very first Internet company that’s business model was to monetized attention. I don't need to paint the picture to our listeners that the most successful company to ever be on the Internet and monetize attention is Facebook. I think there's this incredible book ending of the story there.
+
+David: That's where I was going to be going with it. It's also during this time famously that Yahoo! tries to acquire Facebook for $1 billion.
+
+Ben: Is this one Mark cried in the bathroom after rejecting it?
+
+David: I think so.
+
+Ben: Good move.
+
+David: This is going to be a meta theme of this episode, but this idea of monetizing attention through advertising is (in many ways) as old as the Internet itself. Yahoo! was the first big company that was built to do that and Facebook is the new Yahoo! in so many ways. They get so disillusioned. I don't know if this is still a case on Jan’s LinkedIn, but when he was leaving Yahoo! and then the first couple of years of WhatsApp, he described his last three years at Yahoo!, his description on LinkedIn of your role and what you did, he said, “Did some work.” Of course they're working on Project Panama.
+
+In November of 2007, Brian and Jan finally had enough and they both leave, I think it might have been the same day that they leave Yahoo!. They're just completely burned out. They both decided they're going to take a bunch of time off. Brian had recently been through a divorced and Jan had such a hard life up to that point. He lost his parents in the past few years. They say, “We have enough savings.” We got in to Yahoo!, especially Brian, early enough that they could afford to just really take extended time off and travel.
+
+At one point, after they get pretty bored, they both famously end up applying for jobs at Facebook, which is of course on the rise now. We're in 2008 and they're both rejected for jobs at Facebook. Brian even Tweets about it.
+
+Ben: Facebook clearly does not need their talents or ideas.
+
+David: Yeah, which is so funny, both of them, but especially Brian are truly world class engineers.
+
+Ben: There's a thing, though, that was going on at Facebook at that time, that I think a lot of people forget about, not that the company is benevolent now, but whereas Google was hiring a lot of the smartest people who were academic and obsessed with.
+
+David: Really, like pedigreed.
+
+Ben: Right and really deep nerdy, academic learning. Facebook was obsessed with hiring a lot of people who were well-known in the communities of the languages that they wrote in. They had many of the early Python people. They had a lot of open source leaders. Frankly, there was a lot of “not invented here” syndrome and there was a lot of “you're not good enough for us.” There was a cockiness that permeated (I think) the development organization of that company early on. It's not surprising that someone really accomplished, but who may have been of a different stripe or tribe was not welcome and not revered.
+
+David: It's really interesting. I wasn't going to get into this, in the history and facts, but it's worth a pause. Most of the back-end of WhatsApp, ends up getting written in Erlang, which is this super obscure programming language that was actually developed by Ericsson in the 80s, maybe? Ericsson, the big Nordic telecom giant, as just purely for telecom use cases, for rapid messaging, but was super looked at as backwater, outdated, old school. This is about as far away from Go as it gets.
+
+Ben: Of course now, if you start your company and write it in Erlang, now you have two problems, the problem that you're trying to solve for your company and the problem that you can't recruit any engineers.
+
+David: You can't recruit engineers, exactly.
+
+Ben: There are a ton of engineers that are specifically obsessed with things like Erlang, Roston, and very up and coming and/or fringe programming languages, but gosh you have to get specific in your hiring when you make a decision like that.
+
+David: Yeah. Back to picking up the story. Jan, he’s single, he’s travelling around, and remember, he's got this history of he was a hacker, he was a w00w00 member, and started as a pen tester. He is travelling around lots of countries and he has a Nokia candy bar phone that he loves. He still talks about how he loves the old Nokia phones.
+
+Ben: Dude, you could play Snake. It was great.
+
+David: It was great. He had, of course, jailbroken this phone and installed all sorts of super hacker dev tools on it that you can monitor everything that's going on on the network and all these stuff. He's obsessively learning about all of these different telecom networks in the countries he's travelling to.
+
+He would buy different sim cards in all of the countries and swap them in. But even Jan is as techy and confident as he gets (he's basically a walking IT department), he still is having a nightmare trying to communicate with his friends back home and all around the world via SMS and phone, too. There are all these country codes that he's got to dial, you send off an SMS, you have no idea if it was delivered, even if you did everything right, it might drop and fall through.
+
+Especially when he talks a lot about Argentina. He does a trip to Argentina and for some reason he thinks that the country code in Argentina is just so ridiculous that he's dropping all of these messages and he starts getting really fed up. He wants his friends to know back home what he's doing, that he's okay, and everything.
+
+He finally comes back and in January of 2009, his birthday is in February, but he's just hanging out, he says, “You know what? I'm going to buy myself a birthday present. I'm going to buy an iPhone just to hack around with.” Of course, the iPhone had come out in 2007, but 2009…
+
+Ben: I think this might have been the iPhone 3G?
+
+David: I don't know if the 3G or the 3GS? I think probably the 3GS at this point?
+
+Ben: I think July is when the 3GS came out, if memory serves.
+
+David: Maybe it was the 3G, but Apple, I believe it was in January of 2009, they had just announced the SDK to allow developers to make apps. The App Store wasn’t going to ship until the summer, but the SDK was out.
+
+Ben: Yeah. I think that's right. It may have been earlier, it may have been at WWDC08, they announced it, but I don't think it had shipped yet or was shipping right around that time, but the SDK came out with iPhone OS 2.
+
+David: Yup. So, Jan of course was like, “Okay, great. I'm going to hack around on this.” He's got all this stuff swirling. He has an idea and he tells a friend of his who’s also (I believe) a Russian immigrant in San Jose named Alex Fishman who is a good buddy of Jan’s, “Hey, I have this problem, I have this idea, remember AIM and ICQ and all of these messaging services on desktop? They all have these away messages, what I really want and what I would have love when I was Argentina and all these other countries is that I could just throw up, the equivalent of an away message and all my friends could know what I was doing and that I was okay. I'm just going to build this out on this new iPhone that I got.” Alex was like, “Yeah, that's seems like a good idea.” So Jan starts hacking on it, he starts thinking about what to do and he says, “You know? What I want this to solve is, everybody is asking, ‘What's up?’ I just want this to be answer to, ‘What's up?’ so I'm just going to call it WhatsApp.” Alex is like, “Yeah, great idea.”
+
+Jan’s thinking some more and he says, “ You know? Okay, two things. One, AIM, ICQ, and all these messaging services on the desktop has this issue with them, which is you have a cold start problem with the network. You join, but then your friends are on there, so you have to convince people to go, convince all their friends to join. But with phones, I'm really digging into this new iPhone.” It wast even called iOS at this point, it was like the iPhone OS SDK, “and it's pretty locked down, but there's one feature that Apple let's developers access and that's the address book, the contacts.”
+
+Ben: At the time, there was no special permission prompting for that. You could just reach right in.
+
+David: Yeah, you just access. Reach your hand into the cookie jar. He's like, “Man, what do you think? Instead of having screen names and usernames, we just use phone numbers, because all of the phone numbers of the people you have, you're only going to give your phone number to somebody you really want to communicate with and you'd want them to know what your status is. So this might solve the cold start problem.” Alex is like, “Yeah, that seems good, but there's one thing you're going to need. Jan, you're a great developer, you worked at Yahoo! and everything, but you don't really know how to code for iOS.” But it just so happens…
+
+Ben: You don't know this archaic thing called Objective C. It was written at Next, that Apple has decided to carry forward into all of their products to date.
+
+David: I know, so ridiculous. Next is the core of Objective C.
+
+Ben: Still one of the greatest acquisitions of all time.
+
+David: Still. They'll have to go on our forthcoming Acquired top list.
+
+Ben: Wait, before you get into hiring the iOS, did they grow by texting all of your friends? Did they reach in, grab the phone numbers out of your address book, and then carpet-bomb or how did that work?
+
+David: That's a good question, I don't believe so. I didn't find anything that they did, like the LinkedIn Playbook of actually go a step further and carpet-bomb, but they did reach in and get all the contact information. They were checking, they would grab your address book and check everybody on there. I remember when I onboarded on the WhatsApp years ago, it checks and then they surface for you. I think it even shows you your whole address book and then checks like, “These are the people that are on WhatsApp?”
+
+Ben: “Who are in your address book.”
+
+David: Yup, exactly.
+
+Ben: Got it.
+
+David: Anyway, Alex was like, “Oh yeah, I was working on another project and I found this awesome dude back in Russia on rentacoder.com who’s a really great iOS Dev.”
+
+Ben: I love reading that in the research.
+
+David: I know. It’s so great. This guy named Igor Solomennikov, I think I'm pronouncing that right. Jan’s like, “Cool.” He contracts up Igor, they code up this away message app, and they're getting ready to ship it. Jan is like, “Oh man, it turned out in this new App Store that Apple has,” I guess the App Store must have shipped this point in time.
+
+Ben: If I remember right, I think they announced the SDK at WWDC08, which would have been June and then shipped it probably four months later, two months later. It would have been out in a few months, but they wouldn't have had pushed yet, because that came in iPhone OS 3.
+
+David: Push is coming in a sec. No push messages, no push notifications that third party apps can provide. Jan and Igor are ready to ship the app and his looking through the App Store and he's like, “Oh, we need to incorporate this as a company, because there are all these developers.” If you remember back, Ben you're probably doing this.
+
+Ben: Right, yu needed a DUNS number.
+
+David: You needed a DUNS number, but also if you didn't, you could ship it as an individual, but then you're name is listed as the developer and then people will start contacting you.
+
+Ben: You had to fax stuff to Apple, this is why I incorporated my first business, is because this is a requirement of the App Store, otherwise your name was on it.
+
+David: Totally. Get this. You will totally appreciate this. This is on Jan’s birthday in 2009, February 24th. He’s like, “Shoot, we got to incorporate this.” He drives up to San Francisco, he talked to an accountant friend of his. He's like, “ How do I incorporate a company?”
+
+The accountant’s like, “Oh, don't worry about it. Here's a template, Articles of Incorporation in the State of California.” There like five articles there and he's like, “Just do a Control H, find and replace, and put WhatsApp instead of whatever I got here. Then you drive up to San Francisco, you go to the Secretary of State in San Francisco, you show him the articles, they stamp it, you pay $100 and your done.”
+
+That's what Jan does. He drives up, he does that, he takes a photo of it, and he sends it into Apple, and boom, WhatsApp Inc. is born.
+
+Ben: Love it.
+
+David: Not exactly, usually, typically, starting a startup, you have all these ambitions. You're like, “Oh yeah, we're going to talk to Wilson Sonsini. We're going to go talk to any of the great law firms out there. They're going to incorporate us.”
+
+Ben: No way man. David, my first app, LLC was LegalZoom. Why not?
+
+David: Well you can use LegalZoom. Jan was just like, he literally scribbled some stuff on paper, did it by hand. So, they get that done, they ship the app with this great expectations, Jan thinks it's going to be so awesome. In his own words, direct quote, “It fails horribly.”
+
+Ben: What's the functionally at this point? It's just the statuses, like you can just say, “Hey, in case you happen to open this app and check”—
+
+David: “And you’re curious what am I'm up to, this is my status.” It's literally just away message, no notifications, exactly like you said, if you happen to open the app, you can say—
+
+Ben: In a way, it just seem like pretty useless, unless someone’s trying to message you.
+
+David: Right. Literally, the name of it is is like, “I'm sending you a message that I am away.” Usage is horrible, but they pick up people registering and downloading the app. This is what I thought was so fun, it reminded of these days, they do a pretty interesting growth hack. There were so few apps in the App Store, in fact that I remember this, I did this for years, I would check every week, what are the new apps.
+
+Ben: Yeah, what are the new apps?
+
+David: Apple had the “What's new?” section. Jan relizes, he's like, “You know what? I can get a lot of people just trying this out if every week I change the name of the apps slightly, Apple will put me in the “What's new?” section, week after week.
+
+Ben: No way.
+
+David: I swear this is what he did.
+
+Ben: Crazy.
+
+David: Totally crazy. So as a result, he's getting all these users. They're trying at once, being like, “This is stupid,” and stopping, but he does have a bunch of people, he's at least getting that feedback. He knows, he’s been in the Valley a while, he's like, “All right, got to keep working on it.” Editing on the product, tried adding a bunch of features, doesn't really help.
+
+One thing I forgot to mention form back in the Yahoo! days, Brian and Jan bonded not just over becoming friends and their ethos, but they also both are incredibly passionate about Ultimate Frisbee and they would play Ultimate Frisbee together. They go to a game together one day when Jan’s working on this, he's talking with Brian afterwards and he's like, “You know, this is not working. I should probably just give up and go back to looking for a job, go back to Facebook, or find some other startup.” Brian is like, “No, you gotta keep going.” Literally, the quote is, “You'd be an idiot to quit now. Give it a few more months. Keep working on it.”
+
+Ben: And Brian is not actually involved with the company right?
+
+David: Not at all, he's just a friend at this point time. Brian was working on his own startup at this point in time. I actually couldn't find out what that was, but whatever it was, he eventually made the right decision to stop that. It's so funny, though. We haven’t used the “history turns on a knifepoint” phrase in awhile here.
+
+Ben: Maybe since Blockbuster.
+
+David: Yeah, maybe since Blockbuster, but Jan was ready to quit and if Brian hadn’t told him to keep going, he wouldn’t have kept going long enough through WWDC 2009 in the summer when Apple introduces push notifications for third party apps.
+
+Ben: Boy, is timing everything.
+
+David: Oh man, is it ever. The funny thing is, you would think that in hindsight now this is so obvious. It’s like, “Oh, I don’t have to rely on users randomly deciding to open up my app and see what’s going on. I can now send them notifications and prompt them to do this messaging. Duh! Why don’t we just build all of AIM (AOL Instant Messenger) and ICQ instead of just away messages?”
+
+Funnily enough, at first Jan is like, “Oh, this is great! Now, I will update WhatsApp so that every time you change your status, it’ll just broadcast the away message out to everyone.” So he couldn’t actually message. He was only broadcasting away messages.
+
+Ben: We should take a moment here. I was fortunate to be living through this era and be very, very obsessed with the iPhone as I was starting to create apps. You might be wondering why didn’t AIM come to the iPhone? Well, they were. AIM was an early, early partner for Apple. They had an app on the App Store very early. I want to say iOS 3, this early.
+
+The other app that really came out really early that was originally, I can’t remember if it was a flash website or and HTML5 website, a really early one, but it’s called Meebo, and it was a cross-service messaging client, where you could have AIM and ICQ, and it subscribed to all those different APIs.
+
+David: It was desktop right? Originally.
+
+Ben: It was desktop, exactly, but then they were one of the early companies to have an app. I should go watch old WWDC videos, but I do think they were at one of these. I think AIM was demoed on stage as this is a really good way to use notifications to send messages to people.
+
+If you’re out there wondering why didn’t those companies just do it, they did. They brought the functionality. They ported from desktop, so it had potentially too many features, it was not necessarily a need or a feeling experience, but it also didn’t have the genius thing that that Jan had with the network being based on phone numbers.
+
+David: Yeah. Nobody else had that. That was a major key to WhatsApp’s success and ability to outstrip all of the new entrants, AIM, Meebo, and all these legacy guys transitioning. The other important thing to remember about what was going on at this time was there, you’re going to say BBM?
+
+Ben: No. Go for it.
+
+David: Oh, well BBM (BlackBerry Messenger). There also was a playbook of how to execute messaging on mobile that have been around for several years and that was BlackBerry Messenger. Those were the days when people used to talk about BlackBerry being crack berries.
+
+There really were two core use cases of BlackBerry and I think people forget this. One was corporate email. That’s what now when people think of and remember Raymond Blackberries they think of that. But actually, know a lot of consumers who are using BlackBerries and the killer app was BlackBerry Messenger. It was a fully featured mobile messenger, just way ahead of its time but it was limited to the BlackBerry network.
+
+Ben: Yeah and the way people talk about BBM then is very similar to the way that people in a very uppity way talk about iMessage today, and the way that people referred blue bubbles versus green bubbles. I remember my friends who had BlackBerries then. Of course, I didn’t. I was rocking my candy bar. I didn’t get a flip phone at that point, but I remember one of my friends in college being like, “Oh yeah. No, I don’t really like texting. I don’t text people.” But after they had BlackBerry, “I’ll definitely BBM. That’s nice.”
+
+Of course there’s a slightly different feature set. You can see when things are read or not read. It was the cool network to be on.
+
+David: It was the blue bubble. So, Brian’s advising at this point and their friend Alex is helping them. They realized pretty quickly and remember also, they had this user base because they kept doing these growth hacks of changing the name and getting new people coming in every week. They had this user base and the users were like, “Guys, I really just want to message. These away messages are nice, but can you please implement messaging?”
+
+Ben: Yeah, and they found that people were actually using the away messages coupled with the push notification that had just come out to use it as a messenger, anyway. They would frequently update their status and their friends would update their status back. They were hacking it to make it a messaging app.
+
+David: And it’s going out to everybody in their network. I was like WhatsApp and Twitter combined.
+
+Ben: Yeah, I was going to say it’s like early Twitter.
+
+David: Yeah. Anyway, they figured this sounds like, “Okay, great. We’re going to build messaging into this.” They do, they launch it in late August, early September of 2009. It immediately takes off. Again, because they really do a good job with the execution. It’s super simple, the UI is very straightforward.
+
+But again, this address book innovation, the contacts and not having to go through user names, finding your friends and all that, and everybody just being on there is major. And because again, they had all those users that had used previous versions of the app. They had suddenly about a quarter of a million users. That’s enough network density that people can start getting real value out of the app. It just starts growing like gangbusters.
+
+At this point, Jan goes to see Brian again and says, “Hey, this is really working. What do you think about coming and joining me full-time, doing this for real? Let’s raise some money and make this happen.” Brian says, “Yup, I’m in. This is now for real. I’m going to do this.” And he says, “I’m going to invest some of my own money from my Yahoo! Savings. Let’s go round up a bunch of our former friends at Yahoo! and put an angel financing together.”
+
+They put together $250,000 all from former friends and co-workers. Brian joins the company officially. He gets (it’s been reported) roughly about a 20% stake in the company. Jan and the rest of the company, I don’t know what the valuation was on the seed around. The angel investors for the $250,000 obviously get a stake. It goes gangbusters from there.
+
+Jan says much later in a talk, he’s very direct (as you would imagine) given his Ukranian upbringing. He says, “All right. Look, we were lucky. We stumbled into something that people found really meaningful. What it was, was messaging is the killer app for mobile.” Period. Full stop. And it’s true.
+
+Ben: It’s come to bear in every country on every platform.
+
+David: Yeah. There’s so many things that you can do on your phone. Matt Cohler at Benchmark famously talks about the smartphone is the remote control for your life and you can order a car to come pick you up and do all these things. I imagine everybody listening to this—you personally and certainly in anger get the population—you spend by far the majority of your time—forget Instagram, forget Uber, forget all of that—messaging with your friends. That’s the real primary killer app for mobile phones.
+
+Ben: Do you consider Twitter to be messaging?
+
+David: That’s a good question. No, I think it’s different. I think it’s social media. Maybe social media is near or equal importance. Definitely, this true for me. I’m curious for this for you. What is the most important thing? I could live without Twitter on my phone, but I could not live without iMessage.
+
+Ben: My most used app by almost a factor of two is Twitter on my phone by the amount of time spent over the past week. And then mail coming in at number two. Messages is down probably at number four. I do probably the most important communication in messages, but I’m in and out of it. I mean, it doesn’t have to be the dominant thing taking up the screen most of the time, to be the most important thing on your phone.
+
+David: Probably Brian and Jan would totally agree with that. It’s not about time spent, but the most important conversations you’re having in a messaging relationship.
+
+Jan also talks about before the WhatsApp 1.0 version when it was just about statuses and away messages. It was just like you talk about all the time, about the definition of product-market fit. It was like you’re pushing a boulder up a hill. Everything is hard. Getting users to use it is hard, getting engagement, nobody wants to invest, nobody wants to work for you.
+
+Ben: This is before product-market fit.
+
+David: Before product-market fit. And then, all of a sudden, they have instant product-market fit with messaging and everything changes. People are adopting like crazy. All of their old Yahoo! friends want to come work for them, investors start beating down their doors.
+
+Ben: Literally looking for them in unmarked locations and attempting to network their way to the founders.
+
+David: Totally. We’ll get into how that comes together next in just a sec. Before they do take money, they do another really smart thing, again for them at the time. I think this might have actually been Brian that came up with this and that advocated for doing it. They were free, it was a free app in the App Store, but again, remember think back to 2009. There are paid and free. You could do both in the App Store and it hadn’t yet shaken out that free was the way to go.
+
+Ben: Yeah and there was certainly no in-app purchases or subscriptions. You could pay an amount of money to download an app or it could be free.
+
+David: Yup. So Brian suggests, “What if we charge 99¢ for the app in the App Store? That would do two things. One, it would dial down growth a little bit, which on the one hand is bad, but on the other hand, our servers are melting down and we got a pay for server costs.” Remember, they don’t run on AWS because they’re using Erlang and I think they ran on FreeBSD.
+
+Ben: It’s also 2010. I don’t know what services are available? S3 and maybe EC2? AWS is not huge yet, like cloud at all. Dynamically scaling back-ends are not a thing yet.
+
+David: And remember, reliability for a messaging service and preserving chat history is the number one thing. You don’t want your service going down. So, he’s like, “Okay. This might solve our rate scaling problem or give us some breathing room, and then two, give us a business model and we can control our own destiny.”
+
+Ben: I thought that was the craziest thing when I read it. I always knew it was $1 and I knew they think it’s not that expensive to run the service. The most expensive thing is sending the SMS verification every once in awhile when a new person joins the service and they need to verify their phone number.
+
+David: And that actually ends up being quite expensive to do that.
+
+Ben: Totally, but these guys are in value capture mode. They’re just trying to figure out a sustainable way to keep the lights on, so it’s this dollar a year thing. It blew my mind when I realized that they were toggling the dollar on and off when they wanted to throttle growth, so that their back-end could catch up. That is some unbelievable product-market fit right there.
+
+David: I know, unbelievable. The other thing, though, yeah they can charge 99¢ for the app because the value prop to consumers is that unlike AIM and ICQ that are desktop, mobile messaging is truly an SMS replacement. SMS is super expensive even in the US.
+
+Ben: I remember this being the stupidest thing because you would pay for (I think) an extra $10 a month to get unlimited SMS. There were some era in 2007–2010 where you would pay by SMS and that was the dominant feature of phone plans. I think that’s how it mostly was internationally. But at least by 2010, AT&T and others had adopted this unlimited texting for a $10 add-on.
+
+David: Pay $120 a year for texting.
+
+Ben: It’s ridiculous. To go in a little bit of a technical aside here, the SMS protocol is limited to 160 characters, which is obviously a super small size of data that’s transmitted back and forth because with early cell phones, the way that the cell towers would know that your phone was still on their network was every second or two, they would just go ping all the phones. There was basically enough room for an extra 160 characters in that heartbeat that was communicating back and forth with every phone anyway.
+
+It literally had no additional cost of goods sold to carriers to do this because it was just sending and receiving these extra pieces of information when it would’ve been pinging those phones anyway. It’s a genius business model move on the carrier’s part, but when I learned that as a consumer being so pissed.
+
+David: These were the days with all these news stories of middle-aged dad and name your suburban town outraged to get $100,000 bill from carrier because teenage daughter is sending 60,000 text messages in a month. That was all in the US, but then, as you said, in many countries around the world (especially in Europe), it was either a metered per message fee that consumers were paying.
+
+But then, think about a continent like Europe, where there are lots of countries altogether, they’re like States in America, people are texting and have friends 20 miles away that are in a different country. You’re paying a tariff to go outside your country, it’s costing you $5 a text message to text your friends. So, here’s WhatsApp out there and even for 99¢ for the app, that’s an amazing value proposition.
+
+Ben: This is a magical arbitrage opportunity where they could say, “We could basically provide the same service, if not better, because…
+
+David: No limit on characters.
+
+Ben: Right, all the way. The business models are set up, is for this gorge consumers on SMS and this new thing came out, the data layer, the data network, which 3G was new as Edge and 3G just rolled out. Suddenly you could basically spoof the functionality of SMS just over the data layer.
+
+These moments don’t happen that often in the world at the scale that they happened here, where you get a six month window as a startup to be like, “Oh, my God. The business model of the time is so misaligned with the technology that’s available.”
+
+David: We’ll get to playbook later, of course, but I think this is a huge one. There are these moments that happen with every minnow paradigm shift in technology. We’ve talked about it with the Internet before, we’ve talked a little bit with mobile where it’s like, “Oh, man. This is the window. It’s only going to be open for a for a short period of time,” but if you can get through you can realize billions of dollars in value. They do this. They shipped really fast and at the end of 2009, they shipped the ability to add multimedia to WhatsApp messages, so photos, videos.
+
+Ben: I think that video came later but definitely photos.
+
+David: Definitely photos. Then, it just goes through the roof. Now, the VCs start banging, literally banging, literally hounding Jan and Brian, and it’s so funny.
+
+Now we’re towards the end of 2010. I didn’t realize this in doing research. I guess one venture capitalist—Jan doesn’t say whom and what firm—literally gives them a blank term sheet. A term sheet with the amount to be raised and the valuation blank, and they say, “Fill in the numbers.” This is so funny. Thinking back on this time, this is when I started in venture. Series A’s were happening at this time. I was doing Series A, $3 million at $8 million post money valuation. For a venture firm to just literally give a blank term that’s right after the financial crisis, is insanity.
+
+Ben: Which, of course, they’re non-binding.
+
+David: Of course, but actually, interestingly though and this is a good lesson as much as a capitalist, that tactic backfires and Jan says, “Bandon and I talked about it and if these guys are that callous with other people’s money, are those the partners that we want to be our board members, advisors, and our financial partner?”
+
+So, they ultimately end up going with Sequoia Capital, and Jim gets there, and Jan talks about why. Also, the great quote from Jim as he’s talking about this, he and Sequoia—they famously do this—had looked at every company in an emerging space, they go meet with everybody, and he said, “Yeah, we met with,” he says Pinger, Tango Beluga, Kik was getting started at this time. All the other messengers. Everybody’s was trying to—
+
+Ben: Beluga, by the way, got acquired by Facebook and became Facebook Messenger.
+
+David: Indeed it did. But it was clear that WhatsApp was the leader. When he finally got to talk to a Jan and Brian, he said, “This is the only time this has ever happened and he’s ever seen in his venture career. They were already paying corporate income taxes. They were profitable. Clearly this is the project leader in the space and these guys are printing cash. I’ve never seen this.” He convinces them to raise $8 million that Sequoia leads.
+
+Ben: I think it was hard to find them because they didn’t put a sign outside their office, they weren’t answering emails, they weren’t answering phone calls. I think Jim finds their address and drives there. He’s the one you’re referring to that’s banging on the door and saying, “I really, really would like to talk to you.”
+
+David: Yeah, and he talks about he, Jan, and Brian used to work out of the Red Rock Café in downtown Mountain View—which I’ve been to many times, famous spot in Silicon Valley lore. Jim eventually gets to sit down with them and meets them at Red Rock, and just starts answering all of their questions and pitching them on why they should work together.
+
+So, they do an $8 million round at a slightly lower than an $80 million post money valuation. I believe Sequoia got somewhere between 10%–15% of the company for this investment. Again, crazy for this moment in time. But Jan talks about why they picked Sequoia and Jim. He says there are three reasons: (1) All of Sequoia’s past successes that we talked about in Sequoia part I, including Yahoo! and the brands associated with that, (2) personal chemistry with Jim, and then (3) this is really important (and it’s going to come back here in a second as we get into Facebook), he said it was really important that they didn’t meddle.
+
+He’s like, “The business is working. We were printing cash, we were clearly the market leader, we were growing super fast all around the world.” And he said, “Jim and Sequoia said to me, ‘Look, we’re not going to mess with you. Things are working here. If they’re not working, we talk about it. We will help you and do whatever you need, but you guys are doing a great job.’”
+
+I think that’s so powerful in terms of what that sets up for a relationship between a founder and venture capitalist, but also clearly that was so important to Jan and Brian all throughout everything and foreshadows what’s about to come with Facebook here.
+
+Ben: Yeah, when others do start to exert control.
+
+David: So, this happens and then they're off to the races by October 2011. It was early 2011 when their round finally closes. By October 2011, WhatsApp is processing over 1 billion messages per day, by the next year, August 2012, they grow to 10 billion messages per day. That’s exponential growth right there, 1–10 billion in one year. A few months later, by February 2013, WhatsApp has about 200 million active users around the world.
+
+At this point in time, Sequoia (in secret) invest another $50 million in the company at a $1.5 billion valuation. They’re making their $1 a year fee, that they’re only charging in some counties. It’s in the US, it’s in the UK, I believe, it’s in some other European countries, but nowhere else around the world that they’re actually charging for the app. But clearly, the strategic value of this is just so high and the growth is incredible.
+
+Ben: Yeah. It’s not like on any multiple of net income. Any reasonable multiple you’re going to get to $1.5 billion. One of the fascinating things here is, Sequoia, there’s no one that invests between.
+
+The last time Sequoia invested, it was $70–$80 million. They come in two years later with a term sheet for a company that they’re already basically the only investor and the only institutional. They mark up their own deal and they’re not shy about marking it up and saying, “Hey, we think this thing is worth $200 million.” They say, “Nope, it’s worth a billion-and-a-half.”
+
+Of course, the growth of the company and there’s lots of good reasons why you could justify that. The outcomes certainly justifies that. But it takes a firm like Sequoia and a partner like Jim to be able to make that call.
+
+David: Let’s bring in another thread of the story. There was probably one specific thing that was giving Sequoia and Jim a lot of confidence here. Almost a year before that round took place, in the Spring of 2012, Jan gets an email with this subject line, “Get together?” And that email is sent from Mark Zuckerburg.
+
+That’s interesting to start with. But I believe as the story goes, Jan tries to stiff-arm. He’s not really interested with Mark and famously, they totally resisted talking to the press, they didn’t have a sign on the building, they weren’t doing any of the Silicon Valley hype game, they really just wanted to focus on the product and growth. Most of the usage is international. People in the US use WhatsApp, but by far, it’s much more dominant in other countries around the world.
+
+Jan’s trying to give Mark the stiff arm and Mark just keeps coming at him. At one point, Jan forwards the email chain to Brian and Jim Goetz and says, “Persistent.” As the story goes. They decided to take the meeting.
+
+Ben: There is one other fun thing to know here before we move on from the $50 million that Sequoia invested. Jan and Brian tell Jim, “By the way, we don’t need your money because we never spent any of the original $8 million.” After the deal closed, they actually sent a screenshot or a photograph or something of the bank account before the financing that says $8.125 million or something like that to prove it to him that, “Yes, we grew to 50 employees and we scaled and we didn’t need to spend any of your money in the first place.”
+
+David: I think it was actually over $8.25 million because it was over the total amount of capital they had raised altogether, including the $250 million seed round. But before the $50 million around Jan and Zuckerburg do end up getting lunch together. Nothing happens, but Zuck makes it clear. He’s really, really interested in what WhatsApp is doing and there might be really interesting things that these two companies could do together. Of course, Facebook has gone public and had a public liquid currency. I’m sure all of these things work.
+
+Ben: Stock may have been in quite the dip, but still.
+
+David: That’s probably actually why nothing happened at that point in time, was the stock was in the dumps. But then, as we’ve chronicled it, they bought Instagram and everything turned around and the stock went way, way higher over the next year. Also, over the next year, WhatsApp grows to over 300 and then over 400 million users.
+
+Now, we get to early 2014. They’ve done the second Sequoia deal and this is really interesting. There’s only been a very little reporting on this. We have only a few tidbits to go on, but apparently Tencent, which had this [...] as we’ve chronicled had developed the WeChat—once WeChat and QQ before that, they’re the largest social and messaging app in China—was ready to do a deal to buy WhatsApp in the high single digit billions. The deal was pretty far along and Pony Ma, the CEO, was scheduled to come over to California to finalize the deal with Jan and Brian and Jim, but he had to have back surgery and had to delay the trip.
+
+We’re now late January to early February 2014. During this period of time—I’m sure WhatsApp had Jan, Brian, and Jim engineered all of these—they let it be known to two parties that things might be going on. One of course is, Mark and Facebook, the other is Google. They had gone to know Sundar, who at that point in time was running Android at Google. They let it be known to Sundar that something might be going on. Sundar gets them a meeting scheduled with Larry Page for Tuesday, February 11th, 2014.
+
+Somehow, Facebook had Zuck find out that this meeting is scheduled and he gets Jan over to his house the Monday night before February 10th. In that meeting, he says, “No, we’re serious about an acquisition. I know all your beliefs about advertising and your product beliefs at WhatsApp and how committed you are to privacy and being independent. Here’s the deal, we want to acquire you. It’ll be a big number. WhatsApp is going to remain independent.” I remember Facebook can credibly say this as we’re talking about on the show. They are the poster child for making these “leave ’em alone” acquisitions. Instagram being number one here.
+
+Ben: It had been what? Two years since Instagram?
+
+David: Two years since Instagram at this point and it had really gone well. He said, “I really want this to be a partnership. We’ll do most of the deal in stock and you’re going to become a very large shareholder in Facebook, Jan, you personally, and we will make you a board member of Facebook.”
+
+Ben: Which is I think one of six or seven at the time.
+
+David: Nobody else. The only Facebook employee board members are Mark and Sheryl, and everyone else is outside board member. This is pretty big. It’s unclear if Facebook knew about Tencent, but they knew about Google and they really did not want Google to acquire WhatsApp. Jan says, “Okay, interesting. Thank you very much.” The next day, he and Brian go down to Google. They meet with Larry Page, they talked for an hour, have a nice conversation.
+
+Ben: Where is Google in their messaging world right now? Because Google’s launched some new form of messenger. I think it’s an annual tradition for them to launch a new messaging product. I think at this point, G Chat I don’t think was totally dead, but Hangouts, they were trying to double down on. It was before Duo and some of these newfangled blondes.
+
+You got to remember back at this time, people really felt that or at least the tech press was obsessed with writing about the mobile messaging wars. There are these deep dives on WeChat in China and WhatsApp’s crazy growth. Facebook had acquired Blue Guy, they can launch Messenger at this point.
+
+Is this the new App Store? Is messaging the new app? Now, we don’t think of Google really as a messaging company even though obviously, tons and tons of messages are exchanged on the Android all the time. They were very much still in this race for what everyone thought was going to be the next user interface paradigm.
+
+David: Yup, yup. And failing at it.
+
+Ben: Like I said, annual tradition, they launch a new one.
+
+David: In the meantime, Jan, and Jim, and Brian, they’re trying to figure out what’s our number, what do we think we’re worth? Twitter had gone public recently and Twitter had a $30 billion market cap and had fewer MA years than WhatsApp. Of course Twitter had a very robust advertising business model at this point and WhatsApp had very little business model.
+
+They look at each other and they’re like, “Well, Twitter’s worth $30 billion. We’re bigger than they are. We got to be a little worth at least $20 billion.” They put this out, they got all the parties and Zuck bites. The next day, Jan and Zuck got back together.
+
+Ben: He’s like, “I just dropped a billion on Instagram. What’s 20 of that?”
+
+David: What’s 20 of that? The week goes on and then by the end of the week, Friday, February 14th, Valentines Day. That evening, Jan goes back on Valentine’s, also Jenny’s birthday, by the way. My wonderful wife, Jenny’s birthday.
+
+Ben: Dude, you are ruining her two-factor security answers here.
+
+David: Totally. Everybody's birthday. We‘re just all about birthdays here on Acquired. Valentine’s day, Mark and Jan have a romantic dinner at Zuck’s house. I believe it was during that dinner that they hammer out the details and Zuck puts $19 billion on the table. I don’t know if her literally put $19 billion on the table.
+
+Ben: I think it was $16 billion and then the next day, they negotiated up until $19.4 or something. There was something where there was an initial offer and then they raised it.
+
+David: What it might have been was a $16 billion acquisition plus $3 billion in stock awards and retention grants for Jan and Brian. That might have been what brought it up. They agree, they shake hands, they hug, supposedly, Zuck says that this was F bomb exciting. Takes out a bottle of Johnny Walker Blue, which he knew Jan loved. They have shot and then they handed off to the lawyers. Over the weekend, remember this was a Friday.
+
+Now, Mobile World Congress is coming up the next week. They want to announce this and get it done before Mobile World Congress. They handed off to the lawyers and over the weekend, the lawyers put everything together.
+
+Zuck just wants this done. It’s super important to Jan and Brian that they don't want advertising on WhatsApp. Facebook is an advertising company. They get their lawyers to put a clause in the documents that says, “If Facebook ever implement advertising on WhatsApp,” this is where the $3 billion in retention and stock grants for them becomes super important, “they will get full acceleration of any vesting on that stock and that they could walk away with all the money.”
+
+Ben: Which may have kept Facebook from putting that on the roadmap until much more recently.
+
+David: Exactly. I don’t know if this was something that because the deal came together so quickly, Facebook didn’t think hard enough about this, or they agree to do it and thought, “Whatever, we’ll just do it anyway.” This is in the final documents. The Wall Street Journal (they’re willing to in our sources) did a big article about this that it actually made it to the final docs, so it was part of the deal.
+
+The next week, they announced the deal, $19 billion total consideration. By the time the deal actually closed, Facebook stock had run up and it was $22 billion in total value. What’s another $3 billion between friends? At Mobile World Congress, Mark Zuckerburg gives a keynote speech. He talks all about the acquisition, he says that WhatsApp’s going to be independent, it’s not going to be advertising, it’s really the vision is related to internet.org, it’s that they’re building this suite of utility services for the Internet.
+
+Ben: Particularly in developing areas outside the US, where their monetization currently isn’t working at all.
+
+David: It’s all going to be great. And for a while, the things are great. No pressure to monetize.
+
+Ben: Before we went on, we should talk a little bit about the way the financial terms of the deal broke down. Sure it’s this $16 gone $19 gone $22 billion all in package. $4.5 billion of that is in cash, close to $14 billion of that is Facebook stock consideration for WhatsApp. That goes to all the shareholders including their existing investors. You got to remember that share price back then.
+
+David: And if [...] held that stock.
+
+Ben: Exactly. They’re $77.
+
+David: Their return were incredible already.
+
+Ben: $77 of share. Today, there’d be an additional 25 billion for the combined total of those shares would be up another $25 billion. You then go and look at the shares the RSUs given to the founders when they came over to Facebook, that would be an additional $7 billion today if they had held on to that stock. I don't think they did for philosophical reasons.
+
+David: No, we’re going to get into that.
+
+Ben: [...]. Facebook be like, “Oh my gosh!” What facebook was giving up here (and we’ll talk about this in the grading) I don’t think you should think about is the cash value, I think you should think about as the percentage of their equity value, which is about 10%. They’re a $200 billion something market cap company at this point. They basically sold 10% of the company in order to go and get this asset.
+
+David: For reference, we’ll talk about this in analysis later. But Facebook is a $630 billion market cap company today.
+
+Ben: Pretty wild.
+
+David: Totally wild. We’ll bring things on home here on the history and facts. A couple of things that we’ll go through quickly. At first, things do go great, there’s no pressure monetizing, growth massively accelerates. There were 400ish million MAUs at the time the acquisition. By August of that year in 2014, they hit 600. Also that following 2014, importantly they implement full end-to-end encryption and privacy within WhatsApp. January 2015, $700 million MAU. April $800 million MAU. And then by the end of the year, they’re at a billion users.
+
+Ben: Which then importantly makes them in 2015 the most popular messaging application in the world surpassing WeChat.
+
+David: The entire world. Yup, surpassing WeChat. Which is still something is so underappreciated today. WhatsApp is largest messaging application in the world. Today they have 1.5 billion monthly active users.
+
+Ben: Yup. We talk a lot on this show about, it’s hard to grasp the scope of China’s scale. WeChat as of the end of last year had 1.1 billion users. It’s the operating system for how people do things on their phones of all types including messaging in China. It’s 40% bigger than that.
+
+David: Yup, yup. Now a very different business as we will get into. But, some cracks start to form. Remember Facebook had agreed to this no advertising thing and all these messaging.
+
+Behind the scenes though, Facebook is of course like, “Yeah, we’re an advertising company. That’s our business model. That’s what works on the Internet and that’s why we’re huge. At this point hundreds of billions going to $630 billion market cap company. WhatsApp, you should be part of that.”
+
+Jan and Brian fight it, apparently, it gets really heated internally. Apparently Sheryl Sandberg keeps saying to them, “It worked for Instagram.” They keep rejecting any participation in the ad ecosystem within Facebook. Importantly, that means two things. Not just showing ads on WhatsApp, that’s actually at first the less controversial thing.
+
+Ben: It’s about sharing user data, right?
+
+David: Sharing user data from WhatsApp users with Facebook, and then Facebook has a highly sophisticated ad targeting system across all their properties. Core Facebook, Instagram—which is Instagram is on their hyper growth trajectory at this point—Messenger, everything else, they want to use all the data from Facebook to there from WhatsApp to help with targeting within those other products. Jan and Brian are like NFW.
+
+Things started to get really heated. Of course, remember they had said that at the time of announcement, even in a blogpost by WhatsApp that they would never do this.
+
+Ben: And Facebook to show they are really serious here. In January 2016, they say, “Oh, well. Yeah. That revenue model that was so benevolent and scaling so nicely at $1 a year. Yeah, it’s gone. We’re just making it free now.”
+
+David: Yup. In May of 2017, the European Commission fines Facebook over €100 million for misleading it during the antitrust process during the buyout of WhatsApp and saying that it falsely claimed that they weren’t going to use data from WhatsApp to improve advertising and that they are.
+
+Ben: To which Facebook responds something like, “Oh, whoops, we didn’t mean to. That was an oversight. Our fault.”
+
+David: Yeah, now they say it was not intentional, it was an oversight.
+
+Ben: Another interesting thing. Right around the same time, status goes from being an away message-like feature to looking exactly like stories that has just being rolled out in Facebook, Instagram, and Messenger, which is a product that happens to land itself very well to advertising.
+
+David: Very well to advertising. You can see where the setup is going here. In September 2017, Brian is like, “I’ve had enough. I haven’t hit my earn out yet, but I’m leaving.”
+
+Ben: I’m so fed up that I’m leaving billions of dollars on the table.
+
+David: He leaves $850 million on the table, but he tries not to. He tries to invoke and again, The Wall Street Journal did a big investigative reporting on this. He tries to invoke the clause. He says, “You guys are implementing advertising. Seems pretty clear I haven’t hit my earn out yet, but I’m going to get acceleration here.” Facebook fights it.
+
+They're prepared to go to the man, then finally Brian says, “Look. I don't need this in my life, I'm already a billionaire,” and he leaves $850 million on the table. He immediately donates $50 million to an organization called Signal, that is essentially making an open source end-to-end encrypted WhatsApp competitor. He becomes executive chairman there, sets up as a nonprofit, he says, “They're funded in perpetuity and everybody should stop using Facebook-owned products.”
+
+Ben: Which I totally did not realize, obviously I know about Signal, tons and tons of journalists use it, it's one of the most widely accepted private secure messaging platforms on mobile. I had no freaking idea it was the co-founder of WhatsApp that in his disillusioned post-Facebook state.
+
+David: Yeah, exactly. It was not started by him, but then he turns it into a foundation, gives them $50 million and becomes executive chairman. In March, 2018, the Cambridge Analytica scandal hits and Brian, remember he left in September 2017, he sent out a tweet that reads on March 20th, 2018, “It is time. #deletefacebook” and then all the crap hits the fan. Supposedly, Sheryl called Jan, who’s still at WhatsApp and Facebook at this time, he’s like, “What the F?” of course.
+
+Ben: Hey, you know this guy. Can you talk to him?
+
+David: Yeah, but he doesn't retract it. In fact, Brian goes and does big interview with Forbes. He says, “At the end of the day, I sold my company. I sold my users’ privacy to a larger benefit. I made a choice and a compromise and I live with that every day.”
+
+Ben: “On my yacht.”
+
+David: Yeah, “On my yacht.” Yes, of course. Well, Brian and Jan seem like really wonderful people, but yeah, that's where he goes. April, the next month, Jan announces on Facebook that he is also going to leave WhatsApp and Facebook. He leaves about $400 million on the table.
+
+Ben: At the point, where he leaves there, that's like right when they hit $1.5 billion monthly. Now, they're just kicking the pants off of any other mobile messaging app.
+
+David: It's funny, in his post, when I saw this at the time and I remember this, I thought, “Oh man, Jan is just trolling Facebook,” because his post reads that he's going to go, “Take some time off to do things I enjoy outside of technology, such as collecting rare air-cooled Porsches, working on my cars and playing ultimate Frisbee.”
+
+I don't know all that I know about Jan now at the time. I was just like, “Oh my God. This is such a troll,” I mean, good for him for doing this but the funny thing is though, I'm now feel like I'm in Jan’s head. I think he was totally serious. He actually is a nut. I listened to a great podcast about collecting rare Porsches. He's so into it, I think he was being dead serious.
+
+Ben: It is crazy that he decided to get specific and say rare air-cooled Porsches in the press quote.
+
+David: We’ll link to this in the show notes. He doesn't like turbocharged Porsches, He likes naturally aspirated, he thinks it's the best. I had no idea until I found this podcast. There's a whole niche community of Porsche 911 enthusiasts that have religious wars about naturally aspirated versus turbocharged engines, it's amazing.
+
+Ben: You can have a religious war about anything, my friend.
+
+David: About anything. I think the moral of the story is podcasts are the next platform for the Internet. He's gone and that gets us to today, a couple things we’ll cover but WhatsApp continues to grow hugely.
+
+Ben: Yeah, they did one other thing that's worth calling out during this time period in the last few years and that's they launched WhatsApp Business, which is a second WhatsApp app that I installed on my phone that basically works a lot like WhatsApp but if you're a business and you're communicating with your customers through WhatsApp, this is optimized for business way to do it, which foreshadows some of the stuff that they potentially plan on doing with the app. I opened the show by saying like they haven't done much, I mean they really haven't, they've scaled it, they simplified the UI a little bit and they launched WhatsApp Business.
+
+David: There are four quick things that happened, one is trying to launch WhatsApp Business, which has been a failure to launch. Two, they tried to get into mobile payments in India. It’s in beta, but it's been in perpetual beta.
+
+Ben: They’ve been in beta in freaking 2018, early 2018. There's also regulatory issues, there’s something like they built a data center to support 500 million people using it concurrently, but it got tied up in some terrible regulatory thing. On earnings calls recently, they've said it's ready to launch, maybe we'll see it this year.
+
+David: We’ll see, maybe, and this is one of the reasons we waited so long to do this episode, is the messaging out of Facebook has been for years like, “monetization for WhatsApp is coming.” Well, now it's been six years, but it's not here.
+
+Ben: I just want to touch on this peer-to-peer payments thing. If you run the playbook of, “Everybody in India right now, where tons of people are using WhatsApp to message, we just make it easy for them to send money back and forth and suddenly it's like Venmo or Square Cash. That doesn't have a business model, I should note, so they're going from something without a business model to something without a business model.” We heard this directly for Andrew Kortina when he joined us for the Venmo episode. Peer-to-peer payments, there's no consumer acceptable way to take a vig on a peer-to-peer payment. It’s all about the merchant payments.
+
+David: Yeah, exactly. Peer-to-peer payments can be a way to bootstrap into merchant payments.
+
+Ben: Right, one more leap that they need to then take which is, “Hey, all the consumers are exchanging money let them pay at your store with this thing,” but like, “We're still two leaps away from that.”
+
+David: Yeah. Okay, fine. The founders are now gone, this clause doesn't apply anymore, you think that they would just implement advertising, at least in status, which is the story is Snapchat competitor that they baked into WhatsApp. Facebook announced last year in 2019 that they were going to do that. They even showed prototypes of what advertising in stories on WhatsApp would look like and stories on WhatsApp are pretty popular, a lot of people around the world use them.
+
+Ben: As a matter of fact on the Q2 earnings call this year, there's a quote from Facebook saying WhatsApp status is already the most popular ephemeral stories product in the world, which is a hell of a statement.
+
+David: Yeah, totally. Seems obvious, right? Well, they just announced last week that they're not going to do that. That they're pulling all advertising from stories on WhatsApp, so back to no advertising on WhatsApp.
+
+This is where things really jumped the shark, the final thing that has happened in the post-founder exiting world is Libra and Calibra within Facebook, which of course Facebook's crypto currency efforts. The thesis was WhatsApp would make a lot of sense as a remittances platform for people use it to communicate with trusted interpersonal relationships between countries. Shouldn't that also be a really great platform for remittances and people always said crypto currencies are great for remittances. You can avoid all [...].
+
+That makes sense, but we all know Libra’s a mess right now. I think they're being sued by the government, I don't know the latest state of it, but it seems unlikely that that is going to be a viable business model anytime soon.
+
+Ben: Anytime soon as the right thing there. I think there's a variety of things that could still work out for WhatsApp, but the important takeaway, listeners, is we could not sit on our hands any longer before doing this episode and just keep hearing wait and see from Facebook on earnings calls. It's not happening in the near future. There might be something interesting. It might be with paying businesses, that might even be tools for businesses to promote, I don't know. I'm not being articulate here because I don't actually have a really great thesis around this, but the thing to take away here is it's not going to be very soon.
+
+David: Okay. I think this is the perfect transition to acquisition category and this is the place to ask the question again that you asked the top of the show, which is, “Okay, what is this? $22 billion for no revenue six years later, effectively no revenue, what's going on here?”
+
+Ben: Yeah. David, before we categorize that, I have two things to say. One is a thank you, that I want to issue as we get into the analysis here to front of the show. Turner Novak of Gelt VC for helping us tremendously in how to think through analyzing this one. Turner is a really smart person in all things consumer-social and we spent some time trying to figure out how to slice this one up.
+
+The second thing that I want to say is, I would love to quote for you how Facebook broke this down when they reported the acquisition to their investors, which I think is really illustrative of their thinking at the time.
+
+They reported a $17 billion total sales based on the price that they knew at the time, $2 billion it was for the users that they acquired, half a billion dollars for trade names, so WhatsApp has a half-billion value brand out in the world, a third of billion for technology, and then $15.3 billion of good will. I think that actually adds up to a little more than $17 billion, but that's okay.
+
+They go on to articulate (this is from the 2014 annual report) that good will generated from the WhatsApp acquisition is primarily attributed to expected synergies from future growth, from potential monetization opportunities, from strategic advantages provided in the mobile ecosystem, and from expansion of our mobile messaging offerings, which to me says, “$15.3 billion of we have no idea. We just needed to own this thing.”
+
+David: Now, of course this is accounting treatment and anybody who's worked in investment banking or certainly accounting knows good will is it’s just where your stuff, it’s a plug, but I think you're right, this is illustrative. I think they were thinking like, “Yeah, yeah, this is going to take a while and whatnot,” but I think Facebook was fully expecting that this was going to be a cash flow monster, just like Instagram.
+
+Ben: Yeah, so listeners, if you're new to the show, the way that we categorize these acquisitions are people, technology, product, business line, asset, or other. Occasionally, we categorize it as something that—I'm going to elect to use today—is a takeout, which is, “It is worth a lot of our money to stop this thing from existing as an independent entity or in the hands of someone else and we’re willing to pay handsomely in the form of good will to make that happen.” You can argue product, you could argue the asset of the users, certainly wasn't the business line, technology—Lord knows Facebook could build; people—there were 50 people that work there at the time. Obviously, some talented founders, lots of talented engineers, but my God, this thing was a takeout acquisition.
+
+David: Yeah. Well, I don't care who the people are, nobody is worth $22 billion. So yeah, totally. It was takeout or I was thinking that defensive, both in the moment of like, “Oh my God, we can't let Google have this,” and whether they knew about Tencent or not, the other thing is we've talked about in previous episodes, Facebook was really trying to enter, Mark was really coming up with the plan to enter China at this point in time. He really believed that China was going to be the next frontier for Facebook. If Tencent were to acquire WhatsApp, then that would be terrible. Of course, Tencent ends up acquiring Musical.ly and building TikTok, so Facebook won the battle but lost the war here, but I think they’re defensive and fast forward to now, things are pretty sad, the state of affairs as we just described.
+
+On the other hand—this gets into if you're ready to move on to what would have happened otherwise—what if WhatsApp had remained independent? Certainly, we just talked about what would happen if Google or Tencent or somebody else had acquired them. Would it, in this world now, where everybody's so privacy-motivated, Mark Zuckerberg has said, once he decided not to enter China that his vision for Facebook is a privacy-oriented world, what if WhatsApp—
+
+Ben: To use a Ben Thompson phrase there, that's a massive strategy credit, it's like, “Yeah, yeah, privacy is super important to us, kind of.”
+
+David: Except when it comes to ad targeting.
+
+Ben: But to be fair, they keep all the data to themselves. By virtue of owning the entire end-to-end experience, they don't exchange it with third party ad networks or other websites, because you spend so much time with them, they own the data end-to-end.
+
+David: Absolutely true, but it would be interesting if there were a viable third, standalone, independent public company, which WhatsApp would certainly be at this point, that were a different vision of what a social media app looks like. Would they have figured out some of these business models that we talked about along the way, independently? I don't know. A lot execution risk there, but certainly wouldn't have threat.
+
+Ben: You nailed it. This is the real crux of grading. It’s not so much about what is Facebook gaining by owning it. It's how much they are decreasing their risk of having no value in the future by this thing existing. Facebook's entire business is maintaining attention share. So long as you are spending your time and attention with Facebook, they're going to keep printing money to the tune of 45% operating margin, $20 plus billion of profit a year.
+
+It's a freaking cash machine and by looking out in the world and observing WhatsApp and saying, “We’ll have to squint to your point in execution risk.” But there could be this thing that leverages all that connectivity that people have with each other. They’re exchanging messages which isn't so different than public posts, and they're exchanging statuses which isn't so different in the way that we started with wall posts. It could evolve into thing that steals attention share.
+
+The what would have happened otherwise way to think about this is, they could have been independent and they could have evolved to do their own social network or to your point earlier, Google could’ve bought them and that would have been catastrophic, because I think Google would've been the only formidable ones as you mention who could have paid up, but then also who would have executed attention-grabbing strategy there.
+
+To wrap this, I think my little rant here, what would have happened? One billion people could have shifted attention from Facebook to WhatsApp, but I'm going to hold off right now on trying to put a price on that until we get to grading.
+
+David: Well, I’ll only go one step further. Okay, you all have this line of logic. You could say if you're listening, that doesn't add up. The same thing could’ve been said more credibly about Snapchat and Facebook wasn't able to buy Snapchat. Zuck only offered $3 billion, things fall apart. Certainly, if he's willing to pay $22 billion for WhatsApp, he certainly could have had Snapchat for $22 billion, I suspect. I don't know for sure, but why didn’t he put that $22 billion on the table for Snapchat?
+
+Here's what I think is interesting. Snapchat execution-wise is a much clearer path to what we were just talking about, advertising-based network, super attention-based, all that stuff, but it's a much smaller network, much, much smaller. WhatsApp is the largest, I believe, the largest network in the world and it’s global.
+
+Ben: I pulled some stats here, these are all monthly active users. Facebook has 2.4 billion MAUs, YouTube has 2 billion, WhatsApp has 1½ billion, making it the largest messaging network. iMessage, which I think is an interesting one to consider here, is 1.3 billion, Facebook Messenger also 1.3 billion.
+
+David: I didn’t realize iMessage was that big.
+
+Ben: It might be devices not users. Apple’s a little tougher to read on that, but on Instagram with 1 billion users and WeChat right there at around 1.1 billion.
+
+David: Isn’t TikTok heading a billion-ish now?
+
+Ben: Good question. Yeah. But the important thing to know is today, Snapchat's only 310 million, Twitter's only 330 million and I actually think TikTok may only be like 500 million, but I could be wrong on that, but importantly Twitter and Snapchat subscale networks, when you're thinking global scale.
+
+David: I think that's an interesting point for us to consider in grading, a lot of execution risk ahead for WhatsApp, but they were the only player out there that had the scale to really be a global threat.
+
+Ben: Yeah, and it's really interesting to think about of the seven social networks that have over a billion people, Facebook owns four of them.
+
+David: Of the others that are that high, YouTube is off the table, Google already owns it, iMessage, no way Apple is going to sell iMessage.
+
+Ben: The most bundled product in the world, yeah.
+
+David: Yeah, WeChat and Tencent is off limits because of the whole China issue, so yeah, WhatsApp’s the only… and Facebook already owns Instagram, so it's the only one in play.
+
+Ben: Yeah, I totally agree. Playbook.
+
+David: Playbook, let's do it.
+
+Ben: Alright, so listeners, this is where we analyze what did this acquisition enabled them to do, them being Facebook and what plays or what tactics did WhatsApp and Facebook used along the way to become this behemoth that it's become. David, do you want to go first?
+
+David: Yeah, sure. We've touched on a lot of them. The only one that I want to highlight again is just these magical moments that only come once every platform shift or roughly every decade in tech, and who knows what the next one's going to be, but these windows that open up where they're not obvious in the beginning.
+
+Again, remember, Jan wanted this to be away messages, but if you can get in there and figure out the right product, there's an opportunity to just serve such a clear need that a new platform enables, and turnover the guard of technology and networks that if there is one of those, and you think you have one of those opportunities, and you see it. Good God, take Brian's advice and do not give up. Go a couple more months.
+
+Ben: That’s so funny. That was exactly the point that I want to make here, and specifically around both push notifications becoming available, and also with the widely available data networks that lived on top of telephony and on top of SMS completely obsoleting the way that all the carriers were billing for messaging at that time.
+
+David: Yeah, we didn’t talk as much about that. We had a little bit at the beginning of the episode. Yeah, it's just such a disruptive business model, like I could pay $10,000 a month for my child's 16,000 text messages or I could pay $1 a year.
+
+Ben: Yeah. It's funny because sometimes we do this section, I'd like to do it today on value creation versus value capture, because a lot of companies can create a ton of value in the world, but one of the hardest things to do is make sure that you're able to capture some of that value you create. WhatsApp didn't really try. WhatsApp created so much value, and frankly, they destroyed tons of value for carriers, but until that decision…
+
+David: Actually, that's slightly debatable I think.
+
+Ben: Okay.
+
+David: I think you're probably right, but Jan and Brian got this question all the time, and their answer that they came up with was, “No, no, no we're actually helping carriers because we're encouraging people to adopt smartphones and move over to data plans which data plans are more expensive than text plans.”
+
+Ben: That’s fair.
+
+David: It's a fair argument but it's flawed in that that was going to happen anyway.
+
+Ben: It is worth noting, too, that carriers just figured out a way to bill everyone like they just repackaged all of their pricing, it's not like they actually materially lost money. I don't consider WhatsApp an effective value capture machine and still is not.
+
+David: Clearly. They're capturing basically zero value, but massive value creation for the world, and also, we didn’t talk about this as much, but the end-to-end encryption and being the first platform to implement that platform wide across everything. Nobody saw that coming in 2014, but in the world we live in today, that's really important and really good for the world that they did that.
+
+Ben: I totally agree. To get into some of the nitty-gritty of that, they actually then, WhatsApp later implemented the signal protocol which is I believe also end-to-end encryption.
+
+David: It is the same thing as the foundation that Brian and the Open Source messenger and…
+
+Ben: Yeah. We're not privacy experts, but from a cursory read over it, what people that are really into privacy would want is Facebook to not be able to read of course the contents of your message, but also not be able to read who sent what when. David, if I sent you a message on what's up right now, Facebook would have it in their server logs, I believe. Listeners, please email us acquiredfm@gmail.com or tweet at us. I believe they would know that I just sent you a message.
+
+David: Interesting, which is one of the things they really wanted out of this anyway.
+
+Ben: There is more data they could get out of WhatsApp but I do think they get a good amount of data as it is today.
+
+David: Interesting.
+
+Ben: Now, before we grade this one, Dave and I would like to thank Wilson Sonsini the official legal sponsor of season six of Acquired. Wilson Sonsini or WSGR is the premier legal adviser to technology, life sciences, and growth companies worldwide as well as venture firms, private equity firms, and investment banks that finance them. Thank you to Wilson Sonsini, and now David, grading.
+
+David: You're going to make me go first.
+
+Ben: Let's do that first. What's the criteria? What do we consider A+ and what do we consider an F?
+
+David: For me personally, anything in the A range is off the table just because I'm offended by the execution here. But that's just me. I think you could still make an argument it's in the A range. I think the criteria by which I (at least) am going to grade is how important was this defensive move and how valuable was it.
+
+Taking the perspective of grading as we always do from the acquirer’s perspective as Facebook, I think this is still probably either a B or a B+, and maybe people would argue it's in the A range just by virtue of like, yeah, they gave up 10% of their equity value, but they took out the one viable global network in this generation that could have been independent.
+
+The stock has gone from $200 billion as market cap to $630 billion market cap in the intervening six years. Of course, in many ways due to not WhatsApp but just by virtue of having the clear runway to do that has been good for Facebook. Very, very good for Facebook. It pains me to say this because I want to give it an F, but that's my grade.
+
+Ben: I'm glad I wrote down my grade before I heard you say yours, I can be unbiased here. Two things to keep in mind listeners. One, they sold 10% of their market cap to be able to buy this company.
+
+Another way to think about this is, Facebook is a phenomenally profitable business, and another way to frame this is, they basically spent all of their 2019 net income or profit to buy this company. So, was it worth spending an entire year of profit to and buy them? I am going to grade this an A. I don’t think it’s an A+, but I'm going to grade this an A.
+
+David: I understand where you're coming from.
+
+Ben: The reason I'm going to do that is obviously the same defensive play argument, but the way that I think about it it's like, what are the key risks to Facebook at this point? There's regulation. I think there's a regulatory reasons that they could go away. There's obsolescence because the tension shifts elsewhere.
+
+David: Yes they're real, of course, but if you look at history—obviously, a lot of this will depend on the coming election and whatnot—Ben Thompson talks about this a lot, the DOJ didn't kill Microsoft. Microsoft is actually back and better than ever, but didn't kill the old version of Microsoft. Google killed the old version of Microsoft. Regulation is such a slow process and technology moves so fast. That is the real risk.
+
+Ben: Right. We're going regulation is not really their key risk, it's really feeding into obsolescence and it's the thing that happened to social networks before them. Facebook has a lot of core competencies, but their very most central is not feeding into obsolescence. Buying Instagram is brilliant. Companies move on multiple fronts. They bought them another generation.
+
+I think WhatsApp is this similar thing where they carved off 10% of the value of their company to go get it, but should they have done that? Absolutely. Should they do it again? They should go do it five more times. Every time there's one of the seven billion plus users of social networks, or billion to be it in the near future, use of social networks is up for sale.
+
+They should go make a horcrux and carve off a piece of themselves, or do whatever they have to do, to go and get that thing, and keep their dominant position. The consumer sentiment couldn't be freaking worse on this company based on a lot of #deletefacebook, there's election stuff, they're in trouble left, right, and center. It is making more money than ever. There are more people using it than ever. Sure growth has slowed, but it's because they saturated humans on the Internet.
+
+I just think that this is such a complete and total no brainer. Even if they never make $1 off of WhatsApp to neutralize that threat and get to continue to own the world's digital attention, I think it’s not invaluable, but is very, very valuable to them and one way to look at this is, if you think there was a 10% chance that WhatsApp could have totally wiped out Facebook at some point in the future, then it was break even to buy it even if they never ever generate any cash flow.
+
+David: I agree. I just can't bring myself to give an A for not so logical reasons. Two comments to add onto that. One, in talking to a bunch of friends at Facebook and former Facebook friends, and thinking about this episode, one thing that is a core competency and I think from my understanding, really viewed as a core competency within Facebook is extremely robust competitive intelligence. They know this. They know everything you just said, and they are paranoid about it.
+
+Ben: What was that VPN app that they were using that they used a competitive intelligence to help them understand the…
+
+David: Anavo or something like that.
+
+Ben: Onvado or Anavo, yeah, and then they eventually bought it, and then they got into a bunch of trouble because they were… Yeah.
+
+David: That's one. Then two, I think this brings up an interesting question. If you'll indulge me for a minute given my non-logical from an investor's standpoint discussion of why I can't give this an A.
+
+Ben: Your emotional B.
+
+David: I think there's a [...] question given all this and consumer sentiment on Facebook. How should the public and how should governments think about Facebook? Is it more like a tobacco company than a technology company? If you look at tobacco companies, there are still many, many billions, tens of billions of market cap publicly traded companies because, just like you’ve been saying, they are like wild, cash flow monster-producing machines, but they're also tobacco companies.
+
+Ben: They're also good at not dying.
+
+David: Right. I'm not sure I'm ready to go so far and say social media or Facebook is tobacco, but certainly there are some questions about the societal good of data privacy, ad targeting, the emotional effects on people of social media, and in particular Instagram and Facebook.
+
+Ben: You're looking at a guy who's number one time consuming app on his phone is Twitter.
+
+David: Well, it's not a Facebook app.
+
+Ben: Yeah, that’s true. Maybe there's an LP show deep dive there somewhere. Have someone come on and debate the ethics of social media with us.
+
+David: I think that will be super fun.
+
+Ben: There it is. There is WhatsApp, we finally did it.
+
+David: I'm glad we waited this long.
+
+Ben: Yeah, me too. It's not like we would have gotten any more information, but at least we know that Facebook wasn't going to effectively immediately gain any new cash flow out of it.
+
+David: Yeah, well I think they waiting this long too, it also made it super clear what this was really about. If we've done this episode two years ago we probably would have graded this much lower because we wouldn't have seen how important this defensive move was.
+
+Ben: It's interesting.
+
+David: At least I don't think I would.
+
+Ben: Yeah, maybe not. You want to do carve outs?
+
+David: Yeah, let’s do carve outs. We haven't done that in awhile. A good way to kick off season six.
+
+Ben: It is, you want to go for it?
+
+David: I’ll go. This may come as a shock to you Ben. I'm glad you're sitting down. I have been wearing different sneakers recently.
+
+Ben: Dude, I almost did a sneaker carve out too and it was almost also not Flyknits. What are you wearing?
+
+David: I'm wearing Reebok Floatrides. They're excellent. Both for running and for just around town because they're super stylish. I love my Flyknits. I still have my Flyknits, but Nike is moving away from Flyknits and Free Flyknits.
+
+Ben: The new ones are not good.
+
+David: No, they look terrible. They're a really messed up Back to the Future thing. These Floatrides, sticker price $100, I got mine on Amazon for $65. I found out about them, Runner's World reviewed these things and they were like, “You're not going to believe this, but these Reeboks are the best $100 or less running shoe you can buy on the market.” I'm like, “All right, great. I need some new running shoes. I'm going to try that.” I got them and I'm like, these might be my everyday shoes. They're that good.
+
+Ben: Are they Floatrides?
+
+David: Floatrides. There's a couple of different models, I’ll link to the one that I got. But yeah, I'm loving them.
+
+Ben: Pretty nice, man. You sure you're not a Reebok endorser right? You didn’t get a deal?
+
+David: I'm working on that. I'm working on the shoe deal. If Kanye can have a shoe deal, I think Acquired can have a shoe deal.
+
+Ben: Oh yeah, we should get on that for sure. My carve out is a product category that I'm going to recommend because I don't know the brand, but I recently went to the eye doctor, I wear contacts. After getting my contact fitting, I was talking to my eye doctor and she brought up, “Do you have computer glasses?” and I have seen other people with them. I didn't really understand and got totally sold on the value. I've been wearing them and I absolutely love them.
+
+They do this interesting thing. I wear them over my contacts and they do two things. One, they change where my eyes naturally are at rest to 18 inches in front of my face instead of being off in the far distance which is what my contacts naturally have them do. I think what our eyes naturally would do if you don't require glasses or contacts, it makes it so that when you're staring at a screen, you don't get eyestrain from constantly having your eye muscles tensed up to be looking at something close to you. I find that working is much more comfortable and I can read and write longer.
+
+The other thing that they do so there's this slight magnification from changing where the resting focuses. Everything on the screen looks a little bit bigger. They're saying, “Oh, I'm becoming an old person.” The other thing is it filters out blue light. It doesn't really change materially the color or the hues of what you're looking at, but it makes it safer for your eyes, better for your brain, you can sleep more easily at night. They’re awesome. I actually now feel very strange sitting down on my computer without wearing the glasses.
+
+David: That's awesome. How do they work? Are they prescription?
+
+Ben: I think they are prescription, but they sell ones that aren’t prescription, but basically they have the two features. One is the blue light filtration and the other is changing your resting focus to be about 18 inches from your face.
+
+David: Got it. They're not designed for vision, they like outside of work in the computer vision correction that would be like, you [...] to everyone now.
+
+Ben: Correct.
+
+David: Interesting.
+
+Ben: I actually take them off when I stand up to walk to a meeting or something because it's freaky when you look all the way down the hall. It’s not as dark as not wearing your glasses or something like that, but you got to refocus your eyes aggressively to go look at something far away.
+
+David: I'm going to have to check these out because, (a) it sounds like a great product and benefit, (b) I've always thought that I might look good with glasses but I don't have abnormal vision. I'm not going to be that guy just to wear glasses for…
+
+Ben: Now you have an excuse.
+
+David: Yeah, now I have an excuse.
+
+Ben: It makes you look really like big eyed though like a bug, like what I'm wearing right now. I do know if my eyes look bigger to you, but when I caught my reflection, I was like, “Whoa,” it was huge.
+
+David: I didn’t notice, but now that I'm looking, yeah you look a Snapchat filter.
+
+Ben: That’s what I've always wanted.
+
+David: I love it. That's a good one.
+
+Ben: Let’s bring it home. Listeners, if you aren't subscribed and you like what you hear, you should. Especially if you're listening in Apple Podcast. We deeply appreciate you hitting the subscribe button and helping us (of course) to get delivered to you every time that you want to listen to a new episode, but then also, it really helps us in the iTunes technology charts. Hit that subscribe button if you like the show.
+
+If you want to become a limited partner, subscribing gets you access to our bonus show, where we dive deeper into the nitty-gritty of building companies, and you can listen by clicking the link in the show notes or going to glow.fm/acquired. All new listeners get that 7-day free trial.
+
+With that, thank you again to the Silicon Valley Bank and Wilson Sonsini, and we will see you next time.
+
+David: See you next time.
+
+‍

@@ -1,0 +1,933 @@
+Ben: Welcome to Season 7 Episode 3 of Acquired. The podcast about great technology companies and the stories and playbooks behind them. I’m Ben Gilbert.
+
+David: I’m David Rosenthal.
+
+Ben: And we are your hosts. For everyone new to the show and for everyone who’s been with us or a while, it’s been a while since we introduced ourselves. We wanted to tell you a little bit about who we are. I am the co-founder of Pioneer Square Labs in Seattle. We are a startup studio and early-stage venture fund. My background is primarily in founding companies and product management.
+
+David: I have been a long time venture capitalist. I’m currently an independent angel investor and advisor to startups based in San Francisco. I come at things from the venture and investing side.
+
+Ben: Most importantly, we are excited to be with you today as peers and practitioners in the industry, diving into stories that we all talk about the water cooler when that was a thing.
+
+David: The Zoom cooler.
+
+Ben: The Zoom cooler, exactly. Today, we will explore what happens when an idealist has full control over a product with perfect global product-market fit, unbelievable economics, and has the leverage to shape the world to his idealistic will, even (potentially) at the expense of his own business. Today we talk about Epic Games, makers of Fortnite, and the Unreal game engine.
+
+You probably know of them since Fortnite is an absolute international phenomenon, the most played game in the world, and for parents out there—the way Gen Z hangs out with each other, or because they are currently the most credible threat to the world’s largest company—Apple. Not to mention, of course, the incredible amount of attention Fortnite consumes is a threat to Facebook’s advertising business model. Netflix cites it to its investors as the number threat. Epic is the primary US ally of the quiet Chinese giant, Tencent. But their ambitions expand far beyond any of this, and we can’t wait to bring you the full story today.
+
+For the bootstrappers out there, this may just be the most successful bootstrapping story of all time. Going 22 years from founding before rising a dime of investment, so strap in.
+
+David: Incredible. Cannot wait to dive into this one.
+
+Ben: As always, if you love Acquired and you want to hone your craft of company building, you should join the community of Acquired Limited Partners. You’ll get access to the LP show where we dive deeper into the fundamentals of company building and investing in addition to our monthly LP calls where we talk with all of you directly. And of course, our Book Club and the Zoom calls that we have with the authors.
+
+Our most recent episode on the LP show was on the fundamentals of venture capital. Discussing how VC firms make their investment decisions. Tune in if that’s of interest to you as a founder or active or aspiring investors. If you aren’t already a limited partner, you can click the link in the show notes or go to acquired.fm/lp. All new listeners get a 7-day free trial.
+
+David: We realize too—while we’re introducing and explaining ourselves here—it’s been a while since we’ve talked about why we call this thing the Limited Partner Program. It’s because limited partners are the folks that give capital to VCs and venture firms and make everything possible. That’s what you guys are for us too. You are super special. Everyone who is an LP, we thank you. If you want to become one, can’t wait to have you.
+
+Ben: Yup. Now, on to our presenting sponsor for all of Season 7, Tiny, and its founder Andrew Wilkinson. Andrew, in the last episode, we talked about the types of companies that you buy to build your portfolio of wonderful internet businesses at Tiny. Why does it make sense for the founders the way that you go about doing this?
+
+Andrew: When you go to talk to private equity, it’s typically a six-month process. There’s a lot of renegotiation. There’s really brutal diligence. It’s not a fun experience. The worst part of it is that 60% of the time, it goes nowhere. We try and flip that on its head. We will generally tell people if we’re interested within 2 days, send them an offer within 5, and try and close within 30. We can offer them a full upfront cash out. There’s no complex earn-out, weird structures, or anything. The founder can either stay or go. We’re not going to handcuff them to the radiator, and the company gets to operate as it is.
+
+Our model is to hold companies and folks on profits and keep them for the long-term. Your employees aren’t going to get merged into a big larger company, and the business isn’t going to get flipped in two or three years. It’s very attractive to a founder who is proud of what they’ve built and wants their business to persist.
+
+Ben: Yeah. If you’ll indulge my curiosity, listeners of this show know that every business and every strategy is about tradeoffs. When you say compressed diligence or you say we close super fast, what are the tradeoffs that you’re willing to make, and why can you make those?
+
+Andrew: The private equity model is I’m going to tell you $100 million and then it’s going to be $30 million and a $70 million earn-out (if you’re lucky). We will just go to you and say, we'll give you $30 million. Here is what makes sense and we’ll do it in a short period of time. I’ve compared it to if you’re going to go on a date with somebody and they say it’s really important that you’re Christian. You say you’re Christian on day one and then a month later you say you’re an atheist. There’s this ridiculous dance that gets done. We just don’t do the dance.
+
+Ben: Got it. Thank you for the analogy, and thanks for the insight. If you own a wonderful internet business that you want to sell or you know someone who does, you should get in touch. You can learn more at tinycapital.com or by clicking the link in the show notes. All right listeners, time for our episode on Epic Games.
+
+David: Let’s dive in. Before we do, we owe a lot of thank yous on this one on the research to a whole bunch of people who have written a lot, and done a lot of great reporting and analysis of Epic, Apple, Tencent—everything going on here. Three, in particular, I wanted to call out though. One is Matthew Ball and Jacob Novak who wrote just an awesome six-part primer on Epic and all the dynamics around the company. We’ll link to that in the show notes. Definitely go read that.
+
+Second is the gaming website, Kotaku did this wonderful interview with Tim Sweeney, the CEO and founder of Epic back in 2011. Nikki was inducted into the Gaming Hall of Fame. Many of the direct quotes that we’re going to use from Tim in this episode are from that interview. And then finally, this is so fun. I finally got a chance to use my favorite non-tech industry podcast out there as a source for an Acquired episode.
+
+Ben: You’ve been waiting for this forever.
+
+David: I’d bend those. I’ve been wanting to do this forever. Wizard and the Bruiser. Such an awesome podcast. It’s basically Acquired for nerd history.
+
+Ben: Then what are we?
+
+David: We’re a business nerd history.
+
+Ben: Yes. They are more game nerds. I suppose we’re more business nerds.
+
+David: Games, anime, and stuff. They did a deep dive episode on Epic last year, which was a super helpful jump-starting our research. Thanks, guys, as always.
+
+Ben: And for everyone, we’ve put all of our links to every source that we use in the show notes. Feel free to peruse those. A special shout out to Griff in the Acquired Slack at acquired.fm/slack who recommended the Matthew Ball piece that got us started down the rabbit hole of researching this in the first place. Awesome to have listeners help us do some of the research.
+
+David: Always great. We’re going to get to all of the high drama here around Fortnite, Tencent, Apple, the lawsuits, et cetera. As always, on Acquired, we start way back. I think it’s particularly important here because I don’t think you can understand what’s going on or Epic without understanding the man who is its founder and CEO—Tim Sweeney.
+
+Who is Tim? He was born in the year 1970 in Potomac, Maryland. He was the third of three brothers, but his older two brothers were much older. One was 10 years older than him, and the other one was 15 years older. While he was the youngest of three brothers, he was probably almost like an only child for a lot of his life. By the time he was in elementary school, both of his brothers were probably in college or out of college at that point.
+
+Ben: Yeah. He started programming super young. He was an 11-year-old game programmer.
+
+David: Yeah. It’s all wrapped up in this. His dad worked for the Department of Defense. He worked at the mapping agency as part of the Intelligence Unit where they were creating military maps from satellite imagery doing Palantir and skybox type of stuff back in the day before those companies.
+
+Early on, young Tim realizes two things about himself. One is that he loves tinkering with the guts of how things work. Both mechanical—and as we will soon see—computers and technical things. Two is he also actually loves business. This is a pretty rare combination. He becomes just a fantastic engineer and a fantastic business mind.
+
+But he doesn’t love business for the money. This is a man who does not have a lot of use for money. He lives in North Carolina, he’s not married, he doesn’t have kids, he doesn’t hang out with celebrities. Yeah, he bought a few fancy sports cars and a nice house and stuff. He has talked about it to the Wall Street Journal. He mostly eats Bojangles fried chicken and drinks Diet Coke. He wears cargo pants that he probably buys for about $20.
+
+What he does is he writes code and works on Epic. That’s what he cares about in life. It’s just so refreshing seeing that and this man who’s running such an important internet company versus all the other larger than life tech CEOs out there.
+
+Ben: You say he loves business. He’s more of a business engineer. He’s not a mogul. He’s not leveraging every component of his business to give him the most cash. He’s excited about what business gives you the potential to do in the world. It isn’t bringing an engineering mindset to the business or a tinkerer’s mindset.
+
+David: He’s now taken most of his wealth and has been applying it to land conservation in North Carolina. Which is just so different than you see from so many people these days.
+
+Ben: One more point to just paint the classic computer engineer that is Tim Sweeney as David, you and I both watched this video from 2008 where they interview Tim. He’s got a sports car and has a nice house. He’s like, here’s my dining room. Here’s my dining room table. I’ve never eaten at it. I mostly go to Burger King. It's everything you would expect from an awesome video game programmer, not a CEO worth $4 billion or $5 billion.
+
+David: Totally. How did he get this way? Ben, as you mentioned, when he’s really young—like 5 or 6—he starts tinkering around and disassembling lawn mowers and then building them up into go-karts and racing them around. I feel like his parents must have—by this point in time—just been tired of raising little kids for so many years. They’re just like, all right Tim, do whatever you want.
+
+And then, a couple of years later—when he’s about 9 or 10 years old—a video game arcade pops up pretty near his house. This is like the 1980 timeframe. This is Noland Bushnell, the height of Atari just after Pong, but Space Invaders was a thing.
+
+Tim becomes super fascinated by this arcade. Eventually, his parents get him an Atari 2600 at home. But it’s not so much because he loves playing the games, although he thinks they’re interesting. He’s interested in how they worked and in particular, how the cabinets work. He talks about the Atari 2600 that he’s got. He’s like, “Yeah, I like playing some of the games. But it was a pretty crappy machine compared to the cabinets.” He wanted to know how these things work.
+
+Then, a little bit after this time after he started getting into games and this being his first exposure to computers, he went out to visit his oldest brother Steve, who had moved to San Diego and was working on a startup in the computer industry there at that time. Remember, this is like 1981, 1982, just at the start of the PC revolution. Steve had bought a bunch of brand new IBM PCs that they were using at the company. He shows young, 11-year-old Tim how to use these things, how to program it in BASIC. Tim’s like, that’s it. He’s found his calling in life.
+
+He has this great quote, “Trying to build a go-kart, you can spend months on something like that and it never quite works right. But the computer would do exactly what you say. I could write, in just a few hours, a really impressive program. It was the ultimate machine to tinker with. It was love at first sight. From that point on, I tried to dedicate all of the time I had free to learning to do more with computers.”
+
+Ben: Which for anyone who’s a programmer out there knows, the computer always does exactly what you’re telling it, both a gift and a curse. Because if it’s doing the wrong thing, it’s just running the instructions you put in there.
+
+David: Tim goes back home from visiting Steve in San Diego. Steve must have been seeing the gleam in his kid brother’s eye. He buys the family back in Maryland an Apple II. This becomes Tim’s obsessions. He starts making games and other programs for it. He estimates that over the next couple of years, he would spend the canonical Malcolm Gladwell 10,000 teaching himself how to program.
+
+This is what’s so cool. Remember his dad works for DOD, he has access to early, early proto-internet networking type stuff. He goes on BBS systems from the Apple II and he starts asking questions and learning from folks there everything he needs to know about programming. He’s completely self-taught and he makes a few games during this time, but he never really shares them with anybody.
+
+A little bit later in high school is when he discovers his second passion for business. As Tim tells the story, it’s when he gets a summer job at a hardware store. The wage that he’s earning at the hardware must have been minimum wage, at the time $4 an hour. He’s working there and he realizes, wait a minute, no matter how hard I work here or how well I do, I’m only going to earn $4 an hour for the summer. This is the very programmer engineering mind working at this here. There’s got to be a more optimal way I could use my time. Not because I need the money, but just because I could do better.
+
+What he decides instead is he sees that there are a bunch of lawn mowing businesses operating in the neighborhood. It’s summertime, cutting the grass in Maryland. He goes around, he asks these families, how much are you paying your lawn mowing services? They’re like, we usually pay $100, $120 for mowing the lawn. And Tim’s like, bingo. He quits his job at the hardware store, he undercuts the market by 2X. He charges all the families in the neighborhood $60 to mow their lawns. Although he runs the math and figures—he’s using his dad’s tractor—that he’s pulling in about $25 an hour.
+
+Ben: That feels like an insanely expensive lawn cutting for the time on the East Coast.
+
+David: I know. These must have been pretty big lawns.
+
+Ben: Yeah, no kidding.
+
+David: Either that or very high willingness to pay.
+
+Ben: Yeah, fast-growing lawns.
+
+David: Yeah, indeed. He has this great quote. He says, “That’s when I came to a really clear realization that, by trying harder and striving to find cool business opportunities, you could do far, far better than wage earners, who I was when I was working at the hardware store. At that point, it became really clear to me that there were big opportunities in the world.” Super cool.
+
+As we said, he ends up going to the University of Maryland, close to home. He’s not a particularly great student. He’s spending all of his time on his Apple II and BBS systems. He decides to study mechanical engineering because they have a computer science department there, but he thought that would be a waste of time. He already knows how to program. He’s going to learn more interesting stuff. He ends up learning a lot of math.
+
+Ben: He’s going to say the math and physics here seem like they’ll come in real handy.
+
+David: Seems like they’ll come in handy, yeah. On the side though, he’d kept his lawn mowing business going. And then when he goes to university he says, you know, I might want to try and do something even more lucrative. I’m an engineering major here. I really have the skill with computers than a lot of people had at the time. What if I start doing computer consulting instead?
+
+He starts a company. He calls it Potomac Computer Systems. He goes around to families and businesses and helps them set up databases and the like. That’s going okay, but there is part of that or maybe unrelated. He eventually gets a 286 IBM computer. We’ve talked about this in a bunch of episodes. That 286 was the canonical Intel chip that would unlock the PC market and take it majorly mainstream.
+
+Ben: This is the thing we talked about on the Intel episode that was their business when their business of memory got destroyed.
+
+David: Indeed. Tim realizes this that there’s all of a sudden a pretty big install base out there. Even though he likes programming on the Apple II better, he sees all these other 286 IBM and IBM compatible PCs popping up and he says, there might actually be an even better business rather than selling my time for dollars that I could build around selling software for this nascent PC market.
+
+He decides to do it. He’s like, okay, what software am I going to write? To start writing software, I need to use a text editor on the IBM PC to write the software. This is—for these listeners out there who are engineers or familiar with engineering—pre-Vim and eMacs days. There are no good text editors. He’s like, oh, great. I’m going to write a text editor first for other software developers (sensing a theme here).
+
+He sits down, he starts trying to do it, but he gets distracted and he keeps thinking about how he could—instead of writing this text editor—make it into a game. He has this quote, he says, “I realized, hey, you know, I could make each character on the screen have a collision. I could have that cursor be a game character. I could turn this text editor into a little game. Similar to Atari Adventure, I based it on rooms. Each screen full of text became a room. I had different graphical characters represent different gameplay behaviors. Suddenly you could build a text document and hit the play button in this editor and now you’re up and running with your game.” He calls this game ZZT.
+
+Ben: Oh, I didn’t realize ZZT was the thing that was first a text editor. I knew that was his first game, but wow.
+
+David: It was his first game, but this is what’s so cool and it just foreshadows everything to come with Epic. Because he started working on it as a text editor. He was just describing in that quote, you can design a room in the text editor and hit play, and then you can play the game. He ships ZZT as a game with—he actually did it as shareware. The first room was free, and then you wrote to him and you paid to get the floppy disk with the other three rooms that were part of the game.
+
+Ben: Which of course he would mail you.
+
+David: He would mail you, yup. Which is pretty awesome in and of itself. But because it was an editor itself, anybody who had the game could then make their own rooms and could also press play in their own rooms.
+
+Ben: Yeah. Waving my hands around of things to pay attention to in the future here is get started playing this game for free and pay later, and then thing two being, hey, this game is editable.
+
+David: Yup. This is when he decides, hey, I probably need a different name for this business besides Potomac Computer Systems.
+
+Ben: And something that makes it sound like a really big company like big, important.
+
+David: Yup. We’re on the same level as id Software is just getting started around this time and they have a cool name. Why don’t we call it Epic MegaGames? Of course, by we, I mean Tim because it’s just Tim. He releases ZZT and it does pretty well. He doesn’t make a ton of money, but he sells a few thousand copies. Incredibly, they would keep selling the game until 2013.
+
+Ben: What?
+
+David: Yeah, this is incredible. I found it in the research. Tim’s dad, Paul, ended up taking over the distribution of the game. It was still just sold to this shareware model of writing to Tim.
+
+Ben: Shareware was really big in—I remember it from the mid-90s where you’d go to software swaps, or you’d go to user groups. We were part of Mac users of Delaware, so we’d go to the mud meetings. People would demo and you’d swap software there or you’d sell software there. Because there’s no internet to go find software, you need to discover it in some way from other nerds who are writing shareware.
+
+David: Yup. The reason shareware was attractive—especially to an indie software dev like Tim at the time was—your other alternatives were to try and go the retail packaged software model. To do that, you had to go get a big publisher like Electronic Arts—was just getting started at this time. We did our episode with Drip at the beginnings of that industry. He was thinking about it like Hollywood. You need these big budgets, fund these studios, and then you had the relationships with the retailers to get the boxes into retail stores. The retailers would take 50%. When all was said and done…
+
+Ben: Which is Apple’s current argument to congress.
+
+David: Exactly. When all was said and done, if Tim had gone the traditional publisher plus retail model, he would’ve only been making (maybe if he was lucky) 10%, 15% of the revenue that he would be seeing out of the game. Whereas this shareware path, he kept 100%.
+
+Ben: Pretty cool if you can get the discovery and distribution.
+
+David: Indeed.
+
+Ben: Process the payments and do all the other very expensive things involved. I feel like I’m Apple here over peddling away.
+
+David: It was lucky for Tim he had his dad to process the payments, i.e. opened the checks, packaged up the floppy disk in mailing envelopes, and sent them out. ZZT does pretty well. Like I said, they sell a couple of thousand copies of this. Tim starts looking around and one thing that he has always been really good at is observing what’s going on in the market.
+
+I mentioned the id Software a minute ago and folks who know their gaming history know that it was John Carmack and John Romero would eventually end up making Doom, which we’ll talk about in a minute.
+
+Ben: And Quake, right?
+
+David: And Quake, yes. After Doom. But before Doom, id had released a game called Commander Keen. It was a 2D side-scrolling game. It was a pretty big graphical leap forward versus the literal text editor-based games like ZZT. Tim saw Commander Keen out there and he said, “Okay, that’s interesting. I should do something like that. What’s a twist I could put on it? What if I do it with a female protagonist?” He basically cloned Commander Keen but called it Jill of the Jungle instead.
+
+Ben: I love it.
+
+David: But because it was a 2D side-scrolling game, it wasn’t just textbase. It needed actual artwork and assets in the game. Tim wasn’t capable of doing that just on his own. He needs to recruit people, and he ends up recruiting some great folks that he meets on bulletin board systems—again, online in this proto-internet. Folks like Cliff Bleszinski, who is a 17-year-old high school student and applies to be a programmer at this big mega-company—Epic MegaGames, ends up becoming one of the first employees. Cliff, known as CliffyB, would go on to become legendary and super important for Unreal and then the Gears of War Series. He recruits this great talent.
+
+And then he also realizes okay, I want to make this great game. I need the talent to make the games, but I also need some talent in the business and distribution side here because I’m trying to build a big company. Who was the big company? Of course, at the time, it was id. He calls up id and starts talking with their president at the time—Mark Rein—who was handling all of id’s distribution and publishing.
+
+Ben: I didn’t know he was the president of id. He recruited away the president?
+
+David: Yeah. He was the early president of id.
+
+Ben: Wow.
+
+David: At first, they’re talking about like, maybe id could publish Jill of the Jungle. But then, Mark ends up falling out with Carmack and Romero, leaving id. And Tim says, “Hey, I’ve got a new and better idea. Why don’t you come join us here at Epic and you can be our head of distribution and publishing?” He recruits Mark, who yeah, had been president of id to come join this company.
+
+Ben: That’s a crazy career move for him. He’s president of one of the biggest game companies in the world at that point. To go and take anything less than that title is wild.
+
+David: Totally wild. He became a vice president at Epic.
+
+Ben: As employee three, two, or something.
+
+David: Indeed. He comes and joins Tim. Remember, Tim is like a junior in college at this point in time, and he’s got CliffyB working with him who’s a senior in high school. But they put out this game and it does well. And then CliffyB starts working on a few other games that also do well.
+
+Next thing you know, they’re selling quite a good bit of software through this Shareware model and doing quite well. Tim ends up dropping out of college in his final year, and they go full time on the business. They’re selling these games. They’re all still 2D side scrollers, but there’s another pretty big revolution that’s about to come in the nascent gaming industry here.
+
+Ben: What year are we in?
+
+David: We’re now in the early ‘90s—’91, ‘92. Pretty quickly after that, id and John Carmack start talking about this big project that they’re working on, and it’s a game that’s going to be called Doom. I have to assume—almost no matter what age you are—if you’re listening to this show, you’ve heard of Doom, played some version of it over the years. But it’s easy to forget—and I had forgotten until doing this research—just how revolutionary this game was at the time.
+
+Ben: Was it the first 3D game?
+
+David: It was the first 3D game. Before Doom, everything looked like a Super Nintendo style game. Doom was the first game. This is crazy, it ran on just these commodity 286, 386 Intel PCs, and it ran on DOS, but Carmack was able to get a fully 3D world rendered and working.
+
+Ben: Just amazing feats of computer science because this well predates graphic cards or anything that’s optimized to do this. It’s just an unbelievable amount of trigonometry and math.
+
+David: And John Carmack used all sorts of crazy programming tricks to make this work. It comes out, this becomes the Fortnite of its day because it was also distributed via shareware.
+
+Ben: When you say the Fortnite of the day, let’s paint this clear. For this tiny constrained market that was video games, it owned that market. But were nothing like the hundred-plus billion-dollar video game market of today.
+
+David: No. For reference, Fortnite has 350 million registered players at this time. Doom ends up having a few million copies that it both sells and distributes via shareware in that first couple of years. Ultimately, it would get to 10 or 20 million copies. But no video game had ever approached anything like those numbers before.
+
+Tim, Epic, and Mark are like, okay, cool. This is where the industry is going. We got to skate where the puck is going here. We need to work on a similar project. They do. They start getting to work on the project. They’re going to call their 3D shooter Unreal. But the problem was—that they quickly found out, just like we were saying—the things that John Carmack did to make Doom run were just huge feats of engineering. It was this massive proprietary advantage that id had.
+
+Anybody, like Tim and Epic, that was trying to get a competing product out there was just going to be nigh impossible. But this doesn’t deter Tim. He starts thinking about an idea. He’s like, okay, I know that id spends all this time and effort working to make Doom work. They work on other projects—and Ben, you mentioned Quake. That would be the successor to Doom that they would come out with. They’re rewriting the wheel each time they come out with a new game.
+
+John did all this work to make Doom work. But they have to recreate a whole lot of that each time they’re making another game. They have this lead, but it’s not like they’re going to keep churning out game after game after game, and nobody else is going to catch up. I can take my time, build an engine similar to what Doom has. But if I make it a little more extensible, then I can use this engine and pump out a bunch of content internally and not have to go through all these hoops each time that id is having to go through. He’s like, okay, cool. We’re going to invest the time upfront to do this.
+
+Ben: A parallel here in Jeff Bezos speak, Tim is working on a system that uses primitives—building blocks, rather than starting from zero each time. Because you build from primitives and assemble building blocks that are modular, and you can build on top of, each time you get compounding value out of each piece of work that you put in.
+
+David: Yup. He starts working on it, and he’s not shy about what he’s doing. He’s trying to build hype for the game for Unreal. He’s talking to game magazines and the like. A pretty incredible thing happens. Other developers and studios start coming to Tim and Mark saying, hey, I hear you’re working on this engine. We would also love to make 3D type games and compete with it in Doom. Would you be willing to license it to us? And Tim says, yes.
+
+Ben: Whoa. And this is before they released Unreal? He was hyping this so much that they had a demand for the Unreal Engine before Unreal came out?
+
+David: Yes. In fact, I believe some of the first games that were made by third parties on the Unreal Engine came out within a few months or a year of Unreal itself.
+
+Ben: Oh, wow. Crazy.
+
+David: Yeah. Totally crazy. It turns out this was a really big idea because these dynamics are not only not going to get easier in the industry—the dynamics of the technical bar to build video games. That bar was just going to keep going up and up and up and up exponentially in tandem with Moore’s Law. Without a tooling system like this, you would quickly become completely locked out no matter how good you were at being able to build a game.
+
+Ben: One of the takeaways there is the timing to create a game engine is so perfect because, before that, you couldn’t really create a game engine. And after that, you would be so woefully behind that you better be creating a game engine for a whole new paradigm because it would be foolish to start building a PC based game engine 5, 10 years after Tim did.
+
+David: Yup. And it turned out—almost in a much bigger way than what Tim saw when he started working on Jill of the Jungle—somebody who’s a really, really great technical engineer, game developer, and programmer who could build an engine or parts of an engine like this isn’t necessarily always going to be the right person that can have a great creative story idea, game design content. If something like this didn’t start to exist, the creative people would just be totally locked out of the industry or would be relocated to working only within super big companies that had the engineering side of the house and a creative side of the house.
+
+Ben: That makes sense. Listeners, I want to pause for a moment and say, we keep saying Tim. Today, Epic is a 2000-person company. It’s almost appropriate to say Tim—when the company makes decisions today—it was especially true at this point because there were less than 15 people. Into the very small operation going on here, and Tim was absolutely making these strategic decisions about what the company would be and what it would do.
+
+David: Yeah. Not only was it a small operation. It was a remote operation. They didn’t even all live in Maryland together. They were communicating via early internet technologies here. Finally, after just about five years of working on this, in 1998, Unreal came out and along with the official unveiling of the Unreal Engine for game developers.
+
+Unreal itself is a big hit, but also games that are built on it. Games like Deus Ex, which people might remember using it. And then a few short years after all of this comes out, there’s a major change in the gaming industry, which after many years of talking about it, Microsoft finally enters the picture with the launch of the Xbox in 2001. This does a whole bunch of stuff. One, it inserts a huge amount of weight and marketing muscle behind gaming. Two, it massively expands the console market because of that marketing weight behind it.
+
+Ben: Which is previously just the original PlayStation and N64. You had previous versions of Nintendo before that and the Atari 2600, but it was just the PS1, the N644, and the Dreamcast, were the only predecessors before Microsoft entered that console market.
+
+David: Indeed. Though, it was two separate parts of the market because Sony and Nintendo were the only viable players. Sony was where all the third-party developers went. Nintendo had terrible owners, royalty terms with third party developers because they sold their systems based on their first-party titles—stuff that they were making in-house like Mario, Zelda, and [...].
+
+Ben: Nintendo’s attitude has always been we’re both the best at technology and the best at creative gameplay. The systems are for our games. Sure, if you want to let us have most of the economics, then you too can develop for our system.
+
+David: But they’re mostly a vertically integrated company. When Microsoft came out though, now all of a sudden, they’re duking it out with Sony for developers. As a developer, on the one hand, that’s good because now you’ve got two companies competing for your favor and willing to—if you’re good and you have the promise of making good content—willing to give you good deals. But if you want to access the whole market, you want to have your title on both systems on the PlayStation and the Xbox.
+
+Unless you’re using an engine like Unreal, that’s almost impossible to do. You’re going to have to build from the ground up.
+
+Ben: Full dual development teams.
+
+David: Full dual development teams. It turns out that this is a problem that Unreal can now really help with and solve because they can have—under the hood, it’s not quite as easy as just check a box to deploy to PlayStation.
+
+Ben: It turns out—write once, run anywhere, have been promised many times, and have been successful zero of them.
+
+David: These days, it’s pretty close.
+
+Ben: Tell that to a React Native developer.
+
+David: It’s so much better (even then) than having to have two full separate development teams. Once this happens, they start getting some huge games in franchises and start moving over to building on Unreal. The Tom Clancy games, the Splinter Cell, Rainbow Six, BioShock, Mass Effect, and Borderlands—these are all in the early to mid-2000s. They’re coming overbuilding on Unreal and then being able to sell pretty quickly. They might do an exclusive with Sony or Nintendo for six months or whatever. That platform gets it first, but then they’re able to access the rest of the market and go to the other half.
+
+Ben: Right. By this point, Epic is a technology company. They make games and they make this game engine, which is a huge component of the game’s value chain. But they’re a technology company rather than a—first and foremost—game company. When you ask Tim to describe the history, he describes, we have Epic 1.0, which was Potomac Computer Systems. We have Epic 2.0, where we realized that oh yeah, this technology company builds a game engine. It’s the PC gaming revolution of the late ‘90s to about 2005.
+
+And then David, exactly what we were talking about now, this is what he calls Epic 3.0 where the massive proliferation of the console wars allowed us—a neutral third party that can dramatically bring your cost down, your efficiency up in developing a game full steam ahead on a console. We will be an essential part of building that business.
+
+David: Yup. And they do keep building some games in house as well, but they’re thinking about it like Amazon and AWS. They are the first and best customer for the technology that they’re building as part of the engine. They do Unreal Tournament, they do the Unreal championship, and they do other games.
+
+Ben: I love how East Coast that just was. Did you say Unreal Tournament? That is how an East Coaster says tournament.
+
+David: I never even noticed that. Growing up I would say orange. Jenny has taught me to say orange.
+
+Ben: What’s the Nintendo character?
+
+David: Mario?
+
+Ben: All right, there you go. I got some New York friends that say Mario. Anyway, we digress.
+
+David: We digress. Appropriate digressions, though. By the mid-2000s, like we’re saying for a bunch of reasons, the big part of the gaming market is really in consoles. Specifically, it’s in Sony and Microsoft with the PlayStation and the Xbox. The PC gaming industry still exists, but it’s gotten tough because piracy has become rampant, not to mention Microsoft is now putting all of their weight in gaming behind the Xbox, not so much on PC gaming.
+
+Tim, once again, sees that this is where things are going and decides, hey, what if we tie-up with Microsoft. We’re going to be launching a new version of the Unreal Engine 3.0. Microsoft is coming out with its next-generation hardware—the Xbox 360 at the time. We might be able to get some really good marketing dollars here from them if we’re a launcher or near launch exclusive title with the 360.
+
+Ben: And Microsoft’s effectively—in this relationship—the publisher and Epic is the developer.
+
+David: Yes. I believe that is correct. Epic develops this game called Gears of War, which most listeners will probably be familiar with.
+
+Ben: It’s the game where you could push that one button and put your back against the wall and look around the corner.
+
+David: Yup, totally.
+
+Ben: It’s so funny how so many had this signature move. That was amazing. That was in every commercial, that was in every demo. You first played the game, that is the thing that you wanted to try and do.
+
+David: And this thing sold so many Xbox 360s.
+
+Ben: Yup.
+
+David: As a result of all of this, the thing is this becomes a red herring for the company. Epic ends up making $100 million of revenue on Gears of War. It cost them $12 million. I believe that’s $12 million across development and marketing because Microsoft is handling so much of the marketing budget.
+
+Ben: Wow. I’d make that bet all day.
+
+David: Totally. They are making an 88% margin on $100 million in revenue. They have been successful in lots of dimensions up to this point, both on the technology and the game side, but this is a whole nother level.
+
+Ben: Why ever be your own publisher? It’s great if you’re the developer. Someone else is going to spend the money. You just have to develop the game. It’s great. Why ever change?
+
+David: I remember I was just coming into graduating college and getting into media investment banking at the time, people were thinking like, oh man, games are going to be like Hollywood. This is a Hollywood movie-style money. The dynamics are really similar here. This is going to be great. It turns out though that Hollywood is not that good business in the industry, and why is that? It’s super capital intensive.
+
+Gears of War 1 was a red herring for a bunch of reasons. It was a launch title with the 360. Microsoft handled so much of the promotion and marketing. When Epic ends up doing Gears of War 2 and then Gears of War 3, the game sells roughly the same amount. Maybe not quite as much in terms of revenue, but their margins end up shrinking significantly down to 30%, 40%, and they’re having to tie up all this huge amount of capital in the investments in developing these games and then marketing them. Tim and Epic realized this is not as interesting as we thought it was.
+
+Ben: Time to get out. Also, it started to show the tension between the developer-publisher model. For folks who haven’t listened to the EA episode. We talked about this on the Activation Blizzard episode. The developer is the creative. Think about it as the director on down on a movie set where you’re the one having the brilliant ideas and executing on them. The publisher is the investor. They’re fronting the money. They’re doing the marketing. They know how to businessify your creative efforts.
+
+The issue is, when push comes to shove like it did after maybe Gears of War 3, Epic wanted to do a multiplayer-only version. They said, look, we think multiplayer gaming is the future. Hint hint, nudge nudge to where they are today. Online is right around the corner, starting to become a thing.
+
+David: And Microsoft was like, no, we don’t care. We want to move more 360s.
+
+Ben: Exactly. It was a stalemate at that point, and Microsoft was the publisher. Microsoft was the money behind it. They won.
+
+David: We’re now right around the 2009, 2010 time frame. Tim has a quote. He says, “There was an increasing realization that the old model wasn’t working anymore and the new model was looking increasingly like the way to go.” What is the new model? Two things happen right around this time that totally laid the groundwork for what Epic is today.
+
+The first is in October 2009. A little company in LA, a little startup in LA launches a game (if you could call it that). It’s a mod on a mod of an existing game.
+
+Ben: This is a mod of Half-Life 2?
+
+David: No, no, no, no. I’m talking about League.
+
+Ben: Oh, yeah, yeah, yeah. The mod of Warcraft 3 is the mobile online battle arena game of Dota, or was it Defense of the Ancients?
+
+David: Yeah.
+
+Ben: Of course, there’s a lot of controversy over if this idea is theft or if this is above the bar. But you have this very similar-looking game that I think you’re referring to, David, being started by a plucky startup in LA in 2009.
+
+David: Yup. That company is Riot Games, and that game is League of Legends. It’s a mobile massively online battle arena, but it represents a completely orthogonal path and a throwback away from this Hollywoodification of the games industry and back to small lean development teams taking a concept and iterating on it without having to invest tons and tons of development resources—and in particular—tons of marketing resources. It’s distributed 100% online. It’s a mod of an existing game engine that’s out there.
+
+Ben: Rip off.
+
+David: I didn’t say that. But it means that it can get to market so much faster. And then another big innovation that they have is they don’t charge for it. It’s free—free to play. Free to play, that term had gotten a really bad name in the industry because mobile games had taken that up. Free to play really meant, yeah, you could play it for free, but if you wanted to make any progress in the game or a win, you’d have to…
+
+Ben: This was just starting. It got a really bad name in 2012, 2014 era. The iPhone was 2007. The App Store was 2008. It wasn’t a quite dirty backwater. Social had given it a bad name before mobile gave it a bad name. The free to play stuff on Facebook was…
+
+David: It was the Zynga-type stuff. Zynga was probably (in many ways) not the worst offender in this regard. All of the games that you had to pay to make any progress. What League was and what Riot’s big innovation was that you could buy things, but they were just aesthetic. They were just virtual goods. They didn’t help you succeed in the game in any way, shape, or form. They just gave you personality.
+
+Ben: It was still free to win, but you could pay for other things.
+
+David: This ends up becoming known as a game as a service, which we’ll get into in a second. The other big thing that happened that Epic was directly a part of was in September 2010, Epic demoed on stage at an Apple Keynote a demo of the Unreal Engine 3 running on iOS.
+
+Ben: Oh, that’s right. I forgot about that. That actually was the beginning of these really long distracting demos at Apple Keynotes of games. Where every time they’re showing off some new graphics technology but you’re watching it over some stream. You’re not sure what the new thing is, and you’re like, okay, they’re showing off. This time it’s metal, and it’s an Apple in-house technology. Craig’s all excited about it. Okay, good. Glad someone else made another cool game that takes advantage of some harbor feature I don’t understand. I always have beef with those being at Apple Keynotes, but I get that it was a leap forward.
+
+David: It was a leap forward because A) you could bring this incredible console-quality graphics and gaming technology to mobile. But it was even more important for the industry in terms of enabling cross-platform, deploying, development, and then ultimately—online play of games. Epic now is right in the middle of all of this because if you have a game as a service, like League of Legends or any other free to win type game.
+
+Ben: Importantly, that’s fully distributed digitally. There’s no more box software. It is being distributed over the internet.
+
+David: Yup. You want to get that in the hands of as many players on as many platforms as possible. Game developers always wanted to do this. They wanted to be on Microsoft and Sony. But at the end of the day, they’re selling box software, and that’s fine. But when you’re no longer selling box software, you’re monetizing based on the engagement of players. Maximizing your total pool of players is really important. By far, at this point and then going forward, the vast number of computing devices capable of playing games out there—they’re mobile devices.
+
+Ben: It’s the number of devices multiplied by 10 for the accessible market of games, or maybe more. But importantly—I think the other thing that is relevant to this argument that you’re making about having a more direct relationship with those customers and wanting to reach as many customers as possible—is they’re now all on internet-connected devices. Rather than your only chance to monetize being every time you ship a new disk to a store and they buy it, you have an opportunity—at any given moment—to monetize, as long as there are payment systems in place.
+
+The thing that digital distribution enabled was the idea that going back to the very beginning of what made Epic epic—that they could give something away for free. But then since you had an always-on relationship with that customer, you could figure out your monetization down the line.
+
+David: What this does to the industry is it makes it like the SaaS industry. You’d gone from expensive to develop capitalized software that required years of development time and was big and monolithic. Your Oracle, a lot of Microsoft software, and that type of thing. All of a sudden, developers—just like software developers—are empowered to do small little things that solve a point niche problem, deploy it on best in class infrastructure like AWS out there, use something like Stripe to accept payments.
+
+Ben: Don’t we wish?
+
+David: Yeah, don’t we wish. Get it out there, and be used and build real businesses with great economics. The same thing starts to happen in the gaming industry. Of course, who was the pioneer in doing all of these? In the middle of all of it, not just on their own, but then with Riot—it’s Tencent.
+
+Ben: Yup. This is interesting because Riot is pioneering this in the United States. Tencent had already done it with the ability to do microtransactions on their early games in China. Something that they were definitely ahead on. As soon as Riot started to succeed in it very early—I think it was pre-2011, maybe 2010—Tencent invested in Riot.
+
+David: Once Tencent saw Riot succeeding with this model in the West, they first invested in Riot in 2010, and then they bought the company in 2011. Tim sees all of these going on. He wants to move Epic in the direction of becoming essentially the AWS plus Stripe enabling this future renaissance in independent creators and game developers.
+
+Ben: The current state of their business, they had sold Gears of War—the full franchise, all the IP, and everything—to Microsoft.
+
+David: Not quite yet.
+
+Ben: Okay.
+
+David: First he starts talking to Tencent and agrees in 2012—for the first time ever—to sell any equity in Epic games. He sells a 40% stake in Epic to Tencent for $330 million. Valuing Epic at just under $1 billion, which was crazy at the time. People were like this is nuts. This is a video game technology developer that is having bad economics with their big franchise, Gears of War. What’s going on here?
+
+Ben: The thing that people didn’t realize at the time was—even ignoring the game as a service bet—how stable the platform business was. One of the things I want to mention in the playbook but we need to talk about now is gaming is classically a hits-driven business. What you have with the Unreal Engine is a smoother on that. That business has just grown steadily since its inception. You now have this massive steady business underneath your more spikey hits-driven games business.
+
+David: Yup. With this investment from Tencent, Tim maintains majority control of the company. He says all right, we’re going to refocus the entire company around this vision of the future. We’re going to do three things. One, the Unreal Engine is now our most important product and piece of technology, and we need to add much more to it. It’s not going to be just about the engine for creating the game. It needs to be all the infrastructure to run these games, run live ops, do payments, and do all of these things.
+
+Funny aside at the time, when I was at Madrona, we were venture investors in a company called PlayFab in Seattle. Which was an independent startup that had the same vision of we’re going to build the infrastructure layer for operating these games as a service and be like Unreal or be like Unity—their competitor—which we haven’t mentioned yet. PlayFab ended up getting acquired by Microsoft. It turned out that Epic and Unity were going to do these things themselves as well, and it was all going to be a part of the platform.
+
+Ben: Yeah. There was definitely industry speculation at that point that those things would not be part of game engines. That they were a separate factorable thing. We’ll talk about this but Epic has Epic online services today. There’s a lot that lives in that middle ground of is it part of the engine, or is it more a part of an online service? But Epic obviously had, not only the relationships with developers, but the ability to bundle things that might not have used to be considered part of an engine, but add more and more and more to that ball of yarn where it was no longer just physics, but it was physics, characters, AI, the way that they interact, and all sorts of things to help with the live ops of your game.
+
+David: That was one. Two, as Tim says, we’re going to rationalize the console business. I don’t want to be in that anymore. We’re going to sell the Gears of War franchise to Microsoft. They did that in early 2014. The Tencent investment was in late 2012.
+
+Three, to make all this work, we need to have a thousand flowers blooming out there of people developing on the creators, developers, and game makers developing on the Unreal platform. We can’t anymore be charging people a SaaS fee to use our platform because that’s going to lock out the kids in high school who are building stuff at game jams.
+
+Ben: Right. Incentives are powerful. If you charge money for something, less people will do it.
+
+David: Yup. In March 2015—this was super ahead of the curve—Epic stopped charging a licensing fee for the Unreal Engine, making it completely free to use and develop on. Remember, Unity is out there as well, which is a competing third-party game engine.
+
+Ben: Mostly focused on mobile.
+
+David: Mostly focused on mobile, but you could use it for lots of things.
+
+Ben: For sure, but simpler, newer, amazing for 2D stuff, lighter, and more accessible, but you’re not going to go build the most amazing 3D first-person shooter PC game with it.
+
+David: On Unity, no. They’re still charging a SaaS fee. Unreal now is completely free. You’re getting literally the stuff that Gears of Wars is developed on for free. Instead, the business model is switched to a 5% royalty on revenue that you would earn on your games after publishing. That’s a pretty good deal. If you think about the amount of fixed cost you’d have to capitalize on to do this, it would just be huge. Even your ongoing operating cost to run technology, it would be more than 5% of your revenue.
+
+Ben: Totally. You’d have to be massive for it to make more sense for you to build your own engine now than use Unreal, which is exactly the strategy. When you look at who develops their own proprietary game engines, it’s only the Activision Blizzard of the world, the Riot Games. But very large publishers that you know of, so think Bluehole for PlayerUnknown's Battlegrounds, which of course we will talk about later. Lots of big cross-platform 3D games from big studios that just aren’t quite as big as Activision Blizzard or Riot use Unreal instead of developing their own proprietary thing.
+
+David: Yup. Those are the three big moves that Epic makes after the Tencent investment, and they are all just so spot on and really enabled them to become the AWS plus Stripe plus plus plus in the industry.
+
+Ben: Stripe doesn’t feel right yet. Stripe to me would be like the Epic Games Store.
+
+David: Yes, they’re building the groundwork for all that.
+
+Ben: Yeah. To put it in Tim’s parlance. Epic 3.0 was consoles. Epic 4.0 is free to play games as a service digital distribution. But exactly what you’re talking about, David, is this incredibly robust primitives that serve as the horizontal layer to make games. They’ve stepped back from we’re a game-maker, accept.
+
+David: Accept. Just like Amazon though, they still have this view of well, we can be the internal kind of first and best customer to show what’s possible with these tools. We have this rich history of making great games that people love. They decide that they’re going to spin up three teams internally to start working on Epic’s new tools to build new games from Epic that are going to run on these games as a service free to win model.
+
+The first that they start working on is a reboot of the Unreal Tournament. The second is a MOBA that’s going to include Gears of Wars-style action elements. It was called Paragon. And the third was going to be a whole brand new IP that was going to combine elements of Minecraft and crafting with a tower defense type dynamic. Those games were popular at that moment in time. They had a really cool name for it. They were going to call it Fortnite.
+
+Ben: Well, we just got $330 million and boy are we going to spend it is the way that I hear that.
+
+David: Yup. Spoiler alert. Just like a lot of times when a company gets $330 million and has the core economic engine of the company but then they have other projects that they want to work on, those other projects don’t go so well. None of those three games work at all.
+
+Ben: It’s interesting you say none of the three. I’m excited to talk about that. The other thing to think about here is this is a company with a bootstrapped culture. They have always been starved for resources. They had always been a few people. They had always been figuring out what’s the right partner or the right way that we can only make a game when we’re sure that it’s going to be worth it for us.
+
+Now, they’ve got so many resources. This is exactly what we talked about on the Eventbrite episode with Julia and Kevin. Raise a bunch of money and there’s a lot of things that seem like good ways to deploy that capital because you can conceptualize why it all makes sense. But then you become this large organization. I don’t want to call it in-fighting but conflicting views about what the future should be. There are people who are vying for political power that’s saying, my game is the most important game. It results in churn. This happens all through Epic’s history but they bought companies—some worked, some didn’t. They bring in these studios. Sometimes they’d end up writing them off. It just increases all that fervor and churns around trying to do a bunch of stuff.
+
+David: And remember, what was Epic and Tim really, really good at? He was good at looking at what was succeeding in the market at that given moment in time, remixing it a little bit to make it fresh, and then putting it back out there quickly. That’s what he did with ZZT. That’s what he did with Jill and the Jungle. That’s what Unreal was after Doom. And that’s not what they’re doing with these three projects here. It’s unclear that the market really wants them. They operate for years in development for each of these games.
+
+Ben: Started in 2011, 2012.
+
+David: Yup, and going all the way through 2017. And then basically a miracle happens. So you mention PlayerUnknown's Battlegrounds. Tell us a little bit about PlayerUnknown's Battlegrounds.
+
+Ben: Rewind to 1999. There was a book release in Japan called Battle Royale, or at least that’s the English translation of it. In 2000, this was made into a popular Japanese movie. It basically inspired the Hunger Games. Think about a battle on an island. A bunch of children—I think it’s a fight to the death. It’s a little dark.
+
+David: Seriously dark.
+
+Ben: But you want to be the last person standing. There’s a variety of games and different anime series through the early 2000s that are based on this Battle Royale concept. There are early games. There’s Daybreak. End of the 2010s or mid of the 2010s, there’s this game—H1Z1—that’s starting to incorporate this Battle Royale concept into a game. Is it 2017 that Battlegrounds comes out?
+
+David: Yup, March 2017.
+
+Ben: And we will henceforth refer to it as PUBG. PlayerUnknown's Battlegrounds comes out and it is a smash hit. It is like this notion of there’s a fixed amount of time. There’s this circle that is contracting, it’s going to bring everybody closer and closer and closer together, and you have to be the last person standing. The action is fast-paced. It’s a pretty short amount of time that each game lasts. It’s not this 50-minute MOBA style game. It is get in, enjoy the action, and get out. Even if you win, it’s not that long of a game. It is really fun, and boy does it skyrocket off the charts, especially because—David, exactly as you’re saying—digital distribution. It is free to win. It is leveraging these in-app purchase adornments that you can buy for your character skins. But it’s pretty realistic. The violence is actual violence. It is a war game.
+
+David: It’s dark. It’s realistic. Also though, when it first comes out, it’s in beta. It’s built on Unreal. It’s not a big team. It’s not Activision making this. It’s an indie dev out there.
+
+Ben: Raise your hand if you heard of Bluehole before this podcast. Unless you’re in the industry, you haven’t heard of PlayerUnknown's parent company.
+
+David: No. And also—in these early days—it’s only on PC, I think.
+
+Ben: I think you’re right.
+
+David: And it was not yet cross-platform. Again, especially with a game like this. You want as many people as possible to play. You want your friends to play. And not all your friends are going to have gaming PCs. In a literally Epic move, the company and Tim see this happening, realize that these internal game projects are not getting any traction.
+
+Ben: The Unreal Tournament team, I think they knew at this point that wasn’t going to ship. By the way, the title Fortnite inside of Epic started in 2011, so it’s been six years of development and you have this other Unreal Tournament team that I think had already given up at this point. It was clear that it was not going to ship. Paragon is taking a crap ton of resources to make that a reality. That’s the internal status of the company when PUBG hits.
+
+David: PUBG hits, within two months, the Unreal Tournament team hops over into the Fortnite assets. I remember they’re all developing on the Unreal Engine. They all know how to work with the assets and the code here. They build and launch a new mode of Fortnite called Fortnite Battle Royale that is a Fortnite graphic cartoony take on this Battle Royale concept that PUBG has just taken massive. They ship it in September 2017. Within 2 weeks, they get 10 million active players. This is bonkers.
+
+Ten million players are probably what Doom got in the whole life of the game. Within six months, they have 125 million active players. Incredibly, there are some dynamics here. Like you mentioned Ben, there’s less violence. It appeals to kids more, especially it appeals to parents more who are willing to let their kids play this.
+
+Ben: Yeah. When you die, the drone comes and scans your body and warps you away. I don’t think that’s the right terminology, but you’re not bleeding out in the street the way you are in PUBG.
+
+David: Yup. But unlike PUBG, which is only on PC at this point—because of all of Epic’s resources—they immediately deploy it cross-platform—PCs, consoles, mobile devices—all within the first few months of launching. Sony actually would be a big hold out. Sony would let Epic release it on the PlayStation, but wouldn’t allow PlayStation players to cross-platform play with the other platforms because they wanted to keep everything in-house in the PlayStation Network. Epic eventually convinces Sony that, hey, you can’t keep this cat in the bag here.
+
+Ben: They may have even gone to 125 million users before launching mobile. Maybe that’s wrong, but I remember it was a smash hit phenomenon and it wasn’t on mobile yet. That was the craziest thing. The games industry absolutely turned on its head at this point because everyone is just told Esports is going to be this massive moneymaker, which it ended up not being.
+
+David: You were building an Esports company at the time, right?
+
+Ben: Yeah. I was very deep in this at this time with Taunt. Esports was a really good idea for the publishers and really not that interesting for everyone else. Streaming was interesting for lots of players in the value chain. The interesting thing about being in that industry at that moment was PUBG went from nowhere to being dominant. We all thought, wow, here is this new arrival of this thing is going to be a fixture along with Activision Blizzard’s games and Riot’s games. A few months later, boom. Fortnite blows it out of the water and just steals share like crazy and then goes to even bigger and newer heights.
+
+It was the craziest thing because you’re like, God, the fervor in this industry right now of what is going to be the staying power franchise is crazy. I want to reflect back on the launch a little bit because Fortnite did launch its original game built by the original team—Fortnite: Save the World. That basically didn’t work. It came out, PUBG came out, and PUBG won. This thing was not about a Battle Royale game.
+
+David: [...] won. It wasn’t a fight because Fortnite wasn’t playing the same.
+
+Ben: Right. No one was talking about it. The craziest thing was, internally at Epic, when you said they started working on the Fortnite assets, what that looked like was copying the code base that a whole other team—it was basically lying fallow.
+
+The Unreal Tournament team takes that fourth code base, rebuilds the whole thing using the gameplay mechanics of PUBG, and launches it. You then have this fascinating internal struggle of trying to figure out, how do you combine these two teams? One of which poured six years of their lives into getting 95% of the way there but got the core gameplay mechanic wrong. And the other which spent the last few months working on a new project, having fresh eyes, and not being clouded by all the baggage of previous decisions and haggling made over the last six years that has this smash hit. And all anybody out in the world cares about is, Fortnite. Anything lower level than that or internal politics, don’t care about.
+
+You have to figure out as a company—when you know you just have this thing that’s magically captivated the world—how do you throw all of your resources at it and bring everyone together and kumbaya to say we as a company are doubling down on this thing as our thing along with our other thing the technology platform of the Unreal Engine?
+
+David: That’s what I was going to say. It’s not even the business model of the company. The business model of the company and Tim, he’s really gotten religion at this point in time. The mission is to build the tools, be the AWS and Stripe, and live ops for a day before all developers make games. This is just such an important backdrop to what’s going on now. Because now we’ll run through what’s happening. But Tim again, he’s just viewing this. This is a windfall. This is awesome. This means I get more firepower and more ability to play offense in getting my ultimate vision to come true here.
+
+Like we said, Fortnite, Battle Royale—a major cultural phenomenon. Estimates are that they made $2.5 billion in revenue in 2018 alone. It launched in September 2017. 2018, $2.5 billion in revenue. In October 2018, Epic raised its first non-strategic capital raise. They raise $1.25 billion from KKR, Disney, and several other investors at a $15 billion valuation.
+
+Ben: Quite the step up.
+
+David: Quite the step up. In December 2018, they launched Fortnite Creator mode, which is almost bringing Roblox type elements into Fortnite by letting people create and ultimately monetize their own designs, levels, and experiences. In doing so, at the same time, they launch the Epic Games Store. This is now bringing forward all of this future that Tim wants to come to bear. What ultimately set the stage for this confrontation with Apple and Google, the Epic Games Store, they’re going to sell their own games online—Fortnite currency, V-Bucks, and third party games in the Epic Games Store. Of course, you can do this on PCs and the web.
+
+Ben: The opportunity is to compete with Steam. Steam has been doing this forever. Frankly, the knock-on valve is those guys haven’t had a hit in forever. They’re just taking a vague or a rake on all these other games that they have a monopoly on PC game distribution.
+
+David: Yup, and they’re taking a 30% cut.
+
+Ben: And Epic had such a hit with Fortnite where they were like, we have the advantage of never needing to be in your store and always going direct. Now we have this direct channel, but all these customers are like, we should leverage that.
+
+David: Yup. What did they launch the store with? They launched the store with a 12% cut of the revenue. They undercut Valve by 18%. And then, the kicker is, if you build your game on the Unreal Engine, the 5% revenue fee gets baked into the 12%.
+
+Ben: Unreal.
+
+David: Literally Unreal. Epic is saying, you get the engine, the live ops, and the distribution in the store and the payment processing that comes with that for a maximum fee of 12% of your revenue.
+
+Ben: It’s wild. Let’s even ignore the lack of double-dipping on that 5% from the Unreal Engine. That 12%, the way that Tim talks about it is basically its cost plus pricing model. Where he says, look, I think it’s going to take 5%, 7% to run the store. We don’t need to make more than 5%. We think Apple and Steam are getting away with highway robbery. We’re just basically going to make sure that at the maximum we make 5%. If you’re really trusting in us and building in our full-stack, we’re not going to charge twice.
+
+It is the exact opposite of what every other CEO in the technology industry these days is doing.
+
+David: It’s not like Google says, hey, if you use GCE for your infrastructure, whatever you spend on that, we’re going to give you credits in AdWords.
+
+Ben: No. We’ll give you a reduced price if you buy more from us, but we’re certainly not going to say, yeah, yeah, we’ll give you core assets for free.
+
+David: Totally. 2019 is the clash between Valve, Steam, and the Epic Games Store. Valve responds—they cut their take rate to 25%. They’re going back and forth. But really, this is setting the stage for what would happen now this year.
+
+Ben: One other conflict that happened previously too is with Google where Epic basically said, look, we're not going to go through Google Play anymore. Because Android, you have this nice open platform. You brag about it being an open platform. We are going to have people download the APK where they’re just going to sideload and install the app directly.
+
+What Epic and all of the people who want to play Fortnite on Androids realizes, there’s a litany of oh my God, you’re about to get your phone hacked dialogues that come up between downloading that app and getting to play it, and every time there’s an update. This is something that Epic walked back from and eventually did list on the Google Play Store because Google, as Tim calls it, has a fake open ecosystem. Despite getting to proselytize about how the Google Play Store is not the only way to launch on their platform, in reality, it is.
+
+David: Then this year, Epic decides to take this fight directly to, as you said, not just Google, but Apple.
+
+Ben: The other Tim.
+
+David: The other Tim. Tim [...]. I wonder how much the timing of this? Clearly, Tim had been thinking about this and plotting this move for a while. But this was the first year we started to see some cracks, not just in the game developer sentiment about these App Store take rates, but among other software developers. There’s the whole Hey, Controversy with Basecamp around Apple and the 30% cut that they’re taking on Hey email software.
+
+Ben: Apple has this very silly role where they say, either you’re using our payments infrastructure, or if you choose to use your own, there can be no link or reference to it in the app. Hey basically linked to their website or something like that, thus violated App Store policy.
+
+David: But it’s all the same spirit here of how much—
+
+Ben: Right. Pay us 30% or have this gross and horrible user experience where people have no idea how to sign up for your thing.
+
+David: While all of this is going on, cracks are starting to form in the developers’ sentiment with Apple and a little bit Google. Now, Epic is here sitting on, not just the biggest game in the world, but the biggest cultural phenomenon, and on par with TikTok, social networking experience as well. It’s a pretty big point of leverage with these ecosystems.
+
+Finally, on August 13, 2020, Epic pushes a new version of Fortnite to the iOS App Store and the Google Play Store that offers a permanent discount on V-Bucks—the in-game currency in Fortnite—if you buy directly from Epic. Which I believe you could do now in this new version of the app.
+
+Ben: You still can if you have the app on your phone.
+
+David: Oh, if you still have that version of the app. Apple and Google immediately delist Fortnite from their app stores.
+
+Ben: And then they said you need to upload a new version that doesn’t include this.
+
+David: And Tim said, nope, not going to do that.
+
+Ben: Yup. Then the pitchforks come out. This comes right on the heels on the antitrust controversy. Epic deeply prepared for this and thought this through, and they released this unbelievable video—this free Fortnite video where you’ve got Tim Cook is the evil IBM-like character from the original 1984 commercial. Epic, they’re coming in to swing the hammer and throw it at the evil IBM Tim Cook character.
+
+David: It’s all Fortnite characters. It’s so good.
+
+Ben: It is the deepest dagger you can stab at the Apple executive team and really make them feel like the villains in this story. The pitchforks continue to come out. Everyone’s escalating. Apple says we are going to ban your developer account.
+
+David: This is a major escalation here.
+
+Ben: Yeah. That says, if you don’t submit an updated version of Fortnite to the App Store that doesn’t violate our terms and services, we are going to ban your developer account. What that means—if you dig into it is—we are going to make it so that you can no longer distribute new versions of the Unreal Engine to your developers that they can compile in their code and then submit to the iOS or Mac App Stores. They’re basically saying, look, all iOS and Mac App Store, we’re just going to break the ability to use Unreal Engine if you're a developer on those app stores.
+
+Now they have got a two-front war. There’s a Fortnite war and Apple has dragged the Unreal Engine into this. Of course, this goes to the courts. There’s an injunction filed. The most recent couple of pieces of information that we know are that a judge—for at least the next month—has said, Apple this thing that you’ve done bringing the Unreal Engine into this. You can’t put a little ticking time bomb on Epic and say that you’re going to break their developer account that deeply to the point where Unreal Engine won’t work for all of these game developers anymore. That’s one step too far.
+
+The thing that you can keep haggling about is whether Fortnite needs to submit a new version that doesn’t violate your policies and has only a transaction with Apple that pays the 30% cut. That’s still in fairgrounds to fight about. Apple, you can keep Fortnite out of the App Store for anyone who’d want to download it now. They didn't mandate. I don’t believe that you have to keep letting the existing version of Fortnite work on people’s phones, but it is. I expect that Apple has a very powerful kill switch at its disposal.
+
+We will see if Apple decides to stop allowing the existing version of Fortnite with the payment loophole that’s on 100 million-plus phones or tens of millions of phones to break. But that is the state of where things are today.
+
+David: Yeah. Just right before we went to record, Epic hit back and announced that existing Fortnite instances running on Apple devices are going to lose access to the next Fortnite season and cross-play ability. They'll no longer be able to play with friends that are on other platforms, whether that’s Android, a console, or PC.
+
+Ben: When tech giants clash, customers lose.
+
+David: Indeed.
+
+Ben: We will get to that more in grading. David, do you have any else in history and facts here?
+
+David: No. I think that is quite the Epic story for history and facts.
+
+Ben: All right. Before we go into our analysis, we’d like to thank Bamboo, the official sponsor of the analysis of all of Season 7. Bamboo is one of the top growth marketing firms in tech. They have supported world-class growth programs for startups like AllTrails, Peloton, friends of the show at rover.com, and many more.
+
+Whether it’s paid search, paid social, creative production, attribution, or product analytics, Bamboo services always have the same objectives in mind. Helping tech companies earn growth marketing budgets back faster and retain customers longer. If you are a startup with a multi-million dollar growth target ahead, or an already big and successful company looking to invest smarter, our friends at Bamboo will make a great extension to your growth team. You can click the link in the show notes, or go to growwithbamboo.com to learn more.
+
+Okay, so our next section—in many episodes—is called the acquisition category. There wasn't an acquisition here. David and I have thought a little bit about what we're trying to accomplish with this category. We think that it's best described by a book that we're obsessed with, have had an LP call with the author, and just really think it's brilliant—the 7 Powers.
+
+What are the 7 powers? They're basically the ways that—Hamilton, if you're listening, I'm going to butcher the definition here—a leader in a category can earn outsized profits versus all of their competitors. It's basically what's the thing that makes your business powerful versus your competitors. I think this gets at the core, David, of what and why we want to dissect what the core essence of a business is.
+
+David: There's so much going on here with the technology platforms, the evolution of the games industry in real-time, and then this Fortnite phenomenon. What is the power that Epic has? There are seven categories of power in the 7 Powers that Hamilton identifies—counter positioning, scale economies, switching costs, network economies, process power, branding, and cornered resources.
+
+Most companies that have power have one, maybe two of these. I think Epic has three powers that are concurrently going on here. I would say they have scale economies because the scale at which you need to operate your infrastructure to power a game like Fortnite, PUBG, or any of the other large games that run on Unreal, you need a huge amount of infrastructure. And then to amortize that infrastructure costs such that you're able to sell it essentially at 5% to 12% of your annual customers’ revenue. Nobody else can match that.
+
+Ben: No, it's the same way that Netflix draws its power. By having the largest subscriber base, it has the lowest per subscriber costs to produce content.
+
+David: Yup, or AWS—same deal. I think there are switching costs. That might be the most directly powerful here. If you're PUBG or you're any game that's built on Unreal, you have no choice except to continue running on Unreal. You're not going to spin up something on your own. You could maybe try and switch over to Unity, but that's going to be very, very difficult, and not going to have the same types of features that you need.
+
+Ben: We've leaned on this a few times, and obviously, it’s a private company so the financials aren't public, but it's fair to assume that the Unreal Engine on its own does about $1.5 billion a year in revenue. This thing that lots of developers are pretty locked into because they committed, and it was a good decision too. We're not saying that they should have picked anything else because basically, if you're building a mobile game that's really pretty simple, you should be using Unity. And if you're building a broader cross-platform 3D complex game—especially one that requires meaningful physics—you should be using Unreal. They're generating this $1 billion, $2 billion, (call it) $1.5 billion alone from that engine business.
+
+David: That's 5% of the revenue that they're making. Multiply that by 20 to get the amount of revenue that their customers are generating. Those are the two powers that apply to the core technology Unreal Engine—online services and all the infrastructure are part of the business. But then with Fortnite, they also have this network economy. This is where cross-platform becomes so important. Fortnite on iOS without cross-platform is so kneecapped. Imagine you’re a kid or anybody who hangs out with their friends on Fortnite, whether that's playing Battle Royale, in creator mode, or attending the concerts that are on [...]. Travis Scott hosted a concert.
+
+Ben: Marshmello.
+
+David: Marshmello had 14 million people attending. Now, interestingly, that's not like there was one room with 14 million people. It was limited (I think) to 50 actually for the Travis Scott concert. You want to be in the instance with your 49 friends. You don't want to be with 49 strangers. Now, if all of a sudden, if most of your friends are not going to be playing on an iOS device, they're going to be on a console. They're going to be on a Switch. They're going to be on an Android device. Now, you can't play with them. That hugely removes the value.
+
+Ben: David, I think this is a good time to bring in the other pillars of Epic's business. Of course, we’ve talked about Fortnite. That on its own is somewhere between $1 billion and $2 billion a year in revenue right now. You got the game engine. That's another $1 billion to $2 billion a year in revenue. You have the apps store, or what do they call it?
+
+David: The Epic Games Store.
+
+Ben: The Epic Games Store. I think it's losing money right now because of the amount of marketing dollars that they're pouring into it and deals that they're doing to get games in there exclusively. There's a lot of dollars that they're pouring in to make that a successful thing on its own.
+
+They started with a huge head start because they converted all of the Fortnite launchers into Epic Games Stores. I can't remember how many million it was, but overnight, millions and millions of people suddenly had the Epic Games Store and now had other games in there. If you want to deep dive into the Epic Games Store, you should go and read the Matthew Ball piece that we have linked in the show notes. It's awesome.
+
+But then, there's this fourth pillar of the Epic online services, which is not a huge business for Epic yet but is exactly the sort of thing that Tim Sweeney loves. You can sort of plug into any one of these AWS-like services in the Epic online services, whether or not you're using the engine. There should just be a tremendous amount of interop across the whole industry where you can use the matchmaking service, you could use the friends’ list.
+
+There are all sorts of ways that you can allow people to play cross-platform or for friends to be aware of each other. If one person's playing one game on an Xbox and the other person's playing a different game on their phone—using these Epic online services, they could all sort of be a part of the same metaverse.
+
+David: There it is. It took us long enough to get there.
+
+Ben: Here we are an hour-and-a-half in.
+
+David: That’s the power. Right now, in the current instantiation of Epic—with the Epic online services having just been nascent in adoption, and Fortnite being the first and best customer of it—that network economy’s power only lives in the Fortnite part of Epic's business. What you're talking about is they want to bring all of that network economy and network effect of all these friend connections, and all the cross-platform into everything that is built on the Epic technology. That's pretty powerful. I think that's probably also what's scary to Apple, to Google, and probably to Facebook too.
+
+Ben: Yeah. This hits at the core of how Tim Sweeney philosophically thinks about what Epic's mission in the world is and how it is diametrically opposed to Apple, Facebook, and Google. It's not only open versus closed. It's more like Tim thinks there's another internet to be built by basically bringing down rent everywhere. Take rates should dramatically go down, and interoperability should dramatically go up. Think about when the World Wide Web first launched—how wide open it was—but Tim's vision is a little bit more privacy protected. That you can't just drop arbitrary Javascript in and collect information on people.
+
+Think about the Ready Player One world, but rather than it all being one company, he has this vision of—and he'll name his competitors. It's remarkable to listen to him talk. That the Roblox economy could interact with the Fortnite economy. You could buy goods and bring them between worlds. You can easily shift between those worlds with your friends. I think that the way that he thinks about the world and this metaverse that he wants everyone to live in is commerce is going to be online in this digital space. Social connections are going to live there. It's not just games, and it shouldn't all belong to one company.
+
+You look at the way that Apple is approaching this particular fight and this whole 30% battle, it is, we are entitled to 30% of everything that happens on our platform. And Tim is pounding his fist and saying, nothing is yours and nothing is ours.
+
+David: Yup. Tim Sweeney, not Tim Cook who’s pounding his fist.
+
+Ben: Exactly. Too many Tims.
+
+David: Yeah.
+
+Bern: As usual, there are too many white men in power in our stories.
+
+David: Absolutely. But I think this is what's really cool. The whole concept of the metaverse, Ready Player One, and all that is so cool. People have wanted it to come about for so long, and VR was kind of a head fake around this. VCs got very excited, myself included. It is actually starting to happen now, just not in the way that anybody expected. Everything we've talked about so far with all of Epic—Epic’s technology, the experiences that they make—is in the context of thinking about them as games. But we’ve already crossed the Rubicon. They're not just games anymore.
+
+Ben: Fortnite has observer mode. There's a way—if you don't feel like playing—you can still go get on chat with your friends and watch them play without you having to be involved in the game. It's a hangout place.
+
+David: Creator mode, where you can create all sorts of experiences and play them with your friends. That's what people also do in Roblox. That's what people do in Rec Room. We've had Nick Fajt on the show, the CEO of Rec Room. I think this is what Tim is talking about here.
+
+And then you think about the tools that Epic makes. They're so powerful and can enable experiences that just honestly would have been impossible to imagine two years ago. We haven't talked about yet on the episode, but things like The Mandalorian—the awesome Disney Plus TV series. That series was basically made in the Unreal Engine. They filmed the whole thing on a soundstage with digital walls, and all of the sets were built virtually in Unreal.
+
+Ben: It's so freaking insane. I’m going to hold my tongue. For now, it is the coolest, most insane—how are there zero practical effects on that whole thing?
+
+David: Am I stealing your thunder from later?
+
+Ben: But the point you're making is you can enable high IP franchises to be filmed and created out of a fraction of the cost, in a fraction of the time frame. And it's not just theoretically it could happen. The Unreal Engine branching out of gaming, Fortnite branching out of gaming is happening in…
+
+David: It's already happened.
+
+Ben: …sort of real iconic use cases.
+
+David: Yeah. Okay. Any other powers you had on your list?
+
+Ben: No, those were mine too. Into the section of what would have happened otherwise, if we were looking at transactions here of acquisition, this would be what would have happened if the big company hadn't bought the little company. Here, the way I want to analyze this of what would have happened otherwise if Tencent had not invested.
+
+And before we talk about if they hadn’t invested, I want to talk about their investment for a moment because I ran some numbers and holy everything, you guys. This is a crazy investment. We’ve covered some crazy investments on the show. I think Naspers’ Tencent is one of the all-time best, but this one is—let's just run through some numbers.
+
+In 2012, Tencent bought 40% of the company for $330 million. That 40% stake—played forward six years, in October of 2018—when they raised the round on the valuation of $15 billion, that's now worth $5.4 billion, if I did my delusion math right there. It took them six years to turn $330 million into $5.4 billion, which I think is a 60% annualized return on that money. One way to contextualize that is if you're a VC and you're listening to this, let's say you're a smaller series A firm, and you've got a $330 million fund. That's like investing the whole fund and generating a 16X only six years into the life of the fund.
+
+David: Yeah. The crazy, crazy, crazy thing though about Tencent—and why they're just on a whole another level than anyone else out there—is this is far from even their best investment. We covered what's probably their best right now. I haven't run the math on Meituan, but in Pinduoduo, two episodes ago, that stake (I think) is worth $20 billion some odd now. And they've invested less than $1 billion.
+
+Ben: Yeah, it's wild.
+
+David: And similar order of magnitude for Meituan.
+
+Ben: Unbelievable investors. And they bet huge, with conviction, and are often right. Anyway, a quiet giant. The other thing that I want to say about that deal, not the 2012 deal, but the 2018 deal, is when they were valued at $15 billion—I hadn't done my research on the company at that point, and I was like, oh my God. People are caught up in the Fortnite hype. This is not going to end well. But in 2018, they did $5.6 billion in revenue, $3 billion of which was profit. That valuation is 5X EBITDA. That’s not crazy at all.
+
+David: Not crazy at all.
+
+Ben: I'd be a buyer. It's very rational relative to a lot of this other mid-teens, $20 billion, $30 billion, and $40 billion valuations that we saw from lots of other companies over the last several years. This business grew incredibly quickly, was spitting off cash, and continues to.
+
+David: It reminds me a lot in that way of Zoom. Here's a company that's been growing incredibly quickly, incredibly capital efficiently Zoom (I believe) generated over $1 billion in free cash flow last quarter. You contrast that with all these other companies out there that are burning capital. It reminds me also of just how we started at the top of the show with who Tim Sweeney is, what his goals are, and how he operates. He's not hobnobbing with celebrities, even though he's a billionaire. He is eating Bojangles fried chicken and spending his time building Epic towards his vision and mission for the future. He bootstrapped for—how long did we say it was? Was it 22 years before...?
+
+Ben: Twenty-two years before taking the Tencent money.
+
+David: Twenty-two years before taking the Tencent money.
+
+Ben: Yeah, so I mean on the one hand, yes, you're right. It's absolutely this reflection of Tim’s personality. On the other hand, we're comparing it to these companies like Uber that are moving people around their cities. And Fortnite makes money by selling digital hats. They're selling zero marginal cost items that have zero distribution costs, and they're selling a ton of them because of social proof.
+
+David: You're pulling forward the playbook theme.
+
+Ben: Yeah, but anyway. Would Epic be what they are without the Tencent investment? Absolutely not. If you think back to 2012—probably 2011 when the conversation started—they had no or very little digital distribution expertise. They had most recently shipped Gears of War on some disks to some Xbox customers. They had no live ops experience of running anything like the platforms that they have today that are constantly changing and constantly getting updated and constantly getting new seasons. There were no games as experience.
+
+I think Tim would be the first to tell you. There's a quote that I grabbed here that Tim says which is, “Tencent is the number one operator of live games in the world, the number one game publisher in China, and the number three internet company in the world. They're not game developers. Their expertise is how to operate these games on a very large scale and appeal to customers, and we found that their values are very similar to ours and that we have a great deal that we can learn from them.”
+
+I think that was in like the 2013-2014 time frame that he gave that quote. I think not only are they investors, but the leadership team at Epic thinks of them really as strategic advisors, and people who brought them into this Epic 4.0 era of the company.
+
+David: Yeah. It's telling that all of the three major strategic moves and then the game development in this new way that have remade Epic all happened after the Tencent investment. It just underscores too this theme serves up so much, even though it's specific to Tencent. That company has been so misunderstood for so long. When the investment happened in 2012—we didn’t talk about this in history and facts—but a lot of people left Epic because they thought that Tencent coming in meant that they were going to turn into Zinga. They thought of Tencent as free to play. This is not what we want to build. This is not how you build real games.
+
+The reality was it was totally wrong. It was this whole new version of a much more sustainable, more democratic way of building games, and vision for the industry. And people are only now just starting to wake up to that reality of Tencent.
+
+Ben: It's absolutely right. Playbook?
+
+David: Playbook, let's do it. Okay, so Ben, you mentioned virtual digital zero…
+
+Ben: Selling hats.
+
+David: Zero marginal cost goods, say more about that.
+
+Ben: Yeah, it is literally the greatest business model of all time to have the fixed cost and frankly, not even the large fixed costs of designing a new piece of virtual garb, a character, a skin, or using the tools that Epic has built. It is not. It is a lot of work for an animator to do this—rigor, and all the other things involved, but it's not crazy. It's 1-5 people doing it for less than a couple of months and in some cases, a day. You can sell that thing to 350 million people for $20 each, and it costs zero dollars for you to get to them.
+
+It is the most incredible operating leverage that you could possibly have on getting something that takes a very small amount of fixed costs to create relative to its distribution, and have zero marginal costs and zero distribution costs in getting it out there.
+
+It is like the gods of internet business models come down and knighted Epic and said, you have this privilege to just print dollars. And there's an ATM in their backyard that is just spitting out money. I am assigning zero value judgment on that. I'm just saying the reality of the business that they find themselves in is unbelievable.
+
+David: This theme that low or zero marginal costs goods make for incredible businesses and business models, I feel is such an important mega theme. I feel like I've been rediscovering this past year, and we've been discovering it on the show. The cool thing is, well two cool things. One, it doesn't only apply to the internet. Once you start to scratch the surface about this idea, you realize it's actually been around for a long time.
+
+Ben: Right media was classically this.
+
+David: Media was this, yup. And reading The Outsiders really made me think about this.
+
+Ben: Media doesn't have the advantage that software has. Aside from maintenance cost, once you make it, then people keep finding value in it over a pseudo infinite time scale. Media generally has a shelf life and then you have to create more media, which is the same thing in Fortnite to be fair.
+
+David: It's multiple types in the media business. There's the content part of the media business that you're talking about. There's also the distribution part of the media business. Now, this has vastly changed with the internet, but I think about John Malone, TCI, and the cable business. That was a business that had incredibly high fixed costs to literally run the cables and launch the satellites for the distribution of signals. But then once you were a cable operator and you had those lines laid into people's homes, it was literally zero marginal cost to keep charging them $100 a month every month.
+
+Once you start to see this, it really helps me to evaluate business models and start to foresee what a business model of a company is going to be. No matter how successfully you operate—Hamilton talks a lot about this in 7 Powers. Operational excellence is super important, and table stakes for becoming a great company, but you have this ceiling of how great you can be based on the economic characteristics of your business and your industry. It comes down, often, to this marginal cost aspect.
+
+Ben: And if you just look at the FANG, and I don’t want to say FANG because I don't think Netflix deserves to be in it. Let me get to my horse for a moment because I slipped up. FANG should refer to high-paying jobs in the valley at big companies, and people have used it to refer to a set of stocks that should actually include Microsoft, and should not include Netflix, especially from a market cap perspective.
+
+Anyway, if you are looking at the big five tech companies by market cap, much of the same characteristics are present in all of them. Online advertising, the Google model, the Facebook model—that's zero marginal cost, zero distribution costs business. You look at the virtue—virtue is very much the wrong word. You look at the advantages that even Instagram has over YouTube, Instagram doesn't have to pay creators. Whereas YouTube has to pay a cut out to creators. Any business where you are able to charge to distribute something that costs you nothing, and it also costs you nothing to distribute it, that is present in a lot of these companies.
+
+Now, fascinatingly, which I’ll foreshadow before grading, Apple is one of these companies that does not have zero marginal cost, and definitely does not have zero distribution costs. Their—for the longest time—business model is making 35% operating margins on shipping goods to you that are really, really expensive to produce even on a variable basis. Obviously, the R&D is expensive, but the crap in an iPhone is really expensive. It's not like a digital hat. It's no wonder they're trying to get into these services businesses that are creating this clash.
+
+An interesting takeaway here is Epic has the best business model of all time, and Apple is jealous. That is a little bit of what we are seeing here. But yes David, I think you're exactly right that once you see it, you can't unsee it.
+
+David: Totally can't see it. I think there's another theme to highlight here that Epic first stumbled into with the Unreal Engine, but then Tim Sweeney really got religion around and has driven his whole vision now of letting a thousand flowers bloom. This is related to the marginal cost aspect of what you're doing, but it's one thing to make games yourself and invest lots of resources into doing that.
+
+That's making an assumption that you are going to be right and know what the market is going to want. Tim has a pretty good track record of that, but as we've seen, even he can slip up sometimes. Those three titles that they started working on in 2012, 2013 didn't work. A much better aspect is if you can find a way to just enable entrepreneurship and creativity writ large and be able to say, hey, I don't know what's going to work, but I'm going to let lots and lots of people try and have their shot. That can be way more powerful.
+
+Ben: Yeah, what was the phrase we used with Chetan when we had him on the LP Show? Leverage on tinkering, which is any time you can empower a creator to do more with their same skill set, it can be really powerful. What you were describing right now, my notes here are steady platform revenues to smooth hit-driven spikes from games.
+
+David: Yup. Kind of a second layer of nuance I'd add to that, I remember Ben Thompson talking about this in the early days of Stratechery. The very best way you can do that is if you can lower the bar to creation and entrepreneurship, and that’s what Epic and Tim are really trying to do. They're trying to say, no, you don't need the budget of a Hollywood studio to make an amazing online experience.
+
+Ben: Yup, that's a great point. Okay, some other things that I had here. A few of them roll up under control. One of them is don't be beholden to a publisher. Creative differences with Microsoft over the future of Gears Of War is an example of this. Epic definitely publishes and develops Fortnite, and so it's important to have the final say. And Tim found a way to do that.
+
+It also is interesting—if you look at their capital structure—I don't think they could pull the thing that they're pulling with Apple if they were a public company. In stark contrast to the lesson learned from Eventbrite, which was it's nice being public because you have more flexibility when you need to do things like raise capital. It forces more capital allocation discipline than when you have sort of deep pockets from VC money.
+
+In this scenario, if he had public shareholders, it's very unlikely that he could have gone after Apple in this way because as we'll talk about, it's likely to be short-term value destructive. It's not necessarily clear that it’s long-term value creative either. He's doing something on behalf of an ecosystem for the value that Epic itself and its shareholders may not get to realize.
+
+I think this notion of having control so you can do what you want—and I'm sure he very much checked with Tencent and had a deep conversation, especially about what Tencent wants from Apple before doing this. Being a controlling shareholder allows you to do things that you certainly could not do that may pay off compared to being a public company.
+
+David: Yup. Could you imagine what the share price would be doing through all this if this were a public company?
+
+Ben: Oh my gosh, yeah. Well, if you look at Apple, it’s only going up.
+
+David: Yeah. To be fair to the Eventbrite episode, I think Kevin or Julia, or maybe both—when we're talking about this—said, yes, there are situations where being private is better. It's not like being public is better writ large, and this is one of those situations.
+
+Ben: Right, right. Yeah, that's a great point. Okay, a couple more. One is that game engines in particular are of a type of product that has incredible inertia that is hard to build. It's hard to get customers, but then they're almost impossible to displace. No one's going to swap out their game engine for a different game engine. You also are going to be able to start a successful competitor to the Unreal Engine right now.
+
+If you look at when Unity successfully started a game engine, it took off because of the birth of mobile. There was this brand new paradigm where you needed to have an engine with a very different set of resources. We haven't gone deep on this on the show, but if you're developing a mobile-only game, you would be pulling your hair out trying to do it just with the Unreal Engine. If you're going to do that, it better be worth it because you're also developing for PC and consoles.
+
+The only way to compete with one of those products—once it has momentum behind it—is in a displacement of paradigms, so mobile is coming out. Who knows what the next one will be, but it's one of these companies where the inertia around it makes switching impossible until the next technology generation.
+
+David: Yup, 100%.
+
+Ben: Okay, and my last one, in my notes, I wrote down iteration and compounding. Integration is standard dogma in startups and engineering. You hear about agile development, and compounding is standard dogma in investing. But this is one of the first times that I really grasped how interlinked the two concepts are. The methodical small iterations that Epic is able to do all of these years on Unreal Engine compounds on each other to provide extraordinary value.
+
+It's not just dollars that compound on their own, the way that you would think about a stock growing over the years, it's dollars deployed every single day into people building that next building block of software that future engineers and non-engineers can build on top of. It just really concretizes iteration is almost like the implementation of the abstract concept of compounding in investing.
+
+David: Yeah, I love that. That's a really elegant way to describe what the job of capital allocation actually is, or maybe better put—resource allocation. It's not just that you're allocating resources, sitting back, and watching them compound. Maybe you're doing that if you're a public market investor, but what somebody like Tim is doing—well, both Tim’s. What a CEO is doing—especially, an outsider type CEO in a Will Thorndike sense of the word, which Tim Sweeney would 100%, 1000% qualify—is that iterating every day, and the allocation of resources with an eye towards what's the most optimal compounding rate.
+
+Ben: How will $1 invested in what we're building today become a building block to make us able to build more tomorrow, rather than starting from scratch every time?
+
+David: Yep, I love that.
+
+Ben: Cool. All right, grading.
+
+David: Let's do it.
+
+Ben: All right. Before we go into our grading section, we’d like to thank Perkins Coie, the official legal sponsor of season 7 of Acquired. Perkins Coie is a premier technology-focused international law firm known for providing high-value, strategic solutions, and extraordinary client service to businesses ranging from startups to Fortune 50 companies.
+
+Clients rely on Perkins Coie for counsel on company formations, IP protection and enforcement, financings, IPOs, mergers, acquisitions, and many other things. They also advise VCs in fund formation and investments and represent their portfolio companies throughout their arc of growth. To learn more, you can click the link in the show notes or go to perkinscoie.com.
+
+All right, David. Grading. Normally, for anyone new to the show, we would normally grade a transaction. Was it a good use of capital for Facebook to buy Instagram? In that scenario, that is our A+, and then everything else rolls down from there to our F for AOL Time Warner.
+
+In this scenario, I guess we could grade, was it a good idea for Tencent to deploy capital or something like that. The big thing that we all should be grading right now is this fight with Apple. What is going to resolve here, and what should each company do? The way that I want to evaluate this is if Epic holds strong, what should Apple do? And if Apple holds strong, what should Epic do?
+
+To set the table for that, I pulled up a bunch of numbers that I think are worth walking through here to contextualize this fight. The App Store last year generated an estimated $18.3 billion of revenue for Apple. That's a 30% cut, so $61 billion that was spent on the App Store that went to Apple and developers. For Apple, for anyone who's been following the stock and listening to earnings, when Tim Cook says services revenue, 40% of that is App Store. The $61 billion represents 40% of the services revenue.
+
+Fortnite makes, right now, about $200 million a year on iOS, which means about $60 million is going to Apple. And that's 12%, which actually came out in a court proceeding today. Fortnite last year did $1.8 billion in revenue across all of its platforms. You take 12% of that, comes to $200 million that they're making on iOS. That's what's at stake here is that $200 million.
+
+Then there's this other thing that has entered the arena, which is Apple pulling out the hammer and saying, we are going to make it so that anyone using Unreal Engine can no longer deploy on to Apple platforms. Which sounds really scary, and most people analyzing this are looking at it saying, well, that's the real problem here because the Unreal Engine loses credibility with developers if this major platform—where there's an incredible amount of spend going on in the App Store—no longer has Unreal Engine as a deployment target. You can deploy these five other platforms, but not the 6th, which is a big one. That’s a problem.
+
+David: It’d be one thing for Epic to lose $200 million Fortnite revenue over this. It’d be another whole thing for them to massively disappoint all of their Unreal Engine and all of their service customers.
+
+Ben: Right, but when evaluating—push-comes-to-shove on that—the biggest game on iOS that uses the Unreal Engine is Fortnite. The second biggest game is PUBG. When you look down the list of the top 100 grossing apps, very, very few of them use Unreal Engine. As we've been talking about for the rest of the episode, Unity is actually the preferred mobile game, 2D, Candy Crush style game engine.
+
+I don't know, in practice, if a big game developer—who is thinking about making a triple-A style title to deploy across PlayStation, Xbox, and the PC. I think mobile is a little bit of an afterthought where they're saying like, yeah, it'd be nice. But that's not where most of my revenue is going to come from.
+
+I don't think it would be that big a deal—I mean, it’d be a big deal, but I don't think it would be this catastrophic loss for the whole ecosystem that people are chalking it up to be if the Unreal Engine was no longer available on iOS. What it actually comes down to is the $200 million a year that Fortnite makes on iOS and the $60 million of that goes to Apple.
+
+David: This is super interesting. I actually think the context is not what you said like I make Grand Theft Auto. I'm not going to put that on the App Store because I'm not going to make my revenue there. As we’ve talked about, that whole model, that's going to be [...] that whole Hollywood style of game making. That's going around for a while. It’s going to be fine, but that's not where the big industry is.
+
+The really interesting question is these dynamics, why is Overwatch not on the App Store? Why is League Of Legends not on the App Store? Why is Dota 2 not on the App Store? Why are all these modern games as a service, Esports style, true big winners, and big platforms in this era, why are they not mobile? It's not because of technical limitations. An iPad or an iPhone 11 pro is very, very capable of running these things.
+
+Ben: It’s moderately because of the tech. It's more like it's really difficult. It better be really worth it if you're going to go and do all the hoops to make it actually run on those devices, modify all your input controls to be touch, not have the WASD controls, and all that.
+
+David: Totally, totally, but doable. Tencent's done it with the Honor of Kings in China.
+
+Ben: Yeah, totally. And I played Fortnite on my phone last week.
+
+David: Yeah, totally. It's doable. I think the reason that it hasn't happened is because of this economic issue. If you're operating your game as a service and making revenue in a SaaS-like manner through subscriptions, and/or virtual good economies, you don’t want to pay 30% to Apple or Google. That’s just a non-starter. Actually, I think Apple's kind of like zooming out even more.
+
+One of the big failures of Apple—and Android too in a different way, but really Apple—is that they had an opportunity to have iOS devices, which sort of became the Uber device that ate lots of other specialized niche electronic pieces. They had the opportunity to eat game consoles as well but that never happened. I think this is the reason why.
+
+Ben: Yeah, instead they segmented it. They ate a lot of handheld gaming. The Switch has still done well, but there are mobile type games that have gotten exceedingly well.
+
+David: They had Facebook gaming and web gaming.
+
+Ben: Yeah, that's a great way to put it. The Candy Crushes of the world, those types of games are still the most played, even more so than Fortnite. But you're right that they could have eaten triple-A titles too, and they didn't. I do think there's some combination of the devices that aren't that great of user experience to be playing those types of games. The developer has to jump through extra hoops to make it a better experience and then it still doesn't feel totally right. To your point, Honor of Kings did work, but you're right that the economic model is just not as appealing.
+
+David: Right, again, because these games are network economies, it's in the developer's interests to want to have as large an addressable audience of potential players as possible. And the mobile platforms have so large installed bases that they should want to be on these things. Anyway, what should each party do here?
+
+Ben: Here's my straw man. Let's right now say that the courts hold that Apple can't drag the Unreal Engine into this. Let's say Epic holds strong and decides that we are going to leave the version in the App Store that lets me buy directly from Epic. What should be done there? I did another little fun calculation. The money that Apple receives from Fortnite per year on the App Store comes to about 1/3 of a percent of App Store revenues.
+
+What is on trial here is Apple's emergent business model of the last five years—these App Store fees. If it means dropping their take rate of 1%, they should not do that. They should say, okay, we're happy to lose you Fortnite, goodbye. And they should make it unplayable on everyone else's phones.
+
+The counter-argument to that is that, first of all, it would trigger new legislation. That it would sort of have antitrust implications. There's another thing around, maybe, that they would turn off more developers from doing that because people would go, oh my gosh. I don’t have this trustworthy development platform for even my mobile game anymore. The Epic revenue is really a drop in the bucket for Apple.
+
+David: Here's what I think the biggest danger is for Apple. If you believe that this trend that Tim Sweeney believes in of these things are becoming more than games, they're becoming a metaverse. And if you think that is going to keep happening and accelerating, do you box yourself out of participating in that as Apple because none of the creators and developers are going to want to play on your platform, just [...] are the MOBAs and the games as a service have. As that industry becomes bigger, and bigger, and bigger, none of those play in your platform, and then all the consumers that want to consume that content now go to other devices to do that.
+
+Ben: You're absolutely right, yes. Apple's risk here is much less about the Fortnite revenue. And frankly, I don't think it's that much about the Unreal thing either because as we talked about, it's really not the games people are playing on their platforms. Are people so loyal to Fortnite that they'll say, you know what, screw this. My next phone is an Android phone.
+
+Is Apple going to be shut out from participating in the more open—one of two things. Are they going to be shut out from Tim Sweeney's version of the metaverse when people are picking their next device? Or even long before that. Are people going to say, look, I want to play freaking Fortnite. I can't on your phones, and not buy phones. That would be the argument that Apple should blink.
+
+David: Yep, but it's a major business model disruption to them if they do blink.
+
+Ben: Totally. I think it would be a different thing here if it was Unity. If Unity made Fortnite, I think then Apple's like, we will definitely not kick all Unity games off of the platform.
+
+David: There's some chance that Unity joins in with Unreal here.
+
+Ben: And why would they do that? They have a per-seat license model, not a cut of revenue model.
+
+David: Frankly, without having studied Unity enough, they may want to switch to the cut of the revenue model at some point. If anything, it's surprising that Unreal is the one with the cut of revenue model given that they are the high-end platform, and Unity is the SaaS model given that they're the low-end platforms. You would think that as a low-end platform, you'd want as many developers coming on to the platform as possible, unless you wouldn't want to have any incentive or any barrier for them not to. Now, I think you can start using Unity for pretty low, or no fees as an indie developer.
+
+Ben: Yeah, that's an interesting point too. Getting back to if Epic refuses to blink and then Apple kicks them off. Obviously, some kind of compromise is the best thing for everyone, including customers. It's only 12% of Fortnite's revenue. It would suck to lose out on that revenue, but it's also not the end of the world. It's not where most people are playing Fortnite. To me, is it that bad for Fortnite to not be on your iPhone? I don't think it's that bad. Is it that bad for Apple that the most popular game is not on your phone? I think it's worse for Apple.
+
+David: I think it is worse, because again, if you're playing Fortnite on iOS, chances are high that if you really, really love Fortnite, you're able to go buy a Switch Light for $150 or $200 and keep playing Fortnite.
+
+Ben: Yup. Okay, so if it's worse for Apple, then what we're saying is Apple should blink. Apple should not bring down the ban hammer and kick all Fortnite users off the phone. There's some middle ground where they just keep them banned, but I think that's just as bad for them. It's just as bad a look as disabling functionality from all the phones that currently have Fortnite installed, or as John Gruber would put it, the kill switch.
+
+What does Apple do? Apple’s actually in the hot seat then. Let's say that Epic’s going to hold strong. Epic's demands are very interesting here. They want an App Store, they want to be able to compete with the App Store by putting the Epic Games Store on the phone, and they want to be able to charge consumers money directly through their app. If Apple says yes to the first one, if they want to give on one of these two things.
+
+If they say yes to the first one, their whole strategic positioning is totally screwed. They make all the services revenue because the App Store is a monopoly. If they do the second and budge on the 30%, that's an $18 billion a year business for them. Every single percent you budge on is incredibly impactful. It's not clear that Apple should blink either.
+
+David: I actually think the best long-term value preserving—and ultimately value creative move for Apple—is not to give in to Epic on saying you can have your own apps store here, but to lower their own take rate in line. Because it's not just about Epic here. There’s a bigger thing going on, which is that developers no longer love Apple. It's not just Epic. It’s Basecamp. It's everybody.
+
+Ben: Totally. Thousands. It's everyone that they privately communicated with and tried to make some distinction between a B2B app versus a B2C app. You do different lines on that.
+
+David: Anytime you're doing something like that, you're losing. I don't care what you're saying, if it's coming to that, you're arguing against arguably your most important constituency. because they have customers who buy their devices. But customers only buy their devices because they get great experiences on the devices that developers create for them.
+
+Ben: Apple would say Apple is their most important, the customer is second, the developer is last. They were very fortunate to get all the developers on iOS very early and have had tremendous lock-in in their sense.
+
+David: I think they're putting themselves at risk here in the long-term. If Fortnite weren’t on iOS, would some people switch to android? Sure.
+
+Ben: You know they have people out trying to figure that out right now. How many customers would we lose now and in the future?
+
+David: Sure, but what's the big risk here? The big risk is I certainly wouldn't switch. You wouldn’t switch. What if Spotify weren’t...
+
+Ben: No. I just reinstalled Fortnite because I deleted it a year ago, but I could reinstall it because I had previously downloaded it. It’s some weird loophole.
+
+David: Nice, but what if Spotify weren’t on Apple?
+
+Ben: Right, right. Yeah, I have a lot of lock-ins there. I'm not leaving. I'm not going to do the Apple Music thing.
+
+David: Right. What if Netflix weren’t on Apple?
+
+Ben: That's easier because I don't watch it on my phone. It would be very easy for me to go and buy something other than an Apple TV. Yeah, that's a good point.
+
+David: Right, so each of these things on their own, yeah, yeah, yeah, okay. But now there's another device out there that has all these things, and they're cheaper and they're better experiences because it's a more developer-friendly platform. It doesn't take too many of those where you’re like, do I really need an iPhone?
+
+Ben: Yeah, the question for Apple comes down to do we want to preserve our monopoly position and take less economics for the privilege of keeping our monopoly position by being the only app store? Or do we want to let other people compete with us? In that case, we're just going to get competed down on price anyway. They should probably just figure out a way to drop their rate to something that Epic will agree to. Gosh, are they going to roll that out?
+
+The implications are so huge, but I think where we're both landing is Apple needs to give on something here, and it probably needs to be either on economic terms or letting people use alternate payment methods in apps. If I’m Apple I'm not doing that. I'm trying to go back to Epic and say, we will cut it to 20%, but no on the store, and no on alternative payment methods. Preserve monopoly, try and make everyone happy, and feel like you're not overly rent-seeking on your device. I think that's the strategy.
+
+David: Yeah.
+
+Ben: It all comes down to this magical question of is Fortnite impactful enough to be the catalyst of all the bad things that we've just talked about with Apple happening if it weren't there? Maybe, maybe not. That's the dice roll.
+
+David: Here's the other big calculus for Apple to bring back in is Tencent. Who is the most important company and partner to Apple in the world? I can make an argument, it's Tencent.
+
+Ben: Why is it Tencent?
+
+David: Well, Apple has a huge, huge business in China. If WeChat is not on iOS in China, that business goes to zero.
+
+Ben: That's a great point because WeChat has a closer relationship with the customer than Apple does.
+
+David: Yup, much, much closer. I think it's probably not even a question. No WeChat on iOS, everybody's moving to Android.
+
+Ben: You’re right. There are so many games of chicken that this could start. Tim Sweeney is willing to take risks, but who else is? Who will throw in with him? If you’re WeChat, come on, that's crazy to lose all that distribution on all those phones.
+
+David: But you could maybe argue that they don't need it. WeChat is more important.
+
+Ben: Don't they also have a special deal where people can use WeChat to pay for virtual goods in China and go around the App Store there?
+
+David: I researched that they may. Well, so then Apple's already compromising.
+
+Ben: Right. Apple needs to find a way to quietly compromise, talk about why this is a special case, have it hold water and then do that, and then hope that no one as big as Fortnite comes and does this again.
+
+David: Which is for sure not going to be the case.
+
+Ben: It’s a losing strategy. I think you're right. Ultimately, we've said these eight different ways, but long-term, they need to figure out a way to preserve their control and give on economics a little bit. That is the long-term value [...].
+
+David: They need to become a great platform for developers again.
+
+Ben: Yup, make Apple great again for developers. All right. We moved a section after grading that we normally have before, which is value creation and value capture. A couple of ways I want to talk about this. Epic has done a tremendous job of creating value in the world, and frankly, capturing less of it than I think they create.
+
+The fact that they only charge 5% for the Unreal Engine, it is fair. The fact that they are undercharging for the Epic Games Store, again, capturing far less value than they create. You always have to capture less value than you could create in order to enable value for your customers, so no one's just trading a dollar for a dollar. But I think they captured dramatically less value than they created, and they've got lots of headroom above them.
+
+The other way to evaluate this value creation, value capture is in this whole dance with Apple, the unfortunate thing is the consumer is losing. The customer is the one that's bearing the brunt of these tech giants clashing. That's value destructive ultimately for the end-user that these tech giants are at war over who gets what economics.
+
+David: Yeah. That's also a game where regulation and the government comes into play. And in that part of the game, the deck is stacked against the big tech companies. Are regulators really going to say, no, you independent, much smaller business in North Carolina, you are being unfair to Apple here? No way.
+
+Ben: This $17 billion business is being mean to the $2.2 trillion business. Also, I do want to point out Apple grew by 10 Epics this week.
+
+David: The scale is just unbelievable.
+
+Ben: Compound interest continues to blow my mind. Well listeners, on the grading and the value creation, value capture, there's so many nuance points here. We would love to hear from you. You should join us in the Acquired Slack, acquired.fm/slack, or just go to our website and talk about it. Or we’d love to chat on Twitter too. We’re @acquiredfm. Obviously, the situation changes every day. There’s probably going to be new news that comes out between this episode recording and release, but also there's just lots of nuance points here. We'd love to hear your perspective on what we missed. Carve-outs.
+
+David: Let’s do it.
+
+Ben: All right. I'm going to go first because mine is a continuation of this episode. I have a three-part carve out that is going to be in the order that I experienced these three pieces of media, and I recommend the same to you.
+
+August of 2019—this is before Disney Plus launched before The Mandalorian came out—there was a demo video put out by Epic with a guy walking over, getting on a motorcycle, and revving the engine. First of all, you’re like why is this short little video put out by Epic? What was amazing about this is the fact that it was shot in a studio with a guy sitting on a real motorcycle but with a screen behind and to the side of him, that was rendering the full background.
+
+The other amazing thing was the camera was moving slightly—as you would expect a dollied camera on a set to move—and the background that shifted perspective in the right way that you would expect with the camera. Not only were you like, whoa that background is real and certain things are 1000 feet away, and other things are five feet away, but there are no artifacts. It also just looks like the real world, and there's the appropriate amount of blur for the depth of field on this lens. It all actually looks right.
+
+And then they show you the behind the scenes. Oh my God. It's a screen, and the screen is just super high-density pixels. There's no crazy artifact that you would normally see if you took a picture of a screen. There are accelerometers on the camera that are tied to what is being projected on the screen so that the stuff on the screen shifts in the exact right way with the camera as it moves and pans—in real-time, no lag detectable with the human eye. Un-freaking-believable breakthrough technology.
+
+I remember watching that and being like, holy God. The future of filmmaking is here. It's amazing this games company. And I'd heard of Epic because of Fortnite, because of the Unreal Engine. It's amazing. The Unreal Engine can do this now. Flash forward, The Mandalorian happens. Watch it, it's fantastic.
+
+David: Literally worth the Disney Plus subscription just for The Mandalorian.
+
+Ben: So good. It’s a Star Wars Western. It's excellent. Then February 2020, there's this video that gets released of the making of The Mandalorian in what they call The Volume. This is a soundstage, David, exactly as you described. 360-degree screens all around. A horizontal screen above you, and that's used for lighting the scene. Not only are they rendering all of the elements around—by the way, amazing that that’s CG. It all looked so real.
+
+People are wearing costumes. They have some props like desks and stuff. But other than that, all the backgrounds at all depths are just rendered on the screens and then lit using the Unreal Engine from above, from this crazy huge horizontal screen that is making sure that the lighting that is falling on the character exactly matches the right lighting based on what the background of the scene is—mind-blowing.
+
+Really cool video. It’s short. it's like five, six minutes. Then a friend sends me this thing in ascmag.com. The American Society of Cinematographers or something like that. It is this incredible long-form read on the physics of how the whole thing works. If you're into film at all—movies, photography, or whatever—it is just the most fascinating read on the technical details of how they accomplish a lot of these shots.
+
+It is totally worth carving out some time to go and read because it is (what’s the quote) sufficiently developed technology, indistinguishable from magic—something along those lines. Absolutely true. I am so amped up about Unreal and the future of filmmaking.
+
+David: It's so cool. So amazing. And the net of all this is it's better you enable more creativity at an order of magnitude, lowered costs too. They talk about how The Mandalorian was able to be made and be so awesome as a TV series versus a multi-hundred million dollar budget movie because they just did it in a room.
+
+Ben: It truly would’ve been. Yeah, the whole thing shot in the same room.
+
+David: Amazing. Okay. My carve-out, more of a stretch to connect it to the current episode, but I’m going to try. I have been rereading Isaac Asimov's Foundation series. I might have had this be a carve-out years ago on Acquired, so good, it's classic. The whole thing is about the fall of a dominant society and its replacement by an upstart society. An allegory for Rome or whatever you can apply it to the current state of the world right now. I think you could also maybe it’s a stretch, but maybe you could apply it here at Apple and Epic too. The galactic empire that falls, falls because it stops doing its job. It becomes all about politics, and it loses its technological edge.
+
+One of the main themes in the book is that nuclear power and knowledge of how to harness it and continue developing it gets lost in the empire. And it's only the foundation, this tiny little, edge of the galaxy upstart that has that power. Having the ability to be on the cutting edge of technology and the nimbleness to move fast with it, probably going to win.
+
+Ben: Indeed. Well, that's a great, great place to leave it. Well, listeners if you aren't subscribed and you like what you hear, you totally should. If you have a friend who you think should check out this episode or any other episode—maybe they are a gamer, or maybe they've also talked about The Mandalorian with you and want to understand more about the company that powered it—share the episode. We love it when you share it with new folks. Thanks so much for doing that.
+
+As always, if you love Acquired and you want to hone your own craft of company building, you should join the community of Acquired Limited Partners. You'll get access to the LP show where we dive deeper into the fundamentals of company building and investing. In addition to our monthly LP calls where we talk directly with all of you, of course, our book club, and our Zoom calls with the authors.
+
+To give you a little preview of our most recent LP episode, it was one in our fundamentals of venture capital series, of which were due and six, maybe seven—David, we got to decide. But this was the one on basically how VC firms make decisions mechanically, as different people in the firm are involved. Which is helpful to know if you're pitching, if you're aspiring to be an investor, or frankly if you just want to know how other investors do it and you're active today.
+
+If you aren't already a limited partner, you can click the link in the show notes or go to acquire.fm/lp. And of course, all new listeners get a 7-day free trial. If you want to hang out with the Acquired community, join us in the Slack. With that, thanks again to Tiny, Bamboo Growth Marketing, and our legal sponsor—Perkins Coie. Listeners, we will see you next time.
+
+David: We will see you next time.
+
+‍

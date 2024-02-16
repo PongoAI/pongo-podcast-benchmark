@@ -1,0 +1,1007 @@
+Ben: Welcome to Season 10 Episode 2 of Acquired, the podcast about great technology companies and the stories and playbooks behind them. I'm Ben Gilbert and I'm the co-founder and Managing Director of Seattle-based Pioneer Square Labs and our venture fund, PSL Ventures.
+
+David: I'm David Rosenthal and I am an angel investor based in San Francisco.
+
+Ben: We are your hosts. Listeners, we have been waiting to do a Peloton episode for a long time, just searching for that right moment. We didn't do it at the IPO and then there was the big stock run-up and we thought about that, we got a zillion listener requests, and of course, the pandemic hit and David and I both became customers.
+
+Somehow, none of these ever felt like the right moment. We figured, well, how about this wild company-changing news, we just scramble over 24 hours to prep. I've done basically nothing in the last 24 hours except learning everything we possibly can about this company that we are so intimate with already.
+
+David: Anytime, Barry McCarthy gets involved—Ben texted me the news and I was like, that's it. We got to do it, emergency pod. Acquired superhero, Barry McCarthy literally writing again. Just so exciting.
+
+Ben: There's this fun thing too, I've seen articles that are like John Foley stepping down as CEO, technically. People are saying he's staying involved. He's staying very involved and we'll definitely dive into how this duo is going to conquer the road ahead together.
+
+David: Indeed.
+
+Ben: First, we want to say we're recording this on February 9th and that is important because yesterday, February 8th, was the day that the news broke about all of this Peloton stuff. Today, February 9th, was Barry McCarthy's first day in the CEO seat and I think he frames this better than we ever could have. In his email to the company this morning, he wrote, "And now that the reset button has been pushed, the challenge ahead of us is this… do we squander the opportunity in front of us or do we engineer the great comeback story of the post-COVID era? I am here for the comeback story."
+
+David: We are here for the comeback story.
+
+Ben: Indeed. All right, we spent the last 24 hours getting everything in order, all of our thoughts. I've done 167 workouts since January of 2020 when I got my Peloton bike to make sure we are as knowledgeable as possible.
+
+First, we want to introduce you to our presenting sponsor, Vanta, the leader in automated security and compliance. Now as you know from the Taylor Swift episode, we are huge fans of Vanta and their approach to the whole compliance process. They do SOC 2, HIPAA, GDPR, and more. And we've got CEO and co-founder Christina Cacioppo back with us today.
+
+Christina, last time we talked a little bit about the origin of SOC 2 and how it's administered, what's the checklist?
+
+Christina: One of the interesting things about SOC 2 is folks definitely refer to it as having a checklist, but there isn't really one. If you go to the AICPA website and you look up the standard itself, it's really high level. It has things written in more complicated compliance speak that basically says, hey, do you have systems in place to control how data is accessed in your company. Then that can be implemented in any number of ways.
+
+In the early days of Vanta, when we talked to engineers who knew compliance or actually when we talked to investors who are engineers, they basically told us, how do you automate that? That's too high level to be able to automate, which they're correct. One of the things we did with Vanta was just break down those high-level statements into specific things that could be automated and a company could implement.
+
+This obviously helped us actually build software for a category that never had software before, but it also helps companies because we realized one of the reasons smaller companies didn't pursue these certifications earlier—even though they helped them grow—was they just didn't have the time, bandwidth, and attention to figure out what those things meant.
+
+Ben: What are the most obvious no-brainer things that should be a part of that?
+
+Christina: It's really, really high level a SOC 2 or a compliance certification is trying to figure out if you can have a running a reasonable organization that protects data. You can kind of break it down into three pillars. One is cloud infrastructure. Do you have your AWS, GCP, Heroku, or whatever you're using, is it set up reasonably? That can be one of the hundreds of things, but just, do you lock all your doors and windows?
+
+One is around laptops, devices employees are using. Are those reasonable because they often have customer data on them or access websites that have all of the customer data? The final one is employees themselves. The accounts they use, their own practices, and how they're trained and onboarded. Again, that gets broken down, but just three pillars—cloud infrastructure, devices, and employees
+
+Ben: Our thanks to Vanta, the leader in automated security and compliance software. If you are looking to join Vanta's 2000+ customers to get compliance certified in weeks instead of months, you can click the link in the show notes or go to vanta.com/acquired for a sweet, sweet 10% discount.
+
+Other things, you all know the drill by now. If you want to join the Slack, you should, acquired.fm/slack. You should listen to the LP show to get the nerdier stuff like our updated thoughts on the markets and a little bit less us and a little bit more the excellent NZS Capital guys. We talked about all of that and semiconductors in our latest episode. You can search Acquired LP show in any podcast player, or you can become a member at acquired.fm/lp if you want those two weeks earlier or to join our LP-only Zoom calls, one of which is tonight if you are listening to the day that this episode comes out. LPs, excited to see you there.
+
+David: The LP show has been on fire recently. I'm just so pumped about the guests we're getting.
+
+Ben: 10-K Diver, that was fun really fun too, pseudonymous interview.
+
+David: We've got some great founders coming up. It's awesome.
+
+Ben: Listeners, as you know, this is not investment advice. Very much not investment advice this time.
+
+David: It may be product advice though. I definitely want to discuss Peloton's product lineup because I have some thoughts, but it's not investment advice.
+
+Ben: I bet you do. We may have investments in these companies that we discuss. The show is for entertainment and informational purposes only. Before I hand it over to David for history and facts, we do want to acknowledge that a big part of the news yesterday in the restructuring is that Peloton laid off 2800 people including 20% of their corporate office.
+
+As fascinating as it is to dive into this business and the strategy and of course, some of the drama, this is a super tough day and a super tough week for those 2800 people who had a really, really terrible Tuesday reading this news, talking to their managers, and all that, and our hearts go out to those folks.
+
+David: Yeah, layoffs are tough. They probably weren't layoffs when you were at Microsoft, where there?
+
+Ben: Two months after I left it was a massive round.
+
+David: Yeah, there were layoffs at UBS—my first job out of college—during the financial crisis. Ultimately, I think close to 50% of the company was laid off while I was there. It's hard. It's so hard. Layoffs are just no fun. That's an obvious statement, but it's hard.
+
+Ben: To transition us into thinking about one of our previous episodes with Barry McCarthy, he was a part of that big company-changing moment at Netflix where they had to restructure the whole thing. I think that also had a huge round of layoffs before they committed to a new plan going forward when Netflix was on the ropes and about to die.
+
+David: Yup, 40%.
+
+Ben: He's kind of clearly good at taking a bare-bones team and making the most of it.
+
+David: Indeed. Well, with that, history and facts. I think that is the perfect transition. Barry McCarthy, the Acquired superhero. We talked about him on the Spotify episode. We talked about him on the Netflix two-parter, both parts of the Netflix episodes because he ended up staying for 12 years at Netflix through all the crazy. That is such an amazing story.
+
+Going back, reading the transcripts of those episodes, the Netflix Journey is amazing, but we haven't talked about him too, too much since until today. I thought in preparation for today it'd be fun to dive a little more into his background. First off, something that is wild—he's 68 years old.
+
+Ben: The spring chicken coming to turn this thing around.
+
+David: It's unbelievable. He's roughly the same age as our parents, if not, maybe slightly older than yours, right?.
+
+Ben: Definitely older than mine, meaningfully older, about a decade. As other people ease into retirement, Barry accepts his first-ever public company CEO job.
+
+David: I know. Amazing. He's like the Sean Connery of tech. He is James Bond. He will always be James Bond. So great. A few quick things about his background, there's not a lot on the internet about or with Barry McCarthy himself. In fact, as far as I can find—and I looked pretty deeply—the only dedicated, long-form interview with Barry McCarthy on the internet is on YouTube with the headmaster of his high school that he went to, a school called the Hill School.
+
+Ben: Is it sort of a boarding school?
+
+David: It's a boarding school in the Philadelphia area. I went to Tower Hill School in Wilmington, Delaware, also in the broader Philadelphia area and people would always get the Hill School and Tower Hill School confused. We had a little chip on our shoulders.
+
+Ben: Your upbringing is somehow related to every episode these days. Are we only selecting for people in the Southeastern Pennsylvania region?
+
+David: Totally, the Mid-Atlantic region. This interview is actually amazing. It's an hour-long, we'll link to it in the show notes. As of yesterday, it had 100 views total on YouTube.
+
+Ben: Now it's up to like 500 or 600. It's still super small.
+
+David: If you do nothing else from this episode, go watch this interview with Barry and you will get a sense of this man and his experience.
+
+Ben: It's also six months ago so it's very recent. For a very long time, he had basically no public appearances.
+
+David: Very relevant to this news today that I was going to save this for later in the episode, but one of the final questions that the headmaster—who's a wonderful interviewer—asked him, Barry, are you bored in retirement? Now that he's retired from Spotify fully at this point. His answer is, yes. I'd like to think that I have another game in me and how prescient that would prove to be.
+
+We all know that Barry becomes the CFO of Netflix when the company is a very, very small, still a startup. I think there were only about 40 people at Netflix when he joined, and it was certainly pre-IPO, pre there being a real business there, which we'll get into. This was also not early in Barry's career. How did he end up becoming the CFO of Netflix? He had been the CFO previously to Netflix of another company, actually a digital music streaming company. Do you know this, Ben?
+
+Ben: Really? No.
+
+David: He was the CFO of a company called Music Choice. Music Choice, do you remember back in the early days of digital cable and satellite TV, there used to be those channels. We had DirecTV growing up, I think they're in like the 600s or 700s.
+
+Ben: It was sort of like Sirius XM in a way. It was like each one was a genre?
+
+David: It was exactly like Sirius XM, but just on your cable box or your satellite box. You go to XYZ channel and they'd have some crazy ‘90s era visualizations.
+
+Ben: Yes. You'll still see him in hotel rooms sometimes.
+
+David: Totally. That was Music Choice. Barry was the CFO of Music Choice. It's a cable channel. It’s subscription, revenue, music streaming—how prescient.
+
+Ben: Well primed for the ultimate Spotify gig that he would take when you took them public.
+
+David: Some other things, and I learned this from that interview, he had been a management consultant at Booz Allen, I think, early in his career, and then an investment banker for a long time. It's a well-trodden path from senior investment banker to going and becoming CFO of a company. Music Choice may have been public at that point in time. How did he find his way out to California and Netflix? He got fired as CFO of Music Choice. I don't know if it was part of a rift and if there were layoffs or if he got fired directly, but he's very open about this.
+
+Ben: Most rifts don't include the CFO unless it's performance-based.
+
+David: Right. Usually, the CFO is the one orchestrating the rift. He got fired and he was 45 years old. He had already had this long career as an investment banker and then as a CFO and been fired. What an inspiration to go from that to having so many more chapters to come even now to a new chapter at 68 years old. Gosh, I hope my life is that interesting.
+
+Ben: Label it what you want—growth mindset, learning from your mistakes, or anything like that. It does feel like this guy is compounding knowledge.
+
+David: I wonder if also, again, we talked at the top of history and facts about how this was a hard week for so many people at Peloton and our hearts are with them, it's hard. Barry went through this himself. How does he end up going out to Netflix? Netflix was recruiting for a CFO and nobody wanted the job, and we may have talked about this a little bit in our Netflix episode. But in the early days of Netflix, it was not a hot startup in Silicon Valley.
+
+It was far from it. Marc Randolph had originally started it. Reed got involved a little later. I also did not know this, or at least I didn't remember it from the Netflix episode, it was not a subscription business. The original business of Netflix was you paid per rental. It was literally like Blockbuster and that is not a good business.
+
+Ben: Oh, I don't think I knew that either, or at least I didn't remember that. The other crazy Netflix thing that I always sort of forget about until I reread it is that they sort of timed it with DVDs becoming more widely distributed. When they were starting the company, they sounded extra crazy because not only was it kind of a crazy idea, but it was a bet on DVDs and DVDs weren't popular yet. It's like, what do you mean you're going to mail discs? No one has a player for those discs yet.
+
+David: Totally. This was a tough role to recruit for and that's how Barry ended up becoming a candidate. Then he and Reed immediately hit it off. He joined and obviously, in many ways, the rest is history there. Also, I think it's important, it wasn't a subscription business. Barry was alongside Reed part of architecting the truly incredible business model of Netflix of becoming a subscription business.
+
+They had done, before he joined, just about a million dollars in revenue on the pay-per-rental model. He joins, this is all pre-IPO, they implement the subscription business model. It goes from $1 million to $5 million in revenue that year. The next year, $35 million and then hundreds of millions after that.
+
+Then they IPO, there's the fight with Blockbuster, all that we talked about in the part one of the Netflix story. In 2003, it's a public company, Barry tells Reed, you know what, this has been an incredible journey. I think he had been there for maybe five years at that point, five or six years. I'm ready for my next challenge. I want to go be the CEO of a company next. I've realized I'm really operational. I love this. He talks with Reed, he talks with the board. They announce on a public earnings call that Barry is going to be stepping down. He stayed an extra year throughout the year in 2003 to manage the transition, do it right, and find his next challenge.
+
+Ben: Netflix is boring. It's done. Everything's going to be smooth sailing and successful from here on out so I'll go do something else.
+
+David: Then Amazon, I don't know if they ever publicly announced, but word got out that Amazon was going to enter the market and compete directly with Netflix, which of course they did in a different way much later in history. The stock gets hammered. Literally, the stock price literally dropped 60%, shades of what's happening with Peloton now.
+
+Ben: And 60 is a modest drop compared to what happened with Peloton.
+
+David: Yeah, right. It's crisis mode. It's wartime again at Netflix. Barry, one of the many reasons why we love him here at Acquired and his story, he says, I can't leave. I got to stay through this fight. He literally—word for word on a public earnings call—announces that he's staying, he's not leaving, and his reason is, "you don't leave your friends in the middle of a knife fight."
+
+Ben: It's just so good. Barry is Mr. Wartime. In the parlance of Ben Horowitz's Peacetime CEOs and Wartime CEOs, this is Mr. Wartime. When things kind of feel easy, they're going to keep growing year over year, and we don't have an existential crisis in front of us, that's when he decides, okay, you guys are good without me now, but by all means, if we're in battle, put me in coach.
+
+David: Literally, in the Hill School interview, he says, "You got to ask yourself, are you a wartime fighter or not? And I've always gotten my biggest thrills being in the fight." Then of course, there's the Carl Icahn battle, the price wars, and all the stuff that happens at Netflix. He ended up staying until 2010. Many more years than he originally expected.
+
+When he finally does announce that he is leaving Netflix in 2010, he could totally retire at this point. He's in his mid-50s and he announces it at an investor conference. This is also amazing, amazing quote here. He's telling the street, "You can infer from the record in 2004 that I wouldn't be leaving unless things were in very good shape. There is nothing that I know that you don't know that would cause you to be sleepless about your position in the stock."
+
+Barry is saying that you can take that to the bank, and then Ben, to what you were saying, this is also from the Hill School interview about him really getting fired up by wartime and peacetime is not as interesting to him. The headmaster asked, why did he leave Netflix? He says, "I got bored. The more successful the business was, the fewer the challenges there were for me."
+
+Ben: Fascinating. Listeners, as you can tell, we're spending a lot of time here on Barry in part because I think it's really important to know, as we think about the future of Peloton, what is his MO, who is this guy, and to the extent where you're excited about the future of the company, why and what's the track record of this person? What's he likely to do when he comes in? Of course, he has an amazing way of instilling confidence. He has a way with words and especially a way with words to investors to bring a sense of calm. I think there's nothing more necessary for Peloton than that right now.
+
+David: I think the other thing, that's one half of the magic of Barry McCarthy. To the extent, he has magic, which I believe he does. I think the other half is what he learns from this Netflix experience and frankly, going all the way back to Music Choice before that, and then compounds with Spotify that we'll get into in a sec, which he is probably the number one world expert in managing subscription businesses.
+
+He helped architect the OG internet subscription business of Netflix, and then again, go back and listen to our episodes. So much of what he was doing during those wartime years was modeling out in incredibly precise detail, the economics of not only what Netflix's subscription business was, but Blockbusters and what Amazon could do.
+
+They had to make decisions with the whole company on the line about how low they were going to cut prices and how long they were going to hold them low to fight Blockbuster and Amazon. They had to understand the financing ability of those two other companies in addition to their own and their access to capital for how they were going to win that war. If there are other people in the world who have done this to the degree that he has, they're few and far between.
+
+Ben: He is in the dictionary under the definition of strategic finance.
+
+David: Yes, particularly subscription business strategic finance. When he retires from Netflix, he goes and joins TCV, which of course has a storied history of investing in Netflix and helping them through all of their challenges as a financing partner.
+
+Ben: We should say, TCV stands for Technology Crossover Ventures, which well it seems like everyone is doing this now investing in both private and public companies, this was a unique enough strategy when they were formed that they named themselves after it. That says a lot about how long TCV has been doing that.
+
+David: He joins them as a venture partner. I don't know if he was thinking that he was just going to be on boards and be an advisor for the rest of his career, but in 2014, he joined the Spotify board. He's sort of taken by both the Spotify business, Daniel Eck, and the opportunity ahead, and they need someone like him to really come and transform that business. We should revisit Spotify at some point because when we covered their direct listing, which he architected, Barry modernized the direct listing and everything that's happening now.
+
+Ben: Yes, taking a page out of Ben and Jerry's playbook.
+
+David: Indeed, indeed. He goes and joins Spotify as CFO, and not just CFO but also eventually he would head their free business, the advertising supportive business at Spotify. Not just the subscription business of Spotify.
+
+Ben: Oh, I didn't realize he's like an operational leader of the ad-supported business.
+
+David: Originally, he moved to Stockholm and was CFO of the business in Stockholm, and then moved to New York to set up and really drive the free portion of the Spotify business, which is what Taylor was so upset about. Now since he took that over, they built that into a real business, working with artists, and making that actually work for the company and for all the stakeholders.
+
+He had this incredible chapter there, the DPO, everything. Then in January of 2020, he retires—presumably fully at this point in time because he's 66 years old—rejoins the board of Spotify, and thinks he's going to spend the next few years joining boards again. He joins the Instacart board and reestablishes his relationship with TCV.
+
+Ben: Didn't he also join the board of Pandora if I'm remembering right, speaking of music subscriptions?
+
+David: That was back before Spotify.
+
+Ben: Okay, got it. Just to add yet another piece of credibility on music-related subscription businesses.
+
+David: Totally. Now let's switch over to the Peloton track of the story here. Peloton, as many folks probably know, was founded in 2012 by John Foley. The connections just go so deep here.
+
+Ben: David, I think it's inappropriate to start the Peloton story in 2012. I just have to say, I know you're usually the one who goes back. This story starts in 2006 with SoulCycle. Without going into the whole SoulCycle story, by the way, there are two awesome episodes of how I built this. One on SoulCycle with the founders there, and then another one actually interviewing John Foley on Peloton, which is great.
+
+We don't think about the narrative of Peloton that much this way right now, but if you think back to when you first heard about Peloton, it was SoulCycle but on a screen in your living room. SoulCycle was this massive dominant brand. If you were touchy-feely and then there was FlyWheel, which if you were more numbers-driven, FlyWheel was more your schtick. I guess it was more of a FlyWheel than a SoulCycle, but it had the prestige brand of a SoulCycle.
+
+David: I actually don't know the history on this, you may know, but there's the very intertwined history with SoulCycle and FlyWheel, right?
+
+Ben: There is. We will get to that and what would have happened otherwise.
+
+David: Okay, we'll save it for later. We'll save it for later
+
+Ben: It is totally inappropriate to think about Peloton in a vacuum. The moment in 2012, and I think even 2011 when there was ideation happening, was totally I'm John Foley, I live in New York. SoulCycle is totally taking off in this not yet connected fitness but sort of—
+
+David: Boutique Fitness.
+
+Ben: High-end group Boutique Fitness that's taking the world by storm. Of course, there's John who's not really the most numbers-oriented, schedule-oriented, disciplined person, more a visionary, product-leader type person. He's thinking, I can't commit to five days from now making sure that I schedule that spot in SoulCycle. What if I could decide last minute and there was an infinitely scalable version of SoulCycle where the room wasn't bound by four walls?
+
+David: Totally. Well into who John is in a sec, but you're absolutely right to start with SoulCycle, Boutique Fitness, FlyWheel, Barry's boot camp, and all the other similar businesses out there.
+
+John and his wife Jill lived in New York, which is the epicenter of all of this, and there are so many great instructors at these places that have cult followings. People fly from all over the world to come to New York, that's where you want to be if you are an up-and-coming instructor in this burgeoning new care category. This is what's just brilliant, like you said, it's so hard to get spots in those classes. The instant they become available, you even had to do this in Seattle, I remember, but in New York it's impossible.
+
+Ben: It was a meme to buy the shirts and the shirt said noon on Monday because noon on Monday is when you had to stop whatever you're doing and scramble to reserve the spots.
+
+David: Anybody, it's hard to get spots with the best instructors in these classes. John and Jill, his wife, were super into this. They had two little kids. I've got one little kid. Obviously, we live in a different era now, but even if we didn't, there would be no way I could do this. There were a lot of people out there that just wanted this product and couldn't get access to it.
+
+The Peloton idea was revolutionary on a whole bunch of dimensions. One, it was a democratizing location. You didn't have to be in New York to get the best stuff. Two, was like you said, elastically scaling access to the best instructors, not the average instructors and low-quality instructors. Literally, only the best and infinite class size.
+
+Ben: If you think those vectors alone—infinite class size and geography agnostic—that's massively TAM expanding. Theoretically, the TAM for connected fitness should be way bigger than Boutique Fitness, but then there's even a third layer of icing on the cake, which is time-shifting. What if you can't make it to that 5:00 AM class?
+
+David: To feather back in preview, a little Barry element here, one of the things that he talks about—to the extent he does talk publicly—and learned deeply from Netflix but has just become kind of ingrained in him and I think is now an obvious insight but definitely at Netflix and at this point in time when Peloton was getting started not obvious. His quote is, "Everything linear dies, everything on-demand wins," and it's so true.
+
+This element of being able to access the best in the world content on your schedule, when you want it, that's what makes Netflix awesome. That's what makes Spotify awesome. That's why podcasting is better than talk radio. That's why music streaming is better than listening on the radio. That's why Netflix is better than linear TV programming.
+
+Ben: Yeah, which is mostly true but not entirely true. Sports is probably the notable exception.
+
+David: Right. Barry always says sports is sort of the one. There are a few categories out there. Here's this concept being applied to a whole radically new market like fitness, who would have thought. It's absolutely brilliant and we can't give enough credit to Peloton and John Foley for innovating on this.
+
+Ben: In fact, you could even argue Slack is indicative of this trend. Work going async instead of synchronous. Pulling out of meetings and going to chat-based or document-based forms of collaboration. That is on-demandness of something that was previously linear.
+
+David: Totally. People still obviously have work phone calls and whatnot.
+
+Ben: The number of Slack conversations that used to be a meeting or the number of document reviews that used to be a meeting is just awesome.
+
+David: Yep. To then create a product that is native to that, email existed, but it's slow and it's not… Anyway, that's what Peloton was. Who's John Foley? It's such a small world out there. Prior to starting Peloton, he had been the head of Barnes & Noble's Nook business, their e-reader business, which is based in New York. Actually, Barnes & Noble was a great company and then eviscerated by Amazon. The Nook product, I think, was probably a decent product but it was just too late.
+
+Ben: They were really a fierce competitor in this market. They outlasted Borders.
+
+David: Totally. It's interesting too—thinking about the book and e-reader market relative to Peloton and maybe some lessons that Foley learned from that—you could have the best hardware in the world, but you needed the books. The content was what really mattered. It didn't matter if the Nook hardware was better than the Kindle or not. Amazon had the biggest selection of books, the easiest buying experience, and had the most lock-in.
+
+Ben: Okay, I do have to pull forward that thing from what would have happened otherwise because we can save that analysis for later, but I should share what actually happened. You might be giving Foley a little bit too much credit here. When he was starting the business, they wanted to build the best bike, a beautiful piece of hardware like Apple. They wanted to build software that was equally elegant and really differentiated that bike.
+
+The original vision actually was a connect your own iPad vision. They did not want to unify it but sort of learned over time that we really do need to unify it to control more of the experience. But here's the interesting thing, they actually didn't want to produce their own content. They thought if we have a bike, even if it's a bike with our software, that's interesting enough to people and we can partner with either SoulCycle or Peloton.
+
+David: Or FlyWheel, you mean?
+
+Ben: Or FlyWheel, yeah, to get access to their instructors and their content. That's the thing they're good at is the content. We'll just make this elegant device, and they actually got to a term sheet with FlyWheel. I think SoulCycle sort of gave them the cold shoulder as they were so hot at the time, so big, and so dominant. FlyWheel actually got to terms on what it would look like to make this thing not only a content partner but I think also a go-to-market partner. This was going to be the distribution strategy, but FlyWheel ended up pulling out and walking away from the deal. Peloton was forced to do their own content and pivot to a really vertically integrated strategy.
+
+David: Oh my gosh, talk about history turning on the knifepoint. Wow, just like the echoes of the Blockbuster-Netflix situation and Amazon. Remember, Netflix tried to sell itself to Amazon?
+
+Ben: Yup.
+
+David: Ah, amazing. Okay, so that's what Foley was doing immediately before starting Peloton. But before that he had been a long-time IAC guy, InterActiveCorp., working for Barry Diller. Oh my God.
+
+Ben: The original tech media conglomerate. I'm kind of annoyed at the number of people that tried to characterize John Foley as someone who was breaking into the industry or didn't have a tech background. No, he was in the middle of this stuff in the late ‘90s, early 2000s.
+
+David: We should do an episode on IAC because it is fascinating. Barry Diller, media, tech, and him being really the first person to integrate all that. For a long time, sort of the jewel of IAC was QVC and the Home Shopping Network. What is that? That is literally streamed media out via television with an interactive component that people at home were buying, calling. The DNA is just so, so perfect.
+
+Ben: What was John doing at IAC?
+
+David: I believe he was working on part of the city search team and then they had a business called pronto.com. I'm not sure exactly what that was doing, but he had bounced around. I think a lot of people that I see go between a whole bunch of their properties.
+
+Ben: Yup, and I'm not sure if this was IAC or his next gig, but he ended up taking over the post-bubble Evite team that had shrunk from like hundreds and hundreds of people down to this very small group. I think he grew it from $1 million to $25 million in revenue or something. Still relatively small compared to the grander scale, but had sort of done this take a startup, rehab it, and build it bigger. He hadn't actually done a startup from scratch but had built something meaningful with a small team.
+
+David: Man, Evite, that's like the cockroach of the internet, in a good way. It just won't die. Amazing. You would think, gosh, we're telling this story now, in hindsight, it's 2020. Incredible vision, proven demand for this product. Yes, it's going to be hard to build a full-stack company around this, but financing hard stuff, that's what builds moats. This should be an easy fund to raise.
+
+Ben, as you referenced John's episode on How I Built This is great around all this so we won't rehash all of it. It was incredibly hard to get this funded. All the VCs passed again and again and again. He ends up raising $400,000 to start from friends and family at a $2 million post-money valuation. Oh my gosh. And of course, folks probably all know now, I think it's later in my notes maybe what the current market cap of Peloton is, but at its peak, it was a $45 billion public company.
+
+Ben: IPO'd at $8 billion, went all the way up to (I think) $49 billion, and then today is floating a little above the IPO price between $9 billion and $10 billion.
+
+David: Wow. From a $2 million post-money valuation for that first round. That's 20% of the company he sold for $400,000
+
+Ben: Yeah, all from individuals, $25,000 and $50,000 checks.
+
+David: Then did a $3.5 million round I believe also all from individuals after that. They did a Kickstarter in 2013. I had forgotten this.
+
+Ben: I can't believe this thing was a Kickstarter.
+
+David: Until I pointed out in the Acquired Slack. It was a Kickstarter and it was like essentially a failed Kickstarter. It didn't technically fail, but it wasn't good.
+
+Ben: Yes. Here's the thing, I just pulled it up. We'll link to the Kickstarter page in the show notes, which by the way has basically the bike exactly as it is today on their from eight years ago.
+
+David: Aside from the weights holders and they tweaked—
+
+Ben: The water bottle location.
+
+David: It's the same bike.
+
+Ben: Yeah. They raised $307,332 on Kickstarter. Their goal was $250,000 and John says on the How I Built This episode that half the people who backed the Kickstarter were already investors.
+
+It's a very interesting thing here where we all know Peloton is a killer product. You and I rave about it. They have these ludicrous NPS scores, and yet, when they laid out the vision and they showed a very well-produced video, you get a sense of what the experience is like from this video, it was not enough to communicate to people that this thing is going to be awesome. I think it's worth pointing out that until you actually tried it, you didn't know it was going to be good, which makes it a pretty hard thing to sell.
+
+David: Totally. We're going to get into this more in a sec. At least in the early days, things may be different now, although maybe not, we'll discuss. This product is not something you can really just sell over the internet. Like you said, you either got to try it or you got to have a bunch of friends who are using it and be like, this is awesome.
+
+Ben: Right. There needs to be sufficient social pressure or your own experience.
+
+David: Let's go right into, how do they start and end up selling it? They make, especially at that point in time, completely orthogonal decisions to how tech companies and startups were supposed to sell. They go to the Short Hills Mall in New Jersey, rent a store in the mall, set up a mall store, and start selling these by hand in the mall.
+
+Ben: It's a beautiful contrarian bet to say our strategy is to go to malls, which by the way, they continued to do. Hundreds and hundreds of in-mall stores as malls across America are declining, but they did have the realization—I don't know if it was super explicit as a strategy, but the realization—that hey, until you try this thing, you actually don't understand how awesome it is. You can hear it described to you, but it's not compelling enough to buy, especially at this high $2000 bike plus a subscription fee price point. The mall was sort of necessary.
+
+They have these anecdotes about how people actually weren't in the market to go buy gym equipment, but they're walking by, they try it, they have someone size the bike for you, and you throw in the headphones. Their KPI is to get you in the experience as soon as possible after stepping in the store. This is, by the way, how I bought mine. You wander in.
+
+David: You bought it in the mall?
+
+Ben: I did, yeah, I had intent beforehand, but it is this experience where they're like, do you want to try it, and they make it easy and fun to try. Then once you're in and you've got headphones on, and typically people are together, so you look at your partner or whoever, and then you're like, whoa. It takes all three to five minutes before you're like, oh, I see why this could be cool. They needed the mall store as the way to do this.
+
+David: I'm just remembering my own experience before I bought the Peloton, which I didn't get until this summer. It was not like a pandemic purchase per se, but I had been hearing from you and plenty of my friends how much they love it for years, and that wasn't even enough to put me over the edge.
+
+I got a digital subscription. I had a crappy old bike in my garage that I was using it with. I was like, oh, this is pretty good. Then we went on vacation, we went on a babymoon before our daughter was born and the hotel had Peloton there and I was like, well, I'll see what the actual bike is like. I was like, oh, this is awesome and my $200 Amazon bike in the garage, it's night and day compared to this.
+
+Ben: It really is a great bike. It's the sort of magnetic resistance, it's the belt instead of the chain. I mean everything about it is a nice piece of hardware.
+
+David: It really is, but yeah you got to try it.
+
+Ben: It's interesting you're describing how you got hooked into it. That's like, sure you want to sell bikes to hotels because it's nice to sell bikes, but I think a big part of we need to be in hotel strategy is just more and more ways for people to experience it and want to buy one.
+
+David: Yeah, okay, so you mentioned the price, $2000 bike. I think they priced it like $1500 on Kickstarter, I think. But then when they first tried to start selling these things, they priced it at $1200. This is a fascinating little detail. Then they talked to some people about this, you're getting customer feedback.
+
+What they realized was that for $1200 dollars, they're thinking like, hey, the strategy is to sell the hardware at cost or at a loss. It's like the video game console strategy. Get the video game consoles in there and then we've got this awesome subscription business that we're going to layer on top of it and that's where we're going to make our money.
+
+People thought the hardware couldn't be that great if it was $1200 and they realized that if they raise the price up to $2245, then in people's minds this becomes this jewel, premium, expensive, aspirational, luxury product. I'm treating myself to this splurge because it's so awesome and I'm going to love it. At the $1200 price point, it was hurting that, it was preventing that from happening.
+
+Ben: That's absolutely fascinating.
+
+David: They didn't change a thing about the bike. They just raised the price by $1000 bucks.
+
+Ben: In the Buffett parlance of prices, what you pay value is what you get, they’re using the price to signal value.
+
+David: That's supposedly another one of the big things that really help sales take off.
+
+Ben: I'm going to pull forward a playbook theme here. The second-order thing that I don't think they realized by jacking up the price is that now they're picking their customers and they're picking affluent customers. In particular, they're picking customers who have extremely low price sensitivity.
+
+What happens when you pick people with extremely low price sensitivity and you select for only people who are willing to throw $2300 post-tax at an exercise bike, they're pretty unlikely to churn even if your fitness subscription is pretty expensive. Even to this day, their annual churn—if you take their monthly churn and annualize it—is something like 9%. This is an unbelievably sticky business. When you look at most consumer businesses they're like 50% annual churn.
+
+David: Yup, as of last summer, they're on a June 30 fiscal year when they reported the last full year fiscal end, I believe monthly churn was like 0.6%, which worked out to about 7% annual turn.
+
+Ben: Wow.
+
+David: Those are Netflix numbers there.
+
+Ben: I think it's meaningfully better than Netflix. I should look at what Netflix’s churn is, but I think that is the best I've ever seen. On the one hand, it's hard to acquire customers because you got to go sell them a $2400 bike. On the other hand, once you get them, boy is that sticky.
+
+David: I don't know what revenue was for 2014, which is their first kind of full year of sales and then they implemented some of these strategies. I believe it was $10 million. In 2015 though, they did $60 million of revenue, and ahead of that at the end of 2014, they're able to raise their first institutionally led round of capital. This is 2014 led by the legendary early-stage investor, just technically a Series B but the seed was the $400,000 round and then the A was still individual's $3.5 million round, led by the legendary seed investor. They are quite now a legendary seed investor, among others—Tiger Global. Get out of here. This is amazing.
+
+Ben: It's unbelievable that by Lee Fixel in 2014, it was a $10 million total round on a $35 million post where Tiger put in $5 million. Tiger would go on to become the largest shareholder at IPO owning just under 20% of the business.
+
+David: Amazing. There are so many little things about this story that just sort of presage everything that would be to come in tech over the years in venture. Tiger leads the first institutional round.
+
+Ben: I do think, by the way, this is one of the things that gave—among many other very successful investments but was a big part of the story for Lee when he left and started Addition and raised over a billion dollars for Addition's first fund. Peloton was a big part of that.
+
+David: For Lee, for Addition, and for Tiger itself too. Got to imagine that that was a big part. They're notoriously tight-lipped. Our friend Mario Gabriele wrote I think the best piece out there on them, which is still without insider access but shaped their strategy too.
+
+Ben: Yep.
+
+David: So $60 million in revenue in 2015. In 2016, they did $170 million in revenue. In 2017, they raised $325 million at a $1.3 billion valuation. This is where I think Silicon Valley really started to wake up and be like, oh my God, we missed this. How did we miss this?
+
+Ben: Yup, because he pitched everyone—everyone.
+
+David: Literally everyone. In 2018, they introduced the Tread product (the treadmill) and the digital app subscription. It'd be fun to talk about that. I started as a digital app subscriber.
+
+Ben: Which is like $13 a month.
+
+David: Yup. It was $12.99. I think I originally started because I think there might have been some deal with Apple like a free month trial or something like that.
+
+Ben: Were you a part of the COVID offering, the three-month COVID thing?
+
+David: Yeah, I think that might have been.
+
+Ben: That was totally nuts. John Foley talks about this at the beginning of COVID. He said, "Six months ago, we had about 100,000 digital subscribers for that business." And within 45 days of COVID hitting, they gave this deal that said, you're not getting a month free, you get three months free because people need to work out at home. "Within 45 days, we had close to 1.2 million people who had jumped on the trial. So… call it a 10x increase… In weeks."
+
+David: Wow.
+
+Ben: Again, we'll get into the unit economics of it later, but at least from a customer acquisition perspective, that was a great way to spike the number of subscribers they had.
+
+David: Totally. The digital app experience is surprisingly full-featured. I used just that for quite a number of months before I got to try the actual hardware at a hotel.
+
+Ben: For people who are wondering, why isn't it as good? If you haven't ridden the Peloton, why can't I just mount an iPad on an old exercise bike? The biggest difference is that when the bike is not feeding information into whatever device you're using—your iPad or something—it doesn't know what the resistance is and it doesn't know what your cadence is. You don't know things like your current spot on the leaderboard. It knows you're doing the ride and it knows how far into the ride you are, but it doesn't actually know anything about how you're doing in the ride.
+
+David: Leaderboard. I also think it is a really good bike. You can do a hack a Peloton and get some of the integrations with third-party sensors, but I think to get a similar quality bike, you're going to be spending roughly the same amount anyway. That's what I decided is like, well, I'll just get the whole ecosystem.
+
+Ben: Why wouldn't you get one anyway? Because the connected fitness digital-only subscription is $13 a month and once you have a bike, it becomes $40 a month.
+
+David: You're paying $40 a month. I know you've got some fun stuff on this. In 2019, everybody in Silicon Valley knows this is a great business now. People started talking about an IPO, going public, which happens in September 2019. Leading up to that, there's kind of an issue with the business they got to sort out. Earlier in 2019, they got sued for first $150 million and then they up it to $300 million by the National Music Publishers Association because they're obviously using all this music as part of the classes at Peloton and they didn't have the proper sync licenses.
+
+Ben: Yes. This is one of my larger bear cases for Peloton. Music licensing and gross margins are a treacherous tale. If you look at Peloton’s income statement today and across the recent quarters, we're at sort of a relative point of maturity here, about a third of the revenue that comes from subscription, not like the physical bike sales, but if you just look at the subscription revenue, a third of that goes to cost of revenue.
+
+While we don't know for sure, it's very likely that the majority of this goes to music licensing. Even though investors love a good subscription business, this is not 86% gross margin like SaaS is, it's more like 66% gross margins.
+
+A little examination, why do we think that this mostly goes to music? In part, the variable cost for everything else should be pretty low. Maybe bandwidth is probably the next highest cost for streaming video. I have some particular beef as a pedantic person with the video that they do stream. I find it to be too low frame rate, to have some motion blur, and to be a little bit compressed, but all that aside, it's still expensive to stream video.
+
+David: Did they put content production cost in variable cost here too?
+
+Ben: I don't know if that is in the cost of revenue for the subscription. I would guess not? I would guess they would put that down in either G&A?
+
+David: I don't know, I haven't dug enough to know, but I don't think it's that expensive relative to the amount of subscription revenue they get. We'll get into powers later, scale economies, and all that, but my understanding is that the top Peloton instructors make $500,000 to $1 million.
+
+Ben: I think that's about right.
+
+David: Then obviously, you've got all the production costs around that, but still compared to hundreds of millions of subscription annual revenue, that's a drop in the bucket.
+
+Ben: Totally. Let's assume that the largest part of this 33% of the cost of revenue is to pay for music. Why is music so expensive? If you remember from our Taylor Swift episode, there are a bunch of different types of licenses.
+
+David: I knew you were going to get into this.
+
+Ben: Unlike Spotify or the radio, Peloton actually requires multiple licenses for the particular way that they use the music. First, Peloton, I think, is technically just like the radio—a live performance. Live performance royalties must be paid out. If you are curious about how those are paid out, go listen to the Taylor Swift episode where we talk about the difference between the publishing rights holder and the performance master right holder. They also need a sync license in addition to synchronizing those songs with the video content, if you're going to use a license in—
+
+David: A commercial or a movie.
+
+Ben: Exactly. Just as a quick aside (an aside from an aside) the interesting bit about sync licenses is they require the approval of both the songwriter—the person with the publishing right—and the performing artist whose label owns the master right. There's a lot of people who can say, no, I don't grant you a sync right, which is why in this lawsuit that you're referencing, David, when Peloton did end up pulling a bunch of stuff off of the service, which a lot of people were really upset about, it was weird because they were like, wait, but some of these artists' songs are on there and some rides with those artists' songs got removed and that's because those songs had different songwriters behind them.
+
+David: So many people with veto power, what a byzantine industry.
+
+Ben: Crazy, right? Okay, back to this gross margin problem. According to a piece from Trichordist, which is a music industry site, Peloton pays out 3.1¢ every time that you are on a ride and hear a song. That number should actually sound pretty high to you because that's meaningfully larger than what we talked about on the Taylor Swift episode per stream.
+
+Let's take that 3.1¢. If you ride every day, and people don't ride every day, but I think people ride about 20 days or they use the product about 20 times per month. Let's say you ride every day and assume there are about 10 songs per ride, and I went back through my recent rides and looked at that's about right, that's $9 of your subscription revenue that is going straight to music. If you're on the bike subscription, that’s 23% of your subscription that you're paying to Peloton goes immediately to the labels, which kind of checks our math above that the biggest part of that 1/3 of the cost of revenue is actually for music.
+
+Of course, if you're on the digital-only subscription, that's really high because if that's only $13 a month. If you're actually using that thing every day, I assume the royalty structure is similar. It may be the case that Peloton is large enough that they've negotiated a specific revenue share somewhere between 15%, 25%, 30%, or something like that with the music labels rather than needing to pay out a fixed amount per song because if it's a fixed amount per song, then they could get underwater pretty quick on that digital-only subscription.
+
+David: God, the parallels to Spotify are just amazing with the two different tiers of customer experiences and vastly different implications of that for their back-end costs.
+
+Ben: A hundred percent. Okay, you're leading the horse to water. I'm the horse, here's the water. Because there are very real marginal costs in this business just like Spotify, at the end of the day, this actually does have the same incentives that an old school gym membership, which is to sign you up, keep you subscribed, but really no incentives for you to actually go to the gym all the time.
+
+They want you to do the minimum amount to stay subscribed, stay engaged enough with us, but don't cost us any money. We want to minimize the amount that we have to pay the music labels on your behalf, which is interesting.
+
+I was thinking about this. I'm preparing for the episode and I slept on it. When I woke up this morning, I realized, because they're bragging about all their earning stuff increasing user engagement over time and having internal KPIs around, we want people to use the service, I came to the conclusion that they have to have a pre-negotiated revenue split with the music labels rather than paying per stream. because Peloton could end up in a really tough position if their own incentives are for you to stay subscribed but not ride.
+
+I bet they did some kind of blanket license type thing where 20%, 25%, or whatever it is ends up of all subscription revenue no matter what ends up going to the labels.
+
+David: If they don't have that, they probably have a new CEO who could help make that happen.
+
+Ben: Very much so.
+
+David: If they don't they should, and now they probably can.
+
+Ben: Yes. One last quick piece of math just to underscore the gravity of this. I ran the math on what it would cost Spotify to pay the labels for the same amount of music listening time based on the data that we used in the Taylor Swift episode. Fifteen hours across a month—so I was thinking the same as a 30-minute ride every day for a month—and instead of the $9 that I estimated that Peloton has to pay, Spotify is closer to $1.20.
+
+David: Wow. That's massively different.
+
+Ben: That sync right, and the performance licenses—very expensive. Barry is definitely used to this Spotify world of, we pay a pittance to the labels and the artists. In this world, because of the licensed structure, it's a meaningful part of cogs.
+
+David: One way to look at it is the meaningful part of cogs and in the bear lens. Another way to look at it is artists should really embrace Peloton.
+
+Ben: Yes, very much so, which you got to wonder, is that part of what's driving the Taylor ride series and the Beyonce ride series. Peloton is notoriously very collaborative with the most popular artists.
+
+David: September 2019, they've settled this lawsuit, they figured things out, at least with the sync licenses. They go public, the IPO happens. As one hits fiscal year 2019, so fiscal year ends June 30th, as I've said. For the 12 months leading up to June 30, 2019, it did revenue of $915 million. For a product that's been in the market for five years, that is impressive. That is up over 100% from $435 million the year before.
+
+Of that $915 million, $181 million is subscription revenue, which is up from $80 million the year before, so growing even faster. We already talked about the margins on the subscription revenue. Interestingly, the hardware revenue—Connected Fitness products is the segment they call it—also about a 40% gross margin. This is the benefit of raising the price $1000.
+
+Ben: Right, they actually make pretty good margins on selling the bike itself. I couldn't find this mostly because I was scrambling for just the last day to put together everything we did learn. If you have data on this, please come and share it with us, acquire.fm/slack, and we would love to talk about this.
+
+I remember around the time of their IPO seeing some analysis that said that they basically were breakeven on the bike if you add in customer acquisition costs. The cost of manufacturing the bike, delivering it, and all that plus the cost to acquire, which was really expensive—they're in these malls, they're sending you a ton of social media ads, they're really trying to convince you. They're putting on Superbowl commercials, which we'll get to, they're putting on other commercials where people are in these multimillion-dollar homes riding in fancy places, it's expensive to convince people to do this new behavior.
+
+I think the plan at the time was like, okay, just don't lose money acquiring a customer when we sell them a bike. As long as we're breakeven on that, then we can make a lot of money on the subscriptions.
+
+David: I actually did do a little modeling on this. Don't take this as gospel because I'm mixing time periods here and it's hard to know exactly. This is not a sharp pencil, this is back of the envelope modeling. These are pandemic numbers, so it may not be applicable anymore. But in the most recent full fiscal year, which ended June 30, 2021, they spent $730 million on sales and marketing and they added about $1.4 million gross adds on subscribers.
+
+I'm assuming that all those are bikes, obviously not. A lot of those are digital subscriptions, et cetera, but let's just make it simple. CAC on that is $521 per gross subscriber added. That is, to your point, a lot of money. That is a lot. It is a very, very high CAC—$521 per new subscriber.
+
+Ben: Not in the B2B world, but it's almost unheard of in B2C. On getting a consumer, paying $500 for a consumer, no one does this.
+
+David: If you go out and put that in your pitch deck around Silicon Valley, you're going to have to have a very high LTV. At the $1895 price point for the bike, which is what it was until they started doing crazy stuff with their pricing, but they had lowered it from the $2245 to $1895, at a 40% gross margin on that hardware, that's $758. So they're more than making their money back.
+
+Ben: Right. They're making a little, maybe $100, a couple of $100 total on each bike.
+
+David: Yup, they're making some amount of contribution margin on the bike. But then you attach the subscription, which with the crazy low churn rates that they have, the implied lifetime is over 10 years.
+
+Ben: Forty dollars a month, 66% gross margin.
+
+David: Right. Let's cap it at five years for customer lifetime because 10 years is too crazy. Let's assume that that's not going to happen. At $40 a month, that's $2340 in subscription revenue over five years.
+
+Ben: Wow.
+
+David: It's a pretty dang good business. Interestingly, the IPO happens right after the whole WeWork debacle, which we covered on this show with Dan Primack—also a big Peloton fan—at the time, that was fun. The IPO is not a good one. Prices around $8 billion, but then trades down 11% on opening to a $7.2 billion market cap. We're talking 7x trailing 12 months revenue, but this company is growing over 100% a year, so 3x forward revenue with pretty good unit economics that we just discussed, interesting.
+
+Ben: Yeah, and this is in an era too where you don't have a lot of busted IPOs. This is before COVID, but it was still pretty go-go times for these tech businesses. A little disconcerting that they've traded down from their IPO price.
+
+David: Indeed, and then they don't really help things. Shortly after the IPO when the holiday season, 2019 rolls around.
+
+Ben: Wait, before we get to the Peloton ad, can you give me the numbers again on the cost to acquire customers and their LTV just because I want to hold that in my head as we continue through here?
+
+David: Okay, so rough, rough numbers, $500, $520 to acquire a customer. Let's say they are breakeven to slightly profitable on that with the hardware and then $2340 of lifetime revenue, assuming a five-year customer lifetime.
+
+Ben: Okay, so $2300 of LTV. Is that contribution?
+
+David: That's revenue, so then 2/3 of that per your analysis is contribution.
+
+Ben: Okay, so we're looking at something in the neighborhood of $1500 of contribution on the subscription even if we cap it at five years. Every single person they acquire, not only are they breakeven or probably a little profitable just by selling them a bike, but then they make another $1500+ in pure profit by retaining them over time.
+
+David: Yup. You understand why this company, management, and the board would be like, we should advertise.
+
+Ben: Yes. We should go and pull forward as many new customers as we can. We should take out an infinite amount of debt—not that they did this—but we should raise an infinite amount of money so that we can spend on marketing, so that we can go get as many people to buy this thing and get hooked on it because oh my God, what a business we have on our hands.
+
+David: Thus we end up with the holiday 2019 Peloton wife commercial, which is a funny story. Did it end up being bad for Peloton or is this just good marketing in the end?
+
+Ben: I think it was good marketing. I think it's good for everyone. It ends up being good for that actress.
+
+David: Yup, good for Ryan Reynolds.
+
+Ben: Oh my God, the Aviation Gin thing that came out the next week is just genius. We'll link to it, but people, go google Peloton wife Aviation Gin and watch that commercial. I also thought the Peloton wife commercial thing was pretty overblown. It feels like every year, stuff gets more and more insane. This commercial at the time, I think, had a lot of people up in arms, but this is not that scandalous.
+
+David: Yeah, right, compared to everything that's happened since. Also, it was probably great for Peloton because I didn't go back and watch it, but my recollection of it—put the controversy aside—is that the commercial itself was like, eh, fine, but then they got so much hype out of it.
+
+Ben: But this sets Peloton's track record for, they can become a dominant trending topic in a pop culture-y way, which every time they would come to dominate headlines after this, it's not really good for them. Other than the one which is like, hey, now that the pandemic hit, Peloton has perfect product-market fit. But every single one other than that, which we're about to talk about—the shipping delays and the treadmill recall—basically was never good again.
+
+David: Yup. Before we get to the pandemic, I think this is the perfect spot for the second sponsor of this episode in all of season 10. One of our very, very favorite companies here at Acquired, Vouch, the insurance of tech.
+
+Vouch is business insurance for the modern tech industry. Whether you're bootstrapped, seed stage, growth, public, or anywhere in between, with Vouch, as you know, you can go online, get next-day coverage for your company in as little as 10 minutes, and then you can grow your coverage as your company grows.
+
+I was thinking about this and I was like, it sounds like a GEICO commercial. Then I was like, wait a minute, that's the whole point. It is like a GEICO commercial. You can now go on with Vouch and get next-day coverage for your business without filling out a million forms, going back and forth, mailing stuff, and doing ridiculous things. That's unbelievable. That's how it used to be.
+
+Ben: I can attest—as the resident form filler router here at Acquired—we are insured by Vouch and that was our experience.
+
+David: That's so awesome. It hit me for this. I was like, yes, it is the GEICO consumer experience brought to business and that is an incredible innovation.
+
+Ben: And not just for startups too. It's impressive that they can do this for growth stage and larger companies in the same expedient way.
+
+David: Totally. As many of you probably heard on the Taylor Swift episode at the beginning of the season, rather than just telling you the same story every time, every episode with this for Vouch...
+
+Ben: Which is basically, if you have a company, you need insurance and you would be insane not to pick Vouch.
+
+David: Yes, we're going to say that and it's true. We use it and believe it. They also had the awesome idea that we should use this time to do some little one-on-ones over the season to deeper dive into what insurance is and how it works.
+
+Today, in the great idea that they had, we are going to address the elephant in the room question, which is, why do you actually need business insurance for a startup? You're already doing this thing that's really risky, why would you even get insurance? The reason that they said that, and I totally agree with this, is that insurance lets you atomize different risks and separate out the good risks like the product risk, the market risk, and the technology risk—all the stuff that you and your investors are betting on in your investment thesis with this company.
+
+Ben: Right. The real risk that the investors and founders with your time that you're essentially underwriting, we are willing to take these risks that we can't find product-market fit or that—
+
+David: You're doing the underwriting on that. With insurance, you can take other risks, you can atomize them, and you can have somebody else do the underwriting on those. That's what Vouch does. Stuff that's completely unrelated to what you're trying to do with the business—data breaches, accidents, wrongful termination claims—that's what insurance is.
+
+It's atomizing these different risks and then you pay Vouch the premium every month or whatever insurance company. In return, they assume the risks. And because they're pooling and Vouch is pooling these specific risks across many startups and companies, they're able to (in aggregate) model it and price it such that they're going to make profit and money on this and that—that's why Vouch is a great business—but it also is a total no brainer for you to offload these risks.
+
+Ben: Right. Another way to think about it is, if the risks are part of your core competency as a business, take them. If they're not and they don't make your beer taste better, outsource that risk to Vouch.
+
+David: And the cool thing about Vouch, because they only work with tech companies and startups, they can actually price this risk right in a way that legacy insures. This is why it was so hard before—you had to do all these forums, jump through all these hoops as a startup or a tech business—because legacy business insurers have no idea how to price your risk. This is awesome.
+
+Obviously, you shouldn't leave everything to insurance. It's the last line of defense after important stuff like having sound HR policies, cybersecurity, using Vanta, and compliance. But the last thing you want is for a completely unrelated risk to tank your business or even worse than that, just suck away your time as a management team. Vouch takes care of all of that.
+
+They're awesome. You can learn more at vouch.us/acquired. All Acquired listeners, if you use that link or the link in the show notes, which is the same, you can get 5% off all of your coverages.
+
+Ben: Thank you, Vouch.
+
+David: Thank you, Vouch indeed.
+
+Ben: All right, David, tell everyone why I was the most fortunate person in the world to, in January 2020, have just so happened to have bought a Peloton at that moment in history.
+
+David: I didn't realize you bought it before the pandemic.
+
+Ben: I bought that and my car in January of 2020, totally randomly and by happenstance, which both ended up being unbelievable assets to have.
+
+David: I actually bought an Olympic weight set off Craigslist right at the same time, so not as high value as you, but stuff that immediately became unavailable. I think it's $180 maybe for a full Olympic weight set. It was awesome.
+
+Ben: Which now is like $1000.
+
+David: Yeah, so great. The pandemic hits, like you said, if Peloton had very good product-market fit with a certain narrow customer segment before the pandemic was a great business. The pandemic made it have instant product-market fit with many, many more segments. They add roughly a million subscribers in the next year's revenue. In the fiscal year ended June 30th, 2020 is $1.8 billion. In the fiscal year ended June 30th, 2021 is $4 billion.
+
+The stock trades up, as we've talked about, to a peak of over $150 per share at a $49, I believe, billion market cap. People think this is going to the moon and rightly so. It's an amazing product. If fitness has now become fully digital, they are the leader in the category. So much to love here.
+
+Ben: There are zillion copycats, not just in the NordicTrack and Target making black and red bikes and making Peloton-like sounding names for them.
+
+David: Yeah, there's Echelon out there.
+
+Ben: It's crazy. But also pioneering this category of connected fitness, which says, sure, Peloton is going to do a tread and a bike, but they're not going to do a mirror, band-based weight set, and yoga. All these brands that are saying, yeah, Peloton does a little bit of that, but that's not their core competency and they're never going to take it seriously. There really is this super real category of connected fitness that Peloton totally pioneered.
+
+David: I'm curious about your thoughts. Connected fitness, both within the Peloton suite of products and competitors, is it a broad thing or is this something that just works really, really well for spin classes?
+
+Ben: Great question. I've done a bunch of the Peloton strength stuff. I think that works well and I think that the Peloton strength classes definitely appeal to a crowd who is not going to buy an Olympic weight set in their garage or is not going to go to a gym.
+
+I know people with the Mirror who are very happy with that. I think it's pretty broad. I think the bike is the first and best instantiation of it. Interestingly, fully, and I think he's right on this, this isn't one of his grandiose statements that end up not being true. He thinks that the tread market is 3x what the bike market is because running is much more—treadmills are a bigger thing, I think, than stationary bikes.
+
+David: They also sell the treadmill for a lot more money.
+
+Ben: That's true too.
+
+David: It's interesting. The running one, it's different. I'm sort of halfway in between on this. I agree with you. I both have an Olympic weight set in my garage, but I use the Peloton strength stuff more often, especially as I get a little older and the idea of squatting and bench pressing is less appealing to me. I think the strength stuff is pretty good, but I can't imagine buying a treadmill or using connected fitness for running.
+
+Ben: It's so true.
+
+David: We're lucky we live on the West Coast. We can run outside year-round. There are plenty of places where that's not possible.
+
+Ben: Yeah. It says a lot that, ultimately, all connected fitness is a digital facsimile of a real-world experience. There was a very, very popular real-world experience of spin classes. It's interesting that that behavior never really existed in the real world for running. There's like Barry's Bootcamp, but that is not sweeping—part of it is, like a third of it is or half of it is. But there's not a sweeping international movement the way that there was with spin where it's running to an instructor.
+
+David: Yup.
+
+Ben: Maybe to super simplify my answer to your question, it's anything that's instructor-led that is a big market in the offline world can be an instructor-led large market in connected fitness.
+
+David: I agree with that. Maybe there will be some innovation at some point that isn't an instructor-led running class. But as a runner, I don't really want an instructor. The joy of running to me is to be outside in beautiful places and just go.
+
+Ben: You have a bias there. I'm the exact same type of runner, but the hardcore cyclists wouldn't say the same thing. They're like a spin class, but the beauty of cycling is that, you know…
+
+David: Right, and then the beauty of spin class is like, these are two different products.
+
+Ben: Yes.
+
+David: Anyway, September of 2020. This is where, I think, things start to get a little wonky with Peloton. They introduced the Bike+ in September of 2020.
+
+Ben: We should say, by September of 2020, it's basically impossible to get one of the Peloton bikes at all. There's a four-month backlog. Pandemic hits and unless you're getting one in the first week or two, you're out months before you can get one because Peloton doesn't make any of their own bikes. They certainly don't make any in the US, so we're at the whim of international shipping and supply chain partners. They really haven't ramped any in-house manufacturing capability, so good luck.
+
+David: Right, which makes all of this even a little more puzzling. You would think a reaction to that would be to raise prices. Certainly, they have total pricing power. Now, to their philosophy and we've been talking about they want as many people to access Peloton as possible, blah blah blah. Okay, great. They introduced the Bike+. They priced it at $2495. The original bike, remember, had been $2245.
+
+Ben: David, you bought a Bike+ so you know the differences of this product firsthand.
+
+David: They lowered the price of the original bike to $1895. Why would you lower the price of this right now? There's insane demand for it. And why would you introduce the Bike+ at only $2495 when you're selling treadmills for $3000, $4000+. Clearly, there's an appetite for your core segment to buy expensive products here and they're not that price sensitive.
+
+The Bike+, when I decided to buy a Peloton, I don't know if my experience is universal, but I was like, you know what, I'm really going to invest in this. This is awesome. I want the best. I'm going to buy a Bike+. I didn't even really think about pricing or how much it was relative to the bike. It arrived. I got to say, this is only my experience, it was a super crappy product.
+
+Ben: The Bike+?
+
+David: Yeah, I thought it was actually a worse product than the bike and cost more, and many of the key features were irrelevant. The auto follow feature, it'll auto change the resistance to the instructor. I never actually want my resistance exactly what the instructor has. That was actually a negative for me.
+
+Ben: Not to mention, there's a bigger screen but it's the same resolution, so it's actually a lower DPI on the screen, which as someone who already has beef with the video quality, would drive me up a wall.
+
+David: I was going to get to that last, but yeah. A few other things like my garage is a little bit sloped and the Bike+, the front only has two feet and it was impossible for me to align it. Whereas the regular bike has three feet in front and is way easier to stabilize. There's just a whole bunch of really weird little things like that.
+
+Ben: The main gimmicky feature is you can flip the screen out sideways so you can do these boot camp rides where you're on the floor for part of it, you're on the bike for part of it. Did you ever try that?
+
+David: Yeah, (a) I don't use that that much. Usually, when I'm doing strength, I'm doing strength and when I'm doing the bike, I'm cycling. But (b) there's a $40 little bracket you can buy—that I did—for the original bike that you can install pretty easily to then have the screen flip. It's like, wait, why would I pay $1000 more for that?
+
+Anyway, what you said about the screen, that was the dagger for me where I was like, this is the worst experience because they have a bigger screen but they're using the same 1080p crappy video on it and it looks way worse. It just didn't make any sense to me. I returned the Bike+. Now let's think about me as a customer for Peloton.
+
+Ben: By the way, I love that in these episodes where we have personal experience like half the Airbnb episode was my experience as a host. And now, here's David's Peloton buying experience.
+
+David: People are probably like, this is irrelevant. But no, I think this is illustrative of some of the problems with Peloton. The product was not quite right. The pricing was weird that they did with the product suite here. They rolled a truck to do the delivery for me as a customer for the Bike+.
+
+Ben: Which is crazy expensive.
+
+David: Crazy expensive, but they're selling this—
+
+Ben: And that they own all their own distribution and they're driving around neighborhoods all over America.
+
+David: Yup. They rolled a truck—in old cable parlance, a truck roll for customer service—they installed the Bike+ for me. The shoes that came with it the cleats didn't fit. They had to send me new cleats. All right, that's another shipping cost, customer service call, et cetera.
+
+I used the Bike+ and then I'm like, this is not that good. I returned it because they have a 30-day return policy. They rolled a truck to pick it up. I bought the original bike, which by that point in time, the price had dropped to $1495. I had spent $2495. They've rolled the truck twice already. Now I just spent $1000 less. I got the bike, they rolled a truck. There were some problems with the pedal. They've rolled the truck to do another customer service for me. Four truck rolls—a purchase, a return, a restocking, mailing me new cleats.
+
+Ben: Wow, they're probably not profitable on you until maybe year three as a subscriber.
+
+David: Absolutely. It's brutal. I can't imagine that my experience is wholly unique here.
+
+Ben: I wonder. We only had the person come out once and it all, thankfully, worked really well.
+
+David: I'm a very happy customer. But yeah, to your point, how long do they have to retain me to even break even on me now?
+
+Ben: Right.
+
+David: I think a lot of these could have been avoided with some different product decisions and some different pricing decisions.
+
+Ben: There is a trend that they need to follow over the entire lifetime of their business, which is dropping the price point so they can keep attracting that next concentric circle out from the core affluent customer. If they're actually interested in continuing to grow the business, they need to do that. But even though that's true over a long period of time, this probably wasn't the right time in history to do that.
+
+Given what happened with the pandemic and with demand, and let's not talk about supply chain, inventory, and stuff yet because I think that made their business really not resilient—all the things that they did there—but they probably should have (easy to say in hindsight) not shipped the Bike+ and not dropped prices yet, even though they know they need to do both of those things in the longer term.
+
+David: Yeah. The Bike+ was a product that needed more work before shipping. Then in terms of cannibalization of their existing customer base, I think they really hurt themselves a lot on some of the aspirational aspects of the Peloton brand around this. Also, simple things like the bikes that the instructors use in the classes are the original bikes. If they really want to push the bike, why don't they use the pluses?
+
+Ben: I've always noticed that. Totally.
+
+David: I thought that was so weird. I don't think that hurts anything, and that's just great merchandising for higher margin products.
+
+Ben: I wonder if there's custom software that's written for instructor bikes that they didn't want to invest in porting to the new Bike+.
+
+David: That could be. Anyway, there's just a bunch of puzzling decisions here. Perhaps the most puzzling is in December 2020, they announced that they're buying Precor for $420 million in cash.
+
+Ben: In cash. And you and I both went and looked this up because we were like, I remember the $420 million Precor acquisition, which is a Washington-based company, by the way.
+
+David: That's right. Woodinville, right?
+
+Ben: Yup. And I was hoping they use some stock to pay for it given their stock was trading ludicrously high at the time. But alas, they spent the rare assets they have on hand there, the cash, and primarily bought Precor for their manufacturing prowess to have some US-based manufacturing to alleviate the supply chain stuff and to just have in house capacity because at some point, maybe they want to take this fully in-house.
+
+A secondary benefit that comes with it is Precor is really, really good at selling in commercial distribution channels. Peloton then can inherit all those relationships with all the hotels to get more Pelotons in there and eventually maybe merge these two product lines. But for now, they're running it as a totally separate independent business unit and starting to do some work leveraging Precor's manufacturing to hopefully start manufacturing some Peloton bikes.
+
+David: Right. That feels like a pipe dream, either a pipe dream or a very, very far out investment idea that you would retool Precor's manufacturing to manufacture bikes. The commercial relationships, that makes a little more sense to me so it was a little puzzling at the time. Then they announced in the spring of 2021 that they are going to build the Peloton Output Park to insource their own manufacturing in Ohio.
+
+Ben: This is now both of my homes they're trying to manufacture in.
+
+David: That's right. We'll come back to that in a bit.
+
+Ben: But that's another $400 million that they announced they're breaking ground on.
+
+David: Yup. Again, cash outlays. Then in the spring of 2021, there's the treadmill recall and some of the tragic accidents with the treadmill. The company doesn't handle that super well. At first, they sort of say, oh, you people aren't using it right. It's like, well, kids are dying and getting hurt here, that doesn't matter. Stock drops 15% around that.
+
+Ben: They issued a mea culpa and say, you know what, we are going to play ball with the investigation. We feel super bad that we mishandled this originally.
+
+David: Then in November of 2021, last fall, they missed earnings, they cut their outlook, and the stock got hammered—down 32% in one day with the earnings announcement. They have some more holiday season media commercials. This is also probably good with the new Sex and the City where Mr. Big dies on a Peloton.
+
+Ben: No, because that tanked their stock price and it never recovered.
+
+David: It did. Although that, to me, feels like the wrong reason to sell the stock.
+
+Ben: Yeah, but when something like that happens, so someone died on Sex and the City and it was on a Peloton and Peloton stock dropped, and you might say, that's so stupid. But I think what to read into that is people are on such uneasy footing about the future prospects of this company that merely imagining that something like that could happen is enough to spook investors, and that says a lot.
+
+David: That says way more than the Sex and the City episode. Yes. Then the other shoe drops, the other cycling cleat drops. On January 20th, news came out that supposedly, Peloton is completely stopping production of new hardware as they have an inventory glut that they can't sell. Demand has completely dried up. It all got pulled forward through the pandemic. This is bad news.
+
+Ben: There's a $1.3 billion worth of inventory that they're sitting on now.
+
+David: Yeah. We went from literally, they can't make this stuff fast enough. They're hiring delivery teams all across the country and around the world delivering bikes into people's homes, picking them up, servicing them, and bringing them back to now they can't sell these things.
+
+Ben: There are a lot of things to applaud the management team, John Foley, the doggedness, the entrepreneurism, the pure invention of a movement, recognizing talent, hiring the right instructors, finding ways to align incentives, and building this—like so much. The one that is really, really damning is all the quotes that Foley and other folks gave along the way saying, sure this pulled forward demand, but we think it will only ever be more. We think we will only ever continue to sell more and more of this stuff. Demand is just going to keep growing, and they were just completely wrong.
+
+The incredible slowdown, the really, really scary slowdown that has happened for them is to the point where they only grew 9% in Q4 and then 5% in revenue in Q1. This company just believed that there was way, way, way more demand out there. Sure, the pandemic accelerated us, but we're not going to have to make up for everything that was pulled forward. It's just going to continue to be high demand from here and they were just flat out wrong.
+
+David: Totally flat out wrong. We'll wrap up the few last points to bring us to literally today, present day. But one of the things, when they released earnings yesterday, is they cut guidance. Guidance had been for full fiscal year revenue of $4-$4.5 billion. They cut it down to $3.7 to $3.8 billion, which is actually going to be down. Revenue is going to be down sequentially year-on-year this year versus last year. That is not good. That is not good for a growth company.
+
+Ben: No. And you look at the level of certainty that they had—that they just needed to keep expanding to service all this demand—not only did they plunk over $800 million into manufacturing capacity between Precor, which is its own business so it's justifiable, assuming they paid a reasonable price for it and of course the Ohio factory. But you look at their employees, they were growing employees pretty quickly from 2015, 2016 to 2020. As of January 2021, they had 4000 employees. That ballooned over the next year to about 9000 before these recent layoffs.
+
+David: This is a very complex business, but 9000 employees—and that's just corporate, right?
+
+Ben: No, that's everyone.
+
+David: That's everyone, okay.
+
+Ben: Yeah, and the layoffs, of course, were 2800 people across the whole business and I think about 20% of the corporate staff. But they were really, really investing and very certain the demand was there.
+
+David: Yup. After that news on January 20th, a couple of weeks later, an activist investor called Blackwells Capital comes out and announces that they've accumulated a 5% stake in Peloton. The share price and market cap, of which by the way, have dropped below the IPO price, which as we chronicled was not a great IPO in and of itself. And they published a deck calling for Foley to resign and for the company to initiate a strategic sale process.
+
+That brings us to yesterday, February 8th, 2022, where they announced earnings—they're bad. They lowered guidance significantly. They pulled the plug on Peloton Output Park. They canceled the plans to build a manufacturing facility in Ohio, they laid off 2800 people, and Barry McCarthy is writing in as the new CEO.
+
+Ben: The way they sort of message this is that John Foley is stepping down as CEO, which is the...
+
+David: Or at least, that's what people hear.
+
+Ben: That's what people hear. It's somewhat to appease these activist investors. But let's zoom in on what mechanically is actually happening here. John Foley becomes the Executive Chairman.
+
+Now, what an executive chairman is as compared to a non-executive chairman is they're still the chairman of the board or the chairperson of the board. They no longer have day-to-day responsibility running the company. However, I believe they still are compensated employees. They still draw a salary, they're still an employee of the company in addition to being just a board member. They share both this director-level and pseudo-operational. It's more like they're working with the current CEO to set a strategy with them.
+
+While they're not running the day-to-day, they are still the senior-most person who is an employee of the company. I don't think it would be correct to say that John Foley is currently Barry McCarthy's boss, but it totally is fair to say that John Foley is on the board, is the chairman of the board. The board hires and fires the CEO— and here's the real kicker on this whole thing—as many of you will know, we've been on a heck of a run over the last 20 years of having dual-class structures put in place for founder-led companies.
+
+Here's a quote from Matt Levine at Bloomberg, "Peloton has a dual-class structure in which the founders and some insiders have stock with 20 votes per share, and Foley has a lot of it; according to Peloton’s proxy statement, he controls 39.6", so right around 40%, "of the voting power of Peloton's stock, and his co-founders… own another 18%."
+
+David: There you go. That's over 50% of the voting power of the company right there.
+
+Ben: Right. Foley can't do it alone, but with certainly both of his other co-founders, basically, can make a unilateral decision. The message Peloton wants Blackwells and other upset shareholders to hear is John Foley has moved on, stepped down as CEO, and we've brought in Barry McCarthy. In practice, the dude still holds the cards.
+
+David: It's more complicated. All that is true. At the same time, I don't think Barry would take this job if he didn't feel like he had full autonomy.
+
+Ben: Totally agree.
+
+David: And the memo that he writes to staff, which we've already read from some of it and I want to read a bit more because it's amazing. Barry is like, who wouldn't want to work for Barry?
+
+Ben: He's a great leader, yeah.
+
+David: What a leader. He writes, "I know today’s restructuring news has been difficult. There’s no sugar-coating it. It’s a bitter pill and, in my experience, the sting has a long half-life. But the hard truth is either revenue had to grow, or spending had to shrink. The math simply didn’t work otherwise, and the status quo was unsustainable. One of my core management principles is about getting real. We have to be willing to confront the world as it is, not as we want it to be if we’re going to be successful. We have to be honest with ourselves and with each other in order to make that happen, even when the truth is uncomfortable or inconvenient to deal with." Ben, I think you read the great part about the comeback story after that. Then he closes.
+
+When he closes the memo, he says, "In the months ahead, you can expect to hear from me about our strategy and the choices we’re planning to make to drive our success. For the avoidance of doubt, we’re in the business of driving growth." That's like a full stop. That is what we are here to do. "And that will require us to take risks, to be willing to fail quickly, to learn quickly, to adapt and evolve quickly, rinse and repeat. I promise that journey won't be dull. I look forward to working with you, Barry."
+
+Ben: Of course, this is after he opens by talking about how much he loves riding with Matt Wilpers. It is great and he opens the whole memo. The whole memo is kicked off with rather than like, hi, I'm your new CEO, it's, boy, do I love riding with Denis Morton and Matt Wilpers. I think he says like, who doesn't yet know me from Adam, which is pretty funny thinking about the fact that they're reading this email.
+
+David: Barry has no social media presence. He's basically not on the internet.
+
+Ben: You got to wonder, has he met any of the instructors yet too? Probably not.
+
+David: Probably not before yesterday at the earliest.
+
+Ben: It's wild.
+
+David: I wonder what the instructors think of all this because they've built such brands. The Instagram following and the Twitter following of the top instructors is like, they have immense power.
+
+Ben: Emma Lovewell and Ally Love, they're getting up close to a million followers.
+
+David: Robin Arzon and Alex Toussaint.
+
+Ben: And they've all parlayed this and other things too. Ally is the in-arena host for the Brooklyn Nets or at least was last year. Everyone's got Noom deals or Under Armour deals. Even though they're making $500,000 to a million from Peloton in salary or whatever their contract is, I bet they're making a lot more from their other engagements.
+
+David: Yeah, they're like professional athletes. The earning power from endorsement and other deals is way higher. All right, so there we are on this. We thought this would be short with the emergency pod on history and facts, but never underestimate Acquired.
+
+Ben: We're also incapable of just going on air unprepared. Of course, you and I, while we only had a day to do this, we kind of put together a full. There are so many more deep cuts in the history that we didn't go into like John and his friend prototyping the experience on a Disney Cruise. Did you read about that?
+
+David: No, I didn't get that. That's awesome.
+
+Ben: I'll pull that one out even though we skipped over it. John Pleasants, who got a big job at Disney, convinced Foley to come on a Disney Cruise with him. They're on this Disney Cruise and Foley rolls out a couple of spin bikes and stood there for the first 10 minutes of the ride coaching John Pleasants on what to do.
+
+David: Being the instructor?
+
+Ben: Yeah, and being like, can you imagine there's a screen here? And really given him...
+
+David: And then Pleasants becomes one of the first angel investors in that $400,000 round, right?
+
+Ben: There is so much crazy lore in the building of Peloton, which I think we would have done if we gave this the three-hour treatment. Let's go into our narratives. What is the media narrative right now for the bull case and the bear case? On the bull, there's just an insane level of customer love for this company. The NPS is around 90.
+
+David: You're wearing a Peloton hat as we do this.
+
+Ben: I'm wearing a Peloton hat because I referred you and they sent me $100 of free credit to buy gear for myself, which I proudly wear around. I hope Peloton stays a prestige brand because I've definitely bought a decent amount of the merch. Even if they sell, I have to imagine this will stay a prestige brand for a reasonable amount of time. It's funny how I feel a little bit weird wearing my SoulCycle shirt and stuff now because I haven’t been in two years, but the Peloton stuff, maybe it says a lot about me, but happy to wear it.
+
+A huge component of the bull case is, oh my God, we've built this brand that people love. They love the product, they love the experience. David, after we record, I will probably go hop on for a ride because we're recording early in the morning and I missed my morning ride this morning. Another huge component is say what you want about growth right now, but how could they possibly be worth less than they were worth before COVID? They grew membership from 700,000 to nearly 3 million.
+
+David: And it's not like they're just selling bikes here, this isn't one time. They just added all that subscription revenue with an incredibly low churn rate and high NPS.
+
+Ben: Yup, totally agree. They invented the connected fitness category and they're still the largest player in it. We'll talk about this on power, but there are network effects from your friends having Peloton. The fact that they grew all these subscribers, there is some amount of lock-in that comes from that.
+
+The biggest thing we talked about is this insanely low churn rate. To date, the fact that they selected for customers that aren't going to churn—and that's slowly shifting because that's the other side of the sword of selling a product that is cheaper than it used to be—is that you're going to have customers that are more sensitive to price all around and so are going to churn more often than your initial cohort.
+
+David: Even still, the churn has gone up. I think it's gone from like, I'm going to get the numbers wrong, but it was at like 0.6% per month to like 0.8% per month. It's still good.
+
+Ben: Totally. I do want to call out, and this is between a bull and a bear case, but it's just an interesting stat to know. When a firm went public, there was some information in there as one where at the time, Peloton was the largest customer or the largest source of revenue to Affirm. Now Affirm has grown a lot and diversified.
+
+I took Affirm and Peloton up on their offer to finance my bike over the course of a few years rather than pay for it and cash out because it was a 0% deal. Someone was basically saying, do you want to keep investing your money and you can pay us once a month over the course of two years and generate some money while you keep the float? I was like, sure, I'll do that deal.
+
+David: I know how the insurance business works.
+
+Ben: All day, I will do that deal. It's funny how much I've thought about this for how little the actual dollars are that is marginal for me to have done this versus pay in cash, but I did.
+
+David: That's the best Ben Gilbert thing that is possible. I love it.
+
+Ben: But what's interesting is the fact that they offered it at all. When you look under the covers of, why was Peloton willing to offer 0% or why was Affirm willing to offer 0%? What does that deal look like? Peloton and Affirm did a back-end deal where Peloton said, if you agree, Affirm, to do 0% financing, we will pay you an amount in order to make it worth your while and so tell us what that amount is.
+
+At the time of Affirm's IPO, 28% of all of the revenue in the previous year leading up to the IPO was from the Peloton deal, which if I'm doing the math right based on what their revenue numbers were at the time, that is $150 million a year that Peloton was paying to Affirm to offer this 0% financing thing. That gives you a sense of how much Peloton knows and knew. Even then, oh my God we need to expand down the market because we are saturating our wonderfully price-insensitive core customer base or initial customer base.
+
+David: Wow, that's huge. We're about to release a great LP Show episode with Christina Melas-Kyriazi who just joined Bain Capital Ventures—been a longtime friend of mine but was an early employee at Affirm. We talked with her about the whole buy now, pay later space. One of the key value props to merchants is this enables sales that wouldn't happen otherwise, but oh my gosh, you're right, this is between a bull and a bear. But trending into the bear category here, the focus on their core customer is really, things have gotten so wonky in the past year-plus.
+
+Ben: The bear case to make out of that is when you look at their demand recently, the fact that they only grew 9% in Q4 and 5% in Q1, even though they have this Affirm deal out there, even though they're dropping the prices on their bikes, that's the scary thing. Their attempts to make this more interesting at more price points to a much broader swath of people is not really working.
+
+David. Yeah, unless you have more, I think the last bull case, which really is a valuable case is like, hey, I don't like to put faith in single people in general, but I do think there's a lot of fundamental… To my mind, my experience as a customer with Peloton makes me believe that there have been just bad product and marketing decisions over the past year. That is not a controversial statement at all. They have 100% been bad product and marketing—
+
+Ben: And bad strategy, bad financial decisions, and bad forecasting.
+
+David: You got to think that Barry can make a huge difference in fixing a lot of these issues.
+
+Ben: Yes, for sure. Barry's not going to be the product person by any means, but that's why Foley is there and that's why all the great people that they brought on were there. Hopefully, Barry can provide the right—it's almost like the check and balance to make sure that Peloton can do its thing of creating products, brands, and experiences that people love without screwing themselves over financially.
+
+David: Yup. The market likes the news. Peloton was up 25% yesterday.
+
+Ben: Yeah. It's kind of a bear case to bring in a career CFO as a CEO. That is a strong admission of how in trouble a company is. But I suppose, trading down is that makes it a bull case to want to invest if you feel like that person can turn it around.
+
+It's definitely not giving Barry enough credit to call him a career CFO, especially given his divisional responsibility in building the ads business at Spotify. But you know what, the right comp might be to Apple when they transitioned. This was a much different high-flying company at the time of transition, but transitioning from a products person who was the founder of the company as CEO to an operational financial supply chain, contractual legal person. Maybe Barry can be the Tim Cook of Peloton.
+
+David: Yeah. That's actually a great analogy. I certainly think he's capable. I think the business is capable. It probably will never be an Apple, but I think it's capable of performing better than it is now.
+
+Ben: Okay, more bear narratives. We talked about the slowing growth, we talked about the fact that they revised down not only the revenue targets but also the subscriber targets. They're only predicting they're going to be at around $3 million at the end of the year rather than three and a half. They have piled up $1.3 billion worth of bikes and treadmills. It's not good to hold it in the books.
+
+Another interesting narrative that I haven't seen as much around Peloton specifically but seems to be a fairly widely held belief is that in the last 10+ years, there has not been a breakout consumer hardware piece of technology that survives as a standalone company. You look back at Fitbit, GoPro, and Jambox. I even want to call out this one's going to be a serious callback, but Flip Video.
+
+Some of these companies that invented a new category and imbued it with meaning and they pioneered it on hardware that was just now available. But that investment doesn't pay itself back. Lots of cheap facsimiles come in and they can't defend the castle. You look at Jambox, they made a $300 Bluetooth speaker, and now you can get $20 Bluetooth speakers that are reasonable. Jambox, of course, went out of business.
+
+Flip Video sold to Cisco in a very strange M&A. GoPro is still an independent company, but certainly not the highflier it was when it first IPO'd. Fitbit couldn't really survive Apple coming into their market and ultimately landed at Google.
+
+I think there's probably a case, a similar story around Nest, again, a little bit weird and some bungled M&A. I suppose Sonos might be the only example of a recent consumer hardware company that has been "successful" as a standalone public business.
+
+David: I thought about bringing this up earlier in the episode and I decided not to because I decided it was unfair to Peloton. I still think it's unfair, but it's an interesting point of comparison. The only very strong counterpoint I can think of is Tesla.
+
+Ben: I thought you're going to go there.
+
+David: Yeah. Lots of different dynamics there, but if you just look at what Tesla has done, in many ways, a very resonant strategy, a similar harmonizing strategy with Peloton of start with the high, the Elon master plan, right? How they've adapted that over the past several years, it was not that long after Peloton was started that the Model S came out.
+
+What has Tesla done with their brand strategy, their pricing, their marketing, their position within the market, their product development, and their software development? Gosh, Model S to Model X—double down on the high-end brand. Then the Model 3, which is affordable, but it's still aspirational. You're competing with BMW now. You're not going all the way down to Toyota. The Autopilot launch, Tesla has executed incredibly well and incredibly strategically through, again, different but resonant market dynamics.
+
+Ben: They've also been able to manipulate the capital markets to raise a ton of capital on extremely favorable terms. I'm using manipulated with a lowercase m not accusing them of doing something that has legal implications.
+
+David: To that point, they had their near-death moments too.
+
+Ben: Totally, but Peloton has been exactly the opposite at manipulating financial markets for their own favor. They had a massive stock run-up and then did a $420 million all-cash deal, and now, more recently they've raised more money after it. There's another bear case, which is being floated by our good friends, the activist investors, which is, hey, everyone, did you know John Foley sold $96 million of Peloton stock in 2021 when the price was really high and he was talking about what a strong future the company still had in front of it?
+
+Their point in doing that is both to accuse him of insidery things, doing things that are against the company policy, but they're also trying to drive home the point that the incentives are now misaligned because he's taken a lot off the table, he's now a very wealthy person in cash. That doesn't hold a lot of water to me though because his current remaining stock—even at the closing price on Monday—was $500 million. I don't care if you have $96 million. The potential of turning that $500 million into $1, $2, or $3 billion, that's motivating. Come on.
+
+David: Also, he started Peloton in late 2011 or early 2012. It's been a long journey and he talks about it on the How I Built This episode. Even though he had done well in his career, he didn't have any big wins. He wasn't fabulously wealthy before he started. He wasn't a [...] founder, but he didn't have $96 million, let's put it that way, so I can't begrudge him that.
+
+Ben: Despite being of the Harvard Business School Network, having worked at IAC, and been close with a lot of CEOs and executives, that really only manifested in him being able to raise a couple of $100,000 despite the fact that he runs in pretty wealthy circles and still couldn't convince any institutions to come in. It was like he had good jobs, but he had a family to support. He knew a lot of wealthy people, but that actually didn't really accrue to him successfully capitalizing the business for a long time.
+
+David: Sometimes activists have good points. There are good points to be made against Peloton here and I think we've been making them. But they're also just so whiny, the incentives are so misaligned, and of course, they want to never be happy because they want to keep buying more to then sell.
+
+Ben: Okay, power—branding.
+
+David: Yes.
+
+Ben: I mean other stuff too, but did I pay $2300 for a bike because it was a Peloton bike that otherwise I would have paid a maximum of $1000 for? Yes, I did.
+
+David: It's interesting. Yes, definite brand power. Yes, that is correct. I did a lot of research and I seriously considered doing a hack a Peloton. I enjoy doing stuff like that. To get the same quality of bike, yes, you can do it cheaper with a hack a Peloton, but not that much cheaper. It's a very high quality bike relative to the price, but yes, agree on brand.
+
+Definitely, to me, one that stands out and I think one that attracted Barry is scale economies here. The amount that Peloton can invest—even with the music variable cost overhang—in content and in the best instructors, I think, which is where this plays out the most relative to a SoulCycle, to a Flywheel, to anything else, and then even relative to other connected fitness companies, because Peloton has the largest member base. Just like with Netflix, they can invest in more great content because they have more resources for more subscribers and then that's a virtuous flywheel.
+
+Ben: Totally agree. The proof is in the pudding that Emma Lovewell and others used to be SoulCycle instructors.
+
+David: Yup. Alex Toussaint started with Flywheel, I believe.
+
+Ben: I can see that. Yeah, it just makes total sense that Peloton would say, we can make this much more interesting for you both in terms of fame, dollars, and career advancement because your rides are going to be 5000 people instead of 40, and duh, you're going to get the best instructors and content. I don't know what the contracts look like, but would that make the instructors and all the content that they've produced a cornered resource? At least, my perception is that is the best on demand content that I can get for working out.
+
+David: Yup. Certainly the library of content. It's interesting, I'm curious what your feeling is on this, from a user perspective. It is valuable to me that my favorite instructor is just Alex, he's so awesome—constantly adding new content and stuff like the Ride to Greatness. We'll get into that more later.
+
+That's extremely valuable to me. If he stopped adding new content, I would seriously consider churning. But the years' worth of library, I do go back and do old library content. That's quite valuable to me too. Even if he switched to another platform, then yeah, it would take a long time to build up. I've got a few 20-minute rides that he did years ago that are really high quality for me.
+
+Ben: By the way, there is someone who switched to another platform or at least left. Their names' escaping me, I looked into this a couple of years ago. I think Peloton pulled all their content down, which was an interesting move because it's basically saying, we don't want to continue to build your brand for free to compete against us, which I found fascinating because I bet that's totally case by case how they would think about whether they should leave it up or not.
+
+David: And that's a big stick for the instructors too. If you leave, then all of your library of work goes away.
+
+Ben: Right. I would Kill Bill all those contracts and understand how that works.
+
+David: Totally.
+
+Ben: Okay, I think those are the big ones. A few interesting little what would have happened otherwise, to go to an old Acquired standby section. What if they actually had pursued a deal with SoulCycle? I'm going to use Soul over Flywheel, and I’m going to use I think even though Soul wasn't giving them the time of day, at the moment, that's the more interesting one.
+
+SoulCycle has not had a very good last couple of years. First, there was the Trump fundraiser and then there was the failed go-public of the SoulCycle, the Equinox fitness conglomerate. I'm not a doctor or an epidemiologist but...
+
+David: This is not investment advice and also not healthcare advice.
+
+Ben: The number one place to go and get COVID would be an unventilated box of 50 people breathing as hard as they possibly can for 45 minutes in a room.
+
+David: But they have candles in there, that helps.
+
+Ben: I was trying to think, where is the single last place on earth that I want to be during the pandemic and it's at a SoulCycle studio, even though I used to do that a lot before I got my Peloton, and frankly probably never will again. I can't imagine going back to that behavior. Even for non-Covid diseases, it's like, if you want to stay healthy…
+
+David: I would only consider it in—like you and I, when we would get together, we used to do a SoulCycle. It was really fun to do it with friends. I would maybe consider that again in the future, but definitely not on a day-to-day basis.
+
+Ben: Obviously, SoulCycle came out with a Peloton competitor after Peloton did very well. It wasn't fully SoulCycle, it was part SoulCycle, part Equinox parent company. I have to imagine, I think it was a total flop. What would have happened if you had this sort of JV between Peloton and SoulCycle five years in in a strong position, six years in, when COVID hit?
+
+David: It's interesting. I want to say I don't think the JV would have worked nearly as well as Peloton did as a standalone full stack entity.
+
+Ben: But putting cameras in, building a little SoulCycle studio.
+
+David: Back to power, there's an element of counter positioning in the early days of Peloton here too. There would have been too many incentives and resources within a SoulCycle or a Flywheel to—you would have to really cannibalize a lot of the core in-person operations. Take your best instructors and make them dedicated to the online offering. There would have been some weird dynamics there.
+
+Ben: Every class prints money. So if you're running one of those local studios, you're like, well.
+
+David: Right. Now you can just record that and put it on this JV with Peloton, but I think that would be lower quality content than a full.
+
+Ben: The Peloton rides are so produced. In doing this, I was looking at videos about their control room and the number of cameras that they have set up. At this point, they're a TV production company with celebrity instructors who happen to be good at riding bikes, but it's a TV studio. It would be very hard to turn any of these SoulCycle places into TV studios.
+
+David: Yup. If you're making the decision at SoulCycle, I'm going to take our best content and instructors, dedicate them to that for this thing that I revenue split with, I don't know.
+
+Ben: Okay, there's another one here, which I know you want to do is, how should Peloton have managed over the last couple of years? What could they have done that would have enabled them to come out really strong?
+
+David: It's easy to sit here and say the Precor acquisition was dumb. The Peloton Output Park was misguided. It's probably good in the long run to bring your production in-house, but that big using cash at that moment in time, probably not the right thing.
+
+I've talked to everyone's ear off about my feelings on the product and pricing decisions. At the same time, I think we got to be intellectually honest here with ourselves and with the market too, it was easy to believe. It would have been hard to really think about the downside over the past year as everything was up to the right. It's a rare, rare, rare leader in company that I think can stay disciplined through what was probably one of the biggest boons for any company of all time.
+
+Ben: Yup. On the other hand, other companies, I think the difference is, a lot of these other companies’ demand didn't go away. Amazon saw a spike, but then it kept rising from across all their businesses, whereas Peloton saw a spike and then a decline.
+
+It's funny. I was thinking about what would be an interesting comparison here. I think Eric Yuan against John Foley is an interesting one or let's just say Zoom against Peloton. Both of these were pandemic era go-go stocks that have totally crashed. Peloton down over 80% from peak Zoom down over 70%. But for Zoom, despite the fall, I think it's still growing revenues at close to 100% year-over-year and is a free cash flow positive machine. Whereas Peloton is deeply unprofitable on a full bottom line, still raising billions from the public market with new stock issuances.
+
+They seem convinced that this demand spike would last forever with these acquisitions and expensive investments. It's funny, I don't want to blame the management as much as I want to blame—maybe it is management, but it's kind of an inability to forecast and know that demand is drying up. Being in a business that just requires a lot more moving pieces, a lot more atoms, that's just really hard.
+
+David: This demand spike created huge complexities for Peloton as a business in a way that for Zoom, it created some complexities for Zoom. I don't want to say it was just easy, but they’re shipping software. It's different here.
+
+Ben: All right, before we grade this one and bring it home, this will be fun to grade—paint the A, the C, and maybe the F scenarios for our friend, Barry—I think we should talk about our final sponsor, the SoftBank Latin America Fund. It's a wonderful fund run by good friends of ours at this point.
+
+SoftBank created this fund with a simple thesis that the region was overflowing with innovative founders and great opportunities, as you know, but was always short on the one essential ingredient of capital. As you've heard from Shu and Paulo, leaders of the SoftBank LatAm Fund on previous episodes, one of the big lessons that they learned deploying $8 billion into 70+ companies is that technology and LatAm is less about disruption the way that we tend to think about it and more about inclusion because the vast majority of the population is underserved in almost every category—from banking, to transportation, to ecommerce.
+
+Most businesses also aren't really served by modern software solutions. There's just so much to build for so many people and so many businesses in Latin America. We wanted to tell you about another one today, another example called Olist, a leading Brazil-based sales platform.
+
+Olist provides technology and market intelligence to increase revenue for merchants. Founded in 2015, they are a one-stop shop for helping merchants get online and capture opportunities in Brazil's fast-growing ecommerce market. They offer catalog services, market intelligence, operational tools, buyer support, logistic services, and more. This is just one great example of how SoftBank is partnering with great founders with the capital they need and the experience that they have to build and shape the future of Latin America.
+
+If you're thinking about your next move in your career and maybe you want to start or join a company in Latin America, maybe you want to co-invest along with SoftBank. There really is no one better to go and bet on the region alongside. To learn more, click the link in the show notes or go to latinamericafund.com.
+
+David: The best. We're such huge fans. As you say, friends at this point. They're great folks, Paulo, Shu, and the whole team there.
+
+Ben: Yup. All right, let's grade this one. I think what we should do is paint the A scenario and maybe a C or an F scenario for what Barry does from here and what those outcomes are.
+
+David: Yeah. Maybe let's start with the C scenario because I think that's the more interesting one. F is obvious like, this business falls off a cliff and there's no more demand ever.
+
+Ben: Sells for parts.
+
+David: Yeah, right. I don't think that's likely, but that's...
+
+Ben: I think a C is it's selling in the next six months.
+
+David: Six to 12 months, I agree.
+
+Ben: For $8 to $10 billion.
+
+David: Yup, or even $20 billion. Selling within the next year for a nice short-term shareholder return, I think that's a C.
+
+Ben: I think a lot of shareholders would be very happy selling this thing in a year for $20 billion.
+
+David: I totally agree. I think shareholders would be happy. I think it would be sad if that happened. We don't know Barry at all. We've never talked to him. Barry, open invitation. When this chapter is over, you got to come on the podcast and we got to do a recap.
+
+Ben: Or if you want to do a follow-up now, what do we get right, what do we get wrong? We're happy to host.
+
+David: Yeah, totally. We are such huge fans of yours. But I don't think he would have taken this just to package it up for a sale in 6 to 12 months. Why would he do that?
+
+Ben: Yeah, I agree. I will say I don't think this is an independent, enduring company at this point. I think it's going to be more along the lines of a lot of the consumer electronics companies that we've talked about where I think Barry can turn it around. I think you can have tight financial controls where it's run like a good company and make smarter investments.
+
+I have a hard time knowing how they're going to grow 50% year-over-year at any time in the future. Where are they going to go find more demand, or where are they going to really meaningfully alter their product lines to go find more demand? That's the A+. That's the A if they can figure out how to stay an independent company and become a big, profitable, independent company and meaningfully find demand in concentric circles outside their current customer base. That's it, that's the dream.
+
+David: Right. Yes, that's the A+. That's the dream, for sure. Let's think about that. They have what, a little under 3 million subscribers currently?
+
+Ben: Something like that.
+
+David: That's actually not that many people.
+
+Ben: It is not, especially in several countries.
+
+David: I don't know the numbers. Let's assume 2/3 of that is US and 1/3 elsewhere. That may be generous, but let's just use that as a swag. That's 2 million US subscribers out of a nation of 330 million people. There are probably a lot more than two million people that could be in an addressable segment for Peloton.
+
+Then there is the digital app. The digital app is a good experience. I started that way. I graduated up, but it's a really good experience. Apple is investing in a similar strategy to the digital fitness app. I think for $12.99 a month for a super high quality class, this is the Netflix model. For the best content out there with the best instructors for $12.99 a month, that's accessible to a lot of people.
+
+I think there's probably still headroom on the core affluent aspirational segments or maybe you call those two segments. I think they can address both affluent people who don't care about cost and aspirational people who do care about cost but are willing to invest in this, and then you layer on the digital product. There is a world where this could become, maybe not forever, but a longer term standalone company that actually is justifiable of a $49 billion market cap.
+
+Ben: I like it. I don't think that's the most likely outcome. I think two years from now, the most likely thing is that it's acquired by someone. But the fun thing is, we will get to watch and see, and we both just said all that on air.
+
+David: We'll revisit with Barry in a couple of years.
+
+Ben: We will.
+
+David: How about that?
+
+Ben: We will.
+
+David: Deal. We're shaking hands on it.
+
+Ben: You and I are, yes, over video chat here. Carve out?
+
+David: Carve outs. Related carve out. As I said at the top of the episode, whether you enjoyed this emergency pod or not, whatever you think of it, go watch that interview with Barry McCarthy at the Hill School. It is so good. Really the only artifact, a long form interview with him dedicated to just him. There's some stuff where he talks about direct listing on the a16z podcast and others, but that's just about him and his career. It's worth watching and there's a great nugget in there.
+
+He talks about his strategy exercise that he likes to do that they did in Netflix and Spotify, and I'm sure he will bring to Peloton, of how to plan and build your organization to be resilient and robust for the future. His four- to five-year strategy exercise. I won't spoil too much of it, but it's very good and worth watching and listening to that.
+
+Ben: Sweet. Mine is also related. Since the Taylor Swift episode, I've been listening to a lot of Switched On Pop. There is an awesome episode called the James Bond Spycraft Sound. The hosts of Switched On Pop are just awesome. The show is reliably great. It's like Acquired for music is a way to think about it.
+
+I've been really hooked on music podcasts, but this one, in particular, gives the whole history of the Bond theme of all the songs that are used for all the different movies across all the decades. They're musically related. It's really cool to listen to how they pull out these different elements of that very mysterious chord at the end of the Bond theme and how that gets used through the decades in all the different movie themes. I highly recommend that song. It's super fun. It's my carve out.
+
+David: I went and listened to that episode after we were texting about it and it's so good. The whole show is so good. Yeah, it's so good. One of my favorite parts about it was it reminded me that Chris Cornell's song for Casino Royale is so good. Oh, man.
+
+Ben: Yeah, it is.
+
+David: Rest in peace, Chris Cornell, but that is one of the best bond themes of all time.
+
+Ben: Yes. Listeners, thank you for going on the journey with us. Go check out the LP Show. Our latest episode with the NZS Capital folks is really good. They're just so smart. If you're staring at stock tickers getting anxious, this is not investment advice, but it will help you bring a cool steady hand.
+
+David: It's a nice warm cup of tea.
+
+Ben: Otherwise, trying times. Yes. If you want to join us for the Zoom call tonight if you're listening to this on drop day, then join acquired.fm/lp and we will see you in the Zoom later tonight. We have a job board, acquired.fm/jobs. Find your next great career move. Yeah, tell your friends about this.
+
+You can find us in video on Spotify right alongside Taylor Swift and many other great artists and podcasts or anywhere where you get your podcasts. Thank you to Vanta, Vouch, and the SoftBank Latin America Fund. Listeners, we'll see you next time.
+
+David: We'll see you next time.
+
+‍

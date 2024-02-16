@@ -1,0 +1,1361 @@
+David: People, turns out, love the amazon.com episode. That was so awesome. It makes me a little nervous for this one.
+
+Ben: Oh, massively. By far and away, our biggest episode ever. Is this how George Lucas felt when he was doing Empire Strikes Back?
+
+David: You did not just compare us to George Lucas, did you? I swear we're humble.
+
+Ben: All right, let's do this.
+
+Welcome to season 11 episode 3 of Acquired, the podcast about great technology companies and the stories and playbooks behind them. I'm Ben Gilbert, and I'm the co-founder and Managing Director of Seattle-based Pioneer Square Labs and our venture fund, PSL Ventures.
+
+David: I'm David Rosenthal. I'm an angel investor based in San Francisco. Cold San Francisco here in August.
+
+Ben: And we are your hosts. All right, David. Let's say you run a lemonade stand. You sell me the highest quality lemonade you can for the lowest price, $1 a cup. When you add up all your costs, the variable ones, like the lemons and the fixed ones, like the table that you rented, it costs about 98½ cents to give me that lemonade. You're happy you returned the profit, I'm sure. But man, you are going to have to sell a lot of lemonade.
+
+David: You're telling me I'm amazon.com in the fourth quarter of 2001, which is actually where we're going to start our story?
+
+Ben: Perhaps, but you discovered something interesting. By making all this lemonade, you get really good at the stuff it takes to run a lemonade business, the perfect cups, ice, and lemons, everything. It turns out, all that stuff that you just got good at, you can sell to other businesses. Guess what? You realize further that when you sell your services to other companies, when you charge them $1, it only costs you 70¢ to make it. So 30% margins, instead of something like 1.5%. You have to sell a lot less of those services than you ever did on lemonade to make the same amount of money.
+
+David: If you told me that, I would dig into it even further. I would realize that the existing companies that sold stands, cups, and whatnot, were actually making 70% margins on their stands and cups. I would be quite happy to take 30% margins and disrupt them and still do better than my lemonade business.
+
+Ben: Listeners, of course, on our last episode, we talked about Amazon's retail business. Today, we are talking about Amazon Web Services, the cloud computing pioneer. Those margin percentages that I just used are the real ones for the retail business and for AWS.
+
+AWS's revenue is only about 15% the size of Amazon's massive retail business, but their profits or the operating income, to be specific, from AWS, are in total the same, if not more than their ecommerce store. I think it's the case that every year since 2015, when they started breaking out AWS's financials, the total operating income from AWS has actually been bigger than the retail business.
+
+David: There may have been some quarters where it was off. But generally, that trend is accurate.
+
+Ben: Wild. We're going to talk about a completely different type of business today than we talked about last time. Sort of. There are a lot of similarities and a lot more than you would guess when looking at an online retailer that started as an online bookstore and a cloud computing pioneer.
+
+Speaking of ecommerce, we have huge news. You can finally, finally buy Acquired merch on the Internet. That is available acquired.fm/store or click the link in the show notes. You can grab your favorite tee, crewneck, hoodie, tank, or even a onesie, since I know a lot of you out there are like David and have little ones at home.
+
+For our presenting sponsor on this episode, we have a company that we are very excited about, Fundrise. Our amazon.com episode, they shared some news about a fascinating new product they have called the Fundrise Innovation Fund that enables their customers not only to invest in real estate, but also now, private late-stage growth tech companies, which is of course a very interesting place to be investing right now now that prices are very different than they were 6 and 12 months ago. We are back today with Ben Miller, CEO and co-founder of Fundrise.
+
+David: We know that you've been personally loving dissecting investing markets from first principles, and you've been noodling on how to disrupt VC for a while. Tell us why you think growth VC, in the traditional sense, is broken and why what you're doing with retail investing in private companies is the future.
+
+Benjamin: When you want to start a big business, you find a big problem and you find something that's broken. Twenty percent of the upside of a company's success goes to the people who work at the VC fund, 20% of carried interest. Who creates the value? People who build the company and people who invest in the company.
+
+The team, in my view, creates value. They put in 2500 hours a year. How many hours does a typical VC put into a company? 150? It's like 2% of what a typical employee does. What happens when a sector is overcompensated or overpaid? It gets overcrowded, it gets overfunded, and it gets undisciplined.
+
+When you look at 2021, you can see it in what's happening in venture. Because it's overcompensating, it's basically gotten messed up. We basically created the Fundrise Innovation Fund with the idea of eliminating carried interest, give it back to the team, give it back to employees.
+
+Obviously, capital deserves a good return for taking the risk, but 20% of that return shouldn't necessarily going to GPS who didn't actually put up the money and didn't actually do the work. In the long-term, markets get more efficient. Probably those returns get split between the investors and the team members.
+
+Our mission is basically to lower the fees of the intermediaries and increase the benefits to the people who are taking the risk of doing the work. That is really (I think) the future of venture. It's like a nightmare for the venture guys.
+
+The worst thing could ever happen to them is to lose their 20% carried interest. It's the most disruptive thing we could do if you think about us being a disruptor. But yet, the future of markets is markets becoming more efficient. The vast majority of public stock managers do not take 20% carried interest if not justified by the efficiency of the market.
+
+When the venture industry started 30-40 years ago, that market was inefficient, there was very little money and it was justified. As the markets got much, much larger—huge—all the data, every company, it's all available to anybody, it's just not justified anymore. You can do the job and still have a successful amount of profits without taking the 20% carried interest.
+
+The biggest public asset manager is BlackRock, and you don't see them taking a carried interest rate .They have an AUM fee by having really good, efficient systems and scale. They're a great business. Structure and incentives dictate behavior. It's like what Charlie Munger says, so we're trying to restructure the whole venture industry.
+
+Ben: Our thanks to Fundrise, the largest private investment platform in the world for retail investors. If you want to join the over 350,000 individuals investing with Fundrise, you can click the link in the show notes. If you're a founder and you want to get in touch about having the Innovation Fund to participate in your next funding round, email notvc@fundrise.com.
+
+After you finish this episode, comment, discuss it with David and I and 13,000 other smart members of the Acquired community at acquired.fm/slack. If you're dying for more required in the meantime, go check out the LP Show by searching Acquired LP in any podcast player.
+
+The next episode is with David's partner in crime at Kindergarten Ventures, Nat Manning, talking about his company Kettle and how the business of reinsurance works. That, of course, is already live if you are a paying LP, which you can become acquired.fm/lp.
+
+Without further ado, David, take us in. Listeners, as always, the show is not investment advice. David and I may certainly have investments in the companies we discuss. The show is for informational and entertainment purposes only.
+
+David: We left off the amazon.com episode in 2007 with the Sony PlayStation-like coda of the Kindle story. The new chapter, one might say that it seemed at the time to the outside world that Amazon was opening as a true technology company with Kindle. I believe the quote from Eric Schmidt in The Everything Store was, "The book guys finally got technology." Of course, as we talked about, Jeff Bezos always got technology. This was not a shift.
+
+In particular, this was not anything new because of everything we are going to talk about on this whole separate episode today. To do that, we need to rewind back, as I said above, to the end of 2001, early 2002, the immediate post dot-com bubble popping crash era.
+
+Bezos and Amazon, as hard as it is now to remember, he was like an embattled CEO at this point. It just gotten rid of COO Joe Galli, the board has brought in coach Campbell, Amazon's fighting for its life against both eBay and Wall Street.
+
+Ben: Is it insane to think that the board was in the place with Jeff Bezos thinking, we really need some adult supervision to be a scale CEO and help this guy out? Freaking Jeff Bezos. Obviously, that did not pan out. Bezos came valiantly riding back in and ran the business for another 20 years.
+
+David: Another 20 years until handing the reins to somebody else who we're going to spend a lot of time in just a little bit here talking about, of course, current Amazon CEO, Andy Jassy.
+
+I don't even know what the right word is to use to describe AWS. I wrote behemoth in my notes.
+
+Ben: Pioneer, inventor.
+
+David: I don't think there's anything you can say that captures how big and how important AWS is. It is one of the biggest and most important businesses, technologies, products of the modern world.
+
+Ben: No doubt.
+
+David: I don't think it's controversial to say even much more so than amazon.com.
+
+Ben: It's interesting. During the pandemic, you could argue that amazon.com was more important, because everybody needed to buy goods and get them at home.
+
+David: But everybody also needed to be on the Internet, and the Internet runs on AWS. Today, we're going to tell that story. It's funny. As we did the research, there's no Everything Store book dedicated to AWS. There are a lot of very disparate resources and stories out there. There actually are quite a few conflicting and competing stories about what the true origin is of AWS. You might say it has a cloudy origin. See what we did there?
+
+Ben: It is true. As we were doing the research note, of course, David and I read both of Brad Stone's excellent books, I watched the PBS Frontline documentary, which of course, is a very specific angle that they're trying to take on the company. When you read any of these Amazon analysis pieces, they're like 95% about the retail business. They'll talk about things like the relationship with employees and the big New York Times piece that came out in 2015.
+
+They'll talk about the relationship with the warehouse workers, or was this good for the world? Everyone indexes on that which is important and deserves all the attention it's got, but almost none of these spend a material amount of time on AWS other than mostly an apocryphal founding story, which is not even really how it happened.
+
+David: We identified you're referring to one origin story of AWS. We identified not one, not two, not three, but four separate origin stories. We're going to tell them all here. I think there is something important to learn about what AWS is, about Amazon, and about Amazon culture in all of these.
+
+Let's start with the first and most obviously, untrue one, which is ironically also the one that the layperson believes the most.
+
+Ben: Yes, because it's tempting. It's like an, oh. It's too convenient.
+
+David: Yes. That story is the excess capacity narrative. The way this story goes is that right around this time, 2001, 2002, 2003, amazon.com (the retail business), like all retail businesses in America (at least) is highly seasonal. They have huge spikes of traffic and demand in Q4 for the holiday shopping season. That's when the largest share of any quarter revenue happens in Q4.
+
+Ben: So much so that for the first (at least) five years of the business, there was a rule in November and December that you could not commit new code to production.
+
+David: That's right.
+
+Ben: It was so all hands on deck that no new features were allowed unless it was a red flag bug fix.
+
+David: We didn't talk about this in the amazon.com episode, but for years, and years, and years, the executive team, the business side of the company, and the engineers, everybody would go work in the warehouses in Q4.
+
+Ben: That or customer service. Oh, how times have changed. Can you imagine someone sitting down in day one north or Doppler being told that they have to go pick and pack for a while?
+
+David: I think for a while, they continued to do it even when it wasn't necessary just like a culture thing. Obviously, those days are gone now. The urban legend is that because of this dynamic, Amazon had this brilliant realization around, again, when they were trying to achieve profitability, that they had excess technical infrastructure capacity in their IT operations during quarters one through three.
+
+They had to build out for the peak demand of Q4, all the traffic on the website, all the transactions happening, but the rest of the year, all that capacity was just sitting there. They decided, let's rent out that capacity to other developers. Brilliant, brilliant. We're going to turn a large expense line in the business into a revenue line.
+
+Ben: Magic. Of course, this falls down into enormous places. One is, if you've ever been inside a pre-cloud technology company, you know that...
+
+David: It doesn't work that way.
+
+Ben: Yeah, you can't just say like, oh, cool, the servers aren't in use right now, there's nothing highly customized about these servers, and they're not tightly coupled to our applications in any way. We'll just make it so that anyone can very easily just run their applications on it. There's enough security setup correctly so that anyone can just get access to our data center.
+
+The network hardware understands how to serve other tenants other than us. None of that existed and none of that was true. There's just no way you can be like, oh, yeah, other companies just started using our infrastructure, and it was pretty rip and replace.
+
+David: In the pre-cloud infrastructure world, you installed your software, your codebase, on your servers that you owned. The amazon.com codebase was literally installed on a bunch of boxes that they owned. You couldn't just rent out the capacity.
+
+Ben: Until 2000, they were servers from Digital Equipment Corporation (DEC). They were DEC Alpha servers. These were unbelievably high margin servers that, I believe, leased from the manufacturer. It was the same business model that IBM had forever and Oracle has or had forever, where you get this highly bundled hardware and software platform that you would use to run your applications.
+
+They would make 80% gross margins on these things. There's a massive markup. They were monolithic. To be honest, the thing that really changed all this was Linux. When Linux came out and you could do the stuff that you used to need Unix workstations for on an open-source operating system, then everything changed, because you can go buy a whole bunch of different hardware, put Linux on it, and then write your own applications.
+
+This laid the groundwork for maybe infrastructure doesn't have to be as insanely expensive. All the profit pools from all of this infrastructure don't have to be captured by (say) a DEC, an oracle, or an IBM. This would lay the groundwork for a lot of things to come, including, frankly, just saving Amazon as a company.
+
+In 2000, they almost went out of business because they were so tight on cash. They were spending so much on infrastructure that this moved to the open-source ecosystem and doing a massive rewrite of all of amazon.com to run on Linux and—they did this big deal with HP—run on HP servers.
+
+David: Right, rather than DEC.
+
+Ben: That, frankly, saved the company from a cost perspective during that really tight time.
+
+David: But that is not virtualized cloud servers. It's not what we're talking about with AWS. Here's the other reason why this excess capacity myth is a myth.
+
+Ben: How is Amazon supposed to serve their AWS customers if all of them are in excess capacity during Q4 at all? Let's say I'm Netflix, and I just took a dependency, and all of my streaming is happening on AWS. Is Amazon just going to tell me I can't do it during Q4 when they need the servers? It's ridiculous.
+
+David: No holiday movies. Can't watch Die Hard at Christmas.
+
+Ben: Is a very convenient narrative when someone's trying to solve the puzzle of, how did this internet retailer turned into a real technology company? Oh, they had all these extra servers dispelled.
+
+David: The best and final word on this that we have to put here, because it literally is from part of the horse's mouth itself, it comes from Werner Vogels' at the time AWS CTO now CTO of all of Amazon, who wrote flat out in a Quora post in 2011, "The excess capacity story is a myth. It was never a matter of selling excess capacity. Actually, within two months after launch, AWS would have already burned through the excess amazon.com capacity. Amazon Web Services was always considered a business by itself with the expectation that it could even grow as big as the amazon.com retail operation." Maybe.
+
+Ben: The other interesting thing to point out is he doesn't give Amazon enough credit about their intentionality and strategy.
+
+David: It short sells Amazon.
+
+Ben: Yeah, they had this extra capacity, this cost center that they were using. Two things. One, technology was never a cost center for Amazon. They never looked at it like, oh, we have an IT department. They always thought about themselves as a technology company. It was always thinking about, okay, in 18 months Moore's Law is going to make it so we have twice as much compute. What crazy cool stuff can we do with that? They always looked at technology as an investment, not a cost center.
+
+The other thing, to your point that it sells them short on is as if this wasn't an intentional strategy. This was an incredibly intentional strategy in a brand new business school case study type, laser focused on an emerging market, that they had reason to believe that they could create.
+
+David: That's origin story number one. Origin story number two, we're going to get into this a lot more. I didn't even really realize before diving into this, the depth of innovation of what AWS was, what Amazon was doing, and led them to it, is so beyond anything else that was happening at the time.
+
+This is a true fundamental innovation, so let's get into it. Remember from the Kindle-Acoda vignette, how it was one of those crazy stories about, who was responsible for the inspiration for the Kindle? It turned out it was Tesla founder, Martin Eberhard.
+
+Ben: It's crazy. He had invented the first ereader that wasn't quite viable yet, and tried to sell it to Amazon, and tried to get investment from Amazon. Amazon said, no, we'll wait till the world shifts a little bit, different technology. It's actually something we can own outright rather than funding and potentially having competitors use, too. Of course, that would be a few years later, and Amazon would create the Kindle internally.
+
+David: There is a similar figure involved in inspiring the vision for AWS, and that is Tim O'Reilly. For anybody of a certain age, you certainly remember the O'Reilly programming books, the O'Reilly conferences, and in particular, for me, they were the organization and Tim as the leader of the organization, championed the whole idea of Web 2.0.
+
+Ben: For sure. I remember first reading (I think) the PHP book that they put out. When Web 2.0, this idea of, I can consume on the web but also I can post on the web, and that led to social media, and one of the key enabling technologies in all that is Ajax. I remember reading the O'Reilly Ajax book of, wow, I can use Asynchronous JavaScript and XML to make dynamic web pages without needing to refresh. That was truly magical at the time.
+
+David: There were a few core tenets that they defined as what Web 2.0 meant. Part of it was in opposition to Web 1.0, which they considered static. Web 2.0 was dynamic like you're saying, but that wasn't all of it.
+
+Another huge part of what they meant by Web 2.0 was what they called participatory culture and interoperability. They meant that both users on websites could interact with the website. If you got Flickr, you would upload your photos. You would interact and change the website. Or Google Maps, of course, it was such a canonical Web 2.0 project. But even more than users interoperating and interacting with Web 2.0 sites, was other developers. Remember mashups, Ben?
+
+Ben: Like mashing up APIs?
+
+David: Yes. Web 2.0 mashups were such all the rage. Google Maps was like a core part of this. People would take the Google Maps' API and build all sorts of other websites using Google Maps data and content underneath it, or Flickr had an API. It was APIs, it was interoperability, it was anybody can access. It's democratizing what we've built.
+
+Ben: Totally. It's so funny to hear all the crypto people today talk about composability. I feel like the old man yelling from a tree or get off my lawn person, but it is very clear that people did not experience the 2006–2010 era of the exact same promise. Instead of smart contracts or composability on blockchains, people were saying it's a RESTful API, it has CRUD operations to create, read, update, or delete things on a service.
+
+If you're authenticated, then you don't need to necessarily use a web UI. You can just use the API, you can upload a photo programmatically, or you can fetch your entire list of tweets programmatically. All the web, instead of being in these siloed applications was magically free for data to move about in a utopian way without anybody's capitalist intentions getting in the way and siloing the data all to themselves.
+
+David: In the early days of all this—I think it was early 2002—Tim O'Reilly flies up to Seattle and meets with Jeff Bezos. The reason he wants to come see Jeff, they've had a checkered history in the past. O'Reilly has not always been the biggest fan of Amazon. He's a book publisher, obviously, so he has some feelings. He wants to make the pitch to Jeff that Amazon should embrace Web 2.0 and transform amazon.com into a participatory website.
+
+Ben: This is a great idea. Being a Web 2.0 company means that you can do business with other companies without needing a BD agreement in place. You don't actually need a partnership agreement. You basically can just publish your API. You can say, pay as you go, here's how you pay, and here's how you get an account. We can shut down your account if we need, but you can get API access to do business with us programmatically through this application programming interface.
+
+It's great. Maybe no one or two companies will ever even need to talk to each other, which means you can do business with thousands of companies out there, not just a few that your BD people cherry pick.
+
+David: Yes. Jeff totally gets it. He gets this in so many ways. Amazon.com has this obvious business use case for APIs and allowing other developers and other websites to access data and content from amazon.com, which is they have a giant affiliate program that's called the Amazon Associates Program.
+
+Ben: And they've got a catalog of every uniquely identifiable product in the world, certainly in the media space, but at this time, growing into many other categories, too. Wouldn't it be nice to access that authoritative catalog to fetch an image and display that image on my website if I'm trying to tell people, hey, go buy this CD?
+
+David: Display the CD right there and then share the revenue with Amazon.
+
+Ben: It's good for both of us if I can do that.
+
+David: After this meeting, Jeff does two things. One, he completely embraces this idea of Tim O'Reilly. He invites him up regularly to Seattle, has him speak at all hands within the company, evangelize this idea of Web 2.0 and APIs within Amazon.
+
+Two, he starts a new team within Amazon to do just what Tim is suggesting. They build API's that let any website developer plug into the amazon.com product catalog, do everything you just said, Ben, and the stated goal and mission of this team is to make amazon.com API's available to developers and "let them surprise us with what they build."
+
+That same year—this is Amazon; they move fast—they hold a conference for developers. In 2002 a total of eight people attend the conference. They announced to the world the launch of this new division within Amazon that is called Amazon Web Services.
+
+Ben: To your point here, this is not an important thing in the world yet. Amazon having a developer conference with eight people there, and you look at re:Invent now, I think it has 100,000 people who watch the keynote. A very different world.
+
+David: Yes, a very different world and a very different product. This is called Amazon Web Services, but it is the hot cloud-based IT infrastructure. It's other developers using the amazon.com product catalog. Indeed, Amazon Web Services lives within the Amazon Associates Program.
+
+That is run by a guy named Collin Brier, which is very, very fun, because Collin goes on to do many things, including recently co-authoring the book, Working Backwards, which is a great book we used for a source in both this episode and the previous episode on amazon.com. In 2002, Collin technically becomes the first head of AWS.
+
+Ben: Wow, and it was just within Amazon Associates at this point, because the whole point in this origin story, the scope of the ambition of AWS, was to make available assets of amazon.com to our affiliates, to Amazon Associates, who want to basically fetch images and items from the catalog and have that information passed along when someone purchases something to share some revenue. That was the scope of the ambition based on where it lived in the organization.
+
+David: All of that is absolutely true. There is no element of myth or falsehood to anything in the second origin story here. Now we'll transition from number two to number three together, but what I think is so important about number two, even though it leads to AWS, that is the creation of AWS but not the AWS we know and love, it's this idea of Web 2.0 and APIs that really starts to take hold, at least in Jeff Bezos' mind.
+
+Ben: And we have not once, in this story, said the phrase cloud computing or the cloud. We've said web services. I think people today have heard AWS so many times that they forget that it's a little bit of a misnomer. It's still called Amazon Web Services, but the vast majority of what is happening when customers are paying the ludicrous amount of revenue to Amazon to access AWS is not web services. It is not these RESTful API endpoints that you use to fetch and post information.
+
+David: Fun sidebar. Do you know the origin of the term ‘cloud’ as applied to IT infrastructure?
+
+Ben: Oh, I do not.
+
+David: This is so cool. It started at General Magic.
+
+Ben: Really?
+
+David: Yeah. How crazy is that? The Apple spin out that invented the iPhone, 20 years before the iPhone. As part of what they were doing, they also wanted to have—the Internet barely existed, so I don't think they thought of it as the Internet—a distributed, always accessible back end, IT infrastructure for all the services that we're going to be on the mobile device. They started calling what they built for that, a cloud infrastructure, that the devices could access.
+
+Ben: General Magic was a pioneer in so many ways. It's amazing.
+
+David: It's such a pioneer. Okay, back now to Amazon. They've launched Amazon Web Services, Web 2.0, blah-blah-blah. That's cool, but that's not what anybody is really focused on at Amazon. They're focused on a lot of problems within the company.
+
+Arguably, the biggest problem is that the codebase of amazon.com that Shel Kaphan designed back in 1995, has been amazing. He made so many great technical decisions that we talked about on the amazon.com episode.
+
+He designed it for how websites were built in 1995, which was small teams, not at scale, and monolith software codebases, everything we talked about in the beginning of the episode. All of amazon.com, at this point, when it's now a multi billion dollar company, is running on one monolithic software codebase.
+
+Ben: I do know, after talking to some folks who are early Amazon engineers, around the summertime, they would start looking at, what is the server that would be available on the market going into Q4 that is the baddest ass thing we could possibly buy? They would just buy the most expensive, souped up server they possibly could from DEC or whoever else, and they would just try to make it through Christmas.
+
+David: Yes. Amazon would do code freezes going into the holidays. Think about this. This is just so far until everything we think about with technology companies now and how things run. It's all thanks to AWS.
+
+You had to do a code freeze heading into the holidays, because as you were adding new features, new elements, and new teams, remember, Amazon at this point, they've got A9, they're working on search, Lab26 is just starting up and getting going, they've got all of these teams, huge numbers of engineers and product managers that are building features, adding features needing to access various parts of the site. Anytime you add one of those to the monolith software codebase, it could break everything, so you had to do a code freeze.
+
+Remember, Amazon as a company now, is trying to focus on profitability and efficiency. It gets to the point where the company just literally grinds to a halt. There is a lot of good stuff in the Working Backwards book about how hard it became to get anything done and built at Amazon because of this rat's nest of complexities involved on the technical and infrastructure side.
+
+Ben: As we're articulating problems here that are happening, one of them is of course, you're going to tip the server over if you add any additional complexity. The other of which is Amazon is doing the Amazon thing and they're trying to enter new businesses and new categories. They're trying to grow.
+
+They're trying to grow because the way that they've designed the business, as we mentioned in the last episode, the cashflow.com idea, where they're spending supplier money to grow before they're paying suppliers. Basically, they're investing the float in growth. They do have to keep growing because they have bills coming due. They're continuing to look for new categories to expand into. They're looking around. They're seeing competition everywhere. They're just trying to get big fast.
+
+You have the issue of, well, we don't want to get more code and tip the server over, which of course, means you can't launch these new businesses, you can't continue to grow, and you can't bring on more customers because more customers is more traffic, which is also going to tip the server over.
+
+David: Let's just take one incredibly illustrative example—the marketplace business. When Amazon figured that out, that was transformative. That was high margin revenue. That was how they competed with eBay. Technically, to do that, they had to re-architect to help the buy button work on the website. Imagine, with a monolithic software codebase, what was involved in that?
+
+Ben: You just get so slow in your actual software development, therefore slow to ship, and therefore slow to innovate, because you're afraid of, uh-oh, what did this other team commit to the codebase here? What does that assume? Can I trust the contract that this function had is still true, or did someone update this function in a way that was tightly coupled to the requirement that they had for their thing?
+
+Before you know it, the code is making a bunch of assumptions all over the place. If you go try to change anything, it's also brittle. You basically need to talk to a bunch of people before you're ever editing code because you might break something.
+
+David: Yes. This is not just Amazon, this is every internet company. The first companies to get to this scale were Amazon, who was this time, there were no internet companies of this scale before. Everybody is realizing you run into this brick wall just from a complexity standpoint when you reach a certain scale.
+
+This is a huge problem. Jeff is so focused on this. Not only Jeff, his new assistant at this time, is focused on this. His new technical assistant, who is at this point in time, Andy Jassy who was the first. A lot of listeners maybe don't know about this, but anybody familiar with Amazon or who worked at Amazon knows Jeff's shadow. That's a legendary role to have.
+
+Ben: Which was a Microsoft thing before. Bill Gates' TA was the blueprint for this.
+
+David: Technical assistant, exactly. The reason that Jassy becomes Jeff's first shadow is Jassy was a Harvard MBA, he had been a product line launcher, he had launched music for Amazon, he ended up in the marketing department after that. And then 2000–2001, dot-com crash, Amazon acts as the whole marketing department. We're not doing ads anymore, we got to get profitable.
+
+Jassy was going to get laid off with the whole department, but Jeff liked him. Jeff said, I'm going to save Andy. He's not going to get laid off. I'm going to find something for him to do. While we're figuring this out, let's take this technical assistant idea from Microsoft. He can come to be my shadow, and he creates the role for him.
+
+Ben: Andy's background is not technical up until this point. He becomes the technical assistant. He's brilliant, but he came in as one of the MBAs who was a category launcher when they were figuring out music, electronics, and all these different verticals that they were going into. I can't remember which one Andy launched, but he was the launcher for music for one of those. I think, fairly recently, within the last five years before this, he had considered a career in the sports industry.
+
+David: Oh, yeah. He wanted to be a sportscaster.
+
+Ben: Yeah, he's like a well known sports nut, has this basement tricked out as a sports bar, and almost took that career path. We're not talking about a distinguished engineer at Amazon who's taking this technical advisor role, because they're this technical luminary. It's a really smart guy who's just a very malleable, facile person.
+
+David: It was just an excuse to keep Andy in the company and give him a job. This is now the biggest problem in the company that Jeff has focused on and that Andy's focused on. This is where all these threads come together. I'm just in awe thinking about this.
+
+If I were looking at this problem of my technical, infrastructure to grind to a halt, we can't ship anything, communication is so hard in the company, the natural thing to do, and I think what most companies would do and did try to do at this point in time, is, okay, we got to improve our communication. We need better coordination loops, more communication, tighter communication, more coordination between teams. We need to build out our engineering management discipline here. We need to build out our processes. We're going to get really efficient to be able to solve this complexity challenge.
+
+Ben: At Microsoft, when they encountered this problem a decade or two earlier, they invented the program management role. That was basically the responsibility. It was twofold. There are not enough unicorn people out there who are 10X developers and also unbelievable communicators, so we'll just hire communication mouthpieces for the 10X developers. We can recruit these four sigma, IQ engineer type people, typically terrible communicators.
+
+Let's just attach a PM to every dev or a PM to every 2–5 devs. That way, they'll have communication associated with what they're doing. All the PMs can talk to each other, they can figure out what's happening between these two teams, then they both go write specs, the engineers write their engineering documents, and then boom, we're off to the races. The PMs can just keep talking it out to make sure that we're all on the same page.
+
+David: I don't know this. You were one of these people.
+
+Ben: That was my job. Yeah.
+
+David: Was the Microsoft PM program—it was program management, not product management—was that the origin of the modern Silicon Valley product manager?
+
+Ben: It is specifically the origin of program management. Microsoft considers product management a marketing function. It's owned in the marketing or again, as much more, go to market oriented, or as Microsoft's program manager, is in the engineering org. It's on the same comp ladder and same promotion ladder as engineering.
+
+David: We have fun, maybe special to do with somebody of like, let's trace the history of PM in tech and Silicon Valley.
+
+Ben: And let's be specific about what the P stands for there, since it can be very different things.
+
+David: Yeah. Okay, that's what most companies would do, even incredibly successful, brilliant, smart companies and founders like Microsoft, Bill Gates, et cetera. That is not what Jeff and Andy decided to do.
+
+Ben: How about less communication?
+
+David: How about no communication? This is where, though Tim O'Reilly Web 2.0 influence comes to play in such a bigger way for Amazon and for the Internet, Jeff has been exposed here (and Andy, too, as his TA), to this concept of Web 2.0, this concept of APIs. Jeff just makes this incredible leap and says, we should use APIs internally.
+
+If we make everything a "hardened interface" was the Amazon term for this. hardened API interface, we can blow up all of this. We're going to say, no communication. You cannot talk to anybody. Everything you do, internally, must be done via APIs, that then anybody else can access whatever they want. They don't have to talk to you.
+
+Ben: It makes sense. If you are thinking about your company like an entrepreneurial organization or perhaps better put a group of individual startups all operating in a very nimble, entrepreneurial way, then you should think about them as separate companies. If all the startups out there are communicating with each other without a BD person, and they're all just pinging each other's APIs, commerce is flowing, and things are getting built, maybe that's the right internal model, too, for the modern next generation type of company.
+
+David: Academically, thinking around this was in process. I think Amazon is really the first company that did this in practice. This comes to be called service-oriented architecture. Instead of a monolithic codebase software architecture, service-oriented architecture is this. Every small team, every individual feature is its own architecture, completely separate from everything else.
+
+Ben: And it's worth teasing out. One is a human cultural thing, which is basically trying to reduce the issue of Metcalfe's Law, where every time you introduce a new person, there becomes an n-squared relationship to all the people that they could communicate to within the organization. This is like an exponentially worse issue as more people join the company.
+
+There's this cultural element that you're talking about there. The services-oriented architecture thing is the engineering counterpart to that same mental model of, okay, well, now we actually are going to build each one of these things as a completely separate application that then all interact to create the user phasing thing.
+
+David: Yup, via APIs. There is a legendary post about this. This is one of the top all-time posts in the history of the Internet.
+
+Ben: Is it the Steve Yegge?
+
+David: This is the Stevie Yegge rant. Then Google engineer at the time, this post happened much later. About this period in time at Amazon, he had been working at Amazon at this time and then moved over to Google later. Shout out to Jeremy Diamond in the Acquired Slack for reminding us about this.
+
+Ben: The funniest thing is the way that this got public, by the way, is he was at Google, and they had just launched Google+. He meant to post it internally, but it turned into an external Google+ public thing. It obviously went viral, because if you hear, this person meant to email their own internal organization. Instead, they leaked it out on the Internet because the product is so poorly designed that this person who was working on the product could not determine the difference between internal posting and external posting. That is just catnip.
+
+David: The meta story to this post is just as good as the actual post itself. It just illustrates the difference between Google culture and Amazon culture so clearly. He starts off just bashing on Amazon culture. They don't care, but he talks about the hardened interface, that that's how Amazon thought about things. He talks about Rick Dalzell.
+
+I don't think we mentioned in the previous episode, Rick was an army ranger before going to work at Walmart. He would just terrorize everybody, all the developers. He himself was a hardened interface, Amazon is so terrible, Bezos is so terrible, they're so mean, and blah-blah-blah-blah-blah, all this stuff.
+
+It's all just a warm up to the main point of the post, which is where he says, look. Amazon gets everything wrong. We're better at everything at Google, but there's one thing. There's one very, very, very important thing that Amazon kicks our ass in. It's this.
+
+Ben: I think this is 2010-ish to anchor this time period.
+
+David: Yeah, 2010–2011. It was whenever Google+ launched, so that feels about right. Steve writes that Jeff—and Andy is part of this—sent a memo out to the whole company at Amazon. It was a big mandate. "Jeff's big mandate went something along these lines. (1) All teams will henceforth expose their data and functionality through service interfaces.
+
+(2) Teams must communicate with each other through these interfaces.
+
+(3) There will be no other form of inter process communication allowed. No direct linking, no direct reads of another team's data store, no shared memory model, no backdoors, whatsoever. The only communication allowed is via service interface calls over the network.
+
+(4) It doesn't matter what technology they use—HTTP, Cobra, PubSub, custom protocols, it doesn't matter. Bezos doesn't care.
+
+(5) All service interfaces without exception, must be designed from the ground up to be externalizable. That is to say, the team must plan and design to be able to expose the interface to developers in the outside world. No exceptions.
+
+(6) Anyone who doesn't do this will be fired.
+
+(7) Thank you, have a nice day.” He's like, of course, for everybody who used to work at Amazon, you know he didn't say thank you have a nice day, because he's so mean.
+
+Ben: This is crazy at the time. If you think about this edict, I remember building web applications in the late 2000s. Of course, I was writing PHP and querying a MySQL database.
+
+If you told me, oh, yeah, you can't query the MySQL database, even though you have access to it and even though it's owned by your company, you instead have to use this API. It'll go ping this web service, which has permission to directly interact with the database. I'd be like, what, are you kidding me? It'd be so much easier for me to just… and the answer's no, you will be fired.
+
+David: It's funny. We thought a lot about it in this episode. How do we tell this story for non-technical members of our audience without getting too much into technical weeds? This is all pretty technical now, but I don't think we can avoid it. This is so important.
+
+The context here is let's zoom back out from service-oriented architecture, APIs, and all this. What's really going on here? What's really going on here is this is the beginning of focus on what makes your beer taste better. All of this junk we're talking about, all this technical junk, it's technical junk from the perspective of what actually matters as a business.
+
+What matters as a business is the customer experience, new features, customer satisfaction, revenue, and profits. All of this junk was getting in the way. This is where Jeff has this realization of none of that makes the beer taste better. Let's standardize, get rid of all communication, API-assize, all of it, and then everybody here can spend all of their time just focusing on new features to make the beer taste better on amazon.com.
+
+Ben: Yup. The other thing that it is is a very Amazonian concept of documentation. Of course, they start all these meetings with the six-pagers and the PR/FAQs. We're not doing PowerPoint slides. We're just working backwards from this document of what the customer will actually experience.
+
+APIs are a heavily documentation-oriented way of computing. When I'm hitting your API endpoint, there is a strictly documented set of requirements of things I can send you and ways in which you send information back. Whereas if I'm allowed to communicate directly with your database, you and I can have a little conversation, you can tell me like, oh, yeah, that field, we stopped using for this purpose and started using for this other purpose, so just keep that in mind.
+
+There's no keep that in mind in APIs. There's, when you hit this thing, you will get that thing back. It brings this true precision hardened belief in the way in which that thing will respond when I hit it that is documented and you must keep the documentation up to date with the way it actually performs.
+
+David: While we're talking here about this earth-shattering realization of focus on what makes your beer taste better and turn into API infrastructure that which doesn't, I think we should talk about our second sponsor of this episode and all of season 11. One of our very favorite longtime companies in the Acquired family, pilot.com.
+
+Pilot sets up and operates your entire financial stack as a startup and a growing company, including finance, accounting, tax, even higher-level CFO services like investor reporting, all of which you would otherwise be mucking around yourself in either as a founder or hiring somebody on your team to do. Don't do that. It does not make your product better. It does not make your beer taste better.
+
+Ben: There are many of you out there who are opening QuickBooks when you shouldn't be, so don't. You know you'll feel guilty when you're doing it. You're like, I shouldn't be doing this, but I am doing this. Call Pilot.
+
+David: I should probably be thinking about my customers. Instead, I'm...
+
+Ben: Spending the Saturday reconciling?
+
+David: Yes. For the vast majority of companies and especially startups, doing it yourself as a founder, terrible use of your time, hiring your own deep finance team, also probably a terrible use of your limited venture capital or bootstrap resources. Instead, you should just go on over to Pilot. They take all of that headache off your plate as a founder.
+
+What's cool is we're talking about APIs here. It's not only that pilot has teams of expert accountants and financial professionals who can do your books and your financial reporting for you. They also are a technology company run on APIs.
+
+Today, fast forward, the legacy of everything AWS creates here is Stripe, it's Plaid, it's Modern Treasury. So much of your financial stack as a company these days and your revenue runs on API-based services. Pilot integrates with them.
+
+Good luck having a traditional accounting firm to be able to do that. Pilot integrates with Stripe, Brex, Gusto, Shopify, Square, you name it, and they take all of that data right into your financial stack directly.
+
+Ben: Importantly, you can just count on the fact that they're going to keep integrating with whatever the next leading edge financial thing is. Whereas I think for a lot of people, if you say, oh, they have Shopify integration, well, sure. But they're probably not a company full of engineers that is looking for the next Shopify to make sure that they integrate with at the deepest level.
+
+David: Pilot co-founders and good friends, Waseem, Jessica, and Jeff, are all MIT engineers. This is their third startup. They sold their last startup to Dropbox. They very much know what they're doing on a technical front. This is, frankly, just a brilliant idea and piece of infrastructure that I'm so glad exists.
+
+For everything, as we always say, relevant to this episode, Jeff Bezos himself is an investor in the company alongside Sequoia, Index, and many, many other great VCs. Thanks to Waseem and crew.
+
+Everybody in the Acquired community, if you use Pilot, go on over to pilot.com/acquired. Sign up there. If you use that link, you will get 20% off your first six months of service.
+
+Ben: Thanks, Pilot.
+
+David: Thanks, Pilot. You guys are the best.
+
+Ben: All right, we're in story number three at this point. (1) The apocryphal got some extra hardware lying around. (2) This idea that Tim O'Reilly brings up web 2.0 and APIs, so they start working on the Amazon Associates API. (3) This idea of, okay, the organization is moving too slow, and a way to speed it up internally just for our own step one internal use case, is make it so that the teams communicate with each other via API.
+
+Once they start doing that, and obviously, before Steve Yegge writes his rant and publishes on the Internet, they start realizing, okay, they are parts of this where it may make sense to start being external-facing, because once we get this stuff right, and we've toiled around in the darkness so much trying to get this stuff, right, and I don't think it's helping our customers at all, maybe there are other people out there who are experiencing the same blunt force trauma just trying to keep their infrastructure up and modern.
+
+David: There's one more small compared to the big ideas but inevitable as things were going. One more leap that we should talk about that happens here. everything we just described so far in AWS origin story number three, is related to software engineering and the amazon.com codebase.
+
+What AWS is is abstracted hardware IT infrastructure. And software, too. But the core like S3, EC2, that's IT infrastructure. How do you get from transforming your software architecture to, oh, now I need cloud IT infrastructure? It's the same problem. It's an inevitable outcome.
+
+When you transition your software architecture to the service-oriented architecture and no longer a monolithic codebase, IT used to centrally plan, like we were talking about. We can ship these features at these times, we need a code freeze at that time, we need X capacity, we can forecast that, and we can look out into the future. Now with this, you've got all these distributed teams doing God knows what without talking to anybody, IT can't centrally plan anymore.
+
+What Amazon realizes is they need to do the same thing with IT that they did with software engineering, which is transform it also into an API-accessible pool of computing resources, versus I'm giving you this server and that's what you got.
+
+Ben: You're talking about just internally. If all these teams are hitting each other's APIs internally, then yeah, there has to be some dynamic way that if a whole bunch more load starts coming in and you weren't told about it, you do have to be able to spin up the hardware to handle that.
+
+David: It's brilliant of like, well, let's just make that an API, too. We can place an API call into IT. They have a pool of computing resources.
+
+Ben: But much harder than it sounds.
+
+David: Yes.
+
+Ben: Oh, yeah. IT can just become an API.
+
+David: No, this is a multi year journey for IT at Amazon, too. Of course, it wasn't like Bezos just sent the email that Steve Yegge described and everything happened overnight.
+
+Ben: Yeah. Okay, so what you're telling me then is Bezos gets excited about this, Jassy starts working with him on it, they're basically translating this idea of the first little nugget that you planted is we should make sure that all of the APIs that we're making available internally, we should design them in mind as if they could be externally consumed at some point. But you haven't yet told me, how does some commercial offering eventually become available? And what is the commercial offering to third-party customers?
+
+David: All right, we're now in mid-2003. This has been this huge transformative project within Amazon over the last 18 months. Jassy has been working a lot on it as Jeff's TA. Jeff's like, okay, Andy, it's time for you to go back out into the company. You're done being my TA. You have to go become a leader of something within the company.
+
+It's almost like an echo of Jeff and David Shaw back at D.E. Shaw. They start thinking together like, okay, Andy, what are you going to do? What's the new thing? You're going to go lead within Amazon? Andy's probably happy he didn't leave Amazon, I think.
+
+They come together to this idea of, well, maybe there's an opportunity to take the API-based IT infrastructure that we're developing here and offer it to third-parties. The legend goes, Andy puts together a six-pager.
+
+Ben: This is the official Amazon legend. You can read about stuff about amazon.com
+
+David: Yup. It's in official Amazon documents. Everything in Amazon happens in written narratives and six-pagers. He writes the six-pager. Famously, he has to tinker with the margins and adjust them to fit everything on the six pages.
+
+He can't fit financial projections on there. There are no financial projections in this document. Then he whiteboards them out on the spot in the meeting with the S-Team and the board where he's proposing this big grand vision to take over Amazon Web Services, relaunch it with this new vision of being cloud IT infrastructure.
+
+In the document, there is an ask a proposal to hire 57 new people to go pursue this initiative. Andy talks about he's so nervous going into the meeting. This is such a huge career moment. He's asking for 57 people. Nobody asks for 57 people. It's a ballsy move. He's risking everything. Jeff loves it, the board loves it, the S-Team loves it, and it gets approved.
+
+I think all that actually happened or happened in some way, shape, or form. We mentioned Collin Brier who was running AWS until this point, Andy and Collin swapped places. Andy goes in, takes over AWS, and Collin becomes Jeff's next shadow.
+
+Ben: Oh, I didn't realize that. Andy, right away, took over the publishing of images via the Amazon Associates API, that fledgling AWS?
+
+David: Either that happened or this is part of the Amazon corporate history, hand-waving. All of it just went smoothly. Collin becomes Jeff's shadow. He then goes on to run IMDb when Amazon acquires IMDb. Then later, he would leave Amazon, teamed up with Bill Carr who ran Prime Video, and then they write Working Backwards.
+
+I didn't realize this. This is brilliant. They now have a consulting firm together as part of Working Backwards to help companies implement the Amazon culture. It's freaking brilliant.
+
+Back to Andy. He gets approval. He can hire 57 people. He recruits Adam Selipsky to come in and join the company. Adam, of course, would later leave AWS to become CEO of Tableau, and is now back at AWS where he is now CEO of AWS.
+
+Ben: I watched every single re:Invent keynote to prepare for this, which I will tell you, that is a lot of IT conference keynote watching. The most recent one is Adam Selipsky. It's like 10–11 years of Jassy up there on stage and you finally get a different voice. It's a little bit jarring, especially when you're mainlining them all back to back when it's suddenly not Andy Jassy. Yeah, Adam is the guy now.
+
+David: Do you know who else was in that first wave of external recruits who come in to join AWS?
+
+Ben: I do not.
+
+David: Jeff Lawson.
+
+Ben: Oh, no way. The CEO of Twilio?
+
+David: Yes.
+
+Ben: Wow.
+
+David: Which totally makes sense that Twilio would come out of AWS.
+
+Ben: Yes, of course.
+
+David: I think all of this really happens. Andy does write this doc, he does take over AWS, he absolutely builds and leads AWS from what it was, which was very different into what it is today. I think there's a little more to the story, too.
+
+Ben: It's a convenient narrative. It's also a little bit odd that this idea could come from someone who wasn't in the muck.
+
+David: It's actually a really good interview that Andy does with Harvard i-Lab in 2013. That's on YouTube. They're talking about the origin of AWS. I think the topic is intrapreneurship at companies, which is my God, the most disgusting word of all time.
+
+Andy in the talk, he's like, well, we had to decide, as part of this vision document and the discussion around it, how do we launch this? Do we pick just one service, one IT primitive, and launch with that? Or do we put together a whole bunch of things and launch them all together? He says what they ended up doing was they got a tiger team together of the 10 best technical minds inside the company.
+
+They deconstructed all the major web services, web applications of today, amazon.com itself, Google, eBay, he doesn't mention them by name, but I assume the other big web services of the time, big web applications, and then figured out what you would need to re architect those services based on this new cloud IT primitive infrastructure. They come up with a list. They decide you need storage, you need compute, you need databases, and you need a content distribution network, like what Akamai was to be able to recreate any internet service of scale.
+
+Ben: I love that you say ‘was,’ like what Akamai was.
+
+David: Story for another day, perhaps. They decided, you know what? We can’t fulfill our promise to developers if you can build web applications of scale with us, unless we launch with all of those services. We're going to build them all, and that's why we need 57 people.
+
+Andy would later say a great quote and this is absolutely true. He says, "If you believe developers will build applications from scratch using web services as primitive building blocks, then the operating system becomes the Internet." That sounds true. That's what AWS is today. They're going to launch with everything they need to build a whole operating system. This is where the official narrative just completely falls apart, because that is totally not what happened, not even a little bit.
+
+Ben: Nope. In fact, I can recall, personally, using Amazon S3 for something I was working on, and there was no EC2.
+
+David: Yes. Unlike myth number one about AWS origins, you couldn't just take excess amazon.com IT capacity and externalize it. They had to go build all this from scratch as external services. It takes a couple of years to do that, for everything. In fairness, maybe in defense of the official narrative, they do start working on all of these suite of services all at once, and it just takes a while to get them all built. That probably is true, but yeah, S3 is the first service to launch by itself in March 2006.
+
+Ben: Let's talk about it. It was an independently useful thing. S3 (Simple Storage Service), is a place that is available on the Internet. You don't have to think about where it is; it's in the cloud. You can dump images there if you're an application developer and then elsewhere from your application, or other applications, or no applications. If you just want to access the image directly by URL, you can access.
+
+It's not just images, it's anything that you want to store up there. It's this wonderful, magical, amazing thing, where I don't have to buy a server, I don't have to configure a server, I don't have to rack a server, I don't have to think about maintaining a server, and I only pay as I go. It is insanely cheap.
+
+David: Yeah. S3 launches in March 2006. EC2 launches a few months later, I think, in beta in August 2006.
+
+Ben: What is EC2?
+
+David: EC2 is Elastic Compute Cloud, which is the compute counterpart to the storage part of AWS and S3.
+
+Ben: A simple way to think about EC2 is if you were a web application developer at the time, like I was, and you were writing stuff and you were running it on local hosts on your computer, and you had previously been deploying it to some server in a data center that you can Telnet to, ping, and see it had an IP address, you could basically spin up an EC2 instance and treat it like that, except it didn't have persistent storage associated with it. You can think about it like a computer without a hard drive that happens to live in the cloud and is yours until you stop using it.
+
+David: It's your processor in the cloud, CloudFront, which is the content delivery network (the CDN), the Akamai part of the puzzle piece, launches in 2008. The first major database offering, RDS (relational database service), doesn't actually launch until 2009.
+
+Ben: Importantly, RDS, it wasn't like you just start using RDS and now you don't have to use any of the stuff you've been using before. RDS would run the database that you were already using. I can't remember if it actually launched with Postgres, but assume you're normally self hosting Postgres on your server or you have a separate database server that you're used to running that runs Postgres. Now, you use RDS and it runs Postgres, and all your queries work, and you can treat it like it's your own database server.
+
+David: That's the most obvious crack in the official narrative of the AWS origin, which brings us to the fourth origin story of AWS, the dissenting narrative, if you will.
+
+Ben: At this point, the compass and story number one was 180 degrees off, and then in story number two, it got 90 degrees off. We're fine tuning now. Story three is basically right, but probably doesn't just include the full set of people that could have been written into the narrative.
+
+David: I think story number four is basically right, too, but three and four are the same.
+
+Ben: Success has many fathers.
+
+David: Yes. Concurrently and separately, to everything we just said in story number three, Andy Jassy is working on Jeff's TA on this big problem, writing the vision doc, the business plan, and all that, hiring 57 people. In 2003, a network engineer at Amazon named Benjamin Black is working on the IT architecture transition that we talked about. He's working with Chris Pinkham, who is his boss, who, in fact, oversees all of network engineering within it at Amazon. Chris reports to Rick Dalzell, the CIO of Amazon.
+
+The two of them—Benjamin and Chris—write a six-pager about how they actually are going to restructure the network engineering part of the IT architecture to the new model that the company is moving to. At the end of this document, supposedly, they mentioned that with the architecture that they have in mind, Amazon might actually be able to use that same architecture to sell virtual compute servers as a service to third-party developers. Indeed, Amazon could do that.
+
+Ben: Now here's where things get murky, because that document definitely does exist. This idea that most of it is focused on, here's how we're going to execute our plan, and also, we could sell that Infrastructure as a Service. Here's where Ben Black, and his blog posts on the subject, and then future interviews he gives with Network World and others, are very insistent that they then showed this to Jeff Bezos. The proposal made its way to Jeff Bezos.
+
+David: Yup, I think first to Rick and then to Jeff.
+
+Ben: And he greenlit their project.
+
+David: Yes, separately from the rest of AWS.
+
+Ben: What I can't tell is, did this, before it got in front of Jeff, get merged into Andy's proposal and it was greenlit as one big thing, or where they're actually two different concurrent efforts?
+
+David: We're going to tell the story, and then I have some thoughts on all this. Chris is actually from South Africa. Right around the same time, he and his family want to move back to South Africa, leave Seattle and move back to Cape Town in South Africa.
+
+He goes to Rick, his boss, and says, hey, I'm actually going to leave and move back, move failing back. Rick is like. Oh, no, we're in the middle of this huge architecture transition. This is a key moment in the company. You are a super valuable person at the company.
+
+What if we do the same thing we're doing in Palo Alto with A9 and Lab126? We'll set up a new Amazon subsidiary in Cape Town, South Africa that you can lead. We can retain your talents, and we can figure out what that new subsidiary will do. Chris is like, oh, okay, that sounds good.
+
+Chris and Rick start thinking about this and they decide, well, we just had this idea, Benjamin and I, in that paper that we wrote about selling virtualized servers to third parties. What if we work on that at the new subsidiary? So they do. Benjamin doesn't come along, but Chris and a really, really great engineer named Chris Brown.
+
+Ben: From what I can tell, this is where Ben Black's involvement ends, where he was part of pitching the idea, but it's not actually a part of building the thing that they're going to build in South Africa.
+
+David: Yup. Chris and Chris go off to South Africa. They start working independently on this compute server idea, and they do. That becomes EC2. It's that team in South Africa that builds EC2.
+
+Brad Stone writes in The Everything Store, "EC2 was born in isolation with Pinkham talking to his colleagues in Seattle only sporadically, at least for the first year. Pinkham later said that the solitude was beneficial as it offered a comfortable distance from Amazon's intrusive CEO." Quote from Pinkham: "I spent most of my time trying to hide from Bezos," Pinkham says. "He was a fun guy to talk to, but you did not want to be his pet project. He would love it to distraction." Hilarious.
+
+Ben: You can start to see even in these very public, reasonably nice quotes that there's enough tension between Chris Pinkham and Bezos-Jassy leadership that even in the official Amazon, things that they put out about the development in South Africa, Chris Pinkham's name is nowhere to be found, even in the South Africa–specific blog post about the history of EC2. There's clearly chafing between Chris and the leadership.
+
+David: Yup, and Andy Jassy's infamous one-star review of The Everything Store on amazon.com. In one of the several passages where he talks about how Brad had it all wrong, here's a quote from Andy: "The vision document proposing the AWS business and outlining the initial set of services for AWS including our compute service (EC2) was finished and presented to the executive team in September 2003. I wrote the document and was lucky to have the help of several people in putting it together." This was about a year before Chris Pinkham moved to South Africa to build the initial version of EC2.
+
+Chris played an integral role in the definition, team building, and product building of EC2 despite leaving before EC2 was launched. Clearly, there's some bad blood here, but my thoughts. I want your thoughts, too. I just find this whole thing ridiculous, because of course, it doesn't matter.
+
+The most ridiculous thing is that what I think actually happened here, which is there were multiple teams working on multiple related things within the company, that's how Amazon prides itself on running, decentralized innovation. That was the whole point of this whole freaking exercise. Decentralize, let teams innovate, what’s Jeff say? Invent and Wander is the mantra of him and the company.
+
+I think that's what actually happened. The official version now of AWS history of it was all centrally planned, it was all in that 2003 document, that just seems silly to me and counterproductive.
+
+Ben: I agree. The other thing that becomes clear is, it's really not about the idea. It's about the execution. I know this is a trope. To make it a little bit more specific, it can be about the idea if you define the idea as the hundreds of micro ideas that comprise the main idea. But if you're saying that the idea is something articulated in a sentence, that's pretty much worthless.
+
+Maybe even in a vision doc, it's about the thousands of micro decisions you make while executing it and actually doing the work to execute it that ends up mattering. History is written by the victors, so we're seeing some of that play out here. The other thing that's very clear, as Andy Jassy is just a brilliant strategist and fantastic leader.
+
+Of course, someone like him in the organization would end up actually running it. I don't even know why there's dispute over, well, it was my idea. It's like, well, who cares? Who's going to end up turning this thing into a world-changing business?
+
+David: You had that great playbook theme and takeaway from the amazon.com episode that I think you posted as a clip on Twitter and LinkedIn that went so viral. People who were originally Amazon employees loved it, which was your idea that Amazon was a pathfinding algorithm.
+
+Ben: Yeah, it was brute forcing its way through a maze to eventually find the correct way by just gathering data. Launch stuff, gather data, tear it down, and start again.
+
+David: Yup. Go through the maze, hit a dead end, backtrack a step or two, go take another path. I think that actually is also how AWS launched.
+
+Ben: Early on, but I want to get to that in my playbook, because I think it actually contrast that in some ways.
+
+David: Okay, fun.
+
+Ben: All right, it launches. The last thing to highlight here is the importance of the primitives. I don't know how intentional it was in the moment, but it became something that later on would become hugely important to them, which is that they truly were unopinionated about this as a platform.
+
+They said, we're going to launch with primitives. It's the most basic story that's the most basic compute, it's the most basic way to host your databases, it's the most basic CDN, and we can't wait to see what developers build in an innovative way with our absolute bare bones architecture, that would go on to be called Infrastructure as a Service as a category.
+
+Again, I do not know if it was an intentional thing or not when they were first launching it. But they did not say, let's try and build a new OS, a new programming paradigm. No, we're just going to give you super basic building blocks, and you run with it.
+
+David: All that's on the technical side we've been spending a lot of time there. We've alluded to this, but let's talk about what a radical innovation this was on the business and market side. I've got a great quote here. " When S3 launched," probably at the same time that you were playing around with it, "a truly world class, fantastic engineer at Microsoft at the time by the name of James Hamilton,” who's now an S-Team member and SVP Distinguished Engineer at Amazon, “because of what he saw with AWS, he wrote on his personal blog about trying out S3 when it launched with a personal project"
+
+Here's a quote from him. "What was even more disruptive was a credit card was all that was needed to provision storage. There was no required proposal for financial approval. There was no RFP, no vendor selection process, no vendor negotiation, and no datacenter space needed to be found. I could just sign up and start working from deciding to write the app to it being up and running on the Internet was measured in days.
+
+After debugging and testing extensively, the end of the month rolled around and I got my visa bill. Of course, I knew abstractly, that S3 was disruptively priced. But when I saw that my bill for the entire development and test of this application was $3.08, it just seemed wrong. Once development was complete, I was still storing all the test data in S3. The following month, I got a bill for $0.07."
+
+Ben: No joke, David. Every month, I get a bill from AWS for 71 cents, and I have no idea what old project it was for. It's one of these things where it's priced so dynamically. If it was a big successful project holding a lot of data, then it would be expensive.
+
+They actually have pretty good margins on S3, on bandwidth, and some of these things. But because it was an abandoned project for which I do not know what the email address to login to AWS is from whatever team I was working on, I just don't care.
+
+David: Could you imagine back in 2006, let alone even probably today, Oracle, Microsoft, IBM, HP, or you name it?
+
+Ben: They all have six-, seven-, and eight-figure contracts. There's no way that they're going to invest in, hey, let's let people pay with a credit card and service this tiny little market.
+
+David: And we'll charge you $3.08. This was unbelievably world-changing, truly world-changing. This is how Dropbox, Instagram, Airbnb, Uber, Zynga, all of these companies, get started.
+
+Ben: I remember being at all the Startup Weekends and all these hackathons, where the audience, the family members who came, the venture capitalists who came to be the judges, it was blowing the audience's mind how fast people could stand something up in 48 hours. Because suddenly, you didn't have to spend $5 million in three months figuring out what data center you were going to put something in. You actually could just have an idea and get it out there within two days. This birth that movement.
+
+David: We all lived it. Rover.com, where in all and various ways, part of next to our great friend and mentor, Greg Gottesman. He was a VC. He wasn't technical. It got built in a weekend.
+
+Ben: Yeah, Phil Kimmey.
+
+David: Phil, our buddy, built it. Amazon, of course, embraces this. In fall of 2007, they start the AWS Startup Challenge. They host it first in September 2007. They didn't win, but do you know who was part, a contestant in that very first AWS Startup Challenge?
+
+Ben: Is it Teach Street? Is it going to be some Amazon inside baseball?
+
+David: Oh, even better. Justin.tv.
+
+Ben: No way.
+
+David: Which, of course, would pivot into Twitch.
+
+Ben: Which, Amazon would then buy.
+
+David: Of course, Amazon would then buy.
+
+Ben: Wow, for the better part of a billion dollars, right?
+
+David: Yup. I don't have a good sense of how Twitch is doing now. I assume Amazon got a good deal on that almost no matter what. We got to find the right way to revisit that.
+
+Ben: For sure, but that is a great use case. Justin.tv early, they were using a lot of bandwidth to stream video. They were using a lot of S3 to store. It was a great use case. Man, did Amazon embrace this thing. This is probably one of the biggest keys to success or playbook themes for why AWS became successful.
+
+They realized how perfect this was for startups, they realized how hard it would be for large enterprises to just wholesale move over. They realized that was not going to be the first beachhead market. But for startups who were building something from scratch, who could go on to become $50+ billion companies, my God, let's get them on AWS.
+
+The blitz was so impressive. I remember the first time I met Dave Chappelle who was doing developer evangelism for AWS early with Jeff Barr and so many other folks there. It was just a breath of fresh air, where every happy hour you went to, there were AWS people who were giving you tons of free credits, who were helping introduce you to other people for your startup.
+
+They all thought about themselves as active participants in the startup community. It just became this obvious default that you would build on AWS, because it felt so ingrained with how you make startups. You start an AWS account for the thing that you're going to build.
+
+There's a famous Andy Jassy refrain that you hear at basically every re:Invent where he talks about first, there were the enterprise cloud doubters who said, oh, maybe this is good for startups, but it's no good for line of business applications. It's no good for mission-critical applications. And, oh, maybe it'll be good for my test environment or my dev environment, but I won't be able to run enterprise-grade stuff there.
+
+David: I think his line is, at first, it was that nobody thought you could run a real application. It was only what James was building, like a personal test project. Then it was like, oh, well, startups can run in AWS, but real enterprises won't do that. Then it was like, well, as a real enterprise, we can run non-differentiated, non-mission critical stuff in AWS, but we're not going to put our mission critical stuff in AWS. That's going to be on-prem. Then it was like, oh, my God, take my money.
+
+Ben: Right. I think there's this interesting, obvious first beachhead of customers that are at startups. When you think about the enterprise adoption, and how eventually, now, your bank's application is on AWS, and everything was moving to the cloud or $120 billion a year of revenue has already moved to the cloud of, at least, Microsoft, Amazon, or Google. There are these three prepositions of the cloud.
+
+There are people building on the cloud, which, to me, that's lift and shift. That's really like a phrase that the cloud industry uses for, hey, you are running some local databases, you had some local storage, you basically had your data center, and you just want to lift that up, shift it over, and drop it in Amazon's datacenter. You're not going to take advantage of any cool stuff, you're just going to now run your stuff in Amazon.
+
+The benefit that you get out of that is, you only pay for what you use. You don't have to pay the big upfront costs. And you don't have to maintain it yourself. But otherwise, exactly the same thing.
+
+David: Jassy, actually, at the first re:Invent in 2012, as part of his presentation, he has a great slide on this where he talks about the six reasons AWS wins versus traditional infrastructure for enterprises. It's exactly what he said. (1) You're trading ae in CapEx for OpEx, which you can take all that expense in every income statement every year as opposed to capitalizing it. (2) You're getting lower OpEx than you could on your own. Thanks to AWS's economies of scale.
+
+Ben: They're getting better deals on their servers, so they're passing those along to you.
+
+David: Yup. (3) You don't have to guess on infrastructure capacity ahead of time. AWS is elastic. As you need more, it scales up. As you need less, it scales down.
+
+And that’s actually, (4) It can scale down. When projects don't work, you're not stuck with legacy leftover infrastructure from things that don't work.
+
+(5) Engineers can focus on writing code, not installing infrastructure. Focus on what makes your beer taste better.
+
+And then, (6) You're instantly global on AWS, versus when you run your own on-prem datacenters, you're like, wherever your data centers are.
+
+Ben: Which sounds nice. It's not quite true. It's not one global availability zone. Actually, interesting point, that was the original premise. They thought they were going to abstract that away, and you were going to imagine a global S3 data center.
+
+When you deployed it, it just went to all of the datacenters, and then they quickly realized, we're going to have so much traffic from so many customers that we're going to consume WAN. We're going to consume the Internet's bandwidth replicating unnecessarily. There is, you do not run globally by default in every single. Anyway, yes.
+
+There's this step two, which is building in the cloud. That's taking advantage of using things like the relational database service, that RDS, the very early thing that they launched, which is, hey, this isn't just your exact same code and your exact same infrastructure, but in our data center and build differently, you're actually taking advantage of a cloud-native service. Then there's building for the cloud, and that's the future. Those are things like Lambda and DynamoDB.
+
+If you think about Lamda, for folks who have not done this or heard of the serverless movement, it's this idea that you don't even need to reserve an EC2 instance or deploy code to it. You just write your code and then when you want to call it, a thing just spins up for a few milliseconds, runs your code, and spins down. You were never aware of its IP address or where in the world it was. You just know that your code executed.
+
+That's really like building for the cloud. You're completely architecting your application differently to take advantage of this very different world of computing the cloud offers.
+
+David: If we rewind the origin stories number two and three of the big monolith software problem, all the engineers and product teams in Amazon, and every other internet company were spending all their time focused on not making the beer tastes better, undifferentiated, heavy IT lifting, in the beginning, really what happened is probably development teams in those days were spending like 70% of their time on infrastructure and setup and 30% of their time on software development.
+
+And then AWS shifted it to, okay, spend 70% of your time on software development and 30% of your time on worrying about our APIs and your infrastructure. This for the cloud, Lambda, everything is like, that's taking it down to zero.
+
+Ben: That's the goal, at least. I think all this stuff sounds better in principle than it actually ends up in practice. But yeah, that's the idea.
+
+AWS, in its earliest days, let's call it the first couple of years, it was really startup focused. New applications from whole cloth that want to use our Infrastructure as a Service, primitive building blocks.
+
+They very quickly realized, if we're doing Infrastructure as a Service, it also does enable this lift and shift thing. As long as we work like hell to satisfy the compliance, requirements, availability requirements, uptime, and all this stuff, replication requirements of enterprises...
+
+David: And SOC 2 audited with Vanta.
+
+David: There you go. Perfect. Very quickly, AWS could serve these two markets of startups and the lift and shift enterprise. Another way you could have designed this is instead of doing this Infrastructure as a Service and these primitives, you could say, let's think about the far future, the Lambdas of the world. We're imagining now in 2006, why don't we just build that stuff to start? Let's change the development paradigm. Let's build the platform of the future, that platform will live in the cloud. That platform is not Windows of the past or the App Store of the current day, where it was just coming. That platform of the cloud, why don't we start writing the brand new paradigm today?
+
+There are a couple other big tech companies that took that approach, at first, that were completely wrong. The unfortunate thing for Microsoft and for Google, who really started at this Platform as a Service layer was, you basically didn't get the startups because you didn't have a mature platform yet that people were excited to build on and understood how to build for. But you also didn't get the enterprises because there was no ability to lift and shift. If you were creating a Platform as a Service in the late 2000s, you're really a decade early, and you're building for a market that doesn't yet exist.
+
+David: Okay, let's talk about what happens, because Amazon ran the table on maybe the most important market of all time.
+
+Ben: For the first five years with nobody competing with them.
+
+David: It's incredible. 2006 is when the first services launched. 2007–2008, that's when the startups are getting started—Airbnb, Uber, Instagram and the like. They're becoming big, but they're not yet at the scale that they are today. 2009, Netflix becomes a customer.
+
+Ben: How crazy is this? They had already built their own, in the last three years, basically cloud internally in order to stream video, which was originally, I think, stream through Silverlight. They had this big partnership with Microsoft.
+
+David: That's right. Oh, my God. That was so terrible.
+
+Ben: Yes. I think you had to use IE to view it. It was bad. They had just invested a bunch and then did an about face and said, oh, we were wrong. Actually, we're going to use AWS instead.
+
+David: We're moving all of it to AWS. I believe Netflix is still to this day, I think, 100% on AWS.
+
+Ben: I don't know about 100%, but yes, they're still an enormous customer. Reed Hastings was actually the very first guest interviewed on stage at the first re:Invent in 2012.
+
+David: I think in that interview, if it wasn't that one, it's another one around that time, he talks about people say, Reed, you compete with amazon.com, aren't you worried about being on AWS? And he's like, no. I'm not worried at all about being on AWS. It is legitimately the smart infrastructure decision for us to make.
+
+Ben: That was such a feather in Amazon's cap. They've had two big feathers in their cap, there's that one and the CIA one. It's secure enough for the CIA to use, so it should be secure enough for you, and that was a few years later.
+
+The Netflix one, a lot of people were afraid to use AWS early on because they felt like they didn't want to do business with Amazon if they were a retailer, or they didn't want to do business with Amazon if they were in video, or in any of these things that Amazon was competing on. Reed getting up on stage and saying this matter of factly and so forcefully was him saying, you can trust that AWS is different than Amazon.
+
+David: Okay. Why is Reed and Netflix making this decision? Why then do a bunch of other customers do this? Microsoft, let's put Google to the side for a minute, but IBM, Oracle, all these legacy technology companies, why are they asleep at the wheel here? It's the disruptive pricing model.
+
+Ben: Let's not loop them together, because I actually think it's worth analyzing each company failed to claim this opportunity for unique reasons.
+
+The first couple, it's worth analyzing. I think what you're pointing out as these old server companies. The IBMs and Oracle on the database side, that made these ridiculous gross margins, and they sold you this complete proprietary solution.
+
+David: Yeah, 80% gross margins.
+
+Ben: Totally. They would sell that to you. They would install it in your data center. Eventually, they would hand wave and call something cloud.
+
+David: Private cloud, private cloud.
+
+Ben: They might do it in their datacenter or they might do it in yours, but it's effectively the same thing. It's sold on a license basis that comes with auditing. Amazon has this ability to literally meter your usage and then charge you exactly what you need to be charged. Whereas this old model of buying a bunch of Oracle licenses and deploying them on the servers in your datacenter, you just get these audits every once in a while.
+
+Okay, cool. We sold you a license and you bought this many licenses, we'll show up and make sure that you aren't misusing this thing. They weren't going to change that business model. It was a license to print money.
+
+David: Amazon targeted gross margins and operating margins for AWS in the 20%–40% range.
+
+Ben: Which felt like a 10X and a 20X for them, but was unattractive to the traditional.
+
+David: Right. This is the perspective. Amazon.com is operating on a 2% operating margin basis. For Amazon, they're like, oh shoot, we get 10X–20X. Our margin basis with this new business, awesome, but that's still less than half of the margin that the old school guys are getting.
+
+Ben: The old school guys are certainly fat and happy on their operations. Whereas Amazon knows how to run everything they've ever run as this unbelievable lean machine, because they're so COGS-sensitive on everything.
+
+David: Here's another thing, though. You mentioned, call it the Oracle's or the IBM's whoever, they'd come install this software on computers for you or in their data centers, call it private cloud or whatever. They'd install Oracle database version 19. Two years later, you're paying your maintenance costs, you're going to pay an upgrade cost to go to Oracle database version 20, and then you're going to go a couple of years later to version 21, and you're going to pay a bunch of money every time you migrate.
+
+Ben: Right. Why would you give up this annuity that you have?
+
+David: Right. Cloud infrastructure, it's always up to date. There is no version. Whatever you're using, you're using the latest stuff, because it's always. Then even more than that, Amazon gets to constantly iterate versus doing these Windows XP every four years, we're going to ship a big update. No, it's just constantly changing.
+
+Ben: Yup. Okay, that's super old guard, the IBM's and Oracle's, which is very funny. When you watch all these keynotes, I wonder if anyone's ever watched them all mainline like I did, because I have this unique perspective seeing them also close to each other.
+
+They used to, onstage, refer to IBM and Oracle in a tongue in cheek way. They would refer to like a New York company and it would be like IBM logo, but it would say like New York company. Oracle, they would go as far as to like a San Francisco company, and then they might make a reference to a super yacht, sailing, or something to really drive the point home.
+
+Around 2016–2017, they totally did an about face, and they just start directly attacking them. They start directly attacking Microsoft, too, because I think Microsoft went from, in the early days, someone where Amazon looked at them more as a partner, like, we're happy to run Microsoft stuff on your AWS instances. Now that Azure has actually been an extremely viable competitor and made a big, big comeback...
+
+David: They're the best competitor to AWS by far.
+
+Ben: Amazon now loves attacking SQL server licenses and stuff like that that Microsoft, of course, comes in and audits just like the old guard for. Let's look at Microsoft, though. Let's think back to the mid-2000s, because this really should have been their business to take. They should have figured this out.
+
+There are essentially two problems going on at Microsoft. One, the Windows group just had too much power. Between them, the Windows Server people, and the SQL Server people, the goal of those groups was to get customers to do more with this idea that people thought was going to be big for a while.
+
+PCs taking over the datacenter, then PC Operating Systems becoming the data center operating system. Really, the goal was sell more Windows Server licenses, and that was a great business. Anything that looked too much like that within Microsoft got gobbled up in an internal power struggle, because it could look like it would cannibalize that thing.
+
+David: This was probably happening when you were there, right?
+
+Ben: Yes. It was sort of over by the time I was there in 2012 is when I arrived. They did eventually realize that they had to make a big bet on Azure and totally separate from Windows Server. We should give Ballmer credit because he did see this.
+
+They replaced the leader of that organization at the time of Windows Server and tools business with Satya, who would eventually, of course, become CEO, and then really doubled down on the cloud strategy. They realized, okay, Azure needs to be a thing that's kept separate, has CEO sponsorship, and can escape the Windows Server thing.
+
+Their second problem is what we were talking about earlier. They launched this thing called Azure Cloud Services, which they've now basically deprecated, which was a Platform as a Service approach. Microsoft had the golden goose. They had all the IT relationships.
+
+What they should have done is gone to everyone that was using Windows Server and say, great news, we have primitives in a datacenter that you can lift and shift to much like how Azure works today. You can trust us, you already pay us. We'll make this a part of your enterprise agreement, but Microsoft got clever. They thought, you know what? Win32 runtime, the .NET platform, we’re a great platform company.
+
+Developers want to build for the things that we make, so let's make the next generation set of APIs and platforms for building great cloud applications. They just totally did not recognize the magical thing they had in front of them, which was all the customers and all the distribution, who over the next five years, would slowly dribble out and start their new stuff on AWS while Microsoft was still figuring out its strategy.
+
+They got caught in that middle of people building brand new apps, didn't know how to build for their platforms, and they didn't want the lock in. That's still a big thing in cloud, oh, don't get locked in, you want to be multi cloud. They didn't make it easy for their existing customers to lift and shift.
+
+Microsoft, while they're in a great place now and have figured out an interesting strategy, and we can talk about the Baron bowl later, they just had five years of watching pitches go by.
+
+David: Yeah. Oh, it was such a whiff. Okay, we talked about Oracle. I want to come back to Oracle in a minute. We talked about Microsoft. What about Google?
+
+Ben: Google is the third place. Amazon's got 35%, maybe 40%. Microsoft's got 20%–22%. Google is somewhere around 10%.
+
+David: Microsoft having 22%, that's an enormous win.
+
+Ben: Totally. Here's my take on Google. They accidentally became a business. They launched as a project, and then they figured out this business that became unbelievably cash-generative, immediately.
+
+The nature of their business being search and feeding all the data directly and to make the results better, is that they instantly became a consumer-sponsored monopoly. Totally legally done competitions, just a click away, but they're the best experience. They just have these unbelievable reinforcing effects of becoming a monopoly.
+
+They're a super high gross margin monopoly in the biggest market in the world, which is people wanting to use the Internet, and they're the front door to the Internet. Their entire existence, it's not that it's been easy, because it's been a computer science challenge.
+
+David: It's been very academic.
+
+Ben: They've never had to go into a hard business. I don't know what Google's advertising margins are, but that business probably runs at, I guess it depends if you put sales above the line or below the line, but 80% gross margins. A 30% gross margin business is not particularly attractive to them, nor are they good at sales. I know they're getting better.
+
+The narrative at the time was they made this G Suite thing, which at the time was called Google Apps, but no one would buy it. They ended up giving basically all of it away for free to consumers forever. Google Docs, Gmail, and everything. It was the best thing to use, and they couldn't figure out any way to sell it to enterprises.
+
+They didn't have the competency of enterprise sales the way that Microsoft did. They didn't have the ability like Amazon to operate in these really hard businesses, eeking out every last dollar. It just looked unattractive. Meanwhile, they actually had the best technology for it.
+
+They actually operated these big datacenters and this really novel way of networking all the computers together in order to pull off search. They were inventing machine learning before machine learning. A huge value prop of the cloud now is all your data is in the cloud.
+
+That way, you can use a bunch of stuff that Google invented, TensorFlow, Kubernetes, to run your stuff in the cloud. This also was theirs to win, but they didn't have the sales and marketing muscle. I don't think they have the iron gut that Amazon had to go do something grinded out and hard.
+
+David: I think they also made the mistake that you're originally talking about. I thought you were talking about Google, and then you said it was Microsoft, too, of building too far in the future. I think Google made that mistake, too.
+
+Ben: Yup, that's totally true. The first foray was Google App Engine, which was in no way Infrastructure as a Service. It was not primitives. I think you can write in Python, or Java. It was a specific API surface for GAE, and you can make app engine apps. It was all abstracted away from you.
+
+It's kind of the same Microsoft thing if we're going to get really clever and build you a platform of the future. But Google, per the Steve Yegge rant, is not at all a platform company. They didn't really know how to build it. They didn't know how to sell it. They didn't know how to identify a market for it. They didn't know how to support developers in it at the time, so that fell on its face. What is GCP? Google Cloud Platform is now a very viable player in this race, but that's not where they started.
+
+David: Yup. I want to rewind back to Oracle and talk about something. One thing that really came up in the research, from talking to people, and friends at AWS and Amazon, Amazon and AWS deserves so much credit for overcoming one of the hurdles that you just said Google had, which was Google didn't know how to do sales. Amazon didn't know how to do enterprise sales either.
+
+Ben: That's a great point.
+
+David: When AWS started, like we talked about, the obvious core product market fit and first set of customers was startups. They don't want enterprise sales. They just want to pay with a credit card online. Amazon didn't have to figure it out. But they then did also figure it out and served enterprises, governments, government agencies, big institutions, did the lift and shift thing, and then brought those big enterprises along.
+
+Ben: I think it started with academia. Their first big contracts were with universities doing research and running effectively like their supercomputer loads on AWS.
+
+David: NASA was famously a customer starting in 2009.
+
+Ben: That's right. They did the data streaming and then the video distribution of the Mars landing, right?
+
+David: That's right.
+
+Ben: That was the first big thing. But working with NASA and the academic community on how do we fit in with institutions, I think, taught them some of that enterprise muscle.
+
+David: Those folks don't want to pay with a credit card.
+
+Ben: Right.
+
+David: You got to do contracts, you got to do billing, you got to do discounts, you need a salesforce, and you need all this stuff. You need to do a big conference like re:Invent.
+
+Ben: They had to have poached a bunch of Oracle salespeople, because the Amazon sales machine is a lot like the Oracle sales machine of old.
+
+David: Yup. Okay, let's talk about Oracle. One of the things that I think to most people—was to me before doing the research here—is vastly under-appreciated about AWS is people think about EC2, S3, Infrastructure as a Service, compute, storage, networking, and all that. True. Amazon doesn't record this. But if you Google estimates of what the most popular AWS services are, the most used ones, EC2, S3, they're juggernauts.
+
+Numbers three, four, and five are all databases. AWS is a huge database business. They have taken so much share from Oracle. While it's all related, it's infrastructure. It's also a different kind of business from infrastructure. Famously, AWS Redshift. Why is it called Redshift?
+
+Ben: Yes. For people who don't know this, there's an official Amazon talk track and then there is a real talk track. The official Amazon talk track, do you know this one, David?
+
+David: That it's a Doppler effect or something like that?
+
+Ben: Yeah, it's physics related. I think Amazon actually used Doppler as a codename for Alexa. Of course, one of their buildings in Seattle is that. When the sound waves get bunched up or spread out, when a siren goes by, it's the Doppler effect. Redshift is the light equivalent. It's like a star moving away from you.
+
+David: But there's another part of the story here.
+
+Ben: Shift away from Big Red.
+
+David: Yeah, which is Oracle. The database market is freaking huge. There are two properties of the database market that people just don't think about, but are incredible. One, the global market size for database software is $100 billion. It is growing at 10% per year, because everything you do with computing, you need to store it in a database. You need databases, and you can't get away from them. It's big and it's growing fast. Two, database software may be the stickiest software of all time.
+
+Ben: Especially at the scale that people are producing data now. It's actually worth contextualizing this a little bit. There are all these stats all the time, which are something like last year, more data was produced and stored than in the entire decade before and in the entire century before that. That's not the exact stat, but there are 11 different variants of it, which we all intuitively know because we're storing data on our phones. But when you have two things exponentially growing, it's hard to intuit the difference between those two things.
+
+We know this about data. We also know this about the Internet. When you talked about dial up back in the day, then when people got their first cable or T1 Line, and meanwhile, I'm here, podcasting, and David, I'm seeing you and gigabit down directly into my computer, it's unbelievable. You think, wow, these two things have the same phenomena, except that they're actually moving at very different rates.
+
+The Internet has not gotten faster at the rate that data storage has increased. This is most illustrated in some of the AWS re:Invent talks. They're like, hey, a lot of you want to shift to the cloud, but you have a petabyte of data or some of you have an exabyte of data in your data center. What do we do about that?
+
+They first released this thing that was a 100-terabyte super secure thing they would ship to your office called the Snowball. You plug it in, it would automatically get all your data and had a Kindle on it, so it would actually display a custom shipping thing. You could track it all the way back, it would arrive in the Amazon datacenter, and they would audit. It was like tamper proof, bullet proof. It's an amazing thing.
+
+They've released a few other generations of them now. There are even some with compute on them for field applications. And then the curves kept going. The Internet kept getting a little bit faster, but our data storage kept getting a lot more significant.
+
+There are some stat that Andy gives on stage in a keynote in 2016–2017, somewhere in there, where they announced Amazon Snowmobile. Because all of us are sitting here on computers that have a terabyte, 2 terabytes, or 4-terabyte hard drive, you're like, 100 terabytes is not that meaningful. They're like, we will send a Snowmobile to your data center, which is a semi truck full of Snowballs, effectively, so that you can get the data to us.
+
+Even with this solution, never underestimate the bandwidth of a semi truck moving down the highway. This type of solution, it can still take six months to migrate all of your data into the cloud. Whereas it would have taken you years, and years, and years, and years, I don't know the better part of a century, to actually upload it over the wide area network, over the Internet.
+
+That, I think, illustrates pretty heavily your point about once you decide to put all of your enterprise data into a database hosted in some specific vendor's cloud, there's pretty meaningful lock in there. There are very practical concerns with moving.
+
+David: I can do you one better. Another example. Amazon.com used Oracle databases when it was started. Amazon.com did not finish their migration off of Oracle databases and onto AWS products until 2019.
+
+Ben: Oh, my God.
+
+David: Thirteen years after AWS launched.
+
+Ben: That is insane.
+
+David: It took that long for Amazon itself to migrate off of Oracle.
+
+Ben: Meanwhile, by that point, Amazon had eight different database solutions for other companies to use and had invented three of them. There are open-source ones they host for you, but they also created DynamoDB. They invented new database technologies that are compatible with other relational databases, but way faster, way more performant, and it's still hard to migrate within the company.
+
+David: Amazing. You just play that forward and you're like, wow, okay, (a) there's still so much revenue that's going to shift to AWS, and (b) It's going to be so sticky. One of the most amazing stats that (again) one of our friends pointed out to us—I tweeted about this and I posted it on LinkedIn; it's just crazy—AWS today is on an $80 billion revenue run rate. That is not the most crazy, impressive, defensible thing about AWS. If you go look in the financials in the latest 10Q from Amazon, they have to report the AWS revenue backlog.
+
+Ben: Basically, a revenue that's contracted but not recognized yet.
+
+David: These are contracts mostly with big enterprises of revenue they've signed deals for, but that is not yet recognized. It's going to be recognized in future quarters. That backlog of committed contractual signed revenue is over $100 billion. I don't even know what to say about that.
+
+Ben: There are a lot more storage and compute not on the cloud than currently in the cloud.
+
+David: Amazon could shut down all sales efforts, stop growing, literally turn off the lights in terms of new business today, and they still have $100 billion more business that is contractually coming their way.
+
+Ben: It's insane.
+
+David: Crazy. It's crazy.
+
+Ben: David, you mentioned, they're on a $70, $80 billion run rate right now?
+
+David: $80 billion.
+
+Ben: In 2014, Jeff Bezos wrote the annual memo that comes out, a letter to shareholders and said, "I believe that AWS’s market size is unconstrained." That was the point at which it was a year before they broke out AWS's financials, and I think it was a $6 billion run rate business.
+
+David: When the "AWS IPO," which I think Ben Thompson coined that term. It happened in 2015. That was when they reported Q1 2015 earnings. That point in time, AWS had a $6 billion revenue run rate.
+
+Ben: It was probably like a $4 billion business. When Bezos is like, wow, this thing, I think it's unconstrained, it's nuts. The real story here is Amazon discovered a new unregulated public utility that they could generate enormous margins on.
+
+David: Enormous for Amazon margins.
+
+Ben: Okay, but enormous raw dollar margins, absolute dollar margins. This is a business that they can generate billions and billions of dollars in profits by operating and is effectively a public utility. The market sizes, I think I said 120 billion earlier, but I think that's being conservative and growing at 30% per year with no end in sight of this thing, continuing to compound at that rate.
+
+David: I always used to think about and talk about the mega trend of our lifetimes is the Internet believing the Internet. That's the bedrock of modern life. AWS is what powers the Internet, that's true. What I've realized here, it's more than the Internet. It is anything that a computer could touch. AWS takes a tax on that, essentially.
+
+Now to bring it full circle, anything a computer could touch is the Internet. It's one in the same these days. Jeff, it's a crazy statement, but I think he's right. Its market size is unconstrained.
+
+Ben: It certainly was in 2014. I wonder if you could even make it now.
+
+David: Yeah. Okay. The AWS IPO happens in 2015. "IPO," $6 billion revenue run rate for AWS, 70% annual growth rate.
+
+Ben: That's right. It was still growing like crazy then. I think now it's growing like 30%–35%. But then, it was nuts.
+
+David: 30%–35% growth on $80 billion is nuts. Yeah, 19.2% operating margin. When that happens, Amazon stock jumps 15%. When that earnings release comes out, it should have jumped like 500% and does over the next year or two.
+
+Ben: What an idiot I was for not buying the day that it jumped that percent. Isn't that the funniest thing about all this? You look at it and you're like, well, now the stock's expensive. No, the stock was still very cheap.
+
+David: Very cheap, very cheap. In 2016, this is interesting, Andy Jassy was not technically the CEO of Amazon Web Services.
+
+Ben: Senior Vice President of AWS.
+
+David: Yup, until 2016. In 2016, they restructured corporately. Jeff Bezos becomes CEO of the whole company, Jassy becomes CEO of AWS, and Jeff Wilke becomes CEO of everything else, Amazon retail.
+
+That year, AWS does $12 billion in revenue, over 50% of the company's operating profits, which as we said, they do every year. $17 billion in revenue the next year, then $25 billion, $45 billion in 2020. $62 billion last year but $80 billion run rate. Today, it's sitting on a $100 billion backlog that's coming rain or shine. It's just freaking unbelievable.
+
+July 5th, 2021, Jeff Bezos retires.
+
+Ben: Isn't it crazy, that was only a year ago? It feels longer.
+
+David: I know. Yeah, crazy. They announced it before them, but that's when it actually happened. Andy Jassy become CEO of all of Amazon. Adam Selipsky becomes CEO of Amazon Web Services. I think this was part of the most recent earnings release this most recent quarter. They did a Snowmobile operation on the International Space Station.
+
+Ben: Oh, I didn't know that. Really?
+
+David: Yeah. I don't know if they worked with SpaceX or maybe Blue Origin. They sent some Snowballs up to the space station, and they lifted and shifted out of the space station. We've said it before, but AWS has about a 39% market share of the cloud, Azure, 21%, Alibaba, 10%.
+
+They're the dominant player in China, which is an interesting story in and of itself. Similar to Amazon, it was Alibaba that became the dominant cloud player in China. It'd be fun to dig into how that happened. Google is about 7%.
+
+Ben: Yup. It's pretty interesting to look at all the ways they're pressing their advantages too. In 2015, that year, they broke out finances. They also bought Annapurna labs. This is an Israeli company. They started custom designing chips, which we've seen in both their training chips.
+
+They've done custom. I think they're called Trainium, and then they have inference chips, which are also some crazy name, Inferentia. They have custom machine learning chips.
+
+David: Do you know who makes these chips?
+
+Ben: TSMC?
+
+David: Of course, a big TSMC customer.
+
+Ben: The other thing is that, in many ways, it's the embrace-extended strategy that Microsoft ran. First, they have RDS and they're like, you could run anything in RDS. Then they start doing things like launching Amazon Aurora, which is a direct attack at Oracle and a proprietary database software that they own and control. They're like, but it's so fast and it's so performant. It's compatible. Oh, and by the way, we generate much better margins on it.
+
+It's all these things that they used to attack Oracle for. They're like, look, now that we have all the customers, why don't we do some proprietary databases, too? We can generate more margins on those. There are ways that they generate huge margins like bandwidth. AWS makes 90+% gross margins on their bandwidth charges.
+
+There are many ways where, yes, cloud is still objectively better than the old way that the licenses were structured, the old way of storing on-prem, the old way of hiring all your own IT people, but also Amazon is starting to feel themselves on the lead that they've generated and run some of the same playbook.
+
+The other thing, so then the question becomes like, why machine learning? Because it's so clear that compute is this massive pillar of the business. Databases has been stood up as not quite as important, but definitely more important from a stickiness perspective. Every year, they announced some new database thing when they're on stage.
+
+Machine learning, they've announced SageMaker. They've broken out the keynote, so now there's a custom ML keynote. They have a whole bunch of cloud-hosted ML offerings. They run TensorFlow, which is funny because that's the thing that Google created. They have their own container service.
+
+They also have their own elastic Kubernetes service. They have to serve customers, because customers want Kubernetes, but they're trying to get you to use their own custom ACS (Amazon Container Service). What's becoming clear to me is the machine learning capabilities that Amazon has need to be good, but they actually don't need to be as good as Google's, because here's the strategy with machine learning.
+
+You're going to use whatever ML is available with where your data is, because running machine learning near your data is the most important thing. Once you've picked Amazon to be your storage vendor, and you've sent semi trucks full of your data into their data centers, you're not shopping around for, oh, where should I run my ML? You're going to run your ML on AWS.
+
+They can't fall crazy behind here, but I think this is one way that even though Google should be best positioned to have better ML offerings than anyone else, it doesn't matter if they're not the place where customers are storing their data.
+
+David: Okay. One last element of the story before we transition to analysis. I don't think we can call this a coda because they failed. It's not a coda because they didn't do it.
+
+Ben: It's a work in progress.
+
+David: A work in progress. I think, justifiably so, this has been an AWS love fest. We've heaped so much praise on them. It's like they've done everything right. It's amazing. There's one thing they missed. Ben, do you want to tell us about it?
+
+Ben: Data warehouses. How is Snowflake its own $50 billion company?
+
+David: Unbelievable.
+
+Ben: It stores data in AWS and other public clouds, and it is its own $50 billion company. What Amazon would tell you is we have Redshift, it's one of the fastest growing Amazon services ever, and it's doing really well. The databases team at Amazon, that whole org has to be very, very unhappy that Snowflake managed to run the gauntlet on the data warehouse market.
+
+David: It's crazy that AWS did not do this.
+
+Ben: It's probably AWS's biggest failure, and the question is, why? I think there are a few areas. One is just big company stuff. I think before launching something when you're at Amazon's scale, and now that they are the trusted partner of all these IT departments, you've got these security things, operational things, SLA guarantees that they're fully committed to. I think it hamstrings your ability to really streamline a product, be opinionated, and get something to market that's both fast, intuitive, and built for the user.
+
+I think Redshift requires a lot of customization, whereas Snowflake is awesome for developers out of the box. It's funny that the playbook that Snowflake ran is pretty similar to the playbook that AWS ran when they were just S3 and EC2 serving individual developers. There's a little bit of, they're a victim of their own success on this front.
+
+The other one, Ben Thompson pointed this out in a piece that we'll link to in the show notes. It's right there in the name, they're fighting Oracle. They're fighting the last battle with Redshift. It's, hey, take your Oracle-style data warehouse and basically do that in the cloud, rather than lots and lots of Snowflake customers never would have become Oracle customers.
+
+It was a different customer segment with a different set of needs. It's just a fantastic product. That's not really who Amazon was serving. There's new leadership there now, they're getting the house in order, and I think they recognize this, but this was a whiff.
+
+David: Probably not a whiff on the order of...
+
+Ben: Microsoft and Google whiffing on cloud? Yeah. It's an order of magnitude or two smaller.
+
+David: Yes. AWS, we're going to do analysis now, do grading. There's no way this isn't going to be a very high grade, but if there's a black mark, this is it.
+
+Ben: The other thing where they're sort of a victim of their own success is the Amazon two-pizza team thing led them to launch all these different services. Rather than having a cohesive product strategy, AWS has kind of been alphabet soup. I haven't logged into the AWS dashboard in a while but it used to just be so overwhelming. So many amorphous logos that all feel like the same thing, where it's hard to disambiguate between two things.
+
+I think Amazon realizes this because their keynotes now seem to be much more about pitching these vertical solutions. Like, here's this thing for this industry. Here's a vertical solution. Here are case studies of other people in your industry rather than first presenting you with, we have 476 services.
+
+I think that in the keynotes, they've also really dialed back on what used to be the drumbeat of the keynote, which is, we launched what we consider to be 74 significant features this year, and we're excited to tell you all about them. I think that one for a long time, and now it's created so much confusion for customers that that's actually the bull case for a Google who is a newer entrant, who's coming in with a more cohesive product strategy, and can help customers really understand what they should be doing rather than being like, hey, there are no guardrails, good luck.
+
+AWS keeps launching even more new services now to provide those guardrails and say, if you use whatever, whatever manager, then you can't get yourself into too much trouble. It's like, oh, cool, 13th standards body. They definitely have a little bit of that cleanup effort going on now. But hey, they got market leadership, and they make far more revenue and far more operating income than anyone else, so it's hard to argue with.
+
+All right, listeners. This is a great time to share our next sponsor with you, something extremely unusual. This segment is brought to you by our great friends at NZS Capital.
+
+David: They're just the best.
+
+Ben: They are. We first chatted with Brinton, Brad, Joe, and John with the idea about doing a paid sponsorship. They jumped on it, but they gave us one very particular caveat because they're such learners. They said that the only thing we could ask listeners to do as a call to action is to read one of their white papers, think about it and offer feedback, and further refine the thesis.
+
+This time, in contrast to our last two episodes, we're going to talk about a different white paper. For those of you who joined us for the talkback, that was awesome to get to talk to all of you with the NZS guys on the call.
+
+David: That was so great about complexity and complexity investing, the founding thesis of the firm. Today, though, we're talking about their white paper redefining the margin of safety. We'll have a link in the show notes for folks to read it. It's a super cool concept.
+
+Margin of safety, for folks who listened to our crazy 10-hour 3-part Berkshire Hathaway series last year, you'll remember that as an original Ben Graham concept. Of course, Warren and Charlie popularized it at Berkshire.
+
+The idea is actually similar to NZS' core thesis, which is that you can't really predict the future as an investor or anybody else. Thus, the idea of having margin of safety in your investments in the Graham concept of it is around valuation, that gives you a wide leeway to be wrong.
+
+Ben: Yes, in a very wide possible of scenarios rather than a very narrow set of scenarios, you're going to be okay and still may make a profitable investment. Of course, Graham's little simplistic viewpoint on this is if it's a high valuation relative to the business's fundamentals, it's a low margin of safety, and a low valuation gives you a high margin of safety. NZS is different. They believe valuation alone is insufficient to actually think through what the true margin of safety is.
+
+David: They think about margin of safety really as focusing in today's fast changing world on the adaptability of the management team of a company. A management team that's highly adaptable is going to give you, as an investor in the company, a much higher degree of margin of safety if you believe that the pace of change out there is accelerating and things are going to be changing.
+
+Valuation doesn't tell you much, but a management team's ability to adapt to changing conditions does. That's part one of their thesis here.
+
+Part two, which is really cool, is that there's also a time element here. Not just management's capability to adapt, but what is the business cycle of the company that they're running?
+
+If it's a super, super fast business cycle, you could have the best management team in the world at adaptability. They're just not going to have time to react. The likelihood that within a narrow window of time, they'll make the right choices, is low.
+
+An example here is Groupon or Zynga. It wasn't maybe necessarily that the management teams didn't know how to adapt to changing conditions. It's just that the business cycle for those companies was so fast, they didn't have time to.
+
+Ben: They actually use this analogy in the paper where they're saying, imagine that you're driving only two feet away from another car, and you're going quite fast. If they tap the brakes, you're screwed no matter how good of a driver you are. But of course, if you're at a safe distance and you give yourself time to react, then there could be a lot more margin of safety no matter what the price of the investment.
+
+A little bit about NZS before we close here. They've got over a billion dollars under management. They're a global equity fund. They're a long-only. They manage money for institutional and accredited investors. They're just some of our very favorite thinkers.
+
+They started the firm in 2019 and worked together for many, many years before that. If you find this stuff interesting, you should go read the whole white paper by clicking the link in the show notes. It is well worth the read. We say that just as fans of their ideas. We are not clients of the firm.
+
+Finally, they do really, really, really want your feedback on this. If you got a bone to pick, if you want, understand it further and read the whole white paper, if you totally agree, click the link in the show notes. Go check out the white paper.You can email any of them. Their emails are on the white paper itself.
+
+Or even better, we're going to do another Zoom call with them in October to talk about these ideas together. There is a second link in the show notes to add that to your calendar. We would love to see you there. Our thanks to NZS Capital.
+
+David: Should we transition to analysis?
+
+Ben: Yeah, let's start with power, because I think AWS is actually one of the best case studies in power of all time. A longtime listener to the show knows power is what enables a business to achieve persistent differential returns, or put another way to become more profitable than their closest competitor, and do so sustainably, so they can build enterprise value and be sustainably more profitable than their nearest competitor. David, when AWS broke out their financials, they were at, did you say 19%? 18%, 19% operating margins?
+
+David: 19%.
+
+Ben: Now they're at 30%. They've gotten more profitable when the landscape got more competitive.
+
+David: How did that happen?
+
+Ben: There's something going on there. There are a couple of things. Moore's Law is in their favor of all their COGS getting materially cheaper over time. If I had to guess, I think they're not discounting for customers as fast as they're realizing both economies of scale. Legitimately just cost coming down from Moore's law.
+
+I think, actually, what's going on here is, it comes all the way full circle that Amazon is offering Platform as a Service offerings at this point and telling customers, hey, you could just keep using our primitive building blocks, but actually, what you should be doing to take advantage of the full power of the cloud, to run these Lambda functions, or to take advantage of these proprietary databases that are way faster, is to pay us a little bit more margin and take advantage of cloud native things. It's like, ah, the old tricks or the new tricks.
+
+Now you're the incumbent and you're finding way to do margin expansion. The mindset a decade ago or almost two decades ago at this point of, oh, we need to create the platform of the future was right, but you needed to do Infrastructure as a Service as a stepping stone to get there. It turns out that Amazon did that and generated their 18% operating margins. Now, here they are in a more of a Platform as a Service world with customer lock in generating 30% margins.
+
+David: It's funny. I'm looking at the list of seven powers here, which are for folks who are new, counter positioning, scale economies, switching costs, network economies, process, power branding, and cornered resource. I'm like, check, check, check, check, check.
+
+Ben: Right? Early on in the take-off phase, counter positioning all over the place.
+
+David: All over the place.
+
+Ben: It was just straight up a business that the incumbents would never have done because it would have cannibalized themselves. Scale economies, this is probably the single greatest scale economies business of all time. I was trying to explore this idea of why now. Why did cloud happen in the late 2000s?
+
+One answer is mobile, because as the computing devices get smaller, it acquires more of the computing to be done in the cloud. That's definitely accelerated this trend. The other one is Amazon was the first company to ever try and build data centers at this scale, because they needed them to run the largest web application, amazon.com, and cloud is not profitable unless you run it at absolute massive scale.
+
+I think other people may have evaluated this business model in theory, but Amazon was the one that was practically in a position to do it and actually realize the scale economies, or I should say, economies of scale that would lead to the scale economy's power.
+
+David: Yup, and it continues to feed itself now. Because Amazon's the biggest, they have the most surface area over which to spread out their capex and infrastructure costs. Thus, they can charge the lowest prices at similar or higher profit margins than their competitors.
+
+Ben: It's amazing. Then you layer on the switching costs. Once people are semi trucking their data into your data centers, there are very real switching costs.
+
+David: Amazon.com took 13 years to offload off of Oracle onto AWS. If that's not switching costs in this industry, I don't know what is.
+
+Ben: Branding is very clear. By being the leader at this point, they're just winning. Even if people want to do the multi-cloud thing, they're basically like, cool. Do Amazon and one of the others. Their market leadership position.
+
+When they say things like, this is the fastest growing Amazon service ever, they're reinforcing this idea of everyone else's and everything we launched, customers love. I do think people are totally willing to pay up at this point, because they just view it as this will cost us less in the long-term than if we make the wrong technology choice and then need to move again.
+
+David: There are also the competitors. At this point, probably with Microsoft and Google, you can feel more safe. But for the longest time, their strategies were all over the place. As a customer, I don't have any trust that I can build on your cloud strategy and it's not going to completely change in the next several years.
+
+Ben: Totally, totally agree.
+
+David: Whereas Amazon has just been consistent.
+
+Ben: Yup. I will say, I think a tailwind for Microsoft has been multi-cloud. This idea that, hey, you don't want vendor lock in, so you really should have some redundancy or spread out your infrastructure across multiple cloud providers. I think enterprises over the last 5–8 years really bought that narrative hook, line, and sinker. It's a reasonable narrative.
+
+I remember, there's a parallel to mobile development here. When I was an iPhone developer, people were telling me, use PhoneGap. I'm like, why? Then I won't get to use any of the cool stuff that iOS lets you do, like the latest APIs and the lowest level hardware features. They're like, yeah, but then you don't need to write an Android app too, so your development costs are lower. I'd be like, well, but I'll make an app no one wants to use. So sure, my costs will be lower, but I won't get to make an actually interesting application.
+
+I think there's some argument here in multi-cloud, where it's like, okay, cool, you're going to use everyone's Infrastructure as a Service. But more far enough in the development of cloud now where these vendors are doing actually interesting Platform as a Service things, so you do want to take advantage of that.
+
+This is the Amazon argument, which they've argued in the last two keynotes that they started showing up magically in 2021 in keynotes, where they're realizing, oh, crap, multi-cloud is making it so that a bunch of the revenue that could be coming to us is going mostly to Microsoft, but a little bit to Google as people diversify this space.
+
+Really, what we want to do is convince people. Actually, you'll save money, because you'll have less complexity to manage with multi-cloud, and you'll get the functionality of all the cool things that we're launching which require all the tight integration. Again, the thing that they were fighting against when they first launched now that they're the big incumbent...
+
+David: They're running the playbook.
+
+Ben: Yeah.
+
+David: Of course, that's how it works.
+
+Ben: The cycle of life.
+
+David: I have a slight sidebar question. We talked about all the other big technology companies that whiffed on cloud. We didn't talk about Apple at all. Did they whiff on this too or is this something that's just like, this is not Apple?
+
+Ben: It's a good question. It's not Apple the way I think of Apple. In fact, I even think iCloud's back end is Azure, or at least for a long time was Azure.
+
+David: It was AWS. There was 16, maybe, New York Times article that came out, where they reported that it was AWS and Apple got very upset about it.
+
+Ben: I bet. Apple basically doesn't serve enterprises. I know they sell laptops and phones to companies in bulk, and they have enterprise relationship managers for companies. But this is not Apple's wheelhouse. That said, Tim Cook's Apple is very different from the Apple that I hold in my head. Tim Cook's Apple is wherever there is durable, high margin revenue. This actually is Tim Cook's wheelhouse. I think if he had the sales force to go after this, I think he would do it.
+
+David: I totally agree. Apple's a consumer technology company. Yeah, maybe they should be running their own iCloud data centers. No, probably not. But developers are so important to Apple. They are so and should be so close and in touch with developers.
+
+Apple has had its own drawbacks of a high margin business model recently in a monopoly with their developer relationships. Mobile, like you said, was the first beachhead for the cloud. Should Apple have been offering something for developers there too? I don't know. It didn't happen, so it doesn't matter.
+
+Ben: They have spun up something where you can build your applications in the cloud now, but I assume It's all just white labeled AWS or Microsoft.
+
+David: Yeah. You never know with Apple, but I think the ship has sailed.
+
+Ben: Yeah. I do know Facebook uses AWS.
+
+David: Interesting.
+
+Ben: Facebook has their own first party data centers that they operate, because they're obviously at such massive scale where that makes sense. But then they also use AWS for some stuff.
+
+David: I'm trying to think about, does AWS have network economy power? I don't think so.
+
+Ben: I don't either.
+
+David: I don't think I care if you use AWS.
+
+Ben: No, it's indirect. It shows up in scale economies, because my stuff gets cheaper because you use it.
+
+David: I think that's the only of the big five of the seven powers, so not including process power and cornered resource, which are esoteric special cases. I think network economies is the only one that AWS doesn't have, but index is off the charts on the other four—counter positioning, scale economies, switching costs, and branding.
+
+Ben: Yup.
+
+David: Okay. We talked a little bit about what would have happened otherwise with Apple. We talked about it as we went along with the other big technology companies. Should we move on to playbook?
+
+Ben: Yeah, let's do it. My first thing to highlight in playbook is a perfect transition from the Seven Powers, because I do think this is actually the best scale economy business of all time. Because the fixed costs are so enormous, you amortize them across a huge customer base, you're rewarded for that massive scale, and for making these ungodly large investments, for the first time, they just invested so much in building out new data centers for AWS.
+
+They actually took Amazon cashflow negative. Their free cash flow is massively negative over the last 12 months because of these continued unbelievably large investments. I think this is a business that would have taken enormous scale to get to profitability at all.
+
+Now that they have it, it's one of these self-fulfilling prophecies, where now that they're massively the market leader, they just have to keep going. There could be a self-inflicted wound or soccer people call it an own goal, but once you have this scale economies power going, I just think it's pretty hard to drop the ball at this point.
+
+David: We've alluded to this for years on Acquired. We've talked about it a lot on this episode. AWS is a utility company. Think about what a utility company is. It's exactly what you described. It's the ultimate scale economy business.
+
+It is something that requires so much capex that society as a whole decides that there should be a centralized provider of this. In most other utility cases, they are regulated by the government about how much profit margin they can take, because otherwise, they could take massively exorbitant profits and extort customers. AWS happens to be an unregulated utility for the Internet, which is maybe the biggest market of all time.
+
+Ben: Well put. Here's the interesting point I want to make on that. There's that common refrain of like, wow, I can't believe Amazon. The ecommerce company became the cloud company. From this perspective, this is exactly the same thing, that the amazon.com retail business was—an ungodly amount of investment in the fulfillment network globally in order to sell stuff to a big group of customers in a massively amortized way. It's just a data center instead of a fulfillment center. They had the right mindset for this business.
+
+David: It's actually a very similar business at scale.
+
+Ben: Yes. Another one that I had is price cuts. This is not something we talked about in history and facts, but I do think it's worth calling out. By 2012, and keep in mind, they had very little competition up to this point, they had already done 23 price reductions across the board for all of their services. By 2013, they had done 40. By 2015, they had done 51. They were proactively, without competitive pressure, reducing prices.
+
+The question is, why? It reminded me of TSMC. Speaking of Hamilton and Seven Powers in our conversation with him and Chenyi, he pointed out that it made sense for TSMC to proactively lower prices for customers in order to win business. What you're essentially doing there is you're giving up current day profit dollars to gain something in the future. That's the obvious part.
+
+The less obvious part in the TSMC case is that since the cost to build out a new chip fab are so large and so lumpy, like $10 billion all at once, it's super advantageous to have that predictability of customer orders. On top of that, there's a finite number of the machines available to manufacture those high-end chips, the ones that ASML makes, so it pays doubly to be able to know for sure you can be one of the few to get those.
+
+AWS has the same thing going on, whereas the ASML machines are much more scarce than the servers that AWS is buying. It's unbelievably helpful for AWS to win market share so they can do their thing and invest more in building out more data centers to keep that thing going. That proactive price drops works not quite as well as it does for TSMC, but they get rewarded for it for sure.
+
+David: Yeah. This was such a good point from Hamilton. The strategy is not just to win business, it's to be able to feel confident about building out ahead of the curve on infrastructure to enable scale economies or further drive scale economies.
+
+Ben: Here's a thing that is unfortunate about AWS relative to the amazon.com business, speaking of building out infrastructure. We talked about float in the amazon.com business. Customer makes an order, customer pays immediately, Amazon gets net 60 or so to pay a supplier. It's the opposite in cloud.
+
+David: Right. This is why they have $100 billion revenue backlog. From this dimension, that's a terrible thing.
+
+Ben: Amazon doesn't get this money up front. Their whole thing to customers is you don't have to pay up front to install servers. There are reserved instances, but there are ways that they try to get a little bit more upfront cash. But they have to go build these whole data centers buying all this real estate, buying those servers or leasing, however they structure them.
+
+They've had to get creative with capital leases on the data centers instead of buying them upfront, so that they can make the data centers effectively pay as you go just like their revenue is pay as you go. They don't get the incredible business model, the negative cash conversion cycle thing that they have in the retail business in AWS. I think that's important to understand. While this business is much higher margin, their effective cost of capital is higher.
+
+David: I guess, Amazon stock price, I don't think dropped that much. But people freaked out this past quarter when Amazon reported the hugely negative cash flow. And this is why. That is also why you shouldn't be that worried about it. But compared to their retail business that has a negative cash cycle, this is a less attractive element of the AWS business model.
+
+Ben: Yup. All right. Another one I had is I was reading from friends of the show, Tegus. They had this great transcript that I was reading from a former AWS business development person on the obsession around multi-cloud. It got me thinking a lot around multi-cloud.
+
+The evolution of what cloud means has completely changed. When cloud first started, it meant use these primitive building blocks in our data center, our being Amazon, and pay as you go. What it has evolved to mean is use our cloud services, which exists now at a higher level of abstraction, and some of which are proprietary. And it doesn't actually have to be in our data center.
+
+The interesting thing about where a multi-cloud and hybrid cloud is going, multi-cloud being Amazon and Microsoft, and hybrid cloud being in your data center and in our data center. In the most recent AWS keynote, they announced a bunch of services which are AWS cloud services that run in your data center, where Amazon employees come and install servers and maintain servers in your data center.
+
+David: It's the old Oracle business model all over again.
+
+Ben: Right? They're like, well, it is great because you get access to Lamda right there in the cloud. You're like, sorry, what? How's it in the cloud? They're like, yeah, because it's AWS Lambda. It's cloud because it's Lambda, but it's in your data center, it's in the cloud. I'm like, what do these words even mean anymore?
+
+It was funny. Reading this transcript really made me start to contemplate, what is cloud even now? Because it also exists in multiple clouds and your data center. It really actually ends up being about the set of proprietary services that you're building your application on rather than where it's running.
+
+David: I guess these days, it means back to the beginning of the episode. It means you're IT infrastructure, you are calling via an API. I think that's what cloud means.
+
+Ben: Yup. Someone's going to finish this episode and be like, well, I thought I knew what the cloud was. Then Ben and David talked for three hours, and now I don't know what it is anymore.
+
+David: Yeah. You know it when you see it.
+
+Ben: Yup. All right, another one, make something people want. This is the YC slogan, but this is exactly what Amazon did. I think Microsoft and Google both wanted to build something that they thought would be an amazing business model and something that was very clever to them as technologists. What Amazon decided to do is figure out what startups wanted to build on, figure out what IT managers wanted to lift and shift to, and just build that.
+
+It's boring, but it comes through in all these keynotes. Every single thing has a customer use case attached to it, a customer use case that drove them to develop it. It's funny how they refuse to do things like, for the longest time, people are like, why aren't you doing anything in blockchain?
+
+Andy Jassy's comment on stage is he's like, we don't really understand the customer use case yet. This was in 2015 or 16. This is six years before the recent buzz around Web3 use cases. I just think they're so focused on that as the very first question you have to ask before investing a single dollar of engineering resources. It's just very impressive.
+
+David: Whereas in that same timeframe, didn't Microsoft have those ads with common blockchain in the cloud, on Microsoft? IBM was doing a corporate blockchain.
+
+Ben: Yeah. They eventually did roll something out that was like, this isn't a blockchain, but we think that accomplishes the same thing that you people who are asking for block chain–based enterprise infrastructure are asking for.
+
+David: Interesting.
+
+Ben: My next one is about asymmetric upside. This is another Bezos letter that I'm going to quote from 2015 where he says, "Given a 10% chance of 100 times payoff, you should make that bet every time, but you're still going to be wrong 9 times out of 10. We all know that if you swing for the fences, you're going to strike out a lot, but you're also going to hit some home runs.
+
+The difference between baseball and business, however, is that a baseball has a truncated outcome distribution. When you swing, no matter how well you connect with the ball, the most runs you can ever get is four. In business, every once in a while, when you step up to the plate, you can score a thousand runs. This long tail distribution of returns is why it's important to be bold. Big winners pay for so many experiments."
+
+David: Market size unconstrained.
+
+Ben: Market size unconstrained.
+
+David: I think that's got to be like a catchphrase on Acquired that we should incorporate.
+
+Ben: Oh, for sure. Let's put it on some merch.
+
+David: Yeah.
+
+Ben: This is the year after he makes the market size unconstrained comment about AWS. I just think it's such a perfect illustration. A lot of people make fun of certain venture capital investments. I'm only interested in the ones people are making fun of, because the whole point of venture capital is seeking these crazy asymmetric longtail returns.
+
+I think Jeff Bezos got that better than most VCs do. He's a phenomenal, high beta capital allocator. In running a company, he was also a very good operational CEO and also an actual genius.
+
+All of these things, there are lots to say about Jeff Bezos. He's absolutely a genius. He's absolutely a brilliant operator. But maybe even more than these things, he just gets capital allocation. That's why I think Amazon is effectively the highest performing venture returns in history. AWS is a venture bet in their portfolio that they own 100% of.
+
+David: Also that quote, what did he say? "In baseball, you have truncated returns"?
+
+Ben: A truncated outcome distribution.
+
+David: Truncated outcome distribution. That's the most Jeff Bezos thing ever.
+
+Ben: Right.
+
+David: I'm sure that Aaron Judge is thinking that, because the place is like, oh, if only I didn't have a truncated outcome distribution. It's so great, which also reminds me sidebar, because we're deep in the episode here. Watching the re:Invent keynote with Reed Hastings, it's been so long since we did our two Netflix series.
+
+Ben: Yeah, we need a part three.
+
+David: When was that? It was years ago, but I think they're still really good. It'd be fun to go back and relisten to them. Reed Hastings is a huge nerd.
+
+Ben: Oh, yeah. He started his career doing a data storage company.
+
+David: Yes. I think of him now as like, oh, Reed Hastings CEO and founder of Netflix. He's a business guy like Bezos. No, he's a true geek.
+
+Ben: He's an engineer, and his engineering project is his company.
+
+David: Yes. I mean that in the highest possible compliment.
+
+Ben: Those people are the people you could listen to talk forever, because they speak with such precision about their strategy, because it's actually thought through to a layer deeper than the platitude and stuff you normally hear.
+
+David: Yup.
+
+Ben: All right, here's my last one. You brought it up earlier in the episode, and I wanted to save it to the end of playbook, because I think it contrasts my takeaway from the last episode.
+
+I use this analogy that Amazon would quickly spin something up, learn from it, and if it wasn't the right thing, kill it and take the learnings to do the next thing. I think I called that brute force maze finding or pathfinding.
+
+AWS is different. They don't really have a Fire Phone or zShops. The biggest reason for this is when you launch a service for enterprise customers, it is really hard to kill it. You burn customer trust. Actually, if you think about what's the bigger risk, burning the trust and losing the customer and all their future revenue, or having to maintain a crappy service that didn't work? You just maintain the service.
+
+David: Right. It's such a good point.
+
+Ben: There are stuff that didn't live up to the full potential, like all the productivity applications they've ever tried, WorkMail...
+
+David: Chime.
+
+Ben: Their IoT offering, Greengrass. I think IoT just didn't pan out the way that everyone wanted it to. They launched something in 2013 called AppStream to run mobile apps in the cloud. The commitment to maintaining these things is just completely different in AWS than in the consumer business. The biggest illustration is SimpleDB.
+
+DynamoDB comes out, it's way more performant. It has a similar job to be done. SimpleDB had all kinds of cost issues for Amazon, but there were customers using it, so they kept it up. I think one of those customers was even Netflix. They just didn't want to deprecate something that customers were using.
+
+David: Yeah. This is why you'd log on to the AWS product page and there are 200 services there. It's such a good point. It's not worth it to them to kill anything.
+
+Ben: Yup. All right, grading?
+
+David: Do we even really need to discuss this?
+
+Ben: We could be like, okay, plus, we're done. Actually, I'm going to stretch this out from just AWS and talk about all of Amazon.
+
+David: Okay, great.
+
+Ben: To evaluate it going forward. What is a market cap?
+
+David: Market cap unconstrained.
+
+Ben: What is value? What is money? What is market cap? Market cap is the sum of all future cash flows discounted to the present day at some discount rate. The long-term, the market is a weighing machine, even if the short-term is a voting machine. Thank you to Warren Buffett.
+
+Amazon has a $1.5 trillion market cap. They had a five-year run where they generated some cash, and then the pandemic hit, and they made a bunch of reinvestments. Now, they're certainly not generating cash. Up until 2015, they broke even. They know how to do one thing really, really, really well, which is reinvest every single dollar into growing.
+
+I'm very curious what this business looks like when they stopp doing that. At some point, will they see when they're actually saturating all their total addressable markets and ease back on growth so that they can generate the maybe hundreds of billions of dollars in profits per year they need to justify this market cap?
+
+If you're worth $1.5 trillion, it does suppose that you're spitting off $100 billion a year or somewhere on that order of cash, which we've never seen them do or come close to doing. Either they need to continue operating the way that they have and continue finding more AWSes, or at some point, they need to realize, oh, there's the edge of the TAM, let's start generating a ton of cash, even though we've never known how to do that before.
+
+David: I think on the last episode, I said, if, but of course, when we had to interview Jeff Bezos, the question I really want to ask him is, is it still day one? Is it day two? Why did you retire? All that stuff.
+
+You raised an interesting point. Amazon, as a company, as a whole, is just sort of architected. Jeff would say, I told you guys all along, is architected to always be a day-one company. It needs to always keep growing.
+
+Ben: Yes. At some point, that bumps up against the GDP of the world. You can't actually do that indefinitely, unless the GDP of the world keeps growing at a faster rate than Amazon's growth, which is definitely not true. Amazon's a much higher growth company than the world's GDP.
+
+At some point, a billion years from now, we're all dead, and the earth gets absorbed by the sun anyway, so don't project out this far. But I am curious, if you held Amazon indefinitely until the company no longer existed, which it will at some point, will you actually realize $1½ trillion of value?
+
+David: Yeah, that's a good point. Maybe this is part of Jeff stepping back and Andy Jassy becoming CEO of the whole company.
+
+Ben: It's to actually figure out how to do that.
+
+David: Yeah. I can imagine that that's a challenge that I'm totally projecting here into Jeff Bezos' mind. It's always a dangerous thing to do, in part, because it's so much more expansive than anybody who would try to project into it. I bet that's not something he's personally very interested in figuring out.
+
+Ben: Right. I think it's a great point. I mean, I think in the 12 months leading up to June of 2020, they generated $27 billion of free cash flow. They know how to generate cash.
+
+I thought they were on the path starting (I think) in 2015–2016 is when they really started actually becoming free cash flow positive and growing that year over a year. That just stopped when the pandemic hit. Maybe we're in some temporary anomaly that they'll go back to the 2019 mode here shortly, or maybe the anomaly was the last five years before Covid.
+
+David: Andy, I think, has said on recent earnings calls, hey, we're going to be moving back towards profitability. We know how to do this. Don't freak out.
+
+Ben: Yeah. That's the exact opposite message of what Jeff Bezos said in the 2020 letter when Covid hit.
+
+David: Didn't he say buckle your seatbelt?
+
+Ben: Yeah. He said, if you're a share owner in Amazon, you may want to take a seat.
+
+David: Great.
+
+Ben: Yup.
+
+David: He's such a cowboy. Like we talked about, he wears the cowboy boots.
+
+Ben: Truly. Anyway, that's a thought experiment exercise. To actually grade it, it was an activity of new market creation that just completely worked and invented one of the biggest markets of all time, and then became the leader in that, and managed to have no competition for the first five years, and then stave off everyone coming after them pretty sickly, permanently. They own just little enough of this market that it's not a regulatory concern. if they owned 80% of cloud, it probably would be worse for them, long-term.
+
+David: Here's the question. Was Amazon strategic in letting Microsoft back in the game?
+
+Ben: No, I don't think so. I think that's too difficult of a future to see to cannibalize current day.
+
+David: I'm sure they're worried about antitrust and regulation.
+
+Ben: Yeah. It's the same way that Google looks at Bing, I'm sure, which is like, thank God that exists.
+
+David: All right, what's your grade?
+
+Ben: It's an A+, but grading is a silly exercise. I almost want to cut it from these types of episodes. I do think the interesting question is that I do want to continue to ponder for a while is, if you held Amazon ad infinitum and you own 100% of the company, would you ever be profitable on your business to buy it for $1½ trillion?
+
+David: It's the Warren Buffett, Ben Graham, a stock is a piece of a business. If you were able to buy the whole company of amazon.com for $1.5 trillion, is that a good use of capital?
+
+Ben: Yeah, it's a great question.
+
+David: I think it probably is.
+
+Ben: That's where I thought you're going.
+
+David: I'm a little biased here, but come on. Yeah, A+ for me. Get out of here. This division of this company has $100 billion of contracted revenue. A+, we're done.
+
+Ben: David thinks the stock's cheap.
+
+David: Yeah. Carveouts, what do you got?
+
+Ben: Yes, carveouts. Mine is a very enjoyable show that I watch on Disney+ is a Marvel show called Moon Knight. I would say it's not the best show that I've seen on Disney+, but it is the best acting that I have seen in any of the Marvel Cinematic Universe shows.
+
+David: Ah, nice.
+
+Ben: I still think Loki is probably the best written, and what was the one with the Scarlet Witch?
+
+David: Oh, Wanda Vision.
+
+Ben: Wanda Vision, also very good.
+
+David: That was good.
+
+Ben: Fantastic writing. I would say this is almost to those calibers, but definitely a notch below. Oscar Isaac playing the lead role is some of the best acting I've seen in any TV or movie ever. The writing is entertaining enough where you can just sit there and enjoy his performance in a way that feels Broadway-level theatrical. I did not appreciate him as an actor until this.
+
+David: Wait, is he...
+
+Ben: Poe Dameron.
+
+David: Yeah, that's what I was going to say. I was like, he's done other Disney Star Wars stuff.
+
+Ben: He's also done some other crazy roles. I think he's in Ex Machina.
+
+David: Ah. Have you watched any of the new Star Wars stuff?
+
+Ben: I just finished Obi Wan Kenobi and was deeply unenthused.
+
+David: Ah, bummer.
+
+Ben: I enjoyed it as a Star Wars fan. Just more Star Wars is awesome. Getting to see Obi Wan in different age is awesome, but I think they took away from the gravitas of his character, I guess. Okay, spoiler alert. Please stop this if you've not seen Obi Wan Kenobi yet. It's going to be spoilery, where I'm not going to tell you the end of the series, but I'm going to tell you what the series is about.
+
+It's about the period of time between when he arrives on Tatooine at the end of episode three, but before A New Hope. In A New Hope, there's all this great gravitas given this idea that like, wow, he came here and he's been living in a cave, marooned and away from all this stuff forever since we last saw him.
+
+David: Yeah, he's the old hermit Ben, right?
+
+Ben: Right. He brings Luke to Tatooine and then that's his responsibility. This is a whole galactic adventure that takes place...
+
+David: He's like Han Solo.
+
+Ben: Where he leaves Tatooine and comes back—I won't spoil things too much—with very, very major characters, where Obi Wan has interactions with them and big material fights that totally would change the character dynamic and the level of import put on his character on Tatooine in a way where it feels like it cheapened the canon to date by this existing.
+
+David: I have not watched any of the new stuff, but I feel like Lucasfilm just needs a new start. It doesn't feel like it's going in a good direction.
+
+Ben: The IP also doesn't really lend itself well to serials. I don't know. Maybe that's not true. I did really like the Mandalorian. I liked when Boba Fett tried to become the Mandalorian by being like, ooh, Boba Fett is not that good. Let's just make it the Mandalorian again.
+
+David: That could be a deficit for another day.
+
+Ben: Moon Knight, Oscar Isaac, go watch it.
+
+David: Awesome. My carveout is one that if you are listening to this now, I'm pretty sure you're gonna love this. I have a high degree of confidence in the affinity overlap between people listening right now and the carve out that I'm about to say, which is Lex Fridman's 5½-hour interview with John Carmack. It's so good.
+
+Ben: It's awesome.
+
+David: Carmack is just a legend.
+
+Ben: I'm an hour in and it's great.
+
+David: It's so, so good. Not knowing that that was coming, having just recently listened to the audiobook of Masters of Doom.
+
+Ben: It was made for you. It's perfect.
+
+David: I'm just in heaven. Reading Masters of Doom and now listening to this episode, this interview with Carmack makes me actually want to go either talk to or find out more from John Romero, how he thinks about things, and his history of id.
+
+Carmack actually says In the beginning of the interview with Lex, John Romero is better at talking about the history of id and being the keeper of that than I am. They have a nice moment. I'm halfway through the interview with Lex where he talks about the relationship with Romero, became super strained, and then blew up. When id blew up, I think they've reconciled and it's nice.
+
+Anyway, the whole thing, Carmack is just one of those people that operates on a different level than most of humanity, at least in the technical realm. It's very interesting that he did VR, he was at Oculus, and part of Facebook and Meta. The thing that he's working on now is AI. In particular, artificial general intelligence. That's a great interview.
+
+Ben: Sweet. Can't wait to finish it. All right, listeners. Thank you so much to Fundrise, Pilot, and NZS Capital. Links for all three of those are available in the show notes, as well as a link to register for our NZS Talkback. The first one was super fun and can't wait to do a second one with them on this white paper as well.
+
+After you finish this episode, come discuss it with all of us, 13,000 strong now, in the Acquired Slack community at acquire.fm/slack. Pick yourself up a sweet shirt, tank, hoodie, crewneck, or onesie at acquired.fm/store.
+
+You can totally become an acquired LP and get early access to our LP episodes acquired.fm/lp or just get them when they're public. Search the podcast player of your choice for acquired LP Show.
+
+Our latest episode will be live there soon with Nat Manning of Kindergarten Venture's fame and of Kettle as well. Honestly, reinsurance is fascinating, and I never would have thought I would have said that.
+
+David: As is enterprise IT infrastructure.
+
+Ben: Amen. All right, listeners, have a good one. See you next time.
+
+David: We'll see you next time.

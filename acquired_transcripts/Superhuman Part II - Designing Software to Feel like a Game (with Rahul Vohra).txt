@@ -1,0 +1,329 @@
+Ben: Welcome to this special episode of Acquired, the podcast about great technology companies, and the stories and playbooks behind them. I'm Ben Gilbert, and I'm the co-founder of Pioneer Square Labs, a startup studio and venture capital firm in Seattle.
+
+David: And I'm David Rosenthal. I am an angel investor and independent advisor to startups based in San Francisco.
+
+Ben: And we are your hosts. Today, we have superstar repeat guest, Rahul Vohra. Welcome, Rahul.
+
+Rahul: Awesome. Thank you for having me back.
+
+Ben: Rahul had probably—I don't know if it's exactly the most listened-to episode of all time, but it was certainly a standout episode when we released it. David, when was that? Last June?
+
+David: Last June.
+
+Ben: 2019.
+
+David: It was the finale of season 5, another lifetime ago
+
+Ben: Truly. The last time Rahul was on our show, many of you knew him for being the founder of the innovative fast email client, Superhuman. His frameworks for finding product-market fit and how they did it at Superhuman have since become quite famous.
+
+This year, many of you may have heard Rahul speaking on Patrick’s show or the a16z Summit and elsewhere about a new concept, how they think at Superhuman about designing software like it is a game.
+
+Today, in true Acquired fashion, we are going to dive into the actual stories behind these concepts and how Rahul and the team at Superhuman have put them into practice. As the product has matured from that initial product-market fit that we talked about in the last episode to a professional or even enterprise-class suite of tools where they've rolled out some calendar functionality as well recently.
+
+For you LPs, we have something special today. When we finish up here on the main show, we are going to do an LP episode with Rahul, a masterclass on fundraising. Which for anyone who doesn't know, not only has Rahul done this like a total pro with Superhuman—being thoughtful about the process and employing every tactic in the book for building a great company and capitalizing it the best way he sees fit. But also with his previous companies with Rapportive.
+
+He actually also now has two funds of his own. The most recent being an angel list rolling fund and we will talk with him about that on the LP show, which you can get to by going to acquired.fm/lp or clicking the link in the show notes.
+
+David: I can't wait for that.
+
+Ben: Before we dive in, let's chat with this special episode sponsor, Teamistry, a new podcast from Atlassian.
+
+I'm here with Pedro Mendes, the writer and producer of the show, and John Ville, Atlassian’s editorial director. Hey guys.
+
+Pedro: Hey, how are you doing?
+
+John: Hey there, Ben.
+
+Ben: John, we've been talking about Teamistry, a podcast by Atlassian on our last few special episodes of the show. Now, we should bring this full circle. Acquired actually covered Atlassian as a company way back in season 1 of our show. Acquired listeners are keen observers of business strategy. Can you share with us why you launched a podcast, and how you narrowed on the concept and decided to greenlight season 2?
+
+John: Atlassian podcasting, we haven't really dabbled in it. We had never experimented with it. This was a great opportunity to engage with a passionate audience. We know that with podcasts, there's a great amount of engagement. It's the engagement that you never get with regular content such as blog posts, videos—very quickly folks leave. But the audience is trusting you with their time and they put time into it. They stay engaged through the course of 20, 25 minutes of a typical podcast run, and that's unheard of and something that we really wanted to get in with.
+
+Also, the audience is very key to Atlassian’s strategy. We want to talk to those decision-makers, those leaders at companies that really resonate with us. We also touched on storytelling. This is such a fantastic medium for great, rich, deep storytelling, and you can take a long view of it. You can take it to a 30-minute documentary-style approach to storytelling, which is great for somebody in content like me. It was new. It was the engagement. It was a fantastic opportunity.
+
+In terms of getting it greenlit, our leadership and marketing leadership took a risk on us. It took some convincing. We have a great host in Gabriela Cowperthwaite. That also tipped our hand all the way. It gave us the opportunity to tell stories about teamwork and leadership in a different medium, something that we never tried.
+
+It was a combination of all those things and it's been fantastic. We're rolling into season 2 and that is very reassuring. We've got the backing of our audience. The other thing that made us confident that season 2 should go ahead and be successful was the ratings on season 1. That's something that really impresses me. It's not just the download numbers, it's the feedback from real listeners. It's the 4 or 5 stars you get on all the other platforms.
+
+But also the comments saying that folks have learned something important and interesting from an episode they've listened to. That's something that we're going to keep going and keep going with season 2 as well.
+
+Ben: That's awesome. I appreciate the insight, and I can definitely second that on Gabriela as a host. She's just spectacular. We all know Atlassian as this company that facilitates amazing teamwork, and on your show, you, by no means hit us over the head with that. You just tell an amazing story of teamwork and then trust that the audience is smart to find their way to great Atlassian products. I just think the whole strategy is really well executed. Thanks so much for joining us.
+
+Listeners, you can click the link in the show notes below to listen to the podcast, and our thanks to Teamistry for their support.
+
+All right, David, let's dive into this episode with Rahul.
+
+David: So great to have you back. We were joking when we were preparing a few minutes before this that you are now our gold standard for guests that we tell all our other guests in prep, hey, go listen to our episode with Rahul. He is the most thoughtfully prepared guest ever. We're so excited to have you back and now adapt to your playbook into Acquired itself.
+
+Rahul: Oh, gosh. I hope I live up to my own standard.
+
+David: I'm sure you will. It's such a cool topic to be talking about. We've gone deep on gaming history in and of its own so often here on Acquired. I thought a good jumping-off point—before we get into your specific principles that you use at Superhuman—is let's talk about what is a game? It sounds like a simple question, sometimes hard to define. There are no fewer than eight or nine definitions on Wikipedia. From your perspective, how do you think about it?
+
+Rahul: I like to use a definition that I came across in a book that is, by the way, the best on the topic—The Art of Game Design by Jesse Schell. You can get really complicated, you can get really academic, even abstract about the definition of a game. But in my mind, Jesse puts it best—a game is simply something that you play. This seems hard to argue with. There are all kinds of other definitions out there, but I always come back to this one. A game is something that you play.
+
+Ben: Wait, so let me push on that a little bit. Is the guitar a game, if I'm playing guitar, or is that a different use of the wordplay?
+
+Rahul: That's a somewhat different use of the wordplay. You don't play guitar with somebody else. It doesn't engage you in the way that a game engages you. Playing a musical instrument is a different form of play, but it's interesting etymology. As we'll dive into the course of the episode, we'll see that it has a lot of the same properties of a game.
+
+The way that I like to chew on this topic is through semantics. For example, a game versus a toy. This is a common question in the academic literature on gaming. We also play with toys. Does that mean that toys are the same as games? I would say no. In fact, they are different because we use a different language to describe them.
+
+A game is something you play, but a toy is something you play with. You could then go deeper and say, well, we play with our friends. Does that make them toys? Obviously, the answer is no. A toy is an object you play with. It's not a human being that you play with. This introspective interrogation can lead you to a really good definition, but you can go deeper still.
+
+For example, I'm fiddling with a piece of paper right now. I'm rolling it up and I'm unrolling it in order to keep my nervousness down. You could say I'm playing with it, but it's not a very fun toy. You could also then observe that some toys are more fun than others. Then you start to get to a definition like a game is something you play. A toy is an object you play with, but a good toy is an object that is fun to play with.
+
+Then you start to get to the heart of the matter, which is, well, what is fun anyway? Again, there's been a ton of research into what fun actually is. Some people would say fun is just pleasure. To them, I would say, well, can you experience fun but not pleasure? And the answer seems, yup, probably not. It would be really hard to experience fun, but not pleasure. I can't think of an example where that's the case. But the contrapositive is not true, there are plenty of pleasant experiences.
+
+Imagine, for example, the relaxing head massage that few people would describe as fun. It turns out that pleasure alone misses a certain, something special. The thing that it misses is a surprise. It turns out that fun needs surprise. In fact, our brain is hardwired in a very neurological sense to enjoy the surprise. We end up with this stack of definitions. A game is something you play. A good toy is an object that is fun to play with, and fun is a pleasant surprise.
+
+David: Perfect. That is exactly what our next question was going to be, which is in some ways the crux of the matter here, which is what is a good game? Of course, the classic definition of this is the previous Acquired guest, Nolan Bushnell from Atari—Bushnell's Law, that a good game is something that is easy to learn, but difficult to master. How does that fit into your stack?
+
+Rahul: There's a phrase for this. That is necessary, but not sufficient. There are plenty of other things that are required in order to make a good game. You could go so far as to list hundreds of attributes. There isn't a minimal subset, but it does involve more than those two factors. There are seven principles that we think of when it comes to what makes a good game at Superhuman. Those seven principles, we think of them across roughly five different factors—things like goals, emotions, controls, toys, and flow.
+
+Bushnell's Law talks a bit about goals and it talks a little bit about a related concept of mastery. But it doesn't talk about how you feel when you're going through a game. It doesn't talk about the nature of interaction with a game, whether it's truly a video game or it's a board game, or it's a piece of software that it's designed to feel like a game.
+
+It doesn't talk about the childlike sensation of wonder that you experience when you're playing with a toy. And it doesn't talk about the psychological phenomenon of flow, which I personally think is one of the most important factors of what makes for a good game. You do have to draw upon the art and science of all kinds of fields—whether it's psychology, mathematics, storytelling, interaction design—when it comes to making a great game.
+
+David: You're super well-read on this front, but you have some serious credit, too, which you don't often talk about. You were a game designer before Superhuman and Rapportive. You were specifically a game designer at RuneScape, the legendary OG MMO. Is that where you honed these principles?
+
+Rahul: I think that was the first time I put it into professional practice, but I've been obsessed with game design and the art of making games for my entire life. In fact, the very reason I learned how to code—and I started when I was about 8 years old—was just so that I could make games. I was finishing up a school day, one day. Both my parents were doctors and so they worked fairly late. I did what any self-respecting nerd would do, which is hang out in the school library.
+
+Once I'd finished reading all of the fiction books, I started on the non-fiction books and pretty quickly found the coding section because the predominant computer at the time in the United Kingdom was the BBC Microcomputer. Fortunately, the word started with B. Otherwise, my life would have gone down in a completely different direction.
+
+I just read these books and I taught myself how to code. They were aimed for children. These books were written for kids. All of the motivating examples were designing your own games, whether it was an adventure game or some action game. That brought me into this world. By the time I was about 18 years old—I don't know if folks still believe in Malcolm Gladwell's 10,000 hours, but I'd spent 10,000 hours programming mostly around creating my own games. Then I went to the University of Cambridge to study computer science.
+
+Once I left, that was when I joined Jagex, which some people will remember as the creator of RuneScape, which at the time was the world's largest online free role-playing game. And that was where I cut my teeth professionally as a game designer. I took all the things I'd learned both as a passionate fan and player of video games, as well as a hobbyist game programmer to creating quests and content for the players of RuneScape. I can tell you, it was one of the most fun jobs I've ever had.
+
+Ben: That was a crazy concept at the time except if I'm remembering right, this was well before most free-to-play. This idea of a game that was free was wild, and wasn't it also browser-based? It was flashed in the browser and you didn't need to download some big, heavy thing to run on your PC?
+
+Rahul: It was, in fact, browser-based and the clue is in the name. It was not, in fact, flash. Few people know this, but Jagex stands for—do you want to give it a go David?
+
+David: Java Game Experts, right?
+
+Rahul: That was the colloquial interpretation. The very original technical definition was Java Graphical Extensions. Andrew Gower—who is resolutely a genius, he was an alumnus of the Computer Science Laboratory where I studied, many years ahead of me—had created an entire graphical game engine that was capable of doing what now would look like rudimentary 3D graphics—imagine the PS One era—but it ran in the browser. It ran in every browser of every library of every school all across the world, and that was all it had to do to capture that user base that it did.
+
+He was incredible. I remember—to nerd out for just a second, for anyone who's programmed Java, there is, of course, an object model. You don't have to define what an object is. It comes with it and everything inherits from this object-oriented scheme. Andrew said, no, this is too slow. Because we're trying to do real-time graphics in the browser, I'm going to create my own object model in Java. He took Java the language but he completely threw away Java the framework, made his own, and that was the thing upon which RuneScape was built. It was a real technical model at the time.
+
+Ben: Wow. Was that technically a Java applet then?
+
+Rahul: Ooh, gosh. Now you're questioning my own terminology. Yes, it was at the time.
+
+Ben: That's cool. This is a bit of a personal question for you, but you talked about the 10,000 hours of programming games and earlier you mentioned flow. It's funny, I was just having this conversation with a friend recently about flow. I don't know what the technical definition is, but the way that I always think about it is when you're able to lose yourself. When hours can go by, you come to and you don't realize that you've been doing the thing that you've been doing for hours, and you have lost yourself. This can happen by playing games. I'm curious for you, does this happen to you? Do you enter a flow state when you're programming?
+
+Rahul: I do. Unfortunately, I have not been able to program recently that much at all. Our engineers probably wouldn't want me getting that close to the code-base these days. One of the things that I always ask people to do—if they're getting interested in this idea of game design, if they're trying to wrap their head around flow—is this notion of inspiration. What experience in your life would you most want to share with others? It's probably very unique, very few other people will have had access to it.
+
+For me, it was one of those flow experiences. As you know, I sold my last company Rapportive to LinkedIn, and being at LinkedIn wasn't easy. Being acquired (so to speak) is rather hard. As part of my retail therapy for myself, I acquired a rather special car. It was a Lamborghini Gallardo Superleggera 570 horsepower, 0-60 in less than three seconds. Although without the sterile way that a Tesla Roadster would get you there, this is the most angry, loud way that only a naturally aspirated V10 would get you there.
+
+David: You got to hang out with a Jan from WhatsApp. He's all about the naturally aspirated Supercars, Porsche, specifically.
+
+Rahul: He is a Superhuman customer. I will drop him a line. You can imagine this car—it has gigantic air, and takes out the front, a race swing at the back. Everything that could be made out of carbon was made out of carbon. I used to race this car. These weren't sensible races on tracks. This was madness in mountains and canyons.
+
+There is a certain speed where something magical happens. A speed where you stop thinking in words, because words are too slow because by the time you've had that thought, you're already around the corner and through the next valley. This is the speed where you and the car become one. The car is you. You are the car. It's a human and machine in full synchrony and speed where every sense is at capacity because you see the landscape rip by. You hear the scream of the engine. You taste burning rubber. You can feel every imperfection.
+
+Now, this is the most extreme flow I have ever experienced. This is the experience that I most want to share with others. Of course, I can't recreate that sensation, but it was an underlying inspiration for why we built the fastest email experience in the world. It's why the unifying theme for everything that Superhuman does is speed. It's why we try so hard to engineer for flow. It was my first real visceral experience of it. Since then, I've gone deep into the academia behind it.
+
+You mentioned how our subjective experience of time changes. It can all happen in both ways. It can stretch out forever or it can flash by in an instant, both asymptomatic of experiencing flow. And there are many other things that contribute to what flow is as well.
+
+Ben: First of all, I have to tell you, if they have a remake for Ford vs. Ferrari and they're looking for a new opener, they can just take your excerpt there and use that directly as the voiceover. I started thinking about being in that car the way you're describing it.
+
+I think it's a great transition to some of these principles of game design and how you are embodying them in Superhuman. I don't want to be too dramatic here but the closest I have ever come to being in flow while doing email has certainly been with Superhuman.
+
+Props to you and the team for what you just mentioned, engineering for flow. I may have mixed it up a little bit, but I initially brought up that programming point because I absolutely found flow when I used to do a lot of programming. It is really rare to be able to find a non-engineering productivity app where you can feel that sense of flying over the keyboard and losing yourself in the creative work.
+
+Rahul: There is, in fact, a reason for this. This was my recruiting brand that I used to get my co-founder and CTO Conrad Irwin, who is by the way the first employee that we hired at Rapportive to join me at Superhuman.
+
+I still vividly remember this, for those of us who have lived in or visited San Francisco, this took place at the Local Kitchen, which is a little pizzeria in South of Market. We sat down and we ordered our pizza. I said to Conrad, has it ever occurred to you how unfair it is that we as programmers have the best tools in the world?
+
+I could see the gears turning in his mind as he's munching this pizza, increasingly slowly until his mouth grinds to a halt and he's like, yeah. I said, well, there's a reason for this. Because we as programmers are the only profession in the world that gets to create our own software. How unfair is that? No wonder we have the best software. No wonder our fingers dance across the keyboard like we're playing a piano. We wrote it ourselves, of course, it's going to feel like an instrument.
+
+How about we do that, but for everybody else? Let's take the things that we take for granted—hundred milliseconds response times, instantaneous search, command palette, keyboard shortcuts, beautiful layouts, typography as a first-class citizen, design that reports separately and is a thing unto itself. Let's take all of these things and bring them to everybody.
+
+That was when he said, yes, okay, I'll join you on this crazy idea of Superhuman.
+
+David: It's interesting talking about the engineering behind games and specifically Superhuman is a game. I hadn't thought about this but we're talking about RuneScape and rewriting large parts of Java just to get it to do what you wanted, to push the bleeding edge of what the tools could do so that you could have this game experience.
+
+So many games do this, this is what Epic does, this is Fortnite. So much of the bleeding edge of tech gets pushed forward by gaming. You guys did the same thing with the Superhuman in the early days, right? You rewrote large parts of Chrome's scripting engines, all in pursuit of this speed concept.
+
+Rahul: We did. I can give two examples. One will be in pursuit of speed, the other was more in pursuit of beauty for the sake of beauty. We on the speed side had to figure out how to download, store, and index pretty much all of your email in the browser itself. Now, you can use Superhuman in the browser, you can use Superhuman as a native app.
+
+Rather shockingly, the browser experience is no slower than any other experience. It is in fact faster than any native email experience.
+
+David: Did you use Electron for the native app?
+
+Rahul: We do use Electron. Electron by itself doesn't solve the problem. Electron by itself doesn't give you an easy way to do a full text search locally. If you're trying to get faster than Google, one of the biggest companies of all time that has spent untold amounts of money to ensure that you are never more than two miles away from the server on their CDM, how do you do it?
+
+If you're in the browser, a server on Amazon (let me tell you) isn't going to cost it. We had to figure out how to work our magic. No joke, this took nearly two years of time to figure out how to download, store, and index the email in the browser such that when you search for an email, yes, it is searching remotely on your Gmail server, but it is also simultaneously searching in the browser and merging these search results in real time.
+
+Ben: Oh, I always wondered.
+
+Rahul: That's how it goes so fast. That was an example of where we just had these insane speed requirements that required us to build an entirely new stack of technology.
+
+Ben: For any of us that are formally from Outlook land, the key concept that you just mentioned there is merging together. I've been a Superhuman user for years now, I did not realize you're doing that. In an Outlook land, I would search, local search would be relatively fast. And then there would be another button I could click that's continue searching on the server or something like that.
+
+I always felt like I am thrusting to this completely different new experience that, okay, cool, I guess while that’s searching now, I'll pop open my phone and do some task on there or switch open another application. I never realized you were doing both concurrently and stitching them together.
+
+Rahul: It does turn out to be this ridiculously hard problem. It's actually a computer science hard problem, how do you merge two infinite lists on the screen without having things like pop-in? What if one email actually only exists in one of those lists, how do you stage them? It gets real gnarly real fast.
+
+The other example, David, that you may have been referring to is actually to do a typography and fonts. I'm a big typography nerd. I’ll avoid using too much jargon as I go into this example, but I really wanted everything to line up with the vertical rhythm on the page. This is really hard to do if you're just doing basic web programming. It is in fact impossible—if you have different fonts, you have graphical elements, things of different sizes—to have everything lined up on an eight pixel or a six pixel grid. But we figured out how to do it.
+
+We dove into the Chrome source code, reverse-engineered the font layout engine, and then built our own layout framework actually entirely in CSS because we wanted this thing to be super fast as well.
+
+Now, whenever we want to lay something out, we have a little tool but in just the font, it spits out all the metrics. This is the height of the ascender, this is the x-height, this is the cap height, this is the length of the descender.
+
+Ben: You really are a typography nerd.
+
+Rahul: It generates the CSS to automatically lay this stuff out that it looks beautiful. A lot of the reason why the superhuman.com website and the Superhuman app looks the way it does is, absolutely everything is on a sub-pixel grid to perfection because of the CSS framework.
+
+For Superhuman customers who are listening—and maybe they're curious to see what I'm going about—if they hit Command-K baseline, I believe this is an internal tool but I think if it is exposed to users, it will actually turn on a sub-pixel grid. You can see everything laid out on that frame.
+
+Ben: Can confirm it is in production.
+
+Rahul: There we go.
+
+David: That's so awesome. We're great Easter eggs to have in the product.
+
+Ben: Speaking of Easter eggs, I'm going to take this opportunity to transition us, David. I'm working on my transitions here.
+
+David: You're becoming a pro.
+
+Ben: Rahul, I noticed one thing that you didn't do to try and give me flow is build a reward system where I'm earning points or badges as I'm working through my email and having a gamified experience. What is your framework to think about when that works if that's a game? Is that not a game? Why is that craze less popular than it was in years passed?
+
+Rahul: What we're really talking about here is gamification. What we practice at Superhuman and where my passion lies is game design. Game design is not gamification. It is not simply taking your product and adding points, levels, trophies, or badges. You kind of alluded to this, but it was a big deal 10 years ago. It's really faded away.
+
+The reason is it didn't work. To understand why, we really have to understand human motivation and the difference between intrinsic motivation and extrinsic motivation.
+
+Ben: Makes all sense. Without jumping in too many conclusions here, I'm just going to assume that me getting through my inbox on its own is an intrinsic motivation. Whereas you would be introducing extrinsic motivators if you introduce some badging system or something and that, I would guess is just not as sustainable, enduring, and motivating.
+
+Rahul: Exactly. Perhaps the counterintuitive conclusion is that extrinsic motivation can actually undermine our intrinsic motivation. We can be less infused to do a thing once we're being extrinsically motivated. This is why sometimes, if you take someone who has a hobby and you pay them to do it, they start to lose interest in the hobby.
+
+There was this fascinating study that we should go into because it really outlines this in the clearest way possible back in the 1970s. Researchers from Stanford, they recruited children. These were young kids. They were aged about 3–4 years old.
+
+The thing that made all of these kids in common is that they were generally interested in drawing. Some of these kids were told they would get a reward—a certificate with a gold seal and a ribbon. Some of these kids were not told about any reward, and so they did not expect one or even know of one.
+
+The researchers then invited all of these children into a separate room to draw for six minutes. Afterwards, they would either get the reward or not, depending on which group they were in. Over the next few days, the children were observed to see how much they would continue to draw by themselves.
+
+Now here's the thing, the children with no reward spent 17% of their time drawing, but the children who expected a reward, the ones who have received compensation (so to speak) only spent 8% of their time drawing.
+
+In other words, the extrinsic reward had literally halved their motivation. You can back out of this into intrinsic motivation and extrinsic motivation and the definitions are as follows. With intrinsic motivation, we do things because they are inherently interesting and satisfying. With extrinsic motivation, we do things to earn rewards and achieve external goals. That's the problem with rewards, they massively undermine intrinsic motivation. That's why gamification does not work, and when gamification does work, it is because the underlying experience was already a game.
+
+To go back to RuneScape, when getting that next piece of loot in Diablo fashion or leveling up in World of Warcraft fashion feels good, it's because you're actually playing a pretty decent game.
+
+In Superhuman, when you hit inbox zero and you feel that emotion of that joyous imagery and that feels like gamification and it works. It is because Superhuman itself was designed like a game, not because there was a game mechanic laid on top.
+
+Ben: If I could extrapolate this for founders out there who are listening, product designers, or product managers who want to work this into their own product, is it basically find the opportunities where your product naturally delights someone or naturally makes someone feel a sense of accomplishment and find the light-touch ways to just amplify that?
+
+Rahul: Yes, and zooming out if what we're trying to do is tie this up into a message for product designers or product managers. I would say this, as an industry—and I was taught this way as well—we were brought up to obsess over what users want or over what users need. But if you think about a game, no one needs a game. There are no requirements other than be fun.
+
+I would advise, as an industry, to pull back from this obsession with user wants and user needs and instead to design for fun. What you want your players to feel, what is the emotional path for them to get there, and how does your software—your business product, if that's what you're building—take them along the path?
+
+That's why one of the key principles that we think about at Superhuman isn't just goals, it isn't just toys, it isn't just flow, but it's also emotions. How can you design for the emotions that you want your users to feel?
+
+This is another area where I've gone really deep. There are literally countless emotions. We get really nuanced at Superhuman. Is it inspiration, triumph, longing, peacefulness, tranquility, or sentimentality? There are so many different things people could feel. How are you designing a journey so that people actually feel them?
+
+David: Two quick things, one, it feels like it's also an omen of disrespecting your users too and their intelligence, right? The gamification style feels like a low respect for your users. I'm going to give you some flashy star doing this thing, good job. It's like you're treating them like those elementary school kids.
+
+Whereas, give them awesome tools and then trust that they know their goals. If their goals line up with your goals, they're going to use them well. Just let them discover. It’s like trusting them, right?
+
+Rahul: A hundred percent. I don't mean that we shouldn't use techniques like points, levels, trophies, or badges. These are very powerful techniques, but they just can't be the only thing. They are a good addition to an already well-designed game.
+
+We're in fact building this right now at Superhuman. We are working on a streaks feature that should be out either next week or the week after. Just a few final polishing touches to put on it.
+
+This is going to celebrate whenever you hit inbox zero. In every week in which you hit inbox zero, that streak is going to count up. There'll be a little achievements area where you can go to see your all-time streak and some other interesting statistics like the achievements dialogue in World of Warcraft, if anyone's ever played that. How many things you've ever archived, and how many emails you've ever sent in total.
+
+David: Cool.
+
+Rahul: Yeah, your initial reaction is cool because now you're curious, you want to see. It's not the point of Superhuman, but it's there and it adds this rich layer of depth and texture that will make the experience even more compelling and stoke even more curiosity.
+
+Ben: Listeners, David and I didn't know this going in, but now that we've been told this information, we have to ask more questions about it. How did you decide that that was a good idea and not something that would do what the study did that you mentioned and make me less motivated to do the intrinsic stuff in Superhuman?
+
+Rahul: We tested it. Having just spent the last two minutes saying Silicon Valley does it wrong, let me share what Silicon Valley does it right. We tested it in a good old-fashioned product management style. We didn't write any feature code. What we did was we wrote a bunch of SQL scripts. We then analyzed the metrics and then created a little email feature. What does that mean?
+
+We took a sample of the user base, we emailed them these insights for their own behavior when it comes to using Superhuman, and then we analyzed the results that came back in. We did about three rounds of this—switching up the stats that we would email, analyzing the sentiments, really digging in deep with the customers as I described on our previous show.
+
+As long-time listeners will know, I'm a huge advocate of interviewing thousands of people and really understanding their feelings. We did all of that, the traditional product management stuff with this feature.
+
+What we learned is that some stats aren't particularly compelling and some stats are highly compelling. The streak stat in particular is one that people love to know about, so we gained conviction that if we built this in the right way and if it wasn't too front and center. But if it was a celebratory moment for the people who achieve it, it wouldn't actually undermine the intrinsic motivation. It would in fact reinforce it.
+
+The devil (as they say) is in the details, but we got to the level of conviction that we'd be able to do this without undermining any intrinsic motivation.
+
+Ben: Okay Acquired listeners, we have a new sponsor to tell you about today on this special, lemon.io. Now, what is lemon.io? It is the perfect place for startups to hire vetted remote developers from Eastern Europe.
+
+In our era of working remote, I can't think of a time where this is more relevant and more common on basically every team I worked with, to have folks in other countries contributing to building the product. Lemon.io for folks who have dealt with different ways to outsource developments before. You could check out their website. Go to lemon.io/acquired and I'll tell you about a little deal here at the end.
+
+You can almost tell by the design of their website, it's just a really, really fun brand and cool company. The best time to use lemon.io is when you're a technical co-founder, just starting, and need to delegate some of the work. You may need to do a specific technology or use a specific code base but you don't have that skill on your team and you don't want to just hire someone for a six-week project. You may also be growing and need to add more developers to be able to just run faster.
+
+With lemon.io, it's much cheaper to hire engineers than with other outsourcing options. The quality is also excellent. They rigorously test and interview every developer, eliminating the risk of a failed project. They have a zero-risk replacement guarantee. They match you with the best candidate within 24 hours so it's a super quick, painless process.
+
+Of course, my favorite thing about Lemon and any of the other sponsors on this show, they are of the Acquired community. We had someone reach out because they are listeners of the show. They're just like you and they like hearing about company stories.
+
+Here is the deal. If you want a 15% discount for the first 6 weeks of work for all Acquired listeners, you can go to lemon.io/acquired to claim the offer. Highly recommended, lemon.io. Back to the show.
+
+David: What is the story of the inbox zero image? I would imagine some of the motivation behind that feature is the same. How did you guys come up with the idea and put it in the product?
+
+Rahul: This comes back to our emotion pillar of game design and the principle of designing for nuanced emotions. Inbox zero, we fairly quickly learned—I would say it took us about nine months to reach this realization—is one of the most emotionally resonant moments in someone's interaction with their inbox.
+
+This is actually a good example of where my intuition was wrong. I did not know this as a founder going in. As a founder starting the company, I so rarely hit inbox zero. I will see thousands of emails every single day. In any given minute, I'm often receiving five or six emails. Before we'd invented split inbox which took years to get to, it was an impossibility for me to actually hit inbox zero, so I simply didn't know.
+
+But in interacting with our earliest customers, we quickly realized that inbox zero was one of the most emotionally resonant moments, and it was a point that we could reinforce with emotional design. If you're designing for emotion, you have to figure out what kind of emotions you're going for.
+
+There are many models of human emotion. The most famous is Plutchik's Wheel of Emotions. I would've magically flash open images in people's minds, they would recognize it but essentially, it has different emotions that are across to each other. For example, joy is the opposite of grief. You can blend adjacent emotions to create more complex feelings and it gets really cool. When you combine joy and anticipation, you get optimism. When you combine joy and trust, you actually get love.
+
+At Superhuman, we use a much richer vocabulary. We actually use the emotion wheel by The Junto Institute for Entrepreneurial Leadership because this emotion wheel has all of the nuance that a game designer needs in order to actually practice emotional design.
+
+At Superhuman, we care deeply about the emotion of joy and joy has many sub-facets. We design for things like enthusiasm and excitement. Our users come to us super excited. We design for optimism and hopefulness, our users want Superhuman to improve their lives. We design for pride and triumph, because when you hit inbox zero, especially if it's the first time in years, you rightly feel like you accomplished something special. When you do hit inbox zero, that's when we decided to show you the stunning and gorgeous imagery.
+
+We do this specifically to widen the emotional repertoire beyond joy, into love and surprise. There are sub-emotions in love and surprise that we deliberately lean upon with our choice of inbox zero imagery. We pick images that are peaceful and tranquil that's in the love end of the spectrum. We create images rather that create a sense of longing and sentimality that's also in the love end of the spectrum.
+
+Folks will remember the arctic fox, the squirrel that just runs across the screen, or this one where you have almost Natural Geographic-esque images of the balloons of Myanmar. We also pushed into surprise, images that amaze and inspire a sense of awe. A lot of our cityscapes are like this. Very high contrast, very high dynamic range, and designed to give you that sense of flying—almost of having superpowers—over this entire cityscape.
+
+Ben: It's so funny how it can sound. It's a little highfalutin as we talk about it here on this show, but I'm reflecting back. If I had to really describe the split-second emotion that I feel when I see it, when I do hit inbox zero in one of my inboxes. Yeah, you're absolutely right. It is very nuanced. I don't ever make the connection to, oh, I'm flying over this city, but I certainly feel an amount of power, control, and tranquility that I certainly didn't feel when I saw the full list.
+
+Rahul: That's the point. I'm glad to hear it's working.
+
+Ben: There's been something that's canoodling in my mind in the last column as you've been talking. My question is, being someone who thinks so deeply about all these very nuanced emotions as you are designing the product, does it translate to your personal life? Do you notice that you yourself as a human—by studying this stuff—you are more aware of your nuanced emotions? Or are they totally separate and this is more of an analytical skill versus something that would just naturally start happening to you as a person?
+
+Rahul: It's funny you should mention that because yes, it does definitely help in personal relationships whether those are happening at work or at home. One of the things that I strongly advise any founder to go through is conflict training, training on how to get feedback, how to give difficult feedback, or how to receive difficult feedback.
+
+For customers of Superhuman, I have recently sent out a newsletter on just how to do this. One of the things that I focus really hard on is separating the objective description of the behavior upon which I'm trying to give feedback—hey, you turned up 45 minutes late for our dinner reservation, or hey, this work had the specific issues of quality with it from how it made me feel.
+
+It's very easy especially in a non-work setting. For whatever reason, most people don't hold themselves to the same level of accountability when it comes to communication that they do in a work setting. It's very easy to let those things blur into each other.
+
+If I'm having a disagreement with my significant other at home, I do force myself to use this formula. I say, this is the behavior that I have an issue with which I'd like to talk about. I try and describe it very dispassionately. What a camera would be able to see is always my rule of thumb. Then I say, this is how it made me feel.
+
+Here's the part where it gets really hard. It's very easy to start using passive words. I feel attacked. I feel unsupported. I feel let down. Guess what? These aren't really emotions. These are passive descriptions of what the other person might do, right? It's really hard not to use these things because they're what we want to say.
+
+Once again, I'm just going to give a big up to The Junto Institute for Entrepreneurial Leadership, there's hundreds of emotions on that wheel. What we actually want to say is something like, I'm feeling lonely, disappointed, anguished, or whatever it is. You can go to the emotional wheel and look it up.
+
+In particularly difficult disagreements, I've actually just gone to the wheel. I've said, what I want to say is I'm feeling attacked, but I know that's not your intention, so that's a very unfair word to use. What I'm instead going to do is I'm going to go to the wheel. I'm going to go into what is probably the anger section of the wheel and look up the appropriate emotion.
+
+Bringing this full circle, Ben, absolutely. This kind of discipline that you get from being a game designer can also make you a better manager and a better partner.
+
+Ben: It's fascinating. We talked about a lot of these principles. They have goals and rewards, emotion, we touched on toys and fun and flow, but this is really one that I don't think we prepared for coming in this conversation. I have certainly experienced, in other areas in my life where being forced to study emotion and having a greater vocabulary around emotion can help you in interactions with humans of any flavor in any setting to help you better articulate how you're feeling. It's very cool to see you bring that to software.
+
+As we work toward the end here, one big question I had is if you're listening to this podcast and you're not a product designer, product manager, or the CEO of an early-stage product-focused company, how do you apply them outside of just a product role? Could they be interesting to people in other areas of company building?
+
+Rahul: I think so. This set of principles across goals, emotions, controls, toys, and flow is about experience design. If you think about the onboarding experience of Superhuman, there's not really much software in that experience, but we did look at the whole thing through these lenses.
+
+If you didn't even work in technology, let's say perhaps you were a realtor selling houses or getting folks to rent an apartment—as not many of us here in San Francisco area happen to own a condo just down the road. I think about the experience of prospective tenants coming to look at my condo through these lenses of game design. What is their goal? What emotion do we want them to feel? How can I hit every single sense of their emotions as they come in?
+
+It sounds weird but does it smell good? Does it look good? Does it feel good? Literally, do the things that you touch feel good. To double click on one of those, let's take the sensation of smell. I've been renting out places for a long time. This is a trick that I've been using since I was in my early 20s. When I read my first few sales books, I would put a vanilla scent in the kitchen to evoke memories of baked goods. Perhaps when you were a child, your folks would bring back a little baked treat. I will put a lavender scent or a similar scent in the lounge to evoke perhaps being in a meadow or in some other really relaxing place.
+
+The point is that you can take all of these little tools that we have as game designers and apply them to any experience that you're trying to design.
+
+Ben: All right, Rahul, you've talked about a lot of very nuanced and incredibly well-thought-out elements of the product here. Toward the end of the show, we always like to give guests an opportunity to talk about where people can go and check out the work of the person who's been interviewed. What do you want to say to listeners?
+
+Rahul: Thank you, Ben. What I would say is for folks who have listened to this, maybe they're excited to try Superhuman or they have an email problem and they really wish that they could through their inbox twice as fast as before—sustainably hit inbox zero, head to superhuman.com, sign up there.
+
+We do have a big wait list. It's more than 350,000 people at this point, but what I shall say is that for listeners of this podcast, members of the Acquired community, I would be more than happy to jump you to the front of the line when you sign up in the box where it says, how did you find out or hear about Superhuman? Just answer the Acquired podcast and we'll make sure that we skip you to the front of the line and get you onboarded as rapidly as we can.
+
+Ben: Sweet.
+
+David: Sweet.
+
+Ben: Love that, Rahul. Thank you. Well, LPs you can join us on the other side. We're going to be talking through a masterclass on fundraising with Rahul. For folks who aren't as familiar with his background, he's literally the perfect person to tackle this critical topic since he's now started two companies, he's done YC, he's not done YC, he's had an exit. He's raised seed rounds, big growth rounds, and funded the company himself for a period of time. He's running his own angel fund with Todd Goldberg where they also just raised a rolling follow-on fund via AngelList. Rahul has raised and not raised capital all across the spectrum. We're really excited to dive in with him on that.
+
+If you're not already an LP, click the link in the show notes or go to acquired.fm/lp as we bring it home here. Thanks again to Teamistry and to lemon.io. Teamistry is that excellent new podcast from Atlassian. Lemon.io, the best way to bring on remote developers to your team. You can click the link in the show notes to access either of those.
+
+Rahul, thanks so much. We'll see you on the other side.
+
+Rahul: Thank you.
+
+‍

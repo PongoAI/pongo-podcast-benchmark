@@ -1,0 +1,529 @@
+Ben: I think you both know enough about Acquired that I don't need to go into the general shtick and spiel.
+
+Brian: Right on.
+
+David: I love it. I'm so honored that you guys have listened. It makes my day. Thank you.
+
+Joseph: That's why we said yes.
+
+Ben: Welcome to this special episode of Acquired, the podcast about great technology companies and the stories and playbooks behind them. I'm Ben Gilbert, the co-founder and Managing Director of Seattle-based Pioneer Square Labs, and our venture fund PSL Ventures.
+
+David: I'm David Rosenthal, and I'm an angel investor based in San Francisco.
+
+Ben: And we are your hosts. David, I feel that today is the natural culmination of a journey we started in May of 2019 when we did our Uber episode on the day of their IPO.
+
+David: God, it feels like another lifetime ago, but it was only 2½ years ago.
+
+Ben: For listeners who don't know the events of Uber leading all the way up through their IPO, the implosion around that, and just the insane story that all of that was, is coming out as a Showtime series on February 27, called Super Pumped. I have to say it's a little bit surreal that the world that we live in—a venture in startups as we will talk about in this episode—is becoming part of entertainment and pop culture like that.
+
+David: And even more surreal that this is made by Brian Koppelman and Joe Gordon-Levitt. There's no world that I would have imagined we would find ourselves here.
+
+Ben: No, and on top of that, there is no world that I would have thought we would have found ourselves in where there are guests on Acquired to talk about it. We're ludicrously fortunate today for that to be the case.
+
+For those who don't know, Brian is one of the three executive producers, writers, and show runners for Super Pumped. You probably also know his work from Billions and from Rounders, which is my all-time favorite poker movie that I watched about a hundred times in high school and college when I was playing a lot of Texas Hold'em. Brian's work over the decades is just awesome. We're just lucky to have him making stuff out in the world.
+
+Joe, as many of you already know, stars in Super Pumped playing Travis Kalanick or TK. Of course, you know his previous work, too—Inception, Looper, and recently, Mr. Korman, and many other great movies. Joe is actually a founder himself of the company HITRECORD that we discussed a few months back on The LP Show, and just a delightful human being.
+
+David: Totally.
+
+Ben: One note for listeners. We want to wave our arms around and say, we're normally a pretty family-friendly podcast, but this episode does have some strong language, as does the show itself, obviously.
+
+Before we dive in on our interview, for those of you who listen to our episode with Brendan Eich, you know that we are very excited that these special episodes are brought to you by the Solana Foundation. Many of you know this. Many of you who have talked with us in LP calls about this. Frequently we're talking Slack about it, but what is Solana?
+
+Solana is a global state machine and the world's most performant blockchain. What does that mean? It means that developers can build applications with super low transaction fees and low latency without compromising composability since it's all on a single chain with a global state.
+
+They're capable of processing tens of thousands of smart contracts at once. But instead of actually talking to the folks at Solana Labs or the Solana Foundation, we want to use this time to talk to some of the folks building the protocols and decentralized applications on top.
+
+Today, we want to feature a big pillar of the Solana ecosystem, the Phantom wallet. Here's Brandon Millman, the CEO of Phantom to tell us all about it himself. Brandon, what is Phantom?
+
+Brandon: Phantom is the fastest growing crypto wallet that helps users do more with a world of DeFi and NFT apps. Not only does Phantom help users securely store their crypto, it also helps them do stuff with their crypto like trading tokens and collecting NFTs. From our launch in April 2021, we've quickly grown from zero to 2.4 million users. If you want to start using crypto or Web 3.0 applications, Phantom is the easiest, most consumer-friendly option out there.
+
+Ben: Well, growing to 2.4 million people, I know we're in early 2022, so it has to be in a year or less. Definitely, the proof is in the pudding there on people being attracted to its ease of use. I know it's built on Solana. How did you make the call to build that ecosystem?
+
+Brandon: Actually, from 2017–2021 before we started Phantom, the co-founders and myself all worked at this previous crypto startup called 0x, which was focusing on building DeFi technology on Ethereum. So we actually have a very deep Ethereum background and worked in that space for a while.
+
+While we were working there, we noticed that wallets are (in general) pretty hard to use, and are mostly geared towards developers. We realized that in order to really bring crypto to the mainstream, we needed to develop an experience that was much more user-friendly. At the same time, the underlying Ethereum platform was becoming more and more expensive, and less usable and approachable to the average consumer. So we decided we needed a faster and cheaper platform, and that platform ended up being Solana.
+
+Ben: That's great. Are you desktop-only or I saw something about launching mobile recently?
+
+Brandon: We started off as a Chrome extension, but more recently released our iOS app at the end of January.
+
+Ben: Our thanks to Solana and Phantom. If you are considering developing on Solana, head on over to solana.com/developers or click the link in the show notes.
+
+All right, listeners. Join us in Slack, talk about this episode acquired.fm/slack. Hear Joe's interview on the LP show. Just search Acquired LP Show in any podcast player or click the link in the show notes. Here without further ado, on to the interview.
+
+Joseph Gordon-Levitt and Brian Koppelman, welcome to Acquired.
+
+Joseph: Thank you.
+
+Brian: Thrilled to be here, guys.
+
+Ben: We are super pumped for this.
+
+Brian: And now we have to leave. Joe, this has been fun.
+
+Joseph: I brought these guys to you, Brian and they let us down.
+
+David: Who loves these little quips? It’s great.
+
+Ben: It's a little much. Joe, the first question we have that our audience has been asking is, how has your life changed since being on Acquired? Are you getting recognized in cafes now?
+
+Joseph: Yeah, by Web 3.0 nerds. I'm huge. I was at EthCon or something and everyone was super stoked. I was joking just there but it's true. I'll earn some instant credibility perhaps by saying when I listened to your Ethereum episode, it really did change my mind about what Web 3.0 is.
+
+I really wasn't aware of any of its merits. I was only aware of the hype and the scams. I'm coming quite strongly around to seeing how important it is for the future. I'm still really just early in learning about it but you really inspired me and it makes me excited for what it's going to become.
+
+David: Thanks, Joe. We are all early.
+
+Ben: We seek to inform, not to sway too much. But yeah, appreciate the thoughts.
+
+Joseph: That's probably why I was swayed because the folks swaying are like, get the [...][1]  out of here. No one will believe you.
+
+Ben: Let's start right in with Super Pumped and I have a ton of other stuff. I want to talk with you guys about previous projects. Brian, I'm a huge Billions fan. I want to talk about the art of storytelling a little bit and bringing these things to life, but let's start right in with Super Pumped. How did you two meet? Had you known you wanted to work together before? Or was it just the serendipity of this project?
+
+Brian: Well, Joe doesn't know this, but we actually met in a makeup trailer once.
+
+Joseph: No, I don't know this. Are you even saving this story?
+
+Brian: Yeah. I had a day as an actor in a movie you started. We were in the makeup trailer and I was like, Ryan's a friend of mine. You were very nice about it, but I did not ID myself as a filmmaker. I was there to be a day player. I didn't want to go into a whole other thing.
+
+Joseph: On the movie Premium Rush, and he's talking about Ryan Johnson.
+
+Brian: Premium Rush, and yes, Ryan Johnson who Joe's worked with a number of times. David Levine is my creative partner, lifelong best friend. We do everything together on this project. Beth Schacter, showrunner with us and really ran the writers room with us and made the show with us. But it's been rare over the course of my career that I can tangibly point to things that agents have done that were really incredibly just clearly positive. But this is one of those cases where Dave and I wrote the pilot, sent it to our agents.
+
+They gave it to an agent and one of our agents who works with Joe has been Joe's agent for a long time, a great guy named Warren Zavala. Warren read the script. We had said, Joe Gordon-Levitt is our first choice for this. He's the person we think could do this in the world. Warren read the script on a Friday and sent it to Joe on Saturday in New Zealand. Joe read the script. On Sunday, David Levine, Joe, and I got a phone call. At the end of which we shook hands virtually and that was it. We were partners going to make the show together. It was really incredible.
+
+David: How often does something like this happen? I'm intuiting not often?
+
+Joseph: No, not often at all.
+
+Brian: Very rarely.
+
+Joseph: So I've known Warren since I was 19 years old or something. I'm 40 now. I was his first client, actually. He was an assistant to another agent of mine and I had quit acting and was going to college when he got his desk, so to speak. He called me and he was, I'm an agent now. I was like, I'm not acting and he was like, you should act, and it went from there. He's been a fantastic confidant and collaborator ever since. He's truly an ideal agent.
+
+He doesn't bring me that much stuff with the level of enthusiasm with which he brought me Super Pumped, because he knows that I hate almost everything. He said, I think you're really going to like this. I think this is something you should probably do. He very rarely uses words that strong. So I read it right away and he was right.
+
+Brian: It is incredibly rare, and Warren is one of these people who were so many agents that cliches are true, but Warren's not full of [...][2] . In the past he said, this isn't going to work. He's very quick to say why it's not going to work. He was like, I think Joe is going to dig this; I'm sending it.
+
+From our perspective—not to embarrass you, Joe—it's really challenging to find actors who can project the kind of intelligence that Joe can project because Joe is such a thoughtful and smart person.
+
+Joseph: Thank you.
+
+Brian: He does the work. You do, dude. You do the work. You do the reading. You do the homework. You do the reading. You do the research. You're prepared. You're ready to talk about all of it. You're somebody who comes to set having mastered the scene, and is then willing to play.
+
+There were all these things that we needed Travis to be because we also needed Travis to be somebody who you believed could enlist all these people in his world-changing vision, and we needed an actor who would try to protect himself at every turn. An actor who wouldn't be worried about doing things that were unsavory or wrong, morally questionable. An actor who would be willing to look somebody in the eye and yell at them because they weren't super pumped.
+
+It's not easy to find that combination of things in an actor so it was a very short list for us. This happened throughout this whole project. It is rare, as rare as in Silicon Valley to get exactly the investors you want as your angels on your series A.
+
+Joe knows because he was part of the conversation. Joe’s our first choice, Kyle Chandler was our first choice, and Uma Thurman. Kerry Bishé’s the only person who gave her all of Austin. We just got our first choices throughout this whole thing, and partially because once Joe was on, it made other actors want to be a part of that, because this is a really important story to tell about America at this time.
+
+Ben: I'll ask this in reverse chronological order, but I'll ask you both the same question. Joe, what was it about this project that made you say yes? Why was your agent right in telling you, I think you're really going to like this?
+
+Joseph: Within the first few pages of reading the script, the dialogue in this show is fireworks. It's just fun.
+
+[Super Pumped Trailer][3]
+
+David: I don't think I've watched a show with that much profanity per minute in a long time. That must just be fun. And it's so well-written profanity, too. So Uber, it's great.
+
+Joseph: That's another reason (I think) we all have inside of ourselves. A certain beast or animal that just wants to take what you want, and [...][4]  everybody else and win at all costs. It's part of human nature. It's our hunter-gatherer ancestry or something.
+
+But most of us don't indulge that urge because there are consequences to pay if you do and get to see the consequences that Travis suffers because he did, but Travis does. He just goes as hard as he can into that animal instinct. Who doesn't want to indulge that side of themselves? So seeing the opportunity to step into an arena and just be that guy sounded like a lot of fun.
+
+To me, Uber serves as an excellent example of a larger trend that I think needs to be talked about, which is what happens when the modus operandi is profits above all, shareholder value up before everything? Who cares who we impact? Who cares how anybody feels? None of that matters. The only thing that matters is growth, growth, growth.
+
+It's not just Silicon Valley that's guilty of this mentality. But Silicon Valley is doing it better than anybody else right now. This felt like it has such a great story to tell to exemplify that kind of trend in our culture. It's not necessarily new, but it's as acute as ever right now. It's about to drive the human race off a cliff. I think it's something we as a generation need to change, so it's worth telling stories about.
+
+Ben: Brian?
+
+Brian: Joe’s exactly right. I think we were really compelled by a couple of questions. For us, as for the best investors when I've talked to them, curiosity. Something that makes you genuinely really curious, where you just can't look away from the question until you start to understand what's behind it. As an artist, it’s a really great and rare thing.
+
+This question of disruption and the cost, the price, what gets disrupted? Is the benefit of having this new utility of changing this infrastructure is the convenience worth what's on the other side of the ledger?
+
+And then, I think twinned with that, is the question of what happens sometimes when revolutionaries unseat fascists. Are they able to avoid becoming fascists? Is it inevitable that like Hannah Arendt talks about that there's going to be lost treasure in the revolution, and that lost treasure is the whole reason for the revolution in the first place?
+
+There are many Silicon Valley stories, but to us, the Uber story in the way that Mike takes you into it, the Uber story is one that raises those questions, and we hope the series raises those questions, and maybe the series posits some theories.
+
+Those are sort of the thematic resonant reasons. But also, all the stuff Joe says applies, too, which is, these people are fascinating [...][5]  people. They're so much fun to listen to, watch and think about, and they just fire you up.
+
+Lastly into this audience, I'll say this, which won't mean that much to many people, but I know Bill Gurley and I know Bill Gurley separate from this, and I liked Bill Gurley. This is going to sound odd, but I'm very friendly with Marc Andreessen and Bill Gurley. There's five of us (I think) in the world.
+
+David: You're the bridge. You're the bridge.
+
+Brian: And the book talks about this, but it seems to me there's really a cost that Bill Gurley paid or a question for Bill Gurley, which is, which is the worst cost? Leaving this thing in place that might imperil the whole endeavor but protecting the way that I'm thought of by a group of founders, or engineering the removal of this person, forever changing or cementing my reputation in certain area in a way that's going to harm this thing that I've really spent a lot of time trying to answer? There are all these amazing moral questions and life questions for TK, many for Arianna, and then Gurley has this his own really challenging question. So that seemed just amazing to dive into.
+
+David: Bill Gurley is a giant, literally a giant among venture capitalists. But a venture capitalist would be a primary character on a show the likes of which you all would create. I never in a million years would have imagined that 10 years ago.
+
+Brian: I'm going to challenge that just a little bit because Christian Bale plays Michael Burry in a movie. Why would a quant investor hedge guy be worthy? I'll tell you why. Because we're fascinated by people who put it on the line. Our culture is fascinated by people who step up to the craps table and say, I'm going to put it all on hard eight, or I have a reason why I can count. We are fascinated by people who make these decisions that are neither right or wrong.
+
+Ben: Knowing Bill personally, but working from source material and Mike's book, as a producer, showrunner, writer, how do you weigh, working both from source material but also when you have your own, primary source information from getting to know these people in real life, too?
+
+Brian: Well, we didn't talk to the people in the show for the show. Meaning, I told Bill because I'm a responsible person in that way. I said to Bill, Mike Isaac sent me his book. We're going to go tell the story. Anything I may have heard from any conversation that I had with you socially, is not in the show. We're starting from Mike's book. It's all going to be sourced by him. We're going that way. Then a wall went up on both sides. And that's that.
+
+Ben: Fascinating.
+
+Brian: I mean, you’ve got to serve the story you're telling. You know what I mean? You’ve got to serve the story you tell. Bill Gurley and I mostly talk about Jason as well. I mean, mostly talk about rock and roll with Joe.
+
+Ben: Joe, how does that manifest for you as the lead actor? Do you also interface with Mike, or does Mike sort of work through David and Brian? How does that work?
+
+Joseph: I had a couple of conversations with Mike, but mostly I just read his book. Beyond that, I wanted to talk to a bunch of people that worked closely with Travis because I wanted to know not just what happened, but how it felt to have a conversation with him, or be in the room with him, or what was it actually like personally, because that's my job. I'm not a journalist. I'm the actor, so it's my job to make it feel human.
+
+I talked with quite a number of people that worked closely with him and did learn a lot of different things that were different from what you might read in the press about him personally, about his personality. Because a lot of what you read (and justifiably so) is questionable decisions he made, arguably unethical behavior, and I think this show does not at all shy away from showing those things.
+
+I also wanted to show not just those things. I can't reduce this person to these headlines. I want to show a whole human. That's what makes (I think) a gripping performance. And hearing from people about a lot of positive things, actually. A lot of people said how much they liked, how inspiring he was, how compelling he was, how much energy he would bring to a room. That was really fascinating because that's not always evident when you read articles about him or even when you read Mike's book.
+
+Finding that balance of, I want to actually make the audience love this guy, but also then be confronted with, oh, no, this person who I was falling in love with is doing some really seemingly terrible things. How do we rectify that? Because to me, that complexity is what makes for a great story.
+
+Ben: Yeah. Brian talked about how impressive it is that you, as an actor, are willing to portray someone who's doing bad things, where it looks like Joe, so does Joe do bad things? Humans are subconscious in that way.
+
+Joseph: On a daily basis, the director would say ‘cut’ and I would just instantly start apologizing. It's like, I'm sorry, it's not me, everyone knows it's not me. The people that I've been working with everyday for months and months, I'm still having to reassure them like, you know I'm not really like this, right? Yeah. All the time. All the time.
+
+Ben: I've seen a lot of your movies. You usually play someone pretty likable. Did you feel uncomfortable playing someone that, at least in my opinion, on balance is less likable than the character you usually tend to play?
+
+Joseph: It's funny. It depends on what you mean by likable. I bet, actually, that this character will be more well liked than, for example, I just did a show called Mr. Corman. It's a guy who's trying his best to do the right thing at every turn, just stepping in, second guessing himself, and lacking confidence. This is the other side of me, maybe. I think Travis will be more instantly winning because if you're on camera, people respond to confidence. Travis Kalanick is nothing if not confident.
+
+David: We have these business moments in our culture that we're like Rorschach tests. There's Michael Lewis' Liar’s Poker, there's The Social Network which we've talked about, where maybe written or created intending one thing and then get received. Joe, responding the confidence in your thought that people will like Travis more than you might think. How much was that in your mind making this?
+
+Joseph: Brian, you can speak to this, but it was one of the first things I think I brought up with you guys. How can we make sure that we don't inspire a new generation of young entrepreneurs to be [...][6] ? I do think it is a concern. Does Scarface inspire people to be criminals? Does the Wolf of Wall Street inspire people in the financial sector to be crooks?
+
+Maybe some. When you're talking about large audiences, all sorts of people are going to take any given movie or show all different ways. But I think because this show is so unflinching in shining light on the protagonists’ shortcomings and dark moments, I would hope (at least) that the majority of the audience will come away understanding this as a cautionary tale as opposed to a glorification of bad behavior.
+
+Brian: 100%. When you watch the last three episodes of the season, it's not impossible, but you'll have some empathy for Travis, or sympathy for moments, or think he, in some micro moments, was treated wrongly by people who aren't really his equal in the field of war or whatever. But there are moments in the fifth, sixth, and seventh episodes that the lens changes, who were seeing the story through changes, and the point of view shifts in a way that makes certain things clearer.
+
+Also, I would say this. There's a waveform to this, which you all know a lot more about than I do about how things like waveforms work—I just know what they look like—but over time, you're going to understand that Wolf of Wall Street's not glorifying Jordan Belfort, like you just are.
+
+In the moment, people might be taken with Leonardo DiCaprio. In the moment, people might think that this guy is a master of the universe. But even now, if we watch that movie and we see the end when he's pathetically selling the pens, telling the people, sell me a pen, when it's the real guy. You apprehend that, you understand the emptiness, you understand the cost. In the moment, there's a lot of glitter. But if you actually look at it, it's really clear what they're talking about.
+
+I have a lot of confidence in people over the long-term understanding of these things that we make as artists. We can only be attracted to the things that call us, that ask these questions, and we have to tell those stories as rigorously and with as much truth as we can. We have to raise the questions that we find compelling. We have to imbue it with our most personal thoughts on the matter. And then we have to trust that eventually, if we do our jobs well, that thing will be received.
+
+We can't do anything other than that and think that we're engaging in art. That's the only way I can answer it. I can't be concerned about what the small group of people are going to be like, I want to be just like that [...][7]  guy. There will be those people, but I think we're trying to shine a light on what it means to be that kind of [...][8]  guy.
+
+What we're saying as a society when we prop up people who have incredible verbal acuity, great math skills, and the ability to galvanize, in a way that serves us, because we all take Ubers. But in a way, that serves that individual more and that does a disservice to huge swaths of people that we're not thinking about as we get into the back of the Uber.
+
+If you get in the back of the Uber and you're like, that guy's cool, but for one moment, you think about the person in the office who maybe wasn't treated right, or the driver who thought he was going to have a fleet of cars because there were deals that encouraged him to buy those cars, and then suddenly those cars are being towed away, which we show, it's in the book and we show it. Maybe you'll just have a moment of empathy for your Uber driver that you wouldn't have. Maybe you won't, but maybe you will.
+
+Ben: That's a great point.
+
+Joseph: I think it's an important difference between art and other professions, like being investors or being entrepreneurs. I think an artist's job is more, like Brian said, make people feel something and ask questions. Whereas it's not really our job to provide the answers to those questions. That's not art.
+
+I'm actually curious. I said a minute ago, what happens when companies are only incentivized by profit? Where does that leave us with a world? It seems like it's maybe leading us towards disaster.
+
+What are your thoughts on that? Do you see a need to try to change that and how could that change? What would that do to your jobs as investors? I'm curious to hear your thoughts on that.
+
+Ben: I really like your framework of artists' jobs are to make you feel and to ask the important questions but not provide the answers. If you're working in an operating company, or you're an entrepreneur, or you are an investor, your job is the answer. To be more concrete about that, your job is to create value for your shareholders.
+
+The vast majority of the time, the way you do that is to put something out in the world that creates value for customers and then capture some percentage of that value that you create. That thing that you're creating, that product you're creating, that value creating out in the world for people is necessarily an answer to something, presumably some problem that they had.
+
+Some business can be conducted in a more artful way, but it is kind of antithetical. Your job is to give something to someone that solves a problem for them and then collect value from that. For art, this is why you can't put a price on making someone feel a certain way. It's lightning in a bottle. When you have it and you're able to make someone who rarely cries cry, that's that magical, priceless thing.
+
+Brian: There is a continuum though, isn't there? I think about your episodes about a16z and Mosaic to Netscape. At Mosaic, Marc Andreessen is an artist. He's changing the world as an artist, I would assert, and he's looking at something that doesn't exist, and seeing a way that he wants to see the world.
+
+No one even knew who owned the underlying code. No one knew who owned the thing. Did the school own it? Did the institute own it? But then, partners come into it. Things changed and it becomes a business and priorities shift.
+
+That's fascinating to me always, like what happens to an artist like that? Maybe Marc's the smartest person in the world—you could make that argument—but he's also like this great visionary artistic thinker, who then becomes a business person.
+
+David: An incredible business person, right?
+
+Brian: What happens when that ordering switches around priorities? That's part of all this. I think all these people had it in them to do art in some way.
+
+David: The show shows this so well, like so, so well. Travis, a lot of what you're describing about an artist was him, like he willed this thing into existence. All the cards were stacked against him and it is unquestionably a better experience. There were things totally wrong with the way the world was before.
+
+And then you had that great scene with Gurley where he's talking with his wife. I know he's with his partners and he's like, you know, I used to think that half of founders were angels, and half of them were David Koresh, and I realized they're all David Koresh. That was so good.
+
+Brian: Thank you. That seemed really significant. It's fascinating to me that nobody here is bringing up a guy who's the closest thing to an artist in this, which is Garrett Camp. If you think about Garrett and how much he wanted to just be doing his other company because it was fun and art, how did you think about that company? That was like an art project. I loved it. Stumbled upon, was the greatest not a business, right?
+
+David: Totally not a business, but great.
+
+Brian: I use it all the time, it was the best. It would just take you on a total adventure on the Internet, and I loved it. Garrett, to me, is an artist within this whole thing, who figured out, I need a couple of meta chi. I need a worker, I need an investor, I need someone who's going to get our meta chi, and be able to put that stuff. I've never met Garrett or spoken to him, but in my head I view him that way.
+
+David: Supposedly, according to what we found. Part of his original inspiration for Uber was watching Casino Royale, the James Bond film. There's a scene where he summons his car with his phone.
+
+Brian: We couldn't get the rights to Casino Royale. It's like the only time I've ever not got the rights to anything. We tried, but we couldn't get the rights.
+
+David: It would have been so great.
+
+Brian: That's in the book. It's in Mike's book.
+
+Ben: I'm trying to keep this as spoiler-free as possible, but you do have a means of storytelling in the show, where you're showing the way that Travis remembers something happening, but of course, a very apocryphal story, and then the background falls away, and then you get to see, actually, here's how it really happened.
+
+We did this big 2½-hour research episode on Uber. David and I did 100 hours of research. We found the "founding story" of Uber, where they're looking over from the Eiffel Tower, and David and I both then found like, oh, that's the apocryphal story and the real story is…
+
+It starts playing on screen on the Eiffel Tower. I was like, no way, these guys got duped, these guys can't get duped, they're like the most well-researched… Then when it fades away and shows that, indeed, that was the apocryphal story, I was like, masterminds. I just have to applaud you for that.
+
+Joseph: That was one of the things that made me really want to get involved with this, too, is reading even in that first script, that oh, they're going to play with this. Especially on TV, playing with form and kind of [...][9]  with storytelling conventions is not normal.
+
+That's the kind of thing I like to do and the kind of movies I like to watch, but I was really excited that they were taking what could otherwise be compartmentalized as a mainstream story idea, and using non mainstream filmmaking techniques, and taking bold risks to [...][10]  with the audience's perception like that, like what you're talking about, then.
+
+Ben: And necessarily, you have to get clever because reading a book is a completely different experience than watching it on screen. You need to innovate off the book when you're adapting from a book because there are things like internal dialogue that are hard to show on screen. But you also have so much more opportunity because you have such a richer canvas to do the types of things like that fade-away.
+
+Brian: Perfectly said.
+
+Joseph: The medium is the message, as they say.
+
+Brian: I think Joe, we've talked about this, but because so much of what your culture David and Ben talks about is disruption, it allowed us to disrupt form and what we were doing. We're taking advantage of the fact that the story we're telling us about disruption. We're not under an obligation to tell you a story that's presented like proscenium, like it's back here and it's just with the normal rules of cinematography or the normal rules of what can happen inside that box.
+
+David: All right. For our second sponsor of the episode, we have one of our very, very, very favorite companies here at Acquired, Modern Treasury. They are by far the best way to manage your company's payment operations. Their platform allows you to move money right in your product using code. They literally turn banking operations into code with APIs. It is incredible.
+
+They have direct integrations with almost all major commercial banks. You can move money directly without involving finance, without doing it manually, or dealing with the complexity of all the banking systems' rails that we talked about on our Bitcoin and other episodes.
+
+It has been incredible to watch this company over the past two years. We've had this relationship with them at Acquired two years ago. They were moving $10 million a month in their product via their APIs. Last fall, that grew to $100 million a month. Now they are moving $2 billion a month. They are trusted by fast growing companies in the economy's most important sectors, companies like Gusto, Marqeta, TripActions, ClassPass, BlockFi.
+
+You can use modern Treasury for anything that you would want to move money for in your product like automatic payments, direct debits, incoming payment reconciliation, digital wallet, onboarding. They're a great Web 3.0, crypto onboarding tool.
+
+Whether you're building a FinTech or a Web3 app, or looking to add payments to your software product of any type, Modern Treasury's APIs make it super easy and simple to initiate, monitor and reconcile payments, track balances, and do everything way faster than you could by integrating traditional banking rails yourself.
+
+Ben: Typically, the way this is going to work is that finance is doing stuff using tools for finance people, and engineers are doing stuff using tools for engineers, and someone's written some custom internal dashboard for the operations team to keep an eye on the other stuff. Modern Treasury just unifies all that.
+
+David: Because Modern Treasury doesn't sit in the flow of funds, payments settle in your account 2X faster than if you are doing all of this manually. Truly, this is such a classic example of how integrating payment rails directly does not make your beer taste better, your proverbial startups beer, your product tastes better. You should focus on your product.
+
+Let Modern Treasury handle your payment operations. They are wonderful. You can learn more at modern treasury.com/acquired. Just tell them when you get in touch that Ben and David sent you.
+
+Ben: It's almost like we have product-market fit for Acquired sponsors with people who take things that don't make your beer taste better off your plate. It feels like that's the theme here. If I'm a startup founder, that is exactly what I'm looking for. Anyway, our thanks to Modern Treasury.
+
+David: Jeff Bezos was even more prescient than he ever realized or than we ever realized when we started doing this show. It's so wonderful. Thank you, Modern Treasury.
+
+What was the process and timeline like from, Mike writes the book, book comes out to then, you and Showtime are working on the project?
+
+Brian: Way before the book came out.
+
+David: Oh, before? Oh, wow.
+
+Brian: Mike DM'd me on Twitter, would you read my book? It's not coming out for five months.
+
+David: Did you have a relationship before then?
+
+Brian: Just like a Twitter friendship.
+
+David: Oh, my gosh, that's amazing. Twitter is so awesome.
+
+Brian: It's awesome. He DMs me, and then I read 25 or 50 pages, and I love it. I say to my partner, Dave, dude, you got to[...][11]  read this book and I think it's our next thing. He agrees and then we go to Mike and say, hey, we want to do this thing. We might be able to write it for a year, but we will do this.
+
+The whole town wanted it, but Mike stayed true to us and our word because we committed right away to him. We didn't play any games. He didn't play any games with us and we just held firm with each other. We're like, we're going to make this show. We're going to make it very high level. Mike was in the writers room every day. Mike was in the writers room with us every single day.
+
+Joseph: Oh, I didn't know that. I knew he was present, but I didn't know he was in the room every day.
+
+Brian: As the co-executive producer, he didn't write any episodes. But yet, Joe, he was in the room. I would say if we did 100 days in the room, Mike was there for 94 of the 100 days.
+
+Joseph: Wow. Yeah, I didn't know that.
+
+Brian: Then he was reading every script and giving us notes. What was great in the room is we'd be in the room and we'd go, what do we really think happened in that room? What's your sourcing, and he would go, and he would reveal the sources, but he would go get his notes, and then suddenly, he'd be like, let me come back in a half hour.
+
+He would come back with a person and suddenly like, the person would be in the Zoom with us, because it's all Zoom rooms now. Suddenly, the person's in the Zoom and they're off the record going like, here's what [...][12]  happened, so we're just living it. It was crazy.
+
+Joseph: That's so fun.
+
+David: The series and obviously most of the action is based in San Francisco. How much was on location in San Francisco versus I assume mostly filmed in LA and studios?
+
+Joseph: It was really just a few days of exteriors in San Francisco and the rest is in LA, mostly on the Paramount lot in soundstages. Don't tell anybody.
+
+David: Obviously, you didn't film it in San Francisco. But if you were, then that's what it's like. You could just, oh, I'm going to run down the street. Let me go get Gurley, bring him in here. Like, let's talk about what really happened.
+
+Ben: Brian, can you talk about how the process for this, which is recent factual events that happened in a super high drama sort of pseudo finance environment compares to the research that you do for Billions, which is also present day, also finance high drama, but you get to be like current historical fiction on Billions, whereas, you're trying to be like faithful to source material on Super Pumped?
+
+Brian: Obviously, the dialogue is going to be, you have to figure out what was said in the room and (as you guys said) make it colorful and entertaining. But the incidents, this was crucial. You're going to dramatize things to make them interesting, exciting, and compelling, but you are not going to tell parts of the story that affect people in a way that they're [...][13] , you just can't.
+
+It’s like the Waverly dinner is the fifth episode. We had to know what really happened and then make a gut call because certain people have. We read everything written about it, and talked to as many people as we could talk to, to try to understand what happened at that dinner, because you just kind of need to know in a way.
+
+When we read Mike's book, the thing that happened with Sergey Brin, Gabi, and TK, how are you going to make something up with the third richest guy in the world doing that and then this other guy is a billionaire? You can't make that up. You could just try to cast it incredibly well and set the environment up so that Joe can feel that these events are really happening now. We got a great Sergey. David Krumholtz killed it, Joe.
+
+Joseph: Such inspiring casting. By the way, one of several old dear friends of mine, they got to make these awesome supporting appearances in the show. Krumholtz is Sergey Brin, definitely a highlight.
+
+David: Amazing.
+
+Joseph: One of the only people who got an improvised line into the show, too.
+
+Brian: Maybe the only improvised line in the whole thing and it's spectacular.
+
+Ben: While we're on the topic of actors playing real life people, one person that I noticed, sometimes, someone will be watching a YouTube video and that YouTube video is the real YouTube video of something that actually happened in the past. There's a scene where Travis is watching a YouTube video of Jeff Bezos and a very familiar actor is playing Jeff Bezos. I couldn't help but laugh and I'm like, no way. How do you make the call on whether to use actual source material for something like that versus cast it?
+
+Brian: Because the exact thing we needed isn't online anymore.
+
+Ben: Oh, fascinating.
+
+Brian: And then to have him do the laugh. He brought the laugh and we were so happy that he did the laugh.
+
+David: The laugh. Oh, so good.
+
+Ben: The shotgun laugh.
+
+Brian: Because Joe's an incredible actor. When Joe's playing that scene, he's not watching anything. He's watching some clips of Bezos.
+
+Joseph: I was watching a piece of tape, tapes to the laptop's monitor while I was watching.
+
+Brian: I do sometimes wish people understood how challenging a job it is that Joe Gordon-Levitt has to do. Obviously, it affords lots of amazing things in life. It's incredible when you have the cathartic transcendent moments.
+
+The work required to do what Joe does is incredible and actors are loath to talk about it because everyone's like, oh, yeah, it's really hard. Show everything. But to have to do that 10 times, play that, be in that mental state, and be just pretending you're watching it like, yeah, you guys see this incredible footage of a guy to Bezos, Joe is just imagining that and making that happen.
+
+Joseph: Thank you, dude. Thanks, man.
+
+Ben: We rarely get to talk with folks of your talent and doing what you do on this show. I think listeners don't live in your world. This is probably the first time that someone would get to hear, what is it like to act in a green-screened, white-taped laptop? How do you invoke the level of imagination that you need to? Do you have any tactics?
+
+Joseph: I never studied acting in an academic setting. I don't have names for all the things that I probably do. But when you're in a green screen setting and you don't have any reality to play against, it's just like playing pretend.
+
+I have a four-year-old and a six-year-old, they're somewhere else half the day just playing pretend, just imagining what's going on. I remember doing that when I was their age. Now I still do that. I do it on command at 5:00 AM when I have to.
+
+The challenge of acting for me is not making things up or playing pretend. It's actually having to do that while straddling a hornet's nest of logistical nightmares all day long, because a movie set is just a mess. Even the most well-run sets—and this was a well-run set—by nature, there are a million things all going on all at once. It's noisy, it's cluttered. There's someone close to you. The hard part is kind of keeping your focus in your concentration and maintaining that more childlike spirit of imagination while having to contend with all this morass of logistical crap. That's the hard part.
+
+Ben: Wow. Plus, you have your own personal life where there's very real emotions that you're experiencing when you're off-camera too.
+
+Joseph: No, I don't have that. I gave that up. I'm a vampire.
+
+Ben: I don't think folks realize this, but when you and I had a couple of phone calls back when you were shooting this, you were like, can I call you at, I don't know what it was, like 8:00 PM. I'm on my lunch break. What is the daily schedule like and why are you shooting so late into the night?
+
+Joseph: There's a thing called a 12-hour turnaround. Standard days on a movie set or a show set is 12 hours. We could talk about whether or not that is civilized or right. The union of stage workers almost went on strike, and I think with good reason. It's not exactly the best lifestyle. But be that as it may, you work a minimum of 12 hours, and then you need to have a 12-hour turnaround, but 12 hours is really the minimum. Oftentimes, we're working 13 hours, 14 hours, 15 hours.
+
+If you started work at 8:00 AM and you finished at 8:00 PM, then maybe you could start again at 8:00 AM. But mostly, if you start at 8:00 AM, then you finish at 10:00 PM, then you have to start the next day at 10:00 AM. Over the course of the week, that keeps happening. You start the week at 5:00 AM and by the end of the week, you're coming in at noon or 1:00 PM and you're having "lunch" at 9:00 PM.
+
+Brian: Everything Joe said is exactly right. The other thing that sometimes happens is if you're shooting a night scene, you might stage your week so that on Friday, we're shooting night or on Thursday, and then you're going to intentionally do that.
+
+We just like our lingo, like we like to call it lunch. Nobody calls it dinner. I remember learning out of the beginning. It's just lunch no matter what time of day it is.
+
+Ben: Brian, I've listened to a lot of episodes of the moment. Joe, this is a topic that you and I talked about in our LP episode here a little bit. Can you walk me through the process—both of you—of when you create something and you know it's great, versus you create something, it's on its way to being released, and you're like, crap, crap, crap, crap, crap, this is not good, this is not good? Are your spidey senses about that right or can you not trust yourself at all about how the audience will receive something?
+
+Brian: If you know it's bad, it's bad. If you know it's bad, it's [...][14]  bad. Joe, that has to be your experience, too. When you know that you're like, oh [...][15] . That doesn't turn around, suddenly like, oh, what a great surprise. It was great.
+
+Joseph: Yes, that's true. But I've also been in those things and then they've been hits, so I don't know.
+
+David: There's no accounting for taste.
+
+Brian: He's asking about the feeling of knowing the work is good or not. When it's bad, you know it's bad, and you missed. Everyone misses sometimes. But then, Ben, you're being nicely asking me about Runner Runner and that experience was I knew. I knew it was a horrible movie every day that I was working on it and we couldn't get it better, Ben. Us tried our best, Justin tried his best, and it was just one of those things. There were a variety of reasons.
+
+It was very difficult to manage knowing six months from now, movies are going to come out that's going to bomb, and get a nine on Rotten Tomatoes, and they're right. When I know the work's good, I'm completely divorced from any of the ramifications. But if you know it's common and you know they're right, you're just like, [...][16] , that's horrible.
+
+Ben: Have you ever thought something was awesome and you're like, this is just pure aces, and then it comes out, and people just don't get it?
+
+Joseph: I just did a show, Mr. Corman, that didn't get picked up for a second season and I personally really like it.
+
+Brian: It's a great show, yeah.
+
+Joseph: Thank you. I made something that's very much to my taste. Truth is, I don't like a lot of stuff that's on TV. I got to hand it to Apple, that they let me make something that was very particular. I said, hey, I have the ability to do this. How often do artists get to do this, something on a relatively grand scale that's just really not trying to pander to any particular commercial bucket but just making what I would like to see? I did that.
+
+Again, I'm proud of it and some people really liked the show, and then not enough people did, though, and so it didn't get picked up. Yeah, that does happen, and it's humbling and a learning experience. I guess, the balance to try to strike is making stuff that is on the one hand, truly, genuinely something that I love, but can simultaneously be something that large audiences like as well.
+
+I think Brian and David are great at that. They're making something that's clearly very true to themselves. They've really found a way to make that resonate with a large audience. It's admirable.
+
+Brian: Thanks, but it doesn't always happen. Our first movie, I loved it. I knew that the cast was incredible. I knew the script was so solid. John Dahl's a genius director.
+
+The movie was a bomb in the theaters, but now, it's obviously a movie that people not only like, but are obsessed with. It did hundreds of millions on DVD later and it's a movie I get asked to do a sequel to every day in my life, I mean, 10 times a day. And 25 years later, that movie is a classic, but at the time, it was a bomb.
+
+I learned right then, because we got two horrible reviews in the two magazines that mattered. On the same day, Time and Newsweek came out, and they both hated it, and it was a week before a release. At the time, those things mattered. I remember going to a fetal position like, am I going to have a career? It's my first movie. But then the next day I woke up and I remember, I had a clear thought, I can still write, they can't take away from me the ability to make stuff.
+
+Once I realized that, I was like, God, none of that matters. What matters is, can I look at Joe, and can Joe look at me and Dave, and be like, we showed up here every [...][17]  day and we gave everything we had, and we worked with rigor and our full hearts to make the thing great. We worked and made the thing that we said we were going to make because that's also it.
+
+Can you quiz your craft good enough that you can achieve the thing you set out to do? We've all been at this for a really long time, so now, it's likely that we can get something that's a pretty close approximation to what we say we're going to do. So if you do that and it evokes the feeling you were trying to get it to evoke, for your group of collaborators, that's the thing.
+
+I was so happy, I got to show early on in the process, but we'd had the first six minutes or something finished of the first episode. Mike, I got to show it to him and no, like, well, we kept our promise to you, you kept your promise to us, that's really all you can do. We said we were going to feel like this thing, and he was going to deliver this thing, and we did that for each other, and that's a bond. I'll tell you that that's the main thing.
+
+What's amazing is we've become real friends over this. But let's say Joe went off to do a thing in Zimbabwe and I went off to do a thing in South America, if we met up seven years later, we would hug and be like brothers because we've gone through this thing together and worked in the way that we did.
+
+Joseph: Yes, sir.
+
+Brian: And that's an incredible gift of this thing that we get to do with our lives, especially when you show up fully to do this work together. It's a really beautiful, magical thing. That's where my focus is, it's never on that other part of it. I can't. You'd go crazy if you let yourself focus on that other part of it.
+
+Joseph: One way to put it is intrinsic versus extrinsic motivation that I really, really believe in. We mentioned Ryan Johnson at the beginning of the show. I'll tell a little anecdote about him. I made a short film that I submitted to a film festival and it got rejected, and Ryan had helped me make it.
+
+I was really proud of it. I had worked on it. I'd done everything for it. I had shot it, I had edited it, I had made the music, I'd done this whole thing. I'm like 23 or something and submitted it to a festival. It had gotten rejected. I was low about that.
+
+Ryan sent me a copy of the book, Letters to a Young Poet by Rilke, which is a wonderful book that I highly recommend. One of the things it talks about towards the beginning of that book, it's sort of a mentor poet speaking to, writing a letter to a young poet and saying, you're asking me whether I think your poetry is good and here's my answer to you. Forget about all that, forget what anybody says. Go into yourself.
+
+All you can really do if you want to be an artist—and maybe this applies beyond art, but I feel quite confident it does apply to being an artist—is just go as deep as you possibly can into yourself and see if you can dig down deep enough where you can honestly say, I'm not paying attention to anybody else, or anybody's perspective or opinion. I'm just here with myself because that's where your unique voice is.
+
+If you can get there, that's the thing. Yeah, then you can ignore the rest. That's not necessarily going to make you money or make you popular. But being an artist isn't about money and popularity.
+
+Brian: Ralph Waldo Emerson applies, too, which is the idea that if you do give voice to what's innermost. And that's not self-indulgence. That's just tossing it off. It's like doing the work of getting to the thing you really care about. It's likely that that's going to strike off other people too because you have the courage to put it forth.
+
+What someone like Joe could do is go deep enough to express with his face, his body, and his voice, something that's so particular, personal, and private to him, and because he does it with such openness and truth, we see it and we're moved by it because he's reflecting back to us parts of ourselves that we don't have the courage to experience or loss that we've experienced. That is the thing that the actors who are on Joe's level are able to do. It's a very beautiful and sacred kind of thing for that reason, I think.
+
+Joseph: Thanks, man.
+
+Ben: All right. For our final sponsor, we have a very special company to tell you about that's near and dear to the Acquired community's heart, Mystery. To tell you how near and dear it is, we had two requests last week in the Acquired Slack, maybe two weeks ago to say like, hey, can we get an update on that company that you had on the LP show way back when? It seems like they've really grown and turned into something really cool. Yes, that is true and they have some fun recent news that we will share with you here.
+
+When we last left these plucky heroes, they had come on the LP show to talk about pivoting from facilitating magical nights out for consumers before Covid to magical virtual experiences in-home while everyone else was stuck in their lockdowns.
+
+For folks who need even more of a memory jog, this is when David and I had our little two-person Christmas party a few years back. We went to a little fencing match. It was quite fun. But that's not at all what Mystery is now because this is about the scrappiest company in the world.
+
+So, the final twist. It turns out a whole bunch of consumers who did these virtual in-home experiences in April of 2020 also worked at places like Amazon, Microsoft, Apple, McKinsey, Uber, Twitter, Autodesk, et cetera. While the virtual experiences with their friends—those were fine—what you really wanted was upgrading those virtual experiences for your team, these happy hours everyone's going on on Zoom, where you have 17 Zooms, and now you log on for one more, and you're supposed to have fun.
+
+David: Everybody have fun. We're not leaving here until everybody's having fun.
+
+Ben: The beatings will continue until morale improves. You're seeing those signs, David?
+
+David: That's the best. It's one of my favorite lines.
+
+Ben: Enter Mystery. They take over every aspect of those terrible team happy hours from scheduling, to planning, to executing them. They even track engagement and player retention afterwards. It makes them not suck.
+
+Flash forward. Since April 2020, they've executed tens of thousands of events for not just huge companies, but startups like Modern Treasury, Convoy, and others. They just raised a giant Series A from Greylock to really blow this thing out. We're so pumped for our friends there.
+
+David: These guys are so scrappy. This story is amazing. They have built this huge business now on the third pivot, like, talk about pulling an ebreak.
+
+Ben: Yeah. Not to share the numbers or anything, but it's a big business. A lot of people are doing this and this is something that teams are very excited to be taking off their plates. It's just great.
+
+David: It's so, so much better.
+
+Ben: If your company could use someone to take all the headache out of those events, get them off your plate, turn them from something employees dread to something awesome and magical, head on over to trymystery.com/acquired.
+
+The way that we tend to wind down episodes here is a section we call carve outs. This is where we ask the guests to make recommendations of something they've seen, or read, or anything they would recommend to listeners.
+
+I'm going to start real quick. For people who don't realize how insanely multi-talented Joe is, open up YouTube and search for The Cure Katy Perry Jimmy Fallon. This is the most unbelievable thing. Joe, you singing The Cure song in the style of Katy Perry on Jimmy Fallon's new show. Then I think there's a second one too of you playing a variety of instruments. So if you thought Joe is a talented actor, you got the depth part right, but you're missing the breadth.
+
+Joseph: I'm flattered. Thank you, Ben. Those are fun.
+
+Ben: It is surprising and super fun to see. Let me kick it over to Brian. What would you recommend listeners check out?
+
+Brian: You brought up Liar's Poker before and Michael Lewis has just released, for the first time, an unabridged audiobook of Liar's Poker. But he also put out a companion podcast, and the companion podcast is spectacular. Second, for this conversation we're having, there's a book I just read called, Unrequited Infatuations by Little Steven Van Zandt, who you know is either Bruce Springsteen's right hand or as James Gandolfini's right hand in The Sopranos.
+
+David: You had a great episode with him, didn't you?
+
+Brian: Yeah, we just did one now that his book came out. It's an amazing book about art and commerce and about all these questions. Unrequited Infatuations, I highly recommend it.
+
+Ben: Great. Joe?
+
+Joseph: I've been listening to a podcast called, Your Undivided Attention, that's the center for humane technology, Tristan Harris. There's an episode called A Problem Well-Stated is Half Solved and his guest is this scholar named Daniel Schmachtenberger, I think. It's relevant to what we're talking about because when he's saying the problem well-stated is half solved, I've never really heard a conversation that, to me, so sharply and comprehensively observed what's going wrong with the world and what it might take to fix it.
+
+Not that they're offering comprehensive solutions but we all hear all the time, like there's climate change, Facebook's also breaking democracy, there's a rise in authoritarianism, also incredible inequality and all these different things. But it feels like whack-a-mole. How could we ever possibly address all of these things?
+
+One of the things that he was getting at was part of what is interesting to me about the Uber story that I was touching on earlier also, which is, a lot of it does come down to, what's the incentive? How does the whole big system work? When you've got a system that mandates exponential economic growth, but you've got a finite planet, it's by definition, unsustainable. We're definitely heading for a catastrophe unless we change the way the system works and no longer require it to be grow-or-die, grow-or-die, grow-or-die.
+
+By the way, that was a phrase. That's the name of episode one, Grow or Die. I came away from that podcast pretty thoroughly convinced that all the other things are dominoes to that one and that if we can't change that, we're not going to get any of the other ones. But if we can change that, we may have a shot of solving the rest.
+
+Brian: That's beautifully said, perfectly said.
+
+David: I'll go real quick, my last one. Brian, your episode with Jakob Dylan, I thought was so good. It was so fun having been a kid, growing up, and listening to his music. I honestly don't know that anybody else could have asked him about his father the way that you did.
+
+Brian: As he says, Jakob and I have been friends since we were in our very early 20s. Yeah, I can ask him because I've known him for 30 years.
+
+David: Right.
+
+Brian: But yes, thank you, though.
+
+David: I'm not going to ask Jakob Dylan about his dad, but I'm really glad you did.
+
+Ben: Awesome. Joe, Brian, we thank you so much for coming on. Anything you want to call out for listeners to find you somewhere on the Internet or do something?
+
+Brian: I want to call out that everyone should go watch the movie Joe wrote and directed, Don Jon. It is a spectacular film. That's the other thing I wanted to recommend. I don't know if people have seen it, but it shows the breadth of your work, man, because it's so different from the television series that you directed.
+
+If you want to find me, I'm on Twitter, @briankoppelman. But ask before you send me your manuscript. Mike Isaac asked me first. I won't do [...]. Ask me.
+
+David: I love it.
+
+Brian: Thanks, guys. Thanks for having us here.
+
+Joseph: Thanks, everybody. Oh, yeah, and check out HitRecord.
+
+Ben: hitrecord.org? Is it .com now?
+
+Joseph: We own them all. It was originally hitrecord.org.
+
+Ben: Sweet, hitrecord.anything. Thanks, guys.
+
+All right, listeners, with that, be sure to tune in. This upcoming Sunday, I believe, the 27th is when Super Pumped will air. I'm excited to see what everyone thinks. Many of you are very, very close to this story, so it'll be fascinating to experience it as a series when so many of you experienced it either through a friend or family member, you personally being at Uber, as a lot of these events unfolded.
+
+With that, listeners, join us in the Slack. I'm sure we'll be talking about not only this interview, but the show itself, acquired.fm/slack. Go check out the LP show, view our previous interview with Joe. Just search the Acquired LP show in any podcast player.
+
+If you want to become an LP and get those episodes two weeks earlier, that's at acquired.fm/lp. Join our Zoom calls, all kinds of cool stuff. If you're looking for that next new thing in your career, acquired.fm/jobs. Those are handpicked curated jobs from your friends at Acquired.
+
+With that, feel free to share this episode with your friends. We love tweets, we love one-on-one stuff even more. If there's somebody where you think they'd really enjoy this, pass it along. Our thank you to the Solana Foundation, Modern Treasury, and Mystery. We will see you next time.
+
+David: We'll see you next time.
+
+‍
+
+‍

@@ -1,0 +1,1587 @@
+Ben: Welcome to season 9 episode 3 of Acquired, the podcast about great technology companies and the stories and playbooks behind them. I'm Ben Gilbert and I'm the co-founder and managing director of Seattle-based Pioneer Square Labs and our venture fund, PSL Ventures.
+
+David: And I'm David Rosenthal and I'm an angel investor based in San Francisco.
+
+Ben: We are your hosts. Listeners, David and I are coming at you live (sort of live) together from Seattle in person. First time since our Ethereum episode, David.
+
+David: That’s right. Which was not that long ago. Love that we’re back in the swing of things.
+
+Ben: I know. Listeners, you probably don’t notice a difference, but it feels totally different to be doing this with you in person, David, in full 3D.
+
+David: Energy in the room is electric.
+
+Ben: Today’s episode is on TSMC or the Taiwan Semiconductor Manufacturing Company. Most people have never heard of it, but it’s the ninth largest company in the world episode.
+
+David: This is wild. Morris Chang founded TSMC at age 56,retired at 74, then came back at age 78 into the deal to make all of Apple’s chips. We’re going to tell the whole story here. It’s wild.
+
+Ben: It’s nuts. They make literally every chip in every iPhone sold today and soon to be in every Mac sold. If you’re excited at all about Nvidia, AMD, Qualcomm, or even any of the chips that Amazon, Microsoft, Facebook, and Apple are making—all of those chips or nearly all of them are actually made by TSMC. Along with all the chips in your cars, in your smart home devices, fighter jets, and everything.
+
+Unbelievably, this company that the entire world relies on is on an island that some countries feel is a sovereign nation and the People’s Republic of China feels is actually theirs. Today’s episode has it all, ascending from startup, to tech superpower, an underdog founder, and of course, a good dose of geopolitics.
+
+David: Indeed. Before we dive in, I’d like to welcome our presenting sponsor for all of season 9, pilot.com. Pilot is the backbone of the modern financial stack for startups and is backed by all-star investors like Sequoia, Index, Bezos Expeditions, and Stripe. They are truly the gold standard for start-up bookkeeping, and like I’ve been saying all season, pretty much all of my portfolio companies run on them. They are truly awesome and we’re so excited to have them with us. Now over to our conversation with Pilot co-founders Waseem Daher and Jessica McKellar.
+
+Jessica, I know there’s a fun story around one of your very first customers. Can you tell us that story?
+
+Jessica: Yes. One of our earliest customers is my husband’s first company. Waseem, Jeff, and I had already been through two companies together. It was so interesting to watch him go through that journey for thefirst time. It was delightful that my company could support him on the finance side through that growth, and in fact, that company was acquired. Actually,he’s back with startup number two, also using Pilot—a testament to the quality of the product.
+
+David: I love it. You’ve grown quite a bit. Who are some of the folks that use Pilot today?
+
+Waseem: I think one of the real reasons that folks come to Pilot today is a quite strongly demonstrated track record of expertise. Meaning we work with a thousand plus startups. We work with folks like Scale, Lattice ,Gem, Airtable, OpenAI. No one is doing the work that we do to the quality barthat we do it at the scale that we do it. That’s really the big unlock for Pilot, which is we can help you out when you’re two people in a garage. We canhelp you out when you’re multiple hundreds of people with a full-time finance team, a controller, a CFO, and all that good stuff.
+
+David: Love it. You can learn more about Pilot and whether they can help your company eliminate the pain of tax prep and bookkeeping by going to pilot.com/acquired. Thanks to Waseem and Jessica, all Acquiredlisteners—if you use that link—will get 20% off your first 6 months of service. Thank you, Pilot. As we talk about so often on this show and are definitely going to talk about on this episode, if you are a startup—anything that does not make your proverbial beer taste better—you should outsource to TSMC, AWS,or pilot.com.
+
+Ben: All right. Listeners, it finally felt like the right time to do this episode amidst this global chip shortage that we’ve got going on. David, I think I’ve heard even Ford has paused the production of F150sbecause of this. It is like a massive impact on the world. I think we’ve had TSMC on the agenda to do for 2 ½ years now in our little Google Doc.
+
+David: Totally. I feel like we haven’t called in a mini-series, but let’s call it a mini-series on semiconductors in Silicon.
+
+Ben: ARM episode.
+
+David: Yup, ARM episode. The Sequoia Part 1.
+
+Ben: That’s right.
+
+David: We’ve done a ton of this. P.A. Semi.
+
+Ben: Yup. Okay, listeners, it is time to jump into the history and facts. David is going to lead us in that. But as usual, even though we’re going to be probably very excited about some companies, less excited about other companies, the show is not investment advice. We may have investments in the companies we discuss. It’s for entertainment and informational purposes only and you should do all of your own research even if you listen to the show for research purposes. Go do other research too.
+
+David: Do you hold TSMC? I don’t. I wish I did.
+
+Ben: I do not. I really wish I did starting pre-pandemic.
+
+David: I’ll have to think about it as we go through this episode. Okay, speaking of, we start. In Ningbo, China, in July 1931, just about one year after Warren Edward Buffet was born in Omaha, Nebraska—and there are going to be quite a few parallels here as we go through this episode. But in July 1931 in Ningbo, China, our protagonist, Dr. Morris Chang, Order of Propitious Clouds with Special Grand Cordon, which is the highest civilian honor that anyone in Taiwan can hold.
+
+He’s like a knight of Taiwan, the Order of Propitious Clouds. I think there are nine ranks of it and the highest is Special Grand Cordon.
+
+Ben: And he is Special Grand Cordon?
+
+David: He’s special. He’s very special. He was born then. For those who are unfamiliar with Chinese geography, Ningbo is a small city, just a bit south of Shanghai—small. It’s about 8 million people. Just casual, no big deal.
+
+Ben: China’s scale is ridiculous. But certainly, it wasn’t 8million when Morris was born in 1931.
+
+David: No. But I bet it was still probably pretty big. But yeah, today, eight million people, crazy. Morris’s father was a county official and later became a bank manager. The family moved around a bunch a good bit within China as his father was transferring for work. This is pre-People’s Republic of China. This is pre-World War II. This is a very different place.
+
+Ben: Right. The leadership is not communist.
+
+David: No. His early childhood years were like middle class, not wealthy, but pretty well to do relative to your average Chinese citizen. Then when he was six, the Second Sino-Japanese War breaks out and Morris and his mom flee the main part of China to Hong Kong and they go to live in Hong Kong for a few years to escape the air aides and the fighting. And then, on December 8th, 1941, 3 hours after Pearl Harbor, the Japanese attacked and invade Hong Kong.
+
+Morris talks about this. Everybody knows Pearl Harbor, December 7th, 1941. What people don’t often talk about is the same thing happened in Hong Kong three hours later on the next day. They’re in Hong Kong. They flee again back to China. They end up in Shanghai this time and they stayed there for a few years until 1948 after World War II is over, but that’s when the Chinese Civil War breaks out. That would lead to the Chinese Communist Revolution. They flee again back to Hong Kong.
+
+This is crazy. Morris, before he turns 18, has lived through3 major wars—the Second Sino-Japanese War, World War II, and the Chinese Civil War. Crazy. The next year, in 1949, which is the same year as the establishment of the PRC, the People’s Republic of China, Morris turns 18 and with the help of an uncle that he has in Boston, his life completely changes. He gets accepted to Harvard. He goes to the US. He goes to college at Harvard. Wow.
+
+Ben: Talk about a change of fate.
+
+David: Talk about a change of fate, a change of scene—everything. Morris says much later, "My reaction entering Harvard was sheer ecstasy, almost disbelief, what a country! The United States was at its peak in its moral leadership and its political leadership in terms of democracy and it was the richest country in the world."
+
+Ben: Not to mention stable. You could say what you want. You could count on the fact that it’s likely that 10 years from now, whatever economic structure or political structures exist will continue to exist. If what you want to do and what he ended up doing with his whole life is to innovate, having that stability around you and all those structures enable you to do that.
+
+David: We just take this for granted. But that’s a good reminder. At the very least, he’s probably not going to have to flee Boston to continue his studies. But he does end up fleeing Harvard, as we’ll get into. Morris loved it. That quote we read, he was so overjoyed to be there. But he realizes he has a new problem at Harvard. His parents aren’t coming over. He’s on his own. He’s got to support himself and make his own way. At that time, his race is probably going to limit his opportunities.
+
+As he says, "In the early '50s in the United States, there were Chinese laundrymen, Chinese restaurateurs, Chinese engineers, and Chinese professors. Those were the only respectable professions for Chinese—no lawyers, no accountants, no politicians." What does Harvard churn out? Lawyers, sort of accountants, maybe politicians, yes. Not a lot of engineers.
+
+Ben: Certainly finance professionals, not accountants.
+
+David: Certainly finance professionals. As we will see as we go along Morris. He’s much more than a finance professional. Harvard actually didn't have an undergrad engineering program at the time.
+
+Ben: Huh, that's crazy to think about.
+
+David: If you're really, really focused, you're probably going to go down the street in Cambridge from Harvard to MIT.
+
+Ben: To MIT.
+
+David: Which Morris does. He only spends his freshmen year there and then for his sophomore year, he transfers to MIT so that he can study mechanical engineering. The next episode that Matimco sponsors, we're going to have to add TSMC to the alumni companies list.
+
+Ben: It's amazing.
+
+David: It is amazing. The number of companies and market cap that have come out of that university is incredible.
+
+Ben: And Pilot, right?
+
+David: And Pilot, that's right. We have so many companies to add to the list. All three co-Founders from Pilot—MIT alums. Morris, our man, learned the ways of the world, in the US. He's focused. He starts mechanical engineering a year behind at MIT, he finishes both his undergrad and his master’s in the remaining three years.
+
+Ben: And what year is this?
+
+David: This would've been 1951 when he transferred, fall of1951.
+
+Ben: Okay, to contextualize what's going on in the "tech world" right now because it’s not so much a world, that's a very small continent. You have all of the post-World War II defense spendings that went in, particularly on the West Coast with the innovations from Stanford. Has Fairchild Semiconductor started yet?
+
+David: Nope.
+
+Ben: Maybe Shockley Semiconductor?
+
+David: Shockley Semiconductor was probably just getting going, but we're probably still in a vacuum tube.
+
+Ben: Like Bell Labs land.
+
+David: Yeah. To give you a sense, silicon is years away. Transistors are probably just getting going. We're not in the integrated circuit yet, and it's all being done in germanium, not silicon. This is OG. After he gets his master’s in three years, Morris wants to stay and do a Ph.D.—fully complete his technical training. But he ends up failing his qualifying exams twice. They give you two chances to take and he fails twice.
+
+Ben: By the way, this is a good time to say, David and I watch and listen to every footage that Morris has ever spoken that has been released publicly to prepare for this. He is very funny.
+
+David: Oh, he's great.
+
+Ben: The way he talks about this, he says that unfortunately, the biggest impediment to him going forward was that he failed the qualifying exam. But fortunately for him, they were kind enough to let him take it a second time, which he also failed. He has this really dry, clever sense of humor.
+
+David: In one of the Stanford interviews, he gets a question from the audience about how did he kick his smoking habit. The question was like, I know you used to smoke, how did you finally stop? And he's like, I never stopped. I still smoke. He's like 94 years old.
+
+Ben: He goes on and makes the case for why he's a pipe smoker and actually, even though smoking is harmful to his lungs, it's actually beneficial for his mental life. He's pretty sure it's prolonged his life.
+
+David: He says he's delved into the data and pipe smokers live longer than non-smokers.
+
+Ben: Which I'm sure you can find data to support that, also sure you can find plenty of data to refute that. But yes, this gives you a sense of who Morris is.
+
+David: Okay. He's failed his qualifying exams, he's got to go out and get a job, not as a Ph.D. He's got to go get a job as a super entry-level as an engineer. He has a master's degree, but still. Legend has it, he has a couple of job offers. The one he really wants—remember, he's a mechanical engineer and this is super early days of technology. It's not really a thing yet.
+
+Ben: There was electrical engineering at this time.
+
+David: Right. But he didn't study electrical engineering. In terms of where you would want to work, it's not really on anybody's radar screens especially Morris's that he's going to go enter the tech industry. He gets his dream job offer from the Ford Motor Company.
+
+Ben: Oh, no way I didn't hear that.
+
+David: Yes. I'm sure this is a pocket full.
+
+Ben: But let's repeat the pocket full story and broadcast it out to hundreds of thousands of people here.
+
+David: Totally. The legend has it that Ford offers him a salary of $479 a month to go take an entry-level job. And then he has a competing offer from Sylvania's new Semiconductor Division.
+
+Ben: Sylvania, I know of this company only because my vacuum growing up was made by Sylvania.
+
+David: Yup. We're going to talk much more about Sylvania in one second. This is the competing job offer he's considering. They offer him a salary of $480 a month—$1 more. Legend has it that Morris asked Ford to beat Sylvania's offer. They didn't, so he took the Sylvania job offer. That's 100% apocketful. But you know Morris, he's great.
+
+Speaking of Sylvania, do you remember—I’m some portion of our audience remembers—who else started their career in Sylvania'sS emiconductor Division right around this exact same time? We have talked a lot about this in this person on the show.
+
+Ben: No.
+
+David: Donald T. Valentine.
+
+Ben: No way. That's right.
+
+David: He started at Sylvania after Fordham, or maybe it was after the military.
+
+Ben: He ended up at Shockley.
+
+David: I know then it was at Raytheon and then he joined Fairchild right after the Traitorous Eight left Shockley and started Fairchild.
+
+Ben: You're better at remembering these deep details of older episodes than I am.
+
+David: I do a lot of research for this show. Sometimes research includes past Acquired episodes.
+
+Ben: There you go.
+
+David: We've truly become a circular function here.
+
+Ben: So they didn't overlap? Don Valentine and...?
+
+David: They were never in the same place. They were indifferent locations and different job functions—very different job functions. But they were both, I believe, at Sylvania at the same time.
+
+Ben: Amazing.
+
+David: Crazy. Don, is out chilling in California—like we were talking about—and falling in love with California. He's playing water polo. He's like, oh my gosh, I'm never going to live this place. Morris, he's on the grind. He gets posted as a Junior Engineer at Sylvania's Ipswich, Massachusetts plant. Not quite the same glamour as Don out in Southern California. Remember, Morris is a Mechanical Engineer. He doesn't know anything about electrical engineering but he's working in this new Semiconductor Division.
+
+He's living in a hotel, by the way. He doesn't even get an apartment. It's like some company-sponsored hotel. What a sad existence. He goes home back to the hotel from work and he studies the best textbook that he can find about electrical engineering, which is entitled Electrons and Holes in Semiconductors with Applications to Transistor Electronics written just a couple of years before, in 1950 by William Shockley.
+
+Ben: Oh wow. Shockley and two other guys basically invented the—I'm not sure it was the first transistor, but the first transistor of the type that everything else would then be built upon when they were at Bell Labs not too long before this.
+
+David: Yeah, not too long at all. Again, it was back [...]of vacuum tubes and then Shockley invented the transistor, and then in a second, we're going to talk about the integrated circuit that Bob Noyce and Jack Kilby, who we're going to talk about co-invented.
+
+Back to this moment in time. Morris is just studying the Shockley textbook in his hotel room, but he's not in college and he doesn't have any teachers. He just has the book, but he's very resourceful. He figures out that one of the senior engineers at the plant is an alcoholic and hits up the hotel bar almost every night.
+
+What Morris does is he comes home from work in the earl yevening, he studies in his room for a couple of hours, and then later at night when the older colleague shows up at the bar, Morris goes down to the bar not to drink, but he brings the textbook and he asks the guy questions. He's like, I don't understand this, I don't understand that. He's just like buying drinks for his buddy. So great.
+
+Ben: Incredible.
+
+David: Here's the quote he says later (he, being the older colleague), "Didn't solve all my problems, but he solved enough so that I could move ahead. He was my main teacher about electrical engineering." So great.
+
+This goes on for three years with Morris rolling hard. He's burning the candle on both ends—working at the bar but not drinking, learning. But as he's learning the industry, coming up to speed, it becomes pretty clear to him that if he really wants to go places in this new emerging industry ,Sylvania, not really the right bus to be on, so to speak. Obviously, Do nValentine figures out the same thing and jumps to Raytheon and then to Fairchild.
+
+Morris says that the moment when this crystallized for him was there was a talk that a senior manager at Sylvania gave at the plant an dthe quote that the senior manager said that stuck with Morris for the rest of his life was, "We (at Sylvania) cannot make what we can sell and we cannot sell what we can make." Real great position to be in. Morris is like,damn, I got to get the hell out of here.
+
+Ben: That's a signal to move on if I ever heard one.
+
+David: Totally. Like Don, Morris leaves Sylvania for greener pastures. However, not to California for the Silicon Valley.
+
+Ben: Halfway in between?
+
+David: Yup. Halfway in between. We talk a lot about Fairchild, the Traitorous Eight, Silicon Valley—the place to be. Here is the secret, Silicon Valley is all marketing. The biggest semiconductor company—inall types, digital, analog, everything at that time—was not in California, it was in Dallas, Texas. It was Texas Instruments.
+
+Ben: Which of course, me, you, many people in our generation know of as the people that made our graphing calculators in high school and college. But of course, at this time, I don't even think they had a consumer division yet.
+
+David: No. That's going to come up later. No, TI was the juggernaut. Now Silicon Valley is Silicon Valley. But then it was like, yeah, okay, California, West Coast. TI was the big and coming, they were the juggernaut. TI actually got it started—I had no idea before doing the research here—in the '30s. How did the technology company end up in a semiconductor company end up in Dallas, Texas? They started making instruments—Texas Instruments—for measuring seismic activity for oil exploration.
+
+Ben: That makes sense about Texas.
+
+David: They were like the TSMC, the technology provider to oil companies and that's what led them into computing and into digital to power that business. They were huge. Not just huge in terms of the company, but they were the technology leader.
+
+Bob Noyce, like I was saying a minute ago, is credited when he was at Fairchild, inventing the integrated circuit and all that. While he was the co-inventor, simultaneously, it was co-invented by Jack Kilby who was at TI. Jack was actually the one who got the Nobel Prize for inventing the integrated circuit.
+
+Gordon Moore, who was also at Fairchild and then founder of Intel along with Noyce, he would coin Moore's Law. But Jack has a great quote too about the implications of the integrated circuit and semiconductors. He says, "What we didn't realize then," this is a little later when they were inventing it, "was that the integrated circuit would reduce the cost of electronic functions by a factor of a million to one, nothing had ever donethat for anything before."
+
+It's such a great way to frame it too. This had never happened in human history. Where there was this thing that used to be X expensive in terms of resources. And then magically one day it's a million times cheaper.
+
+Ben: That's crazy. I didn't realize it was on that scale.This is probably a good time to talk about some definitions. Because there are some things that we've thrown around already, I think everyone has a general understanding of what these things are, but it's worth understanding more precisely before we move on.
+
+The first of which is a transistor. The best way to think about a transistor is not the tiny little transistor that's on a silicon dietoday, but think about it as a little encased piece of circuitry with three prongs coming out of it. Those three prongs, we'll save the technical names,basically have an input and output and something that controls the input andthe output. It's a switch. It has two purposes. The first of which is being aswitch where you can decide that either a lot of stuff is going to go through it—stuff being voltage, current, or none, or it rounds to none. That way you can decide hey, this binary piece of equipment is either off = 0 or on = 1.That's a transistor.
+
+Now, a transistor can be made out of lots of different things. It can take any implementation. Why is everybody talking about silicon?Silicon—as in element—is a semiconductor. It is a metalloid. It has some properties that make it like a metal, like a conductor. It has some properties that make it non-conductive. Imagine trying to move electrical signals througha piece of wood—it's not going to work. But imagine moving it through copper,it's going to work really well and you're never going to be able to interruptit.
+
+Jeez, wouldn't it be great if some material—asemi conductor—where we could modify whether the current was flowing through itor not?
+
+David: Make it a switch really easily.
+
+Ben: Exactly.
+
+David: Lots of things are semiconductors. Germanium was the main material for a while. But germanium is expensive and rare. Silicon is madeof sand.
+
+Ben: Silicon (I think) is the second most plentiful mine ableelement on earth.
+
+David: Yeah. I mean, it's sand, right?
+
+Ben: Yeah.
+
+David: There's one other major thing though. We've been talking about transistors.
+
+Ben: The IC?
+
+David: Yeah, the IC.
+
+Ben: The integrated circuit.
+
+David: The integrated circuit. A transistor is a switch.Before the IC, people were making switches. You make one switch at a time, youwire it to another switch. If you've seen photos of any [...] in vacuum tubes,literally, they're plugging one tube into another. You're still doing that with transistors. When Noyce and Kilby invented the IC, now you can put a lot of switches on one thing. Fast forward to today, the latest processor, the5-nanometer processors that TSMC and basically nobody is churning out—billions or trillions of switches are in like a tiny little...
+
+Ben: Integrated circuit.
+
+David: Without the integrated circuit, that never would've happened. This invention, this miraculous invention of the integrated circuit happened in 1958. When did Morris Chang join Texas Instruments? 1958.
+
+Ben: Fascinating.
+
+David: Coincidence? Yes, totally a coincidence.
+
+Ben: Absolutely a coincidence.
+
+David: Absolutely a coincidence.
+
+Ben: Again, to peg us in history here, we’re still (I think)10 years before the founding of Intel.
+
+David: Yes, exactly 10 years. Morris obviously wasn't working directly with Jack on inventing the IC. But this gives you a sense. TI,this is like Google plus Facebook.
+
+Ben: Without the world paying attention to them.
+
+David: Yes, and in Texas. Morris gets assigned as his first project to a problem child within TI. They have entered into a deal with IBM. IBM is working on their first mainframe computer, a major project that's going to use transistor logic instead of vacuum tubes—the IBM 7090. They anticipate so much demand for this product.
+
+Usually, IBM manufactures everything for all their products themselves, but they're like, we need more chips than we're going to be able to make ourselves so we need a second source for chips. They turned to TI. They're like, hey, we can give you all the designs for how to do this chip that we want for our product. We want you to additionally manufacture some of these in addition to our own line. You might even say almost like a contract manufacturer of chips or like a foundry business, almost.
+
+Hmm, interesting. But it's not going too well. IBM's own plant is churning out transistors with about a 10% yield. Which means that of every 100 chips that they churn out of the plant, 90% of them fail and only 10%of them work. That's the first party line. The TI line has about a 0% yield. They're lucky if they're getting any. Almost everything coming off the linefails at TI when Morris shows up.
+
+Morris would say about this later, "The supervisor was concerned. The operators were concerned. Everybody was concerned." Morris,remember, he's a mechanical engineer by training. He starts tinkering. He's like, this is a mechanical process. Chemical and mechanical processes creating this stuff. I'm just going to use my training and optimize it like a good mechanical engineer.
+
+He starts doing some stuff and after about four months, he gets the yields at the TI plant up to 20%. Twice as good as the first partyline at IBM. There's a great profile that was one of the main sources for this episode in IEEE Spectrum. Great industry magazine that we'll quote from here,and they write:
+
+"Suddenly, even TI president Pat Haggerty knew his name. IBM thought Chang had just gotten lucky, but when the company (IBM) sent engineers to talk to him, Morris described the theories he’d been testing an dexplained why his experimental process worked. The achievement propelled him into his first management job, creating a germanium transistor developmentdepartment with 20-plus engineers reporting to him."
+
+This is his first big win here in the foundry business. On the back of all this, TI is like, all right, we got a rising star here. They offered to sponsor him to go finally get his Ph.D. They even offered to continue paying his full salary while he's getting his Ph.D., which they're paying for.
+
+Ben: What? They think very highly of him.
+
+David: Very, very highly of Morris. This one probably made them millions doing this in 1958.
+
+Ben: It's funny, I don't know anything about the commercial success of that particular IBM mainframe. But if it's the first one that's transistor-based instead of being vacuum tube-based, I have to imagine that it was far more efficient for customers, customers are probably lining up for it.
+
+David: I bet there's a lot of demand. Meanwhile, what’s Morris making a year, $20,000? Maybe. Do you know how much it cost to go to Stanford then? Not much, so sure. Morris goes to Stanford and he's now like a pig in mud. He's found his calling. He can't wait to get back to Texas, back to TI. He finished his Ph.D. in two and a half years, wild.
+
+One of the Stanford interviews with John Hennessy, the President of Stanford at that time, and they're joking. John was like, Morris,tell the students how did you finish your Ph.D. in two and a half years? Morris was like, I'm focused. I didn't do much else. By 1964, he's done. He’s back at TI, and this is right when people have discovered the silicon is way more cost-effective and scales up way better.
+
+Ben: If I remember right, the initial attempts at using silicon were that people didn't know how to work with it yet. Even though it was more abundant and cheaper, there's some particular manufacturing process that you have to do to silicon in order to make it as viable as it became.
+
+David: Yes, that is definitely correct. I don't remember exactly what it is. It's one of the many silicon semiconductor terms. It's not MOS, metal oxide semiconductor. That comes later. We're going to talk about it.One of those things that's innovation about how to transform, how to dope silicon to make it function and produce it at that scale as a semiconductor.
+
+Ben: Listeners, this is where you should start to get the idea that especially today, manufacturing these products involves the most advanced process in human history consisting of layers of innovation,chemistry, physics, mathematics. It's breakthrough after breakthrough after breakthrough all building on top of each other, which need to all happen in the manufacturing process.
+
+Even here in 1964, we’re starting to get into the level of complexity where it's some of the most advanced science ever done being applied in an engineering and manufacturing fashion to get even marginal results at 20%yield of the manufacturing line.
+
+David: Little preview to fast forward to today, TSMC,they're a contract manufacturer for silicon, that is what they are. TSMC has40% operating margins as a contract manufacturer. It's not like there's no technology or R&D. They are one of the most advanced technology organizations in the whole world. There is so much IP, just in the manufacturing. Take out the design, take out the functions, just making this stuff is so hard. Now it involves lasers, we're going to get to that later.It's going to blow your mind how this stuff is done.
+
+Anyway, Morris, he's coming up. He's learning literally as this whole industry is getting developed, he's right there. A couple of years after he gets back from Stanford, he's still rising through the ranks. In 1967,TI made him a general manager of one of the divisions within the semiconductor business, and that's where he had his next big breakthrough. This is on the business side.
+
+Morris notices what they're doing setting up these new plants for all these successive new methodologies and processes of manufacturing, at this point integrated circuits and silicon-like semiconductors and pumping out these chips. It's super expensive to do this,super cost capital intensive.
+
+What TI and everybody else in the industry did—when they would start a new product line that would use a new fab for chips—they charged a lot of money for it because man, they put a lot of money into these things.Right off the gate, you want the latest new hotness in the end products that TI's selling, they're going to charge a lot of money for it.
+
+Morris realizes that that's not actually optimal to do that because as evidenced by his first big win at TI with the IBM line, there's alearning curve to getting the yields right and learning how to manufacture a new process. In the beginning, you're going to have a really low yield, and so what you want, ideally from a fabrication perspective, is you want to have aton of volume from the get-go.
+
+As soon as the plan is online, you want to be running at max capacity so that you can, learn as fast as possible, get yields up to the profitable levels, and then you want to still be running at max capacity as long as possible because you already spent the fixed cost to make the plant. Basically, you always want max capacity. When you started out, by pricing sohigh, you kept demand low and you weren’t able to get up to capacity fast enough.
+
+Ben: It's almost like they didn't realize the benefit of the potential operating leverage that they had because they were just passing theirexact economics on to their customers and saying, you basically have to pay us for us to do all these fixed costs, and then you'll get all the benefits of how cheap it is to stamp it off the press every time. Whereas what they really should have been doing is saying, we will make an investment. We'll eat the cost ofhaving to spend all this up, but boy, are we going to be super profitable on every chip that comes off the line.
+
+David: Yup, totally. Morris is thinking about this. He hires BCG and they come up with the idea of actually pricing low to start to drive this volume and speed up the yield curve. And then also, the side benefit of that is, if they're pricing low and everybody else's pricing high, they're going to grab a ton of market share and probably keep that.
+
+Ben: Paying consultants.
+
+David: I know. Here's Morris's quote about this, he says(this was in the late ‘60s), and Boston Consulting Group was a very smalloutfit when we did this. And we use loads of data, a lot of theory, and a lot of effort. The result was so-called learning curve pricing. We would automatically reduce (so start low), and then continually automatically reduce the price every quarter even when the market did not demand it. This was a very successful effort, even though it was somewhat controversial.
+
+A lot of people thought we were being foolish. Why would you reduce the price when you didn't have to? But we did it because we believed init, and indeed our market share just kept expanding. That combined with other strategies made the TI integrated circuits business the biggest IC business inthe world, and also the most profitable.
+
+This is right when Intel is getting founded. So screw Fairchild and screw National. TI is kicking all of their butts and it's thanks to Morris. It's wild.
+
+Ben: Interestingly enough, the ecosystem around TI, maybe I'm off on this, but the reason I always thought that Fairchild was (I suppose)successful in those days was out of all the defense spending and research that was being done at Stanford, the government as a customer. But is Texas Instruments playing in that ecosystem at all?
+
+David: Good question, probably. I think this is a case of the rising tide floating all boats. Yeah, Fairchild is killing it, Intel is killing it, National is killing it. TI is just killing it bigger than anybody else.
+
+Ben: I see.
+
+David: On the back of this, Morris gets promoted to VP atTI—one level below the CEO—running the entire semiconductor business. That happens in 1972, and he becomes the obvious leading candidate to be the next CEO of TI, which he's like, yeah, I want to do that. Yeah, I'm focused. This iswhat I love. This is my goal.
+
+Ben: This is why I've been going to the bar for three years reading a textbook.
+
+David: Exactly. But it might be fair to say history turns on knifepoint. Things don't entirely go as planned. There are three different viewpoints (as far as I could identify) on what happens next to Morris at TI. He does not become the next CEO, obviously.
+
+Viewpoint number one is simply probably unfair that he was just discriminated against because he was ethnically Chinese, although, at this point, I'm pretty sure already he was an American citizen, but anyway, he got passed over. I have no evidence for it, but not to be at all surprised that that was part of what was going on. So that's one.
+
+The second point, which Morris totally acknowledges, TI wasa really big company. The semiconductor division. He had made it probably the most successful and the fastest rising division within the company, but you mentioned calculators. They were starting to launch the Consumer Products Division at this time.
+
+In 1978, six years he's running the Semiconductor Division as VP, they moved him over to VP of consumer products in 1978 because this was a big new strategic initiative and it wasn't going super well. They're like,oh, Morris is a great manager. He can fix this and turn it around.
+
+Ben: Different set of competencies, though, like marketing.
+
+David: Yeah. Here's Morris's quote on this, "Mark Sheppard, then Chairman and CEO of TI, agreed with the prevailing wisdom at the time that a good manager could manage anything. In this case, I think he was wrong. I found the consumer business to be very different." like you'resaying, "The customer—set completely different. The market—completely different. And what you need to get ahead in that business is different too. Inthe semiconductor business, it's just technology and costs; in consumer,technology helps, but it's also the appeal to consumers, which is a nebulousthing." Not Morris's strong suit, at least not anything he's trained in.
+
+Ben: Yeah, that makes total sense.
+
+David: In 1983—five years after he got moved over to takeover the consumer business—he hasn't turned it around, it's still struggling,he gets demoted to "head of quality and people effectiveness", which is pretty much a slap in the face. This dude built your semiconductor business.
+
+Ben: Is this when he says he was put out to pasture?
+
+David: Exactly, so that's number two. Here's number three. I found some evidence on this. It's unclear to me how much of this is Morris's fault versus his successor, but while Morris was definitely responsible formaking TI semiconductor a powerhouse, at some point towards either at the end of his tenure running it or under his successor, they totally dropped the ball,and this is when Silicon Valley in California takes over.
+
+In the mid-70s, the semiconductor industry transitioned over to the metal oxide process, MOS. You ever heard about MOS, semiconductors?
+
+Ben: Yeah, the precursor to CMOS.
+
+David: Exactly. That happened in the ‘70s, and TI again had the best engineer. They were well-positioned to lead this transition—they didn't. Actually, most of the talent within TI that were the ones that led the industry transition to MOS left, including probably most prominently a guy named LJ Sevin who left and founded a company called Mostek, and then he later became a semiconductor venture capitalist and founded Sevin Rosen Ventures,which was one of the early VC firms.
+
+He was a TI guy and he left. The culture at TI—as shown by Morris's experience was—this was not like Traitorous Eight, Silicon Valley leave. It was like you're a company, man. Stay at the company. Motorola poacheda whole bunch of MOS engineers from TI, and it all kind of fell apart culminating in the biggest huge loss. This is really history turning on a knifepoint.
+
+In 1980, Morris had already transitioned to consumer products, IBM put out a secret RFP—bid proposal for a secret project thatt hey're working on (this is 1980) by a new group based out of Boca Raton,Florida. Do you know what I’m talking about, Ben?
+
+Ben: I have no idea.
+
+David: Some listeners might know what I'm talking about.This is the secret project. This is the RFP to be the microprocessor, the CPU for the secret project.
+
+Ben: Wait, wait, wait. What year is this?
+
+David: 1980.
+
+Ben: 1980. No, I have no idea.
+
+David: The IBM PC.
+
+Ben: Okay. That was out of Boca Raton?
+
+David: Yeah, it was a secret project like a Skunkworks division of IBM to build the PC, which is big. IBM was the mainframe company.We're going to build a personal computer. Skunkworks project, and TI—a couple of years earlier under Morris—would have been an obvious candidate. Remember ,he had the relationship with IBM going all the way back. TI probably should have been the processor chosen. Instead of course it was Intel. I think it wasthe 8088 that was chosen for that first one.
+
+Ben: Wow. Boy did that set things in motion.
+
+David: Well, then the architecture standardizes on x86, andboom, there goes the whole next generation of computing away from TI over toIntel.
+
+Ben: The sort of family of IBM with Intel processors and eventually running Microsoft operating systems.
+
+David: Then all the IBM clones all running Intel processors.
+
+Ben: Okay, so this is really where—
+
+David: That's a major loss.
+
+Ben: In the highway of history, TI accidentally took th eoff-ramp there.
+
+David: They did. Is that Morris's fault, is that no tMorris’s? I don't know. All three of these things, certainly some discrimination, certainly the culture at TI was we rotate you around, you're going to fix consumer, he didn't fix consumer but couldn't, and then this semiconductor powerhouse took an off-ramp, as you say.
+
+All that, his career in TI is basically over. He was the rising star. Everybody thought he was going to be the next CEO, and at age 52in 1983 after he stayed a couple of years being the head of whatever.
+
+Ben: He was something of a staff employee.
+
+David: Yeah, he just resigned. He was like, well, I guess this is it. My career at TI, 30 years—done. He's still regarded super highly inthe industry, though, in the semiconductor industry so people start calling him with opportunities.
+
+Ben: He wants to be a CEO. I mean, that's what’s on his mind.
+
+David: Yeah, he wanted to be CEO of TI, that didn't happen.He wants to be CEO, but he whittles it down to two opportunities he's going to consider. One is to go to a competitor called General Instrument, which people may have heard of another one of these old chip companies. It was based in Manhattan in New York City, actually, to go be their COO, the number two therewith the understanding of hey, if things go well in a couple of years, you'llreplace the CEO, become the CEO there or to become a venture capitalist.
+
+Ben: Really?
+
+David: Yeah, he was weighing the two. I don't know where or how, I couldn't find that out, but he was weighing these two opportunities. The VC idea is going to come back up in a big way in a second, but obviously, he goes with General Instruments, GI. A) his dream is to be CEO. B) he's got this chip on his shoulder from the way TI ended, so great.
+
+He goes off to New York. He leaves Texas. He lives in Manhattan. Things are going to work out at GI. The thing though is GI had a very different culture than TI. TI was this research, build, develop technology, push the ball forward. GI was almost (at the time) like a prototech private equity firm. Their strategy was they just acquired lots of different semiconductor businesses, either independent companies or divisions from other companies.
+
+Ben: And try to integrate them.
+
+David: No, they would acquire them. They would get these business units in good shape and then they’d sell them again.
+
+Ben: Oh, really?
+
+David: Yeah. Literally, they were like a financial engineering firm, basically. Definitely not Morris's cup of tea. He only stays there a year. It's clear that that's not a good fit, so he resigned again.Within less than 18 months, he's had two major, major setbacks in his career.
+
+Basically, his dream is over. Here's the quote from him. H esays, "Ater these two setbacks, at TI and GI, I did not think that my aspiration to be the CEO of a major US company was in the cards." Well,turns out he was right. He was not going to be the CEO of a major US company.
+
+How do we go from this dude in his mid-50s, former rising star, now washed up from that to he's in Taiwan, he's CEO of TSMC? I don't think you could ever script this out. I think this is probably the most unique.Every founding story is unique, but I think this might be the most unique founding story we've had on Acquired so far.
+
+Back when Morris was at TI—when he was running the semiconductor business there—he went over to Taiwan a couple of times to talk about building a manufacturing plant there. TI would own and build a manufacturing plant, but they would outsource to Taiwan, not like a TSMC-stylebusiness. It was a TI plant there. He had no connection to Taiwan. Remember,he's Chinese. He's not from Taiwan, people are like oh, Morris, you went backto Taiwan. He didn't go back to Taiwan.
+
+Ben: Yeah, he talks about how Taiwan was a strange land to him when he first got there. That it's not going back. It's not the land is a strange place to him, but like if he is going to call someplace home and return there, is it the People's Republic of China?
+
+David: Well, I think he would say at this point, it's America. He's been in America.
+
+Ben: That's a great point.
+
+David: He's a US citizen. I don't know what he would say.It's complicated. Anyway, he had met a bunch of government officials in Taiwan when he was talking about building this plant over there, and that was back in the ‘70s. Now we're in the mid-80s, Taiwan at this point, it's a manufacturing nation. They have no IP, no technology.
+
+Ben: It’s a great Morris quote, you have it? Okay, the quote’s great. All right, so this is Morris:
+
+"We had no strength in research and development, orvery little anyway. We had no strength in circuit design, IC product design. We had little strength in sales and marketing," and this is of course,referring to Taiwan as a nation, "and we had almost no strength in intellectual property. The only possible strength in Taiwan that we had, andeven that was just a potential one, not an obvious one, was semiconductor manufacturing, wafer manufacturing. And so what kind of company would youcreate to fit that strength and avoid all the other weaknesses? The answer wasa pure-play foundry."
+
+David: Yeah, that was Taiwan at the time. To give you asense, the typical gross margin, like the average gross margin of a Taiwanese company at this point in time in the mid-'80s, is 4%–5%. 04%–05% gross margin.
+
+Ben: Before you even have overhead operating costs.
+
+David: Yeah. If you grew up around when Ben and I did, sortof born in the ‘80s in the US, you see made in Taiwan on everything like Barbie dolls, toys, clothes. Everything was made in Taiwan. Now it's made in China,made in Vietnam, or elsewhere, but made in Taiwan was super low-end physical manufacturing stuff.
+
+Ben: Yeah, and a way pull forward the seven powers section,as Hamilton Helmer would sort of explain, if your margins, particularly your gross margins, are only 4% or 5%, you're in an industry or a business where allthe profits are arbitraged away, everyone's just race to the bottom on prices,and no one's able to build any real enterprise value because everyone's just out-competing each other for pure commodity.
+
+David: I mean, 4%–5% gross margins, people used to hammer o nAmazon, I guess, for being a low gross margin business in the 40%. Anyway, I can't even imagine running a company with that level of gross margins.
+
+The Taiwanese government wanted to come up in the world.They're like, this is where we are now, this is not where we want to be. They knew that technology was the way. They had decided back in the ‘70s that they would establish an initiative called the Industrial Technology Research Institute or ITRI, and the goal was for it to become like the Bell Labs ofTaiwan to do some tech transfers from the US and elsewhere, home grow some real technology businesses in Taiwan so that maybe they can lift businesses out ofpoverty there at least.
+
+Ben: Morris wasn't going to Taiwan to start TSMC.
+
+David: No.
+
+Ben: He was being recruited to ITRI.
+
+David: One of the ministers he had met, a guy named K.T. Li,because of this, he would also become venerated in Taiwanese history. He's known as the Father of Taiwan's economic miracle literally because of this.
+
+He recruits Morris to come over and run ITRI like be the head of Bell Labs Taiwan, essentially. This is a ridiculous thing for Morris todo. He had been captain of the American semiconductor industry, the fourth League. He was put out to pasture at TI, but at least he was still at TI. Then he was COO at General Instrument. He's going to go over to Taiwan and run a Research Park there, like what?
+
+Ben: Every time someone starts something like this, it doesn't go well. A government top-down innovation mandate from a country that's not a world power tends not to turn into a gigantic economic success.
+
+David: This is like all the countries and cities that are like, we're going to build the next Silicon Valley in XYZ. We're going to recruit some former Silicon Valley person to come do that, and it's going to work. Probably not going to work.
+
+Everybody tells him not to do this, all his former colleagues. His wife at the time told him not to do this. His marriage was actually falling apart maybe in part because of this. He's had all these experiences. He's like, you know what, I just need a change of scene. I got to get out of here. So he takes the job and he figures it's going to be cushy.This is like a soft landing.
+
+Ben: He thinks about this as like the pseudo retirement he's going into.
+
+David: Totally. Here's his quote, "By then I was financially pretty secure. I was not rich, but you also have to realize that the standards of wealth were much lower back in 1985." And he's going to live in Taiwan where corporate magnets have 5% gross margins. He says,"But still in absolute standards, I was financially secure which meant that I could live according to the way I desire, which was actually pretty modest... for the rest of my life without having to earn a living or asalary." This is retirement.
+
+Ben: He also makes a joke (I remember after that) about how by the way, interest rates were higher back then, so that was much more achievable on less principle.
+
+David: Totally. 1985, he goes over. He takes over as President of ITRI. It's kind of a culture clash. This is retirement for Morris,but he's still coming from this hard-charging industry. All of the employees of ITRI are people in government jobs in Taiwan, and government jobs, not even ina democracy because Taiwan is under martial law or I think that it just ended.This is not the same. These are all like jobs for life. You're a governmentofficial in a non-democracy-type organization.
+
+Morris says, "Back then they considered me a foreigner who suddenly became their boss. They were scared of me," and they wereright to be scared of him. There was one thing though, that the government had done right before Morris showed up, which was they had successfully negotiated one technology transfer license in the semiconductor industry from—did you find out what company this was? This is probably what they were trying to negotiate with TI for.
+
+Ben: I do. It's a three-letter acronym, isn't it?
+
+David: Yup, yup, yup. We haven't talked much about it on this show, but this is another talking about captains of American industry.
+
+Ben: Who was it?
+
+David: RCA.
+
+Ben: RCA, that's right.
+
+David: RCA semiconductor line and the government in the‘70s—the Taiwanese government—had negotiated a tech transfer.
+
+Ben: But this is like 10-year-old conductor technology,right? This is not the latest generation.
+
+David: No, TI, Intel, everybody, and Fairchild, they're leading the way. They're the bleeding edge of the semiconductor manufacturing process. RCA was already at least a generation behind. By the time it actually gets onto the ground in Taiwan, they're two and a half generations behind the leading producers.
+
+Ben: It's like the only thing that you can do with that is...
+
+David: Super low-end stuff.
+
+Ben: Right. There are some categories of goods that don't need fast or the latest processor.
+
+David: Totally, even today when TSMC, Intel, Samsung, or whoever built the fab, the leading-edge fabs produce the leading-edge stuff for a while, and then the new generations come on. They don't shut down the old ones. It's just chips that don't need the same bleeding-edge performance, they keep getting made on the old ones.
+
+Ben: Often that's automotive or now what we think of as IoT,but the stuff in your smartphone, obviously is the leading edge.
+
+David: The government, ITRI, does actually spit out a company using this old RCA technology that would be called UMC, United Microelectronics Corporation. Not a technology leader. It actually does okay inthe long run. They would later spin out their own chip design business. UMC wasdoing both fabrications for third-party clients and designing some of their own chips with the fab that they created. They spin out their chip design businesslater, that becomes MediaTek.
+
+Ben: Oh, no way.
+
+David: Yeah, which is a $50 billion company today. The government did pretty good.
+
+Ben: Yeah, totally.
+
+David: This is pretty good what they were doing. When Morris arrives because of this, he's not starting from a standing start. It's good,but some assets don’t fit.
+
+Ben: They've acquired IP. They've created a company. There's a paved path.
+
+David: He gets to work at ITRI. He is working on all this.He's transforming the organization into a high-performing organization. Then all of a sudden, out of nowhere, K.T. Li comes back to him and he’s like, hey,great, you're running our Bell Labs, you're running ITRI. Now I want you to start a company.
+
+Morris is like, uhh. K.T’s like, yeah, yeah, yeah. I don't want you to have somebody else in ITRI do it. I want you, Morris Chang, to start a new semiconductor company here in Taiwan and I want you to make it into a global leader. Morris is like, uhm, okay. I think he doesn't say this directly, but he's got a great quote I'm going to say in a minute. Remember this is not a democracy in Taiwan at this time.
+
+Morris is also on his third job in three years. Yeah, he doesn't need a salary to survive, but this is kind of the end of the road forhim. If he gets fired, here at ITRI, he's legit done. He kind of doesn't have a choice here. The quote—this is so Morris, it’s so great. He says, "It was like in the movie The Godfather. It was an offer I couldn't refuse."
+
+Ben: I do think the implication was go start an Intel, or gostart an IDM. It wasn't, go start the very first pure-play foundry.
+
+David: Yeah. Li was the government. He was a minister. He was like, go start a semiconductor company and make it a world leader.
+
+Ben: Right. Those semiconductor companies, they do really well, so go do that.
+
+David: Do that here.
+
+Ben: That's, of course, when Morris says, okay, I'm being told I should do this. I have some latitude I can take and some liberties I can take on how I do it. The quote that I read earlier about evaluating exactly what type of semiconductor company should I start, that's how he then forms thebusiness plan.
+
+David: Lee is like, all right, good. We're capeesh, we're clear. Come back to me in a week with a business plan, tell me what you need,and we're going to make this happen. Morris is like, okay, a week. All right.
+
+Then a day later, Li supposedly is like, actually, I’m going to need you to come in on Friday, so you got three days. They say necessity isthe mother of invention, and yeah, these three days are what creates the now ninth most valuable company in the world. Morris comes up with this brilliant idea to create a pure-play foundry company—to be a contract manufacturer.
+
+Ben: Sounds genius. Today, in hindsight—as Steve Jobs would say—it's easy to connect the dots looking backward, but at that time, was this a good idea, David?
+
+David: Well, no. The answer is no. Like we've sort of said all along, all the chip companies—all the American, European, and Japanese—all the leading semiconductor companies made their own stuff. And there was some sharing of production and some companies were emerging that were borrowing production from the big guys.
+
+There's a great quote right around this time from Jerry Sanders who was the co-founder and CEO of AMD. He famously said in themid-1980s, that "real men have fabs."
+
+Ben: That's right. What a quote.
+
+David: So ironic because in the 2000s, AMD would spin outits fabs and go fabless.
+
+Ben: Global foundries.
+
+David: Yeah, going to global foundries. But yeah, this was not an obvious idea. If you wanted to be a real semiconductor company, you made your own chips. The idea was, yeah, this isn't manufacturing Barbie dolls here.This is real technology. You need to control its soup to nuts.
+
+Ben: And already at this point in history, this is a nimportant point to make because I didn't realize this coming in where I thought, wow, Apple really outsources their manufacturing. They outsource some of it to TSMC and some of it to Foxconn. Maybe some of those people will start to do each other's work. No, this is a completely different thing.
+
+Assembling an iPhone is completely, completely different than taking a brand new design for the next-generation chip and manufacturing that chip. One is manufacturing and one is alchemy. The alchemy can only be done by alchemists. I think even here in the late ‘80s, we're already at th epoint where it's manufacturing broadly.
+
+David: You need to be a magician to do this.
+
+Ben: Yeah. It's not like, well, I got a factory.
+
+David: No. No, no, no, no, no. The opposite of that. We saida minute ago, this is a bad idea. However, there was one problem with thepure-play foundry model, and it was a fatal problem. It could be a fatal problem, which was, where's the market? He sounds like Don Valentine here.Where's the market? Show me the market. This whole idea was really a solutio nlooking for a problem.
+
+Ben: Of course, the solution being that all we have is manufacturing capability here. So let's start a company that just manufactures,and you're looking around like, okay, whose stuff are we going to manufacture?
+
+David: You got Jerry over at AMD. He’s like, "Real men have fabs." There are startups, but all these startups are building their own fabs, nobody wants to do this. Nonetheless, he has to start a company. He’s literally got a gun to his head.
+
+Ben: But he does have the core insight here. It's interesting, these companies don't exist yet, but Morris has reason to believe that people will want to start fabless chip companies and that they will need afoundry to fab those chips.
+
+He says, "When I was at TI and General Instruments Isaw a lot of integrated circuit designers wanting to leave and set up their own business, but the one thing or the biggest thing that stopped them from leaving those companies was they couldn't raise enough money to form their own company.Because at the time," as we were just saying—real men, "it wasthought that every company needed manufacturing, needed their wafer manufacturing, and the most capital intensive part of a semiconductor company,of an IC company (does the manufacturing). I saw those people wanting to leave,but being stopped by the lack of ability to raise a lot of money and build awafer fab."
+
+David: Totally, right? Those companies, if you build it,they will come.
+
+Ben: They haven't started.
+
+David: They haven't come yet. Morris is like, he knows what the long-term market is going to be, but he's got to find the short-term market. He needs some real politics here, so what's that going to be? So he says, well, maybe I can go around to the big guys. Just like my first thing back at TI, they've been doing some line-sharing for either new products thatthey need excess capacity for, or for older products that they need to transition some fabs but they still need to make components. Maybe I can takesome of that off their hands.
+
+He goes around. He talks to Intel. He talks to TI. He talks to everybody in the industry. Then he talks to Motorola, like, sure, fine. And the government had told him, we know it's going to take a lot of money to setup a fab. We're good for half of it, but you got to go raise the other half o it. And we want you to raise it from Intel or TI—somebody who's going to beyour first customer and they're going to be bought in.
+
+So he does the rounds. He goes and talks to everybody. Hegets meetings with Intel. He gets meetings with TI. They're both like, Morris,we like you, but no. So he’s at the last-ditch effort and he has a meeting with Philips, the Dutch company. They have a semiconductor business. He has a great quote about this. He would describe Philips as the first rung of the second raiders in semiconductors, but they were the only interested option. They putup 28% of the capital. The government puts up 50%. It ends up being $220million in total.
+
+Ben: $110 million is probably a lot more than what the Taiwanese government thought they were going to find here.
+
+David: Literally the Premier of Taiwan, the head of the government, has to then go around to all the other business leaders in Taiwan and strong-arm them into investing the rest of it. The other 22% I guess?
+
+Ben: Yeah, we all should quickly say, remember, that Philips was a Dutch company because that's going to come into play later.
+
+David: I don't know how that's going to come into play.
+
+Ben: Yeah. Putting a pin in Dutch.
+
+David: Okay, okay, we got a surprise coming. I'm going to be surprised here. We're doing it in real-time. We’re doing it live. This may be the craziest part about the whole TSMC founding story. I'm 99.9% sure, Ben, youdo not know this. Do you know what the pre-money valuation was on TSMC?
+
+Ben: No, I couldn't find that anywhere.
+
+David: It was $0. Morris Chang got no equity. Zero.
+
+Ben: So 100% of the company was owned by the investors?
+
+David: Fifty percent by the government and the other 50%were owned by the investors. Morris got nothing.
+
+Ben: And just got to keep his salary.
+
+David: He was a government employee.
+
+Ben: Wow.
+
+David: There by the grace of the government.
+
+Ben: Oh my God.
+
+David: Isn't that unbelievable? This is so the opposite of Silicon Valley.
+
+Ben: How is he worth $3 billion today?
+
+David: Well, what he did—as TSMC started to work—he basically put all of his money into buying. He bought his own shares in the company. I don't know if it was privately. They went public on the Taiwan Stock Exchange in 1994, and then the New York Stock Exchange in 1997. But yeah, heput basically all of his excess cash flow into buying TSMC shares.
+
+Ben: Oh my god.
+
+David: Isn't that wild?
+
+Ben: So the government-owned 50% of the whole business.
+
+David: And you can see their perspective too. They’re like,hey, we hired you to do this, and then we told you to do this. You are our footsoldier. We are the mafia.
+
+Ben: Wow. Yeah. Things had really not gone well in his career that he was willing to take that deal.
+
+David: Yeah. Crazy. Before we go on in the TSMC story, we need to have two real quick sidebars.
+
+Ben: Yeah.
+
+David: We're talking about the summer of 1987 when TSMC got officially set up. They raised the money at a $0 pre-money valuation. Do you know what other big thing happened in 1987—we have covered it on this show—inthe chip world?
+
+Ben: Is this the founding of ARM?
+
+David: Yes, it is. ARM—JV between Apple, Acorn, and VLSI Logic, which was the manufacturing partner. They were an A6 company. That's a whole nother sidebar we're not going to get into. But yeah, 1987. What a year
+
+Ben: Brand new, unconventional, instruction set architecture. It is totally different from the x86 stuff that the whole industry and world seem to standardize on at this point.
+
+David: The Annus Mirabilis for the semiconductor industry.
+
+Ben: Useless, right? In 1987 it's hamstrung, it's very few instructions. PCs are always plugged in, so what do we need a low-power chip for? This thing's pathetic.
+
+David: Real men have fabs and use power. Okay, so that's sidebar number one—ARM gets started.
+
+Ben: Okay. I was wondering, I don't actually know the relationship. Obviously, today, a huge volume of TSMC’s manufacturing is making chips for iPhones, which since the outset has used ARM.
+
+David: Chips that are using all mobile devices—iPhones and Android—all of which are ARM, and lots of servers that are ARM.
+
+Ben: Presumably, there's some relationship coming between TSMC and ARM.
+
+David: Well, they're really close partners. This stuff is so integrated. Architecture companies like ARM, the EDA companies like Synopsys—the engineering is all deeply embedded with one another.
+
+Ben: Okay, so you mentioned EDA, I'm going to take your sidebar.
+
+David: You're going to raise me.
+
+Ben: Raise you one more sidebar, so listeners, we’re twoclicks out here. This is a pretty good point to talk about how the value chain went from one company that created transistors and then they designed the chip,manufactured the chip, and marketed the chip. Here's how the value chain lookstoday. I think in the ‘80s, it already started to look like this.
+
+First, there's EDA. There's Electronic Design Automation.This is the software that professional chip designers use to do their work. So Synopsys, I think Cadence is another big one.
+
+David: Yeah, Cadence. They're the two leaders. That's Excelor Figma for chip designers. That's what they use.
+
+Ben: Productivity tools. So that's category 1 of 4. Ofcourse, as you can imagine, the software to design the chips probably has to be very aware of the manufacturing capability of who's going to be manufacturing the chips. Let's put a pause on that for a second. Then, of course, there are the fabless chip design companies. So today, think Apple, Nvidia, Qualcomm,eventually AMD after they stopped being real men, apparently.
+
+David: Tons of innovative new startups now like Cerebras.
+
+Ben: P. A. Semi before Apple acquired it.
+
+David: Tesla. Yeah. P. A. Semi is coming in a sec.
+
+Ben: Okay. So you've got the EDA companies that are making the software, the fabless companies that are designing the chips using the software.Then third, there's one company that we have not talked about yet—one component of the value chain, and these are the people that manufacture the machines that go into the factories that the foundries operate.
+
+David: There's actually one above EDA. There is one more part of the value chain. There's a fifth, which is IP. So that's all like ARM.
+
+Ben: Oh, right.
+
+David: Yeah, like architecture, IP. There's actually a ton of companies now that do just straight-up IP. I thought before this episode,these were like, oh, just shell companies that sue one another about IP. It's not that. Systems are on a chip now. It's like everything is on one chip,basically. You need USB functionality in your chip. You don't need to design that. You just buy some IP off the shelf. There are companies that do that.
+
+Ben: Yup. Okay. That's a good point. That's our fifth IP.They own the instruction set architecture. They kind of create the general rules that you're playing by when you're designing a chip such that whoever is writing the compilers knows what assembly language they're targeting, that cant hen operate on the chip that's going to be designed. We covered the EDA, wecovered the IP, we covered the fabless companies. There's somebody before weget to the foundries, which are the equipment manufacturers that sell to TSMC.
+
+More historically, you've got Lam Research, you've got Applied Materials in the US, you've got Tokyo Electron in Japan. But today—I just want to give everyone a taste of this and then we'll get more to it later—there's a company that is also Dutch-based called ASML, which was originally ASM Lithography. Lithography is marginally in scope for this episode. There's a whole thing we could do on the magical process that is lithography.
+
+David: Take me back to my high school photo lab.
+
+Ben: Right? And the L is lithography. So the company was originally called ASM Lithography. They make the most advanced chip manufacturing machines in the world. They're the only company that makes them.They're located still in the Netherlands. Their biggest customer is TSMC. Thisis where I want to bring it all the way back around, and we of course will talkabout the magic that is these machines later. It was founded in 1984 as a joint venture between Advanced Semiconductor Materials International—ASM Lithographyand Philips.
+
+David: Oh, wow. I did not know that. That’s crazy.
+
+Ben: That is the beginning of the relationship between TSMC and their equipment provider.
+
+David: What a strategic point. It's TSMC’s insane capital operating cash flow production that enables them to spend CapEx above anybody else that allows them to buy more ASML equipment than anyone else. But that relationship, wow. These machines—we'll get into it later. It's going to blow your mind what this stuff does. Back to my second sidebar, also going to beworth it, P. A. Semi, right?
+
+Ben: Yeah.
+
+David: We did an episode, it was like episode 20 something.
+
+Ben: This is like when Acquired was a very different show when it was actually about small acquisitions.
+
+David: Totally. I don't know that we actually covered this,but I uncovered it in the research for this episode. Do you know the origins ofP. A. Semi?
+
+Ben: No, I don't.
+
+David: Okay, so ARM, my sidebar number one—1987 also created. They’re just an IP design company like I was saying in your sidebar.
+
+Ben: It's like Inception over here.
+
+David: They just license out the ARM architecture to other companies that then design using the ARM architecture. One of their original licensees was DEC, Digital Equipment Corporation, OG way back in the day. So they took the ARM architecture and tuned it for performance. They called what they did at DEC—their version of ARM that they created—StrongARM. That productline within DEC would later be acquired by Intel of all places. Crazy why Intelacquired an ARM architecture.
+
+Ben: Right. They're the x86.
+
+David: Yeah, they remarketed it as XScale. I think they ended up shutting it down. So a bunch of the core engineers on the team like the deck team that I've been working with ARM from back in the day, and they're like, we just got acquired by Intel. What the hell? Screw this. We don't want to go work for Intel, we’re ARM.
+
+Ben: There are no interesting flourishing alternative architectures at Intel.
+
+David: Yeah, we're ARM engineers. We're going to go startour own company.
+
+Ben: That's P. A. Semi?
+
+David: That's P. A. Semi.
+
+Ben: Of course, the underpinnings of all of Apple's chipstoday.
+
+David: Totally. The lineage of all of Apple silicon—probably the most valuable defensible part of Apple today in terms of technology—was ARMand DEC to Intel to P. A. Semi to Apple.
+
+Ben: That's wild. I don't think I ever knew that. So you cant race Apple silicon all the way back to Apple.
+
+David: Yeah, because ARM was a JV with Apple.
+
+Ben: Yeah. Crazy.
+
+David: With Intel and DEC. Wow. Okay, so back to TSMC.Morris basically begs all of his old colleagues in the US, European, andJapanese semiconductor industries to just give the dregs to TSMC. And it really was the dregs. Here's Morris on what this was. "The IDMs would let usmanufacture their wafers only when they didn't have capacity, or when theydidn't want to manufacture the stuff themselves anymore. Now, when they didn'thave the capacity, and asked us to do the manufacturing, then as soon as theygot the capacity, they would stop giving us orders, so it wasn't a stablemarket."
+
+Ben: It wasn't actually a thing they wanted to outsource.They were just using them for available—
+
+David: They didn't have the capacity so they needed someextra excess space. But then when they got the capacity online, they took itaway. The chips that they gave us that they didn't want to make anymore, thereason they didn't want to make it was because it was losing money. Theybasically were just transferring their losses on producing these chips to TSMC.
+
+Ben: How did they get out of this?
+
+David: Morris continues, "The conventional conclusionat the time was that there was no market. That's why the pure-play foundry ideawas so poorly thought of. What very few people saw, and I can't tell you that Isaw was the rise of the fabless industry, I only hoped for it." As yousaid, "But I had better reasons for hoping for it than the people at Intel,TI, and Motorola because I was now standing outside. When I was at TI andGeneral Instruments, I saw a lot of these IC designers wanting to leave, start their own businesses, and the constraint is setting up their own fabs."
+
+Yes, he saw that at TI, but remember, he had been considering becoming a VC instead of going over to E3. This is the ultimate endround. He becomes essentially the world's best semiconductor VC. He takes ani ndex out on the whole future innovation and entrepreneurship market in semiconductors by becoming the platform that they're going to build on, instead of going and investing in them. He enables all of it. He's like the Y Combinator of semiconductors.
+
+Ben: Right, or in many ways, the Tencent. Tencent, ofcourse, also does direct investing. But the idea that you could get distribution through WeChat—it's not distribution, but it is manufacturing.There is a thing that you have to raise 10%–20% of the capital that youotherwise would have needed to raise if TSMC exists.
+
+David: Yup. Just like Don Valentine when he left to go join VC a generation earlier, and again, this is not VC, it's TSMC building theplatform. But Morris is a hero. All these engineers all look up to him. He knows a lot of them personally. The ones he doesn't know, like, who's not going to take a meeting with Morris Chang?
+
+Ben: He almost ran TI.
+
+David: Totally. He did all this amazing stuff.
+
+Ben: It's interesting because it's like with the incumbents because they had it in their DNA to be a manufacturer, of course, they wanted to take the most profitable things and manufacture them in-house. But if youa ctually are betting on all these startups that will never develop DNA to be their own manufacturer, they never want to take that back.
+
+David: Yeah. Morris is now going out and evangelizing, and he's like, all these great designers, we're an option for you now. You want to leave, you want to start your own income? You don't need a fab, we'll be your fab. It takes a couple of years. For a couple of years, TSMC has to survive on the dregs from the IDBMs, the big guys. But after a couple of years, these startups get going. Little companies like Qualcomm, Broadcom, Marvell,Nvidia—these are all started with TSMC.
+
+Ben: Nvidia was started in 1993, only ever raised $20million, and never opened their own fab.
+
+David: I believe 100% with TSMC. Well, maybe they have other sources in other foundries too, but the vast majority of their business—Jensen talks about this. It took him actually a little while to get on Morris's radar.But once he did, the vast majority of Nvidia's chips, TSMC makes them. Nvidiais what, like a $350 billion, $400 billion market cap company now.
+
+Ben: It's wild.
+
+David: They only raised $20 million. It's like AWS for chip companies—never would have been possible before. This is what's super cool. I don't think Morris saw this. This even exceeds his wildest dreams. He was hoping for this fabless market to take off, but this creates this insane flywheel for TSMC. The fabless market starts to grow, which they're seeding and enabling it. As that happens, TSMC’s revenue grows.
+
+Ben: Because they have 50% gross margins and 40% operating margins, they can take that profit and apply more advanced machinery to build more fabs.
+
+David: Advance the level of their technology. Remember, they were starting from behind on technology. Within about 10 years, they catch up,and then they start to exceed everybody else. As they pushed the manufacturing process technology forward, they're manufacturing better chips with smalle process links. They're enabling their customers, which are the fablesscompanies, to get better and better performance.
+
+As they get better performance, the fabless companies can address more of the market and more use cases. Their existing customers get bigger and new fabless customers start, which gives them more revenue, which repeats the whole cycle. It goes slow. Like any flywheel. It takes a lot of effort and a lot of time to start turning it.
+
+Fast forward to now. In the early 2000s, when TSMC finally caught up to the leading edge level of technology with other semiconductor companies, there were 22 companies that were at the leading edge. Let's call ita 150-nanometer process or something like that at that point in time.Twenty-two and TSMC finally broke into the pack. They were one of the 22. Bythe late 2000s, it had gone from 22 down to 14 that were at the leading edge.By the mid-2010s, there were six.
+
+Ben: It's basically Samsung and TSMC, right?
+
+David: Today, there are two at 5-nanometer processes—the current leading edge. It's only TSMC and Samsung. Intel has been trying to getthere, but they haven't been able to. They've fallen behind. The next process is going to be 3 nanometers. TSMC is going to launch that next year.
+
+Ben: Which by the way, just slipped six months.
+
+David: Interesting. Well, Samsung has already slipped to2024.
+
+Ben: Whoa.
+
+David: So very likely in the next process, it’s just going to be TSMC.
+
+Ben: Which means that you will see that on an Apple slide somewhere announcing the next iPhone talking about how it's a 3-nanometerprocess. They'll take all the credit for it. And TSMC is totally fine with that because their job is not to market. It's to empower their customers.
+
+David: This flywheel, it's just unreal what happens here.They run the table on the whole industry.
+
+Ben: It is interesting. The industry went from vertical to horizontally integrated, where the very best products in the market became horizontally integrated. I'm trying to figure out what drove that. I guess there's a couple of components to it. One is the speed at which Moore's Lawhappens makes it such that you can't be good at everything. You can't be goodat everything from EDA, to making the manufacturing equipment, to running themanufacturing process, to designing the chips. You're not going to write yourown instruction set architecture. People did need to break into the best of class.
+
+David: Morris got this great quote about this that I have inhere. He says, "The semiconductor business is like a treadmill that speeds up all the time. If you can't keep up, you fall off." And that's Moore's Law. From 22, down to 2, down to 1. Even when their competitors are only doing the one thing that TSMC has done, if you fall behind by a step, you're toast.
+
+Ben: Right. There's this big part of it that you're talking about that hasn't come up in other episodes because we tend not to talk about companies that require a lot of manufacturing prowess. In order to stay on that treadmill, the number of tens of billions of dollars that you need to be spending on CapEx is going up. You need to be enormously profitable so you canbuild the factories for the next generation.
+
+David: Yeah. There are two things. Yes, that is 100% true.TSMC just announced they're going to spend $100 billion in CapEx over the next three years, $30 billion this year, $60 billion over the next two, and I bet that keeps going up. That's a lot of billions. You might even say, this is so strategically important and people are talking about this. Certainly, China'stalking about this. The US government's now talking about this. Governmentsmight need to come in with a bazooka of money and create other options.
+
+Almost all their manufacturing is in Taiwan. It's in this strategically, geopolitically challenged location. We need to re-onshore some of this in the US. China, of course, wants their own. You can't just spend the money and do this. The US government could come in and say we're going to spenda trillion dollars this year to do this. They can't do it because—we're goingto get the powers later—there’s this marriage of scale economies and processpower that TSMC has in this industry.
+
+There is no amount of money you could spend to catch up next year. You can't because engineering is so hard and the learning curve takes decades to get to this point. I was listening to a podcast—Bloomberg Odd Lots podcasts about this—where they're talking about this and the reporter who covers TSMC is great. They have some questions, like, will China just spend a billiondollars and create their own fabs? And they're doing this.
+
+Ben: What's the company called? SMIC?
+
+David: Yes. SMIC.
+
+Ben: Basically, TSMC seems to have picked the side in the US, with a little bit of prodding I'm sure from various presidential administrations over the last five years.
+
+David: Yeah. The guy who covers TSMC was like, they can do that and they are doing that, but they wouldn't know what to do with it. It's not because they're dumb.
+
+Ben: It's the hardest thing in the world to do this stuff.To make the equipment that ASML does and to manufacture the way that TSMC does it is the hardest thing to do in the world.
+
+David: Yeah. Anybody else could get all the same equipment from ASML.
+
+Ben: Actually, that's not true.
+
+David: Oh no. I’m saying, even if you could, you wouldn't know what to do with it.
+
+Ben: Right.
+
+David: It's not because you're dumb. There are only a small number of people in the world that can operate this stuff.
+
+Bem: All right, I'm jumping out of my seat here. I'm going to do the ASML thing now. The reason that some people can't get their hands on the ASML equipment is because the Netherlands did not renew their trade agreement with China.
+
+Also likely, it has been reported that probably that is because of US prodding to say, hey, these pieces of equipment you're making seem pretty specialized. You're the only person in the world who can do it. It makes the most cutting-edge semiconductor manufacturing technology. Ah, maybe let's not sell that to SMIC in China, so they're not doing that. You might say,oh, come on, how hard can this stuff be?
+
+David: Tell us then what these machines do.
+
+Ben: Well, first of all, they cost $200 million for a machine that makes the chips. That's going to go up to $300 million. By the way, on a lot of this, we have a lot of thank-yous for John Bathgate and Britton Johns, from the episode of the knowledge project that they went on totalk about a lot of this stuff.
+
+It takes four 747s to ship one of these machines. You're TSMC, you buy one, and it arrives. Of course, the 747s, then there's a crew of ASML employees on-site, not only to assemble it, but then to help you run it. Like you mentioned, these companies are deeply integrated with each other to be able to pull this off.
+
+David: What does running it mean? What do these machines do?
+
+Ben: It becomes exponentially harder to manufacture chips the more dense they are. So David, you mentioned 150 nanometers or so from several years back. We know now that the M1s are made on this 5-nanometerprocess. Well, the wavelength of white light (of regular light) is 193 nanometers.
+
+David: That seems like a problem.
+
+Ben: Well, it's certainly wide. But we're humans, we come up with clever solutions. We can solve this. So you shoot it through a lens or maybe you shoot it through some water.
+
+David: Like a laser?
+
+Ben: Well, not yet. But even that really only gets us tolike 11 nanometers. How the heck are we supposed to make these chips where the transistors are ostensibly only 5 nanometers apart? When what we've done todate—shooting through lenses and shooting through water—gets us to 11 nanometers?
+
+Well, okay, this is crazy. You have to create a plasma. What they do, and this is called extreme ultraviolet light or EUV—this is a process that is just wild. On one side of the machine, you drop molten tin. On the other side of the machine, you then hit it with a highly specialized laser. You perfectly pulse them. It explodes into a plasma, which creates extremeultraviolet light. Of course, this is hard enough to do as you can imagine howthat might work, but you actually have to do that 50,000 times per second.
+
+David: Yeah. What I read is that the accuracy with whichthat laser needs to hit the drop of the molten tin is more precise than the calculations to send the Apollo missions to the moon. You got to do that 50,000times a second.
+
+Ben: Unbelievable. Think a little bit more about this. Wait a minute, that wavelength is so small, we're going shy of 11 nanometers here.We're going to 5 nanometers, 3 nanometers, that actually it is absorbed by all known mirrors, which were used to reflecting light. But they don't reflect this light because the wavelength is so small. Part of this process involvesreflecting it a bunch of times—like 20 or something—before etching the silicon.So what do we do?
+
+ASML actually needed to invent a new type of mirror to do this. They also needed a contract with a German company to make this special type of laser, which is the only known company in the world capable of making it. This is crazy hard stuff. They only make 50 of these machines per year orso. They used to have competitors like Nikon used to compete with ASML on this,but it's too hard, they gave up. That's how hard extreme ultravioletlithography is.
+
+Of course, we haven't talked a lot about this and I think it's outside the scope of the show, but just to overly simplify—lithography iskind of the process of taking that silicon wafer and etching a design on it. Ifwe want to do that in smaller and smaller ways, we got to do it with more andmore specialized equipment. At the end of the day, if you want to make the M2,the M3, the 18x bionic whatever it's going to be called, there is no other wayto make it than this extreme cutting-edge alchemy.
+
+David: It truly is alchemy.
+
+Ben: You're a government, you want to throw a $100 billion—
+
+David: Acquired is really doing well. We're on a tear here.We’ve got power, we’ve got brand power. We got network economies. We got our community. We're doing well. We should invest in it. We should [...]opportunity. We should compete with TSMC. Screw the governments, we’ll do it.We've got a couple of $100 million. We’ll buy this stuff. You have a CS degree.You're the more technical one. You can run this stuff. When we get the shipments from ASML, you can make this happen.
+
+Ben: I wouldn't know the first thing to do. Even if we could invest the cash, even if we could build the facility, even if we could buy the machines—which by the way, that's going to be hard because there's 50 some on backorder. I can't even get them for a couple of years.
+
+David: TSMC has ordered out all of them for years.
+
+Ben: It takes people who have done the most advanced manufacturing in the world ever in history in order to know how to do the next version of it.
+
+David: This is why TSMC has 40% operating margins.
+
+Ben: It's crazy.
+
+David: Totally crazy.I'm just in awe of this.
+
+Ben: Completely.
+
+David: Okay, so alittle while back before we get totally geeked out on that, which was awesome,you said something like, how do we get this flywheel effect? It's great, but how do we really get from TSMC started taking the dregs from the IDMs, then the fabless companies came along. How do we get from there to now? There's anotherr eally important chapter here.
+
+Ben: You're going to flash us forward from ‘93, ‘95 to 2010-ish. Is that what's about to happen?
+
+David: 2008. First,we'll stop in 2005. So 2005, things are going well, better than Morris ever imagined. These fabless companies are getting started. Nvidia is killing it. Iwas making gaming PCs at the time. I wanted those Nvidia GPUs.
+
+Ben: But Nvidia wasn' ta top 20 stock in the world.
+
+David: No. Nvidia,come on, real men have fabs. Okay, maybe we're beyond that part, but they weremaking GPUs. Nvidia’s stock track to whether they won the next Sony contract for the next PlayStation or the Xbox.
+
+Ben: That was the market for GPUs.
+
+David: That was the market, right. Great market, but it's not what we're talking about here.
+
+Ben: It's not abou tmachine learning. It's not about crypto. It's like, is the next PlayStation going to include your chip or not?
+
+David: Totally. But still, great for TSMC. It's awesome. 2005, Morris is 74 years old. He's like,all right, I did it. I did it and I've been buying TSMC stock with my ownmoney. It's done well enough. I didn't really need to work anyway. I'm going tocall it. I'm going to retire. Ready to retire, ready right off into the sunset.He hands the reins of TSMC over to his longtime Lieutenant, Rick Tsai, and here tires. He spent a couple of years. He's just chilling. I don't know what he's doing.
+
+He loves literature.He's reading all sorts of stuff. He's on a second marriage, credits to his second wife for really reinvigorating him and inspiring him. Then it's thesummer of 2009.
+
+Ben: By the way,that's right around the time that people were starting to speculate that EUV might work. All this had been kind of an idea to this point.
+
+David: Interesting.[...] science projects before. Oh, cool. I didn’t realize that. This is going to make what happens even more sense. The financial crisis happened in 2008.Chaos everywhere, we've talked about it a lot on this show. Surprise press conference, TSMC, Summer 2009.
+
+They announce that Morris is returning to lead TSMC as CEO. Rick is out. Morris is coming back for the third act of his career. I don't even know what number he's wearing. It's not 45 because that was the second act. He's like Jordan. He's beyond Jordan at this point. He's coming back. He's going to be CEO again at age 78. Rick would actually have a second act himself. Do you know what Rick is doing now?
+
+Ben: No.
+
+David: Rick is CEO of MediaTek [...] of UMC. He's doing fine. Rick's doing great, but Morris comes back. Why does Morris come back?
+
+Ben: But this is heralded as kind of a botched transition.
+
+David: Yeah. There's a lot of stuff going on.
+
+Ben: From Morris toRick, people viewed it as like, you didn't really do a great job bringing in the next CEO of the company,
+
+David: Maybe. I don't know enough to say. I think maybe, but also, there's a lot going on at this moment in time. The financial crisis, that's a crisis that's affectingeverybody. That's one thing. But the other thing, in the press release, there'sa quote from Morris and he says, one, "This move will not affect TSMC's fighting spirit and is likely to spur greater intensity." But two, he says that he sees "golden opportunities ahead." What are these golden opportunitiesthat he's referring to? It's 2009—mobile, the smartphone.
+
+Ben: 2007 in July, the iPhone came out, 2008, the iPhone 3G came out with the App Store for the first time, the SDK, and all these developers building for it, but of course...
+
+David: An Android came out in 2008.
+
+Ben: Yup. Apple had to this point, while building this operating system, the scaled down version of OS10, it's Unix, but they weren't designing their own chips. They just used anoff-the-shelf Samsung chip. They got it right by saying like, hey, we got to use ARM in these things because you need a really low power device. They'vedone actual God's work and magic to be able to bring a PC x86 operating systemand created a sub-operating system from it.
+
+David: Computer it onyour hand.
+
+Ben: Totally, thatruns on ARM—a miracle. But of course, it's an off-the-shelf Samsung processor.
+
+David: Totally. Eventhat's great for TSMC. Intel's not making that. Okay, so that's one. We'regoing to talk more about that in a sec.
+
+Ben: We should say,Samsung also fabbed it because Samsung is both chip designer and amanufacturer.
+
+David: But the pointis (on mobile) the previous whole paradigm of computing, selling, and everything was PC. It was like stuff plugged into a wall. It was Intel. It wasx86. Yeah, TSMC could now access some of that because AMD went fabless, but come on. Now, all of the leading companies that are going to make silicon for design are ARM companies—Qualcomm, Broadcom, MediaTek, and Apple.
+
+Ben: Who all are fabless.
+
+David: All arefabless. That's a big opportunity, and guess who knows all of those people—Morris.
+
+Ben: We should say,2009 was an interesting tipping point because if you'll remember back to the2007 introduction to the iPhone, Steve Jobs has a slide where he says their hope, their goal is to get 1% of the existing smartphone market. Apple had no notion. Google had no notion of how big smartphones were about to become.
+
+In 2009, I think the iPhone 4 came out. We're starting to see a ton of different OEMs making Android phones. You're moving into this era where everyone's looking at each other going, oh, this might actually be the next computing paradigm.
+
+David: Yeah. It was half of the next computing paradigm. Remember, this is when I started in VC.There were two waves that everybody was talking about.
+
+Ben: Mobile and social?
+
+David: Mobile and thenon the consumer side, everything's shifting to mobile. That was what happened.
+
+Ben: Bring your own device?
+
+David: Sort of, you're on the right track. What happened in the enterprise? The cloud.
+
+Ben: The cloud.
+
+David: So you gotmobile and you got cloud. It's so simplistic, but those are the two things that drove trillions of dollars in market cap over the next decade. What's the cloud? First, the cloud is good for Intel, x86, you're putting CPUs in thecloud. Amazon's buying lots of...
+
+Ben: The cloud is the best thing that ever happened for Intel.
+
+David: Totally.
+
+Ben: That is an incredible server architecture.
+
+David: It was the best thing that ever happened to Intel. But as the cloud progressed and computing workloads progressed, the CPU became a lot less important. AI started becominga thing. CPU, maybe you need some of that. Maybe you'll use Intel, maybe you'lluse ARM, whatever. What really matters...
+
+Ben: The majority of cloud workloads are still on CPUs today.
+
+David: Okay, fine,fine.
+
+Ben: But you're right,the future looking.
+
+David: Why is Nvidia now a $300–$400billion market cap company? It's not because of the PlayStation.
+
+Ben: It's bigger than Intel, right? Nvidia is 2X Intel's market cap, something like that.
+
+David: It's the cloud.
+
+Ben: The notion ofc hips that are really good at parallelized processing—which is GPUs, and matrix multiplication effectively—vector math, versus the CPU—which are sort of these general-purpose workhorses built for the operating system that runs on your computer, supergood for serial. Of course, there are 64 cores on a CPU now, so they're good at parallelization too. But all this stuff, especially machine learning, is GPUs.
+
+David: It's GPUs and specialized like the Tesla Dojo stuff, that's not x86.
+
+Ben: Yeah. The other thing that foundries enabled, the fabless era enabled is the custom chip.Everybody's building custom chips for all sorts of things.
+
+David: Yup. These two big golden opportunities are coming online and Morris is like, I got this.
+
+Ben: When we should say we should clarify too, I think Tesla uses Samsung.
+
+David: Interesting. I didn't know that.
+
+Ben: Not TSMC, or atleast for part of it. I think they actually even fab their chips in Austin in the US.
+
+David: Really?
+
+Ben: Yeah.
+
+David: I can imagine that's going to last.
+
+Ben: This is like the beginning of what everyone's sort of hoping for in the US. This is a return to American manufacturing of chips.
+
+David: They're going to have to go to TSMC though in the next generation because you want a3-nanometer.
+
+Ben: It depends. It depends on what the workloads are and if you need it.
+
+David: Yeah, I guess so. It depends on what you need. Anyway, the point is, Intel's dominance isover. The index on all that's going to take over is TSMC and Morris riding back in. He comes in. He gets these deals done. The Apple deal, 2012, Morris Chang,78, 80 years old.
+
+Ben: I think the Apple rep on that was Jeff Williams, the classic Tim Cook's Tim Cook.
+
+David: That's right.
+
+Ben: I think there was something where it was even like, one went over to the other's house for dinner or something. It was like a living room conversation to ink the deal for, hey,we bought this company—P.A. Semi. We've been designing our own chip architecture in-house. We’re going to launch (I think it was) the A4 was the first one.
+
+David: Yeah, I think that was the first one.
+
+Ben: It was Apple basically saying, we think a lot of people are going to buy a lot of iPhones int he future, and we are competing head-to-head with Samsung because they're a company that is not clear on strategy. They have a consumer angle here with the Galaxy phones. They think they're also kind of a foundry, which we...
+
+David: And Jobs hated Samsung famously. What did he call them? He called them some derogatory terms.
+
+Ben: There's been a few interesting things. There was Steve Jobs saying he was going to wage a thermonuclear war.
+
+David: That was on Google.
+
+Ben: I think that wasGoogle.
+
+David: But he had somelike, oh, Samsung, they're just [...], something that really put them in...
+
+Ben: It was about the lawsuits. It was like when they kept stealing Apple's designs. This is late rbut Tim Cook read the quote on stage about it being a toxic hell stew.
+
+David: It doesn't get any better than that.
+
+Ben: No. But Bloomberg reported that it was a really big risk for both companies, both Apple and TSMC.Apple was relying on a company that was then seen as an also-ran. The quote is,I think this is actually Jeff Williams, "If we were to bet heavily on TSMC, there would be no backup plan." For TSMC, it meant an initial investment of $9 billion dollars—fabs are expensive to build—and devoting 6000employees to building a dedicated plant for Apple in just 11 months. It took several years before it even began producing the chips. That was in 2010 andthen I think 2012 was the launch of the A4 designed by Apple, built on the P.A.Semi acquisition, and of course fabbed by TSMC.
+
+David: I think it wasn't until the iPhone 6, which was 2014, 2013 something like that.
+
+Ben: That they were solely TSMC?
+
+David: I think so.That was like a huge hit product. Because remember, the 6 was when they firsti ncreased the screen size. Those things flew off the shelves.
+
+Ben: I'm pretty sure some iPhones had Samsung fabbed A4s and A5s in them, and some had TSMC fabbedones.
+
+David: All iPhones were huge winners, but the 6 was a mega, mega winner. I think that was all TSMC.
+
+Ben: $9 billion of manufacturing capacity just for a deal with one company, it paid off.
+
+David: That was a betafarm deal and something only Morris could do.
+
+Ben: Totally. It really speaks to founder gravitas.
+
+David: Yeah. Even i fhe had no equity as a founder, no equity that he didn't buy. After getting that deal done in 2013, Morris stepped down as CEO again, but he stays on as chairman. Then finally, once it all plays out and TSMC is on top, in June of2018, Morris retires presumably for real.
+
+Ben: He even stepped down from the chairman role this time.
+
+David: Fully retires from chairman at age 86. Oh my God, wow. That was 2018. Let's talk about now.So 2020, TSMC (we alluded to this) operating profit of $20 billion on $48billion of revenue. They took $17 billion of the $20 billion in operatingprofit and plowed it all back into CapEx last year in 2020.
+
+Beginning of this year, January 2021, they gave guidance that they will raise CapEx from $17billion last year in 2020 to $25–$28 billion in 2021. In April of this year(2021), they raised it again to a $30 billion forecast for the year and $100billion over the next three years. That's the real shot across the bow thateverybody wakes up. The financial markets wake up and they're like, holy crap,TSMC has cornered the market. Even Samsung's not going to be able to keep upwith this. It's wild.
+
+Ben: It is wild.There's a bunch more to talk about today. But first, I want to talk about our second sponsor for season 9, PitchBook.
+
+David: Anytime we're talking data, we're talking PitchBook.
+
+Ben: Absolutely. As many of you know, maybe all of you know I think at this point, PitchBook is the leading financial data provider for VC, PE, and M&A. Their platform includes a database with information on more than 3.1 million companies. I willtell you that they do not sacrifice quality for quantity because 96% of theirclients rate PitchBook's coverage of private companies as better than any otherdata provider.
+
+I'm just going to stop reading the script here because I think everybody knows, the very highest quality you can find on any company out there is going to be on PitchBook. Itis just such a joy to have them as a partner. Frankly, we have just been usingtheir data for Acquired forever. It's so cool as I drink here from my PitchBookwater receptacle.
+
+David: Nice.
+
+Ben: I know.
+
+David: We're talking about all the enabling technologies and waves that have enabled TSMC. I think personally, Acquired, in terms of the quality of the show, really hit aninflection point in the last few months. I think you could trace that to theuse of PitchBook data.
+
+Ben: I think you cantoo. Listeners, we have a special offer today and for all of the season. You can explore their database firsthand and you get a limited access program,which includes free access to the largest database of private market intel fortwo whole weeks. You can monkey around in this crazy, crazy forest of information. To sign up, visit pitchbook.com/acquired or click the link in the show notes to see how PitchBook can help you. More on TSMC today.
+
+David: Speaking of data, I think this is the data point that really says everything. Since the first IPO in Taiwan in 1994, TSMC has had compound annual revenue growth of17.4% compounded for 27 years. Now the IRR—the equivalent of valuation on market cap—was a $4 billion market cap at the Taiwan IPO in 1994. Today it is$550 billion. That is a 19.9% IRR starting from a $4 billion base over the last27 years.
+
+Twenty percent IRRover 27 years, incredible by any means starting from a $4 billion base. It is now—currently as we record—the ninth most valuable company in the world.
+
+Ben: I think other than Saudi Aramco, it is the only company in the top 10 that we haven't done on Acquired.
+
+David: Interesting.Other than Saudi Aramco, the US oil companies are no longer in the top 10. That might be foreshadowing some future episodes this season.
+
+Ben: They're in hallowed grounds at this point. The other thing, just talking about financials today, is crazy that they grew 31% in revenue from 2019 to 2020.
+
+David: They doubled their [...] from 2019 to 2020.
+
+Ben: Yeah, it's nuts.
+
+David: Talking about accelerating growth.
+
+Ben: In 2020, theira djusted net income was $17 billion. How are they going to spend $100 billion over three years? Is that going to be out of profits for each of those years,or do you think they're doing some kind of financing?
+
+David: I don't know. I actually don't know if they've done any financing. I'm quite confident they'll make enough profit to fund it organically. Because big news just in the past week, they started this a little earlier in the year but now they're reallygoing. They’re getting away from Morris's second big innovation of reducingprices.
+
+Ben: In fact, I thinkt hey're going to raise prices this year by 20%.
+
+David: The first announcement a couple of months ago was they're not going to cut prices. Then they just announced they're going to raise prices. Nobody's ever done this since the pre-Morris days.
+
+Ben: Pricing power inaction.
+
+David: Totally. What a clearer picture of how they have taken a commodity business and turned it into—this has got to be one of the biggest moats of all time.
+
+Ben: Totally. They've got $28 billion of cash and cash equivalents on the balance sheet, and they're going to use that and all the cash that they generate from their operations toplow directly back into making sure that everybody else is five-plus yearsbehind.
+
+David: Unbelievable.
+
+Ben: The other thing is that they already are the largest. They have over 50% of the market for foundries, for all contract manufacturing of chips.
+
+David: And 95% plus ofthe profit.
+
+Ben: Correct. I thought where you're going with that is also true that they have 90% market share on the current generation, the leading-edge chips.
+
+David: Yeah, exactly.In the 5-nanometer, Samsung has 5%, 10% market share and TSMC has 90% plus going to 100%.
+
+Ben: In many ways,they're the Apple of semiconductors. They don't have all the market share, but they have all the most profitable market share.
+
+David: Yeah, exactly.They are the iPhone of semiconductors. You could still buy the worstt echnology. On the Odd Lots podcast, they talked about certainly the bear case going forward for TSMC. One potential one is that, oh, well, the processing power is so good that you're not going to need the leading edge anymore.
+
+I find that a really weak argument. You always need the leading edge. Do you think Tesla doesn't want the leading edge? Do you think Apple doesn't want the leading edge?
+
+Ben: Software will always match the complexity on the most advanced hardware it can run on, whichis why I love when people are like, Apple is slowing down my computer. I'm like, yes, I'm sure that's what's happening. They wrote a special code that they're putting on there to make the consumer—no, it's because every piece of software just always assumes that it has the most advanced processor on earth.
+
+Developers, sure, theytest on two- and three-year-old equipment, but no one's making sure that th esix- and seven-year-old laptops are as performant. Software designed for the current generation is hard work.
+
+David: You think that Google and Amazon are going to be like, no, we're good? Hell no.
+
+Ben: It actually is worth touching on. There's one other interesting bit about this 5-nanometerprocess, which first of all is a marketing name at this point. What it used toor originally referred to as the length on the gate on the transistor. At this point, it's not exactly 5 nanometers and the additional performance is not going to come from making smaller gates.
+
+Here is the interesting thing though. You actually can't put these transistors much closerto each other. If you think about silicon atoms that are between the transistors, you can only fit five of them in a nanometer. In a three nanometer process, sure, it's marketing speed. At some point, you cannot subdivide silicon anymore. Either we need to change the substrate or the innovations are going to come from elsewhere.
+
+David: Yeah, which has always been the case. Moore's Law was technically the doubling of the number of transistors on an integrated circuit.
+
+Ben: Now it comes from multi-core, it comes from all the other advancements of figuring out how to make chips do more stuff faster.
+
+David: Yup. That Ithink is going to keep going. I think it's going to keep being expensive and getting more expensive. I think TSMC is the only company that's going to be able to keep up with the leading edge.
+
+Ben: Yeah. Do you know about Moore's second law?
+
+David: No, I don't.
+
+Ben: Everyone knows about Moore's Law, but there's this second one, which is also known as Rock's Law after Arthur Rock.
+
+David: Yeah, OG.
+
+Ben: It states thatthe cost of a semiconductor chip fabrication plant doubles every four years.With fabs today costing $15 billion, $20 billion, I don't know that that'sproven exactly true, but it’s certainly—
+
+David: Shoot. If wejust look at TSMC's CapEx forecasting, they're going from 17 to 30, to 60 over2 years. That's way faster than four years.
+
+Ben: The interesting thing is when you combine these two things—Moore's Law and Moore's Second Law—it implies that the leading company (that most profitable company) will become a monopoly.
+
+David: Winner take all, there you go.
+
+Ben: It's fascinating that both of these things, these laws aren't actually in conflict because Moore's Law is about—effectively when you really look at it from a financial perspective— operating expenses when producing at scale. Rock's Law is about the upfront capital expenditures to enable all that production. So it's everything we talked about on the show. It's being able to pile investment into fixed costs as much as possible at a huge scale in order to realize the benefits of making as many of the things as humanly possible a global scale.
+
+TSMC, interestingly,is the most perfect example of this. I say interestingly because we almost always talk about operating leverage and scale in the context of software on the internet. This is how venture capital started. Because, actually,manufacturing chips, the operating leverage that comes from huge amounts of fixed costs into foundries to make chips and then hopefully be very profitable,50% gross margin on those chips, venture capital financing was built for that,for semiconductors.
+
+It just so happened to work just as well or even better with software on the internet. Even better isthe notion that gross margins of software can be 80%–90%, not 50%. But I would back that down because it doesn't have the moat defensibility characteristics that being able to plow your CapEx into manufacturing capability does.
+
+David: Yeah. Should wedo power now?
+
+Ben: Absolutely, let's do it.
+
+David: Let's do it.For folks new to the show, this is one of the discussion topics we do for every episode as we go through Hamilton Helmer's excellent 7 Powers.
+
+Ben: The best business theory book.
+
+David: Totally. We've had Hamilton on the show. He's amazing. Go read the book if you haven't. He identifies seven powers, essentially sources of defensibility being (which he defines as) long-term differential profit margins versus your competitors, aswe've been talking about on the whole show.
+
+The seven that he identifies are counter-positioning, scale economies, switching costs, networke conomies, process power, branding, and cornered resources. We almost always talk about network economies. We talk about counter positioning on this show.
+
+Ben: Sometimes we talk about branding. I think we're talking about none of those this time.
+
+David: Yeah. We sometimes talk about scale economies, which we're going to definitely talkabout here. But I think we're going to have our first process power if I'm going to forecast, but let's start. Let's go down the list.Counter-positioning.
+
+Ben: When they were starting, and in particular, would the incumbents have started with the exact business model? No because their profit center was the integration that all the margin you get of integrating design and manufacturing. By saying, nope, we're going to be a pure-play manufacturer, TSMC theoretically was saying, no, we're going to take less gross margin and we're just going to make it up in volume.I'm actually not sure it played out that way. Do you know what Intel's gross margins are?
+
+David: I actually don't know. I would suspect they're higher, but I don't know. There was counter-positioning here. I don't think I said this when we were going through it, but before TSMC and pure-play foundry model, if you were either a fabless company—one of the very, very few—or you were another IDM and you were trying to get some excess capacity rented from another IDM, mostly IDMs are going tobe like, okay, you strong-arm them, you got a great strategic relationship,they'll give you some capacity.
+
+But they also demanded the right to market your products under their brand too, which obviously, TMSC wasn't going to sue. There was counter-positioning. The IDMs, there's no way they were going to do what TSMC was going to do.
+
+Ben: Right. Okay,scale economies, absolutely. That is the biggest. It's one of the top two with process power, in my opinion.
+
+David: Switching costs. It's funny, now there are huge switching. You can't switch off TSMC.
+
+Ben: No, unless you're going to stop being on the leading edge. If you're going to change from being a phone company to an automotive company, you can switch off of them.
+
+David: I think it's even deeper than that. Listeners probably think we've gone deep technically on this episode. We haven't even scratched the surface. But yes, if you want the leading edge, now you got to be TSMC, but you got to be so integrated with TSMC to do this.
+
+Say you want to switch to global foundries or one of the other competitors out there, of which ther eare a few, you can't just call up global foundries and be like, hey, I'm porting over. Expect my business on Monday. It takes years because you're so deeply integrated with the process. Yeah, big switching costs.
+
+Ben: Network economies,it's not really worth talking about.
+
+David: Not in the traditional sense. This is not Facebook here.
+
+Ben: And certainly,none of TSMC's customers really benefit from other customers being on it.
+
+David: No. I don't think Hamilton captures this in his 7 Powers. I don't know if he would consider this one, but there is an ecosystem aspect here. Because the EDM companies andthe IP companies are so deeply integrated with TSMC. If you want to be usingARM, for instance, they're the best integrated with. I don't think that'snetwork economies. That is this ecosystem thing.
+
+TSMC actually has a name for this. They call it open innovation something or other. It's some corporate name, but it means this.
+
+Ben: I do wonder if it's actually worse for a lot of people that Apple is a TSMC customer because who else has access to the 5-nanometer process right now?
+
+David: They're going to take as much as they can. Yeah, good point.
+
+Ben: Process power. Ithink other than Pixar, this is the first time we've really, although we weren't doing 7 Powers during.
+
+David: Yeah. To me,this is the clearest example I could ever imagine of process power.
+
+Ben: It takes all 40 years of TSMC's history to have arrived at where they are today. Even if 10 people left and tried to start the next TSMC to be able to create what they've created at this point from scratch, virtually impossible.
+
+David: All of their IP,all of their people, all of their know-how, all of their relationships with ASML and the like, no amount of money can replicate it.
+
+Ben: I think the only thing that will unseat TSMC is a complete paradigm shift, something like whatmobile did to desktop. If there's something where the compute required in the future is unable to be provided by anything that TSMC is good at today.
+
+David: If all the crazy laser, molten tin ASML stuff we were talking about. If all of a suddent here's discovered a new either different or way cheaper way of quantum computing to do this, then that could reset the playing field.
+
+Ben: But even littleshifts, I bet they'd be fine. If everyone figured out that like, hey, silicon is not the best substrate and we can figure out a better substrate.
+
+David: If they were like an AWS moment, which is funny because TSMC is the AWS equivalent, where something happened that just made it way cheaper than it used to be. You could now get access to the technology and the know-how orders of magnitude cheape rthan it is now, that would take away a big part of their power. But I don't see that happening.
+
+Ben: No, absent a paradigm shift, this is TSMC's to lose. They're in the groove. I think we should skip branding and cornered resources for now. It's not really worthtalking about.
+
+David: Literally,they're antithetical to branding. It's Apple's brand, it's not a TSMC.
+
+Ben: It's a good tim eto enter our geopolitics discussion. Because I was thinking about the other way that TSMC could fail would be that China decides the moment is right to go and assert our force and take over Taiwan.
+
+David: Depending o nhow you see it, either annex Taiwan or assert it's as always claimed sovereignty in Taiwan.
+
+Ben: Yes, actually start enforcing what has been right the whole time, I think, as they would say.If they're not speaking in my casual tone in English from America, then doing all this business with the West, I have to imagine that assuming that it didn'tstart a full war, like an actual World War, then, of course, they would startusing all the TSMC manufacturing capacity for all the Chinese customers. Huaweihas been a TSMC customer for a long time. So how do you capture that in power?What is the power?
+
+David: That's a risk.That's like a bear case.
+
+Ben: Right. Let's not get too specific on this. But maybe in a general sense, how do you capture the power that a company has that comes from a regulatory environment? Where would that get classified under? Felt like they had a lot of room to be operating safely.
+
+David: Maybe cornered resource, I guess. You're saying this is like an anti-power for this. This is a weakness.
+
+Ben: Right, exactly. I suppose that all that matters are things that you have that your direct competitors don't. In this strange strongman that I'm putting together, itwould really be about, what if you were located in a country that none of yourcompetitors were also domiciled in, and being there gave you some specialability to be more profitable than others?
+
+David: Which they had in the beginning with the government of Taiwan. Basically, the mafia boss was like, this is happening, and we're going to make it. We've got to strong-arm all the business leaders in the country to invest in this. We're going to makesure that this happens.
+
+Ben: Yeah. Okay, let's put a pin in that. Because you're right, it turns out that it's actually not a perfect power discussion. But the geopolitics thing is interesting.
+
+David: I think it's the bear case for...
+
+Ben: Right. That to me—absent an enormous computing paradigm shift—is the way that TSMC has an enormous risk in the business.
+
+David: Yeah, totally.Which does make pricing that they haven't diversified their geographical operations very much.
+
+Ben: This is interesting. They're facing a lot of pressure for this. They are spending (Ithink) $12 billion this year to start a plant in Arizona, which will not be the3-nanometer. I don't even think it'll be the 5-nanometer. It's not their most advanced manufacturing. I think the US is subsidizing in a big way. I think that's part of the Biden administration's most recent bill to try and bring some semiconductor manufacturing here. But they're also starting a fab in Japan that came out on their last earnings call.
+
+David: And they have operations in China, I believe, too.
+
+Ben: Yup. They'r edoing some diversification, but I don't think it's for this reason. I think it's because they're basically getting free money to open fabs in other places.Morris has even made comments like, I don't think it makes any business sense for us to have the leading edge in those countries, even though those countries want us to have them there. I think it makes sense based on the ecosystem that we've created in Taiwan to keep operating it here.
+
+The question is if it directly helps. Let's take the US for example. The US has prowess as a semiconductor manufacturing force in the world to have TSMC's Arizona plant orif it's really just indirect. The idea is like, let's try this as a first stab.We'll get more people in the US familiar with doing this again in case we need to...
+
+David: Reshore this?
+
+Ben: Yes.
+
+David: This is a scary, scary future to contemplate and I hope to God it doesn't happen. Really,the thought exercise here is, what would happen if China annexes Taiwan tomorrow?
+
+Ben: Which is scary for a number of reasons. The smallest of which is this corporate takeover. It's scary for a lot of people. They're lies.
+
+David: Yes, it’s scary, but I wouldn't say it's the smallest like everything. Imagine if we didn't have access to leading-edge semiconductors anymore. That's everything.What part of our lives do not run on semiconductors?
+
+Ben: Ford can't make F-150s right now.
+
+David: Basically, all of our technological progress would stop.
+
+Ben: Yeah, you're right.
+
+David: I think the question is, and I don't know enough to answer this, what would happen? Would it be possible to airlift the process power that TSMC has physically out of Taiwan to somewhere else? You get all the people, ASML now sends the stuff somewhere else, you airlift everybody out, there's an evacuation. Does theprocess power come with it or not? I don't know.
+
+Ben: That's a good question. If the Toyota Production System is an example where Toyota tried to—there was that factory that joint venture with GM.
+
+David: Yeah, the NUMMI plant that's now the Tesla plant in Fremont.
+
+Ben: Right. WithToyota trying to replicate their process somewhere else didn't work.
+
+David: No, it wasn't under threat of war.
+
+Ben: Right, this onewould need to. It's actually a good question. If you think about the US' strategic defensive weaknesses, what's more important, having onshore semiconductor capability to continue to advance technology in the nation or Boeing? Which we've always held up as this example of the US needs that to stayUS-owned, to stay operating, stay profitable, to stay prosperous because it isa matter of the US way of life that we're able to protect.
+
+David: Boeing needs semiconductors.
+
+Ben: That's a greatpoint. We're now outside our depth, but is it actually more important to have cutting-edge semiconductor capability here than airplanes or any of the other defense supply chains?
+
+David: Maybe the answer here is like Korea. The same situation exists in Korea with Samsung.North Korea is right there. I've been there. I've been to North Korea. I went to the DMZ. It's so weird. It's like an amusement park.
+
+Ben: Weird.
+
+David: It's super,super weird and bizarre. North Korea is right there. Maybe it's the same like China's right there, but this isn't actually going to happen. I don't know, it feels like in the last year, the risk of it actually happening has ratcheted it up quite a bit.
+
+Ben: I think so. It's globalization as a whole. In the best interest of everyone to continue to share resources, to continue to entangle everything until somebody decides that it's not and then we have a big problem. Hopefully, for lots of reasons, it just continues to be okay that TSMC is located on an island that is of disputed claim.
+
+David: Yeah. We're towards the end of the episode so we can indulge our weirdness here. Maybe the best thing that could happen is, my carve out a while back was the book by the Harvard chair, the Harvard astrophysics department about Oumuamua that he postulates was an alien spaceship. Maybe if we discovered that aliens are real,that's going to be the uniting force. All these conflicts seem pretty petty. Iwouldn't use that as an investment he says, though.
+
+Ben: No. Before we get into playbook and just hit some things that I think we missed during the narrative or at least didn't find enough point on in the narrative, I have awhat would have happened otherwise that I want to hit.
+
+David: We haven't done this in a while.
+
+Ben: No, we haven't.I'll just read this as a direct quote from Bloomberg, and there were some awesome sources for this episode, all of which are linked in the show notes."In the mid-2000s, as Apple Inc. was preparing for the release of its newsmart phone, Steve Jobs approached then-CEO of Intel Otellini about providing the chips for the iPhone. Intel already sold iPhone the processors that ran onits Macs."
+
+David: We need to add a video to Acquired so that everybody can see the look on my face right now.Literally, I got fists in the air. I'm so happy.
+
+Ben: Remember,Otellini was the guy that Jobs brought out on stage during the Intel transition when they were bearing the power PC to say this is the future, this is the partnership. Okay, "But Jobs made what Otellini considered a lowballoffer, and Apple awarded the contract to Samsung. It later began designing thechips itself, eventually outsource production to TSMC, a contract manufacturerin Taiwan. They've been fabbed," blah, blah, blah, blah, blah. What couldhave been? Apple went to Intel and said, do you want this contract?
+
+David: Because they were partners on the Mac.
+
+Ben: Totally.Apparently, it was less about the fact that, I'm sorry, you want to use ARM?What? No. We're the x86 company.
+
+David: It was more about the money.
+
+Ben: And it was more about we felt it was a lowball offer.
+
+David: Biggest strategic error of all time. I'm going to postulate a playbook theme I’m putting forward as a [...]. More than a playbook theme. In geometry, there arelaws that are approved, but then there are postulates. You can't prove them,but our fundamental understanding of the universe doesn't work if they don'twork. Whatever that is, axioms, I don't know whatever it is. I'm going to putone of those out there.
+
+Ben: Please.
+
+David: Never make strategic decisions based on economics. This is a prime example. We talked about this all the time on this show, VCs passing overvaluation on something.Andreessen getting cold feet about a $300 million valuation on Uber. This Intelmove, passing on being partnering with Apple.
+
+Ben: And maybe more specifically than economics because you could imagine that you would want to pass on this if Intel [...] the upside from the deal. Assuming that the structure is right, then passing because a number is too low in the structure.
+
+David: Or Ford Motor Company not hiring Morris Chang over a $1. It's just like humans are so prone to cutting off their noses to spite their faces.
+
+Ben: We already have the Rosenthal doctrine of never bet against the internet, but now we have the Rosenthal postulate, which is never make strategic decisions based on pricing.
+
+David: Not economics,but pricing.
+
+Ben: I like it. I need to add a new section to the Acquired website.
+
+David: All right.
+
+Ben: All right. Nexton playbook is another one on Intel fading. It takes a very long time to become irrelevant. I think TSMC is 2.5X Intel stock price. As a matter of fact, ASML is actually larger than Intel by market cap now. They are the sole sourcep rovider of one thing in the value chain to mostly one company and they're bigger than Intel now.
+
+David: Public markets investors who are listening, shoot us a DM in Slack or post in general.
+
+Ben:Acquiredfm@gmail.com.
+
+David: Whatever channel works for you, Twitter, or whatever. If you are long this thesis that we're laying out on the show, how are you playing it between TSMC and ASML?
+
+Ben: Which is now Europe's most valuable company.
+
+David: Right. Probably you just invest in both, but how do you think about that?
+
+Ben: Right, and what's the up and comer that's speculative at this point but could be another puzzle piece here?
+
+David: Are you also shorting Intel through all of it? What are you doing here?
+
+Ben: All right. Mypoint on Intel is it takes a long time to become irrelevant. They still control 80% of the computer processor market, and they have an even bigger share in servers. Despite everything we're saying, workloads running on CPUs that are incomputers and on the cloud, pretty big business.
+
+David: Yeah, the majority of workloads that are happening in the cloud are not Tesla Dojo. It's some company that's not a tech company somewhere in the world running their outlook server on Office 365.
+
+Ben: Yup, absolutely.
+
+David: It doesn't need a 5-nanometer process.
+
+Ben: Two other Intelthings. One is that indecision has been very tough on the company. Bob Swan,who was the former CEO, started to prepare to outsource manufacturing of Inte ldesign chips to TSMC. I think even like two years ago, this was the plan. They finally decided to throw in the towel. Intel is the greatest chip manufacturing companyin the world, but...
+
+David: Real men are sensitive. They talk about their feelings.
+
+Ben: Bob Swan is no longer the CEO of Intel. Now in a complete reversal, their new CEO, Pat Gelsinger, wants to turn Intel into a foundry themselves, by which otherfabless companies can contract with Intel to build. Maybe that's right, but ifso, they got to figure out—and I think they're thinking about this the right way because they said it's going to be a fully separate autonomous division.They got to run that like a completely separate independent company of the restof Intel. If so, I don't actually know why Intel owns it.
+
+David: Yeah. Let's look at AMD here. They did this. They spun out their manufacturing into globalfoundries.
+
+Ben: Which has been good for global foundries and AMD. GlobalFoundries is getting ready to IPO.
+
+David: Yeah, that's probably the right strategic decision, but it's not going so well. It's going fine.
+
+Ben: It’s not TSMC.
+
+David: It's going better probably than if they had not done that, but they're not a winner here.TSMC is the winner.
+
+Ben: Yeah. I guess the playbook theme there is, indecision is paralyzing. This company has spun its wheels one direction or the other and all it's done is make itself deeper in the mud.
+
+David: I just looked up. I was trying to remember this. Gelsinger was the VMware CEO. He started his career at Intel, then went to EMC, and then EMC owns the majority of VMware,and then became the CEO of VMware. He was the outside candidate to replace Ballmer as Microsoft’s CEO.
+
+Ben: No way.
+
+David: Yup.
+
+Ben: I hear he's really revered in the organization, that people think he's really going to make some good changes there. We'll see. The last thing on Intel (and it's funny,this is not the Intel episode), there's a thing that happened here that is very similar to the fact that Kodak developed the digital camera first in their lab.They knew it. They knew this was the future and they didn't commercialize it because it's impossible to counter-position yourself because of the innovator's dilemma.
+
+Intel actually saw extreme UV lithography, EUV, first. Intel was the biggest early investor in EUV committing more than $4 billion to it in 2012. This is from the Wall Street Journal, "It was slower than its main rivals in adopting the technology and skeptical about whether it would work. Eventually, Intel calculated that it was a sure bet to try and improve existing ways of handling lithography."Of course, where we are today, EUV completely enabled the next generation of chips to be built that existing ways couldn't—
+
+David: What a great argument and example for why you need startups.
+
+Ben: Right.
+
+David: Totally. Yeah,Intel was there. They invested in it, they saw it, and they're like ehh.
+
+Ben: They put $4billion. I think even to this day, there is not a shipping Intel chip that was manufactured by Intel using EUV.
+
+David: Wow, that's crazy.
+
+Ben: You're right. Itis the most perfect, pure example of the innovator's dilemma in action.
+
+David: That's why you need startups.
+
+Ben: Yup.
+
+David: We're going to talk about that on our next series on Acquired, quite a bit that we've beenfore shadowing a lot this season, but more to come.
+
+Ben: All right. My next one is that if you're only looking at the outcomes that happened, you cannot reverse engineer what the probability that would happen is. This is avery abstract way of me saying, the strategy of if you build it they will comethat Morris implemented is a bad strategy, and it also worked.
+
+David: This is what Sequoia and Don Valentine hated. They would never invest in developing a market. That was like rule number one. We invest when the market alreadyexists, not when we need to develop it.
+
+Ben: This is like th eclassic problem. Up here in Seattle, there's a lot of people spinning out of Microsoft starting companies. Classically, people coming out of Microsoft would always want to build platforms because Microsoft is the platform company and they would always have too small of an understanding of the market, of peoplethat wanted that platform today. They assume if you build it, they will come.
+
+Morris was that exac tproblem. Yet, if something is going to be true 10% of the time and fail 90% of the time, 1 out of 10 times it's going to work and it may have been the case. Iguess what I'm saying here is if you're starting a startup, it's impossible toknow if this was actually a good strategy or if it was a bad strategy thatprobabilistically just happened to work.
+
+David: This is the thing about startups. There are all these rules, but they can all be broken.There is no formula.
+
+Ben: Yup, totally. Allright, other playbook themes?
+
+David: I just have one more that again, we talked about a bunch in the episode, but I want to highlight that and actually had one spin-on here. We talked about it all theway back in the beginning in the Pilot sponsorship—the Jeff Bezos' quote aboutAWS. As a startup, anything that doesn't make your beer taste better—theanalogy back to the German beer factories and outsourcing electricitygeneration.
+
+Ben: Outsource things that aren't your core competency.
+
+David: Right. Focus on what makes the beer—your beer, whatever that is—proverbially it tastes better.Everything that is not that, like finance and accounting, outsource to Pilot,et cetera. Double underscore that. This is obvious, so obvious, but obviously,Bezos didn't say it directly. Thus, I think we don't highlight it enough.
+
+The counterpoint to that is anytime you see something that lots of people, lots of companies are doing that is not making their beer taste better, that is a massive opportunity to go build a platform company. That is how you build a platform company.
+
+Ben: So you're saying if I was in Germany hundreds of years ago, and I'm going brewery to brewery and seeing that they all generate their own power, I should start a power company?
+
+David: I'm saying, ify ou're Waseem and Jessica, you've done two startups, you did all the finance and accounting yourself for both of them, and you're like, wait a minute, this is not making our beer taste better, and wait a minute, every other startup isdoing this out there too, I can go build a platform company for this.
+
+Ben: All right, I'm getting beat over the head here. All right, before we get to grading—we have some fun grading for this one—we want to get to our final sponsor. We are joining the famous ranks of YouTubers and podcasters everywhere this season to tell you about NordVPN. We told you that this company is something that we'redoing a little bit different in our own special way. We want to continue totell you about how NordVPN came to be.
+
+This is a group of childhood friends started in Lithuania. The company was founded in 2012. Theco-founder and CEO's name is Tom Oakman. Tom is a member of the Acquired community just like all of you. Nine thousand strong in the Slack, come join usat acquired.fm/slack. You can DM us there. That's where Tom DMed us there. He'sbeen listening to the show for years.
+
+With Nord—this i spretty crazy—it's a really low-key DM that we get from him. We're like, oh, whois this guy? Oh, Nord, I've heard of that. NordVPN is now a global company withover 1000 employees worldwide. They're used by an astonishing 15 millionpeople. They've got this great product called NordVPN made by [...] Security.It works on all operating systems. It has become one of the largest VPNs in theworld, holds the title for the fastest VPN.
+
+David: They're also becoming a full-fledged security company now doing all sorts of other stuff.
+
+Ben: It's so cool. We were just floored that Tom reached out and wanted to sponsor the show. We're so grateful that we get to share this with all of you as almost like a community spotlight.
+
+David: Totally. The coolest part was we got to talk to Tom, hang out with Tom, and hear his story.We're like, how much VC did you raise to do this?
+
+Ben: None.
+
+David: Zero dollars.
+
+Ben: It's a bootstrapped company.
+
+David: Completely bootstrapped, amazing.
+
+Ben: It's so cool. If you're looking for a VPN service like any good Acquired community member, use the stuff that other listeners make. You can sign up at nordvpn.com/acquired by clicking the link in the show notes or use the code acquired at checkout.
+
+David: It's so cool.Thank you, Nord.
+
+Ben: Grading?
+
+David: All right. Sowe were thinking for grading—look, we could grade Taiwan's decision to do this.
+
+Ben: To own 50% of the company at the offset.
+
+David: A+. Notinteresting. We had a thought, an experiment. We'll try this for this episode.Rather than letter grading this, we'll ask a question. Where does TSMC belongin the pantheon of great technology companies of all time? Is it FAANG level,is it top five? Is it top 10? Is it top 20? Where is this? What is the right context in which we should be placing TSMC—this whole story, the company, the power, all of it?
+
+Ben: It's so interesting because it really does raise this question of value chain when we talked about the five-part value chain that exists today for making chips. It's interesting because you could say, well, it belongs wherever Intel belongedcirca 2000. Or you could say, well, the set of products that TSMC manufacturershave is 100X the scale that Intel in circa 2000 had. If you think about it, allthis stuff that everyone's all excited about, every time someone talks aboutthe next wave of computing, they're machine learning, they're crypto, orthey're 5G.
+
+Anything they tell you is something TSMC makes that enables it all. When Marc Andreessen says the software is eating the world, it's only eating the world because TSMC has mad eit so freaking cheap to manufacture silicon. Then you can run whatever you wanton that silicon. It's the cost of compute asymptotically approaches zero because TSMC, TSMC, TSMC.
+
+How much do we ascribe to them versus ASML? How much do we ascribe to them versus the entire landscape of talented chip designers out there including the 600 chip designers at Apple working on the Apple silicon? It's hard to disambiguate that. Where does it belong? It's probably the most successful and important B2B hardware company of all time.
+
+David: I think we can safely say, at this point, it surpasses Intel. Gosh, that's a big statement to say. Intel, Silicon Valley, the Traitorous Eight, like all of it, Moore's Law.
+
+Ben: But in compounding, all the value shows up at the end. It is true that the value that TSMC will create in the world over the next year, two years, three years isprobably more than the entire silicon industry leading up to this pointcombined.
+
+David: How they grew 30% last year at an already unimaginable scale, Intel's not doing that.
+
+Ben: Right.
+
+David: Okay, I think we can say it's above Intel.
+
+Ben: I probably wouldn't say it is above Facebook, Amazon, Apple, Microsoft, Google in terms of pure value creation in the world.
+
+David: Devil's advocate, you could argue that none of the innovative things those companie sare doing now happens without TSMC.
+
+Ben: Yeah, unless the foundry model and the fabless model was inevitable.
+
+David: Yeah, maybe somebody else would have done it, maybe.
+
+Ben: But they didn't,and Morris did.
+
+David: The thing that's really just beating me over the head in this episode—we've probably beaten all of you over the head with, or at least I have—is there's the geopolitical risk with being in Taiwan. Other than that, I don't know thatthere is a stronger moat that any company has in the entire world than TSMC.Compare it to all the FAANG companies and Microsoft, those are very, verystrong moats.
+
+We've seen all of those. There are new companies, they've emerged. Microsoft fell and then now it came back with a new strategy. Facebook's not that old and Google's not that old. TSMC is impenetrable.
+
+Ben: Yeah, their business model and the costs required to compete are such that they have...
+
+David: It's like bulletproof.
+
+Ben: It's everything but bulletproof.
+
+David: Yeah, totally.
+
+Ben: Sadly.
+
+David: Yeah. Maybe we're exaggerating because we're so deep in it. We always go native on these episodes.
+
+Ben: The only way it could be more valuable is if the company had an army. It's like people talk about the US dollar is backed up by the full faith of the US government, which implies guns. It's only because everybody's currently playing by the rules thatany business gets to stay in business. This one just happens to be a little bitmore at risk than other ones when it comes to that.
+
+David: All right, Ithink we can safely say top 10. I think the question is, is it top five?
+
+Ben: Defensible is this interesting question. In 30 years, will TSMC be a huge company?
+
+David: They've got this dynamic going right now with this flywheel where structurally, nobody can catch them. Something unforeseen has to change.
+
+Ben: But something unforeseen will change because it always changes.
+
+David: Right. Yes,true.
+
+Ben: Who's had the most similar dynamic in the past?
+
+David: Standard Oil?
+
+Ben: Either been successful or unsuccessful. Standard Oil is a good one.
+
+David: Foreshadowing.It's a very different style, but same sort of dynamic with Standard Oil. They crowded out structurally how they were set up. We'll talk way more about thi slater. Nobody else could compete and the rich kept getting richer.
+
+Ben: They still exist.
+
+David: That is the best part, they still exist.
+
+Ben: All right. I'm with you. I'll go top 10, but probably not top five.
+
+David: What I'm wrestling with is how much of it is just marketing? I don't mean marketing in abad way, but intentionally, TSMC rides under the radar. They intentionally have no brand. The brand is the customers. They want the customers to succeed. We don't hear all the time about them like we do, the FAANG companies.
+
+Ben: Yeah, we will start to. I think anybody who tunes into this episode probably saw the name of the episode and then thought, I should tune into that because I've seen more about this thing recently that I previously didn't know about.
+
+David: Kind of like we did when we're like, we should do this episode.
+
+Ben: It's finally time. All right. That's where I want to leave it with grading.
+
+David: All right, I'll put a stake on the ground. I'm going to say, I think I'm with you, top 10 not top 5 yet, but maybe we need to revisit this.
+
+Ben: I will definitely say it's the most successful B2B hardware company ever. The question is, is it the most successful B2B company ever? I'd say it's probably just competing with Microsoft there.
+
+David: Again, maybe even across all industries. I mean, shoot, semiconductors run everything, and they run semiconductors.
+
+Ben: Semiconductors are the new oil, David.
+
+David: Okay, enough.We got to bring this one home.
+
+Ben: Carve outs?
+
+David: Carve outs,let's do it. I've got two. Jenny and I were just down in Santa Barbara for a couple of weeks and rented an Airbnb down there. It was so great. We did thatlast year. Hopefully this becomes an annual thing in the summer just to escapethe freezing San Francisco summers.
+
+While we're down, we don't watch a lot of TV usually, but it's a change of scene. Summertime in anew place. We're like, all right, we’ll watch some TV together at night. For the percentage of you out there who are living under a rock like me with TV,we've watched now most of Ted Lasso season one. Because we heard season two was terrible, but that made me think, well.
+
+Ben: It was terrible.It is terrible, but season one's great.
+
+David: That made me think, oh, if people are this upset about season two, that means season one was really good. It's so good. If you haven't watched it, we're on episode eight now. We're not quite done. It's so good. Love it.
+
+Then the other TV show we watched, this was Jenny's suggestion, old school throwback, a show called Greek, which aired in the mid-2000s. It's about a Greek-like sorority and fraternity life, fictional university. It's just so good. It's like one of those heartwarming period pieces, but it was great from when we were in college. Soyeah, it's fun.
+
+Ben: Nice. All right,David watching TV. Who knows what could change in the world?
+
+David: Maybe TSMC's moat isn't as deep as we thought.
+
+Ben: All right. Mine is a book that has been recommended to me for two or three years now and Ifinally got around to reading, and it was awesome. It's called Who Is Michael Ovitz? If you've read Shoe Dog, you've read The Ride of a Lifetime, and you've read American Icon, these are iconoclastic CEO, founder, business mix.
+
+David: There’s a Sam Walton one, Made in America?
+
+Ben: Yes. This one needs to be on your list, especially if you've enjoyed any movies or TV shows that were put together in the last—well, let's be specific.
+
+David: Or our two-part Andreessen-Horowitz series.
+
+Ben: Totally. From 1975 to 2000, Michael Ovitz put everything together. It is just a wonderfully written book about an unbelievable business story, the strategy behind it. With Creative Artists Agency, they just completely ended the entire industry in Hollywood and did it really without ever talking to the press, and we're verytight-lipped about it. For some Hollywood outsider, I found the book really,really wonderful, really compelling.
+
+I also think I previously had only read The Ride of a Lifetime and watched the Disney+ special about the history of Disney and Disneyland. I had a one-sided view of Michael based on just his short tenure at Disney.
+
+David: The Disney situation. I was going to say, yeah, what a great connection with Acquired,Disney, and Iger.
+
+Ben: What kicked it off was doing the Andreessen episodes and hearing about how they base it onCAA. Especially if you like those episodes, if you like the Disney episodes, if you are a movie fan, or if you like these classic CEO business stories, Who Is Michael Ovitz was just an awesome read.
+
+David: It's so cool.All the media that we grew up on, probably more so because we were kids, but it was the adult movies that were coming, and the kids’ movies too. But when you're a kid and the adult movies that you really want to see but you're too young to see.
+
+Ben: All these are such classics like Goodfellas. That was just my previous carve out, Jurassic Park, or just everything that they packaged. It was cool to hear how it came tobe.
+
+David: Super cool.
+
+Ben: All right. Wit hthat, thank you to pilot.com, PitchBook, and NordVPN. You can click the links in the show notes. I don't think we told you at the beginning, but you can join our Slack, acquired.fm/slack. Come hang out with 9000 other talented, smart,and good-looking people like yourselves. You should become an Acquired LP. Wego deeper.
+
+In fact, we just did our most recent LP call. It was really fun to do that and have Matt McBrady join us too, who obviously was on our most recent LP episode talking about the Fed, macroeconomics, the difference between monetary policy and fiscal policy (which I just learned about), inflation, and interest rates. All that stuff was superfun. Obviously, you get all probably like 60 or 70 episodes at this point.
+
+David: Including actually our full episode with Hamilton.
+
+Ben: That's right.
+
+David: It was only a preview that we put in the main feed.
+
+Ben: Actually understanding 7 powers is available there with Hamilton. Become an LP. It supports what we do, it lets you be closer to the show, and we love our LPs.With that, listeners, feel free to share the show with a friend. Feel free to rate us on iTunes. Shout out from the social media hilltops.
+
+David: Sometimes you say, but I'll chime in here too. Seriously, it's funny, podcasting is this weird thing. There's no viral loop. Please share it from social media. We lovethat. That's great. If you love this episode, you think it's interesting, youthink what we do is cool here. But really the way this goes is word of mouth.
+
+That is it. People tell their friends, they listened to this episode, and they thought it was cool.They think that their friends would really enjoy and learn from listening to this tube.
+
+Ben: Share a thing you liked. Share things you disagree with us on, whatever it is.
+
+David: If you fee lthat way, please do that. If you don't feel that way, get in touch with us and tell us why.
+
+Ben: All right,listeners. We will see you next time.
+
+David: We'll see you next time.

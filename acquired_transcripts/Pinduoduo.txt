@@ -1,0 +1,791 @@
+Ben: Welcome to season seven, episode one of Acquired. The podcast about great technology companies and the stories behind them. I'm Ben Gilbert.
+
+David: I’m David Rosenthal.
+
+Ben: And we are your hosts. Today we are talking about, and I quote from their IPO prospectus, “an exemplification of a multi-dimensional space, seamlessly integrating cyberspace and the physical space. A combination of Costco and Disneyland driven by a distributed network of intelligence agents.”
+
+David: Ben, it's like you're reading from my history and facts there.
+
+Ben: I figured you want to pull back too. Unbelievable. Absolutely unfathomable. At first, I thought Costco and Disneyland were going to be the hook, and then I realized all the stuff around it is actually far more absurd. Listeners, of course, we are talking about the Chinese ecommerce company, Pinduoduo. Why is this a fascinating company? First off, it's only five years old.
+
+They went public on the Nasdaq 2 years ago in 2018 three years into their existence. They are the fastest company ever to $100 billion market cap, and they've nearly tripled in value since the coronavirus spiked globally mid-March. Almost all of that market cap or two-thirds of that market cap created in the last few months.
+
+David: It must be a distributed network of intelligence agents there doing that.
+
+Ben: It's certainly the intelligence agencies. You might be saying, Chinese ecommerce, I thought that was already a settled frontier. I've heard of Alibaba.
+
+David: Maybe even JD.
+
+Ben: Yeah. We haven't covered JD yet on the show, but also an ecommerce powerhouse in China. Apparently, there was an opportunity remaining. There was a missing segment that was not being addressed by either of those two companies, and it is enormous. This episode felt very timely, not just because of that $100 billion milestone for Pinduoduo, but also because ecommerce in general is having a moment (as they say).
+
+The global pandemic has massively accelerated the shift from offline to online commerce, as I'm sure all of you are experiencing in one way, shape, or form at least as consumers.
+
+David: Hopefully, you’re Amazon shareholders.
+
+Ben: Yeah, no kidding. Or Seattle residents and benefiting from all the side effects of that. Of course, China once behind the US in their ecommerce penetration, I think it was only 6% of retail was done online in 2012, is now already at 24% of the total retail spent. A lot of that accelerated here in the last few months, much like the US penetration, which is really driving this crazy run-up in valuation for Pinduoduo.
+
+I do want to give a shout out to Honam in the Slack who inspired us to do the episode with this comment, "$100 billion market cap in 5 years from a standing start. This is just nuts. It took Microsoft 25 years, Google and Facebook more than 12 years, and even for their closest competitor—Alibaba—it took 14 years.”
+
+It just felt the stars were aligning to do this episode. The more I dug into it, the more I was frankly shook by what this company looks like. Really, all I knew about this before was their name. It's been fun spending the week doing research and learning what this beast is.
+
+David: Like every story we tell here on Acquired, you start thinking it's one thing and then you dig a little deeper and you're like, oh, man, wow. There are so many layers to this onion.
+
+Ben: A few announcements before we get to it. A huge thank you to everyone who took our survey at the end of last season. Entries are now closed. As for the winners, we emailed you if you are one of the lucky 10 to win the year subscription to the LP program. And the winner of our AirPods is Amy L from the Bay Area. Congratulations, Amy, and we will also be sending you an email to follow up after this.
+
+As always, if you love Acquired and want more, you should become an Acquired Limited Partner. Our most recent episode was with Benchmark General Partner, Sarah Tavel. Part of our VC fundamentals series, and she joined us to talk about the fundamentals of consumer investing. If you want to join, you can get access to that additional content, plus our book club, and our monthly LP calls on Zoom. You can click the link in the show notes or go to glow.fm/acquired and all subscriptions come with a 7-day free trial.
+
+And now, over to you, David, to take us into the story of Pinduoduo.
+
+David: Ben, you stole some of my thunder. I think we've talked about on the show, Ben and I don't compare notes before we record so that we keep our reactions authentic.
+
+Ben: Church and state and all that.
+
+David: Exactly. My lead-in was going to be that quote from the IPO prospectus of Disneyland and Costco and the distributed intelligence agents. What is going on?
+
+Ben: At least, it validates we're on the same wavelength there. That actually was the interesting bit to pull out if we both pulled it out.
+
+David: What's interesting though—as I was thinking about it—is per longtime Acquired listeners, maybe the better analogy here and the more accurate one for Pinduoduo—at least as it exists today—is more of a mash-up of ByteDance and Alibaba than Disney and Costco. We'll get into this. Colin Huang, the former CEO, was quoted that Pinduoduo is Toutiao meets ecommerce.
+
+Ben: I definitely think there could be a lead-in here too. What if you had a gaming company that got smashed together with a company that sold fruit to try to make ecommerce fun and then you could shop and buy stuff with your friends? What if?
+
+David: What if? It's funny you mentioned gaming. The other thought I want to put in everybody's minds—before we dive into the story—is the largest and most important gaming company in the world and strategic player, and it seems just about every market these days, Tencent. If you remember, back from our old Tencent episode, which I went back and listened to before recording this.
+
+Ben: It's like navel-gazing research.
+
+David: Yes, seriously. We've now reached the point where one of our sources for Acquired is Acquired. Tencent, if you recall from that episode, are in many ways in such a dominant and good position—not just in China, but around the world—as the owner and operator of WeChat, which is the dominant social platform in China, but also major shareholders in Epic Games, which makes Fortnite.
+
+They're one of the largest shareholders in Tesla. They own League of Legends. A major shareholder in Snap, DiDi, and Meituan Dianping. But I think you could make an argument that now it’s about 17% ownership that they have in Pinduoduo is maybe their most important stake in the whole portfolio. Because if you recall back from our old episode, what were their weaknesses? The flanks that were exposed for Tencent were to ByteDance (most specifically) in terms of its social dominance.
+
+Ben: Who, of course, makes TikTok.
+
+David: Of course, makes TikTok and Toutiao, but also Alibaba and Alibaba's massive Alipay and Ant Financial platforms in China. If you rewind back to 2015, 2016, and 2017, these are major things that are on Tencent's mind. Right as the magical unicorn, decacorn, centacorn Pinduoduo is being birthed. Keep that in mind as we go.
+
+Let's start, as we always do with the founder, Colin Huang. He was born in Hangzhou, China in 1980. His parents were factory workers. Neither of them finished junior high school. They were maybe on the fringes of the establishing China middle class at this point in time, but just barely hanging on. Again, longtime listeners and China tech fans might be smiling here because of what other very famous China tech entrepreneur was born in Hangzhou to lower-middle-class parents—a generation earlier. That would be Jack Ma, the founder of Alibaba. The parallels are going to be quite apt here.
+
+Ben: You mentioned the generations. For folks that haven't listened to any of our China series before, the way to think about China tech companies is there are the best three from the previous generation of Baidu, Alibaba, and Tencent. They controlled the ecosystem. They were the kingmakers. They were not only your Google and Facebook but also your Benchmark and Sequoias. They were both the VC and the Fang powerhouse of China.
+
+The companies that we've been seeing this generation—Xiaomi, Pinduoduo—are the ones that are rising up to become the next generation. You can see those big three then fighting to participate in the success of this next generation.
+
+David: It's such an interesting different ecosystem from US tech. When Colin was in junior high, he loved math—really loves math. He must have been quite good at it because he participates in a national math Olympiad. They have contests like this in the US. I remember doing this when I was growing up. In China, this is a really big deal. He ends up winning a medal in this Olympiad. Besides the medalist—he got an actual medal—one of the other prizes for how he placed in the competition as he got an entrance exam ticket to take the entrance exam and apply to the Hangzhou Foreign Language School.
+
+Initially, Colin is like, I'm not that interested in English. Fine, languages. I really just care about math and physics. His parents are like, no, no, no. You got to go take this exam because it turns out it's not just a foreign language English school in Hangzhou. It is one of the very best schools in all of China, and one of the most prestigious prep schools. It's a public school but a prep school in the country. He ends up taking the entrance exams. He does well. He must have done incredibly well because he's still on the fence about going to the school. The president of the school called him up personally—I think he's probably a sixth-grader at this point in time—to convince him to come to enroll in the school.
+
+He does go, he does very well. He ends up going—to the also very prestigious—Zhejiang University where he studied Computer Science. He interns (while he's there) at Microsoft in Beijing. This is crazy. Apparently, he said in an interview, he makes more in his summer interning at Microsoft in Beijing than his parents do in a year working in the factory.
+
+I don't know if this was while he was in undergrad or when he was in grad school, he also interns at Microsoft in the US in Redmond. He makes eight times what he made that summer in China in the US. Here's this kid, unlike Jack Ma, who stayed in Hangzhou, super fascinated with English and America. Worked as a translator and a tour guide but didn't get good grades. Stayed there until his 30s. Here's Colin. He couldn't care less about English and America. He just wants to code, but he comes and he makes tons of money.
+
+Ben: In the years that he was there, those early 2000s, he would have been early enough in the Microsoft internship program where he would get to do the thing at Bill Gates's house. Go to the barbecue and meet Bill personally. When I interned, it was 1500 interns per summer or something by the time I got through, so that was no longer part of the program. That was the major perk of being an intern then.
+
+David: Interesting. This definitely feeds into a theme with young Colin when he's in college. The legend has it—this is impossible to verify, but also echoes another super famous China tech founder, Pony Ma. Apparently, Colin's hanging out on the internet. Famous NetEase founder William Ding, posts online in a forum looking for help with a technical problem that he's working on. This is how the legend goes.
+
+Colin responds to this, starts interacting with Ding, and they become friends. Ding takes a liking to him and becomes a mentor to him.
+
+Ding eventually introduces Colin to an even more famous China tech entrepreneur, BBK Electronics founder, and also I believe one of the founders of NetEase, Duan Yongping. He would go on to found Oppo, Oneplus, and lots of big big big modern Chinese technology companies.
+
+Ben: He's got some heavy-hitting mentors.
+
+David: Super heavy-hitting mentors, even when he's a college student back in China. After he graduates—probably on the encouragement of these mentors—they encourage him to come over to the US and do grad school and Computer Science in the US. Ben, you're going to hate this. He goes to the University of Wisconsin-Madison for grad school.
+
+Ben: That's fine. As long as it's not Michigan. That's great. Go big 10.
+
+David: Big 10, there we go. While he's there doing his master's in CS at Madison, he continues to intern at Microsoft. Microsoft desperately wants him to come back full-time when he graduates, but William tells him, hey, you've spent a lot of time at Microsoft. You've got the experience there. You've got a pretty good network. It might be a better idea, I think you should check out this little startup down in Mountain View. They're doing more interesting things. It's called Google. Maybe you should see if you can apply there and get a competing offer.
+
+Ben: He just keeps hitting the lottery over and over and over. I don't say that to imply luck, but he finds his way to the right place, right time over and over again here.
+
+David: Totally. He shows up, of course, he gets an offer from Google. He graduated from Madison in 2004. Shows up that summer, six months before the Google IPO. He's one of the first couple of 100 employees at Google. He starts as an engineer, and then pretty quickly switches to being a product manager. The company goes public. He makes a ton of money already. It's like he's just making money without even trying. This is the theme of his life.
+
+Ben: We'll get there.
+
+David: Yeah, we'll definitely get there. Two years later, after joining in 2006, he did so well. He gets put on a secret team at Google. He's one of the two people leading the team for secret plans to launch Google in China. Do you remember this, Ben? This was a huge effort. I forget what the project codename was.
+
+Ben: No.
+
+David: We actually did a case study on this in business school where Google put all this effort into building a Chinese version of Google. It was all ready to launch, and then they decided not to do it because they would have had to censor the results. It's all tied up with Don't Be Evil.
+
+Ben: I certainly remember that. I didn't realize it never launched. I thought it launched and shut down, but it never launched?
+
+David: That's actually a good question. I don't know if it launched at all. I think it didn't launch at all. If it did launch, then they shut it down, but it was a big public brouhaha.
+
+Ben: And to this day, there's no Google search in China, right?
+
+David: Yup. Only in Hong Kong.
+
+Ben: Wild. They really are and continue to be dividing two internets.
+
+David: Yeah. Skipping ahead to what would have happened otherwise. The Great Firewall was not totally in place yet at this point. If history had turned differently and Google had done this, so much could be different about China tech, US tech, and the global internet, but alas, it didn't. As a result, Colin ended up leaving Google to go to become an entrepreneur on his own, which is probably a really good idea. Before we get to that, I texted Ben this photo. This is the most amazing find in the research.
+
+Ben: From looking at what you texted me, did you find it in a YouTube video because I see the YouTube bar at the bottom?
+
+David: Yes, I found it in a YouTube video. We'll see if we can find whatever website it's on on the internet and link to it in the show notes. Also in 2006, Duan, remember we said one of Colin's other mentors. He bids on and wins the auction for the annual lunch with Warren Buffett in 2006. And who does he bring with him as a guest? He brings Colin. This is crazy. There's this picture. We'll find some way to link to it.
+
+There's this amazing picture of Colin and Warren Buffet. Warren's got his arm around him. They're sitting at a table in Omaha having lunch. It's just incredible.
+
+Ben: It looks like they both had a glass of red wine.
+
+David: There's definitely a wine bottle in front of them. I think Duan paid over $600,000 for lunch. For that price, he should get a pretty good bottle of wine.
+
+Ben: Within that couple of years span, we speculate he met Bill Gates. He definitely met Warren Buffett—we can see the photo with his arm around him. His mentors were Duan Yongping and Pony Ma, or at least he interacted with them. Certainly interacted with Pony and had Duan as a mentor.
+
+David: And William Ding.
+
+Ben: He's just going down the list of people who have over $10 billion in net worth.
+
+David: I know. It's pretty incredible. For somebody whose parents never finished junior high school, that's crazy. These are the types of things that were happening in China during this time. It's just this hugely rapid modernization of the country and opening up of capitalism.
+
+Back to Colin's entrepreneurial journey. It's now 2007. He's just left Google and like many talented young folks leaving Google and other successful internet companies these days. He wants to become an entrepreneur. He wants to start a company. Specifically, he wants to start an ecommerce company to capitalize on this trend of rising incomes and the emergence of the middle class in China and companying rising consumption. Interesting. Okay, this seems like a theme that's going to recur, so it's not yet Pinduoduo.
+
+Ben: But this is 2007?
+
+David: This is 2007.
+
+Ben: And Pinduoduo 2015.
+
+David: Yup, exactly. He starts a company called ouku.com. It's an online retailer. They sell electronics and other goods there. It does pretty well. He sells it within three years, and then he says, just like my mentors, I'm going to become a serial entrepreneur here and start starting and funding multiple companies. The next company he starts is called LEQI. The idea was they were going to help bring foreign brands—non-domestic, non-China brands—online in China and help them market and sell on the leading ecommerce platforms of the day—Taobao, Tmall, which is obviously part of Alibaba and jd.com.
+
+Also interesting, here's Colin. He's got his ecommerce experience. He's got his Google experience. He's now learning about his future competitors.
+
+Ben: We should underscore something that's going to be an important point that we keep revisiting. When you say Taobao and Tmall, those are products by Alibaba. Alibaba started getting this B2B ecommerce and then got into consumer ecommerce where they were selling directly to consumers in China with Tmall. Think about it like a mall with really high-end brands, and they wanted to keep that in its own separate ecosystem. Taobao is more like eBay. Does that seem like the right comp to you?
+
+David: Yeah, that seems right. I would say at this point in time, Alibaba’s various properties—the equivalent is Amazon plus eBay rolled together in China. We're now in probably 2012 timeframe, and people are talking about Alibaba going public, which they would in—was it 2014? And it was the largest IPO of all time.
+
+Ben: And the largest IPO.
+
+David: People think they've won. They are the monopoly. You think ecommerce, you think China, and you think Alibaba. JD is emerging. They're at number two, but they're the winner. So much so that even Colin is like, yeah, I'm going to start a company on their platform to help people sell on Alibaba, but he doesn't stop there.
+
+Also—at this point in time—mobile and social gaming are a big thing, and Tencent has just launched WeChat. Of course, they've had QQ, which was the desktop messenger platform that was deeply embedded in the gaming ecosystem for a long time. They just launched WeChat on mobile. Mobile gaming is a thing. He says, I'm also going to start a mobile gaming studio where we're going to start churning out some mobile social games on the back of this new emerging WeChat platform.
+
+Interesting. Here we go. Maybe we were not quite yet at Costco in Disneyland, but you can see the forces starting to swirl around here. All these things are running in parallel. Colin, given his background, his mentors, he's looking for a big grand slam home run. It becomes clear. None of them are really going to, on their own, achieve that mega mega success.
+
+He knows he's onto some big trends with each of them, and he starts feeling like, maybe there's some opportunity to bring all of these things together—an intersection of these trends. And if we could do that, I actually have the right team, all of these people. It's the same people even going back to his first company. Same engineering team, same co-founders who are working on all of these different products.
+
+We know how to do it. We have all of these skills in house from social gaming, ecommerce, deep knowledge of Alibaba, and JD. Okay, what could we do together?
+
+Ben: He's your classic serial entrepreneur. He's assembled the band. He just doesn't exactly know what the company is going to be, and all these different attempts. I think a few of them are running in parallel. He has multiple people cut up into different teams to work on stuff that overlaps.
+
+David: It's almost like he started a startup studio before it was cool. In 2015, he says, all right, in this studio type environment we have, let's do this. Let's start a company. They launched a new company called Pinhaohuo (I think is how you pronounce it).
+
+Ben: Again, neither of us are native speakers. We're going to do our best here, but Pinhaohuo.
+
+David: Which roughly translates—pin means doing something together and Hao Huo means good goods, so getting good goods together. This is crazy and super creative. It must have been from the social gaming world. Farmville is huge at this point in time. The idea is like real-world Farmville.
+
+He thinks that rural agriculture, Chinese agriculture, and the produce market isn't anything like the US, Europe, or many other countries where there are large co-ops of farmers and agricultural producers. It's lots of individual rural farmers. He thinks there's maybe an opportunity to use the internet (and particularly) mobile buying and ordering to have supply meet demand directly for these rural farmers.
+
+The idea is that if they can get this to work, this is something that Alibaba and JD aren't equipped to go anywhere near, but if they can do it, this is a huge category of groceries essentially like produce. Repeat purchase is going to be super high. They can use all their tricks from the gaming world to drive user acquisition, to drive repeat purchases. And they think this could really work. As an MVP, remember they’re—
+
+Ben: The other good thing about selling groceries or effectively selling fruits is the risk is low relative to you. You look around (at the time) JD and Alibaba's properties, you trust those brands when you're going to go buy an iPhone or something like that. But there's this new startup. You need a cheap thing to sell so that somebody's not like—if your site's a little premature and it doesn't look totally trustworthy, it has to be a small investment.
+
+Fruits and vegetables are great things to sell because if it doesn't work out, that's okay. I have other options. It wasn't that much money anyway.
+
+David: They're selling a couple of pounds of fruit for RMB 5, which equates to less than $1. It's funny you say site, Ben. There's definitely no site for this. There's not even an app. Remember, in the mobile gaming side of the house, they realized the power of WeChat and how important that was as an acquisition vehicle for games. They thought I hate to get going. What if we just don't even do an app? What if we just operate on WeChat with all these rural farmers? They have phones now.
+
+They have smartphones. They have WeChat on their phones. We'll just communicate with them via WeChat. Send them some orders and stuff and buy from them, and we can pay with WeChat Pay. We'll also just chat with the consumers who are buying the fruit on the other end and take payment from them via WeChat Pay. Okay, this seems like a good MVP until we can buy some time and buy an app. It starts to work.
+
+By mid-2015, they raised some venture capital and fully launched the company. The models are really interesting. We're definitely still not yet at Pinduoduo on the magic that makes that work.
+
+Ben: They’re also a first-party retailer. If you think about the two models that Amazon has where there's Amazon Retail and then Amazon Third-Party Sellers, the model with Pinhaohuo is that they're the Amazon Retailer.
+
+David: Yeah, exactly.
+
+Ben: You’re buying directly from them. You don't really know who the farmer is on the backend. It's your classic retail model of the retailer buys it from the wholesaler, keeps the inventory, has that tough business model—especially when the goods are spoiling—and then sells it to the consumers. I have to suspect they learned some lessons in the trickiness of holding inventory that would lead them to later embrace the market place.
+
+David: Yeah, totally. You hit the nail on the head there. They're a retailer in this model, which is interesting given Colin comes from an ecommerce background. That was probably what was natural to him. That's what his first company was, a retailer. That's why they thought to do it this way, but it turned out, there was a better way.
+
+Pinhaohuo is doing really well. They've raised venture capital. It's an exciting business. Clearly, they've hit a good wedge into the ecommerce market with produce and agriculture. Of course, their ambitions and [...] are much bigger than that. They started thinking about what other categories can we go into next and build on this foothold? Maybe we can start to compete with Alibaba and JD (eventually). Eventually being six months from now as we'll see.
+
+What did they do? He’s like, oh yeah. I got this gaming studio—an incubator that I have. Let's just have the team spin up some MVP type stuff in some other categories. Okay, great. What's the easiest way to do that? Being a retailer, we did this MVP with Pinhaohuo, but that was kind of hard. We built a bunch of infrastructure and it certainly requires cash. We're really just trying to learn here, let's just do it as a marketplace.
+
+We won't take inventory. We won't even really take much of a cut on the transaction. We'll make it super super small. Less than 1% of the transaction we'll take as a cut for our marketplace fee, which is different. I think Amazon takes—what does Amazon take?
+
+Ben: 30%.
+
+David: 30% on their marketplace. Even Alibaba and JD are taking 10%-30%.
+
+Ben: JD is very close. JD is 28% of GMV as recognized as net revenue to the marketplace. I think Tmall and Taobao are 5%, but still meaningfully higher.
+
+David: Still meaningfully. Five times higher. Okay, great.
+
+Ben: They settle here on what, 0.6%? This tiny, little take rate.
+
+David: Tiny tiny little take rate. Again, they just want to learn what sells. They launched this thing and they're like, what are we going to call it? It's also mostly running on WeChat. We like the Pin, the doing of things together. Let's call it Pinduoduo. Together, more savings and more fun. It seems fine. We'll go with that.
+
+Ben: Interestingly, this is a different company. They started as a separate entity also registered to Colin. It sets the table for who's this Colin guy and how does he have these two of the companies? I'm sorry. Is it fruit, is it gaming, or is it a marketplace for goods?
+
+David: Yes. That is the answer to that. Shocker, they launched this thing and it works even better than Pinhaohuo. It worked so well they ended up raising money for it independently at the separate entity from some of the same investors. This is in 2015. In 2016, it's growing so fast. Literally, by the end of 2016, they would do $70 million in revenue. Not GMV, revenue with their tiny take rate with this marketplace.
+
+In September 2016, they merged the companies. It's now one company. It's all the same team that has been working on these things called Pinduoduo. At the beginning of 2017, they fully transitioned out of the old retailer model of PHH and fully into the marketplace model of PDD.
+
+Ben: Two things to say here. One is a meta point about this episode. Since most of our audience are western, we've converted everything to US dollars to make it easier to understand. The other thing, David, we should not gloss over—and it just did really well and boom. They got to $70 million in revenue in their first year. How the heck did that happen?
+
+David: How did that happen? Yes. That is a very good question, Ben. Let's dive into that. It's not just that Pinduoduo is a marketplace with a low take rate for goods. That in it of itself sure is an advantage versus the incumbents. They can slash their take rates too. Also, who's going to trust Pinduoduo? Like what you were saying earlier, Ben, there's some upstart where you can buy an iPhone on this thing and be—
+
+Ben: Also, I’m not going to attract any retailers just by having a low take rate. Amazon is currently Amazon. If I start Amazon too with a 0.6% take rate, I'm not going to get Adidas to come and retail shoes on my little thing with a low take rate just because it is a low take rate. I had no audience. I've had no distribution. I've had no ability to actually pull it off.
+
+David: Yeah. We could talk to Hamilton Helmer and it turns out there's a thing called two-sided network effects where you have a bunch of buyers, it attracts a bunch of sellers which attracts some more buyers, and boom, that's actually defense.
+
+Ben: Are you telling me they need to define a novel way to attract a bunch of buyers?
+
+David: That might be a way to enter the market. Remember, they have all these gaming DNA. They come up with this concept for Pinduoduo that they call team buying. This isn't new. This is in many ways, atleast, marketed as the core concept of Groupon. Like, oh, lots of people buy these things together and then you'll get a lower price.
+
+That's not really what Groupon is. It is a deal site.
+
+Ben: We have all these crap that wasn't already selling. Will you come take it off our hands if we lower the price enough? Over time, we're just going to phase out that group mechanic, anyway.
+
+David: I remember buying things at Groupon and still, if you go ask him if you could buy on the site today, you're just buying the thing. You're an individual consumer, Groupon puts something in front of you, and you're buying it—full stop. That's it.
+
+Pinduoduo is pretty different from that and team buying is pretty different from that. In the Pinduoduo experience—this is the core mechanic that has gotten them to $100 billion market cap today—you see two phrases for every item. One price is the individual phrase. You can just buy something straight up for that price, get it tomorrow. Just like all good internet companies and gaming companies, that button is super faded washed-out colors. Red is the color scheme for Pinduoduo.
+
+Ben: It's just a great antipattern for UI designers.
+
+David: Exactly. It's like a very soft pink. The text is not bolded. You really have to fight against every fiber of your being to click that button.
+
+Ben: Are you sure you want to cancel your subscription? Yes.
+
+David: Right next to it though is a big, bright, saturated, and bold red color of the team buying button, which also happens to be a price that is typically about 40% lower than the individual buying button.
+
+Ben: Which is interesting because that's set by the retailer. The retailer—I don't know if it's a contractual obligation—as a term of listing on Pinduoduo, you set two prices. There was the individual price and then the team buying price. Interestingly, (I think it was something like) the team size had to be 20 people, originally. If you can go and get 20 people to come together, then you would have access. I think the retailer would control this too and say, if you bring 20 people, then it becomes 10 people, and now it's all the way down to 2 people.
+
+This idea that if you can self-organize, if you can do some demand aggregation for us, then you get a break.
+
+David: Yeah, totally. I don't know if this is how it was in the beginning, now the retailer sets the team size—the minimum team size. I say retailer, I mean seller. We'll get into that in a minute.
+
+What happens when you click that button, this is just genius because it all runs on WeChat. We'll get in the social aspects of WeChat in a minute. But it runs on WeChat Pay—WeChat's payment system. You are instantly charged that price, the team price, the minute you hit that button. That dollar value gets transferred to Pinduoduo immediately. They get the money the second you hit that button.
+
+The transaction doesn't go through. You have 24 hours to hit the minimum team size. There are two ways that you could hit the minimum team size to buy this item. You could, one, join an existing team that's out there and Pinduoduo, right in the UI, surfaces a bunch of other people that are also trying to buy this app, have also formed teams. You can join up their teams. Seems pretty simple. You'll get the discount that way. If you want extra discounts, you can form your own team and you can recruit your own people to come in and join you. It's all natively baked right into WeChat.
+
+You can just super easily post this item that you're buying into your family, friends, or whatever WeChat group or post it publicly in WeChat stories or whatever and recruit people to come join you. What is this kind of stuff? It's fruit, obviously, but it's also shoes, jeans. I think, still, the number one product—
+
+Ben: Facial tissue.
+
+David: Yeah, tissues. Literally Kleenex. This is where the Costco part of the Costco and Disneyland analogy comes in.
+
+Ben: It's essential. Who wouldn't want to be recruited and do a group to buy something that you have to buy anyway? And now you get to do it cheaper.
+
+David: Super cheap. Way cheaper.
+
+Ben: It comes with the social proof of somebody you already know saying, hey, I'm doing this. I trust this system, so do it with me.
+
+David: Not only that, the social proof, but think about for the team organizer. What are the dynamics? What makes Facebook, Instagram, and social media go around? It’s getting likes. It’s getting people to interact with something. You post—you feel good, you feel loved, and you feel appreciated. If you're starting this team and you're saving all your friends and family money, it's great. You might really push them to join you on this team and feel good when they do.
+
+Ben: Didn't they later launch features that if you get enough people, it's actually free for you? It's price cut or something.
+
+David: Price chop. I may be getting this wrong. I'm sure they've evolved the feature. In the early days of Pinduoduo, price chop was a way for you to get something. The platform showed you a selection of products that you could try and attempt to get for free with the price chop. It literally pays you dollars. It was getting people to sign up for Pinduoduo. Literally, register accounts.
+
+The brilliance of it, again, these all come from the gaming world, was say you had a RMB 100 product with sticker individual price. The first person you brought in for the price chop, lowered it for 50%. The next person lowered it to RMB 30. The next person... It was like an asymptote that keeps getting harder and harder to hit zero. If you didn't hit zero, nothing went through. You didn't get it for free. It's not that you got it for the price. You got it down to five. You didn't get it for five. You’ve got to get it to zero or nothing.
+
+Ben: It's like shooting the moon.
+
+David: It's like shooting the moon. All those people you just onboarded on to Pinduoduo.
+
+Ben: These are effectively the greatest growth hacks of all time. To be able to grow a platform as fast as they did and the exact correct incentives with the exact minimal amount of friction doing it on WeChat to just get a crop ton of users super fast to come and join the platform. Not just join the platform, but actually to transact.
+
+David: There's one more piece to making this all work. Not being nearly an expert China tech watcher, I was actually really surprised doing the research if this was possible in 2015, 2016 because it's not even possible in the US today. The third-party logistics networks in China are so mature, incredible, and built out to an extent that PDD could do this without setting up any of their own logistics.
+
+Ben: Whoa, really?
+
+David: Yeah. The way this worked was these transactions were happening in this gamified mechanic that PDD was facilitating. It would be on the merchants, even these rural farmers, to take care of the delivery and the logistics. There are tons and tons of delivery, both last mile and up above the last mile networks and competition in China. That was actually doable from your phone.
+
+Ben: Oh, yeah. I read something about this. They're all sort of API driven. They would basically bid out who could come and take the shipment the cheapest and it will all be done programmatically.
+
+David: I think this is what Pinduoduo does. They've invested a lot of tech in building this. You can almost think of it like Shopify fulfillment solutions now where Shopify is not doing the fulfillment themselves, but they’ve built out all these APIs to manage it. Pinduoduo has built that out now, but in the early days, they weren't even doing that. It was literally just like, hey farmers, hey manufacturers, or hey whatever. It's on you. Get these to consumers. By the way, you should probably do that within seven days or you're going to lose points in the algorithm.
+
+Ben: Fascinating. That's really interesting. I hadn't realized this as much. I was thinking there were some two pillars but there are three pillars of areas where China is way ahead here. The first one there being distribution. The second one being something we've talked about in group buying and social commerce. Social ecommerce doesn't exist in the US. There are some Shopify plugins that will show you so and so just bought this on this website to make you feel like hey, people are actually buying stuff so I should buy stuff too.
+
+There's not a multibillion-dollar company that made it work and made it an effective mechanism. You have to imagine it will. You have to imagine that coronavirus will accelerate that because shopping used to be a thing that we did for fun. Now, it's not because we can't go shopping with our friends.
+
+David: Let's return to that in a minute. I think there's a structural reason why this is going to be tough in the US in a way that wasn't in China.
+
+Ben: Hold that then because I want to talk about that. The third being the advancement of WeChat Pay and Alipay are so far superior to the payment mechanisms and money transfer mechanisms that we have here in the US because of the entrenched interest of the big banks where we are stuck on, not just on old technology, but just old thinking about how long money takes to clear.
+
+David: Cost available with clearing sale.
+
+Ben: Incredible fees associated with transferring money. The speed, the lack of friction, and the lack of fees that money can move around these ecosystems in China are just far superior to the debit rails here, the ACH rails here, and the wires. It's almost crookery the way you look at how far stuck in the past we are in that industry here.
+
+David: Yeah.
+
+Ben: Talk to me why the social thing won't work in the US.
+
+David: Okay, great. We've alluded to this a bunch of times so far in the episode. Let's finally bring in Tencent and what's going on here. Like you said Ben, the pillars to making this work are A, there's some cultural stuff. Group buying, actually, was kind of a phenomenon offline in China already. People are familiar with this. The logistics network was mature enough to be able to do it. The financial networks were mature enough to be able to do this. But then, there's socializing.
+
+Let's go back to Tencent and WeChat. We alluded to this. If you go and listen to our episode on Tencent, they made a major strategic decision with WeChat around this time that was very different from Facebook. I was thinking while doing research, I was like, I remember there were a bunch of social commerce companies that got started right around the time of the Facebook IPO. I remember looking at a bunch at Madrona. We almost invested in one. Thank goodness we didn't. We lost the deal. I remember because the company went belly up.
+
+What happened was, these companies were doing the same thing that Pinduoduo did with WeChat. They were just leveraging the Facebook social graph to blast out. There was tons of creativity about what you're buying, broadcasting that to your friends. People were trying stuff like group buying.
+
+Ben: Oh, yeah. There was a social network around blogging things that you bought. Broadcasting things that you already purchased that hit your credit card.
+
+David: Yup. Remember fab.com? It raised tons of money and flamed out. They were more of an email newsletter buying, but they were also leveraging the open Facebook graph. What happened was Facebook saw this going on right around the IPO. They wanted to do commerce happening on the platform leading up to the IPO, but then they yanked the cord and they shut off all of this stuff. You could still Facebook connect into anything these days, but they took all the juice out in the algorithm in the feed for any kind of stuff like this.
+
+Ben: In the same way that they did for music, but Spotify had already gotten enough distribution using, hey, here's what your friends are listening to. Of course, they then stopped showing, here's what your friends are listening to in the Facebook newsfeed. No one could catch Spotify. What you're saying is no one has leveraged the Facebook graph to get enough scale to become, I don't care if you shut it off. I'm already a winner. It was before they were over the hump.
+
+David: Yeah. Unlike Spotify, which is a subscription service, you need an ongoing access to a social graph to do this. I do think, certainly, a huge dependency. They have this in their IPO prospectus and ongoing fillings for Pinduoduo are Tencent and WeChat. If Tencent did the same thing to them, they'd be kneecapped. Unless they built their own social network graph, which they sort of have within the app but not totally yet.
+
+Why did Tencent and Facebook diverge here? What Facebook decided is they were like, oh, we're going to monetize this thing via advertising. We effectively want to control the commerce and business filling through our platform. We don't want to let anybody else do anything here. We want to make everybody pay tax if you're going to do this.
+
+WeChat took a really different approach. (1) Because the advertising ecosystem in China, in general, wasn't as mature at this point in time, it was harder to monetize. There weren't as many advertisers. Also, (2) it was a messaging-based ecosystem. You know they do have advertising but it doesn't make much sense.
+
+They came up with just a brilliant different business model which was, okay, we'll actually let all these startups use our platform and build businesses on our platform. What we'll do, we have all the data. We can see what's working. We'll just pick the winners and we'll invest in them, we'll get equity in these companies, and then we can put our hand on the scale and give them strategic access to API, new features. Like Mini Programs (one might say) that some of their competitors won't have. This is what ends up making Pinduoduo.
+
+Ben: This is really the point to draw that bright line of the difference between a platform and an aggregator. For folks who read Stratechery, I'm sure Ben has a much more eloquent definition than this. Facebook is your classic aggregator. They're aggregating the audience's attention. They're aggregating all of the advertisers and they’re the choke point in the middle. They charge the advertiser every time the advertiser wants to leech you off for a few minutes to do something on your site or app.
+
+Whereas, with Tencent, they actually said, hey, WeChat is going to be a platform. People are going to be developing reach applications on top of this. Facebook made a few different runs in being a platform. But ultimately, being a platform and an aggregator were in conflict. They picked the aggregator advertising-based business. They’ve basically thrown in the towel on being a platform. Whereas, Tencent has succeeded wildly. Not just because being a platform is a good business, but probably more importantly—exactly what you're saying David—they’re going to observe what's taking off, pick winners, and invest.
+
+David: Yeah. One thing I didn't even realize—this is almost a sidebar but it came up while I'm doing the research. You know Tencent is one of the largest shareholders in Tesla. They bought a 5% stake in 2017. Man, has that been a good investment in it of itself. You might think that's just unrelated. That's just being a good investor deploying capital.
+
+Guess who has an official account and a Mini Program on WeChat? Tesla. Guess what you can do on it? You can find superchargers. You can browse and order a Tesla.
+
+Ben: They were watching the demand in China?
+
+David: I don't know if they're watching the demand, but they've allowed Tesla to start to be—
+
+Ben: The other way around so Tesla can get better penetration in China because they have proprietary access to different APIs.
+
+David: Yup. For something like Tesla, great. This is the icing on the cake. For something like this, this is literally the core of what makes it work. They were competitors to Pinduoduo. They still are competitors to Pinduoduo. In February of 2017, Tencent decided to essentially king make Pinduoduo here in this category. This is such a strategically important category to them as we've discussed. They need $110 million series B in Pinduoduo. This company, remember, is five, six months from the merger between PHH and PDD that they lead.
+
+Sequoia comes in as well—Sequoia China. They give them a ton of capital but they also give them a wide-open access to the platform including this new critical feature that they have just launched on WeChat called Mini Programs.
+
+Ben: For folks who have never paid attention to the China ecosystem before, it's not like in the US where the App Store is the place that you go to get access to the software.
+
+In China, WeChat has really created an abstraction layer on top of the operating system where you open WeChat and then you decide what to do from inside WeChat. These days, that's by going to a Mini Program.
+
+David: It's totally brilliant from a technical and computer science standpoint. This completely obviates the need to develop and maintain rich apps across iOS, Android, and all of the various other operating ecosystems within China and various flavors of China-only Android, Xiaomi, and the like.
+
+Ben: I don't think it totally obviates it. I think you do need to build special versions for each operating system, even if you're building a Mini Program, or at least hook into the native stuff on its own. What it did do is make the operating system less important. The switching cost goes away, or you can switch between iPhone and Android more easily because you've got WeChat and all Mini Programs no matter what hardware is.
+
+David: Yup. Totally. Most of these companies, once they reach any scale, they do have native apps and WeChat Mini Programs. But in terms of customer acquisition, loyalty across platforms—it's huge. We'll try and link to this in the show notes as well. There's this amazing graph of looking at PDD and its competitors of how many users they have in their own app ecosystem versus in the WeChat Mini Program app ecosystem. PDD is the only one. They have 233 million users that interact primarily through the WeChat Mini Program, which is a fully-featured Pinduoduo app. All the same features are in there as in the native app.
+
+Ben: That’s like ⅔ of America. The equivalent of ⅔ of America, including children, are Pinduoduo users only through the Mini Program through WeChat.
+
+David: Yeah. They have another 144 million users that primarily interact with their own native apps.
+
+Ben: Which is like four Twitters worth of users.
+
+David: Yeah, right. You compare that to Alibaba, JD, and Vipshop. All of those other competitors, (A) most of the users are on their own apps, (B) PDD has exponentially more users total in the WeChat ecosystem than any of their competitors. For something like this that is so natively social, that is such a huge advantage because remember, all of the buying traffic on the buyer side of the marketplace is coming via these team purchases.
+
+It's funny, in their filings year after year, they talk about how you can buy things individually. They say, substantially, all of our purchases happen via the team buying platform. Nobody buys the individual price.
+
+Ben: It's almost silly to call it team buying. The fact that you only need a party of two and you can join a party of two with a stranger. You must've just clicked the wrong button or something if you didn't just join someone's existing party. If you didn't feel like inviting your friends and making a big party of 10, 20, or whatever and you just need a party of two and somebody's already posted it, come on. Is that really a team purchase?
+
+David: You're basically trying to pay more money.
+
+Ben: Yes.
+
+David: On the back of this, this is February 2017 when all this happens—the investment and the Mini Program launch. From 2016-2017, Pinduoduo over 3x their revenue to $270 million. They fully transitioned to the marketplace model. They got out of the retailing business. On the back of that, they file to go public. Then, they do go public in June of 2018, less than three years after the initial launch of the company and less than two years after the merger. Just incredible.
+
+Ben: Yeah. An important point that they make in this IPO prospectus is, not only did they grow like wildfire, they hooked into a consumer category that all these other ones overlooked. If we think about the way China has different cities, there's tier 1, 2, 3, and 4. Your tier 1 cities are the ones closest to the big commerce centers. Tier 4 cities are the ones farthest out toward the most rural areas. Wealth goes down from 1-4.
+
+What Pinduoduo did was they were able to effectively reach people in tier 3 and tier 4 cities. They are able to also reach a dramatically female audience. I think it's mostly 25-35-year-old females in these tier 3 and 4 cities. Not a super high dollar amount per purchase, but for many of them, this is the first experience with ecommerce.
+
+Pinduoduo is their gateway for these customers into the ecommerce world. Their bet is, look how fast we grew with these people. We're going to continue to grow quickly. As they start to accumulate more buying power, they're going to be purchasing from us.
+
+David: Yeah. That breaks up a couple of great points that we haven’t touched on yet. This has been one of the narratives for Pinduoduo for the last couple of years. It is bringing on these more rural users to ecommerce. And that is definitely true, but there are a couple of interesting things about it and I think were brilliant parts of the strategy.
+
+Remember where they started with produce and groceries and most of what the items that are being bought on this app are their everyday household essentials. Who’s doing that is whoever’s managing the household, and in many cases that’s women. In many cases, that’s women with children at home.
+
+If you look at the demographics of the app—at least in the earlier days—it’s now broadening and penetrating the whole economy. I think about 70% of the users were women. The biggest age demographic was between 25 and 35. It was all young mothers at home who were using this to save a whole lot of money on all their household purchases.
+
+Ben: The other important thing that we haven’t touched on yet is that it was browse-centric not search-centric. If you think about ecommerce, for most of you who are buying stuff and listening to this show, you go to smile.amazon.com to donate to your favorite charity. You type in the box exactly the product that you’re thinking of. And absent there being the coronavirus going on, it’s almost 100% chance it’s there and ships to you. If not in one day then in two and the world is magical.
+
+Pinduoduo’s insight is we’re going to feature stuff that people need, but we’re not going to make it an intent-based system. We’re just going to show people—at first in a brute force way, over-time algorithmically—things we think they’d be interested in, things we think they might be out of, and things we think their friends are buying and thus might influence them to buy. It’s basically a news feed of stuff that you can purchase, which is a totally different paradigm and allows them to get away with something that is (in my mind) a total narrative violation, which is (to use the phrase) long shipping times.
+
+When you buy something on Pinduoduo, you don't search for it. It wasn’t something you immediately needed at that moment. It was something that caught your eye. You’re like, oh, I’ll take that. They can get away with much cheaper shipping that takes much longer and have a totally different cost structure.
+
+This is very interesting to me as a start-up investor. If you had pitched me in 2016 and said hey, I’m going to create this ecommerce site and it’s going to take forever to ship. I’ll be like that’s immediately out because the future is overnight shipping. Amazon has changed the world. In fact, Zulily, in the US, had the same insight. They (at one point) were a $6 billion independent retailer.
+
+David: Acquired by QVC.
+
+Ben: Yup, Seattle-based. They had the same insight that if they send out a browsable list of deals every morning, then they can get away with long shipping because nobody is intent-based and nobody needs that thing that they were searching for immediately tomorrow. The parallels to Zulily are actually interesting because it’s a primarily female audience. It’s mostly about the deals, but this linkage—and I think it was a very interesting insight that both companies had, Zulily and Pinduoduo—is when it’s a browse-based experience and it’s not intent-driven, you can get away with much cheaper, much longer shipping times.
+
+David: This brings up two related nuance points on that. One, Colin in Pinduoduo talks a lot about the entertainment value of this. Especially about this demographic, this is the demographic that in a different age, place, and time would’ve been watching Oprah.
+
+The escapism associated with this shop, it’s the same reason that a lot of the same demographic played and plays these mobile social games. This is, essentially, a mobile social game except you’re buying your household groceries with it. Super interesting.
+
+The other aspect, you bring up the feed. This has a really important impact for the supply side of the marketplace, A) because they don’t need fantastic shipping and logistic times, as you mentioned, Ben. But also, just like TikTok, it means that there’s much less entrenched success on the platform.
+
+New entrants on the seller side, especially via the team-buying mechanic, can start breaking through and getting good volumes because it’s all driven algorithmically by the feed that Pinduoduo has been putting in front of users as opposed to the equivalent in social being the follow model or subscribe on YouTube, Twitter, or whatnot. How TikTok ended around that with the for you feed where anybody, any good content could breakthrough. It’s the same deal here.
+
+Ben: Right. The platform can be much more opinionated on where it drives its traffic, and that can be really really good if you’re a supplier on the platform. It’s bad in the sense that you don’t get to build that direct connection with the audience, so it’s less reliable. What’s the positive Eye of Sauron? When it looks favorably upon you, it can buy a whole bunch of stuff all at once.
+
+David: Think about Amazon. You’re selling a commodity-type good on Amazon. You’ve been on it for a long time. You have a certain skill. You have 10,000 reviews for your product. A new entrant wants to come in and compete with you in that same category and they have two reviews. Who’s going to get most of the purchases? That’s not a problem on Pinduoduo. On the supply side, who did they start attracting with all of this demand that they can channel? It’s actually manufacturers themselves. We alluded this to earlier in the episode.
+
+What they end up doing—and I think part of what makes the economics of this whole thing work—is it’s not distributors, retailers, and the traditional people who are going to sell on Alibaba and JD who are successful on Pinduoduo. It’s the actual factories and manufacturers themselves. They now don’t need any branding, distribution, or anything like that. They can just go directly to PDD—even though they have no brand—and know that it’s going to work. That is a big collapsing in the value chain that they’ve been able to accomplish.
+
+Ben: Yeah, 100%. I have to pull forward the tech theme now or a playbook item because we’re talking so directly about it. One of the biggest takes away from this whole thing is they successfully disintermediated both traditional retailers and brands. By not only being entirely internet-based but also social network-based, they were able to bring that scale of buyers, of demand directly to the brand, which is normally the job to be done by that retailer. The brand can sell in big chunks to their wholesalers, and then it can get chunked down smaller and smaller from there.
+
+David: Or the brand itself. There are lots of companies out there that are just brands. They don’t produce anything. They just use Flextronics or whomever to make their stuff.
+
+Ben: Exactly. The social buying model takes that aggregation of demand and totally eliminates the job to be done by a retailer. It allows for much cheaper prices because they cut out that middleman.
+
+But then Pinduoduo takes it even one step further because, on top of that, they created a marketplace that—at least so far—hasn’t cared that much about brands and is starting to this year. Because they sell basically household commodity things, that means an individual manufacturer can just list a huge quantity of one thing that they make. Not a brand that has to have a suite of products and builds that relationship with the customer [...] and invests in all this marketing.
+
+They can drive the price down so far because they get rid of the retailer, because all of the demand can be aggregated on to the group buying. They also get rid of the brand and say hey, buy this unbranded thing from this retailer and boom, it sells out.
+
+David: In the early days, especially, a lot of the supply on the platform was actually coming directly from manufacturers that just had an extra capacity for stuff. They weren’t booked up enough by these contract manufacturers, by whoever was using them. They had some excess capacity, so Pinduoduo started going to them.
+
+They’ve now labeled this whole practice C2M—consumer to manufacturer. They started going to these contract manufacturers and saying hey, we think we can generate a lot of demand for tissues, jeans, raincoats, umbrellas, or whatever.
+
+Ben: Don’t they presell stuff sometimes too? They even do generate the demand, take the payments, and then they go to the manufacturers after that and say, we know you can make this. Just make it.
+
+David: That’s funny. They may start doing this. They go to manufacturers and they’re like we’re pretty sure you just use your excess capacity on the line. Make this stuff. We can pretty much guarantee you’re going to move it.
+
+Ben: This is the positive scenario of that. The negative scenario and the rip on this company for a long time now (a long time, it’s been five years). The rip for the last two years—I know they’re taking lots of steps to address this—has been massive amounts of counterfeiting. People buying goods that are knock-offs of big brands. Or the factories that manufacture stuff for brands are making a few others that are not putting the nameplate on it then selling on Pinduoduo for way cheaper.
+
+It comes with these downsides that now Pinduoduo is having to really invest in anti-fraud mechanisms in order to not damage their own brand as a marketplace.
+
+David: There has also been a lot of fraud on the consumer side too. One of the ways this company has huge sales and marketing expenses—that is certainly advertising that they do, but a big part of it—is coupons, promos, and deals. There are very sophisticated hacking rings in China and everywhere where people are doing affiliate and coupon fraud to pay essentially nothing for items.
+
+There are massive challenges associated with this. But because of these dynamics, they’ve been able to break-in to this market, ecommerce in China, that everybody thought was done.
+
+Ben: Yup. We’ve talked to the IPO a little bit. We’re talking a little bit about their efforts today to combat this fraud. There’s another big effort today that has been going on, which is breaking into these tier 1 and tier 2 cities. Because the price per item on Pinduoduo is $6 or something (the average transaction size). When you look at that compared to any other, not only Chinese but American comparable, it’s super low. Not only is the price per item super low. As we talked about, PDDs take rate is incredibly low. They have a revenue problem.
+
+David: What is the business model of this company? That’s a good question. Hard to build a big business even with lots of GMV if you’re only making money on the 0.6% take rate.
+
+Ben: What if, David, I could tell you that only 10% of that revenue needs to be from that take rate, and you can make 90% of your revenue doing something else?
+
+David: That sounds like it could be interesting. What we’re talking about is advertising and promotions. PDD has built out a very sophisticated advertising and ad bidding system similar to Google, similar to Facebook, and actually really similar to Amazon and Alibaba too. Where merchants on a platform can pay and importantly prepay for preferential payments for their customers’ feeds of their product for sponsored placement just like sponsored posts on Instagram, Twitter, or whatever. That, as you said, makes up most of the revenue of this company.
+
+What’s interesting is people think this is a big innovation. Alibaba and Amazon have been doing the same thing for a long time. There are a lot of sponsored products on Amazon.
+
+Ben: The originator of this business model is (in some ways) the classified ad, but in other ways is Google and of course Yahoo before that and Overture before that. The thing that you mentioned about Amazon is interestingly not true.
+
+David: Oh, I was wrong?
+
+Ben: It took Amazon basically 23 years to layer on an advertising business of any meaningful size to their ecommerce business. The way that Amazon makes money is they charge a ~30%, if you’re a third party seller. And of course, they have their own margin that they take if they are the retailer. Let’s forget AWS for a minute, they make most of their money that way.
+
+Only three or four years ago did they really start to meaningfully develop an advertising ecosystem that’s been growing. It is now about a $10 billion a year run rate business for them. They’re very quickly becoming a major player and the advertising ecosystem.
+
+David: And of course all the sponsored search results that you see on Amazon.
+
+Ben: Exactly. This was not Amazon’s play for a long time. They were leaving this money on the table. Fascinating to me that Pinduoduo was like we aren’t making money on these transactions. We got to make it somehow. Very early in their business, they developed leg number two of the stool to make money on promoting products. It’s also more common in China.
+
+David: Yup. Alibaba has done this for a long time. Which is interesting. I had thought Amazon had started this much earlier than maybe they did. I know they had pilot projects running around this for a long time, but the decision to invest in it, I wonder if it was driven by observing what’s been happening in China.
+
+Ben: It had to be because they’ve really put their foot on the gas. It went from something like $4 billion in 2018 to $10 billion in 2019. It’s a really fast-growing business.
+
+David: Wow. That’s crazy. We mentioned the IPO a minute ago. They raised $1.6 billion in the IPO. The stock popped 40% on day one. Bill Gurley would be unhappy about that. Fortunately or unfortunately he wasn’t an investor here.
+
+Ben: Money for bankers, money for people who bought the IPO allocation, and money left on the table for all the private shareholders.
+
+David: Yeah, exactly. Colin wasn’t hurting too much though. This is crazy. He still owned 46.8% of this company when it went public.
+
+Ben: What?
+
+David: Yeah. One of the knocks, we’re going to get to this in narratives in a minute on company is—
+
+Ben: Two and a half times what Tencent owned?
+
+David: Yeah. One of the knocks on this company is they’re not profitable, their losses are huge—we’re going to get into that in a minute. Just think about if this company had huge losses, how is Colin able to retain so much of the equity even though they fundraised a lot? Keep that thought in your mind.
+
+Ben: Incredibly competitive fundraisers?
+
+David: Yes and no. He owned almost half the company. At IPO, that stake was worth $13.8 billion making him the 12thrichest person in China. Again, for a company that was essentially founded generously three years before and really two years before that, Tencent and Sequoia both bought into the IPO rather than selling. They each put about $150 million toward buying shares in the IPO.
+
+Ben: That looks brilliant now.
+
+David: Yeah. Because things have gone pretty well over the last two years. The stock is up 5x. They’re now down below $100 billion market cap. They did—a week or so ago—cross $100 billion market cap, Ben, as you mentioned in the intro. Their share of the ecommerce market in China went from 4% of the ecommerce market by transaction volume at IPO in 2018. It is now 14%. That has come almost 100% at the expense of Alibaba, which went down from 73% to 62%. Almost all of that share was taken from Alibaba.
+
+Ben: Of course, they’re both growing. It’s an impressive growing pie, but from the share percentage, yes.
+
+David: Crazy. With that stock run-up—and this is why Pinduoduo has been in the headlines recently—they passed $100 billion market cap. Colin became (as of today), the fifth richest person in China. He briefly passed Jack Ma of Alibaba becoming the third richest person in China. He’s now down to number five. He’s the 30th richest person in the world. As all this was happening—
+
+Ben: He’s after Bill and Warren.
+
+David: Yeah. He’s gunning for them. His old mentors. On July, 1 in a surprise announcement, he announced that he was going to step down as CEO, remain as Chairman of Pinduoduo, and hand the CEO role over to his co-founder and CTO, Lei Chen, who had been with him since the first company. They were actually grad students at Wisconsin together. I don’t know if Lei worked full time at Google, but I know he interned at Google together, then they worked on the first company and all the companies all along. Very interesting what’s going on now.
+
+Ben: Yeah, it’s fascinating. Wait, David, you got to answer that question. How, if they were losing all this money, did they manage to preserve so much ownership of the company?
+
+David: This is a good transition to narratives. The bare narrative around this company has been this is a crazy model—hard to understand. I didn’t understand it at all until doing a lot of research over the last week. This is an interesting reminder that gap accounting doesn’t always tell the whole story. If you look at the net losses of this company—
+
+Ben: Oh, boy. This is quite an exciting podcast, listeners, that you’re tuning in to. We are talking about gap accounting. Strap in.
+
+David: If you look at the net losses of this company, they’re huge and growing, but then I found something really interesting. Go look at the cash flow statement. This company has had a huge, positive operating cash flow for the last three-plus years. Over $1 billion positive operating cash flow each of the last 30 years.
+
+Ben: What is that, upfront payments on advertising?
+
+David: It’s a couple of things that are just totally brilliant pieces in the model.
+
+Ben: Let me put something into layman’s terms (frankly for myself) and then you can tell me if I’m interpreting this right. Just so that we level set here. There’s something that’s not being recognized as revenue, but they are receiving cash for something that gets to be in their bank account. And they get to be in this really nice cash position. Even though, on their income statement, it wouldn’t show up as revenue because they’re deferring it for some future purpose.
+
+David: That is part of the story. There’s an interesting—almost equivalent to—Berkshire Hathaway and their Geico insurance business equivalent to the float dollars that Berkshire. When new merchants sign up to come on to the PDD platform, they have to pay in a pretty meaningful cash deposit to be on the platform. That’s to guard against fraud.
+
+If there are customer complaints the equivalent of chargebacks, counterfeit merchandise, or whatever, there’s actually some real teeth. There’s been a lot of controversy about this. In an attempt to eliminate fraud, PDD has what they call the 10X rule. 10X the value of the goods gets charged to the merchant as a penalty for committing fraud, for putting counterfeit merchandise on the platform. They have to pay that in up-front as this deposit.
+
+That cash just sits there, right? If you look at the restricted cash line item on this company’s balance sheet, it’s enormous. That’s one aspect of it.
+
+Ben: What do you mean enormous right now? I know they have $5 billion in cash and cash equivalents in the bank. Is that what you’re talking about or is there a bigger pile?
+
+David: I don’t have the exact numbers in front of me but I believe it’s several billion US dollars and many tens of billions of RMB in their restricted cash. But that’s not the only source of restricted cash. Remember we talked about how the team buying deals work. When customers hit that team buying buy button, the cash immediately goes from their account over to PDD, even though the transaction isn’t going to complete for up to 24 hours. And if the transaction doesn’t complete at all, then it gets refunded back to the customer. But the cash still goes over to PDD.
+
+Ben: They’re holding a bunch of cash that they’re not allowed to touch because it didn’t ever get recognized as revenue?
+
+David: Yeah. The third source of flow for the company is what you mentioned, Ben, which is merchants for advertising for sponsored placement in the feed, they prepay for that advertising. It gets doled out algorithmically over a set period of time and charged off against the accounts to the company. All of that, at the scale that PDD is operating, nets out to this massively negative cash cycle in accountant speak, but positive in terms of cash flow where it’s essentially an interest-free loan on their growth. Now they have raised a bunch of money that they’ve used to grow.
+
+Ben: But can they spend that on growth if they have all this restricted cash?
+
+David: It’s restricted but—
+
+Ben: What if the music stops?
+
+David: If they stop growing, then that restricted cash will go down. But because money is fungible, even though money is coming in and out of that restricted cash pool, it’s large and growing. Just like the insurance float business—it’s not like Warren can go spend the cash on the insurance float, but it can be invested.
+
+Ben: They get put in fixed income or something to get 1%.
+
+David: Exactly. If you look at the short-term investments on the company’s balance sheet, it’s gone way way way up in recent years. That doesn’t even account for their restricted cash. That’s their actual unrestricted cash they’ve been investing, but I assume that’s because they’ve built out a massive treasury department to be investing all these pools of cash that they have.
+
+Ben: You just painted a bear and bull side of that narrative. The bear case on it is they’re just burning cash. You could compare this to the litany of Uber era companies in the US that were growth at all cost, very unprofitable.
+
+David: More accurately, Groupon.
+
+Ben: Yeah.
+
+David: Burning a bunch of cash on customer acquisition while selling deals and subsidizing those deals.
+
+Ben: What you’re saying is they’re not burning cash. They have negative operating income, but they’re actually doing great on cash.
+
+David: Yeah. There hasn’t been a bunch of coverage about this, but I just found it as I was looking at the company’s financial statements. I was like whoa, this does not add up. When you look at the income statement and it paints one picture of the company, and then you look at the cash flow statement and it looks like a totally different company.
+
+Ben: I will paint the other side of that narrative, which is they’re incredibly richly valued because of how fast they grew. This is a company that sells inexpensive items, doesn’t get to participate in that much of the transaction for those inexpensive items. When you look at where they’re trading. When you look at this $100 billion valuation that they have, it’s a 23x revenue. Keep in mind, that revenue is just the 0.6% of the transaction plus the money that they get from advertising.
+
+Twenty-three times revenue they’re trading at. Meanwhile, JD is literally 1/10 of that at 2.3% revenue. Alibaba, close to 1/3 of that at 9x and Amazon at 5x. Compared to other companies with similar business models, you better believe that they’re going to do a whole lot more growing—the way that they have done—which frankly feels a little silly because they’re already closing in on Alibaba, which is the upper limit of how many users you could have in China buying things. Or they’ve got to get much better at monetizing each user meaningfully more.
+
+What they’ve been doing is trying to move into tier 1 and tier 2 cities in addition to this 3 and 4, and they’ve done that successfully. Toward the end of last year, they announced that 45% of users are now in tier 1 and tier 2 cities. They matched the breakdown of what the demography in China looks like. The question is how? Why are people in tier 1 and tier 2 cities getting interested in this?
+
+Enter the subsidy scheme. They are listing like iPhones on the platform now. This is something that people in tier 1 and tier 2 cities are interested in. But PDD is going to the manufacturers and saying hey, can you list it for 15% off because that’s what people really expect on our platform? The manufacturers look at them like they’re insane. PDD says, we’ll cover the difference. That is where all their cash is going.
+
+David: I know we were a little bit of our key in accounting details there, but that’s why I think this is so interesting. Looking at their cash flow statement, yes, they are subsidizing all this. They’re effectively spending all of that money on customer acquisition, but their cash flow is positive while they’re doing it. Even with all those subsidies, last year they generated over $2 billion in operating cash flow.
+
+If you think about the valuation in cash-flow terms, this company is trading at roughly 50x past 12 months operating cash flow. That’s not a crazy valuation.
+
+Ben: This is why you need to look at all three financial statements in order to really understand the company. What’s the phrase revenue is an effect and profit is an opinion. That extrapolates a lot further where you can have a different philosophical viewpoint on a business based on the way that you choose to value it.
+
+I know we’re in narratives but I want to give—just for our listeners to keep a little sane here. I want to give some comparisons between where the company is today so you understand the scale that they’re at—JD, Taobao, and Amazon. Just to understand the relationship between the two.
+
+The mega-giant in China is Alibaba and their consumer ecommerce in China is Tmall and Taobao. The GMV on those platforms is close to $1 trillion. That’s 3x Amazon’s GMV. That is $1trillion of goods or gross merchandise value moved through Tmall and Taobao. They’re able to capture 5% of that as revenue.
+
+Last year, on those two platforms—Tmall and Taobao—Alibaba actually did $50 billion of revenue. Alibaba generates $50 billion of revenue, they’re very profitable. They have an operating margin—not gross margin, but operating margin—of 18%, including all their businesses. There’s a little bit mixed up in the AliCloud and all that because it’s not just the retail business. The way I’m trying to paint this is they’re a revenue juggernaut and they’re very profitable.
+
+If you compare that to where we are with Pinduoduo, they have $145 billion in GMV. They’ve made a dent. That’s 1/6, 1/7 (something like that) of Alibaba. Just in the last five years, they’ve come up to be able to do that. But they only do a little over $4 billion in revenue. That effectively means they’re capturing about 3% of all the GMV flowing through the platform as revenue either in the form of these advertising services or in the actual 0.6% commission that they get to take.
+
+I just think it’s interesting to compare those two businesses. The other interesting way to compare Pinduoduo is this $4.3 billion in revenue that they do is only 5% of JD’s revenue but with 1.7 times the users.
+
+David: Wow. That’s back to the dynamics that you were talking about earlier of the average purchase price of goods on the platform and velocity.
+
+Ben: Pinduoduo has 490 million monthly active users, so 1 ½ America’s worth of users. They actually have 630 million active buyers when you look at the number of people that are on the Mini Program. The sum total of anybody who buys through Pinduoduo through any platform—630 million, so close to two Americas.
+
+You compare that to JD. JD has an estimated 290 million monthly active users. That's half of Pinduoduo users, but they are able to generate $83 billion in revenue because 28% of GMV gets captured as revenue. Would you rather be JD and have the users, or would you rather be Pinduoduo and have way more users but 5% of the revenue that generates.
+
+David: The most interesting question is, like all valuations of companies, it's about the future, not the past. What do we think is going to happen to all those users and transactions, especially as Pinduoduo tries to compete more directly for the same types of users that JD, Alibaba, and particularly Tmall—are there hallmarks?
+
+Ben: Yup.
+
+Alright, David. We opened up some questions there of who would you rather be, Pinduoduo, JD, Tmall, or Taobao. We gave some comps to Amazon. Let's move into what would have happened otherwise and then try and answer those in the playbook.
+
+David: The most interesting thing to me in going through the history and facts of what could have been different is what if Facebook had made a different decision here in the US about how open they were going to let their platform be to big business being built on it, particularly commerce businesses. I think it's extremely unlikely that would have happened. I think they made this strategically correct decision given the operating environment in the US at the time of going with advertising.
+
+Ben: We should say Facebook generates $70 billion a year in revenue, but they get to keep most of it. Pretty good decision, pretty good business.
+
+David: Yup, definitely pretty good. I'm very fascinated by this Tencent decision because they let a thousand flowers bloom because they really have gotten to see and invest in all of these companies that are getting built. Let’s just take PDD, Meituan, and DiDi—those are the big three. Tencent is I believe the largest shareholder in all of them, the largest or one of the largest. Compare that a few years ago when they started down the strategy.
+
+They were neck and neck with Alibaba and Baidu and very unclear what the strategic future of the company was going to be. Fast forward to—nobody certainly cries for Alibaba. Baidu has fallen on somewhat harder times. But Tencent just seems to me to be so much better strategically positioned to capture all of the internet economy happening in China via their strategy.
+
+Ben: There is some work to be done here to compare Tencent as an investor to SoftBank as an investor. My guess here is that they actually did a better job at SoftBank strategy than SoftBank did to go and basically back all the unicorns and be in the most successful unicorns as they grow from billion dollar companies to hundred billion dollars companies.
+
+I think they are in 15%-20% of the unicorns and they got in early. I would guess they made $12-$15 billion—of course in illiquid value. But just from this investment in PDD, I think they've done that four, five, six times.
+
+David: Yeah. It reminds me of Sequoia and our part one episode about Don Valentine. His quote that when he started Sequoia, he had a strategic advantage. He knew the future. That was from knowing all the roadmaps from Fairchild and what all the applications of selling conductors were going to be.
+
+That was the same thing for Tencent here. They knew the future in that they control the distribution platform that all these businesses we're being built on. Now with Mini Programs, not just the distribution platform, but literally the operating system. They can see what's taking off. After they invest, they can start to put their hand on the scale a little bit and strategically help their chosen companies.
+
+Ben: Yeah. Whereas Facebook thought they were making the same decision where they'll benefit from the whole ecosystem. When apps were booming and Facebook just made a sinful amount of money on app install ads, they are like, we don't even have to have an opinion or make an investment. We just make money every time somebody goes and installs an app.
+
+The question is, is that going to be as enduring as Tencent's method of doing it? Because Facebook is more efficient. They don't have to invest. They also don’t have to have an opinion.
+
+David: Yup.
+
+Ben: I like that you took what would have happened otherwise there. I was thinking, since this episode is going to be about the IPO and grading the IPO, what would have happened if they did an IPO?
+
+Until your comment there, I was going to say they were screwed because I thought they desperately needed access to cash. Over the course of the IPO and three subsequent debt and equity offerings, they've now raised in their $5 billion since the IPO or including the IPO.
+
+This is a company that does need cash to grow. It didn't need cash to grow originally because it was just growing like wildfire on WeChat, but now they have to invest dollars to make this thing grow and big dollars. I think they have a $1.5 billion reserve for subsidies this year.
+
+To me, there was this real danger of growing big fast but not being able to effectively monetize their user base if they weren't able to keep growing into the more valuable user base. I do still think that's true even with your comment about them having really great cash flow dynamics. But I would say, this company needed the IPO or go raise a SoftBank round or more likely a Tencent round that's simulated on IPO around the time that they did.
+
+David: It's interesting. At least one of the equity follow-on rounds that they did as equity raises after the IPO, I believe Tencent bought most of or at least a significant portion. They continue to invest dollars into the company even though they're already the largest shareholder.
+
+Ben: It's awesome. All right. Should we get into the playbook?
+
+David: Yeah, let's do it.
+
+Ben: There's a thing that's a splinter in my mind on team purchase that I'm trying to apply to how do you use this lesson in starting a startup? Where it was both a novel product feature that had perfect product/market fit, and it was an unbelievable mechanism for growth. It was a native growth feature that was intrinsic to the value from the product itself, but also provided this incredible extrinsic growth strategy.
+
+The way to misunderstand growth hacking is to assume that you can stick it on afterward. This is the best example of growth hacking where the product itself was viral.
+
+David: It's so rare to be able to find examples like this. Maybe Instagram, WeChat, WhatsApp, Messenger, and social types of platforms could fit this bill. To go back to the narratives a little bit, one of the other bear cases against this company is just the argument that people have said this before with social commerce companies that there was this inherent viral nature to their products. The steam always runs out of the engine, or has in the past.
+
+I wonder if it could legitimately be still an open question with PDD especially in these categories they're getting into now. Is it really about team buying when you're buying an iPhone or is it about them subsiding the price?
+
+Ben: Right. It's about them subsiding the price. I'll offer an opinion on that.
+
+David: Yeah, it seems pretty clear.
+
+Ben: I think it's a classic what got you here won’t get you there. Now they're a scale player, team purchase is less of a driver of the business.
+
+Though I do think mini games and stuff in there are a driver. Even if you don't want to buy something today, there's something for you to do in the app. There's rewards and discounts that come with doing it so you may as well open the app and play with it today.
+
+David: We don't have time to talk about this, but one of my favorite features about it is there's essentially a FarmVille clone in the app where when you finish growing your tree, they actually ship you a box of fruit.
+
+Ben: Another big playbook thing that we have to call out here is—thanks to Hamilton Helmer for providing us a framework to think about this—recognizing a counter positioning opportunity to build an amazing moat around your business.
+
+With PDD, Colin realized that with the newly launched WeChat Mini Programs, there was an opportunity to leverage the WeChat social graph for ecommerce. Not only that, but he realized that it would be defensible from the largest competitor out there in ecommerce, Alibaba.
+
+Since Alibaba competed with Tencent and basically wouldn't use WeChat platform, in fact, I think Alibaba actually banned their sellers from encouraging the use of WeChat and made them use their own chat platform. Of course, there are others who could compete with Pinduoduo on WeChat, but Colin at least had that wide-open lane versus the biggest incumbent.
+
+This is that classic example of counter positioning since in order for Alibaba to see that Pinduoduo's strategy was working and then copy them, they would have needed to do serious damage to their own existing business to convince Tencent to allow them the amazing native of functionality that they were providing to Pinduoduo.
+
+David: There might be another structural reason too to why they couldn't respond which is the payments layer. WeChat and AliPay are mortal enemies. Was Alibaba really going to let people buy stuff on Taobao and Tmall using WeChat pay when they're fighting a tooth and nail against AliPay?
+
+Ben: Yeah, that's a great point. I hadn't thought about that either. It's a deep moat, at least against Alibaba. Not against other startups but definitely against them.
+
+David: I could be wrong here. I don't know enough about the supply side of these ecommerce platforms in China to say, but they might have been able to also build a network on the other side to a unique network that's defensible of suppliers. I do think that a good portion of the supply side for PDD is different from the supply side on JD and Alibaba. It's these contract manufacturers and remnant capacity on their lines. A lot of these contract manufactures are even converting to now being fully dedicated PDD manufacturers.
+
+That's a defensible moat in that if you get a whole bunch of manufactures on the supply side to go give you a meaningful part of their business and you're deeply integrated via the C2M initiatives that they have where they're giving them data. They're telling them what types of SKUs to produce and what quantities. It's going to be really hard to switch off of that.
+
+Ben: Yeah, that creates some lock-in. I've got one more for playbook.
+
+David: Go for it.
+
+Ben: And this is a negative one. The ones we've talked about so far are like go do this if you want to be like Pinduoduo, but the thing that they're experiencing now is diminishing marginal returns. They obviously grew incredibly quickly to tier 3 and tier 4 cities and spread like wildfire through WeChat groups. They basically had a product with a perfect product/market fit for those users.
+
+There were cheap goods. You buy with friends. There's no real brand. It can take a while to ship, but it's so cheap, it's great, and it's fun. But once they acquire all those users, every user after that costs more money to acquire. The product isn't perfect for them. They don't naturally hear about it.
+
+This is something that I hadn't fully wrapped my head around until recently because I always thought over time, as you build a brand, customers would get cheaper to acquire. But especially with great examples as any of these D2C products now have amazing organic growth at first because they find their niche, they find that community, and they find the obsessed people. Then you run out of them so you have to switch to a traditional customer acquisition strategy that costs money.
+
+It really makes you understand and get religious about what is your obsessed segment addressable market? That people for which you're going to pay incredible little money for them to like your thing. Because you can spend tons and tons of money and acquire a lot of people for your thing, but your company will be the most valuable if the people who are crazy about your thing—that you don' t have to spend lots of money to reach—are themselves responsible for a lot of buying power.
+
+David: Yup, 100%. This dynamics is reflected perfectly in these massive subsidies that PDD is having to spend on now to attract those marginal buyers.
+
+Ben: I guess the point I want to make here is the core offering that they had that spread like wildfire and they didn't have to spend a lot of money to acquire those customers, it was huge. They do make tons of money off them. A very successful business in terms of finding that virality before they narrowly falloff or diminishing marginal returns start to happen, but that is the place where they are now.
+
+David: One real quick playbook theme I want to talk about here is we've alluded to a little bit with agriculture and produce with PDD. They're also a good example of with every successive generation of internet companies, you can penetrate further and further into areas of the economy that you wouldn't have thought the internet could penetrate into before.
+
+Literally, we’re all farmers growing fruit, selling at massive scale on PDD.
+
+Ben: Yeah, it's pretty crazy. All right, David, do you want to move on to grading?
+
+David: Yeah.
+
+Ben: So grading. I guess what we should do here, even though it's early, is grade the IPO. How good of a use of proceeds? Was the IPO a good idea? Did they make good use of it? And then answer a secondary question that we teased earlier which is where do you want to put your chips right now—JD, Taobao, Tmall, or Pinduoduo?
+
+David: I love it. Putting our money where our mouth is. On the grade for the IPO, for sure and A. Again, early grading. Things could change. Markets are volatile and all that. Certainly, this is an incredibly intensively competitive space—ecommerce in China. But it's up almost 5x since the IPO. They've certainly put that capital to good work building value, even with their massively beneficial cash cycle that they're generating operating cash from.
+
+It's also really interesting that Tencent and Sequoia were buyers in the IPO. Tencent at least. I don't know about Sequoia, but Tencent has continued to be a buyer in secondary offerings along the way. It just goes to show the incredible potential of an informed insider investor like that, who also controls the main platforms on which the company operates. There is still an upside to be had in the company.
+
+Ben: You’re in a hard bet here because you think the insider has enough good information and if they’re putting money in—do you have a good lead? Okay, I'm in.
+
+David: Yeah, exactly. But people do tend to put their money where their mouth is. Literally, the insiders, I don't think have sold a share here—the major insiders—and I think that speaks volumes.
+
+Ben: Yeah. I guess A is the right thing. The way I want to get analytical on this would be for the shareholders who decided to put their dollars to work in the IPO versus other things they could put their dollars to work into how good of a decision was that. That's fairly cut and dry. It's basically, like you said, a 5x over two years.
+
+Ben: Any day of the week I will take that. It's much different than the crazy upside that you see in these acquisitions where $1 of Facebook's cash put into Instagram was a much much healthier return over the years.
+
+Maybe we should come up with a separate grading scale for IPOs. Basically, if you invest in the IPO, how good was the ensuing decade after that? Because I think that's really the way that you should think about it is for the new shareholder. In the past, we've often thought about how good of a use of the cash raised was for the company. Which in this case, looking at that perspective, I think that's the point you were arguing earlier.
+
+They've made very good use of it. I have no idea how they could have made better use of it, but the thing that does sort of—
+
+David: That's not really the interesting analysis though. The interest analysis is if you bought into this IPO and you are still holding the shares today, obviously, you're feeling good. Actually, even more interesting is, say you bought into the IPO planning to hold for a decade (at least). How good do we think a decision was that?
+
+Ben: Right. That gets into the question of which of the three horses do you want? Do you want JD, Pinduoduo, or Taobao? Of those who have benefited from coronavirus, Pinduoduo has benefited much more than the users that JD, Taobao, and Tmall have added. They have taken meaningful shares away from Taobao, Tmall, and Alibaba. The bet that you have to make is that they're going to, over time, do a good job of monetizing this so far valuable but not that valuable user base.
+
+I guess the structural question is the things that they're really good at—this gamification, retention, virality, team buying—are those things going to help them acquire the future users that they need to acquire and extract more dollars from their existing base? I don't know if the answer to that is yes.
+
+David: There's definitely a big aspect of what you said a minute ago, Ben, of what got you here isn't going to get you there going on in the company. The question is, do they know? I think they probably do know that. Are they capable of building the next act? This is actually a case where the most recent news is a little consuming, perhaps.
+
+Ben: The CEO transition?
+
+David: Yeah, that's meaningfully concerning.
+
+Ben: Yup. If Tencent has really been buying up, can they put their finger on the scale again? Is there some more nuclear move that they can pull? I think they religiously don't acquire the companies that launch on their platform because they don't want to make that seem like what's going to happen to you and make you potentially scared or not scared of them.
+
+David: They certainly don't really need to.
+
+Ben: Right. If they threw all their weight behind PDD, how could that meaningfully change the trajectory?
+
+David: Here's another interesting thing. I didn't dig too much into this but there are articles—I believe that Tencent has been testing competing in the space on their own natively. Like spinning up a social commerce platform within Tencent. There are all sorts of reasons why they could be doing that—to learn more, experiment, and all sorts of stuff.
+
+Facebook, to talk about them, is another example. They're building new stuff all the time that they don't really intend to invest behind. But if they were to decide to make this a big initiative, that would really suck for Pinduoduo.
+
+Ben: Yup. To give an answer, because we're going to waffle on the fence, I'm going to say I'd rather be Alibaba. I'd rather be Taobao,especially at these prices. A big part of my analysis is PDD is so freaking expensive. I’m curious where you fall down on that.
+
+David: It's interesting. I'm hesitant to say. One reason I'm hesitant to say is I don't know enough about JD, about what their strategy is and what a bull and bear case for JD would be. Certainly it seems like they have the most attractive unit economics in the space.
+
+Ben: They look like Amazon, and they have a very affluent base.
+
+David: Yup. This is a little bit of a cop-out. I promise I will pick a horse in a minute, but I actually wonder—thinking about this a little bit—if this might be a case where the right move is just to buy shares in all three. I figure this is such a rising tide. Ecommerce in China is growing. It's something insane—like 30% [...].
+
+Ben: If it went from 6%-24% over the last 8 years. They went from behind the US to ahead of the US in terms of penetration.
+
+David: Right. It's like what's the opposite of rearranging deck chairs on the Titanic? Maybe rearranging deck chairs on a Falcon Heavy. It doesn't matter. You should just buy shares in all of them.
+
+Ben: Right. I like that.
+
+David: It's pretty crazy that PDD essentially took 10 points of share from Alibaba in the last two years. I would bet on PDD. I mean, I'm biased because I just did the research on it, but I would bet on them. That's pretty damn impressive. A team that can do that is a team that can figure out a second act with the big caveat of what is going on with Colin.
+
+Is him becoming Chairman more like him becoming Bezos, essentially, Chairman of Amazon? There's a CEO of AWS and there's a CEO of Amazon Retail, and Bezos is sort of a group level CEO. Is that what's happening? Or is it Colin was like oh man, I made a bunch of money and I'm going to ride off into the sunset.
+
+Ben: I'm going to lock in these gains. It's a good question. I suppose what matters if he sells a lot of his shares or not.
+
+David: Yup. Which he did transfer a bunch of them out. What I don't know is how much of that is sold. He had said from the get-go, even in the IPO prospectus, that he intended to create multiple charitable foundations like Bezos. I think that was part of the [...].
+
+Ben: Dude, he has such a thing for Bezos. He even does the thing where he republishes the original shareholder letter after each PPD shareholder letter, which of course there had been two since the IPO. But he attaches the 2018 after that.
+
+David: Yeah, there we have it.
+
+Ben: Let's bring it home, David. I guess we got a bet going, and we'll have to revisit this at some point.
+
+David: This feels like a bet where the odds are in your favor just to be on one of those horses.
+
+Ben: Agree. Carve-outs. Listeners, I have two. David has zero right now because he's been steeped in research and reading more in the series of previous carve-outs which was the Dark Tower.
+
+David: Yeah, by Stephen King.
+
+Ben: I'll give my first one first and for the second one, I think David may claim it. For the first one…
+
+David: It’s team buying on the carve-outs.
+
+Ben: That's right. I'm only halfway through this book right now, but it's excellent. If you like our SpaceX episode, I think you will love this book. It's called How to Build a Rocketship. It is the story of the X Prize and how that came to be. How the amazing idealist behind the X Prize grew up during the space race and started all of the incredible organizations and was just a force of will to make it happen.
+
+I'm exactly halfway through, but it's been so thrilling so far. I know a little bit about how it ends because here we are and there's a private space industry. It's just really good. If you like these Shoe Dog—it’s almost like this thriller biopic in the form of a book. It's exciting and you never quite know what's going to happen next. It's well-written and it's well told. I highly recommend it.
+
+The second one is—amazingly, I had not read this before but I finally read—Creativity, Inc.
+
+David: Oh, man. How have you not read that? I'm shocked.
+
+Ben: I know. Sinful that we did a Pixar episode and I never read it.
+
+David: So good.
+
+Ben: It's so great. Especially in the context of startups with Pioneer Square Labs, starting startups over and over again is a creative process that also requires structure, repeatability, and efficiency.
+
+A lot of us are in jobs that require both creativity, repeatability, and efficiency. First of all, it's cool as a Pixar nerd because they give these behind the scenes glimpses into rewrites of movies. You can find out what was going to happen in Up and then they rewrote it. What was going to happen in the original Toy Story and they rewrote it. Some of them were famous, but some of them were less famous, just cool easter eggs.
+
+Also, there's just great principles in there of how to run a creative organization in a repeatable way. It's a great freaking read.
+
+David: I would love to go back and reread it. Having read 7 Powers now and particularly the cornered resource power and the example the Pixar Braintrust. The idea of that as a cornered resource that groups people and their collective experience. Is any of that is coming through in the reading of—
+
+Ben: Yes. There's also definitely process power where a lot of people tried to copy Pixar and it hasn't worked. And it took Disney actually acquiring Pixar and having their leadership come in and turn Disney Animations Studios in large part into a different Pixar.
+
+There are important ways that they left it on its own and let them have their legacy, but a lot of the processes they brought over from Pixar. There's definitely some process power there too.
+
+David: Yup. Even with that and the reinvention of Disney Animation, there is a ghost in the machine in Pixar and now in Disney Animation. This is what Hamilton talked about in the process power of you can't totally quantify the magic of the Toyota production system. You can have lots of people come in and try and learn it. You can read Creativity, Inc., but there's just something special in that group.
+
+Ben: Great point. All right, ready to bring it home?
+
+David: Let's do it.
+
+Ben: All right. If you are listening—and you are not subscribed and you like what you hear—you should subscribe. If you want to become a Limited Partner, subscribing gets you access to our bonus show where we dive deeper into the nitty-gritty of company building topics in real-time. Of course, also our newly added book club and our monthly LP calls on Zoom.
+
+To join, you can click the link on the show notes or go to glow.fm/acquired. All new listeners get a 7-day free trial. If you want to discuss this episode, you should join us in Slack at acquired.fm/slack.
+
+We will see you next time.
+
+David: We'll see you next time.
+
+‍

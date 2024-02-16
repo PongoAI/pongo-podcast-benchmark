@@ -1,0 +1,1075 @@
+Ben: Welcome to season 10 episode 6 of Acquired, the podcast about great technology companies and the stories and playbooks about them. I'm Ben Gilbert and I'm the co-founder and managing director of Seattle-based Pioneer Square Labs and our venture fund, PSL Ventures.
+
+David: I'm David Rosenthal and I am an angel investor based in San Francisco.
+
+Ben: We are your hosts. When I was a kid, David, I used to stare into backyard bonfires and wonder if that fire flickering was doing it so in a random way or if I knew about every input in the world, all the air, exactly the physical construction of the wood, all of the variables in the environment, if it was actually predictable.
+
+I don't think I knew the term at that time, but it was modelable. If I could know what the flame could look like if I knew all those inputs. We now know of course it is indeed predictable, but the data and computing required to actually know that is extremely difficult, but that is what NVIDIA is doing today.
+
+David: Ben, I love that intro. It's great. I was thinking, where is Ben going with this?
+
+Ben: This was occurring to me as I was watching Jensen ensuring the omniverse vision for NVIDIA and realizing NVIDIA has really built all the building blocks—the hardware, the software for developers to use that hardware, all the user-facing software now, and services to simulate everything in our physical world with an unbelievably efficient and powerful GPU architecture.
+
+These building blocks, listeners, aren't just for gamers anymore. They are making it possible to recreate the real world in a digital twin to do things like predict airflow over a wing, simulate cell interaction to quickly discover new drugs without ever once touching a petri dish, or even model and predict how climate change will play out precisely.
+
+There is so much to unpack here, especially in how NVIDIA went from making commodity graphics cards to now owning the whole stack in industries from gaming, to enterprise data centers, to scientific computing, and now even basically off-the-shelf self-driving car architecture for manufacturers.
+
+At the scale that they're operating at, these improvements that they are making are literally unfathomable to the human mind. Just to illustrate, if you are training one single speech recognition machine learning model these days—just one model—the number of math operations like adding or multiplying to accomplish it is actually greater than the number of grains of sand on the earth.
+
+David: I know exactly what part of the research you got that from because I read the same thing and I was like, you got to be freaking kidding me.
+
+Ben: Isn't that nuts? There's nothing better in all of the research that you and I both did to better illustrate just the unbelievable scale of data and computing required to accomplish the stuff that they're accomplishing and how unfathomably small all of these are the fact that this happens on one graphics card.
+
+David: Yeah, so great.
+
+Ben: Many of you already know this, many of you have already RSVP'd, but if you have not, we would love to see you at our arena show in Seattle. That's going to be on May 4th at 5:00 PM. It's going to be an awesome show. We've now announced that we're going to have Jim Weber there who's the CEO of Brooks Running, which is now an amazingly billion-dollar revenue business inside of Berkshire. We'll have other announcements coming as well. Go to acquired.fm/arena or click the link in the show notes to RSVP.
+
+All proceeds are going to charity. Our huge thanks to our friends at PitchBook Data for putting this on with us. That's acquired.fm/arenashow and we hope to see you there.
+
+David: I get giddy every time you say that URL.
+
+Ben: Yes, indeed it is real. All right, before we dive in, we have a fun little Q&A from our presenting sponsor, Vanta, the leader in automated cloud security and compliance. We are huge fans of Vanta and their approach. They do everything from SOC 2, HIPAA, GDPR, and more. We are back with CEO and co-founder, Christina Cacioppo, to talk about it.
+
+Christina, based on our last few conversations, I'm getting the sense that Vanta is becoming a lot more than just a SOC 2 compliance company. Is that true? And how do you think about that?
+
+Christina: Yes. The joke about Vanta (that is not a joke) is that we're a security company masquerading as a compliance company. It comes from the early founding days when we wanted to start a security company and went around and asked all of our friends at startups what security problems they had.
+
+They did have some and we're like, what happens if we solved them for you? Our friends were like, I'm not going to use that because I have ten other problems ahead of that one. I just feel bad. I know I should be doing it, but it is hard for me to prioritize. I need to get customers, so that's what I do, which is a little demoralizing when you're trying to come up with a startup idea.
+
+Then we actually realized that compliance can be the security feature someone is asking for. Generally, if you're selling, someone doesn't say, hey, will you be more secure? They say, hey, are you SOC 2 compliant? If we could build a product that helps folks get more secure and help them prepare for and get through a compliance audit, it would accelerate their business because they have their Compliance Certification and leave them more secure.
+
+One of our product team's goals is to help our users fix security issues we surface faster so we can surface lots of misconfigurations like proverbial doors and windows you leave open. But if no one fixes them, then we're not having the impact we're looking for and are not ultimately securing the company. We just have a substantial portion of our product team focused on building features that help companies fix misconfigurations faster so the whole set of work falls into that, but it's one of the things I'm most excited about.
+
+Ben: Thanks, Christina. Thank you to Vanta, the leader in automated security and compliance software. If you are looking to join Vanta's 2000+ customers and get compliance certified in weeks instead of months, click the link in the show notes or go to vanta.com/acquired for a sweet 10% discount. After you finish this episode, come join the Slack, acquired.fm/slack, and talk about it with us.
+
+If you're dying for even more Acquired, before we come back with our next season episode, search for Acquired LP show in the podcast player of your choice. Our latest installment was a very fun deep dive and close to home for me diving in with Nick and Lauren, the creators of TrovaTrip, on travel for the creator economy where they talk about a very interesting business model that they have on their hands and a space that David and I know well in creator things.
+
+David: Indeed.
+
+Ben: All right, David, without further ado, take us in and as always listeners, this is not investment advice. David and I may hold positions in securities discussed and please do your own research.
+
+David: I was going to make sure that you said that this time because we're going to talk a lot about investing and investors in NVIDIA stock over the years. It has been a wild, wild journey. Last we left our plucky heroes, Jensen Huang and NVIDIA at the end of our NVIDIA, the GPU company years ending roughly 2004, 2005, 2006. They had cheated death, not once, but twice.
+
+The first time in the super overcrowded graphics card market when they're first getting started and then once they sort of jumped out of that frying pan into the fire of Intel now gunning for them, coming to commoditize them like all the other PCI chips that plugged into the Intel motherboard back in the day. They bravely fend them off. They team up with Microsoft, they make the GPU programmable, this is amazing. They come out with programmable shaders with the GeForce 3, they power the Xbox, and they create the CG programming language with Microsoft.
+
+Here we are, it's now 2004, 2005 and it's a pretty impressive company. Public company, stock is high-flying after the tech bubble crash. They've conquered the graphics card market. Of course, there's ATI out there as well, which will come up again. There are three pretty important things that I think the company built in the first 10 years.
+
+One, we talked about this a lot last time, the six-month ship cycles for their chips. We talked about that, but we didn't actually say the rate at which they ship these things. I actually wrote down a little list. In the fall of 1999, they shipped the first GeForce card, the GeForce 256. In the spring of 2000, GeForce 2, in the fall of 2000, GeForce 2 Ultra, spring of 2001 GeForce 3, that's the big one with the programmable shaders. Then six months later, the GeForce 3 Ti500.
+
+Ben: The normal cycle I think we said was two years, maybe 18 months for most of their competitors who just got largely left in the dust.
+
+David: I was just thinking the competitors are gone at this point, but I'm thinking about Intel. How often did Intel ship new products, let alone fundamentally new architecture? There was the 286, then the 386, and the Pentium, then they got into Pentium 5 or whatever.
+
+Ben: David, I feel like the Intel product cycle is approximately the same as a new body style of cars.
+
+David: Yes, exactly.
+
+Ben: Every five or six years there seems to be a meaningful new architecture change.
+
+David: Intel is the driver of Moore's law. These guys ship and bring out new architectures at warp speed. They've continued that through today. Two, one thing that we missed last time that is super important and becomes a big foundation of everything NVIDIA becomes today that we're going to talk about. They wrote their own drivers for their graphics cards.
+
+We owe a big thank you for this and many other things to a great listener, a very kind listener, named Jeremy who reached out to us in Slack and pointed us to a whole bunch of stuff including the Asianometry YouTube channel.
+
+Ben: So good. I've probably watched like 25 Asianometry videos this week.
+
+David: So so good, huge shout out to them. All the other graphics card companies at the time, and most peripheral companies, let the further downstream partners write the drivers for what they were doing. NVIDIA was the first one that said, no, no, we want to control this. We want to make sure consumers who use NVIDIA cards have a good experience on whatever systems they're on, and that meant (a) that they could ensure quality, but (b) they start to build up in the company this base of really nitty-gritty, low-level software developers in this chip company, and not a lot of other chip companies that have capabilities like this.
+
+Ben: No, and what they're doing here is taking on a bigger fixed cost base. It's very expensive to employ all the people who are writing the drivers for all the different operating systems, all the different OEMs, all the different boards that have to be compatible with, but they viewed it as it's kind of an Apple-esque view of the world. We want as much control as we can get over making sure that people using our products have a great user experience, so they are willing to take the short term pain of that expense for the long term benefit of that improved user experience with their products.
+
+David: That their users, high-end gamers that want the best experience, they're going to go out and spend $300, $400, or $500 on an NVIDIA top-of-the-line graphics card. They're going to drop it into the PC that they built. They want it to work.
+
+I remember messing around with drivers back in the day and things not working like this is super important. All this is focusing on of course they have the third advantage in the company is programmable shaders, which ATI copies as well, but they innovated, they've done all this. All of this at this time is all in service to the gaming market.
+
+Ben: One seed to plant here, David, when you say the programmable shaders, developers, the notion of an NVIDIA developer did not exist until this moment. It was people who wrote software that would run on the operating system. Then from there, maybe that compute load would get offloaded to whatever the graphics card was, but it wasn't like you were developing for the GPU, for the graphics card, with a language and a library that was specific to that card.
+
+For the very first time now, they started to build a real direct relationship with developers so that they can actually start saying look, if you develop for our specific hardware, there are advantages for you.
+
+David: Really are specific gaming cards. Everything we're talking about, these developers, they are game developers. All of this stuff, it's all in service to the gaming market. Again, they're a public company, they have this great deal with Microsoft, they bring out CG together, they're powering the Xbox, the Wall Street loves them. They go from sub-billion-dollar market cap companies after the tech crash up to $5–$6 billion.
+
+Kind of 2004 and 2005, the stock keeps going on a tear. By mid-2007, the stock reached just under $20 billion market cap. This is great and all the stories. This is pure play gaming. These guys have built such a great advantage in a developer ecosystem in a large and growing market clearly, which is video games.
+
+Ben: Which on its own, that would be a great wave to surf. I think what's the gaming market today, $100 billion or $80 billion or something? When we talk to Trip Hawkins who helped invent it or Nolan Bushnell, it was zero then and NVIDIA is on a wave that's at an amazing inflection point. They can totally just ride this gaming thing and be important.
+
+David: It's not running out of steam. How could you not be not just satisfied, but more than satisfied with this as a founder? Yes, I am the leading company in this major market, this huge wave that I don't see ending anytime soon, 99.9% of founders who are themselves as a class—very ambitious—are going to be satisfied with that.
+
+Ben: But not Jensen.
+
+David: But not Jensen. While all this is happening, he starts thinking about what's the next chapter of dominating this market? I want to keep growing. I don't want NVIDIA to be just a gaming company.
+
+We ended last time with the little, almost surely apocryphal story, of a Stanford researcher who sends the email to Jensen. It's like, thanks to you, my son told me to go buy off-the-shelf GeForce cards at the local Fry's Electronics. I stuffed them into my PC at work. I ran my models on this. I think it was a quantum chemistry researcher, supposedly. It was 10 times faster than the supercomputer I was using in the lab and so thank you, I can get my life's work done in my lifetime.
+
+Ben: Jensen loves that quote, it comes out at every GTC.
+
+David: That story, if you're a skeptical listener, might beg two questions. The first is a practical one. He just said everything's about gaming here and here's like a researcher, a scientific researcher doing chemistry modeling, using GeForce cards for that. What's he writing this in, it turns out it's?
+
+Ben: Programmable shaders, right?
+
+David: Yeah. They were shoehorning CG, which was built for graphics. They were translating everything that they were doing into graphical terms, even if it was not a graphical problem they were trying to solve, and writing it in CG. This is not for the faint of heart, so to speak.
+
+Ben: Everything is sort of metaphorical. He's a quantum chemistry researcher and he's basically telling the hardware, okay, so imagine this data that I'm giving you is actually a triangle. Imagine that this way that I want to transform the data is actually applying a little bit of lighting to the triangle. I want you to output something that you think is the right color pixel and then I will translate it back into the result that I need for my quantum chemistry. You can see why that's suboptimal.
+
+David: He thinks this is an interesting market, he wants NVIDIA to serve it. If you really want to do that right, it is a massive undertaking. It was 10+ years to get to the company to this point. What CG was is like a small sliver of the stack of what you would need to build for developers to use GPUs in a general-purpose way like what we're talking about.
+
+It's like they worked with Microsoft to make CG. It's like the difference between working on CG and Microsoft building the whole .NET framework for developing on Windows, or today even better, Apple. Everything Apple gives to iOS and Mac developers to develop on Mac.
+
+Ben: Right, the analogy is not perfect, but instead of just Apple saying, okay, Objective C is the way that you write code for our platforms. Good luck. They're like okay, well, will you need a UI framework so how about AppKit and Cocoa Touch. How about all these other SDKs and frameworks like AR kit, store kit, and home kit. Basically, you need the whole sort of abstraction stack on top of the programming language to actually make it very accessible to write software for domains and disciplines that are going to be really popular using that hardware.
+
+David: Exactly. When Jensen commits himself to the company to pursue this, he's biting off a lot. Now we talked about, they've been riding there and drivers. They have actually a lot of very low level, and I don't mean low level like bad, I mean low-level infrastructure like close, very difficult, systems-oriented programming talent within the company.
+
+That kind of enables them to start here, but this is big. Then the second question, if you're a discerning investor, particularly in NVIDIA, you want to ask at this point in time is like okay, Jensen, you're committing the company to a big undertaking. What's the business case for that? Show me the market. Don Valentine at this point would be sitting there listening to Jensen and being like show me the market.
+
+Ben: Not only is it showing me the market, but it's how long will the market take to get here? It's how long is it going to take us and how many dollars and resources is it going to take us to actually get to something that's useful for that market when it materializes because while CUDA development began in 2006, that was not a useful, usable platform for six-plus years at NVIDIA?
+
+David: Yep. This is closer to the order of the Microsoft development environment or the Apple development environment than what NVIDIA was doing before, which was like, hey, we made some APIs and worked with Microsoft so that you can program for my thing.
+
+Ben: Right. I'm going to flash forward just to illustrate the insane undertaking of this. I searched LinkedIn for people who work at NVIDIA today and have the word CUDA in their title. There are 1100 employees dedicated specifically to the CUDA platform.
+
+David: I'm surprised it's not 11,000.
+
+Ben: Yeah.
+
+David: Okay, where's the market for this? Yes, Ben, you asked the third question, which is the intersection of what does this take to do this and when is the market going to get there in time and costs and all that? Even just putting that aside, is there a market for this is the first-order question? The answer to that is probably no at this point in time.
+
+Ben: What they're aiming at is scientific computing. It's researchers who are in science-specific domains who right now need supercomputers or access to a supercomputer to run some calculation that they think is going to take weeks or months. Wouldn't it be nice if they could do it cheaper or faster? Is that the kind of market that they're looking at?
+
+David: Yeah, they're attacking the Cray market, like Cray supercomputers, that kind of stuff. A great company, but that's no NVIDIA today. They were dominating the market. Yeah, it's scientific research, computing, it's drug discovery. It's probably a lot of this work. They're thinking, oh, maybe we can get into more professional Hollywood, architecture, and other professional graphics domains.
+
+You sum all that stuff up and maybe you get to a couple of billion-dollar market, maybe total market. Not enough to justify the time and the cost of what you're going to have to build out to go after this to any rational person.
+
+Here we come, Jensen and NVIDIA, they are doing this, he is committed, he's drunk the Kool-Aid. In 2006, 2007, and 2008, they poured a lot of resources into building what would become CUDA, which we'll get to in a second. It is already CUDA at this point in time.
+
+Ben: I think Jensen's psychology here is sort of twofold. One is that he is enamored with this market. He loves the idea that they can develop hardware to accelerate specific use cases in computing that he finds sort of fanciful and he likes the idea of making it more possible to do more things for humanity with computers. The other part of it is certainly a business model realization where he has spent the last (at this point) 13, 14 years being commoditized in all these different ways. I think he sees a path here to durable differentiation where he's like, whoa.
+
+David: To own the platform.
+
+Ben: It's kind of the Apple thing again, to own the platform and to build hardware that's differentiated by not only software but relationships with developers that use that custom software like then I can build a company that can throw its weight around in the industry.
+
+David: A hundred percent. Jensen, I don't know if he used it at the time because he probably would have gotten pilloried, but maybe he did. I don't think he cared. He certainly has used it since. The way he thought about this, it wasn't just like, if we build it they will come, which is what was going on. The phrase he uses is, if you don't build it and they can't come. It's not even like I'm pretty sure if we build it, they will come. It's one step removed from that. It's like, well, if we don't build it, they can't even possibly come. I don't know if they will come, but they can't come if we don't build it.
+
+Wall Street is mostly willing to ignore this in 2006, 2007, and 2008. The company is still growing really nicely. This great market cap run leading up to right before the financial crisis. But then we've mentioned last time, I think it was announced in 2006, maybe closed in 2007, AMD acquired ATI. ATI was a very legit competitor and is the only standing legit competitor to NVIDIA throughout its whole life.
+
+Now AMD acquired it and I think they acquired it for $6 billion, $7 billion, or something like that. It was a lot of money and then they put in a lot of resources. They weren't just acquiring this to get some talent. They're like, no, this is going to be a big product line for us. We're putting a lot of weight behind this.
+
+Ben: We haven't done the research into AMD the way we have done to NVIDIA, but the AMD Radeon line, which used to be the ATI Radeon line, is how you think about AMD as a company. Is that they make these GPUs mostly for the gaming use case.
+
+David: Yeah. Before the acquisition, I think the first PC I built in high school, the beginning of college, I think I had a Radeon card in it. I think I was probably in the minority. I think the NVIDIA was bigger, but for whatever reason, I liked ATI at that point in time so they were legit.
+
+Here's NVIDIA now focusing on this whole other thing and you're still in the gaming market, which as we said, is like a massive rising tide. Your competitor now has all these resources and AMD that's fully dedicated to going after it. Mid-2008, NVIDIA whiffs on earnings. This is natural. They took their eye off the ball, of course, they did and the stock got hammered.
+
+Ben: Because in anything that CUDA and powers is not yet a revenue driver and they've totally taken their eye off of gaming.
+
+David: Yes. We said the high was around a $20 billion market cap. It drops 80%. This isn't just the financial crisis. It's almost coy [...] for me thinking back on the financial crisis now and people freaking out the Dow, the S&P dropping 5% in a day and that's a Thursday these days.
+
+Ben: It is literally the Thursday that we are recording.
+
+David: Yes. For a company stock to drop 80%, a technology company stock even during the financial crisis, they're not just in the penalty box, they're getting kicked to the curb.
+
+Ben: Right. Are they done? The headlines at this point are, is NVIDIA run over?
+
+David: If you're most CEOs at this point in time, you're probably calling up Goldman, Allen & Company, or Frank Quattrone, and you're chopping this thing because how are you going to recover?
+
+Ben: But not Jensen.
+
+David: But not Jensen, obviously. Instead, he goes and builds CUDA and continues to build CUDA. This is just a context, we get excited about a lot of stuff on Acquired. I think CUDA is like one of the greatest business stories of the last 10 years, 20 years more. What do you think, Ben?
+
+Ben: I'd say it's one of the boldest bets we've ever covered, but so we're programmable shaders and so was NVIDIA's original attempt to make a more efficient quadrilateral focused graphics.
+
+David: Yeah, those were big bets. I think this is a bet on another scale though. This is a bet that we don't cover that often on Acquired.
+
+Ben: Those were big bets relative to the company's size at the time, but this bet is like an iPhone-sized bet.
+
+David: That's exactly what this is. It's an iPhone-sized bet.
+
+Ben: It is a bet that company when you are already a several billion-dollar company.
+
+David: Yes. An attempt to create something that if they are successful and this market materializes, this will be a generational company.
+
+What is CUDA? It is NVIDIA's Compute Unified Device Architecture. It is, as we've referred to thus far throughout the episode, a full (and I mean full) development framework for doing any kind of computation that you would want on GPUs.
+
+Ben: Yeah, in particular, it's interesting because I've heard Jensen reference it as a programming language. I've heard him reference it as a computing platform. It is all of these things. It's an API. It is an extension of C or C++ so there's a way that it's sort of a language, but importantly, it's got all these frameworks and libraries that live on top of it and it enables super high level application development, really high abstraction layered development for hundreds of industries at this point to communicate down to CUDA, which communicates down to the GPU and everything else that they have done at this point.
+
+David: This is what's so brilliant. Right after the same day that we released part one, the first NVIDIA episode we did a couple of weeks ago, Ben Thompson had this amazing interview with Jensen on Stratechery. Jensen, in this interview, I think puts what CUDA is and how important it is better than I've seen anywhere else.
+
+This is Jensen speaking to Ben. "We've been advancing CUDA and the ecosystem for 15 years and counting. We optimize across the full stack iterating between GPU, acceleration libraries, systems, and applications continuously all while expanding the reach of our platform by adding new application domains that we accelerate. We start with amazing chips, but for each field of science, industry, and application, we create a full stack. We have over 150 SDKs that serve industries from gaming and design, to life and earth sciences, quantum computing, AI, cybersecurity, 5G, and robotics."
+
+Then he talks about what it took to make this. This is the point we were trying to hammer home here. He says, "You have to internalize that this is a brand new programming model and everything that's associated with being a program processor company or a computing platform company has to be created. We had to create a compiler team. We had to think about SDKs. We had to think about libraries. We had to reach out to developers, evangelize our architecture, and help people realize the benefits of it. We even had to help them market this vision so that there would be demand for their software that they write on our platform, and on, and on, and on."
+
+Ben: It's crazy. It's amazing. When he says that it's a whole new programming that he says maybe paradigm or a way of programming, it is literally true because most programming languages up to this point and most computing platforms primarily contemplated serial execution of programs.
+
+What CUDA did was it said, you know what? The way that our GPUs work and the way that they're going to work going forward is tons and tons of cores all executing things at the same time parallel programming, parallel architecture. Today, there's over 10,000 cores on their most recent consumer graphics card. Insanely or dare I say embarrassingly parallel, and CUDA is designed for parallel execution from the very beginning.
+
+David: That's the only catchphrase in the industry of embarrassingly parallel.
+
+Ben: It's actually kind of a technical term.
+
+David: I don't know why it's embarrassing.
+
+Ben: It's basically the notion that this software is so parallelizable which means that all of the computations that need to be run are independent. They don't depend on a previous result in order to start executing. It's sort of like it would be embarrassing for you to execute these instructions in order instead of finding a way to do it parallel.
+
+David: It's not that it's parallel that's embarrassing. It's embarrassing if you were to do it the old way on CPUs serially.
+
+Ben: I think that's the implication.
+
+David: Got it.
+
+Ben: This is so obvious that it's embarrassingly parallel.
+
+David: Okay, now it makes sense. Here's the coup de grâce, we're going to spend a few minutes talking about how brilliant this was. Everything we just described, this whole undertaking, is like building the pyramids of Egypt or something here. It is entirely free. NVIDIA to this day—now this may be changing, we'll talk about this at the end of the episode—has never charged a dollar for CUDA. But anyone can download it, learn it, use it, blah, blah, blah. All of this work stands on the shoulders of everything NVIDIA has done, but, Ben, what is the but?
+
+Ben: It is closed source and proprietary exclusively to NVIDIA's hardware.
+
+David: That's right. You do any of this work, you cannot deploy it on anything but NVIDIA chips. That's not even like NVIDIA put in their terms of service that you can't deploy this on AMD chips.
+
+Ben: It literally doesn't work.
+
+David: Nope, it's full stack. It's like if you were to develop an iOS app and then try and deploy it on Windows, it wouldn't work. It is integrated with the hardware.
+
+Ben: OpenCL is sort of the main competitor at this point and they do actually let OpenCL applications run on their chips, but nothing in CUDA is available to run elsewhere.
+
+David: It's so great. Now you can see this is just like Apple and it's the apple business model. Apple gives away all of this amazing platform ecosystem that they built to developers and then they make money by selling their hardware for very, very healthy gross margins.
+
+This is why Jensen is so brilliant because back when they started down this journey in 2006—even before that when they started and then all through it—there was no iOS, there was no iPhone. It wasn't obvious that this was a great model. In fact, most people thought this was a dumb model that. Apple lost and the Mac was stupid and Windows and Intel is what won the open ecosystem.
+
+Ben: Well, but Windows and Intel did have proprietary development environments and full stack dev tools.
+
+David: Oh, yeah, there's a lot of nuances here. It's not like they were open source per se, but it could run on any hardware.
+
+Ben: Well, except that it couldn't. It could only run on the Intel, IBM, Microsoft alliance world. It wasn't running on power PCs. It wasn't running on anything Apple made.
+
+David: That's true.
+
+Ben: It's funny, in some ways, NVIDIA is like Apple. In other ways, they're like the Microsoft, Intel, IBM Alliance, except fully integrated with each other instead of being three separate companies.
+
+David: Yeah, that's maybe a good way to put it. Maybe it's sort of somewhere in between. There is nuance here. Remember when Clay Christensen was bashing on Apple in the early days of the iPhone being like open's going to win, Android is going to win, Apple is doomed, close never works. You have to be modular, you can't be integrated. Clay was amazing and one of the greatest strategists, but I think that's just representative to me of everybody thought that the Apple model sucked.
+
+Ben: Yeah, it sucks unless you're at scale. At the time, there was very little to believe that NVIDIA was going to have the scale required to justify this investment or that there was a market to let them achieve the scale to justify this.
+
+David: That's the thing. Even if you were to say, okay, Jensen, I believe you and I agree with you that this is a good model if you can pull it off. At the time, you could be Don Valentine or whoever looking around—and maybe Don was still looking around because they probably still held the stock—being like, where's the market that's going to enable the scale you need to run this playbook?
+
+Ben: All right, so you're going to take us to 2011, 2012, or are we hopping back in here?
+
+David: If only the world works like fiction and it were actually like a truly straight line. It's never a straight line. We will get there. That is what saves NVIDIA and makes this whole thing work. But they have some misadventures in between. Stocks getting hammered. It's 2008. I'm just completely speculating on my own, but they're in the penalty box. They're committed to continuing to invest in CUDA and making general purpose computing GPU a thing.
+
+I do wonder if they felt like, well, we got to do something to appease shareholders here. We got to show that we're trying to be commercial here. So it's 2008. What's going on in 2008 in the tech world? It's mobile. In 2008, they launched the Tegra chip in platform with NVIDIA.
+
+Ben: This may not be what saved the company.
+
+David: This is not what saved the company. This is more a clown car style. Maybe that's too rough on NVIDIA, but what was Tegra? People might recognize that name. It was a full on system on a chip for smartphones competing directly with Qualcomm and Samsung. It was a processor like an ARM-based CPU plus all the other stuff you would need for a system on a chip to power Android headsets. This is like a wild departure. It leverages none of NVIDIA's core skill sets, except maybe graphics being part of smartphones. If there's ever a use case for integrated graphics, it's smartphones.
+
+Ben: Right. Low power, smaller footprint.
+
+David: Yep, totally. This is one of my favorite parts about the whole research. Do you know what the first product was that shipped using a Tegra chip?
+
+Ben: No.
+
+David: It was the Microsoft Zune HD Media Player. That just tells you pretty much everything you need to know. It did though—the Tegra system is still around sort of to this day—empowered the original Tesla Model S touchscreen. Before any of the autopilot autonomous driving stuff, they were the processor powering just the touchscreen infotainment in the Model S. I think that actually started to help NVIDIA get into the automotive market. The Tegra platform still to this day is the main processor of the Nintendo Switch.
+
+Ben: Oh, they repurposed it for that.
+
+David: Yeah, for that. I think they still have their NVIDIA Shield proprietary gaming device stuff that I don't know if anybody buys those.
+
+Ben: Oh, this makes so much sense because they basically have walked away from every console since the PlayStation 3. It's interesting that they have this thriving gaming division that doesn't power any of the consoles except the Nintendo Switch. I always wondered, why did they take on the Switch business? Because they kind of already had it done.
+
+David: It's not for the graphics cards. It was somewhere to put the Tegra stuff.
+
+Ben: Fascinating. Quick aside, it's funny how these GPU companies have not been good at transitioning to mobile. There's a funny naming thing. But do you know what happened to the ATI Radeon, which became the AMD Radeon desktop series? They tried to make mobile GPUs but it didn't go great. They ended up spinning that out and selling all that IP to another company. Do you know the company?
+
+David: Oh, I do not. Was it Apple?
+
+Ben: It is Qualcomm. Today is Qualcomm's mobile GPU division and Qualcomm is good at mobile so it's a natural home for it. Do you know what that line of mobile GPU processors is called?
+
+David: No.
+
+Ben: It is the Adreno processors. Do you know why it's called the Adreno?
+
+David: No, that sounds super familiar, but no.
+
+Ben: The letters are rearranged from Radeon.
+
+David: Ah, that's great.
+
+Ben: So you're saying NVIDIA's mobile graphics efforts didn't quite pan out?
+
+David: No, we didn't talk about this as much in the Sony episode. My impression of the whole Android value chain ecosystem is that there's no profit to be made anywhere and Google keeps it that way on purpose.
+
+Ben: Ironically, they make a lot of money now on the Play Store.
+
+David: Yeah, the Play Store and ads.
+
+Ben: I do think the primary way that they monetize it is not having to pay other people to acquire the search traffic.
+
+David: Right. I mean for partners, if you are making everything from chips all the way up to hardware in the Android ecosystem, I don't think you're making. Maybe if you were the scale player, but these things are designed to sell for dirt cheap as in products. There's no margin to be out of here.
+
+Ben: Yep.
+
+David: Also, before we continue, you just did the sidebar on the AMD mobile graphics chip. I see your sidebar. I'm going to raise you one more sidebar that we have to include because the NCS guys told us about this. When NVIDIA is going after mobile, they buy a mobile baseband company called Icera, a British company, in 2011. You know where I'm going with this.
+
+Ben: Oh, yes.
+
+David: This is so good.
+
+Ben: It's a good seed plan to come back to later
+
+David: Because they're investing in mobile and Tegra is going to be a thing, blah blah blah. Then a few years later when they end up with pretty much shutting down the whole thing. They shut down what they bought from Icera, they laid everyone off. The Icera founders who made a lot of money when NVIDIA bought them go off and they found a company called Graphcore that we're going to talk about a little bit at the end of the episode. Maybe one of the primary sort of—
+
+Ben: NVIDIA bear cases.
+
+David: NVIDIA bear case is NVIDIA killers out there. They've now raised about 700 million in venture capital and picked up some mobile.
+
+Ben: In some ways, it's kind of like Bezos and jet.com if Jet had been successful. I think that's sort of the Graphcore to NVIDIA analogy.
+
+David: Yes. Well, the jury's still out if anybody's going to be really successful and competing with NVIDIA, although I think the market now is probably, ironically, big enough.
+
+Ben: Large, yeah.
+
+David: NVIDIA can be the whale and there can be plenty of big other companies too. Anyway, back to the story. So, NVIDIA is bumping along through all of this in the late 2000s and early 2010s. Some years, growth is like 10%, maybe it's flat in others. This company is completely going sideways. In 2011, they whiffed on earnings. Again, the stock goes through another 50% drawdown. It's cliche.
+
+I was going to say it. I don't even know if you can say it about Jensen. Here we are, the company is screwed again, everybody else would have given up, but obviously, not them. So what happens? Basically, a miracle happens. I don't know that there's any other way that you can describe this except like a miracle. Maybe this is actually not a great strategy case study of Jensen because it required a miracle.
+
+Ben: Well, Jensen would say it was intentional that they did know the market timing, that the strategy was right, the investment was paying off, and that they were doing this the whole time. In fact, even in the Ben Thompson interview. Ben basically lays out like how did all these implausible things happen at exactly the right time? And his response is, oh, yes, we planned at all it was so intentional.
+
+David: Jensen did not plan AlexNet or see it coming because nobody saw AlexNet coming. In 2000, a Princeton computer science professor and also undergrad alum of Princeton—just like yours truly, wonderful place—named Fei-Fei Li, their specialty is artificial intelligence computer science—starts working on an image classifying project that she calls ImageNet.
+
+The inspiration for this was actually way old projects from the '80s at Princeton called WordNet, that was classifying words. This is classifying image, ImageNet. Her idea is to create a database of millions of labeled images, images that have the correct label applied to them. This is a dog or this is a strawberry or something like that.
+
+With that database, then artificial intelligence image recognition algorithms could run against that database and see how they do. So like, oh, look at this image of you and I were looking at like that's a strawberry. But you don't give the answer to the algorithm. The algorithm figures out if it thinks it's a strawberry, a dog, or whatever.
+
+She and her collaborators start working on this. It's super cool. They build the database. They use Amazon Mechanical Turk to build it. Then one of them, I'm not exactly sure if it was Fei-Fei or somebody else has the idea of, well, we've got this database, we want people to use it. Well, let's make a competition.
+
+This is a very standard thing in computer science academia like, let's have a competition, an algorithm competition. We'll do this annually. Anyone, any team can submit their algorithms against the ImageNet database, and they'll compete to see who can get the lowest error rate, the most percentage of the images correct.
+
+This is great. It brings her great renown and becomes popular in the AI research community. She gets poached away by Stanford the next year. I guess that's okay. I went there too, so that's fine. She's still there too. I couldn't resist. She's like a kindred spirit to me. Do you know, I know you do know, but I bet most listeners do not know what her endowed tenure chair is at Stanford today?
+
+Ben: I do. She is the Sequoia chair.
+
+David: Yes, the Sequoia Capital Professor of Computer Science at Stanford. So cool. Why does she become the Sequoia Capital chair and what does all this have to do with NVIDIA? Well, in the 2012 competition, a team from the University of Toronto submits an algorithm that wins the competition. It doesn't just win it by a little bit, it wins it by a lot. The way they measure this is the 100% of the images in the database, what percentage of them did you get wrong. It winds by over 10%. I think it had a 15% error rate or something and the next.
+
+Ben: All the best previous ones have been like 25 point something percent.
+
+David: Yes.
+
+Ben: This is like someone breaking the four-minute mile. Actually, in some ways, it's more impressive than the four-minute mile thing because they just didn't brute force their way all the way there. They tried a completely different approach. Then boom, showed that we could get way more accurate than anyone else ever thought.
+
+David: What was that approach? Well, they called the team, which was composed of Alex Krizhevsky, the primary lead of the team. He was a Ph.D. student and collaborated with Ilya Sutskever and Geoff Hinton. Geoff Hinton was the Ph.D. advisor of Alex. They call it AlexNet. It is a convolutional neural network, which is a branch of artificial intelligence called deep learning.
+
+Deep learning is new for this use case, but Ben, you weren't exactly right. It had been around for a long time, a very long time. Deep learning neural networks, this was not a new idea. The algorithms had existed for many decades, I think, but they were really, really, really computationally intensive. They're required to train the models to do a deep neural network. You need a lot of computation on the order of grains of sand that exist on Earth. It was completely impossible with a traditional computer architecture that you could make these work in any practical applications.
+
+Ben: People were forecasting too. When with Moore's law will we be able to do this? It still seemed like the far future because not only did Moore's Law need to happen, but you also needed the NVIDIA approach of massively parallelizable architecture where suddenly, you could get all these incredible performance gains, not just because you're putting more transistors in a given space, but because you're able to run programs in parallel now.
+
+David: Yes. So AlexNet took these old ideas, and implemented them on GPUs. To be very specific, implemented them in CUDA on NVIDIA GPUs. We cannot overstate the importance of this moment, not just for NVIDIA, but for computer science, for technology, for business, for the world, for staring at the screens of our phones all day every day. This was the big bang moment for artificial intelligence and NVIDIA and CUDA were right there.
+
+Ben: Yup. There's another example within the next couple of years (2012, 2013) where NVIDIA had been thinking about this notion of general purpose computing for their architecture for a long time. In fact, they even thought about, should we relaunch our GPUs as GP GPUs (General Purpose Graphics Processing Units)? Of course, they decided not to do that, but just built CUDA.
+
+David: Which is a codeword for, we've been searching for years for a market for this thing. We can't find the market so we'll just say you can use it for anything.
+
+Ben: Right. So deep learning is generating a lot of buzz, a lot from this AlexNet competition. In 2013, Bryan Catanzaro, who's a research scientist at NVIDIA, published a paper with some other researchers at Stanford, which included Andrew Ng, where they were able to take this unsupervised learning approach that had been done inside the Google Brain team where the Google Brain team had published their work on this and it had a thousand nodes.
+
+This is a big part of the early neural network hype cycle of people trying cool stuff. This team was able to do it with just three nodes. Totally different model, super parallelized, lots of compute for a super short period of time, and a really high performance can puting way or HPC as it became known. This ends up being the very core of what becomes cuDNN, which is the library for deep neural networks that's actually baked into CUDA.
+
+That makes it easy for data scientists and research scientists everywhere who aren't hardware engineers or software engineers to just pretty easily write high performance deep neural networks on NVIDIA hardware. So this AlexNet thing, plus then Brian and Andrew Ng's paper, just collapses all these previously thought to be impossible lines to cross just makes it way easier, way more performant, and way less energy-intensive for other teams to do it in the future.
+
+David: Specifically to do deep learning. I think at this point, everybody knows that this is pretty important, but it's not that much of a leap to say, if you can train a computer to recognize images on its own, you can then train a computer to see on its own, to drive a car on its own, to play chess, to play go, to make your photos look really awesome when you take them on the latest iPhone, even if you don't have everything right.
+
+Ben: To eventually let you describe a scene and then have a transformer model paint that scene for you in a way that is unbelievable that a human didn't make it.
+
+David: Yup. Then most importantly, for the market that Jensen and NVIDIA are looking for, you can use this same branch of AI to predict what type of content you might like to see next show up in your feed of content and what type of ad might work really, really, really well on you. Basically, all of these people we're just talking about. I bet a lot of you recognize their names. They get scooped up by Google. Fei-Fei Li goes to Google.
+
+Ben: Bryan went to Baidu and he's back at NVIDIA now doing applied AI.
+
+David: Bryan went to Baidu, Jeff went to Facebook. So all the other markets. Let's say you don't believe in self-driving cars, you don't think it's going to happen or any of this other stuff. It doesn't matter. The market of digital advertising that this enables is a freaking multi-trillion dollar market.
+
+Ben: It's funny because that feels like that's the killer use case, but that's just the easiest use case. That's the most obvious, well-labeled data set that these models don't have to be amazingly good because they're not generating unique output. They're just assisting and making something more efficient.
+
+Then flash forward 10 more years and now we're in these crazy transform models with, I don't know if it's hundreds of millions or billions of parameters. Things that we thought only humans could do are now being done by machines and it's happening faster than ever. I think to your point, David, it's like, oh, there was this big cash cow enabled by neural networks and deep learning in advertising. Sure, but that was just the easy stuff.
+
+David: Right. That was necessary though. This was finally the market that enabled the building of scale in the building of technology to do this. In the Ben Thompson, Jensen interview, Ben actually says this, when he realizing this talking to Jensen says, this is Ben talking, "The way value accrues on the internet in a world of zero marginal costs where there's just an explosion in abundance of content, that value accrues to those who help you navigate the content." He's talking about aggregation theory.
+
+Then he says, "What I'm hearing from you, Jensen, is that, yes, the value accrues to people to help you navigate that content, but someone has to make the chips and the software so that they can do that effectively. It used to be that Windows was the consumer-facing layer and Intel was the other piece of the Wintel monopoly. This is Google, and Facebook, and a whole list of other companies on the consumer side, and they're all dependent on NVIDIA. That sounds like a pretty good place to be." And indeed, it was a pretty good place to be.
+
+Ben: Amazing place to be.
+
+David: Oh my gosh. The thing is, the market did not realize this for years. I didn't realize this and you probably didn't realize this. We were the class of people working in tech as venture capitalists that should have.
+
+Ben: Do you know the Marc Andreessen quote?
+
+David: Oh, no.
+
+Ben: Oh, this is awesome. Okay, it's a couple years later, so it's getting more obvious, but it's 2016. Marc Andreessen gave an interview. He said, "We've been investing in a lot of companies applying deep learning to many areas, and every single one effectively comes in building on NVIDIA's platforms. It's like when people were all building on Windows in the '90s we're all building on the iPhone in the late 2000s." Then he says, "For fun, our firm has an internal game of what public companies we'd invest in if we were a hedge fund. We'd put in all of our money to NVIDIA."
+
+David: It was a paradigm that called all of their capital in one of their funds and put it into Bitcoin when it was like $3000 a coin or something like that. We also have been doing this. Literally, NVIDIA stock—this is now 2012, 2013, 2014, 2015—doesn't trade above $5 a share. NVIDIA today as we record this is I think about $220 a share. The high in the past year has been well over $300. If you realized what was going on, and again, in a lot of those years, it was not that hard to realize what was going on, wow, it was huge.
+
+Ben: It's funny. We'll get to what happened in 2017 and 2018 with crypto and a little bit, but there was a massive stock run up to like $65 a share in 2018. Even as late as I think the very beginning of 2019, you could have gotten it. I tweeted this, and we'll put the graph on the screen in the YouTube version here. You could have gotten it in that crash for $34 a share in 2019. If you zoom out on that graph, which is the next tweet here, you can see that in retrospect, that little crash just looks like nothing. You don't even pay attention to it in the crazy run up that they had to $350 or whatever their all time high was.
+
+David: Yeah. It's wild. A few more wild things about this. AlexNet happened in 2012. It's not until 2016 that NVIDIA gets back to the $20 billion market cap peak that they were in 2007, when they were just a gaming company. That's almost 10 years.
+
+Ben: I really hadn't thought about it the way that you're describing it. The breakthrough happened in 2010, 2011, 2012. Lots of people had the opportunity, especially because freaking Jensen is talking about it on stage. He's talking about our earnings calls at this point.
+
+David: He's not keeping this a secret.
+
+Ben: No, he's trying to tell us all that this is the future. People are still skeptical. Everyone's not rushing to buy the stock. We're watching this freaking magic happen using their hardware, using their software on top of it. Even semiconductor analysts who are like students of listening to Jensen talk and following the space very closely think he sounds like a crazy person when he's up there espousing that the future is neural networks, and we're going to go all in. We're not pivoting the business, but from the amount of attention that he's giving in earnings calls to this versus the gaming. I mean, everyone's just like, are you off your rocker?
+
+David: I think people have just lost trust and interest. There were so many years, they were so early with CUDA and early takeout. They didn't even know that AlexNet was going to happen. Jensen felt like the GPU platform could enable things that the CPU paradigm could not, and he really had this faith that something would happen. He didn't know this was going to happen. For years, he was just saying that we're building it, they will come.
+
+Ben: To be more specific, it was that, well, look, the GPU has accelerated the graphics workload. We've taken the graphics workload off of the CPU. The CPU is great. It's your primary workhorse for all sorts of flexible stuff. But we know graphics need to happen in its own separate environment, have all these fancy fans on it, and get super cooled. It needs these matrix transforms. The math that needs to be done is matrix multiplication.
+
+There was starting to be this belief that like, oh, well, because the apocryphal professor told me that he was able to use this program that matrix transforms to work for him, baybe this matrix math is really useful for other stuff. Sure, it was for scientific computing. Then, honestly, it fell so hard into NVIDIA's lap that the thing that made deep learning work was massively parallelized matrix math. NVIDIA is just staring down their GPUs like, I think we have exactly what you are looking for.
+
+David: Yes. There's that same interview with Bryan Catanzaro. When all this happened, he says, "Deep learning happened to be the most important of all applications that need high throughput computation." Understatement of the century. Once NVIDIA saw that, it was basically instant. The whole company just latched on to it.
+
+There are so many things to laud Jensen for. He was painting a vision for the future, but he was paying very close attention, and the company was paying very close attention to anything that was happening. Then when they saw that this was happening, they were not asleep at the switch.
+
+Ben: Yeah, 100%. It's interesting thinking about the fact that in some ways, it feels like an accident of history. In some ways, it feels so intentional, that graphics are an embarrassingly parallel problem because every pixel on a screen is unique. You don't have a core to drive every pixel on the screen. There are only 10,000 cores on the most recent NVIDIA graphics cards, but there's not, which is crazy, but there are way more pixels on the screen.
+
+They're not all doing every single pixel at the same time every clock iteration. But it worked out so well that neural networks also can be done entirely in parallel like that where every single computation that is done is independent of all the other computations that need to be done, so they also can be done on this super parallel set of cores.
+
+You got to wonder, when you kind of reduce all this stuff to just math, it is interesting that these are two very large applications of the same type of math in the search space of the world of what other problems can we solve with parallel matrix multiplication? There may be more, there may even be bigger markets out there.
+
+David: Totally. Well, I think they probably will be a big part of Jensen's vision that he paints for NVIDIA now, which we'll get to in a second. This is just the beginning. There's robotics, there's autonomous vehicles, there's the omniverse, it's all coming. It's funny, we just joked about how nobody saw this before the run up in 2016, 2017. There were all these years where Marc Andreessen knew. Whether he made money in his personal account or not, I love to ask him.
+
+Then in 2018, another class of problems that are embarrassingly parallelizable is of course cryptocurrency mining. A lot of people were going out and buying consumer NVIDIA graphics cards and using them to set up crypto mining rigs in 2016 and 2017. When the crypto winter hit in 2018 and the end of the ICO craze and all that, the mining rig demand fell off, and this became so big for NVIDIA that their revenue actually declined.
+
+Ben: Right. So a couple of interesting things here. Let's talk about technically why. The way crypto mining works is effectively guess and check. You're effectively brute-forcing an encryption scheme. When you're mining, you're trying to discover the answer to something that is hard to discover. You're guessing if that's not the right thing, you're incrementing, you're guessing again. That's a vast oversimplification, and not technically exactly right, but that's the right way to think about it.
+
+If you were going to guess in check at a math problem and you had to do that on the order of a few million times in order to discover the right answer, you could very unlikely discover the right answer on the first time, but that probabilistically is only going to happen to you once if ever. The cool thing about these chips is that they have a crap ton of cores.
+
+The problem like this is massively parallelizable because instead of guessing and checking with one thing, you can guess and check with 10,000 at the same time, then 10,000 more, and then 10,000 more. The other thing is it is matrix math. Yet again, there's this third application beyond gaming, beyond neural networks.
+
+There's now this third application in the same decade for the two things that these chips are uniquely good at. It's interesting that you could build hardware that's better for crypto mining or better for AI, and both of those things have been built by NVIDIA and their competitors now. The general purpose GPU happens to be pretty darn good at both of those things.
+
+David: Well, at least way, way, way better than a CPU.
+
+Ben: Yeah. As some of NVIDIA's startup competitors put it today, and Cerebrus is the one that I'm thinking of, they sort of say, well, the GPU is a thousand times better or much, much better than CPU for doing this kind of stuff, but it's a thousand times worse than it should be. There exist much more optimal solutions for doing some of this AI stuff.
+
+David: Interesting. It really begs the question of how good is good enough in these use cases?
+
+Ben: Right. To flash way forward, the game that NVIDIA and everyone else all these upstarts are playing is really still the accelerated computing game, but now it's how do you accelerate workloads off the GPU instead of off the CPU?
+
+David: Interesting. Well, back to crypto winter because this is so funny. Well, crypto itself became like a real industry. I don't think that's a controversial statement at this point. Maybe it is, maybe it isn't, but certainly it's less controversial than it was in 2018. What happens is NVIDIA's stock gets hammered again. It goes through another 50% drawdown. This is just like every five years this has got to happen.
+
+Ben: Which is fascinating because at the end of the day, it was a thing completely outside their control. People were buying these chips for a use case that they didn't build the chips for. They had really no idea what people were buying them for. It's not like they can even get really good market channel intelligence on are we selling to crypto miners or are we selling to people that are going to use these for gaming?
+
+David: They're selling to Best Buy and then people go buy them at Best Buy.
+
+Ben: Right, and some people are buying them wholesale, if you're actually starting a data center to mine, but a lot of people are just doing this in their basement with consumer hardware, so they don't have perfect information on this. Then, of course, the price crashing makes it either unprofitable or less profitable to be a miner.
+
+Then your demand dries up for this thing that you (a) didn't ask for and (b had poor visibility into knowing if people were buying in the first place. So the management team just looks terrible to the street at this point because they had just no ability to understand what was going on in their business.
+
+David: I think a lot still have this hangover of skepticism about this deep learning thing, like what? Jensen? Okay, and so you know, it's kind of an excuse to sell-off. Anyway, that was short-lived to the 50% depth because with the use case and specifically the enterprise use case for GPUs for deep learning, it just takes off. This is really interesting. If you look at NVIDIA, they report financials a couple of different ways.
+
+One of the ways they break it out is a few different segments is the gaming consumer segment and then their data center segment. All of the stuff we're talking about, it's all done in the data center. Google isn't going and buying a bunch of NVIDIA GPUs and hooking them up to the laptops of their software engineers.
+
+Ben: Is Stadia still a thing? I think that's used for cloud gaming and some stuff like that.
+
+David: Yeah, but it's all happening in the data center is my point.
+
+Ben: Right. My argument is every time I see data center revenue, in my mind, I sort of make it synonymous with this is their ML segment.
+
+David: Yes, yes. That's what I'm saying. I agree. Now, the data center, this is really interesting, again, because they used to sell these cards that would get packaged, put on a shelf, a consumer would buy them. They made some specialty cards for the scientific computing market and stuff like that. But this data center opportunity, like man, do you know the prices that you can sell gear to data centers for? It makes the RTX 3090 look like a pittance.
+
+Ben: The RTX 3090, which is their most expensive high end graphics card that you can buy as a consumer, was $3000. Now it's like $2000. If you're buying, what's the latest? It's not the A100. It's the H100.
+
+David: The A100, they just announced the H100.
+
+Ben: That's what, like $20,000 or $30,000 in order to just get one card?
+
+David: Yeah, and people are buying a lot of these things.
+
+Ben: Yeah, it's crazy.
+
+David: It's funny, I tweeted about this, and I was sort of wrong, but then like everything, there's nuance. Tesla has announced making their own hardware. They're certainly doing it for the on-the-car, the inference stuff, the full self-driving computer on Tesla. They now make those chips themselves.
+
+The Tesla Dojo, which is the training center that they announced. They announced they were also going to make their own silicon for that. They actually haven't done it yet so they're still using NVIDIA chips for their training. The current compute cluster that they have that they're still using, I want to say I did the math and assumed some pricing. I think they spent between $50-100 million that they paid NVIDIA for all of the compute in that cluster.
+
+Ben: Wow, that's one customer.
+
+David: One customer for one use case at that one customer
+
+Ben: Crazy. I mean, you see this show up in their earnings. We're at the part of the episode where we're close enough to today that it's best illustrated by the today number. I'll just flash forward to what the data center segment looks like now. Two years ago, they had about $3 billion of revenue and it was only about half of their gaming revenue segment.
+
+Gaming, through all this, through 2006, to AlexNet all the way to another decade forward to 2020, gaming is still king. It generates almost $6 billion in revenue. The data center revenue segment was $3 billion but had been pretty flat for a couple of years. Then insanely, over the last two years, it 3X'd the data center segment. It is now doing over $10.5 billion a year in revenue and it's basically the same size as the gaming segment. It's nuts.
+
+It's amazing how it was sort of obvious in the mid-2010s. But when the enterprise really showed up and said, we're buying all this hardware and putting it in our data centers. Whether that's the hyper scalars like cloud folks—Google, Microsoft, Amazon—putting it in their data centers, or whether it's companies doing it in their own private clouds or whatever they want to call it these days on prem data centers, everyone is now using machine learning hardware in the data center.
+
+David: NVIDIA is selling it for very, very, very healthy, gross margins, Apple level gross margin.
+
+Ben: Yes, exactly.
+
+David: Speaking of the data center, a couple of things. In 2018, they actually do change the terms of the user agreements of their consumer cards, GeForce cards that you cannot put them in data centers anymore.
+
+Ben: They're like, oh, we really do need to start segmenting a little bit here. We know that the enterprises have much more willing to pay and it is worth it. You buy these crazy data center cards and they have twice as many transistors. Actually, they don't even have video outputs. You can't use the data center GPUs. The A100 does not have video out so they actually can't be used as graphic cards.
+
+David: Yeah, there's a cool Linus Tech Tips video about this where they get a hold of an A100 somehow. Then they run some benchmarks on it, but they can't actually drive a game on it.
+
+Ben: Fascinating.
+
+David: Yeah, so fun.
+
+Ben: Data center stuff is super high horsepower, but of course, useless to run a game on because you can't pipe it to a TV or a monitor. But then it's interesting that they're sort of artificially doing it the other way around and saying, for those of you who don't want to spend $30,000 on this and you're trying to make your own little data center rig at home, no, you cannot rack this.
+
+David: Don't think about going to Fry's and buying a bunch of GeForces. Ironic because that's how the whole thing started. Anyway, in 2020, they acquired an Israeli data center compute company called Mellanox that I believe focuses on a networking compute within the data center. For about $7 billion, integrate that into their ambitions and build out the data center.
+
+Ben: The way to think about what Mellanox enables them to do is now they're able to have super high bandwidth, super low latency connectivity in the data center between their hardware. At this point, they've got NVLink, which is, what does Apple call it? A proprietary interconnect or I think AMD calls it the Infinity fabric.
+
+It's a super high bandwidth chip-to-chip connection. Think about what Mellanox lets them do. It lets them have these extremely high bandwidth switches in the data center to then let all of these different boxes with NVIDIA hardware and then communicate superfast to each other.
+
+David: That's awesome because of course, these data centers, that's the other thing about customers, like the Tesla example I gave. They're not buying cards, the enterprise, because they're buying solutions from NVIDIA. They're buying big boxes with lots of stuff in them.
+
+Ben: You say solutions, I hear gross margin.
+
+David: That's such a great quote. We should frame that and put it on the wall of NVIDIA at the Acquired museum.
+
+Ben: It is true that acquiring Mellanox not only enables this, now we have the super high connectivity thing, but this is what leads to this introduction of this third leg of the stool of computing for NVIDIA that they talk about now, which is if you had your CPU, it's great. It's your workhorse. It's your general purpose computer. Then there's the GPU, which is really a GP GPU that they've really beefed up.
+
+For the enterprise, for these data centers, they've put tensor cores in it to do the machine learning specific 4x4x4 matrix multiplication super fast and do that really well. They've put all this other non-gaming, data center-specific AI modules onto these chips and this hardware. Now what they're saying is, you've got your CPU, you've got your GPU. Now, there's a DPU.
+
+This data processing unit that's kind of born out of the Mellanox stuff is the way that you really efficiently communicate and transform data within data centers. The unit of how you think about the black box just went from a box on a rack to now you can think about your data center as the black box. You can write at a really high abstraction layer and then NVIDIA will help handle how things move around the data center.
+
+David: We have one more thing to talk about in data centers. But before we do...
+
+Ben: Can we tell our audience about one of our favorite things? One of our favorite things that will be in person at the Acquired Arena Show?
+
+David: Yes, we can. This time for our second sponsor of the episode and all of season 10, huge thank you to Vouch, the insurance of tech. In our insurance 101 last time on the first NVIDIA episode, we talked about directors and officers' insurance or D&O. This sounds boring or go listen to that. You need this. You absolutely need this
+
+Ben: This insurance 101 stuff is so fun.
+
+David: Yes.
+
+Ben: It takes something very boring like data centers and makes it very practical.
+
+David: It's the Acquired of insurance, you might say. Vouch is the Acquired of insurance.
+
+Ben: Yes.
+
+David: That was great because if you are a board director or an officer of a company, you must have that. Go to vouch.us/acquired. Pick it up right now, take five minutes, and come back.
+
+Today, we're going to talk about employment practices liability insurance or EPL. EPL is insurance that protects your company from employment-related claims, anything from harassment and discrimination to improper hiring practices, wrongful termination, et cetera. Not just there's the obvious bad stuff like sexual harassment or discrimination, HR laws are super complex.
+
+Ben: And different state by state.
+
+David: Yes. My wife, Jenny, both of her parents are labor and employment attorneys. There are whole classes of the law dedicated just to dealing with all of this
+
+Ben: With EPL, I used to think, oh, well, as long as the company is buttoned up and the managers are being good people, then this isn't an issue. But really, it's just a matter of time before you end up with an EPL-related issue. Just as you're scaling, it's going to happen.
+
+David: If you have started a company and been on a board, you know this is the most frequent claim that you are going to experience. It's not if, it is when. Indeed, actually, Vouch told us they see this in their own data. This is by far the most common claim that comes up. And perhaps unsurprisingly, over the last two years with everything that's happened, EPL incidents are up literally 40% in the last two years in terms of volume.
+
+The bottom line on this one, you could have the best company culture, the best managers, you could never do anything wrong, but if you hire enough employees, this is guaranteed to come up, so you definitely want to have this.
+
+What's important to know is that EPL coverage protects the company regardless of whether the claim has merit. If you actually did do something wrong and there's a judgment against you, EPL coverage, of course, covers you up to a limit. But if it's meritless, then a great insurer like Vouch and Vouch does this, they can help you take care of that. They can act as an advisor. They see this stuff a lot more than you do.
+
+When this comes up in your company, pick up the phone, call Vouch, they can help you through it. Once again, Vouch, you guys are the best. We love you. Learn more at vouch.us/acquired. Everybody, if you use that link, you will get an extra 5% off your coverage.
+
+Ben: Great stuff. Thanks, Vouch
+
+David: Indeed, it is. Okay, I said one more thing about the data center.
+
+Ben: Yes.
+
+David: That one more thing is it's easy to forget now. I know because we've just been deep on this. NVIDIA was going to buy Arm. Do you remember this?
+
+Ben: Yes, they were. In fact, this is going to be like a corporate communications nightmare. Everyone out there—Jensen, their IR person, different tech people who are being interviewed on various podcasts—were talking about the whole strategy and how excited they are to own Arm and how NVIDIA is going to be good on its own, but it could be so much better if we had Arm and here's all the cool stuff we're going to do with it. And then it doesn't happen.
+
+David: They were talking about it like it was a done deal.
+
+Ben: Now you've got dozens of hours of people talking about the strategy. It's funny that now, after listening to all that, I'm sort of disappointed with NVIDIA's ambition on its own without having the strategic assets of Arm.
+
+David: Yeah, we should revisit Arm at some point. We did do the Softbank acquiring Arm episode years and years ago now. You think of Arm, they are a CPU architecture company whose primary use case is mobile and smartphones. It's like everything that Intel screwed up back in the misguided mobile era. Now they're going and buying the most important company in that space.
+
+It's interesting. Again, in the Ben Thompson interview, Jensen talks all about this. Maybe this is just testifying in retrospect, but I don't think so. He's like, it was about the data center. Everything Arm does is great and that's fine, but we want to own the data center. When we say we want to own the data center, we want to own everything in the data center. We think Arm chips, Arm CPUs, can be a really important part of that. Arm is not focusing, right now, enough on that. Why would they? Their core market is mobile.
+
+We want them to do that. We think there's a huge opportunity. We want to dwell on them and do that. Indeed, this year, NVIDIA announced they are making an Arm-based data center CPU called Grace to go with the new Hopper architecture for their latest GPU. There's Grace and Hopper, of course, the Rear Admiral Grace Hopper, I think.
+
+Ben: I think that's right.
+
+David: I'm sure he's in the Navy. He's a great computer scientist pioneer. Yeah, data center. It's big.
+
+Ben: It's interesting, the objectors to that acquisition—and it's a good objection. This is ultimately, I think, why they abandoned it because they got the regulatory pressure on this. Arm's business is simple. They make the IP so you can license one of two things from them.
+
+You can license the instruction set. Even Apple who designs their own chips is licensing the Arm instruction set. In order to use that 20 keywords or so that can get compiled to assembly language to run on whatever the chip is, if you want to use these instructions, you have to license it from Arm, great. If you don't want to be Apple and you don't want to go build your own chips or you don't want to be NVIDIA or whatever but you want to use that instruction set, you can also license these off-the-shelf-chip designs from us.
+
+We will never manufacture any of them. But you take one of these two things, you license from us, you have someone like TSMC, make them, great. Now you're a fabless semiconductor company, and they sell to everyone.
+
+Of course, the regulatory body is going to step in and be like, wait, so, NVIDIA, you're a fabless chip company, you're a vertically integrated business model, are you going to stop allowing Arm licenses to other people? And NVIDIA goes, oh, no, no, no. Of course, we would never do that.
+
+Over time, they might do some stuff like that. But the thing that they were sort of like, which is believable, beating the drum on the strategy was going to be is right now, our whole business strategy is that CUDA and everything built on top of it—our whole software services ecosystem—is just for our hardware. How cool would it be if you could use that stuff on Arm-designed IP, either just using the ISA or also using the actual designs that people license from them?
+
+How cool would it be if because we are one company, we are able to make all of that stuff available for Arm chips as well? Plausible, interesting, but no surprise at all that they face too much regulatory pressure to go through with this.
+
+David: Clearly, that idea rattled around in Jensen's head a bunch and in NVIDIA's because—well, let's catch us up to today. They just did GTC at the end of March, the big GPU developer conference that they do every year that they started in 2009 as part of building the whole CUDA ecosystem. It's so freaking impressive now.
+
+There are now 3 million registered CUDA developers, 450 separate SDKs and models for CUDA, and they announced 66 zero new ones at this GTC. We talked about the next generation GPU architecture with Hopper and then the grace CPU to go along with it.
+
+I could be wrong on this. I think Hopper is going to be the world's first four-nanometer process chip using TSMC's new four-nanometer process, which is amazing. We talked a lot about Omniverse. We're going to talk about Omniverse in a second, but you mentioned this licensing thing.
+
+They usually do their investor day, their analyst day, at the same time as GTC. On the analyst day, Jensen gets up there. It's just so funny going through the whole history of this now of looking for a market and trying to find some market of any size. He's like, we are targeting a trillion-dollar market. He's like a startup raising a seed round walking in with a pitch deck.
+
+Ben: We'll put this graphic up on the screen for those watching the video. It's an articulation of what the segments are of this trillion-dollar addressable opportunity that NVIDIA has in front of it. My view of this is if their stock price wasn't what it was, there's no way that they would try to be making this claim that they're going after a trillion-dollar market. I think it's squishy.
+
+David: There's a lot of squish in there.
+
+Ben: But the fact that they're valued today, I mean, what's their market cap right now?
+
+David: About half a trillion.
+
+Ben: Half a trillion dollars. They need to sort of justify that, unless they are willing to have it go down. They need to come up with a story about how they're going after this ginormous opportunity, which maybe they are, but it leads to things like an investor day presentation of, let us tell you about our trillion-dollar opportunity ahead. The way that they actually articulated is, we are going to serve customers that represent a $100 trillion opportunity and we will be able to capture about 1% of that.
+
+David: It's just like a freaking seed company pitch deck.
+
+Ben: If we just get 1% of the market.
+
+David: That's the thing. We're going to talk about this in narratives in a minute. This is a generational company. This is unbelievable. This is amazing. There's so much to admire here. This company did $20 something billion in revenue last year and is worth half a trillion dollars?
+
+Ben: They did $27 billion last year in revenue.
+
+David: Google AdWords revenue in the fourth quarter of 2021 was $43 billion. Google as a whole did $257 billion in revenue. You got to believe if you're an NVIDIA shareholder.
+
+Ben: Right. They're the eighth largest company in the world by market cap, but these revenue numbers are in a different order of magnitude.
+
+David: You got to believe it's going to come.
+
+Ben: Yeah, you do. NVIDIA has literally three times the price to sales ratio of Apple or price to revenue as Apple and nearly 2X Microsoft. That's on revenue. Fortunately, this NVIDIA story is not speculative in the way that an early stage startup is speculative. Even if you think it's overvalued, it is still a cash generative business.
+
+David: Yes.
+
+Ben: They generate $8 billion of free cash flow every year. I think they're sitting on $21 billion in cash because the last few years have been very cash generative very suddenly for them. The takeaway there is by any metric—price to sales, price earnings, all that—they're much more richly valued than an Apple, Microsoft, or these FAANG companies. But it is an extremely profitable business, even from an operating profits perspective.
+
+David: You sell enough of that enterprise data center goodness and you're going to make some money.
+
+Ben: It's crazy. They now have a 66% gross margin. That illustrates to me how seriously differentiated they are and how much of a moat they have versus competitors in order to price with that kind of margin.
+
+We'll put it up on the screen here. Back in '99, they had a gross margin of 30% on their graphics chips. Then in 2014, they broke the 50% mark. Today, and this slide really illustrates it, it's architecture, systems, data center, CUDA, CUDA-X. It's the whole stack of stuff that they sell as a solution and then sort of all bundled together. Bundle is the right word. I think they get great economics because they're bundling so much stuff together that it's 66% gross margin business now.
+
+David: Yup. Thinking about increasing that gross margin further and what we were talking about a minute ago with Arm and the licensing. At the analyst day around GTC this year, they say that they're going to start licensing a lot of the software that they make separately. It's separate from the hardware like CUDA.
+
+There's a quote from Jensen here, "The important thing about our software is that it's built on top of our platform. It means that it activates all of NVIDIA's hardware chips and system platforms. And secondarily, the software that we do is industry-defining software. We've now finally produced a product that an enterprise can license. They've been asking for it. The reason for that is because they can't just go to open source, and download all the stuff, and make it work for their enterprise. No more than they could go to Linux, download open source software, and run a multibillion-dollar company with it."
+
+We were joking a few minutes ago about you say solution and I see margin. Yeah, open source software companies have become big for this reason, Databricks, Confluent and Elastic. These are big companies with big revenue based on open source because enterprises, they're like, oh, I want that software, but they're not just going to give you a JP Morgan. You're not going to go to GitHub and be like, great, I got it now.
+
+Ben: Right.
+
+David: You need solutions. To Jensen and NVIDIA, they see this as an opportunity to—I'm sure this isn't going to be cannibalizing hardware customers for them. I think this is going to be an incremental sale on top of what they're already doing.
+
+Ben: That's an important point. I think this is a Playbook theme that I had. But oftentimes when someone has hardware that is differentiated by software and services and then they decide to start selling those software and services a la carte, it's a strategy conflict to your classic vertical versus horizontal problem, unless you are good at segmentation.
+
+That's sort of what NVIDIA is doing here, which is what they're saying, we're only going to license it to people that there's no way that they would have just bought the hardware and gotten all this stuff for free anyway. If we don't think it's going to cannibalize, they're a completely different segment, and we can do things in pricing, distribution channel, and terms of service that clearly walls off that segment, then we can behave in a completely different way to that segment.
+
+David: Yup, and get further below returns on our assets that we've generated.
+
+Ben: Yup. It is a little Tim Cook though—Tim Cook beating the service's narrative drum. You hear a public company CEO who has a high market cap and everyone's asking where the next phase of growth is going to come from and saying, we're going to sell services and look at this growing business line of licensing that we have.
+
+David: Oh my goodness. But who else is going to do it wearing a leather jacket?
+
+Ben: That is a great point?
+
+David: Frankly, Elon. We'll talk about cars in a second here.
+
+Ben: Okay, a few other things just to talk about the business today that I think are important to know, just as you think about having a mental model for what NVIDIA is. It's about 20,000 employees. We mentioned they did $27 billion in revenue last year. We talked about this very high revenue multiple, earnings multiple, or however you want to frame it relative to FAANG companies. They're growing much faster than Apple, Microsoft, or Google. They're growing at 60% a year.
+
+This is a 30-year-old company that grew 60% in revenue last year. If you're not used to wrapping your mind around that, startups double and triple in the first five years that they exist. Google has had this amazing run where they're still growing at 40%. Microsoft went from 10% to 20% over the last decade. Again, amazing. They're accelerating, but NVIDIA is growing 60%. I don't care what your discount rate is. Having 60% growth in your DCF model versus 20 or 40 will get you a lot more multiples.
+
+David: Inflation be damned.
+
+Ben: Inflation. be damned. Okay, a couple other things about specific segments of the business that I think are pretty interesting. They have not slept on gaming. We keep beating this NVIDIA data center enterprise, machine learning argument.
+
+David: Yeah, we haven't even talked about ray tracing.
+
+Ben: Right. Yeah, this RTX set of cards that they came out with. The fact that they can do ray tracing in real time, holy crap. For anyone who is looking for sort of a fun dive on how graphics works, go to the Wikipedia page for ray tracing. It's very cool. You model where all the light sources are coming from, where all the paths would go in 3D.
+
+The fact that NVIDIA can render that in real time at 60 frames a second or whatever while you're playing a video game is nuts. One of the ways that they do that is they invented this new technology that's extremely cool. It's called DLSS, deep learning supersampling. This, I think, is where NVIDIA really shines bringing machine learning stuff and gaming stuff together.
+
+They basically have faced this problem of, well, we either could render stuff at low resolution with less frames because we can only render so much per amount of time or we could render really high resolution stuff with less frames. Nobody likes less frames, but everyone likes high resolution.
+
+What if we could cheat death? What if we could get high resolution and high frame rate? They're sitting around thinking, how on earth can we do that? And they're like, you know what, maybe this 15-year bet that we've been making on deep learning can help us out.
+
+What they discovered here and invented in DLSS—and AMD does have a competitor to this. It's a similar sort of idea, but this DLSS concept is totally amazing. What they basically do is they say, well, it's very likely that you can infer what a pixel is going to be based on the pixels around it. It's also pretty likely, you can infer what a pixel is going to be based on what it was in the previous frames.
+
+Let's actually render it at a slightly lower resolution so we can bump up the frame rate. Then when we're outputting it to screen, we will use deep learning to artificially—
+
+David: At the final stage of the graphics pipeline.
+
+Ben: Yes.
+
+David: That's awesome.
+
+Ben: It's really cool. When you watch the side by side on all these YouTube videos, it looks amazing. It does involve really tight embedded development with the game developers. They have to sort of do stuff to make it DLSS-enabled. It just looks phenomenal.
+
+It's so cool that when you're looking at this 4K or even 8K output of a game at full frame rate, you're like, whoa. In the middle of the graphics pipeline, this was not this resolution and then they magically upscaled it. It's basically making the enhanced joke like a real thing.
+
+David: That's so awesome. I'm remembering back to the RIVA 128 in the beginning. When they went to game developers and they were like, yeah, all the blend modes in DirectX. You don't need all of them, just use this.
+
+Ben: Yes, exactly. And they have the power to do it. They have the stick and the carrot with game developers to do it.
+
+David: At this point, no game developer is not going to make their games optimized for the latest NVIDIA hardware.
+
+Ben: The other thing that is funny that's within the gaming segment because they didn't want to create a new segment for it, is crypto. Because they have poor visibility into it and before they weren't liking the fact that it was actually reducing the amount of cards that were available to the retail channel for their gamers to go and buy, what they did was they artificially crippled the card to make it worse at crypto mining.
+
+David: And then they came out with a dedicated crypto mining card.
+
+Ben: Yes. The charitable PR thing from NVIDIA is, hey, we love gamers and we didn't want to make it so that the gamers couldn't get access to all the cards they want. But really, they're like, hmm, people are just straight up performing an arbitrage by crypto mining on these cards. Let's make that more expensive on the cheap cards and let's make dedicated crypto hardware for them to buy to do those.
+
+David: Let's make that our arbitrage. Your arbitrage is my opportunity.
+
+Ben: Magically, their revenue is more predictable now and they get to make more money because much like their sort of terms of service data center thing. They 'terms of serviced' their way to being able to create some segmentation and thus more profitability. Evil genius laugh.
+
+The last thing that you should know about NVIDIA's gaming segment is this really weird concept of add-in board partners. We've been oversimplifying this whole episode saying, oh, you go and you buy your RTX 3090 Ti at the store and you run your favorite game on it. Actually, you're not buying that from NVIDIA the vast majority of the time.
+
+You are going to some third-party partner—ASUS, MSI, ZOTAC is one. There's also a bunch of really low-end ones as well who NVIDIA sells the cards to. Those people install the cooling, the branding, and all the stuff on top of it and you buy it from them. It's really weird to me that NVIDIA does that.
+
+David: I love how consumer gaming graphics cards have become the modern day equivalent of a hot rod.
+
+Ben: Dude, as you can imagine for this episode, I've been hanging a lot on the NVIDIA subreddit. It's not actually about NVIDIA the company or NVIDIA the strategy. It's like, show off your sick photos of your glowing rig, which is pretty funny.
+
+It feels like a remnant of old NVIDIA that they still do this. They do make something called the Founders Edition card. It's basically a reference design where you can buy it from NVIDIA directly. But I don't think the vast majority of their sales actually come from that.
+
+David: What are the Android phones that Google makes? Pixel?
+
+Ben: Yeah, it's exactly like the Pixel. I suspect that shifts more over time. I can't imagine a company that wants as much control as NVIDIA does loves the add-in board partner thing. But they've built a business on it, so they're not really willing to cannibalize and alienate. I bet if they had their way and they're becoming a company that can more often have their way, they'll find a way to just go more direct.
+
+David: It makes sense.
+
+Ben: Two other things I want to talk about. One is automotive. This segment has been very small for a revenue perspective for a long time and seems to not have a lot of growth.
+
+David: But Jensen says in his pitch deck it's going to be a $300 billion part of the TAM.
+
+Ben: I think right now, it's something like, is it a billion dollars in revenue? I think it's like a billion dollars, but it doesn't really grow.
+
+David: I don't even know if it's that much.
+
+Ben: Don't quote me on that. Here's what's going on with automotive, which is pretty interesting. What NVIDIA used to do for automotive is what everyone used to do for automotive, which is make fairly commodity components that automakers buy and then put in there.
+
+Every technology company has had their fanciful attempt to try to create a meaningfully differentiated experience in the car, all have failed. You think about Microsoft and the Ford SYNC.
+
+David: Ford SYNC. Oh, wow.
+
+Ben: You think about CarPlay kind of, maybe a little bit works. The only company that's really been successful has been Tesla at starting a completely new car company. That's the only way they're able to provide a meaningful differentiated experience.
+
+NVIDIA, my perception of what they're doing is they're pivoting this business line—this flat, boring, undifferentiated business line—to say, maybe electric vehicles (EVs) and autonomous driving is a way to break in and create a differentiated experience even if we're not going to make our own cars. I think what's really happening here is when you hear them talk about automotive now and they've got this very fancy name for it, it's the something-drive platform.
+
+David: Hyperion drive, is that it? Something like that?
+
+Ben: Something like that. Dealing with NVIDIA's product naming is maddening. This drive platform, it feels like they're making the full EV, AV hardware software stack except for the metal, glass, and wheels. And then going to car companies and saying, look, you don't know how to do any of this. This thing that you need to make is basically a battery and a bunch of GPUs and cameras on wheels. You're issuing these press releases saying you're going in that direction, but none of this is the core competency of your company, except the sales and distribution.
+
+What can we do here? If NVIDIA is successful in this market, it'll basically look like an NVIDIA computer full software, hardware with a car chassis around it that is branded by whatever the car company is.
+
+David: Like the Android market.
+
+Ben: Yeah. I think we will see if the shift to autonomous vehicles is (a) Real, (b) Near term, and (c) Enough of a dislocation in that market to make it so that someone like NVIDIA, a component supplier actually can get to own a bunch of that value chain versus the auto manufacturer kind of forever stubbornly getting to keep all of it and control the experience.
+
+David: Yup, which—to do a mini bull and bear on this here before we get to the broader on the company—the bull case for that is, again, a friend of the show, Jeremy messaging in Slack, Lotus is one of their partners. Is Lotus going to go build autonomous driving software? I don't think so. Ferrari? No.
+
+Ben: Not at all. They're going to be NVIDIA cars effectively.
+
+David: Yeah.
+
+Ben: Okay, last segment thing I want to talk about is how we opened the show talking about the NVIDIA Omniverse. This is not an Omniverse like Metaverse. It is similar in that it's kind of a 3D simulation type thing, but it's not an open world that you wander around in the same way that Meta is talking about or that you think about in fortnight or something like that.
+
+What they mean by Omniverse is pretty interesting. A good example of it is this Earth 2, this digital twin of earth that they're creating that has these really sophisticated climate models that they're running, that basically is a proof of concept to show enterprises who want to license this platform, we can do super realistic simulations of anything that's important to you.
+
+What their pitches to the enterprise is, hey, you've got something. Let's say it is a bunch of robots that need to wander around your warehouse to pick and pack if it's Amazon, who actually is the customer.
+
+They showcase Amazon in all their fancy videos. They say, you're going to be using our hardware and software to train models, to figure out the routes for these things that are driving around your data centers. You're going to be licensing certainly some of our hardware to actually do the inference to put on the robots that are driving around.
+
+When you want to make a tweak to a model, you're not just going to deploy those to all the robots. You kind of want to run that in the Omniverse first. Then when it's working, then you want to deploy it in the real world. Their Omniverse pitch is basically an enterprise solution that you can license from us where anytime you're going to change anything in any of your real world assets, first, model it in the Omniverse. I think that's really powerful.
+
+I believe in the future of that in a big way because I think, now that we have the compute, the ability to gather the data, and the ability to actually run these simulations in a way that has an efficient way of running it and a good user interface to understand the data, people are going to stop testing in production with real world assets. Everything is going to be modeled in the Omniverse first before rolling out.
+
+David: This is what an enterprise Metaverse is going to be. This is not designed for humans. Humans may interact with this. There will be UI. You will be able to be part of it. The purpose of this is for simulating applications. Most of it I think is going to run with no humans there.
+
+Ben: Yup, pretty crazy.
+
+David: Yeah, it sounds like a good idea.
+
+Ben: All right. Do you want to talk about a bear and bull case in the company?
+
+David: Let's do it, analysis.
+
+Ben: They paint the bull case for us when they say there's a $100 trillion future and we're going to capture 1% of it. There's $300 billion from automotive, there are the four or five segments that add up to a trillion dollars of opportunity. Sure, that's a very neat way with a bow on it and a very wishy-washy hand-wavy way of articulating it.
+
+The question sort of becomes, where does AMD fall on all this? There are legitimate second place competitors for high-end gaming graphics and I think will continue to be. That feels like a place where these two are going to keep going head to head. The bear case is that there's a TikTok rather than a durable competitive advantage for NVIDIA, but most high-end games, you can play on both AMD and NVIDIA hardware at this point.
+
+The question for the data center is, is the future for these general purpose GPUs that NVIDIA continues to modify the definition of GPU to include specialized functions as well, all this other stuff they're putting in their hardware? Or is there someone else who is coming along with a completely different approach to accelerated computing where they're accelerating workloads off the GPU on to something new, like a Cerebrus or a Graphcore that is going to eat their lunch in the enterprise AI data center market?
+
+David: That's an open question. It's interesting. People have been talking about that for a while. The other big bear case that people have been talking about, again, for a while now is the big, big customers of NVIDIA that are paying them a lot of money—the Teslas, Googles, Facebooks, Amazons, and Apples.
+
+Not just paying them a lot of money and getting assets of value of that, they're paying high gross margin dollars to NVIDIA for what they're getting. That those companies are going to want to say, you know, it's not that hard to design our own silicon to bring all this stuff in house. We can tune it to exactly our use cases, sort of similar to the Cerberus Graphcore bear case on NVIDIA. I think in both of these cases, it hasn't happened yet.
+
+Ben: There have been a lot of people who have made a lot of noise, but there have been few that have executed on it. Apple has their own GPUs on the M1s. Tesla's switching hasn't happened yet, but switching for the full self-driving, they're doing their own stuff on the car.
+
+David: Yup, that is switch on the inference side. On device, yes, that has happened. NVIDIA is probably strong in that, but I think the real thing to watch is the data center.
+
+Ben: And Google is probably the biggest bear case there. It's interesting to talk about these companies and particularly Cerebrus because what they're doing is such a gigantic swing and a totally different take than what everyone else has done.
+
+For folks who haven't followed the company, they're making a chip that's the size of a dinner plate. Everyone else's chip is like a thumbnail, but they're making a dinner plate sized chip and the yields on these things kind of suck. They need all the redundancy on those huge chips to make it so that—
+
+David: Oh my God. The amount of expense to do that.
+
+Ben: Right, and you can put one on a wafer. These wafers are crazy expensive to make.
+
+David: Wow, so you get poor yields in the wrong places on a wafer and that whole wafer is toast.
+
+Ben: Right, so a big part of the design of Cerberus is this sort of redundancy and the ability to turn off different pieces that aren't working. They draw 60 times as much power. They're way more expensive. If NVIDIA is going to sell you a $20,000 or $30,000 chip, Cerbrus is going to sell you a $2 million chip to do AI training.
+
+It is this bet in a big way on hyper specialized hardware for enterprises that want to do these very specific AI workloads. It's deployed in these beta sites, in research labs right now. It's not there yet, but it'll be very interesting to watch if they're able to meaningfully compete for what everyone thinks will be a very large market—these enterprise AI workloads.
+
+I mentioned Google that made a bunch of noise about making their own silicon in the data center, and then stayed the course and stayed really serious about it in their TPUs. Their business model is different. Nobody knows what the bill of materials is to create a TPU. Nobody really knows what they cost to run, they don't retail them. They're only available in Google Cloud.
+
+Google is sort of counter positioned against NVIDIA here, where they're saying, we want to differentiate Google Cloud with this offering that depending on your workload, it might be much cheaper for you to use TPUs with us than for you to use NVIDIA hardware with us or anyone else. They're probably willing to eat margin on that in order to grow Google Cloud's share in the cloud market. It's kind of the Android strategy, but runs in the data center.
+
+David: One thing we haven't mentioned but we should is, cloud is also part of the NVIDIA story too. You can get NVIDIA GPUs in AWS, Azure, and Google Cloud. That is part of the growth story for NVIDIA too.
+
+Ben: And NVIDIA is starting their own cloud. You can get direct from NVIDIA cloud-based GPUs.
+
+David: Data center GPUs. Interesting.
+
+Ben: Yeah. It'll be very interesting to see how this all shakes out with NVIDIA, the startups, and with Google.
+
+David: All that said though, NVIDIA is very, very, very richly valued on a valuation basis right now, with another very in there.
+
+Ben: It depends if you think their growth will continue. Are they a 60% growing company year every year every year for a while? Then they're not richly valued. But if you think it's a COVID hiccup or a crypto hiccup...
+
+David: The bull and bear case in both the startups and the big tech companies doing this stuff in-house, it's not so easy. Facebook, Tesla, Google, Amazon, and Apple are capable of doing a lot, but we've just told this whole story. This is 15 years of CUDA, the hardware underneath it, and the libraries on top of it that NVIDIA has built. To go recreate that and surpass it on your own is such an enormous, enormous bite to bite.
+
+Ben: Yes, and if you're not a horizontal player, and you're a vertical player, you better believe that the pot of gold at the end is worth it for you for this massive amount of cost to create what NVIDIA has created. NVIDIA has the benefit of getting to serve every customer. If you're Google and their strategy is what I think it is of not retailing TPUs at any point, then your customer's only yourself. You're constrained by the amount of people you can get to use Google Cloud.
+
+David: At least with Google, they have Google Cloud that they can sell it through.
+
+Ben: Yup, power.
+
+David: Ohh, power.
+
+Ben: The way I want to do this section is because in our NVIDIA episode, we covered the first 13 years of the company. We talked a lot about what does their power looked like up to 2006. Now I want to talk about what does their power looks like today. What is the thing that they have that enables them to have a sustainable competitive advantage and continue to maintain pricing power over their nearest competitor, be it Google, Cerberus in the enterprise, or AMD in gaming?
+
+David: Yup, and just to enumerate the powers again, as we always do—counter positioning, scale economies, switching costs, network economies, process power, branding, and cornered resource.
+
+Ben: There are definitely scale economies. The whole CUDA investment.
+
+David: Yes.
+
+Ben: Not at first, but definitely now is predicated on being able to amortize that 1000+ employees spend over the base of the 3 million developers and all the people who are buying the hardware to use what those developers create.
+
+David: This is the whole reason we spent 20 minutes talking about if you were going to run this playbook, you needed an enormous market to justify the CapEx you were going to put in.
+
+Ben: Right. Very few other players have access to the capital and the market that NVIDIA does to make this type of investment. They're basically just competing against AMD for this.
+
+David: Totally agree. Scale economies, to me, is the biggest one that pops out to the extent that you have lock-in to developing on CUDA, which I think a lot of people really have lock-in on CUDA, then that's major switching costs.
+
+Ben: Yup.
+
+David: If you're going to boot out NVIDIA, that means you're booting out CUDA.
+
+Ben: Is CUDA a cornered resource?
+
+David: Oh, interesting. Maybe. I mean, it only works with NVIDIA hardware.
+
+Ben: You could probably make an argument there's process power or at least there was somewhere along the way with them having the six-month ship cycle advantage. That probably has gone away since people trade around the industry a lot and that wasn't a hard thing for other companies to figure out.
+
+David: Yeah, I think process power definitely was part of the first instantiation of NVIDIA's power, to the extent it had power.
+
+Ben: Right.
+
+David: Yeah, I don't know as much today, especially because TSMC will work with anybody.
+
+Ben: In fact, TSMC is working with these new startup billion-dollar funded silicon companies.
+
+David: Yes, they are.
+
+Ben: It's funny. I actually heard a rumor, and we can link to it in the show notes, that the Ampere series of chips, which is the one immediately before the Hopper—the sort of A series chips—are actually fabbed by Samsung who gave him a sweetheart deal. NVIDIA likes to keep the lore alive around TSMC because they've been this great, longtime partner and stuff, but they do play manufacturers off each other. I even think that Jensen said something recently like, Intel has approached us about fabbing some of our chips and we are open to the conversation.
+
+David: Yes, that did happen.
+
+Ben: There was this big cybersecurity hack a couple of months ago by this group Lapsus$. They stole access to NVIDIA's source code. Actually, Jensen went on Yahoo Finance and talked about the fact that this happened. It's a very public incident.
+
+It's clear from the demands of Lapsus$ where some of NVIDIA's power lies because they demanded two things. They said, (1) get rid of the crypto governors. Make it so that we can mine, which may have been a red herring. That might have just been them trying to look like a bunch of crypto miner people.
+
+David: Hey, there's nothing wrong with being a crypto miner.
+
+Ben: Totally not, but I think there's a reputation around it. The other thing they demanded is (2) NVIDIA open source all of its drivers and make available source code. I don't think it was for CUDA. I think it was just the drivers, but it was very clear that we want you to open your trade secrets so that other people can build similar things. That, to me, is illustrative of the incredible value and pricing power that NVIDIA gets by owning not only the driver stack, but all of CUDA and how tightly coupled their hardware and software is.
+
+David: We just did this in our most recent episode with Hamilton and Chenyi. NVIDIA is a platform in my mind, no doubt about it. CUDA, NVIDIA, and general purpose computing on GPUs as a platform. All of the slew of powers that go into making that, they go into making Apple, Microsoft, and the like go into NVIDIA.
+
+Ben: Yup. I think the stew of power is the right way to phrase that.
+
+David: Yes.
+
+Ben: Anything else here? You want them to playbook?
+
+David: Let's move to playbook. I just wrote down in advance one that is such a big one for me. I'm biased because I tried to think about this in investing, particularly in public markets investing, but man, you really, really want to invest in whoever is selling the picks and the shovels in a gold rush.
+
+The AI, ML deep learning gold rush. Those years, oh my gosh, we should all be kicking ourselves in 2012, 2013. Maybe not 2012, but certainly 2014, 2015, into 2016. Marc Andreessen said every startup that comes in here who wants to do AI and deep learning, and they're all using NVIDIA, maybe we should have bought NVIDIA. I don't know if any one of those startups, any given one, is going to succeed, but I'm pretty sure NVIDIA was going to succeed back then.
+
+Ben: Yeah, it's such a good point. I'm kicking myself. One I have is being willing to expand your mission. It's funny how Jensen, in the early days, would talk about to enable graphics to be a storytelling medium. Of course, this led to the invention of the Pixel Shader and the idea that everybody can tell their own visual story their own way, in a social networked real time way. Very cool.
+
+Now it's much more that wherever there is a CPU, there is an opportunity to accelerate that CPU. NVIDIA will bring accelerated computing to everyone, and we will make all the best hardware, software, and services solutions to make it so that any computing workload runs in the most efficient way possible through accelerated computing.
+
+That's pretty different from enabling graphics as a storytelling medium. Also, they need to sell a pretty big story around the TAM that they're going after.
+
+David: I think there's also something to the whole NVIDIA story across the whole arc of the company. It's sort of a trade cliche thing at this point in startup land, but so few companies and founders can actually do it, just not dying.
+
+They should have died at least four separate times and they didn't. Part of that was brilliant strategy, part of that was things going their way. But I think a large part of it too was just the company in Jensen, particularly in these most recent chapters where they're already a public company, just being like, yeah, I'm willing to just sit here and endure this pain. I have confidence that we will figure it out. The market will come, I'm not going to declare game over
+
+Ben: One that I have is we mentioned at the top of the show, but the scale of everything involved in machine learning at this point and anything semiconductors is kind of unfathomable. You and I mentioned falling down the YouTube rabbit hole with that Asianometry channel. I was watching a bunch of stuff on how they make the silicon wafers. My God, floor planning is just an unbelievable exercise at this point in history, especially with the way that they overlay different designs on top of each other on different layers of the chip.
+
+David: Yeah. Say more about what floor planning is. I bet a lot of listeners won't know.
+
+Ben: It's funny how they keep appropriating these real-world, large-scale analogies to chip. Floorplanning, the way that an architect would lay out the 15, 5, or 2 rooms in a house, on a chip is laying out all of the circuitry and wires on the actual chip itself, except, of course, there's like 10 million rooms. It's incredibly complex. The stat that I was going to bring up, which was just mind-bending to think about, is that there are dozens of miles of wiring on a GPU.
+
+David: Wow, that is mind-bending because these things are less than the size of your palm, right?
+
+Ben: Right. Obviously, it's not wiring in the way you think about like a wire, I'm going to reach down and pick up my ethernet cable, but it's wiring in the EUV-etched substrate on chip exposure is probably the term that I'm looking for here, photolithography exposure. But it is just so tiny. You can say four nanometers all you want, David, but that won't register with me how freaking tiny that is until you're faced with the reality of dozens of miles of "wires" on this chip.
+
+David: Yeah, to me that registers as like, oh, yeah, that's like a decal I put on my hot rod. Four nanometers. I got the S version. But yeah, that's what that means.
+
+Ben: Okay, here's one that I had that we actually haven't talked about, which I think will be fun. I generated a CapEx graph.
+
+David: Ohh, fun.
+
+Ben: I will show it on screen here for those watching on video. Obviously, there's a very high looking line for Amazon because building data centers and fulfillment centers is very expensive, especially in the last couple of years where they're doing this massive build out. But imagine without that line for a minute, NVIDIA only has a billion dollars of CapEx per year.
+
+David: This is relative—for people listening on audio—to a bunch of other FAANG-type companies.
+
+Ben: Yeah. Apple has $10 billion of spend on capital expenditures per year. Microsoft and Google have $25 billion. TSMC, who makes the chips, has $30 billion. What a great capital efficient business that NVIDIA has on their hands only spending a billion dollars a year in CapEx. It's like it's a software business, and basically is.
+
+David: It is, right? TSMC does the fabbing, NVIDIA makes software and IP.
+
+Ben: Yup. This is the best graph for you to very clearly see the magic of the fabless business model that Morris Chang was so gracious to invent when he grew TSMC.
+
+David: Thank you, Morris.
+
+Ben: Another one that I wanted to point out, it's a freaking hardware company. I know they're not a hardware company, but they're a hardware company with 37% operating margins. This is even better than Apple.
+
+For non-finance folks, operating margins. We talked about their 66% gross margin, that is unit economics. That doesn't account for all the headcount, the leases, and just all the fixed costs in running the business. Even after you subtract all that out, 37% of every dollar that comes in gets to be kept by NVIDIA shareholders.
+
+It's a really, really, really cash generative business. If they can continue to scale and keep these operating margins or even improve them because they think they can improve them, that's really impressive.
+
+David: Wow, I didn't realize that's better than Apple's.
+
+Ben: Yeah. I think it's not as good as Facebook and Google because they just run these—
+
+David: Those are digital monopolies, come on.
+
+Ben: Basically, zero costs digital monopolies in some of the largest markets in history, but it's still very good. All right, let's do grading. Before we actually grade, we want to tell you about another one of our friends.
+
+For our final sponsor, let's talk about the Softbank Latin America Fund. You know this by now. These folks created the fund with a simple thesis. The region of Latin America was overflowing with innovative founders and great opportunities but short on the ingredient of capital.
+
+Softbank has invested $8 billion in 70+ companies and they have one gigantic takeaway. I can't say this enough. You can keep hearing it, but I think the important thing is internalizing it. Technology in Latin America is not about disruption, it's about inclusion.
+
+When you're thinking about economic opportunities in this region, you don't have to think like, ohh, how can we overthrow the incumbent? If you're used to living your life or doing business in North America in a lot of the ways that you feel are "modern", 0 a lot of these business models and a lot of this technology just has not happened yet to serve the vast populations in Latin America.
+
+You have a case study in some businesses that have worked and now you get to go and bring it to the masses. It's just an amazing opportunity for inclusion here. The vast majority of the population is underserved by every category from banking to transportation to ecommerce. Businesses are not served by modern software solutions, as I was saying.
+
+We want to highlight a great portfolio company VTEX. This is a crazy story. Speaking of high growth companies recently, they saw 98% growth during the pandemic as companies look to VTEX for their digital commerce, native marketplace, and order management capabilities.
+
+Today, VTEX powers over 3000 online storefronts for global brands like Walmart, Coca-Cola, Nestle, and as we mentioned on our Sony episode, Sony. They were recently named the world's fastest growing ecommerce platform.
+
+They are just one example of how Softbank is partnering with great founders and bringing them the capital and expertise they need to bring the future and build it in Latin America now. To learn more, you can click the link in the show notes or go to latinamericafund.com.
+
+David: It's so cool. Shu and Paulo, who run it, are just the best. We love them. We've become such great friends over the years. I can't say enough good things.
+
+Ben: I'm excited to see Shu as well at the Seattle Arena Show, acquired.fm/arenashow. Okay, grading. I think the way to do this one, David, is what's the A+ case, what's the C case, what's the F case?
+
+David: I think so.
+
+Ben: There's an interesting way to do this one because you could do it from a shareholder perspective, where you have to evaluate it based on where it's trading today and what needs to be true in order to have an A+ investment starting today, that sort of thing.
+
+David: You mean like a Michael Mobizen expectations investing style?
+
+Ben: Yes, exactly. Or you could close your eyes to the price and say, let's just look at the company. If you're Jensen, what do you feel would be an A+ scenario for the company regardless of the investment case? I think you have to do the first one though. I think it's a cop-out to not think about it like what's the bull and bear investment case from here?
+
+David: As we pointed out many times on the episode, there's a lot you got to believe to be a bull on NVIDIA, the share price.
+
+Ben: What are they? One big one is that they continue their incredible dominance and they're growing 75% or something year over year in the data center. They just continue to own that market. I think there's a plausible story there around all the crazy gross margin expansion they've had from selling solutions rather than fitting into someone else's stuff.
+
+I also think with the Mellanox acquisition, there's a very plausible story around this idea of a data processing unit and around being your one-stop shop for AI data center hardware. I think rather than saying, oh, the upstart competition will fail, I think you kind of have to say that NVIDIA will find a way to learn from them and then integrate it into their strategy too.
+
+David: Which seems plausible.
+
+Ben: Yeah. They've been very good at changing the definition of GPU over time to mean more and more robust stuff and accelerate more and more compute workloads. I think you just have to bet that because they have the developer's attention because they now have the relationships to sell into the enterprise, they're just going to continue to be able to do their own innovation, but also fast follow when it makes sense to redefine GPU as something a little bit heftier and incorporate other pieces of hardware to do other workloads into it.
+
+David: Yup. I think the question for me on an A+ outcome for NVIDIA from the shareholder perspective is, do you need to believe that all the real world AI use cases are going to happen? Do you need to believe, maybe not all of them, but some basket of autonomous vehicles, the Omniverse, robotics, one or multiple of those three are going to happen, they're going to be enormous markets, and then NVIDIA is going to be a key player in them?
+
+Ben: I think you do because I think that's where all the data center revenue is coming from are companies that are going after those opportunities.
+
+David: I'm wrestling with whether that is something you have to believe or whether that's optionality. The reason it would be only optionality, only upside, is if the digital AI, we know that that's a big market. There's no question about that at this point. Is that going to continue to just get so big?
+
+Are we still only scratching the surface there? How much more AI is going to be baked into all the stuff we do in the digital world? Will NVIDIA continue to be at the center of that? I don't know. I don't have a great way to assess how much growth is left there.
+
+Ben: That is the right question though, yeah.
+
+David: They're an interesting point right now. There's all the early company stuff that we talked about in the first episode. But at the beginning of this episode, Jensen was really asking you to believe. It's like, hey, we're building this CUDA thing. Just ignore that there's no real use case for it or market. Now, there is a real, real use case and market for it, which is machine learning, deep learning in the digital world. Undeniable. He's also pitching now that that will exist in the physical world too.
+
+Ben: Yeah, the A+ is definitely that it does exist in the physical world and they are the dominant provider of everything you need to be able to accomplish that. If the real world stuff—these little robots that run around factory floors and the autonomous vehicles—doesn't materialize, then there's no way that it can support the growth that it's been on.
+
+David: I think that's probably right. That would be my hunch. Although saying that though does feel like a little bit of a betting against the internet. I don't know, man. Digital world is pretty big and it keeps getting bigger.
+
+Ben: Yeah, but I think we're saying the same thing. I think you're saying that these physical experiences will become more and more intertwined with your digital experiences.
+
+David: Yeah.
+
+Ben: Autonomous driving and electric vehicles is an internet bet. In part if you want to bet on the growth of the internet, it will mean you'll drive less. But it also means that you're just going to be on the internet when you're driving or when you're in motion in the physical world.
+
+David: That's a bull case for Facebook is autonomous vehicles because if people are being driven instead of driving, that's more time they're on Instagram.
+
+Ben: Right. It's so true. Okay, what's the failure case? It's actually quite hard to imagine a failure case of the business in any short order. It's very easy to imagine a failure case for the stock in short order if there's a cascading set of events of people losing faith.
+
+David: I think maybe the failure case is this amazing growth for the past couple of years was a pandemic pull forward. It's so hard for me to imagine that that's to the degree of Peloton, Zoom, or something like that.
+
+Ben: Right.
+
+David: Both of which I think are great companies. They just got everything pulled forward. I don't think NVIDIA got everything pulled forward. They probably got a decent amount pulled forward.
+
+Ben: Hard to quantify, hard to know, but it is the right thing to be thinking about.
+
+David: Yeah.
+
+Ben: All right. Carve outs.
+
+David: I've got a fun one, a small one. Well, a collection of small things. Longtime listeners probably know. I think my favorite series of books that have been written in the past 10 years is the Expanse series. Amazing Sci-Fi, nine books. So great. The ninth book came out last fall. Even with a newborn, I made time to read this book.
+
+Ben: That's awesome.
+
+David: Newborn plus Acquired, I was like, I got to read this.
+
+Ben: It's how you know.
+
+David: That's how you know. Recently, last month, the authors have been writing companion short stories alongside the main narrative over the last decade that they've been doing this. They released a compendium of all the short stories, plus a few new ones, called Memories Legion. And it's just really cool.
+
+They're great writers and great short stories to read even if you don't know anything about the Expanse story. But if you know the whole nine-book saga and then these just paint little glimpses into corners and characters that just exist and you don't question otherwise, but you're like, oh, what's the backstory of that? I've been really enjoying that.
+
+Ben: It's like the Solo of The Fantastic Beasts and Where to Find Them?
+
+David: Exactly. It's like 9 or 10 of those.
+
+Ben: Cool. Mine is a physical product. Actually, for the episode we did with Brad Gerstner on Altimeter, we needed a third camera. So I went out and bought a Sony RX100, a point and shoot camera.
+
+Recently, I took it to Disneyland. I must say, it is so nice to have a point and shoot camera again. It's funny how it's gone full circle. I was a DSLR person forever, then I got a mirrorless camera, and then I became a mirrorless plus big long zoom lens person but it's kind of annoying to look that around.
+
+Once I started downgrading my phone from the massive, awesome iPhone with the 3X zoom and I now have the iPhone 13 mini, I think that's what it is with the two cameras and no Zoom lens, it's really disappointing. It's pretty awesome. It fills a spot in my camera line up to have a point and shoot with a really long zoom lens on it.
+
+Of course, it's not as nice as having full frame mirrorless with an actual zoom lens, but it really gets the job done. It's nice to have that real feeling mirrorless style image that is very clearly from a real camera and not from a phone. It's slightly more inconvenient to carry because you need another pocket.
+
+David: Yeah. I was going to ask, can you put it in your pocket?
+
+Ben: Yeah, I put it in my pocket. I don't have to have a wrap and strap around my neck, which is nice.
+
+David: Nice.
+
+Ben: The Sony RX100, a great little device. It's like the seventh generation of it and they've really refined the industrial design at this point.
+
+David: That's awesome. I actually just bought my first camera, Cube, a travel camera cube thing for our Alpha 7C. Literally, it's for Acquired. After the Altimeter episode, I was like, oh, wow.
+
+Ben: We got to do more in person.
+
+David: Ben brought his down. I was like, for sure. I'm going to need to bring this somewhere. These cameras are just so good. They're so good.
+
+Ben: All right, listeners, thank you so much for listening. If you're contemplating coming to Seattle on May 4th, we would love to see you there. It's going to be so fun. It'll be a blast interviewing Jim. Maybe by the time this comes out, we will have announced some of our other little fun surprises too.
+
+David: I think we can say now, there's going to be an after party.
+
+Ben: There is definitely going to be an after party. Thank you to our friends at Vouch for renting out a bar basically across the street, a couple of blocks away with huge capacity. It will be really fun to have everyone wander over from the arena to the Vouch after party where they're going to launch in Washington state at the event, which is very fun.
+
+I'm very excited for all my portfolio companies. No matter what, whether you are attending that in person or not, you should come chat about this episode with us in Slack. There are 11,000 other smart members of the Acquired community just like you.
+
+If you want more Acquired content after this and you are all caught up, go check out our LP Show by searching Acquired LP Show in any podcast player. Hear us interview Nick and Lauren from TrovaTrip most recently.
+
+We have a job board, acquired.fm/jobs. Find your dream job curated just by us, the fine folks at the Acquired podcast. With that, thank you to Vanta, Vouch, and the SoftBank Latin America Fund. We will see you next time.
+
+David: We'll see you next time.
